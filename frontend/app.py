@@ -93,6 +93,11 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
     def __init__(self):
         super().__init__()
         self.player_settings = load_player_settings()
+        try:
+            self.base_tk_scaling = float(self.tk.call("tk", "scaling"))
+        except tk.TclError:
+            self.base_tk_scaling = 1.0
+        self.apply_ui_font_scale()
         self.title(f"{TITLE_CN} {APP_VERSION}")
         self.geometry(f"{self.player_settings['window_width']}x{self.player_settings['window_height']}")
         self.minsize(936, 598)
@@ -594,18 +599,29 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         if not unlocked_badges:
             tk.Label(badge_grid, text="通过自由段位或线索段位后解锁。", fg="#64708f", bg="#182033", font=("Microsoft YaHei UI", 10)).grid(row=1, column=0, sticky="w", pady=3)
 
-        tk.Label(right, text="背景", fg="#8fb6ff", bg="#182033", font=("Microsoft YaHei UI", 18, "bold")).pack(anchor="w", padx=28, pady=(26, 14))
+        tk.Label(right, text="显示与背景", fg="#8fb6ff", bg="#182033", font=("Microsoft YaHei UI", 18, "bold")).pack(anchor="w", padx=28, pady=(26, 14))
         self.settings_speed_var = tk.DoubleVar(value=float(self.player_settings.get("backdrop_speed", 1.0)))
         self.settings_density_var = tk.DoubleVar(value=float(self.player_settings.get("backdrop_density", 1.0)))
+        self.settings_font_scale_var = tk.DoubleVar(value=float(self.player_settings.get("font_scale", 1.0)))
         self.settings_transitions_var = tk.BooleanVar(value=bool(self.player_settings.get("transitions_enabled", True)))
         self.settings_window_width_var = tk.StringVar(value=str(int(self.player_settings.get("window_width", 1274))))
         self.settings_window_height_var = tk.StringVar(value=str(int(self.player_settings.get("window_height", 806))))
         self.settings_speed_label = tk.Label(right, fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 12, "bold"))
         self.settings_density_label = tk.Label(right, fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 12, "bold"))
+        self.settings_font_scale_label = tk.Label(right, fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 12, "bold"))
         self.settings_speed_label.pack(anchor="w", padx=28, pady=(2, 4))
         self.make_setting_scale(right, self.settings_speed_var, self.update_setting_labels).pack(fill="x", padx=24, pady=(0, 18))
         self.settings_density_label.pack(anchor="w", padx=28, pady=(2, 4))
-        self.make_setting_scale(right, self.settings_density_var, self.update_setting_labels).pack(fill="x", padx=24, pady=(0, 14))
+        self.make_setting_scale(right, self.settings_density_var, self.update_setting_labels).pack(fill="x", padx=24, pady=(0, 18))
+        self.settings_font_scale_label.pack(anchor="w", padx=28, pady=(2, 4))
+        self.make_setting_scale(
+            right,
+            self.settings_font_scale_var,
+            self.update_setting_labels,
+            from_=0.85,
+            to=1.25,
+            resolution=0.05,
+        ).pack(fill="x", padx=24, pady=(0, 14))
         tk.Label(right, text="默认窗口大小（像素）", fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 12, "bold")).pack(anchor="w", padx=28, pady=(2, 8))
         window_row = tk.Frame(right, bg="#182033")
         window_row.pack(anchor="w", padx=24, pady=(0, 14))
@@ -628,7 +644,7 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
 
         tk.Label(
             right,
-            text=self.smart_wrap_text("速度和密度会影响所有动态背景。数值越高，背景越活跃；数值越低，界面越安静。页面过场可按偏好关闭。", 27),
+            text=self.smart_wrap_text("速度和密度会影响所有动态背景。字号会影响后续打开的页面，保存后生效；页面过场可按偏好关闭。", 27),
             fg="#9ca8c7",
             bg="#182033",
             justify="left",
@@ -639,12 +655,12 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         HoverButton(buttons, "保存设置", self.save_settings, width=170, height=58, accent="#9ff2b2").grid(row=0, column=0, padx=(0, 12))
         HoverButton(buttons, "恢复默认", self.reset_settings, width=170, height=58, accent="#ff9b89").grid(row=0, column=1, padx=12)
 
-    def make_setting_scale(self, parent, variable, command):
+    def make_setting_scale(self, parent, variable, command, from_=0.4, to=10.0, resolution=0.1):
         scale = tk.Scale(
             parent,
-            from_=0.4,
-            to=10.0,
-            resolution=0.1,
+            from_=from_,
+            to=to,
+            resolution=resolution,
             orient="horizontal",
             variable=variable,
             command=lambda _value: command(),
@@ -678,6 +694,8 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             self.settings_speed_label.config(text=f"背景速度  {self.settings_speed_var.get():.1f}x")
         if hasattr(self, "settings_density_label"):
             self.settings_density_label.config(text=f"背景密度  {self.settings_density_var.get():.1f}x")
+        if hasattr(self, "settings_font_scale_label"):
+            self.settings_font_scale_label.config(text=f"界面字号  {self.settings_font_scale_var.get() * 100:.0f}%")
 
     def select_avatar(self, avatar_id):
         if avatar_id not in self.available_avatar_ids:
@@ -733,10 +751,12 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             "rank_badge_id": rank_badge_id,
             "backdrop_speed": self.settings_speed_var.get(),
             "backdrop_density": self.settings_density_var.get(),
+            "font_scale": self.settings_font_scale_var.get(),
             "transitions_enabled": self.settings_transitions_var.get(),
             "window_width": self.settings_window_width_var.get(),
             "window_height": self.settings_window_height_var.get(),
         })
+        self.apply_ui_font_scale()
         if not self.fullscreen:
             self.geometry(f"{self.player_settings['window_width']}x{self.player_settings['window_height']}")
         if self.player_settings["backdrop_speed"] >= 9.95 and self.player_settings["backdrop_density"] >= 9.95:
@@ -744,8 +764,22 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         messagebox.showinfo("设置已保存", f"欢迎回来，{self.player_settings['nickname']}。")
         self.show_home()
 
+    def ui_font_scale(self):
+        try:
+            return float((self.player_settings or {}).get("font_scale", 1.0))
+        except (TypeError, ValueError):
+            return 1.0
+
+    def apply_ui_font_scale(self):
+        scale = max(0.85, min(1.25, self.ui_font_scale()))
+        try:
+            self.tk.call("tk", "scaling", self.base_tk_scaling * scale)
+        except tk.TclError:
+            pass
+
     def reset_settings(self):
         self.player_settings = save_player_settings(DEFAULT_PLAYER_SETTINGS)
+        self.apply_ui_font_scale()
         self.show_settings()
 
     @staticmethod
@@ -1097,34 +1131,85 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         progress_key = rank_progress_key(self.mode, rank_kind)
         self._topbar(f"{subject_label(self.mode)}{rank_label}挑战", self.show_mode_select)
         frame = tk.Frame(self.container, bg="#111725")
-        frame.pack(fill="both", expand=True, padx=34, pady=(0, 26))
+        frame.pack(fill="both", expand=True, padx=28, pady=(0, 26))
         progress = read_rank_progress()
         subject_info = (progress.get("subjects") or {}).get(progress_key, {})
         highest = int(subject_info.get("highest") or 0)
 
-        left = tk.Frame(frame, bg="#111725")
-        left.pack(side="left", fill="y", padx=(0, 18))
+        left = tk.Frame(frame, bg="#111725", width=360)
+        left.pack(side="left", fill="y", padx=(0, 24))
+        left.pack_propagate(False)
         right = tk.Frame(frame, bg="#182033", highlightbackground="#3b4560", highlightthickness=1)
         right.pack(side="left", fill="both", expand=True)
-        tk.Label(left, text="选择段位", fg="#8fb6ff", bg="#111725", font=("Microsoft YaHei UI", 16, "bold")).pack(anchor="w", pady=(6, 12))
+
+        tk.Label(left, text="选择段位", fg="#8fb6ff", bg="#111725", font=("Microsoft YaHei UI", 16, "bold")).pack(anchor="w", pady=(6, 14))
+        tk.Label(
+            left,
+            text="已通过的段位会带有菱形标记。\n段位进度按学科和玩法分别保存。",
+            fg="#7f8caf",
+            bg="#111725",
+            justify="left",
+            font=("Microsoft YaHei UI", 10, "bold"),
+        ).pack(anchor="w", fill="x", pady=(0, 12))
+        button_height = max(34, int(34 * self.ui_font_scale()))
         for index, rank in enumerate(RANK_CHALLENGES):
             passed = rank["id"] <= highest
             accent = "#9ff2b2" if passed else "#9fb7ff"
             label = f"{'◆ ' if passed else ''}{rank['name']}"
-            HoverButton(left, label, lambda rank_id=rank["id"]: self.start_rank_challenge(rank_id), width=270, height=28, accent=accent).pack(anchor="w", pady=1)
+            HoverButton(left, label, lambda rank_id=rank["id"]: self.start_rank_challenge(rank_id), width=332, height=button_height, accent=accent).pack(anchor="w", pady=2)
 
-        tk.Label(right, text=f"{subject_label(self.mode)}{rank_label}", fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 24, "bold")).pack(anchor="w", padx=30, pady=(26, 10))
+        header = tk.Frame(right, bg="#182033")
+        header.pack(fill="x", padx=34, pady=(28, 16))
+        header.grid_columnconfigure(0, weight=1)
+        tk.Label(header, text=f"{subject_label(self.mode)}{rank_label}", fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 24, "bold")).grid(row=0, column=0, sticky="w")
         intro = "首字母题挑战，普通/困难可能带掩码。" if rank_kind == "free" else "线索题挑战：不显示首字母，提示会逐步追加线索。"
-        tk.Label(right, text=intro, fg="#dce6ff", bg="#182033", justify="left", anchor="w", wraplength=760, font=("Microsoft YaHei UI", 11)).pack(anchor="w", fill="x", padx=30, pady=(0, 8))
-        tk.Label(right, text=f"当前最高段位：Class {highest:02d}" if highest else "当前还没有通过段位。", fg="#9ff2b2", bg="#182033", font=("Microsoft YaHei UI", 13, "bold")).pack(anchor="w", padx=30, pady=(0, 18))
-        for rank in RANK_CHALLENGES:
-            req_text = "、".join(f"{difficulty}≥{target:g}" for difficulty, target in rank["requirements"])
-            score = rank_pass_score(subject_info, rank["id"])
-            state = f"已通过｜最高总分 {score}" if score is not None else ("已通过" if rank["id"] <= highest else "未通过")
-            color = "#9ff2b2" if rank["id"] <= highest else "#9ca8c7"
-            hint_text = f"提示冷却 {rank_hint_cooldown_seconds(rank['id'])} 秒｜最多 {rank_hint_limit(rank['id'])} 次"
-            line = f"{rank['name']}    {format_rank_time(rank['seconds'])}    {len(rank['requirements'])} 题    {state}    {hint_text}\n{req_text}"
-            tk.Label(right, text=line, fg=color, bg="#182033", justify="left", anchor="w", wraplength=820, font=("Microsoft YaHei UI", 10, "bold")).pack(anchor="w", fill="x", padx=30, pady=3)
+        tk.Label(header, text=intro, fg="#dce6ff", bg="#182033", justify="left", anchor="w", font=("Microsoft YaHei UI", 11)).grid(row=1, column=0, sticky="w", pady=(8, 0))
+        summary_text = f"当前最高段位  Class {highest:02d}" if highest else "当前还没有通过段位"
+        tk.Label(header, text=summary_text, fg="#9ff2b2", bg="#182033", font=("Microsoft YaHei UI", 13, "bold")).grid(row=0, column=1, sticky="e", padx=(20, 0))
+        tk.Label(
+            header,
+            text="每张卡片显示时限、题数、提示冷却和题组要求；通过后会记录最高总分。",
+            fg="#7f8caf",
+            bg="#182033",
+            justify="right",
+            font=("Microsoft YaHei UI", 10, "bold"),
+        ).grid(row=1, column=1, sticky="e", padx=(20, 0), pady=(8, 0))
+
+        list_shell = tk.Frame(right, bg="#182033")
+        list_shell.pack(fill="both", expand=True, padx=24, pady=(0, 22))
+        rank_grid = self.make_scroll_frame(list_shell, bg="#182033")
+        columns = 2 if max(self.winfo_width(), int(self.player_settings.get("window_width", 1274))) >= 1180 else 1
+        for column in range(columns):
+            rank_grid.grid_columnconfigure(column, weight=1, uniform="rank")
+        wraplength = 460 if columns == 2 else 820
+        for index, rank in enumerate(RANK_CHALLENGES):
+            self.render_rank_select_card(rank_grid, index, columns, rank, subject_info, highest, wraplength)
+
+    def render_rank_select_card(self, parent, index, columns, rank, subject_info, highest, wraplength):
+        passed = rank["id"] <= highest
+        bg = "#182f2b" if passed else "#171f31"
+        border = "#4cae82" if passed else "#30384e"
+        title_color = "#b8ffd7" if passed else "#dce6ff"
+        muted = "#8fa0c2" if not passed else "#a7dcc0"
+        card = tk.Frame(parent, bg=bg, highlightbackground=border, highlightthickness=1)
+        card.grid(row=index // columns, column=index % columns, sticky="nsew", padx=8, pady=8)
+        card.grid_columnconfigure(0, weight=1)
+
+        title_row = tk.Frame(card, bg=bg)
+        title_row.grid(row=0, column=0, sticky="ew", padx=16, pady=(13, 5))
+        title_row.grid_columnconfigure(0, weight=1)
+        tk.Label(title_row, text=rank["name"], fg=title_color, bg=bg, font=("Microsoft YaHei UI", 12, "bold"), anchor="w").grid(row=0, column=0, sticky="w")
+        score = rank_pass_score(subject_info, rank["id"])
+        state = f"最高总分 {score}" if score is not None else ("已通过" if passed else "未通过")
+        tk.Label(title_row, text=state, fg="#9ff2b2" if passed else "#7f8caf", bg=bg, font=("Microsoft YaHei UI", 10, "bold"), anchor="e").grid(row=0, column=1, sticky="e", padx=(12, 0))
+
+        meta = (
+            f"{format_rank_time(rank['seconds'])}  ·  {len(rank['requirements'])} 题  ·  "
+            f"提示 {rank_hint_cooldown_seconds(rank['id'])} 秒 / {rank_hint_limit(rank['id'])} 次"
+        )
+        tk.Label(card, text=meta, fg="#fff2bd", bg=bg, justify="left", anchor="w", font=("Microsoft YaHei UI", 10, "bold")).grid(row=1, column=0, sticky="ew", padx=16)
+        req_text = "、".join(f"{difficulty}≥{target:g}" for difficulty, target in rank["requirements"])
+        tk.Label(card, text=req_text, fg=muted, bg=bg, justify="left", anchor="w", wraplength=wraplength, font=("Microsoft YaHei UI", 9, "bold")).grid(row=2, column=0, sticky="ew", padx=16, pady=(6, 14))
 
     def start_rank_challenge(self, rank_id):
         rank = rank_by_id(rank_id)
