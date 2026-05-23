@@ -1,0 +1,1967 @@
+{
+    "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+    "entries":  [
+                    {
+                        "chinese_name":  "数学物理方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "物理场模型被写成关于空间和时间变量的微分关系。",
+                                               "边界数据、初始数据和源项共同决定可解性。",
+                                               "代表性标志是 wave、heat、Laplace 与 Green function。",
+                                               "核心任务是把实际场景转成定解关系。",
+                                               "英文译名是 equations of mathematical physics。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "物理场模型 空间变量 时间变量 微分关系",
+                                                 "边界数据 初始数据 源项 可解性",
+                                                 "wave heat Laplace Green function",
+                                                 "实际场景 定解关系",
+                                                 "equations of mathematical physics"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "偏微分方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "未知函数含多个自变量，并与偏导数一起进入方程。",
+                                               "阶数、线性性和主部符号决定分类。",
+                                               "代表性标志是 F(x,u,u_x,u_y,...)=0。",
+                                               "双曲、抛物、椭圆是二阶情形的主线。",
+                                               "英文译名是 partial differential equation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "未知函数 多自变量 偏导数",
+                                                 "阶数 线性性 主部符号 分类",
+                                                 "F(x,u,u_x,u_y,...)=0",
+                                                 "双曲 抛物 椭圆",
+                                                 "partial differential equation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "定解问题",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "微分方程还要配齐数据才形成可判定求解任务。",
+                                               "存在、唯一和连续依赖数据是三项基本要求。",
+                                               "代表性标志是 Hadamard well-posedness。",
+                                               "缺少任一项都会让物理预测不稳定。",
+                                               "英文译名是 well posed problem。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "微分方程 配齐数据 求解任务",
+                                                 "存在 唯一 连续依赖",
+                                                 "Hadamard well-posedness",
+                                                 "物理预测 稳定",
+                                                 "well posed problem"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "初始条件",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "演化问题在起始时刻给出状态。",
+                                               "波动模型常需位移和速度，扩散模型通常给初始分布。",
+                                               "代表性标志是 u(x,0)=phi(x)。",
+                                               "它决定时间推进的起点。",
+                                               "英文译名是 initial condition。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "演化问题 起始时刻 状态",
+                                                 "波动 位移 速度 扩散 初始分布",
+                                                 "u(x,0)=phi(x)",
+                                                 "时间推进 起点",
+                                                 "initial condition"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "边界条件",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "区域边缘给出的限制筛选内部候选解。",
+                                               "可指定函数值、法向导数或二者线性组合。",
+                                               "代表性标志是 u|_S=g 或 partial_n u|_S=h。",
+                                               "它把几何边界和物理约束连接起来。",
+                                               "英文译名是 boundary condition。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "区域边缘 限制 内部候选解",
+                                                 "函数值 法向导数 线性组合",
+                                                 "u|_S=g partial_n u|_S=h",
+                                                 "几何边界 物理约束",
+                                                 "boundary condition"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "初边值问题",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "时间演化方程同时配有起始数据和边缘限制。",
+                                               "热传导和有限弦振动常以这种形式出现。",
+                                               "代表性标志是 u(x,0)=phi 与 u|_boundary=g 同时给出。",
+                                               "时间方向和空间边缘共同约束解。",
+                                               "英文译名是 initial boundary value problem。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "时间演化 起始数据 边缘限制",
+                                                 "热传导 有限弦振动",
+                                                 "u(x,0)=phi u|_boundary=g",
+                                                 "时间方向 空间边缘",
+                                                 "initial boundary value problem"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "波动方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "扰动以有限速度传播，时间二阶项与空间二阶项平衡。",
+                                               "初始位移和初始速度共同决定后续形状。",
+                                               "代表性标志是 u_tt=c^2 Delta u。",
+                                               "特征锥或 x±ct 方向承载传播信息。",
+                                               "英文译名是 wave equation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "扰动 有限速度 时间二阶 空间二阶",
+                                                 "初始位移 初始速度 后续形状",
+                                                 "u_tt=c^2 Delta u",
+                                                 "特征锥 x±ct 传播信息",
+                                                 "wave equation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "热传导方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "扩散过程让温度或浓度随时间变得更平滑。",
+                                               "空间 Laplace 项驱动局部平均化。",
+                                               "代表性标志是 u_t=kappa Delta u。",
+                                               "最大值性质和不可逆时间方向很突出。",
+                                               "英文译名是 heat equation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "扩散 温度 浓度 平滑化",
+                                                 "空间 Laplace项 局部平均",
+                                                 "u_t=kappa Delta u",
+                                                 "最大值性质 时间不可逆",
+                                                 "heat equation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "拉普拉斯方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "无源静态势场满足空间二阶和为零。",
+                                               "内部值由边界控制，并具有平均值性质。",
+                                               "代表性标志是 Delta u=0。",
+                                               "电势、引力势和稳态温度都可落到这里。",
+                                               "英文译名是 laplace equation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "无源静态势场 空间二阶和 零",
+                                                 "内部值 边界控制 平均值性质",
+                                                 "Delta u=0",
+                                                 "电势 引力势 稳态温度",
+                                                 "laplace equation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "泊松方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "静态势场若含源分布，Laplace 项等于给定函数。",
+                                               "右端描述电荷、质量或热源密度。",
+                                               "代表性标志是 Delta u=f。",
+                                               "Green 函数常把源项积分成解。",
+                                               "英文译名是 poisson equation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "静态势场 源分布 Laplace项",
+                                                 "电荷 质量 热源密度",
+                                                 "Delta u=f",
+                                                 "Green函数 源项积分 解",
+                                                 "poisson equation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "亥姆霍兹方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "定频波动分离时间后留下空间振型关系。",
+                                               "参数 k 表示波数或本征频率信息。",
+                                               "代表性标志是 Delta u+k^2u=0。",
+                                               "散射、驻波和腔体模式常用它描述。",
+                                               "英文译名是 helmholtz equation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "定频波动 空间振型",
+                                                 "参数 k 波数 本征频率",
+                                                 "Delta u+k^2u=0",
+                                                 "散射 驻波 腔体模式",
+                                                 "helmholtz equation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "薛定谔方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "量子态的演化由哈密顿算子控制。",
+                                               "分离时间后会变成本征值问题。",
+                                               "代表性标志是 i hbar psi_t=H psi。",
+                                               "概率幅、势能项和谱结构是主要信息。",
+                                               "英文译名是 schrodinger equation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "量子态 演化 哈密顿算子",
+                                                 "分离时间 本征值问题",
+                                                 "i hbar psi_t=H psi",
+                                                 "概率幅 势能项 谱结构",
+                                                 "schrodinger equation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "双曲型方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "二阶主部符号允许特征方向和有限传播速度。",
+                                               "波动模型是最典型代表。",
+                                               "代表性标志是 discriminant B^2-AC\u003e0。",
+                                               "初值沿特征锥影响解。",
+                                               "英文译名是 hyperbolic equation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "二阶主部符号 特征方向 有限传播",
+                                                 "波动模型 标准代表",
+                                                 "discriminant B^2-AC\u003e0",
+                                                 "初值 特征锥",
+                                                 "hyperbolic equation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "抛物型方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "时间一阶与空间二阶扩散项结合，形成平滑化演化。",
+                                               "热传导模型是标准代表。",
+                                               "代表性标志是 discriminant B^2-AC=0。",
+                                               "初值问题向未来扩散但反向不稳定。",
+                                               "英文译名是 parabolic equation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "时间一阶 空间二阶 扩散项",
+                                                 "热传导 标准代表",
+                                                 "discriminant B^2-AC=0",
+                                                 "初值 未来扩散 反向不稳定",
+                                                 "parabolic equation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "椭圆型方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "没有真实特征方向，解通常受边界整体控制。",
+                                               "静态势场和稳态问题常属于这种类型。",
+                                               "代表性标志是 discriminant B^2-AC\u003c0。",
+                                               "正则性和最大值原理是重要工具。",
+                                               "英文译名是 elliptic equation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "无真实特征方向 边界整体控制",
+                                                 "静态势场 稳态问题",
+                                                 "discriminant B^2-AC\u003c0",
+                                                 "正则性 最大值原理",
+                                                 "elliptic equation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "特征线",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "一阶或双曲型方程的信息沿特殊曲线传递。",
+                                               "沿曲线可把偏微分关系化为常微分关系。",
+                                               "代表性标志是 dx/ds=a(x,y), dy/ds=b(x,y)。",
+                                               "初值线若与它相切会导致问题退化。",
+                                               "英文译名是 characteristic curve。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "信息传递 特殊曲线",
+                                                 "偏微分关系 常微分关系",
+                                                 "dx/ds=a(x,y) dy/ds=b(x,y)",
+                                                 "初值线 相切 退化",
+                                                 "characteristic curve"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "行波解",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "波形保持形状，只以固定速度平移。",
+                                               "变量常合并成 x-ct 或 x+ct。",
+                                               "代表性标志是 u(x,t)=F(x-ct)。",
+                                               "非线性方程中也常用它寻找孤立波。",
+                                               "英文译名是 traveling wave solution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "波形保持 固定速度 平移",
+                                                 "合并变量 x-ct x+ct",
+                                                 "u(x,t)=F(x-ct)",
+                                                 "非线性方程 孤立波",
+                                                 "traveling wave solution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "达朗贝尔公式",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "一维无界弦振动可由初始位移和速度显式表示。",
+                                               "解由左右传播的两束波叠加而成。",
+                                               "代表性标志是 u=(phi(x+ct)+phi(x-ct))/2 + integral psi/(2c)。",
+                                               "它直接展示有限传播速度。",
+                                               "英文译名是 d alembert formula。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "一维无界弦 初始位移 初始速度",
+                                                 "左行波 右行波 叠加",
+                                                 "u=(phi(x+ct)+phi(x-ct))/2 + integral psi/(2c)",
+                                                 "有限传播速度",
+                                                 "d alembert formula"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "分离变量法",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "乘积假设把多变量方程拆成若干单变量方程。",
+                                               "边界条件会选出允许的分离常数。",
+                                               "代表性标志是 u(x,t)=X(x)T(t)。",
+                                               "最终解通过本征函数级数叠加。",
+                                               "英文译名是 separation of variables。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "乘积假设 多变量 单变量",
+                                                 "边界条件 分离常数",
+                                                 "u(x,t)=X(x)T(t)",
+                                                 "本征函数级数 叠加",
+                                                 "separation of variables"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "傅里叶方法",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "利用正交三角系展开未知函数和数据。",
+                                               "微分方程被转成各模态上的系数方程。",
+                                               "代表性标志是 sine/cosine expansion。",
+                                               "热方程、波方程和矩形区域问题常用。",
+                                               "英文译名是 fourier method。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "正交三角系 未知函数 数据",
+                                                 "模态 系数方程",
+                                                 "sine/cosine expansion",
+                                                 "热方程 波方程 矩形区域",
+                                                 "fourier method"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "格林函数",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "单位点源的响应作为核函数叠加出一般源的解。",
+                                               "它还必须符合指定边缘限制。",
+                                               "代表性标志是 L_x G(x,y)=delta(x-y)。",
+                                               "奇性位置和边界修正共同决定形式。",
+                                               "英文译名是 green function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "单位点源 响应 核函数 一般源",
+                                                 "指定边缘限制",
+                                                 "L_x G(x,y)=delta(x-y)",
+                                                 "奇性位置 边界修正",
+                                                 "green function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "基本解",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "全空间中对单位点源的基本响应不先加入边界修正。",
+                                               "平移不变算子常由它生成卷积表示。",
+                                               "代表性标志是 L Phi=delta。",
+                                               "Green 核通常由它再调整边界得到。",
+                                               "英文译名是 fundamental solution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "全空间 单位点源 基本响应",
+                                                 "平移不变算子 卷积表示",
+                                                 "L Phi=delta",
+                                                 "Green核 边界调整",
+                                                 "fundamental solution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "本征值问题",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "算子作用后函数形状不变，只改变比例因子。",
+                                               "边界限制常把参数压成离散序列。",
+                                               "代表性标志是 L y=lambda y。",
+                                               "谱值和振型共同组成展开基础。",
+                                               "英文译名是 eigenvalue problem。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "算子 形状不变 比例因子",
+                                                 "边界限制 离散参数",
+                                                 "L y=lambda y",
+                                                 "谱值 振型 展开基础",
+                                                 "eigenvalue problem"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "斯图姆刘维尔问题",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "二阶自伴随常微分问题配有端点条件和权函数。",
+                                               "不同谱值对应函数在权内积下正交。",
+                                               "代表性标志是 -(p y\u0027)\u0027+q y=lambda w y。",
+                                               "分离变量后的空间问题常落入这里。",
+                                               "英文译名是 sturm liouville problem。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "二阶自伴随 端点条件 权函数",
+                                                 "谱值 正交 权内积",
+                                                 "-(p y\u0027)\u0027+q y=lambda w y",
+                                                 "分离变量 空间问题",
+                                                 "sturm liouville problem"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "正交函数系",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "一族函数在给定内积下两两垂直。",
+                                               "它们可作为展开解和初始数据的基底。",
+                                               "代表性标志是 \u003cphi_m,phi_n\u003e=0 for m≠n。",
+                                               "Fourier 系和本征函数族都是典型例子。",
+                                               "英文译名是 orthogonal function system。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "函数族 内积 两两垂直",
+                                                 "展开解 初始数据 基底",
+                                                 "\u003cphi_m,phi_n\u003e=0 for m≠n",
+                                                 "Fourier系 本征函数族",
+                                                 "orthogonal function system"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "完备性",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "函数族足够丰富，能逼近目标空间中的对象。",
+                                               "没有非零函数同时垂直于整族函数。",
+                                               "代表性标志是 closure span{phi_n}=H。",
+                                               "展开法能否还原一般数据依赖它。",
+                                               "英文译名是 completeness。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "函数族 逼近 目标空间",
+                                                 "无非零函数 垂直整族",
+                                                 "closure span{phi_n}=H",
+                                                 "展开法 一般数据",
+                                                 "completeness"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "狄利克雷条件",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "傅里叶级数收敛判别要求分段光滑和有限跳跃。",
+                                               "跳跃点处级数趋向左右极限平均。",
+                                               "代表性标志是 piecewise smooth with finite extrema。",
+                                               "它服务于三角展开的收敛说明。",
+                                               "英文译名是 dirichlet condition。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "Fourier级数 分段光滑 有限跳跃",
+                                                 "跳跃点 左右极限平均",
+                                                 "piecewise smooth finite extrema",
+                                                 "三角展开 收敛",
+                                                 "dirichlet condition"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "狄利克雷边界条件",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "边缘上直接指定未知量本身的取值。",
+                                               "固定温度、固定电势或固定弦端都属于这种限制。",
+                                               "代表性标志是 u|_boundary=g。",
+                                               "内部解必须贴合给定边缘数值。",
+                                               "英文译名是 dirichlet boundary condition。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "边缘 未知量取值",
+                                                 "固定温度 固定电势 固定弦端",
+                                                 "u|_boundary=g",
+                                                 "内部解 边缘数值",
+                                                 "dirichlet boundary condition"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "诺伊曼边界条件",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "边缘上指定法向导数而不是函数值。",
+                                               "绝热边界或给定通量常用这种限制。",
+                                               "代表性标志是 partial u/partial n = h。",
+                                               "解可差一个常数，需要兼容条件辅助。",
+                                               "英文译名是 neumann boundary condition。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "边缘 法向导数",
+                                                 "绝热边界 给定通量",
+                                                 "partial u/partial n = h",
+                                                 "常数差 兼容条件",
+                                                 "neumann boundary condition"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "罗宾边界条件",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "边缘上把函数值和法向导数线性组合起来。",
+                                               "对流换热和弹性支承常给出这种形式。",
+                                               "代表性标志是 alpha u+beta partial_n u=g。",
+                                               "它位于给值限制和给通量限制之间。",
+                                               "英文译名是 robin boundary condition。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "边缘 函数值 法向导数 线性组合",
+                                                 "对流换热 弹性支承",
+                                                 "alpha u+beta partial_n u=g",
+                                                 "给值限制 给通量限制 中间型",
+                                                 "robin boundary condition"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "傅里叶变换",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "全空间问题可转到频率变量中处理。",
+                                               "微分算子在频域变成乘以 ik 或 |k|^2。",
+                                               "代表性标志是 F[f](xi)=integral e^{-ix xi}f(x)dx。",
+                                               "常系数方程和卷积核因此简化。",
+                                               "英文译名是 fourier transform。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "全空间 频率变量",
+                                                 "微分算子 ik |k|^2",
+                                                 "F[f](xi)=integral e^{-ix xi}f(x)dx",
+                                                 "常系数方程 卷积核",
+                                                 "fourier transform"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "拉普拉斯变换",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "半轴时间问题可转到复频率变量中。",
+                                               "初始值会以代数项进入变换后的方程。",
+                                               "代表性标志是 integral_0^infty e^{-st}f(t)dt。",
+                                               "常用于演化方程和常微分系统。",
+                                               "英文译名是 laplace transform。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "半轴时间 复频率变量",
+                                                 "初始值 代数项",
+                                                 "integral_0^infty e^{-st}f(t)dt",
+                                                 "演化方程 常微分系统",
+                                                 "laplace transform"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "贝塞尔方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "圆柱对称分离变量后常出现的二阶常微分关系。",
+                                               "原点处的正则性会筛选合适解。",
+                                               "代表性标志是 x^2y\u0027\u0027+xy\u0027+(x^2-nu^2)y=0。",
+                                               "径向振动和圆域问题经常导出它。",
+                                               "英文译名是 bessel equation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "圆柱对称 径向 二阶常微分",
+                                                 "原点正则性 解筛选",
+                                                 "x^2y\u0027\u0027+xy\u0027+(x^2-nu^2)y=0",
+                                                 "径向振动 圆域问题",
+                                                 "bessel equation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "贝塞尔函数",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "圆柱坐标径向问题中的经典特殊函数。",
+                                               "第一类在原点附近通常保持有限。",
+                                               "代表性标志是 J_nu(x)。",
+                                               "零点决定圆域中的本征值。",
+                                               "英文译名是 bessel function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "圆柱坐标 径向问题 特殊函数",
+                                                 "第一类 原点有限",
+                                                 "J_nu(x)",
+                                                 "零点 圆域本征值",
+                                                 "bessel function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "勒让德方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "球坐标角向分离后产生的二阶常微分关系。",
+                                               "端点正则性会选出多项式解。",
+                                               "代表性标志是 ((1-x^2)y\u0027)\u0027+l(l+1)y=0。",
+                                               "球对称势场问题常遇到它。",
+                                               "英文译名是 legendre equation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "球坐标 角向分离 二阶关系",
+                                                 "端点正则性 多项式解",
+                                                 "((1-x^2)y\u0027)\u0027+l(l+1)y=0",
+                                                 "球对称势场",
+                                                 "legendre equation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "勒让德多项式",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "球对称角向问题中出现的正交多项式。",
+                                               "它们在区间 [-1,1] 上按权重一正交。",
+                                               "代表性标志是 P_l(x)。",
+                                               "多极展开常用这一族函数。",
+                                               "英文译名是 legendre polynomial。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "球对称 角向 正交多项式",
+                                                 "[-1,1] 权重一 正交",
+                                                 "P_l(x)",
+                                                 "多极展开",
+                                                 "legendre polynomial"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "球谐函数",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "球面上的角向本征函数描述方向分布。",
+                                               "它们是球面 Laplace 算子的本征函数。",
+                                               "代表性标志是 Y_l^m(theta,phi)。",
+                                               "量子角动量和球域边值问题都使用它。",
+                                               "英文译名是 spherical harmonic。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "球面 角向本征函数 方向分布",
+                                                 "球面Laplace算子 本征函数",
+                                                 "Y_l^m(theta,phi)",
+                                                 "角动量 球域边值问题",
+                                                 "spherical harmonic"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "变分法",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "未知函数通过让积分型量取驻值来确定。",
+                                               "扰动后的一阶变分为零给出微分方程。",
+                                               "代表性标志是 delta integral L dx=0。",
+                                               "自然边界条件可由边界项产生。",
+                                               "英文译名是 calculus of variations。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "未知函数 积分型量 驻值",
+                                                 "扰动 一阶变分 零",
+                                                 "delta integral L dx=0",
+                                                 "自然边界条件 边界项",
+                                                 "calculus of variations"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "泛函",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "输入是函数，输出是数值的映射。",
+                                               "能量、作用量和范数都可写成这种对象。",
+                                               "代表性标志是 J[u]。",
+                                               "变分问题寻找让它驻定的函数。",
+                                               "英文译名是 functional。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "函数输入 数值输出",
+                                                 "能量 作用量 范数",
+                                                 "J[u]",
+                                                 "变分问题 驻定函数",
+                                                 "functional"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "欧拉方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "变分问题的一阶必要条件给出微分关系。",
+                                               "它由被积函数对未知函数和导数的偏导组成。",
+                                               "代表性标志是 d/dx L_{u\u0027}-L_u=0。",
+                                               "极值曲线必须满足这个条件。",
+                                               "英文译名是 euler equation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "变分问题 一阶必要条件",
+                                                 "被积函数 偏导 未知函数 导数",
+                                                 "d/dx L_{u\u0027}-L_u=0",
+                                                 "极值曲线 条件",
+                                                 "euler equation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "线性偏微分方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "未知函数及其导数只以一次形式出现。",
+                                               "叠加原理允许把多个解相加。",
+                                               "代表性标志是 L u=f with L linear。",
+                                               "Green 函数和谱展开尤其适合处理它。",
+                                               "英文译名是 linear partial differential equation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "未知函数 导数 一次形式",
+                                                 "叠加原理 解相加",
+                                                 "L u=f L linear",
+                                                 "Green函数 谱展开",
+                                                 "linear partial differential equation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "非线性偏微分方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "未知函数或导数以乘积、幂或非线性函数出现。",
+                                               "叠加原理一般失效，可能产生激波或孤立波。",
+                                               "代表性标志是 F(D^2u,Du,u,x)=0。",
+                                               "局部存在、弱解和数值方法常很重要。",
+                                               "英文译名是 nonlinear partial differential equation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "未知函数 导数 乘积 幂 非线性函数",
+                                                 "叠加失效 激波 孤立波",
+                                                 "F(D^2u,Du,u,x)=0",
+                                                 "局部存在 弱解 数值方法",
+                                                 "nonlinear partial differential equation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "一阶偏微分方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "最高只含一阶偏导，常与特征曲线相连。",
+                                               "沿特征方向可把问题化成常微分关系。",
+                                               "代表性标志是 a u_x+b u_y=c。",
+                                               "初始曲线的非特征性决定可解性。",
+                                               "英文译名是 first order partial differential equation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "一阶偏导 特征曲线",
+                                                 "特征方向 常微分关系",
+                                                 "a u_x+b u_y=c",
+                                                 "初始曲线 非特征性",
+                                                 "first order partial differential equation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "二阶偏微分方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "最高含二阶偏导，主部决定类型。",
+                                               "二维情形可按判别式分成三大类。",
+                                               "代表性标志是 A u_xx+2B u_xy+C u_yy+...=0。",
+                                               "波、热和势方程都是核心模型。",
+                                               "英文译名是 second order partial differential equation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "二阶偏导 主部 类型",
+                                                 "二维判别式 三大类",
+                                                 "A u_xx+2B u_xy+C u_yy+...=0",
+                                                 "波 热 势方程",
+                                                 "second order partial differential equation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "常微分方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "未知函数只依赖一个自变量。",
+                                               "分离变量后得到的时间因子或空间因子常满足它。",
+                                               "代表性标志是 y\u0027=f(x,y)。",
+                                               "数理方程中常作为降维后的子问题。",
+                                               "英文译名是 ordinary differential equation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "单自变量 未知函数",
+                                                 "时间因子 空间因子 降维",
+                                                 "y\u0027=f(x,y)",
+                                                 "数理方程 子问题",
+                                                 "ordinary differential equation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "齐次方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "方程右端或外源项为零，系统只保留自身结构。",
+                                               "线性情形中解空间通常构成向量空间。",
+                                               "代表性标志是 L u=0。",
+                                               "边界和初始数据决定非平凡解是否存在。",
+                                               "英文译名是 homogeneous equation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "右端零 无外源",
+                                                 "线性情形 解空间 向量空间",
+                                                 "L u=0",
+                                                 "边界 初始数据 非平凡解",
+                                                 "homogeneous equation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "非齐次方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "方程含有给定外源或强迫项。",
+                                               "解常分成齐次部分和一个特解。",
+                                               "代表性标志是 L u=f。",
+                                               "Green 表示会把右端输入积分成响应。",
+                                               "英文译名是 nonhomogeneous equation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "外源 强迫项",
+                                                 "齐次部分 特解",
+                                                 "L u=f",
+                                                 "Green表示 右端响应",
+                                                 "nonhomogeneous equation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "源项",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "外部输入出现在方程右端，驱动场发生变化。",
+                                               "它可表示热源、力源、电荷或概率源。",
+                                               "代表性标志是 f(x,t) in L u=f。",
+                                               "没有它时模型回到无源情形。",
+                                               "英文译名是 source term。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "外部输入 方程右端",
+                                                 "热源 力源 电荷 概率源",
+                                                 "f(x,t) in L u=f",
+                                                 "无源情形 对照",
+                                                 "source term"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "边界值问题",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "空间区域内满足微分关系，边缘上满足给定限制。",
+                                               "它通常描述静态或定频场。",
+                                               "代表性标志是 L u=f in D, B u=g on boundary。",
+                                               "边缘数据决定内部解的选择。",
+                                               "英文译名是 boundary value problem。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "空间区域 微分关系 边缘限制",
+                                                 "静态场 定频场",
+                                                 "L u=f in D B u=g on boundary",
+                                                 "边缘数据 内部解",
+                                                 "boundary value problem"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "柯西问题",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "在初始超曲面上给出数据并向外求解。",
+                                               "演化方程和一阶方程常以这种形式提出。",
+                                               "代表性标志是 u|_{t=0}=phi。",
+                                               "特征方向会影响数据能否唯一传播。",
+                                               "英文译名是 cauchy problem。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "初始超曲面 数据 外推",
+                                                 "演化方程 一阶方程",
+                                                 "u|_{t=0}=phi",
+                                                 "特征方向 数据传播",
+                                                 "cauchy problem"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "混合问题",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "问题同时含有不同类型的数据或不同边界段条件。",
+                                               "演化方程在有限区域内常形成这种组合。",
+                                               "代表性标志是 initial data plus boundary data。",
+                                               "兼容条件决定交界处是否顺畅。",
+                                               "英文译名是 mixed problem。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "不同类型数据 不同边界段",
+                                                 "演化方程 有限区域 组合",
+                                                 "initial data plus boundary data",
+                                                 "兼容条件 交界正则性",
+                                                 "mixed problem"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "适定性",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "求解任务对数据应有存在、唯一和稳定三项性质。",
+                                               "连续依赖数据保证模型能承受测量误差。",
+                                               "代表性标志是 existence uniqueness stability。",
+                                               "Hadamard 标准常用于判断。",
+                                               "英文译名是 well posedness。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "存在 唯一 稳定",
+                                                 "连续依赖 测量误差",
+                                                 "existence uniqueness stability",
+                                                 "Hadamard标准",
+                                                 "well posedness"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "解的唯一性",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "同一组数据不能对应两个不同解。",
+                                               "证明常令两个候选解相减，再用能量或最大值论证。",
+                                               "代表性标志是 u1-u2=0。",
+                                               "它保证模型预测没有二义性。",
+                                               "英文译名是 uniqueness of solution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "同组数据 单一解",
+                                                 "候选解差 能量 最大值",
+                                                 "u1-u2=0",
+                                                 "模型预测 无二义性",
+                                                 "uniqueness of solution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "解的稳定性",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "输入数据的小变化只导致解的小变化。",
+                                               "能量估计常给出这种连续依赖。",
+                                               "代表性标志是 ||u-v||\u003c=C||data difference||。",
+                                               "不稳定问题对误差极敏感。",
+                                               "英文译名是 stability of solution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "数据小变化 解小变化",
+                                                 "能量估计 连续依赖",
+                                                 "||u-v||\u003c=C||data difference||",
+                                                 "误差敏感性",
+                                                 "stability of solution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "能量法",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "构造平方积分型能量来控制解。",
+                                               "把方程乘以适当测试函数并积分得到估计。",
+                                               "代表性标志是 dE/dt\u003c=C E。",
+                                               "唯一性和稳定性常由它推出。",
+                                               "英文译名是 energy method。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "平方积分型能量 解控制",
+                                                 "测试函数 积分 估计",
+                                                 "dE/dt\u003c=C E",
+                                                 "唯一性 稳定性",
+                                                 "energy method"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "最大值原理",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "某些椭圆或抛物型方程的极值由边界或初始边界控制。",
+                                               "内部若出现过强极值，解会被迫特殊化。",
+                                               "代表性标志是 max in closure occurs on parabolic boundary。",
+                                               "它常用于唯一性和比较定理。",
+                                               "英文译名是 maximum principle。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "椭圆 抛物 极值 边界控制",
+                                                 "内部强极值 特殊解",
+                                                 "max in closure occurs on parabolic boundary",
+                                                 "唯一性 比较定理",
+                                                 "maximum principle"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "弱解",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "解不必具有经典导数，只需在积分意义下满足方程。",
+                                               "测试函数和分部积分转移导数。",
+                                               "代表性标志是 integral u L^*phi = integral f phi。",
+                                               "处理低正则数据和间断现象时重要。",
+                                               "英文译名是 weak solution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "低正则 积分意义",
+                                                 "测试函数 分部积分 导数转移",
+                                                 "integral u L^*phi = integral f phi",
+                                                 "低正则数据 间断现象",
+                                                 "weak solution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "强解",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "解拥有足够导数，几乎处处或逐点满足方程。",
+                                               "它比弱意义更接近经典求解。",
+                                               "代表性标志是 derivatives exist and L u=f a.e.。",
+                                               "正则性提升常把弱对象推到这种层次。",
+                                               "英文译名是 strong solution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "足够导数 逐点满足",
+                                                 "经典求解 接近",
+                                                 "derivatives exist and L u=f a.e.",
+                                                 "正则性提升",
+                                                 "strong solution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "广义函数",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "对象由其对测试函数的线性作用刻画。",
+                                               "不连续和点源都能纳入统一框架。",
+                                               "代表性标志是 distribution。",
+                                               "微分可在这种意义下无限进行。",
+                                               "英文译名是 generalized function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "测试函数 作用定义",
+                                                 "不连续 点源 统一框架",
+                                                 "distribution",
+                                                 "分布意义 微分",
+                                                 "generalized function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "狄拉克函数",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "点源在积分中抽取测试函数某点的值。",
+                                               "点值图像不再适用，分布意义才是本体。",
+                                               "代表性标志是 integral delta(x-a)phi(x)dx=phi(a)。",
+                                               "基本解和 Green 核都围绕它建立。",
+                                               "英文译名是 dirac delta function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "点源 测试函数 点值抽取",
+                                                 "分布对象 非普通函数",
+                                                 "integral delta(x-a)phi(x)dx=phi(a)",
+                                                 "基本解 Green核",
+                                                 "dirac delta function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "阶跃函数",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "变量跨过某点后函数值突然跳变。",
+                                               "它的分布导数会产生点源。",
+                                               "代表性标志是 H(x)。",
+                                               "开关输入和不连续初值常用它表示。",
+                                               "英文译名是 step function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "跨点跳变 函数值",
+                                                 "分布导数 点源",
+                                                 "H(x)",
+                                                 "开关输入 不连续初值",
+                                                 "step function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "冲激函数",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "瞬时集中输入在时间或空间上近似点源。",
+                                               "系统响应可由它生成一般输入的响应。",
+                                               "代表性标志是 delta(t)。",
+                                               "控制和传播问题常用它测试核函数。",
+                                               "英文译名是 impulse function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "瞬时集中输入 点源近似",
+                                                 "系统响应 一般输入响应",
+                                                 "delta(t)",
+                                                 "核函数 测试",
+                                                 "impulse function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "卷积",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "一个函数滑过另一个函数并积分叠加。",
+                                               "平移不变系统的输出可写成核与输入的这种组合。",
+                                               "代表性标志是 (f*g)(x)=integral f(x-y)g(y)dy。",
+                                               "Fourier 变换会把它变成乘法。",
+                                               "英文译名是 convolution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "滑移 积分叠加",
+                                                 "平移不变系统 核 输入",
+                                                 "(f*g)(x)=integral f(x-y)g(y)dy",
+                                                 "Fourier变换 乘法",
+                                                 "convolution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "傅里叶级数",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "周期函数可展开为三角或复指数模态之和。",
+                                               "系数由与基函数的正交投影给出。",
+                                               "代表性标志是 sum c_n e^{inx}。",
+                                               "有限区间边值问题常用它匹配数据。",
+                                               "英文译名是 fourier series。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "周期函数 三角模态 复指数模态",
+                                                 "正交投影 系数",
+                                                 "sum c_n e^{inx}",
+                                                 "有限区间 边值数据",
+                                                 "fourier series"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "正弦级数",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "只用正弦模态展开函数，天然适配零值端点。",
+                                               "奇延拓会导出这种系数形式。",
+                                               "代表性标志是 sum b_n sin(n pi x/L)。",
+                                               "Dirichlet 型端点限制常使用它。",
+                                               "英文译名是 sine series。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "正弦模态 零值端点",
+                                                 "奇延拓 系数",
+                                                 "sum b_n sin(n pi x/L)",
+                                                 "Dirichlet端点",
+                                                 "sine series"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "余弦级数",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "只用余弦模态展开函数，天然适配零法向导数端点。",
+                                               "偶延拓会导出这种系数形式。",
+                                               "代表性标志是 sum a_n cos(n pi x/L)。",
+                                               "Neumann 型端点限制常使用它。",
+                                               "英文译名是 cosine series。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "余弦模态 零法向导数端点",
+                                                 "偶延拓 系数",
+                                                 "sum a_n cos(n pi x/L)",
+                                                 "Neumann端点",
+                                                 "cosine series"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "本征函数展开",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "用算子的本征函数作为基底展开未知量。",
+                                               "每个模态的系数单独满足较简单关系。",
+                                               "代表性标志是 u=sum c_n phi_n。",
+                                               "分离变量法最后通常落到这一步。",
+                                               "英文译名是 eigenfunction expansion。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "算子本征函数 基底 未知量",
+                                                 "模态系数 简化关系",
+                                                 "u=sum c_n phi_n",
+                                                 "分离变量 终步",
+                                                 "eigenfunction expansion"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "分离常数",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "分离变量后各单变量方程共享同一个参数。",
+                                               "边界条件会把它量子化为离散谱值。",
+                                               "代表性标志是 X\u0027\u0027/X = T\u0027/(c^2T) = -lambda。",
+                                               "它连接不同变量方向的子问题。",
+                                               "英文译名是 separation constant。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "分离变量 共享参数",
+                                                 "边界条件 离散谱值",
+                                                 "X\u0027\u0027/X = T\u0027/(c^2T) = -lambda",
+                                                 "变量方向 子问题连接",
+                                                 "separation constant"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "径向方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "具有圆柱或球对称时，径向变量满足单独方程。",
+                                               "维数和坐标尺度因子会改变一阶项。",
+                                               "代表性标志是 r-dependent ODE。",
+                                               "Bessel 类函数常从这里出现。",
+                                               "英文译名是 radial equation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "圆柱对称 球对称 径向变量",
+                                                 "维数 尺度因子 一阶项",
+                                                 "r-dependent ODE",
+                                                 "Bessel函数",
+                                                 "radial equation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "角向方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "角变量分离后得到周期或球面上的本征关系。",
+                                               "周期性和端点正则性限制允许模态。",
+                                               "代表性标志是 theta-dependent ODE。",
+                                               "三角函数、Legendre 函数或球谐函数常出现。",
+                                               "英文译名是 angular equation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "角变量 周期 球面本征关系",
+                                                 "周期性 端点正则 模态",
+                                                 "theta-dependent ODE",
+                                                 "三角函数 Legendre函数 球谐函数",
+                                                 "angular equation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "柱坐标系",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "位置用半径、方位角和轴向坐标描述。",
+                                               "适合圆柱对称区域和管状边界。",
+                                               "代表性标志是 (r,theta,z)。",
+                                               "Laplace 算子中会出现 1/r 项。",
+                                               "英文译名是 cylindrical coordinate system。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "半径 方位角 轴向坐标",
+                                                 "圆柱对称 管状边界",
+                                                 "(r,theta,z)",
+                                                 "Laplace算子 1/r项",
+                                                 "cylindrical coordinate system"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "球坐标系",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "位置用距离和两个角度描述。",
+                                               "适合球对称区域与中心势问题。",
+                                               "代表性标志是 (r,theta,phi)。",
+                                               "角向部分会连接球谐函数。",
+                                               "英文译名是 spherical coordinate system。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "距离 两个角度",
+                                                 "球对称 中心势",
+                                                 "(r,theta,phi)",
+                                                 "角向部分 球谐函数",
+                                                 "spherical coordinate system"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "圆域",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "二维求解区域由圆盘或圆环给出。",
+                                               "边界半径固定，角向常用 Fourier 模态。",
+                                               "代表性标志是 r\u003cR 或 a\u003cr\u003cb。",
+                                               "径向方程常导向 Bessel 或幂函数。",
+                                               "英文译名是 circular domain。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "圆盘 圆环 二维区域",
+                                                 "固定半径边界 角向Fourier模态",
+                                                 "r\u003cR a\u003cr\u003cb",
+                                                 "径向方程 Bessel 幂函数",
+                                                 "circular domain"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "球域",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "三维区域由球或球壳给出。",
+                                               "球面对称让径向和角向自然分离。",
+                                               "代表性标志是 r\u003cR。",
+                                               "球谐函数负责角向展开。",
+                                               "英文译名是 spherical domain。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "球 球壳 三维区域",
+                                                 "球面对称 径向 角向分离",
+                                                 "r\u003cR",
+                                                 "球谐函数 角向展开",
+                                                 "spherical domain"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "半空间",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "区域由一个平面边界切出无限一侧。",
+                                               "反射法和 Fourier 变换常简化求解。",
+                                               "代表性标志是 x_n\u003e0。",
+                                               "边界核可写成显式形式。",
+                                               "英文译名是 half space。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "平面边界 无限一侧",
+                                                 "反射法 Fourier变换",
+                                                 "x_n\u003e0",
+                                                 "边界核 显式形式",
+                                                 "half space"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "无界区域",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "求解区域向无穷远延伸，边界不再紧致。",
+                                               "还需给出远场衰减或辐射条件。",
+                                               "代表性标志是 |x|-\u003einfty condition。",
+                                               "Green 函数和变换法常用于处理。",
+                                               "英文译名是 unbounded domain。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "无穷远区域 非紧边界",
+                                                 "远场衰减 辐射条件",
+                                                 "|x|-\u003einfty condition",
+                                                 "Green函数 变换法",
+                                                 "unbounded domain"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "边界算子",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "它把区域内函数提取成边缘上的限制量。",
+                                               "可包含迹、法向导数或二者组合。",
+                                               "代表性标志是 B u on boundary。",
+                                               "边值问题用它统一写边缘条件。",
+                                               "英文译名是 boundary operator。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "区域函数 边缘限制量",
+                                                 "迹 法向导数 组合",
+                                                 "B u on boundary",
+                                                 "边值问题 边缘条件",
+                                                 "boundary operator"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "初值算子",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "它从时空函数中抽取起始时刻的数据。",
+                                               "演化方程可用它统一写初始限制。",
+                                               "代表性标志是 Iu=(u(0),u_t(0))。",
+                                               "不同阶数的时间方程需要不同数量的数据。",
+                                               "英文译名是 initial operator。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "时空函数 起始时刻 数据",
+                                                 "演化方程 初始限制",
+                                                 "Iu=(u(0),u_t(0))",
+                                                 "时间阶数 数据数量",
+                                                 "initial operator"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "拉普拉斯算子",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "对空间变量取二阶偏导和，刻画扩散或势场。",
+                                               "在不同坐标系下表达式会带尺度因子。",
+                                               "代表性标志是 Delta=sum partial_i^2。",
+                                               "热方程、Poisson 关系和 Helmholtz 关系都包含它。",
+                                               "英文译名是 laplace operator。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "空间变量 二阶偏导和",
+                                                 "坐标系 尺度因子",
+                                                 "Delta=sum partial_i^2",
+                                                 "热方程 Poisson Helmholtz",
+                                                 "laplace operator"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "达朗贝尔算子",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "时间二阶和空间 Laplace 项按波速组合。",
+                                               "它是相对论波动模型中的基本算子。",
+                                               "代表性标志是 box=partial_t^2-c^2 Delta。",
+                                               "零右端给出自由波传播。",
+                                               "英文译名是 d alembert operator。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "时间二阶 空间Laplace 波速组合",
+                                                 "相对论波动 基本算子",
+                                                 "box=partial_t^2-c^2 Delta",
+                                                 "自由波传播",
+                                                 "d alembert operator"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "梯度算子",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "标量场的最大增长方向和变化率由它给出。",
+                                               "势场的力或通量常从它导出。",
+                                               "代表性标志是 grad u。",
+                                               "在曲线坐标中需考虑尺度因子。",
+                                               "英文译名是 gradient operator。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "标量场 最大增长方向 变化率",
+                                                 "势场 力 通量",
+                                                 "grad u",
+                                                 "曲线坐标 尺度因子",
+                                                 "gradient operator"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "散度算子",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "向量场的源汇强度由它刻画。",
+                                               "守恒律常把时间变化和它联系起来。",
+                                               "代表性标志是 div F。",
+                                               "Gauss 公式把体积分转成边界通量。",
+                                               "英文译名是 divergence operator。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "向量场 源汇强度",
+                                                 "守恒律 时间变化",
+                                                 "div F",
+                                                 "Gauss公式 边界通量",
+                                                 "divergence operator"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "旋度算子",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "向量场的局部旋转由它刻画。",
+                                               "电磁和流体模型中常表示环量密度。",
+                                               "代表性标志是 curl F。",
+                                               "Stokes 公式把曲面积分与边界环量相连。",
+                                               "英文译名是 curl operator。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "向量场 局部旋转",
+                                                 "电磁 流体 环量密度",
+                                                 "curl F",
+                                                 "Stokes公式 边界环量",
+                                                 "curl operator"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "正交曲线坐标",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "坐标曲线彼此正交，但不一定是直线。",
+                                               "微分算子表达式需要尺度因子修正。",
+                                               "代表性标志是 h1,h2,h3 with orthogonal basis。",
+                                               "柱坐标和球坐标是典型例子。",
+                                               "英文译名是 orthogonal curvilinear coordinate。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "坐标曲线 正交 非直线",
+                                                 "微分算子 尺度因子",
+                                                 "h1 h2 h3 orthogonal basis",
+                                                 "柱坐标 球坐标",
+                                                 "orthogonal curvilinear coordinate"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "拉梅系数",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "曲线坐标中弧长微元相对于坐标微元的比例因子。",
+                                               "梯度、散度和 Laplace 表达式都依赖它。",
+                                               "代表性标志是 h_i=|partial r/partial q_i|。",
+                                               "正交曲线坐标计算离不开这些系数。",
+                                               "英文译名是 lame coefficient。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "曲线坐标 弧长微元 比例因子",
+                                                 "梯度 散度 Laplace 表达式",
+                                                 "h_i=|partial r/partial q_i|",
+                                                 "正交曲线坐标计算",
+                                                 "lame coefficient"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "贝塞尔级数",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "用 Bessel 函数零点对应的径向模态展开。",
+                                               "圆域边界条件决定允许的根。",
+                                               "代表性标志是 sum a_n J_n(alpha_n r/R)。",
+                                               "圆柱对称边值问题常用它。",
+                                               "英文译名是 bessel series。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "Bessel函数零点 径向模态 展开",
+                                                 "圆域边界条件 允许根",
+                                                 "sum a_n J_n(alpha_n r/R)",
+                                                 "圆柱对称 边值问题",
+                                                 "bessel series"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "第一类贝塞尔函数",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "Bessel 方程在原点正则的一类解。",
+                                               "圆域中有限性条件常筛选它。",
+                                               "代表性标志是 J_nu(x)。",
+                                               "其零点给出许多径向本征值。",
+                                               "英文译名是 bessel function of first kind。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "Bessel方程 原点正则 解",
+                                                 "圆域 有限性条件",
+                                                 "J_nu(x)",
+                                                 "径向本征值 零点",
+                                                 "bessel function of first kind"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "第二类贝塞尔函数",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "Bessel 方程另一类线性独立解，在原点常有奇性。",
+                                               "外部区域或组合解中会使用它。",
+                                               "代表性标志是 Y_nu(x)。",
+                                               "与第一类配成通解基。",
+                                               "英文译名是 bessel function of second kind。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "Bessel方程 线性独立解 原点奇性",
+                                                 "外部区域 组合解",
+                                                 "Y_nu(x)",
+                                                 "通解基 第一类配对",
+                                                 "bessel function of second kind"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "修正贝塞尔函数",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "符号改变后的 Bessel 型方程产生指数增长或衰减解。",
+                                               "径向扩散和 Helmholtz 变形问题常出现。",
+                                               "代表性标志是 I_nu(x), K_nu(x)。",
+                                               "一个在原点正则，另一个在无穷远衰减。",
+                                               "英文译名是 modified bessel function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "符号改变 Bessel型方程 指数增减",
+                                                 "径向扩散 Helmholtz变形",
+                                                 "I_nu(x) K_nu(x)",
+                                                 "原点正则 无穷远衰减",
+                                                 "modified bessel function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "球贝塞尔函数",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "球坐标径向波动问题中的特殊函数。",
+                                               "它与半整数阶 Bessel 函数相连。",
+                                               "代表性标志是 j_l(x), y_l(x)。",
+                                               "球面波和散射问题常用它。",
+                                               "英文译名是 spherical bessel function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "球坐标 径向波动 特殊函数",
+                                                 "半整数阶 Bessel函数",
+                                                 "j_l(x) y_l(x)",
+                                                 "球面波 散射",
+                                                 "spherical bessel function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "埃尔米特方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "量子谐振子和高斯权正交多项式会导出该二阶关系。",
+                                               "要求多项式解会离散化参数。",
+                                               "代表性标志是 y\u0027\u0027-2x y\u0027+2n y=0。",
+                                               "Hermite 多项式是其标准解族。",
+                                               "英文译名是 hermite equation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "量子谐振子 高斯权 正交多项式",
+                                                 "多项式解 参数离散",
+                                                 "y\u0027\u0027-2x y\u0027+2n y=0",
+                                                 "Hermite多项式 标准解族",
+                                                 "hermite equation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "埃尔米特多项式",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "带高斯权的正交多项式描述谐振子模态。",
+                                               "递推和微分公式便于展开计算。",
+                                               "代表性标志是 H_n(x)。",
+                                               "在量子振子和热核展开中常出现。",
+                                               "英文译名是 hermite polynomial。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "高斯权 正交多项式 谐振子模态",
+                                                 "递推公式 微分公式 展开",
+                                                 "H_n(x)",
+                                                 "量子振子 热核展开",
+                                                 "hermite polynomial"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "拉盖尔方程",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "半轴上的权函数问题会导出这种二阶关系。",
+                                               "正则多项式解对应非负整数参数。",
+                                               "代表性标志是 x y\u0027\u0027+(1-x)y\u0027+n y=0。",
+                                               "径向量子问题常见它。",
+                                               "英文译名是 laguerre equation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "半轴 权函数 二阶关系",
+                                                 "正则多项式解 非负整数参数",
+                                                 "x y\u0027\u0027+(1-x)y\u0027+n y=0",
+                                                 "径向量子问题",
+                                                 "laguerre equation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "拉盖尔多项式",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "半轴上带指数权的正交多项式。",
+                                               "它们适合处理径向或衰减型问题。",
+                                               "代表性标志是 L_n(x)。",
+                                               "氢原子径向解中常出现。",
+                                               "英文译名是 laguerre polynomial。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "半轴 指数权 正交多项式",
+                                                 "径向问题 衰减型问题",
+                                                 "L_n(x)",
+                                                 "氢原子径向解",
+                                                 "laguerre polynomial"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "格林公式",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "体积分和边界积分之间通过散度关系转换。",
+                                               "它是偏微分方程积分恒等式的基础。",
+                                               "代表性标志是 integral_D div F = integral_boundary F·n。",
+                                               "弱形式和边值问题推导常用。",
+                                               "英文译名是 green formula。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "体积分 边界积分 散度关系",
+                                                 "偏微分方程 积分恒等式",
+                                                 "integral_D div F = integral_boundary F·n",
+                                                 "弱形式 边值问题推导",
+                                                 "green formula"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "格林恒等式",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "两个函数及其 Laplace 项之间存在积分恒等关系。",
+                                               "边界上会出现函数值和法向导数的组合。",
+                                               "代表性标志是 ∫(u Delta v-v Delta u)=∫boundary(u partial_n v-v partial_n u)。",
+                                               "Green 函数表示由它推出。",
+                                               "英文译名是 green identity。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "两个函数 Laplace项 积分恒等关系",
+                                                 "边界 函数值 法向导数组合",
+                                                 "∫(u Delta v-v Delta u)=∫boundary(u partial_n v-v partial_n u)",
+                                                 "Green函数表示",
+                                                 "green identity"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "泊松积分",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "圆盘或半空间中调和问题的边界数据被核积分恢复。",
+                                               "它给出 Dirichlet 问题的显式内部值。",
+                                               "代表性标志是 integral P(x,y)f(y)dy。",
+                                               "边界函数经过加权平均进入区域内部。",
+                                               "英文译名是 poisson integral。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "圆盘 半空间 调和问题 边界数据",
+                                                 "Dirichlet问题 显式内部值",
+                                                 "integral P(x,y)f(y)dy",
+                                                 "边界函数 加权平均",
+                                                 "poisson integral"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "泊松核",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "用于恢复调和值的非负核函数集中在靠近内部点投影处。",
+                                               "在圆盘中它随半径趋近边界而形成近似单位。",
+                                               "代表性标志是 P_r(theta)=(1-r^2)/(1-2r cos theta+r^2)。",
+                                               "边界数据通过它被平均到内部。",
+                                               "英文译名是 poisson kernel。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "调和值恢复 非负核 内部点投影",
+                                                 "圆盘 半径趋边界 近似单位",
+                                                 "P_r(theta)=(1-r^2)/(1-2r cos theta+r^2)",
+                                                 "边界数据 内部平均",
+                                                 "poisson kernel"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "热核",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "瞬时点热源的扩散响应给出基本核。",
+                                               "一般初始温度可与它积分叠加。",
+                                               "代表性标志是 (4pi k t)^{-n/2} exp(-|x|^2/(4kt))。",
+                                               "时间越大，分布越宽越平滑。",
+                                               "英文译名是 heat kernel。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "瞬时点热源 扩散响应 基本核",
+                                                 "初始温度 积分叠加",
+                                                 "(4pi k t)^{-n/2} exp(-|x|^2/(4kt))",
+                                                 "时间增大 分布变宽 平滑",
+                                                 "heat kernel"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "第三类边界条件",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "边缘限制同时含函数值和法向导数。",
+                                               "传热中的对流换热常写成这种形式。",
+                                               "代表性标志是 alpha u+beta partial_n u=g。",
+                                               "它与 Robin 型限制本质相同。",
+                                               "英文译名是 third kind boundary condition。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "边缘 函数值 法向导数",
+                                                 "传热 对流换热",
+                                                 "alpha u+beta partial_n u=g",
+                                                 "Robin型限制",
+                                                 "third kind boundary condition"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "混合边界条件",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "同一边界的不同部分施加不同类型限制。",
+                                               "一段可给函数值，另一段可给通量。",
+                                               "代表性标志是 Dirichlet on Gamma1, Neumann on Gamma2。",
+                                               "交界处需要注意兼容和正则性。",
+                                               "英文译名是 mixed boundary condition。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "不同边界部分 不同限制",
+                                                 "函数值 通量",
+                                                 "Dirichlet on Gamma1 Neumann on Gamma2",
+                                                 "交界处 兼容 正则性",
+                                                 "mixed boundary condition"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "自然边界条件",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "变分推导中未固定边界值时自动出现的边缘限制。",
+                                               "它来自分部积分留下的边界项。",
+                                               "代表性标志是 natural condition from boundary term。",
+                                               "不需额外人为指定也可能被泛函决定。",
+                                               "英文译名是 natural boundary condition。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "变分推导 自然边缘限制",
+                                                 "分部积分 边界项",
+                                                 "natural condition from boundary term",
+                                                 "泛函决定",
+                                                 "natural boundary condition"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "齐次边界条件",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "边缘限制的给定数据为零。",
+                                               "它让解空间更容易形成线性空间。",
+                                               "代表性标志是 B u=0 on boundary。",
+                                               "分离变量后常得到正交本征函数系。",
+                                               "英文译名是 homogeneous boundary condition。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "边缘限制 零数据",
+                                                 "解空间 线性空间",
+                                                 "B u=0 on boundary",
+                                                 "分离变量 正交本征函数",
+                                                 "homogeneous boundary condition"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "非齐次边界条件",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "边缘限制带有非零给定数据。",
+                                               "常先构造抬升函数再化成零数据问题。",
+                                               "代表性标志是 B u=g with g≠0。",
+                                               "边缘外加影响直接进入解。",
+                                               "英文译名是 nonhomogeneous boundary condition。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "边缘限制 非零数据",
+                                                 "抬升函数 零数据问题",
+                                                 "B u=g with g≠0",
+                                                 "边缘外加影响",
+                                                 "nonhomogeneous boundary condition"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "非齐次项",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "线性方程右端的非零输入驱动特解。",
+                                               "它可由外力、热源或边界抬升产生。",
+                                               "代表性标志是 f in L u=f。",
+                                               "求解时常与齐次解叠加。",
+                                               "英文译名是 nonhomogeneous term。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "线性方程 右端 非零输入",
+                                                 "外力 热源 边界抬升",
+                                                 "f in L u=f",
+                                                 "齐次解 特解 叠加",
+                                                 "nonhomogeneous term"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "格林算子",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "把源项映射为满足边缘限制的解。",
+                                               "它的核通常就是相应 Green 函数。",
+                                               "代表性标志是 u=Gf。",
+                                               "线性边值问题可用它写成算子形式。",
+                                               "英文译名是 green operator。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "源项 解 映射",
+                                                 "核 Green函数",
+                                                 "u=Gf",
+                                                 "线性边值问题 算子形式",
+                                                 "green operator"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "传播子",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "演化系统从一个时刻的数据推进到另一时刻。",
+                                               "在量子、波动或热过程里都可表示时间发展。",
+                                               "代表性标志是 U(t,s)。",
+                                               "核表示记录源点到观测点的传播影响。",
+                                               "英文译名是 propagator。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "演化系统 时刻推进",
+                                                 "量子 波动 热过程 时间发展",
+                                                 "U(t,s)",
+                                                 "源点 观测点 传播影响",
+                                                 "propagator"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "解算子",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "给定数据后，它直接返回相应解。",
+                                               "连续性反映问题对数据的稳定依赖。",
+                                               "代表性标志是 S:data -\u003e u。",
+                                               "半群和 Green 算子都是常见实现。",
+                                               "英文译名是 solution operator。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "数据 解 映射",
+                                                 "连续性 稳定依赖",
+                                                 "S:data -\u003e u",
+                                                 "半群 Green算子",
+                                                 "solution operator"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "固有函数",
+                        "source_file":  "words/数学/普通模式/mathematical_physics_equations_terms.csv",
+                        "complete_clues":  [
+                                               "算子作用后只改变比例因子的一类函数在谱问题中出现。",
+                                               "旧译名常对应 eigenfunction。",
+                                               "代表性标志是 L phi=lambda phi。",
+                                               "它与本征值配对，并用于展开解。",
+                                               "英文译名是 proper function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "算子 比例因子 谱问题",
+                                                 "eigenfunction 旧译",
+                                                 "L phi=lambda phi",
+                                                 "本征值 配对 展开解",
+                                                 "proper function"
+                                             ]
+                    }
+                ]
+}

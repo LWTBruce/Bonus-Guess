@@ -1,0 +1,1967 @@
+{
+  "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+  "entries": [
+    {
+      "chinese_name": "线性代数",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究加法、数乘、矩阵运算和线性映射构成的计算框架。",
+        "方程组、空间结构和特征分解在同一套规则中处理。",
+        "秩、行列式、核、像、内积和特征值是常见判别量。",
+        "保持加法与数乘的结构是核心。",
+        "标准记号或英文名为 `linear_algebra`。"
+      ],
+      "fragmented_clues": [
+        "加法 数乘 矩阵运算 映射",
+        "方程组 空间结构 特征分解",
+        "rank det kernel image",
+        "additivity homogeneity",
+        "linear algebra"
+      ]
+    },
+    {
+      "chinese_name": "向量",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究有序分量组成的对象。",
+        "可表示平移、方向、状态或方程未知量。",
+        "加法和数乘按分量进行。",
+        "在线性组合中作为基本构件出现。",
+        "标准记号或英文名为 `vector`。"
+      ],
+      "fragmented_clues": [
+        "有序分量",
+        "方向 状态 未知量",
+        "加法 数乘 分量",
+        "vector",
+        "vector"
+      ]
+    },
+    {
+      "chinese_name": "向量空间",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究一组对象在加法和数乘下封闭。",
+        "零元素、相反元素和八条公理支撑运算。",
+        "`u+v` 与 `cu` 仍留在同一集合中。",
+        "所有线性组合仍在集合内是核心。",
+        "标准记号或英文名为 `vector_space`。"
+      ],
+      "fragmented_clues": [
+        "集合 加法 数乘 封闭",
+        "零元素 相反元素 公理",
+        "u+v cu",
+        "linear combinations",
+        "vector space"
+      ]
+    },
+    {
+      "chinese_name": "线性空间",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究一组对象在标量作用和加法下形成封闭结构。",
+        "可讨论基、维数、坐标和子结构。",
+        "`αu+βv` 仍留在同一集合。",
+        "结构不依赖具体对象是数列、函数还是几何箭头。",
+        "标准记号或英文名为 `linear_space`。"
+      ],
+      "fragmented_clues": [
+        "标量作用 加法 封闭",
+        "基 维数 坐标",
+        "αu+βv",
+        "abstract vector space",
+        "linear space"
+      ]
+    },
+    {
+      "chinese_name": "子空间",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究大空间中的非空部分仍保持同样线性结构。",
+        "检验时只需看加法和数乘封闭。",
+        "`αu+βv` 留在该部分是常用判据。",
+        "零元素必然包含在其中。",
+        "标准记号或英文名为 `subspace`。"
+      ],
+      "fragmented_clues": [
+        "大空间 非空部分",
+        "加法 数乘 封闭",
+        "αu+βv",
+        "zero element",
+        "subspace"
+      ]
+    },
+    {
+      "chinese_name": "线性组合",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究若干对象乘以标量后相加得到新对象。",
+        "系数记录每个构件的贡献。",
+        "`a_1v_1+...+a_kv_k` 是标准形式。",
+        "张成、相关性和坐标都依赖这种表达。",
+        "标准记号或英文名为 `linear_combination`。"
+      ],
+      "fragmented_clues": [
+        "标量 乘法 相加",
+        "系数 贡献",
+        "a1v1+...+akvk",
+        "span coordinates",
+        "linear combination"
+      ]
+    },
+    {
+      "chinese_name": "线性相关",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究一组对象存在非平凡系数使总和为零。",
+        "某个对象可由其余对象表达。",
+        "`a_1v_1+...+a_kv_k=0` 且系数不全为零。",
+        "信息中存在冗余方向。",
+        "标准记号或英文名为 `linear_dependence`。"
+      ],
+      "fragmented_clues": [
+        "非平凡系数 零和",
+        "冗余方向",
+        "sum a_i v_i=0",
+        "not all zero",
+        "linear dependence"
+      ]
+    },
+    {
+      "chinese_name": "线性无关",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究只有全零系数才能得到零和。",
+        "没有一个对象可由其余对象表达。",
+        "`a_1v_1+...+a_kv_k=0 => a_i=0`。",
+        "每个对象都贡献新的方向信息。",
+        "标准记号或英文名为 `linear_independence`。"
+      ],
+      "fragmented_clues": [
+        "零和 全零系数",
+        "无冗余方向",
+        "sum a_i v_i=0 => a_i=0",
+        "independent",
+        "linear independence"
+      ]
+    },
+    {
+      "chinese_name": "基",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究一组既能生成全空间又无冗余的对象。",
+        "每个元素都能唯一写成它们的线性组合。",
+        "生成性加独立性给出判别。",
+        "坐标表达依赖这组参照对象。",
+        "标准记号或英文名为 `basis`。"
+      ],
+      "fragmented_clues": [
+        "生成 全空间 无冗余",
+        "唯一表达",
+        "span V independent",
+        "basis",
+        "basis"
+      ]
+    },
+    {
+      "chinese_name": "维数",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究空间中独立方向的数量。",
+        "任意基的元素个数相同。",
+        "`dim V` 是标准记号。",
+        "它等于坐标描述所需的自由参数数目。",
+        "标准记号或英文名为 `dimension`。"
+      ],
+      "fragmented_clues": [
+        "独立方向 数量",
+        "基 元素个数",
+        "dim V",
+        "degrees of freedom",
+        "dimension"
+      ]
+    },
+    {
+      "chinese_name": "坐标",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究对象相对于选定基的系数列表。",
+        "同一对象换基后系数会改变。",
+        "`[v]_B` 常表示该列表。",
+        "几何对象本身与表示数列需要区分。",
+        "标准记号或英文名为 `coordinate`。"
+      ],
+      "fragmented_clues": [
+        "选定基 系数列表",
+        "换基 系数改变",
+        "[v]_B",
+        "coordinate vector",
+        "coordinate"
+      ]
+    },
+    {
+      "chinese_name": "矩阵",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究按行列排布的数表。",
+        "可表示线性方程组或线性映射。",
+        "乘法对应映射复合，行列操作对应消元。",
+        "形状为 `m×n` 的数组是基本对象。",
+        "标准记号或英文名为 `matrix`。"
+      ],
+      "fragmented_clues": [
+        "行列 数表",
+        "方程组 映射",
+        "AB composition",
+        "m×n array",
+        "matrix"
+      ]
+    },
+    {
+      "chinese_name": "方阵",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究行数和列数相同的数组。",
+        "可讨论行列式、特征值和可逆性。",
+        "`n×n` 是基本形状。",
+        "它表示同维空间到自身的线性作用。",
+        "标准记号或英文名为 `square_matrix`。"
+      ],
+      "fragmented_clues": [
+        "行数 列数 相同",
+        "det eigenvalue inverse",
+        "n×n",
+        "endomorphism",
+        "square matrix"
+      ]
+    },
+    {
+      "chinese_name": "单位矩阵",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究主对角线上为一、其余位置为零的方阵。",
+        "乘在任意合适数组旁边保持不变。",
+        "`IA=AI=A` 是核心性质。",
+        "在线性映射中对应恒等作用。",
+        "标准记号或英文名为 `identity_matrix`。"
+      ],
+      "fragmented_clues": [
+        "主对角 一 其余零",
+        "乘法 保持不变",
+        "IA=AI=A",
+        "identity",
+        "identity matrix"
+      ]
+    },
+    {
+      "chinese_name": "零矩阵",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究所有元素都为零的数组。",
+        "加法中充当零元，乘法中常产生零结果。",
+        "`A+0=A` 是基本性质。",
+        "对应把所有输入送到零对象的作用。",
+        "标准记号或英文名为 `zero_matrix`。"
+      ],
+      "fragmented_clues": [
+        "所有元素 零",
+        "加法零元",
+        "A+0=A",
+        "zero map",
+        "zero matrix"
+      ]
+    },
+    {
+      "chinese_name": "转置矩阵",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究行列互换后得到的数组。",
+        "内积和对称性讨论中频繁出现。",
+        "`(A^T)_{ij}=A_{ji}`。",
+        "二次型常写成 `x^T A x`。",
+        "标准记号或英文名为 `transpose_matrix`。"
+      ],
+      "fragmented_clues": [
+        "行列互换",
+        "内积 对称性",
+        "(A^T)_ij=A_ji",
+        "x^T A x",
+        "transpose matrix"
+      ]
+    },
+    {
+      "chinese_name": "逆矩阵",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究乘法下能抵消原方阵的对象。",
+        "存在条件等价于行列式非零或满秩。",
+        "`A^{-1}A=AA^{-1}=I`。",
+        "用它可直接解 `Ax=b`。",
+        "标准记号或英文名为 `inverse_matrix`。"
+      ],
+      "fragmented_clues": [
+        "乘法 抵消",
+        "det 非零 满秩",
+        "A^-1A=I",
+        "Ax=b",
+        "inverse matrix"
+      ]
+    },
+    {
+      "chinese_name": "伴随矩阵",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究代数余子式按转置位置排成的方阵。",
+        "它和原方阵相乘会得到行列式倍的单位阵。",
+        "`A adj(A)=det(A) I` 是核心公式。",
+        "可逆公式中它出现在分子。",
+        "标准记号或英文名为 `adjugate_matrix`。"
+      ],
+      "fragmented_clues": [
+        "代数余子式 转置排列",
+        "det 倍 单位阵",
+        "A adj(A)=det(A)I",
+        "inverse formula",
+        "adjugate matrix"
+      ]
+    },
+    {
+      "chinese_name": "行列式",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究方阵对应的一个标量不变量。",
+        "它描述体积缩放和可逆性。",
+        "`det(AB)=det A det B`。",
+        "数值为零说明列或行存在线性冗余。",
+        "标准记号或英文名为 `determinant`。"
+      ],
+      "fragmented_clues": [
+        "方阵 标量不变量",
+        "体积缩放 可逆性",
+        "det(AB)=detA detB",
+        "zero dependence",
+        "determinant"
+      ]
+    },
+    {
+      "chinese_name": "余子式",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究删除指定行列后留下的小行列式。",
+        "展开计算中作为局部构件。",
+        "`M_ij` 常表示该数。",
+        "它不含符号因子。",
+        "标准记号或英文名为 `minor`。"
+      ],
+      "fragmented_clues": [
+        "删除 行列",
+        "小行列式",
+        "M_ij",
+        "minor",
+        "minor"
+      ]
+    },
+    {
+      "chinese_name": "代数余子式",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究余子式乘上棋盘符号后的数。",
+        "按行或列展开时作为系数。",
+        "`C_ij=(-1)^{i+j}M_ij`。",
+        "符号因子决定展开项正负。",
+        "标准记号或英文名为 `cofactor`。"
+      ],
+      "fragmented_clues": [
+        "棋盘符号",
+        "展开 系数",
+        "C_ij=(-1)^(i+j)M_ij",
+        "cofactor",
+        "cofactor"
+      ]
+    },
+    {
+      "chinese_name": "矩阵的秩",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究数组中独立行或列的最大数量。",
+        "也等于线性映射的像空间维数。",
+        "行阶梯形中的主元个数可计算它。",
+        "它决定线性方程组自由度和相容性。",
+        "标准记号或英文名为 `rank_of_matrix`。"
+      ],
+      "fragmented_clues": [
+        "独立行列 最大数量",
+        "像空间维数",
+        "pivot count",
+        "rank-nullity",
+        "rank of matrix"
+      ]
+    },
+    {
+      "chinese_name": "初等变换",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究对行或列进行保持等价性的基本操作。",
+        "交换、倍乘和倍加是三类操作。",
+        "消元过程由这些步骤组成。",
+        "它们改变表示形式但保留方程组解集或秩信息。",
+        "标准记号或英文名为 `elementary_operation`。"
+      ],
+      "fragmented_clues": [
+        "行 列 基本操作",
+        "交换 倍乘 倍加",
+        "elimination",
+        "equivalence",
+        "elementary operation"
+      ]
+    },
+    {
+      "chinese_name": "阶梯形矩阵",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究消元后主元位置逐行右移的数组。",
+        "零行位于非零行下方。",
+        "主元列能直接读出秩和自由变量。",
+        "回代求解依赖这种形状。",
+        "标准记号或英文名为 `row_echelon_matrix`。"
+      ],
+      "fragmented_clues": [
+        "主元 逐行右移",
+        "零行 下方",
+        "pivot columns",
+        "back substitution",
+        "row echelon matrix"
+      ]
+    },
+    {
+      "chinese_name": "线性方程组",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究未知量只以一次形式出现的方程集合。",
+        "可写成 `Ax=b`。",
+        "增广矩阵消元给出相容性和解集。",
+        "秩比较决定无解、唯一解或无穷多解。",
+        "标准记号或英文名为 `system_of_linear_equations`。"
+      ],
+      "fragmented_clues": [
+        "一次未知量 方程集合",
+        "Ax=b",
+        "augmented matrix elimination",
+        "rank comparison",
+        "system of linear equations"
+      ]
+    },
+    {
+      "chinese_name": "齐次方程组",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究右端全为零的线性方程集合。",
+        "零解必定存在。",
+        "`Ax=0` 的解集形成核空间。",
+        "非零解存在等价于未知量多于主元或列相关。",
+        "标准记号或英文名为 `homogeneous_system`。"
+      ],
+      "fragmented_clues": [
+        "右端 全零",
+        "零解 必存在",
+        "Ax=0",
+        "kernel",
+        "homogeneous system"
+      ]
+    },
+    {
+      "chinese_name": "非齐次方程组",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究右端不全为零的线性方程集合。",
+        "解集若非空就是特解加齐次解。",
+        "`Ax=b` 的相容性由秩判别。",
+        "增广列是否引入新主元是关键。",
+        "标准记号或英文名为 `nonhomogeneous_system`。"
+      ],
+      "fragmented_clues": [
+        "右端 非全零",
+        "特解 齐次解",
+        "Ax=b",
+        "rank[A]=rank[A|b]",
+        "nonhomogeneous system"
+      ]
+    },
+    {
+      "chinese_name": "解空间",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究满足方程的所有解组成的集合。",
+        "齐次情形下它保持线性结构。",
+        "非齐次情形常写成特解加核。",
+        "`x=x_p+x_h` 是常见表达。",
+        "标准记号或英文名为 `solution_space`。"
+      ],
+      "fragmented_clues": [
+        "所有解 集合",
+        "齐次 线性结构",
+        "x_p + kernel",
+        "solution set",
+        "solution space"
+      ]
+    },
+    {
+      "chinese_name": "线性映射",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究保持加法和数乘的函数。",
+        "矩阵可在选定基下表示它。",
+        "`T(αu+βv)=αT(u)+βT(v)`。",
+        "核和像分别记录被压到零与可达到部分。",
+        "标准记号或英文名为 `linear_map`。"
+      ],
+      "fragmented_clues": [
+        "保持 加法 数乘",
+        "矩阵 表示",
+        "T(αu+βv)=αT(u)+βT(v)",
+        "kernel image",
+        "linear map"
+      ]
+    },
+    {
+      "chinese_name": "线性变换",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究同一空间内保持线性结构的作用。",
+        "可研究不变方向、特征值和对角化。",
+        "`T:V->V` 常是讨论对象。",
+        "复合和幂次仍按线性规则运算。",
+        "标准记号或英文名为 `linear_transformation`。"
+      ],
+      "fragmented_clues": [
+        "同一空间 线性作用",
+        "不变方向 特征值",
+        "T:V→V",
+        "operator powers",
+        "linear transformation"
+      ]
+    },
+    {
+      "chinese_name": "核",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究被线性作用送到零的所有输入。",
+        "它天然形成原空间的子结构。",
+        "`Ker T={v:T(v)=0}`。",
+        "维数反映解的自由度。",
+        "标准记号或英文名为 `kernel`。"
+      ],
+      "fragmented_clues": [
+        "送到零 输入集合",
+        "子结构",
+        "Ker T",
+        "nullity",
+        "kernel"
+      ]
+    },
+    {
+      "chinese_name": "像",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究线性作用能够达到的所有输出。",
+        "它由矩阵列张成。",
+        "`Im T={T(v):v∈V}`。",
+        "维数等于秩。",
+        "标准记号或英文名为 `image`。"
+      ],
+      "fragmented_clues": [
+        "可达到 输出集合",
+        "列张成",
+        "Im T",
+        "rank",
+        "image"
+      ]
+    },
+    {
+      "chinese_name": "特征值",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究某些非零方向被作用后只发生伸缩时的标量。",
+        "与特征向量共同描述不变方向。",
+        "`Av=λv` 且 `v≠0`。",
+        "`det(A-λI)=0` 给出候选数。",
+        "标准记号或英文名为 `eigenvalue`。"
+      ],
+      "fragmented_clues": [
+        "不变方向 伸缩标量",
+        "Av=λv v≠0",
+        "det(A-λI)=0",
+        "eigenvalue",
+        "eigenvalue"
+      ]
+    },
+    {
+      "chinese_name": "特征向量",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究在线性作用下方向保持不变的非零对象。",
+        "只允许长度或符号按比例改变。",
+        "`Av=λv` 是定义式。",
+        "同一伸缩标量对应的所有这种对象加零形成子空间。",
+        "标准记号或英文名为 `eigenvector`。"
+      ],
+      "fragmented_clues": [
+        "方向保持 非零对象",
+        "比例 改变",
+        "Av=λv",
+        "eigenspace",
+        "eigenvector"
+      ]
+    },
+    {
+      "chinese_name": "特征多项式",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究由方阵和参数构成的多项式。",
+        "根给出可能的伸缩标量。",
+        "`p_A(λ)=det(λI-A)`。",
+        "代数重数来自根的重数。",
+        "标准记号或英文名为 `characteristic_polynomial`。"
+      ],
+      "fragmented_clues": [
+        "方阵 参数 多项式",
+        "根 伸缩标量",
+        "det(λI-A)",
+        "algebraic multiplicity",
+        "characteristic polynomial"
+      ]
+    },
+    {
+      "chinese_name": "相似矩阵",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究同一线性作用在不同基下的表示。",
+        "它们由可逆变换连接。",
+        "`B=P^{-1}AP`。",
+        "行列式、迹和特征多项式保持不变。",
+        "标准记号或英文名为 `similar_matrix`。"
+      ],
+      "fragmented_clues": [
+        "不同基 表示",
+        "可逆变换 连接",
+        "B=P^-1AP",
+        "same spectrum",
+        "similar matrix"
+      ]
+    },
+    {
+      "chinese_name": "对角化",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究把线性作用在合适基下化成对角形式。",
+        "需要足够多独立特征方向。",
+        "`A=PDP^{-1}` 是目标形式。",
+        "计算幂和函数时对角形式最简。",
+        "标准记号或英文名为 `diagonalization`。"
+      ],
+      "fragmented_clues": [
+        "对角形式",
+        "独立特征方向",
+        "A=PDP^-1",
+        "diagonal form",
+        "diagonalization"
+      ]
+    },
+    {
+      "chinese_name": "约当标准形",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究复数域上方阵相似化后的块对角规范形式。",
+        "每个块围绕一个特征值并含超对角线的 1。",
+        "不可完全对角化时由这些块记录缺陷。",
+        "块大小反映广义特征向量链长度。",
+        "标准记号或英文名为 `jordan_normal_form`。"
+      ],
+      "fragmented_clues": [
+        "块对角 规范形式",
+        "特征值 超对角 1",
+        "Jordan block",
+        "generalized eigenvectors",
+        "jordan normal form"
+      ]
+    },
+    {
+      "chinese_name": "内积",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究两个对象之间输出标量的双变量运算。",
+        "它满足对称性、线性和正定性。",
+        "`<u,v>` 或 `u^T v` 是常见记号。",
+        "长度、角度和正交性都由它定义。",
+        "标准记号或英文名为 `inner_product`。"
+      ],
+      "fragmented_clues": [
+        "双变量 标量运算",
+        "对称 线性 正定",
+        "<u,v> u^T v",
+        "length angle",
+        "inner product"
+      ]
+    },
+    {
+      "chinese_name": "正交",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究两个对象的内积为零。",
+        "几何上表示互成直角或无投影。",
+        "`<u,v>=0` 是判据。",
+        "投影分解和最小二乘都依赖这种关系。",
+        "标准记号或英文名为 `orthogonality`。"
+      ],
+      "fragmented_clues": [
+        "内积 零",
+        "直角 无投影",
+        "<u,v>=0",
+        "orthogonal",
+        "orthogonality"
+      ]
+    },
+    {
+      "chinese_name": "正交基",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究基中任意两个不同对象互相垂直。",
+        "展开系数可由内积直接得到。",
+        "`<v_i,v_j>=0` 对 `i≠j`。",
+        "若长度未归一仍需除以范数平方。",
+        "标准记号或英文名为 `orthogonal_basis`。"
+      ],
+      "fragmented_clues": [
+        "基 两两垂直",
+        "系数 内积",
+        "<v_i,v_j>=0",
+        "norm squared",
+        "orthogonal basis"
+      ]
+    },
+    {
+      "chinese_name": "标准正交基",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究两两垂直且每个长度为一的基。",
+        "坐标系数就是与基向量的内积。",
+        "`<e_i,e_j>=δ_ij`。",
+        "在这种基下许多矩阵表示更简单。",
+        "标准记号或英文名为 `orthonormal_basis`。"
+      ],
+      "fragmented_clues": [
+        "两两垂直 单位长度",
+        "坐标系数 内积",
+        "<e_i,e_j>=δ_ij",
+        "orthonormal",
+        "orthonormal basis"
+      ]
+    },
+    {
+      "chinese_name": "施密特正交化",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究从独立对象组构造正交对象组的过程。",
+        "每一步减去已有方向上的投影。",
+        "`u_k=v_k-sum proj_{e_i} v_k` 是核心步骤。",
+        "归一化后得到单位长度版本。",
+        "标准记号或英文名为 `gram_schmidt_orthogonalization`。"
+      ],
+      "fragmented_clues": [
+        "独立对象 正交构造",
+        "减去 投影",
+        "v_k-sum proj",
+        "Gram Schmidt",
+        "gram schmidt orthogonalization"
+      ]
+    },
+    {
+      "chinese_name": "正交矩阵",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究列向量构成标准正交组的实方阵。",
+        "转置就是逆。",
+        "`Q^TQ=I` 是核心判据。",
+        "它保持长度和内积不变。",
+        "标准记号或英文名为 `orthogonal_matrix`。"
+      ],
+      "fragmented_clues": [
+        "实方阵 标准正交列",
+        "转置 逆",
+        "Q^TQ=I",
+        "length preserving",
+        "orthogonal matrix"
+      ]
+    },
+    {
+      "chinese_name": "酉矩阵",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究复空间中保持内积的方阵。",
+        "共轭转置就是逆。",
+        "`U*U=I` 是核心判据。",
+        "它保持复内积和范数不变。",
+        "标准记号或英文名为 `unitary_matrix`。"
+      ],
+      "fragmented_clues": [
+        "复空间 保持内积",
+        "共轭转置 逆",
+        "U*U=I",
+        "unitary",
+        "unitary matrix"
+      ]
+    },
+    {
+      "chinese_name": "二次型",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究变量按二次齐次形式组合成的标量表达式。",
+        "常由对称矩阵表示。",
+        "`x^T A x` 是标准形式。",
+        "正负性可由特征值或合同标准形判别。",
+        "标准记号或英文名为 `quadratic_form`。"
+      ],
+      "fragmented_clues": [
+        "二次齐次 标量表达式",
+        "对称表示",
+        "x^T A x",
+        "eigenvalue sign",
+        "quadratic form"
+      ]
+    },
+    {
+      "chinese_name": "正定矩阵",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究二次表达式对所有非零输入都为正的对称方阵。",
+        "特征值全正是常见判据。",
+        "`x^T A x>0` 对 `x≠0`。",
+        "主子式全正也可判别。",
+        "标准记号或英文名为 `positive_definite_matrix`。"
+      ],
+      "fragmented_clues": [
+        "非零输入 正值",
+        "特征值 全正",
+        "x^T A x>0",
+        "leading principal minors",
+        "positive definite matrix"
+      ]
+    },
+    {
+      "chinese_name": "行向量",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究横向排列的一维数组。",
+        "常作为线性泛函或矩阵的一行出现。",
+        "与列对象相乘可得到标量。",
+        "`1×n` 是形状记号。",
+        "标准记号或英文名为 `row_vector`。"
+      ],
+      "fragmented_clues": [
+        "横向 一维数组",
+        "线性泛函 一行",
+        "1×n",
+        "dot product",
+        "row vector"
+      ]
+    },
+    {
+      "chinese_name": "列向量",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究纵向排列的一维数组。",
+        "常表示坐标、未知量或矩阵的一列。",
+        "左乘矩阵产生新的列对象。",
+        "`n×1` 是形状记号。",
+        "标准记号或英文名为 `column_vector`。"
+      ],
+      "fragmented_clues": [
+        "纵向 一维数组",
+        "坐标 未知量",
+        "n×1",
+        "Ax",
+        "column vector"
+      ]
+    },
+    {
+      "chinese_name": "线性包",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究所有线性组合形成的集合。",
+        "它是包含给定对象组的最小子空间。",
+        "`span(S)` 是标准记号。",
+        "生成性问题本质上考察这个集合是否等于全空间。",
+        "标准记号或英文名为 `linear_span`。"
+      ],
+      "fragmented_clues": [
+        "所有线性组合 集合",
+        "最小子空间",
+        "span(S)",
+        "generating",
+        "linear span"
+      ]
+    },
+    {
+      "chinese_name": "生成元",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究经线性组合可产生目标空间的对象。",
+        "不要求彼此无冗余。",
+        "`span{v_i}=V` 是判别式。",
+        "删去冗余后可能得到基。",
+        "标准记号或英文名为 `generator`。"
+      ],
+      "fragmented_clues": [
+        "产生目标空间 对象",
+        "允许冗余",
+        "span{v_i}=V",
+        "generators",
+        "generator"
+      ]
+    },
+    {
+      "chinese_name": "基变换",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究同一对象从一组基坐标改写到另一组基坐标。",
+        "坐标列被过渡矩阵相乘。",
+        "`[v]_C=P_{C<-B}[v]_B`。",
+        "对象不变，表示改变。",
+        "标准记号或英文名为 `change_of_basis`。"
+      ],
+      "fragmented_clues": [
+        "同一对象 坐标改写",
+        "过渡矩阵 相乘",
+        "[v]_C=P[v]_B",
+        "change of basis",
+        "change of basis"
+      ]
+    },
+    {
+      "chinese_name": "过渡矩阵",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究连接两组基坐标的可逆矩阵。",
+        "列通常由新基下的旧基坐标组成。",
+        "`P_{C<-B}` 表示从 B 坐标到 C 坐标。",
+        "它把表示系统而非几何对象本身改变。",
+        "标准记号或英文名为 `transition_matrix`。"
+      ],
+      "fragmented_clues": [
+        "两组基 坐标连接",
+        "可逆矩阵",
+        "P_{C<-B}",
+        "coordinate conversion",
+        "transition matrix"
+      ]
+    },
+    {
+      "chinese_name": "坐标向量",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究某个对象在给定基下的系数列。",
+        "不同基会给出不同列表示。",
+        "`[v]_B` 是常见记号。",
+        "与原对象一一对应依赖基的选定。",
+        "标准记号或英文名为 `coordinate_vector`。"
+      ],
+      "fragmented_clues": [
+        "给定基 系数列",
+        "不同基 不同列",
+        "[v]_B",
+        "coefficient column",
+        "coordinate vector"
+      ]
+    },
+    {
+      "chinese_name": "商空间",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究把子空间中的差异视为零后得到的新空间。",
+        "元素是陪集而非单个原对象。",
+        "`V/W` 是标准记号。",
+        "维数满足 `dim V/W=dim V-dim W`。",
+        "标准记号或英文名为 `quotient_space`。"
+      ],
+      "fragmented_clues": [
+        "子空间 差异归零",
+        "陪集 元素",
+        "V/W",
+        "dimension difference",
+        "quotient space"
+      ]
+    },
+    {
+      "chinese_name": "直和",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究两个子空间只在零处相交并共同生成整体。",
+        "分解表示唯一。",
+        "`V=U⊕W` 是标准记号。",
+        "维数相加给出整体维数。",
+        "标准记号或英文名为 `direct_sum`。"
+      ],
+      "fragmented_clues": [
+        "零交 共同生成",
+        "唯一分解",
+        "V=U⊕W",
+        "dimension sum",
+        "direct sum"
+      ]
+    },
+    {
+      "chinese_name": "张成空间",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究给定对象所有线性组合的结果集合。",
+        "它自动形成子空间。",
+        "`span(v_1,...,v_k)` 是标准记号。",
+        "判断是否覆盖目标空间要比较秩或维数。",
+        "标准记号或英文名为 `span_space`。"
+      ],
+      "fragmented_clues": [
+        "线性组合 结果集合",
+        "自动子空间",
+        "span(v1,...,vk)",
+        "rank dimension",
+        "span space"
+      ]
+    },
+    {
+      "chinese_name": "线性泛函",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究从线性空间到标量域的线性映射。",
+        "在有限维内常由行向量表示。",
+        "`f(αu+βv)=αf(u)+βf(v)`。",
+        "它把对象测成一个数而保持线性结构。",
+        "标准记号或英文名为 `linear_functional`。"
+      ],
+      "fragmented_clues": [
+        "到标量域 映射",
+        "行向量 表示",
+        "f(αu+βv)=αf(u)+βf(v)",
+        "dual vector",
+        "linear functional"
+      ]
+    },
+    {
+      "chinese_name": "对偶空间",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究所有线性泛函组成的空间。",
+        "维数与原空间相同但元素类型不同。",
+        "`V*` 是标准记号。",
+        "对偶基和坐标函数生活在这里。",
+        "标准记号或英文名为 `dual_space`。"
+      ],
+      "fragmented_clues": [
+        "线性泛函 集合",
+        "维数 相同",
+        "V*",
+        "dual basis",
+        "dual space"
+      ]
+    },
+    {
+      "chinese_name": "对偶基",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究与原基配对后给出克罗内克δ的泛函组。",
+        "每个成员提取对应坐标。",
+        "`e^i(e_j)=δ^i_j`。",
+        "它让坐标函数具有规范形式。",
+        "标准记号或英文名为 `dual_basis`。"
+      ],
+      "fragmented_clues": [
+        "泛函组 配对",
+        "提取 坐标",
+        "e^i(e_j)=δ^i_j",
+        "coordinate functionals",
+        "dual basis"
+      ]
+    },
+    {
+      "chinese_name": "双线性型",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究两个输入分别线性并输出标量的函数。",
+        "固定一个变量后对另一个变量线性。",
+        "`B(αu+βv,w)=αB(u,w)+βB(v,w)`。",
+        "矩阵表示常写成 `x^T A y`。",
+        "标准记号或英文名为 `bilinear_form`。"
+      ],
+      "fragmented_clues": [
+        "两个输入 标量输出",
+        "分别线性",
+        "B(u,v)",
+        "x^T A y",
+        "bilinear form"
+      ]
+    },
+    {
+      "chinese_name": "对称双线性型",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究交换两个输入后数值不变的双变量线性函数。",
+        "矩阵表示为对称矩阵。",
+        "`B(u,v)=B(v,u)`。",
+        "二次型常由它对角输入得到。",
+        "标准记号或英文名为 `symmetric_bilinear_form`。"
+      ],
+      "fragmented_clues": [
+        "交换输入 数值不变",
+        "对称矩阵",
+        "B(u,v)=B(v,u)",
+        "quadratic form",
+        "symmetric bilinear form"
+      ]
+    },
+    {
+      "chinese_name": "交替双线性型",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究两个相同输入时数值为零的双变量线性函数。",
+        "交换输入会改变符号。",
+        "`B(u,u)=0` 且常有 `B(u,v)=-B(v,u)`。",
+        "面积定向和行列式构造中常出现。",
+        "标准记号或英文名为 `alternating_bilinear_form`。"
+      ],
+      "fragmented_clues": [
+        "相同输入 零",
+        "交换 符号改变",
+        "B(u,u)=0",
+        "skew symmetric",
+        "alternating bilinear form"
+      ]
+    },
+    {
+      "chinese_name": "外积",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究生成反对称多重线性对象的乘法。",
+        "交换两个因子会改变符号。",
+        "`u∧v` 是常见记号。",
+        "平行对象的结果为零。",
+        "标准记号或英文名为 `exterior_product`。"
+      ],
+      "fragmented_clues": [
+        "反对称 多重线性",
+        "交换 符号改变",
+        "u∧v",
+        "parallel zero",
+        "exterior product"
+      ]
+    },
+    {
+      "chinese_name": "张量积",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究把两个空间的元素配对生成更大线性空间。",
+        "双线性映射可转化为普通线性映射。",
+        "`u⊗v` 是基本记号。",
+        "维数在有限维情形下相乘。",
+        "标准记号或英文名为 `tensor_product`。"
+      ],
+      "fragmented_clues": [
+        "配对 更大空间",
+        "双线性 线性化",
+        "u⊗v",
+        "dimension product",
+        "tensor product"
+      ]
+    },
+    {
+      "chinese_name": "线性算子",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究线性空间到自身的线性作用。",
+        "可讨论谱、最小多项式和不变子空间。",
+        "`T:V->V` 是基本形式。",
+        "迭代和多项式代入都保持在同一空间内。",
+        "标准记号或英文名为 `linear_operator`。"
+      ],
+      "fragmented_clues": [
+        "到自身 线性作用",
+        "谱 最小多项式",
+        "T:V→V",
+        "polynomial in T",
+        "linear operator"
+      ]
+    },
+    {
+      "chinese_name": "不变子空间",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究在线性作用下仍被送回自身的子空间。",
+        "限制映射可在其中单独研究。",
+        "`T(W)⊂W` 是判据。",
+        "特征空间是典型例子。",
+        "标准记号或英文名为 `invariant_subspace`。"
+      ],
+      "fragmented_clues": [
+        "作用后 留在自身",
+        "限制映射",
+        "T(W)⊂W",
+        "eigenspace",
+        "invariant subspace"
+      ]
+    },
+    {
+      "chinese_name": "最小多项式",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究使线性算子代入后为零的最低次数首一多项式。",
+        "它整除特征多项式。",
+        "`m_A(A)=0` 是核心关系。",
+        "根和最大约当块大小决定它。",
+        "标准记号或英文名为 `minimal_polynomial`。"
+      ],
+      "fragmented_clues": [
+        "最低次数 首一多项式",
+        "整除 特征多项式",
+        "m_A(A)=0",
+        "Jordan block size",
+        "minimal polynomial"
+      ]
+    },
+    {
+      "chinese_name": "代数重数",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究特征多项式中某个根出现的次数。",
+        "它不小于对应特征空间的维数。",
+        "根的幂次给出该数。",
+        "所有这些数相加等于矩阵阶数。",
+        "标准记号或英文名为 `algebraic_multiplicity`。"
+      ],
+      "fragmented_clues": [
+        "根 出现次数",
+        "不小于 几何数量",
+        "(λ-λ0)^k",
+        "algebraic multiplicity",
+        "algebraic multiplicity"
+      ]
+    },
+    {
+      "chinese_name": "几何重数",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究某个特征值对应特征空间的维数。",
+        "它等于 `A-λI` 的零空间维数。",
+        "`dim Ker(A-λI)` 是标准表达。",
+        "是否足够大决定能否对角化。",
+        "标准记号或英文名为 `geometric_multiplicity`。"
+      ],
+      "fragmented_clues": [
+        "特征空间 维数",
+        "零空间 维数",
+        "dim Ker(A-λI)",
+        "diagonalization",
+        "geometric multiplicity"
+      ]
+    },
+    {
+      "chinese_name": "特征空间",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究同一伸缩标量下的所有特征向量加零组成的子空间。",
+        "它是 `A-λI` 的核。",
+        "`E_λ=Ker(A-λI)`。",
+        "其维数给出几何重数。",
+        "标准记号或英文名为 `eigenspace`。"
+      ],
+      "fragmented_clues": [
+        "同一伸缩标量 子空间",
+        "核",
+        "E_λ=Ker(A-λI)",
+        "geometric multiplicity",
+        "eigenspace"
+      ]
+    },
+    {
+      "chinese_name": "谱",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究线性算子的全部特征值集合。",
+        "有限维矩阵中来自特征多项式的根。",
+        "`σ(A)` 是常见记号。",
+        "稳定性和迭代行为常由它控制。",
+        "标准记号或英文名为 `spectrum`。"
+      ],
+      "fragmented_clues": [
+        "全部特征值 集合",
+        "多项式 根",
+        "σ(A)",
+        "spectrum",
+        "spectrum"
+      ]
+    },
+    {
+      "chinese_name": "谱半径",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究全部特征值模长的最大值。",
+        "它控制高次幂增长的主要尺度。",
+        "`ρ(A)=max |λ_i|`。",
+        "迭代收敛常要求该数小于一。",
+        "标准记号或英文名为 `spectral_radius`。"
+      ],
+      "fragmented_clues": [
+        "特征值 模长 最大",
+        "高次幂 增长",
+        "ρ(A)=max|λ_i|",
+        "<1 convergence",
+        "spectral radius"
+      ]
+    },
+    {
+      "chinese_name": "凯莱哈密顿定理",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究每个方阵都满足自身的特征多项式。",
+        "把矩阵代入多项式后得到零矩阵。",
+        "`p_A(A)=0` 是核心结论。",
+        "高次幂可由低次幂线性表示。",
+        "标准记号或英文名为 `cayley_hamilton_theorem`。"
+      ],
+      "fragmented_clues": [
+        "方阵 自身多项式",
+        "代入 零矩阵",
+        "p_A(A)=0",
+        "Cayley Hamilton",
+        "cayley hamilton theorem"
+      ]
+    },
+    {
+      "chinese_name": "实对称矩阵",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究转置等于自身的实方阵。",
+        "可被正交矩阵对角化。",
+        "`A^T=A`。",
+        "特征值全为实数且不同特征空间相互正交。",
+        "标准记号或英文名为 `real_symmetric_matrix`。"
+      ],
+      "fragmented_clues": [
+        "实方阵 转置相等",
+        "正交对角化",
+        "A^T=A",
+        "real eigenvalues",
+        "real symmetric matrix"
+      ]
+    },
+    {
+      "chinese_name": "厄米矩阵",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究共轭转置等于自身的复方阵。",
+        "复内积下具有实特征值。",
+        "`A*=A`。",
+        "可由酉矩阵对角化。",
+        "标准记号或英文名为 `hermitian_matrix`。"
+      ],
+      "fragmented_clues": [
+        "复方阵 共轭转置相等",
+        "实特征值",
+        "A*=A",
+        "unitary diagonalization",
+        "hermitian matrix"
+      ]
+    },
+    {
+      "chinese_name": "反对称矩阵",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究转置等于负自身的方阵。",
+        "主对角线元素为零。",
+        "`A^T=-A`。",
+        "实情形下非零特征值成纯虚成对结构。",
+        "标准记号或英文名为 `skew_symmetric_matrix`。"
+      ],
+      "fragmented_clues": [
+        "转置 负自身",
+        "主对角 零",
+        "A^T=-A",
+        "skew symmetric",
+        "skew symmetric matrix"
+      ]
+    },
+    {
+      "chinese_name": "正规矩阵",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究与自身共轭转置可交换的复方阵。",
+        "可被酉矩阵对角化。",
+        "`AA*=A*A`。",
+        "厄米、酉和反厄米对象都是例子。",
+        "标准记号或英文名为 `normal_matrix`。"
+      ],
+      "fragmented_clues": [
+        "共轭转置 可交换",
+        "酉对角化",
+        "AA*=A*A",
+        "normal",
+        "normal matrix"
+      ]
+    },
+    {
+      "chinese_name": "幂等矩阵",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究平方后仍等于自身的方阵。",
+        "特征值只能为 0 或 1。",
+        "`A^2=A` 是判据。",
+        "常表示某种投影作用。",
+        "标准记号或英文名为 `idempotent_matrix`。"
+      ],
+      "fragmented_clues": [
+        "平方 不变",
+        "特征值 0 1",
+        "A^2=A",
+        "projection",
+        "idempotent matrix"
+      ]
+    },
+    {
+      "chinese_name": "投影矩阵",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究把空间中的对象压到某个子空间上的方阵。",
+        "再次作用不会改变结果。",
+        "`P^2=P` 是核心性质。",
+        "若还满足对称性则对应正交投影。",
+        "标准记号或英文名为 `projection_matrix`。"
+      ],
+      "fragmented_clues": [
+        "压到 子空间",
+        "再次作用 不变",
+        "P^2=P",
+        "orthogonal if symmetric",
+        "projection matrix"
+      ]
+    },
+    {
+      "chinese_name": "正交投影",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究沿垂直方向落到子空间的投影。",
+        "误差向量与目标子空间垂直。",
+        "`P=A(A^TA)^{-1}A^T` 是常见公式。",
+        "最小二乘解由它给出几何解释。",
+        "标准记号或英文名为 `orthogonal_projection`。"
+      ],
+      "fragmented_clues": [
+        "垂直方向 子空间",
+        "误差 垂直",
+        "P=A(A^TA)^-1A^T",
+        "least squares",
+        "orthogonal projection"
+      ]
+    },
+    {
+      "chinese_name": "酉空间",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究复数域上带内积的线性空间。",
+        "内积对一个变量共轭线性。",
+        "范数由 `<v,v>` 的平方根给出。",
+        "酉变换保持其中的长度和角度。",
+        "标准记号或英文名为 `unitary_space`。"
+      ],
+      "fragmented_clues": [
+        "复数域 内积空间",
+        "共轭线性",
+        "||v||=sqrt(<v,v>)",
+        "unitary transformations",
+        "unitary space"
+      ]
+    },
+    {
+      "chinese_name": "欧氏空间",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究实数域上带标准内积的有限维空间。",
+        "距离和角度由点积给出。",
+        "`R^n` 配合 `x·y` 是典型模型。",
+        "几何直观可转成坐标计算。",
+        "标准记号或英文名为 `euclidean_space`。"
+      ],
+      "fragmented_clues": [
+        "实数域 标准内积",
+        "距离 角度 点积",
+        "R^n x·y",
+        "Euclidean",
+        "euclidean space"
+      ]
+    },
+    {
+      "chinese_name": "距离",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究两个对象之间的非负分离量。",
+        "满足对称性和三角不等式。",
+        "`d(x,y)` 是常见记号。",
+        "由范数可写成 `||x-y||`。",
+        "标准记号或英文名为 `distance`。"
+      ],
+      "fragmented_clues": [
+        "非负 分离量",
+        "对称 三角不等式",
+        "d(x,y)",
+        "||x-y||",
+        "distance"
+      ]
+    },
+    {
+      "chinese_name": "范数",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究对象长度或大小的函数。",
+        "满足齐次性和三角不等式。",
+        "`||v||` 是常见记号。",
+        "内积空间中可由自身内积开方得到。",
+        "标准记号或英文名为 `norm`。"
+      ],
+      "fragmented_clues": [
+        "长度 大小 函数",
+        "齐次 三角不等式",
+        "||v||",
+        "sqrt(<v,v>)",
+        "norm"
+      ]
+    },
+    {
+      "chinese_name": "矩阵范数",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究衡量数组大小的函数。",
+        "常要求与乘法相容。",
+        "`||AB||≤||A||||B||` 是重要性质。",
+        "算子范数由向量长度放大倍数定义。",
+        "标准记号或英文名为 `matrix_norm`。"
+      ],
+      "fragmented_clues": [
+        "数组 大小 函数",
+        "乘法相容",
+        "||AB||≤||A||||B||",
+        "operator norm",
+        "matrix norm"
+      ]
+    },
+    {
+      "chinese_name": "迹",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究方阵主对角线元素之和。",
+        "相似变换下保持不变。",
+        "`tr(AB)=tr(BA)` 是常见性质。",
+        "它等于全部特征值按重数相加。",
+        "标准记号或英文名为 `trace`。"
+      ],
+      "fragmented_clues": [
+        "主对角线 元素之和",
+        "相似不变",
+        "tr(AB)=tr(BA)",
+        "sum eigenvalues",
+        "trace"
+      ]
+    },
+    {
+      "chinese_name": "合同矩阵",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究二次型在可逆变量替换下得到的等价矩阵。",
+        "连接形式为 `B=P^TAP`。",
+        "它保持惯性指数不变。",
+        "分类二次型时使用这种关系。",
+        "标准记号或英文名为 `congruent_matrix`。"
+      ],
+      "fragmented_clues": [
+        "二次型 可逆替换",
+        "B=P^TAP",
+        "inertia preserved",
+        "congruence",
+        "congruent matrix"
+      ]
+    },
+    {
+      "chinese_name": "惯性指数",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究实二次型标准形中正负平方项的个数。",
+        "正项数和负项数在合同变换下不变。",
+        "常记为正惯性和负惯性。",
+        "它决定正定、负定或不定类型。",
+        "标准记号或英文名为 `index_of_inertia`。"
+      ],
+      "fragmented_clues": [
+        "标准形 正负平方项",
+        "合同不变",
+        "positive negative counts",
+        "inertia",
+        "index of inertia"
+      ]
+    },
+    {
+      "chinese_name": "惯性定理",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究实二次型经合同化简后的正负项数唯一。",
+        "不同可逆替换不会改变这些计数。",
+        "Sylvester 结论保证分类稳定。",
+        "正负惯性指数是核心不变量。",
+        "标准记号或英文名为 `law_of_inertia`。"
+      ],
+      "fragmented_clues": [
+        "二次型 合同化简",
+        "正负项数 唯一",
+        "Sylvester law",
+        "inertia invariant",
+        "law of inertia"
+      ]
+    },
+    {
+      "chinese_name": "半正定矩阵",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究二次表达式对所有输入非负的对称方阵。",
+        "允许非零输入得到零。",
+        "`x^T A x≥0`。",
+        "特征值全非负是常见判据。",
+        "标准记号或英文名为 `positive_semidefinite_matrix`。"
+      ],
+      "fragmented_clues": [
+        "所有输入 非负",
+        "允许 零方向",
+        "x^T A x≥0",
+        "eigenvalues ≥0",
+        "positive semidefinite matrix"
+      ]
+    },
+    {
+      "chinese_name": "负定矩阵",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究二次表达式对所有非零输入都为负的对称方阵。",
+        "特征值全负是常见判据。",
+        "`x^T A x<0` 对 `x≠0`。",
+        "乘以负一后得到正定情形。",
+        "标准记号或英文名为 `negative_definite_matrix`。"
+      ],
+      "fragmented_clues": [
+        "非零输入 负值",
+        "特征值 全负",
+        "x^T A x<0",
+        "-A positive definite",
+        "negative definite matrix"
+      ]
+    },
+    {
+      "chinese_name": "奇异值",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究矩阵对正交方向的长度放大因子。",
+        "来自 `A*A` 的非负特征值平方根。",
+        "`σ_i=sqrt(λ_i(A*A))`。",
+        "它们描述映射把单位球拉伸成椭球的尺度。",
+        "标准记号或英文名为 `singular_value`。"
+      ],
+      "fragmented_clues": [
+        "长度 放大因子",
+        "A*A 非负特征值",
+        "σ_i=sqrt(λ_i)",
+        "ellipsoid axes",
+        "singular value"
+      ]
+    },
+    {
+      "chinese_name": "奇异值分解",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究任意矩阵分解为两个正交或酉因子与非负对角因子。",
+        "几何上对应旋转、拉伸、再旋转。",
+        "`A=UΣV*` 是标准形式。",
+        "秩、最小二乘和低秩近似都可由它读出。",
+        "标准记号或英文名为 `singular_value_decomposition`。"
+      ],
+      "fragmented_clues": [
+        "正交因子 非负对角",
+        "旋转 拉伸",
+        "A=UΣV*",
+        "low rank approximation",
+        "singular value decomposition"
+      ]
+    },
+    {
+      "chinese_name": "QR分解",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究矩阵分解为正交因子和上三角因子。",
+        "列向量正交化可构造该形式。",
+        "`A=QR` 是标准表达。",
+        "最小二乘和数值解方程常使用它。",
+        "标准记号或英文名为 `qr_decomposition`。"
+      ],
+      "fragmented_clues": [
+        "正交因子 上三角",
+        "列 正交化",
+        "A=QR",
+        "least squares",
+        "qr decomposition"
+      ]
+    },
+    {
+      "chinese_name": "LU分解",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究矩阵分解为下三角和上三角因子。",
+        "本质上记录高斯消元过程。",
+        "`A=LU` 是标准表达。",
+        "求解多个右端方程时可重复利用。",
+        "标准记号或英文名为 `lu_decomposition`。"
+      ],
+      "fragmented_clues": [
+        "下三角 上三角",
+        "高斯消元",
+        "A=LU",
+        "forward back substitution",
+        "lu decomposition"
+      ]
+    },
+    {
+      "chinese_name": "矩阵分解",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究把数组拆成若干结构更简单的因子。",
+        "三角、正交、对角或奇异值形式常见。",
+        "`A=LU`、`A=QR`、`A=UΣV*` 都是例子。",
+        "目的在于简化求解、特征分析或近似。",
+        "标准记号或英文名为 `matrix_decomposition`。"
+      ],
+      "fragmented_clues": [
+        "因子 简单结构",
+        "三角 正交 对角",
+        "LU QR SVD",
+        "solve spectrum approximation",
+        "matrix decomposition"
+      ]
+    },
+    {
+      "chinese_name": "克罗内克积",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究两个矩阵生成分块大矩阵的乘法。",
+        "一个元素会乘上整个另一个矩阵块。",
+        "`A⊗B` 是标准记号。",
+        "维度从 `m×n` 与 `p×q` 变为 `mp×nq`。",
+        "标准记号或英文名为 `kronecker_product`。"
+      ],
+      "fragmented_clues": [
+        "分块 大矩阵",
+        "元素 乘 块",
+        "A⊗B",
+        "mp×nq",
+        "kronecker product"
+      ]
+    },
+    {
+      "chinese_name": "列空间",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究矩阵各列所有线性组合形成的子空间。",
+        "它等于对应线性映射的像。",
+        "`Col(A)` 是常见记号。",
+        "维数等于列秩也等于秩。",
+        "标准记号或英文名为 `column_space`。"
+      ],
+      "fragmented_clues": [
+        "列 线性组合 子空间",
+        "映射 像",
+        "Col(A)",
+        "rank",
+        "column space"
+      ]
+    },
+    {
+      "chinese_name": "行空间",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究矩阵各行所有线性组合形成的子空间。",
+        "行化简会保留该空间的维数。",
+        "`Row(A)` 是常见记号。",
+        "维数等于行秩也等于秩。",
+        "标准记号或英文名为 `row_space`。"
+      ],
+      "fragmented_clues": [
+        "行 线性组合 子空间",
+        "行化简 维数",
+        "Row(A)",
+        "rank",
+        "row space"
+      ]
+    },
+    {
+      "chinese_name": "零空间",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究矩阵乘上后得到零向量的所有输入。",
+        "它是齐次方程的解集。",
+        "`Null(A)=Ker A`。",
+        "维数由列数减秩给出。",
+        "标准记号或英文名为 `null_space`。"
+      ],
+      "fragmented_clues": [
+        "乘后 零输出",
+        "齐次解集",
+        "Null(A)=Ker A",
+        "n-rank",
+        "null space"
+      ]
+    },
+    {
+      "chinese_name": "左零空间",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究从左侧乘矩阵得到零的所有行对象。",
+        "等价于转置矩阵的零空间。",
+        "`{y:y^T A=0}` 或 `Null(A^T)`。",
+        "它与列空间正交。",
+        "标准记号或英文名为 `left_null_space`。"
+      ],
+      "fragmented_clues": [
+        "左侧乘 零",
+        "转置 零空间",
+        "y^T A=0",
+        "orthogonal to Col(A)",
+        "left null space"
+      ]
+    },
+    {
+      "chinese_name": "基础解系",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究齐次方程解空间的一组基。",
+        "每个解都能由这些解线性表示。",
+        "自由变量逐个取一可构造它。",
+        "个数等于未知量数减秩。",
+        "标准记号或英文名为 `fundamental_solution_set`。"
+      ],
+      "fragmented_clues": [
+        "齐次解空间 基",
+        "线性表示",
+        "free variables",
+        "n-rank",
+        "fundamental solution set"
+      ]
+    },
+    {
+      "chinese_name": "自由变量",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究消元后没有主元约束的未知量。",
+        "可作为参数任意取值。",
+        "其个数等于列数减秩。",
+        "它们控制解集维数。",
+        "标准记号或英文名为 `free_variable`。"
+      ],
+      "fragmented_clues": [
+        "无主元约束 未知量",
+        "参数 任意取值",
+        "n-rank",
+        "solution dimension",
+        "free variable"
+      ]
+    },
+    {
+      "chinese_name": "主变量",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究消元后由主元所在列确定的未知量。",
+        "它们由方程和自由参数解出。",
+        "回代过程给出这些量。",
+        "数量等于秩。",
+        "标准记号或英文名为 `pivot_variable`。"
+      ],
+      "fragmented_clues": [
+        "主元列 未知量",
+        "回代 解出",
+        "pivot columns",
+        "rank",
+        "pivot variable"
+      ]
+    },
+    {
+      "chinese_name": "主元",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究阶梯形中每个非零行的首个非零元素。",
+        "它标记消元时的关键列。",
+        "这类元素的个数给出秩。",
+        "位置决定自由变量和回代顺序。",
+        "标准记号或英文名为 `pivot`。"
+      ],
+      "fragmented_clues": [
+        "首个非零元素",
+        "关键列",
+        "pivot count rank",
+        "back substitution",
+        "pivot"
+      ]
+    },
+    {
+      "chinese_name": "主元列",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究含有主元的列。",
+        "原矩阵中对应列给出列空间的一组基。",
+        "数量等于秩。",
+        "其余列对应自由变量。",
+        "标准记号或英文名为 `pivot_column`。"
+      ],
+      "fragmented_clues": [
+        "含主元 列",
+        "列空间 基",
+        "count rank",
+        "free columns",
+        "pivot column"
+      ]
+    },
+    {
+      "chinese_name": "列秩",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究矩阵列向量中最大线性无关组的大小。",
+        "它等于列空间维数。",
+        "行秩定理说明它与行方向数量相同。",
+        "该数就是矩阵秩。",
+        "标准记号或英文名为 `column_rank`。"
+      ],
+      "fragmented_clues": [
+        "列 最大无关组",
+        "列空间 维数",
+        "column rank",
+        "rank equality",
+        "column rank"
+      ]
+    },
+    {
+      "chinese_name": "行秩",
+      "source_file": "words/数学/简单模式/linear_algebra_terms.csv",
+      "complete_clues": [
+        "研究矩阵行向量中最大线性无关组的大小。",
+        "它等于行空间维数。",
+        "秩相等定理说明它与列方向数量相同。",
+        "该数就是矩阵秩。",
+        "标准记号或英文名为 `row_rank`。"
+      ],
+      "fragmented_clues": [
+        "行 最大无关组",
+        "行空间 维数",
+        "row rank",
+        "rank equality",
+        "row rank"
+      ]
+    }
+  ]
+}

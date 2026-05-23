@@ -1,0 +1,1913 @@
+{
+  "source_file": "words/数学/困难模式/topology_terms.csv",
+  "entries": [
+    {
+      "chinese_name": "拓扑学",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在研究空间性质时，它保留开放结构和连续变形下不变的信息。",
+        "开集、闭集、邻域和连续映射构成最基本的语言。",
+        "紧性把任意开放覆盖压缩到有限子覆盖，连通性排除非平凡开闭分离。",
+        "商空间、覆盖空间、同伦和 pi_1 把几何形状转化为可比较的不变量。",
+        "标准英文名是 `topology`。"
+      ],
+      "fragmented_clues": [
+        "open closed neighborhood continuous map",
+        "compactness finite subcover connectedness",
+        "quotient covering homotopy",
+        "pi_1 invariant",
+        "topology"
+      ]
+    },
+    {
+      "chinese_name": "拓扑空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在给集合配置空间结构时，它指定哪些子集视作 open。",
+        "continuity、closedness、compactness 和 connectedness 都由这层结构判定。",
+        "它是一对 (X,T)，其中 T 满足任意并和有限交公理。",
+        "所有连续性和邻近概念都由 T 决定。",
+        "标准英文名是 `topological_space`。"
+      ],
+      "fragmented_clues": [
+        "set spatial structure",
+        "open continuous compact connected",
+        "(X,T)",
+        "arbitrary union finite intersection",
+        "topological space"
+      ]
+    },
+    {
+      "chinese_name": "拓扑",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在一个集合上，它指定哪些子集被视作开放。",
+        "由这组开放子集可定义闭集、邻域、闭包、内部和连续映射。",
+        "它必须包含空集与全集，并对任意并和有限交封闭。",
+        "同一底层集合配上不同开放结构，紧性与连通性可能完全改变。",
+        "标准英文名是 `topology_structure`。"
+      ],
+      "fragmented_clues": [
+        "set open subsets",
+        "closed neighborhood closure interior",
+        "empty set whole set union finite intersection",
+        "compactness connectedness",
+        "topology structure"
+      ]
+    },
+    {
+      "chinese_name": "开集",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在分析子集与周围点的关系时，它描述局部包含或补集性质。",
+        "local sets、cl(A)、Int(A) 和 frontier behavior 常一起出现。",
+        "它属于指定的开放子集族，能作为局部邻近的基本对象。",
+        "度量情形中，每个点都有完全落在其中的小球。",
+        "标准英文名是 `open_set`。"
+      ],
+      "fragmented_clues": [
+        "subset surrounding points",
+        "neighborhood closure interior",
+        "member of T",
+        "ball around each point",
+        "open set"
+      ]
+    },
+    {
+      "chinese_name": "闭集",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在分析子集与周围点的关系时，它描述局部包含或补集性质。",
+        "local sets、cl(A)、Int(A) 和 frontier behavior 常一起出现。",
+        "它的补集属于开放子集族。",
+        "也可由包含全部极限点来刻画。",
+        "标准英文名是 `closed_set`。"
+      ],
+      "fragmented_clues": [
+        "subset surrounding points",
+        "neighborhood closure interior",
+        "complement open",
+        "contains limit points",
+        "closed set"
+      ]
+    },
+    {
+      "chinese_name": "邻域",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在分析子集与周围点的关系时，它描述局部包含或补集性质。",
+        "local sets、cl(A)、Int(A) 和 frontier behavior 常一起出现。",
+        "围绕 `neighborhood`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `neighborhood`。"
+      ],
+      "fragmented_clues": [
+        "subset surrounding points",
+        "neighborhood closure interior",
+        "neighborhood",
+        "open closure continuous cover",
+        "neighborhood"
+      ]
+    },
+    {
+      "chinese_name": "内点",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在分析子集与周围点的关系时，它描述局部包含或补集性质。",
+        "local sets、cl(A)、Int(A) 和 frontier behavior 常一起出现。",
+        "围绕 `interior_point`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `interior_point`。"
+      ],
+      "fragmented_clues": [
+        "subset surrounding points",
+        "neighborhood closure interior",
+        "interior point",
+        "open closure continuous cover",
+        "interior point"
+      ]
+    },
+    {
+      "chinese_name": "外点",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在分析子集与周围点的关系时，它描述局部包含或补集性质。",
+        "local sets、cl(A)、Int(A) 和 frontier behavior 常一起出现。",
+        "围绕 `exterior_point`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `exterior_point`。"
+      ],
+      "fragmented_clues": [
+        "subset surrounding points",
+        "neighborhood closure interior",
+        "exterior point",
+        "open closure continuous cover",
+        "exterior point"
+      ]
+    },
+    {
+      "chinese_name": "边界点",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在把空间转成代数对象时，它使用 chain maps。",
+        "cycles、boundaries 和 Euler data 提供可计算不变量。",
+        "围绕 `boundary_point`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `boundary_point`。"
+      ],
+      "fragmented_clues": [
+        "space algebraic object",
+        "chain cycles boundaries",
+        "boundary point",
+        "open closure continuous cover",
+        "boundary point"
+      ]
+    },
+    {
+      "chinese_name": "聚点",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在分析子集与周围点的关系时，它描述局部包含或补集性质。",
+        "local sets、cl(A)、Int(A) 和 frontier behavior 常一起出现。",
+        "围绕 `accumulation_point`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `accumulation_point`。"
+      ],
+      "fragmented_clues": [
+        "subset surrounding points",
+        "neighborhood closure interior",
+        "accumulation point",
+        "open closure continuous cover",
+        "accumulation point"
+      ]
+    },
+    {
+      "chinese_name": "闭包",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在分析子集与周围点的关系时，它描述局部包含或补集性质。",
+        "local sets、cl(A)、Int(A) 和 frontier behavior 常一起出现。",
+        "围绕 `closure`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `closure`。"
+      ],
+      "fragmented_clues": [
+        "subset surrounding points",
+        "neighborhood closure interior",
+        "closure",
+        "open closure continuous cover",
+        "closure"
+      ]
+    },
+    {
+      "chinese_name": "内部",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在分析子集与周围点的关系时，它描述局部包含或补集性质。",
+        "local sets、cl(A)、Int(A) 和 frontier behavior 常一起出现。",
+        "围绕 `interior`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `interior`。"
+      ],
+      "fragmented_clues": [
+        "subset surrounding points",
+        "neighborhood closure interior",
+        "interior",
+        "open closure continuous cover",
+        "interior"
+      ]
+    },
+    {
+      "chinese_name": "边界",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在把空间转成代数对象时，它使用 chain maps。",
+        "cycles、boundaries 和 Euler data 提供可计算不变量。",
+        "围绕 `boundary`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `boundary`。"
+      ],
+      "fragmented_clues": [
+        "space algebraic object",
+        "chain cycles boundaries",
+        "boundary",
+        "open closure continuous cover",
+        "boundary"
+      ]
+    },
+    {
+      "chinese_name": "基",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在给集合配置空间结构时，它指定哪些子集视作 open。",
+        "continuity、closedness、compactness 和 connectedness 都由这层结构判定。",
+        "围绕 `basis`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `basis`。"
+      ],
+      "fragmented_clues": [
+        "set spatial structure",
+        "open continuous compact connected",
+        "basis",
+        "open closure continuous cover",
+        "basis"
+      ]
+    },
+    {
+      "chinese_name": "子基",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在给集合配置空间结构时，它指定哪些子集视作 open。",
+        "continuity、closedness、compactness 和 connectedness 都由这层结构判定。",
+        "围绕 `subbasis`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `subbasis`。"
+      ],
+      "fragmented_clues": [
+        "set spatial structure",
+        "open continuous compact connected",
+        "subbasis",
+        "open closure continuous cover",
+        "subbasis"
+      ]
+    },
+    {
+      "chinese_name": "连续映射",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在比较两个空间时，它研究映射怎样保持 open structure。",
+        "continuous equivalence 和 quotient maps 决定性质能否转移。",
+        "映射 f:X->Y 对目标中每个开放子集，原像仍开放。",
+        "也可用 closed preimage 或邻域语言刻画。",
+        "标准英文名是 `continuous_map`。"
+      ],
+      "fragmented_clues": [
+        "two spaces maps",
+        "continuous equivalence quotient",
+        "preimage open",
+        "f^{-1}(V) open",
+        "continuous map"
+      ]
+    },
+    {
+      "chinese_name": "同胚",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在比较两个空间时，它研究映射怎样保持 open structure。",
+        "continuous equivalence 和 quotient maps 决定性质能否转移。",
+        "它是双射、连续且逆映射也连续的对应。",
+        "存在时两个空间具有相同的拓扑性质。",
+        "标准英文名是 `homeomorphism`。"
+      ],
+      "fragmented_clues": [
+        "two spaces maps",
+        "continuous equivalence quotient",
+        "bijective continuous inverse",
+        "same topological properties",
+        "homeomorphism"
+      ]
+    },
+    {
+      "chinese_name": "子空间拓扑",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在从旧空间制造新空间时，它规定 open sets 怎样继承或生成。",
+        "subspace、product 和 quotient 给出三种常见来源。",
+        "围绕 `subspace_topology`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `subspace_topology`。"
+      ],
+      "fragmented_clues": [
+        "old space new space",
+        "inherit product identify",
+        "subspace topology",
+        "open closure continuous cover",
+        "subspace topology"
+      ]
+    },
+    {
+      "chinese_name": "积拓扑",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在从旧空间制造新空间时，它规定 open sets 怎样继承或生成。",
+        "subspace、product 和 quotient 给出三种常见来源。",
+        "围绕 `product_topology`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `product_topology`。"
+      ],
+      "fragmented_clues": [
+        "old space new space",
+        "inherit product identify",
+        "product topology",
+        "open closure continuous cover",
+        "product topology"
+      ]
+    },
+    {
+      "chinese_name": "商拓扑",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在从旧空间制造新空间时，它规定 open sets 怎样继承或生成。",
+        "subspace、product 和 quotient 给出三种常见来源。",
+        "在识别等价类后，子集开放当且仅当其原像开放。",
+        "它是使自然投影连续的最强结构。",
+        "标准英文名是 `quotient_topology`。"
+      ],
+      "fragmented_clues": [
+        "old space new space",
+        "inherit product identify",
+        "equivalence classes",
+        "q^{-1}(U) open",
+        "quotient topology"
+      ]
+    },
+    {
+      "chinese_name": "连通空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在判断空间能否被拆开时，它关注开闭分离和路径。",
+        "components、path components 和局部性质提供细分信息。",
+        "围绕 `connected_space`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `connected_space`。"
+      ],
+      "fragmented_clues": [
+        "separation path",
+        "components local",
+        "connected space",
+        "open closure continuous cover",
+        "connected space"
+      ]
+    },
+    {
+      "chinese_name": "道路连通",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在判断空间能否被拆开时，它关注开闭分离和路径。",
+        "components、path components 和局部性质提供细分信息。",
+        "任意两点可由连续路径 gamma:[0,1]->X 连接。",
+        "它推出整体不可分离性质，但反向一般不成立。",
+        "标准英文名是 `path_connectedness`。"
+      ],
+      "fragmented_clues": [
+        "separation path",
+        "components local",
+        "continuous path",
+        "gamma(0)=x gamma(1)=y",
+        "path connectedness"
+      ]
+    },
+    {
+      "chinese_name": "紧空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在控制无限开放族时，它把问题压缩到有限信息。",
+        "finite subcover、列紧和局部紧是常见判据。",
+        "每个开放族覆盖都有 finite subcover。",
+        "在度量空间中常与序列紧等价。",
+        "标准英文名是 `compact_space`。"
+      ],
+      "fragmented_clues": [
+        "infinite open family",
+        "finite subcover sequence",
+        "open cover",
+        "finite subcover",
+        "compact space"
+      ]
+    },
+    {
+      "chinese_name": "列紧性",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在控制无限开放族时，它把问题压缩到有限信息。",
+        "finite subcover、列紧和局部紧是常见判据。",
+        "围绕 `sequential_compactness`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `sequential_compactness`。"
+      ],
+      "fragmented_clues": [
+        "infinite open family",
+        "finite subcover sequence",
+        "sequential compactness",
+        "open closure continuous cover",
+        "sequential compactness"
+      ]
+    },
+    {
+      "chinese_name": "豪斯多夫空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在区分点和 closed sets 时，它给出不同强度的分离条件。",
+        "T0、T1、T2、regular 和 normal 形成逐级要求。",
+        "任意两个不同点可由不相交邻域分开。",
+        "也称 T2 条件，能保证序列极限唯一。",
+        "标准英文名是 `hausdorff_space`。"
+      ],
+      "fragmented_clues": [
+        "points closed sets",
+        "T0 T1 T2 regular normal",
+        "distinct points",
+        "disjoint neighborhoods T2",
+        "hausdorff space"
+      ]
+    },
+    {
+      "chinese_name": "正则空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在区分点和 closed sets 时，它给出不同强度的分离条件。",
+        "T0、T1、T2、regular 和 normal 形成逐级要求。",
+        "围绕 `regular_space`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `regular_space`。"
+      ],
+      "fragmented_clues": [
+        "points closed sets",
+        "T0 T1 T2 regular normal",
+        "regular space",
+        "open closure continuous cover",
+        "regular space"
+      ]
+    },
+    {
+      "chinese_name": "正规空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在区分点和 closed sets 时，它给出不同强度的分离条件。",
+        "T0、T1、T2、regular 和 normal 形成逐级要求。",
+        "围绕 `normal_space`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `normal_space`。"
+      ],
+      "fragmented_clues": [
+        "points closed sets",
+        "T0 T1 T2 regular normal",
+        "normal space",
+        "open closure continuous cover",
+        "normal space"
+      ]
+    },
+    {
+      "chinese_name": "可数公理",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在给集合配置空间结构时，它指定哪些子集视作 open。",
+        "continuity、closedness、compactness 和 connectedness 都由这层结构判定。",
+        "围绕 `countability_axiom`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `countability_axiom`。"
+      ],
+      "fragmented_clues": [
+        "set spatial structure",
+        "open continuous compact connected",
+        "countability axiom",
+        "open closure continuous cover",
+        "countability axiom"
+      ]
+    },
+    {
+      "chinese_name": "第一可数空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在用可数资料或距离描述空间时，它约束邻域和收敛。",
+        "basis、sequence、metric 和 dense subset 常互相联系。",
+        "围绕 `first_countable_space`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `first_countable_space`。"
+      ],
+      "fragmented_clues": [
+        "countable data distance",
+        "basis sequence metric dense",
+        "first countable space",
+        "open closure continuous cover",
+        "first countable space"
+      ]
+    },
+    {
+      "chinese_name": "第二可数空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在用可数资料或距离描述空间时，它约束邻域和收敛。",
+        "basis、sequence、metric 和 dense subset 常互相联系。",
+        "围绕 `second_countable_space`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `second_countable_space`。"
+      ],
+      "fragmented_clues": [
+        "countable data distance",
+        "basis sequence metric dense",
+        "second countable space",
+        "open closure continuous cover",
+        "second countable space"
+      ]
+    },
+    {
+      "chinese_name": "度量空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在用可数资料或距离描述空间时，它约束邻域和收敛。",
+        "basis、sequence、metric 和 dense subset 常互相联系。",
+        "集合配有距离函数 d，满足正定、对称和三角不等式。",
+        "由 open balls 生成空间结构。",
+        "标准英文名是 `metric_space`。"
+      ],
+      "fragmented_clues": [
+        "countable data distance",
+        "basis sequence metric dense",
+        "distance d",
+        "open balls generate T",
+        "metric space"
+      ]
+    },
+    {
+      "chinese_name": "完备空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在用可数资料或距离描述空间时，它约束邻域和收敛。",
+        "basis、sequence、metric 和 dense subset 常互相联系。",
+        "围绕 `complete_space`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `complete_space`。"
+      ],
+      "fragmented_clues": [
+        "countable data distance",
+        "basis sequence metric dense",
+        "complete space",
+        "open closure continuous cover",
+        "complete space"
+      ]
+    },
+    {
+      "chinese_name": "稠密集",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在研究 dense behavior 和 category 时，它区分大集合与小集合。",
+        "nowhere dense、meagre 和 Baire 性质用于描述拓扑大小。",
+        "围绕 `dense_set`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `dense_set`。"
+      ],
+      "fragmented_clues": [
+        "dense category",
+        "nowhere dense meagre Baire",
+        "dense set",
+        "open closure continuous cover",
+        "dense set"
+      ]
+    },
+    {
+      "chinese_name": "可分空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在用可数资料或距离描述空间时，它约束邻域和收敛。",
+        "basis、sequence、metric 和 dense subset 常互相联系。",
+        "围绕 `separable_space`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `separable_space`。"
+      ],
+      "fragmented_clues": [
+        "countable data distance",
+        "basis sequence metric dense",
+        "separable space",
+        "open closure continuous cover",
+        "separable space"
+      ]
+    },
+    {
+      "chinese_name": "同伦",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在连续变形映射或路径时，它保留变形类型。",
+        "pi_1、path classes 和 retract 数据把路径信息代数化。",
+        "它是在两映射之间给出的连续变形 H:Xx[0,1]->Y。",
+        "端点分别等于原来的两个映射。",
+        "标准英文名是 `homotopy`。"
+      ],
+      "fragmented_clues": [
+        "continuous deformation paths",
+        "pi_1 path classes retract",
+        "H:XxI->Y",
+        "H0=f H1=g",
+        "homotopy"
+      ]
+    },
+    {
+      "chinese_name": "基本群",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在连续变形映射或路径时，它保留变形类型。",
+        "pi_1、path classes 和 retract 数据把路径信息代数化。",
+        "它由基点处的 closed loops 的变形类组成。",
+        "运算为路径拼接，常记 pi_1(X,x0)。",
+        "标准英文名是 `fundamental_group`。"
+      ],
+      "fragmented_clues": [
+        "continuous deformation paths",
+        "pi_1 path classes retract",
+        "loops at x0",
+        "pi_1(X,x0) concatenation",
+        "fundamental group"
+      ]
+    },
+    {
+      "chinese_name": "覆盖空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在控制无限开放族时，它把问题压缩到有限信息。",
+        "finite subcover、列紧和局部紧是常见判据。",
+        "每个基底空间点有邻域，其原像分解为若干同胚片。",
+        "路径提升和单值化常在这里出现。",
+        "标准英文名是 `covering_space`。"
+      ],
+      "fragmented_clues": [
+        "infinite open family",
+        "finite subcover sequence",
+        "evenly covered neighborhoods",
+        "sheets path lifting",
+        "covering space"
+      ]
+    },
+    {
+      "chinese_name": "单纯复形",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在把空间转成代数对象时，它使用 chain maps。",
+        "cycles、boundaries 和 Euler data 提供可计算不变量。",
+        "围绕 `simplicial_complex`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `simplicial_complex`。"
+      ],
+      "fragmented_clues": [
+        "space algebraic object",
+        "chain cycles boundaries",
+        "simplicial complex",
+        "open closure continuous cover",
+        "simplicial complex"
+      ]
+    },
+    {
+      "chinese_name": "同调群",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在把空间转成代数对象时，它使用 chain maps。",
+        "cycles、boundaries 和 Euler data 提供可计算不变量。",
+        "它由 cycles modulo boundaries 得到。",
+        "常记 H_n，用来记录洞的维度信息。",
+        "标准英文名是 `homology_group`。"
+      ],
+      "fragmented_clues": [
+        "space algebraic object",
+        "chain cycles boundaries",
+        "cycles modulo boundaries",
+        "H_n holes",
+        "homology group"
+      ]
+    },
+    {
+      "chinese_name": "集合族",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在给集合配置空间结构时，它指定哪些子集视作 open。",
+        "continuity、closedness、compactness 和 connectedness 都由这层结构判定。",
+        "围绕 `family_of_sets`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `family_of_sets`。"
+      ],
+      "fragmented_clues": [
+        "set spatial structure",
+        "open continuous compact connected",
+        "family of sets",
+        "open closure continuous cover",
+        "family of sets"
+      ]
+    },
+    {
+      "chinese_name": "开覆盖",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在控制无限开放族时，它把问题压缩到有限信息。",
+        "finite subcover、列紧和局部紧是常见判据。",
+        "围绕 `open_cover`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `open_cover`。"
+      ],
+      "fragmented_clues": [
+        "infinite open family",
+        "finite subcover sequence",
+        "open cover",
+        "open closure continuous cover",
+        "open cover"
+      ]
+    },
+    {
+      "chinese_name": "有限子覆盖",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在控制无限开放族时，它把问题压缩到有限信息。",
+        "finite subcover、列紧和局部紧是常见判据。",
+        "围绕 `finite_subcover`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `finite_subcover`。"
+      ],
+      "fragmented_clues": [
+        "infinite open family",
+        "finite subcover sequence",
+        "finite subcover",
+        "open closure continuous cover",
+        "finite subcover"
+      ]
+    },
+    {
+      "chinese_name": "闭覆盖",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在控制无限开放族时，它把问题压缩到有限信息。",
+        "finite subcover、列紧和局部紧是常见判据。",
+        "围绕 `closed_cover`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `closed_cover`。"
+      ],
+      "fragmented_clues": [
+        "infinite open family",
+        "finite subcover sequence",
+        "closed cover",
+        "open closure continuous cover",
+        "closed cover"
+      ]
+    },
+    {
+      "chinese_name": "覆盖维数",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在控制无限开放族时，它把问题压缩到有限信息。",
+        "finite subcover、列紧和局部紧是常见判据。",
+        "围绕 `covering_dimension`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `covering_dimension`。"
+      ],
+      "fragmented_clues": [
+        "infinite open family",
+        "finite subcover sequence",
+        "covering dimension",
+        "open closure continuous cover",
+        "covering dimension"
+      ]
+    },
+    {
+      "chinese_name": "局部紧空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在控制无限开放族时，它把问题压缩到有限信息。",
+        "finite subcover、列紧和局部紧是常见判据。",
+        "围绕 `locally_compact_space`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `locally_compact_space`。"
+      ],
+      "fragmented_clues": [
+        "infinite open family",
+        "finite subcover sequence",
+        "locally compact space",
+        "open closure continuous cover",
+        "locally compact space"
+      ]
+    },
+    {
+      "chinese_name": "仿紧空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在控制无限开放族时，它把问题压缩到有限信息。",
+        "finite subcover、列紧和局部紧是常见判据。",
+        "围绕 `paracompact_space`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `paracompact_space`。"
+      ],
+      "fragmented_clues": [
+        "infinite open family",
+        "finite subcover sequence",
+        "paracompact space",
+        "open closure continuous cover",
+        "paracompact space"
+      ]
+    },
+    {
+      "chinese_name": "连通分支",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在判断空间能否被拆开时，它关注开闭分离和路径。",
+        "components、path components 和局部性质提供细分信息。",
+        "围绕 `connected_component`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `connected_component`。"
+      ],
+      "fragmented_clues": [
+        "separation path",
+        "components local",
+        "connected component",
+        "open closure continuous cover",
+        "connected component"
+      ]
+    },
+    {
+      "chinese_name": "道路分支",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在判断空间能否被拆开时，它关注开闭分离和路径。",
+        "components、path components 和局部性质提供细分信息。",
+        "围绕 `path_component`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `path_component`。"
+      ],
+      "fragmented_clues": [
+        "separation path",
+        "components local",
+        "path component",
+        "open closure continuous cover",
+        "path component"
+      ]
+    },
+    {
+      "chinese_name": "全不连通空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在判断空间能否被拆开时，它关注开闭分离和路径。",
+        "components、path components 和局部性质提供细分信息。",
+        "围绕 `totally_disconnected_space`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `totally_disconnected_space`。"
+      ],
+      "fragmented_clues": [
+        "separation path",
+        "components local",
+        "totally disconnected space",
+        "open closure continuous cover",
+        "totally disconnected space"
+      ]
+    },
+    {
+      "chinese_name": "局部连通空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在判断空间能否被拆开时，它关注开闭分离和路径。",
+        "components、path components 和局部性质提供细分信息。",
+        "围绕 `locally_connected_space`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `locally_connected_space`。"
+      ],
+      "fragmented_clues": [
+        "separation path",
+        "components local",
+        "locally connected space",
+        "open closure continuous cover",
+        "locally connected space"
+      ]
+    },
+    {
+      "chinese_name": "局部道路连通空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在判断空间能否被拆开时，它关注开闭分离和路径。",
+        "components、path components 和局部性质提供细分信息。",
+        "围绕 `locally_path_connected_space`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `locally_path_connected_space`。"
+      ],
+      "fragmented_clues": [
+        "separation path",
+        "components local",
+        "locally path connected space",
+        "open closure continuous cover",
+        "locally path connected space"
+      ]
+    },
+    {
+      "chinese_name": "紧致化",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在控制无限开放族时，它把问题压缩到有限信息。",
+        "finite subcover、列紧和局部紧是常见判据。",
+        "围绕 `compactification`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `compactification`。"
+      ],
+      "fragmented_clues": [
+        "infinite open family",
+        "finite subcover sequence",
+        "compactification",
+        "open closure continuous cover",
+        "compactification"
+      ]
+    },
+    {
+      "chinese_name": "一点紧致化",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在控制无限开放族时，它把问题压缩到有限信息。",
+        "finite subcover、列紧和局部紧是常见判据。",
+        "围绕 `one_point_compactification`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `one_point_compactification`。"
+      ],
+      "fragmented_clues": [
+        "infinite open family",
+        "finite subcover sequence",
+        "one point compactification",
+        "open closure continuous cover",
+        "one point compactification"
+      ]
+    },
+    {
+      "chinese_name": "滤子",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在不用序列也能描述极限时，它用有向资料追踪邻近。",
+        "filter、net 和 convergence 条件适合一般空间。",
+        "围绕 `filter`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `filter`。"
+      ],
+      "fragmented_clues": [
+        "limit directed data",
+        "filter net convergence",
+        "filter",
+        "open closure continuous cover",
+        "filter"
+      ]
+    },
+    {
+      "chinese_name": "网",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在不用序列也能描述极限时，它用有向资料追踪邻近。",
+        "filter、net 和 convergence 条件适合一般空间。",
+        "围绕 `net`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `net`。"
+      ],
+      "fragmented_clues": [
+        "limit directed data",
+        "filter net convergence",
+        "net",
+        "open closure continuous cover",
+        "net"
+      ]
+    },
+    {
+      "chinese_name": "序列紧",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在控制无限开放族时，它把问题压缩到有限信息。",
+        "finite subcover、列紧和局部紧是常见判据。",
+        "围绕 `sequentially_compact`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `sequentially_compact`。"
+      ],
+      "fragmented_clues": [
+        "infinite open family",
+        "finite subcover sequence",
+        "sequentially compact",
+        "open closure continuous cover",
+        "sequentially compact"
+      ]
+    },
+    {
+      "chinese_name": "极限点紧",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在控制无限开放族时，它把问题压缩到有限信息。",
+        "finite subcover、列紧和局部紧是常见判据。",
+        "围绕 `limit_point_compact`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `limit_point_compact`。"
+      ],
+      "fragmented_clues": [
+        "infinite open family",
+        "finite subcover sequence",
+        "limit point compact",
+        "open closure continuous cover",
+        "limit point compact"
+      ]
+    },
+    {
+      "chinese_name": "完全正则空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在区分点和 closed sets 时，它给出不同强度的分离条件。",
+        "T0、T1、T2、regular 和 normal 形成逐级要求。",
+        "围绕 `completely_regular_space`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `completely_regular_space`。"
+      ],
+      "fragmented_clues": [
+        "points closed sets",
+        "T0 T1 T2 regular normal",
+        "completely regular space",
+        "open closure continuous cover",
+        "completely regular space"
+      ]
+    },
+    {
+      "chinese_name": "提赫诺夫空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在区分点和 closed sets 时，它给出不同强度的分离条件。",
+        "T0、T1、T2、regular 和 normal 形成逐级要求。",
+        "围绕 `tychonoff_space`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `tychonoff_space`。"
+      ],
+      "fragmented_clues": [
+        "points closed sets",
+        "T0 T1 T2 regular normal",
+        "tychonoff space",
+        "open closure continuous cover",
+        "tychonoff space"
+      ]
+    },
+    {
+      "chinese_name": "乌雷松引理",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在区分点和 closed sets 时，它给出不同强度的分离条件。",
+        "T0、T1、T2、regular 和 normal 形成逐级要求。",
+        "围绕 `urysohn_lemma`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `urysohn_lemma`。"
+      ],
+      "fragmented_clues": [
+        "points closed sets",
+        "T0 T1 T2 regular normal",
+        "urysohn lemma",
+        "open closure continuous cover",
+        "urysohn lemma"
+      ]
+    },
+    {
+      "chinese_name": "蒂茨扩张定理",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在区分点和 closed sets 时，它给出不同强度的分离条件。",
+        "T0、T1、T2、regular 和 normal 形成逐级要求。",
+        "围绕 `tietze_extension_theorem`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `tietze_extension_theorem`。"
+      ],
+      "fragmented_clues": [
+        "points closed sets",
+        "T0 T1 T2 regular normal",
+        "tietze extension theorem",
+        "open closure continuous cover",
+        "tietze extension theorem"
+      ]
+    },
+    {
+      "chinese_name": "分离公理",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在区分点和 closed sets 时，它给出不同强度的分离条件。",
+        "T0、T1、T2、regular 和 normal 形成逐级要求。",
+        "围绕 `separation_axiom`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `separation_axiom`。"
+      ],
+      "fragmented_clues": [
+        "points closed sets",
+        "T0 T1 T2 regular normal",
+        "separation axiom",
+        "open closure continuous cover",
+        "separation axiom"
+      ]
+    },
+    {
+      "chinese_name": "T0空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在区分点和 closed sets 时，它给出不同强度的分离条件。",
+        "T0、T1、T2、regular 和 normal 形成逐级要求。",
+        "围绕 `t0_space`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `t0_space`。"
+      ],
+      "fragmented_clues": [
+        "points closed sets",
+        "T0 T1 T2 regular normal",
+        "t0 space",
+        "open closure continuous cover",
+        "t0 space"
+      ]
+    },
+    {
+      "chinese_name": "T1空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在区分点和 closed sets 时，它给出不同强度的分离条件。",
+        "T0、T1、T2、regular 和 normal 形成逐级要求。",
+        "围绕 `t1_space`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `t1_space`。"
+      ],
+      "fragmented_clues": [
+        "points closed sets",
+        "T0 T1 T2 regular normal",
+        "t1 space",
+        "open closure continuous cover",
+        "t1 space"
+      ]
+    },
+    {
+      "chinese_name": "T2空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在区分点和 closed sets 时，它给出不同强度的分离条件。",
+        "T0、T1、T2、regular 和 normal 形成逐级要求。",
+        "围绕 `t2_space`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `t2_space`。"
+      ],
+      "fragmented_clues": [
+        "points closed sets",
+        "T0 T1 T2 regular normal",
+        "t2 space",
+        "open closure continuous cover",
+        "t2 space"
+      ]
+    },
+    {
+      "chinese_name": "可缩空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在连续变形映射或路径时，它保留变形类型。",
+        "pi_1、path classes 和 retract 数据把路径信息代数化。",
+        "围绕 `contractible_space`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `contractible_space`。"
+      ],
+      "fragmented_clues": [
+        "continuous deformation paths",
+        "pi_1 path classes retract",
+        "contractible space",
+        "open closure continuous cover",
+        "contractible space"
+      ]
+    },
+    {
+      "chinese_name": "道路同伦",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在连续变形映射或路径时，它保留变形类型。",
+        "pi_1、path classes 和 retract 数据把路径信息代数化。",
+        "围绕 `path_homotopy`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `path_homotopy`。"
+      ],
+      "fragmented_clues": [
+        "continuous deformation paths",
+        "pi_1 path classes retract",
+        "path homotopy",
+        "open closure continuous cover",
+        "path homotopy"
+      ]
+    },
+    {
+      "chinese_name": "同伦等价",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在连续变形映射或路径时，它保留变形类型。",
+        "pi_1、path classes 和 retract 数据把路径信息代数化。",
+        "围绕 `homotopy_equivalence`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `homotopy_equivalence`。"
+      ],
+      "fragmented_clues": [
+        "continuous deformation paths",
+        "pi_1 path classes retract",
+        "homotopy equivalence",
+        "open closure continuous cover",
+        "homotopy equivalence"
+      ]
+    },
+    {
+      "chinese_name": "强形变收缩",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在连续变形映射或路径时，它保留变形类型。",
+        "pi_1、path classes 和 retract 数据把路径信息代数化。",
+        "围绕 `strong_deformation_retract`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `strong_deformation_retract`。"
+      ],
+      "fragmented_clues": [
+        "continuous deformation paths",
+        "pi_1 path classes retract",
+        "strong deformation retract",
+        "open closure continuous cover",
+        "strong deformation retract"
+      ]
+    },
+    {
+      "chinese_name": "形变收缩",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在连续变形映射或路径时，它保留变形类型。",
+        "pi_1、path classes 和 retract 数据把路径信息代数化。",
+        "围绕 `deformation_retract`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `deformation_retract`。"
+      ],
+      "fragmented_clues": [
+        "continuous deformation paths",
+        "pi_1 path classes retract",
+        "deformation retract",
+        "open closure continuous cover",
+        "deformation retract"
+      ]
+    },
+    {
+      "chinese_name": "胞腔复形",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在把空间转成代数对象时，它使用 chain maps。",
+        "cycles、boundaries 和 Euler data 提供可计算不变量。",
+        "围绕 `cell_complex`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `cell_complex`。"
+      ],
+      "fragmented_clues": [
+        "space algebraic object",
+        "chain cycles boundaries",
+        "cell complex",
+        "open closure continuous cover",
+        "cell complex"
+      ]
+    },
+    {
+      "chinese_name": "CW复形",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在把空间转成代数对象时，它使用 chain maps。",
+        "cycles、boundaries 和 Euler data 提供可计算不变量。",
+        "围绕 `cw_complex`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `cw_complex`。"
+      ],
+      "fragmented_clues": [
+        "space algebraic object",
+        "chain cycles boundaries",
+        "cw complex",
+        "open closure continuous cover",
+        "cw complex"
+      ]
+    },
+    {
+      "chinese_name": "单纯形",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在把空间转成代数对象时，它使用 chain maps。",
+        "cycles、boundaries 和 Euler data 提供可计算不变量。",
+        "围绕 `simplex`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `simplex`。"
+      ],
+      "fragmented_clues": [
+        "space algebraic object",
+        "chain cycles boundaries",
+        "simplex",
+        "open closure continuous cover",
+        "simplex"
+      ]
+    },
+    {
+      "chinese_name": "链复形",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在把空间转成代数对象时，它使用 chain maps。",
+        "cycles、boundaries 和 Euler data 提供可计算不变量。",
+        "围绕 `chain_complex`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `chain_complex`。"
+      ],
+      "fragmented_clues": [
+        "space algebraic object",
+        "chain cycles boundaries",
+        "chain complex",
+        "open closure continuous cover",
+        "chain complex"
+      ]
+    },
+    {
+      "chinese_name": "边缘算子",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在把空间转成代数对象时，它使用 chain maps。",
+        "cycles、boundaries 和 Euler data 提供可计算不变量。",
+        "围绕 `boundary_operator`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `boundary_operator`。"
+      ],
+      "fragmented_clues": [
+        "space algebraic object",
+        "chain cycles boundaries",
+        "boundary operator",
+        "open closure continuous cover",
+        "boundary operator"
+      ]
+    },
+    {
+      "chinese_name": "闭链",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在把空间转成代数对象时，它使用 chain maps。",
+        "cycles、boundaries 和 Euler data 提供可计算不变量。",
+        "围绕 `cycle`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `cycle`。"
+      ],
+      "fragmented_clues": [
+        "space algebraic object",
+        "chain cycles boundaries",
+        "cycle",
+        "open closure continuous cover",
+        "cycle"
+      ]
+    },
+    {
+      "chinese_name": "边界链",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在把空间转成代数对象时，它使用 chain maps。",
+        "cycles、boundaries 和 Euler data 提供可计算不变量。",
+        "围绕 `boundary_chain`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `boundary_chain`。"
+      ],
+      "fragmented_clues": [
+        "space algebraic object",
+        "chain cycles boundaries",
+        "boundary chain",
+        "open closure continuous cover",
+        "boundary chain"
+      ]
+    },
+    {
+      "chinese_name": "上同调群",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在把空间转成代数对象时，它使用 chain maps。",
+        "cycles、boundaries 和 Euler data 提供可计算不变量。",
+        "围绕 `cohomology_group`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `cohomology_group`。"
+      ],
+      "fragmented_clues": [
+        "space algebraic object",
+        "chain cycles boundaries",
+        "cohomology group",
+        "open closure continuous cover",
+        "cohomology group"
+      ]
+    },
+    {
+      "chinese_name": "欧拉示性数",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在把空间转成代数对象时，它使用 chain maps。",
+        "cycles、boundaries 和 Euler data 提供可计算不变量。",
+        "围绕 `euler_characteristic`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `euler_characteristic`。"
+      ],
+      "fragmented_clues": [
+        "space algebraic object",
+        "chain cycles boundaries",
+        "euler characteristic",
+        "open closure continuous cover",
+        "euler characteristic"
+      ]
+    },
+    {
+      "chinese_name": "流形",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在局部像欧氏空间的对象上，它用坐标和粘合描述形状。",
+        "atlas、chart、orientation 和 genus 是主要数据。",
+        "每点附近都同胚于某个欧氏空间开子集。",
+        "维数由局部欧氏模型确定。",
+        "标准英文名是 `manifold`。"
+      ],
+      "fragmented_clues": [
+        "locally Euclidean gluing",
+        "atlas chart orientation genus",
+        "locally Euclidean",
+        "dimension n",
+        "manifold"
+      ]
+    },
+    {
+      "chinese_name": "拓扑流形",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在局部像欧氏空间的对象上，它用坐标和粘合描述形状。",
+        "atlas、chart、orientation 和 genus 是主要数据。",
+        "围绕 `topological_manifold`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `topological_manifold`。"
+      ],
+      "fragmented_clues": [
+        "locally Euclidean gluing",
+        "atlas chart orientation genus",
+        "topological manifold",
+        "open closure continuous cover",
+        "topological manifold"
+      ]
+    },
+    {
+      "chinese_name": "n维流形",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在控制无限开放族时，它把问题压缩到有限信息。",
+        "finite subcover、列紧和局部紧是常见判据。",
+        "围绕 `n_dimensional_manifold`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `n_dimensional_manifold`。"
+      ],
+      "fragmented_clues": [
+        "infinite open family",
+        "finite subcover sequence",
+        "n dimensional manifold",
+        "open closure continuous cover",
+        "n dimensional manifold"
+      ]
+    },
+    {
+      "chinese_name": "图册",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在局部像欧氏空间的对象上，它用坐标和粘合描述形状。",
+        "atlas、chart、orientation 和 genus 是主要数据。",
+        "围绕 `atlas`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `atlas`。"
+      ],
+      "fragmented_clues": [
+        "locally Euclidean gluing",
+        "atlas chart orientation genus",
+        "atlas",
+        "open closure continuous cover",
+        "atlas"
+      ]
+    },
+    {
+      "chinese_name": "坐标卡",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在局部像欧氏空间的对象上，它用坐标和粘合描述形状。",
+        "atlas、chart、orientation 和 genus 是主要数据。",
+        "围绕 `coordinate_chart`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `coordinate_chart`。"
+      ],
+      "fragmented_clues": [
+        "locally Euclidean gluing",
+        "atlas chart orientation genus",
+        "coordinate chart",
+        "open closure continuous cover",
+        "coordinate chart"
+      ]
+    },
+    {
+      "chinese_name": "局部欧氏性",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在局部像欧氏空间的对象上，它用坐标和粘合描述形状。",
+        "atlas、chart、orientation 和 genus 是主要数据。",
+        "围绕 `local_euclidean_property`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `local_euclidean_property`。"
+      ],
+      "fragmented_clues": [
+        "locally Euclidean gluing",
+        "atlas chart orientation genus",
+        "local euclidean property",
+        "open closure continuous cover",
+        "local euclidean property"
+      ]
+    },
+    {
+      "chinese_name": "可定向性",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在局部像欧氏空间的对象上，它用坐标和粘合描述形状。",
+        "atlas、chart、orientation 和 genus 是主要数据。",
+        "围绕 `orientability`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `orientability`。"
+      ],
+      "fragmented_clues": [
+        "locally Euclidean gluing",
+        "atlas chart orientation genus",
+        "orientability",
+        "open closure continuous cover",
+        "orientability"
+      ]
+    },
+    {
+      "chinese_name": "闭曲面",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在局部像欧氏空间的对象上，它用坐标和粘合描述形状。",
+        "atlas、chart、orientation 和 genus 是主要数据。",
+        "围绕 `closed_surface`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `closed_surface`。"
+      ],
+      "fragmented_clues": [
+        "locally Euclidean gluing",
+        "atlas chart orientation genus",
+        "closed surface",
+        "open closure continuous cover",
+        "closed surface"
+      ]
+    },
+    {
+      "chinese_name": "亏格",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在局部像欧氏空间的对象上，它用坐标和粘合描述形状。",
+        "atlas、chart、orientation 和 genus 是主要数据。",
+        "围绕 `genus`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `genus`。"
+      ],
+      "fragmented_clues": [
+        "locally Euclidean gluing",
+        "atlas chart orientation genus",
+        "genus",
+        "open closure continuous cover",
+        "genus"
+      ]
+    },
+    {
+      "chinese_name": "莫比乌斯带",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在局部像欧氏空间的对象上，它用坐标和粘合描述形状。",
+        "atlas、chart、orientation 和 genus 是主要数据。",
+        "围绕 `mobius_strip`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `mobius_strip`。"
+      ],
+      "fragmented_clues": [
+        "locally Euclidean gluing",
+        "atlas chart orientation genus",
+        "mobius strip",
+        "open closure continuous cover",
+        "mobius strip"
+      ]
+    },
+    {
+      "chinese_name": "环面",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在局部像欧氏空间的对象上，它用坐标和粘合描述形状。",
+        "atlas、chart、orientation 和 genus 是主要数据。",
+        "它可由矩形对边同向粘合得到。",
+        "pi_1 同构于 Z^2。",
+        "标准英文名是 `torus`。"
+      ],
+      "fragmented_clues": [
+        "locally Euclidean gluing",
+        "atlas chart orientation genus",
+        "opposite sides glued",
+        "pi_1=Z^2",
+        "torus"
+      ]
+    },
+    {
+      "chinese_name": "克莱因瓶",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在局部像欧氏空间的对象上，它用坐标和粘合描述形状。",
+        "atlas、chart、orientation 和 genus 是主要数据。",
+        "围绕 `klein_bottle`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `klein_bottle`。"
+      ],
+      "fragmented_clues": [
+        "locally Euclidean gluing",
+        "atlas chart orientation genus",
+        "klein bottle",
+        "open closure continuous cover",
+        "klein bottle"
+      ]
+    },
+    {
+      "chinese_name": "纤维丛",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在局部铺盖或纤维化空间时，它研究 fiber 和 lifting。",
+        "universal cover、covering maps 和 pi_1 作用关系密切。",
+        "围绕 `fiber_bundle`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `fiber_bundle`。"
+      ],
+      "fragmented_clues": [
+        "local sheets fiber",
+        "fiber lifting universal",
+        "fiber bundle",
+        "open closure continuous cover",
+        "fiber bundle"
+      ]
+    },
+    {
+      "chinese_name": "覆盖映射",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在控制无限开放族时，它把问题压缩到有限信息。",
+        "finite subcover、列紧和局部紧是常见判据。",
+        "映射 p:E->B 使 B 的小邻域原像分裂成同胚片。",
+        "每片都由 p 同胚到该邻域。",
+        "标准英文名是 `covering_map`。"
+      ],
+      "fragmented_clues": [
+        "infinite open family",
+        "finite subcover sequence",
+        "p:E->B",
+        "evenly covered sheets",
+        "covering map"
+      ]
+    },
+    {
+      "chinese_name": "提升",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在局部铺盖或纤维化空间时，它研究 fiber 和 lifting。",
+        "universal cover、covering maps 和 pi_1 作用关系密切。",
+        "围绕 `lifting`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `lifting`。"
+      ],
+      "fragmented_clues": [
+        "local sheets fiber",
+        "fiber lifting universal",
+        "lifting",
+        "open closure continuous cover",
+        "lifting"
+      ]
+    },
+    {
+      "chinese_name": "万有覆盖空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在控制无限开放族时，它把问题压缩到有限信息。",
+        "finite subcover、列紧和局部紧是常见判据。",
+        "它是单连通的 covering object，铺盖给定的连通局部道路连通空间。",
+        "deck 变换常与 pi_1 相关。",
+        "标准英文名是 `universal_covering_space`。"
+      ],
+      "fragmented_clues": [
+        "infinite open family",
+        "finite subcover sequence",
+        "simply connected cover",
+        "deck transformations pi_1",
+        "universal covering space"
+      ]
+    },
+    {
+      "chinese_name": "基本群胚",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在连续变形映射或路径时，它保留变形类型。",
+        "pi_1、path classes 和 retract 数据把路径信息代数化。",
+        "围绕 `fundamental_groupoid`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `fundamental_groupoid`。"
+      ],
+      "fragmented_clues": [
+        "continuous deformation paths",
+        "pi_1 path classes retract",
+        "fundamental groupoid",
+        "open closure continuous cover",
+        "fundamental groupoid"
+      ]
+    },
+    {
+      "chinese_name": "拓扑不变量",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在给集合配置空间结构时，它指定哪些子集视作 open。",
+        "continuity、closedness、compactness 和 connectedness 都由这层结构判定。",
+        "围绕 `topological_invariant`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `topological_invariant`。"
+      ],
+      "fragmented_clues": [
+        "set spatial structure",
+        "open continuous compact connected",
+        "topological invariant",
+        "open closure continuous cover",
+        "topological invariant"
+      ]
+    },
+    {
+      "chinese_name": "开核",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在分析子集与周围点的关系时，它描述局部包含或补集性质。",
+        "local sets、cl(A)、Int(A) 和 frontier behavior 常一起出现。",
+        "围绕 `open_kernel`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `open_kernel`。"
+      ],
+      "fragmented_clues": [
+        "subset surrounding points",
+        "neighborhood closure interior",
+        "open kernel",
+        "open closure continuous cover",
+        "open kernel"
+      ]
+    },
+    {
+      "chinese_name": "闭核",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在分析子集与周围点的关系时，它描述局部包含或补集性质。",
+        "local sets、cl(A)、Int(A) 和 frontier behavior 常一起出现。",
+        "围绕 `closed_kernel`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `closed_kernel`。"
+      ],
+      "fragmented_clues": [
+        "subset surrounding points",
+        "neighborhood closure interior",
+        "closed kernel",
+        "open closure continuous cover",
+        "closed kernel"
+      ]
+    },
+    {
+      "chinese_name": "导集",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在分析子集与周围点的关系时，它描述局部包含或补集性质。",
+        "local sets、cl(A)、Int(A) 和 frontier behavior 常一起出现。",
+        "围绕 `derived_set`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `derived_set`。"
+      ],
+      "fragmented_clues": [
+        "subset surrounding points",
+        "neighborhood closure interior",
+        "derived set",
+        "open closure continuous cover",
+        "derived set"
+      ]
+    },
+    {
+      "chinese_name": "稠密性",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在研究 dense behavior 和 category 时，它区分大集合与小集合。",
+        "nowhere dense、meagre 和 Baire 性质用于描述拓扑大小。",
+        "围绕 `density`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `density`。"
+      ],
+      "fragmented_clues": [
+        "dense category",
+        "nowhere dense meagre Baire",
+        "density",
+        "open closure continuous cover",
+        "density"
+      ]
+    },
+    {
+      "chinese_name": "无处稠密集",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在研究 dense behavior 和 category 时，它区分大集合与小集合。",
+        "nowhere dense、meagre 和 Baire 性质用于描述拓扑大小。",
+        "围绕 `nowhere_dense_set`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `nowhere_dense_set`。"
+      ],
+      "fragmented_clues": [
+        "dense category",
+        "nowhere dense meagre Baire",
+        "nowhere dense set",
+        "open closure continuous cover",
+        "nowhere dense set"
+      ]
+    },
+    {
+      "chinese_name": "第一纲集",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在研究 dense behavior 和 category 时，它区分大集合与小集合。",
+        "nowhere dense、meagre 和 Baire 性质用于描述拓扑大小。",
+        "围绕 `set_of_first_category`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `set_of_first_category`。"
+      ],
+      "fragmented_clues": [
+        "dense category",
+        "nowhere dense meagre Baire",
+        "set of first category",
+        "open closure continuous cover",
+        "set of first category"
+      ]
+    },
+    {
+      "chinese_name": "第二纲集",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在研究 dense behavior 和 category 时，它区分大集合与小集合。",
+        "nowhere dense、meagre 和 Baire 性质用于描述拓扑大小。",
+        "围绕 `set_of_second_category`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `set_of_second_category`。"
+      ],
+      "fragmented_clues": [
+        "dense category",
+        "nowhere dense meagre Baire",
+        "set of second category",
+        "open closure continuous cover",
+        "set of second category"
+      ]
+    },
+    {
+      "chinese_name": "贝尔空间",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在研究 dense behavior 和 category 时，它区分大集合与小集合。",
+        "nowhere dense、meagre 和 Baire 性质用于描述拓扑大小。",
+        "围绕 `baire_space`，核心是检查 open sets、closure、continuity、cover 或 deformation 条件。",
+        "标准定义、记号或判据能把它与相近对象区分开。",
+        "标准英文名是 `baire_space`。"
+      ],
+      "fragmented_clues": [
+        "dense category",
+        "nowhere dense meagre Baire",
+        "baire space",
+        "open closure continuous cover",
+        "baire space"
+      ]
+    },
+    {
+      "chinese_name": "贝尔纲定理",
+      "source_file": "words/数学/困难模式/topology_terms.csv",
+      "complete_clues": [
+        "在研究 dense behavior 和 category 时，它区分大集合与小集合。",
+        "nowhere dense、meagre 和 Baire 性质用于描述拓扑大小。",
+        "它断言完备度量空间或局部紧 Hausdorff 空间具有 Baire 性质。",
+        "常用于证明某些对象存在且构成 dense G_delta。",
+        "标准英文名是 `baire_category_theorem`。"
+      ],
+      "fragmented_clues": [
+        "dense category",
+        "nowhere dense meagre Baire",
+        "complete metric locally compact Hausdorff",
+        "dense G_delta conclusion",
+        "baire category theorem"
+      ]
+    }
+  ]
+}

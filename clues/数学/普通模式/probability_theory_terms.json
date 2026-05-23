@@ -1,0 +1,1949 @@
+{
+    "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+    "entries":  [
+                    {
+                        "chinese_name":  "概率论",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "公理化随机模型从结果全集、事件族和数值赋值三件事开始。",
+                                               "条件化、独立性、随机数值映射和极限定理构成主要运算链条。",
+                                               "Kolmogorov 公理给出非负性、规范化和可列可加三条基础规则。",
+                                               "它把事件、分布、期望方差和极限行为组织成一套理论。",
+                                               "英文标准写法是 probability theory。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "结果全集 事件族 数值赋值",
+                                                 "条件化 独立性 数值映射 极限定理",
+                                                 "Kolmogorov 非负 规范化 可列可加",
+                                                 "事件 分布 期望 方差 极限行为",
+                                                 "probability theory"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "随机试验",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "同一条件下可重复的试行产生不可预知的单次结果。",
+                                               "每次试行落入结果全集中的一个点，事件负责收集满足条件的点。",
+                                               "每次试行对应一个 ω，重复试行产生不同 ω 序列。",
+                                               "重复性和单次不确定性同时出现时，这个对象被锁定。",
+                                               "英文标准写法是 random experiment。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "相同条件 重复试行 单次不可预知",
+                                                 "结果全集 一个点 事件集合",
+                                                 "ω 单次结果 重复序列",
+                                                 "重复性 单次不确定性",
+                                                 "random experiment"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "样本空间",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "一次不确定试行的所有可能结果被放进同一个全集。",
+                                               "事件是它的子集，补集、并集和交集都在这个全集内计算。",
+                                               "常记 Ω，所有事件都必须在这个全集内取子集。",
+                                               "符号常写作 Ω，并作为事件赋值规则的底层空间。",
+                                               "英文标准写法是 sample space。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "所有可能结果 同一全集",
+                                                 "事件子集 补集 并集 交集",
+                                                 "Ω 事件子集 全集",
+                                                 "Ω 底层空间",
+                                                 "sample space"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "随机事件",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "结果全集中的某一类结果形成可赋值的集合。",
+                                               "并、交、差和补描述事件之间的逻辑关系。",
+                                               "数学上写成 A⊂Ω，并由 P(A) 接受数值赋值。",
+                                               "判断时看集合关系，而不是看单个数值映射。",
+                                               "英文标准写法是 random event。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "结果全集 可赋值集合",
+                                                 "并 交 差 补 逻辑关系",
+                                                 "A⊂Ω P(A)",
+                                                 "集合关系 单个结果区别",
+                                                 "random event"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "基本事件",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "结果全集中的单个结果被单独拿出来形成最小非空事件。",
+                                               "在离散模型中，复杂事件可拆成若干这类单点集合的并。",
+                                               "离散情形常写成 {ω}，只含一个样本点。",
+                                               "无法再分成更小非空事件是核心判据。",
+                                               "英文标准写法是 elementary event。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "单个结果 最小非空事件",
+                                                 "离散模型 复杂事件 单点集合 并",
+                                                 "{ω} 单个样本点",
+                                                 "不可再分 非空事件",
+                                                 "elementary event"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "概率",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "事件被赋予 0 到 1 之间的数值，用来度量发生可能性。",
+                                               "空集取 0，全集取 1，互不相交并集的数值可相加。",
+                                               "P 是从事件族到 [0,1] 的规范化可列可加函数。",
+                                               "P(A) 是最常见记号，核心约束是非负与可列可加。",
+                                               "英文标准写法是 probability。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "事件 0到1 发生可能性",
+                                                 "空集0 全集1 互斥并 可加",
+                                                 "P:事件族->[0,1] 规范化 可列可加",
+                                                 "P(A) 非负 可列可加",
+                                                 "probability"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "古典概型",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "有限个基本结果且彼此等可能时，事件大小可由计数确定。",
+                                               "目标集合的点数除以全集点数，给出相应数值。",
+                                               "公式为有利基本结果数除以全部基本结果数。",
+                                               "等可能、有限性和计数比值三项同时出现。",
+                                               "英文标准写法是 classical probability model。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "有限基本结果 等可能",
+                                                 "有利点数 全部点数 比值",
+                                                 "有利结果数/全部结果数",
+                                                 "等可能 有限 计数比值",
+                                                 "classical probability model"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "几何概型",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "等可能性分布在连续几何区域上，而不是分布在有限点上。",
+                                               "长度、面积或体积的比例替代点数比例。",
+                                               "此处记录首次成功等待时间，参数只有 p。",
+                                               "几何测度的均匀性是识别重点。",
+                                               "英文标准写法是 geometric probability model。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "连续几何区域 等可能",
+                                                 "长度 面积 体积 比例",
+                                                 "首次成功 等待时间 p",
+                                                 "几何测度 均匀性",
+                                                 "geometric probability model"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "条件概率",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "已知某事件发生后，可能性数值在缩小后的范围内重新计算。",
+                                               "公式形如 P(A|B)=P(A∩B)/P(B)，分母要求为正。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "竖线右侧给出新的背景集合。",
+                                               "英文标准写法是 conditional probability。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "已知事件 缩小范围 重新计算",
+                                                 "P(A|B)=P(A∩B)/P(B) P(B)>0",
+                                                 "支撑集 赋值规则 运算",
+                                                 "竖线右侧 背景集合",
+                                                 "conditional probability"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "全概率公式",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "一组互不重叠且覆盖全集的事件能分割目标事件的发生途径。",
+                                               "目标数值写成各块条件数值与块自身数值的乘积之和。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "看见完备划分和分情况求和时可锁定它。",
+                                               "英文标准写法是 law of total probability。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "互不重叠 覆盖全集 发生途径",
+                                                 "条件数值 块数值 乘积求和",
+                                                 "支撑集 赋值规则 运算",
+                                                 "完备划分 分情况求和",
+                                                 "law of total probability"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "贝叶斯公式",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "由原因到结果的条件信息可反向更新为由结果到原因的判断。",
+                                               "分子是先验数值乘似然项，分母负责归一化。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "后验、先验和似然三者同时出现。",
+                                               "英文标准写法是 bayes formula。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "结果到原因 反向更新",
+                                                 "先验数值 似然项 归一化",
+                                                 "支撑集 赋值规则 运算",
+                                                 "后验 先验 似然",
+                                                 "bayes formula"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "独立事件",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "一个事件发生不改变另一个事件的可能性数值。",
+                                               "判据可写 P(A∩B)=P(A)P(B)，也可写 P(A|B)=P(A)。",
+                                               "这里强调事件对或事件族，常先检验 P(A∩B)=P(A)P(B)。",
+                                               "联合数值等于边缘数值乘积是核心。",
+                                               "英文标准写法是 independent events。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "一个事件 不改变另一个事件",
+                                                 "P(A∩B)=P(A)P(B) P(A|B)=P(A)",
+                                                 "事件对 事件族 P(A∩B)=P(A)P(B)",
+                                                 "联合数值 边缘乘积",
+                                                 "independent events"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "随机变量",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "试行结果通过一个可测映射转成实数。",
+                                               "事件 {X≤x} 必须能被赋予数值，才能定义累积规律。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "从 Ω 到 R 的可测函数是严格表述。",
+                                               "英文标准写法是 random variable。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "试行结果 可测映射 实数",
+                                                 "{X≤x} 可赋值 累积规律",
+                                                 "支撑集 赋值规则 运算",
+                                                 "Ω 到 R 可测函数",
+                                                 "random variable"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "离散型随机变量",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "数值映射的取值落在有限或可列集合中。",
+                                               "每个取值对应一个点质量，所有点质量求和为 1。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "取值可列和质量函数是核心标志。",
+                                               "英文标准写法是 discrete random variable。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "有限取值 可列取值 数值映射",
+                                                 "点质量 总和1",
+                                                 "支撑集 赋值规则 运算",
+                                                 "可列取值 质量函数",
+                                                 "discrete random variable"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "连续型随机变量",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "数值映射的取值铺在区间或连续区域上。",
+                                               "单点数值多为 0，区间数值由密度积分给出。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "积分而非逐点求和是识别关键。",
+                                               "英文标准写法是 continuous random variable。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "区间 连续区域 数值映射",
+                                                 "单点0 区间数值 密度积分",
+                                                 "支撑集 赋值规则 运算",
+                                                 "积分 逐点求和区别",
+                                                 "continuous random variable"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "分布函数",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "每个实数 x 对应事件 {X≤x} 的累积数值。",
+                                               "图像单调不减、右连续，负无穷极限为 0，正无穷极限为 1。",
+                                               "此处以一般 F(x)=P(X≤x) 为定义入口。",
+                                               "F(x)=P(X≤x) 是核心公式。",
+                                               "英文标准写法是 distribution function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "{X≤x} 累积数值",
+                                                 "单调不减 右连续 两端极限0和1",
+                                                 "一般F(x) P(X≤x)",
+                                                 "F(x)=P(X≤x)",
+                                                 "distribution function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "概率质量函数",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "可列取值的每个点都被分配一个非负质量。",
+                                               "所有点质量求和为 1，事件数值由相关点质量相加。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "只在离散取值上直接给数值。",
+                                               "英文标准写法是 probability mass function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "可列取值 点 非负质量",
+                                                 "点质量求和1 事件相加",
+                                                 "支撑集 赋值规则 运算",
+                                                 "离散取值 直接赋值",
+                                                 "probability mass function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "概率密度函数",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "连续取值区域上的非负函数描述局部质量分布。",
+                                               "对区域积分得到事件数值，整体积分为 1。",
+                                               "一维连续情形中，P(a<X<b)=∫_a^b f(x)dx。",
+                                               "密度本身可大于 1，面积或体积积分才是数值。",
+                                               "英文标准写法是 probability density function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "连续区域 非负函数 局部质量",
+                                                 "区域积分 事件数值 总积分1",
+                                                 "一维 P(a<X<b)=∫f",
+                                                 "密度可大于1 积分才是数值",
+                                                 "probability density function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "数学期望",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "随机取值按其发生权重求平均，得到长期中心水平。",
+                                               "离散情形为 Σ xp(x)，连续情形为 ∫x f(x)dx。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "它是分布的一阶加权平均。",
+                                               "英文标准写法是 mathematical expectation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "取值 权重 平均 中心水平",
+                                                 "Σ xp(x) ∫x f(x)dx",
+                                                 "支撑集 赋值规则 运算",
+                                                 "一阶 加权平均",
+                                                 "mathematical expectation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "方差",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "随机取值围绕中心水平的平方偏离被取平均。",
+                                               "常用公式为 E(X-EX)^2，也等于 E(X^2)-(EX)^2。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "它度量二阶离散程度。",
+                                               "英文标准写法是 variance。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "中心水平 平方偏离 平均",
+                                                 "E(X-EX)^2 E(X^2)-(EX)^2",
+                                                 "支撑集 赋值规则 运算",
+                                                 "二阶离散程度",
+                                                 "variance"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "标准差",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "二阶离散程度开平方后回到原变量量纲。",
+                                               "常记为 σ 或 s，等于方差的正平方根。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "同量纲离散尺度是判断重点。",
+                                               "英文标准写法是 standard deviation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "二阶离散程度 开平方 原量纲",
+                                                 "σ s 正平方根",
+                                                 "支撑集 赋值规则 运算",
+                                                 "同量纲 离散尺度",
+                                                 "standard deviation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "协方差",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "两个随机量相对各自中心的同向或反向波动被取平均。",
+                                               "公式为 E[(X-EX)(Y-EY)]。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "它是相关系数的未标准化版本。",
+                                               "英文标准写法是 covariance。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "两个随机量 中心偏离 同向反向",
+                                                 "E[(X-EX)(Y-EY)]",
+                                                 "支撑集 赋值规则 运算",
+                                                 "未标准化 线性关联",
+                                                 "covariance"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "相关系数",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "线性关联被标准化到 -1 到 1 之间。",
+                                               "公式为 Cov(X,Y)/(σ_X σ_Y)。",
+                                               "这里是标准化后的两变量线性关联数。",
+                                               "无量纲和标准化是核心。",
+                                               "英文标准写法是 correlation coefficient。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "线性关联 -1到1",
+                                                 "Cov(X,Y)/(σ_X σ_Y)",
+                                                 "标准化 两变量线性关联",
+                                                 "无量纲 标准化",
+                                                 "correlation coefficient"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "矩",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "分布信息被压缩进幂次平均或函数变换中。",
+                                               "一阶、二阶或更高阶量可描述中心、离散和尾部形状。",
+                                               "这里指 E(X^k) 或中心化后的 k 阶幂次平均。",
+                                               "变换、求导和分布刻画联系紧密。",
+                                               "英文标准写法是 moment。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "分布信息 幂次平均 函数变换",
+                                                 "一阶 二阶 高阶 中心 离散 尾部",
+                                                 "E(X^k) k阶幂次平均",
+                                                 "变换 求导 分布刻画",
+                                                 "moment"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "特征函数",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "分布信息被压缩进幂次平均或函数变换中。",
+                                               "一阶、二阶或更高阶量可描述中心、离散和尾部形状。",
+                                               "这里使用 E exp(itX)，总存在并具有唯一决定分布的作用。",
+                                               "变换、求导和分布刻画联系紧密。",
+                                               "英文标准写法是 characteristic function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "分布信息 幂次平均 函数变换",
+                                                 "一阶 二阶 高阶 中心 离散 尾部",
+                                                 "E exp(itX) 总存在 唯一决定分布",
+                                                 "变换 求导 分布刻画",
+                                                 "characteristic function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "伯努利分布",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "一次二值试行产生 0 或 1 两种取值。",
+                                               "参数 p 给出取 1 的数值，取 0 的数值为 1-p。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "支撑集 {0,1} 和单个成功参数锁定模型。",
+                                               "英文标准写法是 bernoulli distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "二值试行 0 1",
+                                                 "P(X=1)=p P(X=0)=1-p",
+                                                 "支撑集 赋值规则 运算",
+                                                 "支撑集{0,1} 成功参数",
+                                                 "bernoulli distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "二项分布",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "固定次数的独立二值试行中记录成功次数。",
+                                               "质量函数含组合数 C(n,k)p^k(1-p)^(n-k)。",
+                                               "此处记录固定 n 次试行中的成功次数。",
+                                               "次数 n 与成功参数 p 共同锁定模型。",
+                                               "英文标准写法是 binomial distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "固定次数 独立二值 成功次数",
+                                                 "C(n,k)p^k(1-p)^(n-k)",
+                                                 "固定n次 成功次数",
+                                                 "n p 参数",
+                                                 "binomial distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "几何分布",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "独立二值试行一直进行到首次成功。",
+                                               "质量函数常写 (1-p)^(k-1)p 或 (1-p)^k p，取决于计数起点。",
+                                               "此处记录首次成功等待时间，参数只有 p。",
+                                               "首次成功等待时间是核心。",
+                                               "英文标准写法是 geometric distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "独立二值 首次成功",
+                                                 "(1-p)^(k-1)p 计数起点",
+                                                 "首次成功 等待时间 p",
+                                                 "等待时间",
+                                                 "geometric distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "泊松分布",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "单位区间内稀有独立到达的次数可用它建模。",
+                                               "质量函数为 e^(-λ)λ^k/k!。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "计数、稀有性和参数 λ 同时出现。",
+                                               "英文标准写法是 poisson distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "稀有独立到达 次数",
+                                                 "e^(-λ)λ^k/k!",
+                                                 "支撑集 赋值规则 运算",
+                                                 "计数 稀有 λ",
+                                                 "poisson distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "均匀分布",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "支撑区间内各位置具有相同密度。",
+                                               "在 [a,b] 上密度为 1/(b-a)。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "平坦密度和有限支撑是核心。",
+                                               "英文标准写法是 uniform distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "支撑区间 相同密度",
+                                                 "[a,b] 1/(b-a)",
+                                                 "支撑集 赋值规则 运算",
+                                                 "平坦密度 有限支撑",
+                                                 "uniform distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "指数分布",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "连续等待时间模型常由恒定风险率给出。",
+                                               "密度为 λe^(-λx)，x≥0。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "非负支撑和恒定风险率锁定模型。",
+                                               "英文标准写法是 exponential distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "连续等待时间 恒定风险率",
+                                                 "λe^(-λx) x≥0",
+                                                 "支撑集 赋值规则 运算",
+                                                 "非负支撑 恒定风险率",
+                                                 "exponential distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "正态分布",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "许多小扰动叠加后的连续模型呈钟形对称曲线。",
+                                               "密度含 exp[-(x-μ)^2/(2σ^2)]。",
+                                               "一维情形由 μ 和 σ^2 给出钟形密度。",
+                                               "参数 μ 与 σ^2 决定位置和尺度。",
+                                               "英文标准写法是 normal distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "小扰动叠加 钟形 对称",
+                                                 "exp[-(x-μ)^2/(2σ^2)]",
+                                                 "一维 μ σ^2 钟形密度",
+                                                 "μ σ^2 位置 尺度",
+                                                 "normal distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "多维随机变量",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "同一次试行产生多个坐标值，形成向量型随机输出。",
+                                               "联合规律刻画全部坐标，边缘规律只看其中部分坐标。",
+                                               "这里强调 n 维随机输出及联合分布。",
+                                               "从 Ω 到 R^n 的可测映射是标准表述。",
+                                               "英文标准写法是 multidimensional random variable。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "同一次试行 多个坐标 向量输出",
+                                                 "联合规律 全部坐标 边缘规律",
+                                                 "n维输出 联合分布",
+                                                 "Ω 到 R^n 可测映射",
+                                                 "multidimensional random variable"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "联合分布",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "多个随机坐标的取值关系由整体规律、单坐标规律或给定后规律描述。",
+                                               "整体规律可经求和或积分得到部分坐标规律。",
+                                               "整体规律保留全部坐标之间的依赖结构。",
+                                               "区分整体、投影和给定后三种视角。",
+                                               "英文标准写法是 joint distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "多随机坐标 取值关系",
+                                                 "求和 积分 部分坐标",
+                                                 "全部坐标 依赖结构",
+                                                 "整体 投影 给定后",
+                                                 "joint distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "边缘分布",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "多个随机坐标的取值关系由整体规律、单坐标规律或给定后规律描述。",
+                                               "整体规律可经求和或积分得到部分坐标规律。",
+                                               "对其余坐标求和或积分后得到投影规律。",
+                                               "区分整体、投影和给定后三种视角。",
+                                               "英文标准写法是 marginal distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "多随机坐标 取值关系",
+                                                 "求和 积分 部分坐标",
+                                                 "其余坐标 求和积分 投影规律",
+                                                 "整体 投影 给定后",
+                                                 "marginal distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "条件分布",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "多个随机坐标的取值关系由整体规律、单坐标规律或给定后规律描述。",
+                                               "整体规律可经求和或积分得到部分坐标规律。",
+                                               "固定部分坐标后，剩余坐标规律重新归一化。",
+                                               "区分整体、投影和给定后三种视角。",
+                                               "英文标准写法是 conditional distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "多随机坐标 取值关系",
+                                                 "求和 积分 部分坐标",
+                                                 "固定部分坐标 重新归一化",
+                                                 "整体 投影 给定后",
+                                                 "conditional distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "大数定律",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "大量独立同分布观测的平均值靠近中心水平。",
+                                               "弱形式以可能性数值描述偏离变小，强形式强调几乎每条路径成立。",
+                                               "总称覆盖弱形式和强形式，核心是平均稳定。",
+                                               "平均稳定性是核心。",
+                                               "英文标准写法是 law of large numbers。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "大量 独立同分布 平均值 中心水平",
+                                                 "弱形式 偏离数值变小 强形式 路径成立",
+                                                 "总称 弱形式 强形式 平均稳定",
+                                                 "平均稳定性",
+                                                 "law of large numbers"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "中心极限定理",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "许多小项相加并标准化后出现正态极限。",
+                                               "中心化、除以标准差和分布极限是三个固定动作。",
+                                               "中心化并除以标准差后，分布极限为标准正态。",
+                                               "标准化和正态极限锁定主题。",
+                                               "英文标准写法是 central limit theorem。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "许多小项 相加 标准化 正态极限",
+                                                 "中心化 除以标准差 分布极限",
+                                                 "中心化 标准差 标准正态极限",
+                                                 "标准化 正态极限",
+                                                 "central limit theorem"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "随机过程",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "随机量按时间或指标排列成一族，而不是只有单个取值。",
+                                               "有限维规律、增量结构和时间平移性质决定模型类别。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "看指标、路径和增量三层结构。",
+                                               "英文标准写法是 stochastic process。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "时间指标 一族随机量",
+                                                 "有限维规律 增量结构 时间平移",
+                                                 "支撑集 赋值规则 运算",
+                                                 "指标 路径 增量",
+                                                 "stochastic process"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "马尔可夫链",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "状态随步数演化，下一步只看当前状态的信息。",
+                                               "转移数值排成矩阵后，可用矩阵乘法得到多步规律。",
+                                               "离散状态按步转移，无后效性给出核心结构。",
+                                               "无后效性和转移矩阵是核心。",
+                                               "英文标准写法是 markov chain。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "状态 步数 当前状态",
+                                                 "转移数值 矩阵 多步规律",
+                                                 "离散状态 按步转移 无后效性",
+                                                 "无后效性 转移矩阵",
+                                                 "markov chain"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "事件域",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "严格模型先规定哪些集合可被谈论，哪些函数和数值赋值合法。",
+                                               "σ 结构保证可数并、交和补操作后仍留在可讨论范围内。",
+                                               "这里强调事件集合族在并、交、补下封闭。",
+                                               "可测性与可列运算封闭是核心。",
+                                               "英文标准写法是 event field。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "可谈论集合 合法函数 数值赋值",
+                                                 "σ结构 可数并 交 补 封闭",
+                                                 "事件集合族 并交补封闭",
+                                                 "可测性 可列运算封闭",
+                                                 "event field"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "概率空间",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "严格模型先规定哪些集合可被谈论，哪些函数和数值赋值合法。",
+                                               "σ 结构保证可数并、交和补操作后仍留在可讨论范围内。",
+                                               "三元组 (Ω,F,P) 同时给出底层、事件族和赋值。",
+                                               "可测性与可列运算封闭是核心。",
+                                               "英文标准写法是 probability space。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "可谈论集合 合法函数 数值赋值",
+                                                 "σ结构 可数并 交 补 封闭",
+                                                 "(Ω,F,P) 底层 事件族 赋值",
+                                                 "可测性 可列运算封闭",
+                                                 "probability space"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "可测空间",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "严格模型先规定哪些集合可被谈论，哪些函数和数值赋值合法。",
+                                               "σ 结构保证可数并、交和补操作后仍留在可讨论范围内。",
+                                               "二元组 (Ω,F) 只有可测结构，尚未给数值赋值。",
+                                               "可测性与可列运算封闭是核心。",
+                                               "英文标准写法是 measurable space。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "可谈论集合 合法函数 数值赋值",
+                                                 "σ结构 可数并 交 补 封闭",
+                                                 "(Ω,F) 可测结构 无赋值",
+                                                 "可测性 可列运算封闭",
+                                                 "measurable space"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "可测函数",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "严格模型先规定哪些集合可被谈论，哪些函数和数值赋值合法。",
+                                               "σ 结构保证可数并、交和补操作后仍留在可讨论范围内。",
+                                               "原像保持可测，才能把分布从一个空间推到另一个空间。",
+                                               "可测性与可列运算封闭是核心。",
+                                               "英文标准写法是 measurable function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "可谈论集合 合法函数 数值赋值",
+                                                 "σ结构 可数并 交 补 封闭",
+                                                 "原像可测 分布推送",
+                                                 "可测性 可列运算封闭",
+                                                 "measurable function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "概率测度",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "严格模型先规定哪些集合可被谈论，哪些函数和数值赋值合法。",
+                                               "σ 结构保证可数并、交和补操作后仍留在可讨论范围内。",
+                                               "这是定义在事件族上的规范化测度，总质量为 1。",
+                                               "可测性与可列运算封闭是核心。",
+                                               "英文标准写法是 probability measure。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "可谈论集合 合法函数 数值赋值",
+                                                 "σ结构 可数并 交 补 封闭",
+                                                 "事件族 规范化测度 总质量1",
+                                                 "可测性 可列运算封闭",
+                                                 "probability measure"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "必然事件",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "结果全集中的某一类结果形成可赋值的集合。",
+                                               "并、交、差和补描述事件之间的逻辑关系。",
+                                               "具体判据是 A=Ω，赋值结果为 1。",
+                                               "判断时看集合关系，而不是看单个数值映射。",
+                                               "英文标准写法是 certain event。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "结果全集 可赋值集合",
+                                                 "并 交 差 补 逻辑关系",
+                                                 "A=Ω 数值1",
+                                                 "集合关系 单个结果区别",
+                                                 "certain event"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "不可能事件",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "结果全集中的某一类结果形成可赋值的集合。",
+                                               "并、交、差和补描述事件之间的逻辑关系。",
+                                               "具体判据是 A=空集，赋值结果为 0。",
+                                               "判断时看集合关系，而不是看单个数值映射。",
+                                               "英文标准写法是 impossible event。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "结果全集 可赋值集合",
+                                                 "并 交 差 补 逻辑关系",
+                                                 "A=空集 数值0",
+                                                 "集合关系 单个结果区别",
+                                                 "impossible event"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "互斥事件",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "结果全集中的某一类结果形成可赋值的集合。",
+                                               "并、交、差和补描述事件之间的逻辑关系。",
+                                               "具体判据是 A∩B=空集，两个事件不能同时发生。",
+                                               "判断时看集合关系，而不是看单个数值映射。",
+                                               "英文标准写法是 mutually exclusive events。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "结果全集 可赋值集合",
+                                                 "并 交 差 补 逻辑关系",
+                                                 "A∩B=空集 不能同时发生",
+                                                 "集合关系 单个结果区别",
+                                                 "mutually exclusive events"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "对立事件",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "结果全集中的某一类结果形成可赋值的集合。",
+                                               "并、交、差和补描述事件之间的逻辑关系。",
+                                               "具体判据是 A 与另一集合交为空、并为 Ω。",
+                                               "判断时看集合关系，而不是看单个数值映射。",
+                                               "英文标准写法是 complementary event。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "结果全集 可赋值集合",
+                                                 "并 交 差 补 逻辑关系",
+                                                 "交为空 并为Ω",
+                                                 "集合关系 单个结果区别",
+                                                 "complementary event"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "事件独立性",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "一个事件发生不改变另一个事件的可能性数值。",
+                                               "判据可写 P(A∩B)=P(A)P(B)，也可写 P(A|B)=P(A)。",
+                                               "这里强调性质本身，判据是任意子族交集都能乘积分解。",
+                                               "联合数值等于边缘数值乘积是核心。",
+                                               "英文标准写法是 independence of events。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "一个事件 不改变另一个事件",
+                                                 "P(A∩B)=P(A)P(B) P(A|B)=P(A)",
+                                                 "性质 任意子族 乘积分解",
+                                                 "联合数值 边缘乘积",
+                                                 "independence of events"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "条件独立",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "给定第三个条件后，两个事件或变量的关联被重新判断。",
+                                               "判据形如 P(A∩B|C)=P(A|C)P(B|C)。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "竖线右侧的条件不能省略。",
+                                               "英文标准写法是 conditional independence。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "给定第三条件 关联重判",
+                                                 "P(A∩B|C)=P(A|C)P(B|C)",
+                                                 "支撑集 赋值规则 运算",
+                                                 "条件不可省略",
+                                                 "conditional independence"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "随机向量",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "同一次试行产生多个坐标值，形成向量型随机输出。",
+                                               "联合规律刻画全部坐标，边缘规律只看其中部分坐标。",
+                                               "这里强调向量记号 X=(X1,...,Xn) 和坐标协方差。",
+                                               "从 Ω 到 R^n 的可测映射是标准表述。",
+                                               "英文标准写法是 random vector。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "同一次试行 多个坐标 向量输出",
+                                                 "联合规律 全部坐标 边缘规律",
+                                                 "X=(X1,...,Xn) 坐标协方差",
+                                                 "Ω 到 R^n 可测映射",
+                                                 "random vector"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "随机序列",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "该对象在随机模型中描述事件、取值规律、变换或极限关系。",
+                                               "符号标签 random sequence 对应特定定义，判别时先看支撑、公式和运算对象。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "定义式和典型公式能把它与邻近概念分开。",
+                                               "英文标准写法是 random sequence。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "随机模型 事件 取值规律 变换 极限",
+                                                 "random sequence 支撑 公式 运算对象",
+                                                 "支撑集 赋值规则 运算",
+                                                 "定义式 典型公式 邻近概念",
+                                                 "random sequence"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "分布律",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "该对象在随机模型中描述事件、取值规律、变换或极限关系。",
+                                               "符号标签 probability distribution 对应特定定义，判别时先看支撑、公式和运算对象。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "定义式和典型公式能把它与邻近概念分开。",
+                                               "英文标准写法是 probability distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "随机模型 事件 取值规律 变换 极限",
+                                                 "probability distribution 支撑 公式 运算对象",
+                                                 "支撑集 赋值规则 运算",
+                                                 "定义式 典型公式 邻近概念",
+                                                 "probability distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "生存函数",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "它记录随机寿命超过给定时刻的数值。",
+                                               "公式为 S(x)=P(X>x)，与累积规律常满足 S=1-F。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "右尾数值是核心。",
+                                               "英文标准写法是 survival function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "寿命 超过给定时刻",
+                                                 "S(x)=P(X>x) S=1-F",
+                                                 "支撑集 赋值规则 运算",
+                                                 "右尾数值",
+                                                 "survival function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "危险率函数",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "给定已经存活到某时刻后的瞬时失效率被量化。",
+                                               "连续情形常写 h(x)=f(x)/S(x)。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "条件瞬时风险是核心。",
+                                               "英文标准写法是 hazard function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "已存活 瞬时失效率",
+                                                 "h(x)=f(x)/S(x)",
+                                                 "支撑集 赋值规则 运算",
+                                                 "条件瞬时风险",
+                                                 "hazard function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "分位数",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "分布的位置特征可由尾部面积、中央切分或最高点描述。",
+                                               "分位点满足 F(x) 达到指定水平；中央位置对应 1/2；最高频取值对应峰顶。",
+                                               "指定水平 α 后寻找满足 F(x)≥α 的位置点。",
+                                               "位置描述而非整体规律是核心。",
+                                               "英文标准写法是 quantile。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "位置特征 尾部面积 中央切分 最高点",
+                                                 "F(x) 指定水平 1/2 峰顶",
+                                                 "α F(x)≥α 位置点",
+                                                 "位置指标",
+                                                 "quantile"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "中位数",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "分布的位置特征可由尾部面积、中央切分或最高点描述。",
+                                               "分位点满足 F(x) 达到指定水平；中央位置对应 1/2；最高频取值对应峰顶。",
+                                               "它把分布两侧数值大致各分成一半。",
+                                               "位置描述而非整体规律是核心。",
+                                               "英文标准写法是 median。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "位置特征 尾部面积 中央切分 最高点",
+                                                 "F(x) 指定水平 1/2 峰顶",
+                                                 "两侧数值 各一半",
+                                                 "位置指标",
+                                                 "median"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "众数",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "分布的位置特征可由尾部面积、中央切分或最高点描述。",
+                                               "分位点满足 F(x) 达到指定水平；中央位置对应 1/2；最高频取值对应峰顶。",
+                                               "它对应质量函数或密度函数取得最大的位置。",
+                                               "位置描述而非整体规律是核心。",
+                                               "英文标准写法是 mode。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "位置特征 尾部面积 中央切分 最高点",
+                                                 "F(x) 指定水平 1/2 峰顶",
+                                                 "质量密度 最大位置",
+                                                 "位置指标",
+                                                 "mode"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "累积分布函数",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "每个实数 x 对应事件 {X≤x} 的累积数值。",
+                                               "图像单调不减、右连续，负无穷极限为 0，正无穷极限为 1。",
+                                               "此处强调累积到 x 的概率曲线，常与密度或质量函数互相转换。",
+                                               "F(x)=P(X≤x) 是核心公式。",
+                                               "英文标准写法是 cumulative distribution function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "{X≤x} 累积数值",
+                                                 "单调不减 右连续 两端极限0和1",
+                                                 "累积到x 曲线 密度质量转换",
+                                                 "F(x)=P(X≤x)",
+                                                 "cumulative distribution function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "矩母函数",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "分布信息被压缩进幂次平均或函数变换中。",
+                                               "一阶、二阶或更高阶量可描述中心、离散和尾部形状。",
+                                               "这里使用 E exp(tX)，在 0 附近存在时可逐阶求导。",
+                                               "变换、求导和分布刻画联系紧密。",
+                                               "英文标准写法是 moment generating function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "分布信息 幂次平均 函数变换",
+                                                 "一阶 二阶 高阶 中心 离散 尾部",
+                                                 "E exp(tX) 0附近 求导",
+                                                 "变换 求导 分布刻画",
+                                                 "moment generating function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "概率母函数",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "分布信息被压缩进幂次平均或函数变换中。",
+                                               "一阶、二阶或更高阶量可描述中心、离散和尾部形状。",
+                                               "这里使用 E(s^X)，主要服务于非负整数取值。",
+                                               "变换、求导和分布刻画联系紧密。",
+                                               "英文标准写法是 probability generating function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "分布信息 幂次平均 函数变换",
+                                                 "一阶 二阶 高阶 中心 离散 尾部",
+                                                 "E(s^X) 非负整数取值",
+                                                 "变换 求导 分布刻画",
+                                                 "probability generating function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "拉普拉斯变换",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "分布信息被压缩进幂次平均或函数变换中。",
+                                               "一阶、二阶或更高阶量可描述中心、离散和尾部形状。",
+                                               "这里使用 E exp(-sX) 或密度的拉普拉斯积分。",
+                                               "变换、求导和分布刻画联系紧密。",
+                                               "英文标准写法是 laplace transform。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "分布信息 幂次平均 函数变换",
+                                                 "一阶 二阶 高阶 中心 离散 尾部",
+                                                 "E exp(-sX) 拉普拉斯积分",
+                                                 "变换 求导 分布刻画",
+                                                 "laplace transform"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "切比雪夫不等式",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "该对象在随机模型中描述事件、取值规律、变换或极限关系。",
+                                               "符号标签 chebyshev inequality 对应特定定义，判别时先看支撑、公式和运算对象。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "定义式和典型公式能把它与邻近概念分开。",
+                                               "英文标准写法是 chebyshev inequality。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "随机模型 事件 取值规律 变换 极限",
+                                                 "chebyshev inequality 支撑 公式 运算对象",
+                                                 "支撑集 赋值规则 运算",
+                                                 "定义式 典型公式 邻近概念",
+                                                 "chebyshev inequality"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "马尔可夫不等式",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "该对象在随机模型中描述事件、取值规律、变换或极限关系。",
+                                               "符号标签 markov inequality 对应特定定义，判别时先看支撑、公式和运算对象。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "定义式和典型公式能把它与邻近概念分开。",
+                                               "英文标准写法是 markov inequality。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "随机模型 事件 取值规律 变换 极限",
+                                                 "markov inequality 支撑 公式 运算对象",
+                                                 "支撑集 赋值规则 运算",
+                                                 "定义式 典型公式 邻近概念",
+                                                 "markov inequality"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "詹森不等式",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "该对象在随机模型中描述事件、取值规律、变换或极限关系。",
+                                               "符号标签 jensen inequality 对应特定定义，判别时先看支撑、公式和运算对象。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "定义式和典型公式能把它与邻近概念分开。",
+                                               "英文标准写法是 jensen inequality。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "随机模型 事件 取值规律 变换 极限",
+                                                 "jensen inequality 支撑 公式 运算对象",
+                                                 "支撑集 赋值规则 运算",
+                                                 "定义式 典型公式 邻近概念",
+                                                 "jensen inequality"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "伯努利试验",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "该对象在随机模型中描述事件、取值规律、变换或极限关系。",
+                                               "符号标签 bernoulli trial 对应特定定义，判别时先看支撑、公式和运算对象。",
+                                               "一次试行只有成功和失败两类结果，并带固定成功参数。",
+                                               "定义式和典型公式能把它与邻近概念分开。",
+                                               "英文标准写法是 bernoulli trial。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "随机模型 事件 取值规律 变换 极限",
+                                                 "bernoulli trial 支撑 公式 运算对象",
+                                                 "成功 失败 固定参数",
+                                                 "定义式 典型公式 邻近概念",
+                                                 "bernoulli trial"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "超几何分布",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "独立二值试行一直进行到首次成功。",
+                                               "质量函数常写 (1-p)^(k-1)p 或 (1-p)^k p，取决于计数起点。",
+                                               "此处为不放回抽取，质量函数由组合数比值给出。",
+                                               "首次成功等待时间是核心。",
+                                               "英文标准写法是 hypergeometric distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "独立二值 首次成功",
+                                                 "(1-p)^(k-1)p 计数起点",
+                                                 "不放回 组合数比值",
+                                                 "等待时间",
+                                                 "hypergeometric distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "负二项分布",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "固定次数的独立二值试行中记录成功次数。",
+                                               "质量函数含组合数 C(n,k)p^k(1-p)^(n-k)。",
+                                               "此处记录第 r 次成功前的失败次数或等待长度。",
+                                               "次数 n 与成功参数 p 共同锁定模型。",
+                                               "英文标准写法是 negative binomial distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "固定次数 独立二值 成功次数",
+                                                 "C(n,k)p^k(1-p)^(n-k)",
+                                                 "第r次成功前 失败次数",
+                                                 "n p 参数",
+                                                 "negative binomial distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "伽马分布",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "若干指数等待时间之和形成非负连续模型。",
+                                               "密度含 x^(α-1)e^(-λx) 与 Gamma 函数归一化。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "非负支撑和 Gamma 函数同时出现。",
+                                               "英文标准写法是 gamma distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "指数等待时间之和 非负连续",
+                                                 "x^(α-1)e^(-λx) Gamma归一化",
+                                                 "支撑集 赋值规则 运算",
+                                                 "非负支撑 Gamma函数",
+                                                 "gamma distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "贝塔分布",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "取值限制在 0 到 1 区间内，常描述比例型随机量。",
+                                               "密度与 x^(α-1)(1-x)^(β-1) 成正比。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "单位区间支撑和两个形状参数是核心。",
+                                               "英文标准写法是 beta distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "0到1 比例型随机量",
+                                                 "x^(α-1)(1-x)^(β-1)",
+                                                 "支撑集 赋值规则 运算",
+                                                 "单位区间 支撑",
+                                                 "beta distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "卡方分布",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "若干独立标准正态平方和形成非负模型。",
+                                               "自由度等于平方项个数。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "平方和与自由度是核心。",
+                                               "英文标准写法是 chi square distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "独立标准正态 平方和 非负",
+                                                 "自由度 平方项个数",
+                                                 "支撑集 赋值规则 运算",
+                                                 "平方和 自由度",
+                                                 "chi square distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "t分布",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "标准正态量除以独立卡方量缩放后的平方根。",
+                                               "自由度控制尾部厚度，自由度增大后接近标准正态。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "厚尾和自由度是核心。",
+                                               "英文标准写法是 t distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "标准正态 独立卡方 缩放",
+                                                 "自由度 尾部厚度 接近标准正态",
+                                                 "支撑集 赋值规则 运算",
+                                                 "厚尾 自由度",
+                                                 "t distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "柯西分布",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "对称钟形但尾部极厚，均值和二阶离散程度不存在。",
+                                               "标准密度为 1/[π(1+x^2)]。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "厚尾到没有期望是核心。",
+                                               "英文标准写法是 cauchy distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "对称 厚尾 均值不存在",
+                                                 "1/[π(1+x^2)]",
+                                                 "支撑集 赋值规则 运算",
+                                                 "极厚尾 无期望",
+                                                 "cauchy distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "多项分布",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "固定次数试验中每次落入多个类别之一，并记录各类计数。",
+                                               "质量函数含 n!/(k1!...km!) 与 ∏p_i^k_i。",
+                                               "定义式由支撑集、赋值规则和相应运算共同确定。",
+                                               "多类别计数向量是核心。",
+                                               "英文标准写法是 multinomial distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "固定次数 多类别 各类计数",
+                                                 "n!/(k1!...km!) ∏p_i^k_i",
+                                                 "支撑集 赋值规则 运算",
+                                                 "多类别 计数向量",
+                                                 "multinomial distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "二维正态分布",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "许多小扰动叠加后的连续模型呈钟形对称曲线。",
+                                               "密度含 exp[-(x-μ)^2/(2σ^2)]。",
+                                               "二维情形还需要相关参数 ρ，并形成椭圆等高线。",
+                                               "参数 μ 与 σ^2 决定位置和尺度。",
+                                               "英文标准写法是 bivariate normal distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "小扰动叠加 钟形 对称",
+                                                 "exp[-(x-μ)^2/(2σ^2)]",
+                                                 "二维 ρ 椭圆等高线",
+                                                 "μ σ^2 位置 尺度",
+                                                 "bivariate normal distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "联合密度函数",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "连续取值区域上的非负函数描述局部质量分布。",
+                                               "对区域积分得到事件数值，整体积分为 1。",
+                                               "多坐标情形中，对平面或空间区域积分得到数值。",
+                                               "密度本身可大于 1，面积或体积积分才是数值。",
+                                               "英文标准写法是 joint density function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "连续区域 非负函数 局部质量",
+                                                 "区域积分 事件数值 总积分1",
+                                                 "多坐标 区域积分",
+                                                 "密度可大于1 积分才是数值",
+                                                 "joint density function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "边缘密度函数",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "连续取值区域上的非负函数描述局部质量分布。",
+                                               "对区域积分得到事件数值，整体积分为 1。",
+                                               "从联合密度中对其余变量积分，得到单个坐标密度。",
+                                               "密度本身可大于 1，面积或体积积分才是数值。",
+                                               "英文标准写法是 marginal density function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "连续区域 非负函数 局部质量",
+                                                 "区域积分 事件数值 总积分1",
+                                                 "联合密度 对其余变量积分",
+                                                 "密度可大于1 积分才是数值",
+                                                 "marginal density function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "条件密度函数",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "连续取值区域上的非负函数描述局部质量分布。",
+                                               "对区域积分得到事件数值，整体积分为 1。",
+                                               "给定条件下用联合密度除以边缘密度完成归一化。",
+                                               "密度本身可大于 1，面积或体积积分才是数值。",
+                                               "英文标准写法是 conditional density function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "连续区域 非负函数 局部质量",
+                                                 "区域积分 事件数值 总积分1",
+                                                 "联合密度 除以边缘密度 归一化",
+                                                 "密度可大于1 积分才是数值",
+                                                 "conditional density function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "独立随机变量",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "多个随机量之间的关系可由联合规律是否分解以及边缘规律是否相同判断。",
+                                               "独立给出乘积分解，同族给出相同边缘函数。",
+                                               "只强调联合规律分解，不要求各边缘相同。",
+                                               "乘积分解与同一分布形式是核心。",
+                                               "英文标准写法是 independent random variables。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "多个随机量 联合规律 边缘规律",
+                                                 "乘积分解 相同边缘函数",
+                                                 "联合规律分解 边缘可不同",
+                                                 "乘积分解 同一分布形式",
+                                                 "independent random variables"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "同分布",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "多个随机量之间的关系可由联合规律是否分解以及边缘规律是否相同判断。",
+                                               "独立给出乘积分解，同族给出相同边缘函数。",
+                                               "这里只要求各随机量具有相同边缘分布，不要求相互独立。",
+                                               "乘积分解与同一分布形式是核心。",
+                                               "英文标准写法是 identically distributed。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "多个随机量 联合规律 边缘规律",
+                                                 "乘积分解 相同边缘函数",
+                                                 "相同边缘分布 不要求独立",
+                                                 "乘积分解 同一分布形式",
+                                                 "identically distributed"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "独立同分布",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "多个随机量之间的关系可由联合规律是否分解以及边缘规律是否相同判断。",
+                                               "独立给出乘积分解，同族给出相同边缘函数。",
+                                               "这里同时要求相互独立和相同边缘分布。",
+                                               "乘积分解与同一分布形式是核心。",
+                                               "英文标准写法是 independent and identically distributed。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "多个随机量 联合规律 边缘规律",
+                                                 "乘积分解 相同边缘函数",
+                                                 "相互独立 相同边缘分布",
+                                                 "乘积分解 同一分布形式",
+                                                 "independent and identically distributed"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "依概率收敛",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "随机量序列靠近目标的方式不止一种。",
+                                               "可比较偏离事件数值、几乎处处路径、分布函数极限或二阶平均误差。",
+                                               "任意 ε>0 下，偏离超过 ε 的概率趋于 0。",
+                                               "关键在于极限符号外侧放的是 P、路径、F 还是 E。",
+                                               "英文标准写法是 convergence in probability。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "随机量序列 靠近目标",
+                                                 "偏离事件 路径 分布函数 二阶平均误差",
+                                                 "ε 偏离概率趋0",
+                                                 "P 路径 F E 极限",
+                                                 "convergence in probability"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "几乎处处收敛",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "随机量序列靠近目标的方式不止一种。",
+                                               "可比较偏离事件数值、几乎处处路径、分布函数极限或二阶平均误差。",
+                                               "除零测集外，每条样本路径都逐点趋近目标。",
+                                               "关键在于极限符号外侧放的是 P、路径、F 还是 E。",
+                                               "英文标准写法是 almost sure convergence。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "随机量序列 靠近目标",
+                                                 "偏离事件 路径 分布函数 二阶平均误差",
+                                                 "零测集外 路径逐点",
+                                                 "P 路径 F E 极限",
+                                                 "almost sure convergence"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "依分布收敛",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "随机量序列靠近目标的方式不止一种。",
+                                               "可比较偏离事件数值、几乎处处路径、分布函数极限或二阶平均误差。",
+                                               "连续点处的分布函数值逐点趋于极限分布。",
+                                               "关键在于极限符号外侧放的是 P、路径、F 还是 E。",
+                                               "英文标准写法是 convergence in distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "随机量序列 靠近目标",
+                                                 "偏离事件 路径 分布函数 二阶平均误差",
+                                                 "连续点 分布函数 极限",
+                                                 "P 路径 F E 极限",
+                                                 "convergence in distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "均方收敛",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "随机量序列靠近目标的方式不止一种。",
+                                               "可比较偏离事件数值、几乎处处路径、分布函数极限或二阶平均误差。",
+                                               "二阶平均误差 E[(X_n-X)^2] 趋于 0。",
+                                               "关键在于极限符号外侧放的是 P、路径、F 还是 E。",
+                                               "英文标准写法是 mean square convergence。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "随机量序列 靠近目标",
+                                                 "偏离事件 路径 分布函数 二阶平均误差",
+                                                 "E[(X_n-X)^2] 趋0",
+                                                 "P 路径 F E 极限",
+                                                 "mean square convergence"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "弱大数定律",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "大量独立同分布观测的平均值靠近中心水平。",
+                                               "弱形式以可能性数值描述偏离变小，强形式强调几乎每条路径成立。",
+                                               "偏离样本平均的事件数值趋于 0，是弱形式。",
+                                               "平均稳定性是核心。",
+                                               "英文标准写法是 weak law of large numbers。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "大量 独立同分布 平均值 中心水平",
+                                                 "弱形式 偏离数值变小 强形式 路径成立",
+                                                 "偏离事件数值趋0 弱形式",
+                                                 "平均稳定性",
+                                                 "weak law of large numbers"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "强大数定律",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "大量独立同分布观测的平均值靠近中心水平。",
+                                               "弱形式以可能性数值描述偏离变小，强形式强调几乎每条路径成立。",
+                                               "样本平均沿几乎每条路径趋向中心水平，是强形式。",
+                                               "平均稳定性是核心。",
+                                               "英文标准写法是 strong law of large numbers。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "大量 独立同分布 平均值 中心水平",
+                                                 "弱形式 偏离数值变小 强形式 路径成立",
+                                                 "路径趋向 强形式",
+                                                 "平均稳定性",
+                                                 "strong law of large numbers"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "林德伯格条件",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "许多小项相加并标准化后出现正态极限。",
+                                               "中心化、除以标准差和分布极限是三个固定动作。",
+                                               "它要求单个大项对标准化和的贡献消失。",
+                                               "标准化和正态极限锁定主题。",
+                                               "英文标准写法是 lindeberg condition。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "许多小项 相加 标准化 正态极限",
+                                                 "中心化 除以标准差 分布极限",
+                                                 "单个大项 贡献消失",
+                                                 "标准化 正态极限",
+                                                 "lindeberg condition"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "泊松过程",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "随机量按时间或指标排列成一族，而不是只有单个取值。",
+                                               "有限维规律、增量结构和时间平移性质决定模型类别。",
+                                               "计数过程具有平稳独立增量，增量服从泊松模型。",
+                                               "看指标、路径和增量三层结构。",
+                                               "英文标准写法是 poisson process。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "时间指标 一族随机量",
+                                                 "有限维规律 增量结构 时间平移",
+                                                 "计数 平稳独立增量 泊松",
+                                                 "指标 路径 增量",
+                                                 "poisson process"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "更新过程",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "随机量按时间或指标排列成一族，而不是只有单个取值。",
+                                               "有限维规律、增量结构和时间平移性质决定模型类别。",
+                                               "到达间隔独立同分布，到达时刻由间隔累加。",
+                                               "看指标、路径和增量三层结构。",
+                                               "英文标准写法是 renewal process。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "时间指标 一族随机量",
+                                                 "有限维规律 增量结构 时间平移",
+                                                 "间隔独立同分布 到达时刻累加",
+                                                 "指标 路径 增量",
+                                                 "renewal process"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "布朗运动",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "随机量按时间或指标排列成一族，而不是只有单个取值。",
+                                               "有限维规律、增量结构和时间平移性质决定模型类别。",
+                                               "连续路径、独立正态增量和方差随时间线性增长同时出现。",
+                                               "看指标、路径和增量三层结构。",
+                                               "英文标准写法是 brownian motion。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "时间指标 一族随机量",
+                                                 "有限维规律 增量结构 时间平移",
+                                                 "连续路径 独立正态增量 方差线性",
+                                                 "指标 路径 增量",
+                                                 "brownian motion"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "平稳过程",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "随机量按时间或指标排列成一族，而不是只有单个取值。",
+                                               "有限维规律、增量结构和时间平移性质决定模型类别。",
+                                               "有限维规律在时间平移后保持不变。",
+                                               "看指标、路径和增量三层结构。",
+                                               "英文标准写法是 stationary process。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "时间指标 一族随机量",
+                                                 "有限维规律 增量结构 时间平移",
+                                                 "时间平移 有限维规律不变",
+                                                 "指标 路径 增量",
+                                                 "stationary process"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "独立增量",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "随机量按时间或指标排列成一族，而不是只有单个取值。",
+                                               "有限维规律、增量结构和时间平移性质决定模型类别。",
+                                               "不相交时间区间上的增量相互独立。",
+                                               "看指标、路径和增量三层结构。",
+                                               "英文标准写法是 independent increment。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "时间指标 一族随机量",
+                                                 "有限维规律 增量结构 时间平移",
+                                                 "不相交时间区间 增量独立",
+                                                 "指标 路径 增量",
+                                                 "independent increment"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "转移概率",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "状态随步数演化，下一步只看当前状态的信息。",
+                                               "转移数值排成矩阵后，可用矩阵乘法得到多步规律。",
+                                               "单个元素 p_ij 给出从 i 到 j 的一步转移数值。",
+                                               "无后效性和转移矩阵是核心。",
+                                               "英文标准写法是 transition probability。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "状态 步数 当前状态",
+                                                 "转移数值 矩阵 多步规律",
+                                                 "p_ij i到j 一步转移",
+                                                 "无后效性 转移矩阵",
+                                                 "transition probability"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "转移矩阵",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "状态随步数演化，下一步只看当前状态的信息。",
+                                               "转移数值排成矩阵后，可用矩阵乘法得到多步规律。",
+                                               "所有 p_ij 排成矩阵，多步规律由矩阵幂给出。",
+                                               "无后效性和目标概念是核心。",
+                                               "英文标准写法是 transition matrix。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "状态 步数 当前状态",
+                                                 "转移数值 矩阵 多步规律",
+                                                 "p_ij矩阵 矩阵幂 多步",
+                                                 "无后效性 目标概念",
+                                                 "transition matrix"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "吸收态",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "状态随步数演化，下一步只看当前状态的信息。",
+                                               "转移数值排成矩阵后，可用矩阵乘法得到多步规律。",
+                                               "进入该状态后以数值 1 留在原处。",
+                                               "无后效性和转移矩阵是核心。",
+                                               "英文标准写法是 absorbing state。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "状态 步数 当前状态",
+                                                 "转移数值 矩阵 多步规律",
+                                                 "进入后 留在原处 数值1",
+                                                 "无后效性 转移矩阵",
+                                                 "absorbing state"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "遍历性",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "状态随步数演化，下一步只看当前状态的信息。",
+                                               "转移数值排成矩阵后，可用矩阵乘法得到多步规律。",
+                                               "长期时间平均与平稳分布平均相联系。",
+                                               "无后效性和转移矩阵是核心。",
+                                               "英文标准写法是 ergodicity。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "状态 步数 当前状态",
+                                                 "转移数值 矩阵 多步规律",
+                                                 "长期时间平均 平稳平均",
+                                                 "无后效性 转移矩阵",
+                                                 "ergodicity"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "上确界事件",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "结果全集中的某一类结果形成可赋值的集合。",
+                                               "并、交、差和补描述事件之间的逻辑关系。",
+                                               "集合式为 ∩_n ∪_{k≥n} A_k，表示无限多次发生。",
+                                               "判断时看集合关系，而不是看单个数值映射。",
+                                               "英文标准写法是 limsup event。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "结果全集 可赋值集合",
+                                                 "并 交 差 补 逻辑关系",
+                                                 "∩_n ∪_{k≥n} A_k 无限多次",
+                                                 "集合关系 单个结果区别",
+                                                 "limsup event"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "下确界事件",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "结果全集中的某一类结果形成可赋值的集合。",
+                                               "并、交、差和补描述事件之间的逻辑关系。",
+                                               "集合式为 ∪_n ∩_{k≥n} A_k，表示从某时刻后总发生。",
+                                               "判断时看集合关系，而不是看单个数值映射。",
+                                               "英文标准写法是 liminf event。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "结果全集 可赋值集合",
+                                                 "并 交 差 补 逻辑关系",
+                                                 "∪_n ∩_{k≥n} A_k 最终总发生",
+                                                 "集合关系 单个结果区别",
+                                                 "liminf event"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "博雷尔集",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "严格模型先规定哪些集合可被谈论，哪些函数和数值赋值合法。",
+                                               "σ 结构保证可数并、交和补操作后仍留在可讨论范围内。",
+                                               "实数空间中由开集经可数运算生成的单个集合。",
+                                               "可测性与可列运算封闭是核心。",
+                                               "英文标准写法是 borel set。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "可谈论集合 合法函数 数值赋值",
+                                                 "σ结构 可数并 交 补 封闭",
+                                                 "开集 可数运算 单个集合",
+                                                 "可测性 可列运算封闭",
+                                                 "borel set"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "博雷尔域",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "严格模型先规定哪些集合可被谈论，哪些函数和数值赋值合法。",
+                                               "σ 结构保证可数并、交和补操作后仍留在可讨论范围内。",
+                                               "由所有这类集合组成的 σ 结构。",
+                                               "可测性与可列运算封闭是核心。",
+                                               "英文标准写法是 borel field。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "可谈论集合 合法函数 数值赋值",
+                                                 "σ结构 可数并 交 补 封闭",
+                                                 "所有生成集合 σ结构",
+                                                 "可测性 可列运算封闭",
+                                                 "borel field"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "零一律",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "严格模型先规定哪些集合可被谈论，哪些函数和数值赋值合法。",
+                                               "σ 结构保证可数并、交和补操作后仍留在可讨论范围内。",
+                                               "尾事件的数值只能为 0 或 1。",
+                                               "可测性与可列运算封闭是核心。",
+                                               "英文标准写法是 zero one law。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "可谈论集合 合法函数 数值赋值",
+                                                 "σ结构 可数并 交 补 封闭",
+                                                 "尾事件 数值0或1",
+                                                 "可测性 可列运算封闭",
+                                                 "zero one law"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "柯尔莫哥洛夫公理",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "严格模型先规定哪些集合可被谈论，哪些函数和数值赋值合法。",
+                                               "σ 结构保证可数并、交和补操作后仍留在可讨论范围内。",
+                                               "三条公理为非负性、规范化和可列可加。",
+                                               "可测性与可列运算封闭是核心。",
+                                               "英文标准写法是 kolmogorov axioms。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "可谈论集合 合法函数 数值赋值",
+                                                 "σ结构 可数并 交 补 封闭",
+                                                 "非负性 规范化 可列可加",
+                                                 "可测性 可列运算封闭",
+                                                 "kolmogorov axioms"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "可加性",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "严格模型先规定哪些集合可被谈论，哪些函数和数值赋值合法。",
+                                               "σ 结构保证可数并、交和补操作后仍留在可讨论范围内。",
+                                               "有限或可数互不相交集合的并可拆成数值和。",
+                                               "可测性与可列运算封闭是核心。",
+                                               "英文标准写法是 additivity。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "可谈论集合 合法函数 数值赋值",
+                                                 "σ结构 可数并 交 补 封闭",
+                                                 "互斥并 数值和",
+                                                 "可测性 可列运算封闭",
+                                                 "additivity"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "完全可加性",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "严格模型先规定哪些集合可被谈论，哪些函数和数值赋值合法。",
+                                               "σ 结构保证可数并、交和补操作后仍留在可讨论范围内。",
+                                               "可数多个互不相交集合的并满足无穷求和。",
+                                               "可测性与可列运算封闭是核心。",
+                                               "英文标准写法是 complete additivity。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "可谈论集合 合法函数 数值赋值",
+                                                 "σ结构 可数并 交 补 封闭",
+                                                 "可数互斥并 无穷求和",
+                                                 "可测性 可列运算封闭",
+                                                 "complete additivity"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "分布列",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "该对象在随机模型中描述事件、取值规律、变换或极限关系。",
+                                               "符号标签 distribution sequence 对应特定定义，判别时先看支撑、公式和运算对象。",
+                                               "对象是一列分布，常讨论弱极限或逐项变化。",
+                                               "定义式和典型公式能把它与邻近概念分开。",
+                                               "英文标准写法是 distribution sequence。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "随机模型 事件 取值规律 变换 极限",
+                                                 "distribution sequence 支撑 公式 运算对象",
+                                                 "一列分布 弱极限 逐项",
+                                                 "定义式 典型公式 邻近概念",
+                                                 "distribution sequence"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "联合分布函数",
+                        "source_file":  "words/数学/普通模式/probability_theory_terms.csv",
+                        "complete_clues":  [
+                                               "每个实数 x 对应事件 {X≤x} 的累积数值。",
+                                               "图像单调不减、右连续，负无穷极限为 0，正无穷极限为 1。",
+                                               "多坐标时写作 F(x,y)=P(X≤x,Y≤y)，同时限制两个坐标。",
+                                               "F(x)=P(X≤x) 是核心公式。",
+                                               "英文标准写法是 joint distribution function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "{X≤x} 累积数值",
+                                                 "单调不减 右连续 两端极限0和1",
+                                                 "F(x,y)=P(X≤x,Y≤y) 双坐标",
+                                                 "F(x)=P(X≤x)",
+                                                 "joint distribution function"
+                                             ]
+                    }
+                ]
+}

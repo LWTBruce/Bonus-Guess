@@ -1,0 +1,671 @@
+{
+  "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+  "entries": [
+    {
+      "chinese_name": "集合",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它把若干确定对象看作一个整体。",
+        "高中题常用大括号、区间或描述法表示它。",
+        "判断对象是否属于这个整体时，常写成 x∈A 或 x∉A。",
+        "运算题会围绕包含、交并补和数轴图展开。",
+        "英文名是 set。"
+      ],
+      "fragmented_clues": [
+        "确定对象 整体",
+        "大括号 区间 描述法",
+        "x∈A x∉A",
+        "包含 交并补 数轴图",
+        "set"
+      ]
+    },
+    {
+      "chinese_name": "元素",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它是某个整体中被逐个考察的对象。",
+        "数字、点、方程的解或函数值都可能充当这一角色。",
+        "若对象在 A 中，常用 x∈A 表示。",
+        "判断题常要求分清对象本身和由对象组成的整体。",
+        "英文名是 element。"
+      ],
+      "fragmented_clues": [
+        "逐个对象",
+        "数字 点 解 函数值",
+        "x∈A",
+        "对象本身 整体",
+        "element"
+      ]
+    },
+    {
+      "chinese_name": "子集",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "若 A 中每个对象都在 B 中，就形成这种包含关系。",
+        "它允许两个整体完全相同。",
+        "证明时通常任取 A 中对象，再说明也属于 B。",
+        "符号常写成 A⊆B。",
+        "英文名是 subset。"
+      ],
+      "fragmented_clues": [
+        "A中对象 都在B",
+        "允许相同",
+        "任取 属于A 推出属于B",
+        "A⊆B",
+        "subset"
+      ]
+    },
+    {
+      "chinese_name": "真子集",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "若 A 被 B 包含且二者并不相等，就形成更严格的包含关系。",
+        "它要求 B 中至少有一个对象不在 A 中。",
+        "判断时要同时检查包含和不相等两个条件。",
+        "符号常写成 A⊂B。",
+        "英文名是 proper subset。"
+      ],
+      "fragmented_clues": [
+        "包含 且不相等",
+        "B中另有对象",
+        "包含 不相等",
+        "A⊂B",
+        "proper subset"
+      ]
+    },
+    {
+      "chinese_name": "空集",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它是不含任何对象的特殊整体。",
+        "它可以作为任意整体的被包含对象。",
+        "方程无解或条件矛盾时，解集常写成这个符号。",
+        "标准记号是 ∅。",
+        "英文名是 empty set。"
+      ],
+      "fragmented_clues": [
+        "无对象 特殊整体",
+        "任意整体 被包含",
+        "无解 条件矛盾 解集",
+        "∅",
+        "empty set"
+      ]
+    },
+    {
+      "chinese_name": "全集",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "在某个问题限定范围内，它包含所有正在讨论的对象。",
+        "补运算必须先明确这个总范围。",
+        "数轴题中若范围给成 R 或某个区间，就以它作为外层边界。",
+        "常用 U 表示。",
+        "英文名是 universal set。"
+      ],
+      "fragmented_clues": [
+        "限定范围 所有对象",
+        "补运算 总范围",
+        "R 区间 外层边界",
+        "U",
+        "universal set"
+      ]
+    },
+    {
+      "chinese_name": "交集",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它保留两个整体中共同拥有的对象。",
+        "数轴上表现为两个范围重叠的部分。",
+        "解两个条件同时成立的问题时常用这种运算。",
+        "符号常写成 A∩B。",
+        "英文名是 intersection。"
+      ],
+      "fragmented_clues": [
+        "共同对象",
+        "数轴 重叠部分",
+        "两个条件 同时成立",
+        "A∩B",
+        "intersection"
+      ]
+    },
+    {
+      "chinese_name": "并集",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它把两个整体中的对象合在一起，只要属于其中至少一个就保留。",
+        "数轴上表现为两个范围覆盖的总区域。",
+        "解或条件、分类汇总和区间合并时常用这种运算。",
+        "符号常写成 A∪B。",
+        "英文名是 union。"
+      ],
+      "fragmented_clues": [
+        "至少属于一个 保留",
+        "数轴 覆盖总区域",
+        "或条件 分类汇总 区间合并",
+        "A∪B",
+        "union"
+      ]
+    },
+    {
+      "chinese_name": "补集",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "在给定总范围内，它保留不属于某个指定整体的对象。",
+        "画数轴时常先标出总范围，再去掉已知部分。",
+        "与原来的部分合起来得到总范围，重叠部分为空。",
+        "常写成 C_U A 或 A^c。",
+        "英文名是 complement。"
+      ],
+      "fragmented_clues": [
+        "总范围内 不属于指定部分",
+        "数轴 总范围 去掉已知",
+        "合成总范围 重叠为空",
+        "C_U A A^c",
+        "complement"
+      ]
+    },
+    {
+      "chinese_name": "充分条件",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "若命题 p 成立一定能推出 q 成立，p 就具有这种地位。",
+        "它保证结论出现，但结论出现未必反推它。",
+        "判断时看 p=>q 是否成立。",
+        "在命题关系题中，它常和必要性成对比较。",
+        "英文名是 sufficient condition。"
+      ],
+      "fragmented_clues": [
+        "p成立 推出q",
+        "保证结论 非必反推",
+        "p=>q",
+        "命题关系 必要性比较",
+        "sufficient condition"
+      ]
+    },
+    {
+      "chinese_name": "必要条件",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "若 q 成立时必须有 p 成立，p 就具有这种地位。",
+        "没有它，结论 q 不可能成立。",
+        "判断时可看 q=>p 是否成立。",
+        "它常被误认为能直接推出结论，需要注意方向。",
+        "英文名是 necessary condition。"
+      ],
+      "fragmented_clues": [
+        "q成立 必有p",
+        "缺少p q不成立",
+        "q=>p",
+        "方向辨析",
+        "necessary condition"
+      ]
+    },
+    {
+      "chinese_name": "充要条件",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "两个命题能互相推出时，就形成这种双向关系。",
+        "它既能保证结论，也被结论反过来保证。",
+        "判断时要同时证明 p=>q 和 q=>p。",
+        "常用符号 p⇔q 表示。",
+        "英文名是 necessary and sufficient condition。"
+      ],
+      "fragmented_clues": [
+        "互相推出 双向",
+        "保证结论 反向保证",
+        "p=>q q=>p",
+        "p⇔q",
+        "necessary and sufficient condition"
+      ]
+    },
+    {
+      "chinese_name": "全称量词",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它表示讨论范围内每一个对象都满足某个性质。",
+        "高中命题中常与“任意”“所有”这样的表达对应。",
+        "否定时会变成存在至少一个反例。",
+        "符号常写成 ∀。",
+        "英文名是 universal quantifier。"
+      ],
+      "fragmented_clues": [
+        "每一个对象 满足性质",
+        "任意 所有",
+        "否定 至少一个反例",
+        "∀",
+        "universal quantifier"
+      ]
+    },
+    {
+      "chinese_name": "存在量词",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它表示讨论范围内至少有一个对象满足某个性质。",
+        "高中命题中常与“存在”“有些”这样的表达对应。",
+        "否定时要说明所有对象都不满足。",
+        "符号常写成 ∃。",
+        "英文名是 existential quantifier。"
+      ],
+      "fragmented_clues": [
+        "至少一个对象 满足性质",
+        "存在 有些",
+        "否定 全部不满足",
+        "∃",
+        "existential quantifier"
+      ]
+    },
+    {
+      "chinese_name": "函数",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它描述两个变量之间按规则配对的关系。",
+        "每个允许输入只能对应一个输出。",
+        "高中题常研究定义范围、取值范围、图像和变化趋势。",
+        "常写成 y=f(x)。",
+        "英文名是 function。"
+      ],
+      "fragmented_clues": [
+        "变量 配对规则",
+        "一个输入 唯一输出",
+        "定义范围 取值范围 图像 变化",
+        "y=f(x)",
+        "function"
+      ]
+    },
+    {
+      "chinese_name": "定义域",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它是自变量允许取值的全部范围。",
+        "求它时要排除分母为零、偶次根号内为负、对数真数不正等情况。",
+        "复合表达式中还要同时满足内外层限制。",
+        "常写在 f(x) 的 x 可取范围上。",
+        "英文名是 domain。"
+      ],
+      "fragmented_clues": [
+        "自变量 允许范围",
+        "分母非零 根号非负 真数为正",
+        "内外层限制",
+        "x取值范围",
+        "domain"
+      ]
+    },
+    {
+      "chinese_name": "值域",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它是输出结果可能达到的全部范围。",
+        "求它常结合图像、单调变化、配方或换元。",
+        "二次型题目中顶点和开口方向常决定端点。",
+        "它回答 y 能取哪些数。",
+        "英文名是 range。"
+      ],
+      "fragmented_clues": [
+        "输出结果 全部范围",
+        "图像 单调 配方 换元",
+        "顶点 开口 端点",
+        "y可取数",
+        "range"
+      ]
+    },
+    {
+      "chinese_name": "对应关系",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它说明输入与输出之间按什么规则配对。",
+        "同一个定义范围下，不同规则会得到不同图像和取值。",
+        "表格、解析式、图像都可以表达这种配对规则。",
+        "判断两个函数是否相同，要同时看范围和规则。",
+        "英文名是 correspondence。"
+      ],
+      "fragmented_clues": [
+        "输入 输出 配对规则",
+        "同范围 不同规则 不同图像",
+        "表格 解析式 图像",
+        "范围 规则 同时判断",
+        "correspondence"
+      ]
+    },
+    {
+      "chinese_name": "函数图像",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它把输入与输出的对应点画在坐标平面上。",
+        "形状能显示零点、最值、单调区间和对称性。",
+        "平移、伸缩、翻折会改变图形位置或形状。",
+        "点 (x,f(x)) 是它的基本组成。",
+        "英文名是 graph of a function。"
+      ],
+      "fragmented_clues": [
+        "对应点 坐标平面",
+        "零点 最值 单调区间 对称性",
+        "平移 伸缩 翻折",
+        "(x,f(x))",
+        "graph of a function"
+      ]
+    },
+    {
+      "chinese_name": "单调性",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它描述输入增大时输出整体增大或减小的趋势。",
+        "判断时要限定在某个区间内。",
+        "可用作差、作商、图像观察或导数符号来分析。",
+        "增区间和减区间是常见作答形式。",
+        "英文名是 monotonicity。"
+      ],
+      "fragmented_clues": [
+        "输入增大 输出趋势",
+        "限定区间",
+        "作差 作商 图像 导数符号",
+        "增区间 减区间",
+        "monotonicity"
+      ]
+    },
+    {
+      "chinese_name": "奇偶性",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它描述图像关于原点或 y 轴的对称特征。",
+        "判断前必须先看定义范围是否关于 0 对称。",
+        "若 f(-x)=-f(x)，图像关于原点对称；若 f(-x)=f(x)，图像关于 y 轴对称。",
+        "代入 -x 后与原式比较是常用步骤。",
+        "英文名是 parity。"
+      ],
+      "fragmented_clues": [
+        "原点对称 y轴对称",
+        "定义范围 关于0对称",
+        "f(-x)=-f(x) f(-x)=f(x)",
+        "代入-x 比较",
+        "parity"
+      ]
+    },
+    {
+      "chinese_name": "周期性",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它描述输入平移某个非零常数后输出重复的现象。",
+        "三角模型和波动图像中经常出现这种特征。",
+        "若 f(x+T)=f(x)，T 可作为重复长度。",
+        "最小正重复长度常是题目关注的量。",
+        "英文名是 periodicity。"
+      ],
+      "fragmented_clues": [
+        "平移非零常数 输出重复",
+        "三角模型 波动图像",
+        "f(x+T)=f(x)",
+        "最小正T",
+        "periodicity"
+      ]
+    },
+    {
+      "chinese_name": "零点",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它是使函数值等于 0 的自变量取值。",
+        "在图像上，对应曲线与 x 轴的交点横坐标。",
+        "求它通常转化为解方程 f(x)=0。",
+        "存在性题常利用连续图像两端函数值异号。",
+        "英文名是 zero of a function。"
+      ],
+      "fragmented_clues": [
+        "f(x)=0 自变量",
+        "x轴交点 横坐标",
+        "解方程",
+        "连续 异号 存在",
+        "zero of a function"
+      ]
+    },
+    {
+      "chinese_name": "一次函数",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它的图像是一条非竖直直线。",
+        "解析式常写成 y=kx+b，其中 k 不为 0。",
+        "k 决定倾斜方向和变化快慢，b 决定与 y 轴交点。",
+        "高中题常用两点确定表达式。",
+        "英文名是 linear function。"
+      ],
+      "fragmented_clues": [
+        "图像 非竖直直线",
+        "y=kx+b k≠0",
+        "k 方向 变化 b 轴交点",
+        "两点确定",
+        "linear function"
+      ]
+    },
+    {
+      "chinese_name": "二次函数",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它的解析式最高次数为 2，图像呈抛物线形状。",
+        "标准形式可写成 y=ax^2+bx+c，其中 a 不为 0。",
+        "顶点、对称轴、开口方向和判别式是核心信息。",
+        "配方后常写成 y=a(x-h)^2+k。",
+        "英文名是 quadratic function。"
+      ],
+      "fragmented_clues": [
+        "最高次数2 抛物线",
+        "y=ax^2+bx+c a≠0",
+        "顶点 对称轴 开口 判别式",
+        "y=a(x-h)^2+k",
+        "quadratic function"
+      ]
+    },
+    {
+      "chinese_name": "幂函数",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它以自变量的固定实数次方作为主要形式。",
+        "高中常见图像包括 y=x、y=x^2、y=x^3、y=1/x、y=sqrt(x)。",
+        "指数的取值会影响定义范围、对称性和单调区间。",
+        "一般形式写成 y=x^α。",
+        "英文名是 power function。"
+      ],
+      "fragmented_clues": [
+        "固定实数次方",
+        "x x^2 x^3 1/x sqrt(x)",
+        "指数 定义范围 对称 单调",
+        "y=x^α",
+        "power function"
+      ]
+    },
+    {
+      "chinese_name": "指数函数",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它把自变量放在指数位置，底数为正常数且不等于 1。",
+        "图像都经过点 (0,1)，并且始终在 x 轴上方。",
+        "底数大于 1 时递增，介于 0 和 1 时递减。",
+        "一般形式写成 y=a^x。",
+        "英文名是 exponential function。"
+      ],
+      "fragmented_clues": [
+        "自变量在指数 底数正且不为1",
+        "过(0,1) x轴上方",
+        "a>1递增 0<a<1递减",
+        "y=a^x",
+        "exponential function"
+      ]
+    },
+    {
+      "chinese_name": "对数函数",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它与指数型模型互为反向关系。",
+        "定义时要求底数为正且不等于 1，自变量为正。",
+        "图像都经过点 (1,0)，并以 y 轴为竖直渐近线。",
+        "一般形式写成 y=log_a x。",
+        "英文名是 logarithmic function。"
+      ],
+      "fragmented_clues": [
+        "指数型 反向关系",
+        "a>0 a≠1 x>0",
+        "过(1,0) y轴渐近线",
+        "y=log_a x",
+        "logarithmic function"
+      ]
+    },
+    {
+      "chinese_name": "反函数",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它把原来规则中的输入和输出位置交换。",
+        "存在时，原规则通常要在对应范围内一一对应。",
+        "图像关于 y=x 对称。",
+        "若 y=f(x)，对应表达常写成 y=f^{-1}(x)。",
+        "英文名是 inverse function。"
+      ],
+      "fragmented_clues": [
+        "输入 输出 交换",
+        "一一对应",
+        "关于y=x对称",
+        "f^{-1}(x)",
+        "inverse function"
+      ]
+    },
+    {
+      "chinese_name": "复合函数",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它把一个函数的输出再作为另一个函数的输入。",
+        "求值时要按由内到外的顺序代入。",
+        "定义范围要同时满足内层能算、外层能接收。",
+        "常写作 f(g(x))。",
+        "英文名是 composite function。"
+      ],
+      "fragmented_clues": [
+        "输出 再作输入",
+        "由内到外 代入",
+        "内层可算 外层接收",
+        "f(g(x))",
+        "composite function"
+      ]
+    },
+    {
+      "chinese_name": "分段函数",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它在不同自变量范围内采用不同解析式。",
+        "求值时必须先判断 x 落在哪个区间。",
+        "图像常由几段曲线或线段拼接而成。",
+        "连续性、端点取值和分类讨论是常见考点。",
+        "英文名是 piecewise function。"
+      ],
+      "fragmented_clues": [
+        "不同范围 不同解析式",
+        "先判断x区间",
+        "多段图像 拼接",
+        "连续 端点 分类讨论",
+        "piecewise function"
+      ]
+    },
+    {
+      "chinese_name": "导数",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它刻画函数在某一点附近的瞬时变化率。",
+        "几何上，它对应曲线在该点的切线斜率。",
+        "符号常写成 f'(x) 或 dy/dx。",
+        "判断单调区间、极值和切线方程时常用它。",
+        "英文名是 derivative。"
+      ],
+      "fragmented_clues": [
+        "瞬时变化率",
+        "曲线 某点 切线斜率",
+        "f'(x) dy/dx",
+        "单调 极值 切线方程",
+        "derivative"
+      ]
+    },
+    {
+      "chinese_name": "切线",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "在曲线某点处，它表示与曲线局部方向一致的直线。",
+        "导数值给出这条线的斜率。",
+        "求方程时常用点斜式 y-y0=k(x-x0)。",
+        "圆中它还常与半径成直角。",
+        "英文名是 tangent line。"
+      ],
+      "fragmented_clues": [
+        "曲线某点 局部方向 直线",
+        "导数值 斜率",
+        "y-y0=k(x-x0)",
+        "圆 半径 直角",
+        "tangent line"
+      ]
+    },
+    {
+      "chinese_name": "极大值",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它是在某点附近比左右邻近函数值都大的局部最高值。",
+        "它不一定是整个定义范围内的最大结果。",
+        "导数符号由正变负时常出现这种局部值。",
+        "图像上表现为附近的山峰。",
+        "英文名是 local maximum。"
+      ],
+      "fragmented_clues": [
+        "局部附近 最大",
+        "非全局最大",
+        "导数 正到负",
+        "山峰",
+        "local maximum"
+      ]
+    },
+    {
+      "chinese_name": "极小值",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它是在某点附近比左右邻近函数值都小的局部最低值。",
+        "它不一定是整个定义范围内的最小结果。",
+        "导数符号由负变正时常出现这种局部值。",
+        "图像上表现为附近的谷底。",
+        "英文名是 local minimum。"
+      ],
+      "fragmented_clues": [
+        "局部附近 最小",
+        "非全局最小",
+        "导数 负到正",
+        "谷底",
+        "local minimum"
+      ]
+    },
+    {
+      "chinese_name": "最大值",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它是在整个给定范围内所有函数值中最高的一个。",
+        "闭区间问题常比较端点值和内部极值。",
+        "若范围不闭或图像无上界，可能不存在。",
+        "作答时要给出达到它的自变量和对应函数值。",
+        "英文名是 maximum value。"
+      ],
+      "fragmented_clues": [
+        "给定范围 最高函数值",
+        "闭区间 端点 内部极值",
+        "不闭 无上界 不存在",
+        "自变量 函数值",
+        "maximum value"
+      ]
+    },
+    {
+      "chinese_name": "最小值",
+      "source_file": "words/数学/入门模式：高中数学/high_school_sets_functions_terms.csv",
+      "complete_clues": [
+        "它是在整个给定范围内所有函数值中最低的一个。",
+        "闭区间问题常比较端点值和内部极值。",
+        "若范围不闭或图像无下界，可能不存在。",
+        "作答时要给出达到它的自变量和对应函数值。",
+        "英文名是 minimum value。"
+      ],
+      "fragmented_clues": [
+        "给定范围 最低函数值",
+        "闭区间 端点 内部极值",
+        "不闭 无下界 不存在",
+        "自变量 函数值",
+        "minimum value"
+      ]
+    }
+  ]
+}

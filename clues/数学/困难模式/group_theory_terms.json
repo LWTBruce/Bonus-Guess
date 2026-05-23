@@ -1,0 +1,1805 @@
+{
+  "source_file": "words/数学/困难模式/group_theory_terms.csv",
+  "entries": [
+    {
+      "chinese_name": "群论",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在研究代数运算和对称变换时，它把复合、逆操作和不变量放进同一框架。",
+        "子结构、陪集、同态、正规性和作用提供了分析对称结构的主要入口。",
+        "有限情形中，阶数整除、类方程和 Sylow 计数能给出强限制。",
+        "表示论还会把抽象元素送入线性算子，用特征标和不可约分解读取信息。",
+        "标准英文名是 `group_theory`。"
+      ],
+      "fragmented_clues": [
+        "代数运算 对称变换",
+        "subgroup coset homomorphism normal action",
+        "order class equation Sylow",
+        "representation character irreducible",
+        "group theory"
+      ]
+    },
+    {
+      "chinese_name": "群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "集合 G 上有封闭二元运算、结合律、单位对象和逆对象。",
+        "标准写法是 (G,*)，并满足 a*(b*c)=(a*b)*c。",
+        "标准英文名是 `group`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "G * e inverse",
+        "a*(b*c)=(a*b)*c",
+        "group"
+      ]
+    },
+    {
+      "chinese_name": "半群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "集合上的二元运算只要求封闭和结合。",
+        "单位对象与逆对象都不作为公理要求。",
+        "标准英文名是 `semigroup`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "封闭 二元运算 结合",
+        "无单位要求 无逆要求",
+        "semigroup"
+      ]
+    },
+    {
+      "chinese_name": "幺半群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "结合的二元运算之外还指定单位对象。",
+        "满足 e*a=a*e=a，再要求全体可逆会得到更强结构。",
+        "标准英文名是 `monoid`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "结合 单位对象",
+        "e*a=a*e=a",
+        "monoid"
+      ]
+    },
+    {
+      "chinese_name": "子群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "非空子集在原运算下仍封闭，并继承单位对象和逆对象。",
+        "常用判据是 a,b 属于 H 时 ab^{-1} 仍属于 H。",
+        "标准英文名是 `subgroup`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "非空子集 原运算",
+        "ab^{-1} in H",
+        "subgroup"
+      ]
+    },
+    {
+      "chinese_name": "真子群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "围绕 `proper_subgroup`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `proper_subgroup`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "proper subgroup",
+        "operation substructure formula",
+        "proper subgroup"
+      ]
+    },
+    {
+      "chinese_name": "循环群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "围绕 `cyclic_group`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `cyclic_group`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "cyclic group",
+        "operation substructure formula",
+        "cyclic group"
+      ]
+    },
+    {
+      "chinese_name": "阿贝尔群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "围绕 `abelian_group`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `abelian_group`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "abelian group",
+        "operation substructure formula",
+        "abelian group"
+      ]
+    },
+    {
+      "chinese_name": "有限群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "围绕 `finite_group`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `finite_group`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "finite group",
+        "operation substructure formula",
+        "finite group"
+      ]
+    },
+    {
+      "chinese_name": "无限群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "围绕 `infinite_group`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `infinite_group`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "infinite group",
+        "operation substructure formula",
+        "infinite group"
+      ]
+    },
+    {
+      "chinese_name": "群元",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "围绕 `group_element`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `group_element`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "group element",
+        "operation substructure formula",
+        "group element"
+      ]
+    },
+    {
+      "chinese_name": "单位元",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "围绕 `identity_element`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `identity_element`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "identity element",
+        "operation substructure formula",
+        "identity element"
+      ]
+    },
+    {
+      "chinese_name": "逆元",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "围绕 `inverse_element`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `inverse_element`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "inverse element",
+        "operation substructure formula",
+        "inverse element"
+      ]
+    },
+    {
+      "chinese_name": "阶",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "围绕 `order`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `order`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "order",
+        "operation substructure formula",
+        "order"
+      ]
+    },
+    {
+      "chinese_name": "元素的阶",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "它寻找使 a^n=e 成立的最小正整数 n。",
+        "若不存在这样的 n，则记为无限。",
+        "标准英文名是 `order_of_element`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "a^n=e",
+        "min positive n",
+        "order of element"
+      ]
+    },
+    {
+      "chinese_name": "陪集",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在比较整体结构与子结构时，它关注分块和指数。",
+        "同侧乘法、左右分块和整除关系是主要入口。",
+        "固定 H 后，用某个元素在同一侧乘 H 得到分块。",
+        "这些分块等势，并支撑 |G|=[G:H]|H|。",
+        "标准英文名是 `coset`。"
+      ],
+      "fragmented_clues": [
+        "整体 子结构 分块",
+        "index divisibility",
+        "gH Hg partition",
+        "|G|=[G:H]|H|",
+        "coset"
+      ]
+    },
+    {
+      "chinese_name": "左陪集",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在比较整体结构与子结构时，它关注分块和指数。",
+        "同侧乘法、左右分块和整除关系是主要入口。",
+        "形式为 gH，乘法元素放在 H 的左侧。",
+        "两个这样的分块要么相同，要么不相交。",
+        "标准英文名是 `left_coset`。"
+      ],
+      "fragmented_clues": [
+        "整体 子结构 分块",
+        "index divisibility",
+        "gH",
+        "same or disjoint",
+        "left coset"
+      ]
+    },
+    {
+      "chinese_name": "右陪集",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在比较整体结构与子结构时，它关注分块和指数。",
+        "同侧乘法、左右分块和整除关系是主要入口。",
+        "形式为 Hg，乘法元素放在 H 的右侧。",
+        "与左侧分块完全一致时会导向正规性。",
+        "标准英文名是 `right_coset`。"
+      ],
+      "fragmented_clues": [
+        "整体 子结构 分块",
+        "index divisibility",
+        "Hg",
+        "left right agreement",
+        "right coset"
+      ]
+    },
+    {
+      "chinese_name": "正规子群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "H 对所有 g 满足 gHg^{-1}=H。",
+        "这是 G/H 上乘法良定义的关键条件。",
+        "标准英文名是 `normal_subgroup`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "gHg^{-1}=H",
+        "G/H well-defined",
+        "normal subgroup"
+      ]
+    },
+    {
+      "chinese_name": "商群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "元素是正规内部子结构的分块。",
+        "乘法常写成 (aN)(bN)=abN。",
+        "标准英文名是 `quotient_group`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "cosets as elements",
+        "(aN)(bN)=abN",
+        "quotient group"
+      ]
+    },
+    {
+      "chinese_name": "同态",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在比较两个运算结构时，它追踪映射对乘法的保持。",
+        "ker、im、单射满射和商结构常一起出现。",
+        "映射 phi 保持乘法，满足 phi(ab)=phi(a)phi(b)。",
+        "单位对象、逆对象和子结构信息都会被相容地传递。",
+        "标准英文名是 `homomorphism`。"
+      ],
+      "fragmented_clues": [
+        "两个结构 映射",
+        "ker im injective surjective",
+        "phi(ab)=phi(a)phi(b)",
+        "e inverse compatible",
+        "homomorphism"
+      ]
+    },
+    {
+      "chinese_name": "同构",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在比较两个运算结构时，它追踪映射对乘法的保持。",
+        "ker、im、单射满射和商结构常一起出现。",
+        "它是双射且保持运算的对应。",
+        "存在时两个结构在代数性质上不可区分。",
+        "标准英文名是 `isomorphism`。"
+      ],
+      "fragmented_clues": [
+        "两个结构 映射",
+        "ker im injective surjective",
+        "bijective operation preserving",
+        "same algebraic structure",
+        "isomorphism"
+      ]
+    },
+    {
+      "chinese_name": "自同构",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在比较两个运算结构时，它追踪映射对乘法的保持。",
+        "ker、im、单射满射和商结构常一起出现。",
+        "围绕 `automorphism`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `automorphism`。"
+      ],
+      "fragmented_clues": [
+        "两个结构 映射",
+        "ker im injective surjective",
+        "automorphism",
+        "operation substructure formula",
+        "automorphism"
+      ]
+    },
+    {
+      "chinese_name": "核",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在比较两个运算结构时，它追踪映射对乘法的保持。",
+        "ker、im、单射满射和商结构常一起出现。",
+        "它由所有被 phi 送到目标单位对象的元素组成。",
+        "常记 ker phi，并且总是正规内部子结构。",
+        "标准英文名是 `kernel`。"
+      ],
+      "fragmented_clues": [
+        "两个结构 映射",
+        "ker im injective surjective",
+        "ker phi",
+        "phi(g)=e normal",
+        "kernel"
+      ]
+    },
+    {
+      "chinese_name": "像",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在比较两个运算结构时，它追踪映射对乘法的保持。",
+        "ker、im、单射满射和商结构常一起出现。",
+        "它由 phi(g) 的全部取值组成。",
+        "常记 im phi 或 phi(G)，是目标中的内部子结构。",
+        "标准英文名是 `image`。"
+      ],
+      "fragmented_clues": [
+        "两个结构 映射",
+        "ker im injective surjective",
+        "im phi",
+        "phi(G)",
+        "image"
+      ]
+    },
+    {
+      "chinese_name": "拉格朗日定理",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在比较整体结构与子结构时，它关注分块和指数。",
+        "同侧乘法、左右分块和整除关系是主要入口。",
+        "围绕 `lagrange_theorem`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `lagrange_theorem`。"
+      ],
+      "fragmented_clues": [
+        "整体 子结构 分块",
+        "index divisibility",
+        "lagrange theorem",
+        "operation substructure formula",
+        "lagrange theorem"
+      ]
+    },
+    {
+      "chinese_name": "群作用",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在对称结构作用到集合时，它把抽象元素转成变换。",
+        "可达类、固定子结构和传递性把全局行为拆成局部数据。",
+        "抽象元素被解释为集合 X 上的变换。",
+        "规则满足 e.x=x 与 (gh).x=g.(h.x)。",
+        "标准英文名是 `group_action`。"
+      ],
+      "fragmented_clues": [
+        "对称结构 集合",
+        "orbit stabilizer",
+        "G acts on X",
+        "e.x=x (gh).x=g.(h.x)",
+        "group action"
+      ]
+    },
+    {
+      "chinese_name": "轨道",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在对称结构作用到集合时，它把抽象元素转成变换。",
+        "可达类、固定子结构和传递性把全局行为拆成局部数据。",
+        "它收集某点在所有变换下能到达的位置。",
+        "常记 Gx={g.x:g in G}。",
+        "标准英文名是 `orbit`。"
+      ],
+      "fragmented_clues": [
+        "对称结构 集合",
+        "orbit stabilizer",
+        "reachable points",
+        "Gx={g.x}",
+        "orbit"
+      ]
+    },
+    {
+      "chinese_name": "稳定子",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在对称结构作用到集合时，它把抽象元素转成变换。",
+        "可达类、固定子结构和传递性把全局行为拆成局部数据。",
+        "它收集保持某点不动的所有元素。",
+        "常记 G_x，并满足 |Gx|=[G:G_x]。",
+        "标准英文名是 `stabilizer`。"
+      ],
+      "fragmented_clues": [
+        "对称结构 集合",
+        "orbit stabilizer",
+        "fix x",
+        "G_x |Gx|=[G:G_x]",
+        "stabilizer"
+      ]
+    },
+    {
+      "chinese_name": "共轭类",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在内部对称和共轭关系中，它刻画元素或子结构的等价行为。",
+        "交换、保持和共轭分块常给出判别。",
+        "它收集所有形如 gxg^{-1} 的元素。",
+        "大小由中心化子指标控制。",
+        "标准英文名是 `conjugacy_class`。"
+      ],
+      "fragmented_clues": [
+        "内部对称 共轭",
+        "commute conjugate",
+        "gxg^{-1}",
+        "index of centralizer",
+        "conjugacy class"
+      ]
+    },
+    {
+      "chinese_name": "中心",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在内部对称和共轭关系中，它刻画元素或子结构的等价行为。",
+        "交换、保持和共轭分块常给出判别。",
+        "它由与全部元素都可交换的元素组成。",
+        "常记 Z(G)，满足 zg=gz。",
+        "标准英文名是 `center`。"
+      ],
+      "fragmented_clues": [
+        "内部对称 共轭",
+        "commute conjugate",
+        "Z(G)",
+        "zg=gz all g",
+        "center"
+      ]
+    },
+    {
+      "chinese_name": "中心化子",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在内部对称和共轭关系中，它刻画元素或子结构的等价行为。",
+        "交换、保持和共轭分块常给出判别。",
+        "围绕 `centralizer`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `centralizer`。"
+      ],
+      "fragmented_clues": [
+        "内部对称 共轭",
+        "commute conjugate",
+        "centralizer",
+        "operation substructure formula",
+        "centralizer"
+      ]
+    },
+    {
+      "chinese_name": "正规化子",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在内部对称和共轭关系中，它刻画元素或子结构的等价行为。",
+        "交换、保持和共轭分块常给出判别。",
+        "围绕 `normalizer`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `normalizer`。"
+      ],
+      "fragmented_clues": [
+        "内部对称 共轭",
+        "commute conjugate",
+        "normalizer",
+        "operation substructure formula",
+        "normalizer"
+      ]
+    },
+    {
+      "chinese_name": "对称群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在有限集合重排问题中，它把变换写成可复合的双射。",
+        "循环分解、奇偶性和符号是常见计算工具。",
+        "围绕 `symmetric_group`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `symmetric_group`。"
+      ],
+      "fragmented_clues": [
+        "有限集合 重排",
+        "cycle sign parity",
+        "symmetric group",
+        "operation substructure formula",
+        "symmetric group"
+      ]
+    },
+    {
+      "chinese_name": "交错群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在有限集合重排问题中，它把变换写成可复合的双射。",
+        "循环分解、奇偶性和符号是常见计算工具。",
+        "围绕 `alternating_group`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `alternating_group`。"
+      ],
+      "fragmented_clues": [
+        "有限集合 重排",
+        "cycle sign parity",
+        "alternating group",
+        "operation substructure formula",
+        "alternating group"
+      ]
+    },
+    {
+      "chinese_name": "置换",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在有限集合重排问题中，它把变换写成可复合的双射。",
+        "循环分解、奇偶性和符号是常见计算工具。",
+        "围绕 `permutation`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `permutation`。"
+      ],
+      "fragmented_clues": [
+        "有限集合 重排",
+        "cycle sign parity",
+        "permutation",
+        "operation substructure formula",
+        "permutation"
+      ]
+    },
+    {
+      "chinese_name": "置换群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在有限集合重排问题中，它把变换写成可复合的双射。",
+        "循环分解、奇偶性和符号是常见计算工具。",
+        "围绕 `permutation_group`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `permutation_group`。"
+      ],
+      "fragmented_clues": [
+        "有限集合 重排",
+        "cycle sign parity",
+        "permutation group",
+        "operation substructure formula",
+        "permutation group"
+      ]
+    },
+    {
+      "chinese_name": "直积",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在由多个结构拼合新结构时，它描述分量怎样共同运算。",
+        "逐分量、内部互补和扭转作用会给出不同构造。",
+        "围绕 `direct_product`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `direct_product`。"
+      ],
+      "fragmented_clues": [
+        "多个结构 拼合",
+        "component action factor",
+        "direct product",
+        "operation substructure formula",
+        "direct product"
+      ]
+    },
+    {
+      "chinese_name": "半直积",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在由多个结构拼合新结构时，它描述分量怎样共同运算。",
+        "逐分量、内部互补和扭转作用会给出不同构造。",
+        "围绕 `semidirect_product`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `semidirect_product`。"
+      ],
+      "fragmented_clues": [
+        "多个结构 拼合",
+        "component action factor",
+        "semidirect product",
+        "operation substructure formula",
+        "semidirect product"
+      ]
+    },
+    {
+      "chinese_name": "西罗定理",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在有限阶结构中，它抽出素数幂部分研究。",
+        "整除关系、共轭性和计数条件给出强限制。",
+        "它描述有限结构中最大 p 幂内部子结构的存在、共轭性和个数。",
+        "计数满足 n_p≡1 mod p 且 n_p 整除余因子。",
+        "标准英文名是 `sylow_theorem`。"
+      ],
+      "fragmented_clues": [
+        "有限阶 素数幂",
+        "divisibility conjugacy count",
+        "p-power existence conjugacy",
+        "n_p=1 mod p",
+        "sylow theorem"
+      ]
+    },
+    {
+      "chinese_name": "可解群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在分层分析结构时，它用子结构串记录复杂度。",
+        "商因子、换位操作和终止条件区分可解性与幂零性。",
+        "围绕 `solvable_group`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `solvable_group`。"
+      ],
+      "fragmented_clues": [
+        "分层 子结构串",
+        "quotient commutator terminal",
+        "solvable group",
+        "operation substructure formula",
+        "solvable group"
+      ]
+    },
+    {
+      "chinese_name": "单群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在分层分析结构时，它用子结构串记录复杂度。",
+        "商因子、换位操作和终止条件区分可解性与幂零性。",
+        "围绕 `simple_group`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `simple_group`。"
+      ],
+      "fragmented_clues": [
+        "分层 子结构串",
+        "quotient commutator terminal",
+        "simple group",
+        "operation substructure formula",
+        "simple group"
+      ]
+    },
+    {
+      "chinese_name": "表示",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在把抽象对称线性化时，它让元素对应矩阵或线性算子。",
+        "不变子空间、迹函数和分解问题是核心数据。",
+        "围绕 `representation`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `representation`。"
+      ],
+      "fragmented_clues": [
+        "抽象对称 线性化",
+        "matrix trace invariant subspace",
+        "representation",
+        "operation substructure formula",
+        "representation"
+      ]
+    },
+    {
+      "chinese_name": "群表示",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在把抽象对称线性化时，它让元素对应矩阵或线性算子。",
+        "不变子空间、迹函数和分解问题是核心数据。",
+        "围绕 `group_representation`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `group_representation`。"
+      ],
+      "fragmented_clues": [
+        "抽象对称 线性化",
+        "matrix trace invariant subspace",
+        "group representation",
+        "operation substructure formula",
+        "group representation"
+      ]
+    },
+    {
+      "chinese_name": "特征标",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在把抽象对称线性化时，它让元素对应矩阵或线性算子。",
+        "不变子空间、迹函数和分解问题是核心数据。",
+        "围绕 `character`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `character`。"
+      ],
+      "fragmented_clues": [
+        "抽象对称 线性化",
+        "matrix trace invariant subspace",
+        "character",
+        "operation substructure formula",
+        "character"
+      ]
+    },
+    {
+      "chinese_name": "群运算",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "围绕 `group_operation`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `group_operation`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "group operation",
+        "operation substructure formula",
+        "group operation"
+      ]
+    },
+    {
+      "chinese_name": "结合律",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "围绕 `associative_law`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `associative_law`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "associative law",
+        "operation substructure formula",
+        "associative law"
+      ]
+    },
+    {
+      "chinese_name": "生成子群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "围绕 `generated_subgroup`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `generated_subgroup`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "generated subgroup",
+        "operation substructure formula",
+        "generated subgroup"
+      ]
+    },
+    {
+      "chinese_name": "生成集",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "围绕 `generating_set`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `generating_set`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "generating set",
+        "operation substructure formula",
+        "generating set"
+      ]
+    },
+    {
+      "chinese_name": "换位子",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在分层分析结构时，它用子结构串记录复杂度。",
+        "商因子、换位操作和终止条件区分可解性与幂零性。",
+        "它测量两个元素不交换的偏差。",
+        "常写 [a,b]=aba^{-1}b^{-1}。",
+        "标准英文名是 `commutator`。"
+      ],
+      "fragmented_clues": [
+        "分层 子结构串",
+        "quotient commutator terminal",
+        "noncommuting defect",
+        "[a,b]=aba^{-1}b^{-1}",
+        "commutator"
+      ]
+    },
+    {
+      "chinese_name": "换位子群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在分层分析结构时，它用子结构串记录复杂度。",
+        "商因子、换位操作和终止条件区分可解性与幂零性。",
+        "围绕 `commutator_subgroup`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `commutator_subgroup`。"
+      ],
+      "fragmented_clues": [
+        "分层 子结构串",
+        "quotient commutator terminal",
+        "commutator subgroup",
+        "operation substructure formula",
+        "commutator subgroup"
+      ]
+    },
+    {
+      "chinese_name": "导群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在分层分析结构时，它用子结构串记录复杂度。",
+        "商因子、换位操作和终止条件区分可解性与幂零性。",
+        "围绕 `derived_group`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `derived_group`。"
+      ],
+      "fragmented_clues": [
+        "分层 子结构串",
+        "quotient commutator terminal",
+        "derived group",
+        "operation substructure formula",
+        "derived group"
+      ]
+    },
+    {
+      "chinese_name": "导列",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在分层分析结构时，它用子结构串记录复杂度。",
+        "商因子、换位操作和终止条件区分可解性与幂零性。",
+        "围绕 `derived_series`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `derived_series`。"
+      ],
+      "fragmented_clues": [
+        "分层 子结构串",
+        "quotient commutator terminal",
+        "derived series",
+        "operation substructure formula",
+        "derived series"
+      ]
+    },
+    {
+      "chinese_name": "上中心列",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在分层分析结构时，它用子结构串记录复杂度。",
+        "商因子、换位操作和终止条件区分可解性与幂零性。",
+        "围绕 `upper_central_series`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `upper_central_series`。"
+      ],
+      "fragmented_clues": [
+        "分层 子结构串",
+        "quotient commutator terminal",
+        "upper central series",
+        "operation substructure formula",
+        "upper central series"
+      ]
+    },
+    {
+      "chinese_name": "下中心列",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在分层分析结构时，它用子结构串记录复杂度。",
+        "商因子、换位操作和终止条件区分可解性与幂零性。",
+        "围绕 `lower_central_series`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `lower_central_series`。"
+      ],
+      "fragmented_clues": [
+        "分层 子结构串",
+        "quotient commutator terminal",
+        "lower central series",
+        "operation substructure formula",
+        "lower central series"
+      ]
+    },
+    {
+      "chinese_name": "幂零群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在分层分析结构时，它用子结构串记录复杂度。",
+        "商因子、换位操作和终止条件区分可解性与幂零性。",
+        "围绕 `nilpotent_group`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `nilpotent_group`。"
+      ],
+      "fragmented_clues": [
+        "分层 子结构串",
+        "quotient commutator terminal",
+        "nilpotent group",
+        "operation substructure formula",
+        "nilpotent group"
+      ]
+    },
+    {
+      "chinese_name": "自由群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在由符号生成代数对象时，它关注生成和关系。",
+        "生成元、关系式和泛性质决定映射怎样延拓。",
+        "围绕 `free_group`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `free_group`。"
+      ],
+      "fragmented_clues": [
+        "符号 生成",
+        "generators relations universal",
+        "free group",
+        "operation substructure formula",
+        "free group"
+      ]
+    },
+    {
+      "chinese_name": "自由阿贝尔群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在由符号生成代数对象时，它关注生成和关系。",
+        "生成元、关系式和泛性质决定映射怎样延拓。",
+        "围绕 `free_abelian_group`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `free_abelian_group`。"
+      ],
+      "fragmented_clues": [
+        "符号 生成",
+        "generators relations universal",
+        "free abelian group",
+        "operation substructure formula",
+        "free abelian group"
+      ]
+    },
+    {
+      "chinese_name": "群的表示",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在由符号生成代数对象时，它关注生成和关系。",
+        "生成元、关系式和泛性质决定映射怎样延拓。",
+        "围绕 `presentation_of_group`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `presentation_of_group`。"
+      ],
+      "fragmented_clues": [
+        "符号 生成",
+        "generators relations universal",
+        "presentation of group",
+        "operation substructure formula",
+        "presentation of group"
+      ]
+    },
+    {
+      "chinese_name": "生成元与关系",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在由符号生成代数对象时，它关注生成和关系。",
+        "生成元、关系式和泛性质决定映射怎样延拓。",
+        "围绕 `generators_and_relations`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `generators_and_relations`。"
+      ],
+      "fragmented_clues": [
+        "符号 生成",
+        "generators relations universal",
+        "generators and relations",
+        "operation substructure formula",
+        "generators and relations"
+      ]
+    },
+    {
+      "chinese_name": "直和",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在由多个结构拼合新结构时，它描述分量怎样共同运算。",
+        "逐分量、内部互补和扭转作用会给出不同构造。",
+        "围绕 `direct_sum`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `direct_sum`。"
+      ],
+      "fragmented_clues": [
+        "多个结构 拼合",
+        "component action factor",
+        "direct sum",
+        "operation substructure formula",
+        "direct sum"
+      ]
+    },
+    {
+      "chinese_name": "内直积",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在由多个结构拼合新结构时，它描述分量怎样共同运算。",
+        "逐分量、内部互补和扭转作用会给出不同构造。",
+        "围绕 `internal_direct_product`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `internal_direct_product`。"
+      ],
+      "fragmented_clues": [
+        "多个结构 拼合",
+        "component action factor",
+        "internal direct product",
+        "operation substructure formula",
+        "internal direct product"
+      ]
+    },
+    {
+      "chinese_name": "外直积",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在由多个结构拼合新结构时，它描述分量怎样共同运算。",
+        "逐分量、内部互补和扭转作用会给出不同构造。",
+        "围绕 `external_direct_product`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `external_direct_product`。"
+      ],
+      "fragmented_clues": [
+        "多个结构 拼合",
+        "component action factor",
+        "external direct product",
+        "operation substructure formula",
+        "external direct product"
+      ]
+    },
+    {
+      "chinese_name": "群同态基本定理",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在比较两个运算结构时，它追踪映射对乘法的保持。",
+        "ker、im、单射满射和商结构常一起出现。",
+        "围绕 `fundamental_theorem_of_group_homomorphism`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `fundamental_theorem_of_group_homomorphism`。"
+      ],
+      "fragmented_clues": [
+        "两个结构 映射",
+        "ker im injective surjective",
+        "fundamental theorem of group homomorphism",
+        "operation substructure formula",
+        "fundamental theorem of group homomorphism"
+      ]
+    },
+    {
+      "chinese_name": "第一同构定理",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在比较两个运算结构时，它追踪映射对乘法的保持。",
+        "ker、im、单射满射和商结构常一起出现。",
+        "围绕 `first_isomorphism_theorem`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `first_isomorphism_theorem`。"
+      ],
+      "fragmented_clues": [
+        "两个结构 映射",
+        "ker im injective surjective",
+        "first isomorphism theorem",
+        "operation substructure formula",
+        "first isomorphism theorem"
+      ]
+    },
+    {
+      "chinese_name": "第二同构定理",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在比较两个运算结构时，它追踪映射对乘法的保持。",
+        "ker、im、单射满射和商结构常一起出现。",
+        "围绕 `second_isomorphism_theorem`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `second_isomorphism_theorem`。"
+      ],
+      "fragmented_clues": [
+        "两个结构 映射",
+        "ker im injective surjective",
+        "second isomorphism theorem",
+        "operation substructure formula",
+        "second isomorphism theorem"
+      ]
+    },
+    {
+      "chinese_name": "第三同构定理",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在比较两个运算结构时，它追踪映射对乘法的保持。",
+        "ker、im、单射满射和商结构常一起出现。",
+        "围绕 `third_isomorphism_theorem`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `third_isomorphism_theorem`。"
+      ],
+      "fragmented_clues": [
+        "两个结构 映射",
+        "ker im injective surjective",
+        "third isomorphism theorem",
+        "operation substructure formula",
+        "third isomorphism theorem"
+      ]
+    },
+    {
+      "chinese_name": "自同构群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在比较两个运算结构时，它追踪映射对乘法的保持。",
+        "ker、im、单射满射和商结构常一起出现。",
+        "围绕 `automorphism_group`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `automorphism_group`。"
+      ],
+      "fragmented_clues": [
+        "两个结构 映射",
+        "ker im injective surjective",
+        "automorphism group",
+        "operation substructure formula",
+        "automorphism group"
+      ]
+    },
+    {
+      "chinese_name": "内自同构",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在比较两个运算结构时，它追踪映射对乘法的保持。",
+        "ker、im、单射满射和商结构常一起出现。",
+        "围绕 `inner_automorphism`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `inner_automorphism`。"
+      ],
+      "fragmented_clues": [
+        "两个结构 映射",
+        "ker im injective surjective",
+        "inner automorphism",
+        "operation substructure formula",
+        "inner automorphism"
+      ]
+    },
+    {
+      "chinese_name": "外自同构",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在比较两个运算结构时，它追踪映射对乘法的保持。",
+        "ker、im、单射满射和商结构常一起出现。",
+        "围绕 `outer_automorphism`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `outer_automorphism`。"
+      ],
+      "fragmented_clues": [
+        "两个结构 映射",
+        "ker im injective surjective",
+        "outer automorphism",
+        "operation substructure formula",
+        "outer automorphism"
+      ]
+    },
+    {
+      "chinese_name": "共轭作用",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在对称结构作用到集合时，它把抽象元素转成变换。",
+        "可达类、固定子结构和传递性把全局行为拆成局部数据。",
+        "围绕 `conjugation_action`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `conjugation_action`。"
+      ],
+      "fragmented_clues": [
+        "对称结构 集合",
+        "orbit stabilizer",
+        "conjugation action",
+        "operation substructure formula",
+        "conjugation action"
+      ]
+    },
+    {
+      "chinese_name": "类方程",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在内部对称和共轭关系中，它刻画元素或子结构的等价行为。",
+        "交换、保持和共轭分块常给出判别。",
+        "围绕 `class_equation`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `class_equation`。"
+      ],
+      "fragmented_clues": [
+        "内部对称 共轭",
+        "commute conjugate",
+        "class equation",
+        "operation substructure formula",
+        "class equation"
+      ]
+    },
+    {
+      "chinese_name": "p群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在有限阶结构中，它抽出素数幂部分研究。",
+        "整除关系、共轭性和计数条件给出强限制。",
+        "围绕 `p_group`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `p_group`。"
+      ],
+      "fragmented_clues": [
+        "有限阶 素数幂",
+        "divisibility conjugacy count",
+        "p group",
+        "operation substructure formula",
+        "p group"
+      ]
+    },
+    {
+      "chinese_name": "西罗子群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在有限阶结构中，它抽出素数幂部分研究。",
+        "整除关系、共轭性和计数条件给出强限制。",
+        "它是大小为 p^k 的最大 p 幂内部子结构。",
+        "所有这样的对象彼此共轭，个数满足 Sylow 计数条件。",
+        "标准英文名是 `sylow_subgroup`。"
+      ],
+      "fragmented_clues": [
+        "有限阶 素数幂",
+        "divisibility conjugacy count",
+        "maximal p-power",
+        "conjugacy n_p",
+        "sylow subgroup"
+      ]
+    },
+    {
+      "chinese_name": "正规列",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在分层分析结构时，它用子结构串记录复杂度。",
+        "商因子、换位操作和终止条件区分可解性与幂零性。",
+        "围绕 `normal_series`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `normal_series`。"
+      ],
+      "fragmented_clues": [
+        "分层 子结构串",
+        "quotient commutator terminal",
+        "normal series",
+        "operation substructure formula",
+        "normal series"
+      ]
+    },
+    {
+      "chinese_name": "组成列",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在分层分析结构时，它用子结构串记录复杂度。",
+        "商因子、换位操作和终止条件区分可解性与幂零性。",
+        "围绕 `composition_series`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `composition_series`。"
+      ],
+      "fragmented_clues": [
+        "分层 子结构串",
+        "quotient commutator terminal",
+        "composition series",
+        "operation substructure formula",
+        "composition series"
+      ]
+    },
+    {
+      "chinese_name": "若尔当赫尔德定理",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在分层分析结构时，它用子结构串记录复杂度。",
+        "商因子、换位操作和终止条件区分可解性与幂零性。",
+        "围绕 `jordan_holder_theorem`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `jordan_holder_theorem`。"
+      ],
+      "fragmented_clues": [
+        "分层 子结构串",
+        "quotient commutator terminal",
+        "jordan holder theorem",
+        "operation substructure formula",
+        "jordan holder theorem"
+      ]
+    },
+    {
+      "chinese_name": "可解列",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在分层分析结构时，它用子结构串记录复杂度。",
+        "商因子、换位操作和终止条件区分可解性与幂零性。",
+        "围绕 `solvable_series`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `solvable_series`。"
+      ],
+      "fragmented_clues": [
+        "分层 子结构串",
+        "quotient commutator terminal",
+        "solvable series",
+        "operation substructure formula",
+        "solvable series"
+      ]
+    },
+    {
+      "chinese_name": "换位子长度",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在分层分析结构时，它用子结构串记录复杂度。",
+        "商因子、换位操作和终止条件区分可解性与幂零性。",
+        "围绕 `commutator_length`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `commutator_length`。"
+      ],
+      "fragmented_clues": [
+        "分层 子结构串",
+        "quotient commutator terminal",
+        "commutator length",
+        "operation substructure formula",
+        "commutator length"
+      ]
+    },
+    {
+      "chinese_name": "单同态",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在比较两个运算结构时，它追踪映射对乘法的保持。",
+        "ker、im、单射满射和商结构常一起出现。",
+        "围绕 `monomorphism`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `monomorphism`。"
+      ],
+      "fragmented_clues": [
+        "两个结构 映射",
+        "ker im injective surjective",
+        "monomorphism",
+        "operation substructure formula",
+        "monomorphism"
+      ]
+    },
+    {
+      "chinese_name": "满同态",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在比较两个运算结构时，它追踪映射对乘法的保持。",
+        "ker、im、单射满射和商结构常一起出现。",
+        "围绕 `epimorphism`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `epimorphism`。"
+      ],
+      "fragmented_clues": [
+        "两个结构 映射",
+        "ker im injective surjective",
+        "epimorphism",
+        "operation substructure formula",
+        "epimorphism"
+      ]
+    },
+    {
+      "chinese_name": "同态像",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在比较两个运算结构时，它追踪映射对乘法的保持。",
+        "ker、im、单射满射和商结构常一起出现。",
+        "围绕 `homomorphic_image`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `homomorphic_image`。"
+      ],
+      "fragmented_clues": [
+        "两个结构 映射",
+        "ker im injective surjective",
+        "homomorphic image",
+        "operation substructure formula",
+        "homomorphic image"
+      ]
+    },
+    {
+      "chinese_name": "反同构",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在比较两个运算结构时，它追踪映射对乘法的保持。",
+        "ker、im、单射满射和商结构常一起出现。",
+        "围绕 `anti_isomorphism`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `anti_isomorphism`。"
+      ],
+      "fragmented_clues": [
+        "两个结构 映射",
+        "ker im injective surjective",
+        "anti isomorphism",
+        "operation substructure formula",
+        "anti isomorphism"
+      ]
+    },
+    {
+      "chinese_name": "二面体群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "它描述正 n 边形的旋转和反射对称。",
+        "常有表示 <r,s | r^n=s^2=e, srs=r^{-1}>。",
+        "标准英文名是 `dihedral_group`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "regular n-gon symmetries",
+        "r^n=s^2=e srs=r^{-1}",
+        "dihedral group"
+      ]
+    },
+    {
+      "chinese_name": "四元数群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "围绕 `quaternion_group`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `quaternion_group`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "quaternion group",
+        "operation substructure formula",
+        "quaternion group"
+      ]
+    },
+    {
+      "chinese_name": "克莱因四元群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "围绕 `klein_four_group`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `klein_four_group`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "klein four group",
+        "operation substructure formula",
+        "klein four group"
+      ]
+    },
+    {
+      "chinese_name": "矩阵群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "围绕 `matrix_group`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `matrix_group`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "matrix group",
+        "operation substructure formula",
+        "matrix group"
+      ]
+    },
+    {
+      "chinese_name": "一般线性群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "它由向量空间上的全部可逆线性变换组成。",
+        "n 维情形常记 GL(n,F)。",
+        "标准英文名是 `general_linear_group`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "invertible linear maps",
+        "GL(n,F)",
+        "general linear group"
+      ]
+    },
+    {
+      "chinese_name": "特殊线性群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "它由行列式为 1 的可逆矩阵组成。",
+        "常记 SL(n,F)。",
+        "标准英文名是 `special_linear_group`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "det=1",
+        "SL(n,F)",
+        "special linear group"
+      ]
+    },
+    {
+      "chinese_name": "正交群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "它由保持实内积的线性变换组成。",
+        "矩阵条件是 A^T A=I。",
+        "标准英文名是 `orthogonal_group`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "real inner product",
+        "A^T A=I",
+        "orthogonal group"
+      ]
+    },
+    {
+      "chinese_name": "酉群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "它由保持复内积的线性变换组成。",
+        "矩阵条件是 U^*U=I。",
+        "标准英文名是 `unitary_group`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "complex inner product",
+        "U^*U=I",
+        "unitary group"
+      ]
+    },
+    {
+      "chinese_name": "环的单位群",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在带二元运算的集合中，它描述可复合的代数结构。",
+        "判断时先检查封闭性、结合关系、单位对象和可逆性。",
+        "围绕 `unit_group_of_ring`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `unit_group_of_ring`。"
+      ],
+      "fragmented_clues": [
+        "集合 二元运算",
+        "closure associativity identity inverse",
+        "unit group of ring",
+        "operation substructure formula",
+        "unit group of ring"
+      ]
+    },
+    {
+      "chinese_name": "左作用",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在对称结构作用到集合时，它把抽象元素转成变换。",
+        "可达类、固定子结构和传递性把全局行为拆成局部数据。",
+        "围绕 `left_action`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `left_action`。"
+      ],
+      "fragmented_clues": [
+        "对称结构 集合",
+        "orbit stabilizer",
+        "left action",
+        "operation substructure formula",
+        "left action"
+      ]
+    },
+    {
+      "chinese_name": "右作用",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在对称结构作用到集合时，它把抽象元素转成变换。",
+        "可达类、固定子结构和传递性把全局行为拆成局部数据。",
+        "围绕 `right_action`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `right_action`。"
+      ],
+      "fragmented_clues": [
+        "对称结构 集合",
+        "orbit stabilizer",
+        "right action",
+        "operation substructure formula",
+        "right action"
+      ]
+    },
+    {
+      "chinese_name": "传递作用",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在对称结构作用到集合时，它把抽象元素转成变换。",
+        "可达类、固定子结构和传递性把全局行为拆成局部数据。",
+        "围绕 `transitive_action`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `transitive_action`。"
+      ],
+      "fragmented_clues": [
+        "对称结构 集合",
+        "orbit stabilizer",
+        "transitive action",
+        "operation substructure formula",
+        "transitive action"
+      ]
+    },
+    {
+      "chinese_name": "忠实作用",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在对称结构作用到集合时，它把抽象元素转成变换。",
+        "可达类、固定子结构和传递性把全局行为拆成局部数据。",
+        "围绕 `faithful_action`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `faithful_action`。"
+      ],
+      "fragmented_clues": [
+        "对称结构 集合",
+        "orbit stabilizer",
+        "faithful action",
+        "operation substructure formula",
+        "faithful action"
+      ]
+    },
+    {
+      "chinese_name": "诱导表示",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在把抽象对称线性化时，它让元素对应矩阵或线性算子。",
+        "不变子空间、迹函数和分解问题是核心数据。",
+        "围绕 `induced_representation`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `induced_representation`。"
+      ],
+      "fragmented_clues": [
+        "抽象对称 线性化",
+        "matrix trace invariant subspace",
+        "induced representation",
+        "operation substructure formula",
+        "induced representation"
+      ]
+    },
+    {
+      "chinese_name": "不可约表示",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在把抽象对称线性化时，它让元素对应矩阵或线性算子。",
+        "不变子空间、迹函数和分解问题是核心数据。",
+        "围绕 `irreducible_representation`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `irreducible_representation`。"
+      ],
+      "fragmented_clues": [
+        "抽象对称 线性化",
+        "matrix trace invariant subspace",
+        "irreducible representation",
+        "operation substructure formula",
+        "irreducible representation"
+      ]
+    },
+    {
+      "chinese_name": "正则表示",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在把抽象对称线性化时，它让元素对应矩阵或线性算子。",
+        "不变子空间、迹函数和分解问题是核心数据。",
+        "围绕 `regular_representation`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `regular_representation`。"
+      ],
+      "fragmented_clues": [
+        "抽象对称 线性化",
+        "matrix trace invariant subspace",
+        "regular representation",
+        "operation substructure formula",
+        "regular representation"
+      ]
+    },
+    {
+      "chinese_name": "舒尔引理",
+      "source_file": "words/数学/困难模式/group_theory_terms.csv",
+      "complete_clues": [
+        "在把抽象对称线性化时，它让元素对应矩阵或线性算子。",
+        "不变子空间、迹函数和分解问题是核心数据。",
+        "围绕 `schur_lemma`，核心是检查运算、子结构、映射或作用关系。",
+        "标准记号、公理或公式能把它与相近对象区分开。",
+        "标准英文名是 `schur_lemma`。"
+      ],
+      "fragmented_clues": [
+        "抽象对称 线性化",
+        "matrix trace invariant subspace",
+        "schur lemma",
+        "operation substructure formula",
+        "schur lemma"
+      ]
+    }
+  ]
+}

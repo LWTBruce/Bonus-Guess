@@ -1,0 +1,653 @@
+{
+  "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+  "entries": [
+    {
+      "chinese_name": "直线",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "在坐标系或几何图中，它表示向两端无限延伸的一维轨迹。",
+        "高中题常用两点、一个点和方向、或一般式方程来确定它。",
+        "斜率相同可判断同向不相交，斜率乘积为 -1 常对应互相成直角。",
+        "解析几何里常写成 y=kx+b 或 Ax+By+C=0。",
+        "英文名是 line。"
+      ],
+      "fragmented_clues": [
+        "两端无限延伸 一维轨迹",
+        "两点 一点一方向 一般式",
+        "k1=k2 k1k2=-1",
+        "y=kx+b Ax+By+C=0",
+        "line"
+      ]
+    },
+    {
+      "chinese_name": "射线",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "在作图题中，它从一个端点出发并沿某个方向无限延伸。",
+        "表示方向时，常由端点和另一点共同确定朝向。",
+        "研究角的两边时，经常把同一端点发出的两条这类图形放在一起。",
+        "它只有一个端点，另一侧没有终点。",
+        "英文名是 ray。"
+      ],
+      "fragmented_clues": [
+        "一个端点 单向无限",
+        "端点 另一点 方向",
+        "公共端点 两边 开口",
+        "一个端点 无终点",
+        "ray"
+      ]
+    },
+    {
+      "chinese_name": "线段",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "在几何图中，它表示两个端点之间有限的一段。",
+        "长度计算常借助距离公式、勾股定理或相似关系。",
+        "中点坐标可由两个端点坐标分别求平均得到。",
+        "端点、长度和中点是锁定它的核心信息。",
+        "英文名是 line segment。"
+      ],
+      "fragmented_clues": [
+        "两个端点 有限一段",
+        "距离公式 勾股定理 相似",
+        "中点坐标 坐标平均",
+        "端点 长度 中点",
+        "line segment"
+      ]
+    },
+    {
+      "chinese_name": "平面",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "立体几何中，它像一张无限铺展的二维承载面。",
+        "三个不共线点、两条相交线或一条线与线外一点都能确定它。",
+        "线与面的关系、两个面的夹角和距离判断常围绕它展开。",
+        "用法向量或方程描述时，所有满足条件的点都落在同一二维面上。",
+        "英文名是 plane。"
+      ],
+      "fragmented_clues": [
+        "二维承载面 无限铺展",
+        "三点不共线 两相交线 线外一点",
+        "线面关系 二面角 距离",
+        "法向量 方程 点集",
+        "plane"
+      ]
+    },
+    {
+      "chinese_name": "空间几何体",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "立体几何题中，它是有长宽高的三维图形对象。",
+        "三视图、直观图、表面积和体积常用来描述它。",
+        "常见对象可由顶点、棱、面、底面和高来分析。",
+        "判断时要把二维图形信息还原成立体结构。",
+        "英文名是 solid figure。"
+      ],
+      "fragmented_clues": [
+        "三维图形 长宽高",
+        "三视图 直观图 表面积 体积",
+        "顶点 棱 面 底面 高",
+        "二维信息 立体还原",
+        "solid figure"
+      ]
+    },
+    {
+      "chinese_name": "棱柱",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "它由两个全等且互相平行的多边形作为底面。",
+        "侧面通常是若干个平行四边形，侧棱彼此平行且相等。",
+        "体积常用底面积乘高来计算。",
+        "按底面形状可分成三边、四边等不同类型的 prism。",
+        "英文名是 prism。"
+      ],
+      "fragmented_clues": [
+        "两底面 全等 平行 多边形",
+        "侧面 平行四边形 侧棱平行相等",
+        "V=Sh",
+        "底面形状 prism",
+        "prism"
+      ]
+    },
+    {
+      "chinese_name": "棱锥",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "它有一个多边形底面，所有侧面都汇聚到同一个顶点。",
+        "侧面是三角形，高是顶点到底面所在面的距离。",
+        "体积等于底面积乘高再除以 3。",
+        "从顶点、底面和侧棱的组合可识别这种 pyramid。",
+        "英文名是 pyramid。"
+      ],
+      "fragmented_clues": [
+        "多边形底面 公共顶点",
+        "三角形侧面 顶点到底面距离",
+        "V=Sh/3",
+        "顶点 底面 侧棱 pyramid",
+        "pyramid"
+      ]
+    },
+    {
+      "chinese_name": "棱台",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "它可看作一个锥状多面体被平行于底面的截面截去顶部后留下的部分。",
+        "上下两个底面相似且互相平行，侧面多为梯形。",
+        "体积公式含上底面积、下底面积和两者乘积的平方根。",
+        "判断时常抓住两个相似平行多边形底面和若干梯形侧面。",
+        "英文名是 frustum of a pyramid。"
+      ],
+      "fragmented_clues": [
+        "平行截面 截去顶部",
+        "上下底面 相似 平行 侧面梯形",
+        "V=h(S1+S2+sqrt(S1S2))/3",
+        "相似多边形 梯形侧面",
+        "frustum of a pyramid"
+      ]
+    },
+    {
+      "chinese_name": "圆柱",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "它由两个全等平行的圆形底面和一个曲面侧面围成。",
+        "展开侧面会得到矩形，矩形一边等于底面周长。",
+        "体积常写成底面积乘高，侧面积常写成 2πrh。",
+        "轴截面为矩形是识别这种 cylinder 的常用特征。",
+        "英文名是 cylinder。"
+      ],
+      "fragmented_clues": [
+        "两底面 全等 平行 曲面侧面",
+        "侧面展开 矩形 底面周长",
+        "V=πr^2h S侧=2πrh",
+        "轴截面 矩形 cylinder",
+        "cylinder"
+      ]
+    },
+    {
+      "chinese_name": "圆锥",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "它有一个圆形底面，侧面向一个顶点收拢。",
+        "轴截面通常是等腰三角形，母线连接顶点和底面边界。",
+        "体积等于底面积乘高再除以 3。",
+        "底面半径、高和母线满足常见的直角三角形关系。",
+        "英文名是 cone。"
+      ],
+      "fragmented_clues": [
+        "圆形底面 一个顶点",
+        "轴截面 等腰三角形 母线",
+        "V=πr^2h/3",
+        "r h l 直角关系",
+        "cone"
+      ]
+    },
+    {
+      "chinese_name": "圆台",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "它可看作锥状旋转体被平行于底面的截面截去顶部后留下的部分。",
+        "上下两个底面都是同心方向的圆形截面，半径通常不同。",
+        "母线、高和两个底面半径差组成直角三角形。",
+        "体积公式含 R^2、Rr 和 r^2 三项。",
+        "英文名是 frustum of a cone。"
+      ],
+      "fragmented_clues": [
+        "平行截面 截去顶部",
+        "上下圆形底面 半径不同",
+        "母线 高 半径差",
+        "V=πh(R^2+Rr+r^2)/3",
+        "frustum of a cone"
+      ]
+    },
+    {
+      "chinese_name": "球",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "它表示空间中到某个定点距离相等的所有点形成的曲面，也可指其围成的实体。",
+        "截面若过中心，会得到半径最大的圆形截面。",
+        "表面积为 4πr^2，体积为 4πr^3/3。",
+        "中心和半径能完全确定这个三维对象。",
+        "英文名是 sphere。"
+      ],
+      "fragmented_clues": [
+        "定点 等距 曲面 实体",
+        "过中心截面 最大圆形截面",
+        "S=4πr^2 V=4πr^3/3",
+        "中心 半径 三维对象",
+        "sphere"
+      ]
+    },
+    {
+      "chinese_name": "三视图",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "立体几何中，它用三个方向的投影记录同一个三维物体。",
+        "正面、侧面和上方观察得到的图形要在长、宽、高上互相对应。",
+        "由它还原实体时，常检查可见边、遮挡边和尺寸对齐。",
+        "主、左、俯三个投影是最常见组合。",
+        "英文名是 three views。"
+      ],
+      "fragmented_clues": [
+        "三个方向 投影 三维物体",
+        "正面 侧面 上方 长宽高对应",
+        "可见边 遮挡边 尺寸对齐",
+        "主视 左视 俯视",
+        "three views"
+      ]
+    },
+    {
+      "chinese_name": "直观图",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "它把立体或平面图形画成便于观察空间感的斜向示意图。",
+        "高中常用斜二测画法，水平长度保持，纵向长度按比例缩短。",
+        "画图时平行关系一般保持，角度和长度未必真实。",
+        "它重在表达形状和相对位置，而不是精确度量。",
+        "英文名是 pictorial drawing。"
+      ],
+      "fragmented_clues": [
+        "空间感 斜向示意",
+        "斜二测 水平不变 纵向减半",
+        "平行保持 长度角度变化",
+        "形状 相对位置",
+        "pictorial drawing"
+      ]
+    },
+    {
+      "chinese_name": "平行",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "几何图中，两条线或两个面若始终不相交，就会出现这种位置关系。",
+        "解析几何里，两条非竖直线满足斜率相等可作出判断。",
+        "立体几何中常用判定定理把线线关系转化成线面或面面关系。",
+        "同向、不交、距离保持是它的核心特征。",
+        "英文名是 parallel。"
+      ],
+      "fragmented_clues": [
+        "不相交 位置关系",
+        "非竖直线 k1=k2",
+        "线线 线面 面面 判定",
+        "同向 不交 距离保持",
+        "parallel"
+      ]
+    },
+    {
+      "chinese_name": "垂直",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "几何图中，它描述两条线、线与面或两个面形成直角的关系。",
+        "解析几何里，两条非竖直线的斜率乘积为 -1 常可判断。",
+        "立体几何中，若一条线与面内两条相交线都成直角，可推出线与面成这种关系。",
+        "90°、法向量和点到面距离题常围绕它展开。",
+        "英文名是 perpendicular。"
+      ],
+      "fragmented_clues": [
+        "直角 位置关系",
+        "非竖直线 k1k2=-1",
+        "面内两相交线 线面判定",
+        "90° 法向量 距离",
+        "perpendicular"
+      ]
+    },
+    {
+      "chinese_name": "异面直线",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "在立体图形中，两条不相交且不在同一平面内的线会形成这种关系。",
+        "它不同于相交或平行，必须放在空间中判断。",
+        "求夹角时常把其中一条平移到与另一条相交的位置。",
+        "不共面是排除平面内两线关系的关键。",
+        "英文名是 skew lines。"
+      ],
+      "fragmented_clues": [
+        "不相交 不共面 两线",
+        "空间判断 非相交 非平行",
+        "平移 求夹角",
+        "不共面 核心",
+        "skew lines"
+      ]
+    },
+    {
+      "chinese_name": "线面平行",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "立体几何中，一条线与一个面没有公共点时会出现这种关系。",
+        "常用判定是找到面内一条与已知线同向不交的线。",
+        "证明题里经常先证线线同向不交，再推出线与面的关系。",
+        "若已知线不在面内且与面内某线同向不交，就能锁定它。",
+        "英文名是 line-plane parallelism。"
+      ],
+      "fragmented_clues": [
+        "一线 一面 无公共点",
+        "面内一线 同向不交",
+        "线线关系 推出线面关系",
+        "线不在面内 面内对应线",
+        "line-plane parallelism"
+      ]
+    },
+    {
+      "chinese_name": "面面平行",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "立体几何中，两个面没有公共点时会出现这种位置关系。",
+        "常用判定是一个面内两条相交线分别与另一个面保持同向不交。",
+        "若第三个面去截它们，得到的两条交线也同向不交。",
+        "距离处处相等和法向量同向是常见判断入口。",
+        "英文名是 plane-plane parallelism。"
+      ],
+      "fragmented_clues": [
+        "两面 无公共点",
+        "面内两相交线 分别同向不交",
+        "第三面 截线同向不交",
+        "距离相等 法向量同向",
+        "plane-plane parallelism"
+      ]
+    },
+    {
+      "chinese_name": "线面垂直",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "立体几何中，它描述一条线与一个面内所有方向都成直角。",
+        "判定时只需验证这条线与面内两条相交线都成直角。",
+        "点到面的距离、正投影和棱锥高常用到这种关系。",
+        "方向向量与面的法向量同向时也可确认。",
+        "英文名是 line-plane perpendicularity。"
+      ],
+      "fragmented_clues": [
+        "一线 一面 所有方向 直角",
+        "面内两相交线 均成直角",
+        "点面距离 正投影 高",
+        "方向向量 法向量同向",
+        "line-plane perpendicularity"
+      ]
+    },
+    {
+      "chinese_name": "面面垂直",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "立体几何中，它描述两个面形成直二面角。",
+        "常用判定是一个面内存在一条线与另一个面成直角。",
+        "求二面角、投影面积和折叠问题时经常使用。",
+        "两个法向量成直角也能给出坐标化判断。",
+        "英文名是 plane-plane perpendicularity。"
+      ],
+      "fragmented_clues": [
+        "两面 直二面角",
+        "一面内一线 另一面直角",
+        "二面角 投影面积 折叠",
+        "法向量 点积为零",
+        "plane-plane perpendicularity"
+      ]
+    },
+    {
+      "chinese_name": "空间向量",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "它把三维几何中的方向和长度写成代数对象。",
+        "坐标表示常写成有序三元组，可做加减、数乘和点积。",
+        "证明平行或垂直时，常比较坐标倍数或计算数量积。",
+        "立体几何的角、距离和共面问题可由它转化为运算。",
+        "英文名是 space vector。"
+      ],
+      "fragmented_clues": [
+        "三维 方向 长度 代数对象",
+        "有序三元组 加减 数乘 点积",
+        "坐标倍数 数量积",
+        "角 距离 共面 运算",
+        "space vector"
+      ]
+    },
+    {
+      "chinese_name": "空间直角坐标系",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "它在三维空间中用三条互相成直角的数轴定位点。",
+        "点的位置常写成 (x,y,z)，分别对应三个方向的坐标。",
+        "距离、中点、向量坐标和立体几何计算都可放入这个框架。",
+        "原点、x 轴、y 轴和 z 轴共同确定它。",
+        "英文名是 rectangular coordinate system in space。"
+      ],
+      "fragmented_clues": [
+        "三维 三数轴 互成直角",
+        "点 (x,y,z)",
+        "距离 中点 向量坐标",
+        "原点 x轴 y轴 z轴",
+        "rectangular coordinate system in space"
+      ]
+    },
+    {
+      "chinese_name": "直线方程",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "解析几何中，它用代数式刻画一条无限延伸的一维图形。",
+        "常见形式包括斜截式、点斜式、两点式和一般式。",
+        "已知点、斜率、截距或两个点时都可建立对应表达式。",
+        "y=kx+b 与 Ax+By+C=0 是最常见写法。",
+        "英文名是 equation of a line。"
+      ],
+      "fragmented_clues": [
+        "一维图形 代数式",
+        "斜截式 点斜式 两点式 一般式",
+        "点 斜率 截距 两点",
+        "y=kx+b Ax+By+C=0",
+        "equation of a line"
+      ]
+    },
+    {
+      "chinese_name": "斜率",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "解析几何中，它衡量一条非竖直线相对 x 轴的倾斜程度。",
+        "由两点坐标可用纵坐标差除以横坐标差求得。",
+        "它相等常用于判断同向不交，乘积为 -1 常用于判断成直角。",
+        "在 y=kx+b 中，k 就表示这个量。",
+        "英文名是 slope。"
+      ],
+      "fragmented_clues": [
+        "倾斜程度 非竖直",
+        "(y2-y1)/(x2-x1)",
+        "相等 同向不交 乘积-1",
+        "y=kx+b k",
+        "slope"
+      ]
+    },
+    {
+      "chinese_name": "倾斜角",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "解析几何中，它记录一条线与 x 轴正方向形成的方向角度。",
+        "取值常在 0° 到 180° 之间，竖直情形也有对应角度。",
+        "其正切值在非 90° 情况下等于斜率。",
+        "它把几何方向和代数中的 k 联系起来。",
+        "英文名是 angle of inclination。"
+      ],
+      "fragmented_clues": [
+        "x轴正方向 方向角度",
+        "0°到180° 竖直情形",
+        "tan α=k α≠90°",
+        "几何方向 k",
+        "angle of inclination"
+      ]
+    },
+    {
+      "chinese_name": "截距",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "解析几何中，它描述图形与坐标轴相交时留下的有向数值。",
+        "在斜截式 y=kx+b 中，b 表示与 y 轴交点的纵坐标。",
+        "求它时常令 x=0 或 y=0，把交点落到某条坐标轴上。",
+        "符号可能为正、负或零，不一定表示长度。",
+        "英文名是 intercept。"
+      ],
+      "fragmented_clues": [
+        "坐标轴交点 有向数值",
+        "y=kx+b b",
+        "x=0 y=0",
+        "正 负 零 非长度",
+        "intercept"
+      ]
+    },
+    {
+      "chinese_name": "圆",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "平面内，到同一个定点距离相等的点构成这种曲线。",
+        "中心和半径能完全确定它的位置与大小。",
+        "标准式常写成 (x-a)^2+(y-b)^2=r^2。",
+        "切线、弦、中心角和距离关系是常见题型入口。",
+        "英文名是 circle。"
+      ],
+      "fragmented_clues": [
+        "平面 定点 等距 曲线",
+        "中心 半径",
+        "(x-a)^2+(y-b)^2=r^2",
+        "切线 弦 中心角 距离",
+        "circle"
+      ]
+    },
+    {
+      "chinese_name": "圆的方程",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "解析几何中，它用代数式刻画一条到定点等距的平面曲线。",
+        "题目常由中心坐标、半径、直径端点或三点确定表达式。",
+        "标准式展开后可化成 x^2+y^2+Dx+Ey+F=0。",
+        "配方是从一般式找中心和半径的常用步骤。",
+        "英文名是 equation of a circle。"
+      ],
+      "fragmented_clues": [
+        "等距曲线 代数式",
+        "中心 半径 直径端点 三点",
+        "x^2+y^2+Dx+Ey+F=0",
+        "配方 中心 半径",
+        "equation of a circle"
+      ]
+    },
+    {
+      "chinese_name": "圆锥曲线",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "解析几何中，这类曲线可由平面截取双锥面得到。",
+        "高中主要研究椭圆、双曲线和抛物线三种标准模型。",
+        "焦点、准线、离心率和标准方程是核心信息。",
+        "统一定义常与点到固定点和固定线的距离比有关。",
+        "英文名是 conic section。"
+      ],
+      "fragmented_clues": [
+        "平面 截取 双锥面",
+        "椭圆 双曲线 抛物线",
+        "焦点 准线 离心率 标准方程",
+        "定点 定线 距离比",
+        "conic section"
+      ]
+    },
+    {
+      "chinese_name": "椭圆",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "平面内，到两个固定点距离之和为常数的点形成这种封闭曲线。",
+        "标准方程常见为 x^2/a^2+y^2/b^2=1 且 a>b>0。",
+        "长轴、短轴、焦距和离心率共同描述它的形状。",
+        "离心率介于 0 和 1 之间。",
+        "英文名是 ellipse。"
+      ],
+      "fragmented_clues": [
+        "两固定点 距离和 常数 封闭曲线",
+        "x^2/a^2+y^2/b^2=1 a>b>0",
+        "长轴 短轴 焦距 离心率",
+        "0<e<1",
+        "ellipse"
+      ]
+    },
+    {
+      "chinese_name": "双曲线",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "平面内，到两个固定点距离之差的绝对值为常数的点形成这种曲线。",
+        "标准方程可写成 x^2/a^2-y^2/b^2=1 或交换 x、y 位置。",
+        "两条渐近线会限制分支的走向。",
+        "离心率大于 1 是重要特征。",
+        "英文名是 hyperbola。"
+      ],
+      "fragmented_clues": [
+        "两固定点 距离差绝对值 常数",
+        "x^2/a^2-y^2/b^2=1",
+        "两分支 渐近线",
+        "e>1",
+        "hyperbola"
+      ]
+    },
+    {
+      "chinese_name": "抛物线",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "平面内，到一个固定点和一条固定线距离相等的点形成这种曲线。",
+        "标准方程常见为 y^2=2px 或 x^2=2py。",
+        "顶点、对称轴、焦点和准线决定它的基本位置。",
+        "高中题常把它和二次函数图像、切线或焦半径联系起来。",
+        "英文名是 parabola。"
+      ],
+      "fragmented_clues": [
+        "定点 定线 等距",
+        "y^2=2px x^2=2py",
+        "顶点 对称轴 焦点 准线",
+        "二次函数 切线 焦半径",
+        "parabola"
+      ]
+    },
+    {
+      "chinese_name": "焦点",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "在椭圆、双曲线和抛物线中，它是参与距离定义的固定点。",
+        "椭圆和双曲线通常有两个这类点，抛物线通常有一个。",
+        "与准线、离心率或焦半径一起出现时，常能确定曲线类型。",
+        "标准方程中的 c 常表示中心到这个固定点的距离。",
+        "英文名是 focus。"
+      ],
+      "fragmented_clues": [
+        "固定点 距离定义",
+        "椭圆 双曲线 两个 抛物线 一个",
+        "准线 离心率 焦半径",
+        "c 中心距离",
+        "focus"
+      ]
+    },
+    {
+      "chinese_name": "准线",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "在抛物线及统一定义中，它是参与距离比较的固定直线。",
+        "抛物线上的点到固定点和这条固定线的距离相等。",
+        "与焦点配合时，可以从几何定义推出标准方程。",
+        "在离心率定义中，点到固定点距离与点到它的距离成固定比。",
+        "英文名是 directrix。"
+      ],
+      "fragmented_clues": [
+        "固定直线 距离比较",
+        "抛物线 等距",
+        "焦点 几何定义 标准方程",
+        "距离比 e",
+        "directrix"
+      ]
+    },
+    {
+      "chinese_name": "离心率",
+      "source_file": "words/数学/入门模式：高中数学/high_school_geometry_terms.csv",
+      "complete_clues": [
+        "它描述圆锥类曲线偏离圆形或张开程度的数值。",
+        "在标准模型中常写作 c/a 或与点到焦点、准线的距离比有关。",
+        "椭圆中它介于 0 和 1，双曲线中它大于 1。",
+        "数值越接近 0，椭圆越接近圆形。",
+        "英文名是 eccentricity。"
+      ],
+      "fragmented_clues": [
+        "偏离程度 张开程度 数值",
+        "e=c/a 距离比",
+        "椭圆 0<e<1 双曲线 e>1",
+        "接近0 接近圆形",
+        "eccentricity"
+      ]
+    }
+  ]
+}

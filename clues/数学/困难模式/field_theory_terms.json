@@ -1,0 +1,2021 @@
+{
+  "source_file": "words/数学/困难模式/field_theory_terms.csv",
+  "entries": [
+    {
+      "chinese_name": "场论",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "研究对象是带有加法、乘法和除法的代数体系，以及它们之间的包含关系。",
+        "多项式的根、方程可解性和向量空间维数常在同一个框架里比较。",
+        "典型问题会考察 F⊂E、[E:F]、F(α)、分裂域和 Gal(E/F) 的相互关系。",
+        "代数元、超越元、正规性与可分性决定许多扩张的结构。",
+        "英文名是 field theory。"
+      ],
+      "fragmented_clues": [
+        "加法 乘法 除法 代数体系",
+        "多项式根 方程可解性 向量空间维数",
+        "F⊂E [E:F] F(α) splitting field Gal(E/F)",
+        "algebraic elements transcendental elements normal separable",
+        "field theory"
+      ]
+    },
+    {
+      "chinese_name": "域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "一个集合同时带有两种二元运算，并且两套运算彼此满足分配律。",
+        "加法部分形成交换群，非零元素在乘法下也形成交换群。",
+        "熟悉例子包括 Q、R、C、F_p 和 F_q。",
+        "任意非零元素都有乘法逆元，这是它区别于一般整环的关键。",
+        "英文名是 field，常记作 F、K 或 k。"
+      ],
+      "fragmented_clues": [
+        "集合 加法 乘法 分配律",
+        "加法交换群 非零元素 乘法交换群",
+        "Q R C F_p F_q",
+        "非零元素 乘法逆元 整环区别",
+        "field F K k"
+      ]
+    },
+    {
+      "chinese_name": "子域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在一个较大的 field 内部，某个子集合仍然保留完整的四则运算。",
+        "包含 0 和 1，并且对加减乘除都封闭，是最直接的检验方式。",
+        "若 F⊂K 且 F 本身也是 field，就得到这一层较小结构。",
+        "它常作为扩张 E/F 中的底层对象，也可以作为中间层出现。",
+        "英文名是 subfield，常写作 F≤K 或 F⊂K。"
+      ],
+      "fragmented_clues": [
+        "larger field 子集合 四则运算",
+        "0 1 加减乘除 封闭",
+        "F⊂K F field",
+        "extension E/F base object intermediate layer",
+        "subfield F≤K F⊂K"
+      ]
+    },
+    {
+      "chinese_name": "素域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "每个 field 都含有一个由乘法单位元生成的最小底层 field。",
+        "反复相加 1 会产生整数的像，随后再补上必要的商。",
+        "特征为 0 时同构于 Q，特征为 p 时同构于 F_p。",
+        "它不含更小的同类子结构，是所有后续扩张的初始底座。",
+        "英文名是 prime field。"
+      ],
+      "fragmented_clues": [
+        "1 生成 最小底层 field",
+        "n·1 integers image fractions",
+        "char 0 Q char p F_p",
+        "最小同类结构 初始底座",
+        "prime field"
+      ]
+    },
+    {
+      "chinese_name": "扩域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "较小的 field F 被包含在较大的 field E 中时，运算在 E 里继续兼容。",
+        "E 可以看成 F 上的向量空间，也可以由向 F 添入元素生成。",
+        "常见写法是 E/F、K/F 或 F⊂E。",
+        "研究重点包括新元素满足的多项式方程和维数 [E:F]。",
+        "英文名是 extension field。"
+      ],
+      "fragmented_clues": [
+        "F⊂E compatible operations",
+        "E vector space over F adjoining elements",
+        "E/F K/F F⊂E",
+        "polynomial equations new elements [E:F]",
+        "extension field"
+      ]
+    },
+    {
+      "chinese_name": "代数扩张",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在 E/F 中，每个新元素都由 F 上的某个非零多项式约束。",
+        "这样的元素不会引入自由参数，而是作为方程的根出现。",
+        "判定时检查任意 α∈E 是否满足 f(α)=0，其中 0≠f(x)∈F[x]。",
+        "有限维扩张一定具有这一性质，反向未必保证维数有限。",
+        "英文名是 algebraic extension。"
+      ],
+      "fragmented_clues": [
+        "E/F new elements nonzero polynomial over F",
+        "equation roots no free parameter",
+        "α∈E f(α)=0 0≠f(x)∈F[x]",
+        "finite-dimensional extension implication",
+        "algebraic extension"
+      ]
+    },
+    {
+      "chinese_name": "超越扩张",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在 E/F 中，至少有元素不受 F 上任何非零多项式方程约束。",
+        "这类新元素更像自由变量，生成的子结构类似有理函数环境。",
+        "若 t 不满足任何 0≠f(x)∈F[x] 的关系，则 F(t)/F 是典型例子。",
+        "它的大小常由超越基和相应基数衡量。",
+        "英文名是 transcendental extension。"
+      ],
+      "fragmented_clues": [
+        "E/F element no nonzero polynomial relation",
+        "free variable rational function environment",
+        "t 0≠f(x)∈F[x] no relation F(t)/F",
+        "transcendence basis cardinality",
+        "transcendental extension"
+      ]
+    },
+    {
+      "chinese_name": "有限扩张",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在 E/F 中，较大的 field 作为 F 上向量空间时维数有限。",
+        "维数给出扩张的规模，并能在塔 E/K/F 中相乘。",
+        "定义等价于 [E:F]<∞。",
+        "这种情形中的每个元素都满足 F 上的非零多项式方程。",
+        "英文名是 finite extension。"
+      ],
+      "fragmented_clues": [
+        "E over F vector space finite dimension",
+        "degree tower E/K/F multiplication",
+        "[E:F]<∞",
+        "every element polynomial over F",
+        "finite extension"
+      ]
+    },
+    {
+      "chinese_name": "无限扩张",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在 E/F 中，E 作为 F 上向量空间没有有限基。",
+        "它可能来自无限代数塔，也可能来自添加超越元素。",
+        "典型判据是 [E:F] 不为有限自然数。",
+        "代数闭包、可分闭包和 F(t)/F 都能提供常见样本。",
+        "英文名是 infinite extension。"
+      ],
+      "fragmented_clues": [
+        "E over F vector space no finite basis",
+        "infinite algebraic tower transcendental element",
+        "[E:F] not finite",
+        "algebraic closure separable closure F(t)/F",
+        "infinite extension"
+      ]
+    },
+    {
+      "chinese_name": "扩张次数",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "它量化 E/F 中较大 field 相对于较小 field 的线性维数。",
+        "选择 F 上的一组基后，基的个数就是这个数值。",
+        "标准记号为 [E:F]=dim_F E。",
+        "塔公式给出 [E:F]=[E:K][K:F]。",
+        "英文名是 degree of extension。"
+      ],
+      "fragmented_clues": [
+        "E/F linear dimension",
+        "basis over F cardinality",
+        "[E:F]=dim_F E",
+        "tower formula [E:F]=[E:K][K:F]",
+        "degree of extension"
+      ]
+    },
+    {
+      "chinese_name": "代数元",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在 E/F 中，某个元素可能被 F 系数的多项式方程精确捕捉。",
+        "它与自由变量不同，所有运算都可被有限多项式关系约束。",
+        "若存在 0≠f(x)∈F[x] 使 f(α)=0，则 α 具有该性质。",
+        "其最低次数首一不可约方程会进一步给出 F(α)/F 的次数。",
+        "英文名是 algebraic element。"
+      ],
+      "fragmented_clues": [
+        "E/F element polynomial equation over F",
+        "finite polynomial relation no free variable",
+        "0≠f(x)∈F[x] f(α)=0",
+        "monic irreducible equation [F(α):F]",
+        "algebraic element"
+      ]
+    },
+    {
+      "chinese_name": "超越元",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在 E/F 中，某个元素可能不满足任何 F 系数非零多项式方程。",
+        "把它加入 F 后，得到的结构与一元有理函数 field 类似。",
+        "判定时要排除所有 0≠f(x)∈F[x] 的关系 f(α)=0。",
+        "若 α 具有该性质，则 F(α) 与 F(x) 同构。",
+        "英文名是 transcendental element。"
+      ],
+      "fragmented_clues": [
+        "E/F element no polynomial equation over F",
+        "adjoin element rational function field",
+        "0≠f(x)∈F[x] f(α)=0 exclusion",
+        "F(α) ≅ F(x)",
+        "transcendental element"
+      ]
+    },
+    {
+      "chinese_name": "最小多项式",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "给定 α∈E 和底层 field F，可以寻找所有使 α 为根的 F 系数多项式。",
+        "这些多项式构成 F[x] 中的一个主理想。",
+        "首一生成元就是次数最低的不可约方程。",
+        "它的次数等于 [F(α):F]，并决定 α 的全部 F-代数关系。",
+        "英文名是 minimal polynomial，常记作 m_{α,F}(x)。"
+      ],
+      "fragmented_clues": [
+        "α∈E F-coefficient polynomials root",
+        "ideal in F[x] principal",
+        "monic generator lowest degree irreducible",
+        "degree [F(α):F] algebraic relations",
+        "minimal polynomial m_{α,F}(x)"
+      ]
+    },
+    {
+      "chinese_name": "共轭元",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在代数闭包中，同一个不可约方程的不同根彼此相伴出现。",
+        "F-嵌入会把 α 送到这些根，而保持 F 中元素不动。",
+        "若 m_{α,F}(x) 的根为 α_1,...,α_n，它们就是同一组对象。",
+        "在正规可分情形中，Gal(E/F) 的轨道精确描述这些根。",
+        "英文名是 conjugate element。"
+      ],
+      "fragmented_clues": [
+        "algebraic closure same irreducible equation roots",
+        "F-embeddings α images fix F",
+        "m_{α,F}(x) roots α_1,...,α_n",
+        "normal separable Gal(E/F) orbit",
+        "conjugate element"
+      ]
+    },
+    {
+      "chinese_name": "分裂域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "给定 F[x] 中的多项式，可以扩大底层 field 以容纳它的全部根。",
+        "目标是在新环境中让该多项式完全分解成一次因子。",
+        "它由 F 添入 f 的所有根生成，并且在满足条件的扩张中最小。",
+        "若 f(x)=∏(x-α_i) 在 E[x] 中成立且 E=F(α_i)，就得到该对象。",
+        "英文名是 splitting field。"
+      ],
+      "fragmented_clues": [
+        "f(x)∈F[x] all roots extension",
+        "factor into linear factors",
+        "F adjoining all roots minimal",
+        "f(x)=∏(x-α_i) E=F(α_i)",
+        "splitting field"
+      ]
+    },
+    {
+      "chinese_name": "正规扩张",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "代数扩张 E/F 中，根的出现不应只出现一部分。",
+        "任意 F 上不可约多项式只要在 E 中有一个根，就应在 E 中全部分解。",
+        "等价地，E 是某族 F 上多项式的分裂环境。",
+        "所有 F-嵌入 E→Ω 的像都落回 E，是常用检验方式。",
+        "英文名是 normal extension。"
+      ],
+      "fragmented_clues": [
+        "algebraic E/F roots all-or-none",
+        "irreducible over F one root in E all roots in E",
+        "splitting field of family polynomials",
+        "F-embeddings E→Ω image E",
+        "normal extension"
+      ]
+    },
+    {
+      "chinese_name": "可分扩张",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "代数扩张 E/F 中，每个元素的不可约方程都应没有重复根。",
+        "导数判据常把问题转化为 gcd(f,f') 的计算。",
+        "若每个 α∈E 的 m_{α,F}(x) 在代数闭包中根互异，就满足条件。",
+        "特征 0 的情形自动满足，特征 p 时需警惕 p 次幂现象。",
+        "英文名是 separable extension。"
+      ],
+      "fragmented_clues": [
+        "algebraic E/F irreducible equations distinct roots",
+        "derivative criterion gcd(f,f')",
+        "α∈E m_{α,F}(x) roots distinct",
+        "char 0 automatic char p p-th powers",
+        "separable extension"
+      ]
+    },
+    {
+      "chinese_name": "不可分扩张",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "代数扩张 E/F 中，某些元素的不可约方程会在代数闭包里出现重复根。",
+        "这种现象只可能在正特征中发生，常与导数为零相连。",
+        "若存在 α∈E 使 m_{α,F}'(x)=0 或根不互异，就出现该情形。",
+        "典型例子来自 char p 下的方程 x^p-a。",
+        "英文名是 inseparable extension。"
+      ],
+      "fragmented_clues": [
+        "algebraic E/F repeated roots",
+        "positive characteristic zero derivative",
+        "α∈E m'_{α,F}(x)=0 non-distinct roots",
+        "char p x^p-a",
+        "inseparable extension"
+      ]
+    },
+    {
+      "chinese_name": "伽罗瓦扩张",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "一种特别良好的代数扩张同时控制根的完整性和重复根问题。",
+        "它使自同构的数量与线性维数精确匹配。",
+        "有限情形中，它等价于同时正规且可分。",
+        "此时 |Gal(E/F)|=[E:F]，并可启动子群与中间层的对应。",
+        "英文名是 Galois extension。"
+      ],
+      "fragmented_clues": [
+        "algebraic extension roots complete distinct",
+        "automorphisms count linear degree",
+        "finite case normal separable",
+        "|Gal(E/F)|=[E:F] subgroup intermediate fields",
+        "Galois extension"
+      ]
+    },
+    {
+      "chinese_name": "伽罗瓦群",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在扩张 E/F 中，可以收集所有保持 F 不动的 E 的自同构。",
+        "这些变换在复合下形成群，并排列多项式的根。",
+        "标准记号是 Gal(E/F) 或 Aut(E/F)。",
+        "其子群结构反向记录中间 field 的包含结构。",
+        "英文名是 Galois group。"
+      ],
+      "fragmented_clues": [
+        "E/F automorphisms fixing F",
+        "composition group roots permutation",
+        "Gal(E/F) Aut(E/F)",
+        "subgroups intermediate fields inclusion reversal",
+        "Galois group"
+      ]
+    },
+    {
+      "chinese_name": "伽罗瓦对应",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "有限良好扩张中，对称变换的子群与中间 field 之间存在精确联系。",
+        "较大的子群固定较小的中间层，因此包含关系会反向。",
+        "映射 H↦E^H 与 M↦Gal(E/M) 在有限 Galois 情形互为逆。",
+        "正规子群对应仍然良好的中间扩张，商群给出上层对称。",
+        "英文名是 Galois correspondence。"
+      ],
+      "fragmented_clues": [
+        "finite Galois extension subgroups intermediate fields",
+        "larger subgroup smaller fixed field inclusion reversal",
+        "H↦E^H M↦Gal(E/M)",
+        "normal subgroup quotient group",
+        "Galois correspondence"
+      ]
+    },
+    {
+      "chinese_name": "固定域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "给定 E 的一组自同构，可以只保留在这些变换下不动的元素。",
+        "所得集合在加减乘除下仍封闭，因此形成 E 内的一个 field。",
+        "若 H≤Aut(E)，标准写法是 E^H={x∈E: σ(x)=x for all σ∈H}。",
+        "在有限 Galois 扩张中，它与子群 H 反向对应。",
+        "英文名是 fixed field。"
+      ],
+      "fragmented_clues": [
+        "automorphisms invariant elements",
+        "addition subtraction multiplication division closed",
+        "H≤Aut(E) E^H={x∈E: σ(x)=x}",
+        "finite Galois extension subgroup H reversal",
+        "fixed field"
+      ]
+    },
+    {
+      "chinese_name": "有限域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "某些 field 的元素个数是有限的，并且必处在素数特征中。",
+        "它们的大小只能是 q=p^n，非零元素在乘法下形成循环群。",
+        "每个这样的对象都同构于 F_q，且是 x^q-x 的分裂环境。",
+        "子结构与扩张次数由 n 的因子关系控制。",
+        "英文名是 finite field，也写作 GF(q)。"
+      ],
+      "fragmented_clues": [
+        "finite number elements prime characteristic",
+        "q=p^n nonzero multiplicative cyclic group",
+        "F_q splitting of x^q-x",
+        "subfields divisors of n extension degree",
+        "finite field GF(q)"
+      ]
+    },
+    {
+      "chinese_name": "代数闭包",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "从 F 出发，可以构造一个代数扩张，使所有非零多项式都有足够多的根。",
+        "它在同构意义下唯一，并通常放在一个大环境 Ω 中使用。",
+        "每个 F[x] 中非常数多项式都在其中完全分解成一次因子。",
+        "它本身不再有新的代数缺口。",
+        "英文名是 algebraic closure，常记作 F^alg。"
+      ],
+      "fragmented_clues": [
+        "F algebraic extension all polynomial roots",
+        "unique up to isomorphism ambient Ω",
+        "nonconstant f∈F[x] linear factors",
+        "no further algebraic gaps",
+        "algebraic closure F^alg"
+      ]
+    },
+    {
+      "chinese_name": "代数闭域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "某些 field 已经足够大，内部能解决所有一元多项式方程。",
+        "在其中，每个非常数多项式至少有一个根。",
+        "等价地，任意非常数 f(x) 都能完全分解成一次因子。",
+        "C 是经典例子，而 R 不是，因为 x^2+1 没有实根。",
+        "英文名是 algebraically closed field。"
+      ],
+      "fragmented_clues": [
+        "field all one-variable polynomial equations",
+        "nonconstant polynomial at least one root",
+        "factorization into linear factors",
+        "C example R x^2+1 counterexample",
+        "algebraically closed field"
+      ]
+    },
+    {
+      "chinese_name": "特征",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "乘法单位元在反复相加时，可能第一次回到 0。",
+        "若没有正整数 n 使 n·1=0，则该数值定义为 0。",
+        "若存在这样的 n，最小正整数必为素数 p。",
+        "它决定 prime field 是 Q 还是 F_p，并影响可分性。",
+        "标准记号是 char K。"
+      ],
+      "fragmented_clues": [
+        "multiplicative identity repeated addition zero",
+        "no positive n n·1=0 value 0",
+        "minimal positive n prime p",
+        "prime field Q or F_p separability",
+        "char K"
+      ]
+    },
+    {
+      "chinese_name": "本原元",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "某些扩张 E/F 可以由单个元素生成。",
+        "该元素一旦加入 F，就能通过四则运算产生整个 E。",
+        "若 E=F(α)，则 α 扮演这个生成角色。",
+        "有限可分扩张在适当条件下总能找到这样的生成者。",
+        "英文名是 primitive element。"
+      ],
+      "fragmented_clues": [
+        "extension E/F single generator",
+        "adjoin α four operations whole E",
+        "E=F(α)",
+        "finite separable extension generator",
+        "primitive element"
+      ]
+    },
+    {
+      "chinese_name": "本原元定理",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "有限可分扩张看似可能需要多个生成元素，但常能压缩为一个。",
+        "它把 F(α_1,...,α_n) 的描述化为 F(θ)。",
+        "结论表明每个有限可分扩张都是单扩张。",
+        "证明常利用不同嵌入下的坏参数有限性。",
+        "英文名是 primitive element theorem。"
+      ],
+      "fragmented_clues": [
+        "finite separable extension multiple generators",
+        "F(α_1,...,α_n) to F(θ)",
+        "every finite separable extension simple",
+        "embeddings bad parameters finite",
+        "primitive element theorem"
+      ]
+    },
+    {
+      "chinese_name": "迹",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "有限扩张 E/F 中，元素 a 可以定义出一个 F-线性算子 x↦ax。",
+        "该线性算子的矩阵对角和给出一个落在 F 中的数。",
+        "在可分情形中，它也等于所有 F-嵌入下 σ(a) 的和。",
+        "这个量常用于判别式、双线性配对和整性计算。",
+        "标准记号是 Tr_{E/F}(a)，英文名是 trace。"
+      ],
+      "fragmented_clues": [
+        "finite E/F multiplication operator x↦ax",
+        "matrix diagonal sum value in F",
+        "separable case sum σ(a)",
+        "discriminant bilinear pairing integrality",
+        "Tr_{E/F}(a) trace"
+      ]
+    },
+    {
+      "chinese_name": "范数",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "有限扩张 E/F 中，元素 a 的乘法作用也可以取行列式。",
+        "该行列式落在 F 中，并且对乘法具有良好相容性。",
+        "在可分情形中，它等于所有 F-嵌入下 σ(a) 的乘积。",
+        "它把 E^× 中的元素送到 F^×，常用于单位和理想计算。",
+        "标准记号是 N_{E/F}(a)，英文名是 norm。"
+      ],
+      "fragmented_clues": [
+        "finite E/F multiplication by a determinant",
+        "value in F multiplicative compatibility",
+        "separable case product σ(a)",
+        "E^× to F^× units ideals",
+        "N_{E/F}(a) norm"
+      ]
+    },
+    {
+      "chinese_name": "迹映射",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "有限扩张 E/F 中，每个元素可被送到乘法线性算子的对角和。",
+        "这个规则保持 F-线性，因此是从 E 到 F 的线性函数。",
+        "公式写作 a↦Tr_{E/F}(a)。",
+        "它与配对 (x,y)↦Tr_{E/F}(xy) 一起检测可分性和判别式。",
+        "英文名是 trace map。"
+      ],
+      "fragmented_clues": [
+        "finite E/F element to diagonal sum",
+        "F-linear function E to F",
+        "a↦Tr_{E/F}(a)",
+        "pairing (x,y)↦Tr_{E/F}(xy) separability discriminant",
+        "trace map"
+      ]
+    },
+    {
+      "chinese_name": "范数映射",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "有限扩张 E/F 中，每个元素可被送到乘法线性算子的行列式。",
+        "这个规则对乘法相容，非零元素会落到 F 的非零元素。",
+        "公式写作 a↦N_{E/F}(a)。",
+        "在数域和局部域中，它控制单位、理想以及上同调中的核心算子。",
+        "英文名是 norm map。"
+      ],
+      "fragmented_clues": [
+        "finite E/F element to determinant",
+        "multiplicative compatibility nonzero to F^×",
+        "a↦N_{E/F}(a)",
+        "number fields local fields units ideals cohomology",
+        "norm map"
+      ]
+    },
+    {
+      "chinese_name": "根式扩张",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "某些扩张通过逐步添入满足幂方程的新元素构造。",
+        "每一步的新元素 α 都满足 α^n=a，其中 a 来自已有层。",
+        "这样的塔常写成 F⊂F(α_1)⊂...⊂E。",
+        "它是研究多项式根能否用 radicals 表达的基本构件。",
+        "英文名是 radical extension。"
+      ],
+      "fragmented_clues": [
+        "tower adjoining power-equation elements",
+        "α^n=a a in previous layer",
+        "F⊂F(α_1)⊂...⊂E",
+        "polynomial roots radicals expression",
+        "radical extension"
+      ]
+    },
+    {
+      "chinese_name": "可解扩张",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "一种扩张允许用一串较简单的代数步骤逐层构造。",
+        "在 Galois 情形中，对应的对称群应具有可解的子正规列。",
+        "若可嵌入到根式塔中，常被视为这类情形。",
+        "它与多项式方程的 radicals 解法直接相连。",
+        "英文名是 solvable extension。"
+      ],
+      "fragmented_clues": [
+        "extension simple algebraic steps tower",
+        "Galois case solvable subnormal series",
+        "embedding into radical tower",
+        "polynomial equations radicals solution",
+        "solvable extension"
+      ]
+    },
+    {
+      "chinese_name": "分圆域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "从 Q 或一般底层 field 出发，可以添入单位根来得到特殊扩张。",
+        "核心元素 ζ 满足 ζ^n=1，并且阶正好为 n。",
+        "在 Q 上典型对象是 Q(ζ_n)，其 Galois 群与 (Z/nZ)^× 相关。",
+        "它是阿贝尔扩张和类域论中的基本样本。",
+        "英文名是 cyclotomic field。"
+      ],
+      "fragmented_clues": [
+        "base field adjoining roots of unity",
+        "ζ^n=1 order n",
+        "Q(ζ_n) Gal related to (Z/nZ)^×",
+        "abelian extensions class field theory sample",
+        "cyclotomic field"
+      ]
+    },
+    {
+      "chinese_name": "完备域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "带有距离、绝对值或 v 的 field 中，可以讨论 Cauchy 列是否有极限。",
+        "若每个 Cauchy 列都在内部收敛，分析过程就不会离开该环境。",
+        "R 相对于通常绝对值满足这一性质，Q 相对于同一距离不满足。",
+        "Q_p 是按 p-adic 绝对值补全 Q 得到的典型例子。",
+        "英文名是 complete field。"
+      ],
+      "fragmented_clues": [
+        "field metric absolute value v Cauchy sequences",
+        "every Cauchy sequence converges internally",
+        "R usual absolute value Q counterexample",
+        "Q_p p-adic completion of Q",
+        "complete field"
+      ]
+    },
+    {
+      "chinese_name": "赋值",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在 field 的非零元素上，可以用一个函数记录大小或整除阶。",
+        "该函数把乘法变成加法，并对和满足强三角型不等式。",
+        "常见写法是 v(xy)=v(x)+v(y)，v(x+y)≥min(v(x),v(y))。",
+        "p-adic 阶数 v_p 和 t-adic 阶数是基本例子。",
+        "英文名是 valuation。"
+      ],
+      "fragmented_clues": [
+        "K^× function size divisibility order",
+        "multiplication to addition ultrametric inequality",
+        "v(xy)=v(x)+v(y) v(x+y)≥min(v(x),v(y))",
+        "v_p t-adic order",
+        "valuation"
+      ]
+    },
+    {
+      "chinese_name": "局部域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "某些拓扑 field 在一个位置附近同时具备紧性和离散外的结构。",
+        "它们通常带有非平凡绝对值，并且在相应距离下已经补全。",
+        "典型例子包括 R、C、Q_p 和 F_q((t))。",
+        "非阿基米德情形中，整数环、极大理想和剩余 field 是核心数据。",
+        "英文名是 local field。"
+      ],
+      "fragmented_clues": [
+        "topological field locally compact non-discrete",
+        "nontrivial absolute value complete",
+        "R C Q_p F_q((t))",
+        "non-Archimedean integer ring maximal ideal residue field",
+        "local field"
+      ]
+    },
+    {
+      "chinese_name": "全局域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "某些 field 同时携带许多位置，每个位置补全后给出局部对象。",
+        "它们分为数域和有限常数 field 上的一变量函数域两类。",
+        "Q 的有限扩张，以及 F_q(t) 的有限扩张是典型例子。",
+        "素理想、赋值、分歧和局部化在这些对象上统一出现。",
+        "英文名是 global field。"
+      ],
+      "fragmented_clues": [
+        "many places completions local objects",
+        "number fields function fields over finite constants",
+        "finite extensions of Q finite extensions of F_q(t)",
+        "prime ideals valuations ramification localization",
+        "global field"
+      ]
+    },
+    {
+      "chinese_name": "域同态",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "两个 field 之间的结构保持映射必须同时尊重加法和乘法。",
+        "若还把 1 送到 1，则非零映射自动单射。",
+        "它满足 φ(a+b)=φ(a)+φ(b)、φ(ab)=φ(a)φ(b)。",
+        "这种映射常把一个 field 识别为另一个对象内部的副本。",
+        "英文名是 field homomorphism。"
+      ],
+      "fragmented_clues": [
+        "two fields structure-preserving map",
+        "1↦1 nonzero map injective",
+        "φ(a+b)=φ(a)+φ(b) φ(ab)=φ(a)φ(b)",
+        "copy inside another field",
+        "field homomorphism"
+      ]
+    },
+    {
+      "chinese_name": "域同构",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "两个 field 若存在可逆的结构保持映射，就在代数上完全相同。",
+        "这种映射同时保持 0、1、加法、乘法和逆元。",
+        "它是双射的 field homomorphism。",
+        "分类问题中，常以是否存在这样的双射作为相同标准。",
+        "英文名是 field isomorphism。"
+      ],
+      "fragmented_clues": [
+        "two fields invertible structure-preserving map",
+        "0 1 addition multiplication inverses",
+        "bijective field homomorphism",
+        "classification sameness criterion",
+        "field isomorphism"
+      ]
+    },
+    {
+      "chinese_name": "嵌入",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在扩张或代数闭包问题中，常把一个 field 以单射方式放入另一个 field。",
+        "这种映射保持运算，因此源对象可被看成目标对象中的副本。",
+        "F-情形要求每个 F 中元素都保持不动。",
+        "可分扩张中，不同这样的映射数量与最小多项式的不同根有关。",
+        "英文名是 embedding。"
+      ],
+      "fragmented_clues": [
+        "injective map one field into another",
+        "operations preserved copy in target",
+        "F-map fixes F pointwise",
+        "separable extension count distinct roots",
+        "embedding"
+      ]
+    },
+    {
+      "chinese_name": "可分闭包",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在代数闭包内部，可以只收集所有可分的代数元素。",
+        "所得对象包含 F 的所有有限可分扩张副本。",
+        "它是 F^alg 中最大的可分代数扩张。",
+        "其自同构群就是绝对 Galois 群 Gal(F^sep/F)。",
+        "英文名是 separable closure。"
+      ],
+      "fragmented_clues": [
+        "inside algebraic closure separable algebraic elements",
+        "all finite separable extensions copies",
+        "largest separable algebraic extension in F^alg",
+        "absolute Galois group Gal(F^sep/F)",
+        "separable closure"
+      ]
+    },
+    {
+      "chinese_name": "正规闭包",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "给定代数扩张 E/F，可以继续扩大以补齐所有共轭根。",
+        "目标是得到包含 E 的最小正规扩张。",
+        "若 E=F(α)，它可由 m_{α,F}(x) 的所有根生成。",
+        "在可分有限情形中，再加上可分性就得到 Galois 环境。",
+        "英文名是 normal closure。"
+      ],
+      "fragmented_clues": [
+        "algebraic E/F adjoining conjugate roots",
+        "minimal normal extension containing E",
+        "E=F(α) roots of m_{α,F}(x)",
+        "finite separable case Galois environment",
+        "normal closure"
+      ]
+    },
+    {
+      "chinese_name": "纯不可分扩张",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "正特征代数扩张中，元素可能只需取足够高的 p 次幂就落回底层。",
+        "这种现象完全由 Frobenius 幂控制，而不是由不同根控制。",
+        "对每个 α∈E，存在 n 使 α^{p^n}∈F。",
+        "它的可分部分平凡，常与完美性问题配套出现。",
+        "英文名是 purely inseparable extension。"
+      ],
+      "fragmented_clues": [
+        "positive characteristic algebraic extension p-power return",
+        "Frobenius powers no distinct roots",
+        "α∈E α^{p^n}∈F",
+        "trivial separable part perfectness",
+        "purely inseparable extension"
+      ]
+    },
+    {
+      "chinese_name": "单扩张",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "某个扩张可以由底层 field 添入一个元素生成。",
+        "所有元素都能用该生成元的有理表达式或多项式表达式描述。",
+        "标准形式是 E=F(α)。",
+        "有限可分扩张由本原元定理保证常具有这种形式。",
+        "英文名是 simple extension。"
+      ],
+      "fragmented_clues": [
+        "extension one generator over base field",
+        "rational expressions polynomial expressions in α",
+        "E=F(α)",
+        "finite separable primitive element theorem",
+        "simple extension"
+      ]
+    },
+    {
+      "chinese_name": "有限生成扩张",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "某个扩张可能由有限多个元素从 F 出发生成。",
+        "这些生成元可以分为超越部分和随后的代数部分。",
+        "标准写法是 E=F(α_1,...,α_n)。",
+        "Noether 正规化和超越基常用于分析这种结构。",
+        "英文名是 finitely generated extension。"
+      ],
+      "fragmented_clues": [
+        "extension finite many generators over F",
+        "transcendental part algebraic part",
+        "E=F(α_1,...,α_n)",
+        "Noether normalization transcendence basis",
+        "finitely generated extension"
+      ]
+    },
+    {
+      "chinese_name": "超越基",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在 E/F 中，可以先挑出一组尽可能自由的元素。",
+        "这组元素之间没有非零多项式关系，并且加入后剩余部分变成代数。",
+        "它是极大的代数无关集 S，使 E/F(S) 为代数扩张。",
+        "任意两组这样的集合具有相同基数。",
+        "英文名是 transcendence basis。"
+      ],
+      "fragmented_clues": [
+        "E/F maximal free elements",
+        "no polynomial relations remaining algebraic",
+        "maximal algebraically independent S E/F(S) algebraic",
+        "same cardinality for any two bases",
+        "transcendence basis"
+      ]
+    },
+    {
+      "chinese_name": "超越次数",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在 E/F 中，自由参数的数量可以用一个基数衡量。",
+        "先选取极大的代数无关集，再数其中元素个数。",
+        "定义为任意 transcendence basis 的基数。",
+        "有限生成扩张中，它等于几何维数的代数版本。",
+        "英文名是 transcendence degree，记作 trdeg_F E。"
+      ],
+      "fragmented_clues": [
+        "E/F number of free parameters",
+        "maximal algebraically independent set cardinality",
+        "cardinality of transcendence basis",
+        "finitely generated extension geometric dimension",
+        "transcendence degree trdeg_F E"
+      ]
+    },
+    {
+      "chinese_name": "代数无关",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "一组元素若没有非零多项式关系，就表现为真正独立的参数。",
+        "关系多项式的系数来自底层 field，而变量对应这组元素。",
+        "对 α_1,...,α_n，任何 0≠f∈F[x_1,...,x_n] 都不应满足 f(α_1,...,α_n)=0。",
+        "它是构造超越基和计算 trdeg 的核心判据。",
+        "英文名是 algebraically independent。"
+      ],
+      "fragmented_clues": [
+        "elements no nonzero polynomial relation",
+        "coefficients in F variables elements",
+        "0≠f∈F[x_1,...,x_n] f(α_1,...,α_n)≠0",
+        "transcendence basis trdeg criterion",
+        "algebraically independent"
+      ]
+    },
+    {
+      "chinese_name": "分裂多项式",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "某个多项式在给定 field 上可能已经不再保留高次不可约因子。",
+        "它能够在该环境中完全写成一次因子的乘积。",
+        "形式为 f(x)=c∏(x-α_i)，其中所有 α_i 都属于当前 field。",
+        "若重数也计入，次数等于这些线性因子的总数。",
+        "英文名是 split polynomial。"
+      ],
+      "fragmented_clues": [
+        "polynomial over given field no higher irreducible factors",
+        "product of linear factors",
+        "f(x)=c∏(x-α_i) α_i in field",
+        "multiplicities degree total",
+        "split polynomial"
+      ]
+    },
+    {
+      "chinese_name": "可分多项式",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "一个多项式若在代数闭包中没有重复根，就具有良好的根结构。",
+        "导数提供快速判据，特别是在正特征中很关键。",
+        "对不可约 f，条件等价于 gcd(f,f')=1。",
+        "特征 0 中不可约多项式自动满足；特征 p 中 f'=0 会造成失败。",
+        "英文名是 separable polynomial。"
+      ],
+      "fragmented_clues": [
+        "polynomial algebraic closure distinct roots",
+        "formal derivative positive characteristic",
+        "irreducible f gcd(f,f')=1",
+        "char 0 automatic char p f'=0 failure",
+        "separable polynomial"
+      ]
+    },
+    {
+      "chinese_name": "不可约多项式",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在 F[x] 中，有些正次数多项式不能拆成两个较低正次数因子。",
+        "它们在多项式环中扮演类似素数的角色。",
+        "若 f=gh 只能迫使 g 或 h 为常数，就满足该条件。",
+        "代数元素的最低方程必然具有这种性质。",
+        "英文名是 irreducible polynomial。"
+      ],
+      "fragmented_clues": [
+        "F[x] positive degree no lower-degree factorization",
+        "polynomial ring prime-like role",
+        "f=gh implies g or h constant",
+        "minimal equation of algebraic element",
+        "irreducible polynomial"
+      ]
+    },
+    {
+      "chinese_name": "本原多项式",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在有限 field 上，有些不可约多项式的根不仅生成扩张，还生成非零乘法群。",
+        "若次数为 n，它的根位于 F_{q^n}，并具有阶 q^n-1。",
+        "这种条件强于不可约性，常用于构造有限 field 的生成元。",
+        "检验时要检查根在 F_{q^n}^× 中的乘法阶。",
+        "英文名是 primitive polynomial。"
+      ],
+      "fragmented_clues": [
+        "finite field irreducible polynomial root generator",
+        "degree n root in F_{q^n} order q^n-1",
+        "stronger than irreducible construction generator",
+        "multiplicative order in F_{q^n}^×",
+        "primitive polynomial"
+      ]
+    },
+    {
+      "chinese_name": "艾森斯坦判别法",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "某个整系数多项式的不可约性可由一个素数的整除模式保证。",
+        "首项系数不能被该素数整除，其余非首项系数都要被整除。",
+        "常数项还不能被该素数的平方整除。",
+        "这些条件在 Z[x] 中推出 Q[x] 上不可约。",
+        "英文名是 Eisenstein criterion。"
+      ],
+      "fragmented_clues": [
+        "integer polynomial irreducibility prime divisibility pattern",
+        "leading coefficient not divisible by p other coefficients divisible by p",
+        "constant term not divisible by p^2",
+        "Z[x] to Q[x] irreducible",
+        "Eisenstein criterion"
+      ]
+    },
+    {
+      "chinese_name": "有限域乘法群",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "F_q 中去掉 0 后，剩余元素在乘法下形成一个群。",
+        "这个群的阶为 q-1，并且总是循环的。",
+        "任取生成元 g，所有非零元素都可写作 g^i。",
+        "这一事实支撑 primitive element 和 discrete logarithm 的许多计算。",
+        "英文名是 multiplicative group of a finite field。"
+      ],
+      "fragmented_clues": [
+        "F_q remove 0 multiplication group",
+        "order q-1 cyclic",
+        "generator g nonzero elements g^i",
+        "primitive element discrete logarithm computations",
+        "multiplicative group of a finite field"
+      ]
+    },
+    {
+      "chinese_name": "弗罗贝尼乌斯自同构",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在正特征环境中，p 次幂映射会自然保持加法和乘法。",
+        "有限 field 上，这个映射是双射，并生成许多 Galois 对称。",
+        "基本公式是 x↦x^p；在 F_q 上也常看 x↦x^q。",
+        "对 F_{q^n}/F_q，它的 n 次迭代回到恒等映射。",
+        "英文名是 Frobenius automorphism。"
+      ],
+      "fragmented_clues": [
+        "positive characteristic p-th power map",
+        "finite field bijection Galois symmetry",
+        "x↦x^p x↦x^q",
+        "F_{q^n}/F_q n-th iterate identity",
+        "Frobenius automorphism"
+      ]
+    },
+    {
+      "chinese_name": "完美域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "某些 field 中，代数扩张不会产生不可分现象。",
+        "特征 0 的所有例子自动满足这一性质。",
+        "在特征 p 中，等价条件是 Frobenius 映射 x↦x^p 为满射。",
+        "有限 field 和代数闭 field 都是典型例子。",
+        "英文名是 perfect field。"
+      ],
+      "fragmented_clues": [
+        "field no inseparable algebraic extensions",
+        "characteristic 0 automatic",
+        "char p Frobenius x↦x^p surjective",
+        "finite fields algebraically closed fields",
+        "perfect field"
+      ]
+    },
+    {
+      "chinese_name": "分圆多项式",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "单位根中，阶恰好为 n 的那些根有一个共同的最小方程。",
+        "它把 x^n-1 中的新阶数部分单独提取出来。",
+        "标准公式满足 x^n-1=∏_{d|n} Φ_d(x)。",
+        "在 Q 上，Φ_n(x) 不可约，根为 primitive n-th roots of unity。",
+        "英文名是 cyclotomic polynomial。"
+      ],
+      "fragmented_clues": [
+        "roots of unity exact order n minimal equation",
+        "x^n-1 exact-order part",
+        "x^n-1=∏_{d|n} Φ_d(x)",
+        "over Q irreducible primitive n-th roots",
+        "cyclotomic polynomial"
+      ]
+    },
+    {
+      "chinese_name": "根式可解",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "一个多项式方程若能用加减乘除和逐次开方表达根，就具有这种可解性。",
+        "现代判据把问题转化为相应 Galois 群的群论性质。",
+        "若该群是 solvable group，则根可在 radicals 塔中表示。",
+        "五次一般方程失败的核心原因是 S_5 不满足相应条件。",
+        "英文名是 solvable by radicals。"
+      ],
+      "fragmented_clues": [
+        "polynomial equation roots arithmetic radicals",
+        "Galois group group-theoretic criterion",
+        "solvable group radical tower",
+        "general quintic S_5 obstruction",
+        "solvable by radicals"
+      ]
+    },
+    {
+      "chinese_name": "伽罗瓦闭包",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "给定有限可分扩张 E/F，可以扩大到一个同时正规可分的环境。",
+        "构造时要添入 E 的所有 F-嵌入像，或补齐最小方程的全部根。",
+        "它是包含 E 的最小 Galois 扩张。",
+        "在计算方程对称性时，常先进入这一最小良好环境。",
+        "英文名是 Galois closure。"
+      ],
+      "fragmented_clues": [
+        "finite separable E/F normal separable enlargement",
+        "all F-embedding images all roots",
+        "minimal Galois extension containing E",
+        "equation symmetries minimal good ambient field",
+        "Galois closure"
+      ]
+    },
+    {
+      "chinese_name": "中间域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在 E/F 两层之间，可能存在既包含 F 又包含于 E 的 field。",
+        "这些层按包含关系排列，形成一个格。",
+        "标准关系是 F⊂M⊂E。",
+        "在 Galois 情形中，它们与 Gal(E/F) 的子群反向对应。",
+        "英文名是 intermediate field。"
+      ],
+      "fragmented_clues": [
+        "between E and F field layer",
+        "inclusion lattice",
+        "F⊂M⊂E",
+        "Galois case subgroups reverse correspondence",
+        "intermediate field"
+      ]
+    },
+    {
+      "chinese_name": "基本定理",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "有限 Galois 扩张中，有一个核心结论把 field 层和群层精确配对。",
+        "包含关系会反向，较大的子群固定较小的 field。",
+        "对应由 H↦E^H 与 M↦Gal(E/M) 给出。",
+        "正规子群还对应 Galois 的中间扩张，并给出商群同构。",
+        "英文名是 fundamental theorem of Galois theory。"
+      ],
+      "fragmented_clues": [
+        "finite Galois extension field layers group layers",
+        "inclusion reversal larger subgroup smaller field",
+        "H↦E^H M↦Gal(E/M)",
+        "normal subgroup Galois intermediate extension quotient group",
+        "fundamental theorem of Galois theory"
+      ]
+    },
+    {
+      "chinese_name": "正规基",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "有限 Galois 扩张 E/F 中，有些基由一个元素的全部共轭像组成。",
+        "群中每个 σ 作用在同一个 α 上，得到一整组向量。",
+        "形式为 {σ(α):σ∈Gal(E/F)}。",
+        "若这组向量构成 F-基，就得到非常适合群作用计算的基。",
+        "英文名是 normal basis。"
+      ],
+      "fragmented_clues": [
+        "finite Galois E/F basis conjugate orbit",
+        "σ acting on one α vectors",
+        "{σ(α):σ∈Gal(E/F)}",
+        "F-basis group action computation",
+        "normal basis"
+      ]
+    },
+    {
+      "chinese_name": "正规基定理",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "有限 Galois 扩张中，群轨道形式的基总是存在。",
+        "因此 E 可以看成 Gal(E/F) 的正则表示在 F 上的一个模型。",
+        "结论断言存在 α∈E，使 {σ(α)}_{σ∈G} 是 F-基。",
+        "它在有限 field 扩张和计算 Galois 模结构时特别有用。",
+        "英文名是 normal basis theorem。"
+      ],
+      "fragmented_clues": [
+        "finite Galois extension orbit basis existence",
+        "regular representation model over F",
+        "α∈E {σ(α)}_{σ∈G} F-basis",
+        "finite field extensions Galois module structure",
+        "normal basis theorem"
+      ]
+    },
+    {
+      "chinese_name": "阿廷定理",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "若有限群 G 由 field K 的自同构组成，其不动元素形成一个底层 field。",
+        "K 相对于该不动层的维数由群的阶精确给出。",
+        "核心公式是 [K:K^G]=|G|。",
+        "它提供从自同构群反推出 Galois 扩张的入口。",
+        "英文名是 Artin theorem。"
+      ],
+      "fragmented_clues": [
+        "finite group G automorphisms of K fixed elements",
+        "dimension over fixed field group order",
+        "[K:K^G]=|G|",
+        "automorphism group to Galois extension",
+        "Artin theorem"
+      ]
+    },
+    {
+      "chinese_name": "库默扩张",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "当底层 field 含有足够的 n 次单位根时，某些循环扩张可由 n 次根构造。",
+        "典型方程是 x^n=a，且特征不整除 n。",
+        "加入 α with α^n=a 后，Galois 群常嵌入 n 次单位根群。",
+        "它把乘法群商 K^×/(K^×)^n 与 Abelian 扩张联系起来。",
+        "英文名是 Kummer extension。"
+      ],
+      "fragmented_clues": [
+        "n-th roots of unity cyclic extensions",
+        "x^n=a char not divide n",
+        "α^n=a Galois group roots of unity",
+        "K^×/(K^×)^n abelian extensions",
+        "Kummer extension"
+      ]
+    },
+    {
+      "chinese_name": "阿贝尔扩张",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "某些 Galois 扩张的全部对称变换彼此可交换。",
+        "此时 Gal(E/F) 是 Abelian group，群结构比一般情形温和。",
+        "分圆构造提供 Q 上的重要例子。",
+        "类域论的核心目标之一就是分类这类扩张。",
+        "英文名是 Abelian extension。"
+      ],
+      "fragmented_clues": [
+        "Galois extension commuting automorphisms",
+        "Gal(E/F) Abelian group",
+        "cyclotomic construction over Q",
+        "class field theory classification",
+        "Abelian extension"
+      ]
+    },
+    {
+      "chinese_name": "循环扩张",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "某些 Galois 扩张的对称群由单个自同构生成。",
+        "群中每个元素都是同一个生成变换的幂。",
+        "标准条件是 Gal(E/F) 为 cyclic group。",
+        "有限 field 的有限扩张给出典型例子，由 Frobenius 生成。",
+        "英文名是 cyclic extension。"
+      ],
+      "fragmented_clues": [
+        "Galois extension automorphism group one generator",
+        "group elements powers of generator",
+        "Gal(E/F) cyclic group",
+        "finite field extension Frobenius generator",
+        "cyclic extension"
+      ]
+    },
+    {
+      "chinese_name": "分歧",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在数域或赋值扩张中，一个素理想向上延拓后可能出现幂次增厚。",
+        "这种现象由指数 e 衡量，e>1 表示出现 ramification。",
+        "局部情形中，统一化元的像会带有额外幂次。",
+        "判别式和不同理想常能检测它发生的位置。",
+        "英文名是 ramification。"
+      ],
+      "fragmented_clues": [
+        "number fields valuation extensions prime ideal thickening",
+        "ramification index e e>1",
+        "local case uniformizer extra power",
+        "discriminant different ideal detection",
+        "ramification"
+      ]
+    },
+    {
+      "chinese_name": "未分歧扩张",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "局部或算术扩张中，有些素位置向上延拓时不产生 ramification。",
+        "此时 ramification index 等于 1，剩余层扩张承载主要变化。",
+        "局部非阿基米德情形常要求 e=1 且 residue extension separable。",
+        "最大此类扩张的 Galois 群常由 Frobenius 元描述。",
+        "英文名是 unramified extension。"
+      ],
+      "fragmented_clues": [
+        "local arithmetic extension no ramification",
+        "ramification index e=1 residue extension",
+        "non-Archimedean local e=1 separable residue",
+        "maximal case Frobenius element",
+        "unramified extension"
+      ]
+    },
+    {
+      "chinese_name": "完全分解",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "素理想在扩张中向上分解时，可能裂成最多数量的不同素理想。",
+        "每个上方素理想都没有 ramification，且剩余次数为 1。",
+        "典型形式是 pO_L=P_1...P_n，所有 e_i=f_i=1。",
+        "在 Galois 扩张中，这等价于 Frobenius 共轭类为恒等。",
+        "英文名是 completely split。"
+      ],
+      "fragmented_clues": [
+        "prime ideal extension maximum distinct primes",
+        "no ramification residue degree 1",
+        "pO_L=P_1...P_n e_i=f_i=1",
+        "Galois extension Frobenius identity",
+        "completely split"
+      ]
+    },
+    {
+      "chinese_name": "惯性群",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在带素理想的 Galois 扩张中，有些自同构保持上方素理想并在剩余层上平凡。",
+        "它位于分解群内部，测量 ramification 的对称部分。",
+        "定义可写为 kernel(D_P→Gal(κ(P)/κ(p)))。",
+        "若该群平凡，局部扩张在该位置没有惯性贡献。",
+        "英文名是 inertia group。"
+      ],
+      "fragmented_clues": [
+        "Galois extension prime ideal automorphisms residue trivial",
+        "inside decomposition group ramification symmetry",
+        "kernel(D_P→Gal(κ(P)/κ(p)))",
+        "trivial group no inertial contribution",
+        "inertia group"
+      ]
+    },
+    {
+      "chinese_name": "分解群",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在 Galois 扩张 L/K 中，选定上方素理想 P 后，可看保持 P 的自同构。",
+        "这些自同构组成 Gal(L/K) 的一个子群。",
+        "定义为 D_P={σ:σ(P)=P}。",
+        "它控制局部化 L_P/K_p 的 Galois 对称。",
+        "英文名是 decomposition group。"
+      ],
+      "fragmented_clues": [
+        "Galois L/K chosen prime P stabilizing automorphisms",
+        "subgroup of Gal(L/K)",
+        "D_P={σ:σ(P)=P}",
+        "localization L_P/K_p Galois symmetry",
+        "decomposition group"
+      ]
+    },
+    {
+      "chinese_name": "剩余域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "给定局部环或赋值环，可以把极大理想中的元素视为无穷小并取商。",
+        "得到的商仍是 field，记录模掉高阶小量后的信息。",
+        "典型形式是 κ(p)=O_p/p 或 O_v/m_v。",
+        "在 p-adic 情形中，Z_p 的商给出 F_p。",
+        "英文名是 residue field。"
+      ],
+      "fragmented_clues": [
+        "local ring valuation ring quotient by maximal ideal",
+        "field after mod infinitesimals",
+        "κ(p)=O_p/p O_v/m_v",
+        "Z_p quotient F_p",
+        "residue field"
+      ]
+    },
+    {
+      "chinese_name": "离散赋值",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "有些大小函数的取值不是连续群，而是整数的离散阶数。",
+        "它把非零元素送到 Z，并满足乘法加法化和强三角不等式。",
+        "标准模型是 v_p(x) 或 t-adic order。",
+        "值为 1 的元素常作为统一化元。",
+        "英文名是 discrete valuation。"
+      ],
+      "fragmented_clues": [
+        "value group integers discrete order",
+        "K^×→Z multiplication to addition ultrametric",
+        "v_p(x) t-adic order",
+        "value 1 uniformizer",
+        "discrete valuation"
+      ]
+    },
+    {
+      "chinese_name": "赋值环",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "给定 v，可以挑出所有非负大小的元素。",
+        "这些元素对加法和乘法封闭，并形成一个局部环。",
+        "典型定义是 O_v={x∈K:v(x)≥0}。",
+        "其中 v(x)>0 的元素构成唯一极大理想。",
+        "英文名是 valuation ring。"
+      ],
+      "fragmented_clues": [
+        "v nonnegative elements",
+        "addition multiplication closed local ring",
+        "O_v={x∈K:v(x)≥0}",
+        "v(x)>0 unique maximal ideal",
+        "valuation ring"
+      ]
+    },
+    {
+      "chinese_name": "局部化",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在环或整环中，可以强制某个乘法集合里的元素变为可逆。",
+        "该构造让分母来自指定集合 S。",
+        "标准记号是 S^{-1}R；在素理想 p 处常写 R_p。",
+        "对整环取非零元素集合时，会得到分式 field。",
+        "英文名是 localization。"
+      ],
+      "fragmented_clues": [
+        "ring domain multiplicative set invertible",
+        "denominators from S",
+        "S^{-1}R R_p",
+        "domain nonzero elements fraction field",
+        "localization"
+      ]
+    },
+    {
+      "chinese_name": "p进数域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "有理数可按素数 p 的整除阶来重新度量距离。",
+        "相对于这种非阿基米德距离补全后，得到一个局部 field。",
+        "元素可展开为 ∑ a_n p^n 的形式。",
+        "其整数环为 Z_p，剩余 field 为 F_p。",
+        "标准记号是 Q_p，英文名是 p-adic field。"
+      ],
+      "fragmented_clues": [
+        "rationals prime p divisibility metric",
+        "non-Archimedean completion local field",
+        "series ∑ a_n p^n",
+        "integer ring Z_p residue field F_p",
+        "Q_p p-adic field"
+      ]
+    },
+    {
+      "chinese_name": "有理函数域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "从底层 field F 和一个独立变量 t 出发，可以形成多项式分式的环境。",
+        "元素形如 f(t)/g(t)，其中 f,g∈F[t] 且 g≠0。",
+        "它是 F[t] 的分式 field，也可看作一元超越扩张。",
+        "其超越次数为 1，是代数函数域的基础模型。",
+        "英文名是 rational function field。"
+      ],
+      "fragmented_clues": [
+        "base field F independent variable t polynomial fractions",
+        "f(t)/g(t) f,g∈F[t] g≠0",
+        "fraction field of F[t] one-variable transcendental extension",
+        "trdeg 1 algebraic function field model",
+        "rational function field"
+      ]
+    },
+    {
+      "chinese_name": "形式幂级数域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "以 t 为局部参数时，可以考虑允许有限个负次幂的形式级数。",
+        "元素通常写作 ∑_{n≥N} a_n t^n，其中 N 可为负整数。",
+        "该对象是 F[[t]] 的分式 field，记作 F((t))。",
+        "t-adic 阶数使它成为非阿基米德局部 field 的基本例子。",
+        "英文名是 formal Laurent series field。"
+      ],
+      "fragmented_clues": [
+        "local parameter t formal series finite negative powers",
+        "∑_{n≥N} a_n t^n N∈Z",
+        "fraction field of F[[t]] F((t))",
+        "t-adic order non-Archimedean local field",
+        "formal Laurent series field"
+      ]
+    },
+    {
+      "chinese_name": "代数函数域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "一变量函数的代数关系可被组织成有限扩张。",
+        "它通常是某个 F(t) 的有限代数扩张。",
+        "等价地，在常数 field F 上超越次数为 1 且有限生成。",
+        "它对应代数曲线的函数环境。",
+        "英文名是 algebraic function field。"
+      ],
+      "fragmented_clues": [
+        "one-variable functions algebraic relations finite extension",
+        "finite algebraic extension of F(t)",
+        "trdeg over constants 1 finitely generated",
+        "algebraic curve function environment",
+        "algebraic function field"
+      ]
+    },
+    {
+      "chinese_name": "复数域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "把实数体系中 x^2+1 无根的问题补齐后，可以得到二维实向量空间结构。",
+        "其中存在元素 i 满足 i^2=-1，每个元素写作 a+bi。",
+        "它在特征 0 下已经代数闭。",
+        "作为 R 的扩张，其次数为 2，且 Galois 群由共轭变换生成。",
+        "标准记号是 C，英文名是 complex field。"
+      ],
+      "fragmented_clues": [
+        "x^2+1 root completion two-dimensional over R",
+        "i^2=-1 a+bi",
+        "characteristic 0 algebraically closed",
+        "degree over R 2 conjugation Galois group",
+        "C complex field"
+      ]
+    },
+    {
+      "chinese_name": "实数域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "有序数系在通常绝对值下补全后，形成连续分析的基础环境。",
+        "其中正元素有平方根，奇次多项式有根，但 x^2+1 没有根。",
+        "它是完备的 Archimedean ordered field。",
+        "向其中添入 i 后得到二次代数闭扩张。",
+        "标准记号是 R，英文名是 real field。"
+      ],
+      "fragmented_clues": [
+        "ordered number system usual absolute value complete",
+        "positive square roots odd-degree polynomial roots x^2+1 no root",
+        "complete Archimedean ordered field",
+        "adjoin i quadratic algebraically closed extension",
+        "R real field"
+      ]
+    },
+    {
+      "chinese_name": "有理数域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "整数环的非零元素被允许作分母后，得到最小的特征 0 field。",
+        "其中每个元素都可写成 a/b，a,b∈Z 且 b≠0。",
+        "它是 Z 的分式 field，也是任何特征 0 field 的 prime field。",
+        "相对于通常绝对值不完备，相对于 p-adic 绝对值可补全为 Q_p。",
+        "标准记号是 Q，英文名是 rational number field。"
+      ],
+      "fragmented_clues": [
+        "integers nonzero denominators characteristic 0 field",
+        "a/b a,b∈Z b≠0",
+        "fraction field of Z prime field char 0",
+        "usual absolute value incomplete p-adic completion Q_p",
+        "Q rational number field"
+      ]
+    },
+    {
+      "chinese_name": "素子域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "每个 field 中，由 1 反复相加和取商生成的最小部分必然存在。",
+        "它包含在所有同类子结构之中。",
+        "特征 0 时同构于 Q；特征 p 时同构于 F_p。",
+        "它与由乘法单位元生成的 prime field 是同一对象。",
+        "英文名是 prime subfield。"
+      ],
+      "fragmented_clues": [
+        "1 repeated addition fractions minimal part",
+        "contained in all subfields",
+        "char 0 Q char p F_p",
+        "multiplicative identity generated prime field",
+        "prime subfield"
+      ]
+    },
+    {
+      "chinese_name": "域的特征",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在 field K 中，乘法单位元 1 可以被反复相加。",
+        "若某个正整数 n 使 n·1_K=0，最小这样的 n 必为素数。",
+        "若不存在这样的 n，则对应数值定义为 0。",
+        "它决定 K 中 prime subfield 的同构类型。",
+        "标准记号是 char(K)。"
+      ],
+      "fragmented_clues": [
+        "field K repeated addition of 1",
+        "n·1_K=0 minimal positive n prime",
+        "no such n value 0",
+        "prime subfield isomorphism type",
+        "char(K)"
+      ]
+    },
+    {
+      "chinese_name": "域扩张",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "当 F 包含在 E 中且两者运算相容时，可以研究 E 相对于 F 的结构。",
+        "E 同时是一个 field，也是 F 上的向量空间。",
+        "常见记号是 E/F，并用 [E:F] 表示线性维数。",
+        "新加入元素的代数或超越性质决定扩张类型。",
+        "英文名是 field extension。"
+      ],
+      "fragmented_clues": [
+        "F contained in E compatible operations",
+        "E field vector space over F",
+        "E/F [E:F] linear dimension",
+        "new elements algebraic transcendental type",
+        "field extension"
+      ]
+    },
+    {
+      "chinese_name": "复合域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在同一个大 field Ω 中，两个子 field 可以共同生成一个更大的对象。",
+        "它包含二者，并且在所有包含二者的 field 中最小。",
+        "若 E,F⊂Ω，常记作 EF 或 E·F。",
+        "线性不交问题常通过它的次数 [EF:F] 或 [EF:E] 来判断。",
+        "英文名是 compositum。"
+      ],
+      "fragmented_clues": [
+        "ambient Ω two subfields generated object",
+        "contains both minimal",
+        "E,F⊂Ω EF E·F",
+        "linear disjointness degrees [EF:F] [EF:E]",
+        "compositum"
+      ]
+    },
+    {
+      "chinese_name": "线性无关",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "向量空间中，一组向量若没有非平凡线性组合等于 0，就彼此独立。",
+        "系数必须来自指定底层 field。",
+        "条件写作 c_1v_1+...+c_nv_n=0 推出所有 c_i=0。",
+        "在扩张 E/F 中，它用于计算 [E:F] 和构造基。",
+        "英文名是 linear independence。"
+      ],
+      "fragmented_clues": [
+        "vector space no nontrivial linear combination zero",
+        "coefficients from base field",
+        "c_1v_1+...+c_nv_n=0 implies all c_i=0",
+        "extension E/F degree basis construction",
+        "linear independence"
+      ]
+    },
+    {
+      "chinese_name": "线性基",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "向量空间中，一组向量既能张成整个空间，又没有冗余线性关系。",
+        "每个向量都能唯一写成这组向量的线性组合。",
+        "它同时满足 spanning 和 independent 两个条件。",
+        "在 field 扩张中，它的元素个数给出 [E:F]。",
+        "英文名是 linear basis。"
+      ],
+      "fragmented_clues": [
+        "vector space spanning no redundant relation",
+        "unique linear combination representation",
+        "spanning independent",
+        "field extension cardinality [E:F]",
+        "linear basis"
+      ]
+    },
+    {
+      "chinese_name": "扩张基",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "把 E 看成 F 上向量空间时，可以选择一组元素来表示 E 的所有元素。",
+        "这组元素必须在 F 系数线性组合下张成 E 且没有非平凡关系。",
+        "若 {b_i} 是这样一组元素，则每个 x∈E 唯一写成 ∑ c_i b_i。",
+        "有限情形中，这组元素的数量就是 [E:F]。",
+        "英文名是 basis of an extension。"
+      ],
+      "fragmented_clues": [
+        "E as vector space over F chosen elements",
+        "F-linear span independent",
+        "x∈E unique ∑ c_i b_i",
+        "finite case number [E:F]",
+        "basis of an extension"
+      ]
+    },
+    {
+      "chinese_name": "张量积",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "两个同一底层环或 field 上的对象可以通过一个双线性泛性质合并。",
+        "它把双线性映射转化为普通线性映射来处理。",
+        "常见记号是 M⊗_F N 或 E⊗_F L。",
+        "在 field 扩张中，它用于检测线性不交和执行标量改变。",
+        "英文名是 tensor product。"
+      ],
+      "fragmented_clues": [
+        "two objects over same base bilinear universal property",
+        "bilinear maps to linear maps",
+        "M⊗_F N E⊗_F L",
+        "field extensions linear disjointness scalar change",
+        "tensor product"
+      ]
+    },
+    {
+      "chinese_name": "标量扩张",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "给定 F-向量空间 V 和扩张 E/F，可以把系数环境从 F 换到 E。",
+        "构造后的对象允许 E 中元素作为系数。",
+        "标准形式是 V_E=V⊗_F E。",
+        "矩阵、维数和代数对象在换底后常变得更容易分解。",
+        "英文名是 extension of scalars。"
+      ],
+      "fragmented_clues": [
+        "F-vector space V extension E/F coefficients change",
+        "E-coefficients allowed",
+        "V_E=V⊗_F E",
+        "matrices dimensions algebra objects decomposition",
+        "extension of scalars"
+      ]
+    },
+    {
+      "chinese_name": "共轭多项式",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "若多项式的系数位于某个扩张中，自同构可同时作用在所有系数上。",
+        "根会被相应地送到共轭位置，而方程形状保持。",
+        "对 σ∈Aut(E/F)，可形成 σ(f)(x)，其系数为 σ 作用后的系数。",
+        "它常用于比较不同嵌入下的因子和根。",
+        "英文名是 conjugate polynomial。"
+      ],
+      "fragmented_clues": [
+        "polynomial coefficients in extension automorphism action",
+        "roots sent to conjugate positions equation form",
+        "σ∈Aut(E/F) σ(f)(x) coefficientwise action",
+        "embeddings factors roots comparison",
+        "conjugate polynomial"
+      ]
+    },
+    {
+      "chinese_name": "根域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "给定 F[x] 中多项式的一个根 α，可以只添入这个根而不添入全部根。",
+        "所得对象由 F 和 α 共同生成。",
+        "标准形式是 F(α)，其中 f(α)=0。",
+        "它通常小于完整的 splitting field，除非其他根已经包含在内。",
+        "英文名是 root field。"
+      ],
+      "fragmented_clues": [
+        "f∈F[x] one root α adjoining",
+        "generated by F and α",
+        "F(α) f(α)=0",
+        "smaller than splitting field generally",
+        "root field"
+      ]
+    },
+    {
+      "chinese_name": "零点",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "函数或多项式在某个输入处取值为 0 时，该输入具有特殊地位。",
+        "在代数问题中，常寻找使 f(a)=0 的元素 a。",
+        "对 f∈F[x]，这样的 a 可能位于 F 内，也可能需要进入扩张。",
+        "所有这些输入的集合决定方程的解集。",
+        "英文名是 zero 或 root，常写 f(a)=0。"
+      ],
+      "fragmented_clues": [
+        "function polynomial input value 0",
+        "f(a)=0 element a",
+        "f∈F[x] a in F or extension",
+        "solution set of equation",
+        "zero root f(a)=0"
+      ]
+    },
+    {
+      "chinese_name": "多项式根",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "给定 f(x)，某个元素代入后若使结果为 0，就解出了对应方程。",
+        "该元素可能不在原底层 field 中，因此常引入扩张。",
+        "条件是 f(α)=0。",
+        "最小方程、分裂环境和 Galois 群都围绕这些元素组织。",
+        "英文名是 root of a polynomial。"
+      ],
+      "fragmented_clues": [
+        "f(x) element substitution value 0",
+        "element outside base field extension",
+        "f(α)=0",
+        "minimal equation splitting field Galois group",
+        "root of a polynomial"
+      ]
+    },
+    {
+      "chinese_name": "重根",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "一个多项式的某个根可能在因式分解中出现多于一次。",
+        "这会使根的互异性失败，并影响可分性。",
+        "判据是 f(α)=0 且 f'(α)=0。",
+        "判别式为 0 正是存在这种重复现象的信号。",
+        "英文名是 multiple root。"
+      ],
+      "fragmented_clues": [
+        "polynomial root multiplicity greater than 1",
+        "distinctness failure separability impact",
+        "f(α)=0 f'(α)=0",
+        "discriminant zero repeated phenomenon",
+        "multiple root"
+      ]
+    },
+    {
+      "chinese_name": "判别式",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "一个多项式的根之间的两两差可以组合成检验重复根的量。",
+        "它在置换根时只按平方变化，因此落回系数 field。",
+        "若 f 的根为 r_i，典型形式含有 ∏_{i<j}(r_i-r_j)^2。",
+        "该量为 0 当且仅当存在重复根。",
+        "英文名是 discriminant。"
+      ],
+      "fragmented_clues": [
+        "polynomial roots pairwise differences repeated-root test",
+        "root permutations square invariant coefficient field",
+        "∏_{i<j}(r_i-r_j)^2",
+        "zero iff repeated root",
+        "discriminant"
+      ]
+    },
+    {
+      "chinese_name": "导多项式",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "即使没有分析极限，F[x] 中的多项式也能进行形式求导。",
+        "幂 x^n 的规则变为 n x^{n-1}，并按线性延拓。",
+        "若 f 与这一形式导数有公共根，就会出现重复根。",
+        "在特征 p 中，x^p 的形式导数为 0，是不可分现象的重要来源。",
+        "英文名是 formal derivative。"
+      ],
+      "fragmented_clues": [
+        "F[x] formal differentiation no limits",
+        "x^n to n x^{n-1} linear extension",
+        "common root with f repeated root",
+        "char p derivative of x^p zero inseparability",
+        "formal derivative"
+      ]
+    },
+    {
+      "chinese_name": "正规性",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "代数扩张是否完整容纳共轭根，可由一个性质衡量。",
+        "若 F 上不可约多项式在 E 中有一个根，就必须在 E 中全部分解。",
+        "等价地，E 是某族 F-多项式的 splitting field。",
+        "该性质与可分性合在一起给出 Galois 扩张。",
+        "英文名是 normality。"
+      ],
+      "fragmented_clues": [
+        "algebraic extension conjugate roots completeness",
+        "irreducible over F one root in E all roots in E",
+        "E splitting field of polynomial family",
+        "with separability Galois extension",
+        "normality"
+      ]
+    },
+    {
+      "chinese_name": "可分性",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "多项式或代数扩张的根是否互异，可由一个性质描述。",
+        "对多项式，核心是没有重复根；对扩张，核心是每个元素的最低方程满足这一点。",
+        "判据常写作 gcd(f,f')=1。",
+        "特征 0 中自动良好，正特征中需检查 Frobenius 幂。",
+        "英文名是 separability。"
+      ],
+      "fragmented_clues": [
+        "polynomial extension distinct roots property",
+        "no repeated roots minimal equations",
+        "gcd(f,f')=1",
+        "char 0 automatic positive characteristic Frobenius powers",
+        "separability"
+      ]
+    },
+    {
+      "chinese_name": "线性不交",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "两个 F-扩张放入同一大环境时，可能没有额外的线性关系相互干扰。",
+        "这种状态使次数在复合时按预期相乘。",
+        "有限情形常表现为 [EL:F]=[E:F][L:F]。",
+        "等价判据之一是 E⊗_F L 在适当条件下保持为 field 或无零因子。",
+        "英文名是 linear disjointness。"
+      ],
+      "fragmented_clues": [
+        "two F-extensions no extra linear relations",
+        "degree multiplication in compositum",
+        "[EL:F]=[E:F][L:F]",
+        "E⊗_F L field domain criterion",
+        "linear disjointness"
+      ]
+    },
+    {
+      "chinese_name": "伽罗瓦群作用",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "Gal(E/F) 中的自同构不仅组成群，还会移动 E 中的根和元素。",
+        "这种移动保持 F 不动，并保持所有代数关系。",
+        "对多项式根集，σ·α=σ(α) 给出一个置换表示。",
+        "轨道和稳定子常用于计算共轭类、中间 field 和固定对象。",
+        "英文名是 action of Galois group。"
+      ],
+      "fragmented_clues": [
+        "Gal(E/F) automorphisms move roots elements",
+        "fix F preserve algebraic relations",
+        "σ·α=σ(α) permutation representation",
+        "orbits stabilizers conjugacy intermediate fields fixed objects",
+        "action of Galois group"
+      ]
+    },
+    {
+      "chinese_name": "自同构群",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "一个结构的所有可逆自映射若保持运算，就能按复合组成群。",
+        "在 field 情形中，这些映射保持 0、1、加法和乘法。",
+        "常见记号是 Aut(K) 或 Aut(E/F)。",
+        "当要求固定底层 F 时，它与 Galois 群密切相关。",
+        "英文名是 automorphism group。"
+      ],
+      "fragmented_clues": [
+        "structure invertible self-maps operation-preserving",
+        "field maps preserve 0 1 addition multiplication",
+        "Aut(K) Aut(E/F)",
+        "fix base F relation with Gal(E/F)",
+        "automorphism group"
+      ]
+    },
+    {
+      "chinese_name": "中间扩张",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在塔 F⊂M⊂E 中，可以把 M/F 或 E/M 视为单独研究的一层。",
+        "这些层继承原扩张的代数性、可分性或正规性的一部分。",
+        "塔公式连接三层次数：[E:F]=[E:M][M:F]。",
+        "Galois 对应中，每一层都来自某个子群固定的数据。",
+        "英文名是 intermediate extension。"
+      ],
+      "fragmented_clues": [
+        "tower F⊂M⊂E layers M/F E/M",
+        "inherited algebraic separable normal properties",
+        "[E:F]=[E:M][M:F]",
+        "Galois correspondence subgroup fixed data",
+        "intermediate extension"
+      ]
+    },
+    {
+      "chinese_name": "固定子群",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "群作用在集合或 field 元素上时，可以收集所有不移动指定对象的群元素。",
+        "这部分元素在群运算下封闭，并形成子群。",
+        "对 x，常记作 Stab_G(x)={g∈G:g·x=x}。",
+        "在 Galois 语境中，固定某个中间 field 的自同构也形成这样的子群。",
+        "英文名是 stabilizer subgroup。"
+      ],
+      "fragmented_clues": [
+        "group action elements fixing chosen object",
+        "closed under group operation subgroup",
+        "Stab_G(x)={g∈G:g·x=x}",
+        "Galois context automorphisms fixing intermediate field",
+        "stabilizer subgroup"
+      ]
+    },
+    {
+      "chinese_name": "可解群",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "某些群可以通过逐步取交换化的方式降到平凡群。",
+        "其导出列最终到达单位子群。",
+        "等价地，存在正规列使各商群为 Abelian group。",
+        "在 Galois 理论中，它刻画多项式能否用 radicals 求根。",
+        "英文名是 solvable group。"
+      ],
+      "fragmented_clues": [
+        "group successive commutator reduction",
+        "derived series reaches identity subgroup",
+        "normal series Abelian quotients",
+        "Galois theory radicals criterion",
+        "solvable group"
+      ]
+    },
+    {
+      "chinese_name": "阿廷施赖尔扩张",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "在特征 p 中，某些循环 p 次扩张由加性多项式产生。",
+        "典型生成元 α 满足 α^p-α=a。",
+        "若方程不可在底层解出，得到的扩张次数为 p。",
+        "其 Galois 群通常由 α↦α+c，c∈F_p 的平移生成。",
+        "英文名是 Artin-Schreier extension。"
+      ],
+      "fragmented_clues": [
+        "characteristic p cyclic degree p extension additive polynomial",
+        "α^p-α=a",
+        "no solution in base degree p",
+        "α↦α+c c∈F_p translations",
+        "Artin-Schreier extension"
+      ]
+    },
+    {
+      "chinese_name": "有限域扩张",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "F_q 的每个有限层都仍然由 q 的幂个元素组成。",
+        "次数为 n 的唯一模型是 F_{q^n}/F_q。",
+        "其 Galois 群为循环群，由 x↦x^q 生成。",
+        "中间层与 n 的因子一一对应。",
+        "英文名是 finite field extension。"
+      ],
+      "fragmented_clues": [
+        "F_q finite layers q-power elements",
+        "degree n unique model F_{q^n}/F_q",
+        "Galois group cyclic generator x↦x^q",
+        "intermediate layers divisors of n",
+        "finite field extension"
+      ]
+    },
+    {
+      "chinese_name": "伽罗瓦闭域",
+      "source_file": "words/数学/困难模式/field_theory_terms.csv",
+      "complete_clues": [
+        "某些 field 已经没有非平凡的有限 Galois 扩张。",
+        "等价地，其可分闭包与自身相同。",
+        "绝对 Galois 群在这种情况下是平凡群。",
+        "在正特征中，这比代数闭还要注意纯不可分部分的差异。",
+        "英文名是 Galois closed field。"
+      ],
+      "fragmented_clues": [
+        "field no nontrivial finite Galois extensions",
+        "separable closure equals itself",
+        "absolute Galois group trivial",
+        "positive characteristic purely inseparable distinction",
+        "Galois closed field"
+      ]
+    }
+  ]
+}

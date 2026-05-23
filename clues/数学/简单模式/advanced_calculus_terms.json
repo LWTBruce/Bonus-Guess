@@ -1,0 +1,1841 @@
+{
+  "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+  "entries": [
+    {
+      "chinese_name": "高等微积分",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究函数、序列、曲线和曲面上的变化与累积。",
+        "局部线性化、细分求和、多变量微元和无穷过程共同出现。",
+        "`lim`、`d/dx`、`∫`、`∂/∂x_i` 与级数求和是主要入口。",
+        "核心判别依赖邻域控制、微元构造、收敛判据和坐标因子。",
+        "标准记号或英文名为 `advanced_calculus`。"
+      ],
+      "fragmented_clues": [
+        "lim d/dx integral partial series",
+        "局部线性化 细分求和 多变量微元",
+        "ε-δ 微元 收敛判据",
+        "邻域控制 Jacobian 向量场",
+        "advanced calculus"
+      ]
+    },
+    {
+      "chinese_name": "极限",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究变量逼近某点或无穷远时的稳定目标。",
+        "邻域语言用输入距离控制输出距离。",
+        "`0<|x-a|<δ => |f(x)-A|<ε` 是典型表述。",
+        "`lim_{x->a} f(x)=A` 锁定被逼近的数。",
+        "标准记号或英文名为 `limit`。"
+      ],
+      "fragmented_clues": [
+        "趋近 稳定目标",
+        "ε δ 邻域 控制",
+        "0<|x-a|<δ |f(x)-A|<ε",
+        "lim f(x)=A",
+        "limit"
+      ]
+    },
+    {
+      "chinese_name": "数列极限",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究离散指标不断增大时的项值稳定目标。",
+        "下标 `n` 趋向无穷，误差由充分靠后的项控制。",
+        "`n>N => |a_n-A|<ε` 是常用定义。",
+        "`lim_{n->∞} a_n=A` 给出最终数值。",
+        "标准记号或英文名为 `limit_of_sequence`。"
+      ],
+      "fragmented_clues": [
+        "离散指标 n→∞",
+        "尾项 误差 ε",
+        "n>N |a_n-A|<ε",
+        "lim a_n=A",
+        "limit of sequence"
+      ]
+    },
+    {
+      "chinese_name": "函数极限",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究自变量在一点附近移动时的函数值稳定目标。",
+        "点的两侧或多维邻域都可能影响判断。",
+        "`x->a` 或 `x->∞` 下的输出趋向用 ε-δ 描述。",
+        "函数值的邻域收缩决定目标数。",
+        "标准记号或英文名为 `limit_of_function`。"
+      ],
+      "fragmented_clues": [
+        "x→a 输出稳定",
+        "邻域 两侧 多维",
+        "0<|x-a|<δ",
+        "lim f(x)=A",
+        "limit of function"
+      ]
+    },
+    {
+      "chinese_name": "连续",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究函数图像在指定点附近保持无跳断变化。",
+        "函数值和逼近目标在同一点相合。",
+        "`lim_{x->a} f(x)=f(a)` 是判别入口。",
+        "局部扰动小会导致函数值扰动小。",
+        "标准记号或英文名为 `continuity`。"
+      ],
+      "fragmented_clues": [
+        "无跳断 局部稳定",
+        "函数值 逼近目标 相合",
+        "lim f(x)=f(a)",
+        "ε δ 局部扰动",
+        "continuity"
+      ]
+    },
+    {
+      "chinese_name": "一致连续",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究同一个输入尺度控制整个集合上的点对。",
+        "δ 的选择不随基点改变。",
+        "`|x-y|<δ => |f(x)-f(y)|<ε` 对全体点成立。",
+        "全局共同的邻域尺度是关键特征。",
+        "标准记号或英文名为 `uniform_continuity`。"
+      ],
+      "fragmented_clues": [
+        "全域 点对 控制",
+        "δ 不随基点",
+        "|x-y|<δ |f(x)-f(y)|<ε",
+        "uniform continuity",
+        "uniform continuity"
+      ]
+    },
+    {
+      "chinese_name": "导数",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究函数在一点附近的瞬时变化率。",
+        "割线斜率在点靠近时趋向切线斜率。",
+        "`lim_{h->0}(f(x+h)-f(x))/h` 是定义式。",
+        "局部线性主部的系数被该式给出。",
+        "标准记号或英文名为 `derivative`。"
+      ],
+      "fragmented_clues": [
+        "瞬时变化率 切线斜率",
+        "割线 h→0",
+        "(f(x+h)-f(x))/h",
+        "local linear coefficient",
+        "derivative"
+      ]
+    },
+    {
+      "chinese_name": "微分",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究函数增量的一阶线性近似。",
+        "自变量微小改变时，主部由斜率和增量相乘给出。",
+        "`dy=f'(x)dx` 或 `df` 表示该线性主部。",
+        "高阶小量被舍去后留下主要变化。",
+        "标准记号或英文名为 `differential`。"
+      ],
+      "fragmented_clues": [
+        "增量 一阶线性近似",
+        "斜率 dx 主部",
+        "dy=f'(x)dx",
+        "df",
+        "differential"
+      ]
+    },
+    {
+      "chinese_name": "高阶导数",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究变化率继续反复取变化率后的对象。",
+        "二阶量刻画弯曲，更多阶量进入泰勒展开。",
+        "`f^{(n)}(x)` 或 `d^n f/dx^n` 是标准记号。",
+        "多次微分后的函数描述更精细的局部形状。",
+        "标准记号或英文名为 `higher_order_derivative`。"
+      ],
+      "fragmented_clues": [
+        "反复微分 局部形状",
+        "二阶弯曲 Taylor",
+        "f^(n)(x) d^n f/dx^n",
+        "higher order derivative",
+        "higher order derivative"
+      ]
+    },
+    {
+      "chinese_name": "隐函数",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究变量之间由方程关系间接确定的函数。",
+        "输出未必被显式解出，而由 `F(x,y)=0` 约束。",
+        "`dy/dx=-F_x/F_y` 在 `F_y≠0` 时常见。",
+        "方程约束替代表达式本身。",
+        "标准记号或英文名为 `implicit_function`。"
+      ],
+      "fragmented_clues": [
+        "方程约束 间接确定",
+        "F(x,y)=0",
+        "dy/dx=-F_x/F_y",
+        "F_y≠0",
+        "implicit function"
+      ]
+    },
+    {
+      "chinese_name": "反函数",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究输入输出关系可反向恢复原变量。",
+        "图像在 `y=x` 两侧互为镜像。",
+        "`(f^{-1})'(y)=1/f'(x)` 在非零斜率处成立。",
+        "复合后得到恒等映射是核心。",
+        "标准记号或英文名为 `inverse_function`。"
+      ],
+      "fragmented_clues": [
+        "反向恢复 原变量",
+        "y=x 镜像",
+        "(f^-1)'=1/f'",
+        "f^-1∘f=id",
+        "inverse function"
+      ]
+    },
+    {
+      "chinese_name": "泰勒公式",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究光滑函数在一点附近被多项式和余项逼近。",
+        "各阶变化率决定多项式系数。",
+        "`f(x)=sum f^{(k)}(a)(x-a)^k/k!+R_n` 是常见形式。",
+        "展开中心和余项阶数决定精度。",
+        "标准记号或英文名为 `taylor_formula`。"
+      ],
+      "fragmented_clues": [
+        "光滑函数 多项式 余项",
+        "各阶变化率 系数",
+        "sum f^(k)(a)(x-a)^k/k!",
+        "R_n",
+        "taylor formula"
+      ]
+    },
+    {
+      "chinese_name": "麦克劳林公式",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究光滑函数在原点附近被多项式近似。",
+        "展开中心固定为 `0`。",
+        "`f(x)=sum f^{(k)}(0)x^k/k!+R_n` 是常见形式。",
+        "原点处各阶变化率给出系数。",
+        "标准记号或英文名为 `maclaurin_formula`。"
+      ],
+      "fragmented_clues": [
+        "原点 多项式 余项",
+        "展开中心 0",
+        "sum f^(k)(0)x^k/k!",
+        "R_n",
+        "maclaurin formula"
+      ]
+    },
+    {
+      "chinese_name": "洛必达法则",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究未定式的商型极限可转向变化率之比。",
+        "`0/0` 或 `∞/∞` 形态是主要入口。",
+        "满足条件时 `lim f/g = lim f'/g'`。",
+        "分子分母同步趋零或发散后比较斜率。",
+        "标准记号或英文名为 `l_hopital_rule`。"
+      ],
+      "fragmented_clues": [
+        "未定式 商型",
+        "0/0 ∞/∞",
+        "lim f/g = lim f'/g'",
+        "derivative ratio",
+        "l hopital rule"
+      ]
+    },
+    {
+      "chinese_name": "不定积分",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究给定函数的全部原函数族。",
+        "常数差异不会改变求导结果。",
+        "`∫ f(x)dx=F(x)+C` 表示一族函数。",
+        "求导后回到被积表达式是判别核心。",
+        "标准记号或英文名为 `indefinite_integral`。"
+      ],
+      "fragmented_clues": [
+        "原函数族 常数差",
+        "求导 还原",
+        "∫f(x)dx=F(x)+C",
+        "F'=f",
+        "indefinite integral"
+      ]
+    },
+    {
+      "chinese_name": "定积分",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究闭区间上函数累积量的数值。",
+        "细分、取样和求和在网格变细时给出结果。",
+        "`∫_a^b f(x)dx` 可由黎曼和逼近。",
+        "上限下限和被积函数共同决定有向面积。",
+        "标准记号或英文名为 `definite_integral`。"
+      ],
+      "fragmented_clues": [
+        "闭区间 累积量",
+        "细分 取样 求和",
+        "∫_a^b f(x)dx",
+        "Riemann sum",
+        "definite integral"
+      ]
+    },
+    {
+      "chinese_name": "反常积分",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究无界区间或无界被积函数上的积分过程。",
+        "端点或无穷远处要先取截断再求极限。",
+        "`lim_{b->∞}∫_a^b f` 或 `lim_{t->a+}∫_t^b f`。",
+        "最终数值存在依赖截断积分的稳定性。",
+        "标准记号或英文名为 `improper_integral`。"
+      ],
+      "fragmented_clues": [
+        "无界区间 奇点",
+        "截断 极限",
+        "lim ∫_a^b f",
+        "improper integral",
+        "improper integral"
+      ]
+    },
+    {
+      "chinese_name": "黎曼积分",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究区间细分下的求和极限。",
+        "小区间长度和取样函数值相乘后求和。",
+        "网格范数趋零时所有黎曼和同趋一值。",
+        "可积性由上和下和能否靠近判别。",
+        "标准记号或英文名为 `riemann_integral`。"
+      ],
+      "fragmented_clues": [
+        "区间细分 求和极限",
+        "取样 函数值 Δx",
+        "mesh→0 Riemann sums",
+        "upper sum lower sum",
+        "riemann integral"
+      ]
+    },
+    {
+      "chinese_name": "积分中值定理",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究连续函数在区间上的累积量可由某个点值代表。",
+        "平均值乘区间长度等于总面积。",
+        "`∫_a^b f(x)dx=f(ξ)(b-a)` 是典型结论。",
+        "`ξ∈(a,b)` 的存在性连接局部值和整体量。",
+        "标准记号或英文名为 `mean_value_theorem_for_integrals`。"
+      ],
+      "fragmented_clues": [
+        "连续函数 区间 平均值",
+        "总面积 点值",
+        "∫_a^b f=f(ξ)(b-a)",
+        "ξ∈(a,b)",
+        "mean value theorem for integrals"
+      ]
+    },
+    {
+      "chinese_name": "微积分基本定理",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究累积函数和变化率之间的桥梁。",
+        "上限变量改变时，面积函数的变化率回到被积函数。",
+        "`d/dx ∫_a^x f(t)dt=f(x)` 与 `∫_a^b f=F(b)-F(a)`。",
+        "求导和积分在适当条件下互逆。",
+        "标准记号或英文名为 `fundamental_theorem_of_calculus`。"
+      ],
+      "fragmented_clues": [
+        "累积函数 变化率",
+        "面积函数 上限变量",
+        "d/dx ∫_a^x f=f(x)",
+        "F(b)-F(a)",
+        "fundamental theorem of calculus"
+      ]
+    },
+    {
+      "chinese_name": "无穷级数",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究无穷多项相加形成的极限对象。",
+        "部分和序列决定总和是否存在。",
+        "`S_n=sum_{k=1}^n a_k` 的极限是判别入口。",
+        "项趋零只是必要条件，仍需更强判据。",
+        "标准记号或英文名为 `infinite_series`。"
+      ],
+      "fragmented_clues": [
+        "无穷多项 部分和",
+        "S_n 极限",
+        "sum a_k",
+        "a_k→0 necessary",
+        "infinite series"
+      ]
+    },
+    {
+      "chinese_name": "幂级数",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究以变量幂次排列的函数级数。",
+        "中心点和系数共同决定可收敛区间。",
+        "`sum a_n(x-a)^n` 是标准形式。",
+        "收敛范围常由比值或根式判别。",
+        "标准记号或英文名为 `power_series`。"
+      ],
+      "fragmented_clues": [
+        "变量幂次 函数级数",
+        "中心点 系数",
+        "sum a_n(x-a)^n",
+        "ratio root test",
+        "power series"
+      ]
+    },
+    {
+      "chinese_name": "傅里叶级数",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究周期函数由三角函数系统展开。",
+        "正弦余弦系数来自一个周期上的积分。",
+        "`a_n,b_n` 或复指数系数描述频率成分。",
+        "频谱分解把函数转成各谐波叠加。",
+        "标准记号或英文名为 `fourier_series`。"
+      ],
+      "fragmented_clues": [
+        "周期函数 三角系统",
+        "正弦 余弦 系数积分",
+        "a_n b_n e^{inx}",
+        "harmonics",
+        "fourier series"
+      ]
+    },
+    {
+      "chinese_name": "收敛半径",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究幂级数在中心周围的有效距离。",
+        "圆盘或区间内部绝对稳定，边界另判。",
+        "`R=1/limsup |a_n|^{1/n}` 是常见公式。",
+        "变量离中心的距离与该数比较。",
+        "标准记号或英文名为 `radius_of_convergence`。"
+      ],
+      "fragmented_clues": [
+        "幂级数 中心 有效距离",
+        "内部稳定 边界另判",
+        "R=1/limsup |a_n|^(1/n)",
+        "|x-a|<R",
+        "radius of convergence"
+      ]
+    },
+    {
+      "chinese_name": "逐项求导",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究函数级数在和号内进行微分操作。",
+        "一致性条件保证结果仍表示和函数的变化率。",
+        "`(sum f_n)'=sum f_n'` 在相应条件下成立。",
+        "交换微分和无穷求和是核心。",
+        "标准记号或英文名为 `termwise_differentiation`。"
+      ],
+      "fragmented_clues": [
+        "函数级数 微分 交换",
+        "一致性 条件",
+        "(sum f_n)'=sum f_n'",
+        "termwise differentiation",
+        "termwise differentiation"
+      ]
+    },
+    {
+      "chinese_name": "逐项积分",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究函数级数在和号内进行积分操作。",
+        "一致收敛常保证积分与无穷求和交换。",
+        "`∫ sum f_n = sum ∫ f_n` 是目标形式。",
+        "交换积分和无穷求和是核心。",
+        "标准记号或英文名为 `termwise_integration`。"
+      ],
+      "fragmented_clues": [
+        "函数级数 积分 交换",
+        "一致收敛",
+        "∫sum f_n=sum∫f_n",
+        "termwise integration",
+        "termwise integration"
+      ]
+    },
+    {
+      "chinese_name": "多元函数",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究输入含有多个坐标的数值规则。",
+        "图像常表现为曲面、等值线或高维超曲面。",
+        "`f(x_1,...,x_n)` 是基本记号。",
+        "各坐标方向上的变化可分别考察。",
+        "标准记号或英文名为 `multivariable_function`。"
+      ],
+      "fragmented_clues": [
+        "多个坐标 输入规则",
+        "曲面 等值线",
+        "f(x_1,...,x_n)",
+        "coordinate directions",
+        "multivariable function"
+      ]
+    },
+    {
+      "chinese_name": "偏导数",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究多变量规则沿单一坐标方向的瞬时变化率。",
+        "其余变量固定，只让一个坐标改变。",
+        "`∂f/∂x_i` 是常见记号。",
+        "坐标方向的局部斜率被单独提取。",
+        "标准记号或英文名为 `partial_derivative`。"
+      ],
+      "fragmented_clues": [
+        "单一坐标 变化率",
+        "其余变量固定",
+        "∂f/∂x_i",
+        "coordinate slope",
+        "partial derivative"
+      ]
+    },
+    {
+      "chinese_name": "全微分",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究多变量函数增量的一阶线性主部。",
+        "各坐标增量按对应方向斜率加权相加。",
+        "`df=sum f_{x_i} dx_i` 是标准形式。",
+        "局部线性近似同时包含所有坐标方向。",
+        "标准记号或英文名为 `total_differential`。"
+      ],
+      "fragmented_clues": [
+        "多变量增量 一阶主部",
+        "坐标增量 加权",
+        "df=sum f_xi dx_i",
+        "linear approximation",
+        "total differential"
+      ]
+    },
+    {
+      "chinese_name": "方向导数",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究多变量函数沿指定方向的瞬时变化率。",
+        "单位方向向量决定移动路线。",
+        "`D_u f=grad f · u` 在可微时成立。",
+        "方向选择把梯度投影成标量。",
+        "标准记号或英文名为 `directional_derivative`。"
+      ],
+      "fragmented_clues": [
+        "指定方向 变化率",
+        "单位方向 u",
+        "D_u f=grad f·u",
+        "projection",
+        "directional derivative"
+      ]
+    },
+    {
+      "chinese_name": "梯度",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究标量场中增长最快方向对应的向量。",
+        "各坐标偏微分排列成一个方向对象。",
+        "`grad f=(f_x,f_y,f_z)` 是常见写法。",
+        "点乘任意单位方向可得到对应方向变化率。",
+        "标准记号或英文名为 `gradient`。"
+      ],
+      "fragmented_clues": [
+        "增长最快方向",
+        "坐标偏微分 排列",
+        "grad f=(f_x,f_y,f_z)",
+        "grad f·u",
+        "gradient"
+      ]
+    },
+    {
+      "chinese_name": "散度",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究向量场在一点附近的源汇强度。",
+        "各分量对本坐标求偏微分后相加。",
+        "`∇·F=∂P/∂x+∂Q/∂y+∂R/∂z`。",
+        "正负号反映局部流出或流入。",
+        "标准记号或英文名为 `divergence`。"
+      ],
+      "fragmented_clues": [
+        "向量场 源汇强度",
+        "分量 本坐标 偏微分",
+        "∇·F",
+        "local flux density",
+        "divergence"
+      ]
+    },
+    {
+      "chinese_name": "旋度",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究向量场在一点附近的局部旋转强度。",
+        "分量偏微分按叉乘行列式组合。",
+        "`∇×F` 给出三维向量。",
+        "方向由右手规则式的局部环流确定。",
+        "标准记号或英文名为 `curl`。"
+      ],
+      "fragmented_clues": [
+        "向量场 局部旋转",
+        "分量偏微分 叉乘",
+        "∇×F",
+        "local circulation density",
+        "curl"
+      ]
+    },
+    {
+      "chinese_name": "雅可比矩阵",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究向量值映射的一阶线性近似数组。",
+        "每个输出分量对每个输入坐标求偏微分。",
+        "`J=(∂f_i/∂x_j)` 是标准形式。",
+        "多元链式法则中的线性因子由它承担。",
+        "标准记号或英文名为 `jacobian_matrix`。"
+      ],
+      "fragmented_clues": [
+        "向量值映射 一阶近似",
+        "输出分量 输入坐标",
+        "J=(∂f_i/∂x_j)",
+        "chain rule factor",
+        "jacobian matrix"
+      ]
+    },
+    {
+      "chinese_name": "雅可比行列式",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究坐标变换中的局部体积伸缩因子。",
+        "一阶近似数组取行列式后给出面积或体积比例。",
+        "`|det(∂x_i/∂u_j)|` 出现在换元公式中。",
+        "绝对值常乘在新变量积分元前。",
+        "标准记号或英文名为 `jacobian_determinant`。"
+      ],
+      "fragmented_clues": [
+        "坐标变换 体积伸缩",
+        "一阶数组 行列式",
+        "|det(∂x/∂u)|",
+        "change of variables",
+        "jacobian determinant"
+      ]
+    },
+    {
+      "chinese_name": "链式法则",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究复合函数变化率的传递规则。",
+        "外层变化率与内层变化率按矩阵或乘积组合。",
+        "`d(f∘g)=Df(g)Dg` 是多元形式。",
+        "中间变量连接输入扰动和最终输出。",
+        "标准记号或英文名为 `chain_rule`。"
+      ],
+      "fragmented_clues": [
+        "复合函数 变化率传递",
+        "外层 内层 乘积",
+        "d(f∘g)=Df(g)Dg",
+        "Jacobian product",
+        "chain rule"
+      ]
+    },
+    {
+      "chinese_name": "隐函数定理",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究方程组局部解出部分变量的存在性结论。",
+        "关键条件是相关偏导数组的行列式非零。",
+        "`det F_y≠0` 时可局部写成 `y=g(x)`。",
+        "非奇异性保证方程约束可转成局部函数。",
+        "标准记号或英文名为 `implicit_function_theorem`。"
+      ],
+      "fragmented_clues": [
+        "方程组 局部解出",
+        "偏导数组 非零行列式",
+        "det F_y≠0",
+        "y=g(x)",
+        "implicit function theorem"
+      ]
+    },
+    {
+      "chinese_name": "极值",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究函数在附近点比较后取得最大或最小。",
+        "一阶变化消失、二阶信息决定类型。",
+        "`grad f=0` 与 Hessian 判别常同时出现。",
+        "邻域比较而非全域比较是关键。",
+        "标准记号或英文名为 `extremum`。"
+      ],
+      "fragmented_clues": [
+        "附近比较 最大 最小",
+        "一阶消失 二阶判别",
+        "grad f=0 Hessian",
+        "local extremum",
+        "extremum"
+      ]
+    },
+    {
+      "chinese_name": "条件极值",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究函数在约束集合上比较最大或最小。",
+        "可行方向受方程条件限制。",
+        "常见入口是 `grad f=λ grad g`。",
+        "目标函数的变化需贴合约束曲面。",
+        "标准记号或英文名为 `constrained_extremum`。"
+      ],
+      "fragmented_clues": [
+        "约束集合 最大 最小",
+        "可行方向 方程条件",
+        "grad f=λgrad g",
+        "constraint",
+        "constrained extremum"
+      ]
+    },
+    {
+      "chinese_name": "拉格朗日乘数法",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究带等式约束的最值计算方法。",
+        "目标变化率由约束变化率线性组合。",
+        "`∇f=sum λ_i∇g_i` 与 `g_i=0` 联立。",
+        "新增参数记录约束对最优点的影响。",
+        "标准记号或英文名为 `lagrange_multiplier_method`。"
+      ],
+      "fragmented_clues": [
+        "等式约束 最值",
+        "目标变化率 约束变化率",
+        "∇f=sum λ_i∇g_i",
+        "multipliers",
+        "lagrange multiplier method"
+      ]
+    },
+    {
+      "chinese_name": "重积分",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究多维区域上累积局部密度。",
+        "积分元可表示面积元、体积元或坐标变换后的微元。",
+        "`∫∫`、`∫∫∫` 和换元因子常出现。",
+        "区域边界和积分次序决定计算路线。",
+        "标准记号或英文名为 `multiple_integral`。"
+      ],
+      "fragmented_clues": [
+        "多维区域 累积密度",
+        "面积元 体积元 微元",
+        "∫∫ ∫∫∫",
+        "order bounds",
+        "multiple integral"
+      ]
+    },
+    {
+      "chinese_name": "二重积分",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究平面区域上累积局部密度。",
+        "可按 `x` 后 `y` 或反向次序迭代。",
+        "`∫∫_D f(x,y)dA` 是标准形式。",
+        "区域投影与边界函数决定上下限。",
+        "标准记号或英文名为 `double_integral`。"
+      ],
+      "fragmented_clues": [
+        "平面区域 局部密度",
+        "迭代次序 投影",
+        "∫∫_D f dA",
+        "bounds",
+        "double integral"
+      ]
+    },
+    {
+      "chinese_name": "三重积分",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究空间区域上累积局部密度。",
+        "柱坐标或球坐标常改变体积元。",
+        "`∫∫∫_Ω f dV` 是标准形式。",
+        "空间边界和体积元决定数值。",
+        "标准记号或英文名为 `triple_integral`。"
+      ],
+      "fragmented_clues": [
+        "空间区域 局部密度",
+        "柱坐标 球坐标",
+        "∫∫∫_Ω f dV",
+        "volume element",
+        "triple integral"
+      ]
+    },
+    {
+      "chinese_name": "曲线积分",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究沿曲线累积标量密度或向量场做功。",
+        "参数化路径给出积分变量。",
+        "`∫_C f ds` 或 `∫_C Pdx+Qdy`。",
+        "路径形状和方向可能影响结果。",
+        "标准记号或英文名为 `line_integral`。"
+      ],
+      "fragmented_clues": [
+        "沿曲线 累积",
+        "参数化 路径方向",
+        "∫_C f ds",
+        "∫_C Pdx+Qdy",
+        "line integral"
+      ]
+    },
+    {
+      "chinese_name": "曲面积分",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究沿曲面累积标量密度或向量场通量。",
+        "参数化曲面给出面积元或法向量。",
+        "`∫∫_S f dS` 或 `∫∫_S F·n dS`。",
+        "曲面方向会影响向量场通量符号。",
+        "标准记号或英文名为 `surface_integral`。"
+      ],
+      "fragmented_clues": [
+        "沿曲面 累积",
+        "参数化 法向量",
+        "∫∫_S f dS",
+        "∫∫_S F·n dS",
+        "surface integral"
+      ]
+    },
+    {
+      "chinese_name": "格林公式",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究平面区域边界积分和内部二重积分的联系。",
+        "边界正向围成的区域进入公式。",
+        "`∮_C Pdx+Qdy=∫∫_D(Q_x-P_y)dA`。",
+        "平面环流可转为面积上的旋转密度。",
+        "标准记号或英文名为 `green_formula`。"
+      ],
+      "fragmented_clues": [
+        "平面边界 内部区域",
+        "正向 闭曲线",
+        "∮Pdx+Qdy=∫∫(Q_x-P_y)dA",
+        "Green theorem",
+        "green formula"
+      ]
+    },
+    {
+      "chinese_name": "高斯公式",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究闭合曲面的通量和内部体积分的联系。",
+        "向外法向量与三维区域共同出现。",
+        "`∫∫_S F·n dS=∫∫∫_Ω ∇·F dV`。",
+        "总流出量由内部源汇密度积分给出。",
+        "标准记号或英文名为 `gauss_formula`。"
+      ],
+      "fragmented_clues": [
+        "闭合曲面 通量",
+        "向外法向量 三维区域",
+        "∫∫ F·n dS=∫∫∫ ∇·F dV",
+        "divergence theorem",
+        "gauss formula"
+      ]
+    },
+    {
+      "chinese_name": "斯托克斯公式",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究空间曲线上的环流和跨越曲面的旋转密度相连。",
+        "边界方向与曲面法向量需匹配。",
+        "`∮_∂S F·dr=∫∫_S (∇×F)·n dS`。",
+        "边界环流可由曲面上的局部旋转累积得到。",
+        "标准记号或英文名为 `stokes_formula`。"
+      ],
+      "fragmented_clues": [
+        "边界曲线 曲面",
+        "方向 法向量 匹配",
+        "∮F·dr=∫∫(∇×F)·n dS",
+        "Stokes theorem",
+        "stokes formula"
+      ]
+    },
+    {
+      "chinese_name": "一元函数",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究输入只有一个实变量的数值规则。",
+        "图像通常是一条平面曲线。",
+        "`y=f(x)` 是基本形式。",
+        "变化率、面积和单调性都围绕一个自变量展开。",
+        "标准记号或英文名为 `function_of_one_variable`。"
+      ],
+      "fragmented_clues": [
+        "单个实变量 输入规则",
+        "平面曲线",
+        "y=f(x)",
+        "one variable",
+        "function of one variable"
+      ]
+    },
+    {
+      "chinese_name": "有界函数",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究函数值被某个固定数限制在有限范围内。",
+        "上下界可同时存在，也可只讨论一侧。",
+        "`|f(x)|≤M` 是常见表达。",
+        "值域不逃向无穷远是核心特征。",
+        "标准记号或英文名为 `bounded_function`。"
+      ],
+      "fragmented_clues": [
+        "函数值 有限范围",
+        "上界 下界",
+        "|f(x)|≤M",
+        "bounded",
+        "bounded function"
+      ]
+    },
+    {
+      "chinese_name": "单调函数",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究自变量按顺序增加时函数值保持同向次序。",
+        "可分为不降、不增、严格上升或严格下降。",
+        "`x1<x2 => f(x1)≤f(x2)` 是一种形式。",
+        "次序保持使反向恢复和区间估计更容易。",
+        "标准记号或英文名为 `monotone_function`。"
+      ],
+      "fragmented_clues": [
+        "顺序增加 同向次序",
+        "不降 不增 严格",
+        "x1<x2 => f(x1)≤f(x2)",
+        "order preserving",
+        "monotone function"
+      ]
+    },
+    {
+      "chinese_name": "无穷小量",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究在某个过程下趋向零的变量或函数。",
+        "常与另一个小量比较阶数。",
+        "`α(x)->0` 是基本特征。",
+        "乘除比较可得到等价或高低阶关系。",
+        "标准记号或英文名为 `infinitesimal`。"
+      ],
+      "fragmented_clues": [
+        "趋零 变量 函数",
+        "阶数 比较",
+        "α(x)→0",
+        "o(1)",
+        "infinitesimal"
+      ]
+    },
+    {
+      "chinese_name": "无穷大量",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究在某个过程下绝对值无限增大的对象。",
+        "倒数若存在则常趋向零。",
+        "`|f(x)|->∞` 是基本特征。",
+        "增长速度比较会产生阶的判断。",
+        "标准记号或英文名为 `infinite_quantity`。"
+      ],
+      "fragmented_clues": [
+        "绝对值 无限增大",
+        "倒数 趋零",
+        "|f(x)|→∞",
+        "growth rate",
+        "infinite quantity"
+      ]
+    },
+    {
+      "chinese_name": "等价无穷小",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究两个趋零对象的一阶主部相同。",
+        "比值趋向一时可互相替换。",
+        "`α~β` 表示 `lim α/β=1`。",
+        "极限计算中常替换为同阶简单表达式。",
+        "标准记号或英文名为 `equivalent_infinitesimal`。"
+      ],
+      "fragmented_clues": [
+        "趋零对象 一阶主部",
+        "比值 趋一",
+        "α~β lim α/β=1",
+        "same leading term",
+        "equivalent infinitesimal"
+      ]
+    },
+    {
+      "chinese_name": "夹逼定理",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究目标量被两个同趋一值的对象夹住。",
+        "不等式链提供逼近控制。",
+        "`g≤f≤h` 且两端同极限时中间也同极限。",
+        "上下界同时收紧即可确定目标。",
+        "标准记号或英文名为 `squeeze_theorem`。"
+      ],
+      "fragmented_clues": [
+        "不等式链 夹住",
+        "上下界 同趋一值",
+        "g≤f≤h",
+        "squeeze theorem",
+        "squeeze theorem"
+      ]
+    },
+    {
+      "chinese_name": "单调有界定理",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究数列次序固定且范围有限时保证稳定目标存在。",
+        "上升列看上确界，下降列看下确界。",
+        "单调性和有界性联合推出收敛。",
+        "无需显式求和也能判断存在性。",
+        "标准记号或英文名为 `monotone_bounded_theorem`。"
+      ],
+      "fragmented_clues": [
+        "数列 次序固定 范围有限",
+        "上确界 下确界",
+        "monotone bounded",
+        "convergence",
+        "monotone bounded theorem"
+      ]
+    },
+    {
+      "chinese_name": "柯西收敛准则",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究对象自身尾部互相靠近时判定稳定性。",
+        "不预先给出目标数也能判断。",
+        "`m,n>N => |a_m-a_n|<ε` 是数列形式。",
+        "完备空间中尾部互近等价于收敛。",
+        "标准记号或英文名为 `cauchy_convergence_criterion`。"
+      ],
+      "fragmented_clues": [
+        "尾部 互相靠近",
+        "目标数 未预设",
+        "m,n>N |a_m-a_n|<ε",
+        "Cauchy criterion",
+        "cauchy convergence criterion"
+      ]
+    },
+    {
+      "chinese_name": "左极限",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究自变量从小于目标点的一侧逼近。",
+        "只考察 `x<a` 的邻域部分。",
+        "`x->a-` 是标准记号。",
+        "一侧趋近值可能与另一侧不同。",
+        "标准记号或英文名为 `left_limit`。"
+      ],
+      "fragmented_clues": [
+        "小于目标点 一侧逼近",
+        "x<a 邻域",
+        "x→a-",
+        "one sided",
+        "left limit"
+      ]
+    },
+    {
+      "chinese_name": "右极限",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究自变量从大于目标点的一侧逼近。",
+        "只考察 `x>a` 的邻域部分。",
+        "`x->a+` 是标准记号。",
+        "两侧趋近值相等时才给出双侧结论。",
+        "标准记号或英文名为 `right_limit`。"
+      ],
+      "fragmented_clues": [
+        "大于目标点 一侧逼近",
+        "x>a 邻域",
+        "x→a+",
+        "one sided",
+        "right limit"
+      ]
+    },
+    {
+      "chinese_name": "间断点",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究函数在某点附近无法保持无跳断状态。",
+        "失败原因可能来自缺值、跳变或无界振荡。",
+        "`lim f(x)=f(a)` 不成立是判别入口。",
+        "分类时看两侧趋近值与函数值的关系。",
+        "标准记号或英文名为 `discontinuity_point`。"
+      ],
+      "fragmented_clues": [
+        "无跳断失败",
+        "缺值 跳变 振荡",
+        "lim f(x)≠f(a)",
+        "classification",
+        "discontinuity point"
+      ]
+    },
+    {
+      "chinese_name": "可去间断点",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究缺失或取值错误造成的局部断裂。",
+        "两侧趋近值存在且相等。",
+        "重新定义该点函数值即可修复。",
+        "问题只出在单点取值而非邻域趋势。",
+        "标准记号或英文名为 `removable_discontinuity`。"
+      ],
+      "fragmented_clues": [
+        "单点取值错误",
+        "两侧同值",
+        "lim exists",
+        "removable",
+        "removable discontinuity"
+      ]
+    },
+    {
+      "chinese_name": "跳跃间断点",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究两侧逼近值都存在但不相等。",
+        "图像在该点出现有限高度的跃迁。",
+        "`lim_{x->a-}f` 与 `lim_{x->a+}f` 不同。",
+        "差值大小给出跃迁幅度。",
+        "标准记号或英文名为 `jump_discontinuity`。"
+      ],
+      "fragmented_clues": [
+        "两侧值 存在 不等",
+        "有限跃迁",
+        "lim left ≠ lim right",
+        "jump",
+        "jump discontinuity"
+      ]
+    },
+    {
+      "chinese_name": "导函数",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究每个可微点的局部变化率组成的新函数。",
+        "输入仍为原自变量，输出为切线斜率。",
+        "`x -> f'(x)` 是基本构造。",
+        "它描述原函数斜率随位置的变化。",
+        "标准记号或英文名为 `derived_function`。"
+      ],
+      "fragmented_clues": [
+        "局部变化率 新函数",
+        "切线斜率 输出",
+        "x↦f'(x)",
+        "slope function",
+        "derived function"
+      ]
+    },
+    {
+      "chinese_name": "单侧导数",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究只从一侧计算差商趋向值。",
+        "端点或分段函数处经常先比较两侧差商。",
+        "`lim_{h->0+}` 或 `lim_{h->0-}` 的差商。",
+        "左右数值相等时才得到普通可微性。",
+        "标准记号或英文名为 `one_sided_derivative`。"
+      ],
+      "fragmented_clues": [
+        "一侧 差商",
+        "端点 分段",
+        "h→0+ h→0-",
+        "one sided derivative",
+        "one sided derivative"
+      ]
+    },
+    {
+      "chinese_name": "微分中值定理",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究区间端点平均变化率和内部瞬时变化率相连。",
+        "连续与开区间可微是基本条件。",
+        "存在 `ξ` 使 `f'(ξ)=(f(b)-f(a))/(b-a)`。",
+        "一条割线斜率在内部被切线斜率实现。",
+        "标准记号或英文名为 `mean_value_theorem`。"
+      ],
+      "fragmented_clues": [
+        "端点平均变化率",
+        "连续 可微",
+        "f'(ξ)=(f(b)-f(a))/(b-a)",
+        "ξ∈(a,b)",
+        "mean value theorem"
+      ]
+    },
+    {
+      "chinese_name": "罗尔定理",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究端点函数值相等时内部出现水平切线。",
+        "连续与开区间可微仍是基本条件。",
+        "`f(a)=f(b)` 推出某点 `f'(ξ)=0`。",
+        "割线斜率为零的特殊情形。",
+        "标准记号或英文名为 `rolle_theorem`。"
+      ],
+      "fragmented_clues": [
+        "端点同值",
+        "内部 水平切线",
+        "f'(ξ)=0",
+        "Rolle theorem",
+        "rolle theorem"
+      ]
+    },
+    {
+      "chinese_name": "拉格朗日中值定理",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究割线斜率被内部某处切线斜率实现。",
+        "它是许多单调性和估计结论的入口。",
+        "`f'(ξ)=(f(b)-f(a))/(b-a)`。",
+        "平均变化率等于某个瞬时变化率。",
+        "标准记号或英文名为 `lagrange_mean_value_theorem`。"
+      ],
+      "fragmented_clues": [
+        "割线斜率 切线斜率",
+        "单调性 估计",
+        "f'(ξ)=(f(b)-f(a))/(b-a)",
+        "mean value",
+        "lagrange mean value theorem"
+      ]
+    },
+    {
+      "chinese_name": "柯西中值定理",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究两个函数的端点增量比由内部导数比实现。",
+        "分母函数变化不能为零。",
+        "`(f(b)-f(a))/(g(b)-g(a))=f'(ξ)/g'(ξ)`。",
+        "它常为未定式商型规则提供基础。",
+        "标准记号或英文名为 `cauchy_mean_value_theorem`。"
+      ],
+      "fragmented_clues": [
+        "两个函数 增量比",
+        "分母变化 非零",
+        "Δf/Δg=f'(ξ)/g'(ξ)",
+        "Cauchy mean value",
+        "cauchy mean value theorem"
+      ]
+    },
+    {
+      "chinese_name": "凹凸性",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究图像弯曲方向的性质。",
+        "二阶变化率符号常给出判别。",
+        "`f''(x)≥0` 或 `≤0` 对应不同弯向。",
+        "切线与图像的相对位置也能刻画。",
+        "标准记号或英文名为 `convexity_and_concavity`。"
+      ],
+      "fragmented_clues": [
+        "图像 弯曲方向",
+        "二阶符号",
+        "f''≥0 f''≤0",
+        "convex concave",
+        "convexity and concavity"
+      ]
+    },
+    {
+      "chinese_name": "拐点",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究图像弯曲方向发生改变的位置。",
+        "二阶变化率常在附近变号。",
+        "`f''` 变号比单纯等于零更关键。",
+        "曲线从上凸到下凸或反向。",
+        "标准记号或英文名为 `inflection_point`。"
+      ],
+      "fragmented_clues": [
+        "弯曲方向 改变",
+        "二阶变号",
+        "f'' sign change",
+        "inflection",
+        "inflection point"
+      ]
+    },
+    {
+      "chinese_name": "渐近线",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究曲线远离或靠近某处时逼近的直线。",
+        "可分为水平、铅直或斜向情形。",
+        "`y=kx+b` 或 `x=a` 通过极限确定。",
+        "距离趋零但曲线不必真正相交。",
+        "标准记号或英文名为 `asymptote`。"
+      ],
+      "fragmented_clues": [
+        "曲线 逼近直线",
+        "水平 铅直 斜向",
+        "y=kx+b x=a",
+        "distance→0",
+        "asymptote"
+      ]
+    },
+    {
+      "chinese_name": "有理函数积分",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究分子分母为多项式商的积分计算。",
+        "多项式除法和部分分式分解是入口。",
+        "分母因式决定对数项或反正切项。",
+        "先代数拆分再逐项求原函数。",
+        "标准记号或英文名为 `integration_of_rational_functions`。"
+      ],
+      "fragmented_clues": [
+        "多项式商 积分",
+        "部分分式 因式",
+        "log arctan",
+        "rational function",
+        "integration of rational functions"
+      ]
+    },
+    {
+      "chinese_name": "换元积分法",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究更改变量以简化被积表达式。",
+        "新旧变量的微分关系同步改变积分元。",
+        "`∫ f(g(t))g'(t)dt` 反映链式结构。",
+        "选择合适替换会消去复杂复合形式。",
+        "标准记号或英文名为 `integration_by_substitution`。"
+      ],
+      "fragmented_clues": [
+        "变量更改 被积式",
+        "微分关系 积分元",
+        "∫f(g(t))g'(t)dt",
+        "substitution",
+        "integration by substitution"
+      ]
+    },
+    {
+      "chinese_name": "分部积分法",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究乘积求导公式反向应用于积分。",
+        "一个因子微分，另一个因子取原函数。",
+        "`∫u dv=uv-∫v du` 是核心公式。",
+        "乘积结构被拆成边界项和新积分。",
+        "标准记号或英文名为 `integration_by_parts`。"
+      ],
+      "fragmented_clues": [
+        "乘积结构 积分",
+        "因子 微分 原函数",
+        "∫u dv=uv-∫v du",
+        "integration by parts",
+        "integration by parts"
+      ]
+    },
+    {
+      "chinese_name": "绝对收敛",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究级数取绝对值后仍有有限和。",
+        "它比原级数稳定性更强。",
+        "`sum |a_n|` 收敛推出 `sum a_n` 收敛。",
+        "重排项时结果保持稳定是重要特征。",
+        "标准记号或英文名为 `absolute_convergence`。"
+      ],
+      "fragmented_clues": [
+        "级数 绝对值 有限和",
+        "更强 稳定性",
+        "sum |a_n| converges",
+        "rearrangement stable",
+        "absolute convergence"
+      ]
+    },
+    {
+      "chinese_name": "条件收敛",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究原级数有和但绝对值级数无和。",
+        "正负抵消在稳定性中起关键作用。",
+        "`sum a_n` 收敛而 `sum |a_n|` 发散。",
+        "重排后可能改变和是典型现象。",
+        "标准记号或英文名为 `conditional_convergence`。"
+      ],
+      "fragmented_clues": [
+        "原级数 有和",
+        "正负抵消",
+        "sum a_n converges sum|a_n| diverges",
+        "conditional",
+        "conditional convergence"
+      ]
+    },
+    {
+      "chinese_name": "一致收敛",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究函数列或函数级数在整个集合上用同一个误差界控制。",
+        "最大偏差随指标增大趋零。",
+        "`sup_x |f_n(x)-f(x)| -> 0` 是常见表述。",
+        "它保留连续、积分交换等性质时很有用。",
+        "标准记号或英文名为 `uniform_convergence`。"
+      ],
+      "fragmented_clues": [
+        "全体点 同一误差界",
+        "最大偏差",
+        "sup |f_n-f|→0",
+        "uniform convergence",
+        "uniform convergence"
+      ]
+    },
+    {
+      "chinese_name": "点态收敛",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究每个固定输入点各自形成数值极限。",
+        "允许不同点的靠近速度不同。",
+        "`f_n(x)->f(x)` 对每个 `x` 成立。",
+        "它比全局同速控制更弱。",
+        "标准记号或英文名为 `pointwise_convergence`。"
+      ],
+      "fragmented_clues": [
+        "固定输入 各自极限",
+        "速度 随点改变",
+        "f_n(x)→f(x)",
+        "pointwise",
+        "pointwise convergence"
+      ]
+    },
+    {
+      "chinese_name": "函数项级数",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究每一项都是函数的无穷求和。",
+        "部分和本身也是函数列。",
+        "`sum f_n(x)` 的收敛性可能依赖 `x`。",
+        "一致性判别决定能否交换极限、积分或微分。",
+        "标准记号或英文名为 `series_of_functions`。"
+      ],
+      "fragmented_clues": [
+        "函数 无穷求和",
+        "部分和 函数列",
+        "sum f_n(x)",
+        "uniform tests",
+        "series of functions"
+      ]
+    },
+    {
+      "chinese_name": "阿贝尔定理",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究幂级数端点行为与内部趋近相联系。",
+        "系数部分和或边界收敛给出控制。",
+        "`x->1-` 时的和函数极限常被考察。",
+        "从开区间内部逼近边界仍保留和的极限。",
+        "标准记号或英文名为 `abel_theorem`。"
+      ],
+      "fragmented_clues": [
+        "幂级数 端点行为",
+        "边界收敛 控制",
+        "x→1-",
+        "Abel theorem",
+        "abel theorem"
+      ]
+    },
+    {
+      "chinese_name": "狄利克雷判别法",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究振荡因子和单调趋零因子配合判定级数。",
+        "部分和有界是关键条件之一。",
+        "`sum a_n b_n` 中一列部分和有界，另一列单调趋零。",
+        "正负或相位振荡提供抵消。",
+        "标准记号或英文名为 `dirichlet_test`。"
+      ],
+      "fragmented_clues": [
+        "振荡因子 单调趋零",
+        "部分和有界",
+        "sum a_n b_n",
+        "Dirichlet test",
+        "dirichlet test"
+      ]
+    },
+    {
+      "chinese_name": "傅里叶系数",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究周期函数在三角基底上的投影数值。",
+        "积分内积给出每个频率的权重。",
+        "`a_n=(1/π)∫ f cos nx`、`b_n=(1/π)∫ f sin nx`。",
+        "频率分量大小由这些数刻画。",
+        "标准记号或英文名为 `fourier_coefficient`。"
+      ],
+      "fragmented_clues": [
+        "周期函数 三角基底 投影",
+        "积分内积 权重",
+        "a_n b_n",
+        "frequency component",
+        "fourier coefficient"
+      ]
+    },
+    {
+      "chinese_name": "偏微分",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究多变量函数对单个坐标做微小变化分析。",
+        "其他坐标保持固定。",
+        "`∂/∂x_i` 是运算符号。",
+        "它提取某一坐标方向的一阶变化。",
+        "标准记号或英文名为 `partial_differential`。"
+      ],
+      "fragmented_clues": [
+        "多变量 单坐标变化",
+        "其他坐标 固定",
+        "∂/∂x_i",
+        "partial differential",
+        "partial differential"
+      ]
+    },
+    {
+      "chinese_name": "二阶偏导数",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究对多变量函数连续执行两次坐标方向微分。",
+        "两次方向可相同也可不同。",
+        "`∂^2 f/∂x_i∂x_j` 是常见记号。",
+        "曲率和 Hessian 条目由它组成。",
+        "标准记号或英文名为 `second_order_partial_derivative`。"
+      ],
+      "fragmented_clues": [
+        "两次 坐标方向微分",
+        "相同方向 不同方向",
+        "∂²f/∂x_i∂x_j",
+        "Hessian entry",
+        "second order partial derivative"
+      ]
+    },
+    {
+      "chinese_name": "混合偏导数",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究两次微分涉及不同坐标方向。",
+        "光滑条件下交换次序常不改变结果。",
+        "`f_xy=f_yx` 在相应连续性条件下成立。",
+        "不同变量的耦合变化由该量体现。",
+        "标准记号或英文名为 `mixed_partial_derivative`。"
+      ],
+      "fragmented_clues": [
+        "不同坐标 两次微分",
+        "交换次序",
+        "f_xy=f_yx",
+        "coupling",
+        "mixed partial derivative"
+      ]
+    },
+    {
+      "chinese_name": "黑塞矩阵",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究二阶偏微分排列成的方阵。",
+        "它描述多变量函数的局部二次主部。",
+        "`H=(∂²f/∂x_i∂x_j)` 是标准形式。",
+        "正定、负定或不定可判别驻点类型。",
+        "标准记号或英文名为 `hessian_matrix`。"
+      ],
+      "fragmented_clues": [
+        "二阶偏微分 方阵",
+        "局部二次主部",
+        "H=(∂²f/∂x_i∂x_j)",
+        "positive definite",
+        "hessian matrix"
+      ]
+    },
+    {
+      "chinese_name": "驻点",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究一阶变化率全部消失的位置。",
+        "多变量情形常写成梯度为零。",
+        "`grad f=0` 是基本条件。",
+        "它是极大、极小或鞍形的候选点。",
+        "标准记号或英文名为 `stationary_point`。"
+      ],
+      "fragmented_clues": [
+        "一阶变化率 消失",
+        "梯度 零",
+        "grad f=0",
+        "critical candidate",
+        "stationary point"
+      ]
+    },
+    {
+      "chinese_name": "鞍点",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究一阶条件满足但附近既有增大又有减小方向。",
+        "二次型不定常给出判别。",
+        "Hessian 有正有负特征值时常出现。",
+        "该点不是局部最大也不是局部最小。",
+        "标准记号或英文名为 `saddle_point`。"
+      ],
+      "fragmented_clues": [
+        "附近 增大 减小方向",
+        "二次型 不定",
+        "Hessian eigenvalues ±",
+        "saddle",
+        "saddle point"
+      ]
+    },
+    {
+      "chinese_name": "极坐标",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究平面位置由半径和角度描述。",
+        "面积元从直角坐标变为 `r dr dθ`。",
+        "`x=r cosθ, y=r sinθ` 是基本变换。",
+        "圆形或扇形区域常因此简化。",
+        "标准记号或英文名为 `polar_coordinate`。"
+      ],
+      "fragmented_clues": [
+        "平面 半径 角度",
+        "面积元 r dr dθ",
+        "x=r cosθ y=r sinθ",
+        "polar",
+        "polar coordinate"
+      ]
+    },
+    {
+      "chinese_name": "柱坐标",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究空间位置由平面半径、角度和高度描述。",
+        "体积元含有因子 `r`。",
+        "`x=r cosθ, y=r sinθ, z=z`。",
+        "绕轴对称区域常因此简化。",
+        "标准记号或英文名为 `cylindrical_coordinate`。"
+      ],
+      "fragmented_clues": [
+        "空间 半径 角度 高度",
+        "体积元 r dr dθ dz",
+        "x=r cosθ y=r sinθ",
+        "cylindrical",
+        "cylindrical coordinate"
+      ]
+    },
+    {
+      "chinese_name": "球坐标",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究空间位置由半径和两个角度描述。",
+        "体积元含有 `r^2 sinφ` 因子。",
+        "`x=r sinφ cosθ` 等式给出转换。",
+        "球形区域和径向对称函数常因此简化。",
+        "标准记号或英文名为 `spherical_coordinate`。"
+      ],
+      "fragmented_clues": [
+        "空间 半径 两角",
+        "体积元 r²sinφ",
+        "x=r sinφ cosθ",
+        "spherical",
+        "spherical coordinate"
+      ]
+    },
+    {
+      "chinese_name": "坐标变换",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究同一几何点改用另一组变量描述。",
+        "表达式和微元会随变量关系改变。",
+        "偏导数组和行列式控制面积或体积缩放。",
+        "积分计算中必须同步改变区域与微元。",
+        "标准记号或英文名为 `coordinate_transformation`。"
+      ],
+      "fragmented_clues": [
+        "几何点 新变量",
+        "表达式 微元 改变",
+        "Jacobian determinant",
+        "region element",
+        "coordinate transformation"
+      ]
+    },
+    {
+      "chinese_name": "变量替换",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究用新变量重写原表达式或积分。",
+        "新旧变量关系决定导数和积分元变化。",
+        "一维公式含 `dx=g'(t)dt`，多维公式含雅可比因子。",
+        "复杂结构可转成更简单的标准形式。",
+        "标准记号或英文名为 `change_of_variables`。"
+      ],
+      "fragmented_clues": [
+        "新变量 原表达式",
+        "导数 积分元",
+        "dx=g'(t)dt",
+        "Jacobian",
+        "change of variables"
+      ]
+    },
+    {
+      "chinese_name": "积分区域",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究积分变量允许取值的几何集合。",
+        "边界决定上下限和积分次序。",
+        "可用不等式、参数化或坐标图描述。",
+        "画清投影常是计算重积分的入口。",
+        "标准记号或英文名为 `region_of_integration`。"
+      ],
+      "fragmented_clues": [
+        "变量取值 几何集合",
+        "边界 上下限 次序",
+        "inequalities parametrization",
+        "projection",
+        "region of integration"
+      ]
+    },
+    {
+      "chinese_name": "第一型曲线积分",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究沿曲线累积标量密度。",
+        "弧长微元与方向无关。",
+        "`∫_C f(x,y,z) ds` 是标准形式。",
+        "质量、长度加权平均等问题常对应这种形式。",
+        "标准记号或英文名为 `line_integral_of_first_kind`。"
+      ],
+      "fragmented_clues": [
+        "曲线 标量密度",
+        "弧长微元 方向无关",
+        "∫_C f ds",
+        "scalar line integral",
+        "line integral of first kind"
+      ]
+    },
+    {
+      "chinese_name": "第二型曲线积分",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究沿有向曲线累积向量场切向分量。",
+        "路径方向会改变符号。",
+        "`∫_C Pdx+Qdy+Rdz` 或 `∫_C F·dr`。",
+        "做功和环流问题常对应这种形式。",
+        "标准记号或英文名为 `line_integral_of_second_kind`。"
+      ],
+      "fragmented_clues": [
+        "有向曲线 切向分量",
+        "路径方向 符号",
+        "∫_C F·dr",
+        "work circulation",
+        "line integral of second kind"
+      ]
+    },
+    {
+      "chinese_name": "第一型曲面积分",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究沿曲面累积标量密度。",
+        "面积微元与选取方向无关。",
+        "`∫∫_S f dS` 是标准形式。",
+        "曲面质量或面积加权量常对应这种形式。",
+        "标准记号或英文名为 `surface_integral_of_first_kind`。"
+      ],
+      "fragmented_clues": [
+        "曲面 标量密度",
+        "面积微元 方向无关",
+        "∫∫_S f dS",
+        "scalar surface integral",
+        "surface integral of first kind"
+      ]
+    },
+    {
+      "chinese_name": "第二型曲面积分",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究沿有向曲面积累向量场法向分量。",
+        "法向选择会改变符号。",
+        "`∫∫_S F·n dS` 是标准形式。",
+        "穿过曲面的总流量常由它表示。",
+        "标准记号或英文名为 `surface_integral_of_second_kind`。"
+      ],
+      "fragmented_clues": [
+        "有向曲面 法向分量",
+        "法向选择 符号",
+        "∫∫_S F·n dS",
+        "flux integral",
+        "surface integral of second kind"
+      ]
+    },
+    {
+      "chinese_name": "保守场",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究向量场的曲线积分只由端点决定。",
+        "在单连通区域中常与旋转密度为零等价。",
+        "`F=grad φ` 是典型刻画。",
+        "势函数存在会使闭合路径积分为零。",
+        "标准记号或英文名为 `conservative_field`。"
+      ],
+      "fragmented_clues": [
+        "端点决定 曲线积分",
+        "单连通 旋转密度零",
+        "F=grad φ",
+        "closed integral zero",
+        "conservative field"
+      ]
+    },
+    {
+      "chinese_name": "路径无关",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究曲线积分结果不随连接路线改变。",
+        "只要端点相同，沿不同曲线得到同一数值。",
+        "`∫_C F·dr=φ(B)-φ(A)` 是典型形式。",
+        "闭合曲线上的积分为零是等价判别之一。",
+        "标准记号或英文名为 `path_independence`。"
+      ],
+      "fragmented_clues": [
+        "端点相同 结果相同",
+        "不同曲线 同一数值",
+        "φ(B)-φ(A)",
+        "closed integral zero",
+        "path independence"
+      ]
+    },
+    {
+      "chinese_name": "通量",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究向量场穿过曲面的总量。",
+        "法向分量和面积微元共同参与。",
+        "`∫∫_S F·n dS` 是常见表达。",
+        "正负号由场方向与法向夹角决定。",
+        "标准记号或英文名为 `flux`。"
+      ],
+      "fragmented_clues": [
+        "向量场 穿过曲面",
+        "法向分量 面积微元",
+        "∫∫ F·n dS",
+        "normal component",
+        "flux"
+      ]
+    },
+    {
+      "chinese_name": "环量",
+      "source_file": "words/数学/简单模式/advanced_calculus_terms.csv",
+      "complete_clues": [
+        "研究向量场沿闭合曲线的切向累积。",
+        "路径方向决定正负。",
+        "`∮_C F·dr` 是常见表达。",
+        "局部旋转累积可由斯托克斯公式联系。",
+        "标准记号或英文名为 `circulation`。"
+      ],
+      "fragmented_clues": [
+        "闭合曲线 切向累积",
+        "路径方向 正负",
+        "∮ F·dr",
+        "curl Stokes",
+        "circulation"
+      ]
+    }
+  ]
+}

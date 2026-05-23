@@ -1,0 +1,1895 @@
+{
+    "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+    "entries":  [
+                    {
+                        "chinese_name":  "复变函数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "开集上的复值映射、路径积分和级数展开同时参与。",
+                                               "视角会在 Cauchy 公式、Laurent 展开、留数和共形映射之间切换。",
+                                               "代表性标志是 Cauchy integral formula 与 residue theorem。",
+                                               "整套语言围绕复变量中的解析结构组织。",
+                                               "英文译名是 complex analysis。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "复值映射 路径积分 级数展开",
+                                                 "Cauchy公式 Laurent展开 留数 共形映射",
+                                                 "Cauchy integral formula residue theorem",
+                                                 "复变量 解析结构",
+                                                 "complex analysis"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "复数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "对象写成 z=x+iy，同时携带二维坐标和代数运算。",
+                                               "乘法对应长度相乘与角度相加，取共轭对应关于横轴反射。",
+                                               "代表性标志是 z=x+iy、|z| 和 arg z。",
+                                               "实坐标、虚坐标和极坐标共同锁定对象。",
+                                               "英文译名是 complex number。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "z=x+iy 二维坐标 代数运算",
+                                                 "乘法 长度相乘 角度相加 共轭 横轴反射",
+                                                 "z=x+iy |z| arg z",
+                                                 "实坐标 虚坐标 极坐标",
+                                                 "complex number"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "复平面",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "每个 z=x+iy 都落到二维坐标平面中的一个点。",
+                                               "圆盘、半平面、环域和路径都在这个载体上描述。",
+                                               "代表性标志是 z ↔ (x,y) 与开连通点集。",
+                                               "几何位置与复数代数在这里合并。",
+                                               "英文译名是 complex plane。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "z=x+iy 二维点",
+                                                 "圆盘 半平面 环域 路径",
+                                                 "z ↔ (x,y) open connected set",
+                                                 "几何位置 复数代数",
+                                                 "complex plane"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "实部",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "复数量沿横轴投影后得到一个实数。",
+                                               "它与纵轴投影一起恢复 z=x+iy 的坐标。",
+                                               "代表性标志是 Re z=x=(z+conjugate z)/2。",
+                                               "只读取横坐标而不保留相位全部信息。",
+                                               "英文译名是 real part。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "横轴投影 实数",
+                                                 "纵轴投影 z=x+iy 坐标",
+                                                 "Re z=x (z+conjugate z)/2",
+                                                 "横坐标 相位信息缺失",
+                                                 "real part"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "虚部",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "复数量沿纵轴投影后得到一个实数系数。",
+                                               "它与横轴投影一起决定点在平面中的位置。",
+                                               "代表性标志是 Im z=y=(z-conjugate z)/(2i)。",
+                                               "只读取 i 方向坐标而不等同于虚数单位本身。",
+                                               "英文译名是 imaginary part。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "纵轴投影 实数系数",
+                                                 "横轴投影 平面位置",
+                                                 "Im z=y (z-conjugate z)/(2i)",
+                                                 "i方向坐标 虚数单位区分",
+                                                 "imaginary part"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "模",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "复数量到原点的距离给出非负实数。",
+                                               "乘积的大小等于大小的乘积，路径估计常靠它控制。",
+                                               "代表性标志是 |z|=sqrt(x^2+y^2)。",
+                                               "三角不等式和最大值类结论都围绕大小展开。",
+                                               "英文译名是 modulus。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "原点距离 非负实数",
+                                                 "乘积大小 路径估计 控制",
+                                                 "|z|=sqrt(x^2+y^2)",
+                                                 "三角不等式 最大值结论",
+                                                 "modulus"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "辐角",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "非零复数量相对正实轴形成有向角。",
+                                               "乘法会让角度相加，绕原点一圈后角度改变 2pi。",
+                                               "代表性标志是 z=r e^{i theta} 中的 theta。",
+                                               "多值角度和绕行次数是关键特征。",
+                                               "英文译名是 argument。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "非零复数 正实轴 有向角",
+                                                 "乘法 角度相加 绕原点 2pi",
+                                                 "z=r e^{i theta} theta",
+                                                 "多值角度 绕行次数",
+                                                 "argument"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "主辐角",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "多值角度被压到一个固定半开区间中。",
+                                               "对数和幂函数选单值支时要先确定这个角度代表。",
+                                               "代表性标志是 Arg z in (-pi,pi]。",
+                                               "负实轴附近的跳变暴露分支选择。",
+                                               "英文译名是 principal argument。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "多值角度 半开区间",
+                                                 "对数 幂函数 单值支 角度代表",
+                                                 "Arg z in (-pi,pi]",
+                                                 "负实轴 跳变 分支选择",
+                                                 "principal argument"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "共轭复数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "平面点关于横轴反射后得到配对对象。",
+                                               "它保持距离不变，并把纵坐标符号反过来。",
+                                               "代表性标志是 z conjugate(z)=|z|^2。",
+                                               "实系数多项式根和内积计算常用这对对象。",
+                                               "英文译名是 complex conjugate。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "横轴反射 配对对象",
+                                                 "距离不变 纵坐标变号",
+                                                 "z conjugate(z)=|z|^2",
+                                                 "实系数根 内积计算",
+                                                 "complex conjugate"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "复函数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "输入和输出都取复值的映射在平面区域上作用。",
+                                               "局部增量会同时改变长度和角度。",
+                                               "代表性标志是 w=f(z)，其中 z,w 都在复平面内。",
+                                               "是否解析决定它能否使用 Cauchy 理论。",
+                                               "英文译名是 complex function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "复输入 复输出 映射",
+                                                 "局部增量 长度 角度",
+                                                 "w=f(z) z,w in C",
+                                                 "解析性 Cauchy理论",
+                                                 "complex function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "解析函数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "开集内每一点都存在复导数的映射具有强局部刚性。",
+                                               "局部可由幂级数表示，并自动拥有各阶复导数。",
+                                               "代表性标志是 f(z)=sum a_n(z-z0)^n。",
+                                               "复可微在邻域内成立，而不是只在单个点成立。",
+                                               "英文译名是 analytic function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "开集 每点复导数 局部刚性",
+                                                 "幂级数表示 各阶复导数",
+                                                 "f(z)=sum a_n(z-z0)^n",
+                                                 "邻域复可微 单点复可微区分",
+                                                 "analytic function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "全纯函数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "在给定开集上处处复可微的映射构成核心对象。",
+                                               "Cauchy 定理、积分公式和幂级数展开都适用于它。",
+                                               "代表性标志是 ∂f/∂conjugate z=0。",
+                                               "局部解析性与复可微性在这里等价。",
+                                               "英文译名是 holomorphic function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "开集 处处复可微",
+                                                 "Cauchy定理 积分公式 幂级数展开",
+                                                 "partial f/partial conjugate z=0",
+                                                 "局部解析 复可微 等价",
+                                                 "holomorphic function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "调和函数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "实值函数满足二维 Laplace 方程时呈现平均值性质。",
+                                               "在单连通区域中常作为某个解析映射的实部或虚部。",
+                                               "代表性标志是 Delta u=u_xx+u_yy=0。",
+                                               "边界值能强烈控制内部取值。",
+                                               "英文译名是 harmonic function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "实值函数 Laplace方程 平均值性质",
+                                                 "单连通区域 解析函数 实部 虚部",
+                                                 "Delta u=u_xx+u_yy=0",
+                                                 "边界值 内部取值 控制",
+                                                 "harmonic function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "柯西黎曼方程",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "两个实函数组成复映射后，其偏导必须满足一阶耦合关系。",
+                                               "这些关系让雅可比矩阵呈现旋转加伸缩的形态。",
+                                               "代表性标志是 u_x=v_y 且 u_y=-v_x。",
+                                               "它是从实偏导判断复可微的入口。",
+                                               "英文译名是 cauchy riemann equations。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "u v 一阶偏导 耦合",
+                                                 "雅可比矩阵 旋转 伸缩",
+                                                 "u_x=v_y u_y=-v_x",
+                                                 "实偏导 复可微 判据",
+                                                 "cauchy riemann equations"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "复导数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "增量商沿任意复方向趋近同一个极限时才存在。",
+                                               "它比两个实偏导同时存在更强。",
+                                               "代表性标志是 lim_{h-\u003e0}[f(z+h)-f(z)]/h。",
+                                               "方向无关性锁定局部线性近似。",
+                                               "英文译名是 complex derivative。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "增量商 复方向 同一极限",
+                                                 "实偏导 更强条件",
+                                                 "lim_{h-\u003e0}[f(z+h)-f(z)]/h",
+                                                 "方向无关 局部线性近似",
+                                                 "complex derivative"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "幂级数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "关于中心点的无穷多项式在圆盘内表达函数。",
+                                               "系数和半径决定绝对收敛范围。",
+                                               "代表性标志是 sum a_n(z-z0)^n。",
+                                               "在收敛圆内允许逐项求导和逐项积分。",
+                                               "英文译名是 power series。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "中心点 无穷多项式 圆盘",
+                                                 "系数 半径 绝对收敛",
+                                                 "sum a_n(z-z0)^n",
+                                                 "逐项求导 逐项积分",
+                                                 "power series"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "泰勒级数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "普通点附近的解析对象可展开为非负幂级数。",
+                                               "系数由中心点处各阶导数决定。",
+                                               "代表性标志是 sum f^(n)(z0)(z-z0)^n/n!。",
+                                               "没有负幂项说明中心附近无异常。",
+                                               "英文译名是 taylor series。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "普通点 解析对象 非负幂",
+                                                 "中心点 各阶导数 系数",
+                                                 "sum f^(n)(z0)(z-z0)^n/n!",
+                                                 "无负幂项 无异常邻域",
+                                                 "taylor series"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "洛朗级数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "环形邻域中的解析对象可同时含正幂和负幂。",
+                                               "负幂部分负责描述中心处的异常。",
+                                               "代表性标志是 sum_{n=-infty}^{infty} a_n(z-z0)^n。",
+                                               "a_{-1} 项会直接进入闭合路径积分。",
+                                               "英文译名是 laurent series。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "环形邻域 正幂 负幂",
+                                                 "负幂部分 中心异常",
+                                                 "sum_{n=-infty}^{infty} a_n(z-z0)^n",
+                                                 "a_{-1} 闭合路径积分",
+                                                 "laurent series"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "收敛圆",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "幂级数围绕中心点拥有最大有效圆盘。",
+                                               "内部保证收敛，边界点需要单独判别。",
+                                               "代表性标志是 R^{-1}=limsup |a_n|^{1/n}。",
+                                               "超过这个半径后级数不再稳定代表原对象。",
+                                               "英文译名是 circle of convergence。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "幂级数 中心点 最大有效圆盘",
+                                                 "内部收敛 边界判别",
+                                                 "R^{-1}=limsup |a_n|^{1/n}",
+                                                 "半径 原对象 稳定代表",
+                                                 "circle of convergence"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "奇点",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "某点处失去解析性，但去掉该点后的邻域仍可研究。",
+                                               "分类时比较补值、有限阶爆发和无穷负幂。",
+                                               "代表性标志是 punctured neighborhood 与 Laurent 展开。",
+                                               "局部异常类型决定积分和级数行为。",
+                                               "英文译名是 singularity。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "非解析点 去心邻域",
+                                                 "补值 有限阶爆发 无穷负幂",
+                                                 "punctured neighborhood Laurent展开",
+                                                 "局部异常 积分 级数",
+                                                 "singularity"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "可去奇点",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "孤立异常处若保持有界，常能补上一个值。",
+                                               "补值后局部映射重新处处复可微。",
+                                               "代表性标志是 Laurent 展开无负幂项。",
+                                               "极限存在或有界性都指向这种可修补情形。",
+                                               "英文译名是 removable singularity。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "孤立异常 有界 补值",
+                                                 "补值 局部复可微",
+                                                 "Laurent展开 无负幂项",
+                                                 "极限存在 可修补",
+                                                 "removable singularity"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "极点",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "孤立异常处函数按有限阶方式趋向无穷。",
+                                               "乘上足够高的 (z-z0) 幂后会变成非零解析对象。",
+                                               "代表性标志是 f(z)=g(z)/(z-z0)^m。",
+                                               "主部只有有限个负幂项。",
+                                               "英文译名是 pole。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "孤立异常 有限阶 无穷",
+                                                 "(z-z0)幂 非零解析对象",
+                                                 "f(z)=g(z)/(z-z0)^m",
+                                                 "主部 有限负幂",
+                                                 "pole"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "本性奇点",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "孤立异常处既不能补值，也不是有限阶爆发。",
+                                               "任意小邻域内的函数值表现出剧烈振荡。",
+                                               "代表性标志是 Laurent 展开含无穷多个负幂项。",
+                                               "Picard 型现象是最强识别信号。",
+                                               "英文译名是 essential singularity。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "孤立异常 不可补 非有限阶",
+                                                 "小邻域 剧烈振荡",
+                                                 "Laurent展开 无穷负幂项",
+                                                 "Picard现象",
+                                                 "essential singularity"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "留数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "孤立异常附近有一个系数控制闭合路径积分。",
+                                               "这个系数来自 Laurent 展开中的一次负幂项。",
+                                               "代表性标志是 a_{-1}=Res(f,z0)。",
+                                               "乘上 2pi i 后成为围道积分贡献。",
+                                               "英文译名是 residue。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "孤立异常 闭合路径积分 系数",
+                                                 "Laurent展开 一次负幂项",
+                                                 "a_{-1}=Res(f,z0)",
+                                                 "2pi i 围道积分贡献",
+                                                 "residue"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "留数定理",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "闭合路径内多个孤立异常的局部系数决定整体积分。",
+                                               "路径正向时，只汇总内部点的 a_{-1} 系数。",
+                                               "代表性标志是 integral_C f dz=2pi i sum Res(f,zk)。",
+                                               "复积分、实积分和级数求和都可由它转化。",
+                                               "英文译名是 residue theorem。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "闭合路径 孤立异常 局部系数",
+                                                 "正向路径 内部点 a_{-1}",
+                                                 "integral_C f dz=2pi i sum Res(f,zk)",
+                                                 "复积分 实积分 级数求和",
+                                                 "residue theorem"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "复积分",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "沿参数路径累加复值函数，方向改变会影响符号。",
+                                               "参数化后多出路径导数因子。",
+                                               "代表性标志是 integral f(gamma(t))gamma\u0027(t)dt。",
+                                               "路径长度和函数上界给出基本估计。",
+                                               "英文译名是 complex integral。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "参数路径 复值函数 方向符号",
+                                                 "路径导数 参数化",
+                                                 "integral f(gamma(t))gamma\u0027(t)dt",
+                                                 "路径长度 函数上界 估计",
+                                                 "complex integral"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "围道积分",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "有向路径上的复积分常围绕异常点设置。",
+                                               "路径变形时，避开异常点可保持积分值。",
+                                               "代表性标志是 integral_C f(z) dz。",
+                                               "它是 Cauchy 理论和留数方法的载体。",
+                                               "英文译名是 contour integral。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "有向路径 复积分 异常点",
+                                                 "路径变形 异常点避开 积分不变",
+                                                 "integral_C f(z) dz",
+                                                 "Cauchy理论 留数方法 载体",
+                                                 "contour integral"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "柯西积分定理",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "无异常的单连通内部让闭合路径积分消失。",
+                                               "路径可连续变形而不改变积分值。",
+                                               "代表性标志是 integral_C f(z)dz=0。",
+                                               "零积分结论是后续公式的起点。",
+                                               "英文译名是 cauchy integral theorem。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "无异常 单连通 闭合路径",
+                                                 "路径连续变形 积分值不变",
+                                                 "integral_C f(z)dz=0",
+                                                 "零积分 后续公式",
+                                                 "cauchy integral theorem"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "柯西积分公式",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "内部点的函数值能由边界积分恢复。",
+                                               "它把解析性提升为无穷可微性。",
+                                               "代表性标志是 f(a)=1/(2pi i) integral_C f(z)/(z-a) dz。",
+                                               "高阶导数也可用类似积分表达。",
+                                               "英文译名是 cauchy integral formula。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "内部点 函数值 边界积分",
+                                                 "解析性 无穷可微",
+                                                 "f(a)=1/(2pi i) integral_C f(z)/(z-a) dz",
+                                                 "高阶导数 积分表达",
+                                                 "cauchy integral formula"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "最大模原理",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "非常数复可微映射的大小不能在内部取得真正最大。",
+                                               "边界大小控制内部大小。",
+                                               "代表性标志是 max_{closure D}|f| 出现在 boundary D 上。",
+                                               "若内部出现局部最大，映射只能不变。",
+                                               "英文译名是 maximum modulus principle。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "非常数复可微 内部最大",
+                                                 "边界大小 内部大小",
+                                                 "max_{closure D}|f| boundary D",
+                                                 "内部局部最大 常数",
+                                                 "maximum modulus principle"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "辐角原理",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "函数值沿闭合路径绕原点的次数记录内部零点和极点。",
+                                               "对数导数把绕行信息变成积分。",
+                                               "代表性标志是 1/(2pi i) integral f\u0027/f dz=N-P。",
+                                               "按重数计数是该结论的关键。",
+                                               "英文译名是 argument principle。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "闭合路径 绕原点 零点 极点",
+                                                 "对数导数 绕行信息 积分",
+                                                 "1/(2pi i) integral f\u0027/f dz=N-P",
+                                                 "重数计数",
+                                                 "argument principle"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "儒歇定理",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "边界上一项严格支配另一项时，内部零点数保持不变。",
+                                               "它常用于不直接求根的计数问题。",
+                                               "代表性标志是 |g|\u003c|f| on C 推出 f 与 f+g 零点数相同。",
+                                               "边界比较替代内部求解。",
+                                               "英文译名是 rouche theorem。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "边界支配 内部零点数",
+                                                 "不求根 计数问题",
+                                                 "|g|\u003c|f| on C f与f+g 零点数相同",
+                                                 "边界比较 内部求解替代",
+                                                 "rouche theorem"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "保形映射",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "局部复可微且导数非零的映射保持夹角。",
+                                               "小图形被近似为旋转加伸缩后的图形。",
+                                               "代表性标志是 f\u0027(z0)≠0 与角度保持。",
+                                               "几何形状会变，交角信息保留。",
+                                               "英文译名是 conformal mapping。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "局部复可微 导数非零 夹角保持",
+                                                 "小图形 旋转 伸缩",
+                                                 "f\u0027(z0)≠0 角度保持",
+                                                 "几何形状 交角信息",
+                                                 "conformal mapping"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "分式线性变换",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "一次分式形式把扩充平面映到自身。",
+                                               "它会把广义圆映成广义圆。",
+                                               "代表性标志是 (az+b)/(cz+d) 且 ad-bc≠0。",
+                                               "四个复参数只在整体倍数下等价。",
+                                               "英文译名是 fractional linear transformation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "一次分式 扩充平面 自映射",
+                                                 "广义圆 广义圆像",
+                                                 "(az+b)/(cz+d) ad-bc≠0",
+                                                 "四个复参数 整体倍数等价",
+                                                 "fractional linear transformation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "莫比乌斯变换",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "扩充复平面上的基本双射由一次分式给出。",
+                                               "它由三个不同点的像唯一确定。",
+                                               "代表性标志是 w=(az+b)/(cz+d)。",
+                                               "圆和直线组成的广义圆族被保持。",
+                                               "英文译名是 mobius transformation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "扩充复平面 一次分式 双射",
+                                                 "三个不同点 像 唯一确定",
+                                                 "w=(az+b)/(cz+d)",
+                                                 "广义圆族 保持",
+                                                 "mobius transformation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "解析延拓",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "局部复可微对象可沿重叠邻域向外延伸。",
+                                               "不同路径延伸后可能遇到单值性问题。",
+                                               "代表性标志是 germ 与重叠开集上的一致性。",
+                                               "唯一性定理保证延伸一旦存在就被锁定。",
+                                               "英文译名是 analytic continuation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "局部复可微 重叠邻域 外延",
+                                                 "不同路径 单值性问题",
+                                                 "germ 重叠开集 一致性",
+                                                 "唯一性定理 延伸锁定",
+                                                 "analytic continuation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "单连通域",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "区域内任意闭路都可连续缩到一点。",
+                                               "没有洞使得原函数和对数分支更容易存在。",
+                                               "代表性标志是 every closed curve contracts to a point。",
+                                               "Cauchy 定理在这种几何条件下特别简洁。",
+                                               "英文译名是 simply connected domain。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "区域 闭路 缩点",
+                                                 "无洞 原函数 对数分支",
+                                                 "every closed curve contracts to a point",
+                                                 "Cauchy定理 几何条件",
+                                                 "simply connected domain"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "多连通域",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "区域中存在无法缩到一点的闭路。",
+                                               "洞的存在会影响原函数、周期和围道积分。",
+                                               "代表性标志是 annulus 或带孔平面。",
+                                               "不同同伦类路径可能给出不同积分。",
+                                               "英文译名是 multiply connected domain。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "区域 闭路 不可缩点",
+                                                 "洞 原函数 周期 围道积分",
+                                                 "annulus punctured plane",
+                                                 "同伦类 路径积分差异",
+                                                 "multiply connected domain"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "支点",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "绕某个特殊点一圈后，多值表达的取值会改变。",
+                                               "根式和对数最常展示这种绕行效应。",
+                                               "代表性标志是 sqrt(z-a) 或 log(z-a) 的绕行变值。",
+                                               "单值分支无法在该点完整邻域内建立。",
+                                               "英文译名是 branch point。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "绕行特殊点 多值表达 换值",
+                                                 "根式 对数 绕行效应",
+                                                 "sqrt(z-a) log(z-a)",
+                                                 "单值分支 障碍",
+                                                 "branch point"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "支割线",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "为让多值表达单值化，需要从平面中移走一条线或曲线。",
+                                               "切开后路径不能再绕过导致换值的点。",
+                                               "代表性标志是 C\\(-infty,0] 上的 Log z。",
+                                               "它是人为选择的单值化边界。",
+                                               "英文译名是 branch cut。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "多值表达 单值化 移除曲线",
+                                                 "切开平面 绕行阻断",
+                                                 "C\\\\(-infty,0] Log z",
+                                                 "人为选择 单值边界",
+                                                 "branch cut"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "复变量",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "自变量取值在复平面中，而不是只沿实轴变化。",
+                                               "增量方向可以有无穷多种，极限要求更强。",
+                                               "代表性标志是 z、dz 与 neighborhood of z0。",
+                                               "二维方向的变化共同参与判断。",
+                                               "英文译名是 complex variable。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "自变量 复平面",
+                                                 "增量方向 极限要求",
+                                                 "z dz neighborhood of z0",
+                                                 "二维方向 变化判断",
+                                                 "complex variable"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "复值函数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "输出落在复平面中，可拆成两个实值分量。",
+                                               "即使输入为实变量，输出也可同时带幅度和相位。",
+                                               "代表性标志是 f=u+iv。",
+                                               "实部与虚部共同描述函数值。",
+                                               "英文译名是 complex valued function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "输出 复平面 实值分量",
+                                                 "实变量输入 幅度 相位",
+                                                 "f=u+iv",
+                                                 "实部 虚部 函数值",
+                                                 "complex valued function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "区域",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "开且连通的点集提供复可微问题的工作开集。",
+                                               "路径可在其中连接任意两点。",
+                                               "代表性标志是 open connected set。",
+                                               "解析性通常要求在这样的集合上逐点成立。",
+                                               "英文译名是 domain。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "开集 连通点集 复可微问题",
+                                                 "路径 任意两点 连接",
+                                                 "open connected set",
+                                                 "解析性 集合逐点成立",
+                                                 "domain"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "曲线",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "参数把区间中的点送到复平面路径上。",
+                                               "积分时方向和参数化会影响表达但不改变几何轨迹本身。",
+                                               "代表性标志是 gamma:[a,b]-\u003eC。",
+                                               "它是围道、边界和路径积分的基本单元。",
+                                               "英文译名是 curve。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "参数 区间 复平面路径",
+                                                 "方向 参数化 几何轨迹",
+                                                 "gamma:[a,b]-\u003eC",
+                                                 "围道 边界 路径积分",
+                                                 "curve"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "光滑曲线",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "参数路径具有连续导数并且速度不退化。",
+                                               "这种正则性让路径积分和切向量定义清楚。",
+                                               "代表性标志是 gamma\u0027(t) continuous。",
+                                               "转折过多的路径需分段处理。",
+                                               "英文译名是 smooth curve。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "参数路径 连续导数 非零速度",
+                                                 "路径积分 切向量",
+                                                 "gamma\u0027(t) continuous",
+                                                 "转折 分段处理",
+                                                 "smooth curve"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "简单闭曲线",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "闭合路径除了起点终点外不自交。",
+                                               "它会把平面分成内部和外部两部分。",
+                                               "代表性标志是 gamma(a)=gamma(b) 且无自交。",
+                                               "围道积分常以这种边界作为几何对象。",
+                                               "英文译名是 simple closed curve。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "闭合路径 无自交",
+                                                 "平面 内部 外部",
+                                                 "gamma(a)=gamma(b) no self intersection",
+                                                 "围道积分 边界",
+                                                 "simple closed curve"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "约当曲线",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "平面中的简单闭曲线确定一个内部区域。",
+                                               "相关定理保证内部外部的拓扑分割。",
+                                               "代表性标志是 Jordan curve theorem。",
+                                               "正向边界约定依赖它包围的内部。",
+                                               "英文译名是 jordan curve。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "平面 简单闭曲线 内部区域",
+                                                 "内部外部 拓扑分割",
+                                                 "Jordan curve theorem",
+                                                 "正向边界 内部",
+                                                 "jordan curve"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "约当引理",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "上半圆或下半圆大弧上的振荡积分在极限中消失。",
+                                               "指数因子的衰减要压过弧长增长。",
+                                               "代表性标志是 integral_arc e^{iaz}f(z) dz -\u003e0。",
+                                               "留数法计算 Fourier 型实积分时常用。",
+                                               "英文译名是 jordan lemma。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "大弧 振荡积分 极限零",
+                                                 "指数衰减 弧长增长",
+                                                 "integral_arc e^{iaz}f(z) dz -\u003e0",
+                                                 "Fourier型实积分 留数法",
+                                                 "jordan lemma"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "柯西定理",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "复可微映射在适当区域内沿闭路积分为零。",
+                                               "它强调无异常点时积分只与同伦类退化有关。",
+                                               "代表性标志是 closed contour integral equals 0。",
+                                               "原函数存在性也可由此判断。",
+                                               "英文译名是 cauchy theorem。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "复可微 闭路积分 零",
+                                                 "无异常点 同伦退化",
+                                                 "closed contour integral equals 0",
+                                                 "原函数存在性 判别",
+                                                 "cauchy theorem"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "柯西估计",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "圆周上的函数上界能控制中心处高阶导数。",
+                                               "它把边界大小转换成 Taylor 系数估计。",
+                                               "代表性标志是 |f^(n)(a)|\u003c=n!M/R^n。",
+                                               "Liouville 型结论常由这种估计推出。",
+                                               "英文译名是 cauchy estimate。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "圆周上界 中心高阶导数",
+                                                 "边界大小 Taylor系数估计",
+                                                 "|f^(n)(a)|\u003c=n!M/R^n",
+                                                 "Liouville结论",
+                                                 "cauchy estimate"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "刘维尔定理",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "全平面复可微且有界的对象只能保持常值。",
+                                               "证明依赖导数估计随半径增大趋零。",
+                                               "代表性标志是 bounded entire implies constant。",
+                                               "代数基本定理可借它证明。",
+                                               "英文译名是 liouville theorem。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "全平面复可微 有界 常值",
+                                                 "导数估计 半径增大 趋零",
+                                                 "bounded entire implies constant",
+                                                 "代数基本定理 证明",
+                                                 "liouville theorem"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "代数基本定理",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "非零复系数多项式在复数域内必有根。",
+                                               "它说明复数域对多项式求根是封闭的。",
+                                               "代表性标志是 degree n polynomial has n roots counted with multiplicity。",
+                                               "Liouville 定理给出一条复分析证明路线。",
+                                               "英文译名是 fundamental theorem of algebra。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "复系数多项式 复根",
+                                                 "复数域 多项式求根 封闭",
+                                                 "degree n polynomial n roots counted with multiplicity",
+                                                 "Liouville定理 复分析证明",
+                                                 "fundamental theorem of algebra"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "莫雷拉定理",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "连续函数若沿所有小三角形积分为零，可反推出复可微。",
+                                               "它把积分条件变成解析性判据。",
+                                               "代表性标志是 integral_triangle f dz=0。",
+                                               "常用于证明极限函数保持解析。",
+                                               "英文译名是 morera theorem。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "连续函数 小三角形积分 零",
+                                                 "积分条件 解析性判据",
+                                                 "integral_triangle f dz=0",
+                                                 "极限函数 解析保持",
+                                                 "morera theorem"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "解析分支",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "多值表达在某个切开区域上选出单值复可微代表。",
+                                               "选择后可像普通解析映射一样运算。",
+                                               "代表性标志是 chosen branch of log or root。",
+                                               "绕行换值会破坏全局单值性。",
+                                               "英文译名是 analytic branch。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "多值表达 切开区域 单值代表",
+                                                 "普通解析运算",
+                                                 "chosen branch of log or root",
+                                                 "绕行换值 全局单值性",
+                                                 "analytic branch"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "对数函数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "它把乘法关系转成加法关系，但在复平面中多值。",
+                                               "分支选择依赖辐角区间和切割线。",
+                                               "代表性标志是 Log z=ln|z|+i Arg z。",
+                                               "绕原点一圈会多出 2pi i。",
+                                               "英文译名是 logarithm function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "乘法关系 加法关系 多值",
+                                                 "分支选择 辐角区间 切割线",
+                                                 "Log z=ln|z|+i Arg z",
+                                                 "绕原点 2pi i",
+                                                 "logarithm function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "指数函数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "复输入进入幂级数后同时产生伸缩和旋转。",
+                                               "纯虚输入给出单位圆上的周期运动。",
+                                               "代表性标志是 e^{x+iy}=e^x(cos y+i sin y)。",
+                                               "它没有零点，并以 2pi i 为周期。",
+                                               "英文译名是 exponential function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "复输入 幂级数 伸缩 旋转",
+                                                 "纯虚输入 单位圆 周期运动",
+                                                 "e^{x+iy}=e^x(cos y+i sin y)",
+                                                 "无零点 2pi i周期",
+                                                 "exponential function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "三角函数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "实三角表达延伸到复输入后可由指数表达。",
+                                               "零点、周期和增长行为与实情形不同。",
+                                               "代表性标志是 sin z=(e^{iz}-e^{-iz})/(2i)。",
+                                               "整函数性质和周期性同时存在。",
+                                               "英文译名是 trigonometric function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "复输入 指数表达",
+                                                 "零点 周期 增长行为",
+                                                 "sin z=(e^{iz}-e^{-iz})/(2i)",
+                                                 "整函数性质 周期性",
+                                                 "trigonometric function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "双曲函数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "双曲型表达由 e^z 和 e^{-z} 组合而成。",
+                                               "它与复三角函数通过虚变量相连。",
+                                               "代表性标志是 sinh z=(e^z-e^{-z})/2。",
+                                               "增长估计和保角映射中常出现。",
+                                               "英文译名是 hyperbolic function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "e^z e^{-z} 组合",
+                                                 "虚变量 复三角函数",
+                                                 "sinh z=(e^z-e^{-z})/2",
+                                                 "增长估计 保角映射",
+                                                 "hyperbolic function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "亚纯函数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "区域内除了有限阶异常外都保持复可微。",
+                                               "允许的异常只能是极点而非本性情形。",
+                                               "代表性标志是 locally quotient of holomorphic functions。",
+                                               "留数计算和部分分式展开都适合处理它。",
+                                               "英文译名是 meromorphic function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "区域 极点外 复可微",
+                                                 "允许异常 极点 非本性",
+                                                 "locally quotient of holomorphic functions",
+                                                 "留数计算 部分分式展开",
+                                                 "meromorphic function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "整函数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "对象在整个复平面上处处复可微。",
+                                               "全局增长速度决定它可能的形式。",
+                                               "代表性标志是 holomorphic on all C。",
+                                               "有界时会被 Liouville 结论压成常数。",
+                                               "英文译名是 entire function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "整个复平面 处处复可微",
+                                                 "全局增长 形式限制",
+                                                 "holomorphic on all C",
+                                                 "有界 Liouville 常数",
+                                                 "entire function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "有理函数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "两个多项式的比值给出复平面上的代数型映射。",
+                                               "有限平面中的异常只能来自分母零点。",
+                                               "代表性标志是 P(z)/Q(z)。",
+                                               "在扩充平面上它成为亚纯对象。",
+                                               "英文译名是 rational function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "多项式比值 代数型映射",
+                                                 "分母零点 有限平面异常",
+                                                 "P(z)/Q(z)",
+                                                 "扩充平面 亚纯对象",
+                                                 "rational function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "孤立奇点",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "异常点周围存在去心邻域，其中对象仍保持复可微。",
+                                               "这种孤立性允许 Laurent 展开分类。",
+                                               "代表性标志是 0\u003c|z-z0|\u003cr。",
+                                               "可补、有限阶和本性三类由此区分。",
+                                               "英文译名是 isolated singularity。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "异常点 去心邻域 复可微",
+                                                 "孤立性 Laurent分类",
+                                                 "0\u003c|z-z0|\u003cr",
+                                                 "可补 极点 本性",
+                                                 "isolated singularity"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "n阶极点",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "有限阶爆发的次数被指定为 n。",
+                                               "乘以 (z-z0)^n 后得到非零有限极限。",
+                                               "代表性标志是 lim (z-z0)^n f(z) ≠0。",
+                                               "主部最高负幂正好是 -n。",
+                                               "英文译名是 pole of order n。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "有限阶爆发 次数 n",
+                                                 "(z-z0)^n 非零有限极限",
+                                                 "lim (z-z0)^n f(z) ≠0",
+                                                 "主部 最高负幂 -n",
+                                                 "pole of order n"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "无穷远点",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "扩充平面把远处所有方向合并为一个点。",
+                                               "研究它时常改用变量 w=1/z 转回原点附近。",
+                                               "代表性标志是 z=infty 与 w=0 的对应。",
+                                               "多项式和有理函数的远端行为由此描述。",
+                                               "英文译名是 point at infinity。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "扩充平面 远点",
+                                                 "变量替换 w=1/z 原点邻域",
+                                                 "z=infty w=0",
+                                                 "多项式 有理函数 远端行为",
+                                                 "point at infinity"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "黎曼球面",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "复平面再加一个远点后成为紧致曲面。",
+                                               "有理函数在上面自然成为全局映射。",
+                                               "代表性标志是 C union {infty}。",
+                                               "直线和圆可统一看成广义圆。",
+                                               "英文译名是 riemann sphere。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "复平面 远点 紧致曲面",
+                                                 "有理函数 全局映射",
+                                                 "C union {infty}",
+                                                 "直线 圆 广义圆",
+                                                 "riemann sphere"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "留数计算",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "目标是从局部展开或极限公式中取出 a_{-1}。",
+                                               "简单极点、重极点和无穷远点有不同套路。",
+                                               "代表性标志是 Res(f,z0)=lim (z-z0)f(z)。",
+                                               "选对局部表达能大幅简化积分。",
+                                               "英文译名是 calculation of residues。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "局部展开 极限公式 a_{-1}",
+                                                 "简单极点 重极点 无穷远点",
+                                                 "Res(f,z0)=lim (z-z0)f(z)",
+                                                 "局部表达 积分简化",
+                                                 "calculation of residues"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "主部",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "Laurent 展开中所有负幂项构成异常信息。",
+                                               "它完全决定孤立异常的类型和留数项。",
+                                               "代表性标志是 sum_{n\u003c0} a_n(z-z0)^n。",
+                                               "有限或无限负幂区分极点和本性情形。",
+                                               "英文译名是 principal part。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "Laurent展开 负幂项 异常信息",
+                                                 "孤立异常 类型 留数项",
+                                                 "sum_{n\u003c0} a_n(z-z0)^n",
+                                                 "有限负幂 无限负幂",
+                                                 "principal part"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "正则部",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "Laurent 展开中的非负幂项在中心附近保持解析。",
+                                               "去掉负幂异常后剩下的就是可正常展开部分。",
+                                               "代表性标志是 sum_{n\u003e=0} a_n(z-z0)^n。",
+                                               "它不会贡献围住中心的留数。",
+                                               "英文译名是 regular part。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "Laurent展开 非负幂项 解析",
+                                                 "负幂去除 正常展开部分",
+                                                 "sum_{n\u003e=0} a_n(z-z0)^n",
+                                                 "围住中心 无留数贡献",
+                                                 "regular part"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "解析部分",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "局部展开中不含负幂的部分可延到中心。",
+                                               "它与主部相加还原去心邻域中的对象。",
+                                               "代表性标志是 holomorphic component of Laurent expansion。",
+                                               "补值讨论时这一部分保留下来。",
+                                               "英文译名是 analytic part。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "局部展开 无负幂 中心延拓",
+                                                 "主部 相加 去心邻域",
+                                                 "holomorphic component of Laurent expansion",
+                                                 "补值讨论 保留部分",
+                                                 "analytic part"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "辐角增量",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "路径上函数值绕原点转过的总角度记录变化量。",
+                                               "闭合路径时它等于 2pi 乘以绕数。",
+                                               "代表性标志是 Delta arg f(z) along C。",
+                                               "零点计数公式会使用这个量。",
+                                               "英文译名是 increment of argument。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "路径 函数值 绕原点 总角度",
+                                                 "闭合路径 2pi 绕数",
+                                                 "Delta arg f(z) along C",
+                                                 "零点计数公式",
+                                                 "increment of argument"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "零点阶数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "函数在某点消失的最低非零幂次给出阶数。",
+                                               "可把函数写成幂次因子乘非零解析因子。",
+                                               "代表性标志是 f(z)=(z-z0)^m g(z), g(z0)≠0。",
+                                               "按重数计零点时使用这个整数。",
+                                               "英文译名是 order of zero。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "零点 最低非零幂次 阶数",
+                                                 "幂次因子 非零解析因子",
+                                                 "f(z)=(z-z0)^m g(z) g(z0)≠0",
+                                                 "重数计零点 整数",
+                                                 "order of zero"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "极点阶数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "复",
+                                               "变",
+                                               "量",
+                                               "场",
+                                               "英文译名是 order of pole。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "极点 有限阶 爆发次数",
+                                                 "(z-z0)^m f 非零解析",
+                                                 "a_{-m}(z-z0)^{-m}",
+                                                 "Laurent主部 最高负幂",
+                                                 "order of pole"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "最大模定理",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "紧区域上大小最大值出现在边界而非内部。",
+                                               "前提是内部复可微且对象非常数。",
+                                               "代表性标志是 sup_D |f| controlled by boundary。",
+                                               "它是最大模原理的闭包版本。",
+                                               "英文译名是 maximum modulus theorem。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "紧区域 大小最大 边界",
+                                                 "内部复可微 非常数",
+                                                 "sup_D |f| boundary control",
+                                                 "最大模原理 闭包版本",
+                                                 "maximum modulus theorem"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "开映射定理",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "非常数复可微映射会把开集送成开集。",
+                                               "局部幂次结构保证像集仍有邻域。",
+                                               "代表性标志是 nonconstant holomorphic maps are open。",
+                                               "它排除了内部像集塌成曲线的情况。",
+                                               "英文译名是 open mapping theorem。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "非常数复可微 开集像 开集",
+                                                 "局部幂次结构 像邻域",
+                                                 "nonconstant holomorphic maps are open",
+                                                 "内部像集 非曲线塌缩",
+                                                 "open mapping theorem"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "施瓦茨引理",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "单位圆盘自映射若固定原点，导数和模长受到限制。",
+                                               "等号情形只允许旋转。",
+                                               "代表性标志是 |f(z)|\u003c=|z| 且 |f\u0027(0)|\u003c=1。",
+                                               "圆盘几何和解析估计在这里结合。",
+                                               "英文译名是 schwarz lemma。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "单位圆盘 自映射 固定原点",
+                                                 "等号情形 旋转",
+                                                 "|f(z)|\u003c=|z| |f\u0027(0)|\u003c=1",
+                                                 "圆盘几何 解析估计",
+                                                 "schwarz lemma"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "解析同构",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "两个区域之间存在双向复可微且互逆的对应。",
+                                               "它保持复结构，而不只是集合上的一一配对。",
+                                               "代表性标志是 f and f^{-1} holomorphic。",
+                                               "可逆解析映射锁定两个域的同构关系。",
+                                               "英文译名是 analytic isomorphism。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "双区域 双向复可微 互逆",
+                                                 "复结构 一一配对",
+                                                 "f and f^{-1} holomorphic",
+                                                 "可逆解析映射 同构关系",
+                                                 "analytic isomorphism"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "单位圆盘",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "以原点为中心、半径小于一的圆形区域常作标准模型。",
+                                               "Schwarz 引理和自同构公式都在这里最简洁。",
+                                               "代表性标志是 |z|\u003c1。",
+                                               "许多单连通区域会被映到这个模型。",
+                                               "英文译名是 unit disk。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "原点中心 半径小于一 圆域",
+                                                 "Schwarz引理 自同构公式",
+                                                 "|z|\u003c1",
+                                                 "单连通区域 标准模型",
+                                                 "unit disk"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "上半平面",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "虚部为正的点组成一个标准单连通区域。",
+                                               "分式线性变换可把它与单位圆盘互换。",
+                                               "代表性标志是 Im z\u003e0。",
+                                               "边界是实轴，调和问题常在这里展开。",
+                                               "英文译名是 upper half plane。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "虚部为正 标准单连通区域",
+                                                 "分式线性变换 单位圆盘",
+                                                 "Im z\u003e0",
+                                                 "实轴边界 调和问题",
+                                                 "upper half plane"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "共形等价",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "两个区域若可由角度保持的双向映射连接，就具有同一复几何类型。",
+                                               "这种关系比拓扑等价更强。",
+                                               "代表性标志是 biholomorphic conformal map between domains。",
+                                               "Riemann 映射结论常用它描述分类。",
+                                               "英文译名是 conformal equivalence。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "区域 角度保持 双向映射",
+                                                 "拓扑等价 更强关系",
+                                                 "biholomorphic conformal map between domains",
+                                                 "Riemann映射 分类",
+                                                 "conformal equivalence"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "双解析映射",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "映射本身和反映射都保持复可微。",
+                                               "它给出区域之间可逆的解析坐标变化。",
+                                               "代表性标志是 f^{-1} holomorphic。",
+                                               "双向局部角度和复结构都被保留。",
+                                               "英文译名是 biholomorphic mapping。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "映射 反映射 复可微",
+                                                 "可逆解析坐标变化",
+                                                 "f^{-1} holomorphic",
+                                                 "双向局部角度 复结构",
+                                                 "biholomorphic mapping"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "保角变换",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "相交曲线经过映射后夹角保持不变。",
+                                               "复导数非零时局部线性部分是旋转加伸缩。",
+                                               "代表性标志是 multiplication by f\u0027(z0) with f\u0027(z0)≠0。",
+                                               "方向夹角保留而长度比例可改变。",
+                                               "英文译名是 angle preserving transformation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "相交曲线 映射后 夹角保持",
+                                                 "复导数非零 旋转 伸缩",
+                                                 "multiplication by f\u0027(z0) f\u0027(z0)≠0",
+                                                 "方向夹角 长度比例",
+                                                 "angle preserving transformation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "调和共轭",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "给定调和实函数后，可寻找另一个实函数与它组成解析对象。",
+                                               "两者偏导满足一阶耦合关系。",
+                                               "代表性标志是 u_x=v_y, u_y=-v_x。",
+                                               "单连通条件常保证全局存在。",
+                                               "英文译名是 harmonic conjugate。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "调和实函数 共轭伙伴 解析对象",
+                                                 "偏导 一阶耦合",
+                                                 "u_x=v_y u_y=-v_x",
+                                                 "单连通 全局存在",
+                                                 "harmonic conjugate"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "泊松积分公式",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "圆盘内调和值可由边界数据积分恢复。",
+                                               "核函数按照点的位置给边界值加权。",
+                                               "代表性标志是 u(re^{iθ})=(1/2pi)integral P_r(θ-t)f(t)dt。",
+                                               "它是 Dirichlet 问题的显式解法。",
+                                               "英文译名是 poisson integral formula。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "圆盘 调和值 边界数据积分",
+                                                 "核函数 边界值 加权",
+                                                 "u(re^{iθ})=(1/2pi)integral P_r(θ-t)f(t)dt",
+                                                 "Dirichlet问题 显式解法",
+                                                 "poisson integral formula"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "施瓦茨积分公式",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "边界实部数据可恢复圆盘内的解析函数。",
+                                               "它把 Poisson 核与共轭调和信息结合。",
+                                               "代表性标志是 integral (e^{it}+z)/(e^{it}-z) phi(t)dt。",
+                                               "实部边界值决定内部解析表达。",
+                                               "英文译名是 schwarz integral formula。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "边界实部 圆盘内解析函数",
+                                                 "Poisson核 共轭调和",
+                                                 "integral (e^{it}+z)/(e^{it}-z) phi(t)dt",
+                                                 "实部边界值 内部解析表达",
+                                                 "schwarz integral formula"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "解析函数唯一性定理",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "两个复可微对象若在有聚点的集合上一致，就在连通区域内完全一致。",
+                                               "零点聚集会强迫差函数处处为零。",
+                                               "代表性标志是 zeros with accumulation point imply f≡g。",
+                                               "局部信息可锁定全局对象。",
+                                               "英文译名是 identity theorem for analytic functions。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "解析函数 聚点集合 一致",
+                                                 "零点聚集 差函数为零",
+                                                 "zeros with accumulation point imply f≡g",
+                                                 "局部信息 全局对象",
+                                                 "identity theorem for analytic functions"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "米塔列夫勒定理",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "可预先指定离散点处的主部来构造亚纯对象。",
+                                               "它是部分分式展开的全局推广。",
+                                               "代表性标志是 prescribed principal parts。",
+                                               "极点结构可先给定再拼成函数。",
+                                               "英文译名是 mittag leffler theorem。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "离散点 主部 亚纯对象",
+                                                 "部分分式展开 全局推广",
+                                                 "prescribed principal parts",
+                                                 "极点结构 函数拼接",
+                                                 "mittag leffler theorem"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "魏尔斯特拉斯乘积定理",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "可预先指定零点集合来构造整对象。",
+                                               "无限乘积需要加入因子保证收敛。",
+                                               "代表性标志是 canonical product。",
+                                               "零点位置和重数被编码进乘积。",
+                                               "英文译名是 weierstrass product theorem。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "零点集合 整函数 构造",
+                                                 "无限乘积 收敛因子",
+                                                 "canonical product",
+                                                 "零点位置 重数 乘积编码",
+                                                 "weierstrass product theorem"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "留数和",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "多个异常点的 a_{-1} 系数被合并成一个总量。",
+                                               "在扩充平面上有限点与远点贡献常相互制约。",
+                                               "代表性标志是 sum Res(f,zk)。",
+                                               "闭合路径积分只读取被围住的这部分总和。",
+                                               "英文译名是 sum of residues。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "异常点 a_{-1} 系数 总量",
+                                                 "扩充平面 有限点 远点贡献",
+                                                 "sum Res(f,zk)",
+                                                 "闭合路径 被围总和",
+                                                 "sum of residues"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "主值积分",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "奇点落在积分路径上时，对称极限可保留有限值。",
+                                               "绕开小半圆会产生额外留数贡献。",
+                                               "代表性标志是 PV integral。",
+                                               "实轴奇性和围道缩进常同时出现。",
+                                               "英文译名是 principal value integral。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "路径奇点 对称极限 有限值",
+                                                 "小半圆绕开 额外留数",
+                                                 "PV integral",
+                                                 "实轴奇性 围道缩进",
+                                                 "principal value integral"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "鞍点法",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "含大参数的积分主要由相位驻点附近贡献。",
+                                               "路径会变形成最速下降方向。",
+                                               "代表性标志是 phi\u0027(z0)=0。",
+                                               "局部二次近似决定主项。",
+                                               "英文译名是 saddle point method。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "大参数积分 相位驻点 主贡献",
+                                                 "路径变形 最速下降",
+                                                 "phi\u0027(z0)=0",
+                                                 "局部二次近似 主项",
+                                                 "saddle point method"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "解析曲线",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "路径参数以解析方式进入复平面。",
+                                               "局部可由收敛幂级数描述轨迹。",
+                                               "代表性标志是 gamma(t) analytic。",
+                                               "几何曲线带有额外的解析正则性。",
+                                               "英文译名是 analytic curve。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "解析参数 复平面轨迹",
+                                                 "局部收敛幂级数",
+                                                 "gamma(t) analytic",
+                                                 "几何曲线 解析正则性",
+                                                 "analytic curve"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "闭路",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "起点和终点重合的有向路径可围住区域。",
+                                               "积分时内部异常点才会产生留数贡献。",
+                                               "代表性标志是 gamma(a)=gamma(b)。",
+                                               "方向约定决定积分符号。",
+                                               "英文译名是 closed contour。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "起点终点重合 有向路径",
+                                                 "内部异常点 留数贡献",
+                                                 "gamma(a)=gamma(b)",
+                                                 "方向约定 积分符号",
+                                                 "closed contour"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "正向边界",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "沿边界行进时内部区域保持在左侧。",
+                                               "这个方向使 Cauchy 和 Green 类公式符号一致。",
+                                               "代表性标志是 counterclockwise orientation。",
+                                               "外边界与内洞边界方向相反。",
+                                               "英文译名是 positive boundary。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "边界方向 内部左侧",
+                                                 "Cauchy公式 Green公式 符号一致",
+                                                 "counterclockwise orientation",
+                                                 "外边界 内洞边界 相反方向",
+                                                 "positive boundary"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "围道",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "为积分而选定的有向分段光滑路径可围绕异常点。",
+                                               "它既有几何形状，也有行进方向。",
+                                               "代表性标志是 oriented piecewise smooth path。",
+                                               "路径变形时需避开奇性。",
+                                               "英文译名是 contour。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "有向分段光滑路径 异常点",
+                                                 "几何形状 行进方向",
+                                                 "oriented piecewise smooth path",
+                                                 "路径变形 奇性避开",
+                                                 "contour"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "圆周积分",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "路径取圆周时，中心和半径给出自然参数化。",
+                                               "围住中心异常点后可直接读取 Laurent 系数。",
+                                               "代表性标志是 z=z0+Re^{it}。",
+                                               "Cauchy 公式常以圆周为最简模型。",
+                                               "英文译名是 circle integral。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "圆周路径 中心 半径",
+                                                 "中心异常 Laurent系数",
+                                                 "z=z0+Re^{it}",
+                                                 "Cauchy公式 圆周模型",
+                                                 "circle integral"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "小圆弧引理",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "绕过路径上奇点的小圆弧积分可在半径趋零时估计。",
+                                               "简单极点附近的小弧会留下与角度有关的贡献。",
+                                               "代表性标志是 epsilon arc around z0。",
+                                               "主值积分的缩进路径常调用它。",
+                                               "英文译名是 small arc lemma。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "小圆弧积分 半径趋零 估计",
+                                                 "简单极点 小弧 角度贡献",
+                                                 "epsilon arc around z0",
+                                                 "主值积分 缩进路径",
+                                                 "small arc lemma"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "大圆弧引理",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "大半圆弧上的积分在半径趋无穷时被估计为零。",
+                                               "衰减阶数要压过弧长增长。",
+                                               "代表性标志是 R arc with R-\u003einfty。",
+                                               "实轴积分可因此交给留数求值。",
+                                               "英文译名是 large arc lemma。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "大半圆弧 半径趋无穷 零估计",
+                                                 "衰减阶数 弧长增长",
+                                                 "R arc R-\u003einfty",
+                                                 "实轴积分 留数求值",
+                                                 "large arc lemma"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "留数求和",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "带周期核或三角核的围道积分可转化为级数值。",
+                                               "被选核函数的极点贡献编码求和项。",
+                                               "代表性标志是 pi cot(pi z) 或 pi csc(pi z)。",
+                                               "无限级数通过留数总和获得。",
+                                               "英文译名是 residue summation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "周期核 三角核 围道积分 级数值",
+                                                 "核函数极点 求和项",
+                                                 "pi cot(pi z) pi csc(pi z)",
+                                                 "无限级数 留数总和",
+                                                 "residue summation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "有界整函数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "全平面复可微并且大小有统一上界的对象极其受限。",
+                                               "Cauchy 估计让一阶导数处处为零。",
+                                               "代表性标志是 entire plus bounded。",
+                                               "最终只能得到常值对象。",
+                                               "英文译名是 bounded entire function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "全平面复可微 统一上界",
+                                                 "Cauchy估计 一阶导数为零",
+                                                 "entire plus bounded",
+                                                 "常值对象",
+                                                 "bounded entire function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "单叶函数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "区域内不同输入不会被映到同一个输出。",
+                                               "它给出单射的复可微映射，局部和整体都要避免重叠。",
+                                               "代表性标志是 z1≠z2 implies f(z1)≠f(z2)。",
+                                               "几何函数论常研究这种单值单射行为。",
+                                               "英文译名是 univalent function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "不同输入 不同输出",
+                                                 "单射 复可微 无重叠",
+                                                 "z1≠z2 implies f(z1)≠f(z2)",
+                                                 "几何函数论 单值单射",
+                                                 "univalent function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "双全纯映射",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "两个复域之间存在可逆且双向复可微的映射。",
+                                               "它比单射更强调反向也保持解析。",
+                                               "代表性标志是 f:D-\u003eOmega and f^{-1} holomorphic。",
+                                               "区域的复结构通过它完全对应。",
+                                               "英文译名是 biholomorphic map。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "复域 可逆 双向复可微",
+                                                 "反向解析",
+                                                 "f:D-\u003eOmega f^{-1} holomorphic",
+                                                 "区域复结构 对应",
+                                                 "biholomorphic map"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "黎曼映射定理",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "非全平面的单连通真区域可映到标准圆盘。",
+                                               "映射可通过指定一点和导数方向来归一化。",
+                                               "代表性标志是 simply connected proper domain -\u003e unit disk。",
+                                               "它把大片平面区域的复几何归约到圆盘。",
+                                               "英文译名是 riemann mapping theorem。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "单连通真区域 标准圆盘",
+                                                 "指定一点 导数方向 归一化",
+                                                 "simply connected proper domain -\u003e unit disk",
+                                                 "平面区域 复几何 圆盘",
+                                                 "riemann mapping theorem"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "解析开拓",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "已知局部复可微表达可扩大到更大区域。",
+                                               "扩大的表达在交叠处必须与原表达一致。",
+                                               "代表性标志是 extension F with F|_D=f。",
+                                               "障碍常来自奇性、分支点或自然边界。",
+                                               "英文译名是 analytic extension。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "局部复可微 更大区域",
+                                                 "交叠处 原表达一致",
+                                                 "extension F with F|_D=f",
+                                                 "奇性 分支点 自然边界",
+                                                 "analytic extension"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "多值函数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "同一个输入可能对应多个输出值。",
+                                               "绕行特殊点后值会在不同分支之间切换。",
+                                               "代表性标志是 log z 或 z^{1/n}。",
+                                               "选择分支后才能在切开区域中单值运算。",
+                                               "英文译名是 multivalued function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "单输入 多输出",
+                                                 "绕行特殊点 分支切换",
+                                                 "log z z^{1/n}",
+                                                 "切开区域 单值运算",
+                                                 "multivalued function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "根式函数",
+                        "source_file":  "words/数学/普通模式/complex_analysis_terms.csv",
+                        "complete_clues":  [
+                                               "根式表达在复平面中自然产生多个分支。",
+                                               "绕原点或分支点一圈后根值可能改变。",
+                                               "代表性标志是 z^{1/n}。",
+                                               "切割线和主值选择决定单值版本。",
+                                               "英文译名是 radical function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "根式表达 多分支",
+                                                 "绕原点 分支点 根值改变",
+                                                 "z^{1/n}",
+                                                 "切割线 主值选择",
+                                                 "radical function"
+                                             ]
+                    }
+                ]
+}

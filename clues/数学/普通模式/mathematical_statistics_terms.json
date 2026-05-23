@@ -1,0 +1,1895 @@
+{
+    "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+    "entries":  [
+                    {
+                        "chinese_name":  "数理统计",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "从观测数据推断总体规律时，随机性和样本误差必须同时进入模型。",
+                                               "估计、检验、区间、回归和方差分解构成主要任务。",
+                                               "抽样分布把数据函数与参数推断连接起来。",
+                                               "它研究由有限数据作可靠推断的数学机制。",
+                                               "英文标准写法是 mathematical statistics。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "观测数据 总体规律 样本误差",
+                                                 "估计 检验 区间 回归 方差分解",
+                                                 "抽样分布 数据函数 参数推断",
+                                                 "有限数据 可靠推断",
+                                                 "mathematical statistics"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "总体",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "研究对象的全体及其分布是抽样前的目标来源。",
+                                               "参数是这个全体规律的数值特征，样本只是局部观测。",
+                                               "全体均值、全体比例和全体二阶离散程度等参数在这里定义。",
+                                               "全体规律而非已观测记录是核心。",
+                                               "英文标准写法是 population。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "研究对象全体 分布 目标来源",
+                                                 "参数 全体规律 局部观测",
+                                                 "全体均值 全体比例 全体二阶离散",
+                                                 "全体规律 已观测记录区别",
+                                                 "population"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "样本",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "从研究对象全体中抽出的观测记录构成计算基础。",
+                                               "独立同分布条件把这些记录看成同一分布的重复观测。",
+                                               "常写 X1,...,Xn，每个观测值都是后续统计量的输入。",
+                                               "有限观测记录是核心。",
+                                               "英文标准写法是 sample。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "抽出 观测记录 计算基础",
+                                                 "独立同分布 重复观测",
+                                                 "X1,...,Xn 观测值 输入",
+                                                 "有限观测记录",
+                                                 "sample"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "样本容量",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "观测记录的个数控制抽样误差和自由度。",
+                                               "它常记为 n，进入标准误、置信区间长度和检验功效。",
+                                               "标准误中常出现 1/sqrt(n) 的缩放。",
+                                               "记录个数 n 是核心。",
+                                               "英文标准写法是 sample size。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "观测记录个数 抽样误差 自由度",
+                                                 "n 标准误 区间长度 检验功效",
+                                                 "1/sqrt(n) 标准误",
+                                                 "记录个数 n",
+                                                 "sample size"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "统计量",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "只由观测记录计算出的函数承担压缩信息的任务。",
+                                               "它不能含未知参数，但自身作为随机量拥有抽样规律。",
+                                               "这里是任意不含未知参数的数据函数。",
+                                               "数据函数和抽样规律是核心。",
+                                               "英文标准写法是 statistic。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "观测记录 函数 压缩信息",
+                                                 "不含未知参数 随机量 抽样规律",
+                                                 "不含未知参数 数据函数",
+                                                 "数据函数 抽样规律",
+                                                 "statistic"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "样本均值",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "观测记录相加后除以记录个数，描述位置中心。",
+                                               "公式为 Xbar=(X1+...+Xn)/n。",
+                                               "它是总体均值的自然估计，标准误为 σ/sqrt(n) 或 s/sqrt(n)。",
+                                               "平均位置和标准误相连。",
+                                               "英文标准写法是 sample mean。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "观测记录求和 除以n 位置中心",
+                                                 "Xbar=(X1+...+Xn)/n",
+                                                 "均值估计 σ/sqrt(n) s/sqrt(n)",
+                                                 "平均位置 标准误",
+                                                 "sample mean"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "样本方差",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "观测记录围绕平均位置的平方偏差被汇总。",
+                                               "无偏版本分母为 n-1，而极大似然版本常用 n。",
+                                               "分母 n-1 对应无偏校正，分母 n 对应似然估计。",
+                                               "离散程度和自由度修正是核心。",
+                                               "英文标准写法是 sample variance。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "平均位置 平方偏差 汇总",
+                                                 "分母 n-1 或 n",
+                                                 "n-1无偏 n似然",
+                                                 "离散程度 自由度修正",
+                                                 "sample variance"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "样本标准差",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "样本离散程度开平方后回到原数据量纲。",
+                                               "它是样本方差的正平方根。",
+                                               "它为数据波动给出与原单位一致的尺度。",
+                                               "原量纲波动尺度是核心。",
+                                               "英文标准写法是 sample standard deviation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "离散程度 开平方 原量纲",
+                                                 "样本方差 正平方根",
+                                                 "原单位 波动尺度",
+                                                 "波动尺度",
+                                                 "sample standard deviation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "经验分布函数",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "观测记录中不超过 x 的比例形成阶梯函数。",
+                                               "公式可写 Fn(x)=n^{-1}Σ I(Xi≤x)。",
+                                               "阶梯在每个观测点处跳跃 1/n。",
+                                               "阶梯、比例和指示函数是核心。",
+                                               "英文标准写法是 empirical distribution function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "不超过x 比例 阶梯函数",
+                                                 "Fn(x)=n^{-1}Σ I(Xi≤x)",
+                                                 "观测点 跳跃1/n",
+                                                 "阶梯 比例 指示函数",
+                                                 "empirical distribution function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "抽样分布",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "同一抽样方案重复进行时，某个数据函数本身形成分布。",
+                                               "它描述估计量或检验统计量在重复样本中的波动。",
+                                               "同一统计量在所有可能样本上形成自己的概率规律。",
+                                               "重复抽样下的数据函数分布是核心。",
+                                               "英文标准写法是 sampling distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "同一方案 重复抽样 数据函数分布",
+                                                 "估计量 检验统计量 波动",
+                                                 "所有可能样本 统计量规律",
+                                                 "重复抽样 数据函数",
+                                                 "sampling distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "点估计",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "未知参数由观测记录构造出的数值来近似。",
+                                               "偏差、均方误差、方差下界和大样本极限刻画优劣。",
+                                               "这里输出单个参数猜测值，而不是随机区间。",
+                                               "一个数值替代未知参数是核心。",
+                                               "英文标准写法是 point estimation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "未知参数 观测记录 近似数值",
+                                                 "偏差 均方误差 方差下界 大样本极限",
+                                                 "单个猜测值 非区间",
+                                                 "数值替代 未知参数",
+                                                 "point estimation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "估计量",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "未知参数由观测记录构造出的数值来近似。",
+                                               "偏差、均方误差、方差下界和大样本极限刻画优劣。",
+                                               "这里强调作为随机变量的数据构造式。",
+                                               "一个数值替代未知参数是核心。",
+                                               "英文标准写法是 estimator。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "未知参数 观测记录 近似数值",
+                                                 "偏差 均方误差 方差下界 大样本极限",
+                                                 "随机变量 数据构造式",
+                                                 "数值替代 未知参数",
+                                                 "estimator"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "无偏性",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "未知参数由观测记录构造出的数值来近似。",
+                                               "偏差、均方误差、方差下界和大样本极限刻画优劣。",
+                                               "这里要求估计量期望等于目标参数。",
+                                               "一个数值替代未知参数是核心。",
+                                               "英文标准写法是 unbiasedness。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "未知参数 观测记录 近似数值",
+                                                 "偏差 均方误差 方差下界 大样本极限",
+                                                 "E估计量=目标参数",
+                                                 "数值替代 未知参数",
+                                                 "unbiasedness"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "有效性",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "未知参数由观测记录构造出的数值来近似。",
+                                               "偏差、均方误差、方差下界和大样本极限刻画优劣。",
+                                               "这里比较方差或均方误差接近下界的程度。",
+                                               "一个数值替代未知参数是核心。",
+                                               "英文标准写法是 efficiency。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "未知参数 观测记录 近似数值",
+                                                 "偏差 均方误差 方差下界 大样本极限",
+                                                 "方差 均方误差 接近下界",
+                                                 "数值替代 未知参数",
+                                                 "efficiency"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "一致性",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "未知参数由观测记录构造出的数值来近似。",
+                                               "偏差、均方误差、方差下界和大样本极限刻画优劣。",
+                                               "这里强调估计序列依概率趋向真实参数的性质。",
+                                               "一个数值替代未知参数是核心。",
+                                               "英文标准写法是 consistency。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "未知参数 观测记录 近似数值",
+                                                 "偏差 均方误差 方差下界 大样本极限",
+                                                 "估计序列 依概率 真参数",
+                                                 "数值替代 未知参数",
+                                                 "consistency"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "最大似然估计",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "未知参数由观测记录构造出的数值来近似。",
+                                               "偏差、均方误差、方差下界和大样本极限刻画优劣。",
+                                               "这里通过最大化 L(theta) 选择参数值。",
+                                               "一个数值替代未知参数是核心。",
+                                               "英文标准写法是 maximum likelihood estimation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "未知参数 观测记录 近似数值",
+                                                 "偏差 均方误差 方差下界 大样本极限",
+                                                 "最大化 L(theta)",
+                                                 "数值替代 未知参数",
+                                                 "maximum likelihood estimation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "矩估计",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "未知参数由观测记录构造出的数值来近似。",
+                                               "偏差、均方误差、方差下界和大样本极限刻画优劣。",
+                                               "这里令样本矩等于理论矩来解参数。",
+                                               "一个数值替代未知参数是核心。",
+                                               "英文标准写法是 method of moments。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "未知参数 观测记录 近似数值",
+                                                 "偏差 均方误差 方差下界 大样本极限",
+                                                 "样本矩=理论矩",
+                                                 "数值替代 未知参数",
+                                                 "method of moments"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "区间估计",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "未知量被随机上下界或随机函数带包围。",
+                                               "覆盖频率、置信系数和区间长度共同描述推断质量。",
+                                               "这里输出随机上下界，而不是单点猜测。",
+                                               "随机区间与覆盖解释是核心。",
+                                               "英文标准写法是 interval estimation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "未知量 随机上下界 随机函数带",
+                                                 "覆盖频率 置信系数 区间长度",
+                                                 "随机上下界 非单点",
+                                                 "随机区间 覆盖解释",
+                                                 "interval estimation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "置信区间",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "未知量被随机上下界或随机函数带包围。",
+                                               "覆盖频率、置信系数和区间长度共同描述推断质量。",
+                                               "这里是包含未知参数的随机区间结果。",
+                                               "随机区间与覆盖解释是核心。",
+                                               "英文标准写法是 confidence interval。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "未知量 随机上下界 随机函数带",
+                                                 "覆盖频率 置信系数 区间长度",
+                                                 "包含未知参数 随机区间",
+                                                 "随机区间 覆盖解释",
+                                                 "confidence interval"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "置信水平",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "未知量被随机上下界或随机函数带包围。",
+                                               "覆盖频率、置信系数和区间长度共同描述推断质量。",
+                                               "这里是重复抽样下区间覆盖的标称比例。",
+                                               "随机区间与覆盖解释是核心。",
+                                               "英文标准写法是 confidence level。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "未知量 随机上下界 随机函数带",
+                                                 "覆盖频率 置信系数 区间长度",
+                                                 "重复抽样 覆盖比例",
+                                                 "随机区间 覆盖解释",
+                                                 "confidence level"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "假设检验",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "先给模型命题，再用样本证据作保留或否定的判决。",
+                                               "拒绝域、显著性水平、p 值和功效描述判决规则。",
+                                               "这里是命题判决流程的总称，包括设定、统计量和规则。",
+                                               "命题、统计量和临界规则三者同时出现。",
+                                               "英文标准写法是 hypothesis testing。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "模型命题 样本证据 判决",
+                                                 "拒绝域 显著性水平 p值 功效",
+                                                 "命题判决 设定 统计量 规则",
+                                                 "命题 统计量 临界规则",
+                                                 "hypothesis testing"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "原假设",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "先给模型命题，再用样本证据作保留或否定的判决。",
+                                               "拒绝域、显著性水平、p 值和功效描述判决规则。",
+                                               "这里是被优先保护的基准命题，常记 H0。",
+                                               "命题、统计量和临界规则三者同时出现。",
+                                               "英文标准写法是 null hypothesis。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "模型命题 样本证据 判决",
+                                                 "拒绝域 显著性水平 p值 功效",
+                                                 "基准命题 H0",
+                                                 "命题 统计量 临界规则",
+                                                 "null hypothesis"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "备择假设",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "先给模型命题，再用样本证据作保留或否定的判决。",
+                                               "拒绝域、显著性水平、p 值和功效描述判决规则。",
+                                               "这里是与基准命题竞争的方向，常记 H1。",
+                                               "命题、统计量和临界规则三者同时出现。",
+                                               "英文标准写法是 alternative hypothesis。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "模型命题 样本证据 判决",
+                                                 "拒绝域 显著性水平 p值 功效",
+                                                 "竞争命题 H1",
+                                                 "命题 统计量 临界规则",
+                                                 "alternative hypothesis"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "显著性水平",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "先给模型命题，再用样本证据作保留或否定的判决。",
+                                               "拒绝域、目标概念、p 值和功效描述判决规则。",
+                                               "这里是错拒真命题的预设上限，常记 α。",
+                                               "命题、统计量和临界规则三者同时出现。",
+                                               "英文标准写法是 significance level。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "模型命题 样本证据 判决",
+                                                 "拒绝域 目标概念 p值 功效",
+                                                 "错拒上限 α",
+                                                 "命题 统计量 临界规则",
+                                                 "significance level"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "拒绝域",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "先给模型命题，再用样本证据作保留或否定的判决。",
+                                               "目标概念、显著性水平、p 值和功效描述判决规则。",
+                                               "这里是统计量落入后否定基准命题的样本点集合。",
+                                               "命题、统计量和临界规则三者同时出现。",
+                                               "英文标准写法是 rejection region。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "模型命题 样本证据 判决",
+                                                 "目标概念 显著性水平 p值 功效",
+                                                 "统计量落入 否定H0 集合",
+                                                 "命题 统计量 临界规则",
+                                                 "rejection region"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "检验统计量",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "只由观测记录计算出的函数承担压缩信息的任务。",
+                                               "它不能含未知参数，但自身作为随机量拥有抽样规律。",
+                                               "这里是为判决命题专门构造的数据函数。",
+                                               "数据函数和抽样规律是核心。",
+                                               "英文标准写法是 test statistic。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "观测记录 函数 压缩信息",
+                                                 "不含未知参数 随机量 抽样规律",
+                                                 "判决命题 数据函数",
+                                                 "数据函数 抽样规律",
+                                                 "test statistic"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "第一类错误",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "先给模型命题，再用样本证据作保留或否定的判决。",
+                                               "拒绝域、显著性水平、p 值和功效描述判决规则。",
+                                               "这里描述真命题被错拒的错误。",
+                                               "命题、统计量和临界规则三者同时出现。",
+                                               "英文标准写法是 type one error。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "模型命题 样本证据 判决",
+                                                 "拒绝域 显著性水平 p值 功效",
+                                                 "真命题 错拒",
+                                                 "命题 统计量 临界规则",
+                                                 "type one error"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "第二类错误",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "先给模型命题，再用样本证据作保留或否定的判决。",
+                                               "拒绝域、显著性水平、p 值和功效描述判决规则。",
+                                               "这里描述假命题未被拒绝的错误。",
+                                               "命题、统计量和临界规则三者同时出现。",
+                                               "英文标准写法是 type two error。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "模型命题 样本证据 判决",
+                                                 "拒绝域 显著性水平 p值 功效",
+                                                 "假命题 未拒",
+                                                 "命题 统计量 临界规则",
+                                                 "type two error"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "功效函数",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "先给模型命题，再用样本证据作保留或否定的判决。",
+                                               "拒绝域、显著性水平、p 值和功效描述判决规则。",
+                                               "这里给出各参数点下拒绝基准命题的概率。",
+                                               "命题、统计量和临界规则三者同时出现。",
+                                               "英文标准写法是 power function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "模型命题 样本证据 判决",
+                                                 "拒绝域 显著性水平 p值 功效",
+                                                 "参数点 拒绝概率",
+                                                 "命题 统计量 临界规则",
+                                                 "power function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "正态总体",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "研究对象全体被假定服从钟形连续模型。",
+                                               "均值和方差是主要未知参数，样本均值与样本方差有经典抽样规律。",
+                                               "若总体正态，则样本均值与样本方差相互独立。",
+                                               "正态假定支撑均值方差推断。",
+                                               "英文标准写法是 normal population。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "钟形连续模型 全体假定",
+                                                 "均值 方差 经典抽样规律",
+                                                 "正态 样本均值 样本方差 独立",
+                                                 "正态假定 均值方差推断",
+                                                 "normal population"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "卡方分布",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "正态样本中平方和缩放后出现的非负抽样模型。",
+                                               "自由度决定形状，并常等于独立平方项个数。",
+                                               "定义式由数据函数、参数位置和抽样规律共同确定。",
+                                               "平方和与自由度是核心。",
+                                               "英文标准写法是 chi square distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "正态样本 平方和 非负模型",
+                                                 "自由度 独立平方项个数",
+                                                 "数据函数 参数位置 抽样规律",
+                                                 "平方和 自由度",
+                                                 "chi square distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "t分布",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "均值推断中标准正态量被样本方差引入的随机尺度修正。",
+                                               "自由度控制尾部厚度，大样本时接近标准正态。",
+                                               "定义式由数据函数、参数位置和抽样规律共同确定。",
+                                               "厚尾和自由度锁定对象。",
+                                               "英文标准写法是 t distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "均值推断 随机尺度修正",
+                                                 "自由度 尾部厚度 标准正态极限",
+                                                 "数据函数 参数位置 抽样规律",
+                                                 "厚尾 自由度",
+                                                 "t distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "F分布",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "两个独立卡方量分别除以自由度后取比值。",
+                                               "它取非负值，右尾临界值常用于方差比较。",
+                                               "定义式由数据函数、参数位置和抽样规律共同确定。",
+                                               "均方比和两个自由度是核心。",
+                                               "英文标准写法是 f distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "两个独立卡方 除以自由度 比值",
+                                                 "非负 右尾临界值 方差比较",
+                                                 "数据函数 参数位置 抽样规律",
+                                                 "均方比 两个自由度",
+                                                 "f distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "方差分析",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "多个组均值差异被转化为变差来源的比较。",
+                                               "总平方和分解成组间、组内以及可能的交互部分。",
+                                               "这里泛指用平方和分解比较均值差异。",
+                                               "变差分解和均方比是核心。",
+                                               "英文标准写法是 analysis of variance。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "多组均值差异 变差来源",
+                                                 "总平方和 组间 组内 交互",
+                                                 "平方和分解 均值差异",
+                                                 "变差分解 均方比",
+                                                 "analysis of variance"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "回归分析",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "响应变量与解释变量之间的关系被写成模型和误差项。",
+                                               "系数描述平均变化，残差记录观测与拟合之间的差。",
+                                               "这里泛指响应与解释变量关系建模。",
+                                               "拟合、残差和解释度是核心。",
+                                               "英文标准写法是 regression analysis。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "响应变量 解释变量 模型 误差项",
+                                                 "系数 平均变化 残差 拟合差",
+                                                 "响应 解释变量 建模",
+                                                 "拟合 残差 解释度",
+                                                 "regression analysis"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "线性回归",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "响应变量与解释变量之间的关系被写成模型和误差项。",
+                                               "系数描述平均变化，残差记录观测与拟合之间的差。",
+                                               "这里平均响应写成解释变量的线性组合。",
+                                               "拟合、残差和解释度是核心。",
+                                               "英文标准写法是 linear regression。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "响应变量 解释变量 模型 误差项",
+                                                 "系数 平均变化 残差 拟合差",
+                                                 "平均响应 线性组合",
+                                                 "拟合 残差 解释度",
+                                                 "linear regression"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "最小二乘法",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "响应变量与解释变量之间的关系被写成模型和误差项。",
+                                               "系数描述平均变化，残差记录观测与拟合之间的差。",
+                                               "这里以残差平方和最小作为求解准则。",
+                                               "拟合、残差和解释度是核心。",
+                                               "英文标准写法是 least squares method。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "响应变量 解释变量 模型 误差项",
+                                                 "系数 平均变化 残差 拟合差",
+                                                 "残差平方和最小",
+                                                 "拟合 残差 解释度",
+                                                 "least squares method"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "相关分析",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "响应变量与解释变量之间的关系被写成模型和误差项。",
+                                               "系数描述平均变化，残差记录观测与拟合之间的差。",
+                                               "这里关注变量间线性关联强弱，而非预测方程本身。",
+                                               "拟合、残差和解释度是核心。",
+                                               "英文标准写法是 correlation analysis。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "响应变量 解释变量 模型 误差项",
+                                                 "系数 平均变化 残差 拟合差",
+                                                 "线性关联强弱",
+                                                 "拟合 残差 解释度",
+                                                 "correlation analysis"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "非参数检验",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "先给模型命题，再用样本证据作保留或否定的判决。",
+                                               "拒绝域、显著性水平、p 值和功效描述判决规则。",
+                                               "这里不指定有限维参数模型，依赖秩、符号或经验规律。",
+                                               "命题、统计量和临界规则三者同时出现。",
+                                               "英文标准写法是 nonparametric test。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "模型命题 样本证据 判决",
+                                                 "拒绝域 显著性水平 p值 功效",
+                                                 "无有限维参数 秩 符号 经验规律",
+                                                 "命题 统计量 临界规则",
+                                                 "nonparametric test"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "参数空间",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "未知参数允许取值的集合限制了模型搜索范围。",
+                                               "估计和检验都在这个集合或其子集之间进行。",
+                                               "参数点 θ 只能在 Θ 中取值，检验常比较 Θ 的子集。",
+                                               "允许参数集合是核心。",
+                                               "英文标准写法是 parameter space。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "未知参数 允许取值 集合",
+                                                 "估计 检验 集合 子集",
+                                                 "θ Θ 参数子集",
+                                                 "允许参数集合",
+                                                 "parameter space"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "参数估计",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "未知参数由观测记录构造出的数值来近似。",
+                                               "偏差、均方误差、方差下界和大样本极限刻画优劣。",
+                                               "这里泛指从数据推出未知参数的任务。",
+                                               "一个数值替代未知参数是核心。",
+                                               "英文标准写法是 parameter estimation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "未知参数 观测记录 近似数值",
+                                                 "偏差 均方误差 方差下界 大样本极限",
+                                                 "数据 推出未知参数",
+                                                 "数值替代 未知参数",
+                                                 "parameter estimation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "充分统计量",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "只由观测记录计算出的函数承担压缩信息的任务。",
+                                               "它不能含未知参数，但自身作为随机量拥有抽样规律。",
+                                               "这里保留关于参数的全部信息，但不要求压缩到最粗。",
+                                               "数据函数和抽样规律是核心。",
+                                               "英文标准写法是 sufficient statistic。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "观测记录 函数 压缩信息",
+                                                 "不含未知参数 随机量 抽样规律",
+                                                 "全部参数信息 非最粗",
+                                                 "数据函数 抽样规律",
+                                                 "sufficient statistic"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "完全统计量",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "只由观测记录计算出的函数承担压缩信息的任务。",
+                                               "它不能含未知参数，但自身作为随机量拥有抽样规律。",
+                                               "这里要求若期望恒为零则函数几乎必为零。",
+                                               "数据函数和抽样规律是核心。",
+                                               "英文标准写法是 complete statistic。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "观测记录 函数 压缩信息",
+                                                 "不含未知参数 随机量 抽样规律",
+                                                 "期望恒零 函数几乎为零",
+                                                 "数据函数 抽样规律",
+                                                 "complete statistic"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "最小充分统计量",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "只由观测记录计算出的函数承担压缩信息的任务。",
+                                               "它不能含未知参数，但自身作为随机量拥有抽样规律。",
+                                               "这里在充分性基础上要求诱导最粗的样本等价划分。",
+                                               "数据函数和抽样规律是核心。",
+                                               "英文标准写法是 minimal sufficient statistic。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "观测记录 函数 压缩信息",
+                                                 "不含未知参数 随机量 抽样规律",
+                                                 "充分性 最粗等价划分",
+                                                 "数据函数 抽样规律",
+                                                 "minimal sufficient statistic"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "因子分解定理",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "样本中关于参数的信息可被压缩、改进或下界刻画。",
+                                               "似然分解、条件期望改进和信息量矩阵是常见工具。",
+                                               "这里用似然可分解形式判定充分性。",
+                                               "信息压缩与方差下界是核心。",
+                                               "英文标准写法是 factorization theorem。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "参数信息 压缩 改进 下界",
+                                                 "似然分解 条件期望 信息量矩阵",
+                                                 "似然分解 判定充分性",
+                                                 "信息压缩 方差下界",
+                                                 "factorization theorem"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "拉奥布莱克韦尔定理",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "样本中关于参数的信息可被压缩、改进或下界刻画。",
+                                               "似然分解、条件期望改进和信息量矩阵是常见工具。",
+                                               "这里用对充分量取条件期望改进估计。",
+                                               "信息压缩与方差下界是核心。",
+                                               "英文标准写法是 rao blackwell theorem。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "参数信息 压缩 改进 下界",
+                                                 "似然分解 条件期望 信息量矩阵",
+                                                 "条件期望 改进估计",
+                                                 "信息压缩 方差下界",
+                                                 "rao blackwell theorem"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "克拉默拉奥不等式",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "样本中关于参数的信息可被压缩、改进或下界刻画。",
+                                               "似然分解、条件期望改进和信息量矩阵是常见工具。",
+                                               "这里给出无偏估计方差的下界。",
+                                               "信息压缩与方差下界是核心。",
+                                               "英文标准写法是 cramer rao inequality。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "参数信息 压缩 改进 下界",
+                                                 "似然分解 条件期望 信息量矩阵",
+                                                 "无偏估计 方差下界",
+                                                 "信息压缩 方差下界",
+                                                 "cramer rao inequality"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "费希尔信息量",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "样本中关于参数的信息可被压缩、改进或下界刻画。",
+                                               "似然分解、条件期望改进和信息量矩阵是常见工具。",
+                                               "这里量化样本对参数的局部敏感度。",
+                                               "信息压缩与方差下界是核心。",
+                                               "英文标准写法是 fisher information。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "参数信息 压缩 改进 下界",
+                                                 "似然分解 条件期望 信息量矩阵",
+                                                 "参数 局部敏感度",
+                                                 "信息压缩 方差下界",
+                                                 "fisher information"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "信息矩阵",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "样本中关于参数的信息可被压缩、改进或下界刻画。",
+                                               "似然分解、条件期望改进和信息量矩阵是常见工具。",
+                                               "这里是多参数情形的信息量矩阵。",
+                                               "信息压缩与方差下界是核心。",
+                                               "英文标准写法是 information matrix。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "参数信息 压缩 改进 下界",
+                                                 "似然分解 条件期望 信息量矩阵",
+                                                 "多参数 信息量矩阵",
+                                                 "信息压缩 方差下界",
+                                                 "information matrix"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "相合估计",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "未知参数由观测记录构造出的数值来近似。",
+                                               "偏差、均方误差、方差下界和大样本极限刻画优劣。",
+                                               "这里强调满足相合性质的具体估计方法或估计量。",
+                                               "一个数值替代未知参数是核心。",
+                                               "英文标准写法是 consistent estimation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "未知参数 观测记录 近似数值",
+                                                 "偏差 均方误差 方差下界 大样本极限",
+                                                 "估计方法 估计量 相合性质",
+                                                 "数值替代 未知参数",
+                                                 "consistent estimation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "渐近正态性",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "样本中关于参数的信息可被压缩、改进或下界刻画。",
+                                               "似然分解、条件期望改进和信息量矩阵是常见工具。",
+                                               "这里描述标准化估计量趋向正态模型。",
+                                               "信息压缩与方差下界是核心。",
+                                               "英文标准写法是 asymptotic normality。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "参数信息 压缩 改进 下界",
+                                                 "似然分解 条件期望 信息量矩阵",
+                                                 "标准化估计量 正态极限",
+                                                 "信息压缩 方差下界",
+                                                 "asymptotic normality"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "充分性",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "样本中关于参数的信息可被压缩、改进或下界刻画。",
+                                               "似然分解、条件期望改进和信息量矩阵是常见工具。",
+                                               "这里是保留全部参数信息的性质。",
+                                               "信息压缩与方差下界是核心。",
+                                               "英文标准写法是 sufficiency。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "参数信息 压缩 改进 下界",
+                                                 "似然分解 条件期望 信息量矩阵",
+                                                 "保留全部参数信息 性质",
+                                                 "信息压缩 方差下界",
+                                                 "sufficiency"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "完备性",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "样本中关于参数的信息可被压缩、改进或下界刻画。",
+                                               "似然分解、条件期望改进和信息量矩阵是常见工具。",
+                                               "这里是期望恒零推出函数零的性质。",
+                                               "信息压缩与方差下界是核心。",
+                                               "英文标准写法是 completeness。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "参数信息 压缩 改进 下界",
+                                                 "似然分解 条件期望 信息量矩阵",
+                                                 "期望恒零 函数零 性质",
+                                                 "信息压缩 方差下界",
+                                                 "completeness"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "贝叶斯估计",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "参数被看成带先验规律的未知量，并由数据更新。",
+                                               "后验规律结合损失函数给出决策准则。",
+                                               "这里以后验分布和损失准则给出估计。",
+                                               "先验、后验、损失和风险共同出现。",
+                                               "英文标准写法是 bayesian estimation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "参数 先验规律 数据更新",
+                                                 "后验规律 损失函数 决策准则",
+                                                 "后验 损失 估计",
+                                                 "先验 后验 损失 风险",
+                                                 "bayesian estimation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "先验分布",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "参数被看成带先验规律的未知量，并由数据更新。",
+                                               "后验规律结合损失函数给出决策准则。",
+                                               "这里是在看到数据前给参数的规律。",
+                                               "先验、后验、损失和风险共同出现。",
+                                               "英文标准写法是 prior distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "参数 先验规律 数据更新",
+                                                 "后验规律 损失函数 决策准则",
+                                                 "数据前 参数规律",
+                                                 "先验 后验 损失 风险",
+                                                 "prior distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "后验分布",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "参数被看成带先验规律的未知量，并由数据更新。",
+                                               "后验规律结合损失函数给出决策准则。",
+                                               "这里是先验经样本更新后的参数规律。",
+                                               "先验、后验、损失和风险共同出现。",
+                                               "英文标准写法是 posterior distribution。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "参数 先验规律 数据更新",
+                                                 "后验规律 损失函数 决策准则",
+                                                 "样本更新后 参数规律",
+                                                 "先验 后验 损失 风险",
+                                                 "posterior distribution"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "损失函数",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "参数被看成带先验规律的未知量，并由数据更新。",
+                                               "后验规律结合目标概念给出决策准则。",
+                                               "这里给出决策与真实参数之间的代价。",
+                                               "先验、后验、损失和风险共同出现。",
+                                               "英文标准写法是 loss function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "参数 先验规律 数据更新",
+                                                 "后验规律 目标概念 决策准则",
+                                                 "决策 真实参数 代价",
+                                                 "先验 后验 损失 风险",
+                                                 "loss function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "风险函数",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "参数被看成带先验规律的未知量，并由数据更新。",
+                                               "后验规律结合损失函数给出决策准则。",
+                                               "这里是损失对样本分布取期望后的函数。",
+                                               "先验、后验、损失和风险共同出现。",
+                                               "英文标准写法是 risk function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "参数 先验规律 数据更新",
+                                                 "后验规律 损失函数 决策准则",
+                                                 "损失期望 函数",
+                                                 "先验 后验 损失 风险",
+                                                 "risk function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "最小最大估计",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "参数被看成带先验规律的未知量，并由数据更新。",
+                                               "后验规律结合损失函数给出决策准则。",
+                                               "这里最小化最大风险。",
+                                               "先验、后验、损失和风险共同出现。",
+                                               "英文标准写法是 minimax estimation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "参数 先验规律 数据更新",
+                                                 "后验规律 损失函数 决策准则",
+                                                 "最小化 最大风险",
+                                                 "先验 后验 损失 风险",
+                                                 "minimax estimation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "似然函数",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "观测值固定后，模型密度或质量被看成参数的函数。",
+                                               "独立样本下乘积形式转成对数后成为求和形式。",
+                                               "这里直接把密度或质量看成参数函数。",
+                                               "固定数据、改变参数是核心。",
+                                               "英文标准写法是 likelihood function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "观测值固定 密度质量 参数函数",
+                                                 "独立样本 乘积 对数求和",
+                                                 "密度质量 参数函数",
+                                                 "固定数据 改变参数",
+                                                 "likelihood function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "对数似然函数",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "观测值固定后，模型密度或质量被看成参数的函数。",
+                                               "独立样本下乘积形式转成对数后成为求和形式。",
+                                               "这里把乘积似然转成对数求和。",
+                                               "固定数据、改变参数是核心。",
+                                               "英文标准写法是 log likelihood function。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "观测值固定 密度质量 参数函数",
+                                                 "独立样本 乘积 对数求和",
+                                                 "乘积似然 对数求和",
+                                                 "固定数据 改变参数",
+                                                 "log likelihood function"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "似然比检验",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "先给模型命题，再用样本证据作保留或否定的判决。",
+                                               "拒绝域、显著性水平、p 值和功效描述判决规则。",
+                                               "这里比较简单或嵌套命题下的受限与非受限似然比。",
+                                               "命题、统计量和临界规则三者同时出现。",
+                                               "英文标准写法是 likelihood ratio test。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "模型命题 样本证据 判决",
+                                                 "拒绝域 显著性水平 p值 功效",
+                                                 "受限 非受限 似然比",
+                                                 "命题 统计量 临界规则",
+                                                 "likelihood ratio test"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "广义似然比检验",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "先给模型命题，再用样本证据作保留或否定的判决。",
+                                               "拒绝域、显著性水平、p 值和功效描述判决规则。",
+                                               "这里在复合命题下分别取两个参数集合上的最大似然再作比。",
+                                               "命题、统计量和临界规则三者同时出现。",
+                                               "英文标准写法是 generalized likelihood ratio test。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "模型命题 样本证据 判决",
+                                                 "拒绝域 显著性水平 p值 功效",
+                                                 "复合命题 两个参数集合 最大似然比",
+                                                 "命题 统计量 临界规则",
+                                                 "generalized likelihood ratio test"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "p值",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "先给模型命题，再用样本证据作保留或否定的判决。",
+                                               "拒绝域、显著性水平、p 值和功效描述判决规则。",
+                                               "这里是观测结果及更极端结果在基准命题下的尾部数值。",
+                                               "命题、统计量和临界规则三者同时出现。",
+                                               "英文标准写法是 p value。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "模型命题 样本证据 判决",
+                                                 "拒绝域 显著性水平 目标概念 功效",
+                                                 "观测更极端 H0尾部数值",
+                                                 "命题 统计量 临界规则",
+                                                 "p value"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "临界值",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "先给模型命题，再用样本证据作保留或否定的判决。",
+                                               "拒绝域、显著性水平、p 值和功效描述判决规则。",
+                                               "这里是统计量进入拒绝域的边界数值。",
+                                               "命题、统计量和临界规则三者同时出现。",
+                                               "英文标准写法是 critical value。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "模型命题 样本证据 判决",
+                                                 "拒绝域 显著性水平 p值 功效",
+                                                 "统计量 边界数值",
+                                                 "命题 统计量 临界规则",
+                                                 "critical value"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "双侧检验",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "先给模型命题，再用样本证据作保留或否定的判决。",
+                                               "拒绝域、显著性水平、p 值和功效描述判决规则。",
+                                               "这里把两端极端偏离都放入拒绝方向。",
+                                               "命题、统计量和临界规则三者同时出现。",
+                                               "英文标准写法是 two sided test。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "模型命题 样本证据 判决",
+                                                 "拒绝域 显著性水平 p值 功效",
+                                                 "两端 极端偏离",
+                                                 "命题 统计量 临界规则",
+                                                 "two sided test"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "单侧检验",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "先给模型命题，再用样本证据作保留或否定的判决。",
+                                               "拒绝域、显著性水平、p 值和功效描述判决规则。",
+                                               "这里只把一个方向的极端偏离放入拒绝方向。",
+                                               "命题、统计量和临界规则三者同时出现。",
+                                               "英文标准写法是 one sided test。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "模型命题 样本证据 判决",
+                                                 "拒绝域 显著性水平 p值 功效",
+                                                 "单方向 极端偏离",
+                                                 "命题 统计量 临界规则",
+                                                 "one sided test"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "拟合优度检验",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "先给模型命题，再用样本证据作保留或否定的判决。",
+                                               "拒绝域、显著性水平、p 值和功效描述判决规则。",
+                                               "这里比较经验频数与理论频数的差距。",
+                                               "命题、统计量和临界规则三者同时出现。",
+                                               "英文标准写法是 goodness of fit test。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "模型命题 样本证据 判决",
+                                                 "拒绝域 显著性水平 p值 功效",
+                                                 "经验频数 理论频数 差距",
+                                                 "命题 统计量 临界规则",
+                                                 "goodness of fit test"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "独立性检验",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "先给模型命题，再用样本证据作保留或否定的判决。",
+                                               "拒绝域、显著性水平、p 值和功效描述判决规则。",
+                                               "这里检验列联结构是否能分解成边缘乘积。",
+                                               "命题、统计量和临界规则三者同时出现。",
+                                               "英文标准写法是 test of independence。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "模型命题 样本证据 判决",
+                                                 "拒绝域 显著性水平 p值 功效",
+                                                 "列联结构 边缘乘积",
+                                                 "命题 统计量 临界规则",
+                                                 "test of independence"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "正态性检验",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "先给模型命题，再用样本证据作保留或否定的判决。",
+                                               "拒绝域、显著性水平、p 值和功效描述判决规则。",
+                                               "这里检验样本来源是否符合钟形连续模型。",
+                                               "命题、统计量和临界规则三者同时出现。",
+                                               "英文标准写法是 normality test。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "模型命题 样本证据 判决",
+                                                 "拒绝域 显著性水平 p值 功效",
+                                                 "样本来源 钟形连续模型",
+                                                 "命题 统计量 临界规则",
+                                                 "normality test"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "符号检验",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "先给模型命题，再用样本证据作保留或否定的判决。",
+                                               "拒绝域、显著性水平、p 值和功效描述判决规则。",
+                                               "这里只保留正负号信息，忽略差值大小。",
+                                               "命题、统计量和临界规则三者同时出现。",
+                                               "英文标准写法是 sign test。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "模型命题 样本证据 判决",
+                                                 "拒绝域 显著性水平 p值 功效",
+                                                 "正负号 忽略大小",
+                                                 "命题 统计量 临界规则",
+                                                 "sign test"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "秩和检验",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "先给模型命题，再用样本证据作保留或否定的判决。",
+                                               "拒绝域、显著性水平、p 值和功效描述判决规则。",
+                                               "这里把观测值换成秩后比较两组位置。",
+                                               "命题、统计量和临界规则三者同时出现。",
+                                               "英文标准写法是 rank sum test。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "模型命题 样本证据 判决",
+                                                 "拒绝域 显著性水平 p值 功效",
+                                                 "秩 两组位置",
+                                                 "命题 统计量 临界规则",
+                                                 "rank sum test"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "秩相关",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "多个变量或分类因素同时出现，目标是降维、分类、关联或调整。",
+                                               "协方差矩阵、距离、列联计数或秩信息提供计算入口。",
+                                               "这里以秩而非原始数值衡量单调关联。",
+                                               "多变量结构和关系提取是核心。",
+                                               "英文标准写法是 rank correlation。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "多变量 分类因素 降维 分类 关联 调整",
+                                                 "协方差矩阵 距离 列联计数 秩信息",
+                                                 "秩 单调关联",
+                                                 "多变量结构 关系提取",
+                                                 "rank correlation"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "协方差分析",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "多个变量或分类因素同时出现，目标是降维、分类、关联或调整。",
+                                               "协方差矩阵、距离、列联计数或秩信息提供计算入口。",
+                                               "这里在比较组效应时加入连续协变量调整。",
+                                               "多变量结构和关系提取是核心。",
+                                               "英文标准写法是 analysis of covariance。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "多变量 分类因素 降维 分类 关联 调整",
+                                                 "协方差矩阵 距离 列联计数 秩信息",
+                                                 "组效应 连续协变量调整",
+                                                 "多变量结构 关系提取",
+                                                 "analysis of covariance"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "多元统计分析",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "多个变量或分类因素同时出现，目标是降维、分类、关联或调整。",
+                                               "协方差矩阵、距离、列联计数或秩信息提供计算入口。",
+                                               "这里泛指多个变量联合建模与推断。",
+                                               "多变量结构和关系提取是核心。",
+                                               "英文标准写法是 multivariate statistical analysis。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "多变量 分类因素 降维 分类 关联 调整",
+                                                 "协方差矩阵 距离 列联计数 秩信息",
+                                                 "多个变量 联合建模",
+                                                 "多变量结构 关系提取",
+                                                 "multivariate statistical analysis"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "主成分分析",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "多个变量或分类因素同时出现，目标是降维、分类、关联或调整。",
+                                               "协方差矩阵、距离、列联计数或秩信息提供计算入口。",
+                                               "这里找最大方差方向完成线性降维。",
+                                               "多变量结构和关系提取是核心。",
+                                               "英文标准写法是 principal component analysis。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "多变量 分类因素 降维 分类 关联 调整",
+                                                 "协方差矩阵 距离 列联计数 秩信息",
+                                                 "最大方差方向 线性降维",
+                                                 "多变量结构 关系提取",
+                                                 "principal component analysis"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "判别分析",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "多个变量或分类因素同时出现，目标是降维、分类、关联或调整。",
+                                               "协方差矩阵、距离、列联计数或秩信息提供计算入口。",
+                                               "这里构造分类边界来判别来源类别。",
+                                               "多变量结构和关系提取是核心。",
+                                               "英文标准写法是 discriminant analysis。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "多变量 分类因素 降维 分类 关联 调整",
+                                                 "协方差矩阵 距离 列联计数 秩信息",
+                                                 "分类边界 来源类别",
+                                                 "多变量结构 关系提取",
+                                                 "discriminant analysis"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "聚类分析",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "多个变量或分类因素同时出现，目标是降维、分类、关联或调整。",
+                                               "协方差矩阵、距离、列联计数或秩信息提供计算入口。",
+                                               "这里按距离或相似度把样本分组。",
+                                               "多变量结构和关系提取是核心。",
+                                               "英文标准写法是 cluster analysis。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "多变量 分类因素 降维 分类 关联 调整",
+                                                 "协方差矩阵 距离 列联计数 秩信息",
+                                                 "距离 相似度 分组",
+                                                 "多变量结构 关系提取",
+                                                 "cluster analysis"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "列联表",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "多个变量或分类因素同时出现，目标是降维、分类、关联或调整。",
+                                               "协方差矩阵、距离、列联计数或秩信息提供计算入口。",
+                                               "这里用交叉频数表描述分类变量关系。",
+                                               "多变量结构和关系提取是核心。",
+                                               "英文标准写法是 contingency table。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "多变量 分类因素 降维 分类 关联 调整",
+                                                 "协方差矩阵 距离 列联计数 秩信息",
+                                                 "交叉频数 分类变量",
+                                                 "多变量结构 关系提取",
+                                                 "contingency table"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "相关系数",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "响应变量与解释变量之间的关系被写成模型和误差项。",
+                                               "系数描述平均变化，残差记录观测与拟合之间的差。",
+                                               "这里是标准化后的两变量线性关联数。",
+                                               "拟合、残差和解释度是核心。",
+                                               "英文标准写法是 correlation coefficient。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "响应变量 解释变量 模型 误差项",
+                                                 "系数 平均变化 残差 拟合差",
+                                                 "标准化 两变量线性关联",
+                                                 "拟合 残差 解释度",
+                                                 "correlation coefficient"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "偏相关系数",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "响应变量与解释变量之间的关系被写成模型和误差项。",
+                                               "系数描述平均变化，残差记录观测与拟合之间的差。",
+                                               "这里在控制其他变量后衡量两变量线性关联。",
+                                               "拟合、残差和解释度是核心。",
+                                               "英文标准写法是 partial correlation coefficient。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "响应变量 解释变量 模型 误差项",
+                                                 "系数 平均变化 残差 拟合差",
+                                                 "控制其他变量 两变量关联",
+                                                 "拟合 残差 解释度",
+                                                 "partial correlation coefficient"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "复相关系数",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "响应变量与解释变量之间的关系被写成模型和误差项。",
+                                               "系数描述平均变化，残差记录观测与拟合之间的差。",
+                                               "这里衡量一个变量与一组变量的整体线性关联。",
+                                               "拟合、残差和解释度是核心。",
+                                               "英文标准写法是 multiple correlation coefficient。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "响应变量 解释变量 模型 误差项",
+                                                 "系数 平均变化 残差 拟合差",
+                                                 "一个变量 一组变量 整体关联",
+                                                 "拟合 残差 解释度",
+                                                 "multiple correlation coefficient"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "残差",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "响应变量与解释变量之间的关系被写成模型和误差项。",
+                                               "系数描述平均变化，目标概念记录观测与拟合之间的差。",
+                                               "这里是观测值减去拟合值的差。",
+                                               "拟合、目标概念和解释度是核心。",
+                                               "英文标准写法是 residual。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "响应变量 解释变量 模型 误差项",
+                                                 "系数 平均变化 目标概念 拟合差",
+                                                 "观测值-拟合值",
+                                                 "拟合 目标概念 解释度",
+                                                 "residual"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "残差平方和",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "响应变量与解释变量之间的关系被写成模型和误差项。",
+                                               "系数描述平均变化，残差记录观测与拟合之间的差。",
+                                               "这里把所有残差平方后求和。",
+                                               "拟合、残差和解释度是核心。",
+                                               "英文标准写法是 residual sum of squares。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "响应变量 解释变量 模型 误差项",
+                                                 "系数 平均变化 残差 拟合差",
+                                                 "残差 平方 求和",
+                                                 "拟合 残差 解释度",
+                                                 "residual sum of squares"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "回归系数",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "响应变量与解释变量之间的关系被写成模型和误差项。",
+                                               "系数描述平均变化，残差记录观测与拟合之间的差。",
+                                               "这里表示解释变量变化一单位时平均响应的改变量。",
+                                               "拟合、残差和解释度是核心。",
+                                               "英文标准写法是 regression coefficient。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "响应变量 解释变量 模型 误差项",
+                                                 "系数 平均变化 残差 拟合差",
+                                                 "一单位变化 平均响应改变量",
+                                                 "拟合 残差 解释度",
+                                                 "regression coefficient"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "决定系数",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "响应变量与解释变量之间的关系被写成模型和误差项。",
+                                               "系数描述平均变化，残差记录观测与拟合之间的差。",
+                                               "这里表示模型解释的变差比例。",
+                                               "拟合、残差和解释度是核心。",
+                                               "英文标准写法是 coefficient of determination。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "响应变量 解释变量 模型 误差项",
+                                                 "系数 平均变化 残差 拟合差",
+                                                 "解释变差比例",
+                                                 "拟合 残差 解释度",
+                                                 "coefficient of determination"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "置信带",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "未知量被随机上下界或随机函数带包围。",
+                                               "覆盖频率、置信系数和区间长度共同描述推断质量。",
+                                               "这里围住的是整条函数曲线，而非单个参数。",
+                                               "随机区间与覆盖解释是核心。",
+                                               "英文标准写法是 confidence band。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "未知量 随机上下界 随机函数带",
+                                                 "覆盖频率 置信系数 区间长度",
+                                                 "整条函数曲线 非单参数",
+                                                 "随机区间 覆盖解释",
+                                                 "confidence band"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "预测区间",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "未知量被随机上下界或随机函数带包围。",
+                                               "覆盖频率、置信系数和区间长度共同描述推断质量。",
+                                               "这里围住未来观测值，额外包含新误差。",
+                                               "随机区间与覆盖解释是核心。",
+                                               "英文标准写法是 prediction interval。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "未知量 随机上下界 随机函数带",
+                                                 "覆盖频率 置信系数 区间长度",
+                                                 "未来观测 新误差",
+                                                 "随机区间 覆盖解释",
+                                                 "prediction interval"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "方差齐性",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "多个组的离散程度被假定相同或接受检验。",
+                                               "方差分析等模型常依赖这一方差结构条件。",
+                                               "检验目标是 σ1^2=σ2^2=...=σk^2。",
+                                               "组间离散尺度一致是核心。",
+                                               "英文标准写法是 homogeneity of variance。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "多组 离散程度 相同",
+                                                 "方差分析 方差结构条件",
+                                                 "σ1^2=σ2^2=...=σk^2",
+                                                 "组间离散尺度一致",
+                                                 "homogeneity of variance"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "单因素方差分析",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "多个组均值差异被转化为变差来源的比较。",
+                                               "总平方和分解成组间、组内以及可能的交互部分。",
+                                               "这里只有一个分类因素，比较多个水平的均值。",
+                                               "变差分解和均方比是核心。",
+                                               "英文标准写法是 one way analysis of variance。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "多组均值差异 变差来源",
+                                                 "总平方和 组间 组内 交互",
+                                                 "一个因素 多水平均值",
+                                                 "变差分解 均方比",
+                                                 "one way analysis of variance"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "双因素方差分析",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "多个组均值差异被转化为变差来源的比较。",
+                                               "总平方和分解成组间、组内以及可能的交互部分。",
+                                               "这里有两个分类因素，并可讨论交互效应。",
+                                               "变差分解和均方比是核心。",
+                                               "英文标准写法是 two way analysis of variance。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "多组均值差异 变差来源",
+                                                 "总平方和 组间 组内 交互",
+                                                 "两个因素 交互效应",
+                                                 "变差分解 均方比",
+                                                 "two way analysis of variance"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "实验设计",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "处理因素、实验单元和观测误差被统一安排。",
+                                               "随机分配削弱系统偏倚，重复和区组控制误差来源。",
+                                               "因素、水平、实验单元和响应变量构成基本设计表。",
+                                               "安排方式直接影响推断可靠性。",
+                                               "英文标准写法是 design of experiments。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "处理因素 实验单元 观测误差",
+                                                 "随机分配 系统偏倚 重复 区组",
+                                                 "因素 水平 实验单元 响应变量",
+                                                 "安排方式 推断可靠性",
+                                                 "design of experiments"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "随机化",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "处理因素、实验单元和观测误差被统一安排。",
+                                               "随机分配削弱系统偏倚，重复和区组控制误差来源。",
+                                               "随机分配让处理组差异不系统依赖潜在混杂因素。",
+                                               "安排方式直接影响推断可靠性。",
+                                               "英文标准写法是 randomization。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "处理因素 实验单元 观测误差",
+                                                 "随机分配 系统偏倚 重复 区组",
+                                                 "随机分配 混杂因素",
+                                                 "安排方式 推断可靠性",
+                                                 "randomization"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "抽样",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "从研究对象全体中选取观测单元，形成后续推断的数据来源。",
+                                               "等可能抽取使每个单位或每个同规模子集机会相同。",
+                                               "抽取规则决定每个单位的入样概率。",
+                                               "选取机制是核心。",
+                                               "英文标准写法是 sampling。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "全体 观测单元 数据来源",
+                                                 "等可能抽取 同规模子集 机会相同",
+                                                 "入样概率 抽取规则",
+                                                 "选取机制",
+                                                 "sampling"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "简单随机样本",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "从研究对象全体中选取观测单元，形成后续推断的数据来源。",
+                                               "等可能抽取使每个单位或每个同规模子集机会相同。",
+                                               "每个同容量子集具有相同被抽中机会。",
+                                               "选取机制是核心。",
+                                               "英文标准写法是 simple random sample。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "全体 观测单元 数据来源",
+                                                 "等可能抽取 同规模子集 机会相同",
+                                                 "同容量子集 等机会",
+                                                 "选取机制",
+                                                 "simple random sample"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "样本矩",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "观测记录的幂次平均描述分布形状。",
+                                               "围绕原点或围绕平均位置会得到不同版本。",
+                                               "形式为 n^{-1}ΣX_i^k。",
+                                               "幂次、中心化和形状信息是核心。",
+                                               "英文标准写法是 sample moment。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "观测记录 幂次平均 形状",
+                                                 "原点 平均位置 不同版本",
+                                                 "n^{-1}ΣX_i^k",
+                                                 "幂次 中心化 形状信息",
+                                                 "sample moment"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "中心矩",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "观测记录的幂次平均描述分布形状。",
+                                               "围绕原点或围绕平均位置会得到不同版本。",
+                                               "总体层面形式为 E[(X-μ)^k]。",
+                                               "幂次、中心化和形状信息是核心。",
+                                               "英文标准写法是 central moment。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "观测记录 幂次平均 形状",
+                                                 "原点 平均位置 不同版本",
+                                                 "总体 E[(X-μ)^k]",
+                                                 "幂次 中心化 形状信息",
+                                                 "central moment"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "样本中心矩",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "观测记录的幂次平均描述分布形状。",
+                                               "围绕原点或围绕平均位置会得到不同版本。",
+                                               "样本层面形式为 n^{-1}Σ(X_i-Xbar)^k。",
+                                               "幂次、中心化和形状信息是核心。",
+                                               "英文标准写法是 sample central moment。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "观测记录 幂次平均 形状",
+                                                 "原点 平均位置 不同版本",
+                                                 "样本 n^{-1}Σ(X_i-Xbar)^k",
+                                                 "幂次 中心化 形状信息",
+                                                 "sample central moment"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "偏度",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "观测记录的幂次平均描述分布形状。",
+                                               "围绕原点或围绕平均位置会得到不同版本。",
+                                               "三阶标准化中心矩刻画左右不对称。",
+                                               "幂次、中心化和形状信息是核心。",
+                                               "英文标准写法是 skewness。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "观测记录 幂次平均 形状",
+                                                 "原点 平均位置 不同版本",
+                                                 "三阶标准化中心矩 不对称",
+                                                 "幂次 中心化 形状信息",
+                                                 "skewness"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "峰度",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "观测记录的幂次平均描述分布形状。",
+                                               "围绕原点或围绕平均位置会得到不同版本。",
+                                               "四阶标准化中心矩刻画尾部厚度和峰形。",
+                                               "幂次、中心化和形状信息是核心。",
+                                               "英文标准写法是 kurtosis。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "观测记录 幂次平均 形状",
+                                                 "原点 平均位置 不同版本",
+                                                 "四阶标准化中心矩 尾部 峰形",
+                                                 "幂次 中心化 形状信息",
+                                                 "kurtosis"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "经验矩",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "观测记录的幂次平均描述分布形状。",
+                                               "围绕原点或围绕平均位置会得到不同版本。",
+                                               "直接以经验分布对幂函数求平均。",
+                                               "幂次、中心化和形状信息是核心。",
+                                               "英文标准写法是 empirical moment。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "观测记录 幂次平均 形状",
+                                                 "原点 平均位置 不同版本",
+                                                 "经验分布 幂函数平均",
+                                                 "幂次 中心化 形状信息",
+                                                 "empirical moment"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "统计推断",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "由有限观测记录推断未知总体规律、参数或未来观测。",
+                                               "估计给出数值或区间，检验给出命题判决。",
+                                               "结论必须附带抽样误差、置信或显著性说明。",
+                                               "从样本到总体的逻辑桥梁是核心。",
+                                               "英文标准写法是 statistical inference。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "有限观测 总体规律 参数 未来观测",
+                                                 "估计 数值区间 检验 命题判决",
+                                                 "抽样误差 置信 显著性",
+                                                 "样本到总体 逻辑桥梁",
+                                                 "statistical inference"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "区间长度",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "未知量被随机上下界或随机函数带包围。",
+                                               "覆盖频率、置信系数和目标概念共同描述推断质量。",
+                                               "定义式由数据函数、参数位置和抽样规律共同确定。",
+                                               "随机区间与覆盖解释是核心。",
+                                               "英文标准写法是 interval length。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "未知量 随机上下界 随机函数带",
+                                                 "覆盖频率 置信系数 目标概念",
+                                                 "数据函数 参数位置 抽样规律",
+                                                 "随机区间 覆盖解释",
+                                                 "interval length"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "覆盖概率",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "未知量被随机上下界或随机函数带包围。",
+                                               "覆盖频率、置信系数和区间长度共同描述推断质量。",
+                                               "这里是真实重复抽样覆盖比例。",
+                                               "随机区间与覆盖解释是核心。",
+                                               "英文标准写法是 coverage probability。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "未知量 随机上下界 随机函数带",
+                                                 "覆盖频率 置信系数 区间长度",
+                                                 "真实覆盖比例",
+                                                 "随机区间 覆盖解释",
+                                                 "coverage probability"
+                                             ]
+                    },
+                    {
+                        "chinese_name":  "枢轴量",
+                        "source_file":  "words/数学/普通模式/mathematical_statistics_terms.csv",
+                        "complete_clues":  [
+                                               "未知量被随机上下界或随机函数带包围。",
+                                               "覆盖频率、置信系数和区间长度共同描述推断质量。",
+                                               "这里的分布不含未知参数，可反解区间端点。",
+                                               "随机区间与覆盖解释是核心。",
+                                               "英文标准写法是 pivot quantity。"
+                                           ],
+                        "fragmented_clues":  [
+                                                 "未知量 随机上下界 随机函数带",
+                                                 "覆盖频率 置信系数 区间长度",
+                                                 "分布不含未知参数 反解端点",
+                                                 "随机区间 覆盖解释",
+                                                 "pivot quantity"
+                                             ]
+                    }
+                ]
+}
