@@ -18,6 +18,31 @@ class BackdropMixin:
         except (TypeError, ValueError):
             return 1.0
 
+    def _backdrop_opacity(self):
+        settings = getattr(self, "player_settings", {}) or {}
+        try:
+            return max(0.0, min(1.0, float(settings.get("backdrop_opacity", 1.0))))
+        except (TypeError, ValueError):
+            return 1.0
+
+    @staticmethod
+    def _hex_to_rgb(color):
+        color = str(color or "#111725").lstrip("#")
+        return tuple(int(color[index:index + 2], 16) for index in (0, 2, 4))
+
+    @staticmethod
+    def _rgb_to_hex(rgb):
+        return "#" + "".join(f"{max(0, min(255, int(value))):02x}" for value in rgb)
+
+    def _fade_color(self, color, opacity_scale=1.0):
+        opacity = self._backdrop_opacity() * opacity_scale
+        if opacity <= 0:
+            return "#111725"
+        bg = self._hex_to_rgb("#111725")
+        fg = self._hex_to_rgb(color)
+        mixed = [bg[i] + (fg[i] - bg[i]) * opacity for i in range(3)]
+        return self._rgb_to_hex(mixed)
+
     def _start_backdrop(self, style, parent=None):
         if parent is None:
             parent = self.container
@@ -70,10 +95,19 @@ class BackdropMixin:
         for offset in range(-extent, extent + step, step):
             x1, y1 = rotate(cx - extent, cy + offset)
             x2, y2 = rotate(cx + extent, cy + offset)
-            canvas.create_line(x1, y1, x2, y2, fill="#1d2a40", width=1)
+            canvas.create_line(x1, y1, x2, y2, fill=self._fade_color("#1d3d63", 0.78), width=1)
             x3, y3 = rotate(cx + offset, cy - extent)
             x4, y4 = rotate(cx + offset, cy + extent)
-            canvas.create_line(x3, y3, x4, y4, fill="#1a2639", width=1)
+            canvas.create_line(x3, y3, x4, y4, fill=self._fade_color("#193454", 0.72), width=1)
+        for radius in (min(width, height) * 0.28, min(width, height) * 0.46):
+            canvas.create_oval(
+                cx - radius,
+                cy - radius * 0.38,
+                cx + radius,
+                cy + radius * 0.38,
+                outline=self._fade_color("#244a78", 0.34),
+                width=1,
+            )
 
     def _draw_drifting_lines(self, canvas, width, height):
         count = max(16, int(max(48, int(width / 21)) * self._backdrop_density()))
@@ -88,7 +122,7 @@ class BackdropMixin:
                 y,
                 x + length,
                 y + 10 + sway * 0.15,
-                fill="#22324c",
+                fill=self._fade_color("#2b5b8d", 0.76),
                 width=1 + index % 2,
             )
 
@@ -99,11 +133,25 @@ class BackdropMixin:
             x = (seed * 11 + math.sin(self.backdrop_phase + index) * 38) % (width + 100) - 50
             y = (seed * 7 + self.backdrop_phase * (12 + index % 5)) % (height + 120) - 60
             size = 2 + index % 4
-            color = "#243451" if index % 3 else "#2b3150"
+            color = self._fade_color("#2d72a8" if index % 3 else "#5261ba", 0.74)
             canvas.create_oval(x, y, x + size, y + size, fill=color, outline="")
             if index % 8 == 0:
-                canvas.create_line(x - 7, y, x + 7, y, fill="#263a58")
-                canvas.create_line(x, y - 7, x, y + 7, fill="#263a58")
+                cross = self._fade_color("#3aa6d8", 0.60)
+                canvas.create_line(x - 7, y, x + 7, y, fill=cross)
+                canvas.create_line(x, y - 7, x, y + 7, fill=cross)
+        for index in range(6):
+            seed = index * 23.4
+            x = (seed * 41 + math.sin(self.backdrop_phase * 0.35 + index) * 80) % width
+            y = (seed * 67 + math.cos(self.backdrop_phase * 0.28 + index) * 54) % height
+            radius = 16 + (index % 3) * 8
+            canvas.create_oval(
+                x - radius,
+                y - radius,
+                x + radius,
+                y + radius,
+                outline=self._fade_color("#2f5f9f", 0.28),
+                width=1,
+            )
 
     def _draw_wind_field(self, canvas, width, height):
         density = math.sqrt(self._backdrop_density())
@@ -115,9 +163,9 @@ class BackdropMixin:
                 x = (col * 96 + seed * 3 + self.backdrop_phase * 54) % (width + 140) - 70
                 y = row * max(height / rows, 1) + 32 + math.sin(self.backdrop_phase * 1.4 + seed) * 16
                 length = 18 + (seed % 5) * 12
-                canvas.create_line(x, y, x + length, y, fill="#1d2c44", width=1)
+                canvas.create_line(x, y, x + length, y, fill=self._fade_color("#235078", 0.68), width=1)
                 if seed % 7 == 0:
-                    canvas.create_line(x + length + 8, y, x + length + 22, y, fill="#233754", width=1)
+                    canvas.create_line(x + length + 8, y, x + length + 22, y, fill=self._fade_color("#3a7cb7", 0.54), width=1)
 
     def _draw_constellation(self, canvas, width, height):
         points = []
@@ -127,9 +175,11 @@ class BackdropMixin:
             x = (seed * 13 + math.sin(self.backdrop_phase * 0.9 + index) * 18) % width
             y = (seed * 17 + math.cos(self.backdrop_phase * 0.7 + index) * 22) % height
             points.append((x, y))
-            canvas.create_rectangle(x, y, x + 3, y + 3, fill="#273756", outline="")
+            size = 2 + (index % 3 == 0)
+            color = self._fade_color("#6ed8ff" if index % 11 == 0 else "#385f96", 0.78)
+            canvas.create_rectangle(x, y, x + size, y + size, fill=color, outline="")
         for index in range(0, len(points) - 1, 3):
             x1, y1 = points[index]
             x2, y2 = points[index + 1]
             if abs(x1 - x2) + abs(y1 - y2) < 260:
-                canvas.create_line(x1, y1, x2, y2, fill="#1e2c45", width=1)
+                canvas.create_line(x1, y1, x2, y2, fill=self._fade_color("#294f7c", 0.50), width=1)

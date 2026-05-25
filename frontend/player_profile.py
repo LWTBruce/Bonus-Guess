@@ -10,10 +10,12 @@ DEFAULT_PLAYER_SETTINGS = {
     "rank_badge_id": "",
     "backdrop_speed": 1.0,
     "backdrop_density": 1.0,
+    "backdrop_opacity": 1.0,
     "font_scale": 1.0,
     "transitions_enabled": True,
     "window_width": 1274,
     "window_height": 806,
+    "tutorial_completed": True,
 }
 
 
@@ -54,9 +56,16 @@ def normalize_player_settings(settings):
 
     data["backdrop_speed"] = clamp_float(data.get("backdrop_speed"), 0.4, 10.0, 1.0)
     data["backdrop_density"] = clamp_float(data.get("backdrop_density"), 0.4, 10.0, 1.0)
-    data["font_scale"] = clamp_float(data.get("font_scale"), 0.85, 1.25, 1.0)
+    data["backdrop_opacity"] = clamp_float(data.get("backdrop_opacity"), 0.0, 1.0, 1.0)
+    data["font_scale"] = clamp_float(data.get("font_scale"), 0.8, 2.0, 1.0)
     data["window_width"] = clamp_int(data.get("window_width"), 936, 2560, DEFAULT_PLAYER_SETTINGS["window_width"])
     data["window_height"] = clamp_int(data.get("window_height"), 598, 1600, DEFAULT_PLAYER_SETTINGS["window_height"])
+    tutorial_completed = data.get("tutorial_completed", DEFAULT_PLAYER_SETTINGS["tutorial_completed"])
+    if isinstance(tutorial_completed, str):
+        tutorial_completed = tutorial_completed.strip().lower() not in {"0", "false", "no", "off", "否", "未完成"}
+    else:
+        tutorial_completed = bool(tutorial_completed)
+    data["tutorial_completed"] = tutorial_completed
     transitions_enabled = data.get("transitions_enabled")
     if isinstance(transitions_enabled, str):
         transitions_enabled = transitions_enabled.strip().lower() not in {"0", "false", "no", "off", "否", "关闭"}

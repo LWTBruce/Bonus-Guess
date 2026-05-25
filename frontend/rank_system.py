@@ -29,8 +29,10 @@ SUBJECT_LABELS = {
 }
 
 RANK_KIND_LABELS = {
-    "free": "自由段位",
+    "free": "限时段位",
+    "timed": "旧限时段位",
     "clue": "线索段位",
+    "crossword": "字谜段位",
 }
 
 
@@ -44,11 +46,23 @@ def rank_by_id(rank_id):
 def subject_label(subject):
     base_subject, rank_kind = split_rank_progress_key(subject)
     label = SUBJECT_LABELS.get(base_subject, str(base_subject or "未知").replace("模式", ""))
-    return f"{label}线索" if rank_kind == "clue" else label
+    if rank_kind == "timed":
+        return f"{label}限时"
+    if rank_kind == "clue":
+        return f"{label}线索"
+    if rank_kind == "crossword":
+        return f"{label}字谜"
+    return label
 
 
 def normalize_rank_kind(rank_kind):
-    return "clue" if rank_kind == "clue" else "free"
+    if rank_kind == "crossword":
+        return "crossword"
+    if rank_kind == "clue":
+        return "clue"
+    if rank_kind == "timed":
+        return "timed"
+    return "free"
 
 
 def rank_kind_label(rank_kind):
@@ -57,13 +71,21 @@ def rank_kind_label(rank_kind):
 
 def rank_progress_key(subject, rank_kind="free"):
     rank_kind = normalize_rank_kind(rank_kind)
+    if rank_kind == "crossword":
+        return f"{subject}::crossword"
+    if rank_kind == "timed":
+        return f"{subject}::timed"
     return f"{subject}::clue" if rank_kind == "clue" else subject
 
 
 def split_rank_progress_key(subject_key):
     text = str(subject_key or "")
     if text.endswith("::clue"):
-        return text[:-7], "clue"
+        return text[:-6], "clue"
+    if text.endswith("::crossword"):
+        return text[:-11], "crossword"
+    if text.endswith("::timed"):
+        return text[:-7], "timed"
     return text, "free"
 
 
@@ -92,7 +114,9 @@ def default_rank_progress():
     subjects = {}
     for subject in ("物理模式", "数学模式"):
         subjects[rank_progress_key(subject, "free")] = {"highest": 0, "passed": {}}
+        subjects[rank_progress_key(subject, "timed")] = {"highest": 0, "passed": {}}
         subjects[rank_progress_key(subject, "clue")] = {"highest": 0, "passed": {}}
+        subjects[rank_progress_key(subject, "crossword")] = {"highest": 0, "passed": {}}
     return {"subjects": subjects}
 
 
@@ -135,6 +159,39 @@ def rank_pass_score(subject_info, rank_id):
         return int(score)
     except (TypeError, ValueError):
         return None
+
+
+def rank_passed_ids(subject_info):
+    passed = (subject_info or {}).get("passed") or {}
+    ids = []
+    for key, value in passed.items():
+        try:
+            rank_id = int(key)
+        except (TypeError, ValueError):
+            continue
+        if 1 <= rank_id <= len(RANK_CHALLENGES) and _rank_pass_entry(value):
+            ids.append(rank_id)
+    if not ids:
+        try:
+            highest = int((subject_info or {}).get("highest") or 0)
+        except (TypeError, ValueError):
+            highest = 0
+        if 1 <= highest <= len(RANK_CHALLENGES):
+            ids.append(highest)
+    return sorted(set(ids))
+
+
+def rank_is_passed(subject_info, rank_id):
+    try:
+        rank_id = int(rank_id)
+    except (TypeError, ValueError):
+        return False
+    return rank_id in set(rank_passed_ids(subject_info))
+
+
+def rank_highest_passed(subject_info):
+    ids = rank_passed_ids(subject_info)
+    return max(ids) if ids else 0
 
 
 def mark_rank_passed(subject, rank_id, rank_kind="free", score=None):
@@ -180,8 +237,14 @@ def rank_badge_name(badge_id):
     subject, rank_kind = split_rank_progress_key(subject_key)
     rank = rank_by_id(rank_id)
     prefix = subject_label(subject)
-    if rank_kind == "clue":
+    if rank_kind == "timed":
+        prefix = f"{prefix}旧限时"
+    elif rank_kind == "free":
+        prefix = f"{prefix}限时"
+    elif rank_kind == "clue":
         prefix = f"{prefix}线索"
+    elif rank_kind == "crossword":
+        prefix = f"{prefix}字谜"
     return f"{prefix} {rank['name']}"
 
 
@@ -190,15 +253,18 @@ def unlocked_rank_badges(progress=None):
     badges = []
     order = [
         rank_progress_key("物理模式", "free"),
+        rank_progress_key("物理模式", "timed"),
         rank_progress_key("物理模式", "clue"),
+        rank_progress_key("物理模式", "crossword"),
         rank_progress_key("数学模式", "free"),
+        rank_progress_key("数学模式", "timed"),
         rank_progress_key("数学模式", "clue"),
+        rank_progress_key("数学模式", "crossword"),
     ]
     all_subjects = progress.get("subjects") or {}
     for subject in [*order, *(key for key in all_subjects if key not in order)]:
         info = all_subjects.get(subject, {})
-        highest = int(info.get("highest") or 0)
-        for rank_id in range(1, highest + 1):
+        for rank_id in rank_passed_ids(info):
             badge_id = rank_badge_id(subject, rank_id)
             badges.append((badge_id, rank_badge_name(badge_id)))
     return badges
@@ -215,10 +281,18 @@ def rank_title_rewards(progress=None):
 
 def draw_rank_badge(canvas, badge_id, width=170, height=34, selected=False):
     canvas.delete("all")
+    scale = max(0.65, height / 34)
+
+    def s(value):
+        return value * scale
+
+    def font_size(value):
+        return max(6, int(round(value * scale)))
+
     subject, rank_id = parse_rank_badge_id(badge_id)
     if not subject or not rank_id:
-        canvas.create_rectangle(2, 2, width - 2, height - 2, outline="#3b4560", fill="#182033", width=2)
-        canvas.create_text(width / 2, height / 2, text="无段位标识", fill="#64708f", font=("Microsoft YaHei UI", 10, "bold"))
+        canvas.create_rectangle(s(2), s(2), width - s(2), height - s(2), outline="#3b4560", fill="#182033", width=max(1, int(round(s(2)))))
+        canvas.create_text(width / 2, height / 2, text="无段位标识", fill="#64708f", font=("Microsoft YaHei UI", font_size(10), "bold"))
         return
     styles = [
         ("#050507", "#2a2f3a", "#f8fafc"),
@@ -239,21 +313,23 @@ def draw_rank_badge(canvas, badge_id, width=170, height=34, selected=False):
     ]
     fill, accent, text_color = styles[max(0, min(rank_id, len(styles)) - 1)]
     outline = "#f8fafc" if selected or rank_id >= 15 else accent
-    canvas.create_rectangle(1, 1, width - 1, height - 1, outline=outline, fill=fill, width=2)
+    canvas.create_rectangle(s(1), s(1), width - s(1), height - s(1), outline=outline, fill=fill, width=max(1, int(round(s(2)))))
     if rank_id >= 12:
         vivid = ["#67e8f9", "#9ff2b2", "#f6d36b", "#ff6b8a", "#c084fc"]
-        stripe_w = max(10, width // 18)
-        for index in range(width // stripe_w + 2):
+        stripe_w = max(s(10), width / 18)
+        for index in range(int(width // stripe_w) + 2):
             color = vivid[(index + rank_id) % len(vivid)]
-            x0 = index * stripe_w - (rank_id % 3) * 3
-            canvas.create_polygon(x0, 3, x0 + stripe_w, 3, x0 + stripe_w - 8, height - 3, x0 - 8, height - 3, fill=color, outline="")
-        canvas.create_rectangle(4, 4, width - 4, height - 4, fill=fill, outline=accent, width=1)
+            x0 = index * stripe_w - (rank_id % 3) * s(3)
+            canvas.create_polygon(x0, s(3), x0 + stripe_w, s(3), x0 + stripe_w - s(8), height - s(3), x0 - s(8), height - s(3), fill=color, outline="")
+        canvas.create_rectangle(s(4), s(4), width - s(4), height - s(4), fill=fill, outline=accent, width=max(1, int(round(s(1)))))
     else:
-        canvas.create_rectangle(4, 4, width - 4, height - 4, outline=accent, width=1)
+        canvas.create_rectangle(s(4), s(4), width - s(4), height - s(4), outline=accent, width=max(1, int(round(s(1)))))
     inner_fill = "#111725" if rank_id != 11 else "#e2e8f0"
     inner_text = text_color
-    canvas.create_rectangle(8, 7, 62, height - 7, fill=inner_fill, outline=accent, width=1)
-    canvas.create_text(35, height / 2, text=f"CLASS {rank_id:02d}", fill=inner_text, font=("Consolas", 8, "bold"))
-    canvas.create_rectangle(66, 7, width - 8, height - 7, fill=inner_fill, outline=accent, width=1)
+    left_right = min(width * 0.40, s(62))
+    left_center = (s(8) + left_right) / 2
+    canvas.create_rectangle(s(8), s(7), left_right, height - s(7), fill=inner_fill, outline=accent, width=max(1, int(round(s(1)))))
+    canvas.create_text(left_center, height / 2, text=f"CLASS {rank_id:02d}", fill=inner_text, font=("Consolas", font_size(8), "bold"))
+    canvas.create_rectangle(left_right + s(4), s(7), width - s(8), height - s(7), fill=inner_fill, outline=accent, width=max(1, int(round(s(1)))))
     label = subject_label(subject)
-    canvas.create_text((width + 58) / 2, height / 2, text=label, fill=inner_text, font=("Microsoft YaHei UI", 10, "bold"))
+    canvas.create_text((width + left_right) / 2, height / 2, text=label, fill=inner_text, font=("Microsoft YaHei UI", font_size(10), "bold"))

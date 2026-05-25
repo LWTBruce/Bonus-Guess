@@ -114,7 +114,42 @@ class TermLibrary:
             terms.extend(self._read_csv(file, seen))
         if not terms:
             raise ValueError("词库为空")
-        return terms, files
+        return self._dedupe_terms_by_chinese(terms), files
+
+    def load_all_for_difficulty(self, difficulty):
+        files = []
+        for base_name in self.MODE_DIRS.values():
+            base = self.root / base_name
+            if not base.exists():
+                continue
+            if difficulty == "混合模式":
+                folders = [p for p in base.iterdir() if p.is_dir()]
+            else:
+                folders = [p for p in base.iterdir() if p.is_dir() and p.name.startswith(difficulty)]
+            for folder in folders:
+                files.extend(sorted(folder.glob("*.csv")))
+        if not files:
+            raise FileNotFoundError(f"没有找到随机 / {difficulty} 的 CSV 词库")
+
+        terms = []
+        seen = set()
+        for file in files:
+            terms.extend(self._read_csv(file, seen))
+        if not terms:
+            raise ValueError("词库为空")
+        return self._dedupe_terms_by_chinese(terms), files
+
+    @staticmethod
+    def _dedupe_terms_by_chinese(terms):
+        unique = []
+        seen = set()
+        for term in terms:
+            key = str(getattr(term, "chinese", "") or "").strip()
+            if not key or key in seen:
+                continue
+            seen.add(key)
+            unique.append(term)
+        return unique
 
     def list_files(self, mode=None):
         modes = [mode] if mode in self.MODE_DIRS else list(self.MODE_DIRS)
@@ -174,6 +209,7 @@ class TermLibrary:
                     initials = row[2].strip().upper()
                     english = row[4].strip()
                     pinyin = row[6].strip()
+                initials = normalize_term_initials(chinese, initials)
                 if not chinese or not initials:
                     continue
                 key = (chinese, initials)
@@ -257,3 +293,13 @@ def chinese_initials(text):
             continue
         result.append(PINYIN_INITIAL_OVERRIDES.get(ch, ""))
     return "".join(result)
+
+
+def normalize_term_initials(chinese, initials):
+    answer = str(chinese or "").strip()
+    raw = str(initials or "").strip().upper()
+    if answer and len(raw) != len(answer):
+        recalculated = chinese_initials(answer).strip().upper()
+        if len(recalculated) == len(answer):
+            return recalculated
+    return raw

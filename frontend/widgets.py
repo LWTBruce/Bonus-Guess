@@ -2,6 +2,22 @@ import math
 import tkinter as tk
 
 
+UI_SCALE = 1.0
+
+
+def set_ui_scale(scale):
+    global UI_SCALE
+    try:
+        value = float(scale)
+    except (TypeError, ValueError):
+        value = 1.0
+    UI_SCALE = max(0.8, min(2.0, value))
+
+
+def scaled_int(value):
+    return max(1, int(round(value * UI_SCALE)))
+
+
 class HoverButton(tk.Frame):
     def __init__(self, parent, text, command, width=260, height=76, accent="#f6d36b"):
         super().__init__(parent, bg=parent["bg"])
@@ -15,12 +31,14 @@ class HoverButton(tk.Frame):
         self.hover_fg = "#fff6b0"
         self.target = 0.0
         self.value = 0.0
-        self.width = width
-        self.height = height
+        self.base_width = width
+        self.base_height = height
+        self.width = scaled_int(width)
+        self.height = scaled_int(height)
         self.canvas = tk.Canvas(
             self,
-            width=width,
-            height=height,
+            width=self.width,
+            height=self.height,
             bd=0,
             highlightthickness=0,
             bg=parent["bg"],
@@ -75,15 +93,17 @@ class HoverButton(tk.Frame):
 
     def _draw(self):
         self.canvas.delete("all")
+        edge = scaled_int(6)
+        line_width = max(1, scaled_int(2))
         if not self.enabled:
             self.canvas.create_rectangle(
-                6,
-                6,
-                self.width - 6,
-                self.height - 6,
+                edge,
+                edge,
+                self.width - edge,
+                self.height - edge,
                 fill="#151b29",
                 outline="#30384e",
-                width=2,
+                width=line_width,
             )
             self.canvas.create_text(
                 self.width / 2,
@@ -94,7 +114,7 @@ class HoverButton(tk.Frame):
             )
             return
         v = self.value
-        pad = 6 - 4 * v
+        pad = scaled_int(6) - scaled_int(4) * v
         bg = self._mix(self.normal_bg, self.hover_bg, v)
         fg = self._mix(self.normal_fg, self.hover_fg, v)
         outline = self._mix("#4a5268", self.accent, v)
@@ -106,7 +126,7 @@ class HoverButton(tk.Frame):
             self.height - pad,
             fill=bg,
             outline=outline,
-            width=2,
+            width=line_width,
         )
         self.canvas.create_text(
             self.width / 2,

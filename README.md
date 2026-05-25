@@ -1,16 +1,34 @@
 # Bonus Guess
 
-《有（x）无奖竞猜》是一个用 Tkinter 写的物理/数学术语竞猜小游戏。游戏会从本地词库中抽取专有名词，玩家根据首字母、掩码或递进线索猜出中文答案，并在不同模式下获得分数、Rating、成就、称号和段位标识。
+《有（x）无奖竞猜》是一个物理/数学术语竞猜小游戏。当前版本是 Tkinter 桌面原型，但已经按网页游戏的产品形态重构了账号、存档和管理员后台：玩家用昵称和密码登录，每个账号拥有独立记录；管理员可以查看全用户数据，并以只读旁观模式进入某个玩家的主页。
 
-## 功能概览
+当前版本：`0.2.17`
 
-- 普通玩法：自由、线索、限时、真随机。
-- 段位玩法：自由段位和线索段位，物理/数学独立进度，共 15 段。
-- 自定义玩法：可选择出题形式、词库、难度、词长、掩码、限时和挑战题数。
-- 记录系统：保存历史答题、提示、分数、Rating、成就和段位进度。
-- 本地词库：`words/` 保存题目，`clues/` 保存线索，支持物理和数学多级分类。
+## 主要功能
 
-## 运行方式
+- 普通玩法：自由、限时、线索、字谜。
+- 随机玩法：合并物理和数学词库，可按难度抽题，也可进入真随机全库抽查。
+- 段位玩法：限时段位、线索段位和字谜段位，物理/数学分别保存进度。
+- 自定义玩法：可配置词库、难度、词长、限时、题数、提示、掩码、线索和字谜参数。
+- 记录系统：保存每局答案、提示、用时、得分、Rating、成就、称号和段位标识。
+- 账号系统：支持登录、注册、切换账号、退出登录、修改密码和昵称唯一校验。
+- 管理员后台：管理员可查看账号列表，选择玩家进入旁观主页或直接查看历史记录。
+- 旁观模式：只读查看玩家主页、历史记录、成就和玩家档案，不能开始游戏或修改数据。
+- 新手教程：新账号首次进入会自动完成一局物理入门教学，设置页可随时重温。
+- 视觉设置：支持背景速度、密度、粒子透明度、字号、窗口大小和页面过场动画。
+
+## 默认管理员
+
+本地首次启动会自动创建管理员账号：
+
+```text
+昵称：Bruce
+密码：test001
+```
+
+Bruce 会保持本机免登录会话。普通玩家注册时昵称不能与已有账号重复，大小写不同也会视为同一个昵称。
+
+## 运行
 
 建议使用 Python 3.10 或更新版本。
 
@@ -20,10 +38,24 @@ cd frontend
 python bonus_guess.py
 ```
 
-Windows 下也可以直接运行：
+Windows 下也可以运行：
 
 ```powershell
 frontend\run_game.bat
+```
+
+当前版本会在桌面创建“有（×）无奖竞猜”快捷方式，目标为 `frontend/run_game.bat`，图标来自 `frontend/assets/bonus_guess.ico`。
+
+## 测试
+
+```powershell
+python -m unittest discover
+```
+
+做全仓库语法检查：
+
+```powershell
+Get-ChildItem -Recurse -Filter *.py | ForEach-Object { python -m py_compile $_.FullName }
 ```
 
 ## 打包
@@ -35,29 +67,50 @@ cd frontend
 build_exe.bat
 ```
 
-构建产物会生成到 `frontend/build/` 和 `frontend/dist/`，这两个目录不进入 Git。
+构建产物会生成到 `frontend/build/` 和 `frontend/dist/`，不进入 Git。
 
 ## 目录结构
 
 ```text
-backend/     词库生成、修复和迁移脚本
+backend/     词库生成、修复、迁移脚本
 clues/       线索 JSON
 docs/        游戏机制和线索写作规范
-frontend/    Tkinter 前端和游戏逻辑
+frontend/    Tkinter 前端、账号、记录、玩法和 UI
+frontend/assets/  窗口、打包和桌面快捷方式使用的图标资产
+tests/       账号系统回归测试
 words/       物理、数学词库 CSV
-record/      本地游玩记录，不进入 Git
-profile/     本地玩家设置和每日轮转状态，不进入 Git
+record/      旧版根记录目录，本地运行状态，不进入 Git
+profile/     本地账号、会话和用户数据，不进入 Git
 ```
+
+账号数据位于 `profile/`：
+
+```text
+profile/accounts.json
+profile/session.json
+profile/users/<account_id>/record/
+profile/users/<account_id>/profile/
+```
+
+## 数据说明
+
+- `accounts.json` 保存账号索引、昵称、密码哈希和管理员标记。
+- `session.json` 保存本机当前免登录账号。
+- 每个用户的 `record/` 保存历史记录、成就和段位进度。
+- 每个用户的 `profile/` 保存玩家设置和每日抽题轮转状态。
+- `tutorial_completed` 保存在玩家设置中；新账号默认为未完成，老账号默认视为已完成。
+- 旧版根目录 `record/` 会在首次创建 Bruce 时迁移到 Bruce 的用户目录，同时仍保留原目录供管理员后台查看。
 
 ## 词库与线索
 
-词库 CSV 需要包含中文名、难度、首字母、英文名和拼音等字段。线索文件按同名 JSON 放在 `clues/` 对应目录中。数学线索的写作要求见：
+词库 CSV 放在 `words/`，线索 JSON 放在 `clues/`。新增或维护词条时，建议同步检查：
 
-- `docs/clue_style_guide_math.md`
-- `docs/game_mechanics.md`
-
-新增词条时要避免和同一学科已有词条重复；线索模式需要同时提供 5 条完整线索和 5 条破碎线索，避免退回 fallback 线索。
+- 中文名、难度、首字母、英文名和拼音字段是否完整。
+- 同一学科下是否有重复词条。
+- 线索模式是否提供 5 条完整线索和 5 条破碎线索。
+- 数学线索规范：`docs/clue_style_guide_math.md`。
+- 总玩法规则：`docs/game_mechanics.md`。
 
 ## Git 说明
 
-仓库只保存源码、文档、词库和线索。本地运行状态、玩家记录、构建产物和 Python 缓存已在 `.gitignore` 中排除。
+仓库只保存源码、文档、词库、线索和测试。本地账号、玩家记录、构建产物、缓存和环境文件由 `.gitignore` 排除。

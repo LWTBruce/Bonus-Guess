@@ -19,14 +19,15 @@ from game_config import (
 
 UNKNOWN_LABEL = "未知"
 DEFAULT_PLAY_MODE = "自由"
-RANDOM_LABEL = "真·随机"
+RANDOM_LABEL = "随机"
 
 
-def load_record_entries():
-    if not RECORD_DIR.exists():
+def load_record_entries(record_dir=None):
+    root = record_dir or RECORD_DIR
+    if not root.exists():
         return []
     entries = []
-    for path in RECORD_DIR.rglob("*.json"):
+    for path in root.rglob("*.json"):
         if path.name in {ACHIEVEMENTS_FILE.name, RANK_PROGRESS_FILE.name}:
             continue
         try:
@@ -51,8 +52,17 @@ def record_datetime(record):
         return datetime.min
 
 
+def is_crossword_rank_rating_record(record):
+    return bool(record.get("crossword_mode")) and record.get("rank_kind") == "crossword"
+
+
 def is_counted_record(record):
-    if record.get("exclude_from_stats") or record.get("custom_mode") or record.get("rank_mode"):
+    crossword_rank_rating = is_crossword_rank_rating_record(record)
+    if record.get("custom_mode"):
+        return False
+    if record.get("rank_mode") and not crossword_rank_rating:
+        return False
+    if record.get("exclude_from_stats") and not crossword_rank_rating:
         return False
     if record.get("finished_by") == "abandoned":
         return False
@@ -62,7 +72,12 @@ def is_counted_record(record):
 
 
 def is_abandoned_record(record):
-    if record.get("exclude_from_stats") or record.get("custom_mode") or record.get("rank_mode"):
+    crossword_rank_rating = is_crossword_rank_rating_record(record)
+    if record.get("custom_mode"):
+        return False
+    if record.get("rank_mode") and not crossword_rank_rating:
+        return False
+    if record.get("exclude_from_stats") and not crossword_rank_rating:
         return False
     if record.get("finished_by") == "abandoned":
         return True
@@ -80,13 +95,15 @@ def _clean_record_label(value, default=UNKNOWN_LABEL):
 
 def normalize_play_mode_label(value, default=DEFAULT_PLAY_MODE):
     text = _clean_record_label(value, default)
-    return "自由段位" if text == "段位" else text
+    if text in {"段位", "自由段位"}:
+        return "限时段位"
+    return text
 
 
 def _looks_random_label(value):
     text = _clean_record_label(value, "")
     normalized = text.replace(" ", "").replace("・", "·").lower()
-    return normalized in {"真·随机", "真随机", "random", "true_random", "truerandom"}
+    return normalized in {"随机", "真·随机", "真随机", "random", "true_random", "truerandom"}
 
 
 def is_random_record(record):
@@ -113,8 +130,17 @@ def record_mode(record):
 def record_play_mode(record):
     if record.get("rank_mode"):
         rank_id = record.get("rank_id") or ""
-        label = "线索段位" if record.get("rank_kind") == "clue" or record.get("play_mode") == "线索段位" else "自由段位"
+        if record.get("rank_kind") == "crossword" or record.get("play_mode") == "字谜段位":
+            label = "字谜段位"
+        elif record.get("rank_kind") == "timed":
+            label = "旧限时段位"
+        elif record.get("rank_kind") == "clue" or record.get("play_mode") == "线索段位":
+            label = "线索段位"
+        else:
+            label = "限时段位"
         return f"{label} Class {int(rank_id):02d}" if str(rank_id).isdigit() else label
+    if record.get("crossword_mode"):
+        return _clean_record_label(record.get("play_mode"), "字谜")
     if record.get("custom_mode"):
         kind = _clean_record_label(record.get("custom_play_kind"), "")
         config = record.get("custom_config") if isinstance(record.get("custom_config"), dict) else {}
@@ -131,7 +157,8 @@ def record_play_mode(record):
     if _looks_random_label(record.get("play_mode")):
         return RANDOM_LABEL
     if _looks_random_label(record.get("mode")):
-        return RANDOM_LABEL
+        play = normalize_play_mode_label(record.get("play_mode"), DEFAULT_PLAY_MODE)
+        return f"{RANDOM_LABEL}-{play}" if play and play != RANDOM_LABEL else RANDOM_LABEL
     return normalize_play_mode_label(record.get("play_mode"), DEFAULT_PLAY_MODE)
 
 
@@ -168,7 +195,7 @@ def record_free_hint_count(record):
 
 def record_library_hint_count(record):
     try:
-        return 1 if int(record.get("used_library_hint") or 0) else 0
+        return max(0, int(record.get("used_library_hint") or 0))
     except (TypeError, ValueError):
         return 0
 
@@ -211,6 +238,8 @@ def weighted_record_score(record):
 
 
 def record_weighted_score(record):
+    if not record.get("exclude_from_stats"):
+        return weighted_record_score(record)
     if "weighted_score" in record:
         try:
             return float(record.get("weighted_score") or 0)
@@ -239,20 +268,25 @@ def record_chart_constant(record):
         "普通": 1.0,
         "困难": 3.3,
         "混合模式": 1.0,
+        "真·随机": 1.0,
     }.get(record.get("difficulty") or "", 0.0)
     play_bonus = {
         "自由": 0.0,
         "限时": 0.25,
         "线索": 0.20,
+        "字谜": 0.35,
+        "随机字谜": 0.45,
         RANDOM_LABEL: 0.40,
     }.get(record_play_mode(record), 0.0)
     if is_random_record(record):
-        play_bonus = max(play_bonus, 0.40)
+        play_bonus = 0.0
     term_difficulty = record_effective_difficulty(record) or 1
     return clamp(0.5 + 1.62 * term_difficulty + difficulty_bonus + play_bonus, 0.5, 20.0)
 
 
 def record_rating_key(record):
+    if record.get("crossword_mode"):
+        return record.get("mode") or "未知", record.get("id") or record_datetime(record).isoformat()
     answer = (
         record.get("selected_answer")
         or record.get("answer")
@@ -264,6 +298,17 @@ def record_rating_key(record):
 
 
 def record_expected_time(record):
+    if record.get("crossword_mode"):
+        try:
+            word_count = int(record.get("crossword_word_count") or 0)
+        except (TypeError, ValueError):
+            word_count = 0
+        try:
+            cell_count = int(record.get("crossword_cell_count") or 0)
+        except (TypeError, ValueError):
+            cell_count = 0
+        term_difficulty = record_effective_difficulty(record) or 5
+        return 20.0 + 8.0 * max(word_count, 1) + 1.2 * max(cell_count, word_count) + 2.0 * term_difficulty
     answer_length = max(len(record.get("selected_answer") or ""), 1)
     term_difficulty = record_effective_difficulty(record) or 5
     return 8.0 + 2.4 * answer_length + 1.6 * term_difficulty
@@ -277,7 +322,11 @@ def record_wrong_attempt_count(record):
 def record_performance_quality(record):
     if not record.get("success"):
         return 0.0
-    score_quality = clamp(record_score(record) / 1000, 0.0, 1.0)
+    try:
+        score_start = float(record.get("score_start") or 1000)
+    except (TypeError, ValueError):
+        score_start = 1000
+    score_quality = clamp(record_score(record) / max(score_start, 1.0), 0.0, 1.0)
     elapsed = float(record.get("elapsed_seconds") or 0)
     expected = record_expected_time(record)
     speed_ratio = (expected - elapsed) / max(expected, 1.0)
@@ -471,9 +520,34 @@ def format_score(value):
     return str(int(value))
 
 
+TERM_LENGTH_WEIGHTS = {
+    1: 0.22,
+    2: 0.55,
+    3: 1.15,
+    4: 1.25,
+}
+
+
+def term_length_weight(term):
+    length = len(getattr(term, "chinese", "") or "")
+    if length <= 0:
+        return 1.0
+    if length >= 5:
+        return 1.35
+    return TERM_LENGTH_WEIGHTS.get(length, 1.0)
+
+
+def choose_term_by_length(terms):
+    weights = [term_length_weight(term) for term in terms]
+    return random.choices(terms, weights=weights, k=1)[0]
+
+
 def choose_term_by_difficulty(terms, gameplay_difficulty):
     weights_by_difficulty = TERM_DIFFICULTY_WEIGHTS.get(gameplay_difficulty, TERM_DIFFICULTY_WEIGHTS["混合模式"])
-    weights = [max(0.001, weights_by_difficulty.get(term.difficulty, 0.001)) for term in terms]
+    weights = [
+        max(0.001, weights_by_difficulty.get(term.difficulty, 0.001)) * term_length_weight(term)
+        for term in terms
+    ]
     return random.choices(terms, weights=weights, k=1)[0]
 
 
@@ -569,9 +643,9 @@ def apply_initial_mask(initials, positions):
     return "".join(masked)
 
 
-def summarize_records(records):
+def summarize_records(records, achievements_data=None):
     counted = [record for record in records if is_counted_record(record)]
-    rating_summary = summarize_rating(counted)
+    rating_summary = summarize_rating(counted, achievements_data=achievements_data)
     abandoned_count = sum(1 for record in records if is_abandoned_record(record))
     total_time = sum(float(record.get("elapsed_seconds") or 0) for record in counted)
     raw_total_score = sum(record_score(record) for record in counted)
@@ -643,11 +717,12 @@ def format_duration(seconds):
     return f"{sec}秒"
 
 
-def read_achievements():
-    if not ACHIEVEMENTS_FILE.exists():
+def read_achievements(path=None):
+    target = path or ACHIEVEMENTS_FILE
+    if not target.exists():
         return {"completed": {}}
     try:
-        data = json.loads(ACHIEVEMENTS_FILE.read_text(encoding="utf-8"))
+        data = json.loads(target.read_text(encoding="utf-8"))
     except Exception:
         return {"completed": {}}
     if not isinstance(data.get("completed"), dict):

@@ -1,4 +1,12 @@
-from rank_system import rank_badge_name, rank_title_rewards
+from game_config import ACHIEVEMENT_CATEGORIES
+from rank_system import (
+    parse_rank_badge_id,
+    rank_badge_name,
+    rank_kind_label,
+    rank_title_rewards,
+    split_rank_progress_key,
+    subject_label,
+)
 
 
 RATING_REWARDS = [
@@ -21,6 +29,7 @@ RATING_REWARDS = [
 
 ACHIEVEMENT_TITLE_REWARDS = [
     ("first_success", "ach_first_success", "首战观测者"),
+    ("first_free_success", "ach_free_first", "自由落体员"),
     ("first_out_of_scope", "ach_out_of_scope", "超纲边境巡逻员"),
     ("no_hint_success", "ach_no_hint", "裸答主义者"),
     ("slow_success", "ach_slow_success", "长考型选手"),
@@ -29,8 +38,25 @@ ACHIEVEMENT_TITLE_REWARDS = [
     ("streak_ten", "ach_streak_ten", "连续性很好"),
     ("masked_success_50", "ach_masked_50", "星号翻译官"),
     ("timed_success_100", "ach_timed_100", "五分钟生产队"),
+    ("clue_success_100", "ach_clue_100", "线索编织者"),
+    ("first_random_success", "ach_random_first", "随机游走者"),
+    ("true_random_success", "ach_true_random", "全库漫游者"),
+    ("first_crossword_success", "ach_crossword_first", "格线观测者"),
+    ("crossword_no_hint_success", "ach_crossword_no_hint", "空格独行者"),
     ("total_score_100000", "ach_score_100000", "积分矿脉持有人"),
     ("play_time_30h", "ach_time_30h", "三十小时常驻民"),
+    ("first_rank_pass", "ach_rank_first", "段位挑战者"),
+    ("first_free_rank_pass", "ach_free_rank_first", "限时段位挑战者"),
+    ("first_timed_rank_pass", "ach_timed_rank_first", "旧限时段位挑战者"),
+    ("first_clue_rank_pass", "ach_clue_rank_first", "线索段位挑战者"),
+    ("first_crossword_rank_pass", "ach_crossword_rank_first", "字谜段位挑战者"),
+    ("crossword_triangle_success", "ach_crossword_triangle", "三角密铺者"),
+    ("crossword_hex_success", "ach_crossword_hex", "六边星图师"),
+    ("rank_class_10_pass", "ach_rank_class_10", "十阶登临者"),
+    ("rank_class_15_pass", "ach_rank_class_15", "顶段抵达者"),
+    ("rank_cheat", "ach_rank_echo", "段位考场的回声"),
+    ("one_char_term", "ach_one_char", "单字宇宙居民"),
+    ("crossword_cheat", "ach_crossword_echo", "格线外的回声"),
     ("backdrop_overdrive", "ach_backdrop", "背景风暴驾驶员"),
 ]
 
@@ -69,10 +95,28 @@ def unlocked_achievement_titles(achievements_data):
     return [reward for reward in ACHIEVEMENT_TITLE_REWARDS if reward[0] in completed]
 
 
+def achievement_title_source_label(achievement_id):
+    for category, ids in ACHIEVEMENT_CATEGORIES:
+        if achievement_id in ids:
+            return category
+    return "成就"
+
+
+def rank_title_source_label(title_reward_id):
+    text = str(title_reward_id or "")
+    if text.startswith("rank_title:"):
+        text = text.split(":", 1)[1]
+    subject_key, _rank_id = parse_rank_badge_id(text)
+    if not subject_key:
+        return "段位"
+    subject, rank_kind = split_rank_progress_key(subject_key)
+    return f"{subject_label(subject)}{rank_kind_label(rank_kind)}"
+
+
 def unlocked_title_options(rating, achievements_data, rank_progress=None):
     options = [(reward_id, name, f"Rating {threshold:g}") for threshold, reward_id, name, _avatar_id in unlocked_rating_rewards(rating)]
-    options.extend((reward_id, name, "成就") for _achievement_id, reward_id, name in unlocked_achievement_titles(achievements_data))
-    options.extend((reward_id, name, "段位") for reward_id, name in rank_title_rewards(rank_progress))
+    options.extend((reward_id, name, achievement_title_source_label(achievement_id)) for achievement_id, reward_id, name in unlocked_achievement_titles(achievements_data))
+    options.extend((reward_id, name, rank_title_source_label(reward_id)) for reward_id, name in rank_title_rewards(rank_progress))
     seen = set()
     unique = []
     for option in options:

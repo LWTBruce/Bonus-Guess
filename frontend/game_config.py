@@ -29,11 +29,13 @@ GAME_MECHANICS_FILE = RESOURCE_DIR / "docs" / "game_mechanics.md"
 TERM_CLUES_DIR = RESOURCE_DIR / "clues"
 TERM_CLUES_FILE = TERM_CLUES_DIR / "term_clues.json"
 WORDS_DIR = RESOURCE_DIR / "words"
+ASSETS_DIR = (RESOURCE_DIR / "assets") if getattr(sys, "frozen", False) else (APP_DIR / "assets")
+APP_ICON_FILE = ASSETS_DIR / "bonus_guess.ico"
 PROFILE_DIR = PROJECT_DIR / "profile"
 PLAYER_SETTINGS_FILE = PROFILE_DIR / "player_settings.json"
 DAILY_TERMS_FILE = PROFILE_DIR / "daily_terms.json"
 
-APP_VERSION = "0.1.22"
+APP_VERSION = "0.2.17"
 TITLE_CN = "有（×）无奖竞猜"
 TITLE_EN = "Bonus-（×）Guess"
 
@@ -42,6 +44,7 @@ ACHIEVEMENTS = [
     ("first_launch", "开幕雷击", "第一次启动游戏"),
     ("entered_game", "我只是看看", "第一次进入任意一局游戏"),
     ("first_success", "首战告捷", "第一次答对题目"),
+    ("first_free_success", "自由落体第一跳", "第一次在自由模式中答对题目"),
     ("three_hints_one_round", "真的想不出来！", "在同一道题中使用三个提示"),
     ("first_out_of_scope", "老师，这题超纲吗", "第一次触发“超纲啦，再想想~”"),
     ("negative_score", "溢出？", "在一道题中获得负分"),
@@ -88,11 +91,38 @@ ACHIEVEMENTS = [
     ("timed_success_500", "五分钟流水线", "限时模式累计答对 500 题"),
     ("timed_time_5h", "倒计时常住民", "限时模式累计用时 5 小时"),
     ("timed_time_30h", "秒针合伙人", "限时模式累计用时 30 小时"),
-    ("first_initial_block", "手离键盘！", "第一次输入题面首字母并触发拦截警告"),
-    ("first_cheat", "二次作案", "同一题第二次输入题面首字母，被判作弊"),
-    ("cheat_three", "输入法背锅三连", "累计触发 3 次题面首字母作弊判定"),
-    ("cheat_ten", "候选框老熟人", "累计触发 10 次题面首字母作弊判定"),
-    ("timed_cheat", "倒计时也敢？", "在限时模式中触发题面首字母作弊判定"),
+    ("first_clue_success", "线索刚刚够用", "第一次在线索模式中答对题目"),
+    ("clue_no_hint_success", "只看一行也行", "只看初始线索答对一题"),
+    ("clue_success_20", "线索串联员", "线索模式累计答对 20 题"),
+    ("clue_success_100", "描述场论家", "线索模式累计答对 100 题"),
+    ("first_random_success", "跨学科第一跃迁", "第一次在随机模式中答对题目"),
+    ("random_success_20", "随机游走稳定了", "随机模式累计答对 20 题"),
+    ("true_random_success", "全库相遇事件", "第一次在真·随机中答对题目"),
+    ("first_initial_block", "手离键盘！", "第一次触发题面首字母拦截彩蛋"),
+    ("first_cheat", "二次作案", "同一题第二次触发题面首字母彩蛋"),
+    ("cheat_three", "输入法背锅三连", "累计触发 3 次题面首字母彩蛋"),
+    ("cheat_ten", "候选框老熟人", "累计触发 10 次题面首字母彩蛋"),
+    ("timed_cheat", "倒计时也敢？", "在限时模式中触发题面首字母彩蛋"),
+    ("first_rank_pass", "初段确认", "第一次通过正式段位挑战"),
+    ("first_free_rank_pass", "限时段位起步", "第一次通过限时段位"),
+    ("first_timed_rank_pass", "旧限时段位起步", "第一次通过旧限时段位"),
+    ("first_clue_rank_pass", "线索段位起步", "第一次通过线索段位"),
+    ("first_crossword_rank_pass", "字谜段位起步", "第一次通过字谜段位"),
+    ("rank_class_5_pass", "五阶入场", "通过任意 Class 05 或以上段位"),
+    ("rank_class_10_pass", "十阶登临", "通过任意 Class 10 或以上段位"),
+    ("rank_class_15_pass", "顶段抵达", "通过任意 Class 15 段位"),
+    ("rank_distinct_5", "段位收藏家", "累计解锁 5 个不同正式段位标识"),
+    ("rank_distinct_15", "段位星图", "累计解锁 15 个不同正式段位标识"),
+    ("rank_no_hint_pass", "冷却从未开始", "不使用提示通过一次正式段位"),
+    ("rank_cheat", "段位考场的回声", "在段位挑战中触发隐藏彩蛋"),
+    ("first_crossword_success", "纵横起笔", "第一次完成字谜模式"),
+    ("crossword_words_50", "格线熟手", "在字谜模式中累计填对 50 个词"),
+    ("crossword_crossings_10", "交点密度上升", "完成一局至少 10 个交叉的字谜"),
+    ("crossword_no_hint_success", "空格不空", "不使用任何提示完成一局字谜"),
+    ("crossword_triangle_success", "三角密铺者", "完成一次三角格字谜"),
+    ("crossword_hex_success", "六边星图师", "完成一次六边格字谜"),
+    ("one_char_term", "一个字也算词", "抽到一个字的词"),
+    ("crossword_cheat", "格线外的回声", "在字谜模式中触发隐藏彩蛋"),
     ("backdrop_overdrive", "显卡说它想静静", "将背景速度和背景密度同时调到 10 倍"),
 ]
 
@@ -107,6 +137,9 @@ HIDDEN_ACHIEVEMENT_IDS = {
     "cheat_three",
     "cheat_ten",
     "timed_cheat",
+    "rank_cheat",
+    "one_char_term",
+    "crossword_cheat",
     "backdrop_overdrive",
 }
 
@@ -117,6 +150,7 @@ ACHIEVEMENT_CATEGORIES = [
             "first_launch",
             "entered_game",
             "first_success",
+            "first_free_success",
             "no_hint_success",
             "quick_success",
             "score_guard",
@@ -135,6 +169,10 @@ ACHIEVEMENT_CATEGORIES = [
     (
         "线索与高难",
         [
+            "first_clue_success",
+            "clue_no_hint_success",
+            "clue_success_20",
+            "clue_success_100",
             "effective_over_10_success",
             "effective_over_11_success",
             "effective_over_10_success_20",
@@ -171,6 +209,41 @@ ACHIEVEMENT_CATEGORIES = [
         ],
     ),
     (
+        "随机模式",
+        [
+            "first_random_success",
+            "random_success_20",
+            "true_random_success",
+        ],
+    ),
+    (
+        "段位挑战",
+        [
+            "first_rank_pass",
+            "first_free_rank_pass",
+            "first_timed_rank_pass",
+            "first_clue_rank_pass",
+            "first_crossword_rank_pass",
+            "rank_class_5_pass",
+            "rank_class_10_pass",
+            "rank_class_15_pass",
+            "rank_no_hint_pass",
+            "rank_distinct_5",
+            "rank_distinct_15",
+        ],
+    ),
+    (
+        "字谜模式",
+        [
+            "first_crossword_success",
+            "crossword_no_hint_success",
+            "crossword_triangle_success",
+            "crossword_hex_success",
+            "crossword_crossings_10",
+            "crossword_words_50",
+        ],
+    ),
+    (
         "长期积累",
         [
             "total_score_5000",
@@ -203,6 +276,7 @@ TERM_DIFFICULTY_WEIGHTS = {
     "普通": {1: 1, 2: 2.5, 3: 7, 4: 14, 5: 28, 6: 27, 7: 13, 8: 5.5, 9: 1.5, 10: 0.5},
     "困难": {1: 0.2, 2: 0.5, 3: 1, 4: 2.5, 5: 5, 6: 9, 7: 16, 8: 27, 9: 23, 10: 15.8},
     "混合模式": {difficulty: 1 for difficulty in range(1, 11)},
+    "真·随机": {difficulty: 1 for difficulty in range(1, 11)},
 }
 
 FREE_HINT_DECAY = {
@@ -211,6 +285,7 @@ FREE_HINT_DECAY = {
     "普通": 0.38,
     "困难": 0.25,
     "混合模式": 0.45,
+    "真·随机": 0.45,
 }
 
 FREE_HINT_ZERO_PROB = {
@@ -219,6 +294,7 @@ FREE_HINT_ZERO_PROB = {
     "普通": 0.60,
     "困难": 0.65,
     "混合模式": 0.60,
+    "真·随机": 0.60,
 }
 
 HINT_COOLDOWN_SECONDS = {
@@ -227,6 +303,7 @@ HINT_COOLDOWN_SECONDS = {
     "普通": 60,
     "困难": 75,
     "混合模式": 60,
+    "真·随机": 60,
 }
 
 MASK_PROBABILITIES = {
