@@ -267,6 +267,7 @@ def record_chart_constant(record):
         "简单": 0.0,
         "普通": 1.0,
         "困难": 3.3,
+        "噩梦": 4.8,
         "混合模式": 1.0,
         "真·随机": 1.0,
     }.get(record.get("difficulty") or "", 0.0)

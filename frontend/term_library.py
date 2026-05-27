@@ -24,7 +24,7 @@ class TermLibrary:
         "物理模式": "物理",
         "数学模式": "数学",
     }
-    DIFFICULTIES = ["入门", "简单", "普通", "困难", "混合模式"]
+    DIFFICULTIES = ["入门", "简单", "普通", "困难", "噩梦", "混合模式"]
     FILE_LABELS = {
         "mechanics_terms.csv": "普通物理力学",
         "electromagnetism_terms.csv": "普通物理电磁学",
@@ -41,9 +41,23 @@ class TermLibrary:
         "核物理与粒子物理_terms.csv": "核物理与粒子物理",
         "广义相对论_terms.csv": "广义相对论",
         "量子场论_terms.csv": "量子场论",
+        "continuum_mechanics_terms.csv": "连续介质力学",
+        "cosmology_terms.csv": "宇宙学",
+        "quantum_information_terms.csv": "量子信息",
+        "superstring_m_theory_terms.csv": "超弦理论与M理论",
+        "loop_quantum_gravity_terms.csv": "圈量子引力",
+        "conformal_field_theory_terms.csv": "共形场论",
+        "holographic_principle_terms.csv": "全息原理",
+        "topological_quantum_field_theory_terms.csv": "拓扑量子场论",
+        "noncommutative_geometry_physics_terms.csv": "非对易几何",
+        "quantum_gravity_black_hole_information_terms.csv": "量子引力与黑洞信息悖论",
+        "advanced_qcd_terms.csv": "进阶QCD",
         "advanced_calculus_terms.csv": "高等微积分",
         "mathematical_analysis_terms.csv": "数学分析",
         "linear_algebra_terms.csv": "线性代数",
+        "analytic_geometry_terms.csv": "解析几何",
+        "elementary_number_theory_terms.csv": "初等数论",
+        "combinatorics_basics_terms.csv": "组合基础",
         "complex_analysis_terms.csv": "复变函数",
         "mathematical_physics_equations_terms.csv": "数学物理方程",
         "partial_differential_equations_terms.csv": "偏微分方程",
@@ -51,6 +65,10 @@ class TermLibrary:
         "numerical_analysis_terms.csv": "数值分析",
         "probability_theory_terms.csv": "概率论",
         "mathematical_statistics_terms.csv": "数理统计",
+        "calculus_of_variations_terms.csv": "变分法",
+        "integral_equations_terms.csv": "积分方程",
+        "vector_tensor_analysis_terms.csv": "向量张量分析",
+        "operations_research_terms.csv": "运筹学",
         "field_theory_terms.csv": "场论",
         "group_theory_terms.csv": "群论",
         "topology_terms.csv": "拓扑学",
@@ -59,6 +77,21 @@ class TermLibrary:
         "functional_analysis_terms.csv": "泛函分析",
         "statistical_inference_terms.csv": "统计推断",
         "measure_and_integration_terms.csv": "测度与积分",
+        "differential_geometry_terms.csv": "微分几何",
+        "algebraic_geometry_terms.csv": "代数几何",
+        "lie_groups_lie_algebras_terms.csv": "李群李代数",
+        "homological_algebra_terms.csv": "同调代数",
+        "operator_algebras_terms.csv": "算子代数",
+        "noncommutative_geometry_terms.csv": "非交换几何",
+        "noncommutative_geometry_math_terms.csv": "非交换几何",
+        "advanced_representation_theory_terms.csv": "表示论（进阶）",
+        "moduli_space_theory_terms.csv": "模空间理论",
+        "arithmetic_geometry_terms.csv": "算术几何",
+        "geometric_analysis_terms.csv": "几何分析",
+        "random_matrix_theory_terms.csv": "随机矩阵理论",
+        "spectral_geometry_terms.csv": "谱几何",
+        "derived_categories_terms.csv": "导范畴",
+        "mathematical_quantum_groups_terms.csv": "数学量子群",
         "high_school_mechanics_terms.csv": "高中物理力学",
         "high_school_electromagnetism_terms.csv": "高中物理电磁学",
         "high_school_thermal_terms.csv": "高中物理热学",
@@ -222,6 +255,10 @@ class TermLibrary:
         return rows
 
     def file_label(self, path):
+        if path.name == "noncommutative_geometry_terms.csv":
+            if any(str(part) == "物理" for part in path.parts):
+                return "非对易几何"
+            return "非交换几何"
         return self.FILE_LABELS.get(path.name, path.stem.replace("_terms", ""))
 
     def scope_text(self, files):

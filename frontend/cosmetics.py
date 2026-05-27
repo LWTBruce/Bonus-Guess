@@ -2,6 +2,7 @@ from game_config import ACHIEVEMENT_CATEGORIES
 from rank_system import (
     parse_rank_badge_id,
     rank_badge_name,
+    rank_badge_short_label,
     rank_kind_label,
     rank_title_rewards,
     split_rank_progress_key,
@@ -109,8 +110,7 @@ def rank_title_source_label(title_reward_id):
     subject_key, _rank_id = parse_rank_badge_id(text)
     if not subject_key:
         return "段位"
-    subject, rank_kind = split_rank_progress_key(subject_key)
-    return f"{subject_label(subject)}{rank_kind_label(rank_kind)}"
+    return f"{rank_badge_short_label(text)}段位"
 
 
 def unlocked_title_options(rating, achievements_data, rank_progress=None):

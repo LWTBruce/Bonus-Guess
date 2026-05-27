@@ -208,6 +208,12 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         self.tutorial_active = False
         self.tutorial_manual = False
         self.tutorial_step = 0
+        self.tutorial_overlay_widgets = []
+        self.tutorial_confirm_button = None
+        self.tutorial_question_panel = None
+        self.tutorial_hint_button = None
+        self.tutorial_library_hint_button = None
+        self.switch_return_account = None
         self.mechanics_tab = "quick"
         self.timed_deadline = None
         self.timed_correct = 0
@@ -222,7 +228,10 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         self.available_title_options = []
         self.settings_title_var = None
         self.settings_title_category_var = None
+        self.settings_title_search_var = None
+        self.settings_title_current_label = None
         self.settings_title_options_frame = None
+        self.settings_title_cards = []
         self.login_nickname_var = None
         self.login_password_var = None
         self.register_nickname_var = None
@@ -334,6 +343,7 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             self.show_login()
 
     def activate_account(self, account):
+        self.switch_return_account = None
         self.spectator_admin_account = None
         self.spectated_account = None
         self.current_account = account
@@ -407,11 +417,20 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         if self.is_spectating():
             return
         self.tutorial_manual = not auto
-        self.tutorial_active = False
-        self.tutorial_step = 0
-        self.show_tutorial_page()
+        self.tutorial_active = True
+        self.tutorial_step = "home"
+        self.selected_subject = "物理模式"
+        self.selected_game_group = "普通"
+        self.selected_rule_mode = "自由"
+        self.selected_play_mode = "自由"
+        self.mode = "物理模式"
+        self.play_mode = "自由"
+        self.true_random_mode = False
+        self.random_group_mode = False
+        self.show_home()
 
     def skip_tutorial(self):
+        self.clear_tutorial_overlay()
         if self.timer_job:
             try:
                 self.after_cancel(self.timer_job)
@@ -425,62 +444,140 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         self.save_tutorial_completed()
         self.show_home()
 
-    def show_tutorial_page(self):
-        self.clear()
-        self._start_backdrop("constellation")
-        frame = tk.Frame(self.container, bg="#111725")
-        frame.pack(fill="both", expand=True, padx=34, pady=28)
-        card = tk.Frame(frame, bg="#182033", highlightbackground="#3b4560", highlightthickness=1)
-        card.place(relx=0.5, rely=0.5, anchor="center", relwidth=0.72, relheight=0.70)
-        steps = [
-            (
-                "欢迎来到有（×）无奖竞猜",
-                [
-                    "主页右上角是玩家档案，会显示昵称、头衔、段位标识和 Rating。",
-                    "主页按钮可以进入开始游戏、历史记录、成就和设置。",
-                    "本教程会带你完成一局物理入门题，结束后不会再次自动出现。",
-                ],
-                "下一步",
-            ),
-            (
-                "先认识模式选择",
-                [
-                    "学科选择决定题库范围：物理或数学。",
-                    "普通玩法里，自由模式是最适合入门的一题一结算练习。",
-                    "难度选择会影响抽到的词条、免费提示和最终 Rating；教程会固定进入物理 / 入门。",
-                ],
-                "继续",
-            ),
-            (
-                "答题页怎么玩",
-                [
-                    "左侧题面会显示首字母或线索；输入框用于填写中文答案。",
-                    "确认会提交答案；提示会揭开字词或追加线索；提示词库会告诉你答案来自哪一类词库。",
-                    "教程题不计入正式 Rating、成就或总积分。准备好后进入物理入门题。",
-                ],
-                "进入教程题",
-            ),
-        ]
-        title, lines, next_text = steps[min(self.tutorial_step, len(steps) - 1)]
-        tk.Label(card, text=title, fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 30, "bold")).pack(anchor="w", padx=48, pady=(42, 18))
-        for line in lines:
-            tk.Label(card, text=self.smart_wrap_text(line, 34), fg="#dce6ff", bg="#182033", justify="left", font=("Microsoft YaHei UI", 14, "bold")).pack(anchor="w", padx=52, pady=8)
-        buttons = tk.Frame(card, bg="#182033")
-        buttons.pack(anchor="w", padx=52, pady=(28, 0))
-        if self.tutorial_step >= len(steps) - 1:
-            command = self.start_tutorial_round
+    def clear_tutorial_overlay(self):
+        for widget in getattr(self, "tutorial_overlay_widgets", []):
+            try:
+                if widget.winfo_exists():
+                    widget.destroy()
+            except tk.TclError:
+                pass
+        self.tutorial_overlay_widgets = []
+
+    def render_tutorial_overlay(self, targets, title, body, next_text=None, next_command=None):
+        if not self.tutorial_active:
+            return
+        self.clear_tutorial_overlay()
+        target_list = list(targets) if isinstance(targets, (list, tuple)) else [targets]
+        self.after(90, lambda: self._place_tutorial_overlay(target_list, title, body, next_text, next_command))
+
+    def _place_tutorial_overlay(self, targets, title, body, next_text=None, next_command=None):
+        if not self.tutorial_active or not self.container.winfo_exists():
+            return
+        live_targets = []
+        for widget in targets:
+            try:
+                if widget and widget.winfo_exists():
+                    live_targets.append(widget)
+            except tk.TclError:
+                pass
+        if not live_targets:
+            return
+        self.clear_tutorial_overlay()
+        self.update_idletasks()
+        root_x = self.container.winfo_rootx()
+        root_y = self.container.winfo_rooty()
+        width = max(self.container.winfo_width(), 1)
+        height = max(self.container.winfo_height(), 1)
+        margin = scaled_int(14)
+        bounds = []
+        for widget in live_targets:
+            try:
+                x = widget.winfo_rootx() - root_x
+                y = widget.winfo_rooty() - root_y
+                bounds.append((x, y, x + widget.winfo_width(), y + widget.winfo_height()))
+            except tk.TclError:
+                continue
+        if not bounds:
+            return
+        left = max(0, min(item[0] for item in bounds) - margin)
+        top = max(0, min(item[1] for item in bounds) - margin)
+        right = min(width, max(item[2] for item in bounds) + margin)
+        bottom = min(height, max(item[3] for item in bounds) + margin)
+
+        def add_block(x, y, w, h, color="#070b13"):
+            if w <= 0 or h <= 0:
+                return
+            block = tk.Frame(self.container, bg=color)
+            block.place(x=x, y=y, width=w, height=h)
+            self.tutorial_overlay_widgets.append(block)
+
+        add_block(0, 0, width, top)
+        add_block(0, bottom, width, height - bottom)
+        add_block(0, top, left, bottom - top)
+        add_block(right, top, width - right, bottom - top)
+        ring = "#f6d36b"
+        add_block(left, max(0, top - 3), right - left, 3, ring)
+        add_block(left, bottom, right - left, 3, ring)
+        add_block(max(0, left - 3), top, 3, bottom - top, ring)
+        add_block(right, top, 3, bottom - top, ring)
+
+        gap = scaled_int(18)
+        edge = scaled_int(24)
+        min_callout_width = scaled_int(340)
+        default_callout_width = min(scaled_int(520), max(min_callout_width, width - scaled_int(72)))
+        space_right = width - right - gap - edge
+        space_left = left - gap - edge
+        callout_width = default_callout_width
+        if space_right >= min_callout_width:
+            callout_width = min(default_callout_width, space_right)
+        elif space_left >= min_callout_width:
+            callout_width = min(default_callout_width, space_left)
+        callout = tk.Frame(self.container, bg="#182033", highlightbackground="#f6d36b", highlightthickness=1)
+        self.tutorial_overlay_widgets.append(callout)
+        tk.Label(callout, text=title, fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 17, "bold")).pack(anchor="w", padx=18, pady=(16, 8))
+        tk.Label(
+            callout,
+            text=self.smart_wrap_text(body, 28),
+            fg="#dce6ff",
+            bg="#182033",
+            justify="left",
+            font=("Microsoft YaHei UI", 11, "bold"),
+        ).pack(anchor="w", padx=18, pady=(0, 12))
+        row = tk.Frame(callout, bg="#182033")
+        row.pack(anchor="w", padx=18, pady=(0, 16))
+        if next_text and next_command:
+            HoverButton(row, next_text, next_command, width=138, height=46, accent="#9ff2b2").grid(row=0, column=0, padx=(0, 10))
+        HoverButton(row, "跳过教程", self.skip_tutorial, width=138, height=46, accent="#ff9b89").grid(row=0, column=1 if next_text else 0, padx=(0, 10))
+        callout.update_idletasks()
+        callout_height = callout.winfo_reqheight()
+        if bottom + gap + callout_height <= height:
+            callout_y = bottom + gap
+            callout_x = min(max(left, edge), max(edge, width - callout_width - edge))
+        elif top - gap - callout_height >= edge:
+            callout_y = top - callout_height - gap
+            callout_x = min(max(left, edge), max(edge, width - callout_width - edge))
+        elif space_right >= min_callout_width:
+            callout_x = right + gap
+            callout_y = min(max(top, edge), max(edge, height - callout_height - edge))
+        elif space_left >= min_callout_width:
+            callout_x = max(edge, left - gap - callout_width)
+            callout_y = min(max(top, edge), max(edge, height - callout_height - edge))
         else:
-            command = lambda: self.advance_tutorial_page()
-        HoverButton(buttons, next_text, command, width=180, height=58, accent="#9ff2b2").grid(row=0, column=0, padx=(0, 14))
-        HoverButton(buttons, "跳过教程", self.skip_tutorial, width=180, height=58, accent="#ff9b89").grid(row=0, column=1, padx=14)
+            callout_y = max(edge, min(height - callout_height - edge, top - callout_height - gap))
+            callout_x = min(max(left, edge), max(edge, width - callout_width - edge))
+        callout.place(x=callout_x, y=callout_y, width=callout_width)
+        for widget in self.tutorial_overlay_widgets:
+            try:
+                widget.lift()
+            except tk.TclError:
+                pass
+
+    def show_tutorial_page(self):
+        self.start_tutorial(auto=not self.tutorial_manual)
 
     def advance_tutorial_page(self):
-        self.tutorial_step += 1
-        self.show_tutorial_page()
+        if self.tutorial_step == "home":
+            self.tutorial_step = "mode"
+            self.show_mode_select()
+        elif self.tutorial_step == "mode":
+            self.tutorial_step = "difficulty"
+            self.show_difficulty()
+        else:
+            self.start_tutorial_round()
 
     def start_tutorial_round(self):
         self.tutorial_active = True
-        self.tutorial_step = 3
+        self.tutorial_step = "question"
         self.selected_subject = "物理模式"
         self.selected_game_group = "普通"
         self.selected_rule_mode = "自由"
@@ -496,15 +593,54 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             return
         box = tk.Frame(parent, bg="#101827", highlightbackground="#f6d36b", highlightthickness=1)
         box.pack(fill="x", padx=36, pady=(8, 0))
-        text = "新手教程：观察题面，在输入框里填写中文答案，再点击确认。提示和词库按钮可以辅助思考。"
+        text = "新手教程：跟着黄色高光操作。教程题会免费体验一次字词提示和一次词库提示。"
         if answer:
-            text += f"  本教程题答案：{answer}"
+            text += f"  本题答案：{answer}"
         tk.Label(box, text=text, fg="#fff2bd", bg="#101827", justify="left", wraplength=1080, font=("Microsoft YaHei UI", 11, "bold")).pack(side="left", fill="x", expand=True, padx=16, pady=10)
         HoverButton(box, "跳过教程", self.skip_tutorial, width=132, height=44, accent="#ff9b89").pack(side="right", padx=12, pady=7)
 
+    def render_tutorial_game_overlay(self):
+        if not self.tutorial_active or not self.current:
+            return
+        answer = self.current.chinese
+        if self.tutorial_step == "question":
+            self.render_tutorial_overlay(
+                self.tutorial_question_panel,
+                "先看题面",
+                "这里是真实答题页。左侧是题面、难度和规则；教程会先带你体验提示与词库提示，再正式输入答案。",
+                next_text="试用提示",
+                next_command=lambda: self.advance_tutorial_game_step("hint"),
+            )
+        elif self.tutorial_step == "hint":
+            self.render_tutorial_overlay(
+                self.tutorial_hint_button,
+                "点击字词提示",
+                "本教程题免费送一次字词提示。正式游戏中过多提示会扣分，提示把答案全部揭完还会让本题失败。",
+            )
+        elif self.tutorial_step == "library":
+            self.render_tutorial_overlay(
+                self.tutorial_library_hint_button,
+                "点击提示词库",
+                "本教程题的词库提示也免费。正式游戏里词库提示通常会扣分，用它来缩小范围，但别太依赖。",
+            )
+        elif self.tutorial_step == "answer":
+            self.render_tutorial_overlay(
+                [self.answer_entry, self.tutorial_confirm_button],
+                "最后输入答案",
+                f"现在把“{answer}”填进输入框并点击“确认”。这道教程题不会计入正式 Rating、成就或总积分。",
+            )
+
+    def advance_tutorial_game_step(self, step):
+        if not self.tutorial_active:
+            return
+        self.tutorial_step = step
+        self.render_tutorial_game_overlay()
+
     def show_tutorial_complete(self, elapsed, record_path):
+        self.clear_tutorial_overlay()
         self.save_tutorial_completed()
         self.tutorial_active = False
+        self.tutorial_step = "complete"
         self.clear()
         self._start_backdrop("constellation")
         frame = tk.Frame(self.container, bg="#111725")
@@ -522,50 +658,76 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             tk.Label(card, text=f"教程记录：{record_display}", fg="#7683a3", bg="#182033", font=("Microsoft YaHei UI", 10)).pack(pady=(6, 16))
         HoverButton(card, "回到主页", self.show_home, width=190, height=62, accent="#9ff2b2").pack(pady=(10, 0))
 
-    def show_login(self):
+    def show_login(self, allow_cancel=False):
         self.clear()
         self._start_backdrop("constellation")
         page = self.make_scroll_frame(self.container)
+        if allow_cancel and self.switch_return_account:
+            back = HoverButton(self.container, "返回", self.cancel_account_switch, width=110, height=48, accent="#8fb6ff")
+            back.place(x=22, y=18)
         shell = tk.Frame(page, bg="#111725")
-        shell.pack(padx=32, pady=(24, 34))
-        self.draw_home_title(shell).pack(pady=(0, 24))
+        shell.pack(fill="x", padx=32, pady=(10, 34))
+        self.draw_home_title(shell, compact=True).pack(pady=(0, 14))
         cards = tk.Frame(shell, bg="#111725")
         cards.pack()
+        stack_cards = scaled_int(1030) > max(self.winfo_width(), int(self.player_settings.get("window_width", 1274))) - 64
 
-        login = WobblePanel(cards)
-        login.grid(row=0, column=0, padx=18, sticky="n")
-        login_content = login.content
-        login.configure(width=430, height=430)
-        tk.Label(login_content, text="登录", fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 24, "bold")).pack(anchor="w", padx=22, pady=(20, 8))
-        tk.Label(login_content, text="回到你的词库轨道。", fg="#9ca8c7", bg="#182033", font=("Microsoft YaHei UI", 11, "bold")).pack(anchor="w", padx=22, pady=(0, 16))
+        def make_account_card(width, height):
+            card = tk.Frame(
+                cards,
+                bg="#182033",
+                highlightbackground="#3b4560",
+                highlightthickness=1,
+                width=width,
+                height=height,
+            )
+            card.grid_propagate(False)
+            content = tk.Frame(card, bg="#182033")
+            content.grid(row=0, column=0, sticky="nsew", padx=22, pady=20)
+            card.grid_columnconfigure(0, weight=1)
+            card.grid_rowconfigure(0, weight=1)
+            return card, content
+
+        login, login_content = make_account_card(max(500, scaled_int(460)), max(390, scaled_int(380)))
+        login.grid(row=0, column=0, padx=18, pady=(0, 20), sticky="n")
+        tk.Label(login_content, text="登录", fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 24, "bold")).pack(anchor="w", pady=(0, 8))
+        tk.Label(login_content, text="回到你的词库轨道。", fg="#9ca8c7", bg="#182033", font=("Microsoft YaHei UI", 11, "bold")).pack(anchor="w", pady=(0, 16))
         self.login_nickname_var = tk.StringVar(value="")
         self.login_password_var = tk.StringVar(value="")
-        login_name_entry = self.account_entry(login_content, "昵称", self.login_nickname_var)
-        login_password_entry = self.account_entry(login_content, "密码", self.login_password_var, show="*")
+        login_name_entry = self.account_entry(login_content, "昵称", self.login_nickname_var, padx=0)
+        login_password_entry = self.account_entry(login_content, "密码", self.login_password_var, show="*", padx=0)
         login_name_entry.bind("<Return>", lambda _event: login_password_entry.focus_set())
         login_password_entry.bind("<Return>", lambda _event: self.login_current_account())
-        HoverButton(login_content, "登录", self.login_current_account, width=250, height=58, accent="#9ff2b2").pack(anchor="w", padx=22, pady=(14, 8))
+        HoverButton(login_content, "登录", self.login_current_account, width=250, height=58, accent="#9ff2b2").pack(anchor="w", pady=(16, 0))
 
-        register = WobblePanel(cards)
-        register.grid(row=0, column=1, padx=18, sticky="n")
-        register_content = register.content
-        register.configure(width=470, height=505)
-        tk.Label(register_content, text="注册", fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 24, "bold")).pack(anchor="w", padx=22, pady=(20, 8))
-        tk.Label(register_content, text="新建账号后会拥有独立 record、成就、段位和设置。", fg="#9ca8c7", bg="#182033", wraplength=320, justify="left", font=("Microsoft YaHei UI", 11, "bold")).pack(anchor="w", padx=22, pady=(0, 16))
+        register, register_content = make_account_card(max(520, scaled_int(480)), max(500, scaled_int(480)))
+        register_row = 1 if stack_cards else 0
+        register_column = 0 if stack_cards else 1
+        register.grid(row=register_row, column=register_column, padx=18, pady=(0, 20), sticky="n")
+        tk.Label(register_content, text="注册", fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 24, "bold")).pack(anchor="w", pady=(0, 8))
+        tk.Label(register_content, text="新建账号后会拥有独立 record、成就、段位和设置。", fg="#9ca8c7", bg="#182033", wraplength=380, justify="left", font=("Microsoft YaHei UI", 11, "bold")).pack(anchor="w", pady=(0, 16))
         self.register_nickname_var = tk.StringVar(value="")
         self.register_password_var = tk.StringVar(value="")
         self.register_confirm_var = tk.StringVar(value="")
-        register_name_entry = self.account_entry(register_content, "昵称", self.register_nickname_var)
-        register_password_entry = self.account_entry(register_content, "密码", self.register_password_var, show="*")
-        register_confirm_entry = self.account_entry(register_content, "确认密码", self.register_confirm_var, show="*")
+        register_name_entry = self.account_entry(register_content, "昵称", self.register_nickname_var, padx=0)
+        register_password_entry = self.account_entry(register_content, "密码", self.register_password_var, show="*", padx=0)
+        register_confirm_entry = self.account_entry(register_content, "确认密码", self.register_confirm_var, show="*", padx=0)
         register_name_entry.bind("<Return>", lambda _event: register_password_entry.focus_set())
         register_password_entry.bind("<Return>", lambda _event: register_confirm_entry.focus_set())
         register_confirm_entry.bind("<Return>", lambda _event: self.register_account())
-        HoverButton(register_content, "注册并进入", self.register_account, width=250, height=58, accent="#8fb6ff").pack(anchor="w", padx=22, pady=(14, 8))
+        HoverButton(register_content, "注册并进入", self.register_account, width=250, height=58, accent="#8fb6ff").pack(anchor="w", pady=(16, 0))
         self.after(80, login_name_entry.focus_set)
 
-    def account_entry(self, parent, label, variable, show=None):
-        tk.Label(parent, text=label, fg="#8fb6ff", bg="#182033", font=("Microsoft YaHei UI", 11, "bold")).pack(anchor="w", padx=22, pady=(8, 4))
+    def cancel_account_switch(self):
+        account = self.switch_return_account or active_account()
+        self.switch_return_account = None
+        if account:
+            self.activate_account(account)
+            return
+        self.show_login()
+
+    def account_entry(self, parent, label, variable, show=None, padx=22):
+        tk.Label(parent, text=label, fg="#8fb6ff", bg="#182033", font=("Microsoft YaHei UI", 11, "bold")).pack(anchor="w", padx=padx, pady=(8, 4))
         entry = tk.Entry(
             parent,
             textvariable=variable,
@@ -577,7 +739,7 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             font=("Microsoft YaHei UI", 13, "bold"),
         )
         entry.configure(highlightthickness=1, highlightbackground="#30384e", highlightcolor="#8fb6ff")
-        entry.pack(fill="x", padx=22, ipady=7)
+        entry.pack(fill="x", padx=padx, ipady=7)
         return entry
 
     def login_current_account(self):
@@ -613,6 +775,7 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             self.exit_spectator_mode()
             return
         clear_active_session()
+        self.switch_return_account = None
         self.current_account = None
         self.player_settings = dict(DEFAULT_PLAYER_SETTINGS)
         self.show_login()
@@ -626,10 +789,10 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         self.tutorial_active = False
         self.tutorial_manual = False
         self.tutorial_step = 0
-        clear_active_session()
-        self.current_account = active_account()
+        self.switch_return_account = self.current_account
+        self.current_account = None
         self.player_settings = dict(DEFAULT_PLAYER_SETTINGS)
-        self.show_login()
+        self.show_login(allow_cancel=True)
 
     def show_change_password(self):
         if self.block_spectator_action("修改密码"):
@@ -671,6 +834,7 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         HoverButton(row, "取消", popup.destroy, width=120, height=52, accent="#ff9b89").grid(row=0, column=1)
 
     def clear(self, transition=True):
+        self.clear_tutorial_overlay()
         if self.timer_job:
             self.after_cancel(self.timer_job)
             self.timer_job = None
@@ -696,6 +860,10 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         self.transition_canvas = None
         self.backdrop_canvas = None
         self.answer_entry_frame = None
+        self.tutorial_confirm_button = None
+        self.tutorial_question_panel = None
+        self.tutorial_hint_button = None
+        self.tutorial_library_hint_button = None
         for child in self.container.winfo_children():
             child.destroy()
         self.transition_token += 1
@@ -815,8 +983,10 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
                 bg="#111725",
                 font=("Microsoft YaHei UI", 11, "bold"),
             ).pack(pady=(0, 22))
+            start_button = None
         else:
-            HoverButton(center, "开始游戏", self.show_mode_select, width=320, height=82).pack(pady=(0, 24))
+            start_button = HoverButton(center, "开始游戏", self.show_mode_select, width=320, height=82)
+            start_button.pack(pady=(0, 24))
         link_row = tk.Frame(center, bg="#111725")
         link_row.pack()
         HoverButton(link_row, "历史记录", self.show_history, width=156, height=56, accent="#8fb6ff").grid(row=0, column=0, padx=8)
@@ -849,10 +1019,24 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             font=("Segoe UI", 10, "bold"),
             justify="right",
         ).place(relx=0.982, rely=0.965, anchor="se")
+        if self.tutorial_active and self.tutorial_step == "home" and start_button:
+            self.render_tutorial_overlay(
+                start_button,
+                "第一步：从主页进入",
+                "这里是正式主页。先点击高光的“开始游戏”，教程会带你进入一局物理入门题。",
+            )
 
-    def draw_home_title(self, parent):
-        width = scaled_int(760)
-        height = scaled_int(156)
+    def draw_home_title(self, parent, compact=False):
+        if compact:
+            width = min(scaled_int(640), 760)
+            height = min(scaled_int(126), 150)
+            title_size = min(scaled_int(32), 40)
+            subtitle_size = min(scaled_int(14), 18)
+        else:
+            width = scaled_int(760)
+            height = scaled_int(156)
+            title_size = scaled_int(38)
+            subtitle_size = scaled_int(17)
         canvas = tk.Canvas(parent, width=width, height=height, bg="#111725", bd=0, highlightthickness=0)
         cx = width / 2
         for index, radius in enumerate((width * 0.42, width * 0.34, width * 0.26)):
@@ -872,8 +1056,8 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             (width * 0.22, height * 0.77, 2, "#8fb6ff"),
         ):
             canvas.create_oval(x, y, x + size, y + size, fill=color, outline="")
-        title_font = ("Microsoft YaHei UI", scaled_int(38), "bold")
-        subtitle_font = ("Segoe UI", scaled_int(17), "bold")
+        title_font = ("Microsoft YaHei UI", title_size, "bold")
+        subtitle_font = ("Segoe UI", subtitle_size, "bold")
         for offset, color in ((5, "#172d4d"), (3, "#245a91"), (1, "#69d8ff")):
             canvas.create_text(cx + offset, height * 0.43 + offset, text=TITLE_CN, fill=color, font=title_font)
         canvas.create_text(cx, height * 0.43, text=TITLE_CN, fill="#fff2bd", font=title_font)
@@ -922,7 +1106,7 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         ).pack(anchor="w", pady=(3, 0))
         widgets = [badge, avatar_canvas, info, *info.winfo_children()]
         if rank_badge_id:
-            badge_width = scaled_int(155)
+            badge_width = scaled_int(190)
             badge_height = scaled_int(30)
             badge_canvas = tk.Canvas(info, width=badge_width, height=badge_height, bg="#182033", bd=0, highlightthickness=0, cursor="hand2")
             badge_canvas.pack(anchor="w", pady=(scaled_int(6), 0))
@@ -1043,8 +1227,34 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         tk.Label(left, text="称号", fg="#c8d2ee", bg="#182033", font=("Microsoft YaHei UI", 12, "bold")).pack(anchor="w", padx=28, pady=(2, 8))
         self.settings_title_var = tk.StringVar(value=current_title_id)
         self.settings_title_category_var = tk.StringVar(value=current_title_category)
-        title_category_grid = tk.Frame(left, bg="#182033")
-        title_category_grid.pack(fill="x", padx=26, pady=(0, 8))
+        self.settings_title_search_var = tk.StringVar(value="")
+        title_panel = tk.Frame(left, bg="#111827", highlightbackground="#30384e", highlightthickness=1)
+        title_panel.pack(fill="x", padx=26, pady=(0, 18))
+        self.settings_title_current_label = tk.Label(
+            title_panel,
+            text=f"当前佩戴：{title_name(current_title_id)}",
+            fg="#fff2bd",
+            bg="#111827",
+            font=("Microsoft YaHei UI", 12, "bold"),
+        )
+        self.settings_title_current_label.pack(anchor="w", padx=14, pady=(12, 6))
+        search_row = tk.Frame(title_panel, bg="#111827")
+        search_row.pack(fill="x", padx=14, pady=(0, 10))
+        tk.Label(search_row, text="搜索", fg="#8fb6ff", bg="#111827", font=("Microsoft YaHei UI", 10, "bold")).pack(side="left", padx=(0, 8))
+        title_search = tk.Entry(
+            search_row,
+            textvariable=self.settings_title_search_var,
+            fg="#fff8dc",
+            bg="#101827",
+            insertbackground="#fff8dc",
+            relief="flat",
+            font=("Microsoft YaHei UI", 11, "bold"),
+        )
+        title_search.configure(highlightthickness=1, highlightbackground="#30384e", highlightcolor="#8fb6ff")
+        title_search.pack(side="left", fill="x", expand=True, ipady=5)
+        self.settings_title_search_var.trace_add("write", lambda *_args: self.render_settings_title_options())
+        title_category_grid = tk.Frame(title_panel, bg="#111827")
+        title_category_grid.pack(fill="x", padx=14, pady=(0, 10))
         title_categories = self.available_title_categories()
         if current_title_category not in title_categories:
             self.settings_title_category_var.set("全部")
@@ -1056,22 +1266,28 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
                 variable=self.settings_title_category_var,
                 command=self.render_settings_title_options,
                 fg="#c8d2ee",
-                bg="#182033",
+                bg="#111827",
                 activeforeground="#fff2bd",
-                activebackground="#182033",
+                activebackground="#20283a",
                 selectcolor="#101827",
                 font=("Microsoft YaHei UI", 10, "bold"),
                 anchor="w",
+                indicatoron=False,
+                relief="flat",
+                padx=8,
+                pady=4,
             )
-            rb.grid(row=index // 3, column=index % 3, sticky="w", padx=(0, 14), pady=2)
-        self.settings_title_options_frame = tk.Frame(left, bg="#182033")
-        self.settings_title_options_frame.pack(fill="x", padx=26, pady=(0, 18))
+            rb.grid(row=index // 3, column=index % 3, sticky="ew", padx=(0, 8), pady=3)
+        for column in range(3):
+            title_category_grid.grid_columnconfigure(column, weight=1, uniform="title_category")
+        self.settings_title_options_frame = tk.Frame(title_panel, bg="#111827")
+        self.settings_title_options_frame.pack(fill="x", padx=14, pady=(0, 14))
         self.render_settings_title_options()
 
         tk.Label(left, text="段位标识", fg="#c8d2ee", bg="#182033", font=("Microsoft YaHei UI", 12, "bold")).pack(anchor="w", padx=28, pady=(0, 8))
         badge_grid = tk.Frame(left, bg="#182033")
         badge_grid.pack(fill="x", padx=26, pady=(0, 16))
-        rank_badge_width = scaled_int(176)
+        rank_badge_width = scaled_int(220)
         rank_badge_height = scaled_int(34)
         self.rank_badge_var = tk.StringVar(value=current_rank_badge_id)
         self.rank_badge_canvases = []
@@ -1308,10 +1524,20 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
     def filtered_title_options(self, category=None):
         category = category or (self.settings_title_category_var.get() if self.settings_title_category_var else "全部")
         if category == "全部":
-            return list(self.available_title_options)
+            options = list(self.available_title_options)
+        else:
+            options = [
+                option for option in self.available_title_options
+                if self.title_category_for_option(option) == category
+            ]
+        query = ""
+        if self.settings_title_search_var:
+            query = self.settings_title_search_var.get().strip().casefold()
+        if not query:
+            return options
         return [
-            option for option in self.available_title_options
-            if self.title_category_for_option(option) == category
+            option for option in options
+            if query in option[1].casefold() or query in option[2].casefold() or query in str(option[0]).casefold()
         ]
 
     def render_settings_title_options(self):
@@ -1320,11 +1546,12 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             return
         for child in frame.winfo_children():
             child.destroy()
+        self.settings_title_cards = []
         for column in range(2):
             frame.grid_columnconfigure(column, weight=1)
         options = self.filtered_title_options()
         if not options:
-            tk.Label(frame, text="暂无可佩戴称号", fg="#64708f", bg="#182033", font=("Microsoft YaHei UI", 10)).grid(row=0, column=0, sticky="w")
+            tk.Label(frame, text="没有匹配的称号", fg="#64708f", bg="#111827", font=("Microsoft YaHei UI", 10)).grid(row=0, column=0, sticky="w", pady=8)
             return
         visible_ids = {option[0] for option in options}
         current_id = self.settings_title_var.get() if self.settings_title_var else ""
@@ -1334,28 +1561,47 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
                 frame,
                 text=f"当前佩戴：{current_name}（在其他分类）",
                 fg="#8fb6ff",
-                bg="#182033",
+                bg="#111827",
                 font=("Microsoft YaHei UI", 10, "bold"),
             ).grid(row=0, column=0, columnspan=2, sticky="w", pady=(0, 5))
             offset = 1
         else:
             offset = 0
         for index, (title_id, title_text, source) in enumerate(options):
-            rb = tk.Radiobutton(
+            selected = title_id == current_id
+            card = tk.Frame(
                 frame,
-                text=f"{title_text}  ·  {source}",
-                value=title_id,
-                variable=self.settings_title_var,
-                fg="#dce6ff",
-                bg="#182033",
-                activeforeground="#fff2bd",
-                activebackground="#182033",
-                selectcolor="#101827",
-                font=("Microsoft YaHei UI", 10, "bold"),
-                anchor="w",
-                justify="left",
+                bg="#20283a" if selected else "#151d2c",
+                highlightbackground="#f6d36b" if selected else "#30384e",
+                highlightthickness=1,
+                cursor="hand2",
             )
-            rb.grid(row=offset + index // 2, column=index % 2, sticky="w", padx=(0, 12), pady=3)
+            card.grid(row=offset + index // 2, column=index % 2, sticky="ew", padx=(0, 10), pady=5)
+            marker = tk.Label(
+                card,
+                text="●" if selected else "○",
+                fg="#f6d36b" if selected else "#64708f",
+                bg=card["bg"],
+                font=("Microsoft YaHei UI", 11, "bold"),
+                cursor="hand2",
+            )
+            marker.pack(side="left", padx=(10, 6), pady=10)
+            text_box = tk.Frame(card, bg=card["bg"], cursor="hand2")
+            text_box.pack(side="left", fill="x", expand=True, padx=(0, 10), pady=8)
+            title_label = tk.Label(text_box, text=title_text, fg="#fff2bd" if selected else "#dce6ff", bg=card["bg"], anchor="w", font=("Microsoft YaHei UI", 10, "bold"), cursor="hand2")
+            title_label.pack(anchor="w", fill="x")
+            source_label = tk.Label(text_box, text=source, fg="#8fb6ff", bg=card["bg"], anchor="w", font=("Microsoft YaHei UI", 9, "bold"), cursor="hand2")
+            source_label.pack(anchor="w", fill="x", pady=(2, 0))
+            for widget in (card, marker, text_box, title_label, source_label):
+                widget.bind("<Button-1>", lambda _event, value=title_id: self.select_title(value))
+            self.settings_title_cards.append((card, title_id))
+
+    def select_title(self, title_id):
+        if self.settings_title_var:
+            self.settings_title_var.set(title_id)
+        if self.settings_title_current_label and self.settings_title_current_label.winfo_exists():
+            self.settings_title_current_label.config(text=f"当前佩戴：{title_name(title_id)}")
+        self.render_settings_title_options()
 
     def select_avatar(self, avatar_id):
         if avatar_id not in self.available_avatar_ids:
@@ -1575,6 +1821,12 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         self.clear(transition=transition)
         self._start_backdrop("lines")
         self._topbar("选择模式", self.show_home)
+        if self.tutorial_active:
+            self.tutorial_step = "mode"
+            self.selected_subject = "物理模式"
+            self.selected_game_group = "普通"
+            self.selected_rule_mode = "自由"
+            self.selected_play_mode = "自由"
         self.normalize_mode_selection_state()
 
         left = tk.Frame(self.container, bg="#111725")
@@ -1652,9 +1904,16 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
                 width=150 if self.selected_game_group != "自定义" else 220,
                 height=54,
             ).grid(row=0, column=index, padx=(0, 12), pady=5, sticky="w")
-        HoverButton(left, "下一步", self.confirm_mode_choice, width=250, height=60, accent="#8fb6ff").pack(anchor="w", pady=(22, 0))
+        next_button = HoverButton(left, "下一步", self.confirm_mode_choice, width=250, height=60, accent="#8fb6ff")
+        next_button.pack(anchor="w", pady=(22, 0))
 
         self.render_mode_explanation(right)
+        if self.tutorial_active and self.tutorial_step == "mode":
+            self.render_tutorial_overlay(
+                next_button,
+                "第二步：选择物理自由练习",
+                "教程已经帮你固定为“物理 / 普通 / 自由”。点击高光的“下一步”，去选择入门难度。",
+            )
 
     def choice_button(self, parent, text, selected, command, accent="#8fb6ff", width=220, height=62, enabled=True):
         button = HoverButton(parent, f"{'◆ ' if selected else ''}{text}", command, width=width, height=height, accent=accent if selected else "#4b5877")
@@ -1684,6 +1943,12 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         self.true_random_mode = False
         self.random_group_mode = False
         self.custom_config = {}
+        if self.tutorial_active:
+            self.tutorial_step = "difficulty"
+            self.selected_subject = "物理模式"
+            self.selected_game_group = "普通"
+            self.selected_rule_mode = "自由"
+            self.selected_play_mode = "自由"
         self.normalize_mode_selection_state()
         selected = self.selected_play_mode
         random_base = self.random_play_mode_base(selected)
@@ -1772,12 +2037,14 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
                 "初始只给一句描述，每次提示会多显示一条线索并扣分。",
                 "普通和困难可能出现破碎线索，使本题总难度上升。",
             ]
+            if random_scope:
+                lines.append("线索的“真·随机”会读取入门到困难词库，暂不纳入噩梦。")
         elif base_selected == "字谜":
             title = "字谜模式"
             lines = [
                 f"从{mode_subject_text}中抽取多词，在矩形网格里尽量按相同汉字交叉。",
                 "右侧填格，左侧按编号输入答案；答对一个词就会把对应汉字填入网格。",
-                "随机字谜会跨物理和数学同难度词库生成；“真·随机”难度会读取全部词库。" if random_scope else "普通和困难可能出现首字母掩码。",
+                "随机字谜会跨物理和数学同难度词库生成；“真·随机”难度会读取全部词库。" if random_scope else "普通、困难和噩梦可能出现首字母掩码。",
             ]
         else:
             title = "自由模式"
@@ -2236,7 +2503,9 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             return "简单"
         if difficulty <= 7:
             return "普通"
-        return "困难"
+        if difficulty <= 9:
+            return "困难"
+        return "噩梦"
 
     def crossword_rank_difficulty_window_for_id(self, rank_id):
         rank_id = max(1, min(15, int(rank_id or 1)))
@@ -2338,6 +2607,16 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
     def show_difficulty(self):
         self.clear()
         self._start_backdrop("particles")
+        if self.tutorial_active:
+            self.tutorial_step = "difficulty"
+            self.selected_subject = "物理模式"
+            self.selected_game_group = "普通"
+            self.selected_rule_mode = "自由"
+            self.selected_play_mode = "自由"
+            self.mode = "物理模式"
+            self.play_mode = "自由"
+            self.true_random_mode = False
+            self.random_group_mode = False
         if self.is_true_random_mode():
             title = f"真·随机 / {self.play_mode}"
         elif self.is_random_group_mode():
@@ -2361,20 +2640,34 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             ("普通", "#f6d36b"),
             ("困难", "#ff9b89"),
         ]
+        if self.play_mode != "线索":
+            options.append(("噩梦", "#c084fc"))
         if self.is_random_group_mode():
             options.append(("真·随机", "#c4b5fd"))
         elif self.play_mode != "字谜":
             options.append(("混合模式", "#9fb7ff"))
+        intro_button = None
         for text, accent in options:
-            HoverButton(
+            button = HoverButton(
                 left,
                 text,
                 lambda d=text: self.start_game(d),
                 width=250,
                 height=66,
                 accent=accent,
-            ).pack(anchor="w", pady=9)
+            )
+            if self.tutorial_active and text != "入门":
+                button.disable("教程固定")
+            button.pack(anchor="w", pady=9)
+            if text == "入门":
+                intro_button = button
         self.render_difficulty_explanation(right, options)
+        if self.tutorial_active and intro_button:
+            self.render_tutorial_overlay(
+                intro_button,
+                "第三步：选择入门难度",
+                "入门题会给你最轻的起步难度。点击高光的“入门”，教程题会在真实答题页打开。",
+            )
 
     def set_crossword_scope(self, mode_value, random_value=False):
         self.mode = mode_value
@@ -2389,13 +2682,14 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         if self.play_mode == "限时":
             mode_text = "限时 5 分钟，答对后自动换题。"
         elif self.play_mode == "线索":
-            mode_text = "不显示首字母，改用五句递进线索作答；每次追加线索都会按规则处理。"
+            mode_text = "不显示首字母，改用五句递进线索作答；每次追加线索都会按规则处理。线索暂不开放噩梦词库。"
         elif self.play_mode == "字谜":
-            mode_text = "多词交叉填格：入门到困难约为 8/11/15/18 格。" + ("随机字谜会跨物理和数学同难度词库；真·随机会读取全部词库。" if random_scope else "")
+            mode_text = "多词交叉填格：入门到噩梦约为 8/11/15/18/22 格。" + ("随机字谜会跨物理和数学同难度词库；真·随机会读取全部词库。" if random_scope else "")
         else:
             mode_text = "单题练习，答完后进入结算。" + ("随机模式会跨物理和数学同难度词库；真·随机会读取全部词库。" if random_scope else "")
         if random_scope and self.play_mode in {"限时", "线索"}:
-            mode_text += " 入门到困难只限定选词难度；真·随机会改为全库等权抽查。"
+            highest = "困难" if self.play_mode == "线索" else "噩梦"
+            mode_text += f" 入门到{highest}只限定选词难度；真·随机会改为全库等权抽查。"
         tk.Label(parent, text="词库介绍", fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 22, "bold")).pack(anchor="w", padx=26, pady=(26, 12))
         tk.Label(parent, text=f"范围：{subject}", fg="#dce6ff", bg="#182033", font=("Microsoft YaHei UI", 13, "bold")).pack(anchor="w", padx=26, pady=5)
         tk.Label(parent, text=self.smart_wrap_text(mode_text, 30), fg="#dce6ff", bg="#182033", justify="left", font=("Microsoft YaHei UI", 12)).pack(anchor="w", padx=26, pady=5)
@@ -2405,8 +2699,9 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             "简单": "偏核心基础概念，难度 3-4 高概率。",
             "普通": "偏大学基础和常见进阶概念，难度 5-6 高概率；首字母题可能出现 *，线索题可能出现破碎线索。",
             "困难": "偏高阶词库和更难想到的概念，难度 8-10 占比高，掩码或破碎线索概率更高。",
+            "噩梦": "偏前沿和高度专门化词库，难度 10 占比最高；自由、限时和字谜的掩码、冷却与免费提示都比困难更严苛。",
             "混合模式": "读取当前学科下全部难度文件，词条难度均匀抽取。",
-            "真·随机": "读取物理和数学的全部词库，按中文答案去重后抽取，重复词不会叠加权重。",
+            "真·随机": "读取物理和数学的全部词库，按中文答案去重后抽取；线索玩法会排除暂未配套线索的噩梦词库。",
         }
         for text, _accent in options:
             tk.Label(parent, text=self.smart_wrap_text(f"{text}：{descriptions[text]}", 32), fg="#c8d2ee", bg="#182033", justify="left", font=("Microsoft YaHei UI", 11)).pack(anchor="w", padx=26, pady=4)
@@ -2414,6 +2709,17 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
     def start_game(self, difficulty):
         if self.block_spectator_action("开始游戏"):
             return
+        if self.tutorial_active:
+            self.tutorial_step = "question"
+            difficulty = "入门"
+            self.selected_subject = "物理模式"
+            self.selected_game_group = "普通"
+            self.selected_rule_mode = "自由"
+            self.selected_play_mode = "自由"
+            self.mode = "物理模式"
+            self.play_mode = "自由"
+            self.true_random_mode = False
+            self.random_group_mode = False
         self.custom_mode = False
         self.rank_mode = False
         self.crossword_mode = False
@@ -2452,8 +2758,28 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         else:
             self.terms, self.library_files = self.library.load(self.mode, difficulty)
             self.scope_text = self.library.scope_text(self.library_files)
+        if self.is_clue_mode():
+            self.remove_nightmare_terms_from_clue_scope(difficulty)
         if not self.terms:
             raise ValueError("词库为空")
+
+    def remove_nightmare_terms_from_clue_scope(self, difficulty):
+        filtered_files = [
+            file
+            for file in self.library_files
+            if not any(str(part).startswith("噩梦") for part in getattr(file, "parts", ()))
+        ]
+        if len(filtered_files) == len(self.library_files):
+            return
+        if not filtered_files:
+            raise ValueError("线索模式暂不开放噩梦难度")
+        self.terms, self.library_files = self.library.load_files(filtered_files)
+        if self.is_true_random_mode() or difficulty == "真·随机":
+            self.scope_text = f"全部物理和数学入门到困难线索词库：{self.library.scope_text(self.library_files)}"
+        elif self.is_random_group_mode():
+            self.scope_text = f"全部物理和数学{difficulty}线索词库：{self.library.scope_text(self.library_files)}"
+        else:
+            self.scope_text = self.library.scope_text(self.library_files)
 
     def crossword_mask_func(self, term):
         initials = getattr(term, "initials", "")
@@ -2517,6 +2843,12 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             if roll < 0.20:
                 return "triangle"
             if roll < 0.40:
+                return "hex"
+        if difficulty == "噩梦":
+            roll = random.random()
+            if roll < 0.25:
+                return "triangle"
+            if roll < 0.55:
                 return "hex"
         return "square"
 
@@ -3978,6 +4310,8 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
     def automatic_mask_difficulty(self):
         if not self.current and self.custom_mode:
             return "普通"
+        if self.current and self.current.difficulty >= 10:
+            return "噩梦"
         if self.current and self.current.difficulty >= 8:
             return "困难"
         if self.current and self.current.difficulty >= 5:
@@ -4030,9 +4364,10 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         return max(0, min(value, max(0, len(self.current.chinese) - 1)))
 
     def max_extra_mask_count(self, term, difficulty):
-        if difficulty not in {"普通", "困难"}:
+        if difficulty not in {"普通", "困难", "噩梦"}:
             return 0
-        return min(3, len(term.initials))
+        limit = 4 if difficulty == "噩梦" else 3
+        return min(limit, len(term.initials))
 
     def max_rank_extra_count(self, term, difficulty):
         if self.rank_kind == "clue":
@@ -4077,7 +4412,8 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         elif self.custom_mode:
             self.current = choose_term_by_length(self.terms)
         elif self.tutorial_active:
-            self.current = choose_term_by_length(self.terms)
+            tutorial_terms = [term for term in self.terms if len(term.chinese) >= 2]
+            self.current = choose_term_by_length(tutorial_terms or self.terms)
         else:
             self.current = choose_daily_term_by_difficulty(self.terms, self.difficulty, self.daily_term_bucket_key())
         if self.current and len(self.current.chinese) == 1 and not self.custom_mode:
@@ -4112,6 +4448,8 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             self.free_hint_quota = self.custom_free_hint_quota()
         else:
             self.free_hint_quota = random_free_hint_quota(len(self.current.chinese), self.difficulty)
+        if self.tutorial_active and not self.is_clue_mode():
+            self.free_hint_quota = max(1, self.free_hint_quota)
         self.free_hint_count = 0
         self.paid_hint_count = 0
         self.attempts = []
@@ -4182,6 +4520,7 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         panel.pack(side="left", fill="both", expand=False, padx=(0, gap_width))
         panel.configure(width=panel_width)
         panel.pack_propagate(False)
+        self.tutorial_question_panel = panel
 
         if self.is_clue_mode():
             tk.Label(panel, text="本题线索", fg="#7ed6ff", bg="#182033", font=("Microsoft YaHei UI", 16, "bold")).pack(anchor="w", padx=48, pady=(34, 10))
@@ -4258,9 +4597,12 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         buttons = tk.Frame(panel, bg="#182033")
         buttons.pack(pady=6)
         button_width = 150 if self.can_reveal_answer() else 170
-        HoverButton(buttons, "确认", self.check_answer, width=button_width, height=58, accent="#9ff2b2").grid(row=0, column=0, padx=10)
+        confirm_button = HoverButton(buttons, "确认", self.check_answer, width=button_width, height=58, accent="#9ff2b2")
+        confirm_button.grid(row=0, column=0, padx=10)
+        self.tutorial_confirm_button = confirm_button
         self.hint_button = HoverButton(buttons, "提示", self.show_hint, width=button_width, height=58, accent="#f6d36b")
         self.hint_button.grid(row=0, column=1, padx=10)
+        self.tutorial_hint_button = self.hint_button
         if self.can_reveal_answer():
             HoverButton(buttons, "揭晓答案", self.reveal_answer, width=button_width, height=58, accent="#ff9b89").grid(row=0, column=2, padx=10)
 
@@ -4338,7 +4680,7 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         elif self.is_clue_mode():
             rule_text = "本题不显示首字母，但会显示答案字数。\n初始只显示第一句线索。\n第一次提示免费，之后从揭晓第三条线索开始扣分。\n共五条线索，普通/困难可能出现破碎线索。\n揭晓答案会记为未答出。"
         else:
-            rule_text = "同首字母的词库内答案都算对。\n普通/困难可能用 * 掩码首字母；* 处不限，只检查未掩码位置。\n当前模式总词库里、但不在本轮范围内的匹配词，才会提示超纲。\n提示揭开全部汉字或主动揭晓答案时，本题失败。"
+            rule_text = "同首字母的词库内答案都算对。\n普通/困难/噩梦可能用 * 掩码首字母；* 处不限，只检查未掩码位置。\n当前模式总词库里、但不在本轮范围内的匹配词，才会提示超纲。\n提示揭开全部汉字或主动揭晓答案时，本题失败。"
         tk.Label(
             side,
             text=rule_text,
@@ -4349,17 +4691,10 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             font=("Microsoft YaHei UI", 11),
         ).pack(anchor="w", pady=(4, 18))
         tk.Label(side, text="范围", fg="#8fb6ff", bg="#111725", font=("Microsoft YaHei UI", 15, "bold")).pack(anchor="w")
-        tk.Label(
-            side,
-            text=self.scope_text,
-            justify="left",
-            fg="#c8d2ee",
-            bg="#111725",
-            wraplength=side_text_width,
-            font=("Microsoft YaHei UI", 11),
-        ).pack(anchor="w", pady=(4, 18))
+        self.render_side_scope_text(side, self.scope_text, side_text_width)
         self.library_hint_button = HoverButton(side, "提示词库", self.show_library_hint, width=170, height=54, accent="#ffbd7e")
         self.library_hint_button.pack(anchor="w", pady=(0, 8))
+        self.tutorial_library_hint_button = self.library_hint_button
         self.library_hint_label = tk.Label(
             side,
             text="",
@@ -4371,6 +4706,48 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         )
         self.library_hint_label.pack(anchor="w")
         self._tick()
+        self.render_tutorial_game_overlay()
+
+    def render_side_scope_text(self, parent, text, side_text_width):
+        text = str(text or "")
+        wrap_chars = max(16, min(46, int(side_text_width / 13)))
+        estimated_lines = 0
+        for line in text.splitlines() or [""]:
+            estimated_lines += max(1, math.ceil(len(line) / wrap_chars))
+        if estimated_lines <= 4:
+            tk.Label(
+                parent,
+                text=text,
+                justify="left",
+                fg="#c8d2ee",
+                bg="#111725",
+                wraplength=side_text_width,
+                font=("Microsoft YaHei UI", 11),
+            ).pack(anchor="w", pady=(4, 18))
+            return None
+
+        visible_lines = 7
+        box = tk.Frame(parent, bg="#101827", highlightbackground="#30384e", highlightthickness=1)
+        box.pack(fill="x", pady=(4, 18))
+        text_widget = tk.Text(
+            box,
+            height=visible_lines,
+            wrap="word",
+            fg="#c8d2ee",
+            bg="#101827",
+            bd=0,
+            relief="flat",
+            insertbackground="#fff8dc",
+            font=("Microsoft YaHei UI", 10),
+        )
+        scrollbar = tk.Scrollbar(box, orient="vertical", command=text_widget.yview)
+        text_widget.configure(yscrollcommand=scrollbar.set)
+        text_widget.insert("1.0", text)
+        text_widget.configure(state="disabled")
+        text_widget.pack(side="left", fill="both", expand=True, padx=(8, 0), pady=8)
+        scrollbar.pack(side="right", fill="y", padx=(4, 6), pady=8)
+        self.bind_scroll_wheel(box, text_widget, units=2)
+        return text_widget
 
     def show_difficulty_for_current_mode(self):
         if self.rank_mode:
@@ -4633,6 +5010,15 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         if not answer:
             self.feedback.config(text="先写一个答案吧。", fg="#f6d36b")
             return
+        if self.tutorial_active:
+            if self.free_hint_count + self.paid_hint_count <= 0:
+                self.feedback.config(text="教程会先带你试用一次字词提示。点击“提示”后再作答。", fg="#f6d36b")
+                self.advance_tutorial_game_step("hint")
+                return
+            if not self.library_hint_used:
+                self.feedback.config(text="还要试用一次“提示词库”。教程中免费，正式局通常会扣分。", fg="#f6d36b")
+                self.advance_tutorial_game_step("library")
+                return
 
         answer_initials = self._lookup_initials(answer)
         attempt = {
@@ -4685,6 +5071,10 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
 
     def library_hint_cost(self):
         return max(90, round(210 * self.difficulty_penalty_factor()))
+
+    @staticmethod
+    def library_hint_penalty_cost(tutorial_active, normal_cost):
+        return 0 if tutorial_active else normal_cost
 
     def character_hint_cost(self, hint_number):
         length = max(len(self.current.chinese), 1)
@@ -4787,13 +5177,20 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             return
         self.library_hint_used = True
         self.library_hint_text = f"这个词属于：{self.current.source_label}"
-        cost = self.library_hint_cost()
-        self.add_score_penalty(cost)
-        self.hint_penalties.append({"type": "library", "cost": cost})
+        normal_cost = self.library_hint_cost()
+        cost = self.library_hint_penalty_cost(self.tutorial_active, normal_cost)
+        if cost:
+            self.add_score_penalty(cost)
+        self.hint_penalties.append({"type": "library", "cost": cost, "normal_cost": normal_cost})
         if self.library_hint_button:
             self.library_hint_button.disable("已提示")
         if self.library_hint_label:
-            self.library_hint_label.config(text=f"{self.library_hint_text}\n-{cost} 分")
+            if self.tutorial_active:
+                self.library_hint_label.config(text=f"{self.library_hint_text}\n教程免费（正式局约 -{normal_cost} 分）")
+            else:
+                self.library_hint_label.config(text=f"{self.library_hint_text}\n-{cost} 分")
+        if self.tutorial_active and self.tutorial_step in {"question", "hint", "library"}:
+            self.advance_tutorial_game_step("answer")
 
     def _lookup_initials(self, answer):
         for term in self.terms:
@@ -4885,6 +5282,8 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             self.fail_game("提示已经把答案全部揭晓，本题失败。")
             return
         self.start_hint_cooldown()
+        if self.tutorial_active and self.tutorial_step in {"question", "hint"}:
+            self.advance_tutorial_game_step("library")
 
     def _render_hints(self):
         for child in self.hint_box.winfo_children():
@@ -5953,7 +6352,7 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         if summary["difficulty_counts"].get(0, 0):
             term_parts.append(f"未知:{summary['difficulty_counts'].get(0, 0)}")
         term_text = "  ".join(term_parts)
-        mode_order = ["入门", "简单", "普通", "困难", "混合模式", "未知"]
+        mode_order = ["入门", "简单", "普通", "困难", "噩梦", "混合模式", "未知"]
         mode_text = "  ".join(f"{name}:{summary['mode_counts'].get(name, 0)}" for name in mode_order if summary["mode_counts"].get(name, 0) or name != "未知")
         tk.Label(dist, text=f"词条难度分布  {term_text}", fg="#c8d2ee", bg="#111725", font=("Microsoft YaHei UI", 11)).pack(anchor="w")
         tk.Label(dist, text=f"选词难度分布  {mode_text}", fg="#c8d2ee", bg="#111725", font=("Microsoft YaHei UI", 11)).pack(anchor="w", pady=(4, 0))
@@ -5980,7 +6379,7 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         total = max(summary["total_count"], 1)
         accuracy = summary["success_count"] / total * 100
         result = summary["answer_results"]
-        mode_order = ["入门", "简单", "普通", "困难", "混合模式", "未知"]
+        mode_order = ["入门", "简单", "普通", "困难", "噩梦", "混合模式", "未知"]
         score_parts = [
             f"{name}:{format_score(summary['mode_scores'].get(name, 0))}"
             for name in mode_order
@@ -5990,7 +6389,7 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             f"答对 {summary['success_count']} 题，未答对 {summary['wrong_count']} 题，中途退出 {summary['abandoned_count']} 次，正确率 {accuracy:.1f}%",
             f"平均用时 {summary['avg_time']:.1f} 秒，平均计入积分 {summary['avg_score']:.1f} 分，平均原始得分 {summary['avg_raw_score']:.1f} 分",
             f"Rating {format_rating(summary['rating'])}，去重B20均值 {format_rating(summary['rating_best_average'])}，R10均值 {format_rating(summary['rating_recent_average'])}",
-            f"最终总积分按入门 0.1、简单 0.2、普通 0.3、困难 0.4、混合模式/真·随机 0.25 加权；随机四玩法按所选难度同口径计分。原始总分 {summary['raw_total_score']} 分",
+            f"最终总积分按入门 0.1、简单 0.2、普通 0.3、困难 0.4、噩梦 0.5、混合模式/真·随机 0.25 加权；随机四玩法按所选难度同口径计分。原始总分 {summary['raw_total_score']} 分",
             f"字词/线索提示：免费字词 {summary['free_char_hints']}，付费字词或线索 {summary['paid_char_hints']}，总计 {summary['char_hints']}",
             f"各模式计入积分：{'  '.join(score_parts) if score_parts else '暂无'}",
             f"提交答案统计：正确 {result.get('success', 0)}，错误 {result.get('wrong', 0)}，超纲 {result.get('out_of_scope', 0)}",
@@ -6001,7 +6400,7 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         dimensions = [
             ("按学科", summary.get("by_subject", {}), ["物理模式", "数学模式", "随机", "真·随机", "未知"]),
             ("按玩法", summary.get("by_play_mode", {}), ["自由", "限时", "线索", "字谜", "随机-自由", "随机-限时", "随机-线索", "随机字谜", "真·随机-自由", "真·随机-限时", "真·随机-线索", "真·随机", "未知"]),
-            ("按选词难度", summary.get("by_difficulty", {}), ["入门", "简单", "普通", "困难", "混合模式", "真·随机", "未知"]),
+            ("按选词难度", summary.get("by_difficulty", {}), ["入门", "简单", "普通", "困难", "噩梦", "混合模式", "真·随机", "未知"]),
         ]
         grid = tk.Frame(box, bg="#182033")
         grid.pack(fill="x", padx=12, pady=(10, 12))

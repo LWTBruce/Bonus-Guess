@@ -1,4 +1,4 @@
-编号,概念中文名,难度,中文首字母,中文首字母串长度,概念英文名,英文字符串长度,概念中文拼音,拼音字符串长度
+﻿编号,概念中文名,难度,中文首字母,中文首字母串长度,概念英文名,英文字符串长度,概念中文拼音,拼音字符串长度
 1,理论力学,6,LLLX,4,theoretical_mechanics,21,lilunlixue,10
 2,质点,6,ZD,2,particle,8,zhidian,7
 3,质点系,6,ZDX,3,system_of_particles,19,zhidianxi,9
@@ -35,7 +35,7 @@
 34,主轴,6,ZZ,2,principal_axis,14,zhuzhou,7
 35,主转动惯量,7,ZZDGL,5,principal_moment_of_inertia,27,zhuzhuandongguanliang,21
 36,欧拉角,6,OLJ,3,euler_angle,11,oulajiao,8
-37,欧拉方程,7,OLFC,4,euler_equation,14,oulafangcheng,13
+37,刚体欧拉方程,7,GTOLFC,6,gangtioulafangcheng,19,gangtioulafangcheng,19
 38,刚体运动,6,GTYD,4,rigid_body_motion,17,gangtiyundong,13
 39,定点转动,6,DDZD,4,rotation_about_fixed_point,26,dingdianzhuandong,17
 40,陀螺,6,TL,2,gyroscope,9,tuoluo,6
@@ -74,8 +74,8 @@
 73,广义能量,6,GYNL,4,generalized_energy,18,guangyinengliang,16
 74,相空间,6,XKJ,3,phase_space,11,xiangkongjian,13
 75,位形空间,6,WXKJ,4,configuration_space,19,weixingkongjian,15
-76,勒让德变换,8,LRDBH,5,legendre_transformation,23,lerangdebianhuan,16
-77,勒让德矩阵,7,LRDJZ,5,legendre_matrix,15,lerangdejuzhen,14
+76,勒让德变换,8,LRDBH,5,legendre_transformation,23,leirangdebianhuan,17
+77,勒让德矩阵,7,LRDJZ,5,legendre_matrix,15,leirangdejuzhen,15
 78,辛结构,6,XJG,3,symplectic_structure,20,xinjiegou,9
 79,辛矩阵,6,XJZ,3,symplectic_matrix,17,xinjuzhen,9
 80,辛变换,7,XBH,3,symplectic_transformation,25,xinbianhuan,11
@@ -83,9 +83,9 @@
 82,可积系统,6,KJXT,4,integrable_system,17,kejixitong,10
 83,常数变易法,7,CSBYF,5,variation_of_constants,22,changshubianyifa,16
 84,诺特定理,7,NTDL,4,noether_theorem,15,nuotedingli,11
-85,空间平移对称性,8,KJPYDCX,7,space_translation_symmetry,26,kongjianpingyiduichenxing,25
-86,时间平移对称性,8,SJPYDCX,7,time_translation_symmetry,25,shijianpingyiduichenxing,24
-87,转动对称性,7,ZDDCX,5,rotational_symmetry,19,zhuandongduichenxing,20
+85,空间平移对称性,8,KJPYDCX,7,space_translation_symmetry,26,kongjianpingyiduichengxing,26
+86,时间平移对称性,8,SJPYDCX,7,time_translation_symmetry,25,shijianpingyiduichengxing,25
+87,转动对称性,7,ZDDCX,5,rotational_symmetry,19,zhuandongduichengxing,21
 88,惯量椭球,6,GLTQ,4,inertia_ellipsoid,17,guanliangtuoqiu,15
 89,惯性主轴,6,GXZZ,4,principal_axis_of_inertia,25,guanxingzhuzhou,15
 90,本体坐标系,7,BTZBX,5,body_fixed_frame,16,bentizuobiaoxi,14
@@ -93,7 +93,7 @@
 92,角速度矢量,7,JSDSL,5,angular_velocity_vector,23,jiaosudushiliang,16
 93,角动量矢量,7,JDLSL,5,angular_momentum_vector,23,jiaodongliangshiliang,21
 94,欧拉运动学方程,9,OLYDXFC,7,euler_kinematic_equation,24,oulayundongxuefangcheng,23
-95,对称陀螺,6,DCTL,4,symmetric_top,13,duichentuoluo,13
+95,对称陀螺,6,DCTL,4,symmetric_top,13,duichengtuoluo,14
 96,重陀螺,6,ZTL,3,heavy_top,9,zhongtuoluo,11
 97,拉莫尔进动,7,LMEJD,5,larmor_precession,17,lamoerjindong,13
 98,平衡位置,6,PHWZ,4,equilibrium_position,20,pinghengweizhi,14

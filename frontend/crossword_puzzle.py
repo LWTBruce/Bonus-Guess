@@ -21,6 +21,8 @@ DIFFICULTY_SIZES = {
     "normal": 15,
     "困难": 18,
     "hard": 18,
+    "噩梦": 22,
+    "nightmare": 22,
 }
 
 NORMAL_SOURCE_WEIGHTS = {
@@ -120,6 +122,8 @@ def size_for_difficulty(difficulty: Any) -> int:
         return 15
     if "困难" in name or "hard" in lowered:
         return 18
+    if "噩梦" in name or "nightmare" in lowered:
+        return 22
     return 15
 
 

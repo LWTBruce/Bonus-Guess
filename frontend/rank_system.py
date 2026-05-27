@@ -234,18 +234,23 @@ def rank_badge_name(badge_id):
     subject_key, rank_id = parse_rank_badge_id(badge_id)
     if not subject_key or not rank_id:
         return "不佩戴"
-    subject, rank_kind = split_rank_progress_key(subject_key)
     rank = rank_by_id(rank_id)
+    return f"{rank_badge_short_label(badge_id)} {rank['name']}"
+
+
+def rank_badge_short_label(badge_id):
+    subject_key, rank_id = parse_rank_badge_id(badge_id)
+    if not subject_key or not rank_id:
+        return "无段位"
+    subject, rank_kind = split_rank_progress_key(subject_key)
     prefix = subject_label(subject)
-    if rank_kind == "timed":
-        prefix = f"{prefix}旧限时"
-    elif rank_kind == "free":
-        prefix = f"{prefix}限时"
-    elif rank_kind == "clue":
-        prefix = f"{prefix}线索"
-    elif rank_kind == "crossword":
-        prefix = f"{prefix}字谜"
-    return f"{prefix} {rank['name']}"
+    suffix = {
+        "free": "限时",
+        "timed": "旧限时",
+        "clue": "线索",
+        "crossword": "字谜",
+    }.get(normalize_rank_kind(rank_kind), "限时")
+    return f"{prefix}-{suffix}"
 
 
 def unlocked_rank_badges(progress=None):
@@ -331,5 +336,5 @@ def draw_rank_badge(canvas, badge_id, width=170, height=34, selected=False):
     canvas.create_rectangle(s(8), s(7), left_right, height - s(7), fill=inner_fill, outline=accent, width=max(1, int(round(s(1)))))
     canvas.create_text(left_center, height / 2, text=f"CLASS {rank_id:02d}", fill=inner_text, font=("Consolas", font_size(8), "bold"))
     canvas.create_rectangle(left_right + s(4), s(7), width - s(8), height - s(7), fill=inner_fill, outline=accent, width=max(1, int(round(s(1)))))
-    label = subject_label(subject)
-    canvas.create_text((width + left_right) / 2, height / 2, text=label, fill=inner_text, font=("Microsoft YaHei UI", font_size(10), "bold"))
+    label = rank_badge_short_label(badge_id)
+    canvas.create_text((width + left_right) / 2, height / 2, text=label, fill=inner_text, font=("Microsoft YaHei UI", font_size(9), "bold"))

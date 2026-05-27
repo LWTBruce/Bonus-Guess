@@ -21,7 +21,7 @@
 20,方差,6,FC,2,variance,8,fangcha,7
 21,标准差,6,BZC,3,standard_deviation,18,biaozhuncha,11
 22,协方差,6,XFC,3,covariance,10,xiefangcha,10
-23,相关系数,6,XGXS,4,correlation_coefficient,23,xiangguanxishu,14
+23,概率相关系数,6,GLXGXS,6,probability_correlation_coefficient,35,gailvxiangguanxishu,19
 24,矩,6,J,1,moment,6,ju,2
 25,特征函数,6,TZHS,4,characteristic_function,23,tezhenghanshu,13
 26,伯努利分布,8,BNLFB,5,bernoulli_distribution,22,bonulifenbu,11
@@ -61,7 +61,7 @@
 60,累积分布函数,8,LJFBHS,6,cumulative_distribution_function,32,leijifenbuhanshu,16
 61,矩母函数,6,JMHS,4,moment_generating_function,26,jumuhanshu,10
 62,概率母函数,7,GLMHS,5,probability_generating_function,31,gailvmuhanshu,13
-63,拉普拉斯变换,8,LPLSBH,6,laplace_transform,17,lapulasibianhuan,16
+63,概率拉普拉斯变换,8,GLLPLSBH,8,probability_laplace_transform,29,gailvlapulasibianhuan,21
 64,切比雪夫不等式,8,QBXFBDS,7,chebyshev_inequality,20,qiebixuefubudengshi,19
 65,马尔可夫不等式,8,MEKFBDS,7,markov_inequality,17,maerkefubudengshi,17
 66,詹森不等式,7,ZSBDS,5,jensen_inequality,17,zhansenbudengshi,16
@@ -70,8 +70,8 @@
 69,负二项分布,8,FEXFB,5,negative_binomial_distribution,30,fuerxiangfenbu,14
 70,伽马分布,7,GMFB,4,gamma_distribution,18,gamafenbu,9
 71,贝塔分布,7,BTFB,4,beta_distribution,17,beitafenbu,10
-72,卡方分布,7,KFFB,4,chi_square_distribution,23,kafangfenbu,11
-73,t分布,7,TFB,3,t_distribution,14,tfenbu,6
+72,中心卡方分布,7,ZXKFFB,6,central_chi_square_distribution,31,zhongxinkafangfenbu,19
+73,学生氏分布,7,XSSFB,5,student_t_distribution,22,xueshengshifenbu,16
 74,柯西分布,7,KXFB,4,cauchy_distribution,19,kexifenbu,9
 75,多项分布,7,DXFB,4,multinomial_distribution,24,duoxiangfenbu,13
 76,二维正态分布,8,EWZTFB,6,bivariate_normal_distribution,29,erweizhengtaifenbu,18
