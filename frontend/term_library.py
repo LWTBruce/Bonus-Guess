@@ -1,4 +1,8 @@
 import csv
+import re
+import sys
+import unicodedata
+from pathlib import Path
 
 try:
     from pypinyin import Style, pinyin
@@ -87,7 +91,7 @@ class TermLibrary:
         "advanced_representation_theory_terms.csv": "表示论（进阶）",
         "moduli_space_theory_terms.csv": "模空间理论",
         "arithmetic_geometry_terms.csv": "算术几何",
-        "geometric_analysis_terms.csv": "几何分析",
+        "advanced_algebraic_geometry_terms.csv": "代数几何（进阶）",
         "random_matrix_theory_terms.csv": "随机矩阵理论",
         "spectral_geometry_terms.csv": "谱几何",
         "derived_categories_terms.csv": "导范畴",
@@ -105,6 +109,7 @@ class TermLibrary:
 
     def __init__(self, root):
         self.root = root
+        set_person_name_directory(self.root / "人名")
         self.mode_initials = {}
 
     def load(self, mode, difficulty):
@@ -206,6 +211,7 @@ class TermLibrary:
         return terms, files
 
     def lookup_initials(self, chinese, mode=None):
+        requested = str(chinese or "").strip()
         modes = [mode] if mode else list(self.MODE_DIRS)
         for mode_name in modes:
             if mode_name not in self.mode_initials:
@@ -217,9 +223,14 @@ class TermLibrary:
                 for file in base.rglob("*.csv"):
                     for term in self._read_csv(file, seen):
                         self.mode_initials[mode_name].setdefault(term.chinese, term.initials)
-            found = self.mode_initials[mode_name].get(chinese)
+            found = self.mode_initials[mode_name].get(requested)
             if found:
                 return found
+            requested_key = canonical_answer_text(requested)
+            if requested_key:
+                for answer, initials in self.mode_initials[mode_name].items():
+                    if answers_equivalent(answer, requested):
+                        return initials
         return None
 
     def _read_csv(self, path, seen):
@@ -249,7 +260,7 @@ class TermLibrary:
                 if key in seen:
                     continue
                 seen.add(key)
-                if difficulty not in {str(value) for value in range(1, 11)}:
+                if difficulty not in {str(value) for value in range(1, 13)}:
                     difficulty = "5"
                 rows.append(Term(path.name, source_label, row[0], chinese, int(difficulty), initials, english, pinyin))
         return rows
@@ -316,18 +327,245 @@ PINYIN_INITIAL_OVERRIDES = {
     "约": "Y",
 }
 
+GREEK_INITIALS = {
+    "α": "Α",
+    "β": "Β",
+    "γ": "Γ",
+    "δ": "Δ",
+    "ϵ": "Ε",
+    "ε": "Ε",
+    "ζ": "Ζ",
+    "η": "Η",
+    "θ": "Θ",
+    "ι": "Ι",
+    "κ": "Κ",
+    "λ": "Λ",
+    "μ": "Μ",
+    "ν": "Ν",
+    "ξ": "Ξ",
+    "ο": "Ο",
+    "π": "Π",
+    "ρ": "Ρ",
+    "σ": "Σ",
+    "ς": "Σ",
+    "τ": "Τ",
+    "υ": "Υ",
+    "φ": "Φ",
+    "χ": "Χ",
+    "ψ": "Ψ",
+    "ω": "Ω",
+    "Α": "Α",
+    "Β": "Β",
+    "Γ": "Γ",
+    "Δ": "Δ",
+    "Ε": "Ε",
+    "Ζ": "Ζ",
+    "Η": "Η",
+    "Θ": "Θ",
+    "Ι": "Ι",
+    "Κ": "Κ",
+    "Λ": "Λ",
+    "Μ": "Μ",
+    "Ν": "Ν",
+    "Ξ": "Ξ",
+    "Ο": "Ο",
+    "Π": "Π",
+    "Ρ": "Ρ",
+    "Σ": "Σ",
+    "Τ": "Τ",
+    "Υ": "Υ",
+    "Φ": "Φ",
+    "Χ": "Χ",
+    "Ψ": "Ψ",
+    "Ω": "Ω",
+}
+
+ANSWER_OPTIONAL_HYPHENS = "-－–—‑−"
+# Person-name aliases are maintained in words/person-name Markdown tables.
+PERSON_NAME_FRAGMENTS = ()
+
+_PERSON_NAME_EXTRA_DIRS = []
+_PERSON_NAME_CACHE = None
+
+
+def set_person_name_directory(path):
+    global _PERSON_NAME_CACHE
+    directory = Path(path)
+    if directory not in _PERSON_NAME_EXTRA_DIRS:
+        _PERSON_NAME_EXTRA_DIRS.insert(0, directory)
+        _PERSON_NAME_CACHE = None
+
+
+def person_name_directories():
+    directories = list(_PERSON_NAME_EXTRA_DIRS)
+    module_root = Path(__file__).resolve().parents[1]
+    directories.append(module_root / "words" / "人名")
+    frozen_root = Path(getattr(sys, "_MEIPASS", module_root))
+    directories.append(frozen_root / "words" / "人名")
+    unique = []
+    seen = set()
+    for directory in directories:
+        key = str(directory)
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append(directory)
+    return unique
+
+
+def split_person_aliases(value):
+    text = str(value or "").strip()
+    if not text:
+        return []
+    parts = re.split(r"[、,，;；/]+", text)
+    return [part.strip() for part in parts if part.strip()]
+
+
+def read_person_name_table(path):
+    rows = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        text = line.strip()
+        if not text.startswith("|") or "---" in text:
+            continue
+        cells = [cell.strip() for cell in text.strip("|").split("|")]
+        if len(cells) < 3 or cells[0].lower() == "id":
+            continue
+        name_id, default, aliases = cells[:3]
+        if not name_id or not default:
+            continue
+        alias_items = split_person_aliases(aliases)
+        if default not in alias_items:
+            alias_items.insert(0, default)
+        rows.append({
+            "id": name_id,
+            "default": default,
+            "aliases": alias_items,
+        })
+    return rows
+
+
+def load_person_name_entries():
+    global _PERSON_NAME_CACHE
+    if _PERSON_NAME_CACHE is not None:
+        return _PERSON_NAME_CACHE
+    entries = []
+    seen_ids = set()
+    for directory in person_name_directories():
+        if not directory.exists():
+            continue
+        for path in sorted(directory.glob("*.md")):
+            for entry in read_person_name_table(path):
+                if entry["id"] in seen_ids:
+                    continue
+                seen_ids.add(entry["id"])
+                entries.append(entry)
+    if not entries:
+        entries = [
+            {"id": f"legacy_{index}", "default": name, "aliases": [name]}
+            for index, name in enumerate(PERSON_NAME_FRAGMENTS, 1)
+        ]
+    _PERSON_NAME_CACHE = entries
+    return entries
+
+
+def person_name_alias_pairs():
+    pairs = []
+    for entry in load_person_name_entries():
+        for alias in entry["aliases"]:
+            key = canonical_answer_text(alias)
+            if key:
+                pairs.append((key, entry["id"]))
+    pairs.sort(key=lambda item: len(item[0]), reverse=True)
+    return pairs
+
+
+def person_name_fragments():
+    fragments = []
+    seen = set()
+    for entry in load_person_name_entries():
+        for alias in entry["aliases"]:
+            if alias and alias not in seen:
+                seen.add(alias)
+                fragments.append(alias)
+    fragments.sort(key=len, reverse=True)
+    return fragments
+
+
+def canonical_answer_text(value):
+    text = unicodedata.normalize("NFKC", str(value or "").strip())
+    return "".join(ch for ch in text if ch not in ANSWER_OPTIONAL_HYPHENS and not ch.isspace())
+
+
+def person_name_answer_key(value):
+    text = canonical_answer_text(value)
+    if not text:
+        return ""
+    for alias_key, name_id in person_name_alias_pairs():
+        text = text.replace(alias_key, f"\ufff0{name_id}\ufff1")
+    return text
+
+
+def answers_equivalent(left, right):
+    left_key = canonical_answer_text(left)
+    right_key = canonical_answer_text(right)
+    if not left_key or not right_key:
+        return False
+    if left_key == right_key:
+        return True
+    return person_name_answer_key(left) == person_name_answer_key(right)
+
+
+def answers_differ_only_by_person_alias(left, right):
+    left_key = canonical_answer_text(left)
+    right_key = canonical_answer_text(right)
+    return bool(left_key and right_key) and left_key != right_key and person_name_answer_key(left) == person_name_answer_key(right)
+
+
+def term_contains_person_name(chinese):
+    text = canonical_answer_text(chinese)
+    return any(alias_key and alias_key in text for alias_key, _name_id in person_name_alias_pairs())
+
+
+def term_notice_tags(chinese):
+    text = str(chinese or "")
+    tags = []
+    if term_contains_person_name(text):
+        tags.append("人名")
+    if re.search(r"[A-Za-z]", text):
+        tags.append("英文字母")
+    if term_has_greek_letter(text):
+        tags.append("希腊字母")
+    return tags
+
+
+def term_has_greek_letter(chinese):
+    return any(ch in GREEK_INITIALS for ch in str(chinese or ""))
+
+
+def term_notice_text(chinese, prefix="本题含有"):
+    tags = term_notice_tags(chinese)
+    if not tags:
+        return ""
+    return f"{prefix}{'、'.join(tags)}"
+
 
 def chinese_initials(text):
-    if pinyin and Style:
-        items = pinyin(text, style=Style.FIRST_LETTER, strict=False, errors=lambda chars: [""] * len(chars))
-        return "".join(item[0].upper() for item in items if item and item[0])
-
     result = []
     for ch in text:
         if ch.isascii():
             if ch.isalpha():
                 result.append(ch.upper())
+            elif ch.isdigit():
+                result.append(ch)
             continue
+        if ch in GREEK_INITIALS:
+            result.append(GREEK_INITIALS[ch])
+            continue
+        if pinyin and Style:
+            items = pinyin(ch, style=Style.FIRST_LETTER, strict=False, errors=lambda chars: [""] * len(chars))
+            if items and items[0] and items[0][0]:
+                result.append(items[0][0].upper())
+                continue
         result.append(PINYIN_INITIAL_OVERRIDES.get(ch, ""))
     return "".join(result)
 

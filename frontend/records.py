@@ -218,7 +218,7 @@ def record_term_difficulty(record):
         value = int(float(record.get("base_term_difficulty") or record.get("term_difficulty") or 0))
     except (TypeError, ValueError):
         return 0
-    return value if 1 <= value <= 10 else 0
+    return value if 1 <= value <= 12 else 0
 
 
 def record_effective_difficulty(record):

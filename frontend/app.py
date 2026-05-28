@@ -111,7 +111,14 @@ from records import (
     summarize_records,
     write_achievements,
 )
-from term_library import TermLibrary, normalize_term_initials
+from term_library import (
+    TermLibrary,
+    answers_differ_only_by_person_alias,
+    answers_equivalent,
+    normalize_term_initials,
+    term_has_greek_letter,
+    term_notice_text,
+)
 from widgets import HoverButton, WobblePanel, scaled_int, set_ui_scale
 
 
@@ -1126,7 +1133,7 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         tk.Label(center, text="选择阅读方式", fg="#fff2bd", bg="#111725", font=("Microsoft YaHei UI", 30, "bold")).pack(pady=(0, 22))
         tk.Label(
             center,
-            text="快速上手像一张观测星图，先告诉你该看哪里；详细规则会展开概率、计分、Rating 和字谜生成参数。",
+            text="快速上手先告诉你该看哪里；详细规则会说明模式、提示、计分、记录和称号。",
             fg="#c8d2ee",
             bg="#111725",
             font=("Microsoft YaHei UI", 13),
@@ -2294,8 +2301,8 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         except Exception as exc:
             messagebox.showerror("词库加载失败", str(exc))
             return
-        diff_min = self.parse_int_var(self.custom_diff_min_var, 1, 1, 10)
-        diff_max = self.parse_int_var(self.custom_diff_max_var, 10, 1, 10)
+        diff_min = self.parse_int_var(self.custom_diff_min_var, 1, 1, 12)
+        diff_max = self.parse_int_var(self.custom_diff_max_var, 12, 1, 12)
         len_min = self.parse_int_var(self.custom_len_min_var, 1, 1, 30)
         len_max = self.parse_int_var(self.custom_len_max_var, 12, 1, 30)
         if diff_min > diff_max:
@@ -2699,7 +2706,7 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             "简单": "偏核心基础概念，难度 3-4 高概率。",
             "普通": "偏大学基础和常见进阶概念，难度 5-6 高概率；首字母题可能出现 *，线索题可能出现破碎线索。",
             "困难": "偏高阶词库和更难想到的概念，难度 8-10 占比高，掩码或破碎线索概率更高。",
-            "噩梦": "偏前沿和高度专门化词库，难度 10 占比最高；自由、限时和字谜的掩码、冷却与免费提示都比困难更严苛。",
+            "噩梦": "偏前沿和高度专门化词库，难度 10-12 占比最高；自由、限时和字谜的掩码、冷却与免费提示都比困难更严苛。",
             "混合模式": "读取当前学科下全部难度文件，词条难度均匀抽取。",
             "真·随机": "读取物理和数学的全部词库，按中文答案去重后抽取；线索玩法会排除暂未配套线索的噩梦词库。",
         }
@@ -2963,6 +2970,7 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         self.effective_difficulty = average_difficulty + shape_bonus
         if not self.custom_mode and any(len(placement.answer) == 1 for placement in puzzle.placements):
             self.complete_achievement("one_char_term")
+        self.mark_greek_term_encounter((placement.answer for placement in puzzle.placements), crossword=True)
         self.start_time = time.perf_counter()
         self.timed_round_start = self.start_time
         if is_crossword_rank:
@@ -3103,6 +3111,9 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             difficulty = int(getattr(placement.term, "difficulty", 5) or 5)
             difficulty_label = self.difficulty_label_for_value(difficulty)
             text = f"{status} {placement.id:02d} {direction} {len(placement.answer)}字  {difficulty_label} {difficulty}  {initials}"
+            notice = term_notice_text(placement.answer, prefix="含有")
+            if notice:
+                text = f"{text}  | {notice}"
             self.crossword_word_listbox.insert(tk.END, text)
             if placement.id in self.crossword_solved_ids:
                 self.crossword_word_listbox.itemconfig(index, foreground="#74d99f")
@@ -3667,7 +3678,7 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         return True, ""
 
     def crossword_terms_for_answer(self, answer):
-        return [term for term in self.terms if term.chinese == answer]
+        return [term for term in self.terms if answers_equivalent(term.chinese, answer)]
 
     def crossword_answer_candidates(self, placement):
         candidates = []
@@ -3687,15 +3698,16 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
     def crossword_answer_status(self, placement, answer):
         terms = self.crossword_terms_for_answer(answer)
         if not terms:
-            return False, "not_in_library", []
+            return False, "not_in_library", [], ""
         locked_conflict = False
         for term in terms:
-            allowed, reason = self.crossword_answer_matches_placement(placement, answer, term.initials)
+            allowed, reason = self.crossword_answer_matches_placement(placement, term.chinese, term.initials)
             if allowed:
-                return True, "exact" if answer == placement.answer else "alternative", self.crossword_answer_candidates(placement)
+                status = "exact" if answers_equivalent(term.chinese, placement.answer) else "alternative"
+                return True, status, self.crossword_answer_candidates(placement), term.chinese
             if reason == "locked_conflict":
                 locked_conflict = True
-        return False, "locked_conflict" if locked_conflict else "wrong", self.crossword_answer_candidates(placement)
+        return False, "locked_conflict" if locked_conflict else "wrong", self.crossword_answer_candidates(placement), ""
 
     def check_crossword_answer(self):
         if not self.game_active or self.record_saved:
@@ -3720,18 +3732,24 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             "answer_initials": self._lookup_initials(answer) or "",
             "time_seconds": round(elapsed, 3),
         }
-        allowed, reason, candidates = self.crossword_answer_status(placement, answer)
+        allowed, reason, candidates, accepted_answer = self.crossword_answer_status(placement, answer)
         attempt["accepted_answers"] = candidates
         if allowed:
             attempt["result"] = "success"
             attempt["accepted_as"] = reason
+            attempt["accepted_answer"] = accepted_answer or answer
             self.crossword_attempts.append(attempt)
             self.crossword_solved_ids.add(placement.id)
-            self.crossword_filled_answers[placement.id] = answer
+            filled_answer = accepted_answer or answer
+            self.crossword_filled_answers[placement.id] = filled_answer
             self.clear_crossword_answer_input()
             if self.crossword_feedback:
                 extra = "（多解已接受）" if reason == "alternative" else ""
-                self.crossword_feedback.config(text=f"{placement.id:02d} 号已填入：{answer}{extra}", fg="#9ff2b2")
+                if filled_answer != answer and answers_differ_only_by_person_alias(answer, filled_answer):
+                    extra = "（作答正确，但是填入默认翻译）"
+                elif filled_answer != answer and answers_equivalent(filled_answer, answer):
+                    extra = "（已按标准写法填入）"
+                self.crossword_feedback.config(text=f"{placement.id:02d} 号已填入：{filled_answer}{extra}", fg="#9ff2b2")
             self.refresh_crossword_word_list()
             self.draw_crossword_canvas()
             self.update_crossword_status()
@@ -4047,6 +4065,7 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             mask_positions = sorted(getattr(placement, "mask_positions", set()) or [])
             accepted_answers = self.crossword_answer_candidates(placement)
             accepted_by_placement[str(placement.id)] = accepted_answers
+            notice_text = term_notice_text(placement.answer, prefix="含有")
             mask_count += len(mask_positions)
             cell_count += len(placement.answer)
             difficulty_sum += int(getattr(placement.term, "difficulty", 5) or 5) + 0.5 * len(mask_positions)
@@ -4066,6 +4085,8 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
                 "source_label": placement.source_label,
                 "difficulty": int(getattr(placement.term, "difficulty", 5) or 5),
                 "solved": 1 if placement.id in self.crossword_solved_ids else 0,
+                "notice": notice_text,
+                "has_greek_letter": 1 if term_has_greek_letter(placement.answer) else 0,
             })
         base_difficulty = difficulty_sum / max(len(self.crossword_puzzle.placements), 1)
         shape_bonus = 0.5 if getattr(self.crossword_puzzle, "cell_shape", "square") in {"triangle", "hex"} else 0.0
@@ -4418,6 +4439,8 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             self.current = choose_daily_term_by_difficulty(self.terms, self.difficulty, self.daily_term_bucket_key())
         if self.current and len(self.current.chinese) == 1 and not self.custom_mode:
             self.complete_achievement("one_char_term")
+        if self.current:
+            self.mark_greek_term_encounter([self.current.chinese])
         if self.is_clue_mode():
             self.mask_positions = []
         elif self.rank_mode:
@@ -4521,6 +4544,7 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         panel.configure(width=panel_width)
         panel.pack_propagate(False)
         self.tutorial_question_panel = panel
+        notice_text = self.current_term_notice_text()
 
         if self.is_clue_mode():
             tk.Label(panel, text="本题线索", fg="#7ed6ff", bg="#182033", font=("Microsoft YaHei UI", 16, "bold")).pack(anchor="w", padx=48, pady=(34, 10))
@@ -4533,7 +4557,7 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             ).pack(anchor="w", padx=48, pady=(0, 8))
             tk.Label(
                 panel,
-                text=f"基础难度 {self.current.difficulty} / 10    本题总难度 {self.effective_difficulty:g}",
+                text=f"基础难度 {self.current.difficulty} / 12    本题总难度 {self.effective_difficulty:g}",
                 fg="#f6d36b",
                 bg="#182033",
                 font=("Microsoft YaHei UI", 14, "bold"),
@@ -4542,6 +4566,14 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
                 tk.Label(
                     panel,
                     text=f"本题含 {self.clue_fragment_count} 条破碎线索",
+                    fg="#f6a6ff",
+                    bg="#182033",
+                    font=("Microsoft YaHei UI", 12, "bold"),
+                ).pack(anchor="w", padx=48, pady=(0, 8))
+            if notice_text:
+                tk.Label(
+                    panel,
+                    text=notice_text,
                     fg="#f6a6ff",
                     bg="#182033",
                     font=("Microsoft YaHei UI", 12, "bold"),
@@ -4562,11 +4594,19 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
                 ).pack(anchor="w", padx=48, pady=(0, 10))
             tk.Label(
                 panel,
-                text=f"基础难度 {self.current.difficulty} / 10    本题总难度 {self.effective_difficulty:g}",
+                text=f"基础难度 {self.current.difficulty} / 12    本题总难度 {self.effective_difficulty:g}",
                 fg="#f6d36b",
                 bg="#182033",
                 font=("Microsoft YaHei UI", 14, "bold"),
             ).pack(anchor="w", padx=48, pady=(0, 18))
+            if notice_text:
+                tk.Label(
+                    panel,
+                    text=notice_text,
+                    fg="#f6a6ff",
+                    bg="#182033",
+                    font=("Microsoft YaHei UI", 12, "bold"),
+                ).pack(anchor="w", padx=48, pady=(0, 12))
             tk.Label(
                 panel,
                 text=self.hint_cooldown_note(),
@@ -4786,6 +4826,75 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         if len(normalized) != len(pattern):
             return False
         return all(mask == "*" or normalized[index] == mask for index, mask in enumerate(pattern))
+
+    def is_accepted_answer(self, answer):
+        return any(answers_equivalent(answer, accepted) for accepted in self.accepted_answers)
+
+    def current_term_notice_text(self):
+        return term_notice_text(self.current.chinese) if self.current else ""
+
+    @staticmethod
+    def record_greek_answers(record):
+        answers = set()
+
+        def add_answer(value):
+            text = str(value or "").strip()
+            if text and term_has_greek_letter(text):
+                answers.add(text)
+
+        add_answer(record.get("selected_answer"))
+        accepted_answers = record.get("accepted_answers")
+        if isinstance(accepted_answers, list):
+            for answer in accepted_answers:
+                add_answer(answer)
+        placements = record.get("crossword_placements")
+        if isinstance(placements, list):
+            for placement in placements:
+                if not isinstance(placement, dict):
+                    continue
+                add_answer(placement.get("answer"))
+                add_answer(placement.get("filled_answer"))
+                placement_answers = placement.get("accepted_answers")
+                if isinstance(placement_answers, list):
+                    for answer in placement_answers:
+                        add_answer(answer)
+        rank_answers = record.get("rank_session_answers")
+        if isinstance(rank_answers, list):
+            for entry in rank_answers:
+                if not isinstance(entry, dict):
+                    continue
+                add_answer(entry.get("answer"))
+                entry_answers = entry.get("accepted_answers")
+                if isinstance(entry_answers, list):
+                    for answer in entry_answers:
+                        add_answer(answer)
+        return sorted(answers)
+
+    @staticmethod
+    def record_success_greek_answers(record):
+        if not record.get("success"):
+            return []
+        if record.get("crossword_mode"):
+            answers = set()
+            placements = record.get("crossword_placements")
+            if isinstance(placements, list):
+                for placement in placements:
+                    if not isinstance(placement, dict) or not placement.get("solved"):
+                        continue
+                    answer = str(placement.get("filled_answer") or placement.get("answer") or "").strip()
+                    if term_has_greek_letter(answer):
+                        answers.add(answer)
+            return sorted(answers)
+        return BonusGuessApp.record_greek_answers(record)
+
+    def mark_greek_term_encounter(self, answers, crossword=False):
+        if self.custom_mode or self.tutorial_active or self.is_spectating():
+            return
+        if not any(term_has_greek_letter(answer) for answer in answers):
+            return
+        self.complete_achievement("first_greek_term")
+        if crossword:
+            self.complete_achievement("crossword_greek_term")
 
     def build_answer_entry(self):
         if not self.answer_entry_frame or not self.answer_entry_frame.winfo_exists():
@@ -5027,7 +5136,7 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             "time_seconds": round(time.perf_counter() - self.start_time, 3),
         }
 
-        if answer in self.accepted_answers:
+        if self.is_accepted_answer(answer):
             attempt["result"] = "success"
             self.attempts.append(attempt)
             self.finish_game(True)
@@ -5194,7 +5303,7 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
 
     def _lookup_initials(self, answer):
         for term in self.terms:
-            if term.chinese == answer:
+            if answers_equivalent(term.chinese, answer):
                 return term.initials
         lookup_mode = None if self.is_random_group_mode() or self.custom_mode else self.mode
         return self.library.lookup_initials(answer, lookup_mode)
@@ -5722,7 +5831,7 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         if not self.rank_mode or self.rank_kind == "crossword" or not self.current:
             return None
         accepted = list(self.accepted_answers or [])
-        if self.current.chinese not in accepted:
+        if not any(answers_equivalent(self.current.chinese, item) for item in accepted):
             accepted.insert(0, self.current.chinese)
         entry = {
             "index": self.rank_question_index + 1,
@@ -5952,6 +6061,8 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             "term_difficulty": self.current.difficulty,
             "effective_difficulty": self.effective_difficulty,
             "accepted_answers": self.accepted_answers,
+            "term_notice": self.current_term_notice_text(),
+            "has_greek_letter": 1 if term_has_greek_letter(self.current.chinese) else 0,
             "source_file": self.current.source,
             "source_label": self.current.source_label,
             "library_files": [path.name for path in self.library_files],
@@ -6052,6 +6163,7 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
         total_random_success = 0
         total_cheats = 0
         total_crossword_words = 0
+        total_greek_success = 0
         rank_records = [record for record in all_records if record.get("rank_mode")]
         rank_records.sort(key=record_datetime)
         distinct_rank_passes = {}
@@ -6152,6 +6264,11 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
             is_cheat = bool(record.get("cheat_detected")) or record.get("finished_by") == "cheated"
             is_crossword = bool(record.get("crossword_mode"))
             crossword_placements = record.get("crossword_placements") if isinstance(record.get("crossword_placements"), list) else []
+            greek_answers = self.record_greek_answers(record)
+            if greek_answers:
+                mark("first_greek_term", record)
+                if is_crossword:
+                    mark("crossword_greek_term", record)
             if len(str(record.get("selected_answer") or "")) == 1 or any(len(str(item.get("answer") or "")) == 1 for item in crossword_placements if isinstance(item, dict)):
                 mark("one_char_term", record)
             if mask_count:
@@ -6170,6 +6287,12 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
                 total_success += 1
                 streak += 1
                 mark("first_success", record)
+                greek_success_answers = self.record_success_greek_answers(record)
+                if greek_success_answers:
+                    total_greek_success += len(greek_success_answers)
+                    mark("first_greek_success", record)
+                    if total_greek_success >= 10:
+                        mark("greek_success_10", record)
                 if play_label == "自由":
                     mark("first_free_success", record)
                 if is_random:
@@ -6348,7 +6471,7 @@ class BonusGuessApp(BackdropMixin, tk.Tk):
 
         dist = tk.Frame(frame, bg="#111725")
         dist.pack(fill="x", pady=(0, 12))
-        term_parts = [f"{i}:{summary['difficulty_counts'].get(i, 0)}" for i in range(1, 11)]
+        term_parts = [f"{i}:{summary['difficulty_counts'].get(i, 0)}" for i in range(1, 13)]
         if summary["difficulty_counts"].get(0, 0):
             term_parts.append(f"未知:{summary['difficulty_counts'].get(0, 0)}")
         term_text = "  ".join(term_parts)

@@ -35,7 +35,7 @@ PROFILE_DIR = PROJECT_DIR / "profile"
 PLAYER_SETTINGS_FILE = PROFILE_DIR / "player_settings.json"
 DAILY_TERMS_FILE = PROFILE_DIR / "daily_terms.json"
 
-APP_VERSION = "0.3.1"
+APP_VERSION = "0.3.2"
 TITLE_CN = "有（×）无奖竞猜"
 TITLE_EN = "Bonus-（×）Guess"
 
@@ -98,6 +98,10 @@ ACHIEVEMENTS = [
     ("first_random_success", "跨学科第一跃迁", "第一次在随机模式中答对题目"),
     ("random_success_20", "随机游走稳定了", "随机模式累计答对 20 题"),
     ("true_random_success", "全库相遇事件", "第一次在真·随机中答对题目"),
+    ("first_greek_term", "希腊字母来敲门", "第一次遇见中文名中含有希腊字母的词"),
+    ("first_greek_success", "Σ 不是 S", "第一次答对含有希腊字母的词"),
+    ("greek_success_10", "希腊字母巡礼", "累计答对 10 个含有希腊字母的词"),
+    ("crossword_greek_term", "格线里的希腊星座", "在字谜模式中遇见含有希腊字母的词"),
     ("first_initial_block", "手离键盘！", "第一次触发题面首字母拦截彩蛋"),
     ("first_cheat", "二次作案", "同一题第二次触发题面首字母彩蛋"),
     ("cheat_three", "输入法背锅三连", "累计触发 3 次题面首字母彩蛋"),
@@ -133,6 +137,10 @@ HIDDEN_ACHIEVEMENT_IDS = {
     "exit_ten",
     "three_mask_success",
     "first_initial_block",
+    "first_greek_term",
+    "first_greek_success",
+    "greek_success_10",
+    "crossword_greek_term",
     "first_cheat",
     "cheat_three",
     "cheat_ten",
@@ -271,13 +279,13 @@ ACHIEVEMENT_CATEGORIES = [
 ]
 
 TERM_DIFFICULTY_WEIGHTS = {
-    "入门": {1: 34, 2: 36, 3: 18, 4: 7, 5: 3, 6: 1, 7: 0.6, 8: 0.3, 9: 0.1, 10: 0.05},
-    "简单": {1: 5, 2: 12, 3: 30, 4: 30, 5: 13, 6: 6, 7: 2.5, 8: 1, 9: 0.4, 10: 0.1},
-    "普通": {1: 1, 2: 2.5, 3: 7, 4: 14, 5: 28, 6: 27, 7: 13, 8: 5.5, 9: 1.5, 10: 0.5},
-    "困难": {1: 0.2, 2: 0.5, 3: 1, 4: 2.5, 5: 5, 6: 9, 7: 16, 8: 27, 9: 23, 10: 15.8},
-    "噩梦": {1: 0.05, 2: 0.1, 3: 0.2, 4: 0.5, 5: 1, 6: 2, 7: 5, 8: 14, 9: 27, 10: 50.15},
-    "混合模式": {difficulty: 1 for difficulty in range(1, 11)},
-    "真·随机": {difficulty: 1 for difficulty in range(1, 11)},
+    "入门": {1: 34, 2: 36, 3: 18, 4: 7, 5: 3, 6: 1, 7: 0.6, 8: 0.3, 9: 0.1, 10: 0.05, 11: 0.02, 12: 0.01},
+    "简单": {1: 5, 2: 12, 3: 30, 4: 30, 5: 13, 6: 6, 7: 2.5, 8: 1, 9: 0.4, 10: 0.1, 11: 0.03, 12: 0.01},
+    "普通": {1: 1, 2: 2.5, 3: 7, 4: 14, 5: 28, 6: 27, 7: 13, 8: 5.5, 9: 1.5, 10: 0.5, 11: 0.15, 12: 0.05},
+    "困难": {1: 0.2, 2: 0.5, 3: 1, 4: 2.5, 5: 5, 6: 9, 7: 16, 8: 27, 9: 23, 10: 15.8, 11: 4.5, 12: 1.5},
+    "噩梦": {1: 0.02, 2: 0.05, 3: 0.1, 4: 0.2, 5: 0.4, 6: 0.8, 7: 2, 8: 7, 9: 16, 10: 32, 11: 28, 12: 13.43},
+    "混合模式": {difficulty: 1 for difficulty in range(1, 13)},
+    "真·随机": {difficulty: 1 for difficulty in range(1, 13)},
 }
 
 FREE_HINT_DECAY = {

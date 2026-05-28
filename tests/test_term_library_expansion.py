@@ -10,7 +10,14 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "frontend"))
 
 from app import BonusGuessApp  # noqa: E402
-from term_library import TermLibrary  # noqa: E402
+from term_library import (  # noqa: E402
+    GREEK_INITIALS,
+    TermLibrary,
+    answers_differ_only_by_person_alias,
+    answers_equivalent,
+    chinese_initials,
+    term_notice_tags,
+)
 
 
 REQUESTED_WORD_LISTS = [
@@ -41,7 +48,7 @@ REQUESTED_WORD_LISTS = [
     "words/数学/噩梦模式/advanced_representation_theory_terms.csv",
     "words/数学/噩梦模式/moduli_space_theory_terms.csv",
     "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-    "words/数学/噩梦模式/geometric_analysis_terms.csv",
+    "words/数学/噩梦模式/advanced_algebraic_geometry_terms.csv",
     "words/数学/噩梦模式/random_matrix_theory_terms.csv",
     "words/数学/噩梦模式/spectral_geometry_terms.csv",
     "words/数学/噩梦模式/derived_categories_terms.csv",
@@ -76,7 +83,7 @@ MATH_PREFIX_GUARD = {
     "words/数学/噩梦模式/advanced_representation_theory_terms.csv": "表示论",
     "words/数学/噩梦模式/moduli_space_theory_terms.csv": "模空间",
     "words/数学/噩梦模式/arithmetic_geometry_terms.csv": "算术几何",
-    "words/数学/噩梦模式/geometric_analysis_terms.csv": "几何分析",
+    "words/数学/噩梦模式/advanced_algebraic_geometry_terms.csv": "代数几何",
     "words/数学/噩梦模式/random_matrix_theory_terms.csv": "随机矩阵",
     "words/数学/噩梦模式/spectral_geometry_terms.csv": "谱几何",
     "words/数学/噩梦模式/derived_categories_terms.csv": "导出范畴",
@@ -165,6 +172,7 @@ ALLOWED_CHINESE_NAME_ASCII_TOKENS = {
     "MCMC",
     "MERA",
     "MSbar",
+    "MV",
     "N",
     "NCOS",
     "N1",
@@ -222,6 +230,7 @@ ALLOWED_CHINESE_NAME_ASCII_TOKENS = {
     "Y",
     "Z",
     "a",
+    "abc",
     "bc",
     "c",
     "d",
@@ -248,6 +257,76 @@ ALLOWED_CHINESE_NAME_ASCII_TOKENS = {
 BANNED_CHINESE_NAME_FRAGMENTS = [
     "杀矢量",
     "基林型",
+    "康尼斯",
+    "乌里松",
+    "莫尼里夫林",
+    "斯廷斯普林",
+    "萨塔克",
+    "阿蒂亚辛格",
+    "格尔范德",
+    "费舍尔",
+    "克拉美",
+    "米塔列夫勒",
+    "米塔格莱夫勒",
+    "雷谢京",
+    "维林德",
+    "维尔林德",
+    "韦尔林德",
+    "戴克拉夫",
+    "冯诺依曼",
+    "卡拉比丘",
+    "瑞尼熵",
+    "莫瑞冯",
+    "江苏代数",
+    "约旦",
+]
+
+PINYIN_ENGLISH_FRAGMENTS = [
+    "lilun",
+    "dingli",
+    "moxing",
+    "bubianliang",
+    "fangcheng",
+    "zuoyongliang",
+    "guanxi",
+    "gongshi",
+    "yuanli",
+    "jifen",
+    "daoshu",
+    "hanshu",
+    "kongjian",
+    "daishu",
+    "fanchang",
+    "zhankai",
+    "fenjie",
+    "bianjie",
+    "xieyi",
+    "yingli",
+    "xiaoying",
+    "guize",
+    "guocheng",
+    "fangfa",
+    "quexian",
+    "xingshi",
+    "tiaojian",
+    "weifen",
+    "juzhen",
+    "liangzi",
+    "tuopu",
+    "wenti",
+    "suanfa",
+    "zhenkong",
+    "bosezi",
+    "feimizi",
+    "gaijin",
+    "dengliziti",
+    "duicheng",
+    "ningju",
+    "chuanbozi",
+    "yeti",
+    "xibao",
+    "qujinbi",
+    "jiaozibaohe",
 ]
 
 
@@ -299,6 +378,11 @@ class TermLibraryExpansionTests(unittest.TestCase):
                 self.assertGreaterEqual(len(terms), 100)
                 self.assertTrue(all("噩梦" in str(file.parent.name) for file in files))
 
+    def test_nightmare_difficulty_twelve_is_preserved(self):
+        library = TermLibrary(ROOT / "words")
+        terms, _files = library.load("数学模式", "噩梦")
+        self.assertTrue(any(term.difficulty == 12 for term in terms))
+
     def test_expanded_lists_are_not_mechanical_prefix_expansions(self):
         guards = {**PHYSICS_NIGHTMARE_PREFIX_GUARD, **MATH_PREFIX_GUARD}
         for rel_path, prefix in guards.items():
@@ -322,6 +406,46 @@ class TermLibraryExpansionTests(unittest.TestCase):
                     offenders.append((str(file.relative_to(ROOT)), name, bad_tokens))
         self.assertEqual(offenders, [])
 
+    def test_greek_letters_are_kept_as_uppercase_initials(self):
+        self.assertEqual(chinese_initials("σ代数"), "ΣDS")
+        self.assertEqual(chinese_initials("π系λ系定理"), "ΠXΛXDL")
+        offenders = []
+        for file in self.word_files():
+            for row in self.read_rows(file):
+                name = row["概念中文名"].strip()
+                if not any(ch in GREEK_INITIALS for ch in name):
+                    continue
+                expected = chinese_initials(name)
+                actual = row["中文首字母"].strip()
+                try:
+                    actual_length = int(row["中文首字母串长度"])
+                except (TypeError, ValueError):
+                    actual_length = -1
+                if actual != expected or actual_length != len(expected):
+                    offenders.append((str(file.relative_to(ROOT)), name, actual, expected))
+        self.assertEqual(offenders, [])
+
+    def test_natural_hyphens_are_optional_in_answers(self):
+        self.assertTrue(answers_equivalent("南部-戈德斯通玻色子", "南部戈德斯通玻色子"))
+        self.assertTrue(answers_equivalent("阿什特卡－莱万多夫斯基测度", "阿什特卡莱万多夫斯基测度"))
+        self.assertFalse(answers_equivalent("威尔逊圈", "威尔逊线"))
+
+    def test_person_name_aliases_are_accepted(self):
+        self.assertTrue(answers_equivalent("乌雷松方程", "乌里松方程"))
+        self.assertTrue(answers_equivalent("孔涅距离公式", "康尼斯距离公式"))
+        self.assertTrue(answers_equivalent("阿蒂亚-辛格指标定理", "阿提雅辛格指标定理"))
+        self.assertTrue(answers_differ_only_by_person_alias("孔涅谱", "康尼斯谱"))
+        self.assertFalse(answers_equivalent("孔涅谱", "康尼斯循环"))
+        self.assertTrue(answers_equivalent("列舍季欣-图拉耶夫不变量", "雷谢京图拉耶夫不变量"))
+        self.assertTrue(answers_equivalent("弗尔林德公式", "维林德公式"))
+        self.assertTrue(answers_equivalent("卡拉比-丘范畴", "卡拉比丘成桐范畴"))
+        self.assertFalse(answers_equivalent("李代数表示", "李群表示"))
+
+    def test_term_notice_tags_for_special_terms(self):
+        self.assertEqual(term_notice_tags("牛顿第二定律"), ["人名"])
+        self.assertEqual(term_notice_tags("ΛCDM模型"), ["英文字母", "希腊字母"])
+        self.assertEqual(term_notice_tags("南部-戈德斯通定理"), ["人名"])
+
     def test_chinese_names_do_not_use_known_bad_translations(self):
         offenders = []
         for file in self.word_files():
@@ -330,6 +454,22 @@ class TermLibraryExpansionTests(unittest.TestCase):
                 bad_fragments = [fragment for fragment in BANNED_CHINESE_NAME_FRAGMENTS if fragment in name]
                 if bad_fragments:
                     offenders.append((str(file.relative_to(ROOT)), name, bad_fragments))
+        self.assertEqual(offenders, [])
+
+    def test_english_names_are_not_pinyin_placeholders(self):
+        offenders = []
+        for file in self.word_files():
+            for row in self.read_rows(file):
+                english = row["概念英文名"].strip()
+                pinyin = row["概念中文拼音"].strip()
+                english_key = english.lower().replace("_", "")
+                pinyin_key = pinyin.lower().replace("_", "")
+                bad_fragments = [fragment for fragment in PINYIN_ENGLISH_FRAGMENTS if fragment in english_key]
+                if "concept" in english.lower() or bad_fragments:
+                    offenders.append((str(file.relative_to(ROOT)), row["概念中文名"].strip(), english, bad_fragments))
+                if english_key == pinyin_key and not english.isupper():
+                    offenders.append((str(file.relative_to(ROOT)), row["概念中文名"].strip(), english, ["matches_pinyin"]))
+                self.assertEqual(str(len(english)), row["英文字符串长度"].strip())
         self.assertEqual(offenders, [])
 
     def test_clue_true_random_filters_nightmare_terms(self):

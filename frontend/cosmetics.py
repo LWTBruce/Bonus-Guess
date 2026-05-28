@@ -42,6 +42,8 @@ ACHIEVEMENT_TITLE_REWARDS = [
     ("clue_success_100", "ach_clue_100", "线索编织者"),
     ("first_random_success", "ach_random_first", "随机游走者"),
     ("true_random_success", "ach_true_random", "全库漫游者"),
+    ("first_greek_success", "ach_greek_first", "希腊字母观察员"),
+    ("greek_success_10", "ach_greek_10", "Σ巡游者"),
     ("first_crossword_success", "ach_crossword_first", "格线观测者"),
     ("crossword_no_hint_success", "ach_crossword_no_hint", "空格独行者"),
     ("total_score_100000", "ach_score_100000", "积分矿脉持有人"),
