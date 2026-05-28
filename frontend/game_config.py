@@ -35,7 +35,7 @@ PROFILE_DIR = PROJECT_DIR / "profile"
 PLAYER_SETTINGS_FILE = PROFILE_DIR / "player_settings.json"
 DAILY_TERMS_FILE = PROFILE_DIR / "daily_terms.json"
 
-APP_VERSION = "0.3.0"
+APP_VERSION = "0.3.1"
 TITLE_CN = "有（×）无奖竞猜"
 TITLE_EN = "Bonus-（×）Guess"
 

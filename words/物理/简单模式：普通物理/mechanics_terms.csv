@@ -1,4 +1,4 @@
-编号,概念中文名,难度,中文首字母,中文首字母串长度,概念英文名,英文字符串长度,概念中文拼音,拼音字符串长度
+﻿编号,概念中文名,难度,中文首字母,中文首字母串长度,概念英文名,英文字符串长度,概念中文拼音,拼音字符串长度
 1,位移,1,WY,2,displacement,12,weiyi,5
 2,路程,1,LC,2,path_length,11,lucheng,7
 3,位置矢量,4,WZSL,4,position_vector,15,weizhishiliang,14
@@ -33,7 +33,7 @@
 32,圆周运动,4,YZYD,4,circular_motion,15,yuanzhouyundong,15
 33,匀速圆周运动,5,YSYZYD,6,uniform_circular_motion,23,yunsuyuanzhouyundong,20
 34,相对速度,4,XDSD,4,relative_velocity,17,xiangduisudu,12
-35,伽利略变换,6,JLLBH,5,galilean_transformation,23,jialilvebianhuan,16
+35,伽利略变换,6,GLLBH,5,galilean_transformation,23,galilvebianhuan,15
 36,惯性系,4,GXX,3,inertial_frame,14,guanxingxi,10
 37,非惯性系,4,FGXX,4,non_inertial_frame,18,feiguanxingxi,13
 38,惯性,4,GX,2,inertia,7,guanxing,8
@@ -42,7 +42,7 @@
 41,合力,4,HL,2,resultant_force,15,heli,4
 42,分力,4,FL,2,component_force,15,fenli,5
 43,重力,1,ZL,2,gravity,7,zhongli,7
-44,弹力,4,TL,2,elastic_force,13,tanli,5
+44,弹力,4,DL,2,elastic_force,13,danli,5
 45,张力,4,ZL,2,tension,7,zhangli,7
 46,支持力,4,ZCL,3,normal_force,12,zhichili,8
 47,摩擦力,2,MCL,3,friction_force,14,mocali,6
@@ -64,16 +64,16 @@
 63,质心系,4,ZXX,3,center_of_mass_frame,20,zhixinxi,8
 64,质心运动定理,6,ZXYDDL,6,theorem_of_center_of_mass_motion,32,zhixinyundongdingli,19
 65,碰撞,4,PZ,2,collision,9,pengzhuang,10
-66,弹性碰撞,4,TXPZ,4,elastic_collision,17,tanxingpengzhuang,17
-67,非弹性碰撞,5,FTXPZ,5,inelastic_collision,19,feitanxingpengzhuang,20
-68,完全非弹性碰撞,6,WQFTXPZ,7,perfectly_inelastic_collision,29,wanquanfeitanxingpengzhuang,27
+66,弹性碰撞,4,DXPZ,4,elastic_collision,17,danxingpengzhuang,17
+67,非弹性碰撞,5,FDXPZ,5,inelastic_collision,19,feidanxingpengzhuang,20
+68,完全非弹性碰撞,6,WQFDXPZ,7,perfectly_inelastic_collision,29,wanquanfeidanxingpengzhuang,27
 69,功,1,G,1,work,4,gong,4
 70,功率,1,GL,2,power,5,gonglv,6
 71,动能,1,DN,2,kinetic_energy,14,dongneng,8
 72,动能定理,5,DNDL,4,work_energy_theorem,19,dongnengdingli,14
 73,势能,1,SN,2,potential_energy,16,shineng,7
 74,重力势能,4,ZLSN,4,gravitational_potential_energy,30,zhonglishineng,14
-75,弹性势能,4,TXSN,4,elastic_potential_energy,24,tanxingshineng,14
+75,弹性势能,4,DXSN,4,elastic_potential_energy,24,danxingshineng,14
 76,保守力,4,BSL,3,conservative_force,18,baoshouli,9
 77,非保守力,4,FBSL,4,non_conservative_force,22,feibaoshouli,12
 78,机械能,2,JXN,3,mechanical_energy,17,jixieneng,9
@@ -109,8 +109,8 @@
 108,相位,4,XW,2,phase,5,xiangwei,8
 109,初相位,4,CXW,3,initial_phase,13,chuxiangwei,11
 110,回复力,4,HFL,3,restoring_force,15,huifuli,7
-111,弹簧,4,TH,2,spring,6,tanhuang,8
-112,弹簧振子,4,THZZ,4,spring_oscillator,17,tanhuangzhenzi,14
+111,弹簧,4,DH,2,spring,6,danhuang,8
+112,弹簧振子,4,DHZZ,4,spring_oscillator,17,danhuangzhenzi,14
 113,摆,4,B,1,pendulum,8,bai,3
 114,单摆,4,DB,2,simple_pendulum,15,danbai,6
 115,物理摆,4,WLB,3,physical_pendulum,17,wulibai,7
@@ -123,7 +123,7 @@
 122,机械波,4,JXB,3,mechanical_wave,15,jixiebo,7
 123,横波,4,HB,2,transverse_wave,15,hengbo,6
 124,纵波,4,ZB,2,longitudinal_wave,17,zongbo,6
-125,波长,4,BC,2,wavelength,10,bochang,7
+125,波长,4,BZ,2,wavelength,10,bozhang,7
 126,波速,4,BS,2,wave_speed,10,bosu,4
 127,波数,4,BS,2,wave_number,11,boshu,5
 128,波函数,4,BHS,3,wave_function,13,bohanshu,8
@@ -131,9 +131,9 @@
 130,驻波,4,ZB,2,standing_wave,13,zhubo,5
 131,波节,4,BJ,2,node,4,bojie,5
 132,波腹,4,BF,2,antinode,8,bofu,4
-133,多普勒效应,6,DPLXY,5,doppler_effect,14,duopulexiaoying,15
+133,多普勒效应,6,DPLXY,5,doppler_effect,14,duopuleixiaoying,16
 134,波源,4,BY,2,wave_source,11,boyuan,6
-135,波面,4,BM,2,wavefront,9,bomian,6
+135,机械波面,4,JXBM,4,wavefront,9,jixiebomian,11
 136,振源,4,ZY,2,vibration_source,16,zhenyuan,8
 137,介质,4,JZ,2,medium,6,jiezhi,6
 138,振子,4,ZZ,2,oscillator,10,zhenzi,6
@@ -147,7 +147,7 @@
 146,伯努利方程,6,BNLFC,5,bernoulli_equation,18,bonulifangcheng,15
 147,黏滞力,4,NZL,3,viscous_force,13,nianzhili,9
 148,黏度,4,ND,2,viscosity,9,niandu,6
-149,弹性形变,4,TXXB,4,elastic_deformation,19,tanxingxingbian,15
+149,弹性形变,4,DXXB,4,elastic_deformation,19,danxingxingbian,15
 150,应力,4,YL,2,stress,6,yingli,6
 151,应变,4,YB,2,strain,6,yingbian,8
 152,杨氏模量,4,YSML,4,youngs_modulus,14,yangshimoliang,14
@@ -158,7 +158,7 @@
 157,分量,4,FL,2,component,9,fenliang,8
 158,坐标,4,ZB,2,coordinate,10,zuobiao,7
 159,轨迹,4,GJ,2,trajectory,10,guiji,5
-160,弧长,4,HC,2,arc_length,10,huchang,7
+160,弧长,4,HZ,2,arc_length,10,huzhang,7
 161,斜面,6,XM,2,inclined_plane,14,xiemian,7
 162,滑轮,6,HL,2,pulley,6,hualun,6
 163,杠杆,6,GG,2,lever,5,ganggan,7

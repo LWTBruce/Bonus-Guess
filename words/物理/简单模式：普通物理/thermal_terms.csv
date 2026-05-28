@@ -1,4 +1,4 @@
-编号,概念中文名,难度,中文首字母,中文首字母串长度,概念英文名,英文字符串长度,概念中文拼音,拼音字符串长度
+﻿编号,概念中文名,难度,中文首字母,中文首字母串长度,概念英文名,英文字符串长度,概念中文拼音,拼音字符串长度
 1,热学,4,RX,2,thermal_physics,15,rexue,5
 2,热,1,R,1,heat,4,re,2
 3,温度,1,WD,2,temperature,11,wendu,5
@@ -10,16 +10,16 @@
 9,热量,1,RL,2,quantity_of_heat,16,reliang,7
 10,内能,1,NN,2,internal_energy,15,neineng,7
 11,分子,4,FZ,2,molecule,8,fenzi,5
-12,原子,1,YZ,2,atom,4,yuanzi,6
+12,气体原子,1,QTYZ,4,atom,4,qitiyuanzi,10
 13,分子动理论,5,FZDLL,5,molecular_kinetic_theory,24,fenzidonglilun,14
 14,分子热运动,5,FZRYD,5,molecular_thermal_motion,24,fenzireyundong,14
 15,布朗运动,4,BLYD,4,brownian_motion,15,bulangyundong,13
 16,扩散,4,KS,2,diffusion,9,kuosan,6
 17,理想气体,4,LXQT,4,ideal_gas,9,lixiangqiti,11
 18,气体,4,QT,2,gas,3,qiti,4
-19,压强,4,YQ,2,pressure,8,yaqiang,7
+19,气体压强,4,QTYQ,4,pressure,8,qitiyaqiang,11
 20,体积,4,TJ,2,volume,6,tiji,4
-21,物质的量,4,WZDL,4,amount_of_substance,19,wuzhidiliang,12
+21,物质的量,4,WZDL,4,amount_of_substance,19,wuzhideliang,12
 22,摩尔,4,ME,2,mole,4,moer,4
 23,摩尔质量,4,MEZL,4,molar_mass,10,moerzhiliang,12
 24,阿伏伽德罗常数,6,AFGDLCS,7,avogadro_constant,17,afugadeluochangshu,18
@@ -35,7 +35,7 @@
 34,循环过程,4,XHGC,4,cyclic_process,14,xunhuanguocheng,15
 35,状态参量,4,ZTCL,4,state_variable,14,zhuangtaicanliang,17
 36,状态函数,4,ZTHS,4,state_function,14,zhuangtaihanshu,15
-37,功,1,G,1,work,4,gong,4
+37,热力学功,1,RLXG,4,work,4,relixuegong,11
 38,热容,4,RR,2,heat_capacity,13,rerong,6
 39,比热容,4,BRR,3,specific_heat_capacity,22,birerong,8
 40,摩尔热容,4,MERR,4,molar_heat_capacity,19,moerrerong,10
@@ -61,7 +61,7 @@
 60,热辐射,4,RFS,3,thermal_radiation,17,refushe,7
 61,导热系数,4,DRXS,4,thermal_conductivity,20,daorexishu,10
 62,黑体,4,HT,2,blackbody,9,heiti,5
-63,黑体辐射,4,HTFS,4,blackbody_radiation,19,heitifushe,10
+63,热辐射黑体谱,4,RFSHTP,6,blackbody_radiation,19,refusheheitipu,14
 64,斯特藩玻尔兹曼定律,8,STFBEZMDL,9,stefan_boltzmann_law,20,sitefanboerzimandinglv,22
 65,维恩位移定律,6,WEWYDL,6,wiens_displacement_law,22,weienweiyidinglv,16
 66,相变,4,XB,2,phase_transition,16,xiangbian,9
@@ -98,7 +98,7 @@
 97,平均自由程,5,PJZYC,5,mean_free_path,14,pingjunziyoucheng,17
 98,方均根速率,5,FJGSL,5,root_mean_square_speed,22,fangjungensulv,14
 99,最概然速率,5,ZGRSL,5,most_probable_speed,19,zuigairansulv,13
-100,平均速率,4,PJSL,4,average_speed,13,pingjunsulv,11
+100,分子平均速率,4,FZPJSL,6,average_speed,13,fenzipingjunsulv,16
 101,能均分定理,6,NJFDL,5,equipartition_theorem,21,nengjunfendingli,16
 102,自由度,4,ZYD,3,degree_of_freedom,17,ziyoudu,7
 103,麦克斯韦速率分布律,7,MKSWSLFBL,9,maxwell_speed_distribution,26,maikesiweisulvfenbulv,21

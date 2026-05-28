@@ -1,4 +1,5 @@
 import csv
+import re
 import sys
 import unittest
 from collections import Counter
@@ -58,6 +59,197 @@ PHYSICS_NIGHTMARE_PREFIX_GUARD = {
     "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv": "进阶QCD",
 }
 
+MATH_PREFIX_GUARD = {
+    "words/数学/简单模式/analytic_geometry_terms.csv": "解析几何",
+    "words/数学/简单模式/elementary_number_theory_terms.csv": "初等数论",
+    "words/数学/简单模式/combinatorics_basics_terms.csv": "组合",
+    "words/数学/普通模式/calculus_of_variations_terms.csv": "变分法",
+    "words/数学/普通模式/integral_equations_terms.csv": "积分方程",
+    "words/数学/普通模式/vector_tensor_analysis_terms.csv": "张量分析",
+    "words/数学/普通模式/operations_research_terms.csv": "运筹学",
+    "words/数学/困难模式/differential_geometry_terms.csv": "微分几何",
+    "words/数学/困难模式/algebraic_geometry_terms.csv": "代数几何",
+    "words/数学/困难模式/lie_groups_lie_algebras_terms.csv": "李群",
+    "words/数学/困难模式/homological_algebra_terms.csv": "同调代数",
+    "words/数学/噩梦模式/operator_algebras_terms.csv": "算子代数",
+    "words/数学/噩梦模式/noncommutative_geometry_terms.csv": "非交换几何",
+    "words/数学/噩梦模式/advanced_representation_theory_terms.csv": "表示论",
+    "words/数学/噩梦模式/moduli_space_theory_terms.csv": "模空间",
+    "words/数学/噩梦模式/arithmetic_geometry_terms.csv": "算术几何",
+    "words/数学/噩梦模式/geometric_analysis_terms.csv": "几何分析",
+    "words/数学/噩梦模式/random_matrix_theory_terms.csv": "随机矩阵",
+    "words/数学/噩梦模式/spectral_geometry_terms.csv": "谱几何",
+    "words/数学/噩梦模式/derived_categories_terms.csv": "导出范畴",
+    "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv": "量子群",
+}
+
+ALLOWED_CHINESE_NAME_ASCII_TOKENS = {
+    "A",
+    "ADM",
+    "ADHM",
+    "AdS",
+    "AdS2",
+    "AKSZ",
+    "AMPS",
+    "APS",
+    "B",
+    "BB84",
+    "BCS",
+    "BDF",
+    "BF",
+    "BFSS",
+    "BFKL",
+    "BMO",
+    "BMS",
+    "BPZ",
+    "BQP",
+    "BRST",
+    "BTZ",
+    "BV",
+    "C",
+    "CDM",
+    "CFL",
+    "CFT",
+    "CG",
+    "CMB",
+    "CP",
+    "CW",
+    "D",
+    "D0",
+    "D1",
+    "D1D5",
+    "D3",
+    "D5",
+    "D7",
+    "DNA",
+    "DGLAP",
+    "E",
+    "E8E8",
+    "E91",
+    "EM",
+    "EPR",
+    "EPRL",
+    "ER",
+    "F",
+    "FK",
+    "G",
+    "GFT",
+    "GHZ",
+    "GKPW",
+    "GSO",
+    "H",
+    "HHL",
+    "HOMFLY",
+    "HaPPY",
+    "I",
+    "IIA",
+    "IIB",
+    "IKKT",
+    "J",
+    "JLMS",
+    "K",
+    "K3",
+    "KO",
+    "KKLT",
+    "KSS",
+    "L",
+    "LDPC",
+    "LLM",
+    "LQG",
+    "LSZ",
+    "LU",
+    "Lp",
+    "M",
+    "M2",
+    "M5",
+    "MCMC",
+    "MERA",
+    "MSbar",
+    "N",
+    "NCOS",
+    "N1",
+    "N2",
+    "N4",
+    "NFW",
+    "NHEK",
+    "NISQ",
+    "NRQCD",
+    "NS5",
+    "NSNS",
+    "O",
+    "OM",
+    "OPE",
+    "OTOC",
+    "OZI",
+    "P",
+    "PBH",
+    "PCAC",
+    "POVM",
+    "Q",
+    "QCD",
+    "QMA",
+    "QR",
+    "R",
+    "RG",
+    "RNA",
+    "RNS",
+    "RR",
+    "S",
+    "S8",
+    "SCET",
+    "SL2C",
+    "SO32",
+    "SOR",
+    "SU2",
+    "SWAP",
+    "SYK",
+    "T",
+    "T0",
+    "T1",
+    "T2",
+    "TE",
+    "TEM",
+    "TM",
+    "TQFT",
+    "U",
+    "U1A",
+    "UVIR",
+    "V",
+    "W",
+    "WKB",
+    "WZW",
+    "X",
+    "Y",
+    "Z",
+    "a",
+    "bc",
+    "c",
+    "d",
+    "dS",
+    "g",
+    "k",
+    "l",
+    "m",
+    "n",
+    "p",
+    "pn",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+}
+
+BANNED_CHINESE_NAME_FRAGMENTS = [
+    "杀矢量",
+    "基林型",
+]
+
 
 class TermLibraryExpansionTests(unittest.TestCase):
     def test_requested_word_lists_have_at_least_100_complete_rows(self):
@@ -107,12 +299,38 @@ class TermLibraryExpansionTests(unittest.TestCase):
                 self.assertGreaterEqual(len(terms), 100)
                 self.assertTrue(all("噩梦" in str(file.parent.name) for file in files))
 
-    def test_physics_nightmare_lists_are_not_mechanical_prefix_expansions(self):
-        for rel_path, prefix in PHYSICS_NIGHTMARE_PREFIX_GUARD.items():
+    def test_expanded_lists_are_not_mechanical_prefix_expansions(self):
+        guards = {**PHYSICS_NIGHTMARE_PREFIX_GUARD, **MATH_PREFIX_GUARD}
+        for rel_path, prefix in guards.items():
             with self.subTest(path=rel_path):
                 names = [row["概念中文名"].strip() for row in self.read_rows(rel_path)]
                 prefixed = [name for name in names if name.startswith(prefix) and name != prefix]
                 self.assertLessEqual(len(prefixed), 3, prefixed[:5])
+
+    def test_chinese_names_only_keep_allowed_ascii_abbreviations(self):
+        offenders = []
+        for file in self.word_files():
+            for row in self.read_rows(file):
+                name = row["概念中文名"].strip()
+                tokens = re.findall(r"[A-Za-z][A-Za-z0-9]*", name)
+                bad_tokens = [
+                    token
+                    for token in tokens
+                    if token not in ALLOWED_CHINESE_NAME_ASCII_TOKENS and len(token) > 1
+                ]
+                if bad_tokens:
+                    offenders.append((str(file.relative_to(ROOT)), name, bad_tokens))
+        self.assertEqual(offenders, [])
+
+    def test_chinese_names_do_not_use_known_bad_translations(self):
+        offenders = []
+        for file in self.word_files():
+            for row in self.read_rows(file):
+                name = row["概念中文名"].strip()
+                bad_fragments = [fragment for fragment in BANNED_CHINESE_NAME_FRAGMENTS if fragment in name]
+                if bad_fragments:
+                    offenders.append((str(file.relative_to(ROOT)), name, bad_fragments))
+        self.assertEqual(offenders, [])
 
     def test_clue_true_random_filters_nightmare_terms(self):
         app = BonusGuessApp.__new__(BonusGuessApp)
@@ -140,6 +358,10 @@ class TermLibraryExpansionTests(unittest.TestCase):
             if folder.is_dir() and folder.name.startswith(difficulty):
                 files.extend(sorted(folder.glob("*.csv")))
         return files
+
+    @staticmethod
+    def word_files():
+        return sorted((ROOT / "words").rglob("*.csv"))
 
 
 if __name__ == "__main__":
