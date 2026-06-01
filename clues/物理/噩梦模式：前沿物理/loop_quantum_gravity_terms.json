@@ -1,0 +1,2693 @@
+{
+  "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+  "entries": [
+    {
+      "chinese_name": "圈量子引力",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "圈量子引力是把广义相对论写成联络动力学后进行背景无关量子化的方案，基本对象不是度规微扰，而是环量和通量的代数。典型几何谱为 $A(S)=8\\pi\\gamma\\ell_P^2\\sum_i\\sqrt{j_i(j_i+1)}$，其中 $S$ 是曲面，$j_i$ 是穿过曲面的边自旋，$\\gamma$ 为巴贝罗-伊米尔齐参数，$\\ell_P$ 为普朗克长度。\n\n它把空间几何编码在自旋网络上，动力学由约束或自旋泡沫振幅给出，强调量子几何先于经典时空。在具体构造中，这一对象还要同规范不变性、图细化和约束实施方式配合使用，避免把坐标选择误认为物理自由度。半经典分析会继续检查期望值、涨落和粗粒化极限，确认它是否能逼近平滑时空。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "圈量子引力",
+          "url": "https://www.baidu.com/s?wd=%E5%9C%88%E9%87%8F%E5%AD%90%E5%BC%95%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "圈量子引力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9C%88%E9%87%8F%E5%AD%90%E5%BC%95%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "loop quantum gravity",
+          "url": "https://en.wikipedia.org/w/index.php?search=loop%20quantum%20gravity"
+        }
+      ]
+    },
+    {
+      "chinese_name": "阿什特卡变量",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "阿什特卡变量把三维空间几何改写为规范联络与致密化三脚架的相空间变量，使正则广义相对论接近杨-米尔斯理论。实形式常写成 $A_a^i=\\Gamma_a^i+\\gamma K_a^i$，其中 $\\Gamma_a^i$ 是由三脚架决定的自旋联络，$K_a^i$ 与外曲率有关，$\\gamma$ 是巴贝罗-伊米尔齐参数。\n\n与共轭变量 $E^a_i$ 配对后，高斯、微分同胚和哈密顿约束都可用规范几何语言表达，是自旋网络量子化的入口。它的细节通常依赖图的组合结构以及表示标签的耦合方式，而不是某个预设背景网格。研究中会比较不同正则化和内积选择，观察谱、算符定义与经典几何极限是否保持一致。在后续分析中，常把它放进相干态或截断复形里检验；若期望值能稳定随尺度变化，才有资格解释为经典几何的近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阿什特卡变量",
+          "url": "https://www.baidu.com/s?wd=%E9%98%BF%E4%BB%80%E7%89%B9%E5%8D%A1%E5%8F%98%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阿什特卡变量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%BF%E4%BB%80%E7%89%B9%E5%8D%A1%E5%8F%98%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ashtekar variable",
+          "url": "https://en.wikipedia.org/w/index.php?search=ashtekar%20variable"
+        }
+      ]
+    },
+    {
+      "chinese_name": "连接变量",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "连接变量是正则圈量子引力中描述平行移动的规范场，代替三维度规成为基本构型变量。沿路径 $e$ 的环量写作 $h_e[A]=\\mathcal P\\exp\\int_e A$，其中 $A$ 是 $SU(2)$ 联络，$\\mathcal P$ 表示路径排序，$h_e$ 给出内部自旋指标沿边的输运。与穿过曲面的通量变量构成闭合代数后，它们避开了局域场值算符的困难，并把量子态自然压缩到图上的柱函数。\n\n从相空间角度看，该概念同时包含构型变量和动量变量的配对关系，因而会影响泊松代数、量子表示和可观测量定义。真正的物理含义只有在约束被恰当实施后才会稳定下来。它还提示一个重要限制：运动学谱本身不等于动力学预言，只有与哈密顿约束或泡沫振幅结合后，才会产生真正的演化信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "连接变量",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%9E%E6%8E%A5%E5%8F%98%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "连接变量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%9E%E6%8E%A5%E5%8F%98%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "connection variables",
+          "url": "https://en.wikipedia.org/w/index.php?search=connection%20variables"
+        }
+      ]
+    },
+    {
+      "chinese_name": "自旋网络",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "自旋网络是圈量子引力的正交基态，由图、边上的 $SU(2)$ 表示和节点处交织子组成。基函数可记为 $\\Psi_{\\Gamma,j,i}[A]=\\bigotimes_e D^{j_e}(h_e[A])\\cdot\\bigotimes_v i_v$，其中 $\\Gamma$ 是图，$j_e$ 是边表示，$i_v$ 把入射表示收缩成规范不变张量。边穿过曲面贡献面积，节点贡献体积，因此图不是嵌在背景空间上的格子，而是量子几何关系本身的载体。\n\n在协变图像中，它还要能嵌入泡沫历史或边界振幅，使三维量子几何与四维离散时空相互匹配。大自旋渐近、非退化鞍点和相位选择常被用来检验这种匹配是否可靠。因此阅读这类公式时，需同时看清内部指标、空间指标和图标签各自的角色，三者混淆会导致错误的几何解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自旋网络",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E6%97%8B%E7%BD%91%E7%BB%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自旋网络",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E6%97%8B%E7%BD%91%E7%BB%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "spin network",
+          "url": "https://en.wikipedia.org/w/index.php?search=spin%20network"
+        }
+      ]
+    },
+    {
+      "chinese_name": "自旋泡沫",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "自旋泡沫是自旋网络随量子动力学演化形成的二维复形，面、边、顶点分别携带表示、交织子和局域振幅。配分函数常写作 $Z=\\sum_{j_f,i_e}\\prod_f A_f\\prod_e A_e\\prod_v A_v$，其中 $f,e,v$ 标记泡沫的面、边、顶点，$j_f$ 与 $i_e$ 是离散几何数据。它提供协变路径积分图像，把四维几何的求和替换为对标记复形的求和，并在大自旋极限中恢复雷吉作用量。\n\n若从离散几何理解，这一结构承载的是面积、法向量、二面角或体积等局域数据，而非普通坐标距离。与雷吉几何的差别常出现在形状匹配、闭合条件和相邻胞腔粘合方式上。许多具体结果会随正则化方案出现有限差别，研究重点是这些差别能否被重整化、边界条件或物理内积吸收。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自旋泡沫",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E6%97%8B%E6%B3%A1%E6%B2%AB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自旋泡沫",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E6%97%8B%E6%B3%A1%E6%B2%AB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "spin bubble",
+          "url": "https://en.wikipedia.org/w/index.php?search=spin%20bubble"
+        }
+      ]
+    },
+    {
+      "chinese_name": "SU2联络",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "SU2联络是在空间切片上取值于 $\\mathfrak{su}(2)$ 的规范联络，描述内部三脚架基底如何随位置旋转。它的曲率为 $F^i_{ab}=\\partial_aA^i_b-\\partial_bA^i_a+\\epsilon^i{}_{jk}A^j_aA^k_b$，其中 $A^i_a$ 是联络分量，$\\epsilon^i{}_{jk}$ 是李代数结构常数。时规范把洛伦兹内部群降到 $SU(2)$ 后，这个联络成为环量变量的来源，也让面积、体积等几何算符落在紧群表示论中。\n\n在黑洞或宇宙学应用中，它往往提供普朗克尺度的截断、态计数或有效动力学修正。相关结论需要区分完整理论、对称约化模型和半经典有效方程，三者的控制条件并不相同。在量子几何图像里，局域平滑性不是预设前提，而是大量节点和边在低曲率态中共同表现出的有效性质。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "SU2联络",
+          "url": "https://www.baidu.com/s?wd=SU2%E8%81%94%E7%BB%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "SU2联络",
+          "url": "https://zh.wikipedia.org/w/index.php?search=SU2%E8%81%94%E7%BB%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "su2 contact",
+          "url": "https://en.wikipedia.org/w/index.php?search=su2%20contact"
+        }
+      ]
+    },
+    {
+      "chinese_name": "环量",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "环量是联络沿一条有向路径的平行输运，记录规范场的积分效应而非单点值。其定义为 $h_e[A]=\\mathcal P\\exp\\int_e A_a^i\\tau_i dx^a$，其中 $e$ 是路径，$\\tau_i$ 是 $\\mathfrak{su}(2)$ 生成元，$\\mathcal P$ 保持路径顺序。圈量子引力选择环量作为基本变量，是因为它在量子理论中可作为良好乘法算符，并且闭合路径的迹直接捕捉曲率与规范不变量。\n\n代数上，它与紧群表示、交织子空间或洛伦兹表示的约化相连，因此许多几何量表现为有限维矩阵问题。谱的离散性来自表示论，而连续时空只在大量自由度的集体极限中出现。这一点也使它适合描述普朗克尺度附近的区域，因为经典度规退化时，环量和通量变量仍能保持明确的代数定义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "环量",
+          "url": "https://www.baidu.com/s?wd=%E7%8E%AF%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "环量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%8E%AF%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "holonomy",
+          "url": "https://en.wikipedia.org/w/index.php?search=holonomy"
+        }
+      ]
+    },
+    {
+      "chinese_name": "通量变量",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "通量变量是致密化三脚架穿过二维曲面的积分，量子化后生成对环量的左、右不变微分。常写作 $E_i(S)=\\int_S \\epsilon_{abc}E^a_i dx^b\\wedge dx^c$，其中 $S$ 是曲面，$E^a_i$ 编码空间面积元与内部方向。它不是通常电磁通量，而是几何动量变量；当曲面被自旋网络边穿过时，通量算符作用在相应 $SU(2)$ 表示上，从而产生面积谱和角动量耦合规则。\n\n在重整化和粗粒化讨论中，该对象会随尺度变化获得有效描述，局域定义未必直接延伸到宏观几何。关键问题是大量微观标签能否产生稳定相、长程关联和正确的广义协变动力学。若把它用于黑洞或宇宙学模型，还要区分边界自由度、体自由度和对称约化自由度，否则态计数和有效方程会被混用。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "通量变量",
+          "url": "https://www.baidu.com/s?wd=%E9%80%9A%E9%87%8F%E5%8F%98%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "通量变量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%80%9A%E9%87%8F%E5%8F%98%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "flux variable",
+          "url": "https://en.wikipedia.org/w/index.php?search=flux%20variable"
+        }
+      ]
+    },
+    {
+      "chinese_name": "面积算符",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "面积算符把经典曲面面积写成通量的平方根并在自旋网络基上对角化。若曲面 $S$ 被若干边穿过，谱为 $\\hat A(S)|\\Gamma\\rangle=8\\pi\\gamma\\ell_P^2\\sum_p\\sqrt{j_p(j_p+1)}|\\Gamma\\rangle$，其中 $p$ 是穿刺点，$j_p$ 是边自旋。这个结果说明面积不连续地取值，量子由 $SU(2)$ 角动量表示给出；零自旋边不贡献面积，节点处切向边也需按通量方向细分处理。\n\n它也揭示了背景无关量子化的张力：同一公式必须同时尊重内部规范、空间同胚和时间重参数化。任何局域算符若没有说明其关系参考系或边界条件，都只能算运动学对象。从表示论角度看，半整数自旋、交织子和群积分共同承担几何信息，连续坐标只在粗粒化叙述中重新出现。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "面积算符",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%A2%E7%A7%AF%E7%AE%97%E7%AC%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "面积算符",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%A2%E7%A7%AF%E7%AE%97%E7%AC%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "area operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=area%20operator"
+        }
+      ]
+    },
+    {
+      "chinese_name": "体积算符",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "体积算符量子化的是三脚架行列式的积分，贡献集中在自旋网络的非平凡节点上。典型结构为 $\\hat V_R=\\sum_{v\\in R}\\sqrt{|\\hat q_v|}$，其中 $R$ 是空间区域，$\\hat q_v$ 由入射边的 $SU(2)$ 生成元三重积构成。三价规范不变节点的体积常为零，而四价及更高价节点携带真正三维几何信息。\n\n不同正则化给出细节差异，但共同点是体积谱由节点交织子空间中的矩阵对角化决定。实际计算常在固定图、截断泡沫或相干态族中完成，再考察结果对细化和正则化的依赖。这个过程把严格定义和物理直觉分开处理，使模型既可计算又能接受经典极限检验。这类对象的可靠性通常由三个检验支撑：约束代数是否闭合，半经典极限是否正确，粗粒化后是否存在稳定的宏观相。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "体积算符",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%93%E7%A7%AF%E7%AE%97%E7%AC%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "体积算符",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%93%E7%A7%AF%E7%AE%97%E7%AC%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "volume operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=volume%20operator"
+        }
+      ]
+    },
+    {
+      "chinese_name": "几何量子化",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "几何量子化在这里指把面积、体积、角度等经典三维几何函数提升为作用在自旋网络上的算符。核心泊松括号为 $\\{A^i_a(x),E^b_j(y)\\}=8\\pi G\\gamma\\delta^b_a\\delta^i_j\\delta(x,y)$，其中 $A$ 是联络，$E$ 是致密化三脚架。量子化并不从固定背景度规出发，而是先量子化环量-通量代数，再由这些算符重建离散几何谱；因此几何本身成为量子可观测结构。\n\n在具体构造中，这一对象还要同规范不变性、图细化和约束实施方式配合使用，避免把坐标选择误认为物理自由度。半经典分析会继续检查期望值、涨落和粗粒化极限，确认它是否能逼近平滑时空。这也要求在比较不同模型时说明所用图、边界态和调节子，因为这些选择会改变中间表达，却不应改变约束解空间中的物理内容。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "几何量子化",
+          "url": "https://www.baidu.com/s?wd=%E5%87%A0%E4%BD%95%E9%87%8F%E5%AD%90%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "几何量子化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%A0%E4%BD%95%E9%87%8F%E5%AD%90%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "geometry quantization",
+          "url": "https://en.wikipedia.org/w/index.php?search=geometry%20quantization"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子几何",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子几何是圈量子引力中由非对易几何算符定义的空间结构，而不是经典流形上小涨落的集合。面积和体积满足如 $[\\hat E_i(S),\\hat h_e]\\ne0$ 的环量-通量代数，其中 $\\hat E_i(S)$ 是通量算符，$\\hat h_e$ 是边环量。自旋网络给出几何的本征基，边自旋决定穿刺面积，节点交织子决定局部体积。\n\n经典连续几何只在大量自旋和合适相干态的极限中作为有效描述浮现。它的细节通常依赖图的组合结构以及表示标签的耦合方式，而不是某个预设背景网格。研究中会比较不同正则化和内积选择，观察谱、算符定义与经典几何极限是否保持一致。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子几何",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E5%87%A0%E4%BD%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子几何",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E5%87%A0%E4%BD%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum geometry",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20geometry"
+        }
+      ]
+    },
+    {
+      "chinese_name": "离散谱",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "离散谱指几何算符的本征值呈可数分布，典型例子是面积谱。面积本征值含有 $\\sqrt{j(j+1)}$，即 $A_j=8\\pi\\gamma\\ell_P^2\\sqrt{j(j+1)}$，其中 $j$ 是半整数自旋表示。离散性来自紧群 $SU(2)$ 的表示论，而非人为格点截断；空间图可以任意细化，但单个穿刺贡献的几何量受普朗克尺度控制。\n\n它为黑洞熵计数和宇宙学反弹中的最小面积尺度提供量子输入。从相空间角度看，该概念同时包含构型变量和动量变量的配对关系，因而会影响泊松代数、量子表示和可观测量定义。真正的物理含义只有在约束被恰当实施后才会稳定下来。它还提示一个重要限制：运动学谱本身不等于动力学预言，只有与哈密顿约束或泡沫振幅结合后，才会产生真正的演化信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "离散谱",
+          "url": "https://www.baidu.com/s?wd=%E7%A6%BB%E6%95%A3%E8%B0%B1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "离散谱",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A6%BB%E6%95%A3%E8%B0%B1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "discrete spectrum",
+          "url": "https://en.wikipedia.org/w/index.php?search=discrete%20spectrum"
+        }
+      ]
+    },
+    {
+      "chinese_name": "图态",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "图态是定义在某一固定图 $\\Gamma$ 上的柱函数态，依赖有限条边的环量而非全空间连续场值。可写作 $\\Psi_\\Gamma[A]=\\psi(h_{e_1}[A],\\ldots,h_{e_n}[A])$，其中 $e_k$ 是图的边，$\\psi$ 是 $SU(2)^n$ 上的平方可积函数。图态构成投影极限希尔伯特空间的局部坐标片；改变图会改变自由度分解，但圆柱一致性保证同一物理态可在细化图上兼容表示。\n\n在协变图像中，它还要能嵌入泡沫历史或边界振幅，使三维量子几何与四维离散时空相互匹配。大自旋渐近、非退化鞍点和相位选择常被用来检验这种匹配是否可靠。因此阅读这类公式时，需同时看清内部指标、空间指标和图标签各自的角色，三者混淆会导致错误的几何解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "图态",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%BE%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "图态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%BE%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "graph state",
+          "url": "https://en.wikipedia.org/w/index.php?search=graph%20state"
+        }
+      ]
+    },
+    {
+      "chinese_name": "边标记",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "边标记是自旋网络每条边携带的 $SU(2)$ 不可约表示，通常记为半整数 $j_e$。沿边的矩阵元为 $D^{j_e}(h_e)$，其中 $h_e$ 是环量，$D^{j_e}$ 是自旋 $j_e$ 表示。边标记控制该边穿过曲面时的面积贡献，也决定节点处可允许的角动量耦合。\n\n它不是边的普通长度标签；长度与体积还依赖相邻节点交织子和图的组合结构，不能仅由单条边自旋确定。若从离散几何理解，这一结构承载的是面积、法向量、二面角或体积等局域数据，而非普通坐标距离。与雷吉几何的差别常出现在形状匹配、闭合条件和相邻胞腔粘合方式上。许多具体结果会随正则化方案出现有限差别，研究重点是这些差别能否被重整化、边界条件或物理内积吸收。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "边标记",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%B9%E6%A0%87%E8%AE%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "边标记",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%B9%E6%A0%87%E8%AE%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "edge mark",
+          "url": "https://en.wikipedia.org/w/index.php?search=edge%20mark"
+        }
+      ]
+    },
+    {
+      "chinese_name": "节点交织子",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "节点交织子是把入射边的 $SU(2)$ 表示张量积收缩为规范不变对象的张量，保证高斯约束在节点处成立。它属于 $\\mathrm{Inv}(\\bigotimes_{e\\supset v}V_{j_e})$，其中 $V_{j_e}$ 是边表示空间，$\\mathrm{Inv}$ 表示群作用下的不变子空间。交织子编码多面体面的法向量闭合条件，因此决定局部量子体积和角度信息。\n\n三价节点交织子通常唯一，而高价节点拥有非平凡内部形状自由度。在黑洞或宇宙学应用中，它往往提供普朗克尺度的截断、态计数或有效动力学修正。相关结论需要区分完整理论、对称约化模型和半经典有效方程，三者的控制条件并不相同。在量子几何图像里，局域平滑性不是预设前提，而是大量节点和边在低曲率态中共同表现出的有效性质。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "节点交织子",
+          "url": "https://www.baidu.com/s?wd=%E8%8A%82%E7%82%B9%E4%BA%A4%E7%BB%87%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "节点交织子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%8A%82%E7%82%B9%E4%BA%A4%E7%BB%87%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "node interleave",
+          "url": "https://en.wikipedia.org/w/index.php?search=node%20interleave"
+        }
+      ]
+    },
+    {
+      "chinese_name": "交织子空间",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "交织子空间是给定节点入射自旋后所有规范不变耦合方式的线性空间。形式上 $\\mathcal H_v=\\mathrm{Inv}_{SU(2)}(V_{j_1}\\otimes\\cdots\\otimes V_{j_n})$，其中 $n$ 是节点价数，$V_{j_k}$ 是自旋表示。这个空间的维数给出节点处可区分的量子形状数目；在多面体解释中，面积由入射自旋固定，交织子描述满足闭合条件后的形状模。\n\n体积算符通常正是在该空间中成为有限维矩阵。代数上，它与紧群表示、交织子空间或洛伦兹表示的约化相连，因此许多几何量表现为有限维矩阵问题。谱的离散性来自表示论，而连续时空只在大量自由度的集体极限中出现。这一点也使它适合描述普朗克尺度附近的区域，因为经典度规退化时，环量和通量变量仍能保持明确的代数定义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "交织子空间",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%A4%E7%BB%87%E5%AD%90%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "交织子空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%A4%E7%BB%87%E5%AD%90%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "interlaced subspace",
+          "url": "https://en.wikipedia.org/w/index.php?search=interlaced%20subspace"
+        }
+      ]
+    },
+    {
+      "chinese_name": "投影自旋网络",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "投影自旋网络用于洛伦兹协变形式，把 $SL(2,\\mathbb C)$ 表示沿图边的数据投影到节点处的 $SU(2)$ 子群结构。其态可示意为 $\\Psi_{\\Gamma,\\rho,j}[g_e,x_v]$，其中 $g_e\\in SL(2,\\mathbb C)$，$x_v$ 选择内部时间法向，$j$ 标记投影后的旋量分量。它把四维协变性和正则自旋网络联系起来，使边界态能同时携带洛伦兹表示与通常的空间几何谱，是 EPRL 振幅的边界语言。\n\n在重整化和粗粒化讨论中，该对象会随尺度变化获得有效描述，局域定义未必直接延伸到宏观几何。关键问题是大量微观标签能否产生稳定相、长程关联和正确的广义协变动力学。若把它用于黑洞或宇宙学模型，还要区分边界自由度、体自由度和对称约化自由度，否则态计数和有效方程会被混用。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "投影自旋网络",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%95%E5%BD%B1%E8%87%AA%E6%97%8B%E7%BD%91%E7%BB%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "投影自旋网络",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%95%E5%BD%B1%E8%87%AA%E6%97%8B%E7%BD%91%E7%BB%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "projection spin network",
+          "url": "https://en.wikipedia.org/w/index.php?search=projection%20spin%20network"
+        }
+      ]
+    },
+    {
+      "chinese_name": "柱函数",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "柱函数是只通过有限图上的有限个环量依赖联络的函数，是圈量子引力构造希尔伯特空间的基本可测函数。若图为 $\\Gamma$，则 $\\Psi[A]=\\psi(h_{e_1}[A],\\ldots,h_{e_n}[A])$，其中 $\\psi$ 定义在 $SU(2)^n$ 上。所有连续场自由度被投影到图的有限群变量上，随后通过图细化的投影系统恢复无限维结构。\n\n柱函数的乘法、内积和自旋网络展开都依赖 Haar 测度与圆柱一致性。它也揭示了背景无关量子化的张力：同一公式必须同时尊重内部规范、空间同胚和时间重参数化。任何局域算符若没有说明其关系参考系或边界条件，都只能算运动学对象。从表示论角度看，半整数自旋、交织子和群积分共同承担几何信息，连续坐标只在粗粒化叙述中重新出现。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "柱函数",
+          "url": "https://www.baidu.com/s?wd=%E6%9F%B1%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "柱函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9F%B1%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bar function",
+          "url": "https://en.wikipedia.org/w/index.php?search=bar%20function"
+        }
+      ]
+    },
+    {
+      "chinese_name": "圆柱一致性",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "圆柱一致性要求同一联络函数在粗图和细化图上的表示给出相同内积与概率解释。若 $p_{\\Gamma'\\Gamma}$ 是从细图到粗图的投影，函数需满足 $\\psi_\\Gamma=\\psi_{\\Gamma'}\\circ p_{\\Gamma'\\Gamma}$，其中 $\\Gamma'$ 细化 $\\Gamma$。该条件保证添加虚边或拆分边不会引入新的物理依赖，是定义阿什特卡-莱万多夫斯基测度和投影极限希尔伯特空间的关键。\n\n没有它，不同图上的量子态无法拼成统一理论。实际计算常在固定图、截断泡沫或相干态族中完成，再考察结果对细化和正则化的依赖。这个过程把严格定义和物理直觉分开处理，使模型既可计算又能接受经典极限检验。这类对象的可靠性通常由三个检验支撑：约束代数是否闭合，半经典极限是否正确，粗粒化后是否存在稳定的宏观相。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "圆柱一致性",
+          "url": "https://www.baidu.com/s?wd=%E5%9C%86%E6%9F%B1%E4%B8%80%E8%87%B4%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "圆柱一致性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9C%86%E6%9F%B1%E4%B8%80%E8%87%B4%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cylindrical consistency",
+          "url": "https://en.wikipedia.org/w/index.php?search=cylindrical%20consistency"
+        }
+      ]
+    },
+    {
+      "chinese_name": "阿什特卡-莱万多夫斯基测度",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "阿什特卡-莱万多夫斯基测度是广义联络空间上的自然测度，使柱函数的内积化为有限个紧群 Haar 积分。对图态有 $\\langle\\psi|\\phi\\rangle=\\int_{SU(2)^n}\\overline{\\psi(g_e)}\\phi(g_e)\\prod_e dg_e$，其中 $dg_e$ 是每条边上的归一化 Haar 测度。它不依赖背景度规，并在图细化下圆柱一致；自旋网络因此成为正交基。\n\n这个测度定义的是量子构型空间，不等同于经典光滑联络上的函数测度。在具体构造中，这一对象还要同规范不变性、图细化和约束实施方式配合使用，避免把坐标选择误认为物理自由度。半经典分析会继续检查期望值、涨落和粗粒化极限，确认它是否能逼近平滑时空。这也要求在比较不同模型时说明所用图、边界态和调节子，因为这些选择会改变中间表达，却不应改变约束解空间中的物理内容。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阿什特卡-莱万多夫斯基测度",
+          "url": "https://www.baidu.com/s?wd=%E9%98%BF%E4%BB%80%E7%89%B9%E5%8D%A1-%E8%8E%B1%E4%B8%87%E5%A4%9A%E5%A4%AB%E6%96%AF%E5%9F%BA%E6%B5%8B%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阿什特卡-莱万多夫斯基测度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%BF%E4%BB%80%E7%89%B9%E5%8D%A1-%E8%8E%B1%E4%B8%87%E5%A4%9A%E5%A4%AB%E6%96%AF%E5%9F%BA%E6%B5%8B%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ashtekarlewandowskicedu",
+          "url": "https://en.wikipedia.org/w/index.php?search=ashtekarlewandowskicedu"
+        }
+      ]
+    },
+    {
+      "chinese_name": "高斯约束",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "高斯约束表达内部 $SU(2)$ 规范旋转的不变性，是正则圈量子引力中最接近杨-米尔斯理论的约束。经典形式为 $G_i=D_aE^a_i=0$，其中 $D_a$ 是由联络 $A_a^i$ 定义的协变导数，$E^a_i$ 是致密化三脚架。量子态满足它时，节点处入射边的角动量必须耦合成 singlet，即由交织子收缩。\n\n它约束内部基底选择，不直接施加空间微分同胚或哈密顿演化。它的细节通常依赖图的组合结构以及表示标签的耦合方式，而不是某个预设背景网格。研究中会比较不同正则化和内积选择，观察谱、算符定义与经典几何极限是否保持一致。在后续分析中，常把它放进相干态或截断复形里检验；若期望值能稳定随尺度变化，才有资格解释为经典几何的近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "高斯约束",
+          "url": "https://www.baidu.com/s?wd=%E9%AB%98%E6%96%AF%E7%BA%A6%E6%9D%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "高斯约束",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%AB%98%E6%96%AF%E7%BA%A6%E6%9D%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gaussian constraints",
+          "url": "https://en.wikipedia.org/w/index.php?search=gaussian%20constraints"
+        }
+      ]
+    },
+    {
+      "chinese_name": "微分同胚约束",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "微分同胚约束生成空间切片上的坐标重标记，要求物理态不依赖图在流形中的具体嵌入坐标。其形式可写为 $V_a=F^i_{ab}E^b_i=0$，其中 $F^i_{ab}$ 是联络曲率，$E^b_i$ 是几何动量。量子处理中常把自旋网络按空间微分同胚群平均，得到只保留节点连接关系和结/交结构的 s-knot 态。\n\n它不同于哈密顿约束，后者负责法向形变和动力学。从相空间角度看，该概念同时包含构型变量和动量变量的配对关系，因而会影响泊松代数、量子表示和可观测量定义。真正的物理含义只有在约束被恰当实施后才会稳定下来。它还提示一个重要限制：运动学谱本身不等于动力学预言，只有与哈密顿约束或泡沫振幅结合后，才会产生真正的演化信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "微分同胚约束",
+          "url": "https://www.baidu.com/s?wd=%E5%BE%AE%E5%88%86%E5%90%8C%E8%83%9A%E7%BA%A6%E6%9D%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "微分同胚约束",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BE%AE%E5%88%86%E5%90%8C%E8%83%9A%E7%BA%A6%E6%9D%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "diffeomorphism constraints",
+          "url": "https://en.wikipedia.org/w/index.php?search=diffeomorphism%20constraints"
+        }
+      ]
+    },
+    {
+      "chinese_name": "哈密顿约束",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "哈密顿约束是正则引力中最困难的约束，生成空间切片的法向形变，并把动力学编码为零哈密顿条件。Ashtekar-Barbero 变量下核心项含 $H[N]\\sim\\int N\\epsilon_{ijk}E^a_iE^b_jF^k_{ab}/\\sqrt{\\det E}$，其中 $N$ 是 lapse 函数，$F$ 是联络曲率。量子化需用小环表示曲率、用体积算符处理反三脚架因子。\n\n它决定自旋网络如何被局域重连或产生新边，是约束代数异常问题的中心。在协变图像中，它还要能嵌入泡沫历史或边界振幅，使三维量子几何与四维离散时空相互匹配。大自旋渐近、非退化鞍点和相位选择常被用来检验这种匹配是否可靠。因此阅读这类公式时，需同时看清内部指标、空间指标和图标签各自的角色，三者混淆会导致错误的几何解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "哈密顿约束",
+          "url": "https://www.baidu.com/s?wd=%E5%93%88%E5%AF%86%E9%A1%BF%E7%BA%A6%E6%9D%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "哈密顿约束",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%93%88%E5%AF%86%E9%A1%BF%E7%BA%A6%E6%9D%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hamiltonian constraint",
+          "url": "https://en.wikipedia.org/w/index.php?search=hamiltonian%20constraint"
+        }
+      ]
+    },
+    {
+      "chinese_name": "主约束方案",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "主约束方案把无穷多个局域哈密顿约束合并成一个正的全局约束，试图避免量子约束代数的分布值困难。常写作 $\\mathbf M=\\int d^3x\\,H(x)^2/\\sqrt{q(x)}$，其中 $H(x)$ 是哈密顿约束密度，$q$ 是空间度规行列式。物理态由 $\\hat{\\mathbf M}\\psi=0$ 给出，而不是逐点施加 $\\hat H(x)\\psi=0$。\n\n这种做法把求解问题转为寻找正自伴算符的零谱，有助于定义物理内积。若从离散几何理解，这一结构承载的是面积、法向量、二面角或体积等局域数据，而非普通坐标距离。与雷吉几何的差别常出现在形状匹配、闭合条件和相邻胞腔粘合方式上。许多具体结果会随正则化方案出现有限差别，研究重点是这些差别能否被重整化、边界条件或物理内积吸收。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "主约束方案",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%BB%E7%BA%A6%E6%9D%9F%E6%96%B9%E6%A1%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "主约束方案",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%BB%E7%BA%A6%E6%9D%9F%E6%96%B9%E6%A1%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "master constraint scheme",
+          "url": "https://en.wikipedia.org/w/index.php?search=master%20constraint%20scheme"
+        }
+      ]
+    },
+    {
+      "chinese_name": "狄拉克可观测量",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "狄拉克可观测量是在全部一阶约束生成的规范变换下不变的相空间函数，代表真正物理自由度。条件可写成 $\\{O,C_I\\}\\approx0$，其中 $C_I$ 包括高斯、微分同胚和哈密顿约束，$\\approx$ 表示在约束面上成立。\n\n由于哈密顿约束也生成时间重参数化，局域几何量通常不是狄拉克可观测量；常需用物质时钟、边界量或关系量构造。它区分了坐标描述中的量与可被理论内部定义的量。在黑洞或宇宙学应用中，它往往提供普朗克尺度的截断、态计数或有效动力学修正。相关结论需要区分完整理论、对称约化模型和半经典有效方程，三者的控制条件并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "狄拉克可观测量",
+          "url": "https://www.baidu.com/s?wd=%E7%8B%84%E6%8B%89%E5%85%8B%E5%8F%AF%E8%A7%82%E6%B5%8B%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "狄拉克可观测量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%8B%84%E6%8B%89%E5%85%8B%E5%8F%AF%E8%A7%82%E6%B5%8B%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dirac observable",
+          "url": "https://en.wikipedia.org/w/index.php?search=dirac%20observable"
+        }
+      ]
+    },
+    {
+      "chinese_name": "蒂曼技巧",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "蒂曼技巧用体积和联络的泊松括号重写反三脚架因子，使哈密顿约束可用环量和体积算符正则化。关键恒等式为 $\\epsilon^{abc}\\epsilon_{ijk}E^j_bE^k_c/\\sqrt{\\det E}\\propto\\{A^i_a,V\\}$，其中 $V$ 是空间体积，$A$ 是联络。量子化时泊松括号替换为对易子，小环环量近似曲率。\n\n这个技巧避免直接定义 $1/\\sqrt{\\det E}$，但也带来排序、调节子去除和约束代数闭合的细节选择。代数上，它与紧群表示、交织子空间或洛伦兹表示的约化相连，因此许多几何量表现为有限维矩阵问题。谱的离散性来自表示论，而连续时空只在大量自由度的集体极限中出现。这一点也使它适合描述普朗克尺度附近的区域，因为经典度规退化时，环量和通量变量仍能保持明确的代数定义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "蒂曼技巧",
+          "url": "https://www.baidu.com/s?wd=%E8%92%82%E6%9B%BC%E6%8A%80%E5%B7%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "蒂曼技巧",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%92%82%E6%9B%BC%E6%8A%80%E5%B7%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tieman technique",
+          "url": "https://en.wikipedia.org/w/index.php?search=tieman%20technique"
+        }
+      ]
+    },
+    {
+      "chinese_name": "体积正则化",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "体积正则化是把经典体积积分分割为小胞腔，再用通量算符三重积定义局域节点贡献的过程。离散形式可记为 $V_R=\\lim_{\\epsilon\\to0}\\sum_I\\sqrt{|\\epsilon_{ijk}E_i(S^1_I)E_j(S^2_I)E_k(S^3_I)|}$，其中三个小面包围胞腔 $I$。在量子理论中，只有含非共面入射边的节点给出非零作用。\n\n正则化的选择影响常数和节点算符形式，却保留体积来自三维通量取向的核心结构。在重整化和粗粒化讨论中，该对象会随尺度变化获得有效描述，局域定义未必直接延伸到宏观几何。关键问题是大量微观标签能否产生稳定相、长程关联和正确的广义协变动力学。若把它用于黑洞或宇宙学模型，还要区分边界自由度、体自由度和对称约化自由度，否则态计数和有效方程会被混用。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "体积正则化",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%93%E7%A7%AF%E6%AD%A3%E5%88%99%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "体积正则化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%93%E7%A7%AF%E6%AD%A3%E5%88%99%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "volume regularization",
+          "url": "https://en.wikipedia.org/w/index.php?search=volume%20regularization"
+        }
+      ]
+    },
+    {
+      "chinese_name": "自旋泡沫顶点振幅",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "自旋泡沫顶点振幅是四维离散时空中一个基本四单纯形的量子权重，连接相邻边界自旋网络数据。EPRL 形式可概括为 $A_v(j_f,i_e)=\\mathrm{Tr}\\prod_e f_\\gamma i_e$，其中 $j_f$ 标记面，$i_e$ 是交织子，$f_\\gamma$ 是把 $SU(2)$ 数据嵌入洛伦兹表示的映射。\n\n顶点振幅决定局域动力学，面和边振幅只补充测度权重；在大自旋极限中，它振荡如 $e^{iS_{Regge}}$，对应离散爱因斯坦作用量。它也揭示了背景无关量子化的张力：同一公式必须同时尊重内部规范、空间同胚和时间重参数化。任何局域算符若没有说明其关系参考系或边界条件，都只能算运动学对象。从表示论角度看，半整数自旋、交织子和群积分共同承担几何信息，连续坐标只在粗粒化叙述中重新出现。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自旋泡沫顶点振幅",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E6%97%8B%E6%B3%A1%E6%B2%AB%E9%A1%B6%E7%82%B9%E6%8C%AF%E5%B9%85%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自旋泡沫顶点振幅",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E6%97%8B%E6%B3%A1%E6%B2%AB%E9%A1%B6%E7%82%B9%E6%8C%AF%E5%B9%85"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "spin bubble vertex amplitude",
+          "url": "https://en.wikipedia.org/w/index.php?search=spin%20bubble%20vertex%20amplitude"
+        }
+      ]
+    },
+    {
+      "chinese_name": "EPRL模型",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "EPRL模型是四维协变圈量子引力中广用的自旋泡沫模型，通过简约约束把 BF 理论的洛伦兹表示限制到几何扇区。其核心映射满足 $Y_\\gamma:|j,m\\rangle\\mapsto |(\\rho,k)=(\\gamma j,j);j,m\\rangle$，其中 $j$ 是 $SU(2)$ 自旋，$\\rho,k$ 标记 $SL(2,\\mathbb C)$ 主系列表示，$\\gamma$ 是伊米尔齐参数。\n\n它保留正则 LQG 的边界希尔伯特空间，同时在半经典极限给出雷吉几何，是连接正则和协变方案的标准桥梁。实际计算常在固定图、截断泡沫或相干态族中完成，再考察结果对细化和正则化的依赖。这个过程把严格定义和物理直觉分开处理，使模型既可计算又能接受经典极限检验。这类对象的可靠性通常由三个检验支撑：约束代数是否闭合，半经典极限是否正确，粗粒化后是否存在稳定的宏观相。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "EPRL模型",
+          "url": "https://www.baidu.com/s?wd=EPRL%E6%A8%A1%E5%9E%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "EPRL模型",
+          "url": "https://zh.wikipedia.org/w/index.php?search=EPRL%E6%A8%A1%E5%9E%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "EPRL model",
+          "url": "https://en.wikipedia.org/w/index.php?search=EPRL%20model"
+        }
+      ]
+    },
+    {
+      "chinese_name": "FK模型",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "FK模型是与 EPRL 接近的四维自旋泡沫模型，采用相干态路径积分来实施简约约束。顶点振幅常写成 $A_v=\\int\\prod_e dg_e\\prod_f \\langle n_{ef}|g_e^{-1}g_{e'}|n_{e'f}\\rangle^{2j_f}$，其中 $g_e$ 是群元，$|n\\rangle$ 是自旋相干态，$j_f$ 给出三角形面积。相干态变量让离散法向量和几何闭合条件显式出现，便于分析大自旋渐近和非几何构型的抑制。\n\n在具体构造中，这一对象还要同规范不变性、图细化和约束实施方式配合使用，避免把坐标选择误认为物理自由度。半经典分析会继续检查期望值、涨落和粗粒化极限，确认它是否能逼近平滑时空。这也要求在比较不同模型时说明所用图、边界态和调节子，因为这些选择会改变中间表达，却不应改变约束解空间中的物理内容。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "FK模型",
+          "url": "https://www.baidu.com/s?wd=FK%E6%A8%A1%E5%9E%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "FK模型",
+          "url": "https://zh.wikipedia.org/w/index.php?search=FK%E6%A8%A1%E5%9E%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "FK model",
+          "url": "https://en.wikipedia.org/w/index.php?search=FK%20model"
+        }
+      ]
+    },
+    {
+      "chinese_name": "巴雷特-克莱恩模型",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "巴雷特-克莱恩模型是早期四维自旋泡沫模型，通过强实施简约约束把 BF 理论限制到简单表示。其洛伦兹表示满足 $k=0$ 或相应欧氏简单条件，可概括为 $B^{IJ}\\wedge B^{KL}\\epsilon_{IJKL}\\sim0$，其中 $B$ 是 BF 理论的二形式。模型优点是几何解释清晰，但强约束使四面体交织子自由度过度冻结，难以恢复完整的半经典传播子。\n\n因此它常作为理解后续 EPRL/FK 模型的历史基准。它的细节通常依赖图的组合结构以及表示标签的耦合方式，而不是某个预设背景网格。研究中会比较不同正则化和内积选择，观察谱、算符定义与经典几何极限是否保持一致。在后续分析中，常把它放进相干态或截断复形里检验；若期望值能稳定随尺度变化，才有资格解释为经典几何的近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "巴雷特-克莱恩模型",
+          "url": "https://www.baidu.com/s?wd=%E5%B7%B4%E9%9B%B7%E7%89%B9-%E5%85%8B%E8%8E%B1%E6%81%A9%E6%A8%A1%E5%9E%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "巴雷特-克莱恩模型",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B7%B4%E9%9B%B7%E7%89%B9-%E5%85%8B%E8%8E%B1%E6%81%A9%E6%A8%A1%E5%9E%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "barrett crane model",
+          "url": "https://en.wikipedia.org/w/index.php?search=barrett%20crane%20model"
+        }
+      ]
+    },
+    {
+      "chinese_name": "彭扎诺-雷吉模型",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "彭扎诺-雷吉模型是三维欧氏量子引力的状态和模型，把三角剖分边长量子化为 $SU(2)$ 自旋。配分函数含 $Z=\\sum_{j_e}\\prod_e(2j_e+1)\\prod_t\\{6j\\}_t$，其中 $j_e$ 标记边，$\\{6j\\}_t$ 是四面体对应的六 j 符号。三维引力没有局域引力子，自旋求和主要编码拓扑和平坦联络。\n\n其大自旋渐近给出三维雷吉作用量，是自旋泡沫半经典分析的原型。从相空间角度看，该概念同时包含构型变量和动量变量的配对关系，因而会影响泊松代数、量子表示和可观测量定义。真正的物理含义只有在约束被恰当实施后才会稳定下来。它还提示一个重要限制：运动学谱本身不等于动力学预言，只有与哈密顿约束或泡沫振幅结合后，才会产生真正的演化信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "彭扎诺-雷吉模型",
+          "url": "https://www.baidu.com/s?wd=%E5%BD%AD%E6%89%8E%E8%AF%BA-%E9%9B%B7%E5%90%89%E6%A8%A1%E5%9E%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "彭扎诺-雷吉模型",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BD%AD%E6%89%8E%E8%AF%BA-%E9%9B%B7%E5%90%89%E6%A8%A1%E5%9E%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "penzano regi model",
+          "url": "https://en.wikipedia.org/w/index.php?search=penzano%20regi%20model"
+        }
+      ]
+    },
+    {
+      "chinese_name": "图拉耶夫-维罗模型",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "图拉耶夫-维罗模型是彭扎诺-雷吉模型的量子群正则化版本，对应带正宇宙常数的三维欧氏引力。它把 $SU(2)$ 替换为 $U_q(\\mathfrak{su}(2))$，其中 $q=e^{i\\pi/(k+2)}$，$k$ 截断允许的自旋。有限表示集使配分函数有限，并给出三维流形拓扑不变量。\n\n物理上，量子群变形把宇宙常数引入自旋泡沫权重，避免了原模型中大自旋求和的红外发散。在协变图像中，它还要能嵌入泡沫历史或边界振幅，使三维量子几何与四维离散时空相互匹配。大自旋渐近、非退化鞍点和相位选择常被用来检验这种匹配是否可靠。因此阅读这类公式时，需同时看清内部指标、空间指标和图标签各自的角色，三者混淆会导致错误的几何解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "图拉耶夫-维罗模型",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%BE%E6%8B%89%E8%80%B6%E5%A4%AB-%E7%BB%B4%E7%BD%97%E6%A8%A1%E5%9E%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "图拉耶夫-维罗模型",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%BE%E6%8B%89%E8%80%B6%E5%A4%AB-%E7%BB%B4%E7%BD%97%E6%A8%A1%E5%9E%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "turaev viro model",
+          "url": "https://en.wikipedia.org/w/index.php?search=turaev%20viro%20model"
+        }
+      ]
+    },
+    {
+      "chinese_name": "雷吉作用量",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "雷吉作用量是在分片平直单纯形几何上离散化爱因斯坦-希尔伯特作用量的形式。四维中常写为 $S_R=\\sum_f A_f\\Theta_f$，其中 $f$ 是三角面，$A_f$ 是面积，$\\Theta_f$ 是围绕该面的缺角。曲率不再分布在每一点，而集中在余维二的铰链上。\n\n自旋泡沫顶点振幅在大自旋极限出现 $e^{\\pm iS_R}$，说明离散量子几何的相位能恢复经典广义相对论的驻相方程。若从离散几何理解，这一结构承载的是面积、法向量、二面角或体积等局域数据，而非普通坐标距离。与雷吉几何的差别常出现在形状匹配、闭合条件和相邻胞腔粘合方式上。许多具体结果会随正则化方案出现有限差别，研究重点是这些差别能否被重整化、边界条件或物理内积吸收。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "雷吉作用量",
+          "url": "https://www.baidu.com/s?wd=%E9%9B%B7%E5%90%89%E4%BD%9C%E7%94%A8%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "雷吉作用量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9B%B7%E5%90%89%E4%BD%9C%E7%94%A8%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "reggie dose",
+          "url": "https://en.wikipedia.org/w/index.php?search=reggie%20dose"
+        }
+      ]
+    },
+    {
+      "chinese_name": "离散四面体",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "离散四面体在自旋泡沫中通常对应边界自旋网络的一个四价节点，其四个面面积由入射自旋给出。闭合条件写为 $\\sum_{f=1}^4 \\vec J_f=0$，其中 $\\vec J_f$ 是面法向量的量子角动量，长度由 $j_f$ 决定。满足闭合后，交织子空间描述四面体形状的量子自由度。\n\n它不是嵌入欧氏空间的固定小块，而是由面积和法向量代数定义的量子多面体，是四单纯形边界几何的基本单元。在黑洞或宇宙学应用中，它往往提供普朗克尺度的截断、态计数或有效动力学修正。相关结论需要区分完整理论、对称约化模型和半经典有效方程，三者的控制条件并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "离散四面体",
+          "url": "https://www.baidu.com/s?wd=%E7%A6%BB%E6%95%A3%E5%9B%9B%E9%9D%A2%E4%BD%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "离散四面体",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A6%BB%E6%95%A3%E5%9B%9B%E9%9D%A2%E4%BD%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "discrete tetrahedron",
+          "url": "https://en.wikipedia.org/w/index.php?search=discrete%20tetrahedron"
+        }
+      ]
+    },
+    {
+      "chinese_name": "四维单纯形",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "四维单纯形是四维三角剖分的最小胞腔，由五个四面体围成，在自旋泡沫中对应一个顶点振幅。其离散几何可由三角面面积 $A_f$ 和四面体法向量重建，并在约束满足时给出缺角 $\\Theta_f$。\n\n顶点振幅的渐近相位 $S_R=\\sum_f A_f\\Theta_f$ 使用这些数据，其中 $f$ 遍历单纯形三角面。四维单纯形把局域时空曲率集中到边界三角面上，是从 BF 变量走向雷吉几何的局域检验场。代数上，它与紧群表示、交织子空间或洛伦兹表示的约化相连，因此许多几何量表现为有限维矩阵问题。谱的离散性来自表示论，而连续时空只在大量自由度的集体极限中出现。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "四维单纯形",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%9B%E7%BB%B4%E5%8D%95%E7%BA%AF%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "四维单纯形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%9B%E7%BB%B4%E5%8D%95%E7%BA%AF%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "four dimensional simplex",
+          "url": "https://en.wikipedia.org/w/index.php?search=four%20dimensional%20simplex"
+        }
+      ]
+    },
+    {
+      "chinese_name": "泡沫面",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "泡沫面是自旋泡沫二维复形中的二维胞腔，通常携带一个表示标签并对应离散三角面的历史。配分函数中的面权重写作 $\\prod_f A_f(j_f)$，其中 $j_f$ 是该面的自旋表示，$A_f$ 常取与表示维数相关的因子。\n\n几何上，$j_f$ 控制对应三角面的面积量子；动力学上，泡沫面把相邻顶点和边的振幅串联起来。它不是普通连续世界面，而是自旋网络边在协变演化中扫出的组合面。在重整化和粗粒化讨论中，该对象会随尺度变化获得有效描述，局域定义未必直接延伸到宏观几何。关键问题是大量微观标签能否产生稳定相、长程关联和正确的广义协变动力学。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "泡沫面",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A1%E6%B2%AB%E9%9D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "泡沫面",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A1%E6%B2%AB%E9%9D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "foam noodles",
+          "url": "https://en.wikipedia.org/w/index.php?search=foam%20noodles"
+        }
+      ]
+    },
+    {
+      "chinese_name": "泡沫边",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "泡沫边是一维胞腔，连接自旋泡沫顶点并作为多个泡沫面的交界，通常携带交织子数据。边振幅可写为 $A_e(i_e,j_f)$，其中 $i_e$ 是与该边对应的四面体交织子，邻接面自旋 $j_f$ 给出面面积。几何图像中，泡沫边代表一个三维多面体随离散时间传播的历史。\n\n它把相邻四单纯形的边界数据粘合起来，控制局部闭合与规范不变性，而不只是复形中的连接线。它也揭示了背景无关量子化的张力：同一公式必须同时尊重内部规范、空间同胚和时间重参数化。任何局域算符若没有说明其关系参考系或边界条件，都只能算运动学对象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "泡沫边",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A1%E6%B2%AB%E8%BE%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "泡沫边",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A1%E6%B2%AB%E8%BE%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "foam edge",
+          "url": "https://en.wikipedia.org/w/index.php?search=foam%20edge"
+        }
+      ]
+    },
+    {
+      "chinese_name": "泡沫顶点",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "泡沫顶点是自旋泡沫二维复形中若干边和面相遇的零维胞腔，承载一次局域量子几何跃迁。顶点权重记为 $A_v(j_f,i_e)$，其中邻接面自旋 $j_f$ 和边交织子 $i_e$ 构成边界自旋网络数据。四维模型中，一个顶点常对应一个四单纯形的量子振幅。\n\n顶点处的群积分和简约约束决定传播核的核心结构，因此半经典极限、引力子传播子和重整化分析都首先考察顶点行为。实际计算常在固定图、截断泡沫或相干态族中完成，再考察结果对细化和正则化的依赖。这个过程把严格定义和物理直觉分开处理，使模型既可计算又能接受经典极限检验。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "泡沫顶点",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A1%E6%B2%AB%E9%A1%B6%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "泡沫顶点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A1%E6%B2%AB%E9%A1%B6%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bubble top",
+          "url": "https://en.wikipedia.org/w/index.php?search=bubble%20top"
+        }
+      ]
+    },
+    {
+      "chinese_name": "边界自旋网络",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "边界自旋网络是自旋泡沫振幅在初末边界上诱导的量子几何态，提供路径积分的边界条件。振幅可写成 $W(\\Psi_\\Gamma)=\\sum_{\\mathcal F|\\partial\\mathcal F=\\Gamma}\\prod_fA_f\\prod_eA_e\\prod_vA_v$，其中 $\\Gamma$ 是边界图，$\\mathcal F$ 是填充它的泡沫。边界的边自旋和节点交织子给出三维几何数据，泡沫内部则对可能四维几何求和。\n\n它让协变模型可与正则希尔伯特空间直接比较。在具体构造中，这一对象还要同规范不变性、图细化和约束实施方式配合使用，避免把坐标选择误认为物理自由度。半经典分析会继续检查期望值、涨落和粗粒化极限，确认它是否能逼近平滑时空。这也要求在比较不同模型时说明所用图、边界态和调节子，因为这些选择会改变中间表达，却不应改变约束解空间中的物理内容。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "边界自旋网络",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%B9%E7%95%8C%E8%87%AA%E6%97%8B%E7%BD%91%E7%BB%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "边界自旋网络",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%B9%E7%95%8C%E8%87%AA%E6%97%8B%E7%BD%91%E7%BB%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "boundary spin network",
+          "url": "https://en.wikipedia.org/w/index.php?search=boundary%20spin%20network"
+        }
+      ]
+    },
+    {
+      "chinese_name": "半经典极限",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "半经典极限是在量子几何态中恢复经典广义相对论的极限，通常要求大自旋、低曲率和相干态涨落受控。自旋泡沫顶点渐近可写为 $A_v(\\lambda j_f)\\sim\\lambda^{-12}\\sum_\\sigma N_\\sigma e^{i\\lambda S_R^\\sigma}$，其中 $\\lambda\\to\\infty$，$S_R$ 是雷吉作用量。驻相条件给出离散爱因斯坦方程，涨落修正对应量子引力效应。\n\n该极限检验模型是否具有正确经典相位，而不只是面积谱离散。它的细节通常依赖图的组合结构以及表示标签的耦合方式，而不是某个预设背景网格。研究中会比较不同正则化和内积选择，观察谱、算符定义与经典几何极限是否保持一致。在后续分析中，常把它放进相干态或截断复形里检验；若期望值能稳定随尺度变化，才有资格解释为经典几何的近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "半经典极限",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8A%E7%BB%8F%E5%85%B8%E6%9E%81%E9%99%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "半经典极限",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8A%E7%BB%8F%E5%85%B8%E6%9E%81%E9%99%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "semi classic extreme",
+          "url": "https://en.wikipedia.org/w/index.php?search=semi%20classic%20extreme"
+        }
+      ]
+    },
+    {
+      "chinese_name": "大自旋极限",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "大自旋极限把所有表示标签按 $j_f\\mapsto\\lambda j_f$ 同比例放大，并考察 $\\lambda\\gg1$ 时振幅的驻相结构。由于面积量子满足 $A_f\\propto\\gamma\\ell_P^2 j_f$，大自旋对应几何面积远大于普朗克面积。自旋相干态下，顶点振幅的相位趋向 $S_R=\\sum_f A_f\\Theta_f$，其中 $\\Theta_f$ 是二面角缺角。\n\n这个极限区分几何构型、退化构型和非几何鞍点，是半经典一致性的核心测试。从相空间角度看，该概念同时包含构型变量和动量变量的配对关系，因而会影响泊松代数、量子表示和可观测量定义。真正的物理含义只有在约束被恰当实施后才会稳定下来。它还提示一个重要限制：运动学谱本身不等于动力学预言，只有与哈密顿约束或泡沫振幅结合后，才会产生真正的演化信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "大自旋极限",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%A7%E8%87%AA%E6%97%8B%E6%9E%81%E9%99%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "大自旋极限",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%A7%E8%87%AA%E6%97%8B%E6%9E%81%E9%99%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "large spin limit",
+          "url": "https://en.wikipedia.org/w/index.php?search=large%20spin%20limit"
+        }
+      ]
+    },
+    {
+      "chinese_name": "编织自旋网络",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "编织自旋网络在普通自旋网络的图边上加入编织或结结构，用来研究背景无关量子几何中的拓扑激发。其拓扑数据可由编织群生成元 $\\sigma_i$ 描述，关系满足 $\\sigma_i\\sigma_{i+1}\\sigma_i=\\sigma_{i+1}\\sigma_i\\sigma_{i+1}$。这里 $\\sigma_i$ 交换相邻股线的绕行方式，不改变边自旋本身。\n\n编织结构可能在某些模型中表现为稳定准粒子自由度，但它依赖图嵌入与动力学规则，不能简单等同于标准模型粒子。在协变图像中，它还要能嵌入泡沫历史或边界振幅，使三维量子几何与四维离散时空相互匹配。大自旋渐近、非退化鞍点和相位选择常被用来检验这种匹配是否可靠。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "编织自旋网络",
+          "url": "https://www.baidu.com/s?wd=%E7%BC%96%E7%BB%87%E8%87%AA%E6%97%8B%E7%BD%91%E7%BB%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "编织自旋网络",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BC%96%E7%BB%87%E8%87%AA%E6%97%8B%E7%BD%91%E7%BB%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "braided spin network",
+          "url": "https://en.wikipedia.org/w/index.php?search=braided%20spin%20network"
+        }
+      ]
+    },
+    {
+      "chinese_name": "群场论",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "群场论把自旋泡沫看成场论费曼图，对群流形上的张量场进行量子化。基本场可写为 $\\varphi(g_1,\\ldots,g_d)$，其中每个 $g_i\\in G$ 表示一个单纯形面的平行输运数据，$d$ 与基本胞腔维数有关。作用量含二次传播子和非局域相互作用，费曼展开自动生成带标记的二维复形。\n\n它为自旋泡沫提供重整化和多体凝聚态工具，并允许把连续时空视为大量几何量子的相。若从离散几何理解，这一结构承载的是面积、法向量、二面角或体积等局域数据，而非普通坐标距离。与雷吉几何的差别常出现在形状匹配、闭合条件和相邻胞腔粘合方式上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "群场论",
+          "url": "https://www.baidu.com/s?wd=%E7%BE%A4%E5%9C%BA%E8%AE%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "群场论",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BE%A4%E5%9C%BA%E8%AE%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "group field theory",
+          "url": "https://en.wikipedia.org/w/index.php?search=group%20field%20theory"
+        }
+      ]
+    },
+    {
+      "chinese_name": "张量模型",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "张量模型是矩阵模型的高维推广，用多指标张量生成随机单纯复形的求和。典型作用量写作 $S[T]=T\\bar T+\\lambda T^{d+1}+\\bar\\lambda\\bar T^{d+1}$，其中 $T_{a_1\\cdots a_d}$ 是秩 $d$ 张量，非局域指标收缩编码单纯形粘合。与群场论相比，纯张量模型常缺少群上的几何数据，但其大 $N$ 展开和 melonic 图控制性强。\n\n它提供量子几何组合求和的统计骨架，也用于研究自旋泡沫重整化。在黑洞或宇宙学应用中，它往往提供普朗克尺度的截断、态计数或有效动力学修正。相关结论需要区分完整理论、对称约化模型和半经典有效方程，三者的控制条件并不相同。在量子几何图像里，局域平滑性不是预设前提，而是大量节点和边在低曲率态中共同表现出的有效性质。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "张量模型",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%A0%E9%87%8F%E6%A8%A1%E5%9E%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "张量模型",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%A0%E9%87%8F%E6%A8%A1%E5%9E%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tensor model",
+          "url": "https://en.wikipedia.org/w/index.php?search=tensor%20model"
+        }
+      ]
+    },
+    {
+      "chinese_name": "GFT凝聚态",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "GFT凝聚态把大量群场论几何量子放入同一单粒子波函数，作为连续、近均匀空间的多体近似。相干态形式为 $|\\sigma\\rangle=\\exp(\\int dg^d\\,\\sigma(g_I)\\hat\\varphi^\\dagger(g_I))|0\\rangle$，其中 $\\sigma$ 是凝聚波函数，$\\hat\\varphi^\\dagger$ 产生一个量子单纯形。平均场方程可导出有效宇宙学演化，几何体积由粒子数和单体体积期望给出。\n\n它把早期宇宙动力学转化为量子几何多体相的流体极限。代数上，它与紧群表示、交织子空间或洛伦兹表示的约化相连，因此许多几何量表现为有限维矩阵问题。谱的离散性来自表示论，而连续时空只在大量自由度的集体极限中出现。这一点也使它适合描述普朗克尺度附近的区域，因为经典度规退化时，环量和通量变量仍能保持明确的代数定义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "GFT凝聚态",
+          "url": "https://www.baidu.com/s?wd=GFT%E5%87%9D%E8%81%9A%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "GFT凝聚态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=GFT%E5%87%9D%E8%81%9A%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "GFT condensate state",
+          "url": "https://en.wikipedia.org/w/index.php?search=GFT%20condensate%20state"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子黎曼几何",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子黎曼几何是用非对易算符和自旋网络数据替代经典度规张量的几何理论。经典面积函数 $A(S)=\\int_S\\sqrt{n_aE^a_i n_bE^b_i}$ 被提升为面积算符，其中 $E^a_i$ 是三脚架通量，$n_a$ 是曲面法向。量子理论中，曲面面积、区域体积和角度不再由光滑度规同时给定，而由图边和节点的表示数据分别编码。\n\n连续黎曼几何需在相干态、粗粒化和大尺度极限下恢复。在重整化和粗粒化讨论中，该对象会随尺度变化获得有效描述，局域定义未必直接延伸到宏观几何。关键问题是大量微观标签能否产生稳定相、长程关联和正确的广义协变动力学。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子黎曼几何",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E9%BB%8E%E6%9B%BC%E5%87%A0%E4%BD%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子黎曼几何",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E9%BB%8E%E6%9B%BC%E5%87%A0%E4%BD%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum riemann geometry",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20riemann%20geometry"
+        }
+      ]
+    },
+    {
+      "chinese_name": "聚合量子化",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "聚合量子化采用与薛定谔表示不等价的非正则表示，基本算符是平移算符而非动量本身。简单模型中 $\\hat U(\\lambda)|x\\rangle=|x+\\lambda\\rangle$，其中 $\\lambda$ 是离散平移尺度，$|x\\rangle$ 属于非可分基。由于 $\\lambda\\to0$ 的弱连续性缺失，动量需由有限平移近似。\n\n圈量子宇宙学把联络变量替换为正弦函数正是这种思想的体现，导致高曲率区的有效动力学被截断。它也揭示了背景无关量子化的张力：同一公式必须同时尊重内部规范、空间同胚和时间重参数化。任何局域算符若没有说明其关系参考系或边界条件，都只能算运动学对象。从表示论角度看，半整数自旋、交织子和群积分共同承担几何信息，连续坐标只在粗粒化叙述中重新出现。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "聚合量子化",
+          "url": "https://www.baidu.com/s?wd=%E8%81%9A%E5%90%88%E9%87%8F%E5%AD%90%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "聚合量子化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%81%9A%E5%90%88%E9%87%8F%E5%AD%90%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "aggregation quantization",
+          "url": "https://en.wikipedia.org/w/index.php?search=aggregation%20quantization"
+        }
+      ]
+    },
+    {
+      "chinese_name": "环量子宇宙学",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "环量子宇宙学把圈量子引力的聚合表示用于对称约化的宇宙模型，尤其是均匀各向同性背景。有效哈密顿量中曲率替换为 $c\\mapsto\\sin(\\bar\\mu c)/\\bar\\mu$，其中 $c$ 是约化联络，$\\bar\\mu$ 由最小面积间隙决定。这种环量化使能量密度达到临界值时引力项改变符号，经典大爆炸奇点被反弹取代。\n\n它不是完整 LQG 的严格推论，但保留了面积间隙和聚合动力学的核心效应。实际计算常在固定图、截断泡沫或相干态族中完成，再考察结果对细化和正则化的依赖。这个过程把严格定义和物理直觉分开处理，使模型既可计算又能接受经典极限检验。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "环量子宇宙学",
+          "url": "https://www.baidu.com/s?wd=%E7%8E%AF%E9%87%8F%E5%AD%90%E5%AE%87%E5%AE%99%E5%AD%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "环量子宇宙学",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%8E%AF%E9%87%8F%E5%AD%90%E5%AE%87%E5%AE%99%E5%AD%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ring quantum cosmology",
+          "url": "https://en.wikipedia.org/w/index.php?search=ring%20quantum%20cosmology"
+        }
+      ]
+    },
+    {
+      "chinese_name": "反弹宇宙",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "反弹宇宙指收缩相在高密度处转为膨胀相的量子引力图像，在环量子宇宙学中由有效弗里德曼方程实现。关键式为 $H^2=(8\\pi G/3)\\rho(1-\\rho/\\rho_c)$，其中 $H$ 是哈勃率，$\\rho$ 是能量密度，$\\rho_c$ 是临界密度。当 $\\rho=\\rho_c$ 时 $H=0$ 且时间导数可为正，奇点被有限体积状态替代。\n\n反弹来自环量修正，而不是人为加入负能量物质或经典曲率项。在具体构造中，这一对象还要同规范不变性、图细化和约束实施方式配合使用，避免把坐标选择误认为物理自由度。半经典分析会继续检查期望值、涨落和粗粒化极限，确认它是否能逼近平滑时空。这也要求在比较不同模型时说明所用图、边界态和调节子，因为这些选择会改变中间表达，却不应改变约束解空间中的物理内容。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反弹宇宙",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E5%BC%B9%E5%AE%87%E5%AE%99%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反弹宇宙",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E5%BC%B9%E5%AE%87%E5%AE%99"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bounce universe",
+          "url": "https://en.wikipedia.org/w/index.php?search=bounce%20universe"
+        }
+      ]
+    },
+    {
+      "chinese_name": "有效弗里德曼方程",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "有效弗里德曼方程是在环量子宇宙学中把量子差分动力学近似为连续背景演化的方程。常用形式为 $H^2=\\frac{8\\pi G}{3}\\rho\\left(1-\\frac{\\rho}{\\rho_c}\\right)$，其中 $H=\\dot a/a$，$a$ 是尺度因子，$\\rho_c$ 由面积间隙和伊米尔齐参数确定。括号中的修正项在低密度趋近一，恢复经典广义相对论；在高密度使膨胀率归零并触发反弹。\n\n它概括了聚合量子化对均匀宇宙的主要可计算后果。它的细节通常依赖图的组合结构以及表示标签的耦合方式，而不是某个预设背景网格。研究中会比较不同正则化和内积选择，观察谱、算符定义与经典几何极限是否保持一致。在后续分析中，常把它放进相干态或截断复形里检验；若期望值能稳定随尺度变化，才有资格解释为经典几何的近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "有效弗里德曼方程",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%89%E6%95%88%E5%BC%97%E9%87%8C%E5%BE%B7%E6%9B%BC%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "有效弗里德曼方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%89%E6%95%88%E5%BC%97%E9%87%8C%E5%BE%B7%E6%9B%BC%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "effective friedman equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=effective%20friedman%20equation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "巴贝罗-伊米尔齐参数",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "巴贝罗-伊米尔齐参数是实 Ashtekar-Barbero 联络中的无量纲参数，控制联络中外曲率部分的权重。定义式 $A_a^i=\\Gamma_a^i+\\gamma K_a^i$ 中，$\\gamma$ 就是该参数，$\\Gamma$ 为自旋联络，$K$ 为外曲率一形式。经典真空方程对不同 $\\gamma$ 等价，但量子面积谱、体积谱和黑洞熵计数都显含它。\n\n其物理地位类似拓扑角与量子表示选择的混合问题，仍是 LQG 解释中的敏感点。从相空间角度看，该概念同时包含构型变量和动量变量的配对关系，因而会影响泊松代数、量子表示和可观测量定义。真正的物理含义只有在约束被恰当实施后才会稳定下来。它还提示一个重要限制：运动学谱本身不等于动力学预言，只有与哈密顿约束或泡沫振幅结合后，才会产生真正的演化信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "巴贝罗-伊米尔齐参数",
+          "url": "https://www.baidu.com/s?wd=%E5%B7%B4%E8%B4%9D%E7%BD%97-%E4%BC%8A%E7%B1%B3%E5%B0%94%E9%BD%90%E5%8F%82%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "巴贝罗-伊米尔齐参数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B7%B4%E8%B4%9D%E7%BD%97-%E4%BC%8A%E7%B1%B3%E5%B0%94%E9%BD%90%E5%8F%82%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "barbero imirzi parameters",
+          "url": "https://en.wikipedia.org/w/index.php?search=barbero%20imirzi%20parameters"
+        }
+      ]
+    },
+    {
+      "chinese_name": "黑洞熵计数",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "黑洞熵计数在圈量子引力中把孤立视界的面积视为自旋网络穿刺点面积之和，并统计兼容边界条件的微观态。约束为 $A_H=8\\pi\\gamma\\ell_P^2\\sum_p\\sqrt{j_p(j_p+1)}$，其中 $p$ 是视界穿刺点，$j_p$ 是穿刺自旋。边界自由度由陈-西蒙斯理论描述，投影约束限制总内部角动量。\n\n计数在大面积极限给出 $S\\propto A_H/(4\\ell_P^2)$，对数修正依赖规范群和计数方案。在协变图像中，它还要能嵌入泡沫历史或边界振幅，使三维量子几何与四维离散时空相互匹配。大自旋渐近、非退化鞍点和相位选择常被用来检验这种匹配是否可靠。因此阅读这类公式时，需同时看清内部指标、空间指标和图标签各自的角色，三者混淆会导致错误的几何解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "黑洞熵计数",
+          "url": "https://www.baidu.com/s?wd=%E9%BB%91%E6%B4%9E%E7%86%B5%E8%AE%A1%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "黑洞熵计数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%BB%91%E6%B4%9E%E7%86%B5%E8%AE%A1%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "black hole entropy count",
+          "url": "https://en.wikipedia.org/w/index.php?search=black%20hole%20entropy%20count"
+        }
+      ]
+    },
+    {
+      "chinese_name": "孤立视界",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "孤立视界是局域定义的黑洞边界，允许外部辐射存在，但要求视界本身处于内禀平衡。几何条件常写作 $\\theta_{(\\ell)}=0$ 且 $\\mathcal L_\\ell q_{ab}=0$，其中 $\\ell^a$ 是视界零法向，$q_{ab}$ 是截面退化度规。LQG 中该边界条件把体自旋网络穿刺与视界上的陈-西蒙斯曲率联系起来。\n\n它不依赖全局事件视界，因此适合量子计数，并把黑洞熵转化为有限边界态的组合问题。若从离散几何理解，这一结构承载的是面积、法向量、二面角或体积等局域数据，而非普通坐标距离。与雷吉几何的差别常出现在形状匹配、闭合条件和相邻胞腔粘合方式上。许多具体结果会随正则化方案出现有限差别，研究重点是这些差别能否被重整化、边界条件或物理内积吸收。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "孤立视界",
+          "url": "https://www.baidu.com/s?wd=%E5%AD%A4%E7%AB%8B%E8%A7%86%E7%95%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "孤立视界",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AD%A4%E7%AB%8B%E8%A7%86%E7%95%8C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "isolated horizon",
+          "url": "https://en.wikipedia.org/w/index.php?search=isolated%20horizon"
+        }
+      ]
+    },
+    {
+      "chinese_name": "视界自旋点",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "视界自旋点是自旋网络边穿过黑洞孤立视界的 puncture，每个点携带一个 $SU(2)$ 自旋并贡献面积。单点贡献为 $a_j=8\\pi\\gamma\\ell_P^2\\sqrt{j(j+1)}$，其中 $j$ 是穿刺边表示。视界总面积固定时，需要统计所有自旋分配和磁量子数满足边界投影约束的方式。\n\n自旋点不是经典粒子落在视界上，而是体量子几何与边界陈-西蒙斯自由度耦合的离散交点。在黑洞或宇宙学应用中，它往往提供普朗克尺度的截断、态计数或有效动力学修正。相关结论需要区分完整理论、对称约化模型和半经典有效方程，三者的控制条件并不相同。在量子几何图像里，局域平滑性不是预设前提，而是大量节点和边在低曲率态中共同表现出的有效性质。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "视界自旋点",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%86%E7%95%8C%E8%87%AA%E6%97%8B%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "视界自旋点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%86%E7%95%8C%E8%87%AA%E6%97%8B%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "horizon spin point",
+          "url": "https://en.wikipedia.org/w/index.php?search=horizon%20spin%20point"
+        }
+      ]
+    },
+    {
+      "chinese_name": "陈-西蒙斯视界态",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "陈-西蒙斯视界态描述孤立视界上的边界自由度，穿刺点作为带表示的源耦合到二维截面上的规范场。作用量为 $S_{CS}=\\frac{k}{4\\pi}\\int \\mathrm{Tr}(A\\wedge dA+\\frac23A\\wedge A\\wedge A)$，其中 $k$ 是与视界面积相关的能级，$A$ 是边界联络。量子态空间由带 puncture 的陈-西蒙斯理论给出，维数进入黑洞熵计数。\n\n它把体几何的穿刺面积和边界拓扑场论精确粘合起来。代数上，它与紧群表示、交织子空间或洛伦兹表示的约化相连，因此许多几何量表现为有限维矩阵问题。谱的离散性来自表示论，而连续时空只在大量自由度的集体极限中出现。这一点也使它适合描述普朗克尺度附近的区域，因为经典度规退化时，环量和通量变量仍能保持明确的代数定义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "陈-西蒙斯视界态",
+          "url": "https://www.baidu.com/s?wd=%E9%99%88-%E8%A5%BF%E8%92%99%E6%96%AF%E8%A7%86%E7%95%8C%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "陈-西蒙斯视界态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%99%88-%E8%A5%BF%E8%92%99%E6%96%AF%E8%A7%86%E7%95%8C%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "chern simons horizon state",
+          "url": "https://en.wikipedia.org/w/index.php?search=chern%20simons%20horizon%20state"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子面积间隙",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子面积间隙是非零面积算符本征值中的最小尺度，通常来自 $j=1/2$ 的单个穿刺贡献。若采用基本谱，$\\Delta=4\\sqrt3\\pi\\gamma\\ell_P^2$，其中 $\\gamma$ 是伊米尔齐参数，$\\ell_P$ 是普朗克长度。它为环量子宇宙学中的 $\\bar\\mu$ 方案提供面积基准，也限制黑洞视界穿刺的最小贡献。\n\n面积间隙不是固定背景晶格间距；图仍可任意细化，但携带非零自旋的几何激发有最小面积单位。在重整化和粗粒化讨论中，该对象会随尺度变化获得有效描述，局域定义未必直接延伸到宏观几何。关键问题是大量微观标签能否产生稳定相、长程关联和正确的广义协变动力学。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子面积间隙",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E9%9D%A2%E7%A7%AF%E9%97%B4%E9%9A%99%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子面积间隙",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E9%9D%A2%E7%A7%AF%E9%97%B4%E9%9A%99"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum area gap",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20area%20gap"
+        }
+      ]
+    },
+    {
+      "chinese_name": "长度算符",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "长度算符试图在量子几何中定义曲线长度，比面积和体积更依赖曲线与图的局域关系。经典长度可写为 $L(c)=\\int_c ds\\sqrt{q_{ab}\\dot c^a\\dot c^b}$，其中 $q_{ab}$ 是空间度规，$c$ 是曲线。用三脚架重写后需处理逆体积和通量插入，因此量子定义存在多种正则化。\n\n其谱依赖曲线穿过节点或边的方式，常用于检验自旋网络能否重建完整三维度规，而不只给出面和体积数据。它也揭示了背景无关量子化的张力：同一公式必须同时尊重内部规范、空间同胚和时间重参数化。任何局域算符若没有说明其关系参考系或边界条件，都只能算运动学对象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "长度算符",
+          "url": "https://www.baidu.com/s?wd=%E9%95%BF%E5%BA%A6%E7%AE%97%E7%AC%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "长度算符",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%95%BF%E5%BA%A6%E7%AE%97%E7%AC%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "length operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=length%20operator"
+        }
+      ]
+    },
+    {
+      "chinese_name": "角度算符",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "角度算符描述自旋网络节点处两个量子面的夹角，通常由对应通量角动量的内积定义。若两束边合成角动量 $\\vec J_1,\\vec J_2$，则 $\\cos\\hat\\theta=(\\vec J_1\\cdot\\vec J_2)/\\sqrt{J_1^2J_2^2}$，其中 $J^2$ 的本征值为 $j(j+1)$。角度谱由节点交织子空间决定，而不是单条边自旋单独决定。\n\n它说明局部形状信息藏在多条边的耦合中，是量子多面体解释的重要部分。实际计算常在固定图、截断泡沫或相干态族中完成，再考察结果对细化和正则化的依赖。这个过程把严格定义和物理直觉分开处理，使模型既可计算又能接受经典极限检验。这类对象的可靠性通常由三个检验支撑：约束代数是否闭合，半经典极限是否正确，粗粒化后是否存在稳定的宏观相。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "角度算符",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%92%E5%BA%A6%E7%AE%97%E7%AC%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "角度算符",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%92%E5%BA%A6%E7%AE%97%E7%AC%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "angle operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=angle%20operator"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子三角形",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子三角形通常指由三条 $SU(2)$ 角动量满足闭合条件形成的最小面几何单元。闭合式为 $\\vec J_1+\\vec J_2+\\vec J_3=0$，其中每个 $\\vec J_i$ 的长度由自旋 $j_i$ 决定。三角不等式来自角动量耦合规则，面积和角度则由 Casimir 与内积算符给出。\n\n在自旋泡沫中，三角面作为四单纯形的铰链携带自旋标签；它的量子化既是表示论问题，也是离散曲率承载位置的几何问题。在具体构造中，这一对象还要同规范不变性、图细化和约束实施方式配合使用，避免把坐标选择误认为物理自由度。半经典分析会继续检查期望值、涨落和粗粒化极限，确认它是否能逼近平滑时空。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子三角形",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E4%B8%89%E8%A7%92%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子三角形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E4%B8%89%E8%A7%92%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum triangulated form",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20triangulated%20form"
+        }
+      ]
+    },
+    {
+      "chinese_name": "扭曲几何",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "扭曲几何用图上相邻多面体的面积和面法向量描述离散空间，允许共享面的形状从两侧看不完全一致。边数据可写为 $(j_e,n^s_e,n^t_e,\\xi_e)$，其中 $j_e$ 给出面积，$n^s,n^t$ 是源端和靶端法向量，$\\xi_e$ 是扭角。它比雷吉几何更宽松，因为只要求相邻面面积匹配，不要求完整形状匹配。\n\nLQG 相空间在固定图上自然对应扭曲几何，形状匹配约束再把它收缩到普通分片平直几何。它的细节通常依赖图的组合结构以及表示标签的耦合方式，而不是某个预设背景网格。研究中会比较不同正则化和内积选择，观察谱、算符定义与经典几何极限是否保持一致。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "扭曲几何",
+          "url": "https://www.baidu.com/s?wd=%E6%89%AD%E6%9B%B2%E5%87%A0%E4%BD%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "扭曲几何",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%AD%E6%9B%B2%E5%87%A0%E4%BD%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "twistedjihe",
+          "url": "https://en.wikipedia.org/w/index.php?search=twistedjihe"
+        }
+      ]
+    },
+    {
+      "chinese_name": "旋量网络",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "旋量网络用每条半边上的二分量旋量重写自旋网络相空间，使面积、法向量和相位都有简单表达。给定旋量 $|z\\rangle$，可构造通量 $\\vec X=\\langle z|\\vec\\sigma|z\\rangle/2$，其中 $\\vec\\sigma$ 是泡利矩阵。旋量范数给出面面积，方向给出法向量，边两端旋量通过匹配约束粘合。\n\n该表示把 $T^*SU(2)$ 的结构转化为复向量的辛约化，便于构造相干态和分析扭曲几何。从相空间角度看，该概念同时包含构型变量和动量变量的配对关系，因而会影响泊松代数、量子表示和可观测量定义。真正的物理含义只有在约束被恰当实施后才会稳定下来。它还提示一个重要限制：运动学谱本身不等于动力学预言，只有与哈密顿约束或泡沫振幅结合后，才会产生真正的演化信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "旋量网络",
+          "url": "https://www.baidu.com/s?wd=%E6%97%8B%E9%87%8F%E7%BD%91%E7%BB%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "旋量网络",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%97%8B%E9%87%8F%E7%BD%91%E7%BB%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "spinor network",
+          "url": "https://en.wikipedia.org/w/index.php?search=spinor%20network"
+        }
+      ]
+    },
+    {
+      "chinese_name": "扭量网络",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "扭量网络把洛伦兹协变离散几何写成图上的扭量变量，适合连接自旋泡沫和旋量相空间。一个扭量可记为 $Z^\\alpha=(\\omega^A,\\pi_A)$，其中 $\\omega^A$ 是旋量，$\\pi_A$ 是其共轭动量。通过简约约束，扭量的洛伦兹双矢量被限制为来自四面体面的几何 bivector。\n\n相比纯 $SU(2)$ 旋量网络，扭量网络保留 boosts 与时间法向信息，能更自然地描述协变 LQG 的边界相空间。在协变图像中，它还要能嵌入泡沫历史或边界振幅，使三维量子几何与四维离散时空相互匹配。大自旋渐近、非退化鞍点和相位选择常被用来检验这种匹配是否可靠。因此阅读这类公式时，需同时看清内部指标、空间指标和图标签各自的角色，三者混淆会导致错误的几何解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "扭量网络",
+          "url": "https://www.baidu.com/s?wd=%E6%89%AD%E9%87%8F%E7%BD%91%E7%BB%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "扭量网络",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%AD%E9%87%8F%E7%BD%91%E7%BB%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "twistor network",
+          "url": "https://en.wikipedia.org/w/index.php?search=twistor%20network"
+        }
+      ]
+    },
+    {
+      "chinese_name": "形状匹配约束",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "形状匹配约束要求相邻多面体共享的面不仅面积相同，而且边长和内角也一致，从而形成真正的雷吉几何。可示意为 $q^{s}_{ab}(f)=q^{t}_{ab}(f)$，其中 $q^s,q^t$ 是共享面从源端和靶端诱导出的二维度规。扭曲几何只满足面积匹配，因而允许两侧形状不同；施加该约束后，离散三维几何可由单一边长数据重建。\n\n它在大自旋渐近中决定哪些自旋泡沫鞍点对应非退化经典单纯形。若从离散几何理解，这一结构承载的是面积、法向量、二面角或体积等局域数据，而非普通坐标距离。与雷吉几何的差别常出现在形状匹配、闭合条件和相邻胞腔粘合方式上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "形状匹配约束",
+          "url": "https://www.baidu.com/s?wd=%E5%BD%A2%E7%8A%B6%E5%8C%B9%E9%85%8D%E7%BA%A6%E6%9D%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "形状匹配约束",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BD%A2%E7%8A%B6%E5%8C%B9%E9%85%8D%E7%BA%A6%E6%9D%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "shape matching constraints",
+          "url": "https://en.wikipedia.org/w/index.php?search=shape%20matching%20constraints"
+        }
+      ]
+    },
+    {
+      "chinese_name": "离散相空间",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "离散相空间是在固定图上把连续引力相空间截断为有限条边的环量和通量数据。基本结构为 $\\mathcal P_\\Gamma=\\prod_{e\\in\\Gamma}T^*SU(2)//SU(2)_v$，其中每条边给出一个 $T^*SU(2)$，节点处再按高斯约束做辛约化。环量描述离散联络，通量描述面法向量和面积。\n\n该空间既可解释为扭曲几何，也可作为自旋网络量子化前的经典相空间；细化图则增加可解析的几何自由度。在黑洞或宇宙学应用中，它往往提供普朗克尺度的截断、态计数或有效动力学修正。相关结论需要区分完整理论、对称约化模型和半经典有效方程，三者的控制条件并不相同。在量子几何图像里，局域平滑性不是预设前提，而是大量节点和边在低曲率态中共同表现出的有效性质。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "离散相空间",
+          "url": "https://www.baidu.com/s?wd=%E7%A6%BB%E6%95%A3%E7%9B%B8%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "离散相空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A6%BB%E6%95%A3%E7%9B%B8%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "discrete phase space",
+          "url": "https://en.wikipedia.org/w/index.php?search=discrete%20phase%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "协变LQG",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "协变LQG以自旋泡沫路径积分描述量子几何的四维演化，避免先选定外部时间参数。核心振幅为 $\\langle W|\\psi\\rangle=\\sum_{\\mathcal F:\\partial\\mathcal F=\\Gamma}\\prod_fA_f\\prod_eA_e\\prod_vA_v$，其中边界图 $\\Gamma$ 承载自旋网络态，内部泡沫 $\\mathcal F$ 对历史求和。它把 BF 理论、简约约束和洛伦兹表示组织成协变动力学。\n\n与正则 LQG 的关系通过边界希尔伯特空间和哈密顿约束核来检验。代数上，它与紧群表示、交织子空间或洛伦兹表示的约化相连，因此许多几何量表现为有限维矩阵问题。谱的离散性来自表示论，而连续时空只在大量自由度的集体极限中出现。这一点也使它适合描述普朗克尺度附近的区域，因为经典度规退化时，环量和通量变量仍能保持明确的代数定义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "协变LQG",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8F%E5%8F%98LQG%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "协变LQG",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8F%E5%8F%98LQG"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "covariant LQG",
+          "url": "https://en.wikipedia.org/w/index.php?search=covariant%20LQG"
+        }
+      ]
+    },
+    {
+      "chinese_name": "正则LQG",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "正则LQG从三加一分解的广义相对论出发，量子化空间切片上的环量-通量相空间并逐步施加约束。基本泊松括号为 $\\{h_e,E_i(S)\\}\\sim h_{e_1}\\tau_i h_{e_2}$，其中曲面 $S$ 与边 $e$ 相交时，通量在交点插入生成元 $\\tau_i$。高斯约束给出自旋网络，微分同胚约束给出图的等价类，哈密顿约束仍是动力学核心难题。\n\n该方案强调希尔伯特空间和算符定义的严格性。在重整化和粗粒化讨论中，该对象会随尺度变化获得有效描述，局域定义未必直接延伸到宏观几何。关键问题是大量微观标签能否产生稳定相、长程关联和正确的广义协变动力学。若把它用于黑洞或宇宙学模型，还要区分边界自由度、体自由度和对称约化自由度，否则态计数和有效方程会被混用。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正则LQG",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E5%88%99LQG%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正则LQG",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E5%88%99LQG"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "regular LQG",
+          "url": "https://en.wikipedia.org/w/index.php?search=regular%20LQG"
+        }
+      ]
+    },
+    {
+      "chinese_name": "洛伦兹协变联络",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "洛伦兹协变联络保留内部 $SL(2,\\mathbb C)$ 或 $SO(3,1)$ 对称，而不在一开始采用时规范降到 $SU(2)$。其曲率仍为 $F^{IJ}=d\\omega^{IJ}+\\omega^I{}_K\\wedge\\omega^{KJ}$，其中 $\\omega^{IJ}$ 是自旋联络，$I,J$ 是洛伦兹内部指标。协变联络能显式处理 boosts 与空间旋转的统一，但量子表示非紧，内积和简约约束更复杂。\n\n投影自旋网络正是为兼容协变性和 $SU(2)$ 几何谱而引入。它也揭示了背景无关量子化的张力：同一公式必须同时尊重内部规范、空间同胚和时间重参数化。任何局域算符若没有说明其关系参考系或边界条件，都只能算运动学对象。从表示论角度看，半整数自旋、交织子和群积分共同承担几何信息，连续坐标只在粗粒化叙述中重新出现。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "洛伦兹协变联络",
+          "url": "https://www.baidu.com/s?wd=%E6%B4%9B%E4%BC%A6%E5%85%B9%E5%8D%8F%E5%8F%98%E8%81%94%E7%BB%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "洛伦兹协变联络",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B4%9B%E4%BC%A6%E5%85%B9%E5%8D%8F%E5%8F%98%E8%81%94%E7%BB%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lorentz covariant liaison",
+          "url": "https://en.wikipedia.org/w/index.php?search=lorentz%20covariant%20liaison"
+        }
+      ]
+    },
+    {
+      "chinese_name": "SL2C表示",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "SL2C表示在四维自旋泡沫中描述洛伦兹群的量子自由度，通常采用主系列表示。一个表示标记为 $(\\rho,k)$，其中 $\\rho\\in\\mathbb R$，$k\\in\\mathbb Z/2$，在 $SU(2)$ 子群下分解为 $\\mathcal H_{(\\rho,k)}=\\bigoplus_{j\\ge k}\\mathcal H_j$。EPRL 简约约束选取 $\\rho=\\gamma j,k=j$ 的扇区，把正则自旋网络嵌入洛伦兹表示。\n\n非紧性使规范固定和振幅收敛成为模型构造的重要问题。实际计算常在固定图、截断泡沫或相干态族中完成，再考察结果对细化和正则化的依赖。这个过程把严格定义和物理直觉分开处理，使模型既可计算又能接受经典极限检验。这类对象的可靠性通常由三个检验支撑：约束代数是否闭合，半经典极限是否正确，粗粒化后是否存在稳定的宏观相。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "SL2C表示",
+          "url": "https://www.baidu.com/s?wd=SL2C%E8%A1%A8%E7%A4%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "SL2C表示",
+          "url": "https://zh.wikipedia.org/w/index.php?search=SL2C%E8%A1%A8%E7%A4%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "SL2C representation",
+          "url": "https://en.wikipedia.org/w/index.php?search=SL2C%20representation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "Y映射",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "Y映射是 EPRL 模型中把 $SU(2)$ 自旋网络边界态嵌入 $SL(2,\\mathbb C)$ 表示空间的线性映射。常写为 $Y_\\gamma:|j,m\\rangle\\mapsto |(\\gamma j,j);j,m\\rangle$，其中 $j,m$ 是 $SU(2)$ 自旋和磁量子数，$(\\rho,k)=(\\gamma j,j)$ 是洛伦兹主系列表示标签。它实现线性简约约束的量子版本，使协变顶点振幅仍以正则 LQG 的面积谱为边界数据。\n\nY映射的选取决定伊米尔齐参数如何进入泡沫动力学。在具体构造中，这一对象还要同规范不变性、图细化和约束实施方式配合使用，避免把坐标选择误认为物理自由度。半经典分析会继续检查期望值、涨落和粗粒化极限，确认它是否能逼近平滑时空。这也要求在比较不同模型时说明所用图、边界态和调节子，因为这些选择会改变中间表达，却不应改变约束解空间中的物理内容。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Y映射",
+          "url": "https://www.baidu.com/s?wd=Y%E6%98%A0%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Y映射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Y%E6%98%A0%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "Y map",
+          "url": "https://en.wikipedia.org/w/index.php?search=Y%20map"
+        }
+      ]
+    },
+    {
+      "chinese_name": "简约约束",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "简约约束把拓扑 BF 理论中的二形式 $B^{IJ}$ 限制为由四维四脚架楔积构成，从而恢复广义相对论的几何扇区。经典条件可写为 $B^{IJ}=\\star(e^I\\wedge e^J)$，其中 $e^I$ 是四脚架，$\\star$ 是内部霍奇对偶。若不施加该约束，BF 理论没有局域引力动力学。\n\n自旋泡沫模型的主要差异往往来自简约约束的强施加、弱施加或相干态实施方式，它决定振幅是否保留正确的半经典几何自由度。它的细节通常依赖图的组合结构以及表示标签的耦合方式，而不是某个预设背景网格。研究中会比较不同正则化和内积选择，观察谱、算符定义与经典几何极限是否保持一致。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "简约约束",
+          "url": "https://www.baidu.com/s?wd=%E7%AE%80%E7%BA%A6%E7%BA%A6%E6%9D%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "简约约束",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AE%80%E7%BA%A6%E7%BA%A6%E6%9D%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "parsimony constraint",
+          "url": "https://en.wikipedia.org/w/index.php?search=parsimony%20constraint"
+        }
+      ]
+    },
+    {
+      "chinese_name": "普莱班斯基作用量",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "普莱班斯基作用量把广义相对论写成带简约约束的 BF 理论，是自旋泡沫构造的经典起点。形式为 $S=\\int B^{IJ}\\wedge F_{IJ}-\\frac12\\phi_{IJKL}B^{IJ}\\wedge B^{KL}$，其中 $B^{IJ}$ 是二形式，$F_{IJ}$ 是洛伦兹联络曲率，$\\phi$ 是拉格朗日乘子。乘子强制 $B$ 来自四脚架楔积，使拓扑理论获得度规几何。\n\n该形式清楚分离了容易量子化的 BF 部分与产生引力动力学的约束部分。从相空间角度看，该概念同时包含构型变量和动量变量的配对关系，因而会影响泊松代数、量子表示和可观测量定义。真正的物理含义只有在约束被恰当实施后才会稳定下来。它还提示一个重要限制：运动学谱本身不等于动力学预言，只有与哈密顿约束或泡沫振幅结合后，才会产生真正的演化信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "普莱班斯基作用量",
+          "url": "https://www.baidu.com/s?wd=%E6%99%AE%E8%8E%B1%E7%8F%AD%E6%96%AF%E5%9F%BA%E4%BD%9C%E7%94%A8%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "普莱班斯基作用量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%99%AE%E8%8E%B1%E7%8F%AD%E6%96%AF%E5%9F%BA%E4%BD%9C%E7%94%A8%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "plebanski dose",
+          "url": "https://en.wikipedia.org/w/index.php?search=plebanski%20dose"
+        }
+      ]
+    },
+    {
+      "chinese_name": "BF约束",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "BF约束通常指从 BF 理论走向引力时对二形式 $B$ 施加的几何限制，也可指 BF 理论本身的平坦性方程。纯 BF 作用量为 $S_{BF}=\\int \\mathrm{Tr}(B\\wedge F)$，其中 $F$ 是联络曲率，变分给出 $F=0$ 与 $DB=0$。由于纯 BF 理论是拓扑场论，没有局域引力自由度，必须用简约约束把 $B$ 约化为四脚架楔积。\n\n自旋泡沫模型本质上是在量子层面处理这一约束的不同方案。在协变图像中，它还要能嵌入泡沫历史或边界振幅，使三维量子几何与四维离散时空相互匹配。大自旋渐近、非退化鞍点和相位选择常被用来检验这种匹配是否可靠。因此阅读这类公式时，需同时看清内部指标、空间指标和图标签各自的角色，三者混淆会导致错误的几何解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "BF约束",
+          "url": "https://www.baidu.com/s?wd=BF%E7%BA%A6%E6%9D%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "BF约束",
+          "url": "https://zh.wikipedia.org/w/index.php?search=BF%E7%BA%A6%E6%9D%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bf constraints",
+          "url": "https://en.wikipedia.org/w/index.php?search=bf%20constraints"
+        }
+      ]
+    },
+    {
+      "chinese_name": "时规范",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "时规范是在四脚架形式中固定内部时间方向，使四脚架的时间腿垂直于空间切片。条件可写为 $e^0_a=0$，其中 $a$ 是空间指标，内部指标 $0$ 表示时间方向。该规范把内部洛伦兹群的局域自由度降为 $SU(2)$ 旋转群，从而得到 Ashtekar-Barbero 联络。\n\n它简化了正则量子化和紧群表示论，但也隐藏了 boost 协变性；协变 LQG 试图在不完全依赖时规范的语言中恢复同一物理内容。若从离散几何理解，这一结构承载的是面积、法向量、二面角或体积等局域数据，而非普通坐标距离。与雷吉几何的差别常出现在形状匹配、闭合条件和相邻胞腔粘合方式上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "时规范",
+          "url": "https://www.baidu.com/s?wd=%E6%97%B6%E8%A7%84%E8%8C%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "时规范",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%97%B6%E8%A7%84%E8%8C%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "time standard",
+          "url": "https://en.wikipedia.org/w/index.php?search=time%20standard"
+        }
+      ]
+    },
+    {
+      "chinese_name": "自对偶变量",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "自对偶变量是原始 Ashtekar 形式中的复联络变量，对应伊米尔齐参数取 $\\gamma=\\pm i$。自对偶曲率满足 $\\star F^{IJ}=iF^{IJ}$，其中 $\\star$ 是内部洛伦兹代数上的对偶。使用这些变量时，哈密顿约束在形式上显著简化，接近多项式结构；代价是相空间变为复数，需要现实条件保证最终度规为实。\n\n自对偶变量在黑洞熵、解析延拓和协变振幅中仍具有重要理论吸引力。在黑洞或宇宙学应用中，它往往提供普朗克尺度的截断、态计数或有效动力学修正。相关结论需要区分完整理论、对称约化模型和半经典有效方程，三者的控制条件并不相同。在量子几何图像里，局域平滑性不是预设前提，而是大量节点和边在低曲率态中共同表现出的有效性质。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自对偶变量",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E5%AF%B9%E5%81%B6%E5%8F%98%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自对偶变量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E5%AF%B9%E5%81%B6%E5%8F%98%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "self dual variable",
+          "url": "https://en.wikipedia.org/w/index.php?search=self%20dual%20variable"
+        }
+      ]
+    },
+    {
+      "chinese_name": "实连接",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "实连接指 Ashtekar-Barbero 形式中取实伊米尔齐参数后的 $SU(2)$ 联络，是标准正则 LQG 的基本构型变量。它写作 $A_a^i=\\Gamma_a^i+\\gamma K_a^i$，其中 $\\gamma\\in\\mathbb R$，所以 $A_a^i$ 取值于紧代数 $\\mathfrak{su}(2)$。紧群使 Haar 测度、自旋网络基和离散几何谱都有严格定义。与复自对偶联络相比，实连接牺牲了哈密顿约束的多项式简洁性，却避免了现实条件在量子层面的棘手实施。\n\n代数上，它与紧群表示、交织子空间或洛伦兹表示的约化相连，因此许多几何量表现为有限维矩阵问题。谱的离散性来自表示论，而连续时空只在大量自由度的集体极限中出现。这一点也使它适合描述普朗克尺度附近的区域，因为经典度规退化时，环量和通量变量仍能保持明确的代数定义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "实连接",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%9E%E8%BF%9E%E6%8E%A5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "实连接",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%9E%E8%BF%9E%E6%8E%A5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "real connection",
+          "url": "https://en.wikipedia.org/w/index.php?search=real%20connection"
+        }
+      ]
+    },
+    {
+      "chinese_name": "复连接",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "复连接是取值于复化洛伦兹或 $SL(2,\\mathbb C)$ 结构的引力联络，原始自对偶 Ashtekar 变量就是典型例子。其形式可写为 $A^i_a=\\Gamma^i_a+iK^i_a$，其中 $\\Gamma$ 是自旋联络，$K$ 与外曲率相关。复连接使约束方程更接近多项式，也与手征分解和自对偶曲率自然匹配。\n\n困难在于量子内积必须选择合适轮廓，并施加现实条件使空间度规和外曲率回到实物理相空间。在重整化和粗粒化讨论中，该对象会随尺度变化获得有效描述，局域定义未必直接延伸到宏观几何。关键问题是大量微观标签能否产生稳定相、长程关联和正确的广义协变动力学。若把它用于黑洞或宇宙学模型，还要区分边界自由度、体自由度和对称约化自由度，否则态计数和有效方程会被混用。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "复连接",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%8D%E8%BF%9E%E6%8E%A5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "复连接",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%8D%E8%BF%9E%E6%8E%A5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "multiple joins",
+          "url": "https://en.wikipedia.org/w/index.php?search=multiple%20joins"
+        }
+      ]
+    },
+    {
+      "chinese_name": "现实条件",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "现实条件是在复 Ashtekar 变量中保证最终时空几何为实的约束。典型要求为 $E^a_i=\\bar E^a_i$ 且 $A^i_a+\\bar A^i_a=2\\Gamma^i_a(E)$，其中 $E$ 是致密化三脚架，$\\Gamma(E)$ 是由它决定的自旋联络。第一式确保空间度规实，第二式确保外曲率实。量子理论中这些条件不是简单线性算符约束，因为 $\\Gamma(E)$ 非多项式；如何与内积、自伴性和自对偶振幅兼容，是复变量方案的核心技术问题。\n\n它也揭示了背景无关量子化的张力：同一公式必须同时尊重内部规范、空间同胚和时间重参数化。任何局域算符若没有说明其关系参考系或边界条件，都只能算运动学对象。从表示论角度看，半整数自旋、交织子和群积分共同承担几何信息，连续坐标只在粗粒化叙述中重新出现。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "现实条件",
+          "url": "https://www.baidu.com/s?wd=%E7%8E%B0%E5%AE%9E%E6%9D%A1%E4%BB%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "现实条件",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%8E%B0%E5%AE%9E%E6%9D%A1%E4%BB%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "realistic conditions",
+          "url": "https://en.wikipedia.org/w/index.php?search=realistic%20conditions"
+        }
+      ]
+    },
+    {
+      "chinese_name": "织构态",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "织构态是早期 LQG 中用大量细密自旋网络边近似给定经典三维度规的半经典候选态。要求对大尺度曲面 $S$ 有 $\\langle\\hat A(S)\\rangle\\approx A_q(S)$，其中 $A_q(S)$ 是经典度规 $q_{ab}$ 给出的面积。图的微观结构在普朗克尺度振荡，但粗粒化后的面积和体积期望应逼近平滑几何。\n\n织构态强调经典空间可由离散量子线网平均产生，不过现代研究更多使用热核相干态或复ifier 方法控制涨落。实际计算常在固定图、截断泡沫或相干态族中完成，再考察结果对细化和正则化的依赖。这个过程把严格定义和物理直觉分开处理，使模型既可计算又能接受经典极限检验。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "织构态",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%87%E6%9E%84%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "织构态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%87%E6%9E%84%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "texture state",
+          "url": "https://en.wikipedia.org/w/index.php?search=texture%20state"
+        }
+      ]
+    },
+    {
+      "chinese_name": "编织激发",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "编织激发是嵌入自旋网络中由边的绕结关系携带的拓扑自由度，可能在某些动力学规则下保持稳定。编织群关系 $\\sigma_i\\sigma_j=\\sigma_j\\sigma_i$ 对 $|i-j|>1$ 成立，其中 $\\sigma_i$ 表示相邻股线交换。若哈密顿演化只作局域 Pachner 型移动，某些编织数可能难以消除，从而表现为拓扑荷。\n\n它仍是模型依赖的设想；是否能对应低能粒子，需要同时控制图同胚、约束动力学和标准模型量子数。在具体构造中，这一对象还要同规范不变性、图细化和约束实施方式配合使用，避免把坐标选择误认为物理自由度。半经典分析会继续检查期望值、涨落和粗粒化极限，确认它是否能逼近平滑时空。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "编织激发",
+          "url": "https://www.baidu.com/s?wd=%E7%BC%96%E7%BB%87%E6%BF%80%E5%8F%91%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "编织激发",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BC%96%E7%BB%87%E6%BF%80%E5%8F%91"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "knitting inspires",
+          "url": "https://en.wikipedia.org/w/index.php?search=knitting%20inspires"
+        }
+      ]
+    },
+    {
+      "chinese_name": "粗粒化自旋泡沫",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "粗粒化自旋泡沫研究把许多细小泡沫胞腔合并为较大有效胞腔时振幅如何变化。形式上可写 $A_{\\mathcal F'}^{\\mathrm{eff}}=\\sum_{\\mathcal F\\to\\mathcal F'}\\prod_fA_f\\prod_eA_e\\prod_vA_v$，其中细泡沫 $\\mathcal F$ 被映射到粗泡沫 $\\mathcal F'$。该过程会重整化面权重、顶点权重和简约约束的有效形式。\n\n它关心的不是单个顶点公式，而是大量量子几何自由度在尺度变化下是否流向连续广义相对论相。它的细节通常依赖图的组合结构以及表示标签的耦合方式，而不是某个预设背景网格。研究中会比较不同正则化和内积选择，观察谱、算符定义与经典几何极限是否保持一致。在后续分析中，常把它放进相干态或截断复形里检验；若期望值能稳定随尺度变化，才有资格解释为经典几何的近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "粗粒化自旋泡沫",
+          "url": "https://www.baidu.com/s?wd=%E7%B2%97%E7%B2%92%E5%8C%96%E8%87%AA%E6%97%8B%E6%B3%A1%E6%B2%AB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "粗粒化自旋泡沫",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B2%97%E7%B2%92%E5%8C%96%E8%87%AA%E6%97%8B%E6%B3%A1%E6%B2%AB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "coarse grained spin foam",
+          "url": "https://en.wikipedia.org/w/index.php?search=coarse%20grained%20spin%20foam"
+        }
+      ]
+    },
+    {
+      "chinese_name": "重整化自旋泡沫",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "重整化自旋泡沫把自旋泡沫振幅视为尺度依赖的离散场论权重，研究细化或粗粒化下耦合如何流动。若用参数 $g_i$ 描述面、边、顶点权重，可写 $g_i' = R_i(g)$，其中 $R$ 是一次粗粒化变换。固定点对应三角剖分无关或连续极限候选，相变附近可能出现大尺度几何。\n\n由于自旋泡沫同时有组合复形和表示标签，重整化需处理图求和、局域振幅和约束代数的共同变化。从相空间角度看，该概念同时包含构型变量和动量变量的配对关系，因而会影响泊松代数、量子表示和可观测量定义。真正的物理含义只有在约束被恰当实施后才会稳定下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "重整化自旋泡沫",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8D%E6%95%B4%E5%8C%96%E8%87%AA%E6%97%8B%E6%B3%A1%E6%B2%AB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "重整化自旋泡沫",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8D%E6%95%B4%E5%8C%96%E8%87%AA%E6%97%8B%E6%B3%A1%E6%B2%AB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "renormalized spin foam",
+          "url": "https://en.wikipedia.org/w/index.php?search=renormalized%20spin%20foam"
+        }
+      ]
+    },
+    {
+      "chinese_name": "群场宇宙学",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "群场宇宙学从群场论凝聚态中提取均匀宇宙的有效动力学，把宇宙空间视为许多量子单纯形的宏观相。凝聚波函数满足近似方程 $\\mathcal K\\sigma+\\lambda\\sigma^{n-1}=0$，其中 $\\mathcal K$ 是动能核，$\\lambda$ 是相互作用耦合。体积期望常由 $V(\\phi)=\\sum_j V_j|\\sigma_j(\\phi)|^2$ 给出，$\\phi$ 可作为物质时钟。\n\n该框架把反弹、加速膨胀和涨落谱问题转化为多体量子几何的平均场问题。在协变图像中，它还要能嵌入泡沫历史或边界振幅，使三维量子几何与四维离散时空相互匹配。大自旋渐近、非退化鞍点和相位选择常被用来检验这种匹配是否可靠。因此阅读这类公式时，需同时看清内部指标、空间指标和图标签各自的角色，三者混淆会导致错误的几何解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "群场宇宙学",
+          "url": "https://www.baidu.com/s?wd=%E7%BE%A4%E5%9C%BA%E5%AE%87%E5%AE%99%E5%AD%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "群场宇宙学",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BE%A4%E5%9C%BA%E5%AE%87%E5%AE%99%E5%AD%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "groupfieldcosmology",
+          "url": "https://en.wikipedia.org/w/index.php?search=groupfieldcosmology"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子参考系",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子参考系把坐标、时钟和实验室框架视为量子系统，而不是外部经典背景。关系可观测量可写为 $O_{A|T=t}$，表示当时钟自由度 $T$ 取值为 $t$ 时系统量 $A$ 的值。这里 $T$ 和 $A$ 都属于同一约束系统的相空间或希尔伯特空间。\n\n对背景无关量子引力而言，量子参考系提供定义时间演化和局域化的语言；不同参考系之间的变换可能混合纠缠、能量和几何自由度。若从离散几何理解，这一结构承载的是面积、法向量、二面角或体积等局域数据，而非普通坐标距离。与雷吉几何的差别常出现在形状匹配、闭合条件和相邻胞腔粘合方式上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子参考系",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E5%8F%82%E8%80%83%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子参考系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E5%8F%82%E8%80%83%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum reference frame",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20reference%20frame"
+        }
+      ]
+    },
+    {
+      "chinese_name": "相对局域性",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "相对局域性认为在弯曲动量空间中，远距离事件是否共点会依赖观测者的能动量坐标选择。粒子相互作用的守恒律写作 $\\mathcal K_\\mu(p^{(1)},p^{(2)},\\ldots)=0$，其中 $\\mathcal K$ 是动量空间上的非线性合成规则。若动量空间联络非平凡，平移变换会使不同观测者对顶点位置产生不同判断。\n\n它常与双特殊相对论和量子引力有效运动学相关，但不是 LQG 的必然预言，而是探索普朗克尺度动量几何的一种框架。在黑洞或宇宙学应用中，它往往提供普朗克尺度的截断、态计数或有效动力学修正。相关结论需要区分完整理论、对称约化模型和半经典有效方程，三者的控制条件并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相对局域性",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E5%AF%B9%E5%B1%80%E5%9F%9F%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相对局域性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E5%AF%B9%E5%B1%80%E5%9F%9F%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "relative locality",
+          "url": "https://en.wikipedia.org/w/index.php?search=relative%20locality"
+        }
+      ]
+    },
+    {
+      "chinese_name": "因果自旋泡沫",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "因果自旋泡沫在普通泡沫复形上加入时间取向或因果偏序，试图区分正向传播和其复共轭贡献。可用偏序 $v\\prec v'$ 表示顶点 $v$ 在因果上早于 $v'$，并相应选择顶点振幅中的 $e^{iS_R}$ 分支而非对称余弦。\n\n这样做的目标是让路径积分更接近洛伦兹量子引力的因果传播核。它改变的是振幅的相位选择和复形取向约束，不等于在固定背景时空上画因果锥。代数上，它与紧群表示、交织子空间或洛伦兹表示的约化相连，因此许多几何量表现为有限维矩阵问题。谱的离散性来自表示论，而连续时空只在大量自由度的集体极限中出现。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "因果自旋泡沫",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%A0%E6%9E%9C%E8%87%AA%E6%97%8B%E6%B3%A1%E6%B2%AB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "因果自旋泡沫",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%A0%E6%9E%9C%E8%87%AA%E6%97%8B%E6%B3%A1%E6%B2%AB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "causal spin bubble",
+          "url": "https://en.wikipedia.org/w/index.php?search=causal%20spin%20bubble"
+        }
+      ]
+    },
+    {
+      "chinese_name": "可积自旋泡沫",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "可积自旋泡沫指振幅求和与群积分具有足够收敛性的模型，或与可积结构相容的特殊泡沫权重。基本要求可写为 $\\sum_{j_f,i_e}|\\prod_fA_f\\prod_eA_e\\prod_vA_v|<\\infty$，其中求和遍历所有表示和交织子标签。收敛性受面权重、规范体积、非紧洛伦兹积分和顶点渐近共同影响。\n\n可积性不是装饰性性质；若振幅发散，物理内积、重整化流和半经典展开都缺少稳固定义。在重整化和粗粒化讨论中，该对象会随尺度变化获得有效描述，局域定义未必直接延伸到宏观几何。关键问题是大量微观标签能否产生稳定相、长程关联和正确的广义协变动力学。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "可积自旋泡沫",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%AF%E7%A7%AF%E8%87%AA%E6%97%8B%E6%B3%A1%E6%B2%AB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "可积自旋泡沫",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%AF%E7%A7%AF%E8%87%AA%E6%97%8B%E6%B3%A1%E6%B2%AB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "integrable spin foam",
+          "url": "https://en.wikipedia.org/w/index.php?search=integrable%20spin%20foam"
+        }
+      ]
+    },
+    {
+      "chinese_name": "黑洞蒸发模型",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "黑洞蒸发模型在 LQG 语境中常把视界面积的离散跃迁与辐射谱联系起来，同时关注奇点分辨后的因果结构。若面积本征值从 $A_i$ 跃迁到 $A_f$，辐射能量可估为 $\\Delta E\\approx\\kappa(A_i-A_f)/(8\\pi G)$，其中 $\\kappa$ 是表面引力。孤立视界计数给出微观熵，聚合或自旋泡沫修正则可能改变末态。\n\n该模型不只是霍金计算的微小修正，还涉及信息在量子几何内部如何穿过高曲率区。它也揭示了背景无关量子化的张力：同一公式必须同时尊重内部规范、空间同胚和时间重参数化。任何局域算符若没有说明其关系参考系或边界条件，都只能算运动学对象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "黑洞蒸发模型",
+          "url": "https://www.baidu.com/s?wd=%E9%BB%91%E6%B4%9E%E8%92%B8%E5%8F%91%E6%A8%A1%E5%9E%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "黑洞蒸发模型",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%BB%91%E6%B4%9E%E8%92%B8%E5%8F%91%E6%A8%A1%E5%9E%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "black hole evaporation model",
+          "url": "https://en.wikipedia.org/w/index.php?search=black%20hole%20evaporation%20model"
+        }
+      ]
+    },
+    {
+      "chinese_name": "引力子传播子",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "引力子传播子在自旋泡沫中用于检验低能极限是否再现微扰广义相对论的两点函数。可定义为 $G_{abcd}(x,y)=\\langle q_{ab}(x)q_{cd}(y)\\rangle-\\langle q_{ab}(x)\\rangle\\langle q_{cd}(y)\\rangle$，其中 $q_{ab}$ 由边界几何算符表示。计算通常在半经典边界态上展开，顶点振幅提供内部动力学。\n\n正确传播子的张量结构依赖交织子自由度和大自旋渐近，因此曾是区分 Barrett-Crane 与 EPRL 模型的重要标准。实际计算常在固定图、截断泡沫或相干态族中完成，再考察结果对细化和正则化的依赖。这个过程把严格定义和物理直觉分开处理，使模型既可计算又能接受经典极限检验。这类对象的可靠性通常由三个检验支撑：约束代数是否闭合，半经典极限是否正确，粗粒化后是否存在稳定的宏观相。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "引力子传播子",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%95%E5%8A%9B%E5%AD%90%E4%BC%A0%E6%92%AD%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "引力子传播子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%95%E5%8A%9B%E5%AD%90%E4%BC%A0%E6%92%AD%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gravity particle propagator",
+          "url": "https://en.wikipedia.org/w/index.php?search=gravity%20particle%20propagator"
+        }
+      ]
+    },
+    {
+      "chinese_name": "半经典相干态",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "半经典相干态是在给定图上同时尖峰于经典环量和通量的量子态，用于连接自旋网络与平滑几何。热核态可写为 $\\psi^t_g(h)=\\sum_j(2j+1)e^{-tj(j+1)/2}\\chi_j(gh^{-1})$，其中 $h$ 是量子环量变量，$g\\in SL(2,\\mathbb C)$ 编码经典相空间点，$t$ 控制涨落宽度。\n\n这类态使面积和联络期望值近似经典数据，同时保留最小不确定性，是传播子和半经典动力学计算的常用边界态。在具体构造中，这一对象还要同规范不变性、图细化和约束实施方式配合使用，避免把坐标选择误认为物理自由度。半经典分析会继续检查期望值、涨落和粗粒化极限，确认它是否能逼近平滑时空。这也要求在比较不同模型时说明所用图、边界态和调节子，因为这些选择会改变中间表达，却不应改变约束解空间中的物理内容。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "半经典相干态",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8A%E7%BB%8F%E5%85%B8%E7%9B%B8%E5%B9%B2%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "半经典相干态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8A%E7%BB%8F%E5%85%B8%E7%9B%B8%E5%B9%B2%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "semiclassical coherent state",
+          "url": "https://en.wikipedia.org/w/index.php?search=semiclassical%20coherent%20state"
+        }
+      ]
+    },
+    {
+      "chinese_name": "热自旋网络",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "热自旋网络把自旋网络的几何自由度置于热态或 KMS 态中，用来研究量子几何的统计性质。密度矩阵可写为 $\\rho=Z^{-1}e^{-\\beta\\hat H_{\\mathrm{eff}}}$，其中 $\\beta$ 是反温度，$\\hat H_{\\mathrm{eff}}$ 是选定边界或子图的有效哈密顿量。若对图的一部分取迹，纠缠哈密顿量也可诱导类似热谱。\n\n它常出现在黑洞视界、局域观察者和量子几何热化讨论中，强调温度来自状态限制而非外部背景热浴。它的细节通常依赖图的组合结构以及表示标签的耦合方式，而不是某个预设背景网格。研究中会比较不同正则化和内积选择，观察谱、算符定义与经典几何极限是否保持一致。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "热自旋网络",
+          "url": "https://www.baidu.com/s?wd=%E7%83%AD%E8%87%AA%E6%97%8B%E7%BD%91%E7%BB%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "热自旋网络",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%83%AD%E8%87%AA%E6%97%8B%E7%BD%91%E7%BB%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "thermal spin network",
+          "url": "https://en.wikipedia.org/w/index.php?search=thermal%20spin%20network"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子图同胚",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子图同胚描述在自旋网络量子态中把图的嵌入通过微分同胚或组合等价识别的操作。若 $\\phi$ 是空间微分同胚，则 $U(\\phi)|\\Gamma,j,i\\rangle=|\\phi(\\Gamma),j,i\\rangle$，其中表示和交织子标签随图一起搬运。群平均后，物理信息不再包含节点坐标，而保留连接关系、结结构和标签。\n\n量子图同胚不是普通图论同构的简单复制，因为嵌入结和节点的解析结构可能在不同版本的 LQG 中具有不同地位。从相空间角度看，该概念同时包含构型变量和动量变量的配对关系，因而会影响泊松代数、量子表示和可观测量定义。真正的物理含义只有在约束被恰当实施后才会稳定下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子图同胚",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E5%9B%BE%E5%90%8C%E8%83%9A%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子图同胚",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E5%9B%BE%E5%90%8C%E8%83%9A"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum graph homeomorphism",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20graph%20homeomorphism"
+        }
+      ]
+    },
+    {
+      "chinese_name": "节点体积谱",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "节点体积谱是体积算符在给定节点交织子空间中的本征值集合。局域算符可写为 $\\hat q_v\\sim\\sum_{e_I,e_J,e_K}\\epsilon(e_I,e_J,e_K)\\epsilon_{ijk}J^i_IJ^j_JJ^k_K$，其中 $J_I$ 是入射边上的 $SU(2)$ 生成元，符号因子记录边切向量取向。对固定入射自旋，$\\hat q_v$ 是有限维矩阵，体积本征值为 $\\sqrt{|q|}$。\n\n谱的零点和简并反映节点价数、取向和交织子耦合方式，而非单纯的边数。在协变图像中，它还要能嵌入泡沫历史或边界振幅，使三维量子几何与四维离散时空相互匹配。大自旋渐近、非退化鞍点和相位选择常被用来检验这种匹配是否可靠。因此阅读这类公式时，需同时看清内部指标、空间指标和图标签各自的角色，三者混淆会导致错误的几何解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "节点体积谱",
+          "url": "https://www.baidu.com/s?wd=%E8%8A%82%E7%82%B9%E4%BD%93%E7%A7%AF%E8%B0%B1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "节点体积谱",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%8A%82%E7%82%B9%E4%BD%93%E7%A7%AF%E8%B0%B1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "node volume spectrum",
+          "url": "https://en.wikipedia.org/w/index.php?search=node%20volume%20spectrum"
+        }
+      ]
+    },
+    {
+      "chinese_name": "面通量谱",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "面通量谱来自通量算符穿过曲面时在自旋网络边上插入 $SU(2)$ 角动量生成元。若曲面 $S$ 与边 $e$ 相交，$\\hat E_i(S)$ 的作用近似为 $8\\pi\\gamma\\ell_P^2\\,\\iota(e,S)\\hat J_i^{(e)}$，其中 $\\iota(e,S)$ 是交叉取向符号。通量分量本身不全对易，因此其平方给出面积贡献。\n\n面通量谱体现的是法向面积向量的量子化，和标量面积谱相关但保留内部方向信息。若从离散几何理解，这一结构承载的是面积、法向量、二面角或体积等局域数据，而非普通坐标距离。与雷吉几何的差别常出现在形状匹配、闭合条件和相邻胞腔粘合方式上。许多具体结果会随正则化方案出现有限差别，研究重点是这些差别能否被重整化、边界条件或物理内积吸收。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "面通量谱",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%A2%E9%80%9A%E9%87%8F%E8%B0%B1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "面通量谱",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%A2%E9%80%9A%E9%87%8F%E8%B0%B1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "area flux spectrum",
+          "url": "https://en.wikipedia.org/w/index.php?search=area%20flux%20spectrum"
+        }
+      ]
+    },
+    {
+      "chinese_name": "曲率环量",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "曲率环量用小闭合回路的环量近似联络曲率，是正则约束量子化中的基本正则化工具。对面积为 $\\epsilon^2$ 的小环 $\\alpha_{ab}$，有 $h_{\\alpha_{ab}}=1+\\epsilon^2F^i_{ab}\\tau_i+O(\\epsilon^3)$，其中 $F^i_{ab}$ 是曲率，$\\tau_i$ 是李代数生成元。量子理论中直接的 $F(x)$ 不易定义，而闭合环量是良好算符。\n\n哈密顿约束的小环构造、圈量子宇宙学的正弦修正都源于这个思想。在黑洞或宇宙学应用中，它往往提供普朗克尺度的截断、态计数或有效动力学修正。相关结论需要区分完整理论、对称约化模型和半经典有效方程，三者的控制条件并不相同。在量子几何图像里，局域平滑性不是预设前提，而是大量节点和边在低曲率态中共同表现出的有效性质。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "曲率环量",
+          "url": "https://www.baidu.com/s?wd=%E6%9B%B2%E7%8E%87%E7%8E%AF%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "曲率环量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9B%B2%E7%8E%87%E7%8E%AF%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "qulvholonomy",
+          "url": "https://en.wikipedia.org/w/index.php?search=qulvholonomy"
+        }
+      ]
+    },
+    {
+      "chinese_name": "小环正则化",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "小环正则化把经典曲率替换为围绕微小回路的环量，从而使哈密顿约束可在自旋网络上作用。基本替换为 $F^i_{ab}\\tau_i\\approx(h_{\\alpha_{ab}}-1)/\\mathrm{Area}(\\alpha)$，其中 $\\alpha_{ab}$ 是沿两方向闭合的小环。调节子去除时，小环常依附于图的节点并生成新边。\n\n该步骤把连续微分几何转化为组合操作，但也引入路径选择、表示选择和异常自由性问题，需要与约束代数一起检验。代数上，它与紧群表示、交织子空间或洛伦兹表示的约化相连，因此许多几何量表现为有限维矩阵问题。谱的离散性来自表示论，而连续时空只在大量自由度的集体极限中出现。这一点也使它适合描述普朗克尺度附近的区域，因为经典度规退化时，环量和通量变量仍能保持明确的代数定义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "小环正则化",
+          "url": "https://www.baidu.com/s?wd=%E5%B0%8F%E7%8E%AF%E6%AD%A3%E5%88%99%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "小环正则化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B0%8F%E7%8E%AF%E6%AD%A3%E5%88%99%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "small ring regularization",
+          "url": "https://en.wikipedia.org/w/index.php?search=small%20ring%20regularization"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子约束代数",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子约束代数是高斯、微分同胚和哈密顿约束算符在量子理论中的闭合关系，对应经典 Dirac 代数的量子版本。经典核心括号为 $\\{H[N],H[M]\\}=D[q^{ab}(N\\partial_bM-M\\partial_bN)]$，其中 $D$ 是微分同胚约束，$q^{ab}$ 是空间逆度规。量子化后右端含算符值结构函数，排序和正则化极易产生异常。\n\n若代数不闭合，约束会移除错误自由度，背景无关动力学就失去一致性。在重整化和粗粒化讨论中，该对象会随尺度变化获得有效描述，局域定义未必直接延伸到宏观几何。关键问题是大量微观标签能否产生稳定相、长程关联和正确的广义协变动力学。若把它用于黑洞或宇宙学模型，还要区分边界自由度、体自由度和对称约化自由度，否则态计数和有效方程会被混用。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子约束代数",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E7%BA%A6%E6%9D%9F%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子约束代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E7%BA%A6%E6%9D%9F%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum constrained algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20constrained%20algebra"
+        }
+      ]
+    },
+    {
+      "chinese_name": "异常自由代数",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "异常自由代数指量子约束的对易关系没有产生额外非物理项，能够在物理态空间上一致闭合。理想条件可写为 $[\\hat C_I,\\hat C_J]=i\\hbar\\hat f_{IJ}{}^K\\hat C_K$，其中 $\\hat C_I$ 是约束算符，$\\hat f$ 是可能依赖几何算符的结构函数。圈量子引力中最困难的是两个哈密顿约束的对易子，因为它应生成微分同胚约束。\n\n异常自由性决定正则化是否尊重广义协变性，而不只是算符是否可定义。它也揭示了背景无关量子化的张力：同一公式必须同时尊重内部规范、空间同胚和时间重参数化。任何局域算符若没有说明其关系参考系或边界条件，都只能算运动学对象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "异常自由代数",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%82%E5%B8%B8%E8%87%AA%E7%94%B1%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "异常自由代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%82%E5%B8%B8%E8%87%AA%E7%94%B1%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "abnormal free algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=abnormal%20free%20algebra"
+        }
+      ]
+    },
+    {
+      "chinese_name": "物理内积",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "物理内积是在解完全部约束后定义的内积，用来给真正物理态赋予概率解释。群平均形式可写为 $\\langle\\eta(\\psi)|\\eta(\\phi)\\rangle=\\eta(\\psi)[\\phi]$，其中 $\\eta$ 是把运动学态投影到约束解空间的 rigging map。若采用自旋泡沫，边界态之间的转移振幅也可被解释为物理内积候选。\n\n问题在于哈密顿约束谱、规范体积和收敛性都需受控；否则运动学自旋网络的正交性不能直接代表物理正交性。实际计算常在固定图、截断泡沫或相干态族中完成，再考察结果对细化和正则化的依赖。这个过程把严格定义和物理直觉分开处理，使模型既可计算又能接受经典极限检验。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "物理内积",
+          "url": "https://www.baidu.com/s?wd=%E7%89%A9%E7%90%86%E5%86%85%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "物理内积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%A9%E7%90%86%E5%86%85%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "physical inner product",
+          "url": "https://en.wikipedia.org/w/index.php?search=physical%20inner%20product"
+        }
+      ]
+    },
+    {
+      "chinese_name": "投影极限希尔伯特空间",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "投影极限希尔伯特空间把所有有限图上的柱函数空间按细化关系拼接成广义联络的量子态空间。对每个图有 $\\mathcal H_\\Gamma=L^2(SU(2)^{E(\\Gamma)},d\\mu_H)$，其中 $E(\\Gamma)$ 是边数，$d\\mu_H$ 是 Haar 测度。若图细化，粗图函数通过投影嵌入细图空间，圆柱一致性保证内积不变。\n\n最终得到的运动学空间支持自旋网络基，却通常非可分，这反映了背景无关连续图集合的巨大自由度。在具体构造中，这一对象还要同规范不变性、图细化和约束实施方式配合使用，避免把坐标选择误认为物理自由度。半经典分析会继续检查期望值、涨落和粗粒化极限，确认它是否能逼近平滑时空。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "投影极限希尔伯特空间",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%95%E5%BD%B1%E6%9E%81%E9%99%90%E5%B8%8C%E5%B0%94%E4%BC%AF%E7%89%B9%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "投影极限希尔伯特空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%95%E5%BD%B1%E6%9E%81%E9%99%90%E5%B8%8C%E5%B0%94%E4%BC%AF%E7%89%B9%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "projection limit hilbert space",
+          "url": "https://en.wikipedia.org/w/index.php?search=projection%20limit%20hilbert%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子几何态",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子几何态是以环量和通量为基本变量的几何量子态，可表现为自旋网络、相干态或凝聚态。一般态写作 $|\\Psi\\rangle=\\sum_{\\Gamma,j,i}c_{\\Gamma ji}|\\Gamma,j,i\\rangle$，其中系数 $c$ 给出不同图、边自旋和交织子的叠加。它不描述物质场在固定空间中的波函数，而是空间几何本身的量子叠加。\n\n根据是否满足高斯、微分同胚和哈密顿约束，量子几何态可处于运动学、部分物理或完全物理层次。它的细节通常依赖图的组合结构以及表示标签的耦合方式，而不是某个预设背景网格。研究中会比较不同正则化和内积选择，观察谱、算符定义与经典几何极限是否保持一致。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子几何态",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E5%87%A0%E4%BD%95%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子几何态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E5%87%A0%E4%BD%95%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum geometry state",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20geometry%20state"
+        }
+      ]
+    },
+    {
+      "chinese_name": "面积本征谱",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "面积本征谱是面积算符在自旋网络基上的本征值集合，取决于穿过给定曲面的边自旋。谱式为 $A=8\\pi\\gamma\\ell_P^2\\sum_p\\sqrt{j_p(j_p+1)}$，其中 $p$ 为穿刺点，$j_p$ 为半整数表示。多个穿刺组合可产生复杂简并，且不同自旋配置可能给出接近的面积。\n\n该谱展示几何离散性来自角动量表示论；在大面积极限，本征值密度增大，连续经典面积作为粗粒化近似出现。从相空间角度看，该概念同时包含构型变量和动量变量的配对关系，因而会影响泊松代数、量子表示和可观测量定义。真正的物理含义只有在约束被恰当实施后才会稳定下来。它还提示一个重要限制：运动学谱本身不等于动力学预言，只有与哈密顿约束或泡沫振幅结合后，才会产生真正的演化信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "面积本征谱",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%A2%E7%A7%AF%E6%9C%AC%E5%BE%81%E8%B0%B1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "面积本征谱",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%A2%E7%A7%AF%E6%9C%AC%E5%BE%81%E8%B0%B1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "area eigenspectrum",
+          "url": "https://en.wikipedia.org/w/index.php?search=area%20eigenspectrum"
+        }
+      ]
+    },
+    {
+      "chinese_name": "哈密顿约束谱",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "哈密顿约束谱指哈密顿约束算符或主约束算符的谱结构，直接关系到物理态空间。若采用主约束，需研究 $\\hat{\\mathbf M}\\psi=0$ 的零谱，其中 $\\mathbf M=\\int H^2/\\sqrt q$，$H$ 是局域哈密顿约束。普通哈密顿约束不是演化哈密顿量，其零本征态代表满足时间重参数化不变性的态。\n\n谱分析困难来自算符会改变图结构，且约束代数含结构函数；因此哈密顿约束谱不是常规能谱的量子引力版本。在协变图像中，它还要能嵌入泡沫历史或边界振幅，使三维量子几何与四维离散时空相互匹配。大自旋渐近、非退化鞍点和相位选择常被用来检验这种匹配是否可靠。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "哈密顿约束谱",
+          "url": "https://www.baidu.com/s?wd=%E5%93%88%E5%AF%86%E9%A1%BF%E7%BA%A6%E6%9D%9F%E8%B0%B1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "哈密顿约束谱",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%93%88%E5%AF%86%E9%A1%BF%E7%BA%A6%E6%9D%9F%E8%B0%B1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hamiltonian constraint spectrum",
+          "url": "https://en.wikipedia.org/w/index.php?search=hamiltonian%20constraint%20spectrum"
+        }
+      ]
+    },
+    {
+      "chinese_name": "泡沫顶点振幅",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "泡沫顶点振幅是给一个自旋泡沫顶点赋予的局域权重，决定相邻自旋网络片段如何量子跃迁。可记为 $A_v(j_f,i_e)=\\int\\prod_e dg_e\\prod_f P_f(g_e,j_f,i_e)$，其中 $g_e$ 是群积分变量，$P_f$ 编码面表示和简约约束。它包含模型的动力学信息，面权重和边权重多半属于测度选择。\n\n若顶点对应四单纯形，其大自旋渐近应恢复雷吉作用量相位，否则模型难以给出正确经典极限。若从离散几何理解，这一结构承载的是面积、法向量、二面角或体积等局域数据，而非普通坐标距离。与雷吉几何的差别常出现在形状匹配、闭合条件和相邻胞腔粘合方式上。许多具体结果会随正则化方案出现有限差别，研究重点是这些差别能否被重整化、边界条件或物理内积吸收。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "泡沫顶点振幅",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A1%E6%B2%AB%E9%A1%B6%E7%82%B9%E6%8C%AF%E5%B9%85%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "泡沫顶点振幅",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A1%E6%B2%AB%E9%A1%B6%E7%82%B9%E6%8C%AF%E5%B9%85"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bubble peak amplitude",
+          "url": "https://en.wikipedia.org/w/index.php?search=bubble%20peak%20amplitude"
+        }
+      ]
+    },
+    {
+      "chinese_name": "大自旋半经典极限",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "大自旋半经典极限同时放大自旋标签并保持形状变量相干，用来检验自旋泡沫是否逼近经典离散引力。令 $j_f=\\lambda k_f$ 且 $\\lambda\\to\\infty$，面积满足 $A_f\\sim8\\pi\\gamma\\ell_P^2\\lambda k_f$。驻相展开给出 $A_v\\sim e^{i\\lambda S_R}+e^{-i\\lambda S_R}$ 或其因果选支，其中 $S_R$ 是雷吉作用量。涨落行列式、边界相干态宽度和非几何鞍点决定下一阶修正，因此该极限比单纯取大面积更细致。\n\n在黑洞或宇宙学应用中，它往往提供普朗克尺度的截断、态计数或有效动力学修正。相关结论需要区分完整理论、对称约化模型和半经典有效方程，三者的控制条件并不相同。在量子几何图像里，局域平滑性不是预设前提，而是大量节点和边在低曲率态中共同表现出的有效性质。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "大自旋半经典极限",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%A7%E8%87%AA%E6%97%8B%E5%8D%8A%E7%BB%8F%E5%85%B8%E6%9E%81%E9%99%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "大自旋半经典极限",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%A7%E8%87%AA%E6%97%8B%E5%8D%8A%E7%BB%8F%E5%85%B8%E6%9E%81%E9%99%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "large spin semi classical limit",
+          "url": "https://en.wikipedia.org/w/index.php?search=large%20spin%20semi%20classical%20limit"
+        }
+      ]
+    },
+    {
+      "chinese_name": "曲率环量正则化",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "曲率环量正则化把联络曲率替换为小回路环量的偏离单位元，用于定义量子哈密顿项。公式 $F^i_{ab}\\tau_i=\\lim_{Ar(\\alpha)\\to0}(h_\\alpha-1)/Ar(\\alpha)$ 中，$Ar(\\alpha)$ 是小环围成的面积，$h_\\alpha$ 是环量。量子理论无法直接缩小到零背景面积，常用图相关小环和面积间隙来实现。\n\n该正则化是环量修正的根源，也使约束作用表现为在节点附近添加短边或改变图结构。代数上，它与紧群表示、交织子空间或洛伦兹表示的约化相连，因此许多几何量表现为有限维矩阵问题。谱的离散性来自表示论，而连续时空只在大量自由度的集体极限中出现。这一点也使它适合描述普朗克尺度附近的区域，因为经典度规退化时，环量和通量变量仍能保持明确的代数定义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "曲率环量正则化",
+          "url": "https://www.baidu.com/s?wd=%E6%9B%B2%E7%8E%87%E7%8E%AF%E9%87%8F%E6%AD%A3%E5%88%99%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "曲率环量正则化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9B%B2%E7%8E%87%E7%8E%AF%E9%87%8F%E6%AD%A3%E5%88%99%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "curvature ring regularization",
+          "url": "https://en.wikipedia.org/w/index.php?search=curvature%20ring%20regularization"
+        }
+      ]
+    },
+    {
+      "chinese_name": "自旋泡沫重整化流",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "自旋泡沫重整化流描述模型振幅在复形细化、粗粒化或截断变化下的有效耦合演化。可写成 $\\partial_t\\Gamma_k[A]=\\frac12\\mathrm{Tr}[(\\Gamma_k^{(2)}+R_k)^{-1}\\partial_tR_k]$ 的函数重整化群形式，或离散张量网络中的阻塞映射；这里 $k$ 是尺度，$R_k$ 是调节器。流的固定点决定连续极限候选，相变附近的相关长度可能产生大尺度时空。\n\n它把自旋泡沫从单次振幅计算推进到量子场论式的普适性问题。在重整化和粗粒化讨论中，该对象会随尺度变化获得有效描述，局域定义未必直接延伸到宏观几何。关键问题是大量微观标签能否产生稳定相、长程关联和正确的广义协变动力学。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自旋泡沫重整化流",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E6%97%8B%E6%B3%A1%E6%B2%AB%E9%87%8D%E6%95%B4%E5%8C%96%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自旋泡沫重整化流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E6%97%8B%E6%B3%A1%E6%B2%AB%E9%87%8D%E6%95%B4%E5%8C%96%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "spin foam reforming flow",
+          "url": "https://en.wikipedia.org/w/index.php?search=spin%20foam%20reforming%20flow"
+        }
+      ]
+    },
+    {
+      "chinese_name": "热自旋网络态",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "热自旋网络态是在自旋网络自由度上定义的混合态，常用于边界热化、黑洞视界和局域观察者问题。若选定能量或面积相关算符，态可写成 $\\rho_\\beta=Z^{-1}e^{-\\beta\\hat K}$，其中 $\\hat K$ 是模块哈密顿量或有效 boost 生成元，$\\beta$ 是反温度。\n\n对一个区域取迹后，边界 puncture 的纠缠谱可呈热形式。它说明几何热性质可由量子态和子系统划分产生，而不是必须假设外部热背景。它也揭示了背景无关量子化的张力：同一公式必须同时尊重内部规范、空间同胚和时间重参数化。任何局域算符若没有说明其关系参考系或边界条件，都只能算运动学对象。从表示论角度看，半整数自旋、交织子和群积分共同承担几何信息，连续坐标只在粗粒化叙述中重新出现。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "热自旋网络态",
+          "url": "https://www.baidu.com/s?wd=%E7%83%AD%E8%87%AA%E6%97%8B%E7%BD%91%E7%BB%9C%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "热自旋网络态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%83%AD%E8%87%AA%E6%97%8B%E7%BD%91%E7%BB%9C%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "thermal spin network state",
+          "url": "https://en.wikipedia.org/w/index.php?search=thermal%20spin%20network%20state"
+        }
+      ]
+    },
+    {
+      "chinese_name": "协变自旋泡沫路径积分",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "协变自旋泡沫路径积分把四维量子引力振幅写成对带标记二维复形的求和。边界态 $\\psi_i,\\psi_f$ 之间的核可表示为 $\\langle\\psi_f|\\psi_i\\rangle_{phys}=\\sum_{\\mathcal F}\\sum_{j_f,i_e}\\prod_fA_f\\prod_eA_e\\prod_vA_v$，其中 $\\mathcal F$ 的边界匹配初末自旋网络。它类似路径积分，但路径是离散量子几何历史而非度规场轨道。\n\n若求和和重整化受控，该表达可定义物理内积并恢复经典引力传播。实际计算常在固定图、截断泡沫或相干态族中完成，再考察结果对细化和正则化的依赖。这个过程把严格定义和物理直觉分开处理，使模型既可计算又能接受经典极限检验。这类对象的可靠性通常由三个检验支撑：约束代数是否闭合，半经典极限是否正确，粗粒化后是否存在稳定的宏观相。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "协变自旋泡沫路径积分",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8F%E5%8F%98%E8%87%AA%E6%97%8B%E6%B3%A1%E6%B2%AB%E8%B7%AF%E5%BE%84%E7%A7%AF%E5%88%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "协变自旋泡沫路径积分",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8F%E5%8F%98%E8%87%AA%E6%97%8B%E6%B3%A1%E6%B2%AB%E8%B7%AF%E5%BE%84%E7%A7%AF%E5%88%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "covariant spin bubble path integral",
+          "url": "https://en.wikipedia.org/w/index.php?search=covariant%20spin%20bubble%20path%20integral"
+        }
+      ]
+    },
+    {
+      "chinese_name": "有效反弹方程",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "有效反弹方程概括环量子宇宙学中量子几何修正导致的非奇异宇宙演化。常用表达为 $\\dot H=-4\\pi G(\\rho+P)(1-2\\rho/\\rho_c)$，并与 $H^2=(8\\pi G/3)\\rho(1-\\rho/\\rho_c)$ 配合，其中 $P$ 是压强，$\\rho_c$ 是临界密度。当密度接近 $\\rho_c$ 时，修正项改变 Raychaudhuri 方程的符号结构，使收缩转为膨胀。\n\n该方程的适用性依赖半经典态和均匀近似，而非任意高曲率时空的通用公式。在具体构造中，这一对象还要同规范不变性、图细化和约束实施方式配合使用，避免把坐标选择误认为物理自由度。半经典分析会继续检查期望值、涨落和粗粒化极限，确认它是否能逼近平滑时空。这也要求在比较不同模型时说明所用图、边界态和调节子，因为这些选择会改变中间表达，却不应改变约束解空间中的物理内容。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "有效反弹方程",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%89%E6%95%88%E5%8F%8D%E5%BC%B9%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "有效反弹方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%89%E6%95%88%E5%8F%8D%E5%BC%B9%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "effective rebound equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=effective%20rebound%20equation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "自旋网络边界数据",
+      "source_file": "words/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "自旋网络边界数据是在自旋泡沫振幅边界上固定的图、边自旋和节点交织子，指定三维量子几何的入射或出射态。可记为 $\\partial\\mathcal F=(\\Gamma,j_e,i_v)$，其中 $\\Gamma$ 是边界图，$j_e$ 控制面面积，$i_v$ 控制节点体积和形状。\n\n内部泡沫对所有兼容历史求和，而边界数据决定振幅计算的问题本身。半经典计算常把这些数据换成相干态标签，以同时固定离散面积、二面角和外曲率信息。它的细节通常依赖图的组合结构以及表示标签的耦合方式，而不是某个预设背景网格。研究中会比较不同正则化和内积选择，观察谱、算符定义与经典几何极限是否保持一致。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自旋网络边界数据",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E6%97%8B%E7%BD%91%E7%BB%9C%E8%BE%B9%E7%95%8C%E6%95%B0%E6%8D%AE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自旋网络边界数据",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E6%97%8B%E7%BD%91%E7%BB%9C%E8%BE%B9%E7%95%8C%E6%95%B0%E6%8D%AE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "spin network boundary data",
+          "url": "https://en.wikipedia.org/w/index.php?search=spin%20network%20boundary%20data"
+        }
+      ]
+    }
+  ]
+}

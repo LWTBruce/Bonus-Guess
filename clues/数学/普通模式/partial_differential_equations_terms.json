@@ -17,6 +17,19 @@
         "对象 条件 运算 记号",
         "cauchy problem",
         "cauchy_problem"
+      ],
+      "explanation_markdown": "Cauchy问题是在给定初始曲面上的数据后求偏微分方程解的问题。常写成 $Lu=f,\\quad u|_{\\Sigma}=g$，其中 $L$ 是微分算子，$\\Sigma$ 是初始曲面。它强调数据沿方程传播产生解。\n\n双曲方程的 Cauchy 问题常较自然，椭圆方程的同类问题往往不稳定；这体现方程类型对数据位置的要求。Cauchy问题把方程、边界、初值或约束条件合成一个求解任务。Cauchy问题在偏微分方程中说明算子、区域、边界数据和函数空间之间的关系，重点不只是一条微分等式。Cauchy问题适合演化型方程，初始曲面若与特征方向相切，局部唯一性和稳定性会立刻变差。Cauchy问题还要区分给定的是函数值、导数还是高阶数据，不同阶数方程需要的数据量不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Cauchy问题",
+          "url": "https://www.baidu.com/s?wd=Cauchy%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Cauchy问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Cauchy%E9%97%AE%E9%A2%98"
+        }
       ]
     },
     {
@@ -35,6 +48,19 @@
         "对象 条件 运算 记号",
         "dirichlet problem",
         "dirichlet_problem"
+      ],
+      "explanation_markdown": "Dirichlet问题是在区域内部满足方程并在边界上给定函数值的问题。常写成 $Lu=f\\ \\text{in }\\Omega,\\quad u=g\\ \\text{on }\\partial\\Omega$，其中 $\\Omega$ 是区域，$g$ 是边界值。它是椭圆方程最常见的边值问题。\n\nDirichlet问题控制解的边界高度；Neumann问题控制法向导数，Robin问题控制二者线性组合。Dirichlet问题把方程、边界、初值或约束条件合成一个求解任务。Dirichlet问题在偏微分方程中说明算子、区域、边界数据和函数空间之间的关系，重点不只是一条微分等式。在Dirichlet问题里，边界数据的函数空间和兼容条件会影响解是否存在以及是否唯一。Dirichlet问题固定边界函数值，常表示温度、位势或位移被外界直接控制。Dirichlet问题与内部方程配套后才形成完整问题，兼容条件和边界光滑性会影响正则性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Dirichlet问题",
+          "url": "https://www.baidu.com/s?wd=Dirichlet%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Dirichlet问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Dirichlet%E9%97%AE%E9%A2%98"
+        }
       ]
     },
     {
@@ -53,6 +79,19 @@
         "对象 条件 运算 记号",
         "neumann problem",
         "neumann_problem"
+      ],
+      "explanation_markdown": "Neumann问题是在边界上指定法向导数或通量的边值问题。常写成 $Lu=f,\\quad \\partial_nu=g\\ \\text{on }\\partial\\Omega$，其中 $n$ 是外法向量。它常描述绝热、自由端或给定流量。\n\nNeumann问题通常只能把解确定到常数，还需满足兼容条件；这与直接指定函数值的 Dirichlet问题不同。Neumann问题把方程、边界、初值或约束条件合成一个求解任务。Neumann问题在偏微分方程中说明算子、区域、边界数据和函数空间之间的关系，重点不只是一条微分等式。在Neumann问题里，边界数据的函数空间和兼容条件会影响解是否存在以及是否唯一。Neumann问题固定法向导数或通量，常表示绝热边界、自由端条件或给定流量。Neumann问题与内部方程配套后才形成完整问题，兼容条件和边界光滑性会影响正则性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Neumann问题",
+          "url": "https://www.baidu.com/s?wd=Neumann%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Neumann问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Neumann%E9%97%AE%E9%A2%98"
+        }
       ]
     },
     {
@@ -71,6 +110,19 @@
         "内部 边界 约束",
         "robin boundary condition",
         "robin_boundary_condition"
+      ],
+      "explanation_markdown": "Robin边界条件是在边界上规定函数值与法向导数的线性组合。常写成 $\\alpha u+\\beta\\partial_nu=g\\quad\\text{on }\\partial\\Omega$，其中 $\\alpha,\\beta$ 是系数。它也称第三类边界条件。\n\nRobin条件不是把边界分成两类，而是在同一点混合值和通量；混合边界条件则是在不同边界段施加不同类型。Robin边界条件需要同时追踪内部关系和边界上的附加约束。Robin边界条件的核心是边界上固定什么量：函数值、法向通量、线性组合、非局部约束或随时间变化的边界规律。Robin边界条件把函数值和法向导数放进同一个边界式，适合换热、阻抗或弹性支承模型。Robin边界条件与内部方程配套后才形成完整问题，兼容条件和边界光滑性会影响正则性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Robin边界条件",
+          "url": "https://www.baidu.com/s?wd=Robin%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Robin边界条件",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Robin%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6"
+        }
       ]
     },
     {
@@ -89,6 +141,24 @@
         "对象 条件 运算 记号",
         "energy estimate",
         "energy_estimate"
+      ],
+      "explanation_markdown": "能量估计是用方程导出的能量或范数不等式控制解。常写成 $\\|u(t)\\|_X^2+\\int_0^t\\|u(s)\\|_Y^2ds\\le C\\|u_0\\|_X^2$，其中 $X,Y$ 是函数空间。它常来自乘以解并积分分部。\n\n能量估计不需要显式公式，适合证明唯一性、稳定性和弱解存在；它抓住守恒或耗散结构。它用已知量控制未知对象的大小，常服务于存在性、唯一性或误差界。能量估计给出从数据到解的定量控制，常用于推出存在唯一、连续依赖、内部光滑性或边界光滑性。能量估计把数据的范数传递到解的范数上，用来控制唯一性、连续依赖或局部光滑性。能量估计本身不是求解公式，而是把未知解限制在可控范围内，方便通过极限论证。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "能量估计",
+          "url": "https://www.baidu.com/s?wd=%E8%83%BD%E9%87%8F%E4%BC%B0%E8%AE%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "能量估计",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%83%BD%E9%87%8F%E4%BC%B0%E8%AE%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "energy estimate",
+          "url": "https://en.wikipedia.org/w/index.php?search=energy%20estimate"
+        }
       ]
     },
     {
@@ -107,6 +177,24 @@
         "对象 条件 运算 记号",
         "a priori estimate",
         "a_priori_estimate"
+      ],
+      "explanation_markdown": "先验估计是在已知解存在之前先假设解足够光滑并推得的界。常写成 $\\|u\\|_X\\le C(\\|f\\|_Y+\\|g\\|_Z)$，其中 $f,g$ 是方程和边界数据。常数 $C$ 不依赖待证明的解。\n\n先验估计是存在性证明的骨架；它与事后误差估计不同，目标是为紧性、连续性方法或极限过程提供统一控制。它用已知量控制未知对象的大小，常服务于存在性、唯一性或误差界。先验估计给出从数据到解的定量控制，常用于推出存在唯一、连续依赖、内部光滑性或边界光滑性。先验估计把数据的范数传递到解的范数上，用来控制唯一性、连续依赖或局部光滑性。先验估计本身不是求解公式，而是把未知解限制在可控范围内，方便通过极限论证。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "先验估计",
+          "url": "https://www.baidu.com/s?wd=%E5%85%88%E9%AA%8C%E4%BC%B0%E8%AE%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "先验估计",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%88%E9%AA%8C%E4%BC%B0%E8%AE%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "a priori estimate",
+          "url": "https://en.wikipedia.org/w/index.php?search=a%20priori%20estimate"
+        }
       ]
     },
     {
@@ -125,6 +213,19 @@
         "对象 条件 运算 记号",
         "sobolev space",
         "sobolev_space"
+      ],
+      "explanation_markdown": "Sobolev空间是把函数及其弱导数按可积性组织起来的函数空间。常写成 $W^{k,p}(\\Omega)=\\{u:D^\\alpha u\\in L^p,\\ |\\alpha|\\le k\\}$，其中 $D^\\alpha u$ 是弱导数。它容纳不一定经典可微的解。\n\nSobolev空间比连续函数空间更适合弱解；其范数同时度量函数值和导数，为迹定理、嵌入和能量法提供环境。它把对象按范数、内积、拓扑或可测结构组织成集合。Sobolev空间在偏微分方程中说明算子、区域、边界数据和函数空间之间的关系，重点不只是一条微分等式。Sobolev空间提供函数空间层面的控制，使边界值、导数和积分范数能在低光滑条件下使用。Sobolev空间把低光滑函数纳入分析框架，使边界迹、积分分部和紧嵌入有可用语言。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Sobolev空间",
+          "url": "https://www.baidu.com/s?wd=Sobolev%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Sobolev空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Sobolev%E7%A9%BA%E9%97%B4"
+        }
       ]
     },
     {
@@ -143,6 +244,24 @@
         "低光滑 较粗拓扑",
         "weak derivative",
         "weak_derivative"
+      ],
+      "explanation_markdown": "弱导数是通过积分分部定义的导数。常写成 $\\int_\\Omega u\\,\\partial_i\\phi\\,dx=-\\int_\\Omega v\\,\\phi\\,dx$，其中 $\\phi$ 是测试函数，$v$ 就是 $\\partial_i u$ 的弱导数。它允许函数有角点或跳跃。\n\n弱导数与经典导数相容，但适用范围更大；弱解正是用它把微分方程放进积分恒等式中。关键点是允许较低光滑性或较粗拓扑下继续讨论对象。弱导数在偏微分方程中说明算子、区域、边界数据和函数空间之间的关系，重点不只是一条微分等式。围绕弱导数，区域边界、数据正则性和允许的极限过程都会改变可证明的结论。弱导数提供函数空间层面的控制，使边界值、导数和积分范数能在低光滑条件下使用。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弱导数",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B1%E5%AF%BC%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弱导数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B1%E5%AF%BC%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weak derivative",
+          "url": "https://en.wikipedia.org/w/index.php?search=weak%20derivative"
+        }
       ]
     },
     {
@@ -161,6 +280,24 @@
         "光滑性 提升",
         "elliptic regularity",
         "elliptic_regularity"
+      ],
+      "explanation_markdown": "椭圆正则性说明椭圆方程的弱解在数据和系数较好时会自动更光滑。常写成 $Lu=f,\\ f\\in H^k\\Rightarrow u\\in H^{k+2}_{\\rm loc}$，其中 $H^k$ 是 Sobolev 空间。二阶椭圆算子通常带来两个空间导数的提升。\n\n它是椭圆型方程区别于一般方程的重要性质；边界附近的正则性还要受边界光滑度和边界条件影响。它常用来把粗糙对象提升到更好的光滑性或结构层级。椭圆正则性给出从数据到解的定量控制，常用于推出存在唯一、连续依赖、内部光滑性或边界光滑性。椭圆正则性把数据的范数传递到解的范数上，用来控制唯一性、连续依赖或局部光滑性。椭圆正则性本身不是求解公式，而是把未知解限制在可控范围内，方便通过极限论证。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "椭圆正则性",
+          "url": "https://www.baidu.com/s?wd=%E6%A4%AD%E5%9C%86%E6%AD%A3%E5%88%99%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "椭圆正则性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A4%AD%E5%9C%86%E6%AD%A3%E5%88%99%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "elliptic regularity",
+          "url": "https://en.wikipedia.org/w/index.php?search=elliptic%20regularity"
+        }
       ]
     },
     {
@@ -179,6 +316,19 @@
         "对象 条件 运算 记号",
         "fourier method",
         "fourier_method"
+      ],
+      "explanation_markdown": "Fourier方法是把方程、数据和解分解到频率或正交模态上。常写成 $u(x,t)=\\sum_k \\hat u_k(t)e^{ik\\cdot x}$，其中 $k$ 是频率指标。常系数线性方程会在频率域中化为代数或常微分方程。\n\nFourier方法适合全空间、周期区域和线性问题；非线性项在频率域会变成卷积，处理难度明显上升。它给出一套操作流程，用来构造近似、证明结论或求出解。Fourier方法属于构造或逼近解的技术，通常把原方程转成投影、极限、比较、半群或正则化过程。Fourier方法通过构造近似解或比较族进入问题，关键是得到与近似参数无关的界。Fourier方法通常先在较好的对象上建立结论，再通过紧性、单调性或弱收敛回到原问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Fourier方法",
+          "url": "https://www.baidu.com/s?wd=Fourier%E6%96%B9%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Fourier方法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Fourier%E6%96%B9%E6%B3%95"
+        }
       ]
     },
     {
@@ -197,6 +347,24 @@
         "对象 条件 运算 记号",
         "characteristic fa",
         "characteristic_fa"
+      ],
+      "explanation_markdown": "特征线法是沿特殊曲线把一阶偏微分方程化为常微分方程的方法。常写成 $\\dot x=a(x,t),\\quad \\dot u=c(x,t,u)$，其中 $a$ 来自输运方向，点表示对参数求导。沿特征线，解的变化由常微分方程控制。\n\n它特别适合一阶方程和双曲结构；遇到特征交叉时可能形成激波或多值，需要弱解或熵解继续描述。特征线法属于构造或逼近解的技术，通常把原方程转成投影、极限、比较、半群或正则化过程。围绕特征线法，区域边界、数据正则性和允许的极限过程都会改变可证明的结论。特征线法要同时看主部、数据位置和允许的函数空间，改变其中一项就可能得到不同结论。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "特征线法",
+          "url": "https://www.baidu.com/s?wd=%E7%89%B9%E5%BE%81%E7%BA%BF%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "特征线法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%B9%E5%BE%81%E7%BA%BF%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "characteristic fa",
+          "url": "https://en.wikipedia.org/w/index.php?search=characteristic%20fa"
+        }
       ]
     },
     {
@@ -215,6 +383,24 @@
         "对象 条件 运算 记号",
         "conservation law",
         "conservation_law"
+      ],
+      "explanation_markdown": "守恒律是表达某个量局部守恒的偏微分方程。常写成 $u_t+\\nabla\\cdot F(u)=0$，其中 $u$ 是守恒量，$F$ 是通量。积分形式说明区域内总量变化来自边界通量。\n\n守恒律允许不连续解，激波必须满足 Rankine-Hugoniot 条件；物理解通常还需熵条件筛选。守恒律在偏微分方程中说明算子、区域、边界数据和函数空间之间的关系，重点不只是一条微分等式。围绕守恒律，区域边界、数据正则性和允许的极限过程都会改变可证明的结论。守恒律要同时看主部、数据位置和允许的函数空间，改变其中一项就可能得到不同结论。守恒律突出通量和间断传播，弱形式不足以唯一选解时还要加入熵条件。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "守恒律",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%88%E6%81%92%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "守恒律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%88%E6%81%92%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "conservation law",
+          "url": "https://en.wikipedia.org/w/index.php?search=conservation%20law"
+        }
       ]
     },
     {
@@ -233,6 +419,24 @@
         "对象 条件 运算 记号",
         "shock wave",
         "shock_wave"
+      ],
+      "explanation_markdown": "激波是双曲守恒律中传播的不连续面。常写成 $s[u]=[f(u)]$，其中 $s$ 是激波速度，$[\\,\\cdot\\,]$ 表示跃变量。这个关系称 Rankine-Hugoniot 条件。\n\n激波不是经典解中的普通间断点，而是弱解允许的跳跃结构；熵条件用来排除非物理的反激波。激波在偏微分方程中说明算子、区域、边界数据和函数空间之间的关系，重点不只是一条微分等式。围绕激波，区域边界、数据正则性和允许的极限过程都会改变可证明的结论。激波要同时看主部、数据位置和允许的函数空间，改变其中一项就可能得到不同结论。激波突出通量和间断传播，弱形式不足以唯一选解时还要加入熵条件。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "激波",
+          "url": "https://www.baidu.com/s?wd=%E6%BF%80%E6%B3%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "激波",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%BF%80%E6%B3%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "shock wave",
+          "url": "https://en.wikipedia.org/w/index.php?search=shock%20wave"
+        }
       ]
     },
     {
@@ -251,6 +455,24 @@
         "对象 条件 运算 记号",
         "viscosity solution",
         "viscosity_solution"
+      ],
+      "explanation_markdown": "粘性解是用光滑测试函数从上方或下方接触来定义的弱化解概念。常写成 $F(x,u,D\\phi,D^2\\phi)\\le0$，其中 $\\phi$ 是接触测试函数。它常用于 Hamilton-Jacobi 方程和完全非线性椭圆方程。\n\n粘性解不要求弱导数存在，区别于 Sobolev 弱解；它通过比较原理保证唯一性。粘性解在偏微分方程中说明算子、区域、边界数据和函数空间之间的关系，重点不只是一条微分等式。粘性解还要说明测试函数或积分恒等式的范围，否则同一符号可能代表不同强度的解概念。粘性解要同时看主部、数据位置和允许的函数空间，改变其中一项就可能得到不同结论。粘性解的作用是固定一个分析层面，让方程的局部微分信息能转成全局控制。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "粘性解",
+          "url": "https://www.baidu.com/s?wd=%E7%B2%98%E6%80%A7%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "粘性解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B2%98%E6%80%A7%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "viscosity solution",
+          "url": "https://en.wikipedia.org/w/index.php?search=viscosity%20solution"
+        }
       ]
     },
     {
@@ -269,6 +491,24 @@
         "对象 条件 运算 记号",
         "semilinear elliptic equation",
         "semilinear_elliptic_equation"
+      ],
+      "explanation_markdown": "半线性椭圆方程是最高阶椭圆主部线性、低阶项可非线性的方程。常写成 $-\\Delta u=f(x,u)$，其中 $f$ 可对 $u$ 非线性依赖。主部仍保留线性椭圆算子的正则性。\n\n半线性与拟线性的差别在于最高阶系数不依赖 $\\nabla u$ 或 $u$；非线性只出现在低阶部分。半线性椭圆方程的行为由最高阶主部、非线性项和退化程度决定，椭圆、抛物、双曲结构会分别影响正则性与传播。半线性椭圆方程主要描述平衡态，边界数据控制内部解，正则性常由主部椭圆性推动。半线性椭圆方程的初边值设置会改变可用工具，能量法、比较原理或粘性逼近并不总能互换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "半线性椭圆方程",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8A%E7%BA%BF%E6%80%A7%E6%A4%AD%E5%9C%86%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "半线性椭圆方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8A%E7%BA%BF%E6%80%A7%E6%A4%AD%E5%9C%86%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "semilinear elliptic equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=semilinear%20elliptic%20equation"
+        }
       ]
     },
     {
@@ -287,6 +527,24 @@
         "对象 条件 运算 记号",
         "quasilinear elliptic equation",
         "quasilinear_elliptic_equation"
+      ],
+      "explanation_markdown": "拟线性椭圆方程是最高阶导数线性出现但系数可依赖未知函数或梯度的椭圆方程。常写成 $-\\nabla\\cdot A(x,u,\\nabla u)=f$，其中 $A$ 是非线性通量。极小曲面方程和 $p$-Laplace 方程属于相关类型。\n\n它比半线性更复杂，因为主部本身随解改变；但与完全非线性方程相比，最高阶导数仍线性进入。拟线性椭圆方程的行为由最高阶主部、非线性项和退化程度决定，椭圆、抛物、双曲结构会分别影响正则性与传播。拟线性椭圆方程主要描述平衡态，边界数据控制内部解，正则性常由主部椭圆性推动。拟线性椭圆方程的初边值设置会改变可用工具，能量法、比较原理或粘性逼近并不总能互换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拟线性椭圆方程",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%9F%E7%BA%BF%E6%80%A7%E6%A4%AD%E5%9C%86%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拟线性椭圆方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%9F%E7%BA%BF%E6%80%A7%E6%A4%AD%E5%9C%86%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quasilinear elliptic equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=quasilinear%20elliptic%20equation"
+        }
       ]
     },
     {
@@ -305,6 +563,24 @@
         "对象 条件 运算 记号",
         "fully nonlinear elliptic equation",
         "fully_nonlinear_elliptic_equation"
+      ],
+      "explanation_markdown": "完全非线性椭圆方程是最高阶导数也以非线性方式进入的椭圆方程。常写成 $F(D^2u,Du,u,x)=0$，其中 $D^2u$ 是 Hessian 矩阵，$Du$ 是梯度，$x$ 是空间变量；Monge-Ampere 方程是典型例子。\n\n它不能简单写成线性主部加低阶非线性项，主曲率、最优传输和几何光学中都会出现。椭圆性要求 $F$ 对 Hessian 的偏序具有单调性，因而比较原理和粘性解常比经典逐点二阶导数更重要。和半线性或拟线性方程相比，它的最高阶结构也会随解变化；边界条件、凸性假设和退化程度会直接影响正则性。许多结果还要区分经典解、弱解和粘性解，因为三者允许的函数光滑程度不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "完全非线性椭圆方程",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%8C%E5%85%A8%E9%9D%9E%E7%BA%BF%E6%80%A7%E6%A4%AD%E5%9C%86%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "完全非线性椭圆方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%8C%E5%85%A8%E9%9D%9E%E7%BA%BF%E6%80%A7%E6%A4%AD%E5%9C%86%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fully nonlinear elliptic equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=fully%20nonlinear%20elliptic%20equation"
+        }
       ]
     },
     {
@@ -323,6 +599,24 @@
         "对象 条件 运算 记号",
         "degenerate elliptic equation",
         "degenerate_elliptic_equation"
+      ],
+      "explanation_markdown": "退化椭圆方程是椭圆性可能在某些方向或点上失去严格下界的方程。常写成 $0\\le a^{ij}(x)\\xi_i\\xi_j\\le \\Lambda|\\xi|^2$，其中 $a^{ij}$ 是主部系数。下界允许为零，因此不能提供一致控制。\n\n退化椭圆比一致椭圆弱，正则性和最大值原理都可能需要额外条件；许多几何和概率模型会自然产生退化。退化椭圆方程的行为由最高阶主部、非线性项和退化程度决定，椭圆、抛物、双曲结构会分别影响正则性与传播。退化椭圆方程主要描述平衡态，边界数据控制内部解，正则性常由主部椭圆性推动。退化椭圆方程的初边值设置会改变可用工具，能量法、比较原理或粘性逼近并不总能互换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "退化椭圆方程",
+          "url": "https://www.baidu.com/s?wd=%E9%80%80%E5%8C%96%E6%A4%AD%E5%9C%86%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "退化椭圆方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%80%80%E5%8C%96%E6%A4%AD%E5%9C%86%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "degenerate elliptic equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=degenerate%20elliptic%20equation"
+        }
       ]
     },
     {
@@ -341,6 +635,24 @@
         "对象 条件 运算 记号",
         "uniformly elliptic equation",
         "uniformly_elliptic_equation"
+      ],
+      "explanation_markdown": "一致椭圆方程是主部在所有方向上有统一正上下界的椭圆方程。常写成 $\\lambda|\\xi|^2\\le a^{ij}(x)\\xi_i\\xi_j\\le\\Lambda|\\xi|^2$，其中 $0<\\lambda\\le\\Lambda$ 是常数，$\\xi$ 是任意方向向量。\n\n这个条件说明扩散不会在某个方向消失，也不会无限放大。它是 Schauder 估计、Harnack 不等式和 De Giorgi-Nash-Moser 理论中的基本假设。退化椭圆方程缺少统一下界，可能出现自由边界或低正则性；强椭圆则常在系统方程中使用。统一常数 $\\lambda,\\Lambda$ 还决定估计常数是否能在一族方程中稳定控制。研究边值问题时，区域边界的光滑性和系数连续性也会进入正则性结论。若常数随位置退化，最大值原理和先验估计都要改写，这也是它与普通正定条件的差别。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "一致椭圆方程",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%80%E8%87%B4%E6%A4%AD%E5%9C%86%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "一致椭圆方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%80%E8%87%B4%E6%A4%AD%E5%9C%86%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "uniformly elliptic equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=uniformly%20elliptic%20equation"
+        }
       ]
     },
     {
@@ -359,6 +671,24 @@
         "对象 条件 运算 记号",
         "divergence form elliptic equation",
         "divergence_form_elliptic_equation"
+      ],
+      "explanation_markdown": "散度型椭圆方程是主部写成散度形式的椭圆方程。常写成 $-\\nabla\\cdot(A(x)\\nabla u)=f$，其中 $A(x)$ 是系数矩阵，$u$ 是未知函数，$f$ 是源项。这个形式天然适合积分分部。\n\n它的弱形式为 $\\int A\\nabla u\\cdot\\nabla\\varphi=\\int f\\varphi$，其中 $\\varphi$ 是测试函数。系数只要满足可测和椭圆性，许多存在性结果仍能在 Sobolev 空间中成立。非散度型方程直接写成 $a^{ij}u_{ij}=f$，更依赖最大值原理和粘性解；散度型方程则更贴近守恒律、能量估计和有限元离散。物理上它常表示通量平衡，数学上则把导数落到测试函数上。边界条件通常以法向通量或 Dirichlet 数据出现，弱解的自然空间多为 $H^1$ 型空间，在粗糙介质模型中也很常见。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "散度型椭圆方程",
+          "url": "https://www.baidu.com/s?wd=%E6%95%A3%E5%BA%A6%E5%9E%8B%E6%A4%AD%E5%9C%86%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "散度型椭圆方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%95%A3%E5%BA%A6%E5%9E%8B%E6%A4%AD%E5%9C%86%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "divergence form elliptic equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=divergence%20form%20elliptic%20equation"
+        }
       ]
     },
     {
@@ -377,6 +707,24 @@
         "对象 条件 运算 记号",
         "nondivergence form elliptic equation",
         "nondivergence_form_elliptic_equation"
+      ],
+      "explanation_markdown": "非散度型椭圆方程是二阶主部直接由 Hessian 与系数矩阵收缩给出的方程。常写成 $-a^{ij}(x)u_{ij}=f$，其中 $u_{ij}$ 是二阶偏导。它不先写成通量的散度。\n\n非散度型方程常与最大值原理、ABP估计和粘性解相连；与散度型相比，弱形式不由一次分部积分直接给出。非散度型椭圆方程的行为由最高阶主部、非线性项和退化程度决定，椭圆、抛物、双曲结构会分别影响正则性与传播。非散度型椭圆方程主要描述平衡态，边界数据控制内部解，正则性常由主部椭圆性推动。非散度型椭圆方程的初边值设置会改变可用工具，能量法、比较原理或粘性逼近并不总能互换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "非散度型椭圆方程",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%9E%E6%95%A3%E5%BA%A6%E5%9E%8B%E6%A4%AD%E5%9C%86%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "非散度型椭圆方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%9E%E6%95%A3%E5%BA%A6%E5%9E%8B%E6%A4%AD%E5%9C%86%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "nondivergence form elliptic equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=nondivergence%20form%20elliptic%20equation"
+        }
       ]
     },
     {
@@ -395,6 +743,24 @@
         "强范数 严格拓扑",
         "strongly parabolic equation",
         "strongly_parabolic_equation"
+      ],
+      "explanation_markdown": "强抛物方程是具有统一抛物性并随时间演化的方程。常写成 $u_t-a^{ij}(x,t)u_{ij}=f$，其中 $a^{ij}$ 满足一致椭圆下界。它表现出扩散平滑和时间方向性。\n\n强抛物方程对应热方程的稳定推广；退化抛物方程则允许扩散系数消失或变弱。关键点是结论在更严格的范数、拓扑或逐点意义下成立。强抛物方程的行为由最高阶主部、非线性项和退化程度决定，椭圆、抛物、双曲结构会分别影响正则性与传播。强抛物方程把空间平滑和时间演化连在一起，初值决定早期状态，扩散项改善正则性。强抛物方程的初边值设置会改变可用工具，能量法、比较原理或粘性逼近并不总能互换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "强抛物方程",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%BA%E6%8A%9B%E7%89%A9%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "强抛物方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%BA%E6%8A%9B%E7%89%A9%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "strongly parabolic equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=strongly%20parabolic%20equation"
+        }
       ]
     },
     {
@@ -413,6 +779,24 @@
         "对象 条件 运算 记号",
         "degenerate parabolic equation",
         "degenerate_parabolic_equation"
+      ],
+      "explanation_markdown": "退化抛物方程是抛物性在某些状态或位置可能消失的演化方程。常写成 $u_t-\\nabla\\cdot(a(u)\\nabla u)=0$，其中 $a(u)$ 可在某些值处为零。多孔介质方程和薄膜方程都属于常见模型。\n\n当扩散系数退化时，解可能不再具有热方程那样的瞬时平滑性，有限传播速度和自由边界会变得重要。它不同于一致抛物方程，后者的主部有统一下界，可直接使用标准正则性理论。退化项的位置、初值支集和边界通量共同决定弱解框架；质量守恒、熵估计和比较原理通常比显式解更有用。数值上还要避免把零扩散区域误处理成普通热传导区域。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "退化抛物方程",
+          "url": "https://www.baidu.com/s?wd=%E9%80%80%E5%8C%96%E6%8A%9B%E7%89%A9%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "退化抛物方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%80%80%E5%8C%96%E6%8A%9B%E7%89%A9%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "degenerate parabolic equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=degenerate%20parabolic%20equation"
+        }
       ]
     },
     {
@@ -431,6 +815,24 @@
         "对象 条件 运算 记号",
         "reaction diffusion equation",
         "reaction_diffusion_equation"
+      ],
+      "explanation_markdown": "反应扩散方程描述扩散与局部反应同时作用的演化。常写成 $u_t=D\\Delta u+f(u)$，其中 $D$ 是扩散系数，$f(u)$ 是反应项。它常用于化学、生物和相变模型。\n\n扩散项使解平滑并传播，反应项在每一点改变增长或衰减；二者竞争可产生波前和斑图。反应扩散方程的行为由最高阶主部、非线性项和退化程度决定，椭圆、抛物、双曲结构会分别影响正则性与传播。反应扩散方程表现为从高处向低处平滑，核估计和最大值原理给出衰减信息。反应项控制局部增长或衰减，扩散项负责空间传播，两者竞争会形成波前、斑图或稳态分层。反应扩散方程的初边值设置会改变可用工具，能量法、比较原理或粘性逼近并不总能互换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反应扩散方程",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E5%BA%94%E6%89%A9%E6%95%A3%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反应扩散方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E5%BA%94%E6%89%A9%E6%95%A3%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "reaction diffusion equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=reaction%20diffusion%20equation"
+        }
       ]
     },
     {
@@ -449,6 +851,24 @@
         "对象 条件 运算 记号",
         "convection diffusion equation",
         "convection_diffusion_equation"
+      ],
+      "explanation_markdown": "对流扩散方程同时包含输运和扩散。常写成 $u_t+b\\cdot\\nabla u=D\\Delta u$，其中 $b$ 是速度场，$D$ 是扩散系数。对流搬运分布，扩散抹平梯度。\n\n当扩散很小时，解会出现边界层或尖锐前沿；它介于纯输运方程和热方程之间。对流扩散方程的行为由最高阶主部、非线性项和退化程度决定，椭圆、抛物、双曲结构会分别影响正则性与传播。对流扩散方程表现为从高处向低处平滑，核估计和最大值原理给出衰减信息。对流项沿速度场搬运物质，扩散项抹平梯度，二者强弱决定边界层和长期衰减。对流扩散方程的初边值设置会改变可用工具，能量法、比较原理或粘性逼近并不总能互换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对流扩散方程",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E6%B5%81%E6%89%A9%E6%95%A3%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对流扩散方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E6%B5%81%E6%89%A9%E6%95%A3%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "convection diffusion equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=convection%20diffusion%20equation"
+        }
       ]
     },
     {
@@ -467,6 +887,19 @@
         "对象 条件 运算 记号",
         "hamilton jacobi equation",
         "hamilton_jacobi_equation"
+      ],
+      "explanation_markdown": "HamiltonJacobi方程是一类以梯度进入哈密顿量的一阶非线性方程。常写成 $u_t+H(x,\\nabla u)=0$，其中 $H$ 是哈密顿函数，$\\nabla u$ 是空间梯度。它出现在最优控制、几何光学和经典力学中。\n\n该方程即使初值光滑也可能失去经典可微性；粘性解提供稳定唯一的解释。HamiltonJacobi方程的行为由最高阶主部、非线性项和退化程度决定，椭圆、抛物、双曲结构会分别影响正则性与传播。HamiltonJacobi方程要同时看主部、数据位置和允许的函数空间，改变其中一项就可能得到不同结论。它常来自最优控制或几何光学，梯度代表动量，粘性解用于处理交叉特征造成的不可微。HamiltonJacobi方程的初边值设置会改变可用工具，能量法、比较原理或粘性逼近并不总能互换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "HamiltonJacobi方程",
+          "url": "https://www.baidu.com/s?wd=HamiltonJacobi%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "HamiltonJacobi方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=HamiltonJacobi%E6%96%B9%E7%A8%8B"
+        }
       ]
     },
     {
@@ -485,6 +918,19 @@
         "对象 条件 运算 记号",
         "burgers equation",
         "burgers_equation"
+      ],
+      "explanation_markdown": "Burgers方程是包含非线性对流并可带粘性的基本模型。常写成 $u_t+u u_x=\\nu u_{xx}$，其中 $\\nu\\ge0$ 是粘性系数。当 $\\nu=0$ 时可形成激波。\n\nBurgers方程是理解守恒律、激波和粘性极限的模型；粘性项存在时更接近抛物方程。Burgers方程的行为由最高阶主部、非线性项和退化程度决定，椭圆、抛物、双曲结构会分别影响正则性与传播。研究Burgers方程时，通量、非线性项和初边值数据共同决定弱解框架与可能出现的奇性。Burgers方程中非线性对流会使波形变陡，粘性项则提供耗散，是研究激波和粘性极限的标准模型。Burgers方程的初边值设置会改变可用工具，能量法、比较原理或粘性逼近并不总能互换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Burgers方程",
+          "url": "https://www.baidu.com/s?wd=Burgers%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Burgers方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Burgers%E6%96%B9%E7%A8%8B"
+        }
       ]
     },
     {
@@ -503,6 +949,19 @@
         "对象 条件 运算 记号",
         "korteweg de vries equation",
         "korteweg_de_vries_equation"
+      ],
+      "explanation_markdown": "KortewegdeVries方程是描述弱非线性与色散平衡的演化方程。常写成 $u_t+6uu_x+u_{xxx}=0$，其中 $u_{xxx}$ 是三阶色散项。它以孤立波解著名。\n\n它与扩散方程不同，三阶项不耗散而产生色散；非线性和色散平衡可保持孤波形状。KortewegdeVries方程的行为由最高阶主部、非线性项和退化程度决定，椭圆、抛物、双曲结构会分别影响正则性与传播。研究KortewegdeVries方程时，通量、非线性项和初边值数据共同决定弱解框架与可能出现的奇性。KortewegdeVries方程同时含非线性和色散项，可产生孤立波，和纯扩散方程的平滑机制不同。KortewegdeVries方程的初边值设置会改变可用工具，能量法、比较原理或粘性逼近并不总能互换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "KortewegdeVries方程",
+          "url": "https://www.baidu.com/s?wd=KortewegdeVries%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "KortewegdeVries方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=KortewegdeVries%E6%96%B9%E7%A8%8B"
+        }
       ]
     },
     {
@@ -521,6 +980,19 @@
         "对象 条件 运算 记号",
         "navier stokes equation",
         "navier_stokes_equation"
+      ],
+      "explanation_markdown": "NavierStokes方程描述黏性不可压流体的速度和压力演化。常写成 $u_t+(u\\cdot\\nabla)u+\\nabla p=\\nu\\Delta u,\\quad \\nabla\\cdot u=0$，其中 $u$ 是速度，$p$ 是压力，$\\nu$ 是粘性。非线性对流项与黏性扩散同时存在。\n\n它比 Euler 方程多出粘性项，能量会耗散；三维整体光滑性仍是著名难题。NavierStokes方程的行为由最高阶主部、非线性项和退化程度决定，椭圆、抛物、双曲结构会分别影响正则性与传播。研究NavierStokes方程时，通量、非线性项和初边值数据共同决定弱解框架与可能出现的奇性。NavierStokes方程把粘性耗散、压力和不可压约束合在一起，正则性问题是流体方程中的核心难点。NavierStokes方程的初边值设置会改变可用工具，能量法、比较原理或粘性逼近并不总能互换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "NavierStokes方程",
+          "url": "https://www.baidu.com/s?wd=NavierStokes%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "NavierStokes方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=NavierStokes%E6%96%B9%E7%A8%8B"
+        }
       ]
     },
     {
@@ -539,6 +1011,19 @@
         "对象 条件 运算 记号",
         "euler liu ti equation",
         "euler_liu_ti_equation"
+      ],
+      "explanation_markdown": "Euler流体方程描述无黏不可压流体的运动。常写成 $u_t+(u\\cdot\\nabla)u+\\nabla p=0,\\quad \\nabla\\cdot u=0$，其中 $u$ 是速度场，$p$ 是压力。它保留惯性对流和不可压约束。\n\nEuler方程是 Navier-Stokes 方程在零粘性时的形式；缺少扩散项后，涡量和奇性问题更突出。Euler流体方程的行为由最高阶主部、非线性项和退化程度决定，椭圆、抛物、双曲结构会分别影响正则性与传播。研究Euler流体方程时，通量、非线性项和初边值数据共同决定弱解框架与可能出现的奇性。Euler流体方程省去粘性耗散，涡量输运和可能的奇性形成比能量衰减更突出。Euler流体方程的初边值设置会改变可用工具，能量法、比较原理或粘性逼近并不总能互换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Euler流体方程",
+          "url": "https://www.baidu.com/s?wd=Euler%E6%B5%81%E4%BD%93%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Euler流体方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Euler%E6%B5%81%E4%BD%93%E6%96%B9%E7%A8%8B"
+        }
       ]
     },
     {
@@ -557,6 +1042,19 @@
         "对象 条件 运算 记号",
         "allen cahn equation",
         "allen_cahn_equation"
+      ],
+      "explanation_markdown": "AllenCahn方程是描述相场向双势阱稳定态演化的反应扩散方程。常写成 $u_t=\\varepsilon^2\\Delta u-F'(u)$，其中 $F$ 是双阱势，$\\varepsilon$ 控制界面厚度。它是能量梯度流。\n\nAllen-Cahn 方程的序参量不守恒；Cahn-Hilliard 方程则带有质量守恒和四阶空间算子。AllenCahn方程的行为由最高阶主部、非线性项和退化程度决定，椭圆、抛物、双曲结构会分别影响正则性与传播。研究AllenCahn方程时，通量、非线性项和初边值数据共同决定弱解框架与可能出现的奇性。AllenCahn方程带有双势阱反应项，常用来描述相界面运动和平均曲率流近似。AllenCahn方程的初边值设置会改变可用工具，能量法、比较原理或粘性逼近并不总能互换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "AllenCahn方程",
+          "url": "https://www.baidu.com/s?wd=AllenCahn%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "AllenCahn方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=AllenCahn%E6%96%B9%E7%A8%8B"
+        }
       ]
     },
     {
@@ -575,6 +1073,19 @@
         "对象 条件 运算 记号",
         "cahn hilliard equation",
         "cahn_hilliard_equation"
+      ],
+      "explanation_markdown": "CahnHilliard方程是质量守恒相分离模型中的四阶抛物方程。常写成 $u_t=\\Delta\\mu,\\quad \\mu=-\\varepsilon^2\\Delta u+F'(u)$，其中 $u$ 是浓度，$\\mu$ 是化学势，$F$ 是双阱势。\n\n它来自自由能的守恒梯度流，空间积分 $\\int u\\,dx$ 在无通量边界下保持不变。与 Allen-Cahn 方程相比，它多出化学势和通量结构，因此边界条件通常要同时约束 $u$ 与 $\\mu$ 的法向通量。四阶扩散会带来更强的正则性要求，也使相界面粗化、旋节分解和能量耗散成为主要研究对象。相场模型中，参数 $\\varepsilon$ 控制界面厚度，势函数形状决定两相偏好。数值离散还要同时保持质量守恒和能量下降，否则会破坏相分离过程的物理含义和长期稳态。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "CahnHilliard方程",
+          "url": "https://www.baidu.com/s?wd=CahnHilliard%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "CahnHilliard方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=CahnHilliard%E6%96%B9%E7%A8%8B"
+        }
       ]
     },
     {
@@ -593,6 +1104,19 @@
         "对象 条件 运算 记号",
         "monge ampere equation",
         "monge_ampere_equation"
+      ],
+      "explanation_markdown": "MongeAmpere方程是 Hessian 行列式给定的完全非线性椭圆方程。常写成 $\\det D^2u=f(x)$，其中 $D^2u$ 是 Hessian 矩阵。凸性通常是椭圆性的必要背景。\n\n它在最优传输和凸几何中出现；与线性椭圆方程不同，二阶导数组合通过行列式非线性进入。MongeAmpere方程的行为由最高阶主部、非线性项和退化程度决定，椭圆、抛物、双曲结构会分别影响正则性与传播。研究MongeAmpere方程时，通量、非线性项和初边值数据共同决定弱解框架与可能出现的奇性。MongeAmpere方程含 Hessian 行列式，凸性条件很关键，几何光学和最优输运中常见。MongeAmpere方程的初边值设置会改变可用工具，能量法、比较原理或粘性逼近并不总能互换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "MongeAmpere方程",
+          "url": "https://www.baidu.com/s?wd=MongeAmpere%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "MongeAmpere方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=MongeAmpere%E6%96%B9%E7%A8%8B"
+        }
       ]
     },
     {
@@ -611,6 +1135,19 @@
         "对象 条件 运算 记号",
         "fokkerplanck equation",
         "fokkerplanck_equation"
+      ],
+      "explanation_markdown": "FokkerPlanck方程描述随机过程概率密度随时间的演化。常写成 $\\partial_t\\rho=-\\nabla\\cdot(b\\rho)+\\frac12\\partial_{ij}(a^{ij}\\rho)$，其中 $b$ 是漂移，$a$ 是扩散矩阵。它也称 Kolmogorov 前向方程。\n\n该方程作用对象是概率密度而非单条轨道；漂移产生输运，扩散产生平滑。FokkerPlanck方程的行为由最高阶主部、非线性项和退化程度决定，椭圆、抛物、双曲结构会分别影响正则性与传播。研究FokkerPlanck方程时，通量、非线性项和初边值数据共同决定弱解框架与可能出现的奇性。FokkerPlanck方程描述概率密度随漂移和扩散演化，质量守恒和稳态分布是主要对象。FokkerPlanck方程的初边值设置会改变可用工具，能量法、比较原理或粘性逼近并不总能互换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "FokkerPlanck方程",
+          "url": "https://www.baidu.com/s?wd=FokkerPlanck%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "FokkerPlanck方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=FokkerPlanck%E6%96%B9%E7%A8%8B"
+        }
       ]
     },
     {
@@ -629,6 +1166,24 @@
         "对象 条件 运算 记号",
         "shu yun equation",
         "shu_yun_equation"
+      ],
+      "explanation_markdown": "输运方程描述量沿给定速度场搬运。常写成 $u_t+b(x,t)\\cdot\\nabla u=0$，其中 $b$ 是速度场。沿特征线，$u$ 通常保持常值。\n\n输运方程是一阶双曲型模型；若加入扩散项就变为对流扩散方程，正则性会明显改变。输运方程的行为由最高阶主部、非线性项和退化程度决定，椭圆、抛物、双曲结构会分别影响正则性与传播。研究输运方程时，通量、非线性项和初边值数据共同决定弱解框架与可能出现的奇性。输运方程沿速度场搬运初值，特征曲线和散度条件决定密度是否压缩或稀释。输运方程的初边值设置会改变可用工具，能量法、比较原理或粘性逼近并不总能互换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "输运方程",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%93%E8%BF%90%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "输运方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%93%E8%BF%90%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "transport equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=transport%20equation"
+        }
       ]
     },
     {
@@ -647,6 +1202,24 @@
         "对象 条件 运算 记号",
         "kuo san equation",
         "kuo_san_equation"
+      ],
+      "explanation_markdown": "扩散方程描述物质、热量或概率密度向低梯度方向扩散。常写成 $u_t=\\nabla\\cdot(A\\nabla u)$，其中 $A$ 是扩散矩阵。当 $A=\\kappa I$ 时就是热方程。\n\n扩散方程具有平滑和耗散特征；与输运方程的沿流搬运不同，它会削弱局部峰值。扩散方程的行为由最高阶主部、非线性项和退化程度决定，椭圆、抛物、双曲结构会分别影响正则性与传播。研究扩散方程时，通量、非线性项和初边值数据共同决定弱解框架与可能出现的奇性。扩散方程表现为从高处向低处平滑，核估计和最大值原理给出衰减信息。扩散方程的初边值设置会改变可用工具，能量法、比较原理或粘性逼近并不总能互换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "扩散方程",
+          "url": "https://www.baidu.com/s?wd=%E6%89%A9%E6%95%A3%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "扩散方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%A9%E6%95%A3%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "diffusion equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=diffusion%20equation"
+        }
       ]
     },
     {
@@ -665,6 +1238,24 @@
         "对象 条件 运算 记号",
         "fei ju bu equation",
         "fei_ju_bu_equation"
+      ],
+      "explanation_markdown": "非局部方程是某点方程值依赖远处函数值的方程。常写成 $Lu(x)=\\int_{\\mathbb R^n}(u(x)-u(y))K(x,y)\\,dy$，其中 $K$ 是核函数。积分算子替代了纯局部导数。\n\n非局部性常来自跳过程、分数阶算子或积分相互作用；边界条件也可能需要在区域外给定数据。非局部方程的行为由最高阶主部、非线性项和退化程度决定，椭圆、抛物、双曲结构会分别影响正则性与传播。非局部方程要同时看主部、数据位置和允许的函数空间，改变其中一项就可能得到不同结论。非局部项会同时读取远处函数值，边界条件也常要在区域外给定，因此传播不只由邻近点决定。非局部方程的初边值设置会改变可用工具，能量法、比较原理或粘性逼近并不总能互换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "非局部方程",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%9E%E5%B1%80%E9%83%A8%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "非局部方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%9E%E5%B1%80%E9%83%A8%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "non local equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=non%20local%20equation"
+        }
       ]
     },
     {
@@ -683,6 +1274,24 @@
         "对象 条件 运算 记号",
         "fractional laplacian equation",
         "fractional_laplacian_equation"
+      ],
+      "explanation_markdown": "分数阶拉普拉斯方程使用非整数阶拉普拉斯算子的方程。常写成 $(-\\Delta)^s u(x)=C_{n,s}\\operatorname{PV}\\int\\frac{u(x)-u(y)}{|x-y|^{n+2s}}\\,dy$，其中 $0<s<1$，$\\operatorname{PV}$ 是主值。它是非局部椭圆算子的典型例子。\n\n分数阶拉普拉斯同时看见远处函数值；与普通拉普拉斯方程相比，区域外数据也会影响内部解。分数阶拉普拉斯方程的行为由最高阶主部、非线性项和退化程度决定，椭圆、抛物、双曲结构会分别影响正则性与传播。分数阶拉普拉斯方程要同时看主部、数据位置和允许的函数空间，改变其中一项就可能得到不同结论。分数阶拉普拉斯方程的初边值设置会改变可用工具，能量法、比较原理或粘性逼近并不总能互换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分数阶拉普拉斯方程",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E6%95%B0%E9%98%B6%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分数阶拉普拉斯方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E6%95%B0%E9%98%B6%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fractional laplacian equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=fractional%20laplacian%20equation"
+        }
       ]
     },
     {
@@ -701,6 +1310,24 @@
         "对象 条件 运算 记号",
         "zhang ai problem",
         "zhang_ai_problem"
+      ],
+      "explanation_markdown": "障碍问题是在方程之外要求解不能低于给定障碍的变分不等式。常写成 $u\\ge\\psi,\\quad Lu\\ge f,\\quad (u-\\psi)(Lu-f)=0$，其中 $\\psi$ 是障碍函数。接触集和非接触集满足不同关系。\n\n障碍问题自然产生自由边界；自由边界不是预先给定的边界，而是由解与障碍接触的位置决定。障碍问题把方程、边界、初值或约束条件合成一个求解任务。障碍问题在偏微分方程中说明算子、区域、边界数据和函数空间之间的关系，重点不只是一条微分等式。障碍问题要同时看主部、数据位置和允许的函数空间，改变其中一项就可能得到不同结论。障碍问题的作用是固定一个分析层面，让方程的局部微分信息能转成全局控制。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "障碍问题",
+          "url": "https://www.baidu.com/s?wd=%E9%9A%9C%E7%A2%8D%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "障碍问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9A%9C%E7%A2%8D%E9%97%AE%E9%A2%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "barrier problem",
+          "url": "https://en.wikipedia.org/w/index.php?search=barrier%20problem"
+        }
       ]
     },
     {
@@ -719,6 +1346,24 @@
         "内部 边界 约束",
         "free boundary problem",
         "free_boundary_problem"
+      ],
+      "explanation_markdown": "自由边界问题是方程区域或相界面本身也未知的问题。常写成 $\\Gamma=\\partial\\{u>0\\}$，其中 $\\Gamma$ 是由解决定的边界。Stefan问题和障碍问题都属于此类。\n\n它与固定边界问题不同，边界位置要与解同时求出；正则性理论既研究解，也研究界面的光滑程度。自由边界问题把方程、边界、初值或约束条件合成一个求解任务。自由边界问题需要同时追踪内部关系和边界上的附加约束。自由边界问题的核心是边界上固定什么量：函数值、法向通量、线性组合、非局部约束或随时间变化的边界规律。自由边界问题要同时看主部、数据位置和允许的函数空间，改变其中一项就可能得到不同结论。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自由边界问题",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E7%94%B1%E8%BE%B9%E7%95%8C%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自由边界问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E7%94%B1%E8%BE%B9%E7%95%8C%E9%97%AE%E9%A2%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "free boundary problem",
+          "url": "https://en.wikipedia.org/w/index.php?search=free%20boundary%20problem"
+        }
       ]
     },
     {
@@ -737,6 +1382,24 @@
         "低光滑 较粗拓扑",
         "weak xing shi",
         "weak_xing_shi"
+      ],
+      "explanation_markdown": "弱形式是把微分方程乘以测试函数并积分分部后的表达。常写成 $a(u,v)=\\ell(v)\\quad\\forall v\\in V$，其中 $V$ 是测试空间，$a$ 是双线性型。它降低了对经典导数的要求。\n\n弱形式适合 Sobolev 空间和有限元方法；强形式则要求方程在点态或几乎处处意义下成立。关键点是允许较低光滑性或较粗拓扑下继续讨论对象。弱形式说明方程等式在哪种意义下成立，正则性门槛越低，越需要测试函数、积分恒等式或熵条件来支撑。弱形式的区别在等式成立的意义：逐点、积分、分布或熵不等式对应不同正则性门槛。弱形式常用于降低光滑性要求，但也要保留足够信息来恢复边界条件或守恒量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弱形式",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B1%E5%BD%A2%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弱形式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B1%E5%BD%A2%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weak form",
+          "url": "https://en.wikipedia.org/w/index.php?search=weak%20form"
+        }
       ]
     },
     {
@@ -755,6 +1418,24 @@
         "强范数 严格拓扑",
         "strong xing shi",
         "strong_xing_shi"
+      ],
+      "explanation_markdown": "强形式是直接以微分算子等式表达的方程形式。常写成 $Lu=f\\quad\\text{in }\\Omega$，其中 $L$ 是微分算子。它通常要求解具有足够导数。\n\n强形式直观但正则性要求高；弱形式通过积分分部降低导数阶数，并自然纳入部分边界条件。关键点是结论在更严格的范数、拓扑或逐点意义下成立。强形式说明方程等式在哪种意义下成立，正则性门槛越低，越需要测试函数、积分恒等式或熵条件来支撑。强形式的区别在等式成立的意义：逐点、积分、分布或熵不等式对应不同正则性门槛。强形式常用于降低光滑性要求，但也要保留足够信息来恢复边界条件或守恒量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "强形式",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%BA%E5%BD%A2%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "强形式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%BA%E5%BD%A2%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "strong form",
+          "url": "https://en.wikipedia.org/w/index.php?search=strong%20form"
+        }
       ]
     },
     {
@@ -773,6 +1454,24 @@
         "对象 条件 运算 记号",
         "bian fen xing shi",
         "bian_fen_xing_shi"
+      ],
+      "explanation_markdown": "变分形式是把方程写成泛函驻值或双线性型等式的形式。常写成 $J[u]=\\min_{v\\in V}J[v]$，其中 $J$ 是能量泛函，$V$ 是允许函数空间。欧拉-拉格朗日方程常由它导出。\n\n变分形式强调能量结构；弱形式强调测试函数恒等式，二者在自伴椭圆问题中常相互等价。变分形式说明方程等式在哪种意义下成立，正则性门槛越低，越需要测试函数、积分恒等式或熵条件来支撑。变分形式还要说明测试函数或积分恒等式的范围，否则同一符号可能代表不同强度的解概念。变分形式的区别在等式成立的意义：逐点、积分、分布或熵不等式对应不同正则性门槛。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "变分形式",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%98%E5%88%86%E5%BD%A2%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "变分形式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%98%E5%88%86%E5%BD%A2%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "variational form",
+          "url": "https://en.wikipedia.org/w/index.php?search=variational%20form"
+        }
       ]
     },
     {
@@ -791,6 +1490,24 @@
         "对象 条件 运算 记号",
         "distribution solution",
         "distribution_solution"
+      ],
+      "explanation_markdown": "分布解是在分布意义下满足方程的解。常写成 $\\langle u,L^*\\phi\\rangle=\\langle f,\\phi\\rangle$，其中 $\\phi$ 是测试函数，$L^*$ 是伴随算子。它允许解本身只是局部可积函数或分布。\n\n分布解比经典解弱，也不一定带有能量空间控制；弱解通常还要求属于指定 Sobolev 空间。分布解说明方程等式在哪种意义下成立，正则性门槛越低，越需要测试函数、积分恒等式或熵条件来支撑。分布解还要说明测试函数或积分恒等式的范围，否则同一符号可能代表不同强度的解概念。分布解的区别在等式成立的意义：逐点、积分、分布或熵不等式对应不同正则性门槛。分布解常用于降低光滑性要求，但也要保留足够信息来恢复边界条件或守恒量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分布解",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E5%B8%83%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分布解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E5%B8%83%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "distribution solution",
+          "url": "https://en.wikipedia.org/w/index.php?search=distribution%20solution"
+        }
       ]
     },
     {
@@ -809,6 +1526,24 @@
         "对象 条件 运算 记号",
         "shang solution",
         "shang_solution"
+      ],
+      "explanation_markdown": "熵解是守恒律中满足额外熵不等式的弱解。常写成 $\\partial_t\\eta(u)+\\nabla\\cdot q(u)\\le0$，其中 $\\eta$ 是凸熵，$q$ 是对应熵通量。它排除不符合物理耗散方向的弱解。\n\n熵解主要用于非线性双曲守恒律；它不同于粘性解，后者通过测试函数接触定义。熵解说明方程等式在哪种意义下成立，正则性门槛越低，越需要测试函数、积分恒等式或熵条件来支撑。熵解还要说明测试函数或积分恒等式的范围，否则同一符号可能代表不同强度的解概念。熵解的区别在等式成立的意义：逐点、积分、分布或熵不等式对应不同正则性门槛。熵解常用于降低光滑性要求，但也要保留足够信息来恢复边界条件或守恒量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "熵解",
+          "url": "https://www.baidu.com/s?wd=%E7%86%B5%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "熵解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%86%B5%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "shang solution",
+          "url": "https://en.wikipedia.org/w/index.php?search=shang%20solution"
+        }
       ]
     },
     {
@@ -827,6 +1562,24 @@
         "对象 条件 运算 记号",
         "jing dian solution",
         "jing_dian_solution"
+      ],
+      "explanation_markdown": "经典解是具有足够连续导数并逐点满足方程的解。常写成 $u\\in C^k(\\Omega),\\quad Lu(x)=f(x)$，其中 $k$ 至少达到方程阶数。边界条件也按通常点态意义满足。\n\n经典解最直观但要求最强；弱解、分布解和粘性解都是为处理不光滑现象而放宽的概念。经典解说明方程等式在哪种意义下成立，正则性门槛越低，越需要测试函数、积分恒等式或熵条件来支撑。经典解还要说明测试函数或积分恒等式的范围，否则同一符号可能代表不同强度的解概念。经典解的区别在等式成立的意义：逐点、积分、分布或熵不等式对应不同正则性门槛。经典解常用于降低光滑性要求，但也要保留足够信息来恢复边界条件或守恒量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "经典解",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%8F%E5%85%B8%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "经典解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%8F%E5%85%B8%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "classic solution",
+          "url": "https://en.wikipedia.org/w/index.php?search=classic%20solution"
+        }
       ]
     },
     {
@@ -845,6 +1598,24 @@
         "对象 条件 运算 记号",
         "fundamental solution estimate",
         "fundamental_solution_estimate"
+      ],
+      "explanation_markdown": "基本解估计是对基本解大小和导数衰减的定量控制。常写成 $|\\Gamma(x,y)|\\le C|x-y|^{2-n}$，其中 $\\Gamma$ 是二阶椭圆算子的基本解。导数估计还会含有更高阶奇性。\n\n这类估计用于格林函数、正则性和积分表示；它关心点源响应在奇点附近和远处的大小。它用已知量控制未知对象的大小，常服务于存在性、唯一性或误差界。基本解估计给出从数据到解的定量控制，常用于推出存在唯一、连续依赖、内部光滑性或边界光滑性。基本解估计把数据的范数传递到解的范数上，用来控制唯一性、连续依赖或局部光滑性。基本解估计本身不是求解公式，而是把未知解限制在可控范围内，方便通过极限论证。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "基本解估计",
+          "url": "https://www.baidu.com/s?wd=%E5%9F%BA%E6%9C%AC%E8%A7%A3%E4%BC%B0%E8%AE%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "基本解估计",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9F%BA%E6%9C%AC%E8%A7%A3%E4%BC%B0%E8%AE%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fundamental solution estimate",
+          "url": "https://en.wikipedia.org/w/index.php?search=fundamental%20solution%20estimate"
+        }
       ]
     },
     {
@@ -863,6 +1634,19 @@
         "对象 条件 运算 记号",
         "green biao shi formula",
         "green_biao_shi_formula"
+      ],
+      "explanation_markdown": "Green表示公式是用格林函数、源项和边界数据表示解的公式。常写成 $u(x)=\\int_\\Omega G(x,y)f(y)\\,dy+\\int_{\\partial\\Omega}K(x,\\xi)g(\\xi)\\,dS_\\xi$，其中 $G$ 是格林函数，$K$ 是边界核。它把线性边值问题写成积分表达。\n\nGreen表示依赖具体算子和边界条件；与抽象弱解相比，它给出更显式的结构和估计入口。它把抽象关系写成可计算的表达式。Green表示公式在偏微分方程中说明算子、区域、边界数据和函数空间之间的关系，重点不只是一条微分等式。围绕Green表示公式，区域边界、数据正则性和允许的极限过程都会改变可证明的结论。Green表示公式要同时看主部、数据位置和允许的函数空间，改变其中一项就可能得到不同结论。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Green表示公式",
+          "url": "https://www.baidu.com/s?wd=Green%E8%A1%A8%E7%A4%BA%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Green表示公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Green%E8%A1%A8%E7%A4%BA%E5%85%AC%E5%BC%8F"
+        }
       ]
     },
     {
@@ -881,6 +1665,19 @@
         "对象 条件 运算 记号",
         "galerkin bi jin",
         "galerkin_bi_jin"
+      ],
+      "explanation_markdown": "Galerkin逼近是把无限维问题投影到有限维子空间中求近似解。常写成 $u_N=\\sum_{j=1}^N c_j\\phi_j$，其中 $\\phi_j$ 是基函数，$c_j$ 是未知系数。令残差对有限维空间正交可得到代数方程。\n\nGalerkin方法是有限元和弱解存在性证明的重要工具；关键是建立与 $N$ 无关的估计后取极限。Galerkin逼近属于构造或逼近解的技术，通常把原方程转成投影、极限、比较、半群或正则化过程。Galerkin逼近通常和先验界配合使用，用已知范数控制未知范数，再把近似解推向极限对象。Galerkin逼近通过构造近似解或比较族进入问题，关键是得到与近似参数无关的界。Galerkin逼近通常先在较好的对象上建立结论，再通过紧性、单调性或弱收敛回到原问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Galerkin逼近",
+          "url": "https://www.baidu.com/s?wd=Galerkin%E9%80%BC%E8%BF%91%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Galerkin逼近",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Galerkin%E9%80%BC%E8%BF%91"
+        }
       ]
     },
     {
@@ -899,6 +1696,24 @@
         "有界 覆盖 子列",
         "compact xing method",
         "compact_xing_method"
+      ],
+      "explanation_markdown": "紧性方法是利用有界序列存在收敛子列来通过极限构造解。常写成 $u_n\\rightharpoonup u$，其中 $\\rightharpoonup$ 表示弱收敛。常配合 Sobolev 嵌入和先验估计。\n\n紧性方法能处理非显式构造的存在性；难点在于非线性项是否能在弱收敛下通过极限。它给出一套操作流程，用来构造近似、证明结论或求出解。常见入口是从有界性、覆盖或子列中提取可收敛部分。紧性方法属于构造或逼近解的技术，通常把原方程转成投影、极限、比较、半群或正则化过程。紧性方法通过构造近似解或比较族进入问题，关键是得到与近似参数无关的界。紧性方法通常先在较好的对象上建立结论，再通过紧性、单调性或弱收敛回到原问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "紧性方法",
+          "url": "https://www.baidu.com/s?wd=%E7%B4%A7%E6%80%A7%E6%96%B9%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "紧性方法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B4%A7%E6%80%A7%E6%96%B9%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "compact xing method",
+          "url": "https://en.wikipedia.org/w/index.php?search=compact%20xing%20method"
+        }
       ]
     },
     {
@@ -917,6 +1732,24 @@
         "对象 条件 运算 记号",
         "monotone operator method",
         "monotone_operator_method"
+      ],
+      "explanation_markdown": "单调算子方法利用算子的单调性证明非线性方程可解。常写成 $\\langle A(u)-A(v),u-v\\rangle\\ge0$，其中 $A$ 是算子。强制性和半连续性常与单调性一起使用。\n\n它适合 $p$-Laplace 等非线性椭圆问题；与压缩映射不同，它不要求小的 Lipschitz 常数。它把函数、向量或测度映到另一个对象，并保留某种结构信息。单调算子方法属于构造或逼近解的技术，通常把原方程转成投影、极限、比较、半群或正则化过程。围绕单调算子方法，区域边界、数据正则性和允许的极限过程都会改变可证明的结论。单调算子方法通过构造近似解或比较族进入问题，关键是得到与近似参数无关的界。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单调算子方法",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E8%B0%83%E7%AE%97%E5%AD%90%E6%96%B9%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单调算子方法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E8%B0%83%E7%AE%97%E5%AD%90%E6%96%B9%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "monotone operator method",
+          "url": "https://en.wikipedia.org/w/index.php?search=monotone%20operator%20method"
+        }
       ]
     },
     {
@@ -935,6 +1768,24 @@
         "对象 条件 运算 记号",
         "shang solution xia solution",
         "shang_solution_xia_solution_method"
+      ],
+      "explanation_markdown": "上解下解方法用一对有序函数夹住真正解。常写成 $\\underline u\\le \\overline u$，其中 $\\underline u$ 是下解，$\\overline u$ 是上解。二者分别满足相反方向的不等式。\n\n该方法依赖比较原理和单调迭代；它给出存在性和界限，而不一定直接提供唯一性。它给出一套操作流程，用来构造近似、证明结论或求出解。上解下解方法属于构造或逼近解的技术，通常把原方程转成投影、极限、比较、半群或正则化过程。上解下解方法还要说明测试函数或积分恒等式的范围，否则同一符号可能代表不同强度的解概念。上解下解方法通过构造近似解或比较族进入问题，关键是得到与近似参数无关的界。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "上解下解方法",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%8A%E8%A7%A3%E4%B8%8B%E8%A7%A3%E6%96%B9%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "上解下解方法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%8A%E8%A7%A3%E4%B8%8B%E8%A7%A3%E6%96%B9%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "shang solution xia solution method",
+          "url": "https://en.wikipedia.org/w/index.php?search=shang%20solution%20xia%20solution%20method"
+        }
       ]
     },
     {
@@ -953,6 +1804,19 @@
         "对象 条件 运算 记号",
         "perron method",
         "perron_method"
+      ],
+      "explanation_markdown": "Perron方法通过取所有次解的上确界构造解。常写成 $u(x)=\\sup\\{v(x):v\\text{ 是次解}\\}$，其中 $v$ 是满足不等式的候选函数。调和函数和粘性解理论中都使用这种思想。\n\nPerron方法把比较原理转化为构造工具；关键是证明上确界仍满足所需方程和边界值。它给出一套操作流程，用来构造近似、证明结论或求出解。Perron方法属于构造或逼近解的技术，通常把原方程转成投影、极限、比较、半群或正则化过程。围绕Perron方法，区域边界、数据正则性和允许的极限过程都会改变可证明的结论。Perron方法通过构造近似解或比较族进入问题，关键是得到与近似参数无关的界。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Perron方法",
+          "url": "https://www.baidu.com/s?wd=Perron%E6%96%B9%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Perron方法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Perron%E6%96%B9%E6%B3%95"
+        }
       ]
     },
     {
@@ -971,6 +1835,24 @@
         "对象 条件 运算 记号",
         "viscosity bi jin",
         "viscosity_bi_jin"
+      ],
+      "explanation_markdown": "粘性逼近是在方程中加入小扩散项后再令其趋零的方法。常写成 $u_t+H(\\nabla u)=\\varepsilon\\Delta u$，其中 $\\varepsilon>0$ 是粘性参数。极限常选择物理或稳定解。\n\n它常用于 Hamilton-Jacobi 方程和守恒律；加粘性后的问题更光滑，极限则给出粘性解或熵解。粘性逼近属于构造或逼近解的技术，通常把原方程转成投影、极限、比较、半群或正则化过程。粘性逼近通常和先验界配合使用，用已知范数控制未知范数，再把近似解推向极限对象。粘性逼近通过构造近似解或比较族进入问题，关键是得到与近似参数无关的界。粘性逼近通常先在较好的对象上建立结论，再通过紧性、单调性或弱收敛回到原问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "粘性逼近",
+          "url": "https://www.baidu.com/s?wd=%E7%B2%98%E6%80%A7%E9%80%BC%E8%BF%91%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "粘性逼近",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B2%98%E6%80%A7%E9%80%BC%E8%BF%91"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "viscosity bi jin",
+          "url": "https://en.wikipedia.org/w/index.php?search=viscosity%20bi%20jin"
+        }
       ]
     },
     {
@@ -989,6 +1871,24 @@
         "光滑性 提升",
         "zheng ze hua method",
         "zheng_ze_hua_method"
+      ],
+      "explanation_markdown": "正则化方法是用平滑核或附加项把粗糙对象变光滑。常写成 $u_\\varepsilon=\\rho_\\varepsilon*u$，其中 $\\rho_\\varepsilon$ 是磨光核。随后对平滑近似建立估计并取极限。\n\n正则化不能改变目标方程的核心结构；它的作用是让计算合法化，再用一致估计回到原问题。它给出一套操作流程，用来构造近似、证明结论或求出解。它常用来把粗糙对象提升到更好的光滑性或结构层级。正则化方法属于构造或逼近解的技术，通常把原方程转成投影、极限、比较、半群或正则化过程。正则化方法通过构造近似解或比较族进入问题，关键是得到与近似参数无关的界。正则化方法通常先在较好的对象上建立结论，再通过紧性、单调性或弱收敛回到原问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正则化方法",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E5%88%99%E5%8C%96%E6%96%B9%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正则化方法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E5%88%99%E5%8C%96%E6%96%B9%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "regularization method",
+          "url": "https://en.wikipedia.org/w/index.php?search=regularization%20method"
+        }
       ]
     },
     {
@@ -1007,6 +1907,24 @@
         "对象 条件 运算 记号",
         "semigroup method",
         "semigroup_method"
+      ],
+      "explanation_markdown": "半群方法把演化方程看成算子生成的时间流。常写成 $u(t)=e^{tA}u_0$，其中 $A$ 是生成元，$e^{tA}$ 是半群。线性抛物方程和抽象 Cauchy 问题常这样表述。\n\n半群方法强调时间推进算子的连续性和生成元性质；它与逐点求解不同，更适合函数空间框架。它给出一套操作流程，用来构造近似、证明结论或求出解。半群方法属于构造或逼近解的技术，通常把原方程转成投影、极限、比较、半群或正则化过程。半群方法通过构造近似解或比较族进入问题，关键是得到与近似参数无关的界。半群方法通常先在较好的对象上建立结论，再通过紧性、单调性或弱收敛回到原问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "半群方法",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8A%E7%BE%A4%E6%96%B9%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "半群方法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8A%E7%BE%A4%E6%96%B9%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "semigroup method",
+          "url": "https://en.wikipedia.org/w/index.php?search=semigroup%20method"
+        }
       ]
     },
     {
@@ -1025,6 +1943,24 @@
         "强范数 严格拓扑",
         "strong maximum principle",
         "strong_maximum_principle"
+      ],
+      "explanation_markdown": "强最大值原理说明椭圆或抛物方程的非平凡解不能在内部取得非边界型最大值。常写成 $Lu\\ge0,\\ u(x_0)=\\max u\\Rightarrow u\\text{ 常数}$，其中 $x_0$ 是内点。它比弱最大值原理给出更强的刚性。\n\n强最大值原理常推出正性和唯一性；弱最大值原理只给出最大值受边界控制，不必推出常数结论。它给出判断或构造的总规则，常把多个局部条件压缩为一个核心入口。关键点是结论在更严格的范数、拓扑或逐点意义下成立。强最大值原理给出从数据到解的定量控制，常用于推出存在唯一、连续依赖、内部光滑性或边界光滑性。强最大值原理把数据的范数传递到解的范数上，用来控制唯一性、连续依赖或局部光滑性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "强最大值原理",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%BA%E6%9C%80%E5%A4%A7%E5%80%BC%E5%8E%9F%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "强最大值原理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%BA%E6%9C%80%E5%A4%A7%E5%80%BC%E5%8E%9F%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "strong maximum principle",
+          "url": "https://en.wikipedia.org/w/index.php?search=strong%20maximum%20principle"
+        }
       ]
     },
     {
@@ -1043,6 +1979,24 @@
         "对象 条件 运算 记号",
         "comparison principle",
         "comparison_principle"
+      ],
+      "explanation_markdown": "比较原理说明若一个函数在方程和边界上不超过另一个函数，则内部也不超过。常写成 $Lu\\le Lv,\\ u\\le v\\text{ on }\\partial\\Omega\\Rightarrow u\\le v$，其中 $L$ 是满足条件的算子。它是唯一性和单调方法的核心。\n\n比较原理把方程不等式转成解的顺序；粘性解、熵解和椭圆方程理论都依赖相应版本。它给出判断或构造的总规则，常把多个局部条件压缩为一个核心入口。比较原理给出从数据到解的定量控制，常用于推出存在唯一、连续依赖、内部光滑性或边界光滑性。比较原理把数据的范数传递到解的范数上，用来控制唯一性、连续依赖或局部光滑性。比较原理本身不是求解公式，而是把未知解限制在可控范围内，方便通过极限论证。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "比较原理",
+          "url": "https://www.baidu.com/s?wd=%E6%AF%94%E8%BE%83%E5%8E%9F%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "比较原理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AF%94%E8%BE%83%E5%8E%9F%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "comparison principle",
+          "url": "https://en.wikipedia.org/w/index.php?search=comparison%20principle"
+        }
       ]
     },
     {
@@ -1061,6 +2015,19 @@
         "对象 条件 运算 记号",
         "harnack inequality",
         "harnack_inequality"
+      ],
+      "explanation_markdown": "Harnack不等式控制非负解在一个区域内最大值与最小值的比例。常写成 $\\sup_{B_r}u\\le C\\inf_{B_r}u$，其中 $u\\ge0$，$B_r$ 是小球。常数 $C$ 依赖方程和区域比例。\n\n它说明非负解不能在局部剧烈振荡；这是椭圆和抛物正则性理论中的关键估计。它提供两个量之间的上界、下界或误差控制。Harnack不等式给出从数据到解的定量控制，常用于推出存在唯一、连续依赖、内部光滑性或边界光滑性。Harnack不等式通常和先验界配合使用，用已知范数控制未知范数，再把近似解推向极限对象。Harnack不等式把数据的范数传递到解的范数上，用来控制唯一性、连续依赖或局部光滑性。Harnack不等式本身不是求解公式，而是把未知解限制在可控范围内，方便通过极限论证。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Harnack不等式",
+          "url": "https://www.baidu.com/s?wd=Harnack%E4%B8%8D%E7%AD%89%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Harnack不等式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Harnack%E4%B8%8D%E7%AD%89%E5%BC%8F"
+        }
       ]
     },
     {
@@ -1079,6 +2046,19 @@
         "对象 条件 运算 记号",
         "schauder estimate",
         "schauder_estimate"
+      ],
+      "explanation_markdown": "Schauder估计用 Hölder 范数控制椭圆或抛物方程解的高阶正则性。常写成 $\\|u\\|_{C^{2,\\alpha}}\\le C(\\|f\\|_{C^\\alpha}+\\|u\\|_{C^0})$，其中 $C^{k,\\alpha}$ 是 Hölder 空间。系数和边界足够光滑时成立。\n\n它给出经典解层面的正则性；与 Calderon-Zygmund 估计相比，Schauder估计使用 Hölder 范数而非 $L^p$ 范数。它用已知量控制未知对象的大小，常服务于存在性、唯一性或误差界。Schauder估计给出从数据到解的定量控制，常用于推出存在唯一、连续依赖、内部光滑性或边界光滑性。Schauder估计通常和先验界配合使用，用已知范数控制未知范数，再把近似解推向极限对象。Schauder估计把数据的范数传递到解的范数上，用来控制唯一性、连续依赖或局部光滑性。Schauder估计本身不是求解公式，而是把未知解限制在可控范围内，方便通过极限论证。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Schauder估计",
+          "url": "https://www.baidu.com/s?wd=Schauder%E4%BC%B0%E8%AE%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Schauder估计",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Schauder%E4%BC%B0%E8%AE%A1"
+        }
       ]
     },
     {
@@ -1097,6 +2077,19 @@
         "对象 条件 运算 记号",
         "calderon zygmund estimate",
         "calderon_zygmund_estimate"
+      ],
+      "explanation_markdown": "CalderonZygmund估计用 $L^p$ 范数控制二阶导数。常写成 $\\|D^2u\\|_{L^p}\\le C\\|\\Delta u\\|_{L^p}$，其中 $1<p<\\infty$。它建立在奇异积分算子有界性上。\n\n该估计是椭圆正则性的 $L^p$ 版本；与 Schauder估计不同，它不要求 Hölder 连续数据。它用已知量控制未知对象的大小，常服务于存在性、唯一性或误差界。CalderonZygmund估计给出从数据到解的定量控制，常用于推出存在唯一、连续依赖、内部光滑性或边界光滑性。CalderonZygmund估计通常和先验界配合使用，用已知范数控制未知范数，再把近似解推向极限对象。CalderonZygmund估计把数据的范数传递到解的范数上，用来控制唯一性、连续依赖或局部光滑性。CalderonZygmund估计本身不是求解公式，而是把未知解限制在可控范围内，方便通过极限论证。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "CalderonZygmund估计",
+          "url": "https://www.baidu.com/s?wd=CalderonZygmund%E4%BC%B0%E8%AE%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "CalderonZygmund估计",
+          "url": "https://zh.wikipedia.org/w/index.php?search=CalderonZygmund%E4%BC%B0%E8%AE%A1"
+        }
       ]
     },
     {
@@ -1115,6 +2108,19 @@
         "重复更新 误差",
         "degiorgi die dai",
         "degiorgi_die_dai"
+      ],
+      "explanation_markdown": "DeGiorgi迭代是通过截断能量估计逐步提高解有界性和振荡控制的方法。常写成 $(u-k)_+=\\max(u-k,0)$，其中 $k$ 是逐级提高的截断高度。它用于粗糙系数椭圆方程正则性。\n\nDeGiorgi迭代不依赖显式核公式；它与 Moser迭代同为证明 Hölder 连续性的核心技术。常见入口是重复更新、误差传播和停止准则。DeGiorgi迭代属于构造或逼近解的技术，通常把原方程转成投影、极限、比较、半群或正则化过程。DeGiorgi迭代通常和先验界配合使用，用已知范数控制未知范数，再把近似解推向极限对象。DeGiorgi迭代通过构造近似解或比较族进入问题，关键是得到与近似参数无关的界。DeGiorgi迭代通常先在较好的对象上建立结论，再通过紧性、单调性或弱收敛回到原问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "DeGiorgi迭代",
+          "url": "https://www.baidu.com/s?wd=DeGiorgi%E8%BF%AD%E4%BB%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "DeGiorgi迭代",
+          "url": "https://zh.wikipedia.org/w/index.php?search=DeGiorgi%E8%BF%AD%E4%BB%A3"
+        }
       ]
     },
     {
@@ -1133,6 +2139,19 @@
         "重复更新 误差",
         "moser die dai",
         "moser_die_dai"
+      ],
+      "explanation_markdown": "Moser迭代是用不断提高的 $L^p$ 范数推出有界性或 Harnack不等式的方法。常写成 $\\|u\\|_{L^{p_{j+1}}}\\le C_j\\|u\\|_{L^{p_j}}$，其中 $p_j$ 是递增指数列。Sobolev不等式把每一步联系起来。\n\nMoser迭代与 DeGiorgi方法目标相近，但组织方式更偏向范数提升；它广泛用于非负解估计。常见入口是重复更新、误差传播和停止准则。Moser迭代属于构造或逼近解的技术，通常把原方程转成投影、极限、比较、半群或正则化过程。Moser迭代通常和先验界配合使用，用已知范数控制未知范数，再把近似解推向极限对象。Moser迭代通过构造近似解或比较族进入问题，关键是得到与近似参数无关的界。Moser迭代通常先在较好的对象上建立结论，再通过紧性、单调性或弱收敛回到原问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Moser迭代",
+          "url": "https://www.baidu.com/s?wd=Moser%E8%BF%AD%E4%BB%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Moser迭代",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Moser%E8%BF%AD%E4%BB%A3"
+        }
       ]
     },
     {
@@ -1151,6 +2170,24 @@
         "低光滑 较粗拓扑",
         "weak maximum principle",
         "weak_maximum_principle"
+      ],
+      "explanation_markdown": "弱最大值原理说明解在区域内的最大值受边界控制。常写成 $Lu\\ge0\\Rightarrow \\max_{\\overline\\Omega}u\\le \\max_{\\partial\\Omega}u^+$，其中 $u^+=\\max(u,0)$。它通常不推出内部取最大时解为常数。\n\n弱最大值原理提供比较和唯一性；强最大值原理则进一步描述内部等号情形的刚性。它给出判断或构造的总规则，常把多个局部条件压缩为一个核心入口。关键点是允许较低光滑性或较粗拓扑下继续讨论对象。弱最大值原理给出从数据到解的定量控制，常用于推出存在唯一、连续依赖、内部光滑性或边界光滑性。弱最大值原理把数据的范数传递到解的范数上，用来控制唯一性、连续依赖或局部光滑性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弱最大值原理",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B1%E6%9C%80%E5%A4%A7%E5%80%BC%E5%8E%9F%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弱最大值原理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B1%E6%9C%80%E5%A4%A7%E5%80%BC%E5%8E%9F%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weak maximum principle",
+          "url": "https://en.wikipedia.org/w/index.php?search=weak%20maximum%20principle"
+        }
       ]
     },
     {
@@ -1169,6 +2206,24 @@
         "内部 边界 约束",
         "boundary regularity",
         "boundary_regularity"
+      ],
+      "explanation_markdown": "边界正则性研究解在区域边界附近能否保持光滑。常写成 $f\\in C^\\alpha,\\ \\partial\\Omega\\in C^{2,\\alpha}\\Rightarrow u\\in C^{2,\\alpha}(\\overline\\Omega)$，其中 $\\partial\\Omega$ 是边界。边界数据和边界形状都会影响结论。\n\n边界正则性比内部正则性更敏感；角点、粗糙边界或不相容数据都可能降低解的光滑度。边界正则性需要同时追踪内部关系和边界上的附加约束。边界正则性的核心是边界上固定什么量：函数值、法向通量、线性组合、非局部约束或随时间变化的边界规律。边界正则性把数据的范数传递到解的范数上，用来控制唯一性、连续依赖或局部光滑性。边界正则性与内部方程配套后才形成完整问题，兼容条件和边界光滑性会影响正则性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "边界正则性",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%B9%E7%95%8C%E6%AD%A3%E5%88%99%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "边界正则性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%B9%E7%95%8C%E6%AD%A3%E5%88%99%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "boundary regularity",
+          "url": "https://en.wikipedia.org/w/index.php?search=boundary%20regularity"
+        }
       ]
     },
     {
@@ -1187,6 +2242,24 @@
         "光滑性 提升",
         "interior regularity",
         "interior_regularity"
+      ],
+      "explanation_markdown": "内部正则性研究解在远离边界的区域内能否更光滑。常写成 $Lu=f\\Rightarrow u\\in C^{2,\\alpha}_{\\rm loc}(\\Omega)$，其中 $\\rm loc$ 表示局部。它主要由方程和内部数据决定。\n\n内部正则性通常不需要边界光滑条件；与边界正则性相比，它排除了边界几何带来的奇性。它常用来把粗糙对象提升到更好的光滑性或结构层级。内部正则性给出从数据到解的定量控制，常用于推出存在唯一、连续依赖、内部光滑性或边界光滑性。内部正则性把数据的范数传递到解的范数上，用来控制唯一性、连续依赖或局部光滑性。内部正则性本身不是求解公式，而是把未知解限制在可控范围内，方便通过极限论证。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "内部正则性",
+          "url": "https://www.baidu.com/s?wd=%E5%86%85%E9%83%A8%E6%AD%A3%E5%88%99%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "内部正则性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%86%85%E9%83%A8%E6%AD%A3%E5%88%99%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "interior regularity",
+          "url": "https://en.wikipedia.org/w/index.php?search=interior%20regularity"
+        }
       ]
     },
     {
@@ -1205,6 +2278,24 @@
         "对象 条件 运算 记号",
         "ji theorem",
         "ji_theorem"
+      ],
+      "explanation_markdown": "迹定理说明 Sobolev 函数可以在边界上定义合适的边界值。常写成 $\\operatorname{Tr}:W^{1,p}(\\Omega)\\to L^p(\\partial\\Omega)$，其中 $\\operatorname{Tr}$ 是迹算子。即使函数只按弱导数定义，也能谈边界条件。\n\n迹定理是弱形式中施加 Dirichlet 条件的基础；边界值不再是普通逐点限制，而是连续线性算子的结果。它通常作为证明链条中的结论工具，把前提条件转化为可引用的断言。迹定理在偏微分方程中说明算子、区域、边界数据和函数空间之间的关系，重点不只是一条微分等式。迹定理提供函数空间层面的控制，使边界值、导数和积分范数能在低光滑条件下使用。迹定理把低光滑函数纳入分析框架，使边界迹、积分分部和紧嵌入有可用语言。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "迹定理",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%B9%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "迹定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%B9%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ji theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=ji%20theorem"
+        }
       ]
     },
     {
@@ -1223,6 +2314,19 @@
         "对象 条件 运算 记号",
         "poincare inequality",
         "poincare_inequality"
+      ],
+      "explanation_markdown": "Poincare不等式用导数范数控制函数本身的范数。常写成 $\\|u\\|_{L^p(\\Omega)}\\le C\\|\\nabla u\\|_{L^p(\\Omega)}$，其中 $u$ 通常满足零边界值或零平均。它排除了加常数带来的不确定性。\n\nPoincare不等式是能量法中的关键工具；没有零边界或零平均条件，常数函数会使该估计失败。它提供两个量之间的上界、下界或误差控制。Poincare不等式给出从数据到解的定量控制，常用于推出存在唯一、连续依赖、内部光滑性或边界光滑性。Poincare不等式通常和先验界配合使用，用已知范数控制未知范数，再把近似解推向极限对象。Poincare不等式把数据的范数传递到解的范数上，用来控制唯一性、连续依赖或局部光滑性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Poincare不等式",
+          "url": "https://www.baidu.com/s?wd=Poincare%E4%B8%8D%E7%AD%89%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Poincare不等式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Poincare%E4%B8%8D%E7%AD%89%E5%BC%8F"
+        }
       ]
     },
     {
@@ -1241,6 +2345,19 @@
         "对象 条件 运算 记号",
         "korn inequality",
         "korn_inequality"
+      ],
+      "explanation_markdown": "Korn不等式用对称梯度控制向量场的完整梯度。常写成 $\\|\\nabla u\\|_{L^2}\\le C\\|\\varepsilon(u)\\|_{L^2}$，其中 $\\varepsilon(u)=(\\nabla u+\\nabla u^T)/2$。它在弹性方程中替代 Poincare型控制。\n\nKorn不等式反映刚体运动需要被边界条件或归一化排除；它是线弹性弱形式适定性的基础。它提供两个量之间的上界、下界或误差控制。Korn不等式给出从数据到解的定量控制，常用于推出存在唯一、连续依赖、内部光滑性或边界光滑性。Korn不等式通常和先验界配合使用，用已知范数控制未知范数，再把近似解推向极限对象。Korn不等式把数据的范数传递到解的范数上，用来控制唯一性、连续依赖或局部光滑性。Korn不等式本身不是求解公式，而是把未知解限制在可控范围内，方便通过极限论证。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Korn不等式",
+          "url": "https://www.baidu.com/s?wd=Korn%E4%B8%8D%E7%AD%89%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Korn不等式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Korn%E4%B8%8D%E7%AD%89%E5%BC%8F"
+        }
       ]
     },
     {
@@ -1259,6 +2376,19 @@
         "内部 边界 约束",
         "dirichlet boundary condition",
         "dirichlet_boundary_condition"
+      ],
+      "explanation_markdown": "Dirichlet边界条件是在边界上规定未知函数值。常写成 $u=g\\quad\\text{on }\\partial\\Omega$，其中 $g$ 是边界数据。在弱形式中常通过迹算子表达。\n\n它固定边界状态，区别于 Neumann条件给通量、Robin条件给线性组合；零值情形称齐次 Dirichlet条件。Dirichlet边界条件需要同时追踪内部关系和边界上的附加约束。Dirichlet边界条件的核心是边界上固定什么量：函数值、法向通量、线性组合、非局部约束或随时间变化的边界规律。在Dirichlet边界条件里，边界数据的函数空间和兼容条件会影响解是否存在以及是否唯一。Dirichlet边界条件固定边界函数值，常表示温度、位势或位移被外界直接控制。Dirichlet边界条件与内部方程配套后才形成完整问题，兼容条件和边界光滑性会影响正则性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Dirichlet边界条件",
+          "url": "https://www.baidu.com/s?wd=Dirichlet%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Dirichlet边界条件",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Dirichlet%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6"
+        }
       ]
     },
     {
@@ -1277,6 +2407,19 @@
         "对象 条件 运算 记号",
         "dirichlet bian zhi problem",
         "dirichlet_bian_zhi_problem"
+      ],
+      "explanation_markdown": "Dirichlet边值问题是配有 Dirichlet边界条件的边值问题。常写成 $Lu=f\\ \\text{in }\\Omega,\\quad u=g\\ \\text{on }\\partial\\Omega$，其中 $L$ 是微分算子。拉普拉斯方程的 Dirichlet问题是基本模型。\n\n它把方程内部行为和边界值联系起来；最大值原理常给出唯一性和边界控制。Dirichlet边值问题把方程、边界、初值或约束条件合成一个求解任务。Dirichlet边值问题的核心是边界上固定什么量：函数值、法向通量、线性组合、非局部约束或随时间变化的边界规律。在Dirichlet边值问题里，边界数据的函数空间和兼容条件会影响解是否存在以及是否唯一。Dirichlet边值问题固定边界函数值，常表示温度、位势或位移被外界直接控制。Dirichlet边值问题与内部方程配套后才形成完整问题，兼容条件和边界光滑性会影响正则性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Dirichlet边值问题",
+          "url": "https://www.baidu.com/s?wd=Dirichlet%E8%BE%B9%E5%80%BC%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Dirichlet边值问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Dirichlet%E8%BE%B9%E5%80%BC%E9%97%AE%E9%A2%98"
+        }
       ]
     },
     {
@@ -1295,6 +2438,19 @@
         "内部 边界 约束",
         "neumann boundary condition",
         "neumann_boundary_condition"
+      ],
+      "explanation_markdown": "Neumann边界条件是在边界上规定法向导数。常写成 $\\partial_nu=g\\quad\\text{on }\\partial\\Omega$，其中 $\\partial_nu=\\nabla u\\cdot n$。它表示边界通量或自由端条件。\n\nNeumann条件不直接给函数值；对拉普拉斯方程，解常只确定到加常数，并需要总通量兼容条件。Neumann边界条件需要同时追踪内部关系和边界上的附加约束。Neumann边界条件的核心是边界上固定什么量：函数值、法向通量、线性组合、非局部约束或随时间变化的边界规律。在Neumann边界条件里，边界数据的函数空间和兼容条件会影响解是否存在以及是否唯一。Neumann边界条件固定法向导数或通量，常表示绝热边界、自由端条件或给定流量。Neumann边界条件与内部方程配套后才形成完整问题，兼容条件和边界光滑性会影响正则性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Neumann边界条件",
+          "url": "https://www.baidu.com/s?wd=Neumann%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Neumann边界条件",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Neumann%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6"
+        }
       ]
     },
     {
@@ -1313,6 +2469,19 @@
         "对象 条件 运算 记号",
         "neumann bian zhi problem",
         "neumann_bian_zhi_problem"
+      ],
+      "explanation_markdown": "Neumann边值问题是配有 Neumann边界条件的边值问题。常写成 $Lu=f,\\quad \\partial_nu=g\\text{ on }\\partial\\Omega$，其中 $g$ 是通量数据。它常出现在绝热和流量指定模型中。\n\n与 Dirichlet边值问题相比，它的唯一性通常要通过零平均等归一化补足。Neumann边值问题把方程、边界、初值或约束条件合成一个求解任务。Neumann边值问题的核心是边界上固定什么量：函数值、法向通量、线性组合、非局部约束或随时间变化的边界规律。在Neumann边值问题里，边界数据的函数空间和兼容条件会影响解是否存在以及是否唯一。Neumann边值问题固定法向导数或通量，常表示绝热边界、自由端条件或给定流量。Neumann边值问题与内部方程配套后才形成完整问题，兼容条件和边界光滑性会影响正则性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Neumann边值问题",
+          "url": "https://www.baidu.com/s?wd=Neumann%E8%BE%B9%E5%80%BC%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Neumann边值问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Neumann%E8%BE%B9%E5%80%BC%E9%97%AE%E9%A2%98"
+        }
       ]
     },
     {
@@ -1331,6 +2500,19 @@
         "对象 条件 运算 记号",
         "robin bian zhi problem",
         "robin_bian_zhi_problem"
+      ],
+      "explanation_markdown": "Robin边值问题是边界上满足 Robin条件的边值问题。常写成 $Lu=f,\\quad \\alpha u+\\beta\\partial_nu=g\\text{ on }\\partial\\Omega$，其中 $\\alpha,\\beta$ 是边界系数。它常表示与外界介质交换。\n\nRobin边值问题在同一边界处同时涉及值和通量；它不同于混合边值问题按边界段切换条件。Robin边值问题把方程、边界、初值或约束条件合成一个求解任务。Robin边值问题的核心是边界上固定什么量：函数值、法向通量、线性组合、非局部约束或随时间变化的边界规律。在Robin边值问题里，边界数据的函数空间和兼容条件会影响解是否存在以及是否唯一。Robin边值问题把函数值和法向导数放进同一个边界式，适合换热、阻抗或弹性支承模型。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Robin边值问题",
+          "url": "https://www.baidu.com/s?wd=Robin%E8%BE%B9%E5%80%BC%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Robin边值问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Robin%E8%BE%B9%E5%80%BC%E9%97%AE%E9%A2%98"
+        }
       ]
     },
     {
@@ -1349,6 +2531,24 @@
         "内部 边界 约束",
         "zhou qi boundary condition",
         "zhou_qi_boundary_condition"
+      ],
+      "explanation_markdown": "周期边界条件要求相对边界上的函数值和必要导数周期一致。常写成 $u(0,y)=u(L,y),\\quad u_x(0,y)=u_x(L,y)$，其中 $L$ 是周期长度。它把区域视为环面或周期单元。\n\n周期条件消除外部边界通量的影响，适合晶格、波列和均匀介质模型；与 Dirichlet条件固定边界值不同。周期边界条件需要同时追踪内部关系和边界上的附加约束。周期边界条件的核心是边界上固定什么量：函数值、法向通量、线性组合、非局部约束或随时间变化的边界规律。周期边界条件改变的是边界反馈方式，周期、吸收、反射或非局部耦合会带来不同能量行为。周期边界条件与内部方程配套后才形成完整问题，兼容条件和边界光滑性会影响正则性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "周期边界条件",
+          "url": "https://www.baidu.com/s?wd=%E5%91%A8%E6%9C%9F%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "周期边界条件",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%91%A8%E6%9C%9F%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "periodic boundary conditions",
+          "url": "https://en.wikipedia.org/w/index.php?search=periodic%20boundary%20conditions"
+        }
       ]
     },
     {
@@ -1367,6 +2567,24 @@
         "对象 条件 运算 记号",
         "zhou qi bian zhi",
         "zhou_qi_bian_zhi_problem"
+      ],
+      "explanation_markdown": "周期边值问题是在周期边界条件下求解方程的问题。常写成 $Lu=f,\\quad u(x+L)=u(x)$，其中 $L$ 是周期向量或周期长度。傅里叶级数是常用工具。\n\n周期边值问题的解空间常包含常数模态，因此可解性可能需要右端平均为零等条件。周期边值问题把方程、边界、初值或约束条件合成一个求解任务。周期边值问题的核心是边界上固定什么量：函数值、法向通量、线性组合、非局部约束或随时间变化的边界规律。周期边值问题改变的是边界反馈方式，周期、吸收、反射或非局部耦合会带来不同能量行为。周期边值问题与内部方程配套后才形成完整问题，兼容条件和边界光滑性会影响正则性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "周期边值问题",
+          "url": "https://www.baidu.com/s?wd=%E5%91%A8%E6%9C%9F%E8%BE%B9%E5%80%BC%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "周期边值问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%91%A8%E6%9C%9F%E8%BE%B9%E5%80%BC%E9%97%AE%E9%A2%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "periodic boundary value problem",
+          "url": "https://en.wikipedia.org/w/index.php?search=periodic%20boundary%20value%20problem"
+        }
       ]
     },
     {
@@ -1385,6 +2603,24 @@
         "对象 条件 运算 记号",
         "hun he bian zhi",
         "hun_he_bian_zhi_problem"
+      ],
+      "explanation_markdown": "混合边值问题是在边界不同部分施加不同边界条件的问题。常写成 $u=g\\text{ on }\\Gamma_D,\\quad \\partial_nu=h\\text{ on }\\Gamma_N$，其中 $\\Gamma_D,\\Gamma_N$ 分割边界。工程模型中常见固定段和自由段并存。\n\n它不同于 Robin条件的点态线性组合；混合问题的角点或交界处常带来额外正则性困难。混合边值问题把方程、边界、初值或约束条件合成一个求解任务。混合边值问题的核心是边界上固定什么量：函数值、法向通量、线性组合、非局部约束或随时间变化的边界规律。混合边值问题改变的是边界反馈方式，周期、吸收、反射或非局部耦合会带来不同能量行为。混合边值问题与内部方程配套后才形成完整问题，兼容条件和边界光滑性会影响正则性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "混合边值问题",
+          "url": "https://www.baidu.com/s?wd=%E6%B7%B7%E5%90%88%E8%BE%B9%E5%80%BC%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "混合边值问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B7%B7%E5%90%88%E8%BE%B9%E5%80%BC%E9%97%AE%E9%A2%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mixed boundary value problem",
+          "url": "https://en.wikipedia.org/w/index.php?search=mixed%20boundary%20value%20problem"
+        }
       ]
     },
     {
@@ -1403,6 +2639,24 @@
         "内部 边界 约束",
         "xi shou boundary condition",
         "xi_shou_boundary_condition"
+      ],
+      "explanation_markdown": "吸收边界条件用来模拟波或粒子离开区域后不反射回来。常写成 $u_t+c\\partial_nu=0\\quad\\text{on }\\partial\\Omega$，其中 $c$ 是传播速度。它常作为开放边界的近似。\n\n吸收条件不是物理墙面条件，而是计算截断边界上的辐射近似；精确程度影响反射误差。吸收边界条件需要同时追踪内部关系和边界上的附加约束。吸收边界条件的核心是边界上固定什么量：函数值、法向通量、线性组合、非局部约束或随时间变化的边界规律。吸收边界条件改变的是边界反馈方式，周期、吸收、反射或非局部耦合会带来不同能量行为。吸收边界条件与内部方程配套后才形成完整问题，兼容条件和边界光滑性会影响正则性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "吸收边界条件",
+          "url": "https://www.baidu.com/s?wd=%E5%90%B8%E6%94%B6%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "吸收边界条件",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%B8%E6%94%B6%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "absorbing boundary conditions",
+          "url": "https://en.wikipedia.org/w/index.php?search=absorbing%20boundary%20conditions"
+        }
       ]
     },
     {
@@ -1421,6 +2675,24 @@
         "对象 条件 运算 记号",
         "xi shou bian zhi",
         "xi_shou_bian_zhi_problem"
+      ],
+      "explanation_markdown": "吸收边值问题是在吸收边界条件下求解波动或输运方程的问题。常写成 $Lu=f,\\quad u_t+c\\partial_nu=0\\text{ on }\\partial\\Omega$，其中 $\\partial_n$ 是外法向导数。它用于有限计算区域模拟无限空间。\n\n该问题的重点是让能量通过边界流出；与反射边界问题相比，它尽量避免边界把波送回区域内。吸收边值问题把方程、边界、初值或约束条件合成一个求解任务。吸收边值问题的核心是边界上固定什么量：函数值、法向通量、线性组合、非局部约束或随时间变化的边界规律。吸收边值问题改变的是边界反馈方式，周期、吸收、反射或非局部耦合会带来不同能量行为。吸收边值问题与内部方程配套后才形成完整问题，兼容条件和边界光滑性会影响正则性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "吸收边值问题",
+          "url": "https://www.baidu.com/s?wd=%E5%90%B8%E6%94%B6%E8%BE%B9%E5%80%BC%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "吸收边值问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%B8%E6%94%B6%E8%BE%B9%E5%80%BC%E9%97%AE%E9%A2%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "absorbing boundary value problem",
+          "url": "https://en.wikipedia.org/w/index.php?search=absorbing%20boundary%20value%20problem"
+        }
       ]
     },
     {
@@ -1439,6 +2711,24 @@
         "内部 边界 约束",
         "fan she boundary condition",
         "fan_she_boundary_condition"
+      ],
+      "explanation_markdown": "反射边界条件使粒子、波或通量在边界处按反射规则返回区域。常写成 $\\partial_nu=0\\quad\\text{on }\\partial\\Omega$，其中 $n$ 是外法向量。在扩散模型中这表示零通量。\n\n反射条件保留区域内总量，吸收条件则允许能量或质量离开；二者对应完全不同的边界物理。反射边界条件需要同时追踪内部关系和边界上的附加约束。反射边界条件的核心是边界上固定什么量：函数值、法向通量、线性组合、非局部约束或随时间变化的边界规律。反射边界条件改变的是边界反馈方式，周期、吸收、反射或非局部耦合会带来不同能量行为。反射边界条件与内部方程配套后才形成完整问题，兼容条件和边界光滑性会影响正则性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反射边界条件",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E5%B0%84%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反射边界条件",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E5%B0%84%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "reflection boundary conditions",
+          "url": "https://en.wikipedia.org/w/index.php?search=reflection%20boundary%20conditions"
+        }
       ]
     },
     {
@@ -1457,6 +2747,24 @@
         "对象 条件 运算 记号",
         "fan she bian zhi",
         "fan_she_bian_zhi_problem"
+      ],
+      "explanation_markdown": "反射边值问题是在反射边界条件下求解方程的问题。常写成 $Lu=f,\\quad \\partial_nu=0\\text{ on }\\partial\\Omega$，其中 $\\partial_nu$ 表示法向通量。随机过程对应反射扩散，波动模型中对应镜面边界近似。\n\n它强调边界不吞噬质量或能量；与 Neumann问题相近，但反射一词更突出物理解释。反射边值问题把方程、边界、初值或约束条件合成一个求解任务。反射边值问题的核心是边界上固定什么量：函数值、法向通量、线性组合、非局部约束或随时间变化的边界规律。反射边值问题改变的是边界反馈方式，周期、吸收、反射或非局部耦合会带来不同能量行为。反射边值问题与内部方程配套后才形成完整问题，兼容条件和边界光滑性会影响正则性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反射边值问题",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E5%B0%84%E8%BE%B9%E5%80%BC%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反射边值问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E5%B0%84%E8%BE%B9%E5%80%BC%E9%97%AE%E9%A2%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "reflection boundary value problem",
+          "url": "https://en.wikipedia.org/w/index.php?search=reflection%20boundary%20value%20problem"
+        }
       ]
     },
     {
@@ -1475,6 +2783,24 @@
         "内部 边界 约束",
         "fei ju bu boundary",
         "fei_ju_bu_boundary_condition"
+      ],
+      "explanation_markdown": "非局部边界条件是在边界条件中包含区域内或边界上积分量的条件。常写成 $u|_{\\partial\\Omega}=\\int_\\Omega K(x,y)u(y)\\,dy$，其中 $K$ 是核函数。边界值不再只由同一点信息决定。\n\n非局部边界条件可表达整体约束、反馈或平均效应；它比 Dirichlet、Neumann 条件更依赖全局结构。非局部边界条件需要同时追踪内部关系和边界上的附加约束。非局部边界条件的核心是边界上固定什么量：函数值、法向通量、线性组合、非局部约束或随时间变化的边界规律。非局部边界条件改变的是边界反馈方式，周期、吸收、反射或非局部耦合会带来不同能量行为。非局部边界条件与内部方程配套后才形成完整问题，兼容条件和边界光滑性会影响正则性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "非局部边界条件",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%9E%E5%B1%80%E9%83%A8%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "非局部边界条件",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%9E%E5%B1%80%E9%83%A8%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "non local boundary conditions",
+          "url": "https://en.wikipedia.org/w/index.php?search=non%20local%20boundary%20conditions"
+        }
       ]
     },
     {
@@ -1493,6 +2819,24 @@
         "对象 条件 运算 记号",
         "fei ju bu bian",
         "fei_ju_bu_bian_zhi_problem"
+      ],
+      "explanation_markdown": "非局部边值问题是带有非局部边界条件或非局部算子的边值问题。常写成 $Lu=f,\\quad Bu(x)=\\int_\\Omega K(x,y)u(y)\\,dy$，其中 $B$ 是非局部边界算子。解在一点的约束会牵涉远处值。\n\n这类问题的比较原理和紧性常比局部边值问题更微妙；区域外数据也可能进入模型。非局部边值问题把方程、边界、初值或约束条件合成一个求解任务。非局部边值问题的核心是边界上固定什么量：函数值、法向通量、线性组合、非局部约束或随时间变化的边界规律。非局部边值问题改变的是边界反馈方式，周期、吸收、反射或非局部耦合会带来不同能量行为。非局部边值问题与内部方程配套后才形成完整问题，兼容条件和边界光滑性会影响正则性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "非局部边值问题",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%9E%E5%B1%80%E9%83%A8%E8%BE%B9%E5%80%BC%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "非局部边值问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%9E%E5%B1%80%E9%83%A8%E8%BE%B9%E5%80%BC%E9%97%AE%E9%A2%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "non local boundary value problem",
+          "url": "https://en.wikipedia.org/w/index.php?search=non%20local%20boundary%20value%20problem"
+        }
       ]
     },
     {
@@ -1511,6 +2855,24 @@
         "内部 边界 约束",
         "dong tai boundary condition",
         "dong_tai_boundary_condition"
+      ],
+      "explanation_markdown": "动态边界条件是在边界上也包含时间演化方程的条件。常写成 $u_t+\\partial_nu+bu=g\\quad\\text{on }\\partial\\Omega$，其中 $u_t$ 是边界上的时间导数。边界本身具有储存或动力学效应。\n\n动态边界不同于静态 Robin条件，因为边界值会随自身演化方程改变；相空间通常同时包含内部和边界变量。动态边界条件需要同时追踪内部关系和边界上的附加约束。动态边界条件的核心是边界上固定什么量：函数值、法向通量、线性组合、非局部约束或随时间变化的边界规律。动态边界条件改变的是边界反馈方式，周期、吸收、反射或非局部耦合会带来不同能量行为。动态边界条件与内部方程配套后才形成完整问题，兼容条件和边界光滑性会影响正则性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "动态边界条件",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%A8%E6%80%81%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "动态边界条件",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%A8%E6%80%81%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dynamic boundary conditions",
+          "url": "https://en.wikipedia.org/w/index.php?search=dynamic%20boundary%20conditions"
+        }
       ]
     },
     {
@@ -1529,6 +2891,24 @@
         "对象 条件 运算 记号",
         "dong tai bian zhi",
         "dong_tai_bian_zhi_problem"
+      ],
+      "explanation_markdown": "动态边值问题是内部方程与动态边界条件耦合的问题。常写成 $u_t=Lu\\text{ in }\\Omega,\\quad u_t+\\partial_nu=0\\text{ on }\\partial\\Omega$，其中 $\\partial_nu$ 是边界通量。边界不只是约束，还参与演化。\n\n它适合带表面扩散、热容量或反馈的模型；分析中要同时控制内部能量和边界能量。动态边值问题把方程、边界、初值或约束条件合成一个求解任务。动态边值问题的核心是边界上固定什么量：函数值、法向通量、线性组合、非局部约束或随时间变化的边界规律。动态边值问题改变的是边界反馈方式，周期、吸收、反射或非局部耦合会带来不同能量行为。动态边值问题与内部方程配套后才形成完整问题，兼容条件和边界光滑性会影响正则性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "动态边值问题",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%A8%E6%80%81%E8%BE%B9%E5%80%BC%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "动态边值问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%A8%E6%80%81%E8%BE%B9%E5%80%BC%E9%97%AE%E9%A2%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dynamic boundary value problem",
+          "url": "https://en.wikipedia.org/w/index.php?search=dynamic%20boundary%20value%20problem"
+        }
       ]
     },
     {
@@ -1547,6 +2927,24 @@
         "对象 条件 运算 记号",
         "zi ran bian zhi",
         "zi_ran_bian_zhi_problem"
+      ],
+      "explanation_markdown": "自然边值问题是由变分原理自动产生自然边界条件的边值问题。常写成 $\\frac{\\partial L}{\\partial(\\nabla u)}\\cdot n=0\\quad\\text{on }\\partial\\Omega$，其中 $L$ 是变分积分的密度。边界值未固定时，边界项必须消失。\n\n自然边界与本质边界相对；前者来自泛函驻值，后者直接限制允许函数空间。自然边值问题把方程、边界、初值或约束条件合成一个求解任务。自然边值问题的核心是边界上固定什么量：函数值、法向通量、线性组合、非局部约束或随时间变化的边界规律。自然边值问题改变的是边界反馈方式，周期、吸收、反射或非局部耦合会带来不同能量行为。自然边值问题与内部方程配套后才形成完整问题，兼容条件和边界光滑性会影响正则性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自然边值问题",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E7%84%B6%E8%BE%B9%E5%80%BC%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自然边值问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E7%84%B6%E8%BE%B9%E5%80%BC%E9%97%AE%E9%A2%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "natural boundary value problem",
+          "url": "https://en.wikipedia.org/w/index.php?search=natural%20boundary%20value%20problem"
+        }
       ]
     },
     {
@@ -1565,6 +2963,24 @@
         "低光滑 较粗拓扑",
         "elliptic weak solution",
         "elliptic_weak_solution"
+      ],
+      "explanation_markdown": "椭圆弱解是在 Sobolev 空间中以积分恒等式满足椭圆方程的解。常写成 $\\int_\\Omega A\\nabla u\\cdot\\nabla v\\,dx=\\int_\\Omega fv\\,dx$，其中 $v$ 是测试函数。它通常不要求二阶导数经典存在。\n\n椭圆弱解适合散度型方程和粗糙数据；若再有正则性提升，才可能成为强解或经典解。关键点是允许较低光滑性或较粗拓扑下继续讨论对象。椭圆弱解说明方程等式在哪种意义下成立，正则性门槛越低，越需要测试函数、积分恒等式或熵条件来支撑。椭圆弱解的区别在等式成立的意义：逐点、积分、分布或熵不等式对应不同正则性门槛。椭圆弱解常用于降低光滑性要求，但也要保留足够信息来恢复边界条件或守恒量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "椭圆弱解",
+          "url": "https://www.baidu.com/s?wd=%E6%A4%AD%E5%9C%86%E5%BC%B1%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "椭圆弱解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A4%AD%E5%9C%86%E5%BC%B1%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "elliptic weak solution",
+          "url": "https://en.wikipedia.org/w/index.php?search=elliptic%20weak%20solution"
+        }
       ]
     },
     {
@@ -1583,6 +2999,24 @@
         "强范数 严格拓扑",
         "elliptic strong solution",
         "elliptic_strong_solution"
+      ],
+      "explanation_markdown": "椭圆强解是具有足够二阶弱导数并几乎处处满足椭圆方程的解。常写成 $Lu=f\\quad\\text{a.e. in }\\Omega$，其中 $u\\in W^{2,p}_{\\rm loc}$ 常是典型要求。它比弱解更接近点态方程。\n\n椭圆强解仍可允许少量不可微点；经典解则要求连续导数和逐点成立。关键点是结论在更严格的范数、拓扑或逐点意义下成立。椭圆强解说明方程等式在哪种意义下成立，正则性门槛越低，越需要测试函数、积分恒等式或熵条件来支撑。椭圆强解的区别在等式成立的意义：逐点、积分、分布或熵不等式对应不同正则性门槛。椭圆强解常用于降低光滑性要求，但也要保留足够信息来恢复边界条件或守恒量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "椭圆强解",
+          "url": "https://www.baidu.com/s?wd=%E6%A4%AD%E5%9C%86%E5%BC%BA%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "椭圆强解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A4%AD%E5%9C%86%E5%BC%BA%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "elliptic strong solution",
+          "url": "https://en.wikipedia.org/w/index.php?search=elliptic%20strong%20solution"
+        }
       ]
     },
     {
@@ -1601,6 +3035,24 @@
         "对象 条件 运算 记号",
         "elliptic shi ding xing",
         "elliptic_shi_ding_xing"
+      ],
+      "explanation_markdown": "椭圆适定性是椭圆边值问题的存在、唯一和数据连续依赖性质。常写成 $\\|u\\|_X\\le C(\\|f\\|_Y+\\|g\\|_Z)$，其中 $f,g$ 是内部和边界数据。边界条件必须与椭圆算子匹配。\n\n椭圆问题没有时间传播方向，数据通常给在整个边界上；错误的边界配置会破坏唯一性或稳定性。椭圆适定性给出从数据到解的定量控制，常用于推出存在唯一、连续依赖、内部光滑性或边界光滑性。围绕椭圆适定性，区域边界、数据正则性和允许的极限过程都会改变可证明的结论。椭圆适定性把数据的范数传递到解的范数上，用来控制唯一性、连续依赖或局部光滑性。椭圆适定性本身不是求解公式，而是把未知解限制在可控范围内，方便通过极限论证。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "椭圆适定性",
+          "url": "https://www.baidu.com/s?wd=%E6%A4%AD%E5%9C%86%E9%80%82%E5%AE%9A%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "椭圆适定性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A4%AD%E5%9C%86%E9%80%82%E5%AE%9A%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "elliptical well posedness",
+          "url": "https://en.wikipedia.org/w/index.php?search=elliptical%20well%20posedness"
+        }
       ]
     },
     {
@@ -1619,6 +3071,24 @@
         "对象 条件 运算 记号",
         "elliptic energy fa",
         "elliptic_energy_fa"
+      ],
+      "explanation_markdown": "椭圆能量法是用椭圆方程的双线性型建立能量估计的方法。常写成 $a(u,u)=\\int_\\Omega A\\nabla u\\cdot\\nabla u\\,dx$，其中 $A$ 是椭圆系数矩阵。一致椭圆性给出对 $\\|\\nabla u\\|$ 的控制。\n\n它常结合 Poincare不等式和 Lax-Milgram 定理证明弱解存在唯一。椭圆能量法属于构造或逼近解的技术，通常把原方程转成投影、极限、比较、半群或正则化过程。椭圆能量法通常和先验界配合使用，用已知范数控制未知范数，再把近似解推向极限对象。椭圆能量法要同时看主部、数据位置和允许的函数空间，改变其中一项就可能得到不同结论。椭圆能量法通常先在较好的对象上建立结论，再通过紧性、单调性或弱收敛回到原问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "椭圆能量法",
+          "url": "https://www.baidu.com/s?wd=%E6%A4%AD%E5%9C%86%E8%83%BD%E9%87%8F%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "椭圆能量法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A4%AD%E5%9C%86%E8%83%BD%E9%87%8F%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "elliptic energy fa",
+          "url": "https://en.wikipedia.org/w/index.php?search=elliptic%20energy%20fa"
+        }
       ]
     },
     {
@@ -1637,6 +3107,24 @@
         "光滑性 提升",
         "elliptic zheng ze hua",
         "elliptic_zheng_ze_hua"
+      ],
+      "explanation_markdown": "椭圆正则化是通过加入椭圆项或平滑算子改善问题正则性的做法。常写成 $Lu-\\varepsilon\\Delta u=f$，其中 $\\varepsilon>0$ 是正则化参数。正则化问题更容易得到光滑解。\n\n随后令 $\\varepsilon\\to0$ 需要一致估计；它与椭圆正则性不同，前者是方法，后者是方程自身性质。它常用来把粗糙对象提升到更好的光滑性或结构层级。椭圆正则化属于构造或逼近解的技术，通常把原方程转成投影、极限、比较、半群或正则化过程。椭圆正则化通过构造近似解或比较族进入问题，关键是得到与近似参数无关的界。椭圆正则化通常先在较好的对象上建立结论，再通过紧性、单调性或弱收敛回到原问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "椭圆正则化",
+          "url": "https://www.baidu.com/s?wd=%E6%A4%AD%E5%9C%86%E6%AD%A3%E5%88%99%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "椭圆正则化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A4%AD%E5%9C%86%E6%AD%A3%E5%88%99%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "elliptic regularization",
+          "url": "https://en.wikipedia.org/w/index.php?search=elliptic%20regularization"
+        }
       ]
     },
     {
@@ -1655,6 +3143,24 @@
         "扰动 可控",
         "elliptic stable xing",
         "elliptic_stable_xing"
+      ],
+      "explanation_markdown": "椭圆稳定性表示椭圆边值问题的解对数据连续依赖。常写成 $\\|u_1-u_2\\|_X\\le C\\|f_1-f_2\\|_Y$，其中 $u_i$ 对应数据 $f_i$。它常由能量估计或最大值原理推出。\n\n稳定性保证边界或源项的小扰动不会导致解的大跳变；这是数值近似和反问题分析的基础。核心检查对象是扰动后解、估计或判定结果是否保持可控。椭圆稳定性给出从数据到解的定量控制，常用于推出存在唯一、连续依赖、内部光滑性或边界光滑性。椭圆稳定性把数据的范数传递到解的范数上，用来控制唯一性、连续依赖或局部光滑性。椭圆稳定性本身不是求解公式，而是把未知解限制在可控范围内，方便通过极限论证。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "椭圆稳定性",
+          "url": "https://www.baidu.com/s?wd=%E6%A4%AD%E5%9C%86%E7%A8%B3%E5%AE%9A%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "椭圆稳定性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A4%AD%E5%9C%86%E7%A8%B3%E5%AE%9A%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "elliptic stable xing",
+          "url": "https://en.wikipedia.org/w/index.php?search=elliptic%20stable%20xing"
+        }
       ]
     },
     {
@@ -1673,6 +3179,24 @@
         "低光滑 较粗拓扑",
         "parabolic weak solution",
         "parabolic_weak_solution"
+      ],
+      "explanation_markdown": "抛物弱解是在空间 Sobolev 与时间积分意义下满足抛物方程的解。常写成 $\\int_0^T\\langle u_t,v\\rangle+a(u,v)\\,dt=\\int_0^T\\langle f,v\\rangle dt$，其中 $v$ 是测试函数。时间导数可取在对偶空间中。\n\n抛物弱解既要处理空间弱导数，也要处理时间初值；与椭圆弱解相比，多了演化方向。关键点是允许较低光滑性或较粗拓扑下继续讨论对象。抛物弱解说明方程等式在哪种意义下成立，正则性门槛越低，越需要测试函数、积分恒等式或熵条件来支撑。抛物弱解的区别在等式成立的意义：逐点、积分、分布或熵不等式对应不同正则性门槛。抛物弱解常用于降低光滑性要求，但也要保留足够信息来恢复边界条件或守恒量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "抛物弱解",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%9B%E7%89%A9%E5%BC%B1%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "抛物弱解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%9B%E7%89%A9%E5%BC%B1%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "parabolic weak solution",
+          "url": "https://en.wikipedia.org/w/index.php?search=parabolic%20weak%20solution"
+        }
       ]
     },
     {
@@ -1691,6 +3215,24 @@
         "强范数 严格拓扑",
         "parabolic strong solution",
         "parabolic_strong_solution"
+      ],
+      "explanation_markdown": "抛物强解是具有足够空间二阶导数和时间一阶导数并满足方程的解。常写成 $u_t-Lu=f\\quad\\text{a.e.}$，其中 $u_t$ 是时间导数。它常属于 $L^p(0,T;W^{2,p})$ 等空间。\n\n抛物强解比弱解正则，但不必处处经典；热方程的平滑化常帮助获得这类解。关键点是结论在更严格的范数、拓扑或逐点意义下成立。抛物强解说明方程等式在哪种意义下成立，正则性门槛越低，越需要测试函数、积分恒等式或熵条件来支撑。抛物强解的区别在等式成立的意义：逐点、积分、分布或熵不等式对应不同正则性门槛。抛物强解常用于降低光滑性要求，但也要保留足够信息来恢复边界条件或守恒量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "抛物强解",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%9B%E7%89%A9%E5%BC%BA%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "抛物强解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%9B%E7%89%A9%E5%BC%BA%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "parabolic strong solution",
+          "url": "https://en.wikipedia.org/w/index.php?search=parabolic%20strong%20solution"
+        }
       ]
     },
     {
@@ -1709,6 +3251,24 @@
         "对象 条件 运算 记号",
         "parabolic shi ding xing",
         "parabolic_shi_ding_xing"
+      ],
+      "explanation_markdown": "抛物适定性是抛物初边值问题的存在、唯一和连续依赖。常写成 $\\|u(t)\\|_X\\le C(\\|u_0\\|_X+\\|f\\|_Y)$，其中 $u_0$ 是初值。初值和边界数据都参与适定性。\n\n抛物问题具有时间方向，因此通常从初值向前演化；反向热方程则典型不稳定。抛物适定性给出从数据到解的定量控制，常用于推出存在唯一、连续依赖、内部光滑性或边界光滑性。围绕抛物适定性，区域边界、数据正则性和允许的极限过程都会改变可证明的结论。抛物适定性把数据的范数传递到解的范数上，用来控制唯一性、连续依赖或局部光滑性。抛物适定性本身不是求解公式，而是把未知解限制在可控范围内，方便通过极限论证。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "抛物适定性",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%9B%E7%89%A9%E9%80%82%E5%AE%9A%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "抛物适定性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%9B%E7%89%A9%E9%80%82%E5%AE%9A%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "parabolic well posedness",
+          "url": "https://en.wikipedia.org/w/index.php?search=parabolic%20well%20posedness"
+        }
       ]
     },
     {
@@ -1727,6 +3287,24 @@
         "对象 条件 运算 记号",
         "parabolic energy fa",
         "parabolic_energy_fa"
+      ],
+      "explanation_markdown": "抛物能量法是对抛物方程建立随时间变化的能量不等式。常写成 $\\frac12\\frac d{dt}\\|u(t)\\|_{L^2}^2+\\|\\nabla u(t)\\|_{L^2}^2\\le \\langle f,u\\rangle$，其中 $u$ 是解。耗散项给出时间积分控制。\n\n它体现扩散的能量衰减；与椭圆能量法相比，抛物情形多了时间导数和初值项。抛物能量法属于构造或逼近解的技术，通常把原方程转成投影、极限、比较、半群或正则化过程。抛物能量法通常和先验界配合使用，用已知范数控制未知范数，再把近似解推向极限对象。抛物能量法要同时看主部、数据位置和允许的函数空间，改变其中一项就可能得到不同结论。抛物能量法通常先在较好的对象上建立结论，再通过紧性、单调性或弱收敛回到原问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "抛物能量法",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%9B%E7%89%A9%E8%83%BD%E9%87%8F%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "抛物能量法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%9B%E7%89%A9%E8%83%BD%E9%87%8F%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "parabolic energy fa",
+          "url": "https://en.wikipedia.org/w/index.php?search=parabolic%20energy%20fa"
+        }
       ]
     },
     {
@@ -1745,6 +3323,24 @@
         "光滑性 提升",
         "parabolic zheng ze hua",
         "parabolic_zheng_ze_hua"
+      ],
+      "explanation_markdown": "抛物正则化是抛物方程随正时间自动平滑初值的现象或方法。常写成 $u(t)=G_t*u_0$，其中 $G_t$ 是热核。即使 $u_0$ 较粗糙，$t>0$ 后也可能变光滑。\n\n这种正则化来自扩散项；双曲方程通常不具备同样平滑效果，而是沿特征传播奇性。它常用来把粗糙对象提升到更好的光滑性或结构层级。抛物正则化属于构造或逼近解的技术，通常把原方程转成投影、极限、比较、半群或正则化过程。围绕抛物正则化，区域边界、数据正则性和允许的极限过程都会改变可证明的结论。抛物正则化通过构造近似解或比较族进入问题，关键是得到与近似参数无关的界。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "抛物正则化",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%9B%E7%89%A9%E6%AD%A3%E5%88%99%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "抛物正则化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%9B%E7%89%A9%E6%AD%A3%E5%88%99%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "parabolic regularization",
+          "url": "https://en.wikipedia.org/w/index.php?search=parabolic%20regularization"
+        }
       ]
     },
     {
@@ -1763,6 +3359,24 @@
         "扰动 可控",
         "parabolic stable xing",
         "parabolic_stable_xing"
+      ],
+      "explanation_markdown": "抛物稳定性表示抛物解对初值、源项和边界数据连续依赖。常写成 $\\|u-v\\|_{L^\\infty(0,T;L^2)}\\le C\\|u_0-v_0\\|_{L^2}$，其中 $u,v$ 是两组数据对应的解。能量法常给出这种估计。\n\n稳定性是抛物适定性的关键部分；它也说明正向热演化能抑制扰动，而反向问题会失稳。核心检查对象是扰动后解、估计或判定结果是否保持可控。抛物稳定性给出从数据到解的定量控制，常用于推出存在唯一、连续依赖、内部光滑性或边界光滑性。抛物稳定性把数据的范数传递到解的范数上，用来控制唯一性、连续依赖或局部光滑性。抛物稳定性本身不是求解公式，而是把未知解限制在可控范围内，方便通过极限论证。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "抛物稳定性",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%9B%E7%89%A9%E7%A8%B3%E5%AE%9A%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "抛物稳定性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%9B%E7%89%A9%E7%A8%B3%E5%AE%9A%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "parabolic stable xing",
+          "url": "https://en.wikipedia.org/w/index.php?search=parabolic%20stable%20xing"
+        }
       ]
     },
     {
@@ -1781,6 +3395,24 @@
         "低光滑 较粗拓扑",
         "hyperbolic weak solution",
         "hyperbolic_weak_solution"
+      ],
+      "explanation_markdown": "双曲弱解是在积分意义下满足双曲方程或守恒律的解。常写成 $\\int (u\\phi_t+f(u)\\phi_x)\\,dxdt+\\int u_0\\phi(x,0)\\,dx=0$，其中 $\\phi$ 是测试函数。它允许激波等不连续结构。\n\n双曲弱解通常不唯一，需要熵条件进一步筛选；这与椭圆弱解的能量空间背景不同。关键点是允许较低光滑性或较粗拓扑下继续讨论对象。双曲弱解说明方程等式在哪种意义下成立，正则性门槛越低，越需要测试函数、积分恒等式或熵条件来支撑。双曲弱解的区别在等式成立的意义：逐点、积分、分布或熵不等式对应不同正则性门槛。双曲弱解常用于降低光滑性要求，但也要保留足够信息来恢复边界条件或守恒量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "双曲弱解",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8C%E6%9B%B2%E5%BC%B1%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "双曲弱解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8C%E6%9B%B2%E5%BC%B1%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hyperbolic weak solution",
+          "url": "https://en.wikipedia.org/w/index.php?search=hyperbolic%20weak%20solution"
+        }
       ]
     },
     {
@@ -1799,6 +3431,24 @@
         "强范数 严格拓扑",
         "hyperbolic strong solution",
         "hyperbolic_strong_solution"
+      ],
+      "explanation_markdown": "双曲强解是具有足够导数并在经典或几乎处处意义下满足双曲方程的解。常写成 $u_{tt}-c^2\\Delta u=f$，其中 $u$ 需有时间二阶和空间二阶导数。局部光滑解常沿特征传播信息。\n\n双曲强解在激波或波破裂后可能失效；此时需要弱解、熵解或分布解继续描述。关键点是结论在更严格的范数、拓扑或逐点意义下成立。双曲强解说明方程等式在哪种意义下成立，正则性门槛越低，越需要测试函数、积分恒等式或熵条件来支撑。双曲强解的区别在等式成立的意义：逐点、积分、分布或熵不等式对应不同正则性门槛。双曲强解常用于降低光滑性要求，但也要保留足够信息来恢复边界条件或守恒量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "双曲强解",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8C%E6%9B%B2%E5%BC%BA%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "双曲强解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8C%E6%9B%B2%E5%BC%BA%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hyperbolic strong solution",
+          "url": "https://en.wikipedia.org/w/index.php?search=hyperbolic%20strong%20solution"
+        }
       ]
     }
   ]

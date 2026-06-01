@@ -17,6 +17,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "electromagnetism"
+      ],
+      "explanation_markdown": "电磁学研究电荷、电流与电磁场的相互作用，核心图像是源在空间建立场，场再把力、能量和动量传给带电粒子或物质。静电部分可写为 $\\nabla\\cdot\\mathbf E=\\rho/\\varepsilon_0$，其中 $\\mathbf E$ 是电场，$\\rho$ 是电荷密度，$\\varepsilon_0$ 是真空介电常数。\n\n这条局域方程说明电荷是电场通量的源头；配合磁场环路定律、法拉第感应和无磁单极方程，就得到麦克斯韦图像。它既覆盖电路中的端口读数，也覆盖电磁波传播和材料响应；边界条件、介质性质和时间变化常决定具体场型。从大学低年级角度看，它的统一性体现在同一组场方程能同时解释库仑力、感应电动势、交流电路和光速来源，而不同近似只是从这组理论中取出合适的极限。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电磁学",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E7%A3%81%E5%AD%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电磁学",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E7%A3%81%E5%AD%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electromagnetism",
+          "url": "https://en.wikipedia.org/w/index.php?search=electromagnetism"
+        }
       ]
     },
     {
@@ -35,6 +53,24 @@
         "代数总量 e",
         "验电器 库仑作用",
         "electric charge"
+      ],
+      "explanation_markdown": "电荷是物体参与电磁相互作用时携带的源属性，正负号规定了同种相斥、异种相吸的实验事实。微观电荷具有量子化特征，常写作 $q=ne$，其中 $q$ 是总电荷量，$n$ 是整数，$e$ 是元电荷大小。\n\n宏观物体的带电状态来自大量电子和质子电荷的代数和，摩擦起电、接触起电和静电感应都只是电荷重新分布。孤立系统总电荷守恒，所以一个物体带正电通常意味着另一个部分获得了相应负电，而不是凭空产生了电荷。电荷还决定物质如何同电磁场交换动量和能量；即使宏观物体看似中性，内部正负电荷的微小分离也能产生极化、感应和电磁波辐射等现象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电荷",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E8%8D%B7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电荷",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E8%8D%B7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electric charge",
+          "url": "https://en.wikipedia.org/w/index.php?search=electric%20charge"
+        }
       ]
     },
     {
@@ -53,6 +89,24 @@
         "q Q 1.60×10^-19C",
         "验电器 电子数",
         "positive charge"
+      ],
+      "explanation_markdown": "正电荷是电荷符号约定中取正号的一类源，电场方向也按正试探电荷的受力方向规定。它的量子化可写为 $q=+ne$，其中 $q$ 是正电荷量，$n$ 是正整数，$e$ 是元电荷大小。\n\n质子带正电，宏观物体缺少电子时也表现为正带电。正电荷在电场中沿电场方向受力，沿电场线移动时电势能通常降低；这只是符号约定下的统一描述，不表示正电荷比负电荷更基本或更容易产生。在电路和场图中使用正电荷方向，可以统一电流方向、电场方向和电势降低方向；电子实际运动方向相反，但并不改变这种约定带来的计算一致性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正电荷",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E7%94%B5%E8%8D%B7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正电荷",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E7%94%B5%E8%8D%B7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "positive charge",
+          "url": "https://en.wikipedia.org/w/index.php?search=positive%20charge"
+        }
       ]
     },
     {
@@ -71,6 +125,24 @@
         "q Q 1.60×10^-19C",
         "验电器 电子数",
         "negative charge"
+      ],
+      "explanation_markdown": "负电荷是电荷符号约定中取负号的一类源，电子是最常见的负电荷载体。量子化关系可写成 $q=-ne$，其中 $q$ 是负电荷量，$n$ 是正整数，$e$ 是元电荷大小。\n\n负电荷在给定电场中受力方向与电场方向相反，因此电势能和运动趋势要连同电荷符号一起判断。一个物体带负电通常表示电子过剩；电荷守恒仍然成立，多出来的电子必然来自周围物体或外部电路。许多电学现象的实际载流子是电子，因此负电荷的运动方向常与约定电流相反；理解这一点能避免把电流方向和微观电子漂移方向混为一谈。在半导体中，电子导电与空穴导电的区分也建立在这种符号约定上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "负电荷",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%9F%E7%94%B5%E8%8D%B7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "负电荷",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%9F%E7%94%B5%E8%8D%B7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "negative charge",
+          "url": "https://en.wikipedia.org/w/index.php?search=negative%20charge"
+        }
       ]
     },
     {
@@ -89,6 +161,24 @@
         "q Q 1.60×10^-19C",
         "验电器 电子数",
         "point charge"
+      ],
+      "explanation_markdown": "点电荷把带电体的尺寸、形状和内部结构全部压缩到一个几何点上，适合观察距离远大于带电体大小的情形。它产生的静电场常写为 $E=k|q|/r^2$，其中 $E$ 是场强大小，$q$ 是电荷量，$r$ 是到电荷的距离，$k$ 是静电常量。\n\n这个模型保留了电荷量和位置这两个最关键的信息，使平方反比规律和叠加原理非常清楚。靠近真实导体表面、带电体尺寸不可忽略或电荷分布不均匀时，必须回到连续电荷分布并用积分求场。它也是多极展开的起点：当系统总电荷不为零时，远场首先像点电荷；总电荷为零时，偶极矩等更高阶结构才成为主要特征。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "点电荷",
+          "url": "https://www.baidu.com/s?wd=%E7%82%B9%E7%94%B5%E8%8D%B7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "点电荷",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%82%B9%E7%94%B5%E8%8D%B7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "point charge",
+          "url": "https://en.wikipedia.org/w/index.php?search=point%20charge"
+        }
       ]
     },
     {
@@ -107,6 +197,24 @@
         "q Q 1.60×10^-19C",
         "验电器 电子数",
         "test charge"
+      ],
+      "explanation_markdown": "试探电荷是用来探测电场的小电荷，理想要求它足够小，不明显改变原来电荷分布。电场的操作定义写作 $\\mathbf E=\\mathbf F/q_0$，其中 $\\mathbf E$ 是被测电场，$\\mathbf F$ 是试探电荷受力，$q_0$ 是试探电荷量。\n\n用正试探电荷规定方向，可以把空间某点的电场与具体探针分离开来。实际测量中，探针如果电量太大或靠得太近，会引起导体感应电荷重排；那时测到的是被扰动后的场，而不是原先要研究的场。这个理想对象强调测量不能严重改变被测系统；在导体附近尤其重要，因为很小的外来电荷也可能诱发表面电荷重排，从而改变局部场线形状。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "试探电荷",
+          "url": "https://www.baidu.com/s?wd=%E8%AF%95%E6%8E%A2%E7%94%B5%E8%8D%B7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "试探电荷",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%AF%95%E6%8E%A2%E7%94%B5%E8%8D%B7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "test charge",
+          "url": "https://en.wikipedia.org/w/index.php?search=test%20charge"
+        }
       ]
     },
     {
@@ -125,6 +233,24 @@
         "q Q 1.60×10^-19C",
         "验电器 电子数",
         "law of conservation of charge"
+      ],
+      "explanation_markdown": "电荷守恒定律说明，在孤立系统中所有电荷的代数和不会随时间改变。它可写为 $\\sum_i q_i=\\mathrm{const}$，其中 $q_i$ 是系统第 $i$ 个部分的电荷量，$\\mathrm{const}$ 表示常量。\n\n带电过程常表现为电荷转移、分离或成对产生湮灭，而不是单独创造一种电荷。这个定律是电路节点电流定律和连续性方程的根基；电流在某处流入多少，就必须在别处流出或暂时积累相应电荷。在连续介质中，它进一步写成电流密度与电荷密度的连续性方程，说明电路中的节点规则并不是经验技巧，而是局域守恒的简化版本。带电粒子反应中也必须同时核对初末总电荷，这是判定反应是否可能的最基本门槛。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电荷守恒定律",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E8%8D%B7%E5%AE%88%E6%81%92%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电荷守恒定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E8%8D%B7%E5%AE%88%E6%81%92%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "law of conservation of charge",
+          "url": "https://en.wikipedia.org/w/index.php?search=law%20of%20conservation%20of%20charge"
+        }
       ]
     },
     {
@@ -143,6 +269,24 @@
         "F=kq1q2/r² 连线",
         "平方反比 真空常量",
         "coulombs law"
+      ],
+      "explanation_markdown": "库仑定律描述两个静止点电荷之间沿连线方向的相互作用，是静电力平方反比图像的核心。大小常写为 $F=k|q_1q_2|/r^2$，其中 $F$ 是力的大小，$q_1,q_2$ 是两电荷量，$r$ 是距离，$k$ 是静电常量。\n\n电荷符号决定吸引或排斥，多个点电荷的作用力要按矢量叠加。它适合点状、静止或低速电荷；若带电体连续分布，就把每个电荷微元的库仑作用积分起来，才能得到完整受力或电场。它还暗含静电作用的中心力性质，因此两电荷系统具有机械能和角动量守恒图像；在介质中，比例常量会被材料极化效应改写。实验上扭秤测力正是它的经典来源，也说明静电力可被精确转化为力矩测量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "库仑定律",
+          "url": "https://www.baidu.com/s?wd=%E5%BA%93%E4%BB%91%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "库仑定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BA%93%E4%BB%91%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "coulombs law",
+          "url": "https://en.wikipedia.org/w/index.php?search=coulombs%20law"
+        }
       ]
     },
     {
@@ -161,6 +305,24 @@
         "F=kq1q2/r² 连线",
         "平方反比 真空常量",
         "coulomb force"
+      ],
+      "explanation_markdown": "库仑力是静止带电体之间由电荷产生的相互作用力，方向沿源电荷与受力电荷的连线。对电场中的电荷也可写为 $\\mathbf F=q\\mathbf E$，其中 $\\mathbf F$ 是受力，$q$ 是受力电荷量，$\\mathbf E$ 是该点电场。\n\n正电荷受力与电场同向，负电荷受力反向；这使电场图像能够直接转化为运动趋势。静电库仑力是保守力，做功只与起点和终点有关；若电荷高速运动或磁场显著，就要用洛伦兹力补上磁场部分。把源电荷先转化为电场，再求某个电荷受力，能避免在多电荷系统中反复处理成对作用；这也是场概念比直接远距力更方便的原因。在原子尺度上，库仑力同时束缚电子并排斥核内质子，是微观结构的重要背景。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "库仑力",
+          "url": "https://www.baidu.com/s?wd=%E5%BA%93%E4%BB%91%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "库仑力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BA%93%E4%BB%91%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "coulomb force",
+          "url": "https://en.wikipedia.org/w/index.php?search=coulomb%20force"
+        }
       ]
     },
     {
@@ -179,6 +341,24 @@
         "E=kq/r² ∮E·dS=q/ε0",
         "场线 通量 闭合面",
         "electric field"
+      ],
+      "explanation_markdown": "电场是带电源在周围空间建立的物理状态，说明单位正电荷放入某点会受到怎样的力。它的定义为 $\\mathbf E=\\mathbf F/q_0$，其中 $\\mathbf E$ 是电场强度，$\\mathbf F$ 是正试探电荷受力，$q_0$ 是试探电荷量。\n\n电场不是画在纸上的线，而是空间每一点都有大小和方向的矢量。场线可以帮助观察方向与疏密，电势可以给出能量图像；在随时间变化的情况下，电场还会与磁场耦合，成为传播电磁波的一部分。电场可以在没有试探电荷时存在，并储存能量；这一点对理解电容器、感应电场和电磁波很重要，因为场本身成为能量传递的载体。因此，谈电场时既要看源电荷，也要看空间位置，不能只给出一个孤立数值。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电场",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electric field",
+          "url": "https://en.wikipedia.org/w/index.php?search=electric%20field"
+        }
       ]
     },
     {
@@ -197,6 +377,24 @@
         "E=kq/r² ∮E·dS=q/ε0",
         "场线 通量 闭合面",
         "electric field strength"
+      ],
+      "explanation_markdown": "电场强度刻画电场对单位正电荷的作用强弱和方向，是电场的矢量数值。定义式为 $\\mathbf E=\\mathbf F/q_0$，其中 $\\mathbf F$ 是试探电荷所受电场力，$q_0$ 是试探电荷量，$\\mathbf E$ 是电场强度。\n\n它由源电荷、边界和介质决定，而不是由放入的试探电荷决定。点电荷附近场强随距离平方衰减，平行板中央则可近似恒定；这些不同空间分布决定了带电粒子的加速度、电势变化和能量转化。它既能由库仑定律积分得到，也能由电势梯度得到；前者突出电荷源，后者突出能量地形，两种看法在静电问题中完全一致。电场强度的单位既可写牛每库，也可写伏每米，分别突出受力和电势变化。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电场强度",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E5%9C%BA%E5%BC%BA%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电场强度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E5%9C%BA%E5%BC%BA%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electric field strength",
+          "url": "https://en.wikipedia.org/w/index.php?search=electric%20field%20strength"
+        }
       ]
     },
     {
@@ -215,6 +413,24 @@
         "E=kq/r² ∮E·dS=q/ε0",
         "场线 通量 闭合面",
         "electric field line"
+      ],
+      "explanation_markdown": "电场线是把电场方向画成曲线的图像工具，曲线上每一点的切线方向就是该处电场方向。可用 $d\\mathbf r\\parallel\\mathbf E$ 表示，其中 $d\\mathbf r$ 是场线微元，$\\mathbf E$ 是电场矢量，$\\parallel$ 表示平行。\n\n场线从正电荷出发、到负电荷或无穷远结束，疏密大致反映场强大小。它不是带电粒子的真实轨迹：粒子运动还受初速度、质量和其他力影响。静电场线不闭合，也不会彼此相交，因为同一点电场方向只能有一个。画场线时还要注意对称性：孤立正电荷向外发散，偶极子从正到负弯曲，平行板间近似平行。不同图形反映的是不同源分布。场线数目本身没有绝对物理意义，只有方向、疏密和拓扑形状用于表达场结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电场线",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E5%9C%BA%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电场线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E5%9C%BA%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electric field line",
+          "url": "https://en.wikipedia.org/w/index.php?search=electric%20field%20line"
+        }
       ]
     },
     {
@@ -233,6 +449,24 @@
         "E=kq/r² ∮E·dS=q/ε0",
         "场线 通量 闭合面",
         "uniform electric field"
+      ],
+      "explanation_markdown": "匀强电场指研究区域内大小和方向都近似相同的电场，平行板电容器中央常是典型例子。数学上写作 $\\mathbf E=\\mathrm{const}$，其中 $\\mathbf E$ 是电场矢量，$\\mathrm{const}$ 表示空间中保持常量。\n\n在匀强电场中，正电荷受恒力，电势沿电场方向线性降低，场线表现为平行且等距。这个理想化让带电粒子偏转、平行板加速和电容器能量分析变得清楚；板边缘附近会出现边缘效应，不能继续当作完全均匀。它常作为局部近似使用，例如带电粒子在示波管偏转板之间的运动可看作类平抛；一旦粒子接近板边缘，横向场和边缘场会破坏这种简单图像。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "匀强电场",
+          "url": "https://www.baidu.com/s?wd=%E5%8C%80%E5%BC%BA%E7%94%B5%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "匀强电场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8C%80%E5%BC%BA%E7%94%B5%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "uniform electric field",
+          "url": "https://en.wikipedia.org/w/index.php?search=uniform%20electric%20field"
+        }
       ]
     },
     {
@@ -251,6 +485,24 @@
         "E=kq/r² ∮E·dS=q/ε0",
         "场线 通量 闭合面",
         "electric dipole"
+      ],
+      "explanation_markdown": "电偶极子由等量异号电荷相隔很近构成，整体电荷为零，却在远处留下明显的电荷分离效应。它的偶极矩为 $\\mathbf p=q\\mathbf d$，其中 $\\mathbf p$ 是电偶极矩，$q$ 是正电荷量，$\\mathbf d$ 从负电荷指向正电荷。\n\n远离偶极子时，电场主要由偶极矩决定，而不是由单独的正负电荷细节决定。极性分子、电介质极化和外电场中分子的取向都可用这一图像理解；若观察点离两电荷很近，仍要分别考虑两个点电荷的场。在外电场中，均匀场主要让偶极子转向，非均匀场才会给它净平动作用；这个差别能解释极性分子为何会被强弱不均的电场吸引。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电偶极子",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E5%81%B6%E6%9E%81%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电偶极子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E5%81%B6%E6%9E%81%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electric dipole",
+          "url": "https://en.wikipedia.org/w/index.php?search=electric%20dipole"
+        }
       ]
     },
     {
@@ -269,6 +521,24 @@
         "E=kq/r² ∮E·dS=q/ε0",
         "场线 通量 闭合面",
         "electric dipole moment"
+      ],
+      "explanation_markdown": "电偶极矩定量表示正负电荷分离的强弱和方向，是电偶极子最重要的特征量。定义为 $\\mathbf p=q\\mathbf d$，其中 $q$ 是一端电荷量，$\\mathbf d$ 是从负电荷指向正电荷的位移矢量，$\\mathbf p$ 是偶极矩。\n\n外电场会给偶极矩施加力矩，使它趋向与电场同向排列；非均匀电场还可能产生净力。它常用于描述分子极性和电介质宏观极化，但不能代表系统总电荷，因为理想偶极子的净电荷为零。偶极矩的方向约定从负到正，与电场线从正出发并不矛盾；它强调电荷分离的取向，常作为分子极性和介质极化的共同语言。在国际单位制中它的单位是库仑米，分子物理中也常用德拜来表示微小偶极矩。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电偶极矩",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E5%81%B6%E6%9E%81%E7%9F%A9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电偶极矩",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E5%81%B6%E6%9E%81%E7%9F%A9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electric dipole moment",
+          "url": "https://en.wikipedia.org/w/index.php?search=electric%20dipole%20moment"
+        }
       ]
     },
     {
@@ -287,6 +557,24 @@
         "E=kq/r² ∮E·dS=q/ε0",
         "场线 通量 闭合面",
         "electric flux"
+      ],
+      "explanation_markdown": "电通量衡量电场穿过给定曲面的多少，既看电场强弱，也看曲面取向和面积。一般写为 $\\Phi_E=\\int_S\\mathbf E\\cdot d\\mathbf S$，其中 $\\Phi_E$ 是电通量，$S$ 是曲面，$d\\mathbf S$ 是带法向的面积微元。\n\n点乘只保留垂直穿过曲面的电场分量，所以同一电场穿过不同取向的面会给出不同通量。对闭合曲面，电通量与包围的净电荷直接相关，这使它成为高斯定理中连接几何曲面和电荷源的桥梁。通量的正负由面积矢量方向决定，开曲面上可以人为选择法向，闭曲面则通常取外法向；这个约定直接影响高斯积分中的符号。在均匀场和平面情形下，它退化为 $\\Phi_E=ES\\cos\\theta$ 的简单几何形式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电通量",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E9%80%9A%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电通量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E9%80%9A%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electric flux",
+          "url": "https://en.wikipedia.org/w/index.php?search=electric%20flux"
+        }
       ]
     },
     {
@@ -305,6 +593,24 @@
         "E=kq/r² ∮E·dS=q/ε0",
         "场线 通量 闭合面",
         "gauss theorem"
+      ],
+      "explanation_markdown": "高斯定理把闭合曲面的总电通量与曲面内部包围的净电荷相连，是静电场源性质的整体表达。积分式为 $\\oint_S\\mathbf E\\cdot d\\mathbf S=Q_{\\rm in}/\\varepsilon_0$，其中 $S$ 是闭合曲面，$Q_{\\rm in}$ 是内部总电荷，$\\varepsilon_0$ 是真空介电常数。\n\n定理本身总是成立，但只有在球对称、柱对称或平面对称等场型中，才容易从积分中直接解出电场。它强调的是电荷决定闭合通量，而不是曲面外电荷完全没有影响；外电荷可改变局部场，却不改变闭合面的净通量。它还说明闭合面外的电荷虽然能让面上某处电场变强或变弱，但进入和离开闭合面的通量相互抵消，因此只剩内部净电荷。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "高斯定理",
+          "url": "https://www.baidu.com/s?wd=%E9%AB%98%E6%96%AF%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "高斯定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%AB%98%E6%96%AF%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gauss theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=gauss%20theorem"
+        }
       ]
     },
     {
@@ -323,6 +629,24 @@
         "E=kq/r² ∮E·dS=q/ε0",
         "场线 通量 闭合面",
         "gaussian surface"
+      ],
+      "explanation_markdown": "高斯面是为了使用高斯定理而选取的假想闭合曲面，不一定对应真实物体表面。它进入公式 $\\oint_S\\mathbf E\\cdot d\\mathbf S=Q_{\\rm in}/\\varepsilon_0$，其中 $S$ 表示高斯面，$Q_{\\rm in}$ 是它包围的净电荷。\n\n合适的高斯面会贴合电荷分布的对称性，使电场在面上大小恒定，或让某些面上的通量为零。球面适合点电荷，柱面适合长直线电荷，薄盒面适合无限大平面；选面错误不会破坏定理，却会让计算失去简洁性。高斯面不需要真实存在，也不必与带电体表面重合；它的作用是把对称性转化为面积分的简化，所以选择的艺术和物理判断同样重要。高斯面内部即使含有多个正负电荷，也只通过净电荷进入通量结果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "高斯面",
+          "url": "https://www.baidu.com/s?wd=%E9%AB%98%E6%96%AF%E9%9D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "高斯面",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%AB%98%E6%96%AF%E9%9D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gaussian surface",
+          "url": "https://en.wikipedia.org/w/index.php?search=gaussian%20surface"
+        }
       ]
     },
     {
@@ -341,6 +665,24 @@
         "φ=Ep/q U=W/q E=-∇φ",
         "伏特计 不做功路径",
         "electric potential"
+      ],
+      "explanation_markdown": "电势用标量给出静电场中的能量高低，表示单位正电荷在某点具有的电势能。它与电场的关系为 $\\mathbf E=-\\nabla\\varphi$，其中 $\\mathbf E$ 是电场，$\\varphi$ 是电势，$\\nabla$ 是梯度算符。\n\n负号说明电场指向电势降低最快的方向，等势面上移动电荷时静电力不做功。单点电势依赖零点选择，真正直接测量的是两点电势差；把电势整体加上常数，不会改变电场、受力或电势能差。电势把三维矢量场压缩成一个标量函数，适合处理保守静电场；在多电荷系统中，标量电势先相加再取梯度，通常比直接叠加力更省力。点电荷电势随距离按 $1/r$ 衰减，比电场的 $1/r^2$ 衰减慢，远场特征不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电势",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E5%8A%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电势",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E5%8A%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electric potential",
+          "url": "https://en.wikipedia.org/w/index.php?search=electric%20potential"
+        }
       ]
     },
     {
@@ -359,6 +701,24 @@
         "φ=Ep/q U=W/q E=-∇φ",
         "伏特计 不做功路径",
         "potential difference"
+      ],
+      "explanation_markdown": "电势差比较两点电势高低，表示单位电荷在两点间移动时能量变化的尺度。常写作 $U_{AB}=\\varphi_A-\\varphi_B=W_{BA}/q$，其中 $U_{AB}$ 是 A 相对 B 的电势差，$W_{BA}$ 是电场力从 B 到 A 做功，$q$ 是电荷量。\n\n伏特计读数本质上就是两端电势差，而不是某一点的绝对电势。电势差能驱动电流，也能决定带电粒子的动能变化；符号取决于参考方向，能量判断则必须连同电荷正负一起使用。电势差也是电路中能量传递的记账方式：电源提供电势升高，负载消耗电势降低。只要回路闭合，这些升降必须同电荷能量变化相配合。电势差的单位伏特等于焦每库，直接表明它是单位电荷能量差。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电势差",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E5%8A%BF%E5%B7%AE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电势差",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E5%8A%BF%E5%B7%AE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "potential difference",
+          "url": "https://en.wikipedia.org/w/index.php?search=potential%20difference"
+        }
       ]
     },
     {
@@ -377,6 +737,24 @@
         "φ=Ep/q U=W/q E=-∇φ",
         "伏特计 不做功路径",
         "voltage"
+      ],
+      "explanation_markdown": "电压是电路语言中的电势差，描述两端口之间单位电荷可获得或失去的能量。可写为 $U=W/q$，其中 $U$ 是电压，$W$ 是电场力或电源相关作用转移的能量，$q$ 是通过的电荷量。\n\n电压不是电荷流动速度，而是推动电荷定向移动的能量差。电源提供电压，电阻、电容和电感以不同方式响应电压；在交流中，电压还随时间改变，因此要区分瞬时值、峰值、有效值和相位。在电路图上，电压方向是人为选定的参考方向，计算结果为负只表示真实极性相反。理解这一点能让电源、负载和交流相量共用同一套符号语言。测量电压要并联接表，因为它比较的是同一时刻两个节点的电势高低。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电压",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E5%8E%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电压",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E5%8E%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "voltage",
+          "url": "https://en.wikipedia.org/w/index.php?search=voltage"
+        }
       ]
     },
     {
@@ -395,6 +773,24 @@
         "φ=Ep/q U=W/q E=-∇φ",
         "伏特计 不做功路径",
         "equipotential surface"
+      ],
+      "explanation_markdown": "等势面由电势相同的空间点组成，在同一等势面上移动电荷时静电力不做功。它可写成 $\\varphi(\\mathbf r)=\\mathrm{const}$，其中 $\\varphi$ 是电势，$\\mathbf r$ 是位置矢量，$\\mathrm{const}$ 表示同一常数。\n\n电场线总与等势面垂直，因为沿等势面方向没有电势变化，也就没有电场的切向分量。导体静电平衡时整个导体及其表面都是等势的；等势面密集处电势变化快，通常对应较强电场。等势面与导体形状关系密切，尖端附近等势面挤得更密，电场也更强；这正是尖端放电和避雷针能集中电荷效应的直观来源。在电场作图中，等势面与场线配合使用，能同时展示能量图像和受力方向。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "等势面",
+          "url": "https://www.baidu.com/s?wd=%E7%AD%89%E5%8A%BF%E9%9D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "等势面",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AD%89%E5%8A%BF%E9%9D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "equipotential surface",
+          "url": "https://en.wikipedia.org/w/index.php?search=equipotential%20surface"
+        }
       ]
     },
     {
@@ -413,6 +809,24 @@
         "φ=Ep/q U=W/q E=-∇φ",
         "伏特计 不做功路径",
         "electric potential energy"
+      ],
+      "explanation_markdown": "电势能是电荷在电场中因位置不同而具有的相互作用能量，零点依赖参考电势的选择。常用 $E_p=q\\varphi$ 表示，其中 $E_p$ 是电势能，$q$ 是电荷量，$\\varphi$ 是所在点电势。\n\n同一电势处，正电荷和负电荷的电势能符号相反，所以不能只看电势高低判断运动趋势。静电场中电势能变化等于电场力做功的相反数，且只由起点和终点决定；参考零点改变只会整体平移能量数值。在两电荷系统中，电势能的正负反映相互作用趋势：同号电荷靠近时能量升高，异号电荷靠近时能量降低，这与排斥和吸引的力学图像一致。在电容器中，储存的电场能也可看成分离正负电荷所付出的总电势能。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电势能",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E5%8A%BF%E8%83%BD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电势能",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E5%8A%BF%E8%83%BD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electric potential energy",
+          "url": "https://en.wikipedia.org/w/index.php?search=electric%20potential%20energy"
+        }
       ]
     },
     {
@@ -431,6 +845,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "electrostatic field"
+      ],
+      "explanation_markdown": "静电场由静止电荷产生，场分布不随时间变化，并且具有保守场性质。局域条件可写为 $\\nabla\\times\\mathbf E=0$，其中 $\\nabla\\times$ 表示旋度，$\\mathbf E$ 是电场。\n\n旋度为零意味着沿任意闭合路径的静电场环量为零，因此可以用电势来描述场。库仑场、静电平衡导体周围的场都属于这类图像；若磁场随时间变化，会产生非保守的感生电场，不能再简单归入静电场。静电场的保守性让许多问题可转化为求解电势函数，边界值确定后场分布随之确定；这也是导体边界、等势面和电容计算常放在一起讨论的原因。点电荷静电场、带电球壳外场和平行板内场，都是这一保守结构的具体例子。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "静电场",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%99%E7%94%B5%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "静电场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%99%E7%94%B5%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electrostatic field",
+          "url": "https://en.wikipedia.org/w/index.php?search=electrostatic%20field"
+        }
       ]
     },
     {
@@ -449,6 +881,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "electrostatic equilibrium"
+      ],
+      "explanation_markdown": "静电平衡是导体内自由电荷完成重新分布后不再发生宏观定向运动的状态。导体内部满足 $\\mathbf E_{\\rm in}=0$，其中 $\\mathbf E_{\\rm in}$ 是导体内部电场，零表示自由电荷不再受净电场驱动。\n\n多余电荷停留在导体表面，导体整体成为等势体，表面附近电场垂直于表面。这个结论依赖“静电”和“平衡”两个条件；若导体中有稳恒电流、外场快速变化或材料不是理想导体，内部电场就可能不为零。表面电荷分布通常不均匀，曲率大的地方电荷密度更高，外部电场也更强；这种非均匀性在尖端放电、静电除尘和高压设备设计中很关键。这也解释了为什么空心导体可保护内部仪器免受外部静电场影响。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "静电平衡",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%99%E7%94%B5%E5%B9%B3%E8%A1%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "静电平衡",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%99%E7%94%B5%E5%B9%B3%E8%A1%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electrostatic equilibrium",
+          "url": "https://en.wikipedia.org/w/index.php?search=electrostatic%20equilibrium"
+        }
       ]
     },
     {
@@ -467,6 +917,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "electrostatic shielding"
+      ],
+      "explanation_markdown": "静电屏蔽利用导体静电平衡来隔离外部静电场，封闭导体腔内无自由电荷时场可被抵消。理想结果写为 $\\mathbf E_{\\rm cavity}=0$，其中 $\\mathbf E_{\\rm cavity}$ 是腔内电场。\n\n外电场会推动导体表面感应电荷重排，表面电荷产生的附加场在导体内部抵消原场。金属盒、屏蔽罩和法拉第笼都利用这一机制；对于高频电磁波，孔洞大小、材料厚度和导电率还会影响屏蔽效果。屏蔽腔内若放入带电体，内表面会感应出相反电荷，外表面再承担总电荷约束；因此屏蔽问题要区分外场屏蔽和腔内带电两种情形。接地屏蔽还能把多余电荷导入大地，使外表面电势被固定在参考电势附近。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "静电屏蔽",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%99%E7%94%B5%E5%B1%8F%E8%94%BD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "静电屏蔽",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%99%E7%94%B5%E5%B1%8F%E8%94%BD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electrostatic shielding",
+          "url": "https://en.wikipedia.org/w/index.php?search=electrostatic%20shielding"
+        }
       ]
     },
     {
@@ -485,6 +953,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "conductor"
+      ],
+      "explanation_markdown": "导体含有大量可自由移动的载流子，外电场能驱动它们形成电流。局部欧姆关系常写作 $\\mathbf J=\\sigma\\mathbf E$，其中 $\\mathbf J$ 是电流密度，$\\sigma$ 是电导率，$\\mathbf E$ 是电场。\n\n金属中主要载流子是电子；静电平衡时内部场趋于零，而有稳恒电流时必须有非零电场维持漂移。真实导体会有电阻和焦耳热，只有在理想导线近似中，才把它看成各点电势几乎相同、能量损耗可忽略。导体内部载流子会快速响应外场，这使它既能传输电流，也能在静电中重排为等势体；同一种自由电荷机制，在动态和静态下表现出不同效果。从场的角度看，导体表面还会给电场施加边界条件，迫使切向静电场为零。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "导体",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%BC%E4%BD%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "导体",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%BC%E4%BD%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "conductor",
+          "url": "https://en.wikipedia.org/w/index.php?search=conductor"
+        }
       ]
     },
     {
@@ -503,6 +989,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "insulator"
+      ],
+      "explanation_markdown": "绝缘体缺少可自由长距离移动的载流子，外加电场难以在其中形成持续传导电流。它的电导率常近似满足 $\\sigma\\approx0$，其中 $\\sigma$ 是电导率，零近似表示导电能力很弱。\n\n绝缘体并不是不受电场影响，束缚电荷仍可发生微小位移并产生极化。空气、玻璃和塑料在普通电压下可隔离电路；电场过强时会击穿，形成放电通道，此时绝缘近似就失效。绝缘体常用作支撑和隔离，但它的介电强度有限；高压设备中选择绝缘材料时，不只看电阻率，还要看击穿场强、介质损耗和环境湿度。优良绝缘体在电容器中还常兼作电介质，既隔离极板又提高储能能力。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "绝缘体",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%9D%E7%BC%98%E4%BD%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "绝缘体",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%9D%E7%BC%98%E4%BD%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "insulator",
+          "url": "https://en.wikipedia.org/w/index.php?search=insulator"
+        }
       ]
     },
     {
@@ -521,6 +1025,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "dielectric"
+      ],
+      "explanation_markdown": "电介质是能在电场中极化的绝缘材料，常放入电容器来改变电场和储能。线性均匀介质中可写 $\\mathbf D=\\varepsilon\\mathbf E$，其中 $\\mathbf D$ 是电位移，$\\varepsilon$ 是介电常数，$\\mathbf E$ 是电场。\n\n电介质内部正负束缚电荷微小分离，产生的束缚电荷会改变净电场。介质能增大电容、提高储能密度或提高击穿电压；强场、高频或各向异性材料中，简单常数 $\\varepsilon$ 可能不足以描述响应。放入电容器后，电介质一方面提高电容，另一方面也限制最大工作电压；材料的介质损耗会在交流中发热，因此它不是完全被动的空白填充物。电介质中的自由电荷很少，但束缚电荷的集体响应足以显著改变宏观电场。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电介质",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E4%BB%8B%E8%B4%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电介质",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E4%BB%8B%E8%B4%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dielectric",
+          "url": "https://en.wikipedia.org/w/index.php?search=dielectric"
+        }
       ]
     },
     {
@@ -539,6 +1061,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "polarization"
+      ],
+      "explanation_markdown": "极化是电介质中束缚正负电荷在外电场作用下发生微小分离或取向排列的过程。宏观极化强度写为 $\\mathbf P=d\\mathbf p/dV$，其中 $\\mathbf P$ 是极化强度，$d\\mathbf p$ 是体积 $dV$ 内的电偶极矩总和。\n\n极化会在介质表面或内部形成束缚电荷，从而改变电场分布。它不同于自由电荷的传导流动，所以通常不直接产生稳恒电流；极性分子取向、非极性分子电子云形变和铁电材料畴翻转都属于不同层次的极化图像。极化强度的空间变化会产生束缚电荷，表面法向分量尤其重要；因此介质交界面上的电场突变，往往要从自由电荷和束缚电荷共同理解。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "极化",
+          "url": "https://www.baidu.com/s?wd=%E6%9E%81%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "极化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9E%81%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "polarization",
+          "url": "https://en.wikipedia.org/w/index.php?search=polarization"
+        }
       ]
     },
     {
@@ -557,6 +1097,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "dielectric constant"
+      ],
+      "explanation_markdown": "介电常数表征介质中电场与电位移之间的比例，反映材料极化后对电场的响应强弱。常写为 $\\varepsilon=\\varepsilon_r\\varepsilon_0$，其中 $\\varepsilon$ 是介电常数，$\\varepsilon_r$ 是相对介电常数，$\\varepsilon_0$ 是真空介电常数。\n\n介电常数越大，同样自由电荷产生的电场通常越弱，平行板电容器的电容也越大。它不是单纯几何量，而是材料性质；温度、频率、场强和晶体方向都可能让实际介电常数偏离一个固定数值。在电磁波中，介电常数还影响传播速度和波长；光学折射率与高频介电响应密切相关，所以同一材料参数会连接静电、电容和光传播。电容器标注的介质类型，往往就是在介电常数、损耗和击穿强度之间折中。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "介电常数",
+          "url": "https://www.baidu.com/s?wd=%E4%BB%8B%E7%94%B5%E5%B8%B8%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "介电常数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BB%8B%E7%94%B5%E5%B8%B8%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dielectric constant",
+          "url": "https://en.wikipedia.org/w/index.php?search=dielectric%20constant"
+        }
       ]
     },
     {
@@ -575,6 +1133,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "relative dielectric constant"
+      ],
+      "explanation_markdown": "相对介电常数把材料的介电常数同真空相比，用无量纲数表示极化能力。定义为 $\\varepsilon_r=\\varepsilon/\\varepsilon_0$，其中 $\\varepsilon_r$ 是相对介电常数，$\\varepsilon$ 是材料介电常数，$\\varepsilon_0$ 是真空介电常数。\n\n它常直接出现在电容、电场和波速公式中，使不同介质的影响容易比较。水、陶瓷和聚合物的数值差异很大，原因在于微观偶极取向和电子云形变不同；高频下有些极化机制跟不上外场，相对介电常数会随频率变化。相对介电常数越大，不代表材料越适合所有电路；高介电材料可能损耗大、温度稳定性差或击穿强度低，工程选择要看完整工作条件。它的真空值等于一，空气在普通条件下也非常接近一，因此常被近似成真空。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相对介电常数",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E5%AF%B9%E4%BB%8B%E7%94%B5%E5%B8%B8%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相对介电常数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E5%AF%B9%E4%BB%8B%E7%94%B5%E5%B8%B8%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "relative dielectric constant",
+          "url": "https://en.wikipedia.org/w/index.php?search=relative%20dielectric%20constant"
+        }
       ]
     },
     {
@@ -593,6 +1169,24 @@
         "C=εS/d 1/2CU²",
         "两极板 充放电",
         "capacitance"
+      ],
+      "explanation_markdown": "电容表示导体系统储存电荷和电场能量的能力，数值上等于单位电压对应的电荷量。定义为 $C=Q/U$，其中 $C$ 是电容，$Q$ 是一个导体或极板上的电荷量，$U$ 是两端电压。\n\n电容由几何形状和介质决定，不是由某一次充入多少电荷任意决定。电容越大，在同样电压下可分离更多等量异号电荷，并把能量储存在电场中；实际器件还受击穿电压、漏电和寄生电感限制。电容也决定电压变化的快慢，因为同样电流给大电容充电时电压上升更慢；这使它在滤波、延时和振荡中扮演时间尺度元件。电容的单位法拉很大，实际电路常见微法、纳法或皮法等级的元件。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电容",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E5%AE%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电容",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E5%AE%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "capacitance",
+          "url": "https://en.wikipedia.org/w/index.php?search=capacitance"
+        }
       ]
     },
     {
@@ -611,6 +1205,24 @@
         "C=εS/d 1/2CU²",
         "两极板 充放电",
         "capacitor"
+      ],
+      "explanation_markdown": "电容器由两个相互绝缘的导体构成，充电后两端带等量异号电荷，并在空间中建立电场。它满足 $C=Q/U$，其中 $C$ 是电容，$Q$ 是单个极板电荷量，$U$ 是两极板间电压。\n\n电容器储存的是电场能量而不是净电荷，整体通常仍近似电中性。它可用于滤波、耦合、定时和振荡；直流稳态下理想电容相当于断路，交流中则会随频率表现出不同容抗。电容器两端电压不能突变，因为突变需要瞬间搬运有限电荷并产生无限电流；这个动态特征让它在交流旁路和电源滤波中非常有用。充电过程中，电源做功一部分成为电场能，一部分可能在电阻中耗散为热。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电容器",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E5%AE%B9%E5%99%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电容器",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E5%AE%B9%E5%99%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "capacitor",
+          "url": "https://en.wikipedia.org/w/index.php?search=capacitor"
+        }
       ]
     },
     {
@@ -629,6 +1241,24 @@
         "C=εS/d 1/2CU²",
         "两极板 充放电",
         "parallel plate capacitor"
+      ],
+      "explanation_markdown": "平行板电容器由两块相对平行的导体板组成，板间距离远小于板的尺度时中央电场近似均匀。电容为 $C=\\varepsilon S/d$，其中 $\\varepsilon$ 是介质介电常数，$S$ 是极板面积，$d$ 是板距。\n\n面积越大可容纳的电荷越多，板距越小电场越集中，介质极化越强电容越大。这个公式忽略边缘电场弯曲，适合远离边缘的近似；若板很小、间距很大或介质不均匀，就需要重新计算场分布。板间电场近似为 $E=U/d$，能量密度集中在两板之间；改变板距时若电荷保持不变或电压保持不变，力和能量变化会呈现不同物理过程。这个模型还常用来估算传感器，因为位移改变 $d$ 会直接改变电容读数。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平行板电容器",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E8%A1%8C%E6%9D%BF%E7%94%B5%E5%AE%B9%E5%99%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平行板电容器",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E8%A1%8C%E6%9D%BF%E7%94%B5%E5%AE%B9%E5%99%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "parallel plate capacitor",
+          "url": "https://en.wikipedia.org/w/index.php?search=parallel%20plate%20capacitor"
+        }
       ]
     },
     {
@@ -647,6 +1277,24 @@
         "I=Δq/Δt ΣI=0 ΣU=0",
         "相关量表 电压表 网络",
         "electric current"
+      ],
+      "explanation_markdown": "电流表示电荷通过某一截面的定向迁移率，是电路中“流动”图像的核心量。瞬时定义为 $I=dq/dt$，其中 $I$ 是电流，$dq$ 是时间 $dt$ 内通过截面的电荷量。\n\n电流方向按正电荷移动方向约定，金属导线中实际漂移的电子方向与约定电流相反。电流描述的是净电荷穿过截面的速率，不等于单个载流子的热运动速度；稳恒电路中同一串联支路电流相同，来自电荷不能长期堆积。在金属中，电子热运动速度很大而漂移速度很小，电信号却能以接近电磁传播速度传递；电流图像因此要区分载流子漂移和场的建立。电流的单位安培等于库仑每秒，直接对应单位时间穿过截面的电荷量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电流",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electric current",
+          "url": "https://en.wikipedia.org/w/index.php?search=electric%20current"
+        }
       ]
     },
     {
@@ -665,6 +1313,24 @@
         "I=Δq/Δt ΣI=0 ΣU=0",
         "电流表 电压表 网络",
         "current intensity"
+      ],
+      "explanation_markdown": "电流强度是电流大小的定量名称，说明单位时间内有多少电荷通过指定截面。平均形式为 $I=\\Delta q/\\Delta t$，其中 $I$ 是电流强度，$\\Delta q$ 是通过截面的电荷量，$\\Delta t$ 是时间间隔。\n\n在恒定电流中，平均值和瞬时值一致；在脉冲或交流中，瞬时电流随时间变化，需要用 $dq/dt$ 描述。它反映通过截面的代数净流量，正负载流子同时运动时，要按电荷符号和运动方向共同计入。电流表串联接入电路，正是因为它要测量通过同一截面的电荷流率；理想电流表内阻很小，尽量不改变原回路中的电压分配。电解、电镀和粒子束实验中，电流强度还能直接换算单位时间到达的带电粒子数。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电流强度",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E6%B5%81%E5%BC%BA%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电流强度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E6%B5%81%E5%BC%BA%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "current intensity",
+          "url": "https://en.wikipedia.org/w/index.php?search=current%20intensity"
+        }
       ]
     },
     {
@@ -683,6 +1349,24 @@
         "I=Δq/Δt ΣI=0 ΣU=0",
         "电流表 电压表 网络",
         "current density"
+      ],
+      "explanation_markdown": "电流密度把总电流细化到空间各点，说明单位面积上电荷流动的强弱和方向。总电流写为 $I=\\int_S\\mathbf J\\cdot d\\mathbf S$，其中 $\\mathbf J$ 是电流密度，$S$ 是截面，$d\\mathbf S$ 是面积矢量。\n\n均匀导线中可近似用 $J=I/S$，但在弯曲导体、半导体或电极附近，电流往往分布不均。电流密度能直接联系局部欧姆定律、焦耳热和连续性方程，因此比总电流更适合描述材料内部发生的事情。在导体截面突然变窄处，电流密度会增大，局部发热也更强；保险丝、接触电阻和电迁移问题都不能只看总电流大小。电流密度方向和电场方向是否一致，还取决于载流子符号与材料的局部导电性质。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电流密度",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E6%B5%81%E5%AF%86%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电流密度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E6%B5%81%E5%AF%86%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "current density",
+          "url": "https://en.wikipedia.org/w/index.php?search=current%20density"
+        }
       ]
     },
     {
@@ -701,6 +1385,24 @@
         "I=Δq/Δt ΣI=0 ΣU=0",
         "电流表 电压表 网络",
         "steady current"
+      ],
+      "explanation_markdown": "稳恒电流指电路中各处电流分布不随时间改变的状态，导体内部没有持续电荷积累。局域条件为 $\\nabla\\cdot\\mathbf J=0$，其中 $\\nabla\\cdot$ 是散度，$\\mathbf J$ 是电流密度。\n\n散度为零表示任意小体积流入多少电荷就流出多少电荷。稳恒电流可以持续产生焦耳热，也可以维持稳定磁场；它不同于静电平衡，因为导体内部通常需要非零电场来推动载流子漂移。稳恒并不意味着没有能量变化，电源持续提供能量，电阻持续耗散热量；只是电荷分布和电流分布达到时间上稳定的动态平衡。稳恒条件下电荷密度不随时间变，但导线各处仍可存在稳定的表面电荷分布。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳恒电流",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E6%81%92%E7%94%B5%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳恒电流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E6%81%92%E7%94%B5%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "steady current",
+          "url": "https://en.wikipedia.org/w/index.php?search=steady%20current"
+        }
       ]
     },
     {
@@ -719,6 +1421,24 @@
         "I=Δq/Δt ΣI=0 ΣU=0",
         "电流表 电压表 网络",
         "direct current"
+      ],
+      "explanation_markdown": "直流电流在理想情况下方向和大小都保持不变，常由电池、直流电源或整流滤波电路提供。可写作 $I=\\mathrm{const}$，其中 $I$ 是电流，$\\mathrm{const}$ 表示随时间不变。\n\n直流稳态下，电容充满后不再有持续电流，电感则近似为普通导线。真实直流可能带有纹波，电源也有内阻和负载限制；不过在时间变化很慢时，直流模型能清楚描述电压分配、功率消耗和磁场分布。直流模型常用于电池供电和稳态偏置分析，能把电容、电感暂态影响剥离出去；但开关瞬间仍会出现充放电和自感效应，不能用稳态结论代替全过程。稳压电源输出的直流常用于给放大电路设置工作点，使小信号叠加在稳定偏置上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "直流电流",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B4%E6%B5%81%E7%94%B5%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "直流电流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B4%E6%B5%81%E7%94%B5%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "direct current",
+          "url": "https://en.wikipedia.org/w/index.php?search=direct%20current"
+        }
       ]
     },
     {
@@ -737,6 +1457,24 @@
         "I=Δq/Δt ΣI=0 ΣU=0",
         "电流表 电压表 网络",
         "alternating current"
+      ],
+      "explanation_markdown": "交流电流的大小和方向随时间周期性变化，电网和许多信号电路常近似为正弦形式。瞬时电流可写为 $I=I_0\\sin\\omega t$，其中 $I$ 是瞬时电流，$I_0$ 是峰值，$\\omega$ 是角频率，$t$ 是时间。\n\n交流不只是“来回流动”，它还带来相位差、容抗、感抗和频率选择。电容与电感会让电压和电流峰值错开；讨论发热或额定电压时，通常采用有效值，因为它对应同等直流热效应。交流的平均电流可能为零，但平均功率不一定为零；负载在正负半周都能吸收能量，这也是交流供电能够持续做功的关键。频率是交流电流的重要标签，家用电源和无线信号的物理效果会因频率差异巨大而不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "交流电流",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%A4%E6%B5%81%E7%94%B5%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "交流电流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%A4%E6%B5%81%E7%94%B5%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "alternating current",
+          "url": "https://en.wikipedia.org/w/index.php?search=alternating%20current"
+        }
       ]
     },
     {
@@ -755,6 +1493,24 @@
         "E=U+Ir",
         "电池 开路读数",
         "power source"
+      ],
+      "explanation_markdown": "电源通过化学、机械、光照或其他过程，把非电场能转化为电能并维持两端电势差。电动势定义为 $\\mathcal E=W_{\\rm non}/q$，其中 $\\mathcal E$ 是电动势，$W_{\\rm non}$ 是非静电力做功，$q$ 是通过电荷量。\n\n电源内部把正电荷等效地从低电势搬到高电势，外电路中电荷再释放能量。真实电源有内阻和最大输出功率，端电压会随负载电流下降；电池、发电机和太阳能电池的微观机制不同，但都承担维持能量循环的角色。从能量角度看，电源不是单纯提供电荷的仓库，而是维持电场和电势差的装置；外电路中的电荷大多已经在导线中，电源负责让它们持续循环。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电源",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E6%BA%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电源",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E6%BA%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "power source",
+          "url": "https://en.wikipedia.org/w/index.php?search=power%20source"
+        }
       ]
     },
     {
@@ -773,6 +1529,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "electromotive force"
+      ],
+      "explanation_markdown": "电动势衡量电源内部非静电力对单位电荷提供的能量，不是普通静电场中的电势差。它写作 $\\mathcal E=W_{\\rm non}/q$，其中 $\\mathcal E$ 是电动势，$W_{\\rm non}$ 是非静电力做功，$q$ 是电荷量。\n\n电动势说明电源为什么能把电荷“送回高处”，从而维持持续电流。开路时端电压常接近电动势；闭合电路中若存在内阻，部分能量在电源内部耗散，端电压就小于电动势。感应电动势则来自变化磁通，而非化学过程。电动势沿闭合回路的积分可以非零，而静电场沿闭合回路积分为零；这个差别使电池、发电机和感应线圈能够维持回路电流。电动势的单位虽是伏特，但它强调能量来源在电源内部，而不是负载两端的电势差。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电动势",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E5%8A%A8%E5%8A%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电动势",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E5%8A%A8%E5%8A%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electromotive force",
+          "url": "https://en.wikipedia.org/w/index.php?search=electromotive%20force"
+        }
       ]
     },
     {
@@ -791,6 +1565,24 @@
         "I=Δq/Δt ΣI=0 ΣU=0",
         "电流表 电压表 网络",
         "resistance"
+      ],
+      "explanation_markdown": "电阻表示元件阻碍电流通过的程度，宏观上反映电能转化为内能的能力。定义为 $R=U/I$，其中 $R$ 是电阻，$U$ 是两端电压，$I$ 是通过元件的电流。\n\n对欧姆导体，温度近似不变时 $R$ 可看成常数，电流与电压成正比。电阻大小受材料、电阻率、长度和截面积影响；灯丝、二极管和半导体器件的伏安关系常不线性，这时不能只用一个固定电阻概括全部行为。在微观图像中，电阻来自载流子散射，散射越强，漂移越困难；因此材料纯度、晶格振动和温度都会改变宏观伏安曲线。电阻也是噪声来源，热运动会产生热噪声；精密测量中它不仅耗能，还限制信号质量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电阻",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E9%98%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电阻",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E9%98%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "resistance",
+          "url": "https://en.wikipedia.org/w/index.php?search=resistance"
+        }
       ]
     },
     {
@@ -809,6 +1601,24 @@
         "I=Δq/Δt ΣI=0 ΣU=0",
         "电流表 电压表 网络",
         "resistor"
+      ],
+      "explanation_markdown": "电阻器是在电路中专门提供确定电阻的元件，常用于限流、分压、取样和耗能。理想关系为 $U=IR$，其中 $U$ 是电阻器两端电压，$I$ 是电流，$R$ 是标称电阻。\n\n理想电阻器不储存电场或磁场能量，而是把电功率转化为热。实际电阻器有额定功率、温度系数和制造误差；高频下还可能出现寄生电感和电容，因此小小一个元件在精密电路中也不能完全当作抽象电阻。电阻器的色环或标号给出常温标称值，但工作中自热会改变阻值；精密测量还要考虑四端测量，避免引线和接触电阻混入结果。可变电阻器通过改变有效长度或接触位置调节阻值，电位器则常用于输出可调分压。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电阻器",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E9%98%BB%E5%99%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电阻器",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E9%98%BB%E5%99%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "resistor",
+          "url": "https://en.wikipedia.org/w/index.php?search=resistor"
+        }
       ]
     },
     {
@@ -827,6 +1637,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "resistivity"
+      ],
+      "explanation_markdown": "电阻率是材料本身阻碍电流的参数，把导体长度和截面积等几何因素分离出来。均匀导体满足 $R=\\rho L/S$，其中 $R$ 是电阻，$\\rho$ 是电阻率，$L$ 是长度，$S$ 是横截面积。\n\n同种材料做得越长电阻越大，做得越粗电阻越小，比例系数就是电阻率。金属电阻率通常随温度升高而增大，半导体则可能相反；掺杂、缺陷和杂质会改变载流子散射，从而改变电阻率。电阻率是比较材料导电能力的关键量，而电阻是具体样品的量；同样铜材做成长细线和短粗片，电阻差别可很大，但电阻率相同。用四探针法测电阻率，可以避开接触电阻影响，尤其适合半导体薄片测量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电阻率",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E9%98%BB%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电阻率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E9%98%BB%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "resistivity",
+          "url": "https://en.wikipedia.org/w/index.php?search=resistivity"
+        }
       ]
     },
     {
@@ -845,6 +1673,24 @@
         "I=Δq/Δt ΣI=0 ΣU=0",
         "电流表 电压表 网络",
         "conductance"
+      ],
+      "explanation_markdown": "电导表示元件让电流通过的容易程度，是电阻的倒数。定义为 $G=1/R$，其中 $G$ 是电导，$R$ 是电阻，单位为西门子。\n\n在相同电压下，电导越大电流越大。并联电路中各支路承受同一电压，电流按电导分配，因此总电导直接相加；这比先求倒数再合成电阻更贴近并联网络的物理图像。电导为零的理想支路相当于断路。电导语言特别适合并联网络和漏电问题，因为每条通路都贡献一份导通能力；绝缘材料的微小电导也会在高压或长时间下造成可观泄漏。电导越大不一定越安全，高压系统中微小泄漏电导也可能造成持续能量损耗。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电导",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E5%AF%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电导",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E5%AF%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "conductance",
+          "url": "https://en.wikipedia.org/w/index.php?search=conductance"
+        }
       ]
     },
     {
@@ -863,6 +1709,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "conductivity"
+      ],
+      "explanation_markdown": "电导率是材料导电能力的局部参数，说明给定电场能产生多大的电流密度。局部欧姆定律写作 $\\mathbf J=\\sigma\\mathbf E$，其中 $\\mathbf J$ 是电流密度，$\\sigma$ 是电导率，$\\mathbf E$ 是电场。\n\n它由载流子浓度、带电量、迁移率和散射机制共同决定。金属电导率大，绝缘体很小，半导体可通过掺杂和温度显著调节；在各向异性晶体或强磁场中，电导率甚至需要写成张量。在半导体中，电导率可由温度、光照和掺杂强烈调节，这让它不只是材料表格参数，而是传感器、光敏电阻和晶体管工作的基础。电解质溶液的电导率还与离子浓度和迁移率有关，和金属电子导电机制不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电导率",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E5%AF%BC%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电导率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E5%AF%BC%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "conductivity",
+          "url": "https://en.wikipedia.org/w/index.php?search=conductivity"
+        }
       ]
     },
     {
@@ -881,6 +1745,24 @@
         "U=IR R=ρL/S",
         "伏安直线 比例系数",
         "ohms law"
+      ],
+      "explanation_markdown": "欧姆定律说明许多导体在温度和材料状态稳定时，电压与电流近似成正比。电路形式为 $U=IR$，其中 $U$ 是导体两端电压，$I$ 是电流，$R$ 是电阻。\n\n它把电阻看作线性比例系数，使串并联网络可以用代数方法处理。欧姆定律不是所有元件的普遍定律：灯丝温度升高会改变电阻，二极管具有单向导电性，电解液和半导体也常出现非线性伏安关系。局部形式 $\\mathbf J=\\sigma\\mathbf E$ 与电路形式相互对应：前者看材料内部，后者看端口读数。二者都要求材料处在线性响应范围。图像上，欧姆元件的伏安曲线是一条过原点的直线，斜率反映电阻或电导。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "欧姆定律",
+          "url": "https://www.baidu.com/s?wd=%E6%AC%A7%E5%A7%86%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "欧姆定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AC%A7%E5%A7%86%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ohms law",
+          "url": "https://en.wikipedia.org/w/index.php?search=ohms%20law"
+        }
       ]
     },
     {
@@ -899,6 +1781,24 @@
         "Q=I²Rt UIt",
         "发热电阻 电流平方",
         "joules law"
+      ],
+      "explanation_markdown": "焦耳定律给出电流通过电阻时产生热量的规律，体现载流子与晶格碰撞造成的能量耗散。常写为 $Q=I^2Rt$，其中 $Q$ 是热量，$I$ 是电流，$R$ 是电阻，$t$ 是通电时间。\n\n电流加倍时发热按平方增加，所以输电、保险丝和电热器都非常关心电流大小。该定律描述纯电阻耗散；若元件还把能量转化为光、机械功或化学能，就要把总电功分配到不同能量去向中。焦耳定律还决定输电为什么要升压降流：在输送同样功率时，电流越小，导线上的 $I^2R$ 损耗越低，远距离传输就更经济。它也提醒大电流短路极其危险，因为热量会在很短时间内按电流平方暴增。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "焦耳定律",
+          "url": "https://www.baidu.com/s?wd=%E7%84%A6%E8%80%B3%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "焦耳定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%84%A6%E8%80%B3%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "joules law",
+          "url": "https://en.wikipedia.org/w/index.php?search=joules%20law"
+        }
       ]
     },
     {
@@ -917,6 +1817,24 @@
         "Q=I²Rt UIt",
         "发热电阻 电流平方",
         "joule heat"
+      ],
+      "explanation_markdown": "焦耳热是电流在有电阻的材料中耗散出来的内能，微观上来自载流子不断碰撞并把有序漂移能量交给晶格。它满足 $Q=I^2Rt$，其中 $Q$ 是焦耳热，$I$ 是电流，$R$ 是电阻，$t$ 是时间。\n\n电炉利用焦耳热工作，导线发热则常是需要控制的损耗。超导体在理想稳恒状态下电阻为零，不产生普通焦耳热；实际电路若电流过大，焦耳热会导致温升、材料老化甚至熔断。焦耳热既可被利用，也可能成为失效来源；芯片散热、导线载流量和电池内阻发热都要估算它，否则温度升高会进一步改变电阻。很多保护装置本质上是在限制焦耳热，例如熔断器熔化和热继电器动作。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "焦耳热",
+          "url": "https://www.baidu.com/s?wd=%E7%84%A6%E8%80%B3%E7%83%AD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "焦耳热",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%84%A6%E8%80%B3%E7%83%AD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "joule heat",
+          "url": "https://en.wikipedia.org/w/index.php?search=joule%20heat"
+        }
       ]
     },
     {
@@ -935,6 +1853,24 @@
         "I=Δq/Δt ΣI=0 ΣU=0",
         "电流表 电压表 网络",
         "electric work"
+      ],
+      "explanation_markdown": "电功表示电场或电源推动电荷移动时完成的能量转移。恒定电压和电流下可写 $W=UIt$，其中 $W$ 是电功，$U$ 是电压，$I$ 是电流，$t$ 是时间。\n\n电功可以转化为热、光、机械能或化学能，具体取决于用电器的内部过程。电阻中它主要成为焦耳热，电动机中则有一部分变为机械输出；若电压电流随时间变化，应用 $\\int UI\\,dt$ 计算总能量。电功的正负依赖能量流向：电源对外做功时输出能量，充电电池吸收电功时储存化学能。统一的能量账本比只看电流方向更可靠。电能表累计的正是电功，常用千瓦时表示，实际就是功率对时间的积分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电功",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E5%8A%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电功",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E5%8A%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electric work",
+          "url": "https://en.wikipedia.org/w/index.php?search=electric%20work"
+        }
       ]
     },
     {
@@ -953,6 +1889,24 @@
         "I=Δq/Δt ΣI=0 ΣU=0",
         "电流表 电压表 网络",
         "electric power"
+      ],
+      "explanation_markdown": "电功率是电能转移或消耗的快慢，等于单位时间内完成的电功。瞬时功率为 $P=UI$，其中 $P$ 是功率，$U$ 是两端电压，$I$ 是通过电流。\n\n对纯电阻还可写成 $P=I^2R$ 或 $P=U^2/R$，分别突出电流发热和电压驱动。用电器额定功率表示正常工作时的能量转换速率；交流电路中若电压电流不同相，还要区分瞬时功率、平均有功功率和视在功率。功率还决定元件额定值，超过额定功率会使温度升高并损坏绝缘或材料结构；因此电路设计常先算最大功率，再选择合适器件。同一功率下提高电压可降低电流，从而减少导线损耗，这是高压输电的直接动机。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电功率",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E5%8A%9F%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电功率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E5%8A%9F%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electric power",
+          "url": "https://en.wikipedia.org/w/index.php?search=electric%20power"
+        }
       ]
     },
     {
@@ -971,6 +1925,24 @@
         "R串=ΣR 1/R并=Σ1/R",
         "节点 支路 等效电阻",
         "series circuit"
+      ],
+      "explanation_markdown": "串联电路把元件首尾连接成单一路径，因此同一时刻通过各元件的电流相同。电阻串联时 $R_{\\rm eq}=\\sum_i R_i$，其中 $R_{\\rm eq}$ 是等效电阻，$R_i$ 是第 $i$ 个电阻。\n\n总电压在各元件间分配，电阻越大分得的电压越多。串联结构常用于分压和扩大测量量程，但任一处断开都会切断整个回路；对含电容、电感的交流串联电路，还要把阻抗和相位纳入。串联分压器的输出会受负载影响，接入仪表或后级电路后等效电阻改变，原先按空载计算的电压比例可能不再准确。串联电池可提高总电压，但容量和最大电流还受单体性能和内阻匹配限制。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "串联电路",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%B2%E8%81%94%E7%94%B5%E8%B7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "串联电路",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%B2%E8%81%94%E7%94%B5%E8%B7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "series circuit",
+          "url": "https://en.wikipedia.org/w/index.php?search=series%20circuit"
+        }
       ]
     },
     {
@@ -989,6 +1961,24 @@
         "R串=ΣR 1/R并=Σ1/R",
         "节点 支路 等效电阻",
         "parallel circuit"
+      ],
+      "explanation_markdown": "并联电路把各支路两端接在同一对节点上，所以每个支路承受相同电压。电阻并联满足 $1/R_{\\rm eq}=\\sum_i1/R_i$，其中 $R_{\\rm eq}$ 是等效电阻，$R_i$ 是各支路电阻。\n\n总电流按支路电导分配，电阻较小的支路电流较大。并联会降低等效电阻，并使各用电器可独立工作；家庭电路采用并联，正是为了让一个支路断开时其他支路仍能保持电压供应。并联支路越多，总电流越大，电源和导线必须承受更高负载；家用电路虽然并联独立，仍需要总开关和保险装置限制过流。并联电池可提高供电电流能力，但不同电池电压不一致时会出现内部环流。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "并联电路",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B6%E8%81%94%E7%94%B5%E8%B7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "并联电路",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B6%E8%81%94%E7%94%B5%E8%B7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "parallel circuit",
+          "url": "https://en.wikipedia.org/w/index.php?search=parallel%20circuit"
+        }
       ]
     },
     {
@@ -1007,6 +1997,24 @@
         "I=Δq/Δt ΣI=0 ΣU=0",
         "电流表 电压表 网络",
         "compound circuit"
+      ],
+      "explanation_markdown": "混联电路同时含有串联和并联结构，电流和电压关系不能用单一规则一次完成。常把局部关系 $U=IR$ 与节点条件 $\\sum I=0$ 结合，其中 $U$ 是支路电压，$I$ 是支路电流，$R$ 是电阻。\n\n处理混联的关键是识别哪些元件共享同一电流，哪些元件共享同一电压。简单网络可逐步等效，复杂网络则用基尔霍夫方程更可靠；电表内阻、桥式电路和含源支路都会让直观串并联判断变得不够充分。桥式电路是混联中最典型的例子，某些节点电势相等时可出现平衡而无中间支路电流；这种结构常用于精密电阻测量。实际电路板几乎都是混联网络，局部等效与整体方程常需要交替使用。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "混联电路",
+          "url": "https://www.baidu.com/s?wd=%E6%B7%B7%E8%81%94%E7%94%B5%E8%B7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "混联电路",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B7%B7%E8%81%94%E7%94%B5%E8%B7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "compound circuit",
+          "url": "https://en.wikipedia.org/w/index.php?search=compound%20circuit"
+        }
       ]
     },
     {
@@ -1025,6 +2033,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "kirchhoffs law"
+      ],
+      "explanation_markdown": "基尔霍夫定律把集中参数电路中的电荷守恒和能量守恒写成两个代数规则。常写为 $\\sum I=0,\\quad \\sum U=0$，其中 $\\sum I$ 是节点电流代数和，$\\sum U$ 是闭合回路电压代数和。\n\n节点规则说明电荷不能在理想节点长期堆积，回路规则说明绕行一周电势升降相抵。它适合电路尺寸远小于信号波长的情况；在高频传输线、天线或强电磁辐射问题中，电压电流不再能完全用集中元件描述。使用它列方程时，支路电流方向可以先任意假设，解出负值只表示真实方向相反；这让复杂网络分析成为系统代数问题。它把复杂电路拆成节点和回路两个层面的约束，是电路方程组的骨架。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "基尔霍夫定律",
+          "url": "https://www.baidu.com/s?wd=%E5%9F%BA%E5%B0%94%E9%9C%8D%E5%A4%AB%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "基尔霍夫定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9F%BA%E5%B0%94%E9%9C%8D%E5%A4%AB%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kirchhoffs law",
+          "url": "https://en.wikipedia.org/w/index.php?search=kirchhoffs%20law"
+        }
       ]
     },
     {
@@ -1043,6 +2069,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "junction rule"
+      ],
+      "explanation_markdown": "节点电流定律说明任一电路节点处流入电流和流出电流的代数和为零。写作 $\\sum_k I_k=0$，其中 $I_k$ 是第 $k$ 条支路电流，正负号由选定的流入或流出方向决定。\n\n它来自电荷守恒：若节点没有持续储存电荷，就不能让电流只进不出或只出不进。含电容节点在瞬态中可以暂时积累电荷，但把电容支路电流一并计入后，节点电流定律仍保持成立。节点电流定律也解释了为什么理想导线分叉处没有电荷越积越多；一旦出现电容性储能，节点电压会随积累电荷改变，直到新的电流平衡建立。在交流相量电路中，它同样成立，只是相加的是带相位信息的复电流。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "节点电流定律",
+          "url": "https://www.baidu.com/s?wd=%E8%8A%82%E7%82%B9%E7%94%B5%E6%B5%81%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "节点电流定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%8A%82%E7%82%B9%E7%94%B5%E6%B5%81%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "junction rule",
+          "url": "https://en.wikipedia.org/w/index.php?search=junction%20rule"
+        }
       ]
     },
     {
@@ -1061,6 +2105,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "loop rule"
+      ],
+      "explanation_markdown": "回路电压定律说明沿任意闭合回路绕行一周，各段电势升降的代数和为零。写作 $\\sum_k U_k=0$，其中 $U_k$ 是第 $k$ 段元件或电源的电压升降，符号由绕行方向决定。\n\n它把电源升压和电阻、负载降压放在同一能量账本中。若有明显变化磁通穿过回路，会出现感应电动势，此时要把感应项加入回路方程；忽略它会误把非保守感生电场当成普通静电电势差。回路电压定律中的电压升降本质是单位电荷能量变化；沿回路走一圈回到同一点，静电势能必须回到原值，所以代数和为零。在相量法中，各元件电压也按复数相加，回路电压定律仍给出闭合约束。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "回路电压定律",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%9E%E8%B7%AF%E7%94%B5%E5%8E%8B%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "回路电压定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%9E%E8%B7%AF%E7%94%B5%E5%8E%8B%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "loop rule",
+          "url": "https://en.wikipedia.org/w/index.php?search=loop%20rule"
+        }
       ]
     },
     {
@@ -1079,6 +2141,24 @@
         "U=IR R=ρL/S",
         "伏安直线 比例系数",
         "ohms law for closed circuit"
+      ],
+      "explanation_markdown": "闭合电路欧姆定律把电源内阻和外电路电阻一起纳入直流回路。它写作 $I=\\mathcal E/(R+r)$，其中 $I$ 是电流，$\\mathcal E$ 是电动势，$R$ 是外电阻，$r$ 是电源内阻。\n\n外电路得到的端电压为 $U=IR$，通常小于电动势，因为内阻上有压降和热损耗。外电阻太小时电流会很大，电源内部发热也显著增加；这解释了短路危险和电源最大输出功率的限制。当外电阻等于内阻时，外电路获得的功率达到最大，但效率只有一半；这说明最大功率输出和高效率运行不是同一个目标。测量电源内阻时，常比较空载电压和带载端电压的下降量来反推。负载变化时端电压随之改变，是判断电源性能的直接依据。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "闭合电路欧姆定律",
+          "url": "https://www.baidu.com/s?wd=%E9%97%AD%E5%90%88%E7%94%B5%E8%B7%AF%E6%AC%A7%E5%A7%86%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "闭合电路欧姆定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%97%AD%E5%90%88%E7%94%B5%E8%B7%AF%E6%AC%A7%E5%A7%86%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ohms law for closed circuit",
+          "url": "https://en.wikipedia.org/w/index.php?search=ohms%20law%20for%20closed%20circuit"
+        }
       ]
     },
     {
@@ -1097,6 +2177,24 @@
         "Φ=BS cosθ μ",
         "线圈 磁滞 罗盘",
         "magnetic field"
+      ],
+      "explanation_markdown": "磁场由运动电荷、电流和磁性材料产生，会对运动电荷或载流导线施加横向作用。带电粒子受磁力部分写为 $\\mathbf F=q\\mathbf v\\times\\mathbf B$，其中 $q$ 是电荷量，$\\mathbf v$ 是速度，$\\mathbf B$ 是磁感应强度。\n\n叉乘说明磁力垂直于速度和磁场，因此常改变运动方向而不直接改变速率。磁场线总是闭合的，没有孤立起点或终点；从电机到粒子加速器，磁场都通过控制运动轨道和能量传递发挥作用。磁场与电场一起组成电磁场，二者在不同参考系中的分解会改变；这使磁现象不只是另一种静态力，而是运动电荷相对论结构的一部分。在磁场中静止电荷不受磁力，只有运动电荷或电流才显出磁场的力学效应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "磁场",
+          "url": "https://www.baidu.com/s?wd=%E7%A3%81%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "磁场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A3%81%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "magnetic field",
+          "url": "https://en.wikipedia.org/w/index.php?search=magnetic%20field"
+        }
       ]
     },
     {
@@ -1115,6 +2213,24 @@
         "E=kq/r² ∮E·dS=q/ε0",
         "场线 通量 闭合面",
         "magnetic flux density"
+      ],
+      "explanation_markdown": "磁感应强度用矢量 $\\mathbf B$ 定量表示磁场的强弱和方向，常通过运动电荷或载流导线受力来测定。洛伦兹力写为 $\\mathbf F=q\\mathbf v\\times\\mathbf B$，其中 $\\mathbf F$ 是磁力，$q$ 是电荷量，$\\mathbf v$ 是速度。\n\n$\\mathbf B$ 的单位是特斯拉，方向可由小磁针或右手定则确定。它不同于磁场强度 $\\mathbf H$：在材料内部，$\\mathbf B$ 还包含介质磁化的影响，因此同样外加电流在不同磁介质中可得到不同磁感应强度。在实验中，$\\mathbf B$ 常由霍尔探头、通电线圈受力或带电粒子轨道半径测定；不同测法强调同一场量对电荷运动的不同作用。带电粒子在匀强磁场中的圆周半径 $r=p/(qB)$，正是测量动量的常用关系。磁场越强，同速同电荷粒子的轨道弯曲越明显。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "磁感应强度",
+          "url": "https://www.baidu.com/s?wd=%E7%A3%81%E6%84%9F%E5%BA%94%E5%BC%BA%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "磁感应强度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A3%81%E6%84%9F%E5%BA%94%E5%BC%BA%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "magnetic flux density",
+          "url": "https://en.wikipedia.org/w/index.php?search=magnetic%20flux%20density"
+        }
       ]
     },
     {
@@ -1133,6 +2249,24 @@
         "Φ=BS cosθ μ",
         "线圈 磁滞 罗盘",
         "magnetic field line"
+      ],
+      "explanation_markdown": "磁感线是可视化磁场方向的曲线，每一点切线方向与磁感应强度方向一致。可写为 $d\\mathbf r\\parallel\\mathbf B$，其中 $d\\mathbf r$ 是曲线微元，$\\mathbf B$ 是磁感应强度，$\\parallel$ 表示平行。\n\n磁感线的疏密反映磁场强弱，方向常按右手定则或小磁针北极指向标注。与静电场线不同，磁感线不从单独磁荷出发或终止，而是形成闭合曲线；它们只是场图像，不是粒子必须沿着走的轨迹。磁感线在磁体外部从北极附近出来、进入南极附近，在磁体内部闭合返回；这条闭合性帮助区分磁偶极图像和电荷源图像。地磁场的磁感线为指南针提供方向参考，但地理北极和地磁极并不完全重合。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "磁感线",
+          "url": "https://www.baidu.com/s?wd=%E7%A3%81%E6%84%9F%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "磁感线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A3%81%E6%84%9F%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "magnetic field line",
+          "url": "https://en.wikipedia.org/w/index.php?search=magnetic%20field%20line"
+        }
       ]
     },
     {
@@ -1151,6 +2285,24 @@
         "E=kq/r² ∮E·dS=q/ε0",
         "场线 通量 闭合面",
         "magnetic flux"
+      ],
+      "explanation_markdown": "磁通量表示磁场穿过某个曲面的总量，关注的是磁场垂直于曲面的分量。定义为 $\\Phi_B=\\int_S\\mathbf B\\cdot d\\mathbf S$，其中 $\\Phi_B$ 是磁通量，$S$ 是曲面，$d\\mathbf S$ 是面积矢量。\n\n线圈中的磁通量随时间变化时会产生感应电动势，因此它是电磁感应中的关键变量。对闭合曲面，磁通量总和为零，反映自然界没有发现孤立磁单极；对开口曲面，磁通量会随曲面取向和边界选择而改变。磁通量不是磁场总强度的简单替代，同样强的磁场若平行于曲面，穿过通量可以为零；这也是线圈转动能改变感应电动势的原因。发电机线圈转动时，面积矢量相对磁场改变，磁通量随时间周期变化并产生交流电。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "磁通量",
+          "url": "https://www.baidu.com/s?wd=%E7%A3%81%E9%80%9A%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "磁通量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A3%81%E9%80%9A%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "magnetic flux",
+          "url": "https://en.wikipedia.org/w/index.php?search=magnetic%20flux"
+        }
       ]
     },
     {
@@ -1169,6 +2321,24 @@
         "Φ=BS cosθ μ",
         "线圈 磁滞 罗盘",
         "magnetic moment"
+      ],
+      "explanation_markdown": "磁矩描述小电流环、磁针或原子磁性强弱和取向，是磁场中类似电偶极矩的量。电流环的磁矩为 $\\boldsymbol\\mu=I\\mathbf S$，其中 $\\boldsymbol\\mu$ 是磁矩，$I$ 是电流，$\\mathbf S$ 是按右手定则取向的面积矢量。\n\n外磁场会给磁矩施加力矩，使它趋向与磁场同向排列，势能常与 $-\\boldsymbol\\mu\\cdot\\mathbf B$ 有关。线圈、电磁铁和磁性材料的宏观磁化，都可以看成大量微观磁矩取向平均后的结果。磁矩在均匀磁场中主要受到力矩而非净力，在非均匀磁场中才会被吸引或排斥；这一点解释了磁针转向和磁体被吸向强场区的区别。原子磁矩还与量子角动量有关，因此宏观磁性最终连接到微观电子结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "磁矩",
+          "url": "https://www.baidu.com/s?wd=%E7%A3%81%E7%9F%A9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "磁矩",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A3%81%E7%9F%A9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "magnetic moment",
+          "url": "https://en.wikipedia.org/w/index.php?search=magnetic%20moment"
+        }
       ]
     },
     {
@@ -1187,6 +2357,24 @@
         "E=kq/r² ∮E·dS=q/ε0",
         "场线 通量 闭合面",
         "magnetic dipole"
+      ],
+      "explanation_markdown": "磁偶极子是远场表现像小电流环或短条形磁体的磁性结构，是最基本的局部磁源模型。它的磁偶极矩可写为 $\\boldsymbol\\mu=I\\mathbf S$，其中 $I$ 是等效环流，$\\mathbf S$ 是面积矢量。\n\n磁偶极子没有真正分离的南北磁荷，所谓两极只是磁感线穿出和穿入的区域。距离远大于结构尺寸时，线圈、原子磁矩和小磁针都可用磁偶极子近似；近处场分布则会受具体形状影响。磁偶极子的远场随距离衰减比点电荷场更快，因此远处磁体影响很快变弱；但在近处，磁极形状和材料磁化会让场分布复杂得多。指南针在地磁场中转向，最简单的力学模型就是磁偶极子在外磁场中受力矩。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "磁偶极子",
+          "url": "https://www.baidu.com/s?wd=%E7%A3%81%E5%81%B6%E6%9E%81%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "磁偶极子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A3%81%E5%81%B6%E6%9E%81%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "magnetic dipole",
+          "url": "https://en.wikipedia.org/w/index.php?search=magnetic%20dipole"
+        }
       ]
     },
     {
@@ -1205,6 +2393,24 @@
         "F=q(E+v×B)",
         "圆轨道 质谱仪",
         "lorentz force"
+      ],
+      "explanation_markdown": "洛伦兹力给出电磁场对带电粒子的总作用，是电场力和磁场力的合成。公式为 $\\mathbf F=q(\\mathbf E+\\mathbf v\\times\\mathbf B)$，其中 $q$ 是电荷量，$\\mathbf E$ 是电场，$\\mathbf v$ 是粒子速度，$\\mathbf B$ 是磁场。\n\n电场部分可改变粒子动能，磁场部分垂直于速度，主要弯曲轨道。质谱仪用磁偏转区分荷质比，粒子加速器用电场加速、磁场约束；当速度接近光速时，运动方程还要同相对论动量配合使用。磁场项不做功的性质来自 $\\mathbf v\\times\\mathbf B$ 与速度垂直；因此回旋运动中速率可保持不变，而电场加速区才真正改变粒子动能。速度选择器利用电场力和磁场力相互抵消，只允许特定速度的粒子直线通过。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "洛伦兹力",
+          "url": "https://www.baidu.com/s?wd=%E6%B4%9B%E4%BC%A6%E5%85%B9%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "洛伦兹力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B4%9B%E4%BC%A6%E5%85%B9%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lorentz force",
+          "url": "https://en.wikipedia.org/w/index.php?search=lorentz%20force"
+        }
       ]
     },
     {
@@ -1223,6 +2429,24 @@
         "F=BILsinθ",
         "直导线 磁极 偏转",
         "ampere force"
+      ],
+      "explanation_markdown": "安培力是磁场对载流导线的作用力，可看作导线中许多运动电荷洛伦兹力的合结果。微元形式为 $d\\mathbf F=I\\,d\\boldsymbol\\ell\\times\\mathbf B$，其中 $I$ 是电流，$d\\boldsymbol\\ell$ 是沿电流方向的线元，$\\mathbf B$ 是磁场。\n\n受力方向由右手定则决定，大小取决于电流、有效长度和磁场垂直分量。电动机、扬声器和电流天平都利用安培力把电流和机械运动联系起来；若导线与磁场平行，叉乘为零，磁力也为零。安培力也解释两根平行载流导线间的相互作用：同向电流相吸、反向电流相斥。这个效应曾用于定义电流单位的力学标准。力的大小常写作 $F=BIL\\sin\\theta$，其中 $\\theta$ 是导线方向与磁场的夹角。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "安培力",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%89%E5%9F%B9%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "安培力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%89%E5%9F%B9%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ampere force",
+          "url": "https://en.wikipedia.org/w/index.php?search=ampere%20force"
+        }
       ]
     },
     {
@@ -1241,6 +2465,24 @@
         "F=BILsinθ",
         "直导线 磁极 偏转",
         "amperes law"
+      ],
+      "explanation_markdown": "安培定律在磁静力学中把磁场沿闭合回路的环量与穿过回路的电流相连。常写为 $\\oint\\mathbf B\\cdot d\\boldsymbol\\ell=\\mu_0 I_{\\rm in}$，其中 $\\mu_0$ 是真空磁导率，$I_{\\rm in}$ 是回路包围的电流。\n\n长直导线、环形螺线管和无限长螺线管有足够对称性时，它能直接给出磁场大小。若电场随时间变化，单纯传导电流不够，需要加入麦克斯韦位移电流项，才能保证电荷守恒并描述电磁波。安培回路的选择类似高斯面选择，关键是利用对称性让 $\\mathbf B$ 的切向分量容易积分；对缺少对称性的导线，毕奥萨伐尔定律通常更直接。磁场环量的方向约定与穿面电流方向由右手定则绑定，符号判断不能分开。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "安培定律",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%89%E5%9F%B9%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "安培定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%89%E5%9F%B9%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "amperes law",
+          "url": "https://en.wikipedia.org/w/index.php?search=amperes%20law"
+        }
       ]
     },
     {
@@ -1259,6 +2501,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "biot savart law"
+      ],
+      "explanation_markdown": "毕奥萨伐尔定律把每一小段电流对空间某点磁场的贡献写成矢量微元。公式为 $d\\mathbf B={\\mu_0\\over4\\pi}{I\\,d\\boldsymbol\\ell\\times\\hat{\\mathbf r}\\over r^2}$，其中 $I$ 是电流，$d\\boldsymbol\\ell$ 是电流元，$r$ 是到场点距离。\n\n它适合从具体导线形状出发求磁场，如圆环轴线、有限长直导线或任意弯曲线圈。方向由电流元与指向场点的单位矢量叉乘决定；若电流随时间快速变化，辐射和延迟效应会超出磁静力近似。它与库仑定律在形式上都呈平方反比，但磁场方向由叉乘决定，源还必须是电流元；这一点体现磁场同运动电荷的方向性联系。圆形线圈中心磁场、短导线附近磁场等结果，都可从这个微元积分推出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "毕奥萨伐尔定律",
+          "url": "https://www.baidu.com/s?wd=%E6%AF%95%E5%A5%A5%E8%90%A8%E4%BC%90%E5%B0%94%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "毕奥萨伐尔定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AF%95%E5%A5%A5%E8%90%A8%E4%BC%90%E5%B0%94%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "biot savart law",
+          "url": "https://en.wikipedia.org/w/index.php?search=biot%20savart%20law"
+        }
       ]
     },
     {
@@ -1277,6 +2537,24 @@
         "I=Δq/Δt ΣI=0 ΣU=0",
         "电流表 电压表 网络",
         "current carrying wire"
+      ],
+      "explanation_markdown": "载流导线中有电荷定向迁移，因此会在周围产生环绕导线的磁场，并在外磁场中受力。长直导线外磁场为 $B=\\mu_0 I/(2\\pi r)$，其中 $B$ 是磁感应强度，$I$ 是电流，$r$ 是到导线的距离。\n\n磁场方向按右手螺旋定则确定：拇指指向电流，四指环绕方向就是磁感线方向。有限长度导线、弯曲导线和邻近磁性材料都会改变场分布；两根平行载流导线还会因彼此磁场产生吸引或排斥。导线受到自身磁场约束和相邻导线磁力，强电流设备中这些力会造成机械应力；母线和线圈绕组设计必须同时考虑发热与电磁力。导线弯折处的磁场可看成各小段贡献的矢量和。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "载流导线",
+          "url": "https://www.baidu.com/s?wd=%E8%BD%BD%E6%B5%81%E5%AF%BC%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "载流导线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BD%BD%E6%B5%81%E5%AF%BC%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "current carrying wire",
+          "url": "https://en.wikipedia.org/w/index.php?search=current%20carrying%20wire"
+        }
       ]
     },
     {
@@ -1295,6 +2573,24 @@
         "I=Δq/Δt ΣI=0 ΣU=0",
         "电流表 电压表 网络",
         "current carrying coil"
+      ],
+      "explanation_markdown": "载流线圈把电流绕成闭合回路，使磁场在轴线附近集中，并呈现磁偶极特征。多匝线圈的磁矩为 $\\boldsymbol\\mu=N I\\mathbf S$，其中 $N$ 是匝数，$I$ 是电流，$\\mathbf S$ 是单匝面积矢量。\n\n增加匝数、电流或面积都会增强磁效应。线圈在外磁场中会受到力矩，构成电动机、检流计和磁传感器的基础；在变化电流下，线圈还会表现出电感，阻碍电流快速改变。线圈的法向由电流方向确定，反转电流会反转磁矩；这让线圈既能作为可控磁体，也能在磁场中根据力矩测量电流。在线圈中插入铁芯会增强磁场，但也引入磁滞和涡流损耗，交流下尤其明显。多个线圈组合还能形成近似均匀场或梯度场。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "载流线圈",
+          "url": "https://www.baidu.com/s?wd=%E8%BD%BD%E6%B5%81%E7%BA%BF%E5%9C%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "载流线圈",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BD%BD%E6%B5%81%E7%BA%BF%E5%9C%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "current carrying coil",
+          "url": "https://en.wikipedia.org/w/index.php?search=current%20carrying%20coil"
+        }
       ]
     },
     {
@@ -1313,6 +2609,24 @@
         "I=Δq/Δt ΣI=0 ΣU=0",
         "电流表 电压表 网络",
         "current carrying solenoid"
+      ],
+      "explanation_markdown": "通电螺线管由许多匝线圈沿轴向排列而成，长度足够大时内部磁场近似均匀。理想内部场为 $B\\approx\\mu_0 nI$，其中 $B$ 是磁感应强度，$n$ 是单位长度匝数，$I$ 是电流。\n\n内部磁感线近似平行，外部场较弱，整体效果类似一根可控条形磁体。加入铁芯会显著增强磁场，但也可能出现磁滞和饱和；螺线管边缘附近场线弯曲，不能继续使用无限长近似。螺线管外部场并非真正为零，只是在长螺线管近似下远小于内部场；有限长度装置中端部漏磁会影响吸力和邻近元件。改变电流方向会交换螺线管两端的等效南北极，这是电磁铁可控性的来源。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "通电螺线管",
+          "url": "https://www.baidu.com/s?wd=%E9%80%9A%E7%94%B5%E8%9E%BA%E7%BA%BF%E7%AE%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "通电螺线管",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%80%9A%E7%94%B5%E8%9E%BA%E7%BA%BF%E7%AE%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "current carrying solenoid",
+          "url": "https://en.wikipedia.org/w/index.php?search=current%20carrying%20solenoid"
+        }
       ]
     },
     {
@@ -1331,6 +2645,24 @@
         "Φ=BS cosθ μ",
         "线圈 磁滞 罗盘",
         "hall effect"
+      ],
+      "explanation_markdown": "霍尔效应发生在载流导体或半导体置于垂直磁场中时，载流子被磁力推向一侧并形成横向电压。简单关系为 $U_H=IB/(nqd)$，其中 $U_H$ 是霍尔电压，$I$ 是电流，$B$ 是磁场，$n$ 是载流子浓度，$q$ 是载流子电荷，$d$ 是厚度。\n\n横向电场最终平衡洛伦兹力，因此电压符号能判断载流子正负。霍尔效应常用于测量磁场、半导体载流子浓度和迁移率；在强磁场低温条件下，还会发展出量子霍尔效应。霍尔系数的符号和大小提供了材料内部载流子的线索；半导体中空穴作为正载流子，会给出与电子导电相反的霍尔电压符号。霍尔探头因此能把磁场强度转化为容易测量的电压。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "霍尔效应",
+          "url": "https://www.baidu.com/s?wd=%E9%9C%8D%E5%B0%94%E6%95%88%E5%BA%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "霍尔效应",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9C%8D%E5%B0%94%E6%95%88%E5%BA%94"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hall effect",
+          "url": "https://en.wikipedia.org/w/index.php?search=hall%20effect"
+        }
       ]
     },
     {
@@ -1349,6 +2681,24 @@
         "Φ=BS cosθ μ",
         "线圈 磁滞 罗盘",
         "magnetic medium"
+      ],
+      "explanation_markdown": "磁介质是放入磁场后会被磁化并改变磁场分布的材料。线性各向同性情形中写作 $\\mathbf B=\\mu\\mathbf H$，其中 $\\mathbf B$ 是磁感应强度，$\\mathbf H$ 是磁场强度，$\\mu$ 是磁导率。\n\n介质内部的原子磁矩、电子轨道和自旋会响应外场，使总磁场增强、减弱或出现滞后。空气近似真空，铁磁材料可大幅增强磁场；但铁磁体通常不满足简单线性关系，磁化还会依赖历史状态。在磁路分析中，磁介质有点类似电路中的导磁通道，高磁导率材料能把磁通集中到铁芯中；但磁路只是近似，不能替代完整场分布。磁介质边界上，磁感应强度法向分量和磁场强度切向分量满足不同连续条件。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "磁介质",
+          "url": "https://www.baidu.com/s?wd=%E7%A3%81%E4%BB%8B%E8%B4%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "磁介质",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A3%81%E4%BB%8B%E8%B4%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "magnetic medium",
+          "url": "https://en.wikipedia.org/w/index.php?search=magnetic%20medium"
+        }
       ]
     },
     {
@@ -1367,6 +2717,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "magnetization"
+      ],
+      "explanation_markdown": "磁化是材料内部大量微观磁矩在外磁场作用下产生取向偏置或磁畴重排的过程。磁化强度定义为 $\\mathbf M=d\\boldsymbol\\mu/dV$，其中 $\\mathbf M$ 是磁化强度，$d\\boldsymbol\\mu$ 是体积 $dV$ 内磁矩总和。\n\n它把原子尺度的磁矩平均成宏观场量，并通过束缚电流改变磁场。顺磁性来自磁矩略微顺外场排列，抗磁性来自感应反向响应，铁磁性则涉及磁畴自发有序；温度和外场历史会明显影响磁化结果。磁化强度与外场不一定同向，尤其在各向异性晶体和铁磁畴结构中更复杂；宏观材料曲线背后常隐藏着微观磁矩翻转和畴壁移动。退磁过程则是破坏这种有序排列，使宏观磁矩减小。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "磁化",
+          "url": "https://www.baidu.com/s?wd=%E7%A3%81%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "磁化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A3%81%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "magnetization",
+          "url": "https://en.wikipedia.org/w/index.php?search=magnetization"
+        }
       ]
     },
     {
@@ -1385,6 +2753,24 @@
         "Φ=BS cosθ μ",
         "线圈 磁滞 罗盘",
         "magnetic permeability"
+      ],
+      "explanation_markdown": "磁导率表征材料中磁感应强度与磁场强度之间的关系，反映材料对磁场的响应能力。常写为 $\\mu=\\mu_r\\mu_0$，其中 $\\mu$ 是磁导率，$\\mu_r$ 是相对磁导率，$\\mu_0$ 是真空磁导率。\n\n磁导率大的材料能让同样线圈电流产生更强磁感应强度，因此铁芯常用于电磁铁和变压器。它不像几何常数那样固定；铁磁材料会随外场强度发生饱和，并因磁滞使同一磁场强度对应不同的磁感应强度。磁导率还决定电感器和变压器的尺寸与性能；高磁导率可减少所需匝数，但磁芯饱和后增益迅速下降，线圈电流再增大也难以继续增强磁通。磁芯气隙会显著改变等效磁导率和储能位置。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "磁导率",
+          "url": "https://www.baidu.com/s?wd=%E7%A3%81%E5%AF%BC%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "磁导率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A3%81%E5%AF%BC%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "magnetic permeability",
+          "url": "https://en.wikipedia.org/w/index.php?search=magnetic%20permeability"
+        }
       ]
     },
     {
@@ -1403,6 +2789,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "relative permeability"
+      ],
+      "explanation_markdown": "相对磁导率把材料磁导率与真空磁导率相比，用无量纲数表示材料增强或削弱磁场的能力。定义为 $\\mu_r=\\mu/\\mu_0$，其中 $\\mu_r$ 是相对磁导率，$\\mu$ 是材料磁导率，$\\mu_0$ 是真空磁导率。\n\n$\\mu_r$ 略大于一常见于顺磁材料，略小于一对应抗磁材料，铁磁材料可远大于一。工程上选铁芯材料时非常关注它；不过强场、温度变化和磁化历史会让实际相对磁导率不再是单一常数。相对磁导率接近一的材料在很多计算中可近似当作真空处理；铁磁材料数值巨大时，磁场会被强烈引入材料内部，边界条件也随之改变。材料手册给出的数值通常对应特定频率和磁场范围。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相对磁导率",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E5%AF%B9%E7%A3%81%E5%AF%BC%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相对磁导率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E5%AF%B9%E7%A3%81%E5%AF%BC%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "relative permeability",
+          "url": "https://en.wikipedia.org/w/index.php?search=relative%20permeability"
+        }
       ]
     },
     {
@@ -1421,6 +2825,24 @@
         "Φ=BS cosθ μ",
         "线圈 磁滞 罗盘",
         "paramagnetism"
+      ],
+      "explanation_markdown": "顺磁性是材料在外磁场中产生与外场同向的弱磁化，通常来自未成对电子磁矩的取向偏置。线性近似写为 $\\mathbf M=\\chi_m\\mathbf H,\\ \\chi_m>0$，其中 $\\mathbf M$ 是磁化强度，$\\chi_m$ 是磁化率，$\\mathbf H$ 是磁场强度。\n\n顺磁材料会被强磁场轻微吸引，撤去外场后热运动使磁矩重新无序，剩磁通常很小。温度升高会削弱取向排列，因此许多顺磁体近似遵从居里定律；它与铁磁性的强自发磁化不同。顺磁响应一般没有磁滞，外场撤去后不会保留明显磁性；氧气的顺磁性可以用强磁场吸引液氧的实验直观看到。顺磁性通常比铁磁性弱得多，需要强磁场或灵敏天平才能清楚观察。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "顺磁性",
+          "url": "https://www.baidu.com/s?wd=%E9%A1%BA%E7%A3%81%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "顺磁性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%A1%BA%E7%A3%81%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "paramagnetism",
+          "url": "https://en.wikipedia.org/w/index.php?search=paramagnetism"
+        }
       ]
     },
     {
@@ -1439,6 +2861,24 @@
         "Φ=BS cosθ μ",
         "线圈 磁滞 罗盘",
         "diamagnetism"
+      ],
+      "explanation_markdown": "抗磁性是材料在外磁场中产生与外场反向的弱磁化，几乎所有物质都有这种基本响应。线性近似写作 $\\mathbf M=\\chi_m\\mathbf H,\\ \\chi_m<0$，其中 $\\mathbf M$ 是磁化强度，$\\chi_m$ 是磁化率，$\\mathbf H$ 是磁场强度。\n\n抗磁性可理解为外场改变电子运动后产生反抗外场的感应磁矩，因此材料会被强磁场轻微排斥。它通常很弱，但在超导体中表现为完全抗磁的迈斯纳效应；普通抗磁体撤去外场后不会保留磁化。抗磁响应方向总是削弱外加磁场，因此与楞次定律的反抗变化图像有相通之处；石墨、铋和水的抗磁性虽弱，却可在强磁场中观察到。磁悬浮演示中，强抗磁响应可抵消一部分重力效果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "抗磁性",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%97%E7%A3%81%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "抗磁性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%97%E7%A3%81%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "diamagnetism",
+          "url": "https://en.wikipedia.org/w/index.php?search=diamagnetism"
+        }
       ]
     },
     {
@@ -1457,6 +2897,24 @@
         "Φ=BS cosθ μ",
         "线圈 磁滞 罗盘",
         "ferromagnetism"
+      ],
+      "explanation_markdown": "铁磁性表现为材料内部微观磁矩可自发形成有序磁畴，因而能产生强磁化。磁介质中常写 $\\mathbf B=\\mu_0(\\mathbf H+\\mathbf M)$，其中 $\\mathbf B$ 是磁感应强度，$\\mathbf H$ 是磁场强度，$\\mathbf M$ 是磁化强度。\n\n铁、钴、镍等材料可被外场强烈磁化，撤去外场后还可能保留剩磁，永磁体和变压器铁芯都利用这一性质。温度超过居里点时，热运动破坏磁畴有序，铁磁性会转变为顺磁性。铁磁性最显著的特征不是单纯磁导率大，而是存在畴结构、剩磁和磁滞；这些特征让同一种材料可被制成软磁铁芯或硬磁永磁体。磁畴在外场中长大和转向，是铁磁体磁化曲线非线性的主要微观原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "铁磁性",
+          "url": "https://www.baidu.com/s?wd=%E9%93%81%E7%A3%81%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "铁磁性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%93%81%E7%A3%81%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ferromagnetism",
+          "url": "https://en.wikipedia.org/w/index.php?search=ferromagnetism"
+        }
       ]
     },
     {
@@ -1475,6 +2933,24 @@
         "Φ=BS cosθ μ",
         "线圈 相关量 罗盘",
         "hysteresis"
+      ],
+      "explanation_markdown": "磁滞指铁磁材料的磁化状态落后于外加磁场变化，当前磁感应强度不仅取决于当前磁场强度，还取决于过去经历。每周期损耗可写为 $w=\\oint H\\,dB$，其中 $w$ 是单位体积能量损耗，$H$ 是磁场强度，$B$ 是磁感应强度。\n\n磁滞体现磁畴翻转需要克服内部阻碍，因此外场往返变化时会耗散能量。变压器铁芯希望磁滞损耗小，磁记录和永磁材料则利用剩磁和矫顽力来保存磁化状态。磁滞曲线中的能量损耗最终表现为材料发热；交流电机和变压器在高频工作时必须控制这一损耗，否则效率和温升都会变差。回线越宽，改变磁化方向所需外场也通常越大。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "磁滞",
+          "url": "https://www.baidu.com/s?wd=%E7%A3%81%E6%BB%9E%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "磁滞",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A3%81%E6%BB%9E"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hysteresis",
+          "url": "https://en.wikipedia.org/w/index.php?search=hysteresis"
+        }
       ]
     },
     {
@@ -1493,6 +2969,24 @@
         "Φ=BS cosθ μ",
         "线圈 磁滞 罗盘",
         "hysteresis loop"
+      ],
+      "explanation_markdown": "磁滞回线是在周期改变外磁场时，铁磁材料的 $B$-$H$ 关系形成的闭合曲线。回线面积对应 $w=\\oint H\\,dB$，其中 $w$ 是单位体积每周期损耗，$H$ 是磁场强度，$B$ 是磁感应强度。\n\n曲线上可读出剩磁、矫顽力和饱和磁化等材料特征。软磁材料回线窄，适合交流铁芯以减少损耗；硬磁材料回线宽，能长时间保持磁化，适合永磁体和磁记录介质。回线的形状还能反映材料是否容易被重新磁化；窄而陡的回线适合快速响应，宽而稳定的回线适合保存信息或提供稳定磁场。回线还可用于比较材料矫顽力，矫顽力大表示撤销磁化更困难。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "磁滞回线",
+          "url": "https://www.baidu.com/s?wd=%E7%A3%81%E6%BB%9E%E5%9B%9E%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "磁滞回线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A3%81%E6%BB%9E%E5%9B%9E%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hysteresis loop",
+          "url": "https://en.wikipedia.org/w/index.php?search=hysteresis%20loop"
+        }
       ]
     },
     {
@@ -1511,6 +3005,24 @@
         "ε=-dΦ/dt ε=-L dI/dt",
         "线圈 磁铁 开关",
         "electromagnetic induction"
+      ],
+      "explanation_markdown": "电磁感应是磁通量变化在回路中产生电动势或电流的现象，揭示变化磁场能够驱动电荷。基本关系为 $\\mathcal E=-d\\Phi_B/dt$，其中 $\\mathcal E$ 是感应电动势，$\\Phi_B$ 是穿过回路的磁通量，$t$ 是时间。\n\n负号表示感应效应的方向总是反抗引起磁通变化的原因，这正是能量守恒的要求。发电机通过机械功改变磁通，变压器通过交流电流改变铁芯磁通，二者都把磁通变化转化为电路中的能量转移。电磁感应强调变化，而非磁场本身；一个很强但恒定的磁场不会在静止闭合回路中产生持续感应电流，只有磁通随时间改变才会驱动电荷。线圈面积、取向和磁场强度都能通过磁通量进入感应过程。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电磁感应",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E7%A3%81%E6%84%9F%E5%BA%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电磁感应",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E7%A3%81%E6%84%9F%E5%BA%94"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electromagnetic induction",
+          "url": "https://en.wikipedia.org/w/index.php?search=electromagnetic%20induction"
+        }
       ]
     },
     {
@@ -1529,6 +3041,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "induced electromotive force"
+      ],
+      "explanation_markdown": "感应电动势由磁通量随时间变化或导体切割磁感线产生，不需要化学电源也能驱动电荷。它写为 $\\mathcal E=-d\\Phi_B/dt$，其中 $\\mathcal E$ 是感应电动势，$\\Phi_B$ 是磁通量，$t$ 是时间。\n\n开路时可以有感应电动势而没有持续电流，闭合回路后电流大小还取决于总电阻。动生电动势的能量来自外力推动导体做功，变压感应则来自变化磁场的能量交换；方向由楞次定律确定。感应电动势可以分布在整个回路上，并不一定集中在某个电源元件内部；这使感应电路中的“电压位置”比普通电池回路更依赖场分布。导体棒在匀强磁场中运动时，动生电动势常写作 $\\mathcal E=Blv$。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "感应电动势",
+          "url": "https://www.baidu.com/s?wd=%E6%84%9F%E5%BA%94%E7%94%B5%E5%8A%A8%E5%8A%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "感应电动势",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%84%9F%E5%BA%94%E7%94%B5%E5%8A%A8%E5%8A%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "induced electromotive force",
+          "url": "https://en.wikipedia.org/w/index.php?search=induced%20electromotive%20force"
+        }
       ]
     },
     {
@@ -1547,6 +3077,24 @@
         "I=Δq/Δt ΣI=0 ΣU=0",
         "电流表 电压表 网络",
         "induced current"
+      ],
+      "explanation_markdown": "感应电流是感应电动势在闭合回路中驱动出的电流。简单闭合回路中 $I_{\\rm ind}=\\mathcal E/R$，其中 $I_{\\rm ind}$ 是感应电流，$\\mathcal E$ 是感应电动势，$R$ 是回路电阻。\n\n它的方向不是任意的，而是使自身磁场反抗原磁通变化。磁铁靠近线圈、导体棒切割磁感线和交流变压器中都能出现感应电流；若回路不闭合，电荷只能短暂重排形成端电压，不能维持宏观环流。感应电流产生的磁场会带来机械阻力，例如金属片进入磁场时受到制动；这说明感应电流的热量和机械能损失都有明确能量来源。感应电流的大小受回路电阻限制，方向受磁通变化趋势限制，二者不能混为一谈。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "感应电流",
+          "url": "https://www.baidu.com/s?wd=%E6%84%9F%E5%BA%94%E7%94%B5%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "感应电流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%84%9F%E5%BA%94%E7%94%B5%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "induced current",
+          "url": "https://en.wikipedia.org/w/index.php?search=induced%20current"
+        }
       ]
     },
     {
@@ -1565,6 +3113,24 @@
         "ε=-dΦ/dt ε=-L dI/dt",
         "线圈 磁铁 开关",
         "faradays law of electromagnetic induction"
+      ],
+      "explanation_markdown": "法拉第电磁感应定律定量说明感应电动势等于磁通量变化率的负值。多匝线圈中写为 $\\mathcal E=-N\\,d\\Phi_B/dt$，其中 $N$ 是匝数，$\\Phi_B$ 是每匝磁通量，$\\mathcal E$ 是总感应电动势。\n\n匝数越多、磁通变化越快，感应电动势越大。定律统一了导体运动切割磁感线和静止回路中磁场变化两种情形；真正关键的不是磁场大小本身，而是与回路相联的磁通是否随时间改变。线圈匝数进入公式，是因为每一匝都链接近似相同磁通并贡献电动势；绕向一致时电动势相加，绕向相反则可能部分抵消。实际线圈中每匝磁通不完全相同，工程上常用磁通链来更准确表述。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "法拉第电磁感应定律",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%95%E6%8B%89%E7%AC%AC%E7%94%B5%E7%A3%81%E6%84%9F%E5%BA%94%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "法拉第电磁感应定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%95%E6%8B%89%E7%AC%AC%E7%94%B5%E7%A3%81%E6%84%9F%E5%BA%94%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "faradays law of electromagnetic induction",
+          "url": "https://en.wikipedia.org/w/index.php?search=faradays%20law%20of%20electromagnetic%20induction"
+        }
       ]
     },
     {
@@ -1583,6 +3149,24 @@
         "ε=-dΦ/dt ε=-L dI/dt",
         "线圈 磁铁 开关 变压器",
         "lenzs law"
+      ],
+      "explanation_markdown": "楞次定律规定感应电流或感应电动势的方向，使感应效应总是反抗引起磁通变化的原因。它体现在 $\\mathcal E=-d\\Phi_B/dt$ 的负号中，其中 $\\Phi_B$ 是磁通量，$\\mathcal E$ 是感应电动势。\n\n磁铁靠近线圈时，线圈产生的磁场会阻碍靠近；磁铁远离时，线圈又会试图维持原磁通。若方向相反，系统会无代价地增强变化并违反能量守恒。楞次定律给方向，法拉第定律给大小，二者合在一起才完整。楞次定律中的“反抗”指反抗磁通变化，而不一定反抗物体运动本身；在不同几何情形下，受力、感应电流方向和磁场方向需要分开判定。它给出方向判断的物理原则，而不是另一个独立能量来源。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "楞次定律",
+          "url": "https://www.baidu.com/s?wd=%E6%A5%9E%E6%AC%A1%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "楞次定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A5%9E%E6%AC%A1%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lenzs law",
+          "url": "https://en.wikipedia.org/w/index.php?search=lenzs%20law"
+        }
       ]
     },
     {
@@ -1601,6 +3185,24 @@
         "ε=-L dI/dt Z",
         "相位差 瞬态电流",
         "self inductance"
+      ],
+      "explanation_markdown": "自感是同一回路中电流变化引起自身磁通变化，并产生反向电动势的现象。自感电动势写为 $\\mathcal E_L=-L\\,dI/dt$，其中 $\\mathcal E_L$ 是自感电动势，$L$ 是自感系数，$I$ 是电流。\n\n自感使电流不能突变，线圈会在电流建立时储存磁场能量，在电流减小时释放能量。匝数越多、磁芯磁导率越高、磁通耦合越强，自感通常越大；断开含大电感的电路时容易出现高压火花。自感系数只由回路几何和介质近似决定，与瞬时电流大小无关，在线性磁介质中尤其如此；铁芯饱和时，这个线性假设会被破坏。继电器线圈断电时常并联续流二极管，目的就是给自感电流提供安全通道。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自感",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E6%84%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自感",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E6%84%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "self inductance",
+          "url": "https://en.wikipedia.org/w/index.php?search=self%20inductance"
+        }
       ]
     },
     {
@@ -1619,6 +3221,24 @@
         "ε=-L dI/dt Z",
         "相位差 瞬态电流",
         "mutual inductance"
+      ],
+      "explanation_markdown": "互感是一个回路电流变化通过磁场在另一个回路中产生电动势的现象。可写为 $\\mathcal E_2=-M\\,dI_1/dt$，其中 $\\mathcal E_2$ 是第二回路感应电动势，$M$ 是互感系数，$I_1$ 是第一回路电流。\n\n两个线圈靠得越近、共用磁芯越好、漏磁越少，互感越强。变压器依靠互感把交流能量从原线圈传到副线圈；若第一回路电流恒定不变，磁通不再变化，就不会在第二回路中维持感应电动势。互感有符号约定，取决于两线圈绕向和端点标记；变压器同名端判断的本质，就是确定感应电压相位是同向还是反向。无线充电中，发射线圈和接收线圈之间的耦合强弱可用互感大小来刻画。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "互感",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%92%E6%84%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "互感",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%92%E6%84%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mutual inductance",
+          "url": "https://en.wikipedia.org/w/index.php?search=mutual%20inductance"
+        }
       ]
     },
     {
@@ -1637,6 +3257,24 @@
         "ε=-L dI/dt Z",
         "相位差 瞬态电流",
         "inductance"
+      ],
+      "explanation_markdown": "电感衡量回路把电流转化为磁通并反抗电流变化的能力。磁通链常写为 $\\Psi=LI$，其中 $\\Psi$ 是与回路相联的磁通链，$L$ 是电感，$I$ 是电流。\n\n电感越大，同样电流产生的磁场能量越多，电流变化时反电动势越强。直流稳态中理想电感近似短路，交流中则表现为随频率增大的感抗；实际电感还包含绕线电阻、磁芯损耗和寄生电容。电感储能使开关电路中电流呈连续变化；这与电容两端电压连续相对应，构成分析暂态电路时最重要的两个约束。电感的单位亨利等于韦伯每安，直接对应电流产生磁通链的能力。磁芯材料和绕组方式会显著改变同一线圈的电感值。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电感",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E6%84%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电感",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E6%84%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inductance",
+          "url": "https://en.wikipedia.org/w/index.php?search=inductance"
+        }
       ]
     },
     {
@@ -1655,6 +3293,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "inductor"
+      ],
+      "explanation_markdown": "电感器是利用线圈和磁芯提供电感的电路元件，能够储存磁场能量并限制电流快速变化。端电压满足 $U_L=L\\,dI/dt$，其中 $U_L$ 是电感器电压，$L$ 是电感，$I$ 是电流。\n\n电流上升时，电感器吸收能量建立磁场；电流下降时，它释放能量并维持电流。滤波器、开关电源和振荡电路都依赖这种特性。真实器件有饱和电流和品质因数限制，高频下寄生参数会改变表现。电感器常与二极管或电容配合，给电流提供释放通道或平滑路径；没有合适通道时，自感电动势会升高到击穿绝缘或产生电弧。储能型电感还要防止磁芯饱和，否则电感会突然下降。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电感器",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E6%84%9F%E5%99%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电感器",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E6%84%9F%E5%99%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inductor",
+          "url": "https://en.wikipedia.org/w/index.php?search=inductor"
+        }
       ]
     },
     {
@@ -1673,6 +3329,24 @@
         "Φ=BS cosθ μ",
         "线圈 磁滞 罗盘",
         "energy of magnetic field"
+      ],
+      "explanation_markdown": "磁场能量是建立磁场时储存在空间或电感器中的能量。理想电感中的能量为 $U_B={1\\over2}LI^2$，其中 $U_B$ 是磁场能量，$L$ 是电感，$I$ 是电流。\n\n电流越大，储能按平方增长；断开电感电路时，这部分能量必须通过火花、二极管回路或其他负载释放。在线圈模型中能量看似在元件里，场论图像则把能量分布在磁场所在空间，适合分析电磁波和连续介质。磁场能量还能用能量密度 $B^2/(2\\mu)$ 描述，这说明能量分布在场所在空间；在线圈气隙中，能量密度往往决定电磁吸力大小。磁场能量的释放有时会形成高压脉冲，点火线圈和开关电源都利用这一点。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "磁场能量",
+          "url": "https://www.baidu.com/s?wd=%E7%A3%81%E5%9C%BA%E8%83%BD%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "磁场能量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A3%81%E5%9C%BA%E8%83%BD%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "energy of magnetic field",
+          "url": "https://en.wikipedia.org/w/index.php?search=energy%20of%20magnetic%20field"
+        }
       ]
     },
     {
@@ -1691,6 +3365,24 @@
         "I=Δq/Δt ΣI=0 ΣU=0",
         "电流表 电压表 网络",
         "eddy current"
+      ],
+      "explanation_markdown": "涡电流是变化磁场在块状导体内部激发出的闭合感应电流，电流路径像旋涡一样在材料中回转。感生电场满足 $\\nabla\\times\\mathbf E=-\\partial\\mathbf B/\\partial t$，其中 $\\mathbf E$ 是感生电场，$\\mathbf B$ 是磁场。\n\n涡电流会产生焦耳热和反向磁场，可用于电磁制动、感应加热和金属探测。变压器铁芯中它会造成损耗，因此常把铁芯做成薄片并彼此绝缘，以切断大范围环流路径。涡电流方向同样遵守楞次定律，产生的磁场阻碍原磁通变化；电磁炉利用它加热金属锅底，而电表阻尼则利用它平滑指针运动。涡电流大小还与材料电导率、厚度和磁场变化频率有关，因此可通过结构设计控制。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "涡电流",
+          "url": "https://www.baidu.com/s?wd=%E6%B6%A1%E7%94%B5%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "涡电流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B6%A1%E7%94%B5%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "eddy current",
+          "url": "https://en.wikipedia.org/w/index.php?search=eddy%20current"
+        }
       ]
     },
     {
@@ -1709,6 +3401,24 @@
         "I=Δq/Δt ΣI=0 ΣU=0",
         "电流表 电压表 网络",
         "displacement current"
+      ],
+      "explanation_markdown": "位移电流是麦克斯韦为变化电场引入的等效电流项，使磁场环路定律在电容器等情形中保持连续。它写为 $I_D=\\varepsilon_0\\,d\\Phi_E/dt$，其中 $I_D$ 是位移电流，$\\Phi_E$ 是电通量，$\\varepsilon_0$ 是真空介电常数。\n\n它不是自由电荷穿过真空间隙的传导电流，却能像电流一样产生磁场。电容器极板间没有电子跨越介质，但变化电场让回路磁场保持一致；电磁波能够脱离导线传播，也依赖这一项。位移电流让闭合曲面的电流连续性不依赖所选曲面，例如电容器回路中，穿过导线截面的是传导电流，穿过极板间隙的是位移电流。它的引入让电磁理论在电容间隙处不再出现环路矛盾。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "位移电流",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%8D%E7%A7%BB%E7%94%B5%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "位移电流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%8D%E7%A7%BB%E7%94%B5%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "displacement current",
+          "url": "https://en.wikipedia.org/w/index.php?search=displacement%20current"
+        }
       ]
     },
     {
@@ -1727,6 +3437,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "maxwell equations"
+      ],
+      "explanation_markdown": "麦克斯韦方程组统一描述电场、磁场、电荷和电流之间的关系，是经典电磁学的核心。含位移电流的安培方程为 $\\nabla\\times\\mathbf B=\\mu_0\\mathbf J+\\mu_0\\varepsilon_0\\partial\\mathbf E/\\partial t$，其中 $\\mathbf B$ 是磁场，$\\mathbf J$ 是电流密度。\n\n四个方程分别说明电荷产生电场、没有磁单极、变化磁场产生电场、传导电流和变化电场产生磁场。它们预言电磁波速度等于光速，把光学、电路和场的传播联系成同一套理论。从这组方程可推出波动方程，并得到真空波速由 $\\mu_0$ 和 $\\varepsilon_0$ 决定；光速的出现说明光本身就是一种电磁现象。边界条件与方程同样重要，它们决定电磁波在界面上的反射、折射和导体屏蔽。四个方程相互配合，缺少任何一条都会破坏统一图像。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "麦克斯韦方程组",
+          "url": "https://www.baidu.com/s?wd=%E9%BA%A6%E5%85%8B%E6%96%AF%E9%9F%A6%E6%96%B9%E7%A8%8B%E7%BB%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "麦克斯韦方程组",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%BA%A6%E5%85%8B%E6%96%AF%E9%9F%A6%E6%96%B9%E7%A8%8B%E7%BB%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "maxwell equations",
+          "url": "https://en.wikipedia.org/w/index.php?search=maxwell%20equations"
+        }
       ]
     },
     {
@@ -1745,6 +3473,24 @@
         "Φ=BS cosθ μ",
         "线圈 磁滞 罗盘",
         "electromagnetic field"
+      ],
+      "explanation_markdown": "电磁场把电场和磁场作为同一个物理对象的两个方面，带电粒子在其中受到洛伦兹力。作用写为 $\\mathbf F=q(\\mathbf E+\\mathbf v\\times\\mathbf B)$，其中 $q$ 是电荷量，$\\mathbf E$ 是电场，$\\mathbf v$ 是速度，$\\mathbf B$ 是磁场。\n\n在一个参考系中看似纯电场的情形，在另一个运动参考系中可能同时出现磁场。电磁场能携带能量和动量，并通过波的形式在空间传播；静态近似可分开讨论电和磁，高速或时变情形则必须整体看待。电磁场的能量流可由坡印廷矢量描述，说明能量常在导线周围的场中传输，而不只是沿金属内部流动；这能深化对电路功率的理解。场的观点还能自然处理真空中无导线的能量传输。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电磁场",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E7%A3%81%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电磁场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E7%A3%81%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electromagnetic field",
+          "url": "https://en.wikipedia.org/w/index.php?search=electromagnetic%20field"
+        }
       ]
     },
     {
@@ -1763,6 +3509,24 @@
         "Φ=BS cosθ μ",
         "线圈 磁滞 罗盘",
         "electromagnetic wave"
+      ],
+      "explanation_markdown": "电磁波是变化电场和变化磁场相互激发并向外传播的波，光、无线电波和 X 射线都属于它。真空速度为 $c=1/\\sqrt{\\mu_0\\varepsilon_0}$，其中 $c$ 是光速，$\\mu_0$ 是真空磁导率，$\\varepsilon_0$ 是真空介电常数。\n\n在真空中，电场、磁场和传播方向两两垂直，并把能量带离源区。不同频率决定不同波段和应用；在介质中，传播速度、吸收和色散会受材料电磁响应影响，所以电磁波不只是“振动的场”，也是能量传输方式。电磁波谱跨越无线电、微波、红外、可见光、紫外、X 射线和伽马射线，差别主要来自频率；产生机制和探测方法随频率而改变。天线把电路中的高频振荡转化为向外传播的电磁波，接收天线则完成相反过程。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电磁波",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E7%A3%81%E6%B3%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电磁波",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E7%A3%81%E6%B3%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electromagnetic wave",
+          "url": "https://en.wikipedia.org/w/index.php?search=electromagnetic%20wave"
+        }
       ]
     },
     {
@@ -1781,6 +3545,24 @@
         "Φ=BS cosθ μ",
         "线圈 磁滞 罗盘",
         "electromagnetic oscillation"
+      ],
+      "explanation_markdown": "电磁振荡是电容器电场能和电感器磁场能之间周期性交换的过程。理想 LC 回路的固有角频率为 $\\omega_0=1/\\sqrt{LC}$，其中 $\\omega_0$ 是固有角频率，$L$ 是电感，$C$ 是电容。\n\n电容放电时电场能减少，电感电流增大并建立磁场；随后磁场能又把电容反向充电。理想情况下总能量守恒，真实电路中电阻、辐射和介质损耗会让振荡衰减，除非外部持续补充能量。电磁振荡中的电荷、电流、电场和磁场相位不同：电容电压最大时电流为零，电流最大时磁场能最大，这种相位关系决定振荡图像。实际振荡器需要放大器补偿损耗，并用反馈条件选择稳定的振荡频率和相位。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电磁振荡",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E7%A3%81%E6%8C%AF%E8%8D%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电磁振荡",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E7%A3%81%E6%8C%AF%E8%8D%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electromagnetic oscillation",
+          "url": "https://en.wikipedia.org/w/index.php?search=electromagnetic%20oscillation"
+        }
       ]
     },
     {
@@ -1799,6 +3581,24 @@
         "I=Δq/Δt ΣI=0 ΣU=0",
         "电流表 电压表 网络",
         "oscillating circuit"
+      ],
+      "explanation_markdown": "振荡电路由电感、电容和可能的电阻、放大器组成，能够产生或选择特定频率的电磁振荡。理想 LC 频率满足 $\\omega_0=1/\\sqrt{LC}$，其中 $\\omega_0$ 是固有角频率，$L$ 是电感，$C$ 是电容。\n\n它是无线电调谐、振荡器和滤波器的基本模型。电阻会带来阻尼，使振荡逐渐衰减；加入外部驱动时，频率接近固有频率会产生强响应。实际电路还会受寄生电容、电感和元件品质因数影响。振荡电路可把连续频率信号中接近固有频率的部分选出来；收音机调谐旋钮改变电容或电感，本质上就是移动电路的共振频率。品质因数 $Q$ 描述振荡电路储能相对损耗的大小，直接影响选择性和带宽。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "振荡电路",
+          "url": "https://www.baidu.com/s?wd=%E6%8C%AF%E8%8D%A1%E7%94%B5%E8%B7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "振荡电路",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8C%AF%E8%8D%A1%E7%94%B5%E8%B7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "oscillating circuit",
+          "url": "https://en.wikipedia.org/w/index.php?search=oscillating%20circuit"
+        }
       ]
     },
     {
@@ -1817,6 +3617,24 @@
         "I=Δq/Δt ΣI=0 ΣU=0",
         "电流表 电压表 网络",
         "alternating current circuit"
+      ],
+      "explanation_markdown": "交流电路处理电压和电流随时间周期变化的情形，核心不只在大小，还在频率和相位。正弦稳态中常用相量关系 $Z=\\tilde U/\\tilde I$，其中 $Z$ 是阻抗，$\\tilde U$ 是电压相量，$\\tilde I$ 是电流相量。\n\n电阻消耗能量，电容和电感则让能量在电场或磁场中往返储存，因此电压与电流可能不同相。相量法把微分方程转成代数关系，适合单一频率；非正弦信号通常要分解成多个频率分别分析。交流电路的端口量常用有效值和相量表示，但瞬时能量仍随时间流动；含储能元件时，电源和元件之间会出现周期性返送能量。电力系统中还要关注三相交流，它用相位相差三分之一周期的电压提高传输效率。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "交流电路",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%A4%E6%B5%81%E7%94%B5%E8%B7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "交流电路",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%A4%E6%B5%81%E7%94%B5%E8%B7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "alternating current circuit",
+          "url": "https://en.wikipedia.org/w/index.php?search=alternating%20current%20circuit"
+        }
       ]
     },
     {
@@ -1835,6 +3653,24 @@
         "ε=-L dI/dt Z",
         "相位差 瞬态电流",
         "impedance"
+      ],
+      "explanation_markdown": "阻抗是交流电路中电压相量与电流相量的比值，综合表示电阻、感抗和容抗的作用。常写为 $Z=R+i(X_L-X_C)$，其中 $Z$ 是复阻抗，$R$ 是电阻，$X_L$ 是感抗，$X_C$ 是容抗，$i$ 是虚数单位。\n\n实部对应能量耗散，虚部对应电场或磁场能量的周期交换。阻抗随频率变化，因此同一电路可对低频、高频呈现完全不同响应；滤波器、传输线和扬声器分频都依赖这种频率选择性。阻抗匹配可以减少信号反射并提高功率传输，尤其在射频和传输线中重要；这时阻抗不只是元件属性，也是波传播边界条件的一部分。复阻抗的幅值决定电流大小，辐角决定相位差，因此一个复数同时包含两类信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阻抗",
+          "url": "https://www.baidu.com/s?wd=%E9%98%BB%E6%8A%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阻抗",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%BB%E6%8A%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "impedance",
+          "url": "https://en.wikipedia.org/w/index.php?search=impedance"
+        }
       ]
     },
     {
@@ -1853,6 +3689,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "capacitive reactance"
+      ],
+      "explanation_markdown": "容抗是电容在交流电路中表现出的等效阻碍，来自电容两端电压不能突变。它的大小为 $X_C=1/(\\omega C)$，其中 $X_C$ 是容抗，$\\omega$ 是角频率，$C$ 是电容。\n\n频率越高，电容越容易周期性充放电，容抗越小；频率趋近零时，理想电容对直流稳态近似断路。理想电容中电流超前电压四分之一个周期，真实电容还会有漏电和介质损耗。电容隔直通交的说法来自容抗随频率降低而增大；在电源滤波中，大电容为纹波提供低阻通路，却不应让直流负载被短接。在耦合电路中，电容可让交流信号通过，同时隔离不同级之间的直流偏置。这也是高通、低通滤波器能够用电容实现频率选择的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "容抗",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%B9%E6%8A%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "容抗",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%B9%E6%8A%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "capacitive reactance",
+          "url": "https://en.wikipedia.org/w/index.php?search=capacitive%20reactance"
+        }
       ]
     },
     {
@@ -1871,6 +3725,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "inductive reactance"
+      ],
+      "explanation_markdown": "感抗是电感在交流电路中因自感而表现出的等效阻碍，来自电流不能快速改变。大小为 $X_L=\\omega L$，其中 $X_L$ 是感抗，$\\omega$ 是角频率，$L$ 是电感。\n\n频率越高，电流变化越快，自感电动势越强，感抗也越大；直流稳态下理想电感近似短路。理想电感中电压超前电流四分之一个周期，实际线圈还会因绕组电阻和磁芯损耗消耗功率。电感通直阻交的说法来自感抗随频率升高而增大；电源滤波和扼流圈利用它抑制快速变化电流，同时允许低频或直流分量通过。电感线圈的铁芯在高频下可能损耗增加，因此射频电感常使用空芯或特殊磁芯材料。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "感抗",
+          "url": "https://www.baidu.com/s?wd=%E6%84%9F%E6%8A%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "感抗",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%84%9F%E6%8A%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inductive reactance",
+          "url": "https://en.wikipedia.org/w/index.php?search=inductive%20reactance"
+        }
       ]
     },
     {
@@ -1889,6 +3761,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "phase difference"
+      ],
+      "explanation_markdown": "相位差表示两个同频周期量在振动进程上的超前或滞后，交流电路中常指电压与电流的相位关系。串联 RLC 电路满足 $\\tan\\phi=(X_L-X_C)/R$，其中 $\\phi$ 是相位差，$X_L$ 是感抗，$X_C$ 是容抗，$R$ 是电阻。\n\n相位差决定电源提供的能量有多少真正被消耗，多少只在电场和磁场中来回交换。纯电阻中电压电流同相，纯电感和纯电容则相差四分之一个周期；谐振时感抗与容抗抵消，相位差趋近零。相位差还影响功率因数，工业负载中大量电感会使电流滞后电压；并联电容补偿能减少无功往返，提高供电系统利用率。示波器双通道可直接比较两个信号的相位差，李萨如图形也是一种直观方法。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相位差",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E4%BD%8D%E5%B7%AE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相位差",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E4%BD%8D%E5%B7%AE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "phase difference",
+          "url": "https://en.wikipedia.org/w/index.php?search=phase%20difference"
+        }
       ]
     },
     {
@@ -1907,6 +3797,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "root mean square value"
+      ],
+      "explanation_markdown": "有效值用同等热效应定义交流量的等效直流大小，因此特别适合标称电网电压和电流。正弦电流满足 $I_{\\rm rms}=I_0/\\sqrt2$，其中 $I_{\\rm rms}$ 是有效值，$I_0$ 是峰值。\n\n电阻发热由平均 $I^2R$ 决定，正负半周虽然方向相反，热效应却都为正。日常说的交流 220 伏通常是有效值，不是峰值；非正弦波不能直接用除以根号二，而要按均方根定义计算。有效值来自平方平均再开方，所以它对波形尖峰很敏感；同样峰值的方波、三角波和正弦波有效值不同，对电阻发热也不同。交流仪表默认显示有效值，是因为多数负载的热效应和额定功率都按它来标定。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "有效值",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%89%E6%95%88%E5%80%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "有效值",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%89%E6%95%88%E5%80%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "root mean square value",
+          "url": "https://en.wikipedia.org/w/index.php?search=root%20mean%20square%20value"
+        }
       ]
     },
     {
@@ -1925,6 +3833,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "resonance"
+      ],
+      "explanation_markdown": "谐振是受迫振荡系统在驱动频率接近固有频率时响应显著增强的现象。LC 电路的固有角频率为 $\\omega_0=1/\\sqrt{LC}$，其中 $\\omega_0$ 是固有角频率，$L$ 是电感，$C$ 是电容。\n\n在串联 RLC 电路中，谐振时感抗和容抗相等且相互抵消，电流主要由电阻限制。收音机选台、滤波器和核磁共振都利用频率选择性；实际谐振峰不会无限尖锐，损耗越小，品质因数越高。谐振既可以放大有用信号，也可能造成危险过电压或机械振动；电路设计中常通过电阻、反馈或限幅来控制共振峰。串联谐振电流大，并联谐振阻抗大，二者在选频电路中的用途正好不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "谐振",
+          "url": "https://www.baidu.com/s?wd=%E8%B0%90%E6%8C%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "谐振",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B0%90%E6%8C%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "resonance",
+          "url": "https://en.wikipedia.org/w/index.php?search=resonance"
+        }
       ]
     },
     {
@@ -1943,6 +3869,24 @@
         "U1/U2=N1/N2",
         "升压 降压 交流",
         "transformer"
+      ],
+      "explanation_markdown": "变压器利用两个线圈在同一磁芯中的互感，把交流能量从原边传到副边并改变电压。理想电压比为 $U_1/U_2=N_1/N_2$，其中 $U_1,U_2$ 是原副线圈电压，$N_1,N_2$ 是对应匝数。\n\n原线圈交流电流产生变化磁通，副线圈因电磁感应获得电动势。匝数多的一侧电压高，电流相应较小；直流稳态不能持续变压，因为磁通不再周期变化。真实变压器还存在铜损、铁损和漏磁。变压器只能改变交流电压电流的比例，不能改变频率；它在电力系统中用于高压输电和低压用电之间转换，以降低线路损耗。电力变压器还提供电气隔离，使高低压侧没有直接导线连接，安全性更高。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "变压器",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%98%E5%8E%8B%E5%99%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "变压器",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%98%E5%8E%8B%E5%99%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "transformer",
+          "url": "https://en.wikipedia.org/w/index.php?search=transformer"
+        }
       ]
     },
     {
@@ -1961,6 +3905,24 @@
         "U1/U2=N1/N2",
         "升压 降压 交流",
         "ideal transformer"
+      ],
+      "explanation_markdown": "理想变压器假定绕组无电阻、铁芯无损耗、所有磁通都同时穿过两组线圈。它满足 $U_1/U_2=N_1/N_2,\\quad U_1I_1=U_2I_2$，其中 $U$ 是电压，$I$ 是电流，$N$ 是匝数，下标表示原边和副边。\n\n理想模型中功率完全传递，升压必然伴随降流，降压则伴随升流。这个模型能抓住变压器的主关系，但实际装置会因绕组发热、磁滞、涡流和漏磁而损失能量，并受磁芯饱和限制。理想变压器还隐含励磁电流可忽略和磁芯不饱和；实际空载时仍有小电流用于建立交变磁通，这部分电流决定空载损耗。理想关系还要求副边负载变化能通过磁耦合反映到原边，形成等效输入阻抗。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "理想变压器",
+          "url": "https://www.baidu.com/s?wd=%E7%90%86%E6%83%B3%E5%8F%98%E5%8E%8B%E5%99%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "理想变压器",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%90%86%E6%83%B3%E5%8F%98%E5%8E%8B%E5%99%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ideal transformer",
+          "url": "https://en.wikipedia.org/w/index.php?search=ideal%20transformer"
+        }
       ]
     },
     {
@@ -1979,6 +3941,24 @@
         "I=Δq/Δt ΣI=0 ΣU=0",
         "电流表 电压表 网络",
         "rectification"
+      ],
+      "explanation_markdown": "整流把交流电变成单向脉动电压或电流，常借助二极管的单向导电性实现。全波整流的理想输出可写为 $U_{\\rm out}=|U_0\\sin\\omega t|$，其中 $U_{\\rm out}$ 是输出电压，$U_0$ 是输入峰值，$\\omega$ 是角频率。\n\n整流后电流方向不再周期反转，但电压仍随时间起伏，需要滤波电容和稳压电路进一步平滑。手机充电器、直流电源和许多电子设备都从整流开始；整流改变波形，不改变能量守恒。半波整流只利用一个半周，纹波大且效率低；全波桥式整流利用两个半周，输出更平滑，是实际电源适配器中的常见结构。整流电路中的二极管压降会降低输出电压，大电流时还会带来明显发热。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "整流",
+          "url": "https://www.baidu.com/s?wd=%E6%95%B4%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "整流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%95%B4%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "rectification",
+          "url": "https://en.wikipedia.org/w/index.php?search=rectification"
+        }
       ]
     },
     {
@@ -1997,6 +3977,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "oscilloscope"
+      ],
+      "explanation_markdown": "示波器把随时间变化的电信号转化为屏幕上的波形，是观察电压、周期和相位的常用仪器。竖直偏转可近似写为 $y=kU$，其中 $y$ 是偏转距离，$k$ 是偏转灵敏度，$U$ 是输入电压。\n\n横向扫描提供时间轴，竖向偏转提供电压轴，于是正弦波、脉冲和噪声都能直观看到。输入阻抗会影响被测电路，带宽限制会削弱快速变化信号；使用探头时还要注意衰减倍率和接地方式。示波器还能用两通道比较相位差，或用触发功能稳定重复波形；这些功能让它不仅测数值，更能揭示电路的时间响应。数字示波器还会采样和存储波形，采样率不足时会出现混叠，误判高频信号。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "示波器",
+          "url": "https://www.baidu.com/s?wd=%E7%A4%BA%E6%B3%A2%E5%99%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "示波器",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A4%BA%E6%B3%A2%E5%99%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "oscilloscope",
+          "url": "https://en.wikipedia.org/w/index.php?search=oscilloscope"
+        }
       ]
     },
     {
@@ -2015,6 +4013,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "electron gun"
+      ],
+      "explanation_markdown": "电子枪通过热发射、场发射或光电发射产生电子，并用电场加速、聚焦成束。非相对论近似下 $\\frac12mv^2=eU$，其中 $m$ 是电子质量，$v$ 是速度，$e$ 是元电荷，$U$ 是加速电压。\n\n电压把电子的电势能转化为动能，后续电极或磁透镜控制束斑位置和发散角。示波管、电子显微镜和加速器注入系统都用到类似结构；高压高速时要考虑相对论修正、空间电荷效应和真空条件。电子枪中的聚焦电极类似电学透镜，可把发散电子束压成小斑点；束斑越小，成像或扫描分辨率越高，但空间电荷会限制束流强度。阴极材料、温度和真空度会决定发射电流稳定性，直接影响电子束亮度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电子枪",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E5%AD%90%E6%9E%AA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电子枪",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E5%AD%90%E6%9E%AA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electron gun",
+          "url": "https://en.wikipedia.org/w/index.php?search=electron%20gun"
+        }
       ]
     },
     {
@@ -2033,6 +4049,24 @@
         "E B U I Φ",
         "元件 场线 端口",
         "cathode ray"
+      ],
+      "explanation_markdown": "阴极射线是从阴极发出的电子束，在真空或低压气体中传播，并能被电场和磁场偏转。加速后的电子满足近似关系 $\\frac12mv^2=eU$，其中 $m$ 是电子质量，$v$ 是速度，$e$ 是元电荷，$U$ 是加速电压。\n\n它曾帮助确认电子的存在和负电性质：偏转方向显示带负电，荷质比测量揭示其粒子属性。阴极射线不是普通光线，碰到荧光屏会激发发光；若气体压强过高，电子频繁碰撞，束流就难以保持清晰。阴极射线在磁场中弯曲半径与动量和电荷有关，这使早期实验能够测定电子荷质比；它也是后来电子束技术和真空电子学的基础。它在荧光屏上的亮点位置可由偏转电压控制，老式显像管正是利用这一扫描原理。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阴极射线",
+          "url": "https://www.baidu.com/s?wd=%E9%98%B4%E6%9E%81%E5%B0%84%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阴极射线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%B4%E6%9E%81%E5%B0%84%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cathode ray",
+          "url": "https://en.wikipedia.org/w/index.php?search=cathode%20ray"
+        }
       ]
     }
   ]

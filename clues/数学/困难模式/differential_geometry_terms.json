@@ -1,0 +1,2405 @@
+{
+  "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+  "entries": [
+    {
+      "chinese_name": "光滑流形",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "光滑流形是局部同胚于欧氏空间并带有相容光滑坐标变换的空间。若图册为 $(U_i,\\varphi_i)$，相容性要求 $\\varphi_j\\circ\\varphi_i^{-1}$ 为 $C^\\infty$ 映射；维数由局部模型 $\\mathbb R^n$ 决定。\n\n它只给可微结构，不自动包含长度、角度或曲率。黎曼度量、联络和辛形式都是附加结构；切空间、微分形式和向量场则依赖光滑结构建立。 变分和流的语言把几何量看作能量或泛函的变化。第一变分给临界方程，第二变分给稳定性；梯度流、曲率流和莫尔斯理论则把局部临界信息连接到整体拓扑。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "光滑流形",
+          "url": "https://www.baidu.com/s?wd=%E5%85%89%E6%BB%91%E6%B5%81%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "光滑流形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%89%E6%BB%91%E6%B5%81%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "smooth manifold",
+          "url": "https://en.wikipedia.org/w/index.php?search=smooth%20manifold"
+        }
+      ]
+    },
+    {
+      "chinese_name": "切空间",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "切空间是流形在一点的所有一阶方向组成的向量空间。对 $p\\in M$，可用曲线等价类或导子定义 $T_pM$；若坐标为 $x^i$，基向量常写 $\\partial/\\partial x^i|_p$。\n\n它不同于切丛，后者把所有点的切空间并在一起。切空间只反映一点附近的一阶变化，向量场则是在每点选择一个切向量的光滑截面。 坐标公式只是局部表达，真正的对象要在坐标变换下保持一致。切向量、余切向量、微分形式、拉回和李括号处在不同层级；$d$、$F^*$、$[X,Y]$ 和 $\\nabla$ 各自作用的对象不同。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "切空间",
+          "url": "https://www.baidu.com/s?wd=%E5%88%87%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "切空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%87%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cut space",
+          "url": "https://en.wikipedia.org/w/index.php?search=cut%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "余切空间",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "余切空间是切空间的对偶，元素称为协向量或一形式。对点 $p\\in M$，$T_p^*M=\\operatorname{Hom}(T_pM,\\mathbb R)$；函数微分 $df_p$ 就把切向量送到方向导数。\n\n它与切空间配对而非天然同一，除非额外给定度量。坐标中 $dx^i$ 与 $\\partial/\\partial x^j$ 满足 $dx^i(\\partial_j)=\\delta^i_j$，微分形式和余切丛都由此出发。 坐标公式只是局部表达，真正的对象要在坐标变换下保持一致。切向量、余切向量、微分形式、拉回和李括号处在不同层级；$d$、$F^*$、$[X,Y]$ 和 $\\nabla$ 各自作用的对象不同。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。 局部坐标给计算入口，图册粘合和张量变换规则才保证这些量真正属于流形本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "余切空间",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%99%E5%88%87%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "余切空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%99%E5%88%87%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cotangent space",
+          "url": "https://en.wikipedia.org/w/index.php?search=cotangent%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "切丛",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "切丛把流形各点的切空间组织成一个向量丛，写作 $TM=\\bigsqcup_{p\\in M}T_pM$。投影 $\\pi:TM\\to M$ 把切向量送回基点；局部坐标给出 $(x^i,v^i)$。\n\n它不是单个切空间，而是随点变化的整体对象。向量场就是切丛的光滑截面 $X:M\\to TM$，满足 $\\pi\\circ X=\\operatorname{id}_M$；动力系统的速度场也自然生活在这里。 丛上的对象要同时记录基流形方向和纤维方向。联络形式给出水平分解，曲率形式度量平行移动的非平凡性；规范变换改变局部平凡化，却不改变由曲率和示性类捕捉的几何信息。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "切丛",
+          "url": "https://www.baidu.com/s?wd=%E5%88%87%E4%B8%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "切丛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%87%E4%B8%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tangent bundle",
+          "url": "https://en.wikipedia.org/w/index.php?search=tangent%20bundle"
+        }
+      ]
+    },
+    {
+      "chinese_name": "余切丛",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "余切丛把所有余切空间合成向量丛，写作 $T^*M=\\bigsqcup_{p\\in M}T_p^*M$。局部坐标常为 $(x^i,\\xi_i)$，其中协向量表示为 $\\xi_i dx^i$。\n\n它不同于切丛，坐标变换按对偶规则变化。余切丛带有天然辛形式，经典力学相空间常用 $T^*M$ 表示；一形式、哈密顿系统和微局部分析都以它为基本空间。 丛上的对象要同时记录基流形方向和纤维方向。联络形式给出水平分解，曲率形式度量平行移动的非平凡性；规范变换改变局部平凡化，却不改变由曲率和示性类捕捉的几何信息。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "余切丛",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%99%E5%88%87%E4%B8%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "余切丛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%99%E5%88%87%E4%B8%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cotangent bundle",
+          "url": "https://en.wikipedia.org/w/index.php?search=cotangent%20bundle"
+        }
+      ]
+    },
+    {
+      "chinese_name": "向量场",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "向量场是在流形每点光滑选择一个切向量。它是切丛截面 $X\\in\\Gamma(TM)$，局部可写 $X=\\sum_i X^i\\partial_i$；这里 $X^i$ 是光滑函数，$\\partial_i$ 是坐标基。\n\n向量场也可看作函数代数上的导子，满足 $X(fg)=X(f)g+fX(g)$。它与微分形式对偶，却不是协向量；其流、李括号和李导数刻画无穷小变换。 坐标公式只是局部表达，真正的对象要在坐标变换下保持一致。切向量、余切向量、微分形式、拉回和李括号处在不同层级；$d$、$F^*$、$[X,Y]$ 和 $\\nabla$ 各自作用的对象不同。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。 局部坐标给计算入口，图册粘合和张量变换规则才保证这些量真正属于流形本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "向量场",
+          "url": "https://www.baidu.com/s?wd=%E5%90%91%E9%87%8F%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "向量场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%91%E9%87%8F%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vector field",
+          "url": "https://en.wikipedia.org/w/index.php?search=vector%20field"
+        }
+      ]
+    },
+    {
+      "chinese_name": "微分形式",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "微分形式是流形上的反对称协变张量场，可在子流形上积分。$k$-形式空间写作 $\\Omega^k(M)=\\Gamma(\\Lambda^kT^*M)$；局部形如 $\\sum_I a_I dx^{i_1}\\wedge\\cdots\\wedge dx^{i_k}$。\n\n一形式作用在向量场上，顶阶形式给体积元。外微分 $d$ 满足 $d^2=0$，由闭形式和恰当形式得到德拉姆上同调；微分形式不同于任意张量，关键在反对称性。 丛上的对象要同时记录基流形方向和纤维方向。联络形式给出水平分解，曲率形式度量平行移动的非平凡性；规范变换改变局部平凡化，却不改变由曲率和示性类捕捉的几何信息。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "微分形式",
+          "url": "https://www.baidu.com/s?wd=%E5%BE%AE%E5%88%86%E5%BD%A2%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "微分形式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BE%AE%E5%88%86%E5%BD%A2%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "differential form",
+          "url": "https://en.wikipedia.org/w/index.php?search=differential%20form"
+        }
+      ]
+    },
+    {
+      "chinese_name": "外微分",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "外微分是把 $k$-形式送到 $(k+1)$-形式的自然算子。若 $\\omega\\in\\Omega^k(M)$，则 $d\\omega\\in\\Omega^{k+1}(M)$，并满足 $d^2=0$ 与乘积公式 $d(\\alpha\\wedge\\beta)=d\\alpha\\wedge\\beta+(-1)^k\\alpha\\wedge d\\beta$。\n\n它推广梯度、旋度和散度的统一结构。外微分只依赖光滑结构，不需要度量或联络；闭形式 $d\\omega=0$ 与恰当形式 $\\omega=d\\eta$ 的差别给出上同调信息。 坐标公式只是局部表达，真正的对象要在坐标变换下保持一致。切向量、余切向量、微分形式、拉回和李括号处在不同层级；$d$、$F^*$、$[X,Y]$ 和 $\\nabla$ 各自作用的对象不同。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。 局部坐标给计算入口，图册粘合和张量变换规则才保证这些量真正属于流形本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "外微分",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%96%E5%BE%AE%E5%88%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "外微分",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%96%E5%BE%AE%E5%88%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "external differential",
+          "url": "https://en.wikipedia.org/w/index.php?search=external%20differential"
+        }
+      ]
+    },
+    {
+      "chinese_name": "楔积",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "楔积是微分形式之间的反交换乘法。若 $\\alpha\\in\\Omega^p(M)$、$\\beta\\in\\Omega^q(M)$，则 $\\alpha\\wedge\\beta\\in\\Omega^{p+q}(M)$，并满足 $\\alpha\\wedge\\beta=(-1)^{pq}\\beta\\wedge\\alpha$。\n\n它把一形式组合成面积元、体积元和高阶积分对象。楔积不同于普通张量积，它会反对称化重复方向；配合外微分形成微分分次代数，是德拉姆理论的代数骨架。 坐标公式只是局部表达，真正的对象要在坐标变换下保持一致。切向量、余切向量、微分形式、拉回和李括号处在不同层级；$d$、$F^*$、$[X,Y]$ 和 $\\nabla$ 各自作用的对象不同。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。 局部坐标给计算入口，图册粘合和张量变换规则才保证这些量真正属于流形本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "楔积",
+          "url": "https://www.baidu.com/s?wd=%E6%A5%94%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "楔积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A5%94%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wedge product",
+          "url": "https://en.wikipedia.org/w/index.php?search=wedge%20product"
+        }
+      ]
+    },
+    {
+      "chinese_name": "李括号",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "李括号衡量两个向量场作为无穷小流的非交换程度。对向量场 $X,Y$，定义 $[X,Y](f)=X(Yf)-Y(Xf)$；局部坐标中它仍是向量场，并满足反对称性和雅可比恒等式。\n\n它不同于逐点向量叉乘，定义依赖向量场的一阶变化。若 $[X,Y]=0$，对应局部流在一阶意义下可交换；分布的可积性和李代数结构都用李括号表达。 坐标公式只是局部表达，真正的对象要在坐标变换下保持一致。切向量、余切向量、微分形式、拉回和李括号处在不同层级；$d$、$F^*$、$[X,Y]$ 和 $\\nabla$ 各自作用的对象不同。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "李括号",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%8E%E6%8B%AC%E5%8F%B7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "李括号",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%8E%E6%8B%AC%E5%8F%B7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lie bracket",
+          "url": "https://en.wikipedia.org/w/index.php?search=lie%20bracket"
+        }
+      ]
+    },
+    {
+      "chinese_name": "李导数",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "李导数描述张量场沿向量场流动时的变化率。若 $X$ 生成流 $\\phi_t$，张量 $T$ 的李导数写作 $\\mathcal L_XT=\\frac d{dt}|_{t=0}\\phi_t^*T$；对函数有 $\\mathcal L_Xf=X(f)$。\n\n它不需要选择联络，因此不同于协变导数。对向量场 $Y$，有 $\\mathcal L_XY=[X,Y]$；对微分形式满足 Cartan 公式 $\\mathcal L_X=d\\iota_X+\\iota_Xd$。 坐标公式只是局部表达，真正的对象要在坐标变换下保持一致。切向量、余切向量、微分形式、拉回和李括号处在不同层级；$d$、$F^*$、$[X,Y]$ 和 $\\nabla$ 各自作用的对象不同。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。 局部坐标给计算入口，图册粘合和张量变换规则才保证这些量真正属于流形本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "李导数",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%8E%E5%AF%BC%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "李导数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%8E%E5%AF%BC%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lie derivative",
+          "url": "https://en.wikipedia.org/w/index.php?search=lie%20derivative"
+        }
+      ]
+    },
+    {
+      "chinese_name": "流形映射",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "流形映射是在光滑结构之间相容的映射。$F:M\\to N$ 光滑表示任意坐标图中 $\\psi\\circ F\\circ\\varphi^{-1}$ 为光滑函数；其微分 $dF_p:T_pM\\to T_{F(p)}N$ 是切空间之间的线性映射。\n\n它不同于单纯连续映射，因为还要保留可微结构。浸入、淹没和嵌入都由 $dF_p$ 的秩条件区分；拉回微分形式 $F^*\\omega$ 则把目标上的协变对象带回源流形。 变分和流的语言把几何量看作能量或泛函的变化。第一变分给临界方程，第二变分给稳定性；梯度流、曲率流和莫尔斯理论则把局部临界信息连接到整体拓扑。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "流形映射",
+          "url": "https://www.baidu.com/s?wd=%E6%B5%81%E5%BD%A2%E6%98%A0%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "流形映射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B5%81%E5%BD%A2%E6%98%A0%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "manifold map",
+          "url": "https://en.wikipedia.org/w/index.php?search=manifold%20map"
+        }
+      ]
+    },
+    {
+      "chinese_name": "浸入",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "浸入是微分在每点单射的光滑映射。若 $F:M\\to N$，条件为 $dF_p:T_pM\\to T_{F(p)}N$ 单射，因此 $\\operatorname{rank}dF_p=\\dim M$；它保证源的切方向不被压扁。\n\n浸入不一定是嵌入，像可能自交或拓扑不匹配。嵌入还要求 $M$ 同胚于其像并带子流形结构；浸入常用于参数曲面、沉浸曲线和子流形局部模型。 坐标公式只是局部表达，真正的对象要在坐标变换下保持一致。切向量、余切向量、微分形式、拉回和李括号处在不同层级；$d$、$F^*$、$[X,Y]$ 和 $\\nabla$ 各自作用的对象不同。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。 局部坐标给计算入口，图册粘合和张量变换规则才保证这些量真正属于流形本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "浸入",
+          "url": "https://www.baidu.com/s?wd=%E6%B5%B8%E5%85%A5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "浸入",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B5%B8%E5%85%A5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "immersion",
+          "url": "https://en.wikipedia.org/w/index.php?search=immersion"
+        }
+      ]
+    },
+    {
+      "chinese_name": "淹没",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "淹没是微分在每点满射的光滑映射。若 $F:M\\to N$，则 $dF_p:T_pM\\to T_{F(p)}N$ 满射，等价于 $\\operatorname{rank}dF_p=\\dim N$；局部上它像投影。\n\n它与浸入方向相反：浸入保留源的切方向，淹没让目标方向都能被达到。正则值定理说明淹没的纤维 $F^{-1}(q)$ 是子流形，维数为 $\\dim M-\\dim N$。 坐标公式只是局部表达，真正的对象要在坐标变换下保持一致。切向量、余切向量、微分形式、拉回和李括号处在不同层级；$d$、$F^*$、$[X,Y]$ 和 $\\nabla$ 各自作用的对象不同。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。 局部坐标给计算入口，图册粘合和张量变换规则才保证这些量真正属于流形本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "淹没",
+          "url": "https://www.baidu.com/s?wd=%E6%B7%B9%E6%B2%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "淹没",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B7%B9%E6%B2%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "drown",
+          "url": "https://en.wikipedia.org/w/index.php?search=drown"
+        }
+      ]
+    },
+    {
+      "chinese_name": "子流形",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "子流形是在一个流形中局部看起来像坐标子空间的部分。若 $S\\subset M$，每点附近有坐标使 $S$ 写成 $x^{k+1}=\\cdots=x^n=0$，则 $S$ 是 $k$ 维嵌入子流形。\n\n它不同于任意子集，因为必须继承光滑结构并有良好切空间。浸入子流形允许全局自交，嵌入子流形要求拓扑与子空间拓扑一致；正则值定理提供了常用构造。 变分和流的语言把几何量看作能量或泛函的变化。第一变分给临界方程，第二变分给稳定性；梯度流、曲率流和莫尔斯理论则把局部临界信息连接到整体拓扑。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "子流形",
+          "url": "https://www.baidu.com/s?wd=%E5%AD%90%E6%B5%81%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "子流形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AD%90%E6%B5%81%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "particle manifold",
+          "url": "https://en.wikipedia.org/w/index.php?search=particle%20manifold"
+        }
+      ]
+    },
+    {
+      "chinese_name": "正则值",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "正则值是使映射所有原像点处微分满射的目标点。对 $F:M\\to N$ 和 $q\\in N$，若每个 $p\\in F^{-1}(q)$ 都满足 $dF_p$ 满射，则 $q$ 是正则值。\n\n正则值定理给出 $F^{-1}(q)$ 为子流形，维数 $\\dim M-\\dim N$。它与正则点不同，后者指源点处秩满；临界值则至少有一个原像点微分不满射，萨德定理说明临界值集合测度为零。 坐标公式只是局部表达，真正的对象要在坐标变换下保持一致。切向量、余切向量、微分形式、拉回和李括号处在不同层级；$d$、$F^*$、$[X,Y]$ 和 $\\nabla$ 各自作用的对象不同。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正则值",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E5%88%99%E5%80%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正则值",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E5%88%99%E5%80%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "regular value",
+          "url": "https://en.wikipedia.org/w/index.php?search=regular%20value"
+        }
+      ]
+    },
+    {
+      "chinese_name": "萨德定理",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "萨德定理说明光滑映射的临界值集合很小。若 $F:M\\to N$ 足够光滑，则临界值集的测度为零；临界点指 $dF_p$ 不满秩的点，临界值是这些点的像。\n\n它不保证临界值不存在，而是保证正则值稠密到足以用于横截性和微分拓扑构造。正则值定理依赖它来选择良好参数；莫尔斯函数的临界值分离也常借助这种思想。 坐标公式只是局部表达，真正的对象要在坐标变换下保持一致。切向量、余切向量、微分形式、拉回和李括号处在不同层级；$d$、$F^*$、$[X,Y]$ 和 $\\nabla$ 各自作用的对象不同。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "萨德定理",
+          "url": "https://www.baidu.com/s?wd=%E8%90%A8%E5%BE%B7%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "萨德定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%90%A8%E5%BE%B7%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "sade theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=sade%20theorem"
+        }
+      ]
+    },
+    {
+      "chinese_name": "弗罗贝尼乌斯定理",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "弗罗贝尼乌斯定理刻画分布何时来自一族子流形。若分布 $\\mathcal D\\subset TM$ 对李括号封闭，即 $X,Y\\in\\Gamma(\\mathcal D)$ 推出 $[X,Y]\\in\\Gamma(\\mathcal D)$，则 $\\mathcal D$ 局部可积。\n\n可积意味着每点附近存在切空间正好等于 $\\mathcal D$ 的叶。它不同于任意向量子丛条件，李括号封闭是关键；叶状结构、微分方程的完全积分和约束系统都依赖这一判据。 坐标公式只是局部表达，真正的对象要在坐标变换下保持一致。切向量、余切向量、微分形式、拉回和李括号处在不同层级；$d$、$F^*$、$[X,Y]$ 和 $\\nabla$ 各自作用的对象不同。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弗罗贝尼乌斯定理",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%97%E7%BD%97%E8%B4%9D%E5%B0%BC%E4%B9%8C%E6%96%AF%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弗罗贝尼乌斯定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%97%E7%BD%97%E8%B4%9D%E5%B0%BC%E4%B9%8C%E6%96%AF%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "frobenius theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=frobenius%20theorem"
+        }
+      ]
+    },
+    {
+      "chinese_name": "分布",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "分布是在每个点指定一个切空间子空间的结构。若 $\\mathcal D_p\\subset T_pM$ 且随 $p$ 光滑变化，可视为切丛的子丛 $\\mathcal D\\subset TM$；其截面是处处落在 $\\mathcal D$ 中的向量场。\n\n它不同于概率分布，也不同于单个向量场。分布若对李括号封闭，弗罗贝尼乌斯定理给出积分叶；若不封闭，则可能产生非完整约束，在接触几何和控制理论中很常见。 坐标公式只是局部表达，真正的对象要在坐标变换下保持一致。切向量、余切向量、微分形式、拉回和李括号处在不同层级；$d$、$F^*$、$[X,Y]$ 和 $\\nabla$ 各自作用的对象不同。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分布",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E5%B8%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分布",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E5%B8%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "distribution",
+          "url": "https://en.wikipedia.org/w/index.php?search=distribution"
+        }
+      ]
+    },
+    {
+      "chinese_name": "叶状结构",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "叶状结构把流形分解为一族同维浸入子流形，局部像平行切片。若维数为 $p$，局部坐标可使叶写成 $x^{p+1},\\ldots,x^n$ 常数；相应切分布 $\\mathcal D$ 满足 $[\\Gamma(\\mathcal D),\\Gamma(\\mathcal D)]\\subset\\Gamma(\\mathcal D)$。\n\n它比单个子流形多了整体分解，也可能有复杂的全局回归行为。叶状结构来自可积分布，但叶空间未必是好流形；这正是它与普通纤维化的差别。 坐标公式只是局部表达，真正的对象要在坐标变换下保持一致。切向量、余切向量、微分形式、拉回和李括号处在不同层级；$d$、$F^*$、$[X,Y]$ 和 $\\nabla$ 各自作用的对象不同。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "叶状结构",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%B6%E7%8A%B6%E7%BB%93%E6%9E%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "叶状结构",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%B6%E7%8A%B6%E7%BB%93%E6%9E%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "leaf like structure",
+          "url": "https://en.wikipedia.org/w/index.php?search=leaf%20like%20structure"
+        }
+      ]
+    },
+    {
+      "chinese_name": "黎曼度量",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "黎曼度量是在每个切空间上光滑选择正定内积。它写作 $g_p:T_pM\\times T_pM\\to\\mathbb R$，局部为 $g=g_{ij}dx^i dx^j$，矩阵 $(g_{ij})$ 对称正定。\n\n它给出长度、角度、体积和梯度，也唯一确定列维奇维塔联络。光滑流形没有度量时不能谈距离或曲率；伪黎曼度量去掉正定性，允许洛伦兹几何中的时间样方向。 度量给长度和角度，联络给平行比较，曲率衡量比较失败，测地距离来自路径长度。许多结论还依赖完备性、紧致性或所用联络是否无挠并保度量，局部坐标式不能单独决定全局性质。 因此同一个局部张量公式，还要说明它对应长度、平行移动、体积还是谱性质；这些全局后果通常离不开完备性和边界条件。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "黎曼度量",
+          "url": "https://www.baidu.com/s?wd=%E9%BB%8E%E6%9B%BC%E5%BA%A6%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "黎曼度量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%BB%8E%E6%9B%BC%E5%BA%A6%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "riemann metric",
+          "url": "https://en.wikipedia.org/w/index.php?search=riemann%20metric"
+        }
+      ]
+    },
+    {
+      "chinese_name": "伪黎曼度量",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "伪黎曼度量是在切空间上给出非退化但不必正定的对称双线性型。局部写 $g=g_{ij}dx^i dx^j$，矩阵可有符号型 $(p,q)$；洛伦兹度量常为 $(1,n-1)$ 或 $(n-1,1)$。\n\n它仍能定义联络、测地线和曲率，但长度平方可能为负、零或正。与黎曼度量相比，距离函数不再由正定长度直接给出；广义相对论中的时空几何依赖这种结构。 度量给长度和角度，联络给平行比较，曲率衡量比较失败，测地距离来自路径长度。许多结论还依赖完备性、紧致性或所用联络是否无挠并保度量，局部坐标式不能单独决定全局性质。 因此同一个局部张量公式，还要说明它对应长度、平行移动、体积还是谱性质；这些全局后果通常离不开完备性和边界条件。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "伪黎曼度量",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%AA%E9%BB%8E%E6%9B%BC%E5%BA%A6%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "伪黎曼度量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%AA%E9%BB%8E%E6%9B%BC%E5%BA%A6%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pseudo riemannian metric",
+          "url": "https://en.wikipedia.org/w/index.php?search=pseudo%20riemannian%20metric"
+        }
+      ]
+    },
+    {
+      "chinese_name": "联络",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "联络给出沿向量场微分另一个向量场的规则，使不同点的切空间可以比较。它写作 $\\nabla_XY$，对 $X$ 线性，对 $Y$ 满足 Leibniz 规则 $\\nabla_X(fY)=X(f)Y+f\\nabla_XY$。\n\n联络不是曲率，曲率来自协变导数不交换；也不是度量本身，度量可选出特殊联络。它定义平行移动、测地线、挠率和曲率，是微分几何把局部变化组织起来的核心结构。 丛上的对象要同时记录基流形方向和纤维方向。联络形式给出水平分解，曲率形式度量平行移动的非平凡性；规范变换改变局部平凡化，却不改变由曲率和示性类捕捉的几何信息。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "联络",
+          "url": "https://www.baidu.com/s?wd=%E8%81%94%E7%BB%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "联络",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%81%94%E7%BB%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "contact",
+          "url": "https://en.wikipedia.org/w/index.php?search=contact"
+        }
+      ]
+    },
+    {
+      "chinese_name": "仿射联络",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "仿射联络是在切丛上的联络，直接作用于向量场。局部坐标中 $\\nabla_{\\partial_i}\\partial_j=\\Gamma^k_{ij}\\partial_k$，其中 $\\Gamma^k_{ij}$ 是克里斯托费尔符号；它们不是张量分量。\n\n仿射联络可定义测地线方程 $\\ddot x^k+\\Gamma^k_{ij}\\dot x^i\\dot x^j=0$。它不必来自度量，也可有挠率；列维奇维塔联络则是无挠且与黎曼度量相容的特殊情形。 丛上的对象要同时记录基流形方向和纤维方向。联络形式给出水平分解，曲率形式度量平行移动的非平凡性；规范变换改变局部平凡化，却不改变由曲率和示性类捕捉的几何信息。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "仿射联络",
+          "url": "https://www.baidu.com/s?wd=%E4%BB%BF%E5%B0%84%E8%81%94%E7%BB%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "仿射联络",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BB%BF%E5%B0%84%E8%81%94%E7%BB%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "affine liaison",
+          "url": "https://en.wikipedia.org/w/index.php?search=affine%20liaison"
+        }
+      ]
+    },
+    {
+      "chinese_name": "列维奇维塔联络",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "列维奇维塔联络是黎曼或伪黎曼度量唯一确定的自然联络。它满足 $\\nabla g=0$ 和 $T(X,Y)=\\nabla_XY-\\nabla_YX-[X,Y]=0$；前者表示保度量，后者表示无挠。\n\n它把度量、测地线和曲率连接起来。一般仿射联络可以不保长度或带挠率，列维奇维塔联络排除了这些自由度；黎曼曲率张量、截面曲率和拉普拉斯算子通常都以它为基础。 丛上的对象要同时记录基流形方向和纤维方向。联络形式给出水平分解，曲率形式度量平行移动的非平凡性；规范变换改变局部平凡化，却不改变由曲率和示性类捕捉的几何信息。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "列维奇维塔联络",
+          "url": "https://www.baidu.com/s?wd=%E5%88%97%E7%BB%B4%E5%A5%87%E7%BB%B4%E5%A1%94%E8%81%94%E7%BB%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "列维奇维塔联络",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%97%E7%BB%B4%E5%A5%87%E7%BB%B4%E5%A1%94%E8%81%94%E7%BB%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "levich vita contact",
+          "url": "https://en.wikipedia.org/w/index.php?search=levich%20vita%20contact"
+        }
+      ]
+    },
+    {
+      "chinese_name": "协变导数",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "协变导数是在联络给定后对张量场进行坐标无关微分的算子。对向量场有 $\\nabla_XY$，对一形式和一般张量按 Leibniz 规则扩展；局部表达会出现 $\\Gamma^k_{ij}$ 修正普通偏导。\n\n它不同于李导数，后者沿流比较张量而不需联络。协变导数允许定义平行性、测地线、散度和 Hessian；曲率正是二次协变导数交换失败的度量。 坐标公式只是局部表达，真正的对象要在坐标变换下保持一致。切向量、余切向量、微分形式、拉回和李括号处在不同层级；$d$、$F^*$、$[X,Y]$ 和 $\\nabla$ 各自作用的对象不同。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "协变导数",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8F%E5%8F%98%E5%AF%BC%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "协变导数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8F%E5%8F%98%E5%AF%BC%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "covariant derivative",
+          "url": "https://en.wikipedia.org/w/index.php?search=covariant%20derivative"
+        }
+      ]
+    },
+    {
+      "chinese_name": "平行移动",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "平行移动沿曲线把一个切向量运送到别的点，并要求协变导数为零。若 $\\gamma(t)$ 是曲线，向量场 $V(t)$ 平行当且仅当 $\\nabla_{\\dot\\gamma}V=0$；这是沿曲线的一阶线性微分方程。\n\n它依赖联络而非仅依赖流形拓扑。平坦空间中平行移动与路径无关，曲率非零时绕小回路会产生旋转；因此平行移动是理解曲率和联络整体效应的直接方式。 坐标公式只是局部表达，真正的对象要在坐标变换下保持一致。切向量、余切向量、微分形式、拉回和李括号处在不同层级；$d$、$F^*$、$[X,Y]$ 和 $\\nabla$ 各自作用的对象不同。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平行移动",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E8%A1%8C%E7%A7%BB%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平行移动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E8%A1%8C%E7%A7%BB%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "parallel movement",
+          "url": "https://en.wikipedia.org/w/index.php?search=parallel%20movement"
+        }
+      ]
+    },
+    {
+      "chinese_name": "测地线",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "测地线是速度向量沿自身平行移动的曲线。给定联络，条件为 $\\nabla_{\\dot\\gamma}\\dot\\gamma=0$；在坐标中为 $\\ddot x^k+\\Gamma^k_{ij}\\dot x^i\\dot x^j=0$。\n\n在黎曼几何中，测地线局部给出长度的临界曲线，但不一定全局最短。它不同于任意直观“最短线”，因为割迹和共轭点之后最短性可能失效；指数映射以测地线定义。 度量给长度和角度，联络给平行比较，曲率衡量比较失败，测地距离来自路径长度。许多结论还依赖完备性、紧致性或所用联络是否无挠并保度量，局部坐标式不能单独决定全局性质。 因此同一个局部张量公式，还要说明它对应长度、平行移动、体积还是谱性质；这些全局后果通常离不开完备性和边界条件。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "测地线",
+          "url": "https://www.baidu.com/s?wd=%E6%B5%8B%E5%9C%B0%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "测地线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B5%8B%E5%9C%B0%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "geodesic",
+          "url": "https://en.wikipedia.org/w/index.php?search=geodesic"
+        }
+      ]
+    },
+    {
+      "chinese_name": "指数映射",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "指数映射把切空间中的初速度送到沿测地线走单位时间到达的点。对 $p\\in M$，$\\exp_p(v)=\\gamma_v(1)$，其中 $\\gamma_v(0)=p$、$\\dot\\gamma_v(0)=v$ 且 $\\nabla_{\\dot\\gamma}\\dot\\gamma=0$。\n\n它把线性切空间和流形局部几何联系起来。与李群指数映射不同，这里依赖联络或度量；在正常邻域内它是局部微分同胚，割迹和共轭点描述其失去良好性的方式。 坐标公式只是局部表达，真正的对象要在坐标变换下保持一致。切向量、余切向量、微分形式、拉回和李括号处在不同层级；$d$、$F^*$、$[X,Y]$ 和 $\\nabla$ 各自作用的对象不同。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "指数映射",
+          "url": "https://www.baidu.com/s?wd=%E6%8C%87%E6%95%B0%E6%98%A0%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "指数映射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8C%87%E6%95%B0%E6%98%A0%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "exponent map",
+          "url": "https://en.wikipedia.org/w/index.php?search=exponent%20map"
+        }
+      ]
+    },
+    {
+      "chinese_name": "对数映射",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "对数映射是在指数映射局部可逆时，把流形点拉回切空间的向量。若 $q=\\exp_p(v)$ 且 $q$ 位于 $p$ 的正常邻域，则 $\\log_p(q)=v$；该向量的长度等于测地距离 $d(p,q)$。\n\n它不是全局总能定义的函数，因为割迹和多条测地线会导致不唯一。对数映射常用于黎曼优化、测地插值和统计平均；它与普通坐标差不同，方向由测地线而非直线决定。 坐标公式只是局部表达，真正的对象要在坐标变换下保持一致。切向量、余切向量、微分形式、拉回和李括号处在不同层级；$d$、$F^*$、$[X,Y]$ 和 $\\nabla$ 各自作用的对象不同。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对数映射",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E6%95%B0%E6%98%A0%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对数映射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E6%95%B0%E6%98%A0%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "logarithmic mapping",
+          "url": "https://en.wikipedia.org/w/index.php?search=logarithmic%20mapping"
+        }
+      ]
+    },
+    {
+      "chinese_name": "割迹",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "割迹是从一点出发的最短测地线停止唯一或停止最短的位置集合。对 $p\\in M$，沿单位向量 $v$ 的最大最短时间为 $c(v)$，割点常写为 $\\exp_p(c(v)v)$。\n\n它描述指数映射全局失去正常坐标的边界。割迹不同于共轭点：共轭点由指数映射微分退化给出，割点还可能来自多条最短测地线相遇；距离函数在割迹处通常不光滑。 度量给长度和角度，联络给平行比较，曲率衡量比较失败，测地距离来自路径长度。许多结论还依赖完备性、紧致性或所用联络是否无挠并保度量，局部坐标式不能单独决定全局性质。 因此同一个局部张量公式，还要说明它对应长度、平行移动、体积还是谱性质；这些全局后果通常离不开完备性和边界条件。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "割迹",
+          "url": "https://www.baidu.com/s?wd=%E5%89%B2%E8%BF%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "割迹",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%89%B2%E8%BF%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cut trace",
+          "url": "https://en.wikipedia.org/w/index.php?search=cut%20trace"
+        }
+      ]
+    },
+    {
+      "chinese_name": "共轭点",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "共轭点是沿测地线使指数映射微分退化的点。等价地，存在非零雅可比场 $J$ 满足 $J(0)=J(t_0)=0$；这里 $J$ 描述测地线族的一阶变分。\n\n它反映测地线附近的聚焦现象。共轭点不同于割点，割点关注最短性和唯一性，共轭点关注二阶变分退化；在共轭点之后，测地线通常不再严格局部最短。 度量给长度和角度，联络给平行比较，曲率衡量比较失败，测地距离来自路径长度。许多结论还依赖完备性、紧致性或所用联络是否无挠并保度量，局部坐标式不能单独决定全局性质。 因此同一个局部张量公式，还要说明它对应长度、平行移动、体积还是谱性质；这些全局后果通常离不开完备性和边界条件。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "共轭点",
+          "url": "https://www.baidu.com/s?wd=%E5%85%B1%E8%BD%AD%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "共轭点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%B1%E8%BD%AD%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "conjugate point",
+          "url": "https://en.wikipedia.org/w/index.php?search=conjugate%20point"
+        }
+      ]
+    },
+    {
+      "chinese_name": "雅可比场",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "雅可比场描述一族测地线的一阶变分，满足雅可比方程。沿测地线 $\\gamma$，向量场 $J$ 满足 $\\nabla_{\\dot\\gamma}^2J+R(J,\\dot\\gamma)\\dot\\gamma=0$；这里 $R$ 是曲率张量。\n\n它把曲率与测地线分离或聚焦联系起来。普通变分向量场未必满足这个方程，只有来自测地线变分的才是雅可比场；共轭点正由非零雅可比场两端消失刻画。 度量给长度和角度，联络给平行比较，曲率衡量比较失败，测地距离来自路径长度。许多结论还依赖完备性、紧致性或所用联络是否无挠并保度量，局部坐标式不能单独决定全局性质。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "雅可比场",
+          "url": "https://www.baidu.com/s?wd=%E9%9B%85%E5%8F%AF%E6%AF%94%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "雅可比场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9B%85%E5%8F%AF%E6%AF%94%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "jacobian field",
+          "url": "https://en.wikipedia.org/w/index.php?search=jacobian%20field"
+        }
+      ]
+    },
+    {
+      "chinese_name": "曲率张量",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "曲率张量刻画协变导数沿不同方向交换时的差异。对向量场 $X,Y,Z$，$R(X,Y)Z=\\nabla_X\\nabla_YZ-\\nabla_Y\\nabla_XZ-\\nabla_{[X,Y]}Z$；这里 $\\nabla$ 是联络，$[X,Y]$ 是李括号。\n\n曲率不同于联络，联络先定义微分规则，曲率是该规则的二阶障碍。黎曼曲率可缩并成里奇曲率和标量曲率，也可通过截面曲率观察二维方向的弯曲。 度量给长度和角度，联络给平行比较，曲率衡量比较失败，测地距离来自路径长度。许多结论还依赖完备性、紧致性或所用联络是否无挠并保度量，局部坐标式不能单独决定全局性质。 因此同一个局部张量公式，还要说明它对应长度、平行移动、体积还是谱性质；这些全局后果通常离不开完备性和边界条件。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "曲率张量",
+          "url": "https://www.baidu.com/s?wd=%E6%9B%B2%E7%8E%87%E5%BC%A0%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "曲率张量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9B%B2%E7%8E%87%E5%BC%A0%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "curvature tensor",
+          "url": "https://en.wikipedia.org/w/index.php?search=curvature%20tensor"
+        }
+      ]
+    },
+    {
+      "chinese_name": "截面曲率",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "截面曲率是黎曼曲率在一个二维切平面上的数值。若 $\\sigma=\\operatorname{span}(X,Y)$，则 $K(\\sigma)=\\frac{\\langle R(X,Y)Y,X\\rangle}{\\langle X,X\\rangle\\langle Y,Y\\rangle-\\langle X,Y\\rangle^2}$；它只依赖平面 $\\sigma$。\n\n它不是某条曲线的弯曲，而是流形在二维方向上的内蕴弯曲。所有截面曲率决定整个黎曼曲率张量；里奇曲率和标量曲率则是对截面曲率作不同层次的平均。 度量给长度和角度，联络给平行比较，曲率衡量比较失败，测地距离来自路径长度。许多结论还依赖完备性、紧致性或所用联络是否无挠并保度量，局部坐标式不能单独决定全局性质。 因此同一个局部张量公式，还要说明它对应长度、平行移动、体积还是谱性质；这些全局后果通常离不开完备性和边界条件。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "截面曲率",
+          "url": "https://www.baidu.com/s?wd=%E6%88%AA%E9%9D%A2%E6%9B%B2%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "截面曲率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%88%AA%E9%9D%A2%E6%9B%B2%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "section curvature",
+          "url": "https://en.wikipedia.org/w/index.php?search=section%20curvature"
+        }
+      ]
+    },
+    {
+      "chinese_name": "黎奇曲率",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "里奇曲率是黎曼曲率张量的迹，衡量某方向附近体积和测地线束的平均变化。给定单位向量 $v$，$\\operatorname{Ric}(v,v)=\\sum_i\\langle R(e_i,v)v,e_i\\rangle$，其中 $e_i$ 补成正交基。\n\n它比截面曲率粗，只记录含 $v$ 的所有二维截面的平均；比标量曲率细，仍保留方向信息。比较几何、热核估计和广义相对论的爱因斯坦方程都以里奇曲率为核心。 度量给长度和角度，联络给平行比较，曲率衡量比较失败，测地距离来自路径长度。许多结论还依赖完备性、紧致性或所用联络是否无挠并保度量，局部坐标式不能单独决定全局性质。 因此同一个局部张量公式，还要说明它对应长度、平行移动、体积还是谱性质；这些全局后果通常离不开完备性和边界条件。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "黎奇曲率",
+          "url": "https://www.baidu.com/s?wd=%E9%BB%8E%E5%A5%87%E6%9B%B2%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "黎奇曲率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%BB%8E%E5%A5%87%E6%9B%B2%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ricci curvature",
+          "url": "https://en.wikipedia.org/w/index.php?search=ricci%20curvature"
+        }
+      ]
+    },
+    {
+      "chinese_name": "标量曲率",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "标量曲率是里奇曲率的迹，给出每点所有方向弯曲的总平均。若 $\\{e_i\\}$ 是正交基，则 $S=\\sum_i\\operatorname{Ric}(e_i,e_i)$；也可由度量缩并 $S=g^{ij}R_{ij}$ 得到。\n\n它比里奇曲率更粗，只有一个函数值，不能决定曲率张量。标量曲率控制小球体积展开中的首个曲率修正，也出现在 Yamabe 问题和广义相对论的作用量中。 度量给长度和角度，联络给平行比较，曲率衡量比较失败，测地距离来自路径长度。许多结论还依赖完备性、紧致性或所用联络是否无挠并保度量，局部坐标式不能单独决定全局性质。 因此同一个局部张量公式，还要说明它对应长度、平行移动、体积还是谱性质；这些全局后果通常离不开完备性和边界条件。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "标量曲率",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%87%E9%87%8F%E6%9B%B2%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "标量曲率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%87%E9%87%8F%E6%9B%B2%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "scalar curvature",
+          "url": "https://en.wikipedia.org/w/index.php?search=scalar%20curvature"
+        }
+      ]
+    },
+    {
+      "chinese_name": "曲率算子",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "曲率算子把黎曼曲率看成作用在二形式上的自伴算子。对二维向量 $X\\wedge Y$，可由 $\\langle\\mathcal R(X\\wedge Y),Z\\wedge W\\rangle=\\langle R(X,Y)W,Z\\rangle$ 定义；这里内积来自度量。\n\n它不同于截面曲率的单个数值，而保留二形式空间上的线性结构。曲率算子正性强于截面曲率正性，在比较几何、Ricci 流和对称空间分类中提供更精细条件。 度量给长度和角度，联络给平行比较，曲率衡量比较失败，测地距离来自路径长度。许多结论还依赖完备性、紧致性或所用联络是否无挠并保度量，局部坐标式不能单独决定全局性质。 因此同一个局部张量公式，还要说明它对应长度、平行移动、体积还是谱性质；这些全局后果通常离不开完备性和边界条件。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "曲率算子",
+          "url": "https://www.baidu.com/s?wd=%E6%9B%B2%E7%8E%87%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "曲率算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9B%B2%E7%8E%87%E7%AE%97%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "curvature operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=curvature%20operator"
+        }
+      ]
+    },
+    {
+      "chinese_name": "比安基恒等式",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "比安基恒等式是曲率张量满足的结构恒等式。第一恒等式为 $R(X,Y)Z+R(Y,Z)X+R(Z,X)Y=0$；第二恒等式写作 $(\\nabla_XR)(Y,Z)+(\\nabla_YR)(Z,X)+(\\nabla_ZR)(X,Y)=0$。\n\n它们来自无挠联络和曲率定义的相容性。比安基恒等式不是额外假设，而是曲率能由联络产生的必要结构；在广义相对论中，缩并第二恒等式导致爱因斯坦张量散度为零。 坐标公式只是局部表达，真正的对象要在坐标变换下保持一致。切向量、余切向量、微分形式、拉回和李括号处在不同层级；$d$、$F^*$、$[X,Y]$ 和 $\\nabla$ 各自作用的对象不同。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "比安基恒等式",
+          "url": "https://www.baidu.com/s?wd=%E6%AF%94%E5%AE%89%E5%9F%BA%E6%81%92%E7%AD%89%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "比安基恒等式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AF%94%E5%AE%89%E5%9F%BA%E6%81%92%E7%AD%89%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bianchi identity",
+          "url": "https://en.wikipedia.org/w/index.php?search=bianchi%20identity"
+        }
+      ]
+    },
+    {
+      "chinese_name": "测地完备性",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "测地完备性表示所有测地线都能延拓到任意实参数。对黎曼流形，若每条测地线 $\\gamma(t)$ 都定义在 $t\\in\\mathbb R$，则称测地完备；等价描述常通过指数映射 $\\exp_p:T_pM\\to M$ 全局定义。\n\n它不同于度量空间完备性，但 Hopf-Rinow 定理在连通黎曼流形上把二者联系起来。完备性保证闭有界集合紧、任意两点有最短测地线，是全局黎曼几何的基础条件。 度量给长度和角度，联络给平行比较，曲率衡量比较失败，测地距离来自路径长度。许多结论还依赖完备性、紧致性或所用联络是否无挠并保度量，局部坐标式不能单独决定全局性质。 因此同一个局部张量公式，还要说明它对应长度、平行移动、体积还是谱性质；这些全局后果通常离不开完备性和边界条件。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "测地完备性",
+          "url": "https://www.baidu.com/s?wd=%E6%B5%8B%E5%9C%B0%E5%AE%8C%E5%A4%87%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "测地完备性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B5%8B%E5%9C%B0%E5%AE%8C%E5%A4%87%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "geodesic completeness",
+          "url": "https://en.wikipedia.org/w/index.php?search=geodesic%20completeness"
+        }
+      ]
+    },
+    {
+      "chinese_name": "霍普夫里诺定理",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "霍普夫-里诺定理把黎曼流形的若干完备性条件等价起来。对连通黎曼流形，度量完备、测地完备、闭有界子集紧，以及任意两点可由最短测地线连接，在标准表述中相互等价。\n\n它说明局部测地线方程的延拓性质能控制全局距离结构。该结论依赖正定黎曼度量；伪黎曼情形中相应等价通常失效，因此不能把洛伦兹时空的完备性照搬为距离完备。 坐标公式只是局部表达，真正的对象要在坐标变换下保持一致。切向量、余切向量、微分形式、拉回和李括号处在不同层级；$d$、$F^*$、$[X,Y]$ 和 $\\nabla$ 各自作用的对象不同。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "霍普夫里诺定理",
+          "url": "https://www.baidu.com/s?wd=%E9%9C%8D%E6%99%AE%E5%A4%AB%E9%87%8C%E8%AF%BA%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "霍普夫里诺定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9C%8D%E6%99%AE%E5%A4%AB%E9%87%8C%E8%AF%BA%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hopfrino theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=hopfrino%20theorem"
+        }
+      ]
+    },
+    {
+      "chinese_name": "第一变分公式",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "第一变分公式给出曲线长度或能量在变分下的一阶变化。若 $\\gamma_s$ 是曲线族，能量 $E=\\frac12\\int|\\dot\\gamma|^2dt$ 的一阶变分含有项 $-\\int\\langle V,\\nabla_{\\dot\\gamma}\\dot\\gamma\\rangle dt$ 加边界项；$V=\\partial_s\\gamma_s|_{0}$。\n\n因此固定端点下，能量临界曲线满足测地线方程。它不同于第二变分公式，后者研究临界点附近的稳定性；第一变分主要说明测地线为何是长度或能量的自然临界对象。 变分和流的语言把几何量看作能量或泛函的变化。第一变分给临界方程，第二变分给稳定性；梯度流、曲率流和莫尔斯理论则把局部临界信息连接到整体拓扑。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "第一变分公式",
+          "url": "https://www.baidu.com/s?wd=%E7%AC%AC%E4%B8%80%E5%8F%98%E5%88%86%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "第一变分公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AC%AC%E4%B8%80%E5%8F%98%E5%88%86%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "first variation formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=first%20variation%20formula"
+        }
+      ]
+    },
+    {
+      "chinese_name": "第二变分公式",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "第二变分公式描述测地线能量在临界曲线处的二阶变化。固定端点时，核心二次型为 $I(V,V)=\\int(\\|\\nabla_{\\dot\\gamma}V\\|^2-\\langle R(V,\\dot\\gamma)\\dot\\gamma,V\\rangle)dt$；$V$ 是沿测地线的变分场。\n\n它把曲率和测地线稳定性联系起来。第一变分给测地线方程，第二变分决定局部极小性；共轭点出现时指标形式退化，莫尔斯指标定理进一步计算负方向个数。 变分和流的语言把几何量看作能量或泛函的变化。第一变分给临界方程，第二变分给稳定性；梯度流、曲率流和莫尔斯理论则把局部临界信息连接到整体拓扑。 局部坐标能给出计算公式，但对象本身要能在图册之间粘合；这也是切丛、余切丛、形式和联络需要分层说明的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "第二变分公式",
+          "url": "https://www.baidu.com/s?wd=%E7%AC%AC%E4%BA%8C%E5%8F%98%E5%88%86%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "第二变分公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AC%AC%E4%BA%8C%E5%8F%98%E5%88%86%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "second variation formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=second%20variation%20formula"
+        }
+      ]
+    },
+    {
+      "chinese_name": "拉普拉斯贝尔特拉米算子",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "拉普拉斯-贝尔特拉米算子是黎曼流形上函数的自然二阶算子。对函数 $f$，可写 $\\Delta f=\\operatorname{div}(\\nabla f)$；局部坐标中 $\\Delta f=|g|^{-1/2}\\partial_i(|g|^{1/2}g^{ij}\\partial_j f)$。\n\n它推广欧氏拉普拉斯算子，依赖度量而非仅依赖光滑结构。调和函数满足 $\\Delta f=0$，热方程和谱几何则研究 $\\partial_tu=\\Delta u$ 及其特征值。 几何分析把曲率条件转化为偏微分算子和积分不等式的估计，核心对象常在 $\\Delta$、$\\nabla$ 与体积测度之间来回切换。与纯拓扑不变量不同，这些估计对度量缩放、边界条件和曲率下界敏感，因此常用于控制热流、特征值和紧性。 这些工具把几何假设转化为可迭代的不等式或核估计，进而影响正则性、收敛和谱的离散性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拉普拉斯贝尔特拉米算子",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E8%B4%9D%E5%B0%94%E7%89%B9%E6%8B%89%E7%B1%B3%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拉普拉斯贝尔特拉米算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E8%B4%9D%E5%B0%94%E7%89%B9%E6%8B%89%E7%B1%B3%E7%AE%97%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "laplacian beltrami operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=laplacian%20beltrami%20operator"
+        }
+      ]
+    },
+    {
+      "chinese_name": "调和函数",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "调和函数是在黎曼流形上拉普拉斯-贝尔特拉米算子为零的函数。它满足 $\\Delta f=0$，其中 $\\Delta=\\operatorname{div}\\nabla$；在欧氏空间中这回到熟悉的二阶偏微分方程。\n\n调和性不同于函数取常数，紧无边界连通流形上调和函数才被最大值原理迫为常数。调和函数与能量极小、平均值性质、热流稳态和位势理论密切相关。 几何分析把曲率条件转化为偏微分算子和积分不等式的估计，核心对象常在 $\\Delta$、$\\nabla$ 与体积测度之间来回切换。与纯拓扑不变量不同，这些估计对度量缩放、边界条件和曲率下界敏感，因此常用于控制热流、特征值和紧性。 这些工具把几何假设转化为可迭代的不等式或核估计，进而影响正则性、收敛和谱的离散性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "调和函数",
+          "url": "https://www.baidu.com/s?wd=%E8%B0%83%E5%92%8C%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "调和函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B0%83%E5%92%8C%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "harmonic function",
+          "url": "https://en.wikipedia.org/w/index.php?search=harmonic%20function"
+        }
+      ]
+    },
+    {
+      "chinese_name": "热核",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "热核是热方程的基本解，描述热量从一点扩散到另一点的密度。它常写 $K_t(x,y)$，满足 $(\\partial_t-\\Delta_x)K_t(x,y)=0$ 且 $K_t(x,y)\\to\\delta_y(x)$；$\\Delta$ 是拉普拉斯算子。\n\n热核不仅是分析对象，也编码几何信息。短时间展开中的系数含有曲率，迹 $\\operatorname{Tr}(e^{-t\\Delta})$ 连接谱与体积；它不同于 Green 函数，后者对应椭圆方程的逆算子。 几何分析把曲率条件转化为偏微分算子和积分不等式的估计，核心对象常在 $\\Delta$、$\\nabla$ 与体积测度之间来回切换。与纯拓扑不变量不同，这些估计对度量缩放、边界条件和曲率下界敏感，因此常用于控制热流、特征值和紧性。 这些工具把几何假设转化为可迭代的不等式或核估计，进而影响正则性、收敛和谱的离散性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "热核",
+          "url": "https://www.baidu.com/s?wd=%E7%83%AD%E6%A0%B8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "热核",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%83%AD%E6%A0%B8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "thermal kernel",
+          "url": "https://en.wikipedia.org/w/index.php?search=thermal%20kernel"
+        }
+      ]
+    },
+    {
+      "chinese_name": "体积比较定理",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "体积比较定理用曲率下界或上界控制测地球体积。Bishop-Gromov 定理中，若 $\\operatorname{Ric}\\ge(n-1)k$，则 $\\operatorname{Vol}B(p,r)/V_k(r)$ 随 $r$ 单调不增；$V_k(r)$ 是常曲率模型空间球体积。\n\n它把里奇曲率与全局体积增长联系起来。该结果不同于截面曲率比较，使用的是平均方向的弯曲信息；它用于紧性定理、群增长估计和几何分析中的积分控制。 几何分析把曲率条件转化为偏微分算子和积分不等式的估计，核心对象常在 $\\Delta$、$\\nabla$ 与体积测度之间来回切换。与纯拓扑不变量不同，这些估计对度量缩放、边界条件和曲率下界敏感，因此常用于控制热流、特征值和紧性。 这些工具把几何假设转化为可迭代的不等式或核估计，进而影响正则性、收敛和谱的离散性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "体积比较定理",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%93%E7%A7%AF%E6%AF%94%E8%BE%83%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "体积比较定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%93%E7%A7%AF%E6%AF%94%E8%BE%83%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "volume comparison theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=volume%20comparison%20theorem"
+        }
+      ]
+    },
+    {
+      "chinese_name": "邦内迈尔斯定理",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "邦内-迈尔斯定理说明正的里奇曲率下界迫使流形直径有限。若完备 $n$ 维黎曼流形满足 $\\operatorname{Ric}\\ge(n-1)k>0$，则 $\\operatorname{diam}M\\le\\pi/\\sqrt{k}$。\n\n它还推出该流形紧且基本群有限。这个结论使用的是里奇曲率而非截面曲率；与 Hopf-Rinow 定理配合，曲率下界转化为全局拓扑和距离限制。 几何分析把曲率条件转化为偏微分算子和积分不等式的估计，核心对象常在 $\\Delta$、$\\nabla$ 与体积测度之间来回切换。与纯拓扑不变量不同，这些估计对度量缩放、边界条件和曲率下界敏感，因此常用于控制热流、特征值和紧性。 这些工具把几何假设转化为可迭代的不等式或核估计，进而影响正则性、收敛和谱的离散性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "邦内迈尔斯定理",
+          "url": "https://www.baidu.com/s?wd=%E9%82%A6%E5%86%85%E8%BF%88%E5%B0%94%E6%96%AF%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "邦内迈尔斯定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%82%A6%E5%86%85%E8%BF%88%E5%B0%94%E6%96%AF%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bonne myers theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=bonne%20myers%20theorem"
+        }
+      ]
+    },
+    {
+      "chinese_name": "拉普拉斯比较定理",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "拉普拉斯比较定理估计距离函数的拉普拉斯。若里奇曲率满足适当下界，则距离函数 $r(x)=d(p,x)$ 在割迹外满足 $\\Delta r\\le (n-1)\\frac{s_k'(r)}{s_k(r)}$ 一类不等式；$s_k$ 来自常曲率模型。\n\n它是体积比较和最大值方法的重要输入。与 Hessian 比较相比，拉普拉斯比较只取迹，因此条件可弱化为里奇曲率界；割迹处需用弱意义或屏障意义处理。 几何分析把曲率条件转化为偏微分算子和积分不等式的估计，核心对象常在 $\\Delta$、$\\nabla$ 与体积测度之间来回切换。与纯拓扑不变量不同，这些估计对度量缩放、边界条件和曲率下界敏感，因此常用于控制热流、特征值和紧性。 这些工具把几何假设转化为可迭代的不等式或核估计，进而影响正则性、收敛和谱的离散性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拉普拉斯比较定理",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E6%AF%94%E8%BE%83%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拉普拉斯比较定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E6%AF%94%E8%BE%83%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "laplace comparison theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=laplace%20comparison%20theorem"
+        }
+      ]
+    },
+    {
+      "chinese_name": "切格常数",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "切格常数度量流形被超曲面分割的等周瓶颈。对紧黎曼流形，$h(M)=\\inf_A \\frac{\\operatorname{Area}(\\partial A)}{\\min(\\operatorname{Vol}A,\\operatorname{Vol}(M\\setminus A))}$；$A$ 在适当区域中取遍。\n\n它连接几何分割和谱。切格不等式给出 $\\lambda_1\\ge h(M)^2/4$，其中 $\\lambda_1$ 是拉普拉斯第一非零特征值；因此切格常数不同于单纯体积或直径，强调是否存在窄颈。 几何分析把曲率条件转化为偏微分算子和积分不等式的估计，核心对象常在 $\\Delta$、$\\nabla$ 与体积测度之间来回切换。与纯拓扑不变量不同，这些估计对度量缩放、边界条件和曲率下界敏感，因此常用于控制热流、特征值和紧性。 这些工具把几何假设转化为可迭代的不等式或核估计，进而影响正则性、收敛和谱的离散性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "切格常数",
+          "url": "https://www.baidu.com/s?wd=%E5%88%87%E6%A0%BC%E5%B8%B8%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "切格常数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%87%E6%A0%BC%E5%B8%B8%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tangential constant",
+          "url": "https://en.wikipedia.org/w/index.php?search=tangential%20constant"
+        }
+      ]
+    },
+    {
+      "chinese_name": "索伯列夫不等式",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "索伯列夫不等式把函数的积分范数由其导数范数控制。欧氏形式如 $\\|u\\|_{L^{p^*}}\\le C\\|\\nabla u\\|_{L^p}$，其中 $p^*=np/(n-p)$；在黎曼流形上常需体积、曲率或等周条件保证常数。\n\n它不同于点态估计，控制的是整体可积性提升。几何分析中，索伯列夫不等式支撑椭圆正则性、热核估计和非线性方程的先验估计。 几何分析把曲率条件转化为偏微分算子和积分不等式的估计，核心对象常在 $\\Delta$、$\\nabla$ 与体积测度之间来回切换。与纯拓扑不变量不同，这些估计对度量缩放、边界条件和曲率下界敏感，因此常用于控制热流、特征值和紧性。 这些工具把几何假设转化为可迭代的不等式或核估计，进而影响正则性、收敛和谱的离散性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "索伯列夫不等式",
+          "url": "https://www.baidu.com/s?wd=%E7%B4%A2%E4%BC%AF%E5%88%97%E5%A4%AB%E4%B8%8D%E7%AD%89%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "索伯列夫不等式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B4%A2%E4%BC%AF%E5%88%97%E5%A4%AB%E4%B8%8D%E7%AD%89%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "sobolev inequality",
+          "url": "https://en.wikipedia.org/w/index.php?search=sobolev%20inequality"
+        }
+      ]
+    },
+    {
+      "chinese_name": "等周不等式",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "等周不等式比较区域体积与边界面积，刻画给定体积下边界最小的形状。欧氏空间中典型形式为 $\\operatorname{Area}(\\partial\\Omega)^n\\ge C_n\\operatorname{Vol}(\\Omega)^{n-1}$；等号由球达到。\n\n在黎曼流形上，曲率和拓扑会改变最佳常数。它不同于切格常数的全局瓶颈比值，但二者紧密相关；最小曲面、几何测度论和偏微分方程都使用它控制紧性。 几何分析把曲率条件转化为偏微分算子和积分不等式的估计，核心对象常在 $\\Delta$、$\\nabla$ 与体积测度之间来回切换。与纯拓扑不变量不同，这些估计对度量缩放、边界条件和曲率下界敏感，因此常用于控制热流、特征值和紧性。 这些工具把几何假设转化为可迭代的不等式或核估计，进而影响正则性、收敛和谱的离散性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "等周不等式",
+          "url": "https://www.baidu.com/s?wd=%E7%AD%89%E5%91%A8%E4%B8%8D%E7%AD%89%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "等周不等式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AD%89%E5%91%A8%E4%B8%8D%E7%AD%89%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "equal period inequality",
+          "url": "https://en.wikipedia.org/w/index.php?search=equal%20period%20inequality"
+        }
+      ]
+    },
+    {
+      "chinese_name": "最小曲面",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "最小曲面是面积泛函的一阶临界子流形。对曲面浸入 $F:\\Sigma\\to M$，条件可写平均曲率向量 $H=0$；在欧氏图形情形，它满足非线性椭圆方程。\n\n名称不表示全局面积最小，只表示局部一阶变分为零。它与极小子流形是同一思想的二维版本；稳定性还要看第二变分，边界条件和奇点会显著影响结论。 子流形问题需要同时看内蕴度量和外在嵌入：$II$ 记录法向弯曲，$H$ 是其迹，曲率方程说明环境曲率怎样传给子流形。最小性、全测地性和流演化是不同条件，分别对应一阶变分、二阶法向弯曲和随时间改变的几何对象。 这也使同一子流形在不同环境度量下可能拥有不同外在曲率，内蕴和外在数据必须分开记录。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最小曲面",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E5%B0%8F%E6%9B%B2%E9%9D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最小曲面",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E5%B0%8F%E6%9B%B2%E9%9D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "minimal surface",
+          "url": "https://en.wikipedia.org/w/index.php?search=minimal%20surface"
+        }
+      ]
+    },
+    {
+      "chinese_name": "平均曲率",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "平均曲率是第二基本形式的迹，描述子流形面积一阶变分。若 $II$ 是第二基本形式，平均曲率向量常写 $H=\\operatorname{tr}_g II$；超曲面中也可写为主曲率之和或平均。\n\n它不同于高斯曲率，后者是曲面内蕴量；平均曲率依赖嵌入的法向弯曲。$H=0$ 给出最小曲面，平均曲率流则沿 $H$ 的方向改变子流形以减少面积。 子流形问题需要同时看内蕴度量和外在嵌入：$II$ 记录法向弯曲，$H$ 是其迹，曲率方程说明环境曲率怎样传给子流形。最小性、全测地性和流演化是不同条件，分别对应一阶变分、二阶法向弯曲和随时间改变的几何对象。 这也使同一子流形在不同环境度量下可能拥有不同外在曲率，内蕴和外在数据必须分开记录。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平均曲率",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E5%9D%87%E6%9B%B2%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平均曲率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E5%9D%87%E6%9B%B2%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "average curvature",
+          "url": "https://en.wikipedia.org/w/index.php?search=average%20curvature"
+        }
+      ]
+    },
+    {
+      "chinese_name": "第二基本形式",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "第二基本形式记录子流形切向量在环境中求导后冒出的法向部分。若 $X,Y$ 为子流形切向量，$II(X,Y)=(\\nabla^M_XY)^\\perp$；这里 $\\nabla^M$ 是环境联络，$\\perp$ 表示法向投影。\n\n它是外在曲率，不由子流形内在度量单独决定。第二基本形式的迹是平均曲率，行列式在曲面情形与高斯曲率相关；高斯方程和科达齐方程描述它与内蕴曲率的相容性。 子流形问题需要同时看内蕴度量和外在嵌入：$II$ 记录法向弯曲，$H$ 是其迹，曲率方程说明环境曲率怎样传给子流形。最小性、全测地性和流演化是不同条件，分别对应一阶变分、二阶法向弯曲和随时间改变的几何对象。 这也使同一子流形在不同环境度量下可能拥有不同外在曲率，内蕴和外在数据必须分开记录。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "第二基本形式",
+          "url": "https://www.baidu.com/s?wd=%E7%AC%AC%E4%BA%8C%E5%9F%BA%E6%9C%AC%E5%BD%A2%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "第二基本形式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AC%AC%E4%BA%8C%E5%9F%BA%E6%9C%AC%E5%BD%A2%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "second basic form",
+          "url": "https://en.wikipedia.org/w/index.php?search=second%20basic%20form"
+        }
+      ]
+    },
+    {
+      "chinese_name": "高斯方程",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "高斯方程把子流形内蕴曲率和环境曲率、第二基本形式联系起来。典型形式为 $\\langle R^M(X,Y)Z,W\\rangle=\\langle R^N(X,Y)Z,W\\rangle+\\langle II(X,W),II(Y,Z)\\rangle-\\langle II(X,Z),II(Y,W)\\rangle$。\n\n它说明外在弯曲会修正子流形自身曲率。高斯方程不同于科达齐方程，后者控制 $II$ 的协变导数对称性；二者共同给出子流形嵌入的基本相容条件。 子流形问题需要同时看内蕴度量和外在嵌入：$II$ 记录法向弯曲，$H$ 是其迹，曲率方程说明环境曲率怎样传给子流形。最小性、全测地性和流演化是不同条件，分别对应一阶变分、二阶法向弯曲和随时间改变的几何对象。 这也使同一子流形在不同环境度量下可能拥有不同外在曲率，内蕴和外在数据必须分开记录。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "高斯方程",
+          "url": "https://www.baidu.com/s?wd=%E9%AB%98%E6%96%AF%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "高斯方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%AB%98%E6%96%AF%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gauss equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=gauss%20equation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "科达齐方程",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "科达齐方程描述第二基本形式的协变导数如何与环境曲率相容。对超曲面的一种形式为 $(\\nabla_XII)(Y,Z)-(\\nabla_YII)(X,Z)=(R^N(X,Y)Z)^\\perp$；右边取环境曲率的法向部分。\n\n它不是曲率本身的定义，而是嵌入数据必须满足的微分条件。与高斯方程相比，高斯方程约束曲率代数项，科达齐方程约束法向弯曲的一阶变化。 子流形问题需要同时看内蕴度量和外在嵌入：$II$ 记录法向弯曲，$H$ 是其迹，曲率方程说明环境曲率怎样传给子流形。最小性、全测地性和流演化是不同条件，分别对应一阶变分、二阶法向弯曲和随时间改变的几何对象。 这也使同一子流形在不同环境度量下可能拥有不同外在曲率，内蕴和外在数据必须分开记录。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "科达齐方程",
+          "url": "https://www.baidu.com/s?wd=%E7%A7%91%E8%BE%BE%E9%BD%90%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "科达齐方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A7%91%E8%BE%BE%E9%BD%90%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cordazzi equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=cordazzi%20equation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "里奇流",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "里奇流按里奇曲率演化黎曼度量，方程为 $\\partial_t g=-2\\operatorname{Ric}(g)$。这里 $g(t)$ 是随时间变化的度量，$\\operatorname{Ric}$ 是对应的里奇张量。\n\n它像非线性热方程，会平滑度量同时可能形成奇点。里奇流不同于平均曲率流，前者演化内在度量，后者演化嵌入子流形；三维几何化中需配合手术处理奇性。 子流形问题需要同时看内蕴度量和外在嵌入：$II$ 记录法向弯曲，$H$ 是其迹，曲率方程说明环境曲率怎样传给子流形。最小性、全测地性和流演化是不同条件，分别对应一阶变分、二阶法向弯曲和随时间改变的几何对象。 这也使同一子流形在不同环境度量下可能拥有不同外在曲率，内蕴和外在数据必须分开记录。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "里奇流",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8C%E5%A5%87%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "里奇流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8C%E5%A5%87%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "rich flow",
+          "url": "https://en.wikipedia.org/w/index.php?search=rich%20flow"
+        }
+      ]
+    },
+    {
+      "chinese_name": "平均曲率流",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "平均曲率流让子流形沿平均曲率向量方向运动。若浸入为 $F_t:\\Sigma\\to M$，方程写 $\\partial_tF=H$；$H$ 是平均曲率向量，指向面积最快下降方向。\n\n它是子流形面积泛函的梯度流。与里奇流不同，它改变嵌入而非背景度量；凸超曲面会收缩，复杂初值可能形成颈缩和奇点，因此弱解与手术理论很重要。 子流形问题需要同时看内蕴度量和外在嵌入：$II$ 记录法向弯曲，$H$ 是其迹，曲率方程说明环境曲率怎样传给子流形。最小性、全测地性和流演化是不同条件，分别对应一阶变分、二阶法向弯曲和随时间改变的几何对象。 这也使同一子流形在不同环境度量下可能拥有不同外在曲率，内蕴和外在数据必须分开记录。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平均曲率流",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E5%9D%87%E6%9B%B2%E7%8E%87%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平均曲率流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E5%9D%87%E6%9B%B2%E7%8E%87%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mean curvature flow",
+          "url": "https://en.wikipedia.org/w/index.php?search=mean%20curvature%20flow"
+        }
+      ]
+    },
+    {
+      "chinese_name": "极小子流形",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "极小子流形是平均曲率向量处处为零的子流形。若浸入 $F:\\Sigma^m\\to M$ 的第一变分满足 $\\delta\\operatorname{Vol}(V)=-\\int\\langle H,V\\rangle d\\mu$，则 $H=0$ 等价于体积临界。\n\n它推广最小曲面到任意维数和余维数。极小不等于全局体积最小，稳定性由第二变分决定；校准几何、调和映射和几何测度论都研究这类对象。 子流形问题需要同时看内蕴度量和外在嵌入：$II$ 记录法向弯曲，$H$ 是其迹，曲率方程说明环境曲率怎样传给子流形。最小性、全测地性和流演化是不同条件，分别对应一阶变分、二阶法向弯曲和随时间改变的几何对象。 这也使同一子流形在不同环境度量下可能拥有不同外在曲率，内蕴和外在数据必须分开记录。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "极小子流形",
+          "url": "https://www.baidu.com/s?wd=%E6%9E%81%E5%B0%8F%E5%AD%90%E6%B5%81%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "极小子流形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9E%81%E5%B0%8F%E5%AD%90%E6%B5%81%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "minimal particle manifold",
+          "url": "https://en.wikipedia.org/w/index.php?search=minimal%20particle%20manifold"
+        }
+      ]
+    },
+    {
+      "chinese_name": "辛流形",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "辛流形是带有闭且非退化二形式的偶维流形。结构为 $(M,\\omega)$，满足 $d\\omega=0$，且对每个非零 $v$ 存在 $w$ 使 $\\omega(v,w)\\ne0$；非退化性给出 $TM\\cong T^*M$。\n\n它不同于黎曼流形，不定义长度和角度，而定义面积型配对。达布定理说明辛结构局部都像标准形式，真正信息在全局拓扑、哈密顿动力学和拉格朗日子流形中。 这部分结构与黎曼几何的长度直觉不同，重点在 $\\omega$、$J$、$\\bar\\partial$ 或泊松括号的相容关系。辛几何局部由达布定理变得标准，复几何和凯勒几何则保留全纯坐标、度量与上同调之间的强约束。 因此局部标准形不能替代全局不变量，线丛、上同调、约化和群作用仍会留下实质差异。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "辛流形",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%9B%E6%B5%81%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "辛流形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%9B%E6%B5%81%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "symplectic manifold",
+          "url": "https://en.wikipedia.org/w/index.php?search=symplectic%20manifold"
+        }
+      ]
+    },
+    {
+      "chinese_name": "辛形式",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "辛形式是流形上的闭非退化二形式。标准模型为 $\\omega_0=\\sum_i dq_i\\wedge dp_i$；闭性 $d\\omega=0$ 保证局部哈密顿结构相容，非退化性保证每个函数有唯一哈密顿向量场。\n\n它不同于任意二形式，任意二形式可能退化或不闭。辛形式给出相空间的基本几何，而不是度量；由它定义的泊松括号和辛体积在经典力学中保持不变。 这部分结构与黎曼几何的长度直觉不同，重点在 $\\omega$、$J$、$\\bar\\partial$ 或泊松括号的相容关系。辛几何局部由达布定理变得标准，复几何和凯勒几何则保留全纯坐标、度量与上同调之间的强约束。 因此局部标准形不能替代全局不变量，线丛、上同调、约化和群作用仍会留下实质差异。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "辛形式",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%9B%E5%BD%A2%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "辛形式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%9B%E5%BD%A2%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "symplectic form",
+          "url": "https://en.wikipedia.org/w/index.php?search=symplectic%20form"
+        }
+      ]
+    },
+    {
+      "chinese_name": "达布定理",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "达布定理说明所有辛流形在局部坐标中没有曲率型不变量。对辛形式 $\\omega$，每点附近存在坐标 $(q_i,p_i)$ 使 $\\omega=\\sum_i dq_i\\wedge dp_i$；这就是标准辛形式。\n\n它不同于黎曼几何，黎曼度量局部仍有曲率不变量。达布定理表明辛几何的局部问题较刚性，全局拓扑、边界条件和哈密顿作用才承载主要信息。 这部分结构与黎曼几何的长度直觉不同，重点在 $\\omega$、$J$、$\\bar\\partial$ 或泊松括号的相容关系。辛几何局部由达布定理变得标准，复几何和凯勒几何则保留全纯坐标、度量与上同调之间的强约束。 因此局部标准形不能替代全局不变量，线丛、上同调、约化和群作用仍会留下实质差异。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "达布定理",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%BE%E5%B8%83%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "达布定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%BE%E5%B8%83%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "darboux theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=darboux%20theorem"
+        }
+      ]
+    },
+    {
+      "chinese_name": "哈密顿向量场",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "哈密顿向量场由函数和辛形式唯一确定。给定辛流形 $(M,\\omega)$ 和函数 $H$，向量场 $X_H$ 满足 $\\iota_{X_H}\\omega=dH$，也常写 $\\omega(X_H,\\cdot)=dH$。\n\n它不同于梯度向量场，梯度依赖度量并指向函数增大方向，哈密顿向量场依赖辛形式并保持 $H$。在正则坐标中，方程给出 $\\dot q_i=\\partial H/\\partial p_i$、$\\dot p_i=-\\partial H/\\partial q_i$。 这部分结构与黎曼几何的长度直觉不同，重点在 $\\omega$、$J$、$\\bar\\partial$ 或泊松括号的相容关系。辛几何局部由达布定理变得标准，复几何和凯勒几何则保留全纯坐标、度量与上同调之间的强约束。 因此局部标准形不能替代全局不变量，线丛、上同调、约化和群作用仍会留下实质差异。 这一区分使能量守恒和辛体积保持成为同一动力学事实。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "哈密顿向量场",
+          "url": "https://www.baidu.com/s?wd=%E5%93%88%E5%AF%86%E9%A1%BF%E5%90%91%E9%87%8F%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "哈密顿向量场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%93%88%E5%AF%86%E9%A1%BF%E5%90%91%E9%87%8F%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hamilton vector field",
+          "url": "https://en.wikipedia.org/w/index.php?search=hamilton%20vector%20field"
+        }
+      ]
+    },
+    {
+      "chinese_name": "泊松流形",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "泊松流形带有一个使函数代数成为李代数的括号。括号 $\\{f,g\\}$ 满足反对称、雅可比恒等式和 Leibniz 规则；等价地由双向量 $\\pi$ 给出 $\\{f,g\\}=\\pi(df,dg)$，并满足 $[\\pi,\\pi]=0$。\n\n它推广辛流形，允许泊松张量退化。辛流形的每个辛叶维数相同，而泊松流形可分解成不同维数的辛叶；约化、动量映射和非交换几何都用到这种结构。 这部分结构与黎曼几何的长度直觉不同，重点在 $\\omega$、$J$、$\\bar\\partial$ 或泊松括号的相容关系。辛几何局部由达布定理变得标准，复几何和凯勒几何则保留全纯坐标、度量与上同调之间的强约束。 因此局部标准形不能替代全局不变量，线丛、上同调、约化和群作用仍会留下实质差异。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "泊松流形",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%8A%E6%9D%BE%E6%B5%81%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "泊松流形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%8A%E6%9D%BE%E6%B5%81%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "poisson manifold",
+          "url": "https://en.wikipedia.org/w/index.php?search=poisson%20manifold"
+        }
+      ]
+    },
+    {
+      "chinese_name": "动量映射",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "动量映射把哈密顿群作用的无穷小生成元表示为函数。若李群 $G$ 作用在辛流形 $(M,\\omega)$ 上，映射 $\\mu:M\\to\\mathfrak g^*$ 满足 $d\\langle\\mu,\\xi\\rangle=\\iota_{\\xi_M}\\omega$；$\\xi_M$ 是由 $\\xi\\in\\mathfrak g$ 生成的向量场。\n\n它不同于普通守恒量的列表，而是与李代数对偶配合的整体对象。辛约化中，$\\mu^{-1}(0)/G$ 给出降维后的相空间，群对称和守恒律在这里统一表达。 这部分结构与黎曼几何的长度直觉不同，重点在 $\\omega$、$J$、$\\bar\\partial$ 或泊松括号的相容关系。辛几何局部由达布定理变得标准，复几何和凯勒几何则保留全纯坐标、度量与上同调之间的强约束。 因此局部标准形不能替代全局不变量，线丛、上同调、约化和群作用仍会留下实质差异。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "动量映射",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%A8%E9%87%8F%E6%98%A0%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "动量映射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%A8%E9%87%8F%E6%98%A0%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "momentum mapping",
+          "url": "https://en.wikipedia.org/w/index.php?search=momentum%20mapping"
+        }
+      ]
+    },
+    {
+      "chinese_name": "凯勒流形",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "凯勒流形同时具有复结构、黎曼度量和辛形式，并且三者相容。若 $J$ 是复结构，$g$ 是度量，定义 $\\omega(X,Y)=g(JX,Y)$；凯勒条件为 $d\\omega=0$。\n\n它比复流形多了闭的 Hermitian 形式，比辛流形多了可积复结构。凯勒恒等式带来霍奇分解和强上同调约束，复射影簇的光滑部分给出重要例子。 这部分结构与黎曼几何的长度直觉不同，重点在 $\\omega$、$J$、$\\bar\\partial$ 或泊松括号的相容关系。辛几何局部由达布定理变得标准，复几何和凯勒几何则保留全纯坐标、度量与上同调之间的强约束。 因此局部标准形不能替代全局不变量，线丛、上同调、约化和群作用仍会留下实质差异。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "凯勒流形",
+          "url": "https://www.baidu.com/s?wd=%E5%87%AF%E5%8B%92%E6%B5%81%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "凯勒流形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%AF%E5%8B%92%E6%B5%81%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "keller manifold",
+          "url": "https://en.wikipedia.org/w/index.php?search=keller%20manifold"
+        }
+      ]
+    },
+    {
+      "chinese_name": "复流形",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "复流形是局部同胚于 $\\mathbb C^n$ 且坐标变换全纯的空间。其复结构可由张量 $J:TM\\to TM$ 表示，满足 $J^2=-1$，并需满足可积性条件才能来自全纯坐标。\n\n它不同于几乎复流形，后者只给 $J^2=-1$。复流形上的切丛可分解为 $T^{1,0}M\\oplus T^{0,1}M$，全纯函数、Dolbeault 上同调和埃尔米特度量都建立在这上面。 这部分结构与黎曼几何的长度直觉不同，重点在 $\\omega$、$J$、$\\bar\\partial$ 或泊松括号的相容关系。辛几何局部由达布定理变得标准，复几何和凯勒几何则保留全纯坐标、度量与上同调之间的强约束。 因此局部标准形不能替代全局不变量，线丛、上同调、约化和群作用仍会留下实质差异。 Newlander-Nirenberg 定理正是把这种可积性转化为坐标存在性的标准结果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "复流形",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%8D%E6%B5%81%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "复流形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%8D%E6%B5%81%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "complex manifold",
+          "url": "https://en.wikipedia.org/w/index.php?search=complex%20manifold"
+        }
+      ]
+    },
+    {
+      "chinese_name": "埃尔米特度量",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "埃尔米特度量是在复向量丛或复流形切丛上的正定 Hermitian 内积。对复流形，它满足 $g(JX,JY)=g(X,Y)$，相应二形式为 $\\omega(X,Y)=g(JX,Y)$。\n\n它与黎曼度量相容但保留复结构。并非每个埃尔米特度量都是凯勒度量，凯勒还要求 $d\\omega=0$；陈联络则是在全纯向量丛上与埃尔米特度量相容的自然联络。 这部分结构与黎曼几何的长度直觉不同，重点在 $\\omega$、$J$、$\\bar\\partial$ 或泊松括号的相容关系。辛几何局部由达布定理变得标准，复几何和凯勒几何则保留全纯坐标、度量与上同调之间的强约束。 因此局部标准形不能替代全局不变量，线丛、上同调、约化和群作用仍会留下实质差异。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "埃尔米特度量",
+          "url": "https://www.baidu.com/s?wd=%E5%9F%83%E5%B0%94%E7%B1%B3%E7%89%B9%E5%BA%A6%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "埃尔米特度量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9F%83%E5%B0%94%E7%B1%B3%E7%89%B9%E5%BA%A6%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hermitian measure",
+          "url": "https://en.wikipedia.org/w/index.php?search=hermitian%20measure"
+        }
+      ]
+    },
+    {
+      "chinese_name": "陈联络",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "陈联络是全纯埃尔米特向量丛上的自然联络。对全纯向量丛 $E$ 和埃尔米特度量 $h$，陈联络 $\\nabla$ 满足 $\\nabla^{0,1}=\\bar\\partial_E$ 且 $d h(s,t)=h(\\nabla s,t)+h(s,\\nabla t)$。\n\n它不同于任意复联络，因为同时尊重全纯结构和度量。陈联络的曲率为 $(1,1)$ 型，陈类可由其曲率形式通过陈-韦伊理论表示。 这部分结构与黎曼几何的长度直觉不同，重点在 $\\omega$、$J$、$\\bar\\partial$ 或泊松括号的相容关系。辛几何局部由达布定理变得标准，复几何和凯勒几何则保留全纯坐标、度量与上同调之间的强约束。 因此局部标准形不能替代全局不变量，线丛、上同调、约化和群作用仍会留下实质差异。 因而曲率型别直接反映全纯结构与度量是否彼此相容。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "陈联络",
+          "url": "https://www.baidu.com/s?wd=%E9%99%88%E8%81%94%E7%BB%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "陈联络",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%99%88%E8%81%94%E7%BB%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "contact chen",
+          "url": "https://en.wikipedia.org/w/index.php?search=contact%20chen"
+        }
+      ]
+    },
+    {
+      "chinese_name": "霍奇分解",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "霍奇分解把紧定向黎曼流形上的微分形式分成调和、恰当和余恰当部分。典型形式为 $\\Omega^k=\\mathcal H^k\\oplus d\\Omega^{k-1}\\oplus d^*\\Omega^{k+1}$；$\\mathcal H^k=\\ker\\Delta$。\n\n它把德拉姆上同调与调和形式等同起来：$H^k_{dR}(M)\\cong\\mathcal H^k$。在凯勒流形上还有 $(p,q)$ 型分解，给复几何带来更强的上同调结构。 这部分结构与黎曼几何的长度直觉不同，重点在 $\\omega$、$J$、$\\bar\\partial$ 或泊松括号的相容关系。辛几何局部由达布定理变得标准，复几何和凯勒几何则保留全纯坐标、度量与上同调之间的强约束。 因此局部标准形不能替代全局不变量，线丛、上同调、约化和群作用仍会留下实质差异。 这种唯一调和代表让解析估计可以直接读取拓扑上同调。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "霍奇分解",
+          "url": "https://www.baidu.com/s?wd=%E9%9C%8D%E5%A5%87%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "霍奇分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9C%8D%E5%A5%87%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hodge decomposition",
+          "url": "https://en.wikipedia.org/w/index.php?search=hodge%20decomposition"
+        }
+      ]
+    },
+    {
+      "chinese_name": "陈类",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "陈类是复向量丛的示性类，记录其整体扭曲。总陈类写作 $c(E)=1+c_1(E)+c_2(E)+\\cdots$，其中 $c_i(E)\\in H^{2i}(M;\\mathbb Z)$；线丛的 $c_1$ 已能刻画许多信息。\n\n它不同于欧拉类和庞特里亚金类，专门针对复向量丛。通过陈-韦伊理论，陈类可由曲率形式的多项式代表；代数几何中它连接线丛、交数和黎曼罗赫公式。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "陈类",
+          "url": "https://www.baidu.com/s?wd=%E9%99%88%E7%B1%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "陈类",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%99%88%E7%B1%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "chern class",
+          "url": "https://en.wikipedia.org/w/index.php?search=chern%20class"
+        }
+      ]
+    },
+    {
+      "chinese_name": "欧拉类",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "欧拉类是定向实向量丛的最高维示性类，度量其是否存在处处非零截面。对秩 $n$ 向量丛 $E\\to M$，$e(E)\\in H^n(M;\\mathbb Z)$；若有横截零截面的截面，其零点带符号计数与 $\\langle e(E),[M]\\rangle$ 相关。\n\n它与陈类不同，陈类用于复向量丛；与庞特里亚金类也不同，后者位于 $4i$ 次上同调。切丛的欧拉类积分给出欧拉示性数，是高斯-博内定理的核心。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "欧拉类",
+          "url": "https://www.baidu.com/s?wd=%E6%AC%A7%E6%8B%89%E7%B1%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "欧拉类",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AC%A7%E6%8B%89%E7%B1%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "euler class",
+          "url": "https://en.wikipedia.org/w/index.php?search=euler%20class"
+        }
+      ]
+    },
+    {
+      "chinese_name": "庞特里亚金类",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "庞特里亚金类是实向量丛的示性类，通常由复化后的陈类定义。若 $E$ 是实向量丛，则 $p_i(E)=(-1)^i c_{2i}(E\\otimes\\mathbb C)$，属于 $H^{4i}(M;\\mathbb Z)$。\n\n它不同于欧拉类，欧拉类依赖定向且在秩的最高次数；庞特里亚金类可在多个 $4i$ 次出现。它们参与签名定理、指数定理和流形可微结构的区分。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "庞特里亚金类",
+          "url": "https://www.baidu.com/s?wd=%E5%BA%9E%E7%89%B9%E9%87%8C%E4%BA%9A%E9%87%91%E7%B1%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "庞特里亚金类",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BA%9E%E7%89%B9%E9%87%8C%E4%BA%9A%E9%87%91%E7%B1%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ponteria gold",
+          "url": "https://en.wikipedia.org/w/index.php?search=ponteria%20gold"
+        }
+      ]
+    },
+    {
+      "chinese_name": "示性类",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "示性类是从向量丛自然得到的上同调类，用来测量局部平凡但整体扭曲的程度。一般写 $c(E)\\in H^*(M;R)$，并要求对拉回满足 $c(f^*E)=f^*c(E)$。\n\n不同示性类适合不同结构群：复向量丛有陈类，定向实丛有欧拉类，实丛有庞特里亚金类。它们把丛的几何信息转化为可积分和可比较的拓扑不变量。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "示性类",
+          "url": "https://www.baidu.com/s?wd=%E7%A4%BA%E6%80%A7%E7%B1%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "示性类",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A4%BA%E6%80%A7%E7%B1%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "indicative class",
+          "url": "https://en.wikipedia.org/w/index.php?search=indicative%20class"
+        }
+      ]
+    },
+    {
+      "chinese_name": "德拉姆上同调",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "德拉姆上同调由微分形式复形定义。闭 $k$-形式和恰当 $k$-形式的商为 $H^k_{dR}(M)=\\ker(d:\\Omega^k\\to\\Omega^{k+1})/\\operatorname{im}(d:\\Omega^{k-1}\\to\\Omega^k)$。\n\n它不同于单纯同调的链空间定义，却与实系数奇异上同调自然同构。德拉姆上同调用外微分 $d^2=0$ 把积分、Stokes 定理和流形拓扑联系起来；霍奇理论还给出调和代表。 这部分结构与黎曼几何的长度直觉不同，重点在 $\\omega$、$J$、$\\bar\\partial$ 或泊松括号的相容关系。辛几何局部由达布定理变得标准，复几何和凯勒几何则保留全纯坐标、度量与上同调之间的强约束。 因此局部标准形不能替代全局不变量，线丛、上同调、约化和群作用仍会留下实质差异。 因而闭形式是否恰当成为流形洞结构的可微表达。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "德拉姆上同调",
+          "url": "https://www.baidu.com/s?wd=%E5%BE%B7%E6%8B%89%E5%A7%86%E4%B8%8A%E5%90%8C%E8%B0%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "德拉姆上同调",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BE%B7%E6%8B%89%E5%A7%86%E4%B8%8A%E5%90%8C%E8%B0%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dram cohomology",
+          "url": "https://en.wikipedia.org/w/index.php?search=dram%20cohomology"
+        }
+      ]
+    },
+    {
+      "chinese_name": "陈韦伊理论",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "陈-韦伊理论用联络曲率构造示性类的微分形式代表。若 $F_\\nabla$ 是主丛联络的曲率，$P$ 是李代数上的不变多项式，则 $P(F_\\nabla)$ 是闭形式，其上同调类与联络选择无关。\n\n它把拓扑示性类转化为可计算的曲率表达。陈类、庞特里亚金类和欧拉类都可由这种方法得到；改变联络只改变一个恰当形式，因此上同调类保持不变。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "陈韦伊理论",
+          "url": "https://www.baidu.com/s?wd=%E9%99%88%E9%9F%A6%E4%BC%8A%E7%90%86%E8%AE%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "陈韦伊理论",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%99%88%E9%9F%A6%E4%BC%8A%E7%90%86%E8%AE%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "chern weil theory",
+          "url": "https://en.wikipedia.org/w/index.php?search=chern%20weil%20theory"
+        }
+      ]
+    },
+    {
+      "chinese_name": "主丛",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "主丛是带有结构群自由传递作用的纤维丛。一个主 $G$-丛 $P\\to M$ 满足右作用 $P\\times G\\to P$，每个纤维同构于 $G$，局部有 $\\pi^{-1}(U)\\cong U\\times G$。\n\n它不同于向量丛，纤维没有线性加法，而是群的扭转副本。给定表示 $G\\to GL(V)$ 可构造伴随向量丛；联络形式、曲率形式和规范变换都自然定义在主丛上。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "主丛",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%BB%E4%B8%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "主丛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%BB%E4%B8%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "main clump",
+          "url": "https://en.wikipedia.org/w/index.php?search=main%20clump"
+        }
+      ]
+    },
+    {
+      "chinese_name": "联络形式",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "联络形式是在主丛上取值于李代数的 $1$-形式，给出水平分布。对主 $G$-丛 $P$，联络形式 $\\omega\\in\\Omega^1(P,\\mathfrak g)$ 满足 $\\omega(\\xi_P)=\\xi$ 且 $R_g^*\\omega=\\operatorname{Ad}_{g^{-1}}\\omega$。\n\n它不同于底流形上的普通一形式，因为必须与群作用相容。联络形式决定协变导数和平行移动，其外微分和括号组合成曲率形式。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "联络形式",
+          "url": "https://www.baidu.com/s?wd=%E8%81%94%E7%BB%9C%E5%BD%A2%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "联络形式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%81%94%E7%BB%9C%E5%BD%A2%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "contact form",
+          "url": "https://en.wikipedia.org/w/index.php?search=contact%20form"
+        }
+      ]
+    },
+    {
+      "chinese_name": "曲率形式",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "曲率形式是联络形式的结构方程，衡量水平分布不可积。若联络形式为 $\\omega$，则 $\\Omega=d\\omega+\\frac12[\\omega\\wedge\\omega]$；这里括号来自李代数，楔积来自微分形式。\n\n它不同于黎曼曲率张量的坐标分量，但在标架丛上可表达同一几何信息。曲率形式在规范理论中就是场强，陈-韦伊理论用它生成示性类代表。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "曲率形式",
+          "url": "https://www.baidu.com/s?wd=%E6%9B%B2%E7%8E%87%E5%BD%A2%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "曲率形式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9B%B2%E7%8E%87%E5%BD%A2%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "curvature form",
+          "url": "https://en.wikipedia.org/w/index.php?search=curvature%20form"
+        }
+      ]
+    },
+    {
+      "chinese_name": "规范变换",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "规范变换是主丛上覆盖恒等映射并与结构群作用相容的自同构。若局部规范为函数 $g:U\\to G$，联络形式变换为 $A^g=g^{-1}Ag+g^{-1}dg$；曲率相应变为 $F^g=g^{-1}Fg$。\n\n它不同于底流形坐标变换，改变的是纤维中的平凡化选择。规范等价的联络描述同一几何或物理场，杨-米尔斯理论和模空间都要除以这种对称性。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "规范变换",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%84%E8%8C%83%E5%8F%98%E6%8D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "规范变换",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%84%E8%8C%83%E5%8F%98%E6%8D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gauge transformation",
+          "url": "https://en.wikipedia.org/w/index.php?search=gauge%20transformation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "全测地子流形",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "全测地子流形是其中的测地线仍然是环境流形测地线的子流形。等价地，第二基本形式 $II$ 处处为零，即 $II(X,Y)=0$ 对所有切向量 $X,Y$ 成立。\n\n它比极小子流形条件更强，$II=0$ 推出平均曲率 $H=0$，反之不成立。全测地子流形的内蕴联络与环境联络完全相容，在对称空间和比较几何中常出现。 子流形问题需要同时看内蕴度量和外在嵌入：$II$ 记录法向弯曲，$H$ 是其迹，曲率方程说明环境曲率怎样传给子流形。最小性、全测地性和流演化是不同条件，分别对应一阶变分、二阶法向弯曲和随时间改变的几何对象。 这也使同一子流形在不同环境度量下可能拥有不同外在曲率，内蕴和外在数据必须分开记录。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "全测地子流形",
+          "url": "https://www.baidu.com/s?wd=%E5%85%A8%E6%B5%8B%E5%9C%B0%E5%AD%90%E6%B5%81%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "全测地子流形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%A8%E6%B5%8B%E5%9C%B0%E5%AD%90%E6%B5%81%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "full geodesic submanifold",
+          "url": "https://en.wikipedia.org/w/index.php?search=full%20geodesic%20submanifold"
+        }
+      ]
+    },
+    {
+      "chinese_name": "活动标架",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "活动标架是在流形或子流形上随点变化选择一组基向量的办法。若 $e_i$ 是局部标架，对偶余标架为 $\\theta^i$，常写 $d e_i=\\omega_i{}^j e_j$；$\\omega_i{}^j$ 是联络形式。\n\n它把几何对象转化为标架下的矩阵形式，但结果要满足坐标和标架变换规律。嘉当结构方程用活动标架表达挠率、曲率和第二基本形式。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "活动标架",
+          "url": "https://www.baidu.com/s?wd=%E6%B4%BB%E5%8A%A8%E6%A0%87%E6%9E%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "活动标架",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B4%BB%E5%8A%A8%E6%A0%87%E6%9E%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "movable frame",
+          "url": "https://en.wikipedia.org/w/index.php?search=movable%20frame"
+        }
+      ]
+    },
+    {
+      "chinese_name": "嘉当结构方程",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "嘉当结构方程用联络形式和余标架表达挠率与曲率。第一方程为 $T^i=d\\theta^i+\\omega^i{}_j\\wedge\\theta^j$，第二方程为 $\\Omega^i{}_j=d\\omega^i{}_j+\\omega^i{}_k\\wedge\\omega^k{}_j$。\n\n其中 $\\theta^i$ 是余标架，$\\omega^i{}_j$ 是联络形式。第一方程测量挠率，第二方程给曲率；列维奇维塔联络下挠率为零，但曲率形式仍可能非零。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "嘉当结构方程",
+          "url": "https://www.baidu.com/s?wd=%E5%98%89%E5%BD%93%E7%BB%93%E6%9E%84%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "嘉当结构方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%98%89%E5%BD%93%E7%BB%93%E6%9E%84%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cartan structural equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=cartan%20structural%20equation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "挠率形式",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "挠率形式描述联络对标架的非对称性。对余标架 $\\theta^i$ 和联络形式 $\\omega^i{}_j$，挠率形式为 $T^i=d\\theta^i+\\omega^i{}_j\\wedge\\theta^j$；若 $T^i=0$，联络无挠。\n\n它不同于曲率形式，曲率衡量二次平行移动的闭合失败，挠率衡量平移结构本身的扭斜。列维奇维塔联络无挠，Cartan 几何和带挠联络则保留该数据。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "挠率形式",
+          "url": "https://www.baidu.com/s?wd=%E6%8C%A0%E7%8E%87%E5%BD%A2%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "挠率形式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8C%A0%E7%8E%87%E5%BD%A2%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "torsion form",
+          "url": "https://en.wikipedia.org/w/index.php?search=torsion%20form"
+        }
+      ]
+    },
+    {
+      "chinese_name": "正交标架丛",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "正交标架丛由黎曼流形上所有正交基组成。对 $n$ 维黎曼流形 $M$，$O(M)$ 的纤维为 $O(n)$，点可写为 $(p,e_1,\\ldots,e_n)$，其中 $e_i$ 是 $T_pM$ 的正交基。\n\n它是主 $O(n)$-丛，定向情形可降为 $SO(n)$-丛。列维奇维塔联络可提升为其上的联络形式；旋量结构、曲率形式和活动标架方法都以这个主丛为背景。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正交标架丛",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E4%BA%A4%E6%A0%87%E6%9E%B6%E4%B8%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正交标架丛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E4%BA%A4%E6%A0%87%E6%9E%B6%E4%B8%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "orthogonal frame bundle",
+          "url": "https://en.wikipedia.org/w/index.php?search=orthogonal%20frame%20bundle"
+        }
+      ]
+    },
+    {
+      "chinese_name": "克里福德丛",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "克里福德丛由切丛或余切丛按度量生成的克里福德代数组成。每点纤维满足关系 $v\\cdot w+w\\cdot v=-2g(v,w)$，其中 $v,w\\in T_pM$ 或 $T_p^*M$。\n\n它不同于外代数，乘法由度量修正反对称乘法。克里福德丛作用在旋量丛上，构成狄拉克算子的代数基础；符号计算中，克里福德乘法把一阶算子平方与拉普拉斯型算子联系起来。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "克里福德丛",
+          "url": "https://www.baidu.com/s?wd=%E5%85%8B%E9%87%8C%E7%A6%8F%E5%BE%B7%E4%B8%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "克里福德丛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%8B%E9%87%8C%E7%A6%8F%E5%BE%B7%E4%B8%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "clifford bush",
+          "url": "https://en.wikipedia.org/w/index.php?search=clifford%20bush"
+        }
+      ]
+    },
+    {
+      "chinese_name": "旋量丛",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "旋量丛是在流形具有旋结构时由 Spin 表示构造的向量丛。若 $P_{Spin}\\to M$ 是提升正交标架丛的主丛，旋量丛可写 $S=P_{Spin}\\times_{\\rho}\\Delta$；$\\Delta$ 是旋表示空间。\n\n它不同于普通张量丛，通常不能仅由切丛张量运算得到。旋量丛承载克里福德乘法和狄拉克算子；是否存在旋结构由第二 Stiefel-Whitney 类消失等拓扑条件决定。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "旋量丛",
+          "url": "https://www.baidu.com/s?wd=%E6%97%8B%E9%87%8F%E4%B8%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "旋量丛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%97%8B%E9%87%8F%E4%B8%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "spinor bundle",
+          "url": "https://en.wikipedia.org/w/index.php?search=spinor%20bundle"
+        }
+      ]
+    },
+    {
+      "chinese_name": "狄拉克算子",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "狄拉克算子是旋量丛上的一阶椭圆微分算子。给定局部正交标架 $e_i$，可写 $D=\\sum_i e_i\\cdot\\nabla_{e_i}$；点乘表示克里福德乘法，$\\nabla$ 是旋联络。\n\n它不同于霍奇拉普拉斯算子的一阶性质，但 $D^2$ 是拉普拉斯型算子。Lichnerowicz 公式把 $D^2$ 与标量曲率联系起来，指标定理则把其解析指标转化为拓扑示性类积分。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "狄拉克算子",
+          "url": "https://www.baidu.com/s?wd=%E7%8B%84%E6%8B%89%E5%85%8B%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "狄拉克算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%8B%84%E6%8B%89%E5%85%8B%E7%AE%97%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dirac operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=dirac%20operator"
+        }
+      ]
+    },
+    {
+      "chinese_name": "阿蒂亚-辛格指标定理",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "阿蒂亚-辛格指标定理把椭圆算子的解析指标等同于拓扑指标。对紧流形上的椭圆算子 $D:E\\to F$，解析指标为 $\\operatorname{ind}D=\\dim\\ker D-\\dim\\operatorname{coker}D$。\n\n定理说明该整数可由符号类和示性类积分计算，如狄拉克算子的指标含 $\\hat A(M)$。它连接分析、拓扑和几何；与局部解的存在性不同，指标关注核与余核维数的差。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阿蒂亚-辛格指标定理",
+          "url": "https://www.baidu.com/s?wd=%E9%98%BF%E8%92%82%E4%BA%9A-%E8%BE%9B%E6%A0%BC%E6%8C%87%E6%A0%87%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阿蒂亚-辛格指标定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%BF%E8%92%82%E4%BA%9A-%E8%BE%9B%E6%A0%BC%E6%8C%87%E6%A0%87%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "atiyah singer index theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=atiyah%20singer%20index%20theorem"
+        }
+      ]
+    },
+    {
+      "chinese_name": "椭圆复形",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "椭圆复形是一列微分算子组成的复形，其符号列在零截面外正合。形式为 $0\\to E_0\\xrightarrow{D_0}E_1\\xrightarrow{D_1}\\cdots$，满足 $D_{i+1}D_i=0$，且主符号 $\\sigma(D_i)(\\xi)$ 构成正合列。\n\n它推广单个椭圆算子到复形层面。德拉姆复形和 Dolbeault 复形都是典型例子；椭圆性保证同调有限维，并允许定义指标，与霍奇理论紧密相关。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "椭圆复形",
+          "url": "https://www.baidu.com/s?wd=%E6%A4%AD%E5%9C%86%E5%A4%8D%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "椭圆复形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A4%AD%E5%9C%86%E5%A4%8D%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ellipse complex",
+          "url": "https://en.wikipedia.org/w/index.php?search=ellipse%20complex"
+        }
+      ]
+    },
+    {
+      "chinese_name": "霍奇拉普拉斯算子",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "霍奇拉普拉斯算子作用在微分形式上，由外微分及其伴随组成。定义为 $\\Delta=d d^*+d^*d$；这里 $d^*$ 由黎曼度量和体积形式确定，是 $d$ 的形式伴随。\n\n它不同于函数上的拉普拉斯-贝尔特拉米算子，但在 $0$-形式上与其相符。调和形式满足 $\\Delta\\omega=0$，霍奇定理把它们与德拉姆上同调类一一对应。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "霍奇拉普拉斯算子",
+          "url": "https://www.baidu.com/s?wd=%E9%9C%8D%E5%A5%87%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "霍奇拉普拉斯算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9C%8D%E5%A5%87%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E7%AE%97%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hoch laplacian",
+          "url": "https://en.wikipedia.org/w/index.php?search=hoch%20laplacian"
+        }
+      ]
+    },
+    {
+      "chinese_name": "莫尔斯函数",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "莫尔斯函数是临界点都非退化的光滑函数。若 $p$ 是临界点，$df_p=0$，其 Hessian $\\operatorname{Hess}_p f$ 作为二次型非退化，则 $p$ 非退化；满足此条件的函数称莫尔斯函数。\n\n它把流形拓扑转化为临界点数据。莫尔斯指数是 Hessian 负方向个数，梯度流连接不同临界点；这与一般光滑函数不同，退化临界点会破坏细胞分解的清晰结构。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "莫尔斯函数",
+          "url": "https://www.baidu.com/s?wd=%E8%8E%AB%E5%B0%94%E6%96%AF%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "莫尔斯函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%8E%AB%E5%B0%94%E6%96%AF%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "morse function",
+          "url": "https://en.wikipedia.org/w/index.php?search=morse%20function"
+        }
+      ]
+    },
+    {
+      "chinese_name": "莫尔斯指数",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "莫尔斯指数是非退化临界点处 Hessian 的负特征方向数。若 $df_p=0$ 且 Hessian 非退化，则 $\\operatorname{ind}_p(f)=\\#\\{\\lambda_i<0\\}$；这里 $\\lambda_i$ 是 Hessian 的特征值。\n\n它描述函数在该点附近像多少个下降方向。指数不同于临界值大小，而是局部二次型的符号；在莫尔斯理论中，指数为 $k$ 的临界点对应给流形附加一个 $k$-维胞腔。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "莫尔斯指数",
+          "url": "https://www.baidu.com/s?wd=%E8%8E%AB%E5%B0%94%E6%96%AF%E6%8C%87%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "莫尔斯指数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%8E%AB%E5%B0%94%E6%96%AF%E6%8C%87%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "morse index",
+          "url": "https://en.wikipedia.org/w/index.php?search=morse%20index"
+        }
+      ]
+    },
+    {
+      "chinese_name": "临界点",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "临界点是光滑函数或映射微分退化的位置。对函数 $f:M\\to\\mathbb R$，条件为 $df_p=0$；对映射 $F:M\\to N$，临界点指 $dF_p$ 不满秩。\n\n它不同于临界值，后者是临界点的像。莫尔斯理论关注非退化临界点，奇点理论研究更复杂退化；梯度流的极限常落在临界点，因此它们控制函数的全局拓扑信息。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "临界点",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%B4%E7%95%8C%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "临界点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%B4%E7%95%8C%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "critical point",
+          "url": "https://en.wikipedia.org/w/index.php?search=critical%20point"
+        }
+      ]
+    },
+    {
+      "chinese_name": "梯度流",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "梯度流是沿函数梯度方向运动的动力系统。给定黎曼度量和函数 $f$，梯度由 $g(\\nabla f,X)=df(X)$ 定义；负梯度流满足 $\\dot\\gamma(t)=-\\nabla f(\\gamma(t))$。\n\n它依赖度量，不同度量给出不同轨线，但临界点仍由 $df=0$ 决定。莫尔斯理论用负梯度流连接临界点，Ricci 流和平均曲率流也可视为某些泛函的几何梯度流。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "梯度流",
+          "url": "https://www.baidu.com/s?wd=%E6%A2%AF%E5%BA%A6%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "梯度流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A2%AF%E5%BA%A6%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gradient flow",
+          "url": "https://en.wikipedia.org/w/index.php?search=gradient%20flow"
+        }
+      ]
+    },
+    {
+      "chinese_name": "亚黎曼流形",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "亚黎曼流形只在切丛的一个分布上给出内积。结构为 $(M,\\mathcal D,g_{\\mathcal D})$，其中 $\\mathcal D\\subset TM$，允许曲线必须满足 $\\dot\\gamma(t)\\in\\mathcal D$；长度由 $g_{\\mathcal D}$ 计算。\n\n它不同于黎曼流形，某些方向不能直接运动。若分布满足括号生成条件，Chow 定理保证任意两点可由水平曲线连接；测地线、距离和热核在这种退化几何中表现更复杂。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "亚黎曼流形",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%9A%E9%BB%8E%E6%9B%BC%E6%B5%81%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "亚黎曼流形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%9A%E9%BB%8E%E6%9B%BC%E6%B5%81%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ariemannian manifold",
+          "url": "https://en.wikipedia.org/w/index.php?search=ariemannian%20manifold"
+        }
+      ]
+    },
+    {
+      "chinese_name": "芬斯勒流形",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "芬斯勒流形用每个切空间上的范数替代二次型度量。函数 $F:TM\\to[0,\\infty)$ 满足正齐次性 $F(x,\\lambda v)=\\lambda F(x,v)$，并要求适当光滑和强凸；曲线长度为 $\\int F(\\gamma,\\dot\\gamma)dt$。\n\n它不同于黎曼度量，后者来自内积并满足平行四边形律。芬斯勒几何允许方向相关的长度，测地线、曲率和体积定义都需要相应调整，常用于非对称或各向异性模型。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "芬斯勒流形",
+          "url": "https://www.baidu.com/s?wd=%E8%8A%AC%E6%96%AF%E5%8B%92%E6%B5%81%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "芬斯勒流形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%8A%AC%E6%96%AF%E5%8B%92%E6%B5%81%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "finsler manifold",
+          "url": "https://en.wikipedia.org/w/index.php?search=finsler%20manifold"
+        }
+      ]
+    },
+    {
+      "chinese_name": "全纯截面曲率",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "全纯截面曲率是凯勒流形中复直线方向上的截面曲率。对非零向量 $X$，取实二维平面 $\\operatorname{span}(X,JX)$，定义 $H(X)=\\frac{R(X,JX,JX,X)}{\\|X\\|^4}$；$J$ 是复结构。\n\n它比一般截面曲率只看与复结构相容的平面。复空间形式由常全纯截面曲率刻画；在复微分几何中，它控制双全纯映射、Schwarz 引理和曲率正负性。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "全纯截面曲率",
+          "url": "https://www.baidu.com/s?wd=%E5%85%A8%E7%BA%AF%E6%88%AA%E9%9D%A2%E6%9B%B2%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "全纯截面曲率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%A8%E7%BA%AF%E6%88%AA%E9%9D%A2%E6%9B%B2%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pure cross section curvature",
+          "url": "https://en.wikipedia.org/w/index.php?search=pure%20cross%20section%20curvature"
+        }
+      ]
+    },
+    {
+      "chinese_name": "伯格流形",
+      "source_file": "words/数学/困难模式/differential_geometry_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "伯格流形通常指具有特殊整体几何或特殊 holonomy 的黎曼流形，名称常与 Berger 分类相关。若联络的 holonomy 群 $\\operatorname{Hol}(g)$ 真包含于 $SO(n)$，可能出现 $U(n)$、$SU(n)$、$G_2$、$Spin(7)$ 等特殊情形。\n\n它不同于任意黎曼流形，因为平行张量、旋量或特殊形式会强烈限制曲率。Berger 分类给出不可约非对称黎曼流形可能的 holonomy 群，是研究凯勒、Calabi-Yau 和特殊几何的入口。 丛和指标理论把局部标架、联络和曲率组织成全局不变量；公式中的 $F_\\nabla$、$D$ 或示性类并不是孤立符号，而是从结构群、表示和椭圆性来的数据。局部平凡化会改变矩阵表达，真正不变的是规范等价类、上同调类和解析指标。 这也是规范理论、旋几何和示性类计算能够互相翻译的原因，局部公式最终要落到全局等价类上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "伯格流形",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%AF%E6%A0%BC%E6%B5%81%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "伯格流形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%AF%E6%A0%BC%E6%B5%81%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "burger manifold",
+          "url": "https://en.wikipedia.org/w/index.php?search=burger%20manifold"
+        }
+      ]
+    }
+  ]
+}

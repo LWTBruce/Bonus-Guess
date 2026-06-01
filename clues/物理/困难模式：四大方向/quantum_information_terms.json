@@ -1,0 +1,2645 @@
+{
+  "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+  "entries": [
+    {
+      "chinese_name": "量子信息论",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子信息论研究量子态、测量、信道和计算任务中信息如何编码、传输与处理。核心对象常用密度算符表示，测量概率满足 $p_i=\\mathrm{Tr}(E_i\\rho)$，其中 $\\rho$ 是系统状态，$E_i$ 是测量效应算符，$p_i$ 是结果概率。与经典信息相比，它允许相干相位、不可克隆性和纠缠资源。\n\n该理论把熵、复杂度、通信协议和误差校正放在同一算符框架中，使物理实现与信息任务能被统一量化。对量子信息论的理解还要区分抽象希尔伯特空间和实际物理平台：同一个密度算符可由不同制备过程得到，测量只访问其统计结果。相位参考、泄漏能级和环境耦合会改变实现细节，却不改变态描述的算符核心。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子信息论",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E4%BF%A1%E6%81%AF%E8%AE%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子信息论",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E4%BF%A1%E6%81%AF%E8%AE%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum information theory",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20information%20theory"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子比特",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子比特是二维希尔伯特空间中的基本量子载体，态可在计算基 $|0\\rangle,|1\\rangle$ 上相干叠加。一般纯态写为 $|\\psi\\rangle=\\alpha|0\\rangle+\\beta|1\\rangle$，其中 $\\alpha,\\beta$ 是复振幅，满足 $|\\alpha|^2+|\\beta|^2=1$。振幅相位会影响干涉，不能当作普通概率位。实际平台可由超导能级、离子内态或光子偏振实现；读出时得到经典比特，但计算过程依赖叠加、相位和纠缠这些非经典自由度。\n\n对量子比特的理解还要区分抽象希尔伯特空间和实际物理平台：同一个密度算符可由不同制备过程得到，测量只访问其统计结果。相位参考、泄漏能级和环境耦合会改变实现细节，却不改变态描述的算符核心。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子比特",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E6%AF%94%E7%89%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子比特",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E6%AF%94%E7%89%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "qubit",
+          "url": "https://en.wikipedia.org/w/index.php?search=qubit"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子寄存器",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子寄存器是多个量子比特张量积形成的复合系统，用来承载量子算法中的输入、工作区和输出。若有 $n$ 个比特，态空间维数为 $2^n$，一般态写为 $|\\psi\\rangle=\\sum_{x=0}^{2^n-1}c_x|x\\rangle$，其中 $|x\\rangle$ 是计算基，$c_x$ 是复振幅并满足归一化。\n\n寄存器不是一串独立小系统的简单列表，因为振幅可在全局基上纠缠。量子傅里叶变换、相位估计和纠错编码都把寄存器作为整体操作。对量子寄存器的理解还要区分抽象希尔伯特空间和实际物理平台：同一个密度算符可由不同制备过程得到，测量只访问其统计结果。相位参考、泄漏能级和环境耦合会改变实现细节，却不改变态描述的算符核心。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子寄存器",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E5%AF%84%E5%AD%98%E5%99%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子寄存器",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E5%AF%84%E5%AD%98%E5%99%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum register",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20register"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子态制备",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子态制备指把物理系统从已知初态变换到目标量子态的过程，是算法、层析和纠错实验的入口。理想情况下可写为 $|\\psi_{\\rm tar}\\rangle=U|0\\cdots0\\rangle$，其中 $U$ 是制备电路，$|\\psi_{\\rm tar}\\rangle$ 是目标态。若目标为混合态，则需密度算符或引入辅助系统后取部分迹。\n\n制备质量通常用保真度或交叉熵评估，误差来自门噪声、泄漏、热占据和控制脉冲失配；因此它既是抽象态工程，也是具体硬件校准问题。对量子态制备的理解还要区分抽象希尔伯特空间和实际物理平台：同一个密度算符可由不同制备过程得到，测量只访问其统计结果。相位参考、泄漏能级和环境耦合会改变实现细节，却不改变态描述的算符核心。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子态制备",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E6%80%81%E5%88%B6%E5%A4%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子态制备",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E6%80%81%E5%88%B6%E5%A4%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum state preparation",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20state%20preparation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "纯态",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "纯态是量子系统信息完全由一个态矢量给出的状态，密度矩阵退化为一维投影。常写为 $\\rho=|\\psi\\rangle\\langle\\psi|$，其中 $|\\psi\\rangle$ 是归一化态矢量，$\\rho$ 是密度算符；纯度满足 $\\mathrm{Tr}\\rho^2=1$。它允许相干叠加和相位干涉，但不含经典概率混合。\n\n实验上态制备、量子门和测量都以纯态为理想参考，实际噪声会把它变成混合态，因此纯态也是刻画退相干和保真度损失的基准对象。对纯态的理解还要区分抽象希尔伯特空间和实际物理平台：同一个密度算符可由不同制备过程得到，测量只访问其统计结果。相位参考、泄漏能级和环境耦合会改变实现细节，却不改变态描述的算符核心。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "纯态",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%AF%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "纯态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%AF%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pure state",
+          "url": "https://en.wikipedia.org/w/index.php?search=pure%20state"
+        }
+      ]
+    },
+    {
+      "chinese_name": "混合态",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "混合态用正半定、迹为一的算符描述量子系统的统计状态，既包含相干叠加，也包含经典不确定性。谱分解可写为 $\\rho=\\sum_i p_i|i\\rangle\\langle i|$，其中 $p_i\\ge0$ 且 $\\sum_i p_i=1$，$|i\\rangle$ 是正交本征态。若 $\\mathrm{Tr}\\rho^2<1$，状态为混合；若等于一，则为纯态。它是开放系统、量子信道和部分迹运算的自然语言，能在不知道具体制备历史时仍给出所有测量概率。\n\n对混合态的理解还要区分抽象希尔伯特空间和实际物理平台：同一个密度算符可由不同制备过程得到，测量只访问其统计结果。相位参考、泄漏能级和环境耦合会改变实现细节，却不改变态描述的算符核心。因此混合态常和具体测量任务绑定，离开操作意义只看数值大小容易造成误解。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "混合态",
+          "url": "https://www.baidu.com/s?wd=%E6%B7%B7%E5%90%88%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "混合态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B7%B7%E5%90%88%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mixed state",
+          "url": "https://en.wikipedia.org/w/index.php?search=mixed%20state"
+        }
+      ]
+    },
+    {
+      "chinese_name": "密度矩阵",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "密度矩阵用正半定、迹为一的算符描述量子系统的统计状态，既包含相干叠加，也包含经典不确定性。谱分解可写为 $\\rho=\\sum_i p_i|i\\rangle\\langle i|$，其中 $p_i\\ge0$ 且 $\\sum_i p_i=1$，$|i\\rangle$ 是正交本征态。若 $\\mathrm{Tr}\\rho^2<1$，状态为混合；若等于一，则为纯态。\n\n它是开放系统、量子信道和部分迹运算的自然语言，能在不知道具体制备历史时仍给出所有测量概率。对密度矩阵的理解还要区分抽象希尔伯特空间和实际物理平台：同一个密度算符可由不同制备过程得到，测量只访问其统计结果。相位参考、泄漏能级和环境耦合会改变实现细节，却不改变态描述的算符核心。因此密度矩阵常和具体测量任务绑定，离开操作意义只看数值大小容易造成误解。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "密度矩阵",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%86%E5%BA%A6%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "密度矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%86%E5%BA%A6%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "density matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=density%20matrix"
+        }
+      ]
+    },
+    {
+      "chinese_name": "密度算符",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "密度算符用正半定、迹为一的算符描述量子系统的统计状态，既包含相干叠加，也包含经典不确定性。谱分解可写为 $\\rho=\\sum_i p_i|i\\rangle\\langle i|$，其中 $p_i\\ge0$ 且 $\\sum_i p_i=1$，$|i\\rangle$ 是正交本征态。若 $\\mathrm{Tr}\\rho^2<1$，状态为混合；若等于一，则为纯态。\n\n它是开放系统、量子信道和部分迹运算的自然语言，能在不知道具体制备历史时仍给出所有测量概率。对密度算符的理解还要区分抽象希尔伯特空间和实际物理平台：同一个密度算符可由不同制备过程得到，测量只访问其统计结果。相位参考、泄漏能级和环境耦合会改变实现细节，却不改变态描述的算符核心。因此密度算符常和具体测量任务绑定，离开操作意义只看数值大小容易造成误解。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "密度算符",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%86%E5%BA%A6%E7%AE%97%E7%AC%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "密度算符",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%86%E5%BA%A6%E7%AE%97%E7%AC%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "density operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=density%20operator"
+        }
+      ]
+    },
+    {
+      "chinese_name": "迹距离",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "迹距离度量两个量子态在最优测量下可区分的程度，是密度算符空间中的操作性距离。定义为 $D(\\rho,\\sigma)=\\frac12\\|\\rho-\\sigma\\|_1$，其中 $\\rho,\\sigma$ 是两个状态，$\\|A\\|_1=\\mathrm{Tr}\\sqrt{A^\\dagger A}$ 是迹范数。若距离为零，态完全相同；若接近一，存在测量能几乎确定地区分它们。\n\n量子信道不会增大迹距离，因此它常用于安全证明、误差分析和退相干强度评估。使用迹距离时要注意它度量的是态谱、可区分性或相关资源中的哪一种。许多熵在经典极限下形式相近，但在非对易情形中单调性、可加性和操作意义会分开，因此公式后的条件比数值本身更重要。因此迹距离常和具体测量任务绑定，离开操作意义只看数值大小容易造成误解。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "迹距离",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%B9%E8%B7%9D%E7%A6%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "迹距离",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%B9%E8%B7%9D%E7%A6%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "trace distance",
+          "url": "https://en.wikipedia.org/w/index.php?search=trace%20distance"
+        }
+      ]
+    },
+    {
+      "chinese_name": "保真度",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "保真度衡量两个量子态的重合程度，常用于描述实验态与目标态有多接近。混合态定义为 $F(\\rho,\\sigma)=[\\mathrm{Tr}\\sqrt{\\sqrt\\rho\\sigma\\sqrt\\rho}]^2$，其中 $\\rho,\\sigma$ 是密度算符；若其中一个是纯态 $|\\psi\\rangle$，则化为 $F=\\langle\\psi|\\sigma|\\psi\\rangle$。它取值在零到一之间，越大表示越难通过测量区分。\n\n保真度不是单个基上的成功率，而是包含相干相位和全态结构的整体指标。使用保真度时要注意它度量的是态谱、可区分性或相关资源中的哪一种。许多熵在经典极限下形式相近，但在非对易情形中单调性、可加性和操作意义会分开，因此公式后的条件比数值本身更重要。因此保真度常和具体测量任务绑定，离开操作意义只看数值大小容易造成误解。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "保真度",
+          "url": "https://www.baidu.com/s?wd=%E4%BF%9D%E7%9C%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "保真度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BF%9D%E7%9C%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fidelity",
+          "url": "https://en.wikipedia.org/w/index.php?search=fidelity"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子相对熵",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子相对熵是量子态之间非对称的信息散度，用来量化假设检验、资源理论和热力学不可逆性。定义为 $S(\\rho\\|\\sigma)=\\mathrm{Tr}\\rho(\\log\\rho-\\log\\sigma)$，其中 $\\rho$ 是真实态，$\\sigma$ 是参照态。它一般不满足对称性和三角不等式，因此不是距离；但在完全正迹保持映射下不会增加。\n\n这个单调性使它成为证明数据处理不等式、纠缠相对熵和信道容量界的基本工具。使用量子相对熵时要注意它度量的是态谱、可区分性或相关资源中的哪一种。许多熵在经典极限下形式相近，但在非对易情形中单调性、可加性和操作意义会分开，因此公式后的条件比数值本身更重要。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子相对熵",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E7%9B%B8%E5%AF%B9%E7%86%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子相对熵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E7%9B%B8%E5%AF%B9%E7%86%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum relative entropy",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20relative%20entropy"
+        }
+      ]
+    },
+    {
+      "chinese_name": "冯诺伊曼熵",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "冯诺伊曼熵是密度算符本征值分布的熵，推广了经典香农熵。定义为 $S(\\rho)=-\\mathrm{Tr}(\\rho\\log\\rho)$，其中 $\\rho$ 是量子态，迹在系统希尔伯特空间上取。纯态只有一个非零本征值，熵为零；混合态本征值越分散，熵越大。\n\n它度量量子不确定性和环境纠缠，在热态、信道容量、黑洞信息和量子热力学中都扮演基础角色。对复合纯态，子系统熵还直接给出纠缠熵。使用冯诺伊曼熵时要注意它度量的是态谱、可区分性或相关资源中的哪一种。许多熵在经典极限下形式相近，但在非对易情形中单调性、可加性和操作意义会分开，因此公式后的条件比数值本身更重要。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "冯诺伊曼熵",
+          "url": "https://www.baidu.com/s?wd=%E5%86%AF%E8%AF%BA%E4%BC%8A%E6%9B%BC%E7%86%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "冯诺伊曼熵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%86%AF%E8%AF%BA%E4%BC%8A%E6%9B%BC%E7%86%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "von neumann entropy",
+          "url": "https://en.wikipedia.org/w/index.php?search=von%20neumann%20entropy"
+        }
+      ]
+    },
+    {
+      "chinese_name": "线性熵",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "线性熵用纯度的缺失近似描述混合程度，计算上比冯诺伊曼熵更简单。常写为 $S_L(\\rho)=1-\\mathrm{Tr}\\rho^2$，其中 $\\rho$ 是密度算符，$\\mathrm{Tr}\\rho^2$ 是纯度。纯态时 $S_L=0$，最大混合态时取较大值。它不是严格的热力学熵，但在退相干、纠缠动力学和数值模拟中常用来快速追踪混合化。\n\n由于只依赖二阶矩，它对小本征值结构不如冯诺伊曼熵敏感。使用线性熵时要注意它度量的是态谱、可区分性或相关资源中的哪一种。许多熵在经典极限下形式相近，但在非对易情形中单调性、可加性和操作意义会分开，因此公式后的条件比数值本身更重要。因此线性熵常和具体测量任务绑定，离开操作意义只看数值大小容易造成误解。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线性熵",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E6%80%A7%E7%86%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线性熵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E6%80%A7%E7%86%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear entropy",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20entropy"
+        }
+      ]
+    },
+    {
+      "chinese_name": "雷尼熵",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "雷尼熵是一族由阶数参数控制的量子熵，可突出密度矩阵谱的不同部分。常用形式为 $S_\\alpha(\\rho)=\\frac{1}{1-\\alpha}\\log\\mathrm{Tr}\\rho^\\alpha$，其中 $\\alpha$ 是雷尼阶数，$\\rho$ 是密度算符。极限 $\\alpha\\to1$ 回到冯诺伊曼熵；较大 $\\alpha$ 更重视最大本征值。它在纠缠谱、临界系统、黑洞复制技巧和量子密码安全界中常出现，也便于通过多份态干涉测量。\n\n使用雷尼熵时要注意它度量的是态谱、可区分性或相关资源中的哪一种。许多熵在经典极限下形式相近，但在非对易情形中单调性、可加性和操作意义会分开，因此公式后的条件比数值本身更重要。因此雷尼熵常和具体测量任务绑定，离开操作意义只看数值大小容易造成误解。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "雷尼熵",
+          "url": "https://www.baidu.com/s?wd=%E9%9B%B7%E5%B0%BC%E7%86%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "雷尼熵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9B%B7%E5%B0%BC%E7%86%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "renyi entropy",
+          "url": "https://en.wikipedia.org/w/index.php?search=renyi%20entropy"
+        }
+      ]
+    },
+    {
+      "chinese_name": "纠缠熵",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "纠缠熵度量复合纯态中一个子系统因与另一子系统纠缠而呈现出的混合程度。对 $|\\psi\\rangle_{AB}$，先取部分迹 $\\rho_A=\\mathrm{Tr}_B|\\psi\\rangle\\langle\\psi|$，再定义 $S_A=-\\mathrm{Tr}\\rho_A\\log\\rho_A$；其中 $A,B$ 是子系统，$\\rho_A$ 是约化态。若全态可分，$S_A=0$；若强纠缠，约化谱更分散。它在量子场论面积律、张量网络截断和黑洞信息讨论中都是核心量。\n\n使用纠缠熵时要注意它度量的是态谱、可区分性或相关资源中的哪一种。许多熵在经典极限下形式相近，但在非对易情形中单调性、可加性和操作意义会分开，因此公式后的条件比数值本身更重要。因此纠缠熵常和具体测量任务绑定，离开操作意义只看数值大小容易造成误解。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "纠缠熵",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%A0%E7%BC%A0%E7%86%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "纠缠熵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%A0%E7%BC%A0%E7%86%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "entanglement entropy",
+          "url": "https://en.wikipedia.org/w/index.php?search=entanglement%20entropy"
+        }
+      ]
+    },
+    {
+      "chinese_name": "纠缠谱",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "纠缠谱不是单个熵值，而是约化密度矩阵本征值构成的整套谱信息。若 $\\rho_A=\\mathrm{Tr}_B|\\psi\\rangle\\langle\\psi|$，可定义纠缠哈密顿量 $H_E=-\\log\\rho_A$，其中 $A,B$ 是互补子系统，$H_E$ 的本征值组成纠缠谱。它保留比纠缠熵更多的结构，能显示边界模、拓扑序和对称性保护特征。\n\n在多体数值中，低纠缠谱常比能谱更敏感地反映相的普适性质。使用纠缠谱时要注意它度量的是态谱、可区分性或相关资源中的哪一种。许多熵在经典极限下形式相近，但在非对易情形中单调性、可加性和操作意义会分开，因此公式后的条件比数值本身更重要。因此纠缠谱常和具体测量任务绑定，离开操作意义只看数值大小容易造成误解。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "纠缠谱",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%A0%E7%BC%A0%E8%B0%B1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "纠缠谱",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%A0%E7%BC%A0%E8%B0%B1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "entanglement spectrum",
+          "url": "https://en.wikipedia.org/w/index.php?search=entanglement%20spectrum"
+        }
+      ]
+    },
+    {
+      "chinese_name": "纠缠见证",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "纠缠见证是用一个可观测量判定某些态必定纠缠的方法，适合实验中不做完整层析时使用。算符 $W$ 若满足 $\\mathrm{Tr}(W\\sigma)\\ge0$ 对所有可分态 $\\sigma$ 成立，但对某个态 $\\rho$ 有 $\\mathrm{Tr}(W\\rho)<0$，则 $\\rho$ 被见证为纠缠。这里 $\\sigma$ 是任意可分态，$\\rho$ 是待测态。\n\n见证依赖目标纠缠类型，不能证明所有未被检出的态可分，却能把少量关联测量转化为严格的纠缠结论。纠缠见证还应同普通经典相关区分开：局域测量统计可以相关，却未必需要纠缠资源。真正的量子资源判断依赖可分分解、局域操作单调性或部分转置谱，而这些判据在高维混合态中并不总是等价。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "纠缠见证",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%A0%E7%BC%A0%E8%A7%81%E8%AF%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "纠缠见证",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%A0%E7%BC%A0%E8%A7%81%E8%AF%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "entanglement witness",
+          "url": "https://en.wikipedia.org/w/index.php?search=entanglement%20witness"
+        }
+      ]
+    },
+    {
+      "chinese_name": "纠缠度量",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "纠缠度量是给纠缠资源赋值的一类函数，要求在局域操作和经典通信下不增加。常写成单调性条件 $E(\\Lambda_{\\rm LOCC}(\\rho))\\le E(\\rho)$，其中 $E$ 是纠缠度量，$\\rho$ 是复合态，$\\Lambda_{\\rm LOCC}$ 表示局域操作加经典通信。不同度量关注不同任务，例如蒸馏、形成或可区分性，因此数值不必一致。\n\n它把“纠缠多少”从直观说法变成资源理论中的偏序和优化问题。纠缠度量还应同普通经典相关区分开：局域测量统计可以相关，却未必需要纠缠资源。真正的量子资源判断依赖可分分解、局域操作单调性或部分转置谱，而这些判据在高维混合态中并不总是等价。这让纠缠度量在资源理论、实验见证和噪声模型之间具有不同但相容的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "纠缠度量",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%A0%E7%BC%A0%E5%BA%A6%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "纠缠度量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%A0%E7%BC%A0%E5%BA%A6%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "entanglement measure",
+          "url": "https://en.wikipedia.org/w/index.php?search=entanglement%20measure"
+        }
+      ]
+    },
+    {
+      "chinese_name": "并发度",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "并发度是两量子比特纠缠的标准度量之一，对纯态可直接由约化态线性熵给出。混合态常写为 $C=\\max(0,\\lambda_1-\\lambda_2-\\lambda_3-\\lambda_4)$，其中 $\\lambda_i$ 是由 $\\rho$ 与自旋翻转态 $\\tilde{\\rho}$ 构造出的非负谱值并按降序排列。它取值从零到一，零表示可分，贝尔态达到一。\n\n并发度还能给出两比特纠缠形成熵，因此在小系统实验和噪声通道分析中很常用。并发度还应同普通经典相关区分开：局域测量统计可以相关，却未必需要纠缠资源。真正的量子资源判断依赖可分分解、局域操作单调性或部分转置谱，而这些判据在高维混合态中并不总是等价。这让并发度在资源理论、实验见证和噪声模型之间具有不同但相容的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "并发度",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B6%E5%8F%91%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "并发度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B6%E5%8F%91%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "concurrence",
+          "url": "https://en.wikipedia.org/w/index.php?search=concurrence"
+        }
+      ]
+    },
+    {
+      "chinese_name": "负性",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "负性利用部分转置后是否出现负本征值来量化双分系统纠缠。常定义为 $\\mathcal N=(\\|\\rho^{T_B}\\|_1-1)/2$，其中 $T_B$ 表示对子系统 $B$ 做转置，$\\|\\cdot\\|_1$ 是迹范数。若部分转置仍为正，只能说明在低维情形下可分或在高维中未被此准则检出。\n\n它计算方便，适合连续变量、高维混合态和开放系统纠缠衰减研究。负性还应同普通经典相关区分开：局域测量统计可以相关，却未必需要纠缠资源。真正的量子资源判断依赖可分分解、局域操作单调性或部分转置谱，而这些判据在高维混合态中并不总是等价。这让负性在资源理论、实验见证和噪声模型之间具有不同但相容的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "负性",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%9F%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "负性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%9F%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "negativity",
+          "url": "https://en.wikipedia.org/w/index.php?search=negativity"
+        }
+      ]
+    },
+    {
+      "chinese_name": "对数负性",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "对数负性利用部分转置后是否出现负本征值来量化双分系统纠缠。常定义为 $\\mathcal N=(\\|\\rho^{T_B}\\|_1-1)/2$，其中 $T_B$ 表示对子系统 $B$ 做转置，$\\|\\cdot\\|_1$ 是迹范数。对数形式 $E_N=\\log\\|\\rho^{T_B}\\|_1$ 还具有更好的加性性质，若部分转置仍为正，只能说明在低维情形下可分或在高维中未被此准则检出。\n\n它计算方便，适合连续变量、高维混合态和开放系统纠缠衰减研究。对数负性还应同普通经典相关区分开：局域测量统计可以相关，却未必需要纠缠资源。真正的量子资源判断依赖可分分解、局域操作单调性或部分转置谱，而这些判据在高维混合态中并不总是等价。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对数负性",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E6%95%B0%E8%B4%9F%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对数负性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E6%95%B0%E8%B4%9F%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "logarithmic negativity",
+          "url": "https://en.wikipedia.org/w/index.php?search=logarithmic%20negativity"
+        }
+      ]
+    },
+    {
+      "chinese_name": "可分态",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "可分态描述复合量子系统能否由局域状态和经典概率混合生成。可分态写为 $\\rho_{AB}=\\sum_i p_i\\rho_i^A\\otimes\\rho_i^B$，其中 $p_i$ 是概率，$\\rho_i^A,\\rho_i^B$ 是两个子系统的局域态。不能写成这种形式的态就是纠缠态，会产生超越经典相关的联合统计。\n\n这个区分不等同于是否存在统计相关；可分态也可相关，但这些相关可由共享随机变量解释，而纠缠态需要非局域量子资源描述。可分态还应同普通经典相关区分开：局域测量统计可以相关，却未必需要纠缠资源。真正的量子资源判断依赖可分分解、局域操作单调性或部分转置谱，而这些判据在高维混合态中并不总是等价。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "可分态",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%AF%E5%88%86%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "可分态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%AF%E5%88%86%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "separable state",
+          "url": "https://en.wikipedia.org/w/index.php?search=separable%20state"
+        }
+      ]
+    },
+    {
+      "chinese_name": "纠缠态",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "纠缠态描述复合量子系统能否由局域状态和经典概率混合生成。可分态写为 $\\rho_{AB}=\\sum_i p_i\\rho_i^A\\otimes\\rho_i^B$，其中 $p_i$ 是概率，$\\rho_i^A,\\rho_i^B$ 是两个子系统的局域态。不能写成这种形式的态就是纠缠态，会产生超越经典相关的联合统计。\n\n这个区分不等同于是否存在统计相关；可分态也可相关，但这些相关可由共享随机变量解释，而纠缠态需要非局域量子资源描述。纠缠态还应同普通经典相关区分开：局域测量统计可以相关，却未必需要纠缠资源。真正的量子资源判断依赖可分分解、局域操作单调性或部分转置谱，而这些判据在高维混合态中并不总是等价。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "纠缠态",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%A0%E7%BC%A0%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "纠缠态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%A0%E7%BC%A0%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "entangled state",
+          "url": "https://en.wikipedia.org/w/index.php?search=entangled%20state"
+        }
+      ]
+    },
+    {
+      "chinese_name": "贝尔态",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "贝尔态是多体量子信息中具有标准结构的纠缠态，常被用作协议、纠错或相变诊断的基准。一个代表式为 $|\\Phi^+\\rangle=(|00\\rangle+|11\\rangle)/\\sqrt2$，其中计算基 $|0\\rangle,|1\\rangle$ 表示单比特基态，归一化系数保证总概率为一；其核心特征是两个量子比特之间最大纠缠，局域约化态完全混合。\n\n这类态的价值不在单个粒子的边缘分布，而在联合测量和稳定子约束中显现。它们可通过门序列、受控相位或集体相互作用制备，也常用于检验退相干和非局域关联。在实验或计算中，贝尔态常作为可校准的资源态或测试态使用；制备误差会首先表现为稳定子期望值、边缘熵或保真度下降。不同态对粒子损失和相位噪声的敏感性不同，适用协议也随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "贝尔态",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%9D%E5%B0%94%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "贝尔态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%9D%E5%B0%94%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bell state",
+          "url": "https://en.wikipedia.org/w/index.php?search=bell%20state"
+        }
+      ]
+    },
+    {
+      "chinese_name": "GHZ态",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "GHZ态是多体量子信息中具有标准结构的纠缠态，常被用作协议、纠错或相变诊断的基准。一个代表式为 $|\\mathrm{GHZ}\\rangle=(|000\\rangle+|111\\rangle)/\\sqrt2$，其中计算基 $|0\\rangle,|1\\rangle$ 表示单比特基态，归一化系数保证总概率为一；其核心特征是三体全局相干，任意单体约化后只剩经典混合。\n\n这类态的价值不在单个粒子的边缘分布，而在联合测量和稳定子约束中显现。它们可通过门序列、受控相位或集体相互作用制备，也常用于检验退相干和非局域关联。在实验或计算中，GHZ态常作为可校准的资源态或测试态使用；制备误差会首先表现为稳定子期望值、边缘熵或保真度下降。不同态对粒子损失和相位噪声的敏感性不同，适用协议也随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "GHZ态",
+          "url": "https://www.baidu.com/s?wd=GHZ%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "GHZ态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=GHZ%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ghz state",
+          "url": "https://en.wikipedia.org/w/index.php?search=ghz%20state"
+        }
+      ]
+    },
+    {
+      "chinese_name": "W态",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "W态是多体量子信息中具有标准结构的纠缠态，常被用作协议、纠错或相变诊断的基准。一个代表式为 $|W\\rangle=(|001\\rangle+|010\\rangle+|100\\rangle)/\\sqrt3$，其中计算基 $|0\\rangle,|1\\rangle$ 表示单比特基态，归一化系数保证总概率为一；其核心特征是单激发在多个比特间对称分布，丢失一个粒子后仍保留两体纠缠。\n\n这类态的价值不在单个粒子的边缘分布，而在联合测量和稳定子约束中显现。它们可通过门序列、受控相位或集体相互作用制备，也常用于检验退相干和非局域关联。在实验或计算中，W态常作为可校准的资源态或测试态使用；制备误差会首先表现为稳定子期望值、边缘熵或保真度下降。不同态对粒子损失和相位噪声的敏感性不同，适用协议也随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "W态",
+          "url": "https://www.baidu.com/s?wd=W%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "W态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=W%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "w state",
+          "url": "https://en.wikipedia.org/w/index.php?search=w%20state"
+        }
+      ]
+    },
+    {
+      "chinese_name": "稳定子态",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "稳定子态是多体量子信息中具有标准结构的纠缠态，常被用作协议、纠错或相变诊断的基准。一个代表式为 $S_i|\\psi\\rangle=|\\psi\\rangle$，其中计算基 $|0\\rangle,|1\\rangle$ 表示单比特基态，归一化系数保证总概率为一；其核心特征是由一组对易泡利算符的共同本征空间确定。\n\n这类态的价值不在单个粒子的边缘分布，而在联合测量和稳定子约束中显现。它们可通过门序列、受控相位或集体相互作用制备，也常用于检验退相干和非局域关联。在实验或计算中，稳定子态常作为可校准的资源态或测试态使用；制备误差会首先表现为稳定子期望值、边缘熵或保真度下降。不同态对粒子损失和相位噪声的敏感性不同，适用协议也随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳定子态",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E5%AE%9A%E5%AD%90%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳定子态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E5%AE%9A%E5%AD%90%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stabilizer state",
+          "url": "https://en.wikipedia.org/w/index.php?search=stabilizer%20state"
+        }
+      ]
+    },
+    {
+      "chinese_name": "图态",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "图态是多体量子信息中具有标准结构的纠缠态，常被用作协议、纠错或相变诊断的基准。一个代表式为 $K_v=X_v\\prod_{u\\in N(v)}Z_u$，其中计算基 $|0\\rangle,|1\\rangle$ 表示单比特基态，归一化系数保证总概率为一；其核心特征是由图的邻接关系定义稳定子，是测量型量子计算的资源态。\n\n这类态的价值不在单个粒子的边缘分布，而在联合测量和稳定子约束中显现。它们可通过门序列、受控相位或集体相互作用制备，也常用于检验退相干和非局域关联。在实验或计算中，图态常作为可校准的资源态或测试态使用；制备误差会首先表现为稳定子期望值、边缘熵或保真度下降。不同态对粒子损失和相位噪声的敏感性不同，适用协议也随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "图态",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%BE%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "图态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%BE%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "graph state",
+          "url": "https://en.wikipedia.org/w/index.php?search=graph%20state"
+        }
+      ]
+    },
+    {
+      "chinese_name": "簇态",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "簇态是多体量子信息中具有标准结构的纠缠态，常被用作协议、纠错或相变诊断的基准。一个代表式为 $K_v=X_v\\prod_{u\\in N(v)}Z_u$，其中计算基 $|0\\rangle,|1\\rangle$ 表示单比特基态，归一化系数保证总概率为一；其核心特征是由图的邻接关系定义稳定子，是测量型量子计算的资源态。\n\n这类态的价值不在单个粒子的边缘分布，而在联合测量和稳定子约束中显现。它们可通过门序列、受控相位或集体相互作用制备，也常用于检验退相干和非局域关联。在实验或计算中，簇态常作为可校准的资源态或测试态使用；制备误差会首先表现为稳定子期望值、边缘熵或保真度下降。不同态对粒子损失和相位噪声的敏感性不同，适用协议也随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "簇态",
+          "url": "https://www.baidu.com/s?wd=%E7%B0%87%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "簇态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B0%87%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cluster state",
+          "url": "https://en.wikipedia.org/w/index.php?search=cluster%20state"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子信道",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子信道描述量子态经过物理过程后的演化，要求把正态映到正态，并在任意辅助系统存在时仍保持正性。克劳斯表示为 $\\mathcal E(\\rho)=\\sum_i K_i\\rho K_i^\\dagger$，其中 $\\rho$ 是输入态，$K_i$ 是克劳斯算符；迹保持要求 $\\sum_iK_i^\\dagger K_i=I$。完全正性排除了与辅助纠缠时产生负概率的非物理映射。\n\n幺正信道只有一个克劳斯算符，退相干和阻尼信道则通过多个环境结果表示噪声。讨论量子信道时，关键是把系统、环境和可能的经典记录分清楚；同一开放动力学可用克劳斯算符、蔡矩阵或主方程表示。不同表示强调不同可测量面向，过程层析和误差缓解也会选择相应参数化。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子信道",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E4%BF%A1%E9%81%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子信道",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E4%BF%A1%E9%81%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum channel",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20channel"
+        }
+      ]
+    },
+    {
+      "chinese_name": "克劳斯算符",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "克劳斯算符描述量子态经过物理过程后的演化，要求把正态映到正态，并在任意辅助系统存在时仍保持正性。克劳斯表示为 $\\mathcal E(\\rho)=\\sum_i K_i\\rho K_i^\\dagger$，其中 $\\rho$ 是输入态，$K_i$ 是克劳斯算符；迹保持要求 $\\sum_iK_i^\\dagger K_i=I$。完全正性排除了与辅助纠缠时产生负概率的非物理映射。\n\n幺正信道只有一个克劳斯算符，退相干和阻尼信道则通过多个环境结果表示噪声。讨论克劳斯算符时，关键是把系统、环境和可能的经典记录分清楚；同一开放动力学可用克劳斯算符、蔡矩阵或主方程表示。不同表示强调不同可测量面向，过程层析和误差缓解也会选择相应参数化。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "克劳斯算符",
+          "url": "https://www.baidu.com/s?wd=%E5%85%8B%E5%8A%B3%E6%96%AF%E7%AE%97%E7%AC%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "克劳斯算符",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%8B%E5%8A%B3%E6%96%AF%E7%AE%97%E7%AC%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kraus operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=kraus%20operator"
+        }
+      ]
+    },
+    {
+      "chinese_name": "蔡矩阵",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "蔡矩阵把量子信道映射成双系统上的正算符，使完全正性和信道比较变得代数化。定义可写为 $J_\\mathcal E=(\\mathcal E\\otimes\\mathcal I)(|\\Phi\\rangle\\langle\\Phi|)$，其中 $\\mathcal E$ 是待研究信道，$\\mathcal I$ 是辅助系统恒等映射，$|\\Phi\\rangle$ 是最大纠缠态。$J_\\mathcal E\\ge0$ 等价于完全正，部分迹条件给出迹保持。\n\n它是过程层析、半定规划和信道容量界中的常用表示。讨论蔡矩阵时，关键是把系统、环境和可能的经典记录分清楚；同一开放动力学可用克劳斯算符、蔡矩阵或主方程表示。不同表示强调不同可测量面向，过程层析和误差缓解也会选择相应参数化。因此蔡矩阵既是代数对象，也是实验噪声表征和信道优化中的参数化选择。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "蔡矩阵",
+          "url": "https://www.baidu.com/s?wd=%E8%94%A1%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "蔡矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%94%A1%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "choi matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=choi%20matrix"
+        }
+      ]
+    },
+    {
+      "chinese_name": "蔡同构",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "蔡同构把量子信道映射成双系统上的正算符，使完全正性和信道比较变得代数化。定义可写为 $J_\\mathcal E=(\\mathcal E\\otimes\\mathcal I)(|\\Phi\\rangle\\langle\\Phi|)$，其中 $\\mathcal E$ 是待研究信道，$\\mathcal I$ 是辅助系统恒等映射，$|\\Phi\\rangle$ 是最大纠缠态。$J_\\mathcal E\\ge0$ 等价于完全正，部分迹条件给出迹保持。\n\n它是过程层析、半定规划和信道容量界中的常用表示。讨论蔡同构时，关键是把系统、环境和可能的经典记录分清楚；同一开放动力学可用克劳斯算符、蔡矩阵或主方程表示。不同表示强调不同可测量面向，过程层析和误差缓解也会选择相应参数化。因此蔡同构既是代数对象，也是实验噪声表征和信道优化中的参数化选择。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "蔡同构",
+          "url": "https://www.baidu.com/s?wd=%E8%94%A1%E5%90%8C%E6%9E%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "蔡同构",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%94%A1%E5%90%8C%E6%9E%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "choi isomorphism",
+          "url": "https://en.wikipedia.org/w/index.php?search=choi%20isomorphism"
+        }
+      ]
+    },
+    {
+      "chinese_name": "完全正映射",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "完全正映射描述量子态经过物理过程后的演化，要求把正态映到正态，并在任意辅助系统存在时仍保持正性。克劳斯表示为 $\\mathcal E(\\rho)=\\sum_i K_i\\rho K_i^\\dagger$，其中 $\\rho$ 是输入态，$K_i$ 是克劳斯算符；迹保持要求 $\\sum_iK_i^\\dagger K_i=I$。完全正性排除了与辅助纠缠时产生负概率的非物理映射。\n\n幺正信道只有一个克劳斯算符，退相干和阻尼信道则通过多个环境结果表示噪声。讨论完全正映射时，关键是把系统、环境和可能的经典记录分清楚；同一开放动力学可用克劳斯算符、蔡矩阵或主方程表示。不同表示强调不同可测量面向，过程层析和误差缓解也会选择相应参数化。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "完全正映射",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%8C%E5%85%A8%E6%AD%A3%E6%98%A0%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "完全正映射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%8C%E5%85%A8%E6%AD%A3%E6%98%A0%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "completely positive map",
+          "url": "https://en.wikipedia.org/w/index.php?search=completely%20positive%20map"
+        }
+      ]
+    },
+    {
+      "chinese_name": "迹保持映射",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "迹保持映射描述量子态经过物理过程后的演化，要求把正态映到正态，并在任意辅助系统存在时仍保持正性。克劳斯表示为 $\\mathcal E(\\rho)=\\sum_i K_i\\rho K_i^\\dagger$，其中 $\\rho$ 是输入态，$K_i$ 是克劳斯算符；迹保持要求 $\\sum_iK_i^\\dagger K_i=I$。完全正性排除了与辅助纠缠时产生负概率的非物理映射。\n\n幺正信道只有一个克劳斯算符，退相干和阻尼信道则通过多个环境结果表示噪声。讨论迹保持映射时，关键是把系统、环境和可能的经典记录分清楚；同一开放动力学可用克劳斯算符、蔡矩阵或主方程表示。不同表示强调不同可测量面向，过程层析和误差缓解也会选择相应参数化。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "迹保持映射",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%B9%E4%BF%9D%E6%8C%81%E6%98%A0%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "迹保持映射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%B9%E4%BF%9D%E6%8C%81%E6%98%A0%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "trace preserving map",
+          "url": "https://en.wikipedia.org/w/index.php?search=trace%20preserving%20map"
+        }
+      ]
+    },
+    {
+      "chinese_name": "幺正信道",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "幺正信道描述量子态经过物理过程后的演化，要求把正态映到正态，并在任意辅助系统存在时仍保持正性。克劳斯表示为 $\\mathcal E(\\rho)=\\sum_i K_i\\rho K_i^\\dagger$，其中 $\\rho$ 是输入态，$K_i$ 是克劳斯算符；迹保持要求 $\\sum_iK_i^\\dagger K_i=I$。完全正性排除了与辅助纠缠时产生负概率的非物理映射。\n\n幺正信道只有一个克劳斯算符，退相干和阻尼信道则通过多个环境结果表示噪声。讨论幺正信道时，关键是把系统、环境和可能的经典记录分清楚；同一开放动力学可用克劳斯算符、蔡矩阵或主方程表示。不同表示强调不同可测量面向，过程层析和误差缓解也会选择相应参数化。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "幺正信道",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%BA%E6%AD%A3%E4%BF%A1%E9%81%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "幺正信道",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%BA%E6%AD%A3%E4%BF%A1%E9%81%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "unitary channel",
+          "url": "https://en.wikipedia.org/w/index.php?search=unitary%20channel"
+        }
+      ]
+    },
+    {
+      "chinese_name": "退相干信道",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "退相干信道描述量子态经过物理过程后的演化，要求把正态映到正态，并在任意辅助系统存在时仍保持正性。克劳斯表示为 $\\mathcal E(\\rho)=\\sum_i K_i\\rho K_i^\\dagger$，其中 $\\rho$ 是输入态，$K_i$ 是克劳斯算符；迹保持要求 $\\sum_iK_i^\\dagger K_i=I$。完全正性排除了与辅助纠缠时产生负概率的非物理映射。\n\n幺正信道只有一个克劳斯算符，退相干和阻尼信道则通过多个环境结果表示噪声。讨论退相干信道时，关键是把系统、环境和可能的经典记录分清楚；同一开放动力学可用克劳斯算符、蔡矩阵或主方程表示。不同表示强调不同可测量面向，过程层析和误差缓解也会选择相应参数化。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "退相干信道",
+          "url": "https://www.baidu.com/s?wd=%E9%80%80%E7%9B%B8%E5%B9%B2%E4%BF%A1%E9%81%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "退相干信道",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%80%80%E7%9B%B8%E5%B9%B2%E4%BF%A1%E9%81%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "decoherence channel",
+          "url": "https://en.wikipedia.org/w/index.php?search=decoherence%20channel"
+        }
+      ]
+    },
+    {
+      "chinese_name": "去极化信道",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "去极化信道描述量子态经过物理过程后的演化，要求把正态映到正态，并在任意辅助系统存在时仍保持正性。克劳斯表示为 $\\mathcal E(\\rho)=\\sum_i K_i\\rho K_i^\\dagger$，其中 $\\rho$ 是输入态，$K_i$ 是克劳斯算符；迹保持要求 $\\sum_iK_i^\\dagger K_i=I$。完全正性排除了与辅助纠缠时产生负概率的非物理映射。\n\n幺正信道只有一个克劳斯算符，退相干和阻尼信道则通过多个环境结果表示噪声。讨论去极化信道时，关键是把系统、环境和可能的经典记录分清楚；同一开放动力学可用克劳斯算符、蔡矩阵或主方程表示。不同表示强调不同可测量面向，过程层析和误差缓解也会选择相应参数化。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "去极化信道",
+          "url": "https://www.baidu.com/s?wd=%E5%8E%BB%E6%9E%81%E5%8C%96%E4%BF%A1%E9%81%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "去极化信道",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8E%BB%E6%9E%81%E5%8C%96%E4%BF%A1%E9%81%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "depolarizing channel",
+          "url": "https://en.wikipedia.org/w/index.php?search=depolarizing%20channel"
+        }
+      ]
+    },
+    {
+      "chinese_name": "振幅阻尼信道",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "振幅阻尼信道描述量子态经过物理过程后的演化，要求把正态映到正态，并在任意辅助系统存在时仍保持正性。克劳斯表示为 $\\mathcal E(\\rho)=\\sum_i K_i\\rho K_i^\\dagger$，其中 $\\rho$ 是输入态，$K_i$ 是克劳斯算符；迹保持要求 $\\sum_iK_i^\\dagger K_i=I$。完全正性排除了与辅助纠缠时产生负概率的非物理映射。\n\n幺正信道只有一个克劳斯算符，退相干和阻尼信道则通过多个环境结果表示噪声。讨论振幅阻尼信道时，关键是把系统、环境和可能的经典记录分清楚；同一开放动力学可用克劳斯算符、蔡矩阵或主方程表示。不同表示强调不同可测量面向，过程层析和误差缓解也会选择相应参数化。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "振幅阻尼信道",
+          "url": "https://www.baidu.com/s?wd=%E6%8C%AF%E5%B9%85%E9%98%BB%E5%B0%BC%E4%BF%A1%E9%81%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "振幅阻尼信道",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8C%AF%E5%B9%85%E9%98%BB%E5%B0%BC%E4%BF%A1%E9%81%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "amplitude damping channel",
+          "url": "https://en.wikipedia.org/w/index.php?search=amplitude%20damping%20channel"
+        }
+      ]
+    },
+    {
+      "chinese_name": "相位阻尼信道",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "相位阻尼信道描述量子态经过物理过程后的演化，要求把正态映到正态，并在任意辅助系统存在时仍保持正性。克劳斯表示为 $\\mathcal E(\\rho)=\\sum_i K_i\\rho K_i^\\dagger$，其中 $\\rho$ 是输入态，$K_i$ 是克劳斯算符；迹保持要求 $\\sum_iK_i^\\dagger K_i=I$。完全正性排除了与辅助纠缠时产生负概率的非物理映射。\n\n幺正信道只有一个克劳斯算符，退相干和阻尼信道则通过多个环境结果表示噪声。讨论相位阻尼信道时，关键是把系统、环境和可能的经典记录分清楚；同一开放动力学可用克劳斯算符、蔡矩阵或主方程表示。不同表示强调不同可测量面向，过程层析和误差缓解也会选择相应参数化。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相位阻尼信道",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E4%BD%8D%E9%98%BB%E5%B0%BC%E4%BF%A1%E9%81%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相位阻尼信道",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E4%BD%8D%E9%98%BB%E5%B0%BC%E4%BF%A1%E9%81%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "phase damping channel",
+          "url": "https://en.wikipedia.org/w/index.php?search=phase%20damping%20channel"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子操作",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子操作通过一组已知制备、演化和测量结果反推出未知量子对象。态层析重构 $\\rho$，过程层析重构 $\\mathcal E$，门层析则关注实际门集合；测量概率统一写为 $p_i=\\mathrm{Tr}(E_i\\rho)$，其中 $E_i$ 是测量效应，$\\rho$ 是待估对象相关状态。\n\n完整层析所需设置数随系统规模快速增长，因此实际会用压缩感知、最大似然或门集层析减少假设误差。它是校准量子硬件和验证资源态的重要工具。量子操作的实验实现还受制备与测量误差影响，因此推断时通常要同时估计置信区间和物理性约束。有限样本会让重构矩阵偏离正半定或迹保持条件，需要最大似然、贝叶斯或门集模型来修正。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子操作",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E6%93%8D%E4%BD%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子操作",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E6%93%8D%E4%BD%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum operation",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20operation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "POVM测量",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "POVM测量描述从量子态提取经典结果的规则。一般测量由效应算符 $E_i$ 给出，概率为 $p_i=\\mathrm{Tr}(E_i\\rho)$，其中 $\\rho$ 是待测态，$E_i\\ge0$ 且 $\\sum_iE_i=I$；投影测量是 $E_i=P_i$ 且 $P_iP_j=\\delta_{ij}P_i$ 的特殊情形。弱测量则让单次反作用较小，需要多次统计恢复信息。\n\n测量不是单纯读取预存值，而是同时改变状态并把量子关联转成经典记录。POVM测量的实验实现还受制备与测量误差影响，因此推断时通常要同时估计置信区间和物理性约束。有限样本会让重构矩阵偏离正半定或迹保持条件，需要最大似然、贝叶斯或门集模型来修正。这使POVM测量既要满足量子力学正性条件，也要面对有限采样带来的统计波动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "POVM测量",
+          "url": "https://www.baidu.com/s?wd=POVM%E6%B5%8B%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "POVM测量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=POVM%E6%B5%8B%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "povm measurement",
+          "url": "https://en.wikipedia.org/w/index.php?search=povm%20measurement"
+        }
+      ]
+    },
+    {
+      "chinese_name": "投影测量",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "投影测量描述从量子态提取经典结果的规则。一般测量由效应算符 $E_i$ 给出，概率为 $p_i=\\mathrm{Tr}(E_i\\rho)$，其中 $\\rho$ 是待测态，$E_i\\ge0$ 且 $\\sum_iE_i=I$；投影测量是 $E_i=P_i$ 且 $P_iP_j=\\delta_{ij}P_i$ 的特殊情形。弱测量则让单次反作用较小，需要多次统计恢复信息。\n\n测量不是单纯读取预存值，而是同时改变状态并把量子关联转成经典记录。投影测量的实验实现还受制备与测量误差影响，因此推断时通常要同时估计置信区间和物理性约束。有限样本会让重构矩阵偏离正半定或迹保持条件，需要最大似然、贝叶斯或门集模型来修正。这使投影测量既要满足量子力学正性条件，也要面对有限采样带来的统计波动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "投影测量",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%95%E5%BD%B1%E6%B5%8B%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "投影测量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%95%E5%BD%B1%E6%B5%8B%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "projective measurement",
+          "url": "https://en.wikipedia.org/w/index.php?search=projective%20measurement"
+        }
+      ]
+    },
+    {
+      "chinese_name": "弱测量",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "弱测量描述从量子态提取经典结果的规则。一般测量由效应算符 $E_i$ 给出，概率为 $p_i=\\mathrm{Tr}(E_i\\rho)$，其中 $\\rho$ 是待测态，$E_i\\ge0$ 且 $\\sum_iE_i=I$；投影测量是 $E_i=P_i$ 且 $P_iP_j=\\delta_{ij}P_i$ 的特殊情形。弱测量则让单次反作用较小，需要多次统计恢复信息。\n\n测量不是单纯读取预存值，而是同时改变状态并把量子关联转成经典记录。弱测量的实验实现还受制备与测量误差影响，因此推断时通常要同时估计置信区间和物理性约束。有限样本会让重构矩阵偏离正半定或迹保持条件，需要最大似然、贝叶斯或门集模型来修正。这使弱测量既要满足量子力学正性条件，也要面对有限采样带来的统计波动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弱测量",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B1%E6%B5%8B%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弱测量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B1%E6%B5%8B%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weak measurement",
+          "url": "https://en.wikipedia.org/w/index.php?search=weak%20measurement"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子层析",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子层析通过一组已知制备、演化和测量结果反推出未知量子对象。态层析重构 $\\rho$，过程层析重构 $\\mathcal E$，门层析则关注实际门集合；测量概率统一写为 $p_i=\\mathrm{Tr}(E_i\\rho)$，其中 $E_i$ 是测量效应，$\\rho$ 是待估对象相关状态。\n\n完整层析所需设置数随系统规模快速增长，因此实际会用压缩感知、最大似然或门集层析减少假设误差。它是校准量子硬件和验证资源态的重要工具。量子层析的实验实现还受制备与测量误差影响，因此推断时通常要同时估计置信区间和物理性约束。有限样本会让重构矩阵偏离正半定或迹保持条件，需要最大似然、贝叶斯或门集模型来修正。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子层析",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E5%B1%82%E6%9E%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子层析",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E5%B1%82%E6%9E%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum tomography",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20tomography"
+        }
+      ]
+    },
+    {
+      "chinese_name": "态层析",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "态层析通过一组已知制备、演化和测量结果反推出未知量子对象。态层析重构 $\\rho$，过程层析重构 $\\mathcal E$，门层析则关注实际门集合；测量概率统一写为 $p_i=\\mathrm{Tr}(E_i\\rho)$，其中 $E_i$ 是测量效应，$\\rho$ 是待估对象相关状态。\n\n完整层析所需设置数随系统规模快速增长，因此实际会用压缩感知、最大似然或门集层析减少假设误差。它是校准量子硬件和验证资源态的重要工具。态层析的实验实现还受制备与测量误差影响，因此推断时通常要同时估计置信区间和物理性约束。有限样本会让重构矩阵偏离正半定或迹保持条件，需要最大似然、贝叶斯或门集模型来修正。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "态层析",
+          "url": "https://www.baidu.com/s?wd=%E6%80%81%E5%B1%82%E6%9E%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "态层析",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%80%81%E5%B1%82%E6%9E%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "state tomography",
+          "url": "https://en.wikipedia.org/w/index.php?search=state%20tomography"
+        }
+      ]
+    },
+    {
+      "chinese_name": "过程层析",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "过程层析通过一组已知制备、演化和测量结果反推出未知量子对象。态层析重构 $\\rho$，过程层析重构 $\\mathcal E$，门层析则关注实际门集合；测量概率统一写为 $p_i=\\mathrm{Tr}(E_i\\rho)$，其中 $E_i$ 是测量效应，$\\rho$ 是待估对象相关状态。\n\n完整层析所需设置数随系统规模快速增长，因此实际会用压缩感知、最大似然或门集层析减少假设误差。它是校准量子硬件和验证资源态的重要工具。过程层析的实验实现还受制备与测量误差影响，因此推断时通常要同时估计置信区间和物理性约束。有限样本会让重构矩阵偏离正半定或迹保持条件，需要最大似然、贝叶斯或门集模型来修正。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "过程层析",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%87%E7%A8%8B%E5%B1%82%E6%9E%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "过程层析",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%87%E7%A8%8B%E5%B1%82%E6%9E%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "process tomography",
+          "url": "https://en.wikipedia.org/w/index.php?search=process%20tomography"
+        }
+      ]
+    },
+    {
+      "chinese_name": "门层析",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "门层析通过一组已知制备、演化和测量结果反推出未知量子对象。态层析重构 $\\rho$，过程层析重构 $\\mathcal E$，门层析则关注实际门集合；测量概率统一写为 $p_i=\\mathrm{Tr}(E_i\\rho)$，其中 $E_i$ 是测量效应，$\\rho$ 是待估对象相关状态。\n\n完整层析所需设置数随系统规模快速增长，因此实际会用压缩感知、最大似然或门集层析减少假设误差。它是校准量子硬件和验证资源态的重要工具。门层析的实验实现还受制备与测量误差影响，因此推断时通常要同时估计置信区间和物理性约束。有限样本会让重构矩阵偏离正半定或迹保持条件，需要最大似然、贝叶斯或门集模型来修正。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "门层析",
+          "url": "https://www.baidu.com/s?wd=%E9%97%A8%E5%B1%82%E6%9E%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "门层析",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%97%A8%E5%B1%82%E6%9E%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gate tomography",
+          "url": "https://en.wikipedia.org/w/index.php?search=gate%20tomography"
+        }
+      ]
+    },
+    {
+      "chinese_name": "随机基准测试",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "随机基准测试用随机克利福德序列估计平均门误差，避免完整过程层析的指数开销。存活概率常拟合为 $F(m)=Ap^m+B$，其中 $m$ 是序列长度，$p$ 是退偏参数，$A,B$ 吸收制备和测量误差。随机化会把许多相干误差平均成近似去极化噪声，使误差率估计更稳健。\n\n它给出的是平均性能而非每个门的完整噪声模型，因此常与交叉熵基准测试、门层析或泄漏测量配合使用。随机基准测试的实验实现还受制备与测量误差影响，因此推断时通常要同时估计置信区间和物理性约束。有限样本会让重构矩阵偏离正半定或迹保持条件，需要最大似然、贝叶斯或门集模型来修正。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "随机基准测试",
+          "url": "https://www.baidu.com/s?wd=%E9%9A%8F%E6%9C%BA%E5%9F%BA%E5%87%86%E6%B5%8B%E8%AF%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "随机基准测试",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9A%8F%E6%9C%BA%E5%9F%BA%E5%87%86%E6%B5%8B%E8%AF%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "randomized benchmarking",
+          "url": "https://en.wikipedia.org/w/index.php?search=randomized%20benchmarking"
+        }
+      ]
+    },
+    {
+      "chinese_name": "交叉熵基准测试",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "交叉熵基准测试比较实验采样分布与理想量子电路输出分布，常用于随机线路和量子优势实验。交叉熵可写为 $H(p,q)=-\\sum_x p(x)\\log q(x)$，其中 $p$ 是实验分布，$q$ 是理想分布，$x$ 是比特串。若实验样本更偏向理想高概率输出，指标会优于均匀随机采样。\n\n它不重构完整量子态，而是用大规模随机电路的概率结构检验整体保真度，对经典模拟误差和采样偏差都很敏感。交叉熵基准测试的实验实现还受制备与测量误差影响，因此推断时通常要同时估计置信区间和物理性约束。有限样本会让重构矩阵偏离正半定或迹保持条件，需要最大似然、贝叶斯或门集模型来修正。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "交叉熵基准测试",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%A4%E5%8F%89%E7%86%B5%E5%9F%BA%E5%87%86%E6%B5%8B%E8%AF%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "交叉熵基准测试",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%A4%E5%8F%89%E7%86%B5%E5%9F%BA%E5%87%86%E6%B5%8B%E8%AF%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cross entropy benchmarking",
+          "url": "https://en.wikipedia.org/w/index.php?search=cross%20entropy%20benchmarking"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子电路",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子电路是量子电路模型中作用在一个或多个量子比特上的基本操作，用幺正变换保持态的归一化和内积。可写为 $\\rho\\mapsto U\\rho U^\\dagger$，其中 $U$ 是幺正矩阵，$\\rho$ 是输入密度算符，$U^\\dagger$ 是厄米共轭。单比特门控制布洛赫球上的旋转，双比特门提供纠缠生成能力；受控门和交换门则组织寄存器之间的信息流。\n\n实际硬件中一个门对应有限时长控制脉冲，存在串扰、退相干和校准误差，因此电路深度与门保真度共同决定算法能否运行。对量子电路而言，抽象矩阵只是第一层；真正运行时还要考虑门分解、并行调度和硬件连通图。克利福德结构便于经典跟踪，非克利福德资源带来通用性，二者的比例常决定容错开销和电路深度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子电路",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E7%94%B5%E8%B7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子电路",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E7%94%B5%E8%B7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum circuit",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20circuit"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子门",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子门是量子电路模型中作用在一个或多个量子比特上的基本操作，用幺正变换保持态的归一化和内积。可写为 $\\rho\\mapsto U\\rho U^\\dagger$，其中 $U$ 是幺正矩阵，$\\rho$ 是输入密度算符，$U^\\dagger$ 是厄米共轭。单比特门控制布洛赫球上的旋转，双比特门提供纠缠生成能力；受控门和交换门则组织寄存器之间的信息流。\n\n实际硬件中一个门对应有限时长控制脉冲，存在串扰、退相干和校准误差，因此电路深度与门保真度共同决定算法能否运行。对量子门而言，抽象矩阵只是第一层；真正运行时还要考虑门分解、并行调度和硬件连通图。克利福德结构便于经典跟踪，非克利福德资源带来通用性，二者的比例常决定容错开销和电路深度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子门",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E9%97%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子门",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E9%97%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum gate",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20gate"
+        }
+      ]
+    },
+    {
+      "chinese_name": "单比特门",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "单比特门是量子电路模型中作用在一个或多个量子比特上的基本操作，用幺正变换保持态的归一化和内积。可写为 $\\rho\\mapsto U\\rho U^\\dagger$，其中 $U$ 是幺正矩阵，$\\rho$ 是输入密度算符，$U^\\dagger$ 是厄米共轭。单比特门控制布洛赫球上的旋转，双比特门提供纠缠生成能力；受控门和交换门则组织寄存器之间的信息流。\n\n实际硬件中一个门对应有限时长控制脉冲，存在串扰、退相干和校准误差，因此电路深度与门保真度共同决定算法能否运行。对单比特门而言，抽象矩阵只是第一层；真正运行时还要考虑门分解、并行调度和硬件连通图。克利福德结构便于经典跟踪，非克利福德资源带来通用性，二者的比例常决定容错开销和电路深度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单比特门",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E6%AF%94%E7%89%B9%E9%97%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单比特门",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E6%AF%94%E7%89%B9%E9%97%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "single qubit gate",
+          "url": "https://en.wikipedia.org/w/index.php?search=single%20qubit%20gate"
+        }
+      ]
+    },
+    {
+      "chinese_name": "双比特门",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "双比特门是量子电路模型中作用在一个或多个量子比特上的基本操作，用幺正变换保持态的归一化和内积。可写为 $\\rho\\mapsto U\\rho U^\\dagger$，其中 $U$ 是幺正矩阵，$\\rho$ 是输入密度算符，$U^\\dagger$ 是厄米共轭。单比特门控制布洛赫球上的旋转，双比特门提供纠缠生成能力；受控门和交换门则组织寄存器之间的信息流。\n\n实际硬件中一个门对应有限时长控制脉冲，存在串扰、退相干和校准误差，因此电路深度与门保真度共同决定算法能否运行。对双比特门而言，抽象矩阵只是第一层；真正运行时还要考虑门分解、并行调度和硬件连通图。克利福德结构便于经典跟踪，非克利福德资源带来通用性，二者的比例常决定容错开销和电路深度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "双比特门",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8C%E6%AF%94%E7%89%B9%E9%97%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "双比特门",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8C%E6%AF%94%E7%89%B9%E9%97%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "two qubit gate",
+          "url": "https://en.wikipedia.org/w/index.php?search=two%20qubit%20gate"
+        }
+      ]
+    },
+    {
+      "chinese_name": "受控非门",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "受控非门是量子电路模型中作用在一个或多个量子比特上的基本操作，用幺正变换保持态的归一化和内积。可写为 $|a,b\\rangle\\mapsto|a,b\\oplus a\\rangle$，其中 $a$ 是控制位，$b$ 是目标位，异或体现条件翻转。单比特门控制布洛赫球上的旋转，双比特门提供纠缠生成能力；受控门和交换门则组织寄存器之间的信息流。\n\n实际硬件中一个门对应有限时长控制脉冲，存在串扰、退相干和校准误差，因此电路深度与门保真度共同决定算法能否运行。对受控非门而言，抽象矩阵只是第一层；真正运行时还要考虑门分解、并行调度和硬件连通图。克利福德结构便于经典跟踪，非克利福德资源带来通用性，二者的比例常决定容错开销和电路深度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "受控非门",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%97%E6%8E%A7%E9%9D%9E%E9%97%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "受控非门",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%97%E6%8E%A7%E9%9D%9E%E9%97%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "controlled not gate",
+          "url": "https://en.wikipedia.org/w/index.php?search=controlled%20not%20gate"
+        }
+      ]
+    },
+    {
+      "chinese_name": "哈达玛门",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "哈达玛门是量子电路模型中作用在一个或多个量子比特上的基本操作，用幺正变换保持态的归一化和内积。可写为 $H|0\\rangle=(|0\\rangle+|1\\rangle)/\\sqrt2$，其中 $H$ 把计算基变为相干叠加基。单比特门控制布洛赫球上的旋转，双比特门提供纠缠生成能力；受控门和交换门则组织寄存器之间的信息流。\n\n实际硬件中一个门对应有限时长控制脉冲，存在串扰、退相干和校准误差，因此电路深度与门保真度共同决定算法能否运行。对哈达玛门而言，抽象矩阵只是第一层；真正运行时还要考虑门分解、并行调度和硬件连通图。克利福德结构便于经典跟踪，非克利福德资源带来通用性，二者的比例常决定容错开销和电路深度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "哈达玛门",
+          "url": "https://www.baidu.com/s?wd=%E5%93%88%E8%BE%BE%E7%8E%9B%E9%97%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "哈达玛门",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%93%88%E8%BE%BE%E7%8E%9B%E9%97%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hadamard gate",
+          "url": "https://en.wikipedia.org/w/index.php?search=hadamard%20gate"
+        }
+      ]
+    },
+    {
+      "chinese_name": "相位门",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "相位门是量子电路模型中作用在一个或多个量子比特上的基本操作，用幺正变换保持态的归一化和内积。可写为 $T=\\mathrm{diag}(1,e^{i\\pi/4})$，其中对角元素给 $|1\\rangle$ 分量附加相位。单比特门控制布洛赫球上的旋转，双比特门提供纠缠生成能力；受控门和交换门则组织寄存器之间的信息流。\n\n实际硬件中一个门对应有限时长控制脉冲，存在串扰、退相干和校准误差，因此电路深度与门保真度共同决定算法能否运行。对相位门而言，抽象矩阵只是第一层；真正运行时还要考虑门分解、并行调度和硬件连通图。克利福德结构便于经典跟踪，非克利福德资源带来通用性，二者的比例常决定容错开销和电路深度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相位门",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E4%BD%8D%E9%97%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相位门",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E4%BD%8D%E9%97%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "phase gate",
+          "url": "https://en.wikipedia.org/w/index.php?search=phase%20gate"
+        }
+      ]
+    },
+    {
+      "chinese_name": "T门",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "T门是量子电路模型中作用在一个或多个量子比特上的基本操作，用幺正变换保持态的归一化和内积。可写为 $T=\\mathrm{diag}(1,e^{i\\pi/4})$，其中对角元素给 $|1\\rangle$ 分量附加相位。单比特门控制布洛赫球上的旋转，双比特门提供纠缠生成能力；受控门和交换门则组织寄存器之间的信息流。\n\n实际硬件中一个门对应有限时长控制脉冲，存在串扰、退相干和校准误差，因此电路深度与门保真度共同决定算法能否运行。对T门而言，抽象矩阵只是第一层；真正运行时还要考虑门分解、并行调度和硬件连通图。克利福德结构便于经典跟踪，非克利福德资源带来通用性，二者的比例常决定容错开销和电路深度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "T门",
+          "url": "https://www.baidu.com/s?wd=T%E9%97%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "T门",
+          "url": "https://zh.wikipedia.org/w/index.php?search=T%E9%97%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "t gate",
+          "url": "https://en.wikipedia.org/w/index.php?search=t%20gate"
+        }
+      ]
+    },
+    {
+      "chinese_name": "托福利门",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "托福利门是量子电路模型中作用在一个或多个量子比特上的基本操作，用幺正变换保持态的归一化和内积。可写为 $|a,b,c\\rangle\\mapsto|a,b,c\\oplus ab\\rangle$，其中两个控制位同时为一时才翻转目标位。单比特门控制布洛赫球上的旋转，双比特门提供纠缠生成能力；受控门和交换门则组织寄存器之间的信息流。\n\n实际硬件中一个门对应有限时长控制脉冲，存在串扰、退相干和校准误差，因此电路深度与门保真度共同决定算法能否运行。对托福利门而言，抽象矩阵只是第一层；真正运行时还要考虑门分解、并行调度和硬件连通图。克利福德结构便于经典跟踪，非克利福德资源带来通用性，二者的比例常决定容错开销和电路深度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "托福利门",
+          "url": "https://www.baidu.com/s?wd=%E6%89%98%E7%A6%8F%E5%88%A9%E9%97%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "托福利门",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%98%E7%A6%8F%E5%88%A9%E9%97%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "toffoli gate",
+          "url": "https://en.wikipedia.org/w/index.php?search=toffoli%20gate"
+        }
+      ]
+    },
+    {
+      "chinese_name": "SWAP门",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "SWAP门是量子电路模型中作用在一个或多个量子比特上的基本操作，用幺正变换保持态的归一化和内积。可写为 $|a,b\\rangle\\mapsto|b,a\\rangle$，其中两个比特的量子态被交换而不测量。单比特门控制布洛赫球上的旋转，双比特门提供纠缠生成能力；受控门和交换门则组织寄存器之间的信息流。\n\n实际硬件中一个门对应有限时长控制脉冲，存在串扰、退相干和校准误差，因此电路深度与门保真度共同决定算法能否运行。对SWAP门而言，抽象矩阵只是第一层；真正运行时还要考虑门分解、并行调度和硬件连通图。克利福德结构便于经典跟踪，非克利福德资源带来通用性，二者的比例常决定容错开销和电路深度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "SWAP门",
+          "url": "https://www.baidu.com/s?wd=SWAP%E9%97%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "SWAP门",
+          "url": "https://zh.wikipedia.org/w/index.php?search=SWAP%E9%97%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "swap gate",
+          "url": "https://en.wikipedia.org/w/index.php?search=swap%20gate"
+        }
+      ]
+    },
+    {
+      "chinese_name": "克利福德群",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "克利福德群是量子电路理论中具有封闭代数结构的门或误差集合。泡利算符满足 $P\\in\\{I,X,Y,Z\\}^{\\otimes n}$，克利福德门满足 $UPU^\\dagger\\in\\mathcal P_n$，其中 $U$ 是克利福德幺正，$\\mathcal P_n$ 是 $n$ 比特泡利群。这个性质使稳定子态可被高效经典模拟，也让错误综合征能以泡利错误分类。\n\n非克利福德门如 T 门提供通用量子计算所需的资源。对克利福德群而言，抽象矩阵只是第一层；真正运行时还要考虑门分解、并行调度和硬件连通图。克利福德结构便于经典跟踪，非克利福德资源带来通用性，二者的比例常决定容错开销和电路深度。因此克利福德群的抽象作用、编译成本和物理误差通常需要同时报告。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "克利福德群",
+          "url": "https://www.baidu.com/s?wd=%E5%85%8B%E5%88%A9%E7%A6%8F%E5%BE%B7%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "克利福德群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%8B%E5%88%A9%E7%A6%8F%E5%BE%B7%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "clifford group",
+          "url": "https://en.wikipedia.org/w/index.php?search=clifford%20group"
+        }
+      ]
+    },
+    {
+      "chinese_name": "克利福德门",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "克利福德门是量子电路理论中具有封闭代数结构的门或误差集合。泡利算符满足 $P\\in\\{I,X,Y,Z\\}^{\\otimes n}$，克利福德门满足 $UPU^\\dagger\\in\\mathcal P_n$，其中 $U$ 是克利福德幺正，$\\mathcal P_n$ 是 $n$ 比特泡利群。这个性质使稳定子态可被高效经典模拟，也让错误综合征能以泡利错误分类。\n\n非克利福德门如 T 门提供通用量子计算所需的资源。对克利福德门而言，抽象矩阵只是第一层；真正运行时还要考虑门分解、并行调度和硬件连通图。克利福德结构便于经典跟踪，非克利福德资源带来通用性，二者的比例常决定容错开销和电路深度。因此克利福德门的抽象作用、编译成本和物理误差通常需要同时报告。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "克利福德门",
+          "url": "https://www.baidu.com/s?wd=%E5%85%8B%E5%88%A9%E7%A6%8F%E5%BE%B7%E9%97%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "克利福德门",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%8B%E5%88%A9%E7%A6%8F%E5%BE%B7%E9%97%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "clifford gate",
+          "url": "https://en.wikipedia.org/w/index.php?search=clifford%20gate"
+        }
+      ]
+    },
+    {
+      "chinese_name": "泡利群",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "泡利群是量子电路理论中具有封闭代数结构的门或误差集合。泡利算符满足 $P\\in\\{I,X,Y,Z\\}^{\\otimes n}$，克利福德门满足 $UPU^\\dagger\\in\\mathcal P_n$，其中 $U$ 是克利福德幺正，$\\mathcal P_n$ 是 $n$ 比特泡利群。这个性质使稳定子态可被高效经典模拟，也让错误综合征能以泡利错误分类。\n\n非克利福德门如 T 门提供通用量子计算所需的资源。对泡利群而言，抽象矩阵只是第一层；真正运行时还要考虑门分解、并行调度和硬件连通图。克利福德结构便于经典跟踪，非克利福德资源带来通用性，二者的比例常决定容错开销和电路深度。因此泡利群的抽象作用、编译成本和物理误差通常需要同时报告。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "泡利群",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A1%E5%88%A9%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "泡利群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A1%E5%88%A9%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pauli group",
+          "url": "https://en.wikipedia.org/w/index.php?search=pauli%20group"
+        }
+      ]
+    },
+    {
+      "chinese_name": "泡利误差",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "泡利误差是量子电路理论中具有封闭代数结构的门或误差集合。泡利算符满足 $P\\in\\{I,X,Y,Z\\}^{\\otimes n}$，克利福德门满足 $UPU^\\dagger\\in\\mathcal P_n$，其中 $U$ 是克利福德幺正，$\\mathcal P_n$ 是 $n$ 比特泡利群。这个性质使稳定子态可被高效经典模拟，也让错误综合征能以泡利错误分类。\n\n非克利福德门如 T 门提供通用量子计算所需的资源。对泡利误差而言，抽象矩阵只是第一层；真正运行时还要考虑门分解、并行调度和硬件连通图。克利福德结构便于经典跟踪，非克利福德资源带来通用性，二者的比例常决定容错开销和电路深度。因此泡利误差的抽象作用、编译成本和物理误差通常需要同时报告。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "泡利误差",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A1%E5%88%A9%E8%AF%AF%E5%B7%AE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "泡利误差",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A1%E5%88%A9%E8%AF%AF%E5%B7%AE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pauli error",
+          "url": "https://en.wikipedia.org/w/index.php?search=pauli%20error"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子傅里叶变换",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子傅里叶变换把计算基上的振幅转换到相位基，是相位估计和肖尔算法的核心子程序。对 $N=2^n$ 维寄存器，定义为 $|x\\rangle\\mapsto N^{-1/2}\\sum_{y=0}^{N-1}e^{2\\pi ixy/N}|y\\rangle$，其中 $x,y$ 是整数基标号。它不是对经典数据逐项做快速傅里叶变换，而是一次幺正地重排全体振幅。\n\n电路可用受控相位门和比特反转实现，精度取决于小角度相位门截断。量子傅里叶变换的优势条件通常藏在输入装载、预言机构造和读出成本中；若这些步骤需要指数资源，量子加速会被抵消。解释算法时要说明输出是完整经典答案、量子态，还是某个期望值估计。所以量子傅里叶变换的复杂度声明必须包括输入模型、成功概率和可观测输出形式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子傅里叶变换",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子傅里叶变换",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum fourier transform",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20fourier%20transform"
+        }
+      ]
+    },
+    {
+      "chinese_name": "相位估计算法",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "相位估计算法估计幺正算符本征值中的相位，是许多量子算法的谱提取模块。若 $U|u\\rangle=e^{2\\pi i\\phi}|u\\rangle$，其中 $U$ 是幺正算符，$|u\\rangle$ 是本征态，$\\phi$ 是待估相位；辅助寄存器通过受控 $U^{2^j}$ 和逆量子傅里叶变换读出 $\\phi$ 的二进制近似。\n\n它把演化相位转成可测比特串，可用于阶寻找、能量估计和线性方程求解。相位估计算法的优势条件通常藏在输入装载、预言机构造和读出成本中；若这些步骤需要指数资源，量子加速会被抵消。解释算法时要说明输出是完整经典答案、量子态，还是某个期望值估计。所以相位估计算法的复杂度声明必须包括输入模型、成功概率和可观测输出形式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相位估计算法",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E4%BD%8D%E4%BC%B0%E8%AE%A1%E7%AE%97%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相位估计算法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E4%BD%8D%E4%BC%B0%E8%AE%A1%E7%AE%97%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "phase estimation algorithm",
+          "url": "https://en.wikipedia.org/w/index.php?search=phase%20estimation%20algorithm"
+        }
+      ]
+    },
+    {
+      "chinese_name": "肖尔算法",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "肖尔算法利用量子相位估计寻找模乘函数周期，从而把整数分解转化为阶寻找问题。核心关系为 $a^r\\equiv1\\pmod N$，其中 $N$ 是待分解整数，$a$ 是与 $N$ 互素的随机数，$r$ 是阶。量子部分通过叠加并行评估模指数和傅里叶采样得到 $r$ 的信息，经典部分再由最大公约数提取因子。\n\n它显示量子计算可在特定数论任务上指数优于已知经典算法，也推动了后量子密码研究。肖尔算法的优势条件通常藏在输入装载、预言机构造和读出成本中；若这些步骤需要指数资源，量子加速会被抵消。解释算法时要说明输出是完整经典答案、量子态，还是某个期望值估计。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "肖尔算法",
+          "url": "https://www.baidu.com/s?wd=%E8%82%96%E5%B0%94%E7%AE%97%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "肖尔算法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%82%96%E5%B0%94%E7%AE%97%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "shor algorithm",
+          "url": "https://en.wikipedia.org/w/index.php?search=shor%20algorithm"
+        }
+      ]
+    },
+    {
+      "chinese_name": "格罗弗算法",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "格罗弗算法在无结构搜索中通过振幅放大提高目标态出现概率。若有 $N$ 个候选和 $M$ 个解，迭代次数约为 $O(\\sqrt{N/M})$；一次迭代可写为 $G=(2|s\\rangle\\langle s|-I)O_f$，其中 $|s\\rangle$ 是均匀叠加态，$O_f$ 是标记解的预言机。它给出平方加速而非指数加速，适用于数据库搜索、约束满足和幅度估计的子步骤。\n\n成功率依赖预言机构造和迭代次数，过度迭代会把振幅转回非目标空间。格罗弗算法的优势条件通常藏在输入装载、预言机构造和读出成本中；若这些步骤需要指数资源，量子加速会被抵消。解释算法时要说明输出是完整经典答案、量子态，还是某个期望值估计。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "格罗弗算法",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%BC%E7%BD%97%E5%BC%97%E7%AE%97%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "格罗弗算法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%BC%E7%BD%97%E5%BC%97%E7%AE%97%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "grover algorithm",
+          "url": "https://en.wikipedia.org/w/index.php?search=grover%20algorithm"
+        }
+      ]
+    },
+    {
+      "chinese_name": "HHL算法",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "HHL算法求解稀疏良态线性方程组的量子算法，输出与解向量成比例的量子态。问题写为 $A|x\\rangle=|b\\rangle$，其中 $A$ 是可高效模拟的厄米矩阵，$|b\\rangle$ 是输入态，$|x\\rangle$ 是解态。算法用相位估计读出本征值，再通过受控旋转实现近似倒数。\n\n优势依赖稀疏性、条件数和只需估计解的某些观测量；若要完整读出所有分量，量子加速会被测量成本抵消。HHL算法的优势条件通常藏在输入装载、预言机构造和读出成本中；若这些步骤需要指数资源，量子加速会被抵消。解释算法时要说明输出是完整经典答案、量子态，还是某个期望值估计。所以HHL算法的复杂度声明必须包括输入模型、成功概率和可观测输出形式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "HHL算法",
+          "url": "https://www.baidu.com/s?wd=HHL%E7%AE%97%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "HHL算法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=HHL%E7%AE%97%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hhl algorithm",
+          "url": "https://en.wikipedia.org/w/index.php?search=hhl%20algorithm"
+        }
+      ]
+    },
+    {
+      "chinese_name": "变分量子算法",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "变分量子算法把参数化量子电路与经典优化器结合，适合中等规模噪声设备。常写目标函数 $C(\\boldsymbol\\theta)=\\langle0|U^\\dagger(\\boldsymbol\\theta)HU(\\boldsymbol\\theta)|0\\rangle$，其中 $U(\\boldsymbol\\theta)$ 是含可调参数的电路，$H$ 是哈密顿量或代价算符。经典优化器根据测量结果更新 $\\boldsymbol\\theta$，以寻找基态能量、近似组合优化解或分类模型。\n\n它的难点包括 barren plateau、采样噪声和硬件表达能力限制。变分量子算法的优势条件通常藏在输入装载、预言机构造和读出成本中；若这些步骤需要指数资源，量子加速会被抵消。解释算法时要说明输出是完整经典答案、量子态，还是某个期望值估计。所以变分量子算法的复杂度声明必须包括输入模型、成功概率和可观测输出形式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "变分量子算法",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%98%E5%88%86%E9%87%8F%E5%AD%90%E7%AE%97%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "变分量子算法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%98%E5%88%86%E9%87%8F%E5%AD%90%E7%AE%97%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "variational quantum algorithm",
+          "url": "https://en.wikipedia.org/w/index.php?search=variational%20quantum%20algorithm"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子近似优化算法",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子近似优化算法把参数化量子电路与经典优化器结合，适合中等规模噪声设备。常写目标函数 $C(\\boldsymbol\\theta)=\\langle0|U^\\dagger(\\boldsymbol\\theta)HU(\\boldsymbol\\theta)|0\\rangle$，其中 $U(\\boldsymbol\\theta)$ 是含可调参数的电路，$H$ 是哈密顿量或代价算符。经典优化器根据测量结果更新 $\\boldsymbol\\theta$，以寻找基态能量、近似组合优化解或分类模型。\n\n它的难点包括 barren plateau、采样噪声和硬件表达能力限制。量子近似优化算法的优势条件通常藏在输入装载、预言机构造和读出成本中；若这些步骤需要指数资源，量子加速会被抵消。解释算法时要说明输出是完整经典答案、量子态，还是某个期望值估计。所以量子近似优化算法的复杂度声明必须包括输入模型、成功概率和可观测输出形式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子近似优化算法",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E8%BF%91%E4%BC%BC%E4%BC%98%E5%8C%96%E7%AE%97%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子近似优化算法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E8%BF%91%E4%BC%BC%E4%BC%98%E5%8C%96%E7%AE%97%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum approximate optimization algorithm",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20approximate%20optimization%20algorithm"
+        }
+      ]
+    },
+    {
+      "chinese_name": "变分量子本征求解器",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "变分量子本征求解器把参数化量子电路与经典优化器结合，适合中等规模噪声设备。常写目标函数 $C(\\boldsymbol\\theta)=\\langle0|U^\\dagger(\\boldsymbol\\theta)HU(\\boldsymbol\\theta)|0\\rangle$，其中 $U(\\boldsymbol\\theta)$ 是含可调参数的电路，$H$ 是哈密顿量或代价算符。经典优化器根据测量结果更新 $\\boldsymbol\\theta$，以寻找基态能量、近似组合优化解或分类模型。\n\n它的难点包括 barren plateau、采样噪声和硬件表达能力限制。变分量子本征求解器的优势条件通常藏在输入装载、预言机构造和读出成本中；若这些步骤需要指数资源，量子加速会被抵消。解释算法时要说明输出是完整经典答案、量子态，还是某个期望值估计。所以变分量子本征求解器的复杂度声明必须包括输入模型、成功概率和可观测输出形式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "变分量子本征求解器",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%98%E5%88%86%E9%87%8F%E5%AD%90%E6%9C%AC%E5%BE%81%E6%B1%82%E8%A7%A3%E5%99%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "变分量子本征求解器",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%98%E5%88%86%E9%87%8F%E5%AD%90%E6%9C%AC%E5%BE%81%E6%B1%82%E8%A7%A3%E5%99%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "variational quantum eigensolver",
+          "url": "https://en.wikipedia.org/w/index.php?search=variational%20quantum%20eigensolver"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子机器学习",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子机器学习把参数化量子电路与经典优化器结合，适合中等规模噪声设备。常写目标函数 $C(\\boldsymbol\\theta)=\\langle0|U^\\dagger(\\boldsymbol\\theta)HU(\\boldsymbol\\theta)|0\\rangle$，其中 $U(\\boldsymbol\\theta)$ 是含可调参数的电路，$H$ 是哈密顿量或代价算符。经典优化器根据测量结果更新 $\\boldsymbol\\theta$，以寻找基态能量、近似组合优化解或分类模型。\n\n它的难点包括 barren plateau、采样噪声和硬件表达能力限制。量子机器学习的优势条件通常藏在输入装载、预言机构造和读出成本中；若这些步骤需要指数资源，量子加速会被抵消。解释算法时要说明输出是完整经典答案、量子态，还是某个期望值估计。所以量子机器学习的复杂度声明必须包括输入模型、成功概率和可观测输出形式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子机器学习",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子机器学习",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum machine learning",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20machine%20learning"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子模拟",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子模拟用可控量子系统研究另一个难以经典求解的量子系统，核心是让目标哈密顿量的动力学可被物理实现。时间演化写为 $U(t)=e^{-iHt}$，其中 $H$ 是待模拟哈密顿量，$t$ 是演化时间，取 $\\hbar=1$。模拟器哈密顿量直接仿照目标模型；数字模拟用 Trotter 分解或量子信号处理，模拟模拟依赖冷原子、离子或超导阵列的直接耦合。\n\n它适合强关联、多体动力学和格点规范理论，但误差来源与平台实现紧密相关。对量子模拟来说，哈密顿量是否可局域实现、能隙是否足够大、误差是否可校准，都会决定理论模型能否变成实验任务。模拟结果常需同经典张量网络、蒙特卡罗或微扰计算比较，以确认量子装置提供的信息增量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子模拟",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E6%A8%A1%E6%8B%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子模拟",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E6%A8%A1%E6%8B%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum simulation",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20simulation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "数字量子模拟",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "数字量子模拟用可控量子系统研究另一个难以经典求解的量子系统，核心是让目标哈密顿量的动力学可被物理实现。时间演化写为 $U(t)=e^{-iHt}$，其中 $H$ 是待模拟哈密顿量，$t$ 是演化时间，取 $\\hbar=1$。\n\n数字门序列近似时间演化；数字模拟用 Trotter 分解或量子信号处理，模拟模拟依赖冷原子、离子或超导阵列的直接耦合。它适合强关联、多体动力学和格点规范理论，但误差来源与平台实现紧密相关。对数字量子模拟来说，哈密顿量是否可局域实现、能隙是否足够大、误差是否可校准，都会决定理论模型能否变成实验任务。模拟结果常需同经典张量网络、蒙特卡罗或微扰计算比较，以确认量子装置提供的信息增量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "数字量子模拟",
+          "url": "https://www.baidu.com/s?wd=%E6%95%B0%E5%AD%97%E9%87%8F%E5%AD%90%E6%A8%A1%E6%8B%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "数字量子模拟",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%95%B0%E5%AD%97%E9%87%8F%E5%AD%90%E6%A8%A1%E6%8B%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "digital quantum simulation",
+          "url": "https://en.wikipedia.org/w/index.php?search=digital%20quantum%20simulation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "模拟量子模拟",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "模拟量子模拟用可控量子系统研究另一个难以经典求解的量子系统，核心是让目标哈密顿量的动力学可被物理实现。时间演化写为 $U(t)=e^{-iHt}$，其中 $H$ 是待模拟哈密顿量，$t$ 是演化时间，取 $\\hbar=1$。\n\n模拟器哈密顿量直接仿照目标模型；数字模拟用 Trotter 分解或量子信号处理，模拟模拟依赖冷原子、离子或超导阵列的直接耦合。它适合强关联、多体动力学和格点规范理论，但误差来源与平台实现紧密相关。对模拟量子模拟来说，哈密顿量是否可局域实现、能隙是否足够大、误差是否可校准，都会决定理论模型能否变成实验任务。模拟结果常需同经典张量网络、蒙特卡罗或微扰计算比较，以确认量子装置提供的信息增量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "模拟量子模拟",
+          "url": "https://www.baidu.com/s?wd=%E6%A8%A1%E6%8B%9F%E9%87%8F%E5%AD%90%E6%A8%A1%E6%8B%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "模拟量子模拟",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A8%A1%E6%8B%9F%E9%87%8F%E5%AD%90%E6%A8%A1%E6%8B%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "analog quantum simulation",
+          "url": "https://en.wikipedia.org/w/index.php?search=analog%20quantum%20simulation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子退火",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子退火利用系统缓慢演化时保持在瞬时基态的性质，把优化问题编码进最终哈密顿量。常写为 $H(s)=(1-s)H_B+sH_P$，其中 $s=t/T$ 是归一化时间，$H_B$ 是初始哈密顿量，$H_P$ 是问题哈密顿量。若演化时间相对最小能隙足够长，末态接近目标基态。\n\n实际退火受有限温度、隧穿、控制噪声和能隙闭合影响，因此性能要同具体问题图和硬件退相干一起评估。对量子退火来说，哈密顿量是否可局域实现、能隙是否足够大、误差是否可校准，都会决定理论模型能否变成实验任务。模拟结果常需同经典张量网络、蒙特卡罗或微扰计算比较，以确认量子装置提供的信息增量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子退火",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E9%80%80%E7%81%AB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子退火",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E9%80%80%E7%81%AB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum annealing",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20annealing"
+        }
+      ]
+    },
+    {
+      "chinese_name": "绝热量子计算",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "绝热量子计算利用系统缓慢演化时保持在瞬时基态的性质，把优化问题编码进最终哈密顿量。常写为 $H(s)=(1-s)H_B+sH_P$，其中 $s=t/T$ 是归一化时间，$H_B$ 是初始哈密顿量，$H_P$ 是问题哈密顿量。若演化时间相对最小能隙足够长，末态接近目标基态。\n\n实际退火受有限温度、隧穿、控制噪声和能隙闭合影响，因此性能要同具体问题图和硬件退相干一起评估。对绝热量子计算来说，哈密顿量是否可局域实现、能隙是否足够大、误差是否可校准，都会决定理论模型能否变成实验任务。模拟结果常需同经典张量网络、蒙特卡罗或微扰计算比较，以确认量子装置提供的信息增量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "绝热量子计算",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%9D%E7%83%AD%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "绝热量子计算",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%9D%E7%83%AD%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "adiabatic quantum computation",
+          "url": "https://en.wikipedia.org/w/index.php?search=adiabatic%20quantum%20computation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子纠错",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子纠错通过冗余编码、综合征测量和恢复操作保护量子信息免受退相干与控制错误破坏。抽象条件可写为 $P E_a^\\dagger E_b P=c_{ab}P$，其中 $P$ 是码空间投影，$E_a,E_b$ 是可能错误，$c_{ab}$ 是系数矩阵。该条件保证错误在码空间上的作用可被区分或等效为无害相位。\n\n量子纠错不能复制未知态，而是把错误信息转移到辅助测量结果中。它是长时间量子存储和大规模算法的基础。量子纠错的核心不是把信息复制多份，而是把错误综合征同逻辑自由度分离。实际架构还要安排辅助比特、重复测量和实时解码；泄漏、相关噪声和测量串扰会破坏理想独立错误假设。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子纠错",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E7%BA%A0%E9%94%99%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子纠错",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E7%BA%A0%E9%94%99"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum error correction",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20error%20correction"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子码",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子码把一个或多个逻辑量子比特编码进更大的物理希尔伯特空间，以抵抗局域噪声。稳定子描述为 $S_i|\\psi_L\\rangle=|\\psi_L\\rangle$，其中 $S_i$ 是对易稳定子生成元，$|\\psi_L\\rangle$ 是逻辑码态；码距 $d$ 决定可检测或纠正的错误权重。\n\n表面码强调二维局域测量，色码有不同横向门结构，量子 LDPC 码追求低检查权重和高编码率。它们都在保护信息与实现逻辑门之间权衡。量子码的核心不是把信息复制多份，而是把错误综合征同逻辑自由度分离。实际架构还要安排辅助比特、重复测量和实时解码；泄漏、相关噪声和测量串扰会破坏理想独立错误假设。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子码",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E7%A0%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子码",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E7%A0%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum code",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20code"
+        }
+      ]
+    },
+    {
+      "chinese_name": "稳定子码",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "稳定子码把一个或多个逻辑量子比特编码进更大的物理希尔伯特空间，以抵抗局域噪声。稳定子描述为 $S_i|\\psi_L\\rangle=|\\psi_L\\rangle$，其中 $S_i$ 是对易稳定子生成元，$|\\psi_L\\rangle$ 是逻辑码态；码距 $d$ 决定可检测或纠正的错误权重。\n\n表面码强调二维局域测量，色码有不同横向门结构，量子 LDPC 码追求低检查权重和高编码率。它们都在保护信息与实现逻辑门之间权衡。稳定子码的核心不是把信息复制多份，而是把错误综合征同逻辑自由度分离。实际架构还要安排辅助比特、重复测量和实时解码；泄漏、相关噪声和测量串扰会破坏理想独立错误假设。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳定子码",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E5%AE%9A%E5%AD%90%E7%A0%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳定子码",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E5%AE%9A%E5%AD%90%E7%A0%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stabilizer code",
+          "url": "https://en.wikipedia.org/w/index.php?search=stabilizer%20code"
+        }
+      ]
+    },
+    {
+      "chinese_name": "表面码",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "表面码把一个或多个逻辑量子比特编码进更大的物理希尔伯特空间，以抵抗局域噪声。稳定子描述为 $S_i|\\psi_L\\rangle=|\\psi_L\\rangle$，其中 $S_i$ 是对易稳定子生成元，$|\\psi_L\\rangle$ 是逻辑码态；码距 $d$ 决定可检测或纠正的错误权重。\n\n表面码强调二维局域测量，色码有不同横向门结构，量子 LDPC 码追求低检查权重和高编码率。它们都在保护信息与实现逻辑门之间权衡。表面码的核心不是把信息复制多份，而是把错误综合征同逻辑自由度分离。实际架构还要安排辅助比特、重复测量和实时解码；泄漏、相关噪声和测量串扰会破坏理想独立错误假设。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "表面码",
+          "url": "https://www.baidu.com/s?wd=%E8%A1%A8%E9%9D%A2%E7%A0%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "表面码",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A1%A8%E9%9D%A2%E7%A0%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "surface code",
+          "url": "https://en.wikipedia.org/w/index.php?search=surface%20code"
+        }
+      ]
+    },
+    {
+      "chinese_name": "色码",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "色码把一个或多个逻辑量子比特编码进更大的物理希尔伯特空间，以抵抗局域噪声。稳定子描述为 $S_i|\\psi_L\\rangle=|\\psi_L\\rangle$，其中 $S_i$ 是对易稳定子生成元，$|\\psi_L\\rangle$ 是逻辑码态；码距 $d$ 决定可检测或纠正的错误权重。\n\n表面码强调二维局域测量，色码有不同横向门结构，量子 LDPC 码追求低检查权重和高编码率。它们都在保护信息与实现逻辑门之间权衡。色码的核心不是把信息复制多份，而是把错误综合征同逻辑自由度分离。实际架构还要安排辅助比特、重复测量和实时解码；泄漏、相关噪声和测量串扰会破坏理想独立错误假设。这些工程限制决定色码从理论码构造走向可扩展逻辑比特的难度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "色码",
+          "url": "https://www.baidu.com/s?wd=%E8%89%B2%E7%A0%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "色码",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%89%B2%E7%A0%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "color code",
+          "url": "https://en.wikipedia.org/w/index.php?search=color%20code"
+        }
+      ]
+    },
+    {
+      "chinese_name": "旋转表面码",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "旋转表面码把一个或多个逻辑量子比特编码进更大的物理希尔伯特空间，以抵抗局域噪声。稳定子描述为 $S_i|\\psi_L\\rangle=|\\psi_L\\rangle$，其中 $S_i$ 是对易稳定子生成元，$|\\psi_L\\rangle$ 是逻辑码态；码距 $d$ 决定可检测或纠正的错误权重。\n\n表面码强调二维局域测量，色码有不同横向门结构，量子 LDPC 码追求低检查权重和高编码率。它们都在保护信息与实现逻辑门之间权衡。旋转表面码的核心不是把信息复制多份，而是把错误综合征同逻辑自由度分离。实际架构还要安排辅助比特、重复测量和实时解码；泄漏、相关噪声和测量串扰会破坏理想独立错误假设。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "旋转表面码",
+          "url": "https://www.baidu.com/s?wd=%E6%97%8B%E8%BD%AC%E8%A1%A8%E9%9D%A2%E7%A0%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "旋转表面码",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%97%8B%E8%BD%AC%E8%A1%A8%E9%9D%A2%E7%A0%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "rotated surface code",
+          "url": "https://en.wikipedia.org/w/index.php?search=rotated%20surface%20code"
+        }
+      ]
+    },
+    {
+      "chinese_name": "重复码",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "重复码把一个或多个逻辑量子比特编码进更大的物理希尔伯特空间，以抵抗局域噪声。稳定子描述为 $S_i|\\psi_L\\rangle=|\\psi_L\\rangle$，其中 $S_i$ 是对易稳定子生成元，$|\\psi_L\\rangle$ 是逻辑码态；码距 $d$ 决定可检测或纠正的错误权重。\n\n表面码强调二维局域测量，色码有不同横向门结构，量子 LDPC 码追求低检查权重和高编码率。它们都在保护信息与实现逻辑门之间权衡。重复码的核心不是把信息复制多份，而是把错误综合征同逻辑自由度分离。实际架构还要安排辅助比特、重复测量和实时解码；泄漏、相关噪声和测量串扰会破坏理想独立错误假设。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "重复码",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8D%E5%A4%8D%E7%A0%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "重复码",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8D%E5%A4%8D%E7%A0%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "repetition code",
+          "url": "https://en.wikipedia.org/w/index.php?search=repetition%20code"
+        }
+      ]
+    },
+    {
+      "chinese_name": "肖尔码",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "肖尔码把一个或多个逻辑量子比特编码进更大的物理希尔伯特空间，以抵抗局域噪声。稳定子描述为 $S_i|\\psi_L\\rangle=|\\psi_L\\rangle$，其中 $S_i$ 是对易稳定子生成元，$|\\psi_L\\rangle$ 是逻辑码态；码距 $d$ 决定可检测或纠正的错误权重。\n\n表面码强调二维局域测量，色码有不同横向门结构，量子 LDPC 码追求低检查权重和高编码率。它们都在保护信息与实现逻辑门之间权衡。肖尔码的核心不是把信息复制多份，而是把错误综合征同逻辑自由度分离。实际架构还要安排辅助比特、重复测量和实时解码；泄漏、相关噪声和测量串扰会破坏理想独立错误假设。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "肖尔码",
+          "url": "https://www.baidu.com/s?wd=%E8%82%96%E5%B0%94%E7%A0%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "肖尔码",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%82%96%E5%B0%94%E7%A0%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "shor code",
+          "url": "https://en.wikipedia.org/w/index.php?search=shor%20code"
+        }
+      ]
+    },
+    {
+      "chinese_name": "斯蒂恩码",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "斯蒂恩码把一个或多个逻辑量子比特编码进更大的物理希尔伯特空间，以抵抗局域噪声。稳定子描述为 $S_i|\\psi_L\\rangle=|\\psi_L\\rangle$，其中 $S_i$ 是对易稳定子生成元，$|\\psi_L\\rangle$ 是逻辑码态；码距 $d$ 决定可检测或纠正的错误权重。\n\n表面码强调二维局域测量，色码有不同横向门结构，量子 LDPC 码追求低检查权重和高编码率。它们都在保护信息与实现逻辑门之间权衡。斯蒂恩码的核心不是把信息复制多份，而是把错误综合征同逻辑自由度分离。实际架构还要安排辅助比特、重复测量和实时解码；泄漏、相关噪声和测量串扰会破坏理想独立错误假设。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "斯蒂恩码",
+          "url": "https://www.baidu.com/s?wd=%E6%96%AF%E8%92%82%E6%81%A9%E7%A0%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "斯蒂恩码",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%96%AF%E8%92%82%E6%81%A9%E7%A0%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "steane code",
+          "url": "https://en.wikipedia.org/w/index.php?search=steane%20code"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子LDPC码",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子LDPC码把一个或多个逻辑量子比特编码进更大的物理希尔伯特空间，以抵抗局域噪声。稳定子描述为 $S_i|\\psi_L\\rangle=|\\psi_L\\rangle$，其中 $S_i$ 是对易稳定子生成元，$|\\psi_L\\rangle$ 是逻辑码态；码距 $d$ 决定可检测或纠正的错误权重。\n\n表面码强调二维局域测量，色码有不同横向门结构，量子 LDPC 码追求低检查权重和高编码率。它们都在保护信息与实现逻辑门之间权衡。量子LDPC码的核心不是把信息复制多份，而是把错误综合征同逻辑自由度分离。实际架构还要安排辅助比特、重复测量和实时解码；泄漏、相关噪声和测量串扰会破坏理想独立错误假设。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子LDPC码",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90LDPC%E7%A0%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子LDPC码",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90LDPC%E7%A0%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum ldpc code",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20ldpc%20code"
+        }
+      ]
+    },
+    {
+      "chinese_name": "容错量子计算",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "容错量子计算说明只要物理错误率低于某一临界值，带纠错的量子计算可通过增加编码规模把逻辑错误率压低。常用缩放写为 $p_L\\sim(p/p_{\\rm th})^{(d+1)/2}$，其中 $p_L$ 是逻辑错误率，$p$ 是物理错误率，$p_{\\rm th}$ 是阈值，$d$ 是码距。\n\n它依赖噪声局域性、综合征测量可靠性和解码器效率。容错操作还要求错误不会在一个步骤中扩散成超过码可纠正范围的多比特错误。容错量子计算的核心不是把信息复制多份，而是把错误综合征同逻辑自由度分离。实际架构还要安排辅助比特、重复测量和实时解码；泄漏、相关噪声和测量串扰会破坏理想独立错误假设。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "容错量子计算",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%B9%E9%94%99%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "容错量子计算",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%B9%E9%94%99%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fault tolerant quantum computation",
+          "url": "https://en.wikipedia.org/w/index.php?search=fault%20tolerant%20quantum%20computation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "阈值定理",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "阈值定理说明只要物理错误率低于某一临界值，带纠错的量子计算可通过增加编码规模把逻辑错误率压低。常用缩放写为 $p_L\\sim(p/p_{\\rm th})^{(d+1)/2}$，其中 $p_L$ 是逻辑错误率，$p$ 是物理错误率，$p_{\\rm th}$ 是阈值，$d$ 是码距。\n\n它依赖噪声局域性、综合征测量可靠性和解码器效率。容错操作还要求错误不会在一个步骤中扩散成超过码可纠正范围的多比特错误。阈值定理的核心不是把信息复制多份，而是把错误综合征同逻辑自由度分离。实际架构还要安排辅助比特、重复测量和实时解码；泄漏、相关噪声和测量串扰会破坏理想独立错误假设。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阈值定理",
+          "url": "https://www.baidu.com/s?wd=%E9%98%88%E5%80%BC%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阈值定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%88%E5%80%BC%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "threshold theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=threshold%20theorem"
+        }
+      ]
+    },
+    {
+      "chinese_name": "逻辑量子比特",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "逻辑量子比特把一个或多个逻辑量子比特编码进更大的物理希尔伯特空间，以抵抗局域噪声。稳定子描述为 $S_i|\\psi_L\\rangle=|\\psi_L\\rangle$，其中 $S_i$ 是对易稳定子生成元，$|\\psi_L\\rangle$ 是逻辑码态；码距 $d$ 决定可检测或纠正的错误权重。\n\n表面码强调二维局域测量，色码有不同横向门结构，量子 LDPC 码追求低检查权重和高编码率。它们都在保护信息与实现逻辑门之间权衡。逻辑量子比特的核心不是把信息复制多份，而是把错误综合征同逻辑自由度分离。实际架构还要安排辅助比特、重复测量和实时解码；泄漏、相关噪声和测量串扰会破坏理想独立错误假设。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "逻辑量子比特",
+          "url": "https://www.baidu.com/s?wd=%E9%80%BB%E8%BE%91%E9%87%8F%E5%AD%90%E6%AF%94%E7%89%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "逻辑量子比特",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%80%BB%E8%BE%91%E9%87%8F%E5%AD%90%E6%AF%94%E7%89%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "logical qubit",
+          "url": "https://en.wikipedia.org/w/index.php?search=logical%20qubit"
+        }
+      ]
+    },
+    {
+      "chinese_name": "综合征测量",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "综合征测量在量子纠错中把错误信息提取为经典比特，同时尽量不测量逻辑量子态本身。稳定子码测量结果满足 $s_i=\\pm1$，其中 $s_i$ 是稳定子 $S_i$ 的本征值；一组 $s_i$ 组成错误综合征。解码器根据综合征选择最可能的恢复算符 $R(s)$。\n\n由于不同错误可能有同一综合征，解码本质是含噪统计推断问题。表面码常用最小权完美匹配或神经解码器来处理大规模综合征。综合征测量的核心不是把信息复制多份，而是把错误综合征同逻辑自由度分离。实际架构还要安排辅助比特、重复测量和实时解码；泄漏、相关噪声和测量串扰会破坏理想独立错误假设。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "综合征测量",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%BC%E5%90%88%E5%BE%81%E6%B5%8B%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "综合征测量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%BC%E5%90%88%E5%BE%81%E6%B5%8B%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "syndrome measurement",
+          "url": "https://en.wikipedia.org/w/index.php?search=syndrome%20measurement"
+        }
+      ]
+    },
+    {
+      "chinese_name": "错误综合征",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "错误综合征在量子纠错中把错误信息提取为经典比特，同时尽量不测量逻辑量子态本身。稳定子码测量结果满足 $s_i=\\pm1$，其中 $s_i$ 是稳定子 $S_i$ 的本征值；一组 $s_i$ 组成错误综合征。解码器根据综合征选择最可能的恢复算符 $R(s)$。\n\n由于不同错误可能有同一综合征，解码本质是含噪统计推断问题。表面码常用最小权完美匹配或神经解码器来处理大规模综合征。错误综合征的核心不是把信息复制多份，而是把错误综合征同逻辑自由度分离。实际架构还要安排辅助比特、重复测量和实时解码；泄漏、相关噪声和测量串扰会破坏理想独立错误假设。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "错误综合征",
+          "url": "https://www.baidu.com/s?wd=%E9%94%99%E8%AF%AF%E7%BB%BC%E5%90%88%E5%BE%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "错误综合征",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%94%99%E8%AF%AF%E7%BB%BC%E5%90%88%E5%BE%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "error syndrome",
+          "url": "https://en.wikipedia.org/w/index.php?search=error%20syndrome"
+        }
+      ]
+    },
+    {
+      "chinese_name": "解码器",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "解码器在量子纠错中把错误信息提取为经典比特，同时尽量不测量逻辑量子态本身。稳定子码测量结果满足 $s_i=\\pm1$，其中 $s_i$ 是稳定子 $S_i$ 的本征值；一组 $s_i$ 组成错误综合征。解码器根据综合征选择最可能的恢复算符 $R(s)$。\n\n由于不同错误可能有同一综合征，解码本质是含噪统计推断问题。表面码常用最小权完美匹配或神经解码器来处理大规模综合征。解码器的核心不是把信息复制多份，而是把错误综合征同逻辑自由度分离。实际架构还要安排辅助比特、重复测量和实时解码；泄漏、相关噪声和测量串扰会破坏理想独立错误假设。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "解码器",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%A3%E7%A0%81%E5%99%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "解码器",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%A3%E7%A0%81%E5%99%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "decoder",
+          "url": "https://en.wikipedia.org/w/index.php?search=decoder"
+        }
+      ]
+    },
+    {
+      "chinese_name": "魔态",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "魔态是超出稳定子资源的非克利福德态，可通过注入实现通用量子计算。典型单比特魔态写为 $|T\\rangle=(|0\\rangle+e^{i\\pi/4}|1\\rangle)/\\sqrt2$，其中相位 $\\pi/4$ 对应 T 门资源。魔态蒸馏用多个有噪魔态和克利福德操作输出少量更高保真态。\n\n它把难以容错实现的非克利福德门转化为状态制备和测量问题，但会消耗大量物理量子比特和时间循环。魔态的核心不是把信息复制多份，而是把错误综合征同逻辑自由度分离。实际架构还要安排辅助比特、重复测量和实时解码；泄漏、相关噪声和测量串扰会破坏理想独立错误假设。这些工程限制决定魔态从理论码构造走向可扩展逻辑比特的难度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "魔态",
+          "url": "https://www.baidu.com/s?wd=%E9%AD%94%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "魔态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%AD%94%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "magic state",
+          "url": "https://en.wikipedia.org/w/index.php?search=magic%20state"
+        }
+      ]
+    },
+    {
+      "chinese_name": "魔态蒸馏",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "魔态蒸馏是超出稳定子资源的非克利福德态，可通过注入实现通用量子计算。典型单比特魔态写为 $|T\\rangle=(|0\\rangle+e^{i\\pi/4}|1\\rangle)/\\sqrt2$，其中相位 $\\pi/4$ 对应 T 门资源。魔态蒸馏用多个有噪魔态和克利福德操作输出少量更高保真态。\n\n它把难以容错实现的非克利福德门转化为状态制备和测量问题，但会消耗大量物理量子比特和时间循环。魔态蒸馏的核心不是把信息复制多份，而是把错误综合征同逻辑自由度分离。实际架构还要安排辅助比特、重复测量和实时解码；泄漏、相关噪声和测量串扰会破坏理想独立错误假设。这些工程限制决定魔态蒸馏从理论码构造走向可扩展逻辑比特的难度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "魔态蒸馏",
+          "url": "https://www.baidu.com/s?wd=%E9%AD%94%E6%80%81%E8%92%B8%E9%A6%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "魔态蒸馏",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%AD%94%E6%80%81%E8%92%B8%E9%A6%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "magic state distillation",
+          "url": "https://en.wikipedia.org/w/index.php?search=magic%20state%20distillation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子隐形传态",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子隐形传态用共享纠缠和两比特经典通信把未知量子态从一端转移到另一端。若输入为 $|\\psi\\rangle=\\alpha|0\\rangle+\\beta|1\\rangle$，发送方对输入和半个贝尔对做贝尔测量，接收方根据两个经典比特施加相应泡利修正。\n\n这里 $\\alpha,\\beta$ 是未知振幅，贝尔对提供非局域资源。传态并不超光速传输信息，因为修正步骤必须等待经典通信；它常用于量子网络、门传态和容错计算。在量子隐形传态中，安全性或通信增益来自纠缠、非正交态或测量扰动，而不是隐藏的经典约定。实际协议还必须给出认证、误差校正和隐私放大步骤，并明确攻击模型与设备信任假设。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子隐形传态",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E9%9A%90%E5%BD%A2%E4%BC%A0%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子隐形传态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E9%9A%90%E5%BD%A2%E4%BC%A0%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum teleportation",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20teleportation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "超密编码",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "超密编码利用预共享贝尔对让发送方通过传送一个量子比特携带两个经典比特。四种编码可写为 ${I,X,Z,XZ}|\\Phi^+\\rangle$，其中 $I,X,Z$ 是泡利操作，$|\\Phi^+\\rangle$ 是共享纠缠态。接收方做贝尔测量即可区分四个正交结果。\n\n协议消耗一对纠缠和一条量子信道，展示纠缠能提升经典通信容量，但不能单独传递消息；没有最终量子比特传输，局域操作只会改变接收方不可见的约化态。在超密编码中，安全性或通信增益来自纠缠、非正交态或测量扰动，而不是隐藏的经典约定。实际协议还必须给出认证、误差校正和隐私放大步骤，并明确攻击模型与设备信任假设。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "超密编码",
+          "url": "https://www.baidu.com/s?wd=%E8%B6%85%E5%AF%86%E7%BC%96%E7%A0%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "超密编码",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B6%85%E5%AF%86%E7%BC%96%E7%A0%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "superdense coding",
+          "url": "https://en.wikipedia.org/w/index.php?search=superdense%20coding"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子密钥分发",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子密钥分发利用量子测量扰动、不可克隆性或贝尔非定域性在远距离双方之间生成共享密钥。安全分析常关注 $S_{\\rm CHSH}>2$，其中 $Q$ 是筛后误码率，$N_{\\rm err}$ 是错误数，$N_{\\rm sift}$ 是筛后样本数；在设备无关情形，$S_{\\rm CHSH}$ 是贝尔不等式参数。\n\nBB84 依赖非正交基选择，E91 利用纠缠关联。协议最终还需误差校正和隐私放大，把部分泄露信息压缩到可证明安全的密钥中。在量子密钥分发中，安全性或通信增益来自纠缠、非正交态或测量扰动，而不是隐藏的经典约定。实际协议还必须给出认证、误差校正和隐私放大步骤，并明确攻击模型与设备信任假设。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子密钥分发",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E5%AF%86%E9%92%A5%E5%88%86%E5%8F%91%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子密钥分发",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E5%AF%86%E9%92%A5%E5%88%86%E5%8F%91"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum key distribution",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20key%20distribution"
+        }
+      ]
+    },
+    {
+      "chinese_name": "BB84协议",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "BB84协议利用量子测量扰动、不可克隆性或贝尔非定域性在远距离双方之间生成共享密钥。安全分析常关注 $Q=(N_{\\rm err}/N_{\\rm sift})$，其中 $Q$ 是筛后误码率，$N_{\\rm err}$ 是错误数，$N_{\\rm sift}$ 是筛后样本数；在设备无关情形，$S_{\\rm CHSH}$ 是贝尔不等式参数。\n\nBB84 依赖非正交基选择，E91 利用纠缠关联。协议最终还需误差校正和隐私放大，把部分泄露信息压缩到可证明安全的密钥中。在BB84协议中，安全性或通信增益来自纠缠、非正交态或测量扰动，而不是隐藏的经典约定。实际协议还必须给出认证、误差校正和隐私放大步骤，并明确攻击模型与设备信任假设。因而BB84协议的安全性或优势判断必须同时依赖协议假设和实验统计证据。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "BB84协议",
+          "url": "https://www.baidu.com/s?wd=BB84%E5%8D%8F%E8%AE%AE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "BB84协议",
+          "url": "https://zh.wikipedia.org/w/index.php?search=BB84%E5%8D%8F%E8%AE%AE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bb84 protocol",
+          "url": "https://en.wikipedia.org/w/index.php?search=bb84%20protocol"
+        }
+      ]
+    },
+    {
+      "chinese_name": "E91协议",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "E91协议利用量子测量扰动、不可克隆性或贝尔非定域性在远距离双方之间生成共享密钥。安全分析常关注 $S_{\\rm CHSH}>2$，其中 $Q$ 是筛后误码率，$N_{\\rm err}$ 是错误数，$N_{\\rm sift}$ 是筛后样本数；在设备无关情形，$S_{\\rm CHSH}$ 是贝尔不等式参数。\n\nBB84 依赖非正交基选择，E91 利用纠缠关联。协议最终还需误差校正和隐私放大，把部分泄露信息压缩到可证明安全的密钥中。在E91协议中，安全性或通信增益来自纠缠、非正交态或测量扰动，而不是隐藏的经典约定。实际协议还必须给出认证、误差校正和隐私放大步骤，并明确攻击模型与设备信任假设。因而E91协议的安全性或优势判断必须同时依赖协议假设和实验统计证据。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "E91协议",
+          "url": "https://www.baidu.com/s?wd=E91%E5%8D%8F%E8%AE%AE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "E91协议",
+          "url": "https://zh.wikipedia.org/w/index.php?search=E91%E5%8D%8F%E8%AE%AE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "e91 protocol",
+          "url": "https://en.wikipedia.org/w/index.php?search=e91%20protocol"
+        }
+      ]
+    },
+    {
+      "chinese_name": "设备无关协议",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "设备无关协议利用量子测量扰动、不可克隆性或贝尔非定域性在远距离双方之间生成共享密钥。安全分析常关注 $S_{\\rm CHSH}>2$，其中 $Q$ 是筛后误码率，$N_{\\rm err}$ 是错误数，$N_{\\rm sift}$ 是筛后样本数；在设备无关情形，$S_{\\rm CHSH}$ 是贝尔不等式参数。\n\nBB84 依赖非正交基选择，E91 利用纠缠关联。协议最终还需误差校正和隐私放大，把部分泄露信息压缩到可证明安全的密钥中。在设备无关协议中，安全性或通信增益来自纠缠、非正交态或测量扰动，而不是隐藏的经典约定。实际协议还必须给出认证、误差校正和隐私放大步骤，并明确攻击模型与设备信任假设。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "设备无关协议",
+          "url": "https://www.baidu.com/s?wd=%E8%AE%BE%E5%A4%87%E6%97%A0%E5%85%B3%E5%8D%8F%E8%AE%AE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "设备无关协议",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%AE%BE%E5%A4%87%E6%97%A0%E5%85%B3%E5%8D%8F%E8%AE%AE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "device independent protocol",
+          "url": "https://en.wikipedia.org/w/index.php?search=device%20independent%20protocol"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子随机数",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子随机数从量子测量的本征随机性中生成经典随机比特，目标是给出可验证的熵来源而非伪随机序列。若测量结果分布为 $p(x)$，最小熵写为 $H_{\\min}=-\\log\\max_x p(x)$，其中 $x$ 是输出结果。实际装置还要估计探测器偏置、相位噪声和环境侧信息，再用随机性提取器压缩输出。\n\n设备无关方案可通过贝尔违背认证随机性，但代价是实验要求更高、速率较低。在量子随机数中，安全性或通信增益来自纠缠、非正交态或测量扰动，而不是隐藏的经典约定。实际协议还必须给出认证、误差校正和隐私放大步骤，并明确攻击模型与设备信任假设。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子随机数",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E9%9A%8F%E6%9C%BA%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子随机数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E9%9A%8F%E6%9C%BA%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum random number",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20random%20number"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子复杂性",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子复杂性研究量子计算在资源受限下能解决哪些判定问题，并把算法能力放入复杂性类。BQP 可表述为量子电路族在多项式时间内以有界错误给出答案，成功率常要求 $P_{\\rm succ}\\ge2/3$；其中 $P_{\\rm succ}$ 是正确概率。\n\nQMA 则允许量子见证态，由多项式时间验证器检验。复杂性类不是具体硬件速度榜，而是关于问题规模渐近增长的理论分类，用来比较量子、经典随机和可验证证明系统的边界。量子复杂性把物理装置的有限保真度同抽象计算复杂度联系起来，但两者不能混为一谈。复杂性类描述渐近可解性，硬件指标描述当前可运行规模；只有任务定义、误差界和经典基线同时明确，比较才有意义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子复杂性",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E5%A4%8D%E6%9D%82%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子复杂性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E5%A4%8D%E6%9D%82%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum complexity",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20complexity"
+        }
+      ]
+    },
+    {
+      "chinese_name": "BQP类",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "BQP类研究量子计算在资源受限下能解决哪些判定问题，并把算法能力放入复杂性类。BQP 可表述为量子电路族在多项式时间内以有界错误给出答案，成功率常要求 $P_{\\rm succ}\\ge2/3$；其中 $P_{\\rm succ}$ 是正确概率。\n\nQMA 则允许量子见证态，由多项式时间验证器检验。复杂性类不是具体硬件速度榜，而是关于问题规模渐近增长的理论分类，用来比较量子、经典随机和可验证证明系统的边界。BQP类把物理装置的有限保真度同抽象计算复杂度联系起来，但两者不能混为一谈。复杂性类描述渐近可解性，硬件指标描述当前可运行规模；只有任务定义、误差界和经典基线同时明确，比较才有意义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "BQP类",
+          "url": "https://www.baidu.com/s?wd=BQP%E7%B1%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "BQP类",
+          "url": "https://zh.wikipedia.org/w/index.php?search=BQP%E7%B1%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bqp class",
+          "url": "https://en.wikipedia.org/w/index.php?search=bqp%20class"
+        }
+      ]
+    },
+    {
+      "chinese_name": "QMA类",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "QMA类研究量子计算在资源受限下能解决哪些判定问题，并把算法能力放入复杂性类。BQP 可表述为量子电路族在多项式时间内以有界错误给出答案，成功率常要求 $P_{\\rm succ}\\ge2/3$；其中 $P_{\\rm succ}$ 是正确概率。\n\nQMA 则允许量子见证态，由多项式时间验证器检验。复杂性类不是具体硬件速度榜，而是关于问题规模渐近增长的理论分类，用来比较量子、经典随机和可验证证明系统的边界。QMA类把物理装置的有限保真度同抽象计算复杂度联系起来，但两者不能混为一谈。复杂性类描述渐近可解性，硬件指标描述当前可运行规模；只有任务定义、误差界和经典基线同时明确，比较才有意义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "QMA类",
+          "url": "https://www.baidu.com/s?wd=QMA%E7%B1%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "QMA类",
+          "url": "https://zh.wikipedia.org/w/index.php?search=QMA%E7%B1%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "qma class",
+          "url": "https://en.wikipedia.org/w/index.php?search=qma%20class"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子优势",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子优势指量子设备在某个明确定义任务上超过已知经典方法的表现，通常要求任务、误差指标和经典基线都清楚。采样实验可用总变差距离 $\\|p-q\\|_1/2$ 描述，其中 $p$ 是理想分布，$q$ 是实验或经典近似分布。\n\n优势不必意味着通用容错计算已经实现，也不必直接解决实用问题；它强调在受控假设下经典模拟成本急剧增长。随机线路采样、玻色采样和特定哈密顿量模拟常用于展示这种分离。量子优势把物理装置的有限保真度同抽象计算复杂度联系起来，但两者不能混为一谈。复杂性类描述渐近可解性，硬件指标描述当前可运行规模；只有任务定义、误差界和经典基线同时明确，比较才有意义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子优势",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E4%BC%98%E5%8A%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子优势",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E4%BC%98%E5%8A%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum advantage",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20advantage"
+        }
+      ]
+    },
+    {
+      "chinese_name": "NISQ设备",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "NISQ设备描述当前含噪中等规模量子硬件的能力边界，既看量子比特数，也看门错误、连通性和可运行电路深度。量子体积常概括为 $V_Q=2^m$，其中 $m$ 是设备能以足够成功率运行的最大方形随机电路宽度。\n\nNISQ 设备尚不能长期容错，适合短深度变分算法、随机采样和模拟原型。这个指标不是唯一性能标准，因为特定任务还会受门集、测量速度、串扰和编译开销影响。NISQ设备把物理装置的有限保真度同抽象计算复杂度联系起来，但两者不能混为一谈。复杂性类描述渐近可解性，硬件指标描述当前可运行规模；只有任务定义、误差界和经典基线同时明确，比较才有意义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "NISQ设备",
+          "url": "https://www.baidu.com/s?wd=NISQ%E8%AE%BE%E5%A4%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "NISQ设备",
+          "url": "https://zh.wikipedia.org/w/index.php?search=NISQ%E8%AE%BE%E5%A4%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "nisq device",
+          "url": "https://en.wikipedia.org/w/index.php?search=nisq%20device"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子体积",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子体积描述当前含噪中等规模量子硬件的能力边界，既看量子比特数，也看门错误、连通性和可运行电路深度。量子体积常概括为 $V_Q=2^m$，其中 $m$ 是设备能以足够成功率运行的最大方形随机电路宽度。\n\nNISQ 设备尚不能长期容错，适合短深度变分算法、随机采样和模拟原型。这个指标不是唯一性能标准，因为特定任务还会受门集、测量速度、串扰和编译开销影响。量子体积把物理装置的有限保真度同抽象计算复杂度联系起来，但两者不能混为一谈。复杂性类描述渐近可解性，硬件指标描述当前可运行规模；只有任务定义、误差界和经典基线同时明确，比较才有意义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子体积",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E4%BD%93%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子体积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E4%BD%93%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum volume",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20volume"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子互信息",
+      "source_file": "words/物理/困难模式：四大方向/quantum_information_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子互信息度量两个量子子系统之间总相关，包括经典相关和纠缠相关。定义为 $I(A:B)=S(\\rho_A)+S(\\rho_B)-S(\\rho_{AB})$，其中 $S$ 是冯诺伊曼熵，$\\rho_A,\\rho_B$ 是约化态，$\\rho_{AB}$ 是联合态。它总是非负，等价于联合态与乘积态的量子相对熵。\n\n量子互信息在热化、黑洞辐射、张量网络和信道容量中用于追踪相关如何在子系统间传播。它不同于单纯纠缠熵，因为混合态中的经典相关也会贡献。量子互信息把物理装置的有限保真度同抽象计算复杂度联系起来，但两者不能混为一谈。复杂性类描述渐近可解性，硬件指标描述当前可运行规模；只有任务定义、误差界和经典基线同时明确，比较才有意义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子互信息",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E4%BA%92%E4%BF%A1%E6%81%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子互信息",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E4%BA%92%E4%BF%A1%E6%81%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum mutual information",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20mutual%20information"
+        }
+      ]
+    }
+  ]
+}

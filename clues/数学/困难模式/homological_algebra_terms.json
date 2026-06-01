@@ -1,0 +1,2405 @@
+{
+  "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+  "entries": [
+    {
+      "chinese_name": "上链复形",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "上链复形把对象按上标次数排列，并用升次数微分连接。形式为 $\\cdots\\to C^n\\xrightarrow{d^n}C^{n+1}\\to\\cdots$，满足 $d^{n+1}d^n=0$；上同调为 $H^n(C)=\\ker d^n/\\operatorname{im}d^{n-1}$。\n\n它与链复形的方向相反，链复形通常用 $d_n:C_n\\to C_{n-1}$。上链复形常来自层、群或微分形式的上同调，重点是闭上链模掉余边界后的信息。 复形的核心是相邻次数之间满足 $d^2=0$，同调只保留闭元模掉边界后的信息。滤过、双复形和谱序列把一次难算的同调拆成多页近似，最终仍要回到同一个目标。 这种层级区分会影响链同伦、准同构和导出范畴同构的含义；它们保存的信息不同，不能只看对象逐项是否相同。 链同伦、准同构和导出范畴同构保存的信息不同，逐项相同并不是唯一的比较标准。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "上链复形",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%8A%E9%93%BE%E5%A4%8D%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "上链复形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%8A%E9%93%BE%E5%A4%8D%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "winding complex",
+          "url": "https://en.wikipedia.org/w/index.php?search=winding%20complex"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "边界算子",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "边界算子是链复形中降低次数的微分。它写作 $d_n:C_n\\to C_{n-1}$，并满足 $d_{n-1}d_n=0$；这个条件表示边界没有边界，因此 $\\operatorname{im}d_{n+1}\\subset\\ker d_n$。\n\n它与余边界算子的方向相反。边界算子决定循环、边界和同调群 $H_n=\\ker d_n/\\operatorname{im}d_{n+1}$，是拓扑链、自由分解和同调计算的共同结构。 核、像和正合性决定哪些信息能通过取商留下来。短正合列、连接同态和长正合列把局部缺口传递到相邻次数；图追踪和各种引理则保证这些映射按预期相容。 连接同态、长正合列和图追踪把局部缺口传到相邻次数；许多引理的作用，就是保证这些传递不会依赖临时图表。 长正合列和连接同态记录缺口怎样跨次数传递，图追踪保证这些传递与临时表示无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "边界算子",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%B9%E7%95%8C%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "边界算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%B9%E7%95%8C%E7%AE%97%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "boundary operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=boundary%20operator"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "余边界算子",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "余边界算子是上链复形中升高次数的微分，常记 $d^n:C^n\\to C^{n+1}$。它满足 $d^{n+1}d^n=0$，从而定义上同调 $H^n=\\ker d^n/\\operatorname{im}d^{n-1}$。\n\n它与边界算子不是同一方向的记号变化，而是对应对偶复形或上同调理论。切赫上同调、群上同调和德拉姆复形都以余边界算子组织局部到全局的信息。 核、像和正合性决定哪些信息能通过取商留下来。短正合列、连接同态和长正合列把局部缺口传递到相邻次数；图追踪和各种引理则保证这些映射按预期相容。 连接同态、长正合列和图追踪把局部缺口传到相邻次数；许多引理的作用，就是保证这些传递不会依赖临时图表。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "余边界算子",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%99%E8%BE%B9%E7%95%8C%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "余边界算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%99%E8%BE%B9%E7%95%8C%E7%AE%97%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "co boundary operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=co%20boundary%20operator"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "链映射",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "链映射是在两个链复形之间逐次给出并与微分交换的映射。若 $C_\\bullet,D_\\bullet$ 是链复形，链映射 $f$ 由 $f_n:C_n\\to D_n$ 组成，并满足 $d_D f_n=f_{n-1}d_C$。\n\n它保证循环送到循环、边界送到边界，因此诱导同调映射 $H_n(f):H_n(C)\\to H_n(D)$。链映射不同于任意分次映射，交换条件是能进入同调层面的关键。 核、像和正合性决定哪些信息能通过取商留下来。短正合列、连接同态和长正合列把局部缺口传递到相邻次数；图追踪和各种引理则保证这些映射按预期相容。 连接同态、长正合列和图追踪把局部缺口传到相邻次数；许多引理的作用，就是保证这些传递不会依赖临时图表。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "链映射",
+          "url": "https://www.baidu.com/s?wd=%E9%93%BE%E6%98%A0%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "链映射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%93%BE%E6%98%A0%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "chain map",
+          "url": "https://en.wikipedia.org/w/index.php?search=chain%20map"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "链同伦",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "链同伦说明两个链映射在同调意义下相同。若 $f,g:C_\\bullet\\to D_\\bullet$，链同伦是一族 $h_n:C_n\\to D_{n+1}$，满足 $f-g=d_Dh+hd_C$；分量式含相邻次数的微分。\n\n链同伦不要求 $f=g$，但会诱导相同的同调映射。它比链同构弱，是同伦范畴的等价关系；映射锥、形变收缩和同伦等价都依赖这一概念。 复形的核心是相邻次数之间满足 $d^2=0$，同调只保留闭元模掉边界后的信息。滤过、双复形和谱序列把一次难算的同调拆成多页近似，最终仍要回到同一个目标。 这种层级区分会影响链同伦、准同构和导出范畴同构的含义；它们保存的信息不同，不能只看对象逐项是否相同。 链同伦、准同构和导出范畴同构保存的信息不同，逐项相同并不是唯一的比较标准。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "链同伦",
+          "url": "https://www.baidu.com/s?wd=%E9%93%BE%E5%90%8C%E4%BC%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "链同伦",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%93%BE%E5%90%8C%E4%BC%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "chain homotopy",
+          "url": "https://en.wikipedia.org/w/index.php?search=chain%20homotopy"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "准同构",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "准同构是诱导所有同调同构的链映射。若 $f:C_\\bullet\\to D_\\bullet$ 满足 $H_n(f):H_n(C)\\cong H_n(D)$ 对所有 $n$ 成立，则 $f$ 是准同构。\n\n它不必是链复形逐项同构，也不必有严格逆。导出范畴正是把准同构形式地变成同构，因此只保留同调信息；这与链同伦等价不同，后者更强也更具体。 核、像和正合性决定哪些信息能通过取商留下来。短正合列、连接同态和长正合列把局部缺口传递到相邻次数；图追踪和各种引理则保证这些映射按预期相容。 连接同态、长正合列和图追踪把局部缺口传到相邻次数；许多引理的作用，就是保证这些传递不会依赖临时图表。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "准同构",
+          "url": "https://www.baidu.com/s?wd=%E5%87%86%E5%90%8C%E6%9E%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "准同构",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%86%E5%90%8C%E6%9E%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quasi isomorphism",
+          "url": "https://en.wikipedia.org/w/index.php?search=quasi%20isomorphism"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "短正合列",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "短正合列是三个对象之间最基本的正合关系。形式为 $0\\to A\\xrightarrow{u}B\\xrightarrow{v}C\\to0$，要求 $u$ 单、$v$ 满且 $\\operatorname{im}u=\\ker v$。\n\n它表示 $B$ 是由 $A$ 和 $C$ 拼成的扩张，但不一定分裂为直和。短正合列可诱导长正合列，也定义 Ext 中的一阶扩张；分裂与否常由同调类度量。 核、像和正合性决定哪些信息能通过取商留下来。短正合列、连接同态和长正合列把局部缺口传递到相邻次数；图追踪和各种引理则保证这些映射按预期相容。 连接同态、长正合列和图追踪把局部缺口传到相邻次数；许多引理的作用，就是保证这些传递不会依赖临时图表。 长正合列和连接同态记录缺口怎样跨次数传递，图追踪保证这些传递与临时表示无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "短正合列",
+          "url": "https://www.baidu.com/s?wd=%E7%9F%AD%E6%AD%A3%E5%90%88%E5%88%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "短正合列",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9F%AD%E6%AD%A3%E5%90%88%E5%88%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "short exact sequence",
+          "url": "https://en.wikipedia.org/w/index.php?search=short%20exact%20sequence"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "长正合列",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "长正合列是在无限或多项对象之间逐处满足核等于像的序列。写作 $\\cdots\\to A_n\\xrightarrow{f_n}A_{n-1}\\xrightarrow{f_{n-1}}A_{n-2}\\to\\cdots$，并要求 $\\operatorname{im}f_n=\\ker f_{n-1}$。\n\n它常由短正合列的同调、上同调或三角范畴中的三角产生。长正合列不是单个对象的分解，而是控制各次数不变量之间传递和连接同态的工具。 核、像和正合性决定哪些信息能通过取商留下来。短正合列、连接同态和长正合列把局部缺口传递到相邻次数；图追踪和各种引理则保证这些映射按预期相容。 连接同态、长正合列和图追踪把局部缺口传到相邻次数；许多引理的作用，就是保证这些传递不会依赖临时图表。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "长正合列",
+          "url": "https://www.baidu.com/s?wd=%E9%95%BF%E6%AD%A3%E5%90%88%E5%88%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "长正合列",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%95%BF%E6%AD%A3%E5%90%88%E5%88%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "long straight line",
+          "url": "https://en.wikipedia.org/w/index.php?search=long%20straight%20line"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "蛇引理",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "蛇引理从两个短正合列和三条竖直映射组成的交换图中产生新的正合列。典型结论为 $\\ker f\\to\\ker g\\to\\ker h\\xrightarrow{\\delta}\\operatorname{coker}f\\to\\operatorname{coker}g\\to\\operatorname{coker}h$。\n\n连接同态 $\\delta$ 来自图追踪，记录中间对象中无法直接提升的障碍。蛇引理是构造长正合列、五引理和比较定理的基础，不是普通正合列定义的重复。 核、像和正合性决定哪些信息能通过取商留下来。短正合列、连接同态和长正合列把局部缺口传递到相邻次数；图追踪和各种引理则保证这些映射按预期相容。 连接同态、长正合列和图追踪把局部缺口传到相邻次数；许多引理的作用，就是保证这些传递不会依赖临时图表。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "蛇引理",
+          "url": "https://www.baidu.com/s?wd=%E8%9B%87%E5%BC%95%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "蛇引理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%9B%87%E5%BC%95%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "snake lemma",
+          "url": "https://en.wikipedia.org/w/index.php?search=snake%20lemma"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "五引理",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "五引理比较两个长正合列之间的五项交换图。若两端四个竖直映射满足适当同构、单射或满射条件，则中间映射也可推出为同构；典型图形含 $A_i\\to B_i\\to C_i\\to D_i\\to E_i$。\n\n它不计算同调群本身，而用正合性传播已知同构。五引理常用于证明由链映射诱导的映射是同构；短五引理则是短正合列版本的精简形式。 核、像和正合性决定哪些信息能通过取商留下来。短正合列、连接同态和长正合列把局部缺口传递到相邻次数；图追踪和各种引理则保证这些映射按预期相容。 连接同态、长正合列和图追踪把局部缺口传到相邻次数；许多引理的作用，就是保证这些传递不会依赖临时图表。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "五引理",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%94%E5%BC%95%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "五引理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%94%E5%BC%95%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "five lemma",
+          "url": "https://en.wikipedia.org/w/index.php?search=five%20lemma"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "九引理",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "九引理处理 $3\\times3$ 交换图中的正合性传播。若三列正合、前两行正合并满足交换条件，则第三行也正合；常见图形由九个对象 $A_{ij}$ 和水平、竖直态射组成。\n\n它与蛇引理一样属于图追踪工具，但关注整行整列的正合性，而不是核与余核之间的连接同态。九引理常用于扩张、滤过对象和复形短正合列的拼接。 核、像和正合性决定哪些信息能通过取商留下来。短正合列、连接同态和长正合列把局部缺口传递到相邻次数；图追踪和各种引理则保证这些映射按预期相容。 连接同态、长正合列和图追踪把局部缺口传到相邻次数；许多引理的作用，就是保证这些传递不会依赖临时图表。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "九引理",
+          "url": "https://www.baidu.com/s?wd=%E4%B9%9D%E5%BC%95%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "九引理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B9%9D%E5%BC%95%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "nine lemma",
+          "url": "https://en.wikipedia.org/w/index.php?search=nine%20lemma"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "马蹄引理",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "马蹄引理说明短正合列两端对象的投射分解可拼成中间对象的投射分解。若 $0\\to A\\to B\\to C\\to0$ 正合，并给定 $A$、$C$ 的投射分解，则可构造 $B$ 的分解，常形如 $P_n\\oplus Q_n$。\n\n它的名称来自拼接图形。马蹄引理不是正合列本身的性质，而是分解可同时选择的结果；Ext、Tor 的长正合列和同调维数估计常依赖它。 核、像和正合性决定哪些信息能通过取商留下来。短正合列、连接同态和长正合列把局部缺口传递到相邻次数；图追踪和各种引理则保证这些映射按预期相容。 连接同态、长正合列和图追踪把局部缺口传到相邻次数；许多引理的作用，就是保证这些传递不会依赖临时图表。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "马蹄引理",
+          "url": "https://www.baidu.com/s?wd=%E9%A9%AC%E8%B9%84%E5%BC%95%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "马蹄引理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%A9%AC%E8%B9%84%E5%BC%95%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "horseshoe lemma",
+          "url": "https://en.wikipedia.org/w/index.php?search=horseshoe%20lemma"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "图追踪",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "图追踪是在交换图中逐步提升、取像、比较核余核的证明方法。典型操作是在正合列 $A\\to B\\to C$ 中利用 $\\operatorname{im}=\\ker$，沿箭头移动元素并用交换性保证不同路径结果一致。\n\n它不是一个单独定理，而是一类构造同态和验证正合性的技术。蛇引理、五引理和九引理都可由图追踪证明；在抽象阿贝尔范畴中，元素追踪可由泛性质替代。 核、像和正合性决定哪些信息能通过取商留下来。短正合列、连接同态和长正合列把局部缺口传递到相邻次数；图追踪和各种引理则保证这些映射按预期相容。 连接同态、长正合列和图追踪把局部缺口传到相邻次数；许多引理的作用，就是保证这些传递不会依赖临时图表。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "图追踪",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%BE%E8%BF%BD%E8%B8%AA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "图追踪",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%BE%E8%BF%BD%E8%B8%AA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "graph tracking",
+          "url": "https://en.wikipedia.org/w/index.php?search=graph%20tracking"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "投射模",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "投射模是使满射提升问题总有解的模。$P$ 为投射模，若对任意满射 $M\\twoheadrightarrow N$ 和映射 $P\\to N$，存在提升 $P\\to M$；等价地，$\\operatorname{Hom}_R(P,-)$ 保持满射。\n\n自由模一定投射，但投射模未必自由。投射模是构造左导出函子和 Ext 的常用分解对象；投射维数衡量一个模需要多长投射分解。 投射、内射和平坦对象把不够正合的函子替换成可计算模型。$\\operatorname{Ext}$、$\\operatorname{Tor}$ 和同调维数记录 Hom、张量与分解长度的高阶偏差，代表对象可变，不变量不能变。 分解的选择可以变化，导出函子值却要保持自然同构；这正是 Ext、Tor 和局部上同调能作为不变量使用的原因，也解释了为什么要区分原函子、左导出和右导出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "投射模",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%95%E5%B0%84%E6%A8%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "投射模",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%95%E5%B0%84%E6%A8%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "projective module",
+          "url": "https://en.wikipedia.org/w/index.php?search=projective%20module"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "内射模",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "内射模是使单射延拓问题总有解的模。$I$ 为内射模，若对任意单射 $A\\hookrightarrow B$ 和映射 $A\\to I$，存在延拓 $B\\to I$；等价地，$\\operatorname{Hom}_R(-,I)$ 是正合函子。\n\n它与投射模对偶，常用于右导出函子。内射分解用于计算 Ext 和层上同调；在模范畴中有足够内射对象，但内射模通常比自由模更难显式描述。 投射、内射和平坦对象把不够正合的函子替换成可计算模型。$\\operatorname{Ext}$、$\\operatorname{Tor}$ 和同调维数记录 Hom、张量与分解长度的高阶偏差，代表对象可变，不变量不能变。 分解的选择可以变化，导出函子值却要保持自然同构；这正是 Ext、Tor 和局部上同调能作为不变量使用的原因，也解释了为什么要区分原函子、左导出和右导出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "内射模",
+          "url": "https://www.baidu.com/s?wd=%E5%86%85%E5%B0%84%E6%A8%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "内射模",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%86%85%E5%B0%84%E6%A8%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "injective module",
+          "url": "https://en.wikipedia.org/w/index.php?search=injective%20module"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "平坦模",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "平坦模是张量后保持正合性的模。$M$ 为平坦 $R$-模，表示函子 $-\\otimes_R M$ 保持短正合列的单射部分；等价地，$\\operatorname{Tor}_1^R(N,M)=0$ 对所有 $N$ 成立。\n\n投射模一定平坦，但平坦模不一定投射。平坦性在代数几何中对应族的连续变化，平坦分解和 Tor 函子则度量张量积未能保持正合的程度。 投射、内射和平坦对象把不够正合的函子替换成可计算模型。$\\operatorname{Ext}$、$\\operatorname{Tor}$ 和同调维数记录 Hom、张量与分解长度的高阶偏差，代表对象可变，不变量不能变。 分解的选择可以变化，导出函子值却要保持自然同构；这正是 Ext、Tor 和局部上同调能作为不变量使用的原因，也解释了为什么要区分原函子、左导出和右导出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平坦模",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E5%9D%A6%E6%A8%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平坦模",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E5%9D%A6%E6%A8%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "flat module",
+          "url": "https://en.wikipedia.org/w/index.php?search=flat%20module"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "自由模",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "自由模是具有基的模，形式上等于若干个环的直和。若集合 $S$ 为基，则 $F\\cong\\bigoplus_{s\\in S}R$，每个元素唯一写成有限和 $\\sum r_s e_s$。\n\n它是最直接的投射模，但不是所有投射模都自由，尤其在一般环上。自由分解常用来计算同调不变量；与向量空间相比，自由模的基存在性和秩行为更依赖底环。 投射、内射和平坦对象把不够正合的函子替换成可计算模型。$\\operatorname{Ext}$、$\\operatorname{Tor}$ 和同调维数记录 Hom、张量与分解长度的高阶偏差，代表对象可变，不变量不能变。 分解的选择可以变化，导出函子值却要保持自然同构；这正是 Ext、Tor 和局部上同调能作为不变量使用的原因，也解释了为什么要区分原函子、左导出和右导出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自由模",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E7%94%B1%E6%A8%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自由模",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E7%94%B1%E6%A8%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "free module",
+          "url": "https://en.wikipedia.org/w/index.php?search=free%20module"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "投射分解",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "投射分解用投射对象逐步逼近一个对象。对模 $M$，形式为 $\\cdots\\to P_1\\to P_0\\to M\\to0$，其中各 $P_i$ 投射，整个序列正合。\n\n它把任意模替换为适合应用右正合函子的模型。用投射分解计算左导出函子，如 $\\operatorname{Tor}$；不同投射分解在链同伦意义下给出相同导出结果。 投射、内射和平坦对象把不够正合的函子替换成可计算模型。$\\operatorname{Ext}$、$\\operatorname{Tor}$ 和同调维数记录 Hom、张量与分解长度的高阶偏差，代表对象可变，不变量不能变。 分解的选择可以变化，导出函子值却要保持自然同构；这正是 Ext、Tor 和局部上同调能作为不变量使用的原因，也解释了为什么要区分原函子、左导出和右导出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "投射分解",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%95%E5%B0%84%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "投射分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%95%E5%B0%84%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "projective decomposition",
+          "url": "https://en.wikipedia.org/w/index.php?search=projective%20decomposition"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "内射分解",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "内射分解把对象嵌入到内射对象并继续分解其余核。对模或阿贝尔范畴对象 $M$，形式为 $0\\to M\\to I^0\\to I^1\\to\\cdots$，其中 $I^j$ 内射且序列正合。\n\n它适合计算左正合函子的右导出函子。层上同调和 Ext 常由内射分解定义；与投射分解相比，内射分解方向相反，强调延拓而不是提升。 投射、内射和平坦对象把不够正合的函子替换成可计算模型。$\\operatorname{Ext}$、$\\operatorname{Tor}$ 和同调维数记录 Hom、张量与分解长度的高阶偏差，代表对象可变，不变量不能变。 分解的选择可以变化，导出函子值却要保持自然同构；这正是 Ext、Tor 和局部上同调能作为不变量使用的原因，也解释了为什么要区分原函子、左导出和右导出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "内射分解",
+          "url": "https://www.baidu.com/s?wd=%E5%86%85%E5%B0%84%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "内射分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%86%85%E5%B0%84%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "injective decomposition",
+          "url": "https://en.wikipedia.org/w/index.php?search=injective%20decomposition"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "平坦分解",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "平坦分解用平坦模替代对象以计算张量相关导出函子。形式为 $\\cdots\\to F_1\\to F_0\\to M\\to0$，其中 $F_i$ 平坦，并在适当位置正合。\n\n它比投射分解更宽松，因为投射模平坦但平坦模未必投射。平坦分解主要用于计算 $\\operatorname{Tor}^R_i(M,N)$，在非诺特或几何族问题中常比投射分解更自然。 投射、内射和平坦对象把不够正合的函子替换成可计算模型。$\\operatorname{Ext}$、$\\operatorname{Tor}$ 和同调维数记录 Hom、张量与分解长度的高阶偏差，代表对象可变，不变量不能变。 分解的选择可以变化，导出函子值却要保持自然同构；这正是 Ext、Tor 和局部上同调能作为不变量使用的原因，也解释了为什么要区分原函子、左导出和右导出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平坦分解",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E5%9D%A6%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平坦分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E5%9D%A6%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "flat decomposition",
+          "url": "https://en.wikipedia.org/w/index.php?search=flat%20decomposition"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "导出函子",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "导出函子度量一个左正合或右正合函子未能保持正合的偏差。若 $F$ 左正合，其右导出函子写 $R^iF$；若 $G$ 右正合，其左导出函子写 $L_iG$。\n\n构造时用内射、投射或平坦分解替换对象，再取同调。导出函子不同于原函子本身，高阶项记录丢失的信息；Ext、Tor 和层上同调都是基本例子。 投射、内射和平坦对象把不够正合的函子替换成可计算模型。$\\operatorname{Ext}$、$\\operatorname{Tor}$ 和同调维数记录 Hom、张量与分解长度的高阶偏差，代表对象可变，不变量不能变。 分解的选择可以变化，导出函子值却要保持自然同构；这正是 Ext、Tor 和局部上同调能作为不变量使用的原因，也解释了为什么要区分原函子、左导出和右导出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "导出函子",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%BC%E5%87%BA%E5%87%BD%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "导出函子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%BC%E5%87%BA%E5%87%BD%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "derived functor",
+          "url": "https://en.wikipedia.org/w/index.php?search=derived%20functor"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "左导出函子",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "左导出函子通常从右正合函子出发，用投射或平坦分解计算。若 $G$ 右正合，取投射分解 $P_\\bullet\\to M$，定义 $L_iG(M)=H_i(G(P_\\bullet))$。\n\n它衡量 $G$ 不能保持核的程度。张量积函子的左导出函子就是 Tor；与右导出函子相比，左导出函子使用链复形方向，低标次数和边界算子更自然。 投射、内射和平坦对象把不够正合的函子替换成可计算模型。$\\operatorname{Ext}$、$\\operatorname{Tor}$ 和同调维数记录 Hom、张量与分解长度的高阶偏差，代表对象可变，不变量不能变。 分解的选择可以变化，导出函子值却要保持自然同构；这正是 Ext、Tor 和局部上同调能作为不变量使用的原因，也解释了为什么要区分原函子、左导出和右导出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "左导出函子",
+          "url": "https://www.baidu.com/s?wd=%E5%B7%A6%E5%AF%BC%E5%87%BA%E5%87%BD%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "左导出函子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B7%A6%E5%AF%BC%E5%87%BA%E5%87%BD%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "left derived functor",
+          "url": "https://en.wikipedia.org/w/index.php?search=left%20derived%20functor"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "右导出函子",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "右导出函子从左正合函子出发，用内射分解计算。若 $F$ 左正合，取 $0\\to M\\to I^\\bullet$，定义 $R^iF(M)=H^i(F(I^\\bullet))$。\n\n它衡量 $F$ 不能保持余核的程度。Hom 函子的右导出给出 Ext，全局截面函子的右导出给出层上同调；与左导出函子相比，它常以上链复形和上标次数表示。 投射、内射和平坦对象把不够正合的函子替换成可计算模型。$\\operatorname{Ext}$、$\\operatorname{Tor}$ 和同调维数记录 Hom、张量与分解长度的高阶偏差，代表对象可变，不变量不能变。 分解的选择可以变化，导出函子值却要保持自然同构；这正是 Ext、Tor 和局部上同调能作为不变量使用的原因，也解释了为什么要区分原函子、左导出和右导出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "右导出函子",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%B3%E5%AF%BC%E5%87%BA%E5%87%BD%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "右导出函子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%B3%E5%AF%BC%E5%87%BA%E5%87%BD%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "right derived functor",
+          "url": "https://en.wikipedia.org/w/index.php?search=right%20derived%20functor"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "张量积函子",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "张量积函子把一个固定模与别的模作张量积。固定 $R$-模 $M$ 时，函子 $-\\otimes_R M$ 右正合；若 $M$ 平坦，则它保持短正合列。\n\n它的左导出函子是 $\\operatorname{Tor}^R_i(-,M)$，用来测量张量积破坏单射的程度。张量积不同于 Hom，前者合并双线性数据，后者记录线性映射。 投射、内射和平坦对象把不够正合的函子替换成可计算模型。$\\operatorname{Ext}$、$\\operatorname{Tor}$ 和同调维数记录 Hom、张量与分解长度的高阶偏差，代表对象可变，不变量不能变。 分解的选择可以变化，导出函子值却要保持自然同构；这正是 Ext、Tor 和局部上同调能作为不变量使用的原因，也解释了为什么要区分原函子、左导出和右导出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "张量积函子",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%A0%E9%87%8F%E7%A7%AF%E5%87%BD%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "张量积函子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%A0%E9%87%8F%E7%A7%AF%E5%87%BD%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tensor product functor",
+          "url": "https://en.wikipedia.org/w/index.php?search=tensor%20product%20functor"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "同态函子",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "同态函子把对象之间的态射组成阿贝尔群或模。固定 $M$ 时，$\\operatorname{Hom}_R(M,-)$ 左正合；固定第二变量时，$\\operatorname{Hom}_R(-,N)$ 反变且左正合。\n\n它的右导出函子给出 Ext，度量延拓或扩张信息。同态函子不同于张量积函子，方向和正合性都不同；投射对象使第一变量的 Hom 更好，内射对象使第二变量更好。 投射、内射和平坦对象把不够正合的函子替换成可计算模型。$\\operatorname{Ext}$、$\\operatorname{Tor}$ 和同调维数记录 Hom、张量与分解长度的高阶偏差，代表对象可变，不变量不能变。 分解的选择可以变化，导出函子值却要保持自然同构；这正是 Ext、Tor 和局部上同调能作为不变量使用的原因，也解释了为什么要区分原函子、左导出和右导出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "同态函子",
+          "url": "https://www.baidu.com/s?wd=%E5%90%8C%E6%80%81%E5%87%BD%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "同态函子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%8C%E6%80%81%E5%87%BD%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "homomorphic functor",
+          "url": "https://en.wikipedia.org/w/index.php?search=homomorphic%20functor"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "扭函子",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "扭函子通常指相对于理想或乘法集提取被某些元素杀死的部分。对整环中元素 $r$，可写 $T_r(M)=\\{m\\in M\\mid r^n m=0\\text{ for some }n\\}$；更一般有 $I$-扭子 $\\Gamma_I(M)$。\n\n它不同于 Tor 函子，名称相近但含义不同。扭函子常是左正合的，其右导出给出局部上同调；在交换代数中，它描述模支撑在闭子集上的部分。 投射、内射和平坦对象把不够正合的函子替换成可计算模型。$\\operatorname{Ext}$、$\\operatorname{Tor}$ 和同调维数记录 Hom、张量与分解长度的高阶偏差，代表对象可变，不变量不能变。 分解的选择可以变化，导出函子值却要保持自然同构；这正是 Ext、Tor 和局部上同调能作为不变量使用的原因，也解释了为什么要区分原函子、左导出和右导出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "扭函子",
+          "url": "https://www.baidu.com/s?wd=%E6%89%AD%E5%87%BD%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "扭函子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%AD%E5%87%BD%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "twist functor",
+          "url": "https://en.wikipedia.org/w/index.php?search=twist%20functor"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "扩张函子",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "扩张函子 Ext 记录对象之间的高阶扩张。对 $R$-模 $M,N$，$\\operatorname{Ext}^i_R(M,N)$ 可由投射分解 $P_\\bullet\\to M$ 后取 $H^i(\\operatorname{Hom}_R(P_\\bullet,N))$ 得到。\n\n$\\operatorname{Ext}^0$ 就是 Hom，$\\operatorname{Ext}^1$ 分类短正合扩张。它不同于 Tor，Tor 来自张量积的左导出；Ext 来自 Hom 的右导出并控制延拓问题。 投射、内射和平坦对象把不够正合的函子替换成可计算模型。$\\operatorname{Ext}$、$\\operatorname{Tor}$ 和同调维数记录 Hom、张量与分解长度的高阶偏差，代表对象可变，不变量不能变。 分解的选择可以变化，导出函子值却要保持自然同构；这正是 Ext、Tor 和局部上同调能作为不变量使用的原因，也解释了为什么要区分原函子、左导出和右导出。 同一个对象可换成不同分解，但 Ext、Tor 和连接映射需要在自然同构意义下保持一致。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "扩张函子",
+          "url": "https://www.baidu.com/s?wd=%E6%89%A9%E5%BC%A0%E5%87%BD%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "扩张函子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%A9%E5%BC%A0%E5%87%BD%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "expanding functor",
+          "url": "https://en.wikipedia.org/w/index.php?search=expanding%20functor"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "托函子",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "托函子 Tor 是张量积函子的左导出。对 $R$-模 $M,N$，取投射或平坦分解 $P_\\bullet\\to M$，定义 $\\operatorname{Tor}^R_i(M,N)=H_i(P_\\bullet\\otimes_R N)$。\n\n$\\operatorname{Tor}_0$ 是普通张量积，高阶 Tor 测量张量积未保持正合的偏差。它不同于 Ext，Ext 由 Hom 产生；在几何中，Tor 还检测交的非横截性和平坦性失败。 投射、内射和平坦对象把不够正合的函子替换成可计算模型。$\\operatorname{Ext}$、$\\operatorname{Tor}$ 和同调维数记录 Hom、张量与分解长度的高阶偏差，代表对象可变，不变量不能变。 分解的选择可以变化，导出函子值却要保持自然同构；这正是 Ext、Tor 和局部上同调能作为不变量使用的原因，也解释了为什么要区分原函子、左导出和右导出。 同一个对象可换成不同分解，但 Ext、Tor 和连接映射需要在自然同构意义下保持一致。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "托函子",
+          "url": "https://www.baidu.com/s?wd=%E6%89%98%E5%87%BD%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "托函子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%98%E5%87%BD%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "functor",
+          "url": "https://en.wikipedia.org/w/index.php?search=functor"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "艾克斯特函子",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "艾克斯特函子就是 Ext 函子的音译名称，表示 Hom 的高阶导出。常写 $\\operatorname{Ext}^n_R(M,N)$，可用投射分解第一变量或内射分解第二变量计算，并与 $n$ 次扩张等价类相关。\n\n它不应与外延集合混淆，也不同于 Tor。Ext 的消失刻画投射维数、内射维数和分裂扩张；在层论中，层 Ext 还记录局部同态与奇性信息。 投射、内射和平坦对象把不够正合的函子替换成可计算模型。$\\operatorname{Ext}$、$\\operatorname{Tor}$ 和同调维数记录 Hom、张量与分解长度的高阶偏差，代表对象可变，不变量不能变。 分解的选择可以变化，导出函子值却要保持自然同构；这正是 Ext、Tor 和局部上同调能作为不变量使用的原因，也解释了为什么要区分原函子、左导出和右导出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "艾克斯特函子",
+          "url": "https://www.baidu.com/s?wd=%E8%89%BE%E5%85%8B%E6%96%AF%E7%89%B9%E5%87%BD%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "艾克斯特函子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%89%BE%E5%85%8B%E6%96%AF%E7%89%B9%E5%87%BD%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "exeter functor",
+          "url": "https://en.wikipedia.org/w/index.php?search=exeter%20functor"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "同调维数",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "同调维数用分解长度度量对象或环的复杂度。对模 $M$，可讨论投射维数、内射维数或平坦维数；例如 $\\operatorname{pd}_R M$ 是最短投射分解长度。\n\n它不是模的生成元个数，而是导出函子消失的阶数。若 $\\operatorname{Ext}^{n+1}_R(M,-)=0$，常反映投射维数至多为 $n$；全局维数则对所有模取上确界。 投射、内射和平坦对象把不够正合的函子替换成可计算模型。$\\operatorname{Ext}$、$\\operatorname{Tor}$ 和同调维数记录 Hom、张量与分解长度的高阶偏差，代表对象可变，不变量不能变。 分解的选择可以变化，导出函子值却要保持自然同构；这正是 Ext、Tor 和局部上同调能作为不变量使用的原因，也解释了为什么要区分原函子、左导出和右导出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "同调维数",
+          "url": "https://www.baidu.com/s?wd=%E5%90%8C%E8%B0%83%E7%BB%B4%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "同调维数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%8C%E8%B0%83%E7%BB%B4%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "homology dimension",
+          "url": "https://en.wikipedia.org/w/index.php?search=homology%20dimension"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "投射维数",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "投射维数是一个模最短投射分解的长度。若存在正合列 $0\\to P_n\\to\\cdots\\to P_0\\to M\\to0$ 且各 $P_i$ 投射，则 $\\operatorname{pd}_R M\\le n$。\n\n它也可由 Ext 消失刻画：超过该长度的 $\\operatorname{Ext}^i_R(M,-)$ 为零。投射维数不同于平坦维数，后者允许平坦模；在诺特局部环上，它与深度有 Auslander-Buchsbaum 公式联系。 投射、内射和平坦对象把不够正合的函子替换成可计算模型。$\\operatorname{Ext}$、$\\operatorname{Tor}$ 和同调维数记录 Hom、张量与分解长度的高阶偏差，代表对象可变，不变量不能变。 分解的选择可以变化，导出函子值却要保持自然同构；这正是 Ext、Tor 和局部上同调能作为不变量使用的原因，也解释了为什么要区分原函子、左导出和右导出。 同一个对象可换成不同分解，但 Ext、Tor 和连接映射需要在自然同构意义下保持一致。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "投射维数",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%95%E5%B0%84%E7%BB%B4%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "投射维数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%95%E5%B0%84%E7%BB%B4%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "projective dimension",
+          "url": "https://en.wikipedia.org/w/index.php?search=projective%20dimension"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "内射维数",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "内射维数是对象最短内射分解的长度。若 $0\\to M\\to I^0\\to\\cdots\\to I^n\\to0$ 正合且各 $I^j$ 内射，则 $\\operatorname{id}_R M\\le n$。\n\n它与投射维数对偶，但计算方式和性质不完全相同。内射维数可由 $\\operatorname{Ext}^i_R(-,M)$ 的消失检测；在局部代数中，有限内射维数与 Gorenstein 性紧密相关。 投射、内射和平坦对象把不够正合的函子替换成可计算模型。$\\operatorname{Ext}$、$\\operatorname{Tor}$ 和同调维数记录 Hom、张量与分解长度的高阶偏差，代表对象可变，不变量不能变。 分解的选择可以变化，导出函子值却要保持自然同构；这正是 Ext、Tor 和局部上同调能作为不变量使用的原因，也解释了为什么要区分原函子、左导出和右导出。 同一个对象可换成不同分解，但 Ext、Tor 和连接映射需要在自然同构意义下保持一致。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "内射维数",
+          "url": "https://www.baidu.com/s?wd=%E5%86%85%E5%B0%84%E7%BB%B4%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "内射维数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%86%85%E5%B0%84%E7%BB%B4%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "injective dimension",
+          "url": "https://en.wikipedia.org/w/index.php?search=injective%20dimension"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "平坦维数",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "平坦维数是用平坦模分解一个模所需的最短长度。若有 $0\\to F_n\\to\\cdots\\to F_0\\to M\\to0$ 且 $F_i$ 平坦，则 $\\operatorname{fd}_R M\\le n$。\n\n它由 Tor 的消失控制：$\\operatorname{Tor}^R_i(M,-)=0$ 在高阶成立。平坦维数不大于投射维数；在许多诺特局部情形中，有限平坦维数与有限投射维数会相互接近。 投射、内射和平坦对象把不够正合的函子替换成可计算模型。$\\operatorname{Ext}$、$\\operatorname{Tor}$ 和同调维数记录 Hom、张量与分解长度的高阶偏差，代表对象可变，不变量不能变。 分解的选择可以变化，导出函子值却要保持自然同构；这正是 Ext、Tor 和局部上同调能作为不变量使用的原因，也解释了为什么要区分原函子、左导出和右导出。 同一个对象可换成不同分解，但 Ext、Tor 和连接映射需要在自然同构意义下保持一致。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平坦维数",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E5%9D%A6%E7%BB%B4%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平坦维数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E5%9D%A6%E7%BB%B4%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "flat dimension",
+          "url": "https://en.wikipedia.org/w/index.php?search=flat%20dimension"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "全局维数",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "全局维数是环上所有模投射维数的上确界。记作 $\\operatorname{gldim}R=\\sup_M\\operatorname{pd}_R M$；也可用 Ext 或 Tor 的最高非消失次数刻画。\n\n它衡量整个模范畴的同调复杂度，而不是单个模。域的全局维数为零，正则局部环的全局维数等于 Krull 维数；全局维数有限常带来导出范畴的良好控制。 投射、内射和平坦对象把不够正合的函子替换成可计算模型。$\\operatorname{Ext}$、$\\operatorname{Tor}$ 和同调维数记录 Hom、张量与分解长度的高阶偏差，代表对象可变，不变量不能变。 分解的选择可以变化，导出函子值却要保持自然同构；这正是 Ext、Tor 和局部上同调能作为不变量使用的原因，也解释了为什么要区分原函子、左导出和右导出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "全局维数",
+          "url": "https://www.baidu.com/s?wd=%E5%85%A8%E5%B1%80%E7%BB%B4%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "全局维数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%A8%E5%B1%80%E7%BB%B4%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "global dimension",
+          "url": "https://en.wikipedia.org/w/index.php?search=global%20dimension"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "阿贝尔范畴",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "阿贝尔范畴是能像模范畴那样做核、余核和正合列的加性范畴。它要求每个态射有核和余核，且余像到像的自然映射为同构；正合性写作 $\\operatorname{im}f=\\ker g$。\n\n它抽象出模、阿贝尔群和凝聚层的共同语言。导出函子、Ext 和长正合列通常在阿贝尔范畴中表述；加性范畴不一定有足够核余核，正合范畴则只指定一部分正合列。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阿贝尔范畴",
+          "url": "https://www.baidu.com/s?wd=%E9%98%BF%E8%B4%9D%E5%B0%94%E8%8C%83%E7%95%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阿贝尔范畴",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%BF%E8%B4%9D%E5%B0%94%E8%8C%83%E7%95%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "abel category",
+          "url": "https://en.wikipedia.org/w/index.php?search=abel%20category"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "加性范畴",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "加性范畴是态射集合带阿贝尔群结构且有有限双积的范畴。对对象 $A,B$，$\\operatorname{Hom}(A,B)$ 是阿贝尔群，复合双线性，并有直和 $A\\oplus B$。\n\n它比阿贝尔范畴弱，不要求所有核和余核存在。链复形、同伦范畴和三角范畴都以加性结构为底；只有进一步加入正合性或三角结构，才能谈导出函子和长正合列。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "加性范畴",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%A0%E6%80%A7%E8%8C%83%E7%95%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "加性范畴",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%A0%E6%80%A7%E8%8C%83%E7%95%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "additive category",
+          "url": "https://en.wikipedia.org/w/index.php?search=additive%20category"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "正合范畴",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "正合范畴是在加性范畴中指定一类短正合列的结构。其正合列常写 $0\\to A\\rightarrowtail B\\twoheadrightarrow C\\to0$，并需满足 Quillen 的稳定性和拼接公理。\n\n它介于阿贝尔范畴和一般加性范畴之间。并非每个核余核都参与正合结构，但足以定义 Ext、导出范畴和 K 理论中的许多构造；投射对象、内射对象也相对于所选正合列定义。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正合范畴",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E5%90%88%E8%8C%83%E7%95%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正合范畴",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E5%90%88%E8%8C%83%E7%95%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "exact category",
+          "url": "https://en.wikipedia.org/w/index.php?search=exact%20category"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "三角范畴",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "三角范畴是带有平移函子和一类 distinguished triangles 的加性范畴。三角写作 $X\\to Y\\to Z\\to X[1]$，其中 $[1]$ 是移位函子，并满足旋转、映射锥和八面体等公理。\n\n它不是阿贝尔范畴，通常没有核余核定义正合列。导出范畴和稳定同伦范畴是典型例子；长正合列由对三角应用上同调函子得到。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "三角范畴",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%89%E8%A7%92%E8%8C%83%E7%95%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "三角范畴",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%89%E8%A7%92%E8%8C%83%E7%95%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "triangulated category",
+          "url": "https://en.wikipedia.org/w/index.php?search=triangulated%20category"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "导出范畴",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "导出范畴是把链复形范畴中的准同构形式地变成同构所得的范畴。对阿贝尔范畴 $\\mathcal A$，记作 $D(\\mathcal A)$；对象仍由复形代表，但同调相同的准同构对象被识别。\n\n它保留比同调群更丰富的三角结构。公式 $\\operatorname{Hom}_{D(\\mathcal A)}(X,Y[n])\\cong\\operatorname{Ext}^n(X,Y)$ 说明 Ext 可在导出范畴中作为 Hom 读取。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "导出范畴",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%BC%E5%87%BA%E8%8C%83%E7%95%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "导出范畴",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%BC%E5%87%BA%E8%8C%83%E7%95%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "derived category",
+          "url": "https://en.wikipedia.org/w/index.php?search=derived%20category"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "同伦范畴",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "同伦范畴把链复形之间的链同伦视为相同映射。若 $K(\\mathcal A)$ 是复形范畴的同伦范畴，则对象为复形，态射为链映射模链同伦等价类。\n\n它不同于导出范畴，因为准同构尚未全部变成同构。导出范畴可看成在同伦范畴中进一步局部化；因此同伦范畴保留具体复形模型，导出范畴更专注同调信息。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "同伦范畴",
+          "url": "https://www.baidu.com/s?wd=%E5%90%8C%E4%BC%A6%E8%8C%83%E7%95%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "同伦范畴",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%8C%E4%BC%A6%E8%8C%83%E7%95%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "homotopy category",
+          "url": "https://en.wikipedia.org/w/index.php?search=homotopy%20category"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "映射锥",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "映射锥把链映射转化为一个新复形，用来测量它离准同构有多远。对上链映射 $f:A^\\bullet\\to B^\\bullet$，锥可写 $\\operatorname{Cone}(f)^n=B^n\\oplus A^{n+1}$，微分含 $d_B$、$d_A$ 和 $f$。\n\n若 $\\operatorname{Cone}(f)$ 无同调，则 $f$ 是准同构。映射锥产生三角 $A\\to B\\to\\operatorname{Cone}(f)\\to A[1]$，是三角范畴公理的基本模型。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。 这一区分能避免把逐项同构、链同伦等价、准同构和导出范畴同构混为同一层级的关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "映射锥",
+          "url": "https://www.baidu.com/s?wd=%E6%98%A0%E5%B0%84%E9%94%A5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "映射锥",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%98%A0%E5%B0%84%E9%94%A5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mapping cone",
+          "url": "https://en.wikipedia.org/w/index.php?search=mapping%20cone"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "映射柱",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "映射柱是把映射替换为更适合同伦处理的对象。对拓扑映射有 $M_f=(X\\times I)\\cup_f Y$；在链复形或模型范畴中也有代数映射柱，用来把映射分解为余纤维化后接弱等价。\n\n它不同于映射锥，映射锥更像商掉源后的同调余量。映射柱保留源和目标的同伦信息，常用于构造同伦、替换模型和证明提升性质。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "映射柱",
+          "url": "https://www.baidu.com/s?wd=%E6%98%A0%E5%B0%84%E6%9F%B1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "映射柱",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%98%A0%E5%B0%84%E6%9F%B1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mapping column",
+          "url": "https://en.wikipedia.org/w/index.php?search=mapping%20column"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "悬移函子",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "悬移函子把对象提升一个同伦维度，在稳定范畴中常与移位相关。拓扑中悬移为 $\\Sigma X=S^1\\wedge X$；链复形中可对应移位 $C[1]$，其分量满足 $C[1]^n=C^{n+1}$ 并带符号调整。\n\n它不同于普通次数重命名，因为微分符号要改变以保持 $d^2=0$。三角范畴中，悬移或移位给出三角的最后一箭头，是稳定同伦和导出范畴的基础操作。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "悬移函子",
+          "url": "https://www.baidu.com/s?wd=%E6%82%AC%E7%A7%BB%E5%87%BD%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "悬移函子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%82%AC%E7%A7%BB%E5%87%BD%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "suspension functor",
+          "url": "https://en.wikipedia.org/w/index.php?search=suspension%20functor"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "移位函子",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "移位函子改变复形的次数并调整微分符号。对上链复形 $C^\\bullet$，常定义 $C[1]^n=C^{n+1}$，微分为 $d_{C[1]}=-d_C$；一般有 $C[k]^n=C^{n+k}$。\n\n它不同于简单改上标，因为符号影响链映射和三角结构。导出范畴中，$\\operatorname{Ext}^n(X,Y)$ 可看作 $\\operatorname{Hom}(X,Y[n])$，移位因此连接扩张次数和态射。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。 这一区分能避免把逐项同构、链同伦等价、准同构和导出范畴同构混为同一层级的关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "移位函子",
+          "url": "https://www.baidu.com/s?wd=%E7%A7%BB%E4%BD%8D%E5%87%BD%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "移位函子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A7%BB%E4%BD%8D%E5%87%BD%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "shift functor",
+          "url": "https://en.wikipedia.org/w/index.php?search=shift%20functor"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "三角公理",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "三角公理规定三角范畴中哪些三角可作为正合列的替代。核心包括同构不变、旋转、任意态射可嵌入三角、态射之间可补全，以及八面体公理；三角形写作 $X\\to Y\\to Z\\to X[1]$。\n\n这些公理不来自核余核，而来自映射锥和同伦结构。导出范畴中，短正合列的复形会给出 distinguished triangle；应用上同调函子后得到长正合列。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "三角公理",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%89%E8%A7%92%E5%85%AC%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "三角公理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%89%E8%A7%92%E5%85%AC%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "triangulated axiom",
+          "url": "https://en.wikipedia.org/w/index.php?search=triangulated%20axiom"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "滤过复形",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "滤过复形是在复形上加入逐层子复形的结构。常写 $\\cdots\\subset F^{p+1}C^\\bullet\\subset F^pC^\\bullet\\subset\\cdots$，并要求微分保持滤过，即 $d(F^pC^n)\\subset F^pC^{n+1}$。\n\n它把一个复杂复形分成若干层，相关分次对象 $\\operatorname{gr}^pC=F^pC/F^{p+1}C$ 产生谱序列。滤过不是额外装饰，而是组织收敛和逐步计算同调的方式。 复形的核心是相邻次数之间满足 $d^2=0$，同调只保留闭元模掉边界后的信息。滤过、双复形和谱序列把一次难算的同调拆成多页近似，最终仍要回到同一个目标。 这种层级区分会影响链同伦、准同构和导出范畴同构的含义；它们保存的信息不同，不能只看对象逐项是否相同。 链同伦、准同构和导出范畴同构保存的信息不同，逐项相同并不是唯一的比较标准。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "滤过复形",
+          "url": "https://www.baidu.com/s?wd=%E6%BB%A4%E8%BF%87%E5%A4%8D%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "滤过复形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%BB%A4%E8%BF%87%E5%A4%8D%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "filter complex",
+          "url": "https://en.wikipedia.org/w/index.php?search=filter%20complex"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "双复形",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "双复形是在两个方向上都有微分的分次对象。它由 $C^{p,q}$ 组成，配有水平微分 $d_h$ 和竖直微分 $d_v$，满足 $d_h^2=d_v^2=0$ 且 $d_hd_v+d_vd_h=0$。\n\n它不同于普通复形，因为可先沿一个方向取同调再沿另一个方向取同调。总复形和谱序列把双复形的信息压缩成单一同调，切赫-德拉姆复形是典型例子。 复形的核心是相邻次数之间满足 $d^2=0$，同调只保留闭元模掉边界后的信息。滤过、双复形和谱序列把一次难算的同调拆成多页近似，最终仍要回到同一个目标。 这种层级区分会影响链同伦、准同构和导出范畴同构的含义；它们保存的信息不同，不能只看对象逐项是否相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "双复形",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8C%E5%A4%8D%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "双复形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8C%E5%A4%8D%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "double complex",
+          "url": "https://en.wikipedia.org/w/index.php?search=double%20complex"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "总复形",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "总复形把双复形合并成一个普通复形。对上链双复形 $C^{p,q}$，常定义 $\\operatorname{Tot}^nC=\\bigoplus_{p+q=n}C^{p,q}$，总微分为 $d=d_h+(-1)^p d_v$。\n\n符号保证 $d^2=0$。总复形不是简单直和，它把两个方向的同调问题合成一个；由按 $p$ 或 $q$ 的滤过可得到两个谱序列，常用于比较不同分解。 复形的核心是相邻次数之间满足 $d^2=0$，同调只保留闭元模掉边界后的信息。滤过、双复形和谱序列把一次难算的同调拆成多页近似，最终仍要回到同一个目标。 这种层级区分会影响链同伦、准同构和导出范畴同构的含义；它们保存的信息不同，不能只看对象逐项是否相同。 链同伦、准同构和导出范畴同构保存的信息不同，逐项相同并不是唯一的比较标准。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "总复形",
+          "url": "https://www.baidu.com/s?wd=%E6%80%BB%E5%A4%8D%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "总复形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%80%BB%E5%A4%8D%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "total complex",
+          "url": "https://en.wikipedia.org/w/index.php?search=total%20complex"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "第一象限谱序列",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "第一象限谱序列是只在 $p,q\\ge0$ 处非零的谱序列。其页写作 $E_r^{p,q}$，微分 $d_r:E_r^{p,q}\\to E_r^{p+r,q-r+1}$；第一象限条件常保证对每个总次数只有有限项参与。\n\n这种有界性有助于收敛到某个滤过对象的分次商。双复形在第一象限时最常产生这类谱序列，因此它比一般谱序列更易控制边界和极限页。 复形的核心是相邻次数之间满足 $d^2=0$，同调只保留闭元模掉边界后的信息。滤过、双复形和谱序列把一次难算的同调拆成多页近似，最终仍要回到同一个目标。 这种层级区分会影响链同伦、准同构和导出范畴同构的含义；它们保存的信息不同，不能只看对象逐项是否相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "第一象限谱序列",
+          "url": "https://www.baidu.com/s?wd=%E7%AC%AC%E4%B8%80%E8%B1%A1%E9%99%90%E8%B0%B1%E5%BA%8F%E5%88%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "第一象限谱序列",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AC%AC%E4%B8%80%E8%B1%A1%E9%99%90%E8%B0%B1%E5%BA%8F%E5%88%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "first quadrant spectral sequence",
+          "url": "https://en.wikipedia.org/w/index.php?search=first%20quadrant%20spectral%20sequence"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "格罗滕迪克谱序列",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "格罗滕迪克谱序列计算复合函子的导出函子。若 $F$、$G$ 为左正合函子并满足适当无环条件，则有 $E_2^{p,q}=R^pF(R^qG(A))\\Rightarrow R^{p+q}(F\\circ G)(A)$。\n\n它把先取 $G$ 的高阶偏差再取 $F$ 的偏差组织起来。Leray 谱序列就是全局截面与推前复合的例子；条件中的无环性保证所选内射分解能正确传递。 复形的核心是相邻次数之间满足 $d^2=0$，同调只保留闭元模掉边界后的信息。滤过、双复形和谱序列把一次难算的同调拆成多页近似，最终仍要回到同一个目标。 这种层级区分会影响链同伦、准同构和导出范畴同构的含义；它们保存的信息不同，不能只看对象逐项是否相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "格罗滕迪克谱序列",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%BC%E7%BD%97%E6%BB%95%E8%BF%AA%E5%85%8B%E8%B0%B1%E5%BA%8F%E5%88%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "格罗滕迪克谱序列",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%BC%E7%BD%97%E6%BB%95%E8%BF%AA%E5%85%8B%E8%B0%B1%E5%BA%8F%E5%88%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "grothendieck spectral sequence",
+          "url": "https://en.wikipedia.org/w/index.php?search=grothendieck%20spectral%20sequence"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "勒雷谱序列",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "勒雷谱序列把映射的推前上同调与源空间上同调联系起来。对连续映射或概形态射 $f:X\\to Y$ 和层 $\\mathcal F$，典型形式为 $E_2^{p,q}=H^p(Y,R^qf_*\\mathcal F)\\Rightarrow H^{p+q}(X,\\mathcal F)$。\n\n它是格罗滕迪克谱序列的几何版本，来自 $\\Gamma_X=\\Gamma_Y\\circ f_*$。它不等于单个长正合列，而是按推前的高阶信息逐页逼近总上同调。 复形的核心是相邻次数之间满足 $d^2=0$，同调只保留闭元模掉边界后的信息。滤过、双复形和谱序列把一次难算的同调拆成多页近似，最终仍要回到同一个目标。 这种层级区分会影响链同伦、准同构和导出范畴同构的含义；它们保存的信息不同，不能只看对象逐项是否相同。 链同伦、准同构和导出范畴同构保存的信息不同，逐项相同并不是唯一的比较标准。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "勒雷谱序列",
+          "url": "https://www.baidu.com/s?wd=%E5%8B%92%E9%9B%B7%E8%B0%B1%E5%BA%8F%E5%88%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "勒雷谱序列",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8B%92%E9%9B%B7%E8%B0%B1%E5%BA%8F%E5%88%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "leray sequence",
+          "url": "https://en.wikipedia.org/w/index.php?search=leray%20sequence"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "切赫复形",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "切赫复形由开覆盖的多重交集上的截面组成。对覆盖 $\\mathfrak U=\\{U_i\\}$ 和层 $\\mathcal F$，$C^q(\\mathfrak U,\\mathcal F)=\\prod_{i_0<\\cdots<i_q}\\mathcal F(U_{i_0\\cdots i_q})$，微分为交错限制和。\n\n它把局部截面的粘合失败编码为上链复形。切赫复形不同于德拉姆复形，前者依赖覆盖和层限制；在好覆盖或仿射覆盖条件下，它能计算层上同调。 复形的核心是相邻次数之间满足 $d^2=0$，同调只保留闭元模掉边界后的信息。滤过、双复形和谱序列把一次难算的同调拆成多页近似，最终仍要回到同一个目标。 这种层级区分会影响链同伦、准同构和导出范畴同构的含义；它们保存的信息不同，不能只看对象逐项是否相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "切赫复形",
+          "url": "https://www.baidu.com/s?wd=%E5%88%87%E8%B5%AB%E5%A4%8D%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "切赫复形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%87%E8%B5%AB%E5%A4%8D%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cech complex",
+          "url": "https://en.wikipedia.org/w/index.php?search=cech%20complex"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "科祖尔复形",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "科祖尔复形由环中一列元素构造，检测正则序列和商环同调。对 $x_1,\\ldots,x_r\\in R$，复形可写 $K(x;R)=\\Lambda^\\bullet R^r$，微分由与 $x=(x_1,\\ldots,x_r)$ 收缩给出。\n\n若 $x_i$ 是正则序列，科祖尔复形分解 $R/(x_1,\\ldots,x_r)$。它不同于任意自由分解，结构由外代数控制；局部代数、交完全性和 Tor 计算都常用它。 复形的核心是相邻次数之间满足 $d^2=0$，同调只保留闭元模掉边界后的信息。滤过、双复形和谱序列把一次难算的同调拆成多页近似，最终仍要回到同一个目标。 这种层级区分会影响链同伦、准同构和导出范畴同构的含义；它们保存的信息不同，不能只看对象逐项是否相同。 链同伦、准同构和导出范畴同构保存的信息不同，逐项相同并不是唯一的比较标准。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "科祖尔复形",
+          "url": "https://www.baidu.com/s?wd=%E7%A7%91%E7%A5%96%E5%B0%94%E5%A4%8D%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "科祖尔复形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A7%91%E7%A5%96%E5%B0%94%E5%A4%8D%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kozul complex",
+          "url": "https://en.wikipedia.org/w/index.php?search=kozul%20complex"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "巴分解",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "巴分解是用张量幂构造代数或群的标准分解。对增广代数 $A$，巴复形常含项 $A\\otimes \\bar A^{\\otimes n}\\otimes A$，微分由乘法和增广组合给出。\n\n它适合计算 Tor、Hochschild 同调和群同调。巴分解通常很大但函子性强；与任意投射分解相比，它有统一公式，便于构造杯积、协积和比较映射。 投射、内射和平坦对象把不够正合的函子替换成可计算模型。$\\operatorname{Ext}$、$\\operatorname{Tor}$ 和同调维数记录 Hom、张量与分解长度的高阶偏差，代表对象可变，不变量不能变。 分解的选择可以变化，导出函子值却要保持自然同构；这正是 Ext、Tor 和局部上同调能作为不变量使用的原因，也解释了为什么要区分原函子、左导出和右导出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "巴分解",
+          "url": "https://www.baidu.com/s?wd=%E5%B7%B4%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "巴分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B7%B4%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "decomposition",
+          "url": "https://en.wikipedia.org/w/index.php?search=decomposition"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "标准分解",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "标准分解是按统一规则为对象构造的函子性分解。典型例子是群同调中的标准自由分解，项由 $G^{n+1}$ 生成，微分为交错和 $d=\\sum_i(-1)^id_i$。\n\n它不同于为某个具体对象临时选择的短分解。标准分解常较庞大，却便于定义自然变换、比较定理和导出函子；巴分解、切赫分解都可看作标准化构造的例子。 投射、内射和平坦对象把不够正合的函子替换成可计算模型。$\\operatorname{Ext}$、$\\operatorname{Tor}$ 和同调维数记录 Hom、张量与分解长度的高阶偏差，代表对象可变，不变量不能变。 分解的选择可以变化，导出函子值却要保持自然同构；这正是 Ext、Tor 和局部上同调能作为不变量使用的原因，也解释了为什么要区分原函子、左导出和右导出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "标准分解",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%87%E5%87%86%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "标准分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%87%E5%87%86%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "standard decomposition",
+          "url": "https://en.wikipedia.org/w/index.php?search=standard%20decomposition"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "单纯形对象",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "单纯形对象是从单纯形范畴 $\\Delta^{op}$ 到某范畴的函子。它由对象 $X_n$、面映射 $d_i:X_n\\to X_{n-1}$ 和退化映射 $s_i:X_n\\to X_{n+1}$ 组成，并满足单纯形恒等式。\n\n它把“由点、边、面组成”的组合结构抽象到任意范畴。单纯形对象不同于余单纯形对象，方向相反；取规范链复形后可产生同调，神经和巴构造都是重要来源。 各种同调理论的差别在于链群来源、边界公式和系数结构不同，但共同形式都是 $H=\\ker d/\\operatorname{im}d$。单纯、奇异、群、李代数和霍赫希尔德版本分别保留空间、作用、括号或乘法的不同结构信息。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单纯形对象",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E7%BA%AF%E5%BD%A2%E5%AF%B9%E8%B1%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单纯形对象",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E7%BA%AF%E5%BD%A2%E5%AF%B9%E8%B1%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "simplex object",
+          "url": "https://en.wikipedia.org/w/index.php?search=simplex%20object"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "余单纯形对象",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "余单纯形对象是从单纯形范畴 $\\Delta$ 到某范畴的函子，方向与单纯形对象相反。它有共面映射 $\\delta^i:X^{n-1}\\to X^n$ 和共退化映射 $\\sigma^i:X^{n+1}\\to X^n$，满足对偶恒等式。\n\n它常用于构造上链复形和下降数据。切赫上链就是余单纯形结构的典型例子；与单纯形对象产生链复形不同，余单纯形对象更自然地产生余边界和上同调。 各种同调理论的差别在于链群来源、边界公式和系数结构不同，但共同形式都是 $H=\\ker d/\\operatorname{im}d$。单纯、奇异、群、李代数和霍赫希尔德版本分别保留空间、作用、括号或乘法的不同结构信息。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "余单纯形对象",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%99%E5%8D%95%E7%BA%AF%E5%BD%A2%E5%AF%B9%E8%B1%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "余单纯形对象",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%99%E5%8D%95%E7%BA%AF%E5%BD%A2%E5%AF%B9%E8%B1%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cosimple object",
+          "url": "https://en.wikipedia.org/w/index.php?search=cosimple%20object"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "单纯同调",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "单纯同调从单纯复形的面关系构造链复形。$C_n(K)$ 由有向 $n$-单形生成，边界为 $\\partial[v_0,\\ldots,v_n]=\\sum_i(-1)^i[v_0,\\ldots,\\hat v_i,\\ldots,v_n]$。\n\n它的同调 $H_n(K)=\\ker\\partial_n/\\operatorname{im}\\partial_{n+1}$ 记录洞结构。单纯同调依赖三角剖分模型，但同胚不变量在适当条件下稳定；奇异同调则不需要预先三角剖分。 各种同调理论的差别在于链群来源、边界公式和系数结构不同，但共同形式都是 $H=\\ker d/\\operatorname{im}d$。单纯、奇异、群、李代数和霍赫希尔德版本分别保留空间、作用、括号或乘法的不同结构信息。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。 这一区分能避免把逐项同构、链同伦等价、准同构和导出范畴同构混为同一层级的关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单纯同调",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E7%BA%AF%E5%90%8C%E8%B0%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单纯同调",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E7%BA%AF%E5%90%8C%E8%B0%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "simple homology",
+          "url": "https://en.wikipedia.org/w/index.php?search=simple%20homology"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "奇异同调",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "奇异同调用所有连续单形映射生成链群。$C_n(X)$ 由连续映射 $\\sigma:\\Delta^n\\to X$ 自由生成，边界为各面的交错和 $\\partial\\sigma=\\sum_i(-1)^i\\sigma|_{[v_0,\\hat v_i,\\ldots,v_n]}$。\n\n它适用于任意拓扑空间，不需要单纯复形结构。奇异同调比单纯同调更通用，但链群巨大；同伦不变性、长正合列和切除定理使它成为基础同调理论。 各种同调理论的差别在于链群来源、边界公式和系数结构不同，但共同形式都是 $H=\\ker d/\\operatorname{im}d$。单纯、奇异、群、李代数和霍赫希尔德版本分别保留空间、作用、括号或乘法的不同结构信息。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "奇异同调",
+          "url": "https://www.baidu.com/s?wd=%E5%A5%87%E5%BC%82%E5%90%8C%E8%B0%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "奇异同调",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A5%87%E5%BC%82%E5%90%8C%E8%B0%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "strange homology",
+          "url": "https://en.wikipedia.org/w/index.php?search=strange%20homology"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "胞腔同调",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "胞腔同调利用 CW 复形的胞腔分解计算同调。链群 $C_n^{cell}(X)$ 由 $n$-胞腔自由生成，边界映射由附着映射的度给出，形成复形 $C_n\\to C_{n-1}$。\n\n它比奇异同调小得多，适合实际计算球面、射影空间和 CW 复形。胞腔同调结果与奇异同调同构，但依赖已知胞腔结构；边界系数来自附着映射而非单纯形面的形式和。 各种同调理论的差别在于链群来源、边界公式和系数结构不同，但共同形式都是 $H=\\ker d/\\operatorname{im}d$。单纯、奇异、群、李代数和霍赫希尔德版本分别保留空间、作用、括号或乘法的不同结构信息。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "胞腔同调",
+          "url": "https://www.baidu.com/s?wd=%E8%83%9E%E8%85%94%E5%90%8C%E8%B0%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "胞腔同调",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%83%9E%E8%85%94%E5%90%8C%E8%B0%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cellular homology",
+          "url": "https://en.wikipedia.org/w/index.php?search=cellular%20homology"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "德拉姆同调",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "德拉姆同调有时指由微分形式对链积分得到的同调-上同调配对背景；标准对象通常是德拉姆上同调 $H^k_{dR}(M)=\\ker d/\\operatorname{im}d$。若采用链的说法，则通过电流或流形链与闭形式配对。\n\n它与奇异同调的关系由德拉姆定理给出：实系数奇异上同调同构于德拉姆上同调。这里要分清同调链和上同调形式，积分配对 $\\int_c\\omega$ 连接二者。 各种同调理论的差别在于链群来源、边界公式和系数结构不同，但共同形式都是 $H=\\ker d/\\operatorname{im}d$。单纯、奇异、群、李代数和霍赫希尔德版本分别保留空间、作用、括号或乘法的不同结构信息。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "德拉姆同调",
+          "url": "https://www.baidu.com/s?wd=%E5%BE%B7%E6%8B%89%E5%A7%86%E5%90%8C%E8%B0%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "德拉姆同调",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BE%B7%E6%8B%89%E5%A7%86%E5%90%8C%E8%B0%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dram homology",
+          "url": "https://en.wikipedia.org/w/index.php?search=dram%20homology"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "霍赫希尔德同调",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "霍赫希尔德同调研究代数作为双模的导出不变量。对 $k$-代数 $A$，可写 $HH_n(A)=\\operatorname{Tor}^{A^e}_n(A,A)$，其中 $A^e=A\\otimes_k A^{op}$ 是包络代数。\n\n它不同于普通群同调，关注代数乘法的循环张量结构。巴复形给出显式链模型；光滑交换代数情形下，HKR 定理把它与微分形式联系起来。 各种同调理论的差别在于链群来源、边界公式和系数结构不同，但共同形式都是 $H=\\ker d/\\operatorname{im}d$。单纯、奇异、群、李代数和霍赫希尔德版本分别保留空间、作用、括号或乘法的不同结构信息。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。 这种同调还保留代数乘法的循环痕迹。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "霍赫希尔德同调",
+          "url": "https://www.baidu.com/s?wd=%E9%9C%8D%E8%B5%AB%E5%B8%8C%E5%B0%94%E5%BE%B7%E5%90%8C%E8%B0%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "霍赫希尔德同调",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9C%8D%E8%B5%AB%E5%B8%8C%E5%B0%94%E5%BE%B7%E5%90%8C%E8%B0%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hochschild homology",
+          "url": "https://en.wikipedia.org/w/index.php?search=hochschild%20homology"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "霍赫希尔德上同调",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "霍赫希尔德上同调是代数的自扩张理论。对 $k$-代数 $A$，$HH^n(A)=\\operatorname{Ext}^n_{A^e}(A,A)$；也可由多线性映射 $C^n(A,A)=\\operatorname{Hom}_k(A^{\\otimes n},A)$ 的上链复形计算。\n\n它控制代数的形变和导子结构。$HH^0$ 是中心，$HH^1$ 与外导子相关；与霍赫希尔德同调相比，上同调用 Hom 和 Ext，方向与乘法形变更直接相关。 各种同调理论的差别在于链群来源、边界公式和系数结构不同，但共同形式都是 $H=\\ker d/\\operatorname{im}d$。单纯、奇异、群、李代数和霍赫希尔德版本分别保留空间、作用、括号或乘法的不同结构信息。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。 这一区分能避免把逐项同构、链同伦等价、准同构和导出范畴同构混为同一层级的关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "霍赫希尔德上同调",
+          "url": "https://www.baidu.com/s?wd=%E9%9C%8D%E8%B5%AB%E5%B8%8C%E5%B0%94%E5%BE%B7%E4%B8%8A%E5%90%8C%E8%B0%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "霍赫希尔德上同调",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9C%8D%E8%B5%AB%E5%B8%8C%E5%B0%94%E5%BE%B7%E4%B8%8A%E5%90%8C%E8%B0%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hochschild cohomology",
+          "url": "https://en.wikipedia.org/w/index.php?search=hochschild%20cohomology"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "循环同调",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "循环同调是在霍赫希尔德复形上加入循环对称得到的同调理论。它常记 $HC_n(A)$，与 Connes 算子 $B$ 和霍赫希尔德边界 $b$ 组成混合复形 $(C_\\bullet(A),b,B)$。\n\n它比霍赫希尔德同调更接近非交换微分形式的德拉姆理论。对交换光滑代数，循环同调与德拉姆上同调有深刻关系；在非交换几何中，它与 K 理论通过 Chern 特征相连。 各种同调理论的差别在于链群来源、边界公式和系数结构不同，但共同形式都是 $H=\\ker d/\\operatorname{im}d$。单纯、奇异、群、李代数和霍赫希尔德版本分别保留空间、作用、括号或乘法的不同结构信息。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "循环同调",
+          "url": "https://www.baidu.com/s?wd=%E5%BE%AA%E7%8E%AF%E5%90%8C%E8%B0%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "循环同调",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BE%AA%E7%8E%AF%E5%90%8C%E8%B0%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cyclohomology",
+          "url": "https://en.wikipedia.org/w/index.php?search=cyclohomology"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "群同调",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "群同调是把群作用或群代数的导出不变量化。对群 $G$ 和 $G$-模 $M$，可写 $H_n(G,M)=\\operatorname{Tor}^{\\mathbb ZG}_n(\\mathbb Z,M)$，其中 $\\mathbb Z$ 带平凡 $G$-作用。\n\n它不同于群上同调，群同调用 Tor 和链复形，群上同调用 Ext 和上链复形。巴分解给出显式模型，低维群同调记录阿贝尔化、扩张和关系信息。 各种同调理论的差别在于链群来源、边界公式和系数结构不同，但共同形式都是 $H=\\ker d/\\operatorname{im}d$。单纯、奇异、群、李代数和霍赫希尔德版本分别保留空间、作用、括号或乘法的不同结构信息。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。 因而低维项常能读出群的生成关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "群同调",
+          "url": "https://www.baidu.com/s?wd=%E7%BE%A4%E5%90%8C%E8%B0%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "群同调",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BE%A4%E5%90%8C%E8%B0%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "group homology",
+          "url": "https://en.wikipedia.org/w/index.php?search=group%20homology"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "群上同调",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "群上同调用上链复形记录群作用的高阶不变量。对 $G$-模 $M$，$H^n(G,M)=\\operatorname{Ext}^n_{\\mathbb ZG}(\\mathbb Z,M)$；标准上链为函数 $G^n\\to M$ 并配有群作用给出的余边界。\n\n它与群同调方向相反。$H^1$ 描述交叉同态模主同态，$H^2$ 常分类群扩张；在拓扑中，它也等同于分类空间 $BG$ 的局部系数上同调。 各种同调理论的差别在于链群来源、边界公式和系数结构不同，但共同形式都是 $H=\\ker d/\\operatorname{im}d$。单纯、奇异、群、李代数和霍赫希尔德版本分别保留空间、作用、括号或乘法的不同结构信息。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。 因而低维项常能读出群作用的扩张障碍。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "群上同调",
+          "url": "https://www.baidu.com/s?wd=%E7%BE%A4%E4%B8%8A%E5%90%8C%E8%B0%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "群上同调",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BE%A4%E4%B8%8A%E5%90%8C%E8%B0%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "group cohomology",
+          "url": "https://en.wikipedia.org/w/index.php?search=group%20cohomology"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "李代数同调",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "李代数同调由切瓦利-艾伦伯格复形定义。对李代数 $\\mathfrak g$ 和模 $M$，链群为 $C_n(\\mathfrak g,M)=M\\otimes\\Lambda^n\\mathfrak g$，微分由模作用和李括号共同给出。\n\n它与李代数上同调对偶，上同调使用 $\\operatorname{Hom}(\\Lambda^n\\mathfrak g,M)$。李代数同调用于研究表示、中心扩张、相对同调和连续群的无穷小不变量。 各种同调理论的差别在于链群来源、边界公式和系数结构不同，但共同形式都是 $H=\\ker d/\\operatorname{im}d$。单纯、奇异、群、李代数和霍赫希尔德版本分别保留空间、作用、括号或乘法的不同结构信息。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。 因而低维项常能读出括号和表示作用的缺陷。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "李代数同调",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%8E%E4%BB%A3%E6%95%B0%E5%90%8C%E8%B0%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "李代数同调",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%8E%E4%BB%A3%E6%95%B0%E5%90%8C%E8%B0%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lie algebra homology",
+          "url": "https://en.wikipedia.org/w/index.php?search=lie%20algebra%20homology"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "同调代数基本定理",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "同调代数基本定理通常指分解之间的比较定理：对象间的映射可提升为投射分解或内射分解之间的链映射，且提升在链同伦意义下唯一。形式上，若 $P_\\bullet\\to M$ 和 $Q_\\bullet\\to N$ 是投射分解，$M\\to N$ 可提升为 $P_\\bullet\\to Q_\\bullet$。\n\n它保证导出函子不依赖具体分解选择。没有这一点，Ext、Tor 和高阶导出函子的定义会随分解改变；链同伦唯一性正是自然性的来源。 各种同调理论的差别在于链群来源、边界公式和系数结构不同，但共同形式都是 $H=\\ker d/\\operatorname{im}d$。单纯、奇异、群、李代数和霍赫希尔德版本分别保留空间、作用、括号或乘法的不同结构信息。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "同调代数基本定理",
+          "url": "https://www.baidu.com/s?wd=%E5%90%8C%E8%B0%83%E4%BB%A3%E6%95%B0%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "同调代数基本定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%8C%E8%B0%83%E4%BB%A3%E6%95%B0%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fundamental theorem of homology algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=fundamental%20theorem%20of%20homology%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "伴随函子",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "伴随函子是一对通过 Hom 自然同构联系的函子。若 $F:\\mathcal C\\to\\mathcal D$ 左伴随于 $G:\\mathcal D\\to\\mathcal C$，则有 $\\operatorname{Hom}_{\\mathcal D}(F X,Y)\\cong\\operatorname{Hom}_{\\mathcal C}(X,GY)$，且对 $X,Y$ 自然。\n\n它不同于函子互逆，伴随只要求 Hom 层面的对应。张量与 Hom、自由模与遗忘函子、极限与对角函子都形成伴随；导出伴随还在导出范畴中保留这种结构。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "伴随函子",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%B4%E9%9A%8F%E5%87%BD%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "伴随函子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%B4%E9%9A%8F%E5%87%BD%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "adjoint functor",
+          "url": "https://en.wikipedia.org/w/index.php?search=adjoint%20functor"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "自然变换",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "自然变换是在两个函子之间逐对象给出并与态射相容的映射。若 $F,G:\\mathcal C\\to\\mathcal D$，自然变换 $\\eta:F\\Rightarrow G$ 由 $\\eta_X:F(X)\\to G(X)$ 组成，满足 $G(f)\\eta_X=\\eta_YF(f)$。\n\n它不是单个对象上的同态，而是整个函子层面的相容族。自然同构、伴随的单位余单位、长正合列中的连接映射都可用自然变换表达。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自然变换",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E7%84%B6%E5%8F%98%E6%8D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自然变换",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E7%84%B6%E5%8F%98%E6%8D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "natural transformation",
+          "url": "https://en.wikipedia.org/w/index.php?search=natural%20transformation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "极限",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "极限把图表中所有对象的相容锥汇总成泛对象。对函子 $D:J\\to\\mathcal C$，极限 $\\varprojlim D$ 配有投影到每个 $D(j)$，并满足任意相容锥唯一因子分解。\n\n积、等化子和拉回都是极限。它与余极限方向相反，余极限用余锥和推出描述粘合；在阿贝尔范畴中，极限通常左正合，其右导出给出导出极限。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "极限",
+          "url": "https://www.baidu.com/s?wd=%E6%9E%81%E9%99%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "极限",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9E%81%E9%99%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "limit",
+          "url": "https://en.wikipedia.org/w/index.php?search=limit"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "余极限",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "余极限是极限的对偶，表示图表对象按相容关系粘合后的泛对象。对 $D:J\\to\\mathcal C$，余极限 $\\varinjlim D$ 接收来自各 $D(j)$ 的映射，并使任意相容余锥唯一分解。\n\n直和、余等化子和推出都是余极限。它不同于极限的共同截取，余极限强调合并；在模范畴中过滤余极限常保持正合，这对同调代数计算很重要。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "余极限",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%99%E6%9E%81%E9%99%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "余极限",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%99%E6%9E%81%E9%99%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "remainder limit",
+          "url": "https://en.wikipedia.org/w/index.php?search=remainder%20limit"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "张量三角范畴",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "张量三角范畴是在三角范畴上再给出相容张量积的结构。它有双函子 $\\otimes$、单位对象 $\\mathbf1$，并要求 $X\\otimes-$ 与 $-\\otimes X$ 保持 distinguished triangles。\n\n它把乘法结构和同调三角结构放在一起。完美复形、稳定同伦范畴和表示稳定范畴都是例子；厚子范畴、支撑理论和 Balmer 谱都依赖张量与三角的相容性。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "张量三角范畴",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%A0%E9%87%8F%E4%B8%89%E8%A7%92%E8%8C%83%E7%95%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "张量三角范畴",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%A0%E9%87%8F%E4%B8%89%E8%A7%92%E8%8C%83%E7%95%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tensor triangulated category",
+          "url": "https://en.wikipedia.org/w/index.php?search=tensor%20triangulated%20category"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "模型范畴",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "模型范畴是在一个范畴中指定弱等价、纤维化和余纤维化的结构，用来做同伦论。三类态射需满足 Quillen 公理，包括二出三性质、提升性质和因子分解；同伦范畴由弱等价局部化得到。\n\n它不同于普通范畴，因为同构被弱等价替代。拓扑空间、链复形和单纯集合都有模型结构；纤维化与余纤维化控制可替换对象和同伦极限。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "模型范畴",
+          "url": "https://www.baidu.com/s?wd=%E6%A8%A1%E5%9E%8B%E8%8C%83%E7%95%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "模型范畴",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A8%A1%E5%9E%8B%E8%8C%83%E7%95%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "model category",
+          "url": "https://en.wikipedia.org/w/index.php?search=model%20category"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "闭模型结构",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "闭模型结构是模型范畴的传统称呼，强调三类态射满足封闭的提升与分解公理。若 $\\mathcal M$ 中有弱等价 $W$、纤维化 $Fib$ 和余纤维化 $Cof$，并满足 Quillen 模型公理，就得到闭模型结构。\n\n“闭”不表示拓扑闭集，而是指公理系统稳定封闭。它使同伦等价、导出函子和同伦极限可以在抽象范畴中定义；不同模型结构可能给同一底范畴不同同伦论。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "闭模型结构",
+          "url": "https://www.baidu.com/s?wd=%E9%97%AD%E6%A8%A1%E5%9E%8B%E7%BB%93%E6%9E%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "闭模型结构",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%97%AD%E6%A8%A1%E5%9E%8B%E7%BB%93%E6%9E%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "closed model structure",
+          "url": "https://en.wikipedia.org/w/index.php?search=closed%20model%20structure"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "弱等价",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "弱等价是模型范畴中应被视为同伦同构的态射。它满足二出三性质：若 $f,g,gf$ 中两个在 $W$ 内，则第三个也在 $W$ 内；同伦范畴通过形式地反转所有弱等价得到。\n\n它不同于严格同构，可能没有真正逆映射。拓扑空间中的弱同伦等价、链复形中的准同构都是例子；弱等价的选择决定模型范畴保留哪种同伦信息。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弱等价",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B1%E7%AD%89%E4%BB%B7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弱等价",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B1%E7%AD%89%E4%BB%B7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weak equivalence",
+          "url": "https://en.wikipedia.org/w/index.php?search=weak%20equivalence"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "纤维化",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "纤维化是模型范畴中具有右提升性质的一类态射。典型公理说，纤维化对平凡余纤维化具有提升；在拓扑空间中，Serre 纤维化可用同伦提升性质刻画。\n\n它不同于几何中的普通纤维丛，但保留“可提升同伦”的抽象角色。纤维化对象用于计算同伦极限和右导出函子；与余纤维化对偶，二者共同给出因子分解。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "纤维化",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%A4%E7%BB%B4%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "纤维化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%A4%E7%BB%B4%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fibrosis",
+          "url": "https://en.wikipedia.org/w/index.php?search=fibrosis"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "余纤维化",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "余纤维化是模型范畴中与纤维化对偶的态射，通常具有左提升性质。它对平凡纤维化可提升，并参与分解 $X\\to Z\\to Y$，其中第一步为余纤维化。\n\n在拓扑中，CW 复形的包含常是余纤维化模型；在链复形中，单射型条件常出现。余纤维化对象适合计算同伦余极限和左导出函子，不应与普通子对象包含混为一谈。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "余纤维化",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%99%E7%BA%A4%E7%BB%B4%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "余纤维化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%99%E7%BA%A4%E7%BB%B4%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "residual fibrosis",
+          "url": "https://en.wikipedia.org/w/index.php?search=residual%20fibrosis"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "奎伦函子",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "奎伦函子是模型范畴之间与纤维化、余纤维化相容的伴随函子。若 $F\\dashv G$，左奎伦函子 $F$ 保持余纤维化和平凡余纤维化；等价地，右伴随 $G$ 保持纤维化和平凡纤维化。\n\n它使伴随对能够导出到同伦范畴。普通函子即使保持弱等价，也未必有良好导出函子；奎伦条件保证替换对象后可定义左、右总导出函子。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "奎伦函子",
+          "url": "https://www.baidu.com/s?wd=%E5%A5%8E%E4%BC%A6%E5%87%BD%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "奎伦函子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A5%8E%E4%BC%A6%E5%87%BD%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quilen functor",
+          "url": "https://en.wikipedia.org/w/index.php?search=quilen%20functor"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "奎伦等价",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "奎伦等价是模型范畴之间给出相同同伦论的奎伦伴随。若 $F:\\mathcal M\\rightleftarrows\\mathcal N:G$ 为奎伦对，并且在余纤维-纤维替换后单位和余单位诱导弱等价，则它是奎伦等价。\n\n它强于有一对奎伦函子，目标是同伦范畴等价。拓扑空间与单纯集合的标准模型结构之间存在奎伦等价，说明不同模型可表达同一同伦内容。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "奎伦等价",
+          "url": "https://www.baidu.com/s?wd=%E5%A5%8E%E4%BC%A6%E7%AD%89%E4%BB%B7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "奎伦等价",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A5%8E%E4%BC%A6%E7%AD%89%E4%BB%B7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quillen equivalent",
+          "url": "https://en.wikipedia.org/w/index.php?search=quillen%20equivalent"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "导出极限",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "导出极限是逆极限函子的右导出，度量逆极限未能保持正合的偏差。对逆系统 $A_i$，常记 $R^n\\varprojlim A_i$ 或 $\\varprojlim{}^n A_i$；最常见的高阶项是 $\\varprojlim{}^1$。\n\n它不同于普通极限，普通极限只取相容族。导出极限出现在谱序列、完备化和同伦极限计算中；Mittag-Leffler 条件常用于保证 $\\varprojlim{}^1$ 消失。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "导出极限",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%BC%E5%87%BA%E6%9E%81%E9%99%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "导出极限",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%BC%E5%87%BA%E6%9E%81%E9%99%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "derived limit",
+          "url": "https://en.wikipedia.org/w/index.php?search=derived%20limit"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "余导出极限",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "余导出极限可理解为余极限相关函子的导出版本，具体方向取决于所在范畴和使用的正合性。过滤余极限在模范畴中常正合，因此高阶导出可能消失；一般小范畴上的余极限可有左导出 $L_n\\varinjlim$。\n\n它不同于普通余极限的粘合对象，记录粘合过程中未保持正合的高阶障碍。单纯同调、同伦余极限和范畴同调常以这种形式出现。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "余导出极限",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%99%E5%AF%BC%E5%87%BA%E6%9E%81%E9%99%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "余导出极限",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%99%E5%AF%BC%E5%87%BA%E6%9E%81%E9%99%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "co derivative limit",
+          "url": "https://en.wikipedia.org/w/index.php?search=co%20derivative%20limit"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "米塔格-莱夫勒条件",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "米塔格-莱夫勒条件控制逆系统像的稳定性。对逆系统 $\\{A_i\\}$，过渡映射常写 $A_j\\to A_i$，要求对每个 $i$，像 $\\operatorname{im}(A_j\\to A_i)$ 在 $j\\ge i$ 足够大后稳定。\n\n该条件常用于推出 $\\varprojlim{}^1 A_i=0$，从而让逆极限较好地保持正合。它不同于完备性本身，关注的是过渡映射的像是否稳定。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "米塔格-莱夫勒条件",
+          "url": "https://www.baidu.com/s?wd=%E7%B1%B3%E5%A1%94%E6%A0%BC-%E8%8E%B1%E5%A4%AB%E5%8B%92%E6%9D%A1%E4%BB%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "米塔格-莱夫勒条件",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B1%B3%E5%A1%94%E6%A0%BC-%E8%8E%B1%E5%A4%AB%E5%8B%92%E6%9D%A1%E4%BB%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mittag leffler condition",
+          "url": "https://en.wikipedia.org/w/index.php?search=mittag%20leffler%20condition"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "巴斯数",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "巴斯数度量模在局部环上内射分解中的剩余域成分。对局部环 $(R,\\mathfrak m,k)$ 和模 $M$，$\\mu^i_R(M)=\\dim_k\\operatorname{Ext}^i_R(k,M)$。\n\n它不同于贝蒂数，贝蒂数来自 Tor 或自由分解。巴斯数反映内射维数和 Gorenstein 性；若高阶巴斯数按特定方式消失，常说明模或环具有强对偶性质。 局部交换代数中的这些不变量把几何奇性翻译成分解长度、正则序列和局部上同调的消失范围。深度、贝蒂数、巴斯数和典范模不只是数值标签，而是判断环是否正则、Cohen-Macaulay 或 Gorenstein 的同调证据。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。 它们在最小内射分解中给出可数的层级信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "巴斯数",
+          "url": "https://www.baidu.com/s?wd=%E5%B7%B4%E6%96%AF%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "巴斯数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B7%B4%E6%96%AF%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bass number",
+          "url": "https://en.wikipedia.org/w/index.php?search=bass%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "贝蒂数",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "贝蒂数在同调代数中常指最小自由分解中的自由生成元个数。对局部环上有限模 $M$，$\\beta_i^R(M)=\\dim_k\\operatorname{Tor}^R_i(k,M)$；也等于最小自由分解第 $i$ 项的秩。\n\n它不同于拓扑贝蒂数的空间同调维数，但形式上同样计数同调大小。贝蒂数序列描述模的复杂度，和投射维数、正则性及自由分解形状密切相关。 局部交换代数中的这些不变量把几何奇性翻译成分解长度、正则序列和局部上同调的消失范围。深度、贝蒂数、巴斯数和典范模不只是数值标签，而是判断环是否正则、Cohen-Macaulay 或 Gorenstein 的同调证据。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "贝蒂数",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%9D%E8%92%82%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "贝蒂数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%9D%E8%92%82%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "betty number",
+          "url": "https://en.wikipedia.org/w/index.php?search=betty%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "奥斯兰德布赫斯鲍姆公式",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "奥斯兰德-布赫斯鲍姆公式联系投射维数和深度。若 $(R,\\mathfrak m)$ 是诺特局部环，$M$ 为有限生成非零模且投射维数有限，则 $\\operatorname{pd}_R M+\\operatorname{depth}_R M=\\operatorname{depth}R$。\n\n它说明分解长度和正则序列长度互补。该公式不同于全局维数定义，属于局部交换代数；它常用于判定正则局部环和估计有限模的同调复杂度。 局部交换代数中的这些不变量把几何奇性翻译成分解长度、正则序列和局部上同调的消失范围。深度、贝蒂数、巴斯数和典范模不只是数值标签，而是判断环是否正则、Cohen-Macaulay 或 Gorenstein 的同调证据。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "奥斯兰德布赫斯鲍姆公式",
+          "url": "https://www.baidu.com/s?wd=%E5%A5%A5%E6%96%AF%E5%85%B0%E5%BE%B7%E5%B8%83%E8%B5%AB%E6%96%AF%E9%B2%8D%E5%A7%86%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "奥斯兰德布赫斯鲍姆公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A5%A5%E6%96%AF%E5%85%B0%E5%BE%B7%E5%B8%83%E8%B5%AB%E6%96%AF%E9%B2%8D%E5%A7%86%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "auslander buchsbaum formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=auslander%20buchsbaum%20formula"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "深度",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "深度度量局部环或模中可找到的最长正则序列长度。对局部环 $(R,\\mathfrak m)$ 和模 $M$，$\\operatorname{depth}_R M$ 是 $\\mathfrak m$ 中 $M$-正则序列的最大长度；也可由 $\\operatorname{Ext}^i_R(k,M)$ 的首个非零次数刻画。\n\n它不同于 Krull 维数，深度反映奇性和同调缺陷。Cohen-Macaulay 条件要求深度等于维数；Auslander-Buchsbaum 公式把深度与投射维数相连。 局部交换代数中的这些不变量把几何奇性翻译成分解长度、正则序列和局部上同调的消失范围。深度、贝蒂数、巴斯数和典范模不只是数值标签，而是判断环是否正则、Cohen-Macaulay 或 Gorenstein 的同调证据。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "深度",
+          "url": "https://www.baidu.com/s?wd=%E6%B7%B1%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "深度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B7%B1%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "depth",
+          "url": "https://en.wikipedia.org/w/index.php?search=depth"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "正则序列",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "正则序列是一列依次不是零因子的元素。对 $R$-模 $M$，$x_1,\\ldots,x_r$ 为 $M$-正则序列，要求 $x_i$ 在 $M/(x_1,\\ldots,x_{i-1})M$ 上非零因子，且最终商非零。\n\n它不同于任意生成序列，顺序和零因子条件很关键。正则序列定义深度和完全交，科祖尔复形在正则序列上给出商模的自由分解。 局部交换代数中的这些不变量把几何奇性翻译成分解长度、正则序列和局部上同调的消失范围。深度、贝蒂数、巴斯数和典范模不只是数值标签，而是判断环是否正则、Cohen-Macaulay 或 Gorenstein 的同调证据。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正则序列",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E5%88%99%E5%BA%8F%E5%88%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正则序列",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E5%88%99%E5%BA%8F%E5%88%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "regular sequence",
+          "url": "https://en.wikipedia.org/w/index.php?search=regular%20sequence"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "局部上同调",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "局部上同调是支撑在闭子集上的截面函子的右导出。对环 $R$、理想 $I$ 和模 $M$，$H_I^i(M)=R^i\\Gamma_I(M)$，其中 $\\Gamma_I(M)=\\{m\\in M\\mid I^n m=0\\text{ for some }n\\}$。\n\n它不同于普通 Ext 或 Tor，关注模在 $V(I)$ 附近的局部贡献。局部上同调检测深度、维数和 Cohen-Macaulay 性，也出现在局部对偶和代数几何支撑理论中。 局部交换代数中的这些不变量把几何奇性翻译成分解长度、正则序列和局部上同调的消失范围。深度、贝蒂数、巴斯数和典范模不只是数值标签，而是判断环是否正则、Cohen-Macaulay 或 Gorenstein 的同调证据。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。 这一区分能避免把逐项同构、链同伦等价、准同构和导出范畴同构混为同一层级的关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "局部上同调",
+          "url": "https://www.baidu.com/s?wd=%E5%B1%80%E9%83%A8%E4%B8%8A%E5%90%8C%E8%B0%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "局部上同调",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B1%80%E9%83%A8%E4%B8%8A%E5%90%8C%E8%B0%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "local cohomology",
+          "url": "https://en.wikipedia.org/w/index.php?search=local%20cohomology"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "典范模",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "典范模是局部或分次环上对偶性理论中的核心模。对 Cohen-Macaulay 局部环 $R$，典范模 $\\omega_R$ 可由局部对偶刻画，例如 $H_\\mathfrak m^d(M)^\\vee\\cong\\operatorname{Hom}_R(M,\\omega_R)$ 的形式。\n\n它是典范层在交换代数中的对应物。Gorenstein 环的典范模同构于 $R$ 本身；典范模用于表述对偶性、a-不变量和奇性类型。 局部交换代数中的这些不变量把几何奇性翻译成分解长度、正则序列和局部上同调的消失范围。深度、贝蒂数、巴斯数和典范模不只是数值标签，而是判断环是否正则、Cohen-Macaulay 或 Gorenstein 的同调证据。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "典范模",
+          "url": "https://www.baidu.com/s?wd=%E5%85%B8%E8%8C%83%E6%A8%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "典范模",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%B8%E8%8C%83%E6%A8%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "model model",
+          "url": "https://en.wikipedia.org/w/index.php?search=model%20model"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "阿贝尔化",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "阿贝尔化把一个群或李代数强制变为交换对象。群的阿贝尔化为 $G_{ab}=G/[G,G]$，其中 $[G,G]$ 是交换子子群；李代数的阿贝尔化为 $\\mathfrak g/[\\mathfrak g,\\mathfrak g]$。\n\n它是到阿贝尔对象的普遍映射。群同调中 $H_1(G,\\mathbb Z)\\cong G_{ab}$，说明一阶同调只记录交换化信息；高阶同调才看到更细结构。 各种同调理论的差别在于链群来源、边界公式和系数结构不同，但共同形式都是 $H=\\ker d/\\operatorname{im}d$。单纯、奇异、群、李代数和霍赫希尔德版本分别保留空间、作用、括号或乘法的不同结构信息。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。 这一区分能避免把逐项同构、链同伦等价、准同构和导出范畴同构混为同一层级的关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阿贝尔化",
+          "url": "https://www.baidu.com/s?wd=%E9%98%BF%E8%B4%9D%E5%B0%94%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阿贝尔化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%BF%E8%B4%9D%E5%B0%94%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "abelianization",
+          "url": "https://en.wikipedia.org/w/index.php?search=abelianization"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "余核",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "余核是衡量态射未满射部分的泛对象。对阿贝尔范畴中态射 $f:A\\to B$，余核 $\\operatorname{coker}f$ 是商 $B/\\operatorname{im}f$；它配有映射 $B\\to\\operatorname{coker}f$ 并杀掉 $f$ 的像。\n\n它与核对偶，核记录被送到零的部分，余核记录目标中未被击中的部分。正合性 $\\operatorname{im}f=\\ker g$ 可用核和余核同时表达。 核、像和正合性决定哪些信息能通过取商留下来。短正合列、连接同态和长正合列把局部缺口传递到相邻次数；图追踪和各种引理则保证这些映射按预期相容。 连接同态、长正合列和图追踪把局部缺口传到相邻次数；许多引理的作用，就是保证这些传递不会依赖临时图表。 长正合列和连接同态记录缺口怎样跨次数传递，图追踪保证这些传递与临时表示无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "余核",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%99%E6%A0%B8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "余核",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%99%E6%A0%B8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cokernel",
+          "url": "https://en.wikipedia.org/w/index.php?search=cokernel"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "核函子",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "核函子把一个态射送到它的核对象。对态射 $f:A\\to B$，核 $\\ker f\\to A$ 满足 $f\\circ\\ker f=0$，并对任何被 $f$ 杀掉的映射具有泛性质。\n\n在箭头范畴或短正合列构造中，可把 $f$ 视为对象并取核函子。它不同于普通 Hom 函子；核通常是左正合行为的来源，蛇引理正是比较核函子和余核函子所得的连接关系。 投射、内射和平坦对象把不够正合的函子替换成可计算模型。$\\operatorname{Ext}$、$\\operatorname{Tor}$ 和同调维数记录 Hom、张量与分解长度的高阶偏差，代表对象可变，不变量不能变。 分解的选择可以变化，导出函子值却要保持自然同构；这正是 Ext、Tor 和局部上同调能作为不变量使用的原因，也解释了为什么要区分原函子、左导出和右导出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "核函子",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%B8%E5%87%BD%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "核函子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%B8%E5%87%BD%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kernel functor",
+          "url": "https://en.wikipedia.org/w/index.php?search=kernel%20functor"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "长同调序列",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "长同调序列通常由短正合列的链复形产生。若 $0\\to A_\\bullet\\to B_\\bullet\\to C_\\bullet\\to0$ 正合，则有 $\\cdots\\to H_n(A)\\to H_n(B)\\to H_n(C)\\xrightarrow{\\partial}H_{n-1}(A)\\to\\cdots$。\n\n连接同态 $\\partial$ 由边界算子和提升过程构造。它不同于复形本身，而是复形同调之间的正合关系；相对同调和层上同调长序列都采用这一模式。 核、像和正合性决定哪些信息能通过取商留下来。短正合列、连接同态和长正合列把局部缺口传递到相邻次数；图追踪和各种引理则保证这些映射按预期相容。 连接同态、长正合列和图追踪把局部缺口传到相邻次数；许多引理的作用，就是保证这些传递不会依赖临时图表。 长正合列和连接同态记录缺口怎样跨次数传递，图追踪保证这些传递与临时表示无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "长同调序列",
+          "url": "https://www.baidu.com/s?wd=%E9%95%BF%E5%90%8C%E8%B0%83%E5%BA%8F%E5%88%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "长同调序列",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%95%BF%E5%90%8C%E8%B0%83%E5%BA%8F%E5%88%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "long homologous sequence",
+          "url": "https://en.wikipedia.org/w/index.php?search=long%20homologous%20sequence"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "连接同态",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "连接同态是在长正合列中跨越次数的映射。由短正合列 $0\\to A_\\bullet\\to B_\\bullet\\to C_\\bullet\\to0$ 得到的同调长序列中，连接同态写作 $\\partial:H_n(C)\\to H_{n-1}(A)$。\n\n它把 $C$ 中循环的提升在 $B$ 中取边界，再落回 $A$。连接同态不是任意补充箭头，而是正合性延续的核心；蛇引理中的 $\\delta$ 是同一思想的图表版本。 核、像和正合性决定哪些信息能通过取商留下来。短正合列、连接同态和长正合列把局部缺口传递到相邻次数；图追踪和各种引理则保证这些映射按预期相容。 连接同态、长正合列和图追踪把局部缺口传到相邻次数；许多引理的作用，就是保证这些传递不会依赖临时图表。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "连接同态",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%9E%E6%8E%A5%E5%90%8C%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "连接同态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%9E%E6%8E%A5%E5%90%8C%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "connection homomorphism",
+          "url": "https://en.wikipedia.org/w/index.php?search=connection%20homomorphism"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "截断复形",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "截断复形把复形在某个次数以上或以下切掉，并用核或像修正边界。上链复形的智能截断常写 $\\tau_{\\le n}C$，使高于 $n$ 的项为零，而第 $n$ 项替换为 $\\ker d^n$。\n\n它不同于粗暴删除项，智能截断保留指定范围内的上同调。截断用于构造 t-结构、谱序列和导出范畴中的 Postnikov 分解，使复形按同调次数分层。 复形的核心是相邻次数之间满足 $d^2=0$，同调只保留闭元模掉边界后的信息。滤过、双复形和谱序列把一次难算的同调拆成多页近似，最终仍要回到同一个目标。 这种层级区分会影响链同伦、准同构和导出范畴同构的含义；它们保存的信息不同，不能只看对象逐项是否相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "截断复形",
+          "url": "https://www.baidu.com/s?wd=%E6%88%AA%E6%96%AD%E5%A4%8D%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "截断复形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%88%AA%E6%96%AD%E5%A4%8D%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "truncation complex",
+          "url": "https://en.wikipedia.org/w/index.php?search=truncation%20complex"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "同伦极限",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "同伦极限是极限的同伦不变版本，先替换图表再取极限，避免普通极限破坏弱等价。常记 $\\operatorname{holim}D$；在模型范畴中通过纤维化替换或端公式构造。\n\n它不同于普通极限，普通极限只满足严格泛性质。同伦极限保留高阶相容数据，纤维积的同伦版本、塔的极限和映射空间构造都需要它。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "同伦极限",
+          "url": "https://www.baidu.com/s?wd=%E5%90%8C%E4%BC%A6%E6%9E%81%E9%99%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "同伦极限",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%8C%E4%BC%A6%E6%9E%81%E9%99%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "homotopy limit",
+          "url": "https://en.wikipedia.org/w/index.php?search=homotopy%20limit"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "同伦余极限",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "同伦余极限是余极限的同伦不变版本，常记 $\\operatorname{hocolim}D$。构造时先取余纤维化替换或双侧巴构造，再取普通余极限，以保证弱等价图表给出弱等价结果。\n\n它不同于普通粘合，因为会保留路径、单纯形方向和高阶同伦相容性。映射望远镜、同伦推出和分类空间都可看作同伦余极限的例子。 范畴化表述强调泛性质和同伦不变性：同构可被准同构或弱等价替代，正合列可被三角替代，普通极限也有同伦版本。公式中的 $\\operatorname{Hom}$、$[1]$、$W$ 或提升性质说明对象之间的关系，而不是某个具体元素的计算。 因此，选择分解、覆盖或模型时可以改变代表对象，却不能改变最终的同调类、导出函子值和自然连接映射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "同伦余极限",
+          "url": "https://www.baidu.com/s?wd=%E5%90%8C%E4%BC%A6%E4%BD%99%E6%9E%81%E9%99%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "同伦余极限",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%8C%E4%BC%A6%E4%BD%99%E6%9E%81%E9%99%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "homotopy colimit",
+          "url": "https://en.wikipedia.org/w/index.php?search=homotopy%20colimit"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "短五引理",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "短五引理是五引理在短正合列上的形式。给定两个短正合列和竖直交换映射，若两端映射 $A\\to A'$、$C\\to C'$ 是同构，且中间图满足正合性，则中间映射 $B\\to B'$ 也是同构。\n\n它比五引理使用更短的图，却依赖同样的核像追踪。短五引理常用于证明扩张对象的映射是同构，也用于比较由短正合列构造出的中间项。 核、像和正合性决定哪些信息能通过取商留下来。短正合列、连接同态和长正合列把局部缺口传递到相邻次数；图追踪和各种引理则保证这些映射按预期相容。 连接同态、长正合列和图追踪把局部缺口传到相邻次数；许多引理的作用，就是保证这些传递不会依赖临时图表。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "短五引理",
+          "url": "https://www.baidu.com/s?wd=%E7%9F%AD%E4%BA%94%E5%BC%95%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "短五引理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9F%AD%E4%BA%94%E5%BC%95%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "short five lemma",
+          "url": "https://en.wikipedia.org/w/index.php?search=short%20five%20lemma"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "三乘三引理",
+      "source_file": "words/数学/困难模式/homological_algebra_terms.csv",
+      "explanation_markdown": "三乘三引理也称 $3\\times3$ 引理，处理九宫格交换图的正合性。若三列正合，且前两行正合，在合适交换条件下第三行正合；图中对象可记为 $A_{ij}$，水平和竖直箭头共同约束。\n\n它与九引理名称接近，常表达同一类结果。该引理用于把短正合列排成矩阵后验证新行或新列正合，尤其适合扩张、滤过和蛇引理的组合应用。 核、像和正合性决定哪些信息能通过取商留下来。短正合列、连接同态和长正合列把局部缺口传递到相邻次数；图追踪和各种引理则保证这些映射按预期相容。 连接同态、长正合列和图追踪把局部缺口传到相邻次数；许多引理的作用，就是保证这些传递不会依赖临时图表。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "三乘三引理",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%89%E4%B9%98%E4%B8%89%E5%BC%95%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "三乘三引理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%89%E4%B9%98%E4%B8%89%E5%BC%95%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "three times three lemma",
+          "url": "https://en.wikipedia.org/w/index.php?search=three%20times%20three%20lemma"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    }
+  ]
+}

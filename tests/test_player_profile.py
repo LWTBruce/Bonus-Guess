@@ -45,6 +45,13 @@ class PlayerProfileTests(unittest.TestCase):
 
         self.assertFalse(settings["tutorial_completed"])
 
+    def test_admin_reveal_hidden_flag_is_normalized(self):
+        enabled = player_profile.normalize_player_settings({"admin_reveal_hidden": "on"})
+        disabled = player_profile.normalize_player_settings({"admin_reveal_hidden": "false"})
+
+        self.assertTrue(enabled["admin_reveal_hidden"])
+        self.assertFalse(disabled["admin_reveal_hidden"])
+
 
 if __name__ == "__main__":
     unittest.main()

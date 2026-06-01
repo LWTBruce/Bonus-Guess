@@ -17,6 +17,24 @@
         "对象 条件 运算 记号",
         "functional fen xi",
         "functional_fen_xi"
+      ],
+      "explanation_markdown": "泛函分析是研究拓扑线性空间及其上线性算子的学科。可写作 $T:X\\to Y,\\quad \\|Tx\\|_Y\\le C\\|x\\|_X$，其中X,Y 是赋范或拓扑向量空间，T 是线性算子，C 是界常数。\n\n它区别于有限维线性代数，核心难点来自无穷维中的紧性和拓扑差异。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。在泛函分析里，泛函分析常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。泛函分析的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕泛函分析展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "泛函分析",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "泛函分析",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "functional fen xi",
+          "url": "https://en.wikipedia.org/w/index.php?search=functional%20fen%20xi"
+        }
       ]
     },
     {
@@ -35,6 +53,24 @@
         "对象 条件 运算 记号",
         "fu fan space",
         "fu_fan_space"
+      ],
+      "explanation_markdown": "赋范空间是带有范数的线性空间。可写成 $\\|x+y\\|\\le\\|x\\|+\\|y\\|$，其中x,y 是空间中向量，范数还满足正定性和齐次性。\n\n它只要求有范数，不要求每个 Cauchy 列收敛；完备后才是巴拿赫空间。在算子与泛函共同出现时，它把几何结构转化为分析工具。赋范空间的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕赋范空间展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对赋范空间来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "赋范空间",
+          "url": "https://www.baidu.com/s?wd=%E8%B5%8B%E8%8C%83%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "赋范空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B5%8B%E8%8C%83%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fu fan space",
+          "url": "https://en.wikipedia.org/w/index.php?search=fu%20fan%20space"
+        }
       ]
     },
     {
@@ -53,6 +89,24 @@
         "对象 条件 运算 记号",
         "ba na he space",
         "ba_na_he_space"
+      ],
+      "explanation_markdown": "巴拿赫空间是在范数诱导度量下完备的线性空间。可写成 $x_n\\ \\text{Cauchy}\\Rightarrow x_n\\to x\\in X$，其中x_n 是 X 中的 Cauchy 列，极限仍属于 X。\n\n它不要求内积；希尔伯特空间是由内积诱导范数的特殊巴拿赫空间。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。围绕巴拿赫空间展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对巴拿赫空间来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，巴拿赫空间常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "巴拿赫空间",
+          "url": "https://www.baidu.com/s?wd=%E5%B7%B4%E6%8B%BF%E8%B5%AB%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "巴拿赫空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B7%B4%E6%8B%BF%E8%B5%AB%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "banach space",
+          "url": "https://en.wikipedia.org/w/index.php?search=banach%20space"
+        }
       ]
     },
     {
@@ -71,6 +125,24 @@
         "对象 条件 运算 记号",
         "xi er bo te",
         "xi_er_bo_te_space"
+      ],
+      "explanation_markdown": "希尔伯特空间是由内积诱导范数并在该范数下完备的线性空间。可写作 $\\|x\\|=\\sqrt{\\langle x,x\\rangle}$，其中\\langle x,x\\rangle 是内积，\\|x\\| 是诱导范数。\n\n它比一般巴拿赫空间多了角度和正交概念。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。对希尔伯特空间来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，希尔伯特空间常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。希尔伯特空间的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "希尔伯特空间",
+          "url": "https://www.baidu.com/s?wd=%E5%B8%8C%E5%B0%94%E4%BC%AF%E7%89%B9%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "希尔伯特空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B8%8C%E5%B0%94%E4%BC%AF%E7%89%B9%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hilbert space",
+          "url": "https://en.wikipedia.org/w/index.php?search=hilbert%20space"
+        }
       ]
     },
     {
@@ -89,6 +161,24 @@
         "对象 条件 运算 记号",
         "bounded linear operator",
         "bounded_linear_operator"
+      ],
+      "explanation_markdown": "有界线性算子是在线性同时满足统一范数控制的映射。可写作 $\\|Tx\\|_Y\\le C\\|x\\|_X$，其中T:X\\to Y 线性，C 与 x 无关。\n\n在赋范空间之间，有界性等价于连续性；这和点态有界不同。在算子与泛函共同出现时，它把几何结构转化为分析工具。在泛函分析里，有界线性算子常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。有界线性算子的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕有界线性算子展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "有界线性算子",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%89%E7%95%8C%E7%BA%BF%E6%80%A7%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "有界线性算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%89%E7%95%8C%E7%BA%BF%E6%80%A7%E7%AE%97%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bounded linear operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=bounded%20linear%20operator"
+        }
       ]
     },
     {
@@ -107,6 +197,24 @@
         "对象 条件 运算 记号",
         "operator fan shu",
         "operator_fan_shu"
+      ],
+      "explanation_markdown": "算子范数是衡量有界线性算子最大放大倍数的范数。可写作 $\\|T\\|=\\sup_{\\|x\\|\\le1}\\|Tx\\|$，其中T 是有界线性算子，x 取单位球内向量。\n\n它是对映射的范数，不是空间中单个向量的范数。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。算子范数的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕算子范数展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对算子范数来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "算子范数",
+          "url": "https://www.baidu.com/s?wd=%E7%AE%97%E5%AD%90%E8%8C%83%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "算子范数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AE%97%E5%AD%90%E8%8C%83%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "operator norm",
+          "url": "https://en.wikipedia.org/w/index.php?search=operator%20norm"
+        }
       ]
     },
     {
@@ -125,6 +233,24 @@
         "低光滑 较粗拓扑",
         "weak convergence",
         "weak_convergence"
+      ],
+      "explanation_markdown": "弱收敛是用所有连续线性泛函测试极限的收敛方式。常写成 $x_n\\rightharpoonup x$，表示对每个 $f\\in X^*$ 都有 $f(x_n)\\to f(x)$；其中 $X^*$ 是连续对偶空间。\n\n它不要求 $\\|x_n-x\\|\\to0$，所以比强收敛更弱，却常能保留有界序列的紧性信息。弱收敛适合变分法和偏微分方程中的极限过程：先从有界性得到弱极限，再用下半连续性或紧嵌入恢复方程、能量或边界条件。在实际使用中，弱收敛要和所选空间一起读：同一向量集合换成不同拓扑，闭集、紧集和连续算子都会改变。公式中的 $X$、$X^*$ 或范数正是在固定这些背景，这也是强、弱、弱星三种语言必须分开的原因，不能混用、省略或偷换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弱收敛",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B1%E6%94%B6%E6%95%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弱收敛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B1%E6%94%B6%E6%95%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weak convergence",
+          "url": "https://en.wikipedia.org/w/index.php?search=weak%20convergence"
+        }
       ]
     },
     {
@@ -143,6 +269,19 @@
         "对象 条件 运算 记号",
         "hahn banach theorem",
         "hahn_banach_theorem"
+      ],
+      "explanation_markdown": "Hahn-Banach定理是在线性控制不增大的前提下延拓泛函的定理。常用定义式为 $F|_M=f,\\quad |F(x)|\\le p(x)$，其中M 是子空间，p 是次线性控制函数，F 是延拓泛函。\n\n它保证泛函存在，不提供唯一延拓。在算子与泛函共同出现时，它把几何结构转化为分析工具。对Hahn-Banach定理来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，Hahn-Banach定理常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。Hahn-Banach定理的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Hahn-Banach定理",
+          "url": "https://www.baidu.com/s?wd=Hahn-Banach%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Hahn-Banach定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Hahn-Banach%E5%AE%9A%E7%90%86"
+        }
       ]
     },
     {
@@ -161,6 +300,24 @@
         "对象 条件 运算 记号",
         "closed graph theorem",
         "closed_graph_theorem"
+      ],
+      "explanation_markdown": "闭图像定理是闭图像线性算子在巴拿赫空间之间必连续的定理。可写作 $x_n\\to x,\\ Tx_n\\to y\\Rightarrow Tx=y$，其中x_n 属于定义域，T 的图像在 X\\times Y 中闭。\n\n它需要空间完备，和单纯图像集合闭合的代数说法不同。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。在泛函分析里，闭图像定理常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。闭图像定理的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕闭图像定理展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "闭图像定理",
+          "url": "https://www.baidu.com/s?wd=%E9%97%AD%E5%9B%BE%E5%83%8F%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "闭图像定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%97%AD%E5%9B%BE%E5%83%8F%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "closed graph theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=closed%20graph%20theorem"
+        }
       ]
     },
     {
@@ -179,6 +336,19 @@
         "对象 条件 运算 记号",
         "banach space",
         "banach_space"
+      ],
+      "explanation_markdown": "Banach空间是在范数诱导度量下完备的线性空间。常写成 $x_n\\ \\text{Cauchy}\\Rightarrow x_n\\to x\\in X$，其中x_n 是 X 中的 Cauchy 列，极限仍属于 X。\n\n它不要求内积；希尔伯特空间是由内积诱导范数的特殊巴拿赫空间。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。Banach空间的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕Banach空间展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对Banach空间来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Banach空间",
+          "url": "https://www.baidu.com/s?wd=Banach%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Banach空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Banach%E7%A9%BA%E9%97%B4"
+        }
       ]
     },
     {
@@ -197,6 +367,19 @@
         "对象 条件 运算 记号",
         "hilbert space",
         "hilbert_space"
+      ],
+      "explanation_markdown": "Hilbert空间是由内积诱导范数并在该范数下完备的线性空间。可写成 $\\|x\\|=\\sqrt{\\langle x,x\\rangle}$，其中\\langle x,x\\rangle 是内积，\\|x\\| 是诱导范数。\n\n它比一般巴拿赫空间多了角度和正交概念。在算子与泛函共同出现时，它把几何结构转化为分析工具。围绕Hilbert空间展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对Hilbert空间来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，Hilbert空间常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。Hilbert空间的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Hilbert空间",
+          "url": "https://www.baidu.com/s?wd=Hilbert%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Hilbert空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Hilbert%E7%A9%BA%E9%97%B4"
+        }
       ]
     },
     {
@@ -215,6 +398,24 @@
         "对象 条件 运算 记号",
         "fu fan linear space",
         "fu_fan_linear_space"
+      ],
+      "explanation_markdown": "赋范线性空间是在线性空间上指定范数后的分析对象。可写作 $d(x,y)=\\|x-y\\|$，其中d 是范数诱导的距离，x,y 是空间中向量。\n\n它和赋范空间是同一概念的完整说法，和半范空间的退化长度不同。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。对赋范线性空间来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，赋范线性空间常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。赋范线性空间的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "赋范线性空间",
+          "url": "https://www.baidu.com/s?wd=%E8%B5%8B%E8%8C%83%E7%BA%BF%E6%80%A7%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "赋范线性空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B5%8B%E8%8C%83%E7%BA%BF%E6%80%A7%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fu fan linear space",
+          "url": "https://en.wikipedia.org/w/index.php?search=fu%20fan%20linear%20space"
+        }
       ]
     },
     {
@@ -233,6 +434,24 @@
         "对象 条件 运算 记号",
         "ban fan space",
         "ban_fan_space"
+      ],
+      "explanation_markdown": "半范空间是带有可能在非零向量上取零的半范的线性空间。常写成 $p(x+y)\\le p(x)+p(y)$，其中p 还满足齐次性，但可能 p(x)=0 且 x\\ne0。\n\n它区别于范数空间，因为零长度向量可能不唯一。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。在泛函分析里，半范空间常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。半范空间的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕半范空间展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "半范空间",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8A%E8%8C%83%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "半范空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8A%E8%8C%83%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "half space",
+          "url": "https://en.wikipedia.org/w/index.php?search=half%20space"
+        }
       ]
     },
     {
@@ -251,6 +470,19 @@
         "对象 条件 运算 记号",
         "fr chet space",
         "fr_chet_space"
+      ],
+      "explanation_markdown": "Fréchet空间是由可数半范给出拓扑且完备可度量的局部凸空间。常写成 $d(x,y)=\\sum_{n\\ge1}2^{-n}\\frac{p_n(x-y)}{1+p_n(x-y)}$，其中p_n 是半范列，d 是诱导平移不变度量。\n\n它未必来自单个范数，因此比巴拿赫空间更宽。在算子与泛函共同出现时，它把几何结构转化为分析工具。Fréchet空间的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕Fréchet空间展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对Fréchet空间来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Fréchet空间",
+          "url": "https://www.baidu.com/s?wd=Fr%C3%A9chet%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Fréchet空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Fr%C3%A9chet%E7%A9%BA%E9%97%B4"
+        }
       ]
     },
     {
@@ -269,6 +501,24 @@
         "对象 条件 运算 记号",
         "ju bu tu space",
         "ju_bu_tu_space"
+      ],
+      "explanation_markdown": "局部凸空间是拓扑可由一族半范刻画的拓扑向量空间。可写作 $U_{p,\\varepsilon}=\\{x:p(x)<\\varepsilon\\}$，其中p 是半范，\\varepsilon>0，U_{p,\\varepsilon} 是零邻域。\n\n它强调拓扑结构，不要求存在单个控制全局大小的范数。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。围绕局部凸空间展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对局部凸空间来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，局部凸空间常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "局部凸空间",
+          "url": "https://www.baidu.com/s?wd=%E5%B1%80%E9%83%A8%E5%87%B8%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "局部凸空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B1%80%E9%83%A8%E5%87%B8%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "locally convex space",
+          "url": "https://en.wikipedia.org/w/index.php?search=locally%20convex%20space"
+        }
       ]
     },
     {
@@ -287,6 +537,24 @@
         "对象 条件 运算 记号",
         "reflexive space",
         "reflexive_space"
+      ],
+      "explanation_markdown": "自反空间是自然嵌入到双对偶时满射的巴拿赫空间。常用定义式为 $J:X\\to X^{**},\\quad Jx(f)=f(x)$，其中f\\in X^*，J 是典范嵌入。\n\n它比完备性强；并非所有巴拿赫空间都自反。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。对自反空间来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，自反空间常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。自反空间的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自反空间",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E5%8F%8D%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自反空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E5%8F%8D%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "reflexive space",
+          "url": "https://en.wikipedia.org/w/index.php?search=reflexive%20space"
+        }
       ]
     },
     {
@@ -305,6 +573,24 @@
         "对象 条件 运算 记号",
         "yi zhi tu space",
         "yi_zhi_tu_space"
+      ],
+      "explanation_markdown": "一致凸空间是单位球中点严格落入内部且有统一模量的赋范空间。可写作 $\\left\\|\\frac{x+y}{2}\\right\\|\\le1-\\delta$，其中\\|x\\|=\\|y\\|=1 且 \\|x-y\\|\\ge\\varepsilon 时存在 \\delta>0。\n\n它强于严格凸；严格凸没有统一的 \\delta 控制。在算子与泛函共同出现时，它把几何结构转化为分析工具。在泛函分析里，一致凸空间常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。一致凸空间的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕一致凸空间展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "一致凸空间",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%80%E8%87%B4%E5%87%B8%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "一致凸空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%80%E8%87%B4%E5%87%B8%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "uniformly convex space",
+          "url": "https://en.wikipedia.org/w/index.php?search=uniformly%20convex%20space"
+        }
       ]
     },
     {
@@ -323,6 +609,24 @@
         "对象 条件 运算 记号",
         "yan ge tu space",
         "yan_ge_tu_space"
+      ],
+      "explanation_markdown": "严格凸空间是单位球边界不含非平凡线段的赋范空间。常写成 $\\|x\\|=\\|y\\|=1,\\ x\\ne y\\Rightarrow \\left\\|\\frac{x+y}{2}\\right\\|<1$，其中x,y 是单位向量，中点范数严格小于一。\n\n它只给定性唯一性，不包含一致凸的定量模量。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。严格凸空间的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕严格凸空间展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对严格凸空间来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "严格凸空间",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%A5%E6%A0%BC%E5%87%B8%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "严格凸空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%A5%E6%A0%BC%E5%87%B8%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "strictly convex space",
+          "url": "https://en.wikipedia.org/w/index.php?search=strictly%20convex%20space"
+        }
       ]
     },
     {
@@ -341,6 +645,24 @@
         "对象 条件 运算 记号",
         "shuang dual space",
         "shuang_dual_space"
+      ],
+      "explanation_markdown": "双对偶空间是对偶空间的连续对偶。常用定义式为 $X^{**}=(X^*)^*$，其中X^* 是连续线性泛函空间，X^{**} 再取一次对偶。\n\n原空间总能嵌入双对偶，但不一定等于双对偶。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。围绕双对偶空间展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对双对偶空间来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，双对偶空间常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "双对偶空间",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8C%E5%AF%B9%E5%81%B6%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "双对偶空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8C%E5%AF%B9%E5%81%B6%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "double duality space",
+          "url": "https://en.wikipedia.org/w/index.php?search=double%20duality%20space"
+        }
       ]
     },
     {
@@ -359,6 +681,24 @@
         "低光滑 较粗拓扑",
         "weak tuo pu",
         "weak_tuo_pu"
+      ],
+      "explanation_markdown": "弱拓扑是使连续线性泛函保持连续的最粗拓扑。常写成 $\\sigma(X,X^*)$，其中 $X^*$ 是连续对偶；序列或网 $x_i$ 弱收敛到 $x$，意思是每个 $f\\in X^*$ 都满足 $f(x_i)\\to f(x)$。\n\n它比范数拓扑粗，开集更少，因而更容易出现紧性，例如自反空间中闭单位球弱紧。弱拓扑只测试所有连续线性泛函的数值，不直接控制 $\\|x_i-x\\|$；这使它适合处理变分法、偏微分方程和对偶空间中的极限，但不能把弱收敛误读成范数收敛。在实际使用中，弱拓扑要和所选空间一起读：同一向量集合换成不同拓扑，闭集、紧集和连续算子都会改变。公式中的 $X$、$X^*$ 或范数正是在固定这些背景，这也是强、弱、弱星三种语言必须分开的原因，不能混用、省略或偷换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弱拓扑",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B1%E6%8B%93%E6%89%91%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弱拓扑",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B1%E6%8B%93%E6%89%91"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weak topology",
+          "url": "https://en.wikipedia.org/w/index.php?search=weak%20topology"
+        }
       ]
     },
     {
@@ -377,6 +717,24 @@
         "低光滑 较粗拓扑",
         "weak star tuo pu",
         "weak_star_tuo_pu"
+      ],
+      "explanation_markdown": "弱星拓扑是对偶空间 $X^*$ 上由原空间 $X$ 的评价映射生成的拓扑。常写成 $\\sigma(X^*,X)$；一族泛函 $f_i$ 弱星收敛到 $f$，就是对每个 $x\\in X$ 都有 $f_i(x)\\to f(x)$。\n\n它比 $X^*$ 的弱拓扑通常更粗，因为测试对象只来自原空间，而不是 $X^{**}$ 中的所有连续泛函。弱星拓扑的核心用途是 Banach-Alaoglu 定理：对偶空间的闭单位球在弱星拓扑下紧。这使有界泛函列或测度列可以先取极限，再研究极限对象是否仍满足所需结构。在实际使用中，弱星拓扑要和所选空间一起读：同一向量集合换成不同拓扑，闭集、紧集和连续算子都会改变。公式中的 $X$、$X^*$ 或范数正是在固定这些背景，这也是强、弱、弱星三种语言必须分开的原因，不能混用、省略或偷换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弱星拓扑",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B1%E6%98%9F%E6%8B%93%E6%89%91%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弱星拓扑",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B1%E6%98%9F%E6%8B%93%E6%89%91"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weak star topology",
+          "url": "https://en.wikipedia.org/w/index.php?search=weak%20star%20topology"
+        }
       ]
     },
     {
@@ -395,6 +753,24 @@
         "低光滑 较粗拓扑",
         "weak star convergence",
         "weak_star_convergence"
+      ],
+      "explanation_markdown": "弱星收敛是对偶空间中按原空间点逐点测试的收敛。常写成 $f_i\\xrightarrow{w^*}f$，含义是对每个 $x\\in X$ 都有 $f_i(x)\\to f(x)$；这里 $f_i,f\\in X^*$。\n\n它比弱收敛少测试一层，只用 $X$ 中的向量，而弱拓扑会用 $X^{**}$ 中的连续泛函。弱星收敛在测度、分布和泛函列中很常见，因为 Banach-Alaoglu 定理给出弱星紧性；但它通常不能推出范数收敛，也未必保留逐点之外的非线性结构。在实际使用中，弱星收敛要和所选空间一起读：同一向量集合换成不同拓扑，闭集、紧集和连续算子都会改变。公式中的 $X$、$X^*$ 或范数正是在固定这些背景，这也是强、弱、弱星三种语言必须分开的原因，不能混用、省略或偷换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弱星收敛",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B1%E6%98%9F%E6%94%B6%E6%95%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弱星收敛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B1%E6%98%9F%E6%94%B6%E6%95%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weak star convergence",
+          "url": "https://en.wikipedia.org/w/index.php?search=weak%20star%20convergence"
+        }
       ]
     },
     {
@@ -413,6 +789,24 @@
         "强范数 严格拓扑",
         "strong convergence",
         "strong_convergence"
+      ],
+      "explanation_markdown": "强收敛是在范数或强拓扑下真正靠近的收敛。常写成 $x_n\\to x$ 且 $\\|x_n-x\\|\\to0$，其中 $\\|\\cdot\\|$ 给出空间里的距离。\n\n它比弱收敛要求高；强收敛会推出对每个 $f\\in X^*$ 有 $f(x_n)\\to f(x)$，反过来一般不成立。强收敛保留非线性项和范数估计，常用于证明算子连续性、能量收敛和解的稳定性；在无穷维空间中，强极限通常更难通过紧性直接取得。在实际使用中，强收敛要和所选空间一起读：同一向量集合换成不同拓扑，闭集、紧集和连续算子都会改变。公式中的 $X$、$X^*$ 或范数正是在固定这些背景，这也是强、弱、弱星三种语言必须分开的原因，不能混用、省略或偷换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "强收敛",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%BA%E6%94%B6%E6%95%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "强收敛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%BA%E6%94%B6%E6%95%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "strong convergence",
+          "url": "https://en.wikipedia.org/w/index.php?search=strong%20convergence"
+        }
       ]
     },
     {
@@ -431,6 +825,24 @@
         "有界 覆盖 子列",
         "compact operator",
         "compact_operator"
+      ],
+      "explanation_markdown": "紧算子是把有界集送到相对紧集的线性算子。可写作 $T(B_X)\\ \\text{is relatively compact in }Y$，其中B_X 是 X 的单位球，T:X\\to Y 是线性算子。\n\n它不要求算子本身有限秩，但可由有限维行为近似。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。对紧算子来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，紧算子常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。紧算子的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕紧算子展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "紧算子",
+          "url": "https://www.baidu.com/s?wd=%E7%B4%A7%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "紧算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B4%A7%E7%AE%97%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "compact operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=compact%20operator"
+        }
       ]
     },
     {
@@ -449,6 +861,24 @@
         "对象 条件 运算 记号",
         "self adjoint operator",
         "self_adjoint_operator"
+      ],
+      "explanation_markdown": "自伴算子是等于自身伴随的 Hilbert 空间算子。常用定义式为 $\\langle Tx,y\\rangle=\\langle x,Ty\\rangle$，其中x,y 属于定义域，内积取在 Hilbert 空间中。\n\n它比对称算子更强时需包含定义域相等。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。在泛函分析里，自伴算子常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。自伴算子的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕自伴算子展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自伴算子",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E4%BC%B4%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自伴算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E4%BC%B4%E7%AE%97%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "self adjoint operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=self%20adjoint%20operator"
+        }
       ]
     },
     {
@@ -467,6 +897,24 @@
         "对象 条件 运算 记号",
         "normal operator",
         "normal_operator"
+      ],
+      "explanation_markdown": "正规算子是与伴随算子可交换的 Hilbert 空间算子。可写作 $T^*T=TT^*$，其中T^* 是伴随算子，等式在共同定义域上理解。\n\n它包括自伴与酉算子，但不要求 T=T^*。在算子与泛函共同出现时，它把几何结构转化为分析工具。正规算子的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕正规算子展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对正规算子来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正规算子",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E8%A7%84%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正规算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E8%A7%84%E7%AE%97%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "normal operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=normal%20operator"
+        }
       ]
     },
     {
@@ -485,6 +933,24 @@
         "对象 条件 运算 记号",
         "unitary operator",
         "unitary_operator"
+      ],
+      "explanation_markdown": "酉算子是保持内积且满射的 Hilbert 空间算子。可写成 $U^*U=UU^*=I$，其中U^* 是伴随，I 是恒等算子。\n\n它是等距同构，不只是范数不增的收缩。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。围绕酉算子展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对酉算子来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，酉算子常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。酉算子的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "酉算子",
+          "url": "https://www.baidu.com/s?wd=%E9%85%89%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "酉算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%85%89%E7%AE%97%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "unitary operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=unitary%20operator"
+        }
       ]
     },
     {
@@ -503,6 +969,24 @@
         "对象 条件 运算 记号",
         "projection operator",
         "projection_operator"
+      ],
+      "explanation_markdown": "投影算子是满足幂等关系的线性算子。常用定义式为 $P^2=P$，其中P 是作用在向量空间或 Hilbert 空间上的算子。\n\n正交投影还要求 P=P^*，普通投影未必自伴。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。对投影算子来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，投影算子常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。投影算子的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "投影算子",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%95%E5%BD%B1%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "投影算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%95%E5%BD%B1%E7%AE%97%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "projection operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=projection%20operator"
+        }
       ]
     },
     {
@@ -521,6 +1005,24 @@
         "对象 条件 运算 记号",
         "bi operator",
         "bi_operator"
+      ],
+      "explanation_markdown": "闭算子是图像在乘积空间中闭合的线性算子。可写成 $x_n\\to x,\\ Tx_n\\to y\\Rightarrow x\\in D(T),\\ Tx=y$，其中D(T) 是定义域，收敛分别在 X 与 Y 中。\n\n它可以无界；闭性替代了有界算子的自动连续性。在算子与泛函共同出现时，它把几何结构转化为分析工具。在泛函分析里，闭算子常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。闭算子的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕闭算子展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "闭算子",
+          "url": "https://www.baidu.com/s?wd=%E9%97%AD%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "闭算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%97%AD%E7%AE%97%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bi operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=bi%20operator"
+        }
       ]
     },
     {
@@ -539,6 +1041,24 @@
         "对象 条件 运算 记号",
         "chou ding operator",
         "chou_ding_operator"
+      ],
+      "explanation_markdown": "稠定算子是定义域在所在空间中稠密的线性算子。常用定义式为 $\\overline{D(T)}=X$，其中D(T) 是 T 的定义域，闭包取在 X 的拓扑下。\n\n它不表示算子有界，只说明定义域没有丢失开块。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。稠定算子的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕稠定算子展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对稠定算子来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稠定算子",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%A0%E5%AE%9A%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稠定算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%A0%E5%AE%9A%E7%AE%97%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dense definite operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=dense%20definite%20operator"
+        }
       ]
     },
     {
@@ -557,6 +1077,24 @@
         "对象 条件 运算 记号",
         "unbounded operator",
         "unbounded_operator"
+      ],
+      "explanation_markdown": "无界算子是不能由统一范数常数控制的线性算子。常写成 $\\sup_{\\|x\\|\\le1,\\ x\\in D(T)}\\|Tx\\|=\\infty$，其中D(T) 是定义域，单位球限制在定义域内。\n\n它通常只定义在稠密子空间上，不能按有界算子那样处处连续。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。围绕无界算子展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对无界算子来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，无界算子常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "无界算子",
+          "url": "https://www.baidu.com/s?wd=%E6%97%A0%E7%95%8C%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "无界算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%97%A0%E7%95%8C%E7%AE%97%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "unbounded operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=unbounded%20operator"
+        }
       ]
     },
     {
@@ -575,6 +1113,24 @@
         "特征值 分解",
         "point spectrum",
         "point_spectrum"
+      ],
+      "explanation_markdown": "点谱是由特征值组成的谱部分。可写作 $Tx=\\lambda x,\\quad x\\ne0$，其中x 是特征向量，\\lambda 是谱参数。\n\n它只是谱的一部分；连续谱没有对应的非零特征向量。在算子与泛函共同出现时，它把几何结构转化为分析工具。对点谱来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，点谱常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。点谱的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕点谱展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "点谱",
+          "url": "https://www.baidu.com/s?wd=%E7%82%B9%E8%B0%B1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "点谱",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%82%B9%E8%B0%B1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "point spectrum",
+          "url": "https://en.wikipedia.org/w/index.php?search=point%20spectrum"
+        }
       ]
     },
     {
@@ -593,6 +1149,24 @@
         "特征值 分解",
         "continuous spectrum",
         "continuous_spectrum"
+      ],
+      "explanation_markdown": "连续谱是算子无特征向量但预解逆不有界的谱部分。可写成 $T-\\lambda I\\ \\text{injective},\\ \\overline{\\operatorname{Ran}(T-\\lambda I)}=X$，其中\\lambda 是谱参数，值域稠密但逆不连续。\n\n它区别于点谱，也不同于值域不稠密的剩余谱。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。在泛函分析里，连续谱常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。连续谱的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕连续谱展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "连续谱",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%9E%E7%BB%AD%E8%B0%B1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "连续谱",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%9E%E7%BB%AD%E8%B0%B1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "continuous spectrum",
+          "url": "https://en.wikipedia.org/w/index.php?search=continuous%20spectrum"
+        }
       ]
     },
     {
@@ -611,6 +1185,24 @@
         "特征值 分解",
         "residual spectrum",
         "residual_spectrum"
+      ],
+      "explanation_markdown": "剩余谱是值域不稠密导致预解失败的谱部分。常写成 $\\overline{\\operatorname{Ran}(T-\\lambda I)}\\ne X$，其中\\lambda 是谱参数，Ran 表示值域。\n\n它和连续谱都没有普通特征向量，但连续谱的值域仍稠密。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。剩余谱的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕剩余谱展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对剩余谱来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "剩余谱",
+          "url": "https://www.baidu.com/s?wd=%E5%89%A9%E4%BD%99%E8%B0%B1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "剩余谱",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%89%A9%E4%BD%99%E8%B0%B1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "residual spectrum",
+          "url": "https://en.wikipedia.org/w/index.php?search=residual%20spectrum"
+        }
       ]
     },
     {
@@ -629,6 +1221,24 @@
         "特征值 分解",
         "pu fen solution",
         "pu_fen_solution"
+      ],
+      "explanation_markdown": "谱分解是按谱集合把算子表示成投影积分的结构。可写作 $T=\\int_{\\sigma(T)}\\lambda\\,dE(\\lambda)$，其中\\sigma(T) 是谱，E 是谱测度。\n\n它是算子的分解，不只是列出特征值。在算子与泛函共同出现时，它把几何结构转化为分析工具。围绕谱分解展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对谱分解来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，谱分解常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。谱分解的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "谱分解",
+          "url": "https://www.baidu.com/s?wd=%E8%B0%B1%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "谱分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B0%B1%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pu fen solution",
+          "url": "https://en.wikipedia.org/w/index.php?search=pu%20fen%20solution"
+        }
       ]
     },
     {
@@ -647,6 +1257,24 @@
         "对象 条件 运算 记号",
         "yu solution operator",
         "yu_solution_operator"
+      ],
+      "explanation_markdown": "预解算子是谱参数不在谱中时定义的逆算子。可写作 $R(\\lambda,T)=(\\lambda I-T)^{-1}$，其中\\lambda 属于预解集，I 是恒等算子。\n\n它只在逆存在且有界时定义，不能跨过谱点。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。对预解算子来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，预解算子常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。预解算子的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕预解算子展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "预解算子",
+          "url": "https://www.baidu.com/s?wd=%E9%A2%84%E8%A7%A3%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "预解算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%A2%84%E8%A7%A3%E7%AE%97%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "yu solution operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=yu%20solution%20operator"
+        }
       ]
     },
     {
@@ -665,6 +1293,19 @@
         "对象 条件 运算 记号",
         "resolvent ji",
         "resolvent_ji"
+      ],
+      "explanation_markdown": "Resolvent集是使预解算子存在且有界的谱参数集合。可写成 $\\rho(T)=\\{\\lambda:(\\lambda I-T)^{-1}\\in\\mathcal B(X)\\}$，其中\\mathcal B(X) 是有界算子空间，\\rho(T) 是预解集。\n\n它是参数集合，和预解算子本身不同。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。在泛函分析里，Resolvent集常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。Resolvent集的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕Resolvent集展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Resolvent集",
+          "url": "https://www.baidu.com/s?wd=Resolvent%E9%9B%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Resolvent集",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Resolvent%E9%9B%86"
+        }
       ]
     },
     {
@@ -683,6 +1324,19 @@
         "对象 条件 运算 记号",
         "fredholm operator",
         "fredholm_operator"
+      ],
+      "explanation_markdown": "Fredholm算子是核与余核有限维且值域闭的有界线性算子。可写成 $\\dim\\ker T<\\infty,\\quad \\dim(Y/\\operatorname{Ran}T)<\\infty$，其中T:X\\to Y，核与余核衡量解和约束的有限维缺陷。\n\n它未必可逆，但不可逆部分只在有限维中出现。在算子与泛函共同出现时，它把几何结构转化为分析工具。Fredholm算子的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕Fredholm算子展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对Fredholm算子来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Fredholm算子",
+          "url": "https://www.baidu.com/s?wd=Fredholm%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Fredholm算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Fredholm%E7%AE%97%E5%AD%90"
+        }
       ]
     },
     {
@@ -701,6 +1355,19 @@
         "对象 条件 运算 记号",
         "fredholm zhi shu",
         "fredholm_zhi_shu"
+      ],
+      "explanation_markdown": "Fredholm指数是Fredholm 算子的核维数减余核维数。可写成 $\\operatorname{ind}T=\\dim\\ker T-\\operatorname{codim}\\operatorname{Ran}T$，其中\\operatorname{codim} 表示值域余维数。\n\n紧扰动下指数稳定，这与普通秩或范数不同。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。围绕Fredholm指数展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对Fredholm指数来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，Fredholm指数常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。Fredholm指数的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Fredholm指数",
+          "url": "https://www.baidu.com/s?wd=Fredholm%E6%8C%87%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Fredholm指数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Fredholm%E6%8C%87%E6%95%B0"
+        }
       ]
     },
     {
@@ -719,6 +1386,19 @@
         "对象 条件 运算 记号",
         "volterra operator",
         "volterra_operator"
+      ],
+      "explanation_markdown": "Volterra算子是典型积分上限随变量变化的紧积分算子。可写作 $(Vf)(x)=\\int_0^x f(t)\\,dt$，其中f 是区间上的函数，x 是积分上限。\n\n它区别于一般 Fredholm 积分算子，积分区间带有顺序。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。对Volterra算子来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，Volterra算子常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。Volterra算子的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕Volterra算子展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Volterra算子",
+          "url": "https://www.baidu.com/s?wd=Volterra%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Volterra算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Volterra%E7%AE%97%E5%AD%90"
+        }
       ]
     },
     {
@@ -737,6 +1417,19 @@
         "对象 条件 运算 记号",
         "hilbert schmidt operator",
         "hilbert_schmidt_operator"
+      ],
+      "explanation_markdown": "HilbertSchmidt算子是平方核可积或奇异值平方可和的 Hilbert 空间算子。常用定义式为 $\\|T\\|_{HS}^2=\\sum_n\\|Te_n\\|^2$，其中\\{e_n\\} 是任一标准正交基，和值与基无关。\n\n它一定紧，但不一定迹类；迹类要求奇异值一次可和。在算子与泛函共同出现时，它把几何结构转化为分析工具。在泛函分析里，HilbertSchmidt算子常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。HilbertSchmidt算子的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕HilbertSchmidt算子展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "HilbertSchmidt算子",
+          "url": "https://www.baidu.com/s?wd=HilbertSchmidt%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "HilbertSchmidt算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=HilbertSchmidt%E7%AE%97%E5%AD%90"
+        }
       ]
     },
     {
@@ -755,6 +1448,24 @@
         "对象 条件 运算 记号",
         "ji lei operator",
         "ji_lei_operator"
+      ],
+      "explanation_markdown": "迹类算子是奇异值可求和的紧算子。常写成 $\\|T\\|_1=\\operatorname{tr}|T|=\\sum_n s_n(T)$，其中s_n(T) 是奇异值，|T|=(T^*T)^{1/2}。\n\n它强于 Hilbert-Schmidt 条件，因为一次可和比平方可和更严格。这也说明同一线性对象在不同拓扑下会呈现不同的连续性和紧性。迹类算子的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕迹类算子展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对迹类算子来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，迹类算子常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "迹类算子",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%B9%E7%B1%BB%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "迹类算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%B9%E7%B1%BB%E7%AE%97%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ji lei operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=ji%20lei%20operator"
+        }
       ]
     },
     {
@@ -773,6 +1484,24 @@
         "有界 覆盖 子列",
         "compact qian ru",
         "compact_qian_ru"
+      ],
+      "explanation_markdown": "紧嵌入是一个函数空间嵌入另一个空间时有界序列可抽出强收敛子列。可写成 $X\\hookrightarrow\\hookrightarrow Y$，其中X,Y 是 Banach 空间，双箭头表示嵌入算子紧。\n\n它比连续嵌入强；连续嵌入只给范数控制。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。围绕紧嵌入展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对紧嵌入来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，紧嵌入常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "紧嵌入",
+          "url": "https://www.baidu.com/s?wd=%E7%B4%A7%E5%B5%8C%E5%85%A5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "紧嵌入",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B4%A7%E5%B5%8C%E5%85%A5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tightly embedded",
+          "url": "https://en.wikipedia.org/w/index.php?search=tightly%20embedded"
+        }
       ]
     },
     {
@@ -791,6 +1520,24 @@
         "低光滑 较粗拓扑",
         "weak compact xing",
         "weak_compact_xing"
+      ],
+      "explanation_markdown": "弱紧性是在弱拓扑下闭包紧或序列可抽取弱极限的性质。常写成 $x_{n_j}\\rightharpoonup x$，其中x_{n_j} 是子列，极限按所有对偶泛函测试。\n\n它区别于范数紧性，弱紧集在强拓扑下可很大。在算子与泛函共同出现时，它把几何结构转化为分析工具。对弱紧性来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，弱紧性常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。弱紧性的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弱紧性",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B1%E7%B4%A7%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弱紧性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B1%E7%B4%A7%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weak compact xing",
+          "url": "https://en.wikipedia.org/w/index.php?search=weak%20compact%20xing"
+        }
       ]
     },
     {
@@ -809,6 +1556,19 @@
         "对象 条件 运算 记号",
         "alaoglu theorem",
         "alaoglu_theorem"
+      ],
+      "explanation_markdown": "Alaoglu定理是对偶空间闭单位球在弱星拓扑下紧的定理。常用定义式为 $B_{X^*}\\ \\text{is compact in }\\sigma(X^*,X)$，其中B_{X^*} 是对偶单位球，\\sigma(X^*,X) 是弱星拓扑。\n\n它给弱星紧性，不直接给范数紧性。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。在泛函分析里，Alaoglu定理常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。Alaoglu定理的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕Alaoglu定理展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Alaoglu定理",
+          "url": "https://www.baidu.com/s?wd=Alaoglu%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Alaoglu定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Alaoglu%E5%AE%9A%E7%90%86"
+        }
       ]
     },
     {
@@ -827,6 +1587,19 @@
         "对象 条件 运算 记号",
         "hahn banach theorem",
         "hahn_banach_theorem"
+      ],
+      "explanation_markdown": "HahnBanach定理是在线性控制不增大的前提下延拓泛函的定理。可写成 $F|_M=f,\\quad |F(x)|\\le p(x)$，其中M 是子空间，p 是次线性控制函数，F 是延拓泛函。\n\n它保证泛函存在，不提供唯一延拓。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。HahnBanach定理的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕HahnBanach定理展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对HahnBanach定理来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "HahnBanach定理",
+          "url": "https://www.baidu.com/s?wd=HahnBanach%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "HahnBanach定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=HahnBanach%E5%AE%9A%E7%90%86"
+        }
       ]
     },
     {
@@ -845,6 +1618,24 @@
         "对象 条件 运算 记号",
         "uniform boundedness principle",
         "uniform_boundedness_principle"
+      ],
+      "explanation_markdown": "一致有界原理是点态有界的连续线性算子族在 Banach 空间上范数一致有界。可写作 $\\sup_\\alpha\\|T_\\alpha x\\|<\\infty\\ \\forall x\\Rightarrow \\sup_\\alpha\\|T_\\alpha\\|<\\infty$，其中T_\\alpha 是算子族，x 遍历 Banach 空间。\n\n它依赖 Baire 类别定理，和单个算子有界性不是同一件事。在算子与泛函共同出现时，它把几何结构转化为分析工具。围绕一致有界原理展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对一致有界原理来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，一致有界原理常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "一致有界原理",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%80%E8%87%B4%E6%9C%89%E7%95%8C%E5%8E%9F%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "一致有界原理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%80%E8%87%B4%E6%9C%89%E7%95%8C%E5%8E%9F%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "uniform boundedness principle",
+          "url": "https://en.wikipedia.org/w/index.php?search=uniform%20boundedness%20principle"
+        }
       ]
     },
     {
@@ -863,6 +1654,19 @@
         "对象 条件 运算 记号",
         "banach steinhaus theorem",
         "banach_steinhaus_theorem"
+      ],
+      "explanation_markdown": "BanachSteinhaus定理是一致有界原理的常用名称。常用定义式为 $\\sup_\\alpha\\|T_\\alpha x\\|<\\infty\\Rightarrow \\sup_\\alpha\\|T_\\alpha\\|<\\infty$，其中T_\\alpha 是连续线性算子族，前提对每个 x 成立。\n\n它说明不能只看每个向量的轨道而忽略算子范数。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。对BanachSteinhaus定理来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，BanachSteinhaus定理常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。BanachSteinhaus定理的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕BanachSteinhaus定理展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "BanachSteinhaus定理",
+          "url": "https://www.baidu.com/s?wd=BanachSteinhaus%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "BanachSteinhaus定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=BanachSteinhaus%E5%AE%9A%E7%90%86"
+        }
       ]
     },
     {
@@ -881,6 +1685,19 @@
         "对象 条件 运算 记号",
         "riesz yin li",
         "riesz_yin_li"
+      ],
+      "explanation_markdown": "Riesz引理是真闭子空间不能逼近整个赋范空间单位球的引理。可写成 $\\|x\\|=1,\\quad d(x,M)>\\alpha$，其中M 是真闭子空间，0<\\alpha<1，x 是选出的单位向量。\n\n它是几何分离工具，和 Riesz 表示定理无关。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。在泛函分析里，Riesz引理常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。Riesz引理的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕Riesz引理展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Riesz引理",
+          "url": "https://www.baidu.com/s?wd=Riesz%E5%BC%95%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Riesz引理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Riesz%E5%BC%95%E7%90%86"
+        }
       ]
     },
     {
@@ -899,6 +1716,19 @@
         "对象 条件 运算 记号",
         "laxmilgram theorem",
         "laxmilgram_theorem"
+      ],
+      "explanation_markdown": "LaxMilgram定理是强制有界双线性型给出唯一弱解的定理。可写作 $a(u,v)=F(v)$，其中a 是 Hilbert 空间上的连续强制双线性型，F 是连续线性泛函。\n\n它依赖 Hilbert 空间结构和强制性，不只是 Hahn-Banach 延拓。在算子与泛函共同出现时，它把几何结构转化为分析工具。LaxMilgram定理的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕LaxMilgram定理展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对LaxMilgram定理来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "LaxMilgram定理",
+          "url": "https://www.baidu.com/s?wd=LaxMilgram%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "LaxMilgram定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=LaxMilgram%E5%AE%9A%E7%90%86"
+        }
       ]
     },
     {
@@ -917,6 +1747,24 @@
         "对象 条件 运算 记号",
         "projection theorem",
         "projection_theorem"
+      ],
+      "explanation_markdown": "投影定理是Hilbert 空间中闭凸集存在唯一最近点的定理。可写作 $\\|x-P_Cx\\|=\\inf_{y\\in C}\\|x-y\\|$，其中C 是闭凸集，P_Cx 是 x 到 C 的投影。\n\n对子空间投影还满足残差与子空间正交。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。围绕投影定理展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对投影定理来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，投影定理常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。投影定理的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "投影定理",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%95%E5%BD%B1%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "投影定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%95%E5%BD%B1%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "projection theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=projection%20theorem"
+        }
       ]
     },
     {
@@ -935,6 +1783,24 @@
         "对象 条件 运算 记号",
         "zheng jiao fen solution",
         "zheng_jiao_fen_solution"
+      ],
+      "explanation_markdown": "正交分解是Hilbert 空间按闭子空间和其正交补分解。可写成 $H=M\\oplus M^\\perp$，其中M 是闭子空间，M^\\perp 是与 M 中所有向量正交的集合。\n\n它需要闭子空间；一般线性子空间未必给出完备分解。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。对正交分解来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，正交分解常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。正交分解的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正交分解",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E4%BA%A4%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正交分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E4%BA%A4%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "orthogonal decomposition",
+          "url": "https://en.wikipedia.org/w/index.php?search=orthogonal%20decomposition"
+        }
       ]
     },
     {
@@ -953,6 +1819,24 @@
         "对象 条件 运算 记号",
         "zheng jiao bu",
         "zheng_jiao_bu"
+      ],
+      "explanation_markdown": "正交补是与给定集合中每个向量都正交的向量集合。可写成 $M^\\perp=\\{x:\\langle x,m\\rangle=0,\\ \\forall m\\in M\\}$，其中M 是 Hilbert 空间子集，内积定义正交。\n\n它依赖内积结构，一般 Banach 空间没有天然正交补。在算子与泛函共同出现时，它把几何结构转化为分析工具。在泛函分析里，正交补常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。正交补的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕正交补展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正交补",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E4%BA%A4%E8%A1%A5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正交补",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E4%BA%A4%E8%A1%A5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "orthogonal complement",
+          "url": "https://en.wikipedia.org/w/index.php?search=orthogonal%20complement"
+        }
       ]
     },
     {
@@ -971,6 +1855,24 @@
         "对象 条件 运算 记号",
         "wan bei zheng jiao",
         "wan_bei_zheng_jiao_xi"
+      ],
+      "explanation_markdown": "完备正交系是线性张成闭包等于整个 Hilbert 空间的正交归一族。常用定义式为 $x=\\sum_n\\langle x,e_n\\rangle e_n$，其中\\{e_n\\} 是正交归一系，级数按范数收敛。\n\n完备性不同于单纯正交，后者可能只覆盖真子空间。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。完备正交系的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕完备正交系展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对完备正交系来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "完备正交系",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%8C%E5%A4%87%E6%AD%A3%E4%BA%A4%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "完备正交系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%8C%E5%A4%87%E6%AD%A3%E4%BA%A4%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "complete orthogonal system",
+          "url": "https://en.wikipedia.org/w/index.php?search=complete%20orthogonal%20system"
+        }
       ]
     },
     {
@@ -989,6 +1891,19 @@
         "对象 条件 运算 记号",
         "fourier xi shu functional",
         "fourier_xi_shu_functional"
+      ],
+      "explanation_markdown": "Fourier系数泛函是取向量在某个正交基方向上坐标的连续线性泛函。常写成 $c_n(x)=\\langle x,e_n\\rangle$，其中e_n 是正交归一向量，c_n 是第 n 个系数泛函。\n\n它取的是坐标，不等同于整个 Fourier 级数的重构。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。围绕Fourier系数泛函展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对Fourier系数泛函来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，Fourier系数泛函常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Fourier系数泛函",
+          "url": "https://www.baidu.com/s?wd=Fourier%E7%B3%BB%E6%95%B0%E6%B3%9B%E5%87%BD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Fourier系数泛函",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Fourier%E7%B3%BB%E6%95%B0%E6%B3%9B%E5%87%BD"
+        }
       ]
     },
     {
@@ -1007,6 +1922,24 @@
         "对象 条件 运算 记号",
         "ji di zhan kai",
         "ji_di_zhan_kai"
+      ],
+      "explanation_markdown": "基底展开是用空间中的基按系数表示向量。可写成 $x=\\sum_{n=1}^{\\infty}a_ne_n$，其中e_n 是基向量，a_n 是系数，收敛在给定拓扑或范数中理解。\n\n无穷维基底展开需要指定收敛方式，不能照搬有限维线性组合。在算子与泛函共同出现时，它把几何结构转化为分析工具。对基底展开来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，基底展开常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。基底展开的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "基底展开",
+          "url": "https://www.baidu.com/s?wd=%E5%9F%BA%E5%BA%95%E5%B1%95%E5%BC%80%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "基底展开",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9F%BA%E5%BA%95%E5%B1%95%E5%BC%80"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "basal expansion",
+          "url": "https://en.wikipedia.org/w/index.php?search=basal%20expansion"
+        }
       ]
     },
     {
@@ -1025,6 +1958,19 @@
         "对象 条件 运算 记号",
         "schauder ji",
         "schauder_ji"
+      ],
+      "explanation_markdown": "Schauder基是每个向量有唯一范数收敛级数展开的序列。常用定义式为 $x=\\sum_{n=1}^{\\infty}a_ne_n$，其中a_n 是唯一系数，部分和在范数中收敛到 x。\n\n它不要求级数任意重排仍收敛；那是无条件基的要求。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。在泛函分析里，Schauder基常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。Schauder基的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕Schauder基展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Schauder基",
+          "url": "https://www.baidu.com/s?wd=Schauder%E5%9F%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Schauder基",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Schauder%E5%9F%BA"
+        }
       ]
     },
     {
@@ -1043,6 +1989,24 @@
         "对象 条件 运算 记号",
         "wu condition ji",
         "wu_condition_ji"
+      ],
+      "explanation_markdown": "无条件基是级数展开对重排和符号变化仍收敛的 Schauder 基。常用定义式为 $\\sum_n a_ne_n\\ \\text{unconditionally converges}$，其中a_n 是展开系数，收敛不依赖项的顺序。\n\n它强于 Schauder 基，排除了条件收敛带来的顺序依赖。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。无条件基的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕无条件基展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对无条件基来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "无条件基",
+          "url": "https://www.baidu.com/s?wd=%E6%97%A0%E6%9D%A1%E4%BB%B6%E5%9F%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "无条件基",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%97%A0%E6%9D%A1%E4%BB%B6%E5%9F%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wu condition ji",
+          "url": "https://en.wikipedia.org/w/index.php?search=wu%20condition%20ji"
+        }
       ]
     },
     {
@@ -1061,6 +2025,24 @@
         "有界 覆盖 子列",
         "compact xing pan bie",
         "compact_xing_pan_bie"
+      ],
+      "explanation_markdown": "紧性判别是判断集合或算子是否相对紧的条件集合。常用定义式为 $\\overline A\\ \\text{compact}$，其中A 是拓扑空间中的集合，闭包紧表示相对紧。\n\n不同空间的判别条件不同，不能只用有界性代替紧性。在算子与泛函共同出现时，它把几何结构转化为分析工具。围绕紧性判别展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对紧性判别来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，紧性判别常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "紧性判别",
+          "url": "https://www.baidu.com/s?wd=%E7%B4%A7%E6%80%A7%E5%88%A4%E5%88%AB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "紧性判别",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B4%A7%E6%80%A7%E5%88%A4%E5%88%AB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tightness judgment",
+          "url": "https://en.wikipedia.org/w/index.php?search=tightness%20judgment"
+        }
       ]
     },
     {
@@ -1079,6 +2061,24 @@
         "对象 条件 运算 记号",
         "dual pei dui",
         "dual_pei_dui"
+      ],
+      "explanation_markdown": "对偶配对是向量空间与对偶空间之间的双线性取值。常用定义式为 $\\langle x,f\\rangle=f(x)$，其中x\\in X，f\\in X^*，尖括号表示泛函作用。\n\n它不是 Hilbert 内积；两边通常来自不同空间。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。对对偶配对来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，对偶配对常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。对偶配对的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对偶配对",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E5%81%B6%E9%85%8D%E5%AF%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对偶配对",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E5%81%B6%E9%85%8D%E5%AF%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "duality pairing",
+          "url": "https://en.wikipedia.org/w/index.php?search=duality%20pairing"
+        }
       ]
     },
     {
@@ -1097,6 +2097,24 @@
         "低光滑 较粗拓扑",
         "weak derivative functional",
         "weak_derivative_functional"
+      ],
+      "explanation_markdown": "弱导数泛函是通过分部积分定义的导数型线性泛函。常用定义式为 $\\int u\\,\\partial^\\alpha\\varphi=(-1)^{|\\alpha|}\\int v\\,\\varphi$，其中\\varphi 是测试函数，v 是 u 的弱导数。\n\n它允许 u 没有经典导数，只要求积分恒等式成立。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。在泛函分析里，弱导数泛函常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。弱导数泛函的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕弱导数泛函展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弱导数泛函",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B1%E5%AF%BC%E6%95%B0%E6%B3%9B%E5%87%BD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弱导数泛函",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B1%E5%AF%BC%E6%95%B0%E6%B3%9B%E5%87%BD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weak derivative functional",
+          "url": "https://en.wikipedia.org/w/index.php?search=weak%20derivative%20functional"
+        }
       ]
     },
     {
@@ -1115,6 +2133,24 @@
         "对象 条件 运算 记号",
         "distribution space",
         "distribution_space"
+      ],
+      "explanation_markdown": "分布空间是测试函数空间的连续线性泛函组成的空间。常写成 $T:\\mathcal D(\\Omega)\\to\\mathbb C$，其中\\mathcal D(\\Omega) 是紧支光滑测试函数空间，T 连续线性。\n\n它的元素不必是点值函数，必须通过测试函数理解。在算子与泛函共同出现时，它把几何结构转化为分析工具。分布空间的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕分布空间展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对分布空间来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分布空间",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E5%B8%83%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分布空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E5%B8%83%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "distribution space",
+          "url": "https://en.wikipedia.org/w/index.php?search=distribution%20space"
+        }
       ]
     },
     {
@@ -1133,6 +2169,19 @@
         "对象 条件 运算 记号",
         "sobolev space qian ru",
         "sobolev_space_qian_ru"
+      ],
+      "explanation_markdown": "Sobolev空间嵌入是把弱导数可积性转化为函数正则性或可积性的定理。常用定义式为 $W^{k,p}(\\Omega)\\hookrightarrow L^q(\\Omega)$，其中k 是弱导数阶数，p,q 是积分指数。\n\n它区别于紧嵌入；连续嵌入只保证范数控制。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。围绕Sobolev空间嵌入展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对Sobolev空间嵌入来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，Sobolev空间嵌入常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Sobolev空间嵌入",
+          "url": "https://www.baidu.com/s?wd=Sobolev%E7%A9%BA%E9%97%B4%E5%B5%8C%E5%85%A5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Sobolev空间嵌入",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Sobolev%E7%A9%BA%E9%97%B4%E5%B5%8C%E5%85%A5"
+        }
       ]
     },
     {
@@ -1151,6 +2200,19 @@
         "对象 条件 运算 记号",
         "bochner space",
         "bochner_space"
+      ],
+      "explanation_markdown": "Bochner空间是取值于 Banach 空间的可测函数构成的 Lp 空间。常写成 $\\|u\\|_{L^p(0,T;X)}=\\left(\\int_0^T\\|u(t)\\|_X^pdt\\right)^{1/p}$，其中X 是 Banach 空间，u(t) 取 X 中值。\n\n它比普通 Lp 空间多了取值空间的结构。这也说明同一线性对象在不同拓扑下会呈现不同的连续性和紧性。对Bochner空间来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，Bochner空间常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。Bochner空间的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕Bochner空间展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Bochner空间",
+          "url": "https://www.baidu.com/s?wd=Bochner%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Bochner空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Bochner%E7%A9%BA%E9%97%B4"
+        }
       ]
     },
     {
@@ -1169,6 +2231,24 @@
         "对象 条件 运算 记号",
         "semigroup generator",
         "semigroup_generator"
+      ],
+      "explanation_markdown": "半群生成元是强连续算子半群在零时刻的导数。可写成 $Ax=\\lim_{t\\downarrow0}\\frac{T(t)x-x}{t}$，其中T(t) 是半群，极限存在的 x 组成 D(A)。\n\n生成元常为无界算子，不能简单视作有界矩阵。在算子与泛函共同出现时，它把几何结构转化为分析工具。在泛函分析里，半群生成元常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。半群生成元的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕半群生成元展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "半群生成元",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8A%E7%BE%A4%E7%94%9F%E6%88%90%E5%85%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "半群生成元",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8A%E7%BE%A4%E7%94%9F%E6%88%90%E5%85%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "semigroup generator",
+          "url": "https://en.wikipedia.org/w/index.php?search=semigroup%20generator"
+        }
       ]
     },
     {
@@ -1187,6 +2267,24 @@
         "强范数 严格拓扑",
         "strong continuity semigroup",
         "strong_continuity_semigroup"
+      ],
+      "explanation_markdown": "强连续半群是每个向量轨道在时间零点强连续的算子半群。常写成 $\\lim_{t\\downarrow0}\\|T(t)x-x\\|=0$，其中T(t) 是有界算子族，x 属于 Banach 空间。\n\n强连续只逐点控制轨道，不等同于算子范数连续。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。强连续半群的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕强连续半群展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对强连续半群来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "强连续半群",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%BA%E8%BF%9E%E7%BB%AD%E5%8D%8A%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "强连续半群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%BA%E8%BF%9E%E7%BB%AD%E5%8D%8A%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "strong continuity semigroup",
+          "url": "https://en.wikipedia.org/w/index.php?search=strong%20continuity%20semigroup"
+        }
       ]
     },
     {
@@ -1205,6 +2303,24 @@
         "对象 条件 运算 记号",
         "shou suo semigroup",
         "shou_suo_semigroup"
+      ],
+      "explanation_markdown": "收缩半群是算子范数不超过一的强连续半群。常用定义式为 $\\|T(t)\\|\\le1\\quad(t\\ge0)$，其中T(t) 是半群算子，范数取算子范数。\n\n它比一般强连续半群多了统一范数约束。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。围绕收缩半群展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对收缩半群来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，收缩半群常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "收缩半群",
+          "url": "https://www.baidu.com/s?wd=%E6%94%B6%E7%BC%A9%E5%8D%8A%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "收缩半群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%94%B6%E7%BC%A9%E5%8D%8A%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "contracting semigroup",
+          "url": "https://en.wikipedia.org/w/index.php?search=contracting%20semigroup"
+        }
       ]
     },
     {
@@ -1223,6 +2339,24 @@
         "特征值 分解",
         "pu theorem",
         "pu_theorem"
+      ],
+      "explanation_markdown": "谱定理是把自伴或正规算子表示为谱测度积分的定理。常用定义式为 $T=\\int \\lambda\\,dE(\\lambda)$，其中E 是投影值谱测度，\\lambda 是谱变量。\n\n它是无穷维对角化，不只适用于有特征向量基的情形。在算子与泛函共同出现时，它把几何结构转化为分析工具。对谱定理来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，谱定理常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。谱定理的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "谱定理",
+          "url": "https://www.baidu.com/s?wd=%E8%B0%B1%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "谱定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B0%B1%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pu theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=pu%20theorem"
+        }
       ]
     },
     {
@@ -1241,6 +2375,24 @@
         "对象 条件 运算 记号",
         "function yan suan",
         "function_yan_suan"
+      ],
+      "explanation_markdown": "函数演算是把标量函数作用到算子谱上的构造。可写成 $f(T)=\\int_{\\sigma(T)}f(\\lambda)\\,dE(\\lambda)$，其中\\sigma(T) 是谱，E 是谱测度，f 是谱上的函数。\n\n它依赖谱结构，不能随意把点态公式套到非正规算子上。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。在泛函分析里，函数演算常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。函数演算的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕函数演算展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "函数演算",
+          "url": "https://www.baidu.com/s?wd=%E5%87%BD%E6%95%B0%E6%BC%94%E7%AE%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "函数演算",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%BD%E6%95%B0%E6%BC%94%E7%AE%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "function calculus",
+          "url": "https://en.wikipedia.org/w/index.php?search=function%20calculus"
+        }
       ]
     },
     {
@@ -1259,6 +2411,24 @@
         "对象 条件 运算 记号",
         "bian fen inequality",
         "bian_fen_inequality"
+      ],
+      "explanation_markdown": "变分不等式是用不等式刻画约束极值或投影条件的问题。常写成 $a(u,v-u)\\ge F(v-u)\\quad(v\\in K)$，其中K 是闭凸集，a 是双线性型，F 是线性泛函。\n\n它区别于变分方程，解满足的是锥方向上的不等式。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。变分不等式的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕变分不等式展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对变分不等式来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "变分不等式",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%98%E5%88%86%E4%B8%8D%E7%AD%89%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "变分不等式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%98%E5%88%86%E4%B8%8D%E7%AD%89%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "variational inequality",
+          "url": "https://en.wikipedia.org/w/index.php?search=variational%20inequality"
+        }
       ]
     },
     {
@@ -1277,6 +2447,24 @@
         "对象 条件 运算 记号",
         "tu functional",
         "tu_functional"
+      ],
+      "explanation_markdown": "凸泛函是满足线段上函数值不超过线性插值的泛函。可写成 $J(tx+(1-t)y)\\le tJ(x)+(1-t)J(y)$，其中0\\le t\\le1，x,y 属于线性空间。\n\n凸性给全局控制，和可微性是不同性质。在算子与泛函共同出现时，它把几何结构转化为分析工具。围绕凸泛函展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对凸泛函来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，凸泛函常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。凸泛函的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "凸泛函",
+          "url": "https://www.baidu.com/s?wd=%E5%87%B8%E6%B3%9B%E5%87%BD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "凸泛函",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%B8%E6%B3%9B%E5%87%BD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tu functional",
+          "url": "https://en.wikipedia.org/w/index.php?search=tu%20functional"
+        }
       ]
     },
     {
@@ -1295,6 +2483,24 @@
         "对象 条件 运算 记号",
         "ci wei fen",
         "ci_wei_fen"
+      ],
+      "explanation_markdown": "次微分是凸泛函在不可微点的广义梯度集合。常用定义式为 $\\xi\\in\\partial J(x)\\iff J(y)\\ge J(x)+\\langle \\xi,y-x\\rangle$，其中\\xi 是对偶空间元素，y 遍历定义域。\n\n它通常是集合值对象，不等同于单个 Frechet 导数。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。对次微分来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，次微分常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。次微分的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕次微分展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "次微分",
+          "url": "https://www.baidu.com/s?wd=%E6%AC%A1%E5%BE%AE%E5%88%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "次微分",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AC%A1%E5%BE%AE%E5%88%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "subdifferential",
+          "url": "https://en.wikipedia.org/w/index.php?search=subdifferential"
+        }
       ]
     },
     {
@@ -1313,6 +2519,24 @@
         "对象 条件 运算 记号",
         "ji xiao hua functional",
         "ji_xiao_hua_functional"
+      ],
+      "explanation_markdown": "极小化泛函是在函数空间上寻找能量最小值的泛函模型。可写作 $J(u)=\\inf_{v\\in K}J(v)$，其中K 是允许集合，u 是达到下确界的候选极小元。\n\n它强调极值结构，和单纯定义一个函数空间范数不同。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。在泛函分析里，极小化泛函常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。极小化泛函的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕极小化泛函展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "极小化泛函",
+          "url": "https://www.baidu.com/s?wd=%E6%9E%81%E5%B0%8F%E5%8C%96%E6%B3%9B%E5%87%BD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "极小化泛函",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9E%81%E5%B0%8F%E5%8C%96%E6%B3%9B%E5%87%BD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "minimizing functional",
+          "url": "https://en.wikipedia.org/w/index.php?search=minimizing%20functional"
+        }
       ]
     },
     {
@@ -1331,6 +2555,19 @@
         "对象 条件 运算 记号",
         "gateaux derivative",
         "gateaux_derivative"
+      ],
+      "explanation_markdown": "Gateaux导数是沿每个方向的一维方向导数。常写成 $dJ(x;h)=\\lim_{t\\to0}\\frac{J(x+th)-J(x)}{t}$，其中h 是方向，t 是实参数。\n\n它弱于 Frechet 导数，不一定给出统一线性近似。这也说明同一线性对象在不同拓扑下会呈现不同的连续性和紧性。Gateaux导数的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕Gateaux导数展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对Gateaux导数来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，Gateaux导数常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Gateaux导数",
+          "url": "https://www.baidu.com/s?wd=Gateaux%E5%AF%BC%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Gateaux导数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Gateaux%E5%AF%BC%E6%95%B0"
+        }
       ]
     },
     {
@@ -1349,6 +2586,19 @@
         "对象 条件 运算 记号",
         "frechet derivative",
         "frechet_derivative"
+      ],
+      "explanation_markdown": "Frechet导数是在范数意义下给出统一线性近似的导数。常用定义式为 $\\|F(x+h)-F(x)-Ah\\|=o(\\|h\\|)$，其中A 是连续线性算子，h 是小增量。\n\n它强于 Gateaux 导数，要求误差对所有小方向统一。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。围绕Frechet导数展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对Frechet导数来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，Frechet导数常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。Frechet导数的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Frechet导数",
+          "url": "https://www.baidu.com/s?wd=Frechet%E5%AF%BC%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Frechet导数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Frechet%E5%AF%BC%E6%95%B0"
+        }
       ]
     },
     {
@@ -1367,6 +2617,19 @@
         "对象 条件 运算 记号",
         "banach space jie gou",
         "banach_space_jie_gou"
+      ],
+      "explanation_markdown": "Banach空间结构是巴拿赫空间中线性运算、拓扑和典型子空间共同形成的范数完备结构。可写作 $\\|x_n-x\\|\\to0$，其中x_n 是序列，极限按 Banach 空间范数理解。\n\n它强调结构组成，区别于只讨论单个序列或单个算子。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。对Banach空间结构来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，Banach空间结构常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。Banach空间结构的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Banach空间结构",
+          "url": "https://www.baidu.com/s?wd=Banach%E7%A9%BA%E9%97%B4%E7%BB%93%E6%9E%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Banach空间结构",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Banach%E7%A9%BA%E9%97%B4%E7%BB%93%E6%9E%84"
+        }
       ]
     },
     {
@@ -1385,6 +2648,19 @@
         "对象 条件 运算 记号",
         "banach tuo pu",
         "banach_tuo_pu"
+      ],
+      "explanation_markdown": "Banach拓扑是巴拿赫空间上决定开集、连续性和收敛方式的拓扑。常用定义式为 $\\|x_n-x\\|\\to0$，其中x_n 是序列，极限按 Banach 空间范数理解。\n\n同一线性空间换用不同拓扑，紧性和连续性结论会改变。在算子与泛函共同出现时，它把几何结构转化为分析工具。在泛函分析里，Banach拓扑常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。Banach拓扑的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕Banach拓扑展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Banach拓扑",
+          "url": "https://www.baidu.com/s?wd=Banach%E6%8B%93%E6%89%91%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Banach拓扑",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Banach%E6%8B%93%E6%89%91"
+        }
       ]
     },
     {
@@ -1403,6 +2679,19 @@
         "对象 条件 运算 记号",
         "banach convergence",
         "banach_convergence"
+      ],
+      "explanation_markdown": "Banach收敛是巴拿赫空间中按指定拓扑理解的极限概念。可写作 $\\|x_n-x\\|\\to0$，其中x_n 是序列，极限按 Banach 空间范数理解。\n\n它必须说明采用完备范数下的收敛，不能和其他拓扑下的收敛混用。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。Banach收敛的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕Banach收敛展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对Banach收敛来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Banach收敛",
+          "url": "https://www.baidu.com/s?wd=Banach%E6%94%B6%E6%95%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Banach收敛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Banach%E6%94%B6%E6%95%9B"
+        }
       ]
     },
     {
@@ -1421,6 +2710,19 @@
         "有界 覆盖 子列",
         "banach compact xing",
         "banach_compact_xing"
+      ],
+      "explanation_markdown": "Banach紧性是巴拿赫空间中集合在指定拓扑下的紧性性质。常写成 $U_\\alpha\\ \\text{open cover}\\Rightarrow U_{\\alpha_1},\\ldots,U_{\\alpha_m}$，其中U_\\alpha 是开覆盖，有限子族仍覆盖该集合。\n\n紧性依赖拓扑；弱紧不等于强紧。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。围绕Banach紧性展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对Banach紧性来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，Banach紧性常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。Banach紧性的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Banach紧性",
+          "url": "https://www.baidu.com/s?wd=Banach%E7%B4%A7%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Banach紧性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Banach%E7%B4%A7%E6%80%A7"
+        }
       ]
     },
     {
@@ -1439,6 +2741,19 @@
         "对象 条件 运算 记号",
         "hilbert space jie gou",
         "hilbert_space_jie_gou"
+      ],
+      "explanation_markdown": "Hilbert空间结构是希尔伯特空间中线性运算、拓扑和典型子空间共同形成的内积完备结构。常写成 $\\langle x,y\\rangle$，其中\\langle\\cdot,\\cdot\\rangle 是内积并诱导范数。\n\n它强调结构组成，区别于只讨论单个序列或单个算子。在算子与泛函共同出现时，它把几何结构转化为分析工具。对Hilbert空间结构来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，Hilbert空间结构常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。Hilbert空间结构的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Hilbert空间结构",
+          "url": "https://www.baidu.com/s?wd=Hilbert%E7%A9%BA%E9%97%B4%E7%BB%93%E6%9E%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Hilbert空间结构",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Hilbert%E7%A9%BA%E9%97%B4%E7%BB%93%E6%9E%84"
+        }
       ]
     },
     {
@@ -1457,6 +2772,19 @@
         "对象 条件 运算 记号",
         "hilbert tuo pu",
         "hilbert_tuo_pu"
+      ],
+      "explanation_markdown": "Hilbert拓扑是希尔伯特空间上决定开集、连续性和收敛方式的拓扑。可写作 $\\langle x,y\\rangle$，其中\\langle\\cdot,\\cdot\\rangle 是内积并诱导范数。\n\n同一线性空间换用不同拓扑，紧性和连续性结论会改变。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。在泛函分析里，Hilbert拓扑常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。Hilbert拓扑的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕Hilbert拓扑展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Hilbert拓扑",
+          "url": "https://www.baidu.com/s?wd=Hilbert%E6%8B%93%E6%89%91%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Hilbert拓扑",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Hilbert%E6%8B%93%E6%89%91"
+        }
       ]
     },
     {
@@ -1475,6 +2803,19 @@
         "对象 条件 运算 记号",
         "hilbert convergence",
         "hilbert_convergence"
+      ],
+      "explanation_markdown": "Hilbert收敛是希尔伯特空间中按指定拓扑理解的极限概念。常写成 $\\langle x,y\\rangle$，其中\\langle\\cdot,\\cdot\\rangle 是内积并诱导范数。\n\n它必须说明采用带正交几何的收敛，不能和其他拓扑下的收敛混用。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。Hilbert收敛的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕Hilbert收敛展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对Hilbert收敛来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Hilbert收敛",
+          "url": "https://www.baidu.com/s?wd=Hilbert%E6%94%B6%E6%95%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Hilbert收敛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Hilbert%E6%94%B6%E6%95%9B"
+        }
       ]
     },
     {
@@ -1493,6 +2834,19 @@
         "有界 覆盖 子列",
         "hilbert compact xing",
         "hilbert_compact_xing"
+      ],
+      "explanation_markdown": "Hilbert紧性是希尔伯特空间中集合在指定拓扑下的紧性性质。可写成 $U_\\alpha\\ \\text{open cover}\\Rightarrow U_{\\alpha_1},\\ldots,U_{\\alpha_m}$，其中U_\\alpha 是开覆盖，有限子族仍覆盖该集合。\n\n紧性依赖拓扑；弱紧不等于强紧。在算子与泛函共同出现时，它把几何结构转化为分析工具。围绕Hilbert紧性展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对Hilbert紧性来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，Hilbert紧性常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。Hilbert紧性的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Hilbert紧性",
+          "url": "https://www.baidu.com/s?wd=Hilbert%E7%B4%A7%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Hilbert紧性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Hilbert%E7%B4%A7%E6%80%A7"
+        }
       ]
     },
     {
@@ -1511,6 +2865,24 @@
         "对象 条件 运算 记号",
         "ju bu tu space",
         "ju_bu_tu_space_jie_gou"
+      ],
+      "explanation_markdown": "局部凸空间结构是局部凸空间中线性运算、拓扑和典型子空间共同形成的半范族拓扑结构。常用定义式为 $p_i(x)<\\varepsilon$，其中p_i 是半范，\\varepsilon 给出零邻域。\n\n它强调结构组成，区别于只讨论单个序列或单个算子。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。对局部凸空间结构来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，局部凸空间结构常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。局部凸空间结构的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "局部凸空间结构",
+          "url": "https://www.baidu.com/s?wd=%E5%B1%80%E9%83%A8%E5%87%B8%E7%A9%BA%E9%97%B4%E7%BB%93%E6%9E%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "局部凸空间结构",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B1%80%E9%83%A8%E5%87%B8%E7%A9%BA%E9%97%B4%E7%BB%93%E6%9E%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "local convex space structure",
+          "url": "https://en.wikipedia.org/w/index.php?search=local%20convex%20space%20structure"
+        }
       ]
     },
     {
@@ -1529,6 +2901,24 @@
         "对象 条件 运算 记号",
         "ju bu tu tuo",
         "ju_bu_tu_tuo_pu"
+      ],
+      "explanation_markdown": "局部凸拓扑是局部凸空间上决定开集、连续性和收敛方式的拓扑。可写成 $p_i(x)<\\varepsilon$，其中p_i 是半范，\\varepsilon 给出零邻域。\n\n同一线性空间换用不同拓扑，紧性和连续性结论会改变。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。在泛函分析里，局部凸拓扑常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。局部凸拓扑的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕局部凸拓扑展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "局部凸拓扑",
+          "url": "https://www.baidu.com/s?wd=%E5%B1%80%E9%83%A8%E5%87%B8%E6%8B%93%E6%89%91%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "局部凸拓扑",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B1%80%E9%83%A8%E5%87%B8%E6%8B%93%E6%89%91"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "local convex topology",
+          "url": "https://en.wikipedia.org/w/index.php?search=local%20convex%20topology"
+        }
       ]
     },
     {
@@ -1547,6 +2937,24 @@
         "对象 条件 运算 记号",
         "ju bu tu convergence",
         "ju_bu_tu_convergence"
+      ],
+      "explanation_markdown": "局部凸收敛是局部凸空间中按指定拓扑理解的极限概念。常用定义式为 $p_i(x)<\\varepsilon$，其中p_i 是半范，\\varepsilon 给出零邻域。\n\n它必须说明采用由半范控制的收敛，不能和其他拓扑下的收敛混用。在算子与泛函共同出现时，它把几何结构转化为分析工具。局部凸收敛的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕局部凸收敛展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对局部凸收敛来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "局部凸收敛",
+          "url": "https://www.baidu.com/s?wd=%E5%B1%80%E9%83%A8%E5%87%B8%E6%94%B6%E6%95%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "局部凸收敛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B1%80%E9%83%A8%E5%87%B8%E6%94%B6%E6%95%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "local convex convergence",
+          "url": "https://en.wikipedia.org/w/index.php?search=local%20convex%20convergence"
+        }
       ]
     },
     {
@@ -1565,6 +2973,24 @@
         "有界 覆盖 子列",
         "ju bu tu compact",
         "ju_bu_tu_compact_xing"
+      ],
+      "explanation_markdown": "局部凸紧性是局部凸空间中集合在指定拓扑下的紧性性质。可写作 $U_\\alpha\\ \\text{open cover}\\Rightarrow U_{\\alpha_1},\\ldots,U_{\\alpha_m}$，其中U_\\alpha 是开覆盖，有限子族仍覆盖该集合。\n\n紧性依赖拓扑；弱紧不等于强紧。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。围绕局部凸紧性展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对局部凸紧性来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，局部凸紧性常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "局部凸紧性",
+          "url": "https://www.baidu.com/s?wd=%E5%B1%80%E9%83%A8%E5%87%B8%E7%B4%A7%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "局部凸紧性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B1%80%E9%83%A8%E5%87%B8%E7%B4%A7%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "local convexity",
+          "url": "https://en.wikipedia.org/w/index.php?search=local%20convexity"
+        }
       ]
     },
     {
@@ -1583,6 +3009,24 @@
         "对象 条件 运算 记号",
         "dual space jie gou",
         "dual_space_jie_gou"
+      ],
+      "explanation_markdown": "对偶空间结构是对偶空间中线性运算、拓扑和典型子空间共同形成的连续线性泛函结构。可写成 $X^*=\\mathcal L(X,\\mathbb K)$，其中X^* 是连续线性泛函空间，\\mathbb K 为标量域。\n\n它强调结构组成，区别于只讨论单个序列或单个算子。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。对对偶空间结构来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，对偶空间结构常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。对偶空间结构的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对偶空间结构",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E5%81%B6%E7%A9%BA%E9%97%B4%E7%BB%93%E6%9E%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对偶空间结构",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E5%81%B6%E7%A9%BA%E9%97%B4%E7%BB%93%E6%9E%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "duality space structure",
+          "url": "https://en.wikipedia.org/w/index.php?search=duality%20space%20structure"
+        }
       ]
     },
     {
@@ -1601,6 +3045,24 @@
         "对象 条件 运算 记号",
         "dual tuo pu",
         "dual_tuo_pu"
+      ],
+      "explanation_markdown": "对偶拓扑是对偶空间上决定开集、连续性和收敛方式的拓扑。常写成 $X^*=\\mathcal L(X,\\mathbb K)$，其中X^* 是连续线性泛函空间，\\mathbb K 为标量域。\n\n同一线性空间换用不同拓扑，紧性和连续性结论会改变。在算子与泛函共同出现时，它把几何结构转化为分析工具。在泛函分析里，对偶拓扑常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。对偶拓扑的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕对偶拓扑展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对偶拓扑",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E5%81%B6%E6%8B%93%E6%89%91%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对偶拓扑",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E5%81%B6%E6%8B%93%E6%89%91"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dual topology",
+          "url": "https://en.wikipedia.org/w/index.php?search=dual%20topology"
+        }
       ]
     },
     {
@@ -1619,6 +3081,24 @@
         "对象 条件 运算 记号",
         "dual convergence",
         "dual_convergence"
+      ],
+      "explanation_markdown": "对偶收敛是对偶空间中按指定拓扑理解的极限概念。可写成 $X^*=\\mathcal L(X,\\mathbb K)$，其中X^* 是连续线性泛函空间，\\mathbb K 为标量域。\n\n它必须说明采用由泛函测试的收敛，不能和其他拓扑下的收敛混用。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。对偶收敛的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕对偶收敛展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对对偶收敛来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对偶收敛",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E5%81%B6%E6%94%B6%E6%95%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对偶收敛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E5%81%B6%E6%94%B6%E6%95%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dual convergence",
+          "url": "https://en.wikipedia.org/w/index.php?search=dual%20convergence"
+        }
       ]
     },
     {
@@ -1637,6 +3117,24 @@
         "有界 覆盖 子列",
         "dual compact xing",
         "dual_compact_xing"
+      ],
+      "explanation_markdown": "对偶紧性是对偶空间中集合在指定拓扑下的紧性性质。常用定义式为 $U_\\alpha\\ \\text{open cover}\\Rightarrow U_{\\alpha_1},\\ldots,U_{\\alpha_m}$，其中U_\\alpha 是开覆盖，有限子族仍覆盖该集合。\n\n紧性依赖拓扑；弱紧不等于强紧。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。围绕对偶紧性展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对对偶紧性来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，对偶紧性常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对偶紧性",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E5%81%B6%E7%B4%A7%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对偶紧性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E5%81%B6%E7%B4%A7%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dual compact xing",
+          "url": "https://en.wikipedia.org/w/index.php?search=dual%20compact%20xing"
+        }
       ]
     },
     {
@@ -1655,6 +3153,24 @@
         "低光滑 较粗拓扑",
         "weak space jie gou",
         "weak_space_jie_gou"
+      ],
+      "explanation_markdown": "弱空间结构是弱拓扑对象中线性运算、拓扑和典型子空间共同形成的对偶泛函生成的结构。可写作 $\\sigma(X,X^*)$，其中X^* 是连续对偶空间。\n\n它强调结构组成，区别于只讨论单个序列或单个算子。在算子与泛函共同出现时，它把几何结构转化为分析工具。对弱空间结构来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，弱空间结构常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。弱空间结构的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弱空间结构",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B1%E7%A9%BA%E9%97%B4%E7%BB%93%E6%9E%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弱空间结构",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B1%E7%A9%BA%E9%97%B4%E7%BB%93%E6%9E%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weak space structure",
+          "url": "https://en.wikipedia.org/w/index.php?search=weak%20space%20structure"
+        }
       ]
     },
     {
@@ -1673,6 +3189,24 @@
         "低光滑 较粗拓扑",
         "weak star space jie",
         "weak_star_space_jie_gou"
+      ],
+      "explanation_markdown": "弱星空间结构是弱星拓扑对象中线性运算、拓扑和典型子空间共同形成的原空间评价生成的结构。常用定义式为 $\\sigma(X^*,X)$，其中X^* 是对偶空间，X 提供评价测试。\n\n它强调结构组成，区别于只讨论单个序列或单个算子。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。在泛函分析里，弱星空间结构常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。弱星空间结构的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕弱星空间结构展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弱星空间结构",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B1%E6%98%9F%E7%A9%BA%E9%97%B4%E7%BB%93%E6%9E%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弱星空间结构",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B1%E6%98%9F%E7%A9%BA%E9%97%B4%E7%BB%93%E6%9E%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weak star space structure",
+          "url": "https://en.wikipedia.org/w/index.php?search=weak%20star%20space%20structure"
+        }
       ]
     },
     {
@@ -1691,6 +3225,24 @@
         "低光滑 较粗拓扑",
         "weak star compact xing",
         "weak_star_compact_xing"
+      ],
+      "explanation_markdown": "弱星紧性是弱星拓扑对象中集合在指定拓扑下的紧性性质。可写作 $U_\\alpha\\ \\text{open cover}\\Rightarrow U_{\\alpha_1},\\ldots,U_{\\alpha_m}$，其中U_\\alpha 是开覆盖，有限子族仍覆盖该集合。\n\n紧性依赖拓扑；弱紧不等于强紧。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。弱星紧性的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕弱星紧性展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对弱星紧性来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弱星紧性",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B1%E6%98%9F%E7%B4%A7%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弱星紧性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B1%E6%98%9F%E7%B4%A7%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weak star compact xing",
+          "url": "https://en.wikipedia.org/w/index.php?search=weak%20star%20compact%20xing"
+        }
       ]
     },
     {
@@ -1709,6 +3261,24 @@
         "强范数 严格拓扑",
         "strong space jie gou",
         "strong_space_jie_gou"
+      ],
+      "explanation_markdown": "强空间结构是强拓扑对象中线性运算、拓扑和典型子空间共同形成的范数拓扑结构。常写成 $\\|x_n-x\\|\\to0$，其中范数给出向量距离。\n\n它强调结构组成，区别于只讨论单个序列或单个算子。在算子与泛函共同出现时，它把几何结构转化为分析工具。围绕强空间结构展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对强空间结构来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，强空间结构常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "强空间结构",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%BA%E7%A9%BA%E9%97%B4%E7%BB%93%E6%9E%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "强空间结构",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%BA%E7%A9%BA%E9%97%B4%E7%BB%93%E6%9E%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "strong space structure",
+          "url": "https://en.wikipedia.org/w/index.php?search=strong%20space%20structure"
+        }
       ]
     },
     {
@@ -1727,6 +3297,24 @@
         "强范数 严格拓扑",
         "strong tuo pu",
         "strong_tuo_pu"
+      ],
+      "explanation_markdown": "强拓扑通常指由范数或给定半范数族直接生成的拓扑。若 $x_n\\to x$ 等价于 $\\|x_n-x\\|\\to0$，其中 $\\|\\cdot\\|$ 是空间范数，收敛要求向量本身在范数距离下靠近。\n\n它比弱拓扑和弱星拓扑细，开集更多，连续线性泛函的数值收敛不足以刻画全部信息。强拓扑保留算子范数、闭图像和谱估计等结构，但紧性往往较弱；在无穷维空间中，闭有界集通常不会因此成为紧集。这一定义常用于区分强收敛与弱收敛：前者控制 $\\|x_n-x\\|$，后者只控制每个泛函 $f(x_n)$ 的极限。在实际使用中，强拓扑要和所选空间一起读：同一向量集合换成不同拓扑，闭集、紧集和连续算子都会改变。公式中的 $X$、$X^*$ 或范数正是在固定这些背景，这也是强、弱、弱星三种语言必须分开的原因，不能混用、省略或偷换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "强拓扑",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%BA%E6%8B%93%E6%89%91%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "强拓扑",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%BA%E6%8B%93%E6%89%91"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "strong topology",
+          "url": "https://en.wikipedia.org/w/index.php?search=strong%20topology"
+        }
       ]
     },
     {
@@ -1745,6 +3333,24 @@
         "强范数 严格拓扑",
         "strong compact xing",
         "strong_compact_xing"
+      ],
+      "explanation_markdown": "强紧性是强拓扑对象中集合在指定拓扑下的紧性性质。可写成 $U_\\alpha\\ \\text{open cover}\\Rightarrow U_{\\alpha_1},\\ldots,U_{\\alpha_m}$，其中U_\\alpha 是开覆盖，有限子族仍覆盖该集合。\n\n紧性依赖拓扑；弱紧不等于强紧。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。在泛函分析里，强紧性常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。强紧性的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕强紧性展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "强紧性",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%BA%E7%B4%A7%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "强紧性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%BA%E7%B4%A7%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "strong compact xing",
+          "url": "https://en.wikipedia.org/w/index.php?search=strong%20compact%20xing"
+        }
       ]
     },
     {
@@ -1763,6 +3369,24 @@
         "有界 覆盖 子列",
         "compact operator pu",
         "compact_operator_pu"
+      ],
+      "explanation_markdown": "紧算子谱是紧算子除零外只可能由有限重特征值组成并在零处聚集的谱结构。常写成 $\\sigma(T)\\setminus\\{0\\}\\subset\\sigma_p(T)$，其中\\sigma(T) 是谱，\\sigma_p(T) 是点谱，T 是紧算子。\n\n它强调紧算子的谱性质，和一般有界算子可能具有大块连续谱不同。在算子与泛函共同出现时，它把几何结构转化为分析工具。紧算子谱的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。围绕紧算子谱展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对紧算子谱来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "紧算子谱",
+          "url": "https://www.baidu.com/s?wd=%E7%B4%A7%E7%AE%97%E5%AD%90%E8%B0%B1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "紧算子谱",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B4%A7%E7%AE%97%E5%AD%90%E8%B0%B1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "compact operator pu",
+          "url": "https://en.wikipedia.org/w/index.php?search=compact%20operator%20pu"
+        }
       ]
     },
     {
@@ -1781,6 +3405,24 @@
         "有界 覆盖 子列",
         "compact operator fan shu",
         "compact_operator_fan_shu"
+      ],
+      "explanation_markdown": "紧算子范数是紧算子作为有界线性算子时的最大放大倍数。常用定义式为 $\\|T\\|=\\sup_{\\|x\\|\\le1}\\|Tx\\|$，其中T 是紧算子，x 取定义域单位球中的向量。\n\n紧性是像集相对紧的性质，范数只衡量放大倍数，二者不能互相替代。在弱拓扑、对偶和谱理论中，它用于组织抽象对象。围绕紧算子范数展开的结论很依赖完备性、有界性和对偶分离点等条件；这些条件决定有限维直觉能否保留下来。对紧算子范数来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，紧算子范数常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "紧算子范数",
+          "url": "https://www.baidu.com/s?wd=%E7%B4%A7%E7%AE%97%E5%AD%90%E8%8C%83%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "紧算子范数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B4%A7%E7%AE%97%E5%AD%90%E8%8C%83%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "compact operator norm",
+          "url": "https://en.wikipedia.org/w/index.php?search=compact%20operator%20norm"
+        }
       ]
     },
     {
@@ -1799,6 +3441,24 @@
         "有界 覆盖 子列",
         "compact operator semigroup",
         "compact_operator_semigroup"
+      ],
+      "explanation_markdown": "紧算子半群是由紧算子或最终紧性质控制的算子半群。可写成 $T(t+s)=T(t)T(s)$，其中t,s\\ge0，T(t) 是随时间变化的算子族。\n\n它比单个紧算子多了半群乘法和强连续性要求。在无限维向量空间中，它描述范数、拓扑和线性映射的关系。对紧算子半群来说，符号里的空间和映射一旦改变，收敛、紧性和谱性质也会随之改变。在泛函分析里，紧算子半群常用于讨论无穷维空间中的收敛、对偶和谱；相关结论要先固定范数、拓扑和算子类别。紧算子半群的用法通常落在函数空间、线性算子和极限过程之间；范数收敛、弱收敛和弱星收敛给出的信息并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "紧算子半群",
+          "url": "https://www.baidu.com/s?wd=%E7%B4%A7%E7%AE%97%E5%AD%90%E5%8D%8A%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "紧算子半群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B4%A7%E7%AE%97%E5%AD%90%E5%8D%8A%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "compact operator semigroup",
+          "url": "https://en.wikipedia.org/w/index.php?search=compact%20operator%20semigroup"
+        }
       ]
     }
   ]

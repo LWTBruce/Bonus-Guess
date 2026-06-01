@@ -1,0 +1,2405 @@
+{
+  "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+  "entries": [
+    {
+      "chinese_name": "计数原理",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "计数原理是把有限对象数清楚的基本思想，核心是分类相加、分步相乘和避免重复计数。若两类对象互不重叠， $|A\\sqcup B|=|A|+|B|$，其中$A,B$ 是两个不交集合，竖线表示元素个数。这个式子强调每个对象只能落入一个类别。\n\n计数原理常作为排列、组合、容斥和生成函数的入口，用来先整理对象结构。它不是单一公式；真正关键是说明对象是否有序、能否重复以及哪些结果算同一种。相近模型的结果常只差一个顺序或对称因子，因此写公式前要说明哪些安排被视为同一种。在应用中它常作为更复杂计数的局部步骤，先把小结构数准，再把各部分组合起来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "计数原理",
+          "url": "https://www.baidu.com/s?wd=%E8%AE%A1%E6%95%B0%E5%8E%9F%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "计数原理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%AE%A1%E6%95%B0%E5%8E%9F%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "counting principle",
+          "url": "https://en.wikipedia.org/w/index.php?search=counting%20principle"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "加法原理",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "加法原理处理若干互斥选择中任选一种的计数。若第 $i$ 类有 $n_i$ 种选择，则 $N=n_1+n_2+\\cdots+n_k$，其中$N$ 是总数，$n_i$ 是第 $i$ 类方案数。互斥保证同一个方案不会在两类中被数两次。\n\n它适合按首位、颜色、区域或结构类型分情形讨论。若类别有交叉，就不能直接相加，需要改用容斥或重新划分类别。相近模型的结果常只差一个顺序或对称因子，因此写公式前要说明哪些安排被视为同一种。在应用中它常作为更复杂计数的局部步骤，先把小结构数准，再把各部分组合起来。加法原理的核心是先说清对象是否有序、是否可重复、是否带标号，再决定应该相加、相乘还是建立一一对应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "加法原理",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%A0%E6%B3%95%E5%8E%9F%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "加法原理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%A0%E6%B3%95%E5%8E%9F%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "addition principle",
+          "url": "https://en.wikipedia.org/w/index.php?search=addition%20principle"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "乘法原理",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "乘法原理处理一个对象由若干步骤共同完成的计数。若第 $i$ 步有 $n_i$ 种选择，则 $N=n_1n_2\\cdots n_k$，其中$N$ 是完整方案数，$n_i$ 是第 $i$ 步可选数。每一步选择都参与确定最终对象。\n\n它常用于密码、座位、路径和函数构造问题。若后一步选择数依赖前面结果，应把这种依赖写进每一步，而不是盲目使用固定乘积。相近模型的结果常只差一个顺序或对称因子，因此写公式前要说明哪些安排被视为同一种。在应用中它常作为更复杂计数的局部步骤，先把小结构数准，再把各部分组合起来。乘法原理的核心是先说清对象是否有序、是否可重复、是否带标号，再决定应该相加、相乘还是建立一一对应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "乘法原理",
+          "url": "https://www.baidu.com/s?wd=%E4%B9%98%E6%B3%95%E5%8E%9F%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "乘法原理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B9%98%E6%B3%95%E5%8E%9F%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "multiplication principle",
+          "url": "https://en.wikipedia.org/w/index.php?search=multiplication%20principle"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "排列",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "排列是从若干可区分对象中选出一部分并排成有序列。常见计数为 $P(n,k)=\\frac{n!}{(n-k)!}$，其中$n$ 是对象总数，$k$ 是要填入的有序位置数。顺序改变通常就得到新的排列。\n\n排列同时关心“选谁”和“放在哪个位置”，常见于座位、编号和不重复抽取。它不同于组合；组合只关心选出的集合，不关心列举顺序。在应用中它常作为更复杂计数的局部步骤，先把小结构数准，再把各部分组合起来。排列的核心是先说清对象是否有序、是否可重复、是否带标号，再决定应该相加、相乘还是建立一一对应。相近模型的结果常只差一个顺序或对称因子，因此写公式前要说明哪些安排被视为同一种。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "排列",
+          "url": "https://www.baidu.com/s?wd=%E6%8E%92%E5%88%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "排列",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8E%92%E5%88%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "permutation",
+          "url": "https://en.wikipedia.org/w/index.php?search=permutation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "全排列",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "全排列是把 $n$ 个不同对象全部排成一列，每个对象恰好出现一次。计数公式为 $P(n,n)=n!$，其中$n!$ 表示从 $1$ 乘到 $n$ 的阶乘。它是排列在 $k=n$ 时的特殊情形。\n\n全排列常作为限制位置、逆序数和循环结构问题的全集。若对象中有重复元素，不能直接用 $n!$，要除去相同对象交换造成的重复。全排列的核心是先说清对象是否有序、是否可重复、是否带标号，再决定应该相加、相乘还是建立一一对应。相近模型的结果常只差一个顺序或对称因子，因此写公式前要说明哪些安排被视为同一种。在应用中它常作为更复杂计数的局部步骤，先把小结构数准，再把各部分组合起来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "全排列",
+          "url": "https://www.baidu.com/s?wd=%E5%85%A8%E6%8E%92%E5%88%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "全排列",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%A8%E6%8E%92%E5%88%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "full arrangement",
+          "url": "https://en.wikipedia.org/w/index.php?search=full%20arrangement"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "圆排列",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "圆排列研究对象围成圆圈时的有序安排，整体旋转视为同一种。对 $n$ 个不同对象， $N=(n-1)!$，其中$N$ 是圆排列数，$n$ 是对象数。固定一个对象后，其余对象按线性顺序排列即可。\n\n圆排列适合环形座位、循环次序和项链的基础模型。若翻转也视为相同，还需再处理镜像对称，不能只套 $(n-1)!$。圆排列的核心是先说清对象是否有序、是否可重复、是否带标号，再决定应该相加、相乘还是建立一一对应。相近模型的结果常只差一个顺序或对称因子，因此写公式前要说明哪些安排被视为同一种。在应用中它常作为更复杂计数的局部步骤，先把小结构数准，再把各部分组合起来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "圆排列",
+          "url": "https://www.baidu.com/s?wd=%E5%9C%86%E6%8E%92%E5%88%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "圆排列",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9C%86%E6%8E%92%E5%88%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "circle permutation",
+          "url": "https://en.wikipedia.org/w/index.php?search=circle%20permutation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "错位排列",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "错位排列是没有任何元素回到原位置的排列，也叫无固定点排列。数量常记为 $D_n=n!\\sum_{k=0}^n\\frac{(-1)^k}{k!}$，其中$n$ 是元素数，$D_n$ 是错位排列数。公式来自从所有排列中容斥排除固定点。\n\n错位排列的直观模型是信封装错信件，也用于研究随机排列的固定点。它比普通排列多了“每个位置都不能放原元素”的全局限制。相近模型的结果常只差一个顺序或对称因子，因此写公式前要说明哪些安排被视为同一种。在应用中它常作为更复杂计数的局部步骤，先把小结构数准，再把各部分组合起来。错位排列的核心是先说清对象是否有序、是否可重复、是否带标号，再决定应该相加、相乘还是建立一一对应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "错位排列",
+          "url": "https://www.baidu.com/s?wd=%E9%94%99%E4%BD%8D%E6%8E%92%E5%88%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "错位排列",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%94%99%E4%BD%8D%E6%8E%92%E5%88%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "misaligned arrangement",
+          "url": "https://en.wikipedia.org/w/index.php?search=misaligned%20arrangement"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "组合",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "组合是从 $n$ 个不同对象中选出 $k$ 个而不关心顺序。计数公式为 $\\binom nk=\\frac{n!}{k!(n-k)!}$，其中$n$ 是总对象数，$k$ 是选出个数。同一组对象无论怎样列出都算同一种组合。\n\n组合用于抽样、选点、取子集和二项式展开。它与排列的差别在顺序是否有意义；若选出后还要排座位，就应先组合再排列或直接用排列。在应用中它常作为更复杂计数的局部步骤，先把小结构数准，再把各部分组合起来。组合的核心是先说清对象是否有序、是否可重复、是否带标号，再决定应该相加、相乘还是建立一一对应。相近模型的结果常只差一个顺序或对称因子，因此写公式前要说明哪些安排被视为同一种。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "组合",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%84%E5%90%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "组合",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%84%E5%90%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "combination",
+          "url": "https://en.wikipedia.org/w/index.php?search=combination"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "组合数",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "组合数表示无序选取的方案个数，常称“从 $n$ 取 $k$”。标准记法为 $C(n,k)=\\binom nk$，其中$C(n,k)$ 与 $\\binom nk$ 都表示组合数。它只计算选出哪些对象，不记录选择顺序。\n\n组合数是子集计数和概率模型中的基础数量，也出现在许多恒等式中。作为数值时它不同于组合这个动作；组合是选择方式，组合数是这些方式的个数。组合数的核心是先说清对象是否有序、是否可重复、是否带标号，再决定应该相加、相乘还是建立一一对应。相近模型的结果常只差一个顺序或对称因子，因此写公式前要说明哪些安排被视为同一种。在应用中它常作为更复杂计数的局部步骤，先把小结构数准，再把各部分组合起来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "组合数",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%84%E5%90%88%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "组合数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%84%E5%90%88%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "combination number",
+          "url": "https://en.wikipedia.org/w/index.php?search=combination%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "二项式系数",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "二项式系数是二项式展开中各项前面的系数，同时等于组合数。展开式为 $(1+x)^n=\\sum_{k=0}^n\\binom nk x^k$，其中$\\binom nk$ 是 $x^k$ 项的系数，$k$ 是选出 $x$ 的次数。每一项来自 $n$ 个因子中选择若干个贡献 $x$。\n\n二项式系数连接代数展开和无序选择，常用于概率分布和恒等式证明。它不是任意多项式系数；这里的系数具有明确的组合选择含义。若分类之间有交叉或遗漏，系数就会失真，所以边界项和空选择也要纳入约定。二项式系数通常是在同一批对象上按某个条件分类，公式两边应能解释为数同一个集合的两种方式。这类恒等式不只是代数展开；把每一项对应到具体选择，能看出加减或求和范围为什么正好覆盖全部情形。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "二项式系数",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%8C%E9%A1%B9%E5%BC%8F%E7%B3%BB%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "二项式系数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%8C%E9%A1%B9%E5%BC%8F%E7%B3%BB%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "binomial coefficient",
+          "url": "https://en.wikipedia.org/w/index.php?search=binomial%20coefficient"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "二项式定理",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "二项式定理说明两个量的 $n$ 次幂展开后，各项由选取其中一个量的次数决定。公式为 $(a+b)^n=\\sum_{k=0}^n\\binom nk a^kb^{\\,n-k}$，其中$k$ 是选取 $a$ 的次数，$n-k$ 是选取 $b$ 的次数。系数记录这些选择位置的数量。\n\n二项式定理把代数幂、组合数和生成函数联系起来。它与二项式系数不同；定理给出完整展开，系数只是其中的数列。若分类之间有交叉或遗漏，系数就会失真，所以边界项和空选择也要纳入约定。二项式定理通常是在同一批对象上按某个条件分类，公式两边应能解释为数同一个集合的两种方式。这类恒等式不只是代数展开；把每一项对应到具体选择，能看出加减或求和范围为什么正好覆盖全部情形。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "二项式定理",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "二项式定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "binomial theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=binomial%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "多项式定理",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "多项式定理把二项式定理推广到多个项的和。若 $k_1+\\cdots+k_m=n$，则 $(x_1+\\cdots+x_m)^n=\\sum\\frac{n!}{k_1!\\cdots k_m!}x_1^{k_1}\\cdots x_m^{k_m}$，其中$k_i$ 记录 $x_i$ 被选中的次数。系数等于把 $n$ 个位置分配给 $m$ 类的方式数。\n\n多项式定理常用于多分类分布、生成函数和分配问题。它要求各指数和为 $n$；若忽略这个条件，就会把不属于展开的项也算进去。若分类之间有交叉或遗漏，系数就会失真，所以边界项和空选择也要纳入约定。多项式定理通常是在同一批对象上按某个条件分类，公式两边应能解释为数同一个集合的两种方式。这类恒等式不只是代数展开；把每一项对应到具体选择，能看出加减或求和范围为什么正好覆盖全部情形。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "多项式定理",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%9A%E9%A1%B9%E5%BC%8F%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "多项式定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%9A%E9%A1%B9%E5%BC%8F%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "polynomial theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=polynomial%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "帕斯卡恒等式",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "帕斯卡恒等式描述相邻组合数之间的递推关系。它写作 $\\binom nk=\\binom{n-1}k+\\binom{n-1}{k-1}$，其中$n,k$ 是组合参数，右边两项分别对应不选和选定某个元素。两类情形互斥并覆盖全部 $k$ 元子集。\n\n这个恒等式生成杨辉三角，也给组合数递推计算提供依据。它不是单纯代数巧合，而是在数同一批子集的两种分类结果。帕斯卡恒等式通常是在同一批对象上按某个条件分类，公式两边应能解释为数同一个集合的两种方式。这类恒等式不只是代数展开；把每一项对应到具体选择，能看出加减或求和范围为什么正好覆盖全部情形。若分类之间有交叉或遗漏，系数就会失真，所以边界项和空选择也要纳入约定。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "帕斯卡恒等式",
+          "url": "https://www.baidu.com/s?wd=%E5%B8%95%E6%96%AF%E5%8D%A1%E6%81%92%E7%AD%89%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "帕斯卡恒等式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B8%95%E6%96%AF%E5%8D%A1%E6%81%92%E7%AD%89%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pascal identity",
+          "url": "https://en.wikipedia.org/w/index.php?search=pascal%20identity"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "范德蒙德恒等式",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "范德蒙德恒等式计算从两个部分合成的大集合中选元素的总数。基本式为 $\\binom{r+s}n=\\sum_k\\binom rk\\binom{s}{n-k}$，其中$r,s$ 是两部分大小，$k$ 是从第一部分选的个数。第二部分随之选 $n-k$ 个。\n\n它常用于合并样本、卷积和生成函数乘法。公式两边数的是同一个 $n$ 元子集集合，只是右边按第一部分贡献多少来分类。这类恒等式不只是代数展开；把每一项对应到具体选择，能看出加减或求和范围为什么正好覆盖全部情形。若分类之间有交叉或遗漏，系数就会失真，所以边界项和空选择也要纳入约定。范德蒙德恒等式通常是在同一批对象上按某个条件分类，公式两边应能解释为数同一个集合的两种方式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "范德蒙德恒等式",
+          "url": "https://www.baidu.com/s?wd=%E8%8C%83%E5%BE%B7%E8%92%99%E5%BE%B7%E6%81%92%E7%AD%89%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "范德蒙德恒等式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%8C%83%E5%BE%B7%E8%92%99%E5%BE%B7%E6%81%92%E7%AD%89%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vandermonde identity",
+          "url": "https://en.wikipedia.org/w/index.php?search=vandermonde%20identity"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "容斥原理",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "容斥原理用于计算若干集合并集大小，通过加上单集合、减去重叠部分来修正重复计数。两集合情形为 $|A\\cup B|=|A|+|B|-|A\\cap B|$，其中$A,B$ 是集合，交集项表示被重复数到的对象。多集合版本继续交替加减。\n\n容斥常用于错位排列、整除计数和至少满足一个条件的对象。它与加法原理的差别在于允许类别重叠，并用交集信息补偿重复。这类恒等式不只是代数展开；把每一项对应到具体选择，能看出加减或求和范围为什么正好覆盖全部情形。若分类之间有交叉或遗漏，系数就会失真，所以边界项和空选择也要纳入约定。容斥原理通常是在同一批对象上按某个条件分类，公式两边应能解释为数同一个集合的两种方式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "容斥原理",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%B9%E6%96%A5%E5%8E%9F%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "容斥原理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%B9%E6%96%A5%E5%8E%9F%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inclusion exclusion principle",
+          "url": "https://en.wikipedia.org/w/index.php?search=inclusion%20exclusion%20principle"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "抽屉原理",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "抽屉原理说明把较多对象放入较少盒子时，某个盒子必然装得不止一个。若 $N>mn$，其中$N$ 是对象数，$m$ 是盒子数，$n$ 是每盒允许上限。则至少一个盒子含有 $n+1$ 个对象。\n\n抽屉原理常用于证明存在性，例如同余类、生日问题和图中的度数重复。它不给出具体对象在哪里，只保证在有限分类下必有某类过载。这类恒等式不只是代数展开；把每一项对应到具体选择，能看出加减或求和范围为什么正好覆盖全部情形。若分类之间有交叉或遗漏，系数就会失真，所以边界项和空选择也要纳入约定。抽屉原理通常是在同一批对象上按某个条件分类，公式两边应能解释为数同一个集合的两种方式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "抽屉原理",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%BD%E5%B1%89%E5%8E%9F%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "抽屉原理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%BD%E5%B1%89%E5%8E%9F%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "drawer principle",
+          "url": "https://en.wikipedia.org/w/index.php?search=drawer%20principle"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "鸽巢原理",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "鸽巢原理是抽屉原理的常用别名，强调鸽子数多于巢数时必有同巢。最简单形式为 $N>m\\Rightarrow \\exists\\text{一巢至少有 }2\\text{只}$，其中$N$ 是鸽子数，$m$ 是巢数。这是平均数思想的离散版本。\n\n鸽巢原理适合把问题转成有限类别后证明重复、接近或同余。它与概率估计不同；结论是确定性的，不依赖随机分布。这类恒等式不只是代数展开；把每一项对应到具体选择，能看出加减或求和范围为什么正好覆盖全部情形。若分类之间有交叉或遗漏，系数就会失真，所以边界项和空选择也要纳入约定。鸽巢原理通常是在同一批对象上按某个条件分类，公式两边应能解释为数同一个集合的两种方式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "鸽巢原理",
+          "url": "https://www.baidu.com/s?wd=%E9%B8%BD%E5%B7%A2%E5%8E%9F%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "鸽巢原理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%B8%BD%E5%B7%A2%E5%8E%9F%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pigeonhole principle",
+          "url": "https://en.wikipedia.org/w/index.php?search=pigeonhole%20principle"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "递推关系",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "递推关系用前面若干项表示后续项，是定义和计算数列的一种方式。常见形式为 $a_n=f(a_{n-1},a_{n-2},\\ldots)$，其中$a_n$ 是第 $n$ 项，$f$ 给出递推规则。还需要初始条件才能确定整个数列。\n\n递推关系出现在路径计数、分拆、树和动态规划中。它不同于闭式公式；递推强调相邻规模之间的生成关系。它适合处理递推、分解和卷积，因为乘法会自然记录把对象拆成若干部分再合成的过程。使用时要区分普通型、指数型和具体序列；同一个数列换编码方式，乘法解释会随之改变。递推关系把离散对象压进数列或幂级数，系数才是原来的计数结果，变量本身多半只是记录规模的标记。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "递推关系",
+          "url": "https://www.baidu.com/s?wd=%E9%80%92%E6%8E%A8%E5%85%B3%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "递推关系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%80%92%E6%8E%A8%E5%85%B3%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "recurrence relation",
+          "url": "https://en.wikipedia.org/w/index.php?search=recurrence%20relation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "生成函数",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "生成函数把数列转化为形式幂级数，用代数运算研究计数问题。普通形式写成 $F(x)=\\sum_{n\\ge0}a_nx^n$，其中$a_n$ 是第 $n$ 个计数值，$x$ 是形式变量。系数携带原来的计数信息。\n\n生成函数能把递推、卷积和分拆问题转化为幂级数运算。它通常先作为形式工具使用，不必一开始讨论实数意义下的收敛。它适合处理递推、分解和卷积，因为乘法会自然记录把对象拆成若干部分再合成的过程。使用时要区分普通型、指数型和具体序列；同一个数列换编码方式，乘法解释会随之改变。生成函数把离散对象压进数列或幂级数，系数才是原来的计数结果，变量本身多半只是记录规模的标记。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "生成函数",
+          "url": "https://www.baidu.com/s?wd=%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "生成函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "generating function",
+          "url": "https://en.wikipedia.org/w/index.php?search=generating%20function"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "普通生成函数",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "普通生成函数是用 $x^n$ 直接记录第 $n$ 项的生成函数。写作 $A(x)=\\sum_{n\\ge0}a_nx^n$，其中$a_n$ 是计数序列，$x^n$ 标记规模 $n$。系数提取可写为 $[x^n]A(x)=a_n$。\n\n普通生成函数适合无标号对象、整数分拆和简单递推。它不同于指数生成函数；指数生成函数会把 $a_n$ 除以 $n!$，更适合带标号结构。普通生成函数把离散对象压进数列或幂级数，系数才是原来的计数结果，变量本身多半只是记录规模的标记。它适合处理递推、分解和卷积，因为乘法会自然记录把对象拆成若干部分再合成的过程。使用时要区分普通型、指数型和具体序列；同一个数列换编码方式，乘法解释会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "普通生成函数",
+          "url": "https://www.baidu.com/s?wd=%E6%99%AE%E9%80%9A%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "普通生成函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%99%AE%E9%80%9A%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ordinary generating function",
+          "url": "https://en.wikipedia.org/w/index.php?search=ordinary%20generating%20function"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "指数生成函数",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "指数生成函数是把数列按阶乘归一化后编码的生成函数。定义为 $A(x)=\\sum_{n\\ge0}a_n\\frac{x^n}{n!}$，其中$a_n$ 是规模为 $n$ 的计数，$n!$ 处理标号排列。这种归一化让带标号结构的组合运算更自然。\n\n指数生成函数常用于排列、集合划分、图和带标号树。它不是普通生成函数的简单改名；是否除以 $n!$ 会改变乘法和组合解释。指数生成函数把离散对象压进数列或幂级数，系数才是原来的计数结果，变量本身多半只是记录规模的标记。它适合处理递推、分解和卷积，因为乘法会自然记录把对象拆成若干部分再合成的过程。使用时要区分普通型、指数型和具体序列；同一个数列换编码方式，乘法解释会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "指数生成函数",
+          "url": "https://www.baidu.com/s?wd=%E6%8C%87%E6%95%B0%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "指数生成函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8C%87%E6%95%B0%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "exponent generating function",
+          "url": "https://en.wikipedia.org/w/index.php?search=exponent%20generating%20function"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "母函数",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "母函数是生成函数在中文教材中的常用名称，指用幂级数记录计数序列的方法。可写 $G(x)=\\sum_{n\\ge0}a_nx^n$，其中$G(x)$ 是母函数，$a_n$ 是要研究的系数。“母”强调许多计数值由同一函数统一产生。\n\n母函数常用于递推求解、系数提取和恒等式证明。使用时要先说明是普通母函数、指数母函数还是其他变体。母函数把离散对象压进数列或幂级数，系数才是原来的计数结果，变量本身多半只是记录规模的标记。它适合处理递推、分解和卷积，因为乘法会自然记录把对象拆成若干部分再合成的过程。使用时要区分普通型、指数型和具体序列；同一个数列换编码方式，乘法解释会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "母函数",
+          "url": "https://www.baidu.com/s?wd=%E6%AF%8D%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "母函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AF%8D%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "parent function",
+          "url": "https://en.wikipedia.org/w/index.php?search=parent%20function"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "卡特兰数",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "卡特兰数是一类反复出现的计数序列，数括号匹配、二叉树和不越界路径。标准公式为 $C_n=\\frac1{n+1}\\binom{2n}n$，其中$C_n$ 是第 $n$ 个卡特兰数。它也满足递推 $C_{n+1}=\\sum_{i=0}^n C_iC_{n-i}$。\n\n卡特兰数的关键特征是把一个对象按根或首次分解成左右两部分。它不是所有路径数；常见模型还要求不穿过某条边界或保持合法嵌套。它适合处理递推、分解和卷积，因为乘法会自然记录把对象拆成若干部分再合成的过程。使用时要区分普通型、指数型和具体序列；同一个数列换编码方式，乘法解释会随之改变。卡特兰数把离散对象压进数列或幂级数，系数才是原来的计数结果，变量本身多半只是记录规模的标记。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "卡特兰数",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%A1%E7%89%B9%E5%85%B0%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "卡特兰数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%A1%E7%89%B9%E5%85%B0%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cattleya number",
+          "url": "https://en.wikipedia.org/w/index.php?search=cattleya%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "贝尔数",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "贝尔数表示把 $n$ 个有标号元素划分成若干非空无序块的方式数。可记为 $B_n=\\sum_{k=0}^n {n\\brace k}$，其中${n\\brace k}$ 是第二类斯特林数。$k$ 记录划分出的块数。\n\n贝尔数用于集合划分、等价关系和聚类模型的计数。它与分拆数不同；分拆数分拆整数大小，贝尔数分拆的是带标号元素的集合。贝尔数把离散对象压进数列或幂级数，系数才是原来的计数结果，变量本身多半只是记录规模的标记。它适合处理递推、分解和卷积，因为乘法会自然记录把对象拆成若干部分再合成的过程。使用时要区分普通型、指数型和具体序列；同一个数列换编码方式，乘法解释会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "贝尔数",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%9D%E5%B0%94%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "贝尔数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%9D%E5%B0%94%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bell number",
+          "url": "https://en.wikipedia.org/w/index.php?search=bell%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "斯特林数",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "斯特林数是两类与排列循环和集合划分有关的特殊计数数。常用总称包含 ${n\\brack k}\\quad\\text{和}\\quad {n\\brace k}$，其中方括号型是第一类，花括号型是第二类。二者都以 $n,k$ 作为规模和分块或循环数参数。\n\n斯特林数连接幂、下降阶乘、排列和集合划分。使用时必须说明是哪一类；两类符号相近但计数对象完全不同。它适合处理递推、分解和卷积，因为乘法会自然记录把对象拆成若干部分再合成的过程。使用时要区分普通型、指数型和具体序列；同一个数列换编码方式，乘法解释会随之改变。斯特林数把离散对象压进数列或幂级数，系数才是原来的计数结果，变量本身多半只是记录规模的标记。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "斯特林数",
+          "url": "https://www.baidu.com/s?wd=%E6%96%AF%E7%89%B9%E6%9E%97%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "斯特林数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%96%AF%E7%89%B9%E6%9E%97%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stirling number",
+          "url": "https://en.wikipedia.org/w/index.php?search=stirling%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "第一类斯特林数",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "第一类斯特林数计数把 $n$ 个元素排成恰有 $k$ 个循环的排列。常记为 ${n\\brack k}$，其中$n$ 是元素数，$k$ 是循环数。若带符号版本，还会乘上符号因子。\n\n它出现在排列循环结构和普通幂与下降阶乘的转换中。它不同于第二类斯特林数；后者数的是集合划分，不记录循环顺序。它适合处理递推、分解和卷积，因为乘法会自然记录把对象拆成若干部分再合成的过程。使用时要区分普通型、指数型和具体序列；同一个数列换编码方式，乘法解释会随之改变。第一类斯特林数把离散对象压进数列或幂级数，系数才是原来的计数结果，变量本身多半只是记录规模的标记。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "第一类斯特林数",
+          "url": "https://www.baidu.com/s?wd=%E7%AC%AC%E4%B8%80%E7%B1%BB%E6%96%AF%E7%89%B9%E6%9E%97%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "第一类斯特林数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AC%AC%E4%B8%80%E7%B1%BB%E6%96%AF%E7%89%B9%E6%9E%97%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stirling numbers of the first kind",
+          "url": "https://en.wikipedia.org/w/index.php?search=stirling%20numbers%20of%20the%20first%20kind"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "第二类斯特林数",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "第二类斯特林数计数把 $n$ 个有标号元素划分成 $k$ 个非空无序块的方式。常记为 ${n\\brace k}$，其中$n$ 是元素数，$k$ 是块数。每个块内部无序，块与块之间也无序。\n\n它用于集合划分、贝尔数和满射函数计数。如果块有顺序或允许空块，计数公式就会改变，不能直接使用第二类斯特林数。它适合处理递推、分解和卷积，因为乘法会自然记录把对象拆成若干部分再合成的过程。使用时要区分普通型、指数型和具体序列；同一个数列换编码方式，乘法解释会随之改变。第二类斯特林数把离散对象压进数列或幂级数，系数才是原来的计数结果，变量本身多半只是记录规模的标记。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "第二类斯特林数",
+          "url": "https://www.baidu.com/s?wd=%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%96%AF%E7%89%B9%E6%9E%97%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "第二类斯特林数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%96%AF%E7%89%B9%E6%9E%97%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stirling numbers of the second kind",
+          "url": "https://en.wikipedia.org/w/index.php?search=stirling%20numbers%20of%20the%20second%20kind"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "分拆数",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "分拆数通常指把整数 $n$ 表示成若干正整数之和的方式数。记作 $p(n)=\\#\\{\\lambda:\\ |\\lambda|=n\\}$，其中$p(n)$ 是分拆数，$\\lambda$ 是一个整数分拆。加数顺序不影响同一种分拆。\n\n分拆数连接杨图、生成函数和数论中的级数恒等式。它与集合划分不同；这里被分的是整数大小，不是可区分的元素。分拆数关注对象怎样被拆开或重新排列，顺序、空块和块的标号会直接改变计数模型。这类问题常通过隔板、路径或生成函数表达限制条件，公式中的每个参数都对应一个可见的结构选择。比较相近概念时，最先要问的是被分的是整数大小、集合元素，还是一个有顺序的序列。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分拆数",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E6%8B%86%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分拆数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E6%8B%86%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "number of spin offs",
+          "url": "https://en.wikipedia.org/w/index.php?search=number%20of%20spin%20offs"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "整数分拆",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "整数分拆是把一个正整数写成若干正整数之和，并忽略加数顺序。可写作 $n=\\lambda_1+\\lambda_2+\\cdots+\\lambda_k,\\quad \\lambda_1\\ge\\cdots\\ge\\lambda_k>0$，其中$\\lambda_i$ 是分拆的各部分。按非增顺序书写是为了避免同一分拆重复出现。\n\n整数分拆常用杨图表示，也能用生成函数 $\\prod_{m\\ge1}(1-x^m)^{-1}$ 研究。它不同于有序分拆；有序分拆会把 $2+1$ 和 $1+2$ 看成不同。这类问题常通过隔板、路径或生成函数表达限制条件，公式中的每个参数都对应一个可见的结构选择。比较相近概念时，最先要问的是被分的是整数大小、集合元素，还是一个有顺序的序列。整数分拆关注对象怎样被拆开或重新排列，顺序、空块和块的标号会直接改变计数模型。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "整数分拆",
+          "url": "https://www.baidu.com/s?wd=%E6%95%B4%E6%95%B0%E5%88%86%E6%8B%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "整数分拆",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%95%B4%E6%95%B0%E5%88%86%E6%8B%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "integer split",
+          "url": "https://en.wikipedia.org/w/index.php?search=integer%20split"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "有序分拆",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "有序分拆把整数 $n$ 分成若干正整数之和，并把部分的顺序也作为结构。若分成 $k$ 部，数量为 $\\binom{n-1}{k-1}$，其中$n-1$ 个间隙中选 $k-1$ 个切口。每个切口决定相邻部分的分隔。\n\n有序分拆也叫正整数合成，适合处理排队分组和连续切分。它与整数分拆的差别正在顺序；同样的部分换顺序会变成新的有序分拆。这类问题常通过隔板、路径或生成函数表达限制条件，公式中的每个参数都对应一个可见的结构选择。比较相近概念时，最先要问的是被分的是整数大小、集合元素，还是一个有顺序的序列。有序分拆关注对象怎样被拆开或重新排列，顺序、空块和块的标号会直接改变计数模型。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "有序分拆",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%89%E5%BA%8F%E5%88%86%E6%8B%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "有序分拆",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%89%E5%BA%8F%E5%88%86%E6%8B%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "orderly spin off",
+          "url": "https://en.wikipedia.org/w/index.php?search=orderly%20spin%20off"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "集合划分",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "集合划分是把一个集合拆成若干非空、两两不交且并回原集合的块。形式上 $X=B_1\\sqcup\\cdots\\sqcup B_k$，其中$B_i$ 是块，$\\sqcup$ 表示不交并。块的顺序通常不重要。\n\n集合划分对应等价关系，也由第二类斯特林数和贝尔数计数。它不同于子集选择；划分要求每个元素恰好属于一个块，不能遗漏或重复。这类问题常通过隔板、路径或生成函数表达限制条件，公式中的每个参数都对应一个可见的结构选择。比较相近概念时，最先要问的是被分的是整数大小、集合元素，还是一个有顺序的序列。集合划分关注对象怎样被拆开或重新排列，顺序、空块和块的标号会直接改变计数模型。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "集合划分",
+          "url": "https://www.baidu.com/s?wd=%E9%9B%86%E5%90%88%E5%88%92%E5%88%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "集合划分",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9B%86%E5%90%88%E5%88%92%E5%88%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "set partitioning",
+          "url": "https://en.wikipedia.org/w/index.php?search=set%20partitioning"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "弱组合",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "弱组合是把非负整数分配到若干有序盒子中的方式，允许某些盒子为空。若 $x_1+\\cdots+x_k=n,\\quad x_i\\ge0$，其中$x_i$ 是第 $i$ 个盒子的数量。解的个数为 $\\binom{n+k-1}{k-1}$。\n\n弱组合常用隔板法处理可重复选择和非负整数解。它与强组合的差别在是否允许 $0$；允许空盒会多出许多边界情形。弱组合关注对象怎样被拆开或重新排列，顺序、空块和块的标号会直接改变计数模型。这类问题常通过隔板、路径或生成函数表达限制条件，公式中的每个参数都对应一个可见的结构选择。比较相近概念时，最先要问的是被分的是整数大小、集合元素，还是一个有顺序的序列。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弱组合",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B1%E7%BB%84%E5%90%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弱组合",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B1%E7%BB%84%E5%90%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weak combination",
+          "url": "https://en.wikipedia.org/w/index.php?search=weak%20combination"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "强组合",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "强组合是把正整数分配到若干有序盒子中，每个盒子至少得到一个。若 $x_1+\\cdots+x_k=n,\\quad x_i>0$，其中$x_i$ 是第 $i$ 部分大小。解的个数为 $\\binom{n-1}{k-1}$。\n\n强组合适合分配必须非空的任务、座位段和正整数合成。它不是普通组合数的同义词；这里的“组合”强调有序的正整数分配。强组合关注对象怎样被拆开或重新排列，顺序、空块和块的标号会直接改变计数模型。这类问题常通过隔板、路径或生成函数表达限制条件，公式中的每个参数都对应一个可见的结构选择。比较相近概念时，最先要问的是被分的是整数大小、集合元素，还是一个有顺序的序列。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "强组合",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%BA%E7%BB%84%E5%90%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "强组合",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%BA%E7%BB%84%E5%90%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "strong combination",
+          "url": "https://en.wikipedia.org/w/index.php?search=strong%20combination"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "组合恒等式",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "组合恒等式是关于组合数或计数序列的等式，常通过数同一对象两次来证明。典型例子为 $\\sum_{k=0}^n\\binom nk=2^n$，其中左边按子集大小分类，右边直接数所有子集。两边对应同一个全集。\n\n组合恒等式常见证明方法包括分类、双射、生成函数和递推。它不只是代数化简；给出计数解释能说明等式为什么自然成立。在应用中它常作为更复杂计数的局部步骤，先把小结构数准，再把各部分组合起来。组合恒等式的核心是先说清对象是否有序、是否可重复、是否带标号，再决定应该相加、相乘还是建立一一对应。相近模型的结果常只差一个顺序或对称因子，因此写公式前要说明哪些安排被视为同一种。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "组合恒等式",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%84%E5%90%88%E6%81%92%E7%AD%89%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "组合恒等式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%84%E5%90%88%E6%81%92%E7%AD%89%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "combination identity",
+          "url": "https://en.wikipedia.org/w/index.php?search=combination%20identity"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "双射证明",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "双射证明通过建立两个集合之间的一一对应来证明它们大小相等。核心条件是 $f:A\\to B\\text{ 为双射}\\Rightarrow |A|=|B|$，其中$A,B$ 是两个对象集合，$f$ 是对应规则。双射要求既不遗漏也不重复。\n\n双射证明常把难数的对象转化成熟悉对象，如路径与括号串互相对应。它不同于只构造单向映射；必须能说明每个目标对象也唯一来自某个源对象。相近模型的结果常只差一个顺序或对称因子，因此写公式前要说明哪些安排被视为同一种。在应用中它常作为更复杂计数的局部步骤，先把小结构数准，再把各部分组合起来。双射证明的核心是先说清对象是否有序、是否可重复、是否带标号，再决定应该相加、相乘还是建立一一对应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "双射证明",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8C%E5%B0%84%E8%AF%81%E6%98%8E%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "双射证明",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8C%E5%B0%84%E8%AF%81%E6%98%8E"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bijective proof",
+          "url": "https://en.wikipedia.org/w/index.php?search=bijective%20proof"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "反射原理",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "反射原理用路径越界后的镜像路径建立双射，从而计算受边界限制的路径数。常见结果为 $\\binom{m+n}{m}-\\binom{m+n}{m+1}$，其中第一项数全部路径，第二项数首次越界后反射得到的坏路径。两者相减得到合法路径数。\n\n反射原理用于卡特兰数、随机游走和投票问题。它依赖清楚的边界和首次越界点；没有可反射结构时不能硬套。这类问题常通过隔板、路径或生成函数表达限制条件，公式中的每个参数都对应一个可见的结构选择。比较相近概念时，最先要问的是被分的是整数大小、集合元素，还是一个有顺序的序列。反射原理关注对象怎样被拆开或重新排列，顺序、空块和块的标号会直接改变计数模型。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反射原理",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E5%B0%84%E5%8E%9F%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反射原理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E5%B0%84%E5%8E%9F%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "reflection principle",
+          "url": "https://en.wikipedia.org/w/index.php?search=reflection%20principle"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "循环引理",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "循环引理研究循环序列在不同起点下满足部分和正性条件的数量。典型结论可写 $\\#\\{\\text{好循环移位}\\}=r$，其中$r$ 常表示总和或正负步数差。在所有循环移位中，满足条件的起点数由整体差额决定。\n\n循环引理常用于证明卡特兰型计数、树和合法括号序列。它关注的是循环移位类，不是普通线性序列；起点选择是概念核心。这类问题常通过隔板、路径或生成函数表达限制条件，公式中的每个参数都对应一个可见的结构选择。比较相近概念时，最先要问的是被分的是整数大小、集合元素，还是一个有顺序的序列。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "循环引理",
+          "url": "https://www.baidu.com/s?wd=%E5%BE%AA%E7%8E%AF%E5%BC%95%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "循环引理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BE%AA%E7%8E%AF%E5%BC%95%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "circular lemma",
+          "url": "https://en.wikipedia.org/w/index.php?search=circular%20lemma"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "伯恩赛德引理",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "伯恩赛德引理用群作用下固定点数量的平均值计算轨道数。公式为 $|\\Omega/G|=\\frac1{|G|}\\sum_{g\\in G}|\\operatorname{Fix}(g)|$，其中$\\Omega$ 是对象集合，$G$ 是对称群，$\\operatorname{Fix}(g)$ 是被 $g$ 固定的对象。平均后得到不同等价类数。\n\n它常用于项链、染色和带对称图形计数。它不是简单除以对称数；有些对象有额外对称性，必须通过固定点平均处理。它常用于项链、染色和图形安排；若等价关系换了，轨道大小和最终计数都会改变。在具体问题中要写出群元素怎样移动对象，否则无法判断哪些对象固定、哪些对象属于同一类。伯恩赛德引理用对称性减少重复计数，关键是先确定哪个群在作用，以及哪些对象在这个作用下算等价。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "伯恩赛德引理",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%AF%E6%81%A9%E8%B5%9B%E5%BE%B7%E5%BC%95%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "伯恩赛德引理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%AF%E6%81%A9%E8%B5%9B%E5%BE%B7%E5%BC%95%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "burnside lemma",
+          "url": "https://en.wikipedia.org/w/index.php?search=burnside%20lemma"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "波利亚计数定理",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "波利亚计数定理是在伯恩赛德引理基础上处理带颜色结构的计数定理。常用循环指标写作 $Z_G(c_1,c_2,\\ldots)=\\frac1{|G|}\\sum_{g\\in G}\\prod_i c_i^{m_i(g)}$，其中$m_i(g)$ 是置换 $g$ 中长度为 $i$ 的循环个数。代入颜色数即可得到等价染色数。\n\n波利亚定理适合项链、图案和分子模型中的对称染色。它比伯恩赛德更系统，因为循环结构会影响颜色能否独立选择。在具体问题中要写出群元素怎样移动对象，否则无法判断哪些对象固定、哪些对象属于同一类。波利亚计数定理用对称性减少重复计数，关键是先确定哪个群在作用，以及哪些对象在这个作用下算等价。轨道语言把“看起来相同”的安排合并，稳定子则记录某个对象保留下来的对称操作。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "波利亚计数定理",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A2%E5%88%A9%E4%BA%9A%E8%AE%A1%E6%95%B0%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "波利亚计数定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A2%E5%88%A9%E4%BA%9A%E8%AE%A1%E6%95%B0%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "polya counting theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=polya%20counting%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "群作用",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "群作用是群元素以保持结构的方式变换集合中对象。形式上写为 $g\\cdot x\\in X$，其中$g\\in G$ 是群元素，$x\\in X$ 是对象。并满足单位元不动、乘法与连续作用相容。\n\n群作用为轨道、稳定子和对称计数提供统一语言。它不是任意函数集合；群运算必须和对象变换规则一致。在具体问题中要写出群元素怎样移动对象，否则无法判断哪些对象固定、哪些对象属于同一类。群作用用对称性减少重复计数，关键是先确定哪个群在作用，以及哪些对象在这个作用下算等价。轨道语言把“看起来相同”的安排合并，稳定子则记录某个对象保留下来的对称操作。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "群作用",
+          "url": "https://www.baidu.com/s?wd=%E7%BE%A4%E4%BD%9C%E7%94%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "群作用",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BE%A4%E4%BD%9C%E7%94%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "group action",
+          "url": "https://en.wikipedia.org/w/index.php?search=group%20action"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "轨道",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "轨道是在群作用下一个对象能变成的所有对象集合。定义为 $Gx=\\{g\\cdot x:\\ g\\in G\\}$，其中$G$ 是群，$x$ 是对象。同一轨道中的对象被视为同一种对称类型。\n\n轨道用于把带对称的计数问题化为等价类计数。它不同于对象全集；全集通常分解为多个互不相交的轨道。它常用于项链、染色和图形安排；若等价关系换了，轨道大小和最终计数都会改变。在具体问题中要写出群元素怎样移动对象，否则无法判断哪些对象固定、哪些对象属于同一类。轨道用对称性减少重复计数，关键是先确定哪个群在作用，以及哪些对象在这个作用下算等价。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "轨道",
+          "url": "https://www.baidu.com/s?wd=%E8%BD%A8%E9%81%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "轨道",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BD%A8%E9%81%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "track",
+          "url": "https://en.wikipedia.org/w/index.php?search=track"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "稳定子",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "稳定子是群中保持某个对象不变的所有元素组成的子群。定义为 $G_x=\\{g\\in G:\\ g\\cdot x=x\\}$，其中$G_x$ 是 $x$ 的稳定子。它记录对象自身具有多少对称。\n\n稳定子与轨道大小满足轨道-稳定子关系 $|Gx|=|G|/|G_x|$。稳定子越大，轨道越小；这正是不能简单除以群大小的原因。在具体问题中要写出群元素怎样移动对象，否则无法判断哪些对象固定、哪些对象属于同一类。稳定子用对称性减少重复计数，关键是先确定哪个群在作用，以及哪些对象在这个作用下算等价。轨道语言把“看起来相同”的安排合并，稳定子则记录某个对象保留下来的对称操作。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳定子",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E5%AE%9A%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳定子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E5%AE%9A%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stable particle",
+          "url": "https://en.wikipedia.org/w/index.php?search=stable%20particle"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "图",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "图是由顶点和边组成的离散结构，用来表示对象及其二元关系。常写为 $G=(V,E)$，其中$V$ 是顶点集，$E$ 是边集。边通常连接两个顶点，也可按需要允许方向或权重。\n\n图用于网络、匹配、染色、路径和树的研究。它不是几何图形的绘画方式；顶点怎样摆放不改变抽象图的邻接关系。图论概念之间差别很细，连通、成环、可染色或存在匹配是不同性质，不能只凭图形外观判断。矩阵表示能把图的关系放进线性代数中，但计算结果仍要解释回顶点、边和路径等离散对象。在具体模型中还要说明是否允许重边、自环和方向，因为这些约定会改变路径、度数和覆盖的含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "图",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%BE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "图",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%BE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "graph",
+          "url": "https://en.wikipedia.org/w/index.php?search=graph"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "边",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "边是图中连接顶点的基本关系。无向图中一条边可写作 $e=\\{u,v\\}$，其中$u,v$ 是端点，$e$ 是边。若允许方向，则常写成有序对 $(u,v)$。\n\n边决定图的邻接、路径和度数，是图论计数的基本对象。边不同于线段长度；抽象图的边只表示关系，通常不带几何长度。图论概念之间差别很细，连通、成环、可染色或存在匹配是不同性质，不能只凭图形外观判断。矩阵表示能把图的关系放进线性代数中，但计算结果仍要解释回顶点、边和路径等离散对象。在具体模型中还要说明是否允许重边、自环和方向，因为这些约定会改变路径、度数和覆盖的含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "边",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "边",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "edge",
+          "url": "https://en.wikipedia.org/w/index.php?search=edge"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "度数",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "度数是图中一个顶点关联的边数。对顶点 $v$，记为 $\\deg(v)=|\\{e\\in E:\\ v\\in e\\}|$，其中$E$ 是边集，$\\deg(v)$ 是度数。自环和多重边若允许，需要按约定计数。\n\n度数用于判断连通性、欧拉图、图染色和极值图结构。它不是顶点的编号或坐标，而是顶点在关系网络中的连接数量。矩阵表示能把图的关系放进线性代数中，但计算结果仍要解释回顶点、边和路径等离散对象。在具体模型中还要说明是否允许重边、自环和方向，因为这些约定会改变路径、度数和覆盖的含义。度数把对象之间的相邻、连接或约束关系抽象成顶点和边，公式里的数量应对应具体的点边结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "度数",
+          "url": "https://www.baidu.com/s?wd=%E5%BA%A6%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "度数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BA%A6%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "degree",
+          "url": "https://en.wikipedia.org/w/index.php?search=degree"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "握手定理",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "握手定理说明无向图所有顶点度数之和等于边数的两倍。公式为 $\\sum_{v\\in V}\\deg(v)=2|E|$，其中$V$ 是顶点集，$E$ 是边集。每条边在两个端点处各贡献一次度数。\n\n握手定理常用于证明奇度顶点个数为偶数，也用于检查图论计数是否一致。它依赖普通无向边的计数约定；有向图要分别讨论入度和出度。握手定理把对象之间的相邻、连接或约束关系抽象成顶点和边，公式里的数量应对应具体的点边结构。图论概念之间差别很细，连通、成环、可染色或存在匹配是不同性质，不能只凭图形外观判断。矩阵表示能把图的关系放进线性代数中，但计算结果仍要解释回顶点、边和路径等离散对象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "握手定理",
+          "url": "https://www.baidu.com/s?wd=%E6%8F%A1%E6%89%8B%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "握手定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8F%A1%E6%89%8B%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "handshake theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=handshake%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "路径",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "路径是在图中按边连续走过的一串顶点。可写为 $v_0v_1\\cdots v_k,\\quad v_{i-1}v_i\\in E$，其中$v_i$ 是顶点，$E$ 是边集。长度通常指经过的边数 $k$。\n\n路径刻画可达性、最短路和连通性。它不同于回路；路径不一定回到起点，是否允许重复顶点也要看具体定义。矩阵表示能把图的关系放进线性代数中，但计算结果仍要解释回顶点、边和路径等离散对象。在具体模型中还要说明是否允许重边、自环和方向，因为这些约定会改变路径、度数和覆盖的含义。路径把对象之间的相邻、连接或约束关系抽象成顶点和边，公式里的数量应对应具体的点边结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "路径",
+          "url": "https://www.baidu.com/s?wd=%E8%B7%AF%E5%BE%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "路径",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B7%AF%E5%BE%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "path",
+          "url": "https://en.wikipedia.org/w/index.php?search=path"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "回路",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "回路是起点和终点相同的闭合走法。可记为 $v_0v_1\\cdots v_kv_0$，其中相邻顶点之间都有边相连。若中间顶点不重复，常称为圈或简单回路。\n\n回路用于研究欧拉图、哈密顿图和图的环结构。它不同于普通路径；闭合条件是回路的核心，不能只看是否经过很多边。矩阵表示能把图的关系放进线性代数中，但计算结果仍要解释回顶点、边和路径等离散对象。在具体模型中还要说明是否允许重边、自环和方向，因为这些约定会改变路径、度数和覆盖的含义。回路把对象之间的相邻、连接或约束关系抽象成顶点和边，公式里的数量应对应具体的点边结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "回路",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%9E%E8%B7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "回路",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%9E%E8%B7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "loop",
+          "url": "https://en.wikipedia.org/w/index.php?search=loop"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "连通图",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "连通图是任意两个顶点之间都存在路径的无向图。定义可写成 $\\forall u,v\\in V,\\ \\exists\\text{路径 }u\\leadsto v$，其中$V$ 是顶点集，符号 $\\leadsto$ 表示可达。所有顶点处在同一个连通分量中。\n\n连通图是研究生成树、最短路和网络可靠性的基础。它不要求每两个顶点直接相连；只要能通过若干边间接到达即可。在具体模型中还要说明是否允许重边、自环和方向，因为这些约定会改变路径、度数和覆盖的含义。连通图把对象之间的相邻、连接或约束关系抽象成顶点和边，公式里的数量应对应具体的点边结构。图论概念之间差别很细，连通、成环、可染色或存在匹配是不同性质，不能只凭图形外观判断。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "连通图",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%9E%E9%80%9A%E5%9B%BE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "连通图",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%9E%E9%80%9A%E5%9B%BE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "connected graph",
+          "url": "https://en.wikipedia.org/w/index.php?search=connected%20graph"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "完全图",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "完全图是任意两个不同顶点之间都有一条边的简单图。含 $n$ 个顶点时记为 $K_n,\\quad |E|=\\binom n2$，其中$K_n$ 是完全图，$|E|$ 是边数。每对顶点都贡献一条边。\n\n完全图常作为图论中的最大连接模型，也出现在拉姆齐理论和极值图论中。它不同于连通图；连通只要求能到达，完全图要求两两直接相邻。在具体模型中还要说明是否允许重边、自环和方向，因为这些约定会改变路径、度数和覆盖的含义。完全图把对象之间的相邻、连接或约束关系抽象成顶点和边，公式里的数量应对应具体的点边结构。图论概念之间差别很细，连通、成环、可染色或存在匹配是不同性质，不能只凭图形外观判断。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "完全图",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%8C%E5%85%A8%E5%9B%BE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "完全图",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%8C%E5%85%A8%E5%9B%BE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "complete graph",
+          "url": "https://en.wikipedia.org/w/index.php?search=complete%20graph"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "二分图",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "二分图是顶点可分成两部分且每条边都跨越两部分的图。可写 $V=X\\sqcup Y,\\quad E\\subseteq X\\times Y$，其中$X,Y$ 是两侧顶点集。同侧顶点之间没有边。\n\n二分图用于匹配、网络流和奇偶环判定。它不是简单地把顶点分成两堆；必须保证所有边都连接不同部分。在具体模型中还要说明是否允许重边、自环和方向，因为这些约定会改变路径、度数和覆盖的含义。二分图把对象之间的相邻、连接或约束关系抽象成顶点和边，公式里的数量应对应具体的点边结构。图论概念之间差别很细，连通、成环、可染色或存在匹配是不同性质，不能只凭图形外观判断。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "二分图",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%8C%E5%88%86%E5%9B%BE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "二分图",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%8C%E5%88%86%E5%9B%BE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bipartite graph",
+          "url": "https://en.wikipedia.org/w/index.php?search=bipartite%20graph"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "平面图",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "平面图是能画在平面上且边只在端点相交的图。一个重要关系是 $v-e+f=2$，其中$v,e,f$ 分别是连通平面图的顶点数、边数和面数。这就是欧拉公式。\n\n平面图用于地图染色、网络布线和拓扑图论。它描述的是存在某种无交叉画法，而不是某一张给定图画是否已经无交叉。在具体模型中还要说明是否允许重边、自环和方向，因为这些约定会改变路径、度数和覆盖的含义。平面图把对象之间的相邻、连接或约束关系抽象成顶点和边，公式里的数量应对应具体的点边结构。图论概念之间差别很细，连通、成环、可染色或存在匹配是不同性质，不能只凭图形外观判断。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平面图",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E9%9D%A2%E5%9B%BE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平面图",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E9%9D%A2%E5%9B%BE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "plane graph",
+          "url": "https://en.wikipedia.org/w/index.php?search=plane%20graph"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "树",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "树是连通且不含回路的无向图。对含 $n$ 个顶点的树，有 $|E|=n-1$，其中$E$ 是边集，$n$ 是顶点数。连通性和无环性共同决定这种最简结构。\n\n树用于层级结构、生成树、递归和最小连接模型。它不是任意分叉图；一旦出现回路，或者图不连通，就不再是树。图论概念之间差别很细，连通、成环、可染色或存在匹配是不同性质，不能只凭图形外观判断。矩阵表示能把图的关系放进线性代数中，但计算结果仍要解释回顶点、边和路径等离散对象。在具体模型中还要说明是否允许重边、自环和方向，因为这些约定会改变路径、度数和覆盖的含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "树",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%91%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "树",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%91"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tree",
+          "url": "https://en.wikipedia.org/w/index.php?search=tree"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "生成树",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "生成树是连通图中包含所有顶点且本身是一棵树的子图。若原图顶点数为 $n$，生成树满足 $|E_T|=n-1$，其中$E_T$ 是生成树边集。它保留全部顶点并删去多余边。\n\n生成树用于网络骨架、最小生成树和矩阵树定理。它不同于任意子树；生成树必须覆盖原图所有顶点。在具体模型中还要说明是否允许重边、自环和方向，因为这些约定会改变路径、度数和覆盖的含义。生成树把对象之间的相邻、连接或约束关系抽象成顶点和边，公式里的数量应对应具体的点边结构。图论概念之间差别很细，连通、成环、可染色或存在匹配是不同性质，不能只凭图形外观判断。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "生成树",
+          "url": "https://www.baidu.com/s?wd=%E7%94%9F%E6%88%90%E6%A0%91%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "生成树",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%9F%E6%88%90%E6%A0%91"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "spanning tree",
+          "url": "https://en.wikipedia.org/w/index.php?search=spanning%20tree"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "根树",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "根树是在树中指定一个特殊顶点作为根后得到的结构。常写为 $(T,r)$，其中$T$ 是树，$r$ 是根顶点。根给每条边带来父子方向和层级关系。\n\n根树适合表示递归、语法结构和搜索过程。它与普通树的边集可相同，但多了根的选择；换根后父子关系会改变。矩阵表示能把图的关系放进线性代数中，但计算结果仍要解释回顶点、边和路径等离散对象。在具体模型中还要说明是否允许重边、自环和方向，因为这些约定会改变路径、度数和覆盖的含义。根树把对象之间的相邻、连接或约束关系抽象成顶点和边，公式里的数量应对应具体的点边结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "根树",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%B9%E6%A0%91%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "根树",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%B9%E6%A0%91"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "root tree",
+          "url": "https://en.wikipedia.org/w/index.php?search=root%20tree"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "有向图",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "有向图是边带方向的图，边从一个顶点指向另一个顶点。常写为 $G=(V,A)$，其中$V$ 是顶点集，$A$ 是有向边或弧的集合。一条弧可记为 $(u,v)$，表示从 $u$ 到 $v$。\n\n有向图用于依赖关系、状态转移和单向网络。它不同于无向图；可达性、入度、出度和回路都要考虑方向。在具体模型中还要说明是否允许重边、自环和方向，因为这些约定会改变路径、度数和覆盖的含义。有向图把对象之间的相邻、连接或约束关系抽象成顶点和边，公式里的数量应对应具体的点边结构。图论概念之间差别很细，连通、成环、可染色或存在匹配是不同性质，不能只凭图形外观判断。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "有向图",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%89%E5%90%91%E5%9B%BE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "有向图",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%89%E5%90%91%E5%9B%BE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "directed graph",
+          "url": "https://en.wikipedia.org/w/index.php?search=directed%20graph"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "欧拉图",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "欧拉图是含有经过每条边恰好一次的闭合欧拉回路的图。连通无向图满足 $\\deg(v)\\text{ 全为偶数}$，其中$\\deg(v)$ 是顶点度数。这个条件保证进出每个顶点的边能配对。\n\n欧拉图研究的是边的遍历，常见于一笔画问题。它不同于哈密顿图；哈密顿关注顶点是否恰好经过一次。在具体模型中还要说明是否允许重边、自环和方向，因为这些约定会改变路径、度数和覆盖的含义。欧拉图把对象之间的相邻、连接或约束关系抽象成顶点和边，公式里的数量应对应具体的点边结构。图论概念之间差别很细，连通、成环、可染色或存在匹配是不同性质，不能只凭图形外观判断。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "欧拉图",
+          "url": "https://www.baidu.com/s?wd=%E6%AC%A7%E6%8B%89%E5%9B%BE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "欧拉图",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AC%A7%E6%8B%89%E5%9B%BE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "euler diagram",
+          "url": "https://en.wikipedia.org/w/index.php?search=euler%20diagram"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "哈密顿图",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "哈密顿图是含有经过每个顶点恰好一次并回到起点的哈密顿回路的图。可记为 $v_1v_2\\cdots v_nv_1$，其中$v_i$ 枚举图中所有顶点。相邻顶点之间都必须有边。\n\n哈密顿图出现在旅行商问题、排列路径和复杂性理论中。它和欧拉图的对象不同；欧拉看边，哈密顿看顶点，因此判定条件也更难。哈密顿图把对象之间的相邻、连接或约束关系抽象成顶点和边，公式里的数量应对应具体的点边结构。图论概念之间差别很细，连通、成环、可染色或存在匹配是不同性质，不能只凭图形外观判断。矩阵表示能把图的关系放进线性代数中，但计算结果仍要解释回顶点、边和路径等离散对象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "哈密顿图",
+          "url": "https://www.baidu.com/s?wd=%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "哈密顿图",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hamilton graph",
+          "url": "https://en.wikipedia.org/w/index.php?search=hamilton%20graph"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "匹配",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "匹配是图中两两不共享端点的边集。若 $M$ 是匹配，则 $e_1\\cap e_2=\\varnothing\\quad(e_1\\ne e_2,\\ e_i\\in M)$，其中$e_i$ 是匹配中的边。每个顶点最多被一条匹配边覆盖。\n\n匹配用于配对问题、婚配定理和网络分配。它不是任意边集；只要两条边共用顶点，就破坏匹配条件。矩阵表示能把图的关系放进线性代数中，但计算结果仍要解释回顶点、边和路径等离散对象。在具体模型中还要说明是否允许重边、自环和方向，因为这些约定会改变路径、度数和覆盖的含义。匹配把对象之间的相邻、连接或约束关系抽象成顶点和边，公式里的数量应对应具体的点边结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "匹配",
+          "url": "https://www.baidu.com/s?wd=%E5%8C%B9%E9%85%8D%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "匹配",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8C%B9%E9%85%8D"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "matching",
+          "url": "https://en.wikipedia.org/w/index.php?search=matching"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "完美匹配",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "完美匹配是覆盖图中所有顶点的匹配。若 $M$ 为完美匹配，则 $2|M|=|V|$，其中$M$ 是匹配边集，$V$ 是顶点集。每条匹配边覆盖两个顶点，且没有顶点落单。\n\n完美匹配描述完全配对，常用于二分图、因子分解和组合优化。它比最大匹配更强；最大匹配只要求边数最多，不一定覆盖所有顶点。完美匹配把对象之间的相邻、连接或约束关系抽象成顶点和边，公式里的数量应对应具体的点边结构。图论概念之间差别很细，连通、成环、可染色或存在匹配是不同性质，不能只凭图形外观判断。矩阵表示能把图的关系放进线性代数中，但计算结果仍要解释回顶点、边和路径等离散对象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "完美匹配",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%8C%E7%BE%8E%E5%8C%B9%E9%85%8D%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "完美匹配",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%8C%E7%BE%8E%E5%8C%B9%E9%85%8D"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "perfect match",
+          "url": "https://en.wikipedia.org/w/index.php?search=perfect%20match"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "覆盖",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "覆盖在图论中常指用顶点或边触及指定对象。顶点覆盖的条件可写为 $\\forall uv\\in E,\\ u\\in C\\ \\text{或}\\ v\\in C$，其中$C$ 是顶点覆盖，$E$ 是边集。每条边至少有一个端点被选中。\n\n覆盖概念用于优化、匹配对偶和独立集关系。它不同于完全子图；覆盖强调拦住所有边，而不是选出的顶点两两相邻。矩阵表示能把图的关系放进线性代数中，但计算结果仍要解释回顶点、边和路径等离散对象。在具体模型中还要说明是否允许重边、自环和方向，因为这些约定会改变路径、度数和覆盖的含义。覆盖把对象之间的相邻、连接或约束关系抽象成顶点和边，公式里的数量应对应具体的点边结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "覆盖",
+          "url": "https://www.baidu.com/s?wd=%E8%A6%86%E7%9B%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "覆盖",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A6%86%E7%9B%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cover",
+          "url": "https://en.wikipedia.org/w/index.php?search=cover"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "独立集",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "独立集是图中任意两个顶点之间都没有边相连的顶点集合。条件为 $\\forall u,v\\in S,\\ uv\\notin E$，其中$S$ 是独立集，$E$ 是边集。独立集内部没有相邻冲突。\n\n独立集用于资源冲突、编码和图染色下界。它与团正好相反；团要求两两相邻，独立集要求两两不相邻。在具体模型中还要说明是否允许重边、自环和方向，因为这些约定会改变路径、度数和覆盖的含义。独立集把对象之间的相邻、连接或约束关系抽象成顶点和边，公式里的数量应对应具体的点边结构。图论概念之间差别很细，连通、成环、可染色或存在匹配是不同性质，不能只凭图形外观判断。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "独立集",
+          "url": "https://www.baidu.com/s?wd=%E7%8B%AC%E7%AB%8B%E9%9B%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "独立集",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%8B%AC%E7%AB%8B%E9%9B%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "independent set",
+          "url": "https://en.wikipedia.org/w/index.php?search=independent%20set"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "团",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "团是图中任意两个不同顶点都相邻的顶点集合。若 $S$ 是团，则 $G[S]\\cong K_{|S|}$，其中$G[S]$ 是由 $S$ 诱导的子图，$K_{|S|}$ 是完全图。团表示局部完全连接。\n\n团用于社群结构、拉姆齐理论和最大团问题。它不同于连通子图；连通只需路径相通，团要求每一对顶点直接有边。图论概念之间差别很细，连通、成环、可染色或存在匹配是不同性质，不能只凭图形外观判断。矩阵表示能把图的关系放进线性代数中，但计算结果仍要解释回顶点、边和路径等离散对象。在具体模型中还要说明是否允许重边、自环和方向，因为这些约定会改变路径、度数和覆盖的含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "团",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "团",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "group",
+          "url": "https://en.wikipedia.org/w/index.php?search=group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "染色",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "染色是给图的顶点、边或面分配颜色并满足相邻限制。顶点染色常要求 $uv\\in E\\Rightarrow c(u)\\ne c(v)$，其中$c(u)$ 是顶点 $u$ 的颜色，$E$ 是边集。相邻顶点不能同色。\n\n染色用于排课、频率分配和地图着色模型。它不是随意涂色；约束条件决定了哪些颜色分配是合法的。矩阵表示能把图的关系放进线性代数中，但计算结果仍要解释回顶点、边和路径等离散对象。在具体模型中还要说明是否允许重边、自环和方向，因为这些约定会改变路径、度数和覆盖的含义。染色把对象之间的相邻、连接或约束关系抽象成顶点和边，公式里的数量应对应具体的点边结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "染色",
+          "url": "https://www.baidu.com/s?wd=%E6%9F%93%E8%89%B2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "染色",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9F%93%E8%89%B2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "coloring",
+          "url": "https://en.wikipedia.org/w/index.php?search=coloring"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "色数",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "色数是使图存在合法顶点染色所需的最少颜色数。记作 $\\chi(G)=\\min\\{k:\\ G\\text{ 可 }k\\text{ 色染色}\\}$，其中$\\chi(G)$ 是图 $G$ 的色数。$k$ 表示允许颜色数。\n\n色数衡量图中相邻冲突的复杂程度，也用于平面图和完备图分析。它不同于已经使用的颜色数；只有达到最小值时才是色数。矩阵表示能把图的关系放进线性代数中，但计算结果仍要解释回顶点、边和路径等离散对象。在具体模型中还要说明是否允许重边、自环和方向，因为这些约定会改变路径、度数和覆盖的含义。色数把对象之间的相邻、连接或约束关系抽象成顶点和边，公式里的数量应对应具体的点边结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "色数",
+          "url": "https://www.baidu.com/s?wd=%E8%89%B2%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "色数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%89%B2%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "color number",
+          "url": "https://en.wikipedia.org/w/index.php?search=color%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "四色定理",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "四色定理说明任意平面地图都能用四种颜色着色，使相邻区域颜色不同。图论表述为 $\\chi(G)\\le4$，其中$G$ 是平面图，$\\chi(G)$ 是色数。这里相邻区域对应图中的相邻顶点。\n\n四色定理是平面图染色的核心结果，常作为地图着色的数学表述。它只适用于平面图或等价的平面地图，不说明一般图也四可染。四色定理把对象之间的相邻、连接或约束关系抽象成顶点和边，公式里的数量应对应具体的点边结构。图论概念之间差别很细，连通、成环、可染色或存在匹配是不同性质，不能只凭图形外观判断。矩阵表示能把图的关系放进线性代数中，但计算结果仍要解释回顶点、边和路径等离散对象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "四色定理",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%9B%E8%89%B2%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "四色定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%9B%E8%89%B2%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "four color theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=four%20color%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "图同构",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "图同构表示两个图在重命名顶点后具有完全相同的邻接关系。若存在双射 $\\phi$ 使 $uv\\in E(G)\\Longleftrightarrow \\phi(u)\\phi(v)\\in E(H)$，其中$G,H$ 是图，$\\phi$ 是顶点对应。则两图同构。\n\n图同构关注抽象结构而不是画法、顶点名称或坐标。若度数序列不同一定不同构；但度数序列相同并不足以保证同构。在具体模型中还要说明是否允许重边、自环和方向，因为这些约定会改变路径、度数和覆盖的含义。图同构把对象之间的相邻、连接或约束关系抽象成顶点和边，公式里的数量应对应具体的点边结构。图论概念之间差别很细，连通、成环、可染色或存在匹配是不同性质，不能只凭图形外观判断。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "图同构",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%BE%E5%90%8C%E6%9E%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "图同构",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%BE%E5%90%8C%E6%9E%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "graph isomorphism",
+          "url": "https://en.wikipedia.org/w/index.php?search=graph%20isomorphism"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "邻接矩阵",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "邻接矩阵用矩阵记录图中顶点之间是否相邻。简单图的邻接矩阵满足 $A_{ij}=1\\iff v_iv_j\\in E$，其中$A_{ij}$ 是矩阵元素，$v_i,v_j$ 是顶点。无边时通常记为 $0$。\n\n邻接矩阵把图问题转成线性代数，可用于路径计数和谱图理论。它不同于关联矩阵；邻接矩阵看顶点对，关联矩阵看顶点与边的关系。邻接矩阵把对象之间的相邻、连接或约束关系抽象成顶点和边，公式里的数量应对应具体的点边结构。图论概念之间差别很细，连通、成环、可染色或存在匹配是不同性质，不能只凭图形外观判断。矩阵表示能把图的关系放进线性代数中，但计算结果仍要解释回顶点、边和路径等离散对象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "邻接矩阵",
+          "url": "https://www.baidu.com/s?wd=%E9%82%BB%E6%8E%A5%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "邻接矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%82%BB%E6%8E%A5%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "adjacency matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=adjacency%20matrix"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "关联矩阵",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "关联矩阵记录顶点和边之间是否关联。无向图中常写 $B_{ve}=1\\iff v\\in e$，其中$B_{ve}$ 是矩阵元素，$v$ 是顶点，$e$ 是边。若顶点不是边的端点，则记为 $0$。\n\n关联矩阵适合描述网络流、割和拉普拉斯矩阵。它不直接记录两个顶点是否相邻，而是通过边这一列来表达连接。关联矩阵把对象之间的相邻、连接或约束关系抽象成顶点和边，公式里的数量应对应具体的点边结构。图论概念之间差别很细，连通、成环、可染色或存在匹配是不同性质，不能只凭图形外观判断。矩阵表示能把图的关系放进线性代数中，但计算结果仍要解释回顶点、边和路径等离散对象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "关联矩阵",
+          "url": "https://www.baidu.com/s?wd=%E5%85%B3%E8%81%94%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "关联矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%B3%E8%81%94%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "correlation matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=correlation%20matrix"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "拉普拉斯矩阵",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "拉普拉斯矩阵是图的度数矩阵减去邻接矩阵。定义为 $L=D-A$，其中$D$ 是度数对角矩阵，$A$ 是邻接矩阵。它把局部连接差分写成矩阵形式。\n\n拉普拉斯矩阵用于连通性、随机游走、谱聚类和矩阵树定理。它不同于邻接矩阵；邻接矩阵记录边，拉普拉斯矩阵还编码度数平衡。矩阵表示能把图的关系放进线性代数中，但计算结果仍要解释回顶点、边和路径等离散对象。在具体模型中还要说明是否允许重边、自环和方向，因为这些约定会改变路径、度数和覆盖的含义。拉普拉斯矩阵把对象之间的相邻、连接或约束关系抽象成顶点和边，公式里的数量应对应具体的点边结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拉普拉斯矩阵",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拉普拉斯矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "laplacian matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=laplacian%20matrix"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "矩阵树定理",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "矩阵树定理用图拉普拉斯矩阵的余子式计算生成树数量。若删去 $L$ 的任一行列得到 $L^*$，则 $\\tau(G)=\\det L^*$，其中$ au(G)$ 是生成树数，$L$ 是拉普拉斯矩阵。不同删法得到的余子式行列式相同。\n\n矩阵树定理把纯组合的生成树计数转化为线性代数计算。它要求图的拉普拉斯矩阵来自同一个图；不能把任意矩阵余子式都解释成生成树数。图论概念之间差别很细，连通、成环、可染色或存在匹配是不同性质，不能只凭图形外观判断。矩阵表示能把图的关系放进线性代数中，但计算结果仍要解释回顶点、边和路径等离散对象。在具体模型中还要说明是否允许重边、自环和方向，因为这些约定会改变路径、度数和覆盖的含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "矩阵树定理",
+          "url": "https://www.baidu.com/s?wd=%E7%9F%A9%E9%98%B5%E6%A0%91%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "矩阵树定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9F%A9%E9%98%B5%E6%A0%91%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "matrix tree theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=matrix%20tree%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "德布鲁因序列",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "德布鲁因序列是在一个循环序列中恰好包含所有长度为 $n$ 的字串一次的序列。可记为 $B(k,n)$，其中$k$ 是字母表大小，$n$ 是字串长度。循环长度为 $k^n$。\n\n德布鲁因序列用于编码、测试序列和滑动窗口覆盖。它不同于普通排列；对象是所有长度固定的字符串，并按循环相邻关系嵌入。德布鲁因序列通常把有限对象按规则排成表、序列或偏序结构，重点是每个局部限制在全局中是否同时成立。这类概念常有对称、覆盖或递推背景；公式里的参数不仅是数量，也说明了允许的行列、层级或形状。使用时要把标号、顺序和等价变换讲清楚，否则同一排列可能被误认为多个不同对象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "德布鲁因序列",
+          "url": "https://www.baidu.com/s?wd=%E5%BE%B7%E5%B8%83%E9%B2%81%E5%9B%A0%E5%BA%8F%E5%88%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "德布鲁因序列",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BE%B7%E5%B8%83%E9%B2%81%E5%9B%A0%E5%BA%8F%E5%88%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "de bruyne sequence",
+          "url": "https://en.wikipedia.org/w/index.php?search=de%20bruyne%20sequence"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "格雷码",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "格雷码是一种编码顺序，使相邻两个码字只差一位。二进制反射格雷码可写 $g_i=b_i\\oplus b_{i+1}$，其中$b_i$ 是二进制位，$\\oplus$ 表示异或。这种转换让连续状态变化尽量小。\n\n格雷码用于组合生成、数字电路和汉明距离为一的遍历。它不是普通二进制计数；普通计数相邻数可能同时改变多位。格雷码通常把有限对象按规则排成表、序列或偏序结构，重点是每个局部限制在全局中是否同时成立。这类概念常有对称、覆盖或递推背景；公式里的参数不仅是数量，也说明了允许的行列、层级或形状。使用时要把标号、顺序和等价变换讲清楚，否则同一排列可能被误认为多个不同对象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "格雷码",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%BC%E9%9B%B7%E7%A0%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "格雷码",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%BC%E9%9B%B7%E7%A0%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gray code",
+          "url": "https://en.wikipedia.org/w/index.php?search=gray%20code"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "拉丁方",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "拉丁方是 $n\\times n$ 方阵，含 $n$ 种符号且每行每列各出现一次。条件可写为 $\\{L_{i1},\\ldots,L_{in}\\}=\\{1,\\ldots,n\\}$，其中$L_{ij}$ 是第 $i$ 行第 $j$ 列符号。列也要满足同样条件。\n\n拉丁方用于实验设计、有限几何和错误校正。它不同于幻方；拉丁方关心符号不重复，幻方关心行列对角线和相等。拉丁方通常把有限对象按规则排成表、序列或偏序结构，重点是每个局部限制在全局中是否同时成立。这类概念常有对称、覆盖或递推背景；公式里的参数不仅是数量，也说明了允许的行列、层级或形状。使用时要把标号、顺序和等价变换讲清楚，否则同一排列可能被误认为多个不同对象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拉丁方",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%89%E4%B8%81%E6%96%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拉丁方",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%89%E4%B8%81%E6%96%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "latin square",
+          "url": "https://en.wikipedia.org/w/index.php?search=latin%20square"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "幻方",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "幻方是把数字填入方阵，使每行、每列以及通常两条主对角线的和相等。若阶数为 $n$，幻和为 $M=\\frac{n(n^2+1)}2$，其中$M$ 是使用 $1$ 到 $n^2$ 时的公共和。每个数字通常恰好使用一次。\n\n幻方是组合构造和对称排列的经典对象。它不同于拉丁方；幻方的限制是求和相等，而不是每种符号在每行每列出现一次。使用时要把标号、顺序和等价变换讲清楚，否则同一排列可能被误认为多个不同对象。幻方通常把有限对象按规则排成表、序列或偏序结构，重点是每个局部限制在全局中是否同时成立。这类概念常有对称、覆盖或递推背景；公式里的参数不仅是数量，也说明了允许的行列、层级或形状。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "幻方",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%BB%E6%96%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "幻方",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%BB%E6%96%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "magic square",
+          "url": "https://en.wikipedia.org/w/index.php?search=magic%20square"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "有限集",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "有限集是元素个数有限的集合，可与某个初始自然数集合建立双射。定义上可写 $|A|=n$，其中$A$ 是集合，$n$ 是元素个数。这里 $n$ 为非负整数。\n\n有限集是组合数学的基本对象，排列、组合和图都建立在有限对象计数上。它不同于无限集；有限集可以通过逐个列举或双射给出确切大小。有限集通常把有限对象按规则排成表、序列或偏序结构，重点是每个局部限制在全局中是否同时成立。这类概念常有对称、覆盖或递推背景；公式里的参数不仅是数量，也说明了允许的行列、层级或形状。使用时要把标号、顺序和等价变换讲清楚，否则同一排列可能被误认为多个不同对象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "有限集",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%89%E9%99%90%E9%9B%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "有限集",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%89%E9%99%90%E9%9B%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "finite set",
+          "url": "https://en.wikipedia.org/w/index.php?search=finite%20set"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "布尔格",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "布尔格通常指有限集合所有子集按包含关系组成的布尔格。对 $[n]=\\{1,\\ldots,n\\}$， $B_n=(2^{[n]},\\subseteq)$，其中$2^{[n]}$ 是幂集，$\\subseteq$ 是偏序关系。每个元素都是一个子集。\n\n布尔格用于研究链、反链、斯佩纳定理和二项式系数层。它不是普通数轴格；格运算对应集合的交与并。布尔格通常把有限对象按规则排成表、序列或偏序结构，重点是每个局部限制在全局中是否同时成立。这类概念常有对称、覆盖或递推背景；公式里的参数不仅是数量，也说明了允许的行列、层级或形状。使用时要把标号、顺序和等价变换讲清楚，否则同一排列可能被误认为多个不同对象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "布尔格",
+          "url": "https://www.baidu.com/s?wd=%E5%B8%83%E5%B0%94%E6%A0%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "布尔格",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B8%83%E5%B0%94%E6%A0%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "burg",
+          "url": "https://en.wikipedia.org/w/index.php?search=burg"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "偏序集",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "偏序集是在集合上给出自反、反对称、传递关系的结构。常写为 $(P,\\le)$，其中$P$ 是集合，$\\le$ 是偏序关系。并非任意两个元素都必须可比较。\n\n偏序集用于描述包含、整除、任务依赖和层级结构。它不同于全序集；全序要求任意两元素都能比较大小。偏序集通常把有限对象按规则排成表、序列或偏序结构，重点是每个局部限制在全局中是否同时成立。这类概念常有对称、覆盖或递推背景；公式里的参数不仅是数量，也说明了允许的行列、层级或形状。使用时要把标号、顺序和等价变换讲清楚，否则同一排列可能被误认为多个不同对象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "偏序集",
+          "url": "https://www.baidu.com/s?wd=%E5%81%8F%E5%BA%8F%E9%9B%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "偏序集",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%81%8F%E5%BA%8F%E9%9B%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "partially ordered set",
+          "url": "https://en.wikipedia.org/w/index.php?search=partially%20ordered%20set"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "链",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "链是偏序集中任意两个元素都可比较的子集。若 $C$ 是链，则 $\\forall x,y\\in C,\\ x\\le y\\ \\text{或}\\ y\\le x$，其中$\\le$ 是偏序关系。链在偏序集中呈现一条完全排序的路径。\n\n链用于分解布尔格、证明斯佩纳定理和研究层级深度。它不同于反链；反链要求不同元素之间都不可比较。这类概念常有对称、覆盖或递推背景；公式里的参数不仅是数量，也说明了允许的行列、层级或形状。使用时要把标号、顺序和等价变换讲清楚，否则同一排列可能被误认为多个不同对象。链通常把有限对象按规则排成表、序列或偏序结构，重点是每个局部限制在全局中是否同时成立。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "链",
+          "url": "https://www.baidu.com/s?wd=%E9%93%BE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "链",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%93%BE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "chain",
+          "url": "https://en.wikipedia.org/w/index.php?search=chain"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "反链",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "反链是偏序集中任意两个不同元素都不可比较的子集。条件为 $x\\ne y\\in A\\Rightarrow x\\nleq y,\\ y\\nleq x$，其中$A$ 是反链，$\\nleq$ 表示不小于等于。反链中的元素彼此没有包含或先后关系。\n\n反链在布尔格中对应同一大小的子集层，常用于极值组合。它不同于独立集；独立集是图论概念，反链依赖偏序关系。使用时要把标号、顺序和等价变换讲清楚，否则同一排列可能被误认为多个不同对象。反链通常把有限对象按规则排成表、序列或偏序结构，重点是每个局部限制在全局中是否同时成立。这类概念常有对称、覆盖或递推背景；公式里的参数不仅是数量，也说明了允许的行列、层级或形状。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反链",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E9%93%BE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反链",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E9%93%BE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "anti chain",
+          "url": "https://en.wikipedia.org/w/index.php?search=anti%20chain"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "斯佩纳定理",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "斯佩纳定理给出 $[n]$ 的幂集中反链大小的最大值。结论为 $\\max |A|=\\binom n{\\lfloor n/2\\rfloor}$，其中$A$ 是反链，右边是中间层子集数。最大反链由大小最接近 $n/2$ 的子集组成。\n\n斯佩纳定理是极值组合中的基础结果，说明中间层最宽。它适用于包含偏序下的子集族，不是任意偏序集都直接满足这个公式。使用时要把标号、顺序和等价变换讲清楚，否则同一排列可能被误认为多个不同对象。斯佩纳定理通常把有限对象按规则排成表、序列或偏序结构，重点是每个局部限制在全局中是否同时成立。这类概念常有对称、覆盖或递推背景；公式里的参数不仅是数量，也说明了允许的行列、层级或形状。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "斯佩纳定理",
+          "url": "https://www.baidu.com/s?wd=%E6%96%AF%E4%BD%A9%E7%BA%B3%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "斯佩纳定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%96%AF%E4%BD%A9%E7%BA%B3%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "spener theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=spener%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "匹配多项式",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "匹配多项式用多项式记录图中不同大小匹配的数量。常写作 $\\mu(G,x)=\\sum_k(-1)^k m_k x^{n-2k}$，其中$m_k$ 是 $k$ 条边匹配数，$n$ 是顶点数。指数反映匹配覆盖顶点后剩余的规模。\n\n匹配多项式连接匹配计数、递推和图谱性质。它不同于色多项式；前者记录配对结构，后者记录合法染色数量。使用时要把标号、顺序和等价变换讲清楚，否则同一排列可能被误认为多个不同对象。匹配多项式通常把有限对象按规则排成表、序列或偏序结构，重点是每个局部限制在全局中是否同时成立。这类概念常有对称、覆盖或递推背景；公式里的参数不仅是数量，也说明了允许的行列、层级或形状。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "匹配多项式",
+          "url": "https://www.baidu.com/s?wd=%E5%8C%B9%E9%85%8D%E5%A4%9A%E9%A1%B9%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "匹配多项式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8C%B9%E9%85%8D%E5%A4%9A%E9%A1%B9%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "matching polynomials",
+          "url": "https://en.wikipedia.org/w/index.php?search=matching%20polynomials"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "色多项式",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "色多项式记录图用 $q$ 种颜色进行合法顶点染色的数量。记为 $P_G(q)$，其中$G$ 是图，$q$ 是可用颜色数。当 $q$ 为正整数时，$P_G(q)$ 给出合法染色数。\n\n色多项式把图染色问题变成关于 $q$ 的多项式研究。它不同于色数；色数是最小可行颜色数，色多项式给出每个颜色数下的方案数量。这类概念常有对称、覆盖或递推背景；公式里的参数不仅是数量，也说明了允许的行列、层级或形状。使用时要把标号、顺序和等价变换讲清楚，否则同一排列可能被误认为多个不同对象。色多项式通常把有限对象按规则排成表、序列或偏序结构，重点是每个局部限制在全局中是否同时成立。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "色多项式",
+          "url": "https://www.baidu.com/s?wd=%E8%89%B2%E5%A4%9A%E9%A1%B9%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "色多项式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%89%B2%E5%A4%9A%E9%A1%B9%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "color polynomial",
+          "url": "https://en.wikipedia.org/w/index.php?search=color%20polynomial"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "秩生成函数",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "秩生成函数用生成函数记录分级偏序集各秩层的元素数量。常写为 $R_P(x)=\\sum_r a_rx^r$，其中$a_r$ 是秩为 $r$ 的元素数。变量指数标记所在层级。\n\n秩生成函数用于布尔格、分拆和格结构的层计数。它不是任意生成函数；必须先有清楚的秩函数或分级结构。使用时要把标号、顺序和等价变换讲清楚，否则同一排列可能被误认为多个不同对象。秩生成函数通常把有限对象按规则排成表、序列或偏序结构，重点是每个局部限制在全局中是否同时成立。这类概念常有对称、覆盖或递推背景；公式里的参数不仅是数量，也说明了允许的行列、层级或形状。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "秩生成函数",
+          "url": "https://www.baidu.com/s?wd=%E7%A7%A9%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "秩生成函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A7%A9%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "rank generating function",
+          "url": "https://en.wikipedia.org/w/index.php?search=rank%20generating%20function"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "杨图",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "杨图是用左对齐方格表示整数分拆的图形。若分拆为 $\\lambda=(\\lambda_1,\\lambda_2,\\ldots)$，则 $|\\lambda|=\\lambda_1+\\lambda_2+\\cdots$，其中$|\\lambda|$ 是方格总数。第 $i$ 行有 $\\lambda_i$ 个方格。\n\n杨图把整数分拆转化为可视化形状，服务于杨表和表示论计数。它不同于坐标网格中的任意图形；行长通常要求非增。使用时要把标号、顺序和等价变换讲清楚，否则同一排列可能被误认为多个不同对象。杨图通常把有限对象按规则排成表、序列或偏序结构，重点是每个局部限制在全局中是否同时成立。这类概念常有对称、覆盖或递推背景；公式里的参数不仅是数量，也说明了允许的行列、层级或形状。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "杨图",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%A8%E5%9B%BE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "杨图",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%A8%E5%9B%BE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "young diagram",
+          "url": "https://en.wikipedia.org/w/index.php?search=young%20diagram"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "杨表",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "杨表是在杨图方格中填入数字并满足一定行列条件的表。半标准杨表常要求 $T_{i,j}\\le T_{i,j+1},\\quad T_{i,j}<T_{i+1,j}$，其中$T_{i,j}$ 是方格中的数。行弱增、列严格增是常见约定。\n\n杨表用于对称函数、表示论和排列对应。它不同于杨图；杨图只给形状，杨表还包含填数和顺序限制。使用时要把标号、顺序和等价变换讲清楚，否则同一排列可能被误认为多个不同对象。杨表通常把有限对象按规则排成表、序列或偏序结构，重点是每个局部限制在全局中是否同时成立。这类概念常有对称、覆盖或递推背景；公式里的参数不仅是数量，也说明了允许的行列、层级或形状。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "杨表",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%A8%E8%A1%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "杨表",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%A8%E8%A1%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "young tableau",
+          "url": "https://en.wikipedia.org/w/index.php?search=young%20tableau"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "标准杨表",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "标准杨表是把 $1$ 到 $n$ 各填一次，并要求每行每列严格递增的杨表。其数量记为 $f^\\lambda=\\#\\operatorname{SYT}(\\lambda)$，其中$\\lambda$ 是杨图形状，$f^\\lambda$ 是标准杨表数。填入的数字不重复。\n\n标准杨表把形状和全序标签结合起来，出现在钩长公式和 RSK 对应中。它不同于半标准杨表；半标准可重复填数，标准杨表必须恰好用完 $1,\\ldots,n$。这类概念常有对称、覆盖或递推背景；公式里的参数不仅是数量，也说明了允许的行列、层级或形状。使用时要把标号、顺序和等价变换讲清楚，否则同一排列可能被误认为多个不同对象。标准杨表通常把有限对象按规则排成表、序列或偏序结构，重点是每个局部限制在全局中是否同时成立。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "标准杨表",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%87%E5%87%86%E6%9D%A8%E8%A1%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "标准杨表",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%87%E5%87%86%E6%9D%A8%E8%A1%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "standard yang table",
+          "url": "https://en.wikipedia.org/w/index.php?search=standard%20yang%20table"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "钩长公式",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "钩长公式计算给定杨图形状的标准杨表数量。公式为 $f^\\lambda=\\frac{n!}{\\prod_{u\\in\\lambda}h(u)}$，其中$n$ 是方格总数，$h(u)$ 是方格 $u$ 的钩长。钩长等于右方、下方方格数再加自身。\n\n钩长公式把全局填表数压缩为局部钩长乘积。它只适用于标准杨表；若填数规则改变，不能直接套用这个公式。这类概念常有对称、覆盖或递推背景；公式里的参数不仅是数量，也说明了允许的行列、层级或形状。使用时要把标号、顺序和等价变换讲清楚，否则同一排列可能被误认为多个不同对象。钩长公式通常把有限对象按规则排成表、序列或偏序结构，重点是每个局部限制在全局中是否同时成立。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "钩长公式",
+          "url": "https://www.baidu.com/s?wd=%E9%92%A9%E9%95%BF%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "钩长公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%92%A9%E9%95%BF%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hook length formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=hook%20length%20formula"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "罗宾逊申斯特德对应",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "罗宾逊申斯特德对应把一个排列对应到一对同形状标准杨表。形式上写为 $\\pi\\longleftrightarrow(P,Q)$，其中$\\pi$ 是排列，$P,Q$ 是同形标准杨表。$P$ 记录插入结构，$Q$ 记录插入顺序。\n\n这个对应把排列问题转化为杨表问题，最长递增子序列长度等于 $P$ 的第一行长度。它是双射，不是只给一个统计量；从 $(P,Q)$ 可以唯一恢复原排列。罗宾逊申斯特德对应通常把有限对象按规则排成表、序列或偏序结构，重点是每个局部限制在全局中是否同时成立。这类概念常有对称、覆盖或递推背景；公式里的参数不仅是数量，也说明了允许的行列、层级或形状。使用时要把标号、顺序和等价变换讲清楚，否则同一排列可能被误认为多个不同对象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "罗宾逊申斯特德对应",
+          "url": "https://www.baidu.com/s?wd=%E7%BD%97%E5%AE%BE%E9%80%8A%E7%94%B3%E6%96%AF%E7%89%B9%E5%BE%B7%E5%AF%B9%E5%BA%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "罗宾逊申斯特德对应",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BD%97%E5%AE%BE%E9%80%8A%E7%94%B3%E6%96%AF%E7%89%B9%E5%BE%B7%E5%AF%B9%E5%BA%94"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "robinson schensted correspondence",
+          "url": "https://en.wikipedia.org/w/index.php?search=robinson%20schensted%20correspondence"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "组合设计",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "组合设计研究在有限点集上选取若干子集，使点或点组按规定次数均匀出现。常用参数为 $(v,b,r,k,\\lambda)$，其中$v$ 是点数，$b$ 是块数，$r$ 是重复数，$k$ 是块大小，$\\lambda$ 是点对覆盖次数。这些参数表达局部均匀性。\n\n组合设计用于实验安排、编码和有限几何。它不是任意分组；均匀覆盖条件是设计结构的核心。它不一定给出唯一构造；有时只说明达到界需要什么结构，或说明规模足够大时某种模式无法避免。这些概念常连接图论、有限几何和概率方法，读公式时要同时看清对象规模和被禁止的局部配置。组合设计研究在给定限制下最多、最少或必然出现的组合结构，结论往往带有存在性或界的含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "组合设计",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%84%E5%90%88%E8%AE%BE%E8%AE%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "组合设计",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%84%E5%90%88%E8%AE%BE%E8%AE%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "combination design",
+          "url": "https://en.wikipedia.org/w/index.php?search=combination%20design"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "区组设计",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "区组设计是组合设计的基本模型，把点集分成或选成若干区组并控制覆盖次数。平衡不完全区组设计满足 $vr=bk,\\quad r(k-1)=\\lambda(v-1)$，其中$v,b,r,k,\\lambda$ 是点数、块数、重复数、块大小和点对次数。等式来自两种方式计数点-块关联。\n\n区组设计用于实验分组和有限结构构造。它比普通分组更严格，要求每个点或点对出现次数一致。它不一定给出唯一构造；有时只说明达到界需要什么结构，或说明规模足够大时某种模式无法避免。这些概念常连接图论、有限几何和概率方法，读公式时要同时看清对象规模和被禁止的局部配置。区组设计研究在给定限制下最多、最少或必然出现的组合结构，结论往往带有存在性或界的含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "区组设计",
+          "url": "https://www.baidu.com/s?wd=%E5%8C%BA%E7%BB%84%E8%AE%BE%E8%AE%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "区组设计",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8C%BA%E7%BB%84%E8%AE%BE%E8%AE%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "block design",
+          "url": "https://en.wikipedia.org/w/index.php?search=block%20design"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "斯坦纳系",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "斯坦纳系是一类特别规整的区组设计，要求每个 $t$ 元点集恰好包含在一个 $k$ 元区组中。记作 $S(t,k,v)$，其中$v$ 是点数，$k$ 是块大小，$t$ 是被唯一覆盖的点组大小。这里覆盖次数固定为 $1$。\n\n斯坦纳三元系和有限射影平面都是重要例子。它比一般区组设计更强，因为每个指定小点组只能出现一次。它不一定给出唯一构造；有时只说明达到界需要什么结构，或说明规模足够大时某种模式无法避免。这些概念常连接图论、有限几何和概率方法，读公式时要同时看清对象规模和被禁止的局部配置。斯坦纳系研究在给定限制下最多、最少或必然出现的组合结构，结论往往带有存在性或界的含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "斯坦纳系",
+          "url": "https://www.baidu.com/s?wd=%E6%96%AF%E5%9D%A6%E7%BA%B3%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "斯坦纳系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%96%AF%E5%9D%A6%E7%BA%B3%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "steiner department",
+          "url": "https://en.wikipedia.org/w/index.php?search=steiner%20department"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "有限几何",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "有限几何研究有限域或有限集合上的点、线、平面等几何结构。向量空间模型中 $|F_q^n|=q^n$，其中$F_q$ 是含 $q$ 个元素的有限域，$n$ 是维数。对象总数有限但仍保留线性结构。\n\n有限几何连接组合设计、编码理论和射影平面。它不同于普通欧氏几何；连续长度和角度不再是主要对象。它不一定给出唯一构造；有时只说明达到界需要什么结构，或说明规模足够大时某种模式无法避免。这些概念常连接图论、有限几何和概率方法，读公式时要同时看清对象规模和被禁止的局部配置。有限几何研究在给定限制下最多、最少或必然出现的组合结构，结论往往带有存在性或界的含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "有限几何",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%89%E9%99%90%E5%87%A0%E4%BD%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "有限几何",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%89%E9%99%90%E5%87%A0%E4%BD%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "finite geometry",
+          "url": "https://en.wikipedia.org/w/index.php?search=finite%20geometry"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "射影平面",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "射影平面是满足任意两点确定一线、任意两线交于一点的点线结构。阶为 $q$ 的有限射影平面有 $v=q^2+q+1$，其中$v$ 是点数，$q$ 是阶。每条线也含 $q+1$ 个点。\n\n射影平面消除了平行线，是有限几何和区组设计的重要例子。它不同于仿射平面；射影平面中任意两条线都相交。它不一定给出唯一构造；有时只说明达到界需要什么结构，或说明规模足够大时某种模式无法避免。这些概念常连接图论、有限几何和概率方法，读公式时要同时看清对象规模和被禁止的局部配置。射影平面研究在给定限制下最多、最少或必然出现的组合结构，结论往往带有存在性或界的含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "射影平面",
+          "url": "https://www.baidu.com/s?wd=%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "射影平面",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B0%84%E5%BD%B1%E5%B9%B3%E9%9D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "projective plane",
+          "url": "https://en.wikipedia.org/w/index.php?search=projective%20plane"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "差集",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "差集是在群中选出的子集，使非零差以固定次数覆盖群元素。若 $D\\subseteq G$，可写 $DD^{-1}=k\\cdot e+\\lambda(G-e)$，其中$k=|D|$，$\\lambda$ 是每个非单位元素被表示为差的次数。$e$ 是单位元。\n\n差集能构造对称区组设计，也出现在有限几何和编码理论中。它不是任意子集；差的分布必须高度均匀。这些概念常连接图论、有限几何和概率方法，读公式时要同时看清对象规模和被禁止的局部配置。差集研究在给定限制下最多、最少或必然出现的组合结构，结论往往带有存在性或界的含义。它不一定给出唯一构造；有时只说明达到界需要什么结构，或说明规模足够大时某种模式无法避免。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "差集",
+          "url": "https://www.baidu.com/s?wd=%E5%B7%AE%E9%9B%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "差集",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B7%AE%E9%9B%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "difference set",
+          "url": "https://en.wikipedia.org/w/index.php?search=difference%20set"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "拉姆齐数",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "拉姆齐数是保证某种同色结构必然出现所需的最小规模。二色完全图情形写作 $R(s,t)$，其中$R(s,t)$ 表示顶点数达到该值时必有红色 $K_s$ 或蓝色 $K_t$。这是混乱中必有秩序的定量版本。\n\n拉姆齐数通常很难精确计算，常通过上下界研究。它不同于拉姆齐定理；定理保证有限阈值存在，拉姆齐数追求最小阈值。它不一定给出唯一构造；有时只说明达到界需要什么结构，或说明规模足够大时某种模式无法避免。这些概念常连接图论、有限几何和概率方法，读公式时要同时看清对象规模和被禁止的局部配置。拉姆齐数研究在给定限制下最多、最少或必然出现的组合结构，结论往往带有存在性或界的含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拉姆齐数",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%89%E5%A7%86%E9%BD%90%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拉姆齐数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%89%E5%A7%86%E9%BD%90%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ramsey number",
+          "url": "https://en.wikipedia.org/w/index.php?search=ramsey%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "拉姆齐定理",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "拉姆齐定理说明足够大的有限结构在有限着色下必然含有指定大小的同色子结构。可概括为 $R(s,t)<\\infty$，其中$s,t$ 是目标团大小。不等式表示某个有限阈值必然存在。\n\n拉姆齐定理是极值组合和理论计算机科学中的存在性基础。它一般不直接给出容易达到的精确数值；具体最小值由拉姆齐数研究。这些概念常连接图论、有限几何和概率方法，读公式时要同时看清对象规模和被禁止的局部配置。拉姆齐定理研究在给定限制下最多、最少或必然出现的组合结构，结论往往带有存在性或界的含义。它不一定给出唯一构造；有时只说明达到界需要什么结构，或说明规模足够大时某种模式无法避免。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拉姆齐定理",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%89%E5%A7%86%E9%BD%90%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拉姆齐定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%89%E5%A7%86%E9%BD%90%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ramsay theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=ramsay%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "图兰定理",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "图兰定理给出不含 $K_{r+1}$ 的 $n$ 顶点图最多能有多少条边。核心表达为 $ex(n,K_{r+1})=e(T_r(n))$，其中$T_r(n)$ 是尽量均衡的 $r$ 部完全图，$ex$ 表示极值边数。这个图达到最大边数。\n\n图兰定理是极值图论的起点，说明禁止大团会迫使图接近多部结构。它不只是估计上界，还刻画了达到上界的极端结构。它不一定给出唯一构造；有时只说明达到界需要什么结构，或说明规模足够大时某种模式无法避免。这些概念常连接图论、有限几何和概率方法，读公式时要同时看清对象规模和被禁止的局部配置。图兰定理研究在给定限制下最多、最少或必然出现的组合结构，结论往往带有存在性或界的含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "图兰定理",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%BE%E5%85%B0%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "图兰定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%BE%E5%85%B0%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "turan theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=turan%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "极值图",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "极值图研究在禁止某些子图或满足限制时，边数或其他参数达到极端的图。常写 $ex(n,H)=\\max e(G)$，其中$H$ 是被禁止子图，$G$ 是不含 $H$ 的 $n$ 顶点图。目标是最大化边数。\n\n极值图论把结构限制转化为数量上界和最优构造。它不同于普通图分类；重点是“最多能多密而不出现某结构”。极值图研究在给定限制下最多、最少或必然出现的组合结构，结论往往带有存在性或界的含义。它不一定给出唯一构造；有时只说明达到界需要什么结构，或说明规模足够大时某种模式无法避免。这些概念常连接图论、有限几何和概率方法，读公式时要同时看清对象规模和被禁止的局部配置。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "极值图",
+          "url": "https://www.baidu.com/s?wd=%E6%9E%81%E5%80%BC%E5%9B%BE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "极值图",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9E%81%E5%80%BC%E5%9B%BE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "extremal graph",
+          "url": "https://en.wikipedia.org/w/index.php?search=extremal%20graph"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "概率方法",
+      "source_file": "words/数学/简单模式/combinatorics_basics_terms.csv",
+      "explanation_markdown": "概率方法用随机对象证明确定性对象存在。基本逻辑可写为 $\\Pr(X>0)>0\\Rightarrow \\exists\\ \\text{满足条件的对象}$，其中$X$ 是目标结构的计数随机变量。成功概率为正就说明至少有一个成功对象。\n\n概率方法常通过期望、方差或局部引理得到存在性结论。它不一定给出显式构造，但能证明某些对象必然存在。它不一定给出唯一构造；有时只说明达到界需要什么结构，或说明规模足够大时某种模式无法避免。这些概念常连接图论、有限几何和概率方法，读公式时要同时看清对象规模和被禁止的局部配置。概率方法研究在给定限制下最多、最少或必然出现的组合结构，结论往往带有存在性或界的含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "概率方法",
+          "url": "https://www.baidu.com/s?wd=%E6%A6%82%E7%8E%87%E6%96%B9%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "概率方法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A6%82%E7%8E%87%E6%96%B9%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "probability method",
+          "url": "https://en.wikipedia.org/w/index.php?search=probability%20method"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    }
+  ]
+}

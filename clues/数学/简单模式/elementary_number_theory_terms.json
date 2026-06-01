@@ -1,0 +1,2405 @@
+{
+  "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+  "entries": [
+    {
+      "chinese_name": "自然数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "自然数是用于计数和排序的基本整数集合。常写作 $\\mathbb N=\\{0,1,2,\\ldots\\}$，其中$\\mathbb N$ 表示自然数集，是否包含 $0$ 取决于约定。它强调离散的非负数量，而不是连续长度。\n\n自然数常作为序列下标、计数规模和整数分解中的基本对象。它不同于整数集；负数不属于自然数，除法也通常不在自然数内封闭。自然数看似只是集合或名称约定，但它决定变量能否取负、能否取零，以及后续分解和同余运算是否有意义。做数论讨论时先写明取值范围，可以避免把实数中的连续直觉误用到整数对象上。这些基础概念常作为定理的前提出现，条件一变，整除、余数或计数结果都会随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自然数",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E7%84%B6%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自然数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E7%84%B6%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "natural numbers",
+          "url": "https://en.wikipedia.org/w/index.php?search=natural%20numbers"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "整数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "整数由正整数、负整数和零组成，是初等数论最主要的对象。常写作 $\\mathbb Z=\\{\\ldots,-2,-1,0,1,2,\\ldots\\}$，其中$\\mathbb Z$ 表示整数集，省略号表示向两边无限延伸。加减乘在整数中封闭，但普通除法未必仍是整数。\n\n整数的离散性使整除、余数、同余和最大公因数成为有意义的问题。它比自然数多了负数，又比有理数少了分数。这些基础概念常作为定理的前提出现，条件一变，整除、余数或计数结果都会随之改变。整数看似只是集合或名称约定，但它决定变量能否取负、能否取零，以及后续分解和同余运算是否有意义。做数论讨论时先写明取值范围，可以避免把实数中的连续直觉误用到整数对象上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "整数",
+          "url": "https://www.baidu.com/s?wd=%E6%95%B4%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "整数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%95%B4%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "integer",
+          "url": "https://en.wikipedia.org/w/index.php?search=integer"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "因数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "因数表示一个整数作为乘法因子组成另一个整数。常写作 $a\\mid b\\Longleftrightarrow b=ak$，其中$a,b,k$ 都是整数，$a\\mid b$ 读作 $a$ 整除 $b$。也就是说，$b$ 可以被写成 $a$ 的整数倍。\n\n因数用于分析一个数的乘法结构，也是质因数分解和约数函数的基础。它不同于质因数；因数可以是合数，也可以带正负号，具体约定要看语境。使用时要注意零、负号和单位因子；这些约定不影响核心思想，却会影响表述是否严谨。因数围绕乘法分解和余数为零展开，最常见的检验方式是把对象写成整数倍或质因数乘积。它把整数的乘法结构显露出来，因而常用于约分、方程有解条件和同余化简。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "因数",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%A0%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "因数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%A0%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "factor",
+          "url": "https://en.wikipedia.org/w/index.php?search=factor"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "倍数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "倍数是因数关系的另一面，说明一个整数由另一个整数乘上整数得到。常写作 $b=ak$，其中$a$ 是基准整数，$k$ 是整数，$b$ 是 $a$ 的倍数。当 $a\\ne0$ 时，倍数在数轴上按固定间隔出现。\n\n倍数常用于最小公倍数、同余类和周期性问题。它与因数方向相反；说 $b$ 是 $a$ 的倍数，等价于说 $a$ 是 $b$ 的因数。使用时要注意零、负号和单位因子；这些约定不影响核心思想，却会影响表述是否严谨。倍数围绕乘法分解和余数为零展开，最常见的检验方式是把对象写成整数倍或质因数乘积。它把整数的乘法结构显露出来，因而常用于约分、方程有解条件和同余化简。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "倍数",
+          "url": "https://www.baidu.com/s?wd=%E5%80%8D%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "倍数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%80%8D%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "multiple",
+          "url": "https://en.wikipedia.org/w/index.php?search=multiple"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "整除",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "整除表示除法没有余数，是整数乘法结构的基本关系。常写作 $a\\mid b$，其中$a\\mid b$ 表示存在整数 $k$ 使 $b=ak$。这里通常要求除数 $a$ 不为零。\n\n整除把普通除法改写成整数方程，常用于证明约数、同余和素数性质。它比“能除开”更严格，因为商必须仍是整数，而不是任意有理数。使用时要注意零、负号和单位因子；这些约定不影响核心思想，却会影响表述是否严谨。整除围绕乘法分解和余数为零展开，最常见的检验方式是把对象写成整数倍或质因数乘积。它把整数的乘法结构显露出来，因而常用于约分、方程有解条件和同余化简。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "整除",
+          "url": "https://www.baidu.com/s?wd=%E6%95%B4%E9%99%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "整除",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%95%B4%E9%99%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "divisibility",
+          "url": "https://en.wikipedia.org/w/index.php?search=divisibility"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "带余除法",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "带余除法说明任意整数除以正整数时，都能唯一分成商和余数。常写作 $a=bq+r,\\quad 0\\le r<b$，其中$a$ 是被除数，$b>0$ 是除数，$q$ 是商，$r$ 是余数。余数范围保证表示唯一。\n\n带余除法是欧几里得算法和同余概念的起点。它与普通实数除法不同，重点不是小数结果，而是整数商和有限个可能余数。它把整数的乘法结构显露出来，因而常用于约分、方程有解条件和同余化简。使用时要注意零、负号和单位因子；这些约定不影响核心思想，却会影响表述是否严谨。带余除法围绕乘法分解和余数为零展开，最常见的检验方式是把对象写成整数倍或质因数乘积。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "带余除法",
+          "url": "https://www.baidu.com/s?wd=%E5%B8%A6%E4%BD%99%E9%99%A4%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "带余除法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B8%A6%E4%BD%99%E9%99%A4%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "division with remainder",
+          "url": "https://en.wikipedia.org/w/index.php?search=division%20with%20remainder"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "质数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "质数是大于一且只有平凡正因数的整数。常写作 $p>1,\\ d\\mid p\\Rightarrow d=1\\text{ 或 }d=p$，其中$p$ 是待判断的整数，$d$ 是正因数。这个条件排除了零、一和所有能非平凡分解的数。\n\n质数像整数乘法中的基本块，唯一分解定理把正整数拆成质数幂的乘积。它不同于奇数；二是偶质数，而许多奇数如九并不是质数。使用时要注意零、负号和单位因子；这些约定不影响核心思想，却会影响表述是否严谨。质数围绕乘法分解和余数为零展开，最常见的检验方式是把对象写成整数倍或质因数乘积。它把整数的乘法结构显露出来，因而常用于约分、方程有解条件和同余化简。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "质数",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%A8%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "质数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%A8%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "prime",
+          "url": "https://en.wikipedia.org/w/index.php?search=prime"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "合数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "合数是大于一且能够分解为两个较小正整数乘积的整数。常写作 $n=ab,\\quad 1<a<n,\\ 1<b<n$，其中$n$ 是合数，$a,b$ 是非平凡因数。有这样的分解就说明 $n$ 不是质数。\n\n合数的结构可以继续拆成质因数幂，用来研究约数、同余和数列整除性。它不包括一；一既不是质数也不是合数。使用时要注意零、负号和单位因子；这些约定不影响核心思想，却会影响表述是否严谨。合数围绕乘法分解和余数为零展开，最常见的检验方式是把对象写成整数倍或质因数乘积。它把整数的乘法结构显露出来，因而常用于约分、方程有解条件和同余化简。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "合数",
+          "url": "https://www.baidu.com/s?wd=%E5%90%88%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "合数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%88%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "composite number",
+          "url": "https://en.wikipedia.org/w/index.php?search=composite%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "互质",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "互质表示两个整数没有大于一的公共因数。常写作 $\\gcd(a,b)=1$，其中$\\gcd(a,b)$ 是 $a,b$ 的最大公因数。互质不要求两个数各自是质数，只要求公共因子最小。\n\n互质条件保证模逆元存在，也常出现在欧拉定理和中国剩余定理中。例如八和十五都不是质数，却互质；这说明互质是成对关系。使用时要注意零、负号和单位因子；这些约定不影响核心思想，却会影响表述是否严谨。互质围绕乘法分解和余数为零展开，最常见的检验方式是把对象写成整数倍或质因数乘积。它把整数的乘法结构显露出来，因而常用于约分、方程有解条件和同余化简。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "互质",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%92%E8%B4%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "互质",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%92%E8%B4%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "reciprocally prime",
+          "url": "https://en.wikipedia.org/w/index.php?search=reciprocally%20prime"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "最大公因数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "最大公因数是同时整除两个或多个整数的公因数中最大的正整数。常写作 $d=\\gcd(a,b)$，其中$d$ 表示最大公因数，$a,b$ 是给定整数。它刻画了两个数共同拥有的最大乘法部分。\n\n最大公因数可用欧几里得算法高效计算，也决定线性丢番图方程是否有解。它不同于较小的任意公因数；所有公因数都整除这个最大公因数。使用时要注意零、负号和单位因子；这些约定不影响核心思想，却会影响表述是否严谨。最大公因数围绕乘法分解和余数为零展开，最常见的检验方式是把对象写成整数倍或质因数乘积。它把整数的乘法结构显露出来，因而常用于约分、方程有解条件和同余化简。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最大公因数",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E5%A4%A7%E5%85%AC%E5%9B%A0%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最大公因数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E5%A4%A7%E5%85%AC%E5%9B%A0%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "greatest common factor",
+          "url": "https://en.wikipedia.org/w/index.php?search=greatest%20common%20factor"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "最小公倍数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "最小公倍数是同时为几个整数倍数的正整数中最小的一个。常写作 $\\operatorname{lcm}(a,b)=\\frac{|ab|}{\\gcd(a,b)}$，其中$\\operatorname{lcm}$ 表示最小公倍数，绝对值保证结果非负。公式把共同倍数问题转成最大公因数问题。\n\n最小公倍数常用于统一周期、通分和同时满足多个整除条件。它与最大公因数互补；一个看共同因子，一个看共同倍数。使用时要注意零、负号和单位因子；这些约定不影响核心思想，却会影响表述是否严谨。最小公倍数围绕乘法分解和余数为零展开，最常见的检验方式是把对象写成整数倍或质因数乘积。它把整数的乘法结构显露出来，因而常用于约分、方程有解条件和同余化简。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最小公倍数",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最小公倍数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "least common multiple",
+          "url": "https://en.wikipedia.org/w/index.php?search=least%20common%20multiple"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "质因数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "质因数是一个整数的因数中同时又是质数的那些因子。常写作 $p\\mid n,\\quad p\\text{ 为质数}$，其中$p$ 是质因数，$n$ 是被分解的整数。它记录了合数最基本的乘法来源。\n\n质因数用于唯一分解、约数个数和整除判定。它不同于一般因数；比如十二的因数六不是质数，所以不是质因数。质因数围绕乘法分解和余数为零展开，最常见的检验方式是把对象写成整数倍或质因数乘积。它把整数的乘法结构显露出来，因而常用于约分、方程有解条件和同余化简。使用时要注意零、负号和单位因子；这些约定不影响核心思想，却会影响表述是否严谨。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "质因数",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%A8%E5%9B%A0%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "质因数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%A8%E5%9B%A0%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "prime factors",
+          "url": "https://en.wikipedia.org/w/index.php?search=prime%20factors"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "唯一分解定理",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "唯一分解定理说明每个大于一的整数都能按唯一方式分解为质数幂乘积。常写作 $n=p_1^{\\alpha_1}\\cdots p_k^{\\alpha_k}$，其中$p_i$ 是不同质数，$\\alpha_i$ 是正整数指数。所谓唯一，是指不计质因数排列顺序。\n\n它让整除、最大公因数和最小公倍数都能转化为比较质数指数。这一定理依赖整数环的特殊性质，不能随意搬到所有代数系统中。唯一分解定理围绕乘法分解和余数为零展开，最常见的检验方式是把对象写成整数倍或质因数乘积。它把整数的乘法结构显露出来，因而常用于约分、方程有解条件和同余化简。使用时要注意零、负号和单位因子；这些约定不影响核心思想，却会影响表述是否严谨。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "唯一分解定理",
+          "url": "https://www.baidu.com/s?wd=%E5%94%AF%E4%B8%80%E5%88%86%E8%A7%A3%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "唯一分解定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%94%AF%E4%B8%80%E5%88%86%E8%A7%A3%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "unique decomposition theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=unique%20decomposition%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "欧几里得算法",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "欧几里得算法用连续带余除法计算最大公因数。常写作 $\\gcd(a,b)=\\gcd(b,a\\bmod b)$，其中$a\\bmod b$ 是 $a$ 除以 $b$ 的余数。余数不断变小，所以过程会在有限步结束。\n\n欧几里得算法是初等数论中最基本的计算工具，也常作为扩展算法的前半部分。它不需要先分解质因数，因此对大整数更实用。欧几里得算法把同余和整除关系转成可计算步骤，重点是每一步都保持原问题的解集或余数信息。算法形式适合处理大数，因为只保留模数下必要的部分，不需要展开完整整数。使用时要检查互素、导数非零或模数分解等前提；这些条件决定步骤能否继续提升或合并。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "欧几里得算法",
+          "url": "https://www.baidu.com/s?wd=%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "欧几里得算法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "euclidean algorithm",
+          "url": "https://en.wikipedia.org/w/index.php?search=euclidean%20algorithm"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "扩展欧几里得算法",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "扩展欧几里得算法在求最大公因数的同时，反向追踪商数得到线性表示。常写作 $ax+by=\\gcd(a,b)$，其中$x,y$ 是算法求出的整数系数。这个等式把最大公因数写成原来两个数的整数线性组合。\n\n扩展算法可用来求模逆元和解线性同余方程。它比普通欧几里得算法多保留了系数信息，而不只是最后的最大公因数。使用时要检查互素、导数非零或模数分解等前提；这些条件决定步骤能否继续提升或合并。扩展欧几里得算法把同余和整除关系转成可计算步骤，重点是每一步都保持原问题的解集或余数信息。算法形式适合处理大数，因为只保留模数下必要的部分，不需要展开完整整数。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "扩展欧几里得算法",
+          "url": "https://www.baidu.com/s?wd=%E6%89%A9%E5%B1%95%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "扩展欧几里得算法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%A9%E5%B1%95%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "extended euclidean algorithm",
+          "url": "https://en.wikipedia.org/w/index.php?search=extended%20euclidean%20algorithm"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "裴蜀定理",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "裴蜀定理说明两个整数的整数线性组合恰好生成它们最大公因数的倍数。常写作 $ax+by=d\\text{ 有整数解}\\Longleftrightarrow \\gcd(a,b)\\mid d$，其中$a,b,d$ 是整数，$x,y$ 是未知整数。当右端取最大公因数时一定能找到一组系数。\n\n裴蜀定理是线性丢番图方程和模逆元存在性的核心依据。它不是单纯求解公式，而是在判断整数方程什么时候可能有解。它把整数的乘法结构显露出来，因而常用于约分、方程有解条件和同余化简。使用时要注意零、负号和单位因子；这些约定不影响核心思想，却会影响表述是否严谨。裴蜀定理围绕乘法分解和余数为零展开，最常见的检验方式是把对象写成整数倍或质因数乘积。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "裴蜀定理",
+          "url": "https://www.baidu.com/s?wd=%E8%A3%B4%E8%9C%80%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "裴蜀定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A3%B4%E8%9C%80%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bezout theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=bezout%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "同余",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "同余表示两个整数除以同一正整数后余数相同。常写作 $a\\equiv b\\pmod m\\Longleftrightarrow m\\mid(a-b)$，其中$m$ 是模数，$a,b$ 是被比较的整数。这个定义把余数相等转成整除关系。\n\n同余允许把大整数换成较小代表元，仍保留加法和乘法运算。它不同于普通相等；同余依赖指定模数，换模数后结论可能改变。这种语言能把大数问题压缩到有限集合中，但除法或开方只有在额外条件满足时才可以进行。同余把整数按余数分组，保留加法和乘法在模数下的行为，是初等数论最常用的语言之一。模数、代表元和互素条件都要写清楚；同一个整数在不同模数下会属于完全不同的余数类。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "同余",
+          "url": "https://www.baidu.com/s?wd=%E5%90%8C%E4%BD%99%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "同余",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%8C%E4%BD%99"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "congruence",
+          "url": "https://en.wikipedia.org/w/index.php?search=congruence"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "同余类",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "同余类是在固定模数下所有与某个整数同余的整数集合。常写作 $[a]_m=\\{a+km:k\\in\\mathbb Z\\}$，其中$[a]_m$ 是 $a$ 的模 $m$ 同余类，$k$ 遍历整数。同一类中的数相差模数的整数倍。\n\n同余类把无限整数集合分成有限个余数类别，是模运算的集合化表达。它不同于单个余数；余数是代表，类中包含所有相差整倍模数的整数。同余类把整数按余数分组，保留加法和乘法在模数下的行为，是初等数论最常用的语言之一。模数、代表元和互素条件都要写清楚；同一个整数在不同模数下会属于完全不同的余数类。这种语言能把大数问题压缩到有限集合中，但除法或开方只有在额外条件满足时才可以进行。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "同余类",
+          "url": "https://www.baidu.com/s?wd=%E5%90%8C%E4%BD%99%E7%B1%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "同余类",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%8C%E4%BD%99%E7%B1%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "congruence class",
+          "url": "https://en.wikipedia.org/w/index.php?search=congruence%20class"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "剩余系",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "剩余系是在每个相关同余类中选出代表元形成的一组数。常写作 $\\{a_1,\\ldots,a_t\\}$，其中$a_i$ 是选出的代表元，$t$ 由所考虑的同余类数量决定。代表元可以换，但每个类只能选到规定次数。\n\n剩余系让同余问题从无限整数转到有限列表上处理。它不是任意集合；若漏选或重复代表同一类，就不能正确反映模数结构。剩余系把整数按余数分组，保留加法和乘法在模数下的行为，是初等数论最常用的语言之一。模数、代表元和互素条件都要写清楚；同一个整数在不同模数下会属于完全不同的余数类。这种语言能把大数问题压缩到有限集合中，但除法或开方只有在额外条件满足时才可以进行。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "剩余系",
+          "url": "https://www.baidu.com/s?wd=%E5%89%A9%E4%BD%99%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "剩余系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%89%A9%E4%BD%99%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "residual system",
+          "url": "https://en.wikipedia.org/w/index.php?search=residual%20system"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "完全剩余系",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "完全剩余系是模 $m$ 的每个同余类恰好选一个代表元的集合。常写作 $\\{a_1,\\ldots,a_m\\}\\pmod m$，其中$m$ 是正模数，$a_i$ 两两不同余。因此它含有 $m$ 个代表元。\n\n完全剩余系适合把求和、乘法或函数值化为对所有余数的检查。它不同于简化剩余系；完全剩余系包含与模数不互质的代表元。这种语言能把大数问题压缩到有限集合中，但除法或开方只有在额外条件满足时才可以进行。完全剩余系把整数按余数分组，保留加法和乘法在模数下的行为，是初等数论最常用的语言之一。模数、代表元和互素条件都要写清楚；同一个整数在不同模数下会属于完全不同的余数类。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "完全剩余系",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%8C%E5%85%A8%E5%89%A9%E4%BD%99%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "完全剩余系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%8C%E5%85%A8%E5%89%A9%E4%BD%99%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "perfect remainder system",
+          "url": "https://en.wikipedia.org/w/index.php?search=perfect%20remainder%20system"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "简化剩余系",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "简化剩余系是模 $m$ 下只从与 $m$ 互质的同余类中各取一个代表元。常写作 $\\gcd(a_i,m)=1$，其中$a_i$ 是代表元，$m$ 是模数。代表元个数等于欧拉函数 $\\varphi(m)$。\n\n简化剩余系在乘法模运算中形成可逆元素的集合，常用于欧拉定理。它比完全剩余系少，因为不可逆的余数类被排除在外。这种语言能把大数问题压缩到有限集合中，但除法或开方只有在额外条件满足时才可以进行。简化剩余系把整数按余数分组，保留加法和乘法在模数下的行为，是初等数论最常用的语言之一。模数、代表元和互素条件都要写清楚；同一个整数在不同模数下会属于完全不同的余数类。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "简化剩余系",
+          "url": "https://www.baidu.com/s?wd=%E7%AE%80%E5%8C%96%E5%89%A9%E4%BD%99%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "简化剩余系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AE%80%E5%8C%96%E5%89%A9%E4%BD%99%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "simplified residual system",
+          "url": "https://en.wikipedia.org/w/index.php?search=simplified%20residual%20system"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "模运算",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "模运算是在给定模数下只保留余数信息的整数运算。常写作 $(a+b)\\bmod m$，其中$m$ 是模数，表达式表示和的余数。加法和乘法可以先算再取余，也可以先化简代表元。\n\n模运算让大数幂、周期和同余方程能在有限范围内计算。它不自动支持除法；只有除数存在模逆元时才可消去。模运算把整数按余数分组，保留加法和乘法在模数下的行为，是初等数论最常用的语言之一。模数、代表元和互素条件都要写清楚；同一个整数在不同模数下会属于完全不同的余数类。这种语言能把大数问题压缩到有限集合中，但除法或开方只有在额外条件满足时才可以进行。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "模运算",
+          "url": "https://www.baidu.com/s?wd=%E6%A8%A1%E8%BF%90%E7%AE%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "模运算",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A8%A1%E8%BF%90%E7%AE%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "modulo arithmetic",
+          "url": "https://en.wikipedia.org/w/index.php?search=modulo%20arithmetic"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "模逆元",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "模逆元是在模 $m$ 下与某个数相乘得到一的余数类。常写作 $ax\\equiv1\\pmod m$，其中$x$ 是 $a$ 的模 $m$ 逆元。这样的 $x$ 存在当且仅当 $\\gcd(a,m)=1$。\n\n模逆元用于解线性同余、构造中国剩余定理的解和进行模除法。它不是普通倒数；结果仍是整数余数类。模逆元把整数按余数分组，保留加法和乘法在模数下的行为，是初等数论最常用的语言之一。模数、代表元和互素条件都要写清楚；同一个整数在不同模数下会属于完全不同的余数类。这种语言能把大数问题压缩到有限集合中，但除法或开方只有在额外条件满足时才可以进行。因此模逆元还要结合对象范围和参数约定来读；条件改变时，同一公式表达的结构也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "模逆元",
+          "url": "https://www.baidu.com/s?wd=%E6%A8%A1%E9%80%86%E5%85%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "模逆元",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A8%A1%E9%80%86%E5%85%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "modular inverse element",
+          "url": "https://en.wikipedia.org/w/index.php?search=modular%20inverse%20element"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "线性同余方程",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "线性同余方程是未知数只以一次形式出现的同余方程。常写作 $ax\\equiv b\\pmod m$，其中$a,b,m$ 已知，$x$ 是未知整数。有解条件是 $\\gcd(a,m)$ 整除 $b$。\n\n它把线性方程和余数限制结合起来，是模逆元和裴蜀定理的直接应用。与实数线性方程不同，它可能无解，也可能在一个模数下有多个解类。线性同余方程把整数按余数分组，保留加法和乘法在模数下的行为，是初等数论最常用的语言之一。模数、代表元和互素条件都要写清楚；同一个整数在不同模数下会属于完全不同的余数类。这种语言能把大数问题压缩到有限集合中，但除法或开方只有在额外条件满足时才可以进行。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线性同余方程",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E6%80%A7%E5%90%8C%E4%BD%99%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线性同余方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E6%80%A7%E5%90%8C%E4%BD%99%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear congruence equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20congruence%20equation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "中国剩余定理",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "中国剩余定理处理若干模数两两互质的同余条件能否合并。常写作 $x\\equiv a_i\\pmod{m_i}$，其中$a_i$ 是余数，$m_i$ 是两两互质的模数。在模 $M=m_1\\cdots m_k$ 下存在唯一解类。\n\n它把多个局部余数信息拼成一个整体整数，是数论和计算中的重要工具。若模数不互质，就必须额外检查条件是否彼此相容。中国剩余定理把整数按余数分组，保留加法和乘法在模数下的行为，是初等数论最常用的语言之一。模数、代表元和互素条件都要写清楚；同一个整数在不同模数下会属于完全不同的余数类。这种语言能把大数问题压缩到有限集合中，但除法或开方只有在额外条件满足时才可以进行。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "中国剩余定理",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "中国剩余定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "chinese remainder theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=chinese%20remainder%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "费马小定理",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "费马小定理说明素数模下与素数互质的整数幂具有固定余数。常写作 $a^{p-1}\\equiv1\\pmod p$，其中$p$ 是素数，$p\\nmid a$。它来自模 $p$ 非零余数在乘法下可重排的性质。\n\n费马小定理常用于快速化简幂、判断合数和构造伪素数例子。它要求模数是素数；换成合数时一般要用欧拉定理或更强条件。这种语言能把大数问题压缩到有限集合中，但除法或开方只有在额外条件满足时才可以进行。费马小定理把整数按余数分组，保留加法和乘法在模数下的行为，是初等数论最常用的语言之一。模数、代表元和互素条件都要写清楚；同一个整数在不同模数下会属于完全不同的余数类。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "费马小定理",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%B9%E9%A9%AC%E5%B0%8F%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "费马小定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%B9%E9%A9%AC%E5%B0%8F%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fermat small theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=fermat%20small%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "欧拉函数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "欧拉函数计算不超过 $n$ 且与 $n$ 互质的正整数个数。常写作 $\\varphi(n)=|\\{1\\le k\\le n:\\gcd(k,n)=1\\}|$，其中$\\varphi(n)$ 是欧拉函数，竖线表示集合大小。它等于模 $n$ 可逆剩余类的数量。\n\n欧拉函数出现在欧拉定理、简化剩余系和循环群大小计算中。它不是简单的 $n$ 的比例；质因数结构会直接改变函数值。许多数论函数在互素整数上可分解，这让复杂求和能化为素数或约数层面的局部计算。读公式时要看清求和是遍历约数、素数还是全部正整数，范围不同会得到完全不同的函数。欧拉函数把每个正整数对应到一个数值，常通过约数、质因数或级数系数记录整数的乘法结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "欧拉函数",
+          "url": "https://www.baidu.com/s?wd=%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "欧拉函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "euler function",
+          "url": "https://en.wikipedia.org/w/index.php?search=euler%20function"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "欧拉定理",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "欧拉定理把费马小定理推广到任意正整数模数的可逆余数类。常写作 $a^{\\varphi(n)}\\equiv1\\pmod n$，其中$\\varphi(n)$ 是欧拉函数，要求 $\\gcd(a,n)=1$。指数等于模 $n$ 可逆类的个数。\n\n欧拉定理用于化简大指数和证明模逆元相关结论。若 $a$ 与 $n$ 不互质，公式通常失效，不能直接降指数。模数、代表元和互素条件都要写清楚；同一个整数在不同模数下会属于完全不同的余数类。这种语言能把大数问题压缩到有限集合中，但除法或开方只有在额外条件满足时才可以进行。欧拉定理把整数按余数分组，保留加法和乘法在模数下的行为，是初等数论最常用的语言之一。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "欧拉定理",
+          "url": "https://www.baidu.com/s?wd=%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "欧拉定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "euler theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=euler%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "威尔逊定理",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "威尔逊定理刻画素数模下所有非零余数的乘积。常写作 $(p-1)!\\equiv-1\\pmod p$，其中$p$ 是素数，$(p-1)!$ 是从一乘到 $p-1$。这个同余当且仅当 $p$ 为素数时成立。\n\n威尔逊定理给出素数判别的精确形式，也说明模素数乘法群中元素配对的结构。它理论上漂亮，但直接计算阶乘很大，通常不是实际判素的首选方法。这种语言能把大数问题压缩到有限集合中，但除法或开方只有在额外条件满足时才可以进行。威尔逊定理把整数按余数分组，保留加法和乘法在模数下的行为，是初等数论最常用的语言之一。模数、代表元和互素条件都要写清楚；同一个整数在不同模数下会属于完全不同的余数类。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "威尔逊定理",
+          "url": "https://www.baidu.com/s?wd=%E5%A8%81%E5%B0%94%E9%80%8A%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "威尔逊定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A8%81%E5%B0%94%E9%80%8A%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wilson theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=wilson%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "素数定理",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "素数定理描述不超过 $x$ 的素数数量的渐近规模。常写作 $\\pi(x)\\sim\\frac{x}{\\ln x}$，其中$\\pi(x)$ 是不超过 $x$ 的素数个数，$\\ln x$ 是自然对数。符号 $\\sim$ 表示二者比值趋近一。\n\n素数定理说明素数越来越稀疏，但整体密度大约像 $1/\\ln x$。它给的是大范围统计规律，不负责预测某一个具体整数是否为素数。这些命题有的已经是定理，有的仍是猜想；解释时要把已证结论和经验观察分清楚。它们常把简单的素数定义推向全局问题，公式中的参数往往表示规模，而不是给出逐项构造。素数定理描述素数的分布、构造或特殊类型，通常关心是否存在无穷多、间隔多大或哪些同余条件成立。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "素数定理",
+          "url": "https://www.baidu.com/s?wd=%E7%B4%A0%E6%95%B0%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "素数定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B4%A0%E6%95%B0%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "prime theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=prime%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "算术基本定理",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "算术基本定理是唯一分解定理的常用名称，强调正整数乘法结构由质数完全决定。常写作 $n=\\prod_{i=1}^k p_i^{\\alpha_i}$，其中$p_i$ 是不同质数，$\\alpha_i$ 是正整数。任意排列顺序外，分解形式唯一。\n\n它是约数计算、最大公因数和许多数论函数公式的基础。这一定理说明质数在整数中扮演类似积木的角色，但一不是积木。算术基本定理围绕乘法分解和余数为零展开，最常见的检验方式是把对象写成整数倍或质因数乘积。它把整数的乘法结构显露出来，因而常用于约分、方程有解条件和同余化简。使用时要注意零、负号和单位因子；这些约定不影响核心思想，却会影响表述是否严谨。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "算术基本定理",
+          "url": "https://www.baidu.com/s?wd=%E7%AE%97%E6%9C%AF%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "算术基本定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AE%97%E6%9C%AF%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fundamental theorem of arithmetic",
+          "url": "https://en.wikipedia.org/w/index.php?search=fundamental%20theorem%20of%20arithmetic"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "二次剩余",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "二次剩余是在给定模数下能够表示成平方的余数类。常写作 $x^2\\equiv a\\pmod p$，其中$p$ 常取奇素数，$x$ 是未知整数。若该同余有解，$a$ 就是模 $p$ 的二次剩余。\n\n二次剩余用于判断平方同余方程是否可解，也连接平方和和原根理论。它依赖模数；同一个整数在一个模下可能是剩余，在另一个模下不是。它常用于同余方程、平方和问题和原根理论；同一个数在不同素数模下可能表现相反。读这类结论时要注意模数通常要求为奇素数，推广到合数时符号意义会变得更细。二次剩余关注平方或幂在模素数下能取到哪些余数，核心是把乘法群的结构转成符号判断。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "二次剩余",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%8C%E6%AC%A1%E5%89%A9%E4%BD%99%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "二次剩余",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%8C%E6%AC%A1%E5%89%A9%E4%BD%99"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quadratic residue",
+          "url": "https://en.wikipedia.org/w/index.php?search=quadratic%20residue"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "二次非剩余",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "二次非剩余是在给定模数下不能表示成平方的非零余数类。常写作 $x^2\\not\\equiv a\\pmod p$，其中$p$ 常为奇素数，$a$ 与 $p$ 互素。它与二次剩余一起把非零余数分成两类。\n\n二次非剩余在构造有限域、原根和二次互反律中很常见。零通常单独处理，因为它本身是平方，却不属于可逆余数类。读这类结论时要注意模数通常要求为奇素数，推广到合数时符号意义会变得更细。二次非剩余关注平方或幂在模素数下能取到哪些余数，核心是把乘法群的结构转成符号判断。它常用于同余方程、平方和问题和原根理论；同一个数在不同素数模下可能表现相反。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "二次非剩余",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%8C%E6%AC%A1%E9%9D%9E%E5%89%A9%E4%BD%99%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "二次非剩余",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%8C%E6%AC%A1%E9%9D%9E%E5%89%A9%E4%BD%99"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quadratic non residue",
+          "url": "https://en.wikipedia.org/w/index.php?search=quadratic%20non%20residue"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "勒让德符号",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "勒让德符号用一个符号记录整数在奇素数模下是否为二次剩余。常写作 $\\left(\\frac ap\\right)\\equiv a^{(p-1)/2}\\pmod p$，其中$p$ 是奇素数，$a$ 是整数。符号取值为一、负一或零，分别对应剩余、非剩余或被 $p$ 整除。\n\n勒让德符号把二次剩余判断变成可计算的乘法符号。它的下标必须是奇素数；若下标为合数，要改用雅可比符号。读这类结论时要注意模数通常要求为奇素数，推广到合数时符号意义会变得更细。勒让德符号关注平方或幂在模素数下能取到哪些余数，核心是把乘法群的结构转成符号判断。它常用于同余方程、平方和问题和原根理论；同一个数在不同素数模下可能表现相反。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "勒让德符号",
+          "url": "https://www.baidu.com/s?wd=%E5%8B%92%E8%AE%A9%E5%BE%B7%E7%AC%A6%E5%8F%B7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "勒让德符号",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8B%92%E8%AE%A9%E5%BE%B7%E7%AC%A6%E5%8F%B7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "legendre sign",
+          "url": "https://en.wikipedia.org/w/index.php?search=legendre%20sign"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "雅可比符号",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "雅可比符号把勒让德符号形式上推广到奇合数分母。常写作 $\\left(\\frac an\\right)=\\prod_i\\left(\\frac a{p_i}\\right)^{e_i}$，其中$n=\\prod p_i^{e_i}$ 是奇数分解。它按质因数上的勒让德符号相乘定义。\n\n雅可比符号常用于二次剩余计算和概率判素法。符号等于一并不保证 $a$ 真是模 $n$ 的平方剩余，这是它与勒让德符号的重要差别。读这类结论时要注意模数通常要求为奇素数，推广到合数时符号意义会变得更细。雅可比符号关注平方或幂在模素数下能取到哪些余数，核心是把乘法群的结构转成符号判断。它常用于同余方程、平方和问题和原根理论；同一个数在不同素数模下可能表现相反。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "雅可比符号",
+          "url": "https://www.baidu.com/s?wd=%E9%9B%85%E5%8F%AF%E6%AF%94%E7%AC%A6%E5%8F%B7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "雅可比符号",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9B%85%E5%8F%AF%E6%AF%94%E7%AC%A6%E5%8F%B7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "jacobian sign",
+          "url": "https://en.wikipedia.org/w/index.php?search=jacobian%20sign"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "高斯引理",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "高斯引理用一组最小余数的符号变化来计算勒让德符号。常写作 $\\left(\\frac ap\\right)=(-1)^\\nu$，其中$p$ 是奇素数，$\\nu$ 是某些倍数落到负半区间的个数。奇偶性决定二次剩余符号。\n\n高斯引理是证明二次互反律的经典工具，也能手算某些勒让德符号。它不直接列出平方根，而是通过乘法排列观察符号翻转。它常用于同余方程、平方和问题和原根理论；同一个数在不同素数模下可能表现相反。读这类结论时要注意模数通常要求为奇素数，推广到合数时符号意义会变得更细。高斯引理关注平方或幂在模素数下能取到哪些余数，核心是把乘法群的结构转成符号判断。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "高斯引理",
+          "url": "https://www.baidu.com/s?wd=%E9%AB%98%E6%96%AF%E5%BC%95%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "高斯引理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%AB%98%E6%96%AF%E5%BC%95%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gauss lemma",
+          "url": "https://en.wikipedia.org/w/index.php?search=gauss%20lemma"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "二次互反律",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "二次互反律描述两个奇素数互为模数时二次剩余性的关系。常写作 $\\left(\\frac pq\\right)\\left(\\frac qp\\right)=(-1)^{\\frac{p-1}{2}\\frac{q-1}{2}}$，其中$p,q$ 是不同奇素数。只有当二者都为 $3\\bmod4$ 时符号会同时改变。\n\n二次互反律让勒让德符号计算可以把大模数互换成小模数。它是初等数论中连接局部平方可解性的核心定理。读这类结论时要注意模数通常要求为奇素数，推广到合数时符号意义会变得更细。二次互反律关注平方或幂在模素数下能取到哪些余数，核心是把乘法群的结构转成符号判断。它常用于同余方程、平方和问题和原根理论；同一个数在不同素数模下可能表现相反。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "二次互反律",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%8C%E6%AC%A1%E4%BA%92%E5%8F%8D%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "二次互反律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%8C%E6%AC%A1%E4%BA%92%E5%8F%8D%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quadratic reciprocity",
+          "url": "https://en.wikipedia.org/w/index.php?search=quadratic%20reciprocity"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "原根",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "原根是在模 $n$ 的可逆剩余类中通过幂生成全部元素的数。常写作 $\\{g^1,g^2,\\ldots,g^{\\varphi(n)}\\}\\pmod n$，其中$g$ 是原根，$\\varphi(n)$ 是可逆类个数。若这些幂遍历所有可逆类，$g$ 就生成乘法群。\n\n原根把模乘法问题转化为指数加法问题，常用于指标和离散对数。并非每个模数都有原根，存在性需要额外定理。这类概念常要求底数与模数互素；若条件失败，幂序列可能进入零因子而不再形成可逆循环。原根描述模乘法中的循环行为，重点是某个数反复乘自己后何时回到一或遍历所有可逆剩余类。它把同余计算和群论语言连接起来，使指数、阶和离散对数可以互相转换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "原根",
+          "url": "https://www.baidu.com/s?wd=%E5%8E%9F%E6%A0%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "原根",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8E%9F%E6%A0%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "original root",
+          "url": "https://en.wikipedia.org/w/index.php?search=original%20root"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "指标",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "指标是在选定原根后，用指数表示一个可逆剩余类。常写作 $g^k\\equiv a\\pmod n$，其中$g$ 是原根，$k$ 是 $a$ 的指标。指标把乘法同余转成指数的加法同余。\n\n它可用于解某些高次同余和简化乘法关系。指标依赖原根的选择；换一个原根，同一个 $a$ 的指标会改变。这类概念常要求底数与模数互素；若条件失败，幂序列可能进入零因子而不再形成可逆循环。指标描述模乘法中的循环行为，重点是某个数反复乘自己后何时回到一或遍历所有可逆剩余类。它把同余计算和群论语言连接起来，使指数、阶和离散对数可以互相转换。因此指标还要结合对象范围和参数约定来读；条件改变时，同一公式表达的结构也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "指标",
+          "url": "https://www.baidu.com/s?wd=%E6%8C%87%E6%A0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "指标",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8C%87%E6%A0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "index",
+          "url": "https://en.wikipedia.org/w/index.php?search=index"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "离散对数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "离散对数是在有限乘法结构中反求指数的问题。常写作 $k=\\log_g a,\\quad g^k\\equiv a\\pmod n$，其中$g$ 是底，$a$ 是目标余数，$k$ 是要求的指数。它是普通对数在有限循环群中的对应物。\n\n离散对数用于同余方程和密码学中的公钥构造。它与实数对数不同，解通常只在模某个周期意义下确定，计算也可能很难。它把同余计算和群论语言连接起来，使指数、阶和离散对数可以互相转换。这类概念常要求底数与模数互素；若条件失败，幂序列可能进入零因子而不再形成可逆循环。离散对数描述模乘法中的循环行为，重点是某个数反复乘自己后何时回到一或遍历所有可逆剩余类。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "离散对数",
+          "url": "https://www.baidu.com/s?wd=%E7%A6%BB%E6%95%A3%E5%AF%B9%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "离散对数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A6%BB%E6%95%A3%E5%AF%B9%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "discrete logarithm",
+          "url": "https://en.wikipedia.org/w/index.php?search=discrete%20logarithm"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "阶",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "阶是一个可逆剩余类反复相乘后第一次回到一所需的正指数。常写作 $\\operatorname{ord}_n(a)=\\min\\{k>0:a^k\\equiv1\\pmod n\\}$，其中$n$ 是模数，$a$ 与 $n$ 互素。阶一定整除 $\\varphi(n)$。\n\n阶用于分析幂的周期、原根和费马类同余。它不是数的大小，而是模乘法循环长度。它把同余计算和群论语言连接起来，使指数、阶和离散对数可以互相转换。这类概念常要求底数与模数互素；若条件失败，幂序列可能进入零因子而不再形成可逆循环。阶描述模乘法中的循环行为，重点是某个数反复乘自己后何时回到一或遍历所有可逆剩余类。因此阶还要结合对象范围和参数约定来读；条件改变时，同一公式表达的结构也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阶",
+          "url": "https://www.baidu.com/s?wd=%E9%98%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阶",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "level",
+          "url": "https://en.wikipedia.org/w/index.php?search=level"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "循环节",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "循环节描述数列、余数序列或小数展开中重复出现的最短周期。常写作 $a_{r+T}=a_r$，其中$T$ 是周期长度，$a_r$ 是序列第 $r$ 项。在分数小数展开中，循环节与分母的模十阶有关。\n\n循环节把除法、同余和周期序列联系起来。它依赖起始位置；有些序列先有非循环前段，再进入稳定重复。循环节描述模乘法中的循环行为，重点是某个数反复乘自己后何时回到一或遍历所有可逆剩余类。它把同余计算和群论语言连接起来，使指数、阶和离散对数可以互相转换。这类概念常要求底数与模数互素；若条件失败，幂序列可能进入零因子而不再形成可逆循环。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "循环节",
+          "url": "https://www.baidu.com/s?wd=%E5%BE%AA%E7%8E%AF%E8%8A%82%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "循环节",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BE%AA%E7%8E%AF%E8%8A%82"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cycle section",
+          "url": "https://en.wikipedia.org/w/index.php?search=cycle%20section"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "伪素数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "伪素数是合数却通过某种素数检验的整数。常写作 $a^{n-1}\\equiv1\\pmod n$，其中$n$ 是合数，$a$ 是选定底数。满足这个费马同余的合数称为以 $a$ 为底的费马伪素数。\n\n伪素数提醒人们单一同余条件不足以完全判定素数。它不是素数，只是在某个检验下表现得像素数。伪素数描述素数的分布、构造或特殊类型，通常关心是否存在无穷多、间隔多大或哪些同余条件成立。这些命题有的已经是定理，有的仍是猜想；解释时要把已证结论和经验观察分清楚。它们常把简单的素数定义推向全局问题，公式中的参数往往表示规模，而不是给出逐项构造。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "伪素数",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%AA%E7%B4%A0%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "伪素数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%AA%E7%B4%A0%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pseudoprime",
+          "url": "https://en.wikipedia.org/w/index.php?search=pseudoprime"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "卡迈克尔数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "卡迈克尔数是对所有互素底数都满足费马同余的合数。常写作 $a^{n-1}\\equiv1\\pmod n\\quad(\\gcd(a,n)=1)$，其中$n$ 是合数，$a$ 遍历与 $n$ 互素的整数。因此它会骗过所有费马底数检验。\n\n卡迈克尔数在判素理论中说明需要更精细的检验方法。它比普通伪素数更强，但仍然不是素数。它们常把简单的素数定义推向全局问题，公式中的参数往往表示规模，而不是给出逐项构造。卡迈克尔数描述素数的分布、构造或特殊类型，通常关心是否存在无穷多、间隔多大或哪些同余条件成立。这些命题有的已经是定理，有的仍是猜想；解释时要把已证结论和经验观察分清楚。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "卡迈克尔数",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%A1%E8%BF%88%E5%85%8B%E5%B0%94%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "卡迈克尔数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%A1%E8%BF%88%E5%85%8B%E5%B0%94%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "carmichael number",
+          "url": "https://en.wikipedia.org/w/index.php?search=carmichael%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "梅森数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "梅森数是形如二的幂减一的整数。常写作 $M_p=2^p-1$，其中$p$ 是指数，$M_p$ 是对应梅森数。若 $M_p$ 为素数，则 $p$ 本身必须为素数。\n\n梅森素数与偶完全数有紧密联系，也是大素数搜索的重要对象。并非所有质数指数都给出梅森素数，例如指数为十一时得到合数。梅森数是一类由递推、生成式或特殊展开给出的数列，数论中常关心它的整除性、素性和同余模式。序列项的定义通常很短，但性质可能依赖因子分解、递推矩阵或模周期。使用时要分清第几项、初始值和索引约定，不同教材的起点差一位时公式也会跟着改变。因此梅森数还要结合对象范围和参数约定来读；条件改变时，同一公式表达的结构也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "梅森数",
+          "url": "https://www.baidu.com/s?wd=%E6%A2%85%E6%A3%AE%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "梅森数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A2%85%E6%A3%AE%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mersenne number",
+          "url": "https://en.wikipedia.org/w/index.php?search=mersenne%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "费马数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "费马数是形如二的二次幂再加一的整数。常写作 $F_n=2^{2^n}+1$，其中$n$ 是非负整数，$F_n$ 是第 $n$ 个费马数。早期几个例子为素数，但一般不保证为素数。\n\n费马数与尺规作图中的正多边形可作性有关。它不同于费马小定理中的素数模结论，只是以费马命名的一类数列。费马数是一类由递推、生成式或特殊展开给出的数列，数论中常关心它的整除性、素性和同余模式。序列项的定义通常很短，但性质可能依赖因子分解、递推矩阵或模周期。使用时要分清第几项、初始值和索引约定，不同教材的起点差一位时公式也会跟着改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "费马数",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%B9%E9%A9%AC%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "费马数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%B9%E9%A9%AC%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fermat number",
+          "url": "https://en.wikipedia.org/w/index.php?search=fermat%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "斐波那契数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "斐波那契数由前两项相加得到后一项，是最常见的递推整数序列之一。常写作 $F_{n+1}=F_n+F_{n-1}$，其中$F_n$ 是第 $n$ 项，通常取 $F_0=0,F_1=1$。递推使它在模任意整数下都会出现周期。\n\n斐波那契数在组合计数、连分数和整除性质中反复出现。使用时要先确认下标起点，因为有些教材从 $F_1=F_2=1$ 开始。使用时要分清第几项、初始值和索引约定，不同教材的起点差一位时公式也会跟着改变。斐波那契数是一类由递推、生成式或特殊展开给出的数列，数论中常关心它的整除性、素性和同余模式。序列项的定义通常很短，但性质可能依赖因子分解、递推矩阵或模周期。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "斐波那契数",
+          "url": "https://www.baidu.com/s?wd=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "斐波那契数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fibonacci numbers",
+          "url": "https://en.wikipedia.org/w/index.php?search=fibonacci%20numbers"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "卢卡斯数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "卢卡斯数是与斐波那契数同递推但初值不同的整数序列。常写作 $L_{n+1}=L_n+L_{n-1}$，其中常取 $L_0=2,L_1=1$。相同递推带来相似的恒等式和模周期。\n\n卢卡斯数常与斐波那契数一起用于判素、递推恒等式和二次方程根表达。它不是斐波那契数的简单改名；初值改变会改变每一项。序列项的定义通常很短，但性质可能依赖因子分解、递推矩阵或模周期。使用时要分清第几项、初始值和索引约定，不同教材的起点差一位时公式也会跟着改变。卢卡斯数是一类由递推、生成式或特殊展开给出的数列，数论中常关心它的整除性、素性和同余模式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "卢卡斯数",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%A2%E5%8D%A1%E6%96%AF%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "卢卡斯数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%A2%E5%8D%A1%E6%96%AF%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lucas number",
+          "url": "https://en.wikipedia.org/w/index.php?search=lucas%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "伯努利数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "伯努利数是由生成函数定义的一列有理数。常写作 $\\frac{x}{e^x-1}=\\sum_{n\\ge0}B_n\\frac{x^n}{n!}$，其中$B_n$ 是第 $n$ 个伯努利数。它们自然出现在幂和公式和特殊函数展开中。\n\n伯努利数连接整数幂求和、黎曼ζ函数取值和正则素数判定。它们通常不是整数，讨论同余时要同时处理分母。序列项的定义通常很短，但性质可能依赖因子分解、递推矩阵或模周期。使用时要分清第几项、初始值和索引约定，不同教材的起点差一位时公式也会跟着改变。伯努利数是一类由递推、生成式或特殊展开给出的数列，数论中常关心它的整除性、素性和同余模式。因此伯努利数还要结合对象范围和参数约定来读；条件改变时，同一公式表达的结构也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "伯努利数",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "伯努利数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bernoulli number",
+          "url": "https://en.wikipedia.org/w/index.php?search=bernoulli%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "欧拉数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "欧拉数是一列出现在三角函数展开和交错排列计数中的整数。常写作 $\\sec x=\\sum_{n\\ge0}E_{2n}\\frac{x^{2n}}{(2n)!}$，其中$E_{2n}$ 是偶下标欧拉数。不同教材可能用符号约定改变正负号。\n\n欧拉数在组合排列、特殊函数和某些同余恒等式中出现。它不同于欧拉函数；前者是序列，后者是数论函数。欧拉数是一类由递推、生成式或特殊展开给出的数列，数论中常关心它的整除性、素性和同余模式。序列项的定义通常很短，但性质可能依赖因子分解、递推矩阵或模周期。使用时要分清第几项、初始值和索引约定，不同教材的起点差一位时公式也会跟着改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "欧拉数",
+          "url": "https://www.baidu.com/s?wd=%E6%AC%A7%E6%8B%89%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "欧拉数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AC%A7%E6%8B%89%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "euler number",
+          "url": "https://en.wikipedia.org/w/index.php?search=euler%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "完全数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "完全数是所有正因数之和恰好等于自身两倍的正整数。常写作 $\\sigma(n)=2n$，其中$\\sigma(n)$ 表示 $n$ 的所有正因数之和。等价地说，真因数和等于 $n$。\n\n完全数与梅森素数有经典联系，偶完全数都可由欧几里得欧拉公式给出。它不同于平方数或质数，是由约数和决定的性质。完全数把每个正整数对应到一个数值，常通过约数、质因数或级数系数记录整数的乘法结构。许多数论函数在互素整数上可分解，这让复杂求和能化为素数或约数层面的局部计算。读公式时要看清求和是遍历约数、素数还是全部正整数，范围不同会得到完全不同的函数。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "完全数",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%8C%E5%85%A8%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "完全数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%8C%E5%85%A8%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "perfect number",
+          "url": "https://en.wikipedia.org/w/index.php?search=perfect%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "亲和数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "亲和数是一对彼此等于对方真因数和的正整数。常写作 $\\sigma(a)-a=b,\\quad \\sigma(b)-b=a$，其中$\\sigma$ 是约数和函数，$a,b$ 是两个数。每个数的真因数和指向另一个数。\n\n亲和数展示约数结构之间的配对关系，常作为约数和函数的经典例子。它不是两个数互质或相近大小的意思，条件完全由因数和决定。亲和数把每个正整数对应到一个数值，常通过约数、质因数或级数系数记录整数的乘法结构。许多数论函数在互素整数上可分解，这让复杂求和能化为素数或约数层面的局部计算。读公式时要看清求和是遍历约数、素数还是全部正整数，范围不同会得到完全不同的函数。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "亲和数",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%B2%E5%92%8C%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "亲和数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%B2%E5%92%8C%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "affinity number",
+          "url": "https://en.wikipedia.org/w/index.php?search=affinity%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "亏数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "亏数是真因数和小于自身的正整数。常写作 $\\sigma(n)<2n$，其中$\\sigma(n)$ 是全部正因数和。这个不等式等价于真因数和小于 $n$。\n\n亏数与完全数、盈数一起按约数和大小分类正整数。质数一定是亏数，但合数也可能亏，例如四的真因数和为三。读公式时要看清求和是遍历约数、素数还是全部正整数，范围不同会得到完全不同的函数。亏数把每个正整数对应到一个数值，常通过约数、质因数或级数系数记录整数的乘法结构。许多数论函数在互素整数上可分解，这让复杂求和能化为素数或约数层面的局部计算。因此亏数还要结合对象范围和参数约定来读；条件改变时，同一公式表达的结构也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "亏数",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%8F%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "亏数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%8F%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "losing number",
+          "url": "https://en.wikipedia.org/w/index.php?search=losing%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "盈数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "盈数是真因数和大于自身的正整数。常写作 $\\sigma(n)>2n$，其中$\\sigma(n)$ 是全部正因数和。等价地说，真因数和超过 $n$。\n\n盈数用于研究约数丰富程度，也是完全数分类的另一侧。它不表示数值很大，而表示因数结构足够密集。读公式时要看清求和是遍历约数、素数还是全部正整数，范围不同会得到完全不同的函数。盈数把每个正整数对应到一个数值，常通过约数、质因数或级数系数记录整数的乘法结构。许多数论函数在互素整数上可分解，这让复杂求和能化为素数或约数层面的局部计算。因此盈数还要结合对象范围和参数约定来读；条件改变时，同一公式表达的结构也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "盈数",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%88%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "盈数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%88%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "profit number",
+          "url": "https://en.wikipedia.org/w/index.php?search=profit%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "平方数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "平方数是某个整数自乘得到的数。常写作 $n=k^2$，其中$k$ 是整数，$n$ 是平方数。平方数在质因数分解中表现为所有质因数指数均为偶数。\n\n平方数出现在二次剩余、勾股方程和平方和问题中。它不同于二次剩余；平方数是在整数中相等，二次剩余是在模数下相等。平方数把整数条件写成方程、表示式或有限项组合，核心问题是何时存在整数解以及表示有多少种。这类问题常把局部同余限制和整体构造结合起来，先看模条件能排除哪些数，再寻找实际解。变量必须限制为整数，若允许实数，方程含义会完全改变，数论难点也会消失。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平方数",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E6%96%B9%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平方数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E6%96%B9%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "square number",
+          "url": "https://en.wikipedia.org/w/index.php?search=square%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "立方数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "立方数是某个整数三次方得到的数。常写作 $n=k^3$，其中$k$ 是整数，$n$ 是立方数。在质因数分解中，每个质因数指数都是三的倍数。\n\n立方数常出现在高次丢番图方程和幂和问题中。它与平方数的判别方式相似，但指数整除条件不同。立方数把整数条件写成方程、表示式或有限项组合，核心问题是何时存在整数解以及表示有多少种。这类问题常把局部同余限制和整体构造结合起来，先看模条件能排除哪些数，再寻找实际解。变量必须限制为整数，若允许实数，方程含义会完全改变，数论难点也会消失。因此立方数还要结合对象范围和参数约定来读；条件改变时，同一公式表达的结构也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "立方数",
+          "url": "https://www.baidu.com/s?wd=%E7%AB%8B%E6%96%B9%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "立方数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AB%8B%E6%96%B9%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cubic number",
+          "url": "https://en.wikipedia.org/w/index.php?search=cubic%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "三角数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "三角数是可以排成等边三角形点阵的整数。常写作 $T_n=\\frac{n(n+1)}2$，其中$T_n$ 是第 $n$ 个三角数。它等于前 $n$ 个正整数之和。\n\n三角数把几何点阵、组合选择和平方和问题联系起来。它不是任意多边形数的统称，而是三边情形的特例。三角数把整数条件写成方程、表示式或有限项组合，核心问题是何时存在整数解以及表示有多少种。这类问题常把局部同余限制和整体构造结合起来，先看模条件能排除哪些数，再寻找实际解。变量必须限制为整数，若允许实数，方程含义会完全改变，数论难点也会消失。因此三角数还要结合对象范围和参数约定来读；条件改变时，同一公式表达的结构也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "三角数",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%89%E8%A7%92%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "三角数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%89%E8%A7%92%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "triangulated number",
+          "url": "https://en.wikipedia.org/w/index.php?search=triangulated%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "多边形数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "多边形数是把点排成正多边形层状图形得到的整数序列。常写作 $P_s(n)=\\frac{(s-2)n^2-(s-4)n}{2}$，其中$s$ 是边数，$n$ 是层数。当 $s=3$ 时得到三角数，$s=4$ 时得到平方数。\n\n多边形数用于研究整数的几何表示和加性分解。不同边数给出不同序列，不能只凭数值形状混同。这类问题常把局部同余限制和整体构造结合起来，先看模条件能排除哪些数，再寻找实际解。变量必须限制为整数，若允许实数，方程含义会完全改变，数论难点也会消失。多边形数把整数条件写成方程、表示式或有限项组合，核心问题是何时存在整数解以及表示有多少种。因此多边形数还要结合对象范围和参数约定来读；条件改变时，同一公式表达的结构也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "多边形数",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%9A%E8%BE%B9%E5%BD%A2%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "多边形数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%9A%E8%BE%B9%E5%BD%A2%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "number of polygons",
+          "url": "https://en.wikipedia.org/w/index.php?search=number%20of%20polygons"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "勾股数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "勾股数是满足直角三角形边长关系的一组三个正整数。常写作 $a^2+b^2=c^2$，其中$a,b$ 是直角边，$c$ 是斜边。它给出整边直角三角形。\n\n勾股数把几何中的勾股定理转化为整数方程。它不同于任意三角形边长，必须同时满足平方关系和正整数条件。勾股数把整数条件写成方程、表示式或有限项组合，核心问题是何时存在整数解以及表示有多少种。这类问题常把局部同余限制和整体构造结合起来，先看模条件能排除哪些数，再寻找实际解。变量必须限制为整数，若允许实数，方程含义会完全改变，数论难点也会消失。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "勾股数",
+          "url": "https://www.baidu.com/s?wd=%E5%8B%BE%E8%82%A1%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "勾股数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8B%BE%E8%82%A1%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pythagorean",
+          "url": "https://en.wikipedia.org/w/index.php?search=pythagorean"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "本原勾股数组",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "本原勾股数组是三边没有公共大于一因子的勾股数。常写作 $a^2+b^2=c^2,\\quad \\gcd(a,b,c)=1$，其中$a,b,c$ 是正整数边长。本原条件表示三边不能同时约去同一个因子。\n\n所有勾股数组都可由本原组乘以公共倍数得到。它强调最基本的整数形状，而不是所有按比例放大的三角形。本原勾股数组把整数条件写成方程、表示式或有限项组合，核心问题是何时存在整数解以及表示有多少种。这类问题常把局部同余限制和整体构造结合起来，先看模条件能排除哪些数，再寻找实际解。变量必须限制为整数，若允许实数，方程含义会完全改变，数论难点也会消失。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "本原勾股数组",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%AC%E5%8E%9F%E5%8B%BE%E8%82%A1%E6%95%B0%E7%BB%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "本原勾股数组",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%AC%E5%8E%9F%E5%8B%BE%E8%82%A1%E6%95%B0%E7%BB%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "primitive pythagorean array",
+          "url": "https://en.wikipedia.org/w/index.php?search=primitive%20pythagorean%20array"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "连分数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "连分数是把数表示为整数部分加上倒数递归嵌套的形式。常写作 $x=a_0+\\frac1{a_1+\\frac1{a_2+\\cdots}}$，其中$a_i$ 是各层的部分商。有限连分数表示有理数，无限连分数可表示无理数。\n\n连分数适合研究有理逼近、佩尔方程和二次无理数周期。它不同于普通小数展开，连分数的截断往往给出很好的近似。连分数把实数或无理数同有理数联系起来，重点是分母受限时怎样得到误差尽量小的近似。连分数的每一层部分商都记录一次整数除法，因此它和带余除法、同余周期也有自然联系。使用时要区分目标数、近似分数和截断层数；改变初始约定会改变后续渐近分数的写法。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "连分数",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%9E%E5%88%86%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "连分数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%9E%E5%88%86%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "continued fractions",
+          "url": "https://en.wikipedia.org/w/index.php?search=continued%20fractions"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "简单连分数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "简单连分数是除第一项外所有部分商都为正整数的连分数。常写作 $[a_0;a_1,a_2,\\ldots]$，其中$a_0$ 是整数，$a_i>0$ 是后续部分商。这种记号压缩了嵌套倒数结构。\n\n简单连分数的渐近分数给出数的优良有理逼近。它比一般连分数限制更强，但在实数逼近中最常用。使用时要区分目标数、近似分数和截断层数；改变初始约定会改变后续渐近分数的写法。简单连分数把实数或无理数同有理数联系起来，重点是分母受限时怎样得到误差尽量小的近似。连分数的每一层部分商都记录一次整数除法，因此它和带余除法、同余周期也有自然联系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "简单连分数",
+          "url": "https://www.baidu.com/s?wd=%E7%AE%80%E5%8D%95%E8%BF%9E%E5%88%86%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "简单连分数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AE%80%E5%8D%95%E8%BF%9E%E5%88%86%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "simple continued fractions",
+          "url": "https://en.wikipedia.org/w/index.php?search=simple%20continued%20fractions"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "最佳逼近",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "最佳逼近指在分母受限时最接近给定实数的有理数近似。常写作 $|x-p/q|$，其中$x$ 是目标数，$p/q$ 是有理近似。误差越小，逼近越好，但还要考虑分母大小。\n\n连分数的渐近分数常给出最佳逼近或接近最佳的结果。它不是只看小数位相同多少；分母限制是数论逼近的关键条件。连分数的每一层部分商都记录一次整数除法，因此它和带余除法、同余周期也有自然联系。使用时要区分目标数、近似分数和截断层数；改变初始约定会改变后续渐近分数的写法。最佳逼近把实数或无理数同有理数联系起来，重点是分母受限时怎样得到误差尽量小的近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最佳逼近",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E4%BD%B3%E9%80%BC%E8%BF%91%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最佳逼近",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E4%BD%B3%E9%80%BC%E8%BF%91"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "best approximation",
+          "url": "https://en.wikipedia.org/w/index.php?search=best%20approximation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "丢番图方程",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "丢番图方程是要求未知数取整数值的代数方程。常写作 $F(x_1,\\ldots,x_n)=0$，其中$F$ 是整系数多项式，$x_i$ 是整数未知量。同一个方程若允许实数，难度和含义都会改变。\n\n丢番图方程研究整数解的存在、个数和结构。它不是某一条具体公式，而是一类整数约束问题的总称。变量必须限制为整数，若允许实数，方程含义会完全改变，数论难点也会消失。丢番图方程把整数条件写成方程、表示式或有限项组合，核心问题是何时存在整数解以及表示有多少种。这类问题常把局部同余限制和整体构造结合起来，先看模条件能排除哪些数，再寻找实际解。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "丢番图方程",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%A2%E7%95%AA%E5%9B%BE%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "丢番图方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%A2%E7%95%AA%E5%9B%BE%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "diophantine equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=diophantine%20equation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "线性丢番图方程",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "线性丢番图方程是未知数只一次出现的丢番图方程。常写作 $a_1x_1+\\cdots+a_nx_n=b$，其中$a_i,b$ 是整数，$x_i$ 是整数未知量。有解性通常由系数最大公因数是否整除右端决定。\n\n线性丢番图方程是裴蜀定理和同余方程的自然应用。它与实数线性方程不同，整数限制会引入整除条件。这类问题常把局部同余限制和整体构造结合起来，先看模条件能排除哪些数，再寻找实际解。变量必须限制为整数，若允许实数，方程含义会完全改变，数论难点也会消失。线性丢番图方程把整数条件写成方程、表示式或有限项组合，核心问题是何时存在整数解以及表示有多少种。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线性丢番图方程",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E6%80%A7%E4%B8%A2%E7%95%AA%E5%9B%BE%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线性丢番图方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E6%80%A7%E4%B8%A2%E7%95%AA%E5%9B%BE%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear diophantine equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20diophantine%20equation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "佩尔方程",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "佩尔方程是形如平方差等于一的二次丢番图方程。常写作 $x^2-Dy^2=1$，其中$D$ 是非平方正整数，$x,y$ 是整数未知量。非平方条件保证问题不是简单因式分解。\n\n佩尔方程与二次无理数的连分数周期密切相关。它名字虽叫方程，重点常在全部整数解的递推结构。这类问题常把局部同余限制和整体构造结合起来，先看模条件能排除哪些数，再寻找实际解。变量必须限制为整数，若允许实数，方程含义会完全改变，数论难点也会消失。佩尔方程把整数条件写成方程、表示式或有限项组合，核心问题是何时存在整数解以及表示有多少种。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "佩尔方程",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%A9%E5%B0%94%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "佩尔方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%A9%E5%B0%94%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pell equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=pell%20equation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "平方和定理",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "平方和定理泛指把整数表示成若干平方和的判定或表示结果。常写作 $n=x_1^2+\\cdots+x_k^2$，其中$n$ 是目标整数，$x_i$ 是整数变量。不同的 $k$ 会得到不同定理和限制。\n\n平方和问题把同余限制、几何长度和整数表示联系起来。说平方和定理时通常要说明是两平方、三平方还是四平方版本。变量必须限制为整数，若允许实数，方程含义会完全改变，数论难点也会消失。平方和定理把整数条件写成方程、表示式或有限项组合，核心问题是何时存在整数解以及表示有多少种。这类问题常把局部同余限制和整体构造结合起来，先看模条件能排除哪些数，再寻找实际解。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平方和定理",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E6%96%B9%E5%92%8C%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平方和定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E6%96%B9%E5%92%8C%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "sum of squares theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=sum%20of%20squares%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "两平方和定理",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "两平方和定理判定一个正整数什么时候能写成两个整数平方之和。常写作 $n=a^2+b^2$，其中$a,b$ 是整数。质因数分解中形如 $4k+3$ 的质数必须出现偶数次。\n\n两平方和定理把整数表示问题转成质因数指数条件。它比二次剩余更具体，直接关心整数等式而不只是模意义。两平方和定理把整数条件写成方程、表示式或有限项组合，核心问题是何时存在整数解以及表示有多少种。这类问题常把局部同余限制和整体构造结合起来，先看模条件能排除哪些数，再寻找实际解。变量必须限制为整数，若允许实数，方程含义会完全改变，数论难点也会消失。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "两平方和定理",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%A4%E5%B9%B3%E6%96%B9%E5%92%8C%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "两平方和定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%A4%E5%B9%B3%E6%96%B9%E5%92%8C%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "sum of two squares theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=sum%20of%20two%20squares%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "四平方和定理",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "四平方和定理说明每个非负整数都能表示为四个整数平方之和。常写作 $n=a^2+b^2+c^2+d^2$，其中$a,b,c,d$ 是整数。这里允许某些平方项为零。\n\n四平方和定理给出非常强的加性表示结论，是华林问题的经典源头之一。它不声称表示唯一；同一个整数往往有多种四平方表示。四平方和定理把整数条件写成方程、表示式或有限项组合，核心问题是何时存在整数解以及表示有多少种。这类问题常把局部同余限制和整体构造结合起来，先看模条件能排除哪些数，再寻找实际解。变量必须限制为整数，若允许实数，方程含义会完全改变，数论难点也会消失。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "四平方和定理",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%9B%E5%B9%B3%E6%96%B9%E5%92%8C%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "四平方和定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%9B%E5%B9%B3%E6%96%B9%E5%92%8C%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "four sum of squares theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=four%20sum%20of%20squares%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "三平方和定理",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "三平方和定理刻画哪些非负整数能表示为三个整数平方之和。常写作 $n\\ne4^a(8b+7)$，其中$a,b$ 是非负整数。只有不属于这种形状的数才有三平方表示。\n\n三平方和定理说明局部同余障碍可以完整决定三平方可表示性。它与四平方和定理不同，三项时确实存在不能表示的整数。三平方和定理把整数条件写成方程、表示式或有限项组合，核心问题是何时存在整数解以及表示有多少种。这类问题常把局部同余限制和整体构造结合起来，先看模条件能排除哪些数，再寻找实际解。变量必须限制为整数，若允许实数，方程含义会完全改变，数论难点也会消失。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "三平方和定理",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%89%E5%B9%B3%E6%96%B9%E5%92%8C%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "三平方和定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%89%E5%B9%B3%E6%96%B9%E5%92%8C%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "three sum of squares theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=three%20sum%20of%20squares%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "华林问题",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "华林问题研究每个正整数能否表示为有限个固定次数幂的和。常写作 $n=x_1^k+\\cdots+x_s^k$，其中$k$ 是固定幂次，$s$ 是允许的项数。问题关心对每个 $k$ 需要多大的 $s$。\n\n华林问题把四平方定理推广到高次幂的加性表示。它不是求某个数的一次分解，而是寻找覆盖所有整数的统一项数界。这类问题常把局部同余限制和整体构造结合起来，先看模条件能排除哪些数，再寻找实际解。变量必须限制为整数，若允许实数，方程含义会完全改变，数论难点也会消失。华林问题把整数条件写成方程、表示式或有限项组合，核心问题是何时存在整数解以及表示有多少种。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "华林问题",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8E%E6%9E%97%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "华林问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8E%E6%9E%97%E9%97%AE%E9%A2%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "waring problem",
+          "url": "https://en.wikipedia.org/w/index.php?search=waring%20problem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "分拆函数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "分拆函数计算把整数写成若干正整数和且不计顺序的方式数。常写作 $\\sum_{n\\ge0}p(n)x^n=\\prod_{m\\ge1}(1-x^m)^{-1}$，其中$p(n)$ 是分拆数，$x$ 是形式变量。乘积中每个因子记录某个部分大小可出现任意次。\n\n分拆函数连接组合计数、生成函数和模形式中的同余现象。它分拆的是整数大小，不是把一个集合拆成若干块。许多数论函数在互素整数上可分解，这让复杂求和能化为素数或约数层面的局部计算。读公式时要看清求和是遍历约数、素数还是全部正整数，范围不同会得到完全不同的函数。分拆函数把每个正整数对应到一个数值，常通过约数、质因数或级数系数记录整数的乘法结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分拆函数",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E6%8B%86%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分拆函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E6%8B%86%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "split function",
+          "url": "https://en.wikipedia.org/w/index.php?search=split%20function"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "莫比乌斯函数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "莫比乌斯函数是按质因数重复情况取值的数论函数。常写作 $\\mu(n)=0,\\ \\pm1$，其中$\\mu(n)=0$ 表示 $n$ 含平方质因子，$\\pm1$ 由不同质因数个数奇偶决定。它在约数求和中起到反演系数的作用。\n\n莫比乌斯函数能把累积的约数和关系拆回原函数。它的值虽小，却编码了一个数是否平方自由。莫比乌斯函数把每个正整数对应到一个数值，常通过约数、质因数或级数系数记录整数的乘法结构。许多数论函数在互素整数上可分解，这让复杂求和能化为素数或约数层面的局部计算。读公式时要看清求和是遍历约数、素数还是全部正整数，范围不同会得到完全不同的函数。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "莫比乌斯函数",
+          "url": "https://www.baidu.com/s?wd=%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "莫比乌斯函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "m bius function",
+          "url": "https://en.wikipedia.org/w/index.php?search=m%20bius%20function"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "莫比乌斯反演",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "莫比乌斯反演把约数上的累积求和关系反推出原函数。常写作 $g(n)=\\sum_{d\\mid n}f(d)\\Rightarrow f(n)=\\sum_{d\\mid n}\\mu(d)g(n/d)$，其中$d$ 遍历 $n$ 的正因数，$\\mu$ 是莫比乌斯函数。第二个求和抵消了前一个约数求和的重复。\n\n莫比乌斯反演常用于从总量恢复精确量，例如互素计数和原始对象计数。它要求求和结构确实按整除偏序展开。莫比乌斯反演把每个正整数对应到一个数值，常通过约数、质因数或级数系数记录整数的乘法结构。许多数论函数在互素整数上可分解，这让复杂求和能化为素数或约数层面的局部计算。读公式时要看清求和是遍历约数、素数还是全部正整数，范围不同会得到完全不同的函数。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "莫比乌斯反演",
+          "url": "https://www.baidu.com/s?wd=%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "莫比乌斯反演",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "m bius inversion",
+          "url": "https://en.wikipedia.org/w/index.php?search=m%20bius%20inversion"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "约数函数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "约数函数通常指计算正因数个数的函数。常写作 $d(n)=\\sum_{d\\mid n}1$，其中求和中的 $d$ 遍历 $n$ 的所有正因数。每个因数贡献一。\n\n约数函数由质因数分解中的指数直接决定，也常出现在平均阶研究中。它不同于约数和函数；一个数个数，一个加数值。许多数论函数在互素整数上可分解，这让复杂求和能化为素数或约数层面的局部计算。读公式时要看清求和是遍历约数、素数还是全部正整数，范围不同会得到完全不同的函数。约数函数把每个正整数对应到一个数值，常通过约数、质因数或级数系数记录整数的乘法结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "约数函数",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%A6%E6%95%B0%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "约数函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%A6%E6%95%B0%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "divisor function",
+          "url": "https://en.wikipedia.org/w/index.php?search=divisor%20function"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "约数和函数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "约数和函数把一个正整数的所有正因数相加。常写作 $\\sigma(n)=\\sum_{d\\mid n}d$，其中$d$ 遍历 $n$ 的正因数。每个因数按自身大小贡献。\n\n约数和函数用于完全数、盈亏数和乘法函数计算。它与约数函数符号相近，但数值含义不同。读公式时要看清求和是遍历约数、素数还是全部正整数，范围不同会得到完全不同的函数。约数和函数把每个正整数对应到一个数值，常通过约数、质因数或级数系数记录整数的乘法结构。许多数论函数在互素整数上可分解，这让复杂求和能化为素数或约数层面的局部计算。因此约数和函数还要结合对象范围和参数约定来读；条件改变时，同一公式表达的结构也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "约数和函数",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%A6%E6%95%B0%E5%92%8C%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "约数和函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%A6%E6%95%B0%E5%92%8C%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "divisors and functions",
+          "url": "https://en.wikipedia.org/w/index.php?search=divisors%20and%20functions"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "欧拉积",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "欧拉积把某些狄利克雷级数分解成按素数排列的无限乘积。常写作 $\\sum_{n\\ge1}a_n n^{-s}=\\prod_p(1+a_p p^{-s}+\\cdots)$，其中$p$ 遍历素数，$s$ 是复变量或形式参数。分解依赖整数的唯一质因数分解。\n\n欧拉积把全体整数求和拆成素数局部因子的乘积。它不是普通有限乘法；收敛性或形式解释需要根据具体级数说明。欧拉积把每个正整数对应到一个数值，常通过约数、质因数或级数系数记录整数的乘法结构。许多数论函数在互素整数上可分解，这让复杂求和能化为素数或约数层面的局部计算。读公式时要看清求和是遍历约数、素数还是全部正整数，范围不同会得到完全不同的函数。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "欧拉积",
+          "url": "https://www.baidu.com/s?wd=%E6%AC%A7%E6%8B%89%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "欧拉积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AC%A7%E6%8B%89%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "euler product",
+          "url": "https://en.wikipedia.org/w/index.php?search=euler%20product"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "狄利克雷卷积",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "狄利克雷卷积是在正整数约数上定义的函数卷积。常写作 $(f*g)(n)=\\sum_{d\\mid n}f(d)g(n/d)$，其中$d$ 遍历 $n$ 的正因数。它把一个数的因数分解方式全部加总。\n\n狄利克雷卷积使许多数论函数形成代数结构，莫比乌斯反演就是求逆的例子。它不同于普通序列卷积，求和范围由整除关系决定。狄利克雷卷积把每个正整数对应到一个数值，常通过约数、质因数或级数系数记录整数的乘法结构。许多数论函数在互素整数上可分解，这让复杂求和能化为素数或约数层面的局部计算。读公式时要看清求和是遍历约数、素数还是全部正整数，范围不同会得到完全不同的函数。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "狄利克雷卷积",
+          "url": "https://www.baidu.com/s?wd=%E7%8B%84%E5%88%A9%E5%85%8B%E9%9B%B7%E5%8D%B7%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "狄利克雷卷积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%8B%84%E5%88%A9%E5%85%8B%E9%9B%B7%E5%8D%B7%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dirichlet convolution",
+          "url": "https://en.wikipedia.org/w/index.php?search=dirichlet%20convolution"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "乘法函数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "乘法函数是在互素整数上把乘积转化为函数值乘积的数论函数。常写作 $f(mn)=f(m)f(n),\\quad \\gcd(m,n)=1$，其中$m,n$ 是互素正整数。互素条件让质因数分解互不干扰。\n\n欧拉函数、莫比乌斯函数和约数函数都是常见乘法函数。它不要求对所有 $m,n$ 成立；去掉互素条件就是完全积性。许多数论函数在互素整数上可分解，这让复杂求和能化为素数或约数层面的局部计算。读公式时要看清求和是遍历约数、素数还是全部正整数，范围不同会得到完全不同的函数。乘法函数把每个正整数对应到一个数值，常通过约数、质因数或级数系数记录整数的乘法结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "乘法函数",
+          "url": "https://www.baidu.com/s?wd=%E4%B9%98%E6%B3%95%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "乘法函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B9%98%E6%B3%95%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "multiplication function",
+          "url": "https://en.wikipedia.org/w/index.php?search=multiplication%20function"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "完全积性函数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "完全积性函数是对任意正整数乘积都满足乘法分解的函数。常写作 $f(mn)=f(m)f(n)$，其中$m,n$ 是任意正整数。这里不需要互素条件。\n\n完全积性函数比乘法函数限制更强，常由素数处的取值完全决定。例如某些狄利克雷特征具有完全积性，而欧拉函数一般没有。完全积性函数把每个正整数对应到一个数值，常通过约数、质因数或级数系数记录整数的乘法结构。许多数论函数在互素整数上可分解，这让复杂求和能化为素数或约数层面的局部计算。读公式时要看清求和是遍历约数、素数还是全部正整数，范围不同会得到完全不同的函数。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "完全积性函数",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%8C%E5%85%A8%E7%A7%AF%E6%80%A7%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "完全积性函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%8C%E5%85%A8%E7%A7%AF%E6%80%A7%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "complete product function",
+          "url": "https://en.wikipedia.org/w/index.php?search=complete%20product%20function"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "黎曼ζ函数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "黎曼ζ函数由正整数倒数幂级数定义，并通过欧拉积连接素数。常写作 $\\zeta(s)=\\sum_{n\\ge1}\\frac1{n^s}$，其中$s$ 是复变量，级数在实部大于一时绝对收敛。利用唯一分解还可写成素数上的乘积。\n\n黎曼ζ函数把整数求和、素数分布和解析函数联系起来。在初等数论中常先把它作为级数和欧拉积来理解。读公式时要看清求和是遍历约数、素数还是全部正整数，范围不同会得到完全不同的函数。黎曼ζ函数把每个正整数对应到一个数值，常通过约数、质因数或级数系数记录整数的乘法结构。许多数论函数在互素整数上可分解，这让复杂求和能化为素数或约数层面的局部计算。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "黎曼ζ函数",
+          "url": "https://www.baidu.com/s?wd=%E9%BB%8E%E6%9B%BC%CE%B6%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "黎曼ζ函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%BB%8E%E6%9B%BC%CE%B6%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "riemann zeta function",
+          "url": "https://en.wikipedia.org/w/index.php?search=riemann%20zeta%20function"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "调和数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "调和数是前若干个正整数倒数的部分和。常写作 $H_n=\\sum_{k=1}^n\\frac1k$，其中$H_n$ 是第 $n$ 个调和数。它增长很慢，大约像 $\\ln n$。\n\n调和数出现在平均约数估计、概率计数和级数比较中。它通常不是整数；讨论整除或同余时要处理分母。调和数把每个正整数对应到一个数值，常通过约数、质因数或级数系数记录整数的乘法结构。许多数论函数在互素整数上可分解，这让复杂求和能化为素数或约数层面的局部计算。读公式时要看清求和是遍历约数、素数还是全部正整数，范围不同会得到完全不同的函数。因此调和数还要结合对象范围和参数约定来读；条件改变时，同一公式表达的结构也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "调和数",
+          "url": "https://www.baidu.com/s?wd=%E8%B0%83%E5%92%8C%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "调和数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B0%83%E5%92%8C%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "harmonic number",
+          "url": "https://en.wikipedia.org/w/index.php?search=harmonic%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "伯特兰猜想",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "伯特兰猜想现已为定理，说明任意大于一的整数和它的两倍之间有素数。常写作 $n<p<2n$，其中$n>1$ 是整数，$p$ 是素数。这给出素数间隙的一个基本上界。\n\n伯特兰结论保证素数不会在成倍区间中完全消失。它虽名为猜想，但已经被证明，表述时应称为定理也可以。它们常把简单的素数定义推向全局问题，公式中的参数往往表示规模，而不是给出逐项构造。伯特兰猜想描述素数的分布、构造或特殊类型，通常关心是否存在无穷多、间隔多大或哪些同余条件成立。这些命题有的已经是定理，有的仍是猜想；解释时要把已证结论和经验观察分清楚。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "伯特兰猜想",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%AF%E7%89%B9%E5%85%B0%E7%8C%9C%E6%83%B3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "伯特兰猜想",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%AF%E7%89%B9%E5%85%B0%E7%8C%9C%E6%83%B3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bertrand conjecture",
+          "url": "https://en.wikipedia.org/w/index.php?search=bertrand%20conjecture"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "哥德巴赫猜想",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "哥德巴赫猜想断言每个大于二的偶数都可写成两个素数之和。常写作 $2n=p+q$，其中$p,q$ 是素数，$n>1$。这是加性数论中最著名的未解问题之一。\n\n哥德巴赫猜想把素数分布和加法表示联系起来。它不是唯一分解问题；同一个偶数可能有多种素数和表示。哥德巴赫猜想描述素数的分布、构造或特殊类型，通常关心是否存在无穷多、间隔多大或哪些同余条件成立。这些命题有的已经是定理，有的仍是猜想；解释时要把已证结论和经验观察分清楚。它们常把简单的素数定义推向全局问题，公式中的参数往往表示规模，而不是给出逐项构造。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "哥德巴赫猜想",
+          "url": "https://www.baidu.com/s?wd=%E5%93%A5%E5%BE%B7%E5%B7%B4%E8%B5%AB%E7%8C%9C%E6%83%B3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "哥德巴赫猜想",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%93%A5%E5%BE%B7%E5%B7%B4%E8%B5%AB%E7%8C%9C%E6%83%B3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "goldbach conjecture",
+          "url": "https://en.wikipedia.org/w/index.php?search=goldbach%20conjecture"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "孪生素数猜想",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "孪生素数猜想断言存在无穷多对相差二的素数。常写作 $p,\\quad p+2$，其中$p$ 和 $p+2$ 都要求为素数。这样的素数对称为孪生素数。\n\n孪生素数猜想关注素数间隔能否无限多次取到最小的偶间隔。它目前仍未解决，不能把有限范围内的例子当作证明。孪生素数猜想描述素数的分布、构造或特殊类型，通常关心是否存在无穷多、间隔多大或哪些同余条件成立。这些命题有的已经是定理，有的仍是猜想；解释时要把已证结论和经验观察分清楚。它们常把简单的素数定义推向全局问题，公式中的参数往往表示规模，而不是给出逐项构造。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "孪生素数猜想",
+          "url": "https://www.baidu.com/s?wd=%E5%AD%AA%E7%94%9F%E7%B4%A0%E6%95%B0%E7%8C%9C%E6%83%B3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "孪生素数猜想",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AD%AA%E7%94%9F%E7%B4%A0%E6%95%B0%E7%8C%9C%E6%83%B3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "twin prime conjecture",
+          "url": "https://en.wikipedia.org/w/index.php?search=twin%20prime%20conjecture"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "素数间隙",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "素数间隙是相邻两个素数之间的差。常写作 $g_n=p_{n+1}-p_n$，其中$p_n$ 是第 $n$ 个素数，$g_n$ 是第 $n$ 个间隙。间隙反映素数在局部的疏密变化。\n\n素数间隙用于研究素数分布、孪生素数和大间隔现象。它不是平均密度本身；同样规模附近的间隙可以波动很大。这些命题有的已经是定理，有的仍是猜想；解释时要把已证结论和经验观察分清楚。它们常把简单的素数定义推向全局问题，公式中的参数往往表示规模，而不是给出逐项构造。素数间隙描述素数的分布、构造或特殊类型，通常关心是否存在无穷多、间隔多大或哪些同余条件成立。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "素数间隙",
+          "url": "https://www.baidu.com/s?wd=%E7%B4%A0%E6%95%B0%E9%97%B4%E9%9A%99%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "素数间隙",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B4%A0%E6%95%B0%E9%97%B4%E9%9A%99"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "prime gap",
+          "url": "https://en.wikipedia.org/w/index.php?search=prime%20gap"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "同余方程",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "同余方程是在模数意义下求整数未知量的方程。常写作 $f(x)\\equiv0\\pmod m$，其中$f$ 是整系数表达式，$m$ 是模数。解通常按模 $m$ 的同余类来记录。\n\n同余方程把整数方程压缩到有限余数类上分析。它与普通方程不同，多个不同整数可能代表同一个解类。模数、代表元和互素条件都要写清楚；同一个整数在不同模数下会属于完全不同的余数类。这种语言能把大数问题压缩到有限集合中，但除法或开方只有在额外条件满足时才可以进行。同余方程把整数按余数分组，保留加法和乘法在模数下的行为，是初等数论最常用的语言之一。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "同余方程",
+          "url": "https://www.baidu.com/s?wd=%E5%90%8C%E4%BD%99%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "同余方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%8C%E4%BD%99%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "congruence equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=congruence%20equation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "高次同余",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "高次同余是未知数以二次或更高次数出现的同余方程。常写作 $a_dx^d+\\cdots+a_0\\equiv0\\pmod m$，其中$d\\ge2$ 是次数，$m$ 是模数。次数越高，解的结构通常越依赖模数分解。\n\n高次同余包括二次剩余、幂剩余和多项式同余问题。它不能简单照搬实数多项式求根方法，因为模数下可能有零因子。它常用于同余方程、平方和问题和原根理论；同一个数在不同素数模下可能表现相反。读这类结论时要注意模数通常要求为奇素数，推广到合数时符号意义会变得更细。高次同余关注平方或幂在模素数下能取到哪些余数，核心是把乘法群的结构转成符号判断。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "高次同余",
+          "url": "https://www.baidu.com/s?wd=%E9%AB%98%E6%AC%A1%E5%90%8C%E4%BD%99%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "高次同余",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%AB%98%E6%AC%A1%E5%90%8C%E4%BD%99"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "higher order congruence",
+          "url": "https://en.wikipedia.org/w/index.php?search=higher%20order%20congruence"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "模幂",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "模幂是在模数下计算整数幂的余数。常写作 $a^k\\bmod m$，其中$a$ 是底数，$k$ 是指数，$m$ 是模数。只需保留每一步的余数即可。\n\n模幂用于费马小定理、欧拉定理、判素和密码算法。它与普通幂不同，结果总被压回有限个余数类中。使用时要检查互素、导数非零或模数分解等前提；这些条件决定步骤能否继续提升或合并。模幂把同余和整除关系转成可计算步骤，重点是每一步都保持原问题的解集或余数信息。算法形式适合处理大数，因为只保留模数下必要的部分，不需要展开完整整数。因此模幂还要结合对象范围和参数约定来读；条件改变时，同一公式表达的结构也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "模幂",
+          "url": "https://www.baidu.com/s?wd=%E6%A8%A1%E5%B9%82%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "模幂",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A8%A1%E5%B9%82"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "modular exponentiation",
+          "url": "https://en.wikipedia.org/w/index.php?search=modular%20exponentiation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "快速幂",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "快速幂通过反复平方把大指数幂分解成少量乘法。常写作 $a^{2r}=(a^r)^2,\\quad a^{2r+1}=a(a^r)^2$，其中$r$ 是较小指数，$a$ 是底数。结合取模可避免中间数爆炸。\n\n快速幂是计算模幂的基本算法，复杂度随指数二进制长度增长。它不是新的数论定理，而是利用指数二进制展开的计算方法。快速幂把同余和整除关系转成可计算步骤，重点是每一步都保持原问题的解集或余数信息。算法形式适合处理大数，因为只保留模数下必要的部分，不需要展开完整整数。使用时要检查互素、导数非零或模数分解等前提；这些条件决定步骤能否继续提升或合并。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "快速幂",
+          "url": "https://www.baidu.com/s?wd=%E5%BF%AB%E9%80%9F%E5%B9%82%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "快速幂",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BF%AB%E9%80%9F%E5%B9%82"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fast power",
+          "url": "https://en.wikipedia.org/w/index.php?search=fast%20power"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "中国剩余算法",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "中国剩余算法是中国剩余定理的构造性求解步骤。常写作 $x\\equiv\\sum_i a_iM_iN_i\\pmod M$，其中$M_i=M/m_i$，$N_i$ 是 $M_i$ 在模 $m_i$ 下的逆元。各项分别负责满足一个余数条件。\n\n该算法把多模同余系统合并成一个模 $M$ 的解类。它要求模数两两互质；若不互质，需要先做相容性检查。中国剩余算法把同余和整除关系转成可计算步骤，重点是每一步都保持原问题的解集或余数信息。算法形式适合处理大数，因为只保留模数下必要的部分，不需要展开完整整数。使用时要检查互素、导数非零或模数分解等前提；这些条件决定步骤能否继续提升或合并。因此中国剩余算法还要结合对象范围和参数约定来读；条件改变时，同一公式表达的结构也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "中国剩余算法",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E7%AE%97%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "中国剩余算法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E7%AE%97%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "chinese remainder algorithm",
+          "url": "https://en.wikipedia.org/w/index.php?search=chinese%20remainder%20algorithm"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "欧拉商",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "欧拉商度量欧拉定理中幂同余超过一的整数倍数。常写作 $q_n(a)=\\frac{a^{\\varphi(n)}-1}{n}$，其中$\\varphi(n)$ 是欧拉函数，要求分子能被 $n$ 整除。当 $a$ 与 $n$ 互素时这个商为整数。\n\n欧拉商用于研究更高模数下的幂同余和某些特殊素数性质。它不是欧拉函数本身，而是把欧拉定理的余量记录下来。欧拉商把同余和整除关系转成可计算步骤，重点是每一步都保持原问题的解集或余数信息。算法形式适合处理大数，因为只保留模数下必要的部分，不需要展开完整整数。使用时要检查互素、导数非零或模数分解等前提；这些条件决定步骤能否继续提升或合并。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "欧拉商",
+          "url": "https://www.baidu.com/s?wd=%E6%AC%A7%E6%8B%89%E5%95%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "欧拉商",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AC%A7%E6%8B%89%E5%95%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "euler quotient",
+          "url": "https://en.wikipedia.org/w/index.php?search=euler%20quotient"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "费马商",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "费马商是欧拉商在素数模数下的特殊情形。常写作 $q_p(a)=\\frac{a^{p-1}-1}{p}$，其中$p$ 是素数，且 $p\\nmid a$。费马小定理保证分子可被 $p$ 整除。\n\n费马商常用于研究模 $p^2$ 的同余、威费里希素数和数论同余。它记录的是超出模 $p$ 余数一的下一层信息。费马商把同余和整除关系转成可计算步骤，重点是每一步都保持原问题的解集或余数信息。算法形式适合处理大数，因为只保留模数下必要的部分，不需要展开完整整数。使用时要检查互素、导数非零或模数分解等前提；这些条件决定步骤能否继续提升或合并。因此费马商还要结合对象范围和参数约定来读；条件改变时，同一公式表达的结构也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "费马商",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%B9%E9%A9%AC%E5%95%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "费马商",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%B9%E9%A9%AC%E5%95%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fermat quotient",
+          "url": "https://en.wikipedia.org/w/index.php?search=fermat%20quotient"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "威费里希素数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "威费里希素数通常指满足特定二次模幂同余的素数。常写作 $2^{p-1}\\equiv1\\pmod{p^2}$，其中$p$ 是素数。这个条件比费马小定理多要求一层模 $p^2$。\n\n威费里希素数与费马商、指数同余和某些深层数论问题有关。它是特殊素数，不是所有素数都会满足，目前已知例子很少。威费里希素数描述素数的分布、构造或特殊类型，通常关心是否存在无穷多、间隔多大或哪些同余条件成立。这些命题有的已经是定理，有的仍是猜想；解释时要把已证结论和经验观察分清楚。它们常把简单的素数定义推向全局问题，公式中的参数往往表示规模，而不是给出逐项构造。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "威费里希素数",
+          "url": "https://www.baidu.com/s?wd=%E5%A8%81%E8%B4%B9%E9%87%8C%E5%B8%8C%E7%B4%A0%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "威费里希素数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A8%81%E8%B4%B9%E9%87%8C%E5%B8%8C%E7%B4%A0%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wyverich primes",
+          "url": "https://en.wikipedia.org/w/index.php?search=wyverich%20primes"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "索菲热尔曼素数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "索菲热尔曼素数是使两倍加一仍为素数的素数。常写作 $p\\text{ 为素数，且 }2p+1\\text{ 为素数}$，其中$p$ 是索菲热尔曼素数。对应的 $2p+1$ 称为安全素数。\n\n这类素数出现在费马大定理早期研究和现代密码参数选择中。它与孪生素数不同，差值不是固定二，而是由倍数关系定义。这些命题有的已经是定理，有的仍是猜想；解释时要把已证结论和经验观察分清楚。它们常把简单的素数定义推向全局问题，公式中的参数往往表示规模，而不是给出逐项构造。索菲热尔曼素数描述素数的分布、构造或特殊类型，通常关心是否存在无穷多、间隔多大或哪些同余条件成立。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "索菲热尔曼素数",
+          "url": "https://www.baidu.com/s?wd=%E7%B4%A2%E8%8F%B2%E7%83%AD%E5%B0%94%E6%9B%BC%E7%B4%A0%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "索菲热尔曼素数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B4%A2%E8%8F%B2%E7%83%AD%E5%B0%94%E6%9B%BC%E7%B4%A0%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "sophie germain prime",
+          "url": "https://en.wikipedia.org/w/index.php?search=sophie%20germain%20prime"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "安全素数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "安全素数是形如两倍素数加一的素数。常写作 $q=2p+1$，其中$p$ 与 $q$ 都是素数。其中 $p$ 称为对应的索菲热尔曼素数。\n\n安全素数在模乘法群中给出较大的素数阶子群，常用于密码构造。它不是表示数值安全，而是说其乘法群结构适合避免小子群问题。这些命题有的已经是定理，有的仍是猜想；解释时要把已证结论和经验观察分清楚。它们常把简单的素数定义推向全局问题，公式中的参数往往表示规模，而不是给出逐项构造。安全素数描述素数的分布、构造或特殊类型，通常关心是否存在无穷多、间隔多大或哪些同余条件成立。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "安全素数",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%89%E5%85%A8%E7%B4%A0%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "安全素数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%89%E5%85%A8%E7%B4%A0%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "safe prime number",
+          "url": "https://en.wikipedia.org/w/index.php?search=safe%20prime%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "正则素数",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "正则素数是满足某些伯努利数整除条件不出现异常的奇素数。常写作 $p\\nmid B_2B_4\\cdots B_{p-3}$，其中$B_{2i}$ 是伯努利数，$p$ 是奇素数。若上式成立，$p$ 称为正则素数。\n\n正则素数在库默尔研究费马大定理时出现，反映圆分域类数的整除性。它不是普通意义上分布规则的素数，而是一个专门的代数数论条件。这些命题有的已经是定理，有的仍是猜想；解释时要把已证结论和经验观察分清楚。它们常把简单的素数定义推向全局问题，公式中的参数往往表示规模，而不是给出逐项构造。正则素数描述素数的分布、构造或特殊类型，通常关心是否存在无穷多、间隔多大或哪些同余条件成立。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正则素数",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E5%88%99%E7%B4%A0%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正则素数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E5%88%99%E7%B4%A0%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "regular prime",
+          "url": "https://en.wikipedia.org/w/index.php?search=regular%20prime"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "伯努利同余",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "伯努利同余指伯努利数之间或伯努利数与幂和之间的模关系。常写作 $\\sum_{a=1}^{p-1}a^m\\equiv0\\pmod p$，其中$p$ 是素数，$m$ 是满足条件的指数。这些同余常可用伯努利数表达幂和来推导。\n\n伯努利同余用于研究幂和、正则素数和高阶模关系。具体形式很多，使用时必须说明模数和指数限制。读公式时要看清求和是遍历约数、素数还是全部正整数，范围不同会得到完全不同的函数。伯努利同余把每个正整数对应到一个数值，常通过约数、质因数或级数系数记录整数的乘法结构。许多数论函数在互素整数上可分解，这让复杂求和能化为素数或约数层面的局部计算。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "伯努利同余",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%AF%E5%8A%AA%E5%88%A9%E5%90%8C%E4%BD%99%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "伯努利同余",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%AF%E5%8A%AA%E5%88%A9%E5%90%8C%E4%BD%99"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bernoulli congruence",
+          "url": "https://en.wikipedia.org/w/index.php?search=bernoulli%20congruence"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "库默尔同余",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "库默尔同余描述伯努利数在不同指数下满足的系统模同余。常写作 $\\frac{B_m}{m}\\equiv\\frac{B_n}{n}\\pmod p$，其中$B_m,B_n$ 是伯努利数，指数需满足相应同余条件。它把伯努利数的分数值放进模素数关系中。\n\n库默尔同余是研究正则素数和 $p$ 进性质的基础工具之一。它不是单个固定公式，完整表述要包含指数、模幂和分母可逆条件。读公式时要看清求和是遍历约数、素数还是全部正整数，范围不同会得到完全不同的函数。库默尔同余把每个正整数对应到一个数值，常通过约数、质因数或级数系数记录整数的乘法结构。许多数论函数在互素整数上可分解，这让复杂求和能化为素数或约数层面的局部计算。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "库默尔同余",
+          "url": "https://www.baidu.com/s?wd=%E5%BA%93%E9%BB%98%E5%B0%94%E5%90%8C%E4%BD%99%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "库默尔同余",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BA%93%E9%BB%98%E5%B0%94%E5%90%8C%E4%BD%99"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kummer congruence",
+          "url": "https://en.wikipedia.org/w/index.php?search=kummer%20congruence"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "亨泽尔提升",
+      "source_file": "words/数学/简单模式/elementary_number_theory_terms.csv",
+      "explanation_markdown": "亨泽尔提升把模素数的解逐步提升为更高素数幂模下的解。常写作 $f(a)\\equiv0\\pmod p,\\quad f'(a)\\not\\equiv0\\pmod p$，其中$f$ 是整系数多项式，$a$ 是模 $p$ 的解。导数非零条件保证解能唯一提升。\n\n亨泽尔提升是从局部模 $p$ 信息走向 $p$ 进解的重要方法。它不是简单重复试数；每一步都用导数控制误差修正。使用时要检查互素、导数非零或模数分解等前提；这些条件决定步骤能否继续提升或合并。亨泽尔提升把同余和整除关系转成可计算步骤，重点是每一步都保持原问题的解集或余数信息。算法形式适合处理大数，因为只保留模数下必要的部分，不需要展开完整整数。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "亨泽尔提升",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%A8%E6%B3%BD%E5%B0%94%E6%8F%90%E5%8D%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "亨泽尔提升",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%A8%E6%B3%BD%E5%B0%94%E6%8F%90%E5%8D%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hensel promotion",
+          "url": "https://en.wikipedia.org/w/index.php?search=hensel%20promotion"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    }
+  ]
+}

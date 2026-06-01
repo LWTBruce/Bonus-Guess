@@ -17,6 +17,24 @@
         "x∈A x∉A",
         "包含 交并补 数轴图",
         "set"
+      ],
+      "explanation_markdown": "集合是把一些确定对象看作一个整体的数学概念，对象之间不讲顺序，也不重复计数。若 $A=\\{1,2,3\\}$，则 $2\\in A$ 表示 $2$ 是集合 $A$ 的元素，$5\\notin A$ 表示 $5$ 不在其中。\n\n集合可以用列举法、描述法或区间表示。它强调“对象是否属于”这一点，所以判断条件必须清楚，不能含糊。高中常围绕集合的包含、交集、并集和补集运算展开；解方程或不等式得到的所有解，也可以作为一个集合来讨论。集合中的对象要能明确判断属于或不属于，不能依赖模糊描述。集合里的元素是否重复写出不影响集合本身，例如 $\\{1,1,2\\}$ 与 $\\{1,2\\}$ 表示同一个集合。元素顺序也不重要。描述集合时，条件要让人能判断每个对象是否属于它，这就是集合的确定性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "集合",
+          "url": "https://www.baidu.com/s?wd=%E9%9B%86%E5%90%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "集合",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9B%86%E5%90%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "set",
+          "url": "https://en.wikipedia.org/w/index.php?search=set"
+        }
       ]
     },
     {
@@ -35,6 +53,24 @@
         "x∈A",
         "对象本身 整体",
         "element"
+      ],
+      "explanation_markdown": "元素是集合中被逐个考察的对象。若对象 $x$ 属于集合 $A$，写作 $x\\in A$；若不属于，写作 $x\\notin A$，其中 $\\in$ 表示“属于”。\n\n元素可以是数、点、函数、方程的解，甚至另一个集合，关键看当前集合收集的对象是什么。元素和集合不能混淆：$1$ 是对象，$\\{1\\}$ 是只含一个元素的集合。判断元素关系时只问某个对象是否在集合里，不问它是否包含别的对象。同一个对象在不同集合中可能身份不同，不能只看符号外形。元素关系写在对象和集合之间，例如 $a\\in A$，不能把它和子集关系混用。若 $A=\\{1,\\{2\\}\\}$，那么 $\\{2\\}$ 是 $A$ 的一个元素，而 $2$ 不一定是。看清元素层级，是集合题中避免误判的关键。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "元素",
+          "url": "https://www.baidu.com/s?wd=%E5%85%83%E7%B4%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "元素",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%83%E7%B4%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "element",
+          "url": "https://en.wikipedia.org/w/index.php?search=element"
+        }
       ]
     },
     {
@@ -53,6 +89,24 @@
         "任取 属于A 推出属于B",
         "A⊆B",
         "subset"
+      ],
+      "explanation_markdown": "子集描述两个集合之间的包含关系。若集合 $A$ 的每一个元素都属于集合 $B$，就写作 $A\\subseteq B$，即 $\\forall x,\\ x\\in A\\Rightarrow x\\in B$，其中 $\\forall x$ 表示任取元素 $x$。\n\n子集允许 $A$ 与 $B$ 完全相同，所以它不是“更小集合”的意思。证明 $A\\subseteq B$ 时，通常从任意 $x\\in A$ 出发，推出 $x\\in B$。空集是任何集合的子集，这来自“没有元素违反条件”，而不是空集里真的有某个特殊元素。子集关系比较的是两个集合的范围大小，而不是某个元素是否属于集合。若 $A\\subseteq B$，那么 $A$ 的所有可能对象都被 $B$ 接住。解集问题中，一个条件越强，得到的集合通常越小，也就更可能成为另一个解集的子集。维恩图中，小集合完全落在大集合内部。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "子集",
+          "url": "https://www.baidu.com/s?wd=%E5%AD%90%E9%9B%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "子集",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AD%90%E9%9B%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "subset",
+          "url": "https://en.wikipedia.org/w/index.php?search=subset"
+        }
       ]
     },
     {
@@ -71,6 +125,24 @@
         "包含 不相等",
         "A⊂B",
         "proper subset"
+      ],
+      "explanation_markdown": "真子集是在子集基础上再要求两个集合不相等。若 $A\\subseteq B$ 且 $A\\ne B$，则 $A$ 是 $B$ 的真子集，常写成 $A\\subset B$，其中 $B$ 至少有一个元素不在 $A$ 中。\n\n判断真子集要同时检查两件事：$A$ 的元素都在 $B$ 里，以及 $B$ 还有额外元素。比如 $\\{1,2\\}\\subset\\{1,2,3\\}$，但 $\\{1,2\\}$ 不是自己的真子集。它比子集关系更严格，常在计数子集个数和命题条件强弱时出现。真子集比子集多了“至少少一个元素”的要求。有限集合中，若 $B$ 有 $n$ 个元素，它的真子集个数比所有子集少一个，因为要排除 $B$ 本身。用维恩图看，真子集完全在大集合内部，并且没有填满大集合。若两个集合相等，就只能叫子集，不能叫真子集。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "真子集",
+          "url": "https://www.baidu.com/s?wd=%E7%9C%9F%E5%AD%90%E9%9B%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "真子集",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9C%9F%E5%AD%90%E9%9B%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "proper subset",
+          "url": "https://en.wikipedia.org/w/index.php?search=proper%20subset"
+        }
       ]
     },
     {
@@ -89,6 +161,24 @@
         "无解 条件矛盾 解集",
         "∅",
         "empty set"
+      ],
+      "explanation_markdown": "空集是不含任何元素的集合，记作 $\\varnothing$。它满足 $|\\,\\varnothing\\,|=0$，其中 $|\\cdot|$ 表示集合中元素的个数。\n\n空集不是“什么都没有”的随意说法，而是一个确定的集合对象。方程无解、不等式条件矛盾或两个集合没有共同元素时，都可能得到空集。它是任何集合的子集，因为没有元素需要检查；但空集本身不是任何集合的元素，除非条件明确把 $\\varnothing$ 放进那个集合里。空集常表示条件没有任何解，例如 $x^2+1=0$ 在实数范围内的解集。它和 $\\{0\\}$ 不同，后者含有元素 $0$，元素个数为 $1$。写作时也不能用空白位置代替空集，必须用明确符号表示。它的符号和数字零含义不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "空集",
+          "url": "https://www.baidu.com/s?wd=%E7%A9%BA%E9%9B%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "空集",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A9%BA%E9%9B%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "empty set",
+          "url": "https://en.wikipedia.org/w/index.php?search=empty%20set"
+        }
       ]
     },
     {
@@ -107,6 +197,24 @@
         "R 区间 外层边界",
         "U",
         "universal set"
+      ],
+      "explanation_markdown": "全集是在某个问题中规定的最大讨论范围，通常记作 $U$。若当前只讨论 $U$ 中的对象，那么任意集合 $A$ 都应满足 $A\\subseteq U$，其中 $A$ 是问题里的一个子集。\n\n全集不是固定不变的“所有东西”，而是随条件变化的范围。讨论实数解时全集可能是 $\\mathbb R$，讨论某班学生时全集就是全班学生。补集运算必须先明确全集，因为 $A^c=U\\setminus A$，换了 $U$，同一个 $A$ 的补集也会改变。全集一旦确定，后面的交、并、补都在这个范围内进行。比如解不等式时若全集是实数集，补集可包含所有实数中的剩余部分；若全集是正整数集，补集就只在正整数中取。条件没有全集时，补集往往无法唯一确定。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "全集",
+          "url": "https://www.baidu.com/s?wd=%E5%85%A8%E9%9B%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "全集",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%A8%E9%9B%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "universal set",
+          "url": "https://en.wikipedia.org/w/index.php?search=universal%20set"
+        }
       ]
     },
     {
@@ -125,6 +233,24 @@
         "两个条件 同时成立",
         "A∩B",
         "intersection"
+      ],
+      "explanation_markdown": "交集保留两个集合共同拥有的元素。集合 $A$ 与 $B$ 的交集写成 $A\\cap B=\\{x\\mid x\\in A\\ \\text{且}\\ x\\in B\\}$，其中 $x$ 必须同时属于 $A$ 和 $B$。\n\n交集对应“并且”条件。解两个不等式同时成立、找两个范围重叠部分、统计既满足条件一又满足条件二的对象时，都在求交集。若 $A\\cap B=\\varnothing$，说明两个集合没有共同元素。画数轴时，交集就是所有阴影共同覆盖的部分。交集越取越严格，因为元素必须同时满足所有条件。两个区间求交时，左端取较大的下界，右端取较小的上界，并检查是否还有重叠。概率中事件同时发生也对应交集，所以交集语言能连接集合和概率。没有重叠时结果就是空集。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "交集",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%A4%E9%9B%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "交集",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%A4%E9%9B%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "intersection",
+          "url": "https://en.wikipedia.org/w/index.php?search=intersection"
+        }
       ]
     },
     {
@@ -143,6 +269,24 @@
         "或条件 分类汇总 区间合并",
         "A∪B",
         "union"
+      ],
+      "explanation_markdown": "并集把两个集合中出现过的元素合在一起，只要属于其中至少一个集合就保留。可写成 $A\\cup B=\\{x\\mid x\\in A\\ \\text{或}\\ x\\in B\\}$，其中“或”包含同时属于两者的情况。\n\n并集对应“至少满足一个条件”。合并区间、分类汇总、求方程组中“或”关系的解集时常用它。集合不重复计数，所以同一个元素即使同时在 $A$ 和 $B$ 中，在并集中也只出现一次。画数轴时，并集是所有阴影覆盖到的总范围。若两个集合有重叠，重叠部分不会被算两次，只保留一个对象。并集越取越宽，因为元素只要满足至少一个条件就进入结果。两个区间求并时，要看它们是否相交或相接；若中间有空隙，就要写成两个区间的并。分类讨论后的所有可能结果合在一起，也常用并集表示。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "并集",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B6%E9%9B%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "并集",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B6%E9%9B%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "union",
+          "url": "https://en.wikipedia.org/w/index.php?search=union"
+        }
       ]
     },
     {
@@ -161,6 +305,24 @@
         "合成总范围 重叠为空",
         "C_U A A^c",
         "complement"
+      ],
+      "explanation_markdown": "补集是在给定全集中，去掉某个集合后剩下的元素。若全集为 $U$，集合 $A$ 的补集为 $A^c=U\\setminus A=\\{x\\in U\\mid x\\notin A\\}$，其中 $A^c$ 也常写作 $C_UA$。\n\n补集一定依赖全集。比如 $A$ 是正数集时，在实数全集中的补集包含零和负数；在整数全集中则只包含非正整数。补集与原集合没有交集，并且合起来正好是全集，即 $A\\cap A^c=\\varnothing$，$A\\cup A^c=U$。补集关注“不属于”的部分，但这个“不”只在全集内部讨论。画维恩图时，先画全集框，再在框内去掉集合 $A$。补集常和对立事件、反证法、求“至少一个”问题相连，因为有时研究反面比直接研究原条件更简单。利用补集思考时，要先把全集边界画出来。反面范围写错会让后续概率或解集计算全部偏离。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "补集",
+          "url": "https://www.baidu.com/s?wd=%E8%A1%A5%E9%9B%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "补集",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A1%A5%E9%9B%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "complement",
+          "url": "https://en.wikipedia.org/w/index.php?search=complement"
+        }
       ]
     },
     {
@@ -179,6 +341,24 @@
         "p=>q",
         "命题关系 必要性比较",
         "sufficient condition"
+      ],
+      "explanation_markdown": "充分条件表示一个命题成立足以推出另一个命题成立。若 $p\\Rightarrow q$，就说 $p$ 是 $q$ 的充分条件，其中 $p,q$ 是命题，箭头表示由 $p$ 可以推出 $q$。\n\n充分条件保证结论出现，但结论出现时原因未必只有它。例如“四边形是正方形”足以推出“四边形是矩形”，但矩形不一定是正方形。判断充分性时要看从前件到后件的方向是否成立，不要被日常语言中的“需要”“可以”绕乱。它回答的是有了 $p$ 是否一定有 $q$，方向不能反过来读。充分条件可以有很多个，不一定是最弱或最必要的条件。比如“是正方形”足以推出“对角线相等”，但“是矩形”也足以推出。判定时可以找反例：若存在 $p$ 成立而 $q$ 不成立，充分性就被否定。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "充分条件",
+          "url": "https://www.baidu.com/s?wd=%E5%85%85%E5%88%86%E6%9D%A1%E4%BB%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "充分条件",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%85%E5%88%86%E6%9D%A1%E4%BB%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "sufficient condition",
+          "url": "https://en.wikipedia.org/w/index.php?search=sufficient%20condition"
+        }
       ]
     },
     {
@@ -197,6 +377,24 @@
         "q=>p",
         "方向辨析",
         "necessary condition"
+      ],
+      "explanation_markdown": "必要条件表示某个结论成立时必须满足的条件。若 $q\\Rightarrow p$，就说 $p$ 是 $q$ 的必要条件，其中 $q$ 成立会推出 $p$ 成立。\n\n必要条件不是一定能推出结论的条件，而是缺了它结论不可能成立。例如“有四个角”是“正方形”的必要条件，但有四个角的图形不一定是正方形。判定时常从结论反推条件，看 $q$ 是否必然带来 $p$，这和充分条件的方向正好相反。它回答的是没有 $p$ 时 $q$ 是否还能成立，重点在反推方向。必要条件也可能不唯一，而且往往比结论更宽。比如“能被 $2$ 整除”是“能被 $4$ 整除”的必要条件，但还不够保证后者。判断必要性时，可以看没有这个条件时结论是否必定失败，或检查 $q\\Rightarrow p$。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "必要条件",
+          "url": "https://www.baidu.com/s?wd=%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "必要条件",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "necessary condition",
+          "url": "https://en.wikipedia.org/w/index.php?search=necessary%20condition"
+        }
       ]
     },
     {
@@ -215,6 +413,24 @@
         "p=>q q=>p",
         "p⇔q",
         "necessary and sufficient condition"
+      ],
+      "explanation_markdown": "充要条件表示两个命题可以互相推出。若 $p\\Rightarrow q$ 且 $q\\Rightarrow p$，就写作 $p\\Leftrightarrow q$，其中 $\\Leftrightarrow$ 表示“当且仅当”。\n\n它说明 $p$ 既足以保证 $q$，又是 $q$ 成立不可缺少的条件。证明充要条件时通常分两步：先证充分性，再证必要性。例如“一个数能被 $2$ 整除”和“它是偶数”在整数范围内互为充要条件。只证明一个方向，不能得到充要关系。充要条件把一个概念刻画得刚好不多不少，因此常用于定义和判定定理。若只知道 $p$ 能推出 $q$，还不能把二者等同；还要证明 $q$ 也能推出 $p$。做证明题时，两个方向最好分开写，避免逻辑缺口。它常把定义、判定和等价变形连在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "充要条件",
+          "url": "https://www.baidu.com/s?wd=%E5%85%85%E8%A6%81%E6%9D%A1%E4%BB%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "充要条件",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%85%E8%A6%81%E6%9D%A1%E4%BB%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "necessary and sufficient condition",
+          "url": "https://en.wikipedia.org/w/index.php?search=necessary%20and%20sufficient%20condition"
+        }
       ]
     },
     {
@@ -233,6 +449,24 @@
         "否定 至少一个反例",
         "∀",
         "universal quantifier"
+      ],
+      "explanation_markdown": "全称量词表示讨论范围内每一个对象都满足某个性质，常用符号 $\\forall$。命题 $\\forall x\\in A,\\ P(x)$ 的意思是：对集合 $A$ 中任意元素 $x$，性质 $P(x)$ 都成立。\n\n全称命题对应“所有”“任意”“每一个”等说法。要证明它成立，必须说明范围内任意对象都满足；要否定它，只需找到一个反例，即 $\\exists x\\in A,\\ \\neg P(x)$。因此处理时要特别看清对象范围 $A$，范围变了，命题真假也可能改变。全称量词下，只验证几个例子通常不够，因为还可能有未检查的对象失败。证明时常从“任取一个 $x$”开始，保持它没有特殊性。否定全称命题时，一个反例就足够，这也是判断命题真假的常用策略。条件中的范围词不能省略。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "全称量词",
+          "url": "https://www.baidu.com/s?wd=%E5%85%A8%E7%A7%B0%E9%87%8F%E8%AF%8D%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "全称量词",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%A8%E7%A7%B0%E9%87%8F%E8%AF%8D"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "universal quantifier",
+          "url": "https://en.wikipedia.org/w/index.php?search=universal%20quantifier"
+        }
       ]
     },
     {
@@ -251,6 +485,24 @@
         "否定 全部不满足",
         "∃",
         "existential quantifier"
+      ],
+      "explanation_markdown": "存在量词表示讨论范围内至少有一个对象满足某个性质，常用符号 $\\exists$。命题 $\\exists x\\in A,\\ P(x)$ 的意思是：集合 $A$ 中有某个元素 $x$ 使性质 $P(x)$ 成立。\n\n存在命题对应“存在”“有一个”“至少有些”等说法。证明它成立，可以给出具体对象，也可以通过推理说明这样的对象必然出现；否定它则要说明所有对象都不满足，即 $\\forall x\\in A,\\ \\neg P(x)$。它和全称量词互为否定时常一起出现。存在量词不要求找出所有对象，只要求至少一个。证明时给出具体例子最直接；若不方便构造，也可用图像、单调性或区间端点说明一定存在。否定存在命题则更强，要说明范围内每一个对象都不满足。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "存在量词",
+          "url": "https://www.baidu.com/s?wd=%E5%AD%98%E5%9C%A8%E9%87%8F%E8%AF%8D%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "存在量词",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AD%98%E5%9C%A8%E9%87%8F%E8%AF%8D"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "existential quantifier",
+          "url": "https://en.wikipedia.org/w/index.php?search=existential%20quantifier"
+        }
       ]
     },
     {
@@ -269,6 +521,24 @@
         "定义范围 取值范围 图像 变化",
         "y=f(x)",
         "function"
+      ],
+      "explanation_markdown": "函数描述从一个输入集合到一个输出集合的确定对应关系，要求每个允许输入只能对应一个输出。常写成 $y=f(x)$，其中 $x$ 是自变量，$y$ 是函数值，$f$ 表示对应规则。\n\n函数由定义域、对应关系和值域共同决定。两个解析式看起来一样，如果定义域不同，也可能不是同一个函数；一个输入若对应多个输出，就不符合高中函数的定义。函数图像、单调性、奇偶性和零点，都是围绕输入变化时输出怎样变化来研究。同一输入对应唯一输出，是判断一个关系能否成为函数的底线。函数可以用解析式表示，也可以用图像、表格或实际规则表示。关键是输入一旦确定，输出必须唯一。例如一个学生对应一个学号可以是函数关系，一个学生对应多个兴趣爱好就不符合单值要求。研究函数前要先看定义域。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "函数",
+          "url": "https://www.baidu.com/s?wd=%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "function",
+          "url": "https://en.wikipedia.org/w/index.php?search=function"
+        }
       ]
     },
     {
@@ -287,6 +557,24 @@
         "内外层限制",
         "x取值范围",
         "domain"
+      ],
+      "explanation_markdown": "定义域是函数中自变量允许取值的全部集合。对函数 $y=f(x)$，定义域可记为 $D=\\{x\\mid f(x)\\ \\text{有意义}\\}$，其中 $D$ 收集所有能代入规则的 $x$。\n\n求定义域时要排除使表达式无意义的取值，如分母为零、偶次根号内为负、对数真数不正。复合函数还要同时满足内层能算、外层能接收。定义域是函数的一部分，不只是计算前的附加条件；没有说明输入范围，函数对象就不完整。条件若另给取值范围，还要和表达式本身的自然限制取交集。定义域还会受实际背景限制，例如时间不能为负、人数必须为整数。只从解析式看出的范围叫自然定义域，应用题中还要和现实条件合并。求函数图像、值域或反函数前，定义域都要先确定清楚。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "定义域",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%9A%E4%B9%89%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "定义域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%9A%E4%B9%89%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "domain",
+          "url": "https://en.wikipedia.org/w/index.php?search=domain"
+        }
       ]
     },
     {
@@ -305,6 +593,24 @@
         "顶点 开口 端点",
         "y可取数",
         "range"
+      ],
+      "explanation_markdown": "值域是函数在定义域内所有可能输出值组成的集合。若定义域为 $D$，函数为 $y=f(x)$，值域可写成 $R=\\{f(x)\\mid x\\in D\\}$，其中 $R$ 表示所有能取到的函数值。\n\n值域回答“$y$ 能取哪些数”。求它常结合图像、单调性、配方、换元或基本不等式。二次函数在闭区间上的值域要比较端点和顶点，分式或根式函数要注意限制。值域和陪域不同，高中题通常关心实际能达到的输出，而不是预先允许的输出范围。写值域时要说明端点能否取到，括号和方括号含义不同。值域必须由定义域和对应关系共同决定，不能只看表达式外形。例如同一个二次函数，在全体实数上和值在某个闭区间上，值域可能完全不同。求值域时若用了换元，还要检查新变量能取到哪些范围。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "值域",
+          "url": "https://www.baidu.com/s?wd=%E5%80%BC%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "值域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%80%BC%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "range",
+          "url": "https://en.wikipedia.org/w/index.php?search=range"
+        }
       ]
     },
     {
@@ -323,6 +629,24 @@
         "表格 解析式 图像",
         "范围 规则 同时判断",
         "correspondence"
+      ],
+      "explanation_markdown": "对应关系说明函数怎样把输入配到输出，是函数的核心规则。若 $f:D\\to R$，则每个 $x\\in D$ 都有唯一的 $y=f(x)$，其中 $D$ 是定义域，$R$ 是输出所在范围。\n\n对应关系可以用解析式、表格、图像或文字描述。同一个定义域上，不同规则会得到不同函数；同一规则如果定义域改变，函数也可能改变。判断两个函数是否相同，要同时看定义域和对应关系，而不能只比较化简后的表达式是否相似。表格给出的配对也要满足每个输入只有一个输出这一要求。对应关系可以很简单，也可以分段给出，但必须对定义域内每个输入都有规定。若规则在某些输入处没有定义，就要把这些输入排除出定义域。实际问题中，对应关系常来自速度、价格、面积等数量之间的联系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对应关系",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对应关系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "correspondence",
+          "url": "https://en.wikipedia.org/w/index.php?search=correspondence"
+        }
       ]
     },
     {
@@ -341,6 +665,24 @@
         "平移 伸缩 翻折",
         "(x,f(x))",
         "graph of a function"
+      ],
+      "explanation_markdown": "函数图像是所有点 $(x,f(x))$ 在坐标平面中组成的图形，其中 $x$ 取遍定义域，$f(x)$ 是对应的函数值。它把输入和输出的关系直观地画出来。\n\n图像可以显示零点、最值、单调区间、对称性和周期性。若对函数做 $y=f(x)+b$，图像会上下平移；做 $y=f(x-a)$，图像会左右平移。读图时要看坐标轴刻度和定义域范围，图像上的每个允许 $x$ 只能对应一个 $y$，这也是函数图像的基本特征。竖直线检验也体现了一个输入只能有一个输出的定义要求。函数图像上的点不仅表示一个数对，还保留了变化趋势。向上或向下看能读函数值，向左或向右看能读自变量。图像与 $x$ 轴交点给零点，与 $y$ 轴交点给 $x=0$ 时的函数值，端点则反映定义域边界。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "函数图像",
+          "url": "https://www.baidu.com/s?wd=%E5%87%BD%E6%95%B0%E5%9B%BE%E5%83%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "函数图像",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%BD%E6%95%B0%E5%9B%BE%E5%83%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "graph of function",
+          "url": "https://en.wikipedia.org/w/index.php?search=graph%20of%20function"
+        }
       ]
     },
     {
@@ -359,6 +701,24 @@
         "作差 作商 图像 导数符号",
         "增区间 减区间",
         "monotonicity"
+      ],
+      "explanation_markdown": "单调性描述函数在某个区间内随自变量增大而整体增大或减小的趋势。若对区间内任意 $x_1<x_2$，都有 $f(x_1)\\le f(x_2)$，则函数在该区间单调递增；若反向不等，则单调递减。\n\n单调性一定要带着区间说，因为同一个函数在不同区间上可能表现不同。判断方法可以是作差、作商、观察图像，学过导数后也可看 $f'(x)$ 的符号。单调性常用于比较大小、求值域和判断方程根的个数。区间端点开闭不会改变变化趋势，但会影响值域端点。单调性描述的是整体趋势，不要求函数值每一步都增加同样多。严格递增要求 $x_1<x_2$ 时 $f(x_1)<f(x_2)$，普通递增允许相等。分段函数可能在每段都递增，但跨过分界点后整体未必递增，需要合并检查。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单调性",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E8%B0%83%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单调性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E8%B0%83%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "monotonicity",
+          "url": "https://en.wikipedia.org/w/index.php?search=monotonicity"
+        }
       ]
     },
     {
@@ -377,6 +737,24 @@
         "f(-x)=-f(x) f(-x)=f(x)",
         "代入-x 比较",
         "parity"
+      ],
+      "explanation_markdown": "奇偶性描述函数图像关于原点或 $y$ 轴的对称特征。若对定义域内所有 $x$ 都有 $f(-x)=f(x)$，函数为偶函数；若 $f(-x)=-f(x)$，函数为奇函数。\n\n判断奇偶性前要先看定义域是否关于 $0$ 对称，否则代入 $-x$ 没有完整意义。偶函数图像关于 $y$ 轴对称，奇函数图像关于原点对称。它反映的是整体对称关系，不是某几个点的巧合；分段函数尤其要检查两侧表达式是否配合。若函数既奇又偶，在对称定义域上常只能恒等于 $0$。奇函数若在 $x=0$ 处有定义，通常有 $f(0)=0$；偶函数在相反输入处函数值相同。奇偶性可以简化作图，只画一侧再按对称补全。它也常用于化简含 $f(-x)$ 的表达式和判断积分、面积类对称问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "奇偶性",
+          "url": "https://www.baidu.com/s?wd=%E5%A5%87%E5%81%B6%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "奇偶性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A5%87%E5%81%B6%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "parity",
+          "url": "https://en.wikipedia.org/w/index.php?search=parity"
+        }
       ]
     },
     {
@@ -395,6 +773,24 @@
         "f(x+T)=f(x)",
         "最小正T",
         "periodicity"
+      ],
+      "explanation_markdown": "周期性表示函数值会按固定长度重复。若存在非零常数 $T$，使定义域内相关 $x$ 都满足 $f(x+T)=f(x)$，则 $T$ 是函数的一个周期。\n\n三角函数是最常见的周期函数，例如 $\\sin(x+2\\pi)=\\sin x$。若正周期中有最小的一个，称为最小正周期。周期性说明图像沿 $x$ 轴平移 $T$ 后能与自身重合，常用于化简函数值、确定图像重复单元和分析波动模型。不是所有周期函数都有最小正周期，条件若需要应另作说明。一个周期的整数倍仍然是周期，所以周期不唯一。若最小正周期存在，它才最能反映重复的基本长度。判断周期性时要保证平移后的输入仍在定义域内；若定义域本身不支持平移重复，就不能只看公式像不像重复。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "周期性",
+          "url": "https://www.baidu.com/s?wd=%E5%91%A8%E6%9C%9F%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "周期性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%91%A8%E6%9C%9F%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "periodicity",
+          "url": "https://en.wikipedia.org/w/index.php?search=periodicity"
+        }
       ]
     },
     {
@@ -413,6 +809,24 @@
         "解方程",
         "连续 异号 存在",
         "zero of a function"
+      ],
+      "explanation_markdown": "函数的零点是使函数值等于 $0$ 的自变量取值。对函数 $y=f(x)$，若 $f(x_0)=0$，则 $x_0$ 是它的零点，其中 $x_0$ 是定义域中的一个数。\n\n在图像上，零点对应曲线与 $x$ 轴交点的横坐标，而不是整个交点本身。求零点通常转化为解方程 $f(x)=0$。若连续函数在区间两端函数值异号，图像会穿过 $x$ 轴，区间内至少有一个零点，这常用于判断方程有解。零点属于自变量，不是函数值 $0$ 本身，作答时要写横坐标。零点和方程根是同一件事的两种说法：函数角度叫零点，方程角度叫解。若函数图像只是接触 $x$ 轴而不穿过，也可能有零点。零点个数常通过图像交点、单调性或判别式来判断。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "零点",
+          "url": "https://www.baidu.com/s?wd=%E9%9B%B6%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "零点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9B%B6%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "zero of function",
+          "url": "https://en.wikipedia.org/w/index.php?search=zero%20of%20function"
+        }
       ]
     },
     {
@@ -431,6 +845,24 @@
         "k 方向 变化 b 轴交点",
         "两点确定",
         "linear function"
+      ],
+      "explanation_markdown": "一次函数是解析式中自变量最高次数为 $1$ 的函数，常写成 $y=kx+b$，其中 $k,b$ 是常数，且 $k\\ne0$。$k$ 表示斜率，$b$ 表示图像与 $y$ 轴的交点纵坐标。\n\n一次函数的图像是一条非竖直直线。$k>0$ 时函数递增，$k<0$ 时函数递减；$|k|$ 越大，图像越陡。已知两个不同点通常可以确定一次函数。若 $k=0$，表达式变成常值函数，高中通常不把它称为一次函数。它的变化率处处相同，因此适合表示匀速变化或线性成本模型。一次函数的平均变化率和瞬时变化率都等于常数 $k$。图像经过两点即可确定，因为一条非竖直直线由两点唯一决定。实际问题中，固定费用加按量收费、匀速路程等常写成一次函数模型。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "一次函数",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "一次函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear function",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20function"
+        }
       ]
     },
     {
@@ -449,6 +881,24 @@
         "顶点 对称轴 开口 判别式",
         "y=a(x-h)^2+k",
         "quadratic function"
+      ],
+      "explanation_markdown": "二次函数是自变量最高次数为 $2$ 的函数，标准形式为 $y=ax^2+bx+c$，其中 $a\\ne0$，$a,b,c$ 是常数。它的图像是一条抛物线。\n\n配方可写成 $y=a(x-h)^2+k$，其中 $(h,k)$ 是顶点，直线 $x=h$ 是对称轴。$a>0$ 时开口向上，$a<0$ 时开口向下；判别式 $\\Delta=b^2-4ac$ 决定图像与 $x$ 轴交点情况。二次函数常用于最值、方程根和抛物线模型。顶点式能直接读出最值和对称轴，比展开式更适合看图像。二次函数的对称轴为 $x=-\\frac b{2a}$，顶点横坐标也在这里。它与一元二次方程联系紧密，函数零点就是对应方程的根。图像开口大小由 $|a|$ 影响，$|a|$ 越大，抛物线越窄。若定义域受限制，顶点未必能取到，最值也会随之改变。开口方向还决定顶点给出最大值还是最小值。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "二次函数",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%8C%E6%AC%A1%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "二次函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%8C%E6%AC%A1%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quadratic function",
+          "url": "https://en.wikipedia.org/w/index.php?search=quadratic%20function"
+        }
       ]
     },
     {
@@ -467,6 +917,24 @@
         "指数 定义范围 对称 单调",
         "y=x^α",
         "power function"
+      ],
+      "explanation_markdown": "幂函数是以自变量的固定幂为主要形式的函数，常写成 $y=x^\\alpha$，其中 $\\alpha$ 是常数，$x$ 是自变量。高中常见的有 $y=x$、$y=x^2$、$y=x^3$、$y=\\frac1x$ 和 $y=\\sqrt{x}$。\n\n指数 $\\alpha$ 的取值决定定义域、图像形状、奇偶性和单调性。偶次幂图像关于 $y$ 轴对称，奇次幂图像关于原点对称；负指数会带来分母限制，分数指数会带来根式限制。幂函数的底数是变量，和指数函数中变量在指数位置不同。幂函数的图像通常经过点 $(1,1)$，因为 $1^\\alpha=1$。当指数为偶整数、奇整数、负数或分数时，图像性质差别明显。判断幂函数时要看系数是否为 $1$、底数是否就是自变量，不能把 $y=2x^3$ 也直接叫基本幂函数。图像经过象限还要看指数和定义域。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "幂函数",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%82%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "幂函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%82%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "power function",
+          "url": "https://en.wikipedia.org/w/index.php?search=power%20function"
+        }
       ]
     },
     {
@@ -485,6 +953,24 @@
         "a>1递增 0<a<1递减",
         "y=a^x",
         "exponential function"
+      ],
+      "explanation_markdown": "指数函数把自变量放在指数位置，基本形式为 $y=a^x$，其中 $a>0$ 且 $a\\ne1$，$x$ 是任意实数。图像都经过点 $(0,1)$，因为 $a^0=1$。\n\n当 $a>1$ 时，指数函数单调递增；当 $0<a<1$ 时，单调递减。它的函数值始终为正，$x$ 轴是图像的水平渐近线。指数函数常描述按固定比例增长或衰减的现象，如复利、细胞增长和放射性衰减。注意它和幂函数不同：指数函数的底数固定，指数才是变量。底数越大，递增时上升越快；底数小于 $1$ 时则逐渐衰减。指数函数的增长是按倍数累积，而不是每次加同一个数。自变量增加 $1$ 时，函数值会乘以底数 $a$。这种特征使它适合描述复利和衰减，也让图像永远不会与 $x$ 轴相交，只会逐渐靠近。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "指数函数",
+          "url": "https://www.baidu.com/s?wd=%E6%8C%87%E6%95%B0%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "指数函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8C%87%E6%95%B0%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "exponential function",
+          "url": "https://en.wikipedia.org/w/index.php?search=exponential%20function"
+        }
       ]
     },
     {
@@ -503,6 +989,24 @@
         "过(1,0) y轴渐近线",
         "y=log_a x",
         "logarithmic function"
+      ],
+      "explanation_markdown": "对数函数是指数函数的反向关系，基本形式为 $y=\\log_a x$，其中 $a>0$ 且 $a\\ne1$，自变量必须满足 $x>0$。它表示“以 $a$ 为底，得到 $x$ 需要多少次方”。\n\n对数函数图像经过 $(1,0)$，因为 $\\log_a1=0$；$y$ 轴是竖直渐近线。若 $a>1$，函数递增；若 $0<a<1$，函数递减。常用关系 $a^{\\log_a x}=x$ 连接指数和对数，其中 $x$ 必须为正。求定义域时，对数真数大于零是最先检查的条件。对数函数把乘法关系转化为加法关系，例如 $\\log_a MN=\\log_a M+\\log_a N$，其中 $M,N$ 都要为正。它的定义域只在正数上，因此图像完全位于 $y$ 轴右侧。解对数不等式时，还要注意底数大于 $1$ 或小于 $1$ 会影响单调方向。换底公式能把不同底数联系起来，但每个真数仍须为正。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对数函数",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E6%95%B0%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对数函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E6%95%B0%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "logarithmic function",
+          "url": "https://en.wikipedia.org/w/index.php?search=logarithmic%20function"
+        }
       ]
     },
     {
@@ -521,6 +1025,24 @@
         "关于y=x对称",
         "f^{-1}(x)",
         "inverse function"
+      ],
+      "explanation_markdown": "反函数把原函数中的输入和输出位置交换。若 $y=f(x)$ 且在相应范围内一一对应，就可写 $x=f^{-1}(y)$；通常再把变量换回，记为 $y=f^{-1}(x)$。\n\n反函数存在的关键是原函数在所讨论范围内一个输出只来自一个输入。原函数与反函数的图像关于直线 $y=x$ 对称，因为点 $(a,b)$ 会对应到 $(b,a)$。求反函数时要同时写明新定义域和值域，尤其是二次函数这类需要限制单调区间后才有反函数的情况。反函数的定义域是原函数的值域，值域是原函数的定义域。求解析式时常先由 $y=f(x)$ 解出 $x$，再交换 $x,y$。若原函数在整个定义域上不是一一对应，可以限制到某个单调区间后再讨论反函数。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反函数",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inverse function",
+          "url": "https://en.wikipedia.org/w/index.php?search=inverse%20function"
+        }
       ]
     },
     {
@@ -539,6 +1061,24 @@
         "内层可算 外层接收",
         "f(g(x))",
         "composite function"
+      ],
+      "explanation_markdown": "复合函数把一个函数的输出再作为另一个函数的输入。若先算 $g(x)$，再代入 $f$，复合函数写成 $(f\\circ g)(x)=f(g(x))$，其中 $g$ 是内层函数，$f$ 是外层函数。\n\n复合函数的定义域要同时满足两层条件：$x$ 必须能代入 $g$，而 $g(x)$ 还必须落在 $f$ 的定义域内。求值时按由内到外的顺序计算，化简时也要保持这一层次。$f(g(x))$ 和 $g(f(x))$ 一般不同，因此不能随意交换函数顺序。复合函数的外层只看内层输出，不直接看原来的 $x$。例如根号外层要求被开方数非负，对数外层要求真数为正。分解复合函数时，先识别最外层运算，再逐层向内看，这有助于求定义域和值域。若内层值域较窄，外层的实际输入范围也会随之缩小。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "复合函数",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%8D%E5%90%88%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "复合函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%8D%E5%90%88%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "composite function",
+          "url": "https://en.wikipedia.org/w/index.php?search=composite%20function"
+        }
       ]
     },
     {
@@ -557,6 +1097,24 @@
         "多段图像 拼接",
         "连续 端点 分类讨论",
         "piecewise function"
+      ],
+      "explanation_markdown": "分段函数是在不同自变量范围内采用不同解析式的函数。常写成 $f(x)=\\begin{cases}x+1,&x<0\\\\x^2,&x\\ge0\\end{cases}$，其中每一行给出一个范围和对应规则。\n\n求分段函数值时，先判断 $x$ 落在哪个区间，再使用该区间的解析式。它的图像由几段曲线或线段拼接而成，端点是否取到要看不等号。研究分段函数时，定义域、端点值、连续性和单调性都要按区间分别检查，再合起来理解整体。分段函数的每段规则只在指定范围内有效，不能把某一段解析式拿到别的区间使用。端点处若左右规则不同，要看条件把端点归给哪一段。作图时常用实心点和空心点表示端点是否取到。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分段函数",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E6%AE%B5%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分段函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E6%AE%B5%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "piecewise function",
+          "url": "https://en.wikipedia.org/w/index.php?search=piecewise%20function"
+        }
       ]
     },
     {
@@ -575,6 +1133,24 @@
         "f'(x) dy/dx",
         "单调 极值 切线方程",
         "derivative"
+      ],
+      "explanation_markdown": "导数刻画函数在某一点附近的瞬时变化率，几何上等于曲线在该点的切线斜率。定义式可写成 $f'(x_0)=\\lim_{\\Delta x\\to0}\\frac{f(x_0+\\Delta x)-f(x_0)}{\\Delta x}$，其中 $\\Delta x$ 是自变量的微小变化。\n\n分式中的分子表示函数值变化，分母表示输入变化；极限说明看的是无限接近 $x_0$ 时的变化趋势。导数为正时函数局部上升，为负时局部下降，为零时可能出现极值或水平切线。高中用导数研究单调性、极值和切线方程。导数存在时，函数图像在该点附近有确定的切线方向。平均变化率看一段区间，导数看一个点附近的极限变化。若导数不存在，函数仍可能连续，例如尖点处没有唯一切线斜率。用导数判断性质时要结合定义域分段讨论。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "导数",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%BC%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "导数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%BC%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "derivative",
+          "url": "https://en.wikipedia.org/w/index.php?search=derivative"
+        }
       ]
     },
     {
@@ -593,6 +1169,24 @@
         "y-y0=k(x-x0)",
         "圆 半径 直角",
         "tangent line"
+      ],
+      "explanation_markdown": "切线是在曲线某一点处与曲线局部方向一致的直线。若曲线为 $y=f(x)$，在点 $x_0$ 处可导，则切线方程为 $y-f(x_0)=f'(x_0)(x-x_0)$，其中 $f'(x_0)$ 是切线斜率。\n\n这条直线用曲线在该点附近的瞬时变化方向来近似曲线。圆的切线还满足半径垂直切线，即 $OT\\perp l$，其中 $T$ 是切点。求切线时要确认切点坐标和斜率；只与曲线有一个公共点并不一定就是切线，特别是在复杂函数图像中。切线强调在切点附近的方向一致，而不是只和曲线相交一次。对函数图像来说，导数给出切线斜率，再用点斜式写方程。对圆来说，切点半径垂直切线，这个性质常用来求切线长度、圆心位置或证明直角。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "切线",
+          "url": "https://www.baidu.com/s?wd=%E5%88%87%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "切线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%87%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tangent line",
+          "url": "https://en.wikipedia.org/w/index.php?search=tangent%20line"
+        }
       ]
     },
     {
@@ -611,6 +1205,24 @@
         "导数 正到负",
         "山峰",
         "local maximum"
+      ],
+      "explanation_markdown": "极大值是函数在某点附近取得的局部最高值。若存在 $x_0$ 的一个邻近范围，使 $f(x)\\le f(x_0)$ 对附近所有 $x$ 成立，则 $f(x_0)$ 是极大值，其中 $x_0$ 是极大值点。\n\n极大值只和附近比较，不一定是整个定义域内的最大值。用导数判定时，若 $f'(x)$ 在 $x_0$ 左侧为正、右侧为负，函数先升后降，常在 $x_0$ 取得极大值。图像上它像一个局部山峰，端点处是否算极值要看教材和条件约定。极大值附近的比较范围必须留在定义域内，不能跨出函数范围。极大值点附近的函数先上升后下降时，图像形成局部峰顶。导数为零只是可能条件，不是充分条件，还要看导数符号或函数值比较。一个函数可以有多个极大值，它们的大小也不一定相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "极大值",
+          "url": "https://www.baidu.com/s?wd=%E6%9E%81%E5%A4%A7%E5%80%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "极大值",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9E%81%E5%A4%A7%E5%80%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "local maximum",
+          "url": "https://en.wikipedia.org/w/index.php?search=local%20maximum"
+        }
       ]
     },
     {
@@ -629,6 +1241,24 @@
         "导数 负到正",
         "谷底",
         "local minimum"
+      ],
+      "explanation_markdown": "极小值是函数在某点附近取得的局部最低值。若存在 $x_0$ 的一个邻近范围，使 $f(x)\\ge f(x_0)$ 对附近所有 $x$ 成立，则 $f(x_0)$ 是极小值，其中 $x_0$ 是极小值点。\n\n极小值不一定是全局最小值，只表示附近没有比它更小的函数值。用导数看，若 $f'(x)$ 在 $x_0$ 左侧为负、右侧为正，函数先降后升，常在该点取得极小值。它用于分析曲线局部谷底，和最大值、最小值这种全范围比较要分开。极小值附近的比较范围也必须留在定义域内，端点要另行判断。极小值点附近的函数先下降后上升时，图像形成局部谷底。导数由负变正是常见判据，但还要注意不可导点也可能出现极小值。它反映局部最小状态，若要求整个区间最低值，还必须和端点及其他候选点比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "极小值",
+          "url": "https://www.baidu.com/s?wd=%E6%9E%81%E5%B0%8F%E5%80%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "极小值",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9E%81%E5%B0%8F%E5%80%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "local minimum",
+          "url": "https://en.wikipedia.org/w/index.php?search=local%20minimum"
+        }
       ]
     },
     {
@@ -647,6 +1277,24 @@
         "不闭 无上界 不存在",
         "自变量 函数值",
         "maximum value"
+      ],
+      "explanation_markdown": "最大值是在整个给定定义范围内，函数能达到的最高函数值。若对所有 $x\\in D$ 都有 $f(x)\\le f(x_0)$，则 $f(x_0)$ 是最大值，其中 $D$ 是讨论的定义域，$x_0$ 是取到最大值的点。\n\n最大值强调全局比较，必须真的被某个 $x_0$ 取到。闭区间上的连续函数通常可比较端点值和内部极值来寻找；若区间不闭或函数无上界，最大值可能不存在。作答时常要同时写出最大值是多少，以及在哪个自变量处取得。若有多个点取得同一最高值，最大值仍只有一个数。最大值一定是函数值，不是取得最大值的自变量；两者在作答中要分开写。若函数在开区间上不断接近某个上界却取不到，就只有上确界而没有最大值。闭区间连续函数一定有最大值，这是常用背景。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最大值",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E5%A4%A7%E5%80%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最大值",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E5%A4%A7%E5%80%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "maximum value",
+          "url": "https://en.wikipedia.org/w/index.php?search=maximum%20value"
+        }
       ]
     },
     {
@@ -665,6 +1313,24 @@
         "不闭 无下界 不存在",
         "自变量 函数值",
         "minimum value"
+      ],
+      "explanation_markdown": "最小值是在整个给定定义范围内，函数能达到的最低函数值。若对所有 $x\\in D$ 都有 $f(x)\\ge f(x_0)$，则 $f(x_0)$ 是最小值，其中 $D$ 是讨论范围，$x_0$ 是取到该值的自变量。\n\n最小值和极小值不同，它要和全范围内所有函数值比较。闭区间问题常把端点值与内部极小值一起比较；若函数向下无界，或最低值只是无限接近却取不到，就没有最小值。最小值常用于最短距离、最低成本和二次函数顶点问题。若有多个点取得同一最低值，最小值仍只有一个数。最小值一定要被函数实际取到，不能只是无限接近。若函数在开区间上趋近某个下界但没有对应点，就不存在最小值。实际问题里，最小值常受定义域限制影响，端点能否取到会直接改变答案。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最小值",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E5%B0%8F%E5%80%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最小值",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E5%B0%8F%E5%80%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "minimum value",
+          "url": "https://en.wikipedia.org/w/index.php?search=minimum%20value"
+        }
       ]
     }
   ]

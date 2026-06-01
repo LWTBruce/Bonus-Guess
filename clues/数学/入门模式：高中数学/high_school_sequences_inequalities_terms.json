@@ -17,6 +17,24 @@
         "a_n 位置",
         "等差型 等比型",
         "sequence"
+      ],
+      "explanation_markdown": "数列是按正整数顺序排列的一列数，通常记为 $\\{a_n\\}$，其中 $a_n$ 表示第 $n$ 项，$n=1,2,3,\\ldots$ 表示位置编号。数列重视“第几项”，所以同样的数字换了顺序，可能就是不同数列。\n\n高中常研究通项公式、递推关系、前 $n$ 项和以及单调变化。等差数列和等比数列是最常见的特殊数列，分别由固定差和固定比控制。理解数列时，不要只看前几项的表面规律，还要说明一般第 $n$ 项怎样由编号或前项确定。数列可以有限，也可以无限；高中多数公式默认从第 $1$ 项开始编号。观察数列时，要区分项的数值和项的位置，例如第 $5$ 项不一定等于 $5$。递增、递减、有界和周期等性质都要围绕下标变化来描述。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "数列",
+          "url": "https://www.baidu.com/s?wd=%E6%95%B0%E5%88%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "数列",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%95%B0%E5%88%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "sequence",
+          "url": "https://en.wikipedia.org/w/index.php?search=sequence"
+        }
       ]
     },
     {
@@ -35,6 +53,24 @@
         "前几项 差比关系 递推式",
         "a_n=f(n)",
         "general term formula"
+      ],
+      "explanation_markdown": "通项公式直接给出数列第 $n$ 项与编号 $n$ 的关系，常写成 $a_n=f(n)$，其中 $a_n$ 是第 $n$ 项，$f(n)$ 是关于正整数 $n$ 的表达式。\n\n有了通项公式，就能不逐项列出而求任意位置的项。例如等差数列可写成 $a_n=a_1+(n-1)d$。通项公式强调“位置到数值”的直接对应，和递推公式不同；递推公式需要前面的项和初始项，通项公式则可以直接代入 $n$。它还便于比较项的大小、判断单调性或观察长期变化。通项公式给出整体规律，不能只靠前几项猜测后就不证明。若两个公式在所有正整数 $n$ 上取值相同，它们表示同一个数列。它还常用于求某项、判断某数是否为数列中的项，以及把数列问题转化为函数问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "通项公式",
+          "url": "https://www.baidu.com/s?wd=%E9%80%9A%E9%A1%B9%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "通项公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%80%9A%E9%A1%B9%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "general term formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=general%20term%20formula"
+        }
       ]
     },
     {
@@ -53,6 +89,24 @@
         "a_{n+1}=a_n+d a_{n+1}=qa_n",
         "累加 累乘 构造",
         "recurrence formula"
+      ],
+      "explanation_markdown": "递推公式用前面的项来确定后面的项，常见形式为 $a_{n+1}=F(a_n,n)$，其中 $a_{n+1}$ 是后一项，$a_n$ 是前一项，$F$ 表示给定的计算规则。\n\n只有递推关系通常还不够，必须给出初始项，如 $a_1$，才能唯一确定整个数列。例如 $a_{n+1}=a_n+d$ 加上 $a_1$ 才能生成等差数列。把递推公式转成通项公式时，常用累加、累乘、构造新数列或观察差比关系。若递推式依赖多项，还要保留足够多的初始值才能启动。递推公式更像生成规则，告诉你已知前面信息后下一项怎样来。它适合描述逐步变化的过程，如每年增长、每次折半或相邻项相加。与通项公式相比，递推式有时更贴近实际过程，但求远处项可能不够方便。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "递推公式",
+          "url": "https://www.baidu.com/s?wd=%E9%80%92%E6%8E%A8%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "递推公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%80%92%E6%8E%A8%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "recurrence formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=recurrence%20formula"
+        }
       ]
     },
     {
@@ -71,6 +125,24 @@
         "a_n=a_1+(n-1)d",
         "S_n=n(a_1+a_n)/2",
         "arithmetic sequence"
+      ],
+      "explanation_markdown": "等差数列是从第二项起，每一项与前一项的差都等于同一个常数的数列。若公差为 $d$，则 $a_n=a_1+(n-1)d$，其中 $a_1$ 是首项，$a_n$ 是第 $n$ 项。\n\n公差 $d$ 决定数列变化方向：$d>0$ 递增，$d<0$ 递减，$d=0$ 为常数列。前 $n$ 项和为 $S_n=\\frac n2(a_1+a_n)$，这里 $S_n$ 表示前 $n$ 项相加。等差数列的项随编号线性变化，把点 $(n,a_n)$ 画出常落在同一条直线上。等差数列中任意两项差只与项数差有关，因此 $a_m,a_n$ 的关系很稳定。它的前项和公式可由首尾配对理解：第一项和最后一项、第二项和倒数第二项的和相同。实际问题中的匀速增加、等额存款常形成等差模型。判定时要检查所有相邻差，而不是只看前几项恰好符合。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "等差数列",
+          "url": "https://www.baidu.com/s?wd=%E7%AD%89%E5%B7%AE%E6%95%B0%E5%88%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "等差数列",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AD%89%E5%B7%AE%E6%95%B0%E5%88%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "arithmetic sequence",
+          "url": "https://en.wikipedia.org/w/index.php?search=arithmetic%20sequence"
+        }
       ]
     },
     {
@@ -89,6 +161,24 @@
         "后一项-前一项",
         "d",
         "common difference"
+      ],
+      "explanation_markdown": "公差是等差数列中后一项减前一项得到的固定差值。若数列为 $\\{a_n\\}$，公差写成 $d=a_{n+1}-a_n$，其中 $d$ 与 $n$ 无关，$a_n,a_{n+1}$ 是相邻两项。\n\n公差可以为正、负或零，分别表示每步增加、每步减少或保持不变。它是等差数列的“步长”，只说明相邻项差多少，不是任意两项的差。若知道第 $m$ 项和第 $n$ 项，也可用 $a_n-a_m=(n-m)d$ 求公差或项数差。公差稳定，才说明整个数列每一步加减变化完全一致。公差是一个固定常数，不随位置改变。若相邻差有时为 $2$、有时为 $3$，就不能称为等差数列。知道公差后，从任一项出发都能向前或向后推算其他项；这也是等差数列通项公式成立的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "公差",
+          "url": "https://www.baidu.com/s?wd=%E5%85%AC%E5%B7%AE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "公差",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%AC%E5%B7%AE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "common difference",
+          "url": "https://en.wikipedia.org/w/index.php?search=common%20difference"
+        }
       ]
     },
     {
@@ -107,6 +197,24 @@
         "2A=a+b",
         "两端信息 中间量",
         "arithmetic mean"
+      ],
+      "explanation_markdown": "等差中项是夹在两个数之间，使三者成等差数列的中间数。若 $a,A,b$ 成等差关系，则 $2A=a+b$，也就是 $A=\\frac{a+b}{2}$，其中 $A$ 是等差中项，$a,b$ 是两端的数。\n\n这个条件等价于 $A-a=b-A$，说明中间数到两端的差相等。等差中项是两端数的算术平均，只有一个确定值。证明三数成等差数列时，常把“中间项等于两端平均”作为简洁判断；填数题中也可由两端直接求中间。它体现等差数列的中间项性质，也常用于构造对称项。等差中项把两端数的加法信息集中到中间位置。若三项在数轴上表示，中间项正好位于两端的中点。它常用于证明式子对称、构造平均值，或把 $a+b$ 的信息改写成 $2A$，使代数变形更简洁。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "等差中项",
+          "url": "https://www.baidu.com/s?wd=%E7%AD%89%E5%B7%AE%E4%B8%AD%E9%A1%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "等差中项",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AD%89%E5%B7%AE%E4%B8%AD%E9%A1%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "arithmetic mean",
+          "url": "https://en.wikipedia.org/w/index.php?search=arithmetic%20mean"
+        }
       ]
     },
     {
@@ -125,6 +233,24 @@
         "a_n=a_1q^{n-1}",
         "S_n=a_1(1-q^n)/(1-q)",
         "geometric sequence"
+      ],
+      "explanation_markdown": "等比数列是从第二项起，每一项与前一项的比都等于同一个非零常数的数列。若公比为 $q$，则 $a_n=a_1q^{n-1}$，其中 $a_1$ 是首项，$a_n$ 是第 $n$ 项。\n\n公比 $q$ 决定每一步按同一倍数放大、缩小或改变符号。当前 $q\\ne1$ 时，前 $n$ 项和为 $S_n=\\frac{a_1(1-q^n)}{1-q}$；若 $q=1$，则 $S_n=na_1$。等比数列强调相邻项的比固定，和等差数列的差固定不同。等比数列中任意两项的比只与项数差有关，前提是相关项不为零。它适合描述按固定百分比增长或衰减的过程。与等差数列画成直线不同，等比数列常呈指数型变化，公比的绝对值决定增长或衰减速度。判定时要检查所有相邻比，而不是只凭前几项相似就下结论。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "等比数列",
+          "url": "https://www.baidu.com/s?wd=%E7%AD%89%E6%AF%94%E6%95%B0%E5%88%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "等比数列",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AD%89%E6%AF%94%E6%95%B0%E5%88%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "geometric sequence",
+          "url": "https://en.wikipedia.org/w/index.php?search=geometric%20sequence"
+        }
       ]
     },
     {
@@ -143,6 +269,24 @@
         "q=1 各项相同",
         "q",
         "common ratio"
+      ],
+      "explanation_markdown": "公比是等比数列中后一项除以前一项得到的固定比值。若数列为 $\\{a_n\\}$ 且各项不为零，公比写成 $q=\\frac{a_{n+1}}{a_n}$，其中 $q$ 与 $n$ 无关。\n\n公比可以大于 $1$、介于 $0$ 和 $1$、等于 $1$，也可以为负；这些情况分别影响大小变化和符号交替。它是等比数列的核心参数，只反映相邻项的倍数关系。用任意两项求公比时，要注意项数差：$a_n=a_mq^{n-m}$。公比为负时，数列项的符号会交替变化，这一点要单独留意。公比是乘法意义上的步长，决定每一项如何由前一项缩放而来。若 $q=0$，从第二项起会出现零，通常不放在标准等比数列讨论中。求公比时必须用后一项除以前一项，顺序反了就会得到倒数。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "公比",
+          "url": "https://www.baidu.com/s?wd=%E5%85%AC%E6%AF%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "公比",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%AC%E6%AF%94"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "common ratio",
+          "url": "https://en.wikipedia.org/w/index.php?search=common%20ratio"
+        }
       ]
     },
     {
@@ -161,6 +305,24 @@
         "G^2=ab",
         "两端数 中间数",
         "geometric mean"
+      ],
+      "explanation_markdown": "等比中项是夹在两个非零数之间，使三者成等比数列的中间数。若 $a,G,b$ 成等比关系，则 $G^2=ab$，其中 $G$ 是等比中项，$a,b$ 是两端的数。\n\n这个条件来自 $\\frac Ga=\\frac bG$，说明左右相邻比值相等。当 $a,b$ 同号时，$G$ 通常有正负两个可能值；若在正数范围内讨论，则取正的 $\\sqrt{ab}$。等比中项关注乘法比例，而等差中项关注加法平均，两者不要混用。它体现等比数列的中间项性质，也常用于处理比例关系。等比中项体现的是两端数的乘法平均关系。若只在正数范围内讨论，它就是几何平均数；若允许负数，则要根据符号和题意选择。它常出现在比例线段、相似图形和等比数列填项中，不能用算术平均代替。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "等比中项",
+          "url": "https://www.baidu.com/s?wd=%E7%AD%89%E6%AF%94%E4%B8%AD%E9%A1%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "等比中项",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AD%89%E6%AF%94%E4%B8%AD%E9%A1%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "geometric mean",
+          "url": "https://en.wikipedia.org/w/index.php?search=geometric%20mean"
+        }
       ]
     },
     {
@@ -179,6 +341,24 @@
         "等差 等比 裂项相消",
         "Σ S_n",
         "summation"
+      ],
+      "explanation_markdown": "求和是把若干项按规定范围相加，数列中常研究前 $n$ 项和。若数列为 $\\{a_n\\}$，前 $n$ 项和写成 $S_n=a_1+a_2+\\cdots+a_n=\\sum_{i=1}^n a_i$，其中 $\\sum$ 表示把下标 $i$ 从 $1$ 加到 $n$。\n\n不同数列有不同求和方法。等差数列常用首尾配对，等比数列常用错位相减，能拆成相邻差的式子可用裂项相消。求和的对象必须是具体项而不是项数本身；看清求和上下限和通项形式，是避免漏项或多项的关键。求和时要注意是从哪一项加到哪一项，是否包含端点。符号 $\\sum$ 后的通项和上下限共同决定加哪些数。若通项含参数，先化简再求和常更清楚；若项数很多，寻找配对、错位或相消结构比硬加更有效。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "求和",
+          "url": "https://www.baidu.com/s?wd=%E6%B1%82%E5%92%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "求和",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B1%82%E5%92%8C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "summation",
+          "url": "https://en.wikipedia.org/w/index.php?search=summation"
+        }
       ]
     },
     {
@@ -197,6 +377,24 @@
         "乘除负数 方向改变",
         "> < ≥ ≤",
         "inequality"
+      ],
+      "explanation_markdown": "不等式是用 $>$、$<$、$\\ge$、$\\le$ 等符号连接两个式子，表示它们的大小关系。解不等式就是找出使关系成立的未知数取值集合，例如 $f(x)>0$ 表示所有让 $f(x)$ 为正的 $x$。\n\n不等式变形和方程相似，但乘除负数时方向要改变：若 $a>b$ 且 $c<0$，则 $ac<bc$。答案常写成区间、数轴或集合形式。它既可以表示数量限制，也可以用来求最值，如基本不等式和线性规划都以大小关系为核心。写解集时要把端点是否能取到说明清楚，区间符号不能随意。不等式的解通常不是一个数，而是一段或几段范围。移项、合并同类项、因式分解都可以使用，但开方、平方、取倒数等操作要检查条件。实际题里，不等式常表示限制条件，如非负、最多、至少或不超过。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "不等式",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%8D%E7%AD%89%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "不等式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%8D%E7%AD%89%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inequality",
+          "url": "https://en.wikipedia.org/w/index.php?search=inequality"
+        }
       ]
     },
     {
@@ -215,6 +413,24 @@
         "判别式 开口 根 解集",
         "ax^2+bx+c>0 a≠0",
         "quadratic inequality in one variable"
+      ],
+      "explanation_markdown": "一元二次不等式只含一个未知数，且最高次数为 $2$，常见形式为 $ax^2+bx+c>0$ 或 $ax^2+bx+c<0$，其中 $a\\ne0$，$x$ 是未知数。\n\n解它通常看对应二次函数 $y=ax^2+bx+c$ 与 $x$ 轴的位置。判别式 $\\Delta=b^2-4ac$ 决定根的情况，开口方向由 $a$ 的正负决定。有两个实根时，根把数轴分成几个区间，再判断每段函数值的正负；没有实根时，则看整条抛物线在轴上方还是下方。二次函数图像与 $x$ 轴的交点把数轴分区，开口向上时两根外侧函数值为正，中间为负；开口向下则相反。若只有一个重根，函数值在该点等于零，其余位置符号由开口方向决定。端点能否取到看不等号是否带等号。写解集时还要区分开闭端点。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "一元二次不等式",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%80%E5%85%83%E4%BA%8C%E6%AC%A1%E4%B8%8D%E7%AD%89%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "一元二次不等式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%80%E5%85%83%E4%BA%8C%E6%AC%A1%E4%B8%8D%E7%AD%89%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quadratic inequality in one variable",
+          "url": "https://en.wikipedia.org/w/index.php?search=quadratic%20inequality%20in%20one%20variable"
+        }
       ]
     },
     {
@@ -233,6 +449,24 @@
         "正变量 等号成立",
         "(a+b)/2≥sqrt(ab)",
         "AM-GM inequality"
+      ],
+      "explanation_markdown": "高中常说的基本不等式是正数的算术平均不小于几何平均。对 $a>0,b>0$，有 $\\frac{a+b}{2}\\ge\\sqrt{ab}$，其中 $a,b$ 是正数，等号在 $a=b$ 时成立。\n\n它常用来求最值：和固定时积有最大值，积固定时和有最小值。使用前必须检查变量为正，还要确认等号条件能在条件约束下达到。若只满足非负或有其他限制，需要先处理取值范围。基本不等式的力量来自把“和”与“积”联系起来。等号条件往往决定最值是否真的能够取得，不能只看形式。基本不等式的核心不是机械套公式，而是把式子整理成正数和或积的关系。若条件要求最小值，常把目标写成和；若要求最大值，常把目标写成积。等号成立条件必须与约束同时满足，否则只能得到界而不是最值。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "基本不等式",
+          "url": "https://www.baidu.com/s?wd=%E5%9F%BA%E6%9C%AC%E4%B8%8D%E7%AD%89%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "基本不等式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9F%BA%E6%9C%AC%E4%B8%8D%E7%AD%89%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "basic inequality",
+          "url": "https://en.wikipedia.org/w/index.php?search=basic%20inequality"
+        }
       ]
     },
     {
@@ -251,6 +485,24 @@
         "等值线 平移 边界顶点",
         "阴影区域 顶点",
         "linear programming"
+      ],
+      "explanation_markdown": "线性规划在高中通常指在平面中用一次不等式确定可行区域，再求一次目标函数的最大值或最小值。约束可写成 $a_ix+b_iy\\le c_i$，目标函数写成 $z=px+qy$，其中 $x,y$ 是变量。\n\n每个一次不等式对应一条直线的一侧，多个条件的交集形成可行域。目标函数的等值线 $px+qy=z$ 平移时，最优值常出现在可行域的顶点或边界上。处理时要画准边界、判断阴影方向，再把候选顶点代入目标函数比较。若可行域无界，还要判断目标值是否仍有最大或最小。线性规划的图像法依赖一次函数等值线互相平行这一性质。可行域的顶点来自边界直线交点，也可能受坐标轴或实际非负条件限制。若目标函数表示实际量，最后还要检查最优点是否符合整数、数量等现实要求。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线性规划",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线性规划",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear programming",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20programming"
+        }
       ]
     },
     {
@@ -269,6 +521,24 @@
         "边界 阴影方向",
         "顶点 边界 最优",
         "feasible region"
+      ],
+      "explanation_markdown": "可行域是所有满足约束条件的点组成的集合。在线性规划中，若约束为 $a_ix+b_iy\\le c_i$，可行域可写成 $D=\\{(x,y)\\mid a_ix+b_iy\\le c_i,\\ i=1,\\ldots,m\\}$，其中 $D$ 表示满足全部条件的区域。\n\n可行域常由若干半平面交叠而成，可能是多边形，也可能无界或为空。边界线是否包含要看不等号中有没有等号。寻找最优值时，先确定可行域，再讨论目标函数在这个区域中的取值；如果区域画错，后面的计算即使正确也会偏离题意。可行域中的每个点都代表一种满足全部条件的方案，区域外的点至少违反一个条件。画可行域时，可先画边界直线，再用测试点判断保留哪一侧。若边界为虚线，说明等号不成立；若为实线，则边界点也可行。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "可行域",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%AF%E8%A1%8C%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "可行域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%AF%E8%A1%8C%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "feasible region",
+          "url": "https://en.wikipedia.org/w/index.php?search=feasible%20region"
+        }
       ]
     },
     {
@@ -287,6 +557,24 @@
         "等值线 平移 截距变化",
         "顶点代入 最优",
         "objective function"
+      ],
+      "explanation_markdown": "目标函数是在线性规划中需要最大化或最小化的表达式，通常是变量的一次式。常写成 $z=ax+by$，其中 $z$ 是目标值，$x,y$ 是决策变量，$a,b$ 是条件给定的系数。\n\n把 $z=ax+by$ 改写成直线族，可以看作目标函数的等值线。随着等值线平移，$z$ 的数值随截距变化而变化。最大利润、最小成本、最短时间等都可转化为目标函数。它必须和可行域配合使用，因为最优值只允许在满足约束的点中寻找。系数的实际意义通常来自利润、用量、距离或时间等背景。目标函数的等值线斜率由系数 $a,b$ 决定，平移方向决定目标值增大或减小。它本身不限制点的位置，限制来自可行域。实际问题中，建立目标函数时要把每种变量对总收益或总成本的贡献写清楚。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "目标函数",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%AE%E6%A0%87%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "目标函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%AE%E6%A0%87%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "objective function",
+          "url": "https://en.wikipedia.org/w/index.php?search=objective%20function"
+        }
       ]
     },
     {
@@ -305,6 +593,24 @@
         "等值线 边重合 多点",
         "利润 成本 最终结果",
         "optimal solution"
+      ],
+      "explanation_markdown": "最优解是在所有满足约束条件的点中，使目标函数取得最大值或最小值的取值。若可行域为 $D$，目标函数为 $z=f(x,y)$，最优解可写成 $(x_0,y_0)\\in D$ 且 $f(x_0,y_0)\\ge f(x,y)$ 对所有 $(x,y)\\in D$ 成立。\n\n线性规划中，若可行域是有界多边形，最优解通常出现在顶点；若目标等值线与一条边重合，可能一整段点都是最优解。最优值是目标函数的数值，最优解是达到该数值的变量取值，二者要分清。最优解可能唯一，也可能有无穷多个，还可能因为可行域为空或目标无界而不存在。在线性规划图像法中，若最优点在顶点，通常代入几个候选顶点比较即可。若目标线与边界重合，整条边上的点都可能达到同一最优值。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最优解",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E4%BC%98%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最优解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E4%BC%98%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "optimal solution",
+          "url": "https://en.wikipedia.org/w/index.php?search=optimal%20solution"
+        }
       ]
     },
     {
@@ -323,6 +629,24 @@
         "平面 点 向量",
         "运算 i^2=-1",
         "complex number"
+      ],
+      "explanation_markdown": "复数是形如 $z=a+bi$ 的数，其中 $a,b$ 是实数，$i$ 是虚数单位并满足 $i^2=-1$。$a$ 叫实部，$b$ 叫虚部；当 $b=0$ 时，复数就是实数。\n\n复数把实数轴扩展到平面上，可用点 $(a,b)$ 或从原点指向该点的向量表示。加减法按实部、虚部分别运算，乘法按 $i^2=-1$ 化简。它让方程 $x^2+1=0$ 有解，也使二次方程在更大的数系中总能讨论根。实数轴只是复平面中的一条特殊直线，虚部为零时落在其上。复数相等要求实部和虚部分别相等，因此一个复数方程常可拆成两个实数方程。它既保留数的四则运算，又能在平面中表现为几何对象；乘以 $i$ 还可看成逆时针旋转 $90^\\circ$，这与普通二维向量的乘法不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "复数",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%8D%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "复数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%8D%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "complex number",
+          "url": "https://en.wikipedia.org/w/index.php?search=complex%20number"
+        }
       ]
     },
     {
@@ -341,6 +665,24 @@
         "a+bi",
         "i",
         "imaginary unit"
+      ],
+      "explanation_markdown": "虚数单位是扩充实数范围时引入的符号，记作 $i$，规定 $i^2=-1$。因为没有实数平方等于 $-1$，所以 $i$ 不在实数范围内。\n\n任何复数都可写成 $a+bi$，其中 $b$ 是 $i$ 前面的实数系数。计算时常用 $i^2=-1$、$i^3=-i$、$i^4=1$ 的循环规律化简。虚数单位不是未知数，也不是普通字母；它的作用是让带负数的平方根可以在复数范围内统一处理。它和实数一起构成复数的基本表达，使运算范围更加完整。虚数单位让负数开平方有了统一符号，例如 $\\sqrt{-4}=2i$。它的幂按四次循环变化，所以复杂的高次幂可以先除以 $4$ 看余数。计算中要把 $i$ 的规则固定下来，不能把它当作可取任意值的变量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "虚数单位",
+          "url": "https://www.baidu.com/s?wd=%E8%99%9A%E6%95%B0%E5%8D%95%E4%BD%8D%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "虚数单位",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%99%9A%E6%95%B0%E5%8D%95%E4%BD%8D"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "imaginary unit",
+          "url": "https://en.wikipedia.org/w/index.php?search=imaginary%20unit"
+        }
       ]
     },
     {
@@ -359,6 +701,24 @@
         "复数相等 分别相等",
         "Re(z)",
         "real part"
+      ],
+      "explanation_markdown": "实部是复数 $z=a+bi$ 中不乘虚数单位 $i$ 的那一部分，记作 $\\operatorname{Re}z=a$，其中 $a,b$ 都是实数。\n\n在复平面上，实部对应点的横坐标。两个复数相等，当且仅当它们的实部相等、虚部也相等，即 $a+bi=c+di$ 等价于 $a=c$ 且 $b=d$。实部可以为正、负或零；当虚部为零时，复数只剩实部，也就是一个实数。在坐标表示和复数相等判断中，都要先看这一部分是否一致，也要保留它的正负号。实部决定复数在实轴方向上的位置，虚部决定离开实轴的高度。若两个复数的实部不同，它们在复平面上的横坐标就不同，不可能是同一个点。许多复数方程会先比较实部，再比较虚部，从而得到实数条件。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "实部",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%9E%E9%83%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "实部",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%9E%E9%83%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "real part",
+          "url": "https://en.wikipedia.org/w/index.php?search=real%20part"
+        }
       ]
     },
     {
@@ -377,6 +737,24 @@
         "系数b 非bi",
         "Im(z)",
         "imaginary part"
+      ],
+      "explanation_markdown": "虚部是复数 $z=a+bi$ 中虚数单位 $i$ 前面的实数系数，记作 $\\operatorname{Im}z=b$，其中 $a$ 是实部，$b$ 是虚部。\n\n注意虚部通常指系数 $b$，不是整项 $bi$。在复平面上，虚部对应点的纵坐标；虚部为零的复数位于实轴上，实部为零的非零复数位于虚轴上。比较两个复数或做加减法时，把实部和虚部分开处理，能避免把 $i$ 当成普通系数。它决定复平面上点离开实轴的方向和有向距离，符号也要保留。虚部为正时，点在实轴上方；虚部为负时，点在实轴下方。若虚部为零，复数落在实轴上，就是实数。求虚部时要先把复数整理成 $a+bi$ 的标准形式，否则容易把尚未化简的含 $i$ 项看错。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "虚部",
+          "url": "https://www.baidu.com/s?wd=%E8%99%9A%E9%83%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "虚部",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%99%9A%E9%83%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "imaginary part",
+          "url": "https://en.wikipedia.org/w/index.php?search=imaginary%20part"
+        }
       ]
     },
     {
@@ -395,6 +773,24 @@
         "乘积 a^2+b^2",
         "z=a+bi z̄=a-bi",
         "conjugate complex number"
+      ],
+      "explanation_markdown": "共轭复数是在 $a+bi$ 中保持实部不变、把虚部变号得到的复数。若 $z=a+bi$，则 $\\bar z=a-bi$，其中 $\\bar z$ 表示 $z$ 的共轭复数。\n\n在复平面上，$z$ 与 $\\bar z$ 关于实轴对称。它们的乘积为 $z\\bar z=(a+bi)(a-bi)=a^2+b^2$，结果是非负实数。共轭复数常用于化简分母含 $i$ 的分式，也能帮助计算复数的模长，因为 $|z|=\\sqrt{z\\bar z}$。这也是分母实数化的常用理由，能把含 $i$ 的分式整理清楚。共轭只改变虚部符号，所以它保留复数到原点的距离。若一个复数本身等于它的共轭，说明虚部为零，这个复数是实数。复数除法中，分子分母同乘分母的共轭，可以把分母化为实数后继续计算。它也常用来判断一个复数表达式是否为实数。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "共轭复数",
+          "url": "https://www.baidu.com/s?wd=%E5%85%B1%E8%BD%AD%E5%A4%8D%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "共轭复数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%B1%E8%BD%AD%E5%A4%8D%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "conjugate complex number",
+          "url": "https://en.wikipedia.org/w/index.php?search=conjugate%20complex%20number"
+        }
       ]
     },
     {
@@ -413,6 +809,24 @@
         "点 向量 模长",
         "距离 |z|",
         "complex plane"
+      ],
+      "explanation_markdown": "复平面用一个直角坐标平面表示复数，把 $z=a+bi$ 对应到点 $(a,b)$。横轴表示实部，纵轴表示虚部，原点对应复数 $0$。\n\n复数的模长可写成 $|z|=\\sqrt{a^2+b^2}$，其中 $a,b$ 是点到两条坐标轴的有向距离。加减复数可以看成平面向量加减，共轭复数则是关于实轴的对称。复平面把代数运算和几何图形联系起来，便于理解复数大小、方向和对称关系。几何图能帮助判断复数运算后的方向、距离和对称关系。复平面上的横轴常叫实轴，纵轴常叫虚轴。复数加法对应向量平移，乘以 $-1$ 对应关于原点对称。虽然高中不深入复数乘法的旋转意义，但用点和向量看复数，能更直观地区分实部、虚部、模和共轭。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "复平面",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%8D%E5%B9%B3%E9%9D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "复平面",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%8D%E5%B9%B3%E9%9D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "complex plane",
+          "url": "https://en.wikipedia.org/w/index.php?search=complex%20plane"
+        }
       ]
     },
     {
@@ -431,6 +845,24 @@
         "n=1 假设k 推出k+1",
         "逐级覆盖 所有正整数",
         "mathematical induction"
+      ],
+      "explanation_markdown": "数学归纳法是证明与正整数 $n$ 有关的一串命题的方法。若命题记为 $P(n)$，通常先证明 $P(1)$ 成立，再证明 $P(k)\\Rightarrow P(k+1)$，其中 $k$ 是任意正整数。\n\n第一步叫归纳基础，保证起点成立；第二步叫归纳递推，说明一旦某一级成立，下一级也成立。两步合在一起，就像从第一阶台阶开始逐级向上，覆盖所有正整数。它适合证明求和公式、不等式和整除性质，但命题必须按整数顺序排列。若起点不是 $1$，归纳基础要改成条件给定的最小整数。归纳假设只能假设 $P(k)$ 成立，不能直接假设要证明的 $P(k+1)$ 成立。推进步骤要说明对任意符合范围的 $k$ 都有效。若命题从 $n=2$ 或其他起点开始，第一步必须验证那个起点，而不是固定写 $n=1$。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "数学归纳法",
+          "url": "https://www.baidu.com/s?wd=%E6%95%B0%E5%AD%A6%E5%BD%92%E7%BA%B3%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "数学归纳法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%95%B0%E5%AD%A6%E5%BD%92%E7%BA%B3%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mathematical induction",
+          "url": "https://en.wikipedia.org/w/index.php?search=mathematical%20induction"
+        }
       ]
     }
   ]

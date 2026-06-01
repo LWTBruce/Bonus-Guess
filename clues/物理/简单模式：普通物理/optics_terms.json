@@ -17,6 +17,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "optics"
+      ],
+      "explanation_markdown": "光学研究光的传播、成像、干涉、衍射和偏振，核心图像在几何射线与波动相位之间切换。介质中常用 $v=c/n$，其中 $v$ 是光在介质中的速度，$c$ 是真空光速，$n$ 是折射率。\n\n当光学元件尺寸远大于波长时，射线、光程和成像公式很有效；当孔径、缝宽或薄膜厚度接近波长时，相位叠加决定明暗和分辨率。它把眼镜、显微镜、光纤、光谱仪和激光实验放进同一套语言中。从学习路径看，几何光学先给出可画图的光路，波动光学再解释图样和极限；两者不是互相否定，而是在不同尺度上抓住同一束光的不同侧面。这种尺度判断，是选择射线模型还是波动模型的第一步。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "光学",
+          "url": "https://www.baidu.com/s?wd=%E5%85%89%E5%AD%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "光学",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%89%E5%AD%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "optics",
+          "url": "https://en.wikipedia.org/w/index.php?search=optics"
+        }
       ]
     },
     {
@@ -35,6 +53,24 @@
         "可见辐射程差 v=c/n 路径可逆",
         "可见辐射源 遮挡 波面",
         "light"
+      ],
+      "explanation_markdown": "光是可见电磁辐射及其邻近波段的统称，在传播中表现为波，在吸收和发射中又表现出光子特征。真空中满足 $c=\\lambda\\nu$，其中 $c$ 是真空光速，$\\lambda$ 是波长，$\\nu$ 是频率。\n\n光进入介质后频率通常由光源保持，速度和波长随折射率改变。低能日常光学可用射线和波动描述，原子跃迁、光电效应和单光子探测则需要能量量子图像。颜色主要由频率决定，而不是由光在介质中的速度决定。同一束光还可用振幅、相位、偏振和光子数描述，选择哪种语言取决于实验：成像看光路，干涉看相位，探测器计数看能量量子。因此同一颜色在水中波长变短，但频率和色感通常保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "光",
+          "url": "https://www.baidu.com/s?wd=%E5%85%89%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "光",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%89"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "light",
+          "url": "https://en.wikipedia.org/w/index.php?search=light"
+        }
       ]
     },
     {
@@ -53,6 +89,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "light ray"
+      ],
+      "explanation_markdown": "光线是几何光学中表示光传播方向的理想线，适合波长远小于透镜、镜面和障碍物尺度的情况。费马原理可写为 $\\delta\\int n\\,ds=0$，其中 $n$ 是折射率，$ds$ 是路径微元，$\\delta$ 表示实际路径使光程取驻值。\n\n光线通常垂直于波面，反射和折射定律都可从光程取驻值得到。它不是光束的真实边界，也不携带相位宽度；遇到窄缝、小孔或锐利边缘时，衍射会让单纯直线传播图像失效。在折射率连续变化的介质中，光线会逐渐弯曲而不是在某个界面突然折转；海市蜃楼和光纤渐变折射率都体现了这种广义光线图像。光线追迹软件本质上就是把这种近似大量重复计算。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "光线",
+          "url": "https://www.baidu.com/s?wd=%E5%85%89%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "光线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%89%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "light ray",
+          "url": "https://en.wikipedia.org/w/index.php?search=light%20ray"
+        }
       ]
     },
     {
@@ -71,6 +125,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "light beam"
+      ],
+      "explanation_markdown": "光束是一组相邻光线或具有有限横截面的光场，表示光能在某一方向上的集中传播。平均光强可写为 $I=P/S$，其中 $I$ 是光强，$P$ 是通过截面的功率，$S$ 是光束截面积。\n\n光束可以近似平行、会聚或发散，其发散角和横向分布决定照明、切割或成像效果。激光束方向性很强，但仍受衍射限制而不能无限细；普通手电光束还会受反射杯和光源尺寸影响，边缘并非理想锐利。描述光束时还要关注束腰、发散角和相干性；同样总功率的光，若截面积更小或脉冲更短，对材料的局部作用会强得多。实际光束还可能有高斯分布，中心强、边缘弱。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "光束",
+          "url": "https://www.baidu.com/s?wd=%E5%85%89%E6%9D%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "光束",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%89%E6%9D%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "light beam",
+          "url": "https://en.wikipedia.org/w/index.php?search=light%20beam"
+        }
       ]
     },
     {
@@ -89,6 +161,24 @@
         "光程差 v=c/n 路径可逆",
         "相关量 遮挡 波面",
         "light source"
+      ],
+      "explanation_markdown": "光源是能够发出光的物体或装置，发光机制可以是热辐射、能级跃迁、受激辐射或电致发光。方向分布常用 $I_v=d\\Phi/d\\Omega$ 表示，其中 $I_v$ 是发光强度，$\\Phi$ 是光通量，$\\Omega$ 是立体角。\n\n光源的尺寸、谱线宽度、亮度和相干性会影响阴影、成像和干涉。白炽灯近似扩展热光源，气体放电灯有明显谱线，激光则具有较好方向性和相干性；把真实光源当点源时，要确认观察距离远大于它的尺寸。光源还决定实验的相干长度和谱宽；钠灯适合观察较稳定的干涉条纹，白光则因含有许多波长，只在很小光程差附近能形成清晰彩色条纹。光源稳定性还会影响测量重复性，尤其在精密干涉中。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "光源",
+          "url": "https://www.baidu.com/s?wd=%E5%85%89%E6%BA%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "光源",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%89%E6%BA%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "light source",
+          "url": "https://en.wikipedia.org/w/index.php?search=light%20source"
+        }
       ]
     },
     {
@@ -107,6 +197,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "point light source"
+      ],
+      "explanation_markdown": "点光源把实际光源的尺寸忽略为一个点，从该点向各方向发出光，适合距离远大于光源大小的情形。理想各向同性点源照度近似满足 $E\\propto1/r^2$，其中 $E$ 是照度，$r$ 是到光源的距离。\n\n平方反比来自同一光通量分布到半径更大的球面上，面积随 $r^2$ 增长。点光源能简化阴影、照明和成像作图；若光源面积较大，就会产生半影、降低干涉可见度，并使“从一点发出”的假设不再准确。点光源近似还让反射和折射作图变得简洁，例如像点可由多条反射光线反向延长相交得到；若源有扩展面积，每个点都要分别成像。天文学中的恒星常可近似为点光源，但望远镜仍会看到衍射斑。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "点光源",
+          "url": "https://www.baidu.com/s?wd=%E7%82%B9%E5%85%89%E6%BA%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "点光源",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%82%B9%E5%85%89%E6%BA%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "point light source",
+          "url": "https://en.wikipedia.org/w/index.php?search=point%20light%20source"
+        }
       ]
     },
     {
@@ -125,6 +233,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 相关量",
         "wavefront"
+      ],
+      "explanation_markdown": "波面是光波中相位相同的点构成的面，表示同一振动状态在空间中的分布。可写为 $\\phi(\\mathbf r,t)=\\mathrm{const}$，其中 $\\phi$ 是相位，$\\mathbf r$ 是位置，$t$ 是时间，$\\mathrm{const}$ 表示同相位。\n\n光线通常沿波面的法线方向传播。平面波的波面是平面，点光源产生球面波，远离点源的小区域又可近似为平面波。惠更斯原理用波面上每点发出次级波来解释反射、折射和衍射。波面间距等于一个波长，移动方向体现相速度；观察波面如何被孔径截断或被透镜改变曲率，能直观看到衍射和成像之间的联系。透镜改变波面曲率，比只画几条光线更接近波动本质。波面法线的变化，就是光线方向变化的几何来源。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "波面",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A2%E9%9D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "波面",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A2%E9%9D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wavefront",
+          "url": "https://en.wikipedia.org/w/index.php?search=wavefront"
+        }
       ]
     },
     {
@@ -143,6 +269,24 @@
         "两路程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "optical path"
+      ],
+      "explanation_markdown": "光程是几何路径按折射率加权后的等效真空路程，用来记录相位积累。定义为 $L=\\int n\\,ds$，其中 $L$ 是光程，$n$ 是路径上的折射率，$ds$ 是几何路径微元。\n\n同样几何长度在高折射率介质中积累的相位更多，所以干涉和成像比较的是光程而不只是距离。费马原理说明实际光路使光程取驻值；薄膜、透镜和光纤中的相位延迟，都可用光程统一描述。光程语言也解释了透镜为什么能成像：理想成像要求从物点到像点的各条实际光路光程相等或相差整数波长，光才会在像点相长叠加。多介质路径中，哪段折射率大，哪段就贡献更多相位。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "光程",
+          "url": "https://www.baidu.com/s?wd=%E5%85%89%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "光程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%89%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "optical path",
+          "url": "https://en.wikipedia.org/w/index.php?search=optical%20path"
+        }
       ]
     },
     {
@@ -161,6 +305,24 @@
         "Δ=n1l1-n2l2 2πΔ/λ",
         "双缝 薄膜 屏幕",
         "optical path difference"
+      ],
+      "explanation_markdown": "光程差是两束光到达同一点前累计光程的差，直接决定相位差和干涉明暗。常写为 $\\Delta=L_1-L_2$，其中 $\\Delta$ 是光程差，$L_1,L_2$ 是两条路径的光程。\n\n相位差为 $2\\pi\\Delta/\\lambda$，其中 $\\lambda$ 是真空或指定介质中的波长。整数波长差通常给出相长干涉，半整数波长差常给出相消干涉；薄膜中的反射相位突变还会改变明暗条件。在实际干涉实验中，光程差不仅来自几何距离，也来自介质折射率和反射相位；因此插入薄玻璃片或改变空气压力，都能移动干涉条纹。白光干涉只在光程差很小时明显，正是因为各色相位很快错开。它是干涉实验中最核心的可调量，常通过移动反射镜或插入介质改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "光程差",
+          "url": "https://www.baidu.com/s?wd=%E5%85%89%E7%A8%8B%E5%B7%AE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "光程差",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%89%E7%A8%8B%E5%B7%AE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "optical path difference",
+          "url": "https://en.wikipedia.org/w/index.php?search=optical%20path%20difference"
+        }
       ]
     },
     {
@@ -179,6 +341,24 @@
         "Δx=λD/d",
         "亮暗纹 薄膜彩纹",
         "coherent light"
+      ],
+      "explanation_markdown": "相干光指频率相同、相位差能在观察时间内保持稳定的光，能够形成稳定干涉图样。两束光相位差可写为 $\\Delta\\phi=2\\pi\\Delta/\\lambda$，其中 $\\Delta\\phi$ 是相位差，$\\Delta$ 是光程差，$\\lambda$ 是波长。\n\n相干性包含时间相干和空间相干：谱线越窄，相干长度越长；光源尺寸越小，空间相干性通常越好。普通独立灯泡很难产生稳定干涉，分波面或分振幅方法把同一光源分成两束，才能获得可靠相干光。激光常被视为相干光，但也有有限线宽和相干长度；白光虽然不适合大光程差干涉，却能在薄膜中产生彩色条纹，说明相干性要结合尺度判断。相干性不足时，曝光时间内条纹位置平均，屏幕只剩均匀亮度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相干光",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E5%B9%B2%E5%85%89%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相干光",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E5%B9%B2%E5%85%89"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "coherent light",
+          "url": "https://en.wikipedia.org/w/index.php?search=coherent%20light"
+        }
       ]
     },
     {
@@ -197,6 +377,24 @@
         "Δx=λD/d",
         "亮暗纹 薄膜彩纹",
         "coherent light source"
+      ],
+      "explanation_markdown": "相干光源是能发出相位关系稳定光波的光源组合，通常由同一光源分束得到。理想条件写为 $\\Delta\\phi=\\mathrm{const}$，其中 $\\Delta\\phi$ 是两光源发出光的相位差，$\\mathrm{const}$ 表示随时间稳定。\n\n双缝实验中的两缝可看作相干光源，因为它们来自同一入射波面。若两个光源频率略有差异或相位随机漂移，屏上明暗会快速移动并被平均掉；相干光源的本质不是亮度高，而是相位关系可预测。相干光源的获得方式体现了“同源分束”的思想：让两束光继承同一个相位起点，再用几何路径差控制最终相位，而不是依靠两个独立灯泡碰巧同步。双缝间距和缝宽也会影响两束光是否能在屏幕上保持足够重叠。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相干光源",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E5%B9%B2%E5%85%89%E6%BA%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相干光源",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E5%B9%B2%E5%85%89%E6%BA%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "coherent light source",
+          "url": "https://en.wikipedia.org/w/index.php?search=coherent%20light%20source"
+        }
       ]
     },
     {
@@ -215,6 +413,24 @@
         "E=Φ/S 平方衰减",
         "照明 接收面",
         "light intensity"
+      ],
+      "explanation_markdown": "光强在波动光学中常指单位面积上的平均能流密度，反映光波携带能量的多少。可写为 $I=P/S$，其中 $I$ 是光强，$P$ 是通过面积的平均功率，$S$ 是面积。\n\n对单色电磁波，光强与电场振幅平方成正比，因此两束光干涉时要先叠加振幅而不是直接叠加强度。它和人眼感到的明亮程度不同；视觉亮度还受波长、环境和人眼光谱响应影响。在干涉条纹中，暗处并不是能量消失，而是能量重新分布到亮处；这说明光强图样必须看整个空间分布，不能只盯一个点的相消。探测器记录的通常也是时间平均光强，而不是电场瞬时振荡。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "光强",
+          "url": "https://www.baidu.com/s?wd=%E5%85%89%E5%BC%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "光强",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%89%E5%BC%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "light intensity",
+          "url": "https://en.wikipedia.org/w/index.php?search=light%20intensity"
+        }
       ]
     },
     {
@@ -233,6 +449,24 @@
         "E=Φ/S 平方衰减",
         "照明 接收面",
         "illuminance"
+      ],
+      "explanation_markdown": "照度描述单位面积接收到的光通量，是照明工程中衡量被照表面亮暗的量。定义为 $E_v=\\Phi/S$，其中 $E_v$ 是照度，$\\Phi$ 是落到表面的光通量，$S$ 是受光面积。\n\n若光斜射到表面，有效投影面积改变，照度会随入射角余弦降低。照度采用人眼视觉加权，因此同样辐射功率的红光和绿光可能对应不同照度；教室照明、摄影曝光和路灯设计都使用这一量。照度还随距离平方衰减，并受灯具配光曲线影响；同一盏灯放得更远、照射更斜或被灯罩重新分配方向，桌面读数都会改变。照度计测到的是接收面的效果，因此位置和朝向都很重要。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "照度",
+          "url": "https://www.baidu.com/s?wd=%E7%85%A7%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "照度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%85%A7%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "illuminance",
+          "url": "https://en.wikipedia.org/w/index.php?search=illuminance"
+        }
       ]
     },
     {
@@ -251,6 +485,24 @@
         "E=Φ/S 平方衰减",
         "照明 接收面",
         "luminous intensity"
+      ],
+      "explanation_markdown": "发光强度描述光源在某一方向上单位立体角内发出的光通量，反映光源的方向性。定义为 $I_v=d\\Phi/d\\Omega$，其中 $I_v$ 是发光强度，$d\\Phi$ 是小立体角 $d\\Omega$ 内的光通量。\n\n同样总光通量，若集中到更小方向范围，发光强度就更大。探照灯、车灯和发光二极管都需要看方向分布；它不同于照度，后者还要考虑距离、入射角和接收面的面积。烛光单位坎德拉就是发光强度单位，它强调某一方向的视觉效果；总光通量很大的光源如果向四周发散，在特定方向上未必强。车灯配光设计追求的正是把发光强度分配到需要照亮的方向。因此，同一灯具在轴上和侧向的发光强度可能差别很大。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "发光强度",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%91%E5%85%89%E5%BC%BA%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "发光强度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%91%E5%85%89%E5%BC%BA%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "luminous intensity",
+          "url": "https://en.wikipedia.org/w/index.php?search=luminous%20intensity"
+        }
       ]
     },
     {
@@ -269,6 +521,24 @@
         "E=Φ/S 平方衰减",
         "照明 接收面",
         "luminous flux"
+      ],
+      "explanation_markdown": "光通量是按人眼视觉灵敏度加权后的可见光功率，表示光源对视觉照明的总贡献。方向积分可写为 $\\Phi=\\int I_v\\,d\\Omega$，其中 $\\Phi$ 是光通量，$I_v$ 是发光强度，$d\\Omega$ 是立体角微元。\n\n光通量单位为流明，同样辐射能量在不同波长下对应的流明数不同，因为人眼对黄绿光最敏感。它适合比较灯具照明能力，但不能直接描述红外加热或紫外杀菌的全部辐射功率。光通量用于比较灯具“有多少可见光”，照度用于比较某处“收到多少光”；一个是源的输出，一个是接收面的结果，二者不能互相替代。选择灯泡时看流明，比只看电功率更能反映可见照明效果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "光通量",
+          "url": "https://www.baidu.com/s?wd=%E5%85%89%E9%80%9A%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "光通量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%89%E9%80%9A%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "luminous flux",
+          "url": "https://en.wikipedia.org/w/index.php?search=luminous%20flux"
+        }
       ]
     },
     {
@@ -287,6 +557,24 @@
         "入射角=返回角",
         "平面镜 对称像点",
         "reflection"
+      ],
+      "explanation_markdown": "反射是光遇到界面后返回原介质的传播过程，方向由入射光线、界面法线和反射光线共同决定。镜面反射满足 $i=r$，其中 $i$ 是入射角，$r$ 是反射角，二者都从法线量起。\n\n平滑表面使相邻光线保持有序方向，形成清晰像；粗糙表面由许多微小面元反射，整体表现为漫反射。反射遵守光路可逆性，平面镜、球面镜和全反射棱镜都建立在同一几何规律上。反射还会改变相位和偏振，尤其在薄膜干涉和布儒斯特角附近很重要；同样满足 $i=r$ 的光，强度和偏振状态可能完全不同。镜面镀膜常通过改变反射率和相位来提高成像质量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反射",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "reflection",
+          "url": "https://en.wikipedia.org/w/index.php?search=reflection"
+        }
       ]
     },
     {
@@ -305,6 +593,24 @@
         "入射角=反射角",
         "平面镜 对称像点",
         "law of reflection"
+      ],
+      "explanation_markdown": "反射定律规定入射光线、反射光线和法线在同一平面内，并且入射角等于反射角。公式为 $i=r$，其中 $i$ 是入射角，$r$ 是反射角，角度都相对于法线测量。\n\n它可由费马原理的最短时间图像推出，也可由波面在界面上的相位匹配理解。定律给出方向，不直接给出强度；反射率还取决于材料、偏振、入射角和表面粗糙程度。用作图法找像点时，反射定律保证从物点到镜面再到眼睛的路径等价于从虚像点直线传播，这就是平面镜对称成像的几何基础。它也是光路可逆性的一个直接体现，反向追迹仍满足同一角度关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反射定律",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E5%B0%84%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反射定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E5%B0%84%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "law of reflection",
+          "url": "https://en.wikipedia.org/w/index.php?search=law%20of%20reflection"
+        }
       ]
     },
     {
@@ -323,6 +629,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "angle of incidence"
+      ],
+      "explanation_markdown": "入射角是入射光线与界面法线之间的夹角，而不是与界面本身的夹角。可写作 $i=\\angle(\\mathbf k,\\mathbf n)$，其中 $i$ 是入射角，$\\mathbf k$ 是入射方向，$\\mathbf n$ 是界面法线方向。\n\n它同时进入反射定律和折射定律，决定光线离开界面的方向。入射角为零称为正入射，此时反射光沿原路返回，折射光不发生方向偏折；曲面界面上法线随位置改变，所以同一束光不同点的入射角也不同。入射角越大，反射和折射中的偏振效应通常越明显；接近掠入射时，小小的表面粗糙或涂层差异也会显著影响反射光。许多光学涂层的性能都随入射角改变，不是固定不变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "入射角",
+          "url": "https://www.baidu.com/s?wd=%E5%85%A5%E5%B0%84%E8%A7%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "入射角",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%A5%E5%B0%84%E8%A7%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "angle of incidence",
+          "url": "https://en.wikipedia.org/w/index.php?search=angle%20of%20incidence"
+        }
       ]
     },
     {
@@ -341,6 +665,24 @@
         "入射角=返回角",
         "平面镜 对称像点",
         "angle of reflection"
+      ],
+      "explanation_markdown": "反射角是反射光线与界面法线之间的夹角，在镜面反射中等于入射角。可写为 $r=i$，其中 $r$ 是反射角，$i$ 是入射角，二者都从法线量起。\n\n反射角只决定反射光的方向，不说明反射光有多强。金属镜、玻璃表面和水面都遵守同一角度关系，但反射率差别很大；若表面粗糙，局部微面仍可反射，宏观上却变成多个方向的散射光。反射角和入射角相等并不要求光源、镜面和观察者对称；只要在入射点处对法线量角，局部几何就已经决定反射方向。作图时先画法线再量反射角，能减少把界面当基准的错误。多次反射系统中，每次都按局部法线重新定义反射角。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反射角",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E5%B0%84%E8%A7%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反射角",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E5%B0%84%E8%A7%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "angle of reflection",
+          "url": "https://en.wikipedia.org/w/index.php?search=angle%20of%20reflection"
+        }
       ]
     },
     {
@@ -359,6 +701,24 @@
         "入射角=反射角",
         "平面镜 对称像点",
         "normal line"
+      ],
+      "explanation_markdown": "法线是过入射点并垂直于界面的参考线，用来定义入射角、反射角和折射角。界面相位匹配可表达为 $\\mathbf k_{\\parallel}$ 连续，其中 $\\mathbf k_{\\parallel}$ 是波矢平行界面的分量。\n\n法线不是实际光线，却是光路几何的坐标基准。平面界面法线处处平行，球面镜或透镜表面的法线则指向曲率中心；角度若误从界面量起，反射定律和斯涅尔定律都会被用错。在透镜作图中，每个曲面点都有自己的法线，因此光线经过球面时会按局部法线折射；这也是曲率能够改变波面方向的原因。在平面镜中法线处处平行，在球面镜中法线都指向球心。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "法线",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%95%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "法线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%95%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "normal line",
+          "url": "https://en.wikipedia.org/w/index.php?search=normal%20line"
+        }
       ]
     },
     {
@@ -377,6 +737,24 @@
         "入射角=反射角",
         "相关量 对称像点",
         "plane mirror"
+      ],
+      "explanation_markdown": "平面镜利用镜面反射形成正立、等大的虚像，物和像关于镜面对称。成像距离满足 $d_i=d_o$，其中 $d_i$ 是像到镜面的距离，$d_o$ 是物到镜面的距离。\n\n反射光进入眼睛时，好像来自镜后对称点，但实际光线并没有穿过镜面。平面镜成像不改变大小，却改变前后空间关系；镜面尺寸有限会限制可见范围，表面不平会让反射方向产生微小误差并降低清晰度。平面镜成像的左右反转其实是前后方向相对镜面反向，而不是物理空间中真正交换左右；理解坐标反射能避免常见直觉误解。多个平面镜组合还能通过多次反射改变光路方向和像的数目。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平面镜",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E9%9D%A2%E9%95%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平面镜",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E9%9D%A2%E9%95%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "plane mirror",
+          "url": "https://en.wikipedia.org/w/index.php?search=plane%20mirror"
+        }
       ]
     },
     {
@@ -395,6 +773,24 @@
         "入射角=反射角",
         "平面镜 对称像点",
         "spherical mirror"
+      ],
+      "explanation_markdown": "球面镜的反射面是球面的一部分，近轴光线可在反射后会聚或看似发散。成像公式为 $1/f=1/u+1/v$，其中 $f$ 是焦距，$u$ 是物距，$v$ 是像距。\n\n凹面镜可形成实焦点，凸面镜形成虚焦点；焦距在近轴近似下等于曲率半径的一半。球面镜公式适合靠近主轴的小角光线，孔径过大时会出现球差，使不同高度入射的光线不能汇聚到同一点。球面镜的焦点和曲率中心都在主轴上，三条特殊光线作图能快速确定像；但这套作图默认近轴，不能随意推广到边缘光线。符号约定会影响公式正负，但焦点、物点和像点的几何关系不变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "球面镜",
+          "url": "https://www.baidu.com/s?wd=%E7%90%83%E9%9D%A2%E9%95%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "球面镜",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%90%83%E9%9D%A2%E9%95%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "spherical mirror",
+          "url": "https://en.wikipedia.org/w/index.php?search=spherical%20mirror"
+        }
       ]
     },
     {
@@ -413,6 +809,24 @@
         "入射角=反射角",
         "平面镜 对称像点",
         "concave mirror"
+      ],
+      "explanation_markdown": "凹面镜的反射面向入射光一侧凹入，对平行近轴光具有会聚作用。近轴焦距满足 $f=R/2$，其中 $f$ 是焦距，$R$ 是球面曲率半径。\n\n物体在焦点外时，凹面镜可形成倒立实像；物体在焦点内时，则形成正立放大的虚像。它可用于聚光、望远镜和化妆镜；大孔径凹面镜会有球差，精密系统常改用抛物面来改善平行光聚焦。太阳灶和反射望远镜都利用凹面镜会聚平行光；若要让远处平行光精确汇聚，抛物面比球面更理想，因为它能减少球差。手电筒反光杯近似利用凹面反射，把光源附近的光整理成较窄光束。焦点附近放置小光源时，出射光可近似变成平行光。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "凹面镜",
+          "url": "https://www.baidu.com/s?wd=%E5%87%B9%E9%9D%A2%E9%95%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "凹面镜",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%B9%E9%9D%A2%E9%95%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "concave mirror",
+          "url": "https://en.wikipedia.org/w/index.php?search=concave%20mirror"
+        }
       ]
     },
     {
@@ -431,6 +845,24 @@
         "入射角=反射角",
         "平面镜 对称像点",
         "convex mirror"
+      ],
+      "explanation_markdown": "凸面镜的反射面向入射光凸出，对近轴光线具有发散作用。按常用符号约定可写 $f=-R/2$，其中 $f$ 是焦距，$R$ 是球面曲率半径，负号表示焦点在镜后延长线上。\n\n它总形成正立、缩小的虚像，因此视野比同尺寸平面镜更大，常用于车辆后视镜和道路转角镜。凸面镜不能把平行光会聚到屏幕上的真实焦点；看到的像来自反射光反向延长线的交点。凸面镜牺牲像的大小换取更大视野，因此后视镜上常提醒物体看起来比实际更远；这是缩小虚像带来的视觉判断问题。它的成像牺牲距离判断精度，换来更宽的安全观察范围。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "凸面镜",
+          "url": "https://www.baidu.com/s?wd=%E5%87%B8%E9%9D%A2%E9%95%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "凸面镜",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%B8%E9%9D%A2%E9%95%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "convex mirror",
+          "url": "https://en.wikipedia.org/w/index.php?search=convex%20mirror"
+        }
       ]
     },
     {
@@ -449,6 +881,24 @@
         "1/f=1/u+1/v v/u",
         "特殊光线 视力矫正",
         "focus"
+      ],
+      "explanation_markdown": "焦点是平行于主轴的近轴光经透镜或镜面后实际会聚，或反向延长后看似发出的特征点。它与成像公式 $1/f=1/u+1/v$ 相连，其中 $f$ 是焦距，$u$ 是物距，$v$ 是像距。\n\n实焦点可放置屏幕接收能量，虚焦点只能由延长线确定。焦点不是任何光学系统都绝对尖锐的点，像差、衍射和色散都会使光斑有有限大小；近轴条件越好，焦点概念越接近理想。焦点也可分为前焦点和后焦点，入射或出射平行光对应不同一侧；复杂镜头中焦点位置与主平面有关，不一定从镜片中心量起。摄影中的对焦，就是让实际像面与所需焦点附近的位置重合。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "焦点",
+          "url": "https://www.baidu.com/s?wd=%E7%84%A6%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "焦点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%84%A6%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "focus",
+          "url": "https://en.wikipedia.org/w/index.php?search=focus"
+        }
       ]
     },
     {
@@ -467,6 +917,24 @@
         "1/f=1/u+1/v v/u",
         "特殊光线 视力矫正",
         "focal length"
+      ],
+      "explanation_markdown": "焦距是光学系统主点到焦点的距离，刻画它改变光束会聚程度的能力。光焦度写为 $P=1/f$，其中 $P$ 是光焦度，$f$ 是以米计的焦距。\n\n焦距越短，系统弯折光线的能力越强；正焦距通常对应会聚，负焦距对应发散。眼镜度数、相机视角和望远镜放大率都与焦距有关。实际厚透镜或镜组要用主平面定义焦距，不能只从某个表面量起。短焦镜头视场大、透视夸张，长焦镜头视场窄、放大远处角度；这些摄影效果最终都来自焦距对成像比例和视角的控制。变焦镜头改变有效焦距，因此同一位置拍摄会得到不同视场。焦距测量也是检验透镜或镜面加工质量的基本项目。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "焦距",
+          "url": "https://www.baidu.com/s?wd=%E7%84%A6%E8%B7%9D%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "焦距",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%84%A6%E8%B7%9D"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "focal length",
+          "url": "https://en.wikipedia.org/w/index.php?search=focal%20length"
+        }
       ]
     },
     {
@@ -485,6 +953,24 @@
         "1/f=1/u+1/v v/u",
         "特殊光线 视力矫正",
         "principal axis"
+      ],
+      "explanation_markdown": "主轴是通过光学系统对称中心和曲率中心的参考直线，近轴成像的距离和角度都围绕它定义。近轴条件可写为 $\\theta\\ll1$，其中 $\\theta$ 是光线与主轴的夹角，$\\ll$ 表示远小于。\n\n主轴帮助规定物距、像距、焦距和三条特殊光线。靠近主轴的小角光线可用薄透镜公式和小角近似处理；离轴太远时，彗差、像散和畸变等像差会变明显，简单成像图不再精确。许多特殊光线规则都围绕主轴表述：平行主轴入射过焦点，过光心近似不偏折，过焦点入射后平行主轴出射。光学元件装调时，主轴不重合会造成偏心和像质下降。许多仪器调焦前，先要完成光轴对准。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "主轴",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%BB%E8%BD%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "主轴",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%BB%E8%BD%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "principal axis",
+          "url": "https://en.wikipedia.org/w/index.php?search=principal%20axis"
+        }
       ]
     },
     {
@@ -503,6 +989,24 @@
         "1/f=1/u+1/v v/u",
         "特殊光线 视力矫正",
         "object distance"
+      ],
+      "explanation_markdown": "物距是物体到透镜或镜面参考点的有符号距离，是确定成像位置的输入量。薄透镜近轴公式 $1/f=1/u+1/v$ 中，$u$ 是物距，$v$ 是像距，$f$ 是焦距。\n\n改变物距会移动像的位置并改变放大率；物体接近焦点时，像距对物距变化特别敏感。不同教材可能使用不同正负号约定，关键是整套公式保持一致。实际厚透镜应从主平面量距，而不是从玻璃表面随意量距。当物距从无穷远逐渐减小，像距会从焦平面附近向远处移动；相机对近物调焦时镜头通常需要离感光面更远。物距趋于无穷远时，像通常落在焦平面附近，这是相机无穷远对焦的来源。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "物距",
+          "url": "https://www.baidu.com/s?wd=%E7%89%A9%E8%B7%9D%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "物距",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%A9%E8%B7%9D"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "object distance",
+          "url": "https://en.wikipedia.org/w/index.php?search=object%20distance"
+        }
       ]
     },
     {
@@ -521,6 +1025,24 @@
         "1/f=1/u+1/v v/u",
         "特殊光线 视力矫正",
         "image distance"
+      ],
+      "explanation_markdown": "像距是像到透镜或镜面参考点的有符号距离，用来说明像形成在系统哪一侧。成像公式为 $1/f=1/u+1/v$，其中 $v$ 是像距，$u$ 是物距，$f$ 是焦距。\n\n像距为实像或虚像的判别提供符号信息：实像可在屏幕上接收，虚像则由反向延长线确定。调焦相机本质上是在改变镜头与感光面的距离，使感光面落在清晰像距处；像差会让不同光线的最佳像距略有差异。像距还决定光学系统的后焦空间是否足够，例如相机镜头要让实像落在传感器位置，否则再好的镜头也无法成清晰图像。近摄时像距增加，因此微距镜头常需要更长的镜筒伸出量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "像距",
+          "url": "https://www.baidu.com/s?wd=%E5%83%8F%E8%B7%9D%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "像距",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%83%8F%E8%B7%9D"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "image distance",
+          "url": "https://en.wikipedia.org/w/index.php?search=image%20distance"
+        }
       ]
     },
     {
@@ -539,6 +1061,24 @@
         "1/f=1/u+1/v v/u",
         "特殊光线 视力矫正",
         "real image"
+      ],
+      "explanation_markdown": "实像由实际光线会聚形成，能够投射到屏幕或感光面上。它的位置仍满足 $1/f=1/u+1/v$，其中 $f$ 是焦距，$u$ 是物距，$v$ 是实像像距。\n\n照相机、投影仪和眼睛视网膜上的清晰像都属于实像图像。实像常是倒立的，但大小取决于放大率而非实像这一名称本身；如果屏幕离开实际会聚位置，光斑会扩散，成像就变模糊。实像处能量真实集中，因此可烧灼、曝光或被探测器记录；这与虚像只能由眼睛追溯方向不同，是二者最直接的实验区分。实像平面前后移动都会造成离焦，点像变成有限弥散斑。屏幕能否接收，是判断实像最直接的实验办法。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "实像",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%9E%E5%83%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "实像",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%9E%E5%83%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "real image",
+          "url": "https://en.wikipedia.org/w/index.php?search=real%20image"
+        }
       ]
     },
     {
@@ -557,6 +1097,24 @@
         "1/f=1/u+1/v v/u",
         "特殊光线 视力矫正",
         "virtual image"
+      ],
+      "explanation_markdown": "虚像由出射光线的反向延长线相交得到，光线并未真正从像点发出，因而不能直接投到屏幕上。放大率常写为 $m=-v/u$，其中 $m$ 是横向放大率，$v$ 是像距，$u$ 是物距。\n\n平面镜、凸面镜和放大镜常形成虚像，眼睛却能接收这些发散光并把它们追溯到像的位置。虚像并不等于“不存在”，它只是没有实际能量会聚在像点；后续透镜仍可把虚像作为物继续成像。放大镜的虚像通常位于明视距离或无穷远附近，让眼睛以较大视角轻松观察；这说明虚像在视觉仪器中非常有实际意义。眼睛看虚像时，晶状体仍把进入眼睛的实际光束重新成实像。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "虚像",
+          "url": "https://www.baidu.com/s?wd=%E8%99%9A%E5%83%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "虚像",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%99%9A%E5%83%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "virtual image",
+          "url": "https://en.wikipedia.org/w/index.php?search=virtual%20image"
+        }
       ]
     },
     {
@@ -575,6 +1133,24 @@
         "1/f=1/u+1/v v/u",
         "特殊光线 视力矫正",
         "magnification"
+      ],
+      "explanation_markdown": "放大率表示像的横向尺寸与物的横向尺寸之比，同时给出正立或倒立的信息。常写为 $m=y'/y=-v/u$，其中 $m$ 是放大率，$y'$ 是像高，$y$ 是物高，$v$ 是像距，$u$ 是物距。\n\n$|m|>1$ 表示放大，$|m|<1$ 表示缩小；符号则由所用坐标约定表示正倒。显微镜和望远镜还常讨论角放大率，它比较的是视角而非横向尺寸，所以不能与普通成像放大率混为一谈。放大率为负常表示倒立，为正常表示正立；但这个符号来自坐标约定，真正观察时还要结合光学系统和屏幕方向理解。测量放大率时要说明是横向尺寸、角度还是面积的放大。面积放大约为横向放大率平方，但只在相似成像中适用。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "放大率",
+          "url": "https://www.baidu.com/s?wd=%E6%94%BE%E5%A4%A7%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "放大率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%94%BE%E5%A4%A7%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "magnification",
+          "url": "https://en.wikipedia.org/w/index.php?search=magnification"
+        }
       ]
     },
     {
@@ -593,6 +1169,24 @@
         "n1sinθ1=n2sinθ2",
         "玻璃砖 棱镜 光谱",
         "refraction"
+      ],
+      "explanation_markdown": "折射是光穿过两种介质界面时传播方向改变的现象，根源在于不同介质中的相速度不同。方向满足 $n_1\\sin i=n_2\\sin r$，其中 $n_1,n_2$ 是两侧折射率，$i$ 是入射角，$r$ 是折射角。\n\n进入折射率较大的介质时，光线通常向法线偏折；频率保持不变，波长和速度改变。折射解释水中物体看似变浅、透镜会聚和棱镜偏折。各向异性晶体、吸收介质或粗糙界面会让简单折射图像变得更复杂。折射过程中光的传播方向改变，但光线仍与波面法线一致；从波动角度看，是界面两侧相位连续迫使波面旋转。筷子插入水中看似弯折，就是空气和水界面折射造成的视位置偏移。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "折射",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%98%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "折射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%98%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "refraction",
+          "url": "https://en.wikipedia.org/w/index.php?search=refraction"
+        }
       ]
     },
     {
@@ -611,6 +1205,24 @@
         "n1sinθ1=n2sinθ2",
         "玻璃砖 棱镜 光谱",
         "law of refraction"
+      ],
+      "explanation_markdown": "折射定律给出光线在两种均匀介质界面处弯折的正弦关系。公式为 $n_1\\sin i=n_2\\sin r$，其中 $n_1,n_2$ 是折射率，$i$ 是入射角，$r$ 是折射角。\n\n它来自界面处波的相位连续，也可从费马原理推出。折射定律不只用于玻璃和水，也用于透镜、光纤和大气折射；当光从高折射率介质射向低折射率介质且角度超过临界角时，普通折射光消失，出现全反射。该定律也能推出可逆性：把折射光反向当作入射光，会沿原路返回；这使许多透镜光路可以从物方或像方等价追迹。透镜的每个表面都连续应用折射定律，最终形成整体成像作用。折射角不存在实数解时，就进入全反射情形。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "折射定律",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%98%E5%B0%84%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "折射定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%98%E5%B0%84%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "law of refraction",
+          "url": "https://en.wikipedia.org/w/index.php?search=law%20of%20refraction"
+        }
       ]
     },
     {
@@ -629,6 +1241,24 @@
         "n1sinθ1=n2sinθ2",
         "玻璃砖 棱镜 光谱",
         "snells law"
+      ],
+      "explanation_markdown": "斯涅尔定律就是折射定律的常用名称，用折射率和入射、折射角的正弦联系两侧光线。写作 $n_1\\sin\\theta_1=n_2\\sin\\theta_2$，其中 $n_1,n_2$ 是介质折射率，$\\theta_1,\\theta_2$ 是相对法线的角。\n\n它把光速变化转化为几何角度变化，因此可用角度测量反推材料折射率。棱镜分光、透镜设计和光纤入射条件都依赖它；在折射率随位置连续变化的大气中，光线会连续弯曲而不是只在界面突变。用波矢语言看，界面平行方向的波矢分量保持不变；这个更深的相位匹配条件也适用于光栅和薄膜等周期结构。全反射、临界角和折射率测量都可从这一定律直接推出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "斯涅尔定律",
+          "url": "https://www.baidu.com/s?wd=%E6%96%AF%E6%B6%85%E5%B0%94%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "斯涅尔定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%96%AF%E6%B6%85%E5%B0%94%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "snells law",
+          "url": "https://en.wikipedia.org/w/index.php?search=snells%20law"
+        }
       ]
     },
     {
@@ -647,6 +1277,24 @@
         "n1sinθ1=n2sinθ2",
         "玻璃砖 棱镜 光谱",
         "refractive index"
+      ],
+      "explanation_markdown": "折射率表示光在介质中的相速度相对真空变慢的程度，也决定光线在界面处的弯折。定义为 $n=c/v$，其中 $n$ 是折射率，$c$ 是真空光速，$v$ 是介质中光速。\n\n折射率越大，相同几何长度对应的光程越大，光进入该介质时通常更靠近法线。折射率往往随波长变化，这就是色散；透明材料、温度和密度也会影响折射率，因此精密光学常需要标明工作波长。折射率还决定光在介质中的波长 $\\lambda=\\lambda_0/n$，所以相同厚度的玻璃会比空气产生更多相位延迟。温度改变空气折射率，会让远处景物闪烁或发生大气折射。折射率测量常用临界角法、最小偏向角法或干涉法。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "折射率",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%98%E5%B0%84%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "折射率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%98%E5%B0%84%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "refractive index",
+          "url": "https://en.wikipedia.org/w/index.php?search=refractive%20index"
+        }
       ]
     },
     {
@@ -665,6 +1313,24 @@
         "sinC=n2/n1",
         "光纤 水下边界",
         "total internal reflection"
+      ],
+      "explanation_markdown": "全反射发生在光从高折射率介质射向低折射率介质，且入射角大于临界角时，光完全返回原介质。条件可写为 $i>C$，其中 $i$ 是入射角，$C$ 是临界角。\n\n此时没有传播到第二介质中的普通折射光，能量主要沿反射方向留在原介质。光纤通信利用全反射把光限制在纤芯内，棱镜也可用它替代金属反射面；界面外仍存在很薄的倏逝场，不是场完全为零。全反射要求界面足够光滑并且没有强吸收；在光纤中还要保证入射角落在允许范围内，否则光会泄漏出纤芯。全反射镜面无需金属镀层，因此在许多棱镜中损耗更低。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "全反射",
+          "url": "https://www.baidu.com/s?wd=%E5%85%A8%E5%8F%8D%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "全反射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%A8%E5%8F%8D%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "total internal reflection",
+          "url": "https://en.wikipedia.org/w/index.php?search=total%20internal%20reflection"
+        }
       ]
     },
     {
@@ -683,6 +1349,24 @@
         "sinC=n2/n1",
         "光纤 相关量",
         "critical angle"
+      ],
+      "explanation_markdown": "临界角是折射角刚好达到九十度时的入射角，是全反射发生的边界。它满足 $\\sin C=n_2/n_1$，其中 $C$ 是临界角，$n_1$ 是入射侧较大折射率，$n_2$ 是另一侧较小折射率。\n\n只有从光密介质射向光疏介质时，临界角才有实数意义。入射角小于它时仍有折射光，大于它时出现全反射。光纤的数值孔径、钻石的闪耀和水下观察的亮圆边界，都与临界角有关。临界角越小，越容易发生全反射；钻石折射率高，因此临界角小，内部多次全反射增强了闪耀效果。光纤能否收光，入口角最终也要转化为纤芯包层间的临界角条件。水下看天空形成亮圆，也可由临界角解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "临界角",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%B4%E7%95%8C%E8%A7%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "临界角",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%B4%E7%95%8C%E8%A7%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "critical angle",
+          "url": "https://en.wikipedia.org/w/index.php?search=critical%20angle"
+        }
       ]
     },
     {
@@ -701,6 +1385,24 @@
         "n1sinθ1=n2sinθ2",
         "玻璃砖 棱镜 光谱",
         "dispersion"
+      ],
+      "explanation_markdown": "色散是折射率随波长或频率变化而引起的现象，不同颜色在介质中传播速度和折射角不同。可写作 $n=n(\\lambda)$，其中 $n$ 是折射率，$\\lambda$ 是波长，括号表示函数依赖。\n\n白光经过棱镜后分成彩色光带，是因为短波和长波的偏折角不同。色散既可用于光谱仪分辨波长，也会在透镜中造成色差，使不同颜色焦点不重合；光纤通信中还要控制色散造成的脉冲展宽。正常色散中短波通常折射率更大，紫光偏折强于红光；反常色散常出现在吸收线附近，说明材料微观共振会影响传播。消色差透镜通过组合不同材料，让两种颜色焦点尽量重合。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "色散",
+          "url": "https://www.baidu.com/s?wd=%E8%89%B2%E6%95%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "色散",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%89%B2%E6%95%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dispersion",
+          "url": "https://en.wikipedia.org/w/index.php?search=dispersion"
+        }
       ]
     },
     {
@@ -719,6 +1421,24 @@
         "n1sinθ1=n2sinθ2",
         "玻璃砖 相关量 光谱",
         "prism"
+      ],
+      "explanation_markdown": "棱镜由两个或多个折射面组成，能偏折光路并把不同波长分开。小顶角近似下偏向角为 $\\delta\\approx(n-1)A$，其中 $\\delta$ 是偏向角，$n$ 是折射率，$A$ 是棱镜顶角。\n\n由于 $n$ 随波长变化，白光通过棱镜会展开成光谱。棱镜既可用于分光，也可用全反射改变光路方向；精确计算时要连续使用斯涅尔定律，顶角、入射角和材料色散都会影响结果。最小偏向角法可用来精确测量棱镜材料折射率，因为对称路径下角度关系稳定，实验误差相对容易控制。棱镜也可用于倒像和转像，双筒望远镜中常见这种用途。分光棱镜的材料选择会直接影响色散强弱。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "棱镜",
+          "url": "https://www.baidu.com/s?wd=%E6%A3%B1%E9%95%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "棱镜",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A3%B1%E9%95%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "prism",
+          "url": "https://en.wikipedia.org/w/index.php?search=prism"
+        }
       ]
     },
     {
@@ -737,6 +1457,24 @@
         "1/f=1/u+1/v v/u",
         "特殊光线 视力矫正",
         "lens"
+      ],
+      "explanation_markdown": "透镜通过折射改变波面曲率，使光束会聚或发散并形成像。薄透镜近轴公式为 $1/f=1/u+1/v$，其中 $f$ 是焦距，$u$ 是物距，$v$ 是像距。\n\n透镜的作用来自两面折射的合效果，不只是把光线“弯一下”。照相机、眼睛、显微镜和投影仪都利用透镜成像；真实透镜有厚度、像差和色散，孔径较大或离轴较远时，理想公式只给出近似。透镜可以看成把入射波面重新塑形的器件，会聚透镜把平面波变成趋向焦点的球面波，发散透镜则产生向外展开的波面。透镜中心厚度、曲率和材料共同决定焦距，不能只看外形。透镜组设计常用多片组合，把单片缺陷彼此补偿。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "透镜",
+          "url": "https://www.baidu.com/s?wd=%E9%80%8F%E9%95%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "透镜",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%80%8F%E9%95%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lens",
+          "url": "https://en.wikipedia.org/w/index.php?search=lens"
+        }
       ]
     },
     {
@@ -755,6 +1493,24 @@
         "1/f=1/u+1/v v/u",
         "特殊光线 视力矫正",
         "thin lens"
+      ],
+      "explanation_markdown": "薄透镜把实际透镜厚度忽略，认为主要折射作用集中在一个平面附近，适合厚度远小于物距、像距和曲率半径的情形。公式为 $1/f=1/u+1/v$，其中 $f$ 是焦距，$u$ 是物距，$v$ 是像距。\n\n这个近似保留了成像位置和放大率的主关系，便于用三条特殊光线作图。厚镜组、鱼眼镜头或显微物镜不能随意当薄透镜处理；此时主平面位置和像差校正会明显影响结果。薄透镜作图很适合建立直观，但真实镜头常由多片薄透镜等效组合而成，用来校正单片透镜的色差和球差。这个近似尤其适合入门作图，是复杂光学系统的第一层模型。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "薄透镜",
+          "url": "https://www.baidu.com/s?wd=%E8%96%84%E9%80%8F%E9%95%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "薄透镜",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%96%84%E9%80%8F%E9%95%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "thin lens",
+          "url": "https://en.wikipedia.org/w/index.php?search=thin%20lens"
+        }
       ]
     },
     {
@@ -773,6 +1529,24 @@
         "1/f=1/u+1/v v/u",
         "特殊光线 视力矫正",
         "convex lens"
+      ],
+      "explanation_markdown": "凸透镜通常中间厚、边缘薄，在空气中对平行近轴光具有会聚作用。透镜制造者公式可写为 $1/f=(n-1)(1/R_1-1/R_2)$，其中 $f$ 是焦距，$n$ 是材料折射率，$R_1,R_2$ 是两面的曲率半径。\n\n它既能形成倒立实像，也能在物体位于焦点内时形成正立放大的虚像。凸透镜用于眼睛晶状体、相机镜头和放大镜；若放在折射率更高的介质中，会聚能力可能变弱甚至改变符号。凸透镜也可用来准直点光源：把点光源放在焦点处，出射光近似平行，这正是许多光学准直装置的基本方法。老花镜使用会聚作用，帮助近处物体的像重新落到视网膜上。焦距越短，作为放大镜时通常能提供更大角放大率。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "凸透镜",
+          "url": "https://www.baidu.com/s?wd=%E5%87%B8%E9%80%8F%E9%95%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "凸透镜",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%B8%E9%80%8F%E9%95%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "convex lens",
+          "url": "https://en.wikipedia.org/w/index.php?search=convex%20lens"
+        }
       ]
     },
     {
@@ -791,6 +1565,24 @@
         "1/f=1/u+1/v v/u",
         "特殊光线 视力矫正",
         "concave lens"
+      ],
+      "explanation_markdown": "凹透镜通常中间薄、边缘厚，在空气中使平行近轴光发散。按常用符号约定 $f<0$，其中 $f$ 是焦距，负号表示虚焦点在入射光同侧。\n\n凹透镜单独成像时形成正立、缩小的虚像，常用于近视矫正和光束扩展。它的发散作用取决于透镜材料相对周围介质的折射率，而不仅由外形决定；与凸透镜组合时可调节焦距和像差。凹透镜让入射光发散，好像来自焦点处的虚光源；这一虚焦点图像有助于理解近视镜片为何能把远处像推回视网膜。凹透镜与凸透镜间距变化，可构成简单的扩束或缩束系统。它也常用作望远镜或激光系统中的负透镜。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "凹透镜",
+          "url": "https://www.baidu.com/s?wd=%E5%87%B9%E9%80%8F%E9%95%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "凹透镜",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%B9%E9%80%8F%E9%95%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "concave lens",
+          "url": "https://en.wikipedia.org/w/index.php?search=concave%20lens"
+        }
       ]
     },
     {
@@ -809,6 +1601,24 @@
         "1/f=1/u+1/v v/u",
         "特殊光线 视力矫正",
         "converging lens"
+      ],
+      "explanation_markdown": "会聚透镜能使入射的平行近轴光向焦点靠拢，常见形式是在空气中的凸透镜。符号上常取 $f>0$，其中 $f$ 是焦距，正号表示会聚作用。\n\n它能把远处物体成像到焦平面附近，也能作为放大镜让眼睛看到放大的虚像。会聚能力越强，焦距越短；但孔径过大时像差更明显，实际镜头常用多片透镜和光阑来控制清晰度。会聚透镜的正焦距并不保证一定成实像，物体放在焦点以内时仍形成虚像；成像性质由物距和焦距共同决定。会聚透镜也会会聚热辐射，强光聚焦时要注意安全。会聚透镜的焦平面常放置探测器或光阑。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "会聚透镜",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%9A%E8%81%9A%E9%80%8F%E9%95%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "会聚透镜",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%9A%E8%81%9A%E9%80%8F%E9%95%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "converging lens",
+          "url": "https://en.wikipedia.org/w/index.php?search=converging%20lens"
+        }
       ]
     },
     {
@@ -827,6 +1637,24 @@
         "1/f=1/u+1/v v/u",
         "特殊光线 视力矫正",
         "diverging lens"
+      ],
+      "explanation_markdown": "发散透镜能使入射平行近轴光向外散开，反向延长线交于虚焦点。常用 $f<0$ 表示，其中 $f$ 是焦距，负号代表发散透镜的符号约定。\n\n它不能单独把平行光会聚到屏幕上，却能改变光束发散角或与会聚透镜组合。近视眼镜用发散透镜把远处物体的像移到视网膜上；具体成像仍要遵守透镜公式和统一的正负号规则。发散透镜和会聚透镜组合可形成伽利略望远镜，系统总效果不等于简单看单片形状，而要追踪光束会聚状态。它让平行光看似从虚焦点发出，因此常用于扩大激光束直径。它形成的虚像总在物体同侧，且通常比物体小。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "发散透镜",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%91%E6%95%A3%E9%80%8F%E9%95%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "发散透镜",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%91%E6%95%A3%E9%80%8F%E9%95%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "diverging lens",
+          "url": "https://en.wikipedia.org/w/index.php?search=diverging%20lens"
+        }
       ]
     },
     {
@@ -845,6 +1673,24 @@
         "1/f=1/u+1/v v/u",
         "特殊光线 视力矫正",
         "lens formula"
+      ],
+      "explanation_markdown": "透镜公式连接薄透镜近轴成像中的物距、像距和焦距，是成像计算的基本关系。它写为 $1/f=1/u+1/v$，其中 $f$ 是焦距，$u$ 是物距，$v$ 是像距。\n\n公式背后假定光线靠近主轴、角度较小、透镜厚度可忽略。配合放大率 $m=-v/u$，可以判断像的位置、大小和正倒。不同符号约定会改变正负写法，但物理内容不变；真实镜头还要考虑像差和色散。透镜公式还可从相似三角形和近轴折射推导出来，体现光路几何与代数关系的一致性；它是成像作图的数值版。使用公式前先统一符号约定，比死记正负更可靠。焦距、物距、像距三者只要已知两个，就能求第三个。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "透镜公式",
+          "url": "https://www.baidu.com/s?wd=%E9%80%8F%E9%95%9C%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "透镜公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%80%8F%E9%95%9C%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lens formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=lens%20formula"
+        }
       ]
     },
     {
@@ -863,6 +1709,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "optical power"
+      ],
+      "explanation_markdown": "光焦度表示透镜会聚或发散光线的能力，是焦距的倒数。定义为 $P=1/f$，其中 $P$ 是光焦度，$f$ 是以米为单位的焦距，单位常称为屈光度。\n\n正光焦度对应会聚透镜，负光焦度对应发散透镜。眼镜度数本质上就是光焦度，用来补偿眼球成像焦点偏离视网膜的问题。贴近放置的薄透镜光焦度近似相加，分离较远时还要考虑间距带来的组合效应。眼科验光中，远视通常需正光焦度镜片，近视通常需负光焦度镜片；这直接对应把焦点前移或后移到视网膜上。屈光度相加只适合薄透镜贴近，眼镜片与眼睛有距离时还需换算。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "光焦度",
+          "url": "https://www.baidu.com/s?wd=%E5%85%89%E7%84%A6%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "光焦度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%89%E7%84%A6%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "optical power",
+          "url": "https://en.wikipedia.org/w/index.php?search=optical%20power"
+        }
       ]
     },
     {
@@ -881,6 +1745,24 @@
         "1/f=1/u+1/v v/u",
         "特殊光线 视力矫正",
         "microscope"
+      ],
+      "explanation_markdown": "显微镜用物镜先把近处微小物体形成放大的实像，再由目镜进一步放大观察角。总角放大率近似为 $M\\approx(L/f_o)(D/f_e)$，其中 $L$ 是镜筒长度，$f_o$ 是物镜焦距，$D$ 是明视距离，$f_e$ 是目镜焦距。\n\n物镜焦距短、数值孔径大，有助于获得细节；目镜主要让眼睛以更大视角观察中间像。显微镜的清晰度不能只靠增大放大率，衍射分辨限、照明方式和像差都会决定真正能看清的最小结构。显微镜常用油浸物镜提高数值孔径，因为分辨率与收集到的大角度衍射光有关；这比单纯更换高倍目镜更能增加细节。照明孔径与物镜孔径匹配，也会影响对比度和分辨率。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "显微镜",
+          "url": "https://www.baidu.com/s?wd=%E6%98%BE%E5%BE%AE%E9%95%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "显微镜",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%98%BE%E5%BE%AE%E9%95%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "microscope",
+          "url": "https://en.wikipedia.org/w/index.php?search=microscope"
+        }
       ]
     },
     {
@@ -899,6 +1781,24 @@
         "1/f=1/u+1/v v/u",
         "特殊光线 视力矫正",
         "telescope"
+      ],
+      "explanation_markdown": "望远镜把远处物体发来的近似平行光收集起来，并用目镜放大视角。开普勒望远镜角放大率近似为 $M\\approx f_o/f_e$，其中 $f_o$ 是物镜焦距，$f_e$ 是目镜焦距。\n\n物镜口径决定收光能力和衍射分辨率，焦距比决定角放大。天文望远镜追求大口径以看见暗弱目标，地面望远镜还要面对大气扰动；增加放大率若没有足够分辨率，只会把模糊斑放大。反射式望远镜用凹面镜代替大透镜，可避免大玻璃透镜的色差和重量问题；现代大型天文望远镜多采用反射结构。目镜焦距过短会提高倍率，但出瞳太小会让观察变暗。分辨双星时，口径常比倍率更关键。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "望远镜",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%9B%E8%BF%9C%E9%95%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "望远镜",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%9B%E8%BF%9C%E9%95%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "telescope",
+          "url": "https://en.wikipedia.org/w/index.php?search=telescope"
+        }
       ]
     },
     {
@@ -917,6 +1817,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "camera"
+      ],
+      "explanation_markdown": "照相机用镜头把物体的实像成在感光元件上，通过调焦、光圈和曝光时间控制图像。成像满足 $1/f=1/u+1/v$，其中 $f$ 是镜头焦距，$u$ 是物距，$v$ 是像距。\n\n调焦就是改变镜头组或感光面位置，使像距与感光面重合。光圈影响通光量和景深，快门影响运动模糊，焦距影响视角和透视效果。现代相机虽有复杂自动算法，基本物理仍是透镜成像和光量记录。景深来自允许的成像模糊范围，不是只有一个物平面绝对可见；小光圈能增加景深，但衍射会限制过小光圈的清晰度。数字相机的像素只是采样环节，前端清晰度仍由镜头和衍射决定。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "照相机",
+          "url": "https://www.baidu.com/s?wd=%E7%85%A7%E7%9B%B8%E6%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "照相机",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%85%A7%E7%9B%B8%E6%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "camera",
+          "url": "https://en.wikipedia.org/w/index.php?search=camera"
+        }
       ]
     },
     {
@@ -935,6 +1853,24 @@
         "θ≈1.22λ/D",
         "单缝 艾里斑",
         "aperture stop"
+      ],
+      "explanation_markdown": "光阑是限制光束通过范围的孔或挡板，用来控制通光量、景深和像差。摄影中常用光圈数 $N=f/D$，其中 $N$ 是光圈数，$f$ 是焦距，$D$ 是有效孔径。\n\n孔径越大，进光越多，背景虚化更明显，但像差可能增大；孔径过小，衍射又会让图像变软。光阑的位置还会决定入瞳和出瞳，影响视场边缘亮度和是否出现渐晕。光阑还决定系统的有效孔径和边缘光线数量，进而影响像差；调节光圈是摄影中在亮度、景深和清晰度之间取折中。入瞳大小决定外界看来系统能接收多少光。孔径光阑和视场光阑作用不同，前者限光束，后者限视场。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "光阑",
+          "url": "https://www.baidu.com/s?wd=%E5%85%89%E9%98%91%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "光阑",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%89%E9%98%91"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "aperture stop",
+          "url": "https://en.wikipedia.org/w/index.php?search=aperture%20stop"
+        }
       ]
     },
     {
@@ -953,6 +1889,24 @@
         "θ≈1.22λ/D",
         "单缝 艾里斑",
         "aperture"
+      ],
+      "explanation_markdown": "孔径是光学系统允许光通过的有效开口大小，决定收光能力和衍射限制。圆孔分辨角近似为 $\\theta\\approx1.22\\lambda/D$，其中 $\\theta$ 是第一暗环角半径，$\\lambda$ 是波长，$D$ 是孔径直径。\n\n孔径越大，收集到的光越多，衍射斑越小，分辨细节能力越强。望远镜口径和显微镜数值孔径都服务于这一目标；但实际系统还会受像差、加工精度和探测器采样限制。孔径越大还会降低曝光时间需求，但大孔径镜头更难校正像差；实际设计总是在收光、分辨和制造复杂度之间平衡。孔径还影响背景虚化，摄影中常把大孔径称为大光圈。显微镜中常用数值孔径而非直径描述收光角。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "孔径",
+          "url": "https://www.baidu.com/s?wd=%E5%AD%94%E5%BE%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "孔径",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AD%94%E5%BE%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "aperture",
+          "url": "https://en.wikipedia.org/w/index.php?search=aperture"
+        }
       ]
     },
     {
@@ -971,6 +1925,24 @@
         "Δx=λD/d",
         "亮暗纹 薄膜彩纹",
         "interference of light"
+      ],
+      "explanation_markdown": "光的干涉是相干光波叠加后，由相位差造成稳定明暗分布的现象。亮纹常满足 $\\Delta=m\\lambda$，其中 $\\Delta$ 是光程差，$m$ 是整数，$\\lambda$ 是波长。\n\n干涉说明光强来自电场振幅的相干叠加，而不是简单把两束光的强度相加。双缝、薄膜和迈克耳孙干涉仪都利用光程差控制明暗；相干长度不足、光源太大或振动扰动都会降低条纹可见度。薄膜增透膜利用干涉相消来削弱反射，反射增强膜则利用相长来提高反射率；干涉并非只出现在实验室条纹中。条纹移动一个间距，通常对应光程差改变一个波长。干涉条纹也是检验光学表面质量的灵敏工具。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "光的干涉",
+          "url": "https://www.baidu.com/s?wd=%E5%85%89%E7%9A%84%E5%B9%B2%E6%B6%89%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "光的干涉",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%89%E7%9A%84%E5%B9%B2%E6%B6%89"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "interference of light",
+          "url": "https://en.wikipedia.org/w/index.php?search=interference%20of%20light"
+        }
       ]
     },
     {
@@ -989,6 +1961,24 @@
         "Δx=λD/d",
         "亮暗纹 薄膜彩纹",
         "interference"
+      ],
+      "explanation_markdown": "干涉是两列或多列相干波在同一空间叠加，形成增强和减弱的波动现象。光强可写作 $I\\propto |E_1+E_2|^2$，其中 $I$ 是光强，$E_1,E_2$ 是两束光的电场振幅。\n\n相位相同处振幅增强，形成亮区；相位相反处振幅抵消，形成暗区。干涉强调相位关系，普通不相干光叠加只会平均增加照度。利用干涉可以测波长、微小长度变化和薄膜厚度。干涉测量能把相位变化转化为条纹移动，因此对微小位移极其敏感；引力波干涉仪也依靠这种相位灵敏度。稳定平台和隔振措施常是干涉实验成功的关键。干涉要求频率接近，否则相位差会随时间快速漂移。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "干涉",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B2%E6%B6%89%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "干涉",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B2%E6%B6%89"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "interference",
+          "url": "https://en.wikipedia.org/w/index.php?search=interference"
+        }
       ]
     },
     {
@@ -1007,6 +1997,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "bright fringe"
+      ],
+      "explanation_markdown": "明纹是干涉图样中光强较大的条纹，通常对应相长干涉。条件可写为 $\\Delta=m\\lambda$，其中 $\\Delta$ 是两束光的光程差，$m$ 是整数，$\\lambda$ 是波长。\n\n当两束光到达时相位相同或相差整数个周期，电场振幅同向叠加，光强增强。明纹位置能反推波长、缝距或薄膜厚度；实际亮度还受两束光强是否接近、相干性和衍射包络影响。明纹级次越高，通常离中央越远；在白光干涉中，不同波长的明纹位置不同，于是会出现彩色条纹而非单色明暗。亮纹越窄，通常说明相干叠加的路径或缝数越多。多缝干涉中的明纹更窄，位置也更容易精确测量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "明纹",
+          "url": "https://www.baidu.com/s?wd=%E6%98%8E%E7%BA%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "明纹",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%98%8E%E7%BA%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bright fringe",
+          "url": "https://en.wikipedia.org/w/index.php?search=bright%20fringe"
+        }
       ]
     },
     {
@@ -1025,6 +2033,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "dark fringe"
+      ],
+      "explanation_markdown": "暗纹是干涉图样中光强较小的条纹，通常对应相消干涉。常用条件为 $\\Delta=(m+1/2)\\lambda$，其中 $\\Delta$ 是光程差，$m$ 是整数，$\\lambda$ 是波长。\n\n两束光相位相反时，电场振幅彼此抵消，理想情况下光强可接近零。若两束光振幅不相等、偏振方向不同或相干性不足，暗纹不会完全黑。暗纹位置和明纹一样，都是相位条件在空间中的投影。暗纹条件常用来定位最小光强位置，衍射实验中的暗纹尤其清晰；但背景光和杂散反射会抬高实际暗纹亮度。暗纹位置常比亮纹中心更容易精确判读，因为极小值较尖锐。暗纹不是能量丢失，而是能量转移到其他方向或位置。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "暗纹",
+          "url": "https://www.baidu.com/s?wd=%E6%9A%97%E7%BA%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "暗纹",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9A%97%E7%BA%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dark fringe",
+          "url": "https://en.wikipedia.org/w/index.php?search=dark%20fringe"
+        }
       ]
     },
     {
@@ -1043,6 +2069,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "fringe spacing"
+      ],
+      "explanation_markdown": "条纹间距是相邻干涉亮纹或暗纹之间的距离，反映波长和实验几何尺度的比例。杨氏双缝中 $\\Delta x=\\lambda D/d$，其中 $\\Delta x$ 是条纹间距，$\\lambda$ 是波长，$D$ 是缝到屏距离，$d$ 是双缝间距。\n\n波长越长或屏越远，条纹越疏；双缝间距越大，条纹越密。该公式依赖小角近似和远场条件，若屏太近、缝宽不可忽略或光不是单色，相邻条纹就会变形或对比下降。测量条纹间距时常取多个条纹的总宽度再平均，以减少读数误差；这也是用双缝实验测波长的常见做法。条纹间距太小会超过屏幕或探测器分辨能力，实验上需调节几何尺度。单色性越好，条纹边界通常越清晰。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "条纹间距",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%A1%E7%BA%B9%E9%97%B4%E8%B7%9D%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "条纹间距",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%A1%E7%BA%B9%E9%97%B4%E8%B7%9D"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fringe spacing",
+          "url": "https://en.wikipedia.org/w/index.php?search=fringe%20spacing"
+        }
       ]
     },
     {
@@ -1061,6 +2105,24 @@
         "Δx=λD/d",
         "亮暗纹 薄膜彩纹",
         "youngs double slit interference"
+      ],
+      "explanation_markdown": "杨氏双缝干涉用同一光源照亮两条窄缝，让两缝成为相干光源并在屏上形成明暗条纹。条纹间距为 $\\Delta x=\\lambda D/d$，其中 $\\lambda$ 是波长，$D$ 是屏距，$d$ 是缝距。\n\n实验直接展示光的波动性：屏上一点的亮暗由两缝到该点的光程差决定。缝越窄衍射越明显，缝距越大条纹越密；光源单色性、缝的平行度和环境振动都会影响条纹清晰度。若用单光子逐个通过双缝，长时间积累仍会出现干涉条纹，显示量子光子到达位置服从波动概率分布。它也是理解量子双缝实验的经典入口。中央亮纹对应两缝到屏幕中心的光程差近似为零。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "杨氏双缝干涉",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%A8%E6%B0%8F%E5%8F%8C%E7%BC%9D%E5%B9%B2%E6%B6%89%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "杨氏双缝干涉",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%A8%E6%B0%8F%E5%8F%8C%E7%BC%9D%E5%B9%B2%E6%B6%89"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "youngs double slit interference",
+          "url": "https://en.wikipedia.org/w/index.php?search=youngs%20double%20slit%20interference"
+        }
       ]
     },
     {
@@ -1079,6 +2141,24 @@
         "Δx=λD/d",
         "亮暗纹 薄膜彩纹",
         "double slit"
+      ],
+      "explanation_markdown": "双缝是产生两束相干光的结构，每条窄缝可看作由同一入射波面激发的次级光源。远处方向 $\\theta$ 上的光程差为 $\\Delta=d\\sin\\theta$，其中 $d$ 是缝距，$\\theta$ 是观察方向角。\n\n双缝把空间方向转化为相位差，因此屏幕上出现周期性明暗条纹。缝宽有限时，每条缝自身还产生衍射，形成包络；所以实际双缝图样是干涉条纹被单缝衍射强度调制后的结果。双缝间距过大条纹会变得太密，缝距过小又难以分开两束；实验设计要让条纹间距落在屏幕可测范围内。遮住任一条缝，周期性干涉条纹就会消失，只剩单缝衍射图样。两缝亮度不等时，条纹对比度会降低。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "双缝",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8C%E7%BC%9D%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "双缝",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8C%E7%BC%9D"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "double slit",
+          "url": "https://en.wikipedia.org/w/index.php?search=double%20slit"
+        }
       ]
     },
     {
@@ -1097,6 +2177,24 @@
         "Δx=λD/d",
         "亮暗纹 薄膜彩纹",
         "thin film interference"
+      ],
+      "explanation_markdown": "薄膜干涉来自光在薄膜上下表面反射或透射后重新叠加，肥皂泡和油膜彩色就是典型现象。近正入射反射条件常含 $2nt=m\\lambda$，其中 $n$ 是膜折射率，$t$ 是膜厚，$\\lambda$ 是波长。\n\n往返薄膜的光程差随厚度和入射角变化，不同波长在不同位置相长或相消，因而出现彩色条纹。反射时还可能发生半波损失，所以判断明暗必须同时考虑光程差和界面相位突变。增透膜常取四分之一波长光学厚度，使两个反射波相消；不同颜色镜头镀膜反光，正是厚度和材料选择的结果。肥皂泡颜色随厚度流动而改变，说明膜厚在不断变化。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "薄膜干涉",
+          "url": "https://www.baidu.com/s?wd=%E8%96%84%E8%86%9C%E5%B9%B2%E6%B6%89%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "薄膜干涉",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%96%84%E8%86%9C%E5%B9%B2%E6%B6%89"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "thin film interference",
+          "url": "https://en.wikipedia.org/w/index.php?search=thin%20film%20interference"
+        }
       ]
     },
     {
@@ -1115,6 +2213,24 @@
         "Δx=λD/d",
         "亮暗纹 薄膜彩纹",
         "equal thickness interference"
+      ],
+      "explanation_markdown": "等厚干涉是薄膜厚度相同的点满足同一干涉条件而形成条纹的现象。近正入射时可写 $2nt=m\\lambda$，其中 $n$ 是薄膜折射率，$t$ 是膜厚，$m$ 是级次，$\\lambda$ 是波长。\n\n条纹形状就是等厚线的形状，因此可用来检测平面度、微小楔角或空气膜厚度。牛顿环是圆形等厚干涉，楔形膜则形成近似平行条纹；反射相位差会决定中心或边缘是明还是暗。等厚条纹移动可反映接触面微小变化，所以光学加工中常用干涉条纹判断镜面是否平整或是否存在楔形空气层。等厚条纹密处表示厚度变化快，疏处表示厚度变化慢。楔形空气膜越薄，低级条纹越靠近接触边。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "等厚干涉",
+          "url": "https://www.baidu.com/s?wd=%E7%AD%89%E5%8E%9A%E5%B9%B2%E6%B6%89%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "等厚干涉",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AD%89%E5%8E%9A%E5%B9%B2%E6%B6%89"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "equal thickness interference",
+          "url": "https://en.wikipedia.org/w/index.php?search=equal%20thickness%20interference"
+        }
       ]
     },
     {
@@ -1133,6 +2249,24 @@
         "Δx=λD/d",
         "亮暗纹 薄膜彩纹",
         "newtons rings"
+      ],
+      "explanation_markdown": "牛顿环由平凸透镜放在平板上形成的空气薄膜产生，是等厚干涉的同心圆图样。反射暗环近似满足 $r_m^2=mR\\lambda$，其中 $r_m$ 是第 $m$ 级暗环半径，$R$ 是透镜曲率半径，$\\lambda$ 是波长。\n\n空气膜厚度从接触点向外逐渐增大，等厚线自然呈圆环。测量环半径可求波长或曲率半径；中心明暗取决于反射半波损失和接触情况，实际实验中灰尘或压紧程度会影响中心图样。牛顿环半径平方与级次近似成正比，因此实验常画 $r_m^2$ 与 $m$ 的直线关系来减小单次读数误差。环纹越向外越密，反映空气膜厚度与半径平方有关。透镜与平板之间若有灰尘，圆环中心会被扰动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "牛顿环",
+          "url": "https://www.baidu.com/s?wd=%E7%89%9B%E9%A1%BF%E7%8E%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "牛顿环",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%9B%E9%A1%BF%E7%8E%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "newtons rings",
+          "url": "https://en.wikipedia.org/w/index.php?search=newtons%20rings"
+        }
       ]
     },
     {
@@ -1151,6 +2285,24 @@
         "θ≈1.22λ/D",
         "单缝 艾里斑",
         "diffraction of light"
+      ],
+      "explanation_markdown": "光的衍射是光遇到孔径或障碍物边缘后偏离直线传播并展开的现象。单缝暗纹满足 $a\\sin\\theta=m\\lambda$，其中 $a$ 是缝宽，$\\theta$ 是暗纹方向，$m$ 是非零整数，$\\lambda$ 是波长。\n\n衍射是波动性的直接表现，孔径越小或波长越长，展开越明显。它不仅产生条纹，也设定显微镜、望远镜和相机的分辨极限；即使透镜完全理想，有限孔径也会让点像成为有大小的衍射斑。衍射与干涉本质相通，都是相干叠加；只是衍射常强调同一孔径内许多次级波之间的相位差。衍射极限是光学系统无法靠完美加工完全越过的边界。它提醒我们，光学分辨率最终受波长尺度约束。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "光的衍射",
+          "url": "https://www.baidu.com/s?wd=%E5%85%89%E7%9A%84%E8%A1%8D%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "光的衍射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%89%E7%9A%84%E8%A1%8D%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "diffraction of light",
+          "url": "https://en.wikipedia.org/w/index.php?search=diffraction%20of%20light"
+        }
       ]
     },
     {
@@ -1169,6 +2321,24 @@
         "θ≈1.22λ/D",
         "单缝 艾里斑",
         "diffraction"
+      ],
+      "explanation_markdown": "衍射是波绕过边缘或通过有限孔径时发生的弯曲和扩展，光、水波和声波都可出现。典型条件写作 $a\\sin\\theta=m\\lambda$，其中 $a$ 是特征孔径，$\\theta$ 是衍射角，$m$ 是级次，$\\lambda$ 是波长。\n\n衍射图样来自孔径上许多次级波的相干叠加，而不是光线被边缘简单反弹。孔径远大于波长时衍射角很小，几何光学近似可用；尺度接近波长时，明暗分布必须按波动处理。衍射越明显，光线边界越模糊；这解释了为什么小孔成像不能无限缩小孔径来提高锐度，孔太小反而变糊。水波绕过堤口展开，是理解光衍射的直观类比。衍射图样的位置和强度都含有孔径形状信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "衍射",
+          "url": "https://www.baidu.com/s?wd=%E8%A1%8D%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "衍射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A1%8D%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "diffraction",
+          "url": "https://en.wikipedia.org/w/index.php?search=diffraction"
+        }
       ]
     },
     {
@@ -1187,6 +2357,24 @@
         "θ≈1.22λ/D",
         "单缝 艾里斑",
         "single slit diffraction"
+      ],
+      "explanation_markdown": "单缝衍射是光通过一条窄缝后形成中央亮纹和两侧暗纹的现象。暗纹条件为 $a\\sin\\theta=m\\lambda$，其中 $a$ 是缝宽，$\\theta$ 是暗纹方向，$m$ 是非零整数，$\\lambda$ 是波长。\n\n缝越窄，中央亮纹越宽，说明空间限制越强，传播方向分布越分散。单缝衍射也会作为双缝干涉的包络出现，使远离中央的双缝条纹逐渐变暗甚至消失。中央亮纹宽度大约是两侧次级亮纹间隔的两倍，因此单缝图样最醒目的特征就是宽而亮的中央峰。缝宽测量也可反过来通过衍射暗纹位置完成。中央亮纹宽度常用来估算缝宽或波长。实际测量还要避开中央亮纹过曝，否则暗纹位置会难以判定。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单缝衍射",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E7%BC%9D%E8%A1%8D%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单缝衍射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E7%BC%9D%E8%A1%8D%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "single slit diffraction",
+          "url": "https://en.wikipedia.org/w/index.php?search=single%20slit%20diffraction"
+        }
       ]
     },
     {
@@ -1205,6 +2393,24 @@
         "θ≈1.22λ/D",
         "单缝 艾里斑",
         "circular aperture diffraction"
+      ],
+      "explanation_markdown": "圆孔衍射是光通过圆形孔径后形成艾里斑和同心环的现象。第一暗环角半径近似为 $\\theta\\approx1.22\\lambda/D$，其中 $\\theta$ 是角半径，$\\lambda$ 是波长，$D$ 是孔径直径。\n\n望远镜和相机中，点光源不会成像为数学点，而是形成有限大小的艾里斑。孔径越大或波长越短，衍射斑越小，分辨能力越高；实际系统还会叠加像差、抖动和探测器像素限制。圆孔衍射斑的大小限制了点源成像的最小光斑，即使镜头没有像差，也无法突破这个波动极限。艾里斑中央亮斑包含大部分能量，因此常决定点像大小。天文成像中的星点形状常接近这种衍射图样。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "圆孔衍射",
+          "url": "https://www.baidu.com/s?wd=%E5%9C%86%E5%AD%94%E8%A1%8D%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "圆孔衍射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9C%86%E5%AD%94%E8%A1%8D%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "circular aperture diffraction",
+          "url": "https://en.wikipedia.org/w/index.php?search=circular%20aperture%20diffraction"
+        }
       ]
     },
     {
@@ -1223,6 +2429,24 @@
         "θ≈1.22λ/D",
         "单缝 艾里斑",
         "diffraction grating"
+      ],
+      "explanation_markdown": "衍射光栅由大量等间距狭缝或刻线组成，利用多缝干涉把不同波长分到不同方向。主极大满足 $d\\sin\\theta=m\\lambda$，其中 $d$ 是光栅常数，$\\theta$ 是衍射角，$m$ 是级次，$\\lambda$ 是波长。\n\n缝数越多，主极大越窄，谱线越容易分开。光栅是光谱仪的重要元件，可测量未知光的波长；高阶谱线分辨率高，但不同级次可能重叠，需要滤光或选择合适角度。反射光栅和透射光栅都可分光，刻线轮廓还可把能量集中到某一阶，称为闪耀光栅，常用于高效率光谱仪。光栅分光比棱镜更线性，适合精确光谱测量。光栅刻线越均匀，谱线位置越稳定。入射缝越窄，谱线角宽越小，但通过的光能也会减少。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "衍射光栅",
+          "url": "https://www.baidu.com/s?wd=%E8%A1%8D%E5%B0%84%E5%85%89%E6%A0%85%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "衍射光栅",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A1%8D%E5%B0%84%E5%85%89%E6%A0%85"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "diffraction grating",
+          "url": "https://en.wikipedia.org/w/index.php?search=diffraction%20grating"
+        }
       ]
     },
     {
@@ -1241,6 +2465,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "grating constant"
+      ],
+      "explanation_markdown": "光栅常数是相邻刻线或狭缝之间的距离，决定光栅分光角度。若单位长度刻线数为 $N$，则 $d=1/N$，其中 $d$ 是光栅常数，$N$ 是每单位长度的刻线数。\n\n刻线越密，$d$ 越小，同一波长在同一级次下衍射角通常越大。实验中常把刻线数给成每毫米多少条，使用光栅方程时必须换算单位；光栅常数误差会直接传递到波长测量结果。光栅常数与波长同数量级时，衍射角变化最明显；若 $d<\\lambda$，高阶谱线甚至无法在空气中传播。刻线总数影响分辨本领，刻线间距影响衍射角位置。测量前校准光栅常数能提高波长结果可靠性。热膨胀会微小改变刻线间距，精密实验中也要控制温度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "光栅常数",
+          "url": "https://www.baidu.com/s?wd=%E5%85%89%E6%A0%85%E5%B8%B8%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "光栅常数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%89%E6%A0%85%E5%B8%B8%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "grating constant",
+          "url": "https://en.wikipedia.org/w/index.php?search=grating%20constant"
+        }
       ]
     },
     {
@@ -1259,6 +2501,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "grating equation"
+      ],
+      "explanation_markdown": "光栅方程给出衍射光栅主极大方向与波长、级次和光栅常数的关系。垂直入射时 $d\\sin\\theta=m\\lambda$，其中 $d$ 是光栅常数，$\\theta$ 是主极大方向，$m$ 是整数级次，$\\lambda$ 是波长。\n\n它把角度测量转化为波长测量，是光谱仪分光的核心公式。若入射光不是垂直照射，还要加入入射角对应的光程差；实际光栅的刻线形状会影响各级强度，而不改变主极大位置的基本条件。方程中的整数 $m$ 可为正、负或零，分别对应两侧各级和中央零级；零级不分光，只给出原方向附近的亮纹。测角仪读出的左右同级角度常取平均，以减小零点误差。左右对称级次还能帮助发现光栅是否安装偏斜。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "光栅方程",
+          "url": "https://www.baidu.com/s?wd=%E5%85%89%E6%A0%85%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "光栅方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%89%E6%A0%85%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "grating equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=grating%20equation"
+        }
       ]
     },
     {
@@ -1277,6 +2537,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "resolving power"
+      ],
+      "explanation_markdown": "分辨本领表示光学系统区分两个很近物点或两条很近谱线的能力。光谱分辨本领常写作 $R=\\lambda/\\Delta\\lambda$，其中 $R$ 是分辨本领，$\\lambda$ 是波长，$\\Delta\\lambda$ 是刚可分辨的波长差。\n\n数值越大，能区分的细节越接近。望远镜的分辨受孔径衍射限制，光栅的分辨还与刻线总数和级次有关；实际观测中，像差、噪声、探测器像素和大气扰动都会降低有效分辨率。提高光栅分辨本领可增加刻线总数或使用更高级次，但高级次强度较弱且容易谱级重叠，需要实验上折中。只追求放大而不提高分辨本领，会得到更大的模糊图像。它衡量的是分开细节的能力，不等同于图像亮度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分辨本领",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E8%BE%A8%E6%9C%AC%E9%A2%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分辨本领",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E8%BE%A8%E6%9C%AC%E9%A2%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "resolving power",
+          "url": "https://en.wikipedia.org/w/index.php?search=resolving%20power"
+        }
       ]
     },
     {
@@ -1295,6 +2573,24 @@
         "θ≈1.22λ/D",
         "单缝 艾里斑",
         "rayleigh criterion"
+      ],
+      "explanation_markdown": "瑞利判据给出两个衍射像刚好可分辨的常用标准，常用于圆孔成像系统。角分辨率近似为 $\\theta\\approx1.22\\lambda/D$，其中 $\\theta$ 是最小角间隔，$\\lambda$ 是波长，$D$ 是孔径直径。\n\n当一个艾里斑中央亮斑落在另一个艾里斑第一暗环附近时，两点源被认为刚可分辨。它不是绝对数学界限，而是与人眼或仪器响应有关的实用准则；增大口径和减小波长都能提高衍射极限下的分辨能力。瑞利判据也解释了为什么大口径望远镜能分开更近的双星；同样波长下，孔径越大，艾里斑越小。短波电子显微镜能提高分辨率，也体现了波长因素的重要性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "瑞利判据",
+          "url": "https://www.baidu.com/s?wd=%E7%91%9E%E5%88%A9%E5%88%A4%E6%8D%AE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "瑞利判据",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%91%9E%E5%88%A9%E5%88%A4%E6%8D%AE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "rayleigh criterion",
+          "url": "https://en.wikipedia.org/w/index.php?search=rayleigh%20criterion"
+        }
       ]
     },
     {
@@ -1313,6 +2609,24 @@
         "I=I0cos²θ",
         "旋转 消光 双像",
         "polarization"
+      ],
+      "explanation_markdown": "偏振描述横波振动方向的规则性，对光来说主要指电场矢量的振动方向。线偏振光通过检偏器满足 $I=I_0\\cos^2\\theta$，其中 $I$ 是透射光强，$I_0$ 是入射光强，$\\theta$ 是偏振方向与透振轴夹角。\n\n偏振说明光是横波，因为纵波没有横向振动方向可选。反射、散射、双折射和偏振片都能改变偏振态；太阳镜减弱水面眩光，正是利用反射光常带有明显偏振这一事实。偏振片前后若再加四分之一波片，还能在线偏振和圆偏振之间转换；这说明偏振态还包含正交分量之间的相位差。偏振方向与传播方向都垂直，所以它只存在于横波自由度中。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "偏振",
+          "url": "https://www.baidu.com/s?wd=%E5%81%8F%E6%8C%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "偏振",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%81%8F%E6%8C%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "polarization",
+          "url": "https://en.wikipedia.org/w/index.php?search=polarization"
+        }
       ]
     },
     {
@@ -1331,6 +2645,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "natural light"
+      ],
+      "explanation_markdown": "自然光由许多振动方向快速无规则变化的光波组成，宏观上没有固定偏振方向。通过理想起偏器后平均光强为 $I=I_0/2$，其中 $I_0$ 是入射自然光强，$I$ 是透射光强。\n\n这个一半来自各方向电场分量在透振轴上的平均投影。太阳光和普通灯光常近似为自然光，但被大气散射或水面反射后可能部分偏振；旋转单个偏振片观察自然光，理想情况下亮度不随角度周期变化。自然光可看成许多偏振方向等概率叠加，因此通过第一个偏振片后变为线偏振光；再加第二个偏振片才会出现角度相关变化。自然光可被看作非偏振光，但严格说也可能含少量偏振成分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自然光",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E7%84%B6%E5%85%89%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自然光",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E7%84%B6%E5%85%89"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "natural light",
+          "url": "https://en.wikipedia.org/w/index.php?search=natural%20light"
+        }
       ]
     },
     {
@@ -1349,6 +2681,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "polarized light"
+      ],
+      "explanation_markdown": "偏振光的电场振动方向具有某种规则，可分为线偏振、圆偏振和椭圆偏振等。对线偏振光，检偏后 $I=I_0\\cos^2\\theta$，其中 $I$ 是透射光强，$I_0$ 是入射光强，$\\theta$ 是偏振方向与透振轴夹角。\n\n偏振态决定光通过晶体、反射面和偏振片后的行为。同样光强的两束光，若偏振方向互相垂直，可以不发生普通干涉；因此偏振不仅影响亮度，还影响相干叠加和光学器件选择。液晶显示器利用偏振光和电控双折射调节透光强度；没有偏振片，液晶分子旋转对亮暗的控制就难以实现。偏振态还能用斯托克斯参量描述，适合处理部分偏振光。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "偏振光",
+          "url": "https://www.baidu.com/s?wd=%E5%81%8F%E6%8C%AF%E5%85%89%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "偏振光",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%81%8F%E6%8C%AF%E5%85%89"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "polarized light",
+          "url": "https://en.wikipedia.org/w/index.php?search=polarized%20light"
+        }
       ]
     },
     {
@@ -1367,6 +2717,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "linearly polarized light"
+      ],
+      "explanation_markdown": "线偏振光的电场矢量始终沿一个固定方向来回振动，传播方向与电场方向垂直。可写为 $\\mathbf E(t)=E_0\\cos\\omega t\\,\\hat{\\mathbf e}$，其中 $E_0$ 是振幅，$\\omega$ 是角频率，$\\hat{\\mathbf e}$ 是固定偏振方向。\n\n它通过旋转检偏器时光强按马吕斯定律周期变化，完全垂直时理想上消光。线偏振光可由偏振片、布儒斯特反射或某些激光器产生；真实器件有有限消光比，不能做到无限纯净。线偏振方向可用一根箭头表示，但箭头正反号相差半个周期并不代表不同偏振态；真正重要的是振动所在的直线方向。旋转半波片可以改变线偏振方向，而不必转动整个光源。偏振方向可作为光通信和量子实验中的一个自由度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线偏振光",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E5%81%8F%E6%8C%AF%E5%85%89%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线偏振光",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E5%81%8F%E6%8C%AF%E5%85%89"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linearly polarized light",
+          "url": "https://en.wikipedia.org/w/index.php?search=linearly%20polarized%20light"
+        }
       ]
     },
     {
@@ -1385,6 +2753,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "polarizer"
+      ],
+      "explanation_markdown": "起偏器把自然光或混合偏振光转化为某一方向的偏振光，常见形式是偏振片。自然光通过理想起偏器后 $I=I_0/2$，其中 $I_0$ 是入射自然光强，$I$ 是透射光强。\n\n它只允许沿透振轴的电场分量通过，垂直分量被吸收或反射。起偏器给后续检偏和偏振测量提供确定初态；实际偏振片会有吸收损耗、波长范围和消光比限制，高功率光还可能损伤材料。两片起偏器正交时几乎不透光，若中间插入第三片且角度适当，反而会有光透过，这体现连续投影的效果。起偏器后的光强降低，说明被过滤掉的偏振分量能量被吸收或反射。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "起偏器",
+          "url": "https://www.baidu.com/s?wd=%E8%B5%B7%E5%81%8F%E5%99%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "起偏器",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B5%B7%E5%81%8F%E5%99%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "polarizer",
+          "url": "https://en.wikipedia.org/w/index.php?search=polarizer"
+        }
       ]
     },
     {
@@ -1403,6 +2789,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "analyzer"
+      ],
+      "explanation_markdown": "检偏器用来检测入射光的偏振方向或偏振程度，通常也是一个可旋转的偏振片。对线偏振光，$I=I_0\\cos^2\\theta$，其中 $I$ 是透射光强，$I_0$ 是入射光强，$\\theta$ 是入射偏振方向与检偏轴夹角。\n\n旋转检偏器时，若亮度出现周期性明暗变化，说明入射光含有线偏振成分；若自然光入射，理想检偏器转动时亮度不变。两个偏振片正交时可消光，中间插入晶体或应力材料会改变偏振并重新透光。检偏器还能判断光是否为部分偏振：旋转时若强度有起伏但不归零，就说明自然光成分和偏振成分同时存在。检偏器和起偏器没有本质不同，名称取决于它在实验中的角色。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "检偏器",
+          "url": "https://www.baidu.com/s?wd=%E6%A3%80%E5%81%8F%E5%99%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "检偏器",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A3%80%E5%81%8F%E5%99%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "analyzer",
+          "url": "https://en.wikipedia.org/w/index.php?search=analyzer"
+        }
       ]
     },
     {
@@ -1421,6 +2825,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "malus law"
+      ],
+      "explanation_markdown": "马吕斯定律描述线偏振光通过检偏器后光强随夹角变化的规律。公式为 $I=I_0\\cos^2\\theta$，其中 $I$ 是透射光强，$I_0$ 是入射线偏振光强，$\\theta$ 是偏振方向与透振轴夹角。\n\n它来自电场振幅在透振轴上的投影，强度又与振幅平方成正比。夹角为零时透射最大，九十度时理想消光。该定律适用于理想线偏振光和偏振器，实际实验中漏光和反射会让消光不完全。连续通过多片偏振片时，每一步都按电场投影处理；角度逐渐旋转时，透过光反而可比一次正交放置更多。它也常用来校准偏振片角度和检验激光偏振纯度。角度误差会通过余弦平方传到光强读数中。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "马吕斯定律",
+          "url": "https://www.baidu.com/s?wd=%E9%A9%AC%E5%90%95%E6%96%AF%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "马吕斯定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%A9%AC%E5%90%95%E6%96%AF%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "malus law",
+          "url": "https://en.wikipedia.org/w/index.php?search=malus%20law"
+        }
       ]
     },
     {
@@ -1439,6 +2861,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "brewsters law"
+      ],
+      "explanation_markdown": "布儒斯特定律给出反射光达到完全线偏振时的特殊入射角。它写为 $\\tan i_B=n_2/n_1$，其中 $i_B$ 是布儒斯特角，$n_1$ 是入射介质折射率，$n_2$ 是折射介质折射率。\n\n在这个角度下，反射光和折射光互相垂直，反射光中平行入射面的电场分量消失。摄影偏振镜和防眩太阳镜常利用反射光偏振特性；金属表面、吸收介质或粗糙界面会偏离理想布儒斯特条件。从电磁边界条件看，布儒斯特角对应某一偏振反射振幅为零；这比单纯几何角度相等更能解释偏振选择性。此时反射光偏振方向与入射面垂直，常用于制备线偏振光。它常用于设计偏振分束和减反射实验。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "布儒斯特定律",
+          "url": "https://www.baidu.com/s?wd=%E5%B8%83%E5%84%92%E6%96%AF%E7%89%B9%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "布儒斯特定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B8%83%E5%84%92%E6%96%AF%E7%89%B9%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "brewsters law",
+          "url": "https://en.wikipedia.org/w/index.php?search=brewsters%20law"
+        }
       ]
     },
     {
@@ -1457,6 +2897,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "brewster angle"
+      ],
+      "explanation_markdown": "布儒斯特角是使反射光完全线偏振的入射角，取决于界面两侧折射率。满足 $\\tan i_B=n_2/n_1$，其中 $i_B$ 是布儒斯特角，$n_1,n_2$ 分别为入射侧和透射侧折射率。\n\n当入射角等于它时，反射光主要只含垂直入射面的偏振分量。水面、玻璃表面和道路反光常在接近该角度时呈现明显偏振；这也是旋转偏振太阳镜能减弱眩光的物理原因。空气到玻璃的布儒斯特角大约五十多度，所以摄影中拍水面或玻璃反光时，偏振镜旋转到合适方向会明显减弱眩光。不同材料折射率不同，布儒斯特角也不同，可反过来用于测折射率。该角度还随波长略有变化，因为折射率有色散。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "布儒斯特角",
+          "url": "https://www.baidu.com/s?wd=%E5%B8%83%E5%84%92%E6%96%AF%E7%89%B9%E8%A7%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "布儒斯特角",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B8%83%E5%84%92%E6%96%AF%E7%89%B9%E8%A7%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "brewster angle",
+          "url": "https://en.wikipedia.org/w/index.php?search=brewster%20angle"
+        }
       ]
     },
     {
@@ -1475,6 +2933,24 @@
         "I=I0cos²θ",
         "旋转 消光 双像",
         "birefringence"
+      ],
+      "explanation_markdown": "双折射发生在各向异性晶体中，不同偏振分量看到的折射率不同，因而分成两束光。可用 $\\Delta n=n_e-n_o$ 表示，其中 $\\Delta n$ 是双折射率差，$n_e$ 是非寻常光折射率，$n_o$ 是寻常光折射率。\n\n方解石晶体中的双像就是典型例子。双折射能改变相位延迟，用来制作波片、偏振显微镜和应力检测片；晶体方向、光轴取向和波长都会影响两束光的传播速度和偏振状态。双折射晶体能把一个入射点分成两个像，说明材料对不同偏振方向具有不同光速；这与普通各向同性玻璃完全不同。波片利用双折射造成的相位延迟，而不只是把光分成两束。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "双折射",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8C%E6%8A%98%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "双折射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8C%E6%8A%98%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "birefringence",
+          "url": "https://en.wikipedia.org/w/index.php?search=birefringence"
+        }
       ]
     },
     {
@@ -1493,6 +2969,24 @@
         "1/f=1/u+1/v v/u",
         "特殊光线 视力矫正",
         "optical axis"
+      ],
+      "explanation_markdown": "光轴在不同语境中指具有特殊对称性的方向：透镜系统中是几何主轴，双折射晶体中是光学性质特殊的方向。近轴光学常要求 $\\theta\\ll1$，其中 $\\theta$ 是光线与光轴的夹角。\n\n在透镜中，光轴帮助定义焦点、焦距和物像距离；在单轴晶体中，沿光轴传播时常不出现普通双像分离。两个含义都强调对称方向，但物理内容不同，阅读光学系统和晶体光学问题时要分清。在晶体中沿光轴方向传播时，两种偏振看到的折射率可能相同；离开光轴后，双折射效应才逐渐显现。晶体光轴可能不等于样品外形的几何轴，实验装调要单独标定。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "光轴",
+          "url": "https://www.baidu.com/s?wd=%E5%85%89%E8%BD%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "光轴",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%89%E8%BD%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "optical axis",
+          "url": "https://en.wikipedia.org/w/index.php?search=optical%20axis"
+        }
       ]
     },
     {
@@ -1511,6 +3005,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "speed of light"
+      ],
+      "explanation_markdown": "光速是光在指定介质中的传播速度，通常由介质折射率决定。关系为 $v=c/n$，其中 $v$ 是介质中的光速，$c$ 是真空光速，$n$ 是折射率。\n\n光进入介质后频率通常不变，波长变为原来的 $1/n$ 左右，光程和相位也随之改变。色散介质中还要区分相速度和群速度，脉冲或信息传播更关注群速度；真空光速则是相对论中的基本常数。介质中光速降低并不表示光子在真空中变慢，而是电磁波与材料极化响应耦合后的相位传播速度改变。真空中所有颜色光速相同，介质中色散才让不同颜色相速度不同。群速度概念对短脉冲传播尤其重要。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "光速",
+          "url": "https://www.baidu.com/s?wd=%E5%85%89%E9%80%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "光速",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%89%E9%80%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "speed of light",
+          "url": "https://en.wikipedia.org/w/index.php?search=speed%20of%20light"
+        }
       ]
     },
     {
@@ -1529,6 +3041,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "speed of light in vacuum"
+      ],
+      "explanation_markdown": "真空光速是光在真空中的传播速度，也是相对论中的极限速度常数。它的定义值为 $c=299792458\\,\\mathrm{m/s}$，其中 $c$ 表示真空光速，单位是米每秒。\n\n在麦克斯韦理论中，$c$ 由真空电磁常数决定；在狭义相对论中，它对所有惯性观察者相同。介质中的光速可以小于 $c$，但不能把这理解为真空光速改变。长度单位米也通过这个常数和时间标准来定义。真空光速同时连接电磁学和时空结构；任何有静质量的物体只能接近它而不能达到它，这是相对论动力学的结果。用光速定义米，使长度测量最终和高精度时间测量联系起来。任何介质测得的较慢速度都不能推翻这个真空常数。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "真空光速",
+          "url": "https://www.baidu.com/s?wd=%E7%9C%9F%E7%A9%BA%E5%85%89%E9%80%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "真空光速",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9C%9F%E7%A9%BA%E5%85%89%E9%80%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "speed of light in vacuum",
+          "url": "https://en.wikipedia.org/w/index.php?search=speed%20of%20light%20in%20vacuum"
+        }
       ]
     },
     {
@@ -1547,6 +3077,24 @@
         "n1sinθ1=n2sinθ2",
         "玻璃砖 棱镜 相关量",
         "spectrum"
+      ],
+      "explanation_markdown": "光谱是把光按波长或频率分解后得到的强度分布，能显示光源和物质的内部信息。光子能量满足 $E=h\\nu=hc/\\lambda$，其中 $E$ 是能量，$h$ 是普朗克常量，$\\nu$ 是频率，$\\lambda$ 是波长。\n\n连续光谱反映热辐射或宽能带过程，线状光谱反映离散能级跃迁，吸收光谱和发射光谱则给出物质成分线索。天文学、化学分析和原子物理都用光谱作为“指纹”。光谱线还会因多普勒效应移动，因此天体光谱不仅告诉我们成分，还能告诉我们天体相对运动速度。高分辨光谱还能揭示谱线展宽，从而推断温度、压力和速度分布。光谱仪的狭缝宽度会影响谱线分辨率和亮度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "光谱",
+          "url": "https://www.baidu.com/s?wd=%E5%85%89%E8%B0%B1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "光谱",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%89%E8%B0%B1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "spectrum",
+          "url": "https://en.wikipedia.org/w/index.php?search=spectrum"
+        }
       ]
     },
     {
@@ -1565,6 +3113,24 @@
         "n1sinθ1=n2sinθ2",
         "玻璃砖 棱镜 光谱",
         "continuous spectrum"
+      ],
+      "explanation_markdown": "连续光谱在一段波长范围内平滑分布，没有只出现在少数离散位置的窄线。光子能量仍满足 $E=hc/\\lambda$，其中 $E$ 是能量，$h$ 是普朗克常量，$c$ 是光速，$\\lambda$ 是波长。\n\n白炽灯、太阳近似黑体辐射和高温稠密物质常产生连续光谱。连续并不表示各波长强度相同，温度会决定峰值位置和谱形；当连续光穿过较冷气体后，特定波长被吸收，就会叠加暗线。黑体温度越高，连续光谱峰值越向短波移动；这就是烧热物体从红到白、恒星颜色反映表面温度的原因。连续谱可作为背景光源，用来观察样品的吸收特征。连续背景越平滑，暗吸收线越容易被识别。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "连续光谱",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%9E%E7%BB%AD%E5%85%89%E8%B0%B1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "连续光谱",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%9E%E7%BB%AD%E5%85%89%E8%B0%B1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "continuous spectrum",
+          "url": "https://en.wikipedia.org/w/index.php?search=continuous%20spectrum"
+        }
       ]
     },
     {
@@ -1583,6 +3149,24 @@
         "n1sinθ1=n2sinθ2",
         "玻璃砖 棱镜 光谱",
         "line spectrum"
+      ],
+      "explanation_markdown": "线状光谱只在若干离散波长处出现亮线或暗线，来自原子、离子或分子的离散能级。跃迁满足 $\\Delta E=h\\nu$，其中 $\\Delta E$ 是能级差，$h$ 是普朗克常量，$\\nu$ 是光频率。\n\n每种元素有特定能级结构，因此谱线位置像指纹一样可用于识别成分。实际谱线并非无限细，热运动、多普勒效应、碰撞和仪器分辨率都会造成展宽；精密谱线还能揭示精细结构和外场效应。霓虹灯和汞灯的颜色来自少数强发射线，而不是完整连续彩虹；这使它们在光谱仪中呈现分立亮线。线状谱的离散性，是原子能级量子化最直观的证据之一。谱线位置的精确测量能检验原子结构理论。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线状光谱",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E7%8A%B6%E5%85%89%E8%B0%B1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线状光谱",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E7%8A%B6%E5%85%89%E8%B0%B1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "line spectrum",
+          "url": "https://en.wikipedia.org/w/index.php?search=line%20spectrum"
+        }
       ]
     },
     {
@@ -1601,6 +3185,24 @@
         "n1sinθ1=n2sinθ2",
         "玻璃砖 棱镜 光谱",
         "absorption spectrum"
+      ],
+      "explanation_markdown": "吸收光谱是连续光通过较冷物质后，某些波长被吸收而形成的暗线或暗带。吸收条件为 $\\Delta E=h\\nu$，其中 $\\Delta E$ 是能级差，$h$ 是普朗克常量，$\\nu$ 是被吸收光频率。\n\n原子或分子只吸收能引起允许跃迁的光，因此暗线位置反映内部能级和化学成分。恒星大气吸收谱能告诉我们元素组成；暗线深浅还与温度、密度、路径长度和粒子数有关。吸收谱线和同种物质的发射谱线常在相同波长附近出现，因为二者对应同一组能级差，只是跃迁方向相反。吸收光谱中的暗线位置比整体亮度更稳定，常用于定性识别。分子吸收谱还可延伸到红外，反映振动和转动能级。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "吸收光谱",
+          "url": "https://www.baidu.com/s?wd=%E5%90%B8%E6%94%B6%E5%85%89%E8%B0%B1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "吸收光谱",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%B8%E6%94%B6%E5%85%89%E8%B0%B1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "absorption spectrum",
+          "url": "https://en.wikipedia.org/w/index.php?search=absorption%20spectrum"
+        }
       ]
     },
     {
@@ -1619,6 +3221,24 @@
         "n1sinθ1=n2sinθ2",
         "玻璃砖 棱镜 光谱",
         "emission spectrum"
+      ],
+      "explanation_markdown": "发射光谱来自受激原子、分子或等离子体向较低能级跃迁时放出的光。频率满足 $\\Delta E=h\\nu$，其中 $\\Delta E$ 是跃迁能量差，$h$ 是普朗克常量，$\\nu$ 是发射光频率。\n\n稀薄气体常产生明亮线状发射谱，热的致密物体则更接近连续谱。发射光谱可用于识别元素、测量温度和研究天体运动；若存在外磁场或电场，谱线还可能分裂或移动。气体放电管的发射谱线随元素不同而不同，因此可用来校准光谱仪波长，也可作为原子能级的直接证据。火焰反应的颜色，也是某些原子发射谱线在肉眼中的表现。等离子体诊断常用发射谱线判断温度和密度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "发射光谱",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%91%E5%B0%84%E5%85%89%E8%B0%B1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "发射光谱",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%91%E5%B0%84%E5%85%89%E8%B0%B1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "emission spectrum",
+          "url": "https://en.wikipedia.org/w/index.php?search=emission%20spectrum"
+        }
       ]
     },
     {
@@ -1637,6 +3257,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "laser"
+      ],
+      "explanation_markdown": "激光通过受激辐射放大光，通常具有较好的方向性、单色性和相干性。受激跃迁满足 $E_2-E_1=h\\nu$，其中 $E_2,E_1$ 是上下能级能量，$h$ 是普朗克常量，$\\nu$ 是激光频率。\n\n要形成激光，需要粒子数反转和光学谐振腔，使同相同频光子不断放大。激光可用于测距、通信、加工和精密干涉；真实激光仍有有限线宽、发散角和噪声，高功率时还要考虑热效应与安全。激光的相干性让它适合干涉测量和全息记录，方向性让能量能传到远处小区域；这两点比单纯“亮”更重要。激光器类型很多，气体、固体、半导体激光的增益介质各不相同。谐振腔长度还决定允许振荡的纵模频率。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "激光",
+          "url": "https://www.baidu.com/s?wd=%E6%BF%80%E5%85%89%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "激光",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%BF%80%E5%85%89"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "laser",
+          "url": "https://en.wikipedia.org/w/index.php?search=laser"
+        }
       ]
     },
     {
@@ -1655,6 +3293,24 @@
         "光程差 v=c/n 路径可逆",
         "光源 遮挡 波面",
         "monochromatic light"
+      ],
+      "explanation_markdown": "单色光是频率或波长范围很窄的光，理想情况下只含一个频率成分。实际常用 $\\Delta\\lambda\\ll\\lambda$ 表示，其中 $\\Delta\\lambda$ 是谱线宽度，$\\lambda$ 是中心波长。\n\n单色性越好，相干长度通常越长，干涉条纹越稳定。完全单一频率需要无限长的波列，真实光源总有有限线宽；滤光片、光栅单色仪和激光都能提供不同程度的单色光。用单色光做干涉和衍射实验时，各级条纹位置清晰；若换成白光，不同波长条纹叠加，图样会变成彩色或被洗掉。单色光不是一定只有一种颜色的肉眼感觉，红外和紫外也可高度单色。单色仪输出通常仍有有限带宽，需要用谱宽标明。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单色光",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E8%89%B2%E5%85%89%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单色光",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E8%89%B2%E5%85%89"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "monochromatic light",
+          "url": "https://en.wikipedia.org/w/index.php?search=monochromatic%20light"
+        }
       ]
     }
   ]

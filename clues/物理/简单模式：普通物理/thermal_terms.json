@@ -17,6 +17,24 @@
         "pV=nRT ΔU=Q+W Q=cmΔT",
         "状态变化 p-V图",
         "thermal physics"
+      ],
+      "explanation_markdown": "热学研究宏观系统中冷热、能量交换和物态变化的规律，并把这些现象追溯到大量微观粒子的运动。它连接温度、热量、功和内能。可写成 $\\Delta U=Q+W$，其中$\\Delta U$ 是内能变化，$Q$ 是系统吸收热量，$W$ 是外界对系统做功。\n\n热学的一个核心边界是区分状态量和过程量：温度、压强、内能可描述平衡态，热量和功只在过程里有意义。气体、热机、相变和传热都在这条主线下组织。学习热学时，最容易混淆的是温度高低、热量多少和内能大小。一个高温小火花内能未必大，低温湖水却可含有巨大内能。使用热学时要先划定系统边界，并说明符号约定；否则热量、功和状态变化容易混淆。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "热学",
+          "url": "https://www.baidu.com/s?wd=%E7%83%AD%E5%AD%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "热学",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%83%AD%E5%AD%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "thermal physics",
+          "url": "https://en.wikipedia.org/w/index.php?search=thermal%20physics"
+        }
       ]
     },
     {
@@ -35,6 +53,24 @@
         "pV=nRT ΔU=Q+W Q=cmΔT",
         "状态变化 p-V图",
         "heat"
+      ],
+      "explanation_markdown": "热在热学中通常指因温度差而传递的能量，不是物体内部“含有”的某种物质。离开传热过程，单独说某物体有多少热并不准确。常见公式是 $Q=\\int\\delta Q$，其中$Q$ 是传热量，$\\delta Q$ 是沿过程发生的微小热交换。\n\n热总是从较高温物体自发流向较低温物体，除非外界做功。它与内能不同：内能是状态函数，热量依赖路径；同一初末态可通过不同传热和做功组合实现。热量的符号取决于系统边界和正方向约定。把热说成物体内部的储藏量会导致误解；更准确的说法是系统在某过程中吸热或放热。热往往只对接近平衡的宏观状态有稳定数值，快速非平衡过程需另作近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "热",
+          "url": "https://www.baidu.com/s?wd=%E7%83%AD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "热",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%83%AD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "heat",
+          "url": "https://en.wikipedia.org/w/index.php?search=heat"
+        }
       ]
     },
     {
@@ -53,6 +89,24 @@
         "T=t+273.15 第零定律",
         "测温计 K ℃",
         "temperature"
+      ],
+      "explanation_markdown": "温度给冷热程度建立可比较的数值，也是判断两个系统热接触后热流方向的状态量。微观上，它与粒子热运动的平均能量有关。数学表达为 $\\langle E_k\\rangle=\\frac32k_BT$，其中$\\langle E_k\\rangle$ 是单原子理想气体分子平均平动动能，$k_B$ 是玻尔兹曼常数，$T$ 是绝对温度。\n\n能均分公式只对经典单原子理想气体的平动自由度成立，却清楚显示温度不是单个粒子速度，而是大量粒子的统计尺度。热力学公式中必须使用开尔文温度。两个物体温度相同就不会有净热传递，即使它们质量和内能差别很大。温度计测量的是热平衡后的共同温度，而不是直接数分子速度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "温度",
+          "url": "https://www.baidu.com/s?wd=%E6%B8%A9%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "温度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B8%A9%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "temperature",
+          "url": "https://en.wikipedia.org/w/index.php?search=temperature"
+        }
       ]
     },
     {
@@ -71,6 +125,24 @@
         "T=t+273.15 第零定律",
         "温度计 K ℃",
         "temperature scale"
+      ],
+      "explanation_markdown": "温标规定如何把冷热程度转换成数字，包含零点、单位间隔和测量约定。不同温标给同一热状态贴上不同数值。对应关系可写为 $T=t+273.15$，其中$T$ 是开尔文温度，$t$ 是摄氏温度数值。\n\n摄氏温标便于日常使用，热力学温标则把绝对零度作为零点。选择温标时要注意公式要求：理想气体状态方程和卡诺效率都必须用绝对温度，而不能直接代入摄氏数值。温标之间可以换算，但零点不同会影响比例判断。说二十摄氏度是十摄氏度两倍热并无意义；用开尔文温度才适合比较热力学比例。使用温标时要先划定系统边界，并说明符号约定；否则热量、功和状态变化容易混淆。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "温标",
+          "url": "https://www.baidu.com/s?wd=%E6%B8%A9%E6%A0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "温标",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B8%A9%E6%A0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "temperature scale",
+          "url": "https://en.wikipedia.org/w/index.php?search=temperature%20scale"
+        }
       ]
     },
     {
@@ -89,6 +161,24 @@
         "T=t+273.15 第零定律",
         "温度计 K ℃",
         "celsius scale"
+      ],
+      "explanation_markdown": "摄氏温标以水在标准压强附近的凝固和沸腾作为历史参照，日常温度读数多用它表示。它的度间隔与开尔文相同。一个方便的写法是 $T=t+273.15$，其中$t$ 是摄氏温度，$T$ 是对应热力学温度。\n\n摄氏零度不是热运动停止，只是相对约定的零点。因此涉及比例关系时不能用摄氏温度代替开尔文温度；但摄氏一度的温差与一开尔文的温差大小相同。摄氏温标的优势是贴近日常水的相变范围，但它不是热力学最基本标尺。写气体定律、辐射定律或卡诺效率时，应先换成开尔文。摄氏温标往往只对接近平衡的宏观状态有稳定数值，快速非平衡过程需另作近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "摄氏温标",
+          "url": "https://www.baidu.com/s?wd=%E6%91%84%E6%B0%8F%E6%B8%A9%E6%A0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "摄氏温标",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%91%84%E6%B0%8F%E6%B8%A9%E6%A0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "celsius scale",
+          "url": "https://en.wikipedia.org/w/index.php?search=celsius%20scale"
+        }
       ]
     },
     {
@@ -107,6 +197,24 @@
         "T=t+273.15 第零定律",
         "温度计 K ℃",
         "thermodynamic temperature scale"
+      ],
+      "explanation_markdown": "热力学温标不依赖某种具体测温物质，而由热力学定律确定，零点是绝对零度。它让温度成为能进入普适公式的状态量。定量上有 $\\eta_C=1-T_c/T_h$，其中$\\eta_C$ 是卡诺效率，$T_h$ 与 $T_c$ 是高、低温热库的热力学温度。\n\n卡诺效率只由两个热库温度决定，这为热力学温标提供了操作意义。该温标单位是开尔文；它在气体状态方程、熵定义和黑体辐射中都是标准温度变量。热力学温标使不同测温物质给出一致结果，避免水银、气体或电阻温度计各自特性的影响。它体现温度定义的普适化。热力学温标的测量通常依赖热接触或能量交换，因此读数本身也会轻微扰动系统。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "热力学温标",
+          "url": "https://www.baidu.com/s?wd=%E7%83%AD%E5%8A%9B%E5%AD%A6%E6%B8%A9%E6%A0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "热力学温标",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%83%AD%E5%8A%9B%E5%AD%A6%E6%B8%A9%E6%A0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "thermodynamic temperature scale",
+          "url": "https://en.wikipedia.org/w/index.php?search=thermodynamic%20temperature%20scale"
+        }
       ]
     },
     {
@@ -125,6 +233,24 @@
         "T=t+273.15 第零定律",
         "温度计 K ℃",
         "absolute temperature"
+      ],
+      "explanation_markdown": "绝对温度以绝对零度为零点，表示热力学温标上的温度。它避免了摄氏零点的人为性，使温度比例有物理意义。通常记作 $T\\ge0$，其中$T$ 是绝对温度，零点对应热力学上不可达到的低温极限。\n\n绝对零度不是普通冷却能达到的状态，第三定律说明有限过程无法到达它。理想气体平均动能与 $T$ 成正比，所以热学公式中的温度多指绝对温度。绝对温度越低，经典热运动能量尺度越小，但量子零点运动等概念会让微观图像更细致。普通热学只需把它看作热力学温度的自然零点。使用绝对温度时要先划定系统边界，并说明符号约定；否则热量、功和状态变化容易混淆。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "绝对温度",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%9D%E5%AF%B9%E6%B8%A9%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "绝对温度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%9D%E5%AF%B9%E6%B8%A9%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "absolute temperature",
+          "url": "https://en.wikipedia.org/w/index.php?search=absolute%20temperature"
+        }
       ]
     },
     {
@@ -143,6 +269,24 @@
         "T=t+273.15 第零定律",
         "温度计 K ℃",
         "thermal equilibrium"
+      ],
+      "explanation_markdown": "热平衡指两个或多个系统热接触后不再有净热流，温度达到一致。它是温度能够作为状态量的基础。在这种约定下有 $T_A=T_B$，其中$T_A$ 与 $T_B$ 是两个系统的温度。\n\n热平衡不要求压强、体积或组成相同，只要求热交换方向消失。温度计测温正是让温度计与被测物体达到热平衡；若系统内部还存在温度梯度，就不能用单一温度完整描述。热平衡需要时间建立，尤其在导热差或系统很大的情况下。达到热平衡后，系统内部仍有微观涨落，但宏观热流平均为零。热平衡往往只对接近平衡的宏观状态有稳定数值，快速非平衡过程需另作近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "热平衡",
+          "url": "https://www.baidu.com/s?wd=%E7%83%AD%E5%B9%B3%E8%A1%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "热平衡",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%83%AD%E5%B9%B3%E8%A1%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "thermal equilibrium",
+          "url": "https://en.wikipedia.org/w/index.php?search=thermal%20equilibrium"
+        }
       ]
     },
     {
@@ -161,6 +305,24 @@
         "pV=nRT ΔU=Q+W Q=cmΔT",
         "状态变化 p-V图",
         "quantity of heat"
+      ],
+      "explanation_markdown": "热量是热传递过程中穿过系统边界的能量，通常由温度差驱动。它不是系统状态的一部分，而是过程中的能量账目。可写成 $Q=cm\\Delta T$，其中$Q$ 是热量，$c$ 是比热容，$m$ 是质量，$\\Delta T$ 是温度变化。\n\n该公式适用于无相变且比热容近似恒定的升降温过程。发生相变时，系统可吸热而温度不变，需要用潜热；若同时有做功，热量只决定内能变化的一部分。热量的大小不仅由温差决定，还由路径、材料和是否相变决定。把同一杯水加热和把同质量铁块加热到同样温差，需要的热量并不相同。热量的测量通常依赖热接触或能量交换，因此读数本身也会轻微扰动系统。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "热量",
+          "url": "https://www.baidu.com/s?wd=%E7%83%AD%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "热量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%83%AD%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantity of heat",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantity%20of%20heat"
+        }
       ]
     },
     {
@@ -179,6 +341,24 @@
         "ΔU=Q+W η=W/Qh",
         "循环图 效率 熵增",
         "internal energy"
+      ],
+      "explanation_markdown": "内能是系统内部微观动能和相互作用势能的总和，从宏观上看是状态函数。它不包含系统整体平动或整体转动的机械能。常见公式是 $U=\\frac32nRT$，其中$U$ 是单原子理想气体内能，$n$ 是物质的量，$R$ 是气体常数，$T$ 是绝对温度。\n\n对理想气体，内能只由温度决定；真实物质还包含分子间势能，因而与体积、相态有关。第一定律说明内能可通过传热和做功改变，但其变化只看初末状态。内能不可直接用温度完全代表，除非是理想气体等特殊模型。相变过程中温度不变而内能改变，正说明内能还包含微观势能结构。使用内能时要先划定系统边界，并说明符号约定；否则热量、功和状态变化容易混淆。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "内能",
+          "url": "https://www.baidu.com/s?wd=%E5%86%85%E8%83%BD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "内能",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%86%85%E8%83%BD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "internal energy",
+          "url": "https://en.wikipedia.org/w/index.php?search=internal%20energy"
+        }
       ]
     },
     {
@@ -197,6 +377,24 @@
         "平均动能 温度",
         "扩散 压强 温度",
         "molecule"
+      ],
+      "explanation_markdown": "分子是保持物质化学性质的微观单元，由一个或多个原子组成。热学中，大量分子的无规则运动决定宏观温度、压强和扩散。数学表达为 $N=nN_A$，其中$N$ 是分子数，$n$ 是物质的量，$N_A$ 是阿伏伽德罗常数。\n\n单个分子的运动不可预测，但大量分子呈现稳定统计规律。分子大小、碰撞和相互作用解释了气体状态、液体黏度和相变；在理想气体模型中，分子间作用常被忽略。在热学中不追踪每个分子的精确轨道，而关心数量巨大时的统计规律。温度、压强和扩散都是这种统计平均显现出的稳定宏观量。讨论分子时通常取大量粒子的平均，样本太小时涨落会变得不可忽略。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分子",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "molecule",
+          "url": "https://en.wikipedia.org/w/index.php?search=molecule"
+        }
       ]
     },
     {
@@ -215,6 +413,24 @@
         "花粉抖动 墨水扩散 Maxwell曲线",
         "显微颗粒 速率分布",
         "atom"
+      ],
+      "explanation_markdown": "原子是化学元素的基本微观单元，由原子核和电子组成。单原子气体中，原子本身就是热运动的粒子。对应关系可写为 $N=nN_A$，其中$N$ 是原子数，$n$ 是物质的量，$N_A$ 是阿伏伽德罗常数。\n\n在热学低阶模型中，原子的内部电子结构常不显式出现，只通过质量、碰撞和能级参与宏观性质。固体热膨胀、气体压强和比热都可从大量原子的运动与相互作用理解。原子质量进入热速度公式，原子间相互作用进入固体和液体的热性质。单原子气体模型简单，是因为内部转动和振动自由度可忽略。原子能解释扩散、压强和热容的来源，但并不要求追踪每个粒子的完整轨迹。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "原子",
+          "url": "https://www.baidu.com/s?wd=%E5%8E%9F%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "原子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8E%9F%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "atom",
+          "url": "https://en.wikipedia.org/w/index.php?search=atom"
+        }
       ]
     },
     {
@@ -233,6 +449,24 @@
         "花粉抖动 墨水扩散 Maxwell曲线",
         "显微颗粒 速率分布",
         "molecular kinetic theory"
+      ],
+      "explanation_markdown": "分子动理论用大量分子的无规则运动解释宏观热性质。压强来自分子撞击器壁，温度反映分子平均动能。一个方便的写法是 $pV=\\frac13Nm\\langle v^2\\rangle$，其中$p,V$ 是压强和体积，$N$ 是分子数，$m$ 是单个分子质量，$\\langle v^2\\rangle$ 是速率平方平均。\n\n动理论公式把理想气体状态方程与微观碰撞图像连接起来。它依赖稀薄气体、分子体积可忽略和弹性碰撞等近似；液体和高压气体需要加入分子间作用。这个理论把宏观量从微观碰撞中推出来，解释了为什么同温下轻分子跑得更快。它也说明压强不是连续介质的神秘推力，而是碰撞平均。分子动理论把宏观热现象落到大量粒子的统计行为上，单个粒子的偶然运动不代表温度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分子动理论",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E5%AD%90%E5%8A%A8%E7%90%86%E8%AE%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分子动理论",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E5%AD%90%E5%8A%A8%E7%90%86%E8%AE%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "molecular kinetic theory",
+          "url": "https://en.wikipedia.org/w/index.php?search=molecular%20kinetic%20theory"
+        }
       ]
     },
     {
@@ -251,6 +485,24 @@
         "花粉抖动 墨水扩散 Maxwell曲线",
         "显微颗粒 速率分布",
         "molecular thermal motion"
+      ],
+      "explanation_markdown": "分子热运动是分子由于温度而持续进行的无规则运动，包括平动、转动和振动等形式。温度越高，运动通常越剧烈。定量上有 $\\langle E_k\\rangle=\\frac32k_BT$，其中$\\langle E_k\\rangle$ 是平均平动动能，$k_B$ 是玻尔兹曼常数，$T$ 是温度。\n\n这个公式适合单原子理想气体的平动部分。布朗运动、扩散和气体压强都是分子热运动的宏观表现；单个分子速度不断改变，稳定的是统计平均和分布。分子热运动永不停息，即使宏观物体静止，内部粒子仍在运动。温度降低只会减弱典型运动强度，并不等于所有粒子停住。讨论分子热运动时通常取大量粒子的平均，样本太小时涨落会变得不可忽略。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分子热运动",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E5%AD%90%E7%83%AD%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分子热运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E5%AD%90%E7%83%AD%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "molecular thermal motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=molecular%20thermal%20motion"
+        }
       ]
     },
     {
@@ -269,6 +521,24 @@
         "花粉抖动 墨水扩散 Maxwell曲线",
         "显微颗粒 速率分布",
         "brownian motion"
+      ],
+      "explanation_markdown": "布朗运动是悬浮微粒在液体或气体中受到分子不均匀碰撞后呈现的随机抖动。它直接显示了分子热运动的存在。通常记作 $\\langle x^2\\rangle=2Dt$，其中$\\langle x^2\\rangle$ 是一维平均平方位移，$D$ 是扩散系数，$t$ 是时间。\n\n微粒越小、温度越高，随机运动越明显。布朗运动不是微粒自己有生命力，而是周围分子撞击的统计结果；爱因斯坦关系还可由它测定阿伏伽德罗常数。布朗运动路径曲折且不可微，不能用普通匀速或匀加速轨迹理解。它是随机过程的重要物理例子，也支持物质由分子组成的观点。布朗运动能解释扩散、压强和热容的来源，但并不要求追踪每个粒子的完整轨迹。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "布朗运动",
+          "url": "https://www.baidu.com/s?wd=%E5%B8%83%E6%9C%97%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "布朗运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B8%83%E6%9C%97%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "brownian motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=brownian%20motion"
+        }
       ]
     },
     {
@@ -287,6 +557,24 @@
         "花粉抖动 墨水散开 Maxwell曲线",
         "显微颗粒 速率分布",
         "diffusion"
+      ],
+      "explanation_markdown": "扩散是粒子由高浓度区域向低浓度区域自发散开的过程，根源是分子的无规则热运动。它不需要宏观搅拌。在这种约定下有 $\\mathbf J=-D\\nabla n$，其中$\\mathbf J$ 是粒子流密度，$D$ 是扩散系数，$n$ 是数密度。\n\n负号表示粒子流从高数密度指向低数密度。气味在空气中蔓延、墨水在水中散开和半导体掺杂都涉及扩散；若有流体整体运动，还要把对流与扩散区分开。扩散会逐渐抹平浓度差，并伴随熵增加。温度越高、介质阻力越小，扩散通常越快；但在多孔材料中几何通道也会限制扩散。扩散把宏观热现象落到大量粒子的统计行为上，单个粒子的偶然运动不代表温度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "扩散",
+          "url": "https://www.baidu.com/s?wd=%E6%89%A9%E6%95%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "扩散",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%A9%E6%95%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "diffusion",
+          "url": "https://en.wikipedia.org/w/index.php?search=diffusion"
+        }
       ]
     },
     {
@@ -305,6 +593,24 @@
         "pV=nRT pV=NkT",
         "状态变化",
         "ideal gas"
+      ],
+      "explanation_markdown": "理想气体把分子看作体积可忽略、除碰撞外无相互作用的粒子。它是稀薄气体在不太低温、不太高压下的近似模型。可写成 $pV=nRT=Nk_BT$，其中$p,V,T$ 是压强、体积和温度，$n,N$ 是物质的量和分子数。\n\n理想气体内能只与温度有关，分子碰撞被视为弹性。真实气体在接近液化或密度很大时偏离这个模型，需要考虑分子体积和吸引作用，例如范德瓦耳斯修正。理想气体模型的价值在于抓住稀薄气体主导行为，而非声称分子真的没有大小。它常作为真实气体修正和热机循环分析的起点。使用理想气体时要统一体积、温度和物质的量单位，尤其不能把摄氏温度直接代入比例式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "理想气体",
+          "url": "https://www.baidu.com/s?wd=%E7%90%86%E6%83%B3%E6%B0%94%E4%BD%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "理想气体",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%90%86%E6%83%B3%E6%B0%94%E4%BD%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ideal gas",
+          "url": "https://en.wikipedia.org/w/index.php?search=ideal%20gas"
+        }
       ]
     },
     {
@@ -323,6 +629,24 @@
         "pV=nRT pV=NkT",
         "状态变化",
         "gas"
+      ],
+      "explanation_markdown": "气体没有固定形状和体积，会充满容器，分子间距离通常远大于分子尺度。它容易压缩，压强来自粒子撞击器壁。常见公式是 $pV=nRT$，其中$p$ 是压强，$V$ 是体积，$n$ 是物质的量，$T$ 是绝对温度。\n\n这个方程是理想气体近似，不是所有气体在任意条件下都精确满足。气体状态受温度、压强和体积共同控制；高压低温下分子间作用会让气体逐渐接近液化。气体的宏观状态可快速随容器和温度改变。压缩空气会升温，喷出气体会膨胀降温；这些现象都需要把力学做功和热学状态联系起来。气体适合连接实验可测的压强和体积，也能估算分子平均动能的尺度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "气体",
+          "url": "https://www.baidu.com/s?wd=%E6%B0%94%E4%BD%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "气体",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B0%94%E4%BD%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gas",
+          "url": "https://en.wikipedia.org/w/index.php?search=gas"
+        }
       ]
     },
     {
@@ -341,6 +665,24 @@
         "pV=nRT pV=NkT",
         "状态变化",
         "pressure"
+      ],
+      "explanation_markdown": "压强表示单位面积受到的法向力，在气体中来自大量分子对器壁的频繁碰撞。它是状态参量，也是流体静力学的核心量。数学表达为 $p=F_\\perp/A$，其中$p$ 是压强，$F_\\perp$ 是垂直作用力，$A$ 是受力面积。\n\n气体压强可随体积压缩和温度升高而增大。压强不同于总压力，同样压力分布在更大面积上压强更小；在热学中，压强还决定气体膨胀做功 $p\\,dV$。气体压强在平衡态中各方向相同，但若气体快速流动或稀薄到分子平均自由程很长，局部平衡压强的概念就要谨慎使用。压强常在稀薄、低压和远离相变的条件下近似成立，高压或低温时分子作用会显现。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "压强",
+          "url": "https://www.baidu.com/s?wd=%E5%8E%8B%E5%BC%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "压强",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8E%8B%E5%BC%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pressure",
+          "url": "https://en.wikipedia.org/w/index.php?search=pressure"
+        }
       ]
     },
     {
@@ -359,6 +701,24 @@
         "pV=nRT pV=NkT",
         "状态变化",
         "volume"
+      ],
+      "explanation_markdown": "体积表示系统占据的空间大小，是气体状态和相变讨论中的基本参量。气体体积通常由容器决定，液体和固体则较难压缩。对应关系可写为 $V=\\int dV$，其中$V$ 是总体积，$dV$ 是微小体元。\n\n在 $p$-$V$ 图中，体积变化与做功直接相关；气体膨胀时可能对外做功，压缩时外界对气体做功。体积不是总是独立变量，等容过程会把它固定。体积可由真实容器壁限定，也可由想象的控制体规定。对开放流动系统，控制体体积固定并不意味着其中物质固定不变。使用体积时要统一体积、温度和物质的量单位，尤其不能把摄氏温度直接代入比例式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "体积",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%93%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "体积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%93%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "volume",
+          "url": "https://en.wikipedia.org/w/index.php?search=volume"
+        }
       ]
     },
     {
@@ -377,6 +737,24 @@
         "pV=nRT ΔU=Q+W Q=cmΔT",
         "状态变化 p-V图",
         "amount of substance"
+      ],
+      "explanation_markdown": "物质的量用来按粒子数计量宏观样品，把微观粒子数和可称量物质联系起来。它的单位是摩尔。一个方便的写法是 $n=N/N_A$，其中$n$ 是物质的量，$N$ 是粒子数，$N_A$ 是阿伏伽德罗常数。\n\n在气体状态方程中，物质的量决定同温同压下气体占据的体积。使用它时要说明基本单元是什么，可以是分子、原子、离子或化学式单元。物质的量把粒子数缩放到可操作的宏观尺度。化学反应和气体混合中，按摩尔计数比按质量计数更能反映粒子比例。物质的量适合连接实验可测的压强和体积，也能估算分子平均动能的尺度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "物质的量",
+          "url": "https://www.baidu.com/s?wd=%E7%89%A9%E8%B4%A8%E7%9A%84%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "物质的量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%A9%E8%B4%A8%E7%9A%84%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "amount of substance",
+          "url": "https://en.wikipedia.org/w/index.php?search=amount%20of%20substance"
+        }
       ]
     },
     {
@@ -395,6 +773,24 @@
         "pV=nRT pV=NkT",
         "状态变化",
         "mole"
+      ],
+      "explanation_markdown": "摩尔是物质的量单位，表示含有固定数目的基本单元。它把实验室可称量的样品与微观粒子数连接起来。定量上有 $1\\,\\mathrm{mol}=N_A$ 个基本单元，其中$N_A$ 是阿伏伽德罗常数，基本单元需按具体物质指定。\n\n一摩尔氧气分子和一摩尔氧原子含有的基本单元数相同，但质量和化学含义不同。摩尔常与摩尔质量、气体常数和化学计量一起使用。摩尔不是质量单位，一摩尔氢气和一摩尔氧气粒子数相同但质量不同。它的作用是把微观基本单元数变成实验可称量的数量。摩尔常在稀薄、低压和远离相变的条件下近似成立，高压或低温时分子作用会显现。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "摩尔",
+          "url": "https://www.baidu.com/s?wd=%E6%91%A9%E5%B0%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "摩尔",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%91%A9%E5%B0%94"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mole",
+          "url": "https://en.wikipedia.org/w/index.php?search=mole"
+        }
       ]
     },
     {
@@ -413,6 +809,24 @@
         "pV=nRT pV=NkT",
         "状态变化",
         "molar mass"
+      ],
+      "explanation_markdown": "摩尔质量是一摩尔物质的质量，连接样品质量和物质的量。它由物质组成决定，单位常用千克每摩尔或克每摩尔。通常记作 $M=m/n$，其中$M$ 是摩尔质量，$m$ 是样品质量，$n$ 是物质的量。\n\n摩尔质量可由化学式中原子相对质量相加得到。热学中它常用于把气体分子质量与宏观量联系起来，例如单个分子质量等于摩尔质量除以阿伏伽德罗常数。同位素组成会影响精确摩尔质量，普通计算常用平均相对原子质量。把质量除以摩尔质量即可得到物质的量，这是热学和化学的共同入口。使用摩尔质量时要统一体积、温度和物质的量单位，尤其不能把摄氏温度直接代入比例式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "摩尔质量",
+          "url": "https://www.baidu.com/s?wd=%E6%91%A9%E5%B0%94%E8%B4%A8%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "摩尔质量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%91%A9%E5%B0%94%E8%B4%A8%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "molar mass",
+          "url": "https://en.wikipedia.org/w/index.php?search=molar%20mass"
+        }
       ]
     },
     {
@@ -431,6 +845,24 @@
         "花粉抖动 墨水扩散 Maxwell曲线",
         "显微颗粒 速率分布",
         "avogadro constant"
+      ],
+      "explanation_markdown": "阿伏伽德罗常数给出一摩尔中包含的基本单元数，是连接微观计数和宏观物质的桥梁。在这种约定下有 $N_A=N/n$，其中$N_A$ 是阿伏伽德罗常数，$N$ 是粒子数，$n$ 是物质的量。\n\n它使气体常数和玻尔兹曼常数相互转换，也让分子质量与摩尔质量相连。讨论一摩尔物质时，必须明确计数对象是分子、原子还是离子。这个常数使宏观一摩尔和微观粒子数对应起来。它的巨大数值也解释了为什么热学宏观量通常非常平滑，单个分子涨落被平均掉。阿伏伽德罗常数适合连接实验可测的压强和体积，也能估算分子平均动能的尺度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阿伏伽德罗常数",
+          "url": "https://www.baidu.com/s?wd=%E9%98%BF%E4%BC%8F%E4%BC%BD%E5%BE%B7%E7%BD%97%E5%B8%B8%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阿伏伽德罗常数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%BF%E4%BC%8F%E4%BC%BD%E5%BE%B7%E7%BD%97%E5%B8%B8%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "avogadro constant",
+          "url": "https://en.wikipedia.org/w/index.php?search=avogadro%20constant"
+        }
       ]
     },
     {
@@ -449,6 +881,24 @@
         "花粉抖动 墨水扩散 Maxwell曲线",
         "显微颗粒 速率分布",
         "boltzmann constant"
+      ],
+      "explanation_markdown": "玻尔兹曼常数把温度转换成单个微观自由度的能量尺度。它让热力学温度进入分子能量和统计分布。可写成 $k_B=R/N_A$，其中$k_B$ 是玻尔兹曼常数，$R$ 是气体常数，$N_A$ 是阿伏伽德罗常数。\n\n在每个二次型自由度平均能量为 $k_BT/2$ 的表达中，它说明温度不是能量本身，但可决定典型热能大小。麦克斯韦分布和熵的统计定义都离不开它。玻尔兹曼常数很小，说明室温下单个分子的热能量尺度微小。大量分子合起来，才形成可观的内能和热容。玻尔兹曼常数常在稀薄、低压和远离相变的条件下近似成立，高压或低温时分子作用会显现。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "玻尔兹曼常数",
+          "url": "https://www.baidu.com/s?wd=%E7%8E%BB%E5%B0%94%E5%85%B9%E6%9B%BC%E5%B8%B8%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "玻尔兹曼常数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%8E%BB%E5%B0%94%E5%85%B9%E6%9B%BC%E5%B8%B8%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "boltzmann constant",
+          "url": "https://en.wikipedia.org/w/index.php?search=boltzmann%20constant"
+        }
       ]
     },
     {
@@ -467,6 +917,24 @@
         "pV=nRT pV=NkT",
         "状态变化",
         "gas constant"
+      ],
+      "explanation_markdown": "气体常数是理想气体状态方程中的比例常数，把摩尔尺度的温度、压强和体积联系起来。常见公式是 $R=N_Ak_B$，其中$R$ 是气体常数，$N_A$ 是阿伏伽德罗常数，$k_B$ 是玻尔兹曼常数。\n\n它是每摩尔粒子对应的玻尔兹曼常数总和。使用 $pV=nRT$ 时，$R$ 与物质的量 $n$ 搭配；使用 $pV=Nk_BT$ 时，则直接用粒子数 $N$。气体常数属于摩尔尺度，适合实验室用摩尔数描述气体。若转到单个粒子尺度，就要用玻尔兹曼常数，两种写法本质一致。使用气体常数时要统一体积、温度和物质的量单位，尤其不能把摄氏温度直接代入比例式。气体常数适合连接实验可测的压强和体积，也能估算分子平均动能的尺度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "气体常数",
+          "url": "https://www.baidu.com/s?wd=%E6%B0%94%E4%BD%93%E5%B8%B8%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "气体常数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B0%94%E4%BD%93%E5%B8%B8%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gas constant",
+          "url": "https://en.wikipedia.org/w/index.php?search=gas%20constant"
+        }
       ]
     },
     {
@@ -485,6 +953,24 @@
         "pV=nRT pV=NkT",
         "状态变化",
         "ideal gas equation of state"
+      ],
+      "explanation_markdown": "理想气体状态方程概括稀薄气体在平衡态下压强、体积、温度和物质的量的关系。它来自分子碰撞的统计平均。数学表达为 $pV=nRT$，其中$p$ 是压强，$V$ 是体积，$n$ 是物质的量，$T$ 是绝对温度。\n\n它要求气体足够稀薄、分子间作用可忽略。等温、等压和等容过程都可从它取不同约束得到；真实气体偏离时，常要引入压缩因子或范德瓦耳斯方程。这个方程给出的是平衡态关系，不能直接描述气体如何达到该状态。快速压缩或喷流中，局部压强和温度可能不均匀，需要更细模型。理想气体状态方程适合连接实验可测的压强和体积，也能估算分子平均动能的尺度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "理想气体状态方程",
+          "url": "https://www.baidu.com/s?wd=%E7%90%86%E6%83%B3%E6%B0%94%E4%BD%93%E7%8A%B6%E6%80%81%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "理想气体状态方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%90%86%E6%83%B3%E6%B0%94%E4%BD%93%E7%8A%B6%E6%80%81%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ideal gas equation of state",
+          "url": "https://en.wikipedia.org/w/index.php?search=ideal%20gas%20equation%20of%20state"
+        }
       ]
     },
     {
@@ -503,6 +989,24 @@
         "pV=nRT pV=NkT",
         "状态变化",
         "equation of state"
+      ],
+      "explanation_markdown": "状态方程给出平衡态各状态参量之间的约束，使一组宏观读数不能任意独立变化。它是物质热性质的数学表达。对应关系可写为 $F(p,V,T,n)=0$，其中$F$ 是约束函数，$p,V,T,n$ 是压强、体积、温度和物质的量。\n\n理想气体方程只是最简单的状态方程。液体、固体和真实气体有各自更复杂的关系；状态方程适用于平衡态，快速非平衡过程中的局部温度和压强未必能简单代入。状态方程常由实验拟合或微观模型推导得到。它和热力学定律配合使用，能从少数可测参量预测另一些参量。状态方程常在稀薄、低压和远离相变的条件下近似成立，高压或低温时分子作用会显现。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "状态方程",
+          "url": "https://www.baidu.com/s?wd=%E7%8A%B6%E6%80%81%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "状态方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%8A%B6%E6%80%81%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "equation of state",
+          "url": "https://en.wikipedia.org/w/index.php?search=equation%20of%20state"
+        }
       ]
     },
     {
@@ -521,6 +1025,24 @@
         "p-V图面积 pV^γ",
         "路径曲线 循环面积",
         "isothermal process"
+      ],
+      "explanation_markdown": "等温过程保持系统温度不变，气体在膨胀或压缩时必须与外界交换热量来抵消做功造成的内能变化。一个方便的写法是 $pV=\\mathrm{const}$，其中$p$ 是压强，$V$ 是体积，常量条件适用于定量理想气体的等温过程。\n\n对理想气体，温度不变意味着内能不变，所以吸收的热量等于对外做功。实际等温过程通常要足够缓慢，并与恒温热库接触，才能保持各处温度均匀。等温过程不代表没有热交换，恰恰常需要热交换来维持温度。理想气体等温膨胀时吸热全部转化为对外做功。描述等温过程时要说明哪些状态量保持不变，以及外界是否足够缓慢地调节系统。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "等温过程",
+          "url": "https://www.baidu.com/s?wd=%E7%AD%89%E6%B8%A9%E8%BF%87%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "等温过程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AD%89%E6%B8%A9%E8%BF%87%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "isothermal process",
+          "url": "https://en.wikipedia.org/w/index.php?search=isothermal%20process"
+        }
       ]
     },
     {
@@ -539,6 +1061,24 @@
         "p-V图面积 pV^γ",
         "路径曲线 循环面积",
         "isobaric process"
+      ],
+      "explanation_markdown": "等压过程在压强保持不变的条件下进行，气体受热时常膨胀并对外做功。它常见于活塞上方外压恒定的装置。定量上有 $V/T=\\mathrm{const}$，其中$V$ 是体积，$T$ 是绝对温度，常量条件来自定量理想气体且压强不变。\n\n等压加热的热量不仅增加内能，还包括膨胀做功，因此定压热容通常大于定容热容。开放大气中的许多缓慢加热过程也可近似等压。等压过程在大气开放环境中常见，但真实过程要足够缓慢才能保持内外压强接近平衡。定压加热的能量账中膨胀功不能忽略。等压过程常画在压强体积图上，曲线下的面积可直接读出气体对外做功。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "等压过程",
+          "url": "https://www.baidu.com/s?wd=%E7%AD%89%E5%8E%8B%E8%BF%87%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "等压过程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AD%89%E5%8E%8B%E8%BF%87%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "isobaric process",
+          "url": "https://en.wikipedia.org/w/index.php?search=isobaric%20process"
+        }
       ]
     },
     {
@@ -557,6 +1097,24 @@
         "p-V图面积 pV^γ",
         "路径曲线 循环面积",
         "isochoric process"
+      ],
+      "explanation_markdown": "等容过程保持体积不变，系统边界不移动，因此简单气体模型中没有体积功。加热会主要表现为温度和压强升高。通常记作 $p/T=\\mathrm{const}$，其中$p$ 是压强，$T$ 是绝对温度，常量条件适用于定量理想气体且体积不变。\n\n刚性密闭容器中的气体加热可近似等容。由于 $dV=0$，第一定律中热量直接改变内能；这也是定容热容与内能温度导数相连的原因。等容过程适合密闭刚性容器。因为体积不变，压强变化常成为可观测信号；压力锅、气瓶受热都要注意等容升压风险。等容过程强调路径而不只是初末态，因此热量和功的数值会随具体操作方式改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "等容过程",
+          "url": "https://www.baidu.com/s?wd=%E7%AD%89%E5%AE%B9%E8%BF%87%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "等容过程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AD%89%E5%AE%B9%E8%BF%87%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "isochoric process",
+          "url": "https://en.wikipedia.org/w/index.php?search=isochoric%20process"
+        }
       ]
     },
     {
@@ -575,6 +1133,24 @@
         "p-V图面积 pV^γ",
         "路径曲线 循环面积",
         "adiabatic process"
+      ],
+      "explanation_markdown": "绝热过程没有热量穿过系统边界，温度仍可能改变，因为系统可以通过做功交换能量。快速压缩气体升温就是典型现象。在这种约定下有 $pV^\\gamma=\\mathrm{const}$，其中$p$ 是压强，$V$ 是体积，$\\gamma$ 是定压与定容热容之比。\n\n这个幂律还要求理想气体、准静态且可逆。绝热不等于温度不变，也不等于能量不变；它只说明 $Q=0$，内能变化由功决定。绝热过程可通过保温壁实现，也可因过程太快来不及传热而近似成立。声波传播中的压缩和稀疏常近似为快速绝热变化。描述绝热过程时要说明哪些状态量保持不变，以及外界是否足够缓慢地调节系统。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "绝热过程",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%9D%E7%83%AD%E8%BF%87%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "绝热过程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%9D%E7%83%AD%E8%BF%87%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "adiabatic process",
+          "url": "https://en.wikipedia.org/w/index.php?search=adiabatic%20process"
+        }
       ]
     },
     {
@@ -593,6 +1169,24 @@
         "p-V图面积 pV^γ",
         "路径曲线 循环面积",
         "quasi static process"
+      ],
+      "explanation_markdown": "准静态过程进行得足够慢，使系统在每一瞬间都可近似看成平衡态。这样压强、温度等状态参量沿路径有清楚定义。可写成 $p_{\\rm ext}=p+dp$，其中$p_{\\rm ext}$ 是外压，$p$ 是系统压强，$dp$ 表示极小差别。\n\n准静态是可逆过程的重要条件之一，但有摩擦或有限温差传热时仍可能不可逆。它允许在 $p$-$V$ 图上用连续曲线表示过程，并用面积计算体积功。准静态过程是理想化的慢过程，它让每一小步都能画在状态图上。若活塞突然释放，气体内部不均匀，就不再是准静态过程。准静态过程常画在压强体积图上，曲线下的面积可直接读出气体对外做功。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "准静态过程",
+          "url": "https://www.baidu.com/s?wd=%E5%87%86%E9%9D%99%E6%80%81%E8%BF%87%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "准静态过程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%86%E9%9D%99%E6%80%81%E8%BF%87%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quasi static process",
+          "url": "https://en.wikipedia.org/w/index.php?search=quasi%20static%20process"
+        }
       ]
     },
     {
@@ -611,6 +1205,24 @@
         "p-V图面积 pV^γ",
         "路径曲线 循环面积",
         "cyclic process"
+      ],
+      "explanation_markdown": "循环过程使系统经历一系列状态后回到初态。状态函数的总变化为零，但过程中可以吸热、放热并输出或输入功。常见公式是 $\\oint dU=0$，其中$U$ 是内能，闭合积分表示沿整个循环回到初态。\n\n热机和制冷机都依赖循环。由于 $\\Delta U=0$，一周内净吸热与净做功相互对应；$p$-$V$ 图上闭合曲线围成的面积给出循环功的大小和方向。循环过程的系统本身回到原状，但环境一般不会完全恢复。热机每循环输出功，代价是高温热库失热、低温热库得热。循环过程强调路径而不只是初末态，因此热量和功的数值会随具体操作方式改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "循环过程",
+          "url": "https://www.baidu.com/s?wd=%E5%BE%AA%E7%8E%AF%E8%BF%87%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "循环过程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BE%AA%E7%8E%AF%E8%BF%87%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cyclic process",
+          "url": "https://en.wikipedia.org/w/index.php?search=cyclic%20process"
+        }
       ]
     },
     {
@@ -629,6 +1241,24 @@
         "p-V图面积 pV^γ",
         "路径曲线 循环面积",
         "state variable"
+      ],
+      "explanation_markdown": "状态参量是描述平衡态所需的宏观变量，如压强、体积、温度和物质的量。给定足够多参量后，系统状态可被确定。数学表达为 $(p,V,T,n)$，其中$p,V,T,n$ 分别是压强、体积、温度和物质的量。\n\n状态参量不是都独立，状态方程会给出约束。它们适合描述平衡或局部平衡系统；剧烈非平衡中，单一温度或压强可能无法代表整个系统。状态参量需要在热平衡或局部平衡下才有明确意义。若一根金属棒两端温度不同，就不能只用一个温度描述整根棒。描述状态参量时要说明哪些状态量保持不变，以及外界是否足够缓慢地调节系统。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "状态参量",
+          "url": "https://www.baidu.com/s?wd=%E7%8A%B6%E6%80%81%E5%8F%82%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "状态参量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%8A%B6%E6%80%81%E5%8F%82%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "state variable",
+          "url": "https://en.wikipedia.org/w/index.php?search=state%20variable"
+        }
       ]
     },
     {
@@ -647,6 +1277,24 @@
         "p-V图面积 pV^γ",
         "路径曲线 循环面积",
         "state function"
+      ],
+      "explanation_markdown": "状态函数只由系统当前平衡态决定，与到达该态的路径无关。内能、熵、温度和压强都可作为状态函数。对应关系可写为 $\\Delta U=U_2-U_1$，其中$U_1,U_2$ 是初末状态内能，$\\Delta U$ 是变化量。\n\n热量和功不是状态函数，因为它们依赖过程路径。状态函数让热力学能用初末态比较来简化问题；循环过程回到初态时，所有状态函数总变化都为零。状态函数的变化可沿任意方便路径计算，关键是初末态相同。熵变常用可逆路径求，即使实际过程不可逆。状态函数常画在压强体积图上，曲线下的面积可直接读出气体对外做功。实际使用时还要说明适用条件、符号约定和测量方式，避免把形式相近的量混为一谈。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "状态函数",
+          "url": "https://www.baidu.com/s?wd=%E7%8A%B6%E6%80%81%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "状态函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%8A%B6%E6%80%81%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "state function",
+          "url": "https://en.wikipedia.org/w/index.php?search=state%20function"
+        }
       ]
     },
     {
@@ -665,6 +1313,24 @@
         "ΔU=Q+W η=W/Qh",
         "循环图 效率 熵增",
         "work"
+      ],
+      "explanation_markdown": "热学中的功是系统边界受外界作用而发生宏观位移时交换的能量。气体膨胀或压缩时，体积功最常见。一个方便的写法是 $W_{\\rm by}=\\int p\\,dV$，其中$W_{\\rm by}$ 是系统对外做功，$p$ 是压强，$dV$ 是体积微小变化。\n\n不同教材会采用“系统对外做功”或“外界对系统做功”的符号约定，使用第一定律时必须一致。功依赖路径，同一初末态沿不同 $p$-$V$ 曲线做功不同。气体对外做功的几何图像是压强体积图下的面积。若过程不是准静态，系统内部压强不均匀，简单面积解释就需要用外压修正。功强调路径而不只是初末态，因此热量和功的数值会随具体操作方式改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "功",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "功",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "work",
+          "url": "https://en.wikipedia.org/w/index.php?search=work"
+        }
       ]
     },
     {
@@ -683,6 +1349,24 @@
         "Q=cmΔT Q=mL",
         "平台段 水汽凝结",
         "heat capacity"
+      ],
+      "explanation_markdown": "热容表示让整个系统温度升高单位温度所需的热量，反映系统储热能力。它与样品多少和过程约束都有关。定量上有 $C=\\delta Q/dT$，其中$C$ 是热容，$\\delta Q$ 是微小吸热量，$dT$ 是温度变化。\n\n热容不是纯材料常数，一个大水桶的热容比一小杯水大得多。对气体还要说明定压还是定容；发生相变时热量增加而温度不变，简单热容概念会失效。热容越大，同样吸热造成的温升越小。海洋热容巨大，会缓冲气候温度变化；金属锅热容较小，升温和降温都较快。测量热容时要减少散热并明确样品质量，否则热量分配会带来系统误差。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "热容",
+          "url": "https://www.baidu.com/s?wd=%E7%83%AD%E5%AE%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "热容",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%83%AD%E5%AE%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "heat capacity",
+          "url": "https://en.wikipedia.org/w/index.php?search=heat%20capacity"
+        }
       ]
     },
     {
@@ -701,6 +1385,24 @@
         "Q=cmΔT Q=mL",
         "平台段 水汽凝结",
         "specific heat capacity"
+      ],
+      "explanation_markdown": "比热容把热容除以质量，用来比较不同材料升温难易。它表示单位质量物质升高单位温度所需热量。通常记作 $c=\\delta Q/(m\\,dT)$，其中$c$ 是比热容，$m$ 是质量，$dT$ 是温度变化。\n\n水的比热容较大，因此温度变化相对缓慢。比热容通常随温度和相态改变；对气体还需说明过程条件，定压比热容和定容比热容并不相同。比热容是材料特性和相态的函数，水、冰和水蒸气的比热容不同。量热实验常通过热平衡和能量守恒反推出未知比热容。比热容把微观自由度多少反映到宏观升温难易上，是热量估算的常用参数。比热容依赖物质种类和约束条件，气体定压、定容给出的数值通常不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "比热容",
+          "url": "https://www.baidu.com/s?wd=%E6%AF%94%E7%83%AD%E5%AE%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "比热容",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AF%94%E7%83%AD%E5%AE%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "specific heat capacity",
+          "url": "https://en.wikipedia.org/w/index.php?search=specific%20heat%20capacity"
+        }
       ]
     },
     {
@@ -719,6 +1421,24 @@
         "pV=nRT pV=NkT",
         "状态变化",
         "molar heat capacity"
+      ],
+      "explanation_markdown": "摩尔热容按每摩尔物质计量升温所需热量，适合与分子自由度和能均分定理联系。它剥离了样品总量的影响。在这种约定下有 $C_m=\\delta Q/(n\\,dT)$，其中$C_m$ 是摩尔热容，$n$ 是物质的量，$dT$ 是温度变化。\n\n单原子理想气体定容摩尔热容为 $3R/2$，反映三个平动自由度。真实物质的摩尔热容会随温度变化，低温下量子效应尤其明显。摩尔热容适合比较不同气体，因为一摩尔含有相同粒子数。它随自由度开放而改变，低温固体摩尔热容趋向零是量子效应表现。摩尔热容依赖物质种类和约束条件，气体定压、定容给出的数值通常不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "摩尔热容",
+          "url": "https://www.baidu.com/s?wd=%E6%91%A9%E5%B0%94%E7%83%AD%E5%AE%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "摩尔热容",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%91%A9%E5%B0%94%E7%83%AD%E5%AE%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "molar heat capacity",
+          "url": "https://en.wikipedia.org/w/index.php?search=molar%20heat%20capacity"
+        }
       ]
     },
     {
@@ -737,6 +1457,24 @@
         "pV=nRT pV=NkT",
         "状态变化",
         "heat capacity at constant volume"
+      ],
+      "explanation_markdown": "定容热容是在体积保持不变时，系统温度升高单位温度所需的热量。由于边界不移动，简单气体没有体积功。可写成 $C_V=(\\partial U/\\partial T)_V$，其中$C_V$ 是定容热容，$U$ 是内能，$T$ 是温度，下标 $V$ 表示体积不变。\n\n对理想气体，定容加热的热量全部进入内能变化，因此 $C_V$ 直接反映内能随温度的变化。它与分子自由度密切相关，单原子理想气体给出 $3R/2$ 的摩尔值。定容热容常用于刚性容器和理想气体内能计算。若气体分子有转动或振动自由度，定容热容会比单原子气体更大。测量定容热容时要减少散热并明确样品质量，否则热量分配会带来系统误差。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "定容热容",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%9A%E5%AE%B9%E7%83%AD%E5%AE%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "定容热容",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%9A%E5%AE%B9%E7%83%AD%E5%AE%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "heat capacity at constant volume",
+          "url": "https://en.wikipedia.org/w/index.php?search=heat%20capacity%20at%20constant%20volume"
+        }
       ]
     },
     {
@@ -755,6 +1493,24 @@
         "pV=nRT pV=NkT",
         "状态变化",
         "heat capacity at constant pressure"
+      ],
+      "explanation_markdown": "定压热容是在压强保持不变时，系统升温单位温度所需的热量。气体定压加热通常会膨胀并对外做功。常见公式是 $C_p=(\\partial H/\\partial T)_p$，其中$C_p$ 是定压热容，$H$ 是焓，$T$ 是温度，下标 $p$ 表示压强不变。\n\n定压热容通常大于定容热容，因为输入热量一部分用于增加内能，一部分用于膨胀做功。理想气体有 $C_p-C_V=R$ 的摩尔关系，是热容比进入绝热公式的来源。定压热容常用于开放大气加热和活塞气缸模型。对理想气体，定压热容比定容多出的部分对应气体膨胀时对外做功。定压热容把微观自由度多少反映到宏观升温难易上，是热量估算的常用参数。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "定压热容",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%9A%E5%8E%8B%E7%83%AD%E5%AE%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "定压热容",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%9A%E5%8E%8B%E7%83%AD%E5%AE%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "heat capacity at constant pressure",
+          "url": "https://en.wikipedia.org/w/index.php?search=heat%20capacity%20at%20constant%20pressure"
+        }
       ]
     },
     {
@@ -773,6 +1529,24 @@
         "T=t+273.15 第零定律",
         "温度计 K ℃",
         "zeroth law of thermodynamics"
+      ],
+      "explanation_markdown": "热力学第零定律说明热平衡关系具有传递性：若两个系统分别与第三个系统热平衡，它们彼此也热平衡。温度的可测性由此建立。数学表达为 $T_A=T_B,\\ T_B=T_C\\Rightarrow T_A=T_C$，其中$T_A,T_B,T_C$ 是三个系统的温度。\n\n温度计能测温正依赖这条定律：温度计与物体热平衡后，它的读数代表物体温度。它看似简单，却是把冷热感觉转化为统一温标的逻辑基础。没有第零定律，温度计读数就无法在不同物体之间传递意义。它把经验冷热比较提升为可重复的物理量定义。热力学第零定律限制哪些能量转化或热过程可发生，并不是单纯的代数恒等式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "热力学第零定律",
+          "url": "https://www.baidu.com/s?wd=%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E9%9B%B6%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "热力学第零定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E9%9B%B6%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "zeroth law of thermodynamics",
+          "url": "https://en.wikipedia.org/w/index.php?search=zeroth%20law%20of%20thermodynamics"
+        }
       ]
     },
     {
@@ -791,6 +1565,24 @@
         "ΔU=Q+W η=W/Qh",
         "循环图 效率 熵增",
         "first law of thermodynamics"
+      ],
+      "explanation_markdown": "热力学第一定律是能量守恒在热过程中的表达，说明内能可通过传热和做功改变。它不判断过程方向，只记能量账。对应关系可写为 $\\Delta U=Q+W$，其中$\\Delta U$ 是内能变化，$Q$ 是系统吸热，$W$ 是外界对系统做功。\n\n符号约定必须说明清楚，有些教材把系统对外做功记为正。第一定律告诉我们永动机不能无中生有地产生能量，但它不排除能量以低效或不可逆方式转化。第一定律允许把加热、压缩、搅拌等不同方式放进同一个能量账。焦耳实验说明机械功也能改变内能，热不是独立守恒物质。使用热力学第一定律时要先选系统；开放、封闭和孤立系统对应的能量交换项不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "热力学第一定律",
+          "url": "https://www.baidu.com/s?wd=%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%B8%80%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "热力学第一定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%B8%80%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "first law of thermodynamics",
+          "url": "https://en.wikipedia.org/w/index.php?search=first%20law%20of%20thermodynamics"
+        }
       ]
     },
     {
@@ -809,6 +1601,24 @@
         "ΔU=Q+W η=W/Qh",
         "循环图 效率 熵增",
         "second law of thermodynamics"
+      ],
+      "explanation_markdown": "热力学第二定律给热过程加上方向性：热量不会自发完全从低温流向高温，热机也不能把单一热库的热量全部变成功。一个方便的写法是 $\\Delta S_{\\rm univ}\\ge0$，其中$\\Delta S_{\\rm univ}$ 是系统加环境的总熵变。\n\n它说明能量守恒并不足以决定过程是否可能。摩擦生热、气体自由膨胀和热传导都符合总熵增；可逆过程只是理想极限，总熵变为零。第二定律解释了为什么很多过程只朝一个方向自发发生。杯中热水会冷却，冷水不会自发从环境吸热变成更热而不留下其他影响。热力学第二定律给热机、制冷和相变设定边界，能排除许多看似省能的方案。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "热力学第二定律",
+          "url": "https://www.baidu.com/s?wd=%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "热力学第二定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "second law of thermodynamics",
+          "url": "https://en.wikipedia.org/w/index.php?search=second%20law%20of%20thermodynamics"
+        }
       ]
     },
     {
@@ -827,6 +1637,24 @@
         "ΔU=Q+W η=W/Qh",
         "循环图 效率 熵增",
         "third law of thermodynamics"
+      ],
+      "explanation_markdown": "热力学第三定律描述接近绝对零度时熵的极限行为，也说明有限步骤无法把系统冷却到绝对零度。定量上有 $S\\to0\\quad(T\\to0)$，其中$S$ 是完美晶体熵，$T$ 是热力学温度。\n\n严格说，零熵结论适用于基态非简并的完美晶体。第三定律限制了低温制冷的可能性，也为绝对熵的标定提供基准，而不只是说物体“很冷”。第三定律还意味着越接近绝对零度，继续降温越困难。低温物理中的制冷方法必须分阶段逼近，而不能用有限操作直接到达零度。热力学第三定律限制哪些能量转化或热过程可发生，并不是单纯的代数恒等式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "热力学第三定律",
+          "url": "https://www.baidu.com/s?wd=%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%B8%89%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "热力学第三定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%B8%89%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "third law of thermodynamics",
+          "url": "https://en.wikipedia.org/w/index.php?search=third%20law%20of%20thermodynamics"
+        }
       ]
     },
     {
@@ -845,6 +1673,24 @@
         "ΔU=Q+W η=W/Qh",
         "循环图 效率 熵增",
         "law of conservation of energy"
+      ],
+      "explanation_markdown": "能量守恒定律说明能量不会凭空产生或消失，只会在不同形式和系统之间转移。热力学第一定律是它在热过程中的专门表达。通常记作 $\\Delta E=Q+W+E_{\\rm in}-E_{\\rm out}$，其中$\\Delta E$ 是系统能量变化，$Q,W$ 是热量和功，后两项表示随物质或场输入输出的能量。\n\n机械能损失并不代表总能量消失，而常转化为内能、声或辐射。开放系统还要考虑流体带入带出的焓和动能，因此边界选择会影响能量账的写法。能量守恒是跨学科原则，但在热学中尤其要小心系统边界。边界一变，哪些能量算内部、哪些算输入输出，也会随之改变。使用能量守恒定律时要先选系统；开放、封闭和孤立系统对应的能量交换项不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "能量守恒定律",
+          "url": "https://www.baidu.com/s?wd=%E8%83%BD%E9%87%8F%E5%AE%88%E6%81%92%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "能量守恒定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%83%BD%E9%87%8F%E5%AE%88%E6%81%92%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "law of conservation of energy",
+          "url": "https://en.wikipedia.org/w/index.php?search=law%20of%20conservation%20of%20energy"
+        }
       ]
     },
     {
@@ -863,6 +1709,24 @@
         "ΔU=Q+W η=W/Qh",
         "循环图 效率 熵增",
         "heat engine"
+      ],
+      "explanation_markdown": "热机从高温热库吸热，将其中一部分转化为对外做功，并把余热排给低温热库。它必须循环工作，才能持续输出功。在这种约定下有 $\\eta=W/Q_h$，其中$\\eta$ 是热效率，$W$ 是每循环输出功，$Q_h$ 是从高温热库吸收的热量。\n\n第二定律限制热机效率不可能达到百分之百。蒸汽机、汽油机和燃气轮机都可看作热机；实际效率还受摩擦、有限温差传热和不可逆膨胀影响。热机工作物质每个循环回到初态，因此输出功来自热库之间的能量转移。只接触一个热库的循环热机不可能持续输出净功。热机把热力学第二定律变成工程约束，解释发动机和冰箱为何都要排热。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "热机",
+          "url": "https://www.baidu.com/s?wd=%E7%83%AD%E6%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "热机",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%83%AD%E6%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "heat engine",
+          "url": "https://en.wikipedia.org/w/index.php?search=heat%20engine"
+        }
       ]
     },
     {
@@ -881,6 +1745,24 @@
         "ΔU=Q+W η=W/Qh",
         "循环图 效率 熵增",
         "refrigerator"
+      ],
+      "explanation_markdown": "制冷机通过外界输入功，把热量从低温区域搬运到高温环境。冰箱不是消灭热，而是把柜内热量排到室外。可写成 $\\varepsilon=Q_c/W$，其中$\\varepsilon$ 是制冷系数，$Q_c$ 是从低温处吸收的热量，$W$ 是输入功。\n\n制冷机性能系数可以大于一，因为它衡量搬运热量与输入功的比值，而不是热机效率。空调和热泵也遵循相同热力学结构，只是关注的热端不同。制冷机的目标是从低温端取热，因此评价指标不同于热机。输入功越少而搬运热量越多，性能越好；但温差越大，制冷越困难。制冷机必须在两个或多个热源之间工作，单一热源无法持续输出净功而不留下影响。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "制冷机",
+          "url": "https://www.baidu.com/s?wd=%E5%88%B6%E5%86%B7%E6%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "制冷机",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%B6%E5%86%B7%E6%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "refrigerator",
+          "url": "https://en.wikipedia.org/w/index.php?search=refrigerator"
+        }
       ]
     },
     {
@@ -899,6 +1781,24 @@
         "ΔU=Q+W η=W/Qh",
         "循环图 效率 熵增",
         "carnot cycle"
+      ],
+      "explanation_markdown": "卡诺循环由两个等温过程和两个绝热过程组成，是在两个热库之间工作的可逆理想循环。它给出热机效率上限。常见公式是 $\\eta_C=1-T_c/T_h$，其中$\\eta_C$ 是卡诺效率，$T_h$ 与 $T_c$ 是高、低温热库的绝对温度。\n\n卡诺循环并不是实际发动机的构造图，而是比较所有热机的基准。只有可逆且只与两个热库交换热量的循环才能达到这个效率；任何不可逆损失都会降低效率。卡诺循环的四个过程在状态图上围成闭合曲线，方向决定是热机还是制冷机。它的理想性来自每一步都可逆，没有有限温差传热。评价卡诺循环时，温度要用开尔文，且实际装置会因摩擦、漏热和有限速率低于理想上限。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "卡诺循环",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%A1%E8%AF%BA%E5%BE%AA%E7%8E%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "卡诺循环",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%A1%E8%AF%BA%E5%BE%AA%E7%8E%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "carnot cycle",
+          "url": "https://en.wikipedia.org/w/index.php?search=carnot%20cycle"
+        }
       ]
     },
     {
@@ -917,6 +1817,24 @@
         "ΔU=Q+W η=W/Qh",
         "循环图 效率 熵增",
         "carnot engine"
+      ],
+      "explanation_markdown": "卡诺热机是在两个热库之间按可逆卡诺循环运行的理想热机。它代表给定温度条件下热功转换的最高效率。数学表达为 $\\eta_C=1-T_c/T_h$，其中$\\eta_C$ 是卡诺热机效率，$T_h,T_c$ 是高温和低温热库温度。\n\n效率只取决于热库温度，而不取决于工作物质细节。实际热机可以接近但不能超过卡诺效率；若声称超过，就意味着违反第二定律或温度定义有误。卡诺热机常被用作比较尺度，而非真实机器蓝图。真实发动机要有限速率输出功，就不可避免地产生温差、摩擦和湍流损失。卡诺热机把热力学第二定律变成工程约束，解释发动机和冰箱为何都要排热。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "卡诺热机",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%A1%E8%AF%BA%E7%83%AD%E6%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "卡诺热机",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%A1%E8%AF%BA%E7%83%AD%E6%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "carnot engine",
+          "url": "https://en.wikipedia.org/w/index.php?search=carnot%20engine"
+        }
       ]
     },
     {
@@ -935,6 +1853,24 @@
         "ΔU=Q+W η=W/Qh",
         "循环图 效率 熵增",
         "thermal efficiency"
+      ],
+      "explanation_markdown": "热效率衡量热机把吸收热量转化为有用功的比例。它关注能量品质，而不仅是能量总量。对应关系可写为 $\\eta=W_{\\rm out}/Q_{\\rm in}$，其中$\\eta$ 是热效率，$W_{\\rm out}$ 是输出功，$Q_{\\rm in}$ 是输入热量。\n\n热效率小于一，因为总要向低温环境排出一部分热量。提高效率可通过提高高温热库温度、降低低温热库温度或减少不可逆损失实现，但受材料和第二定律限制。热效率只衡量输入热量变成功的比例，不等同于设备总经济性。废热回收、提高燃烧温度和减少摩擦都可改善实际效率。热效率必须在两个或多个热源之间工作，单一热源无法持续输出净功而不留下影响。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "热效率",
+          "url": "https://www.baidu.com/s?wd=%E7%83%AD%E6%95%88%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "热效率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%83%AD%E6%95%88%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "thermal efficiency",
+          "url": "https://en.wikipedia.org/w/index.php?search=thermal%20efficiency"
+        }
       ]
     },
     {
@@ -953,6 +1889,24 @@
         "ΔU=Q+W η=W/Qh",
         "循环图 效率 无序度增加",
         "entropy"
+      ],
+      "explanation_markdown": "熵是刻画热力学状态和过程方向性的状态量。可逆传热中，吸收同样热量时温度越低，熵增加越多。一个方便的写法是 $dS=\\delta Q_{\\rm rev}/T$，其中$dS$ 是熵的微小变化，$\\delta Q_{\\rm rev}$ 是可逆路径上的热量，$T$ 是温度。\n\n熵也可从微观状态数理解为无序或可实现方式的多少。它是状态函数，但公式中的热量必须取可逆路径计算；不可逆过程的熵变要用等效可逆路径求。熵的单位是焦每开尔文，体现能量分散到温度尺度上的程度。它不是简单的混乱口号，而是可由可逆热量或统计状态数定量计算。讨论熵时要区分系统和环境，局部熵减少可以由环境更大的熵增加来补偿。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "熵",
+          "url": "https://www.baidu.com/s?wd=%E7%86%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "熵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%86%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "entropy",
+          "url": "https://en.wikipedia.org/w/index.php?search=entropy"
+        }
       ]
     },
     {
@@ -971,6 +1925,24 @@
         "ΔU=Q+W η=W/Qh",
         "循环图 效率 熵增",
         "principle of entropy increase"
+      ],
+      "explanation_markdown": "熵增原理指出，孤立系统的总熵不会减少。自然过程的方向由此受到限制，即使能量守恒允许，熵也可能禁止。定量上有 $\\Delta S_{\\rm isolated}\\ge0$，其中$\\Delta S_{\\rm isolated}$ 是孤立系统熵变。\n\n热传导、扩散和自由膨胀都会使孤立系统熵增加。局部熵可以降低，例如冰箱内部变冷，但必须向外界排出更多熵，使整体仍满足不减。熵增原理给不可逆过程定方向，却不说过程速度多快。热传导最终达到热平衡，是因为总熵在温差消失时达到更大值。熵增原理在相变、混合和热传导中尤其有用，能判断哪些过程只能单向自发发生。熵增原理刻画过程方向和可逆性的损失；它不只是“混乱程度”这个口号。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "熵增原理",
+          "url": "https://www.baidu.com/s?wd=%E7%86%B5%E5%A2%9E%E5%8E%9F%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "熵增原理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%86%B5%E5%A2%9E%E5%8E%9F%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "principle of entropy increase",
+          "url": "https://en.wikipedia.org/w/index.php?search=principle%20of%20entropy%20increase"
+        }
       ]
     },
     {
@@ -989,6 +1961,24 @@
         "p-V图面积 pV^γ",
         "路径曲线 循环面积",
         "reversible process"
+      ],
+      "explanation_markdown": "可逆过程是理想极限：过程可被无限小改变反向进行，并且系统和环境都能恢复原状。它要求没有摩擦、有限温差传热等耗散。通常记作 $dS=\\delta Q_{\\rm rev}/T$，其中$dS$ 是熵变，$\\delta Q_{\\rm rev}$ 是可逆微小热量，$T$ 是温度。\n\n可逆过程必须准静态，但准静态不一定可逆。它在现实中只能近似实现，却提供计算熵变和建立卡诺上限的基准；任何实际耗散都会产生额外熵。可逆过程要求每一步都几乎平衡，且没有任何耗散。现实过程只能近似可逆；越接近可逆，通常越慢，输出功率也越受限制。可逆过程刻画过程方向和可逆性的损失；它不只是“混乱程度”这个口号。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "可逆过程",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%AF%E9%80%86%E8%BF%87%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "可逆过程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%AF%E9%80%86%E8%BF%87%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "reversible process",
+          "url": "https://en.wikipedia.org/w/index.php?search=reversible%20process"
+        }
       ]
     },
     {
@@ -1007,6 +1997,24 @@
         "p-V图面积 pV^γ",
         "路径曲线 循环面积",
         "irreversible process"
+      ],
+      "explanation_markdown": "不可逆过程一旦发生，系统和环境不能同时无痕恢复原状。摩擦、混合、自由膨胀和有限温差传热都是典型来源。在这种约定下有 $\\Delta S_{\\rm univ}>0$，其中$\\Delta S_{\\rm univ}$ 是系统与环境合计的熵变。\n\n不可逆并不违反能量守恒，而是降低了能量转化为有用功的能力。分析不可逆过程时，熵变仍由初末状态决定，但不能直接用实际路径的 $\\delta Q/T$ 代替。不可逆过程的熵产生量衡量可用能损失。摩擦把有序机械能变成分散热运动，能量仍守恒，但不可能完全自发恢复原来的有序运动。讨论不可逆过程时要区分系统和环境，局部熵减少可以由环境更大的熵增加来补偿。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "不可逆过程",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%8D%E5%8F%AF%E9%80%86%E8%BF%87%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "不可逆过程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%8D%E5%8F%AF%E9%80%86%E8%BF%87%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "irreversible process",
+          "url": "https://en.wikipedia.org/w/index.php?search=irreversible%20process"
+        }
       ]
     },
     {
@@ -1025,6 +2033,24 @@
         "ΔL=αLΔT 表面张力",
         "液面弯曲 细管液柱",
         "free expansion"
+      ],
+      "explanation_markdown": "自由膨胀是气体向真空突然扩展的过程，外界没有活塞阻力，气体也不对外做体积功。理想气体自由膨胀温度不变。可写成 $Q=0,\\quad W=0,\\quad \\Delta U=0$，其中$Q$ 是热量，$W$ 是外界对气体做功，$\\Delta U$ 是理想气体内能变化。\n\n虽然内能不变，自由膨胀仍不可逆，熵会增加。真实气体可能因分子间作用出现温度变化；焦耳实验正是用它检验内能是否只依赖温度。自由膨胀没有外压阻挡，因此不能用准静态的压强体积面积算功。它常用来展示内能不变和熵增加可以同时发生。自由膨胀在相变、混合和热传导中尤其有用，能判断哪些过程只能单向自发发生。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自由膨胀",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E7%94%B1%E8%86%A8%E8%83%80%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自由膨胀",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E7%94%B1%E8%86%A8%E8%83%80"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "free expansion",
+          "url": "https://en.wikipedia.org/w/index.php?search=free%20expansion"
+        }
       ]
     },
     {
@@ -1043,6 +2069,24 @@
         "pV=nRT ΔU=Q+W Q=cmΔT",
         "状态变化 p-V图",
         "heat conduction"
+      ],
+      "explanation_markdown": "热传导是在没有宏观物质迁移时，能量由高温区域通过微观碰撞和相互作用传到低温区域。固体中它尤其常见。常见公式是 $\\dot Q=-kA\\,dT/dx$，其中$\\dot Q$ 是热流率，$k$ 是导热系数，$A$ 是截面积，$dT/dx$ 是温度梯度。\n\n负号表示热量沿温度降低方向流动。保温材料依赖低导热系数，金属散热则依赖高导热系数；若温度随时间变化，还要结合热扩散方程。热传导只需温度梯度，不需要物质整体流动。多层墙体保温时，各层热阻可串联处理；接触不良还会带来额外热阻。热传导需要温度梯度或辐射温差来维持，达到热平衡后净传热会消失。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "热传导",
+          "url": "https://www.baidu.com/s?wd=%E7%83%AD%E4%BC%A0%E5%AF%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "热传导",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%83%AD%E4%BC%A0%E5%AF%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "heat conduction",
+          "url": "https://en.wikipedia.org/w/index.php?search=heat%20conduction"
+        }
       ]
     },
     {
@@ -1061,6 +2105,24 @@
         "pV=nRT ΔU=Q+W Q=cmΔT",
         "状态变化 p-V图",
         "convection"
+      ],
+      "explanation_markdown": "对流通过流体的整体运动搬运热量，热空气上升和水受热循环都是常见图像。它同时涉及传热和流体运动。数学表达为 $\\dot Q=hA(T_s-T_f)$，其中$h$ 是对流换热系数，$A$ 是接触面积，$T_s,T_f$ 是表面和流体温度。\n\n自然对流由密度差驱动，强制对流由风扇或泵维持。对流换热系数不是单纯材料常数，会随流速、几何形状、表面状态和流动是否湍流而改变。对流常比单纯导热更强，因为流体把热量整团搬走。烧水时热水上升、冷水下沉形成循环，正是自然对流的典型图像。估算对流时，几何尺寸、表面积和边界条件会和材料性质同样重要。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对流",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "convection",
+          "url": "https://en.wikipedia.org/w/index.php?search=convection"
+        }
       ]
     },
     {
@@ -1079,6 +2141,24 @@
         "pV=nRT ΔU=Q+W Q=cmΔT",
         "状态变化 p-V图",
         "thermal radiation"
+      ],
+      "explanation_markdown": "热辐射是物体因温度而发射电磁波的过程，不需要物质介质。太阳加热地球主要靠辐射传能。对应关系可写为 $P=\\varepsilon\\sigma AT^4$，其中$P$ 是辐射功率，$\\varepsilon$ 是发射率，$\\sigma$ 是斯特藩玻尔兹曼常数，$A$ 是面积。\n\n辐射功率对温度四次方敏感，因此高温物体散热很强。实际物体还会吸收周围辐射，净辐射要比较自身和环境温度；表面颜色和粗糙度会影响发射率。热辐射在高温或真空环境中特别重要。保温瓶镀银层通过降低辐射交换保温；航天器散热也必须依靠辐射向太空排能。热辐射解释保温、散热片和恒温实验的设计，实际计算常要考虑多种机制并存。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "热辐射",
+          "url": "https://www.baidu.com/s?wd=%E7%83%AD%E8%BE%90%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "热辐射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%83%AD%E8%BE%90%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "thermal radiation",
+          "url": "https://en.wikipedia.org/w/index.php?search=thermal%20radiation"
+        }
       ]
     },
     {
@@ -1097,6 +2177,24 @@
         "pV=nRT ΔU=Q+W Q=cmΔT",
         "状态变化 p-V图",
         "thermal conductivity"
+      ],
+      "explanation_markdown": "导热系数衡量材料传导热量的能力，数值越大，同样温度梯度下热流越强。它是材料保温或散热性能的重要参数。一个方便的写法是 $k=-\\dot Q/(A\\,dT/dx)$，其中$k$ 是导热系数，$\\dot Q$ 是热流率，$A$ 是面积，$dT/dx$ 是温度梯度。\n\n金属通常导热系数大，泡沫和空气层小。导热系数会随温度、材料方向和微结构改变；复合材料中还要区分等效导热系数。导热系数高的材料适合散热片和锅底，低的材料适合保温层。若材料内部有孔隙或纤维方向，导热会呈现明显方向差异。导热系数需要温度梯度或辐射温差来维持，达到热平衡后净传热会消失。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "导热系数",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%BC%E7%83%AD%E7%B3%BB%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "导热系数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%BC%E7%83%AD%E7%B3%BB%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "thermal conductivity",
+          "url": "https://en.wikipedia.org/w/index.php?search=thermal%20conductivity"
+        }
       ]
     },
     {
@@ -1115,6 +2213,24 @@
         "pV=nRT ΔU=Q+W Q=cmΔT",
         "状态变化 p-V图",
         "blackbody"
+      ],
+      "explanation_markdown": "黑体是能完全吸收入射辐射的理想物体，同时在同温度下具有最大的热辐射能力。它是辐射理论的标准参照。定量上有 $\\varepsilon=1$，其中$\\varepsilon$ 是发射率，等于一表示理想黑体。\n\n现实物体只能近似黑体，例如小孔空腔和某些涂层。黑体不一定看起来黑，发光颜色取决于温度；黑体模型让辐射谱只由温度决定。黑体是理想吸收体，也是理想发射体，这来自热平衡下吸收率与发射率的关系。黑体模型让复杂表面性质先被抽象掉。估算黑体时，几何尺寸、表面积和边界条件会和材料性质同样重要。黑体解释保温、散热片和恒温实验的设计，实际计算常要考虑多种机制并存。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "黑体",
+          "url": "https://www.baidu.com/s?wd=%E9%BB%91%E4%BD%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "黑体",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%BB%91%E4%BD%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "blackbody",
+          "url": "https://en.wikipedia.org/w/index.php?search=blackbody"
+        }
       ]
     },
     {
@@ -1133,6 +2249,24 @@
         "pV=nRT ΔU=Q+W Q=cmΔT",
         "状态变化 p-V图",
         "blackbody radiation"
+      ],
+      "explanation_markdown": "黑体辐射是理想黑体在热平衡下发出的电磁辐射，谱分布只由温度决定。温度升高时，总辐射增强且峰值向短波移动。通常记作 $P/A=\\sigma T^4$，其中$P/A$ 是单位面积总辐射功率，$\\sigma$ 是斯特藩玻尔兹曼常数，$T$ 是温度。\n\n黑体辐射是量子论诞生的重要线索，因为经典理论无法解释完整谱形。恒星表面温度、炉膛辐射和红外测温都常以黑体或灰体近似为基础。黑体谱随温度连续变化，低温物体主要发红外，高温物体可发可见光。红外测温仪常假设目标接近灰体，因此发射率设置会影响读数。黑体辐射解释保温、散热片和恒温实验的设计，实际计算常要考虑多种机制并存。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "黑体辐射",
+          "url": "https://www.baidu.com/s?wd=%E9%BB%91%E4%BD%93%E8%BE%90%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "黑体辐射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%BB%91%E4%BD%93%E8%BE%90%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "blackbody radiation",
+          "url": "https://en.wikipedia.org/w/index.php?search=blackbody%20radiation"
+        }
       ]
     },
     {
@@ -1151,6 +2285,24 @@
         "花粉抖动 墨水扩散 Maxwell曲线",
         "显微颗粒 速率分布",
         "stefan boltzmann law"
+      ],
+      "explanation_markdown": "斯特藩玻尔兹曼定律给出黑体总辐射功率与绝对温度四次方的关系。它关注所有波长加总后的辐射强度。在这种约定下有 $P=\\sigma AT^4$，其中$P$ 是黑体辐射功率，$A$ 是表面积，$T$ 是绝对温度，$\\sigma$ 是常数。\n\n实际物体需乘以发射率，并考虑环境反辐射。由于四次方关系，温度小幅增加也会显著增强辐射散热；天体亮度估算和高温炉设计都常用它。定律给的是全波段总功率，不告诉哪种颜色最强。要确定峰值波长需用维恩位移定律；两者合用可估计恒星半径和温度。斯特藩玻尔兹曼定律需要温度梯度或辐射温差来维持，达到热平衡后净传热会消失。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "斯特藩玻尔兹曼定律",
+          "url": "https://www.baidu.com/s?wd=%E6%96%AF%E7%89%B9%E8%97%A9%E7%8E%BB%E5%B0%94%E5%85%B9%E6%9B%BC%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "斯特藩玻尔兹曼定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%96%AF%E7%89%B9%E8%97%A9%E7%8E%BB%E5%B0%94%E5%85%B9%E6%9B%BC%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stefan boltzmann law",
+          "url": "https://en.wikipedia.org/w/index.php?search=stefan%20boltzmann%20law"
+        }
       ]
     },
     {
@@ -1169,6 +2321,24 @@
         "pV=nRT ΔU=Q+W Q=cmΔT",
         "状态变化 p-V图",
         "wiens displacement law"
+      ],
+      "explanation_markdown": "维恩位移定律说明黑体辐射谱峰值波长与温度成反比。物体越热，最强辐射越偏向短波。可写成 $\\lambda_{\\max}T=b$，其中$\\lambda_{\\max}$ 是谱峰波长，$T$ 是绝对温度，$b$ 是维恩常数。\n\n它解释了热铁由暗红到白亮的颜色变化，也可用恒星颜色估计表面温度。该定律只给峰值位置，不给总辐射功率；总功率还要用斯特藩玻尔兹曼定律。维恩定律适合由颜色或光谱峰值估温，但真实物体若不是黑体，峰值会受发射率影响。它给出温度升高时光谱整体蓝移的定量图像。估算维恩位移定律时，几何尺寸、表面积和边界条件会和材料性质同样重要。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "维恩位移定律",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%B4%E6%81%A9%E4%BD%8D%E7%A7%BB%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "维恩位移定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%B4%E6%81%A9%E4%BD%8D%E7%A7%BB%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wiens displacement law",
+          "url": "https://en.wikipedia.org/w/index.php?search=wiens%20displacement%20law"
+        }
       ]
     },
     {
@@ -1187,6 +2357,24 @@
         "Q=cmΔT Q=mL",
         "平台段 水汽凝结",
         "phase transition"
+      ],
+      "explanation_markdown": "相变是物质在固、液、气等相之间转化，微观结构和分子间作用发生改变。相变时吸放热常不表现为温度变化。常见公式是 $Q=mL$，其中$Q$ 是相变热量，$m$ 是发生相变的质量，$L$ 是潜热。\n\n熔化、汽化、升华以及反向过程都属于相变。相变条件由温度和压强共同决定；在相变平台上继续输入能量，主要用于改变相态而不是提高温度。相变可是一阶的，伴随潜热；也可在临界点附近连续变化。基础热学主要处理熔化、汽化等常见一阶相变。相变连接热力学与材料性质，解释蒸发制冷、结霜和高压锅等现象。相变常伴随潜热和体积变化，温度平台并不表示能量交换停止。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相变",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E5%8F%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相变",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E5%8F%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "phase transition",
+          "url": "https://en.wikipedia.org/w/index.php?search=phase%20transition"
+        }
       ]
     },
     {
@@ -1205,6 +2393,24 @@
         "p-V图面积 pV^γ",
         "路径曲线 循环面积",
         "state of matter"
+      ],
+      "explanation_markdown": "物态是物质在给定温度和压强下呈现的宏观存在形式，如固态、液态和气态。不同物态对应不同分子排列和运动自由度。数学表达为 $F(p,T)=0$，其中$F$ 表示相边界条件，$p$ 是压强，$T$ 是温度。\n\n相图用区域和边界展示物态稳定范围。物态不是只由温度决定，压强改变可使沸点和熔点变化；临界点附近，液态和气态的区别会逐渐消失。物态由分子排列、运动方式和相互作用共同决定。等离子体、超临界流体等也可视为更广义状态，但简单热学通常聚焦固液气。物态常伴随潜热和体积变化，温度平台并不表示能量交换停止。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "物态",
+          "url": "https://www.baidu.com/s?wd=%E7%89%A9%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "物态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%A9%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "state of matter",
+          "url": "https://en.wikipedia.org/w/index.php?search=state%20of%20matter"
+        }
       ]
     },
     {
@@ -1223,6 +2429,24 @@
         "pV=nRT ΔU=Q+W Q=cmΔT",
         "状态变化 p-V图",
         "solid"
+      ],
+      "explanation_markdown": "固体具有较固定的形状和体积，粒子在相对固定的位置附近振动。它能承受静态剪切，这是区别于流体的重要特征。对应关系可写为 $\\Delta L=\\alpha L_0\\Delta T$，其中$\\Delta L$ 是长度变化，$\\alpha$ 是线膨胀系数，$L_0$ 是原长，$\\Delta T$ 是温度变化。\n\n固体的热性质包括热膨胀、热传导和比热。晶体各向异性会让不同方向性质不同；加热到熔点后，固体结构被破坏并转入液态。固体可以是晶体，也可以是非晶体。晶体有长程有序结构，熔点清晰；玻璃等非晶体在加热时逐渐软化，热学行为更宽泛。讨论固体时必须说明压强；同一种物质在不同压强下的相界位置会移动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "固体",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%BA%E4%BD%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "固体",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%BA%E4%BD%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "solid",
+          "url": "https://en.wikipedia.org/w/index.php?search=solid"
+        }
       ]
     },
     {
@@ -1241,6 +2465,24 @@
         "pV=nRT ΔU=Q+W Q=cmΔT",
         "状态变化 p-V图",
         "liquid"
+      ],
+      "explanation_markdown": "液体有近似固定体积但没有固定形状，能流动并适应容器。分子间距较小，因而通常比气体难压缩。一个方便的写法是 $\\Delta V=\\beta V_0\\Delta T$，其中$\\Delta V$ 是体积变化，$\\beta$ 是体膨胀系数，$V_0$ 是初体积。\n\n液体表面还会出现表面张力、毛细现象和浸润现象。温度变化会影响黏度、密度和饱和蒸气压；水在四摄氏度附近的反常膨胀是重要例外。液体内部可流动，但仍有明显分子间吸引，因此有表面张力和黏度。它的自由表面会在重力和表面张力共同作用下形成形状。液体连接热力学与材料性质，解释蒸发制冷、结霜和高压锅等现象。液体常伴随潜热和体积变化，温度平台并不表示能量交换停止。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "液体",
+          "url": "https://www.baidu.com/s?wd=%E6%B6%B2%E4%BD%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "液体",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B6%B2%E4%BD%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "liquid",
+          "url": "https://en.wikipedia.org/w/index.php?search=liquid"
+        }
       ]
     },
     {
@@ -1259,6 +2501,24 @@
         "pV=nRT pV=NkT",
         "状态变化",
         "gaseous state"
+      ],
+      "explanation_markdown": "气态物质的分子相距较远，能自由充满容器并容易被压缩。气体没有固定体积，压强与分子撞击容器壁有关。定量上有 $pV=nRT$，其中$p,V,n,T$ 分别是压强、体积、物质的量和温度。\n\n气态是物态之一，不等同于理想气体模型；理想气体只是许多气体在稀薄条件下的近似。接近饱和或临界区域时，气体会显著偏离简单状态方程。气态分子的平均距离较大，热运动主导扩散和混合。气体可被压缩储能，也可膨胀做功，是热机和制冷循环常用工作物质。气态常伴随潜热和体积变化，温度平台并不表示能量交换停止。讨论气态时必须说明压强；同一种物质在不同压强下的相界位置会移动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "气态",
+          "url": "https://www.baidu.com/s?wd=%E6%B0%94%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "气态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B0%94%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gaseous state",
+          "url": "https://en.wikipedia.org/w/index.php?search=gaseous%20state"
+        }
       ]
     },
     {
@@ -1277,6 +2537,24 @@
         "Q=mL",
         "冰水共存 曲线",
         "melting"
+      ],
+      "explanation_markdown": "熔化是固体转变为液体的过程，晶格或有序结构被破坏，物质获得更多流动自由度。熔化通常需要吸热。通常记作 $Q=mL_f$，其中$Q$ 是熔化吸收的热量，$m$ 是质量，$L_f$ 是熔化热。\n\n在固定压强下，纯物质熔化时温度常保持在熔点，吸收的能量用于改变微观结构。杂质、压强和晶体结构会影响熔点；玻璃等非晶体软化过程不一定有清晰熔点。熔化过程中固液两相可共存，直到固体全部消失。加盐降低冰的熔点，是道路融雪和冰盐浴降温的常见应用。讨论熔化时必须说明压强；同一种物质在不同压强下的相界位置会移动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "熔化",
+          "url": "https://www.baidu.com/s?wd=%E7%86%94%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "熔化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%86%94%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "melting",
+          "url": "https://en.wikipedia.org/w/index.php?search=melting"
+        }
       ]
     },
     {
@@ -1295,6 +2573,24 @@
         "相图 边界线 三相点",
         "结霜 凝结 干冰",
         "solidification"
+      ],
+      "explanation_markdown": "凝固是液体转变为固体的过程，分子或原子从流动状态进入更有序的结构。它通常向外释放潜热。在这种约定下有 $Q=-mL_f$，其中$Q$ 按系统吸热为正，$m$ 是质量，$L_f$ 是熔化热。\n\n负号表示系统放热。凝固点与熔点在平衡条件下相同，但过冷液体可在低于凝固点时暂时保持液态；结晶过程还会受杂质和成核条件影响。凝固释放的潜热会减缓温度继续下降。湖水结冰时释放热量，使水体不会瞬间全部冻结；铸造中凝固潜热影响冷却速度和晶粒结构。凝固连接热力学与材料性质，解释蒸发制冷、结霜和高压锅等现象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "凝固",
+          "url": "https://www.baidu.com/s?wd=%E5%87%9D%E5%9B%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "凝固",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%9D%E5%9B%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "solidification",
+          "url": "https://en.wikipedia.org/w/index.php?search=solidification"
+        }
       ]
     },
     {
@@ -1313,6 +2609,24 @@
         "Q=mL",
         "蒸发 气泡",
         "vaporization"
+      ],
+      "explanation_markdown": "汽化是液体转变为气体的过程，包括表面蒸发和液体内部形成气泡的沸腾。它需要克服分子间吸引而吸热。可写成 $Q=mL_v$，其中$Q$ 是汽化吸热，$m$ 是质量，$L_v$ 是汽化热。\n\n沸点随外界压强改变，蒸发则可在低于沸点时发生。汽化吸热使汗液蒸发能降温；在密闭容器中，汽化与液化最终可达到动态平衡。汽化分为蒸发和沸腾：蒸发只在表面发生，沸腾在液体内部形成气泡。压强越低，沸腾越容易发生，沸点也越低。汽化常伴随潜热和体积变化，温度平台并不表示能量交换停止。讨论汽化时必须说明压强；同一种物质在不同压强下的相界位置会移动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "汽化",
+          "url": "https://www.baidu.com/s?wd=%E6%B1%BD%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "汽化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B1%BD%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vaporization",
+          "url": "https://en.wikipedia.org/w/index.php?search=vaporization"
+        }
       ]
     },
     {
@@ -1331,6 +2645,24 @@
         "相图 边界线 三相点",
         "结霜 凝结 干冰",
         "liquefaction"
+      ],
+      "explanation_markdown": "液化是气体转变为液体的过程，分子间距离减小，相互吸引使系统释放潜热。冷凝水珠就是水蒸气液化。常见公式是 $Q=-mL_v$，其中$Q$ 按系统吸热为正，$m$ 是质量，$L_v$ 是汽化热。\n\n气体能否液化取决于温度和压强；高于临界温度时，仅靠加压不能变成液体。冰箱和空调利用制冷剂的汽化吸热、液化放热循环工作。液化放热常被用作热泵和空调的高温端放热过程。云滴形成、镜面起雾和冷凝器工作，都可看作水蒸气或制冷剂液化。讨论液化时必须说明压强；同一种物质在不同压强下的相界位置会移动。液化连接热力学与材料性质，解释蒸发制冷、结霜和高压锅等现象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "液化",
+          "url": "https://www.baidu.com/s?wd=%E6%B6%B2%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "液化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B6%B2%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "liquefaction",
+          "url": "https://en.wikipedia.org/w/index.php?search=liquefaction"
+        }
       ]
     },
     {
@@ -1349,6 +2681,24 @@
         "相图 边界线 三相点",
         "结霜 凝结 干冰",
         "sublimation"
+      ],
+      "explanation_markdown": "升华是固体不经过液态而直接转变为气体的过程，常发生在较低压强或特定温度条件下。干冰变成二氧化碳气体就是典型例子。数学表达为 $Q=mL_s$，其中$Q$ 是升华吸热，$m$ 是质量，$L_s$ 是升华潜热。\n\n升华需要能量来打破固体结构并使粒子进入气态。冻干技术利用低压升华除去水分；相图上升华对应固气相边界，而不是普通熔化再汽化。升华能在低压下直接去除固体中的挥发成分。樟脑丸变小、冰冻衣物在寒冷干燥空气中变干，都是升华参与的日常例子。升华连接热力学与材料性质，解释蒸发制冷、结霜和高压锅等现象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "升华",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%87%E5%8D%8E%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "升华",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%87%E5%8D%8E"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "sublimation",
+          "url": "https://en.wikipedia.org/w/index.php?search=sublimation"
+        }
       ]
     },
     {
@@ -1367,6 +2717,24 @@
         "相图 边界线 三相点",
         "结霜 凝结 干冰",
         "deposition"
+      ],
+      "explanation_markdown": "凝华是气体直接转变为固体的过程，中间不经过液态。霜的形成常是水蒸气在冷表面上凝华。对应关系可写为 $Q=-mL_s$，其中$Q$ 按系统吸热为正，$m$ 是质量，$L_s$ 是升华潜热。\n\n凝华会释放潜热，因此会影响云冰晶生长和霜冻过程。它对应升华的逆过程，发生条件可由相图中的固气边界判断；表面成核条件也会影响是否容易形成固体。凝华需要气体分子在表面或尘埃上成核。冬天窗玻璃上的霜花形态，反映了水蒸气凝华时释放潜热并形成晶体结构。凝华常伴随潜热和体积变化，温度平台并不表示能量交换停止。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "凝华",
+          "url": "https://www.baidu.com/s?wd=%E5%87%9D%E5%8D%8E%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "凝华",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%9D%E5%8D%8E"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "deposition",
+          "url": "https://en.wikipedia.org/w/index.php?search=deposition"
+        }
       ]
     },
     {
@@ -1385,6 +2753,24 @@
         "Q=cmΔT Q=mL",
         "平台段 水汽凝结",
         "latent heat"
+      ],
+      "explanation_markdown": "潜热是单位质量物质在相变过程中吸收或释放的热量。相变时温度可保持不变，所以这部分能量隐藏在微观结构变化中。一个方便的写法是 $L=Q/m$，其中$L$ 是潜热，$Q$ 是相变热量，$m$ 是发生相变的质量。\n\n不同相变有不同潜热，如熔化热、汽化热和升华热。潜热解释了冰水混合物温度平台、蒸发冷却和蒸汽烫伤更严重等现象；它依赖物质种类和压强。潜热的单位常为焦每千克。它不表示隐藏的神秘热质，而是相变时微观结构能量改变；因此温度平台仍可伴随持续吸热。讨论潜热时必须说明压强；同一种物质在不同压强下的相界位置会移动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "潜热",
+          "url": "https://www.baidu.com/s?wd=%E6%BD%9C%E7%83%AD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "潜热",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%BD%9C%E7%83%AD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "latent heat",
+          "url": "https://en.wikipedia.org/w/index.php?search=latent%20heat"
+        }
       ]
     },
     {
@@ -1403,6 +2789,24 @@
         "Q=mL",
         "冰水共存 曲线",
         "heat of fusion"
+      ],
+      "explanation_markdown": "熔化热是单位质量固体在熔点变成液体时吸收的热量，反映破坏固态结构所需能量。定量上有 $L_f=Q/m$，其中$L_f$ 是熔化热，$Q$ 是熔化吸热，$m$ 是质量。\n\n同种物质的凝固会释放相同大小的热量。熔化热使冰在零摄氏度附近能吸收大量热而温度不升高，这对相变储能和冰水冷却都很重要。熔化热越大，材料在熔点附近吸热缓冲能力越强。相变储能材料正利用这一点，在温度几乎不变时吸收或释放大量热量。熔化热连接热力学与材料性质，解释蒸发制冷、结霜和高压锅等现象。熔化热常伴随潜热和体积变化，温度平台并不表示能量交换停止。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "熔化热",
+          "url": "https://www.baidu.com/s?wd=%E7%86%94%E5%8C%96%E7%83%AD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "熔化热",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%86%94%E5%8C%96%E7%83%AD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "heat of fusion",
+          "url": "https://en.wikipedia.org/w/index.php?search=heat%20of%20fusion"
+        }
       ]
     },
     {
@@ -1421,6 +2825,24 @@
         "Q=mL",
         "蒸发 气泡",
         "heat of vaporization"
+      ],
+      "explanation_markdown": "汽化热是单位质量液体转变为气体时吸收的热量，通常大于熔化热，因为分子要更彻底摆脱液体中的吸引。通常记作 $L_v=Q/m$，其中$L_v$ 是汽化热，$Q$ 是汽化吸热，$m$ 是质量。\n\n液化时会释放同样大小的潜热。水蒸气凝结放热很强，因此蒸汽烫伤危险；汽化热也解释了蒸发冷却和制冷剂循环中的吸热阶段。汽化热随温度升高通常减小，接近临界点时趋向消失。制冷剂需要合适汽化热，才能在循环中用较小质量流量搬运较多热量。汽化热常伴随潜热和体积变化，温度平台并不表示能量交换停止。讨论汽化热时必须说明压强；同一种物质在不同压强下的相界位置会移动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "汽化热",
+          "url": "https://www.baidu.com/s?wd=%E6%B1%BD%E5%8C%96%E7%83%AD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "汽化热",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B1%BD%E5%8C%96%E7%83%AD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "heat of vaporization",
+          "url": "https://en.wikipedia.org/w/index.php?search=heat%20of%20vaporization"
+        }
       ]
     },
     {
@@ -1439,6 +2861,24 @@
         "pV=nRT ΔU=Q+W Q=cmΔT",
         "状态变化 p-V图",
         "saturated vapor"
+      ],
+      "explanation_markdown": "饱和蒸气是与同种液体或固体处于动态平衡的蒸气，蒸发和凝结速率相等。此时蒸气不能再通过简单增加同温蒸气而保持不凝结。在这种约定下有 $p_v=p_{\\rm sat}(T)$，其中$p_v$ 是蒸气分压，$p_{\\rm sat}(T)$ 是温度 $T$ 下的饱和蒸气压。\n\n饱和并不意味着空间被全部填满，而是该温度下相平衡已达到。密闭容器中液体上方的蒸气常会逐渐达到饱和；温度升高时，饱和蒸气压通常迅速增大。饱和蒸气中仍有分子不断离开和回到液面，只是宏观蒸气压稳定。若把液体拿走，蒸气可变成未饱和状态继续膨胀。讨论饱和蒸气时必须说明压强；同一种物质在不同压强下的相界位置会移动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "饱和蒸气",
+          "url": "https://www.baidu.com/s?wd=%E9%A5%B1%E5%92%8C%E8%92%B8%E6%B0%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "饱和蒸气",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%A5%B1%E5%92%8C%E8%92%B8%E6%B0%94"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "saturated vapor",
+          "url": "https://en.wikipedia.org/w/index.php?search=saturated%20vapor"
+        }
       ]
     },
     {
@@ -1457,6 +2897,24 @@
         "pV=nRT pV=NkT",
         "状态变化",
         "saturated vapor pressure"
+      ],
+      "explanation_markdown": "饱和蒸气压是蒸气与其液体或固体平衡共存时的压强，只由温度和物质种类决定，与容器体积无直接关系。可写成 $p=p_{\\rm sat}(T)$，其中$p$ 是饱和蒸气压，$T$ 是温度。\n\n当实际蒸气压达到饱和值，继续冷却或压缩会引发凝结。沸腾发生在饱和蒸气压等于外界压强时，因此高山上水的沸点降低，高压锅中沸点升高。饱和蒸气压随温度变化很快，是天气中水汽凝结的重要原因。露点、湿度和沸腾都可用它统一理解。饱和蒸气压连接热力学与材料性质，解释蒸发制冷、结霜和高压锅等现象。饱和蒸气压常伴随潜热和体积变化，温度平台并不表示能量交换停止。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "饱和蒸气压",
+          "url": "https://www.baidu.com/s?wd=%E9%A5%B1%E5%92%8C%E8%92%B8%E6%B0%94%E5%8E%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "饱和蒸气压",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%A5%B1%E5%92%8C%E8%92%B8%E6%B0%94%E5%8E%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "saturated vapor pressure",
+          "url": "https://en.wikipedia.org/w/index.php?search=saturated%20vapor%20pressure"
+        }
       ]
     },
     {
@@ -1475,6 +2933,24 @@
         "T=t+273.15 第零定律",
         "温度计 K ℃",
         "critical temperature"
+      ],
+      "explanation_markdown": "临界温度是气体能够通过加压液化的最高温度。高于这个温度，液态和气态的清晰界面消失。常见公式是 $T=T_c$，其中$T_c$ 是临界温度。\n\n低于临界温度时，提高压强可使气体凝结为液体；高于它时只能得到超临界流体。二氧化碳超临界萃取和临界现象研究都依赖这一概念。临界温度以上的物质可具有类似气体的流动性和类似液体的溶解能力。超临界二氧化碳用于萃取咖啡因就是实际应用。临界温度常伴随潜热和体积变化，温度平台并不表示能量交换停止。讨论临界温度时必须说明压强；同一种物质在不同压强下的相界位置会移动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "临界温度",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%B4%E7%95%8C%E6%B8%A9%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "临界温度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%B4%E7%95%8C%E6%B8%A9%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "critical temperature",
+          "url": "https://en.wikipedia.org/w/index.php?search=critical%20temperature"
+        }
       ]
     },
     {
@@ -1493,6 +2969,24 @@
         "pV=nRT pV=NkT",
         "状态变化",
         "critical pressure"
+      ],
+      "explanation_markdown": "临界压强是物质处在临界温度时使气液相界消失所需的压强。它与临界温度一起确定临界点。数学表达为 $p=p_c$，其中$p_c$ 是临界压强。\n\n在临界点附近，液体和气体密度差趋于零，表面张力也消失。临界压强不是普通沸腾压强，而是相图中特定点的坐标，常用于判断超临界状态。临界压强和临界温度共同标记相图上的临界点。靠近临界点时，密度涨落明显，流体会出现乳光等临界现象。讨论临界压强时必须说明压强；同一种物质在不同压强下的相界位置会移动。临界压强连接热力学与材料性质，解释蒸发制冷、结霜和高压锅等现象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "临界压强",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%B4%E7%95%8C%E5%8E%8B%E5%BC%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "临界压强",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%B4%E7%95%8C%E5%8E%8B%E5%BC%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "critical pressure",
+          "url": "https://en.wikipedia.org/w/index.php?search=critical%20pressure"
+        }
       ]
     },
     {
@@ -1511,6 +3005,24 @@
         "Q=cmΔT Q=mL",
         "平台段 水汽凝结",
         "triple point"
+      ],
+      "explanation_markdown": "三相点是固、液、气三相在热平衡中同时共存的唯一温度和压强组合。它不是一段范围，而是相图上的特殊点。对应关系可写为 $p=p_{\\rm tr},\\quad T=T_{\\rm tr}$，其中$p_{\\rm tr},T_{\\rm tr}$ 是三相点压强和温度。\n\n水的三相点曾用于定义开尔文温标。只要温度或压强稍微偏离，三相共存就会被某一相或两相平衡取代；因此三相点是校准和相图讨论中的重要基准。三相点条件极其精确，适合做温度校准。普通冰水混合物通常在大气压下，不等同于严格三相点，只是接近某个相平衡条件。三相点连接热力学与材料性质，解释蒸发制冷、结霜和高压锅等现象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "三相点",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%89%E7%9B%B8%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "三相点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%89%E7%9B%B8%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "triple point",
+          "url": "https://en.wikipedia.org/w/index.php?search=triple%20point"
+        }
       ]
     },
     {
@@ -1529,6 +3041,24 @@
         "Q=cmΔT Q=mL",
         "平台段 水汽凝结",
         "humidity"
+      ],
+      "explanation_markdown": "湿度表示空气中水蒸气含量，直接影响蒸发、凝结和人体冷热感。它常要结合温度理解，因为空气容纳水蒸气的上限随温度改变。一个方便的写法是 $\\phi=p_v/p_{\\rm sat}(T)$，其中$\\phi$ 是相对湿度，$p_v$ 是实际水蒸气分压，$p_{\\rm sat}(T)$ 是同温饱和蒸气压。\n\n湿度大时，汗液蒸发变慢，降温效果减弱；冷却到饱和时会形成雾、露或霜。绝对水蒸气含量和相对湿度不同，比较时必须说明温度。湿度测量可用干湿球温度计、电容传感器或露点仪。生活中的闷热感不只来自高温，还来自高湿度抑制汗液蒸发。湿度常伴随潜热和体积变化，温度平台并不表示能量交换停止。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "湿度",
+          "url": "https://www.baidu.com/s?wd=%E6%B9%BF%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "湿度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B9%BF%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "humidity",
+          "url": "https://en.wikipedia.org/w/index.php?search=humidity"
+        }
       ]
     },
     {
@@ -1547,6 +3077,24 @@
         "Q=cmΔT Q=mL",
         "平台段 水汽凝结",
         "relative humidity"
+      ],
+      "explanation_markdown": "相对湿度给出实际水蒸气压占同温饱和蒸气压的比例，表示空气离凝结还有多近。它是一个百分比式的无量纲量。定量上有 $\\phi=p_v/p_{\\rm sat}(T)$，其中$\\phi$ 是相对湿度，$p_v$ 是水蒸气分压，$p_{\\rm sat}(T)$ 是饱和蒸气压。\n\n相同水汽含量在降温后相对湿度会上升，因为饱和蒸气压降低。相对湿度达到百分之百时，空气处于饱和状态；继续冷却通常会出现凝结。相对湿度随温度改变很灵敏，所以白天和夜晚可在水汽量近似不变时读数大幅变化。它适合判断凝结风险和人体舒适度。讨论相对湿度时必须说明压强；同一种物质在不同压强下的相界位置会移动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相对湿度",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E5%AF%B9%E6%B9%BF%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相对湿度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E5%AF%B9%E6%B9%BF%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "relative humidity",
+          "url": "https://en.wikipedia.org/w/index.php?search=relative%20humidity"
+        }
       ]
     },
     {
@@ -1565,6 +3113,24 @@
         "Q=cmΔT Q=mL",
         "平台段 水汽凝结",
         "dew point"
+      ],
+      "explanation_markdown": "露点是在水蒸气含量不变时，把空气冷却到刚好饱和的温度。低于露点，水蒸气会开始凝结成露、雾或霜。通常记作 $p_v=p_{\\rm sat}(T_d)$，其中$p_v$ 是实际水蒸气分压，$T_d$ 是露点温度。\n\n露点越高，说明空气中水汽越多。它比相对湿度更直接反映绝对潮湿程度；防结露设计、天气预报和干燥工艺都常用露点来判断是否会凝结。当物体表面温度低于空气露点，水汽就容易在表面凝结。空调出风口结露、眼镜进室内起雾，都能用露点解释。露点连接热力学与材料性质，解释蒸发制冷、结霜和高压锅等现象。露点常伴随潜热和体积变化，温度平台并不表示能量交换停止。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "露点",
+          "url": "https://www.baidu.com/s?wd=%E9%9C%B2%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "露点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9C%B2%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dew point",
+          "url": "https://en.wikipedia.org/w/index.php?search=dew%20point"
+        }
       ]
     },
     {
@@ -1583,6 +3149,24 @@
         "ΔL=αLΔT 表面张力",
         "液面弯曲 细管液柱",
         "thermal expansion"
+      ],
+      "explanation_markdown": "热膨胀是材料温度升高时尺寸通常增大的现象，微观上来自原子间势能曲线的非对称性。它会改变长度、面积或体积。在这种约定下有 $\\Delta L=\\alpha L_0\\Delta T$，其中$\\Delta L$ 是长度变化，$\\alpha$ 是线膨胀系数，$L_0$ 是原长，$\\Delta T$ 是温度变化。\n\n桥梁伸缩缝、铁路接缝和双金属片都利用或防范热膨胀。公式是小温差线性近似；各向异性材料中，不同方向的膨胀系数可能不同。热膨胀若被约束，会转化成热应力，甚至使结构翘曲或开裂。精密实验常选低膨胀材料，减少温度漂移带来的误差。热膨胀源自分子间相互作用的宏观表现，尺度越小，界面或黏性效应越显眼。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "热膨胀",
+          "url": "https://www.baidu.com/s?wd=%E7%83%AD%E8%86%A8%E8%83%80%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "热膨胀",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%83%AD%E8%86%A8%E8%83%80"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "thermal expansion",
+          "url": "https://en.wikipedia.org/w/index.php?search=thermal%20expansion"
+        }
       ]
     },
     {
@@ -1601,6 +3185,24 @@
         "ΔL=αLΔT 表面张力",
         "液面弯曲 细管液柱",
         "linear expansion"
+      ],
+      "explanation_markdown": "线膨胀专指物体某一长度随温度改变而变化，适用于细杆、导线或选定方向尺寸。它关注一维尺度。可写成 $\\Delta L=\\alpha L_0\\Delta T$，其中$L_0$ 是初始长度，$\\Delta L$ 是长度变化，$\\alpha$ 是线膨胀系数。\n\n线膨胀不是总体积变化，但各向同性固体小变形时体膨胀系数约为线膨胀系数的三倍。精密仪器和建筑结构常要补偿不同材料的线膨胀差异。线膨胀系数可通过测量长度随温度的斜率得到。双金属片利用两种材料线膨胀不同，受热后弯曲，可用于温控开关。使用线膨胀时要留意温度和材料表面状态，污染或粗糙度会改变实验读数。线膨胀常影响液滴、细管和薄膜行为，不能只用体积内的压强关系描述。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线膨胀",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E8%86%A8%E8%83%80%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线膨胀",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E8%86%A8%E8%83%80"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear expansion",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20expansion"
+        }
       ]
     },
     {
@@ -1619,6 +3221,24 @@
         "pV=nRT pV=NkT",
         "状态变化",
         "volume expansion"
+      ],
+      "explanation_markdown": "体膨胀描述物体总体积随温度改变而变化，液体和气体中尤其常用。温度升高通常使密度降低。常见公式是 $\\Delta V=\\beta V_0\\Delta T$，其中$\\Delta V$ 是体积变化，$\\beta$ 是体膨胀系数，$V_0$ 是初体积。\n\n液体温度计、油箱留空和热水循环都涉及体膨胀。理想气体体积还强烈受压强约束，因此讨论气体膨胀时常要同时使用状态方程。体膨胀会改变密度，从而引发自然对流。热水上升、冷水下沉的循环，正是温度改变体积和密度后在重力场中的结果。体膨胀常影响液滴、细管和薄膜行为，不能只用体积内的压强关系描述。体膨胀源自分子间相互作用的宏观表现，尺度越小，界面或黏性效应越显眼。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "体膨胀",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%93%E8%86%A8%E8%83%80%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "体膨胀",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%93%E8%86%A8%E8%83%80"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "volume expansion",
+          "url": "https://en.wikipedia.org/w/index.php?search=volume%20expansion"
+        }
       ]
     },
     {
@@ -1637,6 +3257,24 @@
         "ΔL=αLΔT 表面张力",
         "液面弯曲 细管液柱",
         "coefficient of expansion"
+      ],
+      "explanation_markdown": "膨胀系数衡量材料尺寸对温度变化的敏感程度，是热膨胀公式中的比例参数。它越大，同样温差产生的形变越明显。数学表达为 $\\alpha=\\frac1L\\left(\\frac{\\partial L}{\\partial T}\\right)$，其中$\\alpha$ 是线膨胀系数，$L$ 是长度，$T$ 是温度。\n\n膨胀系数会随温度、材料结构和方向改变，不是绝对常数。工程中常选择膨胀系数相近的材料组合，以减少温度变化导致的热应力和密封失效。膨胀系数也可定义为体膨胀系数或面积膨胀系数，需说明对象。对均匀各向同性固体，小变形下这些系数之间有简单近似关系。膨胀系数源自分子间相互作用的宏观表现，尺度越小，界面或黏性效应越显眼。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "膨胀系数",
+          "url": "https://www.baidu.com/s?wd=%E8%86%A8%E8%83%80%E7%B3%BB%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "膨胀系数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%86%A8%E8%83%80%E7%B3%BB%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "coefficient of expansion",
+          "url": "https://en.wikipedia.org/w/index.php?search=coefficient%20of%20expansion"
+        }
       ]
     },
     {
@@ -1655,6 +3293,24 @@
         "F=γl Δp=2γ/R",
         "肥皂膜 液柱",
         "surface tension"
+      ],
+      "explanation_markdown": "表面张力来自液体表面分子受力不对称，使液面倾向收缩到较小面积。小液滴近似球形正是这种趋势的表现。对应关系可写为 $F=\\gamma l$，其中$F$ 是沿液面边界的拉力，$\\gamma$ 是表面张力系数，$l$ 是边界长度。\n\n表面张力使肥皂膜、昆虫停在水面和毛细现象成为可能。它随温度、杂质和表面活性剂改变；在微小尺度上，表面效应常比重力更显著。表面张力也可看作增加单位表面积所需的能量。肥皂降低水的表面张力，使液膜更容易展开并形成稳定泡泡。使用表面张力时要留意温度和材料表面状态，污染或粗糙度会改变实验读数。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "表面张力",
+          "url": "https://www.baidu.com/s?wd=%E8%A1%A8%E9%9D%A2%E5%BC%A0%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "表面张力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A1%A8%E9%9D%A2%E5%BC%A0%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "surface tension",
+          "url": "https://en.wikipedia.org/w/index.php?search=surface%20tension"
+        }
       ]
     },
     {
@@ -1673,6 +3329,24 @@
         "ΔL=αLΔT 表面张力",
         "液面弯曲 细管液柱",
         "capillary phenomenon"
+      ],
+      "explanation_markdown": "毛细现象是细管或微小孔隙中液面因表面张力和浸润性质而上升或下降的现象。它体现界面力与重力的平衡。一个方便的写法是 $h=\\frac{2\\gamma\\cos\\theta}{\\rho gr}$，其中$h$ 是液柱高度，$\\gamma$ 是表面张力系数，$\\theta$ 是接触角，$r$ 是管半径。\n\n水在细玻璃管中上升，汞在玻璃管中下降，差别来自接触角。土壤吸水、纸巾吸液和植物导水都与毛细效应有关；管越细，高度越明显。毛细现象体现小尺度下表面力能胜过重力。半径越小，液柱升降越明显；因此多孔材料和细纤维能主动吸水。毛细现象常影响液滴、细管和薄膜行为，不能只用体积内的压强关系描述。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "毛细现象",
+          "url": "https://www.baidu.com/s?wd=%E6%AF%9B%E7%BB%86%E7%8E%B0%E8%B1%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "毛细现象",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AF%9B%E7%BB%86%E7%8E%B0%E8%B1%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "capillary phenomenon",
+          "url": "https://en.wikipedia.org/w/index.php?search=capillary%20phenomenon"
+        }
       ]
     },
     {
@@ -1691,6 +3365,24 @@
         "ΔL=αLΔT 表面张力",
         "液面弯曲 细管液柱",
         "wetting"
+      ],
+      "explanation_markdown": "浸润表示液体倾向铺展在固体表面上，液体与固体之间的吸引相对较强。水润湿干净玻璃就是常见例子。定量上有 $\\theta<90^\\circ$，其中$\\theta$ 是接触角，小于直角表示液滴较铺展。\n\n浸润会使毛细管中液面上升，并影响涂层、焊接、清洗和多孔介质渗透。接触角受固体表面能、液体种类、粗糙度和污染物影响。浸润强弱由液固、液气和固气界面能共同决定。改善涂料附着、焊料铺展和清洗效果，本质上都在调控浸润条件。浸润源自分子间相互作用的宏观表现，尺度越小，界面或黏性效应越显眼。使用浸润时要留意温度和材料表面状态，污染或粗糙度会改变实验读数。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "浸润",
+          "url": "https://www.baidu.com/s?wd=%E6%B5%B8%E6%B6%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "浸润",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B5%B8%E6%B6%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wetting",
+          "url": "https://en.wikipedia.org/w/index.php?search=wetting"
+        }
       ]
     },
     {
@@ -1709,6 +3401,24 @@
         "ΔL=αLΔT 表面张力",
         "液面弯曲 细管液柱",
         "non wetting"
+      ],
+      "explanation_markdown": "不浸润表示液体不愿铺展在固体表面上，更倾向收缩成液滴。汞在玻璃上呈凸液面就是典型图像。通常记作 $\\theta>90^\\circ$，其中$\\theta$ 是接触角，大于直角表示液体倾向收缩。\n\n不浸润会使毛细管中液面下降。防水涂层和荷叶效应都利用较大的接触角；但表面粗糙度和化学处理会显著改变浸润状态。不浸润表面常用于防水和减阻，但液滴是否滚落还取决于接触角滞后。粗糙结构可进一步放大疏水效果。使用不浸润时要留意温度和材料表面状态，污染或粗糙度会改变实验读数。不浸润常影响液滴、细管和薄膜行为，不能只用体积内的压强关系描述。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "不浸润",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%8D%E6%B5%B8%E6%B6%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "不浸润",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%8D%E6%B5%B8%E6%B6%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "non wetting",
+          "url": "https://en.wikipedia.org/w/index.php?search=non%20wetting"
+        }
       ]
     },
     {
@@ -1727,6 +3437,24 @@
         "ΔL=αLΔT 表面张力",
         "液面弯曲 细管液柱",
         "viscous phenomenon"
+      ],
+      "explanation_markdown": "黏滞现象是流体相邻层之间因相对运动而互相拖拽的表现，导致流动阻力和机械能耗散。厚重液体流得慢就是直观例子。在这种约定下有 $\\tau=\\eta\\,dv/dy$，其中$\\tau$ 是剪切应力，$\\eta$ 是黏度，$dv/dy$ 是速度梯度。\n\n黏滞会形成边界层，使管流出现压降，也让落入液体的小球达到终端速度。牛顿黏性定律只适合牛顿流体；血液和泥浆等常出现更复杂行为。黏滞现象使流体流动具有历史和耗散特征。高速或大尺度流动中，黏性还会影响湍流产生和能量级联，不只是简单阻力。黏滞现象常影响液滴、细管和薄膜行为，不能只用体积内的压强关系描述。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "黏滞现象",
+          "url": "https://www.baidu.com/s?wd=%E9%BB%8F%E6%BB%9E%E7%8E%B0%E8%B1%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "黏滞现象",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%BB%8F%E6%BB%9E%E7%8E%B0%E8%B1%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "viscous phenomenon",
+          "url": "https://en.wikipedia.org/w/index.php?search=viscous%20phenomenon"
+        }
       ]
     },
     {
@@ -1745,6 +3473,24 @@
         "ΔL=αLΔT 表面张力",
         "液面弯曲 细管液柱",
         "mean free path"
+      ],
+      "explanation_markdown": "平均自由程是气体分子连续两次碰撞之间平均飞行的距离，反映气体稀薄程度和碰撞频繁程度。可写成 $\\lambda=1/(\\sqrt2\\,n\\sigma)$，其中$\\lambda$ 是平均自由程，$n$ 是数密度，$\\sigma$ 是分子碰撞截面。\n\n密度越小或碰撞截面越小，平均自由程越长。真空技术、气体输运和稀薄高空大气都要考虑它；当系统尺度接近平均自由程时，连续介质模型会失效。平均自由程与容器尺度比较，可判断气体处于连续流、滑移流还是自由分子流。真空越高，分子越少碰撞，平均自由程越长。平均自由程把宏观热现象落到大量粒子的统计行为上，单个粒子的偶然运动不代表温度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平均自由程",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E5%9D%87%E8%87%AA%E7%94%B1%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平均自由程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E5%9D%87%E8%87%AA%E7%94%B1%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mean free path",
+          "url": "https://en.wikipedia.org/w/index.php?search=mean%20free%20path"
+        }
       ]
     },
     {
@@ -1763,6 +3509,24 @@
         "pV=nRT ΔU=Q+W Q=cmΔT",
         "状态变化 p-V图",
         "root mean square speed"
+      ],
+      "explanation_markdown": "方均根速率先对分子速率平方取平均再开方，强调与平均动能相关的速度尺度。它比普通平均速率略大。常见公式是 $v_{\\rm rms}=\\sqrt{3k_BT/m}$，其中$v_{\\rm rms}$ 是方均根速率，$k_B$ 是玻尔兹曼常数，$T$ 是温度，$m$ 是分子质量。\n\n因为动能含有 $v^2$，方均根速率常出现在能量和压强计算中。温度越高、分子越轻，它越大；氢气分子在同温下比氧气分子运动更快。方均根速率与压强公式中的速率平方平均直接相连。它不是最大速率，分布尾部仍有少数更快分子，这对蒸发和反应速率有影响。应用方均根速率时默认气体接近平衡且足够稀薄，强相互作用会破坏简单分布。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "方均根速率",
+          "url": "https://www.baidu.com/s?wd=%E6%96%B9%E5%9D%87%E6%A0%B9%E9%80%9F%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "方均根速率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%96%B9%E5%9D%87%E6%A0%B9%E9%80%9F%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "root mean square speed",
+          "url": "https://en.wikipedia.org/w/index.php?search=root%20mean%20square%20speed"
+        }
       ]
     },
     {
@@ -1781,6 +3545,24 @@
         "pV=nRT ΔU=Q+W Q=cmΔT",
         "状态变化 p-V图",
         "most probable speed"
+      ],
+      "explanation_markdown": "最概然速率是麦克斯韦速率分布曲线达到峰值处的速率，表示最常出现的速率范围。它不是所有分子的平均速度。数学表达为 $v_p=\\sqrt{2k_BT/m}$，其中$v_p$ 是最概然速率，$k_B$ 是玻尔兹曼常数，$T$ 是温度，$m$ 是分子质量。\n\n在同一分布中，最概然速率小于平均速率和方均根速率。它帮助读懂速率分布图：分子速率有宽分布，不会都等于某一个热速度。最概然速率对应分布峰值，但峰值附近的分子并不占全部。温度升高时峰值右移且曲线变宽，说明高速分子比例增加。最概然速率能把温度同分子运动尺度相连，但给出的是分布特征而非每个粒子速度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最概然速率",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E6%A6%82%E7%84%B6%E9%80%9F%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最概然速率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E6%A6%82%E7%84%B6%E9%80%9F%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "most probable speed",
+          "url": "https://en.wikipedia.org/w/index.php?search=most%20probable%20speed"
+        }
       ]
     },
     {
@@ -1799,6 +3581,24 @@
         "pV=nRT ΔU=Q+W Q=cmΔT",
         "状态变化 p-V图",
         "average speed"
+      ],
+      "explanation_markdown": "热学中的平均速率是大量气体分子速率的算术平均，描述典型分子跑得多快。它只平均大小，不抵消方向。对应关系可写为 $\\bar v=\\sqrt{8k_BT/(\\pi m)}$，其中$\\bar v$ 是平均速率，$k_B$ 是玻尔兹曼常数，$T$ 是温度，$m$ 是分子质量。\n\n气体整体静止时，分子平均速度矢量可为零，但平均速率仍很大。它用于估算碰撞频率、扩散强弱和分子热运动尺度；适用前提是经典理想气体平衡分布。平均速率位于最概然速率和方均根速率之间。它常用于估算分子在单位时间内行进距离，再结合平均自由程估算碰撞频率。平均速率来自大量分子的统计分布，单个分子的速度会不断因碰撞而改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平均速率",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E5%9D%87%E9%80%9F%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平均速率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E5%9D%87%E9%80%9F%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "average speed",
+          "url": "https://en.wikipedia.org/w/index.php?search=average%20speed"
+        }
       ]
     },
     {
@@ -1817,6 +3617,24 @@
         "pV=nRT ΔU=Q+W Q=cmΔT",
         "状态变化 p-V图",
         "equipartition theorem"
+      ],
+      "explanation_markdown": "能均分定理指出，在经典热平衡中，每个以二次型进入能量的自由度平均获得相同热能。它把温度与微观运动能量联系起来。一个方便的写法是 $\\langle E\\rangle=\\frac f2k_BT$，其中$\\langle E\\rangle$ 是每个分子的平均能量，$f$ 是二次型自由度数，$T$ 是温度。\n\n它解释了理想气体热容与自由度数的关系。低温下量子能级间隔不可忽略，某些转动或振动自由度会被冻结，能均分定理就不再给出正确热容。能均分定理的适用条件是经典、平衡和二次型能量。它解释常温气体热容的许多规律，也指出偏离规律时往往有量子自由度冻结。应用能均分定理时默认气体接近平衡且足够稀薄，强相互作用会破坏简单分布。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "能均分定理",
+          "url": "https://www.baidu.com/s?wd=%E8%83%BD%E5%9D%87%E5%88%86%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "能均分定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%83%BD%E5%9D%87%E5%88%86%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "equipartition theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=equipartition%20theorem"
+        }
       ]
     },
     {
@@ -1835,6 +3653,24 @@
         "花粉抖动 墨水扩散 Maxwell曲线",
         "显微颗粒 速率分布",
         "degree of freedom"
+      ],
+      "explanation_markdown": "自由度是描述系统独立运动方式所需的变量数。分子平动、转动和振动自由度都可能储存热能。定量上有 $U=\\frac f2nRT$，其中$U$ 是理想气体内能，$f$ 是每个分子的有效自由度数，$n$ 是物质的量。\n\n单原子分子常有三个平动自由度，双原子分子在常温还会有转动自由度。自由度是否有效取决于温度和量子能级；不是所有几何自由度都一定参与热容。自由度决定能量如何在分子运动方式之间分配。温度升高后振动自由度逐渐参与，热容会增加；这说明自由度有有效与冻结之分。自由度能把温度同分子运动尺度相连，但给出的是分布特征而非每个粒子速度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自由度",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E7%94%B1%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自由度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E7%94%B1%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "degree of freedom",
+          "url": "https://en.wikipedia.org/w/index.php?search=degree%20of%20freedom"
+        }
       ]
     },
     {
@@ -1853,6 +3689,24 @@
         "花粉抖动 墨水扩散 Maxwell曲线",
         "显微颗粒 速率分布",
         "maxwell speed distribution"
+      ],
+      "explanation_markdown": "麦克斯韦速率分布律给出平衡理想气体中分子速率的概率分布。它说明同一温度下，分子速率有快有慢而非整齐相同。通常记作 $f(v)=4\\pi\\left(\\frac{m}{2\\pi k_BT}\\right)^{3/2}v^2e^{-mv^2/(2k_BT)}$，其中$f(v)$ 是速率概率密度，$m$ 是分子质量，$T$ 是温度。\n\n分布峰值对应最概然速率，平方加权给出方均根速率。温度升高时曲线展宽并向高速移动；低温量子气体或强相互作用气体不再严格服从该分布。分布函数乘以小速率区间，才给分子速率落在该区间的概率。曲线下面积为一，这是概率密度而不是分子数本身。麦克斯韦速率分布律来自大量分子的统计分布，单个分子的速度会不断因碰撞而改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "麦克斯韦速率分布律",
+          "url": "https://www.baidu.com/s?wd=%E9%BA%A6%E5%85%8B%E6%96%AF%E9%9F%A6%E9%80%9F%E7%8E%87%E5%88%86%E5%B8%83%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "麦克斯韦速率分布律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%BA%A6%E5%85%8B%E6%96%AF%E9%9F%A6%E9%80%9F%E7%8E%87%E5%88%86%E5%B8%83%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "maxwell speed distribution",
+          "url": "https://en.wikipedia.org/w/index.php?search=maxwell%20speed%20distribution"
+        }
       ]
     },
     {
@@ -1871,6 +3725,24 @@
         "p-V图面积 pV^γ",
         "路径曲线 循环面积",
         "thermodynamic system"
+      ],
+      "explanation_markdown": "热力学系统是人为划定的研究对象，边界内的物质或区域接受状态参量描述。边界外的一切称为环境。在这种约定下有 $\\Delta U=Q+W$，其中$\\Delta U$ 是系统内能变化，$Q$ 和 $W$ 是穿过边界的热量和功。\n\n系统边界可以是真实容器壁，也可以是假想控制面。热力学分析首先要说明系统如何与环境交换能量和物质；不同划分会改变热量、功和物质流项。选系统时，边界内外要分清。把气体取作系统和把整个气缸取作系统，功、热和内能的分配方式会不同。讨论热力学系统时要说明是否允许物质交换；这会改变第一定律中应保留的项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "热力学系统",
+          "url": "https://www.baidu.com/s?wd=%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "热力学系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%B3%BB%E7%BB%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "thermodynamic system",
+          "url": "https://en.wikipedia.org/w/index.php?search=thermodynamic%20system"
+        }
       ]
     },
     {
@@ -1889,6 +3761,24 @@
         "p-V图面积 pV^γ",
         "路径曲线 循环面积",
         "isolated system"
+      ],
+      "explanation_markdown": "孤立系统与外界既不交换物质，也不交换能量，是热力学中讨论总能量守恒和熵增的理想对象。可写成 $Q=0,\\quad W=0,\\quad \\Delta N=0$，其中$Q$ 是热量，$W$ 是功，$\\Delta N$ 是粒子数变化。\n\n真正完全孤立很难实现，但宇宙整体常被近似看作孤立系统。孤立系统内部仍可发生热传导、扩散或化学反应，只是所有变化都发生在边界内部。孤立系统总能量固定，最终常向热平衡演化。它是熵增原理最直接的舞台，但真实实验只能通过绝热壁、刚性壁等近似实现。孤立系统常用于把复杂环境简化成可控对象，使热量、功和状态参量有明确归属。孤立系统的边界决定能量、物质和熵怎样计账，同一装置可按不同目的划分系统。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "孤立系统",
+          "url": "https://www.baidu.com/s?wd=%E5%AD%A4%E7%AB%8B%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "孤立系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AD%A4%E7%AB%8B%E7%B3%BB%E7%BB%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "isolated system",
+          "url": "https://en.wikipedia.org/w/index.php?search=isolated%20system"
+        }
       ]
     },
     {
@@ -1907,6 +3797,24 @@
         "p-V图面积 pV^γ",
         "路径曲线 循环面积",
         "closed system"
+      ],
+      "explanation_markdown": "封闭系统不与外界交换物质，但可以通过边界交换热量和功。密闭活塞气缸中的气体常作为封闭系统。常见公式是 $\\Delta N=0$，其中$\\Delta N$ 是系统粒子数变化，零值表示无物质穿过边界。\n\n封闭并不等于绝热，也不等于刚性；边界可以移动、导热或受力。第一定律用于封闭系统时，通常只需考虑热量和功，而不用加入物质流携带的能量。封闭系统的质量固定，因此适合用定量气体状态方程。活塞可移动时体积和功会改变；容器导热时热量仍可穿过边界。封闭系统的边界决定能量、物质和熵怎样计账，同一装置可按不同目的划分系统。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "封闭系统",
+          "url": "https://www.baidu.com/s?wd=%E5%B0%81%E9%97%AD%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "封闭系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B0%81%E9%97%AD%E7%B3%BB%E7%BB%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "closed system",
+          "url": "https://en.wikipedia.org/w/index.php?search=closed%20system"
+        }
       ]
     },
     {
@@ -1925,6 +3833,24 @@
         "p-V图面积 pV^γ",
         "路径曲线 循环面积",
         "open system"
+      ],
+      "explanation_markdown": "开放系统允许物质穿过边界，同时也可交换热量和功。涡轮、喷管、人体和流动管道都更适合用开放系统分析。数学表达为 $\\Delta N\\ne0$，其中$\\Delta N$ 是系统粒子数变化，非零表示有物质流入或流出。\n\n物质流会携带内能、流动功、动能和势能，所以开放系统能量方程比封闭系统更丰富。工程热力学常用控制体方法处理这类问题。开放系统常用稳态流动近似：边界内状态不随时间变，但物质持续进出。喷管、压缩机和换热器都要这样列能量方程。讨论开放系统时要说明是否允许物质交换；这会改变第一定律中应保留的项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "开放系统",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%80%E6%94%BE%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "开放系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%80%E6%94%BE%E7%B3%BB%E7%BB%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "open system",
+          "url": "https://en.wikipedia.org/w/index.php?search=open%20system"
+        }
       ]
     },
     {
@@ -1943,6 +3869,24 @@
         "pV=nRT ΔU=Q+W Q=cmΔT",
         "状态变化 p-V图",
         "heat reservoir"
+      ],
+      "explanation_markdown": "热库是热容量足够大的理想环境，吸收或放出有限热量时温度几乎不变。它为等温过程和热机循环提供恒温边界。对应关系可写为 $\\Delta T=Q/C\\approx0$，其中$\\Delta T$ 是热库温度变化，$Q$ 是交换热量，$C$ 是热库热容。\n\n海洋、大气或大型恒温装置都可近似热库。热库不是一定无限大，而是相对被研究系统足够大；热机至少需要高温和低温两个热库才能持续输出功。热库温度近似不变，但它仍会失去或获得能量。若热库不够大，交换热量后温度改变，就不能再把过程看成严格等温。热库常用于把复杂环境简化成可控对象，使热量、功和状态参量有明确归属。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "热库",
+          "url": "https://www.baidu.com/s?wd=%E7%83%AD%E5%BA%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "热库",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%83%AD%E5%BA%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "heat reservoir",
+          "url": "https://en.wikipedia.org/w/index.php?search=heat%20reservoir"
+        }
       ]
     }
   ]

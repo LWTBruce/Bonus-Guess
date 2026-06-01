@@ -1,0 +1,2693 @@
+{
+  "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+  "entries": [
+    {
+      "chinese_name": "共形场论",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "共形场论是在量子场论固定点上具有局域尺度不变并通常扩展为共形不变的理论。相关函数受 $x\\to\\lambda x$ 和特殊共形变换强约束，例如标量一次算符满足 $\\langle O(x)O(0)\\rangle=C/|x|^{2\\Delta}$，其中 $\\Delta$ 是标度维数。它描述临界现象、弦世界面和全息边界，是把对称性转化为动力学约束的核心框架。\n\n这些概念在实际使用时通常不是孤立定义，而是与算符谱、OPE 系数和 Ward 恒等式一起构成 CFT 数据。给定这些数据后，相关函数的局域展开、不同通道的一致性以及临界指数才有统一含义，也能避免把单纯尺度不变误当作完整共形不变。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "共形场论",
+          "url": "https://www.baidu.com/s?wd=%E5%85%B1%E5%BD%A2%E5%9C%BA%E8%AE%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "共形场论",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%B1%E5%BD%A2%E5%9C%BA%E8%AE%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "conformal field theory",
+          "url": "https://en.wikipedia.org/w/index.php?search=conformal%20field%20theory"
+        }
+      ]
+    },
+    {
+      "chinese_name": "共形变换",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "共形变换保持角度而允许局域尺度因子变化，度量按 $g_{\\mu\\nu}(x)\\to\\Omega(x)^2g_{\\mu\\nu}(x)$ 变换，其中 $\\Omega$ 是正函数。它不保持一般长度，却保持光锥结构和无质量理论的局域因果关系。在平直空间中，平移、旋转、尺度变换和特殊共形变换共同生成共形群。\n\n这些概念在实际使用时通常不是孤立定义，而是与算符谱、OPE 系数和 Ward 恒等式一起构成 CFT 数据。给定这些数据后，相关函数的局域展开、不同通道的一致性以及临界指数才有统一含义，也能避免把单纯尺度不变误当作完整共形不变。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "共形变换",
+          "url": "https://www.baidu.com/s?wd=%E5%85%B1%E5%BD%A2%E5%8F%98%E6%8D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "共形变换",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%B1%E5%BD%A2%E5%8F%98%E6%8D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "conformal transformation",
+          "url": "https://en.wikipedia.org/w/index.php?search=conformal%20transformation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "共形群",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "共形群是保持平直时空角结构的变换群，欧氏 $d$ 维情形局域同构于 $SO(d+1,1)$，洛伦兹情形为 $SO(d,2)$。其生成元包括 $P_\\mu,M_{\\mu\\nu},D,K_\\mu$，分别对应平移、旋转、尺度和特殊共形变换。代数闭合后强烈限制局域算符表示、两点三点函数形式和 OPE 系数。\n\n这些概念在实际使用时通常不是孤立定义，而是与算符谱、OPE 系数和 Ward 恒等式一起构成 CFT 数据。给定这些数据后，相关函数的局域展开、不同通道的一致性以及临界指数才有统一含义，也能避免把单纯尺度不变误当作完整共形不变。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "共形群",
+          "url": "https://www.baidu.com/s?wd=%E5%85%B1%E5%BD%A2%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "共形群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%B1%E5%BD%A2%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "conformal group",
+          "url": "https://en.wikipedia.org/w/index.php?search=conformal%20group"
+        }
+      ]
+    },
+    {
+      "chinese_name": "一次场",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "一次场是在原点被特殊共形生成元湮灭的局域算符，满足 $[K_\\mu,O(0)]=0$，其中 $K_\\mu$ 是特殊共形生成元。它由标度维数和旋转表示标记，后代场通过平移生成元 $P_\\mu$ 作用得到。CFT 的谱可按一次场及其后代分解，因此一次场相当于共形表示的最高权对象。\n\n这些概念在实际使用时通常不是孤立定义，而是与算符谱、OPE 系数和 Ward 恒等式一起构成 CFT 数据。给定这些数据后，相关函数的局域展开、不同通道的一致性以及临界指数才有统一含义，也能避免把单纯尺度不变误当作完整共形不变。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "一次场",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%80%E6%AC%A1%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "一次场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%80%E6%AC%A1%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "primary field",
+          "url": "https://en.wikipedia.org/w/index.php?search=primary%20field"
+        }
+      ]
+    },
+    {
+      "chinese_name": "准一次场",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "准一次场在二维 CFT 中通常只要求在全局共形子群下像一次场那样变换，而不一定在完整维拉索罗代数下为一次场。若 $L_1|O\\rangle=0$ 但高阶 $L_n$ 条件不全满足，它就是典型准一次态；这里 $L_n$ 是维拉索罗生成元。\n\n它在应力张量复合算符和有限中心荷谱分解中常出现。这些概念在实际使用时通常不是孤立定义，而是与算符谱、OPE 系数和 Ward 恒等式一起构成 CFT 数据。给定这些数据后，相关函数的局域展开、不同通道的一致性以及临界指数才有统一含义，也能避免把单纯尺度不变误当作完整共形不变。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "准一次场",
+          "url": "https://www.baidu.com/s?wd=%E5%87%86%E4%B8%80%E6%AC%A1%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "准一次场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%86%E4%B8%80%E6%AC%A1%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quasi primary field",
+          "url": "https://en.wikipedia.org/w/index.php?search=quasi%20primary%20field"
+        }
+      ]
+    },
+    {
+      "chinese_name": "标度维数",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "标度维数描述局域算符在尺度变换下的权重。若 $x\\to\\lambda x$，一次标量算符变换为 $O(x)\\to\\lambda^{-\\Delta}O(\\lambda x)$，其中 $\\Delta$ 是标度维数。量子修正会使经典维数获得反常维数，二者之和才进入相关函数幂律。标度维数也是径向量子化中态的能量，并受幺正界约束。\n\n这些概念在实际使用时通常不是孤立定义，而是与算符谱、OPE 系数和 Ward 恒等式一起构成 CFT 数据。给定这些数据后，相关函数的局域展开、不同通道的一致性以及临界指数才有统一含义，也能避免把单纯尺度不变误当作完整共形不变。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "标度维数",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%87%E5%BA%A6%E7%BB%B4%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "标度维数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%87%E5%BA%A6%E7%BB%B4%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "scaling dimension",
+          "url": "https://en.wikipedia.org/w/index.php?search=scaling%20dimension"
+        }
+      ]
+    },
+    {
+      "chinese_name": "自旋量子数",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "自旋量子数标记局域算符在旋转群或洛伦兹群表示下的张量结构。二维 CFT 中常用 $s=h-\\bar h$，其中 $h$ 和 $\\bar h$ 是左右共形权；总标度维数为 $\\Delta=h+\\bar h$。自旋决定相关函数中的角依赖和 OPE 中允许的张量结构，也是区分标量、矢量、应力张量等算符的基本量子数。\n\n这些概念在实际使用时通常不是孤立定义，而是与算符谱、OPE 系数和 Ward 恒等式一起构成 CFT 数据。给定这些数据后，相关函数的局域展开、不同通道的一致性以及临界指数才有统一含义，也能避免把单纯尺度不变误当作完整共形不变。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自旋量子数",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E6%97%8B%E9%87%8F%E5%AD%90%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自旋量子数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E6%97%8B%E9%87%8F%E5%AD%90%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "spin quantum number",
+          "url": "https://en.wikipedia.org/w/index.php?search=spin%20quantum%20number"
+        }
+      ]
+    },
+    {
+      "chinese_name": "中心荷",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "中心荷是二维共形代数的中心扩张系数，衡量应力张量量子反常和自由度规模。维拉索罗代数含 $[L_m,L_n]=(m-n)L_{m+n}+c(m^3-m)\\delta_{m+n,0}/12$，其中 $c$ 是中心荷。它进入应力张量两点函数、环面配分函数和 Cardy 熵公式；在幺正重整化群流中，中心荷的单调性体现自由度减少。\n\n这些概念在实际使用时通常不是孤立定义，而是与算符谱、OPE 系数和 Ward 恒等式一起构成 CFT 数据。给定这些数据后，相关函数的局域展开、不同通道的一致性以及临界指数才有统一含义，也能避免把单纯尺度不变误当作完整共形不变。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "中心荷",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%AD%E5%BF%83%E8%8D%B7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "中心荷",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%AD%E5%BF%83%E8%8D%B7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "central charge",
+          "url": "https://en.wikipedia.org/w/index.php?search=central%20charge"
+        }
+      ]
+    },
+    {
+      "chinese_name": "OPE展开",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "OPE展开把两个相近局域算符的乘积表示为局域算符和坐标奇异系数之和。典型形式为 $O_i(x)O_j(0)\\sim\\sum_k C_{ijk}|x|^{\\Delta_k-\\Delta_i-\\Delta_j}O_k(0)$，其中 $C_{ijk}$ 是 OPE 系数。它不是普通泰勒展开，而是算符代数的短距离定义；结合共形对称后，相关函数可由谱和 OPE 数据重构。\n\n这些概念在实际使用时通常不是孤立定义，而是与算符谱、OPE 系数和 Ward 恒等式一起构成 CFT 数据。给定这些数据后，相关函数的局域展开、不同通道的一致性以及临界指数才有统一含义，也能避免把单纯尺度不变误当作完整共形不变。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "OPE展开",
+          "url": "https://www.baidu.com/s?wd=OPE%E5%B1%95%E5%BC%80%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "OPE展开",
+          "url": "https://zh.wikipedia.org/w/index.php?search=OPE%E5%B1%95%E5%BC%80"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "OPE expansion",
+          "url": "https://en.wikipedia.org/w/index.php?search=OPE%20expansion"
+        }
+      ]
+    },
+    {
+      "chinese_name": "算符乘积展开",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "算符乘积展开是局域量子场论短距离结构的算符级陈述，在 CFT 中尤其强，因为系数函数由对称性固定到有限形式。写作 $O_i(x)O_j(0)=\\sum_k C_{ij}^{k}(x)O_k(0)$，其中 $C_{ij}^{k}(x)$ 编码奇异幂律和张量结构。它把四点函数分解成中间算符通道，并让交叉对称成为谱数据的非线性约束。\n\n这些概念在实际使用时通常不是孤立定义，而是与算符谱、OPE 系数和 Ward 恒等式一起构成 CFT 数据。给定这些数据后，相关函数的局域展开、不同通道的一致性以及临界指数才有统一含义，也能避免把单纯尺度不变误当作完整共形不变。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "算符乘积展开",
+          "url": "https://www.baidu.com/s?wd=%E7%AE%97%E7%AC%A6%E4%B9%98%E7%A7%AF%E5%B1%95%E5%BC%80%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "算符乘积展开",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AE%97%E7%AC%A6%E4%B9%98%E7%A7%AF%E5%B1%95%E5%BC%80"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "operator product expansion",
+          "url": "https://en.wikipedia.org/w/index.php?search=operator%20product%20expansion"
+        }
+      ]
+    },
+    {
+      "chinese_name": "共形块",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "共形块是在四点函数中固定一个一次算符家族交换后的运动学贡献。四点函数可分解为 $\\sum_O C_{12O}C_{34O}G_{\\Delta,l}(u,v)$，其中 $G_{\\Delta,l}$ 是标度维数 $\\Delta$ 和自旋 $l$ 的共形块，$u,v$ 是交叉比。共形块由对称代数决定，动力学只进入谱和 OPE 系数，因此它是自举方程的基元。\n\n这些概念在实际使用时通常不是孤立定义，而是与算符谱、OPE 系数和 Ward 恒等式一起构成 CFT 数据。给定这些数据后，相关函数的局域展开、不同通道的一致性以及临界指数才有统一含义，也能避免把单纯尺度不变误当作完整共形不变。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "共形块",
+          "url": "https://www.baidu.com/s?wd=%E5%85%B1%E5%BD%A2%E5%9D%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "共形块",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%B1%E5%BD%A2%E5%9D%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "conformal block",
+          "url": "https://en.wikipedia.org/w/index.php?search=conformal%20block"
+        }
+      ]
+    },
+    {
+      "chinese_name": "维拉索罗代数",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "维拉索罗代数是二维局域共形变换的量子代数，是 Witt 代数的中心扩张。它满足 $[L_m,L_n]=(m-n)L_{m+n}+c(m^3-m)\\delta_{m+n,0}/12$，其中 $L_n$ 为模式生成元，$c$ 为中心荷。无限多个生成元使二维 CFT 远比高维更受约束，能导出最小模型、BPZ 方程和精确可解的谱结构。\n\n这些概念在实际使用时通常不是孤立定义，而是与算符谱、OPE 系数和 Ward 恒等式一起构成 CFT 数据。给定这些数据后，相关函数的局域展开、不同通道的一致性以及临界指数才有统一含义，也能避免把单纯尺度不变误当作完整共形不变。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "维拉索罗代数",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%B4%E6%8B%89%E7%B4%A2%E7%BD%97%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "维拉索罗代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%B4%E6%8B%89%E7%B4%A2%E7%BD%97%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "virasoro algebraic",
+          "url": "https://en.wikipedia.org/w/index.php?search=virasoro%20algebraic"
+        }
+      ]
+    },
+    {
+      "chinese_name": "维拉索罗生成元",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "维拉索罗生成元来自应力张量的 Laurent 模式，通常定义为 $L_n=(1/2\\pi i)\\oint dz\\,z^{n+1}T(z)$，其中 $T(z)$ 是全纯应力张量。$L_{-1}$ 生成平移，$L_0$ 测量共形权，$L_1$ 参与全局共形子代数。高阶模式组织所有后代态和 Ward 恒等式，是二维 CFT 表示论的操作核心。\n\n这一组术语主要属于二维 CFT 的表示论和手征代数结构。计算中要同时跟踪最高权、零模、后代态和可能的 null state；若只保留全局共形信息，会丢失维拉索罗或仿射代数带来的精确可解约束和模性质。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "维拉索罗生成元",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%B4%E6%8B%89%E7%B4%A2%E7%BD%97%E7%94%9F%E6%88%90%E5%85%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "维拉索罗生成元",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%B4%E6%8B%89%E7%B4%A2%E7%BD%97%E7%94%9F%E6%88%90%E5%85%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "virasoro generator",
+          "url": "https://en.wikipedia.org/w/index.php?search=virasoro%20generator"
+        }
+      ]
+    },
+    {
+      "chinese_name": "维拉索罗真空",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "维拉索罗真空是径向量子化中对应恒等算符的态，被全局共形生成元湮灭。条件为 $L_n|0\\rangle=0$ 对 $n\\ge -1$ 成立，其中 $L_n$ 是维拉索罗模式。真空模由应力张量后代组成，最低非平庸态为 $L_{-2}|0\\rangle$。它控制真空块、应力张量交换和大中心荷极限下的引力真空涨落。\n\n这一组术语主要属于二维 CFT 的表示论和手征代数结构。计算中要同时跟踪最高权、零模、后代态和可能的 null state；若只保留全局共形信息，会丢失维拉索罗或仿射代数带来的精确可解约束和模性质。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "维拉索罗真空",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%B4%E6%8B%89%E7%B4%A2%E7%BD%97%E7%9C%9F%E7%A9%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "维拉索罗真空",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%B4%E6%8B%89%E7%B4%A2%E7%BD%97%E7%9C%9F%E7%A9%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "virasoro vacuum",
+          "url": "https://en.wikipedia.org/w/index.php?search=virasoro%20vacuum"
+        }
+      ]
+    },
+    {
+      "chinese_name": "卡茨行列式",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "卡茨行列式给出维尔马模某一层内态的 Gram 矩阵行列式，零点标记零范数态出现。形式上 $\\det M_N\\propto\\prod_{r,s}(h-h_{r,s}(c))^{p(N-rs)}$，其中 $h$ 是最高权，$c$ 是中心荷，$p$ 为分拆数。它把幺正性、可约性和最小模型谱联系起来，是二维 CFT 表示论中筛选允许表示的关键工具。\n\n这一组术语主要属于二维 CFT 的表示论和手征代数结构。计算中要同时跟踪最高权、零模、后代态和可能的 null state；若只保留全局共形信息，会丢失维拉索罗或仿射代数带来的精确可解约束和模性质。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "卡茨行列式",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%A1%E8%8C%A8%E8%A1%8C%E5%88%97%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "卡茨行列式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%A1%E8%8C%A8%E8%A1%8C%E5%88%97%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kac determinant",
+          "url": "https://en.wikipedia.org/w/index.php?search=kac%20determinant"
+        }
+      ]
+    },
+    {
+      "chinese_name": "维尔马模",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "维尔马模是从一个最高权态出发，用所有负模式生成元自由作用得到的表示。若 $L_0|h\\rangle=h|h\\rangle$ 且 $L_{n>0}|h\\rangle=0$，则后代形如 $L_{-n_1}\\cdots L_{-n_k}|h\\rangle$。在没有零范数态时它是通用最高权表示；若出现 null state，需要商掉子模，得到不可约表示并产生微分方程约束。\n\n这一组术语主要属于二维 CFT 的表示论和手征代数结构。计算中要同时跟踪最高权、零模、后代态和可能的 null state；若只保留全局共形信息，会丢失维拉索罗或仿射代数带来的精确可解约束和模性质。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "维尔马模",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%B4%E5%B0%94%E9%A9%AC%E6%A8%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "维尔马模",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%B4%E5%B0%94%E9%A9%AC%E6%A8%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "verma module",
+          "url": "https://en.wikipedia.org/w/index.php?search=verma%20module"
+        }
+      ]
+    },
+    {
+      "chinese_name": "最高权态",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "最高权态是被所有正模式湮灭并由零模式给出权重的态。二维 CFT 中条件为 $L_{n>0}|h\\rangle=0,\\;L_0|h\\rangle=h|h\\rangle$，其中 $h$ 是全纯共形权。通过态算符对应，它等价于原点的一次算符。整个表示由负模式作用展开，谱是否幺正、是否含零范数态，都可从最高权数据开始分析。\n\n这一组术语主要属于二维 CFT 的表示论和手征代数结构。计算中要同时跟踪最高权、零模、后代态和可能的 null state；若只保留全局共形信息，会丢失维拉索罗或仿射代数带来的精确可解约束和模性质。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最高权态",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E9%AB%98%E6%9D%83%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最高权态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E9%AB%98%E6%9D%83%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "highest weight state",
+          "url": "https://en.wikipedia.org/w/index.php?search=highest%20weight%20state"
+        }
+      ]
+    },
+    {
+      "chinese_name": "零范数态",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "零范数态是在内积为零且与所有物理态正交的后代态，出现时表示维尔马模可约。若 $|\\chi\\rangle$ 满足 $\\langle\\chi|\\chi\\rangle=0$ 且仍是最高权态，则其全部后代构成可商掉的子模。对应算符插入相关函数会给出 BPZ 微分方程。\n\n零范数态的存在把连续的最高权参数离散化，是最小模型可解性的根源。这一组术语主要属于二维 CFT 的表示论和手征代数结构。计算中要同时跟踪最高权、零模、后代态和可能的 null state；若只保留全局共形信息，会丢失维拉索罗或仿射代数带来的精确可解约束和模性质。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "零范数态",
+          "url": "https://www.baidu.com/s?wd=%E9%9B%B6%E8%8C%83%E6%95%B0%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "零范数态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9B%B6%E8%8C%83%E6%95%B0%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "null state",
+          "url": "https://en.wikipedia.org/w/index.php?search=null%20state"
+        }
+      ]
+    },
+    {
+      "chinese_name": "BPZ方程",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "BPZ方程来自含有退化表示的相关函数中零范数态 decouple 的条件。若二级零态满足 $(L_{-2}+aL_{-1}^2)|h\\rangle=0$，其中 $a$ 由 $h,c$ 决定，则相关函数 obey 二阶微分方程。它把 OPE 通道和单值性约束转化为可解方程，是最小模型、Liouville 理论和二维临界系统精确解的重要工具。\n\n这一组术语主要属于二维 CFT 的表示论和手征代数结构。计算中要同时跟踪最高权、零模、后代态和可能的 null state；若只保留全局共形信息，会丢失维拉索罗或仿射代数带来的精确可解约束和模性质。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "BPZ方程",
+          "url": "https://www.baidu.com/s?wd=BPZ%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "BPZ方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=BPZ%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "BPZ equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=BPZ%20equation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "最小模型",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "最小模型是具有有限多个一次场的幺正或非幺正二维 CFT，中心荷和权重由两个互素整数标记。幺正系列有 $c=1-6/(m(m+1))$，其中 $m=3,4,\\ldots$。有限谱来自维拉索罗退化表示和融合规则闭合。它们描述二维临界 Ising、三态 Potts 等模型，并提供 CFT 自举中完全可解的离散例子。\n\n这一组术语主要属于二维 CFT 的表示论和手征代数结构。计算中要同时跟踪最高权、零模、后代态和可能的 null state；若只保留全局共形信息，会丢失维拉索罗或仿射代数带来的精确可解约束和模性质。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最小模型",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E5%B0%8F%E6%A8%A1%E5%9E%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最小模型",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E5%B0%8F%E6%A8%A1%E5%9E%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "minimal model",
+          "url": "https://en.wikipedia.org/w/index.php?search=minimal%20model"
+        }
+      ]
+    },
+    {
+      "chinese_name": "伊辛模型CFT",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "伊辛模型CFT是二维临界 Ising 模型的连续极限，中心荷为 $c=1/2$。其三个一次场可记为 $1,\\sigma,\\epsilon$，共形权分别为 $0,1/16,1/2$。其中 $\\sigma$ 对应自旋序参量，$\\epsilon$ 对应能量密度。有限的融合规则和维拉索罗退化结构使它成为最小模型的代表，也连接格点临界指数与精确相关函数。\n\n这一组术语主要属于二维 CFT 的表示论和手征代数结构。计算中要同时跟踪最高权、零模、后代态和可能的 null state；若只保留全局共形信息，会丢失维拉索罗或仿射代数带来的精确可解约束和模性质。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "伊辛模型CFT",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%8A%E8%BE%9B%E6%A8%A1%E5%9E%8BCFT%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "伊辛模型CFT",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%8A%E8%BE%9B%E6%A8%A1%E5%9E%8BCFT"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ising model CFT",
+          "url": "https://en.wikipedia.org/w/index.php?search=ising%20model%20CFT"
+        }
+      ]
+    },
+    {
+      "chinese_name": "三态波茨模型CFT",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "三态波茨模型CFT描述二维三态 Potts 临界点，属于中心荷 $c=4/5$ 的最小模型并带有 $Z_3$ 对称。其序参量场和能量场的标度维数决定磁化率、热容等临界指数。融合规则可写成 $\\phi_i\\times\\phi_j=\\sum_k N_{ij}^k\\phi_k$，其中 $N_{ij}^k$ 是非负整数。\n\n该理论也可用扩展 W 代数组织谱。这一组术语主要属于二维 CFT 的表示论和手征代数结构。计算中要同时跟踪最高权、零模、后代态和可能的 null state；若只保留全局共形信息，会丢失维拉索罗或仿射代数带来的精确可解约束和模性质。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "三态波茨模型CFT",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%89%E6%80%81%E6%B3%A2%E8%8C%A8%E6%A8%A1%E5%9E%8BCFT%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "三态波茨模型CFT",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%89%E6%80%81%E6%B3%A2%E8%8C%A8%E6%A8%A1%E5%9E%8BCFT"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "three state potts model CFT",
+          "url": "https://en.wikipedia.org/w/index.php?search=three%20state%20potts%20model%20CFT"
+        }
+      ]
+    },
+    {
+      "chinese_name": "WZW模型",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "WZW模型是在李群流形上取值的二维 CFT，结合 sigma 模型动能和拓扑 Wess-Zumino 项。作用量含 $S_k(g)=kI_{kin}(g)+k\\Gamma_{WZ}(g)$，其中 $g(z,\\bar z)$ 取值于群 $G$，$k$ 是量子化能级。它具有左右仿射 Kac-Moody 对称，中心荷为 $c=k\\dim G/(k+h^\\vee)$。WZW 模型是弦论、边界 CFT 和融合范畴的重要源头。\n\n这一组术语主要属于二维 CFT 的表示论和手征代数结构。计算中要同时跟踪最高权、零模、后代态和可能的 null state；若只保留全局共形信息，会丢失维拉索罗或仿射代数带来的精确可解约束和模性质。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "WZW模型",
+          "url": "https://www.baidu.com/s?wd=WZW%E6%A8%A1%E5%9E%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "WZW模型",
+          "url": "https://zh.wikipedia.org/w/index.php?search=WZW%E6%A8%A1%E5%9E%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "WZW model",
+          "url": "https://en.wikipedia.org/w/index.php?search=WZW%20model"
+        }
+      ]
+    },
+    {
+      "chinese_name": "卡茨-穆迪代数",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "卡茨-穆迪代数是李代数环代数的中心扩张，在 WZW 模型中作为手征流的对称代数出现。流模式满足 $[J_m^a,J_n^b]=if^{ab}{}_cJ_{m+n}^c+km\\delta^{ab}\\delta_{m+n,0}$，其中 $k$ 是能级。它使内部对称与二维共形对称结合，表示由最高权和能级约束分类，融合规则则由可积表示决定。\n\n这一组术语主要属于二维 CFT 的表示论和手征代数结构。计算中要同时跟踪最高权、零模、后代态和可能的 null state；若只保留全局共形信息，会丢失维拉索罗或仿射代数带来的精确可解约束和模性质。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "卡茨-穆迪代数",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%A1%E8%8C%A8-%E7%A9%86%E8%BF%AA%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "卡茨-穆迪代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%A1%E8%8C%A8-%E7%A9%86%E8%BF%AA%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kac moody algebraic",
+          "url": "https://en.wikipedia.org/w/index.php?search=kac%20moody%20algebraic"
+        }
+      ]
+    },
+    {
+      "chinese_name": "菅原构造",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "菅原构造用仿射李代数的流双线性生成应力张量，从而把 Kac-Moody 对称提升为共形对称。形式为 $T(z)=\\frac{1}{2(k+h^\\vee)}:J^aJ^a:(z)$，其中 $k$ 是能级，$h^\\vee$ 是对偶 Coxeter 数。该构造给出中心荷 $c=k\\dim G/(k+h^\\vee)$，并确定流一次场的共形权。它是 WZW 模型可解性的代数基础。\n\n这一组术语主要属于二维 CFT 的表示论和手征代数结构。计算中要同时跟踪最高权、零模、后代态和可能的 null state；若只保留全局共形信息，会丢失维拉索罗或仿射代数带来的精确可解约束和模性质。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "菅原构造",
+          "url": "https://www.baidu.com/s?wd=%E8%8F%85%E5%8E%9F%E6%9E%84%E9%80%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "菅原构造",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%8F%85%E5%8E%9F%E6%9E%84%E9%80%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "sugawara construction",
+          "url": "https://en.wikipedia.org/w/index.php?search=sugawara%20construction"
+        }
+      ]
+    },
+    {
+      "chinese_name": "仿射李代数",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "仿射李代数把有限维李代数的生成元扩展为 Laurent 模式，并加入中心元和导数元。对流模式有 $J^a(z)=\\sum_n J_n^a z^{-n-1}$，其中 $a$ 是李代数指标，$n$ 是整数模式。中心扩张的能级 $k$ 限制幺正可积表示。仿射李代数支配 WZW 模型谱、角色函数和模变换，也是二维 CFT 与表示论交汇的主要结构。\n\n这一组术语主要属于二维 CFT 的表示论和手征代数结构。计算中要同时跟踪最高权、零模、后代态和可能的 null state；若只保留全局共形信息，会丢失维拉索罗或仿射代数带来的精确可解约束和模性质。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "仿射李代数",
+          "url": "https://www.baidu.com/s?wd=%E4%BB%BF%E5%B0%84%E6%9D%8E%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "仿射李代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BB%BF%E5%B0%84%E6%9D%8E%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "affine lie algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=affine%20lie%20algebra"
+        }
+      ]
+    },
+    {
+      "chinese_name": "流代数",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "流代数描述二维 CFT 中守恒手征流的 OPE 或模式对易关系。典型 OPE 为 $J^a(z)J^b(0)\\sim k\\delta^{ab}/z^2+if^{ab}{}_cJ^c(0)/z$，其中 $k$ 是能级，$f^{ab}{}_c$ 是结构常数。它表示无穷多局域守恒荷，而不只是有限维全局对称。流代数让相关函数满足 Knizhnik-Zamolodchikov 方程，并决定非阿贝尔融合结构。\n\n这一组术语主要属于二维 CFT 的表示论和手征代数结构。计算中要同时跟踪最高权、零模、后代态和可能的 null state；若只保留全局共形信息，会丢失维拉索罗或仿射代数带来的精确可解约束和模性质。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "流代数",
+          "url": "https://www.baidu.com/s?wd=%E6%B5%81%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "流代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B5%81%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "flow algebraic",
+          "url": "https://en.wikipedia.org/w/index.php?search=flow%20algebraic"
+        }
+      ]
+    },
+    {
+      "chinese_name": "自由玻色子CFT",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "自由玻色子CFT由二维无质量标量场构成，是最基本的可解 CFT。作用量可写成 $S=(1/8\\pi)\\int d^2x\\,\\partial_\\mu X\\partial^\\mu X$，其中 $X$ 是标量场。其中心荷为 $c=1$，顶角算符 $V_\\alpha=e^{i\\alpha X}$ 的维数由动量 $\\alpha$ 决定。紧化后会出现动量和绕数格，形成许多理性 CFT 与弦论世界面模型的基础。\n\n这一组术语主要属于二维 CFT 的表示论和手征代数结构。计算中要同时跟踪最高权、零模、后代态和可能的 null state；若只保留全局共形信息，会丢失维拉索罗或仿射代数带来的精确可解约束和模性质。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自由玻色子CFT",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E7%94%B1%E7%8E%BB%E8%89%B2%E5%AD%90CFT%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自由玻色子CFT",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E7%94%B1%E7%8E%BB%E8%89%B2%E5%AD%90CFT"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "free boson CFT",
+          "url": "https://en.wikipedia.org/w/index.php?search=free%20boson%20CFT"
+        }
+      ]
+    },
+    {
+      "chinese_name": "紧化玻色子",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "紧化玻色子是自由玻色子场取值在圆上的二维 CFT，满足 $X\\sim X+2\\pi R$，其中 $R$ 是紧化半径。谱中同时有动量数 $n$ 和绕数 $w$，左右动量为 $p_{L,R}=n/R\\pm wR$。半径改变会连续改变顶角算符维数，并在特殊有理半径出现扩展手征代数。\n\n它是 T 对偶、格点 CFT 和弦论紧化的基本例子。自由场和守恒流例子常被当作复杂 CFT 的可计算基准。它们展示中心荷、边界条件、零模和正规序如何进入量子理论；同一套公式还可通过玻色化、鬼系统或流代数延伸到弦世界面和规范固定问题。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "紧化玻色子",
+          "url": "https://www.baidu.com/s?wd=%E7%B4%A7%E5%8C%96%E7%8E%BB%E8%89%B2%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "紧化玻色子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B4%A7%E5%8C%96%E7%8E%BB%E8%89%B2%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "compactification boson",
+          "url": "https://en.wikipedia.org/w/index.php?search=compactification%20boson"
+        }
+      ]
+    },
+    {
+      "chinese_name": "自由费米子CFT",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "自由费米子CFT由二维无质量费米场组成，手征 Majorana 费米子贡献中心荷 $c=1/2$。其 OPE 可写成 $\\psi(z)\\psi(0)\\sim1/z$，其中 $\\psi$ 是手征费米场。边界条件分为 Neveu-Schwarz 与 Ramond 扇区，决定模式为半整数或整数。该理论等价于临界 Ising 的手征部分，也可经玻色化与紧化玻色子联系。\n\n自由场和守恒流例子常被当作复杂 CFT 的可计算基准。它们展示中心荷、边界条件、零模和正规序如何进入量子理论；同一套公式还可通过玻色化、鬼系统或流代数延伸到弦世界面和规范固定问题。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自由费米子CFT",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E7%94%B1%E8%B4%B9%E7%B1%B3%E5%AD%90CFT%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自由费米子CFT",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E7%94%B1%E8%B4%B9%E7%B1%B3%E5%AD%90CFT"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "free fermion CFT",
+          "url": "https://en.wikipedia.org/w/index.php?search=free%20fermion%20CFT"
+        }
+      ]
+    },
+    {
+      "chinese_name": "bc鬼系统",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "bc鬼系统是一对反交换手征场，常用于规范固定和弦世界面重参数化鬼。若 $b$ 的权重为 $\\lambda$，$c$ 的权重为 $1-\\lambda$，中心荷为 $c_{bc}=1-3(2\\lambda-1)^2$。OPE 满足 $b(z)c(0)\\sim1/z$。它的真空、零模和 ghost number 选择定则影响弦振幅定义，也展示非幺正 CFT 的标准结构。\n\n自由场和守恒流例子常被当作复杂 CFT 的可计算基准。它们展示中心荷、边界条件、零模和正规序如何进入量子理论；同一套公式还可通过玻色化、鬼系统或流代数延伸到弦世界面和规范固定问题。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "bc鬼系统",
+          "url": "https://www.baidu.com/s?wd=bc%E9%AC%BC%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "bc鬼系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=bc%E9%AC%BC%E7%B3%BB%E7%BB%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bc ghost system",
+          "url": "https://en.wikipedia.org/w/index.php?search=bc%20ghost%20system"
+        }
+      ]
+    },
+    {
+      "chinese_name": "βγ系统",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "βγ系统是一对对易手征场，常作为超弦中超共形鬼或玻色化构造的组成。若 $\\beta$ 权重为 $\\lambda$，$\\gamma$ 权重为 $1-\\lambda$，则 OPE 为 $\\beta(z)\\gamma(0)\\sim1/z$。与 bc 系统不同，它是玻色统计，真空结构和零模处理更微妙。中心荷取决于权重，并在 picture 变换和 BRST 上同调中发挥作用。\n\n自由场和守恒流例子常被当作复杂 CFT 的可计算基准。它们展示中心荷、边界条件、零模和正规序如何进入量子理论；同一套公式还可通过玻色化、鬼系统或流代数延伸到弦世界面和规范固定问题。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "βγ系统",
+          "url": "https://www.baidu.com/s?wd=%CE%B2%CE%B3%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "βγ系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%CE%B2%CE%B3%E7%B3%BB%E7%BB%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "beta gamma system",
+          "url": "https://en.wikipedia.org/w/index.php?search=beta%20gamma%20system"
+        }
+      ]
+    },
+    {
+      "chinese_name": "应力张量",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "应力张量是 CFT 中生成局域共形变换的算符，二维全纯部分记为 $T(z)$。它与一次场的 OPE 为 $T(z)O(0)\\sim hO(0)/z^2+\\partial O(0)/z$，其中 $h$ 是共形权。该式说明应力张量插入等价于对算符位置作无穷小共形变换。应力张量自身 OPE 中的四阶极点给中心荷，反映共形反常。\n\n自由场和守恒流例子常被当作复杂 CFT 的可计算基准。它们展示中心荷、边界条件、零模和正规序如何进入量子理论；同一套公式还可通过玻色化、鬼系统或流代数延伸到弦世界面和规范固定问题。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "应力张量",
+          "url": "https://www.baidu.com/s?wd=%E5%BA%94%E5%8A%9B%E5%BC%A0%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "应力张量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BA%94%E5%8A%9B%E5%BC%A0%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stress tensor",
+          "url": "https://en.wikipedia.org/w/index.php?search=stress%20tensor"
+        }
+      ]
+    },
+    {
+      "chinese_name": "能动张量",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "能动张量是由平移不变性产生的守恒流，在 CFT 中还可取为无迹形式。守恒和无迹条件写作 $\\partial_\\mu T^{\\mu\\nu}=0,\\;T^\\mu{}_{\\mu}=0$，其中 $T^{\\mu\\nu}$ 是能动张量。它的两点函数归一化定义系数 $C_T$，三点函数则编码能量通量约束。与二维应力张量相比，高维能动张量是有限维共形代数的核心守恒算符。\n\n自由场和守恒流例子常被当作复杂 CFT 的可计算基准。它们展示中心荷、边界条件、零模和正规序如何进入量子理论；同一套公式还可通过玻色化、鬼系统或流代数延伸到弦世界面和规范固定问题。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "能动张量",
+          "url": "https://www.baidu.com/s?wd=%E8%83%BD%E5%8A%A8%E5%BC%A0%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "能动张量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%83%BD%E5%8A%A8%E5%BC%A0%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "energy momentum tensor",
+          "url": "https://en.wikipedia.org/w/index.php?search=energy%20momentum%20tensor"
+        }
+      ]
+    },
+    {
+      "chinese_name": "沃德恒等式",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "沃德恒等式表达连续对称性对相关函数的约束，在 CFT 中由应力张量或守恒流插入导出。二维中有 $\\langle T(z)\\prod_i O_i(z_i)\\rangle=\\sum_i(h_i/(z-z_i)^2+\\partial_{z_i}/(z-z_i))\\langle\\prod_iO_i\\rangle$，其中 $h_i$ 是各算符权重。它把共形变换写成相关函数微分方程，是固定两点三点函数和构造块的基础。\n\n自由场和守恒流例子常被当作复杂 CFT 的可计算基准。它们展示中心荷、边界条件、零模和正规序如何进入量子理论；同一套公式还可通过玻色化、鬼系统或流代数延伸到弦世界面和规范固定问题。实际推导时还要区分局域算符、态空间表示和路径积分插入三种语言；三者等价依赖正规化和边界条件，混用时最容易漏掉零模、中心扩张或接触项。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "沃德恒等式",
+          "url": "https://www.baidu.com/s?wd=%E6%B2%83%E5%BE%B7%E6%81%92%E7%AD%89%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "沃德恒等式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B2%83%E5%BE%B7%E6%81%92%E7%AD%89%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ward identity",
+          "url": "https://en.wikipedia.org/w/index.php?search=ward%20identity"
+        }
+      ]
+    },
+    {
+      "chinese_name": "径向量子化",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "径向量子化把欧氏空间半径当作时间，局域算符插入原点对应希尔伯特空间中的态。演化生成元是 $D$，满足 $D|O\\rangle=\\Delta|O\\rangle$，其中 $\\Delta$ 是算符标度维数。球面上的哈密顿量谱等于平面 CFT 的算符谱。这个框架使 OPE 成为态完备性展开，也让幺正性转化为态范数正定问题。\n\n这些对象把 CFT 从形式对称性推进到可求解约束：径向量子化给出希尔伯特空间，相关函数给出内积和 OPE 数据，交叉方程再要求不同展开相容。幺正性和反射正性提供正定性，使数值与解析自举都能排除不可能的谱。这些约束在计算上常表现为矩阵正定性、块展开收敛性或有限个张量结构的选择。物理结论应同时检查归一化约定和交换通道，否则同一谱数据会被不同基底误读。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "径向量子化",
+          "url": "https://www.baidu.com/s?wd=%E5%BE%84%E5%90%91%E9%87%8F%E5%AD%90%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "径向量子化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BE%84%E5%90%91%E9%87%8F%E5%AD%90%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "radial quantization",
+          "url": "https://en.wikipedia.org/w/index.php?search=radial%20quantization"
+        }
+      ]
+    },
+    {
+      "chinese_name": "态算符对应",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "态算符对应说明 CFT 中每个局域算符都可通过在原点插入而生成一个径向量子化态。写作 $|O\\rangle=\\lim_{x\\to0}O(x)|0\\rangle$，其中 $|0\\rangle$ 是真空。共形生成元在态空间上的作用等价于对算符的变换，标度维数成为 cylinder 能量。\n\n该对应把局域 OPE、谱分解和 Hilbert 空间幺正性统一起来，是自举方法的基础。这些对象把 CFT 从形式对称性推进到可求解约束：径向量子化给出希尔伯特空间，相关函数给出内积和 OPE 数据，交叉方程再要求不同展开相容。幺正性和反射正性提供正定性，使数值与解析自举都能排除不可能的谱。这些约束在计算上常表现为矩阵正定性、块展开收敛性或有限个张量结构的选择。物理结论应同时检查归一化约定和交换通道，否则同一谱数据会被不同基底误读。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "态算符对应",
+          "url": "https://www.baidu.com/s?wd=%E6%80%81%E7%AE%97%E7%AC%A6%E5%AF%B9%E5%BA%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "态算符对应",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%80%81%E7%AE%97%E7%AC%A6%E5%AF%B9%E5%BA%94"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "state operator correspondence",
+          "url": "https://en.wikipedia.org/w/index.php?search=state%20operator%20correspondence"
+        }
+      ]
+    },
+    {
+      "chinese_name": "两点函数",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "两点函数在 CFT 中几乎完全由共形对称固定。标量一次场满足 $\\langle O_i(x)O_j(0)\\rangle=\\delta_{ij}C_i/|x|^{2\\Delta_i}$，其中 $\\Delta_i$ 是标度维数，$C_i$ 是归一化常数。不同维数或不同不可约表示的算符两点函数为零。两点函数既定义算符内积，也在径向量子化中决定态范数和幺正界。\n\n这些对象把 CFT 从形式对称性推进到可求解约束：径向量子化给出希尔伯特空间，相关函数给出内积和 OPE 数据，交叉方程再要求不同展开相容。幺正性和反射正性提供正定性，使数值与解析自举都能排除不可能的谱。这些约束在计算上常表现为矩阵正定性、块展开收敛性或有限个张量结构的选择。物理结论应同时检查归一化约定和交换通道，否则同一谱数据会被不同基底误读。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "两点函数",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%A4%E7%82%B9%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "两点函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%A4%E7%82%B9%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "two point function",
+          "url": "https://en.wikipedia.org/w/index.php?search=two%20point%20function"
+        }
+      ]
+    },
+    {
+      "chinese_name": "三点函数",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "三点函数的坐标依赖由共形对称固定，动力学只剩 OPE 系数。标量情形为 $\\langle O_1O_2O_3\\rangle=C_{123}/(x_{12}^{\\Delta_1+\\Delta_2-\\Delta_3}x_{23}^{\\Delta_2+\\Delta_3-\\Delta_1}x_{13}^{\\Delta_1+\\Delta_3-\\Delta_2})$，其中 $C_{123}$ 是三点系数。带自旋时还需有限个张量结构。三点数据与谱一起构成 CFT 的基本动力学输入。这些对象把 CFT 从形式对称性推进到可求解约束：径向量子化给出希尔伯特空间，相关函数给出内积和 OPE 数据，交叉方程再要求不同展开相容。\n\n幺正性和反射正性提供正定性，使数值与解析自举都能排除不可能的谱。这些约束在计算上常表现为矩阵正定性、块展开收敛性或有限个张量结构的选择。物理结论应同时检查归一化约定和交换通道，否则同一谱数据会被不同基底误读。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "三点函数",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%89%E7%82%B9%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "三点函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%89%E7%82%B9%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "three point function",
+          "url": "https://en.wikipedia.org/w/index.php?search=three%20point%20function"
+        }
+      ]
+    },
+    {
+      "chinese_name": "四点函数",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "四点函数首次包含非平凡函数依赖，因为共形对称只把坐标变量压缩为交叉比。标量四点函数可写成 $\\langle OOOO\\rangle=(x_{12}^2x_{34}^2)^{-\\Delta}G(u,v)$，其中 $u,v$ 是两个交叉比。函数 $G(u,v)$ 可在不同 OPE 通道中展开为共形块。交叉对称要求这些展开相等，从而给谱和 OPE 系数施加强约束。\n\n这些对象把 CFT 从形式对称性推进到可求解约束：径向量子化给出希尔伯特空间，相关函数给出内积和 OPE 数据，交叉方程再要求不同展开相容。幺正性和反射正性提供正定性，使数值与解析自举都能排除不可能的谱。这些约束在计算上常表现为矩阵正定性、块展开收敛性或有限个张量结构的选择。物理结论应同时检查归一化约定和交换通道，否则同一谱数据会被不同基底误读。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "四点函数",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%9B%E7%82%B9%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "四点函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%9B%E7%82%B9%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "four point function",
+          "url": "https://en.wikipedia.org/w/index.php?search=four%20point%20function"
+        }
+      ]
+    },
+    {
+      "chinese_name": "交叉对称",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "交叉对称是同一个四点函数在不同 OPE 配对方式下必须相等的条件。对相同标量常写成 $v^\\Delta G(u,v)=u^\\Delta G(v,u)$，其中 $u,v$ 是交叉比，$\\Delta$ 是外部算符维数。它来自局域性和算符结合律，而不是额外动力学假设。\n\n现代共形自举正是把交叉对称、幺正性和谱假设组合成可求解约束。这些对象把 CFT 从形式对称性推进到可求解约束：径向量子化给出希尔伯特空间，相关函数给出内积和 OPE 数据，交叉方程再要求不同展开相容。幺正性和反射正性提供正定性，使数值与解析自举都能排除不可能的谱。这些约束在计算上常表现为矩阵正定性、块展开收敛性或有限个张量结构的选择。物理结论应同时检查归一化约定和交换通道，否则同一谱数据会被不同基底误读。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "交叉对称",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%A4%E5%8F%89%E5%AF%B9%E7%A7%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "交叉对称",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%A4%E5%8F%89%E5%AF%B9%E7%A7%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "crossing symmetry",
+          "url": "https://en.wikipedia.org/w/index.php?search=crossing%20symmetry"
+        }
+      ]
+    },
+    {
+      "chinese_name": "自举方程",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "自举方程是把四点函数的交叉对称写成共形块展开后的代数或泛函约束。形式上 $\\sum_O \\lambda_{12O}\\lambda_{34O}G_O(u,v)=\\sum_O \\lambda_{14O}\\lambda_{23O}G_O(v,u)$，其中 $\\lambda$ 是 OPE 系数，$G_O$ 是交换算符的共形块。未知量是谱和 OPE 数据。幺正 CFT 中系数平方非负，使数值线性规划和半定规划成为可能。\n\n这些对象把 CFT 从形式对称性推进到可求解约束：径向量子化给出希尔伯特空间，相关函数给出内积和 OPE 数据，交叉方程再要求不同展开相容。幺正性和反射正性提供正定性，使数值与解析自举都能排除不可能的谱。这些约束在计算上常表现为矩阵正定性、块展开收敛性或有限个张量结构的选择。物理结论应同时检查归一化约定和交换通道，否则同一谱数据会被不同基底误读。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自举方程",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E4%B8%BE%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自举方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E4%B8%BE%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bootstrap equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=bootstrap%20equation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "共形自举",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "共形自举利用共形对称、OPE 结合律、幺正性和少量谱假设来反推出 CFT 数据。核心约束可写为 $\\sum_O \\lambda_O^2 F_{\\Delta,l}(u,v)=0$，其中 $F_{\\Delta,l}$ 是交叉反对称的块组合。若存在一个线性泛函使所有允许项同号，就排除相应谱假设。\n\n该方法无需拉氏量，已高精度确定三维 Ising 等强耦合固定点数据。这些对象把 CFT 从形式对称性推进到可求解约束：径向量子化给出希尔伯特空间，相关函数给出内积和 OPE 数据，交叉方程再要求不同展开相容。幺正性和反射正性提供正定性，使数值与解析自举都能排除不可能的谱。这些约束在计算上常表现为矩阵正定性、块展开收敛性或有限个张量结构的选择。物理结论应同时检查归一化约定和交换通道，否则同一谱数据会被不同基底误读。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "共形自举",
+          "url": "https://www.baidu.com/s?wd=%E5%85%B1%E5%BD%A2%E8%87%AA%E4%B8%BE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "共形自举",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%B1%E5%BD%A2%E8%87%AA%E4%B8%BE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "conformal bootstrap",
+          "url": "https://en.wikipedia.org/w/index.php?search=conformal%20bootstrap"
+        }
+      ]
+    },
+    {
+      "chinese_name": "幺正界",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "幺正界来自径向量子化中后代态范数必须非负，对标度维数和自旋给出下限。高维对称无迹自旋 $l>0$ 算符满足 $\\Delta\\ge l+d-2$，标量满足 $\\Delta\\ge(d-2)/2$，其中 $d$ 是维数。若界被饱和，某个后代成为零范数态，对应守恒流或自由场方程。\n\n幺正界是数值自举排除不可能谱的基本输入。这些对象把 CFT 从形式对称性推进到可求解约束：径向量子化给出希尔伯特空间，相关函数给出内积和 OPE 数据，交叉方程再要求不同展开相容。幺正性和反射正性提供正定性，使数值与解析自举都能排除不可能的谱。这些约束在计算上常表现为矩阵正定性、块展开收敛性或有限个张量结构的选择。物理结论应同时检查归一化约定和交换通道，否则同一谱数据会被不同基底误读。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "幺正界",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%BA%E6%AD%A3%E7%95%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "幺正界",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%BA%E6%AD%A3%E7%95%8C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "unitarity bound",
+          "url": "https://en.wikipedia.org/w/index.php?search=unitarity%20bound"
+        }
+      ]
+    },
+    {
+      "chinese_name": "反射正性",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "反射正性是欧氏 CFT 对应 Lorentz 幺正理论的条件，要求反射后的算符内积非负。可写作 $\\langle \\Theta O\\,O\\rangle\\ge0$，其中 $\\Theta$ 是关于某个时间切片的反射。它保证径向量子化希尔伯特空间范数正定，并使 OPE 系数平方在相同外场四点函数中非负。\n\n没有反射正性，交叉方程仍成立，但自举的排除能力会大幅减弱。这些对象把 CFT 从形式对称性推进到可求解约束：径向量子化给出希尔伯特空间，相关函数给出内积和 OPE 数据，交叉方程再要求不同展开相容。幺正性和反射正性提供正定性，使数值与解析自举都能排除不可能的谱。这些约束在计算上常表现为矩阵正定性、块展开收敛性或有限个张量结构的选择。物理结论应同时检查归一化约定和交换通道，否则同一谱数据会被不同基底误读。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反射正性",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E5%B0%84%E6%AD%A3%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反射正性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E5%B0%84%E6%AD%A3%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "reflection positivity",
+          "url": "https://en.wikipedia.org/w/index.php?search=reflection%20positivity"
+        }
+      ]
+    },
+    {
+      "chinese_name": "谱隙",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "谱隙是指某类算符维数从最低态到下一态之间存在有限间隔，常用于刻画稀疏谱或近似全息 CFT。可写成 $\\Delta_{gap}=\\Delta_{next}-\\Delta_{min}$，其中 $\\Delta$ 是标度维数。大谱隙意味着低能有效描述中只有少数轻算符，常与 AdS 中局域有效场论相联系。\n\n自举中施加谱隙假设可显著收紧 OPE 数据和中心荷界。这里的谱学和非局域表示工具常用于连接 CFT 与全息或缺陷系统。谱隙、梅林变量和阴影表示强调不同基底下的同一 OPE 信息；边界与缺陷则说明局域算符代数会被保留下来的较小共形群重新组织。这些约束在计算上常表现为矩阵正定性、块展开收敛性或有限个张量结构的选择。物理结论应同时检查归一化约定和交换通道，否则同一谱数据会被不同基底误读。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "谱隙",
+          "url": "https://www.baidu.com/s?wd=%E8%B0%B1%E9%9A%99%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "谱隙",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B0%B1%E9%9A%99"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "spectral gap",
+          "url": "https://en.wikipedia.org/w/index.php?search=spectral%20gap"
+        }
+      ]
+    },
+    {
+      "chinese_name": "梅林振幅",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "梅林振幅把 CFT 相关函数写成类似散射振幅的变量表示，特别适合与 AdS Witten 图比较。四点函数可表示为 $G(u,v)=\\int dsdt\\,u^s v^t M(s,t)\\Gamma(\\cdots)$，其中 $M(s,t)$ 是梅林振幅，$s,t$ 类似 Mandelstam 变量。双迹算符极点和 OPE 数据在梅林空间中清晰呈现。它让大中心荷 CFT 的局域性和高能行为更接近散射语言。\n\n这里的谱学和非局域表示工具常用于连接 CFT 与全息或缺陷系统。谱隙、梅林变量和阴影表示强调不同基底下的同一 OPE 信息；边界与缺陷则说明局域算符代数会被保留下来的较小共形群重新组织。这些约束在计算上常表现为矩阵正定性、块展开收敛性或有限个张量结构的选择。物理结论应同时检查归一化约定和交换通道，否则同一谱数据会被不同基底误读。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "梅林振幅",
+          "url": "https://www.baidu.com/s?wd=%E6%A2%85%E6%9E%97%E6%8C%AF%E5%B9%85%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "梅林振幅",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A2%85%E6%9E%97%E6%8C%AF%E5%B9%85"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mellin amplitude",
+          "url": "https://en.wikipedia.org/w/index.php?search=mellin%20amplitude"
+        }
+      ]
+    },
+    {
+      "chinese_name": "阴影变换",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "阴影变换把维数 $\\Delta$ 的一次算符映到维数 $d-\\Delta$ 的非局域算符。定义可写为 $\\widetilde O(x)=\\int d^dy\\,O(y)/|x-y|^{2(d-\\Delta)}$，其中 $d$ 是时空维数。阴影算符与原算符属于同一共形 Casimir 本征值，常用于构造共形部分波和投影算符。它不是新局域自由度，而是表示论中的积分变换。\n\n这里的谱学和非局域表示工具常用于连接 CFT 与全息或缺陷系统。谱隙、梅林变量和阴影表示强调不同基底下的同一 OPE 信息；边界与缺陷则说明局域算符代数会被保留下来的较小共形群重新组织。这些约束在计算上常表现为矩阵正定性、块展开收敛性或有限个张量结构的选择。物理结论应同时检查归一化约定和交换通道，否则同一谱数据会被不同基底误读。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阴影变换",
+          "url": "https://www.baidu.com/s?wd=%E9%98%B4%E5%BD%B1%E5%8F%98%E6%8D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阴影变换",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%B4%E5%BD%B1%E5%8F%98%E6%8D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "shadow transformation",
+          "url": "https://en.wikipedia.org/w/index.php?search=shadow%20transformation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "轻锥自举",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "轻锥自举研究四点函数在一个交叉比趋零的极限，利用单位算符或低 twist 算符主导来约束大自旋谱。twist 定义为 $\\tau=\\Delta-l$，其中 $\\Delta$ 是维数，$l$ 是自旋。轻锥极限要求另一通道出现无限塔大自旋双迹算符，以重现奇异行为。\n\n该方法解析地解释大自旋反常维数和 OPE 系数的渐近展开。这里的谱学和非局域表示工具常用于连接 CFT 与全息或缺陷系统。谱隙、梅林变量和阴影表示强调不同基底下的同一 OPE 信息；边界与缺陷则说明局域算符代数会被保留下来的较小共形群重新组织。这些约束在计算上常表现为矩阵正定性、块展开收敛性或有限个张量结构的选择。物理结论应同时检查归一化约定和交换通道，否则同一谱数据会被不同基底误读。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "轻锥自举",
+          "url": "https://www.baidu.com/s?wd=%E8%BD%BB%E9%94%A5%E8%87%AA%E4%B8%BE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "轻锥自举",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BD%BB%E9%94%A5%E8%87%AA%E4%B8%BE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "light cone bootstrap",
+          "url": "https://en.wikipedia.org/w/index.php?search=light%20cone%20bootstrap"
+        }
+      ]
+    },
+    {
+      "chinese_name": "大自旋展开",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "大自旋展开是对 CFT 中高自旋算符数据按 $1/l$ 或共形自旋倒数展开。双迹算符常写作 $[O_1O_2]_{n,l}$，其维数为 $\\Delta_1+\\Delta_2+2n+l+\\gamma_{n,l}$，其中 $\\gamma_{n,l}$ 是反常维数。轻锥 OPE 保证大 $l$ 时这些量有受控渐近级数。它在解析自举和全息有效场论中都很有用。\n\n这里的谱学和非局域表示工具常用于连接 CFT 与全息或缺陷系统。谱隙、梅林变量和阴影表示强调不同基底下的同一 OPE 信息；边界与缺陷则说明局域算符代数会被保留下来的较小共形群重新组织。这些约束在计算上常表现为矩阵正定性、块展开收敛性或有限个张量结构的选择。物理结论应同时检查归一化约定和交换通道，否则同一谱数据会被不同基底误读。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "大自旋展开",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%A7%E8%87%AA%E6%97%8B%E5%B1%95%E5%BC%80%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "大自旋展开",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%A7%E8%87%AA%E6%97%8B%E5%B1%95%E5%BC%80"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "large spin expansion",
+          "url": "https://en.wikipedia.org/w/index.php?search=large%20spin%20expansion"
+        }
+      ]
+    },
+    {
+      "chinese_name": "双迹算符",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "双迹算符是由两个单迹算符及其导数组成的复合算符，在大中心荷或大 N CFT 中构成多粒子态。形式为 $[O_1O_2]_{n,l}\\sim O_1\\partial^{2n}\\partial_{\\{\\mu_1}\\cdots\\partial_{\\mu_l\\}}O_2$，其中 $n$ 是径向激发数，$l$ 是自旋。其维数在领先阶为两者维数加导数数。反常维数记录相互作用，对应 AdS 中两粒子束缚能修正。\n\n这里的谱学和非局域表示工具常用于连接 CFT 与全息或缺陷系统。谱隙、梅林变量和阴影表示强调不同基底下的同一 OPE 信息；边界与缺陷则说明局域算符代数会被保留下来的较小共形群重新组织。这些约束在计算上常表现为矩阵正定性、块展开收敛性或有限个张量结构的选择。物理结论应同时检查归一化约定和交换通道，否则同一谱数据会被不同基底误读。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "双迹算符",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8C%E8%BF%B9%E7%AE%97%E7%AC%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "双迹算符",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8C%E8%BF%B9%E7%AE%97%E7%AC%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "double trace operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=double%20trace%20operator"
+        }
+      ]
+    },
+    {
+      "chinese_name": "反常维数",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "反常维数是量子相互作用使算符标度维数偏离经典值的部分。通常写成 $\\Delta=\\Delta_{cl}+\\gamma$，其中 $\\Delta_{cl}$ 是经典维数，$\\gamma$ 是反常维数。CFT 固定点上 $\\gamma$ 为常数，而在一般 QFT 中它随重整化群流变化。反常维数决定相关函数幂律、临界指数和 OPE 中算符排序，是从微扰或自举提取动力学的主要目标。\n\n这里的谱学和非局域表示工具常用于连接 CFT 与全息或缺陷系统。谱隙、梅林变量和阴影表示强调不同基底下的同一 OPE 信息；边界与缺陷则说明局域算符代数会被保留下来的较小共形群重新组织。这些约束在计算上常表现为矩阵正定性、块展开收敛性或有限个张量结构的选择。物理结论应同时检查归一化约定和交换通道，否则同一谱数据会被不同基底误读。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反常维数",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E5%B8%B8%E7%BB%B4%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反常维数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E5%B8%B8%E7%BB%B4%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "anomaly dimension",
+          "url": "https://en.wikipedia.org/w/index.php?search=anomaly%20dimension"
+        }
+      ]
+    },
+    {
+      "chinese_name": "缺陷CFT",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "缺陷CFT是在存在边界、线、面或更高余维缺陷时仍保留部分共形对称的理论。若平面缺陷维数为 $p$，保留群为 $SO(p+1,1)\\times SO(d-p)$，其中 $d$ 是体维数。体算符靠近缺陷时可展开为缺陷局域算符，即 $O_{bulk}\\sim\\sum_{\\hat O} b_{O\\hat O}\\hat O$。它描述 Wilson 线、界面临界现象和全息 brane 构型。\n\n这里的谱学和非局域表示工具常用于连接 CFT 与全息或缺陷系统。谱隙、梅林变量和阴影表示强调不同基底下的同一 OPE 信息；边界与缺陷则说明局域算符代数会被保留下来的较小共形群重新组织。这些约束在计算上常表现为矩阵正定性、块展开收敛性或有限个张量结构的选择。物理结论应同时检查归一化约定和交换通道，否则同一谱数据会被不同基底误读。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "缺陷CFT",
+          "url": "https://www.baidu.com/s?wd=%E7%BC%BA%E9%99%B7CFT%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "缺陷CFT",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BC%BA%E9%99%B7CFT"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "defect CFT",
+          "url": "https://en.wikipedia.org/w/index.php?search=defect%20CFT"
+        }
+      ]
+    },
+    {
+      "chinese_name": "边界CFT",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "边界CFT是定义在半空间或带边界流形上的共形场论，保留沿边界的共形群。边界条件要求能量流不穿出边界，例如 $T_{\\perp a}=0$，其中 $\\perp$ 是法向，$a$ 是切向指标。体算符靠近边界时用边界算符展开，系数是新的边界 CFT 数据。\n\n它适用于临界系统表面、开弦世界面和 Kondo 类问题。这里的谱学和非局域表示工具常用于连接 CFT 与全息或缺陷系统。谱隙、梅林变量和阴影表示强调不同基底下的同一 OPE 信息；边界与缺陷则说明局域算符代数会被保留下来的较小共形群重新组织。这些约束在计算上常表现为矩阵正定性、块展开收敛性或有限个张量结构的选择。物理结论应同时检查归一化约定和交换通道，否则同一谱数据会被不同基底误读。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "边界CFT",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%B9%E7%95%8CCFT%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "边界CFT",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%B9%E7%95%8CCFT"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "boundary CFT",
+          "url": "https://en.wikipedia.org/w/index.php?search=boundary%20CFT"
+        }
+      ]
+    },
+    {
+      "chinese_name": "卡迪条件",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "卡迪条件要求边界态在开弦道和闭弦道给出的环柱配分函数一致，并且开弦谱具有非负整数重数。形式为 $Z_{ab}(q)=\\langle a|\\tilde q^{(L_0+\\bar L_0-c/12)/2}|b\\rangle=\\sum_i n_{ab}^i\\chi_i(q)$，其中 $|a\\rangle$ 是边界态，$\\chi_i$ 是角色。它把模变换、融合规则和允许边界条件联系起来，是理性边界 CFT 的核心一致性条件。\n\n这里的谱学和非局域表示工具常用于连接 CFT 与全息或缺陷系统。谱隙、梅林变量和阴影表示强调不同基底下的同一 OPE 信息；边界与缺陷则说明局域算符代数会被保留下来的较小共形群重新组织。这些约束在计算上常表现为矩阵正定性、块展开收敛性或有限个张量结构的选择。物理结论应同时检查归一化约定和交换通道，否则同一谱数据会被不同基底误读。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "卡迪条件",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%A1%E8%BF%AA%E6%9D%A1%E4%BB%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "卡迪条件",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%A1%E8%BF%AA%E6%9D%A1%E4%BB%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cardy condition",
+          "url": "https://en.wikipedia.org/w/index.php?search=cardy%20condition"
+        }
+      ]
+    },
+    {
+      "chinese_name": "边界态",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "边界态是在闭弦道或径向量子化中编码边界条件的态，满足 gluing 条件。共形边界常要求 $(L_n-\\bar L_{-n})|B\\rangle=0$，其中 $L_n,\\bar L_n$ 是左右维拉索罗生成元。Ishibashi 态解决单个表示内的 gluing，Cardy 态再组合出满足开闭一致性的物理边界。\n\n边界态让边界熵、边界 OPE 和 D-brane 解释统一起来。这里的谱学和非局域表示工具常用于连接 CFT 与全息或缺陷系统。谱隙、梅林变量和阴影表示强调不同基底下的同一 OPE 信息；边界与缺陷则说明局域算符代数会被保留下来的较小共形群重新组织。这些约束在计算上常表现为矩阵正定性、块展开收敛性或有限个张量结构的选择。物理结论应同时检查归一化约定和交换通道，否则同一谱数据会被不同基底误读。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "边界态",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%B9%E7%95%8C%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "边界态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%B9%E7%95%8C%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "boundary state",
+          "url": "https://en.wikipedia.org/w/index.php?search=boundary%20state"
+        }
+      ]
+    },
+    {
+      "chinese_name": "交叉帽态",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "交叉帽态编码非定向世界面或实射影平面插入对 CFT 的约束，常出现在 orientifold 或非定向二维 CFT 中。它满足 gluing 条件 $(L_n-(-1)^n\\bar L_{-n})|C\\rangle=0$，其中 $L_n,\\bar L_n$ 是左右维拉索罗生成元。与边界态相比，交叉帽态实现的是取向反转对称。\n\n它影响 Klein bottle 配分函数和投影后谱的一致性。模性质和融合结构要求曲面量子化在不同切割方式下给出同一答案。角色、S 矩阵、F 矩阵和拓扑缺陷线不仅是记号，它们组成有限张量范畴数据，控制环面配分函数、边界条件和非可逆对称的一致性。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "交叉帽态",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%A4%E5%8F%89%E5%B8%BD%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "交叉帽态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%A4%E5%8F%89%E5%B8%BD%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "crosscap state",
+          "url": "https://en.wikipedia.org/w/index.php?search=crosscap%20state"
+        }
+      ]
+    },
+    {
+      "chinese_name": "对角配分函数",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "对角配分函数是理性 CFT 环面配分函数的一种简单形式，把左、右同一表示配对。写作 $Z(\\tau,\\bar\\tau)=\\sum_i \\chi_i(\\tau)\\bar\\chi_i(\\bar\\tau)$，其中 $\\chi_i$ 是表示 $i$ 的角色，$\\tau$ 是环面模参数。它通常在 charge conjugation 或 diagonal modular invariant 中出现。对角性保证谱中左右权重匹配，但并非所有一致 CFT 都采用这种配对。\n\n模性质和融合结构要求曲面量子化在不同切割方式下给出同一答案。角色、S 矩阵、F 矩阵和拓扑缺陷线不仅是记号，它们组成有限张量范畴数据，控制环面配分函数、边界条件和非可逆对称的一致性。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对角配分函数",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E8%A7%92%E9%85%8D%E5%88%86%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对角配分函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E8%A7%92%E9%85%8D%E5%88%86%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "diagonal partition function",
+          "url": "https://en.wikipedia.org/w/index.php?search=diagonal%20partition%20function"
+        }
+      ]
+    },
+    {
+      "chinese_name": "模不变性",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "模不变性要求定义在环面上的二维 CFT 配分函数在大微分同胚群下不变。基本变换为 $S:\\tau\\to-1/\\tau$ 和 $T:\\tau\\to\\tau+1$，其中 $\\tau$ 是环面复结构。角色函数在这些变换下线性混合，配分函数矩阵必须与模表示对易。\n\n模不变性强烈限制允许谱和左右配对，是有限温、有限尺寸和弦世界面一致性的核心条件。模性质和融合结构要求曲面量子化在不同切割方式下给出同一答案。角色、S 矩阵、F 矩阵和拓扑缺陷线不仅是记号，它们组成有限张量范畴数据，控制环面配分函数、边界条件和非可逆对称的一致性。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "模不变性",
+          "url": "https://www.baidu.com/s?wd=%E6%A8%A1%E4%B8%8D%E5%8F%98%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "模不变性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A8%A1%E4%B8%8D%E5%8F%98%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "module invariance",
+          "url": "https://en.wikipedia.org/w/index.php?search=module%20invariance"
+        }
+      ]
+    },
+    {
+      "chinese_name": "环面配分函数",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "环面配分函数是二维 CFT 在 genus one 曲面上的真空振幅，也等于圆上量子化的热配分函数。形式为 $Z(\\tau,\\bar\\tau)=\\mathrm{Tr}\\,q^{L_0-c/24}\\bar q^{\\bar L_0-c/24}$，其中 $q=e^{2\\pi i\\tau}$，$\\tau$ 是模参数。低温展开显示低维算符谱，高温极限由模 S 变换约束。它导出 Cardy 公式，并检验理论的模不变性。\n\n模性质和融合结构要求曲面量子化在不同切割方式下给出同一答案。角色、S 矩阵、F 矩阵和拓扑缺陷线不仅是记号，它们组成有限张量范畴数据，控制环面配分函数、边界条件和非可逆对称的一致性。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "环面配分函数",
+          "url": "https://www.baidu.com/s?wd=%E7%8E%AF%E9%9D%A2%E9%85%8D%E5%88%86%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "环面配分函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%8E%AF%E9%9D%A2%E9%85%8D%E5%88%86%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ring surface partition function",
+          "url": "https://en.wikipedia.org/w/index.php?search=ring%20surface%20partition%20function"
+        }
+      ]
+    },
+    {
+      "chinese_name": "角色函数",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "角色函数是某个表示中态数按能级加权的生成函数。维拉索罗或仿射代数表示的角色可写为 $\\chi_i(q)=\\mathrm{Tr}_{\\mathcal H_i} q^{L_0-c/24}$，其中 $\\mathcal H_i$ 是表示空间，$c$ 是中心荷。角色在模变换下按有限矩阵混合，因而是构造环面配分函数和融合规则的基本对象。\n\n它同时记录后代态计数和零范数态商掉后的谱。模性质和融合结构要求曲面量子化在不同切割方式下给出同一答案。角色、S 矩阵、F 矩阵和拓扑缺陷线不仅是记号，它们组成有限张量范畴数据，控制环面配分函数、边界条件和非可逆对称的一致性。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "角色函数",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%92%E8%89%B2%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "角色函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%92%E8%89%B2%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "character function",
+          "url": "https://en.wikipedia.org/w/index.php?search=character%20function"
+        }
+      ]
+    },
+    {
+      "chinese_name": "融合规则",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "融合规则给出两个一次场 OPE 中允许出现哪些一次场家族。写作 $\\phi_i\\times\\phi_j=\\sum_k N_{ij}^{k}\\phi_k$，其中 $N_{ij}^{k}$ 是非负整数，表示通道 $k$ 的重数。它是 OPE 代数的离散骨架，不包含连续的三点系数大小。在理性 CFT 中，融合规则与模 S 矩阵由 Verlinde 公式相连，并形成有限的融合范畴结构。\n\n模性质和融合结构要求曲面量子化在不同切割方式下给出同一答案。角色、S 矩阵、F 矩阵和拓扑缺陷线不仅是记号，它们组成有限张量范畴数据，控制环面配分函数、边界条件和非可逆对称的一致性。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "融合规则",
+          "url": "https://www.baidu.com/s?wd=%E8%9E%8D%E5%90%88%E8%A7%84%E5%88%99%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "融合规则",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%9E%8D%E5%90%88%E8%A7%84%E5%88%99"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fusion rule",
+          "url": "https://en.wikipedia.org/w/index.php?search=fusion%20rule"
+        }
+      ]
+    },
+    {
+      "chinese_name": "弗尔林德公式",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "弗尔林德公式把理性 CFT 的融合系数表示为模 S 矩阵的代数组合。公式为 $N_{ij}^{k}=\\sum_m S_{im}S_{jm}S^*_{km}/S_{0m}$，其中 $S_{im}$ 是角色在 $\\tau\\to-1/\\tau$ 下的变换矩阵，$0$ 表示真空表示。它说明环面模性质决定球面 OPE 的离散融合代数。该公式也是拓扑量子场论和任意子模型中融合规则的来源。\n\n模性质和融合结构要求曲面量子化在不同切割方式下给出同一答案。角色、S 矩阵、F 矩阵和拓扑缺陷线不仅是记号，它们组成有限张量范畴数据，控制环面配分函数、边界条件和非可逆对称的一致性。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弗尔林德公式",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%97%E5%B0%94%E6%9E%97%E5%BE%B7%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弗尔林德公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%97%E5%B0%94%E6%9E%97%E5%BE%B7%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "verlinde formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=verlinde%20formula"
+        }
+      ]
+    },
+    {
+      "chinese_name": "模块S矩阵",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "模块S矩阵描述二维 CFT 角色函数在模变换 $\\tau\\to-1/\\tau$ 下的线性变换。写作 $\\chi_i(-1/\\tau)=\\sum_j S_{ij}\\chi_j(\\tau)$，其中 $i,j$ 标记不可约表示。$S$ 矩阵需与 T 矩阵满足模群关系，并进入 Verlinde 公式。它把高低温谱、任意子量子维数和拓扑 S 矩阵联系起来，是理性 CFT 的基础数据。\n\n模性质和融合结构要求曲面量子化在不同切割方式下给出同一答案。角色、S 矩阵、F 矩阵和拓扑缺陷线不仅是记号，它们组成有限张量范畴数据，控制环面配分函数、边界条件和非可逆对称的一致性。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "模块S矩阵",
+          "url": "https://www.baidu.com/s?wd=%E6%A8%A1%E5%9D%97S%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "模块S矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A8%A1%E5%9D%97S%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "modular S matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=modular%20S%20matrix"
+        }
+      ]
+    },
+    {
+      "chinese_name": "拓扑缺陷线",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "拓扑缺陷线是可在二维 CFT 中连续移动而不改变相关函数的线算符，只要不穿过局域插入。其条件可写为 $T^{left}(z)=T^{right}(z)$ 沿缺陷成立，其中 $T$ 是应力张量。拓扑缺陷可作用在态空间上，并按融合规则相乘。\n\n它们实现全局对称、非可逆对称或 Kramers-Wannier 对偶，是现代广义对称和范畴化 CFT 的重要对象。模性质和融合结构要求曲面量子化在不同切割方式下给出同一答案。角色、S 矩阵、F 矩阵和拓扑缺陷线不仅是记号，它们组成有限张量范畴数据，控制环面配分函数、边界条件和非可逆对称的一致性。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拓扑缺陷线",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%93%E6%89%91%E7%BC%BA%E9%99%B7%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拓扑缺陷线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%93%E6%89%91%E7%BC%BA%E9%99%B7%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "topology defect line",
+          "url": "https://en.wikipedia.org/w/index.php?search=topology%20defect%20line"
+        }
+      ]
+    },
+    {
+      "chinese_name": "全局共形块",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "全局共形块只利用有限维全局共形代数生成的后代态，而不包含完整维拉索罗后代。四点函数分解为 $G(u,v)=\\sum_{\\Delta,l} a_{\\Delta,l} g_{\\Delta,l}(u,v)$，其中 $g_{\\Delta,l}$ 是全局块，$a_{\\Delta,l}$ 含 OPE 系数平方。高维 CFT 的常用共形块就是这种对象；在二维中，它是维拉索罗块按全局子代数展开的组成部分。\n\n这些共形块和极限常用于把四点函数拆成可控制的近似。全局块、维拉索罗块和半经典块保留的对称性层级不同；重轻或轻锥极限则选择特定谱区间，适合提取大自旋行为、热化近似或 AdS3 几何解释。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "全局共形块",
+          "url": "https://www.baidu.com/s?wd=%E5%85%A8%E5%B1%80%E5%85%B1%E5%BD%A2%E5%9D%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "全局共形块",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%A8%E5%B1%80%E5%85%B1%E5%BD%A2%E5%9D%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "global conformal block",
+          "url": "https://en.wikipedia.org/w/index.php?search=global%20conformal%20block"
+        }
+      ]
+    },
+    {
+      "chinese_name": "维拉索罗共形块",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "维拉索罗共形块把二维 CFT 中某个一次场及其全部维拉索罗后代对四点函数的贡献求和。可写成 $\\mathcal F(c,h_i,h_p;z)$，其中 $c$ 是中心荷，$h_i$ 是外场权重，$h_p$ 是中间权重。它比全局块包含更多对称性信息，并控制二维自举、Liouville 理论和 AdS3 引力中的 Virasoro 真空交换。\n\n这些共形块和极限常用于把四点函数拆成可控制的近似。全局块、维拉索罗块和半经典块保留的对称性层级不同；重轻或轻锥极限则选择特定谱区间，适合提取大自旋行为、热化近似或 AdS3 几何解释。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "维拉索罗共形块",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%B4%E6%8B%89%E7%B4%A2%E7%BD%97%E5%85%B1%E5%BD%A2%E5%9D%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "维拉索罗共形块",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%B4%E6%8B%89%E7%B4%A2%E7%BD%97%E5%85%B1%E5%BD%A2%E5%9D%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "virasoro conformal block",
+          "url": "https://en.wikipedia.org/w/index.php?search=virasoro%20conformal%20block"
+        }
+      ]
+    },
+    {
+      "chinese_name": "半经典共形块",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "半经典共形块是在中心荷 $c\\to\\infty$ 且权重按 $h\\sim c$ 缩放时的维拉索罗块极限。常写作 $\\mathcal F\\sim\\exp[-(c/6)f(h_i/c,h_p/c;z)]$，其中 $f$ 是经典块函数。该极限与 AdS3 中测地线网络、单值化方法和三维引力作用量相连。它把二维 CFT 的大中心荷谱与经典几何近似联系起来。\n\n这些共形块和极限常用于把四点函数拆成可控制的近似。全局块、维拉索罗块和半经典块保留的对称性层级不同；重轻或轻锥极限则选择特定谱区间，适合提取大自旋行为、热化近似或 AdS3 几何解释。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "半经典共形块",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8A%E7%BB%8F%E5%85%B8%E5%85%B1%E5%BD%A2%E5%9D%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "半经典共形块",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8A%E7%BB%8F%E5%85%B8%E5%85%B1%E5%BD%A2%E5%9D%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "semiclassical conformal block",
+          "url": "https://en.wikipedia.org/w/index.php?search=semiclassical%20conformal%20block"
+        }
+      ]
+    },
+    {
+      "chinese_name": "重算符极限",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "重算符极限指外部或中间算符维数随中心荷一起增大，常取 $h_H/c$ 固定，其中 $h_H$ 是重算符权重。重算符在 AdS3/CFT2 中会反作用几何，可能对应 conical defect 或 BTZ 黑洞背景。相关函数中的轻探针传播在该背景上近似计算。\n\n这个极限让 CFT 数据具有半经典引力解释，但仍由维拉索罗对称严格约束。这些共形块和极限常用于把四点函数拆成可控制的近似。全局块、维拉索罗块和半经典块保留的对称性层级不同；重轻或轻锥极限则选择特定谱区间，适合提取大自旋行为、热化近似或 AdS3 几何解释。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "重算符极限",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8D%E7%AE%97%E7%AC%A6%E6%9E%81%E9%99%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "重算符极限",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8D%E7%AE%97%E7%AC%A6%E6%9E%81%E9%99%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "heavy operator limit",
+          "url": "https://en.wikipedia.org/w/index.php?search=heavy%20operator%20limit"
+        }
+      ]
+    },
+    {
+      "chinese_name": "轻算符极限",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "轻算符极限中算符维数在大中心荷极限下保持 $h_L=O(1)$，其中 $h_L$ 是轻算符权重。轻算符可作为探针，不显著改变由重算符或热态形成的背景。其相关函数常用全局块或重轻 Virasoro 块近似描述。\n\n该极限区分探针动力学与背景几何反作用，是研究热化、纠缠和黑洞微观态的常用近似。这些共形块和极限常用于把四点函数拆成可控制的近似。全局块、维拉索罗块和半经典块保留的对称性层级不同；重轻或轻锥极限则选择特定谱区间，适合提取大自旋行为、热化近似或 AdS3 几何解释。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "轻算符极限",
+          "url": "https://www.baidu.com/s?wd=%E8%BD%BB%E7%AE%97%E7%AC%A6%E6%9E%81%E9%99%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "轻算符极限",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BD%BB%E7%AE%97%E7%AC%A6%E6%9E%81%E9%99%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "light operator limit",
+          "url": "https://en.wikipedia.org/w/index.php?search=light%20operator%20limit"
+        }
+      ]
+    },
+    {
+      "chinese_name": "重轻极限",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "重轻极限同时含有随中心荷缩放的重算符和保持有限维数的轻算符。典型四点函数写作 $\\langle O_H O_H O_L O_L\\rangle$，其中 $O_H$ 形成半经典背景，$O_L$ 是探针。Virasoro 真空块在该极限可重求和重算符对应的应力张量交换。\n\n它用于分析 AdS3 黑洞背景中的轻场传播、热相关函数和信息恢复问题。这些共形块和极限常用于把四点函数拆成可控制的近似。全局块、维拉索罗块和半经典块保留的对称性层级不同；重轻或轻锥极限则选择特定谱区间，适合提取大自旋行为、热化近似或 AdS3 几何解释。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "重轻极限",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8D%E8%BD%BB%E6%9E%81%E9%99%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "重轻极限",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8D%E8%BD%BB%E6%9E%81%E9%99%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "heavy light limit",
+          "url": "https://en.wikipedia.org/w/index.php?search=heavy%20light%20limit"
+        }
+      ]
+    },
+    {
+      "chinese_name": "庞加莱盘CFT",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "庞加莱盘CFT通常指在双曲盘几何或其边界上组织的共形理论描述，常与 AdS2 或二维边界问题相关。盘度量可写成 $ds^2=4|dz|^2/(1-|z|^2)^2$，其中 $|z|<1$。共形映射把盘、上半平面和边界条件联系起来。相关函数需同时满足体共形对称和边界约束，因此常用边界 OPE、镜像法和 SL(2,R) 表示论分析。\n\n这些共形块和极限常用于把四点函数拆成可控制的近似。全局块、维拉索罗块和半经典块保留的对称性层级不同；重轻或轻锥极限则选择特定谱区间，适合提取大自旋行为、热化近似或 AdS3 几何解释。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "庞加莱盘CFT",
+          "url": "https://www.baidu.com/s?wd=%E5%BA%9E%E5%8A%A0%E8%8E%B1%E7%9B%98CFT%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "庞加莱盘CFT",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BA%9E%E5%8A%A0%E8%8E%B1%E7%9B%98CFT"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "poincare disk CFT",
+          "url": "https://en.wikipedia.org/w/index.php?search=poincare%20disk%20CFT"
+        }
+      ]
+    },
+    {
+      "chinese_name": "二维CFT",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "二维CFT因局域共形群无限维而具有特殊可解性。全纯坐标下应力张量满足 $T(z)T(0)\\sim c/(2z^4)+2T(0)/z^2+\\partial T(0)/z$，其中 $c$ 是中心荷。这个 OPE 生成维拉索罗代数，使相关函数、表示和模性质受到强约束。二维 CFT 连接统计临界点、弦世界面、量子 Hall 边缘和三维引力全息。\n\n不同维数和超对称版本的 CFT 共享共形表示论，却拥有很不同的动力学工具。二维依赖维拉索罗代数，三维常依赖数值自举，四维超共形理论还受 R 对称和 BPS 缩短保护；比较它们能看出哪些结论来自对称性，哪些来自额外结构。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "二维CFT",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%8C%E7%BB%B4CFT%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "二维CFT",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%8C%E7%BB%B4CFT"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "two dimensional CFT",
+          "url": "https://en.wikipedia.org/w/index.php?search=two%20dimensional%20CFT"
+        }
+      ]
+    },
+    {
+      "chinese_name": "三维CFT",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "三维CFT是三维临界现象和许多量子相变的连续描述，典型例子包括 Ising、O(N) 和 Wilson-Fisher 固定点。标量两点函数仍为 $\\langle O(x)O(0)\\rangle\\propto |x|^{-2\\Delta}$，其中 $\\Delta$ 由强耦合固定点决定。三维缺少二维的无限维对称，因而数值自举、蒙特卡洛和 ε 展开互补。\n\n它也出现在 AdS4/CFT3 和凝聚态临界边界问题中。不同维数和超对称版本的 CFT 共享共形表示论，却拥有很不同的动力学工具。二维依赖维拉索罗代数，三维常依赖数值自举，四维超共形理论还受 R 对称和 BPS 缩短保护；比较它们能看出哪些结论来自对称性，哪些来自额外结构。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "三维CFT",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%89%E7%BB%B4CFT%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "三维CFT",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%89%E7%BB%B4CFT"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "three dimensional CFT",
+          "url": "https://en.wikipedia.org/w/index.php?search=three%20dimensional%20CFT"
+        }
+      ]
+    },
+    {
+      "chinese_name": "四维CFT",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "四维CFT包含规范理论固定点和超共形理论，是研究高维量子场论结构的核心舞台。能动张量迹反常写作 $\\langle T^\\mu{}_{\\mu}\\rangle=(c/16\\pi^2)W^2-(a/16\\pi^2)E_4+\\cdots$，其中 $a,c$ 是中心荷型反常系数。四维共形对称强约束三点函数和散射振幅极限，但仍允许丰富动力学，如 N4 超杨-米尔斯和 Banks-Zaks 固定点。\n\n不同维数和超对称版本的 CFT 共享共形表示论，却拥有很不同的动力学工具。二维依赖维拉索罗代数，三维常依赖数值自举，四维超共形理论还受 R 对称和 BPS 缩短保护；比较它们能看出哪些结论来自对称性，哪些来自额外结构。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "四维CFT",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%9B%E7%BB%B4CFT%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "四维CFT",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%9B%E7%BB%B4CFT"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "four dimensional CFT",
+          "url": "https://en.wikipedia.org/w/index.php?search=four%20dimensional%20CFT"
+        }
+      ]
+    },
+    {
+      "chinese_name": "超共形代数",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "超共形代数把共形生成元与超对称生成元合并，包含 $Q$ 超荷和 $S$ 特殊超共形荷。基本结构如 $\\{Q,S\\}\\sim D+M+R$，其中 $D$ 是尺度生成元，$M$ 是洛伦兹生成元，$R$ 是 R 对称。超共形表示受到 BPS 缩短条件约束，某些算符维数由 R 荷精确决定。\n\n该代数使强耦合 CFT 出现可保护谱和精确结果。不同维数和超对称版本的 CFT 共享共形表示论，却拥有很不同的动力学工具。二维依赖维拉索罗代数，三维常依赖数值自举，四维超共形理论还受 R 对称和 BPS 缩短保护；比较它们能看出哪些结论来自对称性，哪些来自额外结构。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "超共形代数",
+          "url": "https://www.baidu.com/s?wd=%E8%B6%85%E5%85%B1%E5%BD%A2%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "超共形代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B6%85%E5%85%B1%E5%BD%A2%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "superconformal algebraic",
+          "url": "https://en.wikipedia.org/w/index.php?search=superconformal%20algebraic"
+        }
+      ]
+    },
+    {
+      "chinese_name": "N1超共形",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "N1超共形理论具有四个超荷，是四维超对称 CFT 的最小情形。手征一次算符满足 $\\Delta=3R/2$，其中 $R$ 是超共形 R 荷。这个关系来自 BPS 缩短，保护手征环中的维数不受连续修正。a 最大化可确定真实 R 对称，进而给出中心荷 $a,c$。\n\nN1 框架适合研究 Seiberg 对偶、手征环和超势形变。不同维数和超对称版本的 CFT 共享共形表示论，却拥有很不同的动力学工具。二维依赖维拉索罗代数，三维常依赖数值自举，四维超共形理论还受 R 对称和 BPS 缩短保护；比较它们能看出哪些结论来自对称性，哪些来自额外结构。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "N1超共形",
+          "url": "https://www.baidu.com/s?wd=N1%E8%B6%85%E5%85%B1%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "N1超共形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=N1%E8%B6%85%E5%85%B1%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "N1 superconformal",
+          "url": "https://en.wikipedia.org/w/index.php?search=N1%20superconformal"
+        }
+      ]
+    },
+    {
+      "chinese_name": "N2超共形",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "N2超共形理论具有更大的 R 对称 $SU(2)_R\\times U(1)_r$，表示和模空间结构更受限制。库仑支算符常满足 $\\Delta=|r|$，其中 $r$ 是 $U(1)_r$ 荷。Higgs 支受超Kähler几何约束，Schur 扇区可映到二维手征代数。N2 理论连接 Seiberg-Witten 几何、S 对偶和 class S 构造，是四维强耦合 CFT 的精确实验场。\n\n不同维数和超对称版本的 CFT 共享共形表示论，却拥有很不同的动力学工具。二维依赖维拉索罗代数，三维常依赖数值自举，四维超共形理论还受 R 对称和 BPS 缩短保护；比较它们能看出哪些结论来自对称性，哪些来自额外结构。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "N2超共形",
+          "url": "https://www.baidu.com/s?wd=N2%E8%B6%85%E5%85%B1%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "N2超共形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=N2%E8%B6%85%E5%85%B1%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "N2 superconformal",
+          "url": "https://en.wikipedia.org/w/index.php?search=N2%20superconformal"
+        }
+      ]
+    },
+    {
+      "chinese_name": "N4超杨-米尔斯",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "N4超杨-米尔斯是四维最大超对称规范 CFT，耦合常数不跑动。其 t Hooft 耦合为 $\\lambda=g_{YM}^2N$，其中 $g_{YM}$ 是杨-米尔斯耦合，$N$ 是颜色数。理论具有 $PSU(2,2|4)$ 超共形对称和 $SU(4)_R$ R 对称。它在平面极限具有可积结构，并通过 AdS5/CFT4 与 IIB 弦论相连，是强耦合规范理论的基准模型。\n\n不同维数和超对称版本的 CFT 共享共形表示论，却拥有很不同的动力学工具。二维依赖维拉索罗代数，三维常依赖数值自举，四维超共形理论还受 R 对称和 BPS 缩短保护；比较它们能看出哪些结论来自对称性，哪些来自额外结构。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "N4超杨-米尔斯",
+          "url": "https://www.baidu.com/s?wd=N4%E8%B6%85%E6%9D%A8-%E7%B1%B3%E5%B0%94%E6%96%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "N4超杨-米尔斯",
+          "url": "https://zh.wikipedia.org/w/index.php?search=N4%E8%B6%85%E6%9D%A8-%E7%B1%B3%E5%B0%94%E6%96%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "N4 super yang mills",
+          "url": "https://en.wikipedia.org/w/index.php?search=N4%20super%20yang%20mills"
+        }
+      ]
+    },
+    {
+      "chinese_name": "R对称",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "R对称是作用在超荷上的内部对称，因此不同于普通味对称。若 $Q\\to e^{i\\alpha}Q$，则带 R 荷的手征算符维数可被超共形代数固定。四维 N1 中有 $\\Delta=3R/2$，其中 $R$ 是超共形 R 荷。R 对称还控制超势项选择定则、反常和 BPS 态分类；在超共形固定点上，正确 R 对称往往由动力学混合后确定。\n\n不同维数和超对称版本的 CFT 共享共形表示论，却拥有很不同的动力学工具。二维依赖维拉索罗代数，三维常依赖数值自举，四维超共形理论还受 R 对称和 BPS 缩短保护；比较它们能看出哪些结论来自对称性，哪些来自额外结构。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "R对称",
+          "url": "https://www.baidu.com/s?wd=R%E5%AF%B9%E7%A7%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "R对称",
+          "url": "https://zh.wikipedia.org/w/index.php?search=R%E5%AF%B9%E7%A7%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "R symmetry",
+          "url": "https://en.wikipedia.org/w/index.php?search=R%20symmetry"
+        }
+      ]
+    },
+    {
+      "chinese_name": "手征代数",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "手征代数是二维 CFT 中由全纯场及其 OPE 构成的代数，也可由四维 N2 SCFT 的 Schur 扇区降维得到。二维 OPE 形如 $A(z)B(0)\\sim\\sum_n C_n(0)/z^n$，其中 $A,B,C_n$ 属于手征代数。它记录受保护算符、中心荷和 flavor Kac-Moody 对称。手征代数把高维强耦合信息压缩到可计算的二维代数结构中。\n\n不同维数和超对称版本的 CFT 共享共形表示论，却拥有很不同的动力学工具。二维依赖维拉索罗代数，三维常依赖数值自举，四维超共形理论还受 R 对称和 BPS 缩短保护；比较它们能看出哪些结论来自对称性，哪些来自额外结构。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "手征代数",
+          "url": "https://www.baidu.com/s?wd=%E6%89%8B%E5%BE%81%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "手征代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%8B%E5%BE%81%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "chiral algebraic",
+          "url": "https://en.wikipedia.org/w/index.php?search=chiral%20algebraic"
+        }
+      ]
+    },
+    {
+      "chinese_name": "舒尔算符",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "舒尔算符是四维 N2 SCFT 中满足特定 BPS 条件、能映到二维手征代数的算符。条件可表示为 $\\Delta-2R-j_1-j_2=0$，其中 $R$ 是 $SU(2)_R$ 权重，$j_1,j_2$ 是洛伦兹自旋。它们对超荷上同调非平凡，相关函数在二维平面上变成 meromorphic。舒尔扇区保护了 flavor 流、应力张量等信息，是构造精确 chiral algebra 的入口。\n\n不同维数和超对称版本的 CFT 共享共形表示论，却拥有很不同的动力学工具。二维依赖维拉索罗代数，三维常依赖数值自举，四维超共形理论还受 R 对称和 BPS 缩短保护；比较它们能看出哪些结论来自对称性，哪些来自额外结构。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "舒尔算符",
+          "url": "https://www.baidu.com/s?wd=%E8%88%92%E5%B0%94%E7%AE%97%E7%AC%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "舒尔算符",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%88%92%E5%B0%94%E7%AE%97%E7%AC%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "schur operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=schur%20operator"
+        }
+      ]
+    },
+    {
+      "chinese_name": "指数线缺陷",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "指数线缺陷是沿一维轨迹插入的非局域算符，可由路径有序指数定义。Wilson 型线算符写作 $W_R(C)=\\mathrm{Tr}_R P\\exp(i\\int_C A_\\mu dx^\\mu+\\cdots)$，其中 $R$ 是表示，$C$ 是路径，省略项可含标量耦合。在 CFT 中直线或圆形缺陷保留一部分共形对称，定义缺陷谱和位移算符。\n\n它探测带电探针、全息弦和广义对称结构。不同维数和超对称版本的 CFT 共享共形表示论，却拥有很不同的动力学工具。二维依赖维拉索罗代数，三维常依赖数值自举，四维超共形理论还受 R 对称和 BPS 缩短保护；比较它们能看出哪些结论来自对称性，哪些来自额外结构。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "指数线缺陷",
+          "url": "https://www.baidu.com/s?wd=%E6%8C%87%E6%95%B0%E7%BA%BF%E7%BC%BA%E9%99%B7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "指数线缺陷",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8C%87%E6%95%B0%E7%BA%BF%E7%BC%BA%E9%99%B7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "exponent line defect",
+          "url": "https://en.wikipedia.org/w/index.php?search=exponent%20line%20defect"
+        }
+      ]
+    },
+    {
+      "chinese_name": "赝临界指数",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "赝临界指数描述有限大小、显式破缺或交叉区域中从近似幂律拟合出的有效指数。若观测量在有限窗口内满足 $O(t)\\sim t^{-\\gamma_{eff}}$，其中 $t$ 是约化控制参数，$\\gamma_{eff}$ 是赝指数。它不一定等于真正固定点的临界指数，而会随窗口、尺度和修正项变化。\n\n该概念常用于数值模拟和实验数据尚未进入渐近临界区时的分析。不同维数和超对称版本的 CFT 共享共形表示论，却拥有很不同的动力学工具。二维依赖维拉索罗代数，三维常依赖数值自举，四维超共形理论还受 R 对称和 BPS 缩短保护；比较它们能看出哪些结论来自对称性，哪些来自额外结构。在有理、超对称或全息语境中，这些数据还会带有额外整合条件，如模群表示、BPS 缩短或大中心荷极限。它们减少可调参数，但也要求明确采用的代数扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "赝临界指数",
+          "url": "https://www.baidu.com/s?wd=%E8%B5%9D%E4%B8%B4%E7%95%8C%E6%8C%87%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "赝临界指数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B5%9D%E4%B8%B4%E7%95%8C%E6%8C%87%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pseudo critical exponent",
+          "url": "https://en.wikipedia.org/w/index.php?search=pseudo%20critical%20exponent"
+        }
+      ]
+    },
+    {
+      "chinese_name": "雷尼熵",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "雷尼熵是一族由约化密度矩阵幂次定义的纠缠量，常用于复制技巧计算。定义为 $S_n=(1/(1-n))\\ln\\mathrm{Tr}\\rho_A^n$，其中 $\\rho_A$ 是区域 $A$ 的约化密度矩阵，$n$ 是复制指数。$n\\to1$ 极限给纠缠熵。CFT 中雷尼熵可转化为分支覆盖空间或 twist 算符相关函数，揭示中心荷、边界条件和拓扑扇区信息。\n\n信息量和热态概念把 CFT 相关函数转化为密度矩阵语言。它们通常依赖区域、温度或耦合空间度量，而不是单个局域算符；因此在全息、量子临界系统和相对熵证明中，几何解释与代数正性同样重要。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "雷尼熵",
+          "url": "https://www.baidu.com/s?wd=%E9%9B%B7%E5%B0%BC%E7%86%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "雷尼熵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9B%B7%E5%B0%BC%E7%86%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "renyi entropy",
+          "url": "https://en.wikipedia.org/w/index.php?search=renyi%20entropy"
+        }
+      ]
+    },
+    {
+      "chinese_name": "纠缠熵",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "纠缠熵度量子系统与其补集之间的量子关联，由 $S_A=-\\mathrm{Tr}\\rho_A\\ln\\rho_A$ 定义，其中 $\\rho_A$ 是区域 $A$ 的约化密度矩阵。二维 CFT 基态中单区间结果为 $S_A=(c/3)\\ln(\\ell/\\epsilon)+\\cdots$，其中 $c$ 是中心荷，$\\ell$ 是区间长度，$\\epsilon$ 是 UV cutoff。它连接临界自由度、全息面积公式和量子信息不等式。\n\n信息量和热态概念把 CFT 相关函数转化为密度矩阵语言。它们通常依赖区域、温度或耦合空间度量，而不是单个局域算符；因此在全息、量子临界系统和相对熵证明中，几何解释与代数正性同样重要。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "纠缠熵",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%A0%E7%BC%A0%E7%86%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "纠缠熵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%A0%E7%BC%A0%E7%86%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "entanglement entropy",
+          "url": "https://en.wikipedia.org/w/index.php?search=entanglement%20entropy"
+        }
+      ]
+    },
+    {
+      "chinese_name": "互信息",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "互信息衡量两个区域之间总关联，定义为 $I(A:B)=S_A+S_B-S_{A\\cup B}$，其中 $S$ 是纠缠熵。与单个区域熵不同，互信息的面积律 UV 发散会相互抵消，因此在相隔区域间通常有限。CFT 中它由多区间 twist 算符四点函数控制，并对 OPE 数据敏感。\n\n互信息非负，反映强次可加性，是比较场论、格点和全息相关结构的稳健量。信息量和热态概念把 CFT 相关函数转化为密度矩阵语言。它们通常依赖区域、温度或耦合空间度量，而不是单个局域算符；因此在全息、量子临界系统和相对熵证明中，几何解释与代数正性同样重要。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "互信息",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%92%E4%BF%A1%E6%81%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "互信息",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%92%E4%BF%A1%E6%81%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mutual information",
+          "url": "https://en.wikipedia.org/w/index.php?search=mutual%20information"
+        }
+      ]
+    },
+    {
+      "chinese_name": "相对熵",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "相对熵度量两个密度矩阵的可区分性，定义为 $S(\\rho||\\sigma)=\\mathrm{Tr}\\rho\\ln\\rho-\\mathrm{Tr}\\rho\\ln\\sigma$，其中 $\\rho,\\sigma$ 是同一代数上的态。它非负且在限制到子区域时单调不增。CFT 中相对熵与模哈密顿量满足 $S(\\rho||\\sigma)=\\Delta\\langle K\\rangle-\\Delta S$。该关系连接第一律纠缠、能量条件和全息引力方程。\n\n信息量和热态概念把 CFT 相关函数转化为密度矩阵语言。它们通常依赖区域、温度或耦合空间度量，而不是单个局域算符；因此在全息、量子临界系统和相对熵证明中，几何解释与代数正性同样重要。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相对熵",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E5%AF%B9%E7%86%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相对熵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E5%AF%B9%E7%86%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "relative entropy",
+          "url": "https://en.wikipedia.org/w/index.php?search=relative%20entropy"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子费希尔信息",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子费希尔信息刻画一族量子态对参数变化的可辨别度，也是相对熵的二阶项。若 $\\rho(\\lambda)$ 是参数族，则 $G_{\\lambda\\lambda}=\\partial_\\lambda^2 S(\\rho(\\lambda)||\\rho(0))|_{0}$，其中 $S$ 是相对熵。它给出量子估计的 Cramer-Rao 界，并在 CFT 中与保真度易感率、模哈密顿量涨落和全息规范场能量相连。\n\n对边缘形变，它也可定义共形流形度量。信息量和热态概念把 CFT 相关函数转化为密度矩阵语言。它们通常依赖区域、温度或耦合空间度量，而不是单个局域算符；因此在全息、量子临界系统和相对熵证明中，几何解释与代数正性同样重要。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子费希尔信息",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E8%B4%B9%E5%B8%8C%E5%B0%94%E4%BF%A1%E6%81%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子费希尔信息",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E8%B4%B9%E5%B8%8C%E5%B0%94%E4%BF%A1%E6%81%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum fisher information",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20fisher%20information"
+        }
+      ]
+    },
+    {
+      "chinese_name": "热CFT",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "热CFT研究共形理论在有限温度下的热态相关函数和热力学。密度矩阵为 $\\rho_T=e^{-H/T}/Z$，其中 $H$ 是哈密顿量，$T$ 是温度，$Z$ 是配分函数。温度引入唯一能标，使能量密度按 $\\epsilon\\propto T^d$ 标度，系数由自由度决定。热态破坏真空共形不变性但保留空间旋转和平移，对应全息中黑洞背景。\n\n信息量和热态概念把 CFT 相关函数转化为密度矩阵语言。它们通常依赖区域、温度或耦合空间度量，而不是单个局域算符；因此在全息、量子临界系统和相对熵证明中，几何解释与代数正性同样重要。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "热CFT",
+          "url": "https://www.baidu.com/s?wd=%E7%83%ADCFT%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "热CFT",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%83%ADCFT"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "thermal CFT",
+          "url": "https://en.wikipedia.org/w/index.php?search=thermal%20CFT"
+        }
+      ]
+    },
+    {
+      "chinese_name": "有限温CFT",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "有限温CFT可在欧氏时间圆上定义，圆周长为 $\\beta=1/T$，其中 $T$ 是温度。场满足热边界条件，热相关函数写作 $\\langle O(\\tau)O(0)\\rangle_\\beta=Z^{-1}\\mathrm{Tr}(e^{-\\beta H}O(\\tau)O(0))$。在二维理论中，平面到圆柱的共形映射能直接给出许多有限温两点函数。有限温还使 OPE 与流体长波模相互衔接。\n\n信息量和热态概念把 CFT 相关函数转化为密度矩阵语言。它们通常依赖区域、温度或耦合空间度量，而不是单个局域算符；因此在全息、量子临界系统和相对熵证明中，几何解释与代数正性同样重要。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "有限温CFT",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%89%E9%99%90%E6%B8%A9CFT%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "有限温CFT",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%89%E9%99%90%E6%B8%A9CFT"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "finite temperature CFT",
+          "url": "https://en.wikipedia.org/w/index.php?search=finite%20temperature%20CFT"
+        }
+      ]
+    },
+    {
+      "chinese_name": "共形流形",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "共形流形是由精确边缘耦合参数化的一族 CFT 固定点，沿其移动不破坏共形不变性。若边缘算符 $O_i$ 维数等于 $d$，形变 $\\delta S=\\lambda^i\\int O_i$ 可能生成流形坐标 $\\lambda^i$。流形上的度量由两点函数定义，$\\langle O_i(x)O_j(0)\\rangle=g_{ij}/|x|^{2d}$。它出现在 N4 超杨-米尔斯和若干超共形理论中。\n\n信息量和热态概念把 CFT 相关函数转化为密度矩阵语言。它们通常依赖区域、温度或耦合空间度量，而不是单个局域算符；因此在全息、量子临界系统和相对熵证明中，几何解释与代数正性同样重要。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "共形流形",
+          "url": "https://www.baidu.com/s?wd=%E5%85%B1%E5%BD%A2%E6%B5%81%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "共形流形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%B1%E5%BD%A2%E6%B5%81%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "conformal manifold",
+          "url": "https://en.wikipedia.org/w/index.php?search=conformal%20manifold"
+        }
+      ]
+    },
+    {
+      "chinese_name": "边缘算符",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "边缘算符是标度维数等于时空维数的局域算符，加入作用量后耦合无经典量纲。形变写作 $S\\to S+\\lambda\\int d^dx\\,O(x)$，其中 $\\Delta_O=d$。若 β 函数量子修正仍为零，它是精确边缘算符；若流向相关或无关方向，则只是经典边缘。\n\n边缘算符决定共形流形、BKT 型流和 CFT 附近的可控形变。信息量和热态概念把 CFT 相关函数转化为密度矩阵语言。它们通常依赖区域、温度或耦合空间度量，而不是单个局域算符；因此在全息、量子临界系统和相对熵证明中，几何解释与代数正性同样重要。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "边缘算符",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%B9%E7%BC%98%E7%AE%97%E7%AC%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "边缘算符",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%B9%E7%BC%98%E7%AE%97%E7%AC%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "marginal operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=marginal%20operator"
+        }
+      ]
+    },
+    {
+      "chinese_name": "相关长度指数",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "相关长度指数描述临界点附近相关长度发散的幂律。定义为 $\\xi\\sim |t|^{-\\nu}$，其中 $\\xi$ 是相关长度，$t$ 是约化温度或控制参数，$\\nu$ 是指数。在 CFT 语言中，相关形变算符维数 $\\Delta$ 给出 $\\nu=1/(d-\\Delta)$，其中 $d$ 是维数。它连接重整化群本征值与实验临界行为，是普适类识别的基本指数。\n\n临界指数和单调定理描述的是 RG 流在固定点附近或固定点之间的普适结构。指数由相关算符维数决定，单调函数则度量自由度随尺度降低；二者结合后，才能把实验临界行为、数值模拟和抽象 CFT 数据互相翻译。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相关长度指数",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E5%85%B3%E9%95%BF%E5%BA%A6%E6%8C%87%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相关长度指数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E5%85%B3%E9%95%BF%E5%BA%A6%E6%8C%87%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "correlation length exponent",
+          "url": "https://en.wikipedia.org/w/index.php?search=correlation%20length%20exponent"
+        }
+      ]
+    },
+    {
+      "chinese_name": "临界指数",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "临界指数是一组描述临界点附近物理量幂律奇异性的普适数。例子包括 $M\\sim |t|^\\beta$、$\\chi\\sim |t|^{-\\gamma}$ 和 $\\xi\\sim |t|^{-\\nu}$，其中 $M$ 是序参量，$\\chi$ 是易感率，$\\xi$ 是相关长度。CFT 中这些指数由低维相关算符的标度维数决定，并满足标度关系。\n\n它们不依赖微观格点细节，而刻画固定点普适类。临界指数和单调定理描述的是 RG 流在固定点附近或固定点之间的普适结构。指数由相关算符维数决定，单调函数则度量自由度随尺度降低；二者结合后，才能把实验临界行为、数值模拟和抽象 CFT 数据互相翻译。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "临界指数",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%B4%E7%95%8C%E6%8C%87%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "临界指数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%B4%E7%95%8C%E6%8C%87%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "critical exponent",
+          "url": "https://en.wikipedia.org/w/index.php?search=critical%20exponent"
+        }
+      ]
+    },
+    {
+      "chinese_name": "无质量流",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "无质量流是两个 CFT 固定点之间的重整化群轨道，沿途没有质量隙生成。可写作 $\\mu dg^i/d\\mu=\\beta^i(g)$，其中 $g^i$ 是耦合，$\\mu$ 是 RG 尺度。红外极限仍为 CFT，但中心荷或球自由能通常降低。二维中无质量流可由相关形变触发并受 c 定理约束；在全息中，它对应从一个 AdS 区域流向另一个 AdS 区域的 domain wall。\n\n临界指数和单调定理描述的是 RG 流在固定点附近或固定点之间的普适结构。指数由相关算符维数决定，单调函数则度量自由度随尺度降低；二者结合后，才能把实验临界行为、数值模拟和抽象 CFT 数据互相翻译。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "无质量流",
+          "url": "https://www.baidu.com/s?wd=%E6%97%A0%E8%B4%A8%E9%87%8F%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "无质量流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%97%A0%E8%B4%A8%E9%87%8F%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "massless flow",
+          "url": "https://en.wikipedia.org/w/index.php?search=massless%20flow"
+        }
+      ]
+    },
+    {
+      "chinese_name": "扎莫洛奇科夫度量",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "扎莫洛奇科夫度量是 CFT 边缘算符耦合空间上的自然度量，由两点函数归一化给出。定义为 $\\langle O_i(x)O_j(0)\\rangle=g_{ij}/|x|^{2d}$，其中 $O_i$ 是精确边缘算符，$d$ 是维数。它度量相邻 CFT 的距离，并进入共形流形的曲率、tt* 几何和量子信息保真度。\n\n二维中该度量也与 c 定理证明中的正定性密切相关。临界指数和单调定理描述的是 RG 流在固定点附近或固定点之间的普适结构。指数由相关算符维数决定，单调函数则度量自由度随尺度降低；二者结合后，才能把实验临界行为、数值模拟和抽象 CFT 数据互相翻译。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "扎莫洛奇科夫度量",
+          "url": "https://www.baidu.com/s?wd=%E6%89%8E%E8%8E%AB%E6%B4%9B%E5%A5%87%E7%A7%91%E5%A4%AB%E5%BA%A6%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "扎莫洛奇科夫度量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%8E%E8%8E%AB%E6%B4%9B%E5%A5%87%E7%A7%91%E5%A4%AB%E5%BA%A6%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "zamolodchikov metric",
+          "url": "https://en.wikipedia.org/w/index.php?search=zamolodchikov%20metric"
+        }
+      ]
+    },
+    {
+      "chinese_name": "c定理",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "c定理说明二维幺正局域量子场论中存在沿 RG 流单调下降的函数，在固定点等于中心荷。可写成 $dc/d\\ln\\mu\\le0$，其中 $\\mu$ 是能标。该单调性源于应力张量两点函数的反射正性和守恒律。它排除了二维中自由度沿 RG 流增加的情形，并把紫外与红外 CFT 的中心荷排序，是理解不可逆 RG 的原型。\n\n临界指数和单调定理描述的是 RG 流在固定点附近或固定点之间的普适结构。指数由相关算符维数决定，单调函数则度量自由度随尺度降低；二者结合后，才能把实验临界行为、数值模拟和抽象 CFT 数据互相翻译。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "c定理",
+          "url": "https://www.baidu.com/s?wd=c%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "c定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=c%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "c theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=c%20theorem"
+        }
+      ]
+    },
+    {
+      "chinese_name": "a定理",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "a定理是四维中 c 定理的对应陈述，说明 Euler 反常系数 $a$ 沿幺正 RG 流从紫外到红外减少。写作 $a_{UV}>a_{IR}$，其中两端为固定点的 Weyl 反常系数。证明依赖 dilaton 有效作用和散射振幅正性。a 定理约束四维 CFT 之间的流、超对称 a 最大化和可能的固定点结构，表明自由度计数存在方向性。\n\n临界指数和单调定理描述的是 RG 流在固定点附近或固定点之间的普适结构。指数由相关算符维数决定，单调函数则度量自由度随尺度降低；二者结合后，才能把实验临界行为、数值模拟和抽象 CFT 数据互相翻译。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "a定理",
+          "url": "https://www.baidu.com/s?wd=a%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "a定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=a%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "a theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=a%20theorem"
+        }
+      ]
+    },
+    {
+      "chinese_name": "F定理",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "F定理指出三维幺正理论在球面上的自由能沿 RG 流降低。定义 $F=-\\ln |Z_{S^3}|$，其中 $Z_{S^3}$ 是三球配分函数；定理给出 $F_{UV}>F_{IR}$。它在奇数维替代 Weyl 反常中心荷，适用于三维 CFT、拓扑场论耦合和超对称 localization 计算。F 定理把纠缠熵常数项与 RG 不可逆性联系起来。\n\n临界指数和单调定理描述的是 RG 流在固定点附近或固定点之间的普适结构。指数由相关算符维数决定，单调函数则度量自由度随尺度降低；二者结合后，才能把实验临界行为、数值模拟和抽象 CFT 数据互相翻译。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "F定理",
+          "url": "https://www.baidu.com/s?wd=F%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "F定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=F%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "F theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=F%20theorem"
+        }
+      ]
+    },
+    {
+      "chinese_name": "T反T形变",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "T反T形变是二维 QFT 中由应力张量行列式生成的无关形变，保留许多可积结构。算符为 $T\\bar T=T_{zz}T_{\\bar z\\bar z}-T_{z\\bar z}^2$，其中 $T$ 是能动张量分量。形变参数具有长度平方量纲，会改变能谱并产生类似有限 cutoff 的行为。对 CFT 形变后，有限体积能级满足 Burgers 型方程，常被用来研究非局域 UV 完备和二维引力耦合。\n\n形变和高阶一致性数据说明 CFT 不是孤立表格，而是可沿耦合、边界或 OPE 通道被系统移动和比较。无关形变常引入非局域或 cutoff 特征，可积形变保留无限守恒量；四点函数、Ward 恒等式和 F 矩阵则检验这种移动是否仍保持结合律和对称性。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "T反T形变",
+          "url": "https://www.baidu.com/s?wd=T%E5%8F%8DT%E5%BD%A2%E5%8F%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "T反T形变",
+          "url": "https://zh.wikipedia.org/w/index.php?search=T%E5%8F%8DT%E5%BD%A2%E5%8F%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "T anti T deformation",
+          "url": "https://en.wikipedia.org/w/index.php?search=T%20anti%20T%20deformation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "J反T形变",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "J反T形变由一个手征 U(1) 流和反全纯应力张量组成，是二维理论中的无关但可控形变。算符写作 $J\\bar T=J_z T_{\\bar z\\bar z}$，其中 $J_z$ 是手征流，$T_{\\bar z\\bar z}$ 是右动应力张量。它通常破坏洛伦兹不变性但保留手征平移结构，能谱仍可精确演化。\n\n该形变在 warped CFT、字符串背景和非局域场论中有重要作用。形变和高阶一致性数据说明 CFT 不是孤立表格，而是可沿耦合、边界或 OPE 通道被系统移动和比较。无关形变常引入非局域或 cutoff 特征，可积形变保留无限守恒量；四点函数、Ward 恒等式和 F 矩阵则检验这种移动是否仍保持结合律和对称性。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "J反T形变",
+          "url": "https://www.baidu.com/s?wd=J%E5%8F%8DT%E5%BD%A2%E5%8F%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "J反T形变",
+          "url": "https://zh.wikipedia.org/w/index.php?search=J%E5%8F%8DT%E5%BD%A2%E5%8F%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "J anti T deformation",
+          "url": "https://en.wikipedia.org/w/index.php?search=J%20anti%20T%20deformation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "可积形变",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "可积形变是在偏离 CFT 后仍保留无限多个守恒荷的相关或无关扰动。若 $S=S_{CFT}+g\\int \\Phi$，其中 $\\Phi$ 是特定一次场，守恒流可满足 $\\bar\\partial J_s=g\\partial H_{s-1}$。这保证散射因子化并避免粒子产生。二维最小模型的热形变、sine-Gordon 理论和 T反T 形变都是典型例子。\n\n可积形变使 RG 流和精确谱可被非微扰求解。形变和高阶一致性数据说明 CFT 不是孤立表格，而是可沿耦合、边界或 OPE 通道被系统移动和比较。无关形变常引入非局域或 cutoff 特征，可积形变保留无限守恒量；四点函数、Ward 恒等式和 F 矩阵则检验这种移动是否仍保持结合律和对称性。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "可积形变",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%AF%E7%A7%AF%E5%BD%A2%E5%8F%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "可积形变",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%AF%E7%A7%AF%E5%BD%A2%E5%8F%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "integrable deformation",
+          "url": "https://en.wikipedia.org/w/index.php?search=integrable%20deformation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "标量四点函数",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "标量四点函数是共形自举中最常用的对象，因为其张量结构最少但已包含交叉约束。相同标量时 $\\langle OOOO\\rangle=(x_{12}^2x_{34}^2)^{-\\Delta}G(u,v)$，其中 $\\Delta$ 是外场维数，$u,v$ 是交叉比。函数 $G$ 的共形块展开包含所有允许中间算符。它用于提取标量谱隙、OPE 系数界和临界指数。\n\n形变和高阶一致性数据说明 CFT 不是孤立表格，而是可沿耦合、边界或 OPE 通道被系统移动和比较。无关形变常引入非局域或 cutoff 特征，可积形变保留无限守恒量；四点函数、Ward 恒等式和 F 矩阵则检验这种移动是否仍保持结合律和对称性。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "标量四点函数",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%87%E9%87%8F%E5%9B%9B%E7%82%B9%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "标量四点函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%87%E9%87%8F%E5%9B%9B%E7%82%B9%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "scalar four point function",
+          "url": "https://en.wikipedia.org/w/index.php?search=scalar%20four%20point%20function"
+        }
+      ]
+    },
+    {
+      "chinese_name": "全局沃德恒等式",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "全局沃德恒等式来自有限维共形群生成元对相关函数的整体作用为零。对 n 点函数有 $\\sum_i \\mathcal D_i^{(a)}\\langle O_1\\cdots O_n\\rangle=0$，其中 $\\mathcal D_i^{(a)}$ 是第 $i$ 个插入上生成元 $a$ 的微分表示。它固定两点函数和三点函数坐标形式，并把四点函数降为交叉比函数。\n\n与局域 Ward 恒等式相比，它不需要插入应力张量。形变和高阶一致性数据说明 CFT 不是孤立表格，而是可沿耦合、边界或 OPE 通道被系统移动和比较。无关形变常引入非局域或 cutoff 特征，可积形变保留无限守恒量；四点函数、Ward 恒等式和 F 矩阵则检验这种移动是否仍保持结合律和对称性。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "全局沃德恒等式",
+          "url": "https://www.baidu.com/s?wd=%E5%85%A8%E5%B1%80%E6%B2%83%E5%BE%B7%E6%81%92%E7%AD%89%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "全局沃德恒等式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%A8%E5%B1%80%E6%B2%83%E5%BE%B7%E6%81%92%E7%AD%89%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "global ward identity",
+          "url": "https://en.wikipedia.org/w/index.php?search=global%20ward%20identity"
+        }
+      ]
+    },
+    {
+      "chinese_name": "维拉索罗谱",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "维拉索罗谱是二维 CFT 中所有维拉索罗一次表示及其权重、重数的集合。配分函数可展开为 $Z=\\sum_{h,\\bar h}N_{h\\bar h}\\chi_h(q)\\bar\\chi_{\\bar h}(\\bar q)$，其中 $\\chi_h$ 是维拉索罗角色，$N_{h\\bar h}$ 是非负整数重数。谱必须满足模不变性、融合闭合和幺正性。它比仅列全局维数更精细，因为后代结构由完整维拉索罗代数组织。\n\n形变和高阶一致性数据说明 CFT 不是孤立表格，而是可沿耦合、边界或 OPE 通道被系统移动和比较。无关形变常引入非局域或 cutoff 特征，可积形变保留无限守恒量；四点函数、Ward 恒等式和 F 矩阵则检验这种移动是否仍保持结合律和对称性。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "维拉索罗谱",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%B4%E6%8B%89%E7%B4%A2%E7%BD%97%E8%B0%B1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "维拉索罗谱",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%B4%E6%8B%89%E7%B4%A2%E7%BD%97%E8%B0%B1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "virasoropu",
+          "url": "https://en.wikipedia.org/w/index.php?search=virasoropu"
+        }
+      ]
+    },
+    {
+      "chinese_name": "真空维尔马模",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "真空维尔马模是由恒等态出发施加负维拉索罗模式得到的表示，但需去除由平移不变性产生的零态。基态满足 $L_{n\\ge -1}|0\\rangle=0$，非平庸后代从 $L_{-2}|0\\rangle$ 开始。该模的角色记录由应力张量及其导数组成的真空后代。\n\n真空维尔马模主导真空块，在大中心荷二维 CFT 中对应 AdS3 引力的边界 graviton 扇区。形变和高阶一致性数据说明 CFT 不是孤立表格，而是可沿耦合、边界或 OPE 通道被系统移动和比较。无关形变常引入非局域或 cutoff 特征，可积形变保留无限守恒量；四点函数、Ward 恒等式和 F 矩阵则检验这种移动是否仍保持结合律和对称性。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "真空维尔马模",
+          "url": "https://www.baidu.com/s?wd=%E7%9C%9F%E7%A9%BA%E7%BB%B4%E5%B0%94%E9%A9%AC%E6%A8%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "真空维尔马模",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9C%9F%E7%A9%BA%E7%BB%B4%E5%B0%94%E9%A9%AC%E6%A8%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vacuum verma module",
+          "url": "https://en.wikipedia.org/w/index.php?search=vacuum%20verma%20module"
+        }
+      ]
+    },
+    {
+      "chinese_name": "扎莫洛奇科夫流",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "扎莫洛奇科夫流通常指二维理论中由相关算符触发并受 c 函数单调约束的 RG 流。局域形式可写成 $\\partial_i c=-G_{ij}\\beta^j$，其中 $G_{ij}$ 是耦合空间正定度量，$\\beta^j$ 是 β 函数。该关系把 c 函数梯度与 RG 速度联系起来。它说明固定点是 β 函数零点，并使二维 RG 流具有准梯度结构。\n\n形变和高阶一致性数据说明 CFT 不是孤立表格，而是可沿耦合、边界或 OPE 通道被系统移动和比较。无关形变常引入非局域或 cutoff 特征，可积形变保留无限守恒量；四点函数、Ward 恒等式和 F 矩阵则检验这种移动是否仍保持结合律和对称性。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "扎莫洛奇科夫流",
+          "url": "https://www.baidu.com/s?wd=%E6%89%8E%E8%8E%AB%E6%B4%9B%E5%A5%87%E7%A7%91%E5%A4%AB%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "扎莫洛奇科夫流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%8E%E8%8E%AB%E6%B4%9B%E5%A5%87%E7%A7%91%E5%A4%AB%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "zamolodchikovliu",
+          "url": "https://en.wikipedia.org/w/index.php?search=zamolodchikovliu"
+        }
+      ]
+    },
+    {
+      "chinese_name": "边缘形变",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "边缘形变由维数等于时空维数的算符生成，位于相关与无关扰动的分界。写作 $\\delta S=\\lambda\\int d^dx\\,O$，其中 $\\Delta_O=d$。若 OPE 中的二阶项使 β 函数非零，形变会 marginally relevant 或 irrelevant；若所有 β 函数消失，则沿共形流形移动。边缘形变常用于研究 moduli、耦合常数空间和 BKT 型临界行为。\n\n形变和高阶一致性数据说明 CFT 不是孤立表格，而是可沿耦合、边界或 OPE 通道被系统移动和比较。无关形变常引入非局域或 cutoff 特征，可积形变保留无限守恒量；四点函数、Ward 恒等式和 F 矩阵则检验这种移动是否仍保持结合律和对称性。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "边缘形变",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%B9%E7%BC%98%E5%BD%A2%E5%8F%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "边缘形变",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%B9%E7%BC%98%E5%BD%A2%E5%8F%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "marginal deformation",
+          "url": "https://en.wikipedia.org/w/index.php?search=marginal%20deformation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "轻锥极限",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "轻锥极限是四点函数中两个算符沿光锥接近的极限，通常表现为某个交叉比 $u\\to0$ 而 $v$ 固定。此时最低 twist 算符支配一个通道，另一通道必须由无限大自旋谱重现奇异性。twist 为 $\\tau=\\Delta-l$，其中 $l$ 是自旋。\n\n轻锥极限提供解析自举的入口，也约束能量相关函数和高能散射行为。形变和高阶一致性数据说明 CFT 不是孤立表格，而是可沿耦合、边界或 OPE 通道被系统移动和比较。无关形变常引入非局域或 cutoff 特征，可积形变保留无限守恒量；四点函数、Ward 恒等式和 F 矩阵则检验这种移动是否仍保持结合律和对称性。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "轻锥极限",
+          "url": "https://www.baidu.com/s?wd=%E8%BD%BB%E9%94%A5%E6%9E%81%E9%99%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "轻锥极限",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BD%BB%E9%94%A5%E6%9E%81%E9%99%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "light cone limit",
+          "url": "https://en.wikipedia.org/w/index.php?search=light%20cone%20limit"
+        }
+      ]
+    },
+    {
+      "chinese_name": "卡迪边界条件",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "卡迪边界条件是理性 CFT 中满足开闭一致性的共形边界条件。Cardy 解写作 $|a\\rangle=\\sum_i S_{ai}/\\sqrt{S_{0i}}\\,|i\\rangle\\rangle$，其中 $S_{ai}$ 是模 S 矩阵，$|i\\rangle\\rangle$ 是 Ishibashi 态。由此得到的开弦谱重数等于融合系数 $N_{ab}^{c}$。它把允许边界条件分类为与一次场标签相同的集合。\n\n形变和高阶一致性数据说明 CFT 不是孤立表格，而是可沿耦合、边界或 OPE 通道被系统移动和比较。无关形变常引入非局域或 cutoff 特征，可积形变保留无限守恒量；四点函数、Ward 恒等式和 F 矩阵则检验这种移动是否仍保持结合律和对称性。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "卡迪边界条件",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%A1%E8%BF%AA%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "卡迪边界条件",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%A1%E8%BF%AA%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cardy boundary condition",
+          "url": "https://en.wikipedia.org/w/index.php?search=cardy%20boundary%20condition"
+        }
+      ]
+    },
+    {
+      "chinese_name": "F矩阵",
+      "source_file": "words/物理/噩梦模式：前沿物理/conformal_field_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "F矩阵描述 CFT 中四个一次场融合顺序改变时共形块基底之间的变换，也称 crossing 或 6j 符号。关系为 $\\mathcal F_s^{p}=\\sum_q F_{pq}\\mathcal F_t^{q}$，其中 $p,q$ 标记中间通道。F 矩阵满足五边形恒等式，保证 OPE 结合律一致。它在理性 CFT、任意子融合范畴和拓扑量子计算中都是核心数据。\n\n形变和高阶一致性数据说明 CFT 不是孤立表格，而是可沿耦合、边界或 OPE 通道被系统移动和比较。无关形变常引入非局域或 cutoff 特征，可积形变保留无限守恒量；四点函数、Ward 恒等式和 F 矩阵则检验这种移动是否仍保持结合律和对称性。这些概念常用于比较固定点附近的可观测量和沿 RG 流的整体趋势。使用时要说明区域、尺度或形变参数，否则幂律指数、熵量和单调函数可能对应不同的物理问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "F矩阵",
+          "url": "https://www.baidu.com/s?wd=F%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "F矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=F%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "F matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=F%20matrix"
+        }
+      ]
+    }
+  ]
+}

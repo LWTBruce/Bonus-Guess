@@ -11,6 +11,53 @@ from cosmetics import rank_title_source_label  # noqa: E402
 
 
 class RankBadgeLabelTests(unittest.TestCase):
+    def test_rank_table_extends_non_clue_tracks_to_twenty(self):
+        self.assertEqual(len(rank_system.RANK_CHALLENGES), 20)
+        self.assertEqual(rank_system.RANK_CHALLENGES[0]["name"], "Class 01: Spark")
+        self.assertEqual(rank_system.RANK_CHALLENGES[-1]["name"], "Class 20: Absolute")
+        self.assertEqual(rank_system.rank_count_for_kind("free"), 20)
+        self.assertEqual(rank_system.rank_count_for_kind("crossword"), 20)
+        self.assertEqual(rank_system.rank_count_for_kind("clue"), 15)
+        self.assertEqual(rank_system.rank_difficulty_name(16), "困难")
+        self.assertEqual(rank_system.rank_difficulty_name(17), "噩梦")
+        self.assertEqual(rank_system.rank_target_difficulty(20), 12.0)
+        self.assertEqual(rank_system.RANK_CHALLENGES[14]["seconds"], 450)
+        self.assertGreater(rank_system.RANK_CHALLENGES[19]["seconds"], rank_system.RANK_CHALLENGES[14]["seconds"])
+        self.assertEqual(rank_system.rank_hint_cooldown_seconds(15), 120)
+        self.assertGreater(rank_system.rank_hint_cooldown_seconds(20), 120)
+
+    def test_rank_visibility_and_unlocks_expand_after_progress(self):
+        info = {"highest": 0, "passed": {}}
+        self.assertEqual([rank["id"] for rank in rank_system.visible_rank_challenges(info, "free")], list(range(1, 16)))
+        self.assertTrue(rank_system.rank_is_unlocked(info, 10, "free"))
+        self.assertFalse(rank_system.rank_is_unlocked(info, 11, "free"))
+
+        info["passed"] = {"10": {"first_passed_at": "2026-05-27T00:00:00"}}
+        self.assertTrue(rank_system.rank_is_unlocked(info, 11, "free"))
+        self.assertEqual(rank_system.visible_rank_challenges(info, "free")[-1]["id"], 15)
+
+        info["passed"] = {str(rank_id): {"first_passed_at": "2026-05-27T00:00:00"} for rank_id in range(10, 16)}
+        self.assertTrue(rank_system.rank_is_unlocked(info, 16, "free"))
+        self.assertEqual(rank_system.visible_rank_challenges(info, "free")[-1]["id"], 16)
+
+        info["passed"]["16"] = {"first_passed_at": "2026-05-27T00:00:00"}
+        self.assertTrue(rank_system.rank_is_unlocked(info, 17, "free"))
+        self.assertEqual(rank_system.visible_rank_challenges(info, "free")[-1]["id"], 17)
+
+    def test_rank_unlocks_require_a_chain_after_default_unlocked_ranks(self):
+        info = {"highest": 15, "passed": {"15": {"first_passed_at": "2026-05-27T00:00:00"}}}
+        self.assertFalse(rank_system.rank_is_unlocked(info, 16, "free"))
+        self.assertEqual(rank_system.visible_rank_challenges(info, "free")[-1]["id"], 15)
+
+        legacy_info = {"highest": 15, "passed": {}}
+        self.assertTrue(rank_system.rank_is_unlocked(legacy_info, 16, "free"))
+        self.assertEqual(rank_system.visible_rank_challenges(legacy_info, "free")[-1]["id"], 16)
+
+    def test_clue_track_stays_at_fifteen(self):
+        info = {"highest": 15, "passed": {str(rank_id): "2026-05-27T00:00:00" for rank_id in range(1, 16)}}
+        self.assertEqual(rank_system.visible_rank_challenges(info, "clue")[-1]["id"], 15)
+        self.assertFalse(rank_system.rank_is_unlocked(info, 16, "clue"))
+
     def test_rank_badge_labels_include_subject_and_track(self):
         cases = [
             ("物理模式", "free", "物理-限时"),

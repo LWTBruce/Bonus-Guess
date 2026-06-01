@@ -26,6 +26,19 @@ class GreekAchievementTests(unittest.TestCase):
         self.assertIn("first_greek_success", title_reward_ids)
         self.assertIn("greek_success_10", title_reward_ids)
 
+    def test_high_single_question_difficulty_achievements_are_registered(self):
+        expected = {
+            "difficulty_ten_success",
+            "difficulty_eleven_success",
+            "difficulty_twelve_success",
+            "difficulty_thirteen_success",
+        }
+        achievement_ids = {achievement_id for achievement_id, _title, _description in ACHIEVEMENTS}
+        title_reward_ids = {achievement_id for achievement_id, _reward_id, _title in ACHIEVEMENT_TITLE_REWARDS}
+
+        self.assertTrue(expected <= achievement_ids)
+        self.assertTrue({"difficulty_ten_success", "difficulty_eleven_success", "difficulty_twelve_success", "difficulty_thirteen_success"} <= title_reward_ids)
+
     def test_record_greek_answer_detection(self):
         record = {
             "selected_answer": "σ代数",

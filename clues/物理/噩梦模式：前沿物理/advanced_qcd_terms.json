@@ -1,0 +1,2693 @@
+{
+  "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+  "entries": [
+    {
+      "chinese_name": "瞬子",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "瞬子是欧氏化非阿贝尔规范场中的有限作用量鞍点，连接不同绕数的真空。其拓扑荷常写成 $Q=1/(32\\pi^2)\\int F^a_{\\mu\\nu}\\tilde F^{a\\mu\\nu}d^4x$，其中 $F$ 是场强，$\\tilde F$ 是对偶场强。$Q$ 为整数时，构型不能连续收缩到平庸真空；它不是普通粒子解，而是路径积分中按隧穿振幅加权的拓扑事件，在 QCD 中给手征反常、零模和特霍夫特顶点提供半经典来源。\n\n在半经典展开中，瞬子贡献被集体坐标积分加权，包括中心位置、尺度和颜色取向；尺度积分紫外端受渐近自由控制，红外端暴露强耦合困难。与微扰涨落相比，它改变真空连接方式，因此会改写选择定则。在分析这类对象时，边界条件和规范场光滑性不可省略；若只看局域能量密度，很容易把拓扑扇区、零模和反常选择定则混为普通涨落。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "瞬子",
+          "url": "https://www.baidu.com/s?wd=%E7%9E%AC%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "瞬子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9E%AC%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "instanton",
+          "url": "https://en.wikipedia.org/w/index.php?search=instanton"
+        }
+      ]
+    },
+    {
+      "chinese_name": "反瞬子",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "反瞬子是拓扑荷与瞬子相反的欧氏规范场鞍点，通常满足反自对偶条件。可用 $F^a_{\\mu\\nu}=-\\tilde F^a_{\\mu\\nu}$ 表示，其中 $F$ 为规范场强，$\\tilde F$ 为对偶场强。它的拓扑荷 $Q=-1$，诱导的狄拉克零模手征性也与瞬子相反。瞬子和反瞬子共同决定 θ 真空、轴反常矩阵元和低能手征动力学，二者的相互作用还会影响瞬子液体中的零模带结构。\n\n在路径积分中，反瞬子常与瞬子成对或成簇出现，二者的相对颜色取向和距离决定相互作用符号。它对 CP 奇偶通道的贡献与瞬子相互抵消或相干叠加，使拓扑涨落既能保持总拓扑荷接近零，又能留下局域手征效应。在分析这类对象时，边界条件和规范场光滑性不可省略；若只看局域能量密度，很容易把拓扑扇区、零模和反常选择定则混为普通涨落。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反瞬子",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E7%9E%AC%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反瞬子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E7%9E%AC%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "anti instanton",
+          "url": "https://en.wikipedia.org/w/index.php?search=anti%20instanton"
+        }
+      ]
+    },
+    {
+      "chinese_name": "瞬子液体",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "瞬子液体把 QCD 真空近似为瞬子和反瞬子的相互作用集合，而不是孤立稀薄事件。其配分函数可写成 $Z\\simeq\\sum_{N_+,N_-}\\int d\\Omega\\,e^{-S_{\\rm int}}$，其中 $N_\\pm$ 是两类拓扑对象数目，$d\\Omega$ 包含位置、尺度和颜色取向。该模型强调零模重叠形成低能谱密度，从而支撑手征凝聚；它能描述许多低能关联函数，但对禁闭和大距离威尔逊圈并不完整。\n\n液体图像的重点是相互作用而非单个经典解的精确形状；平均尺度和密度通常由变分或唯象拟合确定。它能自然生成低能 Dirac 谱的近零带，并解释为何许多手征量对拓扑涨落敏感，却不能单独推出线性禁闭势。在分析这类对象时，边界条件和规范场光滑性不可省略；若只看局域能量密度，很容易把拓扑扇区、零模和反常选择定则混为普通涨落。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "瞬子液体",
+          "url": "https://www.baidu.com/s?wd=%E7%9E%AC%E5%AD%90%E6%B6%B2%E4%BD%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "瞬子液体",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9E%AC%E5%AD%90%E6%B6%B2%E4%BD%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "instanton liquid",
+          "url": "https://en.wikipedia.org/w/index.php?search=instanton%20liquid"
+        }
+      ]
+    },
+    {
+      "chinese_name": "稀薄瞬子气",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "稀薄瞬子气假设瞬子之间平均距离远大于其尺度，可把多瞬子配分函数近似为独立气体。典型权重写作 $dn(\\rho)\\propto d\\rho\\,\\rho^{-5}e^{-8\\pi^2/g^2(\\rho)}$，其中 $\\rho$ 是瞬子尺度，$g(\\rho)$ 是相应重整化尺度下的耦合。高温或小尺度区域中耦合变弱时，这一近似较有控制；在零温强耦合真空中，瞬子间相互作用和红外发散会破坏简单气体图像。\n\n这一近似适合热场论中的高温区，因为 Debye 屏蔽和有限时间圆会抑制大尺度瞬子。它给轴子势和 θ 依赖真空能的高温行为提供可计算基准；若瞬子重叠概率升高，独立气体的泊松统计就会失效。在分析这类对象时，边界条件和规范场光滑性不可省略；若只看局域能量密度，很容易把拓扑扇区、零模和反常选择定则混为普通涨落。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稀薄瞬子气",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%80%E8%96%84%E7%9E%AC%E5%AD%90%E6%B0%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稀薄瞬子气",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%80%E8%96%84%E7%9E%AC%E5%AD%90%E6%B0%94"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dilute instanton gas",
+          "url": "https://en.wikipedia.org/w/index.php?search=dilute%20instanton%20gas"
+        }
+      ]
+    },
+    {
+      "chinese_name": "拓扑荷",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "拓扑荷计量规范场构型在欧氏时空中绕规范群的次数，是 QCD 真空分区的整数标签。定义常写成 $Q=\\int d^4x\\,q(x)$，其中 $q(x)=F^a_{\\mu\\nu}\\tilde F^{a\\mu\\nu}/(32\\pi^2)$ 是拓扑荷密度。对足够光滑且边界纯规范的场，$Q$ 取整数，并与狄拉克算符左右手零模数差相连。\n\n它控制 θ 项、轴反常和拓扑磁化率，也是格点计算中需要仔细流化或冷却后提取的量。拓扑荷的整数性依赖场在无穷远处趋于纯规范，因此它比局域场强更像全局绕数。格点上粗糙构型会使朴素定义偏离整数，通常借助梯度流形成平台；这个平台是否稳定，是判断拓扑测量可信度的重要线索。在分析这类对象时，边界条件和规范场光滑性不可省略；若只看局域能量密度，很容易把拓扑扇区、零模和反常选择定则混为普通涨落。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拓扑荷",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%93%E6%89%91%E8%8D%B7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拓扑荷",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%93%E6%89%91%E8%8D%B7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "topological charge",
+          "url": "https://en.wikipedia.org/w/index.php?search=topological%20charge"
+        }
+      ]
+    },
+    {
+      "chinese_name": "拓扑磁化率",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "拓扑磁化率衡量 QCD 真空拓扑荷的涨落强度，是 θ 依赖真空能的二阶响应。常定义为 $\\chi_t=\\langle Q^2\\rangle/V=\\int d^4x\\,\\langle q(x)q(0)\\rangle$，其中 $Q$ 是总拓扑荷，$V$ 是四维体积，$q(x)$ 是拓扑荷密度。在纯胶理论中它通过维滕-韦内齐亚关系解释 η' 质量；有轻夸克时手征 Ward 恒等式会压低它，使其对夸克质量和拓扑采样极为敏感。\n\n磁化率也可看作真空能密度对 θ 的曲率，因此它直接决定轴子质量的 QCD 输入。轻夸克质量趋零时，手征旋转能吸收 θ 角，使该量随夸克质量消失；这一性质常用来检验格点计算的手征控制。在分析这类对象时，边界条件和规范场光滑性不可省略；若只看局域能量密度，很容易把拓扑扇区、零模和反常选择定则混为普通涨落。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拓扑磁化率",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%93%E6%89%91%E7%A3%81%E5%8C%96%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拓扑磁化率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%93%E6%89%91%E7%A3%81%E5%8C%96%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "topological susceptibility",
+          "url": "https://en.wikipedia.org/w/index.php?search=topological%20susceptibility"
+        }
+      ]
+    },
+    {
+      "chinese_name": "θ真空",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "θ真空是把不同拓扑扇区按相位叠加得到的 QCD 真空，反映大规范变换不能由微扰连续连接。形式上 $|\\theta\\rangle=\\sum_n e^{in\\theta}|n\\rangle$，其中 $|n\\rangle$ 是绕数为 $n$ 的真空，$\\theta$ 是角变量。等价地，作用量中出现 $i\\theta Q$，$Q$ 为拓扑荷。若 θ 非零，强相互作用会产生 CP 破坏；实验上中子电偶极矩极小，构成强 CP 问题，并推动轴子机制等解释。\n\nθ 角的物理性来自拓扑扇区之间的量子相干，而不是某个局域经典场值。若存在一个无质量夸克，手征旋转可移去 θ；现实中夸克均有质量，故小而非零的 θ 会留下强 CP 破坏，这是低能强相互作用最精细的自然性问题之一。在分析这类对象时，边界条件和规范场光滑性不可省略；若只看局域能量密度，很容易把拓扑扇区、零模和反常选择定则混为普通涨落。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "θ真空",
+          "url": "https://www.baidu.com/s?wd=%CE%B8%E7%9C%9F%E7%A9%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "θ真空",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%CE%B8%E7%9C%9F%E7%A9%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "theta vacuum",
+          "url": "https://en.wikipedia.org/w/index.php?search=theta%20vacuum"
+        }
+      ]
+    },
+    {
+      "chinese_name": "轴反常",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "轴反常指经典轴向流在量子化后不再守恒，根源是费米子测度对手征旋转的非平凡雅可比。QCD 中有 $\\partial_\\mu J_5^\\mu=2im\\bar\\psi\\gamma_5\\psi+N_f g^2F\\tilde F/(16\\pi^2)$，其中 $J_5^\\mu$ 是轴流，$m$ 是夸克质量，$N_f$ 是味数。即使 $m=0$，拓扑密度项仍破坏 $U(1)_A$，解释中性 pion 衰变与 η' 质量，并把零模指数定理嵌入低能强子谱。\n\n反常并不表示理论不一致，而是经典对称在正规化后不能与规范不变性同时保持。三角图计算、Fujikawa 测度方法和 Atiyah-Singer 指数定理给出同一结论；在强相互作用中，它决定单重态轴流的特殊地位。在分析这类对象时，边界条件和规范场光滑性不可省略；若只看局域能量密度，很容易把拓扑扇区、零模和反常选择定则混为普通涨落。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "轴反常",
+          "url": "https://www.baidu.com/s?wd=%E8%BD%B4%E5%8F%8D%E5%B8%B8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "轴反常",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BD%B4%E5%8F%8D%E5%B8%B8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "axial anomaly",
+          "url": "https://en.wikipedia.org/w/index.php?search=axial%20anomaly"
+        }
+      ]
+    },
+    {
+      "chinese_name": "U1A问题",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "U1A问题是指若 QCD 的 $U(1)_A$ 手征对称像非阿贝尔手征对称那样自发破缺，本应出现额外轻赝标量，但 η' 明显很重。异常方程 $\\partial_\\mu J_5^\\mu=N_f g^2F\\tilde F/(16\\pi^2)+\\cdots$ 中，$J_5^\\mu$ 为单重态轴流，$F\\tilde F$ 为拓扑密度。拓扑涨落使单重态通道获得质量；纯胶拓扑磁化率进入 $m_{\\eta'}^2\\sim\\chi_t/f_\\pi^2$，从而使这个问题成为真空拓扑的低能显影。\n\n该问题的关键不是显式夸克质量太大，而是单重态轴对称在量子层面已经被拓扑涨落破坏。瞬子图像、纯胶拓扑磁化率和大颜色数展开给出互补解释；有限温下 U1A 是否有效恢复仍影响手征相变普适类。在分析这类对象时，边界条件和规范场光滑性不可省略；若只看局域能量密度，很容易把拓扑扇区、零模和反常选择定则混为普通涨落。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "U1A问题",
+          "url": "https://www.baidu.com/s?wd=U1A%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "U1A问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=U1A%E9%97%AE%E9%A2%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "U1A problem",
+          "url": "https://en.wikipedia.org/w/index.php?search=U1A%20problem"
+        }
+      ]
+    },
+    {
+      "chinese_name": "手征凝聚",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "手征凝聚是 QCD 真空中左右手夸克场形成的标量期望值，标志近似手征对称自发破缺。常写作 $\\langle\\bar q q\\rangle=\\langle\\bar q_L q_R+\\bar q_R q_L\\rangle$，其中 $q_L,q_R$ 是左右手投影夸克场。它不是单个强子的内部矩阵元，而是真空序参量；其大小控制 pion 作为赝戈德斯通玻色子的质量，并通过狄拉克本征值近零谱密度由班克斯-卡舍尔关系定量刻画。\n\n凝聚的数值依赖重整化尺度和方案，但其非零性作为序参量具有明确物理意义。它也决定轻强子谱的组织方式：标量伙伴通常较重，而赝标量八重态因近似 Goldstone 性异常轻，这种劈裂是低能 QCD 的核心现象。手征极限、物理夸克质量和有限体积会给同一关系带来不同修正；因此这些量常与 Ward 恒等式和谱函数一起使用，避免把近似对称误读成精确守恒。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "手征凝聚",
+          "url": "https://www.baidu.com/s?wd=%E6%89%8B%E5%BE%81%E5%87%9D%E8%81%9A%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "手征凝聚",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%8B%E5%BE%81%E5%87%9D%E8%81%9A"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "chiral condensate",
+          "url": "https://en.wikipedia.org/w/index.php?search=chiral%20condensate"
+        }
+      ]
+    },
+    {
+      "chinese_name": "手征对称破缺",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "手征对称破缺指无质量多味 QCD 的 $SU(N_f)_L\\times SU(N_f)_R$ 对称在真空中降为矢量子群。破缺模式写作 $SU(N_f)_L\\times SU(N_f)_R\\to SU(N_f)_V$，其中左右因子分别作用于 $q_L$ 与 $q_R$，矢量子群同时旋转二者。序参量是 $\\langle\\bar q q\\rangle$，它产生 $N_f^2-1$ 个轻赝标量介子。该结构约束低能手征拉氏量、散射长度和有限温相变的普适类。\n\n破缺模式还决定有效场的目标空间和允许的低能算符，因此不仅是谱学陈述。外加小夸克质量会把真空方向选定，并把 Goldstone 模提升为赝 Goldstone 模；有限温或有限密度则通过改变凝聚重排相图。手征极限、物理夸克质量和有限体积会给同一关系带来不同修正；因此这些量常与 Ward 恒等式和谱函数一起使用，避免把近似对称误读成精确守恒。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "手征对称破缺",
+          "url": "https://www.baidu.com/s?wd=%E6%89%8B%E5%BE%81%E5%AF%B9%E7%A7%B0%E7%A0%B4%E7%BC%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "手征对称破缺",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%8B%E5%BE%81%E5%AF%B9%E7%A7%B0%E7%A0%B4%E7%BC%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "chiral symmetry breaking",
+          "url": "https://en.wikipedia.org/w/index.php?search=chiral%20symmetry%20breaking"
+        }
+      ]
+    },
+    {
+      "chinese_name": "班克斯-卡舍尔关系",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "班克斯-卡舍尔关系把手征凝聚与欧氏狄拉克算符近零本征值的谱密度相连。其形式为 $\\langle\\bar q q\\rangle=-\\pi\\rho(0)$，其中 $\\rho(0)$ 是体积极限后单位体积本征值密度在零点的极限。若近零模密集，真空能形成非零凝聚并破坏手征对称；若谱在零附近开隙，凝聚消失。\n\n它让格点 QCD 可通过狄拉克谱判断手征相，而无需直接外推质量导数。该关系要求先取体积极限再取本征值趋零极限，两个极限顺序不能随意交换。它把自发破缺转化为谱统计问题，使随机矩阵理论、格点 Dirac 本征值和瞬子零模混合能够在同一语言下比较。手征极限、物理夸克质量和有限体积会给同一关系带来不同修正；因此这些量常与 Ward 恒等式和谱函数一起使用，避免把近似对称误读成精确守恒。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "班克斯-卡舍尔关系",
+          "url": "https://www.baidu.com/s?wd=%E7%8F%AD%E5%85%8B%E6%96%AF-%E5%8D%A1%E8%88%8D%E5%B0%94%E5%85%B3%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "班克斯-卡舍尔关系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%8F%AD%E5%85%8B%E6%96%AF-%E5%8D%A1%E8%88%8D%E5%B0%94%E5%85%B3%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "banks casher relation",
+          "url": "https://en.wikipedia.org/w/index.php?search=banks%20casher%20relation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "戈德斯通玻色子",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "戈德斯通玻色子是连续全局对称性自发破缺后出现的无质量低能激发，在 QCD 中对应轻 pion、kaon 和 η 的手征极限。若生成元 $Q_A$ 不湮灭真空，即 $Q_A|0\\rangle\\ne0$，则存在低能态耦合到相应流；这里 $Q_A$ 是破缺轴向荷。\n\n真实夸克质量非零时这些粒子成为赝戈德斯通玻色子，质量由显式破缺控制。它们的导数耦合和软极限定理由手征有效理论系统组织。在规范对称破缺中相应模会被规范场吃掉，而 QCD 的手征对称是全局近似对称，因此低能谱中真实出现轻介子。它们的相互作用在零动量极限变弱，反映破缺生成元对真空的缓慢空间转动。手征极限、物理夸克质量和有限体积会给同一关系带来不同修正；因此这些量常与 Ward 恒等式和谱函数一起使用，避免把近似对称误读成精确守恒。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "戈德斯通玻色子",
+          "url": "https://www.baidu.com/s?wd=%E6%88%88%E5%BE%B7%E6%96%AF%E9%80%9A%E7%8E%BB%E8%89%B2%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "戈德斯通玻色子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%88%88%E5%BE%B7%E6%96%AF%E9%80%9A%E7%8E%BB%E8%89%B2%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "goldstone boson",
+          "url": "https://en.wikipedia.org/w/index.php?search=goldstone%20boson"
+        }
+      ]
+    },
+    {
+      "chinese_name": "PCAC关系",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "PCAC关系表示轴流只被轻夸克质量弱破坏，是低能强相互作用中把 pion 视为近似戈德斯通模的核心公式。常写成 $\\partial_\\mu A^{a\\mu}=f_\\pi m_\\pi^2\\pi^a$，其中 $A^{a\\mu}$ 是同位旋轴流，$f_\\pi$ 是 pion 衰变常数，$\\pi^a$ 是 pion 场。手征极限下右端趋零，轴流近似守恒。\n\n该关系支配软 pion 定理、弱衰变矩阵元归一化和手征微扰论中的低阶算符结构。PCAC 还给轴流矩阵元的归一化提供定义，使弱衰变实验能测定衰变常数。它在核力 pion 交换、软 pion 代数和格点轴流重整化中反复出现；偏离守恒的大小则直接记录显式手征破缺。手征极限、物理夸克质量和有限体积会给同一关系带来不同修正；因此这些量常与 Ward 恒等式和谱函数一起使用，避免把近似对称误读成精确守恒。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "PCAC关系",
+          "url": "https://www.baidu.com/s?wd=PCAC%E5%85%B3%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "PCAC关系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=PCAC%E5%85%B3%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "PCAC relation",
+          "url": "https://en.wikipedia.org/w/index.php?search=PCAC%20relation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "盖尔曼-奥克斯-雷纳关系",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "盖尔曼-奥克斯-雷纳关系给出 pion 质量随轻夸克质量的首阶行为，是显式手征破缺的低能定量式。两味近似下 $f_\\pi^2m_\\pi^2=-(m_u+m_d)\\langle\\bar q q\\rangle+O(m_q^2)$，其中 $f_\\pi$ 是衰变常数，$m_u,m_d$ 是轻夸克质量，凝聚取手征极限值。它说明 pion 质量平方而非质量本身与夸克质量线性相关，也为格点外推和手征有效拉氏量低能常数提供基准。\n\n这个关系只保留轻夸克质量的一阶项，高阶手征对数和低能常数会在精密分析中修正它。它的物理含义是 pion 的轻质量并非偶然微调，而是由近似对称性保护；因此也是格点轻夸克质量标定的常用检查。手征极限、物理夸克质量和有限体积会给同一关系带来不同修正；因此这些量常与 Ward 恒等式和谱函数一起使用，避免把近似对称误读成精确守恒。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "盖尔曼-奥克斯-雷纳关系",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%96%E5%B0%94%E6%9B%BC-%E5%A5%A5%E5%85%8B%E6%96%AF-%E9%9B%B7%E7%BA%B3%E5%85%B3%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "盖尔曼-奥克斯-雷纳关系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%96%E5%B0%94%E6%9B%BC-%E5%A5%A5%E5%85%8B%E6%96%AF-%E9%9B%B7%E7%BA%B3%E5%85%B3%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gell mann oakes renner relation",
+          "url": "https://en.wikipedia.org/w/index.php?search=gell%20mann%20oakes%20renner%20relation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "格点QCD",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "格点QCD把欧氏时空离散化，在有限格点上非微扰定义规范场路径积分。配分函数写作 $Z=\\int DU\\;D\\bar\\psi D\\psi\\,e^{-S_g[U]-S_f[U,\\psi]}$，其中 $U$ 是链变量，$S_g$ 和 $S_f$ 分别为胶子与费米子作用量。连续极限由格距 $a\\to0$ 取得，物理体积和夸克质量需同时控制。\n\n它能从第一性原理计算强子谱、衰变常数、热力学量和矩阵元，但计算成本受费米子行列式和临界慢化限制。格点给出的不是模型势能，而是有紫外 cutoff 的正规化 QCD，随后必须做连续、无限体积和物理质量外推。不同费米子离散化在有限格距上对称性不同，但若极限受控，应给出同一物理结果。在数值应用中，相关系统误差通常来自格距、体积、质量外推和算法采样；只有把这些来源分开控制，非微扰结论才能在不同离散化之间比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "格点QCD",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%BC%E7%82%B9QCD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "格点QCD",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%BC%E7%82%B9QCD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lattice QCD",
+          "url": "https://en.wikipedia.org/w/index.php?search=lattice%20QCD"
+        }
+      ]
+    },
+    {
+      "chinese_name": "威尔逊作用量",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "威尔逊作用量是格点规范场最基本的局域离散化，用最小闭合 plaquette 近似连续 Yang-Mills 曲率。常写成 $S_W=\\beta\\sum_p(1-(1/N){\\rm Re\\,Tr}U_p)$，其中 $U_p$ 是 plaquette 链变量乘积，$N$ 为颜色数，$\\beta=2N/g^2$。当格距变小时，$U_p$ 展开给出 $F_{\\mu\\nu}^2$。它保持格点规范不变性，但有 $O(a^2)$ 离散误差，常作为改进作用量和标定耦合的出发点。\n\nplaquette 形式还使强耦合展开变得透明：小 β 极限中威尔逊圈自然出现面积律。实际数值工作常加入矩形或更大闭合环做规范作用量改进，以降低离散误差并改善热力学量的连续外推。在数值应用中，相关系统误差通常来自格距、体积、质量外推和算法采样；只有把这些来源分开控制，非微扰结论才能在不同离散化之间比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "威尔逊作用量",
+          "url": "https://www.baidu.com/s?wd=%E5%A8%81%E5%B0%94%E9%80%8A%E4%BD%9C%E7%94%A8%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "威尔逊作用量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A8%81%E5%B0%94%E9%80%8A%E4%BD%9C%E7%94%A8%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wilson action",
+          "url": "https://en.wikipedia.org/w/index.php?search=wilson%20action"
+        }
+      ]
+    },
+    {
+      "chinese_name": "威尔逊费米子",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "威尔逊费米子通过加入二阶差分项去除格点费米子倍增，但显式破坏手征对称。其算符可概括为 $D_W=m+\\gamma_\\mu\\nabla_\\mu-(ar/2)\\Delta$，其中 $\\nabla_\\mu$ 是协变差分，$\\Delta$ 是格点拉普拉斯算符，$a$ 为格距。威尔逊项让倍增模获得 cutoff 质量，同时引入加性质量重整化。\n\n它计算稳定、历史悠久，适合许多强子矩阵元，但手征外推和算符混合需要额外处理。由于手征对称被显式破坏，临界质量必须通过调参找到，轴流和四费米算符也会出现更多混合。优点是局域性和谱性质较清楚，配合 clover 改进后成为许多现代表面强子结构计算的稳健选择。在数值应用中，相关系统误差通常来自格距、体积、质量外推和算法采样；只有把这些来源分开控制，非微扰结论才能在不同离散化之间比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "威尔逊费米子",
+          "url": "https://www.baidu.com/s?wd=%E5%A8%81%E5%B0%94%E9%80%8A%E8%B4%B9%E7%B1%B3%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "威尔逊费米子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A8%81%E5%B0%94%E9%80%8A%E8%B4%B9%E7%B1%B3%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wilson fermion",
+          "url": "https://en.wikipedia.org/w/index.php?search=wilson%20fermion"
+        }
+      ]
+    },
+    {
+      "chinese_name": "交错费米子",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "交错费米子把狄拉克自旋分量分布到相邻格点上，保留一部分手征对称并减少倍增自由度。其作用量含 $S_f=\\sum_x\\bar\\chi_x\\eta_\\mu(x)U_\\mu(x)\\chi_{x+\\hat\\mu}+m\\bar\\chi_x\\chi_x$，其中 $\\chi$ 是单分量场，$\\eta_\\mu(x)$ 是交错相位。剩余的味自由度称为 taste，在有限格距下被破坏。\n\n它数值效率高，适合热 QCD 与轻强子，但取根技巧和 taste 破缺需通过连续极限检验。taste 对称在连续极限恢复，因此同一物理 pion 在有限格距会裂成多种 taste 质量。改进交错作用量通过胖链和高阶项减小这种劈裂；热力学计算中，如何控制 taste 破缺常决定赝临界温度的系统误差。在数值应用中，相关系统误差通常来自格距、体积、质量外推和算法采样；只有把这些来源分开控制，非微扰结论才能在不同离散化之间比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "交错费米子",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%A4%E9%94%99%E8%B4%B9%E7%B1%B3%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "交错费米子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%A4%E9%94%99%E8%B4%B9%E7%B1%B3%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "staggered fermion",
+          "url": "https://en.wikipedia.org/w/index.php?search=staggered%20fermion"
+        }
+      ]
+    },
+    {
+      "chinese_name": "畴壁费米子",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "畴壁费米子在五维格点中引入质量畴壁，使左右手零模局域在第五维两端，从而近似保持手征对称。有效残余质量常写作 $m_{\\rm res}\\sim e^{-\\alpha L_s}$，其中 $L_s$ 是第五维长度，$\\alpha$ 由转移矩阵谱隙决定。四维物理费米子来自边界模的重叠；当 $L_s$ 足够大时手征破缺很小。\n\n它适合弱矩阵元和手征敏感量计算，代价是比威尔逊或交错费米子更昂贵。残余手征破缺可由第五维长度系统降低，因此轴 Ward 恒等式通常比威尔逊型离散化更干净。它对 kaon 混合、弱衰变和拓扑零模特别有用；成本主要来自五维算符求逆和大体积轻夸克模拟。在数值应用中，相关系统误差通常来自格距、体积、质量外推和算法采样；只有把这些来源分开控制，非微扰结论才能在不同离散化之间比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "畴壁费米子",
+          "url": "https://www.baidu.com/s?wd=%E7%95%B4%E5%A3%81%E8%B4%B9%E7%B1%B3%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "畴壁费米子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%95%B4%E5%A3%81%E8%B4%B9%E7%B1%B3%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "domain wall fermion",
+          "url": "https://en.wikipedia.org/w/index.php?search=domain%20wall%20fermion"
+        }
+      ]
+    },
+    {
+      "chinese_name": "重叠费米子",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "重叠费米子给出满足 Ginsparg-Wilson 关系的格点狄拉克算符，在有限格距上保留精确修正手征对称。常写成 $D=(\\rho/a)(1+\\gamma_5{\\rm sign}H_W)$，其中 $H_W=\\gamma_5(D_W-\\rho/a)$ 是厄米威尔逊核。它的指数等于拓扑荷，零模手征性清楚，因此非常适合研究轴反常和拓扑结构。\n\n主要困难是矩阵符号函数计算昂贵，并且在大体积动力学模拟中成本很高。重叠算符实现的精确格点手征对称使反常、指数和零模之间的关系在有限格距上成立。它常作为检验其他费米子离散化的高精度工具；但符号函数对低本征模敏感，拓扑扇区变化也会让动力学模拟更困难。在数值应用中，相关系统误差通常来自格距、体积、质量外推和算法采样；只有把这些来源分开控制，非微扰结论才能在不同离散化之间比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "重叠费米子",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8D%E5%8F%A0%E8%B4%B9%E7%B1%B3%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "重叠费米子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8D%E5%8F%A0%E8%B4%B9%E7%B1%B3%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "overlap fermion",
+          "url": "https://en.wikipedia.org/w/index.php?search=overlap%20fermion"
+        }
+      ]
+    },
+    {
+      "chinese_name": "三叶草改进",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "三叶草改进是在威尔逊费米子作用量中加入 clover 形状的场强项，以消除主要的 $O(a)$ 离散误差。改进项写作 $S_{SW}=c_{SW}a^5\\sum_x\\bar\\psi\\sigma_{\\mu\\nu}F_{\\mu\\nu}^{cl}\\psi$，其中 $c_{SW}$ 是改进系数，$F_{\\mu\\nu}^{cl}$ 由四个 plaquette 组合而成。该项补偿威尔逊项引入的维五算符效应，使强子质量和矩阵元更快接近连续极限；系数可微扰或非微扰标定。\n\nclover 场强项与连续理论中的 Pauli 色磁算符同型，因此能修正威尔逊费米子在短距离自旋相互作用上的主要误差。非微扰调定的系数通常比树级值更可靠，尤其在重夸克或精密矩阵元计算中影响明显。在数值应用中，相关系统误差通常来自格距、体积、质量外推和算法采样；只有把这些来源分开控制，非微扰结论才能在不同离散化之间比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "三叶草改进",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%89%E5%8F%B6%E8%8D%89%E6%94%B9%E8%BF%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "三叶草改进",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%89%E5%8F%B6%E8%8D%89%E6%94%B9%E8%BF%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "clover improvement",
+          "url": "https://en.wikipedia.org/w/index.php?search=clover%20improvement"
+        }
+      ]
+    },
+    {
+      "chinese_name": "辛曼齐克改进",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "辛曼齐克改进把格点理论视为连续理论加高维算符的有效展开，通过调节格点作用量系数抵消低阶格距误差。可写作 $S_{lat}=S_{cont}+aS_5+a^2S_6+\\cdots$，其中 $S_n$ 代表维数更高、受对称性允许的算符。若加入合适矩形环、clover 项或改进电流，可让主要误差从 $O(a)$ 推迟到 $O(a^2)$ 或更高。\n\n它提供系统化连续外推语言，而非单一技巧。这种思路也说明改进并非随意添加项，而是按对称性列出所有可能反项并逐阶消去。实际计算需在误差降低和算符复杂度之间取舍；过多改进项会增加调参难度，但能显著改善热力学和谱量的格距依赖。在数值应用中，相关系统误差通常来自格距、体积、质量外推和算法采样；只有把这些来源分开控制，非微扰结论才能在不同离散化之间比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "辛曼齐克改进",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%9B%E6%9B%BC%E9%BD%90%E5%85%8B%E6%94%B9%E8%BF%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "辛曼齐克改进",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%9B%E6%9B%BC%E9%BD%90%E5%85%8B%E6%94%B9%E8%BF%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "symanzik improvement",
+          "url": "https://en.wikipedia.org/w/index.php?search=symanzik%20improvement"
+        }
+      ]
+    },
+    {
+      "chinese_name": "赝费米子",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "赝费米子是用玻色场表示费米子行列式的数值辅助变量，使格点 QCD 可用分子动力学采样规范场。常用恒等式 $\\det M^\\dagger M\\propto\\int D\\phi^\\dagger D\\phi\\,e^{-\\phi^\\dagger(M^\\dagger M)^{-1}\\phi}$，其中 $M$ 是费米子矩阵，$\\phi$ 是复玻色场。它不代表真实粒子，而是把 sea 夸克效应转化为可计算的有效力。\n\n逆矩阵求解成本决定混合蒙特卡洛模拟的主要耗时。赝费米子刷新通常从高斯噪声生成，再通过费米子矩阵反演得到正确权重。多重时间尺度、质量预条件和有理近似算法都围绕降低这一反演成本展开；因此它是算法工程与场论行列式之间的桥梁。在数值应用中，相关系统误差通常来自格距、体积、质量外推和算法采样；只有把这些来源分开控制，非微扰结论才能在不同离散化之间比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "赝费米子",
+          "url": "https://www.baidu.com/s?wd=%E8%B5%9D%E8%B4%B9%E7%B1%B3%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "赝费米子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B5%9D%E8%B4%B9%E7%B1%B3%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pseudo fermion",
+          "url": "https://en.wikipedia.org/w/index.php?search=pseudo%20fermion"
+        }
+      ]
+    },
+    {
+      "chinese_name": "混合蒙特卡洛",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "混合蒙特卡洛是含动力学费米子的格点 QCD 标准采样算法，把分子动力学轨道与 Metropolis 接受拒绝结合。扩展哈密顿量写作 $H=\\frac12\\sum p^2+S_g[U]+\\phi^\\dagger(M^\\dagger M)^{-1}\\phi$，其中 $p$ 是规范链的共轭动量，$\\phi$ 为赝费米子场。辛积分器近似保持相空间体积，接受步骤校正离散步长误差。\n\n算法效率受线性方程求解、拓扑冻结和临界慢化共同限制。HMC 的可逆性和保体积性与接受步骤共同保证无偏采样。步长太大时接受率下降，步长太小时成本上升；实际模拟还会用多时间尺度积分器、质量预条件和 deflation 技术处理轻夸克矩阵的病态性。在数值应用中，相关系统误差通常来自格距、体积、质量外推和算法采样；只有把这些来源分开控制，非微扰结论才能在不同离散化之间比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "混合蒙特卡洛",
+          "url": "https://www.baidu.com/s?wd=%E6%B7%B7%E5%90%88%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "混合蒙特卡洛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B7%B7%E5%90%88%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hybridmontecarlo",
+          "url": "https://en.wikipedia.org/w/index.php?search=hybridmontecarlo"
+        }
+      ]
+    },
+    {
+      "chinese_name": "梅特罗波利斯更新",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "梅特罗波利斯更新通过提出新构型并按作用量差决定接受概率，保证马尔可夫链以目标权重平衡分布为极限。接受率写成 $P_{acc}=\\min(1,e^{-\\Delta S})$，其中 $\\Delta S=S_{new}-S_{old}$ 是欧氏作用量变化。若新构型降低作用量必然接受，升高作用量也可按指数概率通过。\n\n它简单且通用，可用于纯胶局域更新和 HMC 末端校正，但随机游走特性在大体积或临界点附近会变慢。该更新只要求知道权重比，因此可嵌入许多复杂算法作为最终校正。提议分布若与目标分布差距太大，接受率会很低；若步长太小，链移动缓慢。调节这两者是蒙特卡洛效率的基本问题。在数值应用中，相关系统误差通常来自格距、体积、质量外推和算法采样；只有把这些来源分开控制，非微扰结论才能在不同离散化之间比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "梅特罗波利斯更新",
+          "url": "https://www.baidu.com/s?wd=%E6%A2%85%E7%89%B9%E7%BD%97%E6%B3%A2%E5%88%A9%E6%96%AF%E6%9B%B4%E6%96%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "梅特罗波利斯更新",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A2%85%E7%89%B9%E7%BD%97%E6%B3%A2%E5%88%A9%E6%96%AF%E6%9B%B4%E6%96%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "metropolis update",
+          "url": "https://en.wikipedia.org/w/index.php?search=metropolis%20update"
+        }
+      ]
+    },
+    {
+      "chinese_name": "热浴算法",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "热浴算法直接从某个局域变量在周围环境固定时的条件分布抽样，而不是先提出再拒绝。对链变量可表示为 $P(U_l|U_{\\ne l})\\propto e^{-S_{loc}(U_l)}$，其中 $U_l$ 是待更新规范链，$S_{loc}$ 由相邻 staple 给出。由于每步已经服从条件概率，接受率为一，并天然满足细致平衡。\n\n它在纯规范模拟中很有效，常与过松弛步骤交替使用；含费米子行列式时则更常由 HMC 取代。热浴更新的优势在于局域变量被完全重新抽样，减少小步随机游走。对于 SU(3) 规范场，常通过嵌入多个 SU(2) 子群实现近似或精确抽样；在强耦合和有限温纯胶理论中，它仍是生成独立构型的重要工具。在数值应用中，相关系统误差通常来自格距、体积、质量外推和算法采样；只有把这些来源分开控制，非微扰结论才能在不同离散化之间比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "热浴算法",
+          "url": "https://www.baidu.com/s?wd=%E7%83%AD%E6%B5%B4%E7%AE%97%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "热浴算法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%83%AD%E6%B5%B4%E7%AE%97%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "heat bath algorithm",
+          "url": "https://en.wikipedia.org/w/index.php?search=heat%20bath%20algorithm"
+        }
+      ]
+    },
+    {
+      "chinese_name": "重加权方法",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "重加权方法用一组已生成构型估计相邻参数处的期望值，避免为每个参数重新模拟。基本公式是 $\\langle O\\rangle_b=\\langle O w\\rangle_a/\\langle w\\rangle_a$，其中 $w=e^{-S_b+S_a}$ 是从参数 $a$ 到 $b$ 的权重比。它可用于改变夸克质量、耦合或化学势，特别适合寻找相变线附近的临界行为。\n\n主要限制是构型分布重叠不足时权重方差急剧增大，导致有效统计量很小。重加权的可靠性可由有效样本数或权重分布宽度判断；少数构型若支配平均值，结果便不稳定。多直方图和费伦茨-卡兹型方法能扩大适用范围，但仍无法根本摆脱相空间重叠问题。在数值应用中，相关系统误差通常来自格距、体积、质量外推和算法采样；只有把这些来源分开控制，非微扰结论才能在不同离散化之间比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "重加权方法",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8D%E5%8A%A0%E6%9D%83%E6%96%B9%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "重加权方法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8D%E5%8A%A0%E6%9D%83%E6%96%B9%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "reweighting method",
+          "url": "https://en.wikipedia.org/w/index.php?search=reweighting%20method"
+        }
+      ]
+    },
+    {
+      "chinese_name": "符号问题",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "符号问题出现在路径积分权重不再正定时，蒙特卡洛采样无法把权重直接解释为概率。有限重子化学势下有 $(\\det M(\\mu))^*=\\det M(-\\mu^*)$，其中 $M(\\mu)$ 是含化学势的费米子矩阵；实数 $\\mu$ 时行列式通常为复数。平均相位因子 $\\langle e^{i\\theta}\\rangle$ 随体积指数衰减，使信噪比恶化。\n\n解析延拓、泰勒展开和 Lefschetz thimble 都是在不同程度上绕开这一障碍。符号问题的严重性通常由平均相位因子刻画，它会随体积和化学势增大迅速变小。许多看似不同的方法只是改变积分流形或展开参数，只有在可控区域内才能给出可靠结果；这也是有限密度相图难以第一性原理确定的根源。热密体系还要求区分平衡热力学量与实时动力学量；前者可由欧氏配分函数较稳健地获得，后者常需要解析延拓、模型输入或实验反演。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "符号问题",
+          "url": "https://www.baidu.com/s?wd=%E7%AC%A6%E5%8F%B7%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "符号问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AC%A6%E5%8F%B7%E9%97%AE%E9%A2%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "sign problem",
+          "url": "https://en.wikipedia.org/w/index.php?search=sign%20problem"
+        }
+      ]
+    },
+    {
+      "chinese_name": "有限密度QCD",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "有限密度QCD研究重子数或夸克数非零时的强相互作用物质，相关于中子星内部和重离子碰撞低能区。欧氏作用量中加入 $\\mu\\bar\\psi\\gamma_0\\psi$，其中 $\\mu$ 是化学势，$\\bar\\psi\\gamma_0\\psi$ 是数密度算符。该项破坏通常的 γ5 厄米性，使费米子行列式复化并引发符号问题。\n\n理论上它包含核物质、颜色超导和可能的临界端点，但第一性原理计算仍依赖受限参数区的展开与模型输入。有限密度问题中，费米面附近的自由度比真空谱更重要，配对、屏蔽和集体模共同决定低能行为。重子化学势与夸克化学势只差一个因子，但电中性和弱平衡会引入多个化学势，使相结构远比零密度复杂。热密体系还要求区分平衡热力学量与实时动力学量；前者可由欧氏配分函数较稳健地获得，后者常需要解析延拓、模型输入或实验反演。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "有限密度QCD",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%89%E9%99%90%E5%AF%86%E5%BA%A6QCD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "有限密度QCD",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%89%E9%99%90%E5%AF%86%E5%BA%A6QCD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "finite density QCD",
+          "url": "https://en.wikipedia.org/w/index.php?search=finite%20density%20QCD"
+        }
+      ]
+    },
+    {
+      "chinese_name": "有限温度QCD",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "有限温度QCD通过欧氏时间紧化描述热平衡强相互作用物质，时间长度等于反温度。配分函数写作 $Z(T)=\\mathrm{Tr}\\,e^{-H/T}=\\int_{\\beta=1/T}D\\Phi\\,e^{-S_E}$，其中玻色场满足周期边界条件，费米场满足反周期边界条件。温度升高会削弱手征凝聚并使波利亚科夫圈增大，表现为去禁闭与手征恢复的交叉行为。\n\n它支撑夸克胶子等离子体热力学和早期宇宙强相变研究。热场论中 Matsubara 频率离散化使长距离静态模成为关键，自由能、迹反常和声速都可由配分函数导出。靠近临界温区时，微扰热 QCD 收敛较差，需要维数约化、硬热圈重求和和格点数据配合。热密体系还要求区分平衡热力学量与实时动力学量；前者可由欧氏配分函数较稳健地获得，后者常需要解析延拓、模型输入或实验反演。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "有限温度QCD",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%89%E9%99%90%E6%B8%A9%E5%BA%A6QCD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "有限温度QCD",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%89%E9%99%90%E6%B8%A9%E5%BA%A6QCD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "finite temperature QCD",
+          "url": "https://en.wikipedia.org/w/index.php?search=finite%20temperature%20QCD"
+        }
+      ]
+    },
+    {
+      "chinese_name": "去禁闭相变",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "去禁闭相变指强相互作用物质从强子自由度转向颜色自由度可在热介质中传播的状态。纯胶理论中序参量是波利亚科夫圈 $L=(1/N_c){\\rm Tr}\\,P\\exp(i\\int_0^{1/T}A_0d\\tau)$，其中 $A_0$ 是欧氏时间分量规范场，$P$ 表示路径排序。\n\n$\\langle L\\rangle=0$ 对应无穷大静态夸克自由能，非零则表示中心对称破缺。含轻夸克时中心对称显式破缺，相变常变成交叉。去禁闭并不意味着所有相互作用消失，而是颜色屏蔽使长程孤立色源代价有限。真实 QCD 中轻夸克会打断弦并模糊序参量，因此常通过重夸克自由能、涨落量和热力学迹反常共同描述这一转变。热密体系还要求区分平衡热力学量与实时动力学量；前者可由欧氏配分函数较稳健地获得，后者常需要解析延拓、模型输入或实验反演。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "去禁闭相变",
+          "url": "https://www.baidu.com/s?wd=%E5%8E%BB%E7%A6%81%E9%97%AD%E7%9B%B8%E5%8F%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "去禁闭相变",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8E%BB%E7%A6%81%E9%97%AD%E7%9B%B8%E5%8F%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "deconfinement phase transition",
+          "url": "https://en.wikipedia.org/w/index.php?search=deconfinement%20phase%20transition"
+        }
+      ]
+    },
+    {
+      "chinese_name": "手征相变",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "手征相变描述温度或密度改变时手征凝聚消失或快速减小，反映近似手征对称的恢复。序参量可取 $\\Sigma(T)=\\langle\\bar q q\\rangle_T$，其中下标 $T$ 表示热期望值。手征极限下，两味 QCD 可能落入三维 $O(4)$ 普适类；真实夸克质量非零时，$\\Sigma$ 不严格为零，而表现为赝临界交叉。\n\n它与去禁闭温区接近，但两者的对称性含义不同，常需结合 susceptibilities 分辨。手征相变的阶数取决于轻夸克质量、奇异夸克质量以及 U1A 反常在临界温度附近的强弱。格点研究常比较重整化凝聚、手征磁化率和 Binder cumulant，以区分真正临界点与光滑交叉。热密体系还要求区分平衡热力学量与实时动力学量；前者可由欧氏配分函数较稳健地获得，后者常需要解析延拓、模型输入或实验反演。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "手征相变",
+          "url": "https://www.baidu.com/s?wd=%E6%89%8B%E5%BE%81%E7%9B%B8%E5%8F%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "手征相变",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%8B%E5%BE%81%E7%9B%B8%E5%8F%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "chiral phase transition",
+          "url": "https://en.wikipedia.org/w/index.php?search=chiral%20phase%20transition"
+        }
+      ]
+    },
+    {
+      "chinese_name": "交叉相变",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "交叉相变不是严格非解析相变，而是热力学量在有限范围内快速但光滑地变化。可用赝临界温度定义为 $T_c:\\;\\chi_O(T)=\\partial\\langle O\\rangle/\\partial T\\;\\text{取峰值}$，其中 $O$ 可为手征凝聚或波利亚科夫圈相关量。真实两轻一奇夸克质量下，零重子化学势 QCD 的去禁闭和手征恢复呈交叉。\n\n不同观测量给出的 $T_c$ 可略有差别，因此它描述的是过渡区域而非唯一奇点。交叉区域仍会显著改变自由度和输运性质，因此在实验上可表现为粒子产额、涨落和流体响应的连续变化。它没有潜热或严格相共存面，热力学极限中也不产生奇异性，这使赝临界温度的定义带有观测量依赖。热密体系还要求区分平衡热力学量与实时动力学量；前者可由欧氏配分函数较稳健地获得，后者常需要解析延拓、模型输入或实验反演。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "交叉相变",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%A4%E5%8F%89%E7%9B%B8%E5%8F%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "交叉相变",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%A4%E5%8F%89%E7%9B%B8%E5%8F%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "crossing phase transition",
+          "url": "https://en.wikipedia.org/w/index.php?search=crossing%20phase%20transition"
+        }
+      ]
+    },
+    {
+      "chinese_name": "临界端点",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "临界端点是 QCD 相图中一阶相变线终止并转为交叉的二阶临界点，预期具有三维 Ising 普适性。接近它时关联长度满足 $\\xi\\sim |t|^{-\\nu}$，其中 $t$ 是到临界点的约化距离，$\\nu$ 是临界指数。长关联长度会增强重子数涨落的高阶 cumulant，但有限寿命、有限体积和临界慢化限制了增长。\n\n寻找该点需要联合重离子扫描、有限密度有效理论和受符号问题约束的格点外推。临界端点附近的慢模通常与重子密度和能量密度耦合，动力学属于特定 universality class。实验寻找依赖非高斯涨落随碰撞能的非单调变化，但接受度、守恒律和非平衡演化都会扭曲平衡预言。热密体系还要求区分平衡热力学量与实时动力学量；前者可由欧氏配分函数较稳健地获得，后者常需要解析延拓、模型输入或实验反演。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "临界端点",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%B4%E7%95%8C%E7%AB%AF%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "临界端点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%B4%E7%95%8C%E7%AB%AF%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "critical endpoint",
+          "url": "https://en.wikipedia.org/w/index.php?search=critical%20endpoint"
+        }
+      ]
+    },
+    {
+      "chinese_name": "夸克胶子等离子体",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "夸克胶子等离子体是高温或高能密度下强子熔化后形成的热 QCD 介质，颜色自由度在德拜屏蔽长度内传播。热力学常用 $\\epsilon-3p=T^5\\,d(p/T^4)/dT$，其中 $\\epsilon$ 是能量密度，$p$ 是压强。格点结果显示它在临界温区并非理想气体，而是强耦合流体。\n\n实验上喷注淬火、椭圆流和重夸克扩散揭示其输运性质，理论上需结合流体力学、有效场论与非微扰输入。这种介质仍是强相互作用体系，准粒子图像只在足够高温时逐渐恢复。临界温区的短平均自由程使粘性流体描述成功，而重味淬火和电磁辐射则探测更早期或更微观的相互作用强度。热密体系还要求区分平衡热力学量与实时动力学量；前者可由欧氏配分函数较稳健地获得，后者常需要解析延拓、模型输入或实验反演。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "夸克胶子等离子体",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%B8%E5%85%8B%E8%83%B6%E5%AD%90%E7%AD%89%E7%A6%BB%E5%AD%90%E4%BD%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "夸克胶子等离子体",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%B8%E5%85%8B%E8%83%B6%E5%AD%90%E7%AD%89%E7%A6%BB%E5%AD%90%E4%BD%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quark gluon plasma",
+          "url": "https://en.wikipedia.org/w/index.php?search=quark%20gluon%20plasma"
+        }
+      ]
+    },
+    {
+      "chinese_name": "波利亚科夫圈",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "波利亚科夫圈是有限温规范理论中沿欧氏时间圆的威尔逊线迹，测量静态颜色源的自由能。定义为 $L(\\mathbf x)=(1/N_c){\\rm Tr}\\,P\\exp(i\\int_0^{1/T}A_0(\\tau,\\mathbf x)d\\tau)$，其中 $A_0$ 是时间分量规范场，$P$ 表示路径排序。在纯胶理论中，$\\langle L\\rangle\\sim e^{-F_q/T}$，若期望值为零则单个静态夸克自由能无穷大。\n\n它也是中心对称破缺的序参量。波利亚科夫圈需要重整化才能给出有限连续极限，因为静态源自能含紫外发散。其相关函数还能定义静态夸克反夸克自由能，并揭示介质中的颜色屏蔽长度；这使它成为热 QCD 中连接对称性与势能的非局域探针。这些非局域量的意义在于保持规范不变地探测长距离颜色响应；它们与局域传播子互补，能把禁闭、屏蔽和通量管形状放在同一套判据中比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "波利亚科夫圈",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A2%E5%88%A9%E4%BA%9A%E7%A7%91%E5%A4%AB%E5%9C%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "波利亚科夫圈",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A2%E5%88%A9%E4%BA%9A%E7%A7%91%E5%A4%AB%E5%9C%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "polyakov loop",
+          "url": "https://en.wikipedia.org/w/index.php?search=polyakov%20loop"
+        }
+      ]
+    },
+    {
+      "chinese_name": "威尔逊圈",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "威尔逊圈是规范场沿闭合回路的平行输运迹，是检测禁闭和规范场通量的基本非局域算符。定义为 $W(C)=(1/N_c){\\rm Tr}\\,P\\exp(i\\oint_C A_\\mu dx^\\mu)$，其中 $C$ 是闭合路径，$A_\\mu$ 是规范势。大矩形圈的期望值给静态夸克势：$\\langle W(R,T)\\rangle\\sim e^{-V(R)T}$。面积律对应线性势和禁闭，周长律则常见于屏蔽或去禁闭相。\n\n威尔逊圈的路径排序记录了非阿贝尔平行输运的矩阵性质，因此它比局域场强更适合描述规范不变的通量。不同表示的威尔逊圈还可检验 N 重性和 Casimir 标度，帮助区分中心涡旋、双超导和有效弦图像。这些非局域量的意义在于保持规范不变地探测长距离颜色响应；它们与局域传播子互补，能把禁闭、屏蔽和通量管形状放在同一套判据中比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "威尔逊圈",
+          "url": "https://www.baidu.com/s?wd=%E5%A8%81%E5%B0%94%E9%80%8A%E5%9C%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "威尔逊圈",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A8%81%E5%B0%94%E9%80%8A%E5%9C%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wilson loop",
+          "url": "https://en.wikipedia.org/w/index.php?search=wilson%20loop"
+        }
+      ]
+    },
+    {
+      "chinese_name": "静态夸克势",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "静态夸克势描述无限重夸克与反夸克相距 $R$ 时的能量，是禁闭势的定量表征。它由矩形威尔逊圈抽取：$V(R)=-\\lim_{T\\to\\infty}T^{-1}\\ln\\langle W(R,T)\\rangle$，其中 $W(R,T)$ 的空间边长为 $R$、时间边长为 $T$。短距离势呈库仑型并受渐近自由控制，长距离近似 $V(R)=\\sigma R+c$，$\\sigma$ 为弦张力。\n\n含动力学轻夸克时弦会断裂，势能趋于两个重轻介子的阈值。在格点中，势能通常由 Wilson loop 或 Polyakov loop 相关函数的长时间衰减提取。短距离部分可用于定义强耦合方案，长距离部分给弦张力；中间区域的 Luscher 修正还反映色通量管的有效弦涨落。这些非局域量的意义在于保持规范不变地探测长距离颜色响应；它们与局域传播子互补，能把禁闭、屏蔽和通量管形状放在同一套判据中比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "静态夸克势",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%99%E6%80%81%E5%A4%B8%E5%85%8B%E5%8A%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "静态夸克势",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%99%E6%80%81%E5%A4%B8%E5%85%8B%E5%8A%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "static quark potential",
+          "url": "https://en.wikipedia.org/w/index.php?search=static%20quark%20potential"
+        }
+      ]
+    },
+    {
+      "chinese_name": "面积律",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "面积律指大威尔逊圈期望值随其最小张成面积指数衰减，是纯规范理论中禁闭的经典判据。形式为 $\\langle W(C)\\rangle\\sim e^{-\\sigma A(C)}$，其中 $A(C)$ 是回路 $C$ 的最小面积，$\\sigma$ 是弦张力。对大矩形回路，面积 $RT$ 导致静态势 $V(R)=\\sigma R$。它反映色通量被挤压成弦状管，而不是按库仑场向空间扩散；但有动力学夸克时弦断裂会削弱严格面积律。\n\n面积律是规范不变的红外陈述，不依赖选择某个规范来观察通量管。强耦合格点展开能直接产生这种行为，而连续 QCD 中它应来自长程非微扰真空结构；因此它常被用作各种禁闭机制的共同检验标准。这些非局域量的意义在于保持规范不变地探测长距离颜色响应；它们与局域传播子互补，能把禁闭、屏蔽和通量管形状放在同一套判据中比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "面积律",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%A2%E7%A7%AF%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "面积律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%A2%E7%A7%AF%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "area law",
+          "url": "https://en.wikipedia.org/w/index.php?search=area%20law"
+        }
+      ]
+    },
+    {
+      "chinese_name": "周长律",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "周长律指威尔逊圈期望值主要随回路长度而非张成面积衰减，常与屏蔽、希格斯相或去禁闭行为相关。写作 $\\langle W(C)\\rangle\\sim e^{-\\mu P(C)}$，其中 $P(C)$ 是回路周长，$\\mu$ 是边界自能系数。它表示大尺度上没有稳定色通量弦产生线性势，静态源能量不再随距离无限增长。\n\n在有限温理论中，空间与时间方向的圈可表现不同周长行为，因此需结合 Polyakov 圈和势能提取判断物理相。周长律中剩下的主要是边界自能和短程涨落，而不是跨越整个面积的通量涨落。它在有 dynamical fundamental 夸克时也可能出现，因为轻夸克对能屏蔽外加色源；这与纯胶理论中的中心对称判据有所区别。这些非局域量的意义在于保持规范不变地探测长距离颜色响应；它们与局域传播子互补，能把禁闭、屏蔽和通量管形状放在同一套判据中比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "周长律",
+          "url": "https://www.baidu.com/s?wd=%E5%91%A8%E9%95%BF%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "周长律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%91%A8%E9%95%BF%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "perimeter law",
+          "url": "https://en.wikipedia.org/w/index.php?search=perimeter%20law"
+        }
+      ]
+    },
+    {
+      "chinese_name": "夸克禁闭",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "夸克禁闭指单个带颜色夸克不能作为孤立渐近态出现，物理谱只含颜色单态强子。理想化静态势常写成 $V(R)\\simeq -\\alpha/R+\\sigma R$，其中 $\\alpha$ 描述短距离库仑项，$\\sigma$ 是弦张力。线性项使分离颜色源所需能量随距离增加，最终更倾向产生夸克反夸克对而形成强子。\n\n禁闭不是简单的力无限大，而是希尔伯特空间、规范约束和非微扰真空结构共同限制可观测态。现代观点还要求区分禁闭、手征破缺和质量间隙三件事，它们在 QCD 中相伴出现，却不是逻辑等价。含基本表示物质时，严格的中心序参量消失，禁闭更多体现为彩色态不在物理谱中出现。这些非局域量的意义在于保持规范不变地探测长距离颜色响应；它们与局域传播子互补，能把禁闭、屏蔽和通量管形状放在同一套判据中比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "夸克禁闭",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%B8%E5%85%8B%E7%A6%81%E9%97%AD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "夸克禁闭",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%B8%E5%85%8B%E7%A6%81%E9%97%AD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quark confinement",
+          "url": "https://en.wikipedia.org/w/index.php?search=quark%20confinement"
+        }
+      ]
+    },
+    {
+      "chinese_name": "颜色禁闭",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "颜色禁闭强调非阿贝尔色荷本身不能在物理远区被孤立测到，渐近态必须在规范群下为单态。高斯约束可写成 $G^a(x)|\\mathrm{phys}\\rangle=0$，其中 $G^a$ 是颜色规范变换的生成元，$|\\mathrm{phys}\\rangle$ 是物理态。微扰态中的彩色夸克和胶子只是计算自由度，不等同于 S 矩阵外态。\n\n非微扰上，威尔逊圈面积律、中心对称和 BRST 共形空间结构都试图刻画这一限制。颜色禁闭也解释了为什么强子化后的喷注由无色强子组成，而微扰计算中的彩色 parton 只在短距离阶段有意义。BRST 上同调、反射正性破坏和格点谱函数都为彩色自由度不成为渐近态提供不同角度。这些非局域量的意义在于保持规范不变地探测长距离颜色响应；它们与局域传播子互补，能把禁闭、屏蔽和通量管形状放在同一套判据中比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "颜色禁闭",
+          "url": "https://www.baidu.com/s?wd=%E9%A2%9C%E8%89%B2%E7%A6%81%E9%97%AD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "颜色禁闭",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%A2%9C%E8%89%B2%E7%A6%81%E9%97%AD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "color confinement",
+          "url": "https://en.wikipedia.org/w/index.php?search=color%20confinement"
+        }
+      ]
+    },
+    {
+      "chinese_name": "中心对称",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "中心对称是纯 $SU(N_c)$ 有限温规范理论中由群中心 $Z_{N_c}$ 产生的全局对称，作用在绕时间圆的规范变换上。波利亚科夫圈变换为 $L\\to zL$，其中 $z\\in Z_{N_c}$，$L$ 是时间向威尔逊线迹。若中心对称未破缺，$\\langle L\\rangle=0$，静态夸克自由能无穷大；破缺时则对应去禁闭。\n\n基本表示动力学夸克会显式破坏该对称，使真实 QCD 的转变变成近似判据。中心对称的破缺模式还决定有限温纯胶理论的一阶或二阶相变性质，并与三维自旋模型存在 Svetitsky-Yaffe 对应。对伴随表示物质，中心对称可保持而手征行为改变，显示它捕捉的是色源屏蔽而非全部动力学。这些非局域量的意义在于保持规范不变地探测长距离颜色响应；它们与局域传播子互补，能把禁闭、屏蔽和通量管形状放在同一套判据中比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "中心对称",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%AD%E5%BF%83%E5%AF%B9%E7%A7%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "中心对称",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%AD%E5%BF%83%E5%AF%B9%E7%A7%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "center symmetry",
+          "url": "https://en.wikipedia.org/w/index.php?search=center%20symmetry"
+        }
+      ]
+    },
+    {
+      "chinese_name": "中心涡旋",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "中心涡旋是规范场中携带群中心通量的拓扑缺陷，穿过威尔逊圈时给出中心相位。其效果可写成 $W(C)\\to z^{L(C,V)}W(C)$，其中 $z\\in Z_{N_c}$，$L(C,V)$ 是回路 $C$ 与涡旋面 $V$ 的链接数。若真空中涡旋随机凝聚，许多穿越相位平均后会产生面积律。\n\n该图像把禁闭归因于中心自由度的长程无序，同时也解释去除中心涡旋会削弱格点中的弦张力和手征凝聚。中心投影后的涡旋面在四维中是二维世界面，其穿越数决定 Wilson loop 的中心相位。涡旋 percolation 与禁闭相联系；在高温相中，涡旋沿时间方向的组织改变，可解释时间向和空间向弦张力的差别。这些非局域量的意义在于保持规范不变地探测长距离颜色响应；它们与局域传播子互补，能把禁闭、屏蔽和通量管形状放在同一套判据中比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "中心涡旋",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%AD%E5%BF%83%E6%B6%A1%E6%97%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "中心涡旋",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%AD%E5%BF%83%E6%B6%A1%E6%97%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "center vortex",
+          "url": "https://en.wikipedia.org/w/index.php?search=center%20vortex"
+        }
+      ]
+    },
+    {
+      "chinese_name": "磁单极凝聚",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "磁单极凝聚是对禁闭真空的一种双超导描述：磁荷凝聚后，电色通量被挤压成管。可用双阿贝尔希格斯模型写作 $\\mathcal L=|D_\\mu\\Phi_m|^2-V(|\\Phi_m|)-\\frac14G_{\\mu\\nu}^2$，其中 $\\Phi_m$ 是磁单极场，$G_{\\mu\\nu}$ 是对偶规范场强。$\\langle\\Phi_m\\rangle\\ne0$ 使对偶规范玻色子获得质量，形成类似迈斯纳效应的色电通量管。\n\n它常在阿贝尔投影和格点单极轨迹研究中出现。该图像常依赖选择阿贝尔投影，但许多格点研究发现单极轨迹与中心涡旋存在紧密相关。凝聚的有无可通过单极产生算符或双伦敦方程检验；它强调禁闭真空类似一种磁荷凝聚相。这些非局域量的意义在于保持规范不变地探测长距离颜色响应；它们与局域传播子互补，能把禁闭、屏蔽和通量管形状放在同一套判据中比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "磁单极凝聚",
+          "url": "https://www.baidu.com/s?wd=%E7%A3%81%E5%8D%95%E6%9E%81%E5%87%9D%E8%81%9A%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "磁单极凝聚",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A3%81%E5%8D%95%E6%9E%81%E5%87%9D%E8%81%9A"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "magnetic monopole condensate",
+          "url": "https://en.wikipedia.org/w/index.php?search=magnetic%20monopole%20condensate"
+        }
+      ]
+    },
+    {
+      "chinese_name": "双超导图像",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "双超导图像把 QCD 禁闭类比为普通超导的电磁对偶：磁单极凝聚排斥色电场，而非库珀对排斥磁场。色通量管张力可粗略写成 $\\sigma\\sim \\Phi_e^2/\\lambda^2$，其中 $\\Phi_e$ 是色电通量，$\\lambda$ 是对偶伦敦穿透深度。夸克和反夸克之间的色电场被压缩成细管，能量随长度增长。\n\n该图像不直接给出完整 QCD 拉氏量的严格推导，却为格点通量管剖面、单极凝聚和有效弦模型提供直观组织。双超导图像还预言通量管具有可测横向宽度和穿透深度，格点上可通过含静态源的场强分布提取。不同参数区域对应第一类或第二类双超导，这影响两条通量管之间的相互作用和多夸克势。这些非局域量的意义在于保持规范不变地探测长距离颜色响应；它们与局域传播子互补，能把禁闭、屏蔽和通量管形状放在同一套判据中比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "双超导图像",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8C%E8%B6%85%E5%AF%BC%E5%9B%BE%E5%83%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "双超导图像",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8C%E8%B6%85%E5%AF%BC%E5%9B%BE%E5%83%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "double superconductivity picture",
+          "url": "https://en.wikipedia.org/w/index.php?search=double%20superconductivity%20picture"
+        }
+      ]
+    },
+    {
+      "chinese_name": "格里波夫复制",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "格里波夫复制指非阿贝尔规范理论中同一规范轨道可满足同一规范固定条件多次，破坏简单的法捷耶夫-波波夫处理。朗道规范下要求 $\\partial_\\mu A^\\mu=0$，但仍可有多个规范等价场满足它；这里 $A^\\mu$ 是规范势。\n\n复制出现时，FP 算符 $M=-\\partial_\\mu D^\\mu$ 的零模标记规范切片与轨道相切。它影响红外胶子和鬼传播子，也催生 Gribov-Zwanziger 方案与基本模块区域的研究。复制问题说明局域规范条件并不能在全局场空间中构造唯一截面，这是非阿贝尔规范场几何的性质。限制到第一 Gribov 区域会改变红外传播子，而基本模块区域的严格实现仍难以用于常规计算。规范固定语言适合研究红外关联函数，但物理解释必须记住规范冗余已经被人为切片；因此常要用 Ward 恒等式、BRST 上同调或规范不变量交叉检查。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "格里波夫复制",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%BC%E9%87%8C%E6%B3%A2%E5%A4%AB%E5%A4%8D%E5%88%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "格里波夫复制",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%BC%E9%87%8C%E6%B3%A2%E5%A4%AB%E5%A4%8D%E5%88%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gribovfuzhi",
+          "url": "https://en.wikipedia.org/w/index.php?search=gribovfuzhi"
+        }
+      ]
+    },
+    {
+      "chinese_name": "朗道规范",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "朗道规范是协变规范的一种极限，要求规范势横向化，在连续理论中写作 $\\partial_\\mu A^{a\\mu}=0$，其中 $A^{a\\mu}$ 是颜色分量规范场。它对应规范固定项 $ (\\partial A)^2/(2\\xi)$ 中 $\\xi\\to0$ 的极限。该规范保持洛伦兹协变，常用于研究胶子传播子、鬼增强和 BRST 结构。\n\n由于非阿贝尔理论存在格里波夫复制，朗道条件并不能全局唯一选取代表，格点实现通常需最小化规范场范数泛函。朗道规范下传播子的横向结构最简单，也便于与连续 Dyson-Schwinger 方程和泛函重整化群比较。它的缺点是所有结果都依赖规范，不能直接当作可观测量；物理解释必须通过规范不变对象或普适红外特征支撑。规范固定语言适合研究红外关联函数，但物理解释必须记住规范冗余已经被人为切片；因此常要用 Ward 恒等式、BRST 上同调或规范不变量交叉检查。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "朗道规范",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%97%E9%81%93%E8%A7%84%E8%8C%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "朗道规范",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%97%E9%81%93%E8%A7%84%E8%8C%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "landau gauge",
+          "url": "https://en.wikipedia.org/w/index.php?search=landau%20gauge"
+        }
+      ]
+    },
+    {
+      "chinese_name": "库仑规范",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "库仑规范只约束空间分量的散度，写作 $\\nabla\\cdot\\mathbf A^a=0$，其中 $\\mathbf A^a$ 是颜色 $a$ 的空间规范势。它牺牲显式洛伦兹协变，却保留时间方向的哈密顿量解释，适合讨论瞬时库仑势和物理横向胶子。相应 FP 算符为 $M=-\\nabla\\cdot\\mathbf D$，$\\mathbf D$ 是空间协变导数。\n\n库仑规范中的红外增强库仑势常被视为禁闭的上界信号，但同样受到格里波夫复制影响。库仑规范中的瞬时势通常比物理静态势更强，被视为禁闭势的上界。哈密顿量形式使真空波泛函、Faddeev-Popov 谱和横向胶子能量成为研究对象；但非协变性让重整化和数值实现更精细。规范固定语言适合研究红外关联函数，但物理解释必须记住规范冗余已经被人为切片；因此常要用 Ward 恒等式、BRST 上同调或规范不变量交叉检查。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "库仑规范",
+          "url": "https://www.baidu.com/s?wd=%E5%BA%93%E4%BB%91%E8%A7%84%E8%8C%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "库仑规范",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BA%93%E4%BB%91%E8%A7%84%E8%8C%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "coulomb gauge",
+          "url": "https://en.wikipedia.org/w/index.php?search=coulomb%20gauge"
+        }
+      ]
+    },
+    {
+      "chinese_name": "BRST对称",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "BRST对称是规范固定后仍保留的费米型全局对称，把规范变换参数替换为鬼场。核心性质是 $s^2=0$，其中 $s$ 是 BRST 微分；例如 $sA_\\mu=D_\\mu c$，$sc=-c^2/2$，$c$ 为鬼场。物理态可由 BRST 上同调定义：闭态模掉恰当态。它保证规范参数无关性、Ward 恒等式和微扰幺正性；在禁闭问题中，非微扰 BRST 与格里波夫边界之间的张力仍是深层问题。\n\nBRST 语言把规范冗余转化为代数上同调，物理算符必须是闭的而非恰当的。若非微扰规范固定破坏 nilpotency 或引入边界项，通常的幺正性证明会变得微妙，这也是红外 QCD 中 BRST 研究持续活跃的原因。规范固定语言适合研究红外关联函数，但物理解释必须记住规范冗余已经被人为切片；因此常要用 Ward 恒等式、BRST 上同调或规范不变量交叉检查。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "BRST对称",
+          "url": "https://www.baidu.com/s?wd=BRST%E5%AF%B9%E7%A7%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "BRST对称",
+          "url": "https://zh.wikipedia.org/w/index.php?search=BRST%E5%AF%B9%E7%A7%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "BRST symmetry",
+          "url": "https://en.wikipedia.org/w/index.php?search=BRST%20symmetry"
+        }
+      ]
+    },
+    {
+      "chinese_name": "法捷耶夫-波波夫鬼",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "法捷耶夫-波波夫鬼是规范固定雅可比行列式的反交换标量场，并非物理外态。规范条件 $G[A]=0$ 给出行列式 $\\Delta_{FP}=\\det(\\delta G[A^\\alpha]/\\delta\\alpha)$，其中 $\\alpha$ 是规范变换参数；把行列式指数化引入鬼场 $c,\\bar c$。鬼场在圈图中抵消非物理规范自由度，维持规范不变的散射结果。\n\n在非阿贝尔理论中鬼与胶子耦合，因此其红外传播子也携带禁闭信息。鬼场的反交换性质来自行列式表示，而不是自旋统计定理中的物理粒子要求。它们只在内部线出现，却对 β 函数、Ward 恒等式和胶子自能有决定贡献；没有鬼场，非阿贝尔规范理论的微扰幺正性会失去保障。规范固定语言适合研究红外关联函数，但物理解释必须记住规范冗余已经被人为切片；因此常要用 Ward 恒等式、BRST 上同调或规范不变量交叉检查。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "法捷耶夫-波波夫鬼",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%95%E6%8D%B7%E8%80%B6%E5%A4%AB-%E6%B3%A2%E6%B3%A2%E5%A4%AB%E9%AC%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "法捷耶夫-波波夫鬼",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%95%E6%8D%B7%E8%80%B6%E5%A4%AB-%E6%B3%A2%E6%B3%A2%E5%A4%AB%E9%AC%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "faddeevpopovgui",
+          "url": "https://en.wikipedia.org/w/index.php?search=faddeevpopovgui"
+        }
+      ]
+    },
+    {
+      "chinese_name": "胶子传播子",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "胶子传播子是规范场两点函数，描述量子涨落在动量空间中的传播结构。朗道规范中常写成 $D^{ab}_{\\mu\\nu}(q)=\\delta^{ab}(\\delta_{\\mu\\nu}-q_\\mu q_\\nu/q^2)Z(q^2)/q^2$，其中 $Z(q^2)$ 是胶子 dressing 函数。微扰高动量区它接近无质量传播子，低动量区格点和 Dyson-Schwinger 研究显示有限或受抑行为。\n\n由于依赖规范，它不是直接可观测量，却反映真空红外结构和有效质量生成。传播子的张量分解还区分横向 dressing 与规范纵向部分，朗道规范中纵向项消失。若动量空间传播子在低动量有限，对应坐标空间反射正性可被破坏，暗示胶子不能解释为普通正范数粒子。规范固定语言适合研究红外关联函数，但物理解释必须记住规范冗余已经被人为切片；因此常要用 Ward 恒等式、BRST 上同调或规范不变量交叉检查。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "胶子传播子",
+          "url": "https://www.baidu.com/s?wd=%E8%83%B6%E5%AD%90%E4%BC%A0%E6%92%AD%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "胶子传播子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%83%B6%E5%AD%90%E4%BC%A0%E6%92%AD%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gluon propagator",
+          "url": "https://en.wikipedia.org/w/index.php?search=gluon%20propagator"
+        }
+      ]
+    },
+    {
+      "chinese_name": "鬼传播子",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "鬼传播子是 FP 鬼场的两点函数，刻画规范固定雅可比在量子涨落中的红外响应。朗道规范下常写成 $G^{ab}(q)=\\delta^{ab}F(q^2)/q^2$，其中 $F(q^2)$ 是鬼 dressing 函数。若 $F$ 在低动量强烈增强，可能支持 Kugo-Ojima 或 Gribov-Zwanziger 型禁闭机制；格点结果则更接近有限增强的 decoupling 解。\n\n它不对应实粒子传播，而是规范约束在关联函数中的影子。鬼传播子的红外行为直接关联 FP 算符小本征值的分布，因此也是 Gribov horizon 影响的探针。不同边界条件或规范复制选择会改变定量结果；与胶子传播子一起，它们构成 Landau 规范红外方案的基本数据。规范固定语言适合研究红外关联函数，但物理解释必须记住规范冗余已经被人为切片；因此常要用 Ward 恒等式、BRST 上同调或规范不变量交叉检查。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "鬼传播子",
+          "url": "https://www.baidu.com/s?wd=%E9%AC%BC%E4%BC%A0%E6%92%AD%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "鬼传播子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%AC%BC%E4%BC%A0%E6%92%AD%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ghost propagator",
+          "url": "https://en.wikipedia.org/w/index.php?search=ghost%20propagator"
+        }
+      ]
+    },
+    {
+      "chinese_name": "戴森-施温格方程",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "戴森-施温格方程是场论关联函数满足的无穷耦合积分方程组，由路径积分平移不变性导出。抽象写作 $\\langle\\delta S/\\delta\\phi(x)\\,O\\rangle=\\langle\\delta O/\\delta\\phi(x)\\rangle$，其中 $S$ 是作用量，$\\phi$ 是场，$O$ 为算符插入。对 QCD，它把传播子、顶点函数和多点函数层级相连。\n\n实际应用必须截断，并通过 Ward 恒等式、重整化群和格点数据约束，以研究动力学质量生成和禁闭红外结构。这些方程本身是精确恒等式，物理内容主要来自截断选择和重整化条件。它们能在连续动量空间处理极端尺度，补充格点有限体积数据；但若顶点模型不满足对称性约束，可能产生伪解或错误临界行为。规范固定语言适合研究红外关联函数，但物理解释必须记住规范冗余已经被人为切片；因此常要用 Ward 恒等式、BRST 上同调或规范不变量交叉检查。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "戴森-施温格方程",
+          "url": "https://www.baidu.com/s?wd=%E6%88%B4%E6%A3%AE-%E6%96%BD%E6%B8%A9%E6%A0%BC%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "戴森-施温格方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%88%B4%E6%A3%AE-%E6%96%BD%E6%B8%A9%E6%A0%BC%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dyson schwinger equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=dyson%20schwinger%20equation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "泛函重整化群",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "泛函重整化群用尺度依赖有效作用量跟踪量子涨落从紫外到红外的逐步积分。Wetterich 方程为 $\\partial_k\\Gamma_k=\\frac12\\mathrm{Tr}[(\\Gamma_k^{(2)}+R_k)^{-1}\\partial_kR_k]$，其中 $\\Gamma_k$ 是有效平均作用量，$R_k$ 是红外调节器，$k$ 为流尺度。该方程形式上一圈但包含完整场依赖。\n\n对 QCD，它可联结高能微扰、低能手征模型和有限温密相图，不过需要选择可控截断空间。FRG 的优势是同一方程可连续跨越对称破缺、束缚态和热密介质，但结果依赖截断 ansatz。通过背景场方法和动态 hadronization，可以把夸克胶子自由度与介子重子自由度在不同尺度间平滑转换。规范固定语言适合研究红外关联函数，但物理解释必须记住规范冗余已经被人为切片；因此常要用 Ward 恒等式、BRST 上同调或规范不变量交叉检查。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "泛函重整化群",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%9B%E5%87%BD%E9%87%8D%E6%95%B4%E5%8C%96%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "泛函重整化群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%9B%E5%87%BD%E9%87%8D%E6%95%B4%E5%8C%96%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "functionalrg",
+          "url": "https://en.wikipedia.org/w/index.php?search=functionalrg"
+        }
+      ]
+    },
+    {
+      "chinese_name": "贝特-萨尔皮特方程",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "贝特-萨尔皮特方程是相对论束缚态的两体积分方程，用于从夸克传播子和相互作用核求介子振幅。齐次形式为 $\\Gamma(p;P)=\\int K(p,q;P)S(q_+)\\Gamma(q;P)S(q_-)dq$，其中 $\\Gamma$ 是束缚态顶点，$S$ 是夸克传播子，$K$ 是不可约核，$P$ 为总动量。束缚态质量由 $P^2=-M^2$ 的本征值条件给出。\n\n与 Dyson-Schwinger 方程配合时，它能保持手征 Ward 恒等式并给出 pion 的 Goldstone 性。方程中的核若与夸克自能截断不一致，会破坏轴向 Ward 恒等式并让 pion 失去正确手征极限。实际计算常先求解传播子，再把束缚态问题化成本征值方程；归一化条件则保证电荷和衰变常数定义一致。这些连续非微扰工具和谱学对象都依赖截断、插值流或解析结构假设；可靠结论通常来自多个通道、一致的对称性约束以及与格点或实验数据的比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "贝特-萨尔皮特方程",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%9D%E7%89%B9-%E8%90%A8%E5%B0%94%E7%9A%AE%E7%89%B9%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "贝特-萨尔皮特方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%9D%E7%89%B9-%E8%90%A8%E5%B0%94%E7%9A%AE%E7%89%B9%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bethe salpeter equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=bethe%20salpeter%20equation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "施温格-戴森截断",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "施温格-戴森截断是在无穷关联函数层级中选取有限闭合近似，决定非微扰计算的可靠性。夸克方程常写成 $S^{-1}(p)=Z_2(i\\slashed p+m)+\\Sigma(p)$，其中 $S$ 是全夸克传播子，$Z_2$ 是波函数重整化，$\\Sigma$ 由胶子传播子和夸克胶子顶点组成。\n\n截断必须尽量保留轴向 Ward 恒等式和重整化群行为；彩虹-梯近似能描述轻介子，但对标量、重轻体系和多胶子顶点需要更精细核。截断的好坏常通过守恒流、Goldstone 定理和紫外反常维数检验，而不是只看拟合谱线。更高阶方案会引入 dressed 顶点、交叉盒图和介子云修正；这些项对重味和激发态尤其重要。这些连续非微扰工具和谱学对象都依赖截断、插值流或解析结构假设；可靠结论通常来自多个通道、一致的对称性约束以及与格点或实验数据的比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "施温格-戴森截断",
+          "url": "https://www.baidu.com/s?wd=%E6%96%BD%E6%B8%A9%E6%A0%BC-%E6%88%B4%E6%A3%AE%E6%88%AA%E6%96%AD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "施温格-戴森截断",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%96%BD%E6%B8%A9%E6%A0%BC-%E6%88%B4%E6%A3%AE%E6%88%AA%E6%96%AD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "schwinger dyson truncation",
+          "url": "https://en.wikipedia.org/w/index.php?search=schwinger%20dyson%20truncation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "QCD求和规则",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "QCD求和规则把短距离算符乘积展开与强子谱的色散表示匹配，用相关函数提取质量和耦合。典型两点函数满足 $\\Pi(q^2)=i\\int d^4x\\,e^{iqx}\\langle0|Tj(x)j(0)|0\\rangle$，其中 $j$ 是具有目标量子数的流。大欧氏动量处用微扰项和凝聚项展开，强子侧用极点加连续谱近似。\n\nBorel 变换抑制高能连续谱并改善级数收敛，使该方法适合研究稀有强子、胶球和介质修正。求和规则的系统误差来自 OPE 截断、连续谱阈值和 Borel 窗口选择。一个可靠窗口应同时压低高维凝聚和连续谱贡献；若两者不能兼顾，提取出的质量或耦合就更多反映模型假设而非 QCD 约束。这些连续非微扰工具和谱学对象都依赖截断、插值流或解析结构假设；可靠结论通常来自多个通道、一致的对称性约束以及与格点或实验数据的比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "QCD求和规则",
+          "url": "https://www.baidu.com/s?wd=QCD%E6%B1%82%E5%92%8C%E8%A7%84%E5%88%99%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "QCD求和规则",
+          "url": "https://zh.wikipedia.org/w/index.php?search=QCD%E6%B1%82%E5%92%8C%E8%A7%84%E5%88%99"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "qcd sum rules",
+          "url": "https://en.wikipedia.org/w/index.php?search=qcd%20sum%20rules"
+        }
+      ]
+    },
+    {
+      "chinese_name": "QCD算符乘积展开",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "QCD算符乘积展开把短距离两个流的乘积分解为局域算符和 Wilson 系数之和。可写作 $J(x)J(0)\\sim\\sum_n C_n(x,\\mu)O_n(0,\\mu)$，其中 $C_n$ 包含短距离微扰物理，$O_n$ 是按维数排序的局域算符。凝聚项如 $\\langle\\bar q q\\rangle$ 与 $\\langle G^2\\rangle$ 编码长距离真空结构。它不是收敛级数，而是渐近展开；在深非弹散射、求和规则和有效理论匹配中提供尺度分离框架。\n\nWilson 系数可用微扰 QCD 计算，而算符矩阵元吸收红外物理，这种分离依赖因子化尺度。重整化会让同维算符混合，因此必须指定基底和方案；在高阶计算中，反常维数矩阵决定各项的尺度演化。这些连续非微扰工具和谱学对象都依赖截断、插值流或解析结构假设；可靠结论通常来自多个通道、一致的对称性约束以及与格点或实验数据的比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "QCD算符乘积展开",
+          "url": "https://www.baidu.com/s?wd=QCD%E7%AE%97%E7%AC%A6%E4%B9%98%E7%A7%AF%E5%B1%95%E5%BC%80%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "QCD算符乘积展开",
+          "url": "https://zh.wikipedia.org/w/index.php?search=QCD%E7%AE%97%E7%AC%A6%E4%B9%98%E7%A7%AF%E5%B1%95%E5%BC%80"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "operatorproductexpansion",
+          "url": "https://en.wikipedia.org/w/index.php?search=operatorproductexpansion"
+        }
+      ]
+    },
+    {
+      "chinese_name": "凝聚项",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "凝聚项是在 OPE 或求和规则中出现的真空局域算符期望值，代表非微扰长距离物理对短距离相关函数的修正。例如 $\\langle\\bar q q\\rangle$ 是夸克凝聚，$\\langle(\\alpha_s/\\pi)G^2\\rangle$ 是胶子凝聚，其中 $G$ 为场强。它们按算符维数伴随不同幂次的 $1/Q^d$ 进入展开。\n\n凝聚项依赖重整化方案和尺度，不能被简单理解为经典场平均值，却为强子质量劈裂和介质效应提供低能参数。凝聚项的物理解释必须谨慎，因为局域算符期望值可与微扰级数的重求和存在重整子歧义。尽管如此，在固定方案和尺度下，它们仍是有效的参数化方式，能比较不同通道中真空结构的相对影响。这些连续非微扰工具和谱学对象都依赖截断、插值流或解析结构假设；可靠结论通常来自多个通道、一致的对称性约束以及与格点或实验数据的比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "凝聚项",
+          "url": "https://www.baidu.com/s?wd=%E5%87%9D%E8%81%9A%E9%A1%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "凝聚项",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%9D%E8%81%9A%E9%A1%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "condensate term",
+          "url": "https://en.wikipedia.org/w/index.php?search=condensate%20term"
+        }
+      ]
+    },
+    {
+      "chinese_name": "胶球",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "胶球是主要由胶子自由度组成的颜色单态束缚态，在纯 Yang-Mills 理论中是最自然的强子谱。可用局域流 $O(x)=\\mathrm{Tr}G_{\\mu\\nu}G^{\\mu\\nu}$ 激发标量胶球，其中 $G_{\\mu\\nu}$ 是胶子场强；两点函数的指数衰减给出质量。真实 QCD 中胶球会与同量子数的普通介子混合，使实验识别困难。\n\n格点纯胶计算预言最低标量胶球在 GeV 量级，是检验非微扰胶动力学的重要目标。胶球算符通常需要构造多种空间形状并用变分法分离基态和激发态。含轻夸克的全 QCD 中，胶球与同量子数的介子和多粒子态混合，实验候选必须通过衰变分支、产生机制和相位分析共同判断。这些连续非微扰工具和谱学对象都依赖截断、插值流或解析结构假设；可靠结论通常来自多个通道、一致的对称性约束以及与格点或实验数据的比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "胶球",
+          "url": "https://www.baidu.com/s?wd=%E8%83%B6%E7%90%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "胶球",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%83%B6%E7%90%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "glueball",
+          "url": "https://en.wikipedia.org/w/index.php?search=glueball"
+        }
+      ]
+    },
+    {
+      "chinese_name": "混杂介子",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "混杂介子是夸克反夸克与显式激发胶场共同构成的颜色单态，区别于普通价夸克模型介子。一个示意流为 $J_\\mu=\\bar q\\gamma_\\nu G_{\\mu\\nu}q$，其中 $q$ 是夸克场，$G_{\\mu\\nu}$ 是胶子场强。胶场激发可产生普通 $q\\bar q$ 难以获得的奇异量子数，例如 $1^{-+}$。\n\n它们在格点谱、QCD 求和规则和实验振幅分析中被寻找，能检验强子内部色通量管或胶自由度的动力学。混杂态的质量和衰变模式对胶场激发的模型很敏感，单一插值流不能唯一给出内部结构。格点谱学通过多算符相关矩阵寻找能级，再借助有限体积散射理论连接实验共振；这比简单寻找质量峰更可靠。这些连续非微扰工具和谱学对象都依赖截断、插值流或解析结构假设；可靠结论通常来自多个通道、一致的对称性约束以及与格点或实验数据的比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "混杂介子",
+          "url": "https://www.baidu.com/s?wd=%E6%B7%B7%E6%9D%82%E4%BB%8B%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "混杂介子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B7%B7%E6%9D%82%E4%BB%8B%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hybrid meson",
+          "url": "https://en.wikipedia.org/w/index.php?search=hybrid%20meson"
+        }
+      ]
+    },
+    {
+      "chinese_name": "四夸克态",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "四夸克态是最小价结构含两个夸克和两个反夸克的强子候选，可表现为紧致双夸克-反双夸克或强子分子。插值流可写成 $J=[q^TC\\Gamma q][\\bar q\\Gamma C\\bar q^T]$，其中 $C$ 是电荷共轭矩阵，$\\Gamma$ 指定自旋味结构。关键在于同一量子数还可由两介子连续态贡献，因此谱峰不自动意味着紧致态。\n\n研究四夸克态需要结合阈值、有限体积能级和散射相移。四夸克态的判别常需要区分束缚态、虚态、共振和阈值 cusp。有限体积能级随盒长变化可通过 Luescher 方法给出散射相移，从而判断极点位置；这种极点信息比插值流中四夸克成分的大小更具物理意义。这些连续非微扰工具和谱学对象都依赖截断、插值流或解析结构假设；可靠结论通常来自多个通道、一致的对称性约束以及与格点或实验数据的比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "四夸克态",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%9B%E5%A4%B8%E5%85%8B%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "四夸克态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%9B%E5%A4%B8%E5%85%8B%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "four quark state",
+          "url": "https://en.wikipedia.org/w/index.php?search=four%20quark%20state"
+        }
+      ]
+    },
+    {
+      "chinese_name": "重夸克有效理论",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "重夸克有效理论利用 $m_Q\\gg\\Lambda_{QCD}$ 的层级，把重夸克动量分解为大质量部分和小残余动量。场重定义后拉氏量为 $\\mathcal L_{HQET}=\\bar h_v iv\\cdot D h_v+(1/2m_Q)O_1+\\cdots$，其中 $h_v$ 是速度 $v$ 固定的重夸克场。最低阶出现重夸克味-自旋对称性，使 B、D 强子的形状因子受到统一约束。\n\n$1/m_Q$ 修正系统描述动能、色磁相互作用和衰变矩阵元。HQET 的重整化含有幂发散和匹配系数，格点实现时必须小心处理静态自能。它特别适合提取 CKM 矩阵元所需的重轻介子形状因子，并解释重夸克极限下许多看似不同衰变由同一个 Isgur-Wise 函数控制。有效理论和因子化对象的共同点是先分清尺度，再把不可计算的长距离部分定义成普适矩阵元；若尺度层级不明显，相应展开的误差会迅速放大。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "重夸克有效理论",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8D%E5%A4%B8%E5%85%8B%E6%9C%89%E6%95%88%E7%90%86%E8%AE%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "重夸克有效理论",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8D%E5%A4%B8%E5%85%8B%E6%9C%89%E6%95%88%E7%90%86%E8%AE%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "heavy quark effective theory",
+          "url": "https://en.wikipedia.org/w/index.php?search=heavy%20quark%20effective%20theory"
+        }
+      ]
+    },
+    {
+      "chinese_name": "NRQCD",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "NRQCD是描述重夸克偶素和非相对论重夸克过程的有效理论，展开参数是重夸克速度 $v\\ll1$。拉氏量含 $\\psi^\\dagger(iD_t+\\mathbf D^2/(2m))\\psi+\\cdots$，其中 $\\psi$ 是重夸克 Pauli 场，$m$ 是重夸克质量。高能尺度 $m$ 被匹配进 Wilson 系数，低能束缚态动力学由动能、色磁项和四费米算符控制。\n\n它用于底偶素谱、夸克偶素产生衰变和格点重夸克计算。NRQCD 的功率计数同时涉及速度、耦合和非微扰矩阵元，不同过程的主导项可能不同。色八重态机制说明短距离产生的重夸克对可通过软胶子演化成物理偶素，这对解释强子碰撞中的 J/psi 产生很关键。有效理论和因子化对象的共同点是先分清尺度，再把不可计算的长距离部分定义成普适矩阵元；若尺度层级不明显，相应展开的误差会迅速放大。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "NRQCD",
+          "url": "https://www.baidu.com/s?wd=NRQCD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "NRQCD",
+          "url": "https://zh.wikipedia.org/w/index.php?search=NRQCD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "NRQCD",
+          "url": "https://en.wikipedia.org/w/index.php?search=NRQCD"
+        }
+      ]
+    },
+    {
+      "chinese_name": "SCET",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "SCET 是处理高能喷注中软模和共线模的有效理论，适用于存在小参数 $\\lambda\\ll1$ 的多尺度过程。共线动量标度常写成 $p_c^\\mu\\sim Q(1,\\lambda^2,\\lambda)$，其中分量沿光锥方向分解，$Q$ 是硬尺度。硬物理被匹配到 Wilson 系数，软和共线辐射由有效场与 Wilson 线描述。\n\n它系统证明因子化并重求和 Sudakov 对数，在 B 衰变、事件形状和横动量谱中很重要。SCET 中的场还按标签动量和剩余动量拆分，避免重复计数不同尺度。软函数中的 Wilson 线记录颜色流几何，产生 cusp 反常维数；这使许多双对数可通过重整化群指数化，而不是逐阶手工求和。有效理论和因子化对象的共同点是先分清尺度，再把不可计算的长距离部分定义成普适矩阵元；若尺度层级不明显，相应展开的误差会迅速放大。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "SCET",
+          "url": "https://www.baidu.com/s?wd=SCET%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "SCET",
+          "url": "https://zh.wikipedia.org/w/index.php?search=SCET"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "SCET",
+          "url": "https://en.wikipedia.org/w/index.php?search=SCET"
+        }
+      ]
+    },
+    {
+      "chinese_name": "软共线有效理论",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "软共线有效理论是 SCET 的中文称呼，核心是把硬、共线和软自由度按动量标度分离。光锥分解中 $p^\\mu=(n\\cdot p)\\bar n^\\mu/2+(\\bar n\\cdot p)n^\\mu/2+p_\\perp^\\mu$，其中 $n,\\bar n$ 是两条光锥基矢。共线场沿喷注方向传播，软场通过 Wilson 线与其耦合。该理论让红外奇异性在各函数中因子化，并通过重整化群在硬、喷注和软尺度之间演化。\n\n在该理论中，重参数不变性限制了有效算符系数，零-bin 扣除避免软区和共线区重复。根据软模与共线模的虚度关系，还可区分不同版本的理论；这种细分对横动量谱和端点区域尤其重要。有效理论和因子化对象的共同点是先分清尺度，再把不可计算的长距离部分定义成普适矩阵元；若尺度层级不明显，相应展开的误差会迅速放大。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "软共线有效理论",
+          "url": "https://www.baidu.com/s?wd=%E8%BD%AF%E5%85%B1%E7%BA%BF%E6%9C%89%E6%95%88%E7%90%86%E8%AE%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "软共线有效理论",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BD%AF%E5%85%B1%E7%BA%BF%E6%9C%89%E6%95%88%E7%90%86%E8%AE%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "soft collinear effective theory",
+          "url": "https://en.wikipedia.org/w/index.php?search=soft%20collinear%20effective%20theory"
+        }
+      ]
+    },
+    {
+      "chinese_name": "颜色玻璃凝聚",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "颜色玻璃凝聚描述高速强子或原子核在小 $x$ 区域的高占有数胶子场。快 parton 被视为静态颜色源 $\\rho$，慢胶子满足经典方程 $D_\\mu F^{\\mu\\nu}=J^\\nu[\\rho]$，其中 $J^\\nu$ 是沿光锥的颜色流。玻璃一词来自源的时间膨胀，凝聚指胶子占有数 $f\\sim1/\\alpha_s$ 很大。\n\n它给出饱和尺度 $Q_s$，用于初始重离子碰撞、前向强子产生和小 x 演化。CGC 的权重泛函随快度按 JIMWLK 方程演化，平均经典场给出小 x 观测量。强场并不意味着耦合大，而是源密度高导致非线性项重要；这正是它能在弱耦合框架中处理饱和的原因。有效理论和因子化对象的共同点是先分清尺度，再把不可计算的长距离部分定义成普适矩阵元；若尺度层级不明显，相应展开的误差会迅速放大。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "颜色玻璃凝聚",
+          "url": "https://www.baidu.com/s?wd=%E9%A2%9C%E8%89%B2%E7%8E%BB%E7%92%83%E5%87%9D%E8%81%9A%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "颜色玻璃凝聚",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%A2%9C%E8%89%B2%E7%8E%BB%E7%92%83%E5%87%9D%E8%81%9A"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "color glass condensate",
+          "url": "https://en.wikipedia.org/w/index.php?search=color%20glass%20condensate"
+        }
+      ]
+    },
+    {
+      "chinese_name": "小x物理",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "小x物理研究强子中携带很小纵向动量分数的 parton，尤其是快速增长的胶子密度。Bjorken 变量为 $x=Q^2/(2P\\cdot q)$，其中 $Q^2$ 是探针虚度，$P$ 是靶动量，$q$ 是交换动量。$x\\ll1$ 时高能对数 $\\ln(1/x)$ 需要重求和，BFKL 演化推动密度增长，而非线性复合产生饱和。\n\n该领域连接深非弹散射、前向喷注、核阴影和颜色玻璃凝聚。小 x 极限中纵向相干长度很长，探针会同时看到核内多个颜色源，因而核增强效应显著。几何标度、衍射截面和前向双粒子关联都是检验饱和的窗口；未来电子离子对撞机将显著提高约束能力。有效理论和因子化对象的共同点是先分清尺度，再把不可计算的长距离部分定义成普适矩阵元；若尺度层级不明显，相应展开的误差会迅速放大。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "小x物理",
+          "url": "https://www.baidu.com/s?wd=%E5%B0%8Fx%E7%89%A9%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "小x物理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B0%8Fx%E7%89%A9%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "small x physics",
+          "url": "https://en.wikipedia.org/w/index.php?search=small%20x%20physics"
+        }
+      ]
+    },
+    {
+      "chinese_name": "BFKL演化",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "BFKL演化重求和高能散射中的 $\\alpha_s\\ln(1/x)$ 项，描述未积分胶子分布随快度增长。其线性形式可写成 $\\partial_Y f(k,Y)=\\bar\\alpha_s K_{BFKL}\\otimes f(k,Y)$，其中 $Y=\\ln(1/x)$，$k$ 是横动量，$K_{BFKL}$ 是积分核。解通常随 $Y$ 幂次增长并扩散到不同横动量，预示小 x 胶子密度迅速增加。\n\n真正高密度区还需 BK 或 JIMWLK 非线性项抑制增长。BFKL 核的高阶修正和 running coupling 对截距影响很大，简单领先阶增长常会过强。与 DGLAP 区域的匹配需要避免双重计数；在高密度极限，线性 BFKL 是 BK 方程或 JIMWLK 演化的稀薄近似。有效理论和因子化对象的共同点是先分清尺度，再把不可计算的长距离部分定义成普适矩阵元；若尺度层级不明显，相应展开的误差会迅速放大。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "BFKL演化",
+          "url": "https://www.baidu.com/s?wd=BFKL%E6%BC%94%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "BFKL演化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=BFKL%E6%BC%94%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "BFKL evolution",
+          "url": "https://en.wikipedia.org/w/index.php?search=BFKL%20evolution"
+        }
+      ]
+    },
+    {
+      "chinese_name": "DGLAP演化",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "DGLAP演化描述部分子分布随硬尺度变化的重整化群方程，重求和 $\\ln Q^2$ 型共线对数。方程为 $\\partial f_i(x,Q^2)/\\partial\\ln Q^2=\\sum_j P_{ij}\\otimes f_j$，其中 $f_i$ 是 parton 分布，$P_{ij}$ 是劈裂函数，卷积在动量分数 $x$ 上进行。它把一个尺度上拟合出的 PDF 演化到另一个尺度，是强子碰撞截面预言的基础。\n\n与 BFKL 相比，它强调强横动量排序而非小 x 快度排序。DGLAP 方程的劈裂函数可由 parton 分裂概率的奇异部分计算，并满足动量守恒和味数守恒约束。全局 PDF 拟合把实验数据通过这一演化联系起来；高阶 NNLO 甚至更高阶修正是 LHC 精密预言不可缺少的部分。有效理论和因子化对象的共同点是先分清尺度，再把不可计算的长距离部分定义成普适矩阵元；若尺度层级不明显，相应展开的误差会迅速放大。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "DGLAP演化",
+          "url": "https://www.baidu.com/s?wd=DGLAP%E6%BC%94%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "DGLAP演化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=DGLAP%E6%BC%94%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "DGLAP evolution",
+          "url": "https://en.wikipedia.org/w/index.php?search=DGLAP%20evolution"
+        }
+      ]
+    },
+    {
+      "chinese_name": "苏达科夫因子",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "苏达科夫因子给出在两个尺度之间没有可分辨辐射的概率，来自软共线对数的指数重求和。常写成 $\\Delta(Q,\\mu)=\\exp[-\\int_\\mu^Q (dk/k)(\\alpha_s/\\pi)\\int dz\\,P(z)]$，其中 $Q$ 是硬尺度，$\\mu$ 是分辨尺度，$P(z)$ 为劈裂函数。指数中的负号表示辐射相空间越大，零辐射概率越小。\n\n它控制喷注质量、横动量分布和部分子淋浴中的 veto 概率。Sudakov 抑制解释了端点区域或小横动量区域中固定阶计算为何失效。指数中的 cusp 反常维数控制双对数，非 cusp 项给单对数；在部分子淋浴中，同一结构转化为逐次发射的无辐射概率。有效理论和因子化对象的共同点是先分清尺度，再把不可计算的长距离部分定义成普适矩阵元；若尺度层级不明显，相应展开的误差会迅速放大。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "苏达科夫因子",
+          "url": "https://www.baidu.com/s?wd=%E8%8B%8F%E8%BE%BE%E7%A7%91%E5%A4%AB%E5%9B%A0%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "苏达科夫因子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%8B%8F%E8%BE%BE%E7%A7%91%E5%A4%AB%E5%9B%A0%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "sudakovyinzi",
+          "url": "https://en.wikipedia.org/w/index.php?search=sudakovyinzi"
+        }
+      ]
+    },
+    {
+      "chinese_name": "部分子分布函数",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "部分子分布函数给出强子在高能探针下含有某类 parton 且其纵向动量分数为 $x$ 的概率密度。因子化截面写成 $\\sigma=\\sum_i f_i(x,\\mu)\\otimes \\hat\\sigma_i(x,Q,\\mu)$，其中 $f_i$ 是 PDF，$\\hat\\sigma_i$ 是短距离硬截面，$\\mu$ 为因子化尺度。PDF 本身非微扰，需由实验全局拟合或格点矩阵元约束；其尺度依赖由 DGLAP 演化给出。\n\n它不是静态波函数，而是含 Wilson 线的光锥关联函数。PDF 的概率解释只在特定光锥规范和领先 twist 下最直观，严格定义包含规范链接以保持规范不变。不同实验约束不同 x 区域和 flavor 组合，因此不确定度随动量分数变化很大；核 PDF 还包含阴影和 EMC 效应。有效理论和因子化对象的共同点是先分清尺度，再把不可计算的长距离部分定义成普适矩阵元；若尺度层级不明显，相应展开的误差会迅速放大。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "部分子分布函数",
+          "url": "https://www.baidu.com/s?wd=%E9%83%A8%E5%88%86%E5%AD%90%E5%88%86%E5%B8%83%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "部分子分布函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%83%A8%E5%88%86%E5%AD%90%E5%88%86%E5%B8%83%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "parton distribution function",
+          "url": "https://en.wikipedia.org/w/index.php?search=parton%20distribution%20function"
+        }
+      ]
+    },
+    {
+      "chinese_name": "广义部分子分布",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "广义部分子分布同时包含 parton 纵向动量和横向位置转移信息，连接普通 PDF 与形状因子。夸克 GPD 可由 $F(x,\\xi,t)=\\int dz^- e^{ixP^+z^-}\\langle p'|\\bar q(-z/2)\\Gamma W q(z/2)|p\\rangle$ 定义，其中 $\\xi$ 是偏斜度，$t=(p'-p)^2$，$W$ 为 Wilson 线。其一阶矩给电磁或引力形状因子，特定组合满足 Ji 角动量和规则。\n\n它常通过深虚康普顿散射提取。GPD 的多项式性来自洛伦兹协变，保证其矩与局域 twist-two 算符一致。傅里叶变换到冲量参数空间后，可在零偏斜度下给出横向空间分布；因此它为核子自旋分解和三维成像提供理论框架。有效理论和因子化对象的共同点是先分清尺度，再把不可计算的长距离部分定义成普适矩阵元；若尺度层级不明显，相应展开的误差会迅速放大。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "广义部分子分布",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%BF%E4%B9%89%E9%83%A8%E5%88%86%E5%AD%90%E5%88%86%E5%B8%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "广义部分子分布",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%BF%E4%B9%89%E9%83%A8%E5%88%86%E5%AD%90%E5%88%86%E5%B8%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "generalized parton distribution",
+          "url": "https://en.wikipedia.org/w/index.php?search=generalized%20parton%20distribution"
+        }
+      ]
+    },
+    {
+      "chinese_name": "横动量分布",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "横动量分布描述强子内 parton 不仅携带纵向分数 $x$，还带有本征横动量 $k_T$ 的概率结构。TMD 因子化中常有 $d\\sigma\\sim H(Q)\\int d^2k_T f_{a/h_1}(x,k_T)f_{b/h_2}(x',q_T-k_T)S$，其中 $H$ 是硬函数，$S$ 是软因子。Wilson 线方向使 TMD 对过程敏感，例如 Sivers 函数在半包容 DIS 与 Drell-Yan 中变号。它适合小横动量谱和自旋-轨道相关研究。\n\nTMD 的定义必须处理快度发散，因此除了通常重整化尺度外还含快度尺度。Collins-Soper 方程控制这种尺度演化，并把非微扰大距离横向结构与可计算短距离核分开；这正是精确描述小横动量 Drell-Yan 谱的关键。有效理论和因子化对象的共同点是先分清尺度，再把不可计算的长距离部分定义成普适矩阵元；若尺度层级不明显，相应展开的误差会迅速放大。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "横动量分布",
+          "url": "https://www.baidu.com/s?wd=%E6%A8%AA%E5%8A%A8%E9%87%8F%E5%88%86%E5%B8%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "横动量分布",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A8%AA%E5%8A%A8%E9%87%8F%E5%88%86%E5%B8%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "transverse momentum distribution",
+          "url": "https://en.wikipedia.org/w/index.php?search=transverse%20momentum%20distribution"
+        }
+      ]
+    },
+    {
+      "chinese_name": "碎裂函数",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "碎裂函数描述一个高能 parton 强子化为给定强子并让其携带动量分数 $z$ 的概率密度。因子化表达中 $d\\sigma^h=\\sum_i d\\hat\\sigma_i\\otimes D_i^h(z,\\mu)$，其中 $D_i^h$ 是 parton $i$ 到强子 $h$ 的碎裂函数，$\\mu$ 为因子化尺度。它是非微扰对象，但随尺度按 timelike DGLAP 方程演化。\n\n碎裂函数用于电子正电子湮灭、半包容 DIS 和强子碰撞中的单强子谱分析。碎裂函数的 flavor 分辨来自不同强子种类和电荷组合，实验上常由电子正电子数据提供干净约束。重味碎裂还涉及重夸克质量和阈值匹配；对喷注内部强子分布，碎裂函数是连接 parton 级计算与探测器强子信号的桥梁。有效理论和因子化对象的共同点是先分清尺度，再把不可计算的长距离部分定义成普适矩阵元；若尺度层级不明显，相应展开的误差会迅速放大。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "碎裂函数",
+          "url": "https://www.baidu.com/s?wd=%E7%A2%8E%E8%A3%82%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "碎裂函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A2%8E%E8%A3%82%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fragmentation function",
+          "url": "https://en.wikipedia.org/w/index.php?search=fragmentation%20function"
+        }
+      ]
+    },
+    {
+      "chinese_name": "喷注函数",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "喷注函数刻画高能共线辐射在一个喷注内部形成不变质量或形状变量的概率结构。SCET 中常写成 $J(p^2,\\mu)=\\mathrm{Im}\\,i\\int d^4x\\,e^{-ipx}\\langle0|T\\chi_n(x)\\bar\\chi_n(0)|0\\rangle$，其中 $\\chi_n$ 是规范不变共线夸克场，$p^2$ 为喷注不变质量。它与硬函数、软函数共同因子化事件形状或阈值截面。\n\n喷注函数的反常维数负责重求和共线对数。喷注函数的定义依赖喷注算法或观测量，因而必须与软函数边界一致。它包含共线奇异性但不包含宽角软辐射；在拉普拉斯或 Mellin 空间中，卷积常化为乘积，使高阶重求和和匹配更透明。有效理论和因子化对象的共同点是先分清尺度，再把不可计算的长距离部分定义成普适矩阵元；若尺度层级不明显，相应展开的误差会迅速放大。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "喷注函数",
+          "url": "https://www.baidu.com/s?wd=%E5%96%B7%E6%B3%A8%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "喷注函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%96%B7%E6%B3%A8%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "jet function",
+          "url": "https://en.wikipedia.org/w/index.php?search=jet%20function"
+        }
+      ]
+    },
+    {
+      "chinese_name": "强耦合常数跑动",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "强耦合常数跑动指 QCD 耦合随重整化尺度变化，是渐近自由和红外强耦合的共同来源。重整化群方程为 $\\mu\\,d\\alpha_s/d\\mu=\\beta(\\alpha_s)$，其中一圈 $\\beta(\\alpha_s)=-\\beta_0\\alpha_s^2/(2\\pi)+\\cdots$，$\\beta_0=11N_c/3-2N_f/3$。当 $\\beta_0>0$ 时，高能处 $\\alpha_s$ 变小，低能处变大。跑动耦合控制喷注截面、PDF 演化和 ΛQCD 的生成。\n\n跑动还意味着同一个强过程在不同动量转移下表现出不同有效强度，不能把 αs 当成固定常数。高能实验通过事件形状、喷注率和 τ 衰变等多种量抽取它；这些结果的一致性是 QCD 量子修正结构的重要检验。重整化相关概念都带有方案和尺度标记，单独数字很少有绝对含义；真正可比较的是同一方案下的演化、匹配以及与短距离可观测量的组合。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "强耦合常数跑动",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%BA%E8%80%A6%E5%90%88%E5%B8%B8%E6%95%B0%E8%B7%91%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "强耦合常数跑动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%BA%E8%80%A6%E5%90%88%E5%B8%B8%E6%95%B0%E8%B7%91%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "strong coupling constant running",
+          "url": "https://en.wikipedia.org/w/index.php?search=strong%20coupling%20constant%20running"
+        }
+      ]
+    },
+    {
+      "chinese_name": "渐近自由",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "渐近自由是非阿贝尔规范理论在高能短距离处耦合变弱的性质，是 QCD 可用微扰计算硬过程的基础。一圈结果给出 $\\alpha_s(Q)=4\\pi/(\\beta_0\\ln(Q^2/\\Lambda_{QCD}^2))$，其中 $Q$ 是硬尺度，$\\Lambda_{QCD}$ 是维度生成的强尺度，$\\beta_0$ 由颜色数和味数决定。\n\n胶子自相互作用带来的反屏蔽超过夸克屏蔽，使 β 函数首项为负。低能处耦合增长则与禁闭和强子化相伴。渐近自由也解释了深非弹散射中 Bjorken 标度近似成立以及其对数破缺。它要求非阿贝尔规范玻色子自耦合存在，因此从实验上验证 αs 跑动，等价于检验胶子携带颜色并参与反屏蔽。重整化相关概念都带有方案和尺度标记，单独数字很少有绝对含义；真正可比较的是同一方案下的演化、匹配以及与短距离可观测量的组合。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "渐近自由",
+          "url": "https://www.baidu.com/s?wd=%E6%B8%90%E8%BF%91%E8%87%AA%E7%94%B1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "渐近自由",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B8%90%E8%BF%91%E8%87%AA%E7%94%B1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "asymptotic freedom",
+          "url": "https://en.wikipedia.org/w/index.php?search=asymptotic%20freedom"
+        }
+      ]
+    },
+    {
+      "chinese_name": "ΛQCD",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "ΛQCD 是由量纲嬗变产生的强相互作用尺度，把无质量 QCD 中的无量纲耦合换成一个能量标尺。按一圈定义，$\\Lambda_{QCD}=\\mu\\exp[-2\\pi/(\\beta_0\\alpha_s(\\mu))]$，其中 $\\mu$ 是重整化尺度，$\\alpha_s(\\mu)$ 是该尺度耦合，$\\beta_0$ 是首阶 β 函数系数。它不是可直接观测的唯一常数，数值依赖重整化方案和味数阈值；但强子质量、弦张力和非微扰凝聚的大尺度均由它设定。\n\n由于 ΛQCD 通过指数关系由高能耦合生成，小的耦合变化会对应低能尺度的显著差异。它标志微扰展开失去直接控制的大致位置，但不是相变边界；不同可观测量进入非微扰区的方式仍各不相同。重整化相关概念都带有方案和尺度标记，单独数字很少有绝对含义；真正可比较的是同一方案下的演化、匹配以及与短距离可观测量的组合。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "ΛQCD",
+          "url": "https://www.baidu.com/s?wd=%CE%9BQCD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "ΛQCD",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%CE%9BQCD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lambda QCD",
+          "url": "https://en.wikipedia.org/w/index.php?search=lambda%20QCD"
+        }
+      ]
+    },
+    {
+      "chinese_name": "重整化群不变量",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "重整化群不变量是在改变重整化尺度时保持不变的参数或组合，用来剥离方案依赖的运行。若某质量满足 $\\mu dm/d\\mu=-\\gamma_m(g)m$，则可构造 $\\hat m=m(\\mu)[2\\beta_0g^2(\\mu)]^{-\\gamma_0/(2\\beta_0)}\\exp\\{-\\int^g dg'(\\gamma_m/\\beta-\\gamma_0/(\\beta_0g'))\\}$，其中 $\\beta$ 和 $\\gamma_m$ 分别为 β 函数与质量反常维数。$\\hat m$ 随 $\\mu$ 不变，便于比较不同格点、微扰阶数和方案中的夸克质量。\n\nRGI 量常用于把不同方案的中间结果换算到共同基准，再与实验或格点平均比较。构造时需要已知足够阶数的 β 函数和反常维数；截断阶数越高，残余尺度依赖越小，但数值仍带微扰不确定度。重整化相关概念都带有方案和尺度标记，单独数字很少有绝对含义；真正可比较的是同一方案下的演化、匹配以及与短距离可观测量的组合。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "重整化群不变量",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8D%E6%95%B4%E5%8C%96%E7%BE%A4%E4%B8%8D%E5%8F%98%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "重整化群不变量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8D%E6%95%B4%E5%8C%96%E7%BE%A4%E4%B8%8D%E5%8F%98%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "renormalization group invariant",
+          "url": "https://en.wikipedia.org/w/index.php?search=renormalization%20group%20invariant"
+        }
+      ]
+    },
+    {
+      "chinese_name": "MSbar方案",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "MSbar方案是维数正规化中最常用的重整化方案，只减去极点及约定的常数项。重整化常数含 $Z=1+\\sum_{n,k}c_{nk}\\alpha_s^n/\\epsilon^k$，其中 $\\epsilon=(4-d)/2$，$d$ 是维数，$c_{nk}$ 是微扰系数。MSbar 的好处是保持规范不变性并使高阶计算简洁，但质量和耦合的数值具有方案依赖。\n\n实验给出的 $\\alpha_s(M_Z)$、夸克质量和 Wilson 系数通常都需说明采用 MSbar。MSbar 不直接对应动量截止，因此其参数有时缺少简单直观图像，却非常适合高阶维数正规化计算。与格点、阈值质量或动量减法方案比较时，必须通过匹配关系转换；否则同名质量或耦合不能逐数值相等。重整化相关概念都带有方案和尺度标记，单独数字很少有绝对含义；真正可比较的是同一方案下的演化、匹配以及与短距离可观测量的组合。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "MSbar方案",
+          "url": "https://www.baidu.com/s?wd=MSbar%E6%96%B9%E6%A1%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "MSbar方案",
+          "url": "https://zh.wikipedia.org/w/index.php?search=MSbar%E6%96%B9%E6%A1%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "MSbar scheme",
+          "url": "https://en.wikipedia.org/w/index.php?search=MSbar%20scheme"
+        }
+      ]
+    },
+    {
+      "chinese_name": "阈值匹配",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "阈值匹配是在重夸克质量附近改变有效味数时，保证高低能理论给出同一物理振幅的过程。耦合匹配可写成 $\\alpha_s^{(N_f-1)}(\\mu)=\\zeta_\\alpha(\\mu,m_Q)\\alpha_s^{(N_f)}(\\mu)$，其中 $m_Q$ 是被积分掉的重夸克质量，$\\zeta_\\alpha$ 是匹配系数。它把重夸克圈效应吸收入低能参数，使 ΛQCD、PDF 和 Wilson 系数跨阈值连续衔接。\n\n匹配尺度选择会带来可估计的高阶不确定度。阈值附近并不存在真正不连续的物理现象，不连续只来自有效理论描述的自由度改变。选择匹配尺度接近重夸克质量能减小大对数；若过程能量远高于阈值，则应把该重夸克作为活动味参与演化。重整化相关概念都带有方案和尺度标记，单独数字很少有绝对含义；真正可比较的是同一方案下的演化、匹配以及与短距离可观测量的组合。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阈值匹配",
+          "url": "https://www.baidu.com/s?wd=%E9%98%88%E5%80%BC%E5%8C%B9%E9%85%8D%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阈值匹配",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%88%E5%80%BC%E5%8C%B9%E9%85%8D"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "threshold matching",
+          "url": "https://en.wikipedia.org/w/index.php?search=threshold%20matching"
+        }
+      ]
+    },
+    {
+      "chinese_name": "两圈β函数",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "两圈β函数给出强耦合跑动到次领先阶的普适部分，在质量无关方案中前两项不依赖具体减法约定。常写成 $\\mu dg/d\\mu=-\\beta_0g^3/(16\\pi^2)-\\beta_1g^5/(16\\pi^2)^2+\\cdots$，其中 $g$ 是规范耦合，$\\beta_0,\\beta_1$ 由颜色数和味数决定。第二项修正渐近自由的对数跑动，并进入两圈 Λ 参数定义。\n\n它是高精度喷注、PDF 演化和格点尺度设定的基础输入。两圈结果已经能体现非平凡红外固定点的可能性，例如味数接近共形窗口时首两项竞争。虽然真实低味 QCD 没有微扰红外固定点，这一结构仍为 walking 理论和大味数格点研究提供参照。重整化相关概念都带有方案和尺度标记，单独数字很少有绝对含义；真正可比较的是同一方案下的演化、匹配以及与短距离可观测量的组合。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "两圈β函数",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%A4%E5%9C%88%CE%B2%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "两圈β函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%A4%E5%9C%88%CE%B2%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "two loop beta function",
+          "url": "https://en.wikipedia.org/w/index.php?search=two%20loop%20beta%20function"
+        }
+      ]
+    },
+    {
+      "chinese_name": "三圈β函数",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "三圈β函数把强耦合跑动推进到更高精度，但从第三项起系数依赖重整化方案。展开可写为 $\\mu dg/d\\mu=-\\beta_0g^3/(16\\pi^2)-\\beta_1g^5/(16\\pi^2)^2-\\beta_2g^7/(16\\pi^2)^3+\\cdots$，其中 $\\beta_2$ 在 MSbar 等方案中有特定数值。三圈项改善从高能实验尺度跑到低能强子尺度的稳定性，也影响阈值匹配和 Wilson 系数演化。\n\n它体现微扰 QCD 精密化必须同时指定方案。三圈及更高阶结果常与 Padé 估计、方案变换和阈值匹配一起用于评估微扰误差。它也提醒人们，β 函数本身不是可观测量；只有与物理短距离量的系数组合后，方案依赖才会在足够阶数抵消。重整化相关概念都带有方案和尺度标记，单独数字很少有绝对含义；真正可比较的是同一方案下的演化、匹配以及与短距离可观测量的组合。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "三圈β函数",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%89%E5%9C%88%CE%B2%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "三圈β函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%89%E5%9C%88%CE%B2%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "three loop beta function",
+          "url": "https://en.wikipedia.org/w/index.php?search=three%20loop%20beta%20function"
+        }
+      ]
+    },
+    {
+      "chinese_name": "手征微扰论",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "手征微扰论是以赝戈德斯通玻色子为自由度的低能 QCD 有效理论，按动量和轻夸克质量展开。最低阶拉氏量为 $\\mathcal L_2=(f^2/4)\\mathrm{Tr}(\\partial_\\mu U\\partial^\\mu U^\\dagger)+(f^2B/2)\\mathrm{Tr}(M(U+U^\\dagger))$，其中 $U$ 是手征场，$M$ 是夸克质量矩阵。低能常数 $f,B$ 和高阶系数吸收短距离强相互作用。\n\n它系统描述 pion 散射、弱矩阵元和格点外推。展开的有效小量是外动量和 Goldstone 质量除以手征破缺尺度，因此 ηprime 或 rho 介子通常不作为显式低能自由度。圈图带来的手征对数由对称性固定，而低能常数需要实验、格点或共振饱和估计。重整化相关概念都带有方案和尺度标记，单独数字很少有绝对含义；真正可比较的是同一方案下的演化、匹配以及与短距离可观测量的组合。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "手征微扰论",
+          "url": "https://www.baidu.com/s?wd=%E6%89%8B%E5%BE%81%E5%BE%AE%E6%89%B0%E8%AE%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "手征微扰论",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%8B%E5%BE%81%E5%BE%AE%E6%89%B0%E8%AE%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "chiral perturbation theory",
+          "url": "https://en.wikipedia.org/w/index.php?search=chiral%20perturbation%20theory"
+        }
+      ]
+    },
+    {
+      "chinese_name": "韦斯-朱米诺-威滕项",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "韦斯-朱米诺-威滕项是手征有效理论中编码全局反常的拓扑项，不能由普通四维局域偶宇称项替代。其五维写法为 $\\Gamma_{WZW}\\propto\\int_{M^5}\\mathrm{Tr}(U^{-1}dU)^5$，其中 $U$ 是手征场，$M^5$ 的边界为物理四维时空。系数量子化并与颜色数相关，保证有效理论重现 QCD 的反常匹配。\n\n它解释 $\\pi^0\\to\\gamma\\gamma$、奇宇称介子相互作用，也使 Skyrmion 携带正确重子量子数。WZW 项的存在体现反常匹配：紫外 QCD 的全局反常必须在红外 Goldstone 理论中保留下来。它的系数量子化使作用量在不同五维延拓之间只差整数倍相位，从而保证路径积分定义一致。重整化相关概念都带有方案和尺度标记，单独数字很少有绝对含义；真正可比较的是同一方案下的演化、匹配以及与短距离可观测量的组合。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "韦斯-朱米诺-威滕项",
+          "url": "https://www.baidu.com/s?wd=%E9%9F%A6%E6%96%AF-%E6%9C%B1%E7%B1%B3%E8%AF%BA-%E5%A8%81%E6%BB%95%E9%A1%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "韦斯-朱米诺-威滕项",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9F%A6%E6%96%AF-%E6%9C%B1%E7%B1%B3%E8%AF%BA-%E5%A8%81%E6%BB%95%E9%A1%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wess zumino witten term",
+          "url": "https://en.wikipedia.org/w/index.php?search=wess%20zumino%20witten%20term"
+        }
+      ]
+    },
+    {
+      "chinese_name": "拓扑孤子",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "拓扑孤子是由场构型的非平凡同伦类稳定的局域有限能量解，不能通过小扰动衰变到真空。稳定荷常写成 $B=\\int d^3x\\,j^0_{top}$，其中 $j^0_{top}$ 是拓扑流的时间分量。与 Noether 荷不同，拓扑荷来自边界条件和目标空间结构。\n\nQCD 低能理论中的 Skyrmion 是典型例子，其重子数对应 $\\pi_3(SU(N_f))$ 的绕数。拓扑孤子提供把强子、缺陷和非微扰场构型统一描述的语言。拓扑孤子的稳定性通常来自边界条件把空间紧化为球面，使构型空间分成不同连通分支。量子化这些集体坐标会产生自旋、同位旋等量子数；因此孤子不仅是经典能量团块，也可成为强子有效描述。这组概念常把大颜色数、拓扑量子数或高密配对作为组织原则；它们不是彼此替代的模型，而是在不同极限下突出 QCD 非微扰谱与相结构的不同侧面。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拓扑孤子",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%93%E6%89%91%E5%AD%A4%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拓扑孤子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%93%E6%89%91%E5%AD%A4%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "topology soliton",
+          "url": "https://en.wikipedia.org/w/index.php?search=topology%20soliton"
+        }
+      ]
+    },
+    {
+      "chinese_name": "斯格明子",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "斯格明子是手征场中的拓扑孤子，在 Skyrme 模型中被解释为重子。重子数为 $B=-(1/24\\pi^2)\\int d^3x\\,\\epsilon^{ijk}\\mathrm{Tr}(L_iL_jL_k)$，其中 $L_i=U^\\dagger\\partial_iU$，$U$ 是 $SU(N_f)$ 手征场。这个整数表示空间三球到群流形的绕数。Skyrme 四导数项防止孤子塌缩，WZW 项赋予正确费米子量子数。\n\n它在大 Nc 和低能强子结构中提供几何化图像。在大颜色数极限中，重子质量随 Nc 增长，经典孤子近似更有控制。量子化转动零模可得到核子和 Δ 共振的同位旋自旋结构；在致密物质中，Skyrmion 晶体还被用来探索半 Skyrmion 相。这组概念常把大颜色数、拓扑量子数或高密配对作为组织原则；它们不是彼此替代的模型，而是在不同极限下突出 QCD 非微扰谱与相结构的不同侧面。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "斯格明子",
+          "url": "https://www.baidu.com/s?wd=%E6%96%AF%E6%A0%BC%E6%98%8E%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "斯格明子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%96%AF%E6%A0%BC%E6%98%8E%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "skyrmion",
+          "url": "https://en.wikipedia.org/w/index.php?search=skyrmion"
+        }
+      ]
+    },
+    {
+      "chinese_name": "平面图极限",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "平面图极限是大颜色数 QCD 中保留 $\\lambda=g^2N_c$ 固定、令 $N_c\\to\\infty$ 的展开。图按拓扑亏格计数，振幅标度为 $\\mathcal A\\sim N_c^{2-2h-b}$，其中 $h$ 是图面的亏格，$b$ 是边界数。亏格为零的平面图占主导，非平面图被 $1/N_c^2$ 抑制。该极限解释介子窄宽度、胶球相互作用弱化和规范理论与弦世界面之间的形式相似性，是全息思想的重要前身。\n\n平面图极限保留无限多胶子和介子态，却抑制强子衰变宽度，因此把强相互作用谱变成近似窄共振塔。它也让因子化性质变得清楚，许多多迹算符关联函数在领先阶分解为低点函数乘积。这组概念常把大颜色数、拓扑量子数或高密配对作为组织原则；它们不是彼此替代的模型，而是在不同极限下突出 QCD 非微扰谱与相结构的不同侧面。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平面图极限",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E9%9D%A2%E5%9B%BE%E6%9E%81%E9%99%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平面图极限",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E9%9D%A2%E5%9B%BE%E6%9E%81%E9%99%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "plane graph limit",
+          "url": "https://en.wikipedia.org/w/index.php?search=plane%20graph%20limit"
+        }
+      ]
+    },
+    {
+      "chinese_name": "OZI规则",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "OZI规则指出需要断开价夸克线、只通过胶子重新连接的强衰变通常受到抑制。大 $N_c$ 计数可示意为 $\\mathcal A_{disc}/\\mathcal A_{conn}\\sim1/N_c$，其中 $disc$ 表示夸克线断开的振幅，$conn$ 表示连通振幅。该规则解释 φ 介子较少衰变到非奇异末态，也说明味单重态通道为何对胶子和拓扑效应敏感。\n\n它不是精确选择定则；在标量介子、η' 和胶球混合中常出现显著破坏。OZI 抑制可从强子衰变的夸克线拓扑直观看出，也可从大 Nc 中多胶子中介过程的幂次抑制理解。实际破坏程度提供了隐藏奇异成分、胶球混合或反常相互作用强弱的信息。这组概念常把大颜色数、拓扑量子数或高密配对作为组织原则；它们不是彼此替代的模型，而是在不同极限下突出 QCD 非微扰谱与相结构的不同侧面。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "OZI规则",
+          "url": "https://www.baidu.com/s?wd=OZI%E8%A7%84%E5%88%99%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "OZI规则",
+          "url": "https://zh.wikipedia.org/w/index.php?search=OZI%E8%A7%84%E5%88%99"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "OZI rule",
+          "url": "https://en.wikipedia.org/w/index.php?search=OZI%20rule"
+        }
+      ]
+    },
+    {
+      "chinese_name": "胶子饱和",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "胶子饱和指小 x 区域胶子密度增长到复合效应不可忽略，线性辐射与非线性合并达到平衡。饱和尺度可用 $Q_s^2(x,A)\\sim A^{1/3}x^{-\\lambda}$ 表示，其中 $A$ 是核质量数，$x$ 是动量分数，$\\lambda$ 由演化决定。横动量低于 $Q_s$ 时胶子占有数约为 $1/\\alpha_s$，经典色场描述有效。\n\n饱和影响深非弹散射截面、前向粒子产生和重离子碰撞初始条件。饱和并不意味着胶子数停止增长，而是增长从线性指数式变为受非线性项调节。饱和尺度越大，弱耦合经典场方法越可靠；重核因厚度增强，比质子更容易在可达能区进入这一 regime。这组概念常把大颜色数、拓扑量子数或高密配对作为组织原则；它们不是彼此替代的模型，而是在不同极限下突出 QCD 非微扰谱与相结构的不同侧面。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "胶子饱和",
+          "url": "https://www.baidu.com/s?wd=%E8%83%B6%E5%AD%90%E9%A5%B1%E5%92%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "胶子饱和",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%83%B6%E5%AD%90%E9%A5%B1%E5%92%8C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gluon saturation",
+          "url": "https://en.wikipedia.org/w/index.php?search=gluon%20saturation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "颜色超导",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "颜色超导是高重子密度下费米面附近夸克形成 Cooper 对，使颜色规范对称发生希格斯化的相。序参量可写成 $\\langle q^T C\\gamma_5\\tau_A\\lambda_A q\\rangle\\ne0$，其中 $C$ 是电荷共轭矩阵，$\\tau_A$ 和 $\\lambda_A$ 分别作用于味与颜色。吸引通道来自一胶子交换的反三重态颜色结构。\n\n它产生能隙、改变化学势平衡和输运性质，可能存在于中子星核心，但真实相结构受奇异夸克质量和电中性约束影响。颜色超导中的规范对称破缺不产生普通全局 Goldstone 模，而是让部分胶子获得 Meissner 质量。真正的全局破缺如重子数或手征对称会留下低能集体模；这些模决定低温热容、冷却和中微子发射。这组概念常把大颜色数、拓扑量子数或高密配对作为组织原则；它们不是彼此替代的模型，而是在不同极限下突出 QCD 非微扰谱与相结构的不同侧面。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "颜色超导",
+          "url": "https://www.baidu.com/s?wd=%E9%A2%9C%E8%89%B2%E8%B6%85%E5%AF%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "颜色超导",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%A2%9C%E8%89%B2%E8%B6%85%E5%AF%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "colorsuperconductivity",
+          "url": "https://en.wikipedia.org/w/index.php?search=colorsuperconductivity"
+        }
+      ]
+    },
+    {
+      "chinese_name": "两味颜色超导",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "两味颜色超导相由上、下夸克在颜色反三重态中配对形成，通常只让两种颜色参与能隙。序参量可写为 $\\langle q^T C\\gamma_5\\tau_2\\lambda_2 q\\rangle$，其中 $\\tau_2$ 锁定两味反对称结构，$\\lambda_2$ 选取颜色反三重态方向。颜色 $SU(3)_c$ 被破缺到 $SU(2)_c$，部分胶子获得 Meissner 质量。\n\n与 CFL 相相比，它保留未配对夸克自由度，电中性和 β 平衡会显著影响能隙。2SC 相中未破缺的 SU(2) 颜色仍可能在更低能标禁闭，留下与原始夸克不同的低能谱。电中性条件会造成配对夸克费米面错配，可能诱导 gapless 2SC 或晶格型配对等更复杂相。这组概念常把大颜色数、拓扑量子数或高密配对作为组织原则；它们不是彼此替代的模型，而是在不同极限下突出 QCD 非微扰谱与相结构的不同侧面。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "两味颜色超导",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%A4%E5%91%B3%E9%A2%9C%E8%89%B2%E8%B6%85%E5%AF%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "两味颜色超导",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%A4%E5%91%B3%E9%A2%9C%E8%89%B2%E8%B6%85%E5%AF%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "two flavor color superconductivity",
+          "url": "https://en.wikipedia.org/w/index.php?search=two%20flavor%20color%20superconductivity"
+        }
+      ]
+    },
+    {
+      "chinese_name": "CFL相",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "CFL相是三味高密 QCD 中颜色与味同时锁定的颜色超导相。典型凝聚为 $\\langle q^a_i C\\gamma_5 q^b_j\\rangle\\propto \\Delta\\epsilon^{abA}\\epsilon_{ijA}$，其中 $a,b$ 是颜色指标，$i,j$ 是味指标，$\\Delta$ 是能隙。它把 $SU(3)_c\\times SU(3)_L\\times SU(3)_R$ 破缺到对角 $SU(3)$，所有夸克都配对。CFL 相具有绝缘的修正电磁、赝 Goldstone 模和可能的超流性，是致密星物质的重要候选。\n\nCFL 相自动实现电中性且在理想三味极限中无需电子，这与普通核物质很不同。奇异夸克质量会造成费米面错配，可能引入 kaon 凝聚或 gapless CFL 变体；因此它是高密 QCD 相图中的中心参照点。这组概念常把大颜色数、拓扑量子数或高密配对作为组织原则；它们不是彼此替代的模型，而是在不同极限下突出 QCD 非微扰谱与相结构的不同侧面。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "CFL相",
+          "url": "https://www.baidu.com/s?wd=CFL%E7%9B%B8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "CFL相",
+          "url": "https://zh.wikipedia.org/w/index.php?search=CFL%E7%9B%B8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "CFL phase",
+          "url": "https://en.wikipedia.org/w/index.php?search=CFL%20phase"
+        }
+      ]
+    },
+    {
+      "chinese_name": "奇异夸克物质",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "奇异夸克物质是假想由上、下、奇异夸克组成的近似电中性块状强物质，可能在高密度下比核物质更稳定。稳定性常比较 $E/A<930\\,\\mathrm{MeV}$，其中 $E$ 是总能量，$A$ 是重子数，右侧约为铁核每重子质量。\n\n奇异夸克降低费米能，但其质量和袋常数增加能量。该设想依赖方程状态模型、颜色超导能隙和表面效应；若成立，会影响奇异星和小型 strangelet 的实验搜寻。有限大小 strangelet 还受到表面张力、曲率能和电荷筛选影响，稳定条件与无限物质不同。天体物理上，若奇异物质稳定，致密星的质量半径关系和并合信号会偏离普通中子星方程状态。这组概念常把大颜色数、拓扑量子数或高密配对作为组织原则；它们不是彼此替代的模型，而是在不同极限下突出 QCD 非微扰谱与相结构的不同侧面。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "奇异夸克物质",
+          "url": "https://www.baidu.com/s?wd=%E5%A5%87%E5%BC%82%E5%A4%B8%E5%85%8B%E7%89%A9%E8%B4%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "奇异夸克物质",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A5%87%E5%BC%82%E5%A4%B8%E5%85%8B%E7%89%A9%E8%B4%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "strange quark matter",
+          "url": "https://en.wikipedia.org/w/index.php?search=strange%20quark%20matter"
+        }
+      ]
+    },
+    {
+      "chinese_name": "QCD相图",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "QCD相图描述强相互作用物质随温度 $T$ 和重子化学势 $\\mu_B$ 变化的热力学相结构。相边界由自由能密度 $f(T,\\mu_B)=-T\\ln Z/V$ 的非解析或快速变化确定，其中 $Z$ 是配分函数，$V$ 是体积。低温低密度为强子物质，高温为夸克胶子等离子体，高密度可能出现颜色超导和核物质相。\n\n一阶线、临界端点和交叉区域仍受符号问题限制，需要实验扫描和多种理论方法互证。相图中的不同边界往往由不同序参量或准序参量定义，不能简单画成单一曲线。重离子碰撞沿近似等熵轨迹穿过相图，而中子星处在低温高密区域；两类系统提供互补但不重合的约束。这组概念常把大颜色数、拓扑量子数或高密配对作为组织原则；它们不是彼此替代的模型，而是在不同极限下突出 QCD 非微扰谱与相结构的不同侧面。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "QCD相图",
+          "url": "https://www.baidu.com/s?wd=QCD%E7%9B%B8%E5%9B%BE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "QCD相图",
+          "url": "https://zh.wikipedia.org/w/index.php?search=QCD%E7%9B%B8%E5%9B%BE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "QCD phase diagram",
+          "url": "https://en.wikipedia.org/w/index.php?search=QCD%20phase%20diagram"
+        }
+      ]
+    },
+    {
+      "chinese_name": "临界慢化",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "临界慢化指系统接近二阶临界点时，长波涨落的弛豫时间随关联长度急剧增长。动力学标度为 $\\tau\\sim\\xi^z$，其中 $\\tau$ 是弛豫时间，$\\xi$ 是关联长度，$z$ 是动力学临界指数。在格点模拟中它导致马尔可夫链自相关时间变长，拓扑荷尤其容易冻结；在重离子碰撞中，有限演化时间限制临界涨落增长。\n\n它说明临界信号的大小不仅由平衡热力学决定，也受实时动力学控制。在数值模拟中，临界慢化使误差估计必须考虑长自相关，而不是只数构型数量。开放边界条件、多级算法和非局域更新可缓解部分问题；在实验体系中，它限制关联长度，反而让临界端点信号保持有限。这些量对时间尺度和平滑尺度非常敏感；解释它们时必须说明介质演化、流时间或采样算法，否则同一数值可能反映物理输运，也可能只是分析过程的系统效应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "临界慢化",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%B4%E7%95%8C%E6%85%A2%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "临界慢化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%B4%E7%95%8C%E6%85%A2%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "critical slowing down",
+          "url": "https://en.wikipedia.org/w/index.php?search=critical%20slowing%20down"
+        }
+      ]
+    },
+    {
+      "chinese_name": "输运系数",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "输运系数刻画介质对小扰动的线性响应，如粘度、扩散常数和电导率，是夸克胶子等离子体动力学的低频参数。Kubo 公式示意为 $\\eta=\\lim_{\\omega\\to0}(1/\\omega)\\mathrm{Im}G^R_{T^{xy}T^{xy}}(\\omega,0)$，其中 $\\eta$ 是剪切粘度，$G^R$ 是应力张量推迟关联函数。它们连接微观 QCD 相互作用与宏观流体方程。\n\n格点需从欧氏关联函数解析延拓，实验则通过流体模拟反演，均有显著不确定度。输运系数属于实时量，而格点 QCD 自然给出欧氏时间关联函数，解析延拓是病态反问题。全息模型、动理论和有效理论可提供互补估计；比较它们有助于判断 QGP 更接近准粒子气体还是强耦合流体。这些量对时间尺度和平滑尺度非常敏感；解释它们时必须说明介质演化、流时间或采样算法，否则同一数值可能反映物理输运，也可能只是分析过程的系统效应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "输运系数",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%93%E8%BF%90%E7%B3%BB%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "输运系数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%93%E8%BF%90%E7%B3%BB%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "transport coefficient",
+          "url": "https://en.wikipedia.org/w/index.php?search=transport%20coefficient"
+        }
+      ]
+    },
+    {
+      "chinese_name": "剪切粘度",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "剪切粘度衡量流体不同层之间横向动量扩散的强度，在 QGP 中决定各向异性流能否保持。线性本构关系为 $\\pi^{ij}=-\\eta(\\partial^iu^j+\\partial^ju^i-2\\delta^{ij}\\nabla\\cdot u/3)$，其中 $\\pi^{ij}$ 是粘性应力，$u^i$ 是流速，$\\eta$ 是剪切粘度。常比较无量纲比值 $\\eta/s$，$s$ 为熵密度。重离子数据表明临界温区 QCD 物质接近强耦合低粘流体，但精确值依赖初始条件和体粘度建模。\n\n剪切粘度越小，初始空间各向异性越容易转化为末态动量各向异性。接近相变温度时，η/s 可能出现极小值；但重离子反演同时依赖初始涨落、预平衡演化和强子后燃烧阶段。这些量对时间尺度和平滑尺度非常敏感；解释它们时必须说明介质演化、流时间或采样算法，否则同一数值可能反映物理输运，也可能只是分析过程的系统效应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "剪切粘度",
+          "url": "https://www.baidu.com/s?wd=%E5%89%AA%E5%88%87%E7%B2%98%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "剪切粘度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%89%AA%E5%88%87%E7%B2%98%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "shear viscosity",
+          "url": "https://en.wikipedia.org/w/index.php?search=shear%20viscosity"
+        }
+      ]
+    },
+    {
+      "chinese_name": "手征磁效应",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "手征磁效应指在存在轴荷不平衡时，磁场沿自身方向诱导电流，是量子反常的输运表现。理想公式为 $\\mathbf J=(N_c e^2/(2\\pi^2))\\mu_5\\mathbf B$，其中 $\\mathbf J$ 是电流，$\\mu_5$ 是轴化学势，$\\mathbf B$ 是磁场。轴荷可由拓扑涨落或外场产生，电流方向由手征不平衡决定。\n\n重离子碰撞中寻找该效应需要从背景关联、有限寿命磁场和电荷守恒涨落中分离反常贡献。该效应要求轴荷在磁场衰减前保持足够长时间，因此拓扑跃迁率和电导率都会影响信号。观测量通常是电荷依赖的方位角关联，但局域电荷守恒和共振衰变可产生相似背景，需要同位素碰撞等控制实验。这些量对时间尺度和平滑尺度非常敏感；解释它们时必须说明介质演化、流时间或采样算法，否则同一数值可能反映物理输运，也可能只是分析过程的系统效应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "手征磁效应",
+          "url": "https://www.baidu.com/s?wd=%E6%89%8B%E5%BE%81%E7%A3%81%E6%95%88%E5%BA%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "手征磁效应",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%8B%E5%BE%81%E7%A3%81%E6%95%88%E5%BA%94"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "chiral magnetic effect",
+          "url": "https://en.wikipedia.org/w/index.php?search=chiral%20magnetic%20effect"
+        }
+      ]
+    },
+    {
+      "chinese_name": "手征涡旋效应",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "手征涡旋效应指有手征或重子化学势的流体在旋转时沿涡量方向产生矢量或轴向流。轴流的一种形式为 $\\mathbf J_5=(\\mu^2/(2\\pi^2)+T^2/6)\\boldsymbol\\omega$，其中 $\\mu$ 是化学势，$T$ 是温度，$\\boldsymbol\\omega=\\nabla\\times\\mathbf u/2$ 是流体涡量。$T^2$ 项与引力反常有关。它把量子反常写入相对论流体本构关系，在重离子极化和旋转 QCD 物质中具有可观测后果。\n\n重离子碰撞产生的巨大轨道角动量可转化为流体涡量，Lambda 超子极化就是相关观测之一。CVE 与 CME 同属反常流体效应，但不依赖电磁磁场，因此对介质旋转、轴荷弛豫和温度项更敏感。这些量对时间尺度和平滑尺度非常敏感；解释它们时必须说明介质演化、流时间或采样算法，否则同一数值可能反映物理输运，也可能只是分析过程的系统效应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "手征涡旋效应",
+          "url": "https://www.baidu.com/s?wd=%E6%89%8B%E5%BE%81%E6%B6%A1%E6%97%8B%E6%95%88%E5%BA%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "手征涡旋效应",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%8B%E5%BE%81%E6%B6%A1%E6%97%8B%E6%95%88%E5%BA%94"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "chiral vortical effect",
+          "url": "https://en.wikipedia.org/w/index.php?search=chiral%20vortical%20effect"
+        }
+      ]
+    },
+    {
+      "chinese_name": "轴荷输运",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "轴荷输运研究左右手粒子数差在 QCD 介质中的产生、扩散和弛豫。轴荷连续方程可写成 $\\partial_\\mu J_5^\\mu=2im\\bar\\psi\\gamma_5\\psi+(N_fg^2/16\\pi^2)F\\tilde F-\\Gamma_f n_5$，其中 $n_5$ 是轴荷密度，$\\Gamma_f$ 表示翻转率。拓扑跃迁、夸克质量和电磁场都会影响轴荷寿命。它是手征磁效应和手征涡旋效应能否形成宏观信号的关键动力学环节。\n\n轴荷不是严格守恒量，拓扑 sphaleron 跃迁可产生它，夸克质量和散射又会消耗它。实际模拟常把轴荷密度与电磁场和流体背景耦合，求解反常流体方程；其扩散长度决定电荷分离信号能否保存到冻结出。这些量对时间尺度和平滑尺度非常敏感；解释它们时必须说明介质演化、流时间或采样算法，否则同一数值可能反映物理输运，也可能只是分析过程的系统效应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "轴荷输运",
+          "url": "https://www.baidu.com/s?wd=%E8%BD%B4%E8%8D%B7%E8%BE%93%E8%BF%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "轴荷输运",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BD%B4%E8%8D%B7%E8%BE%93%E8%BF%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "axial charge transport",
+          "url": "https://en.wikipedia.org/w/index.php?search=axial%20charge%20transport"
+        }
+      ]
+    },
+    {
+      "chinese_name": "瞬子诱导相互作用",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "瞬子诱导相互作用来自瞬子背景中的费米子零模，在低能有效理论中表现为违反 $U(1)_A$ 的多费米子顶点。对 $N_f$ 味，结构近似为 $\\mathcal L_{inst}\\sim \\kappa\\det_{ij}(\\bar q_{Ri}q_{Lj})+h.c.$，其中行列式在味空间取，$\\kappa$ 由瞬子密度和尺度积分决定。\n\n它保持非阿贝尔手征对称，却破坏单重态轴对称。该相互作用影响 η' 质量、标量-赝标量谱劈裂和致密物质中的配对通道。在两味情形中，该相互作用在标量同位旋单重态与赝标量通道之间产生强烈吸引或排斥。它还能影响高密物质中的 diquark 配对，与一胶子交换共同决定颜色超导能隙的通道竞争。这些量对时间尺度和平滑尺度非常敏感；解释它们时必须说明介质演化、流时间或采样算法，否则同一数值可能反映物理输运，也可能只是分析过程的系统效应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "瞬子诱导相互作用",
+          "url": "https://www.baidu.com/s?wd=%E7%9E%AC%E5%AD%90%E8%AF%B1%E5%AF%BC%E7%9B%B8%E4%BA%92%E4%BD%9C%E7%94%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "瞬子诱导相互作用",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9E%AC%E5%AD%90%E8%AF%B1%E5%AF%BC%E7%9B%B8%E4%BA%92%E4%BD%9C%E7%94%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "instanton induced interaction",
+          "url": "https://en.wikipedia.org/w/index.php?search=instanton%20induced%20interaction"
+        }
+      ]
+    },
+    {
+      "chinese_name": "特霍夫特顶点",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "特霍夫特顶点是瞬子背景积分掉零模后得到的有效多夸克相互作用，精确反映轴反常的选择定则。单个瞬子给出 $\\prod_{f=1}^{N_f}(\\bar q_{Rf}q_{Lf})$，其中 $f$ 是味指标，左右手场由零模手征性决定。该顶点改变轴荷 $2N_f$ 个单位，但保持矢量味对称。\n\n它解释 $U(1)_A$ 破坏如何进入低能强子相互作用，并在瞬子液体、有效模型和有限温手征恢复研究中频繁出现。顶点的味行列式结构意味着若某个轻夸克质量趋零，θ 依赖可被相应手征旋转消除。它也使同位旋标量和赝标量关联函数出现异常劈裂，因此在格点上常通过 U1A 敏感的易感率差来检测。这些量对时间尺度和平滑尺度非常敏感；解释它们时必须说明介质演化、流时间或采样算法，否则同一数值可能反映物理输运，也可能只是分析过程的系统效应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "特霍夫特顶点",
+          "url": "https://www.baidu.com/s?wd=%E7%89%B9%E9%9C%8D%E5%A4%AB%E7%89%B9%E9%A1%B6%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "特霍夫特顶点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%B9%E9%9C%8D%E5%A4%AB%E7%89%B9%E9%A1%B6%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "t hooft vertex",
+          "url": "https://en.wikipedia.org/w/index.php?search=t%20hooft%20vertex"
+        }
+      ]
+    },
+    {
+      "chinese_name": "拓扑簇算法",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "拓扑簇算法试图通过成组改变场构型中的拓扑相关自由度来改善拓扑荷采样，而不只依赖局域小步更新。可用自相关时间衡量效率：$\\tau_Q=\\frac12+\\sum_{t>0}C_Q(t)/C_Q(0)$，其中 $C_Q(t)$ 是拓扑荷在蒙特卡洛时间间隔 $t$ 的相关函数。\n\n若算法能让不同拓扑扇区更频繁连通，$\\tau_Q$ 会降低。实际构造需保持细致平衡和正确权重，对连续极限附近的拓扑冻结尤其有意义。这类算法的难点是拓扑荷在连续极限中被作用量势垒隔开，简单局域变化很难跨越扇区。若簇构造过于激进，又可能破坏接受率或详细平衡；因此它通常与流化观测和标准 HMC 结果交叉验证。这些量对时间尺度和平滑尺度非常敏感；解释它们时必须说明介质演化、流时间或采样算法，否则同一数值可能反映物理输运，也可能只是分析过程的系统效应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拓扑簇算法",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%93%E6%89%91%E7%B0%87%E7%AE%97%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拓扑簇算法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%93%E6%89%91%E7%B0%87%E7%AE%97%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "topology cluster algorithm",
+          "url": "https://en.wikipedia.org/w/index.php?search=topology%20cluster%20algorithm"
+        }
+      ]
+    },
+    {
+      "chinese_name": "冷却算法",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "冷却算法通过迭代局域最小化规范作用量，去除格点构型中的紫外噪声，使拓扑结构更清晰。更新目标可表示为 $U_l\\to\\arg\\max_{U\\in SU(N)}\\mathrm{Re\\,Tr}(UV_l^\\dagger)$，其中 $U_l$ 是链变量，$V_l$ 是周围 staple 之和。若冷却过度，小瞬子会缩小并消失，物理短程涨落也被抹去。\n\n它适合可视化瞬子、估计拓扑荷和测试流化定义，但不能替代原始路径积分权重。冷却步数本身不是物理尺度，比较不同格距时要用作用量降低程度或等效流半径标定。现代研究更多使用梯度流，因为它有连续流方程和小流时间展开；冷却仍因实现简单而适合快速诊断构型。这些量对时间尺度和平滑尺度非常敏感；解释它们时必须说明介质演化、流时间或采样算法，否则同一数值可能反映物理输运，也可能只是分析过程的系统效应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "冷却算法",
+          "url": "https://www.baidu.com/s?wd=%E5%86%B7%E5%8D%B4%E7%AE%97%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "冷却算法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%86%B7%E5%8D%B4%E7%AE%97%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cooling algorithm",
+          "url": "https://en.wikipedia.org/w/index.php?search=cooling%20algorithm"
+        }
+      ]
+    },
+    {
+      "chinese_name": "梯度流",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "梯度流把规范场沿一个虚拟流时间平滑演化，系统抑制紫外涨落并给出良好定义的重整化观测量。连续方程为 $\\partial_t B_\\mu=D_\\nu G_{\\nu\\mu}$，其中 $B_\\mu(t)$ 是流化后的规范场，$G_{\\nu\\mu}$ 是其场强，$t$ 是流时间。流半径约为 $\\sqrt{8t}$，因此它像受控的局域平滑。\n\n格点中梯度流常用于拓扑荷、能动张量、尺度设定和小流时间展开。流化后的正流时间局域算符通常有限，不再需要额外重整化，这一性质使能量密度和拓扑荷定义更稳定。小流时间展开还能把流化算符匹配回原始理论，从而构造能动张量等难以直接重整化的量。这些量对时间尺度和平滑尺度非常敏感；解释它们时必须说明介质演化、流时间或采样算法，否则同一数值可能反映物理输运，也可能只是分析过程的系统效应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "梯度流",
+          "url": "https://www.baidu.com/s?wd=%E6%A2%AF%E5%BA%A6%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "梯度流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A2%AF%E5%BA%A6%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gradient flow",
+          "url": "https://en.wikipedia.org/w/index.php?search=gradient%20flow"
+        }
+      ]
+    },
+    {
+      "chinese_name": "威尔逊流",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "威尔逊流是以威尔逊规范作用量为驱动的格点梯度流，实现对链变量的规范协变平滑。方程写成 $\\partial_t V_t(x,\\mu)=-g_0^2\\{\\partial_{x,\\mu}S_W[V_t]\\}V_t(x,\\mu)$，其中 $V_t$ 是流时间 $t$ 的链变量，$S_W$ 是威尔逊作用量。它保留规范协变性并逐步降低局域作用量密度。\n\n通过 $t^2\\langle E(t)\\rangle$ 可定义格点尺度 $t_0$ 或 $w_0$，也能稳定拓扑荷的整数平台。威尔逊流与冷却在小步长极限下有定量对应，但流时间提供连续可控参数。流得太短时紫外噪声未清除，太长时物理结构被过度平滑；选择合适窗口是拓扑和尺度设定分析中的关键。这些量对时间尺度和平滑尺度非常敏感；解释它们时必须说明介质演化、流时间或采样算法，否则同一数值可能反映物理输运，也可能只是分析过程的系统效应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "威尔逊流",
+          "url": "https://www.baidu.com/s?wd=%E5%A8%81%E5%B0%94%E9%80%8A%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "威尔逊流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A8%81%E5%B0%94%E9%80%8A%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wilsonliu",
+          "url": "https://en.wikipedia.org/w/index.php?search=wilsonliu"
+        }
+      ]
+    },
+    {
+      "chinese_name": "拓扑荷密度",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "拓扑荷密度是拓扑荷在时空中的局域分布，反映规范场与其对偶场强的重叠。连续定义为 $q(x)=1/(32\\pi^2)F^a_{\\mu\\nu}(x)\\tilde F^{a\\mu\\nu}(x)$，其中 $F$ 是场强，$\\tilde F$ 是对偶场强。积分 $\\int q(x)d^4x$ 给总拓扑荷。格点上需用 clover 场强、改进算符或梯度流减少紫外噪声。\n\n它用于定位瞬子样结构、计算拓扑磁化率和分析轴反常的局域来源。拓扑荷密度的两点函数在非零距离处受反射正性约束通常为负，而总积分仍可给正的磁化率，这体现接触项的重要性。研究其空间分布时，必须区分真实拓扑团簇与平滑算法造成的人工结构。这些量对时间尺度和平滑尺度非常敏感；解释它们时必须说明介质演化、流时间或采样算法，否则同一数值可能反映物理输运，也可能只是分析过程的系统效应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拓扑荷密度",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%93%E6%89%91%E8%8D%B7%E5%AF%86%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拓扑荷密度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%93%E6%89%91%E8%8D%B7%E5%AF%86%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "topological charge density",
+          "url": "https://en.wikipedia.org/w/index.php?search=topological%20charge%20density"
+        }
+      ]
+    },
+    {
+      "chinese_name": "瞬子关联函数",
+      "source_file": "words/物理/噩梦模式：前沿物理/advanced_qcd_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "瞬子关联函数描述瞬子、反瞬子或拓扑荷密度在时空中的相关分布，用来检验真空是否接近稀薄气体、液体或更复杂结构。可取 $C(r)=\\langle q(x)q(0)\\rangle_{|x|=r}$，其中 $q(x)$ 是拓扑荷密度，$r$ 是欧氏距离。若短距离正相关而中距离出现负相关，说明拓扑簇与反簇共同满足反射正性约束。\n\n该函数依赖平滑尺度，因此格点分析通常要注明梯度流时间，并与拓扑磁化率积分相互校验。若把关联函数分解为瞬子位置和尺度分布，还需要先定义识别算法，这会带来模型依赖。更稳健的做法是直接研究流化后的拓扑密度相关、Dirac 零模局域性和低能谱统计三者的一致性。这些量对时间尺度和平滑尺度非常敏感；解释它们时必须说明介质演化、流时间或采样算法，否则同一数值可能反映物理输运，也可能只是分析过程的系统效应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "瞬子关联函数",
+          "url": "https://www.baidu.com/s?wd=%E7%9E%AC%E5%AD%90%E5%85%B3%E8%81%94%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "瞬子关联函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9E%AC%E5%AD%90%E5%85%B3%E8%81%94%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "instanton correlation function",
+          "url": "https://en.wikipedia.org/w/index.php?search=instanton%20correlation%20function"
+        }
+      ]
+    }
+  ]
+}

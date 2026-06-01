@@ -17,6 +17,24 @@
         "order class equation Sylow",
         "representation character irreducible",
         "group theory"
+      ],
+      "explanation_markdown": "群论研究可逆复合运算和对称结构，核心对象是群及其同态、作用、商和表示。常写成 $(G,\\cdot)$ 与 $a(bc)=(ab)c$，其中$G$ 是集合，点号是二元运算，结合律使多次复合无歧义。\n\n它不同于只列举变换；群论关心乘法、逆元以及哪些信息在取子群或商群后保留下来。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "群论",
+          "url": "https://www.baidu.com/s?wd=%E7%BE%A4%E8%AE%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "群论",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BE%A4%E8%AE%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "group theory",
+          "url": "https://en.wikipedia.org/w/index.php?search=group%20theory"
+        }
       ]
     },
     {
@@ -35,6 +53,24 @@
         "G * e inverse",
         "a*(b*c)=(a*b)*c",
         "group"
+      ],
+      "explanation_markdown": "群是带有封闭二元运算、单位元和逆元且满足结合律的集合。常写成 $a(bc)=(ab)c,\\ ea=ae=a$，其中$a,b,c\\in G$，$e$ 是单位元，每个元素还有逆元。\n\n它比幺半群多出全体元素可逆，比阿贝尔群少要求交换律。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "群",
+          "url": "https://www.baidu.com/s?wd=%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "group",
+          "url": "https://en.wikipedia.org/w/index.php?search=group"
+        }
       ]
     },
     {
@@ -53,6 +89,24 @@
         "封闭 二元运算 结合",
         "无单位要求 无逆要求",
         "semigroup"
+      ],
+      "explanation_markdown": "半群是只要求二元运算封闭并满足结合律的代数结构。常写成 $(ab)c=a(bc)$，其中$a,b,c$ 是半群元素，公式保证长乘积不依赖括号。\n\n它不要求单位元和逆元，因此适合描述不可逆变换的连续复合。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "半群",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8A%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "半群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8A%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "semigroup",
+          "url": "https://en.wikipedia.org/w/index.php?search=semigroup"
+        }
       ]
     },
     {
@@ -71,6 +125,24 @@
         "结合 单位对象",
         "e*a=a*e=a",
         "monoid"
+      ],
+      "explanation_markdown": "幺半群是在半群中再指定单位元的结构。常写成 $(ab)c=a(bc),\\ ea=ae=a$，其中$e$ 是单位元，所有元素仍未必可逆。\n\n它比半群强、比群弱；可逆元素全体才形成单位群。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "幺半群",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%BA%E5%8D%8A%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "幺半群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%BA%E5%8D%8A%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "monoid",
+          "url": "https://en.wikipedia.org/w/index.php?search=monoid"
+        }
       ]
     },
     {
@@ -89,6 +161,24 @@
         "非空子集 原运算",
         "ab^{-1} in H",
         "subgroup"
+      ],
+      "explanation_markdown": "子群是大群中在原运算下仍成群的非空子集。常写成 $a,b\\in H\\Rightarrow ab^{-1}\\in H$，其中$H\\subset G$，该条件同时保证封闭和逆元存在。\n\n它不同于任意子集；只有保持群运算的部分才能参与陪集和商结构。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "子群",
+          "url": "https://www.baidu.com/s?wd=%E5%AD%90%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "子群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AD%90%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "subgroup",
+          "url": "https://en.wikipedia.org/w/index.php?search=subgroup"
+        }
       ]
     },
     {
@@ -107,6 +197,24 @@
         "proper subgroup",
         "operation substructure formula",
         "proper subgroup"
+      ],
+      "explanation_markdown": "真子群是严格小于原群的子群。常写成 $H<G\\iff H\\le G\\text{ 且 }H\\ne G$，其中$H$ 仍满足子群条件，但不等于整个 $G$。\n\n它和子群的差别在严格包含；平凡子群是否为真子群取决于原群是否非平凡。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "真子群",
+          "url": "https://www.baidu.com/s?wd=%E7%9C%9F%E5%AD%90%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "真子群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9C%9F%E5%AD%90%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "proper subgroup",
+          "url": "https://en.wikipedia.org/w/index.php?search=proper%20subgroup"
+        }
       ]
     },
     {
@@ -125,6 +233,24 @@
         "cyclic group",
         "operation substructure formula",
         "cyclic group"
+      ],
+      "explanation_markdown": "循环群是由单个元素反复运算生成的群。常写成 $G=\\langle g\\rangle=\\{g^n:n\\in\\mathbb Z\\}$，其中$g$ 是生成元，$n$ 可正可负或为零。\n\n它一定阿贝尔，但一般阿贝尔群未必能由一个元素生成。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "循环群",
+          "url": "https://www.baidu.com/s?wd=%E5%BE%AA%E7%8E%AF%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "循环群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BE%AA%E7%8E%AF%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cyclic group",
+          "url": "https://en.wikipedia.org/w/index.php?search=cyclic%20group"
+        }
       ]
     },
     {
@@ -143,6 +269,24 @@
         "abelian group",
         "operation substructure formula",
         "abelian group"
+      ],
+      "explanation_markdown": "阿贝尔群是运算满足交换律的群。常写成 $ab=ba\\quad(a,b\\in G)$，其中任意两个元素交换，乘法顺序不影响结果。\n\n它比循环群宽；循环群一定阿贝尔，阿贝尔群可有多个独立生成方向。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阿贝尔群",
+          "url": "https://www.baidu.com/s?wd=%E9%98%BF%E8%B4%9D%E5%B0%94%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阿贝尔群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%BF%E8%B4%9D%E5%B0%94%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "abelian group",
+          "url": "https://en.wikipedia.org/w/index.php?search=abelian%20group"
+        }
       ]
     },
     {
@@ -161,6 +305,24 @@
         "finite group",
         "operation substructure formula",
         "finite group"
+      ],
+      "explanation_markdown": "有限群是元素个数有限的群。常写成 $|G|<\\infty$，其中$|G|$ 称为群的阶，决定许多整除限制。\n\n它不同于有限生成群；有限生成群可能仍有无限多个元素。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "有限群",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%89%E9%99%90%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "有限群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%89%E9%99%90%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "finite group",
+          "url": "https://en.wikipedia.org/w/index.php?search=finite%20group"
+        }
       ]
     },
     {
@@ -179,6 +341,24 @@
         "infinite group",
         "operation substructure formula",
         "infinite group"
+      ],
+      "explanation_markdown": "无限群是元素个数无限的群。常写成 $|G|=\\infty$，其中无限可来自生成元无限，也可来自有限生成但元素无穷。\n\n它不受有限群阶整除定理直接限制，但仍可研究作用、商和表示。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "无限群",
+          "url": "https://www.baidu.com/s?wd=%E6%97%A0%E9%99%90%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "无限群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%97%A0%E9%99%90%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "infinite group",
+          "url": "https://en.wikipedia.org/w/index.php?search=infinite%20group"
+        }
       ]
     },
     {
@@ -197,6 +377,24 @@
         "group element",
         "operation substructure formula",
         "group element"
+      ],
+      "explanation_markdown": "群元是群中的单个元素，代表一次可逆操作。常写成 $g\\in G,\\ gg^{-1}=e$，其中$g^{-1}$ 是逆元，$e$ 是单位元。\n\n它不是孤立符号；同一元素在不同群中可能有不同阶和不同作用。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "群元",
+          "url": "https://www.baidu.com/s?wd=%E7%BE%A4%E5%85%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "群元",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BE%A4%E5%85%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "group element",
+          "url": "https://en.wikipedia.org/w/index.php?search=group%20element"
+        }
       ]
     },
     {
@@ -215,6 +413,24 @@
         "identity element",
         "operation substructure formula",
         "identity element"
+      ],
+      "explanation_markdown": "单位元是在群运算中不改变任何元素的特殊元素。常写成 $eg=ge=g$，其中$e$ 是单位元，$g$ 任取群元素。\n\n单位元唯一；它不同于数字一，具体记号随群运算可能写作 $0$ 或 $I$。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单位元",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E4%BD%8D%E5%85%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单位元",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E4%BD%8D%E5%85%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "identity element",
+          "url": "https://en.wikipedia.org/w/index.php?search=identity%20element"
+        }
       ]
     },
     {
@@ -233,6 +449,24 @@
         "inverse element",
         "operation substructure formula",
         "inverse element"
+      ],
+      "explanation_markdown": "逆元是与给定元素复合后得到单位元的元素。常写成 $gg^{-1}=g^{-1}g=e$，其中$g^{-1}$ 是 $g$ 的逆元，$e$ 是单位元。\n\n逆元依赖所在群；在较大半群中出现的元素未必可逆。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "逆元",
+          "url": "https://www.baidu.com/s?wd=%E9%80%86%E5%85%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "逆元",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%80%86%E5%85%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inverse element",
+          "url": "https://en.wikipedia.org/w/index.php?search=inverse%20element"
+        }
       ]
     },
     {
@@ -251,6 +485,24 @@
         "order",
         "operation substructure formula",
         "order"
+      ],
+      "explanation_markdown": "阶可指群的元素个数，也可指单个元素生成循环子群的大小。常写成 $|G|$ 或 $\\operatorname{ord}(g)=|\\langle g\\rangle|$，其中前者是群阶，后者是元素阶。\n\n两个含义必须分清；拉格朗日定理把元素阶约束在群阶的因子中。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阶",
+          "url": "https://www.baidu.com/s?wd=%E9%98%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阶",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "order",
+          "url": "https://en.wikipedia.org/w/index.php?search=order"
+        }
       ]
     },
     {
@@ -269,6 +521,24 @@
         "a^n=e",
         "min positive n",
         "order of element"
+      ],
+      "explanation_markdown": "元素的阶是元素反复运算首次回到单位元所需的正次数。常写成 $\\operatorname{ord}(g)=\\min\\{n>0:g^n=e\\}$，其中若不存在这样的 $n$，元素阶为无限。\n\n它不同于群的阶；一个有限群内不同元素可有不同元素阶。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "元素的阶",
+          "url": "https://www.baidu.com/s?wd=%E5%85%83%E7%B4%A0%E7%9A%84%E9%98%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "元素的阶",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%83%E7%B4%A0%E7%9A%84%E9%98%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "order of element",
+          "url": "https://en.wikipedia.org/w/index.php?search=order%20of%20element"
+        }
       ]
     },
     {
@@ -287,6 +557,24 @@
         "gH Hg partition",
         "|G|=[G:H]|H|",
         "coset"
+      ],
+      "explanation_markdown": "陪集是由子群整体左乘或右乘得到的平移块。常写成 $gH=\\{gh:h\\in H\\},\\ Hg=\\{hg:h\\in H\\}$，其中$H$ 是子群，$g$ 是群元素。\n\n陪集一般不是子群；它主要用来把群分成等大小的块。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "陪集",
+          "url": "https://www.baidu.com/s?wd=%E9%99%AA%E9%9B%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "陪集",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%99%AA%E9%9B%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "coset",
+          "url": "https://en.wikipedia.org/w/index.php?search=coset"
+        }
       ]
     },
     {
@@ -305,6 +593,24 @@
         "gH",
         "same or disjoint",
         "left coset"
+      ],
+      "explanation_markdown": "左陪集是固定元素在左侧乘上子群得到的集合。常写成 $gH=\\{gh:h\\in H\\}$，其中$g$ 在左，$H$ 中元素在右。\n\n非阿贝尔群中左陪集未必等于右陪集，正规性正是控制这一差别。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "左陪集",
+          "url": "https://www.baidu.com/s?wd=%E5%B7%A6%E9%99%AA%E9%9B%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "左陪集",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B7%A6%E9%99%AA%E9%9B%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "left coset",
+          "url": "https://en.wikipedia.org/w/index.php?search=left%20coset"
+        }
       ]
     },
     {
@@ -323,6 +629,24 @@
         "Hg",
         "left right agreement",
         "right coset"
+      ],
+      "explanation_markdown": "右陪集是子群元素在左、固定元素在右得到的集合。常写成 $Hg=\\{hg:h\\in H\\}$，其中$H$ 是子群，$g$ 是平移元素。\n\n它和左陪集一样给出等大小分块，但非正规情形不能混用左右。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "右陪集",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%B3%E9%99%AA%E9%9B%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "右陪集",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%B3%E9%99%AA%E9%9B%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "right coset",
+          "url": "https://en.wikipedia.org/w/index.php?search=right%20coset"
+        }
       ]
     },
     {
@@ -341,6 +665,24 @@
         "gHg^{-1}=H",
         "G/H well-defined",
         "normal subgroup"
+      ],
+      "explanation_markdown": "正规子群是在共轭下保持不变的子群。常写成 $gHg^{-1}=H\\quad(g\\in G)$，其中每个群元素共轭后仍得到同一个 $H$。\n\n它比子群强；正规性是商群乘法良定的必要条件。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正规子群",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正规子群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "normal subgroup",
+          "url": "https://en.wikipedia.org/w/index.php?search=normal%20subgroup"
+        }
       ]
     },
     {
@@ -359,6 +701,24 @@
         "cosets as elements",
         "(aN)(bN)=abN",
         "quotient group"
+      ],
+      "explanation_markdown": "商群是把正规子群压成单位元后得到的群。常写成 $G/H=\\{gH:g\\in G\\}$，其中$H\\triangleleft G$ 保证 $(gH)(kH)=gkH$ 良定。\n\n它不能对任意子群构造；缺少正规性时陪集乘法依赖代表元。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "商群",
+          "url": "https://www.baidu.com/s?wd=%E5%95%86%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "商群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%95%86%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quotient group",
+          "url": "https://en.wikipedia.org/w/index.php?search=quotient%20group"
+        }
       ]
     },
     {
@@ -377,6 +737,24 @@
         "phi(ab)=phi(a)phi(b)",
         "e inverse compatible",
         "homomorphism"
+      ],
+      "explanation_markdown": "同态是保持群乘法的映射。常写成 $\\varphi(ab)=\\varphi(a)\\varphi(b)$，其中$a,b\\in G$，映射从一个群到另一个群。\n\n它不同于任意函数；核和像分别记录丢失与保留的结构。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "同态",
+          "url": "https://www.baidu.com/s?wd=%E5%90%8C%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "同态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%8C%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "homomorphism",
+          "url": "https://en.wikipedia.org/w/index.php?search=homomorphism"
+        }
       ]
     },
     {
@@ -395,6 +773,24 @@
         "bijective operation preserving",
         "same algebraic structure",
         "isomorphism"
+      ],
+      "explanation_markdown": "同构是双射同态，说明两个群结构完全相同。常写成 $\\varphi:G\\to H,\\ \\varphi(ab)=\\varphi(a)\\varphi(b)$，其中$\\varphi$ 还必须一一对应且满射。\n\n它强于同态；同态可以压缩信息，同构不丢失结构。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "同构",
+          "url": "https://www.baidu.com/s?wd=%E5%90%8C%E6%9E%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "同构",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%8C%E6%9E%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "isomorphism",
+          "url": "https://en.wikipedia.org/w/index.php?search=isomorphism"
+        }
       ]
     },
     {
@@ -413,6 +809,24 @@
         "automorphism",
         "operation substructure formula",
         "automorphism"
+      ],
+      "explanation_markdown": "自同构是群到自身的同构。常写成 $\\operatorname{Aut}(G)=\\{\\varphi:G\\to G:\\varphi\\text{ isomorphism}\\}$，其中自同构按复合构成群。\n\n它不同于内自同构；内自同构只来自群元素的共轭。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自同构",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E5%90%8C%E6%9E%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自同构",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E5%90%8C%E6%9E%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "automorphism",
+          "url": "https://en.wikipedia.org/w/index.php?search=automorphism"
+        }
       ]
     },
     {
@@ -431,6 +845,24 @@
         "ker phi",
         "phi(g)=e normal",
         "kernel"
+      ],
+      "explanation_markdown": "核是同态中被送到目标群单位元的元素集合。常写成 $\\ker\\varphi=\\{g\\in G:\\varphi(g)=e_H\\}$，其中$e_H$ 是目标群单位元。\n\n核总是正规子群，并决定同态是否单射；它不同于像。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "核",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%B8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "核",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%B8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kernel",
+          "url": "https://en.wikipedia.org/w/index.php?search=kernel"
+        }
       ]
     },
     {
@@ -449,6 +881,24 @@
         "im phi",
         "phi(G)",
         "image"
+      ],
+      "explanation_markdown": "像是同态实际取到的目标群子集。常写成 $\\operatorname{im}\\varphi=\\{\\varphi(g):g\\in G\\}$，其中$g$ 遍历源群 $G$。\n\n像是目标群的子群，并决定同态是否满射；它不同于位于源群中的核。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "像",
+          "url": "https://www.baidu.com/s?wd=%E5%83%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "像",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%83%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "image",
+          "url": "https://en.wikipedia.org/w/index.php?search=image"
+        }
       ]
     },
     {
@@ -467,6 +917,24 @@
         "lagrange theorem",
         "operation substructure formula",
         "lagrange theorem"
+      ],
+      "explanation_markdown": "拉格朗日定理说明有限群中子群阶整除群阶。常写成 $|G|=[G:H]|H|$，其中$[G:H]$ 是陪集个数，$|H|$ 是子群阶。\n\n它给出元素阶和子群大小的整除约束，但逆命题一般不成立。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拉格朗日定理",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拉格朗日定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lagrange theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=lagrange%20theorem"
+        }
       ]
     },
     {
@@ -485,6 +953,24 @@
         "G acts on X",
         "e.x=x (gh).x=g.(h.x)",
         "group action"
+      ],
+      "explanation_markdown": "群作用是把群元素实现为集合上的变换。常写成 $g\\cdot(h\\cdot x)=(gh)\\cdot x,\\ e\\cdot x=x$，其中$x$ 属于被作用集合，$g,h\\in G$。\n\n它不同于表示；表示是作用在线性空间上并保持线性结构的特殊情形。 群作用把元素解释为集合上的变换，轨道和稳定子分别记录能到达哪里、哪些元素保持不动。共轭作用还会产生中心、中心化子和正规化子，类方程把这些局部稳定信息汇总成整体计数。 轨道分解、稳定子和共轭类把全局群运算落到具体对象上；很多计数公式的实质，就是把群按这些局部稳定信息重新分块。 这些数据把群元素的复合行为落到具体集合上，中心和稳定子则说明哪些变换在给定对象上不可见。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "群作用",
+          "url": "https://www.baidu.com/s?wd=%E7%BE%A4%E4%BD%9C%E7%94%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "群作用",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BE%A4%E4%BD%9C%E7%94%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "group action",
+          "url": "https://en.wikipedia.org/w/index.php?search=group%20action"
+        }
       ]
     },
     {
@@ -503,6 +989,24 @@
         "reachable points",
         "Gx={g.x}",
         "orbit"
+      ],
+      "explanation_markdown": "轨道是一个点在群作用下能够到达的全部点。常写成 $G\\cdot x=\\{g\\cdot x:g\\in G\\}$，其中$x$ 是被作用集合中的点。\n\n它看点被移动到哪里，稳定子则看哪些群元不移动该点。 群作用把元素解释为集合上的变换，轨道和稳定子分别记录能到达哪里、哪些元素保持不动。共轭作用还会产生中心、中心化子和正规化子，类方程把这些局部稳定信息汇总成整体计数。 轨道分解、稳定子和共轭类把全局群运算落到具体对象上；很多计数公式的实质，就是把群按这些局部稳定信息重新分块。 这些数据把群元素的复合行为落到具体集合上，中心和稳定子则说明哪些变换在给定对象上不可见。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "轨道",
+          "url": "https://www.baidu.com/s?wd=%E8%BD%A8%E9%81%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "轨道",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BD%A8%E9%81%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "orbit",
+          "url": "https://en.wikipedia.org/w/index.php?search=orbit"
+        }
       ]
     },
     {
@@ -521,6 +1025,24 @@
         "fix x",
         "G_x |Gx|=[G:G_x]",
         "stabilizer"
+      ],
+      "explanation_markdown": "稳定子是在群作用中固定某个点的群元素集合。常写成 $G_x=\\{g\\in G:g\\cdot x=x\\}$，其中$G_x$ 是 $G$ 的子群。\n\n它不是固定点集合；稳定子位于群中，固定点集合位于被作用集合中。 群作用把元素解释为集合上的变换，轨道和稳定子分别记录能到达哪里、哪些元素保持不动。共轭作用还会产生中心、中心化子和正规化子，类方程把这些局部稳定信息汇总成整体计数。 轨道分解、稳定子和共轭类把全局群运算落到具体对象上；很多计数公式的实质，就是把群按这些局部稳定信息重新分块。 这些数据把群元素的复合行为落到具体集合上，中心和稳定子则说明哪些变换在给定对象上不可见。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳定子",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E5%AE%9A%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳定子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E5%AE%9A%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stabilizer",
+          "url": "https://en.wikipedia.org/w/index.php?search=stabilizer"
+        }
       ]
     },
     {
@@ -539,6 +1061,24 @@
         "gxg^{-1}",
         "index of centralizer",
         "conjugacy class"
+      ],
+      "explanation_markdown": "共轭类是元素在共轭作用下形成的轨道。常写成 $\\mathcal C(g)=\\{xgx^{-1}:x\\in G\\}$，其中$g$ 是群元素，$x$ 在全群中变化。\n\n它与中心化子互补；共轭类大小等于 $[G:C_G(g)]$。 群作用把元素解释为集合上的变换，轨道和稳定子分别记录能到达哪里、哪些元素保持不动。共轭作用还会产生中心、中心化子和正规化子，类方程把这些局部稳定信息汇总成整体计数。 轨道分解、稳定子和共轭类把全局群运算落到具体对象上；很多计数公式的实质，就是把群按这些局部稳定信息重新分块。 这些数据把群元素的复合行为落到具体集合上，中心和稳定子则说明哪些变换在给定对象上不可见。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "共轭类",
+          "url": "https://www.baidu.com/s?wd=%E5%85%B1%E8%BD%AD%E7%B1%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "共轭类",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%B1%E8%BD%AD%E7%B1%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "conjugacy class",
+          "url": "https://en.wikipedia.org/w/index.php?search=conjugacy%20class"
+        }
       ]
     },
     {
@@ -557,6 +1097,24 @@
         "Z(G)",
         "zg=gz all g",
         "center"
+      ],
+      "explanation_markdown": "中心是与群中所有元素都交换的元素组成的子群。常写成 $Z(G)=\\{z\\in G:zg=gz\\ \\forall g\\in G\\}$，其中$z$ 与任意 $g$ 交换。\n\n它不同于中心化子；中心要同时中心化全群。 群作用把元素解释为集合上的变换，轨道和稳定子分别记录能到达哪里、哪些元素保持不动。共轭作用还会产生中心、中心化子和正规化子，类方程把这些局部稳定信息汇总成整体计数。 轨道分解、稳定子和共轭类把全局群运算落到具体对象上；很多计数公式的实质，就是把群按这些局部稳定信息重新分块。 这些数据把群元素的复合行为落到具体集合上，中心和稳定子则说明哪些变换在给定对象上不可见。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "中心",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%AD%E5%BF%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "中心",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%AD%E5%BF%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "center",
+          "url": "https://en.wikipedia.org/w/index.php?search=center"
+        }
       ]
     },
     {
@@ -575,6 +1133,24 @@
         "centralizer",
         "operation substructure formula",
         "centralizer"
+      ],
+      "explanation_markdown": "中心化子是与指定元素或子集逐个交换的群元素集合。常写成 $C_G(a)=\\{g\\in G:ga=ag\\}$，其中$a$ 可以替换为子集。\n\n它通常大于中心；中心是对所有元素同时取中心化子的交。 群作用把元素解释为集合上的变换，轨道和稳定子分别记录能到达哪里、哪些元素保持不动。共轭作用还会产生中心、中心化子和正规化子，类方程把这些局部稳定信息汇总成整体计数。 轨道分解、稳定子和共轭类把全局群运算落到具体对象上；很多计数公式的实质，就是把群按这些局部稳定信息重新分块。 这些数据把群元素的复合行为落到具体集合上，中心和稳定子则说明哪些变换在给定对象上不可见。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "中心化子",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "中心化子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%AD%E5%BF%83%E5%8C%96%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "centralizer",
+          "url": "https://en.wikipedia.org/w/index.php?search=centralizer"
+        }
       ]
     },
     {
@@ -593,6 +1169,24 @@
         "normalizer",
         "operation substructure formula",
         "normalizer"
+      ],
+      "explanation_markdown": "正规化子是把子群共轭到自身的最大稳定子。常写成 $N_G(H)=\\{g\\in G:gHg^{-1}=H\\}$，其中$H$ 是子群，$g$ 使其整体不变。\n\n它不同于中心化子；正规化子允许在 $H$ 内重排元素。 群作用把元素解释为集合上的变换，轨道和稳定子分别记录能到达哪里、哪些元素保持不动。共轭作用还会产生中心、中心化子和正规化子，类方程把这些局部稳定信息汇总成整体计数。 轨道分解、稳定子和共轭类把全局群运算落到具体对象上；很多计数公式的实质，就是把群按这些局部稳定信息重新分块。 这些数据把群元素的复合行为落到具体集合上，中心和稳定子则说明哪些变换在给定对象上不可见。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正规化子",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E8%A7%84%E5%8C%96%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正规化子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E8%A7%84%E5%8C%96%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "normalizer",
+          "url": "https://en.wikipedia.org/w/index.php?search=normalizer"
+        }
       ]
     },
     {
@@ -611,6 +1205,24 @@
         "symmetric group",
         "operation substructure formula",
         "symmetric group"
+      ],
+      "explanation_markdown": "对称群是有限集合上所有置换组成的群。常写成 $S_n=\\operatorname{Sym}(\\{1,\\ldots,n\\})$，其中群运算是置换复合。\n\n它不同于交错群；交错群只含偶置换，是 $S_n$ 的正规子群。 这些例子把群运算放进具体模型：置换群复合排列，矩阵群复合线性变换，二面体群描述正多边形对称。模型不同，单位元、逆元、阶和子群结构都有可直接计算的形态，也会影响中心、正规子群和表示的样子。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对称群",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E7%A7%B0%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对称群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E7%A7%B0%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "symmetric group",
+          "url": "https://en.wikipedia.org/w/index.php?search=symmetric%20group"
+        }
       ]
     },
     {
@@ -629,6 +1241,24 @@
         "alternating group",
         "operation substructure formula",
         "alternating group"
+      ],
+      "explanation_markdown": "交错群是对称群中所有偶置换组成的子群。常写成 $A_n=\\ker(\\operatorname{sgn}:S_n\\to\\{\\pm1\\})$，其中符号同态把偶置换送到 $1$。\n\n它不是任意一半置换；它因符号同态的核而正规。 这些例子把群运算放进具体模型：置换群复合排列，矩阵群复合线性变换，二面体群描述正多边形对称。模型不同，单位元、逆元、阶和子群结构都有可直接计算的形态，也会影响中心、正规子群和表示的样子。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "交错群",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%A4%E9%94%99%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "交错群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%A4%E9%94%99%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "alternating group",
+          "url": "https://en.wikipedia.org/w/index.php?search=alternating%20group"
+        }
       ]
     },
     {
@@ -647,6 +1277,24 @@
         "permutation",
         "operation substructure formula",
         "permutation"
+      ],
+      "explanation_markdown": "置换是集合到自身的双射。常写成 $\\sigma:X\\to X,\\quad \\sigma\\text{ bijective}$，其中复合给出群运算，逆映射总存在。\n\n它不同于排列列表；置换强调作为函数的复合结构。 这些例子把群运算放进具体模型：置换群复合排列，矩阵群复合线性变换，二面体群描述正多边形对称。模型不同，单位元、逆元、阶和子群结构都有可直接计算的形态，也会影响中心、正规子群和表示的样子。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "置换",
+          "url": "https://www.baidu.com/s?wd=%E7%BD%AE%E6%8D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "置换",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BD%AE%E6%8D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "permutation",
+          "url": "https://en.wikipedia.org/w/index.php?search=permutation"
+        }
       ]
     },
     {
@@ -665,6 +1313,24 @@
         "permutation group",
         "operation substructure formula",
         "permutation group"
+      ],
+      "explanation_markdown": "置换群是某个集合上置换群的子群。常写成 $G\\le\\operatorname{Sym}(X)$，其中$G$ 的元素都是 $X$ 上的双射。\n\n它与群作用等价；给定作用就得到到对称群的同态。 这些例子把群运算放进具体模型：置换群复合排列，矩阵群复合线性变换，二面体群描述正多边形对称。模型不同，单位元、逆元、阶和子群结构都有可直接计算的形态，也会影响中心、正规子群和表示的样子。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "置换群",
+          "url": "https://www.baidu.com/s?wd=%E7%BD%AE%E6%8D%A2%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "置换群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BD%AE%E6%8D%A2%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "permutation group",
+          "url": "https://en.wikipedia.org/w/index.php?search=permutation%20group"
+        }
       ]
     },
     {
@@ -683,6 +1349,24 @@
         "direct product",
         "operation substructure formula",
         "direct product"
+      ],
+      "explanation_markdown": "直积是多个群按分量相乘组成的群。常写成 $(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2)$，其中两个分量互不干扰。\n\n它不同于半直积；半直积中一个因子会作用到另一个因子上。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "直积",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B4%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "直积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B4%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "direct product",
+          "url": "https://en.wikipedia.org/w/index.php?search=direct%20product"
+        }
       ]
     },
     {
@@ -701,6 +1385,24 @@
         "semidirect product",
         "operation substructure formula",
         "semidirect product"
+      ],
+      "explanation_markdown": "半直积是带有一个群对另一个群作用的乘积结构。常写成 $(n_1,h_1)(n_2,h_2)=(n_1\\phi(h_1)(n_2),h_1h_2)$，其中$\\phi:H\\to\\operatorname{Aut}(N)$ 给出作用。\n\n它区别于直积；直积对应作用平凡的特殊情形。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "半直积",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8A%E7%9B%B4%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "半直积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8A%E7%9B%B4%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "semidirect product",
+          "url": "https://en.wikipedia.org/w/index.php?search=semidirect%20product"
+        }
       ]
     },
     {
@@ -719,6 +1421,24 @@
         "p-power existence conjugacy",
         "n_p=1 mod p",
         "sylow theorem"
+      ],
+      "explanation_markdown": "西罗定理描述有限群中 $p$ 幂阶子群的存在和共轭性。常写成 $|G|=p^n m,\\ p\\nmid m\\Rightarrow |P|=p^n$，其中$P$ 是 Sylow $p$ 子群。\n\n它还给出 Sylow 子群个数的同余和整除限制。 有限群的层级常由正规列、商因子和换位子控制。西罗子群抓住素数幂部分，可解群和幂零群用逐层商群描述复杂度；单群则是不能再用非平凡正规商拆开的基本块，这些分层信息决定许多分类和构造。 这些层级不只给分类，也会限制同态、商群和表示的可能形状；换位子衡量非交换性，正规列则说明一个群能被拆到多细。 换位子和正规列衡量一个群离交换群有多远，也决定它能否被逐层拆成较简单的商因子。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "西罗定理",
+          "url": "https://www.baidu.com/s?wd=%E8%A5%BF%E7%BD%97%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "西罗定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A5%BF%E7%BD%97%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "sylow theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=sylow%20theorem"
+        }
       ]
     },
     {
@@ -737,6 +1457,24 @@
         "solvable group",
         "operation substructure formula",
         "solvable group"
+      ],
+      "explanation_markdown": "可解群是通过正规列逐步化成阿贝尔商群的群。常写成 $1=G_r\\triangleleft\\cdots\\triangleleft G_0=G$，$G_i/G_{i+1}$ 阿贝尔，其中每一层商群都可交换。\n\n它不同于幂零群；幂零要求更强的中心列条件。 有限群的层级常由正规列、商因子和换位子控制。西罗子群抓住素数幂部分，可解群和幂零群用逐层商群描述复杂度；单群则是不能再用非平凡正规商拆开的基本块，这些分层信息决定许多分类和构造。 这些层级不只给分类，也会限制同态、商群和表示的可能形状；换位子衡量非交换性，正规列则说明一个群能被拆到多细。 换位子和正规列衡量一个群离交换群有多远，也决定它能否被逐层拆成较简单的商因子。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "可解群",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%AF%E8%A7%A3%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "可解群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%AF%E8%A7%A3%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "solvable group",
+          "url": "https://en.wikipedia.org/w/index.php?search=solvable%20group"
+        }
       ]
     },
     {
@@ -755,6 +1493,24 @@
         "simple group",
         "operation substructure formula",
         "simple group"
+      ],
+      "explanation_markdown": "单群是没有非平凡正规子群的非平凡群。常写成 $N\\triangleleft G\\Rightarrow N=1\\text{ or }N=G$，其中正规子群是能取商的内部结构。\n\n它像群论中的不可再分成分，但非阿贝尔单群仍可很复杂。 有限群的层级常由正规列、商因子和换位子控制。西罗子群抓住素数幂部分，可解群和幂零群用逐层商群描述复杂度；单群则是不能再用非平凡正规商拆开的基本块，这些分层信息决定许多分类和构造。 这些层级不只给分类，也会限制同态、商群和表示的可能形状；换位子衡量非交换性，正规列则说明一个群能被拆到多细。 换位子和正规列衡量一个群离交换群有多远，也决定它能否被逐层拆成较简单的商因子。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单群",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "simple group",
+          "url": "https://en.wikipedia.org/w/index.php?search=simple%20group"
+        }
       ]
     },
     {
@@ -773,6 +1529,24 @@
         "representation",
         "operation substructure formula",
         "representation"
+      ],
+      "explanation_markdown": "表示是把抽象群元素实现为线性空间上的可逆线性变换。常写成 $\\rho:G\\to GL(V)$，其中$V$ 是向量空间，$\\rho$ 是群同态。\n\n它不同于一般群作用；表示要求保持向量加法和标量乘法。 表示论把抽象群元送到线性变换，常写 $\\rho:G\\to GL(V)$。核反映哪些元素在线性化后消失，特征标记录矩阵迹；不可约分解、诱导表示和舒尔引理描述的是表示空间内部的结构。 同一个群在不同表示中可能丢失不同核，也可能分解成不同不可约成分；特征标和矩阵系数正是用线性代数方式保存这些信息。 核、不可约分量和特征标共同描述表示保留了哪些群信息，丢掉了哪些普通群结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "表示",
+          "url": "https://www.baidu.com/s?wd=%E8%A1%A8%E7%A4%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "表示",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A1%A8%E7%A4%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "representation",
+          "url": "https://en.wikipedia.org/w/index.php?search=representation"
+        }
       ]
     },
     {
@@ -791,6 +1565,24 @@
         "group representation",
         "operation substructure formula",
         "group representation"
+      ],
+      "explanation_markdown": "群表示是表示概念在群上的完整说法。常写成 $\\rho(gh)=\\rho(g)\\rho(h)$，其中$\\rho(g)$ 是 $V$ 上可逆线性算子。\n\n它通过不变子空间、分解和特征标读取群结构。 表示论把抽象群元送到线性变换，常写 $\\rho:G\\to GL(V)$。核反映哪些元素在线性化后消失，特征标记录矩阵迹；不可约分解、诱导表示和舒尔引理描述的是表示空间内部的结构。 同一个群在不同表示中可能丢失不同核，也可能分解成不同不可约成分；特征标和矩阵系数正是用线性代数方式保存这些信息。 核、不可约分量和特征标共同描述表示保留了哪些群信息，丢掉了哪些普通群结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "群表示",
+          "url": "https://www.baidu.com/s?wd=%E7%BE%A4%E8%A1%A8%E7%A4%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "群表示",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BE%A4%E8%A1%A8%E7%A4%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "group representation",
+          "url": "https://en.wikipedia.org/w/index.php?search=group%20representation"
+        }
       ]
     },
     {
@@ -809,6 +1601,24 @@
         "character",
         "operation substructure formula",
         "character"
+      ],
+      "explanation_markdown": "特征标是表示矩阵的迹所成函数。常写成 $\\chi_\\rho(g)=\\operatorname{tr}(\\rho(g))$，其中$\\rho$ 是表示，迹对线性算子取。\n\n它不同于元素阶；特征标是类函数，常在共轭类上取同值。 表示论把抽象群元送到线性变换，常写 $\\rho:G\\to GL(V)$。核反映哪些元素在线性化后消失，特征标记录矩阵迹；不可约分解、诱导表示和舒尔引理描述的是表示空间内部的结构。 同一个群在不同表示中可能丢失不同核，也可能分解成不同不可约成分；特征标和矩阵系数正是用线性代数方式保存这些信息。 核、不可约分量和特征标共同描述表示保留了哪些群信息，丢掉了哪些普通群结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "特征标",
+          "url": "https://www.baidu.com/s?wd=%E7%89%B9%E5%BE%81%E6%A0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "特征标",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%B9%E5%BE%81%E6%A0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "character",
+          "url": "https://en.wikipedia.org/w/index.php?search=character"
+        }
       ]
     },
     {
@@ -827,6 +1637,24 @@
         "group operation",
         "operation substructure formula",
         "group operation"
+      ],
+      "explanation_markdown": "群运算是群结构中给两个元素合成一个元素的二元规则。常写成 $G\\times G\\to G,\\quad (a,b)\\mapsto ab$，其中封闭性要求结果仍在 $G$ 内。\n\n它不是普通乘法的固定含义；加法群中运算可以写作加号。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "群运算",
+          "url": "https://www.baidu.com/s?wd=%E7%BE%A4%E8%BF%90%E7%AE%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "群运算",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BE%A4%E8%BF%90%E7%AE%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "group operation",
+          "url": "https://en.wikipedia.org/w/index.php?search=group%20operation"
+        }
       ]
     },
     {
@@ -845,6 +1673,24 @@
         "associative law",
         "operation substructure formula",
         "associative law"
+      ],
+      "explanation_markdown": "结合律说明三元素复合时括号位置不影响结果。常写成 $(ab)c=a(bc)$，其中$a,b,c$ 是同一群或半群中的元素。\n\n它不同于交换律；结合律管括号，交换律管顺序。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "结合律",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%93%E5%90%88%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "结合律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%93%E5%90%88%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "associative law",
+          "url": "https://en.wikipedia.org/w/index.php?search=associative%20law"
+        }
       ]
     },
     {
@@ -863,6 +1709,24 @@
         "generated subgroup",
         "operation substructure formula",
         "generated subgroup"
+      ],
+      "explanation_markdown": "生成子群是包含给定集合的最小子群。常写成 $\\langle S\\rangle=\\bigcap_{S\\subset H\\le G}H$，其中也可看作由 $S$ 中元素及逆元有限乘积组成。\n\n它不同于集合 $S$ 本身；生成过程会自动加入乘积和逆元。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "生成子群",
+          "url": "https://www.baidu.com/s?wd=%E7%94%9F%E6%88%90%E5%AD%90%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "生成子群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%9F%E6%88%90%E5%AD%90%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "generated subgroup",
+          "url": "https://en.wikipedia.org/w/index.php?search=generated%20subgroup"
+        }
       ]
     },
     {
@@ -881,6 +1745,24 @@
         "generating set",
         "operation substructure formula",
         "generating set"
+      ],
+      "explanation_markdown": "生成集是能够生成整个群的元素集合。常写成 $\\langle S\\rangle=G$，其中$S$ 可有限也可无限。\n\n它不同于基；群生成元之间可能有复杂关系，不要求唯一分解。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "生成集",
+          "url": "https://www.baidu.com/s?wd=%E7%94%9F%E6%88%90%E9%9B%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "生成集",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%9F%E6%88%90%E9%9B%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "generating set",
+          "url": "https://en.wikipedia.org/w/index.php?search=generating%20set"
+        }
       ]
     },
     {
@@ -899,6 +1781,24 @@
         "noncommuting defect",
         "[a,b]=aba^{-1}b^{-1}",
         "commutator"
+      ],
+      "explanation_markdown": "换位子度量两个元素不交换的缺口。常写成 $[a,b]=aba^{-1}b^{-1}$，其中若 $[a,b]=e$，则 $a$ 与 $b$ 交换。\n\n它不是乘积 $ab$，而是专门记录交换失败的部分。 有限群的层级常由正规列、商因子和换位子控制。西罗子群抓住素数幂部分，可解群和幂零群用逐层商群描述复杂度；单群则是不能再用非平凡正规商拆开的基本块，这些分层信息决定许多分类和构造。 这些层级不只给分类，也会限制同态、商群和表示的可能形状；换位子衡量非交换性，正规列则说明一个群能被拆到多细。 换位子和正规列衡量一个群离交换群有多远，也决定它能否被逐层拆成较简单的商因子。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "换位子",
+          "url": "https://www.baidu.com/s?wd=%E6%8D%A2%E4%BD%8D%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "换位子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8D%A2%E4%BD%8D%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "commutator",
+          "url": "https://en.wikipedia.org/w/index.php?search=commutator"
+        }
       ]
     },
     {
@@ -917,6 +1817,24 @@
         "commutator subgroup",
         "operation substructure formula",
         "commutator subgroup"
+      ],
+      "explanation_markdown": "换位子群是所有换位子生成的子群。常写成 $[G,G]=\\langle [a,b]:a,b\\in G\\rangle$，其中它总是正规子群。\n\n商群 $G/[G,G]$ 是最大的阿贝尔商。 有限群的层级常由正规列、商因子和换位子控制。西罗子群抓住素数幂部分，可解群和幂零群用逐层商群描述复杂度；单群则是不能再用非平凡正规商拆开的基本块，这些分层信息决定许多分类和构造。 这些层级不只给分类，也会限制同态、商群和表示的可能形状；换位子衡量非交换性，正规列则说明一个群能被拆到多细。 换位子和正规列衡量一个群离交换群有多远，也决定它能否被逐层拆成较简单的商因子。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "换位子群",
+          "url": "https://www.baidu.com/s?wd=%E6%8D%A2%E4%BD%8D%E5%AD%90%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "换位子群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8D%A2%E4%BD%8D%E5%AD%90%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "commutator subgroup",
+          "url": "https://en.wikipedia.org/w/index.php?search=commutator%20subgroup"
+        }
       ]
     },
     {
@@ -935,6 +1853,24 @@
         "derived group",
         "operation substructure formula",
         "derived group"
+      ],
+      "explanation_markdown": "导群通常就是换位子群。常写成 $G'=[G,G]$，其中它由所有换位子生成。\n\n它给出从群到最大阿贝尔商的核，并引出导列。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "导群",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%BC%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "导群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%BC%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "derived group",
+          "url": "https://en.wikipedia.org/w/index.php?search=derived%20group"
+        }
       ]
     },
     {
@@ -953,6 +1889,24 @@
         "derived series",
         "operation substructure formula",
         "derived series"
+      ],
+      "explanation_markdown": "导列是反复取换位子群得到的下降列。常写成 $G^{(0)}=G,\\quad G^{(i+1)}=[G^{(i)},G^{(i)}]$，其中每一步削去当前层的阿贝尔化部分。\n\n它不同于下中心列；导列用于可解性，下中心列用于幂零性。 有限群的层级常由正规列、商因子和换位子控制。西罗子群抓住素数幂部分，可解群和幂零群用逐层商群描述复杂度；单群则是不能再用非平凡正规商拆开的基本块，这些分层信息决定许多分类和构造。 这些层级不只给分类，也会限制同态、商群和表示的可能形状；换位子衡量非交换性，正规列则说明一个群能被拆到多细。 换位子和正规列衡量一个群离交换群有多远，也决定它能否被逐层拆成较简单的商因子。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "导列",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%BC%E5%88%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "导列",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%BC%E5%88%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "derived series",
+          "url": "https://en.wikipedia.org/w/index.php?search=derived%20series"
+        }
       ]
     },
     {
@@ -971,6 +1925,24 @@
         "upper central series",
         "operation substructure formula",
         "upper central series"
+      ],
+      "explanation_markdown": "上中心列是从中心向外逐步扩张的正规列。常写成 $Z_0=1,\\quad Z_{i+1}/Z_i=Z(G/Z_i)$，其中每一步取商群的中心再拉回原群。\n\n它和下中心列方向相反，但二者都围绕幂零性。 群作用把元素解释为集合上的变换，轨道和稳定子分别记录能到达哪里、哪些元素保持不动。共轭作用还会产生中心、中心化子和正规化子，类方程把这些局部稳定信息汇总成整体计数。 轨道分解、稳定子和共轭类把全局群运算落到具体对象上；很多计数公式的实质，就是把群按这些局部稳定信息重新分块。 这些数据把群元素的复合行为落到具体集合上，中心和稳定子则说明哪些变换在给定对象上不可见。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "上中心列",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%8A%E4%B8%AD%E5%BF%83%E5%88%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "上中心列",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%8A%E4%B8%AD%E5%BF%83%E5%88%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "upper central series",
+          "url": "https://en.wikipedia.org/w/index.php?search=upper%20central%20series"
+        }
       ]
     },
     {
@@ -989,6 +1961,24 @@
         "lower central series",
         "operation substructure formula",
         "lower central series"
+      ],
+      "explanation_markdown": "下中心列是反复与全群取换位子得到的下降列。常写成 $\\gamma_1(G)=G,\\quad \\gamma_{i+1}(G)=[\\gamma_i(G),G]$，其中每一步记录更深层的非交换性。\n\n它不同于导列；下中心列保留与全群的交换信息。 群作用把元素解释为集合上的变换，轨道和稳定子分别记录能到达哪里、哪些元素保持不动。共轭作用还会产生中心、中心化子和正规化子，类方程把这些局部稳定信息汇总成整体计数。 轨道分解、稳定子和共轭类把全局群运算落到具体对象上；很多计数公式的实质，就是把群按这些局部稳定信息重新分块。 这些数据把群元素的复合行为落到具体集合上，中心和稳定子则说明哪些变换在给定对象上不可见。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "下中心列",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%8B%E4%B8%AD%E5%BF%83%E5%88%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "下中心列",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%8B%E4%B8%AD%E5%BF%83%E5%88%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lower central series",
+          "url": "https://en.wikipedia.org/w/index.php?search=lower%20central%20series"
+        }
       ]
     },
     {
@@ -1007,6 +1997,24 @@
         "nilpotent group",
         "operation substructure formula",
         "nilpotent group"
+      ],
+      "explanation_markdown": "幂零群是下中心列最终到达平凡群的群。常写成 $\\gamma_{c+1}(G)=1$，其中最小的 $c$ 称为幂零类。\n\n它比可解群更强，有限 $p$ 群是典型来源。 有限群的层级常由正规列、商因子和换位子控制。西罗子群抓住素数幂部分，可解群和幂零群用逐层商群描述复杂度；单群则是不能再用非平凡正规商拆开的基本块，这些分层信息决定许多分类和构造。 这些层级不只给分类，也会限制同态、商群和表示的可能形状；换位子衡量非交换性，正规列则说明一个群能被拆到多细。 换位子和正规列衡量一个群离交换群有多远，也决定它能否被逐层拆成较简单的商因子。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "幂零群",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%82%E9%9B%B6%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "幂零群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%82%E9%9B%B6%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "nilpotent group",
+          "url": "https://en.wikipedia.org/w/index.php?search=nilpotent%20group"
+        }
       ]
     },
     {
@@ -1025,6 +2033,24 @@
         "free group",
         "operation substructure formula",
         "free group"
+      ],
+      "explanation_markdown": "自由群是由生成集无关系生成的群。常写成 $F(S)=\\langle S\\mid\\ \\rangle$，其中除群公理外没有额外关系。\n\n它不同于自由阿贝尔群；自由群中不同生成元通常不交换。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自由群",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E7%94%B1%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自由群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E7%94%B1%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "free group",
+          "url": "https://en.wikipedia.org/w/index.php?search=free%20group"
+        }
       ]
     },
     {
@@ -1043,6 +2069,24 @@
         "free abelian group",
         "operation substructure formula",
         "free abelian group"
+      ],
+      "explanation_markdown": "自由阿贝尔群是无关系但要求交换的阿贝尔群。常写成 $\\mathbb Z^{(S)}$，其中元素是有限支整数线性组合。\n\n它不同于自由群；自由阿贝尔群强制交换律，结构像整数格。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自由阿贝尔群",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E7%94%B1%E9%98%BF%E8%B4%9D%E5%B0%94%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自由阿贝尔群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E7%94%B1%E9%98%BF%E8%B4%9D%E5%B0%94%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "free abelian group",
+          "url": "https://en.wikipedia.org/w/index.php?search=free%20abelian%20group"
+        }
       ]
     },
     {
@@ -1061,6 +2105,24 @@
         "presentation of group",
         "operation substructure formula",
         "presentation of group"
+      ],
+      "explanation_markdown": "群的表示是把群同态送入一般线性群的过程。常写成 $\\rho:G\\to GL(V)$，其中$GL(V)$ 是 $V$ 上可逆线性变换群。\n\n它与特征标相配合，尤其适合有限群和紧群。 表示论把抽象群元送到线性变换，常写 $\\rho:G\\to GL(V)$。核反映哪些元素在线性化后消失，特征标记录矩阵迹；不可约分解、诱导表示和舒尔引理描述的是表示空间内部的结构。 同一个群在不同表示中可能丢失不同核，也可能分解成不同不可约成分；特征标和矩阵系数正是用线性代数方式保存这些信息。 核、不可约分量和特征标共同描述表示保留了哪些群信息，丢掉了哪些普通群结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "群的表示",
+          "url": "https://www.baidu.com/s?wd=%E7%BE%A4%E7%9A%84%E8%A1%A8%E7%A4%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "群的表示",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BE%A4%E7%9A%84%E8%A1%A8%E7%A4%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "presentation of group",
+          "url": "https://en.wikipedia.org/w/index.php?search=presentation%20of%20group"
+        }
       ]
     },
     {
@@ -1079,6 +2141,24 @@
         "generators and relations",
         "operation substructure formula",
         "generators and relations"
+      ],
+      "explanation_markdown": "生成元与关系用生成集和满足的方程描述群。常写成 $G=\\langle S\\mid R\\rangle$，其中$S$ 是生成元集合，$R$ 是关系集合。\n\n它不是线性表示；这里的“表示”是群的演示 presentation。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "生成元与关系",
+          "url": "https://www.baidu.com/s?wd=%E7%94%9F%E6%88%90%E5%85%83%E4%B8%8E%E5%85%B3%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "生成元与关系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%9F%E6%88%90%E5%85%83%E4%B8%8E%E5%85%B3%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "generators and relations",
+          "url": "https://en.wikipedia.org/w/index.php?search=generators%20and%20relations"
+        }
       ]
     },
     {
@@ -1097,6 +2177,24 @@
         "direct sum",
         "operation substructure formula",
         "direct sum"
+      ],
+      "explanation_markdown": "直和在阿贝尔群中通常指有限支分量相加的外直和。常写成 $\\bigoplus_i G_i$，其中元素只有有限多个非单位分量。\n\n它不同于直积；无限情形下直积允许无限多非零分量。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "直和",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B4%E5%92%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "直和",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B4%E5%92%8C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "direct sum",
+          "url": "https://en.wikipedia.org/w/index.php?search=direct%20sum"
+        }
       ]
     },
     {
@@ -1115,6 +2213,24 @@
         "internal direct product",
         "operation substructure formula",
         "internal direct product"
+      ],
+      "explanation_markdown": "内直积是同一群内部若干正规子群独立相乘得到全群。常写成 $G=H_1\\cdots H_n$，且各因子交叠平凡，其中各因子通常还要求彼此交换。\n\n它不同于外直积；内直积的因子已经嵌在同一个群里。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "内直积",
+          "url": "https://www.baidu.com/s?wd=%E5%86%85%E7%9B%B4%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "内直积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%86%85%E7%9B%B4%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "internal direct product",
+          "url": "https://en.wikipedia.org/w/index.php?search=internal%20direct%20product"
+        }
       ]
     },
     {
@@ -1133,6 +2249,24 @@
         "external direct product",
         "operation substructure formula",
         "external direct product"
+      ],
+      "explanation_markdown": "外直积是从给定群族外部构造的分量乘积。常写成 $\\prod_i G_i$，其中运算逐分量进行。\n\n它不同于内直积；外直积先造新群，内直积识别已有群。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "外直积",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%96%E7%9B%B4%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "外直积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%96%E7%9B%B4%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "external direct product",
+          "url": "https://en.wikipedia.org/w/index.php?search=external%20direct%20product"
+        }
       ]
     },
     {
@@ -1151,6 +2285,24 @@
         "fundamental theorem of group homomorphism",
         "operation substructure formula",
         "fundamental theorem of group homomorphism"
+      ],
+      "explanation_markdown": "群同态基本定理说明同态可分解为商掉核后再嵌入像。常写成 $G/\\ker\\varphi\\cong\\operatorname{im}\\varphi$，其中$\\ker\\varphi$ 是核，像位于目标群。\n\n它解释同态丢失的信息正是核。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "群同态基本定理",
+          "url": "https://www.baidu.com/s?wd=%E7%BE%A4%E5%90%8C%E6%80%81%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "群同态基本定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BE%A4%E5%90%8C%E6%80%81%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fundamental theorem of group homomorphism",
+          "url": "https://en.wikipedia.org/w/index.php?search=fundamental%20theorem%20of%20group%20homomorphism"
+        }
       ]
     },
     {
@@ -1169,6 +2321,24 @@
         "first isomorphism theorem",
         "operation substructure formula",
         "first isomorphism theorem"
+      ],
+      "explanation_markdown": "第一同构定理给出同态的商群与像之间的同构。常写成 $G/\\ker\\varphi\\simeq\\varphi(G)$，其中核必须正规，商群因此存在。\n\n它不同于第二、第三同构定理；第一定理围绕单个同态。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "第一同构定理",
+          "url": "https://www.baidu.com/s?wd=%E7%AC%AC%E4%B8%80%E5%90%8C%E6%9E%84%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "第一同构定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AC%AC%E4%B8%80%E5%90%8C%E6%9E%84%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "first isomorphism theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=first%20isomorphism%20theorem"
+        }
       ]
     },
     {
@@ -1187,6 +2357,24 @@
         "second isomorphism theorem",
         "operation substructure formula",
         "second isomorphism theorem"
+      ],
+      "explanation_markdown": "第二同构定理比较子群乘积与交的商结构。常写成 $A/(A\\cap N)\\cong AN/N$，其中$N\\triangleleft G$，$A\\le G$。\n\n它处理一个子群和一个正规子群的相互位置。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "第二同构定理",
+          "url": "https://www.baidu.com/s?wd=%E7%AC%AC%E4%BA%8C%E5%90%8C%E6%9E%84%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "第二同构定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AC%AC%E4%BA%8C%E5%90%8C%E6%9E%84%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "second isomorphism theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=second%20isomorphism%20theorem"
+        }
       ]
     },
     {
@@ -1205,6 +2393,24 @@
         "third isomorphism theorem",
         "operation substructure formula",
         "third isomorphism theorem"
+      ],
+      "explanation_markdown": "第三同构定理描述连续取商的等价方式。常写成 $(G/N)/(M/N)\\cong G/M$，其中$N\\triangleleft M\\triangleleft G$，先除以 $N$ 再除以 $M/N$。\n\n它不同于第二定理；第三定理关注嵌套正规子群。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "第三同构定理",
+          "url": "https://www.baidu.com/s?wd=%E7%AC%AC%E4%B8%89%E5%90%8C%E6%9E%84%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "第三同构定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AC%AC%E4%B8%89%E5%90%8C%E6%9E%84%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "third isomorphism theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=third%20isomorphism%20theorem"
+        }
       ]
     },
     {
@@ -1223,6 +2429,24 @@
         "automorphism group",
         "operation substructure formula",
         "automorphism group"
+      ],
+      "explanation_markdown": "自同构群是群所有自同构按复合组成的群。常写成 $\\operatorname{Aut}(G)$，其中元素是 $G$ 的结构保持双射。\n\n它包含内自同构群，外自同构群则是相应商群。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自同构群",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E5%90%8C%E6%9E%84%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自同构群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E5%90%8C%E6%9E%84%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "automorphism group",
+          "url": "https://en.wikipedia.org/w/index.php?search=automorphism%20group"
+        }
       ]
     },
     {
@@ -1241,6 +2465,24 @@
         "inner automorphism",
         "operation substructure formula",
         "inner automorphism"
+      ],
+      "explanation_markdown": "内自同构是由群元素共轭产生的自同构。常写成 $\\iota_g(x)=gxg^{-1}$，其中$g\\in G$，映射保持乘法。\n\n它不同于任意自同构；有些自同构不能由共轭得到。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "内自同构",
+          "url": "https://www.baidu.com/s?wd=%E5%86%85%E8%87%AA%E5%90%8C%E6%9E%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "内自同构",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%86%85%E8%87%AA%E5%90%8C%E6%9E%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inner automorphism",
+          "url": "https://en.wikipedia.org/w/index.php?search=inner%20automorphism"
+        }
       ]
     },
     {
@@ -1259,6 +2501,24 @@
         "outer automorphism",
         "operation substructure formula",
         "outer automorphism"
+      ],
+      "explanation_markdown": "外自同构是自同构群模去内自同构群后的商。常写成 $\\operatorname{Out}(G)=\\operatorname{Aut}(G)/\\operatorname{Inn}(G)$，其中$\\operatorname{Inn}(G)$ 来自共轭作用。\n\n它测量群结构中非内部的对称重命名。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "外自同构",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%96%E8%87%AA%E5%90%8C%E6%9E%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "外自同构",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%96%E8%87%AA%E5%90%8C%E6%9E%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "outer automorphism",
+          "url": "https://en.wikipedia.org/w/index.php?search=outer%20automorphism"
+        }
       ]
     },
     {
@@ -1277,6 +2537,24 @@
         "conjugation action",
         "operation substructure formula",
         "conjugation action"
+      ],
+      "explanation_markdown": "共轭作用是群在自身上由共轭给出的作用。常写成 $g\\cdot x=gxg^{-1}$，其中作用元素 $g$ 移动对象 $x$。\n\n它不同于左乘作用；共轭作用的轨道是共轭类，稳定子是中心化子。 群作用把元素解释为集合上的变换，轨道和稳定子分别记录能到达哪里、哪些元素保持不动。共轭作用还会产生中心、中心化子和正规化子，类方程把这些局部稳定信息汇总成整体计数。 轨道分解、稳定子和共轭类把全局群运算落到具体对象上；很多计数公式的实质，就是把群按这些局部稳定信息重新分块。 这些数据把群元素的复合行为落到具体集合上，中心和稳定子则说明哪些变换在给定对象上不可见。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "共轭作用",
+          "url": "https://www.baidu.com/s?wd=%E5%85%B1%E8%BD%AD%E4%BD%9C%E7%94%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "共轭作用",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%B1%E8%BD%AD%E4%BD%9C%E7%94%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "conjugation action",
+          "url": "https://en.wikipedia.org/w/index.php?search=conjugation%20action"
+        }
       ]
     },
     {
@@ -1295,6 +2573,24 @@
         "class equation",
         "operation substructure formula",
         "class equation"
+      ],
+      "explanation_markdown": "类方程把有限群按共轭类大小分解。常写成 $|G|=|Z(G)|+\\sum_i [G:C_G(x_i)]$，其中$x_i$ 代表非中心共轭类。\n\n它连接中心、共轭类和群阶，在 $p$ 群中尤其有力。 群作用把元素解释为集合上的变换，轨道和稳定子分别记录能到达哪里、哪些元素保持不动。共轭作用还会产生中心、中心化子和正规化子，类方程把这些局部稳定信息汇总成整体计数。 轨道分解、稳定子和共轭类把全局群运算落到具体对象上；很多计数公式的实质，就是把群按这些局部稳定信息重新分块。 这些数据把群元素的复合行为落到具体集合上，中心和稳定子则说明哪些变换在给定对象上不可见。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "类方程",
+          "url": "https://www.baidu.com/s?wd=%E7%B1%BB%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "类方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B1%BB%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "class equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=class%20equation"
+        }
       ]
     },
     {
@@ -1313,6 +2609,24 @@
         "p group",
         "operation substructure formula",
         "p group"
+      ],
+      "explanation_markdown": "p群是阶为素数幂的有限群。常写成 $|G|=p^n$，其中$p$ 是素数，$n\\ge0$。\n\n它不同于 Sylow 子群；Sylow 子群是在更大群中的极大 $p$ 子群。 有限群的层级常由正规列、商因子和换位子控制。西罗子群抓住素数幂部分，可解群和幂零群用逐层商群描述复杂度；单群则是不能再用非平凡正规商拆开的基本块，这些分层信息决定许多分类和构造。 这些层级不只给分类，也会限制同态、商群和表示的可能形状；换位子衡量非交换性，正规列则说明一个群能被拆到多细。 换位子和正规列衡量一个群离交换群有多远，也决定它能否被逐层拆成较简单的商因子。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "p群",
+          "url": "https://www.baidu.com/s?wd=p%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "p群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=p%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "p group",
+          "url": "https://en.wikipedia.org/w/index.php?search=p%20group"
+        }
       ]
     },
     {
@@ -1331,6 +2645,24 @@
         "maximal p-power",
         "conjugacy n_p",
         "sylow subgroup"
+      ],
+      "explanation_markdown": "西罗子群是有限群中阶为最大 $p$ 幂因子的 $p$ 子群。常写成 $|P|=p^n$ 若 $p^n\\mid |G|$ 且 $p^{n+1}\\nmid |G|$，其中$P$ 是 Sylow $p$ 子群。\n\n它不是任意 $p$ 子群；它在 $p$ 部分上达到最大阶。 有限群的层级常由正规列、商因子和换位子控制。西罗子群抓住素数幂部分，可解群和幂零群用逐层商群描述复杂度；单群则是不能再用非平凡正规商拆开的基本块，这些分层信息决定许多分类和构造。 这些层级不只给分类，也会限制同态、商群和表示的可能形状；换位子衡量非交换性，正规列则说明一个群能被拆到多细。 换位子和正规列衡量一个群离交换群有多远，也决定它能否被逐层拆成较简单的商因子。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "西罗子群",
+          "url": "https://www.baidu.com/s?wd=%E8%A5%BF%E7%BD%97%E5%AD%90%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "西罗子群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A5%BF%E7%BD%97%E5%AD%90%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "sylow subgroup",
+          "url": "https://en.wikipedia.org/w/index.php?search=sylow%20subgroup"
+        }
       ]
     },
     {
@@ -1349,6 +2681,24 @@
         "normal series",
         "operation substructure formula",
         "normal series"
+      ],
+      "explanation_markdown": "正规列是由正规包含组成的子群链。常写成 $1=G_n\\triangleleft\\cdots\\triangleleft G_0=G$，其中每一层都正规于上一层。\n\n它是组成列、可解列和中心列的共同框架。 有限群的层级常由正规列、商因子和换位子控制。西罗子群抓住素数幂部分，可解群和幂零群用逐层商群描述复杂度；单群则是不能再用非平凡正规商拆开的基本块，这些分层信息决定许多分类和构造。 这些层级不只给分类，也会限制同态、商群和表示的可能形状；换位子衡量非交换性，正规列则说明一个群能被拆到多细。 换位子和正规列衡量一个群离交换群有多远，也决定它能否被逐层拆成较简单的商因子。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正规列",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E8%A7%84%E5%88%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正规列",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E8%A7%84%E5%88%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "normal series",
+          "url": "https://en.wikipedia.org/w/index.php?search=normal%20series"
+        }
       ]
     },
     {
@@ -1367,6 +2717,24 @@
         "composition series",
         "operation substructure formula",
         "composition series"
+      ],
+      "explanation_markdown": "组成列是商因子全为单群的正规列。常写成 $G_i/G_{i+1}\\text{ simple}$，其中每一步不能再作非平凡正规分解。\n\n它不同于任意正规列；组成列要求每层商群不可再分。 有限群的层级常由正规列、商因子和换位子控制。西罗子群抓住素数幂部分，可解群和幂零群用逐层商群描述复杂度；单群则是不能再用非平凡正规商拆开的基本块，这些分层信息决定许多分类和构造。 这些层级不只给分类，也会限制同态、商群和表示的可能形状；换位子衡量非交换性，正规列则说明一个群能被拆到多细。 换位子和正规列衡量一个群离交换群有多远，也决定它能否被逐层拆成较简单的商因子。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "组成列",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%84%E6%88%90%E5%88%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "组成列",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%84%E6%88%90%E5%88%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "composition series",
+          "url": "https://en.wikipedia.org/w/index.php?search=composition%20series"
+        }
       ]
     },
     {
@@ -1385,6 +2753,24 @@
         "jordan holder theorem",
         "operation substructure formula",
         "jordan holder theorem"
+      ],
+      "explanation_markdown": "若尔当赫尔德定理说明有限长度组成列的因子在重排后唯一。常写成 $G_i/G_{i+1}$ 的多重集合唯一，其中不同组成列只差顺序和同构。\n\n它不说明组成列本身唯一，只说明因子类型唯一。 有限群的层级常由正规列、商因子和换位子控制。西罗子群抓住素数幂部分，可解群和幂零群用逐层商群描述复杂度；单群则是不能再用非平凡正规商拆开的基本块，这些分层信息决定许多分类和构造。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "若尔当赫尔德定理",
+          "url": "https://www.baidu.com/s?wd=%E8%8B%A5%E5%B0%94%E5%BD%93%E8%B5%AB%E5%B0%94%E5%BE%B7%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "若尔当赫尔德定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%8B%A5%E5%B0%94%E5%BD%93%E8%B5%AB%E5%B0%94%E5%BE%B7%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "jordan holder theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=jordan%20holder%20theorem"
+        }
       ]
     },
     {
@@ -1403,6 +2789,24 @@
         "solvable series",
         "operation substructure formula",
         "solvable series"
+      ],
+      "explanation_markdown": "可解列是商因子为阿贝尔群的正规列。常写成 $G_i/G_{i+1}\\text{ abelian}$，其中若存在从 $G$ 到 $1$ 的这种列，群可解。\n\n它不同于导列；导列是规范构造，可解列只要求存在。 有限群的层级常由正规列、商因子和换位子控制。西罗子群抓住素数幂部分，可解群和幂零群用逐层商群描述复杂度；单群则是不能再用非平凡正规商拆开的基本块，这些分层信息决定许多分类和构造。 这些层级不只给分类，也会限制同态、商群和表示的可能形状；换位子衡量非交换性，正规列则说明一个群能被拆到多细。 换位子和正规列衡量一个群离交换群有多远，也决定它能否被逐层拆成较简单的商因子。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "可解列",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%AF%E8%A7%A3%E5%88%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "可解列",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%AF%E8%A7%A3%E5%88%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "solvable series",
+          "url": "https://en.wikipedia.org/w/index.php?search=solvable%20series"
+        }
       ]
     },
     {
@@ -1421,6 +2825,24 @@
         "commutator length",
         "operation substructure formula",
         "commutator length"
+      ],
+      "explanation_markdown": "换位子长度是群元素写成换位子乘积所需的最小个数。常写成 $cl(g)=\\min\\{n:g=\\prod_{i=1}^n[a_i,b_i]\\}$，其中$g$ 必须位于换位子群中。\n\n它不同于元素阶；元素阶看幂，换位子长度看交换缺口的分解。 有限群的层级常由正规列、商因子和换位子控制。西罗子群抓住素数幂部分，可解群和幂零群用逐层商群描述复杂度；单群则是不能再用非平凡正规商拆开的基本块，这些分层信息决定许多分类和构造。 这些层级不只给分类，也会限制同态、商群和表示的可能形状；换位子衡量非交换性，正规列则说明一个群能被拆到多细。 换位子和正规列衡量一个群离交换群有多远，也决定它能否被逐层拆成较简单的商因子。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "换位子长度",
+          "url": "https://www.baidu.com/s?wd=%E6%8D%A2%E4%BD%8D%E5%AD%90%E9%95%BF%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "换位子长度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8D%A2%E4%BD%8D%E5%AD%90%E9%95%BF%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "commutator length",
+          "url": "https://en.wikipedia.org/w/index.php?search=commutator%20length"
+        }
       ]
     },
     {
@@ -1439,6 +2861,24 @@
         "monomorphism",
         "operation substructure formula",
         "monomorphism"
+      ],
+      "explanation_markdown": "单同态是单射的群同态。常写成 $\\varphi(a)=\\varphi(b)\\Rightarrow a=b$，其中等价地，$\\ker\\varphi=1$。\n\n它不同于满同态；单同态关注不压缩，满同态关注是否覆盖目标。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单同态",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E5%90%8C%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单同态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E5%90%8C%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "monomorphism",
+          "url": "https://en.wikipedia.org/w/index.php?search=monomorphism"
+        }
       ]
     },
     {
@@ -1457,6 +2897,24 @@
         "epimorphism",
         "operation substructure formula",
         "epimorphism"
+      ],
+      "explanation_markdown": "满同态是像等于整个目标群的同态。常写成 $\\operatorname{im}\\varphi=H$，其中$\\varphi:G\\to H$，每个目标元素都有原像。\n\n它不同于单同态；满同态可能合并许多源群元素。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "满同态",
+          "url": "https://www.baidu.com/s?wd=%E6%BB%A1%E5%90%8C%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "满同态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%BB%A1%E5%90%8C%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "epimorphism",
+          "url": "https://en.wikipedia.org/w/index.php?search=epimorphism"
+        }
       ]
     },
     {
@@ -1475,6 +2933,24 @@
         "homomorphic image",
         "operation substructure formula",
         "homomorphic image"
+      ],
+      "explanation_markdown": "同态像是同态下得到的目标群子群。常写成 $\\varphi(G)\\le H$，其中$H$ 是目标群，像由所有 $\\varphi(g)$ 组成。\n\n它与商群 $G/\\ker\\varphi$ 同构，是第一同构定理的核心。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "同态像",
+          "url": "https://www.baidu.com/s?wd=%E5%90%8C%E6%80%81%E5%83%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "同态像",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%8C%E6%80%81%E5%83%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "homomorphic image",
+          "url": "https://en.wikipedia.org/w/index.php?search=homomorphic%20image"
+        }
       ]
     },
     {
@@ -1493,6 +2969,24 @@
         "anti isomorphism",
         "operation substructure formula",
         "anti isomorphism"
+      ],
+      "explanation_markdown": "反同构是反转乘法顺序的双射结构映射。常写成 $\\phi(ab)=\\phi(b)\\phi(a)$，其中目标群中的乘法次序与源群相反。\n\n在阿贝尔群中反同构和同构差别消失，非阿贝尔群中需区分顺序。 同一记号要放在具体运算和所在群中理解。子群强调封闭，正规子群才能取商，作用把元素变成变换；$H\\le G$、$G/N$ 和 $G\\curvearrowright X$ 记录的是不同层级的信息，也让半群、幺半群和群的边界保持清楚，方便比较同构定理中的核、像和商。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反同构",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E5%90%8C%E6%9E%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反同构",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E5%90%8C%E6%9E%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "anti isomorphism",
+          "url": "https://en.wikipedia.org/w/index.php?search=anti%20isomorphism"
+        }
       ]
     },
     {
@@ -1511,6 +3005,24 @@
         "regular n-gon symmetries",
         "r^n=s^2=e srs=r^{-1}",
         "dihedral group"
+      ],
+      "explanation_markdown": "二面体群是正 $n$ 边形的旋转和反射对称群。常写成 $D_{2n}=\\langle r,s\\mid r^n=s^2=1,\\ srs=r^{-1}\\rangle$，其中$r$ 是旋转，$s$ 是反射。\n\n它不同于循环群；加入反射后一般变成非阿贝尔群。 这些例子把群运算放进具体模型：置换群复合排列，矩阵群复合线性变换，二面体群描述正多边形对称。模型不同，单位元、逆元、阶和子群结构都有可直接计算的形态，也会影响中心、正规子群和表示的样子。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "二面体群",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%8C%E9%9D%A2%E4%BD%93%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "二面体群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%8C%E9%9D%A2%E4%BD%93%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dihedral group",
+          "url": "https://en.wikipedia.org/w/index.php?search=dihedral%20group"
+        }
       ]
     },
     {
@@ -1529,6 +3041,24 @@
         "quaternion group",
         "operation substructure formula",
         "quaternion group"
+      ],
+      "explanation_markdown": "四元数群是由八个四元数单位构成的非阿贝尔群。常写成 $Q_8=\\{\\pm1,\\pm i,\\pm j,\\pm k\\}$，其中满足 $i^2=j^2=k^2=ijk=-1$。\n\n它不同于二面体群 $D_8$，虽然二者阶同为八。 这些例子把群运算放进具体模型：置换群复合排列，矩阵群复合线性变换，二面体群描述正多边形对称。模型不同，单位元、逆元、阶和子群结构都有可直接计算的形态，也会影响中心、正规子群和表示的样子。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "四元数群",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%9B%E5%85%83%E6%95%B0%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "四元数群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%9B%E5%85%83%E6%95%B0%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quaternion group",
+          "url": "https://en.wikipedia.org/w/index.php?search=quaternion%20group"
+        }
       ]
     },
     {
@@ -1547,6 +3077,24 @@
         "klein four group",
         "operation substructure formula",
         "klein four group"
+      ],
+      "explanation_markdown": "克莱因四元群是四阶且所有非单位元素阶为二的阿贝尔群。常写成 $V_4\\cong C_2\\times C_2$，其中它有三个非单位元素，每个平方为单位元。\n\n它不同于循环四阶群 $C_4$；后者含有阶四元素。 这些例子把群运算放进具体模型：置换群复合排列，矩阵群复合线性变换，二面体群描述正多边形对称。模型不同，单位元、逆元、阶和子群结构都有可直接计算的形态，也会影响中心、正规子群和表示的样子。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "克莱因四元群",
+          "url": "https://www.baidu.com/s?wd=%E5%85%8B%E8%8E%B1%E5%9B%A0%E5%9B%9B%E5%85%83%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "克莱因四元群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%8B%E8%8E%B1%E5%9B%A0%E5%9B%9B%E5%85%83%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "klein four group",
+          "url": "https://en.wikipedia.org/w/index.php?search=klein%20four%20group"
+        }
       ]
     },
     {
@@ -1565,6 +3113,24 @@
         "matrix group",
         "operation substructure formula",
         "matrix group"
+      ],
+      "explanation_markdown": "矩阵群是由可逆矩阵在乘法下组成的群或其子群。常写成 $G\\le GL_n(F)$，其中$F$ 是底域，矩阵乘法给出运算。\n\n它不同于所有矩阵集合；不可逆矩阵不能放进一般线性群。 这些例子把群运算放进具体模型：置换群复合排列，矩阵群复合线性变换，二面体群描述正多边形对称。模型不同，单位元、逆元、阶和子群结构都有可直接计算的形态，也会影响中心、正规子群和表示的样子。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "矩阵群",
+          "url": "https://www.baidu.com/s?wd=%E7%9F%A9%E9%98%B5%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "矩阵群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9F%A9%E9%98%B5%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "matrix group",
+          "url": "https://en.wikipedia.org/w/index.php?search=matrix%20group"
+        }
       ]
     },
     {
@@ -1583,6 +3149,24 @@
         "invertible linear maps",
         "GL(n,F)",
         "general linear group"
+      ],
+      "explanation_markdown": "一般线性群是向量空间上所有可逆线性变换组成的群。常写成 $GL_n(F)=\\{A\\in M_n(F):\\det A\\ne0\\}$，其中$F$ 是底域，$n$ 是维数。\n\n它不同于特殊线性群；特殊线性群还要求行列式为一。 这些例子把群运算放进具体模型：置换群复合排列，矩阵群复合线性变换，二面体群描述正多边形对称。模型不同，单位元、逆元、阶和子群结构都有可直接计算的形态，也会影响中心、正规子群和表示的样子。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "一般线性群",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%80%E8%88%AC%E7%BA%BF%E6%80%A7%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "一般线性群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%80%E8%88%AC%E7%BA%BF%E6%80%A7%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "general linear group",
+          "url": "https://en.wikipedia.org/w/index.php?search=general%20linear%20group"
+        }
       ]
     },
     {
@@ -1601,6 +3185,24 @@
         "det=1",
         "SL(n,F)",
         "special linear group"
+      ],
+      "explanation_markdown": "特殊线性群是行列式为一的可逆矩阵群。常写成 $SL_n(F)=\\{A\\in GL_n(F):\\det A=1\\}$，其中行列式条件固定体积因子。\n\n它不同于正交群；正交群保持二次型而不只保持行列式。 这些例子把群运算放进具体模型：置换群复合排列，矩阵群复合线性变换，二面体群描述正多边形对称。模型不同，单位元、逆元、阶和子群结构都有可直接计算的形态，也会影响中心、正规子群和表示的样子。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "特殊线性群",
+          "url": "https://www.baidu.com/s?wd=%E7%89%B9%E6%AE%8A%E7%BA%BF%E6%80%A7%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "特殊线性群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%B9%E6%AE%8A%E7%BA%BF%E6%80%A7%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "special linear group",
+          "url": "https://en.wikipedia.org/w/index.php?search=special%20linear%20group"
+        }
       ]
     },
     {
@@ -1619,6 +3221,24 @@
         "real inner product",
         "A^T A=I",
         "orthogonal group"
+      ],
+      "explanation_markdown": "正交群是保持对称双线性型或欧氏内积的线性变换群。常写成 $O(n)=\\{A:A^TA=I\\}$，其中$A^T$ 是转置，条件表示长度和角度保持。\n\n它不同于特殊线性群；正交群保持度量，行列式只能为 $\\pm1$。 这些例子把群运算放进具体模型：置换群复合排列，矩阵群复合线性变换，二面体群描述正多边形对称。模型不同，单位元、逆元、阶和子群结构都有可直接计算的形态，也会影响中心、正规子群和表示的样子。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正交群",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E4%BA%A4%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正交群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E4%BA%A4%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "orthogonal group",
+          "url": "https://en.wikipedia.org/w/index.php?search=orthogonal%20group"
+        }
       ]
     },
     {
@@ -1637,6 +3257,24 @@
         "complex inner product",
         "U^*U=I",
         "unitary group"
+      ],
+      "explanation_markdown": "酉群是复向量空间中保持 Hermite 内积的矩阵群。常写成 $U(n)=\\{A:A^*A=I\\}$，其中$A^*$ 是共轭转置。\n\n它不同于正交群；正交群用转置，酉群还要处理复共轭。 这些例子把群运算放进具体模型：置换群复合排列，矩阵群复合线性变换，二面体群描述正多边形对称。模型不同，单位元、逆元、阶和子群结构都有可直接计算的形态，也会影响中心、正规子群和表示的样子。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "酉群",
+          "url": "https://www.baidu.com/s?wd=%E9%85%89%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "酉群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%85%89%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "unitary group",
+          "url": "https://en.wikipedia.org/w/index.php?search=unitary%20group"
+        }
       ]
     },
     {
@@ -1655,6 +3293,24 @@
         "unit group of ring",
         "operation substructure formula",
         "unit group of ring"
+      ],
+      "explanation_markdown": "环的单位群是环中所有可乘逆元素组成的群。常写成 $R^\\times=\\{u\\in R:\\exists v,uv=vu=1\\}$，其中群运算继承自环乘法。\n\n它不同于环的全体元素；零因子和不可逆元素不属于单位群。 这些例子把群运算放进具体模型：置换群复合排列，矩阵群复合线性变换，二面体群描述正多边形对称。模型不同，单位元、逆元、阶和子群结构都有可直接计算的形态，也会影响中心、正规子群和表示的样子。 核、像、陪集和商群在这里承担不同角色；只要正规性或可逆性改变，写法相似的对象就可能不再属于同一个构造。 核、像、陪集和商群分别控制同态、分解和计数；正规性一变，后续构造的含义也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "环的单位群",
+          "url": "https://www.baidu.com/s?wd=%E7%8E%AF%E7%9A%84%E5%8D%95%E4%BD%8D%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "环的单位群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%8E%AF%E7%9A%84%E5%8D%95%E4%BD%8D%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "unit group of ring",
+          "url": "https://en.wikipedia.org/w/index.php?search=unit%20group%20of%20ring"
+        }
       ]
     },
     {
@@ -1673,6 +3329,24 @@
         "left action",
         "operation substructure formula",
         "left action"
+      ],
+      "explanation_markdown": "左作用是群元素从左侧作用于集合并与乘法顺序一致的作用。常写成 $g\\cdot(h\\cdot x)=(gh)\\cdot x$，其中$g,h\\in G$，$x$ 属于集合。\n\n它不同于右作用；右作用的兼容式会把乘法顺序写在另一侧。 群作用把元素解释为集合上的变换，轨道和稳定子分别记录能到达哪里、哪些元素保持不动。共轭作用还会产生中心、中心化子和正规化子，类方程把这些局部稳定信息汇总成整体计数。 轨道分解、稳定子和共轭类把全局群运算落到具体对象上；很多计数公式的实质，就是把群按这些局部稳定信息重新分块。 这些数据把群元素的复合行为落到具体集合上，中心和稳定子则说明哪些变换在给定对象上不可见。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "左作用",
+          "url": "https://www.baidu.com/s?wd=%E5%B7%A6%E4%BD%9C%E7%94%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "左作用",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B7%A6%E4%BD%9C%E7%94%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "left action",
+          "url": "https://en.wikipedia.org/w/index.php?search=left%20action"
+        }
       ]
     },
     {
@@ -1691,6 +3365,24 @@
         "right action",
         "operation substructure formula",
         "right action"
+      ],
+      "explanation_markdown": "右作用是把群元素写在对象右侧的作用。常写成 $(x\\cdot g)\\cdot h=x\\cdot(gh)$，其中$g,h\\in G$，$x$ 是被作用对象。\n\n它与左作用可通过反群互相转化，但公式顺序不能混淆。 群作用把元素解释为集合上的变换，轨道和稳定子分别记录能到达哪里、哪些元素保持不动。共轭作用还会产生中心、中心化子和正规化子，类方程把这些局部稳定信息汇总成整体计数。 轨道分解、稳定子和共轭类把全局群运算落到具体对象上；很多计数公式的实质，就是把群按这些局部稳定信息重新分块。 这些数据把群元素的复合行为落到具体集合上，中心和稳定子则说明哪些变换在给定对象上不可见。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "右作用",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%B3%E4%BD%9C%E7%94%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "右作用",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%B3%E4%BD%9C%E7%94%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "right action",
+          "url": "https://en.wikipedia.org/w/index.php?search=right%20action"
+        }
       ]
     },
     {
@@ -1709,6 +3401,24 @@
         "transitive action",
         "operation substructure formula",
         "transitive action"
+      ],
+      "explanation_markdown": "传递作用是只有一个轨道的群作用。常写成 $\\forall x,y\\in X,\\exists g\\in G:g\\cdot x=y$，其中任意两点能由某个群元素连接。\n\n它不同于忠实作用；传递看轨道数量，忠实看群元素是否被作用区分。 群作用把元素解释为集合上的变换，轨道和稳定子分别记录能到达哪里、哪些元素保持不动。共轭作用还会产生中心、中心化子和正规化子，类方程把这些局部稳定信息汇总成整体计数。 轨道分解、稳定子和共轭类把全局群运算落到具体对象上；很多计数公式的实质，就是把群按这些局部稳定信息重新分块。 这些数据把群元素的复合行为落到具体集合上，中心和稳定子则说明哪些变换在给定对象上不可见。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "传递作用",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%A0%E9%80%92%E4%BD%9C%E7%94%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "传递作用",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%A0%E9%80%92%E4%BD%9C%E7%94%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "transitive action",
+          "url": "https://en.wikipedia.org/w/index.php?search=transitive%20action"
+        }
       ]
     },
     {
@@ -1727,6 +3437,24 @@
         "faithful action",
         "operation substructure formula",
         "faithful action"
+      ],
+      "explanation_markdown": "忠实作用是只有单位元对所有点都作用平凡的群作用。常写成 $\\ker(G\\to\\operatorname{Sym}(X))=1$，其中核由对每个 $x$ 都固定的群元素组成。\n\n它不同于传递作用；忠实不要求点之间可互达。 群作用把元素解释为集合上的变换，轨道和稳定子分别记录能到达哪里、哪些元素保持不动。共轭作用还会产生中心、中心化子和正规化子，类方程把这些局部稳定信息汇总成整体计数。 轨道分解、稳定子和共轭类把全局群运算落到具体对象上；很多计数公式的实质，就是把群按这些局部稳定信息重新分块。 这些数据把群元素的复合行为落到具体集合上，中心和稳定子则说明哪些变换在给定对象上不可见。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "忠实作用",
+          "url": "https://www.baidu.com/s?wd=%E5%BF%A0%E5%AE%9E%E4%BD%9C%E7%94%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "忠实作用",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BF%A0%E5%AE%9E%E4%BD%9C%E7%94%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "faithful action",
+          "url": "https://en.wikipedia.org/w/index.php?search=faithful%20action"
+        }
       ]
     },
     {
@@ -1745,6 +3473,24 @@
         "induced representation",
         "operation substructure formula",
         "induced representation"
+      ],
+      "explanation_markdown": "诱导表示是从子群表示构造大群表示的方法。常写成 $\\operatorname{Ind}_H^G V$，其中$H\\le G$，$V$ 是 $H$ 的表示。\n\n它不同于限制表示；限制是从大群回到子群，诱导是从子群升到大群。 表示论把抽象群元送到线性变换，常写 $\\rho:G\\to GL(V)$。核反映哪些元素在线性化后消失，特征标记录矩阵迹；不可约分解、诱导表示和舒尔引理描述的是表示空间内部的结构。 同一个群在不同表示中可能丢失不同核，也可能分解成不同不可约成分；特征标和矩阵系数正是用线性代数方式保存这些信息。 核、不可约分量和特征标共同描述表示保留了哪些群信息，丢掉了哪些普通群结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "诱导表示",
+          "url": "https://www.baidu.com/s?wd=%E8%AF%B1%E5%AF%BC%E8%A1%A8%E7%A4%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "诱导表示",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%AF%B1%E5%AF%BC%E8%A1%A8%E7%A4%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "induced representation",
+          "url": "https://en.wikipedia.org/w/index.php?search=induced%20representation"
+        }
       ]
     },
     {
@@ -1763,6 +3509,24 @@
         "irreducible representation",
         "operation substructure formula",
         "irreducible representation"
+      ],
+      "explanation_markdown": "不可约表示是没有非平凡不变子空间的表示。常写成 $0\\ne W\\subset V,\\ \\rho(g)W\\subset W\\Rightarrow W=V$，其中$W$ 是子空间，$\\rho$ 是群表示。\n\n它不同于不可分解表示；在非半单情形二者需要区分。 表示论把抽象群元送到线性变换，常写 $\\rho:G\\to GL(V)$。核反映哪些元素在线性化后消失，特征标记录矩阵迹；不可约分解、诱导表示和舒尔引理描述的是表示空间内部的结构。 同一个群在不同表示中可能丢失不同核，也可能分解成不同不可约成分；特征标和矩阵系数正是用线性代数方式保存这些信息。 核、不可约分量和特征标共同描述表示保留了哪些群信息，丢掉了哪些普通群结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "不可约表示",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%8D%E5%8F%AF%E7%BA%A6%E8%A1%A8%E7%A4%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "不可约表示",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%8D%E5%8F%AF%E7%BA%A6%E8%A1%A8%E7%A4%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "irreducible representation",
+          "url": "https://en.wikipedia.org/w/index.php?search=irreducible%20representation"
+        }
       ]
     },
     {
@@ -1781,6 +3545,24 @@
         "regular representation",
         "operation substructure formula",
         "regular representation"
+      ],
+      "explanation_markdown": "正则表示是群在自身函数空间或群代数上的平移表示。常写成 $(L_g f)(x)=f(g^{-1}x)$，其中$g,x\\in G$，$f$ 是群上的函数。\n\n它不同于任意置换表示；正则表示来自群对自身的自由传递作用。 表示论把抽象群元送到线性变换，常写 $\\rho:G\\to GL(V)$。核反映哪些元素在线性化后消失，特征标记录矩阵迹；不可约分解、诱导表示和舒尔引理描述的是表示空间内部的结构。 同一个群在不同表示中可能丢失不同核，也可能分解成不同不可约成分；特征标和矩阵系数正是用线性代数方式保存这些信息。 核、不可约分量和特征标共同描述表示保留了哪些群信息，丢掉了哪些普通群结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正则表示",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E5%88%99%E8%A1%A8%E7%A4%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正则表示",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E5%88%99%E8%A1%A8%E7%A4%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "regular representation",
+          "url": "https://en.wikipedia.org/w/index.php?search=regular%20representation"
+        }
       ]
     },
     {
@@ -1799,6 +3581,24 @@
         "schur lemma",
         "operation substructure formula",
         "schur lemma"
+      ],
+      "explanation_markdown": "舒尔引理说明不可约表示之间的交错算子极受限制。常写成 $T\\rho(g)=\\pi(g)T$，其中$T$ 是两个表示间的线性映射，且与群作用交换。\n\n代数闭域上同一不可约表示的自交错算子只是标量。 表示论把抽象群元送到线性变换，常写 $\\rho:G\\to GL(V)$。核反映哪些元素在线性化后消失，特征标记录矩阵迹；不可约分解、诱导表示和舒尔引理描述的是表示空间内部的结构。 同一个群在不同表示中可能丢失不同核，也可能分解成不同不可约成分；特征标和矩阵系数正是用线性代数方式保存这些信息。 核、不可约分量和特征标共同描述表示保留了哪些群信息，丢掉了哪些普通群结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "舒尔引理",
+          "url": "https://www.baidu.com/s?wd=%E8%88%92%E5%B0%94%E5%BC%95%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "舒尔引理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%88%92%E5%B0%94%E5%BC%95%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "schur lemma",
+          "url": "https://en.wikipedia.org/w/index.php?search=schur%20lemma"
+        }
       ]
     }
   ]

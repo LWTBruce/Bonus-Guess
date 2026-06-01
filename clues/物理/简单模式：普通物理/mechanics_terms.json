@@ -17,6 +17,24 @@
         "Δr=r2-r1 s x-t图",
         "起末点 轨迹 坐标",
         "displacement"
+      ],
+      "explanation_markdown": "位移记录物体从初位置到末位置的有向差，不关心中途绕了多少路。它的方向从起点指向终点，因此回到原点时位移可以为零。可写成 $\\Delta\\mathbf r=\\mathbf r_2-\\mathbf r_1$，其中$\\mathbf r_1$ 与 $\\mathbf r_2$ 是初末位置矢量，$\\Delta\\mathbf r$ 是二者差。\n\n位移是矢量，能直接进入速度、加速度和功的表达；它不同于路程，后者沿实际轨迹累加。选定参考系和坐标原点后，位移的分量才有具体数值，但它表示的几何差不随坐标写法而改变。它还决定平均速度的方向，在多维运动中比单个坐标差更稳妥。实验记录轨迹时，常先用位置矢量求各段位移，再判断整体迁移是否抵消。使用位移时要同时交代参考系、正方向和时间区间，否则同一运动会得到不同数值。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "位移",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%8D%E7%A7%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "位移",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%8D%E7%A7%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "displacement",
+          "url": "https://en.wikipedia.org/w/index.php?search=displacement"
+        }
       ]
     },
     {
@@ -35,6 +53,24 @@
         "Δr=r2-r1 s x-t图",
         "起末点 轨迹 坐标",
         "path length"
+      ],
+      "explanation_markdown": "路程是物体实际经过轨迹的长度总和，只计大小，不带方向。即使物体绕一圈回到出发点，路程仍等于整条路径长度。常见公式是 $s=\\int_{t_1}^{t_2}|\\mathbf v|\\,dt$，其中$s$ 是路程，$\\mathbf v$ 是瞬时速度，积分把每一小段走过的长度累加起来。\n\n路程适合讨论耗时、耗能和平均速率，却不能单独给出运动方向。它依赖轨迹而不只依赖初末位置，因此在曲线运动、往返运动和里程计读数中比位移更贴近实际行走距离。在能量耗散、里程统计和平均速率中，路程比位移更直接。它不能通过矢量相减得到，必须知道路径细节；路径越弯曲，路程与位移差别通常越大。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "路程",
+          "url": "https://www.baidu.com/s?wd=%E8%B7%AF%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "路程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B7%AF%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "path length",
+          "url": "https://en.wikipedia.org/w/index.php?search=path%20length"
+        }
       ]
     },
     {
@@ -53,6 +89,24 @@
         "Δr=r2-r1 s x-t图",
         "起末点 轨迹 坐标",
         "position vector"
+      ],
+      "explanation_markdown": "位置矢量从选定原点指向物体所在点，把空间位置写成一个有方向的几何对象。改变原点会改变位置矢量本身，但两点之差给出的位移不变。数学表达为 $\\mathbf r=x\\mathbf e_x+y\\mathbf e_y+z\\mathbf e_z$，其中$x,y,z$ 是坐标分量，$\\mathbf e_x,\\mathbf e_y,\\mathbf e_z$ 是坐标轴单位矢量。\n\n它是速度、角动量和力矩等量的基础，因为这些量都需要知道物体相对某点在哪里。使用位置矢量时必须说明参考点；在中心力、圆周运动和质心计算中，这个参考点往往决定公式的物理含义。在极坐标或柱坐标中，同一位置会换成不同分量，但矢量指向的空间点不变。中心力问题常把原点放在力心，因为这样径向方向和物理对称性一致。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "位置矢量",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%8D%E7%BD%AE%E7%9F%A2%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "位置矢量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%8D%E7%BD%AE%E7%9F%A2%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "position vector",
+          "url": "https://en.wikipedia.org/w/index.php?search=position%20vector"
+        }
       ]
     },
     {
@@ -71,6 +125,24 @@
         "x'=x-vt 惯性项",
         "车内 地面 转台",
         "reference frame"
+      ],
+      "explanation_markdown": "参考系给运动指定观察者、坐标尺和时钟；没有参考系，静止、速度和轨迹都没有唯一含义。同一辆车在地面和车厢中会有不同速度读数。对应关系可写为 $x'=x-ut,\\ t'=t$，其中$u$ 是两个惯性系的相对速度，$x,t$ 与 $x',t'$ 是同一事件在两系中的读数。\n\n低速力学中常用伽利略变换连接惯性系，时间在各系中相同。若参考系加速或转动，牛顿第二定律要加入惯性力；因此参考系不是装饰性选择，而会改变受力图像和简化程度。选择参考系常是建模的第一步，例如分析车内小球可取车厢系，分析地面轨迹可取地面系。不同参考系给出不同中间量，但可观测结论应能相互转换。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "参考系",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%82%E8%80%83%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "参考系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%82%E8%80%83%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "reference frame",
+          "url": "https://en.wikipedia.org/w/index.php?search=reference%20frame"
+        }
       ]
     },
     {
@@ -89,6 +161,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "particle"
+      ],
+      "explanation_markdown": "质点把物体的大小、形状和转动暂时忽略，只保留质量和位置。当地球绕太阳运动时，若只关心轨道尺度，地球就可近似为质点。一个方便的写法是 $m\\ddot{\\mathbf r}=\\mathbf F$，其中$m$ 是质量，$\\mathbf r$ 是质点位置，$\\mathbf F$ 是合外力，点上两点表示对时间求二阶导数。\n\n这个模型适合物体尺寸远小于运动尺度、内部形变不重要的情形。若要研究车轮滚动、杆的转动或碰撞时的形变，质点近似就不够，需要刚体或连续介质模型。质点近似并不要求物体真的很小，而要求转动和形变对所问量影响很小。列车在站间运行可当质点，研究车轮受力时就不能这样简化。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "质点",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%A8%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "质点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%A8%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "particle",
+          "url": "https://en.wikipedia.org/w/index.php?search=particle"
+        }
       ]
     },
     {
@@ -107,6 +197,24 @@
         "Δr=r2-r1 s x-t图",
         "起末点 轨迹 坐标",
         "coordinate system"
+      ],
+      "explanation_markdown": "坐标系给空间中的点和矢量安排数值标签，使几何关系能被计算。直角坐标便于分量独立，极坐标则更贴近圆周和中心力问题。定量上有 $\\mathbf r=\\sum_i x_i\\mathbf e_i$，其中$x_i$ 是坐标分量，$\\mathbf e_i$ 是对应基矢，求和表示沿各基方向合成位置。\n\n坐标系的选择不应改变真实物理量，只改变表达形式。好的坐标能利用对称性减少方程数；例如斜面取沿面和垂面方向，圆周运动取径向和切向方向，都会让约束更清楚。坐标轴方向和正方向会影响分量符号，也影响方程外观。曲线轨迹常用自然坐标，转动问题常用极坐标；坐标选得贴近对称性，计算会少很多。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "坐标系",
+          "url": "https://www.baidu.com/s?wd=%E5%9D%90%E6%A0%87%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "坐标系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9D%90%E6%A0%87%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "coordinate system",
+          "url": "https://en.wikipedia.org/w/index.php?search=coordinate%20system"
+        }
       ]
     },
     {
@@ -125,6 +233,24 @@
         "x-t图 v-t图 参数方程",
         "轨迹 图像",
         "motion"
+      ],
+      "explanation_markdown": "运动是物体位置随时间改变的过程，也包括速度方向改变而位置连续变化的情形。它不是单个时刻的状态，而是一条带时间标记的轨迹。通常记作 $\\mathbf r=\\mathbf r(t)$，其中$\\mathbf r(t)$ 是时刻 $t$ 的位置矢量，函数形式给出完整运动学描述。\n\n知道运动函数后，可以通过求导得到速度和加速度，也可以反过来由加速度积分恢复轨迹。实际描述运动时，参考系、初始条件和约束同样重要；缺少其中任何一项，运动图像都会不完整。运动学曲线可用图像、参数方程或传感器数据表示。它的完整描述不仅要给路径，还要给每个时刻的位置；同一路径用不同速度走过，是不同运动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "运动",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=motion"
+        }
       ]
     },
     {
@@ -143,6 +269,24 @@
         "v=Δx/Δt dx/dt v-t图",
         "时间 路程 方向",
         "velocity"
+      ],
+      "explanation_markdown": "速度给出位置变化的瞬时方向和快慢，是带方向的运动状态量。它沿轨迹切线方向，大小等于速率。在这种约定下有 $\\mathbf v=d\\mathbf r/dt$，其中$\\mathbf v$ 是速度，$\\mathbf r$ 是位置矢量，$t$ 是时间。\n\n速度比“每秒走多远”多了方向信息，因此两物体速率相同也可能速度不同。在相对运动、碰撞和功率计算中，速度方向直接影响结果；图像上它对应位置-时间曲线的切线斜率。速度方向瞬时沿轨迹切线，因此它能判断物体下一瞬间趋向哪里。速度为零不代表加速度为零，例如抛体最高点仍受重力加速。在多维运动里，速度的方向信息尤其重要，单看某一坐标分量可能遮蔽整体几何。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "速度",
+          "url": "https://www.baidu.com/s?wd=%E9%80%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "速度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%80%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "velocity",
+          "url": "https://en.wikipedia.org/w/index.php?search=velocity"
+        }
       ]
     },
     {
@@ -161,6 +305,24 @@
         "v=Δx/Δt dx/dt v-t图",
         "时间 路程 方向",
         "speed"
+      ],
+      "explanation_markdown": "速率只表示运动快慢，不记录朝向，是速度矢量的大小。汽车表盘读数通常是速率而不是速度。可写成 $v=|\\mathbf v|=ds/dt$，其中$v$ 是速率，$\\mathbf v$ 是速度矢量，$s$ 是沿轨迹的路程。\n\n速率适合讨论路程累积、耗时和分子运动强度，但不能判断物体向哪里运动。圆周运动中速率可保持不变，速度却因方向不断改变而持续变化，这正是区分二者的典型例子。速率常由路程对时间的变化率获得，因此适合和里程计读数相连。分子动理论中也常讨论速率分布，因为分子方向杂乱，矢量平均速度反而可能为零。使用速率时要同时交代参考系、正方向和时间区间，否则同一运动会得到不同数值。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "速率",
+          "url": "https://www.baidu.com/s?wd=%E9%80%9F%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "速率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%80%9F%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "speed",
+          "url": "https://en.wikipedia.org/w/index.php?search=speed"
+        }
       ]
     },
     {
@@ -179,6 +341,24 @@
         "v=Δx/Δt dx/dt v-t图",
         "时间 路程 方向",
         "average velocity"
+      ],
+      "explanation_markdown": "平均速度用一段时间内的位移除以时间，等效为把复杂运动替换成同起点同终点的匀速直线运动。它保留方向，只看初末位置。常见公式是 $\\bar{\\mathbf v}=\\Delta\\mathbf r/\\Delta t$，其中$\\bar{\\mathbf v}$ 是平均速度，$\\Delta\\mathbf r$ 是位移，$\\Delta t$ 是时间间隔。\n\n往返运动的平均速度可能为零，即使路程很长。它适合概括一段过程的整体迁移效果，却不能反映中途快慢变化；若时间间隔缩短到极限，才过渡到瞬时速度。平均速度把一段运动压缩成一个矢量，适合比较整体迁移。它可能与任意时刻的瞬时速度都不同，例如先快后慢或折返运动时尤其明显。平均速度常从实验轨迹或传感器数据中读出，随后才进入速度、加速度等派生量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平均速度",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E5%9D%87%E9%80%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平均速度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E5%9D%87%E9%80%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "average velocity",
+          "url": "https://en.wikipedia.org/w/index.php?search=average%20velocity"
+        }
       ]
     },
     {
@@ -197,6 +377,24 @@
         "v=Δx/Δt dx/dt v-t图",
         "时间 路程 方向",
         "instantaneous velocity"
+      ],
+      "explanation_markdown": "瞬时速度刻画某一时刻物体沿轨迹切线运动的方向和快慢。它来自平均速度在极短时间间隔下的极限。数学表达为 $\\mathbf v=\\lim_{\\Delta t\\to0}\\Delta\\mathbf r/\\Delta t$，其中$\\Delta\\mathbf r$ 是短时间内位移，$\\Delta t$ 是对应时间间隔。\n\n微积分使“某一瞬间的变化率”有了严格含义。瞬时速度可由位置函数求导得到，也可由实验中足够短时间内的位移近似；它是进一步求加速度、动量和动能的入口。在实验中只能用很短时间内的平均速度近似瞬时速度，时间窗太大会抹掉细节，太小又受测量误差影响。它是微积分进入运动学的核心量。瞬时速度只整理物体怎样运动，不直接说明为什么这样运动，因此常先于受力模型建立。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "瞬时速度",
+          "url": "https://www.baidu.com/s?wd=%E7%9E%AC%E6%97%B6%E9%80%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "瞬时速度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9E%AC%E6%97%B6%E9%80%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "instantaneous velocity",
+          "url": "https://en.wikipedia.org/w/index.php?search=instantaneous%20velocity"
+        }
       ]
     },
     {
@@ -215,6 +413,24 @@
         "v=Δx/Δt dx/dt v-t图",
         "时间 路程 方向",
         "average speed"
+      ],
+      "explanation_markdown": "平均速率把总路程除以总时间，反映一段运动总体上走得多快。它不关心方向，也不因往返抵消而变小。对应关系可写为 $\\bar v=s/\\Delta t$，其中$\\bar v$ 是平均速率，$s$ 是总路程，$\\Delta t$ 是总用时。\n\n平均速率常用于行程、流量和实验计时，但不能替代平均速度。若物体绕圈回到起点，平均速度为零，平均速率仍为正；这个差别正来自路程和位移的不同定义。平均速率适合回答全程跑得快不快，却无法判断最终朝向。交通测速、流水线节拍和旅行时间估算常用它；若分段速率不同，不能简单取速度数值平均。在多维运动里，平均速率的方向信息尤其重要，单看某一坐标分量可能遮蔽整体几何。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平均速率",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E5%9D%87%E9%80%9F%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平均速率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E5%9D%87%E9%80%9F%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "average speed",
+          "url": "https://en.wikipedia.org/w/index.php?search=average%20speed"
+        }
       ]
     },
     {
@@ -233,6 +449,24 @@
         "v=Δx/Δt dx/dt v-t图",
         "时间 路程 方向",
         "instantaneous speed"
+      ],
+      "explanation_markdown": "瞬时速率是某一时刻速度的大小，可理解为速度计在那一瞬间显示的读数。它只告诉快慢，不告诉方向。一个方便的写法是 $v=ds/dt$，其中$v$ 是瞬时速率，$s$ 是沿轨迹累积的路程，$t$ 是时间。\n\n在曲线运动中，瞬时速率与切向加速度直接相关；法向加速度只改方向，不改它的大小。分子动理论、交通测速和圆周运动都常只需要速率而非完整速度矢量。瞬时速率是速度大小，所以一定非负。匀速圆周运动中它恒定，而速度方向和加速度持续变化；这类例子最能体现速率与速度的分工。使用瞬时速率时要同时交代参考系、正方向和时间区间，否则同一运动会得到不同数值。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "瞬时速率",
+          "url": "https://www.baidu.com/s?wd=%E7%9E%AC%E6%97%B6%E9%80%9F%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "瞬时速率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9E%AC%E6%97%B6%E9%80%9F%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "instantaneous speed",
+          "url": "https://en.wikipedia.org/w/index.php?search=instantaneous%20speed"
+        }
       ]
     },
     {
@@ -251,6 +485,24 @@
         "a=dv/dt an=v²/r",
         "转弯半径 斜率",
         "acceleration"
+      ],
+      "explanation_markdown": "加速度表示速度矢量随时间变化的快慢，既包括速率改变，也包括方向改变。匀速圆周运动虽然速率不变，仍有指向圆心的加速度。定量上有 $\\mathbf a=d\\mathbf v/dt=d^2\\mathbf r/dt^2$，其中$\\mathbf a$ 是加速度，$\\mathbf v$ 是速度，$\\mathbf r$ 是位置矢量。\n\n它是牛顿第二定律中的运动响应量，方向由合外力决定。沿速度方向的分量改变快慢，垂直速度方向的分量改变轨迹弯曲；把二者分开能清楚处理抛体、圆周和一般曲线运动。加速度由合外力决定，但不一定和速度同向。竖直上抛物体向上运动时加速度向下，说明加速度描述速度如何变，而不是物体正在朝哪里走。加速度常从实验轨迹或传感器数据中读出，随后才进入速度、加速度等派生量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "加速度",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%A0%E9%80%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "加速度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%A0%E9%80%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "acceleration",
+          "url": "https://en.wikipedia.org/w/index.php?search=acceleration"
+        }
       ]
     },
     {
@@ -269,6 +521,24 @@
         "a=dv/dt an=v²/r",
         "转弯半径 斜率",
         "tangential acceleration"
+      ],
+      "explanation_markdown": "切向加速度沿轨迹切线方向，专门衡量速率增加或减少的程度。它不直接改变速度方向，而改变物体沿路径前进的快慢。通常记作 $a_t=dv/dt$，其中$a_t$ 是切向加速度，$v$ 是速率，$t$ 是时间。\n\n汽车踩油门或刹车时主要体现切向加速度。若 $a_t$ 为零，物体可仍然转弯，因为法向加速度会改变方向；因此曲线运动中常把加速度拆成切向与法向两部分。它可为正也可为负，取决于速率增加还是减小。高速列车进站时主要有负切向加速度；若同时转弯，还要叠加法向部分来给出总加速度。切向加速度只整理物体怎样运动，不直接说明为什么这样运动，因此常先于受力模型建立。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "切向加速度",
+          "url": "https://www.baidu.com/s?wd=%E5%88%87%E5%90%91%E5%8A%A0%E9%80%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "切向加速度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%87%E5%90%91%E5%8A%A0%E9%80%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tangential acceleration",
+          "url": "https://en.wikipedia.org/w/index.php?search=tangential%20acceleration"
+        }
       ]
     },
     {
@@ -287,6 +557,24 @@
         "a=dv/dt an=v²/r",
         "转弯半径 斜率",
         "normal acceleration"
+      ],
+      "explanation_markdown": "法向加速度指向轨迹曲率中心，用来改变速度方向而不是速率大小。物体沿弯道运动时，即使表盘速率不变，也需要法向加速度。在这种约定下有 $a_n=v^2/R$，其中$a_n$ 是法向加速度，$v$ 是速率，$R$ 是轨迹在该点的曲率半径。\n\n半径越小或速率越大，方向改变越剧烈，所需向心作用也越大。它在圆周运动、车辆转弯和天体轨道中都很常见；若轨迹为直线，曲率半径趋于无穷，法向加速度消失。法向加速度不做改变速率的工作，却要求真实力提供径向分量。弯道设计、飞行转弯和绳球运动都要限制它，否则乘客或绳子承受的力会过大。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "法向加速度",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%95%E5%90%91%E5%8A%A0%E9%80%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "法向加速度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%95%E5%90%91%E5%8A%A0%E9%80%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "normal acceleration",
+          "url": "https://en.wikipedia.org/w/index.php?search=normal%20acceleration"
+        }
       ]
     },
     {
@@ -305,6 +593,24 @@
         "Δr=r2-r1 s x-t图",
         "起末点 轨迹 坐标",
         "angular displacement"
+      ],
+      "explanation_markdown": "角位移记录转动物体相对某轴或某点转过的有向角度。它关注方向改变而不是弧长本身，弧长还要乘以半径。可写成 $\\Delta\\theta=\\theta_2-\\theta_1$，其中$\\theta_1$ 与 $\\theta_2$ 是初末角位置，$\\Delta\\theta$ 是角位置变化。\n\n角位移通常用弧度表示，这样 $s=R\\theta$ 可直接连接角量和线量。它的正负取决于约定转向；在定轴刚体中，物体各点角位移相同，但经过的弧长随半径不同。角位移用弧度时没有量纲，便于和弧长、角速度相连。刚体定轴转动中，各点角位移相同，但半径大的点线位移更长。在圆周或转动情形中，角位移把弧长变化与角量相连，便于处理周期性。若半径固定，角位移常可同线量互换；半径变化时则要保留完整几何关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "角位移",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%92%E4%BD%8D%E7%A7%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "角位移",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%92%E4%BD%8D%E7%A7%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "angular displacement",
+          "url": "https://en.wikipedia.org/w/index.php?search=angular%20displacement"
+        }
       ]
     },
     {
@@ -323,6 +629,24 @@
         "ω=dθ/dt ω=2π/T",
         "转角 周期 转速",
         "angular velocity"
+      ],
+      "explanation_markdown": "角速度给出角位置变化的快慢，描述物体绕轴转动得多快以及按哪个方向转。对定轴转动，它可看作沿转轴的矢量。常见公式是 $\\omega=d\\theta/dt$，其中$\\omega$ 是角速度，$\\theta$ 是角位置，$t$ 是时间。\n\n角速度把转动与平动联系起来，圆周上某点的线速度满足 $v=\\omega R$。在周期运动中还常写作 $\\omega=2\\pi/T$；若转轴或转向改变，角速度的矢量方向也必须随之说明。角速度的方向按右手定则沿转轴，能区分顺逆转。机器转速常用每分钟转数表示，换算到物理公式时要转为弧度每秒。若半径固定，角速度常可同线量互换；半径变化时则要保留完整几何关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "角速度",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%92%E9%80%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "角速度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%92%E9%80%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "angular velocity",
+          "url": "https://en.wikipedia.org/w/index.php?search=angular%20velocity"
+        }
       ]
     },
     {
@@ -341,6 +665,24 @@
         "α=dω/dt θ公式",
         "时间变化",
         "angular acceleration"
+      ],
+      "explanation_markdown": "角加速度衡量角速度随时间的变化，反映转动快慢正在增加、减少或改变方向。它是转动中对应平动加速度的量。数学表达为 $\\alpha=d\\omega/dt$，其中$\\alpha$ 是角加速度，$\\omega$ 是角速度，$t$ 是时间。\n\n定轴转动中，恒定角加速度会产生与匀变速直线运动相似的角运动公式。它受合力矩和转动惯量控制；同样的力矩作用在更大转动惯量的物体上，角加速度更小。角加速度为零时，转动可以仍然很快，只是角速度不再改变。电机启动、刹车盘减速和飞轮加速都需要用它描述转速变化过程。角加速度要说明转轴和正转方向；换轴后半径、角量和向心项都会随模型重写。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "角加速度",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%92%E5%8A%A0%E9%80%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "角加速度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%92%E5%8A%A0%E9%80%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "angular acceleration",
+          "url": "https://en.wikipedia.org/w/index.php?search=angular%20acceleration"
+        }
       ]
     },
     {
@@ -359,6 +701,24 @@
         "x-t图 v-t图 参数方程",
         "轨迹 图像",
         "rectilinear motion"
+      ],
+      "explanation_markdown": "直线运动的轨迹限制在一条固定直线上，空间问题可化为沿该直线的一个坐标。方向只有正负之分，几何结构最简单。对应关系可写为 $\\mathbf r(t)=x(t)\\mathbf e$，其中$\\mathbf e$ 是固定直线方向的单位矢量，$x(t)$ 是沿线坐标。\n\n自由落体、滑块沿直轨运动和一维振动都可归入直线运动。它允许用图像斜率和面积直接理解速度、加速度和位移；若物体偏离直线或方向连续转弯，就需要曲线运动语言。一维模型常把矢量方程化成带符号的标量方程，但正负号仍代表方向。若轨迹稍有弯曲但偏离很小，可在短时间内近似为直线运动。在多维运动里，直线运动的方向信息尤其重要，单看某一坐标分量可能遮蔽整体几何。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "直线运动",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B4%E7%BA%BF%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "直线运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B4%E7%BA%BF%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "rectilinear motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=rectilinear%20motion"
+        }
       ]
     },
     {
@@ -377,6 +737,24 @@
         "x-t图 v-t图 参数方程",
         "轨迹 图像",
         "curvilinear motion"
+      ],
+      "explanation_markdown": "曲线运动中速度方向随位置改变，轨迹不再是一条固定直线。即使速率恒定，速度矢量也会因切线方向变化而改变。一个方便的写法是 $\\mathbf a=a_t\\mathbf t+a_n\\mathbf n$，其中$\\mathbf t$ 与 $\\mathbf n$ 是切向和法向单位矢量，$a_t,a_n$ 是对应分量。\n\n这种分解把快慢变化和转弯变化分开，适合处理抛体、圆周和轨道运动。曲线形状由初速度、外力和约束共同决定；只知道速率大小，不能确定轨迹。曲线运动需要不断更新速度方向，因而天然适合用矢量或切向法向坐标。只给出曲线方程还不够，还要说明物体沿曲线怎样随时间推进。使用曲线运动时要同时交代参考系、正方向和时间区间，否则同一运动会得到不同数值。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "曲线运动",
+          "url": "https://www.baidu.com/s?wd=%E6%9B%B2%E7%BA%BF%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "曲线运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9B%B2%E7%BA%BF%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "curvilinear motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=curvilinear%20motion"
+        }
       ]
     },
     {
@@ -395,6 +773,24 @@
         "x-t图 v-t图 参数方程",
         "轨迹 图像",
         "uniform motion"
+      ],
+      "explanation_markdown": "匀速运动保持速率不变，但速度方向可以改变。沿直线匀速时速度矢量恒定，沿圆周匀速时速度方向持续旋转。定量上有 $|\\mathbf v|=\\mathrm{const}$，其中$\\mathbf v$ 是速度矢量，竖线表示取其大小即速率。\n\n它强调快慢恒定，而不是一定没有加速度。匀速圆周运动具有法向加速度，匀速直线运动才满足加速度为零；区分这两种情况能避免把速率恒定误读成速度恒定。匀速只约束速率，不约束受力是否为零。若运动方向改变，必有垂直速度的加速度；因此判断匀速圆周运动时不能把它当作平衡状态。匀速运动常从实验轨迹或传感器数据中读出，随后才进入速度、加速度等派生量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "匀速运动",
+          "url": "https://www.baidu.com/s?wd=%E5%8C%80%E9%80%9F%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "匀速运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8C%80%E9%80%9F%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "uniform motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=uniform%20motion"
+        }
       ]
     },
     {
@@ -413,6 +809,24 @@
         "x-t图 v-t图 参数方程",
         "轨迹 图像",
         "variable motion"
+      ],
+      "explanation_markdown": "变速运动的速率随时间改变，物体在相同时间内走过的路程不再相等。它常由沿速度方向的合力或约束变化引起。通常记作 $d|\\mathbf v|/dt\\ne0$，其中$\\mathbf v$ 是速度矢量，$t$ 是时间，左式表示速率的时间变化率。\n\n变速并不必然意味着轨迹弯曲；电梯上升加速和汽车直线刹车都可以是一维变速。若方向也改变，则需要同时考虑切向和法向加速度。变速运动常在速度时间图像中表现为曲线或斜线。判断能量变化时，速率改变对应动能改变；但方向改变而速率不变的运动不属于通常所说变速。变速运动只整理物体怎样运动，不直接说明为什么这样运动，因此常先于受力模型建立。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "变速运动",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%98%E9%80%9F%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "变速运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%98%E9%80%9F%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "variable motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=variable%20motion"
+        }
       ]
     },
     {
@@ -431,6 +845,24 @@
         "x-t图 v-t图 参数方程",
         "轨迹 图像",
         "accelerating motion"
+      ],
+      "explanation_markdown": "加速运动通常指速率随时间增大的过程，而不只是加速度不为零。关键是加速度在速度方向上有正分量。在这种约定下有 $\\mathbf a\\cdot\\mathbf v>0$，其中$\\mathbf a$ 是加速度，$\\mathbf v$ 是速度，点乘为正说明二者夹角小于九十度。\n\n这个判据适用于曲线运动，因为它直接比较加速度与速度的方向关系。若加速度垂直速度，物体只转弯不加速；若点乘为负，速率反而减小。加速运动关注速率增加，所以同一加速度在不同速度方向下效果不同。物体转弯时若加速度略偏向前方，就会一边转弯一边加速。在多维运动里，加速运动的方向信息尤其重要，单看某一坐标分量可能遮蔽整体几何。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "加速运动",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%A0%E9%80%9F%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "加速运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%A0%E9%80%9F%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "accelerating motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=accelerating%20motion"
+        }
       ]
     },
     {
@@ -449,6 +881,24 @@
         "x-t图 v-t图 参数方程",
         "轨迹 图像",
         "decelerating motion"
+      ],
+      "explanation_markdown": "减速运动指速率随时间降低，常见于阻力、刹车或沿斜面上滑的过程。它要求加速度在速度方向上的分量为负。可写成 $\\mathbf a\\cdot\\mathbf v<0$，其中$\\mathbf a$ 是加速度，$\\mathbf v$ 是速度，点乘为负表示加速度含有反向分量。\n\n减速并不等于加速度大小变小，也不等于加速度方向固定向后。竖直上抛时加速度始终向下，上升阶段减速，下降阶段却加速；判断要看速度方向。减速阶段速度和加速度夹角大于九十度，但加速度大小可以很大。刹车距离不仅取决于初速，也取决于能提供多大的反向加速度。使用减速运动时要同时交代参考系、正方向和时间区间，否则同一运动会得到不同数值。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "减速运动",
+          "url": "https://www.baidu.com/s?wd=%E5%87%8F%E9%80%9F%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "减速运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%8F%E9%80%9F%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "decelerating motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=decelerating%20motion"
+        }
       ]
     },
     {
@@ -467,6 +917,24 @@
         "x-t图 v-t图 参数方程",
         "轨迹 图像",
         "uniform rectilinear motion"
+      ],
+      "explanation_markdown": "匀速直线运动同时满足轨迹为直线和速度矢量恒定，是惯性运动的最简单形式。物体在相等时间内通过相等位移。常见公式是 $x=x_0+vt$，其中$x_0$ 是初位置，$v$ 是恒定速度，$t$ 是时间，$x$ 是时刻位置。\n\n在惯性系中，合外力为零的质点会保持这种运动状态。它常作为复杂运动的局部近似或参照模型；若速度大小或方向任一改变，就不再是匀速直线运动。它是理想惯性运动，也是许多复杂运动的局部近似。实验中若速度时间图像为水平线，位置时间图像为直线，就能识别这种模型。匀速直线运动常从实验轨迹或传感器数据中读出，随后才进入速度、加速度等派生量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "匀速直线运动",
+          "url": "https://www.baidu.com/s?wd=%E5%8C%80%E9%80%9F%E7%9B%B4%E7%BA%BF%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "匀速直线运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8C%80%E9%80%9F%E7%9B%B4%E7%BA%BF%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "uniform rectilinear motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=uniform%20rectilinear%20motion"
+        }
       ]
     },
     {
@@ -485,6 +953,24 @@
         "x-t图 v-t图 参数方程",
         "轨迹 图像",
         "uniformly accelerated rectilinear motion"
+      ],
+      "explanation_markdown": "匀变速直线运动在一条直线上具有恒定加速度，速度随时间线性变化，位置随时间呈二次关系。数学表达为 $x=x_0+v_0t+\\frac12at^2$，其中$x_0$ 是初位置，$v_0$ 是初速度，$a$ 是恒定加速度。\n\n它适合近似自由落体、斜面滑动和恒力作用下的一维运动。公式依赖加速度恒定这一前提；若阻力随速度改变或外力随位置改变，就不能直接套用二次时间关系。速度时间图像在此模型中是直线，图像面积给位移。它把恒力作用和运动学公式联系起来，但若加速度随时间变化，就应改用积分形式。匀变速直线运动只整理物体怎样运动，不直接说明为什么这样运动，因此常先于受力模型建立。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "匀变速直线运动",
+          "url": "https://www.baidu.com/s?wd=%E5%8C%80%E5%8F%98%E9%80%9F%E7%9B%B4%E7%BA%BF%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "匀变速直线运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8C%80%E5%8F%98%E9%80%9F%E7%9B%B4%E7%BA%BF%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "uniformly accelerated rectilinear motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=uniformly%20accelerated%20rectilinear%20motion"
+        }
       ]
     },
     {
@@ -503,6 +989,24 @@
         "h=1/2gt² v=gt",
         "真空 忽略阻力",
         "free fall motion"
+      ],
+      "explanation_markdown": "自由落体是只受重力作用的竖直运动，空气阻力和浮力被忽略。不同质量物体在同一地点具有相同重力加速度。对应关系可写为 $y=y_0+v_0t-\\frac12gt^2$，其中$y_0$ 是初高度，$v_0$ 是竖直初速度，$g$ 是重力加速度。\n\n它是匀变速直线运动的特例，方向约定决定公式中 $g$ 的符号。真实物体在空气中下落会受到阻力，速度大时可能接近终端速度，此时自由落体模型只适用于阻力可忽略的阶段。自由落体中的加速度与质量无关，这来自重力和惯性质量的等比例关系。真空管落体实验能排除空气阻力，显示羽毛和金属球同加速度下落。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自由落体运动",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E7%94%B1%E8%90%BD%E4%BD%93%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自由落体运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E7%94%B1%E8%90%BD%E4%BD%93%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "free fall motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=free%20fall%20motion"
+        }
       ]
     },
     {
@@ -521,6 +1025,24 @@
         "x=v0x t y=v0y t-1/2gt²",
         "落点 飞行时间",
         "projectile motion"
+      ],
+      "explanation_markdown": "抛体运动是物体获得初速度后在重力作用下飞行的运动，忽略空气阻力时水平和竖直方向可分开处理。一个方便的写法是 $\\mathbf r=\\mathbf r_0+\\mathbf v_0t+\\frac12\\mathbf g t^2$，其中$\\mathbf r_0$ 是初位置，$\\mathbf v_0$ 是初速度，$\\mathbf g$ 是重力加速度。\n\n轨迹通常为抛物线，因为水平方向匀速而竖直方向匀加速。射程、最高点和飞行时间都来自初速度分解；若空气阻力显著，轨迹会偏离抛物线。抛体的水平和竖直分解只在重力竖直且空气阻力忽略时成立。若加上阻力，水平方向速度会衰减，轨迹不再关于最高点对称。使用抛体运动时要同时交代参考系、正方向和时间区间，否则同一运动会得到不同数值。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "抛体运动",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%9B%E4%BD%93%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "抛体运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%9B%E4%BD%93%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "projectile motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=projectile%20motion"
+        }
       ]
     },
     {
@@ -539,6 +1061,24 @@
         "x=v0x t y=v0y t-1/2gt²",
         "落点 飞行时间",
         "horizontal projectile motion"
+      ],
+      "explanation_markdown": "平抛运动的初速度水平，竖直初速度为零。忽略空气阻力时，水平匀速前进，竖直方向自由下落。定量上有 $x=v_0t,\\ y=\\frac12gt^2$，其中$v_0$ 是水平初速度，$g$ 是重力加速度，$x,y$ 是水平和竖直位移。\n\n它展示了运动独立性：水平运动不会改变下落时间，下落时间由高度决定。实验上常用平抛验证重力加速度和轨迹抛物线；若坐标向上取正，竖直公式的符号要相应调整。平抛常用于演示运动独立性：水平方向没有加速度，竖直方向与自由落体相同。桌面边缘飞出的物体落地时间由高度决定，而非水平速度决定。平抛运动常从实验轨迹或传感器数据中读出，随后才进入速度、加速度等派生量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平抛运动",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E6%8A%9B%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平抛运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E6%8A%9B%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "horizontal projectile motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=horizontal%20projectile%20motion"
+        }
       ]
     },
     {
@@ -557,6 +1097,24 @@
         "x=v0x t y=v0y t-1/2gt²",
         "落点 飞行时间",
         "oblique projectile motion"
+      ],
+      "explanation_markdown": "斜抛运动的初速度与水平面成角度，水平和竖直分量共同决定射程与最高点。忽略空气阻力时轨迹为抛物线。通常记作 $x=v_0\\cos\\theta\\,t,\\ y=v_0\\sin\\theta\\,t-\\frac12gt^2$，其中$v_0$ 是初速率，$\\theta$ 是抛射角，$g$ 是重力加速度。\n\n竖直分量控制上升时间和高度，水平分量控制同一时间内前进距离。在同一高度落回时，互余角可给出相同射程；实际弹道受空气阻力影响，会失去这种简单对称。斜抛最高点处竖直速度为零，但水平速度仍存在。它的射程、飞行时间和最大高度都由初速度分量决定，发射点与落点高度不同时公式会相应改变。斜抛运动只整理物体怎样运动，不直接说明为什么这样运动，因此常先于受力模型建立。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "斜抛运动",
+          "url": "https://www.baidu.com/s?wd=%E6%96%9C%E6%8A%9B%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "斜抛运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%96%9C%E6%8A%9B%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "oblique projectile motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=oblique%20projectile%20motion"
+        }
       ]
     },
     {
@@ -575,6 +1133,24 @@
         "v=ωr a=v²/r",
         "半径 周期",
         "circular motion"
+      ],
+      "explanation_markdown": "圆周运动把轨迹限制在固定圆上，物体到圆心距离保持不变。位置变化主要表现为角位置改变。在这种约定下有 $s=R\\theta$，其中$s$ 是弧长，$R$ 是半径，$\\theta$ 是用弧度表示的圆心角。\n\n圆周运动天然连接线量和角量：$v=R\\omega$，$a_n=v^2/R$。它可以是匀速的，也可以有切向加速度；约束力、万有引力或绳张力常提供所需向心作用。圆周运动的约束可能来自绳、轨道、重力或电磁力。若约束突然消失，物体不会沿半径飞出，而会沿当时切线方向继续运动。在圆周或转动情形中，圆周运动把弧长变化与角量相连，便于处理周期性。若半径固定，圆周运动常可同线量互换；半径变化时则要保留完整几何关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "圆周运动",
+          "url": "https://www.baidu.com/s?wd=%E5%9C%86%E5%91%A8%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "圆周运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9C%86%E5%91%A8%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "circular motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=circular%20motion"
+        }
       ]
     },
     {
@@ -593,6 +1169,24 @@
         "v=ωr a=v²/r",
         "半径 周期",
         "uniform circular motion"
+      ],
+      "explanation_markdown": "匀速圆周运动保持速率不变，但速度方向持续沿切线转动。它的加速度始终指向圆心，因此合力也必须有向心分量。可写成 $a_c=v^2/R=\\omega^2R$，其中$a_c$ 是向心加速度，$v$ 是速率，$R$ 是半径，$\\omega$ 是角速度。\n\n这种运动说明速率恒定不等于加速度为零。卫星近圆轨道、转盘边缘和绳系小球都可近似使用它；若角速度变化，还需加入切向加速度。这种运动的周期、频率和角速度彼此固定相关。向心加速度越大，所需向心力越大；在车辆转弯中，这个力通常由静摩擦提供。若半径固定，匀速圆周运动常可同线量互换；半径变化时则要保留完整几何关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "匀速圆周运动",
+          "url": "https://www.baidu.com/s?wd=%E5%8C%80%E9%80%9F%E5%9C%86%E5%91%A8%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "匀速圆周运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8C%80%E9%80%9F%E5%9C%86%E5%91%A8%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "uniform circular motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=uniform%20circular%20motion"
+        }
       ]
     },
     {
@@ -611,6 +1205,24 @@
         "v=Δx/Δt dx/dt v-t图",
         "时间 路程 方向",
         "relative velocity"
+      ],
+      "explanation_markdown": "相对速度表示一个物体在另一个物体看来运动得多快、朝哪里运动。它把两个速度放在同一参考系中相减。常见公式是 $\\mathbf v_{A/B}=\\mathbf v_A-\\mathbf v_B$，其中$\\mathbf v_{A/B}$ 是 $A$ 相对 $B$ 的速度，$\\mathbf v_A,\\mathbf v_B$ 是同一系中的速度。\n\n船渡河、追及和碰撞接近速度都依赖相对速度。只有先保证两个速度在同一参考系中表示，矢量相减才有意义；在低速经典力学中它符合伽利略速度叠加。相对速度还能决定两物体靠近或远离的速率。雨滴相对车窗的方向、船相对水流的速度、两球碰撞前的接近速度，都要用矢量差来判断。相对速度常从实验轨迹或传感器数据中读出，随后才进入速度、加速度等派生量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相对速度",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E5%AF%B9%E9%80%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相对速度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E5%AF%B9%E9%80%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "relative velocity",
+          "url": "https://en.wikipedia.org/w/index.php?search=relative%20velocity"
+        }
       ]
     },
     {
@@ -629,6 +1241,24 @@
         "x'=x-vt 惯性项",
         "车内 地面 转台",
         "galilean transformation"
+      ],
+      "explanation_markdown": "伽利略变换连接两个相对匀速运动的惯性系，保留绝对时间而改变空间坐标。它适用于速度远小于光速的经典情形。数学表达为 $\\mathbf r'=\\mathbf r-\\mathbf u t,\\ t'=t$，其中$\\mathbf u$ 是新系相对旧系速度，$\\mathbf r,t$ 与 $\\mathbf r',t'$ 是同一事件读数。\n\n变换后速度相差 $\\mathbf u$，加速度在两个惯性系中相同，所以牛顿第二定律形式保持不变。高速运动中时间不再绝对，需要洛伦兹变换取代它。伽利略变换保留长度和时间间隔的经典直觉。它解释了为什么匀速行驶车厢内的简单力学实验与静止地面上相同，也指出加速度在惯性系间不变。写伽利略变换时最好先说明基矢和原点，这能让速度、力矩或能量表达保持一致。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "伽利略变换",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%BD%E5%88%A9%E7%95%A5%E5%8F%98%E6%8D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "伽利略变换",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%BD%E5%88%A9%E7%95%A5%E5%8F%98%E6%8D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "galilean transformation",
+          "url": "https://en.wikipedia.org/w/index.php?search=galilean%20transformation"
+        }
       ]
     },
     {
@@ -647,6 +1277,24 @@
         "x'=x-vt 惯性项",
         "车内 地面 转台",
         "inertial frame"
+      ],
+      "explanation_markdown": "惯性系是自由物体保持静止或匀速直线运动的参考系。它为牛顿定律提供基本舞台，使合外力和加速度直接对应。对应关系可写为 $\\sum\\mathbf F=0\\Rightarrow\\mathbf v=\\mathrm{const}$，其中$\\sum\\mathbf F$ 是合外力，$\\mathbf v$ 是速度矢量。\n\n地面实验常近似取地球为惯性系，但精密测量会看见地球自转带来的偏差。判断一个系是否惯性，关键不是它是否静止，而是自由粒子是否出现无相互作用的加速。惯性系之间可以相对匀速运动，没有一个绝对静止的惯性系。实验中常把地面近似为惯性系，但长时间大尺度运动要考虑地球转动造成的偏差。惯性系常服务于简化对称性，例如让一个方向对准运动或受力的主方向。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "惯性系",
+          "url": "https://www.baidu.com/s?wd=%E6%83%AF%E6%80%A7%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "惯性系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%83%AF%E6%80%A7%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inertial frame",
+          "url": "https://en.wikipedia.org/w/index.php?search=inertial%20frame"
+        }
       ]
     },
     {
@@ -665,6 +1313,24 @@
         "x'=x-vt 惯性项",
         "车内 地面 转台",
         "non inertial frame"
+      ],
+      "explanation_markdown": "非惯性系相对惯性系加速或转动，自由物体在其中看起来会无故偏离匀速直线运动。为继续使用牛顿形式，需要引入惯性力。一个方便的写法是 $\\mathbf F_{\\rm in}=-m\\mathbf a_0$，其中$\\mathbf F_{\\rm in}$ 是平动加速系中的惯性力，$m$ 是质量，$\\mathbf a_0$ 是参考系加速度。\n\n车厢刹车、升降电梯和旋转转盘都常用非惯性系描述。惯性力不来自另一个物体的相互作用，而来自观察框架本身；旋转系中还会出现离心力和科里奥利力。非惯性系有时反而让约束更直观，例如在旋转系中分析随转盘静止的物体。代价是必须清楚标出惯性力，否则会把参考系效应误认为真实相互作用。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "非惯性系",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%9E%E6%83%AF%E6%80%A7%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "非惯性系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%9E%E6%83%AF%E6%80%A7%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "non inertial frame",
+          "url": "https://en.wikipedia.org/w/index.php?search=non%20inertial%20frame"
+        }
       ]
     },
     {
@@ -683,6 +1349,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "inertia"
+      ],
+      "explanation_markdown": "惯性是物体保持原有运动状态的倾向，表现为不愿轻易改变速度。质量越大，同样外力产生的加速度越小。定量上有 $\\mathbf F=m\\mathbf a$，其中$\\mathbf F$ 是合外力，$m$ 是惯性质量，$\\mathbf a$ 是加速度。\n\n惯性不是一种额外的力，而是物体对速度改变的响应性质。乘车突然刹车时人向前倾，是身体仍倾向保持原速度；在动力学中，质量正是量化这种倾向的参数。惯性越大，运动状态改变越困难，但保持运动不需要持续施力。太空中关闭发动机的飞船仍会近似匀速前进，这正是惯性的表现。惯性通常通过受力图进入运动方程，大小和方向都要同坐标分解保持一致。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "惯性",
+          "url": "https://www.baidu.com/s?wd=%E6%83%AF%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "惯性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%83%AF%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inertia",
+          "url": "https://en.wikipedia.org/w/index.php?search=inertia"
+        }
       ]
     },
     {
@@ -701,6 +1385,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "mass"
+      ],
+      "explanation_markdown": "质量在牛顿力学中量化物体的惯性，也决定它在引力场中受到重力的大小。它不是重量，重量会随引力环境改变。通常记作 $\\sum\\mathbf F=m\\mathbf a$，其中$m$ 是质量，$\\sum\\mathbf F$ 是合外力，$\\mathbf a$ 是加速度。\n\n同一物体在月球和地球上质量相同，但重力不同。低速力学里质量通常取常量；在碰撞、质心和能量计算中，质量既作为惯性参数，也作为组成系统的加权因子。质量还决定质心位置和动量大小，因此它在系统问题中常作为权重出现。普通力学中质量守恒近似成立，火箭这类变质量问题则要格外处理喷出物。质量适合连续接触或近似质点模型；若形变、转动显著，还要补充力矩或材料关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "质量",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%A8%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "质量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%A8%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mass",
+          "url": "https://en.wikipedia.org/w/index.php?search=mass"
+        }
       ]
     },
     {
@@ -719,6 +1421,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "force"
+      ],
+      "explanation_markdown": "力表示物体之间的相互作用，它能改变物体动量，也能造成形变。单独谈一个物体“有力”没有意义，必须说明施力者和受力者。在这种约定下有 $\\mathbf F=d\\mathbf p/dt$，其中$\\mathbf F$ 是力，$\\mathbf p$ 是动量，$t$ 是时间。\n\n在质量恒定时它化为 $\\mathbf F=m\\mathbf a$。力是矢量，合成时要按方向相加；接触力、重力、电磁力等来源不同，但进入动力学方程的方式相同。力可以通过接触产生，也可以像引力、电磁力那样远距离作用。画受力图时只画作用在研究对象上的力，不能把对象施加给别人的力画进去。应用力前应明确研究对象、接触面和方向约定，否则容易把不同物体上的作用混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "力",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "force",
+          "url": "https://en.wikipedia.org/w/index.php?search=force"
+        }
       ]
     },
     {
@@ -737,6 +1457,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "resultant force"
+      ],
+      "explanation_markdown": "合力是一组作用力的矢量和，它对质点平动的效果等同于所有力共同作用。合力为零时，各个力可以仍然存在。可写成 $\\mathbf F_{\\rm net}=\\sum_i\\mathbf F_i$，其中$\\mathbf F_{\\rm net}$ 是合力，$\\mathbf F_i$ 是第 $i$ 个作用力。\n\n合力决定质心或质点的加速度，但不能单独决定刚体转动，因为力矩还与作用点有关。受力分析中先找出所有真实相互作用，再按坐标方向求合力，可避免遗漏约束力。多个力平衡时合力为零，质点不会加速，但每个力仍可对接触面或绳产生实际影响。对于刚体，还要检查力矩，否则合力为零仍可能转动。合力通常通过受力图进入运动方程，大小和方向都要同坐标分解保持一致。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "合力",
+          "url": "https://www.baidu.com/s?wd=%E5%90%88%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "合力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%88%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "resultant force",
+          "url": "https://en.wikipedia.org/w/index.php?search=resultant%20force"
+        }
       ]
     },
     {
@@ -755,6 +1493,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "component force"
+      ],
+      "explanation_markdown": "分力是把一个力投影到选定方向后的部分，不是新的相互作用。它让斜向力能分别进入沿面、垂面或坐标轴方程。常见公式是 $F_x=\\mathbf F\\cdot\\mathbf e_x$，其中$F_x$ 是 $x$ 方向分力，$\\mathbf F$ 是原力，$\\mathbf e_x$ 是该方向单位矢量。\n\n分解方式取决于坐标选择，常按运动方向和约束方向来取。斜面上的重力分解为 $mg\\sin\\theta$ 与 $mg\\cos\\theta$，正是为了分别处理滑动趋势和支持力。分力没有脱离原力独立存在，改变坐标系会改变分力数值。分解后每个方向可分别列牛顿方程，这是处理二维和三维问题的基本技巧。分力适合连续接触或近似质点模型；若形变、转动显著，还要补充力矩或材料关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分力",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "component force",
+          "url": "https://en.wikipedia.org/w/index.php?search=component%20force"
+        }
       ]
     },
     {
@@ -773,6 +1529,24 @@
         "G=mg W=mg",
         "悬挂物 g",
         "gravity"
+      ],
+      "explanation_markdown": "重力是地球或其他天体对物体的引力在近地表的表现，方向近似竖直向下。它不同于质量，重力大小依赖当地引力场。数学表达为 $\\mathbf G=m\\mathbf g$，其中$\\mathbf G$ 是重力，$m$ 是质量，$\\mathbf g$ 是当地重力加速度。\n\n在近地小范围内，$\\mathbf g$ 常近似为常矢量，由此得到自由落体和重力势能公式。若高度变化很大或研究天体轨道，就应回到万有引力形式。重力方向严格说指向地球质心附近，并因地球自转和纬度略有变化。日常实验把它看成恒定竖直力，这一近似让抛体和摆的公式简单可用。应用重力前应明确研究对象、接触面和方向约定，否则容易把不同物体上的作用混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "重力",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8D%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "重力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8D%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gravity",
+          "url": "https://en.wikipedia.org/w/index.php?search=gravity"
+        }
       ]
     },
     {
@@ -791,6 +1565,24 @@
         "F=kx",
         "伸长 压缩 劲度系数",
         "elastic force"
+      ],
+      "explanation_markdown": "弹力来自物体形变后的恢复趋势，方向通常阻止形变继续增大。弹簧、绳、桌面对物体的支持都属于接触形变产生的作用。对应关系可写为 $\\mathbf F=-k\\mathbf x$，其中$k$ 是劲度系数，$\\mathbf x$ 是形变量，负号表示力指向恢复方向。\n\n胡克定律只适用于小形变和弹性范围，超过限度后力与形变量不再线性，甚至会永久变形。弹力常与约束条件一起出现，其大小未必事先已知。弹力的大小常由形变量或约束条件决定，而不是任意给定。桌面对物体的支持力也是弹性形变结果，只是形变量太小，通常不显式计算。弹力通常通过受力图进入运动方程，大小和方向都要同坐标分解保持一致。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弹力",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B9%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弹力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B9%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "elastic force",
+          "url": "https://en.wikipedia.org/w/index.php?search=elastic%20force"
+        }
       ]
     },
     {
@@ -809,6 +1601,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "tension"
+      ],
+      "explanation_markdown": "张力是绳、线或杆被拉紧时沿自身方向传递的拉力。理想轻绳中，同一段绳的张力大小通常处处相等。一个方便的写法是 $\\mathbf F_T=T\\mathbf e_s$，其中$T$ 是张力大小，$\\mathbf e_s$ 是沿绳方向的单位矢量。\n\n张力只能拉不能推，方向总沿绳指向离开受力物体的一端。滑轮和悬挂系统中，张力把多个物体的运动联系起来；若绳有质量或滑轮有摩擦，张力就可能沿绳改变。理想轻绳只能传递沿绳方向的拉力，不能抵抗弯曲。若绳跨过理想滑轮，张力大小可在两侧相同；有摩擦或滑轮转动惯量时则会不同。张力适合连续接触或近似质点模型；若形变、转动显著，还要补充力矩或材料关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "张力",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%A0%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "张力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%A0%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tension",
+          "url": "https://en.wikipedia.org/w/index.php?search=tension"
+        }
       ]
     },
     {
@@ -827,6 +1637,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "normal force"
+      ],
+      "explanation_markdown": "支持力是接触面阻止物体穿透表面而产生的法向作用。它来自微小形变和电磁相互作用的宏观结果。定量上有 $\\mathbf N=N\\mathbf n$，其中$N$ 是支持力大小，$\\mathbf n$ 是接触面的法向单位矢量。\n\n支持力大小不一定等于重力，斜面、加速电梯和曲面运动中都会改变。它属于约束力，方向由接触几何决定；若物体离开表面，支持力立即变为零。支持力与接触面垂直，因此在光滑面上只提供法向约束。曲面运动中，支持力还会参与向心力；若所需法向力为负，说明物体已经脱离表面。应用支持力前应明确研究对象、接触面和方向约定，否则容易把不同物体上的作用混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "支持力",
+          "url": "https://www.baidu.com/s?wd=%E6%94%AF%E6%8C%81%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "支持力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%94%AF%E6%8C%81%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "normal force",
+          "url": "https://en.wikipedia.org/w/index.php?search=normal%20force"
+        }
       ]
     },
     {
@@ -845,6 +1673,24 @@
         "f≤μsN f=μN",
         "粗糙面 临界 匀速拖动",
         "friction force"
+      ],
+      "explanation_markdown": "摩擦力沿接触面切向，阻碍相对滑动或相对滑动趋势。它来自表面微观粗糙和分子作用的综合效果。通常记作 $f_s\\le\\mu_sN,\\quad f_k=\\mu_kN$，其中$f_s$ 是静摩擦力，$f_k$ 是滑动摩擦力，$N$ 是正压力，$\\mu_s,\\mu_k$ 是摩擦因数。\n\n静摩擦会按需要调整到最大值以内，滑动摩擦通常近似为定值。摩擦既能耗散机械能，也能提供运动所需的约束，例如走路和车轮滚动都依赖静摩擦。摩擦力方向应相对接触面判断，而不是简单说与运动方向相反。滚动轮胎前进时，接地点静摩擦甚至可能与车辆运动方向相同。摩擦力通常通过受力图进入运动方程，大小和方向都要同坐标分解保持一致。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "摩擦力",
+          "url": "https://www.baidu.com/s?wd=%E6%91%A9%E6%93%A6%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "摩擦力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%91%A9%E6%93%A6%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "friction force",
+          "url": "https://en.wikipedia.org/w/index.php?search=friction%20force"
+        }
       ]
     },
     {
@@ -863,6 +1709,24 @@
         "f≤μsN f=μN",
         "粗糙面 临界 匀速拖动",
         "static friction force"
+      ],
+      "explanation_markdown": "静摩擦力作用在没有相对滑动的接触面上，用来阻止即将发生的滑动。它的方向与相对滑动趋势相反，而不一定与物体运动方向相反。在这种约定下有 $|\\mathbf f_s|\\le\\mu_sN$，其中$\\mathbf f_s$ 是静摩擦力，$\\mu_s$ 是静摩擦因数，$N$ 是正压力。\n\n静摩擦是自适应约束力，大小由平衡或动力学条件决定，只有达到最大静摩擦后才会开始滑动。纯滚动、斜面静止和传送带带动物体常由它实现。静摩擦能做正功、负功或不做功，取决于接触点运动情况。它常负责让物体和传送带共同加速，也负责让车轮在不打滑时滚动前进。静摩擦力适合连续接触或近似质点模型；若形变、转动显著，还要补充力矩或材料关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "静摩擦力",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%99%E6%91%A9%E6%93%A6%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "静摩擦力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%99%E6%91%A9%E6%93%A6%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "static friction force",
+          "url": "https://en.wikipedia.org/w/index.php?search=static%20friction%20force"
+        }
       ]
     },
     {
@@ -881,6 +1745,24 @@
         "f≤μsN f=μN",
         "粗糙面 临界 匀速拖动",
         "kinetic friction force"
+      ],
+      "explanation_markdown": "滑动摩擦力出现在两个接触面已经相对滑动时，方向总阻碍相对滑动。它通常把机械能转化为热和声。可写成 $f_k=\\mu_kN$，其中$f_k$ 是滑动摩擦力大小，$\\mu_k$ 是滑动摩擦因数，$N$ 是正压力。\n\n这个经验公式适用于许多干摩擦近似，但在润滑、很高速或表面复杂时会失效。与静摩擦不同，滑动摩擦大小常近似不随速度和接触面积改变。滑动摩擦通常产生热，使机械能减少。它的方向与接触面的相对滑动速度相反；即使物体整体向前运动，摩擦方向也要按相对滑动来判定。应用滑动摩擦力前应明确研究对象、接触面和方向约定，否则容易把不同物体上的作用混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "滑动摩擦力",
+          "url": "https://www.baidu.com/s?wd=%E6%BB%91%E5%8A%A8%E6%91%A9%E6%93%A6%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "滑动摩擦力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%BB%91%E5%8A%A8%E6%91%A9%E6%93%A6%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kinetic friction force",
+          "url": "https://en.wikipedia.org/w/index.php?search=kinetic%20friction%20force"
+        }
       ]
     },
     {
@@ -899,6 +1781,24 @@
         "f≤μsN f=μN",
         "粗糙面 临界 匀速拖动",
         "coefficient of friction"
+      ],
+      "explanation_markdown": "摩擦因数用一个无量纲数概括两接触面之间的粗糙和黏附程度。它不是单个物体的属性，而属于一对材料和表面状态。常见公式是 $\\mu=f/N$，其中$\\mu$ 是摩擦因数，$f$ 是摩擦力大小，$N$ 是正压力。\n\n静摩擦因数和滑动摩擦因数通常不同，前者对应最大静摩擦，后者对应已滑动时的近似比例。温度、污染、润滑和表面磨损都会改变它。摩擦因数是经验参数，通常需要实验测量。它与表观接触面积关系不强，但与材料、表面处理和润滑状态密切相关；静摩擦因数常大于滑动摩擦因数。摩擦因数通常通过受力图进入运动方程，大小和方向都要同坐标分解保持一致。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "摩擦因数",
+          "url": "https://www.baidu.com/s?wd=%E6%91%A9%E6%93%A6%E5%9B%A0%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "摩擦因数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%91%A9%E6%93%A6%E5%9B%A0%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "coefficient of friction",
+          "url": "https://en.wikipedia.org/w/index.php?search=coefficient%20of%20friction"
+        }
       ]
     },
     {
@@ -917,6 +1817,24 @@
         "ΣF=ma 等大反向",
         "受作用图 加速",
         "newtons first law"
+      ],
+      "explanation_markdown": "牛顿第一定律指出，若合外力为零，物体不会自己改变运动状态。它定义了惯性运动的基准，也帮助识别惯性参考系。数学表达为 $\\sum\\mathbf F=0\\Rightarrow d\\mathbf p/dt=0$，其中$\\sum\\mathbf F$ 是合外力，$\\mathbf p$ 是动量，$t$ 是时间。\n\n这条定律不是第二定律的简单特例，因为它同时说明“无力时怎样运动”和“什么参考系适合写牛顿方程”。在非惯性系里自由物体会显得加速，需要额外引入惯性力。这条定律也否定了“维持运动必须有力”的旧观念。力不是速度的原因，而是速度变化的原因；这一区分贯穿整个牛顿力学。牛顿第一定律适合连续接触或近似质点模型；若形变、转动显著，还要补充力矩或材料关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "牛顿第一定律",
+          "url": "https://www.baidu.com/s?wd=%E7%89%9B%E9%A1%BF%E7%AC%AC%E4%B8%80%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "牛顿第一定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%9B%E9%A1%BF%E7%AC%AC%E4%B8%80%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "newtons first law",
+          "url": "https://en.wikipedia.org/w/index.php?search=newtons%20first%20law"
+        }
       ]
     },
     {
@@ -935,6 +1853,24 @@
         "ΣF=ma 等大反向",
         "受作用图 加速",
         "newtons second law"
+      ],
+      "explanation_markdown": "牛顿第二定律给出合外力与运动变化之间的定量关系。对质量恒定的质点，力越大，加速度越大；质量越大，同样力造成的加速度越小。对应关系可写为 $\\sum\\mathbf F=m\\mathbf a$，其中$\\sum\\mathbf F$ 是合外力，$m$ 是质量，$\\mathbf a$ 是加速度。\n\n它只在惯性系中直接成立，方向也必须按矢量处理。更一般的形式是 $\\sum\\mathbf F=d\\mathbf p/dt$，适合质量变化或相对论前的动量观点；受力分析的核心就是找准合外力。它还要求把所有外力都合成后再与加速度对应，不能把某一个力单独等同于运动方向。约束力、摩擦力和重力都可能共同决定最终加速度。应用牛顿第二定律前应明确研究对象、接触面和方向约定，否则容易把不同物体上的作用混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "牛顿第二定律",
+          "url": "https://www.baidu.com/s?wd=%E7%89%9B%E9%A1%BF%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "牛顿第二定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%9B%E9%A1%BF%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "newtons second law",
+          "url": "https://en.wikipedia.org/w/index.php?search=newtons%20second%20law"
+        }
       ]
     },
     {
@@ -953,6 +1889,24 @@
         "ΣF=ma 等大反向",
         "受作用图 加速",
         "newtons third law"
+      ],
+      "explanation_markdown": "牛顿第三定律说明相互作用总成对出现：甲作用于乙的力与乙作用于甲的力大小相等、方向相反。它们作用在不同物体上，不能互相抵消。一个方便的写法是 $\\mathbf F_{12}=-\\mathbf F_{21}$，其中$\\mathbf F_{12}$ 是物体二对物体一的力，$\\mathbf F_{21}$ 是物体一对物体二的力。\n\n这条定律是区分内力和外力的基础。系统内部成对内力在总动量方程中相互抵消，因此动量守恒常从这里开始；但若涉及电磁场动量或非瞬时相互作用，表述要更谨慎。作用力和反作用力同时存在、性质相同，但作用对象不同。马拉车时车也拉马，车能前进是因为地面对车的摩擦属于外力。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "牛顿第三定律",
+          "url": "https://www.baidu.com/s?wd=%E7%89%9B%E9%A1%BF%E7%AC%AC%E4%B8%89%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "牛顿第三定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%9B%E9%A1%BF%E7%AC%AC%E4%B8%89%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "newtons third law",
+          "url": "https://en.wikipedia.org/w/index.php?search=newtons%20third%20law"
+        }
       ]
     },
     {
@@ -971,6 +1925,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "inertial force"
+      ],
+      "explanation_markdown": "惯性力是在非惯性系中人为加入的等效力，用来解释自由物体相对加速参考系的偏移。它不对应某个真实施力物体。定量上有 $\\mathbf F_{\\rm in}=-m\\mathbf a_0$，其中$m$ 是物体质量，$\\mathbf a_0$ 是参考系相对惯性系的平动加速度。\n\n电梯、刹车车厢和转动平台中，引入惯性力能把非惯性系里的运动写成类似平衡或牛顿第二定律的形式。它的大小和方向取决于参考系选择，换回惯性系后这项会消失。惯性力常可简化相对静止问题，例如加速电梯中的视重。它的出现提醒我们，参考系选择会改变受力图，但不能改变真实可观测的相对运动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "惯性力",
+          "url": "https://www.baidu.com/s?wd=%E6%83%AF%E6%80%A7%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "惯性力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%83%AF%E6%80%A7%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inertial force",
+          "url": "https://en.wikipedia.org/w/index.php?search=inertial%20force"
+        }
       ]
     },
     {
@@ -989,6 +1961,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "centrifugal force"
+      ],
+      "explanation_markdown": "离心力是在旋转参考系中出现的惯性力，方向背离转轴。站在转盘上看，静止物体似乎被向外甩，正是这种描述。通常记作 $\\mathbf F_{\\rm cf}=m\\omega^2\\mathbf r_\\perp$，其中$m$ 是质量，$\\omega$ 是参考系角速度，$\\mathbf r_\\perp$ 是到转轴的垂直位矢。\n\n它不是圆周运动所需的向心力；向心力是真实相互作用，指向圆心。离心力只在旋转系中使用，常用于分析转盘、离心机和地球自转造成的有效重力修正。离心力常被误认为真实向外作用，实际上惯性系中物体只是倾向保持切线方向运动。旋转系中使用它，可以把随转盘静止的物体写成径向平衡。应用离心力前应明确研究对象、接触面和方向约定，否则容易把不同物体上的作用混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "离心力",
+          "url": "https://www.baidu.com/s?wd=%E7%A6%BB%E5%BF%83%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "离心力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A6%BB%E5%BF%83%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "centrifugal force",
+          "url": "https://en.wikipedia.org/w/index.php?search=centrifugal%20force"
+        }
       ]
     },
     {
@@ -1007,6 +1997,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "centripetal force"
+      ],
+      "explanation_markdown": "向心力不是一种新的力，而是指向曲率中心、负责改变速度方向的合力分量。绳张力、重力、摩擦力都可能充当向心力。在这种约定下有 $F_c=mv^2/R$，其中$F_c$ 是向心合力大小，$m$ 是质量，$v$ 是速率，$R$ 是圆周半径。\n\n若这个指向中心的合力不足，物体就不能保持给定半径的圆周运动。建模时先找真实受力，再取其径向合量；把“向心力”画成额外独立力会导致重复计算。向心力这一名称表示功能而非来源，同一问题中不能再额外添加一个神秘向心力。绳球的向心力是张力，行星的向心力是引力。向心力通常通过受力图进入运动方程，大小和方向都要同坐标分解保持一致。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "向心力",
+          "url": "https://www.baidu.com/s?wd=%E5%90%91%E5%BF%83%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "向心力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%91%E5%BF%83%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "centripetal force",
+          "url": "https://en.wikipedia.org/w/index.php?search=centripetal%20force"
+        }
       ]
     },
     {
@@ -1025,6 +2033,24 @@
         "a=dv/dt an=v²/r",
         "转弯半径 斜率",
         "centripetal acceleration"
+      ],
+      "explanation_markdown": "向心加速度是速度方向改变造成的加速度，始终指向轨迹曲率中心。它可以存在于速率恒定的圆周运动中。可写成 $a_c=v^2/R=\\omega^2R$，其中$a_c$ 是向心加速度，$v$ 是速率，$R$ 是半径，$\\omega$ 是角速度。\n\n它衡量转弯的剧烈程度：速度越大、半径越小，方向改变越快。卫星轨道、车辆过弯和绳系小球都要由真实合力提供 $ma_c$，否则轨迹半径会改变。它始终垂直于瞬时速度，所以不改变速率。乘客转弯时感到侧向挤压，是身体需要相同向心加速度而由座椅或摩擦提供力。向心加速度适合连续接触或近似质点模型；若形变、转动显著，还要补充力矩或材料关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "向心加速度",
+          "url": "https://www.baidu.com/s?wd=%E5%90%91%E5%BF%83%E5%8A%A0%E9%80%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "向心加速度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%91%E5%BF%83%E5%8A%A0%E9%80%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "centripetal acceleration",
+          "url": "https://en.wikipedia.org/w/index.php?search=centripetal%20acceleration"
+        }
       ]
     },
     {
@@ -1043,6 +2069,24 @@
         "p=mv J=Δp",
         "碰前碰后 反冲 爆炸",
         "momentum"
+      ],
+      "explanation_markdown": "动量把质量和速度合成一个矢量，衡量物体保持运动以及在碰撞中传递运动的能力。质量大或速度大都会带来较大动量。常见公式是 $\\mathbf p=m\\mathbf v$，其中$\\mathbf p$ 是动量，$m$ 是质量，$\\mathbf v$ 是速度。\n\n动量的方向就是速度方向。它比速度更适合处理相互作用，因为力直接给出动量变化率；在外力冲量为零的系统中，总动量守恒，碰撞和爆炸问题常由此简化。动量是矢量守恒量，比动能更能反映碰撞方向信息。两物体动能相同但质量不同，动量可不同；这会影响碰撞后的速度分配。动量特别适合处理短时强相互作用，因为碰撞细节复杂时守恒量仍可保留整体信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "动量",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%A8%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "动量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%A8%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "momentum",
+          "url": "https://en.wikipedia.org/w/index.php?search=momentum"
+        }
       ]
     },
     {
@@ -1061,6 +2105,24 @@
         "p=mv J=Δp",
         "碰前碰后 反冲 爆炸",
         "impulse"
+      ],
+      "explanation_markdown": "冲量表示力在一段时间内的累积作用，关心的不只是力有多大，还包括持续多久。短时大力和长时小力可能给出相同冲量。数学表达为 $\\mathbf J=\\int_{t_1}^{t_2}\\mathbf F\\,dt$，其中$\\mathbf J$ 是冲量，$\\mathbf F$ 是力，积分区间从 $t_1$ 到 $t_2$。\n\n冲量直接等于动量变化，因此适合分析碰撞、打击和缓冲。安全气囊通过延长作用时间降低平均力，但总冲量由乘员动量变化决定；力-时间图像下的面积就是冲量。冲量关注力对时间的面积，因此峰值力不一定决定结果。缓冲垫、弯腿落地和安全带都通过延长作用时间来降低人体承受的平均力。使用冲量时要划定系统，外力冲量是否可忽略会直接决定守恒近似是否成立。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "冲量",
+          "url": "https://www.baidu.com/s?wd=%E5%86%B2%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "冲量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%86%B2%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "impulse",
+          "url": "https://en.wikipedia.org/w/index.php?search=impulse"
+        }
       ]
     },
     {
@@ -1079,6 +2141,24 @@
         "p=mv J=Δp",
         "碰前碰后 反冲 爆炸",
         "impulse momentum theorem"
+      ],
+      "explanation_markdown": "动量定理把合外力的时间累积与物体动量改变联系起来。它不要求力恒定，只要求把整个作用过程的冲量算清。对应关系可写为 $\\Delta\\mathbf p=\\mathbf J$，其中$\\Delta\\mathbf p$ 是动量变化，$\\mathbf J$ 是合外力冲量。\n\n这一定理特别适合短时强相互作用，因为碰撞细节常难以逐时求解。选取系统时，内力不改变系统总动量，外力冲量才决定总动量变化；这也是动量守恒的直接前提。它可用于单个物体，也可用于多个物体组成的系统。若只关心某一方向，动量定理也可投影到该方向，避开其他方向复杂的约束力。动量定理常在实验中由速度和质量反推，能把多物体运动压缩成总量关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "动量定理",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%A8%E9%87%8F%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "动量定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%A8%E9%87%8F%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "impulse momentum theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=impulse%20momentum%20theorem"
+        }
       ]
     },
     {
@@ -1097,6 +2177,24 @@
         "Ek=1/2mv² Ep=mgh W=Fscosθ",
         "高度 速度 效率",
         "law of conservation of momentum"
+      ],
+      "explanation_markdown": "动量守恒定律指出，若系统所受合外力冲量为零，总动量保持不变。系统内物体可以剧烈交换动量，但总和不变。一个方便的写法是 $\\sum_i\\mathbf p_i=\\mathrm{const}$，其中$\\mathbf p_i$ 是第 $i$ 个物体的动量，求和表示系统总动量。\n\n碰撞、反冲和爆炸都常用它，因为内力成对抵消。守恒条件不是“没有力”，而是外力冲量可忽略；在某一方向外力为零时，也可只在该方向使用动量守恒。守恒使用前要选定系统。把碰撞双方都包含进系统，接触内力会抵消；若只取其中一个物体，碰撞力就是外力，动量通常不守恒。动量守恒定律特别适合处理短时强相互作用，因为碰撞细节复杂时守恒量仍可保留整体信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "动量守恒定律",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%92%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "动量守恒定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%92%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "law of conservation of momentum",
+          "url": "https://en.wikipedia.org/w/index.php?search=law%20of%20conservation%20of%20momentum"
+        }
       ]
     },
     {
@@ -1115,6 +2213,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "center of mass"
+      ],
+      "explanation_markdown": "质心是系统质量分布的加权平均位置，整个系统的平动常可等效集中在这一点。对均匀规则物体，它常与几何中心重合。定量上有 $\\mathbf R=\\frac1M\\sum_i m_i\\mathbf r_i$，其中$\\mathbf R$ 是质心位置，$M$ 是总质量，$m_i,\\mathbf r_i$ 是各部分质量和位置。\n\n质心不一定落在物体材料内部，例如弯环的质心可在空处。它把多粒子系统的整体运动与内部运动分开，合外力只决定质心加速度，内部碰撞不改变质心运动规律。质心运动可代表系统整体平动，但不能描述内部转动和形变。跳水运动员空中翻转时，身体姿态复杂变化，质心仍近似沿抛物线运动。使用质心时要划定系统，外力冲量是否可忽略会直接决定守恒近似是否成立。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "质心",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%A8%E5%BF%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "质心",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%A8%E5%BF%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "center of mass",
+          "url": "https://en.wikipedia.org/w/index.php?search=center%20of%20mass"
+        }
       ]
     },
     {
@@ -1133,6 +2249,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "center of mass frame"
+      ],
+      "explanation_markdown": "质心系是以系统质心为原点并随质心平动的参考系。在这个系中，系统总动量为零，碰撞前后运动常呈现更对称的结构。通常记作 $\\sum_i m_i\\mathbf v'_i=0$，其中$m_i$ 是各部分质量，$\\mathbf v'_i$ 是相对质心系的速度。\n\n两体碰撞、散射和分解动能时常切换到质心系，因为整体平动被剥离，只剩内部相对运动。若质心系本身加速，它不是严格惯性系，但在无外力系统中可作为惯性系使用。在质心系中，两体碰撞前后的动量大小相等、方向相反，图像更简洁。实验室系与质心系的转换，是散射和粒子碰撞分析的常用工具。质心系常在实验中由速度和质量反推，能把多物体运动压缩成总量关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "质心系",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%A8%E5%BF%83%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "质心系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%A8%E5%BF%83%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "center of mass frame",
+          "url": "https://en.wikipedia.org/w/index.php?search=center%20of%20mass%20frame"
+        }
       ]
     },
     {
@@ -1151,6 +2285,24 @@
         "x-t图 v-t图 参数方程",
         "轨迹 图像",
         "theorem of center of mass motion"
+      ],
+      "explanation_markdown": "质心运动定理说明，多粒子系统的质心像一个质量等于总质量的质点一样受合外力运动。内部力只改变相对运动，不推动质心。在这种约定下有 $M\\ddot{\\mathbf R}=\\mathbf F_{\\rm ext}$，其中$M$ 是总质量，$\\mathbf R$ 是质心位置，$\\mathbf F_{\\rm ext}$ 是合外力。\n\n它把复杂系统的整体平动和内部形变分离开。火箭、爆炸碎片和人体跳跃都可用质心运动理解整体轨迹；若外力为零，质心保持匀速直线运动。这个定理说明内部爆炸不能改变系统质心运动。烟花碎片四散时，若忽略空气阻力，所有碎片的质心仍沿爆炸前轨迹前进。质心运动定理特别适合处理短时强相互作用，因为碰撞细节复杂时守恒量仍可保留整体信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "质心运动定理",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%A8%E5%BF%83%E8%BF%90%E5%8A%A8%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "质心运动定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%A8%E5%BF%83%E8%BF%90%E5%8A%A8%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "theorem of center of mass motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=theorem%20of%20center%20of%20mass%20motion"
+        }
       ]
     },
     {
@@ -1169,6 +2321,24 @@
         "p=mv J=Δp",
         "碰前碰后 反冲 爆炸",
         "collision"
+      ],
+      "explanation_markdown": "碰撞是物体在短时间内发生强相互作用的过程，接触力大而持续时间短。常把过程压缩为碰前和碰后状态比较。可写成 $\\mathbf p_{\\rm before}=\\mathbf p_{\\rm after}$，其中$\\mathbf p_{\\rm before}$ 与 $\\mathbf p_{\\rm after}$ 是系统碰撞前后的总动量。\n\n动量守恒通常比动能守恒更可靠，因为内力冲量相互抵消，而机械能可能转化为热、声或形变。若外力冲量不能忽略，例如地面摩擦很大，就不能直接使用总动量守恒。碰撞模型常忽略相互作用期间的位移，把复杂力过程压缩成冲量。若碰撞时间不短，或接触期间外力显著，简单碰前碰后处理就要修正。使用碰撞时要划定系统，外力冲量是否可忽略会直接决定守恒近似是否成立。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "碰撞",
+          "url": "https://www.baidu.com/s?wd=%E7%A2%B0%E6%92%9E%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "碰撞",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A2%B0%E6%92%9E"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "collision",
+          "url": "https://en.wikipedia.org/w/index.php?search=collision"
+        }
       ]
     },
     {
@@ -1187,6 +2357,24 @@
         "F=kx",
         "伸长 压缩 劲度系数",
         "elastic collision"
+      ],
+      "explanation_markdown": "弹性碰撞中，系统总动量和总动能都在碰撞前后保持不变。微观上能量暂时储存在弹性形变中，随后又回到宏观动能。常见公式是 $K_{\\rm before}=K_{\\rm after}$，其中$K_{\\rm before}$ 与 $K_{\\rm after}$ 是碰撞前后的系统总动能。\n\n理想钢球碰撞和稀薄气体分子碰撞常近似弹性。它比一般碰撞多一个动能条件，因此能确定更多未知量；若碰后有永久形变、发热或粘连，就不再是弹性碰撞。一维两球弹性碰撞可同时用动量和动能方程求解。等质量正碰时常出现速度交换，这是理想弹性模型的一个直观结果。弹性碰撞常在实验中由速度和质量反推，能把多物体运动压缩成总量关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弹性碰撞",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B9%E6%80%A7%E7%A2%B0%E6%92%9E%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弹性碰撞",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B9%E6%80%A7%E7%A2%B0%E6%92%9E"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "elastic collision",
+          "url": "https://en.wikipedia.org/w/index.php?search=elastic%20collision"
+        }
       ]
     },
     {
@@ -1205,6 +2393,24 @@
         "F=kx",
         "伸长 压缩 劲度系数",
         "inelastic collision"
+      ],
+      "explanation_markdown": "非弹性碰撞仍可满足动量守恒，但系统总动能减少。减少的机械能转化为内能、声、塑性形变或其他内部自由度。数学表达为 $K_{\\rm after}<K_{\\rm before}$，其中$K_{\\rm before}$ 与 $K_{\\rm after}$ 是碰撞前后的系统总动能。\n\n汽车相撞、橡皮泥碰撞和多数宏观碰撞都属于非弹性情形。它并不违反能量守恒，只是机械能不守恒；动量方程通常保留，动能方程要改写为能量损失。非弹性程度可用恢复系数衡量。即使动能减少，碰后物体仍可能分开；完全非弹性只是其中粘在一起的特殊极限。非弹性碰撞特别适合处理短时强相互作用，因为碰撞细节复杂时守恒量仍可保留整体信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "非弹性碰撞",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%9E%E5%BC%B9%E6%80%A7%E7%A2%B0%E6%92%9E%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "非弹性碰撞",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%9E%E5%BC%B9%E6%80%A7%E7%A2%B0%E6%92%9E"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inelastic collision",
+          "url": "https://en.wikipedia.org/w/index.php?search=inelastic%20collision"
+        }
       ]
     },
     {
@@ -1223,6 +2429,24 @@
         "F=kx",
         "伸长 压缩 劲度系数",
         "perfectly inelastic collision"
+      ],
+      "explanation_markdown": "完全非弹性碰撞是动能损失最大的非弹性碰撞类型，碰后物体具有共同速度，常表现为粘在一起运动。对应关系可写为 $\\mathbf v'_1=\\mathbf v'_2$，其中$\\mathbf v'_1,\\mathbf v'_2$ 是两物体碰后的速度。\n\n碰后共同速度由总动量守恒决定，但动能通常明显减少。弹丸嵌入木块、两车挂接在一起等都可近似这种模型；它给出给定初态下机械能损失的极限情况。这种碰撞的共同速度使未知量减少，但能量损失最大。弹道摆用弹丸嵌入木块后的共同运动，把高速碰撞转化为后续可测的摆动。使用完全非弹性碰撞时要划定系统，外力冲量是否可忽略会直接决定守恒近似是否成立。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "完全非弹性碰撞",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%8C%E5%85%A8%E9%9D%9E%E5%BC%B9%E6%80%A7%E7%A2%B0%E6%92%9E%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "完全非弹性碰撞",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%8C%E5%85%A8%E9%9D%9E%E5%BC%B9%E6%80%A7%E7%A2%B0%E6%92%9E"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "perfectly inelastic collision",
+          "url": "https://en.wikipedia.org/w/index.php?search=perfectly%20inelastic%20collision"
+        }
       ]
     },
     {
@@ -1241,6 +2465,24 @@
         "Ek=1/2mv² Ep=mgh W=Fscosθ",
         "高度 速度 效率",
         "work"
+      ],
+      "explanation_markdown": "功衡量力沿位移方向对运动能量的贡献。只有力在位移方向上的分量做功，垂直于位移的力不改变动能。一个方便的写法是 $W=\\int_C\\mathbf F\\cdot d\\mathbf r$，其中$W$ 是功，$\\mathbf F$ 是力，$d\\mathbf r$ 是路径 $C$ 上的微小位移。\n\n功依赖路径，尤其是摩擦力等非保守力。正功增加动能，负功减少动能；在保守力场中，功还能用势能变化表示，这使能量方法常比逐时求解运动更简洁。功的正负取决于力和位移夹角。向心力在匀速圆周运动中始终垂直位移，因此不做功；摩擦力常与位移反向，因而做负功。功常用于估算速度、位移或耗散量，但不能自动给出运动方向随时间的完整过程。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "功",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "功",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "work",
+          "url": "https://en.wikipedia.org/w/index.php?search=work"
+        }
       ]
     },
     {
@@ -1259,6 +2501,24 @@
         "Ek=1/2mv² Ep=mgh W=Fscosθ",
         "高度 速度 效率",
         "power"
+      ],
+      "explanation_markdown": "功率表示做功或能量转化的快慢，同样的功在更短时间内完成，对应更大功率。它关注过程的速率而非总量。定量上有 $P=dW/dt=\\mathbf F\\cdot\\mathbf v$，其中$P$ 是瞬时功率，$W$ 是功，$\\mathbf F$ 是力，$\\mathbf v$ 是受力点速度。\n\n功率可正可负，取决于力与速度夹角。发动机、阻尼器和电机输出都常用功率描述；在匀速提升重物时，功率近似为 $mgv$，直接反映提升速度的影响。功率能区分同样能量输出的快慢。爬同样高度，慢爬和快跑增加的重力势能相同，但快跑需要更大的平均功率。功率强调过程或状态之间的能量转移，适合避开未知约束力的细节。使用功率时要说明零势能、正功方向和系统边界，否则能量账会改变写法。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "功率",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%9F%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "功率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%9F%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "power",
+          "url": "https://en.wikipedia.org/w/index.php?search=power"
+        }
       ]
     },
     {
@@ -1277,6 +2537,24 @@
         "Ek=1/2mv² Ep=mgh W=Fscosθ",
         "高度 速度 效率",
         "kinetic energy"
+      ],
+      "explanation_markdown": "动能是物体因运动而具有的能量，只与质量和速率有关，不含速度方向。相同质量下，速率加倍会使动能变为四倍。通常记作 $K=\\frac12mv^2$，其中$K$ 是动能，$m$ 是质量，$v$ 是速率。\n\n动能是标量，不能像动量那样按方向相加。碰撞中动量可能守恒而动能不守恒；在功-能关系中，合力做功直接改变动能，是连接动力学和能量方法的桥梁。动能依赖参考系，因为速率依赖参考系。车上乘客相对车厢动能很小，相对地面却有较大动能；能量计算时必须说明参考系。使用动能时要说明零势能、正功方向和系统边界，否则能量账会改变写法。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "动能",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%A8%E8%83%BD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "动能",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%A8%E8%83%BD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kinetic energy",
+          "url": "https://en.wikipedia.org/w/index.php?search=kinetic%20energy"
+        }
       ]
     },
     {
@@ -1295,6 +2573,24 @@
         "Ek=1/2mv² Ep=mgh W=Fscosθ",
         "高度 速度 效率",
         "work energy theorem"
+      ],
+      "explanation_markdown": "动能定理说明合力对物体所做的总功等于动能变化。它把沿路径的受力累积直接转化为初末速率关系。在这种约定下有 $\\Delta K=W_{\\rm net}$，其中$\\Delta K$ 是动能变化，$W_{\\rm net}$ 是合力所做的总功。\n\n这一定理不要求力恒定，也不要求轨迹简单。支持力在理想约束中常不做功，摩擦力通常做负功；若只关心速率变化，动能定理常比逐分量求运动方程更直接。动能定理对曲线运动同样成立，因为它由力沿路径的积分得到。它不直接给出运动方向，但能快速求末速率或制动距离。动能定理常用于估算速度、位移或耗散量，但不能自动给出运动方向随时间的完整过程。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "动能定理",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%A8%E8%83%BD%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "动能定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%A8%E8%83%BD%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "work energy theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=work%20energy%20theorem"
+        }
       ]
     },
     {
@@ -1313,6 +2609,24 @@
         "Ek=1/2mv² Ep=mgh W=Fscosθ",
         "高度 速度 效率",
         "potential energy"
+      ],
+      "explanation_markdown": "势能把保守力场中的位置差转化为能量差，反映系统因构型不同而储存的能量。只有势能差通常有物理意义。可写成 $\\mathbf F=-\\nabla U$，其中$U$ 是势能，$\\nabla U$ 是势能的空间梯度，负号表示力指向势能降低方向。\n\n重力势能和弹性势能是典型例子。势能要求相应力做功与路径无关；摩擦力这类非保守力不能用单值势能完整描述，只能通过做功或能量耗散处理。势能零点可任意选择，真正影响运动的是势能差。势能曲线的斜率给出力，平衡位置常对应势能的极小点或驻点。势能强调过程或状态之间的能量转移，适合避开未知约束力的细节。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "势能",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%BF%E8%83%BD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "势能",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%BF%E8%83%BD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "potential energy",
+          "url": "https://en.wikipedia.org/w/index.php?search=potential%20energy"
+        }
       ]
     },
     {
@@ -1331,6 +2645,24 @@
         "Ek=1/2mv² Ep=mgh W=Fscosθ",
         "高度 速度 效率",
         "gravitational potential energy"
+      ],
+      "explanation_markdown": "重力势能是物体在重力场中因高度不同而具有的势能。选定零势能面后，高处物体具有更多可转化为动能的能量。常见公式是 $U_g=mgh$，其中$U_g$ 是近地重力势能，$m$ 是质量，$g$ 是重力加速度，$h$ 是相对参考面的高度。\n\n这个公式适用于近地表、重力加速度近似恒定的情形。若高度变化很大，应使用万有引力势能形式；改变零势能面会改变 $U_g$ 数值，但不改变势能差和运动结果。近地公式把重力场看作均匀，适合楼层、斜面和摆等小范围问题。山体、卫星轨道或行星问题中，高度不能再简单线性进入势能。使用重力势能时要说明零势能、正功方向和系统边界，否则能量账会改变写法。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "重力势能",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8D%E5%8A%9B%E5%8A%BF%E8%83%BD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "重力势能",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8D%E5%8A%9B%E5%8A%BF%E8%83%BD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gravitational potential energy",
+          "url": "https://en.wikipedia.org/w/index.php?search=gravitational%20potential%20energy"
+        }
       ]
     },
     {
@@ -1349,6 +2681,24 @@
         "F=kx",
         "伸长 压缩 劲度系数",
         "elastic potential energy"
+      ],
+      "explanation_markdown": "弹性势能储存在被拉伸或压缩的弹性元件中，来自形变后的恢复作用。弹簧形变量越大，储存能量按平方增长。数学表达为 $U_e=\\frac12kx^2$，其中$U_e$ 是弹性势能，$k$ 是劲度系数，$x$ 是相对自然长度的形变量。\n\n它只适用于胡克定律成立的小形变范围。弹簧振子中，弹性势能和动能周期性交换；若材料发生塑性形变或弹簧被拉过弹性限度，能量就不再按此式储存。弹性势能总为非负，拉伸和压缩同样储能。弹簧振子经过平衡位置时弹性势能最小，速度最大；到端点时动能转化为弹性势能。弹性势能常用于估算速度、位移或耗散量，但不能自动给出运动方向随时间的完整过程。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弹性势能",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B9%E6%80%A7%E5%8A%BF%E8%83%BD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弹性势能",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B9%E6%80%A7%E5%8A%BF%E8%83%BD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "elastic potential energy",
+          "url": "https://en.wikipedia.org/w/index.php?search=elastic%20potential%20energy"
+        }
       ]
     },
     {
@@ -1367,6 +2717,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "conservative force"
+      ],
+      "explanation_markdown": "保守力的做功只由初末位置决定，与实际路径无关。正因为如此，它可以对应一个单值势能函数。对应关系可写为 $\\oint\\mathbf F\\cdot d\\mathbf r=0$，其中$\\mathbf F$ 是保守力，闭合积分为零表示沿任意闭合路径总功为零。\n\n重力、理想弹簧力和静电力在相应条件下都是保守力。保守力做正功时势能减少，做负功时势能增加；若存在摩擦或阻尼，闭合路径功通常不为零。判断保守力也可看其旋度是否为零，但基础力学中更常用路径无关性。保守力场允许用势能图像分析稳定平衡和能量转换。保守力强调过程或状态之间的能量转移，适合避开未知约束力的细节。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "保守力",
+          "url": "https://www.baidu.com/s?wd=%E4%BF%9D%E5%AE%88%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "保守力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BF%9D%E5%AE%88%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "conservative force",
+          "url": "https://en.wikipedia.org/w/index.php?search=conservative%20force"
+        }
       ]
     },
     {
@@ -1385,6 +2753,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "non conservative force"
+      ],
+      "explanation_markdown": "非保守力的做功与路径有关，不能由单一势能差完全表示。摩擦力和黏滞阻力常把机械能转化为内能。一个方便的写法是 $\\oint\\mathbf F\\cdot d\\mathbf r\\ne0$，其中$\\mathbf F$ 是非保守力，闭合路径积分不为零表示一圈后仍有净功。\n\n它们使机械能不再守恒，但总能量仍守恒，只是转入热、声或微观自由度。处理非保守力时通常显式计算其做功，或在能量方程中加入耗散项。非保守力常决定实际机械效率。斜面有摩擦时，物体下滑损失的机械能等于摩擦力做的负功，并最终表现为热和微观形变。使用非保守力时要说明零势能、正功方向和系统边界，否则能量账会改变写法。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "非保守力",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%9E%E4%BF%9D%E5%AE%88%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "非保守力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%9E%E4%BF%9D%E5%AE%88%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "non conservative force",
+          "url": "https://en.wikipedia.org/w/index.php?search=non%20conservative%20force"
+        }
       ]
     },
     {
@@ -1403,6 +2789,24 @@
         "Ek=1/2mv² Ep=mgh W=Fscosθ",
         "高度 速度 效率",
         "mechanical energy"
+      ],
+      "explanation_markdown": "机械能是宏观运动能量和位置相关势能的总和，适用于用动能与势能描述的力学系统。它不包括热能、化学能等内部能量。定量上有 $E=K+U$，其中$E$ 是机械能，$K$ 是动能，$U$ 是势能。\n\n在只有保守力做功时，机械能保持不变；有摩擦、碰撞形变或阻尼时，机械能会转化为其他能量形式。机械能方法常用于比较初末状态，而不必求出完整运动过程。机械能是否守恒取决于系统边界和力的性质。若把地球和物体一起作为系统，重力势能属于系统内部；若只看物体，重力可视为外力做功。机械能常用于估算速度、位移或耗散量，但不能自动给出运动方向随时间的完整过程。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "机械能",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%BA%E6%A2%B0%E8%83%BD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "机械能",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%BA%E6%A2%B0%E8%83%BD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mechanical energy",
+          "url": "https://en.wikipedia.org/w/index.php?search=mechanical%20energy"
+        }
       ]
     },
     {
@@ -1421,6 +2825,24 @@
         "Ek=1/2mv² Ep=mgh W=Fscosθ",
         "高度 速度 效率",
         "law of conservation of mechanical energy"
+      ],
+      "explanation_markdown": "机械能守恒定律指出，在只有保守力做功的系统中，动能和势能可以相互转化，但总机械能不变。通常记作 $K_1+U_1=K_2+U_2$，其中$K_1,U_1$ 与 $K_2,U_2$ 是初末状态的动能和势能。\n\n摆球下落、理想弹簧振子和无摩擦滑轨都常用它。若非保守力做功，应写成机械能变化等于非保守力功；因此守恒的关键是力的性质，而不是物体是否受力。它常把复杂运动转化为高度和速度的关系。过山车、摆球和光滑轨道问题都可用它求速度，但遇到摩擦或碰撞必须加入能量损失。机械能守恒定律强调过程或状态之间的能量转移，适合避开未知约束力的细节。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "机械能守恒定律",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%BA%E6%A2%B0%E8%83%BD%E5%AE%88%E6%81%92%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "机械能守恒定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%BA%E6%A2%B0%E8%83%BD%E5%AE%88%E6%81%92%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "law of conservation of mechanical energy",
+          "url": "https://en.wikipedia.org/w/index.php?search=law%20of%20conservation%20of%20mechanical%20energy"
+        }
       ]
     },
     {
@@ -1439,6 +2861,24 @@
         "τ=rFsinθ τ=Iα L=Iω",
         "门轴 轮盘 陀螺",
         "torque"
+      ],
+      "explanation_markdown": "力矩衡量力使物体绕某点或某轴转动的能力。相同大小的力，作用线离转轴越远，转动效果越强。在这种约定下有 $\\boldsymbol\\tau=\\mathbf r\\times\\mathbf F$，其中$\\boldsymbol\\tau$ 是力矩，$\\mathbf r$ 是参考点到作用点的位矢，$\\mathbf F$ 是力。\n\n叉乘方向由右手定则给出，大小等于 $rF\\sin\\theta$。力矩依赖参考点，分析刚体平衡或转动时必须先确定取矩点；通过轴心的力没有绕该轴的力矩。力矩不仅有大小，还有方向，表示角动量改变方向。开门时推门把手比推合页附近省力，就是力臂增大导致同样力产生更大力矩。在刚体近似下，力矩能把分散的质点运动整理成绕轴的整体规律。力矩常和线动量、能量一起使用，尤其适合滚动、铰链和天体轨道等情形。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "力矩",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%9B%E7%9F%A9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "力矩",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%9B%E7%9F%A9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "torque",
+          "url": "https://en.wikipedia.org/w/index.php?search=torque"
+        }
       ]
     },
     {
@@ -1457,6 +2897,24 @@
         "F1l1=F2l2 mg分解",
         "省力装置 绳轮",
         "lever arm"
+      ],
+      "explanation_markdown": "力臂是转轴或参考点到力作用线的垂直距离，决定力产生力矩的几何杠杆效果。它不是作用点到转轴的任意距离。可写成 $\\tau=Fd$，其中$\\tau$ 是力矩大小，$F$ 是力的大小，$d$ 是力臂。\n\n当力的作用线穿过转轴时，力臂为零，即使力很大也不产生绕该轴的转动趋势。杠杆、门把手和扳手都通过增大力臂来减小所需力。力臂由作用线决定，不由受力点到轴的斜距决定。计算时常把力分解或直接求垂距，两种方法应给出同一力矩。力臂常和线动量、能量一起使用，尤其适合滚动、铰链和天体轨道等情形。力臂的参考轴和转动方向必须先定清，换轴会改变力臂、惯量或角动量的数值。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "力臂",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%9B%E8%87%82%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "力臂",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%9B%E8%87%82"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lever arm",
+          "url": "https://en.wikipedia.org/w/index.php?search=lever%20arm"
+        }
       ]
     },
     {
@@ -1475,6 +2933,24 @@
         "L=Iω r×p",
         "转台 陀螺 行星",
         "angular momentum"
+      ],
+      "explanation_markdown": "角动量刻画物体相对某参考点的转动状态。对质点，它同时取决于离参考点多远、动量多大以及动量方向是否偏离径向。常见公式是 $\\mathbf L=\\mathbf r\\times\\mathbf p$，其中$\\mathbf L$ 是角动量，$\\mathbf r$ 是位矢，$\\mathbf p$ 是动量。\n\n径向运动的角动量为零，因为没有绕参考点转动的趋势。角动量的改变由外力矩决定；中心力场中力矩为零，行星和散射粒子的角动量因此守恒。角动量依赖参考点，绕不同点计算会得到不同结果。对定轴刚体可简化为 $L=I\\omega$，但对一般质点运动仍要用叉乘定义。角动量的参考轴和转动方向必须先定清，换轴会改变力臂、惯量或角动量的数值。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "角动量",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%92%E5%8A%A8%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "角动量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%92%E5%8A%A8%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "angular momentum",
+          "url": "https://en.wikipedia.org/w/index.php?search=angular%20momentum"
+        }
       ]
     },
     {
@@ -1493,6 +2969,24 @@
         "L=Iω r×p",
         "转台 陀螺 行星",
         "angular momentum theorem"
+      ],
+      "explanation_markdown": "角动量定理说明外力矩是改变角动量的原因。它在转动问题中对应平动里的动量定理。数学表达为 $d\\mathbf L/dt=\\boldsymbol\\tau$，其中$\\mathbf L$ 是角动量，$t$ 是时间，$\\boldsymbol\\tau$ 是合外力矩。\n\n若合外力矩在一段时间内作用，其角冲量等于角动量变化。这个定理适合分析绕轴碰撞、陀螺受重力矩进动和变半径转动；取参考点不同，角动量和力矩都要同步改变。角动量定理能解释为什么外力通过轴心时不改变绕轴角动量。它也用于碰撞后转动、绳绕杆运动和天体受到潮汐力矩的分析。在刚体近似下，角动量定理能把分散的质点运动整理成绕轴的整体规律。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "角动量定理",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%92%E5%8A%A8%E9%87%8F%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "角动量定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%92%E5%8A%A8%E9%87%8F%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "angular momentum theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=angular%20momentum%20theorem"
+        }
       ]
     },
     {
@@ -1511,6 +3005,24 @@
         "L=Iω r×p",
         "转台 陀螺 行星",
         "law of conservation of angular momentum"
+      ],
+      "explanation_markdown": "角动量守恒定律指出，系统所受合外力矩为零时，总角动量保持不变。物体内部可以交换角动量，但总量不变。对应关系可写为 $\\mathbf L_{\\rm total}=\\mathrm{const}$，其中$\\mathbf L_{\\rm total}$ 是系统总角动量，常量条件来自合外力矩为零。\n\n花样滑冰收臂后转得更快，是转动惯量减小时角速度增大以保持角动量。它也解释中心力轨道、碰撞中的转动和天体自旋；守恒必须相对同一参考点或同一轴讨论。角动量守恒可在某一轴上单独成立，只要该轴方向合外力矩分量为零。收臂转快和行星扫过等面积都来自同一思想。角动量守恒定律常和线动量、能量一起使用，尤其适合滚动、铰链和天体轨道等情形。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "角动量守恒定律",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%92%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%92%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "角动量守恒定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%92%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%92%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "law of conservation of angular momentum",
+          "url": "https://en.wikipedia.org/w/index.php?search=law%20of%20conservation%20of%20angular%20momentum"
+        }
       ]
     },
     {
@@ -1529,6 +3041,24 @@
         "τ=rFsinθ τ=Iα L=Iω",
         "门轴 轮盘 陀螺",
         "rotation"
+      ],
+      "explanation_markdown": "转动是物体各点绕某点或某轴改变方向的运动，刚体转动时不同点共享同一角速度。它强调角位置变化，而不只是物体在空间中移动。一个方便的写法是 $\\omega=d\\theta/dt$，其中$\\omega$ 是角速度，$\\theta$ 是角位置，$t$ 是时间。\n\n转动可以与平动同时存在，例如滚动的车轮既有质心平动又有绕质心转动。分析转动时要说明转轴和参考点；否则角速度、转动惯量和角动量都没有完整含义。转动的线速度随半径而变，角速度对刚体各点相同。描述转动时不能只给某点速度，还要说明物体整体的角运动。转动的参考轴和转动方向必须先定清，换轴会改变力臂、惯量或角动量的数值。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "转动",
+          "url": "https://www.baidu.com/s?wd=%E8%BD%AC%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "转动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BD%AC%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "rotation",
+          "url": "https://en.wikipedia.org/w/index.php?search=rotation"
+        }
       ]
     },
     {
@@ -1547,6 +3077,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "translation"
+      ],
+      "explanation_markdown": "平动中物体内任意两点连线方向保持不变，各点速度相同或只相差固定几何位置。物体可以整体移动，但不发生自转。定量上有 $\\mathbf r_i(t)=\\mathbf R(t)+\\mathbf a_i$，其中$\\mathbf R(t)$ 是整体参考点位置，$\\mathbf a_i$ 是物体内第 $i$ 点相对它的固定矢量。\n\n电梯上下运动和盒子沿直线滑动可近似平动。平动允许把刚体当作质点处理其整体运动；一旦物体姿态改变，就必须加入转动自由度和力矩方程。平动分析常把刚体整体当作质点，所有质量集中于质心。若外力作用线不过质心，物体可能同时平动和转动，这时只写质心方程还不够。在刚体近似下，平动能把分散的质点运动整理成绕轴的整体规律。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平动",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "translation",
+          "url": "https://en.wikipedia.org/w/index.php?search=translation"
+        }
       ]
     },
     {
@@ -1565,6 +3113,24 @@
         "τ=rFsinθ τ=Iα L=Iω",
         "门轴 轮盘 陀螺",
         "moment of inertia"
+      ],
+      "explanation_markdown": "转动惯量衡量物体抵抗角速度改变的程度，取决于质量离转轴的分布。质量越远离转轴，转动惯量越大。通常记作 $I=\\sum_i m_i r_i^2$，其中$I$ 是转动惯量，$m_i$ 是质量元，$r_i$ 是到转轴的垂直距离。\n\n它是转动版的惯性质量，但不是物体唯一固定属性，因为换一根轴数值就会改变。飞轮、陀螺和体操动作都利用质量分布改变转动效果。转动惯量可通过积分求连续物体，也可查标准形状公式。它对轴的依赖很强，同一根杆绕中心和绕端点转动，所需力矩明显不同。转动惯量常和线动量、能量一起使用，尤其适合滚动、铰链和天体轨道等情形。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "转动惯量",
+          "url": "https://www.baidu.com/s?wd=%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "转动惯量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "moment of inertia",
+          "url": "https://en.wikipedia.org/w/index.php?search=moment%20of%20inertia"
+        }
       ]
     },
     {
@@ -1583,6 +3149,24 @@
         "τ=rFsinθ τ=Iα L=Iω",
         "门轴 轮盘 陀螺",
         "rigid body"
+      ],
+      "explanation_markdown": "刚体是内部任意两点距离保持不变的理想物体，忽略形变和振动。它能平动，也能整体转动，但不拉伸、不弯曲。在这种约定下有 $|\\mathbf r_i-\\mathbf r_j|=\\mathrm{const}$，其中$\\mathbf r_i,\\mathbf r_j$ 是刚体内任意两点的位置矢量。\n\n真实物体都有形变，刚体模型适合形变远小于整体运动尺度的情形。它使复杂材料运动简化为质心平动加绕质心或定轴转动，是机械设计和基础动力学的重要近似。刚体模型保留姿态和转动，却舍去弹性波和形变能。碰撞很剧烈、材料很软或结构很长时，刚体假设可能失效，需要考虑弹性和振动。刚体的参考轴和转动方向必须先定清，换轴会改变力臂、惯量或角动量的数值。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "刚体",
+          "url": "https://www.baidu.com/s?wd=%E5%88%9A%E4%BD%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "刚体",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%9A%E4%BD%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "rigid body",
+          "url": "https://en.wikipedia.org/w/index.php?search=rigid%20body"
+        }
       ]
     },
     {
@@ -1601,6 +3185,24 @@
         "τ=rFsinθ τ=Iα L=Iω",
         "门轴 轮盘 陀螺",
         "fixed axis rotation of rigid body"
+      ],
+      "explanation_markdown": "刚体定轴转动中，刚体绕空间中固定轴旋转，轴上点保持不动，其余点做同角速度的圆周运动。可写成 $K_{\\rm rot}=\\frac12I\\omega^2$，其中$K_{\\rm rot}$ 是转动动能，$I$ 是绕定轴的转动惯量，$\\omega$ 是角速度。\n\n门绕合页、轮盘绕轴和滑轮转动都可近似定轴转动。定轴使问题只剩一个角坐标；若轴本身移动或方向改变，就要同时处理平动或更一般的刚体运动。定轴转动的每个质元都有速率 $v=\\omega r$，半径越大速率越大。轴承、门轴和电机转子常用这个模型来计算力矩、功率和转动能量。在刚体近似下，刚体定轴转动能把分散的质点运动整理成绕轴的整体规律。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "刚体定轴转动",
+          "url": "https://www.baidu.com/s?wd=%E5%88%9A%E4%BD%93%E5%AE%9A%E8%BD%B4%E8%BD%AC%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "刚体定轴转动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%9A%E4%BD%93%E5%AE%9A%E8%BD%B4%E8%BD%AC%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fixed axis rotation of rigid body",
+          "url": "https://en.wikipedia.org/w/index.php?search=fixed%20axis%20rotation%20of%20rigid%20body"
+        }
       ]
     },
     {
@@ -1619,6 +3221,24 @@
         "Ek=1/2mv² Ep=mgh W=Fscosθ",
         "高度 速度 效率",
         "rotational kinetic energy"
+      ],
+      "explanation_markdown": "转动动能是刚体因各部分绕轴运动而具有的动能总和。虽然每个质元速率不同，它们可合并成一个角速度表达。常见公式是 $K_{\\rm rot}=\\frac12I\\omega^2$，其中$I$ 是绕所选轴的转动惯量，$\\omega$ 是角速度。\n\n它对应平动动能中的 $\\frac12mv^2$，但质量被转动惯量取代。滚动物体的总动能还要加上质心平动动能；漏掉转动部分会低估实际能量。转动动能来自各质元平动动能的总和，所以质量分布通过转动惯量进入。飞轮把能量存在转动中，靠较大转动惯量平滑输出功率。转动动能常和线动量、能量一起使用，尤其适合滚动、铰链和天体轨道等情形。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "转动动能",
+          "url": "https://www.baidu.com/s?wd=%E8%BD%AC%E5%8A%A8%E5%8A%A8%E8%83%BD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "转动动能",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BD%AC%E5%8A%A8%E5%8A%A8%E8%83%BD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "rotational kinetic energy",
+          "url": "https://en.wikipedia.org/w/index.php?search=rotational%20kinetic%20energy"
+        }
       ]
     },
     {
@@ -1637,6 +3257,24 @@
         "τ=rFsinθ τ=Iα L=Iω",
         "门轴 轮盘 陀螺",
         "law of rotation"
+      ],
+      "explanation_markdown": "转动定律把绕定轴的合外力矩与角加速度联系起来，是牛顿第二定律在定轴转动中的对应形式。数学表达为 $\\sum\\tau=I\\alpha$，其中$\\sum\\tau$ 是绕轴合力矩，$I$ 是转动惯量，$\\alpha$ 是角加速度。\n\n同一力矩作用下，转动惯量越大，角加速度越小。这种定轴形式只适合转轴固定且 $I$ 不随时间改变的简单情形；若轴移动或质量分布变化，需要用角动量定理。转动定律要求所有力矩都相对同一轴计算。若转动惯量随时间改变，例如人收臂旋转，直接用固定 $I$ 的形式就不合适，应改用角动量。转动定律的参考轴和转动方向必须先定清，换轴会改变力臂、惯量或角动量的数值。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "转动定律",
+          "url": "https://www.baidu.com/s?wd=%E8%BD%AC%E5%8A%A8%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "转动定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BD%AC%E5%8A%A8%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "law of rotation",
+          "url": "https://en.wikipedia.org/w/index.php?search=law%20of%20rotation"
+        }
       ]
     },
     {
@@ -1655,6 +3293,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "parallel axis theorem"
+      ],
+      "explanation_markdown": "平行轴定理把刚体绕任意轴的转动惯量与过质心的平行轴联系起来。离质心轴越远，转动惯量增加越多。对应关系可写为 $I=I_{\\rm cm}+Md^2$，其中$I_{\\rm cm}$ 是过质心平行轴的转动惯量，$M$ 是总质量，$d$ 是两轴距离。\n\n它适合快速求杆绕端点、圆盘绕偏轴等转动惯量。前提是两轴平行；若轴方向改变，不能只用距离平方修正，需要重新积分或使用惯量张量。平行轴定理中的 $Md^2$ 来自整体质量离新轴的平移贡献。它不能用于不平行的轴，也不能把质心轴选错；轴的位置是题意中的关键几何信息。在刚体近似下，平行轴定理能把分散的质点运动整理成绕轴的整体规律。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平行轴定理",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E8%A1%8C%E8%BD%B4%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平行轴定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E8%A1%8C%E8%BD%B4%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "parallel axis theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=parallel%20axis%20theorem"
+        }
       ]
     },
     {
@@ -1673,6 +3329,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "perpendicular axis theorem"
+      ],
+      "explanation_markdown": "垂直轴定理适用于薄片状刚体，把垂直薄片的轴惯量与薄片平面内两条互相垂直轴的惯量相加。一个方便的写法是 $I_z=I_x+I_y$，其中$I_x,I_y,I_z$ 是同一点处三条互相垂直轴的转动惯量，$z$ 轴垂直薄片。\n\n它依赖质量几乎都分布在同一平面内，厚物体不能直接使用。求薄圆盘、薄环或矩形板的转动惯量时，这个定理常把困难的垂直轴问题转成平面内积分。垂直轴定理常把薄片平面内的两个简单积分合成垂直轴结果。它要求三轴交于同一点；若轴不共点，还要先用平行轴定理移动。垂直轴定理常和线动量、能量一起使用，尤其适合滚动、铰链和天体轨道等情形。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "垂直轴定理",
+          "url": "https://www.baidu.com/s?wd=%E5%9E%82%E7%9B%B4%E8%BD%B4%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "垂直轴定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9E%82%E7%9B%B4%E8%BD%B4%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "perpendicular axis theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=perpendicular%20axis%20theorem"
+        }
       ]
     },
     {
@@ -1691,6 +3365,24 @@
         "x-t图 v-t图 参数方程",
         "轨迹 图像",
         "rolling motion"
+      ],
+      "explanation_markdown": "滚动是物体在接触面上同时平动和转动的运动。车轮前进时，质心移动，轮子又绕质心旋转。定量上有 $v_{\\rm cm}=R\\omega$，其中$v_{\\rm cm}$ 是质心速度，$R$ 是半径，$\\omega$ 是角速度。\n\n这种速度约束只对应无滑动的纯滚动；一般滚动可能伴随打滑。滚动能量包含平动和转动两部分，静摩擦常负责建立滚动约束，但理想纯滚动中接触点瞬时静止，不一定耗散能量。滚动约束把平动和转动锁在一起，因此质心加速度与角加速度同步变化。下坡滚动时，重力势能分给平动动能和转动动能两部分。滚动的参考轴和转动方向必须先定清，换轴会改变力臂、惯量或角动量的数值。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "滚动",
+          "url": "https://www.baidu.com/s?wd=%E6%BB%9A%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "滚动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%BB%9A%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "rolling motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=rolling%20motion"
+        }
       ]
     },
     {
@@ -1709,6 +3401,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "pure rolling"
+      ],
+      "explanation_markdown": "纯滚动指物体与接触面的接触点瞬时相对静止，没有滑动摩擦造成的相对滑移。它把平动速度和角速度严格联系起来。通常记作 $v_{\\rm cm}=R\\omega$，其中$v_{\\rm cm}$ 是质心速度，$R$ 是滚动物体半径，$\\omega$ 是角速度。\n\n从地面看，接触点瞬时速度为零，顶部速度可达 $2v_{\\rm cm}$。纯滚动常由静摩擦维持；如果驱动力过大或地面太滑，约束破坏，运动就变成滚动加滑动。纯滚动不是没有摩擦，而是接触处没有相对滑动。静摩擦可能提供力矩却不耗散能量；若开始打滑，就要改用滑动摩擦并重新写能量关系。在刚体近似下，纯滚动能把分散的质点运动整理成绕轴的整体规律。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "纯滚动",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%AF%E6%BB%9A%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "纯滚动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%AF%E6%BB%9A%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pure rolling",
+          "url": "https://en.wikipedia.org/w/index.php?search=pure%20rolling"
+        }
       ]
     },
     {
@@ -1727,6 +3437,24 @@
         "τ=rFsinθ τ=Iα L=Iω",
         "门轴 轮盘 陀螺",
         "precession"
+      ],
+      "explanation_markdown": "进动是转动物体的自旋轴在外力矩作用下缓慢扫过空间的运动。陀螺没有立刻倒下，而是轴线绕竖直方向转动。在这种约定下有 $\\Omega=\\tau/L$，其中$\\Omega$ 是进动角速度，$\\tau$ 是外力矩大小，$L$ 是自旋角动量大小。\n\n这个近似适合快速自旋且力矩较小的陀螺。进动方向由力矩与角动量变化方向决定；地球岁差、陀螺仪和磁矩在磁场中的运动都可用类似图像理解。进动中角动量大小近似不变，方向缓慢改变。若自旋不够快或力矩太大，陀螺会出现章动，简单进动公式只给主导近似。进动常和线动量、能量一起使用，尤其适合滚动、铰链和天体轨道等情形。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "进动",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%9B%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "进动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%9B%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "precession",
+          "url": "https://en.wikipedia.org/w/index.php?search=precession"
+        }
       ]
     },
     {
@@ -1745,6 +3473,24 @@
         "τ=rFsinθ τ=Iα L=Iω",
         "门轴 轮盘 陀螺",
         "couple"
+      ],
+      "explanation_markdown": "力偶由一对大小相等、方向相反且作用线不重合的平行力组成。它不产生合力，却产生纯转动效果。可写成 $M=Fd$，其中$M$ 是力偶矩大小，$F$ 是其中一个力的大小，$d$ 是两力作用线距离。\n\n力偶的转动效果与取矩点无关，这是它区别于单个力的重要性质。拧瓶盖、转方向盘和用双手旋转物体时，常出现近似力偶。力偶只改变转动，不改变合外力，因此常用来表示纯转矩。拧螺丝时双手施加的相反力能形成力偶，使物体绕轴旋转而质心不必加速。力偶的参考轴和转动方向必须先定清，换轴会改变力臂、惯量或角动量的数值。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "力偶",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%9B%E5%81%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "力偶",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%9B%E5%81%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "couple",
+          "url": "https://en.wikipedia.org/w/index.php?search=couple"
+        }
       ]
     },
     {
@@ -1763,6 +3509,24 @@
         "τ=rFsinθ τ=Iα L=Iω",
         "门轴 轮盘 陀螺",
         "couple moment"
+      ],
+      "explanation_markdown": "力偶矩是力偶造成转动效果的量，方向沿转轴并由右手定则确定。它描述的是一对力整体的转动趋势。常见公式是 $\\mathbf M=\\mathbf r\\times\\mathbf F$，其中$\\mathbf r$ 是从一个力作用线指向另一个力作用线的矢量，$\\mathbf F$ 是其中一个力。\n\n由于力偶合力为零，它不会改变质心平动，只改变转动状态。力偶矩在刚体静力学和机械传动中常用，能把分散的一对力替换成一个等效转矩。力偶矩可在刚体上自由平移而不改变外效应，这是单个力矩不具备的性质。机械图中常用弯箭头表示它，以区别于普通力。在刚体近似下，力偶矩能把分散的质点运动整理成绕轴的整体规律。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "力偶矩",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%9B%E5%81%B6%E7%9F%A9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "力偶矩",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%9B%E5%81%B6%E7%9F%A9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "couple moment",
+          "url": "https://en.wikipedia.org/w/index.php?search=couple%20moment"
+        }
       ]
     },
     {
@@ -1781,6 +3545,24 @@
         "ΣFx=0 ΣFy=0 Στ=0",
         "静止 匀速 支撑",
         "equilibrium"
+      ],
+      "explanation_markdown": "平衡表示物体的平动和转动状态都不再加速，可以静止，也可以在惯性系中匀速运动。存在多个力并不妨碍平衡。数学表达为 $\\sum\\mathbf F=0,\\quad\\sum\\boldsymbol\\tau=0$，其中$\\sum\\mathbf F$ 是合力，$\\sum\\boldsymbol\\tau$ 是合力矩。\n\n对质点只需合力为零，对刚体还必须合力矩为零。桥梁、支架和悬挂物分析都依赖平衡条件；若只满足合力为零，物体仍可能发生转动加速。平衡条件可用于静止物体，也可用于匀速直线运动的质点。对刚体，任意点取矩都应为零；若某点取矩不为零，物体将产生角加速度。平衡常和线动量、能量一起使用，尤其适合滚动、铰链和天体轨道等情形。平衡的参考轴和转动方向必须先定清，换轴会改变力臂、惯量或角动量的数值。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平衡",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E8%A1%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平衡",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E8%A1%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "equilibrium",
+          "url": "https://en.wikipedia.org/w/index.php?search=equilibrium"
+        }
       ]
     },
     {
@@ -1799,6 +3581,24 @@
         "ΣFx=0 ΣFy=0 Στ=0",
         "静止 匀速 支撑",
         "static equilibrium"
+      ],
+      "explanation_markdown": "静力平衡专指物体在所选参考系中保持静止的平衡状态。支撑结构、悬挂物和杠杆静止时都属于这种情形。对应关系可写为 $\\sum\\mathbf F=0,\\quad\\sum\\tau=0$，其中$\\sum\\mathbf F$ 是所有外力的矢量和，$\\sum\\tau$ 是相对任一点的合力矩。\n\n静力学中常通过选取方便的取矩点消去未知支持力。静力平衡还要考虑约束能否提供所需力，例如静摩擦是否超过最大值；若超过，静止假设就会失效。静力平衡还要求物体没有即将失稳的趋势。梯子靠墙、杆件支撑和悬挂系统中，除了列方程，还要检查接触是否脱离或摩擦是否足够。静力平衡的参考轴和转动方向必须先定清，换轴会改变力臂、惯量或角动量的数值。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "静力平衡",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%99%E5%8A%9B%E5%B9%B3%E8%A1%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "静力平衡",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%99%E5%8A%9B%E5%B9%B3%E8%A1%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "static equilibrium",
+          "url": "https://en.wikipedia.org/w/index.php?search=static%20equilibrium"
+        }
       ]
     },
     {
@@ -1817,6 +3617,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "vibration"
+      ],
+      "explanation_markdown": "振动是系统围绕平衡位置来回偏离和返回的运动，平衡位置附近通常存在把它拉回去的作用。它的核心图像是能量在不同形式间反复交换。一个方便的写法是 $x(t+T)=x(t)$，其中$x(t)$ 是偏离平衡位置的变量，$T$ 是周期。\n\n并非所有振动都严格周期，阻尼和外驱动会让振幅或相位随时间改变。弹簧、摆、声源和电路振荡都可用振动语言描述；小振幅近似常把复杂系统线性化。振动系统常有固有频率，这是由自身参数决定的时间尺度。外界周期驱动若接近固有频率，会显著改变振幅；这使振动分析连接到共振问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "振动",
+          "url": "https://www.baidu.com/s?wd=%E6%8C%AF%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "振动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8C%AF%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vibration",
+          "url": "https://en.wikipedia.org/w/index.php?search=vibration"
+        }
       ]
     },
     {
@@ -1835,6 +3653,24 @@
         "x-t图 v-t图 参数方程",
         "轨迹 图像",
         "simple harmonic motion"
+      ],
+      "explanation_markdown": "简谐运动是回复作用与位移成正比且方向相反时产生的正弦式运动。它是许多小振动在平衡点附近的一阶近似。定量上有 $x=A\\cos(\\omega t+\\varphi)$，其中$A$ 是振幅，$\\omega$ 是角频率，$\\varphi$ 是初相位，$t$ 是时间。\n\n位移、速度和加速度都按同一频率变化，只是相位不同。简谐运动适合弹簧振子、小角度单摆和微小扰动；振幅过大或回复力非线性时，周期会偏离简单公式。简谐运动的相图是椭圆，显示位移和速度周期性交换。任何稳定平衡附近，只要势能可近似为二次函数，微小扰动都可能表现为简谐运动。简谐运动常用来识别系统的固有尺度，也能解释弹簧、摆和电路中的周期响应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "简谐运动",
+          "url": "https://www.baidu.com/s?wd=%E7%AE%80%E8%B0%90%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "简谐运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AE%80%E8%B0%90%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "simple harmonic motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=simple%20harmonic%20motion"
+        }
       ]
     },
     {
@@ -1853,6 +3689,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "simple harmonic oscillation"
+      ],
+      "explanation_markdown": "简谐振动强调系统在稳定平衡点附近的往复运动，其加速度总与位移成正比且反向。它是简谐运动在振动物理中的常用名称。通常记作 $\\ddot x+\\omega^2x=0$，其中$x$ 是位移，点上两点表示二阶时间导数，$\\omega$ 是角频率。\n\n这个微分方程的解是正弦或余弦函数。它说明周期由系统参数决定，而不是由振幅决定；阻尼、驱动力或非线性项加入后，方程结构会改变。方程中的负号结构保证偏离越大，拉回越强。它也说明加速度与位移相差半个周期：到最大位移处加速度最大，经过平衡位置时加速度为零。简谐振动通常围绕平衡位置展开，小扰动近似成立时才会出现清晰的周期和相位。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "简谐振动",
+          "url": "https://www.baidu.com/s?wd=%E7%AE%80%E8%B0%90%E6%8C%AF%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "简谐振动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AE%80%E8%B0%90%E6%8C%AF%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "simple harmonic oscillation",
+          "url": "https://en.wikipedia.org/w/index.php?search=simple%20harmonic%20oscillation"
+        }
       ]
     },
     {
@@ -1871,6 +3725,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "amplitude"
+      ],
+      "explanation_markdown": "振幅是振动变量偏离平衡位置的最大大小，反映振动强弱。它不是总路程，也不记录相位处在周期中的哪个位置。在这种约定下有 $A=\\max |x(t)|$，其中$A$ 是振幅，$x(t)$ 是相对平衡位置的位移。\n\n简谐振动中能量通常与振幅平方成正比，因此振幅越大，系统储存的机械能越多。阻尼会使振幅随时间衰减；共振则可能使稳态振幅显著增大。振幅取决于初始能量或外部驱动，而不是由固有频率直接决定。两个振动频率相同但振幅不同，周期一致，能量和可见强度却不同。测量振幅时，周期、频率和振幅要分开记录；阻尼会让振幅随时间改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "振幅",
+          "url": "https://www.baidu.com/s?wd=%E6%8C%AF%E5%B9%85%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "振幅",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8C%AF%E5%B9%85"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "amplitude",
+          "url": "https://en.wikipedia.org/w/index.php?search=amplitude"
+        }
       ]
     },
     {
@@ -1889,6 +3761,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 相关量 衰减",
         "period"
+      ],
+      "explanation_markdown": "周期是完成一次完整重复所需的时间，表示振动或圆周运动回到同一相位的时间间隔。它关注时间尺度而非空间大小。可写成 $T=2\\pi/\\omega$，其中$T$ 是周期，$\\omega$ 是角频率。\n\n周期与频率互为倒数。小角度单摆的周期主要由摆长和重力加速度决定，而不是由摆球质量决定；若系统非线性或受阻尼很强，周期可能随振幅或能量变化。周期适合描述重复过程，但只有近似周期运动才有稳定数值。阻尼振动中相邻峰值间隔仍可近似周期，但振幅已不再重复。周期常用来识别系统的固有尺度，也能解释弹簧、摆和电路中的周期响应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "周期",
+          "url": "https://www.baidu.com/s?wd=%E5%91%A8%E6%9C%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "周期",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%91%A8%E6%9C%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "period",
+          "url": "https://en.wikipedia.org/w/index.php?search=period"
+        }
       ]
     },
     {
@@ -1907,6 +3797,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "frequency"
+      ],
+      "explanation_markdown": "频率表示单位时间内重复的次数，用来衡量振动或波动有多密集地发生。它越大，相邻周期之间的时间越短。常见公式是 $f=1/T$，其中$f$ 是频率，$T$ 是周期。\n\n频率单位是赫兹，即每秒一次。声调高低、交流电变化和机械振动都可用频率描述；对波来说，频率由波源决定，在介质改变时通常保持不变，而波长随波速改变。频率在波动中还决定能量或音调等物理效果。声波频率进入人耳听到的高低，机械系统频率进入避振设计和故障诊断。频率通常围绕平衡位置展开，小扰动近似成立时才会出现清晰的周期和相位。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "频率",
+          "url": "https://www.baidu.com/s?wd=%E9%A2%91%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "频率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%A2%91%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "frequency",
+          "url": "https://en.wikipedia.org/w/index.php?search=frequency"
+        }
       ]
     },
     {
@@ -1925,6 +3833,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "angular frequency"
+      ],
+      "explanation_markdown": "角频率把每秒重复次数换成相位每秒转过的弧度数。它在微分方程和相位表达中比普通频率更自然。数学表达为 $\\omega=2\\pi f=2\\pi/T$，其中$\\omega$ 是角频率，$f$ 是频率，$T$ 是周期。\n\n简谐振动中，角频率由系统本征参数决定，例如弹簧振子有 $\\omega=\\sqrt{k/m}$。角频率不是角速度的专属概念，但在圆周运动和简谐运动之间建立了清楚对应。角频率的单位是弧度每秒，虽然弧度无量纲，但它提醒相位以角度推进。写微分方程时，二阶导数自然带出 $\\omega^2$。测量角频率时，周期、频率和振幅要分开记录；阻尼会让振幅随时间改变。角频率常用来识别系统的固有尺度，也能解释弹簧、摆和电路中的周期响应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "角频率",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%92%E9%A2%91%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "角频率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%92%E9%A2%91%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "angular frequency",
+          "url": "https://en.wikipedia.org/w/index.php?search=angular%20frequency"
+        }
       ]
     },
     {
@@ -1943,6 +3869,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "phase"
+      ],
+      "explanation_markdown": "相位标记周期运动进行到哪一步，把一个循环中的位置压缩成角度。相位相同的两个振动处在同样的周期阶段。对应关系可写为 $\\phi(t)=\\omega t+\\varphi_0$，其中$\\phi(t)$ 是相位，$\\omega$ 是角频率，$\\varphi_0$ 是初相位。\n\n相位差决定叠加时增强还是抵消，是干涉、驻波和交流信号分析的核心。相位可以相差 $2\\pi$ 而物理状态相同；因此比较相位时常只关心模 $2\\pi$ 的差。相位不是普通时间，而是周期中的位置。两个同频振动相差固定相位时，会形成稳定叠加；若频率略有不同，相位差会缓慢漂移形成拍。相位常用来识别系统的固有尺度，也能解释弹簧、摆和电路中的周期响应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相位",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E4%BD%8D%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相位",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E4%BD%8D"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "phase",
+          "url": "https://en.wikipedia.org/w/index.php?search=phase"
+        }
       ]
     },
     {
@@ -1961,6 +3905,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "initial phase"
+      ],
+      "explanation_markdown": "初相位给出计时起点时周期运动所处的阶段。它不改变振动的频率和振幅，却决定从哪里开始画正弦曲线。一个方便的写法是 $\\phi(0)=\\varphi_0$，其中$\\varphi_0$ 是初相位，$\\phi(0)$ 是 $t=0$ 时的相位。\n\n同一振子若从最大位移释放或从平衡位置经过，初相位不同。它由初始位移和初速度共同决定；在多振动叠加中，初相位差会直接影响合振幅。初相位可由初始条件反推，例如给定 $x(0)$ 和 $v(0)$ 后，振幅与初相位一起确定。改变计时零点会改变初相位，却不改变实际运动。初相位通常围绕平衡位置展开，小扰动近似成立时才会出现清晰的周期和相位。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "初相位",
+          "url": "https://www.baidu.com/s?wd=%E5%88%9D%E7%9B%B8%E4%BD%8D%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "初相位",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%9D%E7%9B%B8%E4%BD%8D"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "initial phase",
+          "url": "https://en.wikipedia.org/w/index.php?search=initial%20phase"
+        }
       ]
     },
     {
@@ -1979,6 +3941,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "restoring force"
+      ],
+      "explanation_markdown": "回复力总指向平衡位置，试图把偏离的系统拉回去。简谐振动要求回复力与位移大小成正比。定量上有 $F=-kx$，其中$F$ 是回复力，$k$ 是比例系数，$x$ 是偏离平衡位置的位移。\n\n负号表达力与位移方向相反。弹簧力、小角度摆的切向重力分量和浮体偏离平衡后的浮力差都可产生回复作用；若回复力不是线性的，振动就不再严格简谐。回复力必须指向平衡位置附近，才可能产生稳定振动。若力反而把物体推离平衡，平衡点就是不稳定的，小扰动会被放大。测量回复力时，周期、频率和振幅要分开记录；阻尼会让振幅随时间改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "回复力",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%9E%E5%A4%8D%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "回复力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%9E%E5%A4%8D%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "restoring force",
+          "url": "https://en.wikipedia.org/w/index.php?search=restoring%20force"
+        }
       ]
     },
     {
@@ -1997,6 +3977,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "spring"
+      ],
+      "explanation_markdown": "弹簧是能通过伸长或压缩储存弹性势能的元件，形变后会产生恢复原长的弹力。理想弹簧的力与形变量线性相关。通常记作 $F=-kx$，其中$F$ 是弹簧力，$k$ 是劲度系数，$x$ 是相对自然长度的形变量。\n\n劲度系数越大，弹簧越难拉伸。胡克定律只在弹性限度内成立；超过限度后弹簧可能永久变形。弹簧常用来建立振子模型、测力计和缓冲装置。弹簧的自然长度是无形变时的基准，伸长和压缩都以它为零点。多根弹簧串联或并联时，可用等效劲度系数替代整体弹性响应。弹簧常用来识别系统的固有尺度，也能解释弹簧、摆和电路中的周期响应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弹簧",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B9%E7%B0%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弹簧",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B9%E7%B0%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "spring",
+          "url": "https://en.wikipedia.org/w/index.php?search=spring"
+        }
       ]
     },
     {
@@ -2015,6 +4013,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "spring oscillator"
+      ],
+      "explanation_markdown": "弹簧振子由质量块和弹簧组成，是最典型的简谐系统。质量块偏离平衡位置后，弹簧提供线性回复力。在这种约定下有 $\\omega=\\sqrt{k/m}$，其中$\\omega$ 是固有角频率，$k$ 是劲度系数，$m$ 是振子质量。\n\n理想情况下周期与振幅无关，能量在动能和弹性势能之间交换。若考虑阻尼或外力，振幅和相位会发生变化；水平与竖直弹簧振子只是在平衡位置上不同。弹簧振子的周期由 $m$ 和 $k$ 决定，质量越大振得越慢，弹簧越硬振得越快。竖直放置时重力只改变平衡位置，不改变小振动周期。弹簧振子通常围绕平衡位置展开，小扰动近似成立时才会出现清晰的周期和相位。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弹簧振子",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B9%E7%B0%A7%E6%8C%AF%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弹簧振子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B9%E7%B0%A7%E6%8C%AF%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "spring oscillator",
+          "url": "https://en.wikipedia.org/w/index.php?search=spring%20oscillator"
+        }
       ]
     },
     {
@@ -2033,6 +4049,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "pendulum"
+      ],
+      "explanation_markdown": "摆利用重力提供回复作用，使悬挂物绕支点往复摆动。小角度时，许多摆的运动可近似为简谐振动。可写成 $T\\approx2\\pi\\sqrt{l/g}$，其中$T$ 是周期，$l$ 是等效摆长，$g$ 是重力加速度。\n\n摆的核心不是物体来回走弧线，而是重力切向分量把它拉回平衡位置。大角度时周期会随振幅增加，空气阻力和支点摩擦也会使振幅逐渐衰减。摆的回复力来自重力的切向分量，而绳张力主要提供径向约束。摆长越长，周期越大；这也是古典摆钟能计时的物理基础。测量摆时，周期、频率和振幅要分开记录；阻尼会让振幅随时间改变。摆常用来识别系统的固有尺度，也能解释弹簧、摆和电路中的周期响应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "摆",
+          "url": "https://www.baidu.com/s?wd=%E6%91%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "摆",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%91%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pendulum",
+          "url": "https://en.wikipedia.org/w/index.php?search=pendulum"
+        }
       ]
     },
     {
@@ -2051,6 +4085,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "simple pendulum"
+      ],
+      "explanation_markdown": "单摆由轻线和小球构成，质量集中在摆球，线长固定。小角度摆动时，重力沿切向的分量近似与角位移成正比。常见公式是 $T=2\\pi\\sqrt{l/g}$，其中$T$ 是小角度周期，$l$ 是摆长，$g$ 是重力加速度。\n\n周期与摆球质量无关，这是单摆作为测量重力加速度工具的基础。公式要求摆角较小、线不可伸长且空气阻力可忽略；摆角变大时需要椭圆积分修正。小角近似把 $\\sin\\theta$ 看成 $\\theta$，这是单摆周期公式成立的关键。摆角较大时，周期会比公式预测略长，精密计时需修正。单摆常用来识别系统的固有尺度，也能解释弹簧、摆和电路中的周期响应。单摆通常围绕平衡位置展开，小扰动近似成立时才会出现清晰的周期和相位。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单摆",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E6%91%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单摆",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E6%91%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "simple pendulum",
+          "url": "https://en.wikipedia.org/w/index.php?search=simple%20pendulum"
+        }
       ]
     },
     {
@@ -2069,6 +4121,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "physical pendulum"
+      ],
+      "explanation_markdown": "物理摆是任意刚体绕固定水平轴在重力作用下摆动的系统。与单摆不同，质量分布和转动惯量都会影响周期。数学表达为 $T=2\\pi\\sqrt{I/(mgh)}$，其中$I$ 是绕悬点转动惯量，$m$ 是质量，$h$ 是质心到悬点距离。\n\n它适合处理杆、板、圆环等不能看作质点的小振幅摆动。公式来自重力矩与角位移的线性近似；若悬点接近质心，回复力矩变小，周期会显著变长。物理摆可用等效摆长理解，即把刚体替换成某个单摆具有相同周期。通过测周期还能反推转动惯量，是实验力学常用方法。物理摆通常围绕平衡位置展开，小扰动近似成立时才会出现清晰的周期和相位。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "物理摆",
+          "url": "https://www.baidu.com/s?wd=%E7%89%A9%E7%90%86%E6%91%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "物理摆",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%A9%E7%90%86%E6%91%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "physical pendulum",
+          "url": "https://en.wikipedia.org/w/index.php?search=physical%20pendulum"
+        }
       ]
     },
     {
@@ -2087,6 +4157,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "damping"
+      ],
+      "explanation_markdown": "阻尼是耗散机制对运动的抑制作用，常把机械能转化为热。它使自由振动的振幅逐渐减小。对应关系可写为 $F_d=-b\\dot x$，其中$F_d$ 是线性阻尼力，$b$ 是阻尼系数，$\\dot x$ 是速度。\n\n负号表示阻尼力通常反向于速度。空气阻力、液体黏滞和内部摩擦都可提供阻尼；弱阻尼保留振荡，强阻尼可能使系统不再来回越过平衡位置。阻尼越大，系统越快丢失机械能。适量阻尼能让仪表指针快速稳定，过小会长时间振荡，过大则反应迟缓甚至不再越过平衡位置。测量阻尼时，周期、频率和振幅要分开记录；阻尼会让振幅随时间改变。阻尼常用来识别系统的固有尺度，也能解释弹簧、摆和电路中的周期响应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阻尼",
+          "url": "https://www.baidu.com/s?wd=%E9%98%BB%E5%B0%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阻尼",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%BB%E5%B0%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "damping",
+          "url": "https://en.wikipedia.org/w/index.php?search=damping"
+        }
       ]
     },
     {
@@ -2105,6 +4193,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "damped oscillation"
+      ],
+      "explanation_markdown": "阻尼振动是在回复力之外还存在能量耗散的振动。系统仍可往复运动，但峰值随时间下降。一个方便的写法是 $x=Ae^{-\\gamma t}\\cos(\\omega_dt+\\varphi)$，其中$A$ 是初始幅度，$\\gamma$ 是衰减常数，$\\omega_d$ 是阻尼角频率，$\\varphi$ 是相位。\n\n轻阻尼时轨迹像被指数包络线包住的正弦曲线。阻尼越大，能量损失越快；在仪表、减震器和建筑抗振中，合适阻尼可快速消除不需要的振荡。阻尼振动的能量通常按指数衰减，振幅衰减比位移周期更慢。品质因数可用来衡量阻尼强弱，钟表和谐振器常追求小阻尼。阻尼振动常用来识别系统的固有尺度，也能解释弹簧、摆和电路中的周期响应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阻尼振动",
+          "url": "https://www.baidu.com/s?wd=%E9%98%BB%E5%B0%BC%E6%8C%AF%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阻尼振动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%BB%E5%B0%BC%E6%8C%AF%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "damped oscillation",
+          "url": "https://en.wikipedia.org/w/index.php?search=damped%20oscillation"
+        }
       ]
     },
     {
@@ -2123,6 +4229,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "forced oscillation"
+      ],
+      "explanation_markdown": "受迫振动由外部周期性驱动力维持，系统不只按自身固有频率运动。长期稳态频率通常等于驱动频率。定量上有 $m\\ddot x+b\\dot x+kx=F_0\\cos\\Omega t$，其中$m,b,k$ 是质量、阻尼和劲度系数，$F_0,\\Omega$ 是驱动力幅值和角频率。\n\n驱动频率接近固有频率时，振幅可能显著增大，这就是共振。实际系统中阻尼限制振幅并造成相位滞后；桥梁、扬声器和交流电路都常用受迫振动模型。稳态受迫振动的相位会落后于驱动力，落后程度随驱动频率变化。频率很低时系统跟随外力，频率很高时响应反而很小。受迫振动通常围绕平衡位置展开，小扰动近似成立时才会出现清晰的周期和相位。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "受迫振动",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%97%E8%BF%AB%E6%8C%AF%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "受迫振动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%97%E8%BF%AB%E6%8C%AF%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "forced oscillation",
+          "url": "https://en.wikipedia.org/w/index.php?search=forced%20oscillation"
+        }
       ]
     },
     {
@@ -2141,6 +4265,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "resonance"
+      ],
+      "explanation_markdown": "共振发生在外部驱动频率接近系统固有频率时，能量持续有效输入，振幅达到明显峰值。它是频率匹配带来的响应增强。通常记作 $\\Omega\\approx\\omega_0$，其中$\\Omega$ 是驱动角频率，$\\omega_0$ 是系统固有角频率。\n\n阻尼越小，共振峰越尖锐，最大振幅越大。共振可用于乐器发声和频率选择，也可能造成机械疲劳或结构破坏；实际设计常通过改变固有频率或增加阻尼来避开危险共振。共振不是无限增大，因为实际系统总有阻尼或非线性限制。调谐收音、乐器共鸣和核磁共振都利用选择性响应；桥梁抗风则要避开危险频率。测量共振时，周期、频率和振幅要分开记录；阻尼会让振幅随时间改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "共振",
+          "url": "https://www.baidu.com/s?wd=%E5%85%B1%E6%8C%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "共振",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%B1%E6%8C%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "resonance",
+          "url": "https://en.wikipedia.org/w/index.php?search=resonance"
+        }
       ]
     },
     {
@@ -2159,6 +4301,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "wave"
+      ],
+      "explanation_markdown": "波是扰动在空间中传播的过程，介质或场的局部变化把能量和相位传向远处。物质本身通常不随波整体迁移。在这种约定下有 $y=f(x-vt)$，其中$y$ 是扰动量，$x$ 是位置，$v$ 是波速，$t$ 是时间。\n\n绳波、水波和声波都体现相邻部分之间的耦合。波的核心量包括振幅、频率、波长和相位；同一频率的波在不同介质中速度不同，波长也随之改变。波传递能量和信息，却不要求介质整体前进。绳上一段质点上下振动，波峰沿绳传播；这种局部振动和整体传播的分离很重要。使用波时要注意相位约定；反射、叠加或边界条件会改变可观察图样。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "波",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "波",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wave",
+          "url": "https://en.wikipedia.org/w/index.php?search=wave"
+        }
       ]
     },
     {
@@ -2177,6 +4337,24 @@
         "x-t图 v-t图 参数方程",
         "轨迹 图像",
         "wave motion"
+      ],
+      "explanation_markdown": "波动强调扰动按一定规律传播和演化，而不只是某一点在振动。它把时间变化与空间变化联系起来。可写成 $\\partial^2y/\\partial t^2=v^2\\partial^2y/\\partial x^2$，其中$y$ 是扰动，$v$ 是波速，偏导数表示时间和空间变化。\n\n这个波动方程说明局部曲率会导致加速度，从而让扰动向外传播。它适用于小振幅线性波；非线性、耗散或色散介质中，波形会畸变或不同频率传播速度不同。波动方程的解可以向左右两个方向传播，也可以叠加成驻波。边界条件决定允许的模式，介质参数决定传播速度和是否出现反射。波动要同时给出空间周期、时间周期和传播方向，否则只看某一时刻图像容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "波动",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A2%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "波动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A2%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wave motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=wave%20motion"
+        }
       ]
     },
     {
@@ -2195,6 +4373,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "mechanical wave"
+      ],
+      "explanation_markdown": "机械波依赖物质介质传播，扰动通过介质内部的弹性和惯性传递。真空中没有声波这样的机械波。常见公式是 $v=\\sqrt{M/\\rho}$，其中$v$ 是波速，$M$ 是相应弹性模量，$\\rho$ 是介质密度。\n\n介质越硬、密度越小，传播通常越快。声波、绳波和地震波都是机械波；它们传递能量而不是把介质整体带走，介质质点多在平衡位置附近振动。机械波离不开介质的弹性恢复作用和惯性。声波不能在真空中传播，而电磁波可以；这一区别来自传播机制不同。机械波体现扰动在介质或场中的传播，能量在传播，介质质点通常只在附近振动。使用机械波时要注意相位约定；反射、叠加或边界条件会改变可观察图样。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "机械波",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%BA%E6%A2%B0%E6%B3%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "机械波",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%BA%E6%A2%B0%E6%B3%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mechanical wave",
+          "url": "https://en.wikipedia.org/w/index.php?search=mechanical%20wave"
+        }
       ]
     },
     {
@@ -2213,6 +4409,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "transverse wave"
+      ],
+      "explanation_markdown": "横波中介质振动方向垂直于传播方向，绳上的上下振动沿水平方向传播就是典型图像。数学表达为 $\\mathbf u\\cdot\\mathbf k=0$，其中$\\mathbf u$ 是振动位移方向，$\\mathbf k$ 是沿传播方向的波矢。\n\n横波可以具有偏振，这是纵波没有的特征。绳波、固体中的剪切波和电磁波都可表现为横波；液体和气体内部通常难以支持静态剪切，因此普通声波不是横波。横波的偏振方向可被选择或过滤，因此偏振是识别横波的重要证据。弦波中绳元上下动，波沿绳传播，两个方向清楚分离。使用横波时要注意相位约定；反射、叠加或边界条件会改变可观察图样。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "横波",
+          "url": "https://www.baidu.com/s?wd=%E6%A8%AA%E6%B3%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "横波",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A8%AA%E6%B3%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "transverse wave",
+          "url": "https://en.wikipedia.org/w/index.php?search=transverse%20wave"
+        }
       ]
     },
     {
@@ -2231,6 +4445,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "longitudinal wave"
+      ],
+      "explanation_markdown": "纵波中介质振动方向与传播方向平行，表现为压缩和稀疏交替向前传递。空气中的声波就是纵波。对应关系可写为 $\\mathbf u\\parallel\\mathbf k$，其中$\\mathbf u$ 是介质位移方向，$\\mathbf k$ 是波矢。\n\n纵波传播需要介质能被压缩并恢复。它没有横波那样的偏振方向，但有密度、压强或位移的周期变化；声学、地震纵波和弹簧中的压缩波都用这种模型。纵波常用压强或密度变化来描述，而不只看位移。声波传播时空气分子在传播方向附近来回振动，平均位置并不随声音远去。纵波要同时给出空间周期、时间周期和传播方向，否则只看某一时刻图像容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "纵波",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%B5%E6%B3%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "纵波",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%B5%E6%B3%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "longitudinal wave",
+          "url": "https://en.wikipedia.org/w/index.php?search=longitudinal%20wave"
+        }
       ]
     },
     {
@@ -2249,6 +4481,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "wavelength"
+      ],
+      "explanation_markdown": "波长是同一时刻相邻同相位点之间的距离，例如两个相邻波峰的间隔。它描述波在空间中重复的尺度。一个方便的写法是 $\\lambda=vT=v/f$，其中$\\lambda$ 是波长，$v$ 是波速，$T$ 是周期，$f$ 是频率。\n\n波长由波速和频率共同决定。波进入新介质时，频率由波源保持，波速变化会导致波长变化；衍射、干涉和驻波条件都对波长非常敏感。波长是空间周期，不是单个介质质点走过的路程。固定两端的弦只能容纳特定波长，这直接决定乐器基频和泛音。波长体现扰动在介质或场中的传播，能量在传播，介质质点通常只在附近振动。使用波长时要注意相位约定；反射、叠加或边界条件会改变可观察图样。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "波长",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A2%E9%95%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "波长",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A2%E9%95%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wavelength",
+          "url": "https://en.wikipedia.org/w/index.php?search=wavelength"
+        }
       ]
     },
     {
@@ -2267,6 +4517,24 @@
         "v=Δx/Δt dx/dt v-t图",
         "时间 路程 方向",
         "wave speed"
+      ],
+      "explanation_markdown": "波速是波形或相位向前传播的速度，取决于介质性质，而不一定等于介质质点的振动速度。定量上有 $v=\\lambda f$，其中$v$ 是波速，$\\lambda$ 是波长，$f$ 是频率。\n\n绳波速度由张力和线密度决定，声速由介质弹性和密度决定。波速改变会让波长改变；在色散介质中，不同频率的波速不同，脉冲传播还要区分相速度和群速度。波速由介质和波类型决定，通常不是由振幅决定。绳波增大张力会提高波速，声波在热空气中传播更快，这些都来自介质参数变化。使用波速时要注意相位约定；反射、叠加或边界条件会改变可观察图样。波速要同时给出空间周期、时间周期和传播方向，否则只看某一时刻图像容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "波速",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A2%E9%80%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "波速",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A2%E9%80%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wave speed",
+          "url": "https://en.wikipedia.org/w/index.php?search=wave%20speed"
+        }
       ]
     },
     {
@@ -2285,6 +4553,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "wave number"
+      ],
+      "explanation_markdown": "波数表示单位长度内相位变化的快慢，是空间版的角频率。波长越短，波数越大。通常记作 $k=2\\pi/\\lambda$，其中$k$ 是波数，$\\lambda$ 是波长。\n\n在平面波 $A\\cos(kx-\\omega t)$ 中，$k$ 决定空间振荡密度。波数适合写波函数、干涉相位和色散关系；它的方向推广为波矢，指向波传播方向。波数越大，单位长度内相位转得越快。量子力学中动量也与波数相关；在普通波动里，波数常和角频率一起组成色散关系。波数要同时给出空间周期、时间周期和传播方向，否则只看某一时刻图像容易误判。波数体现扰动在介质或场中的传播，能量在传播，介质质点通常只在附近振动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "波数",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A2%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "波数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A2%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wave number",
+          "url": "https://en.wikipedia.org/w/index.php?search=wave%20number"
+        }
       ]
     },
     {
@@ -2303,6 +4589,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "wave function"
+      ],
+      "explanation_markdown": "波函数给出波在各位置和各时刻的扰动值，包含振幅、相位、频率和波长信息。经典波中它可表示位移、压强或电场分量。在这种约定下有 $y=A\\cos(kx-\\omega t+\\varphi)$，其中$A$ 是振幅，$k$ 是波数，$\\omega$ 是角频率，$\\varphi$ 是初相位。\n\n这个形式描述沿正 $x$ 方向传播的简谐波。实际波形可由多个简谐波叠加而成；边界反射、阻尼和介质色散会改变振幅或相位随空间的变化。经典波函数可取实数扰动，也可用复指数表示以简化相位计算。必须说明它代表哪种物理量，例如横向位移、声压或电场分量。波函数体现扰动在介质或场中的传播，能量在传播，介质质点通常只在附近振动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "波函数",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A2%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "波函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A2%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wave function",
+          "url": "https://en.wikipedia.org/w/index.php?search=wave%20function"
+        }
       ]
     },
     {
@@ -2321,6 +4625,24 @@
         "Δr=r2-r1 s x-t图",
         "起末点 轨迹 坐标",
         "principle of superposition of waves"
+      ],
+      "explanation_markdown": "波的叠加原理说，在线性介质中多个波相遇时，总扰动等于各波单独扰动的代数和。相遇后各波继续传播。可写成 $y=\\sum_i y_i$，其中$y_i$ 是第 $i$ 列波单独产生的扰动，$y$ 是合扰动。\n\n干涉、拍频和驻波都来自叠加。原理依赖线性近似，小振幅波通常满足；若介质响应非线性，波相遇会产生新频率、冲击波或形状改变。叠加原理解释了两列波相遇时可能局部增强，也可能局部抵消。水面波纹交叉后继续前进，是线性叠加近似的直观表现。使用波的叠加原理时要注意相位约定；反射、叠加或边界条件会改变可观察图样。波的叠加原理要同时给出空间周期、时间周期和传播方向，否则只看某一时刻图像容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "波的叠加原理",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A2%E7%9A%84%E5%8F%A0%E5%8A%A0%E5%8E%9F%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "波的叠加原理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A2%E7%9A%84%E5%8F%A0%E5%8A%A0%E5%8E%9F%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "principle of superposition of waves",
+          "url": "https://en.wikipedia.org/w/index.php?search=principle%20of%20superposition%20of%20waves"
+        }
       ]
     },
     {
@@ -2339,6 +4661,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "standing wave"
+      ],
+      "explanation_markdown": "驻波由两列频率相同、振幅相同、反向传播的波叠加形成，波形不整体前进，而是在固定位置振动。常见公式是 $y=2A\\sin kx\\cos\\omega t$，其中$A$ 是单列波振幅，$k$ 是波数，$\\omega$ 是角频率。\n\n驻波具有固定的波节和波腹，是弦乐器、管乐器和谐振腔的基本图像。能量在空间中来回交换，平均上没有像行波那样单向传输。驻波不是一列静止的波，而是两个行波叠加后的固定振动图样。弦长与半波长的匹配决定允许频率，因此边界条件极其关键。驻波要同时给出空间周期、时间周期和传播方向，否则只看某一时刻图像容易误判。驻波体现扰动在介质或场中的传播，能量在传播，介质质点通常只在附近振动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "驻波",
+          "url": "https://www.baidu.com/s?wd=%E9%A9%BB%E6%B3%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "驻波",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%A9%BB%E6%B3%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "standing wave",
+          "url": "https://en.wikipedia.org/w/index.php?search=standing%20wave"
+        }
       ]
     },
     {
@@ -2357,6 +4697,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "node"
+      ],
+      "explanation_markdown": "波节是驻波中始终不振动的位置，那里来自两列反向波的扰动总是相互抵消。弦固定端常形成波节。数学表达为 $\\sin kx=0$，其中$k$ 是波数，$x$ 是位置，条件给出驻波位移恒为零的点。\n\n相邻波节间距为半个波长。波节的位置由边界条件决定，能用来判断允许的驻波模式；在声学管中，位移波节和压强波节并不总在同一处。波节处位移为零，但能量并非永久消失；相邻区域仍在振动，能量在动能和势能之间交换。固定端必为位移波节。波节体现扰动在介质或场中的传播，能量在传播，介质质点通常只在附近振动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "波节",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A2%E8%8A%82%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "波节",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A2%E8%8A%82"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "node",
+          "url": "https://en.wikipedia.org/w/index.php?search=node"
+        }
       ]
     },
     {
@@ -2375,6 +4733,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "antinode"
+      ],
+      "explanation_markdown": "波腹是驻波中振幅最大的区域，来自反向传播波的同相增强。它与波节交替出现。对应关系可写为 $|\\sin kx|=1$，其中$k$ 是波数，$x$ 是位置，条件给出位移振幅最大的点。\n\n相邻波腹之间也相隔半个波长，波腹到相邻波节相隔四分之一波长。弦的中央、开管口附近或共振腔中的强振动区常对应波腹。波腹处位移振幅最大，但某些时刻速度也会同时为零，例如达到最大位移时。开口管的位移波腹常对应压强波节。使用波腹时要注意相位约定；反射、叠加或边界条件会改变可观察图样。波腹要同时给出空间周期、时间周期和传播方向，否则只看某一时刻图像容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "波腹",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A2%E8%85%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "波腹",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A2%E8%85%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "antinode",
+          "url": "https://en.wikipedia.org/w/index.php?search=antinode"
+        }
       ]
     },
     {
@@ -2393,6 +4769,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "doppler effect"
+      ],
+      "explanation_markdown": "多普勒效应是波源和观察者相对运动导致接收频率改变的现象。靠近时波峰到达更密，远离时到达更稀。一个方便的写法是 $f'=f\\frac{v\\pm v_o}{v\\mp v_s}$，其中$f'$ 是接收频率，$f$ 是波源频率，$v_o,v_s$ 是观察者和波源沿连线方向速度。\n\n救护车音调变化、雷达测速和天体红移都体现这种效应。符号取法要根据靠近或远离确定；对光波，高速情形还要使用相对论多普勒公式。多普勒效应关注的是接收间隔改变。波源运动会改变波长，观察者运动会改变遇到波峰的速率；两种情形在经典声波中公式符号不同。多普勒效应要同时给出空间周期、时间周期和传播方向，否则只看某一时刻图像容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "多普勒效应",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%9A%E6%99%AE%E5%8B%92%E6%95%88%E5%BA%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "多普勒效应",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%9A%E6%99%AE%E5%8B%92%E6%95%88%E5%BA%94"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "doppler effect",
+          "url": "https://en.wikipedia.org/w/index.php?search=doppler%20effect"
+        }
       ]
     },
     {
@@ -2411,6 +4805,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "wave source"
+      ],
+      "explanation_markdown": "波源是产生扰动并把能量输入介质或场的对象。它的振动频率通常决定发出波的频率。定量上有 $y_s=A\\cos\\omega t$，其中$y_s$ 是波源位移，$A$ 是振幅，$\\omega$ 是角频率。\n\n声带、扬声器、振动的绳端和水面拍打点都可作为波源。波源性质决定初始相位和强度，而介质性质决定传播速度；二者共同决定观察到的波形。波源频率一旦确定，进入不同介质后频率通常不变。波源强度影响振幅和能流，波源形状会影响发出的波面是近似球面、柱面还是平面。波源体现扰动在介质或场中的传播，能量在传播，介质质点通常只在附近振动。使用波源时要注意相位约定；反射、叠加或边界条件会改变可观察图样。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "波源",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A2%E6%BA%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "波源",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A2%E6%BA%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wave source",
+          "url": "https://en.wikipedia.org/w/index.php?search=wave%20source"
+        }
       ]
     },
     {
@@ -2429,6 +4841,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "wavefront"
+      ],
+      "explanation_markdown": "波面是同一时刻相位相同的点组成的面，表示波峰或任一固定相位在空间中的几何位置。波线通常垂直于波面。通常记作 $\\phi(\\mathbf r,t)=\\mathrm{const}$，其中$\\phi$ 是相位函数，$\\mathbf r$ 是位置，$t$ 是时间。\n\n平面波的波面是平行平面，点源远处近似球面波面。反射、折射和惠更斯原理都常用波面语言；在非均匀介质中，波面弯曲反映传播速度随位置改变。波面越密，说明沿传播方向相位变化越快。光学中的反射和折射常用波面法线追踪传播方向，声波在非均匀空气中也会因波面弯曲而偏折。使用波面时要注意相位约定；反射、叠加或边界条件会改变可观察图样。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "波面",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A2%E9%9D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "波面",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A2%E9%9D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wavefront",
+          "url": "https://en.wikipedia.org/w/index.php?search=wavefront"
+        }
       ]
     },
     {
@@ -2447,6 +4877,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "vibration source"
+      ],
+      "explanation_markdown": "振源是机械振动的发起者，它把局部周期运动传给周围系统。作为波源时，振源的频率决定波的频率。在这种约定下有 $x_s=A\\cos(\\omega t+\\varphi)$，其中$x_s$ 是振源位移，$A$ 是振幅，$\\omega$ 是角频率，$\\varphi$ 是初相位。\n\n音叉、扬声器膜片和被拨动的弦都是振源。振源与介质耦合越强，传出的能量越大；若驱动频率接近系统固有频率，还可能激发共振。振源与波源的区别在于强调局部振动机制。一个振源若与介质耦合很弱，虽然自身振动明显，向外辐射的波能量可能很小。振源要同时给出空间周期、时间周期和传播方向，否则只看某一时刻图像容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "振源",
+          "url": "https://www.baidu.com/s?wd=%E6%8C%AF%E6%BA%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "振源",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8C%AF%E6%BA%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vibration source",
+          "url": "https://en.wikipedia.org/w/index.php?search=vibration%20source"
+        }
       ]
     },
     {
@@ -2465,6 +4913,24 @@
         "ρ=m/V p=F/S ρgV",
         "液体深度 排开体积",
         "medium"
+      ],
+      "explanation_markdown": "介质是机械波传播所依赖的物质环境，它通过弹性恢复和惯性把扰动从一个区域传到另一区域。可写成 $v=\\sqrt{M/\\rho}$，其中$v$ 是机械波速，$M$ 是相应弹性模量，$\\rho$ 是介质密度。\n\n空气、水、绳和固体都可作为不同类型机械波的介质。介质会影响波速、衰减和色散；真空没有机械介质，所以声音不能在真空传播。介质不仅决定波速，也决定衰减和可传播的波型。固体能传播横波和纵波，液体内部通常只能传播纵向压缩波。介质体现扰动在介质或场中的传播，能量在传播，介质质点通常只在附近振动。使用介质时要注意相位约定；反射、叠加或边界条件会改变可观察图样。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "介质",
+          "url": "https://www.baidu.com/s?wd=%E4%BB%8B%E8%B4%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "介质",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BB%8B%E8%B4%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "medium",
+          "url": "https://en.wikipedia.org/w/index.php?search=medium"
+        }
       ]
     },
     {
@@ -2483,6 +4949,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "oscillator"
+      ],
+      "explanation_markdown": "振子是能围绕平衡位置振动的基本单元，可以是弹簧上的质量块、摆球或介质中的小体元。它把复杂振动拆成局部自由度。常见公式是 $\\ddot x+\\omega_0^2x=0$，其中$x$ 是偏离平衡位置的位移，$\\omega_0$ 是固有角频率。\n\n理想振子没有阻尼时会持续简谐运动。实际振子常受阻尼和驱动影响；大量耦合振子可以形成波，固体晶格振动和弦波都能从这种图像出发理解。振子可作为复杂系统的基本模块。许多耦合振子连在一起，会出现正常模式；每个模式像一个独立振子，具有自己的频率。振子常用来识别系统的固有尺度，也能解释弹簧、摆和电路中的周期响应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "振子",
+          "url": "https://www.baidu.com/s?wd=%E6%8C%AF%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "振子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8C%AF%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "oscillator",
+          "url": "https://en.wikipedia.org/w/index.php?search=oscillator"
+        }
       ]
     },
     {
@@ -2501,6 +4985,24 @@
         "ρ=m/V p=F/S ρgV",
         "液体深度 排开体积",
         "fluid"
+      ],
+      "explanation_markdown": "流体包括液体和气体，特点是不能长期承受静态剪切，应力会使它持续变形或流动。它没有固定形状，会适应容器。数学表达为 $\\tau_{\\rm static}=0$，其中$\\tau_{\\rm static}$ 是静止流体内部切向应力。\n\n流体可用密度、压强和速度场描述。液体通常近似不可压缩，气体更容易压缩；当尺度远大于分子间距时，连续介质近似才成立。流体静止时只能承受法向压强，不能维持剪切形状。它的运动常用速度场描述，而不是追踪每个分子；这依赖连续介质近似。流体常以连续介质近似处理，尺度小到接近分子平均距离时这种写法会失效。讨论流体前要说明流动是否稳定、是否可压缩、黏性是否可忽略。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "流体",
+          "url": "https://www.baidu.com/s?wd=%E6%B5%81%E4%BD%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "流体",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B5%81%E4%BD%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fluid",
+          "url": "https://en.wikipedia.org/w/index.php?search=fluid"
+        }
       ]
     },
     {
@@ -2519,6 +5021,24 @@
         "ρ=m/V p=F/S ρgV",
         "液体深度 排开体积",
         "ideal fluid"
+      ],
+      "explanation_markdown": "理想流体忽略黏滞和热传导，常再假设不可压缩。它是分析管流、喷流和伯努利关系的简化模型。对应关系可写为 $\\eta=0,\\quad \\nabla\\cdot\\mathbf v=0$，其中$\\eta$ 是黏度，$\\mathbf v$ 是速度场，第二式表示不可压缩流的体积守恒。\n\n真实流体都有黏性，边界层、湍流和能量损失会偏离理想模型。理想流体适合低黏性、远离壁面或只关心主导压强速度关系的场景。理想流体中没有黏性耗散，机械能沿流线可保持简单关系。它适合建立第一近似，但不能解释管壁阻力、漩涡耗散和边界层分离。讨论理想流体前要说明流动是否稳定、是否可压缩、黏性是否可忽略。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "理想流体",
+          "url": "https://www.baidu.com/s?wd=%E7%90%86%E6%83%B3%E6%B5%81%E4%BD%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "理想流体",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%90%86%E6%83%B3%E6%B5%81%E4%BD%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ideal fluid",
+          "url": "https://en.wikipedia.org/w/index.php?search=ideal%20fluid"
+        }
       ]
     },
     {
@@ -2537,6 +5057,24 @@
         "ρ=m/V p=F/S ρgV",
         "液体深度 排开体积",
         "density"
+      ],
+      "explanation_markdown": "密度表示单位体积含有多少质量，是连接质量分布与空间体积的局部或平均量。均匀物体密度处处相同，非均匀物体需用位置函数。一个方便的写法是 $\\rho=m/V$，其中$\\rho$ 是平均密度，$m$ 是质量，$V$ 是体积。\n\n在流体中，密度决定浮力、声速和连续性方程。气体密度会随压强和温度明显改变，液体和固体常在普通条件下近似恒定；局部密度可写成 $dm/dV$。密度可以是平均量，也可以是局部场量。浮力问题常用流体密度，转动惯量和质心计算常用物体密度；二者含义相同但对象不同。密度在管流、浮沉和喷射中最常见，压强、速度和高度通常需要一起看。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "密度",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%86%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "密度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%86%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "density",
+          "url": "https://en.wikipedia.org/w/index.php?search=density"
+        }
       ]
     },
     {
@@ -2555,6 +5093,24 @@
         "ρ=m/V p=F/S ρgV",
         "液体深度 排开体积",
         "pressure"
+      ],
+      "explanation_markdown": "压强是单位面积上受到的法向力，反映流体或接触面挤压的强弱。它是标量，但作用在面上时方向沿法线。定量上有 $p=F_\\perp/S$，其中$p$ 是压强，$F_\\perp$ 是垂直于面积的力，$S$ 是受力面积。\n\n静止流体同一深度各方向压强相同，并随深度增加。压强不同于压力：压力是力，压强是力对面积的分布；气体状态方程和液体静力学都以它为核心变量。压强在流体中向各方向传递，液压机正利用这一点放大力。热学中气体压强与分子热运动相关，力学中液体压强还随深度增加。压强常以连续介质近似处理，尺度小到接近分子平均距离时这种写法会失效。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "压强",
+          "url": "https://www.baidu.com/s?wd=%E5%8E%8B%E5%BC%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "压强",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8E%8B%E5%BC%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pressure",
+          "url": "https://en.wikipedia.org/w/index.php?search=pressure"
+        }
       ]
     },
     {
@@ -2573,6 +5129,24 @@
         "ρ=m/V p=F/S ρgV",
         "液体深度 排开体积",
         "buoyancy"
+      ],
+      "explanation_markdown": "浮力是流体对浸入物体的合压力向上的结果，来自下方压强通常大于上方压强。它不要求物体一定漂浮。通常记作 $F_b=\\rho_f gV_{\\rm disp}$，其中$F_b$ 是浮力，$\\rho_f$ 是流体密度，$V_{\\rm disp}$ 是排开流体体积。\n\n浮力大小等于排开流体的重力。物体上浮、悬浮或下沉取决于浮力与自身重力比较；在非均匀流体或加速参考系中，有效重力和密度分布也会影响浮力。浮力作用点可看作排开流体体积的几何中心，称为浮心。漂浮稳定性不仅看浮力大小，还要看浮心和重心相对位置。讨论浮力前要说明流动是否稳定、是否可压缩、黏性是否可忽略。浮力在管流、浮沉和喷射中最常见，压强、速度和高度通常需要一起看。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "浮力",
+          "url": "https://www.baidu.com/s?wd=%E6%B5%AE%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "浮力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B5%AE%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "buoyancy",
+          "url": "https://en.wikipedia.org/w/index.php?search=buoyancy"
+        }
       ]
     },
     {
@@ -2591,6 +5165,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "archimedes principle"
+      ],
+      "explanation_markdown": "阿基米德原理指出，浸在流体中的物体受到的浮力等于它排开的流体重量。它把复杂压强分布转化为排开体积。在这种约定下有 $F_b=\\rho_f gV_{\\rm disp}$，其中$F_b$ 是浮力，$\\rho_f$ 是流体密度，$g$ 是重力加速度，$V_{\\rm disp}$ 是排开体积。\n\n船能漂浮、密度计能测液体密度，都依赖这个原理。它适用于静止或准静态流体；若流体快速流动，升力、阻力和压力差还要用流体动力学分析。这个原理可用于液体也可用于气体，例如热气球受到空气浮力。若物体部分浸入，排开体积只取浸入部分，平衡时浮力等于物体重力。阿基米德原理在管流、浮沉和喷射中最常见，压强、速度和高度通常需要一起看。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阿基米德原理",
+          "url": "https://www.baidu.com/s?wd=%E9%98%BF%E5%9F%BA%E7%B1%B3%E5%BE%B7%E5%8E%9F%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阿基米德原理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%BF%E5%9F%BA%E7%B1%B3%E5%BE%B7%E5%8E%9F%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "archimedes principle",
+          "url": "https://en.wikipedia.org/w/index.php?search=archimedes%20principle"
+        }
       ]
     },
     {
@@ -2609,6 +5201,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "continuity equation"
+      ],
+      "explanation_markdown": "连续性方程表达流体质量守恒：流管中没有凭空产生或消失的流体。截面变小处，流速通常要增大。可写成 $\\rho Av=\\mathrm{const}$，其中$\\rho$ 是密度，$A$ 是截面积，$v$ 是截面平均流速。\n\n不可压缩流体中密度近似恒定，于是有 $Av$ 守恒。河道变窄水流变急、喷嘴加速都可由此理解；若流体可压缩或有支流，必须使用更一般的局部守恒形式。连续性方程是质量守恒的流体形式。消防水管出口变窄时水速变大，正是同样体积流量通过更小截面积的结果。连续性方程常以连续介质近似处理，尺度小到接近分子平均距离时这种写法会失效。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "连续性方程",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "连续性方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "continuity equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=continuity%20equation"
+        }
       ]
     },
     {
@@ -2627,6 +5237,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "bernoulli equation"
+      ],
+      "explanation_markdown": "伯努利方程把理想流体沿流线的压强、动能密度和重力势能密度相加守恒。它体现流速变大时压强可能降低。常见公式是 $p+\\frac12\\rho v^2+\\rho gh=\\mathrm{const}$，其中$p$ 是压强，$\\rho$ 是密度，$v$ 是流速，$h$ 是高度。\n\n它要求稳恒、不可压缩、无黏且沿同一流线。文丘里管、喷雾器和机翼低速近似都可借此理解；真实流动有黏性损失时，常数项会沿流动方向降低。伯努利方程中的三项可看作单位体积的压强能、动能和重力势能。它不能随意跨越有泵、涡轮或强黏性损失的区域使用。讨论伯努利方程前要说明流动是否稳定、是否可压缩、黏性是否可忽略。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "伯努利方程",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "伯努利方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bernoulli equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=bernoulli%20equation"
+        }
       ]
     },
     {
@@ -2645,6 +5273,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "viscous force"
+      ],
+      "explanation_markdown": "黏滞力是流体内部或流体与物体相对运动时产生的阻碍作用，来源于相邻流层之间的动量交换。数学表达为 $F=6\\pi\\eta rv$，其中$F$ 是小球在低雷诺数流体中的阻力，$\\eta$ 是黏度，$r$ 是球半径，$v$ 是相对速度。\n\n这个斯托克斯公式只适用于缓慢、层流、小球条件。黏滞力会耗散机械能，使落体出现终端速度，也决定微小颗粒沉降、液体阻尼和润滑行为。黏滞力与速度相关，和干摩擦近似常量的性质不同。微小颗粒在液体中缓慢沉降时，重力、浮力和黏滞阻力最终达到平衡。黏滞力在管流、浮沉和喷射中最常见，压强、速度和高度通常需要一起看。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "黏滞力",
+          "url": "https://www.baidu.com/s?wd=%E9%BB%8F%E6%BB%9E%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "黏滞力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%BB%8F%E6%BB%9E%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "viscous force",
+          "url": "https://en.wikipedia.org/w/index.php?search=viscous%20force"
+        }
       ]
     },
     {
@@ -2663,6 +5309,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "viscosity"
+      ],
+      "explanation_markdown": "黏度衡量流体抵抗剪切流动的能力。蜂蜜比水难流动，正是因为黏度更大。对应关系可写为 $\\tau=\\eta\\,dv/dy$，其中$\\tau$ 是剪切应力，$\\eta$ 是黏度，$dv/dy$ 是垂直于流动方向的速度梯度。\n\n黏度越大，相邻流层速度差产生的剪切应力越强。牛顿流体中黏度近似为常数；血液、泥浆和高分子溶液常表现为非牛顿流体，黏度会随剪切速率改变。黏度也随温度显著改变，液体升温通常黏度降低，气体则常相反。润滑油选择、血液流动和岩浆流动都要考虑黏度大小。黏度常以连续介质近似处理，尺度小到接近分子平均距离时这种写法会失效。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "黏度",
+          "url": "https://www.baidu.com/s?wd=%E9%BB%8F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "黏度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%BB%8F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "viscosity",
+          "url": "https://en.wikipedia.org/w/index.php?search=viscosity"
+        }
       ]
     },
     {
@@ -2681,6 +5345,24 @@
         "F=kx",
         "伸长 压缩 劲度系数",
         "elastic deformation"
+      ],
+      "explanation_markdown": "弹性形变是外力撤去后物体能够恢复原状的形变。形变过程中能量暂时储存在材料内部，而不是永久损失。一个方便的写法是 $F=-kx$，其中$F$ 是恢复力，$k$ 是等效劲度系数，$x$ 是形变量。\n\n弹簧伸缩、细杆微小拉伸和橡胶小范围变形都可近似弹性。若应力超过弹性限度，材料会出现塑性形变或断裂；因此弹性公式总有适用范围。弹性形变允许用势能和恢复力分析振动。撤力后能恢复原状是关键；若有残余形变，就说明部分机械能进入不可逆结构变化。测量弹性形变时要区分拉伸、剪切和压缩，因为对应的受力方向和几何变化不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弹性形变",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B9%E6%80%A7%E5%BD%A2%E5%8F%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弹性形变",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B9%E6%80%A7%E5%BD%A2%E5%8F%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "elastic deformation",
+          "url": "https://en.wikipedia.org/w/index.php?search=elastic%20deformation"
+        }
       ]
     },
     {
@@ -2699,6 +5381,24 @@
         "σ=F/S ε=ΔL/L E=σ/ε",
         "杆件 截面积 剪切",
         "stress"
+      ],
+      "explanation_markdown": "应力是材料内部单位面积上传递的内力，用来描述拉伸、压缩或剪切时材料承受的强度。它比总力更能反映局部受载。定量上有 $\\sigma=F/S$，其中$\\sigma$ 是正应力，$F$ 是截面内力，$S$ 是截面积。\n\n同样的力作用在更小截面上会产生更大应力，更容易导致屈服或断裂。应力可有正应力和剪切应力，完整描述需要张量；简单拉压中标量公式已足够。应力集中会使孔洞、裂纹尖端更容易破坏，即使平均应力不大。材料强度设计关注最大应力是否超过屈服强度或断裂强度。应力把微观键合的回复趋势表现为宏观刚度，是材料选择和结构设计的基本指标。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "应力",
+          "url": "https://www.baidu.com/s?wd=%E5%BA%94%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "应力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BA%94%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stress",
+          "url": "https://en.wikipedia.org/w/index.php?search=stress"
+        }
       ]
     },
     {
@@ -2717,6 +5417,24 @@
         "σ=F/S ε=ΔL/L E=σ/ε",
         "杆件 截面积 剪切",
         "strain"
+      ],
+      "explanation_markdown": "应变衡量材料形变相对原尺寸的比例，反映变形程度而不是受力大小。拉伸、压缩和剪切都有对应应变。通常记作 $\\varepsilon=\\Delta L/L$，其中$\\varepsilon$ 是线应变，$\\Delta L$ 是长度变化，$L$ 是原长。\n\n应变没有量纲，因此适合比较不同长度试样的变形。小应变范围内，应力与应变常近似线性；大形变时几何和材料非线性会变得重要。应变可为拉伸正应变、压缩负应变，也可推广为剪切应变。由于它是相对变化，长杆和短杆伸长同样百分比时应变相同。应变只在小形变和线性响应附近最可靠，超过弹性限度后材料会出现塑性或断裂。测量应变时要区分拉伸、剪切和压缩，因为对应的受力方向和几何变化不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "应变",
+          "url": "https://www.baidu.com/s?wd=%E5%BA%94%E5%8F%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "应变",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BA%94%E5%8F%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "strain",
+          "url": "https://en.wikipedia.org/w/index.php?search=strain"
+        }
       ]
     },
     {
@@ -2735,6 +5453,24 @@
         "σ=F/S ε=ΔL/L E=σ/ε",
         "杆件 截面积 剪切",
         "youngs modulus"
+      ],
+      "explanation_markdown": "杨氏模量衡量材料抵抗拉伸或压缩的刚硬程度。数值越大，同样应力下产生的线应变越小。在这种约定下有 $E=\\sigma/\\varepsilon$，其中$E$ 是杨氏模量，$\\sigma$ 是正应力，$\\varepsilon$ 是线应变。\n\n钢的杨氏模量远大于橡胶，因此更难被拉长。这个比例只适用于线弹性阶段；超过屈服后，应力应变关系不再用单一常数描述。杨氏模量只描述轴向拉压刚度，不能替代剪切模量或体积模量。材料手册中的数值通常对应小应变线性区，温度和加工状态会影响它。测量杨氏模量时要区分拉伸、剪切和压缩，因为对应的受力方向和几何变化不同。杨氏模量把微观键合的回复趋势表现为宏观刚度，是材料选择和结构设计的基本指标。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "杨氏模量",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%A8%E6%B0%8F%E6%A8%A1%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "杨氏模量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%A8%E6%B0%8F%E6%A8%A1%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "youngs modulus",
+          "url": "https://en.wikipedia.org/w/index.php?search=youngs%20modulus"
+        }
       ]
     },
     {
@@ -2753,6 +5489,24 @@
         "σ=F/S ε=ΔL/L E=σ/ε",
         "杆件 截面积 剪切",
         "shear modulus"
+      ],
+      "explanation_markdown": "剪切模量衡量材料抵抗形状改变的能力，特别是相邻层相对滑移时的弹性响应。它对应剪切而非拉压。可写成 $G=\\tau/\\gamma$，其中$G$ 是剪切模量，$\\tau$ 是剪切应力，$\\gamma$ 是剪切应变。\n\n固体能承受静态剪切，因此有非零剪切模量；理想静止流体不能长期承受剪切，等效剪切模量为零。扭转杆、剪切梁和地震横波都与它有关。剪切模量与材料抵抗角变形有关。圆轴扭转、剪切波传播和胶层变形都要用它；液体流动时则表现为黏度而非静态剪切模量。剪切模量把微观键合的回复趋势表现为宏观刚度，是材料选择和结构设计的基本指标。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "剪切模量",
+          "url": "https://www.baidu.com/s?wd=%E5%89%AA%E5%88%87%E6%A8%A1%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "剪切模量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%89%AA%E5%88%87%E6%A8%A1%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "shear modulus",
+          "url": "https://en.wikipedia.org/w/index.php?search=shear%20modulus"
+        }
       ]
     },
     {
@@ -2771,6 +5525,24 @@
         "σ=F/S ε=ΔL/L E=σ/ε",
         "杆件 截面积 剪切",
         "bulk modulus"
+      ],
+      "explanation_markdown": "体积模量衡量材料抵抗均匀压缩的能力，关注体积变化而不是形状改变。数值越大，越难被压缩。常见公式是 $K=-V\\,dp/dV$，其中$K$ 是体积模量，$V$ 是体积，$dp$ 和 $dV$ 是压强与体积微小变化。\n\n负号使通常压缩时的体积模量为正。液体体积模量较大，气体较小且随状态变化明显；声速、液压系统和高压实验都依赖材料的可压缩性。体积模量越大，声波在材料中通常传播越快，因为压缩恢复更强。液压系统希望工作液体体积模量大，以减少受压后的体积变化。体积模量只在小形变和线性响应附近最可靠，超过弹性限度后材料会出现塑性或断裂。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "体积模量",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%93%E7%A7%AF%E6%A8%A1%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "体积模量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%93%E7%A7%AF%E6%A8%A1%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bulk modulus",
+          "url": "https://en.wikipedia.org/w/index.php?search=bulk%20modulus"
+        }
       ]
     },
     {
@@ -2789,6 +5561,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "vector"
+      ],
+      "explanation_markdown": "矢量同时具有大小和方向，并按几何平移规则相等。速度、力、动量和电场都是典型矢量。数学表达为 $\\mathbf A=A_x\\mathbf e_x+A_y\\mathbf e_y+A_z\\mathbf e_z$，其中$\\mathbf A$ 是矢量，$A_x,A_y,A_z$ 是分量，$\\mathbf e_i$ 是基矢。\n\n矢量本身不依赖坐标系，分量会随基矢选择改变。合成、投影、点乘和叉乘让矢量能表达功、力矩和角动量等方向相关的物理量。矢量运算保留几何意义：点乘得到投影相关量，叉乘得到垂直方向的面积或转动量。方向信息一旦丢失，就无法处理力矩和角动量。写矢量时最好先说明基矢和原点，这能让速度、力矩或能量表达保持一致。矢量常服务于简化对称性，例如让一个方向对准运动或受力的主方向。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "矢量",
+          "url": "https://www.baidu.com/s?wd=%E7%9F%A2%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "矢量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9F%A2%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vector",
+          "url": "https://en.wikipedia.org/w/index.php?search=vector"
+        }
       ]
     },
     {
@@ -2807,6 +5597,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "scalar"
+      ],
+      "explanation_markdown": "标量只有大小和单位，不带空间方向。质量、时间、温度、能量和路程都可作为标量处理。对应关系可写为 $s\\in\\mathbb R$，其中$s$ 表示标量量，$\\mathbb R$ 是实数集合。\n\n标量相加不需要平行四边形法则，但仍可能有正负号表示约定或变化方向，例如功和势能差。区分标量与矢量能避免把速率和速度、路程和位移混用。标量在坐标旋转下不改变数值，这是它区别于分量的要点。温度场和势能场都是给空间每点赋一个标量，而非一个方向。标量常服务于简化对称性，例如让一个方向对准运动或受力的主方向。标量的选择影响分量数值，却不应改变同一物理事件，这是坐标变换要检验的内容。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "标量",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%87%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "标量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%87%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "scalar",
+          "url": "https://en.wikipedia.org/w/index.php?search=scalar"
+        }
       ]
     },
     {
@@ -2825,6 +5633,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "component"
+      ],
+      "explanation_markdown": "分量是矢量在某一选定方向上的投影，能把一个空间问题拆成若干一维问题。它依赖坐标轴选择。一个方便的写法是 $A_i=\\mathbf A\\cdot\\mathbf e_i$，其中$A_i$ 是第 $i$ 个分量，$\\mathbf A$ 是矢量，$\\mathbf e_i$ 是该方向单位矢量。\n\n分量可以为负，表示矢量在该方向的投影与坐标正向相反。斜面受力、抛体运动和电场叠加都常通过分量计算；最后再把分量合成为完整矢量。分量方程常能独立求解，但最终结果应能还原成坐标无关的矢量关系。斜坐标或非正交基中，分量解释会更复杂。分量的选择影响分量数值，却不应改变同一物理事件，这是坐标变换要检验的内容。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分量",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "component",
+          "url": "https://en.wikipedia.org/w/index.php?search=component"
+        }
       ]
     },
     {
@@ -2843,6 +5669,24 @@
         "Δr=r2-r1 s x-t图",
         "起末点 轨迹 相关量",
         "coordinate"
+      ],
+      "explanation_markdown": "坐标是点在选定坐标系中的数值标签，说明它相对原点和坐标轴的位置。坐标不是位置本身，而是位置的一种表示。定量上有 $\\mathbf r=(x,y,z)$，其中$\\mathbf r$ 是位置矢量，$x,y,z$ 是三个坐标。\n\n同一点在不同坐标系中坐标不同，但几何点不变。直角坐标适合平移对称，极坐标适合圆周和中心力；选对坐标常能让约束和守恒量更明显。坐标有单位和量纲，例如位置坐标用米，角坐标用弧度。坐标变化不应改变真实距离、时间和能量，只改变它们的表达方式。写坐标时最好先说明基矢和原点，这能让速度、力矩或能量表达保持一致。坐标常服务于简化对称性，例如让一个方向对准运动或受力的主方向。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "坐标",
+          "url": "https://www.baidu.com/s?wd=%E5%9D%90%E6%A0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "坐标",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9D%90%E6%A0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "coordinate",
+          "url": "https://en.wikipedia.org/w/index.php?search=coordinate"
+        }
       ]
     },
     {
@@ -2861,6 +5705,24 @@
         "Δr=r2-r1 s x-t图",
         "起末点 相关量 坐标",
         "trajectory"
+      ],
+      "explanation_markdown": "轨迹是物体在空间中依次经过的点形成的曲线，去掉时间标记后只保留路径形状。它不同于运动全过程，因为不直接显示快慢。通常记作 $\\Gamma=\\{\\mathbf r(t)\\mid t_1\\le t\\le t_2\\}$，其中$\\Gamma$ 是轨迹集合，$\\mathbf r(t)$ 是位置随时间的函数。\n\n同一条轨迹可以被快慢不同的运动走过。抛体轨迹是抛物线，匀速圆周运动轨迹是圆；若需要速度或加速度，还必须知道物体沿轨迹的时间参数化。轨迹能显示路径形状，却不能显示物体何时到达某处。要从轨迹得到路程，可沿曲线积分；要得到速度，还要知道时间参数。轨迹只整理物体怎样运动，不直接说明为什么这样运动，因此常先于受力模型建立。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "轨迹",
+          "url": "https://www.baidu.com/s?wd=%E8%BD%A8%E8%BF%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "轨迹",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BD%A8%E8%BF%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "trajectory",
+          "url": "https://en.wikipedia.org/w/index.php?search=trajectory"
+        }
       ]
     },
     {
@@ -2879,6 +5741,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "arc length"
+      ],
+      "explanation_markdown": "弧长是沿曲线实际量得的长度，比两端直线距离更贴近路径本身。曲线越弯曲，弧长通常越大于弦长。在这种约定下有 $s=\\int_a^b\\sqrt{(dx/dt)^2+(dy/dt)^2}\\,dt$，其中$s$ 是弧长，$x(t),y(t)$ 是曲线的参数方程。\n\n圆弧满足 $s=R\\theta$，一般曲线则通过微小线段累加。弧长用于路程、绳长、轨道长度和波传播路径；它是标量，不记录沿曲线的方向。弧长积分来自把曲线切成很多微小直线段再求和。它在参数变换下保持不变，因此同一几何曲线换一种参数写法，弧长不应改变。在多维运动里，弧长的方向信息尤其重要，单看某一坐标分量可能遮蔽整体几何。使用弧长时要同时交代参考系、正方向和时间区间，否则同一运动会得到不同数值。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弧长",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%A7%E9%95%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弧长",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%A7%E9%95%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "arc length",
+          "url": "https://en.wikipedia.org/w/index.php?search=arc%20length"
+        }
       ]
     },
     {
@@ -2897,6 +5777,24 @@
         "mg sinθ mg cosθ",
         "小块 倾斜轨道",
         "inclined plane"
+      ],
+      "explanation_markdown": "斜面把重力分解成沿面和垂面两个方向，使竖直重力问题转化为受约束的平面运动。倾角决定下滑趋势和支持力大小。可写成 $mg\\sin\\theta,\\quad mg\\cos\\theta$，其中$m$ 是质量，$g$ 是重力加速度，$\\theta$ 是斜面倾角，两式分别为沿面和垂面分量。\n\n斜面常用于降低提升所需力，但位移会相应增加。若有摩擦，还要比较沿面重力分量和最大静摩擦；若斜面本身加速，支持力和摩擦条件也会改变。斜面问题的关键是沿面方向和法向方向相互垂直。支持力通常由法向平衡决定，沿面方向则决定加速度或摩擦是否足够。使用斜面时要把约束关系写清，位移比、速度比和力的放大关系才不会混淆。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "斜面",
+          "url": "https://www.baidu.com/s?wd=%E6%96%9C%E9%9D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "斜面",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%96%9C%E9%9D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inclined plane",
+          "url": "https://en.wikipedia.org/w/index.php?search=inclined%20plane"
+        }
       ]
     },
     {
@@ -2915,6 +5813,24 @@
         "F1l1=F2l2 mg分解",
         "省力装置 绳轮",
         "pulley"
+      ],
+      "explanation_markdown": "滑轮通过绳的约束改变力的方向或分配张力。理想滑轮通常忽略质量和摩擦，使同一根轻绳上的张力相等。常见公式是 $s_1+s_2=\\mathrm{const}$，其中$s_1,s_2$ 是由同一不可伸长绳连接的两段长度或位移。\n\n定滑轮主要改变量力方向，动滑轮可用更长绳长换取较小拉力。真实滑轮有转动惯量和轴摩擦，张力不再完全相等，机械效率也会低于理想模型。滑轮组的位移约束常比受力关系更容易出错。动滑轮上升一小段，拉绳端可能要移动两倍距离，省力来自这段位移交换。滑轮把复杂机器拆成几何约束和力矩平衡，适合估算机械优势。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "滑轮",
+          "url": "https://www.baidu.com/s?wd=%E6%BB%91%E8%BD%AE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "滑轮",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%BB%91%E8%BD%AE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pulley",
+          "url": "https://en.wikipedia.org/w/index.php?search=pulley"
+        }
       ]
     },
     {
@@ -2933,6 +5849,24 @@
         "F1l1=F2l2 mg分解",
         "省力装置 绳轮",
         "lever"
+      ],
+      "explanation_markdown": "杠杆利用绕支点的力矩平衡来放大或改变力的作用效果。长力臂一侧用较小力就能平衡短力臂一侧的大力。数学表达为 $F_1l_1=F_2l_2$，其中$F_1,F_2$ 是两侧力，$l_1,l_2$ 是各自相对支点的力臂。\n\n杠杆不创造能量，省力通常伴随更大的位移。剪刀、撬棍和天平都体现力矩平衡；若杠杆本身质量不可忽略，还要把自身重力的力矩加入。杠杆平衡可通过任意点取矩分析，但取支点最省事。实际杠杆还会受自身重力、支点摩擦和材料弯曲影响，理想公式给的是主导关系。杠杆的理想模型常忽略绳重、轴摩擦或杆的形变，这些近似决定公式能用到什么精度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "杠杆",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%A0%E6%9D%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "杠杆",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%A0%E6%9D%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lever",
+          "url": "https://en.wikipedia.org/w/index.php?search=lever"
+        }
       ]
     },
     {
@@ -2951,6 +5885,24 @@
         "F1l1=F2l2 mg分解",
         "省力装置 绳轮",
         "fulcrum"
+      ],
+      "explanation_markdown": "支点是杠杆或刚体转动约束所在的位置，可提供支撑力并作为取矩参考点。围绕支点取矩常能消去未知支撑力。对应关系可写为 $\\sum\\tau_O=0$，其中$O$ 表示支点，$\\tau_O$ 是各外力相对支点的力矩。\n\n支点不一定是物体几何中心，也不一定固定在地面；它的约束性质决定能否提供水平力、竖直力或力矩。选错支点不会改变物理，但可能让方程变复杂。支点处的反力大小和方向通常未知，但绕支点取矩时不产生力矩。若支点不是光滑铰链，而能提供阻转力矩，平衡条件还要加入支点矩。使用支点时要把约束关系写清，位移比、速度比和力的放大关系才不会混淆。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "支点",
+          "url": "https://www.baidu.com/s?wd=%E6%94%AF%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "支点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%94%AF%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fulcrum",
+          "url": "https://en.wikipedia.org/w/index.php?search=fulcrum"
+        }
       ]
     },
     {
@@ -2969,6 +5921,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "mechanics"
+      ],
+      "explanation_markdown": "力学研究物体运动、受力和平衡之间的关系，是从质点到刚体、流体的基础框架。它关心运动怎样发生以及相互作用怎样改变运动。一个方便的写法是 $\\sum\\mathbf F=m\\mathbf a$，其中$\\sum\\mathbf F$ 是合外力，$m$ 是质量，$\\mathbf a$ 是加速度。\n\n普通力学通常在低速、宏观、弱引力条件下使用牛顿定律和守恒律。它既包括不问力因的运动学，也包括解释运动原因的动力学，还包括静止结构的静力学。力学不是只记公式，而是把对象简化为合适模型。质点、刚体、弹簧和流体分别保留不同自由度，模型选错会让正确公式也失去意义。学习力学时要把模型、量纲和适用尺度连在一起，而不是只记公式名称。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "力学",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%9B%E5%AD%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "力学",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%9B%E5%AD%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mechanics",
+          "url": "https://en.wikipedia.org/w/index.php?search=mechanics"
+        }
       ]
     },
     {
@@ -2987,6 +5957,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "dynamics"
+      ],
+      "explanation_markdown": "动力学关注力为什么以及怎样改变运动状态。它把受力、质量和加速度或动量变化联系起来。定量上有 $d\\mathbf p/dt=\\mathbf F$，其中$\\mathbf p$ 是动量，$t$ 是时间，$\\mathbf F$ 是合外力。\n\n与只描述轨迹的运动学不同，动力学要追问相互作用来源。碰撞、轨道、振动和刚体转动都属于动力学范围；守恒律常是动力学方程在对称条件下的简化结果。动力学方程需要初始条件才能给出具体运动。相同受力规律下，不同初速度和初位置会产生不同轨迹；守恒律常用于减少求解难度。在实际建模中，动力学规定保留哪些自由度和相互作用，也决定守恒量或受力图像如何选取。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "动力学",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%A8%E5%8A%9B%E5%AD%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "动力学",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%A8%E5%8A%9B%E5%AD%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dynamics",
+          "url": "https://en.wikipedia.org/w/index.php?search=dynamics"
+        }
       ]
     },
     {
@@ -3005,6 +5993,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "kinematics"
+      ],
+      "explanation_markdown": "运动学只描述位置、速度和加速度如何随时间变化，暂时不追问造成运动的力。它是建立轨迹和图像语言的部分。通常记作 $\\mathbf v=d\\mathbf r/dt,\\quad \\mathbf a=d\\mathbf v/dt$，其中$\\mathbf r$ 是位置，$\\mathbf v$ 是速度，$\\mathbf a$ 是加速度。\n\n抛体公式、圆周运动角量和相对速度都属于运动学描述。只知道运动学关系不能确定受力原因；要解释为什么这样运动，还需要进入动力学。运动学量可由高速摄影、传感器或图像斜率获得。它先建立“怎样运动”的事实描述，再为动力学追问“为什么这样运动”提供输入。运动学的范围越清楚，近似条件越容易检查，结果也更容易同实验或工程量比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "运动学",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%90%E5%8A%A8%E5%AD%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "运动学",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%90%E5%8A%A8%E5%AD%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kinematics",
+          "url": "https://en.wikipedia.org/w/index.php?search=kinematics"
+        }
       ]
     },
     {
@@ -3023,6 +6029,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "statics"
+      ],
+      "explanation_markdown": "静力学研究物体在力和力矩作用下保持静止或平衡的条件。它关心结构怎样承载而不发生平动或转动加速。在这种约定下有 $\\sum\\mathbf F=0,\\quad\\sum\\boldsymbol\\tau=0$，其中$\\sum\\mathbf F$ 是合力，$\\sum\\boldsymbol\\tau$ 是合力矩。\n\n桥梁、桁架、悬挂物和简单机械都常用静力学分析。静力学不等于没有力，而是各作用效果相互抵消；还要检查摩擦和材料强度是否足以维持平衡。静力学方程往往给出未知支撑力、张力和摩擦力。结构是否安全还要比较材料强度和稳定性，所以平衡只是静止的必要条件。学习静力学时要把模型、量纲和适用尺度连在一起，而不是只记公式名称。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "静力学",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%99%E5%8A%9B%E5%AD%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "静力学",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%99%E5%8A%9B%E5%AD%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "statics",
+          "url": "https://en.wikipedia.org/w/index.php?search=statics"
+        }
       ]
     },
     {
@@ -3041,6 +6065,24 @@
         "ρ=m/V p=F/S ρgV",
         "液体深度 排开体积",
         "fluid mechanics"
+      ],
+      "explanation_markdown": "流体力学研究液体和气体的静止、流动以及与边界的相互作用。它把压强、速度场、密度和黏性作为主要变量。可写成 $\\rho\\frac{D\\mathbf v}{Dt}=-\\nabla p+\\cdots$，其中$\\rho$ 是密度，$\\mathbf v$ 是速度场，$p$ 是压强，省略号表示黏性或体力项。\n\n静水压、浮力、管流、升力和湍流都属于它的范围。理想流体公式能给出主线图像，但真实流体常受黏性、边界层、可压缩性和湍流影响。流体力学从静水压到湍流跨度很大。基础问题常先用理想流体抓住压强和速度关系，再逐步加入黏性、旋涡和边界条件。流体力学常以连续介质近似处理，尺度小到接近分子平均距离时这种写法会失效。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "流体力学",
+          "url": "https://www.baidu.com/s?wd=%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "流体力学",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fluid mechanics",
+          "url": "https://en.wikipedia.org/w/index.php?search=fluid%20mechanics"
+        }
       ]
     }
   ]

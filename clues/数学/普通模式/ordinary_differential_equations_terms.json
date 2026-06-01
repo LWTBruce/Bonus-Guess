@@ -17,6 +17,24 @@
         "对象 条件 运算 记号",
         "zi zhi xi tong",
         "zi_zhi_xi_tong"
+      ],
+      "explanation_markdown": "自治系统描述状态变量随自变量演化的规则，重点是右端函数如何决定轨道。常写成 $\\dot x=f(x)$，其中x 是状态向量，f 是相空间中的向量场。\n\n自治系统的性质不仅由公式外形决定，还依赖初值、参数和相空间维数。线性化能给出局部图像，但非线性项和全局结构常决定长期行为。自治系统还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用自治系统，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，自治系统对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自治系统",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E6%B2%BB%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自治系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E6%B2%BB%E7%B3%BB%E7%BB%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "autonomous system",
+          "url": "https://en.wikipedia.org/w/index.php?search=autonomous%20system"
+        }
       ]
     },
     {
@@ -35,6 +53,24 @@
         "对象 条件 运算 记号",
         "direction field",
         "direction_field"
+      ],
+      "explanation_markdown": "方向场从相空间几何角度描述解的形状、连接关系或长期去向。常写成 $y\\prime=f(t,y)$，其中t 是自变量，y 是函数值，f 给出斜率。\n\n方向场不要求先写出闭式解，而是直接观察轨道集合。它能区分闭轨道、吸引、排斥和连接轨道，在非线性系统中比单纯积分更有解释力。方向场还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用方向场，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，方向场对应的轨道图像也可能随之改变。方向场更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "方向场",
+          "url": "https://www.baidu.com/s?wd=%E6%96%B9%E5%90%91%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "方向场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%96%B9%E5%90%91%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "direction field",
+          "url": "https://en.wikipedia.org/w/index.php?search=direction%20field"
+        }
       ]
     },
     {
@@ -53,6 +89,24 @@
         "对象 条件 运算 记号",
         "fen li bian liang",
         "fen_li_bian_liang_equation"
+      ],
+      "explanation_markdown": "分离变量方程利用方程中特殊的代数或解析结构，把求解过程化为更标准的计算。常写成 $\\frac{dy}{dt}=g(t)h(y)$，其中g 只依赖 t，h 只依赖 y。\n\n分离变量方程的适用范围由方程形式决定。分离变量、代换、特征根和级数展开都能降低难度，但系数或奇点结构一变，方法也要随之调整。分离变量方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用分离变量方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，分离变量方程对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分离变量方程",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E7%A6%BB%E5%8F%98%E9%87%8F%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分离变量方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E7%A6%BB%E5%8F%98%E9%87%8F%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "separate variable equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=separate%20variable%20equation"
+        }
       ]
     },
     {
@@ -71,6 +125,24 @@
         "对象 条件 运算 记号",
         "bo nu li equation",
         "bo_nu_li_equation"
+      ],
+      "explanation_markdown": "伯努利方程利用方程中特殊的代数或解析结构，把求解过程化为更标准的计算。常写成 $y\\prime+p(t)y=q(t)y^n$，其中p,q 是已知函数，n 是指数参数。\n\n伯努利方程的适用范围由方程形式决定。分离变量、代换、特征根和级数展开都能降低难度，但系数或奇点结构一变，方法也要随之调整。伯努利方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用伯努利方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，伯努利方程对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "伯努利方程",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "伯努利方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bernoulli equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=bernoulli%20equation"
+        }
       ]
     },
     {
@@ -89,6 +161,19 @@
         "对象 条件 运算 记号",
         "riccati equation",
         "riccati_equation"
+      ],
+      "explanation_markdown": "Riccati方程利用方程中特殊的代数或解析结构，把求解过程化为更标准的计算。常写成 $y\\prime=a(t)y^2+b(t)y+c(t)$，其中a,b,c 是给定函数。\n\nRiccati方程的适用范围由方程形式决定。分离变量、代换、特征根和级数展开都能降低难度，但系数或奇点结构一变，方法也要随之调整。Riccati方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用Riccati方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，Riccati方程对应的轨道图像也可能随之改变。Riccati方程更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Riccati方程",
+          "url": "https://www.baidu.com/s?wd=Riccati%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Riccati方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Riccati%E6%96%B9%E7%A8%8B"
+        }
       ]
     },
     {
@@ -107,6 +192,24 @@
         "对象 条件 运算 记号",
         "chang xi shu linear",
         "chang_xi_shu_linear_equation"
+      ],
+      "explanation_markdown": "常系数线性方程利用方程中特殊的代数或解析结构，把求解过程化为更标准的计算。常写成 $a_n y^{(n)}+\\cdots+a_1y\\prime+a_0y=g(t)$，其中a_i 是常数系数，g 是非齐次项。\n\n常系数线性方程的适用范围由方程形式决定。分离变量、代换、特征根和级数展开都能降低难度，但系数或奇点结构一变，方法也要随之调整。常系数线性方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用常系数线性方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，常系数线性方程对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "常系数线性方程",
+          "url": "https://www.baidu.com/s?wd=%E5%B8%B8%E7%B3%BB%E6%95%B0%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "常系数线性方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B8%B8%E7%B3%BB%E6%95%B0%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear equation with constant coefficients",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20equation%20with%20constant%20coefficients"
+        }
       ]
     },
     {
@@ -125,6 +228,24 @@
         "对象 条件 运算 记号",
         "te zheng equation",
         "te_zheng_equation"
+      ],
+      "explanation_markdown": "特征方程利用方程中特殊的代数或解析结构，把求解过程化为更标准的计算。常写成 $a_n\\lambda^n+\\cdots+a_1\\lambda+a_0=0$，其中\\lambda 是特征根。\n\n特征方程的适用范围由方程形式决定。分离变量、代换、特征根和级数展开都能降低难度，但系数或奇点结构一变，方法也要随之调整。特征方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用特征方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，特征方程对应的轨道图像也可能随之改变。特征方程更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "特征方程",
+          "url": "https://www.baidu.com/s?wd=%E7%89%B9%E5%BE%81%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "特征方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%B9%E5%BE%81%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "characteristic equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=characteristic%20equation"
+        }
       ]
     },
     {
@@ -143,6 +264,24 @@
         "对象 条件 运算 记号",
         "fundamental solution zu",
         "fundamental_solution_zu"
+      ],
+      "explanation_markdown": "基本解组利用方程中特殊的代数或解析结构，把求解过程化为更标准的计算。常写成 $W(y_1,\\ldots,y_n)(t)\\ne0$，其中W 是 Wronski 行列式。\n\n基本解组的适用范围由方程形式决定。分离变量、代换、特征根和级数展开都能降低难度，但系数或奇点结构一变，方法也要随之调整。基本解组还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用基本解组，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，基本解组对应的轨道图像也可能随之改变。基本解组更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "基本解组",
+          "url": "https://www.baidu.com/s?wd=%E5%9F%BA%E6%9C%AC%E8%A7%A3%E7%BB%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "基本解组",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9F%BA%E6%9C%AC%E8%A7%A3%E7%BB%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fundamental solution zu",
+          "url": "https://en.wikipedia.org/w/index.php?search=fundamental%20solution%20zu"
+        }
       ]
     },
     {
@@ -161,6 +300,24 @@
         "对象 条件 运算 记号",
         "bian can shu fa",
         "bian_can_shu_fa"
+      ],
+      "explanation_markdown": "变参数法利用方程中特殊的代数或解析结构，把求解过程化为更标准的计算。常写成 $y_p=\\sum_i u_i(t)y_i(t)$，其中y_i 是齐次基解，u_i 是待定函数。\n\n变参数法的适用范围由方程形式决定。分离变量、代换、特征根和级数展开都能降低难度，但系数或奇点结构一变，方法也要随之调整。变参数法还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用变参数法，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，变参数法对应的轨道图像也可能随之改变。变参数法更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "变参数法",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%98%E5%8F%82%E6%95%B0%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "变参数法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%98%E5%8F%82%E6%95%B0%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "variable parameter method",
+          "url": "https://en.wikipedia.org/w/index.php?search=variable%20parameter%20method"
+        }
       ]
     },
     {
@@ -179,6 +336,24 @@
         "对象 条件 运算 记号",
         "phase trajectory",
         "phase_trajectory"
+      ],
+      "explanation_markdown": "相轨线从相空间几何角度描述解的形状、连接关系或长期去向。常写成 $\\frac{dx_2}{dx_1}=\\frac{f_2(x_1,x_2)}{f_1(x_1,x_2)}$，其中f_1,f_2 是平面系统右端分量。\n\n相轨线不要求先写出闭式解，而是直接观察轨道集合。它能区分闭轨道、吸引、排斥和连接轨道，在非线性系统中比单纯积分更有解释力。相轨线还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用相轨线，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，相轨线对应的轨道图像也可能随之改变。相轨线更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相轨线",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E8%BD%A8%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相轨线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E8%BD%A8%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "phase trajectory",
+          "url": "https://en.wikipedia.org/w/index.php?search=phase%20trajectory"
+        }
       ]
     },
     {
@@ -197,6 +372,24 @@
         "对象 条件 运算 记号",
         "limit cycle",
         "limit_cycle"
+      ],
+      "explanation_markdown": "极限环从相空间几何角度描述解的形状、连接关系或长期去向。常写成 $\\varphi_T(\\Gamma)=\\Gamma$，其中\\Gamma 是闭轨道，\\varphi_T 是时间 T 的流。\n\n极限环不要求先写出闭式解，而是直接观察轨道集合。它能区分闭轨道、吸引、排斥和连接轨道，在非线性系统中比单纯积分更有解释力。极限环还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用极限环，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，极限环对应的轨道图像也可能随之改变。极限环更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "极限环",
+          "url": "https://www.baidu.com/s?wd=%E6%9E%81%E9%99%90%E7%8E%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "极限环",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9E%81%E9%99%90%E7%8E%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "limit cycle",
+          "url": "https://en.wikipedia.org/w/index.php?search=limit%20cycle"
+        }
       ]
     },
     {
@@ -215,6 +408,24 @@
         "对象 条件 运算 记号",
         "ping heng solution",
         "ping_heng_solution"
+      ],
+      "explanation_markdown": "平衡解刻画向量场为零或线性化类型特殊的状态，是定性理论的基本对象。常写成 $f(x_*)=0$，其中x_* 是使右端为零的状态。\n\n平衡解附近常用线性化矩阵的特征值来分类。实特征值给出结点或鞍型，复特征值带来旋转；临界情形还要看高阶项。平衡解还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用平衡解，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，平衡解对应的轨道图像也可能随之改变。平衡解更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平衡解",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E8%A1%A1%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平衡解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E8%A1%A1%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "equilibrium solution",
+          "url": "https://en.wikipedia.org/w/index.php?search=equilibrium%20solution"
+        }
       ]
     },
     {
@@ -233,6 +444,19 @@
         "重复更新 误差",
         "picard die dai",
         "picard_die_dai"
+      ],
+      "explanation_markdown": "Picard迭代关心解是否存在、是否唯一，以及能在多长区间内保持有效。常写成 $x_{k+1}(t)=x_0+\\int_{t_0}^t f(s,x_k(s))\\,ds$，其中x_k 是第 k 次近似。\n\nPicard迭代把方程右端的连续性、Lipschitz 条件和初始数据联系起来。存在与唯一是两件事；边值问题还会受到两端条件共同约束。Picard迭代还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用Picard迭代，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，Picard迭代对应的轨道图像也可能随之改变。Picard迭代更适合作为描述演化结构的对象，而不是孤立的求解步骤。Picard迭代还要指定函数空间和时间区间，否则压缩映射估计无法闭合。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Picard迭代",
+          "url": "https://www.baidu.com/s?wd=Picard%E8%BF%AD%E4%BB%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Picard迭代",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Picard%E8%BF%AD%E4%BB%A3"
+        }
       ]
     },
     {
@@ -251,6 +475,24 @@
         "对象 条件 运算 记号",
         "cun zai wei yi",
         "cun_zai_wei_yi_xing_theorem"
+      ],
+      "explanation_markdown": "存在唯一性定理关心解是否存在、是否唯一，以及能在多长区间内保持有效。常写成 $\\|f(t,x)-f(t,y)\\|\\le L\\|x-y\\|$，其中L 是 Lipschitz 常数。\n\n存在唯一性定理把方程右端的连续性、Lipschitz 条件和初始数据联系起来。存在与唯一是两件事；边值问题还会受到两端条件共同约束。存在唯一性定理还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用存在唯一性定理，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，存在唯一性定理对应的轨道图像也可能随之改变。存在唯一性定理更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "存在唯一性定理",
+          "url": "https://www.baidu.com/s?wd=%E5%AD%98%E5%9C%A8%E5%94%AF%E4%B8%80%E6%80%A7%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "存在唯一性定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AD%98%E5%9C%A8%E5%94%AF%E4%B8%80%E6%80%A7%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "existence and uniqueness theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=existence%20and%20uniqueness%20theorem"
+        }
       ]
     },
     {
@@ -269,6 +511,24 @@
         "对象 条件 运算 记号",
         "gang xing equation",
         "gang_xing_equation"
+      ],
+      "explanation_markdown": "刚性方程说明微分方程中同时存在快慢时间尺度，是数值求解中很重要的性质。常写成 $x\\prime=Ax,\\ \\max|\\operatorname{Re}\\lambda_i|\\gg\\min|\\operatorname{Re}\\lambda_i|$，其中\\lambda_i 是 A 的特征值。\n\n刚性方程中快模态可能已经衰减，却仍限制显式方法步长。隐式格式、A稳定性和L稳定性正是为处理这类时间尺度分离而引入。刚性方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用刚性方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，刚性方程对应的轨道图像也可能随之改变。刚性方程更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "刚性方程",
+          "url": "https://www.baidu.com/s?wd=%E5%88%9A%E6%80%A7%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "刚性方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%9A%E6%80%A7%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stiffness equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=stiffness%20equation"
+        }
       ]
     },
     {
@@ -287,6 +547,24 @@
         "对象 条件 运算 记号",
         "zi zhi equation",
         "zi_zhi_equation"
+      ],
+      "explanation_markdown": "自治方程描述状态变量随自变量演化的规则，重点是右端函数如何决定轨道。常写成 $\\frac{dy}{dt}=f(y)$，其中y 是未知函数值，f 不显含时间 t。\n\n自治方程的性质不仅由公式外形决定，还依赖初值、参数和相空间维数。线性化能给出局部图像，但非线性项和全局结构常决定长期行为。自治方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用自治方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，自治方程对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自治方程",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E6%B2%BB%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自治方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E6%B2%BB%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "zi zhi equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=zi%20zhi%20equation"
+        }
       ]
     },
     {
@@ -305,6 +583,24 @@
         "对象 条件 运算 记号",
         "fei zi zhi equation",
         "fei_zi_zhi_equation"
+      ],
+      "explanation_markdown": "非自治方程描述状态变量随自变量演化的规则，重点是右端函数如何决定轨道。常写成 $\\frac{dy}{dt}=f(t,y)$，其中t 是自变量，右端显含时间。\n\n非自治方程的性质不仅由公式外形决定，还依赖初值、参数和相空间维数。线性化能给出局部图像，但非线性项和全局结构常决定长期行为。非自治方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用非自治方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，非自治方程对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "非自治方程",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%9E%E8%87%AA%E6%B2%BB%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "非自治方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%9E%E8%87%AA%E6%B2%BB%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "nonautonomous equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=nonautonomous%20equation"
+        }
       ]
     },
     {
@@ -323,6 +619,24 @@
         "对象 条件 运算 记号",
         "linear xi tong",
         "linear_xi_tong"
+      ],
+      "explanation_markdown": "线性系统描述状态变量随自变量演化的规则，重点是右端函数如何决定轨道。常写成 $x\\prime=A(t)x+b(t)$，其中A 是系数矩阵，b 是非齐次项。\n\n线性系统的性质不仅由公式外形决定，还依赖初值、参数和相空间维数。线性化能给出局部图像，但非线性项和全局结构常决定长期行为。线性系统还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用线性系统，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，线性系统对应的轨道图像也可能随之改变。线性系统更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线性系统",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E6%80%A7%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线性系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E6%80%A7%E7%B3%BB%E7%BB%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear system",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20system"
+        }
       ]
     },
     {
@@ -341,6 +655,24 @@
         "对象 条件 运算 记号",
         "nonlinear xi tong",
         "nonlinear_xi_tong"
+      ],
+      "explanation_markdown": "非线性系统描述状态变量随自变量演化的规则，重点是右端函数如何决定轨道。常写成 $x\\prime=f(t,x)$，其中f 对 x 不满足线性叠加。\n\n非线性系统的性质不仅由公式外形决定，还依赖初值、参数和相空间维数。线性化能给出局部图像，但非线性项和全局结构常决定长期行为。非线性系统还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用非线性系统，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，非线性系统对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "非线性系统",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%9E%E7%BA%BF%E6%80%A7%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "非线性系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%9E%E7%BA%BF%E6%80%A7%E7%B3%BB%E7%BB%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "nonlinear system",
+          "url": "https://en.wikipedia.org/w/index.php?search=nonlinear%20system"
+        }
       ]
     },
     {
@@ -359,6 +691,24 @@
         "对象 条件 运算 记号",
         "ping mian xi tong",
         "ping_mian_xi_tong"
+      ],
+      "explanation_markdown": "平面系统描述状态变量随自变量演化的规则，重点是右端函数如何决定轨道。常写成 $x\\prime=P(x,y),\\ y\\prime=Q(x,y)$，其中P,Q 是平面向量场分量。\n\n平面系统的性质不仅由公式外形决定，还依赖初值、参数和相空间维数。线性化能给出局部图像，但非线性项和全局结构常决定长期行为。平面系统还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用平面系统，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，平面系统对应的轨道图像也可能随之改变。平面系统更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平面系统",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E9%9D%A2%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平面系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E9%9D%A2%E7%B3%BB%E7%BB%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "plane system",
+          "url": "https://en.wikipedia.org/w/index.php?search=plane%20system"
+        }
       ]
     },
     {
@@ -377,6 +727,19 @@
         "对象 条件 运算 记号",
         "hamilton xi tong",
         "hamilton_xi_tong"
+      ],
+      "explanation_markdown": "Hamilton系统把常微分方程和能量、辛结构或势函数联系起来。常写成 $\\dot q=\\frac{\\partial H}{\\partial p},\\ \\dot p=-\\frac{\\partial H}{\\partial q}$，其中H 是 Hamilton 函数，q,p 是共轭变量。\n\nHamilton系统的长期行为受结构约束。Hamilton系统偏向保持能量层和辛结构，梯度系统沿势函数下降，二者的周期性和吸引机制很不同。Hamilton系统还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用Hamilton系统，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，Hamilton系统对应的轨道图像也可能随之改变。Hamilton系统更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Hamilton系统",
+          "url": "https://www.baidu.com/s?wd=Hamilton%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Hamilton系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Hamilton%E7%B3%BB%E7%BB%9F"
+        }
       ]
     },
     {
@@ -395,6 +758,24 @@
         "对象 条件 运算 记号",
         "ti du xi tong",
         "ti_du_xi_tong"
+      ],
+      "explanation_markdown": "梯度系统把常微分方程和能量、辛结构或势函数联系起来。常写成 $\\dot x=-\\nabla V(x)$，其中V 是势函数，\\nabla V 是梯度。\n\n梯度系统的长期行为受结构约束。Hamilton系统偏向保持能量层和辛结构，梯度系统沿势函数下降，二者的周期性和吸引机制很不同。梯度系统还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用梯度系统，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，梯度系统对应的轨道图像也可能随之改变。梯度系统更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "梯度系统",
+          "url": "https://www.baidu.com/s?wd=%E6%A2%AF%E5%BA%A6%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "梯度系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A2%AF%E5%BA%A6%E7%B3%BB%E7%BB%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gradient system",
+          "url": "https://en.wikipedia.org/w/index.php?search=gradient%20system"
+        }
       ]
     },
     {
@@ -413,6 +794,24 @@
         "对象 条件 运算 记号",
         "qi yi equation",
         "qi_yi_equation"
+      ],
+      "explanation_markdown": "奇异方程放宽经典常微分方程对光滑、即时或单值右端的要求。常写成 $y\\prime=\\frac{f(t,y)}{t-t_*}$，其中t_* 是奇异点。\n\n奇异方程会引入历史段、跳变、退化矩阵或集合值速度。此时解的定义常改成积分意义、弱解或包含关系，稳定性也要重新表述。奇异方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用奇异方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，奇异方程对应的轨道图像也可能随之改变。奇异方程更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "奇异方程",
+          "url": "https://www.baidu.com/s?wd=%E5%A5%87%E5%BC%82%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "奇异方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A5%87%E5%BC%82%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "qi yi equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=qi%20yi%20equation"
+        }
       ]
     },
     {
@@ -431,6 +830,24 @@
         "对象 条件 运算 记号",
         "yan chi wei fen",
         "yan_chi_wei_fen_equation"
+      ],
+      "explanation_markdown": "延迟微分方程放宽经典常微分方程对光滑、即时或单值右端的要求。常写成 $x\\prime(t)=f(t,x(t),x(t-\\tau))$，其中\\tau 是延迟时间。\n\n延迟微分方程会引入历史段、跳变、退化矩阵或集合值速度。此时解的定义常改成积分意义、弱解或包含关系，稳定性也要重新表述。延迟微分方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用延迟微分方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，延迟微分方程对应的轨道图像也可能随之改变。延迟微分方程更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "延迟微分方程",
+          "url": "https://www.baidu.com/s?wd=%E5%BB%B6%E8%BF%9F%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "延迟微分方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BB%B6%E8%BF%9F%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "delay differential equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=delay%20differential%20equation"
+        }
       ]
     },
     {
@@ -449,6 +866,24 @@
         "对象 条件 运算 记号",
         "mai chong wei fen",
         "mai_chong_wei_fen_equation"
+      ],
+      "explanation_markdown": "脉冲微分方程放宽经典常微分方程对光滑、即时或单值右端的要求。常写成 $x(t_k^+)-x(t_k^-)=I_k(x(t_k))$，其中t_k 是脉冲时刻，I_k 是跳变映射。\n\n脉冲微分方程会引入历史段、跳变、退化矩阵或集合值速度。此时解的定义常改成积分意义、弱解或包含关系，稳定性也要重新表述。脉冲微分方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用脉冲微分方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，脉冲微分方程对应的轨道图像也可能随之改变。脉冲微分方程更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "脉冲微分方程",
+          "url": "https://www.baidu.com/s?wd=%E8%84%89%E5%86%B2%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "脉冲微分方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%84%89%E5%86%B2%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "impulse differential equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=impulse%20differential%20equation"
+        }
       ]
     },
     {
@@ -467,6 +902,24 @@
         "对象 条件 运算 记号",
         "wei fen bao han",
         "wei_fen_bao_han"
+      ],
+      "explanation_markdown": "微分包含放宽经典常微分方程对光滑、即时或单值右端的要求。常写成 $x\\prime(t)\\in F(t,x(t))$，其中F 给出允许速度集合。\n\n微分包含会引入历史段、跳变、退化矩阵或集合值速度。此时解的定义常改成积分意义、弱解或包含关系，稳定性也要重新表述。微分包含还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用微分包含，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，微分包含对应的轨道图像也可能随之改变。微分包含更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "微分包含",
+          "url": "https://www.baidu.com/s?wd=%E5%BE%AE%E5%88%86%E5%8C%85%E5%90%AB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "微分包含",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BE%AE%E5%88%86%E5%8C%85%E5%90%AB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "differential inclusion",
+          "url": "https://en.wikipedia.org/w/index.php?search=differential%20inclusion"
+        }
       ]
     },
     {
@@ -485,6 +938,24 @@
         "对象 条件 运算 记号",
         "bian zhi problem",
         "bian_zhi_problem"
+      ],
+      "explanation_markdown": "边值问题关心解是否存在、是否唯一，以及能在多长区间内保持有效。常写成 $y(a)=\\alpha,\\ y(b)=\\beta$，其中a,b 是端点，\\alpha,\\beta 是边界值。\n\n边值问题把方程右端的连续性、Lipschitz 条件和初始数据联系起来。存在与唯一是两件事；边值问题还会受到两端条件共同约束。边值问题还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用边值问题，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，边值问题对应的轨道图像也可能随之改变。边值问题更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "边值问题",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%B9%E5%80%BC%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "边值问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%B9%E5%80%BC%E9%97%AE%E9%A2%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "edge value problem",
+          "url": "https://en.wikipedia.org/w/index.php?search=edge%20value%20problem"
+        }
       ]
     },
     {
@@ -503,6 +974,24 @@
         "起始数据 演化",
         "initial value problem",
         "initial_value_problem"
+      ],
+      "explanation_markdown": "初值问题关心解是否存在、是否唯一，以及能在多长区间内保持有效。常写成 $y(t_0)=y_0$，其中t_0 是初始时刻，y_0 是初始状态。\n\n初值问题把方程右端的连续性、Lipschitz 条件和初始数据联系起来。存在与唯一是两件事；边值问题还会受到两端条件共同约束。初值问题还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用初值问题，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，初值问题对应的轨道图像也可能随之改变。初值问题更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "初值问题",
+          "url": "https://www.baidu.com/s?wd=%E5%88%9D%E5%80%BC%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "初值问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%9D%E5%80%BC%E9%97%AE%E9%A2%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "initial value problem",
+          "url": "https://en.wikipedia.org/w/index.php?search=initial%20value%20problem"
+        }
       ]
     },
     {
@@ -521,6 +1010,19 @@
         "对象 条件 运算 记号",
         "gronwall inequality",
         "gronwall_inequality"
+      ],
+      "explanation_markdown": "Gronwall不等式衡量解对初值、扰动或模型误差的反应，说明轨道是否保持接近或趋向目标。常写成 $u(t)\\le a+\\int_{t_0}^t b(s)u(s)\\,ds$，其中u 是非负函数，b 控制增长率。\n\nGronwall不等式通常用不等式、Lyapunov函数或比较估计来表达。稳定只要求扰动后不远离，渐近稳定还要求回到目标，指数稳定进一步给出速度。Gronwall不等式还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用Gronwall不等式，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，Gronwall不等式对应的轨道图像也可能随之改变。Gronwall不等式更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Gronwall不等式",
+          "url": "https://www.baidu.com/s?wd=Gronwall%E4%B8%8D%E7%AD%89%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Gronwall不等式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Gronwall%E4%B8%8D%E7%AD%89%E5%BC%8F"
+        }
       ]
     },
     {
@@ -539,6 +1041,24 @@
         "对象 条件 运算 记号",
         "continuity yi lai theorem",
         "continuity_yi_lai_theorem"
+      ],
+      "explanation_markdown": "连续依赖定理衡量解对初值、扰动或模型误差的反应，说明轨道是否保持接近或趋向目标。常写成 $\\|x(t)-y(t)\\|\\le C\\|x_0-y_0\\|$，其中C 是时间区间上的控制常数。\n\n连续依赖定理通常用不等式、Lyapunov函数或比较估计来表达。稳定只要求扰动后不远离，渐近稳定还要求回到目标，指数稳定进一步给出速度。连续依赖定理还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用连续依赖定理，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，连续依赖定理对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "连续依赖定理",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%9E%E7%BB%AD%E4%BE%9D%E8%B5%96%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "连续依赖定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%9E%E7%BB%AD%E4%BE%9D%E8%B5%96%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "continuity yi lai theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=continuity%20yi%20lai%20theorem"
+        }
       ]
     },
     {
@@ -557,6 +1077,24 @@
         "对象 条件 运算 记号",
         "yan tuo theorem",
         "yan_tuo_theorem"
+      ],
+      "explanation_markdown": "延拓定理关心解是否存在、是否唯一，以及能在多长区间内保持有效。常写成 $[t_0,\\beta)\\ni t\\mapsto x(t)$，其中若 x(t) 留在紧集内，解可延拓到更大区间。\n\n延拓定理把方程右端的连续性、Lipschitz 条件和初始数据联系起来。存在与唯一是两件事；边值问题还会受到两端条件共同约束。延拓定理还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用延拓定理，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，延拓定理对应的轨道图像也可能随之改变。延拓定理更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "延拓定理",
+          "url": "https://www.baidu.com/s?wd=%E5%BB%B6%E6%8B%93%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "延拓定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BB%B6%E6%8B%93%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "continuation theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=continuation%20theorem"
+        }
       ]
     },
     {
@@ -575,6 +1113,24 @@
         "对象 条件 运算 记号",
         "zui da cun zai",
         "zui_da_cun_zai_qu_jian"
+      ],
+      "explanation_markdown": "最大存在区间关心解是否存在、是否唯一，以及能在多长区间内保持有效。常写成 $(\\alpha,\\beta)$，其中\\alpha,\\beta 是解不能再延拓的端点。\n\n最大存在区间把方程右端的连续性、Lipschitz 条件和初始数据联系起来。存在与唯一是两件事；边值问题还会受到两端条件共同约束。最大存在区间还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用最大存在区间，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，最大存在区间对应的轨道图像也可能随之改变。最大存在区间更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最大存在区间",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E5%A4%A7%E5%AD%98%E5%9C%A8%E5%8C%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最大存在区间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E5%A4%A7%E5%AD%98%E5%9C%A8%E5%8C%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "maximum existence interval",
+          "url": "https://en.wikipedia.org/w/index.php?search=maximum%20existence%20interval"
+        }
       ]
     },
     {
@@ -593,6 +1149,24 @@
         "对象 条件 运算 记号",
         "fundamental solution ju zhen",
         "fundamental_solution_ju_zhen"
+      ],
+      "explanation_markdown": "基本解矩阵服务于线性微分方程的解空间和基解结构。常写成 $\\Phi\\prime(t)=A(t)\\Phi(t)$，其中\\Phi 是矩阵解，A 是系数矩阵。\n\n基本解矩阵让通解、状态转移和非齐次项处理都有统一矩阵语言。基解是否线性无关通常由 Wronski 行列式或基本解矩阵判定。基本解矩阵还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用基本解矩阵，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，基本解矩阵对应的轨道图像也可能随之改变。基本解矩阵更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "基本解矩阵",
+          "url": "https://www.baidu.com/s?wd=%E5%9F%BA%E6%9C%AC%E8%A7%A3%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "基本解矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9F%BA%E6%9C%AC%E8%A7%A3%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "basic solution matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=basic%20solution%20matrix"
+        }
       ]
     },
     {
@@ -611,6 +1185,19 @@
         "对象 条件 运算 记号",
         "wronski xing lie shi",
         "wronski_xing_lie_shi"
+      ],
+      "explanation_markdown": "Wronski行列式服务于线性微分方程的解空间和基解结构。常写成 $W(t)=\\det(y_i^{(j-1)}(t))$，其中y_i 是候选基解。\n\nWronski行列式让通解、状态转移和非齐次项处理都有统一矩阵语言。基解是否线性无关通常由 Wronski 行列式或基本解矩阵判定。Wronski行列式还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用Wronski行列式，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，Wronski行列式对应的轨道图像也可能随之改变。Wronski行列式更适合作为描述演化结构的对象，而不是孤立的求解步骤。Wronski行列式还要结合系数连续区间解释，单点非零才足以推出基解无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Wronski行列式",
+          "url": "https://www.baidu.com/s?wd=Wronski%E8%A1%8C%E5%88%97%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Wronski行列式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Wronski%E8%A1%8C%E5%88%97%E5%BC%8F"
+        }
       ]
     },
     {
@@ -629,6 +1216,24 @@
         "对象 条件 运算 记号",
         "chang shu bian yi",
         "chang_shu_bian_yi_fa"
+      ],
+      "explanation_markdown": "常数变易法利用方程中特殊的代数或解析结构，把求解过程化为更标准的计算。常写成 $x_p(t)=\\Phi(t)\\int \\Phi(t)^{-1}g(t)\\,dt$，其中\\Phi 是基本解矩阵，g 是非齐次项。\n\n常数变易法的适用范围由方程形式决定。分离变量、代换、特征根和级数展开都能降低难度，但系数或奇点结构一变，方法也要随之调整。常数变易法还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用常数变易法，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，常数变易法对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "常数变易法",
+          "url": "https://www.baidu.com/s?wd=%E5%B8%B8%E6%95%B0%E5%8F%98%E6%98%93%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "常数变易法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B8%B8%E6%95%B0%E5%8F%98%E6%98%93%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "constant variation method",
+          "url": "https://en.wikipedia.org/w/index.php?search=constant%20variation%20method"
+        }
       ]
     },
     {
@@ -647,6 +1252,24 @@
         "对象 条件 运算 记号",
         "jiang jie fa",
         "jiang_jie_fa"
+      ],
+      "explanation_markdown": "降阶法利用方程中特殊的代数或解析结构，把求解过程化为更标准的计算。常写成 $y_2(t)=v(t)y_1(t)$，其中y_1 是已知解，v 是新未知函数。\n\n降阶法的适用范围由方程形式决定。分离变量、代换、特征根和级数展开都能降低难度，但系数或奇点结构一变，方法也要随之调整。降阶法还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用降阶法，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，降阶法对应的轨道图像也可能随之改变。降阶法更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "降阶法",
+          "url": "https://www.baidu.com/s?wd=%E9%99%8D%E9%98%B6%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "降阶法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%99%8D%E9%98%B6%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "reduction method",
+          "url": "https://en.wikipedia.org/w/index.php?search=reduction%20method"
+        }
       ]
     },
     {
@@ -665,6 +1288,24 @@
         "对象 条件 运算 记号",
         "mi ji shu solution",
         "mi_ji_shu_solution_fa"
+      ],
+      "explanation_markdown": "幂级数解法利用方程中特殊的代数或解析结构，把求解过程化为更标准的计算。常写成 $y=\\sum_{n=0}^\\infty a_n(t-t_0)^n$，其中a_n 是待定系数。\n\n幂级数解法的适用范围由方程形式决定。分离变量、代换、特征根和级数展开都能降低难度，但系数或奇点结构一变，方法也要随之调整。幂级数解法还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用幂级数解法，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，幂级数解法对应的轨道图像也可能随之改变。幂级数解法更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "幂级数解法",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%82%E7%BA%A7%E6%95%B0%E8%A7%A3%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "幂级数解法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%82%E7%BA%A7%E6%95%B0%E8%A7%A3%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "power series solution",
+          "url": "https://en.wikipedia.org/w/index.php?search=power%20series%20solution"
+        }
       ]
     },
     {
@@ -683,6 +1324,19 @@
         "对象 条件 运算 记号",
         "frobenius method",
         "frobenius_method"
+      ],
+      "explanation_markdown": "Frobenius方法利用方程中特殊的代数或解析结构，把求解过程化为更标准的计算。常写成 $y=(t-t_0)^r\\sum_{n=0}^\\infty a_n(t-t_0)^n$，其中r 是指标根。\n\nFrobenius方法的适用范围由方程形式决定。分离变量、代换、特征根和级数展开都能降低难度，但系数或奇点结构一变，方法也要随之调整。Frobenius方法还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用Frobenius方法，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，Frobenius方法对应的轨道图像也可能随之改变。Frobenius方法更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Frobenius方法",
+          "url": "https://www.baidu.com/s?wd=Frobenius%E6%96%B9%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Frobenius方法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Frobenius%E6%96%B9%E6%B3%95"
+        }
       ]
     },
     {
@@ -701,6 +1355,24 @@
         "对象 条件 运算 记号",
         "phase plane",
         "phase_plane"
+      ],
+      "explanation_markdown": "相平面从相空间几何角度描述解的形状、连接关系或长期去向。常写成 $(x,y)\\in\\mathbb R^2$，其中x,y 是两个状态变量。\n\n相平面不要求先写出闭式解，而是直接观察轨道集合。它能区分闭轨道、吸引、排斥和连接轨道，在非线性系统中比单纯积分更有解释力。相平面还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用相平面，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，相平面对应的轨道图像也可能随之改变。相平面更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相平面",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E5%B9%B3%E9%9D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相平面",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E5%B9%B3%E9%9D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "phase plane",
+          "url": "https://en.wikipedia.org/w/index.php?search=phase%20plane"
+        }
       ]
     },
     {
@@ -719,6 +1391,24 @@
         "对象 条件 运算 记号",
         "integral curve",
         "integral_curve"
+      ],
+      "explanation_markdown": "积分曲线从相空间几何角度描述解的形状、连接关系或长期去向。常写成 $\\dot\\gamma(t)=f(\\gamma(t))$，其中\\gamma 是曲线，f 是向量场。\n\n积分曲线不要求先写出闭式解，而是直接观察轨道集合。它能区分闭轨道、吸引、排斥和连接轨道，在非线性系统中比单纯积分更有解释力。积分曲线还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用积分曲线，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，积分曲线对应的轨道图像也可能随之改变。积分曲线更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "积分曲线",
+          "url": "https://www.baidu.com/s?wd=%E7%A7%AF%E5%88%86%E6%9B%B2%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "积分曲线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A7%AF%E5%88%86%E6%9B%B2%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "integral curve",
+          "url": "https://en.wikipedia.org/w/index.php?search=integral%20curve"
+        }
       ]
     },
     {
@@ -737,6 +1427,24 @@
         "对象 条件 运算 记号",
         "equilibrium point",
         "equilibrium_point"
+      ],
+      "explanation_markdown": "平衡点刻画向量场为零或线性化类型特殊的状态，是定性理论的基本对象。常写成 $f(x_*)=0$，其中x_* 是相空间中速度为零的点。\n\n平衡点附近常用线性化矩阵的特征值来分类。实特征值给出结点或鞍型，复特征值带来旋转；临界情形还要看高阶项。平衡点还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用平衡点，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，平衡点对应的轨道图像也可能随之改变。平衡点更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平衡点",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E8%A1%A1%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平衡点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E8%A1%A1%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "equilibrium point",
+          "url": "https://en.wikipedia.org/w/index.php?search=equilibrium%20point"
+        }
       ]
     },
     {
@@ -755,6 +1463,24 @@
         "对象 条件 运算 记号",
         "critical point",
         "critical_point"
+      ],
+      "explanation_markdown": "临界点刻画向量场为零或线性化类型特殊的状态，是定性理论的基本对象。常写成 $f(x_*)=0$，其中x_* 是向量场的零点。\n\n临界点附近常用线性化矩阵的特征值来分类。实特征值给出结点或鞍型，复特征值带来旋转；临界情形还要看高阶项。临界点还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用临界点，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，临界点对应的轨道图像也可能随之改变。临界点更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "临界点",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%B4%E7%95%8C%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "临界点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%B4%E7%95%8C%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "critical point",
+          "url": "https://en.wikipedia.org/w/index.php?search=critical%20point"
+        }
       ]
     },
     {
@@ -773,6 +1499,24 @@
         "对象 条件 运算 记号",
         "zhong xin dian",
         "zhong_xin_dian"
+      ],
+      "explanation_markdown": "中心点刻画向量场为零或线性化类型特殊的状态，是定性理论的基本对象。常写成 $\\lambda_{1,2}=\\pm i\\omega$，其中\\lambda 是线性化特征值，\\omega>0。\n\n中心点附近常用线性化矩阵的特征值来分类。实特征值给出结点或鞍型，复特征值带来旋转；临界情形还要看高阶项。中心点还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用中心点，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，中心点对应的轨道图像也可能随之改变。中心点更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "中心点",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%AD%E5%BF%83%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "中心点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%AD%E5%BF%83%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "center point",
+          "url": "https://en.wikipedia.org/w/index.php?search=center%20point"
+        }
       ]
     },
     {
@@ -791,6 +1535,24 @@
         "对象 条件 运算 记号",
         "jie dian",
         "jie_dian"
+      ],
+      "explanation_markdown": "结点刻画向量场为零或线性化类型特殊的状态，是定性理论的基本对象。常写成 $\\lambda_1,\\lambda_2\\in\\mathbb R$，其中两个实特征值决定节点方向。\n\n结点附近常用线性化矩阵的特征值来分类。实特征值给出结点或鞍型，复特征值带来旋转；临界情形还要看高阶项。结点还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用结点，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，结点对应的轨道图像也可能随之改变。结点更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "结点",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%93%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "结点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%93%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "node",
+          "url": "https://en.wikipedia.org/w/index.php?search=node"
+        }
       ]
     },
     {
@@ -809,6 +1571,24 @@
         "扰动 可控",
         "stable jie dian",
         "stable_jie_dian"
+      ],
+      "explanation_markdown": "稳定结点刻画向量场为零或线性化类型特殊的状态，是定性理论的基本对象。常写成 $\\lambda_1<0,\\ \\lambda_2<0$，其中\\lambda_i 是线性化特征值。\n\n稳定结点附近常用线性化矩阵的特征值来分类。实特征值给出结点或鞍型，复特征值带来旋转；临界情形还要看高阶项。稳定结点还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用稳定结点，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，稳定结点对应的轨道图像也可能随之改变。稳定结点更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳定结点",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E5%AE%9A%E7%BB%93%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳定结点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E5%AE%9A%E7%BB%93%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stable node",
+          "url": "https://en.wikipedia.org/w/index.php?search=stable%20node"
+        }
       ]
     },
     {
@@ -827,6 +1607,24 @@
         "扰动 可控",
         "bu stable jie dian",
         "bu_stable_jie_dian"
+      ],
+      "explanation_markdown": "不稳定结点刻画向量场为零或线性化类型特殊的状态，是定性理论的基本对象。常写成 $\\lambda_1>0,\\ \\lambda_2>0$，其中\\lambda_i 是线性化特征值。\n\n不稳定结点附近常用线性化矩阵的特征值来分类。实特征值给出结点或鞍型，复特征值带来旋转；临界情形还要看高阶项。不稳定结点还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用不稳定结点，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，不稳定结点对应的轨道图像也可能随之改变。不稳定结点更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "不稳定结点",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%8D%E7%A8%B3%E5%AE%9A%E7%BB%93%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "不稳定结点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%8D%E7%A8%B3%E5%AE%9A%E7%BB%93%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "unstable node",
+          "url": "https://en.wikipedia.org/w/index.php?search=unstable%20node"
+        }
       ]
     },
     {
@@ -845,6 +1643,24 @@
         "扰动 可控",
         "stable jiao dian",
         "stable_jiao_dian"
+      ],
+      "explanation_markdown": "稳定焦点刻画向量场为零或线性化类型特殊的状态，是定性理论的基本对象。常写成 $\\operatorname{Re}\\lambda<0,\\ \\operatorname{Im}\\lambda\\ne0$，其中\\lambda 是复特征值。\n\n稳定焦点附近常用线性化矩阵的特征值来分类。实特征值给出结点或鞍型，复特征值带来旋转；临界情形还要看高阶项。稳定焦点还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用稳定焦点，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，稳定焦点对应的轨道图像也可能随之改变。稳定焦点更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳定焦点",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E5%AE%9A%E7%84%A6%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳定焦点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E5%AE%9A%E7%84%A6%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stable focus",
+          "url": "https://en.wikipedia.org/w/index.php?search=stable%20focus"
+        }
       ]
     },
     {
@@ -863,6 +1679,24 @@
         "扰动 可控",
         "bu stable jiao dian",
         "bu_stable_jiao_dian"
+      ],
+      "explanation_markdown": "不稳定焦点刻画向量场为零或线性化类型特殊的状态，是定性理论的基本对象。常写成 $\\operatorname{Re}\\lambda>0,\\ \\operatorname{Im}\\lambda\\ne0$，其中\\lambda 是复特征值。\n\n不稳定焦点附近常用线性化矩阵的特征值来分类。实特征值给出结点或鞍型，复特征值带来旋转；临界情形还要看高阶项。不稳定焦点还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用不稳定焦点，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，不稳定焦点对应的轨道图像也可能随之改变。不稳定焦点更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "不稳定焦点",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%8D%E7%A8%B3%E5%AE%9A%E7%84%A6%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "不稳定焦点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%8D%E7%A8%B3%E5%AE%9A%E7%84%A6%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "unstable focus",
+          "url": "https://en.wikipedia.org/w/index.php?search=unstable%20focus"
+        }
       ]
     },
     {
@@ -881,6 +1715,24 @@
         "对象 条件 运算 记号",
         "periodic orbit",
         "periodic_orbit"
+      ],
+      "explanation_markdown": "周期轨道从相空间几何角度描述解的形状、连接关系或长期去向。常写成 $x(t+T)=x(t)$，其中T 是周期。\n\n周期轨道不要求先写出闭式解，而是直接观察轨道集合。它能区分闭轨道、吸引、排斥和连接轨道，在非线性系统中比单纯积分更有解释力。周期轨道还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用周期轨道，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，周期轨道对应的轨道图像也可能随之改变。周期轨道更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "周期轨道",
+          "url": "https://www.baidu.com/s?wd=%E5%91%A8%E6%9C%9F%E8%BD%A8%E9%81%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "周期轨道",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%91%A8%E6%9C%9F%E8%BD%A8%E9%81%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "periodic orbit",
+          "url": "https://en.wikipedia.org/w/index.php?search=periodic%20orbit"
+        }
       ]
     },
     {
@@ -899,6 +1751,24 @@
         "对象 条件 运算 记号",
         "homoclinic orbit",
         "homoclinic_orbit"
+      ],
+      "explanation_markdown": "同宿轨道从相空间几何角度描述解的形状、连接关系或长期去向。常写成 $\\lim_{t\\to\\pm\\infty}x(t)=x_*$，其中x_* 是同一个平衡点。\n\n同宿轨道不要求先写出闭式解，而是直接观察轨道集合。它能区分闭轨道、吸引、排斥和连接轨道，在非线性系统中比单纯积分更有解释力。同宿轨道还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用同宿轨道，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，同宿轨道对应的轨道图像也可能随之改变。同宿轨道更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "同宿轨道",
+          "url": "https://www.baidu.com/s?wd=%E5%90%8C%E5%AE%BF%E8%BD%A8%E9%81%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "同宿轨道",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%8C%E5%AE%BF%E8%BD%A8%E9%81%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "homoclinic orbit",
+          "url": "https://en.wikipedia.org/w/index.php?search=homoclinic%20orbit"
+        }
       ]
     },
     {
@@ -917,6 +1787,24 @@
         "对象 条件 运算 记号",
         "heteroclinic orbit",
         "heteroclinic_orbit"
+      ],
+      "explanation_markdown": "异宿轨道从相空间几何角度描述解的形状、连接关系或长期去向。常写成 $\\lim_{t\\to-\\infty}x(t)=x_-,\\ \\lim_{t\\to\\infty}x(t)=x_+$，其中x_-,x_+ 是不同平衡点。\n\n异宿轨道不要求先写出闭式解，而是直接观察轨道集合。它能区分闭轨道、吸引、排斥和连接轨道，在非线性系统中比单纯积分更有解释力。异宿轨道还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用异宿轨道，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，异宿轨道对应的轨道图像也可能随之改变。异宿轨道更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "异宿轨道",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%82%E5%AE%BF%E8%BD%A8%E9%81%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "异宿轨道",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%82%E5%AE%BF%E8%BD%A8%E9%81%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "heteroclinic orbit",
+          "url": "https://en.wikipedia.org/w/index.php?search=heteroclinic%20orbit"
+        }
       ]
     },
     {
@@ -935,6 +1823,24 @@
         "对象 条件 运算 记号",
         "xi yin zi",
         "xi_yin_zi"
+      ],
+      "explanation_markdown": "吸引子从相空间几何角度描述解的形状、连接关系或长期去向。常写成 $\\operatorname{dist}(\\varphi_t(x),A)\\to0$，其中A 是吸引集合，\\varphi_t 是流。\n\n吸引子不要求先写出闭式解，而是直接观察轨道集合。它能区分闭轨道、吸引、排斥和连接轨道，在非线性系统中比单纯积分更有解释力。吸引子还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用吸引子，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，吸引子对应的轨道图像也可能随之改变。吸引子更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "吸引子",
+          "url": "https://www.baidu.com/s?wd=%E5%90%B8%E5%BC%95%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "吸引子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%B8%E5%BC%95%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "attractor",
+          "url": "https://en.wikipedia.org/w/index.php?search=attractor"
+        }
       ]
     },
     {
@@ -953,6 +1859,24 @@
         "对象 条件 运算 记号",
         "invariant set",
         "invariant_set"
+      ],
+      "explanation_markdown": "不变集从相空间几何角度描述解的形状、连接关系或长期去向。常写成 $\\varphi_t(S)=S$，其中S 是集合，\\varphi_t 是动力系统流。\n\n不变集不要求先写出闭式解，而是直接观察轨道集合。它能区分闭轨道、吸引、排斥和连接轨道，在非线性系统中比单纯积分更有解释力。不变集还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用不变集，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，不变集对应的轨道图像也可能随之改变。不变集更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "不变集",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%8D%E5%8F%98%E9%9B%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "不变集",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%8D%E5%8F%98%E9%9B%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "invariant set",
+          "url": "https://en.wikipedia.org/w/index.php?search=invariant%20set"
+        }
       ]
     },
     {
@@ -971,6 +1895,24 @@
         "对象 条件 运算 记号",
         "zheng xiang invariant set",
         "zheng_xiang_invariant_set"
+      ],
+      "explanation_markdown": "正向不变集从相空间几何角度描述解的形状、连接关系或长期去向。常写成 $\\varphi_t(S)\\subset S\\quad t\\ge0$，其中S 是集合，t 是正时间。\n\n正向不变集不要求先写出闭式解，而是直接观察轨道集合。它能区分闭轨道、吸引、排斥和连接轨道，在非线性系统中比单纯积分更有解释力。正向不变集还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用正向不变集，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，正向不变集对应的轨道图像也可能随之改变。正向不变集更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正向不变集",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E5%90%91%E4%B8%8D%E5%8F%98%E9%9B%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正向不变集",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E5%90%91%E4%B8%8D%E5%8F%98%E9%9B%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "forward invariant set",
+          "url": "https://en.wikipedia.org/w/index.php?search=forward%20invariant%20set"
+        }
       ]
     },
     {
@@ -989,6 +1931,19 @@
         "对象 条件 运算 记号",
         "lyapunov function",
         "lyapunov_function"
+      ],
+      "explanation_markdown": "Lyapunov函数衡量解对初值、扰动或模型误差的反应，说明轨道是否保持接近或趋向目标。常写成 $V(x)>0,\\ \\dot V(x)\\le0$，其中V 是标量函数，\\dot V 是沿轨道导数。\n\nLyapunov函数通常用不等式、Lyapunov函数或比较估计来表达。稳定只要求扰动后不远离，渐近稳定还要求回到目标，指数稳定进一步给出速度。Lyapunov函数还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用Lyapunov函数，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，Lyapunov函数对应的轨道图像也可能随之改变。Lyapunov函数更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Lyapunov函数",
+          "url": "https://www.baidu.com/s?wd=Lyapunov%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Lyapunov函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Lyapunov%E5%87%BD%E6%95%B0"
+        }
       ]
     },
     {
@@ -1007,6 +1962,19 @@
         "扰动 可控",
         "lyapunov stable xing",
         "lyapunov_stable_xing"
+      ],
+      "explanation_markdown": "Lyapunov稳定性衡量解对初值、扰动或模型误差的反应，说明轨道是否保持接近或趋向目标。常写成 $\\|x(0)-x_*\\|<\\delta\\Rightarrow\\|x(t)-x_*\\|<\\varepsilon$，其中x_* 是平衡点。\n\nLyapunov稳定性通常用不等式、Lyapunov函数或比较估计来表达。稳定只要求扰动后不远离，渐近稳定还要求回到目标，指数稳定进一步给出速度。Lyapunov稳定性还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用Lyapunov稳定性，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，Lyapunov稳定性对应的轨道图像也可能随之改变。Lyapunov稳定性更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Lyapunov稳定性",
+          "url": "https://www.baidu.com/s?wd=Lyapunov%E7%A8%B3%E5%AE%9A%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Lyapunov稳定性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Lyapunov%E7%A8%B3%E5%AE%9A%E6%80%A7"
+        }
       ]
     },
     {
@@ -1025,6 +1993,24 @@
         "扰动 可控",
         "asymptotic stable xing",
         "asymptotic_stable_xing"
+      ],
+      "explanation_markdown": "渐近稳定性衡量解对初值、扰动或模型误差的反应，说明轨道是否保持接近或趋向目标。常写成 $\\lim_{t\\to\\infty}x(t)=x_*$，其中x_* 是吸引的平衡点。\n\n渐近稳定性通常用不等式、Lyapunov函数或比较估计来表达。稳定只要求扰动后不远离，渐近稳定还要求回到目标，指数稳定进一步给出速度。渐近稳定性还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用渐近稳定性，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，渐近稳定性对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "渐近稳定性",
+          "url": "https://www.baidu.com/s?wd=%E6%B8%90%E8%BF%91%E7%A8%B3%E5%AE%9A%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "渐近稳定性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B8%90%E8%BF%91%E7%A8%B3%E5%AE%9A%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "asymptotic stable xing",
+          "url": "https://en.wikipedia.org/w/index.php?search=asymptotic%20stable%20xing"
+        }
       ]
     },
     {
@@ -1043,6 +2029,24 @@
         "扰动 可控",
         "zhi shu stable xing",
         "zhi_shu_stable_xing"
+      ],
+      "explanation_markdown": "指数稳定性衡量解对初值、扰动或模型误差的反应，说明轨道是否保持接近或趋向目标。常写成 $\\|x(t)-x_*\\|\\le C e^{-\\alpha t}\\|x(0)-x_*\\|$，其中C,\\alpha 是正常数。\n\n指数稳定性通常用不等式、Lyapunov函数或比较估计来表达。稳定只要求扰动后不远离，渐近稳定还要求回到目标，指数稳定进一步给出速度。指数稳定性还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用指数稳定性，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，指数稳定性对应的轨道图像也可能随之改变。指数稳定性更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "指数稳定性",
+          "url": "https://www.baidu.com/s?wd=%E6%8C%87%E6%95%B0%E7%A8%B3%E5%AE%9A%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "指数稳定性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8C%87%E6%95%B0%E7%A8%B3%E5%AE%9A%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "exponential stability",
+          "url": "https://en.wikipedia.org/w/index.php?search=exponential%20stability"
+        }
       ]
     },
     {
@@ -1061,6 +2065,24 @@
         "扰动 可控",
         "jie gou stable xing",
         "jie_gou_stable_xing"
+      ],
+      "explanation_markdown": "结构稳定性衡量解对初值、扰动或模型误差的反应，说明轨道是否保持接近或趋向目标。常写成 $\\tilde f=f+g,\\ \\|g\\|_{C^1}\\ll1$，其中小扰动 g 不改变相图拓扑类型。\n\n结构稳定性通常用不等式、Lyapunov函数或比较估计来表达。稳定只要求扰动后不远离，渐近稳定还要求回到目标，指数稳定进一步给出速度。结构稳定性还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用结构稳定性，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，结构稳定性对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "结构稳定性",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%93%E6%9E%84%E7%A8%B3%E5%AE%9A%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "结构稳定性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%93%E6%9E%84%E7%A8%B3%E5%AE%9A%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "structural stability",
+          "url": "https://en.wikipedia.org/w/index.php?search=structural%20stability"
+        }
       ]
     },
     {
@@ -1079,6 +2101,19 @@
         "对象 条件 运算 记号",
         "poincare ying she",
         "poincare_ying_she"
+      ],
+      "explanation_markdown": "Poincare映射研究周期结构、参数变化或不变流形附近的轨道组织方式。常写成 $P(x)=\\varphi_{\\tau(x)}(x)$，其中\\varphi_t 是流，\\tau 是回到截面的时间。\n\nPoincare映射把连续流转化为截面映射、乘子或低维流形上的问题。参数穿过临界值时，平衡点、周期轨道或稳定性会出现定性改变。Poincare映射还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用Poincare映射，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，Poincare映射对应的轨道图像也可能随之改变。Poincare映射更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Poincare映射",
+          "url": "https://www.baidu.com/s?wd=Poincare%E6%98%A0%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Poincare映射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Poincare%E6%98%A0%E5%B0%84"
+        }
       ]
     },
     {
@@ -1097,6 +2132,19 @@
         "对象 条件 运算 记号",
         "floquet li lun",
         "floquet_li_lun"
+      ],
+      "explanation_markdown": "Floquet理论研究周期结构、参数变化或不变流形附近的轨道组织方式。常写成 $\\Phi(t+T)=\\Phi(t)\\Phi(T)$，其中T 是周期，\\Phi 是基本解矩阵。\n\nFloquet理论把连续流转化为截面映射、乘子或低维流形上的问题。参数穿过临界值时，平衡点、周期轨道或稳定性会出现定性改变。Floquet理论还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用Floquet理论，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，Floquet理论对应的轨道图像也可能随之改变。Floquet理论更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Floquet理论",
+          "url": "https://www.baidu.com/s?wd=Floquet%E7%90%86%E8%AE%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Floquet理论",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Floquet%E7%90%86%E8%AE%BA"
+        }
       ]
     },
     {
@@ -1115,6 +2163,24 @@
         "对象 条件 运算 记号",
         "bifurcation dian",
         "bifurcation_dian"
+      ],
+      "explanation_markdown": "分岔点研究周期结构、参数变化或不变流形附近的轨道组织方式。常写成 $\\dot x=f(x,\\mu)$，其中\\mu 是参数，结构改变发生在临界值。\n\n分岔点把连续流转化为截面映射、乘子或低维流形上的问题。参数穿过临界值时，平衡点、周期轨道或稳定性会出现定性改变。分岔点还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用分岔点，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，分岔点对应的轨道图像也可能随之改变。分岔点更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分岔点",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E5%B2%94%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分岔点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E5%B2%94%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bifurcation dian",
+          "url": "https://en.wikipedia.org/w/index.php?search=bifurcation%20dian"
+        }
       ]
     },
     {
@@ -1133,6 +2199,24 @@
         "对象 条件 运算 记号",
         "an jie bifurcation",
         "an_jie_bifurcation"
+      ],
+      "explanation_markdown": "鞍结分岔研究周期结构、参数变化或不变流形附近的轨道组织方式。常写成 $\\dot x=\\mu+x^2$，其中\\mu 是控制参数。\n\n鞍结分岔把连续流转化为截面映射、乘子或低维流形上的问题。参数穿过临界值时，平衡点、周期轨道或稳定性会出现定性改变。鞍结分岔还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用鞍结分岔，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，鞍结分岔对应的轨道图像也可能随之改变。鞍结分岔更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "鞍结分岔",
+          "url": "https://www.baidu.com/s?wd=%E9%9E%8D%E7%BB%93%E5%88%86%E5%B2%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "鞍结分岔",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9E%8D%E7%BB%93%E5%88%86%E5%B2%94"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "an jie bifurcation",
+          "url": "https://en.wikipedia.org/w/index.php?search=an%20jie%20bifurcation"
+        }
       ]
     },
     {
@@ -1151,6 +2235,19 @@
         "对象 条件 运算 记号",
         "hopf bifurcation",
         "hopf_bifurcation"
+      ],
+      "explanation_markdown": "Hopf分岔研究周期结构、参数变化或不变流形附近的轨道组织方式。常写成 $\\lambda_{1,2}(\\mu)=\\alpha(\\mu)\\pm i\\omega(\\mu)$，其中\\alpha 穿过零时出现小周期轨道。\n\nHopf分岔把连续流转化为截面映射、乘子或低维流形上的问题。参数穿过临界值时，平衡点、周期轨道或稳定性会出现定性改变。Hopf分岔还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用Hopf分岔，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，Hopf分岔对应的轨道图像也可能随之改变。Hopf分岔更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Hopf分岔",
+          "url": "https://www.baidu.com/s?wd=Hopf%E5%88%86%E5%B2%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Hopf分岔",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Hopf%E5%88%86%E5%B2%94"
+        }
       ]
     },
     {
@@ -1169,6 +2266,24 @@
         "对象 条件 运算 记号",
         "bei zhou qi bifurcation",
         "bei_zhou_qi_bifurcation"
+      ],
+      "explanation_markdown": "倍周期分岔研究周期结构、参数变化或不变流形附近的轨道组织方式。常写成 $P\\prime(x_*)=-1$，其中P 是 Poincare 或离散映射。\n\n倍周期分岔把连续流转化为截面映射、乘子或低维流形上的问题。参数穿过临界值时，平衡点、周期轨道或稳定性会出现定性改变。倍周期分岔还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用倍周期分岔，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，倍周期分岔对应的轨道图像也可能随之改变。倍周期分岔更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "倍周期分岔",
+          "url": "https://www.baidu.com/s?wd=%E5%80%8D%E5%91%A8%E6%9C%9F%E5%88%86%E5%B2%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "倍周期分岔",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%80%8D%E5%91%A8%E6%9C%9F%E5%88%86%E5%B2%94"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "period doubling bifurcation",
+          "url": "https://en.wikipedia.org/w/index.php?search=period%20doubling%20bifurcation"
+        }
       ]
     },
     {
@@ -1187,6 +2302,24 @@
         "对象 条件 运算 记号",
         "center manifold",
         "center_manifold"
+      ],
+      "explanation_markdown": "中心流形研究周期结构、参数变化或不变流形附近的轨道组织方式。常写成 $E=E^s\\oplus E^c\\oplus E^u$，其中E^c 是中心子空间。\n\n中心流形把连续流转化为截面映射、乘子或低维流形上的问题。参数穿过临界值时，平衡点、周期轨道或稳定性会出现定性改变。中心流形还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用中心流形，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，中心流形对应的轨道图像也可能随之改变。中心流形更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "中心流形",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%AD%E5%BF%83%E6%B5%81%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "中心流形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%AD%E5%BF%83%E6%B5%81%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "center manifold",
+          "url": "https://en.wikipedia.org/w/index.php?search=center%20manifold"
+        }
       ]
     },
     {
@@ -1205,6 +2338,24 @@
         "扰动 可控",
         "stable manifold",
         "stable_manifold"
+      ],
+      "explanation_markdown": "稳定流形研究周期结构、参数变化或不变流形附近的轨道组织方式。常写成 $W^s(x_*)=\\{x:\\varphi_t(x)\\to x_*\\}$，其中\\varphi_t 是流。\n\n稳定流形把连续流转化为截面映射、乘子或低维流形上的问题。参数穿过临界值时，平衡点、周期轨道或稳定性会出现定性改变。稳定流形还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用稳定流形，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，稳定流形对应的轨道图像也可能随之改变。稳定流形更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳定流形",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E5%AE%9A%E6%B5%81%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳定流形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E5%AE%9A%E6%B5%81%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stable manifold",
+          "url": "https://en.wikipedia.org/w/index.php?search=stable%20manifold"
+        }
       ]
     },
     {
@@ -1223,6 +2374,24 @@
         "扰动 可控",
         "unstable manifold",
         "unstable_manifold"
+      ],
+      "explanation_markdown": "不稳定流形研究周期结构、参数变化或不变流形附近的轨道组织方式。常写成 $W^u(x_*)=\\{x:\\varphi_{-t}(x)\\to x_*\\}$，其中反向时间趋向平衡点。\n\n不稳定流形把连续流转化为截面映射、乘子或低维流形上的问题。参数穿过临界值时，平衡点、周期轨道或稳定性会出现定性改变。不稳定流形还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用不稳定流形，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，不稳定流形对应的轨道图像也可能随之改变。不稳定流形更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "不稳定流形",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%8D%E7%A8%B3%E5%AE%9A%E6%B5%81%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "不稳定流形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%8D%E7%A8%B3%E5%AE%9A%E6%B5%81%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "unstable manifold",
+          "url": "https://en.wikipedia.org/w/index.php?search=unstable%20manifold"
+        }
       ]
     },
     {
@@ -1241,6 +2410,24 @@
         "对象 条件 运算 记号",
         "gang xing bi",
         "gang_xing_bi"
+      ],
+      "explanation_markdown": "刚性比说明微分方程中同时存在快慢时间尺度，是数值求解中很重要的性质。常写成 $\\rho=\\frac{\\max_i|\\operatorname{Re}\\lambda_i|}{\\min_i|\\operatorname{Re}\\lambda_i|}$，其中\\lambda_i 是快慢模态特征值。\n\n刚性比中快模态可能已经衰减，却仍限制显式方法步长。隐式格式、A稳定性和L稳定性正是为处理这类时间尺度分离而引入。刚性比还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用刚性比，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，刚性比对应的轨道图像也可能随之改变。刚性比更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "刚性比",
+          "url": "https://www.baidu.com/s?wd=%E5%88%9A%E6%80%A7%E6%AF%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "刚性比",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%9A%E6%80%A7%E6%AF%94"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stiffness ratio",
+          "url": "https://en.wikipedia.org/w/index.php?search=stiffness%20ratio"
+        }
       ]
     },
     {
@@ -1259,6 +2446,19 @@
         "对象 条件 运算 记号",
         "lipschitz condition",
         "lipschitz_condition"
+      ],
+      "explanation_markdown": "Lipschitz条件关心解是否存在、是否唯一，以及能在多长区间内保持有效。常写成 $\\|f(t,x)-f(t,y)\\|\\le L\\|x-y\\|$，其中L 是 Lipschitz 常数。\n\nLipschitz条件把方程右端的连续性、Lipschitz 条件和初始数据联系起来。存在与唯一是两件事；边值问题还会受到两端条件共同约束。Lipschitz条件还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用Lipschitz条件，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，Lipschitz条件对应的轨道图像也可能随之改变。Lipschitz条件更适合作为描述演化结构的对象，而不是孤立的求解步骤。Lipschitz条件还要说明变量范围，全局条件和局部条件给出的唯一性结论不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Lipschitz条件",
+          "url": "https://www.baidu.com/s?wd=Lipschitz%E6%9D%A1%E4%BB%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Lipschitz条件",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Lipschitz%E6%9D%A1%E4%BB%B6"
+        }
       ]
     },
     {
@@ -1277,6 +2477,19 @@
         "对象 条件 运算 记号",
         "caratheodory solution",
         "caratheodory_solution"
+      ],
+      "explanation_markdown": "Caratheodory解关心解是否存在、是否唯一，以及能在多长区间内保持有效。常写成 $x(t)=x_0+\\int_{t_0}^t f(s,x(s))\\,ds$，其中f 可测且满足积分意义下方程。\n\nCaratheodory解把方程右端的连续性、Lipschitz 条件和初始数据联系起来。存在与唯一是两件事；边值问题还会受到两端条件共同约束。Caratheodory解还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用Caratheodory解，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，Caratheodory解对应的轨道图像也可能随之改变。Caratheodory解更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Caratheodory解",
+          "url": "https://www.baidu.com/s?wd=Caratheodory%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Caratheodory解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Caratheodory%E8%A7%A3"
+        }
       ]
     },
     {
@@ -1295,6 +2508,19 @@
         "对象 条件 运算 记号",
         "peano cun zai theorem",
         "peano_cun_zai_theorem"
+      ],
+      "explanation_markdown": "Peano存在定理关心解是否存在、是否唯一，以及能在多长区间内保持有效。常写成 $x\\prime=f(t,x)$，其中f 连续时至少存在局部解。\n\nPeano存在定理把方程右端的连续性、Lipschitz 条件和初始数据联系起来。存在与唯一是两件事；边值问题还会受到两端条件共同约束。Peano存在定理还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用Peano存在定理，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，Peano存在定理对应的轨道图像也可能随之改变。Peano存在定理更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Peano存在定理",
+          "url": "https://www.baidu.com/s?wd=Peano%E5%AD%98%E5%9C%A8%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Peano存在定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Peano%E5%AD%98%E5%9C%A8%E5%AE%9A%E7%90%86"
+        }
       ]
     },
     {
@@ -1313,6 +2539,24 @@
         "对象 条件 运算 记号",
         "comparison theorem",
         "comparison_theorem"
+      ],
+      "explanation_markdown": "比较定理衡量解对初值、扰动或模型误差的反应，说明轨道是否保持接近或趋向目标。常写成 $u\\prime\\le f(t,u),\\ v\\prime=f(t,v)$，其中u 与 v 的大小关系可随时间保持。\n\n比较定理通常用不等式、Lyapunov函数或比较估计来表达。稳定只要求扰动后不远离，渐近稳定还要求回到目标，指数稳定进一步给出速度。比较定理还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用比较定理，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，比较定理对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "比较定理",
+          "url": "https://www.baidu.com/s?wd=%E6%AF%94%E8%BE%83%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "比较定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AF%94%E8%BE%83%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "comparison theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=comparison%20theorem"
+        }
       ]
     },
     {
@@ -1331,6 +2575,19 @@
         "对象 条件 运算 记号",
         "bernoulli equation",
         "bernoulli_equation"
+      ],
+      "explanation_markdown": "Bernoulli方程利用方程中特殊的代数或解析结构，把求解过程化为更标准的计算。常写成 $y\\prime+p(x)y=q(x)y^n,\\ n\\ne1$，其中p,q 是已知函数，n 是指数参数。\n\nBernoulli方程的适用范围由方程形式决定。分离变量、代换、特征根和级数展开都能降低难度，但系数或奇点结构一变，方法也要随之调整。Bernoulli方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用Bernoulli方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，Bernoulli方程对应的轨道图像也可能随之改变。Bernoulli方程更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Bernoulli方程",
+          "url": "https://www.baidu.com/s?wd=Bernoulli%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Bernoulli方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Bernoulli%E6%96%B9%E7%A8%8B"
+        }
       ]
     },
     {
@@ -1349,6 +2606,19 @@
         "对象 条件 运算 记号",
         "clairaut equation",
         "clairaut_equation"
+      ],
+      "explanation_markdown": "Clairaut方程利用方程中特殊的代数或解析结构，把求解过程化为更标准的计算。常写成 $y=xy\\prime+f(y\\prime)$，其中y\\prime 是导数，f 是给定函数。\n\nClairaut方程的适用范围由方程形式决定。分离变量、代换、特征根和级数展开都能降低难度，但系数或奇点结构一变，方法也要随之调整。Clairaut方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用Clairaut方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，Clairaut方程对应的轨道图像也可能随之改变。Clairaut方程更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Clairaut方程",
+          "url": "https://www.baidu.com/s?wd=Clairaut%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Clairaut方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Clairaut%E6%96%B9%E7%A8%8B"
+        }
       ]
     },
     {
@@ -1367,6 +2637,19 @@
         "对象 条件 运算 记号",
         "lagrange equation",
         "lagrange_equation"
+      ],
+      "explanation_markdown": "Lagrange方程利用方程中特殊的代数或解析结构，把求解过程化为更标准的计算。常写成 $y=x\\phi(y\\prime)+\\psi(y\\prime)$，其中\\phi,\\psi 是给定函数。\n\nLagrange方程的适用范围由方程形式决定。分离变量、代换、特征根和级数展开都能降低难度，但系数或奇点结构一变，方法也要随之调整。Lagrange方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用Lagrange方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，Lagrange方程对应的轨道图像也可能随之改变。Lagrange方程更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Lagrange方程",
+          "url": "https://www.baidu.com/s?wd=Lagrange%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Lagrange方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Lagrange%E6%96%B9%E7%A8%8B"
+        }
       ]
     },
     {
@@ -1385,6 +2668,19 @@
         "对象 条件 运算 记号",
         "euler equation",
         "euler_equation"
+      ],
+      "explanation_markdown": "Euler方程利用方程中特殊的代数或解析结构，把求解过程化为更标准的计算。常写成 $t^2y\\prime\\prime+a t y\\prime+b y=0$，其中a,b 是常数。\n\nEuler方程的适用范围由方程形式决定。分离变量、代换、特征根和级数展开都能降低难度，但系数或奇点结构一变，方法也要随之调整。Euler方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用Euler方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，Euler方程对应的轨道图像也可能随之改变。Euler方程更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Euler方程",
+          "url": "https://www.baidu.com/s?wd=Euler%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Euler方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Euler%E6%96%B9%E7%A8%8B"
+        }
       ]
     },
     {
@@ -1403,6 +2699,19 @@
         "对象 条件 运算 记号",
         "bessel equation",
         "bessel_equation"
+      ],
+      "explanation_markdown": "Bessel方程利用方程中特殊的代数或解析结构，把求解过程化为更标准的计算。常写成 $x^2y\\prime\\prime+xy\\prime+(x^2-\\nu^2)y=0$，其中\\nu 是阶数。\n\nBessel方程的适用范围由方程形式决定。分离变量、代换、特征根和级数展开都能降低难度，但系数或奇点结构一变，方法也要随之调整。Bessel方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用Bessel方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，Bessel方程对应的轨道图像也可能随之改变。Bessel方程更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Bessel方程",
+          "url": "https://www.baidu.com/s?wd=Bessel%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Bessel方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Bessel%E6%96%B9%E7%A8%8B"
+        }
       ]
     },
     {
@@ -1421,6 +2730,19 @@
         "对象 条件 运算 记号",
         "legendre equation",
         "legendre_equation"
+      ],
+      "explanation_markdown": "Legendre方程利用方程中特殊的代数或解析结构，把求解过程化为更标准的计算。常写成 $(1-x^2)y\\prime\\prime-2xy\\prime+\\ell(\\ell+1)y=0$，其中\\ell 是阶数。\n\nLegendre方程的适用范围由方程形式决定。分离变量、代换、特征根和级数展开都能降低难度，但系数或奇点结构一变，方法也要随之调整。Legendre方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用Legendre方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，Legendre方程对应的轨道图像也可能随之改变。Legendre方程更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Legendre方程",
+          "url": "https://www.baidu.com/s?wd=Legendre%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Legendre方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Legendre%E6%96%B9%E7%A8%8B"
+        }
       ]
     },
     {
@@ -1439,6 +2761,24 @@
         "对象 条件 运算 记号",
         "yi jie wei fen",
         "yi_jie_wei_fen_equation"
+      ],
+      "explanation_markdown": "一阶微分方程描述状态变量随自变量演化的规则，重点是右端函数如何决定轨道。常写成 $F(t,y,y\\prime)=0$，其中y\\prime 是最高阶导数。\n\n一阶微分方程的性质不仅由公式外形决定，还依赖初值、参数和相空间维数。线性化能给出局部图像，但非线性项和全局结构常决定长期行为。一阶微分方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用一阶微分方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，一阶微分方程对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "一阶微分方程",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%80%E9%98%B6%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "一阶微分方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%80%E9%98%B6%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "first order differential equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=first%20order%20differential%20equation"
+        }
       ]
     },
     {
@@ -1457,6 +2797,24 @@
         "对象 条件 运算 记号",
         "yi jie wei fen",
         "yi_jie_wei_fen_xi_tong"
+      ],
+      "explanation_markdown": "一阶微分系统描述状态变量随自变量演化的规则，重点是右端函数如何决定轨道。常写成 $x\\prime=f(t,x)$，其中x 是状态向量。\n\n一阶微分系统的性质不仅由公式外形决定，还依赖初值、参数和相空间维数。线性化能给出局部图像，但非线性项和全局结构常决定长期行为。一阶微分系统还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用一阶微分系统，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，一阶微分系统对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "一阶微分系统",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%80%E9%98%B6%E5%BE%AE%E5%88%86%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "一阶微分系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%80%E9%98%B6%E5%BE%AE%E5%88%86%E7%B3%BB%E7%BB%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "first order differential system",
+          "url": "https://en.wikipedia.org/w/index.php?search=first%20order%20differential%20system"
+        }
       ]
     },
     {
@@ -1475,6 +2833,24 @@
         "对象 条件 运算 记号",
         "er jie wei fen",
         "er_jie_wei_fen_equation"
+      ],
+      "explanation_markdown": "二阶微分方程描述状态变量随自变量演化的规则，重点是右端函数如何决定轨道。常写成 $F(t,y,y\\prime,y\\prime\\prime)=0$，其中y\\prime\\prime 是最高阶导数。\n\n二阶微分方程的性质不仅由公式外形决定，还依赖初值、参数和相空间维数。线性化能给出局部图像，但非线性项和全局结构常决定长期行为。二阶微分方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用二阶微分方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，二阶微分方程对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "二阶微分方程",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%8C%E9%98%B6%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "二阶微分方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%8C%E9%98%B6%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "second order differential equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=second%20order%20differential%20equation"
+        }
       ]
     },
     {
@@ -1493,6 +2869,24 @@
         "对象 条件 运算 记号",
         "er jie wei fen",
         "er_jie_wei_fen_xi_tong"
+      ],
+      "explanation_markdown": "二阶微分系统描述状态变量随自变量演化的规则，重点是右端函数如何决定轨道。常写成 $x\\prime\\prime=f(t,x,x\\prime)$，其中x 是向量未知量。\n\n二阶微分系统的性质不仅由公式外形决定，还依赖初值、参数和相空间维数。线性化能给出局部图像，但非线性项和全局结构常决定长期行为。二阶微分系统还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用二阶微分系统，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，二阶微分系统对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "二阶微分系统",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%8C%E9%98%B6%E5%BE%AE%E5%88%86%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "二阶微分系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%8C%E9%98%B6%E5%BE%AE%E5%88%86%E7%B3%BB%E7%BB%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "second order differential system",
+          "url": "https://en.wikipedia.org/w/index.php?search=second%20order%20differential%20system"
+        }
       ]
     },
     {
@@ -1511,6 +2905,24 @@
         "对象 条件 运算 记号",
         "gao jie wei fen",
         "gao_jie_wei_fen_equation"
+      ],
+      "explanation_markdown": "高阶微分方程描述状态变量随自变量演化的规则，重点是右端函数如何决定轨道。常写成 $F(t,y,y\\prime,\\ldots,y^{(n)})=0$，其中n 是最高阶数。\n\n高阶微分方程的性质不仅由公式外形决定，还依赖初值、参数和相空间维数。线性化能给出局部图像，但非线性项和全局结构常决定长期行为。高阶微分方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用高阶微分方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，高阶微分方程对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "高阶微分方程",
+          "url": "https://www.baidu.com/s?wd=%E9%AB%98%E9%98%B6%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "高阶微分方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%AB%98%E9%98%B6%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "higher order differential equations",
+          "url": "https://en.wikipedia.org/w/index.php?search=higher%20order%20differential%20equations"
+        }
       ]
     },
     {
@@ -1529,6 +2941,24 @@
         "对象 条件 运算 记号",
         "gao jie wei fen",
         "gao_jie_wei_fen_xi_tong"
+      ],
+      "explanation_markdown": "高阶微分系统描述状态变量随自变量演化的规则，重点是右端函数如何决定轨道。常写成 $x^{(n)}=f(t,x,x\\prime,\\ldots,x^{(n-1)})$，其中x 是向量未知函数。\n\n高阶微分系统的性质不仅由公式外形决定，还依赖初值、参数和相空间维数。线性化能给出局部图像，但非线性项和全局结构常决定长期行为。高阶微分系统还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用高阶微分系统，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，高阶微分系统对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "高阶微分系统",
+          "url": "https://www.baidu.com/s?wd=%E9%AB%98%E9%98%B6%E5%BE%AE%E5%88%86%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "高阶微分系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%AB%98%E9%98%B6%E5%BE%AE%E5%88%86%E7%B3%BB%E7%BB%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "higher order differential systems",
+          "url": "https://en.wikipedia.org/w/index.php?search=higher%20order%20differential%20systems"
+        }
       ]
     },
     {
@@ -1547,6 +2977,24 @@
         "对象 条件 运算 记号",
         "linear wei fen equation",
         "linear_wei_fen_equation"
+      ],
+      "explanation_markdown": "线性微分方程服务于线性微分方程的解空间和基解结构。常写成 $L[y]=g(t)$，其中L 是线性微分算子，g 是已知函数。\n\n线性微分方程让通解、状态转移和非齐次项处理都有统一矩阵语言。基解是否线性无关通常由 Wronski 行列式或基本解矩阵判定。线性微分方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用线性微分方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，线性微分方程对应的轨道图像也可能随之改变。线性微分方程更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线性微分方程",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线性微分方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear differential equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20differential%20equation"
+        }
       ]
     },
     {
@@ -1565,6 +3013,24 @@
         "对象 条件 运算 记号",
         "linear wei fen xi",
         "linear_wei_fen_xi_tong"
+      ],
+      "explanation_markdown": "线性微分系统描述状态变量随自变量演化的规则，重点是右端函数如何决定轨道。常写成 $x\\prime=A(t)x+g(t)$，其中A 是矩阵函数，g 是外力项。\n\n线性微分系统的性质不仅由公式外形决定，还依赖初值、参数和相空间维数。线性化能给出局部图像，但非线性项和全局结构常决定长期行为。线性微分系统还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用线性微分系统，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，线性微分系统对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线性微分系统",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线性微分系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E7%B3%BB%E7%BB%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear differential system",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20differential%20system"
+        }
       ]
     },
     {
@@ -1583,6 +3049,24 @@
         "对象 条件 运算 记号",
         "nonlinear wei fen equation",
         "nonlinear_wei_fen_equation"
+      ],
+      "explanation_markdown": "非线性微分方程服务于线性微分方程的解空间和基解结构。常写成 $F(t,y,y\\prime,\\ldots)=0$，其中F 对未知函数或导数含非线性项。\n\n非线性微分方程让通解、状态转移和非齐次项处理都有统一矩阵语言。基解是否线性无关通常由 Wronski 行列式或基本解矩阵判定。非线性微分方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用非线性微分方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，非线性微分方程对应的轨道图像也可能随之改变。非线性微分方程更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "非线性微分方程",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "非线性微分方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "nonlinear differential equations",
+          "url": "https://en.wikipedia.org/w/index.php?search=nonlinear%20differential%20equations"
+        }
       ]
     },
     {
@@ -1601,6 +3085,24 @@
         "对象 条件 运算 记号",
         "nonlinear wei fen xi",
         "nonlinear_wei_fen_xi_tong"
+      ],
+      "explanation_markdown": "非线性微分系统描述状态变量随自变量演化的规则，重点是右端函数如何决定轨道。常写成 $x\\prime=f(t,x)$，其中f 是非线性向量场。\n\n非线性微分系统的性质不仅由公式外形决定，还依赖初值、参数和相空间维数。线性化能给出局部图像，但非线性项和全局结构常决定长期行为。非线性微分系统还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用非线性微分系统，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，非线性微分系统对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "非线性微分系统",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "非线性微分系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E7%B3%BB%E7%BB%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "nonlinear differential systems",
+          "url": "https://en.wikipedia.org/w/index.php?search=nonlinear%20differential%20systems"
+        }
       ]
     },
     {
@@ -1619,6 +3121,24 @@
         "对象 条件 运算 记号",
         "zi zhi wei fen",
         "zi_zhi_wei_fen_equation"
+      ],
+      "explanation_markdown": "自治微分方程描述状态变量随自变量演化的规则，重点是右端函数如何决定轨道。常写成 $\\dot x=f(x)$，其中x 是状态，f 不显含时间。\n\n自治微分方程的性质不仅由公式外形决定，还依赖初值、参数和相空间维数。线性化能给出局部图像，但非线性项和全局结构常决定长期行为。自治微分方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用自治微分方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，自治微分方程对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自治微分方程",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E6%B2%BB%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自治微分方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E6%B2%BB%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "autonomous differential equations",
+          "url": "https://en.wikipedia.org/w/index.php?search=autonomous%20differential%20equations"
+        }
       ]
     },
     {
@@ -1637,6 +3157,24 @@
         "对象 条件 运算 记号",
         "zi zhi wei fen",
         "zi_zhi_wei_fen_xi_tong"
+      ],
+      "explanation_markdown": "自治微分系统描述状态变量随自变量演化的规则，重点是右端函数如何决定轨道。常写成 $\\dot x=f(x)$，其中x 是状态向量，f 是自治向量场。\n\n自治微分系统的性质不仅由公式外形决定，还依赖初值、参数和相空间维数。线性化能给出局部图像，但非线性项和全局结构常决定长期行为。自治微分系统还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用自治微分系统，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，自治微分系统对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自治微分系统",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E6%B2%BB%E5%BE%AE%E5%88%86%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自治微分系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E6%B2%BB%E5%BE%AE%E5%88%86%E7%B3%BB%E7%BB%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "autonomous differential system",
+          "url": "https://en.wikipedia.org/w/index.php?search=autonomous%20differential%20system"
+        }
       ]
     },
     {
@@ -1655,6 +3193,24 @@
         "对象 条件 运算 记号",
         "fei zi zhi wei",
         "fei_zi_zhi_wei_fen_equation"
+      ],
+      "explanation_markdown": "非自治微分方程描述状态变量随自变量演化的规则，重点是右端函数如何决定轨道。常写成 $\\dot x=f(t,x)$，其中t 是时间，x 是状态。\n\n非自治微分方程的性质不仅由公式外形决定，还依赖初值、参数和相空间维数。线性化能给出局部图像，但非线性项和全局结构常决定长期行为。非自治微分方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用非自治微分方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，非自治微分方程对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "非自治微分方程",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%9E%E8%87%AA%E6%B2%BB%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "非自治微分方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%9E%E8%87%AA%E6%B2%BB%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "nonautonomous differential equations",
+          "url": "https://en.wikipedia.org/w/index.php?search=nonautonomous%20differential%20equations"
+        }
       ]
     },
     {
@@ -1673,6 +3229,24 @@
         "对象 条件 运算 记号",
         "fei zi zhi wei",
         "fei_zi_zhi_wei_fen_xi_tong"
+      ],
+      "explanation_markdown": "非自治微分系统描述状态变量随自变量演化的规则，重点是右端函数如何决定轨道。常写成 $\\dot x=f(t,x)$，其中x 是状态向量，f 显含时间。\n\n非自治微分系统的性质不仅由公式外形决定，还依赖初值、参数和相空间维数。线性化能给出局部图像，但非线性项和全局结构常决定长期行为。非自治微分系统还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用非自治微分系统，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，非自治微分系统对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "非自治微分系统",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%9E%E8%87%AA%E6%B2%BB%E5%BE%AE%E5%88%86%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "非自治微分系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%9E%E8%87%AA%E6%B2%BB%E5%BE%AE%E5%88%86%E7%B3%BB%E7%BB%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "nonautonomous differential systems",
+          "url": "https://en.wikipedia.org/w/index.php?search=nonautonomous%20differential%20systems"
+        }
       ]
     },
     {
@@ -1691,6 +3265,24 @@
         "对象 条件 运算 记号",
         "gang xing wei fen",
         "gang_xing_wei_fen_equation"
+      ],
+      "explanation_markdown": "刚性微分方程说明微分方程中同时存在快慢时间尺度，是数值求解中很重要的性质。常写成 $y\\prime=\\lambda y,\\ h\\lambda\\in S$，其中S 是数值格式稳定区域。\n\n刚性微分方程中快模态可能已经衰减，却仍限制显式方法步长。隐式格式、A稳定性和L稳定性正是为处理这类时间尺度分离而引入。刚性微分方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用刚性微分方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，刚性微分方程对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "刚性微分方程",
+          "url": "https://www.baidu.com/s?wd=%E5%88%9A%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "刚性微分方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%9A%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "rigid differential equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=rigid%20differential%20equation"
+        }
       ]
     },
     {
@@ -1709,6 +3301,24 @@
         "对象 条件 运算 记号",
         "gang xing wei fen",
         "gang_xing_wei_fen_xi_tong"
+      ],
+      "explanation_markdown": "刚性微分系统说明微分方程中同时存在快慢时间尺度，是数值求解中很重要的性质。常写成 $x\\prime=Ax,\\ \\operatorname{Re}\\lambda_i<0$，其中\\lambda_i 是矩阵 A 的特征值。\n\n刚性微分系统中快模态可能已经衰减，却仍限制显式方法步长。隐式格式、A稳定性和L稳定性正是为处理这类时间尺度分离而引入。刚性微分系统还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用刚性微分系统，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，刚性微分系统对应的轨道图像也可能随之改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "刚性微分系统",
+          "url": "https://www.baidu.com/s?wd=%E5%88%9A%E6%80%A7%E5%BE%AE%E5%88%86%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "刚性微分系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%9A%E6%80%A7%E5%BE%AE%E5%88%86%E7%B3%BB%E7%BB%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "rigid differential system",
+          "url": "https://en.wikipedia.org/w/index.php?search=rigid%20differential%20system"
+        }
       ]
     },
     {
@@ -1727,6 +3337,24 @@
         "对象 条件 运算 记号",
         "qi yi wei fen",
         "qi_yi_wei_fen_equation"
+      ],
+      "explanation_markdown": "奇异微分方程放宽经典常微分方程对光滑、即时或单值右端的要求。常写成 $y\\prime=\\frac{f(t,y)}{t-t_*}$，其中t_* 是奇异点。\n\n奇异微分方程会引入历史段、跳变、退化矩阵或集合值速度。此时解的定义常改成积分意义、弱解或包含关系，稳定性也要重新表述。奇异微分方程还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用奇异微分方程，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，奇异微分方程对应的轨道图像也可能随之改变。奇异微分方程更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "奇异微分方程",
+          "url": "https://www.baidu.com/s?wd=%E5%A5%87%E5%BC%82%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "奇异微分方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A5%87%E5%BC%82%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "strange differential equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=strange%20differential%20equation"
+        }
       ]
     },
     {
@@ -1745,6 +3373,24 @@
         "对象 条件 运算 记号",
         "qi yi wei fen",
         "qi_yi_wei_fen_xi_tong"
+      ],
+      "explanation_markdown": "奇异微分系统放宽经典常微分方程对光滑、即时或单值右端的要求。常写成 $M(x)\\dot x=f(x),\\ \\det M(x_*)=0$，其中M 是退化矩阵，x_* 是奇异状态。\n\n奇异微分系统会引入历史段、跳变、退化矩阵或集合值速度。此时解的定义常改成积分意义、弱解或包含关系，稳定性也要重新表述。奇异微分系统还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用奇异微分系统，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，奇异微分系统对应的轨道图像也可能随之改变。奇异微分系统更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "奇异微分系统",
+          "url": "https://www.baidu.com/s?wd=%E5%A5%87%E5%BC%82%E5%BE%AE%E5%88%86%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "奇异微分系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A5%87%E5%BC%82%E5%BE%AE%E5%88%86%E7%B3%BB%E7%BB%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "strange differential system",
+          "url": "https://en.wikipedia.org/w/index.php?search=strange%20differential%20system"
+        }
       ]
     },
     {
@@ -1763,6 +3409,24 @@
         "对象 条件 运算 记号",
         "yan chi wei fen",
         "yan_chi_wei_fen_xi_tong"
+      ],
+      "explanation_markdown": "延迟微分系统放宽经典常微分方程对光滑、即时或单值右端的要求。常写成 $\\dot x(t)=f(t,x(t),x_t)$，其中x_t 表示过去一段历史函数。\n\n延迟微分系统会引入历史段、跳变、退化矩阵或集合值速度。此时解的定义常改成积分意义、弱解或包含关系，稳定性也要重新表述。延迟微分系统还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用延迟微分系统，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，延迟微分系统对应的轨道图像也可能随之改变。延迟微分系统更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "延迟微分系统",
+          "url": "https://www.baidu.com/s?wd=%E5%BB%B6%E8%BF%9F%E5%BE%AE%E5%88%86%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "延迟微分系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BB%B6%E8%BF%9F%E5%BE%AE%E5%88%86%E7%B3%BB%E7%BB%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "delayed differential system",
+          "url": "https://en.wikipedia.org/w/index.php?search=delayed%20differential%20system"
+        }
       ]
     },
     {
@@ -1781,6 +3445,24 @@
         "扰动 可控",
         "stable equilibrium point",
         "stable_equilibrium_point"
+      ],
+      "explanation_markdown": "稳定平衡点刻画向量场为零或线性化类型特殊的状态，是定性理论的基本对象。常写成 $f(x_*)=0,\\ \\|x(0)-x_*\\|<\\delta\\Rightarrow\\|x(t)-x_*\\|<\\varepsilon$，其中x_* 是平衡点。\n\n稳定平衡点附近常用线性化矩阵的特征值来分类。实特征值给出结点或鞍型，复特征值带来旋转；临界情形还要看高阶项。稳定平衡点还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用稳定平衡点，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，稳定平衡点对应的轨道图像也可能随之改变。稳定平衡点更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳定平衡点",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E5%AE%9A%E5%B9%B3%E8%A1%A1%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳定平衡点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E5%AE%9A%E5%B9%B3%E8%A1%A1%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stable equilibrium point",
+          "url": "https://en.wikipedia.org/w/index.php?search=stable%20equilibrium%20point"
+        }
       ]
     },
     {
@@ -1799,6 +3481,24 @@
         "扰动 可控",
         "stable gui dao",
         "stable_gui_dao"
+      ],
+      "explanation_markdown": "稳定轨道从相空间几何角度描述解的形状、连接关系或长期去向。常写成 $\\operatorname{dist}(x(t),\\Gamma)<\\varepsilon$，其中\\Gamma 是参考轨道。\n\n稳定轨道不要求先写出闭式解，而是直接观察轨道集合。它能区分闭轨道、吸引、排斥和连接轨道，在非线性系统中比单纯积分更有解释力。稳定轨道还要结合初值范围、参数取值和定义域解释，局部结论未必能推出全局行为。在模型中使用稳定轨道，解析公式、相空间图像和数值轨道通常要互相核对。若右端函数或边界条件改变，稳定轨道对应的轨道图像也可能随之改变。稳定轨道更适合作为描述演化结构的对象，而不是孤立的求解步骤。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳定轨道",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E5%AE%9A%E8%BD%A8%E9%81%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳定轨道",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E5%AE%9A%E8%BD%A8%E9%81%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stable orbit",
+          "url": "https://en.wikipedia.org/w/index.php?search=stable%20orbit"
+        }
       ]
     }
   ]

@@ -17,6 +17,24 @@
         "rank det kernel image",
         "additivity homogeneity",
         "linear algebra"
+      ],
+      "explanation_markdown": "线性代数研究向量空间、线性映射和矩阵表示，核心是加法与数乘结构怎样保持。常用定义式是 $T(\\alpha u+\\beta v)=\\alpha T(u)+\\beta T(v)$，其中u,v 是向量，α,β 是标量，T 是线性映射。这个式子说明线性变换不会破坏线性组合。\n\n方程组、坐标、行列式、特征值和正交分解都在这套语言中展开。它把多变量问题拆成方向、子空间和矩阵运算，是微分方程、数据分析和几何计算的基础工具。这些词共同围绕“能否由线性组合表示”展开；张成说明够不够用，无关说明有没有冗余，基把二者合在一起。换基只改变坐标数字，不改变向量和子空间本身，因此判定时要把对象与它的矩阵表示分开。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线性代数",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线性代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20algebra"
+        }
       ]
     },
     {
@@ -35,6 +53,24 @@
         "加法 数乘 分量",
         "vector",
         "vector"
+      ],
+      "explanation_markdown": "向量是可以参与加法和数乘的对象，常用有序分量表示方向、位移或状态。可写成 $\\mathbf v=(v_1,\\ldots,v_n)$，其中v_i 是第 i 个分量，n 是分量个数，粗体字母表示向量。几何箭头只是向量的一种直观图像，线性代数更关心它的运算规则。\n\n在不同基下，同一向量的坐标可能改变，但向量本身不变。方程组的未知量、空间中的位移、数据特征和函数空间中的函数都可以作为向量来处理。这些词共同围绕“能否由线性组合表示”展开；张成说明够不够用，无关说明有没有冗余，基把二者合在一起。换基只改变坐标数字，不改变向量和子空间本身，因此判定时要把对象与它的矩阵表示分开。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "向量",
+          "url": "https://www.baidu.com/s?wd=%E5%90%91%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "向量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%91%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vector",
+          "url": "https://en.wikipedia.org/w/index.php?search=vector"
+        }
       ]
     },
     {
@@ -53,6 +89,24 @@
         "u+v cu",
         "linear combinations",
         "vector space"
+      ],
+      "explanation_markdown": "向量空间是一个集合，里面的元素能做加法和数乘，并满足封闭性及相关公理。通常记作 $\\alpha u+\\beta v\\in V$，其中u,v 属于 V，α,β 是标量，结果仍在 V 中。它把几何向量、函数、多项式和数列统一成同一种线性对象。\n\n向量空间必须包含零向量和相反向量，并满足加法交换、结合、分配等规则。只要线性组合仍不离开集合，就能讨论基、维数、子空间和线性映射。这些词共同围绕“能否由线性组合表示”展开；张成说明够不够用，无关说明有没有冗余，基把二者合在一起。换基只改变坐标数字，不改变向量和子空间本身，因此判定时要把对象与它的矩阵表示分开。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "向量空间",
+          "url": "https://www.baidu.com/s?wd=%E5%90%91%E9%87%8F%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "向量空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%91%E9%87%8F%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vector space",
+          "url": "https://en.wikipedia.org/w/index.php?search=vector%20space"
+        }
       ]
     },
     {
@@ -71,6 +125,24 @@
         "αu+βv",
         "abstract vector space",
         "linear space"
+      ],
+      "explanation_markdown": "线性空间通常与向量空间同义，更强调线性组合这一结构。可写成 $\\alpha u+\\beta v\\in V$，其中V 是空间，u,v 是其中元素，α,β 来自同一个数域。名称中的线性指允许按比例缩放再相加，且结果仍在原集合里。\n\n它不要求元素一定是平面箭头；连续函数集合、多项式集合也可能形成线性空间。与单个向量不同，线性空间是容纳所有线性运算的整体环境。这些词共同围绕“能否由线性组合表示”展开；张成说明够不够用，无关说明有没有冗余，基把二者合在一起。换基只改变坐标数字，不改变向量和子空间本身，因此判定时要把对象与它的矩阵表示分开。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线性空间",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E6%80%A7%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线性空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E6%80%A7%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear space",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20space"
+        }
       ]
     },
     {
@@ -89,6 +161,24 @@
         "αu+βv",
         "zero element",
         "subspace"
+      ],
+      "explanation_markdown": "子空间是大向量空间中的一部分，本身仍能构成向量空间。通常记作 $u,v\\in W\\Rightarrow \\alpha u+\\beta v\\in W$，其中W 是候选子集，α,β 是任意标量，结果仍留在 W 中。它只需检查非空和线性组合封闭，就能继承原空间的运算。\n\n过原点的平面、齐次方程组的解集、矩阵的列空间都是典型子空间。不经过零向量的直线不是子空间，因为数乘或相加会离开它。这些词共同围绕“能否由线性组合表示”展开；张成说明够不够用，无关说明有没有冗余，基把二者合在一起。换基只改变坐标数字，不改变向量和子空间本身，因此判定时要把对象与它的矩阵表示分开。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "子空间",
+          "url": "https://www.baidu.com/s?wd=%E5%AD%90%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "子空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AD%90%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "subspace",
+          "url": "https://en.wikipedia.org/w/index.php?search=subspace"
+        }
       ]
     },
     {
@@ -107,6 +197,24 @@
         "a1v1+...+akvk",
         "span coordinates",
         "linear combination"
+      ],
+      "explanation_markdown": "线性组合是把若干向量分别乘以标量后相加得到的新向量。一个标准表达是 $w=c_1v_1+\\cdots+c_kv_k$，其中v_i 是给定向量，c_i 是系数，w 是组合后的结果。系数记录每个向量对结果的贡献。\n\n张成、坐标、线性相关和基都依赖线性组合。问一个向量能否由一组向量表示，本质上就是问是否存在一组合适的系数。这些词共同围绕“能否由线性组合表示”展开；张成说明够不够用，无关说明有没有冗余，基把二者合在一起。换基只改变坐标数字，不改变向量和子空间本身，因此判定时要把对象与它的矩阵表示分开。因此理解线性组合时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线性组合",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E6%80%A7%E7%BB%84%E5%90%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线性组合",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E6%80%A7%E7%BB%84%E5%90%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear combination",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20combination"
+        }
       ]
     },
     {
@@ -125,6 +233,24 @@
         "sum a_i v_i=0",
         "not all zero",
         "linear dependence"
+      ],
+      "explanation_markdown": "线性相关表示一组向量中存在冗余方向，某些非零系数组合可以抵消成零。计算中常看 $c_1v_1+\\cdots+c_kv_k=0$，其中c_i 是标量系数，若不全为零仍能使和为零，就称这组向量相关。这意味着至少一个向量可由其余向量线性表示。\n\n线性相关的向量组不能作为一组基，因为坐标表达会失去唯一性。矩阵列向量相关时，齐次方程有非零解，行列式也可能为零。这些词共同围绕“能否由线性组合表示”展开；张成说明够不够用，无关说明有没有冗余，基把二者合在一起。换基只改变坐标数字，不改变向量和子空间本身，因此判定时要把对象与它的矩阵表示分开。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线性相关",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E6%80%A7%E7%9B%B8%E5%85%B3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线性相关",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E6%80%A7%E7%9B%B8%E5%85%B3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear dependence",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20dependence"
+        }
       ]
     },
     {
@@ -143,6 +269,24 @@
         "sum a_i v_i=0 => a_i=0",
         "independent",
         "linear independence"
+      ],
+      "explanation_markdown": "线性无关表示一组向量没有冗余方向，零线性组合只能来自全零系数。常用定义式是 $c_1v_1+\\cdots+c_kv_k=0\\Rightarrow c_1=\\cdots=c_k=0$，其中c_i 是各向量的系数，结论要求每个系数都为零。每个向量都提供新的方向信息，不能由其余向量拼出。\n\n线性无关是成为基的一半条件，另一半是能张成整个空间。它常用行化简、行列式或秩来判断，反映坐标表示是否唯一。这些词共同围绕“能否由线性组合表示”展开；张成说明够不够用，无关说明有没有冗余，基把二者合在一起。换基只改变坐标数字，不改变向量和子空间本身，因此判定时要把对象与它的矩阵表示分开。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线性无关",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E6%80%A7%E6%97%A0%E5%85%B3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线性无关",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E6%80%A7%E6%97%A0%E5%85%B3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear independence",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20independence"
+        }
       ]
     },
     {
@@ -161,6 +305,24 @@
         "span V independent",
         "basis",
         "basis"
+      ],
+      "explanation_markdown": "基是一组既能张成整个空间又线性无关的向量。通常记作 $v=c_1e_1+\\cdots+c_ne_n$，其中e_i 是基向量，c_i 是 v 在这组基下的坐标。任意向量都能且只能用基向量线性表示一次。\n\n基给空间建立坐标系统。换基会改变坐标数字，却不改变向量和线性关系本身；基向量个数若有限，就等于空间维数。这些词共同围绕“能否由线性组合表示”展开；张成说明够不够用，无关说明有没有冗余，基把二者合在一起。换基只改变坐标数字，不改变向量和子空间本身，因此判定时要把对象与它的矩阵表示分开。因此理解基时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "基",
+          "url": "https://www.baidu.com/s?wd=%E5%9F%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "基",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9F%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "basis",
+          "url": "https://en.wikipedia.org/w/index.php?search=basis"
+        }
       ]
     },
     {
@@ -179,6 +341,24 @@
         "dim V",
         "degrees of freedom",
         "dimension"
+      ],
+      "explanation_markdown": "维数是向量空间中独立方向的数量，也就是任意一组基的向量个数。通常记作 $\\dim V=n$，其中V 是向量空间，n 是基中元素数目。维数不依赖选哪一组基，因此是空间本身的稳定特征。\n\n平面维数为二，三维空间维数为三，多项式空间也可按次数得到有限维。维数帮助比较子空间大小，也决定方程组解空间的自由度。这些词共同围绕“能否由线性组合表示”展开；张成说明够不够用，无关说明有没有冗余，基把二者合在一起。换基只改变坐标数字，不改变向量和子空间本身，因此判定时要把对象与它的矩阵表示分开。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "维数",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%B4%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "维数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%B4%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dimension",
+          "url": "https://en.wikipedia.org/w/index.php?search=dimension"
+        }
       ]
     },
     {
@@ -197,6 +377,24 @@
         "[v]_B",
         "coordinate vector",
         "coordinate"
+      ],
+      "explanation_markdown": "坐标是向量相对于某组基的系数列表。可以概括为 $v=c_1e_1+\\cdots+c_ne_n,\\quad [v]_E=(c_1,\\ldots,c_n)^T$，其中E 是选定基，c_i 是对应系数，列向量记录坐标。同一向量换一组基会有不同坐标。\n\n坐标让抽象向量能够用数表计算。理解坐标时要分清向量本身和它的表示；矩阵变换的数值形式也会随基的选择而改变。这些词共同围绕“能否由线性组合表示”展开；张成说明够不够用，无关说明有没有冗余，基把二者合在一起。换基只改变坐标数字，不改变向量和子空间本身，因此判定时要把对象与它的矩阵表示分开。因此理解坐标时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "坐标",
+          "url": "https://www.baidu.com/s?wd=%E5%9D%90%E6%A0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "坐标",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9D%90%E6%A0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "coordinate",
+          "url": "https://en.wikipedia.org/w/index.php?search=coordinate"
+        }
       ]
     },
     {
@@ -215,6 +413,24 @@
         "AB composition",
         "m×n array",
         "matrix"
+      ],
+      "explanation_markdown": "矩阵是按行和列排列的数表，常用来表示线性映射或线性方程组。可写成 $A=(a_{ij})_{m\\times n}$，其中a_{ij} 是第 i 行第 j 列元素，m,n 分别是行数和列数。矩阵的行列结构决定它如何作用于向量。\n\n当基选定后，线性映射可以写成矩阵乘法 y=A x。矩阵运算中的加法、乘法、转置、逆和秩，分别对应不同的线性结构信息。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解矩阵时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "矩阵",
+          "url": "https://www.baidu.com/s?wd=%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=matrix"
+        }
       ]
     },
     {
@@ -233,6 +449,24 @@
         "n×n",
         "endomorphism",
         "square matrix"
+      ],
+      "explanation_markdown": "方阵是行数和列数相同的矩阵，常表示一个空间到自身的线性变换。可写成 $A\\in M_n(F)$，其中n 是行列数，F 是元素所属的数域，M_n(F) 表示 n 阶方阵集合。只有方阵才有行列式、特征值和可能的逆矩阵等概念。\n\n方阵乘法可以反复作用，因此适合描述递推、旋转、投影和线性算子。判断方阵是否可逆，常看行列式是否非零或秩是否为 n。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "方阵",
+          "url": "https://www.baidu.com/s?wd=%E6%96%B9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "方阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%96%B9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "square matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=square%20matrix"
+        }
       ]
     },
     {
@@ -251,6 +485,24 @@
         "IA=AI=A",
         "identity",
         "identity matrix"
+      ],
+      "explanation_markdown": "单位矩阵是矩阵乘法中的恒等元素，作用在向量上不改变向量。可写成 $I_n=\\operatorname{diag}(1,\\ldots,1)$，其中n 是阶数，对角线元素为 1，其余元素为 0。对任何合适维数的矩阵 A，都有 AI=IA=A。\n\n在线性映射语言中，单位矩阵表示恒等变换。求逆矩阵、特征方程 det(A-λI)=0 和初等变换中都离不开它。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解单位矩阵时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单位矩阵",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E4%BD%8D%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单位矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E4%BD%8D%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "identity matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=identity%20matrix"
+        }
       ]
     },
     {
@@ -269,6 +521,24 @@
         "A+0=A",
         "zero map",
         "zero matrix"
+      ],
+      "explanation_markdown": "零矩阵是所有元素都为零的矩阵，表示把所有输入送到零向量的线性映射。可写成 $0_{m\\times n}=(0)$，其中m,n 是矩阵的行数和列数，每个位置元素都是 0。它是矩阵加法中的零元素。\n\n零矩阵乘以任何合适向量都得到零向量，但它通常没有逆。在线性方程、秩和核的讨论中，零矩阵对应最极端的信息丢失情形。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解零矩阵时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "零矩阵",
+          "url": "https://www.baidu.com/s?wd=%E9%9B%B6%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "零矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9B%B6%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "zero matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=zero%20matrix"
+        }
       ]
     },
     {
@@ -287,6 +557,24 @@
         "(A^T)_ij=A_ji",
         "x^T A x",
         "transpose matrix"
+      ],
+      "explanation_markdown": "转置矩阵把原矩阵的行和列互换。一个标准表达是 $(A^T)_{ij}=A_{ji}$，其中A_{ji} 是原矩阵第 j 行第 i 列元素，A^T 是转置后的矩阵。转置把列向量变成行向量，也改变乘法次序中的形状。\n\n它满足 (AB)^T=B^T A^T。内积、正交矩阵、对称矩阵和最小二乘问题都大量使用转置，因为它把行空间和列空间联系起来。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解转置矩阵时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "转置矩阵",
+          "url": "https://www.baidu.com/s?wd=%E8%BD%AC%E7%BD%AE%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "转置矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BD%AC%E7%BD%AE%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "transpose matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=transpose%20matrix"
+        }
       ]
     },
     {
@@ -305,6 +593,24 @@
         "A^-1A=I",
         "Ax=b",
         "inverse matrix"
+      ],
+      "explanation_markdown": "逆矩阵是方阵在矩阵乘法下的反操作。可写成 $AA^{-1}=A^{-1}A=I$，其中A 是方阵，A^{-1} 是逆矩阵，I 是单位矩阵。存在逆矩阵表示线性变换可一一还原。\n\nA 可逆等价于 det A≠0、rank A=n、齐次方程只有零解等条件。解方程 A x=b 时，若 A 可逆，则唯一解为 x=A^{-1}b。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解逆矩阵时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。在具体计算中，还要确认矩阵尺寸、基的选择和向量所属空间是否一致。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "逆矩阵",
+          "url": "https://www.baidu.com/s?wd=%E9%80%86%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "逆矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%80%86%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inverse matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=inverse%20matrix"
+        }
       ]
     },
     {
@@ -323,6 +629,24 @@
         "A adj(A)=det(A)I",
         "inverse formula",
         "adjugate matrix"
+      ],
+      "explanation_markdown": "伴随矩阵由代数余子式按转置方式排列而成，常用于表达逆矩阵。常用定义式是 $\\operatorname{adj}(A)=(C_{ji})$，其中C_{ji} 是 A 的代数余子式，adj(A) 表示伴随矩阵。它把行列式的局部余子式信息组织成一个方阵。\n\n若 det A≠0，则 A^{-1}=adj(A)/det A。伴随矩阵在理论推导中很方便，但实际大矩阵求逆通常不直接用它计算。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解伴随矩阵时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "伴随矩阵",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%B4%E9%9A%8F%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "伴随矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%B4%E9%9A%8F%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "adjugate matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=adjugate%20matrix"
+        }
       ]
     },
     {
@@ -341,6 +665,24 @@
         "det(AB)=detA detB",
         "zero dependence",
         "determinant"
+      ],
+      "explanation_markdown": "行列式给方阵分配一个数，反映线性变换的体积放缩和取向变化。通常记作 $\\det A$，其中A 是方阵，det 表示行列式运算。行列式为零表示变换把空间压扁到较低维，矩阵不可逆。\n\n二阶行列式 ad-bc 是最简单例子。行列式还用于特征方程、变量替换的雅可比因子和线性方程组唯一解判定。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解行列式时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "行列式",
+          "url": "https://www.baidu.com/s?wd=%E8%A1%8C%E5%88%97%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "行列式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A1%8C%E5%88%97%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "determinant",
+          "url": "https://en.wikipedia.org/w/index.php?search=determinant"
+        }
       ]
     },
     {
@@ -359,6 +701,24 @@
         "M_ij",
         "minor",
         "minor"
+      ],
+      "explanation_markdown": "余子式是在行列式中删去某一行某一列后得到的小行列式。一个标准表达是 $M_{ij}=\\det A(i|j)$，其中A(i|j) 表示从 A 中删去第 i 行第 j 列后的矩阵。它记录某个元素在展开行列式时对应的剩余结构。\n\n余子式是代数余子式和伴随矩阵的基础。按行或列展开行列式时，每个元素都与相应余子式配合，组合出原行列式的值。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解余子式时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "余子式",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%99%E5%AD%90%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "余子式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%99%E5%AD%90%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "minor",
+          "url": "https://en.wikipedia.org/w/index.php?search=minor"
+        }
       ]
     },
     {
@@ -377,6 +737,24 @@
         "C_ij=(-1)^(i+j)M_ij",
         "cofactor",
         "cofactor"
+      ],
+      "explanation_markdown": "代数余子式是在余子式前加上交替符号后的量。常用定义式是 $C_{ij}=(-1)^{i+j}M_{ij}$，其中M_{ij} 是余子式，(-1)^{i+j} 给出符号，C_{ij} 是代数余子式。符号因子保证行列式展开时方向和排列符号正确。\n\n行列式可按第 i 行写成 det A=Σ_j a_{ij}C_{ij}。代数余子式还用于构造伴随矩阵，从而给出逆矩阵的显式公式。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解代数余子式时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "代数余子式",
+          "url": "https://www.baidu.com/s?wd=%E4%BB%A3%E6%95%B0%E4%BD%99%E5%AD%90%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "代数余子式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BB%A3%E6%95%B0%E4%BD%99%E5%AD%90%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cofactor",
+          "url": "https://en.wikipedia.org/w/index.php?search=cofactor"
+        }
       ]
     },
     {
@@ -395,6 +773,24 @@
         "pivot count",
         "rank-nullity",
         "rank of matrix"
+      ],
+      "explanation_markdown": "矩阵的秩表示矩阵中线性无关行或列的最大数量。常用定义式是 $\\operatorname{rank}A=r$，其中A 是矩阵，r 是行空间和列空间的共同维数。它衡量矩阵真正保留了多少独立信息。\n\n秩决定线性方程组是否有解以及解的自由度。行初等变换不改变秩；把矩阵化成阶梯形后，非零行数就是秩。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解矩阵的秩时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "矩阵的秩",
+          "url": "https://www.baidu.com/s?wd=%E7%9F%A9%E9%98%B5%E7%9A%84%E7%A7%A9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "矩阵的秩",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9F%A9%E9%98%B5%E7%9A%84%E7%A7%A9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "rank of matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=rank%20of%20matrix"
+        }
       ]
     },
     {
@@ -413,6 +809,24 @@
         "elimination",
         "equivalence",
         "elementary operation"
+      ],
+      "explanation_markdown": "初等变换是对矩阵行或列进行的基本可逆操作。一个标准表达是 $R_i\\leftarrow R_i+kR_j$，其中R_i,R_j 是两行，k 是标量，箭头表示用新行替换旧行。常见操作还有交换两行、把一行乘以非零数。\n\n行初等变换保持线性方程组的解集，用于高斯消元；列初等变换则改变变量组合。它们是计算秩、逆矩阵和基础解系的核心工具。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解初等变换时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "初等变换",
+          "url": "https://www.baidu.com/s?wd=%E5%88%9D%E7%AD%89%E5%8F%98%E6%8D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "初等变换",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%9D%E7%AD%89%E5%8F%98%E6%8D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "elementary operation",
+          "url": "https://en.wikipedia.org/w/index.php?search=elementary%20operation"
+        }
       ]
     },
     {
@@ -431,6 +845,24 @@
         "pivot columns",
         "back substitution",
         "row echelon matrix"
+      ],
+      "explanation_markdown": "阶梯形矩阵是经过行化简后非零行逐步向右错开的矩阵。常用定义式是 $\\begin{pmatrix} *&*&*\\\\0&*&*\\\\0&0&* \\end{pmatrix}$，其中星号表示可能非零的主元位置，零表示主元下方已消去。它让主元列、自由变量和秩一眼可见。\n\n在线性方程组中，阶梯形矩阵便于回代求解。若进一步把主元化为 1 且其上下都消成 0，就得到行最简形。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解阶梯形矩阵时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阶梯形矩阵",
+          "url": "https://www.baidu.com/s?wd=%E9%98%B6%E6%A2%AF%E5%BD%A2%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阶梯形矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%B6%E6%A2%AF%E5%BD%A2%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "row echelon matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=row%20echelon%20matrix"
+        }
       ]
     },
     {
@@ -449,6 +881,24 @@
         "augmented matrix elimination",
         "rank comparison",
         "system of linear equations"
+      ],
+      "explanation_markdown": "线性方程组由若干一次方程共同约束未知量组成。一个标准表达是 $A\\mathbf x=\\mathbf b$，其中A 是系数矩阵，x 是未知向量，b 是常数向量。它的解是同时满足所有方程的向量。\n\n高斯消元把方程组化为阶梯形，进而判断无解、唯一解或无穷多解。几何上，每个方程对应一条直线、平面或超平面，解是它们的交集。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解线性方程组时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线性方程组",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线性方程组",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "system of linear equations",
+          "url": "https://en.wikipedia.org/w/index.php?search=system%20of%20linear%20equations"
+        }
       ]
     },
     {
@@ -467,6 +917,24 @@
         "Ax=0",
         "kernel",
         "homogeneous system"
+      ],
+      "explanation_markdown": "齐次方程组是右端常数向量为零的线性方程组。常用定义式是 $A\\mathbf x=0$，其中A 是系数矩阵，x 是未知向量，0 是零向量。它总有零解，所有解组成 A 的零空间。\n\n若未知量个数大于秩，就存在非零解。齐次解描述被线性变换压到零的方向，也是非齐次方程组通解中的自由部分。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解齐次方程组时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "齐次方程组",
+          "url": "https://www.baidu.com/s?wd=%E9%BD%90%E6%AC%A1%E6%96%B9%E7%A8%8B%E7%BB%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "齐次方程组",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%BD%90%E6%AC%A1%E6%96%B9%E7%A8%8B%E7%BB%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "homogeneous system",
+          "url": "https://en.wikipedia.org/w/index.php?search=homogeneous%20system"
+        }
       ]
     },
     {
@@ -485,6 +953,24 @@
         "Ax=b",
         "rank[A]=rank[A|b]",
         "nonhomogeneous system"
+      ],
+      "explanation_markdown": "非齐次方程组的右端向量不一定为零，表示带外部常数项的线性约束。计算中常看 $A\\mathbf x=\\mathbf b$，其中b 是给定常数向量，若 b 不为零就不是齐次系统。它是否有解取决于 b 是否落在 A 的列空间中。\n\n若 x_p 是一个特解，所有解可写成 x=x_p+x_h，其中 x_h 满足 A x_h=0。这样非齐次解集是齐次解空间的平移。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解非齐次方程组时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "非齐次方程组",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%9E%E9%BD%90%E6%AC%A1%E6%96%B9%E7%A8%8B%E7%BB%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "非齐次方程组",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%9E%E9%BD%90%E6%AC%A1%E6%96%B9%E7%A8%8B%E7%BB%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "nonhomogeneous system",
+          "url": "https://en.wikipedia.org/w/index.php?search=nonhomogeneous%20system"
+        }
       ]
     },
     {
@@ -503,6 +989,24 @@
         "x_p + kernel",
         "solution set",
         "solution space"
+      ],
+      "explanation_markdown": "解空间通常指方程组所有解组成的集合，在齐次情形下是子空间。可以概括为 $\\{\\mathbf x:A\\mathbf x=0\\}$，其中A 是系数矩阵，x 是未知向量，集合中每个向量都是解。齐次解空间也叫零空间，能用基础解系作基。\n\n非齐次方程组的解集若非空，通常是某个特解加上齐次解空间，因此是仿射平移而不一定含零向量。区分这点能避免把非齐次解集误当子空间。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "解空间",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%A3%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "解空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%A3%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "solution space",
+          "url": "https://en.wikipedia.org/w/index.php?search=solution%20space"
+        }
       ]
     },
     {
@@ -521,6 +1025,24 @@
         "T(αu+βv)=αT(u)+βT(v)",
         "kernel image",
         "linear map"
+      ],
+      "explanation_markdown": "线性映射是在两个向量空间之间保持加法和数乘的函数。通常记作 $T(\\alpha u+\\beta v)=\\alpha T(u)+\\beta T(v)$，其中T 是映射，u,v 是定义域向量，α,β 是标量。它把线性组合送成像的同样线性组合。\n\n选定基后，有限维线性映射可以用矩阵表示。核、像、秩和维数公式都围绕线性映射展开，它比具体矩阵更强调结构本身。这些概念关注线性变换的内部结构：核看丢失的信息，像看能到达的范围，谱看特殊方向上的伸缩。相似变换只是换坐标，真正保留下来的是特征值、最小多项式、秩和不变子空间等结构信息。因此理解线性映射时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线性映射",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E6%80%A7%E6%98%A0%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线性映射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E6%80%A7%E6%98%A0%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear map",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20map"
+        }
       ]
     },
     {
@@ -539,6 +1061,24 @@
         "T:V→V",
         "operator powers",
         "linear transformation"
+      ],
+      "explanation_markdown": "线性变换通常指从一个向量空间到自身的线性映射。可写成 $T:V\\to V,\\quad T(\\alpha u+\\beta v)=\\alpha T(u)+\\beta T(v)$，其中V 是同一个空间，T 同时接受和输出 V 中向量。它可以反复作用，因此能研究不变方向和特征值。\n\n旋转、投影、伸缩和反射都是常见线性变换。与一般线性映射相比，线性变换更适合讨论特征多项式、对角化和最小多项式。这些概念关注线性变换的内部结构：核看丢失的信息，像看能到达的范围，谱看特殊方向上的伸缩。相似变换只是换坐标，真正保留下来的是特征值、最小多项式、秩和不变子空间等结构信息。因此理解线性变换时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线性变换",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线性变换",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear transformation",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20transformation"
+        }
       ]
     },
     {
@@ -557,6 +1097,24 @@
         "Ker T",
         "nullity",
         "kernel"
+      ],
+      "explanation_markdown": "核是线性映射中被送到零向量的所有输入组成的集合。通常记作 $\\ker T=\\{v\\in V:T(v)=0\\}$，其中T 是线性映射，V 是定义域，0 是值域中的零向量。核总是定义域的子空间，反映被变换消掉的方向。\n\n矩阵 A 的核就是齐次方程 A x=0 的解空间。核只有零向量时，线性映射是单射；核的维数也叫零度或亏格。这些概念关注线性变换的内部结构：核看丢失的信息，像看能到达的范围，谱看特殊方向上的伸缩。相似变换只是换坐标，真正保留下来的是特征值、最小多项式、秩和不变子空间等结构信息。因此理解核时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "核",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%B8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "核",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%B8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kernel",
+          "url": "https://en.wikipedia.org/w/index.php?search=kernel"
+        }
       ]
     },
     {
@@ -575,6 +1133,24 @@
         "Im T",
         "rank",
         "image"
+      ],
+      "explanation_markdown": "像是线性映射能够实际达到的所有输出组成的集合。可以概括为 $\\operatorname{Im}T=\\{T(v):v\\in V\\}$，其中V 是定义域，T(v) 是 v 的输出，Im 表示像空间。它是值域中的一个子空间，描述可实现的结果范围。\n\n矩阵的像就是列空间。像的维数等于秩；方程 A x=b 有解，当且仅当 b 属于 A 的像。这些概念关注线性变换的内部结构：核看丢失的信息，像看能到达的范围，谱看特殊方向上的伸缩。相似变换只是换坐标，真正保留下来的是特征值、最小多项式、秩和不变子空间等结构信息。因此理解像时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "像",
+          "url": "https://www.baidu.com/s?wd=%E5%83%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "像",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%83%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "image",
+          "url": "https://en.wikipedia.org/w/index.php?search=image"
+        }
       ]
     },
     {
@@ -593,6 +1169,24 @@
         "det(A-λI)=0",
         "eigenvalue",
         "eigenvalue"
+      ],
+      "explanation_markdown": "特征值描述线性变换在某些特殊方向上的伸缩比例。一个标准表达是 $A\\mathbf v=\\lambda\\mathbf v$，其中A 是矩阵，v 是非零特征向量，λ 是对应特征值。这个式子表示经过 A 作用后，v 的方向不变，只改变长度或反向。\n\n特征值通常由 det(A-λI)=0 求出。它把复杂变换拆成沿特征方向的作用，广泛用于稳定性、振动模式和对角化。这些概念关注线性变换的内部结构：核看丢失的信息，像看能到达的范围，谱看特殊方向上的伸缩。相似变换只是换坐标，真正保留下来的是特征值、最小多项式、秩和不变子空间等结构信息。因此理解特征值时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "特征值",
+          "url": "https://www.baidu.com/s?wd=%E7%89%B9%E5%BE%81%E5%80%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "特征值",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%B9%E5%BE%81%E5%80%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "eigenvalue",
+          "url": "https://en.wikipedia.org/w/index.php?search=eigenvalue"
+        }
       ]
     },
     {
@@ -611,6 +1205,24 @@
         "Av=λv",
         "eigenspace",
         "eigenvector"
+      ],
+      "explanation_markdown": "特征向量是在矩阵作用后仍留在同一直线方向上的非零向量。可写成 $A\\mathbf v=\\lambda\\mathbf v,\\quad \\mathbf v\\ne0$，其中v 是特征向量，λ 是伸缩倍数，A 是给定矩阵。零向量被排除，因为它对任何 λ 都满足等式而没有方向信息。\n\n同一特征值的所有特征向量加上零向量组成特征空间。若矩阵有足够多线性无关的特征向量，就能被对角化。这些概念关注线性变换的内部结构：核看丢失的信息，像看能到达的范围，谱看特殊方向上的伸缩。相似变换只是换坐标，真正保留下来的是特征值、最小多项式、秩和不变子空间等结构信息。因此理解特征向量时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "特征向量",
+          "url": "https://www.baidu.com/s?wd=%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "特征向量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "eigenvector",
+          "url": "https://en.wikipedia.org/w/index.php?search=eigenvector"
+        }
       ]
     },
     {
@@ -629,6 +1241,24 @@
         "det(λI-A)",
         "algebraic multiplicity",
         "characteristic polynomial"
+      ],
+      "explanation_markdown": "特征多项式把矩阵的特征值问题转化为一个关于 λ 的多项式方程。可写成 $p_A(\\lambda)=\\det(\\lambda I-A)$，其中I 是单位矩阵，A 是方阵，λ 是未知标量。它的根就是 A 的特征值，重数记录代数重数。\n\n特征多项式不随相似变换改变，因此是线性变换的结构不变量。凯莱哈密顿定理还说明矩阵本身满足自己的特征多项式。这些概念关注线性变换的内部结构：核看丢失的信息，像看能到达的范围，谱看特殊方向上的伸缩。相似变换只是换坐标，真正保留下来的是特征值、最小多项式、秩和不变子空间等结构信息。因此理解特征多项式时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "特征多项式",
+          "url": "https://www.baidu.com/s?wd=%E7%89%B9%E5%BE%81%E5%A4%9A%E9%A1%B9%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "特征多项式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%B9%E5%BE%81%E5%A4%9A%E9%A1%B9%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "characteristic polynomial",
+          "url": "https://en.wikipedia.org/w/index.php?search=characteristic%20polynomial"
+        }
       ]
     },
     {
@@ -647,6 +1277,24 @@
         "B=P^-1AP",
         "same spectrum",
         "similar matrix"
+      ],
+      "explanation_markdown": "相似矩阵表示同一个线性变换在不同基下的矩阵形式。通常记作 $B=P^{-1}AP$，其中P 是可逆过渡矩阵，A,B 是相似矩阵。相似变换改变坐标表示，却不改变变换本身的本质结构。\n\n相似矩阵有相同的特征多项式、行列式、迹和特征值。对角化就是寻找与 A 相似的对角矩阵，使线性变换的作用更容易读出。这些概念关注线性变换的内部结构：核看丢失的信息，像看能到达的范围，谱看特殊方向上的伸缩。相似变换只是换坐标，真正保留下来的是特征值、最小多项式、秩和不变子空间等结构信息。因此理解相似矩阵时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相似矩阵",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E4%BC%BC%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相似矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E4%BC%BC%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "similar matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=similar%20matrix"
+        }
       ]
     },
     {
@@ -665,6 +1313,24 @@
         "A=PDP^-1",
         "diagonal form",
         "diagonalization"
+      ],
+      "explanation_markdown": "对角化是把矩阵通过相似变换化成对角矩阵。计算中常看 $A=PDP^{-1}$，其中P 的列通常是特征向量，D 是特征值排成的对角矩阵。它要求有足够多线性无关的特征向量。\n\n对角化后，求 A 的高次幂、指数或递推变得简单，因为 D 只在各坐标方向独立伸缩。不是每个矩阵都能对角化，缺少特征向量时需要约当标准形。这些概念关注线性变换的内部结构：核看丢失的信息，像看能到达的范围，谱看特殊方向上的伸缩。相似变换只是换坐标，真正保留下来的是特征值、最小多项式、秩和不变子空间等结构信息。因此理解对角化时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对角化",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E8%A7%92%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对角化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E8%A7%92%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "diagonalization",
+          "url": "https://en.wikipedia.org/w/index.php?search=diagonalization"
+        }
       ]
     },
     {
@@ -683,6 +1349,19 @@
         "Jordan block",
         "generalized eigenvectors",
         "jordan normal form"
+      ],
+      "explanation_markdown": "约当标准形是在不能完全对角化时，用约当块描述矩阵的相似标准形式。可写成 $J=\\begin{pmatrix}\\lambda&1&0\\\\0&\\lambda&1\\\\0&0&\\lambda\\end{pmatrix}$，其中λ 是特征值，超对角线上的 1 记录广义特征向量链。它把缺少特征向量的情况组织成有限大小的块。\n\n在复数域上，每个方阵都与某个约当矩阵相似。约当块大小反映代数重数与几何重数的差异，也影响矩阵幂和微分方程解的形式。这些概念关注线性变换的内部结构：核看丢失的信息，像看能到达的范围，谱看特殊方向上的伸缩。相似变换只是换坐标，真正保留下来的是特征值、最小多项式、秩和不变子空间等结构信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "约当标准形",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%A6%E5%BD%93%E6%A0%87%E5%87%86%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "约当标准形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%A6%E5%BD%93%E6%A0%87%E5%87%86%E5%BD%A2"
+        }
       ]
     },
     {
@@ -701,6 +1380,24 @@
         "<u,v> u^T v",
         "length angle",
         "inner product"
+      ],
+      "explanation_markdown": "内积给向量空间加入长度和角度的度量结构。通常记作 $\\langle u,v\\rangle=\\sum_i u_i\\overline{v_i}$，其中u,v 是向量，上横线表示复共轭；实空间中可省去共轭。内积满足线性、共轭对称和正定性。\n\n由内积可定义范数 ||u||=sqrt(<u,u>)，也能判断正交。投影、最小二乘、正交基和傅里叶展开都依赖内积结构。有了内积或范数后，线性代数不只讨论表示，还能讨论长度、角度、距离和最佳近似。正交结构让许多分量互不干扰，因此投影、最小二乘和数值分解都尽量转化到正交基下处理。因此理解内积时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "内积",
+          "url": "https://www.baidu.com/s?wd=%E5%86%85%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "内积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%86%85%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inner product",
+          "url": "https://en.wikipedia.org/w/index.php?search=inner%20product"
+        }
       ]
     },
     {
@@ -719,6 +1416,24 @@
         "<u,v>=0",
         "orthogonal",
         "orthogonality"
+      ],
+      "explanation_markdown": "正交表示两个向量的内积为零，几何上可理解为互相垂直。常用定义式是 $\\langle u,v\\rangle=0$，其中u,v 是向量，尖括号表示内积。正交向量在彼此方向上没有投影分量。\n\n正交性让分解更干净：若一组非零向量两两正交，它们自动线性无关。正交投影和标准正交基能把计算化成独立方向上的系数计算。有了内积或范数后，线性代数不只讨论表示，还能讨论长度、角度、距离和最佳近似。正交结构让许多分量互不干扰，因此投影、最小二乘和数值分解都尽量转化到正交基下处理。因此理解正交时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正交",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E4%BA%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正交",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E4%BA%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "orthogonality",
+          "url": "https://en.wikipedia.org/w/index.php?search=orthogonality"
+        }
       ]
     },
     {
@@ -737,6 +1452,24 @@
         "<v_i,v_j>=0",
         "norm squared",
         "orthogonal basis"
+      ],
+      "explanation_markdown": "正交基是一组两两正交并能张成整个空间的基。可以概括为 $\\langle e_i,e_j\\rangle=0\\quad (i\\ne j)$，其中e_i,e_j 是不同基向量，内积为零表示正交。它仍是基，因此每个向量都有唯一展开。\n\n若基向量未必长度为一，坐标要除以 <e_i,e_i>。正交基能减少方程耦合，使投影、最小二乘和傅里叶系数计算更直接。有了内积或范数后，线性代数不只讨论表示，还能讨论长度、角度、距离和最佳近似。正交结构让许多分量互不干扰，因此投影、最小二乘和数值分解都尽量转化到正交基下处理。因此理解正交基时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正交基",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E4%BA%A4%E5%9F%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正交基",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E4%BA%A4%E5%9F%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "orthogonal basis",
+          "url": "https://en.wikipedia.org/w/index.php?search=orthogonal%20basis"
+        }
       ]
     },
     {
@@ -755,6 +1488,24 @@
         "<e_i,e_j>=δ_ij",
         "orthonormal",
         "orthonormal basis"
+      ],
+      "explanation_markdown": "标准正交基是在正交基基础上要求每个基向量长度都为一。一个标准表达是 $\\langle e_i,e_j\\rangle=\\delta_{ij}$，其中δ_{ij} 是克罗内克符号，i=j 时为 1，否则为 0。它同时保证正交和单位长度。\n\n在标准正交基下，向量展开系数就是内积 c_i=<v,e_i>。这样的基让投影、矩阵表示和距离计算最简洁，是欧氏空间和酉空间中的理想坐标系。有了内积或范数后，线性代数不只讨论表示，还能讨论长度、角度、距离和最佳近似。正交结构让许多分量互不干扰，因此投影、最小二乘和数值分解都尽量转化到正交基下处理。因此理解标准正交基时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "标准正交基",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%87%E5%87%86%E6%AD%A3%E4%BA%A4%E5%9F%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "标准正交基",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%87%E5%87%86%E6%AD%A3%E4%BA%A4%E5%9F%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "orthonormal basis",
+          "url": "https://en.wikipedia.org/w/index.php?search=orthonormal%20basis"
+        }
       ]
     },
     {
@@ -773,6 +1524,24 @@
         "v_k-sum proj",
         "Gram Schmidt",
         "gram schmidt orthogonalization"
+      ],
+      "explanation_markdown": "施密特正交化把线性无关向量组改造成正交或标准正交向量组。可以概括为 $u_k=v_k-\\sum_{i<k}\\frac{\\langle v_k,e_i\\rangle}{\\langle e_i,e_i\\rangle}e_i$，其中v_k 是原向量，e_i 是已得到的正交向量，u_k 是去掉投影后的新方向。它逐步剔除已有方向上的分量。\n\n归一化 u_k 就得到标准正交向量。这个过程保持张成空间不变，常用于构造正交基、QR 分解和最小二乘计算。有了内积或范数后，线性代数不只讨论表示，还能讨论长度、角度、距离和最佳近似。正交结构让许多分量互不干扰，因此投影、最小二乘和数值分解都尽量转化到正交基下处理。因此理解施密特正交化时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "施密特正交化",
+          "url": "https://www.baidu.com/s?wd=%E6%96%BD%E5%AF%86%E7%89%B9%E6%AD%A3%E4%BA%A4%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "施密特正交化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%96%BD%E5%AF%86%E7%89%B9%E6%AD%A3%E4%BA%A4%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gram schmidt orthogonalization",
+          "url": "https://en.wikipedia.org/w/index.php?search=gram%20schmidt%20orthogonalization"
+        }
       ]
     },
     {
@@ -791,6 +1560,24 @@
         "Q^TQ=I",
         "length preserving",
         "orthogonal matrix"
+      ],
+      "explanation_markdown": "正交矩阵是列向量构成标准正交基的实方阵。常用定义式是 $Q^TQ=I$，其中Q^T 是转置矩阵，I 是单位矩阵。它保持向量长度和内积，因此表示旋转、反射等刚性变换。\n\n正交矩阵的逆等于转置，即 Q^{-1}=Q^T。数值计算中它很稳定，因为不会放大误差的长度，是 QR 分解的重要组成。有了内积或范数后，线性代数不只讨论表示，还能讨论长度、角度、距离和最佳近似。正交结构让许多分量互不干扰，因此投影、最小二乘和数值分解都尽量转化到正交基下处理。因此理解正交矩阵时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正交矩阵",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正交矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "orthogonal matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=orthogonal%20matrix"
+        }
       ]
     },
     {
@@ -809,6 +1596,24 @@
         "U*U=I",
         "unitary",
         "unitary matrix"
+      ],
+      "explanation_markdown": "酉矩阵是复内积空间中保持内积的方阵，是正交矩阵的复数版本。可以概括为 $U^*U=I$，其中U^* 是共轭转置，I 是单位矩阵。它保持复向量的长度和夹角结构。\n\n酉矩阵的逆为 U^*，特征值模长为一。量子力学中的态演化、复矩阵对角化和奇异值分解都常用酉矩阵。有了内积或范数后，线性代数不只讨论表示，还能讨论长度、角度、距离和最佳近似。正交结构让许多分量互不干扰，因此投影、最小二乘和数值分解都尽量转化到正交基下处理。因此理解酉矩阵时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "酉矩阵",
+          "url": "https://www.baidu.com/s?wd=%E9%85%89%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "酉矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%85%89%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "unitary matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=unitary%20matrix"
+        }
       ]
     },
     {
@@ -827,6 +1632,24 @@
         "x^T A x",
         "eigenvalue sign",
         "quadratic form"
+      ],
+      "explanation_markdown": "二次型是关于向量分量的齐次二次多项式，常用对称矩阵表示。一个标准表达是 $q(x)=x^TAx$，其中x 是列向量，A 是通常取对称的矩阵，T 表示转置。它把矩阵与曲面形状、正定性和极值联系起来。\n\n通过合同变换可以把二次型化成标准形。二次型用于判断黑塞矩阵、椭圆和双曲面形状，也出现在能量、距离和最小二乘问题中。这类矩阵通常通过二次型、转置或共轭转置体现几何性质，重点不是元素表面，而是作用在所有方向上的结果。正定、半定和不定会直接影响极值、能量和投影解释；对称或正规条件则让谱分解更稳定。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "二次型",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%8C%E6%AC%A1%E5%9E%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "二次型",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%8C%E6%AC%A1%E5%9E%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quadratic form",
+          "url": "https://en.wikipedia.org/w/index.php?search=quadratic%20form"
+        }
       ]
     },
     {
@@ -845,6 +1668,24 @@
         "x^T A x>0",
         "leading principal minors",
         "positive definite matrix"
+      ],
+      "explanation_markdown": "正定矩阵是让所有非零向量对应二次型都为正的对称或厄米矩阵。常用定义式是 $x^TAx>0\\quad (x\\ne0)$，其中A 是矩阵，x 是任意非零向量。它表示所有方向上的二次变化都向上弯。\n\n实对称矩阵正定等价于所有特征值为正，也等价于所有顺序主子式为正。优化中，黑塞矩阵正定常说明驻点是局部极小。这类矩阵通常通过二次型、转置或共轭转置体现几何性质，重点不是元素表面，而是作用在所有方向上的结果。正定、半定和不定会直接影响极值、能量和投影解释；对称或正规条件则让谱分解更稳定。因此理解正定矩阵时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正定矩阵",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E5%AE%9A%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正定矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E5%AE%9A%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "positive definite matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=positive%20definite%20matrix"
+        }
       ]
     },
     {
@@ -863,6 +1704,24 @@
         "1×n",
         "dot product",
         "row vector"
+      ],
+      "explanation_markdown": "行向量是写成一行的向量，常看作一行一列矩阵的转置形式。一个标准表达是 $r=(r_1,\\ldots,r_n)$，其中r_i 是第 i 个分量，整体形状为 1×n。它适合从左侧与列向量或矩阵相乘。\n\n矩阵的每一行都可以看成行向量，行空间就是这些行向量所有线性组合。行向量与列向量相乘可产生内积式的标量。这些工具把矩阵或多线性关系拆成更容易计算的部分，常用于数值算法、坐标提取和高维结构表达。分解和对偶语言的价值在于保留线性信息的同时换一种组织方式，使复杂问题能按方向、块或配对来处理。因此理解行向量时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "行向量",
+          "url": "https://www.baidu.com/s?wd=%E8%A1%8C%E5%90%91%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "行向量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A1%8C%E5%90%91%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "row vector",
+          "url": "https://en.wikipedia.org/w/index.php?search=row%20vector"
+        }
       ]
     },
     {
@@ -881,6 +1740,24 @@
         "n×1",
         "Ax",
         "column vector"
+      ],
+      "explanation_markdown": "列向量是按一列排列的向量，也是矩阵乘法中最常见的输入形式。计算中常看 $\\mathbf x=(x_1,\\ldots,x_n)^T$，其中T 表示转置，把横向分量写成 n×1 的列。矩阵 A 乘列向量 x 时，输出仍是列向量。\n\n矩阵的每一列也是列向量，列空间由这些列向量张成。线性方程 A x=b 可理解为用 A 的列向量线性组合出 b。这些工具把矩阵或多线性关系拆成更容易计算的部分，常用于数值算法、坐标提取和高维结构表达。分解和对偶语言的价值在于保留线性信息的同时换一种组织方式，使复杂问题能按方向、块或配对来处理。因此理解列向量时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "列向量",
+          "url": "https://www.baidu.com/s?wd=%E5%88%97%E5%90%91%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "列向量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%97%E5%90%91%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "column vector",
+          "url": "https://en.wikipedia.org/w/index.php?search=column%20vector"
+        }
       ]
     },
     {
@@ -899,6 +1776,24 @@
         "span(S)",
         "generating",
         "linear span"
+      ],
+      "explanation_markdown": "线性包是一组向量所有线性组合构成的集合。计算中常看 $\\operatorname{span}\\{v_1,\\ldots,v_k\\}=\\{c_1v_1+\\cdots+c_kv_k\\}$，其中v_i 是给定向量，c_i 遍历所有标量。它是包含这些向量的最小子空间。\n\n判断某个向量是否属于线性包，就是问它能否由给定向量线性表示。线性包又常叫张成空间，是讨论生成元、基和列空间的基本语言。这些词共同围绕“能否由线性组合表示”展开；张成说明够不够用，无关说明有没有冗余，基把二者合在一起。换基只改变坐标数字，不改变向量和子空间本身，因此判定时要把对象与它的矩阵表示分开。因此理解线性包时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线性包",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E6%80%A7%E5%8C%85%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线性包",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E6%80%A7%E5%8C%85"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear span",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20span"
+        }
       ]
     },
     {
@@ -917,6 +1812,24 @@
         "span{v_i}=V",
         "generators",
         "generator"
+      ],
+      "explanation_markdown": "生成元是一组能通过线性组合产生整个目标空间的向量。一个标准表达是 $V=\\operatorname{span}\\{v_1,\\ldots,v_k\\}$，其中V 是被生成的空间，v_i 是生成元。生成元可以有冗余，不一定线性无关。\n\n若生成元同时线性无关，就成为基。在线性方程中，矩阵列向量生成列空间；在抽象空间中，选择少量生成元能把无限对象转化为有限系数问题。这些词共同围绕“能否由线性组合表示”展开；张成说明够不够用，无关说明有没有冗余，基把二者合在一起。换基只改变坐标数字，不改变向量和子空间本身，因此判定时要把对象与它的矩阵表示分开。因此理解生成元时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "生成元",
+          "url": "https://www.baidu.com/s?wd=%E7%94%9F%E6%88%90%E5%85%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "生成元",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%9F%E6%88%90%E5%85%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "generator",
+          "url": "https://en.wikipedia.org/w/index.php?search=generator"
+        }
       ]
     },
     {
@@ -935,6 +1848,24 @@
         "[v]_C=P[v]_B",
         "change of basis",
         "change of basis"
+      ],
+      "explanation_markdown": "基变换是在同一向量空间中换用另一组基来表示向量。一个标准表达是 $[v]_B=P_{B\\leftarrow A}[v]_A$，其中两边是同一向量 v 在不同基下的坐标，P 是过渡矩阵。向量本身不变，改变的是坐标数字。\n\n线性变换的矩阵也会随基变换而相似变化。理解基变换能区分几何对象与表示形式，是学习相似矩阵和对角化的关键。这些词共同围绕“能否由线性组合表示”展开；张成说明够不够用，无关说明有没有冗余，基把二者合在一起。换基只改变坐标数字，不改变向量和子空间本身，因此判定时要把对象与它的矩阵表示分开。因此理解基变换时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "基变换",
+          "url": "https://www.baidu.com/s?wd=%E5%9F%BA%E5%8F%98%E6%8D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "基变换",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9F%BA%E5%8F%98%E6%8D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "change of basis",
+          "url": "https://en.wikipedia.org/w/index.php?search=change%20of%20basis"
+        }
       ]
     },
     {
@@ -953,6 +1884,24 @@
         "P_{C<-B}",
         "coordinate conversion",
         "transition matrix"
+      ],
+      "explanation_markdown": "过渡矩阵把一个基下的坐标转换为另一个基下的坐标。一个标准表达是 $[v]_B=P[v]_A$，其中P 是从 A 基坐标到 B 基坐标的矩阵，v 是同一向量。它的列通常由旧基向量在新基下的坐标组成。\n\n过渡矩阵必须可逆，因为两组基都能唯一表示每个向量。相似变换中的 P 就来自基之间的坐标转换。这些词共同围绕“能否由线性组合表示”展开；张成说明够不够用，无关说明有没有冗余，基把二者合在一起。换基只改变坐标数字，不改变向量和子空间本身，因此判定时要把对象与它的矩阵表示分开。因此理解过渡矩阵时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "过渡矩阵",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%87%E6%B8%A1%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "过渡矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%87%E6%B8%A1%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "transition matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=transition%20matrix"
+        }
       ]
     },
     {
@@ -971,6 +1920,24 @@
         "[v]_B",
         "coefficient column",
         "coordinate vector"
+      ],
+      "explanation_markdown": "坐标向量是向量在选定基下的系数组成的列向量。可以概括为 $[v]_E=(c_1,\\ldots,c_n)^T$，其中E 是基，c_i 是 v 对应第 i 个基向量的系数。它依赖基的选择，不等于向量本身。\n\n同一几何向量在不同基下有不同坐标向量。矩阵计算通常操作的是坐标向量，因此解释结果时要回到所选基和原向量空间。这些词共同围绕“能否由线性组合表示”展开；张成说明够不够用，无关说明有没有冗余，基把二者合在一起。换基只改变坐标数字，不改变向量和子空间本身，因此判定时要把对象与它的矩阵表示分开。因此理解坐标向量时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "坐标向量",
+          "url": "https://www.baidu.com/s?wd=%E5%9D%90%E6%A0%87%E5%90%91%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "坐标向量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9D%90%E6%A0%87%E5%90%91%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "coordinate vector",
+          "url": "https://en.wikipedia.org/w/index.php?search=coordinate%20vector"
+        }
       ]
     },
     {
@@ -989,6 +1956,24 @@
         "V/W",
         "dimension difference",
         "quotient space"
+      ],
+      "explanation_markdown": "商空间把向量空间中相差一个子空间元素的向量视为同一类。可写成 $V/W=\\{v+W:v\\in V\\}$，其中W 是 V 的子空间，v+W 是包含 v 的陪集。它把 W 方向上的差异压缩掉，只保留模掉 W 后的信息。\n\n商空间的维数满足 dim(V/W)=dim V-dim W。它常用于把核压掉、描述线性映射的第一同构定理以及分离真正有效的自由度。这些词共同围绕“能否由线性组合表示”展开；张成说明够不够用，无关说明有没有冗余，基把二者合在一起。换基只改变坐标数字，不改变向量和子空间本身，因此判定时要把对象与它的矩阵表示分开。因此理解商空间时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "商空间",
+          "url": "https://www.baidu.com/s?wd=%E5%95%86%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "商空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%95%86%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quotient space",
+          "url": "https://en.wikipedia.org/w/index.php?search=quotient%20space"
+        }
       ]
     },
     {
@@ -1007,6 +1992,24 @@
         "V=U⊕W",
         "dimension sum",
         "direct sum"
+      ],
+      "explanation_markdown": "直和表示一个空间能由若干子空间唯一相加得到。通常记作 $V=U\\oplus W$，其中U,W 是子空间，符号 ⊕ 表示每个 v 都唯一写成 u+w。唯一性等价于 U∩W 只有零向量。\n\n直和比分解成普通和更强，因为没有重叠方向。它常用于特征空间分解、投影分解和把复杂空间拆成互不干扰的部分。这些词共同围绕“能否由线性组合表示”展开；张成说明够不够用，无关说明有没有冗余，基把二者合在一起。换基只改变坐标数字，不改变向量和子空间本身，因此判定时要把对象与它的矩阵表示分开。因此理解直和时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "直和",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B4%E5%92%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "直和",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B4%E5%92%8C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "direct sum",
+          "url": "https://en.wikipedia.org/w/index.php?search=direct%20sum"
+        }
       ]
     },
     {
@@ -1025,6 +2028,24 @@
         "span(v1,...,vk)",
         "rank dimension",
         "span space"
+      ],
+      "explanation_markdown": "张成空间是一组向量通过所有线性组合形成的子空间。一个标准表达是 $\\operatorname{span}(S)=\\left\\{\\sum_{i=1}^{k}c_iv_i:v_i\\in S\\right\\}$，其中S 是给定向量集合，c_i 是有限个标量系数。即使 S 很大，每个线性组合只用有限多个向量。\n\n张成空间回答“这些向量能生成哪些方向”。若张成空间等于整个 V，S 是生成集；若再线性无关，S 就是一组基。这些词共同围绕“能否由线性组合表示”展开；张成说明够不够用，无关说明有没有冗余，基把二者合在一起。换基只改变坐标数字，不改变向量和子空间本身，因此判定时要把对象与它的矩阵表示分开。因此理解张成空间时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "张成空间",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%A0%E6%88%90%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "张成空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%A0%E6%88%90%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "span space",
+          "url": "https://en.wikipedia.org/w/index.php?search=span%20space"
+        }
       ]
     },
     {
@@ -1043,6 +2064,24 @@
         "f(αu+βv)=αf(u)+βf(v)",
         "dual vector",
         "linear functional"
+      ],
+      "explanation_markdown": "线性泛函是取值为标量的线性映射。可写成 $\\varphi:V\\to F,\\quad \\varphi(\\alpha u+\\beta v)=\\alpha\\varphi(u)+\\beta\\varphi(v)$，其中V 是向量空间，F 是标量域，φ 是泛函。它把向量压成一个数，同时保持线性结构。\n\n在有限维内积空间中，许多线性泛函可写成 φ(v)=<v,a>。线性泛函构成对偶空间，是约束、坐标函数和超平面方程的抽象形式。这些工具把矩阵或多线性关系拆成更容易计算的部分，常用于数值算法、坐标提取和高维结构表达。分解和对偶语言的价值在于保留线性信息的同时换一种组织方式，使复杂问题能按方向、块或配对来处理。因此理解线性泛函时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线性泛函",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E6%80%A7%E6%B3%9B%E5%87%BD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线性泛函",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E6%80%A7%E6%B3%9B%E5%87%BD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear functional",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20functional"
+        }
       ]
     },
     {
@@ -1061,6 +2100,24 @@
         "V*",
         "dual basis",
         "dual space"
+      ],
+      "explanation_markdown": "对偶空间由原向量空间上的所有线性泛函组成。可以概括为 $V^*=\\operatorname{Hom}(V,F)$，其中V 是原空间，F 是标量域，Hom 表示所有线性映射。其中的元素不是普通向量，而是把向量送到标量的线性函数。\n\n若 V 有限维，则 dim V^*=dim V。对偶空间用于表达坐标函数、线性约束和双线性型，也让行向量与列向量的关系更清楚。这些工具把矩阵或多线性关系拆成更容易计算的部分，常用于数值算法、坐标提取和高维结构表达。分解和对偶语言的价值在于保留线性信息的同时换一种组织方式，使复杂问题能按方向、块或配对来处理。因此理解对偶空间时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对偶空间",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E5%81%B6%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对偶空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E5%81%B6%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dual space",
+          "url": "https://en.wikipedia.org/w/index.php?search=dual%20space"
+        }
       ]
     },
     {
@@ -1079,6 +2136,24 @@
         "e^i(e_j)=δ^i_j",
         "coordinate functionals",
         "dual basis"
+      ],
+      "explanation_markdown": "对偶基是与一组基配对后只挑出对应坐标的线性泛函组。可以概括为 $e^i(e_j)=\\delta^i_j$，其中e_j 是原空间基向量，e^i 是对偶空间基，δ 是克罗内克符号。它让第 i 个对偶基函数正好读取第 i 个坐标。\n\n若 v=Σ_j c_j e_j，则 e^i(v)=c_i。对偶基把坐标提取写成线性泛函，是理解张量、双线性型和换基规则的基础。这些工具把矩阵或多线性关系拆成更容易计算的部分，常用于数值算法、坐标提取和高维结构表达。分解和对偶语言的价值在于保留线性信息的同时换一种组织方式，使复杂问题能按方向、块或配对来处理。因此理解对偶基时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对偶基",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E5%81%B6%E5%9F%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对偶基",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E5%81%B6%E5%9F%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dual basis",
+          "url": "https://en.wikipedia.org/w/index.php?search=dual%20basis"
+        }
       ]
     },
     {
@@ -1097,6 +2172,24 @@
         "B(u,v)",
         "x^T A y",
         "bilinear form"
+      ],
+      "explanation_markdown": "双线性型是对两个向量分别都线性的标量函数。可以概括为 $B(\\alpha u+\\beta v,w)=\\alpha B(u,w)+\\beta B(v,w)$，其中B 是函数，u,v,w 是向量，α,β 是标量。同样的线性要求也要对第二个变量成立。\n\n内积和矩阵表达 x^TAy 都是常见例子。双线性型把两个向量之间的配对关系抽象出来，可进一步讨论对称性、交替性和二次型。这些工具把矩阵或多线性关系拆成更容易计算的部分，常用于数值算法、坐标提取和高维结构表达。分解和对偶语言的价值在于保留线性信息的同时换一种组织方式，使复杂问题能按方向、块或配对来处理。因此理解双线性型时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "双线性型",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8C%E7%BA%BF%E6%80%A7%E5%9E%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "双线性型",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8C%E7%BA%BF%E6%80%A7%E5%9E%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bilinear form",
+          "url": "https://en.wikipedia.org/w/index.php?search=bilinear%20form"
+        }
       ]
     },
     {
@@ -1115,6 +2208,24 @@
         "B(u,v)=B(v,u)",
         "quadratic form",
         "symmetric bilinear form"
+      ],
+      "explanation_markdown": "对称双线性型是在交换两个输入后值不变的双线性型。通常记作 $B(u,v)=B(v,u)$，其中u,v 是任意向量，B 是双线性型。对称性让它能自然对应二次型。\n\n在实有限维空间中，对称双线性型常由对称矩阵表示：B(x,y)=x^TAy。它用于研究长度、能量、惯性指数和正定性。这些工具把矩阵或多线性关系拆成更容易计算的部分，常用于数值算法、坐标提取和高维结构表达。分解和对偶语言的价值在于保留线性信息的同时换一种组织方式，使复杂问题能按方向、块或配对来处理。因此理解对称双线性型时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对称双线性型",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E7%A7%B0%E5%8F%8C%E7%BA%BF%E6%80%A7%E5%9E%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对称双线性型",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E7%A7%B0%E5%8F%8C%E7%BA%BF%E6%80%A7%E5%9E%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "symmetric bilinear form",
+          "url": "https://en.wikipedia.org/w/index.php?search=symmetric%20bilinear%20form"
+        }
       ]
     },
     {
@@ -1133,6 +2244,24 @@
         "B(u,u)=0",
         "skew symmetric",
         "alternating bilinear form"
+      ],
+      "explanation_markdown": "交替双线性型在两个输入相同时取值为零，并对交换输入改变符号。通常记作 $B(v,v)=0,\\quad B(u,v)=-B(v,u)$，其中B 是双线性型，u,v 是向量。它强调有向面积式的反对称关系。\n\n行列式的二维面积形式是典型例子。交替双线性型与外积、微分形式和辛结构有关，适合记录方向和取向信息。这些工具把矩阵或多线性关系拆成更容易计算的部分，常用于数值算法、坐标提取和高维结构表达。分解和对偶语言的价值在于保留线性信息的同时换一种组织方式，使复杂问题能按方向、块或配对来处理。因此理解交替双线性型时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "交替双线性型",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%A4%E6%9B%BF%E5%8F%8C%E7%BA%BF%E6%80%A7%E5%9E%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "交替双线性型",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%A4%E6%9B%BF%E5%8F%8C%E7%BA%BF%E6%80%A7%E5%9E%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "alternating bilinear form",
+          "url": "https://en.wikipedia.org/w/index.php?search=alternating%20bilinear%20form"
+        }
       ]
     },
     {
@@ -1151,6 +2280,24 @@
         "u∧v",
         "parallel zero",
         "exterior product"
+      ],
+      "explanation_markdown": "外积把向量组合成反对称的面积或高维体积元素。计算中常看 $u\\wedge v=-v\\wedge u$，其中u,v 是向量，楔号表示外积，交换顺序会变号。若两个向量线性相关，外积为零。\n\n在三维中，外积与叉乘有联系，但外积更适合推广到任意维。它常用于行列式、微分形式和有向面积的表达。这些工具把矩阵或多线性关系拆成更容易计算的部分，常用于数值算法、坐标提取和高维结构表达。分解和对偶语言的价值在于保留线性信息的同时换一种组织方式，使复杂问题能按方向、块或配对来处理。因此理解外积时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "外积",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%96%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "外积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%96%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "exterior product",
+          "url": "https://en.wikipedia.org/w/index.php?search=exterior%20product"
+        }
       ]
     },
     {
@@ -1169,6 +2316,24 @@
         "u⊗v",
         "dimension product",
         "tensor product"
+      ],
+      "explanation_markdown": "张量积把两个向量空间合成一个新的线性空间，用来承载原本依赖两个输入的双线性信息。它满足 $(a u)\\otimes v=u\\otimes(a v)$，其中 $u,v$ 来自两个空间，$a$ 是标量，$\\otimes$ 表示张量积。这个等式说明标量可在两个因子之间移动。\n\n双线性映射 $B(u,v)$ 常可改写成张量积空间上的线性映射，这样就能用线性代数方法处理多输入关系。矩阵的克罗内克积、量子复合系统和多线性代数都常用它。张量积不同于普通直和；直和把对象并排放置，张量积更强调两个方向同时作用后产生的组合分量。选定基以后，$u_i\\otimes v_j$ 会形成自然基，便于把抽象定义落到坐标计算中。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "张量积",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%A0%E9%87%8F%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "张量积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%A0%E9%87%8F%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tensor product",
+          "url": "https://en.wikipedia.org/w/index.php?search=tensor%20product"
+        }
       ]
     },
     {
@@ -1187,6 +2352,24 @@
         "T:V→V",
         "polynomial in T",
         "linear operator"
+      ],
+      "explanation_markdown": "线性算子是向量空间到自身的线性映射，常把变换看作可作用的运算。计算中常看 $T:V\\to V,\\quad T(\\alpha u+\\beta v)=\\alpha T(u)+\\beta T(v)$，其中T 是算子，V 是同一向量空间，α,β 是标量。它保留线性组合，并能反复迭代。\n\n有限维时线性算子可用方阵表示。特征值、谱、最小多项式和不变子空间都是围绕线性算子研究其内部结构的概念。这些概念关注线性变换的内部结构：核看丢失的信息，像看能到达的范围，谱看特殊方向上的伸缩。相似变换只是换坐标，真正保留下来的是特征值、最小多项式、秩和不变子空间等结构信息。因此理解线性算子时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线性算子",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E6%80%A7%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线性算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E6%80%A7%E7%AE%97%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20operator"
+        }
       ]
     },
     {
@@ -1205,6 +2388,24 @@
         "T(W)⊂W",
         "eigenspace",
         "invariant subspace"
+      ],
+      "explanation_markdown": "不变子空间是在某个线性算子作用后仍留在自身内部的子空间。常用定义式是 $T(W)\\subseteq W$，其中T 是线性算子，W 是 V 的子空间。它表示 W 中向量经 T 变换后不会跑出 W。\n\n特征向量张成的一维空间是最简单的不变子空间。找到不变子空间能把算子分块，进而简化对角化、约当分解和递推系统分析。这些概念关注线性变换的内部结构：核看丢失的信息，像看能到达的范围，谱看特殊方向上的伸缩。相似变换只是换坐标，真正保留下来的是特征值、最小多项式、秩和不变子空间等结构信息。因此理解不变子空间时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "不变子空间",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%8D%E5%8F%98%E5%AD%90%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "不变子空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%8D%E5%8F%98%E5%AD%90%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "invariant subspace",
+          "url": "https://en.wikipedia.org/w/index.php?search=invariant%20subspace"
+        }
       ]
     },
     {
@@ -1223,6 +2424,24 @@
         "m_A(A)=0",
         "Jordan block size",
         "minimal polynomial"
+      ],
+      "explanation_markdown": "最小多项式是次数最低的首一多项式，使代入矩阵或算子后得到零。计算中常看 $m_A(A)=0$，其中m_A 是关于变量的多项式，m_A(A) 表示把 A 代入多项式。它比特征多项式更精细地反映矩阵满足的代数关系。\n\n最小多项式整除特征多项式。矩阵能否对角化，可由最小多项式是否分解成互异一次因子来判断；它也控制矩阵函数和递推关系。这些概念关注线性变换的内部结构：核看丢失的信息，像看能到达的范围，谱看特殊方向上的伸缩。相似变换只是换坐标，真正保留下来的是特征值、最小多项式、秩和不变子空间等结构信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最小多项式",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E5%B0%8F%E5%A4%9A%E9%A1%B9%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最小多项式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E5%B0%8F%E5%A4%9A%E9%A1%B9%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "minimal polynomial",
+          "url": "https://en.wikipedia.org/w/index.php?search=minimal%20polynomial"
+        }
       ]
     },
     {
@@ -1241,6 +2460,24 @@
         "(λ-λ0)^k",
         "algebraic multiplicity",
         "algebraic multiplicity"
+      ],
+      "explanation_markdown": "代数重数是某个特征值作为特征多项式根出现的次数。通常记作 $p_A(\\lambda)=(\\lambda-\\lambda_0)^k q(\\lambda)$，其中λ_0 是特征值，k 是它的代数重数，q 在 λ_0 处不为零。它来自多项式根的重数，而不是特征向量个数。\n\n代数重数总不小于几何重数。若所有特征值的几何重数之和等于矩阵阶数，矩阵才有可能对角化。这些概念关注线性变换的内部结构：核看丢失的信息，像看能到达的范围，谱看特殊方向上的伸缩。相似变换只是换坐标，真正保留下来的是特征值、最小多项式、秩和不变子空间等结构信息。因此理解代数重数时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "代数重数",
+          "url": "https://www.baidu.com/s?wd=%E4%BB%A3%E6%95%B0%E9%87%8D%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "代数重数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BB%A3%E6%95%B0%E9%87%8D%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "algebraic multiplicity",
+          "url": "https://en.wikipedia.org/w/index.php?search=algebraic%20multiplicity"
+        }
       ]
     },
     {
@@ -1259,6 +2496,24 @@
         "dim Ker(A-λI)",
         "diagonalization",
         "geometric multiplicity"
+      ],
+      "explanation_markdown": "几何重数是某个特征值对应特征空间的维数。可写成 $\\dim\\ker(A-\\lambda I)$，其中A 是矩阵，λ 是特征值，核表示满足特征方程的向量空间。它等于该特征值下线性无关特征向量的最大数量。\n\n几何重数至少为一，至多等于代数重数。对角化要求每个特征值提供足够多的特征向量，因此几何重数是判断是否缺向量的关键。这些概念关注线性变换的内部结构：核看丢失的信息，像看能到达的范围，谱看特殊方向上的伸缩。相似变换只是换坐标，真正保留下来的是特征值、最小多项式、秩和不变子空间等结构信息。因此理解几何重数时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "几何重数",
+          "url": "https://www.baidu.com/s?wd=%E5%87%A0%E4%BD%95%E9%87%8D%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "几何重数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%A0%E4%BD%95%E9%87%8D%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "geometric multiplicity",
+          "url": "https://en.wikipedia.org/w/index.php?search=geometric%20multiplicity"
+        }
       ]
     },
     {
@@ -1277,6 +2532,24 @@
         "E_λ=Ker(A-λI)",
         "geometric multiplicity",
         "eigenspace"
+      ],
+      "explanation_markdown": "特征空间是对应同一特征值的所有特征向量加上零向量组成的子空间。通常记作 $E_\\lambda=\\ker(A-\\lambda I)$，其中λ 是特征值，A-λI 的核给出对应解空间。其中每个非零向量都满足 A v=λv。\n\n特征空间的维数就是几何重数。若不同特征值的特征空间能直和张成整个空间，矩阵就可以按这些方向对角化。这些概念关注线性变换的内部结构：核看丢失的信息，像看能到达的范围，谱看特殊方向上的伸缩。相似变换只是换坐标，真正保留下来的是特征值、最小多项式、秩和不变子空间等结构信息。因此理解特征空间时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "特征空间",
+          "url": "https://www.baidu.com/s?wd=%E7%89%B9%E5%BE%81%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "特征空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%B9%E5%BE%81%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "eigenspace",
+          "url": "https://en.wikipedia.org/w/index.php?search=eigenspace"
+        }
       ]
     },
     {
@@ -1295,6 +2568,24 @@
         "σ(A)",
         "spectrum",
         "spectrum"
+      ],
+      "explanation_markdown": "谱是线性算子或矩阵所有特征值组成的集合。计算中常看 $\\sigma(A)=\\{\\lambda:\\det(\\lambda I-A)=0\\}$，其中σ(A) 表示谱，λ 是特征值候选，I 是单位矩阵。有限维情形中，谱就是特征多项式的全部根。\n\n谱记录变换在各特征方向上的可能伸缩比例。稳定性分析常看特征值实部或模长；正规矩阵还可通过谱进行正交或酉对角化。这些概念关注线性变换的内部结构：核看丢失的信息，像看能到达的范围，谱看特殊方向上的伸缩。相似变换只是换坐标，真正保留下来的是特征值、最小多项式、秩和不变子空间等结构信息。因此理解谱时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "谱",
+          "url": "https://www.baidu.com/s?wd=%E8%B0%B1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "谱",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B0%B1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "spectrum",
+          "url": "https://en.wikipedia.org/w/index.php?search=spectrum"
+        }
       ]
     },
     {
@@ -1313,6 +2604,24 @@
         "ρ(A)=max|λ_i|",
         "<1 convergence",
         "spectral radius"
+      ],
+      "explanation_markdown": "谱半径是矩阵所有特征值模长中的最大值。计算中常看 $\\rho(A)=\\max_{\\lambda\\in\\sigma(A)}|\\lambda|$，其中σ(A) 是谱，λ 遍历所有特征值，ρ(A) 是最大模长。它衡量反复作用 A 时可能产生的最大增长尺度。\n\n在迭代法和离散动力系统中，谱半径小于一常意味着 A^n 趋于零。它与矩阵范数有关，但不等同于任意给定范数。这些概念关注线性变换的内部结构：核看丢失的信息，像看能到达的范围，谱看特殊方向上的伸缩。相似变换只是换坐标，真正保留下来的是特征值、最小多项式、秩和不变子空间等结构信息。因此理解谱半径时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "谱半径",
+          "url": "https://www.baidu.com/s?wd=%E8%B0%B1%E5%8D%8A%E5%BE%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "谱半径",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B0%B1%E5%8D%8A%E5%BE%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "spectral radius",
+          "url": "https://en.wikipedia.org/w/index.php?search=spectral%20radius"
+        }
       ]
     },
     {
@@ -1331,6 +2640,24 @@
         "p_A(A)=0",
         "Cayley Hamilton",
         "cayley hamilton theorem"
+      ],
+      "explanation_markdown": "凯莱哈密顿定理说明每个方阵都满足自己的特征多项式。可以概括为 $p_A(A)=0$，其中p_A 是 A 的特征多项式，p_A(A) 表示把矩阵 A 代入多项式。右边的零是零矩阵。\n\n这个定理把高次矩阵幂压缩为低次幂的线性组合，可用于求逆、递推和矩阵函数。它也解释了最小多项式为什么整除特征多项式。这些概念关注线性变换的内部结构：核看丢失的信息，像看能到达的范围，谱看特殊方向上的伸缩。相似变换只是换坐标，真正保留下来的是特征值、最小多项式、秩和不变子空间等结构信息。因此理解凯莱哈密顿定理时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "凯莱哈密顿定理",
+          "url": "https://www.baidu.com/s?wd=%E5%87%AF%E8%8E%B1%E5%93%88%E5%AF%86%E9%A1%BF%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "凯莱哈密顿定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%AF%E8%8E%B1%E5%93%88%E5%AF%86%E9%A1%BF%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cayley hamilton theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=cayley%20hamilton%20theorem"
+        }
       ]
     },
     {
@@ -1349,6 +2676,24 @@
         "A^T=A",
         "real eigenvalues",
         "real symmetric matrix"
+      ],
+      "explanation_markdown": "实对称矩阵是等于自身转置的实方阵。可以概括为 $A^T=A$，其中A^T 是转置矩阵，等式要求关于主对角线对称。它对应实内积空间中的自伴线性算子。\n\n实对称矩阵有实特征值，并且可由正交矩阵对角化。二次型、最小二乘和主成分分析都大量依赖这一稳定结构。这类矩阵通常通过二次型、转置或共轭转置体现几何性质，重点不是元素表面，而是作用在所有方向上的结果。正定、半定和不定会直接影响极值、能量和投影解释；对称或正规条件则让谱分解更稳定。因此理解实对称矩阵时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "实对称矩阵",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%9E%E5%AF%B9%E7%A7%B0%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "实对称矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%9E%E5%AF%B9%E7%A7%B0%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "real symmetric matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=real%20symmetric%20matrix"
+        }
       ]
     },
     {
@@ -1367,6 +2712,24 @@
         "A*=A",
         "unitary diagonalization",
         "hermitian matrix"
+      ],
+      "explanation_markdown": "厄米矩阵是等于自身共轭转置的复方阵。常用定义式是 $A^*=A$，其中A^* 表示先转置再取复共轭。它是复内积空间中自伴算子的矩阵形式。\n\n厄米矩阵的特征值全为实数，并可酉对角化。量子力学中的可观测量常用厄米算子表示，因为测量结果需要是实数。这类矩阵通常通过二次型、转置或共轭转置体现几何性质，重点不是元素表面，而是作用在所有方向上的结果。正定、半定和不定会直接影响极值、能量和投影解释；对称或正规条件则让谱分解更稳定。因此理解厄米矩阵时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "厄米矩阵",
+          "url": "https://www.baidu.com/s?wd=%E5%8E%84%E7%B1%B3%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "厄米矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8E%84%E7%B1%B3%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hermitian matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=hermitian%20matrix"
+        }
       ]
     },
     {
@@ -1385,6 +2748,24 @@
         "A^T=-A",
         "skew symmetric",
         "skew symmetric matrix"
+      ],
+      "explanation_markdown": "反对称矩阵是转置后等于自身相反数的方阵。一个标准表达是 $A^T=-A$，其中A^T 是转置矩阵，负号表示每个元素取相反数。因此主对角线元素必须为零。\n\n实反对称矩阵常与旋转、叉乘和交替双线性型有关。它的非零特征值在复数范围内成纯虚成对出现，反映反对称结构的旋转性质。这类矩阵通常通过二次型、转置或共轭转置体现几何性质，重点不是元素表面，而是作用在所有方向上的结果。正定、半定和不定会直接影响极值、能量和投影解释；对称或正规条件则让谱分解更稳定。因此理解反对称矩阵时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反对称矩阵",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E5%AF%B9%E7%A7%B0%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反对称矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E5%AF%B9%E7%A7%B0%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "skew symmetric matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=skew%20symmetric%20matrix"
+        }
       ]
     },
     {
@@ -1403,6 +2784,24 @@
         "AA*=A*A",
         "normal",
         "normal matrix"
+      ],
+      "explanation_markdown": "正规矩阵是与自身共轭转置可交换的复矩阵。可以概括为 $A^*A=AA^*$，其中A^* 是共轭转置，等式表示两种乘法顺序相同。厄米矩阵、酉矩阵和实对称矩阵都是正规矩阵的例子。\n\n正规矩阵可以被酉矩阵对角化，这让它的谱结构特别清楚。它的列空间几何行为比一般矩阵规整，适合用正交特征向量分析。这类矩阵通常通过二次型、转置或共轭转置体现几何性质，重点不是元素表面，而是作用在所有方向上的结果。正定、半定和不定会直接影响极值、能量和投影解释；对称或正规条件则让谱分解更稳定。因此理解正规矩阵时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正规矩阵",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E8%A7%84%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正规矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E8%A7%84%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "normal matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=normal%20matrix"
+        }
       ]
     },
     {
@@ -1421,6 +2820,24 @@
         "A^2=A",
         "projection",
         "idempotent matrix"
+      ],
+      "explanation_markdown": "幂等矩阵是平方后仍等于自身的矩阵。可以概括为 $A^2=A$，其中A 是方阵，A^2 表示 A 与自身相乘。它表示作用一次后已经到达稳定结果，再作用不会改变。\n\n投影矩阵是最常见的幂等矩阵。幂等矩阵的特征值只能是 0 或 1，分别对应被消去的方向和被保留的方向。这类矩阵通常通过二次型、转置或共轭转置体现几何性质，重点不是元素表面，而是作用在所有方向上的结果。正定、半定和不定会直接影响极值、能量和投影解释；对称或正规条件则让谱分解更稳定。因此理解幂等矩阵时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "幂等矩阵",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%82%E7%AD%89%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "幂等矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%82%E7%AD%89%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "idempotent matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=idempotent%20matrix"
+        }
       ]
     },
     {
@@ -1439,6 +2856,24 @@
         "P^2=P",
         "orthogonal if symmetric",
         "projection matrix"
+      ],
+      "explanation_markdown": "投影矩阵把向量映到某个子空间上，并且再次投影结果不变。一个标准表达是 $P^2=P$，其中P 是投影矩阵，幂等性表示已经落在投影子空间内。若还满足 P^T=P，就表示正交投影。\n\n投影把空间分成保留方向和被舍去方向。在线性回归、最小二乘和几何分解中，投影矩阵用来提取某个子空间中的最佳近似分量。这类矩阵通常通过二次型、转置或共轭转置体现几何性质，重点不是元素表面，而是作用在所有方向上的结果。正定、半定和不定会直接影响极值、能量和投影解释；对称或正规条件则让谱分解更稳定。因此理解投影矩阵时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "投影矩阵",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%95%E5%BD%B1%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "投影矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%95%E5%BD%B1%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "projection matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=projection%20matrix"
+        }
       ]
     },
     {
@@ -1457,6 +2892,24 @@
         "P=A(A^TA)^-1A^T",
         "least squares",
         "orthogonal projection"
+      ],
+      "explanation_markdown": "正交投影把向量映到子空间中离它最近的点，误差与子空间正交。计算中常看 $v=p+r,\\quad p\\in W,\\ r\\perp W$，其中W 是子空间，p 是投影，r 是残差。正交条件保证 p 是 W 中最佳近似。\n\n若 W 的列基组成矩阵 A，投影矩阵常写 P=A(A^TA)^{-1}A^T。最小二乘法就是把观测向量正交投影到列空间上。有了内积或范数后，线性代数不只讨论表示，还能讨论长度、角度、距离和最佳近似。正交结构让许多分量互不干扰，因此投影、最小二乘和数值分解都尽量转化到正交基下处理。因此理解正交投影时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。在具体计算中，还要确认矩阵尺寸、基的选择和向量所属空间是否一致。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正交投影",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E4%BA%A4%E6%8A%95%E5%BD%B1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正交投影",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E4%BA%A4%E6%8A%95%E5%BD%B1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "orthogonal projection",
+          "url": "https://en.wikipedia.org/w/index.php?search=orthogonal%20projection"
+        }
       ]
     },
     {
@@ -1475,6 +2928,24 @@
         "||v||=sqrt(<v,v>)",
         "unitary transformations",
         "unitary space"
+      ],
+      "explanation_markdown": "酉空间是带有复内积的复向量空间。计算中常看 $\\langle u,v\\rangle=\\overline{\\langle v,u\\rangle}$，其中u,v 是复向量，共轭对称性是复内积的重要条件。它把长度、角度和正交推广到复数情形。\n\n酉空间中的保内积变换由酉矩阵表示。量子态空间、复傅里叶展开和正规矩阵谱定理都自然生活在酉空间中。有了内积或范数后，线性代数不只讨论表示，还能讨论长度、角度、距离和最佳近似。正交结构让许多分量互不干扰，因此投影、最小二乘和数值分解都尽量转化到正交基下处理。因此理解酉空间时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "酉空间",
+          "url": "https://www.baidu.com/s?wd=%E9%85%89%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "酉空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%85%89%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "unitary space",
+          "url": "https://en.wikipedia.org/w/index.php?search=unitary%20space"
+        }
       ]
     },
     {
@@ -1493,6 +2964,24 @@
         "R^n x·y",
         "Euclidean",
         "euclidean space"
+      ],
+      "explanation_markdown": "欧氏空间是带有标准内积和距离的实向量空间。可写成 $\\langle x,y\\rangle=x^Ty,\\quad d(x,y)=\\|x-y\\|$，其中x,y 是实向量，内积给出长度和距离。它是我们熟悉的平面和三维空间的代数抽象。\n\n在欧氏空间中可以讨论角度、正交投影、旋转和距离最小化。许多线性代数结果先在欧氏空间中形成直观，再推广到一般内积空间。有了内积或范数后，线性代数不只讨论表示，还能讨论长度、角度、距离和最佳近似。正交结构让许多分量互不干扰，因此投影、最小二乘和数值分解都尽量转化到正交基下处理。因此理解欧氏空间时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "欧氏空间",
+          "url": "https://www.baidu.com/s?wd=%E6%AC%A7%E6%B0%8F%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "欧氏空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AC%A7%E6%B0%8F%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "euclidean space",
+          "url": "https://en.wikipedia.org/w/index.php?search=euclidean%20space"
+        }
       ]
     },
     {
@@ -1511,6 +3000,24 @@
         "d(x,y)",
         "||x-y||",
         "distance"
+      ],
+      "explanation_markdown": "距离度量两个点或向量之间的远近，必须满足非负、对称和三角不等式。通常记作 $d(x,y)=\\|x-y\\|$，其中x,y 是点或向量，范数给出差向量的长度。欧氏距离是最常见的例子。\n\n在线性代数中，距离常由内积或范数诱导。最小二乘、近似理论和投影问题都可以表述为寻找距离最小的向量。有了内积或范数后，线性代数不只讨论表示，还能讨论长度、角度、距离和最佳近似。正交结构让许多分量互不干扰，因此投影、最小二乘和数值分解都尽量转化到正交基下处理。因此理解距离时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "距离",
+          "url": "https://www.baidu.com/s?wd=%E8%B7%9D%E7%A6%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "距离",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B7%9D%E7%A6%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "distance",
+          "url": "https://en.wikipedia.org/w/index.php?search=distance"
+        }
       ]
     },
     {
@@ -1529,6 +3036,24 @@
         "||v||",
         "sqrt(<v,v>)",
         "norm"
+      ],
+      "explanation_markdown": "范数给向量分配长度，抽象地衡量向量大小。可以概括为 $\\|x\\|\\ge0,\\quad \\|\\alpha x\\|=|\\alpha|\\|x\\|$，其中x 是向量，α 是标量，双竖线表示范数。范数还必须满足三角不等式 ||x+y||≤||x||+||y||。\n\n常见范数有欧氏范数、1 范数和无穷范数。不同范数会影响误差估计和收敛判断，但在有限维空间中它们常具有等价的拓扑意义。有了内积或范数后，线性代数不只讨论表示，还能讨论长度、角度、距离和最佳近似。正交结构让许多分量互不干扰，因此投影、最小二乘和数值分解都尽量转化到正交基下处理。因此理解范数时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "范数",
+          "url": "https://www.baidu.com/s?wd=%E8%8C%83%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "范数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%8C%83%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "norm",
+          "url": "https://en.wikipedia.org/w/index.php?search=norm"
+        }
       ]
     },
     {
@@ -1547,6 +3072,24 @@
         "||AB||≤||A||||B||",
         "operator norm",
         "matrix norm"
+      ],
+      "explanation_markdown": "矩阵范数衡量矩阵作为数组或线性变换的大小。可以概括为 $\\|A\\|=\\sup_{x\\ne0}\\frac{\\|Ax\\|}{\\|x\\|}$，其中A 是矩阵，x 是非零向量，sup 表示取最大放大比例。这种范数叫算子范数，反映 A 能把向量最多放大多少。\n\n矩阵范数用于误差分析、迭代收敛和条件数估计。常见还有 Frobenius 范数，它把矩阵元素平方和开方，更像把矩阵看成一个长向量。有了内积或范数后，线性代数不只讨论表示，还能讨论长度、角度、距离和最佳近似。正交结构让许多分量互不干扰，因此投影、最小二乘和数值分解都尽量转化到正交基下处理。因此理解矩阵范数时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "矩阵范数",
+          "url": "https://www.baidu.com/s?wd=%E7%9F%A9%E9%98%B5%E8%8C%83%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "矩阵范数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9F%A9%E9%98%B5%E8%8C%83%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "matrix norm",
+          "url": "https://en.wikipedia.org/w/index.php?search=matrix%20norm"
+        }
       ]
     },
     {
@@ -1565,6 +3108,24 @@
         "tr(AB)=tr(BA)",
         "sum eigenvalues",
         "trace"
+      ],
+      "explanation_markdown": "迹是方阵主对角线元素之和。可以概括为 $\\operatorname{tr}(A)=\\sum_i a_{ii}$，其中a_{ii} 是 A 的第 i 个对角元素，tr 表示迹。迹在相似变换下不变，因此反映线性算子的固有信息。\n\n迹等于特征值按代数重数求和。它还满足 tr(AB)=tr(BA)，在线性代数、概率协方差和矩阵微积分中都很常用。这些工具把矩阵或多线性关系拆成更容易计算的部分，常用于数值算法、坐标提取和高维结构表达。分解和对偶语言的价值在于保留线性信息的同时换一种组织方式，使复杂问题能按方向、块或配对来处理。因此理解迹时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "迹",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "迹",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "trace",
+          "url": "https://en.wikipedia.org/w/index.php?search=trace"
+        }
       ]
     },
     {
@@ -1583,6 +3144,24 @@
         "inertia preserved",
         "congruence",
         "congruent matrix"
+      ],
+      "explanation_markdown": "合同矩阵通过同一个可逆矩阵的转置和自身夹住原矩阵得到。一个标准表达是 $B=P^TAP$，其中P 是可逆矩阵，A,B 是合同矩阵。合同变换对应二次型在换变量下的表示改变。\n\n合同不保留特征值，但保留二次型的正负惯性指数。它主要用于研究对称矩阵、二次型标准化和惯性定理。这类矩阵通常通过二次型、转置或共轭转置体现几何性质，重点不是元素表面，而是作用在所有方向上的结果。正定、半定和不定会直接影响极值、能量和投影解释；对称或正规条件则让谱分解更稳定。因此理解合同矩阵时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "合同矩阵",
+          "url": "https://www.baidu.com/s?wd=%E5%90%88%E5%90%8C%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "合同矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%88%E5%90%8C%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "congruent matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=congruent%20matrix"
+        }
       ]
     },
     {
@@ -1601,6 +3180,24 @@
         "positive negative counts",
         "inertia",
         "index of inertia"
+      ],
+      "explanation_markdown": "惯性指数记录实二次型标准形中正平方项、负平方项和零项的个数。计算中常看 $q=x_1^2+\\cdots+x_p^2-y_1^2-\\cdots-y_q^2$，其中p 是正惯性指数，q 是负惯性指数，剩余零方向对应退化部分。它描述二次型在各方向上的符号结构。\n\n在可逆线性替换下，正负平方项个数不变。惯性指数用于判断正定、负定、半定和鞍形结构，是合同分类的核心数据。这类矩阵通常通过二次型、转置或共轭转置体现几何性质，重点不是元素表面，而是作用在所有方向上的结果。正定、半定和不定会直接影响极值、能量和投影解释；对称或正规条件则让谱分解更稳定。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "惯性指数",
+          "url": "https://www.baidu.com/s?wd=%E6%83%AF%E6%80%A7%E6%8C%87%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "惯性指数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%83%AF%E6%80%A7%E6%8C%87%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "index of inertia",
+          "url": "https://en.wikipedia.org/w/index.php?search=index%20of%20inertia"
+        }
       ]
     },
     {
@@ -1619,6 +3216,24 @@
         "Sylvester law",
         "inertia invariant",
         "law of inertia"
+      ],
+      "explanation_markdown": "惯性定理说明实二次型经非退化线性替换化为标准形后，正负平方项个数不变。可写成 $B=P^TAP$，其中P 是可逆矩阵，A,B 表示同一二次型在不同坐标下的矩阵。虽然矩阵元素改变，惯性指数保持不变。\n\n这一定理保证正定性、负定性和不定性是二次型本身的性质，而非坐标偶然结果。它也解释为什么合同变换适合分类实对称矩阵。这类矩阵通常通过二次型、转置或共轭转置体现几何性质，重点不是元素表面，而是作用在所有方向上的结果。正定、半定和不定会直接影响极值、能量和投影解释；对称或正规条件则让谱分解更稳定。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "惯性定理",
+          "url": "https://www.baidu.com/s?wd=%E6%83%AF%E6%80%A7%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "惯性定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%83%AF%E6%80%A7%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "law of inertia",
+          "url": "https://en.wikipedia.org/w/index.php?search=law%20of%20inertia"
+        }
       ]
     },
     {
@@ -1637,6 +3252,24 @@
         "x^T A x≥0",
         "eigenvalues ≥0",
         "positive semidefinite matrix"
+      ],
+      "explanation_markdown": "半正定矩阵让所有向量对应的二次型都非负。可以概括为 $x^TAx\\ge0\\quad \\text{对所有 }x$，其中A 通常是实对称矩阵，x 是任意向量。允许某些非零方向上的值等于零，因此比正定弱。\n\n半正定矩阵的特征值都非负。协方差矩阵、Gram 矩阵和许多优化问题的约束都自然是半正定的。这类矩阵通常通过二次型、转置或共轭转置体现几何性质，重点不是元素表面，而是作用在所有方向上的结果。正定、半定和不定会直接影响极值、能量和投影解释；对称或正规条件则让谱分解更稳定。因此理解半正定矩阵时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "半正定矩阵",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8A%E6%AD%A3%E5%AE%9A%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "半正定矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8A%E6%AD%A3%E5%AE%9A%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "positive semidefinite matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=positive%20semidefinite%20matrix"
+        }
       ]
     },
     {
@@ -1655,6 +3288,24 @@
         "x^T A x<0",
         "-A positive definite",
         "negative definite matrix"
+      ],
+      "explanation_markdown": "负定矩阵让所有非零向量对应的二次型都为负。计算中常看 $x^TAx<0\\quad (x\\ne0)$，其中A 通常是实对称矩阵，x 是非零向量。它等价于 -A 正定。\n\n若黑塞矩阵在驻点处负定，函数通常取得局部极大值。实对称负定矩阵的所有特征值都为负，顺序主子式符号也有交替判据。这类矩阵通常通过二次型、转置或共轭转置体现几何性质，重点不是元素表面，而是作用在所有方向上的结果。正定、半定和不定会直接影响极值、能量和投影解释；对称或正规条件则让谱分解更稳定。因此理解负定矩阵时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "负定矩阵",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%9F%E5%AE%9A%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "负定矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%9F%E5%AE%9A%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "negative definite matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=negative%20definite%20matrix"
+        }
       ]
     },
     {
@@ -1673,6 +3324,24 @@
         "σ_i=sqrt(λ_i)",
         "ellipsoid axes",
         "singular value"
+      ],
+      "explanation_markdown": "奇异值描述矩阵在正交方向上的伸缩强度，适用于任意矩阵。常用定义式是 $\\sigma_i=\\sqrt{\\lambda_i(A^*A)}$，其中A^* 是共轭转置，λ_i 是 A^*A 的非负特征值，σ_i 是奇异值。它们总是非负实数。\n\n奇异值比特征值更稳定，也能用于非方阵。最大奇异值给出算子范数，非零奇异值个数等于矩阵秩。这些工具把矩阵或多线性关系拆成更容易计算的部分，常用于数值算法、坐标提取和高维结构表达。分解和对偶语言的价值在于保留线性信息的同时换一种组织方式，使复杂问题能按方向、块或配对来处理。因此理解奇异值时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "奇异值",
+          "url": "https://www.baidu.com/s?wd=%E5%A5%87%E5%BC%82%E5%80%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "奇异值",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A5%87%E5%BC%82%E5%80%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "singular value",
+          "url": "https://en.wikipedia.org/w/index.php?search=singular%20value"
+        }
       ]
     },
     {
@@ -1691,6 +3360,24 @@
         "A=UΣV*",
         "low rank approximation",
         "singular value decomposition"
+      ],
+      "explanation_markdown": "奇异值分解把任意矩阵分解为两个酉或正交矩阵与一个非负对角矩阵的乘积。可写成 $A=U\\Sigma V^*$，其中U,V 是酉矩阵，Σ 的对角线元素是奇异值。它表示先旋转坐标，再按主方向伸缩，最后再旋转。\n\n奇异值分解适用于非方阵和秩亏矩阵。数据降维、最小二乘、矩阵低秩近似和主成分分析都依赖它的稳定分解结构。这些工具把矩阵或多线性关系拆成更容易计算的部分，常用于数值算法、坐标提取和高维结构表达。分解和对偶语言的价值在于保留线性信息的同时换一种组织方式，使复杂问题能按方向、块或配对来处理。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "奇异值分解",
+          "url": "https://www.baidu.com/s?wd=%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "奇异值分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "singular value decomposition",
+          "url": "https://en.wikipedia.org/w/index.php?search=singular%20value%20decomposition"
+        }
       ]
     },
     {
@@ -1709,6 +3396,24 @@
         "A=QR",
         "least squares",
         "qr decomposition"
+      ],
+      "explanation_markdown": "QR分解把矩阵分解为正交矩阵和上三角矩阵的乘积。可写成 $A=QR$，其中Q 的列向量标准正交，R 是上三角矩阵。它常由施密特正交化或 Householder 变换构造。\n\nQR 分解把列空间的正交基和坐标系数分开，常用于最小二乘、特征值算法和数值稳定的线性方程求解。这些工具把矩阵或多线性关系拆成更容易计算的部分，常用于数值算法、坐标提取和高维结构表达。分解和对偶语言的价值在于保留线性信息的同时换一种组织方式，使复杂问题能按方向、块或配对来处理。因此理解QR分解时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "QR分解",
+          "url": "https://www.baidu.com/s?wd=QR%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "QR分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=QR%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "qr decomposition",
+          "url": "https://en.wikipedia.org/w/index.php?search=qr%20decomposition"
+        }
       ]
     },
     {
@@ -1727,6 +3432,24 @@
         "A=LU",
         "forward back substitution",
         "lu decomposition"
+      ],
+      "explanation_markdown": "LU分解把矩阵分解为下三角矩阵和上三角矩阵的乘积。通常记作 $A=LU$，其中L 是下三角矩阵，U 是上三角矩阵。它对应高斯消元过程中消元系数和阶梯形结果的分离。\n\n有时需要置换矩阵 P，写成 PA=LU，以处理主元交换。LU 分解能把同一系数矩阵的多个右端方程快速求解。这些工具把矩阵或多线性关系拆成更容易计算的部分，常用于数值算法、坐标提取和高维结构表达。分解和对偶语言的价值在于保留线性信息的同时换一种组织方式，使复杂问题能按方向、块或配对来处理。因此理解LU分解时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "LU分解",
+          "url": "https://www.baidu.com/s?wd=LU%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "LU分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=LU%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lu decomposition",
+          "url": "https://en.wikipedia.org/w/index.php?search=lu%20decomposition"
+        }
       ]
     },
     {
@@ -1745,6 +3468,24 @@
         "LU QR SVD",
         "solve spectrum approximation",
         "matrix decomposition"
+      ],
+      "explanation_markdown": "矩阵分解把一个矩阵写成若干结构更简单矩阵的乘积或和。可以概括为 $A=BC$，其中A 是原矩阵，B,C 是按目的选出的因子矩阵。不同分解突出不同结构，如三角、正交、对角或低秩。\n\nLU 适合解方程，QR 适合最小二乘，SVD 适合低秩近似和稳定分析。矩阵分解的核心是把复杂线性变换拆成更容易计算和理解的步骤。这些工具把矩阵或多线性关系拆成更容易计算的部分，常用于数值算法、坐标提取和高维结构表达。分解和对偶语言的价值在于保留线性信息的同时换一种组织方式，使复杂问题能按方向、块或配对来处理。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "矩阵分解",
+          "url": "https://www.baidu.com/s?wd=%E7%9F%A9%E9%98%B5%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "矩阵分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9F%A9%E9%98%B5%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "matrix decomposition",
+          "url": "https://en.wikipedia.org/w/index.php?search=matrix%20decomposition"
+        }
       ]
     },
     {
@@ -1763,6 +3504,24 @@
         "A⊗B",
         "mp×nq",
         "kronecker product"
+      ],
+      "explanation_markdown": "克罗内克积把两个矩阵按块相乘，生成更大的块矩阵。可以概括为 $A\\otimes B=(a_{ij}B)$，其中a_{ij} 是 A 的元素，每个元素被替换成 a_{ij} 乘以矩阵 B。它把两个线性结构组合成乘积结构。\n\n克罗内克积常用于张量积空间、矩阵方程和多维离散模型。它满足许多与普通乘法相容的规则，如在维数合适时 (A⊗B)(C⊗D)=AC⊗BD。这些工具把矩阵或多线性关系拆成更容易计算的部分，常用于数值算法、坐标提取和高维结构表达。分解和对偶语言的价值在于保留线性信息的同时换一种组织方式，使复杂问题能按方向、块或配对来处理。因此理解克罗内克积时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "克罗内克积",
+          "url": "https://www.baidu.com/s?wd=%E5%85%8B%E7%BD%97%E5%86%85%E5%85%8B%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "克罗内克积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%8B%E7%BD%97%E5%86%85%E5%85%8B%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kronecker product",
+          "url": "https://en.wikipedia.org/w/index.php?search=kronecker%20product"
+        }
       ]
     },
     {
@@ -1781,6 +3540,24 @@
         "Col(A)",
         "rank",
         "column space"
+      ],
+      "explanation_markdown": "列空间是矩阵所有列向量张成的子空间。常用定义式是 $\\operatorname{Col}(A)=\\operatorname{span}\\{a_1,\\ldots,a_n\\}$，其中a_i 是 A 的第 i 列，span 表示所有线性组合。它也是线性映射 x↦Ax 的像空间。\n\n方程 A x=b 有解，当且仅当 b 在列空间中。列空间维数等于矩阵秩，主元列可作为它的一组基。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解列空间时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。在具体计算中，还要确认矩阵尺寸、基的选择和向量所属空间是否一致。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "列空间",
+          "url": "https://www.baidu.com/s?wd=%E5%88%97%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "列空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%97%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "column space",
+          "url": "https://en.wikipedia.org/w/index.php?search=column%20space"
+        }
       ]
     },
     {
@@ -1799,6 +3576,24 @@
         "Row(A)",
         "rank",
         "row space"
+      ],
+      "explanation_markdown": "行空间是矩阵所有行向量张成的子空间。可写成 $\\operatorname{Row}(A)=\\operatorname{span}\\{r_1,\\ldots,r_m\\}$，其中r_i 是 A 的第 i 行，span 表示线性包。行初等变换不改变行空间的维数，也就是行秩。\n\n行空间与零空间正交：若 A x=0，则 x 与 A 的每一行都正交。行空间维数等于列空间维数，这个共同数就是矩阵秩。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解行空间时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "行空间",
+          "url": "https://www.baidu.com/s?wd=%E8%A1%8C%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "行空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A1%8C%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "row space",
+          "url": "https://en.wikipedia.org/w/index.php?search=row%20space"
+        }
       ]
     },
     {
@@ -1817,6 +3612,24 @@
         "Null(A)=Ker A",
         "n-rank",
         "null space"
+      ],
+      "explanation_markdown": "零空间是矩阵乘上后得到零向量的所有输入组成的子空间。通常记作 $\\operatorname{Null}(A)=\\{\\mathbf x:A\\mathbf x=0\\}$，其中A 是矩阵，x 是未知向量，0 是零向量。它就是线性映射的核，描述被压缩掉的方向。\n\n零空间维数等于未知量个数减去秩。基础解系是零空间的一组基，用来写齐次方程组的全部解。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解零空间时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "零空间",
+          "url": "https://www.baidu.com/s?wd=%E9%9B%B6%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "零空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9B%B6%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "null space",
+          "url": "https://en.wikipedia.org/w/index.php?search=null%20space"
+        }
       ]
     },
     {
@@ -1835,6 +3648,24 @@
         "y^T A=0",
         "orthogonal to Col(A)",
         "left null space"
+      ],
+      "explanation_markdown": "左零空间是从左侧乘矩阵后得到零的所有行向量组成的空间。可写成 $\\{y:y^TA=0\\}=\\operatorname{Null}(A^T)$，其中y 是列向量，y^T 是对应行向量，A^T 是转置矩阵。它等于转置矩阵的零空间。\n\n左零空间与 A 的列空间正交，维数为行数减去秩。它常用于理解线性方程 Ax=b 的一致性条件：b 必须与左零空间中每个向量正交。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解左零空间时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "左零空间",
+          "url": "https://www.baidu.com/s?wd=%E5%B7%A6%E9%9B%B6%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "左零空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B7%A6%E9%9B%B6%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "left null space",
+          "url": "https://en.wikipedia.org/w/index.php?search=left%20null%20space"
+        }
       ]
     },
     {
@@ -1853,6 +3684,24 @@
         "free variables",
         "n-rank",
         "fundamental solution set"
+      ],
+      "explanation_markdown": "基础解系是齐次线性方程组解空间的一组基。可写成 $A\\mathbf x=0,\\quad \\mathbf x=c_1\\xi_1+\\cdots+c_k\\xi_k$，其中ξ_i 是基础解系向量，c_i 是任意系数。它能线性表示所有齐次解，且这些向量线性无关。\n\n通过行化简后给自由变量逐个取 1、其余取 0，常能构造基础解系。其个数等于未知量个数减去矩阵秩。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解基础解系时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "基础解系",
+          "url": "https://www.baidu.com/s?wd=%E5%9F%BA%E7%A1%80%E8%A7%A3%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "基础解系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9F%BA%E7%A1%80%E8%A7%A3%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fundamental solution set",
+          "url": "https://en.wikipedia.org/w/index.php?search=fundamental%20solution%20set"
+        }
       ]
     },
     {
@@ -1871,6 +3720,24 @@
         "n-rank",
         "solution dimension",
         "free variable"
+      ],
+      "explanation_markdown": "自由变量是在消元后没有主元约束的未知量，可作为参数自由取值。通常记作 $n-r=\\text{自由变量个数}$，其中n 是未知量个数，r 是矩阵秩。自由变量控制解空间的维数和参数数量。\n\n在线性方程组中，主变量由方程和自由变量表达出来。给自由变量不同取值，就得到同一解空间或非齐次解集中的不同解。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解自由变量时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自由变量",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E7%94%B1%E5%8F%98%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自由变量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E7%94%B1%E5%8F%98%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "free variable",
+          "url": "https://en.wikipedia.org/w/index.php?search=free%20variable"
+        }
       ]
     },
     {
@@ -1889,6 +3756,24 @@
         "pivot columns",
         "rank",
         "pivot variable"
+      ],
+      "explanation_markdown": "主变量是消元后位于主元列中的未知量，通常由方程解出。一个标准表达是 $x_{\\text{pivot}}=\\text{关于自由变量的表达式}$，其中pivot 表示主元位置，右边由回代得到。主变量数量等于矩阵秩。\n\n它与自由变量配合描述解集：自由变量先取参数，主变量再由方程确定。若每一列都是主元列，方程组在齐次情形下只有零解。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解主变量时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "主变量",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%BB%E5%8F%98%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "主变量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%BB%E5%8F%98%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pivot variable",
+          "url": "https://en.wikipedia.org/w/index.php?search=pivot%20variable"
+        }
       ]
     },
     {
@@ -1907,6 +3792,24 @@
         "pivot count rank",
         "back substitution",
         "pivot"
+      ],
+      "explanation_markdown": "主元是阶梯形矩阵中每个非零行的第一个非零元素。可写成 $R_i=(0,\\ldots,0,p_i,*)\\quad p_i\\ne0$，其中R_i 是第 i 个非零行，p_i 是该行主元。主元的位置标记关键列，也决定回代顺序。\n\n主元个数等于矩阵秩。高斯消元中选择合适主元能减少数值误差，理论上则用于区分主变量和自由变量。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解主元时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "主元",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%BB%E5%85%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "主元",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%BB%E5%85%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pivot",
+          "url": "https://en.wikipedia.org/w/index.php?search=pivot"
+        }
       ]
     },
     {
@@ -1925,6 +3828,24 @@
         "count rank",
         "free columns",
         "pivot column"
+      ],
+      "explanation_markdown": "主元列是阶梯形矩阵中含有主元的位置对应的列。计算中常看 $\\text{pivot columns of }A$，其中主元来自对 A 行化简后的阶梯形位置，但列通常指原矩阵对应列。这些原列向量构成列空间的一组基。\n\n主元列数量等于矩阵秩，其余列可由主元列线性表示。在线性方程组中，主元列对应主变量，非主元列对应自由变量。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解主元列时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "主元列",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%BB%E5%85%83%E5%88%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "主元列",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%BB%E5%85%83%E5%88%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pivot column",
+          "url": "https://en.wikipedia.org/w/index.php?search=pivot%20column"
+        }
       ]
     },
     {
@@ -1943,6 +3864,24 @@
         "column rank",
         "rank equality",
         "column rank"
+      ],
+      "explanation_markdown": "列秩是矩阵列向量中最大线性无关组的向量个数。可写成 $\\operatorname{rank}_{col}A=\\dim\\operatorname{Col}(A)$，其中Col(A) 是列空间，dim 表示维数。它衡量矩阵输出空间中可达到的独立方向数量。\n\n列秩等于行秩，这个共同数称为矩阵的秩。主元列给出列空间的一组基，因此列秩可通过行化简得到。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解列秩时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "列秩",
+          "url": "https://www.baidu.com/s?wd=%E5%88%97%E7%A7%A9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "列秩",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%97%E7%A7%A9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "column rank",
+          "url": "https://en.wikipedia.org/w/index.php?search=column%20rank"
+        }
       ]
     },
     {
@@ -1961,6 +3900,24 @@
         "row rank",
         "rank equality",
         "row rank"
+      ],
+      "explanation_markdown": "行秩是矩阵行向量中最大线性无关组的向量个数。可以概括为 $\\operatorname{rank}_{row}A=\\dim\\operatorname{Row}(A)$，其中Row(A) 是行空间，dim 表示维数。它衡量方程组中独立约束的数量。\n\n行秩与列秩总相等，这是矩阵秩概念可靠的原因。行化简后非零行数就是行秩，也等于主元个数。矩阵语言把方程组、线性映射和子空间联系起来；行化简改变外观，但保留求解和秩的关键信息。看这类概念时要同时注意行空间、列空间和零空间，它们分别记录约束、可达输出和被压掉的方向。因此理解行秩时，要同时看代数运算、子空间位置和线性变换作用，单看符号容易误判。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "行秩",
+          "url": "https://www.baidu.com/s?wd=%E8%A1%8C%E7%A7%A9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "行秩",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A1%8C%E7%A7%A9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "row rank",
+          "url": "https://en.wikipedia.org/w/index.php?search=row%20rank"
+        }
       ]
     }
   ]

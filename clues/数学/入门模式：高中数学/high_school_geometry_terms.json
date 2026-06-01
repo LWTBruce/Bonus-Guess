@@ -17,6 +17,24 @@
         "k1=k2 k1k2=-1",
         "y=kx+b Ax+By+C=0",
         "line"
+      ],
+      "explanation_markdown": "直线是平面或空间中向两端无限延伸的最基本一维图形，只要给出两个不同点，就能唯一确定一条直线。在平面直角坐标系中，它常写成 $Ax+By+C=0$，其中 $A,B,C$ 是常数，$A$ 与 $B$ 不能同时为 $0$，$(x,y)$ 表示直线上的任意点。\n\n这个方程的含义是所有满足同一线性关系的点排成一条直的轨迹。若直线不竖直，也可写成 $y=kx+b$，这里 $k$ 是斜率，$b$ 是纵截距。直线没有端点，图上画出的有限线条只是示意，因此它和只向一边延伸的射线、两端固定的线段不同。用两点确定直线时，关键是两点不能重合；用方程确定直线时，所有解点都在同一条线上。它在解析几何中常作为坐标轴、对称轴、切线或轨迹边界出现，很多曲线问题也会先转化为点到直线的距离或直线交点。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "直线",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B4%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "直线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B4%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "line",
+          "url": "https://en.wikipedia.org/w/index.php?search=line"
+        }
       ]
     },
     {
@@ -35,6 +53,24 @@
         "公共端点 两边 开口",
         "一个端点 无终点",
         "ray"
+      ],
+      "explanation_markdown": "射线是从一个端点出发，沿某个方向无限延伸的直线部分。用端点 $O$ 和方向向量 $\\mathbf v$ 表示时，可写成 $P=O+t\\mathbf v,\\ t\\ge0$，其中 $P$ 是射线上的点，$t$ 表示从端点沿方向走出的倍数，$\\mathbf v$ 决定朝向。\n\n射线只有一个端点，另一边没有终点，所以同一直线上从同一点向相反方向出发会得到两条不同射线。角的两边常看成有公共端点的两条射线；在作图或描述方向时，端点和经过的另一个点共同决定它，不需要给出完整直线。记射线时通常把端点写在前面，如射线 $OA$ 表示从 $O$ 出发经过 $A$ 的方向，不能随意写成 $AO$。角、方向角和半直线不等式图像都依赖射线的单向性；同一端点、同一条直线，只要朝向不同就不是同一射线。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "射线",
+          "url": "https://www.baidu.com/s?wd=%E5%B0%84%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "射线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B0%84%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ray",
+          "url": "https://en.wikipedia.org/w/index.php?search=ray"
+        }
       ]
     },
     {
@@ -53,6 +89,24 @@
         "中点坐标 坐标平均",
         "端点 长度 中点",
         "line segment"
+      ],
+      "explanation_markdown": "线段是连接两个端点之间的有限直线部分，端点一确定，线段的位置和长度也随之确定。若 $A(x_1,y_1)$、$B(x_2,y_2)$ 是端点，长度为 $AB=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$，这里两个坐标差分别表示水平方向和竖直方向的位移。\n\n线段有两个端点，不能向外无限延伸，因此它常用来表示三角形的边、圆的弦和两点间距离。中点也能由坐标平均得到：$M((x_1+x_2)/2,(y_1+y_2)/2)$，其中 $M$ 是端点之间正中位置的点。长度和中点都依赖端点，而不是画图时线条的粗细或方向。线段上的点既不能越过 $A$，也不能越过 $B$，这使它适合表示有限距离。几何证明中常借助线段相等、线段和差、中点和垂直平分线来建立关系；解析几何中则常把它转成端点坐标的距离、中点或比例点。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线段",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E6%AE%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线段",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E6%AE%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "line segment",
+          "url": "https://en.wikipedia.org/w/index.php?search=line%20segment"
+        }
       ]
     },
     {
@@ -71,6 +125,24 @@
         "线面关系 二面角 距离",
         "法向量 方程 点集",
         "plane"
+      ],
+      "explanation_markdown": "平面是可以向四周无限铺展的二维图形，类似没有厚度、没有边界的一张纸。空间中三个不共线点能确定一个平面；在直角坐标系中常写成 $Ax+By+Cz+D=0$，其中 $(x,y,z)$ 是平面上的点，$(A,B,C)$ 给出垂直于平面的法向方向。\n\n这个方程把所有满足同一线性关系的空间点收在一个二维面上。图中画出的四边形边框只是帮助观察，并不是平面的边界。立体几何里研究线与面、面与面的位置关系时，常要判断点是否在平面上、直线是否落在平面内，以及两个平面是否相交。平面中任意两点连成的直线仍完全落在这个平面内，这体现了它的平直性。立体图形中的底面、截面、对称面都可以看成平面的一部分；证明问题里常通过三点不共线、两相交线或平行线来说明一个平面已经确定。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平面",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E9%9D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平面",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E9%9D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "plane",
+          "url": "https://en.wikipedia.org/w/index.php?search=plane"
+        }
       ]
     },
     {
@@ -89,6 +161,24 @@
         "顶点 棱 面 底面 高",
         "二维信息 立体还原",
         "solid figure"
+      ],
+      "explanation_markdown": "空间几何体是占有三维空间的图形对象，有长、宽、高等方向上的大小。常见的棱柱、棱锥、圆柱、圆锥和球都属于这一类；对凸多面体，还常有关系 $V-E+F=2$，其中 $V,E,F$ 分别表示顶点数、棱数和面数。\n\n这个关系提醒我们，空间几何体不只看外轮廓，还要看顶点、棱和面怎样连接。高中题中常用三视图、直观图、表面积和体积来描述它。由平面图还原立体时，要分清底面、高、侧面和可见边，否则容易把二维长度当成立体中的真实距离。不同几何体的差别常体现在底面形状、侧面形状和高的定义上。表面积关注外部边界，体积关注占据空间大小，二者不能混用。还原三视图时，最好同时追踪顶点、棱和面，避免只凭某个投影视图猜形状。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "空间几何体",
+          "url": "https://www.baidu.com/s?wd=%E7%A9%BA%E9%97%B4%E5%87%A0%E4%BD%95%E4%BD%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "空间几何体",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A9%BA%E9%97%B4%E5%87%A0%E4%BD%95%E4%BD%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "solid geometry",
+          "url": "https://en.wikipedia.org/w/index.php?search=solid%20geometry"
+        }
       ]
     },
     {
@@ -107,6 +197,24 @@
         "V=Sh",
         "底面形状 prism",
         "prism"
+      ],
+      "explanation_markdown": "棱柱是由两个全等且互相平行的多边形作底面，其余侧面由平行四边形围成的多面体。它的体积可写成 $V=Sh$，其中 $S$ 是底面积，$h$ 是两底面之间的垂直距离，也就是棱柱的高。\n\n棱柱的侧棱彼此平行且相等，不会汇聚到一个顶点。按底面边数可分为三棱柱、四棱柱等；若侧棱垂直于底面，就是直棱柱。计算时，先确认哪一组全等平行面是底面，再找对应的高，这比单看图形摆放方向更可靠。直棱柱的高可等于侧棱，斜棱柱则要另找垂线距离。若底面是平行四边形、三角形或正多边形，棱柱名称也随之改变。表面积通常由两个底面积加侧面积组成，侧面积要看侧面是否为矩形。题中若给出斜棱柱，侧棱长和高并不相同，必须找到底面间的垂直距离。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "棱柱",
+          "url": "https://www.baidu.com/s?wd=%E6%A3%B1%E6%9F%B1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "棱柱",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A3%B1%E6%9F%B1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "prism",
+          "url": "https://en.wikipedia.org/w/index.php?search=prism"
+        }
       ]
     },
     {
@@ -125,6 +233,24 @@
         "V=Sh/3",
         "顶点 底面 侧棱 pyramid",
         "pyramid"
+      ],
+      "explanation_markdown": "棱锥是有一个多边形底面、所有侧面都汇聚到同一顶点的多面体。它的体积公式是 $V=\\frac13 Sh$，其中 $S$ 是底面积，$h$ 是顶点到底面所在平面的垂直距离。\n\n棱锥的侧面都是三角形，侧棱从公共顶点连到底面各顶点。公式中的高不一定等于侧棱长；只有在特殊直棱锥中，位置关系才比较整齐。辨认棱锥时抓住“一个底面、一个顶点、侧面成三角形”，就能把它和两底面平行的棱柱区分开。正棱锥还要求底面为正多边形，且顶点投影落在底面中心。棱锥按底面边数可分为三棱锥、四棱锥等，三棱锥也常叫四面体。正棱锥还要求底面是正多边形，顶点在底面中心正上方。求面积时侧面三角形的高叫斜高，和整个棱锥的高不是同一个量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "棱锥",
+          "url": "https://www.baidu.com/s?wd=%E6%A3%B1%E9%94%A5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "棱锥",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A3%B1%E9%94%A5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pyramid",
+          "url": "https://en.wikipedia.org/w/index.php?search=pyramid"
+        }
       ]
     },
     {
@@ -143,6 +269,24 @@
         "V=h(S1+S2+sqrt(S1S2))/3",
         "相似多边形 梯形侧面",
         "frustum of a pyramid"
+      ],
+      "explanation_markdown": "棱台可以看作棱锥被一个平行于底面的平面截去顶部后留下的部分。上下两个底面相似且互相平行，体积为 $V=\\frac h3(S_1+S_2+\\sqrt{S_1S_2})$，其中 $S_1,S_2$ 是两底面积，$h$ 是两底面的垂直距离。\n\n棱台的侧面通常是梯形，侧棱如果延长会相交于原来棱锥的顶点。公式里出现 $\\sqrt{S_1S_2}$，是因为两个底面相似，长度按同一比例变化，面积按比例的平方变化。判断棱台时，要看到两个相似平行底面，而不是只看形状像“被削掉的柱体”。棱台不是任意上下两个多边形拼成的形体，它要求两个底面来自同一个棱锥的平行截面，所以对应边成比例。若把侧棱延长，应能交于同一点。面积计算常要分别处理上下底面和各个梯形侧面，不能只看平均边长。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "棱台",
+          "url": "https://www.baidu.com/s?wd=%E6%A3%B1%E5%8F%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "棱台",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A3%B1%E5%8F%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "frustum of pyramid",
+          "url": "https://en.wikipedia.org/w/index.php?search=frustum%20of%20pyramid"
+        }
       ]
     },
     {
@@ -161,6 +305,24 @@
         "V=πr^2h S侧=2πrh",
         "轴截面 矩形 cylinder",
         "cylinder"
+      ],
+      "explanation_markdown": "圆柱由两个全等且平行的圆形底面和一个曲面侧面围成。体积可写成 $V=\\pi r^2h$，其中 $r$ 是底面半径，$h$ 是两个底面之间的垂直距离，$\\pi r^2$ 表示一个底面的面积。\n\n把圆柱侧面沿一条母线剪开，展开图是矩形，一边长为 $h$，另一边长为底面周长 $2\\pi r$，所以侧面积是 $2\\pi rh$。圆柱的轴截面通常是矩形，这能帮助从三视图中辨认它。它和棱柱相似，都有两个平行全等底面，只是底面从多边形换成了圆。圆柱的高是两底面之间的垂直距离，和侧面上任意一条母线等长只在直圆柱中自然成立。生活中的罐体、管道常近似圆柱；条件给出展开图时，要把矩形的一边对应到底面周长，另一边对应高。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "圆柱",
+          "url": "https://www.baidu.com/s?wd=%E5%9C%86%E6%9F%B1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "圆柱",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9C%86%E6%9F%B1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cylinder",
+          "url": "https://en.wikipedia.org/w/index.php?search=cylinder"
+        }
       ]
     },
     {
@@ -179,6 +341,24 @@
         "V=πr^2h/3",
         "r h l 直角关系",
         "cone"
+      ],
+      "explanation_markdown": "圆锥由一个圆形底面和一个不在底面内的顶点围成，侧面从圆周向顶点收拢。它的体积为 $V=\\frac13\\pi r^2h$，其中 $r$ 是底面半径，$h$ 是顶点到底面圆心所在平面的垂直距离。\n\n圆锥的母线 $l$ 是顶点到底面圆周上一点的线段，在直圆锥中满足 $l^2=r^2+h^2$。这里的 $r,h,l$ 组成轴截面中的直角三角形。圆锥和圆柱的底面都可以是圆，但圆锥只有一个顶点，体积也正好是同底同高圆柱的三分之一。计算侧面积时还要用母线，而不能直接把高当成展开后的半径。圆锥的轴是连接顶点和底面圆心的直线，直圆锥的轴垂直于底面。轴截面把圆锥切成等腰三角形，因此许多半径、高、母线问题都能回到直角三角形或等腰三角形。展开侧面时得到扇形，弧长等于底面周长。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "圆锥",
+          "url": "https://www.baidu.com/s?wd=%E5%9C%86%E9%94%A5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "圆锥",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9C%86%E9%94%A5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cone",
+          "url": "https://en.wikipedia.org/w/index.php?search=cone"
+        }
       ]
     },
     {
@@ -197,6 +377,24 @@
         "母线 高 半径差",
         "V=πh(R^2+Rr+r^2)/3",
         "frustum of a cone"
+      ],
+      "explanation_markdown": "圆台可以看作圆锥被一个平行于底面的平面截去顶部后剩下的旋转体。若上下底半径分别为 $R,r$，高为 $h$，体积为 $V=\\frac{\\pi h}{3}(R^2+Rr+r^2)$，其中 $R,r$ 对应两个圆形底面的大小。\n\n圆台有两个平行圆形底面，侧面展开后是环形扇面。母线 $l$、高 $h$ 和半径差 $R-r$ 在轴截面中满足 $l^2=h^2+(R-r)^2$。计算时不能只套圆柱的“底面积乘高”，因为上下底面积不同，公式里的三项共同反映了半径逐渐变化的过程。圆台的轴截面是等腰梯形，梯形的上下底分别对应两个底面直径。若把母线延长，可以想象它回到原来的圆锥顶点。侧面积通常与母线有关，体积则同时用到两个半径和高，所以条件中要分清半径、直径、母线和高。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "圆台",
+          "url": "https://www.baidu.com/s?wd=%E5%9C%86%E5%8F%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "圆台",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9C%86%E5%8F%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "frustum of cone",
+          "url": "https://en.wikipedia.org/w/index.php?search=frustum%20of%20cone"
+        }
       ]
     },
     {
@@ -215,6 +413,24 @@
         "S=4πr^2 V=4πr^3/3",
         "中心 半径 三维对象",
         "sphere"
+      ],
+      "explanation_markdown": "球通常指空间中到同一个定点距离不超过某个定长的所有点，球面则是距离恰好等于该定长的点集。若半径为 $r$，球的体积为 $V=\\frac43\\pi r^3$，表面积为 $S=4\\pi r^2$，其中 $r$ 是球心到球面任一点的距离。\n\n球由球心和半径完全确定，从任何方向看都具有相同的对称性。过球心的截面是最大圆，半径仍为 $r$；不过球心的平面截得较小的圆。立体几何中遇到外接球或内切球时，关键往往是先找到球心，再把各相关点到球心的距离统一成半径。球面上任意两点之间的空间直线距离叫弦长，过球心的弦是直径。球与平面相交得到圆，截面圆心是球心到平面的垂足。许多组合体问题会把球心连到顶点、切点或截面圆心，从而构造直角三角形求半径。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "球",
+          "url": "https://www.baidu.com/s?wd=%E7%90%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "球",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%90%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "sphere",
+          "url": "https://en.wikipedia.org/w/index.php?search=sphere"
+        }
       ]
     },
     {
@@ -233,6 +449,24 @@
         "可见边 遮挡边 尺寸对齐",
         "主视 左视 俯视",
         "three views"
+      ],
+      "explanation_markdown": "三视图是用三个互相垂直方向的投影来记录同一个空间几何体，常包括主视图、左视图和俯视图。若空间点为 $P(x,y,z)$，三个投影可理解为 $(x,z)$、$(y,z)$、$(x,y)$，它们分别保留不同两个方向上的坐标信息。\n\n三张图要在长、宽、高上互相对应：主视图与俯视图对齐长度，主视图与左视图对齐高度，左视图与俯视图对齐宽度。由三视图还原立体时，要同时考虑可见边和遮挡边，不能把某一张投影单独当成完整形状。它的作用是用平面图保存立体结构。主视、左视、俯视并不是三个不同物体，而是同一物体从不同方向投影的结果。实线、虚线和尺寸标注都可能携带信息。判断体积或表面积时，先由三视图恢复长宽高和凹凸结构，再选择对应几何体公式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "三视图",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%89%E8%A7%86%E5%9B%BE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "三视图",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%89%E8%A7%86%E5%9B%BE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "three views",
+          "url": "https://en.wikipedia.org/w/index.php?search=three%20views"
+        }
       ]
     },
     {
@@ -251,6 +485,24 @@
         "平行保持 长度角度变化",
         "形状 相对位置",
         "pictorial drawing"
+      ],
+      "explanation_markdown": "直观图是把平面图形或空间几何体画成便于观察的示意图，重点是表现相对位置和空间感。高中常用斜二测画法，水平长度保持不变，斜向长度常按 $y'=\\frac12 y$ 缩短，其中 $y$ 是原图中纵向长度，$y'$ 是画到斜轴后的长度。\n\n直观图一般保持平行关系，但角度和长度不一定是真实值。它适合帮助理解棱、面、底面和高的位置，却不能直接拿来量出准确边长。作图计算中，若需要计算面积或距离，应回到条件给出的真实数据和几何关系，而不是依赖图上看起来的长短。斜二测画法中，原来互相垂直的坐标轴会被画成斜交，因此图上的角度通常失真。它适合帮助看出前后、上下和遮挡关系。若条件要求真实面积，常要按还原比例换回原图，而不是直接量直观图中的长度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "直观图",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B4%E8%A7%82%E5%9B%BE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "直观图",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B4%E8%A7%82%E5%9B%BE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pictorial drawing",
+          "url": "https://en.wikipedia.org/w/index.php?search=pictorial%20drawing"
+        }
       ]
     },
     {
@@ -269,6 +521,24 @@
         "线线 线面 面面 判定",
         "同向 不交 距离保持",
         "parallel"
+      ],
+      "explanation_markdown": "平行描述两条直线、直线与平面或两个平面在给定范围内不相交并保持同一方向的位置关系。平面解析几何中，非竖直直线 $l_1:y=k_1x+b_1$ 与 $l_2:y=k_2x+b_2$ 平行时通常有 $k_1=k_2$，其中 $k_1,k_2$ 是斜率。\n\n对直线来说，平行强调方向相同或相反，而不是距离一定有多大；重合直线有时会单独处理。立体几何中，线面平行和面面平行常通过面内的平行线来判定。用向量表示时，若 $\\mathbf a=\\lambda\\mathbf b$，两个方向向量成倍数关系，也说明对应方向平行。平行关系在平面内表现为没有交点，在空间里还要注意两直线是否共面。两条直线方向相同但位置重合时，通常说它们重合而不是普通平行。证明平行时，常用同位角、内错角、向量倍数或平行线判定定理。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平行",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E8%A1%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平行",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E8%A1%8C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "parallel",
+          "url": "https://en.wikipedia.org/w/index.php?search=parallel"
+        }
       ]
     },
     {
@@ -287,6 +557,24 @@
         "面内两相交线 线面判定",
         "90° 法向量 距离",
         "perpendicular"
+      ],
+      "explanation_markdown": "垂直表示两条线、线与面或两个面形成直角的关系。对平面内两条非竖直直线，若斜率分别为 $k_1,k_2$，常用 $k_1k_2=-1$ 判断垂直，其中 $k_1,k_2$ 表示两条直线相对 $x$ 轴的倾斜程度。\n\n在向量语言中，垂直常写成 $\\mathbf a\\cdot\\mathbf b=0$，这里点乘为零表示两个方向夹角为 $90^\\circ$。线面垂直要求直线与平面内所有方向都成直角，判定时只需检查面内两条相交线。垂直关系常用于求距离、投影和高。垂直关系强调角度为直角，不要求两对象长度相等。平面几何中常通过勾股定理逆定理、圆的切线半径或斜率关系证明；立体几何中则要分清线线垂直、线面垂直和面面垂直，三者的判定条件并不相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "垂直",
+          "url": "https://www.baidu.com/s?wd=%E5%9E%82%E7%9B%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "垂直",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9E%82%E7%9B%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "perpendicular",
+          "url": "https://en.wikipedia.org/w/index.php?search=perpendicular"
+        }
       ]
     },
     {
@@ -305,6 +593,24 @@
         "平移 求夹角",
         "不共面 核心",
         "skew lines"
+      ],
+      "explanation_markdown": "异面直线是空间中既不相交、也不平行，并且不在同一平面内的两条直线。若两条直线的方向向量为 $\\mathbf u,\\mathbf v$，连接两线上点的向量为 $\\mathbf w$，常可用混合积 $[\\mathbf u,\\mathbf v,\\mathbf w]\\ne0$ 表示它们不共面。\n\n这里 $\\mathbf u,\\mathbf v$ 给出两条线的方向，$\\mathbf w$ 把两条线联系起来；混合积不为零说明三维空间中形成了非零体积。异面直线只可能出现在空间几何中，不能按平面内“相交或平行”二分。求夹角时，通常把其中一条平移到与另一条相交的位置，再看方向夹角。异面直线没有交点，也不能平移到同一平面内后仍保持原位置。判定时常先排除相交和平行，再说明不共面。求距离时通常寻找同时垂直于两条直线的公垂线段；求角时只看方向，可把一条线平移到方便位置。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "异面直线",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%82%E9%9D%A2%E7%9B%B4%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "异面直线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%82%E9%9D%A2%E7%9B%B4%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "skew lines",
+          "url": "https://en.wikipedia.org/w/index.php?search=skew%20lines"
+        }
       ]
     },
     {
@@ -323,6 +629,24 @@
         "线线关系 推出线面关系",
         "线不在面内 面内对应线",
         "line-plane parallelism"
+      ],
+      "explanation_markdown": "线面平行指一条直线与一个平面没有公共点，并且直线不在该平面内。常用判定是：若 $l\\not\\subset\\alpha$，且平面 $\\alpha$ 内有直线 $m$ 满足 $l\\parallel m$，则 $l\\parallel\\alpha$，其中 $l,m$ 是直线，$\\alpha$ 是平面。\n\n这个判定把线面关系转化为更容易证明的线线平行。若直线落在平面内，虽然不会“穿出”平面，但通常不称为线面平行。用向量看，直线方向可以由平面内某个方向表示，而直线上任一点不在平面上。棱柱侧棱与某些侧面、底面边与平行截面中常会遇到这种关系。线面平行并不是直线与平面内每条直线都平行，而是直线的方向能在平面内找到对应方向，同时直线本身不落入平面。若直线与平面有一个公共点，就会相交或在面内。证明题常借助辅助线把空间关系降成平面内的平行关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线面平行",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E9%9D%A2%E5%B9%B3%E8%A1%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线面平行",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E9%9D%A2%E5%B9%B3%E8%A1%8C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "line plane parallelism",
+          "url": "https://en.wikipedia.org/w/index.php?search=line%20plane%20parallelism"
+        }
       ]
     },
     {
@@ -341,6 +665,24 @@
         "第三面 截线同向不交",
         "距离相等 法向量同向",
         "plane-plane parallelism"
+      ],
+      "explanation_markdown": "面面平行指两个平面没有公共点，像两张方向一致、分开摆放的无限纸面。常用判定是：若平面 $\\alpha$ 内两条相交直线 $a,b$ 分别平行于平面 $\\beta$，则 $\\alpha\\parallel\\beta$，其中 $a,b$ 提供了平面 $\\alpha$ 的两个不同方向。\n\n两平面平行时，任意第三个平面若同时截它们，得到的两条交线也平行。用坐标表示时，若两个平面的法向量成倍数关系，且平面不重合，也可判断平行。面面平行常用于证明截面形状相似、计算两平面距离，以及分析棱柱上下底面的关系。两个平面平行时，它们之间的垂直距离处处相等，夹在其间的平行线段也常相等。判定时只证一个方向平行通常不够，需要一个面内两条相交线分别平行于另一个面。棱柱上下底面、平行截面都常用到这一关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "面面平行",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%A2%E9%9D%A2%E5%B9%B3%E8%A1%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "面面平行",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%A2%E9%9D%A2%E5%B9%B3%E8%A1%8C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "plane plane parallelism",
+          "url": "https://en.wikipedia.org/w/index.php?search=plane%20plane%20parallelism"
+        }
       ]
     },
     {
@@ -359,6 +701,24 @@
         "点面距离 正投影 高",
         "方向向量 法向量同向",
         "line-plane perpendicularity"
+      ],
+      "explanation_markdown": "线面垂直表示一条直线与一个平面内所有经过垂足的直线都成直角。高中常用判定是：若直线 $l$ 同时垂直于平面 $\\alpha$ 内两条相交直线 $a,b$，则 $l\\perp\\alpha$，其中 $a,b$ 的相交保证它们能确定这个平面。\n\n线面垂直把“对整个平面垂直”化成两个方向的检查。若用向量，直线方向向量与平面的法向量平行，也说明线面垂直。几何体中的高、点到平面的距离和正投影都依赖这一定义；注意侧棱看起来竖直不一定就是高，必须确认它垂直于底面。线面垂直给出的是直线与平面整体的直角关系，因此平面内过垂足的任意方向都与这条线垂直。点到平面的距离就是沿垂线量出的最短距离。证明高、投影和二面角时，找到线面垂直往往能建立关键直角。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线面垂直",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E9%9D%A2%E5%9E%82%E7%9B%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线面垂直",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E9%9D%A2%E5%9E%82%E7%9B%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "line plane perpendicularity",
+          "url": "https://en.wikipedia.org/w/index.php?search=line%20plane%20perpendicularity"
+        }
       ]
     },
     {
@@ -377,6 +737,24 @@
         "二面角 投影面积 折叠",
         "法向量 点积为零",
         "plane-plane perpendicularity"
+      ],
+      "explanation_markdown": "面面垂直指两个平面相交成直二面角。常用判定是：若平面 $\\alpha$ 内有一条直线 $l$ 满足 $l\\perp\\beta$，则 $\\alpha\\perp\\beta$，其中 $\\beta$ 是另一个平面，$l$ 提供了垂直方向。\n\n面面垂直不要求两个平面内任意直线都互相垂直，而是看它们沿交线展开时形成的二面角是否为 $90^\\circ$。用法向量表示时，若两个平面的法向量 $\\mathbf n_1\\cdot\\mathbf n_2=0$，也能判断面面垂直。折叠、投影面积和立体图形的高常借助它来建立直角三角形。面面垂直常通过二面角来理解：在交线上取一点，分别在两个面内作交线的垂线，这两条垂线的夹角若为直角，就得到直二面角。实际计算中，可把空间图形切出一个垂直于交线的截面，在截面里研究平面角。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "面面垂直",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%A2%E9%9D%A2%E5%9E%82%E7%9B%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "面面垂直",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%A2%E9%9D%A2%E5%9E%82%E7%9B%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "plane plane perpendicularity",
+          "url": "https://en.wikipedia.org/w/index.php?search=plane%20plane%20perpendicularity"
+        }
       ]
     },
     {
@@ -395,6 +773,24 @@
         "坐标倍数 数量积",
         "角 距离 共面 运算",
         "space vector"
+      ],
+      "explanation_markdown": "空间向量是带有大小和方向的量，可以把立体几何中的方向、平行、垂直和距离写成代数运算。若 $\\mathbf a=(x,y,z)$，它的长度为 $|\\mathbf a|=\\sqrt{x^2+y^2+z^2}$，其中 $x,y,z$ 分别是三个坐标方向上的分量。\n\n空间向量可以加减、数乘，也能用数量积判断角度：$\\mathbf a\\cdot\\mathbf b=x_1x_2+y_1y_2+z_1z_2$。这里两组坐标来自两个向量。立体题中，用向量能把“看不清”的空间位置转化为方程和数值，尤其适合证明平行、垂直、共面和求线面角。空间向量的三个分量分别记录前后、左右、上下方向的位移，因此一个向量就能表示从一点到另一点的空间变化。它不依赖图形画得是否逼真。把立体几何转为向量后，许多角度和距离问题会变成代数式的计算。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "空间向量",
+          "url": "https://www.baidu.com/s?wd=%E7%A9%BA%E9%97%B4%E5%90%91%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "空间向量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A9%BA%E9%97%B4%E5%90%91%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "space vector",
+          "url": "https://en.wikipedia.org/w/index.php?search=space%20vector"
+        }
       ]
     },
     {
@@ -413,6 +809,24 @@
         "距离 中点 向量坐标",
         "原点 x轴 y轴 z轴",
         "rectangular coordinate system in space"
+      ],
+      "explanation_markdown": "空间直角坐标系用三条两两垂直的数轴定位空间点，通常记为 $x$ 轴、$y$ 轴和 $z$ 轴。点 $P$ 的位置写成 $P(x,y,z)$，其中 $x,y,z$ 分别表示从原点沿三个方向的有向距离。\n\n有了坐标系，空间中的距离可写成 $PQ=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$，这里两点坐标差表示三维位移。它把立体几何问题转化为代数计算，常用于求中点、向量坐标、角度和距离。选择合适原点和坐标轴，能明显简化复杂图形。三条坐标轴的正方向通常按右手系约定，但高中题更重视互相垂直和单位长度一致。选坐标系时，可把已知垂直边放在坐标轴上，把特殊点放在原点。这样点坐标更简单，向量、距离和中点公式也更容易使用。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "空间直角坐标系",
+          "url": "https://www.baidu.com/s?wd=%E7%A9%BA%E9%97%B4%E7%9B%B4%E8%A7%92%E5%9D%90%E6%A0%87%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "空间直角坐标系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A9%BA%E9%97%B4%E7%9B%B4%E8%A7%92%E5%9D%90%E6%A0%87%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "space rectangular coordinate system",
+          "url": "https://en.wikipedia.org/w/index.php?search=space%20rectangular%20coordinate%20system"
+        }
       ]
     },
     {
@@ -431,6 +845,24 @@
         "点 斜率 截距 两点",
         "y=kx+b Ax+By+C=0",
         "equation of a line"
+      ],
+      "explanation_markdown": "直线方程是用代数式表示直线上所有点满足的条件。已知一点 $(x_0,y_0)$ 和斜率 $k$ 时，常写成 $y-y_0=k(x-x_0)$，其中 $(x,y)$ 是直线上的任意点，$k$ 表示纵向变化与横向变化的比。\n\n同一条直线可以有斜截式、点斜式、两点式和一般式等多种写法。例如 $Ax+By+C=0$ 能包含竖直线，适用范围更广。判断两个方程是否表示同一直线，不是看外形是否相同，而要看满足方程的点集是否一致；变形时也要避免乘除使方程条件发生变化。不同形式各有用途：斜截式便于读斜率和截距，点斜式便于利用已知点，两点式便于由两点建式，一般式便于讨论位置关系。方程表示的是点集，代数变形后只要点集不变，就仍是同一条直线。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "直线方程",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B4%E7%BA%BF%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "直线方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B4%E7%BA%BF%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "equation of line",
+          "url": "https://en.wikipedia.org/w/index.php?search=equation%20of%20line"
+        }
       ]
     },
     {
@@ -449,6 +881,24 @@
         "相等 同向不交 乘积-1",
         "y=kx+b k",
         "slope"
+      ],
+      "explanation_markdown": "斜率衡量一条非竖直直线相对 $x$ 轴的倾斜程度。若直线经过 $P_1(x_1,y_1)$ 和 $P_2(x_2,y_2)$，且 $x_1\\ne x_2$，则 $k=\\frac{y_2-y_1}{x_2-x_1}$，其中分子是纵坐标变化，分母是横坐标变化。\n\n斜率为正时，直线从左到右上升；斜率为负时，从左到右下降；斜率为零时是水平线。竖直线没有斜率，因为横坐标变化为 $0$ 不能作分母。在 $y=kx+b$ 中，$k$ 正是斜率，它也常用于判断两条直线平行或垂直。斜率的绝对值越大，直线越接近竖直；绝对值越小，越接近水平。它也表示函数图像每向右走一个单位，纵坐标平均改变多少。比较斜率时要保留符号，因为正负决定上升或下降，不能只看倾斜得陡不陡。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "斜率",
+          "url": "https://www.baidu.com/s?wd=%E6%96%9C%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "斜率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%96%9C%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "slope",
+          "url": "https://en.wikipedia.org/w/index.php?search=slope"
+        }
       ]
     },
     {
@@ -467,6 +917,24 @@
         "tan α=k α≠90°",
         "几何方向 k",
         "angle of inclination"
+      ],
+      "explanation_markdown": "倾斜角是直线向上的方向与 $x$ 轴正方向所成的角，通常取 $0^\\circ\\le\\alpha<180^\\circ$。当直线不竖直时，斜率和倾斜角满足 $k=\\tan\\alpha$，其中 $k$ 是斜率，$\\alpha$ 是这条直线的倾斜角。\n\n倾斜角描述单条直线相对坐标轴的方向，不是两条直线之间的夹角。水平向右的直线倾斜角为 $0^\\circ$，竖直线的倾斜角为 $90^\\circ$，但此时 $\\tan\\alpha$ 不存在，所以斜率也不存在。它把几何中的“歪斜程度”连接到代数中的 $k$。倾斜角用角度描述方向，斜率用比值描述同一件事。因为正切函数在 $90^\\circ$ 处没有定义，竖直线有倾斜角却没有斜率。两条直线夹角问题不能直接把倾斜角相减后就结束，还要取较小的非负角。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "倾斜角",
+          "url": "https://www.baidu.com/s?wd=%E5%80%BE%E6%96%9C%E8%A7%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "倾斜角",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%80%BE%E6%96%9C%E8%A7%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "angle of inclination",
+          "url": "https://en.wikipedia.org/w/index.php?search=angle%20of%20inclination"
+        }
       ]
     },
     {
@@ -485,6 +953,24 @@
         "x=0 y=0",
         "正 负 零 非长度",
         "intercept"
+      ],
+      "explanation_markdown": "截距是图形与坐标轴相交时，对应交点在坐标轴上的有向数值。直线 $y=kx+b$ 中，$b$ 是纵截距，因为令 $x=0$ 时交点为 $(0,b)$；若令 $y=0$，得到的横坐标就是横截距。\n\n截距可以为正、负或零，因此它不是普通意义上的长度。一般式直线 $Ax+By+C=0$ 中，若 $B\\ne0$，纵截距为 $-C/B$；若 $A\\ne0$，横截距为 $-C/A$。读图时要看交点落在坐标轴哪一侧，不能把“离原点多远”直接当作截距。纵截距描述图像穿过 $y$ 轴的位置，横截距描述穿过 $x$ 轴的位置。它们是有向数，可以帮助快速画出直线草图。若直线经过原点，两个截距都可能为零；若直线平行某条坐标轴，对应截距的讨论要特别小心。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "截距",
+          "url": "https://www.baidu.com/s?wd=%E6%88%AA%E8%B7%9D%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "截距",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%88%AA%E8%B7%9D"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "intercept",
+          "url": "https://en.wikipedia.org/w/index.php?search=intercept"
+        }
       ]
     },
     {
@@ -503,6 +989,24 @@
         "(x-a)^2+(y-b)^2=r^2",
         "切线 弦 中心角 距离",
         "circle"
+      ],
+      "explanation_markdown": "圆是平面内到同一个定点距离相等的所有点组成的曲线。若圆心为 $O(a,b)$，半径为 $r$，圆的标准方程为 $(x-a)^2+(y-b)^2=r^2$，其中 $(x,y)$ 是圆上的任意点，$r$ 是点到圆心的固定距离。\n\n圆本身是边界曲线，不包括圆内所有点；包括内部时通常说圆盘或圆面。圆心和半径完全确定圆的位置和大小。切线、弦、半径和圆心角都围绕“到圆心等距”这一性质展开，遇到圆的条件时，连圆心到相关点的半径常能构造出等腰三角形或直角关系。圆上所有半径相等，这使垂径定理、切线性质和圆周角定理能够成立。圆内点到圆心距离小于半径，圆外点大于半径。解析几何中，判断点与圆的位置关系常比较 $(x-a)^2+(y-b)^2$ 与 $r^2$ 的大小。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "圆",
+          "url": "https://www.baidu.com/s?wd=%E5%9C%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "圆",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9C%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "circle",
+          "url": "https://en.wikipedia.org/w/index.php?search=circle"
+        }
       ]
     },
     {
@@ -521,6 +1025,24 @@
         "x^2+y^2+Dx+Ey+F=0",
         "配方 中心 半径",
         "equation of a circle"
+      ],
+      "explanation_markdown": "圆的方程是用坐标条件表示一条到定点等距的平面曲线。标准式为 $(x-a)^2+(y-b)^2=r^2$，其中 $(a,b)$ 是圆心，$r>0$ 是半径，$(x,y)$ 表示满足条件的圆上点。\n\n标准式展开后可写成 $x^2+y^2+Dx+Ey+F=0$，这里 $D,E,F$ 是常数。通过配方可把一般式还原成圆心和半径；若配方后右边不为正数，就不能表示真实圆。条件给出直径端点、三点或切线条件时，实质都是在确定圆心位置与半径大小。圆的方程把“到圆心距离为半径”翻译成坐标形式，因此每一项都有几何来源。若条件给出切线，常利用圆心到切线的距离等于半径；若给出弦，常连接圆心到弦中点，得到垂直关系和直角三角形。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "圆的方程",
+          "url": "https://www.baidu.com/s?wd=%E5%9C%86%E7%9A%84%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "圆的方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9C%86%E7%9A%84%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "equation of circle",
+          "url": "https://en.wikipedia.org/w/index.php?search=equation%20of%20circle"
+        }
       ]
     },
     {
@@ -539,6 +1061,24 @@
         "焦点 准线 离心率 标准方程",
         "定点 定线 距离比",
         "conic section"
+      ],
+      "explanation_markdown": "圆锥曲线是平面截取圆锥面得到的一类曲线，高中主要研究椭圆、双曲线和抛物线。统一的焦点准线定义可写成 $\\frac{PF}{d}=e$，其中 $PF$ 是点 $P$ 到焦点 $F$ 的距离，$d$ 是点到准线的距离，$e$ 是离心率。\n\n离心率决定曲线类型：$0<e<1$ 得到椭圆，$e=1$ 得到抛物线，$e>1$ 得到双曲线。不同标准方程只是把同一类几何关系放到坐标系中表达。学习圆锥曲线时，焦点、准线、轴、顶点和离心率比单纯背方程更能说明曲线为什么长成那样。从截面角度看，平面切圆锥面的角度不同，会得到不同曲线；从焦点准线角度看，离心率统一控制曲线类型。高中学习时，标准方程、几何定义和图像特征要互相印证，不能只把三类曲线当成孤立公式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "圆锥曲线",
+          "url": "https://www.baidu.com/s?wd=%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "圆锥曲线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "conic section",
+          "url": "https://en.wikipedia.org/w/index.php?search=conic%20section"
+        }
       ]
     },
     {
@@ -557,6 +1097,24 @@
         "长轴 短轴 焦距 离心率",
         "0<e<1",
         "ellipse"
+      ],
+      "explanation_markdown": "椭圆是平面内到两个固定点的距离之和为常数的点的轨迹，这两个固定点叫焦点。中心在原点、长轴在 $x$ 轴上时，标准方程为 $\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1$，其中 $a>b>0$，$a,b$ 分别是半长轴和半短轴。\n\n两个焦点到中心的距离记为 $c$，满足 $c^2=a^2-b^2$，离心率为 $e=c/a$。这里 $e$ 越接近 $0$，椭圆越接近圆；$e$ 越接近 $1$，形状越扁。椭圆是封闭曲线，强调距离和保持不变，这和双曲线的距离差定义不同。椭圆中长轴端点、短轴端点和焦点都落在对称轴上，中心是两条轴的交点。若焦点在 $y$ 轴上，标准方程中 $a^2$ 会放在 $y^2$ 下方。应用题中常见的轨迹条件是到两定点距离和不变，先识别这点再建方程。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "椭圆",
+          "url": "https://www.baidu.com/s?wd=%E6%A4%AD%E5%9C%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "椭圆",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A4%AD%E5%9C%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ellipse",
+          "url": "https://en.wikipedia.org/w/index.php?search=ellipse"
+        }
       ]
     },
     {
@@ -575,6 +1133,24 @@
         "两分支 渐近线",
         "e>1",
         "hyperbola"
+      ],
+      "explanation_markdown": "双曲线是平面内到两个固定点距离之差的绝对值为常数的点的轨迹。中心在原点、实轴在 $x$ 轴上时，标准方程为 $\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1$，其中 $a,b>0$，$(x,y)$ 是曲线上的点。\n\n双曲线有两个分支，并沿渐近线靠近而不相交；上述方程的渐近线为 $y=\\pm\\frac ba x$。焦距参数满足 $c^2=a^2+b^2$，离心率 $e=c/a>1$。它和椭圆同样有两个焦点，但椭圆固定距离和，双曲线固定距离差，这是最核心的区别。双曲线的实轴决定两个分支开口方向，虚轴帮助确定渐近线斜率。若焦点在 $y$ 轴上，标准式中正项会换到 $y^2/a^2$。它的渐近线不是曲线的一部分，却能描述分支远处的走向，是画图和求参数的重要依据。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "双曲线",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8C%E6%9B%B2%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "双曲线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8C%E6%9B%B2%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hyperbola",
+          "url": "https://en.wikipedia.org/w/index.php?search=hyperbola"
+        }
       ]
     },
     {
@@ -593,6 +1169,24 @@
         "顶点 对称轴 焦点 准线",
         "二次函数 切线 焦半径",
         "parabola"
+      ],
+      "explanation_markdown": "抛物线是平面内到一个固定点和一条固定直线距离相等的点的轨迹，固定点叫焦点，固定直线叫准线。常见标准式为 $y^2=2px$，其中 $p\\ne0$ 决定开口方向和焦点、准线的位置，$(x,y)$ 是曲线上的点。\n\n在这个写法中，焦点为 $(p/2,0)$，准线为 $x=-p/2$。抛物线只有一个焦点，离心率等于 $1$，图像向一个方向无限延伸。二次函数 $y=ax^2+bx+c$ 的图像也是抛物线，只是常以竖直方向开口出现；焦点准线定义能解释它的几何来源。抛物线的顶点位于焦点到准线垂线段的中点，焦准距决定开口宽窄。标准式不同，开口可能向右、向左、向上或向下。二次函数图像的顶点式适合看最值，而焦点准线式适合处理到点和到直线距离相等的轨迹问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "抛物线",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%9B%E7%89%A9%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "抛物线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%9B%E7%89%A9%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "parabola",
+          "url": "https://en.wikipedia.org/w/index.php?search=parabola"
+        }
       ]
     },
     {
@@ -611,6 +1205,24 @@
         "准线 离心率 焦半径",
         "c 中心距离",
         "focus"
+      ],
+      "explanation_markdown": "焦点是圆锥曲线定义中参与距离关系的固定点。椭圆和双曲线通常有两个焦点，抛物线有一个焦点；在椭圆标准式中常有 $c^2=a^2-b^2$，其中 $c$ 是中心到焦点的距离，$a,b$ 是半轴长度。\n\n焦点一般不一定在曲线上，它是用来规定点集的参照点。椭圆上任一点到两个焦点的距离和为 $2a$，双曲线上任一点到两个焦点的距离差的绝对值为 $2a$。这些关系里的焦点决定了曲线的形状和位置，也常与焦半径、准线和离心率一起出现。焦点的位置通常由参数 $c$ 或 $p$ 决定，不同曲线的焦点个数和作用不同。椭圆中两焦点在内部，双曲线中焦点位于两分支之间的轴线上，抛物线只有一个焦点。许多距离和、距离差、反射性质都围绕焦点展开。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "焦点",
+          "url": "https://www.baidu.com/s?wd=%E7%84%A6%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "焦点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%84%A6%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "focus",
+          "url": "https://en.wikipedia.org/w/index.php?search=focus"
+        }
       ]
     },
     {
@@ -629,6 +1241,24 @@
         "焦点 几何定义 标准方程",
         "距离比 e",
         "directrix"
+      ],
+      "explanation_markdown": "准线是圆锥曲线焦点准线定义中的固定直线，用来和焦点距离作比较。统一关系可写成 $PF=e\\,d$，其中 $PF$ 是点 $P$ 到焦点 $F$ 的距离，$d$ 是点 $P$ 到准线的距离，$e$ 是离心率。\n\n准线通常不是曲线的一部分，却决定了曲线上点应满足的距离条件。抛物线中 $e=1$，所以点到焦点和到准线的距离相等；椭圆与双曲线中，准线配合焦点和离心率也能给出同一类曲线。使用准线时要取点到直线的垂直距离，而不是到准线上某个随意点的距离。准线与焦点配合时，可以不用先知道曲线方程，也能定义点的轨迹。对抛物线，焦点到准线的距离越大，开口越宽。计算点到准线距离时要作垂线，若准线是 $x=a$ 或 $y=b$，距离就能直接由坐标差表示。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "准线",
+          "url": "https://www.baidu.com/s?wd=%E5%87%86%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "准线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%86%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "directrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=directrix"
+        }
       ]
     },
     {
@@ -647,6 +1277,24 @@
         "椭圆 0<e<1 双曲线 e>1",
         "接近0 接近圆形",
         "eccentricity"
+      ],
+      "explanation_markdown": "离心率是圆锥曲线形状的一个无单位比值，用来描述曲线偏离圆或张开的程度。对中心圆锥曲线常写成 $e=\\frac ca$，其中 $c$ 是中心到焦点的距离，$a$ 是半长轴或实半轴长度。\n\n椭圆满足 $0<e<1$，$e$ 越小越接近圆；双曲线满足 $e>1$，数值越大开口越明显；抛物线的离心率为 $1$。在焦点准线定义中，也可用 $e=\\frac{PF}{d}$，其中 $PF$ 是到焦点距离，$d$ 是到准线距离。它反映形状，不表示某条具体线段的长度。离心率只与曲线形状有关，平移或旋转曲线不会改变它。圆可以看成离心率为 $0$ 的特殊椭圆，而高中椭圆通常讨论 $0<e<1$。在实际读题时，给出 $e$ 往往能立即判断曲线类型并联系 $a,b,c$ 的关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "离心率",
+          "url": "https://www.baidu.com/s?wd=%E7%A6%BB%E5%BF%83%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "离心率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A6%BB%E5%BF%83%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "eccentricity",
+          "url": "https://en.wikipedia.org/w/index.php?search=eccentricity"
+        }
       ]
     }
   ]

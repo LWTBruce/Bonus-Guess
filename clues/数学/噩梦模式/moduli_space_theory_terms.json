@@ -1,0 +1,2405 @@
+{
+  "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+  "entries": [
+    {
+      "chinese_name": "模空间",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "模空间是把某类几何对象按同构组织成参数对象的空间或栈。常写成 $F(S)={families over S}/isom$，其中S 是测试基，F 是模函子。\n\n点只给同构类，真正的模问题还要记录族如何在任意基上变化。模空间说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。模空间还要说明对象族的基底、稳定性和自同构处理方式；模空间在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。模空间的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。模空间的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "模空间",
+          "url": "https://www.baidu.com/s?wd=%E6%A8%A1%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "模空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A8%A1%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "moduli space",
+          "url": "https://en.wikipedia.org/w/index.php?search=moduli%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "粗模空间",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "粗模空间是只在几何点层面代表同构类的代数空间。常写成 $pi:X_stack\\toM$，其中X_stack 是模栈，M 是粗模空间。\n\n它通常没有普适族，自同构信息被压缩，区别于细模空间和栈。粗模空间说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。粗模空间还要说明对象族的基底、稳定性和自同构处理方式；粗模空间在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。粗模空间的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。粗模空间的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "粗模空间",
+          "url": "https://www.baidu.com/s?wd=%E7%B2%97%E6%A8%A1%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "粗模空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B2%97%E6%A8%A1%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "coarse module space",
+          "url": "https://en.wikipedia.org/w/index.php?search=coarse%20module%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "细模空间",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "细模空间是真正代表模函子的空间并携带普适族。常写成 $F \\simeq \\operatorname{Hom}(-,M)$，其中F 是模函子，M 是代表对象。\n\n它比粗模空间更强，要求每个族都由普适族唯一拉回得到。细模空间说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。细模空间还要说明对象族的基底、稳定性和自同构处理方式；细模空间在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。细模空间的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。细模空间的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "细模空间",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%86%E6%A8%A1%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "细模空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%86%E6%A8%A1%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fine mold space",
+          "url": "https://en.wikipedia.org/w/index.php?search=fine%20mold%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "模函子",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "模函子是把测试基送到其上对象族同构类的函子。常写成 $F:S \\to groupoids or sets$，其中S 是测试概形或空间。\n\n它先于模空间而存在，代表性问题正是判断它能否由空间或栈表示。模函子说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。模函子还要说明对象族的基底、稳定性和自同构处理方式；模函子在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。模函子的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。模函子的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "模函子",
+          "url": "https://www.baidu.com/s?wd=%E6%A8%A1%E5%87%BD%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "模函子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A8%A1%E5%87%BD%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "module functor",
+          "url": "https://en.wikipedia.org/w/index.php?search=module%20functor"
+        }
+      ]
+    },
+    {
+      "chinese_name": "表示函子",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "表示函子是由某个对象通过Hom函子给出的模函子。常写成 $F(-)=\\operatorname{Hom}(-,M)$，其中M 是代表对象。\n\n它给出细模空间的判据，区别于只具有自然变换到粗模空间的情形。表示函子说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。表示函子还要说明对象族的基底、稳定性和自同构处理方式；表示函子在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。表示函子的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。表示函子的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "表示函子",
+          "url": "https://www.baidu.com/s?wd=%E8%A1%A8%E7%A4%BA%E5%87%BD%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "表示函子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A1%A8%E7%A4%BA%E5%87%BD%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "representation functor",
+          "url": "https://en.wikipedia.org/w/index.php?search=representation%20functor"
+        }
+      ]
+    },
+    {
+      "chinese_name": "形变函子",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "形变函子是把小Artin代数送到对象无穷小形变集合或群胚的函子。常写成 $Def_X(A)$，其中A 是Artin局部代数，X 是被形变对象。\n\n它描述形式邻域，不等同于完整全局模空间。形变函子说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。形变函子还要说明对象族的基底、稳定性和自同构处理方式；形变函子在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。形变函子的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。形变函子的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "形变函子",
+          "url": "https://www.baidu.com/s?wd=%E5%BD%A2%E5%8F%98%E5%87%BD%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "形变函子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BD%A2%E5%8F%98%E5%87%BD%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "deformation functor",
+          "url": "https://en.wikipedia.org/w/index.php?search=deformation%20functor"
+        }
+      ]
+    },
+    {
+      "chinese_name": "泛族",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "泛族是在模空间上定义并生成所有被参数化对象的族。常写成 $U\\toM$，其中M 是模空间，U 是族的总空间。\n\n若每个族唯一拉回它，泛族就是普适族；粗模空间常缺少这种对象。泛族说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。泛族还要说明对象族的基底、稳定性和自同构处理方式；泛族在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。泛族的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。泛族的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "泛族",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%9B%E6%97%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "泛族",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%9B%E6%97%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "panethnic",
+          "url": "https://en.wikipedia.org/w/index.php?search=panethnic"
+        }
+      ]
+    },
+    {
+      "chinese_name": "普适族",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "普适族是满足任意族唯一由其拉回得到的族。常写成 $X_S \\simeq S \\times_M U$，其中U->M 是普适族，S->M 给出参数映射。\n\n它是细模空间的核心数据，和仅存在到粗模空间的分类映射不同。普适族说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。普适族还要说明对象族的基底、稳定性和自同构处理方式；普适族在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。普适族的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。普适族的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "普适族",
+          "url": "https://www.baidu.com/s?wd=%E6%99%AE%E9%80%82%E6%97%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "普适族",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%99%AE%E9%80%82%E6%97%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "universal tribe",
+          "url": "https://en.wikipedia.org/w/index.php?search=universal%20tribe"
+        }
+      ]
+    },
+    {
+      "chinese_name": "稳定曲线模空间",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "稳定曲线模空间是参数化带有限自同构的节点稳定曲线的栈或空间。常写成 $M_gbar$，其中g 是亏格，上横线表示包含稳定退化。\n\n它通过允许节点曲线实现紧化，不把所有奇异曲线都纳入。稳定曲线模空间说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。稳定曲线模空间还要说明对象族的基底、稳定性和自同构处理方式；稳定曲线模空间在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。稳定曲线模空间的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳定曲线模空间",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E5%AE%9A%E6%9B%B2%E7%BA%BF%E6%A8%A1%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳定曲线模空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E5%AE%9A%E6%9B%B2%E7%BA%BF%E6%A8%A1%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stable curve moduli space",
+          "url": "https://en.wikipedia.org/w/index.php?search=stable%20curve%20moduli%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "标点曲线模空间",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "标点曲线模空间是参数化带n个标记点的稳定曲线。常写成 $M_{g,n}$，其中g 是亏格，n 是标点数。\n\n稳定条件要求每个有理分量有足够特殊点，从而自同构有限。标点曲线模空间说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。标点曲线模空间还要说明对象族的基底、稳定性和自同构处理方式；标点曲线模空间在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。标点曲线模空间的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。标点曲线模空间的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "标点曲线模空间",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%87%E7%82%B9%E6%9B%B2%E7%BA%BF%E6%A8%A1%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "标点曲线模空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%87%E7%82%B9%E6%9B%B2%E7%BA%BF%E6%A8%A1%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "punctuated curve modulus space",
+          "url": "https://en.wikipedia.org/w/index.php?search=punctuated%20curve%20modulus%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "德利涅芒福德紧化",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "德利涅芒福德紧化是把光滑标点曲线模空间紧化为稳定曲线模栈。常写成 $M_{g,n} \\subset Mbar_{g,n}$，其中边界点是节点稳定曲线。\n\n它区别于任意射影闭包，边界对象有明确的稳定曲线解释。德利涅芒福德紧化把子概形、商丛或阿贝尔簇组织成几何参数空间，极化、水平结构和Hecke对应会改变模问题；这些附加数据不能从闭点集合中恢复。德利涅芒福德紧化还要说明对象族的基底、稳定性和自同构处理方式；德利涅芒福德紧化在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。德利涅芒福德紧化的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。德利涅芒福德紧化的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "德利涅芒福德紧化",
+          "url": "https://www.baidu.com/s?wd=%E5%BE%B7%E5%88%A9%E6%B6%85%E8%8A%92%E7%A6%8F%E5%BE%B7%E7%B4%A7%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "德利涅芒福德紧化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BE%B7%E5%88%A9%E6%B6%85%E8%8A%92%E7%A6%8F%E5%BE%B7%E7%B4%A7%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "deligne mumford compactification",
+          "url": "https://en.wikipedia.org/w/index.php?search=deligne%20mumford%20compactification"
+        }
+      ]
+    },
+    {
+      "chinese_name": "稳定映射模空间",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "稳定映射模空间是参数化从稳定曲线到靶空间的映射。常写成 $Mbar_{g,n}(X,beta)$，其中X 是靶，beta 是曲线类。\n\n它比曲线模空间多了映射数据，是Gromov-Witten不变量的承载空间。稳定映射模空间说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。稳定映射模空间还要说明对象族的基底、稳定性和自同构处理方式；稳定映射模空间在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。稳定映射模空间的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。稳定映射模空间的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳定映射模空间",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E5%AE%9A%E6%98%A0%E5%B0%84%E6%A8%A1%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳定映射模空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E5%AE%9A%E6%98%A0%E5%B0%84%E6%A8%A1%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stable map moduli space",
+          "url": "https://en.wikipedia.org/w/index.php?search=stable%20map%20moduli%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "格罗莫夫威滕不变量",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "格罗莫夫威滕不变量是由稳定映射虚基本类积分得到的枚举不变量。常写成 $<gamma_1,...,gamma_n>_{g,beta}=int_[M]^vir prod ev_i^*gamma_i$，其中ev_i 是评价映射，gamma_i 是上同调类。\n\n它计数曲线时使用虚类修正，和普通交点数不同。格罗莫夫威滕不变量服务于曲线或映射的紧化和计数，节点、接触阶与障碍理论决定虚维数；它记录的是族和退化行为，而不是单个光滑对象。格罗莫夫威滕不变量还要说明对象族的基底、稳定性和自同构处理方式；格罗莫夫威滕不变量在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。格罗莫夫威滕不变量的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。格罗莫夫威滕不变量的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "格罗莫夫威滕不变量",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%BC%E7%BD%97%E8%8E%AB%E5%A4%AB%E5%A8%81%E6%BB%95%E4%B8%8D%E5%8F%98%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "格罗莫夫威滕不变量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%BC%E7%BD%97%E8%8E%AB%E5%A4%AB%E5%A8%81%E6%BB%95%E4%B8%8D%E5%8F%98%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gromov witten invariant",
+          "url": "https://en.wikipedia.org/w/index.php?search=gromov%20witten%20invariant"
+        }
+      ]
+    },
+    {
+      "chinese_name": "量子上同调",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "量子上同调是用Gromov-Witten不变量变形普通上同调乘法的环。常写成 $a*b=\\sum_beta <a,b,\\phi_i>_beta q^beta phi^i$，其中q^beta 记录曲线类。\n\n它保留普通加法结构，但乘法含有有理曲线计数。量子上同调服务于曲线或映射的紧化和计数，节点、接触阶与障碍理论决定虚维数；它记录的是族和退化行为，而不是单个光滑对象。量子上同调还要说明对象族的基底、稳定性和自同构处理方式；量子上同调在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。量子上同调的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。量子上同调的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子上同调",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E4%B8%8A%E5%90%8C%E8%B0%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子上同调",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E4%B8%8A%E5%90%8C%E8%B0%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum cohomology",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20cohomology"
+        }
+      ]
+    },
+    {
+      "chinese_name": "诺维科夫环",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "诺维科夫环是记录曲线类能量或次数的形式系数环。常写成 $\\sum a_beta q^beta$，其中beta 是有效曲线类，q^beta 是形式变量。\n\n它保证量子乘积中的无限求和有意义。诺维科夫环服务于曲线或映射的紧化和计数，节点、接触阶与障碍理论决定虚维数；它记录的是族和退化行为，而不是单个光滑对象。诺维科夫环还要说明对象族的基底、稳定性和自同构处理方式；诺维科夫环在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。诺维科夫环的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。诺维科夫环的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "诺维科夫环",
+          "url": "https://www.baidu.com/s?wd=%E8%AF%BA%E7%BB%B4%E7%A7%91%E5%A4%AB%E7%8E%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "诺维科夫环",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%AF%BA%E7%BB%B4%E7%A7%91%E5%A4%AB%E7%8E%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "novikov ring",
+          "url": "https://en.wikipedia.org/w/index.php?search=novikov%20ring"
+        }
+      ]
+    },
+    {
+      "chinese_name": "虚基本类",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "虚基本类是由障碍理论在模空间上构造的代数同调类。常写成 $[M]^vir$，其中M 是可能奇异且维数不纯的模空间。\n\n它替代普通基本类，使枚举积分具有正确虚维数。虚基本类服务于曲线或映射的紧化和计数，节点、接触阶与障碍理论决定虚维数；它记录的是族和退化行为，而不是单个光滑对象。虚基本类还要说明对象族的基底、稳定性和自同构处理方式；虚基本类在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。虚基本类的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。虚基本类的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "虚基本类",
+          "url": "https://www.baidu.com/s?wd=%E8%99%9A%E5%9F%BA%E6%9C%AC%E7%B1%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "虚基本类",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%99%9A%E5%9F%BA%E6%9C%AC%E7%B1%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "virtual base class",
+          "url": "https://en.wikipedia.org/w/index.php?search=virtual%20base%20class"
+        }
+      ]
+    },
+    {
+      "chinese_name": "完美障碍理论",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "完美障碍理论是用二项完美复形控制模空间形变和障碍的数据。常写成 $E^bullet \\to L_M$，其中E^bullet 是振幅[-1,0]复形，L_M 是余切复形。\n\n它给出虚基本类，区别于只给切空间的一阶形变理论。完美障碍理论服务于曲线或映射的紧化和计数，节点、接触阶与障碍理论决定虚维数；它记录的是族和退化行为，而不是单个光滑对象。完美障碍理论还要说明对象族的基底、稳定性和自同构处理方式；完美障碍理论在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。完美障碍理论的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。完美障碍理论的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "完美障碍理论",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%8C%E7%BE%8E%E9%9A%9C%E7%A2%8D%E7%90%86%E8%AE%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "完美障碍理论",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%8C%E7%BE%8E%E9%9A%9C%E7%A2%8D%E7%90%86%E8%AE%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "perfect disorder theory",
+          "url": "https://en.wikipedia.org/w/index.php?search=perfect%20disorder%20theory"
+        }
+      ]
+    },
+    {
+      "chinese_name": "相对稳定映射",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "相对稳定映射是允许映射相对某个除子有指定接触阶的稳定映射理论。常写成 $f:(C,p_i)\\to(X,D)$，其中D 是相对除子，接触阶记录边界条件。\n\n它用于退化公式，和绝对稳定映射相比多了边界接触数据。相对稳定映射服务于曲线或映射的紧化和计数，节点、接触阶与障碍理论决定虚维数；它记录的是族和退化行为，而不是单个光滑对象。相对稳定映射还要说明对象族的基底、稳定性和自同构处理方式；相对稳定映射在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。相对稳定映射的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。相对稳定映射的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相对稳定映射",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E5%AF%B9%E7%A8%B3%E5%AE%9A%E6%98%A0%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相对稳定映射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E5%AF%B9%E7%A8%B3%E5%AE%9A%E6%98%A0%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "relative stable map",
+          "url": "https://en.wikipedia.org/w/index.php?search=relative%20stable%20map"
+        }
+      ]
+    },
+    {
+      "chinese_name": "对数稳定映射",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "对数稳定映射是在对数几何中处理退化和接触条件的稳定映射。常写成 $f:C_log \\to X_log$，其中C_log 和 X_log 带对数结构。\n\n它把相对条件内化为对数光滑结构，区别于只在边界上加标记。对数稳定映射服务于曲线或映射的紧化和计数，节点、接触阶与障碍理论决定虚维数；它记录的是族和退化行为，而不是单个光滑对象。对数稳定映射还要说明对象族的基底、稳定性和自同构处理方式；对数稳定映射在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。对数稳定映射的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。对数稳定映射的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对数稳定映射",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E6%95%B0%E7%A8%B3%E5%AE%9A%E6%98%A0%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对数稳定映射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E6%95%B0%E7%A8%B3%E5%AE%9A%E6%98%A0%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "logarithmically stable mapping",
+          "url": "https://en.wikipedia.org/w/index.php?search=logarithmically%20stable%20mapping"
+        }
+      ]
+    },
+    {
+      "chinese_name": "拟映射模空间",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "拟映射模空间是允许基点的曲线到GIT商的广义映射模空间。常写成 $(P,u)$，其中P 是主G丛，u 是截面并允许有限基点。\n\n它与稳定映射不同，紧化方式由基点和稳定参数控制。拟映射模空间说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。拟映射模空间还要说明对象族的基底、稳定性和自同构处理方式；拟映射模空间在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。拟映射模空间的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。拟映射模空间的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拟映射模空间",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%9F%E6%98%A0%E5%B0%84%E6%A8%A1%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拟映射模空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%9F%E6%98%A0%E5%B0%84%E6%A8%A1%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quasi mapping moduli space",
+          "url": "https://en.wikipedia.org/w/index.php?search=quasi%20mapping%20moduli%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "稳定商",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "稳定商是用曲线上的商层紧化映射到Grassmann簇的模空间。常写成 $O_C^n \\to Q$，其中Q 是满足稳定条件的商层。\n\n它替代映射本身来记录目标数据，和stable maps紧化不同。稳定商服务于曲线或映射的紧化和计数，节点、接触阶与障碍理论决定虚维数；它记录的是族和退化行为，而不是单个光滑对象。稳定商还要说明对象族的基底、稳定性和自同构处理方式；稳定商在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。稳定商的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。稳定商的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳定商",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E5%AE%9A%E5%95%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳定商",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E5%AE%9A%E5%95%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stable quotient",
+          "url": "https://en.wikipedia.org/w/index.php?search=stable%20quotient"
+        }
+      ]
+    },
+    {
+      "chinese_name": "希尔伯特概形",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "希尔伯特概形是参数化固定Hilbert多项式闭子概形的概形。常写成 $Hilb_P(X)$，其中P 是Hilbert多项式，X 是 ambient 空间。\n\n它保留子概形结构而非只记录点集，是许多模空间构造的基础。希尔伯特概形把子概形、商丛或阿贝尔簇组织成几何参数空间，极化、水平结构和Hecke对应会改变模问题；这些附加数据不能从闭点集合中恢复。希尔伯特概形还要说明对象族的基底、稳定性和自同构处理方式；希尔伯特概形在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。希尔伯特概形的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。希尔伯特概形的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "希尔伯特概形",
+          "url": "https://www.baidu.com/s?wd=%E5%B8%8C%E5%B0%94%E4%BC%AF%E7%89%B9%E6%A6%82%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "希尔伯特概形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B8%8C%E5%B0%94%E4%BC%AF%E7%89%B9%E6%A6%82%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hilbert profile",
+          "url": "https://en.wikipedia.org/w/index.php?search=hilbert%20profile"
+        }
+      ]
+    },
+    {
+      "chinese_name": "昆特概形",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "昆特概形是参数化固定Hilbert多项式商层的概形。常写成 $Quot(E,P)$，其中E 是给定层，P 是商层的Hilbert多项式。\n\n它是构造向量丛和稳定商模空间的标准参数空间。昆特概形把子概形、商丛或阿贝尔簇组织成几何参数空间，极化、水平结构和Hecke对应会改变模问题；这些附加数据不能从闭点集合中恢复。昆特概形还要说明对象族的基底、稳定性和自同构处理方式；昆特概形在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。昆特概形的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。昆特概形的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "昆特概形",
+          "url": "https://www.baidu.com/s?wd=%E6%98%86%E7%89%B9%E6%A6%82%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "昆特概形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%98%86%E7%89%B9%E6%A6%82%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quint outline",
+          "url": "https://en.wikipedia.org/w/index.php?search=quint%20outline"
+        }
+      ]
+    },
+    {
+      "chinese_name": "皮卡概形",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "皮卡概形是参数化线丛或可逆层的群概形。常写成 $Pic_{X/S}$，其中X->S 是族，点对应纤维上线丛。\n\n它只处理秩一层，和Jacobian在曲线情形密切相关。皮卡概形把子概形、商丛或阿贝尔簇组织成几何参数空间，极化、水平结构和Hecke对应会改变模问题；这些附加数据不能从闭点集合中恢复。皮卡概形还要说明对象族的基底、稳定性和自同构处理方式；皮卡概形在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。皮卡概形的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。皮卡概形的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "皮卡概形",
+          "url": "https://www.baidu.com/s?wd=%E7%9A%AE%E5%8D%A1%E6%A6%82%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "皮卡概形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9A%AE%E5%8D%A1%E6%A6%82%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pickup truck outline",
+          "url": "https://en.wikipedia.org/w/index.php?search=pickup%20truck%20outline"
+        }
+      ]
+    },
+    {
+      "chinese_name": "阿尔巴内塞簇",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "阿尔巴内塞簇是从簇到阿贝尔簇的普适映射目标。常写成 $alb_X:X\\toAlb(X)$，其中Alb(X) 是阿贝尔簇，alb_X 是普适映射。\n\n它对映射到阿贝尔簇具有泛性质，和Picard簇互为对偶图像。阿尔巴内塞簇把子概形、商丛或阿贝尔簇组织成几何参数空间，极化、水平结构和Hecke对应会改变模问题；这些附加数据不能从闭点集合中恢复。阿尔巴内塞簇还要说明对象族的基底、稳定性和自同构处理方式；阿尔巴内塞簇在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。阿尔巴内塞簇的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。阿尔巴内塞簇的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阿尔巴内塞簇",
+          "url": "https://www.baidu.com/s?wd=%E9%98%BF%E5%B0%94%E5%B7%B4%E5%86%85%E5%A1%9E%E7%B0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阿尔巴内塞簇",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%BF%E5%B0%94%E5%B7%B4%E5%86%85%E5%A1%9E%E7%B0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "albanese cluster",
+          "url": "https://en.wikipedia.org/w/index.php?search=albanese%20cluster"
+        }
+      ]
+    },
+    {
+      "chinese_name": "雅可比簇",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "雅可比簇是曲线次数零线丛的Picard簇。常写成 $Jac(C)=Pic^0(C)$，其中C 是光滑射影曲线。\n\n它是曲线的阿贝尔簇不变量，区别于完整曲线模空间。雅可比簇把子概形、商丛或阿贝尔簇组织成几何参数空间，极化、水平结构和Hecke对应会改变模问题；这些附加数据不能从闭点集合中恢复。雅可比簇还要说明对象族的基底、稳定性和自同构处理方式；雅可比簇在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。雅可比簇的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。雅可比簇的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "雅可比簇",
+          "url": "https://www.baidu.com/s?wd=%E9%9B%85%E5%8F%AF%E6%AF%94%E7%B0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "雅可比簇",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9B%85%E5%8F%AF%E6%AF%94%E7%B0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "jacobian cluster",
+          "url": "https://en.wikipedia.org/w/index.php?search=jacobian%20cluster"
+        }
+      ]
+    },
+    {
+      "chinese_name": "普里姆簇",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "普里姆簇是覆盖曲线范数映射核的连通分量。常写成 $Prym(C/D)=ker Nm^0$，其中Nm 是Jacobian间范数映射。\n\n它从覆盖数据中提取阿贝尔簇，常用于研究曲线模空间。普里姆簇把子概形、商丛或阿贝尔簇组织成几何参数空间，极化、水平结构和Hecke对应会改变模问题；这些附加数据不能从闭点集合中恢复。普里姆簇还要说明对象族的基底、稳定性和自同构处理方式；普里姆簇在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。普里姆簇的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。普里姆簇的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "普里姆簇",
+          "url": "https://www.baidu.com/s?wd=%E6%99%AE%E9%87%8C%E5%A7%86%E7%B0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "普里姆簇",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%99%AE%E9%87%8C%E5%A7%86%E7%B0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "prim cluster",
+          "url": "https://en.wikipedia.org/w/index.php?search=prim%20cluster"
+        }
+      ]
+    },
+    {
+      "chinese_name": "阿贝尔簇模空间",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "阿贝尔簇模空间是参数化带极化等附加结构的阿贝尔簇。常写成 $A_g$，其中g 是维数，点表示g维主极化阿贝尔簇。\n\n它不是所有复环面的空间，只纳入可代数化且带极化的数据。阿贝尔簇模空间说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。阿贝尔簇模空间还要说明对象族的基底、稳定性和自同构处理方式；阿贝尔簇模空间在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。阿贝尔簇模空间的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。阿贝尔簇模空间的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阿贝尔簇模空间",
+          "url": "https://www.baidu.com/s?wd=%E9%98%BF%E8%B4%9D%E5%B0%94%E7%B0%87%E6%A8%A1%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阿贝尔簇模空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%BF%E8%B4%9D%E5%B0%94%E7%B0%87%E6%A8%A1%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "abelian variety moduli space",
+          "url": "https://en.wikipedia.org/w/index.php?search=abelian%20variety%20moduli%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "主极化阿贝尔簇",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "主极化阿贝尔簇是带有给出同构到对偶簇极化的阿贝尔簇。常写成 $\\lambda:A\\toA^dual$，其中lambda 是由 ample 线丛给出的极化。\n\n主极化是西格尔模空间的基本对象，强于任意极化。主极化阿贝尔簇把子概形、商丛或阿贝尔簇组织成几何参数空间，极化、水平结构和Hecke对应会改变模问题；这些附加数据不能从闭点集合中恢复。主极化阿贝尔簇还要说明对象族的基底、稳定性和自同构处理方式；主极化阿贝尔簇在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。主极化阿贝尔簇的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。主极化阿贝尔簇的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "主极化阿贝尔簇",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%BB%E6%9E%81%E5%8C%96%E9%98%BF%E8%B4%9D%E5%B0%94%E7%B0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "主极化阿贝尔簇",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%BB%E6%9E%81%E5%8C%96%E9%98%BF%E8%B4%9D%E5%B0%94%E7%B0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mainly polarized abelian cluster",
+          "url": "https://en.wikipedia.org/w/index.php?search=mainly%20polarized%20abelian%20cluster"
+        }
+      ]
+    },
+    {
+      "chinese_name": "西格尔模空间",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "西格尔模空间是参数化主极化阿贝尔簇的模空间。常写成 $A_g=H_g/Sp_{2g}(Z)$，其中H_g 是Siegel上半空间。\n\n它是阿贝尔簇模空间的解析模型，不等同于椭圆曲线模曲线的高维直积。西格尔模空间说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。西格尔模空间还要说明对象族的基底、稳定性和自同构处理方式；西格尔模空间在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。西格尔模空间的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。西格尔模空间的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "西格尔模空间",
+          "url": "https://www.baidu.com/s?wd=%E8%A5%BF%E6%A0%BC%E5%B0%94%E6%A8%A1%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "西格尔模空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A5%BF%E6%A0%BC%E5%B0%94%E6%A8%A1%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "segal moduli space",
+          "url": "https://en.wikipedia.org/w/index.php?search=segal%20moduli%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "环面紧化",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "环面紧化是用多面扇在边界加入半阿贝尔退化的紧化。常写成 $A_g \\subset A_g^tor$，其中tor 表示所选扇给出的环面数据。\n\n它比最小紧化边界更细，记住退化的环面方向。环面紧化把子概形、商丛或阿贝尔簇组织成几何参数空间，极化、水平结构和Hecke对应会改变模问题；这些附加数据不能从闭点集合中恢复。环面紧化还要说明对象族的基底、稳定性和自同构处理方式；环面紧化在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。环面紧化的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。环面紧化的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "环面紧化",
+          "url": "https://www.baidu.com/s?wd=%E7%8E%AF%E9%9D%A2%E7%B4%A7%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "环面紧化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%8E%AF%E9%9D%A2%E7%B4%A7%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ring surface compactification",
+          "url": "https://en.wikipedia.org/w/index.php?search=ring%20surface%20compactification"
+        }
+      ]
+    },
+    {
+      "chinese_name": "最小紧化",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "最小紧化是Baily-Borel意义下的射影紧化。常写成 $A_g^*$，其中星号表示加入较粗边界。\n\n它边界维数较小，通常不携带普适半阿贝尔族。最小紧化把子概形、商丛或阿贝尔簇组织成几何参数空间，极化、水平结构和Hecke对应会改变模问题；这些附加数据不能从闭点集合中恢复。最小紧化还要说明对象族的基底、稳定性和自同构处理方式；最小紧化在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。最小紧化的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。最小紧化的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最小紧化",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E5%B0%8F%E7%B4%A7%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最小紧化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E5%B0%8F%E7%B4%A7%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "minimal compactification",
+          "url": "https://en.wikipedia.org/w/index.php?search=minimal%20compactification"
+        }
+      ]
+    },
+    {
+      "chinese_name": "赫克对应",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "赫克对应是通过同源或双陪集在模空间上给出的多值对应。常写成 $T_g=[KgK]$，其中K 是紧开子群，g 给出双陪集。\n\n它作用在上同调和自守形式上，不是单值自映射。赫克对应把子概形、商丛或阿贝尔簇组织成几何参数空间，极化、水平结构和Hecke对应会改变模问题；这些附加数据不能从闭点集合中恢复。赫克对应还要说明对象族的基底、稳定性和自同构处理方式；赫克对应在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。赫克对应的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。赫克对应的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "赫克对应",
+          "url": "https://www.baidu.com/s?wd=%E8%B5%AB%E5%85%8B%E5%AF%B9%E5%BA%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "赫克对应",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B5%AB%E5%85%8B%E5%AF%B9%E5%BA%94"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "heck correspondence",
+          "url": "https://en.wikipedia.org/w/index.php?search=heck%20correspondence"
+        }
+      ]
+    },
+    {
+      "chinese_name": "志村簇",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "志村簇是由Shimura数据定义并参数化带Hodge结构或阿贝尔簇附加结构的模空间。常写成 $Sh_K(G,X)$，其中(G,X) 是Shimura数据，K 是水平子群。\n\n它推广模曲线和Siegel模空间，带有规范模型和Hecke作用。志村簇把子概形、商丛或阿贝尔簇组织成几何参数空间，极化、水平结构和Hecke对应会改变模问题；这些附加数据不能从闭点集合中恢复。志村簇还要说明对象族的基底、稳定性和自同构处理方式；志村簇在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。志村簇的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。志村簇的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "志村簇",
+          "url": "https://www.baidu.com/s?wd=%E5%BF%97%E6%9D%91%E7%B0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "志村簇",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BF%97%E6%9D%91%E7%B0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "shimura cluster",
+          "url": "https://en.wikipedia.org/w/index.php?search=shimura%20cluster"
+        }
+      ]
+    },
+    {
+      "chinese_name": "曲线丛",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "曲线丛是以曲线为纤维的平坦或光滑族。常写成 $f:C\\toS$，其中S 是基底，纤维 C_s 是曲线。\n\n它是模空间上的族对象，和单条曲线的同构类不同。曲线丛服务于曲线或映射的紧化和计数，节点、接触阶与障碍理论决定虚维数；它记录的是族和退化行为，而不是单个光滑对象。曲线丛还要说明对象族的基底、稳定性和自同构处理方式；曲线丛在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。曲线丛的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。曲线丛的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "曲线丛",
+          "url": "https://www.baidu.com/s?wd=%E6%9B%B2%E7%BA%BF%E4%B8%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "曲线丛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9B%B2%E7%BA%BF%E4%B8%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "curve bundle",
+          "url": "https://en.wikipedia.org/w/index.php?search=curve%20bundle"
+        }
+      ]
+    },
+    {
+      "chinese_name": "向量丛模空间",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "向量丛模空间是参数化曲线或高维簇上满足稳定性的向量丛。常写成 $M_X(r,d)$，其中r 是秩，d 是次数或Chern类。\n\n构造通常需要稳定性来获得合理商空间。向量丛模空间说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。向量丛模空间还要说明对象族的基底、稳定性和自同构处理方式；向量丛模空间在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。向量丛模空间的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。向量丛模空间的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "向量丛模空间",
+          "url": "https://www.baidu.com/s?wd=%E5%90%91%E9%87%8F%E4%B8%9B%E6%A8%A1%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "向量丛模空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%91%E9%87%8F%E4%B8%9B%E6%A8%A1%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vector bundle moduli space",
+          "url": "https://en.wikipedia.org/w/index.php?search=vector%20bundle%20moduli%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "稳定向量丛",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "稳定向量丛是所有真子丛斜率严格小于自身斜率的向量丛。常写成 $mu(F)<mu(E)$，其中mu 是度数除以秩，F 是真子丛。\n\n它通常给出较好的模空间点，自同构仅为标量。稳定向量丛描述丛、联络或表示的模问题，稳定性、残数和单值表示会影响空间的维数与辛结构；非阿贝尔Hodge对应正是在这些版本之间移动。稳定向量丛还要说明对象族的基底、稳定性和自同构处理方式；稳定向量丛在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。稳定向量丛的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。稳定向量丛的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳定向量丛",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E5%AE%9A%E5%90%91%E9%87%8F%E4%B8%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳定向量丛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E5%AE%9A%E5%90%91%E9%87%8F%E4%B8%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stable vector bundle",
+          "url": "https://en.wikipedia.org/w/index.php?search=stable%20vector%20bundle"
+        }
+      ]
+    },
+    {
+      "chinese_name": "半稳定向量丛",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "半稳定向量丛是允许真子丛斜率不超过自身斜率的向量丛。常写成 $mu(F)\\lemu(E)$，其中F 是真子丛，E 是向量丛。\n\n它形成紧化所需的S等价类，区别于稳定对象的严格不等式。半稳定向量丛描述丛、联络或表示的模问题，稳定性、残数和单值表示会影响空间的维数与辛结构；非阿贝尔Hodge对应正是在这些版本之间移动。半稳定向量丛还要说明对象族的基底、稳定性和自同构处理方式；半稳定向量丛在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。半稳定向量丛的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。半稳定向量丛的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "半稳定向量丛",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8A%E7%A8%B3%E5%AE%9A%E5%90%91%E9%87%8F%E4%B8%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "半稳定向量丛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8A%E7%A8%B3%E5%AE%9A%E5%90%91%E9%87%8F%E4%B8%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "semi stable vector bundle",
+          "url": "https://en.wikipedia.org/w/index.php?search=semi%20stable%20vector%20bundle"
+        }
+      ]
+    },
+    {
+      "chinese_name": "斜率稳定性",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "斜率稳定性是由斜率比较定义的稳定性。常写成 $mu(E)=deg(E)/rk(E)$，其中deg 是次数，rk 是秩。\n\n它适用于曲线上的向量丛，高维时常需Gieseker稳定性补充。斜率稳定性描述丛、联络或表示的模问题，稳定性、残数和单值表示会影响空间的维数与辛结构；非阿贝尔Hodge对应正是在这些版本之间移动。斜率稳定性还要说明对象族的基底、稳定性和自同构处理方式；斜率稳定性在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。斜率稳定性的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。斜率稳定性的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "斜率稳定性",
+          "url": "https://www.baidu.com/s?wd=%E6%96%9C%E7%8E%87%E7%A8%B3%E5%AE%9A%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "斜率稳定性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%96%9C%E7%8E%87%E7%A8%B3%E5%AE%9A%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "slope stability",
+          "url": "https://en.wikipedia.org/w/index.php?search=slope%20stability"
+        }
+      ]
+    },
+    {
+      "chinese_name": "吉辛稳定性",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "吉辛稳定性是用Hilbert多项式归一化比较的层稳定性。常写成 $p_F(m)<p_E(m)$，其中p 是约化Hilbert多项式。\n\n它比斜率稳定更细，适合构造射影的相干层模空间。吉辛稳定性描述丛、联络或表示的模问题，稳定性、残数和单值表示会影响空间的维数与辛结构；非阿贝尔Hodge对应正是在这些版本之间移动。吉辛稳定性还要说明对象族的基底、稳定性和自同构处理方式；吉辛稳定性在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。吉辛稳定性的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。吉辛稳定性的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "吉辛稳定性",
+          "url": "https://www.baidu.com/s?wd=%E5%90%89%E8%BE%9B%E7%A8%B3%E5%AE%9A%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "吉辛稳定性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%89%E8%BE%9B%E7%A8%B3%E5%AE%9A%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gissing stability",
+          "url": "https://en.wikipedia.org/w/index.php?search=gissing%20stability"
+        }
+      ]
+    },
+    {
+      "chinese_name": "希格斯丛",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "希格斯丛是向量丛加一个满足可积性的Higgs场。常写成 $\\theta:E\\toE \\otimes K$，其中K 是典范线丛，theta 是Higgs场。\n\n它不是平坦联络，但在非阿贝尔Hodge对应中与平坦联络相配。希格斯丛描述丛、联络或表示的模问题，稳定性、残数和单值表示会影响空间的维数与辛结构；非阿贝尔Hodge对应正是在这些版本之间移动。希格斯丛还要说明对象族的基底、稳定性和自同构处理方式；希格斯丛在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。希格斯丛的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。希格斯丛的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "希格斯丛",
+          "url": "https://www.baidu.com/s?wd=%E5%B8%8C%E6%A0%BC%E6%96%AF%E4%B8%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "希格斯丛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B8%8C%E6%A0%BC%E6%96%AF%E4%B8%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "higgs bundle",
+          "url": "https://en.wikipedia.org/w/index.php?search=higgs%20bundle"
+        }
+      ]
+    },
+    {
+      "chinese_name": "希格斯丛模空间",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "希格斯丛模空间是参数化半稳定Higgs丛的模空间。常写成 $M_Higgs(r,d)$，其中r,d 是秩和次数。\n\n它带有自然超Kähler和代数完全可积系统结构。希格斯丛模空间说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。希格斯丛模空间还要说明对象族的基底、稳定性和自同构处理方式；希格斯丛模空间在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。希格斯丛模空间的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。希格斯丛模空间的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "希格斯丛模空间",
+          "url": "https://www.baidu.com/s?wd=%E5%B8%8C%E6%A0%BC%E6%96%AF%E4%B8%9B%E6%A8%A1%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "希格斯丛模空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B8%8C%E6%A0%BC%E6%96%AF%E4%B8%9B%E6%A8%A1%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "higgs bundle modulus space",
+          "url": "https://en.wikipedia.org/w/index.php?search=higgs%20bundle%20modulus%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "希钦纤维化",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "希钦纤维化是把Higgs丛送到Higgs场特征多项式的映射。常写成 $h(E,\\theta)=char(\\theta)$，其中char(theta) 是特征系数。\n\n它的泛纤维常为谱曲线的Jacobian，是Higgs模空间的核心结构。希钦纤维化描述丛、联络或表示的模问题，稳定性、残数和单值表示会影响空间的维数与辛结构；非阿贝尔Hodge对应正是在这些版本之间移动。希钦纤维化还要说明对象族的基底、稳定性和自同构处理方式；希钦纤维化在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。希钦纤维化的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。希钦纤维化的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "希钦纤维化",
+          "url": "https://www.baidu.com/s?wd=%E5%B8%8C%E9%92%A6%E7%BA%A4%E7%BB%B4%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "希钦纤维化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B8%8C%E9%92%A6%E7%BA%A4%E7%BB%B4%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hitchin fibrosis",
+          "url": "https://en.wikipedia.org/w/index.php?search=hitchin%20fibrosis"
+        }
+      ]
+    },
+    {
+      "chinese_name": "特征多项式映射",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "特征多项式映射是记录Higgs场特征系数的映射。常写成 $\\theta \\to det(t-\\theta)$，其中theta 是Higgs场，系数落在H^0(K^i)。\n\n它定义Hitchin基，区别于只记录Higgs场的点值。特征多项式映射把分类对象、等价关系和随基底变化的族同时固定下来，关键不只是点的集合，而是自同构、紧化和稳定性如何进入几何结构。特征多项式映射还要说明对象族的基底、稳定性和自同构处理方式；特征多项式映射在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。特征多项式映射的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。特征多项式映射的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "特征多项式映射",
+          "url": "https://www.baidu.com/s?wd=%E7%89%B9%E5%BE%81%E5%A4%9A%E9%A1%B9%E5%BC%8F%E6%98%A0%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "特征多项式映射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%B9%E5%BE%81%E5%A4%9A%E9%A1%B9%E5%BC%8F%E6%98%A0%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "characteristic polynomial mapping",
+          "url": "https://en.wikipedia.org/w/index.php?search=characteristic%20polynomial%20mapping"
+        }
+      ]
+    },
+    {
+      "chinese_name": "谱曲线",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "谱曲线是由Higgs场特征方程在余切丛中定义的曲线。常写成 $det(eta-\\theta)=0$，其中eta 是余切丛纤维坐标。\n\n它把Higgs丛转成谱曲线上的线丛数据。谱曲线服务于曲线或映射的紧化和计数，节点、接触阶与障碍理论决定虚维数；它记录的是族和退化行为，而不是单个光滑对象。谱曲线还要说明对象族的基底、稳定性和自同构处理方式；谱曲线在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。谱曲线的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。谱曲线的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "谱曲线",
+          "url": "https://www.baidu.com/s?wd=%E8%B0%B1%E6%9B%B2%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "谱曲线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B0%B1%E6%9B%B2%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "spectrum curve",
+          "url": "https://en.wikipedia.org/w/index.php?search=spectrum%20curve"
+        }
+      ]
+    },
+    {
+      "chinese_name": "抛物向量丛",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "抛物向量丛是带标记点处加权旗标的向量丛。常写成 $E_{p,1} \\subset ... \\subset E_p$，其中p 是标记点，旗标带权重。\n\n它比普通向量丛多边界数据，稳定性也按抛物斜率计算。抛物向量丛描述丛、联络或表示的模问题，稳定性、残数和单值表示会影响空间的维数与辛结构；非阿贝尔Hodge对应正是在这些版本之间移动。抛物向量丛还要说明对象族的基底、稳定性和自同构处理方式；抛物向量丛在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。抛物向量丛的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。抛物向量丛的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "抛物向量丛",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%9B%E7%89%A9%E5%90%91%E9%87%8F%E4%B8%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "抛物向量丛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%9B%E7%89%A9%E5%90%91%E9%87%8F%E4%B8%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "parabolic vector bundle",
+          "url": "https://en.wikipedia.org/w/index.php?search=parabolic%20vector%20bundle"
+        }
+      ]
+    },
+    {
+      "chinese_name": "抛物希格斯丛",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "抛物希格斯丛是带抛物结构且Higgs场与旗标相容的Higgs丛。常写成 $\\theta:E\\toE \\otimes K(D)$，其中D 是标记除子。\n\n它允许在标记点有受控极点，和普通Higgs丛边界条件不同。抛物希格斯丛描述丛、联络或表示的模问题，稳定性、残数和单值表示会影响空间的维数与辛结构；非阿贝尔Hodge对应正是在这些版本之间移动。抛物希格斯丛还要说明对象族的基底、稳定性和自同构处理方式；抛物希格斯丛在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。抛物希格斯丛的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。抛物希格斯丛的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "抛物希格斯丛",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%9B%E7%89%A9%E5%B8%8C%E6%A0%BC%E6%96%AF%E4%B8%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "抛物希格斯丛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%9B%E7%89%A9%E5%B8%8C%E6%A0%BC%E6%96%AF%E4%B8%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "parabolic higgs bundle",
+          "url": "https://en.wikipedia.org/w/index.php?search=parabolic%20higgs%20bundle"
+        }
+      ]
+    },
+    {
+      "chinese_name": "霍奇模空间",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "霍奇模空间是连接Higgs、de Rham和Betti模空间的lambda联络模空间。常写成 $\\nabla_\\lambda:E\\toE \\otimes \\Omega^1$，其中lambda=0 得Higgs，lambda=1 得联络。\n\n它组织非阿贝尔Hodge对应中的整族退化。霍奇模空间说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。霍奇模空间还要说明对象族的基底、稳定性和自同构处理方式；霍奇模空间在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。霍奇模空间的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。霍奇模空间的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "霍奇模空间",
+          "url": "https://www.baidu.com/s?wd=%E9%9C%8D%E5%A5%87%E6%A8%A1%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "霍奇模空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9C%8D%E5%A5%87%E6%A8%A1%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hodge modulus space",
+          "url": "https://en.wikipedia.org/w/index.php?search=hodge%20modulus%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "德拉姆模空间",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "德拉姆模空间是参数化带平坦联络的向量丛或主丛。常写成 $(E,\\nabla), \\nabla^2=0$，其中nabla 是平坦联络。\n\n它是代数微分方程的模空间，区别于Betti模空间的表示数据。德拉姆模空间说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。德拉姆模空间还要说明对象族的基底、稳定性和自同构处理方式；德拉姆模空间在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。德拉姆模空间的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。德拉姆模空间的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "德拉姆模空间",
+          "url": "https://www.baidu.com/s?wd=%E5%BE%B7%E6%8B%89%E5%A7%86%E6%A8%A1%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "德拉姆模空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BE%B7%E6%8B%89%E5%A7%86%E6%A8%A1%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dram modulus space",
+          "url": "https://en.wikipedia.org/w/index.php?search=dram%20modulus%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "贝蒂模空间",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "贝蒂模空间是参数化基本群表示或局部系统的模空间。常写成 $\\operatorname{Hom}(pi_1(X),G)//G$，其中G 通过共轭作用取商。\n\n它记录单值表示，和de Rham模空间通过Riemann-Hilbert对应相连。贝蒂模空间说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。贝蒂模空间还要说明对象族的基底、稳定性和自同构处理方式；贝蒂模空间在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。贝蒂模空间的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。贝蒂模空间的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "贝蒂模空间",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%9D%E8%92%82%E6%A8%A1%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "贝蒂模空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%9D%E8%92%82%E6%A8%A1%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "betty modulus space",
+          "url": "https://en.wikipedia.org/w/index.php?search=betty%20modulus%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "非阿贝尔霍奇对应",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "非阿贝尔霍奇对应是把Higgs丛、平坦联络和表示模空间联系的对应。常写成 $M_Higgs \\simeq M_dR \\simeq M_B$，其中三个模空间在适当条件下同胚或解析对应。\n\n它不是代数同构，而是依赖度量方程的深层对应。非阿贝尔霍奇对应把子概形、商丛或阿贝尔簇组织成几何参数空间，极化、水平结构和Hecke对应会改变模问题；这些附加数据不能从闭点集合中恢复。非阿贝尔霍奇对应还要说明对象族的基底、稳定性和自同构处理方式；非阿贝尔霍奇对应在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。非阿贝尔霍奇对应的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。非阿贝尔霍奇对应的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "非阿贝尔霍奇对应",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%9E%E9%98%BF%E8%B4%9D%E5%B0%94%E9%9C%8D%E5%A5%87%E5%AF%B9%E5%BA%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "非阿贝尔霍奇对应",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%9E%E9%98%BF%E8%B4%9D%E5%B0%94%E9%9C%8D%E5%A5%87%E5%AF%B9%E5%BA%94"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "non abel hodge correspondence",
+          "url": "https://en.wikipedia.org/w/index.php?search=non%20abel%20hodge%20correspondence"
+        }
+      ]
+    },
+    {
+      "chinese_name": "平坦联络模空间",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "平坦联络模空间是参数化满足曲率为零的联络对象。常写成 $F_\\nabla=0$，其中F_nabla 是联络曲率。\n\n它与Higgs模空间相邻，但结构方程和稳定性条件不同。平坦联络模空间说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。平坦联络模空间还要说明对象族的基底、稳定性和自同构处理方式；平坦联络模空间在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。平坦联络模空间的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。平坦联络模空间的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平坦联络模空间",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E5%9D%A6%E8%81%94%E7%BB%9C%E6%A8%A1%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平坦联络模空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E5%9D%A6%E8%81%94%E7%BB%9C%E6%A8%A1%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "flat contact module space",
+          "url": "https://en.wikipedia.org/w/index.php?search=flat%20contact%20module%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "表示簇",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "表示簇是参数化群到代数群表示的仿射簇。常写成 $\\operatorname{Hom}(Gamma,G)$，其中Gamma 是离散群，G 是代数群。\n\n它在取共轭商前仍保留基选择，和特征簇不同。表示簇描述丛、联络或表示的模问题，稳定性、残数和单值表示会影响空间的维数与辛结构；非阿贝尔Hodge对应正是在这些版本之间移动。表示簇还要说明对象族的基底、稳定性和自同构处理方式；表示簇在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。表示簇的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。表示簇的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "表示簇",
+          "url": "https://www.baidu.com/s?wd=%E8%A1%A8%E7%A4%BA%E7%B0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "表示簇",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A1%A8%E7%A4%BA%E7%B0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "representation cluster",
+          "url": "https://en.wikipedia.org/w/index.php?search=representation%20cluster"
+        }
+      ]
+    },
+    {
+      "chinese_name": "特征簇",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "特征簇是表示簇按共轭作用取GIT商后的空间。常写成 $\\operatorname{Hom}(Gamma,G)//G$，其中双斜线表示GIT商。\n\n它的点对应半单表示的共轭类，而不是所有表示逐点分类。特征簇描述丛、联络或表示的模问题，稳定性、残数和单值表示会影响空间的维数与辛结构；非阿贝尔Hodge对应正是在这些版本之间移动。特征簇还要说明对象族的基底、稳定性和自同构处理方式；特征簇在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。特征簇的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。特征簇的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "特征簇",
+          "url": "https://www.baidu.com/s?wd=%E7%89%B9%E5%BE%81%E7%B0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "特征簇",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%B9%E5%BE%81%E7%B0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "characteristic cluster",
+          "url": "https://en.wikipedia.org/w/index.php?search=characteristic%20cluster"
+        }
+      ]
+    },
+    {
+      "chinese_name": "辛约化",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "辛约化是在动量映射零层上除以群作用得到的辛商。常写成 $M//G=mu^{-1}(0)/G$，其中mu 是动量映射。\n\n它解释许多模空间的辛结构，和普通轨道商相比带有矩映射条件。辛约化关心群作用下哪些点允许进入商，线性化和一参数子群给出筛选规则；稳定性改变时，参数空间会经历翻转、收缩或壁越。辛约化还要说明对象族的基底、稳定性和自同构处理方式；辛约化在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。辛约化的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。辛约化的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "辛约化",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%9B%E7%BA%A6%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "辛约化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%9B%E7%BA%A6%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "symplectic reduction",
+          "url": "https://en.wikipedia.org/w/index.php?search=symplectic%20reduction"
+        }
+      ]
+    },
+    {
+      "chinese_name": "金普夫稳定性",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "金普夫稳定性是GIT中由线性化和轨道闭包定义的稳定性。常写成 $X^s(L)$，其中L 是线性化线丛。\n\n它区分稳定、半稳定和不稳定点，是构造GIT商的前提。金普夫稳定性关心群作用下哪些点允许进入商，线性化和一参数子群给出筛选规则；稳定性改变时，参数空间会经历翻转、收缩或壁越。金普夫稳定性还要说明对象族的基底、稳定性和自同构处理方式；金普夫稳定性在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。金普夫稳定性的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。金普夫稳定性的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "金普夫稳定性",
+          "url": "https://www.baidu.com/s?wd=%E9%87%91%E6%99%AE%E5%A4%AB%E7%A8%B3%E5%AE%9A%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "金普夫稳定性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%91%E6%99%AE%E5%A4%AB%E7%A8%B3%E5%AE%9A%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kimpf stability",
+          "url": "https://en.wikipedia.org/w/index.php?search=kimpf%20stability"
+        }
+      ]
+    },
+    {
+      "chinese_name": "几何不变量理论商",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "几何不变量理论商是用不变量环构造的代数商。常写成 $X//G=Proj R^G$，其中G 是约化群，R^G 是不变量环。\n\n它通常分类闭轨道或S等价类，不保存全部自同构。几何不变量理论商关心群作用下哪些点允许进入商，线性化和一参数子群给出筛选规则；稳定性改变时，参数空间会经历翻转、收缩或壁越。几何不变量理论商还要说明对象族的基底、稳定性和自同构处理方式；几何不变量理论商在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。几何不变量理论商的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。几何不变量理论商的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "几何不变量理论商",
+          "url": "https://www.baidu.com/s?wd=%E5%87%A0%E4%BD%95%E4%B8%8D%E5%8F%98%E9%87%8F%E7%90%86%E8%AE%BA%E5%95%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "几何不变量理论商",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%A0%E4%BD%95%E4%B8%8D%E5%8F%98%E9%87%8F%E7%90%86%E8%AE%BA%E5%95%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "geometry invariant theory quotient",
+          "url": "https://en.wikipedia.org/w/index.php?search=geometry%20invariant%20theory%20quotient"
+        }
+      ]
+    },
+    {
+      "chinese_name": "稳定点",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "稳定点是GIT中轨道闭且稳定子有限的点。常写成 $x in X^s$，其中X^s 是稳定开子集。\n\n稳定点在商中行为最好，和半稳定点的闭轨道代表不同。稳定点关心群作用下哪些点允许进入商，线性化和一参数子群给出筛选规则；稳定性改变时，参数空间会经历翻转、收缩或壁越。稳定点还要说明对象族的基底、稳定性和自同构处理方式；稳定点在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。稳定点的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。稳定点的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳定点",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E5%AE%9A%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳定点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E5%AE%9A%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stable point",
+          "url": "https://en.wikipedia.org/w/index.php?search=stable%20point"
+        }
+      ]
+    },
+    {
+      "chinese_name": "半稳定点",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "半稳定点是GIT中存在不变截面不同时为零的点。常写成 $x in X^ss$，其中X^ss 是半稳定开集。\n\n它可进入商，但多个轨道可能对应同一S等价类。半稳定点描述丛、联络或表示的模问题，稳定性、残数和单值表示会影响空间的维数与辛结构；非阿贝尔Hodge对应正是在这些版本之间移动。半稳定点还要说明对象族的基底、稳定性和自同构处理方式；半稳定点在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。半稳定点的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。半稳定点的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "半稳定点",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8A%E7%A8%B3%E5%AE%9A%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "半稳定点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8A%E7%A8%B3%E5%AE%9A%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "semi stable point",
+          "url": "https://en.wikipedia.org/w/index.php?search=semi%20stable%20point"
+        }
+      ]
+    },
+    {
+      "chinese_name": "不稳定点",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "不稳定点是不满足半稳定条件并被GIT商排除的点。常写成 $X^unst=X-X^ss$，其中X^ss 是半稳定集。\n\n它们的轨道在所选线性化下趋向坏极限。不稳定点关心群作用下哪些点允许进入商，线性化和一参数子群给出筛选规则；稳定性改变时，参数空间会经历翻转、收缩或壁越。不稳定点还要说明对象族的基底、稳定性和自同构处理方式；不稳定点在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。不稳定点的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。不稳定点的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "不稳定点",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%8D%E7%A8%B3%E5%AE%9A%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "不稳定点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%8D%E7%A8%B3%E5%AE%9A%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "unstable point",
+          "url": "https://en.wikipedia.org/w/index.php?search=unstable%20point"
+        }
+      ]
+    },
+    {
+      "chinese_name": "希尔伯特芒福德准则",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "希尔伯特芒福德准则是用一参数子群检验GIT稳定性的判据。常写成 $mu^L(x,\\lambda)>0$，其中lambda 是一参数子群，mu 是权重。\n\n它把所有轨道闭包问题化为权重不等式。希尔伯特芒福德准则把子概形、商丛或阿贝尔簇组织成几何参数空间，极化、水平结构和Hecke对应会改变模问题；这些附加数据不能从闭点集合中恢复。希尔伯特芒福德准则还要说明对象族的基底、稳定性和自同构处理方式；希尔伯特芒福德准则在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。希尔伯特芒福德准则的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。希尔伯特芒福德准则的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "希尔伯特芒福德准则",
+          "url": "https://www.baidu.com/s?wd=%E5%B8%8C%E5%B0%94%E4%BC%AF%E7%89%B9%E8%8A%92%E7%A6%8F%E5%BE%B7%E5%87%86%E5%88%99%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "希尔伯特芒福德准则",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B8%8C%E5%B0%94%E4%BC%AF%E7%89%B9%E8%8A%92%E7%A6%8F%E5%BE%B7%E5%87%86%E5%88%99"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hilbert mumford criterion",
+          "url": "https://en.wikipedia.org/w/index.php?search=hilbert%20mumford%20criterion"
+        }
+      ]
+    },
+    {
+      "chinese_name": "墙越",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "墙越是稳定参数穿过墙时模空间和不变量发生改变的现象。常写成 $\\theta·v=0$，其中theta 是稳定参数，v 是子对象维向量。\n\n墙内稳定性类型不变，跨墙会改变商和计数。墙越关心群作用下哪些点允许进入商，线性化和一参数子群给出筛选规则；稳定性改变时，参数空间会经历翻转、收缩或壁越。墙越还要说明对象族的基底、稳定性和自同构处理方式；墙越在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。墙越的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。墙越的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "墙越",
+          "url": "https://www.baidu.com/s?wd=%E5%A2%99%E8%B6%8A%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "墙越",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A2%99%E8%B6%8A"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wall over",
+          "url": "https://en.wikipedia.org/w/index.php?search=wall%20over"
+        }
+      ]
+    },
+    {
+      "chinese_name": "变稳定性",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "变稳定性是随参数变化的一族稳定性条件。常写成 $sigma_t$，其中t 是参数，sigma_t 是稳定条件。\n\n它用来比较不同紧化和不同模空间之间的双有理变换。变稳定性关心群作用下哪些点允许进入商，线性化和一参数子群给出筛选规则；稳定性改变时，参数空间会经历翻转、收缩或壁越。变稳定性还要说明对象族的基底、稳定性和自同构处理方式；变稳定性在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。变稳定性的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。变稳定性的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "变稳定性",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%98%E7%A8%B3%E5%AE%9A%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "变稳定性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%98%E7%A8%B3%E5%AE%9A%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "variable stability",
+          "url": "https://en.wikipedia.org/w/index.php?search=variable%20stability"
+        }
+      ]
+    },
+    {
+      "chinese_name": "唐纳森托马斯不变量",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "唐纳森托马斯不变量是由三维Calabi-Yau上理想层或对象模空间定义的虚计数。常写成 $DT_beta,n=int_[M]^vir 1$，其中M 是相应模空间，vir 是虚基本类。\n\n它计数曲线或层，通常用对称障碍理论定义。唐纳森托马斯不变量来自规范论或Donaldson-Thomas型计数，方程的解要按规范等价取商，并由虚基本类或箭图数据控制维数；它比普通参数空间带有更强的方程结构。唐纳森托马斯不变量还要说明对象族的基底、稳定性和自同构处理方式；唐纳森托马斯不变量在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。唐纳森托马斯不变量的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。唐纳森托马斯不变量的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "唐纳森托马斯不变量",
+          "url": "https://www.baidu.com/s?wd=%E5%94%90%E7%BA%B3%E6%A3%AE%E6%89%98%E9%A9%AC%E6%96%AF%E4%B8%8D%E5%8F%98%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "唐纳森托马斯不变量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%94%90%E7%BA%B3%E6%A3%AE%E6%89%98%E9%A9%AC%E6%96%AF%E4%B8%8D%E5%8F%98%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "donaldson thomas invariant",
+          "url": "https://en.wikipedia.org/w/index.php?search=donaldson%20thomas%20invariant"
+        }
+      ]
+    },
+    {
+      "chinese_name": "潘德哈里潘德托马斯不变量",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "潘德哈里潘德托马斯不变量是由稳定对模空间定义的曲线计数不变量。常写成 $O_X \\to F$，其中F 是纯一维层，截面余核零维。\n\n它与DT不变量相邻，但稳定对象是对而非理想层。潘德哈里潘德托马斯不变量来自规范论或Donaldson-Thomas型计数，方程的解要按规范等价取商，并由虚基本类或箭图数据控制维数；它比普通参数空间带有更强的方程结构。潘德哈里潘德托马斯不变量还要说明对象族的基底、稳定性和自同构处理方式；潘德哈里潘德托马斯不变量在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。潘德哈里潘德托马斯不变量的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "潘德哈里潘德托马斯不变量",
+          "url": "https://www.baidu.com/s?wd=%E6%BD%98%E5%BE%B7%E5%93%88%E9%87%8C%E6%BD%98%E5%BE%B7%E6%89%98%E9%A9%AC%E6%96%AF%E4%B8%8D%E5%8F%98%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "潘德哈里潘德托马斯不变量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%BD%98%E5%BE%B7%E5%93%88%E9%87%8C%E6%BD%98%E5%BE%B7%E6%89%98%E9%A9%AC%E6%96%AF%E4%B8%8D%E5%8F%98%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pandharipande thomas invariant",
+          "url": "https://en.wikipedia.org/w/index.php?search=pandharipande%20thomas%20invariant"
+        }
+      ]
+    },
+    {
+      "chinese_name": "稳定对",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "稳定对是三维曲线计数中由截面和纯一维层组成的对象。常写成 $(F,s:O_X\\toF)$，其中F 是纯一维层，s 的余核零维。\n\n它排除零维浮动点，给出PT不变量的模空间。稳定对来自规范论或Donaldson-Thomas型计数，方程的解要按规范等价取商，并由虚基本类或箭图数据控制维数；它比普通参数空间带有更强的方程结构。稳定对还要说明对象族的基底、稳定性和自同构处理方式；稳定对在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。稳定对的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。稳定对的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳定对",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E5%AE%9A%E5%AF%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳定对",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E5%AE%9A%E5%AF%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stable pair",
+          "url": "https://en.wikipedia.org/w/index.php?search=stable%20pair"
+        }
+      ]
+    },
+    {
+      "chinese_name": "希尔伯特陈方案",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "希尔伯特陈方案是参数化固定Chern字符子概形或理想层的Hilbert型方案。常写成 $Hilb_ch(X)$，其中ch 是Chern字符数据。\n\n它常出现在DT理论中，和稳定对模空间给出不同紧化。希尔伯特陈方案把子概形、商丛或阿贝尔簇组织成几何参数空间，极化、水平结构和Hecke对应会改变模问题；这些附加数据不能从闭点集合中恢复。希尔伯特陈方案还要说明对象族的基底、稳定性和自同构处理方式；希尔伯特陈方案在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。希尔伯特陈方案的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。希尔伯特陈方案的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "希尔伯特陈方案",
+          "url": "https://www.baidu.com/s?wd=%E5%B8%8C%E5%B0%94%E4%BC%AF%E7%89%B9%E9%99%88%E6%96%B9%E6%A1%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "希尔伯特陈方案",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B8%8C%E5%B0%94%E4%BC%AF%E7%89%B9%E9%99%88%E6%96%B9%E6%A1%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hilbert chern scheme",
+          "url": "https://en.wikipedia.org/w/index.php?search=hilbert%20chern%20scheme"
+        }
+      ]
+    },
+    {
+      "chinese_name": "瞬子模空间",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "瞬子模空间是参数化满足反自对偶或稳定条件的联络或层。常写成 $F_A^+=0$，其中A 是联络，F_A^+ 是自对偶曲率部分。\n\n它连接规范理论与代数几何稳定层模空间。瞬子模空间说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。瞬子模空间还要说明对象族的基底、稳定性和自同构处理方式；瞬子模空间在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。瞬子模空间的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。瞬子模空间的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "瞬子模空间",
+          "url": "https://www.baidu.com/s?wd=%E7%9E%AC%E5%AD%90%E6%A8%A1%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "瞬子模空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9E%AC%E5%AD%90%E6%A8%A1%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "instanton moduli space",
+          "url": "https://en.wikipedia.org/w/index.php?search=instanton%20moduli%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "ADHM模空间",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "ADHM模空间是由ADHM方程和稳定性条件定义的瞬子参数空间。常写成 $[B_1,B_2]+ij=0$，其中B_i,i,j 是线性代数数据。\n\n它把四维瞬子问题转成矩阵商，是Nakajima簇的原型。ADHM模空间说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。ADHM模空间还要说明对象族的基底、稳定性和自同构处理方式；ADHM模空间在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。ADHM模空间的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。ADHM模空间的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "ADHM模空间",
+          "url": "https://www.baidu.com/s?wd=ADHM%E6%A8%A1%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "ADHM模空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=ADHM%E6%A8%A1%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ADHM moduli space",
+          "url": "https://en.wikipedia.org/w/index.php?search=ADHM%20moduli%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "纳卡岛箭图簇",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "纳卡岛箭图簇是由箭图表示的矩映射方程和稳定商得到的超Kähler簇。常写成 $mu_C=0, mu_R=\\theta$，其中mu_C,mu_R 是复和实矩映射。\n\n它把表示论、瞬子和Kac-Moody代数联系起来。纳卡岛箭图簇来自规范论或Donaldson-Thomas型计数，方程的解要按规范等价取商，并由虚基本类或箭图数据控制维数；它比普通参数空间带有更强的方程结构。纳卡岛箭图簇还要说明对象族的基底、稳定性和自同构处理方式；纳卡岛箭图簇在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。纳卡岛箭图簇的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。纳卡岛箭图簇的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "纳卡岛箭图簇",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%B3%E5%8D%A1%E5%B2%9B%E7%AE%AD%E5%9B%BE%E7%B0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "纳卡岛箭图簇",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%B3%E5%8D%A1%E5%B2%9B%E7%AE%AD%E5%9B%BE%E7%B0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "naka island arrow cluster",
+          "url": "https://en.wikipedia.org/w/index.php?search=naka%20island%20arrow%20cluster"
+        }
+      ]
+    },
+    {
+      "chinese_name": "克朗海默纳卡岛簇",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "克朗海默纳卡岛簇是ALE空间和规范理论中由超Kähler商构造的簇。常写成 $mu^{-1}(\\theta)/G$，其中theta 是稳定或矩映射参数。\n\n它推广ADE奇点解消，与普通箭图簇共享矩映射结构。克朗海默纳卡岛簇来自规范论或Donaldson-Thomas型计数，方程的解要按规范等价取商，并由虚基本类或箭图数据控制维数；它比普通参数空间带有更强的方程结构。克朗海默纳卡岛簇还要说明对象族的基底、稳定性和自同构处理方式；克朗海默纳卡岛簇在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。克朗海默纳卡岛簇的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。克朗海默纳卡岛簇的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "克朗海默纳卡岛簇",
+          "url": "https://www.baidu.com/s?wd=%E5%85%8B%E6%9C%97%E6%B5%B7%E9%BB%98%E7%BA%B3%E5%8D%A1%E5%B2%9B%E7%B0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "克朗海默纳卡岛簇",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%8B%E6%9C%97%E6%B5%B7%E9%BB%98%E7%BA%B3%E5%8D%A1%E5%B2%9B%E7%B0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kronheimer nakajima variety",
+          "url": "https://en.wikipedia.org/w/index.php?search=kronheimer%20nakajima%20variety"
+        }
+      ]
+    },
+    {
+      "chinese_name": "单极子模空间",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "单极子模空间是参数化满足Bogomolny方程的规范场模空间。常写成 $F_A=* d_A Phi$，其中A 是联络，Phi 是Higgs场。\n\n它不同于瞬子模空间，方程在三维并含标量场。单极子模空间说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。单极子模空间还要说明对象族的基底、稳定性和自同构处理方式；单极子模空间在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。单极子模空间的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。单极子模空间的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单极子模空间",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E6%9E%81%E5%AD%90%E6%A8%A1%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单极子模空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E6%9E%81%E5%AD%90%E6%A8%A1%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "monopole modulus space",
+          "url": "https://en.wikipedia.org/w/index.php?search=monopole%20modulus%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "塞伯格威滕模空间",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "塞伯格威滕模空间是满足Seiberg-Witten方程的联络和旋量模空间。常写成 $D_A psi=0, F_A^+=q(psi)$，其中psi 是旋量，A 是联络。\n\n它给四维流形不变量，和Yang-Mills瞬子方程不同。塞伯格威滕模空间说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。塞伯格威滕模空间还要说明对象族的基底、稳定性和自同构处理方式；塞伯格威滕模空间在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。塞伯格威滕模空间的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。塞伯格威滕模空间的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "塞伯格威滕模空间",
+          "url": "https://www.baidu.com/s?wd=%E5%A1%9E%E4%BC%AF%E6%A0%BC%E5%A8%81%E6%BB%95%E6%A8%A1%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "塞伯格威滕模空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A1%9E%E4%BC%AF%E6%A0%BC%E5%A8%81%E6%BB%95%E6%A8%A1%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "seiberg witten moduli space",
+          "url": "https://en.wikipedia.org/w/index.php?search=seiberg%20witten%20moduli%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "杨米尔斯模空间",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "杨米尔斯模空间是满足Yang-Mills方程并按规范等价取商的联络空间。常写成 $d_A^* F_A=0$，其中A 是联络，F_A 是曲率。\n\n在复几何中它与稳定丛对应，但方程本身来自规范理论。杨米尔斯模空间说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。杨米尔斯模空间还要说明对象族的基底、稳定性和自同构处理方式；杨米尔斯模空间在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。杨米尔斯模空间的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。杨米尔斯模空间的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "杨米尔斯模空间",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%A8%E7%B1%B3%E5%B0%94%E6%96%AF%E6%A8%A1%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "杨米尔斯模空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%A8%E7%B1%B3%E5%B0%94%E6%96%AF%E6%A8%A1%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "yang mills moduli space",
+          "url": "https://en.wikipedia.org/w/index.php?search=yang%20mills%20moduli%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "反自对偶联络",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "反自对偶联络是四维流形上曲率自对偶部分为零的联络。常写成 $F_A^+=0$，其中F_A^+ 是曲率的自对偶部分。\n\n它给Donaldson理论中的瞬子模空间，强于一般Yang-Mills临界点。反自对偶联络来自规范论或Donaldson-Thomas型计数，方程的解要按规范等价取商，并由虚基本类或箭图数据控制维数；它比普通参数空间带有更强的方程结构。反自对偶联络还要说明对象族的基底、稳定性和自同构处理方式；反自对偶联络在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。反自对偶联络的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。反自对偶联络的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反自对偶联络",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E8%87%AA%E5%AF%B9%E5%81%B6%E8%81%94%E7%BB%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反自对偶联络",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E8%87%AA%E5%AF%B9%E5%81%B6%E8%81%94%E7%BB%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "anti self dual contact",
+          "url": "https://en.wikipedia.org/w/index.php?search=anti%20self%20dual%20contact"
+        }
+      ]
+    },
+    {
+      "chinese_name": "规范等价",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "规范等价是由规范变换作用识别联络或场的等价关系。常写成 $A ~ gAg^{-1}-dg g^{-1}$，其中g 是规范变换。\n\n模空间必须除去这种冗余，否则同一几何场会被重复计数。规范等价来自规范论或Donaldson-Thomas型计数，方程的解要按规范等价取商，并由虚基本类或箭图数据控制维数；它比普通参数空间带有更强的方程结构。规范等价还要说明对象族的基底、稳定性和自同构处理方式；规范等价在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。规范等价的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。规范等价的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "规范等价",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%84%E8%8C%83%E7%AD%89%E4%BB%B7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "规范等价",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%84%E8%8C%83%E7%AD%89%E4%BB%B7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "canonical equivalence",
+          "url": "https://en.wikipedia.org/w/index.php?search=canonical%20equivalence"
+        }
+      ]
+    },
+    {
+      "chinese_name": "特希米勒空间",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "特希米勒空间是标记Riemann曲面复结构的参数空间。常写成 $T_g=Comp(S)/Diff_0(S)$，其中S 是拓扑曲面，Diff_0 是同伦于恒等的微分同胚。\n\n它是细的标记空间，除以映射类群后才得到曲线模空间。特希米勒空间把复结构、映射类群作用和边界退化放在一起，常与模形式或Teichmuller空间相连；标记、水平结构和紧化方式会改变同一个对象族的参数化。特希米勒空间还要说明对象族的基底、稳定性和自同构处理方式；特希米勒空间在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。特希米勒空间的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。特希米勒空间的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "特希米勒空间",
+          "url": "https://www.baidu.com/s?wd=%E7%89%B9%E5%B8%8C%E7%B1%B3%E5%8B%92%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "特希米勒空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%B9%E5%B8%8C%E7%B1%B3%E5%8B%92%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "teschmuller space",
+          "url": "https://en.wikipedia.org/w/index.php?search=teschmuller%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "映射类群",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "映射类群是曲面微分同胚模同伦于恒等者的群。常写成 $Mod(S)=Diff^+(S)/Diff_0(S)$，其中S 是定向曲面。\n\n它作用在Teichmuller空间上，商给Riemann曲面模空间。映射类群把复结构、映射类群作用和边界退化放在一起，常与模形式或Teichmuller空间相连；标记、水平结构和紧化方式会改变同一个对象族的参数化。映射类群还要说明对象族的基底、稳定性和自同构处理方式；映射类群在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。映射类群的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。映射类群的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "映射类群",
+          "url": "https://www.baidu.com/s?wd=%E6%98%A0%E5%B0%84%E7%B1%BB%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "映射类群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%98%A0%E5%B0%84%E7%B1%BB%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "map class group",
+          "url": "https://en.wikipedia.org/w/index.php?search=map%20class%20group"
+        }
+      ]
+    },
+    {
+      "chinese_name": "里曼曲面模空间",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "里曼曲面模空间是复曲线按双全纯同构分类的模空间。常写成 $M_g=T_g/Mod_g$，其中T_g 是Teichmuller空间，Mod_g 是映射类群。\n\n它通常是粗模或栈，因曲线可能有自同构而非处处细。里曼曲面模空间说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。里曼曲面模空间还要说明对象族的基底、稳定性和自同构处理方式；里曼曲面模空间在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。里曼曲面模空间的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。里曼曲面模空间的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "里曼曲面模空间",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8C%E6%9B%BC%E6%9B%B2%E9%9D%A2%E6%A8%A1%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "里曼曲面模空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8C%E6%9B%BC%E6%9B%B2%E9%9D%A2%E6%A8%A1%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "riemann surface moduli space",
+          "url": "https://en.wikipedia.org/w/index.php?search=riemann%20surface%20moduli%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "哈维芒福德边界",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "哈维芒福德边界是曲线模空间紧化中由节点曲线形成的边界分层。常写成 $\\Delta=Mbar_g-M_g$，其中Delta 是边界除子。\n\n它记录曲线退化类型，而不是任意奇异曲线集合。哈维芒福德边界把复结构、映射类群作用和边界退化放在一起，常与模形式或Teichmuller空间相连；标记、水平结构和紧化方式会改变同一个对象族的参数化。哈维芒福德边界还要说明对象族的基底、稳定性和自同构处理方式；哈维芒福德边界在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。哈维芒福德边界的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。哈维芒福德边界的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "哈维芒福德边界",
+          "url": "https://www.baidu.com/s?wd=%E5%93%88%E7%BB%B4%E8%8A%92%E7%A6%8F%E5%BE%B7%E8%BE%B9%E7%95%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "哈维芒福德边界",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%93%88%E7%BB%B4%E8%8A%92%E7%A6%8F%E5%BE%B7%E8%BE%B9%E7%95%8C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "harvey mumford border",
+          "url": "https://en.wikipedia.org/w/index.php?search=harvey%20mumford%20border"
+        }
+      ]
+    },
+    {
+      "chinese_name": "水平结构",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "水平结构是在阿贝尔簇或椭圆曲线上选择有限阶扭点基的数据。常写成 $alpha:(Z/NZ)^{2g}\\toA[N]$，其中A[N] 是N扭群。\n\n它常用来消除自同构并得到更细的模空间。水平结构把复结构、映射类群作用和边界退化放在一起，常与模形式或Teichmuller空间相连；标记、水平结构和紧化方式会改变同一个对象族的参数化。水平结构还要说明对象族的基底、稳定性和自同构处理方式；水平结构在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。水平结构的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。水平结构的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "水平结构",
+          "url": "https://www.baidu.com/s?wd=%E6%B0%B4%E5%B9%B3%E7%BB%93%E6%9E%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "水平结构",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B0%B4%E5%B9%B3%E7%BB%93%E6%9E%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "horizontal structure",
+          "url": "https://en.wikipedia.org/w/index.php?search=horizontal%20structure"
+        }
+      ]
+    },
+    {
+      "chinese_name": "自守形式",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "自守形式是在算术商上满足变换律和增长条件的函数或截面。常写成 $f(gamma z)=j(gamma,z)^k f(z)$，其中gamma 属于离散群，k 是权。\n\n它是函数或截面，不是被参数化的几何对象本身。自守形式把复结构、映射类群作用和边界退化放在一起，常与模形式或Teichmuller空间相连；标记、水平结构和紧化方式会改变同一个对象族的参数化。自守形式还要说明对象族的基底、稳定性和自同构处理方式；自守形式在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。自守形式的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。自守形式的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自守形式",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E5%AE%88%E5%BD%A2%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自守形式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E5%AE%88%E5%BD%A2%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "automorphic",
+          "url": "https://en.wikipedia.org/w/index.php?search=automorphic"
+        }
+      ]
+    },
+    {
+      "chinese_name": "模形式环",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "模形式环是同一群不同权模形式按乘法组成的分次环。常写成 $M_*=\\sum_k M_k$，其中M_k 是权k模形式空间。\n\n它可作为某些模空间的坐标环，区别于模空间本身。模形式环把复结构、映射类群作用和边界退化放在一起，常与模形式或Teichmuller空间相连；标记、水平结构和紧化方式会改变同一个对象族的参数化。模形式环还要说明对象族的基底、稳定性和自同构处理方式；模形式环在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。模形式环的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。模形式环的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "模形式环",
+          "url": "https://www.baidu.com/s?wd=%E6%A8%A1%E5%BD%A2%E5%BC%8F%E7%8E%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "模形式环",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A8%A1%E5%BD%A2%E5%BC%8F%E7%8E%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "modular form ring",
+          "url": "https://en.wikipedia.org/w/index.php?search=modular%20form%20ring"
+        }
+      ]
+    },
+    {
+      "chinese_name": "栈",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "栈是把对象和同构按下降条件组织成的范畴化空间。常写成 $X(U) is groupoid$，其中U 是测试对象，取值群胚记录对象和同构。\n\n它比粗模空间保留自同构，是模问题中自然的参数对象。栈说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。栈还要说明对象族的基底、稳定性和自同构处理方式；栈在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。栈的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。栈的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "栈",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "栈",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stack",
+          "url": "https://en.wikipedia.org/w/index.php?search=stack"
+        }
+      ]
+    },
+    {
+      "chinese_name": "代数栈",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "代数栈是具有光滑覆盖并满足代数性条件的栈。常写成 $U\\toX smooth surjective$，其中U 是概形或代数空间，X 是栈。\n\n它比普通栈更几何化，但仍保留稳定子群。代数栈说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。代数栈还要说明对象族的基底、稳定性和自同构处理方式；代数栈在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。代数栈的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。代数栈的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "代数栈",
+          "url": "https://www.baidu.com/s?wd=%E4%BB%A3%E6%95%B0%E6%A0%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "代数栈",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BB%A3%E6%95%B0%E6%A0%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "algebraic stack",
+          "url": "https://en.wikipedia.org/w/index.php?search=algebraic%20stack"
+        }
+      ]
+    },
+    {
+      "chinese_name": "阿廷栈",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "阿廷栈是允许光滑图册和较一般稳定子的代数栈。常写成 $U\\toX smooth$，其中U 是代数空间，X 是Artin栈。\n\n它比Deligne-Mumford栈宽，稳定子可正维，适合向量丛等模问题。阿廷栈说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。阿廷栈还要说明对象族的基底、稳定性和自同构处理方式；阿廷栈在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。阿廷栈的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。阿廷栈的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阿廷栈",
+          "url": "https://www.baidu.com/s?wd=%E9%98%BF%E5%BB%B7%E6%A0%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阿廷栈",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%BF%E5%BB%B7%E6%A0%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "artin stack",
+          "url": "https://en.wikipedia.org/w/index.php?search=artin%20stack"
+        }
+      ]
+    },
+    {
+      "chinese_name": "德利涅芒福德栈",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "德利涅芒福德栈是具有平展图册且稳定子有限的代数栈。常写成 $U\\toX etale$，其中U 是概形，箭头是平展满射。\n\n它比Artin栈更接近orbifold，常用于稳定曲线模栈。德利涅芒福德栈说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。德利涅芒福德栈还要说明对象族的基底、稳定性和自同构处理方式；德利涅芒福德栈在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。德利涅芒福德栈的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。德利涅芒福德栈的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "德利涅芒福德栈",
+          "url": "https://www.baidu.com/s?wd=%E5%BE%B7%E5%88%A9%E6%B6%85%E8%8A%92%E7%A6%8F%E5%BE%B7%E6%A0%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "德利涅芒福德栈",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BE%B7%E5%88%A9%E6%B6%85%E8%8A%92%E7%A6%8F%E5%BE%B7%E6%A0%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "deligne mumford inn",
+          "url": "https://en.wikipedia.org/w/index.php?search=deligne%20mumford%20inn"
+        }
+      ]
+    },
+    {
+      "chinese_name": "惯性栈",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "惯性栈是记录栈中对象及其自同构的栈。常写成 $I_X=X \\times_{X x X} X$，其中纤维积沿对角线取，点为对象加自同构。\n\n它精确保存稳定子信息，是粗模空间看不见的数据。惯性栈说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。惯性栈还要说明对象族的基底、稳定性和自同构处理方式；惯性栈在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。惯性栈的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。惯性栈的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "惯性栈",
+          "url": "https://www.baidu.com/s?wd=%E6%83%AF%E6%80%A7%E6%A0%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "惯性栈",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%83%AF%E6%80%A7%E6%A0%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inertia stack",
+          "url": "https://en.wikipedia.org/w/index.php?search=inertia%20stack"
+        }
+      ]
+    },
+    {
+      "chinese_name": "刚化",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "刚化是把栈中指定的中心自同构子群除去的操作。常写成 $X \\to X rigidified by G$，其中G 是要去掉的惯性子群。\n\n它减少稳定子但不等同于取粗模空间。刚化说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。刚化还要说明对象族的基底、稳定性和自同构处理方式；刚化在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。刚化的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。刚化的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "刚化",
+          "url": "https://www.baidu.com/s?wd=%E5%88%9A%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "刚化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%9A%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "rigidize",
+          "url": "https://en.wikipedia.org/w/index.php?search=rigidize"
+        }
+      ]
+    },
+    {
+      "chinese_name": "商栈",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "商栈是群作用下保留稳定子信息的栈商。常写成 $[X/G]$，其中G 作用在 X 上，括号表示栈商。\n\n它不同于GIT商，轨道稳定子仍作为自同构保存。商栈说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。商栈还要说明对象族的基底、稳定性和自同构处理方式；商栈在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。商栈的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。商栈的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "商栈",
+          "url": "https://www.baidu.com/s?wd=%E5%95%86%E6%A0%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "商栈",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%95%86%E6%A0%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "store",
+          "url": "https://en.wikipedia.org/w/index.php?search=store"
+        }
+      ]
+    },
+    {
+      "chinese_name": "根栈",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "根栈是沿除子加入指定阶根数据的栈。常写成 $sqrt[n]{(X,D)}$，其中D 是除子，n 是根阶数。\n\n它在边界产生循环稳定子，常用于对数和抛物结构。根栈说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。根栈还要说明对象族的基底、稳定性和自同构处理方式；根栈在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。根栈的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。根栈的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "根栈",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%B9%E6%A0%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "根栈",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%B9%E6%A0%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "root stack",
+          "url": "https://en.wikipedia.org/w/index.php?search=root%20stack"
+        }
+      ]
+    },
+    {
+      "chinese_name": "对数栈",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "对数栈是带对数结构的栈，用来记录边界和退化。常写成 $(X,M_X)$，其中M_X 是对数结构。\n\n它把对数几何的边界数据提升到模栈层面。对数栈说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。对数栈还要说明对象族的基底、稳定性和自同构处理方式；对数栈在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。对数栈的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。对数栈的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对数栈",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E6%95%B0%E6%A0%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对数栈",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E6%95%B0%E6%A0%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "logarithmic stack",
+          "url": "https://en.wikipedia.org/w/index.php?search=logarithmic%20stack"
+        }
+      ]
+    },
+    {
+      "chinese_name": "导出栈",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "导出栈是取值于空间且局部由导出代数表示的栈。常写成 $X(A) in Spaces$，其中A 是导出交换代数。\n\n它比普通代数栈多保存高阶同伦和余切复形。导出栈说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。导出栈还要说明对象族的基底、稳定性和自同构处理方式；导出栈在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。导出栈的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。导出栈的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "导出栈",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%BC%E5%87%BA%E6%A0%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "导出栈",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%BC%E5%87%BA%E6%A0%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "export stack",
+          "url": "https://en.wikipedia.org/w/index.php?search=export%20stack"
+        }
+      ]
+    },
+    {
+      "chinese_name": "映射栈",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "映射栈是把两个对象之间的映射本身参数化成栈。常写成 $\\operatorname{Map}(X,Y)(S)=\\operatorname{Map}(S x X,Y)$，其中S 是测试基。\n\n它保存映射族及其自同构，是稳定映射和场论模空间的母体。映射栈说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。映射栈还要说明对象族的基底、稳定性和自同构处理方式；映射栈在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。映射栈的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。映射栈的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "映射栈",
+          "url": "https://www.baidu.com/s?wd=%E6%98%A0%E5%B0%84%E6%A0%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "映射栈",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%98%A0%E5%B0%84%E6%A0%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mapping stack",
+          "url": "https://en.wikipedia.org/w/index.php?search=mapping%20stack"
+        }
+      ]
+    },
+    {
+      "chinese_name": "辛导出栈",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "辛导出栈是带移位辛形式的导出栈。常写成 $\\omega:T_X \\simeq L_X[n]$，其中T_X 是切复形，L_X 是余切复形，n 是移位。\n\n它把虚类、泊松结构和场论的辛形式统一到导出层面。辛导出栈说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。辛导出栈还要说明对象族的基底、稳定性和自同构处理方式；辛导出栈在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。辛导出栈的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。辛导出栈的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "辛导出栈",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%9B%E5%AF%BC%E5%87%BA%E6%A0%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "辛导出栈",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%9B%E5%AF%BC%E5%87%BA%E6%A0%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "xin export stack",
+          "url": "https://en.wikipedia.org/w/index.php?search=xin%20export%20stack"
+        }
+      ]
+    },
+    {
+      "chinese_name": "泊松模空间",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "泊松模空间是带Poisson括号或退化辛结构的模空间。常写成 ${f,g}$，其中f,g 是函数，括号满足Jacobi和Leibniz。\n\n它允许辛形式退化，区别于处处非退化的辛模空间。泊松模空间说明分类问题保留到哪一级：只记同构类、保存族，还是连自同构也作为群胚数据留下；这会决定是否存在普适族以及商是否仍是代数对象。泊松模空间还要说明对象族的基底、稳定性和自同构处理方式；泊松模空间在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。泊松模空间的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。泊松模空间的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "泊松模空间",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%8A%E6%9D%BE%E6%A8%A1%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "泊松模空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%8A%E6%9D%BE%E6%A8%A1%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "poisson modulus space",
+          "url": "https://en.wikipedia.org/w/index.php?search=poisson%20modulus%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "稳定性条件空间",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "稳定性条件空间是某个范畴所有Bridgeland稳定条件形成的空间。常写成 $Stab(D)$，其中D 是三角范畴。\n\n它的点是稳定条件，不是D中对象；墙室结构控制模空间变化。稳定性条件空间属于导出或壁越版本的模理论，负阶切空间和障碍类也参与参数化；虚计数、辛结构和Donaldson-Thomas不变量都依赖这些数据。稳定性条件空间还要说明对象族的基底、稳定性和自同构处理方式；稳定性条件空间在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。稳定性条件空间的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。稳定性条件空间的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳定性条件空间",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E5%AE%9A%E6%80%A7%E6%9D%A1%E4%BB%B6%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳定性条件空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E5%AE%9A%E6%80%A7%E6%9D%A1%E4%BB%B6%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stability condition space",
+          "url": "https://en.wikipedia.org/w/index.php?search=stability%20condition%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "布里奇兰稳定性",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "布里奇兰稳定性是由中心荷和切片定义的导出范畴稳定性。常写成 $sigma=(Z,P)$，其中Z 是中心荷，P 是切片。\n\n它推广斜率稳定性，但对象位于三角范畴而非固定阿贝尔范畴。布里奇兰稳定性属于导出或壁越版本的模理论，负阶切空间和障碍类也参与参数化；虚计数、辛结构和Donaldson-Thomas不变量都依赖这些数据。布里奇兰稳定性还要说明对象族的基底、稳定性和自同构处理方式；布里奇兰稳定性在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。布里奇兰稳定性的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。布里奇兰稳定性的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "布里奇兰稳定性",
+          "url": "https://www.baidu.com/s?wd=%E5%B8%83%E9%87%8C%E5%A5%87%E5%85%B0%E7%A8%B3%E5%AE%9A%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "布里奇兰稳定性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B8%83%E9%87%8C%E5%A5%87%E5%85%B0%E7%A8%B3%E5%AE%9A%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bridgeland stability",
+          "url": "https://en.wikipedia.org/w/index.php?search=bridgeland%20stability"
+        }
+      ]
+    },
+    {
+      "chinese_name": "墙交叉公式",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "墙交叉公式是描述稳定性穿墙时不变量跳跃的公式。常写成 $\\Omega_+ = W(\\Omega_-)$，其中W 是由墙上半稳定类决定的变换。\n\n它不是单个模空间定义，而是比较两侧计数不变量的规则。墙交叉公式属于导出或壁越版本的模理论，负阶切空间和障碍类也参与参数化；虚计数、辛结构和Donaldson-Thomas不变量都依赖这些数据。墙交叉公式还要说明对象族的基底、稳定性和自同构处理方式；墙交叉公式在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。墙交叉公式的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。墙交叉公式的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "墙交叉公式",
+          "url": "https://www.baidu.com/s?wd=%E5%A2%99%E4%BA%A4%E5%8F%89%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "墙交叉公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A2%99%E4%BA%A4%E5%8F%89%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wall intersection formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=wall%20intersection%20formula"
+        }
+      ]
+    },
+    {
+      "chinese_name": "克沙壁越公式",
+      "source_file": "words/数学/噩梦模式/moduli_space_theory_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "克沙壁越公式是Kontsevich-Soibelman形式的Donaldson-Thomas墙越恒等式。常写成 $prod exp(\\Omega(gamma)e_gamma) is constant$，其中gamma 是电荷类，Omega 是DT不变量。\n\n它以代数群或量子环元素表达穿墙守恒，细化普通墙交叉公式。克沙壁越公式属于导出或壁越版本的模理论，负阶切空间和障碍类也参与参数化；虚计数、辛结构和Donaldson-Thomas不变量都依赖这些数据。克沙壁越公式还要说明对象族的基底、稳定性和自同构处理方式；克沙壁越公式在粗空间、细空间和栈中保留的数据不同，闭点相同也可能对应不同结构。克沙壁越公式的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。克沙壁越公式的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "克沙壁越公式",
+          "url": "https://www.baidu.com/s?wd=%E5%85%8B%E6%B2%99%E5%A3%81%E8%B6%8A%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "克沙壁越公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%8B%E6%B2%99%E5%A3%81%E8%B6%8A%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kontsevich soibelman formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=kontsevich%20soibelman%20formula"
+        }
+      ]
+    }
+  ]
+}

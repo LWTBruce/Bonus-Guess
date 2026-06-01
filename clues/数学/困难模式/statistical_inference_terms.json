@@ -17,6 +17,24 @@
         "对象 条件 运算 记号",
         "p zhi",
         "p_zhi"
+      ],
+      "explanation_markdown": "P值是在零假设给定后，观察到同样或更极端统计量的尾概率。常写成 $p=P_{H_0}(T(X)\\ge T(x_{obs}))$，其中$T$ 是检验统计量，概率按 $H_0$ 下的抽样分布计算。\n\n它不是零假设为真的概率，也不是效应大小；它只度量数据与零假设的相容程度。在统计推断中，P值要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。P值描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕P值给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "P值",
+          "url": "https://www.baidu.com/s?wd=P%E5%80%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "P值",
+          "url": "https://zh.wikipedia.org/w/index.php?search=P%E5%80%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "P value",
+          "url": "https://en.wikipedia.org/w/index.php?search=P%20value"
+        }
       ]
     },
     {
@@ -35,6 +53,24 @@
         "对象 条件 运算 记号",
         "wu pian estimate",
         "wu_pian_estimate"
+      ],
+      "explanation_markdown": "无偏估计是期望正好等于目标参数的估计规则。常写成 $E_\\theta\\hat\\theta=\\theta$，其中期望对参数为 $\\theta$ 的抽样分布取。\n\n它控制平均偏差，不保证单次估计接近真值，也不自动给出最小方差。在统计模型与抽样波动之间，它提供可量化的推断工具。无偏估计描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕无偏估计给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对无偏估计来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "无偏估计",
+          "url": "https://www.baidu.com/s?wd=%E6%97%A0%E5%81%8F%E4%BC%B0%E8%AE%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "无偏估计",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%97%A0%E5%81%8F%E4%BC%B0%E8%AE%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "unbiased estimate",
+          "url": "https://en.wikipedia.org/w/index.php?search=unbiased%20estimate"
+        }
       ]
     },
     {
@@ -53,6 +89,24 @@
         "对象 条件 运算 记号",
         "yi zhi estimate",
         "yi_zhi_estimate"
+      ],
+      "explanation_markdown": "一致估计是样本量增大时依概率收敛到目标参数的估计序列。常写成 $\\hat\\theta_n\\xrightarrow{p}\\theta$，其中箭头表示依概率收敛，$n$ 是样本量。\n\n它是渐近性质，和有限样本无偏性不同；有偏估计也可能一致。在有限样本或渐近框架中，它控制误差、风险或显著性。围绕一致估计给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对一致估计来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，一致估计要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "一致估计",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%80%E8%87%B4%E4%BC%B0%E8%AE%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "一致估计",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%80%E8%87%B4%E4%BC%B0%E8%AE%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "yi zhi estimate",
+          "url": "https://en.wikipedia.org/w/index.php?search=yi%20zhi%20estimate"
+        }
       ]
     },
     {
@@ -71,6 +125,24 @@
         "对象 条件 运算 记号",
         "score function",
         "score_function"
+      ],
+      "explanation_markdown": "得分函数是对数似然对参数的导数，描述局部斜率。常写成 $U(\\theta)=\\nabla_\\theta\\ell(\\theta)$，其中$\\ell$ 是对数似然，$U$ 是向量或标量得分。\n\n它用于极大似然方程和 Score 检验，和信息量的二阶曲率概念不同。对得分函数来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，得分函数要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。得分函数描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "得分函数",
+          "url": "https://www.baidu.com/s?wd=%E5%BE%97%E5%88%86%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "得分函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BE%97%E5%88%86%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "score function",
+          "url": "https://en.wikipedia.org/w/index.php?search=score%20function"
+        }
       ]
     },
     {
@@ -89,6 +161,24 @@
         "对象 条件 运算 记号",
         "observed information",
         "observed_information"
+      ],
+      "explanation_markdown": "观测信息量是给定样本下负对数似然 Hessian。常写成 $J(\\theta)=-\\nabla^2\\ell(\\theta)$，其中$\\ell$ 是该样本的对数似然，$J$ 仍随数据变化。\n\n它反映观察到的曲率，区别于对抽样分布再取期望的期望信息量。在统计模型与抽样波动之间，它提供可量化的推断工具。在统计推断中，观测信息量要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。观测信息量描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕观测信息量给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "观测信息量",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%82%E6%B5%8B%E4%BF%A1%E6%81%AF%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "观测信息量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%82%E6%B5%8B%E4%BF%A1%E6%81%AF%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "observed information",
+          "url": "https://en.wikipedia.org/w/index.php?search=observed%20information"
+        }
       ]
     },
     {
@@ -107,6 +197,24 @@
         "对象 条件 运算 记号",
         "expected information",
         "expected_information"
+      ],
+      "explanation_markdown": "期望信息量是观测信息量的模型期望，也等于得分方差。常写成 $I(\\theta)=E_\\theta J(\\theta)=Var_\\theta U(\\theta)$，其中期望在参数 $\\theta$ 下取，$U$ 为得分。\n\n它是模型层面的信息尺度，不随单个样本的偶然曲率变化。在有限样本或渐近框架中，它控制误差、风险或显著性。期望信息量描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕期望信息量给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对期望信息量来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "期望信息量",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%9F%E6%9C%9B%E4%BF%A1%E6%81%AF%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "期望信息量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%9F%E6%9C%9B%E4%BF%A1%E6%81%AF%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "expected information",
+          "url": "https://en.wikipedia.org/w/index.php?search=expected%20information"
+        }
       ]
     },
     {
@@ -125,6 +233,19 @@
         "对象 条件 运算 记号",
         "fisher xin xi ju",
         "fisher_xin_xi_ju_zhen"
+      ],
+      "explanation_markdown": "Fisher信息矩阵是多参数模型中衡量参数可分辨程度的正定矩阵。常写成 $I(\\theta)=E_\\theta[U(\\theta)U(\\theta)^T]$，其中$U$ 是得分向量，矩阵维度等于参数维度。\n\n它进入 Cramer-Rao 下界和渐近协方差，区别于单个估计值本身。围绕Fisher信息矩阵给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对Fisher信息矩阵来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，Fisher信息矩阵要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Fisher信息矩阵",
+          "url": "https://www.baidu.com/s?wd=Fisher%E4%BF%A1%E6%81%AF%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Fisher信息矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Fisher%E4%BF%A1%E6%81%AF%E7%9F%A9%E9%98%B5"
+        }
       ]
     },
     {
@@ -143,6 +264,24 @@
         "样本 参数 极值",
         "ji da likelihood equation",
         "ji_da_likelihood_equation"
+      ],
+      "explanation_markdown": "极大似然方程是把对数似然的一阶导数设为零的估计方程。常写成 $U(\\hat\\theta)=\\nabla\\ell(\\hat\\theta)=0$，其中$\\hat\\theta$ 是候选极大似然估计量。\n\n它给出驻点条件，不保证该点是全局最大，也不替代边界和约束检查。在统计模型与抽样波动之间，它提供可量化的推断工具。对极大似然方程来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，极大似然方程要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。极大似然方程描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "极大似然方程",
+          "url": "https://www.baidu.com/s?wd=%E6%9E%81%E5%A4%A7%E4%BC%BC%E7%84%B6%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "极大似然方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9E%81%E5%A4%A7%E4%BC%BC%E7%84%B6%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ji da likelihood equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=ji%20da%20likelihood%20equation"
+        }
       ]
     },
     {
@@ -161,6 +300,24 @@
         "样本 参数 极值",
         "yue shu likelihood",
         "yue_shu_likelihood"
+      ],
+      "explanation_markdown": "约束似然是在参数受到等式或集合限制时最大化似然。常写成 $L_c=\\sup_{\\theta\\in\\Theta_0}L(\\theta)$，其中$\\Theta_0$ 是受限参数空间。\n\n它常用于似然比检验，区别于剖面似然中把 nuisance 参数消去。在有限样本或渐近框架中，它控制误差、风险或显著性。在统计推断中，约束似然要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。约束似然描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕约束似然给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "约束似然",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%A6%E6%9D%9F%E4%BC%BC%E7%84%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "约束似然",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%A6%E6%9D%9F%E4%BC%BC%E7%84%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "constrained likelihood",
+          "url": "https://en.wikipedia.org/w/index.php?search=constrained%20likelihood"
+        }
       ]
     },
     {
@@ -179,6 +336,24 @@
         "样本 参数 极值",
         "pou mian likelihood",
         "pou_mian_likelihood"
+      ],
+      "explanation_markdown": "剖面似然是在固定关注参数后，对 nuisance 参数取最大值得到的函数。常写成 $L_p(\\psi)=\\sup_\\lambda L(\\psi,\\lambda)$，其中$\\psi$ 是目标参数，$\\lambda$ 是 nuisance 参数。\n\n它保留似然形状，比直接代入估计值更能反映不确定性。常见入口是把样本信息写成参数函数并寻找极值或比值。剖面似然描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕剖面似然给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对剖面似然来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "剖面似然",
+          "url": "https://www.baidu.com/s?wd=%E5%89%96%E9%9D%A2%E4%BC%BC%E7%84%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "剖面似然",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%89%96%E9%9D%A2%E4%BC%BC%E7%84%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "profile likelihood",
+          "url": "https://en.wikipedia.org/w/index.php?search=profile%20likelihood"
+        }
       ]
     },
     {
@@ -197,6 +372,24 @@
         "样本 参数 极值",
         "cheng fa likelihood",
         "cheng_fa_likelihood"
+      ],
+      "explanation_markdown": "惩罚似然是在对数似然中加入复杂度惩罚的估计准则。常写成 $\\ell_p(\\theta)=\\ell(\\theta)-\\lambda P(\\theta)$，其中$P$ 是惩罚项，$\\lambda$ 控制收缩强度。\n\n它可稳定高维估计，区别于普通极大似然的无惩罚最大化。在统计模型与抽样波动之间，它提供可量化的推断工具。围绕惩罚似然给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对惩罚似然来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，惩罚似然要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "惩罚似然",
+          "url": "https://www.baidu.com/s?wd=%E6%83%A9%E7%BD%9A%E4%BC%BC%E7%84%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "惩罚似然",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%83%A9%E7%BD%9A%E4%BC%BC%E7%84%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "punishment likelihood",
+          "url": "https://en.wikipedia.org/w/index.php?search=punishment%20likelihood"
+        }
       ]
     },
     {
@@ -215,6 +408,24 @@
         "样本 参数 极值",
         "wei likelihood",
         "wei_likelihood"
+      ],
+      "explanation_markdown": "伪似然是用较易处理的条件或边际因子替代完整联合似然。常写成 $PL(\\theta)=\\prod_i p_\\theta(X_i\\mid X_{-i})$，其中因子可来自条件分布或局部条件模型。\n\n它降低计算难度，但不等同于真正联合似然。在有限样本或渐近框架中，它控制误差、风险或显著性。对伪似然来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，伪似然要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。伪似然描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "伪似然",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%AA%E4%BC%BC%E7%84%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "伪似然",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%AA%E4%BC%BC%E7%84%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wei likelihood",
+          "url": "https://en.wikipedia.org/w/index.php?search=wei%20likelihood"
+        }
       ]
     },
     {
@@ -233,6 +444,24 @@
         "样本 参数 极值",
         "fu he likelihood",
         "fu_he_likelihood"
+      ],
+      "explanation_markdown": "复合似然是把多个低维似然因子加权组合成推断准则。常写成 $CL(\\theta)=\\prod_k L_k(\\theta)^{w_k}$，其中$L_k$ 是边际或条件似然，$w_k$ 为权重。\n\n它介于完整似然与伪似然之间，方差通常要用 Godambe 信息修正。常见入口是把样本信息写成参数函数并寻找极值或比值。在统计推断中，复合似然要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。复合似然描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕复合似然给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "复合似然",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%8D%E5%90%88%E4%BC%BC%E7%84%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "复合似然",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%8D%E5%90%88%E4%BC%BC%E7%84%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fu he likelihood",
+          "url": "https://en.wikipedia.org/w/index.php?search=fu%20he%20likelihood"
+        }
       ]
     },
     {
@@ -251,6 +480,24 @@
         "样本 参数 极值",
         "likelihood ratio tong ji",
         "likelihood_ratio_tong_ji_liang"
+      ],
+      "explanation_markdown": "似然比统计量比较受限模型和非受限模型的最大似然。常写成 $\\Lambda=2\\{\\ell(\\hat\\theta)-\\ell(\\hat\\theta_0)\\}$，其中$\\hat\\theta$ 是全模型估计，$\\hat\\theta_0$ 是零假设下估计。\n\n它关注拟合改善，和 Wald 统计量的参数差距形式不同。在统计模型与抽样波动之间，它提供可量化的推断工具。似然比统计量描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕似然比统计量给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对似然比统计量来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "似然比统计量",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%BC%E7%84%B6%E6%AF%94%E7%BB%9F%E8%AE%A1%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "似然比统计量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%BC%E7%84%B6%E6%AF%94%E7%BB%9F%E8%AE%A1%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "likelihood ratio statistics",
+          "url": "https://en.wikipedia.org/w/index.php?search=likelihood%20ratio%20statistics"
+        }
       ]
     },
     {
@@ -269,6 +516,19 @@
         "对象 条件 运算 记号",
         "wald tong ji liang",
         "wald_tong_ji_liang"
+      ],
+      "explanation_markdown": "Wald统计量用估计值与假设值的标准化距离构造检验量。常写成 $W=(R\\hat\\theta-r)^T\\{R\\hat V R^T\\}^{-1}(R\\hat\\theta-r)$，其中$R\\theta=r$ 表示待检约束，$\\hat V$ 是协方差估计。\n\n它依赖估计量的渐近正态性，和似然比的极值比较不同。在有限样本或渐近框架中，它控制误差、风险或显著性。围绕Wald统计量给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对Wald统计量来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，Wald统计量要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Wald统计量",
+          "url": "https://www.baidu.com/s?wd=Wald%E7%BB%9F%E8%AE%A1%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Wald统计量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Wald%E7%BB%9F%E8%AE%A1%E9%87%8F"
+        }
       ]
     },
     {
@@ -287,6 +547,19 @@
         "对象 条件 运算 记号",
         "score test",
         "score_test"
+      ],
+      "explanation_markdown": "Score检验只在零假设点计算得分和信息量。常写成 $S=U(\\theta_0)^T I(\\theta_0)^{-1}U(\\theta_0)$，其中$\\theta_0$ 是零假设参数，$U$ 是得分。\n\n它不需要拟合全模型的非受限估计，区别于 Wald 和似然比检验。它在给定显著性或误差标准下决定是否拒绝某个假设。对Score检验来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，Score检验要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。Score检验描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Score检验",
+          "url": "https://www.baidu.com/s?wd=Score%E6%A3%80%E9%AA%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Score检验",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Score%E6%A3%80%E9%AA%8C"
+        }
       ]
     },
     {
@@ -305,6 +578,19 @@
         "对象 条件 运算 记号",
         "neyman pearson yin li",
         "neyman_pearson_yin_li"
+      ],
+      "explanation_markdown": "NeymanPearson引理给出简单零假设对简单备择假设的最强检验形式。常写成 $\\phi(x)=1\\{L_1(x)/L_0(x)>c\\}$，其中$L_0,L_1$ 是两假设下似然，$c$ 控制显著性。\n\n它处理简单假设的功效最优，不能直接解决所有复合假设问题。在统计模型与抽样波动之间，它提供可量化的推断工具。在统计推断中，NeymanPearson引理要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。NeymanPearson引理描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕NeymanPearson引理给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "NeymanPearson引理",
+          "url": "https://www.baidu.com/s?wd=NeymanPearson%E5%BC%95%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "NeymanPearson引理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=NeymanPearson%E5%BC%95%E7%90%86"
+        }
       ]
     },
     {
@@ -323,6 +609,19 @@
         "对象 条件 运算 记号",
         "wilks theorem",
         "wilks_theorem"
+      ],
+      "explanation_markdown": "Wilks定理说明正则条件下似然比统计量渐近服从卡方分布。常写成 $2\\{\\ell(\\hat\\theta)-\\ell(\\hat\\theta_0)\\}\\Rightarrow\\chi^2_d$，其中$d$ 是约束减少的参数维数。\n\n它提供大样本标定，边界参数、弱识别或模型误设会破坏结论。在有限样本或渐近框架中，它控制误差、风险或显著性。Wilks定理描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕Wilks定理给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对Wilks定理来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Wilks定理",
+          "url": "https://www.baidu.com/s?wd=Wilks%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Wilks定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Wilks%E5%AE%9A%E7%90%86"
+        }
       ]
     },
     {
@@ -341,6 +640,19 @@
         "对象 条件 运算 记号",
         "wald test",
         "wald_test"
+      ],
+      "explanation_markdown": "Wald检验利用估计量的渐近正态性检验参数约束。常写成 $(R\\hat\\theta-r)^T(R\\hat V R^T)^{-1}(R\\hat\\theta-r)$，其中$R\\theta=r$ 是约束，$\\hat V$ 是估计协方差。\n\n它和 Wald 统计量对应，区别于 Score 检验只在零假设点计算。它在给定显著性或误差标准下决定是否拒绝某个假设。围绕Wald检验给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对Wald检验来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，Wald检验要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Wald检验",
+          "url": "https://www.baidu.com/s?wd=Wald%E6%A3%80%E9%AA%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Wald检验",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Wald%E6%A3%80%E9%AA%8C"
+        }
       ]
     },
     {
@@ -359,6 +671,19 @@
         "对象 条件 运算 记号",
         "rao test",
         "rao_test"
+      ],
+      "explanation_markdown": "Rao检验通常指基于得分的检验，也叫 Score 检验。常写成 $U(\\theta_0)^T I(\\theta_0)^{-1}U(\\theta_0)$，其中$\\theta_0$ 为零假设参数，信息矩阵在此处计算。\n\n它把局部斜率作为偏离证据，与 Wald 的估计差距形式相区分。在统计模型与抽样波动之间，它提供可量化的推断工具。对Rao检验来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，Rao检验要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。Rao检验描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Rao检验",
+          "url": "https://www.baidu.com/s?wd=Rao%E6%A3%80%E9%AA%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Rao检验",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Rao%E6%A3%80%E9%AA%8C"
+        }
       ]
     },
     {
@@ -377,6 +702,24 @@
         "对象 条件 运算 记号",
         "generalized method of moments",
         "generalized_method_of_moments_estimate"
+      ],
+      "explanation_markdown": "广义矩估计用样本矩条件逼近总体矩条件来估计参数。常写成 $\\hat\\theta=\\arg\\min_\\theta \\bar g_n(\\theta)^T W_n\\bar g_n(\\theta)$，其中$\\bar g_n$ 是样本矩均值，$W_n$ 是权矩阵。\n\n它不要求完整似然，区别于极大似然基于联合分布建模。在有限样本或渐近框架中，它控制误差、风险或显著性。在统计推断中，广义矩估计要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。广义矩估计描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕广义矩估计给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "广义矩估计",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%BF%E4%B9%89%E7%9F%A9%E4%BC%B0%E8%AE%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "广义矩估计",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%BF%E4%B9%89%E7%9F%A9%E4%BC%B0%E8%AE%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "generalized method of moments estimate",
+          "url": "https://en.wikipedia.org/w/index.php?search=generalized%20method%20of%20moments%20estimate"
+        }
       ]
     },
     {
@@ -395,6 +738,24 @@
         "对象 条件 运算 记号",
         "m estimation",
         "m_estimation"
+      ],
+      "explanation_markdown": "M估计通过最小化样本平均损失或最大化准则得到估计量。常写成 $\\hat\\theta=\\arg\\min_\\theta \\sum_i \\rho(X_i,\\theta)$，其中$\\rho$ 是损失或负准则函数。\n\n它包含最小二乘和稳健估计，区别于 Z 估计的方程零点形式。它用已知量控制未知对象的大小，常服务于存在性、唯一性或误差界。M估计描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕M估计给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对M估计来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "M估计",
+          "url": "https://www.baidu.com/s?wd=M%E4%BC%B0%E8%AE%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "M估计",
+          "url": "https://zh.wikipedia.org/w/index.php?search=M%E4%BC%B0%E8%AE%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "m estimation",
+          "url": "https://en.wikipedia.org/w/index.php?search=m%20estimation"
+        }
       ]
     },
     {
@@ -413,6 +774,24 @@
         "对象 条件 运算 记号",
         "z estimation",
         "z_estimation"
+      ],
+      "explanation_markdown": "Z估计通过求解样本估计方程的零点定义估计量。常写成 $\\Psi_n(\\hat\\theta)=0$，其中$\\Psi_n$ 是样本方程，常为经验平均。\n\n它强调根而非极值；得分方程和矩方程都可视作 Z 估计。在统计模型与抽样波动之间，它提供可量化的推断工具。围绕Z估计给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对Z估计来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，Z估计要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Z估计",
+          "url": "https://www.baidu.com/s?wd=Z%E4%BC%B0%E8%AE%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Z估计",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Z%E4%BC%B0%E8%AE%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "z estimation",
+          "url": "https://en.wikipedia.org/w/index.php?search=z%20estimation"
+        }
       ]
     },
     {
@@ -431,6 +810,24 @@
         "对象 条件 运算 记号",
         "u statistic",
         "u_statistic"
+      ],
+      "explanation_markdown": "U统计量是对无序样本子集核函数取平均的统计量。常写成 $U_n={n\\choose m}^{-1}\\sum h(X_{i_1},\\ldots,X_{i_m})$，其中求和遍历互异指标，$h$ 为对称核。\n\n它常给出无偏估计，区别于 V 统计量允许指标重复。在有限样本或渐近框架中，它控制误差、风险或显著性。对U统计量来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，U统计量要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。U统计量描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "U统计量",
+          "url": "https://www.baidu.com/s?wd=U%E7%BB%9F%E8%AE%A1%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "U统计量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=U%E7%BB%9F%E8%AE%A1%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "u statistic",
+          "url": "https://en.wikipedia.org/w/index.php?search=u%20statistic"
+        }
       ]
     },
     {
@@ -449,6 +846,24 @@
         "对象 条件 运算 记号",
         "v statistic",
         "v_statistic"
+      ],
+      "explanation_markdown": "V统计量是对所有有序指标组合求平均的核统计量。常写成 $V_n=n^{-m}\\sum_{i_1,\\ldots,i_m}h(X_{i_1},\\ldots,X_{i_m})$，其中指标可重复，$h$ 是核函数。\n\n它计算方便但通常有小偏差，和 U 统计量的无重复平均不同。在统计推断中，V统计量要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。V统计量描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕V统计量给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "V统计量",
+          "url": "https://www.baidu.com/s?wd=V%E7%BB%9F%E8%AE%A1%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "V统计量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=V%E7%BB%9F%E8%AE%A1%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "v statistic",
+          "url": "https://en.wikipedia.org/w/index.php?search=v%20statistic"
+        }
       ]
     },
     {
@@ -467,6 +882,24 @@
         "对象 条件 运算 记号",
         "influence function",
         "influence_function"
+      ],
+      "explanation_markdown": "影响函数刻画分布受到极小污染时估计泛函的一阶变化。常写成 $IF(x;T,F)=\\lim_{\\varepsilon\\downarrow0}\\{T((1-\\varepsilon)F+\\varepsilon\\Delta_x)-T(F)\\}/\\varepsilon$，其中$T$ 是统计泛函，$F$ 是分布。\n\n它衡量稳健性和渐近方差，区别于普通残差只看样本点误差。在统计模型与抽样波动之间，它提供可量化的推断工具。影响函数描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕影响函数给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对影响函数来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "影响函数",
+          "url": "https://www.baidu.com/s?wd=%E5%BD%B1%E5%93%8D%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "影响函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BD%B1%E5%93%8D%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "influence function",
+          "url": "https://en.wikipedia.org/w/index.php?search=influence%20function"
+        }
       ]
     },
     {
@@ -485,6 +918,24 @@
         "极限 主导项",
         "asymptotic efficiency",
         "asymptotic_efficiency"
+      ],
+      "explanation_markdown": "渐近效率比较估计量的大样本方差是否达到信息下界。常写成 $Var_\\infty(\\hat\\theta)\\ge I(\\theta)^{-1}$，其中$I(\\theta)$ 是 Fisher 信息。\n\n达到下界的估计量称渐近有效，区别于有限样本无偏或最小方差。在有限样本或渐近框架中，它控制误差、风险或显著性。围绕渐近效率给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对渐近效率来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，渐近效率要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "渐近效率",
+          "url": "https://www.baidu.com/s?wd=%E6%B8%90%E8%BF%91%E6%95%88%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "渐近效率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B8%90%E8%BF%91%E6%95%88%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "asymptotic efficiency",
+          "url": "https://en.wikipedia.org/w/index.php?search=asymptotic%20efficiency"
+        }
       ]
     },
     {
@@ -503,6 +954,24 @@
         "极限 主导项",
         "asymptotic variance",
         "asymptotic_variance"
+      ],
+      "explanation_markdown": "渐近方差是估计量经 $\\sqrt n$ 标准化后的极限方差。常写成 $\\sqrt n(\\hat\\theta-\\theta)\\Rightarrow N(0,V)$，其中$V$ 就是渐近方差或协方差矩阵。\n\n它不是样本方差本身，而是控制大样本误差尺度的极限量。它关心样本量、步长或变量趋于极限时留下的主导行为。对渐近方差来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，渐近方差要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。渐近方差描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "渐近方差",
+          "url": "https://www.baidu.com/s?wd=%E6%B8%90%E8%BF%91%E6%96%B9%E5%B7%AE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "渐近方差",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B8%90%E8%BF%91%E6%96%B9%E5%B7%AE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "asymptotic variance",
+          "url": "https://en.wikipedia.org/w/index.php?search=asymptotic%20variance"
+        }
       ]
     },
     {
@@ -521,6 +990,24 @@
         "对象 条件 运算 记号",
         "robust estimate",
         "robust_estimate"
+      ],
+      "explanation_markdown": "稳健估计是在异常值或模型轻微偏离下仍保持稳定的估计方法。常写成 $\\hat\\theta=\\arg\\min_\\theta\\sum_i \\rho_c(X_i,\\theta)$，其中$\\rho_c$ 通常抑制大残差影响。\n\n它区别于无偏估计；稳健性关注模型扰动下的敏感度。在统计模型与抽样波动之间，它提供可量化的推断工具。在统计推断中，稳健估计要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。稳健估计描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕稳健估计给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳健估计",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E5%81%A5%E4%BC%B0%E8%AE%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳健估计",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E5%81%A5%E4%BC%B0%E8%AE%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "robust estimate",
+          "url": "https://en.wikipedia.org/w/index.php?search=robust%20estimate"
+        }
       ]
     },
     {
@@ -539,6 +1026,19 @@
         "对象 条件 运算 记号",
         "huber estimate",
         "huber_estimate"
+      ],
+      "explanation_markdown": "Huber估计使用 Huber 损失在二次损失和绝对损失之间折中。常写成 $\\rho_c(r)=r^2/2\\ (|r|\\le c),\\ c|r|-c^2/2\\ (|r|>c)$，其中$r$ 是残差，$c$ 是截断阈值。\n\n它在小残差处高效，在大残差处降低异常值影响。在有限样本或渐近框架中，它控制误差、风险或显著性。Huber估计描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕Huber估计给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对Huber估计来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Huber估计",
+          "url": "https://www.baidu.com/s?wd=Huber%E4%BC%B0%E8%AE%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Huber估计",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Huber%E4%BC%B0%E8%AE%A1"
+        }
       ]
     },
     {
@@ -557,6 +1057,24 @@
         "对象 条件 运算 记号",
         "ji xiao zui da",
         "ji_xiao_zui_da_feng_xian"
+      ],
+      "explanation_markdown": "极小最大风险选择使最坏参数点风险最小的规则。常写成 $\\inf_\\delta\\sup_\\theta R(\\theta,\\delta)$，其中$\\delta$ 是决策规则，$R$ 是风险函数。\n\n它不依赖先验，区别于 Bayes 风险按先验平均风险。围绕极小最大风险给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对极小最大风险来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，极小最大风险要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。极小最大风险描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "极小最大风险",
+          "url": "https://www.baidu.com/s?wd=%E6%9E%81%E5%B0%8F%E6%9C%80%E5%A4%A7%E9%A3%8E%E9%99%A9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "极小最大风险",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9E%81%E5%B0%8F%E6%9C%80%E5%A4%A7%E9%A3%8E%E9%99%A9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "minimal maximum risk",
+          "url": "https://en.wikipedia.org/w/index.php?search=minimal%20maximum%20risk"
+        }
       ]
     },
     {
@@ -575,6 +1093,19 @@
         "对象 条件 运算 记号",
         "bayes feng xian",
         "bayes_feng_xian"
+      ],
+      "explanation_markdown": "Bayes风险是风险函数按先验分布加权后的平均损失。常写成 $r(\\pi,\\delta)=\\int R(\\theta,\\delta)\\,d\\pi(\\theta)$，其中 $\\pi$ 是先验，$\\delta$ 是决策规则。\n\n它衡量一条规则在先验看来整体要付出的代价，区别于极小最大风险只看最坏参数点。若某个规则使 $r(\\pi,\\delta)$ 最小，就得到相应先验下的 Bayes 规则。这个概念服务于统计决策论：先固定损失和先验，再比较估计、检验或区间规则的平均表现。解读Bayes风险时要同时交代模型族、参数空间、样本分布和损失或准则；同一个数值换了这些背景，含义会明显改变。公式中的 $\\theta$、$x$、似然或后验分布分别说明未知量、观测数据和概率来源，也帮助区分估计、检验与风险，尤其能分清 MLE、MAP 与 Bayes 规则。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Bayes风险",
+          "url": "https://www.baidu.com/s?wd=Bayes%E9%A3%8E%E9%99%A9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Bayes风险",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Bayes%E9%A3%8E%E9%99%A9"
+        }
       ]
     },
     {
@@ -593,6 +1124,24 @@
         "对象 条件 运算 记号",
         "hou yan jun zhi",
         "hou_yan_jun_zhi_estimate"
+      ],
+      "explanation_markdown": "后验均值估计是在平方损失下的 Bayes 估计量。常写成 $\\hat\\theta=E(\\theta\\mid X=x)$，其中期望按后验分布计算。\n\n它使用完整后验分布，区别于后验众数只取密度最高点。在有限样本或渐近框架中，它控制误差、风险或显著性。在统计推断中，后验均值估计要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。后验均值估计描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕后验均值估计给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "后验均值估计",
+          "url": "https://www.baidu.com/s?wd=%E5%90%8E%E9%AA%8C%E5%9D%87%E5%80%BC%E4%BC%B0%E8%AE%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "后验均值估计",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%8E%E9%AA%8C%E5%9D%87%E5%80%BC%E4%BC%B0%E8%AE%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "posterior mean estimate",
+          "url": "https://en.wikipedia.org/w/index.php?search=posterior%20mean%20estimate"
+        }
       ]
     },
     {
@@ -611,6 +1160,24 @@
         "对象 条件 运算 记号",
         "hou yan zhong wei",
         "hou_yan_zhong_wei_shu"
+      ],
+      "explanation_markdown": "后验中位数是后验分布一半质量位于其两侧的点。常写成 $P(\\theta\\le m\\mid X=x)=1/2$，其中$m$ 是后验中位数。\n\n它对应绝对损失下的 Bayes 估计，区别于后验均值对尾部更敏感。后验中位数描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕后验中位数给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对后验中位数来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，后验中位数要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "后验中位数",
+          "url": "https://www.baidu.com/s?wd=%E5%90%8E%E9%AA%8C%E4%B8%AD%E4%BD%8D%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "后验中位数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%8E%E9%AA%8C%E4%B8%AD%E4%BD%8D%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "posterior median",
+          "url": "https://en.wikipedia.org/w/index.php?search=posterior%20median"
+        }
       ]
     },
     {
@@ -629,6 +1196,24 @@
         "对象 条件 运算 记号",
         "hou yan zhong shu",
         "hou_yan_zhong_shu"
+      ],
+      "explanation_markdown": "后验众数是在后验密度达到最大的位置，也常叫 MAP 估计。常写成 $\\hat\\theta_{MAP}=\\arg\\max_\\theta \\pi(\\theta\\mid x)$，其中 $\\pi(\\theta\\mid x)\\propto L(\\theta;x)\\pi(\\theta)$。\n\n它和极大似然估计都使用似然，但 MAP 还纳入先验 $\\pi(\\theta)$，所以先验尺度和参数化会影响结果。它也不同于后验均值：平方损失下常取均值，零一损失或局部密度解释下才自然出现众数。MAP 给出一个点估计，不等同于完整后验不确定性。解读后验众数时要同时交代模型族、参数空间、样本分布和损失或准则；同一个数值换了这些背景，含义会明显改变。公式中的 $\\theta$、$x$、似然或后验分布分别说明未知量、观测数据和概率来源，也帮助区分估计、检验与风险，尤其能分清 MLE、MAP 与 Bayes 规则。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "后验众数",
+          "url": "https://www.baidu.com/s?wd=%E5%90%8E%E9%AA%8C%E4%BC%97%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "后验众数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%8E%E9%AA%8C%E4%BC%97%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "posterior mode",
+          "url": "https://en.wikipedia.org/w/index.php?search=posterior%20mode"
+        }
       ]
     },
     {
@@ -647,6 +1232,24 @@
         "对象 条件 运算 记号",
         "gong e a priori",
         "gong_e_a_priori"
+      ],
+      "explanation_markdown": "共轭先验是与似然结合后仍落在同一分布族的先验。常写成 $\\pi(\\theta\\mid x)\\in\\mathcal P$ 若 $\\pi(\\theta)\\in\\mathcal P$，其中$\\mathcal P$ 是先验族。\n\n它简化后验计算，但便利性不等于客观性或唯一性。在有限样本或渐近框架中，它控制误差、风险或显著性。对共轭先验来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，共轭先验要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。共轭先验描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "共轭先验",
+          "url": "https://www.baidu.com/s?wd=%E5%85%B1%E8%BD%AD%E5%85%88%E9%AA%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "共轭先验",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%B1%E8%BD%AD%E5%85%88%E9%AA%8C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gong e a priori",
+          "url": "https://en.wikipedia.org/w/index.php?search=gong%20e%20a%20priori"
+        }
       ]
     },
     {
@@ -665,6 +1268,19 @@
         "对象 条件 运算 记号",
         "jeffreys a priori",
         "jeffreys_a_priori"
+      ],
+      "explanation_markdown": "Jeffreys先验由 Fisher 信息的行列式构造的参数化不变先验。常写成 $\\pi_J(\\theta)\\propto\\sqrt{\\det I(\\theta)}$，其中$I(\\theta)$ 是 Fisher 信息矩阵。\n\n它减少参数变换影响，但可能是不正常先验，需要检查后验是否可积。在统计推断中，Jeffreys先验要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。Jeffreys先验描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕Jeffreys先验给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Jeffreys先验",
+          "url": "https://www.baidu.com/s?wd=Jeffreys%E5%85%88%E9%AA%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Jeffreys先验",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Jeffreys%E5%85%88%E9%AA%8C"
+        }
       ]
     },
     {
@@ -683,6 +1299,19 @@
         "对象 条件 运算 记号",
         "jing yan bayes method",
         "jing_yan_bayes_method"
+      ],
+      "explanation_markdown": "经验Bayes方法用数据估计先验中的超参数后再做 Bayes 推断。常写成 $\\hat\\eta=\\arg\\max_\\eta m_\\eta(x)$，其中$m_\\eta$ 是边际似然，$\\eta$ 是超参数。\n\n它区别于完全 Bayes；先验超参数没有再赋予完整后验不确定性。在统计模型与抽样波动之间，它提供可量化的推断工具。经验Bayes方法描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕经验Bayes方法给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对经验Bayes方法来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "经验Bayes方法",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%8F%E9%AA%8CBayes%E6%96%B9%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "经验Bayes方法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%8F%E9%AA%8CBayes%E6%96%B9%E6%B3%95"
+        }
       ]
     },
     {
@@ -701,6 +1330,24 @@
         "先验 似然 后验",
         "bayesian credible interval",
         "bayesian_credible_interval"
+      ],
+      "explanation_markdown": "贝叶斯可信区间是后验概率达到指定水平的参数集合。常写成 $P(\\theta\\in C(x)\\mid x)=1-\\alpha$，其中概率按后验分布计算。\n\n它区别于频率学派置信区间；可信区间直接给参数的后验概率。在有限样本或渐近框架中，它控制误差、风险或显著性。围绕贝叶斯可信区间给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对贝叶斯可信区间来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，贝叶斯可信区间要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "贝叶斯可信区间",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%8F%AF%E4%BF%A1%E5%8C%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "贝叶斯可信区间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%8F%AF%E4%BF%A1%E5%8C%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bayesian credible interval",
+          "url": "https://en.wikipedia.org/w/index.php?search=bayesian%20credible%20interval"
+        }
       ]
     },
     {
@@ -719,6 +1366,24 @@
         "对象 条件 运算 记号",
         "zui gao hou yan",
         "zui_gao_hou_yan_mi_du_qu_jian"
+      ],
+      "explanation_markdown": "最高后验密度区间是在给定后验概率下由最高密度点组成的区域。常写成 $C_c=\\{\\theta:\\pi(\\theta\\mid x)\\ge c\\}$，其中阈值 $c$ 调到使后验概率为目标水平。\n\n它区别于等尾区间；HPD 区间优先包含后验密度高的位置。对最高后验密度区间来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，最高后验密度区间要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。最高后验密度区间描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最高后验密度区间",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E9%AB%98%E5%90%8E%E9%AA%8C%E5%AF%86%E5%BA%A6%E5%8C%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最高后验密度区间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E9%AB%98%E5%90%8E%E9%AA%8C%E5%AF%86%E5%BA%A6%E5%8C%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "highest posterior density interval",
+          "url": "https://en.wikipedia.org/w/index.php?search=highest%20posterior%20density%20interval"
+        }
       ]
     },
     {
@@ -737,6 +1402,19 @@
         "对象 条件 运算 记号",
         "bayes yin zi",
         "bayes_yin_zi"
+      ],
+      "explanation_markdown": "Bayes因子是两个模型边际似然的比值。常写成 $BF_{10}=m_1(x)/m_0(x)$，其中$m_j(x)=\\int L_j(\\theta_j)\\pi_j(\\theta_j)d\\theta_j$。\n\n它衡量数据对模型的相对支持，区别于 P 值的尾概率解释。在统计模型与抽样波动之间，它提供可量化的推断工具。在统计推断中，Bayes因子要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。Bayes因子描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕Bayes因子给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Bayes因子",
+          "url": "https://www.baidu.com/s?wd=Bayes%E5%9B%A0%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Bayes因子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Bayes%E5%9B%A0%E5%AD%90"
+        }
       ]
     },
     {
@@ -755,6 +1433,24 @@
         "对象 条件 运算 记号",
         "admissible estimate",
         "admissible_estimate"
+      ],
+      "explanation_markdown": "可容许估计是不存在另一个规则在所有参数点风险不大且某处更小的估计。常写成 $R(\\theta,\\delta')\\le R(\\theta,\\delta)$ 且某处严格小，其中$R$ 是风险函数，$\\delta$ 是规则。\n\n它是决策论概念，区别于无偏性或一致性这类抽样性质。在有限样本或渐近框架中，它控制误差、风险或显著性。可容许估计描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕可容许估计给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对可容许估计来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "可容许估计",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%AF%E5%AE%B9%E8%AE%B8%E4%BC%B0%E8%AE%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "可容许估计",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%AF%E5%AE%B9%E8%AE%B8%E4%BC%B0%E8%AE%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "admissible estimate",
+          "url": "https://en.wikipedia.org/w/index.php?search=admissible%20estimate"
+        }
       ]
     },
     {
@@ -773,6 +1469,24 @@
         "对象 条件 运算 记号",
         "zui xiao fang cha",
         "zui_xiao_fang_cha_wu_pian_estimate"
+      ],
+      "explanation_markdown": "最小方差无偏估计是在所有无偏估计中方差最小的估计量。常写成 $E_\\theta T=\\theta,\\quad Var_\\theta(T)\\le Var_\\theta(S)$，其中$S$ 遍历无偏估计。\n\n它兼顾无偏和方差最小，通常借助充分完备统计量得到。它用已知量控制未知对象的大小，常服务于存在性、唯一性或误差界。围绕最小方差无偏估计给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对最小方差无偏估计来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，最小方差无偏估计要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最小方差无偏估计",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E5%B0%8F%E6%96%B9%E5%B7%AE%E6%97%A0%E5%81%8F%E4%BC%B0%E8%AE%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最小方差无偏估计",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E5%B0%8F%E6%96%B9%E5%B7%AE%E6%97%A0%E5%81%8F%E4%BC%B0%E8%AE%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "minimum variance unbiased estimator",
+          "url": "https://en.wikipedia.org/w/index.php?search=minimum%20variance%20unbiased%20estimator"
+        }
       ]
     },
     {
@@ -791,6 +1505,24 @@
         "对象 条件 运算 记号",
         "chong fen wan bei",
         "chong_fen_wan_bei_zu"
+      ],
+      "explanation_markdown": "充分完备族是既充分又完备的统计量族或分布族。常写成 $E_\\theta h(T)=0\\ \\forall\\theta\\Rightarrow h(T)=0\\ a.s.$，其中$T$ 是统计量，完备性排除非零无偏零估计。\n\n它强于充分性；充分只保留信息，完备还保证无偏表示唯一。在统计模型与抽样波动之间，它提供可量化的推断工具。对充分完备族来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，充分完备族要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。充分完备族描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "充分完备族",
+          "url": "https://www.baidu.com/s?wd=%E5%85%85%E5%88%86%E5%AE%8C%E5%A4%87%E6%97%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "充分完备族",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%85%E5%88%86%E5%AE%8C%E5%A4%87%E6%97%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fully complete family",
+          "url": "https://en.wikipedia.org/w/index.php?search=fully%20complete%20family"
+        }
       ]
     },
     {
@@ -809,6 +1541,19 @@
         "对象 条件 运算 记号",
         "rao blackwell hua",
         "rao_blackwell_hua"
+      ],
+      "explanation_markdown": "RaoBlackwell化用充分统计量条件期望改进估计量。常写成 $\\delta^*(T)=E(\\delta(X)\\mid T)$，其中$T$ 是充分统计量，$\\delta$ 是原估计。\n\n它通常降低风险或方差，区别于随意平滑估计值。在有限样本或渐近框架中，它控制误差、风险或显著性。在统计推断中，RaoBlackwell化要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。RaoBlackwell化描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕RaoBlackwell化给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "RaoBlackwell化",
+          "url": "https://www.baidu.com/s?wd=RaoBlackwell%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "RaoBlackwell化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=RaoBlackwell%E5%8C%96"
+        }
       ]
     },
     {
@@ -827,6 +1572,19 @@
         "对象 条件 运算 记号",
         "lehmann scheffe theorem",
         "lehmann_scheffe_theorem"
+      ],
+      "explanation_markdown": "LehmannScheffe定理说明充分完备统计量上的无偏估计是唯一 UMVU。常写成 $E_\\theta g(T)=\\tau(\\theta)\\Rightarrow g(T)\\text{ is UMVU}$，其中$T$ 充分完备，$g(T)$ 无偏估计目标。\n\n它把 Rao-Blackwell 化和完备性结合起来。LehmannScheffe定理描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕LehmannScheffe定理给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对LehmannScheffe定理来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，LehmannScheffe定理要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "LehmannScheffe定理",
+          "url": "https://www.baidu.com/s?wd=LehmannScheffe%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "LehmannScheffe定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=LehmannScheffe%E5%AE%9A%E7%90%86"
+        }
       ]
     },
     {
@@ -845,6 +1603,19 @@
         "对象 条件 运算 记号",
         "cramerrao xia jie",
         "cramerrao_xia_jie"
+      ],
+      "explanation_markdown": "CramerRao下界给出无偏估计方差的 Fisher 信息下界。常写成 $Var_\\theta(T)\\ge \\{\\tau'(\\theta)\\}^2/I(\\theta)$，其中$T$ 无偏估计 $\\tau(\\theta)$，$I$ 是信息量。\n\n它是正则模型下的限制，不保证下界一定能达到。在统计模型与抽样波动之间，它提供可量化的推断工具。围绕CramerRao下界给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对CramerRao下界来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，CramerRao下界要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "CramerRao下界",
+          "url": "https://www.baidu.com/s?wd=CramerRao%E4%B8%8B%E7%95%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "CramerRao下界",
+          "url": "https://zh.wikipedia.org/w/index.php?search=CramerRao%E4%B8%8B%E7%95%8C"
+        }
       ]
     },
     {
@@ -863,6 +1634,24 @@
         "对象 条件 运算 记号",
         "xin xi inequality",
         "xin_xi_inequality"
+      ],
+      "explanation_markdown": "信息不等式用 Fisher 信息限制估计精度。常写成 $Var_\\theta(T)\\,I(\\theta)\\ge \\{dE_\\theta T/d\\theta\\}^2$，其中$T$ 是统计量，导数描述均值对参数的敏感度。\n\n它包含 Cramer-Rao 下界，区别于熵论中的其他信息不等式。在有限样本或渐近框架中，它控制误差、风险或显著性。对信息不等式来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，信息不等式要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。信息不等式描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "信息不等式",
+          "url": "https://www.baidu.com/s?wd=%E4%BF%A1%E6%81%AF%E4%B8%8D%E7%AD%89%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "信息不等式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BF%A1%E6%81%AF%E4%B8%8D%E7%AD%89%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "xin xi inequality",
+          "url": "https://en.wikipedia.org/w/index.php?search=xin%20xi%20inequality"
+        }
       ]
     },
     {
@@ -881,6 +1670,19 @@
         "对象 条件 运算 记号",
         "delta method",
         "delta_method"
+      ],
+      "explanation_markdown": "Delta方法把渐近正态估计量经过光滑函数后的极限分布线性化。常写成 $\\sqrt n\\{g(\\hat\\theta)-g(\\theta)\\}\\Rightarrow N(0,g'(\\theta)Vg'(\\theta)^T)$，其中$g'$ 是导数，$V$ 是原估计渐近方差。\n\n它适合光滑变换，非可微函数需要其他工具。它给出一套操作流程，用来构造近似、证明结论或求出解。在统计推断中，Delta方法要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。Delta方法描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕Delta方法给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Delta方法",
+          "url": "https://www.baidu.com/s?wd=Delta%E6%96%B9%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Delta方法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Delta%E6%96%B9%E6%B3%95"
+        }
       ]
     },
     {
@@ -899,6 +1701,19 @@
         "对象 条件 运算 记号",
         "slutsky theorem",
         "slutsky_theorem"
+      ],
+      "explanation_markdown": "Slutsky定理说明收敛到常数的随机量可在极限分布中替换。常写成 $X_n\\Rightarrow X,\\ Y_n\\xrightarrow{p}c\\Rightarrow X_nY_n\\Rightarrow cX$，其中$c$ 是常数。\n\n它支撑标准误替换和学生化统计量，区别于连续映射定理的函数变换。在统计模型与抽样波动之间，它提供可量化的推断工具。Slutsky定理描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕Slutsky定理给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对Slutsky定理来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Slutsky定理",
+          "url": "https://www.baidu.com/s?wd=Slutsky%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Slutsky定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Slutsky%E5%AE%9A%E7%90%86"
+        }
       ]
     },
     {
@@ -917,6 +1732,24 @@
         "对象 条件 运算 记号",
         "continuity ying she theorem",
         "continuity_ying_she_theorem"
+      ],
+      "explanation_markdown": "连续映射定理把随机变量收敛传递到连续函数下。常写成 $X_n\\Rightarrow X\\Rightarrow g(X_n)\\Rightarrow g(X)$，其中$g$ 在相关点连续。\n\n它处理函数变换，和 Slutsky 定理中“乘上收敛常数”的替换互补。在有限样本或渐近框架中，它控制误差、风险或显著性。围绕连续映射定理给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对连续映射定理来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，连续映射定理要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "连续映射定理",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%9E%E7%BB%AD%E6%98%A0%E5%B0%84%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "连续映射定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%9E%E7%BB%AD%E6%98%A0%E5%B0%84%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "continuous map theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=continuous%20map%20theorem"
+        }
       ]
     },
     {
@@ -935,6 +1768,24 @@
         "极限 主导项",
         "asymptotic zheng tai estimate",
         "asymptotic_zheng_tai_estimate"
+      ],
+      "explanation_markdown": "渐近正态估计是标准化误差极限为正态分布的估计量。常写成 $\\sqrt n(\\hat\\theta_n-\\theta_0)\\Rightarrow N(0,V)$，其中$V$ 是渐近协方差。\n\n它给出区间和检验的近似基础，但不保证小样本正态。它用已知量控制未知对象的大小，常服务于存在性、唯一性或误差界。对渐近正态估计来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，渐近正态估计要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。渐近正态估计描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "渐近正态估计",
+          "url": "https://www.baidu.com/s?wd=%E6%B8%90%E8%BF%91%E6%AD%A3%E6%80%81%E4%BC%B0%E8%AE%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "渐近正态估计",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B8%90%E8%BF%91%E6%AD%A3%E6%80%81%E4%BC%B0%E8%AE%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "asymptotic normal estimation",
+          "url": "https://en.wikipedia.org/w/index.php?search=asymptotic%20normal%20estimation"
+        }
       ]
     },
     {
@@ -953,6 +1804,24 @@
         "对象 条件 运算 记号",
         "yi zhi estimate xu",
         "yi_zhi_estimate_xu_lie"
+      ],
+      "explanation_markdown": "一致估计序列是一串随样本量变化并收敛到真值的估计量。常写成 $P_\\theta(|\\hat\\theta_n-\\theta|>\\varepsilon)\\to0$，其中对任意正 $\\varepsilon$ 概率都趋零。\n\n它强调序列极限，和单个估计量的无偏性不是同一性质。在统计模型与抽样波动之间，它提供可量化的推断工具。在统计推断中，一致估计序列要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。一致估计序列描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕一致估计序列给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "一致估计序列",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%80%E8%87%B4%E4%BC%B0%E8%AE%A1%E5%BA%8F%E5%88%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "一致估计序列",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%80%E8%87%B4%E4%BC%B0%E8%AE%A1%E5%BA%8F%E5%88%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "yi zhi estimate xu lie",
+          "url": "https://en.wikipedia.org/w/index.php?search=yi%20zhi%20estimate%20xu%20lie"
+        }
       ]
     },
     {
@@ -971,6 +1840,24 @@
         "极限 主导项",
         "ju bu asymptotic zheng",
         "ju_bu_asymptotic_zheng_tai_xing"
+      ],
+      "explanation_markdown": "局部渐近正态性描述真值附近似然比可由高斯二次型近似。常写成 $\\ell(\\theta_0+h/\\sqrt n)-\\ell(\\theta_0)=h^T\\Delta_n-\\tfrac12h^TIh+o_p(1)$，其中$\\Delta_n$ 渐近正态，$I$ 是信息矩阵。\n\n它是研究效率、局部功效和半参数推断的基础。在有限样本或渐近框架中，它控制误差、风险或显著性。局部渐近正态性描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕局部渐近正态性给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对局部渐近正态性来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "局部渐近正态性",
+          "url": "https://www.baidu.com/s?wd=%E5%B1%80%E9%83%A8%E6%B8%90%E8%BF%91%E6%AD%A3%E6%80%81%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "局部渐近正态性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B1%80%E9%83%A8%E6%B8%90%E8%BF%91%E6%AD%A3%E6%80%81%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "local asymptotic normality",
+          "url": "https://en.wikipedia.org/w/index.php?search=local%20asymptotic%20normality"
+        }
       ]
     },
     {
@@ -989,6 +1876,24 @@
         "极限 主导项",
         "asymptotic zhi xin qu",
         "asymptotic_zhi_xin_qu_jian"
+      ],
+      "explanation_markdown": "渐近置信区间用大样本正态近似构造覆盖区间。常写成 $\\hat\\theta\\pm z_{1-\\alpha/2}\\widehat{se}(\\hat\\theta)$，其中$z$ 是标准正态分位数，$se$ 是标准误。\n\n它区别于贝叶斯可信区间；这里的概率解释来自重复抽样覆盖率。它关心样本量、步长或变量趋于极限时留下的主导行为。围绕渐近置信区间给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对渐近置信区间来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，渐近置信区间要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "渐近置信区间",
+          "url": "https://www.baidu.com/s?wd=%E6%B8%90%E8%BF%91%E7%BD%AE%E4%BF%A1%E5%8C%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "渐近置信区间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B8%90%E8%BF%91%E7%BD%AE%E4%BF%A1%E5%8C%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "asymptotic confidence interval",
+          "url": "https://en.wikipedia.org/w/index.php?search=asymptotic%20confidence%20interval"
+        }
       ]
     },
     {
@@ -1007,6 +1912,24 @@
         "对象 条件 运算 记号",
         "can shu identifiability",
         "can_shu_identifiability"
+      ],
+      "explanation_markdown": "参数可识别性要求不同参数给出不同分布。常写成 $P_\\theta=P_{\\theta'}\\Rightarrow \\theta=\\theta'$，其中$P_\\theta$ 是参数对应的数据分布。\n\n没有可识别性时，更多样本也无法区分等价参数点。在统计模型与抽样波动之间，它提供可量化的推断工具。对参数可识别性来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，参数可识别性要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。参数可识别性描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "参数可识别性",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%82%E6%95%B0%E5%8F%AF%E8%AF%86%E5%88%AB%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "参数可识别性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%82%E6%95%B0%E5%8F%AF%E8%AF%86%E5%88%AB%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "parameter identifiability",
+          "url": "https://en.wikipedia.org/w/index.php?search=parameter%20identifiability"
+        }
       ]
     },
     {
@@ -1025,6 +1948,24 @@
         "对象 条件 运算 记号",
         "mo xing wu she",
         "mo_xing_wu_she"
+      ],
+      "explanation_markdown": "模型误设是数据真实分布不属于假定模型族。常写成 $P_0\\notin\\{P_\\theta:\\theta\\in\\Theta\\}$，其中$P_0$ 是真实分布，$P_\\theta$ 是模型族。\n\n此时估计常收敛到伪真值，标准误也需用夹心修正。在有限样本或渐近框架中，它控制误差、风险或显著性。在统计推断中，模型误设要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。模型误设描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕模型误设给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "模型误设",
+          "url": "https://www.baidu.com/s?wd=%E6%A8%A1%E5%9E%8B%E8%AF%AF%E8%AE%BE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "模型误设",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A8%A1%E5%9E%8B%E8%AF%AF%E8%AE%BE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "model misspecification",
+          "url": "https://en.wikipedia.org/w/index.php?search=model%20misspecification"
+        }
       ]
     },
     {
@@ -1043,6 +1984,24 @@
         "对象 条件 运算 记号",
         "robust biao zhun wu",
         "robust_biao_zhun_wu"
+      ],
+      "explanation_markdown": "稳健标准误在异方差或模型误设下用夹心形式估计方差。常写成 $\\widehat V=A^{-1}BA^{-1}$，其中$A$ 是敏感度矩阵，$B$ 是得分或矩条件方差。\n\n它修正方差估计，不等于改变点估计本身。稳健标准误描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕稳健标准误给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对稳健标准误来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，稳健标准误要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳健标准误",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E5%81%A5%E6%A0%87%E5%87%86%E8%AF%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳健标准误",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E5%81%A5%E6%A0%87%E5%87%86%E8%AF%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "robust standard error",
+          "url": "https://en.wikipedia.org/w/index.php?search=robust%20standard%20error"
+        }
       ]
     },
     {
@@ -1061,6 +2020,19 @@
         "对象 条件 运算 记号",
         "bootstrap method",
         "bootstrap_method"
+      ],
+      "explanation_markdown": "Bootstrap方法通过从估计分布中重复抽样近似统计量分布。常写成 $X_1^*,\\ldots,X_n^*\\sim \\hat F$，其中$\\hat F$ 是经验分布或参数化拟合分布。\n\n它用于标准误和区间估计，区别于解析渐近公式。在统计模型与抽样波动之间，它提供可量化的推断工具。围绕Bootstrap方法给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对Bootstrap方法来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，Bootstrap方法要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Bootstrap方法",
+          "url": "https://www.baidu.com/s?wd=Bootstrap%E6%96%B9%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Bootstrap方法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Bootstrap%E6%96%B9%E6%B3%95"
+        }
       ]
     },
     {
@@ -1079,6 +2051,19 @@
         "对象 条件 运算 记号",
         "can shu bootstrap",
         "can_shu_bootstrap"
+      ],
+      "explanation_markdown": "参数Bootstrap从拟合的参数模型中模拟新样本。常写成 $X_i^*\\sim P_{\\hat\\theta}$，其中$\\hat\\theta$ 来自原样本估计。\n\n它依赖模型族正确性，区别于非参数 Bootstrap 直接重抽经验分布。在有限样本或渐近框架中，它控制误差、风险或显著性。对参数Bootstrap来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，参数Bootstrap要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。参数Bootstrap描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "参数Bootstrap",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%82%E6%95%B0Bootstrap%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "参数Bootstrap",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%82%E6%95%B0Bootstrap"
+        }
       ]
     },
     {
@@ -1097,6 +2082,19 @@
         "对象 条件 运算 记号",
         "fei can shu bootstrap",
         "fei_can_shu_bootstrap"
+      ],
+      "explanation_markdown": "非参数Bootstrap从原样本经验分布中有放回重抽样。常写成 $X_i^*\\sim \\hat F_n$，其中$\\hat F_n$ 给每个观测质量 $1/n$。\n\n它少用模型假设，但对极端尾部或依赖数据需额外处理。在统计推断中，非参数Bootstrap要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。非参数Bootstrap描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕非参数Bootstrap给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "非参数Bootstrap",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%9E%E5%8F%82%E6%95%B0Bootstrap%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "非参数Bootstrap",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%9E%E5%8F%82%E6%95%B0Bootstrap"
+        }
       ]
     },
     {
@@ -1115,6 +2113,19 @@
         "对象 条件 运算 记号",
         "jackknife method",
         "jackknife_method"
+      ],
+      "explanation_markdown": "Jackknife方法逐次删去一个观测来估计偏差或方差。常写成 $\\hat\\theta_{(-i)}=T(X_1,\\ldots,X_{i-1},X_{i+1},\\ldots,X_n)$，其中每个伪样本少一个观测。\n\n它和 Bootstrap 都是重抽样思想，但 Jackknife 的重抽样结构更固定。在统计模型与抽样波动之间，它提供可量化的推断工具。Jackknife方法描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕Jackknife方法给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对Jackknife方法来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Jackknife方法",
+          "url": "https://www.baidu.com/s?wd=Jackknife%E6%96%B9%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Jackknife方法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Jackknife%E6%96%B9%E6%B3%95"
+        }
       ]
     },
     {
@@ -1133,6 +2144,24 @@
         "对象 条件 运算 记号",
         "jiao cha yan zheng",
         "jiao_cha_yan_zheng_estimate"
+      ],
+      "explanation_markdown": "交叉验证估计用训练集拟合、验证集评估来估计预测误差。常写成 $CV=K^{-1}\\sum_{k=1}^K L_{V_k}(\\hat f_{-k})$，其中$V_k$ 是第 $k$ 个验证折，$\\hat f_{-k}$ 不用该折拟合。\n\n它关注预测风险，区别于参数置信区间。在有限样本或渐近框架中，它控制误差、风险或显著性。围绕交叉验证估计给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对交叉验证估计来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，交叉验证估计要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "交叉验证估计",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%E4%BC%B0%E8%AE%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "交叉验证估计",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%E4%BC%B0%E8%AE%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cross validation estimate",
+          "url": "https://en.wikipedia.org/w/index.php?search=cross%20validation%20estimate"
+        }
       ]
     },
     {
@@ -1151,6 +2180,24 @@
         "对象 条件 运算 记号",
         "zhi huan test",
         "zhi_huan_test"
+      ],
+      "explanation_markdown": "置换检验在零假设的交换性下重排标签得到检验分布。常写成 $p=\\#\\{T(\\pi X)\\ge T(X)\\}/\\#\\{\\pi\\}$，其中$\\pi$ 遍历或抽样置换。\n\n它不依赖渐近正态近似，但依赖零假设下的可交换结构。它在给定显著性或误差标准下决定是否拒绝某个假设。对置换检验来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，置换检验要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。置换检验描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "置换检验",
+          "url": "https://www.baidu.com/s?wd=%E7%BD%AE%E6%8D%A2%E6%A3%80%E9%AA%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "置换检验",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BD%AE%E6%8D%A2%E6%A3%80%E9%AA%8C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "permutation test",
+          "url": "https://en.wikipedia.org/w/index.php?search=permutation%20test"
+        }
       ]
     },
     {
@@ -1169,6 +2216,24 @@
         "对象 条件 运算 记号",
         "jing que test",
         "jing_que_test"
+      ],
+      "explanation_markdown": "精确检验使用有限样本精确分布控制显著性。常写成 $P_{H_0}(T\\in C)=\\alpha$，其中$C$ 是拒绝域，概率不靠大样本近似。\n\n它常用于小样本离散模型，区别于渐近检验的近似标定。在统计模型与抽样波动之间，它提供可量化的推断工具。在统计推断中，精确检验要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。精确检验描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕精确检验给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "精确检验",
+          "url": "https://www.baidu.com/s?wd=%E7%B2%BE%E7%A1%AE%E6%A3%80%E9%AA%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "精确检验",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B2%BE%E7%A1%AE%E6%A3%80%E9%AA%8C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "accurate inspection",
+          "url": "https://en.wikipedia.org/w/index.php?search=accurate%20inspection"
+        }
       ]
     },
     {
@@ -1187,6 +2252,24 @@
         "对象 条件 运算 记号",
         "xu guan test",
         "xu_guan_test"
+      ],
+      "explanation_markdown": "序贯检验允许边观察数据边决定是否停止。常写成 $\\tau=\\inf\\{n:S_n\\notin(a,b)\\}$，其中$\\tau$ 是停止时刻，$S_n$ 是累计统计量。\n\n它把样本量变成随机量，区别于固定样本量检验。在有限样本或渐近框架中，它控制误差、风险或显著性。序贯检验描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕序贯检验给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对序贯检验来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "序贯检验",
+          "url": "https://www.baidu.com/s?wd=%E5%BA%8F%E8%B4%AF%E6%A3%80%E9%AA%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "序贯检验",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BA%8F%E8%B4%AF%E6%A3%80%E9%AA%8C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "sequential test",
+          "url": "https://en.wikipedia.org/w/index.php?search=sequential%20test"
+        }
       ]
     },
     {
@@ -1205,6 +2288,24 @@
         "对象 条件 运算 记号",
         "duo zhong test",
         "duo_zhong_test"
+      ],
+      "explanation_markdown": "多重检验同时进行多个假设检验并控制整体错误。常写成 $H_1,\\ldots,H_m$，其中$m$ 是检验个数，需要调整显著性或发现规则。\n\n它关注错误累积，区别于单个 P 值的单检验解释。它在给定显著性或误差标准下决定是否拒绝某个假设。围绕多重检验给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对多重检验来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，多重检验要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "多重检验",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%9A%E9%87%8D%E6%A3%80%E9%AA%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "多重检验",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%9A%E9%87%8D%E6%A3%80%E9%AA%8C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "multiple testing",
+          "url": "https://en.wikipedia.org/w/index.php?search=multiple%20testing"
+        }
       ]
     },
     {
@@ -1223,6 +2324,24 @@
         "对象 条件 运算 记号",
         "false discovery rate",
         "false_discovery_rate"
+      ],
+      "explanation_markdown": "错误发现率是真发现和假发现混合时对假发现比例的期望控制。常写成 $FDR=E[V/\\max(R,1)]$，其中$V$ 是假阳性个数，$R$ 是拒绝总数。\n\n它比族错误率宽松，适合大规模筛选。在统计模型与抽样波动之间，它提供可量化的推断工具。对错误发现率来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，错误发现率要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。错误发现率描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "错误发现率",
+          "url": "https://www.baidu.com/s?wd=%E9%94%99%E8%AF%AF%E5%8F%91%E7%8E%B0%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "错误发现率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%94%99%E8%AF%AF%E5%8F%91%E7%8E%B0%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "false discovery rate",
+          "url": "https://en.wikipedia.org/w/index.php?search=false%20discovery%20rate"
+        }
       ]
     },
     {
@@ -1241,6 +2360,19 @@
         "对象 条件 运算 记号",
         "bonferroni xiao zheng",
         "bonferroni_xiao_zheng"
+      ],
+      "explanation_markdown": "Bonferroni校正用总显著性水平除以检验个数来控制族错误率。常写成 $\\alpha_i=\\alpha/m$，其中$m$ 是检验个数。\n\n它简单保守，不利用检验间相关或 P 值排序信息。在有限样本或渐近框架中，它控制误差、风险或显著性。在统计推断中，Bonferroni校正要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。Bonferroni校正描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕Bonferroni校正给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Bonferroni校正",
+          "url": "https://www.baidu.com/s?wd=Bonferroni%E6%A0%A1%E6%AD%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Bonferroni校正",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Bonferroni%E6%A0%A1%E6%AD%A3"
+        }
       ]
     },
     {
@@ -1259,6 +2391,19 @@
         "对象 条件 运算 记号",
         "holm xiao zheng",
         "holm_xiao_zheng"
+      ],
+      "explanation_markdown": "Holm校正按 P 值从小到大逐步控制族错误率。常写成 $p_{(k)}\\le \\alpha/(m-k+1)$，其中$p_{(k)}$ 是第 $k$ 小 P 值。\n\n它通常比 Bonferroni 更有功效，但仍控制族错误率。Holm校正描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕Holm校正给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对Holm校正来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，Holm校正要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Holm校正",
+          "url": "https://www.baidu.com/s?wd=Holm%E6%A0%A1%E6%AD%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Holm校正",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Holm%E6%A0%A1%E6%AD%A3"
+        }
       ]
     },
     {
@@ -1277,6 +2422,24 @@
         "样本 参数 极值",
         "likelihood gen",
         "likelihood_gen"
+      ],
+      "explanation_markdown": "似然根是带符号的似然比平方根统计量。常写成 $r=\\operatorname{sign}(\\hat\\psi-\\psi_0)\\sqrt{2\\{\\ell_p(\\hat\\psi)-\\ell_p(\\psi_0)\\}}$，其中$\\psi$ 是关注参数，$\\ell_p$ 是剖面对数似然。\n\n它保留方向信息，区别于普通似然比统计量的非负形式。在统计模型与抽样波动之间，它提供可量化的推断工具。围绕似然根给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对似然根来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，似然根要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "似然根",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%BC%E7%84%B6%E6%A0%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "似然根",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%BC%E7%84%B6%E6%A0%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "likelihood gen",
+          "url": "https://en.wikipedia.org/w/index.php?search=likelihood%20gen"
+        }
       ]
     },
     {
@@ -1295,6 +2458,24 @@
         "样本 参数 极值",
         "bian ji likelihood",
         "bian_ji_likelihood"
+      ],
+      "explanation_markdown": "边际似然是把参数按先验积分掉后的数据密度。常写成 $m(x)=\\int L(\\theta;x)\\pi(\\theta)d\\theta$，其中$L$ 是似然，$\\pi$ 是先验。\n\n它用于 Bayes 因子和经验 Bayes，区别于剖面似然的最大化消去。在有限样本或渐近框架中，它控制误差、风险或显著性。对边际似然来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，边际似然要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。边际似然描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "边际似然",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%B9%E9%99%85%E4%BC%BC%E7%84%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "边际似然",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%B9%E9%99%85%E4%BC%BC%E7%84%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "marginal likelihood",
+          "url": "https://en.wikipedia.org/w/index.php?search=marginal%20likelihood"
+        }
       ]
     },
     {
@@ -1313,6 +2494,24 @@
         "对象 条件 运算 记号",
         "em suan fa",
         "em_suan_fa"
+      ],
+      "explanation_markdown": "EM算法在含隐变量模型中交替取期望和最大化。常写成 $Q(\\theta|\\theta^{(t)})=E_{\\theta^{(t)}}[\\log L_c(\\theta)\\mid X]$，其中$L_c$ 是完整数据似然。\n\n它提高观测似然但可能收敛到局部极值，不是一次闭式求解。在统计推断中，EM算法要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。EM算法描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕EM算法给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "EM算法",
+          "url": "https://www.baidu.com/s?wd=EM%E7%AE%97%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "EM算法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=EM%E7%AE%97%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "EM algorithm",
+          "url": "https://en.wikipedia.org/w/index.php?search=EM%20algorithm"
+        }
       ]
     },
     {
@@ -1331,6 +2530,24 @@
         "对象 条件 运算 记号",
         "mcmc estimate",
         "mcmc_estimate"
+      ],
+      "explanation_markdown": "MCMC估计用马尔可夫链样本平均近似目标分布期望。常写成 $\\hat\\mu=N^{-1}\\sum_{t=1}^N h(\\theta^{(t)})$，其中$\\theta^{(t)}$ 来自以目标分布为平稳分布的链。\n\n它处理难积分后验，需关注混合和相关性。在统计模型与抽样波动之间，它提供可量化的推断工具。MCMC估计描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕MCMC估计给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对MCMC估计来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "MCMC估计",
+          "url": "https://www.baidu.com/s?wd=MCMC%E4%BC%B0%E8%AE%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "MCMC估计",
+          "url": "https://zh.wikipedia.org/w/index.php?search=MCMC%E4%BC%B0%E8%AE%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mcmc estimate",
+          "url": "https://en.wikipedia.org/w/index.php?search=mcmc%20estimate"
+        }
       ]
     },
     {
@@ -1349,6 +2566,19 @@
         "对象 条件 运算 记号",
         "gibbs chou yang",
         "gibbs_chou_yang"
+      ],
+      "explanation_markdown": "Gibbs抽样逐个从条件分布抽样构造 MCMC。常写成 $\\theta_j^{(t+1)}\\sim \\pi(\\theta_j\\mid \\theta_{-j}^{(t)},x)$，其中$\\theta_{-j}$ 表示其余分量。\n\n它不需要接受拒绝步骤，但要求条件分布可抽样。在有限样本或渐近框架中，它控制误差、风险或显著性。围绕Gibbs抽样给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对Gibbs抽样来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，Gibbs抽样要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。Gibbs抽样描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Gibbs抽样",
+          "url": "https://www.baidu.com/s?wd=Gibbs%E6%8A%BD%E6%A0%B7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Gibbs抽样",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Gibbs%E6%8A%BD%E6%A0%B7"
+        }
       ]
     },
     {
@@ -1367,6 +2597,19 @@
         "对象 条件 运算 记号",
         "metropolishastings suan fa",
         "metropolishastings_suan_fa"
+      ],
+      "explanation_markdown": "MetropolisHastings算法用提议分布和接受概率构造目标分布不变的链。常写成 $a(x,y)=\\min\\{1,\\pi(y)q(y,x)/(\\pi(x)q(x,y))\\}$，其中$q$ 是提议密度，$a$ 是接受概率。\n\n它比 Gibbs 更通用，但效率依赖提议分布设计。对MetropolisHastings算法来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，MetropolisHastings算法要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。MetropolisHastings算法描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕MetropolisHastings算法给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "MetropolisHastings算法",
+          "url": "https://www.baidu.com/s?wd=MetropolisHastings%E7%AE%97%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "MetropolisHastings算法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=MetropolisHastings%E7%AE%97%E6%B3%95"
+        }
       ]
     },
     {
@@ -1385,6 +2628,24 @@
         "样本 参数 极值",
         "ji da likelihood estimator",
         "ji_da_likelihood_estimator"
+      ],
+      "explanation_markdown": "极大似然估计量是在参数空间中使样本似然最大的点。常写成 $\\hat\\theta_{MLE}=\\arg\\max_{\\theta}L(\\theta;x)$，其中 $L(\\theta;x)$ 是观测数据 $x$ 下的似然函数。\n\n它把参数看作固定未知量，只让数据随机；先验分布不参与定义。MLE 常和得分方程 $\\partial\\ell(\\theta)/\\partial\\theta=0$、Fisher 信息和渐近正态性一起使用。它区别于 MAP 估计，后者最大化的是后验密度，等于在似然上再乘先验因子。解读极大似然估计量时要同时交代模型族、参数空间、样本分布和损失或准则；同一个数值换了这些背景，含义会明显改变。公式中的 $\\theta$、$x$、似然或后验分布分别说明未知量、观测数据和概率来源，也帮助区分估计、检验与风险，尤其能分清 MLE、MAP 与 Bayes 规则。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "极大似然估计量",
+          "url": "https://www.baidu.com/s?wd=%E6%9E%81%E5%A4%A7%E4%BC%BC%E7%84%B6%E4%BC%B0%E8%AE%A1%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "极大似然估计量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9E%81%E5%A4%A7%E4%BC%BC%E7%84%B6%E4%BC%B0%E8%AE%A1%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ji da likelihood estimator",
+          "url": "https://en.wikipedia.org/w/index.php?search=ji%20da%20likelihood%20estimator"
+        }
       ]
     },
     {
@@ -1403,6 +2664,24 @@
         "样本 参数 极值",
         "ji da likelihood zhi",
         "ji_da_likelihood_zhi_xin_qu_jian"
+      ],
+      "explanation_markdown": "极大似然置信区间是基于极大似然近似构造的频率区间。常写成 $2\\{\\ell(\\hat\\theta)-\\ell(\\theta)\\}\\le \\chi^2_{1,1-\\alpha}$，其中左侧是剖面似然比统计量。\n\n它区别于贝叶斯可信区间；覆盖率来自重复抽样近似。在有限样本或渐近框架中，它控制误差、风险或显著性。极大似然置信区间描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕极大似然置信区间给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对极大似然置信区间来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "极大似然置信区间",
+          "url": "https://www.baidu.com/s?wd=%E6%9E%81%E5%A4%A7%E4%BC%BC%E7%84%B6%E7%BD%AE%E4%BF%A1%E5%8C%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "极大似然置信区间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9E%81%E5%A4%A7%E4%BC%BC%E7%84%B6%E7%BD%AE%E4%BF%A1%E5%8C%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "maximum likelihood confidence interval",
+          "url": "https://en.wikipedia.org/w/index.php?search=maximum%20likelihood%20confidence%20interval"
+        }
       ]
     },
     {
@@ -1421,6 +2700,24 @@
         "样本 参数 极值",
         "ji da likelihood feng",
         "ji_da_likelihood_feng_xian_function"
+      ],
+      "explanation_markdown": "极大似然风险函数是在极大似然规则下由损失取期望得到的风险。常写成 $R(\\theta,\\hat\\theta_{MLE})=E_\\theta L(\\theta,\\hat\\theta_{MLE})$，其中前一个 $L$ 是损失函数，不是似然。\n\n它把 MLE 放入决策论比较，区别于只看似然最大值。常见入口是把样本信息写成参数函数并寻找极值或比值。围绕极大似然风险函数给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对极大似然风险函数来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，极大似然风险函数要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "极大似然风险函数",
+          "url": "https://www.baidu.com/s?wd=%E6%9E%81%E5%A4%A7%E4%BC%BC%E7%84%B6%E9%A3%8E%E9%99%A9%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "极大似然风险函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9E%81%E5%A4%A7%E4%BC%BC%E7%84%B6%E9%A3%8E%E9%99%A9%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "maximum likelihood risk function",
+          "url": "https://en.wikipedia.org/w/index.php?search=maximum%20likelihood%20risk%20function"
+        }
       ]
     },
     {
@@ -1439,6 +2736,24 @@
         "样本 参数 极值",
         "ji da likelihood tui",
         "ji_da_likelihood_tui_duan"
+      ],
+      "explanation_markdown": "极大似然推断是围绕似然最大化、信息矩阵和似然比展开的推断体系。常写成 $\\hat\\theta=\\arg\\max\\ell(\\theta)$，其中$\\ell$ 是对数似然。\n\n它包括点估计、标准误、区间和检验，区别于贝叶斯推断需要先验与后验。在统计模型与抽样波动之间，它提供可量化的推断工具。对极大似然推断来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，极大似然推断要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。极大似然推断描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "极大似然推断",
+          "url": "https://www.baidu.com/s?wd=%E6%9E%81%E5%A4%A7%E4%BC%BC%E7%84%B6%E6%8E%A8%E6%96%AD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "极大似然推断",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9E%81%E5%A4%A7%E4%BC%BC%E7%84%B6%E6%8E%A8%E6%96%AD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "maximum likelihood inference",
+          "url": "https://en.wikipedia.org/w/index.php?search=maximum%20likelihood%20inference"
+        }
       ]
     },
     {
@@ -1457,6 +2772,24 @@
         "先验 似然 后验",
         "bayesian estimator",
         "bayesian_estimator"
+      ],
+      "explanation_markdown": "贝叶斯估计量是在后验分布和损失函数下使后验风险最小的决策。常写成 $\\delta^*(x)=\\arg\\min_a E[L(\\theta,a)\\mid x]$，其中 $a$ 是估计值或行动，$L$ 是损失函数。\n\n它不是固定一种公式；平方损失给后验均值，绝对损失给后验中位数，零一型损失常通向后验众数。贝叶斯估计量把先验、似然和损失函数同时放进定义中，因此和 MLE 的“最大化似然”思路不同，也比单独报告 MAP 更能体现决策目标。解读贝叶斯估计量时要同时交代模型族、参数空间、样本分布和损失或准则；同一个数值换了这些背景，含义会明显改变。公式中的 $\\theta$、$x$、似然或后验分布分别说明未知量、观测数据和概率来源，也帮助区分估计、检验与风险，尤其能分清 MLE、MAP 与 Bayes 规则。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "贝叶斯估计量",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%9D%E5%8F%B6%E6%96%AF%E4%BC%B0%E8%AE%A1%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "贝叶斯估计量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%9D%E5%8F%B6%E6%96%AF%E4%BC%B0%E8%AE%A1%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bayesian estimator",
+          "url": "https://en.wikipedia.org/w/index.php?search=bayesian%20estimator"
+        }
       ]
     },
     {
@@ -1475,6 +2808,24 @@
         "先验 似然 后验",
         "bayesian zhi xin qu",
         "bayesian_zhi_xin_qu_jian"
+      ],
+      "explanation_markdown": "贝叶斯置信区间通常指贝叶斯可信区间，即后验概率区间。常写成 $P(\\theta\\in C(x)\\mid x)=1-\\alpha$，其中概率条件在已观察数据上。\n\n它和频率置信区间的覆盖率解释不同，名称中“置信”需按后验概率理解。常见入口是先验、似然和后验之间的信息更新。贝叶斯置信区间描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕贝叶斯置信区间给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对贝叶斯置信区间来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "贝叶斯置信区间",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%BD%AE%E4%BF%A1%E5%8C%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "贝叶斯置信区间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%BD%AE%E4%BF%A1%E5%8C%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bayesian confidence interval",
+          "url": "https://en.wikipedia.org/w/index.php?search=bayesian%20confidence%20interval"
+        }
       ]
     },
     {
@@ -1493,6 +2844,24 @@
         "先验 似然 后验",
         "bayesian feng xian function",
         "bayesian_feng_xian_function"
+      ],
+      "explanation_markdown": "贝叶斯风险函数是决策风险对先验的平均。常写成 $r(\\pi,\\delta)=\\int R(\\theta,\\delta)d\\pi(\\theta)$，其中$\\pi$ 是先验，$\\delta$ 是决策规则。\n\n它区别于逐点风险函数；后者固定参数，Bayes 风险按先验加权。在统计模型与抽样波动之间，它提供可量化的推断工具。围绕贝叶斯风险函数给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对贝叶斯风险函数来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，贝叶斯风险函数要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "贝叶斯风险函数",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%9D%E5%8F%B6%E6%96%AF%E9%A3%8E%E9%99%A9%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "贝叶斯风险函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%9D%E5%8F%B6%E6%96%AF%E9%A3%8E%E9%99%A9%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bayesian risk function",
+          "url": "https://en.wikipedia.org/w/index.php?search=bayesian%20risk%20function"
+        }
       ]
     },
     {
@@ -1511,6 +2880,24 @@
         "先验 似然 后验",
         "bayesian tui duan",
         "bayesian_tui_duan"
+      ],
+      "explanation_markdown": "贝叶斯推断是由先验、似然和后验构成的推断框架。常写成 $\\pi(\\theta\\mid x)\\propto L(\\theta;x)\\pi(\\theta)$，其中$\\pi(\\theta)$ 是先验，$L$ 是似然。\n\n它输出后验分布，区别于频率推断只用抽样分布评价程序。在有限样本或渐近框架中，它控制误差、风险或显著性。对贝叶斯推断来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，贝叶斯推断要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。贝叶斯推断描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "贝叶斯推断",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%8E%A8%E6%96%AD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "贝叶斯推断",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%8E%A8%E6%96%AD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bayesian inference",
+          "url": "https://en.wikipedia.org/w/index.php?search=bayesian%20inference"
+        }
       ]
     },
     {
@@ -1529,6 +2916,24 @@
         "对象 条件 运算 记号",
         "robust estimator",
         "robust_estimator"
+      ],
+      "explanation_markdown": "稳健估计量是对异常值或模型扰动不太敏感的估计量。常写成 $IF(x;T,F)$ 有界常作为稳健条件，其中$IF$ 是影响函数。\n\n它区别于普通 MLE；稳健估计可能牺牲正态模型下效率换取抗污染能力。它用已知量控制未知对象的大小，常服务于存在性、唯一性或误差界。在统计推断中，稳健估计量要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。稳健估计量描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳健估计量",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E5%81%A5%E4%BC%B0%E8%AE%A1%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳健估计量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E5%81%A5%E4%BC%B0%E8%AE%A1%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "robust estimator",
+          "url": "https://en.wikipedia.org/w/index.php?search=robust%20estimator"
+        }
       ]
     },
     {
@@ -1547,6 +2952,24 @@
         "对象 条件 运算 记号",
         "robust zhi xin qu",
         "robust_zhi_xin_qu_jian"
+      ],
+      "explanation_markdown": "稳健置信区间使用稳健方差、分位数或重抽样构造的区间。常写成 $\\hat\\theta\\pm z_{1-\\alpha/2}\\sqrt{\\widehat V_{rob}/n}$，其中$\\widehat V_{rob}$ 是稳健方差估计。\n\n它区别于常规模型区间；标准误不完全依赖同方差或正确似然。在统计模型与抽样波动之间，它提供可量化的推断工具。稳健置信区间描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕稳健置信区间给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对稳健置信区间来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳健置信区间",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E5%81%A5%E7%BD%AE%E4%BF%A1%E5%8C%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳健置信区间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E5%81%A5%E7%BD%AE%E4%BF%A1%E5%8C%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "robust confidence interval",
+          "url": "https://en.wikipedia.org/w/index.php?search=robust%20confidence%20interval"
+        }
       ]
     },
     {
@@ -1565,6 +2988,24 @@
         "对象 条件 运算 记号",
         "robust feng xian function",
         "robust_feng_xian_function"
+      ],
+      "explanation_markdown": "稳健风险函数在污染模型或替代损失下评价规则表现。常写成 $R_\\epsilon(\\theta,\\delta)=\\sup_{Q\\in\\mathcal N_\\epsilon(P_\\theta)}E_Q L(\\theta,\\delta(X))$，其中邻域 $\\mathcal N_\\epsilon$ 表示模型扰动范围。\n\n它关注最坏扰动下的损失，区别于名义模型风险。在有限样本或渐近框架中，它控制误差、风险或显著性。围绕稳健风险函数给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对稳健风险函数来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，稳健风险函数要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳健风险函数",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E5%81%A5%E9%A3%8E%E9%99%A9%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳健风险函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E5%81%A5%E9%A3%8E%E9%99%A9%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "robust risk function",
+          "url": "https://en.wikipedia.org/w/index.php?search=robust%20risk%20function"
+        }
       ]
     },
     {
@@ -1583,6 +3024,24 @@
         "对象 条件 运算 记号",
         "robust tui duan",
         "robust_tui_duan"
+      ],
+      "explanation_markdown": "稳健推断是在模型偏离、异方差或异常值存在时仍控制误差的推断。常写成 $A^{-1}BA^{-1}$ 常作夹心协方差，其中$A$ 表示敏感度，$B$ 表示变异度。\n\n它不是单一估计公式，而是点估计、标准误和区间的一套抗误设处理。对稳健推断来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，稳健推断要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。稳健推断描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳健推断",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E5%81%A5%E6%8E%A8%E6%96%AD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳健推断",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E5%81%A5%E6%8E%A8%E6%96%AD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "robust inference",
+          "url": "https://en.wikipedia.org/w/index.php?search=robust%20inference"
+        }
       ]
     },
     {
@@ -1601,6 +3060,24 @@
         "对象 条件 运算 记号",
         "generalized method of moments",
         "generalized_method_of_moments_estimator"
+      ],
+      "explanation_markdown": "广义矩估计量是最小化样本矩条件加权距离得到的估计量。常写成 $\\hat\\theta_{GMM}=\\arg\\min\\bar g_n(\\theta)^TW_n\\bar g_n(\\theta)$，其中$g$ 是矩函数，$W_n$ 是权矩阵。\n\n它区别于 MLE；GMM 只要求矩条件而非完整联合分布。在统计模型与抽样波动之间，它提供可量化的推断工具。在统计推断中，广义矩估计量要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。广义矩估计量描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕广义矩估计量给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "广义矩估计量",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%BF%E4%B9%89%E7%9F%A9%E4%BC%B0%E8%AE%A1%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "广义矩估计量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%BF%E4%B9%89%E7%9F%A9%E4%BC%B0%E8%AE%A1%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "generalized method of moments estimator",
+          "url": "https://en.wikipedia.org/w/index.php?search=generalized%20method%20of%20moments%20estimator"
+        }
       ]
     },
     {
@@ -1619,6 +3096,24 @@
         "对象 条件 运算 记号",
         "generalized method of moments",
         "generalized_method_of_moments_zhi_xin_qu_jian"
+      ],
+      "explanation_markdown": "广义矩置信区间基于 GMM 渐近正态性或准则差构造区间。常写成 $\\hat\\theta_j\\pm z_{1-\\alpha/2}\\widehat{se}_{GMM}$，其中标准误来自矩条件的夹心协方差。\n\n它区别于似然区间；不使用对数似然曲率。在有限样本或渐近框架中，它控制误差、风险或显著性。广义矩置信区间描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕广义矩置信区间给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对广义矩置信区间来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "广义矩置信区间",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%BF%E4%B9%89%E7%9F%A9%E7%BD%AE%E4%BF%A1%E5%8C%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "广义矩置信区间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%BF%E4%B9%89%E7%9F%A9%E7%BD%AE%E4%BF%A1%E5%8C%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "generalized moment confidence interval",
+          "url": "https://en.wikipedia.org/w/index.php?search=generalized%20moment%20confidence%20interval"
+        }
       ]
     },
     {
@@ -1637,6 +3132,24 @@
         "对象 条件 运算 记号",
         "generalized method of moments",
         "generalized_method_of_moments_feng_xian_function"
+      ],
+      "explanation_markdown": "广义矩风险函数用损失评价 GMM 估计规则在参数点的表现。常写成 $R(\\theta,\\hat\\theta_{GMM})=E_\\theta L(\\theta,\\hat\\theta_{GMM})$，其中期望按满足矩条件的模型取。\n\n它区别于 GMM 准则函数；风险用于决策评价，准则用于估计。围绕广义矩风险函数给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对广义矩风险函数来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，广义矩风险函数要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "广义矩风险函数",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%BF%E4%B9%89%E7%9F%A9%E9%A3%8E%E9%99%A9%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "广义矩风险函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%BF%E4%B9%89%E7%9F%A9%E9%A3%8E%E9%99%A9%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "generalized moment risk function",
+          "url": "https://en.wikipedia.org/w/index.php?search=generalized%20moment%20risk%20function"
+        }
       ]
     },
     {
@@ -1655,6 +3168,24 @@
         "对象 条件 运算 记号",
         "generalized method of moments",
         "generalized_method_of_moments_tui_duan"
+      ],
+      "explanation_markdown": "广义矩推断围绕矩条件、权矩阵和过度识别检验的推断框架。常写成 $E[g(X,\\theta_0)]=0$，其中$g$ 是矩函数，$\\theta_0$ 是真参数。\n\n它可做估计、标准误和 J 检验，区别于似然推断的完整分布设定。在统计模型与抽样波动之间，它提供可量化的推断工具。对广义矩推断来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，广义矩推断要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。广义矩推断描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "广义矩推断",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%BF%E4%B9%89%E7%9F%A9%E6%8E%A8%E6%96%AD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "广义矩推断",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%BF%E4%B9%89%E7%9F%A9%E6%8E%A8%E6%96%AD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "generalized moment inference",
+          "url": "https://en.wikipedia.org/w/index.php?search=generalized%20moment%20inference"
+        }
       ]
     },
     {
@@ -1673,6 +3204,24 @@
         "对象 条件 运算 记号",
         "jing yan estimator",
         "jing_yan_estimator"
+      ],
+      "explanation_markdown": "经验估计量由经验分布或样本均值直接代入目标泛函得到。常写成 $\\hat T=T(\\hat F_n)$，其中$\\hat F_n$ 是经验分布。\n\n它是 plug-in 思想，区别于参数模型估计量依赖有限维模型族。在有限样本或渐近框架中，它控制误差、风险或显著性。在统计推断中，经验估计量要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。经验估计量描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕经验估计量给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "经验估计量",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%8F%E9%AA%8C%E4%BC%B0%E8%AE%A1%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "经验估计量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%8F%E9%AA%8C%E4%BC%B0%E8%AE%A1%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "empirical estimator",
+          "url": "https://en.wikipedia.org/w/index.php?search=empirical%20estimator"
+        }
       ]
     },
     {
@@ -1691,6 +3240,24 @@
         "对象 条件 运算 记号",
         "jing yan zhi xin",
         "jing_yan_zhi_xin_qu_jian"
+      ],
+      "explanation_markdown": "经验置信区间用经验分布、Bootstrap 或经验分位数构造区间。常写成 $[q^*_{\\alpha/2},q^*_{1-\\alpha/2}]$，其中$q^*$ 是重抽样统计量分位数。\n\n它区别于解析正态区间；区间形状更多由样本重抽分布决定。经验置信区间描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕经验置信区间给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对经验置信区间来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，经验置信区间要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "经验置信区间",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%8F%E9%AA%8C%E7%BD%AE%E4%BF%A1%E5%8C%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "经验置信区间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%8F%E9%AA%8C%E7%BD%AE%E4%BF%A1%E5%8C%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "empirical confidence interval",
+          "url": "https://en.wikipedia.org/w/index.php?search=empirical%20confidence%20interval"
+        }
       ]
     },
     {
@@ -1709,6 +3276,24 @@
         "对象 条件 运算 记号",
         "jing yan feng xian",
         "jing_yan_feng_xian_function"
+      ],
+      "explanation_markdown": "经验风险函数是样本平均损失，用来近似总体风险。常写成 $R_n(f)=n^{-1}\\sum_{i=1}^n L(Y_i,f(X_i))$，其中$L$ 是损失函数，$f$ 是规则或模型。\n\n它是学习理论和交叉验证的核心量，区别于参数风险的模型期望。在统计模型与抽样波动之间，它提供可量化的推断工具。围绕经验风险函数给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对经验风险函数来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，经验风险函数要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "经验风险函数",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%8F%E9%AA%8C%E9%A3%8E%E9%99%A9%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "经验风险函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%8F%E9%AA%8C%E9%A3%8E%E9%99%A9%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "empirical risk function",
+          "url": "https://en.wikipedia.org/w/index.php?search=empirical%20risk%20function"
+        }
       ]
     },
     {
@@ -1727,6 +3312,24 @@
         "对象 条件 运算 记号",
         "jing yan tui duan",
         "jing_yan_tui_duan"
+      ],
+      "explanation_markdown": "经验推断以经验分布和重抽样近似为主要工具进行推断。常写成 $\\hat F_n=n^{-1}\\sum_i\\Delta_{X_i}$，其中$\\Delta_{X_i}$ 是观测点的点质量。\n\n它减少分布假设，区别于参数推断把数据压入指定模型族。在有限样本或渐近框架中，它控制误差、风险或显著性。对经验推断来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，经验推断要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。经验推断描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "经验推断",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%8F%E9%AA%8C%E6%8E%A8%E6%96%AD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "经验推断",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%8F%E9%AA%8C%E6%8E%A8%E6%96%AD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "empirical inference",
+          "url": "https://en.wikipedia.org/w/index.php?search=empirical%20inference"
+        }
       ]
     },
     {
@@ -1745,6 +3348,24 @@
         "对象 条件 运算 记号",
         "ban can shu estimator",
         "ban_can_shu_estimator"
+      ],
+      "explanation_markdown": "半参数估计量在有限维目标参数和无限维 nuisance 结构共存时估计目标。常写成 $P_{\\theta,\\eta},\\quad \\hat\\theta$，其中$\\theta$ 是有限维目标，$\\eta$ 是无限维 nuisance 参数。\n\n它区别于纯参数估计量；难点在消除或正交化 nuisance 影响。它用已知量控制未知对象的大小，常服务于存在性、唯一性或误差界。在统计推断中，半参数估计量要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。半参数估计量描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "半参数估计量",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8A%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "半参数估计量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8A%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "semiparametric estimator",
+          "url": "https://en.wikipedia.org/w/index.php?search=semiparametric%20estimator"
+        }
       ]
     },
     {
@@ -1763,6 +3384,24 @@
         "对象 条件 运算 记号",
         "ban can shu zhi",
         "ban_can_shu_zhi_xin_qu_jian"
+      ],
+      "explanation_markdown": "半参数置信区间在半参数模型中用有效影响函数或稳健方差构造区间。常写成 $\\hat\\theta\\pm z_{1-\\alpha/2}\\sqrt{\\widehat V_{eff}/n}$，其中$V_{eff}$ 来自有效信息或影响函数。\n\n它区别于普通参数区间；方差需考虑无限维 nuisance 的估计误差。在统计模型与抽样波动之间，它提供可量化的推断工具。半参数置信区间描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。围绕半参数置信区间给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对半参数置信区间来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "半参数置信区间",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8A%E5%8F%82%E6%95%B0%E7%BD%AE%E4%BF%A1%E5%8C%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "半参数置信区间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8A%E5%8F%82%E6%95%B0%E7%BD%AE%E4%BF%A1%E5%8C%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "semiparametric confidence interval",
+          "url": "https://en.wikipedia.org/w/index.php?search=semiparametric%20confidence%20interval"
+        }
       ]
     },
     {
@@ -1781,6 +3420,24 @@
         "对象 条件 运算 记号",
         "ban can shu feng",
         "ban_can_shu_feng_xian_function"
+      ],
+      "explanation_markdown": "半参数风险函数评价半参数估计或决策规则的损失期望。常写成 $R(\\theta,\\eta,\\delta)=E_{\\theta,\\eta}L(\\theta,\\delta(X))$，其中风险同时依赖目标参数和 nuisance 结构。\n\n它区别于参数风险；同一 $\\theta$ 下不同 $\\eta$ 可能改变风险。在有限样本或渐近框架中，它控制误差、风险或显著性。围绕半参数风险函数给出的数值要说明概率由哪个分布计算、未知量怎样进入模型；否则容易把估计、检验和置信陈述混在一起。对半参数风险函数来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，半参数风险函数要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "半参数风险函数",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8A%E5%8F%82%E6%95%B0%E9%A3%8E%E9%99%A9%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "半参数风险函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8A%E5%8F%82%E6%95%B0%E9%A3%8E%E9%99%A9%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "semiparametric hazard function",
+          "url": "https://en.wikipedia.org/w/index.php?search=semiparametric%20hazard%20function"
+        }
       ]
     },
     {
@@ -1799,6 +3456,24 @@
         "对象 条件 运算 记号",
         "ban can shu tui",
         "ban_can_shu_tui_duan"
+      ],
+      "explanation_markdown": "半参数推断在有限维目标和无限维 nuisance 同时存在的模型中做推断。常写成 $\\sqrt n(\\hat\\theta-\\theta_0)=n^{-1/2}\\sum_i IF(X_i)+o_p(1)$，其中$IF$ 是有效影响函数。\n\n它依赖正交化、效率界和经验过程，区别于纯参数推断的有限维似然几何。对半参数推断来说，参数、统计量和概率分布需要同时说明，单独的数值没有完整含义。在统计推断中，半参数推断要和统计模型、参数空间、抽样分布一起理解；同一公式在频率学派和贝叶斯语境下对应的随机对象可能不同。半参数推断描述的是数据到结论的规则，而不是单个样本的事实陈述；模型假设、损失函数和样本量都会改变它的解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "半参数推断",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8A%E5%8F%82%E6%95%B0%E6%8E%A8%E6%96%AD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "半参数推断",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8A%E5%8F%82%E6%95%B0%E6%8E%A8%E6%96%AD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "semiparametric inference",
+          "url": "https://en.wikipedia.org/w/index.php?search=semiparametric%20inference"
+        }
       ]
     }
   ]

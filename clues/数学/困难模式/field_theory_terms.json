@@ -17,6 +17,24 @@
         "F⊂E [E:F] F(α) splitting field Gal(E/F)",
         "algebraic elements transcendental elements normal separable",
         "field theory"
+      ],
+      "explanation_markdown": "场论是研究域、域扩张和多项式根结构的代数分支。常写成 $F\\subset E$ 与 $[E:F]=\\dim_F E$，其中$F$ 是底域，$E$ 是扩域，维数给出扩张次数。它把方程可解性、根的对称和中间域组织在同一语言里。\n\n它不同于物理场论；这里的对象是可四则运算的域及其同态。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "场论",
+          "url": "https://www.baidu.com/s?wd=%E5%9C%BA%E8%AE%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "场论",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9C%BA%E8%AE%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "field theory",
+          "url": "https://en.wikipedia.org/w/index.php?search=field%20theory"
+        }
       ]
     },
     {
@@ -35,6 +53,24 @@
         "Q R C F_p F_q",
         "非零元素 乘法逆元 整环区别",
         "field F K k"
+      ],
+      "explanation_markdown": "域是可做加减乘除的交换代数系统，除零元外每个元素都有乘法逆元。常写成 $(F,+,\\cdot)$ 且 $F^\\times=F\\setminus\\{0\\}$，其中$(F,+)$ 是阿贝尔群，$F^\\times$ 在乘法下成群，乘法对加法分配。有理数、实数、复数和有限域都是基本例子。\n\n它比环多出非零元素可除的条件，因而能作为向量空间和多项式方程的标量底层。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "域",
+          "url": "https://www.baidu.com/s?wd=%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "field",
+          "url": "https://en.wikipedia.org/w/index.php?search=field"
+        }
       ]
     },
     {
@@ -53,6 +89,24 @@
         "F⊂K F field",
         "extension E/F base object intermediate layer",
         "subfield F≤K F⊂K"
+      ],
+      "explanation_markdown": "子域是在一个大域内继承同一加法和乘法后仍然成域的子集。常写成 $K\\subset F$ 且 $a,b\\in K,b\\ne0\\Rightarrow a-b,ab^{-1}\\in K$，其中$K$ 是候选子集，条件保证减法、乘法和除法封闭。它提供扩张 $F/K$ 的底层，也能作为中间域出现。\n\n它不是任意子环；必须包含相同的 $0,1$ 并保留非零元素的逆元。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "子域",
+          "url": "https://www.baidu.com/s?wd=%E5%AD%90%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "子域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AD%90%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "subfield",
+          "url": "https://en.wikipedia.org/w/index.php?search=subfield"
+        }
       ]
     },
     {
@@ -71,6 +125,24 @@
         "char 0 Q char p F_p",
         "最小同类结构 初始底座",
         "prime field"
+      ],
+      "explanation_markdown": "素域是一个域中由乘法单位元生成的最小子域。常写成 $\\operatorname{char}F=0\\Rightarrow P\\cong\\mathbb Q$，$\\operatorname{char}F=p\\Rightarrow P\\cong\\mathbb F_p$，其中$P$ 是素域，$p$ 是素数，特征由反复相加 $1$ 的结果决定。它给出所有域不可再缩小的算术底座。\n\n它不同于任意子域；素域在给定域中唯一，并由整数像和必要的分式闭包决定。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "素域",
+          "url": "https://www.baidu.com/s?wd=%E7%B4%A0%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "素域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B4%A0%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "prime field",
+          "url": "https://en.wikipedia.org/w/index.php?search=prime%20field"
+        }
       ]
     },
     {
@@ -89,6 +161,24 @@
         "E/F K/F F⊂E",
         "polynomial equations new elements [E:F]",
         "extension field"
+      ],
+      "explanation_markdown": "扩域是在包含关系中把较小域看作较大域的底层标量系统。常写成 $F\\subset E,\\quad [E:F]=\\dim_F E$，其中$F$ 是底域，$E$ 是上域，维数按 $F$-向量空间计算。它描述向底域加入新根或新参数后的四则运算环境。\n\n它不是商结构，记号 $E/F$ 只表示“在 $F$ 上”的扩张关系。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "扩域",
+          "url": "https://www.baidu.com/s?wd=%E6%89%A9%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "扩域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%A9%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "field extension",
+          "url": "https://en.wikipedia.org/w/index.php?search=field%20extension"
+        }
       ]
     },
     {
@@ -107,6 +197,24 @@
         "α∈E f(α)=0 0≠f(x)∈F[x]",
         "finite-dimensional extension implication",
         "algebraic extension"
+      ],
+      "explanation_markdown": "代数扩张要求上域中每个元素都是底域上某个非零多项式的根。常写成 $\\alpha\\in E,\\ 0\\ne f(x)\\in F[x],\\ f(\\alpha)=0$，其中$\\alpha$ 是扩域元素，$f$ 的系数来自底域 $F$。有限扩张一定代数，但无限代数扩张也可能出现。\n\n它和超越扩张的差别在于是否存在多项式约束；代数元有最小多项式。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "代数扩张",
+          "url": "https://www.baidu.com/s?wd=%E4%BB%A3%E6%95%B0%E6%89%A9%E5%BC%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "代数扩张",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BB%A3%E6%95%B0%E6%89%A9%E5%BC%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "algebraic extension",
+          "url": "https://en.wikipedia.org/w/index.php?search=algebraic%20extension"
+        }
       ]
     },
     {
@@ -125,6 +233,24 @@
         "t 0≠f(x)∈F[x] no relation F(t)/F",
         "transcendence basis cardinality",
         "transcendental extension"
+      ],
+      "explanation_markdown": "超越扩张含有至少一个不满足任何底域非零多项式方程的元素。常写成 $f(t)\\ne0\\quad(0\\ne f\\in F[x])$，其中$t$ 是超越元，$F(t)$ 像有理函数域而不是有限维根域。它记录自由参数进入底域后的新函数关系。\n\n它和代数扩张相对；后者由方程根生成，前者由无代数关系的变量生成。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "超越扩张",
+          "url": "https://www.baidu.com/s?wd=%E8%B6%85%E8%B6%8A%E6%89%A9%E5%BC%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "超越扩张",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B6%85%E8%B6%8A%E6%89%A9%E5%BC%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "transcendental extension",
+          "url": "https://en.wikipedia.org/w/index.php?search=transcendental%20extension"
+        }
       ]
     },
     {
@@ -143,6 +269,24 @@
         "[E:F]<∞",
         "every element polynomial over F",
         "finite extension"
+      ],
+      "explanation_markdown": "有限扩张是扩域作为底域向量空间时维数有限的情形。常写成 $[E:F]<\\infty,\\quad [E:F]=\\dim_F E$，其中$[E:F]$ 是扩张次数，基的元素个数给出该维数。有限性让迹、范数、嵌入数和塔公式可直接计算。\n\n它必为代数扩张；代数扩张反过来不必有限，因为可有无限多代数元。 有限扩张可以先当作底域上的向量空间处理，再回到乘法结构。迹和范数来自线性算子 $m_\\alpha:x\\mapsto\\alpha x$ 的矩阵不变量；张量积和标量扩张则记录底域改变后的线性关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "有限扩张",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%89%E9%99%90%E6%89%A9%E5%BC%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "有限扩张",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%89%E9%99%90%E6%89%A9%E5%BC%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "finite extension",
+          "url": "https://en.wikipedia.org/w/index.php?search=finite%20extension"
+        }
       ]
     },
     {
@@ -161,6 +305,24 @@
         "[E:F] not finite",
         "algebraic closure separable closure F(t)/F",
         "infinite extension"
+      ],
+      "explanation_markdown": "无限扩张是扩域在底域上没有有限向量空间基的扩张。常写成 $[E:F]=\\infty,\\quad E=\\bigcup_i E_i$，其中$E_i$ 可是一串有限或代数中间扩张，极限仍可能无限。代数闭包、可分闭包和有理函数域都给出常见样本。\n\n无限性只说明次数无穷，不说明元素一定超越；无限代数扩张同样存在。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "无限扩张",
+          "url": "https://www.baidu.com/s?wd=%E6%97%A0%E9%99%90%E6%89%A9%E5%BC%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "无限扩张",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%97%A0%E9%99%90%E6%89%A9%E5%BC%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "infinite extension",
+          "url": "https://en.wikipedia.org/w/index.php?search=infinite%20extension"
+        }
       ]
     },
     {
@@ -179,6 +341,24 @@
         "[E:F]=dim_F E",
         "tower formula [E:F]=[E:K][K:F]",
         "degree of extension"
+      ],
+      "explanation_markdown": "扩张次数是把上域当作底域向量空间时得到的维数。常写成 $[E:F]=\\dim_F E,\\quad [E:F]=[E:K][K:F]$，其中$K$ 是中间域，第二式是塔公式。它把域扩张的大小转化为线性代数数据。\n\n它不同于多项式次数；只有在单代数扩张中才由最小多项式次数直接给出。 有限扩张可以先当作底域上的向量空间处理，再回到乘法结构。迹和范数来自线性算子 $m_\\alpha:x\\mapsto\\alpha x$ 的矩阵不变量；张量积和标量扩张则记录底域改变后的线性关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "扩张次数",
+          "url": "https://www.baidu.com/s?wd=%E6%89%A9%E5%BC%A0%E6%AC%A1%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "扩张次数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%A9%E5%BC%A0%E6%AC%A1%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "degree of extension",
+          "url": "https://en.wikipedia.org/w/index.php?search=degree%20of%20extension"
+        }
       ]
     },
     {
@@ -197,6 +377,24 @@
         "0≠f(x)∈F[x] f(α)=0",
         "monic irreducible equation [F(α):F]",
         "algebraic element"
+      ],
+      "explanation_markdown": "代数元是在扩域中满足底域上非零多项式方程的元素。常写成 $0\\ne f(x)\\in F[x],\\quad f(\\alpha)=0$，其中$\\alpha$ 是扩域元素，$f$ 的系数限制在底域 $F$。它的最小多项式控制由 $F$ 加入 $\\alpha$ 后的有限结构。\n\n它与超越元相对；超越元没有这样的多项式消去关系。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "代数元",
+          "url": "https://www.baidu.com/s?wd=%E4%BB%A3%E6%95%B0%E5%85%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "代数元",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BB%A3%E6%95%B0%E5%85%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "algebraic element",
+          "url": "https://en.wikipedia.org/w/index.php?search=algebraic%20element"
+        }
       ]
     },
     {
@@ -215,6 +413,24 @@
         "0≠f(x)∈F[x] f(α)=0 exclusion",
         "F(α) ≅ F(x)",
         "transcendental element"
+      ],
+      "explanation_markdown": "超越元是在给定底域上不满足任何非零多项式方程的扩域元素。常写成 $f(t)\\ne0\\quad\\text{for all }0\\ne f\\in F[x]$，其中$t$ 是扩域元素，$F[x]$ 的系数全部来自底域。它生成的 $F(t)$ 与一元有理函数域同构。\n\n它不是“很复杂的代数元”，而是没有代数关系的自由变量。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "超越元",
+          "url": "https://www.baidu.com/s?wd=%E8%B6%85%E8%B6%8A%E5%85%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "超越元",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B6%85%E8%B6%8A%E5%85%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "transcendental element",
+          "url": "https://en.wikipedia.org/w/index.php?search=transcendental%20element"
+        }
       ]
     },
     {
@@ -233,6 +449,24 @@
         "monic generator lowest degree irreducible",
         "degree [F(α):F] algebraic relations",
         "minimal polynomial m_{α,F}(x)"
+      ],
+      "explanation_markdown": "最小多项式是代数元在底域上次数最低的首一不可约多项式。常写成 $m_{\\alpha,F}(x)\\in F[x],\\quad m_{\\alpha,F}(\\alpha)=0$，其中$m_{\\alpha,F}$ 首一且不可约，$F$ 指定系数所在底域。它给出 $[F(\\alpha):F]$ 并决定共轭根集合。\n\n更换底域会改变最小多项式，所以它必须连同底域一起说明。 这里要看多项式在底域上怎样分解，以及加入根以后得到怎样的扩张。特征、导多项式和判别式会影响重根与可分性；分圆和根式构造则把方程根的形状同群结构联系起来。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最小多项式",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E5%B0%8F%E5%A4%9A%E9%A1%B9%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最小多项式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E5%B0%8F%E5%A4%9A%E9%A1%B9%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "minimal polynomial",
+          "url": "https://en.wikipedia.org/w/index.php?search=minimal%20polynomial"
+        }
       ]
     },
     {
@@ -251,6 +485,24 @@
         "m_{α,F}(x) roots α_1,...,α_n",
         "normal separable Gal(E/F) orbit",
         "conjugate element"
+      ],
+      "explanation_markdown": "共轭元是同一最小多项式在某个分裂域中的其他根。常写成 $m_{\\alpha,F}(x)=\\prod_i(x-\\alpha_i)$，其中$\\alpha_i$ 是 $\\alpha$ 在 $F$ 上的共轭，乘积在分裂域中理解。它记录嵌入如何移动代数元。\n\n它不同于复共轭；复共轭只是实数域上二次扩张中的一个特殊现象。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "共轭元",
+          "url": "https://www.baidu.com/s?wd=%E5%85%B1%E8%BD%AD%E5%85%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "共轭元",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%B1%E8%BD%AD%E5%85%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "conjugate element",
+          "url": "https://en.wikipedia.org/w/index.php?search=conjugate%20element"
+        }
       ]
     },
     {
@@ -269,6 +521,24 @@
         "F adjoining all roots minimal",
         "f(x)=∏(x-α_i) E=F(α_i)",
         "splitting field"
+      ],
+      "explanation_markdown": "分裂域是让给定多项式完全分解成一次因子的最小扩域。常写成 $f(x)=c\\prod_i(x-\\alpha_i)\\quad\\text{in }E[x]$，其中$E$ 含有全部根 $\\alpha_i$，且由这些根在 $F$ 上生成。它是伽罗瓦群作用于根集的自然舞台。\n\n它不同于任意含一部分根的根域；最小性要求全部根同时存在。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。 根的置换、固定域和子群格要一起读，才能看出正规、可分和伽罗瓦三层条件各自承担的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分裂域",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E8%A3%82%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分裂域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E8%A3%82%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "splitting field",
+          "url": "https://en.wikipedia.org/w/index.php?search=splitting%20field"
+        }
       ]
     },
     {
@@ -287,6 +557,24 @@
         "splitting field of family polynomials",
         "F-embeddings E→Ω image E",
         "normal extension"
+      ],
+      "explanation_markdown": "正规扩张是代数扩张中每个在上域有一个根的底域不可约多项式都完全分裂。常写成 $f\\in F[x]\\text{ irreducible},\\ f(\\alpha)=0\\Rightarrow f\\text{ splits in }E$，其中$\\alpha\\in E$，分裂发生在 $E[x]$ 中。它保证底域嵌入的像不会离开扩域。\n\n正规性关注根是否成套出现；可分性关注重根是否消失，二者不是同一条件。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正规扩张",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E8%A7%84%E6%89%A9%E5%BC%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正规扩张",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E8%A7%84%E6%89%A9%E5%BC%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "normal extension",
+          "url": "https://en.wikipedia.org/w/index.php?search=normal%20extension"
+        }
       ]
     },
     {
@@ -305,6 +593,24 @@
         "α∈E m_{α,F}(x) roots distinct",
         "char 0 automatic char p p-th powers",
         "separable extension"
+      ],
+      "explanation_markdown": "可分扩张要求扩域中每个元素的最小多项式在分裂域中没有重根。常写成 $\\gcd(m_{\\alpha,F},m_{\\alpha,F}')=1$，其中$m_{\\alpha,F}$ 是最小多项式，撇号表示形式导数。它保证嵌入数达到次数，迹和伽罗瓦理论表现良好。\n\n它不同于正规扩张；可分只排除重根，正规要求共轭根都留在上域。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "可分扩张",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%AF%E5%88%86%E6%89%A9%E5%BC%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "可分扩张",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%AF%E5%88%86%E6%89%A9%E5%BC%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "separable extension",
+          "url": "https://en.wikipedia.org/w/index.php?search=separable%20extension"
+        }
       ]
     },
     {
@@ -323,6 +629,24 @@
         "α∈E m'_{α,F}(x)=0 non-distinct roots",
         "char p x^p-a",
         "inseparable extension"
+      ],
+      "explanation_markdown": "不可分扩张是在正特征中出现的代数扩张，其中某些元素的最小多项式有重根。常写成 $m'_{\\alpha,F}(x)=0\\quad\\text{可能导致 }m_{\\alpha,F}(x)=x^{p^r}-a$，其中$p$ 是特征，$\\alpha$ 的共轭根会合并。它使嵌入数小于扩张次数，迹和伽罗瓦群可能退化。\n\n它与纯不可分扩张相关，但不可分扩张可同时含有可分部分。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "不可分扩张",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%8D%E5%8F%AF%E5%88%86%E6%89%A9%E5%BC%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "不可分扩张",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%8D%E5%8F%AF%E5%88%86%E6%89%A9%E5%BC%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inseparable extension",
+          "url": "https://en.wikipedia.org/w/index.php?search=inseparable%20extension"
+        }
       ]
     },
     {
@@ -341,6 +665,24 @@
         "finite case normal separable",
         "|Gal(E/F)|=[E:F] subgroup intermediate fields",
         "Galois extension"
+      ],
+      "explanation_markdown": "伽罗瓦扩张是同时正规且可分的代数扩张。常写成 $E/F\\text{ Galois}\\iff |\\operatorname{Gal}(E/F)|=[E:F]$，其中伽罗瓦群由固定 $F$ 的 $E$ 自同构组成。它使中间域与子群之间出现反向对应。\n\n它比正规或可分都更强；缺少任一条件时自同构群不能完整记录扩张。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。 根的置换、固定域和子群格要一起读，才能看出正规、可分和伽罗瓦三层条件各自承担的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "伽罗瓦扩张",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%BD%E7%BD%97%E7%93%A6%E6%89%A9%E5%BC%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "伽罗瓦扩张",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%BD%E7%BD%97%E7%93%A6%E6%89%A9%E5%BC%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "galois extension",
+          "url": "https://en.wikipedia.org/w/index.php?search=galois%20extension"
+        }
       ]
     },
     {
@@ -359,6 +701,24 @@
         "Gal(E/F) Aut(E/F)",
         "subgroups intermediate fields inclusion reversal",
         "Galois group"
+      ],
+      "explanation_markdown": "伽罗瓦群是固定底域的扩域自同构全体。常写成 $\\operatorname{Gal}(E/F)=\\{\\sigma\\in\\operatorname{Aut}(E):\\sigma|_F=\\mathrm{id}\\}$，其中$\\sigma$ 保持加法、乘法并逐点固定 $F$。它通过置换根来记录方程的对称性。\n\n它不是任意置换群；只有保持所有代数关系的置换才来自域自同构。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。 根的置换、固定域和子群格要一起读，才能看出正规、可分和伽罗瓦三层条件各自承担的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "伽罗瓦群",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%BD%E7%BD%97%E7%93%A6%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "伽罗瓦群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%BD%E7%BD%97%E7%93%A6%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "galois group",
+          "url": "https://en.wikipedia.org/w/index.php?search=galois%20group"
+        }
       ]
     },
     {
@@ -377,6 +737,24 @@
         "H↦E^H M↦Gal(E/M)",
         "normal subgroup quotient group",
         "Galois correspondence"
+      ],
+      "explanation_markdown": "伽罗瓦对应是在有限伽罗瓦扩张中把中间域和伽罗瓦群子群配对的定理。常写成 $H\\mapsto E^H,\\quad K\\mapsto\\operatorname{Gal}(E/K)$，其中$E^H$ 是被 $H$ 固定的元素域，$K$ 是中间域。包含关系会反向，正规中间域对应正规子群。\n\n它把域层级问题转化为群的子群结构，但前提是扩张已经伽罗瓦。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "伽罗瓦对应",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%BD%E7%BD%97%E7%93%A6%E5%AF%B9%E5%BA%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "伽罗瓦对应",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%BD%E7%BD%97%E7%93%A6%E5%AF%B9%E5%BA%94"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "galois correspondence",
+          "url": "https://en.wikipedia.org/w/index.php?search=galois%20correspondence"
+        }
       ]
     },
     {
@@ -395,6 +773,24 @@
         "H≤Aut(E) E^H={x∈E: σ(x)=x}",
         "finite Galois extension subgroup H reversal",
         "fixed field"
+      ],
+      "explanation_markdown": "固定域是在自同构群作用下保持不动的元素组成的子域。常写成 $E^H=\\{x\\in E:\\sigma(x)=x\\ \\forall\\sigma\\in H\\}$，其中$H$ 是自同构群的子群，$E^H$ 自然含有底域。它给出伽罗瓦对应从子群回到域的一端。\n\n它不同于稳定子；固定域收集被群固定的元素，稳定子收集固定对象的群元素。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "固定域",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%BA%E5%AE%9A%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "固定域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%BA%E5%AE%9A%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fixed field",
+          "url": "https://en.wikipedia.org/w/index.php?search=fixed%20field"
+        }
       ]
     },
     {
@@ -413,6 +809,24 @@
         "F_q splitting of x^q-x",
         "subfields divisors of n extension degree",
         "finite field GF(q)"
+      ],
+      "explanation_markdown": "有限域是只含有限多个元素的域，元素个数必为素数幂。常写成 $|\\mathbb F_q|=q=p^n,\\quad \\mathbb F_q^\\times\\cong C_{q-1}$，其中$p$ 是特征，$n$ 是正整数，乘法群为循环群。它在编码、数论和代数几何中提供离散标量系统。\n\n同阶有限域彼此同构，这一点与一般有限环很不同。 这里要看多项式在底域上怎样分解，以及加入根以后得到怎样的扩张。特征、导多项式和判别式会影响重根与可分性；分圆和根式构造则把方程根的形状同群结构联系起来。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "有限域",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%89%E9%99%90%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "有限域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%89%E9%99%90%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "finite field",
+          "url": "https://en.wikipedia.org/w/index.php?search=finite%20field"
+        }
       ]
     },
     {
@@ -431,6 +845,24 @@
         "nonconstant f∈F[x] linear factors",
         "no further algebraic gaps",
         "algebraic closure F^alg"
+      ],
+      "explanation_markdown": "代数闭包是使底域上所有非常数多项式都有根的代数扩张。常写成 $\\overline F/F\\text{ algebraic},\\quad f\\in F[x]\\Rightarrow f\\text{ splits in }\\overline F$，其中$\\overline F$ 表示代数闭包，分裂在该域内完成。它把所有代数根一次性加入底域。\n\n它与可分闭包不同；代数闭包还包含纯不可分代数部分。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。 根的置换、固定域和子群格要一起读，才能看出正规、可分和伽罗瓦三层条件各自承担的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "代数闭包",
+          "url": "https://www.baidu.com/s?wd=%E4%BB%A3%E6%95%B0%E9%97%AD%E5%8C%85%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "代数闭包",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BB%A3%E6%95%B0%E9%97%AD%E5%8C%85"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "algebraic closure",
+          "url": "https://en.wikipedia.org/w/index.php?search=algebraic%20closure"
+        }
       ]
     },
     {
@@ -449,6 +881,24 @@
         "factorization into linear factors",
         "C example R x^2+1 counterexample",
         "algebraically closed field"
+      ],
+      "explanation_markdown": "代数闭域是每个非常数多项式都能在本域内分解出根的域。常写成 $f(x)\\in F[x],\\ \\deg f>0\\Rightarrow \\exists a\\in F,\\ f(a)=0$，其中$F$ 已经包含自身多项式的全部代数根。复数域是典型例子，有限域和实数域都不是。\n\n它描述域本身的闭合性；代数闭包则是从给定域构造出的闭合扩域。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "代数闭域",
+          "url": "https://www.baidu.com/s?wd=%E4%BB%A3%E6%95%B0%E9%97%AD%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "代数闭域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BB%A3%E6%95%B0%E9%97%AD%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "algebraically closed field",
+          "url": "https://en.wikipedia.org/w/index.php?search=algebraically%20closed%20field"
+        }
       ]
     },
     {
@@ -467,6 +917,24 @@
         "minimal positive n prime p",
         "prime field Q or F_p separability",
         "char K"
+      ],
+      "explanation_markdown": "特征记录域中单位元反复相加首次变成零的次数。常写成 $\\operatorname{char}F=p\\text{ if }p\\cdot1=0,\\quad \\operatorname{char}F=0\\text{ otherwise}$，其中$p$ 必为素数，$p\\cdot1$ 表示 $1$ 的 $p$ 次和。它决定素域、Frobenius 映射和可分性现象。\n\n特征不是元素个数；无限域也可以有正特征。 这里要看多项式在底域上怎样分解，以及加入根以后得到怎样的扩张。特征、导多项式和判别式会影响重根与可分性；分圆和根式构造则把方程根的形状同群结构联系起来。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。 底域选择会改变最小多项式和扩张次数，迹、范数、嵌入数也随之换成新的线性数据。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "特征",
+          "url": "https://www.baidu.com/s?wd=%E7%89%B9%E5%BE%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "特征",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%B9%E5%BE%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "characteristic",
+          "url": "https://en.wikipedia.org/w/index.php?search=characteristic"
+        }
       ]
     },
     {
@@ -485,6 +953,24 @@
         "E=F(α)",
         "finite separable extension generator",
         "primitive element"
+      ],
+      "explanation_markdown": "本原元是在单扩张中一个元素生成整个扩域的生成元。常写成 $E=F(\\alpha),\\quad [E:F]=\\deg m_{\\alpha,F}$，其中$\\alpha$ 是本原元，$m_{\\alpha,F}$ 是其最小多项式。它把多元生成的扩张压缩成一个元素的最小多项式。\n\n它不同于有限域乘法群生成元；这里生成的是域扩张。 这里要看多项式在底域上怎样分解，以及加入根以后得到怎样的扩张。特征、导多项式和判别式会影响重根与可分性；分圆和根式构造则把方程根的形状同群结构联系起来。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "本原元",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%AC%E5%8E%9F%E5%85%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "本原元",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%AC%E5%8E%9F%E5%85%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "primitive element",
+          "url": "https://en.wikipedia.org/w/index.php?search=primitive%20element"
+        }
       ]
     },
     {
@@ -503,6 +989,24 @@
         "every finite separable extension simple",
         "embeddings bad parameters finite",
         "primitive element theorem"
+      ],
+      "explanation_markdown": "本原元定理说明有限可分扩张可以由一个元素生成。常写成 $E/F\\text{ finite separable}\\Rightarrow E=F(\\alpha)$，其中$\\alpha$ 是某个适当选择的本原元。它让有限可分扩张可用一个最小多项式处理。\n\n纯不可分或非可分条件下不能直接套用，正特征中尤其要分清假设。 这里要看多项式在底域上怎样分解，以及加入根以后得到怎样的扩张。特征、导多项式和判别式会影响重根与可分性；分圆和根式构造则把方程根的形状同群结构联系起来。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "本原元定理",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%AC%E5%8E%9F%E5%85%83%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "本原元定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%AC%E5%8E%9F%E5%85%83%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "primitive element theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=primitive%20element%20theorem"
+        }
       ]
     },
     {
@@ -521,6 +1025,24 @@
         "separable case sum σ(a)",
         "discriminant bilinear pairing integrality",
         "Tr_{E/F}(a) trace"
+      ],
+      "explanation_markdown": "迹是有限扩张中乘法线性算子的矩阵迹。常写成 $\\operatorname{Tr}_{E/F}(a)=\\operatorname{tr}(m_a)$，其中$m_a:x\\mapsto ax$ 是 $E$ 作为 $F$-向量空间上的线性变换。它把扩域元素压回底域，常用于判别式和对偶基。\n\n它不同于矩阵迹的孤立概念；这里的矩阵来自乘法作用。 有限扩张可以先当作底域上的向量空间处理，再回到乘法结构。迹和范数来自线性算子 $m_\\alpha:x\\mapsto\\alpha x$ 的矩阵不变量；张量积和标量扩张则记录底域改变后的线性关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。 底域选择会改变最小多项式和扩张次数，迹、范数、嵌入数也随之换成新的线性数据。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "迹",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "迹",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "trace",
+          "url": "https://en.wikipedia.org/w/index.php?search=trace"
+        }
       ]
     },
     {
@@ -539,6 +1061,24 @@
         "separable case product σ(a)",
         "E^× to F^× units ideals",
         "N_{E/F}(a) norm"
+      ],
+      "explanation_markdown": "范数是有限扩张中乘法线性算子的行列式。常写成 $N_{E/F}(a)=\\det(m_a)$，其中$m_a$ 是乘以 $a$ 的 $F$-线性映射，值落在 $F$。它把乘法信息压回底域，并满足乘法性。\n\n它不是向量长度；范数映射关心代数乘法而非距离。 有限扩张可以先当作底域上的向量空间处理，再回到乘法结构。迹和范数来自线性算子 $m_\\alpha:x\\mapsto\\alpha x$ 的矩阵不变量；张量积和标量扩张则记录底域改变后的线性关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。 底域选择会改变最小多项式和扩张次数，迹、范数、嵌入数也随之换成新的线性数据。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "范数",
+          "url": "https://www.baidu.com/s?wd=%E8%8C%83%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "范数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%8C%83%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "norm",
+          "url": "https://en.wikipedia.org/w/index.php?search=norm"
+        }
       ]
     },
     {
@@ -557,6 +1097,24 @@
         "a↦Tr_{E/F}(a)",
         "pairing (x,y)↦Tr_{E/F}(xy) separability discriminant",
         "trace map"
+      ],
+      "explanation_markdown": "迹映射是把扩域元素送到底域的线性映射。常写成 $\\operatorname{Tr}_{E/F}:E\\to F,\\quad a\\mapsto\\operatorname{tr}(m_a)$，其中$m_a$ 为乘法算子，迹按 $F$-向量空间计算。它用于构造双线性配对和判别式。\n\n它与范数映射不同；迹加法线性，范数乘法相容。 有限扩张可以先当作底域上的向量空间处理，再回到乘法结构。迹和范数来自线性算子 $m_\\alpha:x\\mapsto\\alpha x$ 的矩阵不变量；张量积和标量扩张则记录底域改变后的线性关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。 底域选择会改变最小多项式和扩张次数，迹、范数、嵌入数也随之换成新的线性数据。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "迹映射",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%B9%E6%98%A0%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "迹映射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%B9%E6%98%A0%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "trace map",
+          "url": "https://en.wikipedia.org/w/index.php?search=trace%20map"
+        }
       ]
     },
     {
@@ -575,6 +1133,24 @@
         "a↦N_{E/F}(a)",
         "number fields local fields units ideals cohomology",
         "norm map"
+      ],
+      "explanation_markdown": "范数映射是把扩域元素送到底域的乘法型映射。常写成 $N_{E/F}:E^\\times\\to F^\\times,\\quad a\\mapsto\\det(m_a)$，其中$m_a$ 是乘以 $a$ 的线性算子，行列式属于底域。它在数域、局部域和类域论中刻画可达乘法元素。\n\n它通常不是加法同态，因而不能当作线性泛函使用。 有限扩张可以先当作底域上的向量空间处理，再回到乘法结构。迹和范数来自线性算子 $m_\\alpha:x\\mapsto\\alpha x$ 的矩阵不变量；张量积和标量扩张则记录底域改变后的线性关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。 底域选择会改变最小多项式和扩张次数，迹、范数、嵌入数也随之换成新的线性数据。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "范数映射",
+          "url": "https://www.baidu.com/s?wd=%E8%8C%83%E6%95%B0%E6%98%A0%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "范数映射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%8C%83%E6%95%B0%E6%98%A0%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "norm map",
+          "url": "https://en.wikipedia.org/w/index.php?search=norm%20map"
+        }
       ]
     },
     {
@@ -593,6 +1169,24 @@
         "F⊂F(α_1)⊂...⊂E",
         "polynomial roots radicals expression",
         "radical extension"
+      ],
+      "explanation_markdown": "根式扩张是通过逐步加入根式得到的域扩张。常写成 $E=F(\\alpha_1,\\ldots,\\alpha_n),\\quad \\alpha_i^{m_i}\\in F(\\alpha_1,\\ldots,\\alpha_{i-1})$，其中每一步只加入某个幂方程的根。它连接多项式根式可解与伽罗瓦群可解性。\n\n它比任意代数扩张更受限，强调由幂根链条生成。 这里要看多项式在底域上怎样分解，以及加入根以后得到怎样的扩张。特征、导多项式和判别式会影响重根与可分性；分圆和根式构造则把方程根的形状同群结构联系起来。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "根式扩张",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%B9%E5%BC%8F%E6%89%A9%E5%BC%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "根式扩张",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%B9%E5%BC%8F%E6%89%A9%E5%BC%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "radical extension",
+          "url": "https://en.wikipedia.org/w/index.php?search=radical%20extension"
+        }
       ]
     },
     {
@@ -611,6 +1205,24 @@
         "embedding into radical tower",
         "polynomial equations radicals solution",
         "solvable extension"
+      ],
+      "explanation_markdown": "可解扩张是其伽罗瓦闭包的伽罗瓦群为可解群的扩张。常写成 $E/F\\text{ solvable}\\iff \\operatorname{Gal}(L/F)\\text{ solvable}$，其中$L$ 是 $E/F$ 的伽罗瓦闭包。它刻画方程能否用根式表达的群论障碍。\n\n它不同于扩张可分或正规；可解性来自群的正规列结构。 这里要看多项式在底域上怎样分解，以及加入根以后得到怎样的扩张。特征、导多项式和判别式会影响重根与可分性；分圆和根式构造则把方程根的形状同群结构联系起来。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "可解扩张",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%AF%E8%A7%A3%E6%89%A9%E5%BC%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "可解扩张",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%AF%E8%A7%A3%E6%89%A9%E5%BC%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "solvable extension",
+          "url": "https://en.wikipedia.org/w/index.php?search=solvable%20extension"
+        }
       ]
     },
     {
@@ -629,6 +1241,24 @@
         "Q(ζ_n) Gal related to (Z/nZ)^×",
         "abelian extensions class field theory sample",
         "cyclotomic field"
+      ],
+      "explanation_markdown": "分圆域是由单位根加入有理数或一般底域得到的扩张。常写成 $\\mathbb Q(\\zeta_n),\\quad \\zeta_n^n=1$，其中$\\zeta_n$ 是本原 $n$ 次单位根。它的伽罗瓦群与 $(\\mathbb Z/n\\mathbb Z)^\\times$ 密切相关。\n\n它把数论中的同余群和多项式根结构连接起来。 这里要看多项式在底域上怎样分解，以及加入根以后得到怎样的扩张。特征、导多项式和判别式会影响重根与可分性；分圆和根式构造则把方程根的形状同群结构联系起来。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。 底域选择会改变最小多项式和扩张次数，迹、范数、嵌入数也随之换成新的线性数据。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分圆域",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E5%9C%86%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分圆域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E5%9C%86%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cyclotomic field",
+          "url": "https://en.wikipedia.org/w/index.php?search=cyclotomic%20field"
+        }
       ]
     },
     {
@@ -647,6 +1277,24 @@
         "R usual absolute value Q counterexample",
         "Q_p p-adic completion of Q",
         "complete field"
+      ],
+      "explanation_markdown": "完备域是带赋值或度量的域中所有柯西列都收敛的情形。常写成 $|\\cdot|,\\quad (x_n)\\text{ Cauchy}\\Rightarrow x_n\\to x\\in F$，其中绝对值或赋值给出距离，极限仍落在本域。实数域和 $p$ 进数域都是完备化的基本结果。\n\n它不同于代数闭合；完备性处理极限，代数闭合处理多项式根。 赋值语言关心元素的大小、零点阶数和完备化后的极限过程。离散赋值环、剩余域、分歧群和未分歧扩张描述的是同一个扩张在一个素位上的局部形状，而不是整个域的全部信息。 这种局部视角会把一个全局扩张拆到各个素位上看，分歧指数、剩余次数和完备化后的行为往往比抽象包含关系更能说明结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "完备域",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%8C%E5%A4%87%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "完备域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%8C%E5%A4%87%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "complete field",
+          "url": "https://en.wikipedia.org/w/index.php?search=complete%20field"
+        }
       ]
     },
     {
@@ -665,6 +1313,24 @@
         "v(xy)=v(x)+v(y) v(x+y)≥min(v(x),v(y))",
         "v_p t-adic order",
         "valuation"
+      ],
+      "explanation_markdown": "赋值是把域中元素的大小或整除阶数转化为有序数值的函数。常写成 $v(xy)=v(x)+v(y),\\quad v(x+y)\\ge\\min\\{v(x),v(y)\\}$，其中$v$ 是加法赋值，第二式是非阿基米德三角不等式。它产生赋值环、完备化和局部域。\n\n它与普通绝对值可互相转化，但强调乘法阶数和整除信息。 赋值语言关心元素的大小、零点阶数和完备化后的极限过程。离散赋值环、剩余域、分歧群和未分歧扩张描述的是同一个扩张在一个素位上的局部形状，而不是整个域的全部信息。 这种局部视角会把一个全局扩张拆到各个素位上看，分歧指数、剩余次数和完备化后的行为往往比抽象包含关系更能说明结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "赋值",
+          "url": "https://www.baidu.com/s?wd=%E8%B5%8B%E5%80%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "赋值",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B5%8B%E5%80%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "valuation",
+          "url": "https://en.wikipedia.org/w/index.php?search=valuation"
+        }
       ]
     },
     {
@@ -683,6 +1349,24 @@
         "R C Q_p F_q((t))",
         "non-Archimedean integer ring maximal ideal residue field",
         "local field"
+      ],
+      "explanation_markdown": "局部域是在一个离散赋值下局部紧且完备的非离散拓扑域。常写成 $K\\text{ complete},\\quad \\mathcal O_K=\\{x:v(x)\\ge0\\}$，其中$v$ 是离散赋值，$\\mathcal O_K$ 是整数环。典型例子是有限扩张的 $\\mathbb Q_p$ 和 $\\mathbb F_q((t))$。\n\n它和全局域互补；局部域关注单个素位点附近的算术。 赋值语言关心元素的大小、零点阶数和完备化后的极限过程。离散赋值环、剩余域、分歧群和未分歧扩张描述的是同一个扩张在一个素位上的局部形状，而不是整个域的全部信息。 这种局部视角会把一个全局扩张拆到各个素位上看，分歧指数、剩余次数和完备化后的行为往往比抽象包含关系更能说明结构。 局部化和完备化会改变可观察的单位、素元和剩余类，因而同一个扩张在不同素位上可能呈现不同分歧行为。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "局部域",
+          "url": "https://www.baidu.com/s?wd=%E5%B1%80%E9%83%A8%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "局部域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B1%80%E9%83%A8%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "local field",
+          "url": "https://en.wikipedia.org/w/index.php?search=local%20field"
+        }
       ]
     },
     {
@@ -701,6 +1385,24 @@
         "finite extensions of Q finite extensions of F_q(t)",
         "prime ideals valuations ramification localization",
         "global field"
+      ],
+      "explanation_markdown": "全局域是数域或一元有限域函数域的统称。常写成 $K/\\mathbb Q\\text{ finite}$ 或 $K/\\mathbb F_q(t)\\text{ finite}$，其中两类对象分别对应数论和函数域算术。它通过所有完备化联系到局部域。\n\n它不是任意大域；全局域要求有限生成并具有可控的素位点结构。 赋值语言关心元素的大小、零点阶数和完备化后的极限过程。离散赋值环、剩余域、分歧群和未分歧扩张描述的是同一个扩张在一个素位上的局部形状，而不是整个域的全部信息。 这种局部视角会把一个全局扩张拆到各个素位上看，分歧指数、剩余次数和完备化后的行为往往比抽象包含关系更能说明结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "全局域",
+          "url": "https://www.baidu.com/s?wd=%E5%85%A8%E5%B1%80%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "全局域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%A8%E5%B1%80%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "global field",
+          "url": "https://en.wikipedia.org/w/index.php?search=global%20field"
+        }
       ]
     },
     {
@@ -719,6 +1421,24 @@
         "φ(a+b)=φ(a)+φ(b) φ(ab)=φ(a)φ(b)",
         "copy inside another field",
         "field homomorphism"
+      ],
+      "explanation_markdown": "域同态是保持加法、乘法和单位元的域之间映射。常写成 $\\phi(a+b)=\\phi(a)+\\phi(b),\\quad \\phi(ab)=\\phi(a)\\phi(b)$，其中$\\phi(1)=1$ 通常作为域同态约定的一部分。非零域同态自动单射，因为核只能是零理想。\n\n它不同于环同态的宽泛情形；域没有非平凡理想使核出现。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "域同态",
+          "url": "https://www.baidu.com/s?wd=%E5%9F%9F%E5%90%8C%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "域同态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9F%9F%E5%90%8C%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "field homomorphism",
+          "url": "https://en.wikipedia.org/w/index.php?search=field%20homomorphism"
+        }
       ]
     },
     {
@@ -737,6 +1457,24 @@
         "bijective field homomorphism",
         "classification sameness criterion",
         "field isomorphism"
+      ],
+      "explanation_markdown": "域同构是双射的域同态，表示两个域有相同代数结构。常写成 $\\phi:F\\xrightarrow{\\sim}K,\\quad \\phi(a+b)=\\phi(a)+\\phi(b)$，其中$\\phi$ 同时保持乘法和单位元。同构允许把不同表示的域视为同一结构。\n\n它强于嵌入；嵌入只要求单射到更大域中。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "域同构",
+          "url": "https://www.baidu.com/s?wd=%E5%9F%9F%E5%90%8C%E6%9E%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "域同构",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9F%9F%E5%90%8C%E6%9E%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "field isomorphism",
+          "url": "https://en.wikipedia.org/w/index.php?search=field%20isomorphism"
+        }
       ]
     },
     {
@@ -755,6 +1493,24 @@
         "F-map fixes F pointwise",
         "separable extension count distinct roots",
         "embedding"
+      ],
+      "explanation_markdown": "嵌入是把一个域以同态方式单射放入另一个域。常写成 $\\iota:F\\hookrightarrow E,\\quad \\iota(1)=1$，其中$\\iota$ 保持域运算，像是 $E$ 的子域。它让抽象扩张可当作实际包含来处理。\n\n它不同于自同构；嵌入的陪域可以更大，未必把 $E$ 映回自身。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "嵌入",
+          "url": "https://www.baidu.com/s?wd=%E5%B5%8C%E5%85%A5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "嵌入",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B5%8C%E5%85%A5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "embedding",
+          "url": "https://en.wikipedia.org/w/index.php?search=embedding"
+        }
       ]
     },
     {
@@ -773,6 +1529,24 @@
         "largest separable algebraic extension in F^alg",
         "absolute Galois group Gal(F^sep/F)",
         "separable closure"
+      ],
+      "explanation_markdown": "可分闭包是在代数闭包中收集所有可分代数元素得到的扩域。常写成 $F^{\\mathrm{sep}}=\\{a\\in\\overline F:a\\text{ separable over }F\\}$，其中$\\overline F$ 是代数闭包，元素要求可分。它的自同构群就是绝对伽罗瓦群。\n\n它小于或等于代数闭包；在完美域上二者相同。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。 根的置换、固定域和子群格要一起读，才能看出正规、可分和伽罗瓦三层条件各自承担的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "可分闭包",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%AF%E5%88%86%E9%97%AD%E5%8C%85%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "可分闭包",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%AF%E5%88%86%E9%97%AD%E5%8C%85"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "separable closure",
+          "url": "https://en.wikipedia.org/w/index.php?search=separable%20closure"
+        }
       ]
     },
     {
@@ -791,6 +1565,24 @@
         "E=F(α) roots of m_{α,F}(x)",
         "finite separable case Galois environment",
         "normal closure"
+      ],
+      "explanation_markdown": "正规闭包是使给定代数扩张变成正规扩张的最小上层扩张。常写成 $L=F(\\text{all conjugates of elements of }E)$，其中$L$ 加入 $E$ 中元素的全部共轭根。它把不完整的根集合补齐，便于讨论伽罗瓦群。\n\n它不同于代数闭包；正规闭包只补足当前扩张需要的共轭根。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。 根的置换、固定域和子群格要一起读，才能看出正规、可分和伽罗瓦三层条件各自承担的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正规闭包",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E8%A7%84%E9%97%AD%E5%8C%85%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正规闭包",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E8%A7%84%E9%97%AD%E5%8C%85"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "normal closure",
+          "url": "https://en.wikipedia.org/w/index.php?search=normal%20closure"
+        }
       ]
     },
     {
@@ -809,6 +1601,24 @@
         "α∈E α^{p^n}∈F",
         "trivial separable part perfectness",
         "purely inseparable extension"
+      ],
+      "explanation_markdown": "纯不可分扩张是在正特征中每个元素的某个 $p$ 次幂落回底域的扩张。常写成 $\\forall\\alpha\\in E,\\ \\alpha^{p^r}\\in F$，其中$p$ 是底域特征，$r$ 可随元素变化。它的可分嵌入极少，常与 Frobenius 映射相关。\n\n它比一般不可分扩张更窄，完全由 $p$ 幂关系控制。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。 根的置换、固定域和子群格要一起读，才能看出正规、可分和伽罗瓦三层条件各自承担的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "纯不可分扩张",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%AF%E4%B8%8D%E5%8F%AF%E5%88%86%E6%89%A9%E5%BC%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "纯不可分扩张",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%AF%E4%B8%8D%E5%8F%AF%E5%88%86%E6%89%A9%E5%BC%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "purely inseparable extension",
+          "url": "https://en.wikipedia.org/w/index.php?search=purely%20inseparable%20extension"
+        }
       ]
     },
     {
@@ -827,6 +1637,24 @@
         "E=F(α)",
         "finite separable primitive element theorem",
         "simple extension"
+      ],
+      "explanation_markdown": "单扩张是由一个元素加入底域生成的扩张。常写成 $E=F(\\alpha)$，其中$\\alpha$ 可以是代数元，也可以是超越元。若 $\\alpha$ 代数，次数由最小多项式给出；若超越，则像有理函数域。\n\n它不同于有限生成扩张；后者可需要多个生成元。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单扩张",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E6%89%A9%E5%BC%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单扩张",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E6%89%A9%E5%BC%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "simple extension",
+          "url": "https://en.wikipedia.org/w/index.php?search=simple%20extension"
+        }
       ]
     },
     {
@@ -845,6 +1673,24 @@
         "E=F(α_1,...,α_n)",
         "Noether normalization transcendence basis",
         "finitely generated extension"
+      ],
+      "explanation_markdown": "有限生成扩张是由有限多个元素在底域上生成的扩张。常写成 $E=F(\\alpha_1,\\ldots,\\alpha_n)$，其中这些 $\\alpha_i$ 共同生成最小含它们的子域。它可同时包含超越部分和代数部分。\n\n它不同于有限扩张；有限生成不保证向量空间维数有限。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "有限生成扩张",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90%E6%89%A9%E5%BC%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "有限生成扩张",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90%E6%89%A9%E5%BC%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "finitely generated extension",
+          "url": "https://en.wikipedia.org/w/index.php?search=finitely%20generated%20extension"
+        }
       ]
     },
     {
@@ -863,6 +1709,24 @@
         "maximal algebraically independent S E/F(S) algebraic",
         "same cardinality for any two bases",
         "transcendence basis"
+      ],
+      "explanation_markdown": "超越基是极大代数无关集，使扩张在其生成的有理函数域上代数。常写成 $B\\subset E,\\quad E\\text{ algebraic over }F(B)$，其中$B$ 的元素彼此无代数关系，且再加入任何元素会破坏独立性。它把扩张分成自由变量部分和代数部分。\n\n它不是向量空间基；组合方式来自多项式关系而非线性关系。 有限扩张可以先当作底域上的向量空间处理，再回到乘法结构。迹和范数来自线性算子 $m_\\alpha:x\\mapsto\\alpha x$ 的矩阵不变量；张量积和标量扩张则记录底域改变后的线性关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "超越基",
+          "url": "https://www.baidu.com/s?wd=%E8%B6%85%E8%B6%8A%E5%9F%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "超越基",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B6%85%E8%B6%8A%E5%9F%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "transcendence basis",
+          "url": "https://en.wikipedia.org/w/index.php?search=transcendence%20basis"
+        }
       ]
     },
     {
@@ -881,6 +1745,24 @@
         "cardinality of transcendence basis",
         "finitely generated extension geometric dimension",
         "transcendence degree trdeg_F E"
+      ],
+      "explanation_markdown": "超越次数是超越基的基数，用来计量独立自由参数的个数。常写成 $\\operatorname{trdeg}_F E=|B|$，其中$B$ 是 $E/F$ 的任一超越基，基数彼此相同。函数域的维数常由超越次数表达。\n\n它不同于扩张次数；后者是线性维数，只适合有限代数层。 有限扩张可以先当作底域上的向量空间处理，再回到乘法结构。迹和范数来自线性算子 $m_\\alpha:x\\mapsto\\alpha x$ 的矩阵不变量；张量积和标量扩张则记录底域改变后的线性关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。 底域选择会改变最小多项式和扩张次数，迹、范数、嵌入数也随之换成新的线性数据。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "超越次数",
+          "url": "https://www.baidu.com/s?wd=%E8%B6%85%E8%B6%8A%E6%AC%A1%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "超越次数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B6%85%E8%B6%8A%E6%AC%A1%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "transcendence degree",
+          "url": "https://en.wikipedia.org/w/index.php?search=transcendence%20degree"
+        }
       ]
     },
     {
@@ -899,6 +1781,24 @@
         "0≠f∈F[x_1,...,x_n] f(α_1,...,α_n)≠0",
         "transcendence basis trdeg criterion",
         "algebraically independent"
+      ],
+      "explanation_markdown": "代数无关是指一组元素之间不存在底域系数的非零多项式关系。常写成 $f(a_1,\\ldots,a_n)=0\\Rightarrow f=0$，其中$f\\in F[x_1,\\ldots,x_n]$，$a_i$ 属于扩域。它是超越基和函数域维数的核心条件。\n\n它比线性无关更强，排除所有多项式关系而不只是一阶关系。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "代数无关",
+          "url": "https://www.baidu.com/s?wd=%E4%BB%A3%E6%95%B0%E6%97%A0%E5%85%B3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "代数无关",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BB%A3%E6%95%B0%E6%97%A0%E5%85%B3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "algebraic independence",
+          "url": "https://en.wikipedia.org/w/index.php?search=algebraic%20independence"
+        }
       ]
     },
     {
@@ -917,6 +1817,24 @@
         "f(x)=c∏(x-α_i) α_i in field",
         "multiplicities degree total",
         "split polynomial"
+      ],
+      "explanation_markdown": "分裂多项式通常指在指定域上已经分解成一次因子的多项式。常写成 $f(x)=c\\prod_i(x-a_i)\\in F[x]$，其中所有根 $a_i$ 都属于同一域 $F$。它说明不必再扩域就能看到全部根。\n\n它与不可约多项式相反方向；不可约强调不能分解，分裂强调完全分解。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。 根的置换、固定域和子群格要一起读，才能看出正规、可分和伽罗瓦三层条件各自承担的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分裂多项式",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E8%A3%82%E5%A4%9A%E9%A1%B9%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分裂多项式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E8%A3%82%E5%A4%9A%E9%A1%B9%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "split polynomial",
+          "url": "https://en.wikipedia.org/w/index.php?search=split%20polynomial"
+        }
       ]
     },
     {
@@ -935,6 +1853,24 @@
         "irreducible f gcd(f,f')=1",
         "char 0 automatic char p f'=0 failure",
         "separable polynomial"
+      ],
+      "explanation_markdown": "可分多项式是在分裂域中没有重根的多项式。常写成 $\\gcd(f,f')=1$，其中$f'$ 是形式导数，最大公因子在 $F[x]$ 中计算。它保证根的个数等于次数并支持可分扩张。\n\n它不同于不可约；可约多项式也可能可分，不可约多项式在正特征中也可能不可分。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "可分多项式",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%AF%E5%88%86%E5%A4%9A%E9%A1%B9%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "可分多项式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%AF%E5%88%86%E5%A4%9A%E9%A1%B9%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "separable polynomial",
+          "url": "https://en.wikipedia.org/w/index.php?search=separable%20polynomial"
+        }
       ]
     },
     {
@@ -953,6 +1889,24 @@
         "f=gh implies g or h constant",
         "minimal equation of algebraic element",
         "irreducible polynomial"
+      ],
+      "explanation_markdown": "不可约多项式是在底域多项式环中不能分成两个非常数因子的多项式。常写成 $f=gh\\Rightarrow \\deg g=0\\text{ or }\\deg h=0$，其中$g,h$ 都在 $F[x]$ 中，分解受底域限制。它产生简单代数扩张 $F[x]/(f)$。\n\n它不是绝对概念；扩大底域后同一多项式可能变得可约。 这里要看多项式在底域上怎样分解，以及加入根以后得到怎样的扩张。特征、导多项式和判别式会影响重根与可分性；分圆和根式构造则把方程根的形状同群结构联系起来。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "不可约多项式",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%8D%E5%8F%AF%E7%BA%A6%E5%A4%9A%E9%A1%B9%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "不可约多项式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%8D%E5%8F%AF%E7%BA%A6%E5%A4%9A%E9%A1%B9%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "irreducible polynomial",
+          "url": "https://en.wikipedia.org/w/index.php?search=irreducible%20polynomial"
+        }
       ]
     },
     {
@@ -971,6 +1925,24 @@
         "stronger than irreducible construction generator",
         "multiplicative order in F_{q^n}^×",
         "primitive polynomial"
+      ],
+      "explanation_markdown": "本原多项式在不同语境中常指系数互素的整系数多项式或有限域乘法群本原元的最小多项式。常写成 $\\gcd(a_0,\\ldots,a_n)=1$ 或 $\\operatorname{ord}(\\alpha)=q^m-1$，其中前式用于高斯引理，后式用于有限域。它连接不可约性、内容和有限域生成元。\n\n两种用法需分清；一个谈系数内容，一个谈根在乘法群中的阶。 这里要看多项式在底域上怎样分解，以及加入根以后得到怎样的扩张。特征、导多项式和判别式会影响重根与可分性；分圆和根式构造则把方程根的形状同群结构联系起来。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "本原多项式",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%AC%E5%8E%9F%E5%A4%9A%E9%A1%B9%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "本原多项式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%AC%E5%8E%9F%E5%A4%9A%E9%A1%B9%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "primitive polynomial",
+          "url": "https://en.wikipedia.org/w/index.php?search=primitive%20polynomial"
+        }
       ]
     },
     {
@@ -989,6 +1961,24 @@
         "constant term not divisible by p^2",
         "Z[x] to Q[x] irreducible",
         "Eisenstein criterion"
+      ],
+      "explanation_markdown": "艾森斯坦判别法是判定整系数多项式在有理数域上不可约的充分条件。常写成 $p\\mid a_i\\ (i<n),\\ p\\nmid a_n,\\ p^2\\nmid a_0$，其中$p$ 是素数，$a_nx^n+\\cdots+a_0$ 是多项式。它常用于构造数域和最小多项式。\n\n它只给充分条件；不满足这些整除关系并不代表多项式可约。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "艾森斯坦判别法",
+          "url": "https://www.baidu.com/s?wd=%E8%89%BE%E6%A3%AE%E6%96%AF%E5%9D%A6%E5%88%A4%E5%88%AB%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "艾森斯坦判别法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%89%BE%E6%A3%AE%E6%96%AF%E5%9D%A6%E5%88%A4%E5%88%AB%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "eisenstein criterion",
+          "url": "https://en.wikipedia.org/w/index.php?search=eisenstein%20criterion"
+        }
       ]
     },
     {
@@ -1007,6 +1997,24 @@
         "generator g nonzero elements g^i",
         "primitive element discrete logarithm computations",
         "multiplicative group of a finite field"
+      ],
+      "explanation_markdown": "有限域乘法群是有限域非零元素在乘法下形成的循环群。常写成 $\\mathbb F_q^\\times\\cong C_{q-1}$，其中$q$ 是域的元素个数，群阶为 $q-1$。它让离散对数、本原元和分圆结构可在有限域中讨论。\n\n它不同于有限域本身；加法结构是向量空间，乘法群只包含非零元素。 这里要看多项式在底域上怎样分解，以及加入根以后得到怎样的扩张。特征、导多项式和判别式会影响重根与可分性；分圆和根式构造则把方程根的形状同群结构联系起来。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "有限域乘法群",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%89%E9%99%90%E5%9F%9F%E4%B9%98%E6%B3%95%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "有限域乘法群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%89%E9%99%90%E5%9F%9F%E4%B9%98%E6%B3%95%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "multiplicative group of finite field",
+          "url": "https://en.wikipedia.org/w/index.php?search=multiplicative%20group%20of%20finite%20field"
+        }
       ]
     },
     {
@@ -1025,6 +2033,24 @@
         "x↦x^p x↦x^q",
         "F_{q^n}/F_q n-th iterate identity",
         "Frobenius automorphism"
+      ],
+      "explanation_markdown": "弗罗贝尼乌斯自同构是在正特征有限域或完美环境中由 $p$ 次幂给出的自同构。常写成 $\\mathrm{Frob}_q(x)=x^q$，其中$q$ 常为底有限域大小，映射固定 $\\mathbb F_q$。它生成有限域扩张的伽罗瓦群。\n\n在一般正特征环上 Frobenius 未必是自同构，单射满射都要另行满足。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。 根的置换、固定域和子群格要一起读，才能看出正规、可分和伽罗瓦三层条件各自承担的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弗罗贝尼乌斯自同构",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%97%E7%BD%97%E8%B4%9D%E5%B0%BC%E4%B9%8C%E6%96%AF%E8%87%AA%E5%90%8C%E6%9E%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弗罗贝尼乌斯自同构",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%97%E7%BD%97%E8%B4%9D%E5%B0%BC%E4%B9%8C%E6%96%AF%E8%87%AA%E5%90%8C%E6%9E%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "frobenius automorphism",
+          "url": "https://en.wikipedia.org/w/index.php?search=frobenius%20automorphism"
+        }
       ]
     },
     {
@@ -1043,6 +2069,24 @@
         "char p Frobenius x↦x^p surjective",
         "finite fields algebraically closed fields",
         "perfect field"
+      ],
+      "explanation_markdown": "完美域是所有有限扩张都可分的域。常写成 $\\operatorname{char}F=0$ 或 $F^p=F$，其中正特征时 $F^p=F$ 表示每个元素都有 $p$ 次根。它排除了纯不可分现象，使代数闭包等于可分闭包。\n\n有限域和特征零域都是完美域，一般正特征函数域则未必完美。 这里要看多项式在底域上怎样分解，以及加入根以后得到怎样的扩张。特征、导多项式和判别式会影响重根与可分性；分圆和根式构造则把方程根的形状同群结构联系起来。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "完美域",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%8C%E7%BE%8E%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "完美域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%8C%E7%BE%8E%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "perfect field",
+          "url": "https://en.wikipedia.org/w/index.php?search=perfect%20field"
+        }
       ]
     },
     {
@@ -1061,6 +2105,24 @@
         "x^n-1=∏_{d|n} Φ_d(x)",
         "over Q irreducible primitive n-th roots",
         "cyclotomic polynomial"
+      ],
+      "explanation_markdown": "分圆多项式是以本原单位根为根的不可约多项式。常写成 $\\Phi_n(x)=\\prod_{(k,n)=1}(x-e^{2\\pi ik/n})$，其中乘积取所有与 $n$ 互素的 $k$。它满足 $x^n-1=\\prod_{d\\mid n}\\Phi_d(x)$。\n\n它把单位根、欧拉函数和分圆域联系起来。 这里要看多项式在底域上怎样分解，以及加入根以后得到怎样的扩张。特征、导多项式和判别式会影响重根与可分性；分圆和根式构造则把方程根的形状同群结构联系起来。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。 底域选择会改变最小多项式和扩张次数，迹、范数、嵌入数也随之换成新的线性数据。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分圆多项式",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E5%9C%86%E5%A4%9A%E9%A1%B9%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分圆多项式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E5%9C%86%E5%A4%9A%E9%A1%B9%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cyclotomic polynomial",
+          "url": "https://en.wikipedia.org/w/index.php?search=cyclotomic%20polynomial"
+        }
       ]
     },
     {
@@ -1079,6 +2141,24 @@
         "solvable group radical tower",
         "general quintic S_5 obstruction",
         "solvable by radicals"
+      ],
+      "explanation_markdown": "根式可解指多项式的根能通过有限次四则运算和开方根式从系数表达。常写成 $F\\subset F(\\alpha_1)\\subset\\cdots,\\quad \\alpha_i^{n_i}\\in F(\\alpha_1,\\ldots,\\alpha_{i-1})$，其中每一步加入一个幂方程的根。伽罗瓦理论把它等价到相关伽罗瓦群的可解性。\n\n它不是“数值上可近似求根”，而是代数表达形式上的可解。 这里要看多项式在底域上怎样分解，以及加入根以后得到怎样的扩张。特征、导多项式和判别式会影响重根与可分性；分圆和根式构造则把方程根的形状同群结构联系起来。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "根式可解",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%B9%E5%BC%8F%E5%8F%AF%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "根式可解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%B9%E5%BC%8F%E5%8F%AF%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "solvable by radicals",
+          "url": "https://en.wikipedia.org/w/index.php?search=solvable%20by%20radicals"
+        }
       ]
     },
     {
@@ -1097,6 +2177,24 @@
         "minimal Galois extension containing E",
         "equation symmetries minimal good ambient field",
         "Galois closure"
+      ],
+      "explanation_markdown": "伽罗瓦闭包是包含给定扩张并在底域上成为伽罗瓦扩张的最小扩张。常写成 $L/F\\text{ Galois},\\quad E\\subset L$，其中$L$ 通常由 $E$ 的全部共轭像生成。它让非正规扩张也能用伽罗瓦群研究。\n\n它不同于正规闭包的可分性表述；在可分情形二者常合在一起。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "伽罗瓦闭包",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%BD%E7%BD%97%E7%93%A6%E9%97%AD%E5%8C%85%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "伽罗瓦闭包",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%BD%E7%BD%97%E7%93%A6%E9%97%AD%E5%8C%85"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "galois closure",
+          "url": "https://en.wikipedia.org/w/index.php?search=galois%20closure"
+        }
       ]
     },
     {
@@ -1115,6 +2213,24 @@
         "F⊂M⊂E",
         "Galois case subgroups reverse correspondence",
         "intermediate field"
+      ],
+      "explanation_markdown": "中间域是位于底域和上域之间的域。常写成 $F\\subset K\\subset E$，其中$K$ 继承同一运算，同时可看作 $E/F$ 的一层。它使扩张可分解成 $E/K$ 与 $K/F$。\n\n在伽罗瓦扩张中，中间域由子群固定域精确描述。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。 根的置换、固定域和子群格要一起读，才能看出正规、可分和伽罗瓦三层条件各自承担的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "中间域",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%AD%E9%97%B4%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "中间域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%AD%E9%97%B4%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "intermediate field",
+          "url": "https://en.wikipedia.org/w/index.php?search=intermediate%20field"
+        }
       ]
     },
     {
@@ -1133,6 +2249,24 @@
         "H↦E^H M↦Gal(E/M)",
         "normal subgroup Galois intermediate extension quotient group",
         "fundamental theorem of Galois theory"
+      ],
+      "explanation_markdown": "基本定理在域论语境通常指伽罗瓦理论基本定理。常写成 $H\\leftrightarrow E^H,\\quad [E:E^H]=|H|$，其中$H$ 是有限伽罗瓦群的子群，$E^H$ 为固定域。它建立子群与中间域的反向一一对应。\n\n它依赖有限伽罗瓦扩张；任意扩张下只能得到较弱的包含关系。 有限扩张可以先当作底域上的向量空间处理，再回到乘法结构。迹和范数来自线性算子 $m_\\alpha:x\\mapsto\\alpha x$ 的矩阵不变量；张量积和标量扩张则记录底域改变后的线性关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "基本定理",
+          "url": "https://www.baidu.com/s?wd=%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "基本定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fundamental theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=fundamental%20theorem"
+        }
       ]
     },
     {
@@ -1151,6 +2285,24 @@
         "{σ(α):σ∈Gal(E/F)}",
         "F-basis group action computation",
         "normal basis"
+      ],
+      "explanation_markdown": "正规基是由一个元素的伽罗瓦共轭组成的底域向量空间基。常写成 $\\{\\sigma(\\alpha):\\sigma\\in G\\}\\text{ is an }F\\text{-basis of }E$，其中$G=\\operatorname{Gal}(E/F)$，$\\alpha$ 称为正规基生成元。它把域扩张的线性基与群作用合并。\n\n它不同于幂基 $1,\\alpha,\\ldots$；正规基由自同构轨道给出。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。 根的置换、固定域和子群格要一起读，才能看出正规、可分和伽罗瓦三层条件各自承担的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正规基",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E8%A7%84%E5%9F%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正规基",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E8%A7%84%E5%9F%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "normal basis",
+          "url": "https://en.wikipedia.org/w/index.php?search=normal%20basis"
+        }
       ]
     },
     {
@@ -1169,6 +2321,24 @@
         "α∈E {σ(α)}_{σ∈G} F-basis",
         "finite field extensions Galois module structure",
         "normal basis theorem"
+      ],
+      "explanation_markdown": "正规基定理说明有限伽罗瓦扩张总存在正规基。常写成 $E/F\\text{ finite Galois}\\Rightarrow \\exists\\alpha,\\ E=\\bigoplus_{\\sigma\\in G}F\\sigma(\\alpha)$，其中$G$ 是伽罗瓦群，直和表示线性无关生成。它在计算迹、有限域和表示观点中很有用。\n\n它要求伽罗瓦条件；一般有限扩张未必有这种共轭轨道基。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。 根的置换、固定域和子群格要一起读，才能看出正规、可分和伽罗瓦三层条件各自承担的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正规基定理",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E8%A7%84%E5%9F%BA%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正规基定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E8%A7%84%E5%9F%BA%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "normal basis theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=normal%20basis%20theorem"
+        }
       ]
     },
     {
@@ -1187,6 +2357,24 @@
         "[K:K^G]=|G|",
         "automorphism group to Galois extension",
         "Artin theorem"
+      ],
+      "explanation_markdown": "阿廷定理在伽罗瓦理论中常指有限自同构群的固定域定理。常写成 $[E:E^G]=|G|$，其中$G$ 是域 $E$ 的有限自同构群，$E^G$ 是固定域。它从群作用出发构造伽罗瓦扩张。\n\n它和伽罗瓦对应方向相反：先给自同构群，再得到固定域和扩张次数。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阿廷定理",
+          "url": "https://www.baidu.com/s?wd=%E9%98%BF%E5%BB%B7%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阿廷定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%BF%E5%BB%B7%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "artin theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=artin%20theorem"
+        }
       ]
     },
     {
@@ -1205,6 +2393,24 @@
         "α^n=a Galois group roots of unity",
         "K^×/(K^×)^n abelian extensions",
         "Kummer extension"
+      ],
+      "explanation_markdown": "库默扩张是在含足够单位根的域上由加入 $n$ 次根得到的阿贝尔型扩张。常写成 $E=F(\\sqrt[n]{a}),\\quad \\mu_n\\subset F$，其中$\\mu_n$ 是 $n$ 次单位根群，特征通常不整除 $n$。它把乘法群商 $F^\\times/(F^\\times)^n$ 与循环扩张联系起来。\n\n它不同于 Artin-Schreier 扩张；后者属于特征 $p$ 的加法型方程。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "库默扩张",
+          "url": "https://www.baidu.com/s?wd=%E5%BA%93%E9%BB%98%E6%89%A9%E5%BC%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "库默扩张",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BA%93%E9%BB%98%E6%89%A9%E5%BC%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kummer extension",
+          "url": "https://en.wikipedia.org/w/index.php?search=kummer%20extension"
+        }
       ]
     },
     {
@@ -1223,6 +2429,24 @@
         "cyclotomic construction over Q",
         "class field theory classification",
         "Abelian extension"
+      ],
+      "explanation_markdown": "阿贝尔扩张是伽罗瓦群为阿贝尔群的伽罗瓦扩张。常写成 $\\operatorname{Gal}(E/F)\\text{ abelian}$，其中群运算可交换，子扩张结构因而更有序。类域论以阿贝尔扩张为核心对象。\n\n它强于循环扩张的方向相反：循环扩张一定阿贝尔，阿贝尔扩张未必循环。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阿贝尔扩张",
+          "url": "https://www.baidu.com/s?wd=%E9%98%BF%E8%B4%9D%E5%B0%94%E6%89%A9%E5%BC%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阿贝尔扩张",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%BF%E8%B4%9D%E5%B0%94%E6%89%A9%E5%BC%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "abelian extension",
+          "url": "https://en.wikipedia.org/w/index.php?search=abelian%20extension"
+        }
       ]
     },
     {
@@ -1241,6 +2465,24 @@
         "Gal(E/F) cyclic group",
         "finite field extension Frobenius generator",
         "cyclic extension"
+      ],
+      "explanation_markdown": "循环扩张是伽罗瓦群为循环群的扩张。常写成 $\\operatorname{Gal}(E/F)=\\langle\\sigma\\rangle$，其中一个自同构 $\\sigma$ 生成全部伽罗瓦群。有限域扩张和许多 Kummer 扩张都给出例子。\n\n它比阿贝尔扩张更窄，要求所有对称由单个元素反复作用产生。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "循环扩张",
+          "url": "https://www.baidu.com/s?wd=%E5%BE%AA%E7%8E%AF%E6%89%A9%E5%BC%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "循环扩张",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BE%AA%E7%8E%AF%E6%89%A9%E5%BC%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cyclic extension",
+          "url": "https://en.wikipedia.org/w/index.php?search=cyclic%20extension"
+        }
       ]
     },
     {
@@ -1259,6 +2501,24 @@
         "local case uniformizer extra power",
         "discriminant different ideal detection",
         "ramification"
+      ],
+      "explanation_markdown": "分歧描述素理想或赋值在扩张中出现幂次重合的现象。常写成 $\\mathfrak p\\mathcal O_E=\\prod_i\\mathfrak P_i^{e_i}$，其中$e_i$ 是分歧指数，$\\mathfrak P_i$ 位于 $\\mathfrak p$ 之上。它衡量局部算术在扩张中是否变得更奇异。\n\n它不同于完全分解；完全分解强调多个不同素位点，分歧强调指数大于一。 赋值语言关心元素的大小、零点阶数和完备化后的极限过程。离散赋值环、剩余域、分歧群和未分歧扩张描述的是同一个扩张在一个素位上的局部形状，而不是整个域的全部信息。 这种局部视角会把一个全局扩张拆到各个素位上看，分歧指数、剩余次数和完备化后的行为往往比抽象包含关系更能说明结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分歧",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E6%AD%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分歧",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E6%AD%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ramification",
+          "url": "https://en.wikipedia.org/w/index.php?search=ramification"
+        }
       ]
     },
     {
@@ -1277,6 +2537,24 @@
         "non-Archimedean local e=1 separable residue",
         "maximal case Frobenius element",
         "unramified extension"
+      ],
+      "explanation_markdown": "未分歧扩张是在指定素位点处分歧指数为一且剩余域扩张可分的扩张。常写成 $e(\\mathfrak P/\\mathfrak p)=1$，其中$e$ 是分歧指数，$\\mathfrak P$ 位于 $\\mathfrak p$ 之上。它表示该局部位置没有新的重合或奇异。\n\n它不等于完全分解；未分歧仍可能有非平凡剩余域扩张。 赋值语言关心元素的大小、零点阶数和完备化后的极限过程。离散赋值环、剩余域、分歧群和未分歧扩张描述的是同一个扩张在一个素位上的局部形状，而不是整个域的全部信息。 这种局部视角会把一个全局扩张拆到各个素位上看，分歧指数、剩余次数和完备化后的行为往往比抽象包含关系更能说明结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "未分歧扩张",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%AA%E5%88%86%E6%AD%A7%E6%89%A9%E5%BC%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "未分歧扩张",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%AA%E5%88%86%E6%AD%A7%E6%89%A9%E5%BC%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "unramified extension",
+          "url": "https://en.wikipedia.org/w/index.php?search=unramified%20extension"
+        }
       ]
     },
     {
@@ -1295,6 +2573,24 @@
         "pO_L=P_1...P_n e_i=f_i=1",
         "Galois extension Frobenius identity",
         "completely split"
+      ],
+      "explanation_markdown": "完全分解指一个素理想在扩张中分解成尽可能多的不同素理想。常写成 $\\mathfrak p\\mathcal O_E=\\mathfrak P_1\\cdots\\mathfrak P_n$，其中通常 $e_i=f_i=1$，个数等于扩张次数。它表示该素位点在上层完全裂开。\n\n它和未分歧不同；未分歧只要求没有指数重合，不要求裂成全部线性因子。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "完全分解",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%8C%E5%85%A8%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "完全分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%8C%E5%85%A8%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "complete splitting",
+          "url": "https://en.wikipedia.org/w/index.php?search=complete%20splitting"
+        }
       ]
     },
     {
@@ -1313,6 +2609,24 @@
         "kernel(D_P→Gal(κ(P)/κ(p)))",
         "trivial group no inertial contribution",
         "inertia group"
+      ],
+      "explanation_markdown": "惯性群是在局部伽罗瓦扩张中对剩余域作用平凡的分解群子群。常写成 $I_{\\mathfrak P}=\\ker(D_{\\mathfrak P}\\to\\operatorname{Gal}(\\kappa_{\\mathfrak P}/\\kappa_{\\mathfrak p}))$，其中$D_{\\mathfrak P}$ 是分解群，$\\kappa$ 表示剩余域。它测量分歧中真正留在高阶邻域的部分。\n\n它不同于分解群；分解群固定素理想，惯性群还要求剩余域上不动。 赋值语言关心元素的大小、零点阶数和完备化后的极限过程。离散赋值环、剩余域、分歧群和未分歧扩张描述的是同一个扩张在一个素位上的局部形状，而不是整个域的全部信息。 这种局部视角会把一个全局扩张拆到各个素位上看，分歧指数、剩余次数和完备化后的行为往往比抽象包含关系更能说明结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "惯性群",
+          "url": "https://www.baidu.com/s?wd=%E6%83%AF%E6%80%A7%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "惯性群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%83%AF%E6%80%A7%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inertia group",
+          "url": "https://en.wikipedia.org/w/index.php?search=inertia%20group"
+        }
       ]
     },
     {
@@ -1331,6 +2645,24 @@
         "D_P={σ:σ(P)=P}",
         "localization L_P/K_p Galois symmetry",
         "decomposition group"
+      ],
+      "explanation_markdown": "分解群是伽罗瓦群中保持某个上层素理想不变的子群。常写成 $D_{\\mathfrak P}=\\{\\sigma:\\sigma(\\mathfrak P)=\\mathfrak P\\}$，其中$\\mathfrak P$ 是位于底层素理想之上的素理想。它描述一个局部位点在全局扩张中的稳定对称。\n\n它包含惯性群；商群反映剩余域扩张的伽罗瓦群。 赋值语言关心元素的大小、零点阶数和完备化后的极限过程。离散赋值环、剩余域、分歧群和未分歧扩张描述的是同一个扩张在一个素位上的局部形状，而不是整个域的全部信息。 这种局部视角会把一个全局扩张拆到各个素位上看，分歧指数、剩余次数和完备化后的行为往往比抽象包含关系更能说明结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分解群",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E8%A7%A3%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分解群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E8%A7%A3%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "decomposition group",
+          "url": "https://en.wikipedia.org/w/index.php?search=decomposition%20group"
+        }
       ]
     },
     {
@@ -1349,6 +2681,24 @@
         "κ(p)=O_p/p O_v/m_v",
         "Z_p quotient F_p",
         "residue field"
+      ],
+      "explanation_markdown": "剩余域是赋值环或局部环模去极大理想得到的域。常写成 $\\kappa(v)=\\mathcal O_v/\\mathfrak m_v$，其中$\\mathcal O_v$ 是赋值环，$\\mathfrak m_v$ 是极大理想。它保留局部对象的最低阶信息。\n\n它不同于原域；剩余域是把高阶小量压成零后的截面。 赋值语言关心元素的大小、零点阶数和完备化后的极限过程。离散赋值环、剩余域、分歧群和未分歧扩张描述的是同一个扩张在一个素位上的局部形状，而不是整个域的全部信息。 这种局部视角会把一个全局扩张拆到各个素位上看，分歧指数、剩余次数和完备化后的行为往往比抽象包含关系更能说明结构。 局部化和完备化会改变可观察的单位、素元和剩余类，因而同一个扩张在不同素位上可能呈现不同分歧行为。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "剩余域",
+          "url": "https://www.baidu.com/s?wd=%E5%89%A9%E4%BD%99%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "剩余域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%89%A9%E4%BD%99%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "residue field",
+          "url": "https://en.wikipedia.org/w/index.php?search=residue%20field"
+        }
       ]
     },
     {
@@ -1367,6 +2717,24 @@
         "v_p(x) t-adic order",
         "value 1 uniformizer",
         "discrete valuation"
+      ],
+      "explanation_markdown": "离散赋值是取值在整数群中的赋值。常写成 $v:F^\\times\\to\\mathbb Z,\\quad v(xy)=v(x)+v(y)$，其中值群为离散的 $\\mathbb Z$，常取一个统一化元 $\\pi$ 满足 $v(\\pi)=1$。它产生离散赋值环和局部域结构。\n\n它比一般赋值更可计算，因为每个非零元素都有明确阶数。 赋值语言关心元素的大小、零点阶数和完备化后的极限过程。离散赋值环、剩余域、分歧群和未分歧扩张描述的是同一个扩张在一个素位上的局部形状，而不是整个域的全部信息。 这种局部视角会把一个全局扩张拆到各个素位上看，分歧指数、剩余次数和完备化后的行为往往比抽象包含关系更能说明结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "离散赋值",
+          "url": "https://www.baidu.com/s?wd=%E7%A6%BB%E6%95%A3%E8%B5%8B%E5%80%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "离散赋值",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A6%BB%E6%95%A3%E8%B5%8B%E5%80%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "discrete valuation",
+          "url": "https://en.wikipedia.org/w/index.php?search=discrete%20valuation"
+        }
       ]
     },
     {
@@ -1385,6 +2753,24 @@
         "O_v={x∈K:v(x)≥0}",
         "v(x)>0 unique maximal ideal",
         "valuation ring"
+      ],
+      "explanation_markdown": "赋值环是由非负赋值元素组成的局部环。常写成 $\\mathcal O_v=\\{x\\in F:v(x)\\ge0\\},\\quad \\mathfrak m_v=\\{x:v(x)>0\\}$，其中$\\mathfrak m_v$ 是唯一极大理想。它把域中的大小关系转化为整性和可逆性。\n\n它不是任意子环；对每个非零 $x$，$x$ 与 $x^{-1}$ 至少一个落在环中。 赋值语言关心元素的大小、零点阶数和完备化后的极限过程。离散赋值环、剩余域、分歧群和未分歧扩张描述的是同一个扩张在一个素位上的局部形状，而不是整个域的全部信息。 这种局部视角会把一个全局扩张拆到各个素位上看，分歧指数、剩余次数和完备化后的行为往往比抽象包含关系更能说明结构。 局部化和完备化会改变可观察的单位、素元和剩余类，因而同一个扩张在不同素位上可能呈现不同分歧行为。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "赋值环",
+          "url": "https://www.baidu.com/s?wd=%E8%B5%8B%E5%80%BC%E7%8E%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "赋值环",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B5%8B%E5%80%BC%E7%8E%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "valuation ring",
+          "url": "https://en.wikipedia.org/w/index.php?search=valuation%20ring"
+        }
       ]
     },
     {
@@ -1403,6 +2789,24 @@
         "S^{-1}R R_p",
         "domain nonzero elements fraction field",
         "localization"
+      ],
+      "explanation_markdown": "局部化是在环或域相关结构中把指定元素变成可逆元的过程。常写成 $S^{-1}R=\\{r/s:r\\in R,s\\in S\\}$，其中$S$ 是乘法闭集，分母来自 $S$。它聚焦某个素理想或开集附近的代数信息。\n\n它和完备化不同；局部化加入分母，完备化加入极限。 赋值语言关心元素的大小、零点阶数和完备化后的极限过程。离散赋值环、剩余域、分歧群和未分歧扩张描述的是同一个扩张在一个素位上的局部形状，而不是整个域的全部信息。 这种局部视角会把一个全局扩张拆到各个素位上看，分歧指数、剩余次数和完备化后的行为往往比抽象包含关系更能说明结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "局部化",
+          "url": "https://www.baidu.com/s?wd=%E5%B1%80%E9%83%A8%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "局部化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B1%80%E9%83%A8%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "localization",
+          "url": "https://en.wikipedia.org/w/index.php?search=localization"
+        }
       ]
     },
     {
@@ -1421,6 +2825,24 @@
         "series ∑ a_n p^n",
         "integer ring Z_p residue field F_p",
         "Q_p p-adic field"
+      ],
+      "explanation_markdown": "p进数域是有理数域按 $p$ 进绝对值完备化得到的局部域。常写成 $|x|_p=p^{-v_p(x)},\\quad \\mathbb Q_p=\\widehat{\\mathbb Q}^{|\\cdot|_p}$，其中$v_p$ 是 $p$ 的指数，完备化补入所有柯西极限。它把整除高次 $p$ 的数看作很小。\n\n它不同于实数完备化；距离由素数整除性而非大小顺序决定。 赋值语言关心元素的大小、零点阶数和完备化后的极限过程。离散赋值环、剩余域、分歧群和未分歧扩张描述的是同一个扩张在一个素位上的局部形状，而不是整个域的全部信息。 这种局部视角会把一个全局扩张拆到各个素位上看，分歧指数、剩余次数和完备化后的行为往往比抽象包含关系更能说明结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "p进数域",
+          "url": "https://www.baidu.com/s?wd=p%E8%BF%9B%E6%95%B0%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "p进数域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=p%E8%BF%9B%E6%95%B0%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "p adic field",
+          "url": "https://en.wikipedia.org/w/index.php?search=p%20adic%20field"
+        }
       ]
     },
     {
@@ -1439,6 +2861,24 @@
         "fraction field of F[t] one-variable transcendental extension",
         "trdeg 1 algebraic function field model",
         "rational function field"
+      ],
+      "explanation_markdown": "有理函数域是多项式环的分式域，元素是多项式之比。常写成 $F(t)=\\operatorname{Frac}(F[t])$，其中$t$ 在 $F$ 上超越，分母不为零。它是最基本的一元超越扩张。\n\n它不同于代数函数域；后者在某个有理函数域上再满足代数方程。 赋值语言关心元素的大小、零点阶数和完备化后的极限过程。离散赋值环、剩余域、分歧群和未分歧扩张描述的是同一个扩张在一个素位上的局部形状，而不是整个域的全部信息。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "有理函数域",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%89%E7%90%86%E5%87%BD%E6%95%B0%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "有理函数域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%89%E7%90%86%E5%87%BD%E6%95%B0%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "rational function field",
+          "url": "https://en.wikipedia.org/w/index.php?search=rational%20function%20field"
+        }
       ]
     },
     {
@@ -1457,6 +2897,24 @@
         "fraction field of F[[t]] F((t))",
         "t-adic order non-Archimedean local field",
         "formal Laurent series field"
+      ],
+      "explanation_markdown": "形式幂级数域是 Laurent 级数在给定系数域上形成的域。常写成 $F((t))=\\{\\sum_{n\\ge N}a_nt^n\\}$，其中$N$ 可为整数，只有有限多个负次项。它是正特征局部域的重要模型。\n\n它不同于普通幂级数环 $F[[t]]$；允许有限负次项后非零元素才都有逆元。 赋值语言关心元素的大小、零点阶数和完备化后的极限过程。离散赋值环、剩余域、分歧群和未分歧扩张描述的是同一个扩张在一个素位上的局部形状，而不是整个域的全部信息。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "形式幂级数域",
+          "url": "https://www.baidu.com/s?wd=%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "形式幂级数域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BD%A2%E5%BC%8F%E5%B9%82%E7%BA%A7%E6%95%B0%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "field of formal power series",
+          "url": "https://en.wikipedia.org/w/index.php?search=field%20of%20formal%20power%20series"
+        }
       ]
     },
     {
@@ -1475,6 +2933,24 @@
         "trdeg over constants 1 finitely generated",
         "algebraic curve function environment",
         "algebraic function field"
+      ],
+      "explanation_markdown": "代数函数域是在常数域上一元有理函数域的有限代数扩张。常写成 $K/F(t)\\text{ finite algebraic}$，其中$t$ 是超越元，$K$ 可看作曲线的函数域。它把代数曲线和域扩张联系起来。\n\n它不同于有理函数域本身；一般会包含满足代数方程的函数。 赋值语言关心元素的大小、零点阶数和完备化后的极限过程。离散赋值环、剩余域、分歧群和未分歧扩张描述的是同一个扩张在一个素位上的局部形状，而不是整个域的全部信息。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "代数函数域",
+          "url": "https://www.baidu.com/s?wd=%E4%BB%A3%E6%95%B0%E5%87%BD%E6%95%B0%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "代数函数域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BB%A3%E6%95%B0%E5%87%BD%E6%95%B0%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "algebraic function field",
+          "url": "https://en.wikipedia.org/w/index.php?search=algebraic%20function%20field"
+        }
       ]
     },
     {
@@ -1493,6 +2969,24 @@
         "characteristic 0 algebraically closed",
         "degree over R 2 conjugation Galois group",
         "C complex field"
+      ],
+      "explanation_markdown": "复数域是实数域加入 $i^2=-1$ 后得到的代数闭域。常写成 $\\mathbb C=\\mathbb R(i),\\quad [\\mathbb C:\\mathbb R]=2$，其中$i$ 是 $x^2+1$ 的根，$\\{1,i\\}$ 是实数基。它使实系数多项式根可在统一域中讨论。\n\n它作为域不同于带拓扑的复平面；域结构只关心加法乘法。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。 底域选择会改变最小多项式和扩张次数，迹、范数、嵌入数也随之换成新的线性数据。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "复数域",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%8D%E6%95%B0%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "复数域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%8D%E6%95%B0%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "field of complex numbers",
+          "url": "https://en.wikipedia.org/w/index.php?search=field%20of%20complex%20numbers"
+        }
       ]
     },
     {
@@ -1511,6 +3005,24 @@
         "complete Archimedean ordered field",
         "adjoin i quadratic algebraically closed extension",
         "R real field"
+      ],
+      "explanation_markdown": "实数域是有序完备的特征零域。常写成 $\\mathbb R\\text{ complete},\\quad x>0\\Rightarrow \\exists y\\in\\mathbb R\\, y^2=x$，其中完备性来自通常绝对值，正数有平方根。它是有理数的实完备化，也是复数域的实闭子域。\n\n它不是代数闭域，因为 $x^2+1$ 在其中无根。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。 底域选择会改变最小多项式和扩张次数，迹、范数、嵌入数也随之换成新的线性数据。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "实数域",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%9E%E6%95%B0%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "实数域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%9E%E6%95%B0%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "field of real numbers",
+          "url": "https://en.wikipedia.org/w/index.php?search=field%20of%20real%20numbers"
+        }
       ]
     },
     {
@@ -1529,6 +3041,24 @@
         "fraction field of Z prime field char 0",
         "usual absolute value incomplete p-adic completion Q_p",
         "Q rational number field"
+      ],
+      "explanation_markdown": "有理数域是整数环的分式域，也是特征零域的素域模型。常写成 $\\mathbb Q=\\operatorname{Frac}(\\mathbb Z)$，其中每个非零整数都被允许作分母。它是数域理论中最基本的底域。\n\n它不同于实数域；有理数不完备，许多代数方程也没有有理根。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "有理数域",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%89%E7%90%86%E6%95%B0%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "有理数域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%89%E7%90%86%E6%95%B0%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "field of rational numbers",
+          "url": "https://en.wikipedia.org/w/index.php?search=field%20of%20rational%20numbers"
+        }
       ]
     },
     {
@@ -1547,6 +3077,24 @@
         "char 0 Q char p F_p",
         "multiplicative identity generated prime field",
         "prime subfield"
+      ],
+      "explanation_markdown": "素子域是给定域内部不含更小子域的唯一子域。常写成 $P=\\bigcap_{K\\subset F}K$，其中交遍所有子域得到的 $P$ 仍为域。它同构于 $\\mathbb Q$ 或某个 $\\mathbb F_p$。\n\n它和任意选择的底域不同；素子域由 $1$ 的加法循环强制决定。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。 底域选择会改变最小多项式和扩张次数，迹、范数、嵌入数也随之换成新的线性数据。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "素子域",
+          "url": "https://www.baidu.com/s?wd=%E7%B4%A0%E5%AD%90%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "素子域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B4%A0%E5%AD%90%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "prime subfield",
+          "url": "https://en.wikipedia.org/w/index.php?search=prime%20subfield"
+        }
       ]
     },
     {
@@ -1565,6 +3113,24 @@
         "no such n value 0",
         "prime subfield isomorphism type",
         "char(K)"
+      ],
+      "explanation_markdown": "域的特征是域特征概念的完整说法，记录 $1$ 的加法阶。常写成 $\\operatorname{char}F=\\min\\{n>0:n\\cdot1=0\\}$，其中若集合为空则特征为 $0$。它决定素子域并影响导数、可分性和 Frobenius。\n\n它不等于域的阶；例如 $\\mathbb F_{p^n}$ 的特征是 $p$ 而不是 $p^n$。 这里要看多项式在底域上怎样分解，以及加入根以后得到怎样的扩张。特征、导多项式和判别式会影响重根与可分性；分圆和根式构造则把方程根的形状同群结构联系起来。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。 底域选择会改变最小多项式和扩张次数，迹、范数、嵌入数也随之换成新的线性数据。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "域的特征",
+          "url": "https://www.baidu.com/s?wd=%E5%9F%9F%E7%9A%84%E7%89%B9%E5%BE%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "域的特征",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9F%9F%E7%9A%84%E7%89%B9%E5%BE%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "characteristic of field",
+          "url": "https://en.wikipedia.org/w/index.php?search=characteristic%20of%20field"
+        }
       ]
     },
     {
@@ -1583,6 +3149,24 @@
         "E/F [E:F] linear dimension",
         "new elements algebraic transcendental type",
         "field extension"
+      ],
+      "explanation_markdown": "域扩张是把一个域嵌入另一个域后形成的二层结构。常写成 $F\\hookrightarrow E,\\quad E/F$，其中嵌入常简写为包含 $F\\subset E$。它让 $E$ 成为 $F$-向量空间，也让多项式可在更大域中求根。\n\n它与扩域近义，但更强调二者作为一对对象的关系。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "域扩张",
+          "url": "https://www.baidu.com/s?wd=%E5%9F%9F%E6%89%A9%E5%BC%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "域扩张",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9F%9F%E6%89%A9%E5%BC%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "extension field",
+          "url": "https://en.wikipedia.org/w/index.php?search=extension%20field"
+        }
       ]
     },
     {
@@ -1601,6 +3185,24 @@
         "E,F⊂Ω EF E·F",
         "linear disjointness degrees [EF:F] [EF:E]",
         "compositum"
+      ],
+      "explanation_markdown": "复合域是同一大域内包含两个子域的最小子域。常写成 $EF=F(E)=\\bigcap_{F,K\\subset L}L$，其中通常在共同上域中理解，$EF$ 由两个子域共同生成。它用于比较两个扩张叠加后的次数和线性不交性。\n\n它不是集合并；并集一般不对四则运算封闭。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "复合域",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%8D%E5%90%88%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "复合域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%8D%E5%90%88%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "composite field",
+          "url": "https://en.wikipedia.org/w/index.php?search=composite%20field"
+        }
       ]
     },
     {
@@ -1619,6 +3221,24 @@
         "c_1v_1+...+c_nv_n=0 implies all c_i=0",
         "extension E/F degree basis construction",
         "linear independence"
+      ],
+      "explanation_markdown": "线性无关在域扩张中指元素作为底域向量空间元素没有非平凡线性关系。常写成 $a_1u_1+\\cdots+a_nu_n=0\\Rightarrow a_i=0$，其中系数 $a_i\\in F$，元素 $u_i\\in E$。它是定义扩张基和次数的线性代数条件。\n\n它弱于代数无关；这里只排除一次齐次关系。 有限扩张可以先当作底域上的向量空间处理，再回到乘法结构。迹和范数来自线性算子 $m_\\alpha:x\\mapsto\\alpha x$ 的矩阵不变量；张量积和标量扩张则记录底域改变后的线性关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。 底域选择会改变最小多项式和扩张次数，迹、范数、嵌入数也随之换成新的线性数据。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线性无关",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E6%80%A7%E6%97%A0%E5%85%B3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线性无关",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E6%80%A7%E6%97%A0%E5%85%B3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear independence",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20independence"
+        }
       ]
     },
     {
@@ -1637,6 +3257,24 @@
         "spanning independent",
         "field extension cardinality [E:F]",
         "linear basis"
+      ],
+      "explanation_markdown": "线性基是域扩张中既线性无关又生成上域的元素族。常写成 $E=\\bigoplus_{i\\in I}F e_i$，其中$e_i$ 是基元素，直和表示每个元素唯一线性展开。它把扩张次数变成基的基数。\n\n它不同于超越基；线性基处理向量空间，超越基处理多项式独立。 有限扩张可以先当作底域上的向量空间处理，再回到乘法结构。迹和范数来自线性算子 $m_\\alpha:x\\mapsto\\alpha x$ 的矩阵不变量；张量积和标量扩张则记录底域改变后的线性关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线性基",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E6%80%A7%E5%9F%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线性基",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E6%80%A7%E5%9F%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear basis",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20basis"
+        }
       ]
     },
     {
@@ -1655,6 +3293,24 @@
         "x∈E unique ∑ c_i b_i",
         "finite case number [E:F]",
         "basis of an extension"
+      ],
+      "explanation_markdown": "扩张基通常指上域作为底域向量空间的一组基。常写成 $E=\\sum_i F b_i,\\quad \\sum_i a_i b_i=0\\Rightarrow a_i=0$，其中$b_i$ 属于上域，$a_i$ 属于底域。它用于显式计算迹、范数和乘法表。\n\n它与生成元不同；生成元通过四则运算生成域，扩张基只通过线性组合生成向量空间。 有限扩张可以先当作底域上的向量空间处理，再回到乘法结构。迹和范数来自线性算子 $m_\\alpha:x\\mapsto\\alpha x$ 的矩阵不变量；张量积和标量扩张则记录底域改变后的线性关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "扩张基",
+          "url": "https://www.baidu.com/s?wd=%E6%89%A9%E5%BC%A0%E5%9F%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "扩张基",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%A9%E5%BC%A0%E5%9F%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "basis of extension",
+          "url": "https://en.wikipedia.org/w/index.php?search=basis%20of%20extension"
+        }
       ]
     },
     {
@@ -1673,6 +3329,24 @@
         "M⊗_F N E⊗_F L",
         "field extensions linear disjointness scalar change",
         "tensor product"
+      ],
+      "explanation_markdown": "张量积在域扩张中用于同时改变标量或比较两个扩张。常写成 $E\\otimes_F L$，其中$E$ 与 $L$ 都含有或接收来自 $F$ 的标量结构。它可检测线性不交，也能描述标量扩张后的分解。\n\n它不是普通笛卡尔积；张量积把 $F$-双线性关系强制折叠。 有限扩张可以先当作底域上的向量空间处理，再回到乘法结构。迹和范数来自线性算子 $m_\\alpha:x\\mapsto\\alpha x$ 的矩阵不变量；张量积和标量扩张则记录底域改变后的线性关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "张量积",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%A0%E9%87%8F%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "张量积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%A0%E9%87%8F%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tensor product",
+          "url": "https://en.wikipedia.org/w/index.php?search=tensor%20product"
+        }
       ]
     },
     {
@@ -1691,6 +3365,24 @@
         "V_E=V⊗_F E",
         "matrices dimensions algebra objects decomposition",
         "extension of scalars"
+      ],
+      "explanation_markdown": "标量扩张是把向量空间或代数的底域从 $F$ 换到更大域 $E$。常写成 $V_E=E\\otimes_F V$，其中$V$ 是 $F$-向量空间，$V_E$ 是 $E$-向量空间。它让原对象在更大标量域上分解或对角化。\n\n它不同于域扩张本身；域扩张给出新标量，标量扩张把对象搬到新标量上。 有限扩张可以先当作底域上的向量空间处理，再回到乘法结构。迹和范数来自线性算子 $m_\\alpha:x\\mapsto\\alpha x$ 的矩阵不变量；张量积和标量扩张则记录底域改变后的线性关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "标量扩张",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%87%E9%87%8F%E6%89%A9%E5%BC%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "标量扩张",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%87%E9%87%8F%E6%89%A9%E5%BC%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "extension of scalars",
+          "url": "https://en.wikipedia.org/w/index.php?search=extension%20of%20scalars"
+        }
       ]
     },
     {
@@ -1709,6 +3401,24 @@
         "σ∈Aut(E/F) σ(f)(x) coefficientwise action",
         "embeddings factors roots comparison",
         "conjugate polynomial"
+      ],
+      "explanation_markdown": "共轭多项式可指由共轭根或系数共轭得到的相关多项式。常写成 $m_{\\sigma(\\alpha),F}(x)=m_{\\alpha,F}(x)$，其中$\\sigma$ 是固定底域的嵌入或自同构。它说明共轭元素共享底域上的代数方程。\n\n在复系数语境也可对系数取复共轭，需由上下文确定。 这里要看多项式在底域上怎样分解，以及加入根以后得到怎样的扩张。特征、导多项式和判别式会影响重根与可分性；分圆和根式构造则把方程根的形状同群结构联系起来。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "共轭多项式",
+          "url": "https://www.baidu.com/s?wd=%E5%85%B1%E8%BD%AD%E5%A4%9A%E9%A1%B9%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "共轭多项式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%B1%E8%BD%AD%E5%A4%9A%E9%A1%B9%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "conjugate polynomial",
+          "url": "https://en.wikipedia.org/w/index.php?search=conjugate%20polynomial"
+        }
       ]
     },
     {
@@ -1727,6 +3437,24 @@
         "F(α) f(α)=0",
         "smaller than splitting field generally",
         "root field"
+      ],
+      "explanation_markdown": "根域是为使多项式至少出现指定根而加入根得到的域。常写成 $F(\\alpha),\\quad f(\\alpha)=0$，其中$\\alpha$ 是 $f$ 的一个根，域由它在 $F$ 上生成。它是构造分裂域的单步版本。\n\n它不同于分裂域；根域可只含一个根，分裂域要求全部根。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "根域",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%B9%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "根域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%B9%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "root field",
+          "url": "https://en.wikipedia.org/w/index.php?search=root%20field"
+        }
       ]
     },
     {
@@ -1745,6 +3473,24 @@
         "f∈F[x] a in F or extension",
         "solution set of equation",
         "zero root f(a)=0"
+      ],
+      "explanation_markdown": "零点是多项式或函数取值为零的元素。常写成 $f(a)=0$，其中$a$ 来自指定域或扩域，$f$ 的系数域必须先固定。在域论中零点常被用来构造根域和分裂域。\n\n它不同于重根概念；零点只要求取零，重根还要求导数或因子次数条件。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "零点",
+          "url": "https://www.baidu.com/s?wd=%E9%9B%B6%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "零点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9B%B6%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "zero",
+          "url": "https://en.wikipedia.org/w/index.php?search=zero"
+        }
       ]
     },
     {
@@ -1763,6 +3509,24 @@
         "f(α)=0",
         "minimal equation splitting field Galois group",
         "root of a polynomial"
+      ],
+      "explanation_markdown": "多项式根是在某个域或扩域中使多项式取零的元素。常写成 $f(\\alpha)=0,\\quad f\\in F[x]$，其中$\\alpha$ 可不在底域 $F$ 中，需要放到扩域里理解。根的所在域决定多项式是否分裂。\n\n它和形式因子相关；$x-\\alpha$ 只有在含 $\\alpha$ 的域上才是因子。 这里要看多项式在底域上怎样分解，以及加入根以后得到怎样的扩张。特征、导多项式和判别式会影响重根与可分性；分圆和根式构造则把方程根的形状同群结构联系起来。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "多项式根",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%9A%E9%A1%B9%E5%BC%8F%E6%A0%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "多项式根",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%9A%E9%A1%B9%E5%BC%8F%E6%A0%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "root of polynomial",
+          "url": "https://en.wikipedia.org/w/index.php?search=root%20of%20polynomial"
+        }
       ]
     },
     {
@@ -1781,6 +3545,24 @@
         "f(α)=0 f'(α)=0",
         "discriminant zero repeated phenomenon",
         "multiple root"
+      ],
+      "explanation_markdown": "重根是在分裂域中作为因子出现次数大于一的根。常写成 $f(x)=(x-\\alpha)^m g(x),\\quad m>1$，其中$m$ 是重数，且 $g(\\alpha)\\ne0$。重根会破坏可分性，常由 $\\gcd(f,f')$ 检测。\n\n它不同于多个共轭根；重根是同一个根重复出现。 这里要看多项式在底域上怎样分解，以及加入根以后得到怎样的扩张。特征、导多项式和判别式会影响重根与可分性；分圆和根式构造则把方程根的形状同群结构联系起来。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。 底域选择会改变最小多项式和扩张次数，迹、范数、嵌入数也随之换成新的线性数据。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "重根",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8D%E6%A0%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "重根",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8D%E6%A0%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "multiple root",
+          "url": "https://en.wikipedia.org/w/index.php?search=multiple%20root"
+        }
       ]
     },
     {
@@ -1799,6 +3581,24 @@
         "∏_{i<j}(r_i-r_j)^2",
         "zero iff repeated root",
         "discriminant"
+      ],
+      "explanation_markdown": "判别式是由根差平方积给出的量，用来检测重根和扩张分歧。常写成 $\\Delta(f)=a_n^{2n-2}\\prod_{i<j}(\\alpha_i-\\alpha_j)^2$，其中$a_n$ 是首项系数，$\\alpha_i$ 是根。它为零当且仅当多项式有重根。\n\n在数域中判别式还衡量整数基和分歧信息。 这里要看多项式在底域上怎样分解，以及加入根以后得到怎样的扩张。特征、导多项式和判别式会影响重根与可分性；分圆和根式构造则把方程根的形状同群结构联系起来。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。 底域选择会改变最小多项式和扩张次数，迹、范数、嵌入数也随之换成新的线性数据。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "判别式",
+          "url": "https://www.baidu.com/s?wd=%E5%88%A4%E5%88%AB%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "判别式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%A4%E5%88%AB%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "discriminant",
+          "url": "https://en.wikipedia.org/w/index.php?search=discriminant"
+        }
       ]
     },
     {
@@ -1817,6 +3617,24 @@
         "common root with f repeated root",
         "char p derivative of x^p zero inseparability",
         "formal derivative"
+      ],
+      "explanation_markdown": "导多项式是对多项式按形式规则求导得到的多项式。常写成 $f'(x)=\\sum_{i\\ge1} i a_i x^{i-1}$，其中$f(x)=\\sum a_i x^i$，系数仍在同一域中。它用于检测重根和可分性。\n\n在正特征中某些系数 $i$ 会变成零，所以导数可能整体为零。 这里要看多项式在底域上怎样分解，以及加入根以后得到怎样的扩张。特征、导多项式和判别式会影响重根与可分性；分圆和根式构造则把方程根的形状同群结构联系起来。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。 底域选择会改变最小多项式和扩张次数，迹、范数、嵌入数也随之换成新的线性数据。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "导多项式",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%BC%E5%A4%9A%E9%A1%B9%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "导多项式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%BC%E5%A4%9A%E9%A1%B9%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "derived polynomial",
+          "url": "https://en.wikipedia.org/w/index.php?search=derived%20polynomial"
+        }
       ]
     },
     {
@@ -1835,6 +3653,24 @@
         "E splitting field of polynomial family",
         "with separability Galois extension",
         "normality"
+      ],
+      "explanation_markdown": "正规性是扩张或多项式根集合在底域嵌入下闭合的性质。常写成 $f(\\alpha)=0,\\ f\\text{ irreducible}\\Rightarrow f\\text{ splits in }E$，其中$\\alpha\\in E$，$f$ 的系数在底域。它确保共轭根不会只出现一部分。\n\n它和可分性互补；正规性管根是否全在，可分性管根是否重复。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。 根的置换、固定域和子群格要一起读，才能看出正规、可分和伽罗瓦三层条件各自承担的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正规性",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E8%A7%84%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正规性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E8%A7%84%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "normality",
+          "url": "https://en.wikipedia.org/w/index.php?search=normality"
+        }
       ]
     },
     {
@@ -1853,6 +3689,24 @@
         "gcd(f,f')=1",
         "char 0 automatic positive characteristic Frobenius powers",
         "separability"
+      ],
+      "explanation_markdown": "可分性是多项式或扩张没有重根退化的性质。常写成 $\\gcd(f,f')=1$ 或 $m_{\\alpha,F}\\text{ has distinct roots}$，其中导多项式用于检测根是否重复。它保证嵌入数与次数相符。\n\n它不同于正规性；可分不要求全部共轭根已经在当前扩域中。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。 根的置换、固定域和子群格要一起读，才能看出正规、可分和伽罗瓦三层条件各自承担的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "可分性",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%AF%E5%88%86%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "可分性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%AF%E5%88%86%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "separability",
+          "url": "https://en.wikipedia.org/w/index.php?search=separability"
+        }
       ]
     },
     {
@@ -1871,6 +3725,24 @@
         "[EL:F]=[E:F][L:F]",
         "E⊗_F L field domain criterion",
         "linear disjointness"
+      ],
+      "explanation_markdown": "线性不交是两个底域扩张合成时没有额外线性关系的条件。常写成 $[EL:F]=[E:F][L:F]$，其中在有限情形该等式刻画次数按预期相乘。它使张量积 $E\\otimes_F L$ 保持良好，复合域大小可控。\n\n它不同于普通交集为 $F$；交集小常有帮助，但不总是等价。 有限扩张可以先当作底域上的向量空间处理，再回到乘法结构。迹和范数来自线性算子 $m_\\alpha:x\\mapsto\\alpha x$ 的矩阵不变量；张量积和标量扩张则记录底域改变后的线性关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线性不交",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E6%80%A7%E4%B8%8D%E4%BA%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线性不交",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E6%80%A7%E4%B8%8D%E4%BA%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear disjointness",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20disjointness"
+        }
       ]
     },
     {
@@ -1889,6 +3761,24 @@
         "σ·α=σ(α) permutation representation",
         "orbits stabilizers conjugacy intermediate fields fixed objects",
         "action of Galois group"
+      ],
+      "explanation_markdown": "伽罗瓦群作用是伽罗瓦群通过自同构移动扩域元素或多项式根的作用。常写成 $\\sigma\\cdot\\alpha=\\sigma(\\alpha),\\quad \\sigma\\in\\operatorname{Gal}(E/F)$，其中$\\sigma$ 固定底域并保持代数关系。它把根集变成带群作用的集合，可讨论轨道和稳定子。\n\n它不同于抽象群作用的任意变换；这里的变换必须来自域自同构。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "伽罗瓦群作用",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%BD%E7%BD%97%E7%93%A6%E7%BE%A4%E4%BD%9C%E7%94%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "伽罗瓦群作用",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%BD%E7%BD%97%E7%93%A6%E7%BE%A4%E4%BD%9C%E7%94%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "action of galois group",
+          "url": "https://en.wikipedia.org/w/index.php?search=action%20of%20galois%20group"
+        }
       ]
     },
     {
@@ -1907,6 +3797,24 @@
         "Aut(K) Aut(E/F)",
         "fix base F relation with Gal(E/F)",
         "automorphism group"
+      ],
+      "explanation_markdown": "自同构群是一个域所有保持运算的可逆自映射组成的群。常写成 $\\operatorname{Aut}(E)=\\{\\sigma:E\\to E\\text{ field isomorphism}\\}$，其中群运算为映射复合。若要求固定底域 $F$，就得到 $\\operatorname{Aut}(E/F)$ 或伽罗瓦群。\n\n它不同于同构集合；自同构的定义域和值域都是同一个域。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。 根的置换、固定域和子群格要一起读，才能看出正规、可分和伽罗瓦三层条件各自承担的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自同构群",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E5%90%8C%E6%9E%84%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自同构群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E5%90%8C%E6%9E%84%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "automorphism group",
+          "url": "https://en.wikipedia.org/w/index.php?search=automorphism%20group"
+        }
       ]
     },
     {
@@ -1925,6 +3833,24 @@
         "[E:F]=[E:M][M:F]",
         "Galois correspondence subgroup fixed data",
         "intermediate extension"
+      ],
+      "explanation_markdown": "中间扩张是把塔 $F\\subset K\\subset E$ 中的某一层单独作为扩张研究。常写成 $K/F\\quad\\text{或}\\quad E/K$，其中$K$ 是中间域，两个小扩张继承原塔结构。塔公式把三层次数连接起来。\n\n它不是额外的新域类型，而是同一扩张在中间层上的切分。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。 根的置换、固定域和子群格要一起读，才能看出正规、可分和伽罗瓦三层条件各自承担的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "中间扩张",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%AD%E9%97%B4%E6%89%A9%E5%BC%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "中间扩张",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%AD%E9%97%B4%E6%89%A9%E5%BC%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "intermediate extension",
+          "url": "https://en.wikipedia.org/w/index.php?search=intermediate%20extension"
+        }
       ]
     },
     {
@@ -1943,6 +3869,24 @@
         "Stab_G(x)={g∈G:g·x=x}",
         "Galois context automorphisms fixing intermediate field",
         "stabilizer subgroup"
+      ],
+      "explanation_markdown": "固定子群是在群作用中保持某个对象不动的群元素集合。常写成 $\\operatorname{Stab}_G(x)=\\{g\\in G:g\\cdot x=x\\}$，其中$G$ 作用在集合上，$x$ 是被考察对象。在伽罗瓦情形可取固定某个元素或中间域的自同构。\n\n它和固定域方向相反；固定子群收集群元素，固定域收集不动的域元素。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "固定子群",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%BA%E5%AE%9A%E5%AD%90%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "固定子群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%BA%E5%AE%9A%E5%AD%90%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fixed subgroup",
+          "url": "https://en.wikipedia.org/w/index.php?search=fixed%20subgroup"
+        }
       ]
     },
     {
@@ -1961,6 +3905,24 @@
         "normal series Abelian quotients",
         "Galois theory radicals criterion",
         "solvable group"
+      ],
+      "explanation_markdown": "可解群是导列最终到达平凡群的群。常写成 $G^{(0)}=G,\\quad G^{(i+1)}=[G^{(i)},G^{(i)}],\\quad G^{(n)}=1$，其中方括号表示换位子生成的子群。在伽罗瓦理论中它控制根式可解性。\n\n它是群论性质，不是域扩张本身的代数或可分条件。 这里要看多项式在底域上怎样分解，以及加入根以后得到怎样的扩张。特征、导多项式和判别式会影响重根与可分性；分圆和根式构造则把方程根的形状同群结构联系起来。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。 底域选择会改变最小多项式和扩张次数，迹、范数、嵌入数也随之换成新的线性数据。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "可解群",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%AF%E8%A7%A3%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "可解群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%AF%E8%A7%A3%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "solvable group",
+          "url": "https://en.wikipedia.org/w/index.php?search=solvable%20group"
+        }
       ]
     },
     {
@@ -1979,6 +3941,24 @@
         "no solution in base degree p",
         "α↦α+c c∈F_p translations",
         "Artin-Schreier extension"
+      ],
+      "explanation_markdown": "阿廷施赖尔扩张是特征 $p$ 中由加性多项式给出的循环 $p$ 次扩张。常写成 $\\alpha^p-\\alpha=a$，其中$a\\in F$，若方程在 $F$ 中无解，常得到次数 $p$ 扩张。它是正特征中对应 Kummer 理论的基本构造。\n\n它不同于 Kummer 扩张；这里是平移对称 $\\alpha\\mapsto\\alpha+c$ 而非乘以单位根。 域论里的每个对象都依赖底域选择；同一个元素换了底域，可能从超越元变成代数元，最小多项式和扩张次数也会改变。写作 $E/F$ 时，真正被讨论的是上域、底域以及它们之间的代数关系。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阿廷施赖尔扩张",
+          "url": "https://www.baidu.com/s?wd=%E9%98%BF%E5%BB%B7%E6%96%BD%E8%B5%96%E5%B0%94%E6%89%A9%E5%BC%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阿廷施赖尔扩张",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%BF%E5%BB%B7%E6%96%BD%E8%B5%96%E5%B0%94%E6%89%A9%E5%BC%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "artin schreier extension",
+          "url": "https://en.wikipedia.org/w/index.php?search=artin%20schreier%20extension"
+        }
       ]
     },
     {
@@ -1997,6 +3977,24 @@
         "Galois group cyclic generator x↦x^q",
         "intermediate layers divisors of n",
         "finite field extension"
+      ],
+      "explanation_markdown": "有限域扩张是有限域之间的扩张，唯一由次数决定。常写成 $\\mathbb F_{q^n}/\\mathbb F_q,\\quad \\operatorname{Gal}\\cong\\langle x\\mapsto x^q\\rangle$，其中$q$ 是底域大小，Frobenius 生成循环伽罗瓦群。中间域与 $n$ 的因子对应。\n\n它比一般有限扩张更刚性；同阶有限域唯一且扩张必为伽罗瓦。 这里要看多项式在底域上怎样分解，以及加入根以后得到怎样的扩张。特征、导多项式和判别式会影响重根与可分性；分圆和根式构造则把方程根的形状同群结构联系起来。 最小多项式、分裂域、迹和范数都依赖这个底域选择；因此同一个根或同一个多项式，在不同扩张里可能对应完全不同的次数和对称群。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "有限域扩张",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%89%E9%99%90%E5%9F%9F%E6%89%A9%E5%BC%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "有限域扩张",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%89%E9%99%90%E5%9F%9F%E6%89%A9%E5%BC%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "finite field extension",
+          "url": "https://en.wikipedia.org/w/index.php?search=finite%20field%20extension"
+        }
       ]
     },
     {
@@ -2015,6 +4013,24 @@
         "absolute Galois group trivial",
         "positive characteristic purely inseparable distinction",
         "Galois closed field"
+      ],
+      "explanation_markdown": "伽罗瓦闭域是没有非平凡有限伽罗瓦扩张的域。常写成 $G_F=\\operatorname{Gal}(F^{\\mathrm{sep}}/F)=1$，其中$F^{\\mathrm{sep}}$ 是可分闭包，$G_F$ 是绝对伽罗瓦群。它等价于可分闭包已经等于自身。\n\n它不必等同于代数闭域；正特征中还要留意纯不可分代数扩张。 底域和上域需要同时固定；换了底域，最小多项式、嵌入数和自同构群都会改变。分裂域、固定域和中间域之间的对应关系，使根的排列可以用 $\\operatorname{Gal}(E/F)$ 的子群来组织。 这样的描述还会区分根的置换、子群格和中间域格：扩张一旦不是正规或不可分，群的大小和中间域结构就不再完整对应。 根的置换、固定域和子群格要一起读，才能看出正规、可分和伽罗瓦三层条件各自承担的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "伽罗瓦闭域",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%BD%E7%BD%97%E7%93%A6%E9%97%AD%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "伽罗瓦闭域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%BD%E7%BD%97%E7%93%A6%E9%97%AD%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "galois closed field",
+          "url": "https://en.wikipedia.org/w/index.php?search=galois%20closed%20field"
+        }
       ]
     }
   ]

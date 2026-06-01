@@ -1,0 +1,2405 @@
+{
+  "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+  "entries": [
+    {
+      "chinese_name": "量子群",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子群用非交换代数和余代数结构描述形变后的对称性。量子群的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $\\Delta(a)=\\sum a_{(1)}\\otimes a_{(2)}$，其中 $\\Delta$ 是余乘法，Sweedler记号表示同一元素在张量积中的展开。它既可看作量子包络代数，也可看作量子函数代数。\n\n量子群的关键不是单纯非交换乘法，而是余结构让表示可以张量相乘。$q$ 为根号时常出现有限张量范畴、小量子群和非半单现象；一般 $q$ 下则更接近经典李理论的形变。 量子群还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子群",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum group",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "霍普夫代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "霍普夫代数是在同一向量空间上同时放入代数、余代数和反极的结构。霍普夫代数的核心是乘法、余乘法、反极和单位余单位的相容性，和同族术语的分界也主要落在这些数据上。常写成 $\\Delta(ab)=\\Delta(a)\\Delta(b),\\ m(S\\otimes id)\\Delta(a)=\\varepsilon(a)1$，其中 $\\Delta$ 是余乘法，$S$ 是反极，$\\varepsilon$ 是余单位。乘法描述合成，余乘法描述张量积表示中的对角作用。\n\n它本身不带编织，表示范畴只天然有张量积和对偶；加入 $R$ 矩阵才得到准三角结构，放松余结合才进入拟霍普夫代数。群代数、函数代数和量子包络代数都可落在这个框架内。 霍普夫代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "霍普夫代数",
+          "url": "https://www.baidu.com/s?wd=%E9%9C%8D%E6%99%AE%E5%A4%AB%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "霍普夫代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9C%8D%E6%99%AE%E5%A4%AB%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hopf algebraic",
+          "url": "https://en.wikipedia.org/w/index.php?search=hopf%20algebraic"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "准三角霍普夫代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "准三角霍普夫代数是在霍普夫代数 $H$ 上选取可逆元 $R\\in H\\otimes H$，使余乘法和反向余乘法相互共轭。准三角霍普夫代数的核心是通用R矩阵、编织同构和反向余乘法，和同族术语的分界也主要落在这些数据上。常写成 $\\Delta^{op}(a)=R\\Delta(a)R^{-1}$，其中 $\\Delta^{op}$ 交换张量因子，$a\\in H$。$R$ 还满足张量腿形式的相容关系。\n\n它保留严格余结合，却给表示范畴加入编织同构 $c_{V,W}=\\tau\\circ R$。拟霍普夫代数的重点是结合子，准三角霍普夫代数的重点是交换两个张量因子时出现的 $R$ 矩阵。 准三角霍普夫代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "准三角霍普夫代数",
+          "url": "https://www.baidu.com/s?wd=%E5%87%86%E4%B8%89%E8%A7%92%E9%9C%8D%E6%99%AE%E5%A4%AB%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "准三角霍普夫代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%86%E4%B8%89%E8%A7%92%E9%9C%8D%E6%99%AE%E5%A4%AB%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quasitrigonometric hopf algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=quasitrigonometric%20hopf%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "拟霍普夫代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "拟霍普夫代数把霍普夫代数的严格余结合改为由可逆结合子控制。拟霍普夫代数的核心是结合子、弱化余结合和张量范畴的结合约束，和同族术语的分界也主要落在这些数据上。常写成 $(\\Delta\\otimes id)\\Delta(a)=\\Phi\\,(id\\otimes\\Delta)\\Delta(a)\\,\\Phi^{-1}$，其中 $\\Phi\\in H^{\\otimes3}$ 是 associator，$a\\in H$。反极也要配合额外元素满足较弱的逆元条件。\n\n它适合描述张量范畴中结合律只到自然同构成立的情形。准三角霍普夫代数改变交换约束，拟霍普夫代数改变结合约束；若两者同时出现，就会得到带编织的非严格张量范畴。 拟霍普夫代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拟霍普夫代数",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%9F%E9%9C%8D%E6%99%AE%E5%A4%AB%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拟霍普夫代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%9F%E9%9C%8D%E6%99%AE%E5%A4%AB%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quasi hopf algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=quasi%20hopf%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "弱霍普夫代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "弱霍普夫代数放松霍普夫代数中单位和余单位的相容性，常用于有限群胚和融合范畴。弱霍普夫代数的核心是乘法、余乘法、反极和单位余单位的相容性，和同族术语的分界也主要落在这些数据上。典型特征是 $\\Delta(1)\\ne1\\otimes1$，并且 $\\varepsilon(abc)$ 只满足分裂形式的弱余单位关系，其中 $a,b,c$ 是代数元素。余乘法仍是代数同态，但单位不再保持成纯张量。\n\n它与拟霍普夫代数不同，弱化的是单位与余单位，而不是三重余乘法的结合方式。有限量子群胚、子因子理论和有非平凡基代数的张量范畴常用这种语言。 弱霍普夫代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弱霍普夫代数",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B1%E9%9C%8D%E6%99%AE%E5%A4%AB%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弱霍普夫代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B1%E9%9C%8D%E6%99%AE%E5%A4%AB%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weak hopf algebraic",
+          "url": "https://en.wikipedia.org/w/index.php?search=weak%20hopf%20algebraic"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子包络代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子包络代数是量子群中由形变参数控制的代数结构。量子包络代数的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n量子包络代数需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 量子包络代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子包络代数",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E5%8C%85%E7%BB%9C%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子包络代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E5%8C%85%E7%BB%9C%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum envelope algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20envelope%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "德林费尔德量子化",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "德林费尔德量子化描述经典泊松对称性到量子群的形变。德林费尔德量子化的核心是泊松括号、经典r矩阵和形变的一阶项，和同族术语的分界也主要落在这些数据上。常写成 $\\delta(x)=[x\\otimes1+1\\otimes x,r]$，其中 $\\delta$ 是李双代数余括号，$r$ 是经典 $r$ 矩阵。半经典极限把非交换乘法的一阶项还原为泊松括号。\n\n德林费尔德量子化关注的是量子化前后的结构是否相容，而不只是把参数 $q$ 写进公式。Drinfeld量子化、FRT关系和Etingof-Kazhdan定理分别从不同角度保证这种形变存在。 德林费尔德量子化还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "德林费尔德量子化",
+          "url": "https://www.baidu.com/s?wd=%E5%BE%B7%E6%9E%97%E8%B4%B9%E5%B0%94%E5%BE%B7%E9%87%8F%E5%AD%90%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "德林费尔德量子化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BE%B7%E6%9E%97%E8%B4%B9%E5%B0%94%E5%BE%B7%E9%87%8F%E5%AD%90%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "drinfeld quantization",
+          "url": "https://en.wikipedia.org/w/index.php?search=drinfeld%20quantization"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "德林费尔德双",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "德林费尔德双描述经典泊松对称性到量子群的形变。德林费尔德双的核心是泊松括号、经典r矩阵和形变的一阶项，和同族术语的分界也主要落在这些数据上。常写成 $\\delta(x)=[x\\otimes1+1\\otimes x,r]$，其中 $\\delta$ 是李双代数余括号，$r$ 是经典 $r$ 矩阵。半经典极限把非交换乘法的一阶项还原为泊松括号。\n\n德林费尔德双关注的是量子化前后的结构是否相容，而不只是把参数 $q$ 写进公式。Drinfeld量子化、FRT关系和Etingof-Kazhdan定理分别从不同角度保证这种形变存在。 德林费尔德双还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "德林费尔德双",
+          "url": "https://www.baidu.com/s?wd=%E5%BE%B7%E6%9E%97%E8%B4%B9%E5%B0%94%E5%BE%B7%E5%8F%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "德林费尔德双",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BE%B7%E6%9E%97%E8%B4%B9%E5%B0%94%E5%BE%B7%E5%8F%8C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "drinkingfield double",
+          "url": "https://en.wikipedia.org/w/index.php?search=drinkingfield%20double"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子双",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子双是量子群中由形变参数控制的代数结构。量子双的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n量子双需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 量子双还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子双",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E5%8F%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子双",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E5%8F%8C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum double",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20double"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "杨巴克斯特方程",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "杨巴克斯特方程围绕可积模型中的散射相容性展开。杨巴克斯特方程的核心是谱参数、张量腿记号和散射相容条件，和同族术语的分界也主要落在这些数据上。常写成 $R_{12}(u)R_{13}(u+v)R_{23}(v)=R_{23}(v)R_{13}(u+v)R_{12}(u)$，其中 $R_{ij}$ 作用在第 $i,j$ 个张量因子，$u,v$ 是谱参数。方程保证多体散射可分解为两体散射。\n\n杨巴克斯特方程的分类会受谱参数、边界条件和对称代数影响。量子Yang-Baxter方程控制 $R$ 矩阵，经典方程给半经典极限；反射方程则加入边界散射。 杨巴克斯特方程还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。 杨巴克斯特方程的符号还应和具体模型中的对象对应起来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "杨巴克斯特方程",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%A8%E5%B7%B4%E5%85%8B%E6%96%AF%E7%89%B9%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "杨巴克斯特方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%A8%E5%B7%B4%E5%85%8B%E6%96%AF%E7%89%B9%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "young baxter equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=young%20baxter%20equation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子杨巴克斯特方程",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子杨巴克斯特方程围绕可积模型中的散射相容性展开。量子杨巴克斯特方程的核心是谱参数、张量腿记号和散射相容条件，和同族术语的分界也主要落在这些数据上。常写成 $R_{12}(u)R_{13}(u+v)R_{23}(v)=R_{23}(v)R_{13}(u+v)R_{12}(u)$，其中 $R_{ij}$ 作用在第 $i,j$ 个张量因子，$u,v$ 是谱参数。方程保证多体散射可分解为两体散射。\n\n量子杨巴克斯特方程的分类会受谱参数、边界条件和对称代数影响。量子Yang-Baxter方程控制 $R$ 矩阵，经典方程给半经典极限；反射方程则加入边界散射。 量子杨巴克斯特方程还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子杨巴克斯特方程",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E6%9D%A8%E5%B7%B4%E5%85%8B%E6%96%AF%E7%89%B9%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子杨巴克斯特方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E6%9D%A8%E5%B7%B4%E5%85%8B%E6%96%AF%E7%89%B9%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum young baxter equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20young%20baxter%20equation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "经典杨巴克斯特方程",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "经典杨巴克斯特方程围绕可积模型中的散射相容性展开。经典杨巴克斯特方程的核心是谱参数、张量腿记号和散射相容条件，和同族术语的分界也主要落在这些数据上。常写成 $R_{12}(u)R_{13}(u+v)R_{23}(v)=R_{23}(v)R_{13}(u+v)R_{12}(u)$，其中 $R_{ij}$ 作用在第 $i,j$ 个张量因子，$u,v$ 是谱参数。方程保证多体散射可分解为两体散射。\n\n经典杨巴克斯特方程的分类会受谱参数、边界条件和对称代数影响。量子Yang-Baxter方程控制 $R$ 矩阵，经典方程给半经典极限；反射方程则加入边界散射。 经典杨巴克斯特方程还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "经典杨巴克斯特方程",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%8F%E5%85%B8%E6%9D%A8%E5%B7%B4%E5%85%8B%E6%96%AF%E7%89%B9%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "经典杨巴克斯特方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%8F%E5%85%B8%E6%9D%A8%E5%B7%B4%E5%85%8B%E6%96%AF%E7%89%B9%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "classical young baxter equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=classical%20young%20baxter%20equation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "R矩阵",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "R矩阵围绕可积模型中的散射相容性展开。R矩阵的核心是通用R矩阵、编织同构和反向余乘法，和同族术语的分界也主要落在这些数据上。常写成 $R_{12}(u)R_{13}(u+v)R_{23}(v)=R_{23}(v)R_{13}(u+v)R_{12}(u)$，其中 $R_{ij}$ 作用在第 $i,j$ 个张量因子，$u,v$ 是谱参数。方程保证多体散射可分解为两体散射。\n\nR矩阵的分类会受谱参数、边界条件和对称代数影响。量子Yang-Baxter方程控制 $R$ 矩阵，经典方程给半经典极限；反射方程则加入边界散射。 R矩阵还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。 R矩阵的符号还应和具体模型中的对象对应起来。 R矩阵的参数约定也要保留下来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "R矩阵",
+          "url": "https://www.baidu.com/s?wd=R%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "R矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=R%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "R matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=R%20matrix"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "通用R矩阵",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "通用R矩阵围绕可积模型中的散射相容性展开。通用R矩阵的核心是通用R矩阵、编织同构和反向余乘法，和同族术语的分界也主要落在这些数据上。常写成 $R_{12}(u)R_{13}(u+v)R_{23}(v)=R_{23}(v)R_{13}(u+v)R_{12}(u)$，其中 $R_{ij}$ 作用在第 $i,j$ 个张量因子，$u,v$ 是谱参数。方程保证多体散射可分解为两体散射。\n\n通用R矩阵的分类会受谱参数、边界条件和对称代数影响。量子Yang-Baxter方程控制 $R$ 矩阵，经典方程给半经典极限；反射方程则加入边界散射。 通用R矩阵还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。 通用R矩阵的符号还应和具体模型中的对象对应起来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "通用R矩阵",
+          "url": "https://www.baidu.com/s?wd=%E9%80%9A%E7%94%A8R%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "通用R矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%80%9A%E7%94%A8R%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "general r matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=general%20r%20matrix"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "辫范畴",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "辫范畴是量子群中由形变参数控制的代数结构。辫范畴的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n辫范畴需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 辫范畴还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "辫范畴",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%AB%E8%8C%83%E7%95%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "辫范畴",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%AB%E8%8C%83%E7%95%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "braid category",
+          "url": "https://en.wikipedia.org/w/index.php?search=braid%20category"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "张量范畴",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "张量范畴是量子群中由形变参数控制的代数结构。张量范畴的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n张量范畴需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 张量范畴还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "张量范畴",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%A0%E9%87%8F%E8%8C%83%E7%95%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "张量范畴",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%A0%E9%87%8F%E8%8C%83%E7%95%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tensor category",
+          "url": "https://en.wikipedia.org/w/index.php?search=tensor%20category"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子迹",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子迹把量子群表示中的编织、迹和对偶结构转化为拓扑不变量。量子迹的核心是量子迹、编织闭合和拓扑规范化，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{tr}_q(T)=\\operatorname{tr}(K^{-1}T)$，其中 $T$ 是表示上的算子，$K$ 来自Cartan部分或平衡元。量子迹修正普通迹在编织范畴中的不对称性。\n\n量子迹用于纽结、多项式和三维流形量子不变量时，必须同时指定表示、$R$ 矩阵和规范化。Jones、HOMFLY和Kauffman多项式对应的量子群或范畴数据并不相同。 量子迹还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。 量子迹的符号还应和具体模型中的对象对应起来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子迹",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E8%BF%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子迹",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E8%BF%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum trace",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20trace"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子行列式",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子行列式把量子群表示中的编织、迹和对偶结构转化为拓扑不变量。量子行列式的核心是量子迹、编织闭合和拓扑规范化，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{tr}_q(T)=\\operatorname{tr}(K^{-1}T)$，其中 $T$ 是表示上的算子，$K$ 来自Cartan部分或平衡元。量子迹修正普通迹在编织范畴中的不对称性。\n\n量子行列式用于纽结、多项式和三维流形量子不变量时，必须同时指定表示、$R$ 矩阵和规范化。Jones、HOMFLY和Kauffman多项式对应的量子群或范畴数据并不相同。 量子行列式还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子行列式",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E8%A1%8C%E5%88%97%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子行列式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E8%A1%8C%E5%88%97%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum determinant",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20determinant"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子平面",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子平面是量子群中由形变参数控制的代数结构。量子平面的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n量子平面需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 量子平面还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子平面",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E5%B9%B3%E9%9D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子平面",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E5%B9%B3%E9%9D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum plane",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20plane"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子仿射空间",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子仿射空间是量子群中由形变参数控制的代数结构。量子仿射空间的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n量子仿射空间需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 量子仿射空间还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子仿射空间",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E4%BB%BF%E5%B0%84%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子仿射空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E4%BB%BF%E5%B0%84%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum affine space",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20affine%20space"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子特殊线性群",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子特殊线性群是量子群中由形变参数控制的代数结构。量子特殊线性群的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n量子特殊线性群需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 量子特殊线性群还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子特殊线性群",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E7%89%B9%E6%AE%8A%E7%BA%BF%E6%80%A7%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子特殊线性群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E7%89%B9%E6%AE%8A%E7%BA%BF%E6%80%A7%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum special linear group",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20special%20linear%20group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子一般线性群",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子一般线性群是量子群中由形变参数控制的代数结构。量子一般线性群的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n量子一般线性群需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 量子一般线性群还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子一般线性群",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E4%B8%80%E8%88%AC%E7%BA%BF%E6%80%A7%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子一般线性群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E4%B8%80%E8%88%AC%E7%BA%BF%E6%80%A7%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum general linear group",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20general%20linear%20group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子辛群",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子辛群是量子群中由形变参数控制的代数结构。量子辛群的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n量子辛群需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 量子辛群还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子辛群",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E8%BE%9B%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子辛群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E8%BE%9B%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum symplectic group",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20symplectic%20group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子正交群",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子正交群是量子群中由形变参数控制的代数结构。量子正交群的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n量子正交群需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 量子正交群还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子正交群",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E6%AD%A3%E4%BA%A4%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子正交群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E6%AD%A3%E4%BA%A4%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum orthogonal group",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20orthogonal%20group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子矩阵代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子矩阵代数是量子群中由形变参数控制的代数结构。量子矩阵代数的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n量子矩阵代数需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 量子矩阵代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子矩阵代数",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E7%9F%A9%E9%98%B5%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子矩阵代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E7%9F%A9%E9%98%B5%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum matrix algebraic",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20matrix%20algebraic"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "法捷耶夫-列舍季欣-塔赫塔江构造",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "法捷耶夫-列舍季欣-塔赫塔江构造把量子群表示中的编织、迹和对偶结构转化为拓扑不变量。法捷耶夫-列舍季欣-塔赫塔江构造的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{tr}_q(T)=\\operatorname{tr}(K^{-1}T)$，其中 $T$ 是表示上的算子，$K$ 来自Cartan部分或平衡元。量子迹修正普通迹在编织范畴中的不对称性。\n\n法捷耶夫-列舍季欣-塔赫塔江构造用于纽结、多项式和三维流形量子不变量时，必须同时指定表示、$R$ 矩阵和规范化。Jones、HOMFLY和Kauffman多项式对应的量子群或范畴数据并不相同。 法捷耶夫-列舍季欣-塔赫塔江构造还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "法捷耶夫-列舍季欣-塔赫塔江构造",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%95%E6%8D%B7%E8%80%B6%E5%A4%AB-%E5%88%97%E8%88%8D%E5%AD%A3%E6%AC%A3-%E5%A1%94%E8%B5%AB%E5%A1%94%E6%B1%9F%E6%9E%84%E9%80%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "法捷耶夫-列舍季欣-塔赫塔江构造",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%95%E6%8D%B7%E8%80%B6%E5%A4%AB-%E5%88%97%E8%88%8D%E5%AD%A3%E6%AC%A3-%E5%A1%94%E8%B5%AB%E5%A1%94%E6%B1%9F%E6%9E%84%E9%80%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "faddeev reshetikhin takhtajan construction",
+          "url": "https://en.wikipedia.org/w/index.php?search=faddeev%20reshetikhin%20takhtajan%20construction"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "德林费尔德吉姆博代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "德林费尔德吉姆博代数描述经典泊松对称性到量子群的形变。德林费尔德吉姆博代数的核心是泊松括号、经典r矩阵和形变的一阶项，和同族术语的分界也主要落在这些数据上。常写成 $\\delta(x)=[x\\otimes1+1\\otimes x,r]$，其中 $\\delta$ 是李双代数余括号，$r$ 是经典 $r$ 矩阵。半经典极限把非交换乘法的一阶项还原为泊松括号。\n\n德林费尔德吉姆博代数关注的是量子化前后的结构是否相容，而不只是把参数 $q$ 写进公式。Drinfeld量子化、FRT关系和Etingof-Kazhdan定理分别从不同角度保证这种形变存在。 德林费尔德吉姆博代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "德林费尔德吉姆博代数",
+          "url": "https://www.baidu.com/s?wd=%E5%BE%B7%E6%9E%97%E8%B4%B9%E5%B0%94%E5%BE%B7%E5%90%89%E5%A7%86%E5%8D%9A%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "德林费尔德吉姆博代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BE%B7%E6%9E%97%E8%B4%B9%E5%B0%94%E5%BE%B7%E5%90%89%E5%A7%86%E5%8D%9A%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "drinfeld gimbo algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=drinfeld%20gimbo%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子仿射代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子仿射代数是量子群中由形变参数控制的代数结构。量子仿射代数的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n量子仿射代数需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 量子仿射代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子仿射代数",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E4%BB%BF%E5%B0%84%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子仿射代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E4%BB%BF%E5%B0%84%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum affine algebraic",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20affine%20algebraic"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "杨代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "杨代数是量子群中由形变参数控制的代数结构。杨代数的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n杨代数需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 杨代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "杨代数",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%A8%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "杨代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%A8%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "yang algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=yang%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "环量子群",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "环量子群用非交换代数和余代数结构描述形变后的对称性。环量子群的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $\\Delta(a)=\\sum a_{(1)}\\otimes a_{(2)}$，其中 $\\Delta$ 是余乘法，Sweedler记号表示同一元素在张量积中的展开。它既可看作量子包络代数，也可看作量子函数代数。\n\n环量子群的关键不是单纯非交换乘法，而是余结构让表示可以张量相乘。$q$ 为根号时常出现有限张量范畴、小量子群和非半单现象；一般 $q$ 下则更接近经典李理论的形变。 环量子群还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "环量子群",
+          "url": "https://www.baidu.com/s?wd=%E7%8E%AF%E9%87%8F%E5%AD%90%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "环量子群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%8E%AF%E9%87%8F%E5%AD%90%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ring quantum group",
+          "url": "https://en.wikipedia.org/w/index.php?search=ring%20quantum%20group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "小量子群",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "小量子群用非交换代数和余代数结构描述形变后的对称性。小量子群的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $\\Delta(a)=\\sum a_{(1)}\\otimes a_{(2)}$，其中 $\\Delta$ 是余乘法，Sweedler记号表示同一元素在张量积中的展开。它既可看作量子包络代数，也可看作量子函数代数。\n\n小量子群的关键不是单纯非交换乘法，而是余结构让表示可以张量相乘。$q$ 为根号时常出现有限张量范畴、小量子群和非半单现象；一般 $q$ 下则更接近经典李理论的形变。 小量子群还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "小量子群",
+          "url": "https://www.baidu.com/s?wd=%E5%B0%8F%E9%87%8F%E5%AD%90%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "小量子群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B0%8F%E9%87%8F%E5%AD%90%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "small quantum group",
+          "url": "https://en.wikipedia.org/w/index.php?search=small%20quantum%20group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "卢斯蒂格积分形式",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "卢斯蒂格积分形式把量子群表示和组合基写成带 $q$ 交换关系的代数数据。卢斯蒂格积分形式的核心是量子簇变量、晶体算子和正性基，和同族术语的分界也主要落在这些数据上。常写成 $X_iX_j=q^{\\lambda_{ij}}X_jX_i$，其中 $\\lambda_{ij}$ 来自反对称矩阵，$X_i$ 是量子簇变量。突变、Hall乘法和晶体算子给出不同的坐标变化。\n\n卢斯蒂格积分形式在根号和非根号参数下性质差异明显：全局基强调正性，除幂和小量子群强调根号处的有限化。它常用于把表示重数、簇变量和几何构造放到同一套组合框架中。 卢斯蒂格积分形式还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "卢斯蒂格积分形式",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%A2%E6%96%AF%E8%92%82%E6%A0%BC%E7%A7%AF%E5%88%86%E5%BD%A2%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "卢斯蒂格积分形式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%A2%E6%96%AF%E8%92%82%E6%A0%BC%E7%A7%AF%E5%88%86%E5%BD%A2%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lustig integral form",
+          "url": "https://en.wikipedia.org/w/index.php?search=lustig%20integral%20form"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "除幂",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "除幂把量子群表示和组合基写成带 $q$ 交换关系的代数数据。除幂的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $X_iX_j=q^{\\lambda_{ij}}X_jX_i$，其中 $\\lambda_{ij}$ 来自反对称矩阵，$X_i$ 是量子簇变量。突变、Hall乘法和晶体算子给出不同的坐标变化。\n\n除幂在根号和非根号参数下性质差异明显：全局基强调正性，除幂和小量子群强调根号处的有限化。它常用于把表示重数、簇变量和几何构造放到同一套组合框架中。 除幂还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "除幂",
+          "url": "https://www.baidu.com/s?wd=%E9%99%A4%E5%B9%82%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "除幂",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%99%A4%E5%B9%82"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "divide by exponentiation",
+          "url": "https://en.wikipedia.org/w/index.php?search=divide%20by%20exponentiation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "全局基",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "全局基把量子群表示和组合基写成带 $q$ 交换关系的代数数据。全局基的核心是量子簇变量、晶体算子和正性基，和同族术语的分界也主要落在这些数据上。常写成 $X_iX_j=q^{\\lambda_{ij}}X_jX_i$，其中 $\\lambda_{ij}$ 来自反对称矩阵，$X_i$ 是量子簇变量。突变、Hall乘法和晶体算子给出不同的坐标变化。\n\n全局基在根号和非根号参数下性质差异明显：全局基强调正性，除幂和小量子群强调根号处的有限化。它常用于把表示重数、簇变量和几何构造放到同一套组合框架中。 全局基还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "全局基",
+          "url": "https://www.baidu.com/s?wd=%E5%85%A8%E5%B1%80%E5%9F%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "全局基",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%A8%E5%B1%80%E5%9F%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "global basis",
+          "url": "https://en.wikipedia.org/w/index.php?search=global%20basis"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "卡什瓦拉算子",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "卡什瓦拉算子把量子群表示和组合基写成带 $q$ 交换关系的代数数据。卡什瓦拉算子的核心是量子簇变量、晶体算子和正性基，和同族术语的分界也主要落在这些数据上。常写成 $X_iX_j=q^{\\lambda_{ij}}X_jX_i$，其中 $\\lambda_{ij}$ 来自反对称矩阵，$X_i$ 是量子簇变量。突变、Hall乘法和晶体算子给出不同的坐标变化。\n\n卡什瓦拉算子在根号和非根号参数下性质差异明显：全局基强调正性，除幂和小量子群强调根号处的有限化。它常用于把表示重数、簇变量和几何构造放到同一套组合框架中。 卡什瓦拉算子还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "卡什瓦拉算子",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%A1%E4%BB%80%E7%93%A6%E6%8B%89%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "卡什瓦拉算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%A1%E4%BB%80%E7%93%A6%E6%8B%89%E7%AE%97%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kashwara operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=kashwara%20operator"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子舒伯特胞腔",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子舒伯特胞腔是量子群中由形变参数控制的代数结构。量子舒伯特胞腔的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n量子舒伯特胞腔需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 量子舒伯特胞腔还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子舒伯特胞腔",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E8%88%92%E4%BC%AF%E7%89%B9%E8%83%9E%E8%85%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子舒伯特胞腔",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E8%88%92%E4%BC%AF%E7%89%B9%E8%83%9E%E8%85%94"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum schubert cell",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20schubert%20cell"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子旗簇",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子旗簇把量子群表示和组合基写成带 $q$ 交换关系的代数数据。量子旗簇的核心是量子簇变量、晶体算子和正性基，和同族术语的分界也主要落在这些数据上。常写成 $X_iX_j=q^{\\lambda_{ij}}X_jX_i$，其中 $\\lambda_{ij}$ 来自反对称矩阵，$X_i$ 是量子簇变量。突变、Hall乘法和晶体算子给出不同的坐标变化。\n\n量子旗簇在根号和非根号参数下性质差异明显：全局基强调正性，除幂和小量子群强调根号处的有限化。它常用于把表示重数、簇变量和几何构造放到同一套组合框架中。 量子旗簇还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子旗簇",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E6%97%97%E7%B0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子旗簇",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E6%97%97%E7%B0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum flag cluster",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20flag%20cluster"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子格拉斯曼簇",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子格拉斯曼簇把量子群表示和组合基写成带 $q$ 交换关系的代数数据。量子格拉斯曼簇的核心是量子簇变量、晶体算子和正性基，和同族术语的分界也主要落在这些数据上。常写成 $X_iX_j=q^{\\lambda_{ij}}X_jX_i$，其中 $\\lambda_{ij}$ 来自反对称矩阵，$X_i$ 是量子簇变量。突变、Hall乘法和晶体算子给出不同的坐标变化。\n\n量子格拉斯曼簇在根号和非根号参数下性质差异明显：全局基强调正性，除幂和小量子群强调根号处的有限化。它常用于把表示重数、簇变量和几何构造放到同一套组合框架中。 量子格拉斯曼簇还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子格拉斯曼簇",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E6%A0%BC%E6%8B%89%E6%96%AF%E6%9B%BC%E7%B0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子格拉斯曼簇",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E6%A0%BC%E6%8B%89%E6%96%AF%E6%9B%BC%E7%B0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum grassmann cluster",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20grassmann%20cluster"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子簇代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子簇代数把量子群表示和组合基写成带 $q$ 交换关系的代数数据。量子簇代数的核心是量子簇变量、晶体算子和正性基，和同族术语的分界也主要落在这些数据上。常写成 $X_iX_j=q^{\\lambda_{ij}}X_jX_i$，其中 $\\lambda_{ij}$ 来自反对称矩阵，$X_i$ 是量子簇变量。突变、Hall乘法和晶体算子给出不同的坐标变化。\n\n量子簇代数在根号和非根号参数下性质差异明显：全局基强调正性，除幂和小量子群强调根号处的有限化。它常用于把表示重数、簇变量和几何构造放到同一套组合框架中。 量子簇代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子簇代数",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E7%B0%87%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子簇代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E7%B0%87%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum cluster algebraic",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20cluster%20algebraic"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "上簇代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "上簇代数把量子群表示和组合基写成带 $q$ 交换关系的代数数据。上簇代数的核心是量子簇变量、晶体算子和正性基，和同族术语的分界也主要落在这些数据上。常写成 $X_iX_j=q^{\\lambda_{ij}}X_jX_i$，其中 $\\lambda_{ij}$ 来自反对称矩阵，$X_i$ 是量子簇变量。突变、Hall乘法和晶体算子给出不同的坐标变化。\n\n上簇代数在根号和非根号参数下性质差异明显：全局基强调正性，除幂和小量子群强调根号处的有限化。它常用于把表示重数、簇变量和几何构造放到同一套组合框架中。 上簇代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "上簇代数",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%8A%E7%B0%87%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "上簇代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%8A%E7%B0%87%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "upper variety algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=upper%20variety%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "下簇代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "下簇代数把量子群表示和组合基写成带 $q$ 交换关系的代数数据。下簇代数的核心是量子簇变量、晶体算子和正性基，和同族术语的分界也主要落在这些数据上。常写成 $X_iX_j=q^{\\lambda_{ij}}X_jX_i$，其中 $\\lambda_{ij}$ 来自反对称矩阵，$X_i$ 是量子簇变量。突变、Hall乘法和晶体算子给出不同的坐标变化。\n\n下簇代数在根号和非根号参数下性质差异明显：全局基强调正性，除幂和小量子群强调根号处的有限化。它常用于把表示重数、簇变量和几何构造放到同一套组合框架中。 下簇代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "下簇代数",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%8B%E7%B0%87%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "下簇代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%8B%E7%B0%87%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lower variety algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=lower%20variety%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子种子",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子种子把量子群表示和组合基写成带 $q$ 交换关系的代数数据。量子种子的核心是量子簇变量、晶体算子和正性基，和同族术语的分界也主要落在这些数据上。常写成 $X_iX_j=q^{\\lambda_{ij}}X_jX_i$，其中 $\\lambda_{ij}$ 来自反对称矩阵，$X_i$ 是量子簇变量。突变、Hall乘法和晶体算子给出不同的坐标变化。\n\n量子种子在根号和非根号参数下性质差异明显：全局基强调正性，除幂和小量子群强调根号处的有限化。它常用于把表示重数、簇变量和几何构造放到同一套组合框架中。 量子种子还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子种子",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E7%A7%8D%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子种子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E7%A7%8D%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum seed",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20seed"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子交换矩阵",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子交换矩阵把量子群表示和组合基写成带 $q$ 交换关系的代数数据。量子交换矩阵的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $X_iX_j=q^{\\lambda_{ij}}X_jX_i$，其中 $\\lambda_{ij}$ 来自反对称矩阵，$X_i$ 是量子簇变量。突变、Hall乘法和晶体算子给出不同的坐标变化。\n\n量子交换矩阵在根号和非根号参数下性质差异明显：全局基强调正性，除幂和小量子群强调根号处的有限化。它常用于把表示重数、簇变量和几何构造放到同一套组合框架中。 量子交换矩阵还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子交换矩阵",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E4%BA%A4%E6%8D%A2%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子交换矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E4%BA%A4%E6%8D%A2%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum commutative matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20commutative%20matrix"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子突变",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子突变把量子群表示和组合基写成带 $q$ 交换关系的代数数据。量子突变的核心是量子簇变量、晶体算子和正性基，和同族术语的分界也主要落在这些数据上。常写成 $X_iX_j=q^{\\lambda_{ij}}X_jX_i$，其中 $\\lambda_{ij}$ 来自反对称矩阵，$X_i$ 是量子簇变量。突变、Hall乘法和晶体算子给出不同的坐标变化。\n\n量子突变在根号和非根号参数下性质差异明显：全局基强调正性，除幂和小量子群强调根号处的有限化。它常用于把表示重数、簇变量和几何构造放到同一套组合框架中。 量子突变还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子突变",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E7%AA%81%E5%8F%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子突变",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E7%AA%81%E5%8F%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum mutation",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20mutation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "环霍尔代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "环霍尔代数把量子群表示和组合基写成带 $q$ 交换关系的代数数据。环霍尔代数的核心是量子簇变量、晶体算子和正性基，和同族术语的分界也主要落在这些数据上。常写成 $X_iX_j=q^{\\lambda_{ij}}X_jX_i$，其中 $\\lambda_{ij}$ 来自反对称矩阵，$X_i$ 是量子簇变量。突变、Hall乘法和晶体算子给出不同的坐标变化。\n\n环霍尔代数在根号和非根号参数下性质差异明显：全局基强调正性，除幂和小量子群强调根号处的有限化。它常用于把表示重数、簇变量和几何构造放到同一套组合框架中。 环霍尔代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "环霍尔代数",
+          "url": "https://www.baidu.com/s?wd=%E7%8E%AF%E9%9C%8D%E5%B0%94%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "环霍尔代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%8E%AF%E9%9C%8D%E5%B0%94%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ring hall algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=ring%20hall%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "扭霍尔代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "扭霍尔代数把量子群表示和组合基写成带 $q$ 交换关系的代数数据。扭霍尔代数的核心是量子簇变量、晶体算子和正性基，和同族术语的分界也主要落在这些数据上。常写成 $X_iX_j=q^{\\lambda_{ij}}X_jX_i$，其中 $\\lambda_{ij}$ 来自反对称矩阵，$X_i$ 是量子簇变量。突变、Hall乘法和晶体算子给出不同的坐标变化。\n\n扭霍尔代数在根号和非根号参数下性质差异明显：全局基强调正性，除幂和小量子群强调根号处的有限化。它常用于把表示重数、簇变量和几何构造放到同一套组合框架中。 扭霍尔代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "扭霍尔代数",
+          "url": "https://www.baidu.com/s?wd=%E6%89%AD%E9%9C%8D%E5%B0%94%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "扭霍尔代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%AD%E9%9C%8D%E5%B0%94%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "twisted hall algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=twisted%20hall%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "半无限霍尔代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "半无限霍尔代数把量子群表示和组合基写成带 $q$ 交换关系的代数数据。半无限霍尔代数的核心是量子簇变量、晶体算子和正性基，和同族术语的分界也主要落在这些数据上。常写成 $X_iX_j=q^{\\lambda_{ij}}X_jX_i$，其中 $\\lambda_{ij}$ 来自反对称矩阵，$X_i$ 是量子簇变量。突变、Hall乘法和晶体算子给出不同的坐标变化。\n\n半无限霍尔代数在根号和非根号参数下性质差异明显：全局基强调正性，除幂和小量子群强调根号处的有限化。它常用于把表示重数、簇变量和几何构造放到同一套组合框架中。 半无限霍尔代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "半无限霍尔代数",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8A%E6%97%A0%E9%99%90%E9%9C%8D%E5%B0%94%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "半无限霍尔代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8A%E6%97%A0%E9%99%90%E9%9C%8D%E5%B0%94%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "semi infinite hall algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=semi%20infinite%20hall%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "库沙代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "库沙代数是量子群中由形变参数控制的代数结构。库沙代数的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n库沙代数需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 库沙代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "库沙代数",
+          "url": "https://www.baidu.com/s?wd=%E5%BA%93%E6%B2%99%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "库沙代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BA%93%E6%B2%99%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kusha algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=kusha%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子托达格",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子托达格是量子群中由形变参数控制的代数结构。量子托达格的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n量子托达格需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 量子托达格还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子托达格",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E6%89%98%E8%BE%BE%E6%A0%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子托达格",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E6%89%98%E8%BE%BE%E6%A0%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum todag",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20todag"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子可积系统",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子可积系统围绕可积模型中的散射相容性展开。量子可积系统的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $R_{12}(u)R_{13}(u+v)R_{23}(v)=R_{23}(v)R_{13}(u+v)R_{12}(u)$，其中 $R_{ij}$ 作用在第 $i,j$ 个张量因子，$u,v$ 是谱参数。方程保证多体散射可分解为两体散射。\n\n量子可积系统的分类会受谱参数、边界条件和对称代数影响。量子Yang-Baxter方程控制 $R$ 矩阵，经典方程给半经典极限；反射方程则加入边界散射。 量子可积系统还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。 量子可积系统的符号还应和具体模型中的对象对应起来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子可积系统",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E5%8F%AF%E7%A7%AF%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子可积系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E5%8F%AF%E7%A7%AF%E7%B3%BB%E7%BB%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum integrable system",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20integrable%20system"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "贝特子代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "贝特子代数围绕可积模型中的散射相容性展开。贝特子代数的核心是谱参数、张量腿记号和散射相容条件，和同族术语的分界也主要落在这些数据上。常写成 $R_{12}(u)R_{13}(u+v)R_{23}(v)=R_{23}(v)R_{13}(u+v)R_{12}(u)$，其中 $R_{ij}$ 作用在第 $i,j$ 个张量因子，$u,v$ 是谱参数。方程保证多体散射可分解为两体散射。\n\n贝特子代数的分类会受谱参数、边界条件和对称代数影响。量子Yang-Baxter方程控制 $R$ 矩阵，经典方程给半经典极限；反射方程则加入边界散射。 贝特子代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。 贝特子代数的符号还应和具体模型中的对象对应起来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "贝特子代数",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%9D%E7%89%B9%E5%AD%90%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "贝特子代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%9D%E7%89%B9%E5%AD%90%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bethe particle algebraic",
+          "url": "https://en.wikipedia.org/w/index.php?search=bethe%20particle%20algebraic"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "转移矩阵",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "转移矩阵围绕可积模型中的散射相容性展开。转移矩阵的核心是谱参数、张量腿记号和散射相容条件，和同族术语的分界也主要落在这些数据上。常写成 $R_{12}(u)R_{13}(u+v)R_{23}(v)=R_{23}(v)R_{13}(u+v)R_{12}(u)$，其中 $R_{ij}$ 作用在第 $i,j$ 个张量因子，$u,v$ 是谱参数。方程保证多体散射可分解为两体散射。\n\n转移矩阵的分类会受谱参数、边界条件和对称代数影响。量子Yang-Baxter方程控制 $R$ 矩阵，经典方程给半经典极限；反射方程则加入边界散射。 转移矩阵还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。 转移矩阵的符号还应和具体模型中的对象对应起来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "转移矩阵",
+          "url": "https://www.baidu.com/s?wd=%E8%BD%AC%E7%A7%BB%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "转移矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BD%AC%E7%A7%BB%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "transfer matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=transfer%20matrix"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "反射方程代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "反射方程代数围绕可积模型中的散射相容性展开。反射方程代数的核心是谱参数、张量腿记号和散射相容条件，和同族术语的分界也主要落在这些数据上。常写成 $R_{12}(u)R_{13}(u+v)R_{23}(v)=R_{23}(v)R_{13}(u+v)R_{12}(u)$，其中 $R_{ij}$ 作用在第 $i,j$ 个张量因子，$u,v$ 是谱参数。方程保证多体散射可分解为两体散射。\n\n反射方程代数的分类会受谱参数、边界条件和对称代数影响。量子Yang-Baxter方程控制 $R$ 矩阵，经典方程给半经典极限；反射方程则加入边界散射。 反射方程代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。 反射方程代数的符号还应和具体模型中的对象对应起来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反射方程代数",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E5%B0%84%E6%96%B9%E7%A8%8B%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反射方程代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E5%B0%84%E6%96%B9%E7%A8%8B%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "reflection equation algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=reflection%20equation%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "边界杨巴克斯特方程",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "边界杨巴克斯特方程围绕可积模型中的散射相容性展开。边界杨巴克斯特方程的核心是谱参数、张量腿记号和散射相容条件，和同族术语的分界也主要落在这些数据上。常写成 $R_{12}(u)R_{13}(u+v)R_{23}(v)=R_{23}(v)R_{13}(u+v)R_{12}(u)$，其中 $R_{ij}$ 作用在第 $i,j$ 个张量因子，$u,v$ 是谱参数。方程保证多体散射可分解为两体散射。\n\n边界杨巴克斯特方程的分类会受谱参数、边界条件和对称代数影响。量子Yang-Baxter方程控制 $R$ 矩阵，经典方程给半经典极限；反射方程则加入边界散射。 边界杨巴克斯特方程还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "边界杨巴克斯特方程",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%B9%E7%95%8C%E6%9D%A8%E5%B7%B4%E5%85%8B%E6%96%AF%E7%89%B9%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "边界杨巴克斯特方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%B9%E7%95%8C%E6%9D%A8%E5%B7%B4%E5%85%8B%E6%96%AF%E7%89%B9%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "boundary yang baxter equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=boundary%20yang%20baxter%20equation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "海森堡双",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "海森堡双是量子群中由形变参数控制的代数结构。海森堡双的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n海森堡双需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 海森堡双还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "海森堡双",
+          "url": "https://www.baidu.com/s?wd=%E6%B5%B7%E6%A3%AE%E5%A0%A1%E5%8F%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "海森堡双",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B5%B7%E6%A3%AE%E5%A0%A1%E5%8F%8C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "heisenberg double",
+          "url": "https://en.wikipedia.org/w/index.php?search=heisenberg%20double"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "配对",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "配对描述代数和余代数结构之间的相容关系。配对的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $\\langle ab,x\\rangle=\\langle a\\otimes b,\\Delta x\\rangle$，其中尖括号是配对，$\\Delta$ 是余乘法。乘法、余乘法和配对一同决定表示能否通过张量积组合。\n\n配对在量子群中常用于连接群代数、函数代数和Drinfeld双。若再加入反极，就进入霍普夫代数；若加入 $R$ 矩阵或结合子，则会改变表示范畴的编织或结合约束。 配对还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。 配对的符号还应和具体模型中的对象对应起来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "配对",
+          "url": "https://www.baidu.com/s?wd=%E9%85%8D%E5%AF%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "配对",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%85%8D%E5%AF%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pairing",
+          "url": "https://en.wikipedia.org/w/index.php?search=pairing"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "余乘法",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "余乘法是把代数元素送入张量积的结构映射，用来定义张量积表示。余乘法的核心是乘法、余乘法、反极和单位余单位的相容性，和同族术语的分界也主要落在这些数据上。常写成 $\\Delta:H\\to H\\otimes H,\\,\\Delta(ab)=\\Delta(a)\\Delta(b)$，其中 $H$ 是双代数或霍普夫代数。余结合条件写作 $(\\Delta\\otimes id)\\Delta=(id\\otimes\\Delta)\\Delta$。\n\n余乘法与乘法方向相反：乘法合并两个元素，余乘法把一个元素分配到两个张量因子上。量子群中的 $\\Delta(E_i)=E_i\\otimes K_i+1\\otimes E_i$ 正体现了形变后的对角作用。 余乘法还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。 余乘法的符号还应和具体模型中的对象对应起来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "余乘法",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%99%E4%B9%98%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "余乘法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%99%E4%B9%98%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "comultiplication",
+          "url": "https://en.wikipedia.org/w/index.php?search=comultiplication"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "余单位",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "余单位是余代数中对应单位的结构映射，把元素投到基域。余单位的核心是乘法、余乘法、反极和单位余单位的相容性，和同族术语的分界也主要落在这些数据上。常写成 $(\\varepsilon\\otimes id)\\Delta(a)=a=(id\\otimes\\varepsilon)\\Delta(a)$，其中 $\\varepsilon:H\\to k$ 是余单位，$a\\in H$。它保证余乘法分解后仍能通过一侧收缩回原元素。\n\n余单位不是普通代数单位；它作用在余结构上，负责消去一个张量因子。在群代数中常有 $\\varepsilon(g)=1$，在函数代数中则对应在单位元取值。 余单位还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。 余单位的符号还应和具体模型中的对象对应起来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "余单位",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%99%E5%8D%95%E4%BD%8D%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "余单位",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%99%E5%8D%95%E4%BD%8D"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "remaining units",
+          "url": "https://en.wikipedia.org/w/index.php?search=remaining%20units"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "反极",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "反极是霍普夫代数里类似群逆元的反同态。反极的核心是乘法、余乘法、反极和单位余单位的相容性，和同族术语的分界也主要落在这些数据上。常写成 $m(S\\otimes id)\\Delta(a)=\\eta\\varepsilon(a)=m(id\\otimes S)\\Delta(a)$，其中 $S$ 是反极，$m$ 是乘法，$\\eta$ 是单位映射。它把余乘法两侧重新合成为余单位给出的标量。\n\n反极使表示范畴拥有对偶对象，也控制量子迹和双对偶行为。拟霍普夫代数中反极需要额外元素修正，弱霍普夫代数中也会因源靶子代数而变得更细。 反极还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。 反极的符号还应和具体模型中的对象对应起来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反极",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E6%9E%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反极",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E6%9E%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "opposite pole",
+          "url": "https://en.wikipedia.org/w/index.php?search=opposite%20pole"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "可积分表示",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "可积分表示研究量子群在模范畴中的对象和分解。可积分表示的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $\\Delta(E_i)=E_i\\otimes K_i+1\\otimes E_i$，其中 $E_i,K_i$ 是量子包络代数生成元，$\\Delta$ 给出张量积表示上的作用。权空间和晶体结构常用来组织基向量。\n\n可积分表示与经典李代数表示相近，但 $q$ 参数、余乘法和根号现象会改变半单性。评价表示、KR模和极大权模分别服务于仿射量子群、可积模型和特征标公式。 可积分表示还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "可积分表示",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%AF%E7%A7%AF%E5%88%86%E8%A1%A8%E7%A4%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "可积分表示",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%AF%E7%A7%AF%E5%88%86%E8%A1%A8%E7%A4%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "can be expressed integrally",
+          "url": "https://en.wikipedia.org/w/index.php?search=can%20be%20expressed%20integrally"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "一型表示",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "一型表示研究量子群在模范畴中的对象和分解。一型表示的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $\\Delta(E_i)=E_i\\otimes K_i+1\\otimes E_i$，其中 $E_i,K_i$ 是量子包络代数生成元，$\\Delta$ 给出张量积表示上的作用。权空间和晶体结构常用来组织基向量。\n\n一型表示与经典李代数表示相近，但 $q$ 参数、余乘法和根号现象会改变半单性。评价表示、KR模和极大权模分别服务于仿射量子群、可积模型和特征标公式。 一型表示还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "一型表示",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%80%E5%9E%8B%E8%A1%A8%E7%A4%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "一型表示",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%80%E5%9E%8B%E8%A1%A8%E7%A4%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "one type representation",
+          "url": "https://en.wikipedia.org/w/index.php?search=one%20type%20representation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "评价表示",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "评价表示研究量子群在模范畴中的对象和分解。评价表示的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $\\Delta(E_i)=E_i\\otimes K_i+1\\otimes E_i$，其中 $E_i,K_i$ 是量子包络代数生成元，$\\Delta$ 给出张量积表示上的作用。权空间和晶体结构常用来组织基向量。\n\n评价表示与经典李代数表示相近，但 $q$ 参数、余乘法和根号现象会改变半单性。评价表示、KR模和极大权模分别服务于仿射量子群、可积模型和特征标公式。 评价表示还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "评价表示",
+          "url": "https://www.baidu.com/s?wd=%E8%AF%84%E4%BB%B7%E8%A1%A8%E7%A4%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "评价表示",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%AF%84%E4%BB%B7%E8%A1%A8%E7%A4%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "evaluation expression",
+          "url": "https://en.wikipedia.org/w/index.php?search=evaluation%20expression"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "基里洛夫-列舍季欣模",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "基里洛夫-列舍季欣模把量子群表示中的编织、迹和对偶结构转化为拓扑不变量。基里洛夫-列舍季欣模的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{tr}_q(T)=\\operatorname{tr}(K^{-1}T)$，其中 $T$ 是表示上的算子，$K$ 来自Cartan部分或平衡元。量子迹修正普通迹在编织范畴中的不对称性。\n\n基里洛夫-列舍季欣模用于纽结、多项式和三维流形量子不变量时，必须同时指定表示、$R$ 矩阵和规范化。Jones、HOMFLY和Kauffman多项式对应的量子群或范畴数据并不相同。 基里洛夫-列舍季欣模还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "基里洛夫-列舍季欣模",
+          "url": "https://www.baidu.com/s?wd=%E5%9F%BA%E9%87%8C%E6%B4%9B%E5%A4%AB-%E5%88%97%E8%88%8D%E5%AD%A3%E6%AC%A3%E6%A8%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "基里洛夫-列舍季欣模",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9F%BA%E9%87%8C%E6%B4%9B%E5%A4%AB-%E5%88%97%E8%88%8D%E5%AD%A3%E6%AC%A3%E6%A8%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kirillov reshetikhin module",
+          "url": "https://en.wikipedia.org/w/index.php?search=kirillov%20reshetikhin%20module"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "极大权模",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "极大权模研究量子群在模范畴中的对象和分解。极大权模的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $\\Delta(E_i)=E_i\\otimes K_i+1\\otimes E_i$，其中 $E_i,K_i$ 是量子包络代数生成元，$\\Delta$ 给出张量积表示上的作用。权空间和晶体结构常用来组织基向量。\n\n极大权模与经典李代数表示相近，但 $q$ 参数、余乘法和根号现象会改变半单性。评价表示、KR模和极大权模分别服务于仿射量子群、可积模型和特征标公式。 极大权模还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "极大权模",
+          "url": "https://www.baidu.com/s?wd=%E6%9E%81%E5%A4%A7%E6%9D%83%E6%A8%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "极大权模",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9E%81%E5%A4%A7%E6%9D%83%E6%A8%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "extremely powerful model",
+          "url": "https://en.wikipedia.org/w/index.php?search=extremely%20powerful%20model"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子特征标",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子特征标研究量子群在模范畴中的对象和分解。量子特征标的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $\\Delta(E_i)=E_i\\otimes K_i+1\\otimes E_i$，其中 $E_i,K_i$ 是量子包络代数生成元，$\\Delta$ 给出张量积表示上的作用。权空间和晶体结构常用来组织基向量。\n\n量子特征标与经典李代数表示相近，但 $q$ 参数、余乘法和根号现象会改变半单性。评价表示、KR模和极大权模分别服务于仿射量子群、可积模型和特征标公式。 量子特征标还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子特征标",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E7%89%B9%E5%BE%81%E6%A0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子特征标",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E7%89%B9%E5%BE%81%E6%A0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum signature",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20signature"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "克尼日尼克扎莫洛奇科夫方程",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "克尼日尼克扎莫洛奇科夫方程是量子群中由形变参数控制的代数结构。克尼日尼克扎莫洛奇科夫方程的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n克尼日尼克扎莫洛奇科夫方程需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 克尼日尼克扎莫洛奇科夫方程还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "克尼日尼克扎莫洛奇科夫方程",
+          "url": "https://www.baidu.com/s?wd=%E5%85%8B%E5%B0%BC%E6%97%A5%E5%B0%BC%E5%85%8B%E6%89%8E%E8%8E%AB%E6%B4%9B%E5%A5%87%E7%A7%91%E5%A4%AB%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "克尼日尼克扎莫洛奇科夫方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%8B%E5%B0%BC%E6%97%A5%E5%B0%BC%E5%85%8B%E6%89%8E%E8%8E%AB%E6%B4%9B%E5%A5%87%E7%A7%91%E5%A4%AB%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "knizhnik zamolochkov equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=knizhnik%20zamolochkov%20equation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子克尼日尼克扎莫洛奇科夫方程",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子克尼日尼克扎莫洛奇科夫方程是量子群中由形变参数控制的代数结构。量子克尼日尼克扎莫洛奇科夫方程的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n量子克尼日尼克扎莫洛奇科夫方程需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 量子克尼日尼克扎莫洛奇科夫方程还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子克尼日尼克扎莫洛奇科夫方程",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E5%85%8B%E5%B0%BC%E6%97%A5%E5%B0%BC%E5%85%8B%E6%89%8E%E8%8E%AB%E6%B4%9B%E5%A5%87%E7%A7%91%E5%A4%AB%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子克尼日尼克扎莫洛奇科夫方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E5%85%8B%E5%B0%BC%E6%97%A5%E5%B0%BC%E5%85%8B%E6%89%8E%E8%8E%AB%E6%B4%9B%E5%A5%87%E7%A7%91%E5%A4%AB%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum knizhnik zamolochkov equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20knizhnik%20zamolochkov%20equation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "六顶点模型",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "六顶点模型围绕可积模型中的散射相容性展开。六顶点模型的核心是谱参数、张量腿记号和散射相容条件，和同族术语的分界也主要落在这些数据上。常写成 $R_{12}(u)R_{13}(u+v)R_{23}(v)=R_{23}(v)R_{13}(u+v)R_{12}(u)$，其中 $R_{ij}$ 作用在第 $i,j$ 个张量因子，$u,v$ 是谱参数。方程保证多体散射可分解为两体散射。\n\n六顶点模型的分类会受谱参数、边界条件和对称代数影响。量子Yang-Baxter方程控制 $R$ 矩阵，经典方程给半经典极限；反射方程则加入边界散射。 六顶点模型还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。 六顶点模型的符号还应和具体模型中的对象对应起来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "六顶点模型",
+          "url": "https://www.baidu.com/s?wd=%E5%85%AD%E9%A1%B6%E7%82%B9%E6%A8%A1%E5%9E%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "六顶点模型",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%AD%E9%A1%B6%E7%82%B9%E6%A8%A1%E5%9E%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "six vertex model",
+          "url": "https://en.wikipedia.org/w/index.php?search=six%20vertex%20model"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "八顶点模型",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "八顶点模型围绕可积模型中的散射相容性展开。八顶点模型的核心是谱参数、张量腿记号和散射相容条件，和同族术语的分界也主要落在这些数据上。常写成 $R_{12}(u)R_{13}(u+v)R_{23}(v)=R_{23}(v)R_{13}(u+v)R_{12}(u)$，其中 $R_{ij}$ 作用在第 $i,j$ 个张量因子，$u,v$ 是谱参数。方程保证多体散射可分解为两体散射。\n\n八顶点模型的分类会受谱参数、边界条件和对称代数影响。量子Yang-Baxter方程控制 $R$ 矩阵，经典方程给半经典极限；反射方程则加入边界散射。 八顶点模型还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。 八顶点模型的符号还应和具体模型中的对象对应起来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "八顶点模型",
+          "url": "https://www.baidu.com/s?wd=%E5%85%AB%E9%A1%B6%E7%82%B9%E6%A8%A1%E5%9E%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "八顶点模型",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%AB%E9%A1%B6%E7%82%B9%E6%A8%A1%E5%9E%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "eight vertex model",
+          "url": "https://en.wikipedia.org/w/index.php?search=eight%20vertex%20model"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "代数贝特假设",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "代数贝特假设围绕可积模型中的散射相容性展开。代数贝特假设的核心是谱参数、张量腿记号和散射相容条件，和同族术语的分界也主要落在这些数据上。常写成 $R_{12}(u)R_{13}(u+v)R_{23}(v)=R_{23}(v)R_{13}(u+v)R_{12}(u)$，其中 $R_{ij}$ 作用在第 $i,j$ 个张量因子，$u,v$ 是谱参数。方程保证多体散射可分解为两体散射。\n\n代数贝特假设的分类会受谱参数、边界条件和对称代数影响。量子Yang-Baxter方程控制 $R$ 矩阵，经典方程给半经典极限；反射方程则加入边界散射。 代数贝特假设还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。 代数贝特假设的符号还应和具体模型中的对象对应起来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "代数贝特假设",
+          "url": "https://www.baidu.com/s?wd=%E4%BB%A3%E6%95%B0%E8%B4%9D%E7%89%B9%E5%81%87%E8%AE%BE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "代数贝特假设",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BB%A3%E6%95%B0%E8%B4%9D%E7%89%B9%E5%81%87%E8%AE%BE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "algebraic bethe hypothesis",
+          "url": "https://en.wikipedia.org/w/index.php?search=algebraic%20bethe%20hypothesis"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子逆散射法",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子逆散射法围绕可积模型中的散射相容性展开。量子逆散射法的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $R_{12}(u)R_{13}(u+v)R_{23}(v)=R_{23}(v)R_{13}(u+v)R_{12}(u)$，其中 $R_{ij}$ 作用在第 $i,j$ 个张量因子，$u,v$ 是谱参数。方程保证多体散射可分解为两体散射。\n\n量子逆散射法的分类会受谱参数、边界条件和对称代数影响。量子Yang-Baxter方程控制 $R$ 矩阵，经典方程给半经典极限；反射方程则加入边界散射。 量子逆散射法还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。 量子逆散射法的符号还应和具体模型中的对象对应起来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子逆散射法",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E9%80%86%E6%95%A3%E5%B0%84%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子逆散射法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E9%80%86%E6%95%A3%E5%B0%84%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum inverse scattering method",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20inverse%20scattering%20method"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "列舍季欣-图拉耶夫不变量",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "列舍季欣-图拉耶夫不变量把量子群表示中的编织、迹和对偶结构转化为拓扑不变量。列舍季欣-图拉耶夫不变量的核心是量子迹、编织闭合和拓扑规范化，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{tr}_q(T)=\\operatorname{tr}(K^{-1}T)$，其中 $T$ 是表示上的算子，$K$ 来自Cartan部分或平衡元。量子迹修正普通迹在编织范畴中的不对称性。\n\n列舍季欣-图拉耶夫不变量用于纽结、多项式和三维流形量子不变量时，必须同时指定表示、$R$ 矩阵和规范化。Jones、HOMFLY和Kauffman多项式对应的量子群或范畴数据并不相同。 列舍季欣-图拉耶夫不变量还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "列舍季欣-图拉耶夫不变量",
+          "url": "https://www.baidu.com/s?wd=%E5%88%97%E8%88%8D%E5%AD%A3%E6%AC%A3-%E5%9B%BE%E6%8B%89%E8%80%B6%E5%A4%AB%E4%B8%8D%E5%8F%98%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "列舍季欣-图拉耶夫不变量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%97%E8%88%8D%E5%AD%A3%E6%AC%A3-%E5%9B%BE%E6%8B%89%E8%80%B6%E5%A4%AB%E4%B8%8D%E5%8F%98%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "reshetikhin turaev invariant",
+          "url": "https://en.wikipedia.org/w/index.php?search=reshetikhin%20turaev%20invariant"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "琼斯多项式",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "琼斯多项式把量子群表示中的编织、迹和对偶结构转化为拓扑不变量。琼斯多项式的核心是量子迹、编织闭合和拓扑规范化，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{tr}_q(T)=\\operatorname{tr}(K^{-1}T)$，其中 $T$ 是表示上的算子，$K$ 来自Cartan部分或平衡元。量子迹修正普通迹在编织范畴中的不对称性。\n\n琼斯多项式用于纽结、多项式和三维流形量子不变量时，必须同时指定表示、$R$ 矩阵和规范化。Jones、HOMFLY和Kauffman多项式对应的量子群或范畴数据并不相同。 琼斯多项式还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "琼斯多项式",
+          "url": "https://www.baidu.com/s?wd=%E7%90%BC%E6%96%AF%E5%A4%9A%E9%A1%B9%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "琼斯多项式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%90%BC%E6%96%AF%E5%A4%9A%E9%A1%B9%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "jones polynomial",
+          "url": "https://en.wikipedia.org/w/index.php?search=jones%20polynomial"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "霍姆弗莱多项式",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "霍姆弗莱多项式把量子群表示中的编织、迹和对偶结构转化为拓扑不变量。霍姆弗莱多项式的核心是量子迹、编织闭合和拓扑规范化，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{tr}_q(T)=\\operatorname{tr}(K^{-1}T)$，其中 $T$ 是表示上的算子，$K$ 来自Cartan部分或平衡元。量子迹修正普通迹在编织范畴中的不对称性。\n\n霍姆弗莱多项式用于纽结、多项式和三维流形量子不变量时，必须同时指定表示、$R$ 矩阵和规范化。Jones、HOMFLY和Kauffman多项式对应的量子群或范畴数据并不相同。 霍姆弗莱多项式还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "霍姆弗莱多项式",
+          "url": "https://www.baidu.com/s?wd=%E9%9C%8D%E5%A7%86%E5%BC%97%E8%8E%B1%E5%A4%9A%E9%A1%B9%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "霍姆弗莱多项式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9C%8D%E5%A7%86%E5%BC%97%E8%8E%B1%E5%A4%9A%E9%A1%B9%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "homfrey polynomial",
+          "url": "https://en.wikipedia.org/w/index.php?search=homfrey%20polynomial"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "考夫曼多项式",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "考夫曼多项式把量子群表示中的编织、迹和对偶结构转化为拓扑不变量。考夫曼多项式的核心是量子迹、编织闭合和拓扑规范化，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{tr}_q(T)=\\operatorname{tr}(K^{-1}T)$，其中 $T$ 是表示上的算子，$K$ 来自Cartan部分或平衡元。量子迹修正普通迹在编织范畴中的不对称性。\n\n考夫曼多项式用于纽结、多项式和三维流形量子不变量时，必须同时指定表示、$R$ 矩阵和规范化。Jones、HOMFLY和Kauffman多项式对应的量子群或范畴数据并不相同。 考夫曼多项式还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "考夫曼多项式",
+          "url": "https://www.baidu.com/s?wd=%E8%80%83%E5%A4%AB%E6%9B%BC%E5%A4%9A%E9%A1%B9%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "考夫曼多项式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%80%83%E5%A4%AB%E6%9B%BC%E5%A4%9A%E9%A1%B9%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kaufman polynomial",
+          "url": "https://en.wikipedia.org/w/index.php?search=kaufman%20polynomial"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子不变量",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子不变量把量子群表示中的编织、迹和对偶结构转化为拓扑不变量。量子不变量的核心是量子迹、编织闭合和拓扑规范化，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{tr}_q(T)=\\operatorname{tr}(K^{-1}T)$，其中 $T$ 是表示上的算子，$K$ 来自Cartan部分或平衡元。量子迹修正普通迹在编织范畴中的不对称性。\n\n量子不变量用于纽结、多项式和三维流形量子不变量时，必须同时指定表示、$R$ 矩阵和规范化。Jones、HOMFLY和Kauffman多项式对应的量子群或范畴数据并不相同。 量子不变量还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子不变量",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E4%B8%8D%E5%8F%98%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子不变量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E4%B8%8D%E5%8F%98%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum invariant",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20invariant"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "三维拓扑量子场论",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "三维拓扑量子场论把量子群表示中的编织、迹和对偶结构转化为拓扑不变量。三维拓扑量子场论的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{tr}_q(T)=\\operatorname{tr}(K^{-1}T)$，其中 $T$ 是表示上的算子，$K$ 来自Cartan部分或平衡元。量子迹修正普通迹在编织范畴中的不对称性。\n\n三维拓扑量子场论用于纽结、多项式和三维流形量子不变量时，必须同时指定表示、$R$ 矩阵和规范化。Jones、HOMFLY和Kauffman多项式对应的量子群或范畴数据并不相同。 三维拓扑量子场论还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "三维拓扑量子场论",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%89%E7%BB%B4%E6%8B%93%E6%89%91%E9%87%8F%E5%AD%90%E5%9C%BA%E8%AE%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "三维拓扑量子场论",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%89%E7%BB%B4%E6%8B%93%E6%89%91%E9%87%8F%E5%AD%90%E5%9C%BA%E8%AE%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "three dimensional topological quantum field theory",
+          "url": "https://en.wikipedia.org/w/index.php?search=three%20dimensional%20topological%20quantum%20field%20theory"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "陈西蒙斯量子化",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "陈西蒙斯量子化把量子群表示中的编织、迹和对偶结构转化为拓扑不变量。陈西蒙斯量子化的核心是量子迹、编织闭合和拓扑规范化，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{tr}_q(T)=\\operatorname{tr}(K^{-1}T)$，其中 $T$ 是表示上的算子，$K$ 来自Cartan部分或平衡元。量子迹修正普通迹在编织范畴中的不对称性。\n\n陈西蒙斯量子化用于纽结、多项式和三维流形量子不变量时，必须同时指定表示、$R$ 矩阵和规范化。Jones、HOMFLY和Kauffman多项式对应的量子群或范畴数据并不相同。 陈西蒙斯量子化还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "陈西蒙斯量子化",
+          "url": "https://www.baidu.com/s?wd=%E9%99%88%E8%A5%BF%E8%92%99%E6%96%AF%E9%87%8F%E5%AD%90%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "陈西蒙斯量子化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%99%88%E8%A5%BF%E8%92%99%E6%96%AF%E9%87%8F%E5%AD%90%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "chern simons quantization",
+          "url": "https://en.wikipedia.org/w/index.php?search=chern%20simons%20quantization"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "威滕-列舍季欣-图拉耶夫不变量",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "威滕-列舍季欣-图拉耶夫不变量把量子群表示中的编织、迹和对偶结构转化为拓扑不变量。威滕-列舍季欣-图拉耶夫不变量的核心是量子迹、编织闭合和拓扑规范化，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{tr}_q(T)=\\operatorname{tr}(K^{-1}T)$，其中 $T$ 是表示上的算子，$K$ 来自Cartan部分或平衡元。量子迹修正普通迹在编织范畴中的不对称性。\n\n威滕-列舍季欣-图拉耶夫不变量用于纽结、多项式和三维流形量子不变量时，必须同时指定表示、$R$ 矩阵和规范化。Jones、HOMFLY和Kauffman多项式对应的量子群或范畴数据并不相同。 威滕-列舍季欣-图拉耶夫不变量还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "威滕-列舍季欣-图拉耶夫不变量",
+          "url": "https://www.baidu.com/s?wd=%E5%A8%81%E6%BB%95-%E5%88%97%E8%88%8D%E5%AD%A3%E6%AC%A3-%E5%9B%BE%E6%8B%89%E8%80%B6%E5%A4%AB%E4%B8%8D%E5%8F%98%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "威滕-列舍季欣-图拉耶夫不变量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A8%81%E6%BB%95-%E5%88%97%E8%88%8D%E5%AD%A3%E6%AC%A3-%E5%9B%BE%E6%8B%89%E8%80%B6%E5%A4%AB%E4%B8%8D%E5%8F%98%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "witten reshetikhin turaev invariant",
+          "url": "https://en.wikipedia.org/w/index.php?search=witten%20reshetikhin%20turaev%20invariant"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "图拉耶夫维罗不变量",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "图拉耶夫维罗不变量把量子群表示中的编织、迹和对偶结构转化为拓扑不变量。图拉耶夫维罗不变量的核心是量子迹、编织闭合和拓扑规范化，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{tr}_q(T)=\\operatorname{tr}(K^{-1}T)$，其中 $T$ 是表示上的算子，$K$ 来自Cartan部分或平衡元。量子迹修正普通迹在编织范畴中的不对称性。\n\n图拉耶夫维罗不变量用于纽结、多项式和三维流形量子不变量时，必须同时指定表示、$R$ 矩阵和规范化。Jones、HOMFLY和Kauffman多项式对应的量子群或范畴数据并不相同。 图拉耶夫维罗不变量还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "图拉耶夫维罗不变量",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%BE%E6%8B%89%E8%80%B6%E5%A4%AB%E7%BB%B4%E7%BD%97%E4%B8%8D%E5%8F%98%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "图拉耶夫维罗不变量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%BE%E6%8B%89%E8%80%B6%E5%A4%AB%E7%BB%B4%E7%BD%97%E4%B8%8D%E5%8F%98%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "turaev viro invariant",
+          "url": "https://en.wikipedia.org/w/index.php?search=turaev%20viro%20invariant"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "埃廷戈夫卡赞丹量子化",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "埃廷戈夫卡赞丹量子化描述经典泊松对称性到量子群的形变。埃廷戈夫卡赞丹量子化的核心是泊松括号、经典r矩阵和形变的一阶项，和同族术语的分界也主要落在这些数据上。常写成 $\\delta(x)=[x\\otimes1+1\\otimes x,r]$，其中 $\\delta$ 是李双代数余括号，$r$ 是经典 $r$ 矩阵。半经典极限把非交换乘法的一阶项还原为泊松括号。\n\n埃廷戈夫卡赞丹量子化关注的是量子化前后的结构是否相容，而不只是把参数 $q$ 写进公式。Drinfeld量子化、FRT关系和Etingof-Kazhdan定理分别从不同角度保证这种形变存在。 埃廷戈夫卡赞丹量子化还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "埃廷戈夫卡赞丹量子化",
+          "url": "https://www.baidu.com/s?wd=%E5%9F%83%E5%BB%B7%E6%88%88%E5%A4%AB%E5%8D%A1%E8%B5%9E%E4%B8%B9%E9%87%8F%E5%AD%90%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "埃廷戈夫卡赞丹量子化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9F%83%E5%BB%B7%E6%88%88%E5%A4%AB%E5%8D%A1%E8%B5%9E%E4%B8%B9%E9%87%8F%E5%AD%90%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "etingof kazhdan quantization",
+          "url": "https://en.wikipedia.org/w/index.php?search=etingof%20kazhdan%20quantization"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "半经典极限",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "半经典极限描述经典泊松对称性到量子群的形变。半经典极限的核心是泊松括号、经典r矩阵和形变的一阶项，和同族术语的分界也主要落在这些数据上。常写成 $\\delta(x)=[x\\otimes1+1\\otimes x,r]$，其中 $\\delta$ 是李双代数余括号，$r$ 是经典 $r$ 矩阵。半经典极限把非交换乘法的一阶项还原为泊松括号。\n\n半经典极限关注的是量子化前后的结构是否相容，而不只是把参数 $q$ 写进公式。Drinfeld量子化、FRT关系和Etingof-Kazhdan定理分别从不同角度保证这种形变存在。 半经典极限还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "半经典极限",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8A%E7%BB%8F%E5%85%B8%E6%9E%81%E9%99%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "半经典极限",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8A%E7%BB%8F%E5%85%B8%E6%9E%81%E9%99%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "semi classic extreme",
+          "url": "https://en.wikipedia.org/w/index.php?search=semi%20classic%20extreme"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "李双代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "李双代数描述代数和余代数结构之间的相容关系。李双代数的核心是乘法、余乘法、反极和单位余单位的相容性，和同族术语的分界也主要落在这些数据上。常写成 $\\langle ab,x\\rangle=\\langle a\\otimes b,\\Delta x\\rangle$，其中尖括号是配对，$\\Delta$ 是余乘法。乘法、余乘法和配对一同决定表示能否通过张量积组合。\n\n李双代数在量子群中常用于连接群代数、函数代数和Drinfeld双。若再加入反极，就进入霍普夫代数；若加入 $R$ 矩阵或结合子，则会改变表示范畴的编织或结合约束。 李双代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "李双代数",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%8E%E5%8F%8C%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "李双代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%8E%E5%8F%8C%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lie double algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=lie%20double%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "泊松李群",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "泊松李群描述经典泊松对称性到量子群的形变。泊松李群的核心是泊松括号、经典r矩阵和形变的一阶项，和同族术语的分界也主要落在这些数据上。常写成 $\\delta(x)=[x\\otimes1+1\\otimes x,r]$，其中 $\\delta$ 是李双代数余括号，$r$ 是经典 $r$ 矩阵。半经典极限把非交换乘法的一阶项还原为泊松括号。\n\n泊松李群关注的是量子化前后的结构是否相容，而不只是把参数 $q$ 写进公式。Drinfeld量子化、FRT关系和Etingof-Kazhdan定理分别从不同角度保证这种形变存在。 泊松李群还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。 泊松李群的符号还应和具体模型中的对象对应起来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "泊松李群",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%8A%E6%9D%BE%E6%9D%8E%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "泊松李群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%8A%E6%9D%BE%E6%9D%8E%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "poisson lie group",
+          "url": "https://en.wikipedia.org/w/index.php?search=poisson%20lie%20group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "法捷耶夫-列舍季欣-塔赫塔江关系",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "法捷耶夫-列舍季欣-塔赫塔江关系把量子群表示中的编织、迹和对偶结构转化为拓扑不变量。法捷耶夫-列舍季欣-塔赫塔江关系的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{tr}_q(T)=\\operatorname{tr}(K^{-1}T)$，其中 $T$ 是表示上的算子，$K$ 来自Cartan部分或平衡元。量子迹修正普通迹在编织范畴中的不对称性。\n\n法捷耶夫-列舍季欣-塔赫塔江关系用于纽结、多项式和三维流形量子不变量时，必须同时指定表示、$R$ 矩阵和规范化。Jones、HOMFLY和Kauffman多项式对应的量子群或范畴数据并不相同。 法捷耶夫-列舍季欣-塔赫塔江关系还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "法捷耶夫-列舍季欣-塔赫塔江关系",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%95%E6%8D%B7%E8%80%B6%E5%A4%AB-%E5%88%97%E8%88%8D%E5%AD%A3%E6%AC%A3-%E5%A1%94%E8%B5%AB%E5%A1%94%E6%B1%9F%E5%85%B3%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "法捷耶夫-列舍季欣-塔赫塔江关系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%95%E6%8D%B7%E8%80%B6%E5%A4%AB-%E5%88%97%E8%88%8D%E5%AD%A3%E6%AC%A3-%E5%A1%94%E8%B5%AB%E5%A1%94%E6%B1%9F%E5%85%B3%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "faddeev reshetikhin takhtajan relation",
+          "url": "https://en.wikipedia.org/w/index.php?search=faddeev%20reshetikhin%20takhtajan%20relation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子迹配对",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子迹配对描述代数和余代数结构之间的相容关系。量子迹配对的核心是量子迹、编织闭合和拓扑规范化，和同族术语的分界也主要落在这些数据上。常写成 $\\langle ab,x\\rangle=\\langle a\\otimes b,\\Delta x\\rangle$，其中尖括号是配对，$\\Delta$ 是余乘法。乘法、余乘法和配对一同决定表示能否通过张量积组合。\n\n量子迹配对在量子群中常用于连接群代数、函数代数和Drinfeld双。若再加入反极，就进入霍普夫代数；若加入 $R$ 矩阵或结合子，则会改变表示范畴的编织或结合约束。 量子迹配对还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子迹配对",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E8%BF%B9%E9%85%8D%E5%AF%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子迹配对",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E8%BF%B9%E9%85%8D%E5%AF%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum trace pairing",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20trace%20pairing"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子余伴随作用",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子余伴随作用是量子群中由形变参数控制的代数结构。量子余伴随作用的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n量子余伴随作用需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 量子余伴随作用还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子余伴随作用",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E4%BD%99%E4%BC%B4%E9%9A%8F%E4%BD%9C%E7%94%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子余伴随作用",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E4%BD%99%E4%BC%B4%E9%9A%8F%E4%BD%9C%E7%94%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum coadjoint action",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20coadjoint%20action"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子余中心",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子余中心是量子群中由形变参数控制的代数结构。量子余中心的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n量子余中心需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 量子余中心还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子余中心",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E4%BD%99%E4%B8%AD%E5%BF%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子余中心",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E4%BD%99%E4%B8%AD%E5%BF%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum cocenter",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20cocenter"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "余三角霍普夫代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "余三角霍普夫代数是量子群中由形变参数控制的代数结构。余三角霍普夫代数的核心是通用R矩阵、编织同构和反向余乘法，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n余三角霍普夫代数需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 余三角霍普夫代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "余三角霍普夫代数",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%99%E4%B8%89%E8%A7%92%E9%9C%8D%E6%99%AE%E5%A4%AB%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "余三角霍普夫代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%99%E4%B8%89%E8%A7%92%E9%9C%8D%E6%99%AE%E5%A4%AB%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cotrigonometric hopf algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=cotrigonometric%20hopf%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "双交叉积",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "双交叉积描述代数和余代数结构之间的相容关系。双交叉积的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $\\langle ab,x\\rangle=\\langle a\\otimes b,\\Delta x\\rangle$，其中尖括号是配对，$\\Delta$ 是余乘法。乘法、余乘法和配对一同决定表示能否通过张量积组合。\n\n双交叉积在量子群中常用于连接群代数、函数代数和Drinfeld双。若再加入反极，就进入霍普夫代数；若加入 $R$ 矩阵或结合子，则会改变表示范畴的编织或结合约束。 双交叉积还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "双交叉积",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8C%E4%BA%A4%E5%8F%89%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "双交叉积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8C%E4%BA%A4%E5%8F%89%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "double crossed product",
+          "url": "https://en.wikipedia.org/w/index.php?search=double%20crossed%20product"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "马季德双",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "马季德双描述代数和余代数结构之间的相容关系。马季德双的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $\\langle ab,x\\rangle=\\langle a\\otimes b,\\Delta x\\rangle$，其中尖括号是配对，$\\Delta$ 是余乘法。乘法、余乘法和配对一同决定表示能否通过张量积组合。\n\n马季德双在量子群中常用于连接群代数、函数代数和Drinfeld双。若再加入反极，就进入霍普夫代数；若加入 $R$ 矩阵或结合子，则会改变表示范畴的编织或结合约束。 马季德双还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "马季德双",
+          "url": "https://www.baidu.com/s?wd=%E9%A9%AC%E5%AD%A3%E5%BE%B7%E5%8F%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "马季德双",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%A9%AC%E5%AD%A3%E5%BE%B7%E5%8F%8C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "majid double",
+          "url": "https://en.wikipedia.org/w/index.php?search=majid%20double"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "双代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "双代数描述代数和余代数结构之间的相容关系。双代数的核心是乘法、余乘法、反极和单位余单位的相容性，和同族术语的分界也主要落在这些数据上。常写成 $\\langle ab,x\\rangle=\\langle a\\otimes b,\\Delta x\\rangle$，其中尖括号是配对，$\\Delta$ 是余乘法。乘法、余乘法和配对一同决定表示能否通过张量积组合。\n\n双代数在量子群中常用于连接群代数、函数代数和Drinfeld双。若再加入反极，就进入霍普夫代数；若加入 $R$ 矩阵或结合子，则会改变表示范畴的编织或结合约束。 双代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "双代数",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8C%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "双代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8C%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "double algebraic",
+          "url": "https://en.wikipedia.org/w/index.php?search=double%20algebraic"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "余代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "余代数描述代数和余代数结构之间的相容关系。余代数的核心是乘法、余乘法、反极和单位余单位的相容性，和同族术语的分界也主要落在这些数据上。常写成 $\\langle ab,x\\rangle=\\langle a\\otimes b,\\Delta x\\rangle$，其中尖括号是配对，$\\Delta$ 是余乘法。乘法、余乘法和配对一同决定表示能否通过张量积组合。\n\n余代数在量子群中常用于连接群代数、函数代数和Drinfeld双。若再加入反极，就进入霍普夫代数；若加入 $R$ 矩阵或结合子，则会改变表示范畴的编织或结合约束。 余代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "余代数",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%99%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "余代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%99%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "co algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=co%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "群代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "群代数描述代数和余代数结构之间的相容关系。群代数的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $\\langle ab,x\\rangle=\\langle a\\otimes b,\\Delta x\\rangle$，其中尖括号是配对，$\\Delta$ 是余乘法。乘法、余乘法和配对一同决定表示能否通过张量积组合。\n\n群代数在量子群中常用于连接群代数、函数代数和Drinfeld双。若再加入反极，就进入霍普夫代数；若加入 $R$ 矩阵或结合子，则会改变表示范畴的编织或结合约束。 群代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。 群代数的符号还应和具体模型中的对象对应起来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "群代数",
+          "url": "https://www.baidu.com/s?wd=%E7%BE%A4%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "群代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BE%A4%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "group algebraic",
+          "url": "https://en.wikipedia.org/w/index.php?search=group%20algebraic"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "函数代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "函数代数描述代数和余代数结构之间的相容关系。函数代数的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $\\langle ab,x\\rangle=\\langle a\\otimes b,\\Delta x\\rangle$，其中尖括号是配对，$\\Delta$ 是余乘法。乘法、余乘法和配对一同决定表示能否通过张量积组合。\n\n函数代数在量子群中常用于连接群代数、函数代数和Drinfeld双。若再加入反极，就进入霍普夫代数；若加入 $R$ 矩阵或结合子，则会改变表示范畴的编织或结合约束。 函数代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "函数代数",
+          "url": "https://www.baidu.com/s?wd=%E5%87%BD%E6%95%B0%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "函数代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%BD%E6%95%B0%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "function algebraic",
+          "url": "https://en.wikipedia.org/w/index.php?search=function%20algebraic"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "有限量子群",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "有限量子群用非交换代数和余代数结构描述形变后的对称性。有限量子群的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $\\Delta(a)=\\sum a_{(1)}\\otimes a_{(2)}$，其中 $\\Delta$ 是余乘法，Sweedler记号表示同一元素在张量积中的展开。它既可看作量子包络代数，也可看作量子函数代数。\n\n有限量子群的关键不是单纯非交换乘法，而是余结构让表示可以张量相乘。$q$ 为根号时常出现有限张量范畴、小量子群和非半单现象；一般 $q$ 下则更接近经典李理论的形变。 有限量子群还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "有限量子群",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%89%E9%99%90%E9%87%8F%E5%AD%90%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "有限量子群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%89%E9%99%90%E9%87%8F%E5%AD%90%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "finite quantum group",
+          "url": "https://en.wikipedia.org/w/index.php?search=finite%20quantum%20group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "紧量子群",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "紧量子群用非交换代数和余代数结构描述形变后的对称性。紧量子群的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $\\Delta(a)=\\sum a_{(1)}\\otimes a_{(2)}$，其中 $\\Delta$ 是余乘法，Sweedler记号表示同一元素在张量积中的展开。它既可看作量子包络代数，也可看作量子函数代数。\n\n紧量子群的关键不是单纯非交换乘法，而是余结构让表示可以张量相乘。$q$ 为根号时常出现有限张量范畴、小量子群和非半单现象；一般 $q$ 下则更接近经典李理论的形变。 紧量子群还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "紧量子群",
+          "url": "https://www.baidu.com/s?wd=%E7%B4%A7%E9%87%8F%E5%AD%90%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "紧量子群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B4%A7%E9%87%8F%E5%AD%90%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "compact quantum group",
+          "url": "https://en.wikipedia.org/w/index.php?search=compact%20quantum%20group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "沃罗诺维奇代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "沃罗诺维奇代数是量子群中由形变参数控制的代数结构。沃罗诺维奇代数的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n沃罗诺维奇代数需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 沃罗诺维奇代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "沃罗诺维奇代数",
+          "url": "https://www.baidu.com/s?wd=%E6%B2%83%E7%BD%97%E8%AF%BA%E7%BB%B4%E5%A5%87%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "沃罗诺维奇代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B2%83%E7%BD%97%E8%AF%BA%E7%BB%B4%E5%A5%87%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "voronovich algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=voronovich%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子李代数",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子李代数是量子群中由形变参数控制的代数结构。量子李代数的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n量子李代数需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 量子李代数还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子李代数",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E6%9D%8E%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子李代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E6%9D%8E%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum lie algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20lie%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "量子对称对",
+      "source_file": "words/数学/噩梦模式/mathematical_quantum_groups_terms.csv",
+      "explanation_markdown": "量子对称对是量子群中由形变参数控制的代数结构。量子对称对的核心是形变参数、张量积表示和非交换坐标，和同族术语的分界也主要落在这些数据上。常写成 $E_iF_j-F_jE_i=\\delta_{ij}\\frac{K_i-K_i^{-1}}{q_i-q_i^{-1}}$，其中 $E_i,F_j,K_i$ 是生成元，$q_i$ 是形变参数。关系式把根系、权格和非交换乘法放在同一代数中。\n\n量子对称对需要同时看乘法、余乘法和表示范畴。只改变交换关系会得到量子代数；再加入余结构、反极或编织数据，才会影响张量积表示、可积模型和低维拓扑不变量。 量子对称对还要说明基域、形变参数和张量范畴约定；根号参数、编织结构或结合子会改变表示论后果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子对称对",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E5%AF%B9%E7%A7%B0%E5%AF%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子对称对",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E5%AF%B9%E7%A7%B0%E5%AF%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum symmetry pair",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20symmetry%20pair"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    }
+  ]
+}

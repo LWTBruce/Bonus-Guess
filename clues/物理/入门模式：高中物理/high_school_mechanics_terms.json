@@ -17,6 +17,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "particle"
+      ],
+      "explanation_markdown": "质点是把物体看成只有质量、没有大小和形状的理想模型。它像地图上的一个点，适合描述汽车、石块、行星这类尺寸远小于运动范围，或自身转动暂时不重要的情况；不适合研究车轮滚动、物体翻转等需要形状的现象。\n\n若用位置函数表示运动，可写 $x=x(t)$。这里 $x$ 是质点在选定坐标轴上的位置，$t$ 是时刻，$x(t)$ 表示位置随时间变化。这个模型把注意力集中到整体平动，使速度、加速度和受力关系都能用一个代表点来描述。例如计算汽车从甲地到乙地的时间时，车身长度可忽略；研究汽车入库或翻滚时，车的大小和朝向就不能丢掉。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "质点",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%A8%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "质点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%A8%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "particle",
+          "url": "https://en.wikipedia.org/w/index.php?search=particle"
+        }
       ]
     },
     {
@@ -35,6 +53,24 @@
         "x'=x-vt 惯性项",
         "车内 地面 转台",
         "reference frame"
+      ],
+      "explanation_markdown": "参考系是观察和描述运动时选定的“旁观者”和空间尺子。站在地面、车厢或电梯里看同一小球，得到的位置和速度可能不同，所以说运动或静止之前，必须先说明相对谁来观察。\n\n匀速直线相对运动中常用 $x'=x-ut$。这里 $x$ 是地面系中的位置，$x'$ 是随参考系运动后读到的位置，$u$ 是两个参考系的相对速度，$t$ 是时间。换参考系不会改变真实事件，却会改变坐标读数；高中力学通常优先选地面或随物体一起运动的参考系来让描述更简洁。河岸看船、船上看岸会得到不同速度，但相遇地点和钟表读数对应的是同一事件；参考系选得合适，运动描述会少很多无关细节。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "参考系",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%82%E8%80%83%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "参考系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%82%E8%80%83%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "reference frame",
+          "url": "https://en.wikipedia.org/w/index.php?search=reference%20frame"
+        }
       ]
     },
     {
@@ -53,6 +89,24 @@
         "Δr=r2-r1 s x-t图",
         "起末点 轨迹 坐标",
         "coordinate system"
+      ],
+      "explanation_markdown": "坐标系是在参考系中给空间装上刻度和方向的工具。它把“物体在哪里”变成可以计算的数，例如一条直线上的 $x$ 坐标，或平面中的横、纵坐标。选好原点和正方向后，同一点才有确定读数。\n\n位移常写成 $\\Delta \\vec r=\\vec r_2-\\vec r_1$。这里 $\\vec r_1$、$\\vec r_2$ 是初、末位置矢量，$\\Delta \\vec r$ 是从初位置指向末位置的变化。直角坐标系适合分解运动，沿斜面或圆周也可建立更贴合情景的坐标轴；关键是坐标只是记录方式，不是物体本身。坐标轴可以沿水平、竖直或斜面建立；一旦正方向确定，位移、速度和加速度的正负号才有明确物理含义。同一位置在不同坐标系中读数不同，实验记录要先写清原点和正方向，数据才可比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "坐标系",
+          "url": "https://www.baidu.com/s?wd=%E5%9D%90%E6%A0%87%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "坐标系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9D%90%E6%A0%87%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "coordinate system",
+          "url": "https://en.wikipedia.org/w/index.php?search=coordinate%20system"
+        }
       ]
     },
     {
@@ -71,6 +125,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "instant"
+      ],
+      "explanation_markdown": "时刻表示时间轴上的一个点，像钟表指针指到的某一瞬间。它回答“什么时候”，而不是“持续多久”。拍照时快门记录的是近似一个时刻，运动员从起跑到冲线则包含许多连续时刻。\n\n常把某一瞬间记作 $t=t_0$。这里 $t$ 是时间变量，$t_0$ 是选定的具体读数，例如 $3\\,\\mathrm{s}$。速度、位置等物理量在每个时刻都可以有对应值，如 $x(t_0)$ 表示该时刻的位置。区分时刻和时间间隔，能避免把瞬时状态与一段过程混在一起。列车在第几秒经过站牌、球在最高点的那一瞬，都属于时刻；它对应状态读数，不对应一段累积效果。运动图像上的一个横坐标点就是时刻；同一时刻可对应位置、速度等多个状态量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "时刻",
+          "url": "https://www.baidu.com/s?wd=%E6%97%B6%E5%88%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "时刻",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%97%B6%E5%88%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "instant",
+          "url": "https://en.wikipedia.org/w/index.php?search=instant"
+        }
       ]
     },
     {
@@ -89,6 +161,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "time interval"
+      ],
+      "explanation_markdown": "时间间隔表示两个时刻之间经历的长短，像从上课铃到下课铃之间经过的时间。它回答“用了多久”，可以用秒表测量，和起点读数本身无关；从 $2\\,\\mathrm{s}$ 到 $5\\,\\mathrm{s}$ 与从 $10\\,\\mathrm{s}$ 到 $13\\,\\mathrm{s}$ 都经历三秒。\n\n常写 $\\Delta t=t_2-t_1$。这里 $t_1$ 是开始时刻，$t_2$ 是结束时刻，$\\Delta t$ 是二者之差。平均速度、平均功率等都要用一段时间来定义；时间间隔只能为非负量，而时刻可以根据选定零点取正、取零或取负。跑完一圈用时、灯亮了几秒、碰撞持续多久都是时间间隔；它可长可短，却总是由两个时刻相减得到。平均量、振动周期和反应时间都依赖时间间隔；它体现过程长度，不体现开始读数大小。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "时间间隔",
+          "url": "https://www.baidu.com/s?wd=%E6%97%B6%E9%97%B4%E9%97%B4%E9%9A%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "时间间隔",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%97%B6%E9%97%B4%E9%97%B4%E9%9A%94"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "time interval",
+          "url": "https://en.wikipedia.org/w/index.php?search=time%20interval"
+        }
       ]
     },
     {
@@ -107,6 +197,24 @@
         "Δr=r2-r1 s x-t图",
         "起末点 轨迹 坐标",
         "position"
+      ],
+      "explanation_markdown": "位置说明物体在选定参考系和坐标系中的所在处。对一辆车，可以说它离路口向东 $200$ 米；对平面上的小球，可以用横、纵两个数标记。位置依赖原点和方向，换一套坐标，读数会变，但物体实际所在不变。\n\n平面中可写 $\\vec r=x\\vec i+y\\vec j$。这里 $\\vec r$ 是位置矢量，$x$、$y$ 是坐标读数，$\\vec i$、$\\vec j$ 是两个互相垂直的单位方向。位置是描述运动的起点，速度和位移都要从位置随时间的改变中得到；它不是路程，也不包含物体怎样走到那里。在地图、轨道或实验桌上记录位置时，原点换了，坐标数会整体改变；但两点相对关系和实际空间位置不会被坐标名字改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "位置",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%8D%E7%BD%AE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "位置",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%8D%E7%BD%AE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "position",
+          "url": "https://en.wikipedia.org/w/index.php?search=position"
+        }
       ]
     },
     {
@@ -125,6 +233,24 @@
         "Δr=r2-r1 s x-t图",
         "起末点 轨迹 坐标",
         "displacement"
+      ],
+      "explanation_markdown": "位移描述位置从初点到末点的整体变化，只关心“起点指向终点”的箭头。绕操场一圈回到起点，路程很长，但位移为零；从家到学校无论绕不绕路，位移都由家和学校的位置决定。\n\n位移写作 $\\Delta \\vec r=\\vec r_2-\\vec r_1$。这里 $\\vec r_1$ 是初位置，$\\vec r_2$ 是末位置，$\\Delta \\vec r$ 是有大小也有方向的矢量。一维直线运动中也常写 $\\Delta x=x_2-x_1$。它是平均速度和许多运动图像的核心量，能把复杂轨迹压缩成一次位置变化。位移适合描述从哪里到哪里这一净变化，尤其在折返运动中比路程更能反映终点相对起点的方向。位移有方向，能为正也能为负；直线往返时，后半程的位移会抵消前半程的一部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "位移",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%8D%E7%A7%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "位移",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%8D%E7%A7%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "displacement",
+          "url": "https://en.wikipedia.org/w/index.php?search=displacement"
+        }
       ]
     },
     {
@@ -143,6 +269,24 @@
         "Δr=r2-r1 s x-t图",
         "起末点 轨迹 坐标",
         "distance traveled"
+      ],
+      "explanation_markdown": "路程是物体实际走过轨迹的长度，像沿弯路走路时脚下累计经过的距离。它只有大小没有方向，不能因为回到起点而相互抵消；汽车里程表记录的就是接近路程的量。\n\n把轨迹分成许多小段时，可写 $s=\\sum \\Delta s_i$。这里 $s$ 是总路程，$\\Delta s_i$ 是第 $i$ 段轨迹的小长度，求和表示把所有小段加起来。路程通常大于或等于位移大小，只有沿同一直线且方向不反复时才相等。它常用于平均速率、能量消耗和实际行驶距离的描述。路程常对应计步、里程表和燃料消耗，因为这些量关心实际走过多少，而不是终点相对起点偏到哪边。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "路程",
+          "url": "https://www.baidu.com/s?wd=%E8%B7%AF%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "路程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B7%AF%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "distance traveled",
+          "url": "https://en.wikipedia.org/w/index.php?search=distance%20traveled"
+        }
       ]
     },
     {
@@ -161,6 +305,24 @@
         "v=Δx/Δt dx/dt v-t图",
         "时间 路程 方向",
         "velocity"
+      ],
+      "explanation_markdown": "速度描述位置变化的快慢和方向，是一个矢量。说汽车向东行驶每秒 $20$ 米，比只说“很快”更完整；若方向改变，即使速率不变，速度也已经改变。\n\n平均形式可写 $\\vec v=\\Delta\\vec r/\\Delta t$。这里 $\\vec v$ 是速度，$\\Delta\\vec r$ 是位移，$\\Delta t$ 是经历的时间间隔。瞬时速度则看很短时间内的位置变化，方向沿轨迹切线。速度连接运动图像和实际运动，能告诉我们物体下一瞬间大致会向哪里移动。速度的方向信息很关键：同样每秒十米，向东和向西代表完全不同的后续位置变化，不能只看数值大小。速度改变可能来自快慢改变，也可能只来自方向改变；曲线运动中这一点尤其明显。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "速度",
+          "url": "https://www.baidu.com/s?wd=%E9%80%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "速度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%80%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "velocity",
+          "url": "https://en.wikipedia.org/w/index.php?search=velocity"
+        }
       ]
     },
     {
@@ -179,6 +341,24 @@
         "v=Δx/Δt dx/dt v-t图",
         "时间 路程 方向",
         "average velocity"
+      ],
+      "explanation_markdown": "平均速度用一段时间内的总位移来概括运动效果，好比把曲折行程压缩成从起点直达终点的一次运动。它反映整体位置变化，不等于路程除以时间，也不一定代表过程中某一瞬间真实的速度。\n\n一维中常写 $\\bar v=\\Delta x/\\Delta t$。这里 $\\bar v$ 是平均速度，$\\Delta x$ 是末位置与初位置之差，$\\Delta t$ 是对应时间间隔。若物体折返，$\\Delta x$ 会带符号，平均速度也会体现方向。它适合描述整段运动的净效果，但会抹去中途快慢变化的细节。公交中途快慢变化很多时，平均速度只保留起点到终点的净位移效果；若终点回到起点，它可以等于零。同一段时间内路程很长而位移很小，平均速度仍可能很小；它更关心终点相对起点。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平均速度",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E5%9D%87%E9%80%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平均速度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E5%9D%87%E9%80%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "average velocity",
+          "url": "https://en.wikipedia.org/w/index.php?search=average%20velocity"
+        }
       ]
     },
     {
@@ -197,6 +377,24 @@
         "v=Δx/Δt dx/dt v-t图",
         "时间 路程 方向",
         "instantaneous velocity"
+      ],
+      "explanation_markdown": "瞬时速度表示物体在某一时刻的速度，像汽车仪表盘那一瞬间显示的读数。它不是一段路程的平均结果，而是把观察时间缩得非常短后得到的运动状态，方向沿轨迹在该点的切线。\n\n数学上写 $v=\\lim_{\\Delta t\\to0}\\Delta x/\\Delta t$。这里 $v$ 是瞬时速度，$\\Delta x$ 是短时间内的位置变化，$\\Delta t$ 是这段很短的时间，极限表示让时间间隔趋近于零。它能精细描述变速运动，也是加速度、动能等概念继续建立的基础。测速仪和频闪照片关注的正是瞬时速度；它能描述弯道上某一点的切向运动，而不是整段路程的平均快慢。频闪照片中相邻影像越密集，瞬时速度通常越小；切线方向给出那一刻的运动指向。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "瞬时速度",
+          "url": "https://www.baidu.com/s?wd=%E7%9E%AC%E6%97%B6%E9%80%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "瞬时速度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9E%AC%E6%97%B6%E9%80%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "instantaneous velocity",
+          "url": "https://en.wikipedia.org/w/index.php?search=instantaneous%20velocity"
+        }
       ]
     },
     {
@@ -215,6 +413,24 @@
         "v=Δx/Δt dx/dt v-t图",
         "时间 路程 方向",
         "speed"
+      ],
+      "explanation_markdown": "速率只表示运动快慢，不表示方向，是速度大小的标量。跑步机上显示的每小时多少千米、汽车仪表盘上的读数，都更接近速率；向东和向西以同样快慢运动，速度不同，速率相同。\n\n瞬时速率可写 $v=|\\vec v|$。这里 $v$ 是速率，$\\vec v$ 是速度矢量，竖线表示取大小。沿轨迹运动时，速率也可看作很短时间内路程与时间之比。它适合描述能量、行驶快慢和机械波传播速度等不需要方向或方向已另行说明的情形。速率常用于比较跑步、行车或波传播有多快；若另行给出轨迹方向，只用速率也能描述运动快慢。比较运动快慢时常用速率，例如限速牌给出的就是速率上限，而不指定行驶方向。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "速率",
+          "url": "https://www.baidu.com/s?wd=%E9%80%9F%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "速率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%80%9F%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "speed",
+          "url": "https://en.wikipedia.org/w/index.php?search=speed"
+        }
       ]
     },
     {
@@ -233,6 +449,24 @@
         "v=Δx/Δt dx/dt v-t图",
         "时间 路程 方向",
         "average speed"
+      ],
+      "explanation_markdown": "平均速率用总路程除以总时间，描述一段运动总体上走得多快。它不关心终点相对起点在哪里，所以绕操场一圈的平均速度可以为零，但平均速率一定反映实际跑过的长度。\n\n公式是 $\\bar v_s=s/\\Delta t$。这里 $\\bar v_s$ 是平均速率，$s$ 是实际路程，$\\Delta t$ 是经历的时间间隔。平均速率总是非负量，通常大于或等于平均速度的大小。它常用于交通行驶、训练配速和需要累计路程的运动描述，不能用来直接判断运动方向。长跑配速和车辆平均车速都接近平均速率概念；即使绕圈回到起点，它仍记录实际移动的累积程度。平均速率适合估计行程用时和体能消耗；它不告诉最后停在起点哪一侧。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平均速率",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E5%9D%87%E9%80%9F%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平均速率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E5%9D%87%E9%80%9F%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "average speed",
+          "url": "https://en.wikipedia.org/w/index.php?search=average%20speed"
+        }
       ]
     },
     {
@@ -251,6 +485,24 @@
         "a=dv/dt an=v²/r",
         "转弯半径 斜率",
         "acceleration"
+      ],
+      "explanation_markdown": "加速度描述速度变化的快慢，包括速度大小改变和方向改变两种情况。电梯启动时有加速度，匀速转弯的汽车虽然速率不变，也因速度方向不断改变而有加速度。\n\n平均加速度写作 $\\vec a=\\Delta\\vec v/\\Delta t$。这里 $\\vec a$ 是加速度，$\\Delta\\vec v$ 是速度矢量的变化，$\\Delta t$ 是经历时间。直线运动中，加速度方向决定速度增大还是减小；曲线运动中它还可以改变方向。它把受力和运动联系起来，是牛顿第二定律中的关键量。刹车时加速度方向通常与速度相反，转弯时加速度可几乎垂直速度；它看的是速度矢量如何变。加速度为零时速度保持不变；加速度不为零时，速度大小或方向至少有一种正在改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "加速度",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%A0%E9%80%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "加速度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%A0%E9%80%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "acceleration",
+          "url": "https://en.wikipedia.org/w/index.php?search=acceleration"
+        }
       ]
     },
     {
@@ -269,6 +521,24 @@
         "x-t图 v-t图 参数方程",
         "轨迹 图像",
         "uniform rectilinear motion"
+      ],
+      "explanation_markdown": "匀速直线运动是物体沿同一直线、速度大小和方向都不变的运动。它像理想情况下平直公路上保持恒定读数行驶的汽车，轨迹是直线，每相同时间内通过的位移相同。\n\n位置关系可写 $x=x_0+vt$。这里 $x$ 是时刻 $t$ 的位置，$x_0$ 是初位置，$v$ 是恒定速度，$t$ 是从初时刻起算的时间。它的加速度为零，位移时间图像是一条直线，斜率就是速度。这个模型常作为理解更复杂变速运动的基础参照。传送带稳定前进、无风中低速滑块近似匀速时，都可用这条直线图像；它是判断复杂运动是否变速的参照。它的速度时间图像是一条水平线，位移随时间均匀增加或减少，模型特征非常清楚。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "匀速直线运动",
+          "url": "https://www.baidu.com/s?wd=%E5%8C%80%E9%80%9F%E7%9B%B4%E7%BA%BF%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "匀速直线运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8C%80%E9%80%9F%E7%9B%B4%E7%BA%BF%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "uniform rectilinear motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=uniform%20rectilinear%20motion"
+        }
       ]
     },
     {
@@ -287,6 +557,24 @@
         "x-t图 v-t图 参数方程",
         "轨迹 图像",
         "nonuniform rectilinear motion"
+      ],
+      "explanation_markdown": "变速直线运动仍沿一条直线进行，但速度会随时间改变。电动车启动、刹车或上下坡时都可以近似看成这类运动；因为方向固定，位置变化可用一条坐标轴描述，复杂之处主要在快慢变化。\n\n一段过程的平均速度仍是 $\\bar v=\\Delta x/\\Delta t$。这里 $\\bar v$ 是平均速度，$\\Delta x$ 是位移，$\\Delta t$ 是时间间隔；若继续关注瞬间变化，就要用 $a=\\Delta v/\\Delta t$ 描述加速度。变速直线运动的图像不再只是简单直线，斜率或面积能反映速度和位移的变化。启动和制动过程都属于变速直线运动；同一直线坐标能把“越跑越快”或“逐渐停下”转成图像斜率变化。只要轨迹仍是一条线，就可先保留正负方向，再用图像或公式描述快慢变化。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "变速直线运动",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%98%E9%80%9F%E7%9B%B4%E7%BA%BF%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "变速直线运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%98%E9%80%9F%E7%9B%B4%E7%BA%BF%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "nonuniform rectilinear motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=nonuniform%20rectilinear%20motion"
+        }
       ]
     },
     {
@@ -305,6 +593,24 @@
         "x-t图 v-t图 参数方程",
         "轨迹 图像",
         "uniformly accelerated rectilinear motion"
+      ],
+      "explanation_markdown": "匀变速直线运动是加速度保持不变的直线运动。小车在光滑斜面上滑下、忽略空气阻力的竖直抛体，都可在一定范围内用这个模型描述；速度每过相同时间改变相同数值。\n\n核心关系有 $v=v_0+at$ 和 $x=x_0+v_0t+\\frac12at^2$。这里 $v_0$ 是初速度，$v$ 是末速度，$a$ 是恒定加速度，$t$ 是时间，$x_0$ 与 $x$ 是初、末位置。它把位置、速度和时间联系成一套公式，也让速度时间图像成为一条斜直线。它的特别之处在于加速度恒定，所以任意相等时间内速度变化相同；实验小车纸带常用来验证这种规律。打点计时器纸带上相邻点间距均匀增加时，就能看到匀加速直线运动的痕迹。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "匀变速直线运动",
+          "url": "https://www.baidu.com/s?wd=%E5%8C%80%E5%8F%98%E9%80%9F%E7%9B%B4%E7%BA%BF%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "匀变速直线运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8C%80%E5%8F%98%E9%80%9F%E7%9B%B4%E7%BA%BF%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "uniformly accelerated rectilinear motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=uniformly%20accelerated%20rectilinear%20motion"
+        }
       ]
     },
     {
@@ -323,6 +629,24 @@
         "h=1/2gt² v=gt",
         "真空 忽略阻力",
         "free fall motion"
+      ],
+      "explanation_markdown": "自由落体运动指物体只在重力作用下、从静止开始竖直下落的理想运动。它忽略空气阻力，因此轻重不同的物体在同一地点具有相同的下落加速度，这一点和日常纸片飘落的经验并不完全一样。\n\n取向下为正时，常写 $v=gt$、$h=\\frac12gt^2$。这里 $v$ 是下落 $t$ 后的速度，$h$ 是下落高度，$g$ 是重力加速度，近地面约为 $9.8\\,\\mathrm{m/s^2}$。自由落体是匀变速直线运动的特例，适合处理短时间、低高度、阻力可忽略的下落。羽毛在空气中落得慢，是阻力破坏了模型条件；在真空或阻力很小时，不同物体下落规律才接近一致。自由落体的初速度限定为零；若物体被向下抛出，就仍受重力加速，但不再叫自由落体。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自由落体运动",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E7%94%B1%E8%90%BD%E4%BD%93%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自由落体运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E7%94%B1%E8%90%BD%E4%BD%93%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "free fall motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=free%20fall%20motion"
+        }
       ]
     },
     {
@@ -341,6 +665,24 @@
         "x=v0x t y=v0y t-1/2gt²",
         "落点 飞行时间",
         "vertical upward throwing motion"
+      ],
+      "explanation_markdown": "竖直上抛运动是物体获得向上初速度后，只受重力作用的竖直运动。它先减速上升，到最高点速度瞬间为零，再加速下落；整个过程中加速度始终由重力决定，而不是到最高点才出现。\n\n取向上为正，可写 $v=v_0-gt$、$y=v_0t-\\frac12gt^2$。这里 $v_0$ 是初速度，$v$ 是时刻 $t$ 的速度，$y$ 是相对抛出点的位移，$g$ 是重力加速度。这个模型把上升和下落放在同一公式中，最高点只是速度为零的特殊时刻。抛出的球上升和下落共用同一个重力加速度；若回到抛出点，理想情况下落回速度大小等于初速度。最高点速度为零而加速度不为零，所以物体不会停在那里；下一瞬间会开始向下运动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "竖直上抛运动",
+          "url": "https://www.baidu.com/s?wd=%E7%AB%96%E7%9B%B4%E4%B8%8A%E6%8A%9B%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "竖直上抛运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AB%96%E7%9B%B4%E4%B8%8A%E6%8A%9B%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vertical upward throwing motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=vertical%20upward%20throwing%20motion"
+        }
       ]
     },
     {
@@ -359,6 +701,24 @@
         "Δr=r2-r1 s x-t图",
         "起末点 轨迹 坐标",
         "displacement time graph"
+      ],
+      "explanation_markdown": "位移时间图像用横轴表示时间、纵轴表示位移或位置，把运动过程画成一条曲线。读图时，曲线高低表示位置读数，曲线是否变陡表示运动快慢在改变；它不是物体在空间中真实走过的轨迹。\n\n图线上一小段的斜率常写 $k=\\Delta x/\\Delta t$。这里 $k$ 是斜率，$\\Delta x$ 是纵坐标位移变化，$\\Delta t$ 是横坐标时间变化；在 $x-t$ 图中，斜率对应速度。直线表示匀速，曲线表示速度变化。它把抽象的时间变化变成可观察的几何信息。图线向上或向下取决于正方向选择；同一时刻只能对应一个位置，所以它不是随手画出的空间轨迹图。若图线水平，位置不变；若图线向下倾斜，则表示沿所选负方向运动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "位移时间图像",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%8D%E7%A7%BB%E6%97%B6%E9%97%B4%E5%9B%BE%E5%83%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "位移时间图像",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%8D%E7%A7%BB%E6%97%B6%E9%97%B4%E5%9B%BE%E5%83%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "displacement time graph",
+          "url": "https://en.wikipedia.org/w/index.php?search=displacement%20time%20graph"
+        }
       ]
     },
     {
@@ -377,6 +737,24 @@
         "v=Δx/Δt dx/dt v-t图",
         "时间 路程 方向",
         "velocity time graph"
+      ],
+      "explanation_markdown": "速度时间图像用横轴表示时间、纵轴表示速度，适合观察物体快慢和方向随时间怎样变化。图线在时间轴上方表示速度取正方向，下方表示取负方向；图线的陡缓反映速度变化快慢。\n\n在 $v-t$ 图中，斜率 $a=\\Delta v/\\Delta t$ 表示加速度，图线与时间轴围成的有符号面积 $\\Delta x$ 表示位移。这里 $a$ 是加速度，$\\Delta v$ 是速度变化，$\\Delta t$ 是时间间隔，$\\Delta x$ 是位移。它能把匀速、加速、减速和折返直观地区分开。图线穿过时间轴表示速度方向改变；上、下方的面积会按正负抵消，正好对应位移而不是路程。匀加速运动在图上是斜直线；斜率的正负直接显示加速度方向。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "速度时间图像",
+          "url": "https://www.baidu.com/s?wd=%E9%80%9F%E5%BA%A6%E6%97%B6%E9%97%B4%E5%9B%BE%E5%83%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "速度时间图像",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%80%9F%E5%BA%A6%E6%97%B6%E9%97%B4%E5%9B%BE%E5%83%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "velocity time graph",
+          "url": "https://en.wikipedia.org/w/index.php?search=velocity%20time%20graph"
+        }
       ]
     },
     {
@@ -395,6 +773,24 @@
         "图线倾斜程度 面积 ΣF=ma",
         "轨迹 初末状态",
         "slope"
+      ],
+      "explanation_markdown": "斜率描述图线上升或下降的陡峭程度，是许多物理图像的“变化率”。同一条直线越陡，纵坐标随横坐标改变得越快；曲线上某一点的斜率则要看该点切线的方向。\n\n直线斜率写作 $k=\\Delta y/\\Delta x$。这里 $k$ 是斜率，$\\Delta y$ 是纵坐标变化，$\\Delta x$ 是横坐标变化。在位移时间图像中斜率表示速度，在速度时间图像中斜率表示加速度。斜率本身没有固定物理意义，它的单位和含义由坐标轴代表的物理量决定。同样的倾斜程度在不同图像上含义不同；看斜率前先看横纵轴单位，才能知道它代表速度、加速度还是别的量。曲线图像要看某点切线斜率，不能用整段连线随意代替瞬时变化率。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "斜率",
+          "url": "https://www.baidu.com/s?wd=%E6%96%9C%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "斜率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%96%9C%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "slope",
+          "url": "https://en.wikipedia.org/w/index.php?search=slope"
+        }
       ]
     },
     {
@@ -413,6 +809,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "interaction"
+      ],
+      "explanation_markdown": "相互作用表示两个物体彼此影响，力就是这种影响在力学中的表现。手推墙时，手给墙一个力，墙也给手一个力；地球吸引苹果，苹果也吸引地球，只是两者质量差别让运动效果很不一样。\n\n一对相互作用力满足 $\\vec F_{AB}=-\\vec F_{BA}$。这里 $\\vec F_{AB}$ 表示物体 $A$ 对 $B$ 的力，$\\vec F_{BA}$ 表示 $B$ 对 $A$ 的力，负号说明大小相等、方向相反。它们作用在不同物体上，不能直接相互抵消。理解相互作用能帮助区分受力分析中的“谁受力”和“谁施力”。判断相互作用时要成对寻找两个物体：桌推书时书也推桌，磁体吸铁钉时铁钉也吸磁体。相互作用可以接触发生，也可以像重力、磁力那样隔着距离发生，但总要涉及两个对象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相互作用",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E4%BA%92%E4%BD%9C%E7%94%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相互作用",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E4%BA%92%E4%BD%9C%E7%94%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "interaction",
+          "url": "https://en.wikipedia.org/w/index.php?search=interaction"
+        }
       ]
     },
     {
@@ -431,6 +845,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "force"
+      ],
+      "explanation_markdown": "力是物体之间相互作用的量度，能改变物体的运动状态，也能使物体发生形变。推门、拉弹簧、地球吸引物体都体现力的作用；力既有大小，又有方向，还要说明作用点。\n\n在质点力学中常用 $\\sum \\vec F=m\\vec a$。这里 $\\sum \\vec F$ 是物体所受合力，$m$ 是质量，$\\vec a$ 是加速度。力的单位是牛顿，方向决定加速度方向。单个力不一定立刻让物体运动，若多个力合力为零，物体仍可保持静止或匀速直线运动。画受力图时，每个力都要有施力物体；没有施力物体的“运动方向力”或“惯性力”在普通高中惯性系中不能随意添加。力的三要素是大小、方向和作用点；在质点问题中，作用点常被简化到同一个代表点。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "力",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "force",
+          "url": "https://en.wikipedia.org/w/index.php?search=force"
+        }
       ]
     },
     {
@@ -449,6 +881,24 @@
         "G=mg W=mg",
         "悬挂物 g",
         "gravity"
+      ],
+      "explanation_markdown": "重力是地球附近物体因受到地球吸引而具有的力，方向通常近似竖直向下。手中物体有“沉”的感觉，悬挂的重物拉直细线，都来自重力的作用；它和质量有关，但不是质量本身。\n\n近地面常写 $G=mg$。这里 $G$ 是重力大小，$m$ 是物体质量，$g$ 是当地重力加速度，约为 $9.8\\,\\mathrm{N/kg}$ 或 $9.8\\,\\mathrm{m/s^2}$。在一般高中问题中，重力作用点常取在重心。离地很高或不同星球上，$g$ 的数值会改变，因此同一质量的物体重力可不同。重力的方向在小范围内可看作竖直向下；登月时同一物体质量不变，但所受重力明显变小。重力常由弹簧测力计读出；读数变化可能来自加速度变化，不一定表示质量变化。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "重力",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8D%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "重力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8D%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gravity",
+          "url": "https://en.wikipedia.org/w/index.php?search=gravity"
+        }
       ]
     },
     {
@@ -467,6 +917,24 @@
         "F=kx",
         "伸长 压缩 劲度系数",
         "elastic force"
+      ],
+      "explanation_markdown": "弹力来自物体发生形变后想恢复原状的作用。压缩弹簧、拉长橡皮筋、桌面对书的支持，都可以看成接触物体形变产生的弹力；它通常垂直接触面，或沿绳、弹簧方向传递。\n\n理想弹簧在弹性限度内满足 $F=kx$。这里 $F$ 是弹力大小，$k$ 是劲度系数，表示弹簧软硬，$x$ 是伸长或压缩量。这个关系只适用于形变不过大的弹性范围。弹力的方向总是阻碍形变继续增大，是许多平衡、振动和机械能问题中的基本力。桌面支持力和绳中拉力都属于弹力，只是形变不一定肉眼可见；离开接触或绳松弛时弹力会消失。弹簧测力计能测力，正是利用弹力与形变量在一定范围内成正比的特点。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弹力",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B9%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弹力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B9%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "elastic force",
+          "url": "https://en.wikipedia.org/w/index.php?search=elastic%20force"
+        }
       ]
     },
     {
@@ -485,6 +953,24 @@
         "f≤μsN f=μN",
         "粗糙面 临界 匀速拖动",
         "friction force"
+      ],
+      "explanation_markdown": "摩擦力是接触面之间阻碍相对运动或相对运动趋势的力。鞋底能让人向前走，刹车能让车停下，黑板擦能擦掉粉笔字，都离不开摩擦；它的方向沿接触面，而不是垂直接触面。\n\n滑动时常写 $f=\\mu N$。这里 $f$ 是滑动摩擦力大小，$\\mu$ 是动摩擦因数，$N$ 是接触面的正压力。若物体还没有相对滑动，则可能是静摩擦力，大小会随外力调整。摩擦力可以阻碍运动，也可以提供前进所需的作用，关键看相对运动趋势。走路依靠地面对鞋底的静摩擦向前推，滑雪则希望减小滑动摩擦；同一类力可能阻碍运动，也可能帮助运动。摩擦因数不是普适常数，同一木块在玻璃、橡胶或冰面上表现会很不一样。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "摩擦力",
+          "url": "https://www.baidu.com/s?wd=%E6%91%A9%E6%93%A6%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "摩擦力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%91%A9%E6%93%A6%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "friction force",
+          "url": "https://en.wikipedia.org/w/index.php?search=friction%20force"
+        }
       ]
     },
     {
@@ -503,6 +989,24 @@
         "f≤μsN f=μN",
         "粗糙面 临界 匀速拖动",
         "static friction force"
+      ],
+      "explanation_markdown": "静摩擦力出现在两个接触面没有相对滑动、但存在相对滑动趋势时。人走路时脚底相对地面不滑，地面对脚的静摩擦力反而帮助人前进；斜面上静止的木块也常靠它保持不下滑。\n\n它的大小满足 $0\\le f_s\\le f_{s\\max}=\\mu_sN$。这里 $f_s$ 是静摩擦力，$f_{s\\max}$ 是最大静摩擦力，$\\mu_s$ 是静摩擦因数，$N$ 是正压力。静摩擦力不是一出现就等于最大值，而是按需要变化。只有达到极限仍无法阻止相对滑动时，物体才开始滑动。箱子没被推动时，静摩擦力常随推力增大而增大；超过最大静摩擦后，接触面才开始相对滑动。静摩擦力常在车轮滚动、人行走和传送带带动物体时提供运动所需的水平作用。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "静摩擦力",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%99%E6%91%A9%E6%93%A6%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "静摩擦力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%99%E6%91%A9%E6%93%A6%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "static friction force",
+          "url": "https://en.wikipedia.org/w/index.php?search=static%20friction%20force"
+        }
       ]
     },
     {
@@ -521,6 +1025,24 @@
         "f≤μsN f=μN",
         "粗糙面 临界 匀速拖动",
         "kinetic friction force"
+      ],
+      "explanation_markdown": "滑动摩擦力发生在两个接触面已经相对滑动时，方向总是阻碍相对滑动。木块在桌面上被推着前进，桌面对木块的滑动摩擦力通常向后；它会把一部分机械能转化为内能，使接触面发热。\n\n常用公式 $f=\\mu N$。这里 $f$ 是滑动摩擦力大小，$\\mu$ 是动摩擦因数，和接触材料、粗糙程度有关，$N$ 是正压力。这个公式适合普通干燥接触面的近似，不表示摩擦力一定与速度成正比。滑动摩擦力大小较稳定，是分析匀速拖动物体和刹车过程的常用模型。木块已经在桌面滑动时，摩擦力大小通常近似稳定；它的方向与接触面间相对滑动方向相反。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "滑动摩擦力",
+          "url": "https://www.baidu.com/s?wd=%E6%BB%91%E5%8A%A8%E6%91%A9%E6%93%A6%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "滑动摩擦力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%BB%91%E5%8A%A8%E6%91%A9%E6%93%A6%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kinetic friction force",
+          "url": "https://en.wikipedia.org/w/index.php?search=kinetic%20friction%20force"
+        }
       ]
     },
     {
@@ -539,6 +1061,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "normal force"
+      ],
+      "explanation_markdown": "支持力是接触面对物体的弹力，常表现为桌面对书、地面对人、斜面对木块的托举作用。它来源于接触处微小形变，方向通常垂直于接触面，而不是一定竖直向上。\n\n水平桌面上静止物体常有 $N=mg$。这里 $N$ 是支持力大小，$m$ 是物体质量，$g$ 是重力加速度；这个等式只在竖直方向平衡且没有其他竖直力时成立。支持力能改变物体运动，也能提供圆周运动所需的向心作用，大小需要由受力情况决定。斜面上的支持力垂直斜面而非竖直向上；电梯加速时，地面对人的支持力也会随运动状态改变。支持力由接触面形变产生，若物体离开桌面或轨道，支持力立即消失。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "支持力",
+          "url": "https://www.baidu.com/s?wd=%E6%94%AF%E6%8C%81%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "支持力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%94%AF%E6%8C%81%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "normal force",
+          "url": "https://en.wikipedia.org/w/index.php?search=normal%20force"
+        }
       ]
     },
     {
@@ -557,6 +1097,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "pressure force"
+      ],
+      "explanation_markdown": "压力在力学中常指一个物体垂直接触面压另一个物体的力，例如书压桌面、脚压地面。它和支持力是一对相互作用力中的两方：书给桌面压力，桌面给书支持力，二者作用在不同物体上。\n\n若进一步关心单位面积受力，可写 $p=F/S$。这里 $p$ 是压强，$F$ 是垂直作用在接触面上的压力大小，$S$ 是受力面积。压力本身是力，单位是牛顿；压强才表示分散到面积上的效果。增大面积能减小压强，这解释了雪橇、宽肩带等设计的意义。书对桌面的压力和桌面对书的支持力大小常相等，但属于不同物体上的力；讨论压痕时还要看受力面积。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "压力",
+          "url": "https://www.baidu.com/s?wd=%E5%8E%8B%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "压力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8E%8B%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pressure force",
+          "url": "https://en.wikipedia.org/w/index.php?search=pressure%20force"
+        }
       ]
     },
     {
@@ -575,6 +1133,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "tension force"
+      ],
+      "explanation_markdown": "拉力是通过绳、杆、弹簧或手等把物体向某方向牵引的力。细绳模型中，绳只沿自身方向拉物体，不能推物体；若绳轻且不可伸长，同一根理想绳上张力大小常处处相同。\n\n常把拉力记作 $T$，也可在受力方程中写 $T-ma=0$ 这类关系。这里 $T$ 表示绳或连接物施加的拉力，$m$ 是被拉物体质量，$a$ 是它沿所选方向的加速度。拉力的大小不是绳子“天然给定”的量，而由物体运动、约束和其他力共同决定。轻绳只能拉不能推，所以绳松时拉力为零；连接多个物体时，同一根理想绳常把它们的运动关系绑在一起。弹簧秤读数常显示拉力大小；若被拉物体加速，拉力一般不等于物体重力。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拉力",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%89%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拉力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%89%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tension force",
+          "url": "https://en.wikipedia.org/w/index.php?search=tension%20force"
+        }
       ]
     },
     {
@@ -593,6 +1169,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "resultant force"
+      ],
+      "explanation_markdown": "合力是多个力对同一物体产生的总效果，相当于用一个力替代它们后，物体运动改变相同。它不是把力的大小简单相加，而要同时考虑方向；相反方向的力会相互抵消一部分。\n\n矢量形式写作 $\\vec F_{\\text{合}}=\\sum_i\\vec F_i$。这里 $\\vec F_{\\text{合}}$ 是合力，$\\vec F_i$ 是第 $i$ 个力，求和表示按矢量规则相加。合力决定质点的加速度，满足 $\\vec F_{\\text{合}}=m\\vec a$。在平衡状态下合力为零，但物体仍可能保持原来的匀速直线运动。两个相等反向力合力为零时，物体可以静止，也可以匀速前进；合力看的是同一物体上所有力的总效果。合力为零不表示没有受力，而表示各力效果互相抵消，物体的速度不会继续改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "合力",
+          "url": "https://www.baidu.com/s?wd=%E5%90%88%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "合力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%88%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "resultant force",
+          "url": "https://en.wikipedia.org/w/index.php?search=resultant%20force"
+        }
       ]
     },
     {
@@ -611,6 +1205,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "component force"
+      ],
+      "explanation_markdown": "分力是把一个力按选定方向拆开后得到的几个等效组成部分。斜向拉力既有水平方向的推动效果，也有竖直方向的提拉效果；把它分解后，各方向的运动或平衡关系更容易写清。\n\n若力 $F$ 与 $x$ 轴夹角为 $\\theta$，常写 $F_x=F\\cos\\theta$、$F_y=F\\sin\\theta$。这里 $F_x$、$F_y$ 是两个互相垂直方向上的分力，$F$ 是原力大小，$\\theta$ 是与 $x$ 轴的夹角。分力不是真正多出来的新力，而是原力在不同方向上的等效表达。沿斜面方向的重力分力促使物体下滑，垂直斜面的分力影响支持力；分力方向通常按运动或约束来选。分力大小依赖分解方向；换一组坐标轴，同一个力的分力数值也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分力",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "component force",
+          "url": "https://en.wikipedia.org/w/index.php?search=component%20force"
+        }
       ]
     },
     {
@@ -629,6 +1241,24 @@
         "Δr=r2-r1 s x-t图",
         "起末点 轨迹 坐标",
         "composition of forces"
+      ],
+      "explanation_markdown": "力的合成是把作用在同一物体上的几个力按矢量规则合成一个合力。它保留这些力对物体平动的总效果，像把几个人同时推车的结果，用一个等效推力来表示。\n\n两个力合成时可用 $R^2=F_1^2+F_2^2+2F_1F_2\\cos\\theta$。这里 $R$ 是合力大小，$F_1$、$F_2$ 是两个分力大小，$\\theta$ 是它们夹角。夹角越小，合力通常越大；夹角为 $180^\\circ$ 时会相互抵消。力的合成强调方向，不能只做普通算术加法。两个人同向拉船和成角度拉船，合力效果不同；平行四边形图能直观看出夹角越大，合力未必越大。合成后的力应与原来多个力作用在同一研究对象上，否则不能随意合成为一个力。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "力的合成",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%9B%E7%9A%84%E5%90%88%E6%88%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "力的合成",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%9B%E7%9A%84%E5%90%88%E6%88%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "composition of forces",
+          "url": "https://en.wikipedia.org/w/index.php?search=composition%20of%20forces"
+        }
       ]
     },
     {
@@ -647,6 +1277,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "resolution of forces"
+      ],
+      "explanation_markdown": "力的分解是把一个力按需要拆成几个方向上的分力，使这些分力合成后仍等于原力。斜面上的重力常分解为沿斜面和垂直斜面的两个部分，这样能直接看出下滑趋势和压紧斜面的效果。\n\n常用关系是 $F_x=F\\cos\\theta$、$F_y=F\\sin\\theta$。这里 $F$ 是原力大小，$F_x$、$F_y$ 是选定两轴上的分力，$\\theta$ 是原力与 $x$ 轴的夹角。分解方向可以按坐标轴、斜面方向或运动方向选择；分力只是计算工具，不表示物体额外受到新的力。斜拉箱子时，拉力的水平分量拖动箱子，竖直分量会改变地面对箱子的支持力和摩擦力。分解常选沿运动方向和垂直运动方向，因为这样能分别处理加速和约束。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "力的分解",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%9B%E7%9A%84%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "力的分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%9B%E7%9A%84%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "resolution of forces",
+          "url": "https://en.wikipedia.org/w/index.php?search=resolution%20of%20forces"
+        }
       ]
     },
     {
@@ -665,6 +1313,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "parallelogram rule"
+      ],
+      "explanation_markdown": "平行四边形定则说明两个共点力怎样按矢量方式相加。把两个力从同一点画出，以它们为邻边作平行四边形，从公共起点指向对角顶点的对角线就是合力的方向和大小。\n\n定量关系可写 $R^2=F_1^2+F_2^2+2F_1F_2\\cos\\theta$。这里 $R$ 是合力，$F_1$、$F_2$ 是两个力，$\\theta$ 是夹角。这个公式来自余弦定理。它把“方向也要相加”变成可画、可算的规则，是理解力、位移、速度等矢量合成的共同图像。作图时两条邻边必须从同一点出发，对角线才表示合力；它同样适用于位移和速度的矢量相加。当两个力互相垂直时，平行四边形退化成矩形，合力大小可直接用勾股关系求出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平行四边形定则",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E8%A1%8C%E5%9B%9B%E8%BE%B9%E5%BD%A2%E5%AE%9A%E5%88%99%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平行四边形定则",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E8%A1%8C%E5%9B%9B%E8%BE%B9%E5%BD%A2%E5%AE%9A%E5%88%99"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "parallelogram rule",
+          "url": "https://en.wikipedia.org/w/index.php?search=parallelogram%20rule"
+        }
       ]
     },
     {
@@ -683,6 +1349,24 @@
         "ΣF=ma 等大反向",
         "受作用图 加速",
         "newtons first law"
+      ],
+      "explanation_markdown": "牛顿第一定律说明：不受外力或所受合力为零时，物体将保持静止或匀速直线运动状态。它纠正了“运动必须靠力维持”的直觉，力的作用不是维持速度，而是改变速度。\n\n可概括为 $\\sum\\vec F=0\\Rightarrow\\vec v=\\text{恒量}$。这里 $\\sum\\vec F$ 是合力，$\\vec v$ 是速度矢量，恒量表示大小和方向都不变。这个定律同时引出了惯性和惯性参考系的概念。现实中摩擦常让物体停下，是因为存在阻力，而不是因为没有力就不能运动。冰面上滑块能滑很远，是因为阻力小而不是需要持续推力；该定律给出了惯性系中自然运动的样子。它也是定义惯性参考系的依据；在加速车厢中直接套用时，需要格外小心。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "牛顿第一定律",
+          "url": "https://www.baidu.com/s?wd=%E7%89%9B%E9%A1%BF%E7%AC%AC%E4%B8%80%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "牛顿第一定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%9B%E9%A1%BF%E7%AC%AC%E4%B8%80%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "newtons first law",
+          "url": "https://en.wikipedia.org/w/index.php?search=newtons%20first%20law"
+        }
       ]
     },
     {
@@ -701,6 +1385,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "inertia"
+      ],
+      "explanation_markdown": "惯性是物体保持原有运动状态的性质。公交车突然刹车时，人会向前倾，是身体仍想保持原来的速度；桌布被快速抽走而杯子不易马上跟着动，也体现惯性。所有有质量的物体都有惯性。\n\n质量越大，惯性越大，可从 $a=F/m$ 看出。这里 $a$ 是加速度，$F$ 是作用在物体上的合力，$m$ 是质量；同样的力作用下，$m$ 越大，速度越不容易改变。惯性不是一种额外的力，也没有方向，它描述的是物体抗拒运动状态改变的程度。急刹车时身体前倾、甩掉雨伞上的水，都来自物体保持原运动状态的倾向；惯性大小只由质量决定。质量相同的物体惯性相同，与速度大小无关；高速物体难停还包含动量和动能因素。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "惯性",
+          "url": "https://www.baidu.com/s?wd=%E6%83%AF%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "惯性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%83%AF%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inertia",
+          "url": "https://en.wikipedia.org/w/index.php?search=inertia"
+        }
       ]
     },
     {
@@ -719,6 +1421,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "mass"
+      ],
+      "explanation_markdown": "质量表示物体含有物质多少的一种量度，也是惯性大小的量度。日常说一个书包重，常混合了重力和质量的感觉；严格说，质量不随地点改变，而重力会因重力加速度不同而改变。\n\n在牛顿第二定律中可由 $m=F/a$ 理解。这里 $m$ 是质量，$F$ 是合力大小，$a$ 是产生的加速度大小。质量越大，同样合力产生的加速度越小。它的单位是千克，是动量、动能、重力等许多力学量中的基本参数。高中范围内通常把普通物体的质量看成恒定。用天平比较质量时，本质上比较物体所含物质多少；它不同于重力，因此同一物体到月球上质量仍不变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "质量",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%A8%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "质量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%A8%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mass",
+          "url": "https://en.wikipedia.org/w/index.php?search=mass"
+        }
       ]
     },
     {
@@ -737,6 +1457,24 @@
         "ΣF=ma 等大反向",
         "受作用图 加速",
         "newtons second law"
+      ],
+      "explanation_markdown": "牛顿第二定律把力和运动状态改变定量联系起来：物体的加速度由所受合力决定，方向与合力方向相同。它说明力不是直接决定速度大小，而是决定速度怎样随时间改变。\n\n公式是 $\\sum\\vec F=m\\vec a$。这里 $\\sum\\vec F$ 是物体受到的合力，$m$ 是质量，$\\vec a$ 是加速度。若合力增大，加速度增大；若质量增大，同样合力产生的加速度减小。这个定律适用于惯性参考系，是分析直线运动、曲线运动和连接体运动的核心关系。推空车比推满车容易加速，正体现同样合力下质量越小加速度越大；方向关系也由这个定律给出。使用它时合力必须是同一物体所受全部外力的矢量和，不能混入别的物体受力。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "牛顿第二定律",
+          "url": "https://www.baidu.com/s?wd=%E7%89%9B%E9%A1%BF%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "牛顿第二定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%9B%E9%A1%BF%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "newtons second law",
+          "url": "https://en.wikipedia.org/w/index.php?search=newtons%20second%20law"
+        }
       ]
     },
     {
@@ -755,6 +1493,24 @@
         "ΣF=ma 等大反向",
         "受作用图 加速",
         "newtons third law"
+      ],
+      "explanation_markdown": "牛顿第三定律说明两个物体相互作用时，作用力和反作用力总是大小相等、方向相反，并且作用在不同物体上。人向后蹬地，地向前推人；火箭向后喷气，气体反过来推火箭前进。\n\n可写 $\\vec F_{AB}=-\\vec F_{BA}$。这里 $\\vec F_{AB}$ 是物体 $A$ 对 $B$ 的力，$\\vec F_{BA}$ 是物体 $B$ 对 $A$ 的力。负号表示方向相反。它们同时产生、性质相同，却不能作为同一物体上的平衡力相互抵消；分析受力时必须先看清研究对象。游泳者向后拨水才能前进，火箭向后喷气才能加速；反作用力不抵消推进效果，因为它作用在另一个物体上。这对力一定同性质，例如都是弹力或都是引力；它们不会因为一个物体运动就失去配对关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "牛顿第三定律",
+          "url": "https://www.baidu.com/s?wd=%E7%89%9B%E9%A1%BF%E7%AC%AC%E4%B8%89%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "牛顿第三定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%9B%E9%A1%BF%E7%AC%AC%E4%B8%89%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "newtons third law",
+          "url": "https://en.wikipedia.org/w/index.php?search=newtons%20third%20law"
+        }
       ]
     },
     {
@@ -773,6 +1529,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "action force"
+      ],
+      "explanation_markdown": "作用力是一对相互作用力中按某一说法选出的那一个力。例如手推箱子时，可以把手对箱子的推力叫作用力；但若研究手本身，也可以把箱子对手的力作为关注对象。名称取决于叙述角度。\n\n若记为 $\\vec F_{AB}$，表示物体 $A$ 对物体 $B$ 的作用力。这里下标 $AB$ 说明施力物体是 $A$，受力物体是 $B$。它必然伴随一个反作用力 $\\vec F_{BA}=-\\vec F_{AB}$。作用力不是一种新的力的种类，而是强调相互作用中的方向和对象关系。“作用力”这个名字只是在一对力中先选一方；换研究对象后，原来的反作用力也可以成为分析中的主要受力。在火箭喷气中，火箭推气体向后这一方可叫作用力，气体推火箭向前就是对应反作用。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "作用力",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%9C%E7%94%A8%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "作用力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%9C%E7%94%A8%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "action force",
+          "url": "https://en.wikipedia.org/w/index.php?search=action%20force"
+        }
       ]
     },
     {
@@ -791,6 +1565,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "reaction force"
+      ],
+      "explanation_markdown": "反作用力是与某个作用力同时出现的另一方力。手推墙时，墙对手的力就是手对墙推力的反作用力；它不是后来才产生的补偿，而是在相互接触或相互吸引时同时存在。\n\n关系式为 $\\vec F_{\\text{反}}=-\\vec F_{\\text{作}}$。这里 $\\vec F_{\\text{作}}$ 是选定的作用力，$\\vec F_{\\text{反}}$ 是对应反作用力，负号表示大小相等、方向相反。二者作用在不同物体上，因此不会互相抵消。这个概念常帮助解释行走、游泳、火箭推进等看似“自己推动自己”的现象。反作用力大小不因受力物体质量小就变小；小球撞墙时墙给小球的力与小球给墙的力同样大。反作用力常是推动物体运动的直接原因，如地面对脚的反作用力使人向前加速。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反作用力",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E4%BD%9C%E7%94%A8%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反作用力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E4%BD%9C%E7%94%A8%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "reaction force",
+          "url": "https://en.wikipedia.org/w/index.php?search=reaction%20force"
+        }
       ]
     },
     {
@@ -809,6 +1601,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "overweight"
+      ],
+      "explanation_markdown": "超重是物体对支持物或悬挂物的压力、拉力大于静止时重力的现象。电梯加速上升或减速下降时，人会感觉脚底更沉，这不是质量变大，而是支持力变大了。\n\n若电梯向上加速度为 $a$，常有 $N=m(g+a)$。这里 $N$ 是支持力或视重，$m$ 是质量，$g$ 是重力加速度，$a$ 是向上的加速度。超重关注的是接触力的变化，不表示重力本身增加。它在升降机、过山车和高速转弯中都能被感觉到。站在上升启动的电梯里，弹簧秤读数会变大；读数增加的是支持或拉力，不是人体质量或地球吸引突然变强。过山车谷底也会出现超重感觉，因为座椅需要提供更大的支持力来改变人的运动方向。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "超重",
+          "url": "https://www.baidu.com/s?wd=%E8%B6%85%E9%87%8D%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "超重",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B6%85%E9%87%8D"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "overweight",
+          "url": "https://en.wikipedia.org/w/index.php?search=overweight"
+        }
       ]
     },
     {
@@ -827,6 +1637,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "weightlessness"
+      ],
+      "explanation_markdown": "失重是物体对支持物或悬挂物的压力、拉力小于静止时重力的现象。电梯加速下降时，人会觉得脚底变轻；自由下落时，人与电梯一起下落，接触力可以接近零，出现完全失重。\n\n若取向下加速度为 $a$，可写 $N=m(g-a)$。这里 $N$ 是支持力或视重，$m$ 是质量，$g$ 是重力加速度，$a$ 是向下加速度。$N=0$ 时称完全失重。失重不等于没有重力，轨道飞船中的宇航员仍受地球引力，只是他们和飞船近似一起自由下落。自由落体中的弹簧秤读数可为零，但物体仍受重力并向下加速；失重说的是接触压力消失或减小。绕地飞船内的失重来自持续自由下落，宇航员和飞船都受地球引力并绕地运动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "失重",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%B1%E9%87%8D%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "失重",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%B1%E9%87%8D"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weightlessness",
+          "url": "https://en.wikipedia.org/w/index.php?search=weightlessness"
+        }
       ]
     },
     {
@@ -845,6 +1673,24 @@
         "ΣFx=0 ΣFy=0 Στ=0",
         "静止 匀速 支撑",
         "equilibrium state"
+      ],
+      "explanation_markdown": "平衡状态指物体保持静止或匀速直线运动，运动状态不再改变。它不要求没有力，而要求各个力的总效果为零；桌上的书受到重力和支持力，但仍处于静止平衡。\n\n质点平衡条件是 $\\sum\\vec F=0$。这里 $\\sum\\vec F$ 是物体所受合力。由牛顿第二定律 $\\sum\\vec F=m\\vec a$ 可知，合力为零时加速度 $\\vec a$ 为零，速度保持不变。平衡可以是静止，也可以是匀速直线运动；判断平衡要看运动状态是否改变，而不是看速度是否一定为零。吊灯静止时合力为零，高速直线匀速飞行的物体也可合力为零；平衡关注加速度是否为零。静态平衡和动态平衡都要求合力为零；区别只在速度是否本来就是零。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平衡状态",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E8%A1%A1%E7%8A%B6%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平衡状态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E8%A1%A1%E7%8A%B6%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "equilibrium state",
+          "url": "https://en.wikipedia.org/w/index.php?search=equilibrium%20state"
+        }
       ]
     },
     {
@@ -863,6 +1709,24 @@
         "ΣFx=0 ΣFy=0 Στ=0",
         "静止 匀速 支撑",
         "equilibrium of concurrent forces"
+      ],
+      "explanation_markdown": "共点力平衡是几个力的作用线交于同一点，且物体保持平衡的情况。悬挂小球受到重力和绳中拉力，多根绳拉住结点，都是常见图像；由于力可看作作用在同一点，转动影响通常不用考虑。\n\n平面内条件是 $\\sum F_x=0$、$\\sum F_y=0$。这里 $F_x$、$F_y$ 是各力在水平和竖直方向上的分量，求和为零表示两个方向都没有合力。三力平衡时，三个力的矢量可首尾相接成闭合三角形。这个概念把复杂受力转化为分方向的代数关系。三根绳拉住结点时，任意两力的合力必须与第三力反向等大；这使力三角形成为常用图像。结点、轻环和小球常可当作共点力平衡对象，因为各力作用线近似交在一点。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "共点力平衡",
+          "url": "https://www.baidu.com/s?wd=%E5%85%B1%E7%82%B9%E5%8A%9B%E5%B9%B3%E8%A1%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "共点力平衡",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%B1%E7%82%B9%E5%8A%9B%E5%B9%B3%E8%A1%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "equilibrium of concurrent forces",
+          "url": "https://en.wikipedia.org/w/index.php?search=equilibrium%20of%20concurrent%20forces"
+        }
       ]
     },
     {
@@ -881,6 +1745,24 @@
         "x-t图 v-t图 参数方程",
         "轨迹 图像",
         "curvilinear motion"
+      ],
+      "explanation_markdown": "曲线运动是轨迹不是直线的运动，速度方向会沿轨迹不断改变。抛出的篮球、转弯的汽车、绕地运动的卫星都属于曲线运动；即使速率保持不变，只要方向改变，速度就改变。\n\n曲率半径为 $r$ 的运动常有法向加速度 $a_n=v^2/r$。这里 $a_n$ 是指向弯曲内侧的加速度，$v$ 是速率，$r$ 是轨迹在该处的曲率半径。曲线运动的速度方向沿切线，加速度可分为改变快慢的切向部分和改变方向的法向部分，这让转弯、抛体和圆周运动能用统一图像理解。投篮轨迹弯曲，是因为速度方向一直在变；若某一瞬间合力与速度不共线，物体就会偏离直线。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "曲线运动",
+          "url": "https://www.baidu.com/s?wd=%E6%9B%B2%E7%BA%BF%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "曲线运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9B%B2%E7%BA%BF%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "curvilinear motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=curvilinear%20motion"
+        }
       ]
     },
     {
@@ -899,6 +1781,24 @@
         "Δr=r2-r1 s x-t图",
         "起末点 轨迹 坐标",
         "composition of motion"
+      ],
+      "explanation_markdown": "运动的合成是把几个简单运动叠加起来，得到物体相对某参考系的实际运动。船过河时，船相对水的运动和水流相对岸的运动合成，才是船相对岸的运动；平抛运动也可看成水平匀速和竖直匀变速的合成。\n\n矢量关系可写 $\\vec r=\\vec r_1+\\vec r_2$。这里 $\\vec r$ 是合运动位移，$\\vec r_1$、$\\vec r_2$ 是两个分运动位移；速度也有 $\\vec v=\\vec v_1+\\vec v_2$。合成遵循矢量加法，不是把路径长度直接相加。它让复杂运动拆成熟悉方向后再重新组合。雨滴相对车窗的斜线、船过河的偏移，都是不同参考运动合成后的结果；合速度决定观察到的实际方向。合运动和分运动具有等时性，这是船过河和平抛运动能分方向处理的关键。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "运动的合成",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%90%E5%8A%A8%E7%9A%84%E5%90%88%E6%88%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "运动的合成",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%90%E5%8A%A8%E7%9A%84%E5%90%88%E6%88%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "composition of motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=composition%20of%20motion"
+        }
       ]
     },
     {
@@ -917,6 +1817,24 @@
         "x-t图 v-t图 参数方程",
         "轨迹 图像",
         "resolution of motion"
+      ],
+      "explanation_markdown": "运动的分解是把一个实际运动按互相独立的方向拆成几个分运动。斜抛或平抛时，水平和竖直方向互不影响，可以分别用匀速直线运动和自由落体规律描述，再合成实际轨迹。\n\n若速度 $v$ 与水平夹角为 $\\theta$，可写 $v_x=v\\cos\\theta$、$v_y=v\\sin\\theta$。这里 $v_x$、$v_y$ 是水平和竖直分速度，$v$ 是速度大小，$\\theta$ 是夹角。分解不改变真实运动，只是换一种看法。只要坐标方向选得合适，受力和运动关系会明显简化。平抛运动能拆成水平和竖直两部分，是因为重力只改变竖直速度；这种拆法要服从同一时间约束。分运动不是额外发生的运动，而是同一运动在不同方向上的投影。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "运动的分解",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%90%E5%8A%A8%E7%9A%84%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "运动的分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%90%E5%8A%A8%E7%9A%84%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "resolution of motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=resolution%20of%20motion"
+        }
       ]
     },
     {
@@ -935,6 +1853,24 @@
         "x=v0x t y=v0y t-1/2gt²",
         "落点 飞行时间",
         "horizontal projectile motion"
+      ],
+      "explanation_markdown": "平抛运动是物体以水平初速度抛出后，只受重力作用的运动。水平方面没有加速度，竖直方面像自由落体一样加速下落，所以轨迹是一条抛物线；桌边飞出的钢球可近似看作平抛。\n\n取抛出点为原点，常写 $x=v_0t$、$y=\\frac12gt^2$。这里 $x$ 是水平位移，$y$ 是下落高度，$v_0$ 是水平初速度，$t$ 是时间，$g$ 是重力加速度。两个方向共用同一个时间，这一点把水平距离、下落高度和飞行时间联系起来。空气阻力明显时，模型会失准。从桌边飞出的球，水平速度决定落点远近，高度决定飞行时间；两个方向互不替代，却同时结束。落地速度由水平速度和竖直速度合成，方向斜向下，不再等于初始水平速度方向。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平抛运动",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E6%8A%9B%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平抛运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E6%8A%9B%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "horizontal projectile motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=horizontal%20projectile%20motion"
+        }
       ]
     },
     {
@@ -953,6 +1889,24 @@
         "v=ωr a=v²/r",
         "半径 周期",
         "circular motion"
+      ],
+      "explanation_markdown": "圆周运动是物体沿圆形轨迹运动的情况，方向不断改变。钟表指针端点、车轮边缘上一点、绳子拴着的小球转动，都是常见图像；圆心和半径决定了运动的几何框架。\n\n线速度和角速度满足 $v=\\omega r$。这里 $v$ 是沿切线方向的线速度大小，$\\omega$ 是角速度，$r$ 是圆周半径。圆周运动不一定速率恒定，但只要沿圆轨道运动，就需要指向圆心的加速度来改变速度方向。它把平动速度和转动角度变化联系起来。圆周运动必须先确定圆心和半径；转盘上同一角速度下，外缘点比靠近圆心的点走得更快。圆周运动的位移不是弧长，而是起点到终点的弦向量；这点常与路程区分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "圆周运动",
+          "url": "https://www.baidu.com/s?wd=%E5%9C%86%E5%91%A8%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "圆周运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9C%86%E5%91%A8%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "circular motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=circular%20motion"
+        }
       ]
     },
     {
@@ -971,6 +1925,24 @@
         "v=ωr a=v²/r",
         "半径 周期",
         "uniform circular motion"
+      ],
+      "explanation_markdown": "匀速圆周运动是物体沿圆周运动且速率保持不变的运动。虽然“匀速”听起来像不变，但这里不变的是速率，速度方向始终沿切线转动，所以速度矢量一直在改变。\n\n向心加速度为 $a_n=v^2/r=\\omega^2r$。这里 $a_n$ 指向圆心，$v$ 是线速度大小，$r$ 是半径，$\\omega$ 是角速度。它的合力也必须指向圆心，提供改变方向的作用。匀速圆周运动常用于分析卫星、转盘和绳系小球，是理解周期性转动的基本模型。小球被绳拉着匀速转动时，绳力指向圆心；一旦绳断，小球会沿断开瞬间的切线方向飞出。它的加速度大小不变但方向不断转动，因此不是匀变速运动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "匀速圆周运动",
+          "url": "https://www.baidu.com/s?wd=%E5%8C%80%E9%80%9F%E5%9C%86%E5%91%A8%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "匀速圆周运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8C%80%E9%80%9F%E5%9C%86%E5%91%A8%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "uniform circular motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=uniform%20circular%20motion"
+        }
       ]
     },
     {
@@ -989,6 +1961,24 @@
         "v=Δx/Δt dx/dt v-t图",
         "时间 路程 方向",
         "linear velocity"
+      ],
+      "explanation_markdown": "线速度描述圆周或曲线运动中物体沿轨迹移动的快慢，方向沿该点切线。圆盘上离圆心越远的点，在同样转速下每秒走过的弧长越大，因此线速度也越大。\n\n圆周运动中 $v=\\Delta s/\\Delta t=\\omega r$。这里 $v$ 是线速度大小，$\\Delta s$ 是一小段弧长，$\\Delta t$ 是时间间隔，$\\omega$ 是角速度，$r$ 是半径。线速度和普通平动速度单位相同，都是米每秒。它强调沿轨迹走了多快，而角速度强调转过角度有多快。同一转盘上各点角速度相同，但半径越大线速度越大；这解释了外缘点运动得更快的直观感觉。线速度方向每一刻都沿切线，圆周上相隔很近的两点速度方向也略有不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线速度",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E9%80%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线速度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E9%80%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear velocity",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20velocity"
+        }
       ]
     },
     {
@@ -1007,6 +1997,24 @@
         "ω=dθ/dt ω=2π/T",
         "转角 周期 转速",
         "angular velocity"
+      ],
+      "explanation_markdown": "角速度描述转动中角位置变化的快慢。秒针、风扇叶片和圆周运动的小球，每秒转过的角度可以不同；角速度越大，方向转动越快，但同一角速度下不同半径处的线速度并不相同。\n\n定义式为 $\\omega=\\Delta\\theta/\\Delta t$。这里 $\\omega$ 是角速度，$\\Delta\\theta$ 是转过的角度，通常用弧度表示，$\\Delta t$ 是时间间隔。匀速圆周运动中还可写 $\\omega=2\\pi/T$，$T$ 是周期。角速度把转动运动转化为和时间有关的可计算量。角速度用弧度每秒表示，不直接告诉轨迹长度；比较钟表秒针和分针时，它比线速度更贴近转动节奏。转过一整圈对应角度 $2\\pi$，用弧度表示能让 $v=\\omega r$ 形式最简洁。弧度制还能直接连接弧长和半径。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "角速度",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%92%E9%80%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "角速度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%92%E9%80%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "angular velocity",
+          "url": "https://en.wikipedia.org/w/index.php?search=angular%20velocity"
+        }
       ]
     },
     {
@@ -1025,6 +2033,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 相关量 衰减",
         "period"
+      ],
+      "explanation_markdown": "周期是完成一次重复运动所需的时间。钟摆来回一次、圆周运动转一圈、机械波相邻两个波峰经过同一点的时间间隔，都可以称为周期；它强调“重复一次要多久”。\n\n周期和频率满足 $T=1/f$。这里 $T$ 是周期，$f$ 是频率，表示每秒重复的次数。周期越大，重复越慢；频率越大，周期越小。周期的单位是秒，在圆周运动中也常与角速度联系为 $\\omega=2\\pi/T$。它是描述转动、振动和波动节奏的基本量。周期适合描述“多久重复一次”：单摆摆动一回、转盘转一圈、波形再现一次，都要先确定一次的含义。周期稳定的系统可用作计时标准，如摆钟和电子振荡器都依赖重复节奏。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "周期",
+          "url": "https://www.baidu.com/s?wd=%E5%91%A8%E6%9C%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "周期",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%91%A8%E6%9C%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "period",
+          "url": "https://en.wikipedia.org/w/index.php?search=period"
+        }
       ]
     },
     {
@@ -1043,6 +2069,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "frequency"
+      ],
+      "explanation_markdown": "频率表示单位时间内重复发生的次数。琴弦每秒振动次数越多，声音音调越高；转盘每秒转的圈数越多，转动越快。它描述的是重复的快慢，而不是每次运动的幅度大小。\n\n频率与周期关系为 $f=1/T$。这里 $f$ 是频率，$T$ 是完成一次周期运动所需时间。频率单位是赫兹，$1\\,\\mathrm{Hz}$ 表示每秒一次。在圆周运动中，角速度还可写 $\\omega=2\\pi f$。频率常用于振动、波、交流电和各种周期性现象的比较。频率越大，单位时间内重复次数越多；声音音调、交流电变化快慢和转盘转速都可用它来比较。频率和周期互为倒数，频率高意味着周期短，但并不说明振幅一定大。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "频率",
+          "url": "https://www.baidu.com/s?wd=%E9%A2%91%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "频率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%A2%91%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "frequency",
+          "url": "https://en.wikipedia.org/w/index.php?search=frequency"
+        }
       ]
     },
     {
@@ -1061,6 +2105,24 @@
         "a=dv/dt an=v²/r",
         "转弯半径 斜率",
         "centripetal acceleration"
+      ],
+      "explanation_markdown": "向心加速度是圆周运动中指向圆心、专门改变速度方向的加速度。匀速圆周运动里，物体速率不变，却仍有向心加速度；没有它，物体会沿切线方向飞出，而不是继续转弯。\n\n公式是 $a_n=v^2/r=\\omega^2r$。这里 $a_n$ 是向心加速度，$v$ 是线速度大小，$r$ 是半径，$\\omega$ 是角速度。半径越小或速度越大，转弯所需的方向改变越剧烈。向心加速度不是一种力，而是加速度的一个方向特征，由实际存在的重力、弹力、摩擦力等提供。汽车转弯越急或速度越快，乘客越容易感觉被甩向外侧；真正需要的是指向弯道内侧的向心加速度。向心加速度只改变方向；若同时有切向加速度，速率才会随时间改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "向心加速度",
+          "url": "https://www.baidu.com/s?wd=%E5%90%91%E5%BF%83%E5%8A%A0%E9%80%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "向心加速度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%91%E5%BF%83%E5%8A%A0%E9%80%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "centripetal acceleration",
+          "url": "https://en.wikipedia.org/w/index.php?search=centripetal%20acceleration"
+        }
       ]
     },
     {
@@ -1079,6 +2141,24 @@
         "平行四边形 正交分解 ΣF=ma",
         "箭头 夹角 受作用图",
         "centripetal force"
+      ],
+      "explanation_markdown": "向心力是使物体做圆周运动时，合力沿半径指向圆心的那一部分。它不是一种新性质的力，而是重力、弹力、摩擦力、万有引力等在某些情境中承担的角色；例如绳拉小球转动时，绳的拉力可提供向心力。\n\n匀速圆周运动中 $F_n=mv^2/r=m\\omega^2r$。这里 $F_n$ 是向心力大小，$m$ 是质量，$v$ 是线速度，$r$ 是半径，$\\omega$ 是角速度。向心力方向指向圆心，只改变速度方向，不直接改变速率。若所需向心力不足，物体就不能维持原来的圆周轨道。向心力要由实际力承担：卫星靠引力，汽车靠摩擦，圆锥摆靠绳的拉力分量；离开实际力就没有单独的向心力。向心力大小随速率平方增长，所以高速转弯对轮胎摩擦要求会急剧增大。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "向心力",
+          "url": "https://www.baidu.com/s?wd=%E5%90%91%E5%BF%83%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "向心力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%91%E5%BF%83%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "centripetal force",
+          "url": "https://en.wikipedia.org/w/index.php?search=centripetal%20force"
+        }
       ]
     },
     {
@@ -1097,6 +2177,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "universal gravitation"
+      ],
+      "explanation_markdown": "万有引力是任何两个有质量物体之间都存在的相互吸引。苹果落向地面、月球绕地球运动、行星绕太阳运动，本质上都与这种吸引有关；只是日常小物体之间的引力太弱，通常不易察觉。\n\n两个质点间引力大小为 $F=Gm_1m_2/r^2$。这里 $F$ 是引力，$G$ 是万有引力常量，$m_1$、$m_2$ 是两个物体质量，$r$ 是它们中心间距离。引力方向沿两物体连线，且总是吸引。这个规律把地面重力和天体运动联系起来，是理解卫星、潮汐和宇宙速度的基础。日常桌椅之间也有引力，只是太小而被支持力、摩擦等淹没；天体质量巨大时，引力就主导轨道运动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "万有引力",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%87%E6%9C%89%E5%BC%95%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "万有引力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%87%E6%9C%89%E5%BC%95%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "universal gravitation",
+          "url": "https://en.wikipedia.org/w/index.php?search=universal%20gravitation"
+        }
       ]
     },
     {
@@ -1115,6 +2213,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "law of universal gravitation"
+      ],
+      "explanation_markdown": "万有引力定律给出了两个有质量物体相互吸引的定量关系。它说明天上的行星和地上的落体遵循同一类力学规律，使“苹果下落”和“月球绕地”不再是两件互不相干的事。\n\n定律写作 $F=Gm_1m_2/r^2$。这里 $F$ 是引力大小，$G$ 是万有引力常量，$m_1$、$m_2$ 是两物体质量，$r$ 是它们间距。质量越大，引力越强；距离增大，引力按平方反比减小。高中阶段常把球形天体外部的引力近似看作质量集中在球心。距离加倍时引力变为四分之一，这使卫星高度、行星轨道和潮汐强弱都对距离非常敏感。球形天体外部可近似把质量集中在球心，卫星轨道计算常靠这个简化。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "万有引力定律",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%87%E6%9C%89%E5%BC%95%E5%8A%9B%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "万有引力定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%87%E6%9C%89%E5%BC%95%E5%8A%9B%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "law of universal gravitation",
+          "url": "https://en.wikipedia.org/w/index.php?search=law%20of%20universal%20gravitation"
+        }
       ]
     },
     {
@@ -1133,6 +2249,24 @@
         "a=dv/dt an=v²/r",
         "转弯半径 斜率",
         "gravitational acceleration"
+      ],
+      "explanation_markdown": "重力加速度表示物体在只受重力作用时速度改变的快慢。地球表面附近，忽略空气阻力，不同质量物体下落加速度近似相同，所以自由落体可用同一个 $g$ 描述。\n\n地球外部近似有 $g=GM/r^2$。这里 $g$ 是重力加速度，$G$ 是万有引力常量，$M$ 是地球质量，$r$ 是物体到地心的距离。近地面常取 $g\\approx9.8\\,\\mathrm{m/s^2}$。它既可出现在 $G=mg$ 中表示重力，也可出现在自由落体和竖直抛体公式中表示加速度。不同纬度和高度的 $g$ 略有差别；高中近地面问题常取固定值，是因为变化相对运动尺度很小。自由落体实验测得的是当地 $g$，它同时决定物体重力和下落加速度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "重力加速度",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "重力加速度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gravitational acceleration",
+          "url": "https://en.wikipedia.org/w/index.php?search=gravitational%20acceleration"
+        }
       ]
     },
     {
@@ -1151,6 +2285,24 @@
         "v=Δx/Δt dx/dt v-t图",
         "时间 路程 方向",
         "cosmic velocity"
+      ],
+      "explanation_markdown": "宇宙速度是航天器在天体引力场中达到特定运动状态所需的速度。它不是普通高速的泛称，而与绕地飞行、脱离地球引力束缚等目标有关；不同轨道半径和不同天体会对应不同速度。\n\n圆轨道速度常写 $v=\\sqrt{GM/r}$。这里 $v$ 是轨道速度，$G$ 是万有引力常量，$M$ 是中心天体质量，$r$ 是轨道半径。这个式子来自万有引力提供向心力。宇宙速度把引力和圆周运动联系起来，说明卫星不是“悬着不掉”，而是在不断自由下落中绕过地球。卫星入轨不是向上一直飞，而是在足够水平速度下不断下落又不断错过地面；轨道半径越大，所需圆轨道速度会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "宇宙速度",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%87%E5%AE%99%E9%80%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "宇宙速度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%87%E5%AE%99%E9%80%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cosmic velocity",
+          "url": "https://en.wikipedia.org/w/index.php?search=cosmic%20velocity"
+        }
       ]
     },
     {
@@ -1169,6 +2321,24 @@
         "v=Δx/Δt dx/dt v-t图",
         "时间 路程 方向",
         "first cosmic velocity"
+      ],
+      "explanation_markdown": "第一宇宙速度是物体贴近地球表面做圆周运动所需的最小水平发射速度。若空气阻力和地形都忽略，达到这个速度的物体会不断落向地球，却因水平速度足够大而绕地飞行。\n\n近地面可写 $v_1=\\sqrt{gR}$。这里 $v_1$ 是第一宇宙速度，$g$ 是地表重力加速度，$R$ 是地球半径，数值约 $7.9\\,\\mathrm{km/s}$。它来自重力提供向心力 $mg=mv_1^2/R$。这个概念说明轨道飞行需要的是足够大的切向速度，而不是持续向上的推力。低于这个速度的近地水平抛体会落回地面；达到它只是理想近地圆轨道条件，不包含空气阻力和发射过程损耗。它是近地圆轨道速度，不是任何卫星都必须保持的同一速度；高轨道速度会不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "第一宇宙速度",
+          "url": "https://www.baidu.com/s?wd=%E7%AC%AC%E4%B8%80%E5%AE%87%E5%AE%99%E9%80%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "第一宇宙速度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AC%AC%E4%B8%80%E5%AE%87%E5%AE%99%E9%80%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "first cosmic velocity",
+          "url": "https://en.wikipedia.org/w/index.php?search=first%20cosmic%20velocity"
+        }
       ]
     },
     {
@@ -1187,6 +2357,24 @@
         "Ek=1/2mv² Ep=mgh W=Fscosθ",
         "高度 速度 效率",
         "work"
+      ],
+      "explanation_markdown": "功描述力在物体发生位移过程中转移能量的多少。推箱子前进、重力使物体下落、摩擦力让滑块变慢，都可以用功来衡量能量变化；只有力在位移方向上有分量时才做功。\n\n恒力做功公式为 $W=Fs\\cos\\theta$。这里 $W$ 是功，$F$ 是力的大小，$s$ 是位移大小，$\\theta$ 是力与位移方向的夹角。功是标量，可正可负。正功通常使物体动能增加，负功通常使动能减少；力垂直位移时，功为零。手提书包水平匀速前进时，提力近似竖直而位移水平，所以提力对书包做功近似为零。若物体没有位移，再大的静力也不对物体做机械功，例如人托着静止重物不动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "功",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "功",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "work",
+          "url": "https://en.wikipedia.org/w/index.php?search=work"
+        }
       ]
     },
     {
@@ -1205,6 +2393,24 @@
         "Ek=1/2mv² Ep=mgh W=Fscosθ",
         "高度 速度 效率",
         "positive work"
+      ],
+      "explanation_markdown": "正功是力对物体做功为正的情况，表示力在位移方向上有同向分量。推车向前走时，人的推力通常做正功；物体下落时，重力也对它做正功，使动能增加。\n\n由 $W=Fs\\cos\\theta$ 可知，当 $0^\\circ\\le\\theta<90^\\circ$ 时 $W>0$。这里 $W$ 是功，$F$ 是力，$s$ 是位移，$\\theta$ 是力与位移夹角。正功不等于“有益的功”，而是能量转移方向的数学表述。它常对应外力把能量输入物体或把势能转化为动能的过程。起重机向上吊起货物时拉力做正功，重力做负功；正负号由力和位移夹角决定，不由人是否省力决定。正功会把能量输入物体的机械运动或势能系统，常与加速、提升、拉伸相联系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正功",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E5%8A%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正功",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E5%8A%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "positive work",
+          "url": "https://en.wikipedia.org/w/index.php?search=positive%20work"
+        }
       ]
     },
     {
@@ -1223,6 +2429,24 @@
         "Ek=1/2mv² Ep=mgh W=Fscosθ",
         "高度 速度 效率",
         "negative work"
+      ],
+      "explanation_markdown": "负功是力对物体做功为负的情况，表示力在位移方向上有反向分量。滑动摩擦力使木块减速，空气阻力使球速降低，这些力通常做负功，把机械能转化为内能等形式。\n\n仍用 $W=Fs\\cos\\theta$，当 $90^\\circ<\\theta\\le180^\\circ$ 时 $W<0$。这里 $W$ 是功，$F$ 是力，$s$ 是位移，$\\theta$ 是力与位移夹角。负功不表示功不存在，而表示能量从研究对象的机械运动中流出。它能解释刹车、阻尼和物体上升时重力势能增加的过程。汽车刹车时摩擦力做负功，使动能减少；物体上升时重力做负功，把动能转化为重力势能。负功常是阻力和重力在上升过程中的角色；它记录机械能减少或转入势能。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "负功",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%9F%E5%8A%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "负功",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%9F%E5%8A%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "negative work",
+          "url": "https://en.wikipedia.org/w/index.php?search=negative%20work"
+        }
       ]
     },
     {
@@ -1241,6 +2465,24 @@
         "Ek=1/2mv² Ep=mgh W=Fscosθ",
         "高度 速度 效率",
         "power"
+      ],
+      "explanation_markdown": "功率描述做功或能量转化的快慢。两台机器搬起同样重物，做功相同，但用时更短的机器功率更大；电动机、发动机和人体运动都常用功率比较输出能力。\n\n平均功率写作 $P=W/t$。这里 $P$ 是功率，$W$ 是在时间 $t$ 内完成的功，$t$ 是时间间隔。若力与速度同方向，瞬时功率还可写 $P=Fv$，其中 $F$ 是力，$v$ 是速度大小。功率的单位是瓦特，它不直接表示总能量多少，而表示单位时间内转移能量的速率。同样把水抽到楼顶，功率大的水泵用时更短；功率比较的是能量转移速度，不是一次最多能做多少功。瞬时功率能反映发动机某一刻输出能力，平均功率则适合比较整段过程。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "功率",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%9F%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "功率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%9F%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "power",
+          "url": "https://en.wikipedia.org/w/index.php?search=power"
+        }
       ]
     },
     {
@@ -1259,6 +2501,24 @@
         "Ek=1/2mv² Ep=mgh W=Fscosθ",
         "高度 速度 效率",
         "kinetic energy"
+      ],
+      "explanation_markdown": "动能是物体因运动而具有的能量。飞来的球能撞动木块，行驶的汽车需要刹车距离，都是因为运动物体带有动能；质量越大、速度越大，动能越大。\n\n质点平动动能为 $E_k=\\frac12mv^2$。这里 $E_k$ 是动能，$m$ 是质量，$v$ 是速率。速度平方说明速度加倍，动能变为四倍。动能是标量，与运动方向无关，但改变动能需要合力做功。它在动能定理、机械能守恒和碰撞分析中都很重要。高速小石子能击碎玻璃，低速大车也难以停下；动能同时受质量和速率影响，其中速率的影响更强。动能只与速率有关，向东和向西同样快的物体动能相同，但动量方向不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "动能",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%A8%E8%83%BD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "动能",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%A8%E8%83%BD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kinetic energy",
+          "url": "https://en.wikipedia.org/w/index.php?search=kinetic%20energy"
+        }
       ]
     },
     {
@@ -1277,6 +2537,24 @@
         "Ek=1/2mv² Ep=mgh W=Fscosθ",
         "高度 速度 效率",
         "gravitational potential energy"
+      ],
+      "explanation_markdown": "重力势能是物体因在重力场中具有一定高度而储存的能量。抬高的书、山上的水、起重机吊起的货物都具有重力势能；它能在下落过程中转化为动能或对外做功。\n\n近地面常写 $E_p=mgh$。这里 $E_p$ 是相对选定零势能面的重力势能，$m$ 是质量，$g$ 是重力加速度，$h$ 是高度。零势能面可以按需要选择，所以势能数值依赖参考位置，但势能变化 $\\Delta E_p=mg\\Delta h$ 才直接对应重力做功。高度越高，储存的可转化能量越多。选地面还是桌面作零势能面，会改变数值，却不改变从高处落下时势能减少多少。水电站利用高处水的重力势能发电，高差越大，同质量水可释放能量越多。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "重力势能",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8D%E5%8A%9B%E5%8A%BF%E8%83%BD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "重力势能",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8D%E5%8A%9B%E5%8A%BF%E8%83%BD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gravitational potential energy",
+          "url": "https://en.wikipedia.org/w/index.php?search=gravitational%20potential%20energy"
+        }
       ]
     },
     {
@@ -1295,6 +2573,24 @@
         "F=kx",
         "伸长 压缩 劲度系数",
         "elastic potential energy"
+      ],
+      "explanation_markdown": "弹性势能是弹簧、橡皮筋等弹性物体因形变而储存的能量。拉开的弓、压缩的弹簧、形变的跳板都能在恢复原状时释放能量，对其他物体做功。\n\n理想弹簧的弹性势能为 $E_p=\\frac12kx^2$。这里 $E_p$ 是弹性势能，$k$ 是劲度系数，$x$ 是相对原长的伸长或压缩量。形变量加倍，势能变为四倍。这个公式只适用于弹性限度内的理想弹簧；若材料发生永久形变，储存和释放能量的关系就不再简单。拉弓越满，弓储存的弹性势能越多；超过弹性限度后，形变不能完全恢复，公式就不再可靠。弹簧振子端点处弹性势能最大，经过平衡位置时弹性势能最小。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弹性势能",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B9%E6%80%A7%E5%8A%BF%E8%83%BD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弹性势能",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B9%E6%80%A7%E5%8A%BF%E8%83%BD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "elastic potential energy",
+          "url": "https://en.wikipedia.org/w/index.php?search=elastic%20potential%20energy"
+        }
       ]
     },
     {
@@ -1313,6 +2609,24 @@
         "Ek=1/2mv² Ep=mgh W=Fscosθ",
         "高度 速度 效率",
         "mechanical energy"
+      ],
+      "explanation_markdown": "机械能是动能和势能的总称，描述物体因运动和位置、形变而具有的能量。滑块下滑时重力势能减少、动能增加；弹簧振子中动能和弹性势能来回转化，这些都属于机械能内部的转换。\n\n常写 $E=E_k+E_p$。这里 $E$ 是机械能，$E_k$ 是动能，$E_p$ 是势能，可以是重力势能或弹性势能。若只有重力或弹力做功，机械能保持不变；若有摩擦或空气阻力，部分机械能会转化为内能。机械能观念能把许多运动过程看成能量账本的变化。摆球下落时势能减少、动能增加，到最低点速度最大；若空气阻力明显，总机械能会逐渐减少。机械能只包括宏观运动和势能部分，不把因摩擦升高的内能算作机械能。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "机械能",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%BA%E6%A2%B0%E8%83%BD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "机械能",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%BA%E6%A2%B0%E8%83%BD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mechanical energy",
+          "url": "https://en.wikipedia.org/w/index.php?search=mechanical%20energy"
+        }
       ]
     },
     {
@@ -1331,6 +2645,24 @@
         "Ek=1/2mv² Ep=mgh W=Fscosθ",
         "高度 速度 效率",
         "work energy theorem"
+      ],
+      "explanation_markdown": "动能定理说明合力对物体做的功等于物体动能的变化。它把力沿路径的作用结果直接和速度变化联系起来，适合处理位移已知、速度变化明显的过程，如刹车、下滑和被推加速。\n\n公式为 $W_{\\text{合}}=\\Delta E_k=E_{k2}-E_{k1}$。这里 $W_{\\text{合}}$ 是合力做的总功，$E_{k1}$、$E_{k2}$ 是初、末动能，$\\Delta E_k$ 是动能变化。合力做正功，动能增加；合力做负功，动能减少。它不要求力恒定，只要能求出总功即可使用。滑块被摩擦刹停时，摩擦力总功等于动能减少量；它直接连接路程上的做功和速度大小变化。多力同时作用时，可以分别求各力做功再相加，得到的总功对应动能变化。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "动能定理",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%A8%E8%83%BD%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "动能定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%A8%E8%83%BD%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "work energy theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=work%20energy%20theorem"
+        }
       ]
     },
     {
@@ -1349,6 +2681,24 @@
         "Ek=1/2mv² Ep=mgh W=Fscosθ",
         "高度 速度 效率",
         "law of conservation of mechanical energy"
+      ],
+      "explanation_markdown": "机械能守恒定律说明，在只有重力或弹力等保守力做功、没有摩擦等耗散作用时，系统的动能和势能总和保持不变。过山车理想下滑时，高度降低对应速度增大，就是机械能互相转化的图像。\n\n常写 $E_{k1}+E_{p1}=E_{k2}+E_{p2}$。这里 $E_k$ 是动能，$E_p$ 是势能，下标 $1$、$2$ 表示两个状态。守恒不表示动能或势能各自不变，而是总和不变。若外力做功或摩擦发热明显，机械能就不再守恒，需要把能量转移计入账本。理想单摆摆动中，最高点势能大、动能小，最低点动能大；只要阻力很小，总机械能近似不变。选同一零势能面比较初末状态即可，零点选择不会改变守恒判断。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "机械能守恒定律",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%BA%E6%A2%B0%E8%83%BD%E5%AE%88%E6%81%92%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "机械能守恒定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%BA%E6%A2%B0%E8%83%BD%E5%AE%88%E6%81%92%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "law of conservation of mechanical energy",
+          "url": "https://en.wikipedia.org/w/index.php?search=law%20of%20conservation%20of%20mechanical%20energy"
+        }
       ]
     },
     {
@@ -1367,6 +2717,24 @@
         "p=mv J=Δp",
         "碰前碰后 反冲 爆炸",
         "momentum"
+      ],
+      "explanation_markdown": "动量描述物体运动的“冲劲”，同时包含质量和速度。质量大的货车即使速度不高也难停，速度快的小球也能产生明显撞击效果；这些都体现动量的意义。\n\n动量定义为 $\\vec p=m\\vec v$。这里 $\\vec p$ 是动量，$m$ 是质量，$\\vec v$ 是速度。动量是矢量，方向与速度相同。它特别适合描述碰撞、爆炸、反冲等短时间相互作用，因为这些过程中力很大、时间很短，而总动量在外力冲量很小时常近似守恒。两辆车速度相同，货车更难停，是因为质量带来更大动量；动量方向也决定碰撞后系统可能朝哪边运动。动量守恒处理爆炸和反冲很方便，因为分离后各部分动量方向会互相制约。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "动量",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%A8%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "动量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%A8%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "momentum",
+          "url": "https://en.wikipedia.org/w/index.php?search=momentum"
+        }
       ]
     },
     {
@@ -1385,6 +2753,24 @@
         "p=mv J=Δp",
         "碰前碰后 反冲 爆炸",
         "impulse"
+      ],
+      "explanation_markdown": "冲量描述力在一段时间内对物体运动量的累积作用。拍球时手给球的力持续很短却能明显改变球速，安全气囊通过延长碰撞时间来减小平均力，这些都与冲量有关。\n\n恒力冲量写作 $\\vec J=\\vec F\\Delta t$，并满足 $\\vec J=\\Delta\\vec p$。这里 $\\vec J$ 是冲量，$\\vec F$ 是力，$\\Delta t$ 是作用时间，$\\Delta\\vec p$ 是动量变化。冲量是矢量，方向由力的方向决定。它强调力和时间共同决定运动状态改变。棒球被球棒击中时，接触时间短但力很大；手接球向后缓冲，是用更长时间获得同样动量变化以减小平均力。冲量单位可写牛秒，也等同于千克米每秒，正好与动量单位一致。力越大或作用越久，冲量越明显。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "冲量",
+          "url": "https://www.baidu.com/s?wd=%E5%86%B2%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "冲量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%86%B2%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "impulse",
+          "url": "https://en.wikipedia.org/w/index.php?search=impulse"
+        }
       ]
     },
     {
@@ -1403,6 +2789,24 @@
         "p=mv J=Δp",
         "碰前碰后 反冲 爆炸",
         "momentum theorem"
+      ],
+      "explanation_markdown": "动量定理说明物体所受合外力的冲量等于动量的变化。它把短时间内复杂的撞击过程简化为前后动量的比较，因此常用于击球、碰撞、缓冲和反冲现象。\n\n公式为 $\\vec I=\\sum\\vec F\\Delta t=\\Delta\\vec p$。这里 $\\vec I$ 是合力冲量，$\\sum\\vec F$ 是合外力，$\\Delta t$ 是作用时间，$\\Delta\\vec p$ 是动量变化。若同样的动量变化发生在更长时间内，平均力会更小，这解释了缓冲垫、安全带等装置的作用。安全带和气囊并不改变人最终要停下的动量变化，却能延长作用时间，从而降低人体受到的平均冲击力。变力作用时，力随时间图像下的面积表示冲量，仍对应动量改变。这让碰撞缓冲有了定量解释。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "动量定理",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%A8%E9%87%8F%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "动量定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%A8%E9%87%8F%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "momentum theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=momentum%20theorem"
+        }
       ]
     },
     {
@@ -1421,6 +2825,24 @@
         "Ek=1/2mv² Ep=mgh W=Fscosθ",
         "高度 速度 效率",
         "law of conservation of momentum"
+      ],
+      "explanation_markdown": "动量守恒定律说明，在系统所受外力合冲量为零或可以忽略时，系统总动量保持不变。两球碰撞、枪炮反冲、爆炸分离等过程中，内部相互作用很大，但它们不会改变系统总动量。\n\n可写 $\\sum\\vec p_{\\text{初}}=\\sum\\vec p_{\\text{末}}$。这里 $\\vec p$ 是各物体动量，求和表示系统总动量，初、末表示相互作用前后。动量守恒是矢量关系，通常要按方向分量处理。它不要求动能守恒，因此也适用于许多非弹性碰撞。两滑块在光滑轨道上相互弹开时，一个向左、一个向右；若初总动量为零，末总动量仍为零。系统如何划分很重要；把相互作用双方都包括进去，内部力才会成对抵消总冲量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "动量守恒定律",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%92%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "动量守恒定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%A8%E9%87%8F%E5%AE%88%E6%81%92%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "law of conservation of momentum",
+          "url": "https://en.wikipedia.org/w/index.php?search=law%20of%20conservation%20of%20momentum"
+        }
       ]
     },
     {
@@ -1439,6 +2861,24 @@
         "p=mv J=Δp",
         "碰前碰后 反冲 爆炸",
         "collision"
+      ],
+      "explanation_markdown": "碰撞是物体在短时间内发生强相互作用的过程，接触碰撞和某些远距离强相互作用都可用相似思想处理。碰撞前后速度可能突变，形变、发热、声音等会带走一部分能量。\n\n研究碰撞常用 $\\sum\\vec p_{\\text{前}}\\approx\\sum\\vec p_{\\text{后}}$。这里 $\\vec p$ 是各物体动量，前、后表示碰撞前后；近似成立的条件是外力冲量相对内部冲量很小。碰撞可分为弹性和非弹性，区别主要看动能是否守恒。这个概念适合处理小球、车辆和粒子相互作用的前后关系。台球相撞后速度方向突然改变，是内部接触力短时很大的结果；碰撞研究重心通常放在前后状态。碰撞时间短，形变却可能很大；安全设计常通过延长碰撞时间降低峰值力。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "碰撞",
+          "url": "https://www.baidu.com/s?wd=%E7%A2%B0%E6%92%9E%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "碰撞",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A2%B0%E6%92%9E"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "collision",
+          "url": "https://en.wikipedia.org/w/index.php?search=collision"
+        }
       ]
     },
     {
@@ -1457,6 +2897,24 @@
         "F=kx",
         "伸长 压缩 劲度系数",
         "elastic collision"
+      ],
+      "explanation_markdown": "弹性碰撞是碰撞前后系统总动量和总动能都保持不变的理想碰撞。两钢球近似相碰后弹开，可作为接近弹性碰撞的例子；真实碰撞中若形变恢复较好、发热损失很小，就可近似使用。\n\n条件写作 $\\sum\\vec p_1=\\sum\\vec p_2$ 且 $\\sum E_{k1}=\\sum E_{k2}$。这里 $\\vec p$ 是动量，$E_k$ 是动能，下标 $1$、$2$ 表示碰撞前后。动量守恒给出矢量约束，动能守恒给出能量约束。弹性碰撞强调能量没有转化为不可恢复的内能或形变能。理想钢球碰撞后能几乎弹回原速，是动能损失很小的表现；分子间碰撞也常近似看作弹性碰撞。一维等质量弹性碰撞中，常出现速度交换现象，这能在台球碰撞中近似看到。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弹性碰撞",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B9%E6%80%A7%E7%A2%B0%E6%92%9E%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弹性碰撞",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B9%E6%80%A7%E7%A2%B0%E6%92%9E"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "elastic collision",
+          "url": "https://en.wikipedia.org/w/index.php?search=elastic%20collision"
+        }
       ]
     },
     {
@@ -1475,6 +2933,24 @@
         "F=kx",
         "伸长 压缩 劲度系数",
         "inelastic collision"
+      ],
+      "explanation_markdown": "非弹性碰撞是动量仍可守恒，但机械能特别是动能不守恒的碰撞。橡皮泥相撞粘在一起、车辆碰撞后变形，都会把一部分动能转化为内能、声能或永久形变能。\n\n动量关系仍常写 $\\sum\\vec p_{\\text{前}}=\\sum\\vec p_{\\text{后}}$。这里 $\\vec p$ 是各物体动量，前、后表示碰撞前后；但一般有 $E_{k\\text{后}}<E_{k\\text{前}}$。若碰后物体粘在一起共同运动，称完全非弹性碰撞。它说明动量守恒和机械能守恒是不同层次的条件，不能互相代替。橡皮泥相撞后粘在一起时，动能损失最明显；损失的动能并未消失，而转入形变、热和声音。完全非弹性碰撞后共同速度由总动量决定，而不是由谁的速度更大简单决定。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "非弹性碰撞",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%9E%E5%BC%B9%E6%80%A7%E7%A2%B0%E6%92%9E%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "非弹性碰撞",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%9E%E5%BC%B9%E6%80%A7%E7%A2%B0%E6%92%9E"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inelastic collision",
+          "url": "https://en.wikipedia.org/w/index.php?search=inelastic%20collision"
+        }
       ]
     },
     {
@@ -1493,6 +2969,24 @@
         "x-t图 v-t图 参数方程",
         "轨迹 图像",
         "simple harmonic motion"
+      ],
+      "explanation_markdown": "简谐运动是物体在平衡位置附近做周期性往复运动，且回复力与位移大小成正比、方向相反。弹簧振子和小角度单摆都可近似看成简谐运动；物体越偏离平衡位置，拉回去的作用越强。\n\n位移可写 $x=A\\cos(\\omega t+\\varphi)$。这里 $x$ 是相对平衡位置的位移，$A$ 是振幅，$\\omega$ 是角频率，$t$ 是时间，$\\varphi$ 是初相位。对应回复力常有 $F=-kx$，负号表示指向平衡位置。简谐运动的能量在动能和势能之间周期转换。弹簧振子越过平衡位置时速度最大，端点处速度为零；回复力和位移的反向比例是它区别于普通往复运动的关键。简谐运动的图像是正弦或余弦曲线，能用振幅、周期和相位完整描述。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "简谐运动",
+          "url": "https://www.baidu.com/s?wd=%E7%AE%80%E8%B0%90%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "简谐运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AE%80%E8%B0%90%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "simple harmonic motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=simple%20harmonic%20motion"
+        }
       ]
     },
     {
@@ -1511,6 +3005,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "amplitude"
+      ],
+      "explanation_markdown": "振幅表示振动中物体偏离平衡位置的最大距离。摆球摆得越开、弹簧振子拉得越远，振幅越大；它描述振动范围的大小，而不是振动快慢。\n\n对简谐运动 $x=A\\cos(\\omega t+\\varphi)$，$A$ 就是振幅。这里 $x$ 是位移，$\\omega$ 是角频率，$t$ 是时间，$\\varphi$ 是初相位。振幅总取非负值，单位与位移相同。理想无阻尼振动中振幅保持不变；有摩擦或空气阻力时，振幅会逐渐减小，对应机械能逐渐损失。振幅越大，振子离平衡位置最远处越远，储存的能量通常也越多；但频率是否改变要看具体振动系统。同一个振动系统中，振幅衰减通常意味着能量被阻尼耗散，例如摆幅越来越小。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "振幅",
+          "url": "https://www.baidu.com/s?wd=%E6%8C%AF%E5%B9%85%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "振幅",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8C%AF%E5%B9%85"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "amplitude",
+          "url": "https://en.wikipedia.org/w/index.php?search=amplitude"
+        }
       ]
     },
     {
@@ -1529,6 +3041,24 @@
         "图像斜率 面积 ΣF=ma",
         "轨迹 初末状态",
         "mechanical vibration"
+      ],
+      "explanation_markdown": "机械振动是物体或系统在平衡位置附近反复往返的运动。钟摆、音叉、弹簧振子和建筑物受风后的摆动都属于机械振动；它通常需要回复作用把物体拉回平衡位置。\n\n周期性振动常用 $T=1/f$ 描述。这里 $T$ 是周期，表示完成一次往复所需时间，$f$ 是频率，表示每秒往复次数。若位移还满足 $x=A\\cos(\\omega t+\\varphi)$，就是简谐振动。机械振动能传播形成机械波，也会因阻尼逐渐衰减；共振则发生在外界驱动频率接近固有频率时。机械振动不一定严格等幅，钟摆会因阻力慢慢停下；若周期稳定，它仍可用来计时或产生声音。机械振动要有平衡位置和回复作用；离开这两个条件，运动可能只是普通往返。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "机械振动",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%BA%E6%A2%B0%E6%8C%AF%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "机械振动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%BA%E6%A2%B0%E6%8C%AF%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mechanical vibration",
+          "url": "https://en.wikipedia.org/w/index.php?search=mechanical%20vibration"
+        }
       ]
     },
     {
@@ -1547,6 +3077,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "mechanical wave"
+      ],
+      "explanation_markdown": "机械波是机械振动在介质中的传播。绳上的波、水面波、声波都需要介质中的质点相互带动；介质质点只在平衡位置附近振动，能量和振动形式向外传递，而不是整团介质随波远距离搬走。\n\n波速、波长和频率满足 $v=\\lambda f$。这里 $v$ 是波速，$\\lambda$ 是波长，$f$ 是频率。波速主要由介质性质决定，频率由波源决定，波长随波速和频率变化。机械波可分为横波和纵波，是理解声音、地震波和水波的共同模型。绳波传到远处时，绳子各点只是上下振动，能量却沿绳传播；这正是波区别于物体整体搬运的地方。机械波不能在真空中传播，因为没有介质质点把振动传给下一部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "机械波",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%BA%E6%A2%B0%E6%B3%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "机械波",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%BA%E6%A2%B0%E6%B3%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mechanical wave",
+          "url": "https://en.wikipedia.org/w/index.php?search=mechanical%20wave"
+        }
       ]
     },
     {
@@ -1565,6 +3113,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "transverse wave"
+      ],
+      "explanation_markdown": "横波中介质质点的振动方向与波的传播方向垂直。抖动绳子时，波沿绳向前传播，而绳上各点上下振动，这就是横波图像；水面波也常表现出类似的上下起伏。\n\n可用 $y=A\\sin(kx-\\omega t)$ 描述理想横波。这里 $y$ 是质点偏离平衡位置的位移，$A$ 是振幅，$k$ 是波数，$x$ 是传播方向坐标，$\\omega$ 是角频率，$t$ 是时间。横波有波峰和波谷，能清楚显示波长。它强调振动方向和传播方向不是同一方向。绳上横波的波峰波谷最容易画出，但介质点并不沿波前进；它们只在垂直传播方向上来回振动。横波能表现偏振现象，因为垂直于传播方向的振动方向可以被选择。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "横波",
+          "url": "https://www.baidu.com/s?wd=%E6%A8%AA%E6%B3%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "横波",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A8%AA%E6%B3%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "transverse wave",
+          "url": "https://en.wikipedia.org/w/index.php?search=transverse%20wave"
+        }
       ]
     },
     {
@@ -1583,6 +3149,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "longitudinal wave"
+      ],
+      "explanation_markdown": "纵波中介质质点的振动方向与波的传播方向平行。声波在空气中传播时，空气分子沿声传播方向来回振动，形成疏密相间的区域；弹簧被推压后产生的疏密波也是典型图像。\n\n纵波同样满足 $v=\\lambda f$。这里 $v$ 是波速，$\\lambda$ 是相邻密部或疏部之间的距离，$f$ 是频率。与横波的波峰波谷不同，纵波常用密部和疏部表示。它说明波传播的是振动和能量，介质质点只在附近往复运动，不随波一直前进。声音在空气中传播时，空气分子形成密部和疏部；耳膜接收的是这种压强变化，而不是空气整体从声源飞来。纵波用疏密相间表示波形，压缩弹簧的一推一拉比波峰波谷更贴近它的图像。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "纵波",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%B5%E6%B3%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "纵波",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%B5%E6%B3%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "longitudinal wave",
+          "url": "https://en.wikipedia.org/w/index.php?search=longitudinal%20wave"
+        }
       ]
     },
     {
@@ -1601,6 +3185,24 @@
         "x=Acos(ωt+φ) f=1/T",
         "往复 周期 衰减",
         "wavelength"
+      ],
+      "explanation_markdown": "波长表示波形中相邻两个同相点之间的距离，例如相邻波峰、相邻波谷，或纵波中相邻密部的距离。它反映波在空间上重复一次需要多长，与周期描述时间上的重复相对应。\n\n波长、波速和频率满足 $\\lambda=v/f=vT$。这里 $\\lambda$ 是波长，$v$ 是波速，$f$ 是频率，$T$ 是周期。介质中波速一定时，频率越高，波长越短。波长决定干涉、衍射等现象的尺度，也影响声音音调和电磁波、机械波在空间中的分布。相邻两个波峰距离越大，空间重复越稀疏；在同一介质中，频率改变会让波长随之改变。测波长时要选同相点，波峰到相邻波峰可以，波峰到相邻波谷则不是一个波长。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "波长",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A2%E9%95%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "波长",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A2%E9%95%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wavelength",
+          "url": "https://en.wikipedia.org/w/index.php?search=wavelength"
+        }
       ]
     },
     {
@@ -1619,6 +3221,24 @@
         "v=Δx/Δt dx/dt v-t图",
         "时间 路程 方向",
         "wave speed"
+      ],
+      "explanation_markdown": "波速表示波形或振动状态在介质中传播的快慢。绳波传播得快慢取决于绳的张力和线密度，声波速度取决于介质性质和温度；它不是介质质点往复运动的速度。\n\n基本关系是 $v=\\lambda f$。这里 $v$ 是波速，$\\lambda$ 是波长，$f$ 是频率。也可写 $v=\\lambda/T$，其中 $T$ 是周期。波从一种介质进入另一种介质时，频率通常由波源决定而保持不变，波速改变会导致波长改变。波速帮助连接空间图像和时间节奏。声波在空气和钢轨中传播速度不同，是因为介质弹性和密度不同；波速改变时，波长会随之调整。波速由介质决定得更多，波源改变频率时，在同一介质中通常表现为波长改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "波速",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A2%E9%80%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "波速",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A2%E9%80%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wave speed",
+          "url": "https://en.wikipedia.org/w/index.php?search=wave%20speed"
+        }
       ]
     }
   ]

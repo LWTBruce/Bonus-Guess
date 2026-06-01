@@ -17,6 +17,24 @@
         "T V L H q_i 分析框架 动力学框架",
         "守恒律 运动方程",
         "theoretical mechanics"
+      ],
+      "explanation_markdown": "理论力学研究经典系统在约束下的运动规律，重点是把牛顿方程改写为坐标、能量、作用量和对称性的统一结构。核心关系可写作 $S=\\int_{t_1}^{t_2}L(q,\\dot q,t)\\,dt$，其中S是作用量，L是拉格朗日量，q为广义坐标，点表示时间导数。\n\n它不只关心单个力的分解，也关心变量选择、守恒律和相空间几何。直观上，理论力学是在问怎样用最少、最自然的自由度描述系统真实可达的运动。在实际建模中，它既包含牛顿式受力图，也包含拉氏、哈氏和辛几何语言；不同表述等价的条件，正是学习这门课时最需要辨认的边界。它的对象仍是经典尺度的物体和场，不处理量子测量本身；但其对称性、作用量和哈密顿结构会在后续量子理论中再次出现。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "理论力学",
+          "url": "https://www.baidu.com/s?wd=%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "理论力学",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "theoretical mechanics",
+          "url": "https://en.wikipedia.org/w/index.php?search=theoretical%20mechanics"
+        }
       ]
     },
     {
@@ -35,6 +53,24 @@
         "T V L H q_i 点状模型",
         "守恒律 运动方程",
         "particle"
+      ],
+      "explanation_markdown": "质点是把物体的大小、形状和自转暂时忽略，只保留质量与空间位置的理想模型。核心关系可写作 $\\mathbf p=m\\dot{\\mathbf r}$，其中m是质量，\\mathbf r(t)是位置矢量，\\mathbf p是动量。当物体尺度远小于运动距离，或转动自由度对问题无关时，质点模型能抓住平动动力学的核心。\n\n它不否认物体有结构，只是把结构效应放到更高阶近似中。这个近似常用于天体轨道、弹道和散射；若问题关心转动惯量、形变或内部能量分布，就必须从质点模型升级到刚体或连续体模型。例如研究地球绕太阳公转时可把地球视作质点，但研究昼夜、自转轴进动或潮汐形变时，这个近似就不再够用。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "质点",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%A8%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "质点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%A8%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "particle",
+          "url": "https://en.wikipedia.org/w/index.php?search=particle"
+        }
       ]
     },
     {
@@ -53,6 +89,24 @@
         "T V L H q_i 多体整体",
         "守恒律 运动方程",
         "system of particles"
+      ],
+      "explanation_markdown": "质点系由若干相互作用的质点组成，用来描述多体整体的运动和内部相对运动。核心关系可写作 $\\mathbf P=\\sum_a m_a\\dot{\\mathbf r}_a=M\\dot{\\mathbf R}$，其中\\mathbf P是总动量，m_a和\\mathbf r_a分别为第a个质点的质量和位置，\\mathbf R是质心。外力决定质心运动，内力主要改变相对运动和能量分配。\n\n它把碰撞、刚体近似和天体多体问题都纳入同一套动量与角动量守恒语言。质点系的难点在于整体变量与内部变量同时存在；质心方程处理外部运动，相对坐标处理振动、碰撞和相互作用势能。内力成对出现，不改变总动量，却会改变内部能量和构型；这使质点系成为从单粒子到刚体、连续介质的中间模型。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "质点系",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%A8%E7%82%B9%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "质点系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%A8%E7%82%B9%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "system of particles",
+          "url": "https://en.wikipedia.org/w/index.php?search=system%20of%20particles"
+        }
       ]
     },
     {
@@ -71,6 +125,24 @@
         "f q,t =0 Pfaff f q,t =0",
         "乘子 反力 独立变量",
         "constraint"
+      ],
+      "explanation_markdown": "约束规定系统允许出现的位形或速度关系，是从全空间中切出可达运动的条件。核心关系可写作 $f_\\alpha(q,t)=0$，其中f_\\alpha是第\\alpha个约束函数，q为广义坐标，t为时间。完整约束给出位形空间中的子流形，非完整约束还限制速度方向。\n\n直观上，约束不是额外的驱动力，而是轨道必须贴着走的几何或运动学边界。例如摆长固定、珠子沿环运动、轮子无滑动都属于约束语言；它决定能否减少坐标，也决定是否需要乘子处理反力。完整约束减少可独立选择的位置变量，非完整约束则更像限制“可走方向”；两者在自由度计数和变分处理中差别很大。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "约束",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%A6%E6%9D%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "约束",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%A6%E6%9D%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "constraint",
+          "url": "https://en.wikipedia.org/w/index.php?search=constraint"
+        }
       ]
     },
     {
@@ -89,6 +161,24 @@
         "f q,t =0 Pfaff f q,t =0 Q_i",
         "乘子 反力 独立变量",
         "constraint force"
+      ],
+      "explanation_markdown": "约束力是由约束条件施加的反作用，它保证系统留在允许的位形或速度集合上。核心关系可写作 $\\delta W_c=\\sum_a\\mathbf R_a\\cdot\\delta\\mathbf r_a$，其中\\mathbf R_a是第a个质点的约束力，\\delta\\mathbf r_a是允许虚位移，\\delta W_c为虚功。理想约束中这个虚功为零，因此方程可消去许多未知反力。\n\n约束力的方向常由几何限制决定，例如绳张力、支承反力和轨道法向力。在光滑约束中它通常垂直于允许位移，在非理想接触中还可能含摩擦分量；是否能从方程中消去，取决于虚功性质。求解时常先由运动方程和约束条件确定轨道，再回代求约束力；这与主动外力已知、反力由限制产生的角色相符。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "约束力",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%A6%E6%9D%9F%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "约束力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%A6%E6%9D%9F%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "constraint force",
+          "url": "https://en.wikipedia.org/w/index.php?search=constraint%20force"
+        }
       ]
     },
     {
@@ -107,6 +197,24 @@
         "qdot dq/dt p_i ∂L/∂qdot_i q_i",
         "Q_i δq_i",
         "generalized coordinate"
+      ],
+      "explanation_markdown": "广义坐标是描述系统独立位形的一组变量，不必是直角坐标中的长度分量。核心关系可写作 $\\mathbf r_a=\\mathbf r_a(q_1,\\ldots,q_s,t)$，其中\\mathbf r_a是质点位置，q_i是广义坐标，s为自由度数。选择合适的q_i能把约束自动吸收进坐标定义，例如摆角比水平竖直坐标更自然。\n\n它的价值在于让位形空间的几何结构直接进入动力学。它可以是长度、角度、面积参数甚至群坐标；坐标选得好，约束会成为定义域的一部分，而不是方程右端的额外未知量。同一系统可有多套广义坐标，好的坐标会让循环变量、守恒量或分离变量显露出来，差的坐标则让简单运动显得复杂。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "广义坐标",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%BF%E4%B9%89%E5%9D%90%E6%A0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "广义坐标",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%BF%E4%B9%89%E5%9D%90%E6%A0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "generalized coordinate",
+          "url": "https://en.wikipedia.org/w/index.php?search=generalized%20coordinate"
+        }
       ]
     },
     {
@@ -125,6 +233,24 @@
         "qdot dq/dt p_i ∂L/∂qdot_i qdot_i",
         "Q_i δq_i",
         "generalized velocity"
+      ],
+      "explanation_markdown": "广义速度是广义坐标沿真实运动路径的时间变化率，描述系统在位形空间中的切向速度。核心关系可写作 $\\dot q_i=dq_i/dt$，其中q_i为第i个广义坐标，点表示对时间t求导。它未必具有普通速度的长度量纲，例如角坐标的广义速度是角速度。\n\n拉格朗日量把q_i和\\dot q_i作为独立变量处理，从而清楚分离位形与运动趋势。在曲线坐标中，同一组广义速度会通过度量张量组合成真实动能；因此它是速度空间的坐标，不是简单的空间速度投影。动能通常是广义速度的二次型，系数就是质量矩阵或度量；这使速度变量携带了位形空间几何的信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "广义速度",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%BF%E4%B9%89%E9%80%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "广义速度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%BF%E4%B9%89%E9%80%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "generalized velocity",
+          "url": "https://en.wikipedia.org/w/index.php?search=generalized%20velocity"
+        }
       ]
     },
     {
@@ -143,6 +269,24 @@
         "qdot dq/dt p_i ∂L/∂qdot_i p_i",
         "Q_i δq_i",
         "generalized momentum"
+      ],
+      "explanation_markdown": "广义动量是与广义坐标共轭的动量变量，刻画拉格朗日量对相应速度的响应。核心关系可写作 $p_i=\\partial L/\\partial\\dot q_i$，其中p_i是q_i的共轭动量，L为拉格朗日量，\\dot q_i为广义速度。它不一定等于mv的某个直角分量；对角坐标，它可能就是角动量。\n\n共轭动量把速度空间与相空间连接起来，是哈密顿形式的入口。含磁矢势或非直角坐标时，正则动量与机械动量会分开；这一区分在哈密顿力学和量子正则量子化中尤其重要。在循环坐标情形中，对应广义动量守恒；因此它不仅是计算中间量，也是识别对称性和约化运动的线索。它也是相空间坐标的一半，缺少它就不能唯一确定哈密顿初态。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "广义动量",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%BF%E4%B9%89%E5%8A%A8%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "广义动量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%BF%E4%B9%89%E5%8A%A8%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "generalized momentum",
+          "url": "https://en.wikipedia.org/w/index.php?search=generalized%20momentum"
+        }
       ]
     },
     {
@@ -161,6 +305,24 @@
         "δW ΣQ_iδq_i Q_i",
         "非保守作用",
         "generalized force"
+      ],
+      "explanation_markdown": "广义力是实际力在某个广义坐标方向上的虚功系数，表示该坐标被主动作用推动的强度。核心关系可写作 $\\delta W=\\sum_i Q_i\\delta q_i$，其中Q_i是广义力，\\delta q_i是广义坐标的虚变动，\\delta W为虚功。它可以来自普通力、力矩或非保守作用，并随坐标选择而改变。\n\n这个定义避免逐个直角分量投影，让受限系统的外力以最适合的变量进入方程。若力来自势能，则Q_i可写成势能对q_i的负导数；若含阻尼或外驱动，它则作为非保守项进入拉格朗日方程。例如对转角坐标，广义力就是力矩；对长度坐标，它才像普通力。单位会随坐标量纲改变，这是广义力最易混淆之处。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "广义力",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%BF%E4%B9%89%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "广义力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%BF%E4%B9%89%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "generalized force",
+          "url": "https://en.wikipedia.org/w/index.php?search=generalized%20force"
+        }
       ]
     },
     {
@@ -179,6 +341,24 @@
         "T V L H q_i 独立数目",
         "守恒律 运动方程",
         "degree of freedom"
+      ],
+      "explanation_markdown": "自由度是系统位形所需的独立参数数目，也就是约束后仍可自由变化的方向数。核心关系可写作 $s=3N-k$，其中s是自由度，N为质点数，k为独立完整约束数。这个计数只在约束独立且完整时直接成立；非完整或退化约束需要更谨慎。\n\n自由度决定运动方程的数量，也决定相空间维数为2s。同一装置在不同理想化下自由度可能不同，例如刚体比质点多取向变量；自由度计数错误会直接导致方程数和初值数不匹配。初始条件通常需要给出每个自由度的位置和速度，或正则坐标和动量；这就是二阶动力学需要两倍数据的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自由度",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E7%94%B1%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自由度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E7%94%B1%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "degree of freedom",
+          "url": "https://en.wikipedia.org/w/index.php?search=degree%20of%20freedom"
+        }
       ]
     },
     {
@@ -197,6 +377,24 @@
         "S ∫Ldt δW ΣQ_iδq_i 虚变动",
         "驻值条件",
         "virtual displacement"
+      ],
+      "explanation_markdown": "虚位移是在同一时刻把系统从一个允许位形微小移到相邻允许位形的变分。核心关系可写作 $\\delta\\mathbf r_a=\\sum_i(\\partial\\mathbf r_a/\\partial q_i)\\delta q_i$，其中\\delta\\mathbf r_a是质点虚位移，q_i为广义坐标，\\delta q_i为独立变分。它不是实际时间演化，不含dt带来的速度改变，而是比较邻近可行位形的工具。\n\n虚位移使约束反力和主动作用能通过虚功原则被系统地区分。它必须满足瞬时约束，例如固定长度摆的虚位移沿圆弧切向；这个限制让约束反力常从虚功方程中自动消失。它常写作δ而不是d，强调这不是沿轨道的实际微分；时间冻结这一点，是理解虚功和作用量变分的关键。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "虚位移",
+          "url": "https://www.baidu.com/s?wd=%E8%99%9A%E4%BD%8D%E7%A7%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "虚位移",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%99%9A%E4%BD%8D%E7%A7%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "virtual displacement",
+          "url": "https://en.wikipedia.org/w/index.php?search=virtual%20displacement"
+        }
       ]
     },
     {
@@ -215,6 +413,24 @@
         "S ∫Ldt δW ΣQ_iδq_i 虚变动 功量",
         "驻值条件",
         "virtual work"
+      ],
+      "explanation_markdown": "虚功是力沿虚位移所做的一阶功，用来刻画相互作用对允许变分的贡献。核心关系可写作 $\\delta W=\\sum_a\\mathbf F_a\\cdot\\delta\\mathbf r_a=\\sum_iQ_i\\delta q_i$，其中\\mathbf F_a是实际力，\\delta\\mathbf r_a是虚位移，Q_i是广义力。它不是沿真实路径积累的能量，而是在固定时刻考察力对可行方向的投影。\n\n虚功语言特别适合处理约束系统和平衡判据。在静力学中虚功为零给出平衡条件，在动力学中与达朗贝尔惯性力结合；它关注可行方向的一阶响应，而非真实耗能。虚功可为正、负或零，却不代表真实过程中的热耗散；它是判别平衡和推导广义力的微分工具。判断虚功时只取允许虚位移方向，约束禁止的方向不参与比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "虚功",
+          "url": "https://www.baidu.com/s?wd=%E8%99%9A%E5%8A%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "虚功",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%99%9A%E5%8A%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "virtual work",
+          "url": "https://en.wikipedia.org/w/index.php?search=virtual%20work"
+        }
       ]
     },
     {
@@ -233,6 +449,24 @@
         "f q,t =0 Pfaff f q,t =0",
         "乘子 反力 独立变量",
         "ideal constraint"
+      ],
+      "explanation_markdown": "理想约束是约束反力对任意允许虚位移不做总虚功的约束模型。核心关系可写作 $\\sum_a\\mathbf R_a\\cdot\\delta\\mathbf r_a=0$，其中\\mathbf R_a为约束反力，\\delta\\mathbf r_a为允许虚位移。光滑面、不可伸长轻绳等理想化常满足这个条件。它的意义在于约束只限制运动方向，不向允许方向额外输入能量，从而可在拉格朗日方程中消去反力。\n\n光滑铰链、无摩擦导轨和不可伸长轻绳常被这样处理；若存在摩擦、主动控制或变形耗散，理想约束假设就会失效。“理想”不是说约束真实完美，而是说在所取模型中可忽略允许方向上的耗散和驱动；这是一条力学近似声明。这类假设常服务于主动力学，反力只负责维持几何限制。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "理想约束",
+          "url": "https://www.baidu.com/s?wd=%E7%90%86%E6%83%B3%E7%BA%A6%E6%9D%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "理想约束",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%90%86%E6%83%B3%E7%BA%A6%E6%9D%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ideal constraint",
+          "url": "https://en.wikipedia.org/w/index.php?search=ideal%20constraint"
+        }
       ]
     },
     {
@@ -251,6 +485,24 @@
         "S ∫Ldt δW ΣQ_iδq_i 变分判据 虚变动 功量",
         "驻值条件",
         "principle of virtual work"
+      ],
+      "explanation_markdown": "虚功原理给出受约束系统平衡的变分判据：在所有允许虚位移上主动力的虚功为零。核心关系可写作 $\\sum_a\\mathbf F_a\\cdot\\delta\\mathbf r_a=0$，其中\\mathbf F_a是主动力，\\delta\\mathbf r_a是满足约束的虚位移。若约束理想，未知约束反力不显式进入判据。\n\n它把静力平衡从力矢量相加改写为对所有可行方向的一阶响应为零。它适合求平衡位形和约束反力被消去后的条件；对非理想约束或含摩擦问题，必须把相应虚功项单独列入。对多个刚体或连杆机构，它能避免逐个支座列未知反力；最终留下的是主动载荷在独立虚位移方向上的平衡条件。它尤其适合铰链、滑轮和杆系，因为内部约束力可整体避开。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "虚功原理",
+          "url": "https://www.baidu.com/s?wd=%E8%99%9A%E5%8A%9F%E5%8E%9F%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "虚功原理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%99%9A%E5%8A%9F%E5%8E%9F%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "principle of virtual work",
+          "url": "https://en.wikipedia.org/w/index.php?search=principle%20of%20virtual%20work"
+        }
       ]
     },
     {
@@ -269,6 +521,24 @@
         "S ∫Ldt δW ΣQ_iδq_i 惯性力平衡 变分判据",
         "驻值条件",
         "d alembert principle"
+      ],
+      "explanation_markdown": "达朗贝尔原理把动力学问题改写成带惯性力的瞬时虚功平衡。核心关系可写作 $\\sum_a(\\mathbf F_a-m_a\\ddot{\\mathbf r}_a)\\cdot\\delta\\mathbf r_a=0$，其中m_a是质量，\\ddot{\\mathbf r}_a是加速度，\\mathbf F_a是主动力。它把牛顿方程与约束变分统一起来，惯性项像额外力一样参与虚功。\n\n由此可导出拉格朗日方程，并避免显式求许多理想约束反力。它把动力学转化为形式上的静力问题，因此可直接接到虚功原理；这一点是从牛顿方程走向分析力学的关键桥。在非惯性系中也可引入惯性力，但必须清楚哪些项来自坐标系加速；否则会把真实相互作用和惯性项混在一起。它不是新力定律，而是牛顿方程在允许虚位移上的重写。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "达朗贝尔原理",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%BE%E6%9C%97%E8%B4%9D%E5%B0%94%E5%8E%9F%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "达朗贝尔原理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%BE%E6%9C%97%E8%B4%9D%E5%B0%94%E5%8E%9F%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "d alembert principle",
+          "url": "https://en.wikipedia.org/w/index.php?search=d%20alembert%20principle"
+        }
       ]
     },
     {
@@ -287,6 +557,24 @@
         "d/dt ∂L/∂qdot_i ∂L/∂q_i L=T-V",
         "L Q_i",
         "lagrange equation"
+      ],
+      "explanation_markdown": "拉格朗日方程用广义坐标描述受约束系统的运动，是变分原理在有限自由度系统中的微分形式。核心关系可写作 $\\frac{d}{dt}\\frac{\\partial L}{\\partial\\dot q_i}-\\frac{\\partial L}{\\partial q_i}=Q_i$，其中L是拉格朗日量，q_i是广义坐标，Q_i是非保守广义力。当Q_i为零或包含在势能中时，它直接给出真实轨道。\n\n它比直角坐标受力分析更适合曲线坐标、多约束和多自由度耦合系统。对保守系统，Q_i通常为零；对阻尼、驱动或广义非保守力，它们保留在右端，从而不破坏坐标选择的便利。它给出的不是单独某个方向的力平衡，而是每个独立广义坐标上的动力学平衡；坐标耦合由L的偏导自动处理。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拉格朗日方程",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拉格朗日方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lagrange equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=lagrange%20equation"
+        }
       ]
     },
     {
@@ -305,6 +593,24 @@
         "T V L H q_i L=T-V",
         "守恒律 运动方程",
         "lagrangian"
+      ],
+      "explanation_markdown": "拉格朗日量是用广义坐标和广义速度表达动力学的函数，通常汇集动能、势能和约束结构。核心关系可写作 $L(q,\\dot q,t)=T-V$，其中q是广义坐标，\\dot q是广义速度，T为动能，V为势能。真实路径使作用量取驻值，由它得到欧拉拉格朗日方程。\n\n直观上，L不是总能量，而是决定路径选择的动力学核，在场论和对称性分析中也扮演同样角色。加上一个全时间导数不会改变运动方程，这说明L本身不是唯一的可观测量；真正固定的是作用量变分给出的动力学。同一个物理系统可有相差全导数的多个L，它们给出相同方程；这体现了拉氏描述中的规范自由。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拉格朗日量",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拉格朗日量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lagrangian",
+          "url": "https://en.wikipedia.org/w/index.php?search=lagrangian"
+        }
       ]
     },
     {
@@ -323,6 +629,24 @@
         "d/dt ∂L/∂qdot_i ∂L/∂q_i Iωdot+ω×Iω=N L=T-V",
         "L Q_i",
         "euler lagrange equation"
+      ],
+      "explanation_markdown": "欧拉拉格朗日方程是作用量驻值条件对应的局部微分方程。核心关系可写作 $\\frac{\\partial L}{\\partial q_i}-\\frac{d}{dt}\\frac{\\partial L}{\\partial\\dot q_i}=0$，其中L为拉格朗日量，q_i为广义坐标，\\dot q_i为广义速度。它来自对路径的任意小变分，端点固定时边界项消失。\n\n这个方程说明真实运动不是逐点任意选择，而是使整条路径的一阶作用量变化为零。它也适用于场论，只需把q_i换成场变量并把时间积分推广为空时积分；有限自由度力学是这一形式的低维版本。推导时对δq_i的任意性要求很强；若变分受端点、约束或边界条件限制，方程和边界项都要相应改变。其边界项还会决定自然边界条件，不能在变分中随意丢弃。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "欧拉拉格朗日方程",
+          "url": "https://www.baidu.com/s?wd=%E6%AC%A7%E6%8B%89%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "欧拉拉格朗日方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AC%A7%E6%8B%89%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "euler lagrange equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=euler%20lagrange%20equation"
+        }
       ]
     },
     {
@@ -341,6 +665,24 @@
         "qdot ∂H/∂p pdot -∂H/∂q H q,p,t",
         "{f,H} 辛矩阵",
         "hamilton principle"
+      ],
+      "explanation_markdown": "哈密顿原理说，在给定端点和时间区间内，真实轨道使作用量取驻值。核心关系可写作 $\\delta S=\\delta\\int_{t_1}^{t_2}L(q,\\dot q,t)\\,dt=0$，其中S是作用量，L是拉格朗日量，\\delta表示路径变分。这里的驻值可以是极小、极大或鞍点，不等同于总是最小。\n\n它把动力学从局部受力定律提升为整体路径原则，是拉氏力学和经典场论的共同语言。端点固定是推导中的关键条件，若边界可动会出现额外自然边界项；这使它能统一处理轨道方程和边界条件。它适合保守或可由势函数表示的系统；含干摩擦等非保守耗散时，通常要另加广义力或改用非保守变分框架。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "哈密顿原理",
+          "url": "https://www.baidu.com/s?wd=%E5%93%88%E5%AF%86%E9%A1%BF%E5%8E%9F%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "哈密顿原理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%93%88%E5%AF%86%E9%A1%BF%E5%8E%9F%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hamilton principle",
+          "url": "https://en.wikipedia.org/w/index.php?search=hamilton%20principle"
+        }
       ]
     },
     {
@@ -359,6 +701,24 @@
         "S ∫Ldt δW ΣQ_iδq_i 试探函数 变分判据",
         "驻值条件",
         "variational principle"
+      ],
+      "explanation_markdown": "变分原理通过比较邻近函数、路径或场构型，选择使某个泛函取驻值的物理对象。核心关系可写作 $\\delta J[y]=0$，其中J[y]是依赖函数y的泛函，\\delta表示一阶变分。在力学中J常是作用量，在光学中可对应光程，在连续介质中可对应能量泛函。\n\n它的直观意义是：允许的微小改变若不能一阶改进目标量，系统就满足相应方程。在力学中它选轨道，在小振动中选本征模，在场论中选场构型；同一个“泛函一阶不变”思想贯穿这些场景。泛函驻值的思想允许从整体条件推出局部方程；这也是为什么同一类数学形式会同时出现在力学、光学和场论中。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "变分原理",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%98%E5%88%86%E5%8E%9F%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "变分原理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%98%E5%88%86%E5%8E%9F%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "variational principle",
+          "url": "https://en.wikipedia.org/w/index.php?search=variational%20principle"
+        }
       ]
     },
     {
@@ -377,6 +737,24 @@
         "S ∫Ldt δW ΣQ_iδq_i S=∫Ldt",
         "驻值条件",
         "action"
+      ],
+      "explanation_markdown": "作用量是沿一条候选运动路径积累的拉格朗日量，是比较不同路径的泛函。核心关系可写作 $S[q]=\\int_{t_1}^{t_2}L(q,\\dot q,t)\\,dt$，其中S[q]表示路径q(t)的作用量，L为拉格朗日量。它的量纲是能量乘时间，与量子相位也有深层联系。\n\n经典真实轨道由\\delta S=0选出，因此作用量把局部运动方程压缩成对整条轨道的全局判据。在经典极限中，作用量相差远大于\\hbar的路径相位快速抵消，只剩驻相路径；这也解释了它与量子路径积分的联系。作用量的绝对值常依赖端点和规范项，但作用量差和驻值条件控制干涉与经典轨道；这使它兼具经典和量子意义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "作用量",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%9C%E7%94%A8%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "作用量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%9C%E7%94%A8%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "action",
+          "url": "https://en.wikipedia.org/w/index.php?search=action"
+        }
       ]
     },
     {
@@ -395,6 +773,24 @@
         "S ∫Ldt δW ΣQ_iδq_i S=∫Ldt",
         "驻值条件",
         "principle of least action"
+      ],
+      "explanation_markdown": "最小作用量原理常指真实路径使作用量驻值的思想，名称中的“最小”在现代用法中应理解为一阶稳定。核心关系可写作 $\\delta\\int L\\,dt=0$，其中L是拉格朗日量，积分沿候选路径进行，\\delta表示端点固定变分。\n\n许多系统得到的其实是鞍点而非严格极小。它的意义在于把牛顿方程、光路和场方程统一为泛函驻值问题。在短时间简单系统中驻值常为极小，但有焦点或长时间区间时可能变成鞍点；因此现代说法更重视驻值而非字面最小。初学时可把它想成“自然路径最不敏感”，而不是“花费最少能量”；能量最小和作用量驻值是两件不同事情。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最小作用量原理",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E5%B0%8F%E4%BD%9C%E7%94%A8%E9%87%8F%E5%8E%9F%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最小作用量原理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E5%B0%8F%E4%BD%9C%E7%94%A8%E9%87%8F%E5%8E%9F%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "principle of least action",
+          "url": "https://en.wikipedia.org/w/index.php?search=principle%20of%20least%20action"
+        }
       ]
     },
     {
@@ -413,6 +809,24 @@
         "T V L H q_i H",
         "守恒律 运动方程",
         "hamiltonian"
+      ],
+      "explanation_markdown": "哈密顿量是在相空间中生成时间演化的函数，常由拉格朗日量作勒让德变换得到。核心关系可写作 $H(q,p,t)=\\sum_i p_i\\dot q_i-L$，其中q_i为正则坐标，p_i为共轭动量，L为拉格朗日量。在许多自然系统中H等于总能量，但含显式时间依赖或特殊约束时需谨慎。\n\n它把动力学写成一阶正则方程，并凸显相空间几何。当约束定常且势能不含速度时，它通常就是总能量；若存在显式时间驱动，H本身会随时间改变并生成非自治相流。哈密顿量的偏导给出相流方向，而不是简单沿能量下降；保守系统在能量面上运动，体现了辛几何而非耗散优化。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "哈密顿量",
+          "url": "https://www.baidu.com/s?wd=%E5%93%88%E5%AF%86%E9%A1%BF%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "哈密顿量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%93%88%E5%AF%86%E9%A1%BF%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hamiltonian",
+          "url": "https://en.wikipedia.org/w/index.php?search=hamiltonian"
+        }
       ]
     },
     {
@@ -431,6 +845,24 @@
         "qdot ∂H/∂p pdot -∂H/∂q q,p q_i",
         "{f,H} 辛矩阵",
         "canonical coordinate"
+      ],
+      "explanation_markdown": "正则坐标是相空间中与正则动量配对的坐标变量，使哈密顿方程保持标准辛形式。核心关系可写作 $\\omega=\\sum_i dq_i\\wedge dp_i$，其中\\omega是辛二形式，q_i是正则坐标，p_i是对应正则动量。它们不是任意坐标标签，而是成对定义的相空间变量。\n\n使用正则坐标后，泊松括号、相体积守恒和正则变换都具有统一表达。一旦变量不是正则的，泊松括号和哈密顿方程会出现修正；因此判断坐标是否正则，是换变量后能否保留标准形式的核心。在电磁问题中，规范势会改变正则动量的表达，却不改变可观测轨道；正则变量更贴近哈密顿结构而非直观速度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正则坐标",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E5%88%99%E5%9D%90%E6%A0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正则坐标",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E5%88%99%E5%9D%90%E6%A0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "canonical coordinate",
+          "url": "https://en.wikipedia.org/w/index.php?search=canonical%20coordinate"
+        }
       ]
     },
     {
@@ -449,6 +881,24 @@
         "qdot ∂H/∂p pdot -∂H/∂q q,p p_i",
         "{f,H} 辛矩阵",
         "canonical momentum"
+      ],
+      "explanation_markdown": "正则动量是与正则坐标共轭的相空间变量，通常由拉格朗日量对广义速度求偏导得到。核心关系可写作 $p_i=\\partial L/\\partial\\dot q_i$，其中p_i是正则动量，L为拉格朗日量，\\dot q_i是广义速度。它在电磁场或曲线坐标中可与机械动量不同。\n\n正则动量的本质是相空间的一半坐标，决定泊松括号和哈密顿演化。它与坐标一起构成相空间点，因此初始条件应给(q,p)而非(q,\\dot q)；两者之间的转换由勒让德矩阵控制。正则动量出现在线性相位、泊松括号和正则量子化中；把它误认为普通机械动量，常会在磁场问题中出错。在量子化中，正则动量会变成与坐标满足对易关系的算符。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正则动量",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E5%88%99%E5%8A%A8%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正则动量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E5%88%99%E5%8A%A8%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "canonical momentum",
+          "url": "https://en.wikipedia.org/w/index.php?search=canonical%20momentum"
+        }
       ]
     },
     {
@@ -467,6 +917,24 @@
         "qdot ∂H/∂p pdot -∂H/∂q q,p",
         "{f,H} 辛矩阵",
         "canonical equation"
+      ],
+      "explanation_markdown": "正则方程是哈密顿力学的一阶运动方程，描述坐标和动量在相空间中的流。核心关系可写作 $\\dot q_i=\\partial H/\\partial p_i,\\quad \\dot p_i=-\\partial H/\\partial q_i$，其中H为哈密顿量，q_i和p_i是一对正则变量。它把二阶牛顿式动力学拆成相空间的一阶系统。\n\n符号中的正负号体现辛结构，保证哈密顿流保持相体积和泊松括号结构。由于方程是一阶的，坐标和动量以成对方式演化；相空间轨道不会相交，因为同一点的哈密顿向量场唯一确定。它们天然成对出现，不能只取坐标方程而丢掉动量方程；相空间的一阶结构正是哈氏描述优于单独二阶方程的地方。这种成对形式使能量面、相流和正则变换可以一起分析。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正则方程",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E5%88%99%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正则方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E5%88%99%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "canonical equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=canonical%20equation"
+        }
       ]
     },
     {
@@ -485,6 +953,24 @@
         "qdot ∂H/∂p pdot -∂H/∂q {f,g}",
         "{f,H} 辛矩阵",
         "poisson bracket"
+      ],
+      "explanation_markdown": "泊松括号是相空间函数之间的反对称双线性运算，刻画一个量沿另一个量生成的流如何变化。核心关系可写作 $\\{f,g\\}=\\sum_i(\\partial_{q_i}f\\,\\partial_{p_i}g-\\partial_{p_i}f\\,\\partial_{q_i}g)$，其中f和g是相空间函数，q_i和p_i为正则变量。哈密顿演化可写为\\dot f=\\{f,H\\}+\\partial f/\\partial t。它也是经典力学通向量子对易子的桥梁。\n\n它满足雅可比恒等式，因此相空间函数构成李代数；守恒量之间的闭合关系常揭示系统隐藏对称性。若某量与H的泊松括号为零且不显含时间，它就是守恒量；这个判据比逐项求导更结构化。坐标和动量满足基本关系{q_i,p_j}=δ_ij，所有正则结构都由它展开。它还直接给出正则变量的代数规则。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "泊松括号",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%8A%E6%9D%BE%E6%8B%AC%E5%8F%B7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "泊松括号",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%8A%E6%9D%BE%E6%8B%AC%E5%8F%B7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "poisson bracket",
+          "url": "https://en.wikipedia.org/w/index.php?search=poisson%20bracket"
+        }
       ]
     },
     {
@@ -503,6 +989,24 @@
         "平移 动量 时间 能量 转动 守恒读数 传热量",
         "守恒流",
         "conserved quantity"
+      ],
+      "explanation_markdown": "守恒量是在动力学演化中保持常数的相空间函数，反映约束、对称性或特殊可积结构。核心关系可写作 $\\frac{dF}{dt}=\\frac{\\partial F}{\\partial t}+\\{F,H\\}=0$，其中F是候选守恒量，H是哈密顿量，\\{F,H\\}为泊松括号。能量、动量和角动量都是典型例子。\n\n守恒量减少有效自由度，并把轨道限制在相空间中的低维曲面上。守恒量可来自显式对称，也可来自特殊势场的隐藏对称；开普勒问题中的额外矢量就是后者的典型例子。守恒量之间若足够多且互相对易，系统可能可积；若只有能量一个守恒量，高维系统仍可能出现复杂甚至混沌行为。守恒量的函数仍是守恒量，但独立守恒量才真正降低动力学维数。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "守恒量",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%88%E6%81%92%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "守恒量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%88%E6%81%92%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "conserved quantity",
+          "url": "https://en.wikipedia.org/w/index.php?search=conserved%20quantity"
+        }
       ]
     },
     {
@@ -521,6 +1025,24 @@
         "qdot dq/dt p_i ∂L/∂qdot_i q_i",
         "Q_i δq_i",
         "cyclic coordinate"
+      ],
+      "explanation_markdown": "循环坐标是不显含在拉格朗日量中的广义坐标，表示系统沿该方向具有平移式对称。核心关系可写作 $\\partial L/\\partial q_j=0\\Rightarrow p_j=\\partial L/\\partial\\dot q_j=\\mathrm{const}$，其中q_j为循环坐标，p_j为对应广义动量。角坐标若循环，对应角动量守恒；直线坐标若循环，对应线动量守恒。\n\n它把坐标缺席和守恒律直接联系起来。实际求解中，先找循环坐标可降低阶数；例如中心力问题的角坐标循环，立刻给出角动量守恒和面积速度不变。循环坐标可先被“消去”并留下一个常数参数，这种约化常把多变量问题化成有效势中的一维运动。这也是寻找守恒律的最快方式之一：看哪个坐标没有出现在L里。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "循环坐标",
+          "url": "https://www.baidu.com/s?wd=%E5%BE%AA%E7%8E%AF%E5%9D%90%E6%A0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "循环坐标",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BE%AA%E7%8E%AF%E5%9D%90%E6%A0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cyclic coordinate",
+          "url": "https://en.wikipedia.org/w/index.php?search=cyclic%20coordinate"
+        }
       ]
     },
     {
@@ -539,6 +1061,24 @@
         "qdot ∂H/∂p pdot -∂H/∂q q,p",
         "{f,H} 辛矩阵",
         "canonical transformation"
+      ],
+      "explanation_markdown": "正则变换是在相空间中更换变量而保持哈密顿方程形式不变的变换。核心关系可写作 $M^TJM=J$，其中M是线性变换矩阵，J为标准辛矩阵，上标T表示转置。非线性情形等价于保持辛二形式或泊松括号。\n\n它允许选取更适合问题的变量，例如作用角变量，同时不改变动力学的几何内容。它不同于普通坐标替换，因为新动量也要一起调整；若只改变q而随意保留p，辛结构通常会被破坏。正则变换可混合坐标和动量，例如从笛卡尔变量换到作用角变量；它改变观察坐标，却不改变哈密顿流的本质。变换前后若哈密顿量形式更简单，复杂轨道可能变成匀速相位运动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正则变换",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E5%88%99%E5%8F%98%E6%8D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正则变换",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E5%88%99%E5%8F%98%E6%8D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "canonical transformation",
+          "url": "https://en.wikipedia.org/w/index.php?search=canonical%20transformation"
+        }
       ]
     },
     {
@@ -557,6 +1097,24 @@
         "T V L H q_i 生成函数 函数关系",
         "守恒律 运动方程",
         "generating function"
+      ],
+      "explanation_markdown": "母函数是生成正则变换的标量函数，通过微分关系同时给出新旧正则变量。核心关系可写作 $p_i dq_i-P_i dQ_i=dF$，其中q_i,p_i是旧变量，Q_i,P_i是新变量，F为母函数。不同选择可得到四类常用母函数。它把“保持辛结构”的条件转化为一个全微分关系，是构造哈密顿雅可比理论和作用角变量的重要工具。\n\n母函数的类型取决于选择哪些新旧变量作为自变量；不同类型之间可由勒让德变换联系，物理变换却是同一个。实际使用母函数时，常通过偏导读出变换方程；一旦母函数选对，验证正则性就不必逐项检查辛矩阵条件。它常把检验变换的问题，转化为寻找合适生成函数的问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "母函数",
+          "url": "https://www.baidu.com/s?wd=%E6%AF%8D%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "母函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AF%8D%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "generating function",
+          "url": "https://en.wikipedia.org/w/index.php?search=generating%20function"
+        }
       ]
     },
     {
@@ -575,6 +1133,24 @@
         "qdot ∂H/∂p pdot -∂H/∂q H q,p,t",
         "{f,H} 辛矩阵",
         "hamilton jacobi equation"
+      ],
+      "explanation_markdown": "哈密顿雅可比方程把哈密顿动力学改写为一个关于作用函数的偏微分方程。核心关系可写作 $\\partial S/\\partial t+H(q,\\partial S/\\partial q,t)=0$，其中S是主函数，H为哈密顿量，\\partial S/\\partial q给出正则动量。若能求出完整积分，轨道可由常数微分关系恢复。\n\n它把力学问题同波前传播和几何光学联系起来，也是半经典近似的重要源头。它把求轨道转化为求一个生成函数；若变量可分离，积分常数直接给出运动常量，是通向作用角变量的通道。其中的S既像作用量又像生成函数；在半经典量子力学中，S的梯度给局域动量，相位快速变化由它控制。完全积分一旦找到，后续轨道求解主要变成代数和求导。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "哈密顿雅可比方程",
+          "url": "https://www.baidu.com/s?wd=%E5%93%88%E5%AF%86%E9%A1%BF%E9%9B%85%E5%8F%AF%E6%AF%94%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "哈密顿雅可比方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%93%88%E5%AF%86%E9%A1%BF%E9%9B%85%E5%8F%AF%E6%AF%94%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hamilton jacobi equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=hamilton%20jacobi%20equation"
+        }
       ]
     },
     {
@@ -593,6 +1169,24 @@
         "L Iω Iωdot ω×Iω I",
         "欧拉角 进动 力矩",
         "inertia tensor"
+      ],
+      "explanation_markdown": "惯性张量描述刚体质量分布对不同转轴转动的阻抗，是转动惯量的张量推广。核心关系可写作 $I_{ij}=\\int\\rho(\\mathbf r)(r^2\\delta_{ij}-x_ix_j)\\,d^3r$，其中I_{ij}为张量分量，\\rho是质量密度，x_i为坐标分量。它把角速度映到角动量：\\mathbf L=I\\boldsymbol\\omega。非球对称刚体中，角动量一般不与角速度平行，这正是张量描述的必要性。\n\n实际刚体计算中，平行轴定理和对称性常先简化张量；若选在非主轴系，非对角元会让转动分量彼此耦合。惯性张量依赖参考点，换点时需用平行轴定理修正；因此说一个刚体的I时，必须同时说明相对于哪个点和坐标系。它的非对角元反映质量分布相对所选坐标轴的倾斜耦合。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "惯性张量",
+          "url": "https://www.baidu.com/s?wd=%E6%83%AF%E6%80%A7%E5%BC%A0%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "惯性张量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%83%AF%E6%80%A7%E5%BC%A0%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inertia tensor",
+          "url": "https://en.wikipedia.org/w/index.php?search=inertia%20tensor"
+        }
       ]
     },
     {
@@ -611,6 +1205,24 @@
         "L Iω Iωdot ω×Iω 主壳层 主方向",
         "欧拉角 进动 力矩",
         "principal axis"
+      ],
+      "explanation_markdown": "主轴是惯性张量的本征方向，沿这些方向转动时角动量与角速度平行。核心关系可写作 $I\\mathbf e_i=I_i\\mathbf e_i$，其中I是惯性张量，\\mathbf e_i是主轴方向，I_i是主转动惯量。在主轴坐标中惯性张量对角化，刚体转动方程显著简化。\n\n主轴由质量分布决定，不一定与外部坐标轴重合。对称轴通常自动是主轴，但无明显对称性的刚体也有三条相互正交主轴；它们由惯性张量本身而非观察者喜好决定。围绕主轴讨论稳定性时，扰动方程最简单；刚体教材常先寻找主轴，正是为了把耦合转动拆开。主轴系中惯性张量最透明，角动量和角速度的关系也最接近标量形式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "主轴",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%BB%E8%BD%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "主轴",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%BB%E8%BD%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "principal axis",
+          "url": "https://en.wikipedia.org/w/index.php?search=principal%20axis"
+        }
       ]
     },
     {
@@ -629,6 +1241,24 @@
         "L Iω Iωdot ω×Iω I",
         "欧拉角 进动 力矩",
         "principal moment of inertia"
+      ],
+      "explanation_markdown": "主转动惯量是惯性张量在主轴方向上的本征值，给出绕主轴转动的惯性大小。核心关系可写作 $T=\\frac12(I_1\\omega_1^2+I_2\\omega_2^2+I_3\\omega_3^2)$，其中T是转动动能，I_i是主转动惯量，\\omega_i是角速度在主轴上的分量。它们是刚体形状和质量分布的基本参数。\n\n对称陀螺满足两个主转动惯量相等，球体则三个相等。主转动惯量的大小排序影响自由转动稳定性；中间主轴附近的转动不稳定，是刚体运动中著名的网球拍效应。主转动惯量可由实验测量周期或角加速度反推；对复杂物体，它们比完整质量分布更容易进入刚体动力学方程。三个数相等时刚体为球形惯性，各方向转动动力学完全等价。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "主转动惯量",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%BB%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "主转动惯量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%BB%E8%BD%AC%E5%8A%A8%E6%83%AF%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "principal moment of inertia",
+          "url": "https://en.wikipedia.org/w/index.php?search=principal%20moment%20of%20inertia"
+        }
       ]
     },
     {
@@ -647,6 +1277,24 @@
         "d/dt ∂L/∂qdot_i ∂L/∂q_i Iωdot+ω×Iω=N",
         "L Q_i",
         "euler angle"
+      ],
+      "explanation_markdown": "欧拉角用三个连续转动参数描述刚体相对空间坐标系的取向。核心关系可写作 $R=R_z(\\phi)R_x(\\theta)R_z(\\psi)$，其中R为总转动矩阵，\\phi,\\theta,\\psi是欧拉角，R_z和R_x表示绕相应轴转动。不同教材可能采用不同轴序，但思想都是用三个角覆盖三维转动自由度。\n\n它把刚体取向化为可微坐标，便于写出角速度和拉格朗日量。欧拉角会在某些取向出现坐标奇点，因此不是全局无瑕的转动坐标；但在陀螺和分子转动中仍十分实用。欧拉角的三个角速度导数并不等于角速度的三个分量，需要运动学方程转换；混淆二者会导致刚体动能写错。它给出取向坐标，而不是一组三个互相独立的有限转动矢量分量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "欧拉角",
+          "url": "https://www.baidu.com/s?wd=%E6%AC%A7%E6%8B%89%E8%A7%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "欧拉角",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AC%A7%E6%8B%89%E8%A7%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "euler angle",
+          "url": "https://en.wikipedia.org/w/index.php?search=euler%20angle"
+        }
       ]
     },
     {
@@ -665,6 +1313,24 @@
         "d/dt ∂L/∂qdot_i ∂L/∂q_i Iωdot+ω×Iω=N",
         "L Q_i",
         "euler equation"
+      ],
+      "explanation_markdown": "欧拉方程是在刚体本体主轴系中描述角动量变化的动力学方程。核心关系可写作 $I\\dot{\\boldsymbol\\omega}+\\boldsymbol\\omega\\times(I\\boldsymbol\\omega)=\\mathbf N$，其中I是惯性张量，\\boldsymbol\\omega是角速度，\\mathbf N是外力矩。第二项来自本体系自身转动，不是额外外力。它揭示自由刚体、陀螺进动和旋转稳定性的核心机制。\n\n外力矩为零时，它仍可产生复杂的本体角速度变化；这是因为本体系在旋转，角动量守恒并不等于各分量都恒定。它特别适合无固定空间方向的自由转子；若外力矩在空间系给出，还要先转换到本体系或同时追踪取向。自由刚体的翻转和中间轴不稳定，都能从这组方程看出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "欧拉方程",
+          "url": "https://www.baidu.com/s?wd=%E6%AC%A7%E6%8B%89%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "欧拉方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AC%A7%E6%8B%89%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "euler equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=euler%20equation"
+        }
       ]
     },
     {
@@ -683,6 +1349,24 @@
         "L Iω Iωdot ω×Iω 刚体假设 物体系",
         "欧拉角 进动 力矩",
         "rigid body motion"
+      ],
+      "explanation_markdown": "刚体运动要求任意两质点间距离保持不变，因此整体运动可分解为平动和转动。核心关系可写作 $\\mathbf v=\\mathbf V+\\boldsymbol\\omega\\times\\mathbf r$，其中\\mathbf v是刚体上一点速度，\\mathbf V是参考点速度，\\boldsymbol\\omega是角速度，\\mathbf r是相对位置。刚体模型忽略弹性形变，但保留取向自由度。\n\n它适用于尺寸不可忽略而形变较小的物体，如陀螺、转子和刚性连杆。它排除了伸缩和剪切，因此任意运动可由一个平移速度和一个角速度确定；这正是刚体比质点多出取向自由度的原因。刚体上不同点速度不同，但角速度相同；这个全局角速度的存在，是刚体约束区别于一般多质点系统的标志。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "刚体运动",
+          "url": "https://www.baidu.com/s?wd=%E5%88%9A%E4%BD%93%E8%BF%90%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "刚体运动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%9A%E4%BD%93%E8%BF%90%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "rigid body motion",
+          "url": "https://en.wikipedia.org/w/index.php?search=rigid%20body%20motion"
+        }
       ]
     },
     {
@@ -701,6 +1385,24 @@
         "L Iω Iωdot ω×Iω 目标量 固定参考系",
         "欧拉角 进动 力矩",
         "rotation about fixed point"
+      ],
+      "explanation_markdown": "定点转动是刚体有一个固定点不动时的运动，系统只剩取向随时间变化。核心关系可写作 $T=\\frac12\\boldsymbol\\omega\\cdot I\\boldsymbol\\omega$，其中T为转动动能，\\boldsymbol\\omega为角速度，I是关于固定点的惯性张量。由于固定点速度为零，平动动能不再单独出现。\n\n陀螺和重刚体常用这个模型，它突出力矩与角动量方向变化的关系。固定点承担约束反力但不做位移功，常可不进入能量方程；重陀螺就是定点转动加重力势能的典型模型。它有三个取向自由度，没有质心平动自由度；支点位置固定后，惯性张量通常要相对支点而非质心计算。支点选择会改变惯性张量，也会改变重力势能中质心的位置参数。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "定点转动",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%9A%E7%82%B9%E8%BD%AC%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "定点转动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%9A%E7%82%B9%E8%BD%AC%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "rotation about fixed point",
+          "url": "https://en.wikipedia.org/w/index.php?search=rotation%20about%20fixed%20point"
+        }
       ]
     },
     {
@@ -719,6 +1421,24 @@
         "L Iω Iωdot ω×Iω 目标量模型",
         "欧拉角 进动 力矩",
         "gyroscope"
+      ],
+      "explanation_markdown": "陀螺是具有快速自转并受力矩作用的刚体系统，典型特征是角动量方向缓慢改变。核心关系可写作 $\\frac{d\\mathbf L}{dt}=\\boldsymbol\\tau$，其中\\mathbf L是角动量，\\boldsymbol\\tau是外力矩。快速自转使角动量较大，外力矩更常改变方向而非立即使其倒下。\n\n陀螺模型解释进动、章动和许多旋转稳定现象。高速陀螺的慢进动并非违反重力直觉，而是角动量改变方向需要时间；自转越快，同样力矩造成的轴向漂移越慢。陀螺近似常要求自旋角速度远大于进动和章动频率；若自转不够快，完整欧拉方程中的章动不能忽略。陀螺仪利用的正是角动量方向不易快速改变这一性质。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "陀螺",
+          "url": "https://www.baidu.com/s?wd=%E9%99%80%E8%9E%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "陀螺",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%99%80%E8%9E%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gyroscope",
+          "url": "https://en.wikipedia.org/w/index.php?search=gyroscope"
+        }
       ]
     },
     {
@@ -737,6 +1457,24 @@
         "L Iω Iωdot ω×Iω 轴向目标量",
         "欧拉角 目标量 力矩",
         "precession"
+      ],
+      "explanation_markdown": "进动是旋转轴在外力矩作用下绕某一方向缓慢扫转的运动。核心关系可写作 $\\Omega\\simeq \\tau/L$，其中\\Omega为进动角速度，\\tau为垂直角动量的力矩大小，L为角动量大小。对高速重陀螺，常见近似为\\Omega=Mgl/(I_3\\omega_3)。进动体现力矩改变角动量方向，而不是简单把陀螺拉倒。\n\n在重陀螺中，进动速度还受倾角、支点到质心距离和自旋角速度影响；慢进动公式只是高速极限下的近似。进动方向由角动量和力矩的矢量关系决定，不一定与直觉中的倾倒方向一致；这正是陀螺现象反常的来源。若外力矩消失，进动也失去来源，旋转轴会按自由刚体规律运动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "进动",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%9B%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "进动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%9B%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "precession",
+          "url": "https://en.wikipedia.org/w/index.php?search=precession"
+        }
       ]
     },
     {
@@ -755,6 +1493,24 @@
         "L Iω Iωdot ω×Iω 目标量摆动",
         "欧拉角 进动 力矩",
         "nutation"
+      ],
+      "explanation_markdown": "章动是陀螺或刚体转动中倾角的周期性摆动，常叠加在平均进动之上。核心关系可写作 $\\dot\\theta^2+V_{\\rm eff}(\\theta)=E_{\\rm eff}$，其中\\theta是倾角，V_{\\rm eff}为有效势，E_{\\rm eff}为有效能量常数。它来自角动量守恒与重力矩共同限制下的倾角运动。\n\n直观上，旋转轴不是光滑圆锥面，而会在两个转折角之间轻微点头。观察上它表现为陀螺轴在平均进动圆锥面上下摆动；若初始条件恰好匹配稳定进动，章动幅度可以很小。在相图中，章动对应倾角变量在两个转折点之间往复；能量和角动量常数决定这两个转折角的位置。章动幅度记录初始条件与稳定进动条件之间的偏离程度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "章动",
+          "url": "https://www.baidu.com/s?wd=%E7%AB%A0%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "章动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AB%A0%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "nutation",
+          "url": "https://en.wikipedia.org/w/index.php?search=nutation"
+        }
       ]
     },
     {
@@ -773,6 +1529,24 @@
         "K a ω² M a K a=ω²M a",
         "正定判据",
         "small oscillation"
+      ],
+      "explanation_markdown": "小振动研究系统在稳定平衡附近的微小偏离，把非线性动力学线性化。核心关系可写作 $M\\ddot\\eta+K\\eta=0$，其中\\eta是平衡附近位移，M是质量矩阵，K是刚度矩阵。二次近似下，各自由度耦合可通过本征模分解为独立振动。\n\n它适用于分子振动、耦合摆和结构振动的低幅响应。小振动只保留平衡附近的二阶势能和二次动能；振幅过大时，频率漂移、模态耦合和非线性共振会重新出现。小振动分析给出的频率是线性近似结果；它不能描述大幅摆动、碰撞、越过势垒或非线性混沌。正交模展开还让总能量分成各模式能量之和，便于估计响应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "小振动",
+          "url": "https://www.baidu.com/s?wd=%E5%B0%8F%E6%8C%AF%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "小振动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B0%8F%E6%8C%AF%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "small oscillation",
+          "url": "https://en.wikipedia.org/w/index.php?search=small%20oscillation"
+        }
       ]
     },
     {
@@ -791,6 +1565,24 @@
         "qdot dq/dt p_i ∂L/∂qdot_i q_i",
         "Q_i δq_i",
         "normal coordinate"
+      ],
+      "explanation_markdown": "简正坐标是把耦合小振动分解为独立振型后得到的坐标。核心关系可写作 $\\eta=\\sum_k a^{(k)}Q_k$，其中\\eta是原位移向量，a^{(k)}是第k个振型，Q_k为简正坐标。在这些坐标下二次动能和势能同时对角化，每个Q_k像一个独立谐振子。\n\n它把复杂耦合运动拆成互不干扰的振动通道。简正坐标的好处是每个坐标有自己的能量和相位；初始扰动若投影到多个模式上，观测运动就是这些模式的叠加。对连续系统，简正坐标推广为模态振幅；弦振动、弹性体和电磁腔中的模式展开都沿用同一思想。每个简正坐标都有独立相位，叠加后才形成原坐标中的复杂运动。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "简正坐标",
+          "url": "https://www.baidu.com/s?wd=%E7%AE%80%E6%AD%A3%E5%9D%90%E6%A0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "简正坐标",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AE%80%E6%AD%A3%E5%9D%90%E6%A0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "normal coordinate",
+          "url": "https://en.wikipedia.org/w/index.php?search=normal%20coordinate"
+        }
       ]
     },
     {
@@ -809,6 +1601,24 @@
         "K a ω² M a 简正分解 频率本征值",
         "正定判据",
         "normal frequency"
+      ],
+      "explanation_markdown": "简正频率是小振动系统各独立振型的固有角频率，由质量和刚度共同决定。核心关系可写作 $\\det(K-\\omega^2M)=0$，其中K是刚度矩阵，M是质量矩阵，\\omega是简正频率。这些频率不依赖初始振幅，只由线性化系统本身决定。\n\n实验中的共振峰、分子光谱和结构模态都直接反映简正频率。简正频率可通过共振实验直接测出；若矩阵含连续自由度，离散频率会推广为波模色散关系。若外驱动频率接近某个简正频率，系统对相应模式响应最强；这就是共振实验能识别模态的原因。它们构成系统的动力学指纹，质量或刚度变化都会移动这些频率。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "简正频率",
+          "url": "https://www.baidu.com/s?wd=%E7%AE%80%E6%AD%A3%E9%A2%91%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "简正频率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AE%80%E6%AD%A3%E9%A2%91%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "normal frequency",
+          "url": "https://en.wikipedia.org/w/index.php?search=normal%20frequency"
+        }
       ]
     },
     {
@@ -827,6 +1637,24 @@
         "K a ω² M a 简正分解 振型",
         "正定判据",
         "normal mode"
+      ],
+      "explanation_markdown": "简正模式是小振动中所有坐标按固定比例同步振动的空间形状。核心关系可写作 $K\\mathbf a=\\omega^2M\\mathbf a$，其中\\mathbf a是模式向量，\\omega是频率，K和M分别为刚度与质量矩阵。若初始条件只激发一个模式，系统会保持该形状只改变整体振幅和相位。\n\n模式正交性使一般振动可分解为若干简正模式叠加。模态形状常比频率更能显示系统结构，例如一串耦合振子中相邻质点同相或反相运动代表不同模式。在阻尼很弱时，简正模式近似独立；强阻尼或非保守耦合会破坏正交性，需要更一般的模态理论。模式的正交性使能量不会在线性近似下随意从一个模式流到另一个模式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "简正模式",
+          "url": "https://www.baidu.com/s?wd=%E7%AE%80%E6%AD%A3%E6%A8%A1%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "简正模式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AE%80%E6%AD%A3%E6%A8%A1%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "normal mode",
+          "url": "https://en.wikipedia.org/w/index.php?search=normal%20mode"
+        }
       ]
     },
     {
@@ -845,6 +1673,24 @@
         "K a ω² M a 稳定扰动 平衡点",
         "正定判据",
         "stable equilibrium"
+      ],
+      "explanation_markdown": "稳定平衡是系统受小扰动后仍倾向留在平衡点附近的状态，通常对应势能局部极小。核心关系可写作 $\\delta^2V=\\frac12\\eta^TK\\eta>0$，其中\\eta是小位移，K是势能二阶导数组成的刚度矩阵。正定二次型意味着任意小偏离都会增加势能，从而产生回复趋势。\n\n稳定性是小振动展开成立的前提。稳定平衡允许小扰动形成振动而非逃离；若存在零模，系统可能处在中性稳定方向，需要更高阶项判断。稳定平衡附近可定义小振动频率；若二阶项半正定，需检查三阶、四阶项或约束几何才能下结论。小扰动若只导致有界振动，平衡点在力学上就是可长期停留的。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳定平衡",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E5%AE%9A%E5%B9%B3%E8%A1%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳定平衡",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E5%AE%9A%E5%B9%B3%E8%A1%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stable equilibrium",
+          "url": "https://en.wikipedia.org/w/index.php?search=stable%20equilibrium"
+        }
       ]
     },
     {
@@ -863,6 +1709,24 @@
         "K a ω² M a 不稳定扰动 平衡点",
         "正定判据",
         "unstable equilibrium"
+      ],
+      "explanation_markdown": "不稳定平衡是系统虽满足一阶平衡条件，但某些微小扰动会被放大的状态。核心关系可写作 $\\delta^2V=\\frac12\\eta^TK\\eta<0\\ \\text{for some }\\eta$，其中V是势能，K为二阶导数矩阵，\\eta表示扰动方向。势能存在下降方向时，平衡点像山脊而非谷底。\n\n线性化方程会出现实增长指数，对应扰动远离平衡。倒立摆顶点和势垒顶端都是典型情形；线性化后出现虚频率，意味着指数增长而非正弦振荡。不稳定并不意味着立刻高速离开，而是任意小误差都会沿不稳定方向增长；实际系统中的噪声会触发这种偏离。线性不稳定方向通常对应势能二次型中的负本征值。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "不稳定平衡",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%8D%E7%A8%B3%E5%AE%9A%E5%B9%B3%E8%A1%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "不稳定平衡",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%8D%E7%A8%B3%E5%AE%9A%E5%B9%B3%E8%A1%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "unstable equilibrium",
+          "url": "https://en.wikipedia.org/w/index.php?search=unstable%20equilibrium"
+        }
       ]
     },
     {
@@ -881,6 +1745,24 @@
         "δW ΣQ_iδq_i V_eff Q_i",
         "非保守作用",
         "central force"
+      ],
+      "explanation_markdown": "中心力是始终沿着质点相对固定中心的径向方向作用的力。核心关系可写作 $\\mathbf F=f(r)\\hat{\\mathbf r}$，其中f(r)只依赖距离r，\\hat{\\mathbf r}为径向单位矢量。由于力矩\\mathbf r\\times\\mathbf F为零，角动量守恒，轨道限制在一个平面内。引力和库仑力是最重要的平方反比中心力例子。\n\n中心力保证轨道平面固定，因此三维问题可降为二维极坐标问题；若力还满足平方反比，会进一步出现闭合圆锥轨道。角动量守恒还意味着面积速度恒定，这是开普勒第二定律的力学根源；它不依赖平方反比的特殊形式。若初速度不沿径向，角动量会使粒子避开中心并形成弯曲轨道。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "中心力",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%AD%E5%BF%83%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "中心力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%AD%E5%BF%83%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "central force",
+          "url": "https://en.wikipedia.org/w/index.php?search=central%20force"
+        }
       ]
     },
     {
@@ -899,6 +1781,24 @@
         "δW ΣQ_iδq_i V_eff Q_i",
         "非保守作用",
         "central force field"
+      ],
+      "explanation_markdown": "中心力场是由只依赖径向距离的势能产生的保守力场，具有球对称结构。核心关系可写作 $\\mathbf F=-\\frac{dV}{dr}\\hat{\\mathbf r}$，其中V(r)是径向势能，r为到中心的距离，\\hat{\\mathbf r}为径向单位矢量。球对称带来角动量守恒，使三维运动可约化为平面径向问题。\n\n它是开普勒轨道、散射和有效势分析的基础。判断是否为中心力场，要看势能是否只依赖r；若存在角向依赖，即使力有径向分量，也会破坏角动量守恒。中心力场若为保守场，可用势能V(r)描述；若力有速度依赖或非保守成分，就不能仅靠中心势能分析。天体引力、点电荷库仑场和球对称势阱都是这一模型的代表。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "中心力场",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%AD%E5%BF%83%E5%8A%9B%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "中心力场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%AD%E5%BF%83%E5%8A%9B%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "central force field",
+          "url": "https://en.wikipedia.org/w/index.php?search=central%20force%20field"
+        }
       ]
     },
     {
@@ -917,6 +1817,24 @@
         "V_eff V L²/ 2μr² 有效势 能量积分",
         "约化质量 入射参数",
         "effective potential energy"
+      ],
+      "explanation_markdown": "有效势能把中心力问题中的真实势能和角动量造成的离心项合在一起。核心关系可写作 $V_{\\rm eff}(r)=V(r)+\\frac{L^2}{2\\mu r^2}$，其中V(r)是真实势能，L是角动量，\\mu是约化质量，r是径向距离。径向运动可像一维粒子在V_eff中运动那样理解。\n\n它清楚显示转折点、圆轨道和束缚条件。圆轨道对应有效势的驻点，稳定圆轨道还要求二阶导数为正；这一图像比直接解二阶径向方程更清楚。有效势中的离心项不是新相互作用，而是角动量守恒后径向方程留下的几何贡献。径向转折点由E=V_eff决定，因此图像可直接读出近心点和远心点。这一图像常用于判定轨道是否束缚。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "有效势能",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%89%E6%95%88%E5%8A%BF%E8%83%BD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "有效势能",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%89%E6%95%88%E5%8A%BF%E8%83%BD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "effective potential energy",
+          "url": "https://en.wikipedia.org/w/index.php?search=effective%20potential%20energy"
+        }
       ]
     },
     {
@@ -935,6 +1853,24 @@
         "L Iω Iωdot ω×Iω 双体化约 物体系",
         "欧拉角 进动 力矩",
         "two body problem"
+      ],
+      "explanation_markdown": "两体问题研究两个相互作用质点的运动，可分解为质心运动和相对运动。核心关系可写作 $\\mu\\ddot{\\mathbf r}=\\mathbf F(\\mathbf r),\\quad \\mu=\\frac{m_1m_2}{m_1+m_2}$，其中\\mathbf r是相对位置，\\mu为约化质量，m_1,m_2为两体质量。若相互作用只依赖相对位置，质心作自由或受外力运动，内部动力学等价于一个质量为\\mu的粒子。\n\n开普勒问题和弹性散射都依赖这种约化。在无外力时质心匀速直线运动，全部非平凡动力学都在相对坐标里；这就是为什么行星问题能化成单粒子中心力问题。若存在外场或第三体摄动，质心与相对运动可能不再完全分离；这时两体约化只是零阶近似。实验室系和质心系的转换，是碰撞运动学中使用它的常见方式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "两体问题",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%A4%E4%BD%93%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "两体问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%A4%E4%BD%93%E9%97%AE%E9%A2%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "two body problem",
+          "url": "https://en.wikipedia.org/w/index.php?search=two%20body%20problem"
+        }
       ]
     },
     {
@@ -953,6 +1889,24 @@
         "K a ω² M a 约化变量 质量参数",
         "正定判据",
         "reduced mass"
+      ],
+      "explanation_markdown": "约化质量是把两体相对运动等效成单粒子运动时出现的惯性参数。核心关系可写作 $\\mu=\\frac{m_1m_2}{m_1+m_2}$，其中m_1和m_2是两体质量，\\mu是约化质量。它总小于任一有限质量，并在一体质量极大时趋近另一体质量。\n\n约化质量让相对坐标的动能写成\\frac12\\mu\\dot r^2，是原子、双星和碰撞问题的标准参数。在氢原子中使用电子质量会有微小误差，约化质量修正了质子也会运动的事实；精密光谱必须保留它。在散射中，约化质量决定相对运动动能和动量关系；两束粒子质量相近时，它与任一单体质量差别都不可忽略。当两体质量相等时，约化质量等于单体质量的一半，惯性明显改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "约化质量",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%A6%E5%8C%96%E8%B4%A8%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "约化质量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%A6%E5%8C%96%E8%B4%A8%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "reduced mass",
+          "url": "https://en.wikipedia.org/w/index.php?search=reduced%20mass"
+        }
       ]
     },
     {
@@ -971,6 +1925,24 @@
         "V_eff V L²/ 2μr² r θ",
         "约化质量 入射参数",
         "kepler problem"
+      ],
+      "explanation_markdown": "开普勒问题指平方反比吸引势中的两体运动，是行星轨道和库仑束缚的经典模型。核心关系可写作 $V(r)=-k/r$，其中V是势能，r是两体距离，k为相互作用强度常数。它的轨道为圆锥曲线，角动量和拉普拉斯龙格楞次矢量共同守恒。\n\n这个额外守恒量解释了闭合椭圆轨道和能级简并的经典根源。负能量给椭圆轨道，零能量给抛物线，正能量给双曲线；这种分类来自能量与角动量对有效势的共同限制。它的隐藏对称性高于普通中心力问题，因此轨道闭合；加入相对论修正或摄动后，这种闭合性会被破坏。开普勒三定律都可从这个模型中推出，几何轨道与守恒量完全相连。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "开普勒问题",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%80%E6%99%AE%E5%8B%92%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "开普勒问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%80%E6%99%AE%E5%8B%92%E9%97%AE%E9%A2%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kepler problem",
+          "url": "https://en.wikipedia.org/w/index.php?search=kepler%20problem"
+        }
       ]
     },
     {
@@ -989,6 +1961,24 @@
         "V_eff V L²/ 2μr² b,θ",
         "约化质量 入射参数",
         "scattering"
+      ],
+      "explanation_markdown": "散射研究入射粒子经过相互作用势后远离时方向和能量如何改变。核心关系可写作 $\\psi_{\\rm out}\\sim f(\\theta)\\frac{e^{ikr}}{r}$，其中f(\\theta)是散射振幅，k是波数，r和\\theta描述远区方向。经典理论常用冲量和偏转角，量子理论用振幅和截面。\n\n散射把不可直接看到的相互作用势转化为角分布等可测信息。经典散射关注轨道偏转，量子散射关注概率幅；二者在短波极限中相接，实验上都通过角分布读取相互作用信息。散射理论不要求相互作用形成束缚态；它关心远前和远后的自由状态如何被中间相互作用联系起来。远区自由态的定义要求相互作用在足够远处可忽略或有明确渐近形式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "散射",
+          "url": "https://www.baidu.com/s?wd=%E6%95%A3%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "散射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%95%A3%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "scattering",
+          "url": "https://en.wikipedia.org/w/index.php?search=scattering"
+        }
       ]
     },
     {
@@ -1007,6 +1997,24 @@
         "L Iω Iωdot ω×Iω b,θ",
         "欧拉角 进动 力矩",
         "scattering angle"
+      ],
+      "explanation_markdown": "散射角是入射方向与远区出射方向之间的夹角，量化相互作用造成的偏转。核心关系可写作 $\\Theta=\\pi-2\\int_{r_{\\min}}^{\\infty}\\frac{b\\,dr}{r^2\\sqrt{1-b^2/r^2-2V(r)/E}}$，其中\\Theta为散射角，b是碰撞参数，E是能量，V(r)是中心势。不同碰撞参数对应不同偏转，强长程力会产生较大角度。\n\n散射角连接单个轨道几何与实验中的角分布。在库仑散射中，小碰撞参数对应大偏转，大碰撞参数对应掠过式小偏转；这个单调关系决定了卢瑟福截面的形状。对吸引势和排斥势，同一碰撞参数可能给出不同偏转方向；角度符号约定要与实验几何保持一致。它是连接单次碰撞轨道和统计截面的中间变量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "散射角",
+          "url": "https://www.baidu.com/s?wd=%E6%95%A3%E5%B0%84%E8%A7%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "散射角",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%95%A3%E5%B0%84%E8%A7%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "scattering angle",
+          "url": "https://en.wikipedia.org/w/index.php?search=scattering%20angle"
+        }
       ]
     },
     {
@@ -1025,6 +2033,24 @@
         "V_eff V L²/ 2μr² b,θ",
         "约化质量 入射参数",
         "scattering cross section"
+      ],
+      "explanation_markdown": "散射截面用面积量纲描述入射束被散射到给定方向范围的概率强度。核心关系可写作 $\\frac{d\\sigma}{d\\Omega}=\\frac{b}{\\sin\\theta}\\left|\\frac{db}{d\\theta}\\right|$，其中d\\sigma/d\\Omega是微分截面，b是碰撞参数，\\theta是散射角。它不是目标的几何面积，而是相互作用强弱和角分布的有效面积。\n\n实验上计数率常通过截面与入射通量联系起来。总截面来自对立体角积分，微分截面则保留方向信息；二者分别回答“会不会散射”和“散到哪里”的问题。量子情况下还会出现干涉极大和极小，使截面随角度振荡；经典几何直觉只在短波或弱干涉极限中成立。实验计数率还需乘以入射通量和靶粒子数，才能与截面比较。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "散射截面",
+          "url": "https://www.baidu.com/s?wd=%E6%95%A3%E5%B0%84%E6%88%AA%E9%9D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "散射截面",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%95%A3%E5%B0%84%E6%88%AA%E9%9D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "scattering cross section",
+          "url": "https://en.wikipedia.org/w/index.php?search=scattering%20cross%20section"
+        }
       ]
     },
     {
@@ -1043,6 +2069,24 @@
         "V_eff V L²/ 2μr² 隐藏守恒 轨道方向 向量表示",
         "约化质量 入射参数",
         "laplace runge lenz vector"
+      ],
+      "explanation_markdown": "拉普拉斯龙格楞次矢量是平方反比中心力中额外守恒的矢量，指向轨道近日点方向。核心关系可写作 $\\mathbf A=\\mathbf p\\times\\mathbf L-\\mu k\\hat{\\mathbf r}$，其中\\mathbf p是相对动量，\\mathbf L是角动量，\\mu为约化质量，k为势强度。它的守恒说明开普勒椭圆不会进动，并揭示该问题隐藏的高对称性。\n\n这个矢量也把轨道偏心率直接写成守恒量。若势能偏离严格平方反比，这个矢量不再守恒，轨道近日点会进动；水星近日点进动正可看作这一守恒破缺的表现。它与角动量共同决定轨道平面内椭圆的朝向和偏心率；因此比单独能量、角动量更完整地标记开普勒轨道。它的方向给出近日点，大小则与偏心率相连。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拉普拉斯龙格楞次矢量",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E9%BE%99%E6%A0%BC%E6%A5%9E%E6%AC%A1%E7%9F%A2%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拉普拉斯龙格楞次矢量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E9%BE%99%E6%A0%BC%E6%A5%9E%E6%AC%A1%E7%9F%A2%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "laplace runge lenz vector",
+          "url": "https://en.wikipedia.org/w/index.php?search=laplace%20runge%20lenz%20vector"
+        }
       ]
     },
     {
@@ -1061,6 +2105,24 @@
         "T V L H q_i L=T-V",
         "守恒律 运动方程",
         "lagrangian mechanics"
+      ],
+      "explanation_markdown": "拉格朗日力学以位形空间、广义坐标和作用量为核心来描述经典动力学。核心关系可写作 $\\frac{d}{dt}\\frac{\\partial L}{\\partial\\dot q_i}-\\frac{\\partial L}{\\partial q_i}=0$，其中L为拉格朗日量，q_i为广义坐标，\\dot q_i为广义速度。它把约束和坐标选择自然纳入方程，特别适合多自由度和非直角坐标。\n\n与牛顿力学等价时，它提供的是更几何化的语言。它的自然空间是位形空间的切丛，变量为(q,\\dot q)；因此它特别适合从几何约束和速度关系出发建模。拉氏形式不必显式写约束反力，是因为坐标已贴合约束；若坐标选择不独立，仍需乘子或约束方程辅助。它处理约束的能力来自广义坐标，而不是神秘地消除了真实作用力。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拉格朗日力学",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E5%8A%9B%E5%AD%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拉格朗日力学",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E5%8A%9B%E5%AD%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lagrangian mechanics",
+          "url": "https://en.wikipedia.org/w/index.php?search=lagrangian%20mechanics"
+        }
       ]
     },
     {
@@ -1079,6 +2141,24 @@
         "T V L H q_i H",
         "守恒律 运动方程",
         "hamiltonian mechanics"
+      ],
+      "explanation_markdown": "哈密顿力学在相空间中描述系统演化，把坐标和共轭动量作为同等基本变量。核心关系可写作 $\\dot z=J\\nabla H$，其中z=(q,p)为相空间点，J是辛矩阵，H为哈密顿量。它强调相体积、泊松括号和正则变换，是经典统计和量子力学形式化的基础。\n\n直观上，轨道是相空间中由H生成的流线。它的自然空间是余切束，变量为(q,p)；这种一阶结构使稳定性、正则变换和统计分布有共同的几何框架。哈密顿形式把能量函数提升为流的生成元；这使正则扰动理论、混沌相图和量子对易关系都能共享语言。它适合研究长期轨道结构，例如不变环面、共振和混沌层。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "哈密顿力学",
+          "url": "https://www.baidu.com/s?wd=%E5%93%88%E5%AF%86%E9%A1%BF%E5%8A%9B%E5%AD%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "哈密顿力学",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%93%88%E5%AF%86%E9%A1%BF%E5%8A%9B%E5%AD%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hamiltonian mechanics",
+          "url": "https://en.wikipedia.org/w/index.php?search=hamiltonian%20mechanics"
+        }
       ]
     },
     {
@@ -1097,6 +2177,24 @@
         "T V L H q_i 受力图像 动力学框架",
         "守恒律 运动方程",
         "newtonian mechanics"
+      ],
+      "explanation_markdown": "牛顿力学以力和加速度的关系为核心，直接描述质点在惯性系中的运动变化。核心关系可写作 $\\mathbf F=m\\mathbf a$，其中\\mathbf F是合外力，m是质量，\\mathbf a是加速度。它适合受力清楚、约束不复杂的系统。拉格朗日和哈密顿形式可由它改写而来，但牛顿图像保留了最直观的因果结构：力改变动量。\n\n在惯性系和低速宏观条件下它极其有效；当约束复杂、坐标曲线化或需要对称性语言时，分析力学会更简洁。牛顿方程在非惯性系中需加入惯性力，在相对论高速下需修改动量定义；这些边界限定了经典形式的适用范围。许多实验测量仍直接给出力、加速度和动量变化，牛顿图像因此不可替代。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "牛顿力学",
+          "url": "https://www.baidu.com/s?wd=%E7%89%9B%E9%A1%BF%E5%8A%9B%E5%AD%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "牛顿力学",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%9B%E9%A1%BF%E5%8A%9B%E5%AD%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "newtonian mechanics",
+          "url": "https://en.wikipedia.org/w/index.php?search=newtonian%20mechanics"
+        }
       ]
     },
     {
@@ -1115,6 +2213,24 @@
         "T V L H q_i 分析方法 动力学框架",
         "守恒律 运动方程",
         "analytical mechanics"
+      ],
+      "explanation_markdown": "分析力学用广义坐标、变分原理和相空间结构统一表达经典力学。核心关系可写作 $\\delta S=0,\\quad S=\\int L\\,dt$，其中S是作用量，L是拉格朗日量，\\delta表示变分。它包含拉格朗日力学和哈密顿力学，不把受力图作为唯一入口。\n\n它的优势在于处理约束、对称性和守恒律时更系统。它不是另一套不同实验定律，而是把牛顿动力学重写为更适合多自由度系统的结构语言，便于推广到场论。分析力学的“分析”强调用函数、泛函和坐标变换处理运动；它不是少做物理，而是把物理约束编码得更紧。从这门语言出发，连续介质和场的动力学也能写成变分形式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分析力学",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E6%9E%90%E5%8A%9B%E5%AD%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分析力学",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E6%9E%90%E5%8A%9B%E5%AD%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "analytical mechanics",
+          "url": "https://en.wikipedia.org/w/index.php?search=analytical%20mechanics"
+        }
       ]
     },
     {
@@ -1133,6 +2249,24 @@
         "f q,t =0 Pfaff f q,t =0",
         "乘子 反力 独立变量",
         "holonomic constraint"
+      ],
+      "explanation_markdown": "完整约束是可积为位形变量和时间之间等式关系的约束。核心关系可写作 $f_\\alpha(q,t)=0$，其中f_\\alpha是约束函数，q为广义坐标，t为时间。它把允许位形限制在较低维子空间中，因此可通过减少独立坐标来处理。\n\n刚性杆固定长度和质点在曲面上运动都是常见例子。完整约束可直接减少自由度，例如球面约束把三维位置变为两个角变量；这类约束最适合拉格朗日第二类方程。数学上它把位形空间切成约束子流形；在这个子流形上选局部坐标，就能自动满足约束。可积性是关键词，只有可积约束才可真正化成位形方程。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "完整约束",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%8C%E6%95%B4%E7%BA%A6%E6%9D%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "完整约束",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%8C%E6%95%B4%E7%BA%A6%E6%9D%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "holonomic constraint",
+          "url": "https://en.wikipedia.org/w/index.php?search=holonomic%20constraint"
+        }
       ]
     },
     {
@@ -1151,6 +2285,24 @@
         "f q,t =0 Pfaff f q,t =0",
         "乘子 反力 独立变量",
         "nonholonomic constraint"
+      ],
+      "explanation_markdown": "非完整约束通常限制速度或微分位移，不能整体积分成单纯的位形方程。核心关系可写作 $\\sum_i a_i(q,t)dq_i+a_0(q,t)dt=0$，其中a_i和a_0为约束系数，q_i是坐标，t是时间。滚动无滑动是典型例子。它限制可行速度方向，而不一定减少位形空间维数，因此处理时常需要乘子或非完整变分方法。\n\n它常见于滚动、刀口约束和车辆运动学；由于可行速度方向不可简单积分，位形空间维数并不会按约束数直接减少。非完整约束的虚位移规则有细节差别，不能简单把速度约束积分后代入；这也是轮式系统控制难点之一。它常让“允许位形”和“允许速度”分离，直觉上更像方向场限制。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "非完整约束",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%9E%E5%AE%8C%E6%95%B4%E7%BA%A6%E6%9D%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "非完整约束",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%9E%E5%AE%8C%E6%95%B4%E7%BA%A6%E6%9D%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "nonholonomic constraint",
+          "url": "https://en.wikipedia.org/w/index.php?search=nonholonomic%20constraint"
+        }
       ]
     },
     {
@@ -1169,6 +2321,24 @@
         "f q,t =0 Pfaff f q,t =0",
         "乘子 反力 独立变量",
         "scleronomic constraint"
+      ],
+      "explanation_markdown": "定常约束是不显含时间的约束，允许位形集合本身不随外部时间改变。核心关系可写作 $f(q)=0$，其中f为约束函数，q表示广义坐标。系统可沿固定几何边界运动，例如固定圆环上的珠子。\n\n定常约束常使能量守恒更容易成立，因为约束本身不向系统注入或抽取能量。定常约束下，约束边界不移动，约束反力通常不通过边界运动输能；这为能量积分守恒提供了常见前提。定常只说明约束方程不显含时间，不说明系统一定静止；粒子仍可沿固定约束面高速运动。定常约束可随坐标弯曲，却不会随钟表时间主动改变形状。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "定常约束",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%9A%E5%B8%B8%E7%BA%A6%E6%9D%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "定常约束",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%9A%E5%B8%B8%E7%BA%A6%E6%9D%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "scleronomic constraint",
+          "url": "https://en.wikipedia.org/w/index.php?search=scleronomic%20constraint"
+        }
       ]
     },
     {
@@ -1187,6 +2357,24 @@
         "f q,t =0 Pfaff f q,t =0",
         "乘子 反力 独立变量",
         "rheonomic constraint"
+      ],
+      "explanation_markdown": "非定常约束显含时间，表示允许的位形集合随外部驱动或边界运动而改变。核心关系可写作 $f(q,t)=0,\\quad \\partial f/\\partial t\\ne0$，其中q是广义坐标，t是时间，f为约束函数。移动支点、变化长度的约束都属于这类。它可能通过约束对系统做功，因此能量守恒需要重新检查。\n\n升降的滑轮、移动的斜面或变长摆都属于这类；即使约束力垂直于瞬时允许位移，移动边界仍可能改变系统能量。非定常约束常把外部机构的时间程序写进力学方程；它是受迫系统和参数激励的一种来源。它常把系统变成受迫问题，即使没有非保守力，能量也可能改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "非定常约束",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%9E%E5%AE%9A%E5%B8%B8%E7%BA%A6%E6%9D%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "非定常约束",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%9E%E5%AE%9A%E5%B8%B8%E7%BA%A6%E6%9D%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "rheonomic constraint",
+          "url": "https://en.wikipedia.org/w/index.php?search=rheonomic%20constraint"
+        }
       ]
     },
     {
@@ -1205,6 +2393,24 @@
         "qdot dq/dt p_i ∂L/∂qdot_i qddot_i",
         "Q_i δq_i",
         "generalized acceleration"
+      ],
+      "explanation_markdown": "广义加速度是广义速度的时间导数，描述系统在位形空间中速度方向或大小的变化。核心关系可写作 $\\ddot q_i=d^2q_i/dt^2$，其中q_i为广义坐标，t为时间，双点表示二阶导数。它不一定等同于直角加速度分量，因为坐标基底本身也可能变化。\n\n拉格朗日方程给出的二阶运动方程通常就是求解这些广义加速度。在极坐标中，径向和角向广义加速度要经过基矢变化才能组成真实加速度；这提醒我们不能机械套用直角分量直觉。在数值积分中，求解拉格朗日方程通常就是解出这些二阶导数，再把它们推进为新的速度和坐标。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "广义加速度",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%BF%E4%B9%89%E5%8A%A0%E9%80%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "广义加速度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%BF%E4%B9%89%E5%8A%A0%E9%80%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "generalized acceleration",
+          "url": "https://en.wikipedia.org/w/index.php?search=generalized%20acceleration"
+        }
       ]
     },
     {
@@ -1223,6 +2429,24 @@
         "d/dt ∂L/∂qdot_i ∂L/∂q_i L=T-V",
         "L Q_i",
         "lagrange equation of first kind"
+      ],
+      "explanation_markdown": "第一类拉格朗日方程在保留冗余坐标的同时，用乘子显式表示约束反力。核心关系可写作 $\\frac{d}{dt}\\frac{\\partial L}{\\partial\\dot q_i}-\\frac{\\partial L}{\\partial q_i}=\\sum_\\alpha\\lambda_\\alpha\\frac{\\partial f_\\alpha}{\\partial q_i}$，其中L是拉格朗日量，f_\\alpha是约束，\\lambda_\\alpha为乘子。它适合约束力也需要求出的情形。乘子项把几何约束的梯度转化为广义约束力方向。\n\n这种形式方程数多于自由度，但能同时求轨道和约束反力；工程接触力、绳张力和支座反力常需保留它。乘子数通常等于独立约束数；若约束之间相关，乘子会不唯一，说明约束模型本身需要整理。它保留冗余坐标，换来对约束力大小和方向的显式控制。约束梯度方向由几何方程决定。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "第一类拉格朗日方程",
+          "url": "https://www.baidu.com/s?wd=%E7%AC%AC%E4%B8%80%E7%B1%BB%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "第一类拉格朗日方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AC%AC%E4%B8%80%E7%B1%BB%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lagrange equation of first kind",
+          "url": "https://en.wikipedia.org/w/index.php?search=lagrange%20equation%20of%20first%20kind"
+        }
       ]
     },
     {
@@ -1241,6 +2465,24 @@
         "d/dt ∂L/∂qdot_i ∂L/∂q_i L=T-V",
         "L Q_i",
         "lagrange equation of second kind"
+      ],
+      "explanation_markdown": "第二类拉格朗日方程使用独立广义坐标，已把完整理想约束吸收到坐标选择中。核心关系可写作 $\\frac{d}{dt}\\frac{\\partial L}{\\partial\\dot q_i}-\\frac{\\partial L}{\\partial q_i}=Q_i$，其中q_i为独立坐标，L为拉格朗日量，Q_i是非保守广义力。它不显式出现约束反力，方程数等于自由度数。\n\n对于摆、连杆和多体系统，这种形式通常最紧凑。它假定已经选好独立坐标，因而计算量少；若约束未知或非完整，直接套用第二类方程可能漏掉必要条件。它给出最小数量的动力学方程，但通常不直接给约束反力；若反力是设计目标，还需回到第一类方程。独立坐标的选择越贴合几何，第二类方程就越短。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "第二类拉格朗日方程",
+          "url": "https://www.baidu.com/s?wd=%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "第二类拉格朗日方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lagrange equation of second kind",
+          "url": "https://en.wikipedia.org/w/index.php?search=lagrange%20equation%20of%20second%20kind"
+        }
       ]
     },
     {
@@ -1259,6 +2501,24 @@
         "d/dt ∂L/∂qdot_i ∂L/∂q_i L=T-V",
         "L Q_i",
         "lagrange multiplier"
+      ],
+      "explanation_markdown": "拉格朗日乘子是在约束极值或约束动力学中引入的辅助变量，表示约束条件的权重。核心关系可写作 $\\nabla F=\\sum_\\alpha\\lambda_\\alpha\\nabla f_\\alpha$，其中F是目标函数，f_\\alpha为约束，\\lambda_\\alpha是乘子。在力学中乘子常与约束反力相关；在数学优化中它给出目标量对约束放松的敏感度。\n\n它把受限问题化为无约束驻值条件。乘子的数值依赖约束方程的归一化方式，但乘子乘以约束梯度给出的物理力不变；这一点常用于解释反力。在几何上，乘子说明目标函数梯度无法沿约束面继续变化，只能指向约束面的法向组合。乘子常可解释为维持约束所需的广义反力强度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拉格朗日乘子",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E4%B9%98%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拉格朗日乘子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E4%B9%98%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lagrange multiplier",
+          "url": "https://en.wikipedia.org/w/index.php?search=lagrange%20multiplier"
+        }
       ]
     },
     {
@@ -1277,6 +2537,24 @@
         "d/dt ∂L/∂qdot_i ∂L/∂q_i L=T-V",
         "L Q_i",
         "method of lagrange multipliers"
+      ],
+      "explanation_markdown": "拉格朗日乘子法通过给约束配上乘子，把带约束的驻值问题改写成扩展函数的驻值问题。核心关系可写作 $\\mathcal L=F(q)+\\sum_\\alpha\\lambda_\\alpha f_\\alpha(q)$，其中\\mathcal L是增广函数，F是目标函数，f_\\alpha是约束，\\lambda_\\alpha为乘子。对q和\\lambda同时取驻值可得到目标条件和约束条件。\n\n它在静力平衡、最优化和第一类拉格朗日方程中形式相同。在动力学中，它让约束和运动方程同步求解；在静态优化中，它揭示最优点处目标梯度必须落在约束法向张成空间内。它不要求先显式解出约束变量，因此在多约束、非线性约束和高维问题中比代入消元更稳健。在多变量问题中，它避免先解出复杂约束面参数化。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拉格朗日乘子法",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E4%B9%98%E5%AD%90%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拉格朗日乘子法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E4%B9%98%E5%AD%90%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "method of lagrange multipliers",
+          "url": "https://en.wikipedia.org/w/index.php?search=method%20of%20lagrange%20multipliers"
+        }
       ]
     },
     {
@@ -1295,6 +2573,24 @@
         "T V L H q_i 目标量 积分项",
         "守恒律 运动方程",
         "energy integral"
+      ],
+      "explanation_markdown": "能量积分是当拉格朗日量不显含时间时得到的守恒组合，常对应系统总能量。核心关系可写作 $E=\\sum_i\\dot q_i\\frac{\\partial L}{\\partial\\dot q_i}-L$，其中E是能量积分，q_i为广义坐标，L为拉格朗日量。若势能与速度无关且约束定常，E通常等于T+V。\n\n它是时间平移对称性的直接结果。若拉格朗日量显含时间，能量积分一般不守恒；因此看到周期驱动或移动约束时，不能只凭保守力判断能量不变。能量积分常作为检查推导和数值计算的守恒误差指标；漂移过大通常意味着时间步长或模型假设出了问题。它是检查时间平移对称性的直接结果，不应与任意能量表达混同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "能量积分",
+          "url": "https://www.baidu.com/s?wd=%E8%83%BD%E9%87%8F%E7%A7%AF%E5%88%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "能量积分",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%83%BD%E9%87%8F%E7%A7%AF%E5%88%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "energy integral",
+          "url": "https://en.wikipedia.org/w/index.php?search=energy%20integral"
+        }
       ]
     },
     {
@@ -1313,6 +2609,24 @@
         "T V L H q_i 广义变量 能量积分",
         "守恒律 运动方程",
         "generalized energy"
+      ],
+      "explanation_markdown": "广义能量是由拉格朗日量通过速度齐次组合构造出的能量函数，也称雅可比积分。核心关系可写作 $h=\\sum_i p_i\\dot q_i-L$，其中h是广义能量，p_i为共轭动量，\\dot q_i为广义速度，L为拉格朗日量。它形式上等于哈密顿量，但是否等于机械总能量取决于L的具体结构。\n\n若L不显含时间，h沿运动守恒。在速度相关势或非自然拉格朗日量中，它未必等于T+V；但作为时间平移对称的诺特荷，仍有明确动力学意义。在自然系统中它回到熟悉的机械能，但名称保留“广义”，是为了提醒它来自拉氏结构而非直观能量相加。对自然拉格朗日量，它才退化为熟悉的动能加势能。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "广义能量",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%BF%E4%B9%89%E8%83%BD%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "广义能量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%BF%E4%B9%89%E8%83%BD%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "generalized energy",
+          "url": "https://en.wikipedia.org/w/index.php?search=generalized%20energy"
+        }
       ]
     },
     {
@@ -1331,6 +2645,24 @@
         "相图 截面 体积守恒 相位移 空间结构",
         "可积常数 初值",
         "phase space"
+      ],
+      "explanation_markdown": "相空间是由所有正则坐标和正则动量组成的状态空间，一个点代表系统瞬时力学状态。核心关系可写作 $z=(q_1,\\ldots,q_s,p_1,\\ldots,p_s)$，其中z是相空间点，q_i为坐标，p_i为动量，s是自由度数。相空间维数为2s，轨道是其中的一条曲线。\n\n哈密顿流、刘维尔定理和统计系综都在相空间中自然表述。相空间中每一维位置都配有一维动量，因此概率分布、截面和不变环面都比位形空间图像包含更多未来演化信息。相空间分布还允许谈论一群系统的统计演化；这正是经典力学通向统计力学的桥梁。在相空间里，一阶微分方程给出确定的流线，轨道不能交叉。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相空间",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "phase space",
+          "url": "https://en.wikipedia.org/w/index.php?search=phase%20space"
+        }
       ]
     },
     {
@@ -1349,6 +2681,24 @@
         "T V L H q_i 目标量 空间结构",
         "守恒律 运动方程",
         "configuration space"
+      ],
+      "explanation_markdown": "位形空间是系统所有允许位形构成的空间，只记录位置型自由度而不记录速度或动量。核心关系可写作 $Q=\\{q=(q_1,\\ldots,q_s)\\}$，其中Q表示位形空间，q_i为独立广义坐标，s为自由度数。约束决定位形空间的几何形状，例如球面、环面或更一般流形。\n\n相空间可看作位形空间的余切束。一个双摆的位形空间可看作二维环面，而不是普通平面区域；理解这一点有助于区分局部坐标和全局拓扑。位形空间中的一点只告诉物体在哪里或取向如何，不告诉它将往哪走；缺少的那一半信息由速度或动量补足。约束、拓扑和坐标奇点首先体现在位形空间，而不是相空间中。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "位形空间",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%8D%E5%BD%A2%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "位形空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%8D%E5%BD%A2%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "configuration space",
+          "url": "https://en.wikipedia.org/w/index.php?search=configuration%20space"
+        }
       ]
     },
     {
@@ -1367,6 +2717,24 @@
         "T V L H q_i 变量互换",
         "守恒律 运动方程",
         "legendre transformation"
+      ],
+      "explanation_markdown": "勒让德变换用共轭变量替换原变量，把速度描述转为动量描述。核心关系可写作 $H(q,p,t)=\\sum_i p_i\\dot q_i-L(q,\\dot q,t)$，其中H为哈密顿量，p_i=\\partial L/\\partial\\dot q_i，L为拉格朗日量。变换要求速度到动量的映射可逆。它在热力学中也用于更换自然变量，本质是把斜率当作新的独立变量。\n\n若勒让德矩阵奇异，速度无法唯一换成动量，哈密顿量构造会出现约束；规范场理论正是这种情形的高阶例子。从L到H时，速度变量被动量变量取代；从内能到自由能时，熵或体积也可被温度或压强取代。可逆性失败时，说明速度中存在不能由动量区分的冗余方向。这正是正则形式成立的门槛。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "勒让德变换",
+          "url": "https://www.baidu.com/s?wd=%E5%8B%92%E8%AE%A9%E5%BE%B7%E5%8F%98%E6%8D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "勒让德变换",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8B%92%E8%AE%A9%E5%BE%B7%E5%8F%98%E6%8D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "legendre transformation",
+          "url": "https://en.wikipedia.org/w/index.php?search=legendre%20transformation"
+        }
       ]
     },
     {
@@ -1385,6 +2753,24 @@
         "K a ω² M a 变量互换 矩阵表示",
         "正定判据",
         "legendre matrix"
+      ],
+      "explanation_markdown": "勒让德矩阵是拉格朗日量关于广义速度的二阶导数矩阵，检验速度到动量映射是否可逆。核心关系可写作 $W_{ij}=\\partial^2L/\\partial\\dot q_i\\partial\\dot q_j$，其中W_{ij}为矩阵元，L是拉格朗日量，\\dot q_i为广义速度。若W非奇异，就能从p_i求回\\dot q_i并建立哈密顿形式。\n\n若奇异，系统含有约束或规范自由度，需要狄拉克约束分析。它也称Hessian矩阵；非奇异性意味着拉氏系统是正则的，奇异性则提示存在冗余变量或未定乘子。小振动中的质量矩阵可看作速度二阶导数的具体例子；它正定时，动能对速度有良好惯性意义。它的行列式为零，是拉格朗日系统奇异性的直接信号。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "勒让德矩阵",
+          "url": "https://www.baidu.com/s?wd=%E5%8B%92%E8%AE%A9%E5%BE%B7%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "勒让德矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8B%92%E8%AE%A9%E5%BE%B7%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "legendre matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=legendre%20matrix"
+        }
       ]
     },
     {
@@ -1403,6 +2789,24 @@
         "qdot ∂H/∂p pdot -∂H/∂q J",
         "{f,H} 辛矩阵",
         "symplectic structure"
+      ],
+      "explanation_markdown": "辛结构是相空间上的闭合非退化二形式，给哈密顿动力学提供几何骨架。核心关系可写作 $\\omega=\\sum_i dq_i\\wedge dp_i$，其中\\omega是辛二形式，q_i和p_i为正则变量，\\wedge表示外积。非退化性使能量函数H唯一生成哈密顿向量场，闭合性保证局部正则坐标存在。\n\n它是正则变换和泊松括号背后的共同结构。辛结构没有距离和角度的概念，却能定义哈密顿流；它关心的是面积型配对而非欧氏长度。辛结构保持的是相空间面积元素而非长度，所以哈密顿流可以拉长一方向、压缩另一方向却不耗散体积。没有辛结构，就无法在几何上定义标准哈密顿向量场。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "辛结构",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%9B%E7%BB%93%E6%9E%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "辛结构",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%9B%E7%BB%93%E6%9E%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "symplectic structure",
+          "url": "https://en.wikipedia.org/w/index.php?search=symplectic%20structure"
+        }
       ]
     },
     {
@@ -1421,6 +2825,24 @@
         "qdot ∂H/∂p pdot -∂H/∂q J",
         "{f,H} 目标量",
         "symplectic matrix"
+      ],
+      "explanation_markdown": "辛矩阵是标准辛结构在正则坐标中的矩阵表示，编码坐标和动量的配对方式。核心关系可写作 $J=\\begin{pmatrix}0&I\\\\-I&0\\end{pmatrix}$，其中J为辛矩阵，I是单位矩阵，零块表示同类变量间无直接配对。哈密顿方程可写为\\dot z=J\\nabla H。\n\n辛矩阵的反对称性决定泊松括号的符号结构。在一自由度时，J把能量梯度旋转成相流方向；这解释了相图中轨道沿能量等值线运动而非沿梯度爬升。J的平方等于负单位矩阵，这让它像相空间中的九十度旋转；哈密顿流因此沿能量等值线切向前进。多自由度系统中，J把每个q_i与对应p_i成对连接。它固定了哈密顿方程中的正负号。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "辛矩阵",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%9B%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "辛矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%9B%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "symplectic matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=symplectic%20matrix"
+        }
       ]
     },
     {
@@ -1439,6 +2861,24 @@
         "qdot ∂H/∂p pdot -∂H/∂q J",
         "{f,H} 辛矩阵",
         "symplectic transformation"
+      ],
+      "explanation_markdown": "辛变换是保持辛结构不变的相空间变换，线性情形由矩阵条件刻画。核心关系可写作 $M^TJM=J$，其中M是变换矩阵，J是辛矩阵，T表示转置。它保持哈密顿方程形式、泊松括号和相体积。正则变换就是辛变换在力学语言中的表现。\n\n时间演化本身就是辛变换，因此相空间小体积会被拉伸折叠却不改变总体积；这正是哈密顿系统与耗散系统的区别。判断数值算法是否长期可靠时，也常看它是否近似辛；辛积分器能更好保持哈密顿系统的长期几何性质。它是哈密顿力学中“合法换变量”的几何判据。普通尺度变换未必满足这个条件。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "辛变换",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%9B%E5%8F%98%E6%8D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "辛变换",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%9B%E5%8F%98%E6%8D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "symplectic transformation",
+          "url": "https://en.wikipedia.org/w/index.php?search=symplectic%20transformation"
+        }
       ]
     },
     {
@@ -1457,6 +2897,24 @@
         "相图 截面 体积守恒 dΓ",
         "可积常数 初值",
         "liouville theorem"
+      ],
+      "explanation_markdown": "刘维尔定理说明哈密顿流保持相空间体积，统计分布沿相流不可被压缩。核心关系可写作 $\\nabla_z\\cdot\\dot z=0$，其中z=(q,p)是相空间坐标，\\dot z为哈密顿流速度。等价地，分布函数满足沿轨道的密度守恒。它为微正则系综和经典统计力学提供了几何基础。\n\n它不说单条轨道不复杂，而说一束初始条件形成的相体积守恒；混沌系统也遵守它，只是体积会被剧烈拉伸折叠。经典系综的概率密度随相流搬运而演化，体积不缩小；这与热力学熵增加之间的关系需要粗粒化来理解。它说明精细相空间信息不会被哈密顿演化真正抹去。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "刘维尔定理",
+          "url": "https://www.baidu.com/s?wd=%E5%88%98%E7%BB%B4%E5%B0%94%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "刘维尔定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%98%E7%BB%B4%E5%B0%94%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "liouville theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=liouville%20theorem"
+        }
       ]
     },
     {
@@ -1475,6 +2933,24 @@
         "相图 截面 体积守恒 可积常数 多体整体",
         "可积常数 初值",
         "integrable system"
+      ],
+      "explanation_markdown": "可积系统拥有足够多彼此对易的守恒量，使运动可化为环面上的准周期流。核心关系可写作 $\\{F_i,F_j\\}=0,\\quad i,j=1,\\ldots,n$，其中F_i是独立守恒量，\\{\\ ,\\ \\}为泊松括号，n是自由度数。这些守恒量把相空间轨道限制在不变环面上。\n\n作用角变量使可积系统的运动变成角变量匀速转动。若守恒量少于自由度，轨道可能在更大区域游走并出现混沌；可积性是强条件，不等同于“能量守恒”。可积系统的相图呈规则环面，频率比若为有理数则闭合，为无理数则在环面上稠密绕行。作用角变量存在，通常就是可积性的最清楚表现。微小扰动可能打破这些不变环面。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "可积系统",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%AF%E7%A7%AF%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "可积系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%AF%E7%A7%AF%E7%B3%BB%E7%BB%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "integrable system",
+          "url": "https://en.wikipedia.org/w/index.php?search=integrable%20system"
+        }
       ]
     },
     {
@@ -1493,6 +2969,24 @@
         "T V L H q_i 常数变易",
         "守恒律 运动方程",
         "variation of constants"
+      ],
+      "explanation_markdown": "常数变易法把已知通解中的积分常数提升为随时间缓慢变化的函数，用来处理微扰。核心关系可写作 $q(t)=Q(t;C_1(t),\\ldots,C_n(t))$，其中Q是未扰系统解，C_i(t)是变易后的常数函数。它把外扰或参数变化转化为常数演化方程。\n\n天体力学中轨道根数随摄动缓慢漂移，就是这种思想的典型应用。它在摄动天体力学中把半长轴、偏心率等轨道根数变为慢变量；这种做法保留了未扰解的几何直观。它保留未扰问题的解析解作为骨架，只让参数缓慢演化，因此比直接求解全微扰方程更有物理可读性。它特别适合弱摄动，因为常数的变化速度通常比原运动慢。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "常数变易法",
+          "url": "https://www.baidu.com/s?wd=%E5%B8%B8%E6%95%B0%E5%8F%98%E6%98%93%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "常数变易法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B8%B8%E6%95%B0%E5%8F%98%E6%98%93%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "variation of constants",
+          "url": "https://en.wikipedia.org/w/index.php?search=variation%20of%20constants"
+        }
       ]
     },
     {
@@ -1511,6 +3005,24 @@
         "平移 动量 时间 能量 转动 J",
         "守恒流",
         "noether theorem"
+      ],
+      "explanation_markdown": "诺特定理把连续对称性与守恒量一一联系起来，是分析力学中对称性的核心结果。核心关系可写作 $\\delta S=0\\Rightarrow Q=\\sum_i p_i\\delta q_i-F=\\mathrm{const}$，其中S是作用量，Q是守恒量，p_i为共轭动量，F为边界项。空间平移给动量守恒，时间平移给能量守恒，转动对称给角动量守恒。\n\n它说明守恒不是偶然，而是对称性的影子。反过来，发现守恒量常提示背后有对称性；这使它成为从实验守恒规律追溯理论结构的有力工具。连续对称性必须作用在作用量上，而不只是某个方程外观上相似；边界项也可能贡献守恒荷。守恒荷的具体形式会随边界项和变量选择改变，但守恒内容不变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "诺特定理",
+          "url": "https://www.baidu.com/s?wd=%E8%AF%BA%E7%89%B9%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "诺特定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%AF%BA%E7%89%B9%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "noether theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=noether%20theorem"
+        }
       ]
     },
     {
@@ -1529,6 +3041,24 @@
         "平移 动量 时间 能量 转动 δS=0",
         "守恒流",
         "space translation symmetry"
+      ],
+      "explanation_markdown": "空间平移对称性表示系统在整体位置平移后动力学不变。核心关系可写作 $\\delta\\mathbf r_a=\\boldsymbol\\epsilon\\Rightarrow \\mathbf P=\\sum_a\\mathbf p_a=\\mathrm{const}$，其中\\boldsymbol\\epsilon是无穷小平移，\\mathbf P是总动量，\\mathbf p_a为质点动量。若拉格朗日量不依赖绝对位置，就没有外部空间标尺选择特殊点。\n\n诺特定理因此给出总动量守恒。若外势V(\\mathbf r)固定了某个中心，空间平移对称性被破坏，总动量不再守恒；这正是外场提供动量交换的意思。晶格中连续平移对称降为离散平移，对应守恒量变成准动量；这显示对称性类型会改变守恒量含义。均匀空间中的自由粒子、孤立多体系统都体现这一对称。外壁或固定势场会破坏它。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "空间平移对称性",
+          "url": "https://www.baidu.com/s?wd=%E7%A9%BA%E9%97%B4%E5%B9%B3%E7%A7%BB%E5%AF%B9%E7%A7%B0%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "空间平移对称性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A9%BA%E9%97%B4%E5%B9%B3%E7%A7%BB%E5%AF%B9%E7%A7%B0%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "space translation symmetry",
+          "url": "https://en.wikipedia.org/w/index.php?search=space%20translation%20symmetry"
+        }
       ]
     },
     {
@@ -1547,6 +3077,24 @@
         "平移 动量 时间 能量 转动 δS=0",
         "守恒流",
         "time translation symmetry"
+      ],
+      "explanation_markdown": "时间平移对称性表示物理规律不随实验开始时刻改变，拉格朗日量不显含时间。核心关系可写作 $\\partial L/\\partial t=0\\Rightarrow H=\\sum_i p_i\\dot q_i-L=\\mathrm{const}$，其中L为拉格朗日量，H为哈密顿量，p_i是共轭动量。这对应能量守恒。若外部驱动或约束显含时间，对称性破缺，系统能量就可能被注入或抽取。\n\n周期驱动系统没有连续时间平移对称，只可能保留离散时间平移；这时能量守恒会被准能概念取代。在实验中，若参数随时间外控改变，时间平移对称性消失；系统能量变化来自外部装置做功。它对应实验今天做和明天做规律相同，而不是系统状态本身不变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "时间平移对称性",
+          "url": "https://www.baidu.com/s?wd=%E6%97%B6%E9%97%B4%E5%B9%B3%E7%A7%BB%E5%AF%B9%E7%A7%B0%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "时间平移对称性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%97%B6%E9%97%B4%E5%B9%B3%E7%A7%BB%E5%AF%B9%E7%A7%B0%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "time translation symmetry",
+          "url": "https://en.wikipedia.org/w/index.php?search=time%20translation%20symmetry"
+        }
       ]
     },
     {
@@ -1565,6 +3113,24 @@
         "平移 动量 时间 能量 转动 δS=0",
         "守恒流",
         "rotational symmetry"
+      ],
+      "explanation_markdown": "转动对称性表示系统在整体旋转后动力学不变，没有选定特殊空间方向。核心关系可写作 $\\delta\\mathbf r_a=\\boldsymbol\\epsilon\\times\\mathbf r_a\\Rightarrow \\mathbf L=\\sum_a\\mathbf r_a\\times\\mathbf p_a=\\mathrm{const}$，其中\\boldsymbol\\epsilon是无穷小转角，\\mathbf L是总角动量。中心力场和自由刚体常体现这种结构。诺特定理说明角动量守恒来自空间各方向的等价性。\n\n若只有绕某一轴的对称性，则只守恒该轴角动量分量；完整球对称才给出整个角动量矢量守恒。中心势的角动量守恒和刚体的空间转动对称同源；区别只在自由度和惯性张量的具体表达。球对称给三维转动群，轴对称只给一维转动子群。角动量守恒的分量数由它决定。也决定简并结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "转动对称性",
+          "url": "https://www.baidu.com/s?wd=%E8%BD%AC%E5%8A%A8%E5%AF%B9%E7%A7%B0%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "转动对称性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BD%AC%E5%8A%A8%E5%AF%B9%E7%A7%B0%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "rotational symmetry",
+          "url": "https://en.wikipedia.org/w/index.php?search=rotational%20symmetry"
+        }
       ]
     },
     {
@@ -1583,6 +3149,24 @@
         "L Iω Iωdot ω×Iω I",
         "欧拉角 进动 力矩",
         "inertia ellipsoid"
+      ],
+      "explanation_markdown": "惯量椭球用几何曲面表示刚体绕不同方向转动惯量的大小。核心关系可写作 $\\mathbf n^TI\\mathbf n=I(\\mathbf n)$，其中\\mathbf n是单位转轴方向，I为惯性张量，I(\\mathbf n)为该方向转动惯量。在主轴系中曲面与主转动惯量直接相关。\n\n它把抽象惯性张量可视化，帮助理解为何某些轴更容易稳定转动。椭球主轴方向对应惯性主轴，半轴长与主转动惯量相关；图形越扁，说明不同方向转动惯性差别越明显。工程上可用它判断转子哪条轴转动更省力、哪条轴更敏感；几何图像比三个数字更直观。椭球的主方向和主轴一致，因此它是惯性张量的几何画像。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "惯量椭球",
+          "url": "https://www.baidu.com/s?wd=%E6%83%AF%E9%87%8F%E6%A4%AD%E7%90%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "惯量椭球",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%83%AF%E9%87%8F%E6%A4%AD%E7%90%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inertia ellipsoid",
+          "url": "https://en.wikipedia.org/w/index.php?search=inertia%20ellipsoid"
+        }
       ]
     },
     {
@@ -1601,6 +3185,24 @@
         "L Iω Iωdot ω×Iω I",
         "欧拉角 进动 力矩",
         "principal axis of inertia"
+      ],
+      "explanation_markdown": "惯性主轴是惯性张量的本征轴，沿这些轴转动时惯性耦合项消失。核心关系可写作 $I\\mathbf e_i=I_i\\mathbf e_i$，其中I是惯性张量，\\mathbf e_i为惯性主轴，I_i为主转动惯量。主轴通常由刚体质量分布和对称性决定。选用主轴系后角动量分量为L_i=I_i\\omega_i，刚体方程最简洁。\n\n绕最大或最小主轴的自由转动通常稳定，绕中间主轴可能不稳定；这个事实可直接从欧拉方程线性化看出。实际转子动平衡常要让转轴接近惯性主轴，否则转动时角动量偏离轴线，会产生轴承载荷和振动。制造转子时找准惯性主轴，可减少高速转动中的摆振。它们通常彼此正交。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "惯性主轴",
+          "url": "https://www.baidu.com/s?wd=%E6%83%AF%E6%80%A7%E4%B8%BB%E8%BD%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "惯性主轴",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%83%AF%E6%80%A7%E4%B8%BB%E8%BD%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "principal axis of inertia",
+          "url": "https://en.wikipedia.org/w/index.php?search=principal%20axis%20of%20inertia"
+        }
       ]
     },
     {
@@ -1619,6 +3221,24 @@
         "L Iω Iωdot ω×Iω 物体系 固定参考系 参考系",
         "欧拉角 进动 力矩",
         "body fixed frame"
+      ],
+      "explanation_markdown": "本体坐标系固定在刚体上，随刚体一起转动，适合描述惯性张量恒定的转动问题。核心关系可写作 $\\left(\\frac{d\\mathbf A}{dt}\\right)_{s}=\\left(\\frac{d\\mathbf A}{dt}\\right)_{b}+\\boldsymbol\\omega\\times\\mathbf A$，其中下标s表示空间系，b表示本体系，\\boldsymbol\\omega是角速度。在本体系中刚体几何和主轴不随时间变，但导数公式会多出旋转项。\n\n欧拉方程正是利用这一点得到。在本体系中惯性张量不随时间变，代价是时间导数要加入\\omega\\times项；刚体动力学常在这两个便利之间取舍。本体系分量便于写刚体自身结构，空间系分量便于写外部观察；二者的转换由转动矩阵负责。随体坐标让刚体上的固定点坐标保持不变，适合写结构参数。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "本体坐标系",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%AC%E4%BD%93%E5%9D%90%E6%A0%87%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "本体坐标系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%AC%E4%BD%93%E5%9D%90%E6%A0%87%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "body fixed frame",
+          "url": "https://en.wikipedia.org/w/index.php?search=body%20fixed%20frame"
+        }
       ]
     },
     {
@@ -1637,6 +3257,24 @@
         "L Iω Iωdot ω×Iω 空间结构 固定参考系 参考系",
         "欧拉角 进动 力矩",
         "space fixed frame"
+      ],
+      "explanation_markdown": "空间坐标系通常取为不随刚体转动的惯性参考系，用来观察刚体整体取向变化。核心关系可写作 $\\mathbf A_s=R(t)\\mathbf A_b$，其中\\mathbf A_s为空间系分量，\\mathbf A_b为本体系分量，R(t)为转动矩阵。空间系中角动量变化直接满足d\\mathbf L/dt=\\mathbf N。\n\n与本体系配合使用，可以同时保持外力方向和刚体惯量结构的清晰。外力矩如重力矩在空间系中方向更直观，而惯性张量在本体系中更简单；实际推导经常在两者之间转换。空间坐标系通常与实验室相连，适合描述重力方向、外场方向和观测角度；它不随物体翻滚而改变。实验测得的位置和方向通常先落在空间坐标系中。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "空间坐标系",
+          "url": "https://www.baidu.com/s?wd=%E7%A9%BA%E9%97%B4%E5%9D%90%E6%A0%87%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "空间坐标系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A9%BA%E9%97%B4%E5%9D%90%E6%A0%87%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "space fixed frame",
+          "url": "https://en.wikipedia.org/w/index.php?search=space%20fixed%20frame"
+        }
       ]
     },
     {
@@ -1655,6 +3293,24 @@
         "qdot dq/dt p_i ∂L/∂qdot_i L=r×p qdot_i",
         "Q_i δq_i",
         "angular velocity vector"
+      ],
+      "explanation_markdown": "角速度矢量描述刚体瞬时转动轴和转动快慢，其方向按右手定则确定。核心关系可写作 $\\mathbf v=\\boldsymbol\\omega\\times\\mathbf r$，其中\\mathbf v是刚体上一点相对固定点的速度，\\boldsymbol\\omega是角速度，\\mathbf r是位置矢量。它不是普通速度，而是转动生成元。\n\n刚体所有点的速度场都由同一个\\boldsymbol\\omega决定，这是刚体运动的核心约束。任意瞬时刚体运动都可看作绕某瞬时轴转动；角速度矢量正是这条瞬时轴和速率的紧凑编码。角速度的叠加遵循矢量瞬时叠加，但有限转动本身不可交换；这一区分在欧拉角计算中很重要。方向给瞬时转轴，大小给单位时间转过的角度。单位常用弧度每秒。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "角速度矢量",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%92%E9%80%9F%E5%BA%A6%E7%9F%A2%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "角速度矢量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%92%E9%80%9F%E5%BA%A6%E7%9F%A2%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "angular velocity vector",
+          "url": "https://en.wikipedia.org/w/index.php?search=angular%20velocity%20vector"
+        }
       ]
     },
     {
@@ -1673,6 +3329,24 @@
         "qdot dq/dt p_i ∂L/∂qdot_i L=r×p p_i",
         "Q_i δq_i",
         "angular momentum vector"
+      ],
+      "explanation_markdown": "角动量矢量衡量系统绕某参考点的转动状态，是转动对称性对应的守恒量。核心关系可写作 $\\mathbf L=\\sum_a\\mathbf r_a\\times\\mathbf p_a$，其中\\mathbf r_a是相对参考点的位置，\\mathbf p_a是动量，求和遍及质点。刚体中还可写为\\mathbf L=I\\boldsymbol\\omega。若外力矩为零，角动量守恒；若惯性张量非球对称，\\mathbf L与\\boldsymbol\\omega可不平行。\n\n角动量守恒约束的是矢量整体而非单一大小；在外力矩不为零时，它的变化方向由力矩方向决定。对质点它由位置和动量叉乘给出，对刚体它还依赖质量分布；两种表达在质点系求和时统一。它依赖参考点；换参考点时，轨道角动量会随位置基准改变。选点不同，物理解释也会不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "角动量矢量",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%92%E5%8A%A8%E9%87%8F%E7%9F%A2%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "角动量矢量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%92%E5%8A%A8%E9%87%8F%E7%9F%A2%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "angular momentum vector",
+          "url": "https://en.wikipedia.org/w/index.php?search=angular%20momentum%20vector"
+        }
       ]
     },
     {
@@ -1691,6 +3365,24 @@
         "d/dt ∂L/∂qdot_i ∂L/∂q_i Iωdot+ω×Iω=N",
         "L Q_i",
         "euler kinematic equation"
+      ],
+      "explanation_markdown": "欧拉运动学方程把刚体角速度分量与欧拉角的时间导数联系起来。核心关系可写作 $\\omega_3=\\dot\\psi+\\dot\\phi\\cos\\theta$，其中\\omega_3是本体第三轴角速度分量，\\phi,\\theta,\\psi为欧拉角。完整方程还给出\\omega_1和\\omega_2。它是运动学关系，不含力矩；把取向坐标和实际角速度连接后，才能写出刚体拉格朗日量。\n\n这些方程只说明坐标角如何生成角速度；要得到角随时间的真实变化，还必须再联立欧拉动力学方程。欧拉角存在奇异位形时，运动学方程会变得病态；数值模拟常改用四元数避免这种坐标问题。它是几何约束关系，不涉及质量、惯量或外力矩。因此它先于动力学求解。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "欧拉运动学方程",
+          "url": "https://www.baidu.com/s?wd=%E6%AC%A7%E6%8B%89%E8%BF%90%E5%8A%A8%E5%AD%A6%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "欧拉运动学方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AC%A7%E6%8B%89%E8%BF%90%E5%8A%A8%E5%AD%A6%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "euler kinematic equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=euler%20kinematic%20equation"
+        }
       ]
     },
     {
@@ -1709,6 +3401,24 @@
         "L Iω Iωdot ω×Iω 对称结构 陀螺模型",
         "欧拉角 进动 力矩",
         "symmetric top"
+      ],
+      "explanation_markdown": "对称陀螺是两个主转动惯量相等的刚体，绕对称轴的转动具有额外简化。核心关系可写作 $I_1=I_2\\ne I_3$，其中I_1,I_2,I_3是三个主转动惯量。这种对称性使绕对称轴的角动量分量常成为守恒量。自由对称陀螺和重对称陀螺是研究进动、章动的标准模型。\n\n由于I_1=I_2，本体系绕对称轴旋转不改变惯性张量；这使自旋角常成为循环坐标。若支点在对称轴上且受重力作用，就得到重对称陀螺；若无外力矩，则自旋和进动可由守恒量完全描述。高速对称陀螺的自旋角常比进动角变化快得多。这种简并降低了方程复杂度。常见于陀螺仪。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对称陀螺",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E7%A7%B0%E9%99%80%E8%9E%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对称陀螺",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E7%A7%B0%E9%99%80%E8%9E%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "symmetric top",
+          "url": "https://en.wikipedia.org/w/index.php?search=symmetric%20top"
+        }
       ]
     },
     {
@@ -1727,6 +3437,24 @@
         "L Iω Iωdot ω×Iω 重力矩 陀螺模型",
         "欧拉角 进动 力矩",
         "heavy top"
+      ],
+      "explanation_markdown": "重陀螺是在重力场中绕固定点运动的刚体，重力对质心产生力矩。核心关系可写作 $L=T-Mgl\\cos\\theta$，其中L为拉格朗日量，T为转动动能，M为质量，l为固定点到质心距离，\\theta为倾角。它兼有快速自转、进动和章动。\n\n势能项只依赖倾角，使若干角变量循环，从而形成可约化的一维有效运动。它的可解性来自两个循环角带来的守恒量；倾角运动则像一维粒子在有效势中往复。重陀螺展示了外力矩、约束点和自旋共同作用；它比自由陀螺多一个重力势能项，也多了可观测进动。支点、质心和重力方向构成了它的基本几何三要素。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "重陀螺",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8D%E9%99%80%E8%9E%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "重陀螺",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8D%E9%99%80%E8%9E%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "heavy top",
+          "url": "https://en.wikipedia.org/w/index.php?search=heavy%20top"
+        }
       ]
     },
     {
@@ -1745,6 +3473,24 @@
         "L Iω Iωdot ω×Iω 磁矩进动 轴向进动",
         "欧拉角 进动 力矩",
         "larmor precession"
+      ],
+      "explanation_markdown": "拉莫尔进动是磁矩在外磁场中因力矩作用而绕磁场方向进动的现象。核心关系可写作 $\\boldsymbol\\Omega_L=-\\gamma\\mathbf B$，其中\\boldsymbol\\Omega_L为进动角速度，\\gamma为旋磁比，\\mathbf B为磁感应强度。经典图像中磁矩受力矩\\boldsymbol\\mu\\times\\mathbf B，量子图像中能级相位相对积累。\n\n它连接陀螺进动、磁共振和自旋动力学。在核磁共振中，外磁场越强，拉莫尔频率越高；测量这个频率可以反推出局域磁场强度。它的方向取决于磁矩与角动量的符号关系；电子因电荷为负，进动方向常与简单正电荷陀螺类比相反。磁共振实验正是通过锁定这个频率来选择特定自旋体系。符号约定需随旋磁比一起看。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拉莫尔进动",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%89%E8%8E%AB%E5%B0%94%E8%BF%9B%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拉莫尔进动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%89%E8%8E%AB%E5%B0%94%E8%BF%9B%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "larmor precession",
+          "url": "https://en.wikipedia.org/w/index.php?search=larmor%20precession"
+        }
       ]
     },
     {
@@ -1763,6 +3509,24 @@
         "K a ω² M a 平衡点",
         "正定判据",
         "equilibrium position"
+      ],
+      "explanation_markdown": "平衡位置是广义力为零、系统可在无初速度时保持静止的位形。核心关系可写作 $\\partial V/\\partial q_i=0$，其中V是势能，q_i为广义坐标。平衡本身只是一阶条件，稳定性还要看势能二阶变化。围绕平衡位置展开，能得到小振动的质量矩阵和刚度矩阵。\n\n若平衡条件来自势能，求解时先找一阶导数为零的点，再用二阶矩阵判断它是稳定、鞍点还是退化平衡。平衡位置可以是一点、一条曲线或更高维流形；若存在连续对称性，沿对称方向常出现零频模式。平衡位置附近的一阶力为零，二阶项才决定回复或逃离。连续平衡还会带来零模。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平衡位置",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E8%A1%A1%E4%BD%8D%E7%BD%AE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平衡位置",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E8%A1%A1%E4%BD%8D%E7%BD%AE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "equilibrium position",
+          "url": "https://en.wikipedia.org/w/index.php?search=equilibrium%20position"
+        }
       ]
     },
     {
@@ -1781,6 +3545,24 @@
         "K a ω² M a 质量参数 矩阵表示",
         "正定判据",
         "mass matrix"
+      ],
+      "explanation_markdown": "质量矩阵是在广义坐标中表示动能二次型的矩阵，描述各速度分量的惯性耦合。核心关系可写作 $T=\\frac12\\dot q^TM(q)\\dot q$，其中T为动能，\\dot q为广义速度列向量，M(q)为质量矩阵。非对角元表示不同广义速度之间的动能耦合。\n\n小振动中它与刚度矩阵共同决定简正频率。质量矩阵随坐标变化时，运动方程会出现类似几何联络的项；这在摆、机器人连杆和分子坐标中很常见。在多体系统中，质量矩阵还编码坐标之间的运动学耦合；同样的质量分布，换坐标后矩阵形式会改变。它必须正定，才表示任意非零速度都有正动能。非对角元代表动能耦合。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "质量矩阵",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%A8%E9%87%8F%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "质量矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%A8%E9%87%8F%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mass matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=mass%20matrix"
+        }
       ]
     },
     {
@@ -1799,6 +3581,24 @@
         "K a ω² M a 目标量 矩阵表示",
         "正定判据",
         "stiffness matrix"
+      ],
+      "explanation_markdown": "刚度矩阵是势能在平衡位置附近的二阶导数矩阵，描述小位移的回复强度。核心关系可写作 $K_{ij}=\\left.\\partial^2V/\\partial q_i\\partial q_j\\right|_{q_0}$，其中K_{ij}为刚度矩阵元，V是势能，q_0为平衡位置。若K正定，平衡位置在势能局部极小附近。\n\n它和质量矩阵构成本征方程，给出小振动频率与模式。刚度矩阵的本征结构决定哪些组合方向容易变形；负本征值意味着该平衡沿相应方向不是回复而是逃离。实验模态分析中，刚度矩阵常由频率和振型反推；它是连接材料弹性、约束条件和振动响应的核心对象。它来自势能曲率，而不是来自质量分布。非对角元代表回复力耦合。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "刚度矩阵",
+          "url": "https://www.baidu.com/s?wd=%E5%88%9A%E5%BA%A6%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "刚度矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%9A%E5%BA%A6%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stiffness matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=stiffness%20matrix"
+        }
       ]
     },
     {
@@ -1817,6 +3617,24 @@
         "T V L H q_i ω",
         "守恒律 运动方程",
         "eigenfrequency"
+      ],
+      "explanation_markdown": "本征频率是线性化振动系统能够独立振荡的固有频率。核心关系可写作 $K\\mathbf a=\\omega^2M\\mathbf a$，其中K为刚度矩阵，M为质量矩阵，\\mathbf a为振型，\\omega为本征频率。每个本征频率对应一个本征振型。它们由系统结构决定，而不是由初始条件随意指定；初始条件只决定各模式振幅。\n\n若两个频率相同，会出现模式简并，任意线性组合仍可作为正常模式；对称性常是简并的来源。频率为零的模式表示刚体平移、转动或连续对称方向；它不是振动，而是势能不变的自由运动。它通常以角频率表示，和普通频率相差因子二π。频率谱可直接暴露对称性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "本征频率",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%AC%E5%BE%81%E9%A2%91%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "本征频率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%AC%E5%BE%81%E9%A2%91%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "eigenfrequency",
+          "url": "https://en.wikipedia.org/w/index.php?search=eigenfrequency"
+        }
       ]
     },
     {
@@ -1835,6 +3653,24 @@
         "T V L H q_i a",
         "守恒律 运动方程",
         "eigenmode"
+      ],
+      "explanation_markdown": "本征振型是本征频率对应的位移比例向量，表示各坐标在该模式中的相对运动。核心关系可写作 $K\\mathbf a_k=\\omega_k^2M\\mathbf a_k$，其中\\mathbf a_k为第k个振型，\\omega_k为本征频率，K和M分别为刚度与质量矩阵。同一振型只差整体倍数仍代表同一模式。\n\n适当归一化后，不同模式常关于质量矩阵正交。振型归一化可按最大位移、质量矩阵或能量来选；归一化不同不改物理形状，只改坐标幅度的标尺。本征振型的节点位置、相位关系和对称性常决定哪些外力能有效激发它，哪些激发会因正交性而消失。振型只给相对位移比例，整体幅度由初始条件决定。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "本征振型",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%AC%E5%BE%81%E6%8C%AF%E5%9E%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "本征振型",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%AC%E5%BE%81%E6%8C%AF%E5%9E%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "eigenmode",
+          "url": "https://en.wikipedia.org/w/index.php?search=eigenmode"
+        }
       ]
     },
     {
@@ -1853,6 +3689,24 @@
         "相图 截面 体积守恒 相位移 相轨线",
         "可积常数 初值",
         "phase trajectory"
+      ],
+      "explanation_markdown": "相轨道是系统状态点在相空间中随时间扫出的曲线，记录坐标和动量的联合演化。核心关系可写作 $z(t)=(q(t),p(t))$，其中z(t)是相空间点，q为广义坐标，p为正则动量。同一位形轨迹可能对应不同动量历史，因此相轨道比空间轨道包含更多动力学信息。\n\n周期、准周期和混沌运动在相空间中有不同几何形态。保守一自由度系统的相轨道通常沿能量曲线闭合或开放；耗散系统则会螺旋靠近吸引子，不属于哈密顿相流。相轨道给出确定系统的完整历史；只看位形投影可能会误把不同能量或不同方向的运动混为一谈。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相轨道",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E8%BD%A8%E9%81%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相轨道",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E8%BD%A8%E9%81%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "phase trajectory",
+          "url": "https://en.wikipedia.org/w/index.php?search=phase%20trajectory"
+        }
       ]
     },
     {
@@ -1871,6 +3725,24 @@
         "相图 截面 体积守恒 Σ",
         "可积常数 初值",
         "poincare section"
+      ],
+      "explanation_markdown": "庞加莱截面是用一个低维截面反复截取连续相流，以观察长期动力学结构的方法。核心关系可写作 $P:\\Sigma\\to\\Sigma$，其中P是返回映射，\\Sigma为选定截面。周期轨道在截面上表现为有限点，准周期运动形成闭曲线，混沌运动则生成散布点集。\n\n它把连续时间问题转化为离散映射。选择截面要横截相流，不能让轨道贴着截面滑行；合适截面能把高维连续运动压缩成可观察的点列结构。截面图中岛链、闭曲线和散点云分别提示共振、准周期和混沌区域，是研究非线性动力学的常用诊断。它把难画的连续轨道变成点列，便于看出结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "庞加莱截面",
+          "url": "https://www.baidu.com/s?wd=%E5%BA%9E%E5%8A%A0%E8%8E%B1%E6%88%AA%E9%9D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "庞加莱截面",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BA%9E%E5%8A%A0%E8%8E%B1%E6%88%AA%E9%9D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "poincare section",
+          "url": "https://en.wikipedia.org/w/index.php?search=poincare%20section"
+        }
       ]
     },
     {
@@ -1889,6 +3761,24 @@
         "相图 截面 体积守恒 λ",
         "可积常数 初值",
         "chaos"
+      ],
+      "explanation_markdown": "混沌是确定性动力系统中对初始条件高度敏感、长期行为难以预测的运动形态。核心关系可写作 $\\lambda=\\lim_{t\\to\\infty}\\frac1t\\ln\\frac{|\\delta z(t)|}{|\\delta z(0)|}$，其中\\lambda是最大李雅普诺夫指数，\\delta z为相空间微小偏离。正的\\lambda表示邻近轨道指数分离。\n\n混沌并非随机外力造成，而是非线性系统内部结构导致的确定性复杂行为。混沌系统短期可精确积分，长期预测却因初值误差指数放大而失效；它强调确定性方程中的实际不可预报性。混沌不等于没有规律；它常有吸引子、分形结构和统计稳定性，只是单条轨道长期细节对初值极端敏感。正李雅普诺夫指数是识别混沌的重要定量标志。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "混沌",
+          "url": "https://www.baidu.com/s?wd=%E6%B7%B7%E6%B2%8C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "混沌",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B7%B7%E6%B2%8C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "chaos",
+          "url": "https://en.wikipedia.org/w/index.php?search=chaos"
+        }
       ]
     },
     {
@@ -1907,6 +3797,24 @@
         "K a ω² M a 扰动响应",
         "正定判据",
         "stability"
+      ],
+      "explanation_markdown": "稳定性描述系统轨道或平衡态在小扰动下是否仍保持接近原运动。核心关系可写作 $\\delta\\dot z=A(t)\\delta z$，其中\\delta z是相空间扰动，A(t)为线性化演化矩阵。若扰动有界或衰减，运动可称稳定；若出现指数增长，则不稳定。\n\n稳定性分析连接势能二阶判据、线性本征值和非线性长期行为。稳定可以指李雅普诺夫稳定、渐近稳定或线性稳定，含义不同；哈密顿系统常有有界振荡而非耗散衰减。对周期轨道还要考察单周期映射的乘子；平衡点稳定性只是更一般轨道稳定问题的特殊情形。稳定性结论总是相对某类扰动和某个时间尺度而言。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳定性",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E5%AE%9A%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳定性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E5%AE%9A%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stability",
+          "url": "https://en.wikipedia.org/w/index.php?search=stability"
+        }
       ]
     },
     {
@@ -1925,6 +3833,24 @@
         "相图 截面 体积守恒 变量分离 状态参数",
         "可积常数 初值",
         "separable variable"
+      ],
+      "explanation_markdown": "可分离变量是指在某些坐标中，动力学方程或哈密顿雅可比方程可拆成单变量部分。核心关系可写作 $S(q,t)=\\sum_iS_i(q_i)-Et$，其中S是作用函数，S_i只依赖单个坐标q_i，E为能量常数。分离后偏微分方程化为常微分方程，并产生额外积分常数。\n\n中心力、椭圆坐标和若干可积系统都依赖这种结构。变量可分离依赖坐标选择和势能形式；同一系统在笛卡尔坐标不可分，换到球坐标或椭圆坐标后可能变得可解。分离常伴随隐藏守恒量；若变量无法分离，系统未必不可解，但解析求积和量子数标记会困难得多。分离常带来新的量子数或积分常数，说明问题隐藏着规则结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "可分离变量",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%AF%E5%88%86%E7%A6%BB%E5%8F%98%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "可分离变量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%AF%E5%88%86%E7%A6%BB%E5%8F%98%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "separable variable",
+          "url": "https://en.wikipedia.org/w/index.php?search=separable%20variable"
+        }
       ]
     },
     {
@@ -1943,6 +3869,24 @@
         "S ∫Ldt δW ΣQ_iδq_i S=∫Ldt",
         "驻值条件",
         "action angle variable"
+      ],
+      "explanation_markdown": "作用角变量是可积系统中的正则变量，使运动化为角变量匀速转动。核心关系可写作 $J_i=\\frac{1}{2\\pi}\\oint p_i\\,dq_i,\\quad \\dot\\theta_i=\\omega_i(J)$，其中J_i是作用变量，\\theta_i是角变量，p_i和q_i为正则变量。作用变量在周期运动中守恒，角变量线性增长。\n\n它把复杂闭合或准周期轨道变成环面上的均匀流。对缓慢变化参数，作用变量常近似绝热不变量；这使它在天体长期演化和半经典量子化中非常有用。旧量子论中的玻尔索末菲量子化就使用作用积分；现代半经典方法仍把J_i与量子数联系起来。角变量是周期坐标，作用变量则像环面大小的标签。它们也是绝热不变量理论的核心。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "作用角变量",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%9C%E7%94%A8%E8%A7%92%E5%8F%98%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "作用角变量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%9C%E7%94%A8%E8%A7%92%E5%8F%98%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "action angle variable",
+          "url": "https://en.wikipedia.org/w/index.php?search=action%20angle%20variable"
+        }
       ]
     }
   ]

@@ -1,0 +1,2405 @@
+{
+  "source_file": "words/数学/普通模式/operations_research_terms.csv",
+  "entries": [
+    {
+      "chinese_name": "线性规划",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "线性规划是在线性目标和线性约束下优化连续决策变量的模型。常写成 $\\max c^Tx\\quad\\text{s.t. }Ax\\le b,\\ x\\ge0$，其中$x$ 是决策向量，$c,A,b$ 给出目标和资源限制。\n\n它不同于整数规划，变量通常可连续取值；也不同于动态规划，后者按状态阶段递推。可行域是凸多面体，最优解若存在常可在顶点处取得。在运筹模型中，线性规划决定方案怎样被描述、筛选或比较；变量、目标和约束必须放在一起看。线性规划要放在变量、目标和约束的整体关系中理解；它影响可行方案的表示、排序或算法移动方式。线性规划所在的线性规划模型通常假设连续变量和确定性数据；若出现整数、随机或多阶段结构，模型需要相应扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线性规划",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线性规划",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear programming",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20programming"
+        }
+      ]
+    },
+    {
+      "chinese_name": "目标函数",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "目标函数指把一个可行方案映成需要最大化或最小化数值的函数。常写成 $z=f(x)\\quad\\text{or}\\quad z=c^Tx$，其中$x$ 是决策变量，$z$ 是评价值。\n\n它与约束条件不同，约束决定哪些方案可行，目标函数决定可行方案之间如何排序。在线性规划中目标是线性的，在多目标规划中则需要处理多个目标的权衡。在运筹模型中，目标函数决定方案怎样被描述、筛选或比较；变量、目标和约束必须放在一起看。目标函数要放在变量、目标和约束的整体关系中理解；它影响可行方案的表示、排序或算法移动方式。目标函数所在的线性规划模型通常假设连续变量和确定性数据；若出现整数、随机或多阶段结构，模型需要相应扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "目标函数",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%AE%E6%A0%87%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "目标函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%AE%E6%A0%87%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "objective function",
+          "url": "https://en.wikipedia.org/w/index.php?search=objective%20function"
+        }
+      ]
+    },
+    {
+      "chinese_name": "约束条件",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "约束条件用来描述限制决策变量取值范围的等式、不等式或逻辑条件。一个核心表达是 $g_i(x)\\le0,\\quad h_j(x)=0$，这里$g_i,h_j$ 是约束函数，$x$ 是变量。\n\n它不同于目标函数，约束不直接给优劣，而是定义可行域边界。资源容量、需求满足、整数性和网络守恒都可写成约束条件。在运筹模型中，约束条件决定方案怎样被描述、筛选或比较；变量、目标和约束必须放在一起看。约束条件要放在变量、目标和约束的整体关系中理解；它影响可行方案的表示、排序或算法移动方式。约束条件所在的线性规划模型通常假设连续变量和确定性数据；若出现整数、随机或多阶段结构，模型需要相应扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "约束条件",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%A6%E6%9D%9F%E6%9D%A1%E4%BB%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "约束条件",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%A6%E6%9D%9F%E6%9D%A1%E4%BB%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "constraints",
+          "url": "https://en.wikipedia.org/w/index.php?search=constraints"
+        }
+      ]
+    },
+    {
+      "chinese_name": "可行域",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "可行域刻画所有满足约束条件的决策向量组成的集合。一个核心表达是 $F=\\{x:Ax\\le b,\\ x\\ge0\\}$，这里$F$ 是可行域，$A,b$ 来自线性约束。\n\n它与可行解的区别在于前者是集合，后者是集合中的一个元素。线性规划的可行域是凸多面体，整数规划的可行点则是离散集合。在运筹模型中，可行域决定方案怎样被描述、筛选或比较；变量、目标和约束必须放在一起看。可行域要放在变量、目标和约束的整体关系中理解；它影响可行方案的表示、排序或算法移动方式。可行域所在的线性规划模型通常假设连续变量和确定性数据；若出现整数、随机或多阶段结构，模型需要相应扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "可行域",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%AF%E8%A1%8C%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "可行域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%AF%E8%A1%8C%E5%9F%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "feasible region",
+          "url": "https://en.wikipedia.org/w/index.php?search=feasible%20region"
+        }
+      ]
+    },
+    {
+      "chinese_name": "可行解",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "可行解是满足所有约束条件的一个具体方案。在常用记号中有 $x\\in F$，其中$x$ 是方案，$F$ 是可行域。\n\n可行解不一定最优，最优解必须在可行解中使目标达到极值。建模时先明确可行性，才能讨论目标值、松弛变量和算法迭代。在运筹模型中，可行解决定方案怎样被描述、筛选或比较；变量、目标和约束必须放在一起看。可行解要放在变量、目标和约束的整体关系中理解；它影响可行方案的表示、排序或算法移动方式。可行解所在的线性规划模型通常假设连续变量和确定性数据；若出现整数、随机或多阶段结构，模型需要相应扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "可行解",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%AF%E8%A1%8C%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "可行解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%AF%E8%A1%8C%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "feasible solution",
+          "url": "https://en.wikipedia.org/w/index.php?search=feasible%20solution"
+        }
+      ]
+    },
+    {
+      "chinese_name": "最优解",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "最优解指在可行域内使目标函数达到最大或最小的可行解。在常用记号中有 $f(x^*)=\\min_{x\\in F}f(x)$，其中$x^*$ 是最优解，$F$ 是可行域。\n\n它与可行解的差别在目标值；与局部最优相比，全局最优要优于整个可行域。线性规划可借单纯形或内点法寻找，非凸问题可能只能保证局部最优。在运筹模型中，最优解决定方案怎样被描述、筛选或比较；变量、目标和约束必须放在一起看。最优解要放在变量、目标和约束的整体关系中理解；它影响可行方案的表示、排序或算法移动方式。最优解所在的线性规划模型通常假设连续变量和确定性数据；若出现整数、随机或多阶段结构，模型需要相应扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最优解",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E4%BC%98%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最优解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E4%BC%98%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "optimal solution",
+          "url": "https://en.wikipedia.org/w/index.php?search=optimal%20solution"
+        }
+      ]
+    },
+    {
+      "chinese_name": "基可行解",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "基可行解用来描述线性规划标准形中由一组基变量确定的可行顶点解。可写作 $Ax=b,\\quad x_B=B^{-1}b,\\quad x_N=0$，这里$B$ 是基矩阵，$x_B$ 是基变量。\n\n它不同于任意可行解，基可行解对应多面体顶点；退化时某些基变量可为零。单纯形法正是在相邻基可行解之间移动并改善目标值。在运筹模型中，基可行解决定方案怎样被描述、筛选或比较；变量、目标和约束必须放在一起看。基可行解要放在变量、目标和约束的整体关系中理解；它影响可行方案的表示、排序或算法移动方式。基可行解所在的线性规划模型通常假设连续变量和确定性数据；若出现整数、随机或多阶段结构，模型需要相应扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "基可行解",
+          "url": "https://www.baidu.com/s?wd=%E5%9F%BA%E5%8F%AF%E8%A1%8C%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "基可行解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9F%BA%E5%8F%AF%E8%A1%8C%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "basic feasible solution",
+          "url": "https://en.wikipedia.org/w/index.php?search=basic%20feasible%20solution"
+        }
+      ]
+    },
+    {
+      "chinese_name": "单纯形法",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "单纯形法刻画沿线性规划可行多面体顶点迭代改进目标值的算法。可写作 $x_B=B^{-1}b,\\quad \\bar c_N=c_N-c_B^TB^{-1}A_N$，这里$B$ 是当前基，$\\bar c_N$ 是检验数。\n\n它不同于内点法，单纯形法走边界顶点，内点法穿过可行域内部。在许多实际线性规划中，单纯形法虽最坏情形指数级，却表现很高效。在运筹模型中，单纯形法决定方案怎样被描述、筛选或比较；变量、目标和约束必须放在一起看。单纯形法要放在变量、目标和约束的整体关系中理解；它影响可行方案的表示、排序或算法移动方式。单纯形法所在的线性规划模型通常假设连续变量和确定性数据；若出现整数、随机或多阶段结构，模型需要相应扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单纯形法",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E7%BA%AF%E5%BD%A2%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单纯形法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E7%BA%AF%E5%BD%A2%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "simplex method",
+          "url": "https://en.wikipedia.org/w/index.php?search=simplex%20method"
+        }
+      ]
+    },
+    {
+      "chinese_name": "单纯形表",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "单纯形表是把当前基、约束系数、右端项和检验数组织成表格的计算形式。常写成 $x_B+\\bar A_Nx_N=\\bar b$，其中$x_B$ 是基变量，$x_N$ 是非基变量。\n\n它不是新模型，而是单纯形迭代的代数记录；枢轴元决定换入换出变量。通过表中检验数和比值，可以更新基可行解并维护可行性。在运筹模型中，单纯形表决定方案怎样被描述、筛选或比较；变量、目标和约束必须放在一起看。单纯形表要放在变量、目标和约束的整体关系中理解；它影响可行方案的表示、排序或算法移动方式。单纯形表所在的线性规划模型通常假设连续变量和确定性数据；若出现整数、随机或多阶段结构，模型需要相应扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单纯形表",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E7%BA%AF%E5%BD%A2%E8%A1%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单纯形表",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E7%BA%AF%E5%BD%A2%E8%A1%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "simplex table",
+          "url": "https://en.wikipedia.org/w/index.php?search=simplex%20table"
+        }
+      ]
+    },
+    {
+      "chinese_name": "枢轴元",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "枢轴元指单纯形表中用于执行基变换的主元素。常写成 $a_{rs}\\ne0$，其中$r$ 是换出行，$s$ 是换入列，$a_{rs}$ 是枢轴元。\n\n它与基变量不同，枢轴元是表中一个系数，用来完成高斯消元式更新。选取枢轴元会影响迭代路径，退化情形下还关系到循环避免规则。在运筹模型中，枢轴元决定方案怎样被描述、筛选或比较；变量、目标和约束必须放在一起看。枢轴元要放在变量、目标和约束的整体关系中理解；它影响可行方案的表示、排序或算法移动方式。枢轴元所在的线性规划模型通常假设连续变量和确定性数据；若出现整数、随机或多阶段结构，模型需要相应扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "枢轴元",
+          "url": "https://www.baidu.com/s?wd=%E6%9E%A2%E8%BD%B4%E5%85%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "枢轴元",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9E%A2%E8%BD%B4%E5%85%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pivot element",
+          "url": "https://en.wikipedia.org/w/index.php?search=pivot%20element"
+        }
+      ]
+    },
+    {
+      "chinese_name": "退化解",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "退化解用来描述线性规划中某个基可行解至少一个基变量为零的情形。一个核心表达是 $x_B=B^{-1}b,\\quad x_{B_i}=0$，这里$x_B$ 是基变量向量，某个分量为零。\n\n退化解不同于不可行解，它仍满足约束；问题在于换基后目标值可能不变。单纯形法中退化可能导致停滞或循环，需要布兰德规则等防护。在运筹模型中，退化解决定方案怎样被描述、筛选或比较；变量、目标和约束必须放在一起看。退化解要放在变量、目标和约束的整体关系中理解；它影响可行方案的表示、排序或算法移动方式。退化解所在的线性规划模型通常假设连续变量和确定性数据；若出现整数、随机或多阶段结构，模型需要相应扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "退化解",
+          "url": "https://www.baidu.com/s?wd=%E9%80%80%E5%8C%96%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "退化解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%80%80%E5%8C%96%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "degenerate solution",
+          "url": "https://en.wikipedia.org/w/index.php?search=degenerate%20solution"
+        }
+      ]
+    },
+    {
+      "chinese_name": "人工变量",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "人工变量刻画为构造初始基可行解而临时加入的辅助变量。一个核心表达是 $Ax+a=b,\\quad a\\ge0$，这里$a$ 是人工变量，$b$ 是右端项。\n\n它不同于松弛变量，人工变量没有原问题意义，最终必须被驱出或取零。大M法和两阶段法都用人工变量启动单纯形迭代。在运筹模型中，人工变量决定方案怎样被描述、筛选或比较；变量、目标和约束必须放在一起看。人工变量要放在变量、目标和约束的整体关系中理解；它影响可行方案的表示、排序或算法移动方式。人工变量所在的线性规划模型通常假设连续变量和确定性数据；若出现整数、随机或多阶段结构，模型需要相应扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "人工变量",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%BA%E5%B7%A5%E5%8F%98%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "人工变量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%BA%E5%B7%A5%E5%8F%98%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "artificial variables",
+          "url": "https://en.wikipedia.org/w/index.php?search=artificial%20variables"
+        }
+      ]
+    },
+    {
+      "chinese_name": "大M法",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "大M法是在目标函数中给人工变量加入巨大惩罚的单纯形启动方法。在常用记号中有 $\\min c^Tx+M\\sum_i a_i$，其中$a_i$ 是人工变量，$M$ 是很大的惩罚常数。\n\n它与两阶段法不同，大M法把可行性和优化放在一个目标中；数值上过大的 $M$ 可能带来病态。若最优时人工变量非零，原问题不可行。在运筹模型中，大M法决定方案怎样被描述、筛选或比较；变量、目标和约束必须放在一起看。大M法要放在变量、目标和约束的整体关系中理解；它影响可行方案的表示、排序或算法移动方式。大M法所在的线性规划模型通常假设连续变量和确定性数据；若出现整数、随机或多阶段结构，模型需要相应扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "大M法",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%A7M%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "大M法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%A7M%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "big m method",
+          "url": "https://en.wikipedia.org/w/index.php?search=big%20m%20method"
+        }
+      ]
+    },
+    {
+      "chinese_name": "两阶段法",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "两阶段法指先寻找可行基，再优化原目标的线性规划方法。在常用记号中有 $\\min \\sum_i a_i\\quad\\text{then}\\quad \\min c^Tx$，其中$a_i$ 是人工变量，$x$ 是原变量。\n\n它与大M法的区别在于分两步处理，避免选择巨大惩罚常数。第一阶段最优值为零才说明原问题存在可行解。在运筹模型中，两阶段法决定方案怎样被描述、筛选或比较；变量、目标和约束必须放在一起看。两阶段法要放在变量、目标和约束的整体关系中理解；它影响可行方案的表示、排序或算法移动方式。两阶段法所在的线性规划模型通常假设连续变量和确定性数据；若出现整数、随机或多阶段结构，模型需要相应扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "两阶段法",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%A4%E9%98%B6%E6%AE%B5%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "两阶段法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%A4%E9%98%B6%E6%AE%B5%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "two stage method",
+          "url": "https://en.wikipedia.org/w/index.php?search=two%20stage%20method"
+        }
+      ]
+    },
+    {
+      "chinese_name": "对偶问题",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "对偶问题用来描述由原线性规划约束和目标系数构造出的配对优化问题。可写作 $\\max c^Tx,\\ Ax\\le b\\quad\\leftrightarrow\\quad \\min b^Ty,\\ A^Ty\\ge c$，这里$x$ 是原变量，$y$ 是对偶变量。\n\n它不是简单反向优化，而是把资源约束的影子价格作为变量。对偶性给出界、灵敏度解释和互补松弛条件。对偶语言下，对偶问题还能解释资源价格和松弛变量，原问题可行性与对偶界共同限定最优值。对偶问题让算法结果带有经济含义：约束是否紧、影子价格是否为零，都会反映资源的边际价值。对偶问题的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对偶问题",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E5%81%B6%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对偶问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E5%81%B6%E9%97%AE%E9%A2%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "duality problem",
+          "url": "https://en.wikipedia.org/w/index.php?search=duality%20problem"
+        }
+      ]
+    },
+    {
+      "chinese_name": "弱对偶定理",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "弱对偶定理刻画任意原可行解和对偶可行解的目标值满足一侧界关系。可写作 $c^Tx\\le b^Ty$，这里$x$ 原可行，$y$ 对偶可行。\n\n它与强对偶不同，弱对偶不要求最优解存在，只给上下界。该定理常用来证明某个可行解已最优，只需找到目标值相等的对偶可行解。对偶语言下，弱对偶定理还能解释资源价格和松弛变量，原问题可行性与对偶界共同限定最优值。弱对偶定理让算法结果带有经济含义：约束是否紧、影子价格是否为零，都会反映资源的边际价值。弱对偶定理的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弱对偶定理",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B1%E5%AF%B9%E5%81%B6%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弱对偶定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B1%E5%AF%B9%E5%81%B6%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weak duality theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=weak%20duality%20theorem"
+        }
+      ]
+    },
+    {
+      "chinese_name": "强对偶定理",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "强对偶定理是线性规划在有最优解时原问题和对偶问题最优值相等的定理。常写成 $\\max c^Tx=\\min b^Ty$，其中$x$ 和 $y$ 分别属于原问题与对偶问题。\n\n它比弱对偶更强，需要适当可行和有界条件；非凸优化中强对偶可能失败。影子价格和互补松弛的经济解释都依赖强对偶。对偶语言下，强对偶定理还能解释资源价格和松弛变量，原问题可行性与对偶界共同限定最优值。强对偶定理让算法结果带有经济含义：约束是否紧、影子价格是否为零，都会反映资源的边际价值。强对偶定理的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "强对偶定理",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%BA%E5%AF%B9%E5%81%B6%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "强对偶定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%BA%E5%AF%B9%E5%81%B6%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "strong duality theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=strong%20duality%20theorem"
+        }
+      ]
+    },
+    {
+      "chinese_name": "互补松弛定理",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "互补松弛定理指原对偶最优解中松弛量和对应对偶变量乘积为零的条件。常写成 $y_i(b_i-A_i x)=0,\\quad x_j((A^Ty)_j-c_j)=0$，其中$x,y$ 是原对偶变量。\n\n它不同于可行性条件，互补松弛说明哪些约束活跃、哪些价格为零。线性规划中，它常用于从对偶解反推原最优解。对偶语言下，互补松弛定理还能解释资源价格和松弛变量，原问题可行性与对偶界共同限定最优值。互补松弛定理让算法结果带有经济含义：约束是否紧、影子价格是否为零，都会反映资源的边际价值。互补松弛定理的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "互补松弛定理",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%92%E8%A1%A5%E6%9D%BE%E5%BC%9B%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "互补松弛定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%92%E8%A1%A5%E6%9D%BE%E5%BC%9B%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "complementary relaxation theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=complementary%20relaxation%20theorem"
+        }
+      ]
+    },
+    {
+      "chinese_name": "影子价格",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "影子价格用来描述资源约束右端项微小增加时最优目标值的边际变化率。一个核心表达是 ${\\partial z^*\\over\\partial b_i}=y_i^*$，这里$z^*$ 是最优值，$y_i^*$ 是对偶最优变量。\n\n它不是市场价格，而是模型内部的边际价值；只有在当前基不变范围内解释最可靠。生产计划和资源分配中，影子价格说明哪类资源最紧缺。对偶语言下，影子价格还能解释资源价格和松弛变量，原问题可行性与对偶界共同限定最优值。影子价格让算法结果带有经济含义：约束是否紧、影子价格是否为零，都会反映资源的边际价值。影子价格的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "影子价格",
+          "url": "https://www.baidu.com/s?wd=%E5%BD%B1%E5%AD%90%E4%BB%B7%E6%A0%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "影子价格",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BD%B1%E5%AD%90%E4%BB%B7%E6%A0%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "shadow price",
+          "url": "https://en.wikipedia.org/w/index.php?search=shadow%20price"
+        }
+      ]
+    },
+    {
+      "chinese_name": "灵敏度分析",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "灵敏度分析刻画研究参数变化对最优解、最优值和当前基影响的方法。一个核心表达是 $z^*(b+\\Delta b)\\approx z^*(b)+{y^*}^T\\Delta b$，这里$y^*$ 是影子价格，$\\Delta b$ 是资源变化。\n\n它不同于重新求解模型，灵敏度分析关注在局部范围内原最优结构是否保持。目标系数、右端项和技术系数的变化都会影响允许范围和最优基。对偶语言下，灵敏度分析还能解释资源价格和松弛变量，原问题可行性与对偶界共同限定最优值。灵敏度分析让算法结果带有经济含义：约束是否紧、影子价格是否为零，都会反映资源的边际价值。灵敏度分析的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "灵敏度分析",
+          "url": "https://www.baidu.com/s?wd=%E7%81%B5%E6%95%8F%E5%BA%A6%E5%88%86%E6%9E%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "灵敏度分析",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%81%B5%E6%95%8F%E5%BA%A6%E5%88%86%E6%9E%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "sensitivity analysis",
+          "url": "https://en.wikipedia.org/w/index.php?search=sensitivity%20analysis"
+        }
+      ]
+    },
+    {
+      "chinese_name": "整数规划",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "整数规划是要求部分或全部决策变量取整数值的优化模型。在常用记号中有 $\\min c^Tx\\quad\\text{s.t. }Ax\\le b,\\ x_j\\in\\mathbb Z$，其中$x_j$ 是整数变量，$A,b,c$ 定义线性模型。\n\n它与线性规划的关键差别在整数性，连续松弛的最优解未必可行。分支定界、割平面和动态规划常用于处理组合爆炸。整数限制使整数规划从凸多面体问题变成组合搜索问题，连续松弛给界，分支或割平面逐步收紧可行集。整数规划在排产、选址和路径设计中很常见，模型规模稍大就需要利用结构而不是枚举所有方案。整数规划的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "整数规划",
+          "url": "https://www.baidu.com/s?wd=%E6%95%B4%E6%95%B0%E8%A7%84%E5%88%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "整数规划",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%95%B4%E6%95%B0%E8%A7%84%E5%88%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "integer programming",
+          "url": "https://en.wikipedia.org/w/index.php?search=integer%20programming"
+        }
+      ]
+    },
+    {
+      "chinese_name": "纯整数规划",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "纯整数规划指所有决策变量都必须取整数值的整数规划。在常用记号中有 $x\\in\\mathbb Z^n$，其中$x$ 的每个分量都是整数。\n\n它不同于混合整数规划，后者同时含连续变量和整数变量。生产批量、选址数量和离散资源分配可形成纯整数模型。整数限制使纯整数规划从凸多面体问题变成组合搜索问题，连续松弛给界，分支或割平面逐步收紧可行集。纯整数规划在排产、选址和路径设计中很常见，模型规模稍大就需要利用结构而不是枚举所有方案。纯整数规划的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "纯整数规划",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%AF%E6%95%B4%E6%95%B0%E8%A7%84%E5%88%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "纯整数规划",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%AF%E6%95%B4%E6%95%B0%E8%A7%84%E5%88%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pure integer programming",
+          "url": "https://en.wikipedia.org/w/index.php?search=pure%20integer%20programming"
+        }
+      ]
+    },
+    {
+      "chinese_name": "混合整数规划",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "混合整数规划用来描述同时含连续变量和整数变量的优化模型。可写作 $x\\in\\mathbb R^p,\\quad y\\in\\mathbb Z^q$，这里$x$ 是连续变量，$y$ 是整数变量。\n\n它比纯整数规划更灵活，也比线性规划更难；二进制变量常用来表示逻辑开关。能源调度、物流网络和设施选址常形成混合整数线性规划。整数限制使混合整数规划从凸多面体问题变成组合搜索问题，连续松弛给界，分支或割平面逐步收紧可行集。混合整数规划在排产、选址和路径设计中很常见，模型规模稍大就需要利用结构而不是枚举所有方案。混合整数规划的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "混合整数规划",
+          "url": "https://www.baidu.com/s?wd=%E6%B7%B7%E5%90%88%E6%95%B4%E6%95%B0%E8%A7%84%E5%88%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "混合整数规划",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B7%B7%E5%90%88%E6%95%B4%E6%95%B0%E8%A7%84%E5%88%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mixed integer programming",
+          "url": "https://en.wikipedia.org/w/index.php?search=mixed%20integer%20programming"
+        }
+      ]
+    },
+    {
+      "chinese_name": "零一规划",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "零一规划刻画决策变量只能取零或一的整数规划。可写作 $x_j\\in\\{0,1\\}$，这里$x_j=1$ 表示选择，$x_j=0$ 表示不选择。\n\n它是整数规划的特殊情形，适合表达是否建设、是否分配和逻辑条件。背包、集合覆盖、指派和旅行商模型都可写成零一规划。整数限制使零一规划从凸多面体问题变成组合搜索问题，连续松弛给界，分支或割平面逐步收紧可行集。零一规划在排产、选址和路径设计中很常见，模型规模稍大就需要利用结构而不是枚举所有方案。零一规划的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "零一规划",
+          "url": "https://www.baidu.com/s?wd=%E9%9B%B6%E4%B8%80%E8%A7%84%E5%88%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "零一规划",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9B%B6%E4%B8%80%E8%A7%84%E5%88%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "zero one plan",
+          "url": "https://en.wikipedia.org/w/index.php?search=zero%20one%20plan"
+        }
+      ]
+    },
+    {
+      "chinese_name": "分支定界法",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "分支定界法是通过分裂可行域并用松弛界剪枝的整数规划算法。常写成 $z_L\\le z^*\\le z_U$，其中$z_L,z_U$ 是下界和上界，$z^*$ 是最优值。\n\n它不同于单纯形法的连续顶点移动，而是在搜索树上处理整数性。线性松弛给界，分支约束排除非整数解，界劣的节点可被剪去。整数限制使分支定界法从凸多面体问题变成组合搜索问题，连续松弛给界，分支或割平面逐步收紧可行集。分支定界法在排产、选址和路径设计中很常见，模型规模稍大就需要利用结构而不是枚举所有方案。分支定界法的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分支定界法",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E6%94%AF%E5%AE%9A%E7%95%8C%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分支定界法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E6%94%AF%E5%AE%9A%E7%95%8C%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "branch and bound",
+          "url": "https://en.wikipedia.org/w/index.php?search=branch%20and%20bound"
+        }
+      ]
+    },
+    {
+      "chinese_name": "割平面法",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "割平面法指向松弛问题加入有效不等式以排除非整数解的方法。常写成 $\\alpha^Tx\\le\\beta$，其中该不等式对所有整数可行解成立，却切掉当前分数解。\n\n它与分支定界不同，割平面通过收紧多面体而不是分裂搜索树推进。现代整数规划常把割平面与分支定界结合成分支割平面法。整数限制使割平面法从凸多面体问题变成组合搜索问题，连续松弛给界，分支或割平面逐步收紧可行集。割平面法在排产、选址和路径设计中很常见，模型规模稍大就需要利用结构而不是枚举所有方案。割平面法的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "割平面法",
+          "url": "https://www.baidu.com/s?wd=%E5%89%B2%E5%B9%B3%E9%9D%A2%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "割平面法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%89%B2%E5%B9%B3%E9%9D%A2%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cutting plane method",
+          "url": "https://en.wikipedia.org/w/index.php?search=cutting%20plane%20method"
+        }
+      ]
+    },
+    {
+      "chinese_name": "戈莫里割",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "戈莫里割用来描述由单纯形表分数行导出的整数规划割平面。一个核心表达是 $\\sum_j(\\bar a_{ij}-\\lfloor\\bar a_{ij}\\rfloor)x_j\\ge \\bar b_i-\\lfloor\\bar b_i\\rfloor$，这里$\\bar a_{ij},\\bar b_i$ 来自当前表行。\n\n它是割平面的一种，专门利用整数性排除当前分数基解。Gomory割展示了如何从线性松弛的代数结构自动生成有效不等式。整数限制使戈莫里割从凸多面体问题变成组合搜索问题，连续松弛给界，分支或割平面逐步收紧可行集。戈莫里割在排产、选址和路径设计中很常见，模型规模稍大就需要利用结构而不是枚举所有方案。戈莫里割的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "戈莫里割",
+          "url": "https://www.baidu.com/s?wd=%E6%88%88%E8%8E%AB%E9%87%8C%E5%89%B2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "戈莫里割",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%88%88%E8%8E%AB%E9%87%8C%E5%89%B2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gomorli cut",
+          "url": "https://en.wikipedia.org/w/index.php?search=gomorli%20cut"
+        }
+      ]
+    },
+    {
+      "chinese_name": "背包问题",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "背包问题刻画在容量限制下选择物品使价值最大的问题。一个核心表达是 $\\max\\sum_j v_jx_j\\quad\\text{s.t. }\\sum_j w_jx_j\\le W,\\ x_j\\in\\{0,1\\}$，这里$v_j,w_j$ 是价值和重量，$W$ 是容量。\n\n它不同于一般线性规划，二进制选择和容量约束造成组合复杂性。动态规划、分支定界和近似算法都常以背包问题为基本样例。整数限制使背包问题从凸多面体问题变成组合搜索问题，连续松弛给界，分支或割平面逐步收紧可行集。背包问题在排产、选址和路径设计中很常见，模型规模稍大就需要利用结构而不是枚举所有方案。背包问题的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "背包问题",
+          "url": "https://www.baidu.com/s?wd=%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "背包问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "backpack problem",
+          "url": "https://en.wikipedia.org/w/index.php?search=backpack%20problem"
+        }
+      ]
+    },
+    {
+      "chinese_name": "指派问题",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "指派问题是把任务一一分配给人员或机器并最小化总成本的问题。在常用记号中有 $\\min\\sum_{i,j}c_{ij}x_{ij},\\quad \\sum_jx_{ij}=1,\\ \\sum_ix_{ij}=1$，其中$x_{ij}$ 表示是否指派，$c_{ij}$ 是成本。\n\n它是运输问题的特殊平衡形式，约束矩阵全酉使线性松弛已有整数解。匈牙利算法和网络流方法都可高效求解指派问题。整数限制使指派问题从凸多面体问题变成组合搜索问题，连续松弛给界，分支或割平面逐步收紧可行集。指派问题在排产、选址和路径设计中很常见，模型规模稍大就需要利用结构而不是枚举所有方案。指派问题的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "指派问题",
+          "url": "https://www.baidu.com/s?wd=%E6%8C%87%E6%B4%BE%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "指派问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8C%87%E6%B4%BE%E9%97%AE%E9%A2%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "assignment problem",
+          "url": "https://en.wikipedia.org/w/index.php?search=assignment%20problem"
+        }
+      ]
+    },
+    {
+      "chinese_name": "运输问题",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "运输问题指在供给点和需求点之间安排运输量以最小化费用的网络线性规划。在常用记号中有 $\\min\\sum_{i,j}c_{ij}x_{ij}$，其中$x_{ij}$ 是运输量，$c_{ij}$ 是单位费用。\n\n它不同于最小费用流的一般网络，运输问题通常是二部供需结构。产销平衡时总供给等于总需求，基可行解可用表上作业法构造。运输问题的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。图模型中，运输问题把对象看成节点、边和权重，算法通常利用稀疏结构、最短路性质或流量守恒。运输问题适合运输、通信、项目排程和路径选择等问题，容量、费用和边权决定了模型的具体含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "运输问题",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%90%E8%BE%93%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "运输问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%90%E8%BE%93%E9%97%AE%E9%A2%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "transportation issues",
+          "url": "https://en.wikipedia.org/w/index.php?search=transportation%20issues"
+        }
+      ]
+    },
+    {
+      "chinese_name": "产销平衡",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "产销平衡用来描述运输模型中总供给等于总需求的条件。可写作 $\\sum_i s_i=\\sum_j d_j$，这里$s_i$ 是产地供给，$d_j$ 是销地需求。\n\n它不是目标函数，而是运输问题是否闭合平衡的结构条件。若不平衡，可加入虚拟产地或销地把模型改写为平衡运输问题。产销平衡的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。图模型中，产销平衡把对象看成节点、边和权重，算法通常利用稀疏结构、最短路性质或流量守恒。产销平衡适合运输、通信、项目排程和路径选择等问题，容量、费用和边权决定了模型的具体含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "产销平衡",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%A7%E9%94%80%E5%B9%B3%E8%A1%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "产销平衡",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%A7%E9%94%80%E5%B9%B3%E8%A1%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "production and sales balance",
+          "url": "https://en.wikipedia.org/w/index.php?search=production%20and%20sales%20balance"
+        }
+      ]
+    },
+    {
+      "chinese_name": "最小费用流",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "最小费用流刻画在满足流量守恒和容量约束下使网络运输费用最小的问题。可写作 $\\min\\sum_{(i,j)}c_{ij}x_{ij}$，这里$x_{ij}$ 是弧流量，$c_{ij}$ 是单位费用。\n\n它比最大流多了费用目标，比运输问题适用于一般有向网络。供应链、通信路由和调度都可写成最小费用流模型。最小费用流的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。图模型中，最小费用流把对象看成节点、边和权重，算法通常利用稀疏结构、最短路性质或流量守恒。最小费用流适合运输、通信、项目排程和路径选择等问题，容量、费用和边权决定了模型的具体含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最小费用流",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E5%B0%8F%E8%B4%B9%E7%94%A8%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最小费用流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E5%B0%8F%E8%B4%B9%E7%94%A8%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "minimum cost flow",
+          "url": "https://en.wikipedia.org/w/index.php?search=minimum%20cost%20flow"
+        }
+      ]
+    },
+    {
+      "chinese_name": "最大流",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "最大流是在容量网络中从源点到汇点发送尽可能大流量的问题。常写成 $\\max |f|\\quad\\text{s.t. }0\\le f_{ij}\\le c_{ij}$，其中$f_{ij}$ 是弧流量，$c_{ij}$ 是容量。\n\n它与最小费用流不同，最大流只关心总流量不关心单位成本。最大流最小割定理说明最优流量等于最小割容量。最大流的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。图模型中，最大流把对象看成节点、边和权重，算法通常利用稀疏结构、最短路性质或流量守恒。最大流适合运输、通信、项目排程和路径选择等问题，容量、费用和边权决定了模型的具体含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最大流",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E5%A4%A7%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最大流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E5%A4%A7%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "maximum flow",
+          "url": "https://en.wikipedia.org/w/index.php?search=maximum%20flow"
+        }
+      ]
+    },
+    {
+      "chinese_name": "最小割",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "最小割指把源点和汇点分开的弧集合中容量和最小的割。常写成 $c(S,\\bar S)=\\sum_{i\\in S,j\\notin S}c_{ij}$，其中$S$ 含源点，$\\bar S$ 含汇点。\n\n它与最大流是对偶式概念；最小割给出任何可行流的上界。网络可靠性、图像分割和项目选择中都可利用割结构。整数限制使最小割从凸多面体问题变成组合搜索问题，连续松弛给界，分支或割平面逐步收紧可行集。最小割在排产、选址和路径设计中很常见，模型规模稍大就需要利用结构而不是枚举所有方案。最小割的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最小割",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E5%B0%8F%E5%89%B2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最小割",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E5%B0%8F%E5%89%B2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "minimal cut",
+          "url": "https://en.wikipedia.org/w/index.php?search=minimal%20cut"
+        }
+      ]
+    },
+    {
+      "chinese_name": "增广路",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "增广路用来描述残量网络中从源点到汇点仍有剩余容量的路径。一个核心表达是 $c_f(i,j)=c_{ij}-f_{ij}$，这里$c_f$ 是残量容量，$f_{ij}$ 是当前流。\n\n它不是原网络中的任意路径，而是能增加当前流量的残量路径。Ford-Fulkerson算法反复沿增广路推送流，直到不存在增广路。增广路的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。图模型中，增广路把对象看成节点、边和权重，算法通常利用稀疏结构、最短路性质或流量守恒。增广路适合运输、通信、项目排程和路径选择等问题，容量、费用和边权决定了模型的具体含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "增广路",
+          "url": "https://www.baidu.com/s?wd=%E5%A2%9E%E5%B9%BF%E8%B7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "增广路",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A2%9E%E5%B9%BF%E8%B7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "augmenting path",
+          "url": "https://en.wikipedia.org/w/index.php?search=augmenting%20path"
+        }
+      ]
+    },
+    {
+      "chinese_name": "福特富尔克森算法",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "福特富尔克森算法刻画通过寻找增广路逐步增加流量的最大流算法。一个核心表达是 $f\\leftarrow f+\\Delta P$，这里$P$ 是增广路，$\\Delta$ 是该路最小残量容量。\n\n它与Edmonds-Karp算法的差别在增广路选择规则；后者固定用最短残量路径。容量为整数时，Ford-Fulkerson会在有限步内得到最大流。福特富尔克森算法的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。图模型中，福特富尔克森算法把对象看成节点、边和权重，算法通常利用稀疏结构、最短路性质或流量守恒。福特富尔克森算法适合运输、通信、项目排程和路径选择等问题，容量、费用和边权决定了模型的具体含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "福特富尔克森算法",
+          "url": "https://www.baidu.com/s?wd=%E7%A6%8F%E7%89%B9%E5%AF%8C%E5%B0%94%E5%85%8B%E6%A3%AE%E7%AE%97%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "福特富尔克森算法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A6%8F%E7%89%B9%E5%AF%8C%E5%B0%94%E5%85%8B%E6%A3%AE%E7%AE%97%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ford fulkerson algorithm",
+          "url": "https://en.wikipedia.org/w/index.php?search=ford%20fulkerson%20algorithm"
+        }
+      ]
+    },
+    {
+      "chinese_name": "埃德蒙兹卡普算法",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "埃德蒙兹卡普算法是每次选择边数最少增广路的最大流算法。在常用记号中有 $O(VE^2)$，其中$V$ 是节点数，$E$ 是边数。\n\n它是Ford-Fulkerson方法的具体实现，使用广度优先搜索选择增广路。这种规则保证多项式时间复杂度，并避免任意选路带来的坏表现。埃德蒙兹卡普算法的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。图模型中，埃德蒙兹卡普算法把对象看成节点、边和权重，算法通常利用稀疏结构、最短路性质或流量守恒。埃德蒙兹卡普算法适合运输、通信、项目排程和路径选择等问题，容量、费用和边权决定了模型的具体含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "埃德蒙兹卡普算法",
+          "url": "https://www.baidu.com/s?wd=%E5%9F%83%E5%BE%B7%E8%92%99%E5%85%B9%E5%8D%A1%E6%99%AE%E7%AE%97%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "埃德蒙兹卡普算法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9F%83%E5%BE%B7%E8%92%99%E5%85%B9%E5%8D%A1%E6%99%AE%E7%AE%97%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "edmunds karp algorithm",
+          "url": "https://en.wikipedia.org/w/index.php?search=edmunds%20karp%20algorithm"
+        }
+      ]
+    },
+    {
+      "chinese_name": "网络单纯形法",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "网络单纯形法指利用网络流基树结构求解最小费用流的单纯形算法。在常用记号中有 $\\bar c_{ij}=c_{ij}+\\pi_i-\\pi_j$，其中$\\pi_i$ 是节点势，$\\bar c_{ij}$ 是约化费用。\n\n它不同于普通单纯形法，基结构可解释为生成树，更新更高效。大规模运输和费用流问题中，网络单纯形法通常非常实用。网络单纯形法的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。图模型中，网络单纯形法把对象看成节点、边和权重，算法通常利用稀疏结构、最短路性质或流量守恒。网络单纯形法适合运输、通信、项目排程和路径选择等问题，容量、费用和边权决定了模型的具体含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "网络单纯形法",
+          "url": "https://www.baidu.com/s?wd=%E7%BD%91%E7%BB%9C%E5%8D%95%E7%BA%AF%E5%BD%A2%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "网络单纯形法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BD%91%E7%BB%9C%E5%8D%95%E7%BA%AF%E5%BD%A2%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "network simplex method",
+          "url": "https://en.wikipedia.org/w/index.php?search=network%20simplex%20method"
+        }
+      ]
+    },
+    {
+      "chinese_name": "最短路",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "最短路用来描述在带权图中寻找从起点到终点总权重最小的路径。可写作 $d_j=\\min_{P:s\\to j}\\sum_{(i,k)\\in P}c_{ik}$，这里$d_j$ 是距离标签，$c_{ik}$ 是边长。\n\n它不同于最大流，最短路选择一条路径而不是分配网络流量。迪杰斯特拉、贝尔曼-福特和Floyd算法分别适用于不同权重和源点情形。最短路的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。图模型中，最短路把对象看成节点、边和权重，算法通常利用稀疏结构、最短路性质或流量守恒。最短路适合运输、通信、项目排程和路径选择等问题，容量、费用和边权决定了模型的具体含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最短路",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E7%9F%AD%E8%B7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最短路",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E7%9F%AD%E8%B7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "shortest path",
+          "url": "https://en.wikipedia.org/w/index.php?search=shortest%20path"
+        }
+      ]
+    },
+    {
+      "chinese_name": "迪杰斯特拉算法",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "迪杰斯特拉算法刻画在非负边权图中逐步确定最短距离的算法。可写作 $d_j\\leftarrow\\min(d_j,d_i+c_{ij})$，这里$d_i,d_j$ 是距离标签，$c_{ij}\\ge0$ 是边权。\n\n它与贝尔曼-福特算法不同，迪杰斯特拉要求边权非负以保证贪心确定性。路由、地图导航和网络延迟计算常用这种算法。迪杰斯特拉算法的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。图模型中，迪杰斯特拉算法把对象看成节点、边和权重，算法通常利用稀疏结构、最短路性质或流量守恒。迪杰斯特拉算法适合运输、通信、项目排程和路径选择等问题，容量、费用和边权决定了模型的具体含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "迪杰斯特拉算法",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%AA%E6%9D%B0%E6%96%AF%E7%89%B9%E6%8B%89%E7%AE%97%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "迪杰斯特拉算法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%AA%E6%9D%B0%E6%96%AF%E7%89%B9%E6%8B%89%E7%AE%97%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dijkstra algorithm",
+          "url": "https://en.wikipedia.org/w/index.php?search=dijkstra%20algorithm"
+        }
+      ]
+    },
+    {
+      "chinese_name": "贝尔曼福特算法",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "贝尔曼福特算法是允许负边权并能检测负环的单源最短路算法。常写成 $d_j\\leftarrow\\min(d_j,d_i+c_{ij})$，其中松弛操作对所有边重复执行。\n\n它比迪杰斯特拉慢，但不要求边权非负；若第 $n$ 轮仍可松弛，则存在负环。差分约束系统和含收益边的网络模型常用贝尔曼-福特。贝尔曼福特算法的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。图模型中，贝尔曼福特算法把对象看成节点、边和权重，算法通常利用稀疏结构、最短路性质或流量守恒。贝尔曼福特算法适合运输、通信、项目排程和路径选择等问题，容量、费用和边权决定了模型的具体含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "贝尔曼福特算法",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%9D%E5%B0%94%E6%9B%BC%E7%A6%8F%E7%89%B9%E7%AE%97%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "贝尔曼福特算法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%9D%E5%B0%94%E6%9B%BC%E7%A6%8F%E7%89%B9%E7%AE%97%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bellman ford algorithm",
+          "url": "https://en.wikipedia.org/w/index.php?search=bellman%20ford%20algorithm"
+        }
+      ]
+    },
+    {
+      "chinese_name": "弗洛伊德算法",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "弗洛伊德算法指求所有点对最短路的动态规划算法。常写成 $d_{ij}^{(k)}=\\min(d_{ij}^{(k-1)},d_{ik}^{(k-1)}+d_{kj}^{(k-1)})$，其中$k$ 表示允许经过的中间点范围。\n\n它不同于单源算法，一次性计算所有节点对距离。节点数中等且图较稠密时，Floyd-Warshall算法形式简洁。弗洛伊德算法的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。图模型中，弗洛伊德算法把对象看成节点、边和权重，算法通常利用稀疏结构、最短路性质或流量守恒。弗洛伊德算法适合运输、通信、项目排程和路径选择等问题，容量、费用和边权决定了模型的具体含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弗洛伊德算法",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%97%E6%B4%9B%E4%BC%8A%E5%BE%B7%E7%AE%97%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弗洛伊德算法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%97%E6%B4%9B%E4%BC%8A%E5%BE%B7%E7%AE%97%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "freud algorithm",
+          "url": "https://en.wikipedia.org/w/index.php?search=freud%20algorithm"
+        }
+      ]
+    },
+    {
+      "chinese_name": "关键路径法",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "关键路径法用来描述在项目网络中找出决定工期的最长路径方法。一个核心表达是 $TF_i=LS_i-ES_i$，这里$ES,LS$ 是最早和最迟开始时间，$TF$ 是总时差。\n\n它与最短路方向相反，项目工期由最长依赖链决定。关键活动时差为零，延误这些活动会直接推迟项目完成时间。关键路径法的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。图模型中，关键路径法把对象看成节点、边和权重，算法通常利用稀疏结构、最短路性质或流量守恒。关键路径法适合运输、通信、项目排程和路径选择等问题，容量、费用和边权决定了模型的具体含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "关键路径法",
+          "url": "https://www.baidu.com/s?wd=%E5%85%B3%E9%94%AE%E8%B7%AF%E5%BE%84%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "关键路径法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%B3%E9%94%AE%E8%B7%AF%E5%BE%84%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "critical path method",
+          "url": "https://en.wikipedia.org/w/index.php?search=critical%20path%20method"
+        }
+      ]
+    },
+    {
+      "chinese_name": "计划评审技术",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "计划评审技术刻画用概率工期估计项目完成时间的网络计划方法。一个核心表达是 $t_e={a+4m+b\\over6}$，这里$a,m,b$ 是乐观、最可能和悲观工期。\n\n它与确定性的关键路径法不同，PERT把活动时间视为随机估计。研发和工程项目中，PERT用于评估工期不确定性和完工概率。计划评审技术的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。图模型中，计划评审技术把对象看成节点、边和权重，算法通常利用稀疏结构、最短路性质或流量守恒。计划评审技术适合运输、通信、项目排程和路径选择等问题，容量、费用和边权决定了模型的具体含义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "计划评审技术",
+          "url": "https://www.baidu.com/s?wd=%E8%AE%A1%E5%88%92%E8%AF%84%E5%AE%A1%E6%8A%80%E6%9C%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "计划评审技术",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%AE%A1%E5%88%92%E8%AF%84%E5%AE%A1%E6%8A%80%E6%9C%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "plan review techniques",
+          "url": "https://en.wikipedia.org/w/index.php?search=plan%20review%20techniques"
+        }
+      ]
+    },
+    {
+      "chinese_name": "排队论",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "排队论是研究随机到达、服务和等待现象的数学模型。在常用记号中有 $\\rho={\\lambda\\over \\mu}$，其中$\\lambda$ 是到达率，$\\mu$ 是服务率。\n\n它不同于库存模型，排队论关注顾客等待和服务台负载，库存模型关注物品补给。通信、医院、客服和交通系统都用排队指标评估容量。排队模型里，排队论依赖到达率、服务率和系统容量，稳态存在性通常先由负载强度决定。排队论用于衡量服务系统的拥堵水平，参数改变后等待时间和队长往往会非线性放大。排队论的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "排队论",
+          "url": "https://www.baidu.com/s?wd=%E6%8E%92%E9%98%9F%E8%AE%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "排队论",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8E%92%E9%98%9F%E8%AE%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "queueing theory",
+          "url": "https://en.wikipedia.org/w/index.php?search=queueing%20theory"
+        }
+      ]
+    },
+    {
+      "chinese_name": "泊松到达",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "泊松到达指单位时间到达数服从Poisson分布的随机到达过程。在常用记号中有 $P(N(t)=k)=e^{-\\lambda t}{(\\lambda t)^k\\over k!}$，其中$\\lambda$ 是到达率，$N(t)$ 是到达数。\n\n它与固定间隔到达不同，Poisson到达具有独立增量和无记忆间隔。M/M/1等经典排队模型以泊松到达作为输入假设。排队模型里，泊松到达依赖到达率、服务率和系统容量，稳态存在性通常先由负载强度决定。泊松到达用于衡量服务系统的拥堵水平，参数改变后等待时间和队长往往会非线性放大。泊松到达的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。因此理解泊松到达还要看数据从哪里来，以及模型求出的方案是否能在实际约束下执行。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "泊松到达",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%8A%E6%9D%BE%E5%88%B0%E8%BE%BE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "泊松到达",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%8A%E6%9D%BE%E5%88%B0%E8%BE%BE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "poisson arrives",
+          "url": "https://en.wikipedia.org/w/index.php?search=poisson%20arrives"
+        }
+      ]
+    },
+    {
+      "chinese_name": "指数服务",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "指数服务用来描述服务时间服从指数分布的服务机制。可写作 $P(S>t)=e^{-\\mu t}$，这里$S$ 是服务时间，$\\mu$ 是服务率。\n\n它与一般服务分布不同，指数分布具有无记忆性，使马尔可夫分析更简单。M/M/c模型中第二个M正是指数服务时间的记号。排队模型里，指数服务依赖到达率、服务率和系统容量，稳态存在性通常先由负载强度决定。指数服务用于衡量服务系统的拥堵水平，参数改变后等待时间和队长往往会非线性放大。指数服务的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。因此理解指数服务还要看数据从哪里来，以及模型求出的方案是否能在实际约束下执行。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "指数服务",
+          "url": "https://www.baidu.com/s?wd=%E6%8C%87%E6%95%B0%E6%9C%8D%E5%8A%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "指数服务",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8C%87%E6%95%B0%E6%9C%8D%E5%8A%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "index service",
+          "url": "https://en.wikipedia.org/w/index.php?search=index%20service"
+        }
+      ]
+    },
+    {
+      "chinese_name": "生灭过程",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "生灭过程刻画状态只能向相邻状态增加或减少的连续时间马尔可夫过程。可写作 $q_{n,n+1}=\\lambda_n,\\quad q_{n,n-1}=\\mu_n$，这里$\\lambda_n,\\mu_n$ 是出生率和死亡率。\n\n它不同于一般马尔可夫链，转移只发生在相邻状态之间。排队系统中的顾客数常可建模为生灭过程。排队模型里，生灭过程依赖到达率、服务率和系统容量，稳态存在性通常先由负载强度决定。生灭过程用于衡量服务系统的拥堵水平，参数改变后等待时间和队长往往会非线性放大。生灭过程的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "生灭过程",
+          "url": "https://www.baidu.com/s?wd=%E7%94%9F%E7%81%AD%E8%BF%87%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "生灭过程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%9F%E7%81%AD%E8%BF%87%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "process of birth and death",
+          "url": "https://en.wikipedia.org/w/index.php?search=process%20of%20birth%20and%20death"
+        }
+      ]
+    },
+    {
+      "chinese_name": "稳态概率",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "稳态概率是随机过程长期运行后状态分布趋于不变时的概率。常写成 $\\pi Q=0,\\qquad \\sum_i\\pi_i=1$，其中$Q$ 是生成矩阵，$\\pi$ 是稳态分布。\n\n它不同于瞬时概率，稳态概率不再随时间变化。排队长度、库存水平和马尔可夫决策过程的长期指标都依赖稳态分布。排队模型里，稳态概率依赖到达率、服务率和系统容量，稳态存在性通常先由负载强度决定。稳态概率用于衡量服务系统的拥堵水平，参数改变后等待时间和队长往往会非线性放大。稳态概率的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "稳态概率",
+          "url": "https://www.baidu.com/s?wd=%E7%A8%B3%E6%80%81%E6%A6%82%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "稳态概率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A8%B3%E6%80%81%E6%A6%82%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "steady state probability",
+          "url": "https://en.wikipedia.org/w/index.php?search=steady%20state%20probability"
+        }
+      ]
+    },
+    {
+      "chinese_name": "利特尔公式",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "利特尔公式指稳定排队系统中平均人数、到达率和平均逗留时间的关系。常写成 $L=\\lambda W$，其中$L$ 是系统平均人数，$\\lambda$ 是有效到达率，$W$ 是平均逗留时间。\n\n它与具体服务分布无关，区别于M/M/1等需要分布假设的公式。该公式常用来在等待时间和系统拥挤程度之间换算。排队模型里，利特尔公式依赖到达率、服务率和系统容量，稳态存在性通常先由负载强度决定。利特尔公式用于衡量服务系统的拥堵水平，参数改变后等待时间和队长往往会非线性放大。利特尔公式的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "利特尔公式",
+          "url": "https://www.baidu.com/s?wd=%E5%88%A9%E7%89%B9%E5%B0%94%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "利特尔公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%A9%E7%89%B9%E5%B0%94%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "little formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=little%20formula"
+        }
+      ]
+    },
+    {
+      "chinese_name": "等待时间",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "等待时间用来描述顾客从到达系统到开始服务或离开系统所经历的时间指标。一个核心表达是 $W=W_q+{1\\over\\mu}$，这里$W_q$ 是排队等待，$1/\\mu$ 是平均服务时间。\n\n它与队长不同，等待时间以时间衡量体验，队长以人数衡量拥堵。服务强度接近一时，等待时间通常会迅速增加。排队模型里，等待时间依赖到达率、服务率和系统容量，稳态存在性通常先由负载强度决定。等待时间用于衡量服务系统的拥堵水平，参数改变后等待时间和队长往往会非线性放大。等待时间的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "等待时间",
+          "url": "https://www.baidu.com/s?wd=%E7%AD%89%E5%BE%85%E6%97%B6%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "等待时间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AD%89%E5%BE%85%E6%97%B6%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "waiting time",
+          "url": "https://en.wikipedia.org/w/index.php?search=waiting%20time"
+        }
+      ]
+    },
+    {
+      "chinese_name": "服务强度",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "服务强度刻画到达负荷与服务能力的比值。一个核心表达是 $\\rho={\\lambda\\over c\\mu}$，这里$c$ 是服务台数，$\\lambda$ 是到达率，$\\mu$ 是单台服务率。\n\n它不同于服务率本身，服务强度同时反映需求和容量。稳定排队通常要求 $\\rho<1$，否则队列会长期增长。排队模型里，服务强度依赖到达率、服务率和系统容量，稳态存在性通常先由负载强度决定。服务强度用于衡量服务系统的拥堵水平，参数改变后等待时间和队长往往会非线性放大。服务强度的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。因此理解服务强度还要看数据从哪里来，以及模型求出的方案是否能在实际约束下执行。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "服务强度",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%8D%E5%8A%A1%E5%BC%BA%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "服务强度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%8D%E5%8A%A1%E5%BC%BA%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "service intensity",
+          "url": "https://en.wikipedia.org/w/index.php?search=service%20intensity"
+        }
+      ]
+    },
+    {
+      "chinese_name": "库存模型",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "库存模型是描述订货、持有、缺货和需求之间权衡的优化模型。在常用记号中有 $\\min Q\\mapsto {KD\\over Q}+{hQ\\over2}$，其中$Q$ 是订货量，$D$ 是需求率，$K,h$ 是订货和持有成本。\n\n它与排队模型不同，库存模型关注物品存量而非顾客等待。经济订货量、报童模型和安全库存分别处理不同需求假设。库存语境中，库存模型在订货成本、持有成本和缺货风险之间折中，随机需求会让最优策略带有阈值形式。库存模型把日常补货问题写成优化模型，关键变量通常是订货批量、订货时点和安全余量。库存模型的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "库存模型",
+          "url": "https://www.baidu.com/s?wd=%E5%BA%93%E5%AD%98%E6%A8%A1%E5%9E%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "库存模型",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BA%93%E5%AD%98%E6%A8%A1%E5%9E%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inventory model",
+          "url": "https://en.wikipedia.org/w/index.php?search=inventory%20model"
+        }
+      ]
+    },
+    {
+      "chinese_name": "经济订货量",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "经济订货量指在确定需求下平衡订货成本和持有成本的最优批量。在常用记号中有 $Q^*=\\sqrt{2KD\\over h}$，其中$K$ 是每次订货成本，$D$ 是需求量，$h$ 是单位持有成本。\n\n它不同于报童模型，EOQ假设需求率确定且可重复订货。该公式说明订货成本越高批量越大，持有成本越高批量越小。库存语境中，经济订货量在订货成本、持有成本和缺货风险之间折中，随机需求会让最优策略带有阈值形式。经济订货量把日常补货问题写成优化模型，关键变量通常是订货批量、订货时点和安全余量。经济订货量的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "经济订货量",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%8F%E6%B5%8E%E8%AE%A2%E8%B4%A7%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "经济订货量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%8F%E6%B5%8E%E8%AE%A2%E8%B4%A7%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "economic order quantity",
+          "url": "https://en.wikipedia.org/w/index.php?search=economic%20order%20quantity"
+        }
+      ]
+    },
+    {
+      "chinese_name": "报童模型",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "报童模型用来描述一次性订货且随机需求下权衡缺货和积压成本的库存模型。可写作 $P(D\\le Q^*)={c_u\\over c_u+c_o}$，这里$c_u$ 是缺货成本，$c_o$ 是过量成本。\n\n它与EOQ不同，报童模型处理单周期随机需求而非确定连续补货。季节品、机票座位和易腐品订货常用这种临界分位数规则。库存语境中，报童模型在订货成本、持有成本和缺货风险之间折中，随机需求会让最优策略带有阈值形式。报童模型把日常补货问题写成优化模型，关键变量通常是订货批量、订货时点和安全余量。报童模型的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "报童模型",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%A5%E7%AB%A5%E6%A8%A1%E5%9E%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "报童模型",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%A5%E7%AB%A5%E6%A8%A1%E5%9E%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "newsboy model",
+          "url": "https://en.wikipedia.org/w/index.php?search=newsboy%20model"
+        }
+      ]
+    },
+    {
+      "chinese_name": "安全库存",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "安全库存刻画为应对需求或交货期不确定性而额外保留的库存。可写作 $SS=z\\sigma_L$，这里$z$ 是服务水平系数，$\\sigma_L$ 是提前期需求标准差。\n\n它不同于循环库存，安全库存不是平均订货批量的一部分，而是风险缓冲。服务水平越高或波动越大，所需安全库存越多。库存语境中，安全库存在订货成本、持有成本和缺货风险之间折中，随机需求会让最优策略带有阈值形式。安全库存把日常补货问题写成优化模型，关键变量通常是订货批量、订货时点和安全余量。安全库存的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "安全库存",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%89%E5%85%A8%E5%BA%93%E5%AD%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "安全库存",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%89%E5%85%A8%E5%BA%93%E5%AD%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "safety stock",
+          "url": "https://en.wikipedia.org/w/index.php?search=safety%20stock"
+        }
+      ]
+    },
+    {
+      "chinese_name": "再订货点",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "再订货点是库存位置降到该水平时触发补货的阈值。常写成 $ROP=dL+SS$，其中$d$ 是平均需求率，$L$ 是提前期，$SS$ 是安全库存。\n\n它与订货量不同，再订货点决定何时订，订货量决定订多少。连续检查库存策略常用再订货点和批量共同定义。库存语境中，再订货点在订货成本、持有成本和缺货风险之间折中，随机需求会让最优策略带有阈值形式。再订货点把日常补货问题写成优化模型，关键变量通常是订货批量、订货时点和安全余量。再订货点的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "再订货点",
+          "url": "https://www.baidu.com/s?wd=%E5%86%8D%E8%AE%A2%E8%B4%A7%E7%82%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "再订货点",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%86%8D%E8%AE%A2%E8%B4%A7%E7%82%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "reorder point",
+          "url": "https://en.wikipedia.org/w/index.php?search=reorder%20point"
+        }
+      ]
+    },
+    {
+      "chinese_name": "状态转移",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "状态转移指系统从一个状态移动到另一个状态的规则或概率。常写成 $P_{ij}=P(X_{t+1}=j\\mid X_t=i)$，其中$P_{ij}$ 是转移概率，$X_t$ 是状态。\n\n它不同于目标函数，状态转移描述动态约束，目标函数评价路径好坏。马尔可夫链、动态规划和马尔可夫决策过程都以状态转移为核心。动态规划中，状态转移按状态递推价值，马尔可夫性保证未来只依赖当前状态和行动。状态转移适合多阶段决策，状态维数一高就会出现维数灾难，需要近似或结构化策略。状态转移的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "状态转移",
+          "url": "https://www.baidu.com/s?wd=%E7%8A%B6%E6%80%81%E8%BD%AC%E7%A7%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "状态转移",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%8A%B6%E6%80%81%E8%BD%AC%E7%A7%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "state transfer",
+          "url": "https://en.wikipedia.org/w/index.php?search=state%20transfer"
+        }
+      ]
+    },
+    {
+      "chinese_name": "贝尔曼方程",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "贝尔曼方程用来描述价值函数满足的递推最优性方程。一个核心表达是 $V(s)=\\min_a\\{c(s,a)+\\gamma\\sum_{s'}P(s'|s,a)V(s')\\}$，这里$s$ 是状态，$a$ 是行动，$\\gamma$ 是折扣因子。\n\n它与线性规划约束不同，Bellman方程按状态递归表达未来最优值。动态规划、强化学习和马尔可夫决策过程都使用这种方程。动态规划中，贝尔曼方程按状态递推价值，马尔可夫性保证未来只依赖当前状态和行动。贝尔曼方程适合多阶段决策，状态维数一高就会出现维数灾难，需要近似或结构化策略。贝尔曼方程的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "贝尔曼方程",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%9D%E5%B0%94%E6%9B%BC%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "贝尔曼方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%9D%E5%B0%94%E6%9B%BC%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bellman equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=bellman%20equation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "最优性原理",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "最优性原理刻画最优策略的任意后续部分相对于到达状态仍应最优的原则。一个核心表达是 $V_t(s)=\\min_a\\{c_t(s,a)+V_{t+1}(s')\\}$，这里$V_t$ 是阶段价值，$s'$ 是后继状态。\n\n它与贪心原则不同，当前选择要通过未来价值共同评价。该原则是动态规划能够分阶段求解的根本原因。动态规划中，最优性原理按状态递推价值，马尔可夫性保证未来只依赖当前状态和行动。最优性原理适合多阶段决策，状态维数一高就会出现维数灾难，需要近似或结构化策略。最优性原理的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最优性原理",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E4%BC%98%E6%80%A7%E5%8E%9F%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最优性原理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E4%BC%98%E6%80%A7%E5%8E%9F%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "principle of optimality",
+          "url": "https://en.wikipedia.org/w/index.php?search=principle%20of%20optimality"
+        }
+      ]
+    },
+    {
+      "chinese_name": "马尔可夫决策过程",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "马尔可夫决策过程是状态转移具有马尔可夫性质且可通过行动控制的随机决策模型。在常用记号中有 $P(s'|s,a)$，其中$s$ 是状态，$a$ 是行动，$s'$ 是下一状态。\n\n它与普通马尔可夫链不同，转移概率受行动影响；与确定动态规划相比，它包含随机性。策略迭代和值迭代是求解折扣或平均收益马尔可夫决策过程的基本算法。动态规划中，马尔可夫决策过程按状态递推价值，马尔可夫性保证未来只依赖当前状态和行动。马尔可夫决策过程适合多阶段决策，状态维数一高就会出现维数灾难，需要近似或结构化策略。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "马尔可夫决策过程",
+          "url": "https://www.baidu.com/s?wd=%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E5%86%B3%E7%AD%96%E8%BF%87%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "马尔可夫决策过程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E5%86%B3%E7%AD%96%E8%BF%87%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "markov decision process",
+          "url": "https://en.wikipedia.org/w/index.php?search=markov%20decision%20process"
+        }
+      ]
+    },
+    {
+      "chinese_name": "策略迭代",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "策略迭代指在固定策略评价和策略改进之间交替的动态规划算法。在常用记号中有 $\\pi_{k+1}(s)=\\arg\\min_a\\{c(s,a)+\\gamma\\sum_{s'}P(s'|s,a)V^{\\pi_k}(s')\\}$，其中$\\pi_k$ 是策略，$V^{\\pi_k}$ 是该策略价值。\n\n它与值迭代不同，策略迭代每轮先较精确评价当前策略。有限马尔可夫决策过程中，策略迭代通常迭代次数少，但每次评价成本较高。动态规划中，策略迭代按状态递推价值，马尔可夫性保证未来只依赖当前状态和行动。策略迭代适合多阶段决策，状态维数一高就会出现维数灾难，需要近似或结构化策略。策略迭代的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "策略迭代",
+          "url": "https://www.baidu.com/s?wd=%E7%AD%96%E7%95%A5%E8%BF%AD%E4%BB%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "策略迭代",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AD%96%E7%95%A5%E8%BF%AD%E4%BB%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "strategy iteration",
+          "url": "https://en.wikipedia.org/w/index.php?search=strategy%20iteration"
+        }
+      ]
+    },
+    {
+      "chinese_name": "值迭代",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "值迭代用来描述直接对价值函数反复应用Bellman最优算子的算法。可写作 $V_{k+1}=TV_k$，这里$T$ 是Bellman最优算子，$V_k$ 是第 $k$ 次价值。\n\n它与策略迭代不同，不必每轮完整求解某个固定策略的价值方程。折扣马尔可夫决策过程中，Bellman算子是压缩映射，值迭代可收敛到最优价值。动态规划中，值迭代按状态递推价值，马尔可夫性保证未来只依赖当前状态和行动。值迭代适合多阶段决策，状态维数一高就会出现维数灾难，需要近似或结构化策略。值迭代的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "值迭代",
+          "url": "https://www.baidu.com/s?wd=%E5%80%BC%E8%BF%AD%E4%BB%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "值迭代",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%80%BC%E8%BF%AD%E4%BB%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "value iteration",
+          "url": "https://en.wikipedia.org/w/index.php?search=value%20iteration"
+        }
+      ]
+    },
+    {
+      "chinese_name": "博弈论",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "博弈论刻画研究多个决策者相互影响下策略选择和均衡的数学理论。可写作 $u_i(s_i,s_{-i})$，这里$u_i$ 是参与者 $i$ 的收益，$s_i$ 是其策略。\n\n它与单人优化不同，每个参与者的最优选择依赖他人的策略。纳什均衡、零和博弈和合作博弈分别刻画不同互动结构。博弈和决策分析里，博弈论把收益、概率和偏好写入同一框架，均衡或最优行动取决于对手与信息结构。博弈论不只看单个决策者的成本，也要看互动、风险态度和合作规则怎样改变最终分配。博弈论的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "博弈论",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%9A%E5%BC%88%E8%AE%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "博弈论",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%9A%E5%BC%88%E8%AE%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "game theory",
+          "url": "https://en.wikipedia.org/w/index.php?search=game%20theory"
+        }
+      ]
+    },
+    {
+      "chinese_name": "矩阵博弈",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "矩阵博弈是有限零和博弈中由收益矩阵描述双方策略的模型。常写成 $\\max_p\\min_q p^TAq$，其中$A$ 是收益矩阵，$p,q$ 是混合策略。\n\n它是博弈论的特殊情形，通常两人零和且策略有限。矩阵博弈可转化为线性规划求解，混合策略给出随机化最优反应。博弈和决策分析里，矩阵博弈把收益、概率和偏好写入同一框架，均衡或最优行动取决于对手与信息结构。矩阵博弈不只看单个决策者的成本，也要看互动、风险态度和合作规则怎样改变最终分配。矩阵博弈的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "矩阵博弈",
+          "url": "https://www.baidu.com/s?wd=%E7%9F%A9%E9%98%B5%E5%8D%9A%E5%BC%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "矩阵博弈",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9F%A9%E9%98%B5%E5%8D%9A%E5%BC%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "matrix game",
+          "url": "https://en.wikipedia.org/w/index.php?search=matrix%20game"
+        }
+      ]
+    },
+    {
+      "chinese_name": "纳什均衡",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "纳什均衡指每个参与者在他人策略给定时都无法单方面提高收益的策略组。常写成 $u_i(s_i^*,s_{-i}^*)\\ge u_i(s_i,s_{-i}^*)$，其中$s_i^*$ 是均衡策略，$s_{-i}^*$ 是其他人策略。\n\n它不同于社会总体最优，均衡只要求个体无单边偏离动机。非合作博弈、市场竞争和机制设计中都以纳什均衡为基准概念。博弈和决策分析里，纳什均衡把收益、概率和偏好写入同一框架，均衡或最优行动取决于对手与信息结构。纳什均衡不只看单个决策者的成本，也要看互动、风险态度和合作规则怎样改变最终分配。纳什均衡的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "纳什均衡",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "纳什均衡",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%B3%E4%BB%80%E5%9D%87%E8%A1%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "nash equilibrium",
+          "url": "https://en.wikipedia.org/w/index.php?search=nash%20equilibrium"
+        }
+      ]
+    },
+    {
+      "chinese_name": "混合策略",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "混合策略用来描述在多个纯策略上按概率随机选择的策略。一个核心表达是 $p_i\\ge0,\\qquad \\sum_i p_i=1$，这里$p_i$ 是选择第 $i$ 个纯策略的概率。\n\n它与纯策略不同，混合策略本身是概率分布。有限博弈中，允许混合策略可保证许多纳什均衡存在。博弈和决策分析里，混合策略把收益、概率和偏好写入同一框架，均衡或最优行动取决于对手与信息结构。混合策略不只看单个决策者的成本，也要看互动、风险态度和合作规则怎样改变最终分配。混合策略的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "混合策略",
+          "url": "https://www.baidu.com/s?wd=%E6%B7%B7%E5%90%88%E7%AD%96%E7%95%A5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "混合策略",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B7%B7%E5%90%88%E7%AD%96%E7%95%A5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mixed strategy",
+          "url": "https://en.wikipedia.org/w/index.php?search=mixed%20strategy"
+        }
+      ]
+    },
+    {
+      "chinese_name": "零和博弈",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "零和博弈刻画一方收益等于另一方损失的博弈。一个核心表达是 $u_1(s)+u_2(s)=0$，这里$u_1,u_2$ 是双方收益。\n\n它不同于一般和博弈，零和结构使最大化自身收益等价于最小化对方收益。极小极大定理说明有限零和博弈的混合策略均衡值存在。博弈和决策分析里，零和博弈把收益、概率和偏好写入同一框架，均衡或最优行动取决于对手与信息结构。零和博弈不只看单个决策者的成本，也要看互动、风险态度和合作规则怎样改变最终分配。零和博弈的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "零和博弈",
+          "url": "https://www.baidu.com/s?wd=%E9%9B%B6%E5%92%8C%E5%8D%9A%E5%BC%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "零和博弈",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9B%B6%E5%92%8C%E5%8D%9A%E5%BC%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "zero sum game",
+          "url": "https://en.wikipedia.org/w/index.php?search=zero%20sum%20game"
+        }
+      ]
+    },
+    {
+      "chinese_name": "合作博弈",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "合作博弈是允许参与者结盟并分配联盟收益的博弈模型。在常用记号中有 $v(S)$，其中$S$ 是联盟，$v(S)$ 是联盟价值。\n\n它不同于非合作博弈，合作博弈重点不是行动时序，而是联盟价值如何分配。核心、Shapley值和议价解都是合作博弈中的分配概念。博弈和决策分析里，合作博弈把收益、概率和偏好写入同一框架，均衡或最优行动取决于对手与信息结构。合作博弈不只看单个决策者的成本，也要看互动、风险态度和合作规则怎样改变最终分配。合作博弈的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "合作博弈",
+          "url": "https://www.baidu.com/s?wd=%E5%90%88%E4%BD%9C%E5%8D%9A%E5%BC%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "合作博弈",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%88%E4%BD%9C%E5%8D%9A%E5%BC%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cooperative game",
+          "url": "https://en.wikipedia.org/w/index.php?search=cooperative%20game"
+        }
+      ]
+    },
+    {
+      "chinese_name": "夏普利值",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "夏普利值指按边际贡献平均分配合作博弈总收益的方案。在常用记号中有 $\\phi_i=\\sum_{S\\not\\ni i}{|S|!(n-|S|-1)!\\over n!}\\bigl(v(S\\cup\\{i\\})-v(S)\\bigr)$，其中$v(S)$ 是联盟价值，$\\phi_i$ 是参与者 $i$ 的分配。\n\n它不同于核心，Shapley值总是由公平公理唯一确定，但不一定落在核心中。成本分摊、收益分配和特征归因常借用这种边际贡献思想。博弈和决策分析里，夏普利值把收益、概率和偏好写入同一框架，均衡或最优行动取决于对手与信息结构。夏普利值不只看单个决策者的成本，也要看互动、风险态度和合作规则怎样改变最终分配。夏普利值的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "夏普利值",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%8F%E6%99%AE%E5%88%A9%E5%80%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "夏普利值",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%8F%E6%99%AE%E5%88%A9%E5%80%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "shapley value",
+          "url": "https://en.wikipedia.org/w/index.php?search=shapley%20value"
+        }
+      ]
+    },
+    {
+      "chinese_name": "决策树",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "决策树用来描述用树状节点表示决策、随机事件和结果收益的模型。可写作 $EV(a)=\\sum_sP(s|a)u(s,a)$，这里$EV$ 是期望值，$a$ 是行动，$s$ 是状态。\n\n它不同于线性规划，决策树强调时序、信息和随机分支。风险决策、诊断策略和项目投资可用回溯方式在树上求最优行动。博弈和决策分析里，决策树把收益、概率和偏好写入同一框架，均衡或最优行动取决于对手与信息结构。决策树不只看单个决策者的成本，也要看互动、风险态度和合作规则怎样改变最终分配。决策树的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "决策树",
+          "url": "https://www.baidu.com/s?wd=%E5%86%B3%E7%AD%96%E6%A0%91%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "决策树",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%86%B3%E7%AD%96%E6%A0%91"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "decision tree",
+          "url": "https://en.wikipedia.org/w/index.php?search=decision%20tree"
+        }
+      ]
+    },
+    {
+      "chinese_name": "效用函数",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "效用函数刻画把结果或财富转化为决策者主观偏好数值的函数。可写作 $U=\\mathbb E[u(X)]$，这里$u$ 是效用函数，$X$ 是随机结果。\n\n它不同于货币收益，效用可体现风险厌恶或风险偏好。期望效用理论用它比较不确定方案，而不是只比较期望收益。博弈和决策分析里，效用函数把收益、概率和偏好写入同一框架，均衡或最优行动取决于对手与信息结构。效用函数不只看单个决策者的成本，也要看互动、风险态度和合作规则怎样改变最终分配。效用函数的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "效用函数",
+          "url": "https://www.baidu.com/s?wd=%E6%95%88%E7%94%A8%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "效用函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%95%88%E7%94%A8%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "utility function",
+          "url": "https://en.wikipedia.org/w/index.php?search=utility%20function"
+        }
+      ]
+    },
+    {
+      "chinese_name": "风险偏好",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "风险偏好是决策者面对不确定收益时对风险的态度。常写成 $u(\\mathbb E X)\\gtreqless \\mathbb E u(X)$，其中$u$ 是效用函数，$X$ 是随机收益。\n\n风险厌恶、风险中性和风险偏好分别对应凹、线性和凸效用。该概念解释为什么同一随机方案对不同决策者价值不同。博弈和决策分析里，风险偏好把收益、概率和偏好写入同一框架，均衡或最优行动取决于对手与信息结构。风险偏好不只看单个决策者的成本，也要看互动、风险态度和合作规则怎样改变最终分配。风险偏好的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "风险偏好",
+          "url": "https://www.baidu.com/s?wd=%E9%A3%8E%E9%99%A9%E5%81%8F%E5%A5%BD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "风险偏好",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%A3%8E%E9%99%A9%E5%81%8F%E5%A5%BD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "risk appetite",
+          "url": "https://en.wikipedia.org/w/index.php?search=risk%20appetite"
+        }
+      ]
+    },
+    {
+      "chinese_name": "多目标规划",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "多目标规划指同时优化多个可能冲突目标的规划模型。常写成 $\\min (f_1(x),\\ldots,f_k(x))\\quad x\\in F$，其中$f_i$ 是不同目标，$F$ 是可行域。\n\n它不同于单目标规划，通常不存在唯一的全序最优，只能讨论Pareto有效性。加权和、目标规划和分层方法都是处理多目标权衡的方式。在运筹模型中，多目标规划决定方案怎样被描述、筛选或比较；变量、目标和约束必须放在一起看。多目标规划要放在变量、目标和约束的整体关系中理解；它影响可行方案的表示、排序或算法移动方式。多目标规划所在的线性规划模型通常假设连续变量和确定性数据；若出现整数、随机或多阶段结构，模型需要相应扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "多目标规划",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%9A%E7%9B%AE%E6%A0%87%E8%A7%84%E5%88%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "多目标规划",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%9A%E7%9B%AE%E6%A0%87%E8%A7%84%E5%88%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "multi objective planning",
+          "url": "https://en.wikipedia.org/w/index.php?search=multi%20objective%20planning"
+        }
+      ]
+    },
+    {
+      "chinese_name": "目标规划",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "目标规划用来描述把多个目标转化为与期望水平偏差最小化的规划方法。一个核心表达是 $\\min \\sum_i w_i(d_i^++d_i^-)$，这里$d_i^+,d_i^-$ 是超额和不足偏差，$w_i$ 是权重。\n\n它是多目标规划的一种，不直接最大化所有目标，而是最小化偏离目标值。预算、生产和服务水平规划中常用目标规划处理软约束。在运筹模型中，目标规划决定方案怎样被描述、筛选或比较；变量、目标和约束必须放在一起看。目标规划要放在变量、目标和约束的整体关系中理解；它影响可行方案的表示、排序或算法移动方式。目标规划所在的线性规划模型通常假设连续变量和确定性数据；若出现整数、随机或多阶段结构，模型需要相应扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "目标规划",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%AE%E6%A0%87%E8%A7%84%E5%88%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "目标规划",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%AE%E6%A0%87%E8%A7%84%E5%88%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "objective programming",
+          "url": "https://en.wikipedia.org/w/index.php?search=objective%20programming"
+        }
+      ]
+    },
+    {
+      "chinese_name": "层次分析法",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "层次分析法刻画通过层级结构和两两比较权重进行多准则决策的方法。一个核心表达是 $Aw=\\lambda_{\\max}w$，这里$A$ 是判断矩阵，$w$ 是权重向量。\n\n它不同于线性规划，AHP主要用于偏好权重评估而非连续资源优化。一致性检验用于发现两两比较是否过于矛盾。在运筹模型中，层次分析法决定方案怎样被描述、筛选或比较；变量、目标和约束必须放在一起看。层次分析法要放在变量、目标和约束的整体关系中理解；它影响可行方案的表示、排序或算法移动方式。层次分析法所在的线性规划模型通常假设连续变量和确定性数据；若出现整数、随机或多阶段结构，模型需要相应扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "层次分析法",
+          "url": "https://www.baidu.com/s?wd=%E5%B1%82%E6%AC%A1%E5%88%86%E6%9E%90%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "层次分析法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B1%82%E6%AC%A1%E5%88%86%E6%9E%90%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "analytic hierarchy process",
+          "url": "https://en.wikipedia.org/w/index.php?search=analytic%20hierarchy%20process"
+        }
+      ]
+    },
+    {
+      "chinese_name": "数据包络分析",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "数据包络分析是用线性规划评价多个决策单元相对效率的方法。在常用记号中有 $\\max {\\sum_r u_ry_{ro}\\over\\sum_i v_ix_{io}}$，其中$x,y$ 是投入和产出，$u,v$ 是权重。\n\n它与普通生产函数估计不同，DEA以样本前沿衡量相对效率。医院、学校和企业部门绩效评估常使用DEA模型。在运筹模型中，数据包络分析决定方案怎样被描述、筛选或比较；变量、目标和约束必须放在一起看。数据包络分析要放在变量、目标和约束的整体关系中理解；它影响可行方案的表示、排序或算法移动方式。数据包络分析所在的线性规划模型通常假设连续变量和确定性数据；若出现整数、随机或多阶段结构，模型需要相应扩展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "数据包络分析",
+          "url": "https://www.baidu.com/s?wd=%E6%95%B0%E6%8D%AE%E5%8C%85%E7%BB%9C%E5%88%86%E6%9E%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "数据包络分析",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%95%B0%E6%8D%AE%E5%8C%85%E7%BB%9C%E5%88%86%E6%9E%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dea",
+          "url": "https://en.wikipedia.org/w/index.php?search=dea"
+        }
+      ]
+    },
+    {
+      "chinese_name": "凸优化",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "凸优化指在凸可行集上最小化凸函数的优化问题。在常用记号中有 $\\min f(x)\\quad\\text{s.t. }x\\in C$，其中$f$ 是凸函数，$C$ 是凸集。\n\n它不同于一般非凸优化，局部最优就是全局最优。线性规划、二次规划、锥规划和半定规划都是凸优化的重要子类。凸优化语境下，凸优化的收敛性通常由可行域几何和一阶、二阶条件保证；非凸情形只能得到局部信息。凸优化常作为大规模优化的基本部件，约束锥、障碍函数和松弛项会影响算法稳定性。凸优化的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "凸优化",
+          "url": "https://www.baidu.com/s?wd=%E5%87%B8%E4%BC%98%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "凸优化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%B8%E4%BC%98%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "convex optimization",
+          "url": "https://en.wikipedia.org/w/index.php?search=convex%20optimization"
+        }
+      ]
+    },
+    {
+      "chinese_name": "二次规划",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "二次规划用来描述目标函数含二次项且约束通常为线性的优化模型。可写作 $\\min {1\\over2}x^TQx+c^Tx\\quad\\text{s.t. }Ax\\le b$，这里$Q$ 是二次项矩阵，$x$ 是变量。\n\n当 $Q\\succeq0$ 时它是凸优化；若 $Q$ 不定，则可能出现非凸困难。投资组合、支持向量机和控制问题中常出现二次规划。凸优化语境下，二次规划的收敛性通常由可行域几何和一阶、二阶条件保证；非凸情形只能得到局部信息。二次规划常作为大规模优化的基本部件，约束锥、障碍函数和松弛项会影响算法稳定性。二次规划的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "二次规划",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%8C%E6%AC%A1%E8%A7%84%E5%88%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "二次规划",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%8C%E6%AC%A1%E8%A7%84%E5%88%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quadratic planning",
+          "url": "https://en.wikipedia.org/w/index.php?search=quadratic%20planning"
+        }
+      ]
+    },
+    {
+      "chinese_name": "锥规划",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "锥规划刻画变量受某个凸锥约束的优化模型。可写作 $Ax+b\\in K$，这里$K$ 是凸锥，$A,b$ 定义仿射映射。\n\n它推广线性规划，非负正交锥、二阶锥和半正定锥给出不同模型。许多鲁棒优化和范数约束问题可写成锥规划。凸优化语境下，锥规划的收敛性通常由可行域几何和一阶、二阶条件保证；非凸情形只能得到局部信息。锥规划常作为大规模优化的基本部件，约束锥、障碍函数和松弛项会影响算法稳定性。锥规划的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。因此理解锥规划还要看数据从哪里来，以及模型求出的方案是否能在实际约束下执行。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "锥规划",
+          "url": "https://www.baidu.com/s?wd=%E9%94%A5%E8%A7%84%E5%88%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "锥规划",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%94%A5%E8%A7%84%E5%88%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cone planning",
+          "url": "https://en.wikipedia.org/w/index.php?search=cone%20planning"
+        }
+      ]
+    },
+    {
+      "chinese_name": "半定规划",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "半定规划是以半正定矩阵作为变量或约束的凸优化。常写成 $\\min C\\bullet X\\quad\\text{s.t. }A_i\\bullet X=b_i,\\ X\\succeq0$，其中$X$ 是半正定矩阵，$\\bullet$ 是迹内积。\n\n它是锥规划在半正定锥上的特例，强于普通线性规划的矩阵表达能力。控制、组合优化松弛和矩阵补全都常用半定规划。凸优化语境下，半定规划的收敛性通常由可行域几何和一阶、二阶条件保证；非凸情形只能得到局部信息。半定规划常作为大规模优化的基本部件，约束锥、障碍函数和松弛项会影响算法稳定性。半定规划的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "半定规划",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8A%E5%AE%9A%E8%A7%84%E5%88%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "半定规划",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8A%E5%AE%9A%E8%A7%84%E5%88%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "semi definite planning",
+          "url": "https://en.wikipedia.org/w/index.php?search=semi%20definite%20planning"
+        }
+      ]
+    },
+    {
+      "chinese_name": "拉格朗日松弛",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "拉格朗日松弛指把困难约束移入目标函数并用乘子惩罚违反程度的方法。常写成 $L(x,\\lambda)=f(x)+\\lambda^Tg(x)$，其中$g(x)\\le0$ 是被松弛约束，$\\lambda\\ge0$ 是乘子。\n\n它不同于罚函数法，拉格朗日松弛常用于产生对偶界并分解问题。整数规划和网络优化中，松弛难约束可得到易解子问题。凸优化语境下，拉格朗日松弛的收敛性通常由可行域几何和一阶、二阶条件保证；非凸情形只能得到局部信息。拉格朗日松弛常作为大规模优化的基本部件，约束锥、障碍函数和松弛项会影响算法稳定性。拉格朗日松弛的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拉格朗日松弛",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E6%9D%BE%E5%BC%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拉格朗日松弛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E6%9D%BE%E5%BC%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lagrangian relaxation",
+          "url": "https://en.wikipedia.org/w/index.php?search=lagrangian%20relaxation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "罚函数法",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "罚函数法用来描述把约束违反量加入目标函数以求解约束优化的方法。一个核心表达是 $\\min f(x)+\\rho\\|g_+(x)\\|^2$，这里$\\rho$ 是罚参数，$g_+$ 表示违反部分。\n\n它与拉格朗日松弛不同，罚函数主要通过大惩罚逼近可行性。参数过小会留下违反约束，过大可能造成数值病态。凸优化语境下，罚函数法的收敛性通常由可行域几何和一阶、二阶条件保证；非凸情形只能得到局部信息。罚函数法常作为大规模优化的基本部件，约束锥、障碍函数和松弛项会影响算法稳定性。罚函数法的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "罚函数法",
+          "url": "https://www.baidu.com/s?wd=%E7%BD%9A%E5%87%BD%E6%95%B0%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "罚函数法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BD%9A%E5%87%BD%E6%95%B0%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "penalty function method",
+          "url": "https://en.wikipedia.org/w/index.php?search=penalty%20function%20method"
+        }
+      ]
+    },
+    {
+      "chinese_name": "次梯度法",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "次梯度法刻画用次梯度迭代最小化不可微凸函数的方法。一个核心表达是 $x_{k+1}=x_k-\\alpha_k g_k,\\quad g_k\\in\\partial f(x_k)$，这里$g_k$ 是次梯度，$\\alpha_k$ 是步长。\n\n它不同于牛顿法，不需要二阶可微性，但收敛通常较慢。Lagrange对偶、稀疏优化和大规模凸优化中常使用次梯度法。凸优化语境下，次梯度法的收敛性通常由可行域几何和一阶、二阶条件保证；非凸情形只能得到局部信息。次梯度法常作为大规模优化的基本部件，约束锥、障碍函数和松弛项会影响算法稳定性。次梯度法的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "次梯度法",
+          "url": "https://www.baidu.com/s?wd=%E6%AC%A1%E6%A2%AF%E5%BA%A6%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "次梯度法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AC%A1%E6%A2%AF%E5%BA%A6%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "subgradient method",
+          "url": "https://en.wikipedia.org/w/index.php?search=subgradient%20method"
+        }
+      ]
+    },
+    {
+      "chinese_name": "内点法",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "内点法是沿可行域内部路径逼近最优解的优化算法。在常用记号中有 $\\min c^Tx-\\mu\\sum_i\\log(b_i-A_ix)$，其中$\\mu$ 是障碍参数，$b_i-A_ix$ 是松弛量。\n\n它与单纯形法不同，内点法不沿顶点移动，而是跟随中心路径。线性规划、二次规划和半定规划都有成熟的内点算法。凸优化语境下，内点法的收敛性通常由可行域几何和一阶、二阶条件保证；非凸情形只能得到局部信息。内点法常作为大规模优化的基本部件，约束锥、障碍函数和松弛项会影响算法稳定性。内点法的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "内点法",
+          "url": "https://www.baidu.com/s?wd=%E5%86%85%E7%82%B9%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "内点法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%86%85%E7%82%B9%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "interior point method",
+          "url": "https://en.wikipedia.org/w/index.php?search=interior%20point%20method"
+        }
+      ]
+    },
+    {
+      "chinese_name": "障碍函数",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "障碍函数指在接近可行域边界时趋于无穷的惩罚函数。在常用记号中有 $\\phi(x)=-\\sum_i\\log(-g_i(x))$，其中$g_i(x)<0$ 是不等式约束。\n\n它与普通罚函数不同，障碍函数从可行域内部阻止越界。内点法通过逐渐减小障碍参数逼近原约束问题的最优解。凸优化语境下，障碍函数的收敛性通常由可行域几何和一阶、二阶条件保证；非凸情形只能得到局部信息。障碍函数常作为大规模优化的基本部件，约束锥、障碍函数和松弛项会影响算法稳定性。障碍函数的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "障碍函数",
+          "url": "https://www.baidu.com/s?wd=%E9%9A%9C%E7%A2%8D%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "障碍函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9A%9C%E7%A2%8D%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "barrier function",
+          "url": "https://en.wikipedia.org/w/index.php?search=barrier%20function"
+        }
+      ]
+    },
+    {
+      "chinese_name": "牛顿法",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "牛顿法用来描述利用一阶和二阶导数构造局部二次近似的迭代法。可写作 $x_{k+1}=x_k-\\nabla^2f(x_k)^{-1}\\nabla f(x_k)$，这里$\\nabla f$ 是梯度，$\\nabla^2f$ 是Hessian矩阵。\n\n它不同于次梯度法，Newton法需要二阶光滑性并在近解处快速收敛。凸优化、内点法和非线性方程求解中都以Newton步为核心。凸优化语境下，牛顿法的收敛性通常由可行域几何和一阶、二阶条件保证；非凸情形只能得到局部信息。牛顿法常作为大规模优化的基本部件，约束锥、障碍函数和松弛项会影响算法稳定性。牛顿法的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "牛顿法",
+          "url": "https://www.baidu.com/s?wd=%E7%89%9B%E9%A1%BF%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "牛顿法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%9B%E9%A1%BF%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "newton method",
+          "url": "https://en.wikipedia.org/w/index.php?search=newton%20method"
+        }
+      ]
+    },
+    {
+      "chinese_name": "模拟退火",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "模拟退火刻画允许按温度概率接受劣解以跳出局部最优的随机搜索算法。可写作 $P(\\text{accept})=\\exp(-\\Delta/T)$，这里$\\Delta$ 是目标增量，$T$ 是温度参数。\n\n它不同于局部搜索的纯改进规则，温度较高时可接受较差方案。组合优化中，降温计划决定探索与收敛之间的平衡。启发式算法使用模拟退火时更看重可扩展性和较好解，随机性、邻域设计或参数冷却会影响最终质量。模拟退火通常不给严格全局最优证明，但在路线、排程和组合搜索中能提供可用的近似方案。模拟退火的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "模拟退火",
+          "url": "https://www.baidu.com/s?wd=%E6%A8%A1%E6%8B%9F%E9%80%80%E7%81%AB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "模拟退火",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A8%A1%E6%8B%9F%E9%80%80%E7%81%AB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "simulated annealing",
+          "url": "https://en.wikipedia.org/w/index.php?search=simulated%20annealing"
+        }
+      ]
+    },
+    {
+      "chinese_name": "遗传算法",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "遗传算法是模拟选择、交叉和变异来搜索优化解的群体算法。常写成 $x^{new}=\\operatorname{crossover}(x^a,x^b)+\\operatorname{mutation}$，其中$x^a,x^b$ 是父代个体。\n\n它不同于精确算法，遗传算法通常不给全局最优证明，而依赖群体多样性探索。编码方式、适应度函数和变异率会显著影响性能。启发式算法使用遗传算法时更看重可扩展性和较好解，随机性、邻域设计或参数冷却会影响最终质量。遗传算法通常不给严格全局最优证明，但在路线、排程和组合搜索中能提供可用的近似方案。遗传算法的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "遗传算法",
+          "url": "https://www.baidu.com/s?wd=%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "遗传算法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "genetic algorithm",
+          "url": "https://en.wikipedia.org/w/index.php?search=genetic%20algorithm"
+        }
+      ]
+    },
+    {
+      "chinese_name": "禁忌搜索",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "禁忌搜索指利用禁忌表避免短期回到已访问区域的局部搜索方法。常写成 $x_{k+1}\\in N(x_k)\\setminus T_k$，其中$N(x_k)$ 是邻域，$T_k$ 是禁忌集合。\n\n它不同于普通邻域搜索，禁忌机制允许暂时接受非改进移动并避免循环。车辆路径、排产和图着色中常用禁忌搜索改进启发式解。启发式算法使用禁忌搜索时更看重可扩展性和较好解，随机性、邻域设计或参数冷却会影响最终质量。禁忌搜索通常不给严格全局最优证明，但在路线、排程和组合搜索中能提供可用的近似方案。禁忌搜索的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "禁忌搜索",
+          "url": "https://www.baidu.com/s?wd=%E7%A6%81%E5%BF%8C%E6%90%9C%E7%B4%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "禁忌搜索",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A6%81%E5%BF%8C%E6%90%9C%E7%B4%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "taboo search",
+          "url": "https://en.wikipedia.org/w/index.php?search=taboo%20search"
+        }
+      ]
+    },
+    {
+      "chinese_name": "蚁群算法",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "蚁群算法用来描述用信息素和启发式概率构造组合优化解的群体算法。一个核心表达是 $p_{ij}\\propto \\tau_{ij}^\\alpha\\eta_{ij}^\\beta$，这里$\\tau_{ij}$ 是信息素，$\\eta_{ij}$ 是启发因子。\n\n它不同于遗传算法的交叉变异，蚁群算法通过路径信息素积累引导搜索。旅行商、路径规划和网络路由是典型应用。启发式算法使用蚁群算法时更看重可扩展性和较好解，随机性、邻域设计或参数冷却会影响最终质量。蚁群算法通常不给严格全局最优证明，但在路线、排程和组合搜索中能提供可用的近似方案。蚁群算法的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "蚁群算法",
+          "url": "https://www.baidu.com/s?wd=%E8%9A%81%E7%BE%A4%E7%AE%97%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "蚁群算法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%9A%81%E7%BE%A4%E7%AE%97%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ant colony algorithm",
+          "url": "https://en.wikipedia.org/w/index.php?search=ant%20colony%20algorithm"
+        }
+      ]
+    },
+    {
+      "chinese_name": "粒子群算法",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "粒子群算法刻画用粒子位置和速度在解空间中协同搜索的启发式算法。一个核心表达是 $v_{k+1}=\\omega v_k+c_1r_1(p-x_k)+c_2r_2(g-x_k)$，这里$p$ 是个体最优，$g$ 是群体最优。\n\n它不同于遗传算法，不使用交叉操作，而通过速度更新共享群体经验。连续非凸优化和参数寻优中常使用粒子群算法。启发式算法使用粒子群算法时更看重可扩展性和较好解，随机性、邻域设计或参数冷却会影响最终质量。粒子群算法通常不给严格全局最优证明，但在路线、排程和组合搜索中能提供可用的近似方案。粒子群算法的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "粒子群算法",
+          "url": "https://www.baidu.com/s?wd=%E7%B2%92%E5%AD%90%E7%BE%A4%E7%AE%97%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "粒子群算法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B2%92%E5%AD%90%E7%BE%A4%E7%AE%97%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "particle swarm algorithm",
+          "url": "https://en.wikipedia.org/w/index.php?search=particle%20swarm%20algorithm"
+        }
+      ]
+    },
+    {
+      "chinese_name": "邻域搜索",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "邻域搜索是围绕当前解在定义好的邻域中寻找改进方案的方法。在常用记号中有 $x_{k+1}\\in N(x_k)$，其中$N(x_k)$ 是当前解的邻域。\n\n它比局部搜索更宽泛，局部搜索通常指定接受改进解的规则。邻域的设计决定算法能否有效探索交换、插入、反转等组合结构。启发式算法使用邻域搜索时更看重可扩展性和较好解，随机性、邻域设计或参数冷却会影响最终质量。邻域搜索通常不给严格全局最优证明，但在路线、排程和组合搜索中能提供可用的近似方案。邻域搜索的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "邻域搜索",
+          "url": "https://www.baidu.com/s?wd=%E9%82%BB%E5%9F%9F%E6%90%9C%E7%B4%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "邻域搜索",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%82%BB%E5%9F%9F%E6%90%9C%E7%B4%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "neighborhood search",
+          "url": "https://en.wikipedia.org/w/index.php?search=neighborhood%20search"
+        }
+      ]
+    },
+    {
+      "chinese_name": "局部搜索",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "局部搜索指从当前解出发反复移动到邻域中更好解的启发式方法。在常用记号中有 $f(x_{k+1})<f(x_k),\\quad x_{k+1}\\in N(x_k)$，其中$f$ 是目标函数，$N(x_k)$ 是邻域。\n\n它不同于模拟退火和禁忌搜索，基础局部搜索通常不主动接受劣解。算法可能停在局部最优，因此常与重启或扰动策略结合。启发式算法使用局部搜索时更看重可扩展性和较好解，随机性、邻域设计或参数冷却会影响最终质量。局部搜索通常不给严格全局最优证明，但在路线、排程和组合搜索中能提供可用的近似方案。局部搜索的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "局部搜索",
+          "url": "https://www.baidu.com/s?wd=%E5%B1%80%E9%83%A8%E6%90%9C%E7%B4%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "局部搜索",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B1%80%E9%83%A8%E6%90%9C%E7%B4%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "local search",
+          "url": "https://en.wikipedia.org/w/index.php?search=local%20search"
+        }
+      ]
+    },
+    {
+      "chinese_name": "车辆路径问题",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "车辆路径问题用来描述为一组车辆安排访问客户路线并满足容量等约束的组合优化问题。可写作 $\\min\\sum_{k}\\sum_{i,j}c_{ij}x_{ijk}$，这里$x_{ijk}$ 表示车辆 $k$ 是否走弧 $(i,j)$。\n\n它是旅行商问题的推广，增加多车辆、容量、时间窗等约束。物流配送、快递调度和冷链运输中都直接出现VRP模型。整数限制使车辆路径问题从凸多面体问题变成组合搜索问题，连续松弛给界，分支或割平面逐步收紧可行集。车辆路径问题在排产、选址和路径设计中很常见，模型规模稍大就需要利用结构而不是枚举所有方案。车辆路径问题的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "车辆路径问题",
+          "url": "https://www.baidu.com/s?wd=%E8%BD%A6%E8%BE%86%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "车辆路径问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BD%A6%E8%BE%86%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vehicle routing problem",
+          "url": "https://en.wikipedia.org/w/index.php?search=vehicle%20routing%20problem"
+        }
+      ]
+    },
+    {
+      "chinese_name": "旅行商问题",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "旅行商问题刻画寻找经过每个城市一次并回到起点的最短哈密顿回路问题。可写作 $\\min\\sum_{i,j}c_{ij}x_{ij}$，这里$x_{ij}$ 表示是否选择边 $(i,j)$，$c_{ij}$ 是距离。\n\n它不同于最短路，TSP要求访问所有节点且形成一条回路。该问题是组合优化的经典NP难问题，也是许多启发式算法的测试场景。整数限制使旅行商问题从凸多面体问题变成组合搜索问题，连续松弛给界，分支或割平面逐步收紧可行集。旅行商问题在排产、选址和路径设计中很常见，模型规模稍大就需要利用结构而不是枚举所有方案。旅行商问题的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "旅行商问题",
+          "url": "https://www.baidu.com/s?wd=%E6%97%85%E8%A1%8C%E5%95%86%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "旅行商问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%97%85%E8%A1%8C%E5%95%86%E9%97%AE%E9%A2%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "traveling salesman problem",
+          "url": "https://en.wikipedia.org/w/index.php?search=traveling%20salesman%20problem"
+        }
+      ]
+    },
+    {
+      "chinese_name": "设施选址",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "设施选址是决定设施开设位置并分配需求点以最小化成本的优化问题。常写成 $\\min\\sum_i f_iy_i+\\sum_{i,j}c_{ij}x_{ij}$，其中$y_i$ 表示是否开设设施，$x_{ij}$ 表示分配。\n\n它不同于运输问题，设施选址还包含开设决策和固定成本。仓库、医院、基站和充电站布局都可形成设施选址模型。整数限制使设施选址从凸多面体问题变成组合搜索问题，连续松弛给界，分支或割平面逐步收紧可行集。设施选址在排产、选址和路径设计中很常见，模型规模稍大就需要利用结构而不是枚举所有方案。设施选址的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "设施选址",
+          "url": "https://www.baidu.com/s?wd=%E8%AE%BE%E6%96%BD%E9%80%89%E5%9D%80%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "设施选址",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%AE%BE%E6%96%BD%E9%80%89%E5%9D%80"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "facility siting",
+          "url": "https://en.wikipedia.org/w/index.php?search=facility%20siting"
+        }
+      ]
+    },
+    {
+      "chinese_name": "集合覆盖",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "集合覆盖指选择若干集合使其覆盖所有元素且成本最小的问题。常写成 $\\min c^Tx\\quad\\text{s.t. }Ax\\ge \\mathbf1,\\ x\\in\\{0,1\\}^n$，其中$A$ 是覆盖矩阵，$x_j$ 表示是否选第 $j$ 个集合。\n\n它与集合划分不同，覆盖允许一个元素被多个集合覆盖。排班、选址和传感器布设中常见集合覆盖模型。整数限制使集合覆盖从凸多面体问题变成组合搜索问题，连续松弛给界，分支或割平面逐步收紧可行集。集合覆盖在排产、选址和路径设计中很常见，模型规模稍大就需要利用结构而不是枚举所有方案。集合覆盖的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "集合覆盖",
+          "url": "https://www.baidu.com/s?wd=%E9%9B%86%E5%90%88%E8%A6%86%E7%9B%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "集合覆盖",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9B%86%E5%90%88%E8%A6%86%E7%9B%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "collection coverage",
+          "url": "https://en.wikipedia.org/w/index.php?search=collection%20coverage"
+        }
+      ]
+    },
+    {
+      "chinese_name": "集合划分",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "集合划分用来描述选择若干集合使每个元素恰好被覆盖一次的问题。一个核心表达是 $Ax=\\mathbf1,\\quad x\\in\\{0,1\\}^n$，这里$A$ 是元素-集合关联矩阵，$x$ 是选择变量。\n\n它比集合覆盖更严格，不允许重复覆盖；比集合打包又要求不能遗漏。航班机组排班和车辆路径列生成模型常写成集合划分形式。整数限制使集合划分从凸多面体问题变成组合搜索问题，连续松弛给界，分支或割平面逐步收紧可行集。集合划分在排产、选址和路径设计中很常见，模型规模稍大就需要利用结构而不是枚举所有方案。集合划分的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "集合划分",
+          "url": "https://www.baidu.com/s?wd=%E9%9B%86%E5%90%88%E5%88%92%E5%88%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "集合划分",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9B%86%E5%90%88%E5%88%92%E5%88%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "set partitioning",
+          "url": "https://en.wikipedia.org/w/index.php?search=set%20partitioning"
+        }
+      ]
+    },
+    {
+      "chinese_name": "装箱问题",
+      "source_file": "words/数学/普通模式/operations_research_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "装箱问题刻画把物品分配到容量有限的箱子中并尽量减少箱数或成本的问题。一个核心表达是 $\\sum_i w_ix_{ij}\\le C y_j$，这里$w_i$ 是物品大小，$C$ 是箱容量，$y_j$ 表示箱子是否使用。\n\n它不同于背包问题，背包通常选物品最大化价值，装箱要安置所有物品。切割、云资源分配和物流装载都可抽象为装箱问题。整数限制使装箱问题从凸多面体问题变成组合搜索问题，连续松弛给界，分支或割平面逐步收紧可行集。装箱问题在排产、选址和路径设计中很常见，模型规模稍大就需要利用结构而不是枚举所有方案。装箱问题的适用范围要由变量类型、数据可靠性和约束来源限定，模型条件一变，算法表现也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "装箱问题",
+          "url": "https://www.baidu.com/s?wd=%E8%A3%85%E7%AE%B1%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "装箱问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A3%85%E7%AE%B1%E9%97%AE%E9%A2%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "boxing problem",
+          "url": "https://en.wikipedia.org/w/index.php?search=boxing%20problem"
+        }
+      ]
+    }
+  ]
+}

@@ -17,6 +17,24 @@
         "拉氏密度 路径积分 传播子 散射振幅",
         "标准模型 计算语言",
         "quantum field theory"
+      ],
+      "explanation_markdown": "量子场论把粒子看成场的量子激发，并允许粒子数在相互作用中改变，因此比单粒子波函数更适合相对论过程。核心权重常写 $Z=\\int\\mathcal D\\phi\\,e^{iS[\\phi]/\\hbar}$，其中 $\\mathcal D\\phi$ 表示对场构型积分，$S$ 是作用量，$\\hbar$ 是约化普朗克常数。\n\n拉格朗日密度给出传播子和顶角，重整化处理短距离发散。标准模型、凝聚态临界现象和有效场论都使用这套语言。它的难点不在于把所有粒子画成小球，而在于把局域性、洛伦兹协变性、量子统计和相互作用统一到可计算的关联函数中。实验结果通常通过截面、宽度和角分布反推这些场论结构。这种表述也让同一套微扰图既能描述散射，也能描述衰变和真空修正。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子场论",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E5%9C%BA%E8%AE%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子场论",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E5%9C%BA%E8%AE%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum field theory",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20field%20theory"
+        }
       ]
     },
     {
@@ -35,6 +53,24 @@
         "量子化 激发 粒子",
         "连续自由度 非单个质点",
         "field"
+      ],
+      "explanation_markdown": "场把时空每一点赋予一个物理自由度，取值可以是数、向量、旋量或算符。数学上可写 $\\phi:M\\to V$，其中 $M$ 是时空流形或空间区域，$V$ 是场取值空间；若 $V$ 带内部对称表示，场还携带相应量子数。经典场直接取数值，量子场则成为算符或路径积分变量。\n\n连续自由度使波、介质、规范连接和粒子激发能在同一框架中描述，也解释了为什么局域相互作用要写成时空积分。场的局域性让相互作用只在同一点或近邻点发生，这对因果性和重整化都很关键。即使最终观测为离散粒子，理论计算仍先处理连续场的传播和涨落。在有效理论中，选择哪些场作为低能自由度本身就是物理近似的一部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "场",
+          "url": "https://www.baidu.com/s?wd=%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "field",
+          "url": "https://en.wikipedia.org/w/index.php?search=field"
+        }
       ]
     },
     {
@@ -53,6 +89,24 @@
         "变分原理 偏微分方程",
         "忽略量子涨落",
         "classical field"
+      ],
+      "explanation_markdown": "经典场把连续自由度视为普通函数，不引入算符对易关系，适合描述电磁波、弹性介质和平均场近似。作用量 $S[\\phi]=\\int d^4x\\,\\mathcal L(\\phi,\\partial_\\mu\\phi)$ 中，$\\mathcal L$ 是拉格朗日密度，$\\phi$ 是场，$\\partial_\\mu\\phi$ 是时空导数；令 $S$ 取驻值得到运动方程。经典解可以是平面波、孤子或规范场构型。\n\n量子理论的鞍点展开、平均场理论和半经典隧穿都以经典场作为起点。经典场还可作为量子场的背景，例如外电磁场中的电子传播或弯曲时空中的量子涨落。稳定经典解往往给出非微扰对象，不能由少数粒子态简单拼出。边界条件和拓扑扇区会让同一局域方程拥有性质很不同的解。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "经典场",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%8F%E5%85%B8%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "经典场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%8F%E5%85%B8%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "classical field",
+          "url": "https://en.wikipedia.org/w/index.php?search=classical%20field"
+        }
       ]
     },
     {
@@ -71,6 +125,24 @@
         "产生算符 湮灭算符 模式函数",
         "真空涨落 粒子产生",
         "quantum field"
+      ],
+      "explanation_markdown": "量子场把每个模式的振幅提升为算符，场的激发态在实验中表现为粒子。自由实标量场可展开为 $\\hat\\phi(x)=\\int\\! d^3p\\,[a_{\\mathbf p}u_{\\mathbf p}(x)+a_{\\mathbf p}^\\dagger u^*_{\\mathbf p}(x)]$，其中 $a_{\\mathbf p}$ 湮灭动量模式，$a_{\\mathbf p}^\\dagger$ 产生模式，$u_{\\mathbf p}$ 是模式函数。对易或反对易关系决定统计性质。\n\n真空涨落、粒子产生和传播子都来自这种算符结构。同一种量子场可以在不同基底下定义不同粒子概念，外场、加速参考系或弯曲时空都会改变真空分解。相互作用理论中的粒子通常只在远离碰撞区的渐近态中严格定义。因此，所谓粒子种类本质上是场表示、质量极点和守恒荷共同给出的分类。这种视角尤其适合处理粒子产生和湮灭，因为场算符本身就改变福克空间占据。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子场",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum field",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20field"
+        }
       ]
     },
     {
@@ -89,6 +161,24 @@
         "克莱因戈登型方程",
         "希格斯自由度",
         "scalar field"
+      ],
+      "explanation_markdown": "标量场在洛伦兹变换下不带时空方向指标，场值只按内部空间变换或保持不变。自由实标量常满足 $(\\Box+m^2)\\phi=0$，其中 $\\Box=\\partial_\\mu\\partial^\\mu$ 是达朗贝尔算符，$m$ 是质量参数，$\\phi$ 是标量场。它是研究质量项、自相互作用和对称性破缺的最简模型。\n\n希格斯径向模、临界现象中的序参量和许多有效理论中的Goldstone坐标都可用标量自由度描述。标量场没有洛伦兹方向指标，但仍可带内部指标或规范荷。它常作为复杂理论的试验台，因为没有自旋代数干扰，可清楚展示质量、势能、真空和重整化之间的关系。许多复杂理论会先退化到标量模型，以分离真空结构和相互作用的基本效应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "标量场",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%87%E9%87%8F%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "标量场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%87%E9%87%8F%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "scalar field",
+          "url": "https://en.wikipedia.org/w/index.php?search=scalar%20field"
+        }
       ]
     },
     {
@@ -107,6 +197,24 @@
         "1/2 ∂φ ² - 1/2m²φ²",
         "Z2 对称 单分量序参量",
         "real scalar field"
+      ],
+      "explanation_markdown": "实标量场每一点只取一个实数自由度，粒子与反粒子不作为独立场分量区分。典型拉氏量为 $\\mathcal L=\\frac12(\\partial_\\mu\\phi)^2-\\frac12m^2\\phi^2-\\frac\\lambda{4!}\\phi^4$，其中 $m$ 是质量，$\\lambda$ 是四次自耦合，$\\phi$ 是实场。二次项决定传播子，四次项给出四腿顶角。它常用于说明重整化、相变和 $Z_2$ 自发破缺，也可近似描述单分量序参量的低能涨落。\n\n若 $m^2$ 改为负值，势能最低点离开原点，模型就成为说明自发对称性破缺的基本例子。它还可在欧氏格点上模拟，检验临界指数和连续极限。它的简洁性使相图、临界点和微扰反项都能以最少自由度展示出来。在教学和研究中，它常作为检验近似方法、重整化方案和数值模拟的基准模型。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "实标量场",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%9E%E6%A0%87%E9%87%8F%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "实标量场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%9E%E6%A0%87%E9%87%8F%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "real scalar field",
+          "url": "https://en.wikipedia.org/w/index.php?search=real%20scalar%20field"
+        }
       ]
     },
     {
@@ -125,6 +233,24 @@
         "变量 复共轭 拉氏量",
         "带电玻色粒子 超导序参量",
         "complex scalar field"
+      ],
+      "explanation_markdown": "复标量场等价于两个实标量场组合成一个复自由度，天然带有相位旋转对称。拉氏量可写 $\\mathcal L=\\partial_\\mu\\phi^*\\partial^\\mu\\phi-m^2\\phi^*\\phi$，其中 $\\phi$ 是复场，$\\phi^*$ 是复共轭，$m$ 是质量；整体变换 $\\phi\\to e^{i\\alpha}\\phi$ 导致守恒荷。带电标量粒子、超导序参量和玻色凝聚相位都可用这种结构描述。\n\n若把对称性局域化，就必须引入规范场进行协变导数替换。复场的相位自由度使它能承载守恒流，径向和相位涨落在破缺相中扮演不同角色。超导的相位刚度、带电π介子和标量QED都可从这个模型延伸出来。若相位刚度非零，长波相位涨落会支配低能响应，并影响涡旋等拓扑缺陷。带规范荷时，它还会产生电流响应和规范玻色子质量项，是标量电动力学的核心。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "复标量场",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%8D%E6%A0%87%E9%87%8F%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "复标量场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%8D%E6%A0%87%E9%87%8F%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "complex scalar field",
+          "url": "https://en.wikipedia.org/w/index.php?search=complex%20scalar%20field"
+        }
       ]
     },
     {
@@ -143,6 +269,24 @@
         "狄拉克型方程 伽马矩阵",
         "电子 夸克 基本自由度",
         "spinor field"
+      ],
+      "explanation_markdown": "旋量场按洛伦兹群的自旋表示变换，用来描述半整数自旋费米子，而不是普通空间向量。狄拉克型拉氏量 $\\mathcal L=\\bar\\psi(i\\gamma^\\mu\\partial_\\mu-m)\\psi$ 中，$\\psi$ 是旋量场，$\\bar\\psi$ 是狄拉克伴随，$\\gamma^\\mu$ 是伽马矩阵，$m$ 是质量。量子化时采用反对易关系，保证费米统计和正能谱。\n\n电子、夸克和许多有效理论中的准粒子都依赖旋量场来表达自旋与手征结构。旋量场的双线性组合决定可观测流，例如矢量流、轴矢流和标量质量项。费米子闭合圈会额外带负号，这一点在反常、真空极化和散射截面修正中都不可忽略。实际振幅常用旋量链表示，外线自旋求和后再化成伽马矩阵迹。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "旋量场",
+          "url": "https://www.baidu.com/s?wd=%E6%97%8B%E9%87%8F%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "旋量场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%97%8B%E9%87%8F%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "spinor field",
+          "url": "https://en.wikipedia.org/w/index.php?search=spinor%20field"
+        }
       ]
     },
     {
@@ -161,6 +305,24 @@
         "A_μ 旋度 强度张量",
         "光子 胶子 弱媒介",
         "vector field"
+      ],
+      "explanation_markdown": "矢量场带有洛伦兹指标，可表示自旋一自由度或规范连接。电磁场势 $A_\\mu$ 的强度张量为 $F_{\\mu\\nu}=\\partial_\\mu A_\\nu-\\partial_\\nu A_\\mu$，其中 $\\mu,\\nu$ 是时空指标，$A_\\mu$ 是四维矢量场；$F_{\\mu\\nu}$ 包含电场和磁场。若矢量场有质量，需要处理纵向极化和约束条件。\n\n光子、弱玻色子、有效介子场和凝聚态规范场都可用矢量场语言，但物理极化数取决于质量与规范对称性。矢量场若作为规范场，部分分量只是冗余描述，需要规范固定后才有传播子。若是有质量矢量场，纵向自由度会在高能散射中变得敏感，常检验质量生成机制是否一致。实验上，矢量粒子的极化角分布常能反推出产生机制和手征耦合结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "矢量场",
+          "url": "https://www.baidu.com/s?wd=%E7%9F%A2%E9%87%8F%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "矢量场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9F%A2%E9%87%8F%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vector field",
+          "url": "https://en.wikipedia.org/w/index.php?search=vector%20field"
+        }
       ]
     },
     {
@@ -179,6 +341,24 @@
         "强度张量 协变导数对易子",
         "电磁 弱 强 相互作用",
         "gauge field"
+      ],
+      "explanation_markdown": "规范场是为保持局域内部对称性而引入的连接，它比较不同点处相位或内部基底的变化。协变导数写作 $D_\\mu=\\partial_\\mu-igA^a_\\mu T^a$，其中 $g$ 是耦合，$A^a_\\mu$ 是规范场，$T^a$ 是群生成元；场强来自 $[D_\\mu,D_\\nu]$。阿贝尔情形给出电磁场，非阿贝尔情形出现规范玻色子自相互作用。\n\n规范场的冗余描述需要规范固定，但可观测量必须与规范选择无关。规范场的物理内容通常由环路、场强或Wilson线表达，而非单独的势函数。非平庸拓扑构型还能让规范场真空分成不同扇区，影响反常和瞬子效应。规范不变量的选择会影响可计算对象，例如散射振幅、Wilson圈和拓扑荷侧重不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "规范场",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%84%E8%8C%83%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "规范场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%84%E8%8C%83%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gauge field",
+          "url": "https://en.wikipedia.org/w/index.php?search=gauge%20field"
+        }
       ]
     },
     {
@@ -197,6 +377,24 @@
         "变分 自由度 导数",
         "顶角 传播子 读出",
         "lagrangian density"
+      ],
+      "explanation_markdown": "拉格朗日密度把局域场和导数组合成动力学函数，是场论写出运动方程和微扰规则的入口。作用量为 $S=\\int d^4x\\,\\mathcal L$，其中 $d^4x$ 是时空体积元，$\\mathcal L$ 是拉格朗日密度；要求 $S$ 驻值给出经典方程。二次项决定自由传播子，相互作用项决定费曼顶角，局域对称性限制可出现的组合。\n\n有效场论中还会按维数加入高阶算符，使未知高能物理压缩进低能系数。写出拉格朗日密度时，维数、对称性和场的表示会限制可允许项。实验拟合得到的质量、耦合和混合角本质上都是这些局域项的系数或由它们导出的参数。它还决定功率计数和对称性破缺方式，是建立模型前必须固定的最小数据。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拉格朗日密度",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E5%AF%86%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拉格朗日密度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E5%AF%86%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lagrangian density",
+          "url": "https://en.wikipedia.org/w/index.php?search=lagrangian%20density"
+        }
       ]
     },
     {
@@ -215,6 +413,24 @@
         "S = ∫ d⁴x L",
         "变分原理 费曼权重",
         "action"
+      ],
+      "explanation_markdown": "作用量是整个场构型历史的泛函，决定经典轨道和量子路径积分权重。场论中写作 $S[\\phi]=\\int d^4x\\,\\mathcal L(\\phi,\\partial\\phi)$，其中 $\\phi$ 是场，$\\partial\\phi$ 表示导数，$\\mathcal L$ 是拉格朗日密度。经典极限由 $\\delta S=0$ 选出驻相路径，量子理论中每个构型以 $e^{iS/\\hbar}$ 相位贡献。\n\n对称变换若保持作用量不变，就通过诺特定理产生守恒流；欧氏化后作用量还控制统计权重。作用量还负责给出边界项和拓扑项，后者可能不改变局域方程却改变量子相位。规范理论、引力和凝聚态有效理论中，选择正确作用量比逐个写力更根本。半经典近似中，非平庸驻点与普通真空涨落一起贡献量子振幅。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "作用量",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%9C%E7%94%A8%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "作用量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%9C%E7%94%A8%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "action",
+          "url": "https://en.wikipedia.org/w/index.php?search=action"
+        }
       ]
     },
     {
@@ -233,6 +449,24 @@
         "∂L/∂φ - ∂_μ[∂L/∂ ∂_μφ ] = 0",
         "拉氏密度 克莱因戈登",
         "euler lagrange equation"
+      ],
+      "explanation_markdown": "欧拉拉格朗日方程是作用量驻值条件对连续场的局域表达。对场 $\\phi$，形式为 $\\frac{\\partial\\mathcal L}{\\partial\\phi}-\\partial_\\mu\\frac{\\partial\\mathcal L}{\\partial(\\partial_\\mu\\phi)}=0$，其中 $\\mathcal L$ 是拉格朗日密度，$\\partial_\\mu$ 是时空导数。它把变分边界项整理成场方程，适用于标量场、旋量场和规范场。\n\n代入自由标量拉氏量得到克莱因戈登方程，代入规范场拉氏量则得到麦克斯韦或杨米尔斯方程。在含约束或规范冗余的系统中，方程还需配合约束条件和规范选择理解。量子修正通常不直接改写经典方程，而是通过有效作用量给出修正后的运动方程。若拉氏量含高阶导数或非局域项，方程结构会更复杂，也可能引入额外自由度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "欧拉拉格朗日方程",
+          "url": "https://www.baidu.com/s?wd=%E6%AC%A7%E6%8B%89%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "欧拉拉格朗日方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AC%A7%E6%8B%89%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "euler lagrange equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=euler%20lagrange%20equation"
+        }
       ]
     },
     {
@@ -251,6 +485,24 @@
         "[φ x ,π y ] = iδ x-y",
         "哈密顿量 产生算符 粒子数",
         "canonical quantization"
+      ],
+      "explanation_markdown": "正则量子化从经典场和共轭动量出发，在固定时间面上把它们提升为算符。标量场满足 $[\\hat\\phi(t,\\mathbf x),\\hat\\pi(t,\\mathbf y)]=i\\hbar\\delta^{(3)}(\\mathbf x-\\mathbf y)$，其中 $\\hat\\pi$ 是共轭动量场，$\\delta^{(3)}$ 是三维δ函数。费米场改用反对易关系。该方法保留哈密顿量和粒子数表象的直观性，适合构造自由场、微扰展开和约束量子化；规范理论还需处理一阶约束与规范冗余。\n\n正则方法突出时间切片，因此在洛伦兹协变性上不如路径积分显然，却便于讨论哈密顿量谱、约束和希尔伯特空间。规范场需要先分离物理与非物理自由度。它在规范理论中的困难也促成了BRST和路径积分方法的发展。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正则量子化",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E5%88%99%E9%87%8F%E5%AD%90%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正则量子化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E5%88%99%E9%87%8F%E5%AD%90%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "canonical quantization",
+          "url": "https://en.wikipedia.org/w/index.php?search=canonical%20quantization"
+        }
       ]
     },
     {
@@ -269,6 +521,24 @@
         "exp iS/ħ",
         "传播子 顶角 圈修正",
         "path integral"
+      ],
+      "explanation_markdown": "路径积分把所有场构型按作用量相位相干求和，提供量子涨落和微扰展开的统一表达。振幅核心为 $\\int\\mathcal D\\phi\\,e^{iS[\\phi]/\\hbar}$，其中 $\\mathcal D\\phi$ 是对构型的形式测度，$S[\\phi]$ 是作用量。展开相互作用项并对高斯部分积分，就得到传播子、顶角和圈图。\n\n欧氏路径积分把权重变成 $e^{-S_E/\\hbar}$，更接近统计物理配分函数，也便于格点模拟和非微扰计算。路径积分的形式测度需要正规化后才有明确含义，格点场论就是把它变成有限维积分的一种方式。鞍点、圈展开和拓扑扇区都能在这套语言中自然出现。源项、边界态和拓扑项都能直接放入路径积分，使它适合推导恒等式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "路径积分",
+          "url": "https://www.baidu.com/s?wd=%E8%B7%AF%E5%BE%84%E7%A7%AF%E5%88%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "路径积分",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B7%AF%E5%BE%84%E7%A7%AF%E5%88%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "path integral",
+          "url": "https://en.wikipedia.org/w/index.php?search=path%20integral"
+        }
       ]
     },
     {
@@ -287,6 +557,24 @@
         "Dφ 测度",
         "量子涨落 生成泛函",
         "functional integral"
+      ],
+      "explanation_markdown": "泛函积分是对函数空间或场构型空间积分的记号，普通积分变量被整条函数替代。常写 $\\int\\mathcal D\\phi\\,F[\\phi]$，其中 $\\mathcal D\\phi$ 表示对所有场构型的测度，$F[\\phi]$ 是依赖整场的泛函；严格定义通常需正规化或格点离散。\n\n量子场论用它生成关联函数，统计场论用它求热涨落平均。测度、边界条件和规范冗余都会影响结果，因此规范场还要加入规范固定和鬼场因子。严格处理泛函积分时，边界条件、零模和规范轨道体积都可能改变归一化。许多看似形式的推导，如反常和Ward恒等式，实际取决于测度如何变换。不同正规化会给测度带来不同表现，因此形式相同的积分未必代表同一理论。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "泛函积分",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%9B%E5%87%BD%E7%A7%AF%E5%88%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "泛函积分",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%9B%E5%87%BD%E7%A7%AF%E5%88%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "functional integral",
+          "url": "https://en.wikipedia.org/w/index.php?search=functional%20integral"
+        }
       ]
     },
     {
@@ -305,6 +593,24 @@
         "Z[J] W[J]",
         "费曼图展开 母函数",
         "generating functional"
+      ],
+      "explanation_markdown": "生成泛函用外源把所有关联函数编码进一个对象，类似无限维的母函数。标量场常写 $Z[J]=\\int\\mathcal D\\phi\\,e^{iS[\\phi]+i\\int J\\phi}$，其中 $J$ 是源，$\\phi$ 是场，对 $J$ 作泛函导数会拉下场插入。连通图由 $W[J]=-i\\ln Z[J]$ 生成，有效作用量再由勒让德变换得到。\n\n它使费曼图、响应函数和重整化方程可以系统组织，而不用逐个从算符乘积开始。不同版本的生成泛函服务于不同图：$Z$ 生成全部图，$W$ 生成连通图，有效作用量生成一粒子不可约图。这个层级让复杂微扰计算变得可分类。实际计算会先求连通或一粒子不可约生成对象，再回到可观测矩阵元。这种组织方式也便于加入多个源，分别追踪基本场、复合算符和守恒流响应。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "生成泛函",
+          "url": "https://www.baidu.com/s?wd=%E7%94%9F%E6%88%90%E6%B3%9B%E5%87%BD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "生成泛函",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%9F%E6%88%90%E6%B3%9B%E5%87%BD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "generating functional",
+          "url": "https://en.wikipedia.org/w/index.php?search=generating%20functional"
+        }
       ]
     },
     {
@@ -323,6 +629,24 @@
         "Z = ∫Dφ exp -S_E",
         "真空能 有效作用量 热理论",
         "partition functional"
+      ],
+      "explanation_markdown": "配分泛函把欧氏场构型按统计权重求和，是量子场论与统计物理之间的桥。常写 $Z=\\int\\mathcal D\\phi\\,e^{-S_E[\\phi]}$，其中 $S_E$ 是欧氏作用量，$\\mathcal D\\phi$ 是构型测度；有限温场论还令欧氏时间周期为 $\\beta=1/T$。自由能由 $F=-T\\ln Z$ 或相应归一化给出，关联函数由加入源后求导得到。\n\n真空能、相变、瞬子贡献和格点QCD都以这种欧氏配分泛函为基础。欧氏配分泛函可通过蒙特卡洛重要抽样数值计算，这是格点规范理论的基础。若作用量带复相位，则会出现符号问题，使有限密度QCD等体系格外困难。热场论中，边界条件还区分玻色和费米自由度，直接影响 Matsubara 频率。相变研究中，序参量分布和隧穿概率也可从同一配分泛函中提取。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "配分泛函",
+          "url": "https://www.baidu.com/s?wd=%E9%85%8D%E5%88%86%E6%B3%9B%E5%87%BD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "配分泛函",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%85%8D%E5%88%86%E6%B3%9B%E5%87%BD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "partition functional",
+          "url": "https://en.wikipedia.org/w/index.php?search=partition%20functional"
+        }
       ]
     },
     {
@@ -341,6 +665,24 @@
         "泛函导数 自由度插入",
         "关联函数 系统生成",
         "source field"
+      ],
+      "explanation_markdown": "源场是外加的辅助函数，用来探测场或复合算符的响应，计算结束后通常设为零。耦合项常写 $S_J=\\int d^4x\\,J(x)\\phi(x)$，其中 $J(x)$ 是源，$\\phi(x)$ 是被探测的场；对 $J$ 求泛函导数会产生对应场插入。源可以是数学工具，也可以代表外电磁场、化学势或边界扰动。\n\n在线性响应和有效作用量构造中，源场把观测量的变化组织成关联函数和顶角函数。源场还可耦合到复合算符，例如质量项、电流或能动张量，从而定义响应函数。对源的勒让德变换把平均场作为变量，是有效作用量和自洽方程的常用构造。若源取为空间常数，它还可用来定义序参量和相变中的易感率。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "源场",
+          "url": "https://www.baidu.com/s?wd=%E6%BA%90%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "源场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%BA%90%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "source field",
+          "url": "https://en.wikipedia.org/w/index.php?search=source%20field"
+        }
       ]
     },
     {
@@ -359,6 +701,24 @@
         "i/ p²-m²+iε",
         "费曼图 内部连线",
         "propagator"
+      ],
+      "explanation_markdown": "传播子给出自由扰动从一点传播到另一点的振幅，也是二次动力学算符的逆。动量空间标量传播子为 $\\Delta_F(p)=i/(p^2-m^2+i\\epsilon)$，其中 $p$ 是四动量，$m$ 是质量，$i\\epsilon$ 规定极点绕行方式。坐标空间传播子是两点函数，费曼图中内部线使用它连接顶角。\n\n传播子的极点位置给出粒子质量，留数给出场归一化；相互作用会通过自能修正移动极点并产生宽度。传播子不仅给出粒子从一处到另一处的传播，还包含谱密度信息。若理论有禁闭，基本场传播子的极点未必对应可观测粒子，这时强子关联函数更有物理意义。在介质或有限温度中，传播子极点会移动并展宽，形成准粒子的色散关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "传播子",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%A0%E6%92%AD%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "传播子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%A0%E6%92%AD%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "propagator",
+          "url": "https://en.wikipedia.org/w/index.php?search=propagator"
+        }
       ]
     },
     {
@@ -377,6 +737,24 @@
         "真空 T乘积 二点期望",
         "微扰计算 内部线",
         "feynman propagator"
+      ],
+      "explanation_markdown": "费曼传播子是时间有序两点函数，包含因果边界条件和 $i\\epsilon$ 处方。定义为 $D_F(x-y)=\\langle0|T\\phi(x)\\phi(y)|0\\rangle$，其中 $T$ 表示时间排序，$|0\\rangle$ 是真空态，$\\phi$ 是场；它自动安排正频模式向未来传播、负频模式按反粒子解释。微扰展开中内部线默认取费曼传播子。\n\n不同传播子，如推迟、超前和欧氏传播子，对应不同边界条件和物理问题。它与因果传播子不同，并不表示信号可在时空外传播，而是时间有序量子振幅。外部可观测因果性由完整散射矩阵和场算符在类空间隔的对易性保证。其极点处方确保真空边界条件，与普通经典因果响应函数的用途不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "费曼传播子",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%B9%E6%9B%BC%E4%BC%A0%E6%92%AD%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "费曼传播子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%B9%E6%9B%BC%E4%BC%A0%E6%92%AD%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "feynman propagator",
+          "url": "https://en.wikipedia.org/w/index.php?search=feynman%20propagator"
+        }
       ]
     },
     {
@@ -395,6 +773,24 @@
         "L G x,y = δ x-y",
         "关联函数 名称",
         "green function"
+      ],
+      "explanation_markdown": "格林函数是线性算符对点源的响应，在场论中也泛指各种时间有序关联函数。线性问题满足 $L_xG(x,y)=\\delta^{(4)}(x-y)$，其中 $L_x$ 是作用在 $x$ 上的微分算符，$G(x,y)$ 是格林函数，$\\delta^{(4)}$ 是四维δ函数。已知点源响应后，一般源的解可由积分叠加得到。\n\n量子理论中的两点、四点格林函数包含传播、散射和谱信息，重整化常直接作用于这些函数。边界条件决定格林函数类型，推迟格林函数描述响应，费曼格林函数服务于散射，欧氏格林函数便于数值模拟。谱表示把这些函数与可观测能谱联系起来。在谱函数语言中，格林函数的虚部常与实验吸收率或散射强度相关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "格林函数",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%BC%E6%9E%97%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "格林函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%BC%E6%9E%97%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "green function",
+          "url": "https://en.wikipedia.org/w/index.php?search=green%20function"
+        }
       ]
     },
     {
@@ -413,6 +809,24 @@
         "n次源导数",
         "散射振幅 临界指数",
         "n point function"
+      ],
+      "explanation_markdown": "n点函数记录 $n$ 个时空点处场算符插入的联合真空期望，是从局域场到可观测散射的中间对象。定义可写 $G_n(x_1,\\ldots,x_n)=\\langle0|T\\phi(x_1)\\cdots\\phi(x_n)|0\\rangle$，其中 $T$ 是时间排序，$x_i$ 是插入点。二点函数给传播子，四点函数包含两体散射信息。\n\n对生成泛函作 $n$ 次源导数即可得到它；连通部分和一粒子不可约部分分别用于截面计算与有效作用量构造。高阶n点函数包含多粒子相互作用和非高斯涨落信息。临界现象中，n点函数的尺度变换形式给出反常维数；粒子物理中，它们经约化后给出散射振幅。对称性会约束n点函数的张量形式，减少独立形式因子的数量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "n点函数",
+          "url": "https://www.baidu.com/s?wd=n%E7%82%B9%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "n点函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=n%E7%82%B9%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "n point function",
+          "url": "https://en.wikipedia.org/w/index.php?search=n%20point%20function"
+        }
       ]
     },
     {
@@ -431,6 +845,24 @@
         "二点 x-y 传播子",
         "格点模拟 微扰论",
         "correlation function"
+      ],
+      "explanation_markdown": "关联函数衡量不同点的涨落如何相互影响，既可用于量子场论，也可用于统计场论。二点连通关联常写 $C(x-y)=\\langle\\phi(x)\\phi(y)\\rangle-\\langle\\phi\\rangle^2$，其中 $\\phi$ 是场，括号表示真空或热平均；长距离衰减率给出质量间隙或相关长度。\n\n临界点附近，关联函数可呈幂律衰减并定义临界指数。格点模拟、散射谱函数和凝聚态响应都以关联函数作为可计算核心。关联函数的傅里叶变换给出动量空间传播和响应，实验中的散射强度常与它直接相关。质量间隙存在时长距离指数衰减，无质量模则导致长程幂律尾部。数值模拟常先计算欧氏关联函数，再通过拟合或解析延拓提取谱信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "关联函数",
+          "url": "https://www.baidu.com/s?wd=%E5%85%B3%E8%81%94%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "关联函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%B3%E8%81%94%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "correlation function",
+          "url": "https://en.wikipedia.org/w/index.php?search=correlation%20function"
+        }
       ]
     },
     {
@@ -449,6 +881,24 @@
         "T{A x B y }",
         "真空期望 基本两点",
         "time ordered product"
+      ],
+      "explanation_markdown": "时间有序乘积按时间坐标把算符重新排列，较晚的算符放在左侧，使微扰展开与因果传播相容。两算符情形为 $T\\{A(x)B(y)\\}=\\theta(x^0-y^0)A(x)B(y)\\pm\\theta(y^0-x^0)B(y)A(x)$，其中 $\\theta$ 是阶跃函数，费米算符交换取负号。真空期望后的时间有序两点函数就是费曼传播子。\n\n它把相互作用绘景中的时间演化指数展开成可用威克定理处理的形式。时间排序是相互作用绘景微扰论的自然产物，使不同时间的哈密顿密度按演化顺序排列。费米符号和接触项处理不当会破坏Ward恒等式。接触项常出现在两个插入点重合时，对守恒流和反常计算尤其重要。它保证微扰级数按时间演化展开，是从哈密顿量到协变图形规则的中间桥梁。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "时间有序乘积",
+          "url": "https://www.baidu.com/s?wd=%E6%97%B6%E9%97%B4%E6%9C%89%E5%BA%8F%E4%B9%98%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "时间有序乘积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%97%B6%E9%97%B4%E6%9C%89%E5%BA%8F%E4%B9%98%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "time ordered product",
+          "url": "https://en.wikipedia.org/w/index.php?search=time%20ordered%20product"
+        }
       ]
     },
     {
@@ -467,6 +917,24 @@
         "冒号 算符表达式",
         "威克展开 未收缩部分",
         "normal product"
+      ],
+      "explanation_markdown": "正规乘积把产生算符放到湮灭算符左侧，以去除自由场真空中的自收缩。记号 $:A:$ 表示对算符表达式 $A$ 作正规排序；对自由场通常有 $\\langle0|:\\phi^n:|0\\rangle=0$，其中 $|0\\rangle$ 是真空。它不是改变物理相互作用，而是重新定义算符基准，避免无意义的真空常数。\n\n威克定理把时间有序乘积分解为正规乘积加收缩项，重整化复合算符时也要处理正规排序的推广。正规乘积依赖所选真空和正负频分解，因此在弯曲时空或相互作用真空中需要谨慎。它常用于去除自由真空能，但不能替代完整的复合算符重整化。在共形场论中，正规乘积还与算符乘积展开和复合算符定义密切相关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正规乘积",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E8%A7%84%E4%B9%98%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正规乘积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E8%A7%84%E4%B9%98%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "normal product",
+          "url": "https://en.wikipedia.org/w/index.php?search=normal%20product"
+        }
       ]
     },
     {
@@ -485,6 +953,24 @@
         "收缩 传播子",
         "费曼图规则 组合基础",
         "wick theorem"
+      ],
+      "explanation_markdown": "威克定理把自由场的时间有序多点算符乘积化为正规乘积和所有收缩的和，从而把高斯理论的多点函数降为两点函数组合。示意写作 $T\\{\\phi_1\\cdots\\phi_n\\}=:\\phi_1\\cdots\\phi_n:+\\text{all contractions}$，其中收缩就是相应传播子。它是费曼图组合规则的来源：每个收缩对应一条内部线，每个相互作用项提供一个顶角。\n\n定理严格依赖自由或高斯部分，处理相互作用时需在微扰展开中逐阶使用。在相互作用理论中，威克定理应用于自由哈密顿量定义的相互作用绘景场。所有收缩方式的组合因子正是费曼图对称因子的来源，因此它连接算符代数与图形规则。一旦相互作用真空强烈非高斯化，威克分解就只能作为微扰起点而非精确恒等式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "威克定理",
+          "url": "https://www.baidu.com/s?wd=%E5%A8%81%E5%85%8B%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "威克定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A8%81%E5%85%8B%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wick theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=wick%20theorem"
+        }
       ]
     },
     {
@@ -503,6 +989,24 @@
         "圈 未定四动量积分",
         "散射振幅 图形计算",
         "feynman diagram"
+      ],
+      "explanation_markdown": "费曼图把微扰展开中的代数项画成线和顶点，帮助组织传播子、外态和相互作用。振幅写成 $\\mathcal M=\\sum_i\\mathcal M_i$，其中 $\\mathcal M_i$ 是第 $i$ 张图的贡献；内部线给传播子，顶点给耦合常数和动量守恒δ函数。圈图还要对未定动量积分，可能产生紫外或红外发散。\n\n单张图通常不是可观测对象，物理结果来自同阶图、反项和相空间的规范一致组合。图中时间方向、箭头和线型只是代数规则的编码，不应被逐字理解为微观轨迹。真正可比较的是由图求出的矩阵元、相空间积分和实验选择后的分布。图的拓扑阶数、外腿数和对称因子共同决定该项在微扰级数中的权重。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "费曼图",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%B9%E6%9B%BC%E5%9B%BE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "费曼图",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%B9%E6%9B%BC%E5%9B%BE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "feynman diagram",
+          "url": "https://en.wikipedia.org/w/index.php?search=feynman%20diagram"
+        }
       ]
     },
     {
@@ -521,6 +1025,24 @@
         "相乘 内部动量积分 振幅",
         "图到公式 字典",
         "feynman rule"
+      ],
+      "explanation_markdown": "费曼规则把拉格朗日量中的项翻译成动量空间图形因子，是从理论到散射振幅的操作手册。一般结构可概括为 $i\\mathcal M=\\prod(\\text{propagators})\\prod(\\text{vertices})\\int\\!d^4\\ell/(2\\pi)^4$，其中传播子来自二次项，顶点来自相互作用项，$\\ell$ 是圈动量。外线还要附加自旋波函数或极化矢量。\n\n不同规范和正规化方案会改变中间表达，但完整可观测量应保持一致。费曼规则通常在选定规范、归一化和动量流向后才无歧义。实际计算还要加入对称因子、颜色因子、自旋平均和相空间因子，才能得到截面或宽度。自动化振幅程序本质上就是把这些规则系统应用到大量可能图形上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "费曼规则",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%B9%E6%9B%BC%E8%A7%84%E5%88%99%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "费曼规则",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%B9%E6%9B%BC%E8%A7%84%E5%88%99"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "feynman rule",
+          "url": "https://en.wikipedia.org/w/index.php?search=feynman%20rule"
+        }
       ]
     },
     {
@@ -539,6 +1061,24 @@
         "φ4 节点 四条线",
         "耦合常数 图形元素",
         "vertex"
+      ],
+      "explanation_markdown": "顶角表示费曼图中若干线相遇的局域相互作用点，对应拉格朗日密度中的相互作用项。若有 $\\mathcal L_{\\rm int}=-\\lambda\\phi^4/4!$，四标量顶角因子为 $-i\\lambda$，其中 $\\lambda$ 是耦合常数，四条线代表四个标量场。顶角处满足四动量守恒，并携带内部量子数结构。\n\n规范理论中的顶角可能含伽马矩阵、群生成元或动量因子，因此顶角不仅给强度，也给自旋和对称性信息。顶角结构反映守恒量和选择规则，例如电荷、颜色、手征性和动量都在局域相互作用点受约束。高维算符会产生新的顶角，常作为新物理效应的低能参数化。顶角若含导数耦合，动量因子会改变角分布和高能行为。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "顶角",
+          "url": "https://www.baidu.com/s?wd=%E9%A1%B6%E8%A7%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "顶角",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%A1%B6%E8%A7%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vertex",
+          "url": "https://en.wikipedia.org/w/index.php?search=vertex"
+        }
       ]
     },
     {
@@ -557,6 +1097,24 @@
         "传播子因子",
         "圈图 中间传播",
         "internal line"
+      ],
+      "explanation_markdown": "内线是费曼图中不对应外部实粒子的连接线，数学上代表传播子和待积分的虚四动量。标量内线给因子 $i/(p^2-m^2+i\\epsilon)$，其中 $p$ 是内线四动量，$m$ 是质量；若 $p^2\\ne m^2$，它不满足真实质量壳条件。内线不能被理解为探测器中飞行的粒子轨迹，而是微扰积分变量。\n\n圈图中的内线动量需要积分，内线结构决定极点、阈值和发散行为。内线的虚粒子说法只是形象语言，虚动量积分并不对应某个可观测中间粒子的历史。阈值附近，内线极点接近实轴会显著影响线形和相位。多个内线同时接近质量壳时，振幅会出现阈值奇性或共振增强。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "内线",
+          "url": "https://www.baidu.com/s?wd=%E5%86%85%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "内线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%86%85%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "internal line",
+          "url": "https://en.wikipedia.org/w/index.php?search=internal%20line"
+        }
       ]
     },
     {
@@ -575,6 +1133,24 @@
         "LSZ 外部传播子 极点",
         "图形边缘 伸出线",
         "external line"
+      ],
+      "explanation_markdown": "外线表示散射矩阵中指定的入射或出射渐近粒子，必须满足相应质量壳条件。标量外态满足 $p^2=m^2$，其中 $p$ 是外部四动量，$m$ 是粒子质量；旋量和矢量外线还要附加 $u(p)$、$v(p)$ 或极化矢量 $\\epsilon_\\mu(p)$。外线把抽象格林函数通过LSZ约化连接到可观测振幅。\n\n实验上，外线对应被重建的粒子或喷注，但不稳定粒子常只能通过衰变产物间接作为中间共振处理。外线归一化决定了散射振幅与截面的数值因子，因此不同教材约定可能略有差别。对束缚态和强子，外线常由有效场或插值算符代替。不稳定粒子常不作为严格外线处理，而是保留在传播子极点或窄宽度近似中。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "外线",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%96%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "外线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%96%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "external line",
+          "url": "https://en.wikipedia.org/w/index.php?search=external%20line"
+        }
       ]
     },
     {
@@ -593,6 +1169,24 @@
         "独立回路 四动量积分",
         "树级之后 量子修正",
         "loop diagram"
+      ],
+      "explanation_markdown": "圈图含有闭合内线回路，代表量子涨落对树级过程的修正。每个独立圈通常带来积分 $\\int d^d\\ell/(2\\pi)^d$，其中 $\\ell$ 是圈动量，$d$ 是正规化后的时空维数；积分可能在高动量或低动量区发散。圈图产生自能、顶角修正、真空极化和反常等效应。\n\n它们通常比树图高一阶耦合，但在精密测量中不可忽略，并且要求正规化与重整化。圈图体现虚粒子涨落，但更准确地说是内部动量未被外部运动学固定的积分。高阶圈图改善精度，同时引入更复杂的发散、阈值和规范抵消。圈阶数越高，重整化群和对数求和越重要，否则固定阶展开会出现大修正。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "圈图",
+          "url": "https://www.baidu.com/s?wd=%E5%9C%88%E5%9B%BE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "圈图",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9C%88%E5%9B%BE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "loop diagram",
+          "url": "https://en.wikipedia.org/w/index.php?search=loop%20diagram"
+        }
       ]
     },
     {
@@ -611,6 +1205,24 @@
         "L = 0",
         "领头阶 散射振幅",
         "tree diagram"
+      ],
+      "explanation_markdown": "树图是不含闭合圈的费曼图，给出微扰展开的最低阶或经典近似贡献。若图中顶点数为 $V$、内线数为 $I$，圈数满足 $L=I-V+1$；树图对应 $L=0$，其中 $L$ 是独立圈动量数。树图通常没有紫外圈积分，计算较直接，但仍包含传播子极点和相干干涉。\n\n许多截面的主导估计先从树图开始，再加入圈图修正、实辐射和实验选择效应。树图常对应经典极限或最低阶量子过程，但在某些被对称性抑制的反应中可能消失。此时圈图或高维算符会成为领先贡献。树级振幅也需要满足规范抵消，否则高能增长会暴露模型不自洽。树图还常用于快速估计新过程的量级，再决定哪些圈修正必须保留。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "树图",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%91%E5%9B%BE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "树图",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%91%E5%9B%BE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tree diagram",
+          "url": "https://en.wikipedia.org/w/index.php?search=tree%20diagram"
+        }
       ]
     },
     {
@@ -629,6 +1241,24 @@
         "S = 1 + iT",
         "幺正性 总概率守恒",
         "scattering matrix"
+      ],
+      "explanation_markdown": "散射矩阵把遥远过去的入射渐近态映射到遥远未来的出射渐近态，是可观测反应概率的核心对象。写作 $S_{fi}=\\langle f|S|i\\rangle=\\delta_{fi}+i(2\\pi)^4\\delta^{(4)}(p_f-p_i)\\mathcal M_{fi}$，其中 $\\mathcal M_{fi}$ 是散射振幅，δ函数表达四动量守恒。幺正性 $S^\\dagger S=1$ 保证总概率守恒，并导出光学定理。\n\n实际截面和衰变宽度由 $|\\mathcal M|^2$ 与相空间共同决定。散射矩阵依赖渐近态概念，因此在有长程库仑力或禁闭的理论中需要特别处理。它的解析性和幺正性为共振参数化、色散关系和部分波分析提供原则。它还要求入射和出射相距足够远，使相互作用区可以被抽象成有限过程。若存在退相干环境或有限时间探测，理想散射矩阵还需转化为更实际的事件概率。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "散射矩阵",
+          "url": "https://www.baidu.com/s?wd=%E6%95%A3%E5%B0%84%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "散射矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%95%A3%E5%B0%84%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "scattering matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=scattering%20matrix"
+        }
       ]
     },
     {
@@ -647,6 +1277,24 @@
         "费曼图求和 iM",
         "截面 衰变宽度",
         "scattering amplitude"
+      ],
+      "explanation_markdown": "散射振幅是散射矩阵去掉平凡守恒δ函数后的核心动力学量，包含顶点、传播子和自旋求和信息。常由 $S_{fi}=i(2\\pi)^4\\delta^{(4)}(p_f-p_i)\\mathcal M_{fi}$ 定义，其中 $p_i,p_f$ 是初末总四动量，$\\mathcal M_{fi}$ 是振幅。截面依赖 $|\\mathcal M|^2$，但不同图的振幅先相干相加，因此相位和干涉很重要。\n\n共振极点、阈值结构和部分波相移都可从振幅解析性质中读出。振幅可以分解为洛伦兹结构、内部群因子和标量形式因子。实验通常通过角分布、偏振和能量依赖间接约束这些结构，而不是直接测量复数振幅。相同外态可能由多个中间机制贡献，振幅级相加会产生增强或相消。在部分波语言中，振幅的相位移动还直接反映相互作用势和共振结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "散射振幅",
+          "url": "https://www.baidu.com/s?wd=%E6%95%A3%E5%B0%84%E6%8C%AF%E5%B9%85%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "散射振幅",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%95%A3%E5%B0%84%E6%8C%AF%E5%B9%85"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "scattering amplitude",
+          "url": "https://en.wikipedia.org/w/index.php?search=scattering%20amplitude"
+        }
       ]
     },
     {
@@ -665,6 +1313,24 @@
         "dσ/dΩ dσ/dt",
         "散射强度 比较",
         "cross section"
+      ],
+      "explanation_markdown": "截面把散射概率换算成入射通量下的有效面积，是振幅与实验计数之间的桥梁。两体质心系常写 $d\\sigma/d\\Omega=|\\mathcal M|^2(64\\pi^2s)^{-1}p_f/p_i$，其中 $s$ 是质心能量平方，$p_i,p_f$ 是初末动量大小，$\\mathcal M$ 是散射振幅。相空间、全同粒子因子和自旋平均必须一并处理。\n\n高能实验中的喷注截面、深非弹性截面和弱玻色子产生截面都以这种归一化为基础。若末态含不可分辨软辐射，截面定义必须足够包容，红外发散才会抵消。对强子初态，还要卷积部分子分布函数，把 parton 级截面转成强子级预言。实验给出的截面还包含触发、接受度和重建定义，理论必须模拟同样的选择。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "截面",
+          "url": "https://www.baidu.com/s?wd=%E6%88%AA%E9%9D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "截面",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%88%AA%E9%9D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "section",
+          "url": "https://en.wikipedia.org/w/index.php?search=section"
+        }
       ]
     },
     {
@@ -683,6 +1349,24 @@
         "τ = ħ/Γ",
         "共振峰 能量展宽",
         "decay width"
+      ],
+      "explanation_markdown": "衰变宽度给出不稳定粒子单位时间衰变概率的能量单位表达，并决定共振峰宽。一般写 $d\\Gamma=(1/2M)|\\mathcal M|^2d\\Phi_n$，其中 $M$ 是母粒子质量，$\\mathcal M$ 是衰变振幅，$d\\Phi_n$ 是 $n$ 体相空间；积分后得到总宽度。寿命满足 $\\tau=\\hbar/\\Gamma$。部分宽度之比给出分支比，线形测量则要同时考虑本征宽度、探测器分辨率和阈值效应。\n\n同一总宽度可由许多部分宽度组成，部分宽度反映不同相互作用和末态相空间。窄宽度近似可把产生和衰变因子化，宽共振则需要保持完整线形。宽度与质量同为共振参数，二者通常通过不变质量谱线形同时拟合。在有效理论中，宽度也可按算符贡献拆分，从而追踪不同短程机制。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "衰变宽度",
+          "url": "https://www.baidu.com/s?wd=%E8%A1%B0%E5%8F%98%E5%AE%BD%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "衰变宽度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A1%B0%E5%8F%98%E5%AE%BD%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "decay width",
+          "url": "https://en.wikipedia.org/w/index.php?search=decay%20width"
+        }
       ]
     },
     {
@@ -701,6 +1385,24 @@
         "外腿 逆传播子 动量壳极限",
         "格林函数 S矩阵 桥梁",
         "lsz reduction formula"
+      ],
+      "explanation_markdown": "LSZ约化公式把时间有序格林函数的外腿极点残数转化为散射矩阵元，是关联函数通向可观测振幅的关键定理。标量情形包含因子 $\\prod_i(p_i^2-m^2)G_n(p_1,\\ldots,p_n)$ 的在壳极限，其中 $p_i$ 是外部四动量，$m$ 是粒子质量，$G_n$ 是动量空间 $n$ 点函数。\n\n波函数重整化因子修正外腿归一化。公式要求存在良好的渐近粒子，因此在禁闭理论中不能直接把夸克胶子格林函数当作强子振幅。在实际微扰论中，LSZ说明外腿自能修正可归入波函数重整化。格点QCD计算强子矩阵元时，也需要用插值算符的长时间极限提取外态。它也说明为什么场的归一化本身不可观测，只有极点残数修正后的外态有意义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "LSZ约化公式",
+          "url": "https://www.baidu.com/s?wd=LSZ%E7%BA%A6%E5%8C%96%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "LSZ约化公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=LSZ%E7%BA%A6%E5%8C%96%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lsz reduction formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=lsz%20reduction%20formula"
+        }
       ]
     },
     {
@@ -719,6 +1421,24 @@
         "□ + m² φ = 0",
         "自旋零 自由粒子",
         "klein gordon equation"
+      ],
+      "explanation_markdown": "克莱因戈登方程是相对论标量粒子的自由场方程，由能量动量关系量子化得到。形式为 $(\\Box+m^2)\\phi=0$，其中 $\\Box=\\partial_\\mu\\partial^\\mu$ 是达朗贝尔算符，$m$ 是质量，$\\phi$ 是标量场；自然单位下省略 $\\hbar,c$。它给出自旋零粒子的质量壳传播子，也可作为相互作用标量场的二次部分。\n\n作为单粒子波方程会遇到概率解释困难，在量子场论中则由场量子化自然解决。它也是许多相对论波方程的二次基础，狄拉克方程平方后会回到类似质量壳形式。相互作用情况下，协变导数替换会引入规范场耦合。在弯曲时空或外场中，质量项还可与曲率或背景势耦合，改变传播性质。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "克莱因戈登方程",
+          "url": "https://www.baidu.com/s?wd=%E5%85%8B%E8%8E%B1%E5%9B%A0%E6%88%88%E7%99%BB%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "克莱因戈登方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%8B%E8%8E%B1%E5%9B%A0%E6%88%88%E7%99%BB%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "klein gordon equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=klein%20gordon%20equation"
+        }
       ]
     },
     {
@@ -737,6 +1457,24 @@
         "iγ^μ∂_μ - m ψ = 0",
         "电子 反粒子预言",
         "dirac equation"
+      ],
+      "explanation_markdown": "狄拉克方程描述相对论自旋二分之一费米子，并线性化能量动量关系。自由形式为 $(i\\gamma^\\mu\\partial_\\mu-m)\\psi=0$，其中 $\\gamma^\\mu$ 是满足克利福德代数的伽马矩阵，$m$ 是质量，$\\psi$ 是旋量场。它自动包含反粒子自由度和自旋磁矩结构。\n\n与电磁场最小耦合后可解释电子的磁矩主项；在标准模型中，夸克和带电轻子的运动学也都以狄拉克型项为基础。狄拉克结构还决定了自旋求和公式和费米子传播子。手征投影、质量项和规范耦合之间的关系，是理解弱相互作用选择左手分量的基础。非相对论展开会产生泡利项和自旋轨道项，连接场论与原子精细结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "狄拉克方程",
+          "url": "https://www.baidu.com/s?wd=%E7%8B%84%E6%8B%89%E5%85%8B%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "狄拉克方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%8B%84%E6%8B%89%E5%85%8B%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dirac equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=dirac%20equation"
+        }
       ]
     },
     {
@@ -755,6 +1493,24 @@
         "狄拉克 外尔 马约拉纳",
         "费米子 内禀角动量",
         "spinor"
+      ],
+      "explanation_markdown": "旋量是洛伦兹群自旋表示中的对象，经过 $2\\pi$ 旋转会变号，不能当作普通三维矢量处理。洛伦兹变换下写 $\\psi'(x')=S(\\Lambda)\\psi(x)$，其中 $S(\\Lambda)$ 是旋量表示矩阵，$\\Lambda$ 是洛伦兹变换，$\\psi$ 是旋量。旋量使半整数自旋与相对论协变性兼容，并通过双线性组合构造标量、矢量和轴矢流。\n\n它是描述电子、夸克、中微子和手征相互作用的基本语言。旋量指标的收缩规则会影响散射振幅符号和洛伦兹结构。二分量旋量形式在无质量振幅和螺旋度方法中尤其高效。螺旋度振幅方法把旋量直接用于外线，能显著简化多粒子散射计算。它还让自旋与洛伦兹变换绑定在一起，避免把自旋当作额外经典小箭头。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "旋量",
+          "url": "https://www.baidu.com/s?wd=%E6%97%8B%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "旋量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%97%8B%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "spinor",
+          "url": "https://en.wikipedia.org/w/index.php?search=spinor"
+        }
       ]
     },
     {
@@ -773,6 +1529,24 @@
         "质量项 耦合手征分量",
         "有质量电子",
         "dirac spinor"
+      ],
+      "explanation_markdown": "狄拉克旋量含有四个复分量，可容纳粒子、反粒子以及左右手分量，是有质量自旋二分之一粒子的常用表示。伴随旋量定义为 $\\bar\\psi=\\psi^\\dagger\\gamma^0$，其中 $\\psi^\\dagger$ 是厄米共轭，$\\gamma^0$ 是时间方向伽马矩阵；这样 $\\bar\\psi\\psi$ 是洛伦兹标量。\n\n质量项 $m\\bar\\psi\\psi$ 会耦合左右手分量。散射计算中外线旋量 $u(p),v(p)$ 承载自旋态，双线性流决定电磁和弱相互作用结构。狄拉克旋量包含冗余的表示选择，但双线性物理量不依赖具体伽马矩阵基底。质量非零时，左手和右手分量在传播中不断混合。费米子质量越小，手征表示越方便；质量越大，四分量狄拉克记号更统一。在手征基底中，它可分解成两个外尔旋量，便于讨论弱相互作用。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "狄拉克旋量",
+          "url": "https://www.baidu.com/s?wd=%E7%8B%84%E6%8B%89%E5%85%8B%E6%97%8B%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "狄拉克旋量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%8B%84%E6%8B%89%E5%85%8B%E6%97%8B%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dirac spinor",
+          "url": "https://en.wikipedia.org/w/index.php?search=dirac%20spinor"
+        }
       ]
     },
     {
@@ -791,6 +1565,24 @@
         "1±γ5 /2 投影",
         "中微子 手征规范理论",
         "weyl spinor"
+      ],
+      "explanation_markdown": "外尔旋量是定手征的二分量旋量，适合描述无质量费米子或标准模型中的手征表示。投影关系为 $\\psi_L=P_L\\psi$，$P_L=(1-\\gamma^5)/2$，其中 $P_L$ 是左手投影算符，$\\gamma^5$ 定义手征；右手分量用 $P_R=(1+\\gamma^5)/2$。无质量极限下手征与螺旋度相关，弱相互作用只耦合左手费米子双重态。\n\n外尔记号让规范量子数分配和反常抵消条件更清楚。外尔旋量不能单独写普通狄拉克质量项，除非引入相反手征且规范量子数匹配的伙伴。标准模型的手征结构正是由这种限制塑造。中微子质量和可能的右手中微子，正是外尔旋量能否独立存在的物理问题。许多现代振幅公式直接用二分量外尔旋量写成，结构更紧凑。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "外尔旋量",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%96%E5%B0%94%E6%97%8B%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "外尔旋量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%96%E5%B0%94%E6%97%8B%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weyl spinor",
+          "url": "https://en.wikipedia.org/w/index.php?search=weyl%20spinor"
+        }
       ]
     },
     {
@@ -809,6 +1601,24 @@
         "ψ = ψ^c",
         "中微子质量 超对称",
         "majorana spinor"
+      ],
+      "explanation_markdown": "马约拉纳旋量满足粒子与反粒子相同的实条件，只能用于不携带未破坏 $U(1)$ 荷的费米子。条件写作 $\\psi^c=C\\bar\\psi^T=\\psi$，其中 $C$ 是电荷共轭矩阵，$\\bar\\psi$ 是狄拉克伴随，$T$ 表示转置。它的质量项不需要独立右手反粒子，与轻子数守恒存在张力。\n\n中微子若为马约拉纳粒子，会允许无中微子双β衰变；在超对称和有效场论中，马约拉纳费米子也常出现。马约拉纳质量项会破坏相应的费米子数，因此若中微子具有这种质量，轻子数不再是精确守恒量。跷跷板机制常利用重马约拉纳态解释轻中微子质量。它的相位自由度少于狄拉克旋量，因此可观测CP相位结构也会不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "马约拉纳旋量",
+          "url": "https://www.baidu.com/s?wd=%E9%A9%AC%E7%BA%A6%E6%8B%89%E7%BA%B3%E6%97%8B%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "马约拉纳旋量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%A9%AC%E7%BA%A6%E6%8B%89%E7%BA%B3%E6%97%8B%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "majorana spinor",
+          "url": "https://en.wikipedia.org/w/index.php?search=majorana%20spinor"
+        }
       ]
     },
     {
@@ -827,6 +1637,24 @@
         "{γ^μ,γ^ν}=2η^{μν}",
         "狄拉克方程 费米子传播子",
         "gamma matrix"
+      ],
+      "explanation_markdown": "伽马矩阵实现狄拉克方程的洛伦兹协变线性化，是旋量空间上的矩阵集合。它们满足 $\\{\\gamma^\\mu,\\gamma^\\nu\\}=2g^{\\mu\\nu}$，其中花括号表示反对易子，$g^{\\mu\\nu}$ 是闵可夫斯基度规；不同表示通过相似变换等价。伽马矩阵构成标量、矢量、张量、轴矢和赝标量双线性。\n\n迹公式和投影算符使自旋求和可化为矩阵迹，是费曼振幅平方计算的基础工具。常用迹恒等式把未观测自旋求和转化为代数计算，大幅简化截面推导。含 $\\gamma^5$ 的维数正规化需要额外约定，是反常计算中的细节难点。不同度规号差会改变公式符号，实际推导必须保持一套约定到底。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "伽马矩阵",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%BD%E9%A9%AC%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "伽马矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%BD%E9%A9%AC%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gamma matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=gamma%20matrix"
+        }
       ]
     },
     {
@@ -845,6 +1673,24 @@
         "负频解 量子化 重新解释",
         "正电子 电子",
         "antiparticle"
+      ],
+      "explanation_markdown": "反粒子在量子场论中对应场的独立激发或电荷共轭自由度，具有相同质量和自旋、相反可加荷。电荷共轭旋量可写 $\\psi^c=C\\bar\\psi^T$，其中 $C$ 是电荷共轭矩阵，$\\bar\\psi$ 是伴随旋量；对带电狄拉克场，$\\psi$ 与 $\\psi^c$ 描述相反电荷。\n\n费曼图中反粒子外线可用相反箭头或 $v$ 旋量表示。粒子反粒子湮灭、成对产生和CPT检验都依赖这一结构。相对论量子场论避免了负能海的原始困难，把反粒子解释为独立产生湮灭算符的激发。CPT定理则把反粒子的质量和寿命与粒子严格联系。在外场中，粒子和反粒子能级响应的比较可检验电荷共轭和CPT对称。反粒子外态的归一化和相位约定会进入振幅符号，计算时需保持一致。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反粒子",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E7%B2%92%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反粒子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E7%B2%92%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "antiparticle",
+          "url": "https://en.wikipedia.org/w/index.php?search=antiparticle"
+        }
       ]
     },
     {
@@ -863,6 +1709,24 @@
         "湮灭算符 作用为零",
         "对称性破缺 零点能",
         "vacuum state"
+      ],
+      "explanation_markdown": "真空态是哈密顿量的最低能态，不是空无一物，而是量子场的基态。自由理论中满足 $a_{\\mathbf p}|0\\rangle=0$，其中 $a_{\\mathbf p}$ 是动量 $\\mathbf p$ 模式的湮灭算符，$|0\\rangle$ 是真空；相互作用理论的真空还可含凝聚和拓扑结构。真空期望值决定对称性是否自发破缺，真空涨落产生传播子和圈图修正。\n\n不同边界、温度或外场下的真空定义会改变粒子概念。若真空具有非零场期望值，它会选择对称性破缺方向并改变粒子谱。QCD真空还含凝聚和拓扑结构，使真空本身成为可产生物理效应的对象。相互作用真空与自由真空不完全相同，这也是绝热开关和重整化真空图需要处理的原因。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "真空态",
+          "url": "https://www.baidu.com/s?wd=%E7%9C%9F%E7%A9%BA%E6%80%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "真空态",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9C%9F%E7%A9%BA%E6%80%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vacuum state",
+          "url": "https://en.wikipedia.org/w/index.php?search=vacuum%20state"
+        }
       ]
     },
     {
@@ -881,6 +1745,24 @@
         "a† b†",
         "福克空间 基矢",
         "particle creation operator"
+      ],
+      "explanation_markdown": "粒子产生算符把一个量子加入给定模式，使福克空间中粒子数增加。玻色模式满足 $a^\\dagger|n\\rangle=\\sqrt{n+1}|n+1\\rangle$，其中 $a^\\dagger$ 是产生算符，$|n\\rangle$ 是 $n$ 粒子态；费米模式因泡利原理只能从空态变成占据态。产生算符出现在量子场的模式展开和外态构造中。\n\n散射矩阵的入射、出射态可由它们作用在真空上建立，归一化约定会影响相空间因子。连续动量归一化下，产生算符还带有δ函数归一化，影响相空间因子。相干态由产生算符指数作用在真空上形成，连接量子场和经典波。多粒子外态由多个产生算符作用得到，全同粒子对称化或反对称化由代数自动保证。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "粒子产生算符",
+          "url": "https://www.baidu.com/s?wd=%E7%B2%92%E5%AD%90%E4%BA%A7%E7%94%9F%E7%AE%97%E7%AC%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "粒子产生算符",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B2%92%E5%AD%90%E4%BA%A7%E7%94%9F%E7%AE%97%E7%AC%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "particle creation operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=particle%20creation%20operator"
+        }
       ]
     },
     {
@@ -899,6 +1781,24 @@
         "a b",
         "数算符 产生对象 相乘",
         "particle annihilation operator"
+      ],
+      "explanation_markdown": "粒子湮灭算符从给定模式移除一个量子，是产生算符的厄米共轭。玻色模式有 $a|n\\rangle=\\sqrt n|n-1\\rangle$，其中 $a$ 是湮灭算符，$|n\\rangle$ 是粒子数态；真空满足 $a|0\\rangle=0$。量子场展开中，正频部分通常伴随湮灭算符，负频部分伴随产生算符。\n\n探测过程可视为场算符把入射量子湮灭并在探测器中留下激发，这一图像连接福克态与实验计数。湮灭算符与产生算符共同构成数算符 $N=a^\\dagger a$，用来统计模式占据。相互作用会让自由粒子数不守恒，但总守恒荷仍可保持。探测器吸收粒子的过程常可用湮灭算符矩阵元描述，体现量子测量与场激发的连接。它与产生算符的代数共同决定自由场传播子和多粒子态归一化。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "粒子湮灭算符",
+          "url": "https://www.baidu.com/s?wd=%E7%B2%92%E5%AD%90%E6%B9%AE%E7%81%AD%E7%AE%97%E7%AC%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "粒子湮灭算符",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B2%92%E5%AD%90%E6%B9%AE%E7%81%AD%E7%AE%97%E7%AC%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "particle annihilation operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=particle%20annihilation%20operator"
+        }
       ]
     },
     {
@@ -917,6 +1817,24 @@
         "相同模式 不重复占据",
         "电子 夸克 中微子",
         "fermi field"
+      ],
+      "explanation_markdown": "费米场的量子满足反对易关系，用来描述半整数自旋粒子及其反粒子。等时关系可写 $\\{\\psi_\\alpha(t,\\mathbf x),\\psi_\\beta^\\dagger(t,\\mathbf y)\\}=\\delta_{\\alpha\\beta}\\delta^{(3)}(\\mathbf x-\\mathbf y)$，其中 $\\alpha,\\beta$ 是旋量或内部指标。反对易性保证全同费米子交换反号和泡利不相容。电子场、夸克场和中微子场都是费米场；路径积分中它们用格拉斯曼变量表示，积分规则不同于普通数。\n\n格拉斯曼路径积分中，费米行列式编码闭合费米圈贡献。有限密度或手征规范理论里，这个行列式的相位会带来符号问题或反常信息。费米场的质量、手征性和规范表示共同决定它在标准模型中的角色。手征费米场的规范量子数安排还决定理论是否存在规范反常。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "费米场",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%B9%E7%B1%B3%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "费米场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%B9%E7%B1%B3%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fermi field",
+          "url": "https://en.wikipedia.org/w/index.php?search=fermi%20field"
+        }
       ]
     },
     {
@@ -935,6 +1853,24 @@
         "同一模式 多个激发",
         "光子 胶子 希格斯粒子",
         "bose field"
+      ],
+      "explanation_markdown": "玻色场描述整数自旋量子，其模式算符满足对易关系，允许任意多个粒子占据同一态。标量模式有 $[a_{\\mathbf p},a_{\\mathbf q}^\\dagger]=(2\\pi)^3\\delta^{(3)}(\\mathbf p-\\mathbf q)$，其中 $a$ 和 $a^\\dagger$ 是湮灭、产生算符。标量场、光子场、胶子场和声子场都属于玻色场范畴。\n\n玻色统计使相干态、凝聚态和经典场极限自然出现；规范玻色场还带有冗余自由度和极化约束。玻色场的经典极限常对应大占据数，而非简单让普朗克常数消失。规范玻色场还要去除非物理极化，保证只留下可观测横向或纵向自由度。玻色场可形成经典背景，这使规范场、希格斯场和凝聚态序参量具有共同语言。玻色场的零模和凝聚现象常需要单独处理，否则微扰展开会失效。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "玻色场",
+          "url": "https://www.baidu.com/s?wd=%E7%8E%BB%E8%89%B2%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "玻色场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%8E%BB%E8%89%B2%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bose field",
+          "url": "https://en.wikipedia.org/w/index.php?search=bose%20field"
+        }
       ]
     },
     {
@@ -953,6 +1889,24 @@
         "[A,B]=AB-BA",
         "玻色量子化 守恒代数",
         "commutator"
+      ],
+      "explanation_markdown": "对易子衡量两个算符交换次序的差异，是量子化和对称生成元的基本结构。定义为 $[A,B]=AB-BA$，其中 $A,B$ 是算符；若对易子为零，两个量可同时对角化的可能性增加。正则变量满足位置动量式的非零对易关系，场论中等时对易子确定传播和因果结构。\n\n对称变换也可写成生成元与场的对易子，例如电荷算符作用在场上给出相位旋转。微因果性要求相隔类空间隔的玻色场对易，保证局域测量不会超光速影响。对易代数还决定Ward恒等式、谱表示和线性响应中的Kubo公式。在约束系统中，泊松括号到对易子的替换还需先处理约束代数，否则量子化会重复计数。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对易子",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E6%98%93%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对易子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E6%98%93%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "commutator",
+          "url": "https://en.wikipedia.org/w/index.php?search=commutator"
+        }
       ]
     },
     {
@@ -971,6 +1925,24 @@
         "{A,B}=AB+BA",
         "伽马矩阵 费米产生湮灭",
         "anticommutator"
+      ],
+      "explanation_markdown": "反对易子用来表达费米场量子化和克利福德代数，定义为 $\\{A,B\\}=AB+BA$，其中 $A,B$ 是算符或矩阵。费米产生湮灭算符满足 $\\{a_i,a_j^\\dagger\\}=\\delta_{ij}$，保证同一态不能被重复占据。伽马矩阵的反对易关系则编码闵可夫斯基度规。\n\n反对易子与对易子不同，交换两个费米算符会产生负号，这直接影响威克定理、闭合费米圈符号和费米统计。微因果性对费米场表现为类空间隔反对易为零。路径积分中的格拉斯曼数正是为复制这种代数而设计，使费米行列式和泡利符号自然出现。闭合费米圈的负号可追溯到反对易代数，是许多圈图相对符号的来源。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反对易子",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E5%AF%B9%E6%98%93%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反对易子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E5%AF%B9%E6%98%93%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "anticommutator",
+          "url": "https://en.wikipedia.org/w/index.php?search=anticommutator"
+        }
       ]
     },
     {
@@ -989,6 +1961,24 @@
         "协变导数 局域变换",
         "电磁 杨米尔斯",
         "gauge symmetry"
+      ],
+      "explanation_markdown": "规范对称性表示理论描述中存在局域冗余，不同场构型可代表同一物理状态。阿贝尔例子为 $A_\\mu\\to A_\\mu+\\partial_\\mu\\alpha$，其中 $A_\\mu$ 是规范势，$\\alpha(x)$ 是任意函数；电磁场强 $F_{\\mu\\nu}$ 不随该变换改变。规范对称性限制拉格朗日量形式并要求引入协变导数。\n\n量子化时必须避免把冗余自由度当作真实态计数，因此需要规范固定、鬼场或约束量子化方法。由于它是冗余而非普通物理对称，不能简单说规范对称被观测到；真正可观测的是规范不变量，如Wilson圈、场强相关函数和散射振幅。规范选择可方便计算，却不能改变物理极化数、守恒荷和最终散射截面。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "规范对称性",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%84%E8%8C%83%E5%AF%B9%E7%A7%B0%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "规范对称性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%84%E8%8C%83%E5%AF%B9%E7%A7%B0%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gauge symmetry",
+          "url": "https://en.wikipedia.org/w/index.php?search=gauge%20symmetry"
+        }
       ]
     },
     {
@@ -1007,6 +1997,24 @@
         "复标量 统一相位旋转",
         "无规范连接",
         "global symmetry"
+      ],
+      "explanation_markdown": "整体对称性使用与时空位置无关的变换参数，作用于所有点的场但不要求引入规范连接。典型形式为 $\\phi(x)\\to e^{i\\alpha}\\phi(x)$，其中 $\\alpha$ 是常数，$\\phi$ 是带荷场；若作用量不变，诺特定理给出守恒流。整体对称性可对应粒子数、重子数、轻子数或味对称。\n\n若真空不保持该对称性，会产生自发破缺和Goldstone模；若量子化破坏它，则表现为反常。整体对称性若被显式小质量项轻微破坏，会产生赝Goldstone模而非严格无质量粒子。低能有效理论常把这种小破缺作为有序展开参数。若对应荷在量子理论中不守恒，破缺来源必须来自显式项、边界或反常。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "整体对称性",
+          "url": "https://www.baidu.com/s?wd=%E6%95%B4%E4%BD%93%E5%AF%B9%E7%A7%B0%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "整体对称性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%95%B4%E4%BD%93%E5%AF%B9%E7%A7%B0%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "global symmetry",
+          "url": "https://en.wikipedia.org/w/index.php?search=global%20symmetry"
+        }
       ]
     },
     {
@@ -1025,6 +2033,24 @@
         "协变导数 规范玻色子",
         "电磁相互作用 局域相位",
         "local symmetry"
+      ],
+      "explanation_markdown": "局域对称性允许变换参数随时空点变化，比整体对称性更强，也引入规范冗余。相位变换 $\\phi(x)\\to e^{i\\alpha(x)}\\phi(x)$ 中，$\\alpha(x)$ 是任意函数；普通导数会多出 $\\partial_\\mu\\alpha$ 项，因此需用 $D_\\mu=\\partial_\\mu-igA_\\mu$ 替代。规范场 $A_\\mu$ 的变换补偿相位变化，使拉格朗日量保持不变。\n\n电磁、弱和强相互作用都可理解为局域内部对称性的动力学实现。局域对称性把相互作用形式与荷的定义紧密绑定，耦合常数就是协变导数中的连接强度。非阿贝尔局域对称还要求规范玻色子彼此相互作用。局域化一个整体对称通常会强制出现新的相互作用媒介，这正是规范原理的力量。局域规范冗余也解释了为什么势函数本身不是唯一可观测对象。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "局域对称性",
+          "url": "https://www.baidu.com/s?wd=%E5%B1%80%E5%9F%9F%E5%AF%B9%E7%A7%B0%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "局域对称性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B1%80%E5%9F%9F%E5%AF%B9%E7%A7%B0%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "local symmetry",
+          "url": "https://en.wikipedia.org/w/index.php?search=local%20symmetry"
+        }
       ]
     },
     {
@@ -1043,6 +2069,24 @@
         "拉氏量变分 守恒流",
         "荷 流",
         "noether theorem"
+      ],
+      "explanation_markdown": "诺特定理把连续对称性与守恒流联系起来，是场论中识别守恒荷的基本工具。若变换 $\\delta\\phi$ 使作用量不变，则有 $\\partial_\\mu j^\\mu=0$，其中 $j^\\mu$ 是诺特流，$\\partial_\\mu$ 表示四维散度；相应荷 $Q=\\int d^3x\\,j^0$ 随时间守恒。时空平移对应能量动量守恒，整体相位对应电荷守恒。\n\n规范对称性情形更微妙，常产生约束而非独立全局荷。对时空对称性，诺特定理给出的能动张量可能需要改进项才能满足对称或规范不变要求。量子层面还要检查正规化是否保持相应对称。它不仅给守恒量，还能反过来用实验守恒规律约束拉氏量允许的项。破缺对称性时，诺特流的散度可直接显示显式破缺项的大小。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "诺特定理",
+          "url": "https://www.baidu.com/s?wd=%E8%AF%BA%E7%89%B9%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "诺特定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%AF%BA%E7%89%B9%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "noether theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=noether%20theorem"
+        }
       ]
     },
     {
@@ -1061,6 +2105,24 @@
         "∂_μ j^μ = 0",
         "相位对称性 电荷流",
         "noether current"
+      ],
+      "explanation_markdown": "诺特流是连续整体对称性对应的局域守恒流，记录守恒荷如何在时空中流动。对复标量的相位对称，流可写 $j^\\mu=i(\\phi^*\\partial^\\mu\\phi-\\phi\\partial^\\mu\\phi^*)$，其中 $\\phi$ 是复场，星号表示复共轭。守恒方程 $\\partial_\\mu j^\\mu=0$ 表示局域荷不凭空产生或消失。\n\n量子理论中，流算符可能需要重整化；若出现反常，经典守恒的散度会获得量子修正。同一个守恒荷可对应相差全导数的多个流表达，因此流的局域形式并非总是唯一。实验可通过矩阵元或响应函数测量流算符的物理归一化。流的矩阵元定义形状因子和衰变常数，是把对称性同实验振幅连接的常用途径。在强相互作用中，流的重整化常决定衰变常数和形状因子的归一化。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "诺特流",
+          "url": "https://www.baidu.com/s?wd=%E8%AF%BA%E7%89%B9%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "诺特流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%AF%BA%E7%89%B9%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "noether current",
+          "url": "https://en.wikipedia.org/w/index.php?search=noether%20current"
+        }
       ]
     },
     {
@@ -1079,6 +2141,24 @@
         "Q = ∫d³x j⁰",
         "电荷 重子数 轻子数",
         "conserved charge"
+      ],
+      "explanation_markdown": "守恒荷是守恒流在空间上的积分，生成对应的整体对称变换。定义 $Q=\\int d^3x\\,j^0(x)$，其中 $j^0$ 是诺特流的时间分量；若边界通量为零且 $\\partial_\\mu j^\\mu=0$，则 $dQ/dt=0$。电荷、动量、角动量、重子数和轻子数都可在合适条件下写成荷。\n\n量子场论中，荷算符通过对易子作用于场，决定粒子的量子数和选择规则。守恒荷的本征值给粒子分类提供标签，并限制允许的反应道。若真空带有凝聚，荷是否良好定义还取决于边界条件和长程Goldstone模。在有超选择规则时，不同荷扇区之间的相干叠加不能由局域观测制备或测量。荷的空间积分还要求边界项可忽略，长程场存在时这点需要额外小心。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "守恒荷",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%88%E6%81%92%E8%8D%B7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "守恒荷",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%88%E6%81%92%E8%8D%B7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "conserved charge",
+          "url": "https://en.wikipedia.org/w/index.php?search=conserved%20charge"
+        }
       ]
     },
     {
@@ -1097,6 +2177,24 @@
         "强度张量 无交换子项",
         "光子 无自身电荷",
         "abelian gauge theory"
+      ],
+      "explanation_markdown": "阿贝尔规范理论的规范群生成元彼此对易，最典型例子是量子电动力学的 $U(1)$。场强为 $F_{\\mu\\nu}=\\partial_\\mu A_\\nu-\\partial_\\nu A_\\mu$，其中 $A_\\mu$ 是规范势；没有 $A_\\mu A_\\nu$ 型自相互作用项。电荷是单一守恒规范荷，光子本身不带电。阿贝尔理论结构较简单，但仍有规范固定、红外发散和真空极化等量子效应，是理解更复杂非阿贝尔理论的重要基准。\n\n阿贝尔理论的线性场强使光子没有树级自耦合，但带电粒子圈图仍能让电磁场表现出非线性有效作用。强外场QED正是研究这种效应的场景。QED的简单群结构让Ward恒等式特别透明，是检验重整化步骤的标准练习场。它的Ward恒等式较简单，因此常被用来校验更复杂规范理论的计算直觉。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阿贝尔规范理论",
+          "url": "https://www.baidu.com/s?wd=%E9%98%BF%E8%B4%9D%E5%B0%94%E8%A7%84%E8%8C%83%E7%90%86%E8%AE%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阿贝尔规范理论",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%BF%E8%B4%9D%E5%B0%94%E8%A7%84%E8%8C%83%E7%90%86%E8%AE%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "abelian gauge theory",
+          "url": "https://en.wikipedia.org/w/index.php?search=abelian%20gauge%20theory"
+        }
       ]
     },
     {
@@ -1115,6 +2213,24 @@
         "[A_μ,A_ν] 结构常数",
         "胶子自相互作用 渐近自由",
         "nonabelian gauge theory"
+      ],
+      "explanation_markdown": "非阿贝尔规范理论的群生成元不对易，规范场自身也携带规范荷。场强写 $F^a_{\\mu\\nu}=\\partial_\\mu A^a_\\nu-\\partial_\\nu A^a_\\mu+gf^{abc}A^b_\\mu A^c_\\nu$，其中 $f^{abc}$ 是结构常数，$g$ 是耦合。最后一项产生三规范玻色子和四规范玻色子顶角。量子色动力学和弱相互作用都属于这一类。\n\n它带来渐近自由、禁闭、鬼场耦合和丰富拓扑结构。非阿贝尔结构让规范固定和量子化比QED复杂得多，也使颜色荷会被规范玻色子本身携带。渐近自由、禁闭和瞬子都依赖这种自相互作用。颜色、弱同位旋等内部指标在顶角处按群代数收缩，带来丰富的颜色因子。这类理论的群表示选择会直接决定物质场荷、顶角和反常抵消条件。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "非阿贝尔规范理论",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%9E%E9%98%BF%E8%B4%9D%E5%B0%94%E8%A7%84%E8%8C%83%E7%90%86%E8%AE%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "非阿贝尔规范理论",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%9E%E9%98%BF%E8%B4%9D%E5%B0%94%E8%A7%84%E8%8C%83%E7%90%86%E8%AE%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "nonabelian gauge theory",
+          "url": "https://en.wikipedia.org/w/index.php?search=nonabelian%20gauge%20theory"
+        }
       ]
     },
     {
@@ -1133,6 +2249,24 @@
         "-1/4 F^a_μν F^{aμν}",
         "强相互作用 弱相互作用",
         "yang mills theory"
+      ],
+      "explanation_markdown": "杨米尔斯理论是非阿贝尔规范场的标准动力学框架，把麦克斯韦理论推广到一般李群。纯规范拉氏量为 $\\mathcal L=-\\frac14F^a_{\\mu\\nu}F^{a\\mu\\nu}$，其中 $F^a_{\\mu\\nu}$ 是非阿贝尔场强，$a$ 是群指标。规范场自相互作用由场强中的结构常数项给出。\n\n加入物质场后可描述强相互作用和电弱相互作用。量子层面需要规范固定和重整化，非微扰层面还出现瞬子、禁闭和拓扑真空。纯杨米尔斯理论没有物质场，却仍因自相互作用产生质量间隙和胶球谱等非平庸问题。它也是理解标准模型规范部分的最简非阿贝尔骨架。数学上，它还与联络、曲率和纤维丛语言相连，物理场强就是规范联络的曲率。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "杨米尔斯理论",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%A8%E7%B1%B3%E5%B0%94%E6%96%AF%E7%90%86%E8%AE%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "杨米尔斯理论",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%A8%E7%B1%B3%E5%B0%94%E6%96%AF%E7%90%86%E8%AE%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "yang mills theory",
+          "url": "https://en.wikipedia.org/w/index.php?search=yang%20mills%20theory"
+        }
       ]
     },
     {
@@ -1151,6 +2285,24 @@
         "∂_μ A^μ=0",
         "鬼场 法捷耶夫波波夫行列式",
         "gauge fixing"
+      ],
+      "explanation_markdown": "规范固定为规范冗余选择一个代表，使路径积分或传播子定义良好。协变规范常加 $\\mathcal L_{\\rm gf}=-(\\partial_\\mu A^\\mu)^2/(2\\xi)$，其中 $\\xi$ 是规范参数，$A^\\mu$ 是规范场；不同 $\\xi$ 给出不同传播子形式。物理截面不应依赖规范参数，但中间格林函数通常会依赖。\n\n非阿贝尔路径积分还需法捷耶夫-波波夫行列式，引入鬼场以正确抵消非物理自由度。常见选择包括洛伦兹规范、库仑规范、轴规范和背景场规范，各自适合不同问题。规范参数依赖在中间结果中出现，是检验计算是否完整的重要线索。在非微扰格点计算中，也常需要为某些规范相关量选择规范，但谱和Wilson圈不需要。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "规范固定",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%84%E8%8C%83%E5%9B%BA%E5%AE%9A%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "规范固定",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%84%E8%8C%83%E5%9B%BA%E5%AE%9A"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gauge fixing",
+          "url": "https://en.wikipedia.org/w/index.php?search=gauge%20fixing"
+        }
       ]
     },
     {
@@ -1169,6 +2321,24 @@
         "圈图 抵消非物理自由度",
         "非阿贝尔量子化",
         "faddeev popov ghost"
+      ],
+      "explanation_markdown": "法捷耶夫波波夫鬼场来自非阿贝尔规范固定时的雅可比行列式，用来补偿规范轨道的重复计数。鬼场拉氏量含 $\\bar c^a\\,\\partial^\\mu D_\\mu^{ab}c^b$，其中 $c^a,\\bar c^a$ 是反交换标量鬼场，$D_\\mu^{ab}$ 是伴随表示协变导数。它们不对应外部可观测粒子，却会出现在圈图内部。\n\n鬼场贡献保证规范不变性、幺正性和重整化一致性，尤其在胶子自能和BRST对称性中不可缺少。鬼场违反普通自旋统计外观：它是标量却反交换，因为它代表行列式而非真实粒子。外部态中不能出现鬼场，否则会破坏物理希尔伯特空间解释。鬼场圈与非物理规范极化抵消，是保证只传播真实自由度的量子机制。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "法捷耶夫波波夫鬼场",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%95%E6%8D%B7%E8%80%B6%E5%A4%AB%E6%B3%A2%E6%B3%A2%E5%A4%AB%E9%AC%BC%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "法捷耶夫波波夫鬼场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%95%E6%8D%B7%E8%80%B6%E5%A4%AB%E6%B3%A2%E6%B3%A2%E5%A4%AB%E9%AC%BC%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "faddeev popov ghost",
+          "url": "https://en.wikipedia.org/w/index.php?search=faddeev%20popov%20ghost"
+        }
       ]
     },
     {
@@ -1187,6 +2357,24 @@
         "nilpotent荷 上同调",
         "幺正性证明",
         "brst symmetry"
+      ],
+      "explanation_markdown": "BRST对称性是在规范固定后残留的费米型全局对称性，把规范变换、鬼场和非物理自由度统一起来。变换算符 $s$ 满足 $s^2=0$，其中 $s$ 是BRST微分；物理态常由 $Q_{\\rm BRST}|\\mathrm{phys}\\rangle=0$ 的上同调类表示。幂零性保证非物理态成对抵消，维持幺正性。\n\n它也是证明规范理论可重整化和推导斯拉夫诺夫-泰勒恒等式的核心工具。BRST上同调把规范等价类转化为代数条件，物理算符必须在BRST闭合但非平凡的类中。这个观点也延伸到弦论和更一般的约束系统量子化。若正规化破坏BRST对称性，反项必须恢复相应恒等式，否则理论会失去规范一致性。现代协变量子化常把它作为定义物理态空间和排除负范数态的标准工具。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "BRST对称性",
+          "url": "https://www.baidu.com/s?wd=BRST%E5%AF%B9%E7%A7%B0%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "BRST对称性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=BRST%E5%AF%B9%E7%A7%B0%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "brst symmetry",
+          "url": "https://en.wikipedia.org/w/index.php?search=brst%20symmetry"
+        }
       ]
     },
     {
@@ -1205,6 +2393,24 @@
         "一条光子线 两条费米子线",
         "精细结构常数",
         "quantum electrodynamics"
+      ],
+      "explanation_markdown": "量子电动力学是带电费米子与阿贝尔电磁场相互作用的量子场论，是最精密检验的理论之一。拉氏量为 $\\mathcal L=-\\frac14F_{\\mu\\nu}F^{\\mu\\nu}+\\bar\\psi(i\\gamma^\\mu D_\\mu-m)\\psi$，其中 $D_\\mu=\\partial_\\mu+ieA_\\mu$，$e$ 是电荷，$A_\\mu$ 是光子场。它预言电子反常磁矩、兰姆位移和散射截面。\n\n红外软光子辐射与虚光子圈图必须合并，才能得到有限可观测量。QED的微扰展开参数是精细结构常数，数值小使高阶计算异常精确。它同时展示红外问题的典型处理：软光子真实辐射必须与虚修正合并。从低能原子谱到高能轻子散射，QED提供了同一套光子交换和辐射修正语言。精密QED计算还需要电子、μ子和强子真空极化等不同尺度贡献。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子电动力学",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子电动力学",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum electrodynamics",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20electrodynamics"
+        }
       ]
     },
     {
@@ -1223,6 +2429,24 @@
         "胶子自相互作用 非阿贝尔",
         "渐近自由 禁闭",
         "quantum chromodynamics"
+      ],
+      "explanation_markdown": "量子色动力学描述夸克和胶子的强相互作用，是 $SU(3)_C$ 非阿贝尔规范理论。拉氏量含 $\\mathcal L_{\\rm QCD}=-\\frac14G^a_{\\mu\\nu}G^{a\\mu\\nu}+\\bar q(i\\gamma^\\mu D_\\mu-m)q$，其中 $q$ 是夸克场，$G^a_{\\mu\\nu}$ 是胶子场强。高能区渐近自由允许微扰计算，低能区禁闭和手征破缺需要格点或有效理论。\n\n强子质量、喷注、部分子分布和核力最终都源自这套动力学。QCD的低能难点在于耦合变强，普通微扰失效。格点模拟、QCD求和规则和手征有效理论分别从数值、半解析和低能对称性角度补充描述。喷注、强子质量和核力看似层级不同，却都可追溯到QCD的颜色规范动力学。由于禁闭，QCD的基本拉氏量简单，连接到强子实验却需要非微扰信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "量子色动力学",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8F%E5%AD%90%E8%89%B2%E5%8A%A8%E5%8A%9B%E5%AD%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "量子色动力学",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8F%E5%AD%90%E8%89%B2%E5%8A%A8%E5%8A%9B%E5%AD%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quantum chromodynamics",
+          "url": "https://en.wikipedia.org/w/index.php?search=quantum%20chromodynamics"
+        }
       ]
     },
     {
@@ -1241,6 +2465,24 @@
         "SU 2 _L × U 1 _Y",
         "W Z 光子 质量混合",
         "electroweak theory"
+      ],
+      "explanation_markdown": "弱电理论统一电磁相互作用和弱相互作用，基于 $SU(2)_L\\times U(1)_Y$ 规范对称性。电荷关系为 $Q=T_3+Y/2$，其中 $T_3$ 是弱同位旋第三分量，$Y$ 是超荷；对称性破缺后得到光子、$W^\\pm$ 和 $Z$。弱混合角决定中性规范场的线性组合。\n\n左手费米子放在弱双重态，右手费米子多为单态，因而自然出现宇称破坏。希格斯机制赋予弱玻色子质量并保持理论可重整化。电弱理论的精密检验包括 $Z$ 峰线形、弱混合角、$W$ 质量和稀有衰变。辐射修正把顶夸克和希格斯质量间接带入低能观测。它把宇称破坏、中性流和带电流放在同一规范结构中，而不是彼此独立的经验相互作用。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弱电理论",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%B1%E7%94%B5%E7%90%86%E8%AE%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弱电理论",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%B1%E7%94%B5%E7%90%86%E8%AE%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electroweak theory",
+          "url": "https://en.wikipedia.org/w/index.php?search=electroweak%20theory"
+        }
       ]
     },
     {
@@ -1259,6 +2501,24 @@
         "希格斯机制 W Z 费米子质量",
         "粒子实验 非引力",
         "standard model"
+      ],
+      "explanation_markdown": "标准模型把三代夸克轻子、规范玻色子和希格斯场组织在 $SU(3)_C\\times SU(2)_L\\times U(1)_Y$ 规范结构下。其拉氏量由规范动能、费米子动能、Yukawa耦合和希格斯势组成；Yukawa矩阵破缺味对称并产生CKM混合。理论通过重整化给出从低能精密量到高能对撞过程的统一预言。\n\n它不包含量子引力，最小形式也不能自然解释暗物质、重子不对称和中微子质量来源。它的成功也使偏离更有意义：任何轻子味破坏、暗物质耦合或电偶极矩信号都需与标准模型背景精确区分。有效场论常用于系统参数化这些偏差。中微子质量的存在说明标准模型需要扩展，但其规范结构仍是所有扩展必须兼容的低能事实。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "标准模型",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%87%E5%87%86%E6%A8%A1%E5%9E%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "标准模型",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%87%E5%87%86%E6%A8%A1%E5%9E%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "standard model",
+          "url": "https://en.wikipedia.org/w/index.php?search=standard%20model"
+        }
       ]
     },
     {
@@ -1277,6 +2537,24 @@
         "墨西哥帽势 最低点非原点",
         "电弱破缺 核心自由度",
         "higgs field"
+      ],
+      "explanation_markdown": "希格斯场是标准模型中的复标量弱双重态，其非零真空期望值触发电弱对称性破缺。势能常写 $V(\\Phi)=-\\mu^2\\Phi^\\dagger\\Phi+\\lambda(\\Phi^\\dagger\\Phi)^2$，其中 $\\Phi$ 是希格斯双重态，$\\mu^2$ 和 $\\lambda$ 是势参数；最低点满足 $v=\\sqrt{\\mu^2/\\lambda}$ 的量级关系。三个角向自由度成为 $W,Z$ 的纵向极化，剩余径向模是希格斯玻色子。\n\n它还通过Yukawa耦合给费米子质量。希格斯场的量子数决定哪些Yukawa项被允许，也决定电弱破缺后仍保留电磁 $U(1)$。测量希格斯自耦合将直接检验这个势能形状。在宇宙早期，希格斯有效势的温度依赖还会影响电弱相变和重子生成设想。其真空期望值还设定电弱尺度，是标准模型所有质量关系的共同参照。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "希格斯场",
+          "url": "https://www.baidu.com/s?wd=%E5%B8%8C%E6%A0%BC%E6%96%AF%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "希格斯场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B8%8C%E6%A0%BC%E6%96%AF%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "higgs field",
+          "url": "https://en.wikipedia.org/w/index.php?search=higgs%20field"
+        }
       ]
     },
     {
@@ -1295,6 +2573,24 @@
         "纵向极化 无质量模式",
         "W Z 质量来源",
         "higgs mechanism"
+      ],
+      "explanation_markdown": "希格斯机制在保持规范不变性的前提下，让规范玻色子获得质量，避免直接质量项破坏规范结构。树级关系 $m_W=gv/2$ 中，$m_W$ 是 $W$ 质量，$g$ 是弱耦合，$v$ 是希格斯真空期望值；$m_Z$ 还含弱混合角。规范场吸收Goldstone自由度后出现纵向极化。\n\n这个机制并不是粒子在介质中受阻，而是围绕非零真空展开拉氏量后产生质量项，并保证高能弱玻色子散射的幺正性。规范选择会改变Goldstone模在计算中的显式出现方式，但物理质量和散射截面不依赖规范。等价定理把高能纵向弱玻色子与Goldstone模联系起来。实验上需同时检验质量关系和耦合关系，单独发现一个标量峰还不足以完全确认机制。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "希格斯机制",
+          "url": "https://www.baidu.com/s?wd=%E5%B8%8C%E6%A0%BC%E6%96%AF%E6%9C%BA%E5%88%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "希格斯机制",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B8%8C%E6%A0%BC%E6%96%AF%E6%9C%BA%E5%88%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "higgs mechanism",
+          "url": "https://en.wikipedia.org/w/index.php?search=higgs%20mechanism"
+        }
       ]
     },
     {
@@ -1313,6 +2609,24 @@
         "简并谷 扰动展开",
         "铁磁体取向 希格斯真空",
         "spontaneous symmetry breaking"
+      ],
+      "explanation_markdown": "自发对称性破缺指拉氏量保持某个对称性，但真空态选择了不保持该对称性的方向。若势能 $V(\\phi)=\\lambda(\\phi^2-v^2)^2$，其中 $\\phi$ 是场，$v$ 是真空期望值尺度，最低点在 $\\phi=\\pm v$ 而非对称点。扰动展开必须围绕某个真空进行，因而谱和低能自由度反映破缺后的稳定子群。\n\n铁磁体、超导、手征凝聚和电弱破缺都体现这种机制；局域对称情形还会触发希格斯机制。有限体积中严格真空可能仍保持对称，热力学极限才出现真正的简并真空选择。量子涨落还可能恢复或破坏经典势能暗示的相结构。破缺后的低能自由度常比原始场变量更适合描述实验谱，这正是有效理论的出发点。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自发对称性破缺",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E5%8F%91%E5%AF%B9%E7%A7%B0%E6%80%A7%E7%A0%B4%E7%BC%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自发对称性破缺",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E5%8F%91%E5%AF%B9%E7%A7%B0%E6%80%A7%E7%A0%B4%E7%BC%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "spontaneous symmetry breaking",
+          "url": "https://en.wikipedia.org/w/index.php?search=spontaneous%20symmetry%20breaking"
+        }
       ]
     },
     {
@@ -1331,6 +2645,24 @@
         "能量随动量趋零",
         "声子 手征低能模",
         "goldstone theorem"
+      ],
+      "explanation_markdown": "戈德斯通定理说明连续整体对称性若自发破缺，低能谱中会出现无质量玻色模。若生成元 $Q$ 不保持真空，即 $Q|0\\rangle\\ne0$，其中 $|0\\rangle$ 是真空态，则对应方向的长波涨落能量趋于零。破缺生成元数通常决定Goldstone模数，但有限密度或非洛伦兹体系中会有修正。\n\n规范对称被破缺时，Goldstone模被规范场吸收而不作为独立无质量粒子出现，这正是希格斯机制的关键区别。定理假设连续整体对称、洛伦兹不变真空和局域性等条件；若这些条件改变，Goldstone计数会变得更微妙。凝聚态系统中的声子和自旋波就是相应例子。若对称性只是近似成立，对应模式会获得小质量，成为赝Goldstone玻色子。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "戈德斯通定理",
+          "url": "https://www.baidu.com/s?wd=%E6%88%88%E5%BE%B7%E6%96%AF%E9%80%9A%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "戈德斯通定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%88%88%E5%BE%B7%E6%96%AF%E9%80%9A%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "goldstone theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=goldstone%20theorem"
+        }
       ]
     },
     {
@@ -1349,6 +2681,24 @@
         "π介子 近似无质量模式",
         "低能 易激发",
         "goldstone boson"
+      ],
+      "explanation_markdown": "戈德斯通玻色子是自发破缺连续整体对称性后沿真空流形方向的低能涨落。简单复标量可写 $\\phi(x)=[v+\\rho(x)]e^{i\\pi(x)/v}$，其中 $v$ 是真空期望值，$\\rho$ 是径向模，$\\pi$ 是Goldstone场；若对称性精确，$\\pi$ 无质量。π介子可视为手征对称近似破缺产生的赝Goldstone玻色子，因为夸克质量使其获得小质量。\n\nGoldstone模的相互作用常由导数展开控制，低能散射受对称性强约束。由于低能相互作用由导数控制，Goldstone玻色子在零动量极限往往相互作用变弱。手征扰动论正是利用这一性质组织π介子低能散射。规范理论中它被吸收后不再出现在物理谱中，但在规范选择下仍可作为计算辅助场出现。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "戈德斯通玻色子",
+          "url": "https://www.baidu.com/s?wd=%E6%88%88%E5%BE%B7%E6%96%AF%E9%80%9A%E7%8E%BB%E8%89%B2%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "戈德斯通玻色子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%88%88%E5%BE%B7%E6%96%AF%E9%80%9A%E7%8E%BB%E8%89%B2%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "goldstone boson",
+          "url": "https://en.wikipedia.org/w/index.php?search=goldstone%20boson"
+        }
       ]
     },
     {
@@ -1367,6 +2717,24 @@
         "Yukawa耦合 真空期望",
         "规范玻色子 纵向极化",
         "mass generation"
+      ],
+      "explanation_markdown": "质量生成指原本无质量的场通过真空结构、凝聚或相互作用获得有效质量尺度。标准模型中费米子质量来自 $m_f=y_fv/\\sqrt2$，其中 $y_f$ 是Yukawa耦合，$v$ 是希格斯真空期望值；规范玻色子质量来自希格斯机制。\n\n强子质量则大多来自QCD能量和手征对称性破缺，而不是轻夸克裸质量。不同质量生成机制会留下不同耦合关系：希格斯衰变率测 $y_f$，强子谱测非微扰动力学。质量生成不等于所有质量都来自同一来源。电子质量、弱玻色子质量、质子质量和中微子质量在标准模型及其扩展中对应不同动力学机制。质量项的出现方式会决定高能散射是否保持良好行为，因此质量生成与理论一致性密切相关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "质量生成",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%A8%E9%87%8F%E7%94%9F%E6%88%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "质量生成",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%A8%E9%87%8F%E7%94%9F%E6%88%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mass generation",
+          "url": "https://en.wikipedia.org/w/index.php?search=mass%20generation"
+        }
       ]
     },
     {
@@ -1385,6 +2753,24 @@
         "P_L P_R 手征分量",
         "弱相互作用 左手双重态",
         "chiral symmetry"
+      ],
+      "explanation_markdown": "手征对称性把费米子的左手和右手分量按独立方式变换，在无质量极限最清楚。投影为 $\\psi_{L,R}=P_{L,R}\\psi$，其中 $P_L=(1-\\gamma^5)/2$，$P_R=(1+\\gamma^5)/2$，$\\psi$ 是狄拉克场；质量项 $m\\bar\\psi\\psi$ 会混合左右手而破坏该对称性。弱相互作用只耦合左手双重态，QCD轻夸克近似具有手征对称。\n\n它控制π介子低能定理、轴流和许多选择规则。手征对称性还限制允许的质量项和相互作用项，是构造标准模型费米子表示的核心。手征规范理论的一致性必须同时满足反常抵消。手征流和轴流的矩阵元还定义介子衰变常数，是低能强相互作用的重要输入。手征基底也使左手弱流和右手单态的不同规范量子数一目了然。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "手征对称性",
+          "url": "https://www.baidu.com/s?wd=%E6%89%8B%E5%BE%81%E5%AF%B9%E7%A7%B0%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "手征对称性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%8B%E5%BE%81%E5%AF%B9%E7%A7%B0%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "chiral symmetry",
+          "url": "https://en.wikipedia.org/w/index.php?search=chiral%20symmetry"
+        }
       ]
     },
     {
@@ -1403,6 +2789,24 @@
         "<qbar q>",
         "π介子 近似Goldstone",
         "chiral symmetry breaking"
+      ],
+      "explanation_markdown": "手征破缺表示左右手独立变换的对称性不再由真空保持，QCD低能区的夸克凝聚是核心例子。凝聚量写作 $\\langle\\bar q q\\rangle\\ne0$，其中 $q$ 是轻夸克场，$\\bar q$ 是其狄拉克伴随；它把左手和右手成分配对。破缺产生近似Goldstone模，即π、K、η等轻赝标量介子。\n\n手征破缺解释了强子质量尺度的大部分来源，也决定手征扰动论中低能常数和介子散射的结构。有限温度或高重子密度下，手征凝聚可能减小并发生恢复，这与重离子碰撞和中子星物质相图相关。格点QCD可直接研究这种转变。显式夸克质量把Goldstone玻色子变成赝Goldstone玻色子，使介子质量成为破缺大小的探针。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "手征破缺",
+          "url": "https://www.baidu.com/s?wd=%E6%89%8B%E5%BE%81%E7%A0%B4%E7%BC%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "手征破缺",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%8B%E5%BE%81%E7%A0%B4%E7%BC%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "chiral symmetry breaking",
+          "url": "https://en.wikipedia.org/w/index.php?search=chiral%20symmetry%20breaking"
+        }
       ]
     },
     {
@@ -1421,6 +2825,24 @@
         "流散度 量子修正",
         "规范一致性 抵消",
         "anomaly"
+      ],
+      "explanation_markdown": "反常是经典对称性在量子化和正规化后无法保持的现象，常表现为流守恒方程获得额外项。若经典有 $\\partial_\\mu j^\\mu=0$，量子理论可能变成 $\\partial_\\mu j^\\mu=\\mathcal A$，其中 $j^\\mu$ 是流，$\\mathcal A$ 是反常项。整体反常可产生可观测效应，规范反常若不抵消会破坏理论一致性。\n\n标准模型一代费米子的量子数精确安排，使规范反常相互抵消；轴反常则解释π零介子双光子衰变。反常不是计算错误，而是对称性、正规化和量子测度不能同时满足的结果。区分全局反常和规范反常很重要，后者会使概率解释和规范独立性失效。反常常能用一圈图精确给出，并受非重整化性质保护，因此跨越高低能描述仍保持一致。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反常",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E5%B8%B8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反常",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E5%B8%B8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "anomaly",
+          "url": "https://en.wikipedia.org/w/index.php?search=anomaly"
+        }
       ]
     },
     {
@@ -1439,6 +2861,24 @@
         "F_μν Ftilde^μν",
         "π0 两光子衰变",
         "axial anomaly"
+      ],
+      "explanation_markdown": "轴反常描述质量为零时经典守恒的轴矢流在量子理论中出现非零散度。量子电动力学中可写 $\\partial_\\mu j_5^\\mu=(e^2/16\\pi^2)F_{\\mu\\nu}\\tilde F^{\\mu\\nu}$，其中 $j_5^\\mu$ 是轴流，$F_{\\mu\\nu}$ 是电磁场强，$\\tilde F^{\\mu\\nu}$ 是对偶场强。三角圈图或路径积分测度都能给出该项。\n\n它解释 $\\pi^0\\to\\gamma\\gamma$ 衰变率，也在QCD的 $U(1)_A$ 问题和拓扑结构中扮演关键角色。轴反常说明即使轻夸克质量趋零，某些轴对称也会被量子效应破坏。它把紫外正规化问题与低能介子衰变联系起来，是场论跨尺度约束的典型例子。它还解释为什么QCD中没有与 $U(1)_A$ 破缺对应的轻第九个Goldstone玻色子。这一效应还把拓扑荷密度与轴荷变化联系起来，连接瞬子和介子物理。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "轴反常",
+          "url": "https://www.baidu.com/s?wd=%E8%BD%B4%E5%8F%8D%E5%B8%B8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "轴反常",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BD%B4%E5%8F%8D%E5%B8%B8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "axial anomaly",
+          "url": "https://en.wikipedia.org/w/index.php?search=axial%20anomaly"
+        }
       ]
     },
     {
@@ -1457,6 +2897,24 @@
         "裸参数 反项 有限结果",
         "圈图 紫外发散",
         "renormalization"
+      ],
+      "explanation_markdown": "重整化把圈图发散吸收到有限数量的参数和场归一化中，使可观测量有限且可预测。裸耦合可写 $g_0=\\mu^\\epsilon Z_g g$，其中 $g_0$ 是裸耦合，$g$ 是重整化耦合，$Z_g$ 是重整化常数，$\\mu$ 是重整化尺度。反项按正规化方案抵消发散，剩余有限部分由重整化条件固定。\n\n它不是简单丢掉无穷大，而是说明低能参数必须由实验定义，并随能标按重整化群流动。重整化后的参数依赖所选方案，例如壳上方案和改进最小减除方案给出的质量定义不同。物理预言需要在同一方案内组合系数和矩阵元。可重整化并不意味着高能完备，只意味着在给定能区内有限参数足以吸收短距敏感性。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "重整化",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8D%E6%95%B4%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "重整化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8D%E6%95%B4%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "renormalization",
+          "url": "https://en.wikipedia.org/w/index.php?search=renormalization"
+        }
       ]
     },
     {
@@ -1475,6 +2933,24 @@
         "β函数 尺度对数导数",
         "固定点 临界指数",
         "renormalization group"
+      ],
+      "explanation_markdown": "重整化群描述改变参考能标时理论参数如何变化，同时保持物理可观测量不变。耦合的流方程写 $\\mu\\,dg/d\\mu=\\beta(g)$，其中 $\\mu$ 是重整化尺度，$g$ 是耦合，$\\beta(g)$ 是β函数。固定点满足 $\\beta(g_*)=0$，在其附近可定义临界指数和普适类。\n\n量子色动力学的负β函数导致渐近自由，标量理论和临界现象中的固定点则控制长距离行为。重整化群还解释普适性：不同微观理论若流向同一固定点，长距离临界行为就相同。相关、无关和边缘算符的分类来自固定点附近线性化流。从重整化群角度看，质量项和耦合项的能标行为决定了低能理论的自然性问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "重整化群",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8D%E6%95%B4%E5%8C%96%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "重整化群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8D%E6%95%B4%E5%8C%96%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "renormalization group",
+          "url": "https://en.wikipedia.org/w/index.php?search=renormalization%20group"
+        }
       ]
     },
     {
@@ -1493,6 +2969,24 @@
         "renormalization scale",
         "跑动耦合 对数修正",
         "renormalization scale"
+      ],
+      "explanation_markdown": "重整化尺度是定义有限参数时引入的参考能标，并非新的物理阈值。可观测量满足 $\\mu\\,d\\mathcal O/d\\mu=0$，其中 $\\mathcal O$ 是物理量，$\\mu$ 是尺度；但截断微扰级数会留下残余尺度依赖。耦合常数、质量和算符矩阵元都随 $\\mu$ 跑动。\n\n实际计算常选择与过程动量转移相近的尺度，以减小大对数；改变尺度范围可估计未计算高阶修正的不确定度。尺度选择不当会产生大的对数项，使有限阶微扰展开收敛变差。重整化群改进通过求和这些对数，提高跨能标外推的稳定性。报告理论预言时常通过上下改变尺度估计微扰截断误差，这是高能计算的标准做法。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "重整化尺度",
+          "url": "https://www.baidu.com/s?wd=%E9%87%8D%E6%95%B4%E5%8C%96%E5%B0%BA%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "重整化尺度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%87%8D%E6%95%B4%E5%8C%96%E5%B0%BA%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "renormalization scale",
+          "url": "https://en.wikipedia.org/w/index.php?search=renormalization%20scale"
+        }
       ]
     },
     {
@@ -1511,6 +3005,24 @@
         "β函数 控制变化率",
         "强相互作用 高能弱 低能强",
         "running coupling constant"
+      ],
+      "explanation_markdown": "跑动耦合常数表示相互作用强度随探测能标改变，是真空极化和重整化群流的结果。量子色动力学一圈近似为 $\\alpha_s(Q)=1/[\\beta_0\\ln(Q^2/\\Lambda^2)]$，其中 $Q$ 是能标，$\\Lambda$ 是QCD尺度，$\\beta_0$ 是一圈系数。电荷屏蔽会让QED有效耦合在短距离略增大，非阿贝尔反屏蔽让QCD高能变弱。\n\n喷注、深非弹性散射和精密电弱量都需要使用相应能标的耦合。跑动耦合的测量需要明确过程和方案，高能喷注、τ衰变和格点计算给出的强耦合需演化到共同尺度后比较。阈值处还要匹配有效味数。阈值匹配会在跨过重粒子质量时改变有效理论中的自由度数和β函数系数。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "跑动耦合常数",
+          "url": "https://www.baidu.com/s?wd=%E8%B7%91%E5%8A%A8%E8%80%A6%E5%90%88%E5%B8%B8%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "跑动耦合常数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B7%91%E5%8A%A8%E8%80%A6%E5%90%88%E5%B8%B8%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "running coupling constant",
+          "url": "https://en.wikipedia.org/w/index.php?search=running%20coupling%20constant"
+        }
       ]
     },
     {
@@ -1529,6 +3041,24 @@
         "正规化 隔离 重整化",
         "短距离敏感",
         "ultraviolet divergence"
+      ],
+      "explanation_markdown": "紫外发散来自圈积分中任意高动量或等价的极短距离涨落。典型积分 $\\int^{\\Lambda} d^4k/(k^2+m^2)^2\\sim\\ln\\Lambda$ 中，$k$ 是圈动量，$m$ 是质量，$\\Lambda$ 是高动量截断；当 $\\Lambda\\to\\infty$ 时出现对数发散。正规化先把发散显式隔离，重整化再把它吸收到局域反项中。\n\n紫外行为决定理论是否可重整化，也提示有效场论需要在某个高能尺度后由新自由度补全。可重整化理论中，所有紫外发散都能被有限类型的局域反项吸收。若需要无限多个同等重要反项，理论仍可作为有效场论使用，但预测需按能标截断。紫外发散的局域性也是有效场论可行的原因，因为短距影响能被局域算符展开捕捉。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "紫外发散",
+          "url": "https://www.baidu.com/s?wd=%E7%B4%AB%E5%A4%96%E5%8F%91%E6%95%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "紫外发散",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B4%AB%E5%A4%96%E5%8F%91%E6%95%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ultraviolet divergence",
+          "url": "https://en.wikipedia.org/w/index.php?search=ultraviolet%20divergence"
+        }
       ]
     },
     {
@@ -1547,6 +3077,24 @@
         "p接近零 积分变坏",
         "不可分辨软辐射 抵消",
         "infrared divergence"
+      ],
+      "explanation_markdown": "红外发散来自低能、长波长或无质量粒子的贡献，常见于光子和胶子辐射。积分 $\\int_0 d\\omega/\\omega$ 中，$\\omega$ 是软辐射能量；下限趋近零时发散。虚软粒子圈图和真实软辐射的发散在包容可观测量中常相互抵消，这就是红外安全的核心。\n\n若观测量对任意软或共线粒子敏感，理论预言会失去有限性，因此喷注算法和截面定义必须精心设计。红外安全要求观测量对增加无限软粒子或把粒子分裂成共线对不敏感。喷注物理中的红外安全算法正是为了让理论计算与探测器定义匹配。有质量粒子可调节部分红外问题，无质量规范玻色子则要求更仔细的包容截面定义。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "红外发散",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%A2%E5%A4%96%E5%8F%91%E6%95%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "红外发散",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%A2%E5%A4%96%E5%8F%91%E6%95%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "infrared divergence",
+          "url": "https://en.wikipedia.org/w/index.php?search=infrared%20divergence"
+        }
       ]
     },
     {
@@ -1565,6 +3113,24 @@
         "调节参数 极限",
         "重整化之前 隔离步骤",
         "regularization"
+      ],
+      "explanation_markdown": "正规化是把发散表达式临时改写为有调节参数的有限量，以便识别和处理无穷部分。动量截断例子为 $\\int d^4k\\to\\int_{|k|<\\Lambda}d^4k$，其中 $k$ 是圈动量，$\\Lambda$ 是截断；维数正规化则把维数延拓到 $d=4-\\epsilon$。正规化本身不是最终物理结果，调节参数应在重整化后去除或吸收入定义。\n\n好的正规化方案尽量保持洛伦兹和规范对称性，减少人为破坏。不同正规化方案会使中间表达差别很大，例如硬截断直观但可能破坏规范对称，维数正规化较抽象却保留协变性。最终差别应被反项和参数定义吸收。正规化参数不能直接当作物理截止，除非理论本来就是带有明确晶格或有效尺度的模型。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正规化",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E8%A7%84%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正规化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E8%A7%84%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "regularization",
+          "url": "https://en.wikipedia.org/w/index.php?search=regularization"
+        }
       ]
     },
     {
@@ -1583,6 +3149,24 @@
         "d = 4 - ε",
         "规范对称性 微扰计算",
         "dimensional regularization"
+      ],
+      "explanation_markdown": "维数正规化把动量积分维数从四维延拓到复数附近，使发散表现为小参数极点。常设 $d=4-\\epsilon$，其中 $d$ 是积分维数，$\\epsilon$ 是调节参数；对数发散通常变成 $1/\\epsilon$ 极点。它在规范理论中很常用，因为平移动量积分和规范对称性较容易保持。\n\n配合最小减除或改进最小减除方案，反项只需去掉极点和约定常数，β函数计算也变得系统。维数正规化会把幂发散隐藏为零或极点结构，因此解释结果时要结合具体方案。含手征矩阵和拓扑项时，还需额外规定如何在非整数维处理它们。它特别适合洛伦兹协变微扰论，但对真正的功率截止敏感性显示得不如硬截断直观。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "维数正规化",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%B4%E6%95%B0%E6%AD%A3%E8%A7%84%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "维数正规化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%B4%E6%95%B0%E6%AD%A3%E8%A7%84%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dimensional regularization",
+          "url": "https://en.wikipedia.org/w/index.php?search=dimensional%20regularization"
+        }
       ]
     },
     {
@@ -1601,6 +3185,24 @@
         "裸参数 有限参数 补偿",
         "圈图发散 局域结构吸收",
         "counterterm"
+      ],
+      "explanation_markdown": "反项是加入拉格朗日量中抵消圈图发散的局域补偿项，其形式由原理论允许的算符决定。若质量发散，可写 $m_0^2=m^2+\\delta m^2$，其中 $m_0$ 是裸质量，$m$ 是重整化质量，$\\delta m^2$ 是质量反项。耦合、场强和真空能也有相应反项。\n\n反项系数依赖正规化方案和重整化条件，但最终可观测量不应依赖这些人为选择；有效场论则允许无限多个高维反项按能标有序出现。反项的存在说明拉格朗日量中的参数不是直接裸量，而是由实验条件定义的有限量。重整化条件选择在哪里施加，会影响有限部分但不影响物理。反项必须包含所有由对称性允许且会被量子修正生成的结构，否则重整化不封闭。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反项",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E9%A1%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反项",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E9%A1%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "counterterm",
+          "url": "https://en.wikipedia.org/w/index.php?search=counterterm"
+        }
       ]
     },
     {
@@ -1619,6 +3221,24 @@
         "算符 质量维数 动量幂次",
         "费米弱相互作用 手征低能理论",
         "effective field theory"
+      ],
+      "explanation_markdown": "有效场论只保留某个能标以下的自由度，把高能细节压缩为局域算符和低能系数。一般写 $\\mathcal L_{\\rm eff}=\\sum_i c_i\\mathcal O_i/\\Lambda^{d_i-4}$，其中 $\\mathcal O_i$ 是维数 $d_i$ 的算符，$c_i$ 是无量纲系数，$\\Lambda$ 是高能尺度。低能预言按 $E/\\Lambda$ 幂次系统改进。费米弱相互作用、手征扰动论和重夸克有效理论都展示了这种分离思想；它允许在不了解完整高能理论时仍做可控计算。\n\n有效场论的可预测性来自幂次计数：在给定精度下只需有限个算符。若对称性选得正确，即使不知道高能理论，也能系统估计误差。高维算符系数的大小和选择规则能提示潜在高能理论的对称性和粒子内容。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "有效场论",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%89%E6%95%88%E5%9C%BA%E8%AE%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "有效场论",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%89%E6%95%88%E5%9C%BA%E8%AE%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "effective field theory",
+          "url": "https://en.wikipedia.org/w/index.php?search=effective%20field%20theory"
+        }
       ]
     },
     {
@@ -1637,6 +3257,24 @@
         "E/Λ 幂次",
         "高能细节 压缩 低能预测",
         "low energy effective theory"
+      ],
+      "explanation_markdown": "低能有效理论专门描述远低于某个重质量或截断尺度的现象，重自由度被积分掉。误差常按 $(E/\\Lambda)^n$ 排列，其中 $E$ 是过程能量，$\\Lambda$ 是被省略物理的尺度，$n$ 是幂次；低阶算符给主导贡献。它强调可观测量对高能细节的有限敏感性。\n\n核力的手征有效理论、弱衰变的费米理论和凝聚态中的长波声子理论都属于这一范式，参数由实验或匹配计算确定。低能理论的系数可以通过匹配高能理论或直接由实验拟合得到。它常把复杂短程结构变成少数常数，把计算焦点放在长波动力学上。一旦能量接近截断尺度，低能展开会失控，需要显式恢复被积分掉的自由度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "低能有效理论",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%8E%E8%83%BD%E6%9C%89%E6%95%88%E7%90%86%E8%AE%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "低能有效理论",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%8E%E8%83%BD%E6%9C%89%E6%95%88%E7%90%86%E8%AE%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "low energy effective theory",
+          "url": "https://en.wikipedia.org/w/index.php?search=low%20energy%20effective%20theory"
+        }
       ]
     },
     {
@@ -1655,6 +3293,24 @@
         "目标空间度量 导数项",
         "手征拉氏量 自旋系统连续极限",
         "nonlinear sigma model"
+      ],
+      "explanation_markdown": "非线性西格玛模型描述场取值受限在某个目标流形上的低能自由度，常用于Goldstone模。拉氏量可写 $\\mathcal L=\\frac12g_{ij}(\\phi)\\partial_\\mu\\phi^i\\partial^\\mu\\phi^j$，其中 $g_{ij}$ 是目标空间度量，$\\phi^i$ 是坐标场。非线性来自约束和度量，而不一定来自势能。手征拉氏量把介子场放在群流形上，自旋链连续极限也会产生类似模型；拓扑项还能带来瞬子、涡旋或霍尔响应。\n\n目标空间的拓扑会决定模型是否允许孤子、瞬子或θ项。二维情形还展示渐近自由和质量隙，是场论与几何相互作用的经典例子。它的坐标选择有冗余，不同参数化给出相同物理散射振幅，但中间顶角可很不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "非线性西格玛模型",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%9E%E7%BA%BF%E6%80%A7%E8%A5%BF%E6%A0%BC%E7%8E%9B%E6%A8%A1%E5%9E%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "非线性西格玛模型",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%9E%E7%BA%BF%E6%80%A7%E8%A5%BF%E6%A0%BC%E7%8E%9B%E6%A8%A1%E5%9E%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "nonlinear sigma model",
+          "url": "https://en.wikipedia.org/w/index.php?search=nonlinear%20sigma%20model"
+        }
       ]
     },
     {
@@ -1673,6 +3329,24 @@
         "两点一粒子不可约 Σ Π",
         "质量重整化 寿命宽度",
         "self energy"
+      ],
+      "explanation_markdown": "自能是传播子因相互作用圈图产生的两点一粒子不可约修正，改变粒子的质量、宽度和场强归一化。修正后传播子可写 $G(p)=i/[p^2-m^2-\\Sigma(p^2)]$，其中 $p$ 是四动量，$m$ 是裸或重整化质量，$\\Sigma$ 是自能函数。极点位置给物理质量，极点虚部与衰变宽度相关。\n\n费米子、标量和规范玻色子都有各自张量结构的自能；重整化条件常直接施加在这些两点函数上。自能的动量依赖决定传播子极点附近的留数，也影响有效质量和阻尼率。热场论中，自能还给出介质中的屏蔽质量和准粒子寿命。在规范理论中，自能的纵向和横向分解受Ward恒等式限制，不能随意独立重整化。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自能",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E8%83%BD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自能",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E8%83%BD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "self energy",
+          "url": "https://en.wikipedia.org/w/index.php?search=self%20energy"
+        }
       ]
     },
     {
@@ -1691,6 +3365,24 @@
         "三点函数 一粒子不可约",
         "电子反常磁矩",
         "vertex correction"
+      ],
+      "explanation_markdown": "顶角修正是相互作用顶点受到圈图量子涨落影响后的变化，通常来自三点函数的一粒子不可约部分。电磁顶角可写 $\\bar u(p')\\Gamma^\\mu(p',p)u(p)$，其中 $u$ 是外线旋量，$\\Gamma^\\mu$ 是修正后的顶角函数，$p,p'$ 是入射和出射动量。\n\n它会改变有效耦合和形状因子。电子反常磁矩、弱中性流精密量和强子电磁形状因子都包含顶角修正；规范恒等式还把它与自能联系起来。Ward或Slavnov-Taylor恒等式把顶角修正与场强重整化联系起来，保证规范电荷定义一致。若只取部分图，常会破坏这种抵消关系。顶角函数的动量依赖可被解释为粒子的空间结构或有效荷随尺度变化的表现。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "顶角修正",
+          "url": "https://www.baidu.com/s?wd=%E9%A1%B6%E8%A7%92%E4%BF%AE%E6%AD%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "顶角修正",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%A1%B6%E8%A7%92%E4%BF%AE%E6%AD%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vertex correction",
+          "url": "https://en.wikipedia.org/w/index.php?search=vertex%20correction"
+        }
       ]
     },
     {
@@ -1709,6 +3401,24 @@
         "光子两点函数 圈图",
         "库仑势 短距离修正",
         "vacuum polarization"
+      ],
+      "explanation_markdown": "真空极化描述虚粒子对对规范玻色子传播的修正，使有效荷随距离或能标变化。光子自能常写 $i\\Pi^{\\mu\\nu}(q)=i(q^2g^{\\mu\\nu}-q^\\mu q^\\nu)\\Pi(q^2)$，其中 $q$ 是光子四动量，$\\Pi(q^2)$ 是标量极化函数。该结构由规范不变性限制为横向。QED中它导致库仑势短距离修正，QCD中胶子和夸克圈共同决定强耦合跑动及反屏蔽效应。\n\n真空极化可理解为真空介质对外场的响应，但这种介质图像只是一种比喻。精密原子谱和高能散射都能测到它造成的有效耦合变化。在强相互作用中，胶子自相互作用对真空极化的符号贡献导致反屏蔽。精密电磁实验中，它体现为有效精细结构常数随动量转移变化。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "真空极化",
+          "url": "https://www.baidu.com/s?wd=%E7%9C%9F%E7%A9%BA%E6%9E%81%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "真空极化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9C%9F%E7%A9%BA%E6%9E%81%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vacuum polarization",
+          "url": "https://en.wikipedia.org/w/index.php?search=vacuum%20polarization"
+        }
       ]
     },
     {
@@ -1727,6 +3437,24 @@
         "exp -S_E",
         "非微扰效应 θ角",
         "instanton"
+      ],
+      "explanation_markdown": "瞬子是欧氏时空中有限作用量的非平庸经典解，代表不同拓扑扇区之间的隧穿贡献。其权重通常为 $e^{-S_E/\\hbar}$，其中 $S_E$ 是欧氏作用量；作用量越大，贡献越受指数抑制。杨米尔斯瞬子带有整数拓扑荷，并影响轴反常和θ真空。\n\n瞬子属于非微扰效应，无法由有限阶普通微扰圈图产生；在量子力学双阱、QCD真空结构和某些凝聚态隧穿问题中都有对应图像。瞬子计算需要处理零模和集体坐标，它们对应解的位置、尺度或规范取向。稀薄瞬子气近似在某些极限有用，但强耦合区通常需要非微扰方法。瞬子效应常带有指数小因子，但可违反某些微扰守恒量，因此物理后果并非总能忽略。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "瞬子",
+          "url": "https://www.baidu.com/s?wd=%E7%9E%AC%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "瞬子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9E%AC%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "instanton",
+          "url": "https://en.wikipedia.org/w/index.php?search=instanton"
+        }
       ]
     },
     {
@@ -1745,6 +3473,24 @@
         "能量密度 有限区域",
         "畴壁 涡旋 磁单极",
         "soliton"
+      ],
+      "explanation_markdown": "孤子是非线性场方程中稳定、局域化的经典解，形状可在传播或相互作用后保持。稳定性常由拓扑荷 $Q=\\int dx\\,q(x)$ 保护，其中 $q(x)$ 是拓扑密度，积分给出整数或守恒量；连续小扰动不能改变它。\n\n畴壁、涡旋、Skyrmion和磁单极都是常见例子。量子化孤子可表现为粒子态或缺陷激发，在低维场论、凝聚态和核物理有效模型中都很重要。孤子的量子数可来自拓扑而非基本场的粒子数，因此它能把玻色场构型量子化成费米子或重子样对象。Skyrme模型就是典型例子。孤子存在依赖边界条件和势能形状，改变真空流形可能会让缺陷类型完全不同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "孤子",
+          "url": "https://www.baidu.com/s?wd=%E5%AD%A4%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "孤子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AD%A4%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "soliton",
+          "url": "https://en.wikipedia.org/w/index.php?search=soliton"
+        }
       ]
     },
     {
@@ -1763,6 +3509,24 @@
         "空间积分 拓扑密度",
         "孤子 瞬子 分类",
         "topological charge"
+      ],
+      "explanation_markdown": "拓扑荷由场构型的整体缠绕、边界条件或映射次数决定，不随光滑局域扰动改变。常写 $Q=\\int d^dx\\,q(x)$，其中 $q(x)$ 是拓扑荷密度，$d$ 是空间维数；在适当边界条件下 $Q$ 取整数。它分类孤子、瞬子和规范场真空扇区。\n\n拓扑荷不是普通诺特荷，通常不来自连续局域流守恒，而来自构型空间的全局结构；这使它对隧穿、反常和θ项具有特殊意义。拓扑荷通常由边界处的场行为决定，所以局域扰动无法轻易改变。量子隧穿可以连接不同拓扑扇区，使拓扑荷与真空相位和反常相互关联。拓扑荷守恒常把构型空间分成不连通分支，使动力学受到全局约束。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拓扑荷",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%93%E6%89%91%E8%8D%B7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拓扑荷",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%93%E6%89%91%E8%8D%B7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "topological charge",
+          "url": "https://en.wikipedia.org/w/index.php?search=topological%20charge"
+        }
       ]
     },
     {
@@ -1781,6 +3545,24 @@
         "exp i n θ 拓扑整数",
         "强CP问题 真空结构",
         "theta vacuum"
+      ],
+      "explanation_markdown": "θ真空出现在非阿贝尔规范理论中，是不同拓扑扇区真空的相干叠加。可写 $|\\theta\\rangle=\\sum_n e^{in\\theta}|n\\rangle$，其中 $|n\\rangle$ 是拓扑数为 $n$ 的真空扇区，$\\theta$ 是角参数；瞬子可在相邻扇区间产生隧穿。拉氏量中等价地出现 $\\theta G^a_{\\mu\\nu}\\tilde G^{a\\mu\\nu}$ 项。若QCD的θ不接近零，会产生强CP破坏；中子电偶极矩上限使强CP问题成为重要未解问题。\n\nθ参数是总导数项的系数，经典局域方程可能不显含它，量子隧穿却能让它影响物理。轴子机制正是为解释其为何极小而提出。强CP问题的核心是对称性允许θ非零，而实验却要求它极其接近零。这一结构说明真空可带有相位信息，而不只是哈密顿量最低能态的名称。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "θ真空",
+          "url": "https://www.baidu.com/s?wd=%CE%B8%E7%9C%9F%E7%A9%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "θ真空",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%CE%B8%E7%9C%9F%E7%A9%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "theta vacuum",
+          "url": "https://en.wikipedia.org/w/index.php?search=theta%20vacuum"
+        }
       ]
     },
     {
@@ -1799,6 +3581,24 @@
         "β函数负 耦合减小",
         "深度非弹性散射 近自由夸克",
         "asymptotic freedom"
+      ],
+      "explanation_markdown": "渐近自由表示非阿贝尔规范理论在高能短距离下耦合变弱，夸克和胶子可近似作为部分子处理。QCD一圈β函数给出 $\\mu\\,dg/d\\mu=-b_0g^3$，其中 $\\mu$ 是能标，$g$ 是强耦合，$b_0>0$ 取决于颜色数和味数。负号意味着能标升高时耦合减小。\n\n它解释深非弹性散射中的近似标度行为，也使高能喷注和重粒子产生可用微扰QCD计算。低能区耦合增大则与禁闭相连。渐近自由使短距离QCD可计算，但也意味着耦合在低能增长并引向非微扰区。它把高能部分子图像和低能强子图像连接成同一理论的两个极限。它让QCD在短距离像弱耦合理论，在长距离像强耦合理论，形成鲜明的尺度分层。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "渐近自由",
+          "url": "https://www.baidu.com/s?wd=%E6%B8%90%E8%BF%91%E8%87%AA%E7%94%B1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "渐近自由",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B8%90%E8%BF%91%E8%87%AA%E7%94%B1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "asymptotic freedom",
+          "url": "https://en.wikipedia.org/w/index.php?search=asymptotic%20freedom"
+        }
       ]
     },
     {
@@ -1817,6 +3617,24 @@
         "大距离 线性势",
         "喷注 无色强子",
         "confinement"
+      ],
+      "explanation_markdown": "禁闭指带色态不能成为孤立渐近粒子，物理谱只含无色强子。静态夸克势在大距离近似 $V(r)\\simeq\\sigma r$，其中 $r$ 是夸克间距，$\\sigma$ 是弦张力；继续拉开色源会产生新的强子而非自由夸克。禁闭是QCD低能非微扰现象，不能由有限阶微扰展开推出。\n\n格点Wilson圈的面积律、重夸克偶素谱和喷注强子化都支持这一图像；高温高密下则可能出现退禁闭相。禁闭要求散射理论以强子而非夸克胶子作为渐近态。喷注中看到的能量流保留了短程部分子信息，但末态粒子已经是强子化后的产物。禁闭也使夸克质量的定义依赖方案，轻夸克不能像自由粒子那样由质谱直接读出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "禁闭",
+          "url": "https://www.baidu.com/s?wd=%E7%A6%81%E9%97%AD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "禁闭",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A6%81%E9%97%AD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "confinement",
+          "url": "https://en.wikipedia.org/w/index.php?search=confinement"
+        }
       ]
     },
     {
@@ -1835,6 +3653,24 @@
         "协变导数 色群生成元 胶子连接",
         "强子内部 基本自由度",
         "quark field"
+      ],
+      "explanation_markdown": "夸克场是带色荷、味和自旋二分之一的费米场，是QCD物质自由度。拉氏量中出现 $\\bar q(i\\gamma^\\mu D_\\mu-m)q$，其中 $q$ 是夸克场，$\\bar q$ 是伴随场，$D_\\mu$ 含胶子连接，$m$ 是质量矩阵。夸克场按颜色三重表示变换，并通过强、弱、电磁相互作用参与过程。\n\n由于禁闭，夸克场本身不对应外部自由粒子；强子矩阵元、部分子分布和格点关联函数才是实验可连接的对象。夸克场的规范非不变性意味着单个夸克传播子依赖规范选择。物理信息通常通过无色算符、强子谱和规范不变矩阵元提取。夸克双线性算符构成介子插值场，三夸克算符构成重子插值场，是格点谱计算的基础。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "夸克场",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%B8%E5%85%8B%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "夸克场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%B8%E5%85%8B%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quark field",
+          "url": "https://en.wikipedia.org/w/index.php?search=quark%20field"
+        }
       ]
     },
     {
@@ -1853,6 +3689,24 @@
         "结构常数 f^{abc} 二次连接项",
         "非阿贝尔特征",
         "gluon field"
+      ],
+      "explanation_markdown": "胶子场是QCD的非阿贝尔规范场，描述强相互作用媒介自由度，并携带色荷。场强为 $G^a_{\\mu\\nu}=\\partial_\\mu G^a_\\nu-\\partial_\\nu G^a_\\mu+g_sf^{abc}G^b_\\mu G^c_\\nu$，其中 $G^a_\\mu$ 是胶子场，$f^{abc}$ 是结构常数，$g_s$ 是强耦合。二次项给胶子传播，三、四胶子项给自相互作用。胶子场导致渐近自由和复杂真空结构；实验中通过喷注、强子谱和部分子分布间接测量其效应。\n\n胶子场自身带色，使胶子可以辐射胶子，这是QCD与QED最根本的差别之一。颜色因子和三胶子顶角直接影响喷注形状和强耦合跑动。纯胶子算符还能构造胶球候选态，其存在与混合问题是非微扰QCD的重要课题。在高能散射中，初末态胶子辐射会形成复杂喷注并影响事件形状。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "胶子场",
+          "url": "https://www.baidu.com/s?wd=%E8%83%B6%E5%AD%90%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "胶子场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%83%B6%E5%AD%90%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gluon field",
+          "url": "https://en.wikipedia.org/w/index.php?search=gluon%20field"
+        }
       ]
     }
   ]

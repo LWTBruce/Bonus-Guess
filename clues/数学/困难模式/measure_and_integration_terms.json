@@ -17,6 +17,24 @@
         "对象 条件 运算 记号",
         "measure space",
         "measure_space"
+      ],
+      "explanation_markdown": "测度空间是给集合配上可测结构和大小函数的三元组。常写成 $(X,\\mathcal A,\\mu)$，其中 $X$ 是底集，$\\mathcal A$ 是 $\\sigma$ 代数，$\\mu:\\mathcal A\\to[0,\\infty]$ 满足可数可加性。\n\n它的重点不只是函数 $\\mu$，还包括 $\\mathcal A$ 决定哪些子集允许被测量。换掉 $\\sigma$ 代数，同一子集可能从可测变成不可测；换掉测度，零测集、积分和几乎处处的含义也会改变。概率空间、Lebesgue 测度空间和计数测度空间都是这种结构。在使用测度空间时，必须同时说明底集、$\\sigma$ 代数和测度；同一集合或函数换了背景，是否可测、积分值以及零测例外都会变化。公式中的 $\\mathcal A$ 和 $\\mu$ 就是在固定这层背景，也让可数运算和极限交换有明确含义，并区分测度、外测度、可测集和可测函数各自的位置。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "测度空间",
+          "url": "https://www.baidu.com/s?wd=%E6%B5%8B%E5%BA%A6%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "测度空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B5%8B%E5%BA%A6%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "measure space",
+          "url": "https://en.wikipedia.org/w/index.php?search=measure%20space"
+        }
       ]
     },
     {
@@ -35,6 +53,24 @@
         "对象 条件 运算 记号",
         "dai shu",
         "dai_shu"
+      ],
+      "explanation_markdown": "σ代数是对补集和可数并封闭的集合族。可写作 $A_n\\in\\mathcal A\\Rightarrow \\bigcup_{n=1}^{\\infty}A_n\\in\\mathcal A$，其中A_n 是可测候选集合，\\mathcal A 还对补集封闭并含 X。\n\n它不是拓扑本身；Borel \\sigma 代数由开集生成。在可测结构中，它把零集、极限和积分联系成统一语言。σ代数常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论σ代数时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对σ代数来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，σ代数说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "σ代数",
+          "url": "https://www.baidu.com/s?wd=%CF%83%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "σ代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%CF%83%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "sigma algebraic",
+          "url": "https://en.wikipedia.org/w/index.php?search=sigma%20algebraic"
+        }
       ]
     },
     {
@@ -53,6 +89,24 @@
         "对象 条件 运算 记号",
         "ke ce ji",
         "ke_ce_ji"
+      ],
+      "explanation_markdown": "可测集是在给定测度空间中被 $\\sigma$ 代数接纳的集合。常写成 $A\\in\\mathcal A$，其中 $A\\subset X$，$\\mathcal A$ 对补集和可数并封闭。\n\n它不是单靠几何形状决定的概念，而取决于背景的可测结构。Lebesgue 可测集比 Borel 集更大，外测度构造中还要满足 Caratheodory 条件 $\\mu^*(E)=\\mu^*(E\\cap A)+\\mu^*(E\\setminus A)$。可测集是定义积分、零测异常和几乎处处性质的最小舞台。在使用可测集时，必须同时说明底集、$\\sigma$ 代数和测度；同一集合或函数换了背景，是否可测、积分值以及零测例外都会变化。公式中的 $\\mathcal A$ 和 $\\mu$ 就是在固定这层背景，也让可数运算和极限交换有明确含义，并区分测度、外测度、可测集和可测函数各自的位置。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "可测集",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%AF%E6%B5%8B%E9%9B%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "可测集",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%AF%E6%B5%8B%E9%9B%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "measurable set",
+          "url": "https://en.wikipedia.org/w/index.php?search=measurable%20set"
+        }
       ]
     },
     {
@@ -71,6 +125,24 @@
         "对象 条件 运算 记号",
         "outer measure",
         "outer_measure"
+      ],
+      "explanation_markdown": "外测度是在所有子集上先给出的外部大小函数。常写成 $\\mu^*(\\bigcup_n A_n)\\le\\sum_n\\mu^*(A_n)$，其中 $A_n\\subset X$ 任意，右边体现可数次可加性。\n\n它不要求对不交集合可数可加，所以还不是测度；通过 Caratheodory 条件筛出的集合才形成真正的可测集族。外测度常用于从区间长度构造 Lebesgue 测度，也用于说明不可测集为什么会出现：大小可以先赋给所有集合，但可加性只能在合适的子族上保留。在使用外测度时，必须同时说明底集、$\\sigma$ 代数和测度；同一集合或函数换了背景，是否可测、积分值以及零测例外都会变化。公式中的 $\\mathcal A$ 和 $\\mu$ 就是在固定这层背景，也让可数运算和极限交换有明确含义，并区分测度、外测度、可测集和可测函数各自的位置。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "外测度",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%96%E6%B5%8B%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "外测度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%96%E6%B5%8B%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "outer measure",
+          "url": "https://en.wikipedia.org/w/index.php?search=outer%20measure"
+        }
       ]
     },
     {
@@ -89,6 +161,19 @@
         "对象 条件 运算 记号",
         "caratheodory condition",
         "caratheodory_condition"
+      ],
+      "explanation_markdown": "Caratheodory条件是用外测度检验集合是否可测的分割条件。可写成 $\\mu^*(B)=\\mu^*(B\\cap E)+\\mu^*(B\\setminus E)$，其中B 是任意子集，E 是待检验集合，\\mu^* 是外测度。\n\n它是可测性的判据，不是测度可数可加性的定义。在可测结构中，它把零集、极限和积分联系成统一语言。在测度论中，Caratheodory条件说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。Caratheodory条件常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论Caratheodory条件时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Caratheodory条件",
+          "url": "https://www.baidu.com/s?wd=Caratheodory%E6%9D%A1%E4%BB%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Caratheodory条件",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Caratheodory%E6%9D%A1%E4%BB%B6"
+        }
       ]
     },
     {
@@ -107,6 +192,24 @@
         "对象 条件 运算 记号",
         "null set",
         "null_set"
+      ],
+      "explanation_markdown": "零测集是测度等于零的可测集合。常写成 $\\mu(N)=0$，其中N 是可测集，\\mu 是给定测度。\n\n零测集可以非空甚至稠密，不能和空集或疏集混同。在现代积分理论中，它描述集合函数、函数空间和收敛定理。零测集常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论零测集时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对零测集来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "零测集",
+          "url": "https://www.baidu.com/s?wd=%E9%9B%B6%E6%B5%8B%E9%9B%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "零测集",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9B%B6%E6%B5%8B%E9%9B%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "null set",
+          "url": "https://en.wikipedia.org/w/index.php?search=null%20set"
+        }
       ]
     },
     {
@@ -125,6 +228,24 @@
         "对象 条件 运算 记号",
         "simple function",
         "simple_function"
+      ],
+      "explanation_markdown": "简单函数是只取有限多个值的可测函数。可写作 $s=\\sum_{k=1}^m a_k\\mathbf1_{A_k}$，其中a_k 是数值，A_k 是可测集，\\mathbf1_{A_k} 是示性函数。\n\n它有限取值，但定义域可很复杂。讨论简单函数时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对简单函数来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，简单函数说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。简单函数常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "简单函数",
+          "url": "https://www.baidu.com/s?wd=%E7%AE%80%E5%8D%95%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "简单函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AE%80%E5%8D%95%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "simple function",
+          "url": "https://en.wikipedia.org/w/index.php?search=simple%20function"
+        }
       ]
     },
     {
@@ -143,6 +264,24 @@
         "对象 条件 运算 记号",
         "nonnegative measurable function",
         "nonnegative_measurable_function"
+      ],
+      "explanation_markdown": "非负可测函数是取值在 $[0,\\infty]$ 且水平集可测的函数。常写成 $\\{x:f(x)>a\\}\\in\\mathcal A$，其中 $a$ 为实数，$\\mathcal A$ 是定义域上的 $\\sigma$ 代数。\n\n它允许取无穷值，适合先定义 Lebesgue 积分的正部分。非负性使积分可以用简单函数从下逼近：$\\int f\\,d\\mu=\\sup_{0\\le s\\le f}\\int s\\,d\\mu$。这类函数支撑单调收敛定理和 Tonelli 定理；一般可积函数再分解成正部与负部处理。在使用非负可测函数时，必须同时说明底集、$\\sigma$ 代数和测度；同一集合或函数换了背景，是否可测、积分值以及零测例外都会变化。公式中的 $\\mathcal A$ 和 $\\mu$ 就是在固定这层背景，也让可数运算和极限交换有明确含义，并区分测度、外测度、可测集和可测函数各自的位置。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "非负可测函数",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%9E%E8%B4%9F%E5%8F%AF%E6%B5%8B%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "非负可测函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%9E%E8%B4%9F%E5%8F%AF%E6%B5%8B%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "nonnegative measurable function",
+          "url": "https://en.wikipedia.org/w/index.php?search=nonnegative%20measurable%20function"
+        }
       ]
     },
     {
@@ -161,6 +300,24 @@
         "对象 条件 运算 记号",
         "integral convergence theorem",
         "integral_convergence_theorem"
+      ],
+      "explanation_markdown": "积分收敛定理是给出极限与积分可交换条件的一组定理。可写作 $\\int f_n\\,d\\mu\\to\\int f\\,d\\mu$，其中f_n 是函数列，f 是极限函数，\\mu 是测度。\n\n不同定理条件不同，不能只凭点态收敛交换极限。在现代积分理论中，它描述集合函数、函数空间和收敛定理。在测度论中，积分收敛定理说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。积分收敛定理常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论积分收敛定理时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "积分收敛定理",
+          "url": "https://www.baidu.com/s?wd=%E7%A7%AF%E5%88%86%E6%94%B6%E6%95%9B%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "积分收敛定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A7%AF%E5%88%86%E6%94%B6%E6%95%9B%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "integral convergence theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=integral%20convergence%20theorem"
+        }
       ]
     },
     {
@@ -179,6 +336,24 @@
         "对象 条件 运算 记号",
         "cheng ji measure",
         "cheng_ji_measure"
+      ],
+      "explanation_markdown": "乘积测度是在乘积 \\sigma 代数上刻画矩形大小的测度。可写成 $(\\mu\\times\\nu)(A\\times B)=\\mu(A)\\nu(B)$，其中A,B 是可测集合，\\mu,\\nu 是两个测度。\n\n它不是简单相乘函数值，而是先在矩形上规定再扩张。它为集合分配大小，并要求与可数并、零集或正则性相容。乘积测度常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论乘积测度时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对乘积测度来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "乘积测度",
+          "url": "https://www.baidu.com/s?wd=%E4%B9%98%E7%A7%AF%E6%B5%8B%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "乘积测度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B9%98%E7%A7%AF%E6%B5%8B%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "product measure",
+          "url": "https://en.wikipedia.org/w/index.php?search=product%20measure"
+        }
       ]
     },
     {
@@ -197,6 +372,19 @@
         "对象 条件 运算 记号",
         "fubini theorem",
         "fubini_theorem"
+      ],
+      "explanation_markdown": "Fubini定理是可积函数的重积分可按任意顺序计算的定理。常用定义式为 $\\int_{X\\times Y}f\\,d(\\mu\\times\\nu)=\\int_X\\int_Y f(x,y)\\,d\\nu(y)d\\mu(x)$，其中f 是可积函数，\\mu\\times\\nu 是乘积测度。\n\n它要求可积性；非负函数的无条件换序属于 Tonelli 定理。在可测结构中，它把零集、极限和积分联系成统一语言。讨论Fubini定理时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对Fubini定理来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，Fubini定理说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Fubini定理",
+          "url": "https://www.baidu.com/s?wd=Fubini%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Fubini定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Fubini%E5%AE%9A%E7%90%86"
+        }
       ]
     },
     {
@@ -215,6 +403,19 @@
         "对象 条件 运算 记号",
         "tonelli theorem",
         "tonelli_theorem"
+      ],
+      "explanation_markdown": "Tonelli定理是非负可测函数的重积分可换序定理。常写成 $\\int f\\,d(\\mu\\times\\nu)=\\int_X\\int_Y f(x,y)\\,d\\nu d\\mu$，其中f\\ge0 可测，积分值可为无穷。\n\n它和 Fubini 定理的区别在于非负条件替代绝对可积条件。在现代积分理论中，它描述集合函数、函数空间和收敛定理。对Tonelli定理来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，Tonelli定理说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。Tonelli定理常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Tonelli定理",
+          "url": "https://www.baidu.com/s?wd=Tonelli%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Tonelli定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Tonelli%E5%AE%9A%E7%90%86"
+        }
       ]
     },
     {
@@ -233,6 +434,19 @@
         "对象 条件 运算 记号",
         "sigma algebra",
         "sigma_algebra"
+      ],
+      "explanation_markdown": "sigma代数是对补集和可数并封闭的集合族。可写成 $A_n\\in\\mathcal A\\Rightarrow \\bigcup_{n=1}^{\\infty}A_n\\in\\mathcal A$，其中A_n 是可测候选集合，\\mathcal A 还对补集封闭并含 X。\n\n它不是拓扑本身；Borel \\sigma 代数由开集生成。在测度论中，sigma代数说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。sigma代数常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论sigma代数时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对sigma代数来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "sigma代数",
+          "url": "https://www.baidu.com/s?wd=sigma%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "sigma代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=sigma%E4%BB%A3%E6%95%B0"
+        }
       ]
     },
     {
@@ -251,6 +465,19 @@
         "对象 条件 运算 记号",
         "borel yu",
         "borel_yu"
+      ],
+      "explanation_markdown": "Borel域是由拓扑空间开集生成的 \\sigma 代数。常写成 $\\mathcal B(X)=\\sigma(\\mathcal T)$，其中\\mathcal T 是拓扑开集族，\\sigma(\\mathcal T) 表示生成的 \\sigma 代数。\n\n它通常小于完备化后的 Lebesgue 可测集族。这些限制还决定几乎处处修改、完备化和分解定理能否正常使用。Borel域常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论Borel域时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对Borel域来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，Borel域说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Borel域",
+          "url": "https://www.baidu.com/s?wd=Borel%E5%9F%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Borel域",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Borel%E5%9F%9F"
+        }
       ]
     },
     {
@@ -269,6 +496,24 @@
         "对象 条件 运算 记号",
         "wan bei measure space",
         "wan_bei_measure_space"
+      ],
+      "explanation_markdown": "完备测度空间是所有零测集的子集都可测的测度空间。可写作 $N\\subset A,\\ \\mu(A)=0\\Rightarrow N\\in\\mathcal A$，其中A 是零测集，N 是其任意子集。\n\n它比普通测度空间多包含零测集的所有子集。在现代积分理论中，它描述集合函数、函数空间和收敛定理。讨论完备测度空间时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对完备测度空间来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，完备测度空间说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "完备测度空间",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%8C%E5%A4%87%E6%B5%8B%E5%BA%A6%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "完备测度空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%8C%E5%A4%87%E6%B5%8B%E5%BA%A6%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "complete measure space",
+          "url": "https://en.wikipedia.org/w/index.php?search=complete%20measure%20space"
+        }
       ]
     },
     {
@@ -287,6 +532,24 @@
         "离散 有限未知量",
         "you xian measure",
         "you_xian_measure"
+      ],
+      "explanation_markdown": "有限测度是全空间测度有限的测度。可写作 $\\mu(X)<\\infty$，其中X 是全空间，\\mu 是测度。\n\n它强于 \\sigma 有限；后者只要求可数个有限测度集合覆盖。它为集合分配大小，并要求与可数并、零集或正则性相容。对有限测度来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，有限测度说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。有限测度常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "有限测度",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%89%E9%99%90%E6%B5%8B%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "有限测度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%89%E9%99%90%E6%B5%8B%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "finite measure",
+          "url": "https://en.wikipedia.org/w/index.php?search=finite%20measure"
+        }
       ]
     },
     {
@@ -305,6 +568,19 @@
         "离散 有限未知量",
         "sigma you xian measure",
         "sigma_you_xian_measure"
+      ],
+      "explanation_markdown": "sigma有限测度是可由可数个有限测度集合覆盖的测度。常写成 $X=\\bigcup_{n=1}^{\\infty}X_n,\\quad \\mu(X_n)<\\infty$，其中X_n 是可测集合，覆盖全空间。\n\n它允许 \\mu(X)=\\infty，区别于有限测度。这些限制还决定几乎处处修改、完备化和分解定理能否正常使用。在测度论中，sigma有限测度说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。sigma有限测度常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论sigma有限测度时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "sigma有限测度",
+          "url": "https://www.baidu.com/s?wd=sigma%E6%9C%89%E9%99%90%E6%B5%8B%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "sigma有限测度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=sigma%E6%9C%89%E9%99%90%E6%B5%8B%E5%BA%A6"
+        }
       ]
     },
     {
@@ -323,6 +599,24 @@
         "对象 条件 运算 记号",
         "gai lv measure kuo",
         "gai_lv_measure_kuo_zhang"
+      ],
+      "explanation_markdown": "概率测度扩张是把一致的有限维或代数测度数据扩张为概率测度。常写成 $\\mu|_{\\mathcal A_0}=\\mu_0$，其中\\mathcal A_0 是初始代数，\\mu_0 是预概率，\\mu 是扩张测度。\n\n它需要一致性和可数可加控制，不是任意指定边缘即可扩张。在现代积分理论中，它描述集合函数、函数空间和收敛定理。概率测度扩张常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论概率测度扩张时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对概率测度扩张来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "概率测度扩张",
+          "url": "https://www.baidu.com/s?wd=%E6%A6%82%E7%8E%87%E6%B5%8B%E5%BA%A6%E6%89%A9%E5%BC%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "概率测度扩张",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A6%82%E7%8E%87%E6%B5%8B%E5%BA%A6%E6%89%A9%E5%BC%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "probability measure expansion",
+          "url": "https://en.wikipedia.org/w/index.php?search=probability%20measure%20expansion"
+        }
       ]
     },
     {
@@ -341,6 +635,24 @@
         "对象 条件 运算 记号",
         "inner measure",
         "inner_measure"
+      ],
+      "explanation_markdown": "内测度是从可测子集向内逼近得到的大小。可写作 $\\mu_*(A)=\\sup\\{\\mu(E):E\\subset A,\\ E\\ \\text{measurable}\\}$，其中E 是 A 内部的可测子集，\\mu_* 是内测度。\n\n它和外测度方向相反；外测度用可测外包逼近。它为集合分配大小，并要求与可数并、零集或正则性相容。讨论内测度时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对内测度来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，内测度说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "内测度",
+          "url": "https://www.baidu.com/s?wd=%E5%86%85%E6%B5%8B%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "内测度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%86%85%E6%B5%8B%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inner measure",
+          "url": "https://en.wikipedia.org/w/index.php?search=inner%20measure"
+        }
       ]
     },
     {
@@ -359,6 +671,19 @@
         "对象 条件 运算 记号",
         "lebesgue measure",
         "lebesgue_measure"
+      ],
+      "explanation_markdown": "Lebesgue测度是在欧氏空间上延长长度、面积和体积的平移不变测度。常用定义式为 $m([a,b])=b-a$，其中m 是 Lebesgue 测度，[a,b] 是区间。\n\n它完备且包含比 Borel 集更多的可测集。在可测结构中，它把零集、极限和积分联系成统一语言。对Lebesgue测度来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，Lebesgue测度说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。Lebesgue测度常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Lebesgue测度",
+          "url": "https://www.baidu.com/s?wd=Lebesgue%E6%B5%8B%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Lebesgue测度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Lebesgue%E6%B5%8B%E5%BA%A6"
+        }
       ]
     },
     {
@@ -377,6 +702,19 @@
         "对象 条件 运算 记号",
         "lebesgue outer measure",
         "lebesgue_outer_measure"
+      ],
+      "explanation_markdown": "Lebesgue外测度是用可数区间或矩形覆盖定义的外测度。常写成 $m^*(E)=\\inf\\sum_n |I_n|$，其中I_n 覆盖 E，|I_n| 是区间长度或矩形体积。\n\n它先定义在所有子集上，但只在可测集上可数可加。在现代积分理论中，它描述集合函数、函数空间和收敛定理。在测度论中，Lebesgue外测度说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。Lebesgue外测度常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论Lebesgue外测度时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Lebesgue外测度",
+          "url": "https://www.baidu.com/s?wd=Lebesgue%E5%A4%96%E6%B5%8B%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Lebesgue外测度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Lebesgue%E5%A4%96%E6%B5%8B%E5%BA%A6"
+        }
       ]
     },
     {
@@ -395,6 +733,19 @@
         "对象 条件 运算 记号",
         "borel measure",
         "borel_measure"
+      ],
+      "explanation_markdown": "Borel测度是定义在 Borel \\sigma 代数上的测度。常用定义式为 $\\mu:\\mathcal B(X)\\to[0,\\infty]$，其中\\mathcal B(X) 是由开集生成的 \\sigma 代数。\n\n它未必完备，和 Lebesgue 完备测度要区分。这些限制还决定几乎处处修改、完备化和分解定理能否正常使用。Borel测度常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论Borel测度时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对Borel测度来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，Borel测度说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Borel测度",
+          "url": "https://www.baidu.com/s?wd=Borel%E6%B5%8B%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Borel测度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Borel%E6%B5%8B%E5%BA%A6"
+        }
       ]
     },
     {
@@ -413,6 +764,19 @@
         "对象 条件 运算 记号",
         "radon measure",
         "radon_measure"
+      ],
+      "explanation_markdown": "Radon测度是在局部紧空间上具有内正则和局部有限性的 Borel 测度。常用定义式为 $\\mu(K)<\\infty\\quad(K\\Subset X)$，其中K 是紧集，局部有限性要求紧集测度有限。\n\n它比一般 Borel 测度多正则性条件。在可测结构中，它把零集、极限和积分联系成统一语言。讨论Radon测度时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对Radon测度来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，Radon测度说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Radon测度",
+          "url": "https://www.baidu.com/s?wd=Radon%E6%B5%8B%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Radon测度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Radon%E6%B5%8B%E5%BA%A6"
+        }
       ]
     },
     {
@@ -431,6 +795,19 @@
         "对象 条件 运算 记号",
         "haar measure",
         "haar_measure"
+      ],
+      "explanation_markdown": "Haar测度是局部紧群上平移不变的非零 Radon 测度。常用定义式为 $\\mu(gA)=\\mu(A)$，其中g 是群元素，A 是 Borel 集。\n\n左 Haar 测度与右 Haar 测度可能差一个模函数。在现代积分理论中，它描述集合函数、函数空间和收敛定理。对Haar测度来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，Haar测度说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。Haar测度常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论Haar测度时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Haar测度",
+          "url": "https://www.baidu.com/s?wd=Haar%E6%B5%8B%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Haar测度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Haar%E6%B5%8B%E5%BA%A6"
+        }
       ]
     },
     {
@@ -449,6 +826,24 @@
         "对象 条件 运算 记号",
         "ji shu measure",
         "ji_shu_measure"
+      ],
+      "explanation_markdown": "计数测度是按集合元素个数赋值的测度。可写作 $\\mu(A)=\\#A$，其中\\#A 是 A 的元素数，可为无穷。\n\n它适合离散空间，和 Lebesgue 测度的连续大小不同。它为集合分配大小，并要求与可数并、零集或正则性相容。在测度论中，计数测度说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。计数测度常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论计数测度时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "计数测度",
+          "url": "https://www.baidu.com/s?wd=%E8%AE%A1%E6%95%B0%E6%B5%8B%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "计数测度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%AE%A1%E6%95%B0%E6%B5%8B%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ji shu measure",
+          "url": "https://en.wikipedia.org/w/index.php?search=ji%20shu%20measure"
+        }
       ]
     },
     {
@@ -467,6 +862,19 @@
         "对象 条件 运算 记号",
         "dirac measure",
         "dirac_measure"
+      ],
+      "explanation_markdown": "Dirac测度是集中在单点上的单位质量测度。可写成 $\\delta_a(A)=\\mathbf1_A(a)$，其中a 是固定点，\\mathbf1_A(a) 表示 a 是否属于 A。\n\n它是测度而不是函数；在积分中只取被积函数在 a 的值。在可测结构中，它把零集、极限和积分联系成统一语言。Dirac测度常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论Dirac测度时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对Dirac测度来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Dirac测度",
+          "url": "https://www.baidu.com/s?wd=Dirac%E6%B5%8B%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Dirac测度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Dirac%E6%B5%8B%E5%BA%A6"
+        }
       ]
     },
     {
@@ -485,6 +893,24 @@
         "对象 条件 运算 记号",
         "fu hao measure",
         "fu_hao_measure"
+      ],
+      "explanation_markdown": "符号测度是允许取正负值且可数可加的测度型函数。可写作 $\\nu(A)=\\nu^+(A)-\\nu^-(A)$，其中\\nu^+,\\nu^- 是 Jordan 分解中的正测度。\n\n它区别于非负测度，必须控制总变差。在现代积分理论中，它描述集合函数、函数空间和收敛定理。讨论符号测度时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对符号测度来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，符号测度说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "符号测度",
+          "url": "https://www.baidu.com/s?wd=%E7%AC%A6%E5%8F%B7%E6%B5%8B%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "符号测度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AC%A6%E5%8F%B7%E6%B5%8B%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fu hao measure",
+          "url": "https://en.wikipedia.org/w/index.php?search=fu%20hao%20measure"
+        }
       ]
     },
     {
@@ -503,6 +929,24 @@
         "对象 条件 运算 记号",
         "fu measure",
         "fu_measure"
+      ],
+      "explanation_markdown": "复测度是取复数值且可数可加的测度。可写作 $\\nu(A)=\\nu_1(A)+i\\nu_2(A)$，其中\\nu_1,\\nu_2 是符号测度的实部和虚部。\n\n它的大小由总变差测度控制，不按复数模直接可加。它为集合分配大小，并要求与可数并、零集或正则性相容。对复测度来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，复测度说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。复测度常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "复测度",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%8D%E6%B5%8B%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "复测度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%8D%E6%B5%8B%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fu measure",
+          "url": "https://en.wikipedia.org/w/index.php?search=fu%20measure"
+        }
       ]
     },
     {
@@ -521,6 +965,24 @@
         "对象 条件 运算 记号",
         "xiang liang measure",
         "xiang_liang_measure"
+      ],
+      "explanation_markdown": "向量测度是取值于 Banach 空间或向量空间的可数可加测度。常用定义式为 $m(\\bigcup_n A_n)=\\sum_n m(A_n)$，其中A_n 两两不交，级数在目标空间中收敛。\n\n它需要说明目标空间拓扑，不能只按标量测度理解。在可测结构中，它把零集、极限和积分联系成统一语言。在测度论中，向量测度说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。向量测度常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论向量测度时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "向量测度",
+          "url": "https://www.baidu.com/s?wd=%E5%90%91%E9%87%8F%E6%B5%8B%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "向量测度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%91%E9%87%8F%E6%B5%8B%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vector measure",
+          "url": "https://en.wikipedia.org/w/index.php?search=vector%20measure"
+        }
       ]
     },
     {
@@ -539,6 +1001,24 @@
         "光滑性 提升",
         "zheng ze measure",
         "zheng_ze_measure"
+      ],
+      "explanation_markdown": "正则测度是可由开集外逼近和紧集内逼近的测度。常用定义式为 $\\mu(A)=\\inf_{A\\subset U}\\mu(U)=\\sup_{K\\subset A}\\mu(K)$，其中U 是开集，K 是紧集。\n\n外正则和内正则是两个方向，不能互相代替。在现代积分理论中，它描述集合函数、函数空间和收敛定理。正则测度常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论正则测度时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对正则测度来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正则测度",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E5%88%99%E6%B5%8B%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正则测度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E5%88%99%E6%B5%8B%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "regular measure",
+          "url": "https://en.wikipedia.org/w/index.php?search=regular%20measure"
+        }
       ]
     },
     {
@@ -557,6 +1037,24 @@
         "光滑性 提升",
         "wai regularity",
         "wai_regularity"
+      ],
+      "explanation_markdown": "外正则性是集合测度可由包含它的开集测度向下逼近。常用定义式为 $\\mu(A)=\\inf\\{\\mu(U):A\\subset U,\\ U\\ \\text{open}\\}$，其中U 是开集，A 是待测集合。\n\n它区别于外测度；外正则性是已有测度的拓扑性质。它常用来把粗糙对象提升到更好的光滑性或结构层级。讨论外正则性时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对外正则性来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，外正则性说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "外正则性",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%96%E6%AD%A3%E5%88%99%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "外正则性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%96%E6%AD%A3%E5%88%99%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wai regularity",
+          "url": "https://en.wikipedia.org/w/index.php?search=wai%20regularity"
+        }
       ]
     },
     {
@@ -575,6 +1073,24 @@
         "光滑性 提升",
         "nei regularity",
         "nei_regularity"
+      ],
+      "explanation_markdown": "内正则性是集合测度可由其中紧集测度向上逼近。可写成 $\\mu(A)=\\sup\\{\\mu(K):K\\subset A,\\ K\\ \\text{compact}\\}$，其中K 是紧集，A 是待测集合。\n\n它与外正则性方向相反，通常需结合使用。在可测结构中，它把零集、极限和积分联系成统一语言。对内正则性来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，内正则性说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。内正则性常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "内正则性",
+          "url": "https://www.baidu.com/s?wd=%E5%86%85%E6%AD%A3%E5%88%99%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "内正则性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%86%85%E6%AD%A3%E5%88%99%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "nei regularity",
+          "url": "https://en.wikipedia.org/w/index.php?search=nei%20regularity"
+        }
       ]
     },
     {
@@ -593,6 +1109,24 @@
         "对象 条件 运算 记号",
         "measure completion",
         "measure_completion"
+      ],
+      "explanation_markdown": "测度完备化是向 \\sigma 代数加入所有零测集子集的过程。可写作 $\\overline{\\mathcal A}=\\sigma(\\mathcal A\\cup\\{N:N\\subset Z,\\ \\mu(Z)=0\\})$，其中Z 是原零测集，N 是其子集。\n\n完备化不改变原可测集测度，只扩大可测集合族。在现代积分理论中，它描述集合函数、函数空间和收敛定理。在测度论中，测度完备化说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。测度完备化常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论测度完备化时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "测度完备化",
+          "url": "https://www.baidu.com/s?wd=%E6%B5%8B%E5%BA%A6%E5%AE%8C%E5%A4%87%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "测度完备化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B5%8B%E5%BA%A6%E5%AE%8C%E5%A4%87%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "measure completion",
+          "url": "https://en.wikipedia.org/w/index.php?search=measure%20completion"
+        }
       ]
     },
     {
@@ -611,6 +1145,19 @@
         "对象 条件 运算 记号",
         "caratheodory measurability",
         "caratheodory_measurability"
+      ],
+      "explanation_markdown": "Caratheodory可测性是满足 Caratheodory 分割等式的可测性概念。可写作 $\\mu^*(B)=\\mu^*(B\\cap E)+\\mu^*(B\\cap E^c)$，其中E 是待测集合，B 任取，E^c 是补集。\n\n它从所有子集上的外测度出发，区别于预先给定的 Borel 可测性。Caratheodory可测性常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论Caratheodory可测性时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对Caratheodory可测性来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，Caratheodory可测性说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Caratheodory可测性",
+          "url": "https://www.baidu.com/s?wd=Caratheodory%E5%8F%AF%E6%B5%8B%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Caratheodory可测性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Caratheodory%E5%8F%AF%E6%B5%8B%E6%80%A7"
+        }
       ]
     },
     {
@@ -629,6 +1176,24 @@
         "对象 条件 运算 记号",
         "ke ce bao",
         "ke_ce_bao"
+      ],
+      "explanation_markdown": "可测包是包含给定集合且测度最小意义下的可测外包。常写成 $A\\subset E,\\quad \\mu(E)=\\mu^*(A)$，其中E 是可测集，\\mu^* 是外测度。\n\n它不是唯一的点集对象，通常只在零测差意义下确定。在可测结构中，它把零集、极限和积分联系成统一语言。讨论可测包时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对可测包来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，可测包说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "可测包",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%AF%E6%B5%8B%E5%8C%85%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "可测包",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%AF%E6%B5%8B%E5%8C%85"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "testable package",
+          "url": "https://en.wikipedia.org/w/index.php?search=testable%20package"
+        }
       ]
     },
     {
@@ -647,6 +1212,24 @@
         "对象 条件 运算 记号",
         "full measure set",
         "full_measure_set"
+      ],
+      "explanation_markdown": "满测集是补集为零测集的集合。可写作 $\\mu(X\\setminus A)=0$，其中X 是全空间，A 是集合，补集测度为零。\n\n它依赖背景全空间和测度，和拓扑稠密不是同一概念。在现代积分理论中，它描述集合函数、函数空间和收敛定理。对满测集来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，满测集说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。满测集常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "满测集",
+          "url": "https://www.baidu.com/s?wd=%E6%BB%A1%E6%B5%8B%E9%9B%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "满测集",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%BB%A1%E6%B5%8B%E9%9B%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "full measure set",
+          "url": "https://en.wikipedia.org/w/index.php?search=full%20measure%20set"
+        }
       ]
     },
     {
@@ -665,6 +1248,24 @@
         "对象 条件 运算 记号",
         "ji hu chu xing",
         "ji_hu_chu_xing_zhi"
+      ],
+      "explanation_markdown": "几乎处处性质是除一个零测集外成立的性质。常用定义式为 $\\mu(\\{x:P(x)\\ \\text{fails}\\})=0$，其中P(x) 是点态命题，失败集测度为零。\n\n它是测度概念，不等同于拓扑意义的稠密或残差。在测度论中，几乎处处性质说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。几乎处处性质常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论几乎处处性质时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "几乎处处性质",
+          "url": "https://www.baidu.com/s?wd=%E5%87%A0%E4%B9%8E%E5%A4%84%E5%A4%84%E6%80%A7%E8%B4%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "几乎处处性质",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%87%A0%E4%B9%8E%E5%A4%84%E5%A4%84%E6%80%A7%E8%B4%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "almost everywhere nature",
+          "url": "https://en.wikipedia.org/w/index.php?search=almost%20everywhere%20nature"
+        }
       ]
     },
     {
@@ -683,6 +1284,19 @@
         "对象 条件 运算 记号",
         "lebesgue integral",
         "lebesgue_integral"
+      ],
+      "explanation_markdown": "Lebesgue积分是按可测函数取值层次定义的积分。常用定义式为 $\\int f\\,d\\mu=\\sup_{0\\le s\\le f}\\int s\\,d\\mu$，其中s 是非负简单函数，f 是非负可测函数。\n\n它先要求可测性，再讨论正负部分可积；和 Riemann 分割区间的方式不同。在可测结构中，它把零集、极限和积分联系成统一语言。Lebesgue积分常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论Lebesgue积分时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对Lebesgue积分来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Lebesgue积分",
+          "url": "https://www.baidu.com/s?wd=Lebesgue%E7%A7%AF%E5%88%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Lebesgue积分",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Lebesgue%E7%A7%AF%E5%88%86"
+        }
       ]
     },
     {
@@ -701,6 +1315,24 @@
         "对象 条件 运算 记号",
         "shang integral",
         "shang_integral"
+      ],
+      "explanation_markdown": "上积分是用较大的可测函数或简单函数从上方逼近得到的积分量。常写成 $\\overline{\\int} f\\,d\\mu=\\inf\\{\\int g\\,d\\mu:g\\ge f\\}$，其中g 是可积上界函数，inf 取下确界。\n\n它与下积分相配；二者相等时才得到稳定积分值。在现代积分理论中，它描述集合函数、函数空间和收敛定理。讨论上积分时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对上积分来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，上积分说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "上积分",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%8A%E7%A7%AF%E5%88%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "上积分",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%8A%E7%A7%AF%E5%88%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "shang integral",
+          "url": "https://en.wikipedia.org/w/index.php?search=shang%20integral"
+        }
       ]
     },
     {
@@ -719,6 +1351,24 @@
         "对象 条件 运算 记号",
         "xia integral",
         "xia_integral"
+      ],
+      "explanation_markdown": "下积分是用较小的可测函数从下方逼近得到的积分量。可写成 $\\underline{\\int} f\\,d\\mu=\\sup\\{\\int h\\,d\\mu:h\\le f\\}$，其中h 是可积下界函数，sup 取上确界。\n\n它和上积分方向相反，不能单独代表最终积分。它把函数在可测结构上的累积量定义出来。对下积分来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，下积分说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。下积分常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "下积分",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%8B%E7%A7%AF%E5%88%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "下积分",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%8B%E7%A7%AF%E5%88%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "xia integral",
+          "url": "https://en.wikipedia.org/w/index.php?search=xia%20integral"
+        }
       ]
     },
     {
@@ -737,6 +1387,24 @@
         "对象 条件 运算 记号",
         "integral ke jia xing",
         "integral_ke_jia_xing"
+      ],
+      "explanation_markdown": "积分可加性是积分对函数和区域分解满足的线性或可数可加性质。常写成 $\\int_A f\\,d\\mu+\\int_B f\\,d\\mu=\\int_{A\\cup B}f\\,d\\mu$，其中A,B 不交且可测，f 可积。\n\n它要求可测性和可积性，不能对任意非可测分割使用。在可测结构中，它把零集、极限和积分联系成统一语言。在测度论中，积分可加性说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。积分可加性常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论积分可加性时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "积分可加性",
+          "url": "https://www.baidu.com/s?wd=%E7%A7%AF%E5%88%86%E5%8F%AF%E5%8A%A0%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "积分可加性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A7%AF%E5%88%86%E5%8F%AF%E5%8A%A0%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "integral additivity",
+          "url": "https://en.wikipedia.org/w/index.php?search=integral%20additivity"
+        }
       ]
     },
     {
@@ -755,6 +1423,24 @@
         "对象 条件 运算 记号",
         "jie wei function",
         "jie_wei_function"
+      ],
+      "explanation_markdown": "截尾函数是把函数值限制在有限范围内得到的近似函数。常用定义式为 $f_n=(-n)\\vee(f\\wedge n)$，其中\\wedge,\\vee 分别表示取小和取大。\n\n截尾改变大值部分，但常在 n 趋于无穷时恢复原函数。在现代积分理论中，它描述集合函数、函数空间和收敛定理。截尾函数常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论截尾函数时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对截尾函数来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "截尾函数",
+          "url": "https://www.baidu.com/s?wd=%E6%88%AA%E5%B0%BE%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "截尾函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%88%AA%E5%B0%BE%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "truncation function",
+          "url": "https://en.wikipedia.org/w/index.php?search=truncation%20function"
+        }
       ]
     },
     {
@@ -773,6 +1459,24 @@
         "对象 条件 运算 记号",
         "yi zhi integrable zu",
         "yi_zhi_integrable_zu"
+      ],
+      "explanation_markdown": "一致可积族是积分质量不会集中到小测度集合上的函数族。常用定义式为 $\\sup_{f\\in\\mathcal F}\\int_{\\{|f|>M\\}}|f|\\,d\\mu\\to0$，其中\\mathcal F 是函数族，M 趋于无穷。\n\n它强于逐个可积，控制的是整个函数族的尾部。讨论一致可积族时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对一致可积族来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，一致可积族说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。一致可积族常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "一致可积族",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%80%E8%87%B4%E5%8F%AF%E7%A7%AF%E6%97%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "一致可积族",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%80%E8%87%B4%E5%8F%AF%E7%A7%AF%E6%97%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "yi zhi integrable zu",
+          "url": "https://en.wikipedia.org/w/index.php?search=yi%20zhi%20integrable%20zu"
+        }
       ]
     },
     {
@@ -791,6 +1495,19 @@
         "对象 条件 运算 记号",
         "vitali fu gai theorem",
         "vitali_fu_gai_theorem"
+      ],
+      "explanation_markdown": "Vitali覆盖定理是从细覆盖中选出几乎覆盖集合的不交子族的定理。常用定义式为 $\\mu\\!\\left(E\\setminus\\bigcup_j B_j\\right)=0$，其中B_j 是选出的两两不交集合，E 是待覆盖集合。\n\n它是覆盖选择定理，和 Vitali 收敛定理不是同一概念。在可测结构中，它把零集、极限和积分联系成统一语言。对Vitali覆盖定理来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，Vitali覆盖定理说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。Vitali覆盖定理常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Vitali覆盖定理",
+          "url": "https://www.baidu.com/s?wd=Vitali%E8%A6%86%E7%9B%96%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Vitali覆盖定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Vitali%E8%A6%86%E7%9B%96%E5%AE%9A%E7%90%86"
+        }
       ]
     },
     {
@@ -809,6 +1526,19 @@
         "对象 条件 运算 记号",
         "radon nikodym theorem",
         "radon_nikodym_theorem"
+      ],
+      "explanation_markdown": "RadonNikodym定理是绝对连续测度可写成相对于基准测度的密度积分。常写成 $\\nu(A)=\\int_A f\\,d\\mu$，其中\\nu\\ll\\mu，f 是 Radon-Nikodym 导数。\n\n它需要 \\sigma 有限等条件，和单纯集合函数比值不同。在现代积分理论中，它描述集合函数、函数空间和收敛定理。在测度论中，RadonNikodym定理说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。RadonNikodym定理常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论RadonNikodym定理时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "RadonNikodym定理",
+          "url": "https://www.baidu.com/s?wd=RadonNikodym%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "RadonNikodym定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=RadonNikodym%E5%AE%9A%E7%90%86"
+        }
       ]
     },
     {
@@ -827,6 +1557,19 @@
         "对象 条件 运算 记号",
         "radon nikodym derivative",
         "radon_nikodym_derivative"
+      ],
+      "explanation_markdown": "RadonNikodym导数是表示一个绝对连续测度相对于另一个测度的密度函数。常写成 $f=\\frac{d\\nu}{d\\mu}$，其中\\nu\\ll\\mu，f 满足 \\nu(A)=\\int_A f\\,d\\mu。\n\n它是几乎处处确定的函数，不是普通逐点导数。RadonNikodym导数常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论RadonNikodym导数时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对RadonNikodym导数来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，RadonNikodym导数说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "RadonNikodym导数",
+          "url": "https://www.baidu.com/s?wd=RadonNikodym%E5%AF%BC%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "RadonNikodym导数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=RadonNikodym%E5%AF%BC%E6%95%B0"
+        }
       ]
     },
     {
@@ -845,6 +1588,24 @@
         "对象 条件 运算 记号",
         "measure jue dui continuity",
         "measure_jue_dui_continuity"
+      ],
+      "explanation_markdown": "测度绝对连续是一个测度对另一个测度的零测集不赋正质量。可写作 $\\mu(A)=0\\Rightarrow \\nu(A)=0$，其中\\nu\\ll\\mu 表示 \\nu 相对于 \\mu 绝对连续。\n\n它区别于函数绝对连续，主体是两个测度之间的关系。在可测结构中，它把零集、极限和积分联系成统一语言。讨论测度绝对连续时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对测度绝对连续来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，测度绝对连续说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "测度绝对连续",
+          "url": "https://www.baidu.com/s?wd=%E6%B5%8B%E5%BA%A6%E7%BB%9D%E5%AF%B9%E8%BF%9E%E7%BB%AD%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "测度绝对连续",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B5%8B%E5%BA%A6%E7%BB%9D%E5%AF%B9%E8%BF%9E%E7%BB%AD"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "the measure is absolutely continuous",
+          "url": "https://en.wikipedia.org/w/index.php?search=the%20measure%20is%20absolutely%20continuous"
+        }
       ]
     },
     {
@@ -863,6 +1624,24 @@
         "对象 条件 运算 记号",
         "measure qi yi xing",
         "measure_qi_yi_xing"
+      ],
+      "explanation_markdown": "测度奇异性是两个测度集中在互不相交的可测集合上。常用定义式为 $\\mu\\perp\\nu$，其中存在 A 使 \\mu(A^c)=0 且 \\nu(A)=0。\n\n奇异不等于互斥支撑的拓扑分离，只需测度意义分开。在现代积分理论中，它描述集合函数、函数空间和收敛定理。对测度奇异性来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，测度奇异性说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。测度奇异性常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "测度奇异性",
+          "url": "https://www.baidu.com/s?wd=%E6%B5%8B%E5%BA%A6%E5%A5%87%E5%BC%82%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "测度奇异性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B5%8B%E5%BA%A6%E5%A5%87%E5%BC%82%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "measure singularity",
+          "url": "https://en.wikipedia.org/w/index.php?search=measure%20singularity"
+        }
       ]
     },
     {
@@ -881,6 +1660,19 @@
         "对象 条件 运算 记号",
         "lebesgue fen solution",
         "lebesgue_fen_solution"
+      ],
+      "explanation_markdown": "Lebesgue分解是把测度分为绝对连续部分和奇异部分的分解。常用定义式为 $\\nu=f\\mu+\\nu_s,\\quad \\nu_s\\perp\\mu$，其中f 是密度，\\nu_s 是相对于 \\mu 的奇异测度。\n\n它依赖参照测度 \\mu，和 Jordan 正负分解不同。在测度论中，Lebesgue分解说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。Lebesgue分解常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论Lebesgue分解时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对Lebesgue分解来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Lebesgue分解",
+          "url": "https://www.baidu.com/s?wd=Lebesgue%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Lebesgue分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Lebesgue%E5%88%86%E8%A7%A3"
+        }
       ]
     },
     {
@@ -899,6 +1691,19 @@
         "对象 条件 运算 记号",
         "hahn fen solution",
         "hahn_fen_solution"
+      ],
+      "explanation_markdown": "Hahn分解是把符号测度空间分成正集和负集的分解。可写成 $X=P\\cup N$，其中P 上所有可测子集测度非负，N 上所有可测子集测度非正。\n\n它给集合分割；Jordan 分解给两个正测度。在可测结构中，它把零集、极限和积分联系成统一语言。Hahn分解常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论Hahn分解时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对Hahn分解来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Hahn分解",
+          "url": "https://www.baidu.com/s?wd=Hahn%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Hahn分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Hahn%E5%88%86%E8%A7%A3"
+        }
       ]
     },
     {
@@ -917,6 +1722,19 @@
         "对象 条件 运算 记号",
         "jordan fen solution theorem",
         "jordan_fen_solution_theorem"
+      ],
+      "explanation_markdown": "Jordan分解定理是把符号测度唯一分解为两个互奇异正测度之差。常写成 $\\nu=\\nu^+-\\nu^-$，其中\\nu^+,\\nu^- 是正测度且互奇异。\n\n它是测度分解，不是有界变差函数的 Jordan 分解。在现代积分理论中，它描述集合函数、函数空间和收敛定理。讨论Jordan分解定理时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对Jordan分解定理来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，Jordan分解定理说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Jordan分解定理",
+          "url": "https://www.baidu.com/s?wd=Jordan%E5%88%86%E8%A7%A3%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Jordan分解定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Jordan%E5%88%86%E8%A7%A3%E5%AE%9A%E7%90%86"
+        }
       ]
     },
     {
@@ -935,6 +1753,24 @@
         "对象 条件 运算 记号",
         "jie mian measurability",
         "jie_mian_measurability"
+      ],
+      "explanation_markdown": "截面可测性是乘积空间中固定一个变量后的截面仍可测。常用定义式为 $A_x=\\{y:(x,y)\\in A\\}$，其中A 是乘积可测集，A_x 是 x 截面。\n\n它关注集合或函数的切片，不等同于积分换序结论。对截面可测性来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，截面可测性说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。截面可测性常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论截面可测性时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "截面可测性",
+          "url": "https://www.baidu.com/s?wd=%E6%88%AA%E9%9D%A2%E5%8F%AF%E6%B5%8B%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "截面可测性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%88%AA%E9%9D%A2%E5%8F%AF%E6%B5%8B%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cross section measurability",
+          "url": "https://en.wikipedia.org/w/index.php?search=cross%20section%20measurability"
+        }
       ]
     },
     {
@@ -953,6 +1789,24 @@
         "对象 条件 运算 记号",
         "pushforward measure",
         "pushforward_measure"
+      ],
+      "explanation_markdown": "推前测度是通过映射把原测度转移到目标空间的测度。可写作 $T_\\#\\mu(B)=\\mu(T^{-1}(B))$，其中T 是可测映射，B 是目标空间可测集。\n\n它使用原像定义，区别于直接把集合像的测度拿来当值。在可测结构中，它把零集、极限和积分联系成统一语言。在测度论中，推前测度说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。推前测度常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论推前测度时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "推前测度",
+          "url": "https://www.baidu.com/s?wd=%E6%8E%A8%E5%89%8D%E6%B5%8B%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "推前测度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8E%A8%E5%89%8D%E6%B5%8B%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pushforward measure",
+          "url": "https://en.wikipedia.org/w/index.php?search=pushforward%20measure"
+        }
       ]
     },
     {
@@ -971,6 +1825,24 @@
         "对象 条件 运算 记号",
         "pullback measure",
         "pullback_measure"
+      ],
+      "explanation_markdown": "拉回测度是通过映射把目标侧测度或密度拉到源空间的构造。可写成 $T^*\\nu(A)=\\nu(T(A))$，其中在 T 可逆或适当限制下理解，A 是源空间集合。\n\n一般可测映射最自然的是推前；拉回需要额外结构。在现代积分理论中，它描述集合函数、函数空间和收敛定理。拉回测度常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论拉回测度时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对拉回测度来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拉回测度",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%89%E5%9B%9E%E6%B5%8B%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拉回测度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%89%E5%9B%9E%E6%B5%8B%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pullback measure",
+          "url": "https://en.wikipedia.org/w/index.php?search=pullback%20measure"
+        }
       ]
     },
     {
@@ -989,6 +1861,24 @@
         "对象 条件 运算 记号",
         "bian huan formula",
         "bian_huan_formula"
+      ],
+      "explanation_markdown": "变换公式是积分在可逆变换下由 Jacobian 修正的公式。常用定义式为 $\\int_{T(A)}g(y)\\,dy=\\int_A g(Tx)|\\det DT(x)|\\,dx$，其中T 是可微变换，DT 是导数矩阵。\n\n它比抽象推前测度更具体，依赖可微性和 Jacobian。它把抽象关系写成可计算的表达式。讨论变换公式时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对变换公式来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，变换公式说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "变换公式",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%98%E6%8D%A2%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "变换公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%98%E6%8D%A2%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "transformation formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=transformation%20formula"
+        }
       ]
     },
     {
@@ -1007,6 +1897,24 @@
         "对象 条件 运算 记号",
         "distribution function measure",
         "distribution_function_measure"
+      ],
+      "explanation_markdown": "分布函数测度是由单调右连续函数生成的 Stieltjes 测度。常写成 $\\mu((a,b])=F(b)-F(a)$，其中F 是分布函数，a<b。\n\n它由函数增量决定，不要求存在普通密度。在可测结构中，它把零集、极限和积分联系成统一语言。对分布函数测度来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，分布函数测度说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。分布函数测度常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分布函数测度",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E5%B8%83%E5%87%BD%E6%95%B0%E6%B5%8B%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分布函数测度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E5%B8%83%E5%87%BD%E6%95%B0%E6%B5%8B%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "distribution function measure",
+          "url": "https://en.wikipedia.org/w/index.php?search=distribution%20function%20measure"
+        }
       ]
     },
     {
@@ -1025,6 +1933,19 @@
         "对象 条件 运算 记号",
         "stieltjes measure",
         "stieltjes_measure"
+      ],
+      "explanation_markdown": "Stieltjes测度是由单调函数或有界变差函数生成的测度。可写成 $\\mu_F((a,b])=F(b)-F(a)$，其中F 通常取右连续单调函数。\n\n它包含 Lebesgue 测度作为 F(x)=x 的特例。在现代积分理论中，它描述集合函数、函数空间和收敛定理。在测度论中，Stieltjes测度说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。Stieltjes测度常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论Stieltjes测度时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Stieltjes测度",
+          "url": "https://www.baidu.com/s?wd=Stieltjes%E6%B5%8B%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Stieltjes测度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Stieltjes%E6%B5%8B%E5%BA%A6"
+        }
       ]
     },
     {
@@ -1043,6 +1964,19 @@
         "对象 条件 运算 记号",
         "lebesgue stieltjes integral",
         "lebesgue_stieltjes_integral"
+      ],
+      "explanation_markdown": "LebesgueStieltjes积分是相对于 Stieltjes 测度的 Lebesgue 积分。可写成 $\\int f\\,dF=\\int f\\,d\\mu_F$，其中\\mu_F 是由 F 生成的 Stieltjes 测度。\n\n它不是 Riemann-Stieltjes 积分的逐点分割版本，而是测度积分。这些限制还决定几乎处处修改、完备化和分解定理能否正常使用。LebesgueStieltjes积分常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论LebesgueStieltjes积分时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对LebesgueStieltjes积分来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，LebesgueStieltjes积分说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "LebesgueStieltjes积分",
+          "url": "https://www.baidu.com/s?wd=LebesgueStieltjes%E7%A7%AF%E5%88%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "LebesgueStieltjes积分",
+          "url": "https://zh.wikipedia.org/w/index.php?search=LebesgueStieltjes%E7%A7%AF%E5%88%86"
+        }
       ]
     },
     {
@@ -1061,6 +1995,19 @@
         "对象 条件 运算 记号",
         "bochner integral",
         "bochner_integral"
+      ],
+      "explanation_markdown": "Bochner积分是Banach 空间值函数的强可测积分。可写作 $\\int\\|f\\|_X\\,d\\mu<\\infty$，其中f 取值于 Banach 空间 X，范数可积。\n\n它要求强可测和范数可积，比 Pettis 积分更强。这些限制还决定几乎处处修改、完备化和分解定理能否正常使用。讨论Bochner积分时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对Bochner积分来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，Bochner积分说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。Bochner积分常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Bochner积分",
+          "url": "https://www.baidu.com/s?wd=Bochner%E7%A7%AF%E5%88%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Bochner积分",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Bochner%E7%A7%AF%E5%88%86"
+        }
       ]
     },
     {
@@ -1079,6 +2026,19 @@
         "对象 条件 运算 记号",
         "pettis integral",
         "pettis_integral"
+      ],
+      "explanation_markdown": "Pettis积分是用所有对偶泛函测试定义的弱向量积分。可写作 $x^*\\!\\left(\\int f\\,d\\mu\\right)=\\int x^*(f)\\,d\\mu$，其中x^* 属于对偶空间，f 是向量值函数。\n\n它弱于 Bochner 积分，积分存在性依赖对偶测试。在现代积分理论中，它描述集合函数、函数空间和收敛定理。对Pettis积分来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，Pettis积分说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。Pettis积分常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Pettis积分",
+          "url": "https://www.baidu.com/s?wd=Pettis%E7%A7%AF%E5%88%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Pettis积分",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Pettis%E7%A7%AF%E5%88%86"
+        }
       ]
     },
     {
@@ -1097,6 +2057,24 @@
         "对象 条件 运算 记号",
         "conditional expectation operator",
         "conditional_expectation_operator"
+      ],
+      "explanation_markdown": "条件期望算子是把可积随机变量投影到子 \\sigma 代数上的算子。可写成 $\\int_A \\mathbb E(X|\\mathcal G)\\,dP=\\int_A X\\,dP$，其中A\\in\\mathcal G，\\mathcal G 是子 \\sigma 代数。\n\n它是 L1 中的可测代表，通常只在几乎处处意义下唯一。它把函数、向量或测度映到另一个对象，并保留某种结构信息。在测度论中，条件期望算子说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。条件期望算子常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论条件期望算子时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "条件期望算子",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%A1%E4%BB%B6%E6%9C%9F%E6%9C%9B%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "条件期望算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%A1%E4%BB%B6%E6%9C%9F%E6%9C%9B%E7%AE%97%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "conditional expectation operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=conditional%20expectation%20operator"
+        }
       ]
     },
     {
@@ -1115,6 +2093,24 @@
         "对象 条件 运算 记号",
         "ke ce xuan ze",
         "ke_ce_xuan_ze"
+      ],
+      "explanation_markdown": "可测选择是从集合值映射中选出可测单值函数的结论。可写成 $f(x)\\in F(x)$，其中F(x) 是非空集合值，f 是待选可测函数。\n\n它需要图像可测或闭值等条件，不能任意选择。在可测结构中，它把零集、极限和积分联系成统一语言。可测选择常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论可测选择时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对可测选择来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "可测选择",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%AF%E6%B5%8B%E9%80%89%E6%8B%A9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "可测选择",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%AF%E6%B5%8B%E9%80%89%E6%8B%A9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "testable options",
+          "url": "https://en.wikipedia.org/w/index.php?search=testable%20options"
+        }
       ]
     },
     {
@@ -1133,6 +2129,19 @@
         "对象 条件 运算 记号",
         "dynkin xi tong",
         "dynkin_xi_tong"
+      ],
+      "explanation_markdown": "Dynkin系统是含全集且对补集和可数不交并封闭的集合族。常写成 $A_n\\ \\text{disjoint}\\Rightarrow \\bigcup_n A_n\\in\\mathcal D$，其中\\mathcal D 是 Dynkin 系统，A_n 属于其中。\n\n它弱于 \\sigma 代数，缺少一般可数并封闭性。在现代积分理论中，它描述集合函数、函数空间和收敛定理。讨论Dynkin系统时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对Dynkin系统来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，Dynkin系统说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。Dynkin系统常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Dynkin系统",
+          "url": "https://www.baidu.com/s?wd=Dynkin%E7%B3%BB%E7%BB%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Dynkin系统",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Dynkin%E7%B3%BB%E7%BB%9F"
+        }
       ]
     },
     {
@@ -1151,6 +2160,24 @@
         "对象 条件 运算 记号",
         "monotone class theorem",
         "monotone_class_theorem"
+      ],
+      "explanation_markdown": "单调类定理是由代数或 \\pi 系生成的单调类等于相应 \\sigma 代数的定理。常写成 $\\mathcal M(\\mathcal C)=\\sigma(\\mathcal C)$，其中\\mathcal C 是初始类，\\mathcal M 是包含它的最小单调类。\n\n它与 Dynkin 的 \\pi-\\lambda 方法相近，但使用单调极限闭包。对单调类定理来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，单调类定理说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。单调类定理常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论单调类定理时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单调类定理",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E8%B0%83%E7%B1%BB%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单调类定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E8%B0%83%E7%B1%BB%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "monotone class theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=monotone%20class%20theorem"
+        }
       ]
     },
     {
@@ -1169,6 +2196,19 @@
         "对象 条件 运算 记号",
         "pi system lambda system",
         "pi_system_lambda_system_theorem"
+      ],
+      "explanation_markdown": "pi系lambda系定理是若 \\lambda 系包含生成它的 \\pi 系，则包含相应 \\sigma 代数。可写成 $\\mathcal P\\subset\\mathcal L\\Rightarrow\\sigma(\\mathcal P)\\subset\\mathcal L$，其中\\mathcal P 对有限交封闭，\\mathcal L 是 \\lambda 系。\n\n它依赖 \\pi 系的交封闭，和单调类定理的闭包条件不同。在可测结构中，它把零集、极限和积分联系成统一语言。在测度论中，pi系lambda系定理说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。pi系lambda系定理常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论pi系lambda系定理时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "pi系lambda系定理",
+          "url": "https://www.baidu.com/s?wd=pi%E7%B3%BBlambda%E7%B3%BB%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "pi系lambda系定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=pi%E7%B3%BBlambda%E7%B3%BB%E5%AE%9A%E7%90%86"
+        }
       ]
     },
     {
@@ -1187,6 +2227,24 @@
         "对象 条件 运算 记号",
         "measure dai shu",
         "measure_dai_shu"
+      ],
+      "explanation_markdown": "测度代数是把测度空间中的可测集按零测差商掉得到的代数。可写成 $A\\sim B\\iff \\mu(A\\triangle B)=0$，其中\\triangle 是对称差，等价类忽略零测差别。\n\n它不记录具体点集，只记录零测差意义下的事件。在现代积分理论中，它描述集合函数、函数空间和收敛定理。测度代数常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论测度代数时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对测度代数来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "测度代数",
+          "url": "https://www.baidu.com/s?wd=%E6%B5%8B%E5%BA%A6%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "测度代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B5%8B%E5%BA%A6%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "measure algebraic",
+          "url": "https://en.wikipedia.org/w/index.php?search=measure%20algebraic"
+        }
       ]
     },
     {
@@ -1205,6 +2263,19 @@
         "对象 条件 运算 记号",
         "completion sigma algebra",
         "completion_sigma_algebra"
+      ],
+      "explanation_markdown": "完备化sigma代数是测度完备化后得到的扩大 \\sigma 代数。常用定义式为 $\\overline{\\mathcal A}=\\{A\\cup N:A\\in\\mathcal A,\\ N\\subset Z,\\ \\mu(Z)=0\\}$，其中Z 是原零测集，N 是其子集。\n\n它和原 \\sigma 代数生成同样的积分值，但包含更多零测子集。讨论完备化sigma代数时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对完备化sigma代数来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，完备化sigma代数说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。完备化sigma代数常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "完备化sigma代数",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%8C%E5%A4%87%E5%8C%96sigma%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "完备化sigma代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%8C%E5%A4%87%E5%8C%96sigma%E4%BB%A3%E6%95%B0"
+        }
       ]
     },
     {
@@ -1223,6 +2294,24 @@
         "对象 条件 运算 记号",
         "ju bu integrable space",
         "ju_bu_integrable_space"
+      ],
+      "explanation_markdown": "局部可积空间是每个紧子集上都可积的函数空间。可写成 $f\\in L^1_{\\mathrm{loc}}(\\Omega)\\iff \\int_K|f|<\\infty$，其中K\\Subset\\Omega 是紧子集。\n\n它不要求整个区域上的积分有限。在可测结构中，它把零集、极限和积分联系成统一语言。对局部可积空间来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，局部可积空间说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。局部可积空间常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "局部可积空间",
+          "url": "https://www.baidu.com/s?wd=%E5%B1%80%E9%83%A8%E5%8F%AF%E7%A7%AF%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "局部可积空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B1%80%E9%83%A8%E5%8F%AF%E7%A7%AF%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ju bu integrable space",
+          "url": "https://en.wikipedia.org/w/index.php?search=ju%20bu%20integrable%20space"
+        }
       ]
     },
     {
@@ -1241,6 +2330,24 @@
         "对象 条件 运算 记号",
         "l wu qiong space",
         "l_wu_qiong_space"
+      ],
+      "explanation_markdown": "L无穷空间是本质有界函数的等价类空间。常用定义式为 $\\|f\\|_\\infty=\\operatorname*{ess\\,sup}|f|$，其中本质上确界忽略零测集上的异常值。\n\n它不是普通逐点上确界，零测集上的爆炸可被忽略。在现代积分理论中，它描述集合函数、函数空间和收敛定理。在测度论中，L无穷空间说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。L无穷空间常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论L无穷空间时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "L无穷空间",
+          "url": "https://www.baidu.com/s?wd=L%E6%97%A0%E7%A9%B7%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "L无穷空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=L%E6%97%A0%E7%A9%B7%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "l infinite space",
+          "url": "https://en.wikipedia.org/w/index.php?search=l%20infinite%20space"
+        }
       ]
     },
     {
@@ -1259,6 +2366,24 @@
         "对象 条件 运算 记号",
         "convergence measure tuo pu",
         "convergence_measure_tuo_pu"
+      ],
+      "explanation_markdown": "收敛测度拓扑是由依测度收敛产生的拓扑或距离结构。可写作 $\\mu(\\{|f_n-f|>\\varepsilon\\})\\to0$，其中\\varepsilon>0，\\mu 衡量偏差超过阈值的集合。\n\n它弱于 Lp 收敛，也不保证每点收敛。它为集合分配大小，并要求与可数并、零集或正则性相容。收敛测度拓扑常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论收敛测度拓扑时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对收敛测度拓扑来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "收敛测度拓扑",
+          "url": "https://www.baidu.com/s?wd=%E6%94%B6%E6%95%9B%E6%B5%8B%E5%BA%A6%E6%8B%93%E6%89%91%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "收敛测度拓扑",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%94%B6%E6%95%9B%E6%B5%8B%E5%BA%A6%E6%8B%93%E6%89%91"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "topology of convergence in measure",
+          "url": "https://en.wikipedia.org/w/index.php?search=topology%20of%20convergence%20in%20measure"
+        }
       ]
     },
     {
@@ -1277,6 +2402,19 @@
         "光滑性 提升",
         "lebesgue regularity",
         "lebesgue_regularity"
+      ],
+      "explanation_markdown": "Lebesgue正则性是Lebesgue 测度可由开集和紧集逼近的正则性质。常写成 $m(E)=\\inf_{E\\subset U}m(U)=\\sup_{K\\subset E}m(K)$，其中U 是开集，K 是紧集，m 是 Lebesgue 测度。\n\n它是 Lebesgue 测度的正则性，不是函数的光滑性。在可测结构中，它把零集、极限和积分联系成统一语言。讨论Lebesgue正则性时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对Lebesgue正则性来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，Lebesgue正则性说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Lebesgue正则性",
+          "url": "https://www.baidu.com/s?wd=Lebesgue%E6%AD%A3%E5%88%99%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Lebesgue正则性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Lebesgue%E6%AD%A3%E5%88%99%E6%80%A7"
+        }
       ]
     },
     {
@@ -1295,6 +2433,19 @@
         "对象 条件 运算 记号",
         "borel integral",
         "borel_integral"
+      ],
+      "explanation_markdown": "Borel积分是相对于 Borel 测度对 Borel 可测函数的积分。常用定义式为 $\\int_X f\\,d\\mu$，其中\\mu 定义在 \\mathcal B(X) 上，f 是 Borel 可测函数。\n\n若测度未完备，零测集子集上的修改可能破坏 Borel 可测性。在现代积分理论中，它描述集合函数、函数空间和收敛定理。对Borel积分来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，Borel积分说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。Borel积分常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Borel积分",
+          "url": "https://www.baidu.com/s?wd=Borel%E7%A7%AF%E5%88%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Borel积分",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Borel%E7%A7%AF%E5%88%86"
+        }
       ]
     },
     {
@@ -1313,6 +2464,19 @@
         "对象 条件 运算 记号",
         "borel fen solution",
         "borel_fen_solution"
+      ],
+      "explanation_markdown": "Borel分解是在 Borel 测度或 Borel 集层面进行的可测分解。常用定义式为 $A=\\bigcup_n B_n$，其中B_n 是 Borel 集，A 在给定结构中由它们组成或逼近。\n\n它依赖 Borel 结构，和 Lebesgue 完备化后的分解不完全相同。在测度论中，Borel分解说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。Borel分解常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论Borel分解时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对Borel分解来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Borel分解",
+          "url": "https://www.baidu.com/s?wd=Borel%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Borel分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Borel%E5%88%86%E8%A7%A3"
+        }
       ]
     },
     {
@@ -1331,6 +2495,19 @@
         "光滑性 提升",
         "borel regularity",
         "borel_regularity"
+      ],
+      "explanation_markdown": "Borel正则性是Borel 测度对一般可测集可由 Borel 集逼近的性质。常写成 $\\mu(A)=\\mu(B)$，其中A 是可测集，B 是包含或逼近 A 的 Borel 集。\n\n它关注 Borel 代表，和内外正则的开紧逼近方向不同。在可测结构中，它把零集、极限和积分联系成统一语言。Borel正则性常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论Borel正则性时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对Borel正则性来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Borel正则性",
+          "url": "https://www.baidu.com/s?wd=Borel%E6%AD%A3%E5%88%99%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Borel正则性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Borel%E6%AD%A3%E5%88%99%E6%80%A7"
+        }
       ]
     },
     {
@@ -1349,6 +2526,19 @@
         "对象 条件 运算 记号",
         "radon integral",
         "radon_integral"
+      ],
+      "explanation_markdown": "Radon积分是相对于 Radon 测度的积分。常用定义式为 $\\int f\\,d\\mu$，其中\\mu 是 Radon 测度，f 通常取连续紧支或可测函数。\n\n它依赖 Radon 测度的紧集逼近，不只是任意测度积分。在现代积分理论中，它描述集合函数、函数空间和收敛定理。讨论Radon积分时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对Radon积分来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，Radon积分说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Radon积分",
+          "url": "https://www.baidu.com/s?wd=Radon%E7%A7%AF%E5%88%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Radon积分",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Radon%E7%A7%AF%E5%88%86"
+        }
       ]
     },
     {
@@ -1367,6 +2557,19 @@
         "对象 条件 运算 记号",
         "radon fen solution",
         "radon_fen_solution"
+      ],
+      "explanation_markdown": "Radon分解是利用 Radon 测度正则性或相对测度关系得到的分解。常用定义式为 $\\mu=\\mu_{\\mathrm{ac}}+\\mu_s$，其中\\mu_{\\mathrm{ac}} 是绝对连续部分，\\mu_s 是奇异部分。\n\n具体含义要随参照测度说明，不能和 Jordan 分解混同。对Radon分解来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，Radon分解说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。Radon分解常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论Radon分解时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Radon分解",
+          "url": "https://www.baidu.com/s?wd=Radon%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Radon分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Radon%E5%88%86%E8%A7%A3"
+        }
       ]
     },
     {
@@ -1385,6 +2588,19 @@
         "光滑性 提升",
         "radon regularity",
         "radon_regularity"
+      ],
+      "explanation_markdown": "Radon正则性是Radon 测度具有的内正则、外正则和局部有限性质。常写成 $\\mu(A)=\\sup_{K\\subset A}\\mu(K)$，其中K 是紧集，A 是适当可测集。\n\n它强于单纯 Borel 可测性。在可测结构中，它把零集、极限和积分联系成统一语言。在测度论中，Radon正则性说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。Radon正则性常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论Radon正则性时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Radon正则性",
+          "url": "https://www.baidu.com/s?wd=Radon%E6%AD%A3%E5%88%99%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Radon正则性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Radon%E6%AD%A3%E5%88%99%E6%80%A7"
+        }
       ]
     },
     {
@@ -1403,6 +2619,19 @@
         "对象 条件 运算 记号",
         "haar integral",
         "haar_integral"
+      ],
+      "explanation_markdown": "Haar积分是相对于 Haar 测度在局部紧群上进行的积分。常用定义式为 $\\int_G f(gx)\\,d\\mu(x)=\\int_G f(x)\\,d\\mu(x)$，其中G 是局部紧群，\\mu 是左 Haar 测度。\n\n它依赖群结构，不是任意 Radon 积分。这些限制还决定几乎处处修改、完备化和分解定理能否正常使用。Haar积分常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论Haar积分时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对Haar积分来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Haar积分",
+          "url": "https://www.baidu.com/s?wd=Haar%E7%A7%AF%E5%88%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Haar积分",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Haar%E7%A7%AF%E5%88%86"
+        }
       ]
     },
     {
@@ -1421,6 +2650,19 @@
         "对象 条件 运算 记号",
         "haar fen solution",
         "haar_fen_solution"
+      ],
+      "explanation_markdown": "Haar分解是在 Haar 测度背景下按群结构或不变子空间进行的分解。常用定义式为 $f=f_1+f_2$，其中各部分通常按不变子群、商群或频率空间解释。\n\n它不是固定名称的唯一分解，必须说明所用群和不变结构。讨论Haar分解时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对Haar分解来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，Haar分解说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Haar分解",
+          "url": "https://www.baidu.com/s?wd=Haar%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Haar分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Haar%E5%88%86%E8%A7%A3"
+        }
       ]
     },
     {
@@ -1439,6 +2681,19 @@
         "光滑性 提升",
         "haar regularity",
         "haar_regularity"
+      ],
+      "explanation_markdown": "Haar正则性是Haar 测度作为 Radon 测度所具有的正则性。常写成 $\\mu(A)=\\inf_{A\\subset U}\\mu(U)$，其中U 是开集，\\mu 是 Haar 测度。\n\n它结合了 Haar 不变性与 Radon 正则性。这些限制还决定几乎处处修改、完备化和分解定理能否正常使用。对Haar正则性来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，Haar正则性说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。Haar正则性常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论Haar正则性时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Haar正则性",
+          "url": "https://www.baidu.com/s?wd=Haar%E6%AD%A3%E5%88%99%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Haar正则性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Haar%E6%AD%A3%E5%88%99%E6%80%A7"
+        }
       ]
     },
     {
@@ -1457,6 +2712,19 @@
         "对象 条件 运算 记号",
         "dirac integral",
         "dirac_integral"
+      ],
+      "explanation_markdown": "Dirac积分是相对于 Dirac 测度的积分。可写成 $\\int f\\,d\\delta_a=f(a)$，其中a 是质量所在点，f(a) 是函数在该点的值。\n\n它看起来像取值，但本质仍是测度积分。在现代积分理论中，它描述集合函数、函数空间和收敛定理。在测度论中，Dirac积分说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。Dirac积分常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论Dirac积分时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Dirac积分",
+          "url": "https://www.baidu.com/s?wd=Dirac%E7%A7%AF%E5%88%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Dirac积分",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Dirac%E7%A7%AF%E5%88%86"
+        }
       ]
     },
     {
@@ -1475,6 +2743,19 @@
         "对象 条件 运算 记号",
         "dirac fen solution",
         "dirac_fen_solution"
+      ],
+      "explanation_markdown": "Dirac分解是把测度中的原子点质量部分单独写出。可写成 $\\mu=\\sum_k c_k\\delta_{a_k}+\\mu_c$，其中c_k 是点质量，\\mu_c 是剩余非原子或连续部分。\n\n它区别于 Lebesgue 分解，参照对象通常是原子与非原子结构。Dirac分解常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论Dirac分解时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对Dirac分解来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，Dirac分解说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Dirac分解",
+          "url": "https://www.baidu.com/s?wd=Dirac%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Dirac分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Dirac%E5%88%86%E8%A7%A3"
+        }
       ]
     },
     {
@@ -1493,6 +2774,19 @@
         "光滑性 提升",
         "dirac regularity",
         "dirac_regularity"
+      ],
+      "explanation_markdown": "Dirac正则性是Dirac 测度在单点支撑下的正则性质。可写作 $\\delta_a(U)=1\\iff a\\in U$，其中U 是开集，a 是支撑点。\n\n它是 Radon 正则的最简单模型，不代表一般测度都集中在点上。在可测结构中，它把零集、极限和积分联系成统一语言。讨论Dirac正则性时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对Dirac正则性来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，Dirac正则性说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Dirac正则性",
+          "url": "https://www.baidu.com/s?wd=Dirac%E6%AD%A3%E5%88%99%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Dirac正则性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Dirac%E6%AD%A3%E5%88%99%E6%80%A7"
+        }
       ]
     },
     {
@@ -1511,6 +2805,19 @@
         "对象 条件 运算 记号",
         "stieltjes integral",
         "stieltjes_integral"
+      ],
+      "explanation_markdown": "Stieltjes积分是由有界变差或单调函数作为积分器的积分。可写成 $\\int f\\,dF$，其中F 是积分器，若 F 单调则对应测度 \\mu_F。\n\n需区分 Riemann-Stieltjes 和 Lebesgue-Stieltjes 两种构造。在现代积分理论中，它描述集合函数、函数空间和收敛定理。对Stieltjes积分来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，Stieltjes积分说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。Stieltjes积分常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论Stieltjes积分时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Stieltjes积分",
+          "url": "https://www.baidu.com/s?wd=Stieltjes%E7%A7%AF%E5%88%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Stieltjes积分",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Stieltjes%E7%A7%AF%E5%88%86"
+        }
       ]
     },
     {
@@ -1529,6 +2836,19 @@
         "对象 条件 运算 记号",
         "stieltjes fen solution",
         "stieltjes_fen_solution"
+      ],
+      "explanation_markdown": "Stieltjes分解是把 Stieltjes 测度或有界变差函数分成连续、跳跃等部分。可写成 $F=F_{\\mathrm{ac}}+F_s+F_j$，其中各项表示绝对连续、奇异连续和跳跃部分。\n\n它按函数或测度类型分解，和 Hahn 正负分解角度不同。在测度论中，Stieltjes分解说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。Stieltjes分解常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论Stieltjes分解时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Stieltjes分解",
+          "url": "https://www.baidu.com/s?wd=Stieltjes%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Stieltjes分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Stieltjes%E5%88%86%E8%A7%A3"
+        }
       ]
     },
     {
@@ -1547,6 +2867,19 @@
         "光滑性 提升",
         "stieltjes regularity",
         "stieltjes_regularity"
+      ],
+      "explanation_markdown": "Stieltjes正则性是Stieltjes 测度在实线拓扑下的正则性质。可写作 $\\mu_F((a,b])=F(b)-F(a)$，其中F 是右连续单调函数，区间生成测度。\n\n它依赖 F 的右连续规范化。在可测结构中，它把零集、极限和积分联系成统一语言。Stieltjes正则性常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论Stieltjes正则性时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对Stieltjes正则性来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，Stieltjes正则性说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Stieltjes正则性",
+          "url": "https://www.baidu.com/s?wd=Stieltjes%E6%AD%A3%E5%88%99%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Stieltjes正则性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Stieltjes%E6%AD%A3%E5%88%99%E6%80%A7"
+        }
       ]
     },
     {
@@ -1565,6 +2898,24 @@
         "对象 条件 运算 记号",
         "fu hao integral",
         "fu_hao_integral"
+      ],
+      "explanation_markdown": "符号积分是相对于符号测度定义的积分。可写作 $\\int f\\,d\\nu=\\int f\\,d\\nu^+-\\int f\\,d\\nu^-$，其中\\nu^+,\\nu^- 是 Jordan 分解中的正测度。\n\n它要求两部分积分不能产生无意义的 \\infty-\\infty。在现代积分理论中，它描述集合函数、函数空间和收敛定理。讨论符号积分时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对符号积分来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，符号积分说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "符号积分",
+          "url": "https://www.baidu.com/s?wd=%E7%AC%A6%E5%8F%B7%E7%A7%AF%E5%88%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "符号积分",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AC%A6%E5%8F%B7%E7%A7%AF%E5%88%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fu hao integral",
+          "url": "https://en.wikipedia.org/w/index.php?search=fu%20hao%20integral"
+        }
       ]
     },
     {
@@ -1583,6 +2934,24 @@
         "对象 条件 运算 记号",
         "fu hao fen solution",
         "fu_hao_fen_solution"
+      ],
+      "explanation_markdown": "符号分解是把符号测度拆成正负部分的结构。可写作 $\\nu=\\nu^+-\\nu^-$，其中\\nu^+,\\nu^- 是互奇异正测度。\n\n它是 Jordan 分解的内容，和集合层面的 Hahn 分解相配。对符号分解来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，符号分解说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。符号分解常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论符号分解时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "符号分解",
+          "url": "https://www.baidu.com/s?wd=%E7%AC%A6%E5%8F%B7%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "符号分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AC%A6%E5%8F%B7%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "sign decomposition",
+          "url": "https://en.wikipedia.org/w/index.php?search=sign%20decomposition"
+        }
       ]
     },
     {
@@ -1601,6 +2970,24 @@
         "光滑性 提升",
         "fu hao regularity",
         "fu_hao_regularity"
+      ],
+      "explanation_markdown": "符号正则性是符号测度的正负部分或总变差具有正则性。可写成 $|\\nu|=\\nu^++\\nu^-$，其中|\\nu| 是总变差测度。\n\n符号测度正则通常通过总变差或 Jordan 部分说明。在可测结构中，它把零集、极限和积分联系成统一语言。在测度论中，符号正则性说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。符号正则性常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论符号正则性时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "符号正则性",
+          "url": "https://www.baidu.com/s?wd=%E7%AC%A6%E5%8F%B7%E6%AD%A3%E5%88%99%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "符号正则性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AC%A6%E5%8F%B7%E6%AD%A3%E5%88%99%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fu hao regularity",
+          "url": "https://en.wikipedia.org/w/index.php?search=fu%20hao%20regularity"
+        }
       ]
     },
     {
@@ -1619,6 +3006,24 @@
         "对象 条件 运算 记号",
         "fu fen solution",
         "fu_fen_solution"
+      ],
+      "explanation_markdown": "复分解是把复测度分成实部虚部或极分解形式。可写作 $\\nu=\\nu_1+i\\nu_2$，其中\\nu_1,\\nu_2 是符号测度。\n\n它区别于符号测度的正负分解，但两者会结合使用。在现代积分理论中，它描述集合函数、函数空间和收敛定理。复分解常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论复分解时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对复分解来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "复分解",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%8D%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "复分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%8D%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fu fen solution",
+          "url": "https://en.wikipedia.org/w/index.php?search=fu%20fen%20solution"
+        }
       ]
     },
     {
@@ -1637,6 +3042,24 @@
         "光滑性 提升",
         "fu regularity",
         "fu_regularity"
+      ],
+      "explanation_markdown": "复正则性是复测度由总变差测度控制的正则性质。可写成 $|\\nu|(A)=\\sup\\sum_k|\\nu(A_k)|$，其中A_k 是 A 的有限可测分割。\n\n正则性通常要求总变差测度正则，而不是复值本身有序。它常用来把粗糙对象提升到更好的光滑性或结构层级。讨论复正则性时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对复正则性来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，复正则性说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "复正则性",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%8D%E6%AD%A3%E5%88%99%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "复正则性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%8D%E6%AD%A3%E5%88%99%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fu regularity",
+          "url": "https://en.wikipedia.org/w/index.php?search=fu%20regularity"
+        }
       ]
     },
     {
@@ -1655,6 +3078,24 @@
         "对象 条件 运算 记号",
         "monotone theorem",
         "monotone_theorem"
+      ],
+      "explanation_markdown": "单调定理是测度或积分中由单调极限保持结构的定理。可写成 $f_n\\uparrow f\\Rightarrow \\int f_n\\,d\\mu\\uparrow\\int f\\,d\\mu$，其中f_n 是非负可测函数列，\\uparrow 表示逐点递增。\n\n它依赖单调性，不需要控制函数；这和控制收敛定理不同。在可测结构中，它把零集、极限和积分联系成统一语言。对单调定理来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，单调定理说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。单调定理常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单调定理",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E8%B0%83%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单调定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E8%B0%83%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "monotone theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=monotone%20theorem"
+        }
       ]
     },
     {
@@ -1673,6 +3114,24 @@
         "对象 条件 运算 记号",
         "monotone yin li",
         "monotone_yin_li"
+      ],
+      "explanation_markdown": "单调引理是用单调闭包把结论从简单集合类推广到大 \\sigma 代数的工具。常写成 $A_n\\uparrow A\\Rightarrow \\mu(A_n)\\uparrow\\mu(A)$，其中A_n 是递增可测集列，A 是并集。\n\n它强调集合列的单调逼近，和函数列收敛定理相关但层次不同。在现代积分理论中，它描述集合函数、函数空间和收敛定理。在测度论中，单调引理说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。单调引理常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论单调引理时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单调引理",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E8%B0%83%E5%BC%95%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单调引理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E8%B0%83%E5%BC%95%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "monotone yin li",
+          "url": "https://en.wikipedia.org/w/index.php?search=monotone%20yin%20li"
+        }
       ]
     },
     {
@@ -1691,6 +3150,24 @@
         "对象 条件 运算 记号",
         "monotone condition",
         "monotone_condition"
+      ],
+      "explanation_markdown": "单调条件是保证集合或函数极限可被测度和积分稳定处理的单调性假设。常写成 $A_n\\uparrow A\\ \\text{or}\\ f_n\\uparrow f$，其中A_n 是集合列，f_n 是函数列。\n\n它是条件而非结论，缺少时极限交换可能失败。单调条件常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论单调条件时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对单调条件来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，单调条件说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单调条件",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E8%B0%83%E6%9D%A1%E4%BB%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单调条件",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E8%B0%83%E6%9D%A1%E4%BB%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "monotone condition",
+          "url": "https://en.wikipedia.org/w/index.php?search=monotone%20condition"
+        }
       ]
     },
     {
@@ -1709,6 +3186,24 @@
         "对象 条件 运算 记号",
         "monotone gou zao",
         "monotone_gou_zao"
+      ],
+      "explanation_markdown": "单调构造是通过递增集合、函数或类逐步生成目标对象的方法。可写成 $\\mathcal M=\\bigcap\\{\\mathcal C:\\mathcal C\\ \\text{monotone}\\}$，其中\\mathcal C 是包含初始类的单调类。\n\n它重在构造过程，和最终的单调收敛定理不同。在可测结构中，它把零集、极限和积分联系成统一语言。讨论单调构造时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对单调构造来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，单调构造说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单调构造",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E8%B0%83%E6%9E%84%E9%80%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单调构造",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E8%B0%83%E6%9E%84%E9%80%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "monotonic construction",
+          "url": "https://en.wikipedia.org/w/index.php?search=monotonic%20construction"
+        }
       ]
     },
     {
@@ -1727,6 +3222,24 @@
         "对象 条件 运算 记号",
         "kong zhi theorem",
         "kong_zhi_theorem"
+      ],
+      "explanation_markdown": "控制定理是由统一可积上界控制极限与积分交换的定理。常用定义式为 $|f_n|\\le g,\\quad f_n\\to f\\Rightarrow \\int f_n\\,d\\mu\\to\\int f\\,d\\mu$，其中g 可积，f_n 逐点或几乎处处收敛到 f。\n\n它区别于单调收敛；控制收敛靠上界而不是递增性。在现代积分理论中，它描述集合函数、函数空间和收敛定理。对控制定理来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，控制定理说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。控制定理常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "控制定理",
+          "url": "https://www.baidu.com/s?wd=%E6%8E%A7%E5%88%B6%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "控制定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8E%A7%E5%88%B6%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "control theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=control%20theorem"
+        }
       ]
     },
     {
@@ -1745,6 +3258,24 @@
         "对象 条件 运算 记号",
         "kong zhi yin li",
         "kong_zhi_yin_li"
+      ],
+      "explanation_markdown": "控制引理是用支配函数或一致尾部估计约束函数族的辅助结论。可写成 $\\int_{\\{|f|>M\\}}|f|\\,d\\mu<\\varepsilon$，其中M 足够大，\\varepsilon 是给定误差。\n\n它提供估计工具，不等于完整的控制收敛定理。在测度论中，控制引理说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。控制引理常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论控制引理时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "控制引理",
+          "url": "https://www.baidu.com/s?wd=%E6%8E%A7%E5%88%B6%E5%BC%95%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "控制引理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8E%A7%E5%88%B6%E5%BC%95%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "control lemma",
+          "url": "https://en.wikipedia.org/w/index.php?search=control%20lemma"
+        }
       ]
     },
     {
@@ -1763,6 +3294,24 @@
         "对象 条件 运算 记号",
         "kong zhi condition",
         "kong_zhi_condition"
+      ],
+      "explanation_markdown": "控制条件是允许极限和积分交换的支配或一致可积假设。可写成 $|f_n|\\le g\\in L^1$，其中g 是可积控制函数，f_n 是待处理函数列。\n\n它是验证收敛定理的前提，不是收敛结论本身。在可测结构中，它把零集、极限和积分联系成统一语言。控制条件常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论控制条件时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对控制条件来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "控制条件",
+          "url": "https://www.baidu.com/s?wd=%E6%8E%A7%E5%88%B6%E6%9D%A1%E4%BB%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "控制条件",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8E%A7%E5%88%B6%E6%9D%A1%E4%BB%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "control conditions",
+          "url": "https://en.wikipedia.org/w/index.php?search=control%20conditions"
+        }
       ]
     },
     {
@@ -1781,6 +3330,24 @@
         "对象 条件 运算 记号",
         "kong zhi gou zao",
         "kong_zhi_gou_zao"
+      ],
+      "explanation_markdown": "控制构造是通过支配函数、截尾和尾部估计建立积分控制的方法。常用定义式为 $f=f\\mathbf1_{\\{|f|\\le M\\}}+f\\mathbf1_{\\{|f|>M\\}}$，其中M 是截尾阈值，两项分别是主体和尾部。\n\n它是构造估计的过程，和单调逼近使用的方向不同。在现代积分理论中，它描述集合函数、函数空间和收敛定理。讨论控制构造时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。对控制构造来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，控制构造说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "控制构造",
+          "url": "https://www.baidu.com/s?wd=%E6%8E%A7%E5%88%B6%E6%9E%84%E9%80%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "控制构造",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8E%A7%E5%88%B6%E6%9E%84%E9%80%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "control structure",
+          "url": "https://en.wikipedia.org/w/index.php?search=control%20structure"
+        }
       ]
     },
     {
@@ -1799,6 +3366,19 @@
         "对象 条件 运算 记号",
         "fatou theorem",
         "fatou_theorem"
+      ],
+      "explanation_markdown": "Fatou定理是非负函数列的积分下极限不超过积分的下极限。常写成 $\\int\\liminf_{n}f_n\\,d\\mu\\le\\liminf_n\\int f_n\\,d\\mu$，其中f_n 是非负可测函数列。\n\n它给不等式而非等式，是控制收敛和单调收敛之间的基本工具。对Fatou定理来说，符号里的集合族和测度必须同时保留，单独看函数值或集合大小并不够。在测度论中，Fatou定理说明哪些对象可以测量、怎样积分以及极限能否交换；背景的 $\\sigma$ 代数和测度一变，结论也会改变。Fatou定理常出现在集合大小、函数可测性和积分定义之间；它让零测集、几乎处处和收敛定理可以用同一套语言表达。讨论Fatou定理时要固定底集、可测集族和测度；这些数据决定哪些集合合法、哪些函数可积，以及极限过程是否保持。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "Fatou定理",
+          "url": "https://www.baidu.com/s?wd=Fatou%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "Fatou定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=Fatou%E5%AE%9A%E7%90%86"
+        }
       ]
     }
   ]

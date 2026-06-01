@@ -17,6 +17,24 @@
         "旋转方向 终边位置 符号",
         "α β θ",
         "angle"
+      ],
+      "explanation_markdown": "角表示两条射线或两个方向从同一端点张开的大小。若角的顶点为 $O$，两边为射线 $OA$ 和 $OB$，可记作 $\\angle AOB=\\theta$，其中 $\\theta$ 表示角的大小。\n\n角可以用度数或弧度来度量，也可以看成从始边旋转到终边的过程。逆时针旋转常取正，顺时针旋转常取负。直角、平角和周角分别对应 $90^\\circ$、$180^\\circ$、$360^\\circ$。在三角函数中，角的终边位置会决定正弦、余弦和正切的符号。角的大小与边的长短无关，只由两条射线的相对方向决定。把角放进坐标系后，常以 $x$ 轴正方向为始边，终边旋转到哪里就决定它属于哪个象限。这样定义后，大于一周或小于零的角也能统一讨论。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "角",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "角",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "angle",
+          "url": "https://en.wikipedia.org/w/index.php?search=angle"
+        }
       ]
     },
     {
@@ -35,6 +53,24 @@
         "三角函数 圆周运动 简洁",
         "180°=π 360°=2π",
         "radian"
+      ],
+      "explanation_markdown": "弧度是一种用弧长和半径之比来度量角的单位。圆心角 $\\theta$ 对应弧长为 $l$、半径为 $r$ 时，$\\theta=\\frac lr$，其中 $\\theta$ 的单位就是弧度。\n\n当弧长等于半径时，圆心角为 $1$ 弧度。因为弧长和半径都是长度，它们的比值没有量纲。弧度让公式更简洁，例如扇形弧长 $l=r\\theta$，其中 $\\theta$ 必须用弧度。常见换算是 $180^\\circ=\\pi$ 弧度，$360^\\circ=2\\pi$ 弧度。弧度数相同的角，在不同半径圆中对应弧长不同，但弧长与半径的比相同。使用弧度后，很多公式不需要额外换算系数。若条件混用度数和弧度，要先统一单位，否则代入三角函数和弧长公式会出错。它不是新的角，而是同一角大小的另一种记法。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弧度",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%A7%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弧度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%A7%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "radian",
+          "url": "https://en.wikipedia.org/w/index.php?search=radian"
+        }
       ]
     },
     {
@@ -53,6 +89,24 @@
         "π=180°",
         "单位圆 弧长 中心角",
         "radian measure"
+      ],
+      "explanation_markdown": "弧度制是用弧度而不是度数来度量角的一套方式。它规定圆心角满足 $\\theta=\\frac lr$，其中 $l$ 是所对弧长，$r$ 是半径，$\\theta$ 是角的弧度数。\n\n在单位圆中 $r=1$，所以弧度数直接等于对应弧长，这让三角函数图像、周期和公式更自然。弧度制下，$\\pi$ 对应 $180^\\circ$，$2\\pi$ 对应 $360^\\circ$。高中三角恒等式和函数图像通常默认使用弧度制，尤其含有 $\\sin x$、$\\cos x$ 的函数题要注意单位。弧度制的优点在于把角和圆上的长度直接联系起来。三角函数的周期常写成 $2\\pi$，正弦、余弦图像的横轴也通常按弧度标记。把度数换成弧度时，可用 $\\theta_{\\text{弧度}}=\\theta_{\\text{度}}\\pi/180$。写答案时若没有度数符号，通常默认就是弧度。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弧度制",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%A7%E5%BA%A6%E5%88%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弧度制",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%A7%E5%BA%A6%E5%88%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "radian measure",
+          "url": "https://en.wikipedia.org/w/index.php?search=radian%20measure"
+        }
       ]
     },
     {
@@ -71,6 +125,24 @@
         "象限位置 符号",
         "α+2kπ k∈Z",
         "arbitrary angle"
+      ],
+      "explanation_markdown": "任意角允许从始边出发按任意方向、任意圈数旋转得到终边。若一个角为 $\\alpha$，与它终边相同的角可写成 $\\alpha+2k\\pi$，其中 $k\\in\\mathbb Z$ 表示旋转的整圈数。\n\n任意角把角的范围从 $0^\\circ$ 到 $360^\\circ$ 扩展到所有实数角。正角通常表示逆时针旋转，负角表示顺时针旋转。三角函数值只由终边在单位圆上的位置决定，因此同终边角的正弦、余弦相同。象限位置则帮助判断函数值符号。同终边角虽然大小不同，但在单位圆上对应同一个交点，因此三角函数值相同。任意角还保留旋转次数的信息，例如 $30^\\circ$ 和 $390^\\circ$ 终边相同，但旋转过程不同。化简时常把角减去整周，转回熟悉范围。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "任意角",
+          "url": "https://www.baidu.com/s?wd=%E4%BB%BB%E6%84%8F%E8%A7%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "任意角",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BB%BB%E6%84%8F%E8%A7%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "arbitrary angle",
+          "url": "https://en.wikipedia.org/w/index.php?search=arbitrary%20angle"
+        }
       ]
     },
     {
@@ -89,6 +161,24 @@
         "横坐标 cos 纵坐标 sin",
         "x^2+y^2=1",
         "unit circle"
+      ],
+      "explanation_markdown": "单位圆是平面直角坐标系中以原点为圆心、半径为 $1$ 的圆，方程为 $x^2+y^2=1$，其中 $(x,y)$ 是圆上的点。\n\n角的终边与单位圆交于点 $P(\\cos\\theta,\\sin\\theta)$，这里横坐标是余弦，纵坐标是正弦。单位圆把直角三角形中的边长比推广到任意角，也能直接看出三角函数的符号、最大最小值和周期。因为半径固定为 $1$，弧长也等于圆心角的弧度数。它也是理解诱导公式、同角关系和三角函数符号的共同图形。单位圆上的点坐标天然满足横坐标平方加纵坐标平方等于一，这就是同角关系 $\\sin^2\\theta+\\cos^2\\theta=1$ 的来源。它还能直观看出第一象限正弦、余弦都为正，其他象限的符号随坐标正负变化。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单位圆",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E4%BD%8D%E5%9C%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单位圆",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E4%BD%8D%E5%9C%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "unit circle",
+          "url": "https://en.wikipedia.org/w/index.php?search=unit%20circle"
+        }
       ]
     },
     {
@@ -107,6 +197,24 @@
         "[-1,1] 周期波动",
         "sin x",
         "sine"
+      ],
+      "explanation_markdown": "正弦最初来自直角三角形中的边长比：对锐角 $\\theta$，有 $\\sin\\theta=\\frac{\\text{对边}}{\\text{斜边}}$。在单位圆中，$\\sin\\theta$ 是角 $\\theta$ 终边交点的纵坐标。\n\n正弦值范围为 $[-1,1]$，因为单位圆上点的纵坐标不会超过半径。它是周期函数，满足 $\\sin(\\theta+2\\pi)=\\sin\\theta$。正弦常描述高度、投影和波动；在三角形中，它把角与对边联系起来，也是正弦定理的基础。对一般角，正弦不再依赖直角三角形是否存在，而由单位圆纵坐标定义。角在第一、第二象限时正弦为正，在第三、第四象限时为负。图像过原点，最大值为 $1$，最小值为 $-1$，常用来表示上下方向的周期变化。它和余弦配合，能把圆上点的坐标完整表示出来。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正弦",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E5%BC%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正弦",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E5%BC%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "sine",
+          "url": "https://en.wikipedia.org/w/index.php?search=sine"
+        }
       ]
     },
     {
@@ -125,6 +233,24 @@
         "[-1,1] 周期 y轴对称",
         "cos x",
         "cosine"
+      ],
+      "explanation_markdown": "余弦在直角三角形中表示锐角邻边与斜边的比：$\\cos\\theta=\\frac{\\text{邻边}}{\\text{斜边}}$。在单位圆中，$\\cos\\theta$ 是角 $\\theta$ 终边交点的横坐标。\n\n余弦值也在 $[-1,1]$ 之间，并满足 $\\cos(\\theta+2\\pi)=\\cos\\theta$。它的图像关于 $y$ 轴对称，因为 $\\cos(-\\theta)=\\cos\\theta$。余弦常用来计算水平投影、两向量夹角和三角形边长，余弦定理正是把角的余弦放进三边关系。对一般角，余弦由单位圆横坐标定义，所以它在第一、第四象限为正，在第二、第三象限为负。余弦图像从 $x=0$ 处的 $1$ 开始周期变化。它常表示水平方向投影，也和向量数量积中的夹角计算直接相连。在解三角形中，余弦还常用来判断角的大小和类型。它与正弦共同确定单位圆上点的位置。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "余弦",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%99%E5%BC%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "余弦",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%99%E5%BC%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cosine",
+          "url": "https://en.wikipedia.org/w/index.php?search=cosine"
+        }
       ]
     },
     {
@@ -143,6 +269,24 @@
         "cos x=0 无定义",
         "tan x",
         "tangent"
+      ],
+      "explanation_markdown": "正切在直角三角形中表示锐角对边与邻边的比，也可由正弦和余弦定义为 $\\tan\\theta=\\frac{\\sin\\theta}{\\cos\\theta}$，其中 $\\cos\\theta\\ne0$。\n\n在单位圆上，正切可以看作纵坐标与横坐标的比，所以当终边落在 $y$ 轴方向时没有定义。正切的周期为 $\\pi$，满足 $\\tan(\\theta+\\pi)=\\tan\\theta$。它常用于表示直线倾斜程度，解析几何中的斜率就满足 $k=\\tan\\alpha$。正切表示纵向变化与横向变化的比，因此在直线斜率和三角形坡度中很常见。它在第一、第三象限为正，在第二、第四象限为负。由于分母是余弦，$\\theta=\\frac\\pi2+k\\pi$ 时正切没有定义，图像会出现竖直渐近线。求正切前要先确认余弦不为零，否则这个比值没有意义。图像的重复长度比正弦余弦短一半。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正切",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E5%88%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正切",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E5%88%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tangent",
+          "url": "https://en.wikipedia.org/w/index.php?search=tangent"
+        }
       ]
     },
     {
@@ -161,6 +305,24 @@
         "周期 奇偶 最值 单调",
         "单位圆 符号 范围 诱导",
         "trigonometric functions"
+      ],
+      "explanation_markdown": "三角函数把角与边长比或单位圆坐标联系起来。高中主要研究 $\\sin x$、$\\cos x$、$\\tan x$，其中 $x$ 常用弧度表示，正弦和余弦来自单位圆交点坐标，正切是二者的比值。\n\n三角函数具有周期性和特定的奇偶性，例如 $\\sin(x+2\\pi)=\\sin x$，$\\cos(-x)=\\cos x$。它们适合描述旋转、振动、波动和三角形边角关系。学习时要同时关注定义域、值域、图像、符号和恒等变形，而不是只记特殊角数值。单位圆给出三角函数的统一定义，直角三角形只是锐角情形下的直观来源。正弦和余弦的值域有限，正切却可以取任意实数。三角函数题常把图像性质、恒等公式和边角关系放在一起，需要先判断角的范围和单位。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "三角函数",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "三角函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "trigonometric function",
+          "url": "https://en.wikipedia.org/w/index.php?search=trigonometric%20function"
+        }
       ]
     },
     {
@@ -179,6 +341,24 @@
         "奇变偶不变 符号看象限",
         "π±α 2π-α",
         "reduction formula"
+      ],
+      "explanation_markdown": "诱导公式把含有 $\\pi\\pm\\alpha$、$2\\pi\\pm\\alpha$、$\\frac\\pi2\\pm\\alpha$ 等角的三角函数化为基本角 $\\alpha$ 的函数值。例如 $\\sin(\\pi-\\alpha)=\\sin\\alpha$，$\\cos(\\pi-\\alpha)=-\\cos\\alpha$。\n\n这些公式来自单位圆上的对称和同终边关系。符号由变换后角的象限决定，函数名是否改变则看是否绕到与坐标轴互换有关的位置。常说的“奇变偶不变、符号看象限”是记忆方法，但理解时仍应回到单位圆坐标，避免在不同函数间机械套用。诱导公式的本质是把复杂角转到与 $\\alpha$ 对称或同终边的位置。比如关于 $x$ 轴对称会改变正弦符号，关于 $y$ 轴对称会改变余弦符号。理解坐标变化后，公式不必死记，也能避免把符号看错。化简后还要结合原角范围确定最终符号。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "诱导公式",
+          "url": "https://www.baidu.com/s?wd=%E8%AF%B1%E5%AF%BC%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "诱导公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%AF%B1%E5%AF%BC%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "reduction formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=reduction%20formula"
+        }
       ]
     },
     {
@@ -197,6 +377,24 @@
         "cos(α+β)=cosαcosβ-sinαsinβ",
         "tan(α+β)=(tanα+tanβ)/(1-tanαtanβ)",
         "sum formulas"
+      ],
+      "explanation_markdown": "两角和公式给出两个角相加后各三角函数的展开。核心公式是 $\\sin(\\alpha+\\beta)=\\sin\\alpha\\cos\\beta+\\cos\\alpha\\sin\\beta$，其中 $\\alpha,\\beta$ 是两个角。\n\n余弦也有对应关系：$\\cos(\\alpha+\\beta)=\\cos\\alpha\\cos\\beta-\\sin\\alpha\\sin\\beta$。当分母有意义时，$\\tan(\\alpha+\\beta)=\\frac{\\tan\\alpha+\\tan\\beta}{1-\\tan\\alpha\\tan\\beta}$。这些公式用于求特殊角、化简表达式和证明恒等式，关键是看清角是相加而不是倍角。两角和公式不能理解为函数值直接相加，例如 $\\sin(\\alpha+\\beta)$ 一般不等于 $\\sin\\alpha+\\sin\\beta$。它揭示的是旋转叠加后的坐标变化。求 $15^\\circ$、$75^\\circ$ 等角的函数值时，常把它们拆成特殊角之和。它也能反向使用，把两项乘积和重新合成为一个角的三角函数。遇到含有不同角的式子时，先观察能否配成和角形式。记忆时要特别留意余弦公式中间的减号。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "两角和公式",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%A4%E8%A7%92%E5%92%8C%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "两角和公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%A4%E8%A7%92%E5%92%8C%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "sum formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=sum%20formula"
+        }
       ]
     },
     {
@@ -215,6 +413,24 @@
         "cos(α-β)=cosαcosβ+sinαsinβ",
         "tan(α-β)=(tanα-tanβ)/(1+tanαtanβ)",
         "difference formulas"
+      ],
+      "explanation_markdown": "两角差公式把两个角相减后的三角函数写成两个角各自函数值的组合。正弦公式为 $\\sin(\\alpha-\\beta)=\\sin\\alpha\\cos\\beta-\\cos\\alpha\\sin\\beta$，其中 $\\alpha,\\beta$ 是两个角。\n\n余弦公式为 $\\cos(\\alpha-\\beta)=\\cos\\alpha\\cos\\beta+\\sin\\alpha\\sin\\beta$。正切公式为 $\\tan(\\alpha-\\beta)=\\frac{\\tan\\alpha-\\tan\\beta}{1+\\tan\\alpha\\tan\\beta}$，分母不能为零。它常用于把不熟悉的角拆成熟悉角的差，如 $75^\\circ=120^\\circ-45^\\circ$。两角差公式常由两角和公式把 $\\beta$ 换成 $-\\beta$ 得到，因此符号变化要特别注意。它可把一个角表示成熟悉角的差，也可用于证明余弦型距离关系。使用正切差公式时，还要检查两个角的正切和分母是否有意义。它也能反向把若干乘积项合成一个差角函数。处理夹角、距离和三角恒等变形时，差角形式经常比展开式更清楚。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "两角差公式",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%A4%E8%A7%92%E5%B7%AE%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "两角差公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%A4%E8%A7%92%E5%B7%AE%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "difference formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=difference%20formula"
+        }
       ]
     },
     {
@@ -233,6 +449,24 @@
         "cos2α=cos^2α-sin^2α",
         "降次 升角",
         "double-angle formulas"
+      ],
+      "explanation_markdown": "二倍角公式把 $2\\alpha$ 的三角函数转化为 $\\alpha$ 的函数值。常用公式有 $\\sin2\\alpha=2\\sin\\alpha\\cos\\alpha$，其中 $\\alpha$ 是原角，$2\\alpha$ 是它的两倍角。\n\n余弦二倍角有三种常见写法：$\\cos2\\alpha=\\cos^2\\alpha-\\sin^2\\alpha=1-2\\sin^2\\alpha=2\\cos^2\\alpha-1$。它们可根据条件中出现的是正弦还是余弦来选择。二倍角公式常用于降次、升角、化简三角式和求函数最值。二倍角公式是两角和公式在两个角相同情况下的结果。它不仅能把 $2\\alpha$ 化成 $\\alpha$，也能反过来把平方项改写成半角或倍角形式。三角函数求最值时，常通过二倍角公式把多个函数统一成同一种角度。它和半角公式相连，能在角度加倍与次数降低之间来回转换。选择哪种余弦形式要看题中保留正弦还是余弦。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "二倍角公式",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%8C%E5%80%8D%E8%A7%92%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "二倍角公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%8C%E5%80%8D%E8%A7%92%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "double angle formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=double%20angle%20formula"
+        }
       ]
     },
     {
@@ -251,6 +485,24 @@
         "外接圆直径",
         "a/sinA=b/sinB=c/sinC=2R",
         "sine rule"
+      ],
+      "explanation_markdown": "正弦定理适用于任意三角形，把边长和对角的正弦联系起来。若三角形边 $a,b,c$ 分别对角 $A,B,C$，则 $\\frac a{\\sin A}=\\frac b{\\sin B}=\\frac c{\\sin C}=2R$，其中 $R$ 是外接圆半径。\n\n这个定理说明同一个三角形中，边越长，对应角的正弦也越大。它常用于已知两角一边、两边和非夹角等情形。使用时要注意“边对角”的对应关系；在两边一对角问题中，可能出现两个不同三角形，需要结合角度范围判断。正弦定理适合处理已知角较多的三角形，因为角的正弦直接和对边成比例。若已知两边和其中一边的对角，可能出现一解、两解或无解，需要结合三角形内角和与边长大小判断。外接圆半径也能由同一比例求出。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正弦定理",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E5%BC%A6%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正弦定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E5%BC%A6%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "law of sines",
+          "url": "https://en.wikipedia.org/w/index.php?search=law%20of%20sines"
+        }
       ]
     },
     {
@@ -269,6 +521,24 @@
         "勾股定理 推广",
         "c^2=a^2+b^2-2abcosC",
         "cosine rule"
+      ],
+      "explanation_markdown": "余弦定理适用于任意三角形，把三边和一个夹角联系起来。若边 $c$ 对角 $C$，则 $c^2=a^2+b^2-2ab\\cos C$，其中 $a,b$ 是夹角 $C$ 的两边，$c$ 是对边。\n\n当 $C=90^\\circ$ 时，$\\cos C=0$，公式就变成勾股定理 $c^2=a^2+b^2$。余弦定理常用于已知两边及夹角求第三边，或已知三边求角。它比正弦定理更适合处理夹角信息，也能判断三角形是锐角、直角还是钝角。当已知三边时，也可由它反求某个角的余弦，再确定角的大小。余弦定理适合处理夹角或三边信息，因为它把夹角余弦直接放进边长平方关系。若已知三边，可变形为 $\\cos C=\\frac{a^2+b^2-c^2}{2ab}$。算出余弦后，还要根据三角形角的范围确定角的大小。边角对应关系写错会直接导致公式套反。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "余弦定理",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%99%E5%BC%A6%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "余弦定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%99%E5%BC%A6%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "law of cosines",
+          "url": "https://en.wikipedia.org/w/index.php?search=law%20of%20cosines"
+        }
       ]
     },
     {
@@ -287,6 +557,24 @@
         "正弦定理 余弦定理 面积",
         "两种可能形状",
         "solving triangles"
+      ],
+      "explanation_markdown": "解三角形是根据已知的边角信息，求出三角形其余边和角。常用关系包括 $A+B+C=\\pi$，以及正弦定理 $\\frac a{\\sin A}=\\frac b{\\sin B}=\\frac c{\\sin C}$，其中 $A,B,C$ 是角，$a,b,c$ 是对边。\n\n已知两角一边通常先求第三角，再用正弦定理；已知两边夹角或三边时，常用余弦定理。解三角形要注意是否存在、是否唯一，特别是已知两边和其中一边对角时，可能有两个形状。最后答案应同时给出边长和角度的合理范围。解三角形时，已知条件必须足够确定形状。三角形内角和提供一个角度关系，正弦定理和余弦定理提供边角关系，面积公式有时也能补充信息。若出现两解，要把两种可能的边角都写出，不能只保留图上看起来的一种。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "解三角形",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%A3%E4%B8%89%E8%A7%92%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "解三角形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%A3%E4%B8%89%E8%A7%92%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "solving triangle",
+          "url": "https://en.wikipedia.org/w/index.php?search=solving%20triangle"
+        }
       ]
     },
     {
@@ -305,6 +593,24 @@
         "加法 减法 数乘 数量积",
         "共线 垂直 坐标倍数 点积",
         "vector"
+      ],
+      "explanation_markdown": "向量是同时具有大小和方向的量，几何上常用有向线段表示。若向量 $\\mathbf a=(x,y)$，它的长度为 $|\\mathbf a|=\\sqrt{x^2+y^2}$，其中 $x,y$ 是向量在两个坐标方向上的分量。\n\n向量的起点可以平移，大小和方向不变就表示同一个自由向量。高中常研究向量加法、减法、数乘和数量积，用它们处理平行、垂直、夹角和投影。向量不同于普通线段，线段只强调两个端点和长度，而向量还强调从哪里指向哪里。向量可以表示位移、速度、力，也可以表示几何中的有向线段。相同向量允许平移到不同位置，因此它关注方向和长度，而不固定起点。用坐标表示后，向量运算就能逐分量进行，把几何问题转成代数问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "向量",
+          "url": "https://www.baidu.com/s?wd=%E5%90%91%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "向量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%91%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vector",
+          "url": "https://en.wikipedia.org/w/index.php?search=vector"
+        }
       ]
     },
     {
@@ -323,6 +629,24 @@
         "几何关系 坐标运算",
         "不共线基底 任意表示",
         "plane vector"
+      ],
+      "explanation_markdown": "平面向量是在二维平面中研究的向量，既可以画成有向线段，也可以用坐标表示。若 $\\mathbf a=(x,y)$，则 $x,y$ 分别表示它在两个坐标轴方向上的分量。\n\n平面向量可用基底分解：$\\mathbf a=x\\mathbf i+y\\mathbf j$，其中 $\\mathbf i,\\mathbf j$ 是沿 $x$ 轴、$y$ 轴正方向的单位向量。它把几何关系转化为代数运算，例如共线看坐标是否成比例，垂直看数量积是否为零。很多平面几何证明可因此变得更直接。平面向量只有两个独立方向，因此两个不共线基底就足以表示所有平面向量。点的坐标差可以形成向量，例如 $\\overrightarrow{AB}$ 由 $B$ 的坐标减去 $A$ 的坐标得到。它常用于证明平行、求中点和表示线段比例。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平面向量",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E9%9D%A2%E5%90%91%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平面向量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E9%9D%A2%E5%90%91%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "plane vector",
+          "url": "https://en.wikipedia.org/w/index.php?search=plane%20vector"
+        }
       ]
     },
     {
@@ -341,6 +665,24 @@
         "(0,0)",
         "相加 原对象",
         "zero vector"
+      ],
+      "explanation_markdown": "零向量是长度为 $0$ 的向量，通常记作 $\\mathbf0$，坐标形式为 $(0,0)$。它满足 $|\\mathbf0|=0$，其中 $|\\cdot|$ 表示向量长度。\n\n零向量在加法中不改变其他向量，$\\mathbf a+\\mathbf0=\\mathbf a$。它的方向不作规定，因此讨论“与零向量同向”或“夹角”时要格外小心。零向量可以与任何向量相加，也可由 $\\mathbf a-\\mathbf a$ 得到，是向量运算中的特殊但重要对象。零向量可以看作起点和终点重合的有向线段。它在数乘中也很特殊，任何实数乘零向量仍是零向量，而零乘任何向量也得到零向量。判断共线或垂直时若涉及零向量，要先看条件是否排除了非零条件。因此许多定理会特别声明所讨论向量必须非零。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "零向量",
+          "url": "https://www.baidu.com/s?wd=%E9%9B%B6%E5%90%91%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "零向量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9B%B6%E5%90%91%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "zero vector",
+          "url": "https://en.wikipedia.org/w/index.php?search=zero%20vector"
+        }
       ]
     },
     {
@@ -359,6 +701,24 @@
         "非零对象/模长",
         "i j 坐标轴正方向",
         "unit vector"
+      ],
+      "explanation_markdown": "单位向量是长度等于 $1$ 的向量，常用来表示方向而不改变尺度。若 $\\mathbf a$ 是非零向量，则同向单位向量为 $\\frac{\\mathbf a}{|\\mathbf a|}$，其中 $|\\mathbf a|$ 是 $\\mathbf a$ 的长度。\n\n单位向量保留方向，长度被标准化为 $1$。坐标轴正方向上的标准单位向量常记为 $\\mathbf i=(1,0)$、$\\mathbf j=(0,1)$。把一个向量写成长度乘单位向量，可以分清“走多远”和“朝哪里走”，在投影、分解和方向表示中很有用。单位向量把方向单独提取出来，常用于表示某个方向上的标准步长。一个非零向量除以自身长度后，方向不变但长度变为一。若要表示相反方向的单位向量，只需取负号。坐标轴单位向量还能作为平面向量的基底。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单位向量",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E4%BD%8D%E5%90%91%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单位向量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E4%BD%8D%E5%90%91%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "unit vector",
+          "url": "https://en.wikipedia.org/w/index.php?search=unit%20vector"
+        }
       ]
     },
     {
@@ -377,6 +737,24 @@
         "坐标分别相等",
         "平移不变",
         "equal vectors"
+      ],
+      "explanation_markdown": "相等向量是大小相等且方向相同的向量，与它们画在平面中的起点位置无关。若 $\\mathbf a=(x_1,y_1)$，$\\mathbf b=(x_2,y_2)$，则 $\\mathbf a=\\mathbf b$ 等价于 $x_1=x_2$ 且 $y_1=y_2$。\n\n相等向量可以通过平移重合，但不能旋转或改变长度。几何图中两条有向线段即使位置不同，只要方向和长度一致，就表示同一向量。这个概念使向量能脱离固定起点参与运算，也让平行四边形法则和坐标加法保持一致。相等向量不要求起点相同，这一点和有向线段的位置不同。若把一个向量平移到另一个位置，只要箭头方向和长度保持不变，它仍表示原向量。坐标相等是最直接的判定方法，也常用于由向量等式推出点坐标关系。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相等向量",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E7%AD%89%E5%90%91%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相等向量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E7%AD%89%E5%90%91%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "equal vectors",
+          "url": "https://en.wikipedia.org/w/index.php?search=equal%20vectors"
+        }
       ]
     },
     {
@@ -395,6 +773,24 @@
         "坐标 相反数",
         "a -a",
         "opposite vectors"
+      ],
+      "explanation_markdown": "相反向量是长度相等、方向相反的两个向量。若一个向量为 $\\mathbf a=(x,y)$，它的相反向量为 $-\\mathbf a=(-x,-y)$，其中两个分量都变为相反数。\n\n相反向量相加得到零向量，即 $\\mathbf a+(-\\mathbf a)=\\mathbf0$。在几何上，它们可以看成同一条方向线上的反向箭头。向量减法 $\\mathbf a-\\mathbf b$ 本质上就是加上 $\\mathbf b$ 的相反向量，因此理解相反向量有助于看懂位移差和终点指向关系。相反向量和原向量在同一直线方向上，但箭头完全反向。几何中，$\\overrightarrow{AB}$ 与 $\\overrightarrow{BA}$ 就是一对相反向量。它们长度相等、和为零，这使减法、位移反向和中点对称等问题都能用同一规则处理。它们的坐标互为相反数，模长却完全相同。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相反向量",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E5%8F%8D%E5%90%91%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相反向量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E5%8F%8D%E5%90%91%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "opposite vectors",
+          "url": "https://en.wikipedia.org/w/index.php?search=opposite%20vectors"
+        }
       ]
     },
     {
@@ -413,6 +809,24 @@
         "三点同线",
         "x1y2-x2y1=0",
         "collinear vectors"
+      ],
+      "explanation_markdown": "共线向量是方向相同或相反的向量，也叫平行向量。若存在实数 $\\lambda$ 使 $\\mathbf a=\\lambda\\mathbf b$，则 $\\mathbf a$ 与 $\\mathbf b$ 共线，其中 $\\lambda$ 表示长度倍数和方向是否相反。\n\n在二维坐标中，若 $\\mathbf a=(x_1,y_1)$，$\\mathbf b=(x_2,y_2)$，可用 $x_1y_2-x_2y_1=0$ 判断共线。零向量与任意向量通常也视为共线，但它没有确定方向。几何题中，证明 $\\overrightarrow{AB}$ 与 $\\overrightarrow{AC}$ 共线，常可推出三点 $A,B,C$ 在同一直线上。共线向量只要求方向在同一条直线上，可以同向也可以反向，长度不必相等。若比例系数 $\\lambda>0$，方向相同；若 $\\lambda<0$，方向相反。证明三点共线时，常把两条以同一点为起点的向量写成倍数关系。若两个向量都非零，共线时它们的夹角只能是零或平角。坐标为零的特殊情况也要单独检查。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "共线向量",
+          "url": "https://www.baidu.com/s?wd=%E5%85%B1%E7%BA%BF%E5%90%91%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "共线向量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%B1%E7%BA%BF%E5%90%91%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "collinear vectors",
+          "url": "https://en.wikipedia.org/w/index.php?search=collinear%20vectors"
+        }
       ]
     },
     {
@@ -431,6 +845,24 @@
         "分量分别相加",
         "交换律 结合律",
         "vector addition"
+      ],
+      "explanation_markdown": "向量加法把两个向量首尾相接，得到从第一个起点指向第二个终点的合向量。若 $\\mathbf a=(x_1,y_1)$，$\\mathbf b=(x_2,y_2)$，则 $\\mathbf a+\\mathbf b=(x_1+x_2,y_1+y_2)$。\n\n几何上可用三角形法则或平行四边形法则理解：先走 $\\mathbf a$，再走 $\\mathbf b$，合起来等于一次走到终点。向量加法满足交换律和结合律，即 $\\mathbf a+\\mathbf b=\\mathbf b+\\mathbf a$。它常用于合位移、合力和把几何路径拆成几段。向量加法的结果表示连续两次位移的总效果，与先画成三角形还是平行四边形无关。坐标加法说明每个方向上的位移可以分别相加。多个向量相加时，可以调整顺序和括号，这让几何路径的合并更灵活。在多边形路径中，首尾相接的向量和等于起点到终点的向量。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "向量加法",
+          "url": "https://www.baidu.com/s?wd=%E5%90%91%E9%87%8F%E5%8A%A0%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "向量加法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%91%E9%87%8F%E5%8A%A0%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vector addition",
+          "url": "https://en.wikipedia.org/w/index.php?search=vector%20addition"
+        }
       ]
     },
     {
@@ -449,6 +881,24 @@
         "分量分别相减",
         "a-b=a+(-b)",
         "vector subtraction"
+      ],
+      "explanation_markdown": "向量减法可以看成加上另一个向量的相反向量。若 $\\mathbf a=(x_1,y_1)$，$\\mathbf b=(x_2,y_2)$，则 $\\mathbf a-\\mathbf b=(x_1-x_2,y_1-y_2)$，也就是 $\\mathbf a+(-\\mathbf b)$。\n\n几何上，当两个向量有相同起点时，$\\mathbf a-\\mathbf b$ 指向从 $\\mathbf b$ 的终点到 $\\mathbf a$ 的终点。这个方向常用于表示两点之间的位移，例如 $\\overrightarrow{AB}=\\mathbf b-\\mathbf a$，其中 $\\mathbf a,\\mathbf b$ 分别是点 $A,B$ 的位置向量。向量减法常用来表示从一个点指向另一个点的位移差。若两个位置向量分别为 $\\mathbf a$ 和 $\\mathbf b$，从 $A$ 到 $B$ 的向量是 $\\mathbf b-\\mathbf a$，方向由被减点指向结果点。画图时先统一起点会更容易看清方向。减法的方向最容易弄反，最好用坐标差或同起点图形确认。它在证明线段平行、求中点坐标和表示相对位置时很常用。写成终点减起点最稳妥。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "向量减法",
+          "url": "https://www.baidu.com/s?wd=%E5%90%91%E9%87%8F%E5%87%8F%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "向量减法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%91%E9%87%8F%E5%87%8F%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vector subtraction",
+          "url": "https://en.wikipedia.org/w/index.php?search=vector%20subtraction"
+        }
       ]
     },
     {
@@ -467,6 +917,24 @@
         "a=λe1+μe2",
         "唯一性 参数 共线",
         "fundamental theorem of plane vectors"
+      ],
+      "explanation_markdown": "平面向量基本定理说明，平面内两个不共线向量可以作为基底，唯一表示任意平面向量。若 $\\mathbf e_1,\\mathbf e_2$ 不共线，则任意 $\\mathbf a$ 都可写成 $\\mathbf a=\\lambda\\mathbf e_1+\\mu\\mathbf e_2$，其中 $\\lambda,\\mu$ 是实数。\n\n“不共线”保证两个基底给出两个独立方向，“唯一”保证同一个向量不会有两套不同坐标。这个定理是平面向量坐标化的基础。解题中常通过比较 $\\lambda,\\mu$ 来求参数，也可用它证明共线、平行或把复杂几何关系拆成两个方向上的等式。基底一旦选定，系数 $\\lambda,\\mu$ 就像这个向量在新坐标系下的坐标。若表示不唯一，就会说明两个基底方向其实有重合，不能撑开整个平面。这个定理也是用向量方法处理平面几何的根基。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平面向量基本定理",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E9%9D%A2%E5%90%91%E9%87%8F%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平面向量基本定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E9%9D%A2%E5%90%91%E9%87%8F%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fundamental theorem of plane vectors",
+          "url": "https://en.wikipedia.org/w/index.php?search=fundamental%20theorem%20of%20plane%20vectors"
+        }
       ]
     },
     {
@@ -485,6 +953,24 @@
         "结果0 非零垂直",
         "x1x2+y1y2",
         "dot product"
+      ],
+      "explanation_markdown": "数量积把两个向量转化为一个数，反映它们长度和夹角的关系。定义为 $\\mathbf a\\cdot\\mathbf b=|\\mathbf a||\\mathbf b|\\cos\\theta$，其中 $\\theta$ 是两个非零向量的夹角。\n\n在坐标中，若 $\\mathbf a=(x_1,y_1)$，$\\mathbf b=(x_2,y_2)$，则 $\\mathbf a\\cdot\\mathbf b=x_1x_2+y_1y_2$。数量积为 $0$ 时，两个非零向量垂直；为正说明夹角小于 $90^\\circ$，为负说明夹角大于 $90^\\circ$。它常用于求夹角、投影和判断垂直。数量积不仅能判断垂直，还能计算一个向量在另一个方向上的投影长度。若夹角为锐角，数量积为正；若为钝角，数量积为负。坐标公式和几何公式相等，正好把代数计算与长度、夹角联系起来。它的结果是数量而不是向量，所以没有方向。利用它还可以把几何中的角度条件转化为代数等式。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "数量积",
+          "url": "https://www.baidu.com/s?wd=%E6%95%B0%E9%87%8F%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "数量积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%95%B0%E9%87%8F%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dot product",
+          "url": "https://en.wikipedia.org/w/index.php?search=dot%20product"
+        }
       ]
     },
     {
@@ -503,6 +989,24 @@
         "cosθ=(a·b)/(|a||b|)",
         "垂直 π/2",
         "included angle"
+      ],
+      "explanation_markdown": "夹角表示两个方向之间较小的转动量。对两个非零向量 $\\mathbf a,\\mathbf b$，夹角 $\\theta$ 通常取 $0\\le\\theta\\le\\pi$，并满足 $\\cos\\theta=\\frac{\\mathbf a\\cdot\\mathbf b}{|\\mathbf a||\\mathbf b|}$。\n\n公式中 $\\mathbf a\\cdot\\mathbf b$ 是数量积，$|\\mathbf a|,|\\mathbf b|$ 是两个向量的长度。若 $\\theta=0$，方向相同；若 $\\theta=\\pi$，方向相反；若 $\\theta=\\frac\\pi2$，两个向量垂直。夹角只对非零向量定义，因为零向量没有确定方向。向量夹角取较小的那个角，所以不会超过 $\\pi$。计算时若得到余弦值，要结合反余弦或特殊角确定 $\\theta$。当一个向量为零向量时，方向不存在，夹角也不定义；条件使用夹角公式前通常默认两个向量非零。若只关心两条直线的夹角，还要把方向相反的向量视为同一条直线方向来处理。公式中的分母不能为零。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "夹角",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%B9%E8%A7%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "夹角",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%B9%E8%A7%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "included angle",
+          "url": "https://en.wikipedia.org/w/index.php?search=included%20angle"
+        }
       ]
     }
   ]

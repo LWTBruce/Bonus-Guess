@@ -1,0 +1,2405 @@
+{
+  "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+  "entries": [
+    {
+      "chinese_name": "李群",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "李群是同时具有群结构和光滑流形结构的对象，乘法与取逆都要求光滑。若单位元为 $e$，其李代数为 $\\mathfrak g=T_eG$；指数映射 $\\exp:\\mathfrak g\\to G$ 把无穷小方向送到一参数子群。\n\n它不同于一般群，元素可以连续变化；也不同于单纯流形，带有全局乘法。李代数只记录单位元附近的一阶结构，不能完全替代李群的拓扑信息。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。 局部括号可以解释无穷小对称，群的中心、覆盖和离散商则控制全局差别；两层信息合在一起才形成完整的李理论图像。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "李群",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%8E%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "李群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%8E%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lie group",
+          "url": "https://en.wikipedia.org/w/index.php?search=lie%20group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "李代数",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "李代数是带有反对称括号的向量空间，用来描述李群的无穷小结构。括号满足 $[X,Y]=-[Y,X]$ 和雅可比恒等式 $[X,[Y,Z]]+[Y,[Z,X]]+[Z,[X,Y]]=0$。\n\n矩阵李代数中括号为 $[X,Y]=XY-YX$。它与李群不同，李代数是线性对象；指数映射把它局部连到李群，但全局覆盖、中心和离散子群仍属于李群层面。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。 局部括号可以解释无穷小对称，群的中心、覆盖和离散商则控制全局差别；两层信息合在一起才形成完整的李理论图像。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "李代数",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%8E%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "李代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%8E%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lie algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=lie%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "矩阵李群",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "矩阵李群是一般线性群中的闭子群，因而天然带有李群结构。典型形式为 $G\\subset GL(n,\\mathbb F)$，其李代数常由满足约束的一阶矩阵组成，如 $\\mathfrak g=T_IG$。\n\n它把抽象李群表示为可计算矩阵变换，但不是所有讨论都只靠矩阵乘法。闭子群定理保证闭矩阵子群是嵌入李群；指数映射在这里就是矩阵指数 $e^X$。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。 局部括号可以解释无穷小对称，群的中心、覆盖和离散商则控制全局差别；两层信息合在一起才形成完整的李理论图像。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "矩阵李群",
+          "url": "https://www.baidu.com/s?wd=%E7%9F%A9%E9%98%B5%E6%9D%8E%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "矩阵李群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9F%A9%E9%98%B5%E6%9D%8E%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "matrix lie group",
+          "url": "https://en.wikipedia.org/w/index.php?search=matrix%20lie%20group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "单参数子群",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "单参数子群是从加法群 $\\mathbb R$ 到李群的光滑同态。它写作 $\\gamma(t)$，满足 $\\gamma(s+t)=\\gamma(s)\\gamma(t)$；每个 $X\\in\\mathfrak g$ 给出 $\\gamma_X(t)=\\exp(tX)$。\n\n它把李代数元素解释为通过单位元的速度。单参数子群不同于任意曲线，因为必须尊重群乘法；在矩阵群中，解为 $e^{tX}$，用于连接流、指数映射和连续对称性。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。 局部括号可以解释无穷小对称，群的中心、覆盖和离散商则控制全局差别；两层信息合在一起才形成完整的李理论图像。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单参数子群",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E5%8F%82%E6%95%B0%E5%AD%90%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单参数子群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E5%8F%82%E6%95%B0%E5%AD%90%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "single parameter subgroup",
+          "url": "https://en.wikipedia.org/w/index.php?search=single%20parameter%20subgroup"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "伴随表示",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "伴随表示描述李群通过共轭作用在自身李代数上。对 $g\\in G$，共轭 $C_g(h)=ghg^{-1}$ 在单位元处微分给出 $\\operatorname{Ad}_g=d(C_g)_e:\\mathfrak g\\to\\mathfrak g$。\n\n其无穷小版本为 $\\operatorname{ad}_X(Y)=[X,Y]$。伴随表示作用在 $\\mathfrak g$ 上，余伴随表示作用在 $\\mathfrak g^*$ 上；根分解、轨道方法和半单结构都使用这一区分。 表示论把抽象对称性变成向量空间上的算子，同时保留括号或群乘法。$U(\\mathfrak g)$、中心、矩阵系数和轨道分别记录代数、标量作用、函数模型和几何模型；伴随与余伴随、原表示与对偶表示作用空间不同，不能互换。 表示把李群或李代数作用到向量空间上，局部微分和全局拓扑都可能影响结果。最高权、无穷小特征、矩阵系数和 $K$ 型分别记录代数、分析与紧子群方向的信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "伴随表示",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%B4%E9%9A%8F%E8%A1%A8%E7%A4%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "伴随表示",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%B4%E9%9A%8F%E8%A1%A8%E7%A4%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "accompanying expression",
+          "url": "https://en.wikipedia.org/w/index.php?search=accompanying%20expression"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "余伴随表示",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "余伴随表示是伴随表示在对偶空间上的反向作用。若 $\\ell\\in\\mathfrak g^*$，定义 $(\\operatorname{Ad}^*_g\\ell)(X)=\\ell(\\operatorname{Ad}_{g^{-1}}X)$；这里 $X\\in\\mathfrak g$。\n\n它不同于伴随表示的作用空间，余伴随轨道位于 $\\mathfrak g^*$。Kirillov 轨道方法把这些轨道与表示联系起来；动量映射也自然取值于李代数对偶。 表示论把抽象对称性变成向量空间上的算子，同时保留括号或群乘法。$U(\\mathfrak g)$、中心、矩阵系数和轨道分别记录代数、标量作用、函数模型和几何模型；伴随与余伴随、原表示与对偶表示作用空间不同，不能互换。 表示把李群或李代数作用到向量空间上，局部微分和全局拓扑都可能影响结果。最高权、无穷小特征、矩阵系数和 $K$ 型分别记录代数、分析与紧子群方向的信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "余伴随表示",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%99%E4%BC%B4%E9%9A%8F%E8%A1%A8%E7%A4%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "余伴随表示",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%99%E4%BC%B4%E9%9A%8F%E8%A1%A8%E7%A4%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "i said",
+          "url": "https://en.wikipedia.org/w/index.php?search=i%20said"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "结构常数",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "结构常数是在给定基下记录李括号的系数。若 $\\{e_i\\}$ 是李代数基，写 $[e_i,e_j]=\\sum_k c_{ij}^k e_k$；数 $c_{ij}^k$ 需满足反对称性和雅可比恒等式。\n\n它们依赖基选择，不是坐标无关不变量本身。结构常数把李代数运算转化为有限数组，适合计算表示、Killing 型和分类，但换基会按张量规则改变这些系数。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。 局部括号可以解释无穷小对称，群的中心、覆盖和离散商则控制全局差别；两层信息合在一起才形成完整的李理论图像。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "结构常数",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%93%E6%9E%84%E5%B8%B8%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "结构常数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%93%E6%9E%84%E5%B8%B8%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "structure constant",
+          "url": "https://en.wikipedia.org/w/index.php?search=structure%20constant"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "可解李代数",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "可解李代数由导出列最终为零定义。令 $\\mathfrak g^{(0)}=\\mathfrak g$，$\\mathfrak g^{(i+1)}=[\\mathfrak g^{(i)},\\mathfrak g^{(i)}]$；若某个 $r$ 使 $\\mathfrak g^{(r)}=0$，则 $\\mathfrak g$ 可解。\n\n它比幂零李代数弱，幂零要求下中心列终止。可解李代数在线性表示中常可三角化，李定理正描述复可解李代数在有限维表示中的上三角行为。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。 局部括号可以解释无穷小对称，群的中心、覆盖和离散商则控制全局差别；两层信息合在一起才形成完整的李理论图像。 指数映射只给局部联系，中心、覆盖和离散商仍会改变李群的全局结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "可解李代数",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%AF%E8%A7%A3%E6%9D%8E%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "可解李代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%AF%E8%A7%A3%E6%9D%8E%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "solvable lie algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=solvable%20lie%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "幂零李代数",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "幂零李代数由下中心列最终为零定义。令 $\\mathfrak g_1=\\mathfrak g$，$\\mathfrak g_{i+1}=[\\mathfrak g,\\mathfrak g_i]$；若某个 $r$ 有 $\\mathfrak g_r=0$，则称幂零。\n\n幂零李代数一定可解，但可解未必幂零。Engel 定理用所有 $\\operatorname{ad}_X$ 幂零来刻画有限维幂零李代数；海森堡李代数是中心非零的典型例子。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。 局部括号可以解释无穷小对称，群的中心、覆盖和离散商则控制全局差别；两层信息合在一起才形成完整的李理论图像。 指数映射只给局部联系，中心、覆盖和离散商仍会改变李群的全局结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "幂零李代数",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%82%E9%9B%B6%E6%9D%8E%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "幂零李代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%82%E9%9B%B6%E6%9D%8E%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "nilpotent lie algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=nilpotent%20lie%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "半单李代数",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "半单李代数是没有非零可解理想的李代数。特征零代数闭域上，半单性等价于 Killing 型 $B(X,Y)=\\operatorname{tr}(\\operatorname{ad}_X\\operatorname{ad}_Y)$ 非退化。\n\n它不同于单李代数，半单李代数可分解为若干单理想直和。根系、嘉当子代数和表示完全可约性是半单理论的核心；可解根基为零是另一种表述。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。 局部括号可以解释无穷小对称，群的中心、覆盖和离散商则控制全局差别；两层信息合在一起才形成完整的李理论图像。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "半单李代数",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8A%E5%8D%95%E6%9D%8E%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "半单李代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8A%E5%8D%95%E6%9D%8E%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "semisimple lie algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=semisimple%20lie%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "单李代数",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "单李代数是非阿贝尔且没有非零真理想的李代数。若 $\\mathfrak g$ 单，则任何理想 $\\mathfrak a\\subset\\mathfrak g$ 只能为 $0$ 或 $\\mathfrak g$；这比半单性更强。\n\n半单李代数可由单李代数直和组成。复有限维单李代数由戴金图分类，类型包括 $A_n,B_n,C_n,D_n$ 和例外型；单性关注理想结构，不等于表示不可约。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。 局部括号可以解释无穷小对称，群的中心、覆盖和离散商则控制全局差别；两层信息合在一起才形成完整的李理论图像。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单李代数",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E6%9D%8E%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单李代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E6%9D%8E%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "simple lie algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=simple%20lie%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "嘉当子代数",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "嘉当子代数在复半单李代数中通常是极大交换且由半单元组成的子代数。记为 $\\mathfrak h$，根分解写作 $\\mathfrak g=\\mathfrak h\\oplus\\bigoplus_{\\alpha\\in\\Phi}\\mathfrak g_\\alpha$。\n\n它为根和权提供坐标。一般李代数中嘉当子代数定义为幂零且等于自身正规化的子代数；在半单复情形，它与极大环面和同时对角化紧密相关。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。 局部括号可以解释无穷小对称，群的中心、覆盖和离散商则控制全局差别；两层信息合在一起才形成完整的李理论图像。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "嘉当子代数",
+          "url": "https://www.baidu.com/s?wd=%E5%98%89%E5%BD%93%E5%AD%90%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "嘉当子代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%98%89%E5%BD%93%E5%AD%90%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cartanzi algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=cartanzi%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "根系",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "根系是半单李代数相对于嘉当子代数的非零权集合。根空间定义为 $\\mathfrak g_\\alpha=\\{X\\mid [H,X]=\\alpha(H)X,\\ H\\in\\mathfrak h\\}$，非零的 $\\alpha$ 组成 $\\Phi$。\n\n根系把李代数结构压缩成有限反射几何。它不同于表示的权系，根来自伴随表示；正根、单根和外尔群进一步决定戴金图和分类。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。 根系决定反射和括号结构，权系决定给定表示中的特征空间；二者都在 $\\mathfrak h^*$ 中，但服务于不同的分类问题。 根反映伴随作用的方向，权反映给定表示的特征空间；二者共享坐标，却服务于不同分类。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "根系",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%B9%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "根系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%B9%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "root system",
+          "url": "https://en.wikipedia.org/w/index.php?search=root%20system"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "根空间",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "根空间是伴随作用下具有同一根的特征子空间。对 $\\alpha\\in\\mathfrak h^*$，$\\mathfrak g_\\alpha=\\{X\\in\\mathfrak g\\mid [H,X]=\\alpha(H)X\\ \\forall H\\in\\mathfrak h\\}$。\n\n它不是根本身，而是根对应的向量空间。复半单李代数中，非零根空间通常一维；括号满足 $[\\mathfrak g_\\alpha,\\mathfrak g_\\beta]\\subset\\mathfrak g_{\\alpha+\\beta}$，这控制根之间的加法结构。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。 根系决定反射和括号结构，权系决定给定表示中的特征空间；二者都在 $\\mathfrak h^*$ 中，但服务于不同的分类问题。 根反映伴随作用的方向，权反映给定表示的特征空间；二者共享坐标，却服务于不同分类。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "根空间",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%B9%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "根空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%B9%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "root space",
+          "url": "https://en.wikipedia.org/w/index.php?search=root%20space"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "正根",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "正根是在根系中选定一个超平面分割后位于正侧的根。选择线性泛函后，可把根系写成 $\\Phi=\\Phi^+\\sqcup(-\\Phi^+)$；正根集合包含所有单根的非负整数线性组合。\n\n正根不是根系固有的绝对概念，而依赖一个正系选择。它决定 Borel 子代数、最高权理论和三角分解；换 Weyl chamber 会改变正根集合但不改变根系本身。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。 根系决定反射和括号结构，权系决定给定表示中的特征空间；二者都在 $\\mathfrak h^*$ 中，但服务于不同的分类问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正根",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E6%A0%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正根",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E6%A0%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "true root",
+          "url": "https://en.wikipedia.org/w/index.php?search=true%20root"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "负根",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "负根是相对于所选正根系的相反根集合，写作 $\\Phi^-=-\\Phi^+$。若 $\\alpha\\in\\Phi^+$，则 $-\\alpha\\in\\Phi^-$；对应根空间常组成负幂零部分 $\\mathfrak n^-=\\bigoplus_{\\alphai\\Phi^+}\\mathfrak g_{-\\alpha}$。\n\n它依赖正根选择，不是根的绝对属性。负根与正根一起给出三角分解 $\\mathfrak g=\\mathfrak n^-\\oplus\\mathfrak h\\oplus\\mathfrak n^+$，用于构造 Verma 模和最高权表示。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。 根系决定反射和括号结构，权系决定给定表示中的特征空间；二者都在 $\\mathfrak h^*$ 中，但服务于不同的分类问题。 根反映伴随作用的方向，权反映给定表示的特征空间；二者共享坐标，却服务于不同分类。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "负根",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%9F%E6%A0%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "负根",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%9F%E6%A0%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "negative root",
+          "url": "https://en.wikipedia.org/w/index.php?search=negative%20root"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "单根",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "单根是正根中不能写成两个正根之和的根。给定正根系 $\\Phi^+$，单根集合 $\\Delta$ 满足每个正根都可唯一写成 $\\sum_{\\alpha\\in\\Delta}n_\\alpha\\alpha$，其中 $n_\\alpha\\ge0$。\n\n它们构成根系的基，但不是向量空间意义的任意基。单根决定嘉当矩阵和戴金图；最高权、基本权和 Weyl chamber 都以单根为参照定义。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。 根系决定反射和括号结构，权系决定给定表示中的特征空间；二者都在 $\\mathfrak h^*$ 中，但服务于不同的分类问题。 根反映伴随作用的方向，权反映给定表示的特征空间；二者共享坐标，却服务于不同分类。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单根",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E6%A0%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单根",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E6%A0%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "single root",
+          "url": "https://en.wikipedia.org/w/index.php?search=single%20root"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "最高根",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "最高根是在不可约根系中相对于正根偏序最大的根。若单根为 $\\alpha_i$，最高根可写 $\\theta=\\sum_i m_i\\alpha_i$，其中 $m_i$ 为非负整数且在正根中最大。\n\n它不同于最高权，最高权属于表示理论，最高根属于伴随表示的根系。最高根参与仿射戴金图、Coxeter 数和表示维数估计，也决定某些极端根空间。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。 根系决定反射和括号结构，权系决定给定表示中的特征空间；二者都在 $\\mathfrak h^*$ 中，但服务于不同的分类问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最高根",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E9%AB%98%E6%A0%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最高根",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E9%AB%98%E6%A0%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "highest root",
+          "url": "https://en.wikipedia.org/w/index.php?search=highest%20root"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "权",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "权是表示中嘉当子代数的同时特征值。若表示为 $V$，向量 $v\\ne0$ 满足 $H v=\\lambda(H)v$ 对所有 $H\\in\\mathfrak h$，则 $\\lambda\\in\\mathfrak h^*$ 是权。\n\n它不同于根，根是伴随表示的权；一般表示有自己的权集合。权描述可交换生成元的量子数，最高权理论用偏序从所有权中选出主导最高权。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。 根系决定反射和括号结构，权系决定给定表示中的特征空间；二者都在 $\\mathfrak h^*$ 中，但服务于不同的分类问题。 根反映伴随作用的方向，权反映给定表示的特征空间；二者共享坐标，却服务于不同分类。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "权",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "权",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weight",
+          "url": "https://en.wikipedia.org/w/index.php?search=weight"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "权空间",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "权空间收集表示中具有同一权的向量。对表示 $V$ 和权 $\\lambda$，$V_\\lambda=\\{v\\in V\\mid H v=\\lambda(H)v\\ \\forall H\\in\\mathfrak h\\}$；表示常分解为 $V=\\bigoplus_\\lambda V_\\lambda$。\n\n它不是根空间，根空间属于李代数自身的伴随表示。权空间维数称为权重数，根向量作用会把 $V_\\lambda$ 送到 $V_{\\lambda+\\alpha}$。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。 根系决定反射和括号结构，权系决定给定表示中的特征空间；二者都在 $\\mathfrak h^*$ 中，但服务于不同的分类问题。 根反映伴随作用的方向，权反映给定表示的特征空间；二者共享坐标，却服务于不同分类。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "权空间",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%83%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "权空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%83%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weight space",
+          "url": "https://en.wikipedia.org/w/index.php?search=weight%20space"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "最高权",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "最高权是表示中相对于正根偏序最大的权。若 $V$ 中存在非零 $v$ 满足 $\\mathfrak n^+v=0$ 且 $Hv=\\lambda(H)v$，则 $\\lambda$ 为最高权，$v$ 为最高权向量。\n\n它不同于最高根，最高根来自伴随表示的根系。有限维不可约复半单李代数表示由主导整最高权分类，Verma 模则从任意权生成最高权模块。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。 根系决定反射和括号结构，权系决定给定表示中的特征空间；二者都在 $\\mathfrak h^*$ 中，但服务于不同的分类问题。 根反映伴随作用的方向，权反映给定表示的特征空间；二者共享坐标，却服务于不同分类。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最高权",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E9%AB%98%E6%9D%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最高权",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E9%AB%98%E6%9D%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "highest weight",
+          "url": "https://en.wikipedia.org/w/index.php?search=highest%20weight"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "基本权",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "基本权是与单根的余根对偶的权。若单根为 $\\alpha_i$，余根为 $\\alpha_i^\\vee$，基本权 $\\omega_j$ 满足 $\\langle\\omega_j,\\alpha_i^\\vee\\rangle=\\delta_{ij}$。\n\n它们生成权格，是表达主导权的标准坐标。基本权不同于单根，二者一般属于对偶基关系；最高权写成非负整数基本权组合时，对应有限维不可约表示。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。 根系决定反射和括号结构，权系决定给定表示中的特征空间；二者都在 $\\mathfrak h^*$ 中，但服务于不同的分类问题。 根反映伴随作用的方向，权反映给定表示的特征空间；二者共享坐标，却服务于不同分类。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "基本权",
+          "url": "https://www.baidu.com/s?wd=%E5%9F%BA%E6%9C%AC%E6%9D%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "基本权",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9F%BA%E6%9C%AC%E6%9D%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fundamental rights",
+          "url": "https://en.wikipedia.org/w/index.php?search=fundamental%20rights"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "权格",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "权格由所有对余根取整数值的权组成。定义为 $P=\\{\\lambda\\in\\mathfrak h^*\\mid \\langle\\lambda,\\alpha^\\vee\\rangle\\in\\mathbb Z,\\ \\alpha\\in\\Phi\\}$；基本权通常给出一组基。\n\n它包含根格，但可能严格更大。权格控制哪些最高权能给出群或李代数表示；根格由根的整数线性组合生成，二者商与中心和基本群相关。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。 根系决定反射和括号结构，权系决定给定表示中的特征空间；二者都在 $\\mathfrak h^*$ 中，但服务于不同的分类问题。 根反映伴随作用的方向，权反映给定表示的特征空间；二者共享坐标，却服务于不同分类。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "权格",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%83%E6%A0%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "权格",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%83%E6%A0%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weight lattice",
+          "url": "https://en.wikipedia.org/w/index.php?search=weight%20lattice"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "根格",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "根格是由根系中所有根整数线性生成的格。写作 $Q=\\mathbb Z\\Phi=\\sum_{\\alphai\\Phi}\\mathbb Z\\alpha$，在选择单根后也等于 $\\sum_i\\mathbb Z\\alpha_i$。\n\n它不同于权格，权格由基本权生成并对余根取整数值。根格反映伴随群层面的整结构，权格与表示最高权相关；二者商常编码中心信息。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。 根系决定反射和括号结构，权系决定给定表示中的特征空间；二者都在 $\\mathfrak h^*$ 中，但服务于不同的分类问题。 根反映伴随作用的方向，权反映给定表示的特征空间；二者共享坐标，却服务于不同分类。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "根格",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%B9%E6%A0%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "根格",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%B9%E6%A0%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "root lattice",
+          "url": "https://en.wikipedia.org/w/index.php?search=root%20lattice"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "外尔群",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "外尔群是根系反射生成的有限群。对根 $\\alpha$，反射为 $s_\\alpha(\\lambda)=\\lambda-\\langle\\lambda,\\alpha^\\vee\\rangle\\alpha$；所有 $s_\\alpha$ 生成 $W$。\n\n它作用在根格和权格上，排列 Weyl chambers。李群中也可写 $W=N_G(T)/T$，其中 $T$ 是极大环面；外尔群控制表示特征、积分公式和根系对称。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。 根系决定反射和括号结构，权系决定给定表示中的特征空间；二者都在 $\\mathfrak h^*$ 中，但服务于不同的分类问题。 根反映伴随作用的方向，权反映给定表示的特征空间；二者共享坐标，却服务于不同分类。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "外尔群",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%96%E5%B0%94%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "外尔群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%96%E5%B0%94%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weyl group",
+          "url": "https://en.wikipedia.org/w/index.php?search=weyl%20group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "外尔室",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "外尔室是去掉根超平面后得到的连通区域。根超平面为 $\\{\\lambda\\mid \\langle\\lambda,\\alpha^\\vee\\rangle=0\\}$，每个 chamber 对应一个正根系；主外尔室由 $\\langle\\lambda,\\alpha_i^\\vee\\rangle>0$ 给出。\n\n它不是群，而是权空间中的锥形区域。最高权理论通常选择闭主外尔室中的整点作为主导权；外尔群在这些 chamber 上单纯传递作用。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。 根系决定反射和括号结构，权系决定给定表示中的特征空间；二者都在 $\\mathfrak h^*$ 中，但服务于不同的分类问题。 根反映伴随作用的方向，权反映给定表示的特征空间；二者共享坐标，却服务于不同分类。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "外尔室",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%96%E5%B0%94%E5%AE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "外尔室",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%96%E5%B0%94%E5%AE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weyl room",
+          "url": "https://en.wikipedia.org/w/index.php?search=weyl%20room"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "嘉当矩阵",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "嘉当矩阵记录单根之间的整数配对。其元素为 $a_{ij}=\\langle\\alpha_j,\\alpha_i^\\vee\\rangle=2(\\alpha_i,\\alpha_j)/(\\alpha_i,\\alpha_i)$；对角元为 $2$，非对角元为非正整数。\n\n它决定戴金图的边数和方向。嘉当矩阵不同于 Killing 型矩阵，前者是根系组合数据，后者来自李代数迹型；有限型嘉当矩阵分类复半单李代数。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。 根系决定反射和括号结构，权系决定给定表示中的特征空间；二者都在 $\\mathfrak h^*$ 中，但服务于不同的分类问题。 根反映伴随作用的方向，权反映给定表示的特征空间；二者共享坐标，却服务于不同分类。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "嘉当矩阵",
+          "url": "https://www.baidu.com/s?wd=%E5%98%89%E5%BD%93%E7%9F%A9%E9%98%B5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "嘉当矩阵",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%98%89%E5%BD%93%E7%9F%A9%E9%98%B5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cartan matrix",
+          "url": "https://en.wikipedia.org/w/index.php?search=cartan%20matrix"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "戴金图",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "戴金图用图形编码嘉当矩阵和根系。每个顶点对应单根 $\\alpha_i$，边数由 $a_{ij}a_{ji}$ 决定，箭头指向较短根；有限型图给出 $A_n,B_n,C_n,D_n,E,F,G$ 等分类。\n\n它不是任意图，而是受嘉当矩阵约束。戴金图能读出李代数类型、根长关系和基本表示信息；仿射图则来自加入负最高根后的扩展结构。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。 根系决定反射和括号结构，权系决定给定表示中的特征空间；二者都在 $\\mathfrak h^*$ 中，但服务于不同的分类问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "戴金图",
+          "url": "https://www.baidu.com/s?wd=%E6%88%B4%E9%87%91%E5%9B%BE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "戴金图",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%88%B4%E9%87%91%E5%9B%BE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dynkin diagram",
+          "url": "https://en.wikipedia.org/w/index.php?search=dynkin%20diagram"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "包络代数",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "包络代数把李代数嵌入一个结合代数中，使李括号由交换子表示。若 $\\mathfrak g$ 是李代数，包络代数 $U(\\mathfrak g)$ 满足关系 $XY-YX=[X,Y]$。\n\n它的普遍性质是：任意李代数表示都等价于 $U(\\mathfrak g)$-模。包络代数不同于对称代数，后者交换；PBW 定理说明 $U(\\mathfrak g)$ 的滤过分次与 $S(\\mathfrak g)$ 相同。 表示论把抽象对称性变成向量空间上的算子，同时保留括号或群乘法。$U(\\mathfrak g)$、中心、矩阵系数和轨道分别记录代数、标量作用、函数模型和几何模型；伴随与余伴随、原表示与对偶表示作用空间不同，不能互换。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "包络代数",
+          "url": "https://www.baidu.com/s?wd=%E5%8C%85%E7%BB%9C%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "包络代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8C%85%E7%BB%9C%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "envelope algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=envelope%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "通用包络代数",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "通用包络代数是李代数到结合代数的普遍包络。定义为 $U(\\mathfrak g)=T(\\mathfrak g)/\\langle X\\otimes Y-Y\\otimes X-[X,Y]\\rangle$；这里 $T(\\mathfrak g)$ 是张量代数。\n\n它使李代数表示转化为结合代数模。名称中的“通用”强调泛性质：任何保持括号的映射到结合代数李代数部分，都唯一延拓为代数同态 $U(\\mathfrak g)\\to A$。 表示论把抽象对称性变成向量空间上的算子，同时保留括号或群乘法。$U(\\mathfrak g)$、中心、矩阵系数和轨道分别记录代数、标量作用、函数模型和几何模型；伴随与余伴随、原表示与对偶表示作用空间不同，不能互换。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "通用包络代数",
+          "url": "https://www.baidu.com/s?wd=%E9%80%9A%E7%94%A8%E5%8C%85%E7%BB%9C%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "通用包络代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%80%9A%E7%94%A8%E5%8C%85%E7%BB%9C%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "universal envelope algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=universal%20envelope%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "庞加莱伯克霍夫维特定理",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "庞加莱-伯克霍夫-维特定理描述通用包络代数的基。若 $x_1,\\ldots,x_n$ 是李代数有序基，则单项式 $x_1^{a_1}\\cdots x_n^{a_n}$ 构成 $U(\\mathfrak g)$ 的向量空间基。\n\n它说明非交换包络代数的大小与对称代数相同，只是乘法被括号扭曲。PBW 定理保证 Verma 模、诱导表示和滤过分次构造有良好线性基础。 表示论把抽象对称性变成向量空间上的算子，同时保留括号或群乘法。$U(\\mathfrak g)$、中心、矩阵系数和轨道分别记录代数、标量作用、函数模型和几何模型；伴随与余伴随、原表示与对偶表示作用空间不同，不能互换。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "庞加莱伯克霍夫维特定理",
+          "url": "https://www.baidu.com/s?wd=%E5%BA%9E%E5%8A%A0%E8%8E%B1%E4%BC%AF%E5%85%8B%E9%9C%8D%E5%A4%AB%E7%BB%B4%E7%89%B9%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "庞加莱伯克霍夫维特定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BA%9E%E5%8A%A0%E8%8E%B1%E4%BC%AF%E5%85%8B%E9%9C%8D%E5%A4%AB%E7%BB%B4%E7%89%B9%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "poincar birkhofveit theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=poincar%20birkhofveit%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "卡西米尔元",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "卡西米尔元是由不变双线性型构造的包络代数中心元素。若 $\\{X_i\\}$ 与 $\\{X^i\\}$ 关于 Killing 型对偶，则 $C=\\sum_i X_iX^i\\in U(\\mathfrak g)$；半单情形下它属于中心。\n\n它在不可约表示上常按标量作用。卡西米尔元不同于任意二次元素，不变性保证它与李代数作用交换；物理中的角动量平方和表示分类中的无穷小特征都使用它。 表示论把抽象对称性变成向量空间上的算子，同时保留括号或群乘法。$U(\\mathfrak g)$、中心、矩阵系数和轨道分别记录代数、标量作用、函数模型和几何模型；伴随与余伴随、原表示与对偶表示作用空间不同，不能互换。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "卡西米尔元",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%A1%E8%A5%BF%E7%B1%B3%E5%B0%94%E5%85%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "卡西米尔元",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%A1%E8%A5%BF%E7%B1%B3%E5%B0%94%E5%85%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "casimir dollar",
+          "url": "https://en.wikipedia.org/w/index.php?search=casimir%20dollar"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "基灵型",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "Killing 型是李代数上的迹型双线性形式。定义为 $B(X,Y)=\\operatorname{tr}(\\operatorname{ad}_X\\operatorname{ad}_Y)$；其中 $\\operatorname{ad}_X(Z)=[X,Z]$。\n\n它是伴随表示给出的不变量。Cartan 判别法说明特征零下有限维李代数半单当且仅当 Killing 型非退化；它不同于任意内积，可能不正定，实形式中符号也含结构信息。 表示论把抽象对称性变成向量空间上的算子，同时保留括号或群乘法。$U(\\mathfrak g)$、中心、矩阵系数和轨道分别记录代数、标量作用、函数模型和几何模型；伴随与余伴随、原表示与对偶表示作用空间不同，不能互换。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "基灵型",
+          "url": "https://www.baidu.com/s?wd=%E5%9F%BA%E7%81%B5%E5%9E%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "基灵型",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9F%BA%E7%81%B5%E5%9E%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "keeling type",
+          "url": "https://en.wikipedia.org/w/index.php?search=keeling%20type"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "紧李群",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "紧李群是底层流形紧的李群。典型例子有 $S^1$、$SU(n)$ 和 $SO(n)$；其 Haar 测度可归一化，使 $\\int_G f(g)dg$ 对左右平移不变。\n\n紧性带来表示论的完全可约性和 Peter-Weyl 定理。紧李群不同于紧实形式的李代数说法，后者是在复半单李代数中选取一个实形式。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "紧李群",
+          "url": "https://www.baidu.com/s?wd=%E7%B4%A7%E6%9D%8E%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "紧李群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B4%A7%E6%9D%8E%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "compact lie group",
+          "url": "https://en.wikipedia.org/w/index.php?search=compact%20lie%20group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "复李群",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "复李群是复流形同时带有全纯群运算的群。乘法 $G\\times G\\to G$ 与取逆 $G\\to G$ 都全纯；其李代数 $\\mathfrak g=T_eG$ 是复向量空间并带复双线性括号。\n\n它不同于实李群加复结构的任意组合，复结构必须与群运算相容。复化、实形式和复半单群的表示论都在这一框架中展开。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "复李群",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%8D%E6%9D%8E%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "复李群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%8D%E6%9D%8E%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "complex lie group",
+          "url": "https://en.wikipedia.org/w/index.php?search=complex%20lie%20group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "实形式",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "实形式是复李代数或复李群的实结构。对复李代数 $\\mathfrak g_\\mathbb C$，实形式是实李代数 $\\mathfrak g_\\mathbb R$，满足 $\\mathfrak g_\\mathbb R\\otimes_\\mathbb R\\mathbb C\\cong\\mathfrak g_\\mathbb C$。\n\n同一个复李代数可有多个实形式，例如紧实形式和分裂实形式。实形式决定 Killing 型符号、Cartan 分解和实半单表示理论，不能只由复根系完全区分。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "实形式",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%9E%E5%BD%A2%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "实形式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%9E%E5%BD%A2%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "real form",
+          "url": "https://en.wikipedia.org/w/index.php?search=real%20form"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "复化",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "复化把实李代数扩张标量到复数。若 $\\mathfrak g_\\mathbb R$ 是实李代数，则 $\\mathfrak g_\\mathbb C=\\mathfrak g_\\mathbb R\\otimes_\\mathbb R\\mathbb C$，括号按复双线性延拓。\n\n复化会遗忘部分实结构，却让根分解和半单分类更统一。不同实形式可能有同一个复化，因此从复化回到实李代数需要额外的共轭或 Cartan 对合数据。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "复化",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%8D%E5%8C%96%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "复化",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%8D%E5%8C%96"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "complexification",
+          "url": "https://en.wikipedia.org/w/index.php?search=complexification"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "紧实形式",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "紧实形式是复半单李代数的一个实形式，其对应连通李群为紧群。等价地，实李代数 $\\mathfrak u$ 的 Killing 型在 $\\mathfrak u$ 上负定，且 $\\mathfrak u\\otimes_\\mathbb R\\mathbb C\\cong\\mathfrak g$。\n\n它不同于任意实形式，紧实形式在表示论上行为最接近紧李群。每个复半单李代数都有紧实形式，并可通过 Chevalley 基或 Cartan 对合构造。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "紧实形式",
+          "url": "https://www.baidu.com/s?wd=%E7%B4%A7%E5%AE%9E%E5%BD%A2%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "紧实形式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%B4%A7%E5%AE%9E%E5%BD%A2%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "compact form",
+          "url": "https://en.wikipedia.org/w/index.php?search=compact%20form"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "辛群",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "辛群保持一个非退化反对称双线性形式。矩阵形式为 $Sp(2n,\\mathbb F)=\\{A\\in GL(2n,\\mathbb F)\\mid A^TJA=J\\}$，其中 $J=\\begin{pmatrix}0&I\\\\-I&0\\end{pmatrix}$。\n\n它不同于辛流形的全体辛微分同胚，辛群是线性变换群。其李代数满足 $X^TJ+JX=0$，根系类型为 $C_n$；经典力学和表示论都大量使用它。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "辛群",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%9B%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "辛群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%9B%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "symplectic group",
+          "url": "https://en.wikipedia.org/w/index.php?search=symplectic%20group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "特殊正交群",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "特殊正交群由保持二次型且行列式为一的矩阵组成。实欧氏情形为 $SO(n)=\\{A\\in GL(n,\\mathbb R)\\mid A^TA=I,\\det A=1\\}$。\n\n它描述保定向旋转，区别于 $O(n)$ 的两连通分支。其李代数为 $\\mathfrak{so}(n)=\\{X\\in M_n\\mid X^T+X=0\\}$，在刚体运动、根系 $B_n/D_n$ 和旋表示中出现。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。 局部括号可以解释无穷小对称，群的中心、覆盖和离散商则控制全局差别；两层信息合在一起才形成完整的李理论图像。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "特殊正交群",
+          "url": "https://www.baidu.com/s?wd=%E7%89%B9%E6%AE%8A%E6%AD%A3%E4%BA%A4%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "特殊正交群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%B9%E6%AE%8A%E6%AD%A3%E4%BA%A4%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "special orthogonal group",
+          "url": "https://en.wikipedia.org/w/index.php?search=special%20orthogonal%20group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "特殊酉群",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "特殊酉群由保持 Hermitian 内积且行列式为一的复矩阵组成。定义为 $SU(n)=\\{A\\in GL(n,\\mathbb C)\\mid A^*A=I,\\det A=1\\}$。\n\n它是紧李群，李代数为 $\\mathfrak{su}(n)=\\{X\\mid X^*+X=0,\\operatorname{tr}X=0\\}$。它不同于 $U(n)$，额外去掉中心的行列式方向；复化为 $\\mathfrak{sl}_n(\\mathbb C)$。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。 局部括号可以解释无穷小对称，群的中心、覆盖和离散商则控制全局差别；两层信息合在一起才形成完整的李理论图像。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "特殊酉群",
+          "url": "https://www.baidu.com/s?wd=%E7%89%B9%E6%AE%8A%E9%85%89%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "特殊酉群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%89%B9%E6%AE%8A%E9%85%89%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "special unitary group",
+          "url": "https://en.wikipedia.org/w/index.php?search=special%20unitary%20group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "洛伦兹群",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "洛伦兹群保持闵可夫斯基二次型。可写 $O(1,3)=\\{A\\in GL(4,\\mathbb R)\\mid A^T\\eta A=\\eta\\}$，其中 $\\eta=\\operatorname{diag}(-1,1,1,1)$。\n\n它不同于欧氏正交群，因为度量不正定，含时间样、光样和空间样方向。其单位连通分支 $SO^+(1,3)$ 与 $SL(2,\\mathbb C)$ 有覆盖关系，是相对论对称性的核心。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "洛伦兹群",
+          "url": "https://www.baidu.com/s?wd=%E6%B4%9B%E4%BC%A6%E5%85%B9%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "洛伦兹群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B4%9B%E4%BC%A6%E5%85%B9%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lorentz group",
+          "url": "https://en.wikipedia.org/w/index.php?search=lorentz%20group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "庞加莱群",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "庞加莱群是闵可夫斯基空间的等距变换群，由平移和洛伦兹变换组成。结构为半直积 $\\mathbb R^{1,3}\\rtimes O(1,3)$，乘法中洛伦兹群作用在平移向量上。\n\n它不同于洛伦兹群，后者只含保持原点的线性部分。庞加莱李代数包含平移生成元和洛伦兹生成元，表示论中的质量与自旋分类来自其不可约酉表示。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "庞加莱群",
+          "url": "https://www.baidu.com/s?wd=%E5%BA%9E%E5%8A%A0%E8%8E%B1%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "庞加莱群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BA%9E%E5%8A%A0%E8%8E%B1%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "poincare group",
+          "url": "https://en.wikipedia.org/w/index.php?search=poincare%20group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "海森堡群",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "海森堡群是典型的二步幂零李群。矩阵模型可写为 $\\begin{pmatrix}1&x&z\\\\0&1&y\\\\0&0&1\\end{pmatrix}$，其中心由 $z$ 方向给出；李代数满足 $[X,Y]=Z$ 且 $Z$ 中心。\n\n它不是阿贝尔群，非交换性集中在中心。海森堡群连接辛向量空间、量子力学的对易关系和 Stone-von Neumann 定理，是幂零表示论的基本例子。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "海森堡群",
+          "url": "https://www.baidu.com/s?wd=%E6%B5%B7%E6%A3%AE%E5%A0%A1%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "海森堡群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B5%B7%E6%A3%AE%E5%A0%A1%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "heisenberg group",
+          "url": "https://en.wikipedia.org/w/index.php?search=heisenberg%20group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "阿贝尔李群",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "阿贝尔李群是群乘法交换的李群。其李代数括号恒为零，$[X,Y]=0$；连通阿贝尔李群常由 $\\mathbb R^n$ 与环面 $T^m$ 的商结构描述。\n\n它不同于一般李群，指数映射在连通情形中强烈控制群结构。尽管李代数全为交换，李群仍可能有不同全局拓扑，例如 $\\mathbb R$ 与 $S^1$ 的李代数同构但群不同。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阿贝尔李群",
+          "url": "https://www.baidu.com/s?wd=%E9%98%BF%E8%B4%9D%E5%B0%94%E6%9D%8E%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阿贝尔李群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%BF%E8%B4%9D%E5%B0%94%E6%9D%8E%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "abel lie group",
+          "url": "https://en.wikipedia.org/w/index.php?search=abel%20lie%20group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "极大环面",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "极大环面是紧李群中不再包含于更大环面的连通紧阿贝尔子群。通常写 $T\\subset G$，且 $T\\cong(S^1)^r$；其李代数是极大交换子代数的一种紧实版本。\n\n它不同于任意阿贝尔子群，要求连通、紧且极大。外尔群可写为 $W=N_G(T)/T$；紧李群的表示、特征和积分公式都围绕极大环面展开。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "极大环面",
+          "url": "https://www.baidu.com/s?wd=%E6%9E%81%E5%A4%A7%E7%8E%AF%E9%9D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "极大环面",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9E%81%E5%A4%A7%E7%8E%AF%E9%9D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "maximum torus",
+          "url": "https://en.wikipedia.org/w/index.php?search=maximum%20torus"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "齐性空间",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "齐性空间是李群作用传递的空间。若 $G$ 传递作用在 $M$ 上，取一点 $x$ 的稳定子 $H=G_x$，则 $M\\cong G/H$；这里 $G/H$ 是左陪集空间。\n\n它不同于任意群作用空间，任意两点都可由群元素相连。对称空间、旗流形和球面都可作齐性空间；几何结构常由稳定子表示决定。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "齐性空间",
+          "url": "https://www.baidu.com/s?wd=%E9%BD%90%E6%80%A7%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "齐性空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%BD%90%E6%80%A7%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "homogeneous space",
+          "url": "https://en.wikipedia.org/w/index.php?search=homogeneous%20space"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "陪集空间",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "陪集空间由群按子群分成等价类得到。对李群 $G$ 和闭子群 $H$，左陪集空间 $G/H$ 的点为 $gH$；若 $H$ 闭，则 $G/H$ 有自然光滑流形结构。\n\n它是齐性空间的标准模型，但若 $H$ 不正规，$G/H$ 通常不是群。稳定子决定局部几何，切空间可识别为 $\\mathfrak g/\\mathfrak h$，这在表示和对称空间中很重要。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "陪集空间",
+          "url": "https://www.baidu.com/s?wd=%E9%99%AA%E9%9B%86%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "陪集空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%99%AA%E9%9B%86%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "co set space",
+          "url": "https://en.wikipedia.org/w/index.php?search=co%20set%20space"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "对称空间",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "对称空间是每点都有反转该点附近测地线的等距对称的黎曼空间。李群形式常为 $G/K$，其中存在 involution $\\theta$，李代数分解 $\\mathfrak g=\\mathfrak k\\oplus\\mathfrak p$。\n\n它比一般齐性空间更刚性，曲率和测地结构由对合控制。紧型、非紧型和欧氏型对称空间在表示论和调和分析中都扮演基本角色。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对称空间",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E7%A7%B0%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对称空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E7%A7%B0%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "symmetry space",
+          "url": "https://en.wikipedia.org/w/index.php?search=symmetry%20space"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "伊瓦泽分解",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "伊瓦泽分解把实半单李群分成紧、阿贝尔和幂零三部分。典型形式为 $G=KAN$，李代数层面为 $\\mathfrak g=\\mathfrak k\\oplus\\mathfrak a\\oplus\\mathfrak n$。\n\n它不同于 Cartan 分解的 $G=K\\exp\\mathfrak p$，更适合分析非紧群上的函数。$A$ 和 $N$ 来自限制根分解，极小抛物子群常写为 $P=MAN$。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "伊瓦泽分解",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%8A%E7%93%A6%E6%B3%BD%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "伊瓦泽分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%8A%E7%93%A6%E6%B3%BD%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ivarze decomposition",
+          "url": "https://en.wikipedia.org/w/index.php?search=ivarze%20decomposition"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "嘉当分解",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "Cartan 分解由 Cartan 对合给出。若 $\\theta$ 是实半单李代数的 Cartan 对合，则 $\\mathfrak g=\\mathfrak k\\oplus\\mathfrak p$，其中 $\\theta$ 在 $\\mathfrak k$ 上为 $+1$，在 $\\mathfrak p$ 上为 $-1$。\n\n它不同于根分解，根分解依赖 Cartan 子代数或极大阿贝尔子空间。群层面常有 $G=K\\exp\\mathfrak p$，这是对称空间 $G/K$ 的基本几何分解。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "嘉当分解",
+          "url": "https://www.baidu.com/s?wd=%E5%98%89%E5%BD%93%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "嘉当分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%98%89%E5%BD%93%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cartan decomposition",
+          "url": "https://en.wikipedia.org/w/index.php?search=cartan%20decomposition"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "根分解",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "根分解把半单李代数按嘉当子代数的伴随特征值分层。复情形为 $\\mathfrak g=\\mathfrak h\\oplus\\bigoplus_{\\alpha\\in\\Phi}\\mathfrak g_\\alpha$，其中 $\\mathfrak g_\\alpha$ 是根空间。\n\n它不同于 Cartan 分解，后者来自实形式上的对合。根分解直接控制括号关系、正负根、Borel 子代数和最高权表示，是复半单理论的主线。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "根分解",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%B9%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "根分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%B9%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "root decomposition",
+          "url": "https://en.wikipedia.org/w/index.php?search=root%20decomposition"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "布吕阿分解",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "布吕阿分解把约化代数群按 Borel 子群和外尔群分成胞腔。对复半单群，常写 $G=\\bigsqcup_{w\\in W}BwB$；旗簇上对应 $G/B=\\bigsqcup_{w\\in W}BwB/B$。\n\n它不同于伊瓦泽分解的解析三部分结构，布吕阿分解是代数和组合分层。Schubert 胞腔、外尔群长度和表示理论中的标准对象都由它组织。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "布吕阿分解",
+          "url": "https://www.baidu.com/s?wd=%E5%B8%83%E5%90%95%E9%98%BF%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "布吕阿分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B8%83%E5%90%95%E9%98%BF%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bleuard decomposition",
+          "url": "https://en.wikipedia.org/w/index.php?search=bleuard%20decomposition"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "极分解",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "极分解把矩阵或李群元素写成紧部分与正定部分的乘积。矩阵情形为 $A=UP$，其中 $U$ 酉或正交，$P=(A^*A)^{1/2}$ 正定；半单群中也有 $G=K\\exp\\mathfrak p$ 的类似形式。\n\n它不同于 Iwasawa 分解的 $KAN$，极分解强调“旋转加伸缩”。在对称空间中，$\\exp\\mathfrak p$ 对应非紧方向，常用于距离、测度和表示估计。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "极分解",
+          "url": "https://www.baidu.com/s?wd=%E6%9E%81%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "极分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9E%81%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "extreme decomposition",
+          "url": "https://en.wikipedia.org/w/index.php?search=extreme%20decomposition"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "李群作用",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "李群作用是李群通过光滑变换作用在流形上。左作用为映射 $G\\times M\\to M$，写 $g\\cdot x$，满足 $e\\cdot x=x$ 和 $(gh)\\cdot x=g\\cdot(h\\cdot x)$。\n\n它不同于抽象群作用，要求作用映射光滑。每个 $X\\in\\mathfrak g$ 产生基本向量场 $X_M$，轨道和稳定子给出齐性空间、动量映射和表示几何的基本结构。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "李群作用",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%8E%E7%BE%A4%E4%BD%9C%E7%94%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "李群作用",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%8E%E7%BE%A4%E4%BD%9C%E7%94%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lie group action",
+          "url": "https://en.wikipedia.org/w/index.php?search=lie%20group%20action"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "闭子群",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "闭子群是李群中拓扑闭合的子群。闭子群定理说明，若 $H\\subset G$ 为闭子群，则 $H$ 自动具有唯一光滑结构使其成为嵌入李子群，且包含映射光滑。\n\n它不同于任意抽象子群，非闭子群可能无法作为良好子流形。闭子群保证陪集空间 $G/H$ 具有自然流形结构，是齐性空间和表示诱导构造的基础。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。 局部括号可以解释无穷小对称，群的中心、覆盖和离散商则控制全局差别；两层信息合在一起才形成完整的李理论图像。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "闭子群",
+          "url": "https://www.baidu.com/s?wd=%E9%97%AD%E5%AD%90%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "闭子群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%97%AD%E5%AD%90%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "closed particle group",
+          "url": "https://en.wikipedia.org/w/index.php?search=closed%20particle%20group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "李第三定理",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "李第三定理说明每个有限维实李代数都来自某个连通李群的李代数。也就是说，给定 $\\mathfrak g$，存在连通且单连通李群 $G$ 使 $\\operatorname{Lie}(G)\\cong\\mathfrak g$。\n\n它解决从无穷小结构到全局群的存在性问题。该群在单连通条件下唯一，但不同离散中心商可有同一李代数；因此李代数不决定李群全局拓扑。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。 局部括号可以解释无穷小对称，群的中心、覆盖和离散商则控制全局差别；两层信息合在一起才形成完整的李理论图像。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "李第三定理",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%8E%E7%AC%AC%E4%B8%89%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "李第三定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%8E%E7%AC%AC%E4%B8%89%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lee third theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=lee%20third%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "阿多定理",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "阿多定理说明任意有限维李代数都可忠实表示为矩阵李代数。即存在单射李代数同态 $\\rho:\\mathfrak g\\hookrightarrow\\mathfrak{gl}(V)$，满足 $\\rho([X,Y])=[\\rho(X),\\rho(Y)]$。\n\n它把抽象李代数转化为矩阵括号模型，但不意味着所有李群都能忠实嵌入某个 $GL(V)$。该定理为结构理论提供线性化入口，尤其在特征零情形常用。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。 局部括号可以解释无穷小对称，群的中心、覆盖和离散商则控制全局差别；两层信息合在一起才形成完整的李理论图像。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "阿多定理",
+          "url": "https://www.baidu.com/s?wd=%E9%98%BF%E5%A4%9A%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "阿多定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%98%BF%E5%A4%9A%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "addo theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=addo%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "恩格尔定理",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "恩格尔定理刻画幂零李代数。若有限维李代数 $\\mathfrak g$ 中每个 $\\operatorname{ad}_X$ 都是幂零线性变换，则 $\\mathfrak g$ 是幂零；等价地，可找到基使所有 $\\operatorname{ad}_X$ 严格上三角。\n\n它不同于李定理，李定理处理可解李代数的表示三角化。恩格尔定理强调伴随作用的幂零性，是下中心列终止的线性代数判据。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。 根系决定反射和括号结构，权系决定给定表示中的特征空间；二者都在 $\\mathfrak h^*$ 中，但服务于不同的分类问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "恩格尔定理",
+          "url": "https://www.baidu.com/s?wd=%E6%81%A9%E6%A0%BC%E5%B0%94%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "恩格尔定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%81%A9%E6%A0%BC%E5%B0%94%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "engel theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=engel%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "李定理",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "李定理说明复数域上可解李代数的有限维表示可同时上三角化。若 $\\mathfrak g$ 可解且 $V\\ne0$，则存在公共特征向量；在合适基下，所有 $\\rho(X)$ 为上三角矩阵。\n\n它不同于恩格尔定理，后者要求幂零并给严格上三角。李定理是权分解和 Borel 子代数表示的基础，但依赖代数闭域和有限维条件。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。 局部括号可以解释无穷小对称，群的中心、覆盖和离散商则控制全局差别；两层信息合在一起才形成完整的李理论图像。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "李定理",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%8E%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "李定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%8E%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "li tingli",
+          "url": "https://en.wikipedia.org/w/index.php?search=li%20tingli"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "列维分解",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "列维分解把有限维李代数分成半单部分和可解根基。特征零下，$\\mathfrak g$ 可写为半直和 $\\mathfrak g=\\mathfrak s\\ltimes\\mathfrak r$，其中 $\\mathfrak r$ 是最大可解理想，$\\mathfrak s$ 是半单子代数。\n\n它不同于直和分解，因为半单部分可作用在根基上。Levi 因子通常不唯一，但在内自同构下共轭；该分解把结构理论化为半单理论加可解理想。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。 局部括号可以解释无穷小对称，群的中心、覆盖和离散商则控制全局差别；两层信息合在一起才形成完整的李理论图像。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "列维分解",
+          "url": "https://www.baidu.com/s?wd=%E5%88%97%E7%BB%B4%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "列维分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%97%E7%BB%B4%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "levy decomposition",
+          "url": "https://en.wikipedia.org/w/index.php?search=levy%20decomposition"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "根基",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "根基是李代数中最大的可解理想，常记 $\\operatorname{rad}\\mathfrak g$。若根基为零，则李代数半单；列维分解写作 $\\mathfrak g=\\mathfrak s\\ltimes\\operatorname{rad}\\mathfrak g$。\n\n它不同于根系中的“根”，这里的根基指 radical。根基捕捉非半单部分，可解但不一定幂零；商代数 $\\mathfrak g/\\operatorname{rad}\\mathfrak g$ 是半单的。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。 根系决定反射和括号结构，权系决定给定表示中的特征空间；二者都在 $\\mathfrak h^*$ 中，但服务于不同的分类问题。 根反映伴随作用的方向，权反映给定表示的特征空间；二者共享坐标，却服务于不同分类。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "根基",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%B9%E5%9F%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "根基",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%B9%E5%9F%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "root basis",
+          "url": "https://en.wikipedia.org/w/index.php?search=root%20basis"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "中心扩张",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "中心扩张是在代数或群中加入位于中心的核。李代数情形为短正合列 $0\\to\\mathfrak z\\to\\widehat{\\mathfrak g}\\to\\mathfrak g\\to0$，且 $\\mathfrak z\\subset Z(\\widehat{\\mathfrak g})$。\n\n它不同于任意扩张，核必须与所有元素括号为零。中心扩张常由二阶上同调 $H^2(\\mathfrak g,\\mathfrak z)$ 分类；维拉索罗代数就是 Witt 代数的重要中心扩张。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。 局部括号可以解释无穷小对称，群的中心、覆盖和离散商则控制全局差别；两层信息合在一起才形成完整的李理论图像。 指数映射只给局部联系，中心、覆盖和离散商仍会改变李群的全局结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "中心扩张",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%AD%E5%BF%83%E6%89%A9%E5%BC%A0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "中心扩张",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%AD%E5%BF%83%E6%89%A9%E5%BC%A0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "center expansion",
+          "url": "https://en.wikipedia.org/w/index.php?search=center%20expansion"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "李代数上同调",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "李代数上同调用切瓦利-艾伦伯格复形定义。对李代数 $\\mathfrak g$ 和模 $M$，上链为 $C^n(\\mathfrak g,M)=\\operatorname{Hom}(\\Lambda^n\\mathfrak g,M)$，余边界由表示作用和李括号给出。\n\n它不同于李代数同调，方向和系数作用对偶。$H^1$ 记录导子模内导子，$H^2$ 分类中心扩张或形变；半单李代数有 Whitehead 引理的消失结论。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。 局部括号可以解释无穷小对称，群的中心、覆盖和离散商则控制全局差别；两层信息合在一起才形成完整的李理论图像。 指数映射只给局部联系，中心、覆盖和离散商仍会改变李群的全局结构。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "李代数上同调",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%8E%E4%BB%A3%E6%95%B0%E4%B8%8A%E5%90%8C%E8%B0%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "李代数上同调",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%8E%E4%BB%A3%E6%95%B0%E4%B8%8A%E5%90%8C%E8%B0%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lie algebra cohomology",
+          "url": "https://en.wikipedia.org/w/index.php?search=lie%20algebra%20cohomology"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "切瓦利艾伦伯格复形",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "切瓦利-艾伦伯格复形计算李代数同调和上同调。上同调形式为 $C^n(\\mathfrak g,M)=\\operatorname{Hom}(\\Lambda^n\\mathfrak g,M)$，微分 $d$ 同时包含模作用项和括号项，并满足 $d^2=0$。\n\n它把李括号转化为同调代数对象。与德拉姆复形相比，它处理的是李代数的无穷小对称；当 $\\mathfrak g$ 来自李群时，还与左不变微分形式相关。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。 根系决定反射和括号结构，权系决定给定表示中的特征空间；二者都在 $\\mathfrak h^*$ 中，但服务于不同的分类问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "切瓦利艾伦伯格复形",
+          "url": "https://www.baidu.com/s?wd=%E5%88%87%E7%93%A6%E5%88%A9%E8%89%BE%E4%BC%A6%E4%BC%AF%E6%A0%BC%E5%A4%8D%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "切瓦利艾伦伯格复形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%87%E7%93%A6%E5%88%A9%E8%89%BE%E4%BC%A6%E4%BC%AF%E6%A0%BC%E5%A4%8D%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "chevalier ellenberg complex",
+          "url": "https://en.wikipedia.org/w/index.php?search=chevalier%20ellenberg%20complex"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "完全可约性",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "完全可约性表示表示可分解为不可约子表示的直和。对表示 $V$，若每个子表示 $W\\subset V$ 都有不变补空间 $U$ 使 $V=W\\oplus U$，则称完全可约。\n\n它不同于不可约性，不可约是没有非平凡子表示，完全可约允许多个不可约块。复半单李代数的有限维表示由 Weyl 定理保证完全可约，可解李代数表示则通常只有三角化。 表示论把抽象对称性变成向量空间上的算子，同时保留括号或群乘法。$U(\\mathfrak g)$、中心、矩阵系数和轨道分别记录代数、标量作用、函数模型和几何模型；伴随与余伴随、原表示与对偶表示作用空间不同，不能互换。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "完全可约性",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%8C%E5%85%A8%E5%8F%AF%E7%BA%A6%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "完全可约性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%8C%E5%85%A8%E5%8F%AF%E7%BA%A6%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "perfect reducibility",
+          "url": "https://en.wikipedia.org/w/index.php?search=perfect%20reducibility"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "外尔特征公式",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "外尔特征公式给出紧或复半单李代数有限维不可约表示的特征。若最高权为 $\\lambda$，则 $\\operatorname{ch}V_\\lambda=\\frac{\\sum_{wi W}\\det(w)e^{w(\\lambda+\\rho)}}{\\sum_{wi W}\\det(w)e^{w\\rho}}$。\n\n这里 $W$ 是外尔群，$\\rho$ 是半正根和。公式不同于维数公式，特征保留所有权重数；令指数变量趋于一可得到 Weyl 维数公式。 表示论把抽象对称性变成向量空间上的算子，同时保留括号或群乘法。$U(\\mathfrak g)$、中心、矩阵系数和轨道分别记录代数、标量作用、函数模型和几何模型；伴随与余伴随、原表示与对偶表示作用空间不同，不能互换。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "外尔特征公式",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%96%E5%B0%94%E7%89%B9%E5%BE%81%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "外尔特征公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%96%E5%B0%94%E7%89%B9%E5%BE%81%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weyl characteristic formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=weyl%20characteristic%20formula"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "外尔积分公式",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "外尔积分公式把紧李群上的类函数积分化到极大环面。典型形式为 $\\int_G f(g)dg=\\frac1{|W|}\\int_T f(t)|\\Delta(t)|^2dt$，其中 $W$ 是外尔群，$\\Delta$ 是 Weyl 分母。\n\n它不同于普通换元公式，根和外尔群贡献雅可比因子。该公式是紧群调和分析、特征正交关系和 Peter-Weyl 定理计算的重要工具。 表示论把抽象对称性变成向量空间上的算子，同时保留括号或群乘法。$U(\\mathfrak g)$、中心、矩阵系数和轨道分别记录代数、标量作用、函数模型和几何模型；伴随与余伴随、原表示与对偶表示作用空间不同，不能互换。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "外尔积分公式",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%96%E5%B0%94%E7%A7%AF%E5%88%86%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "外尔积分公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%96%E5%B0%94%E7%A7%AF%E5%88%86%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weyl integral formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=weyl%20integral%20formula"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "彼得外尔定理",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "Peter-Weyl 定理描述紧李群上的平方可积函数分解。矩阵系数张成 $L^2(G)$ 的稠密子空间，并有 $L^2(G)\\cong\\widehat\\bigoplus_{\\pii\\widehat G} V_\\pi\\otimes V_\\pi^*$。\n\n它把紧群调和分析化为不可约酉表示的直和。该定理不同于有限群表示正交关系，但可看作其紧群推广；矩阵系数是核心基元。 表示论把抽象对称性变成向量空间上的算子，同时保留括号或群乘法。$U(\\mathfrak g)$、中心、矩阵系数和轨道分别记录代数、标量作用、函数模型和几何模型；伴随与余伴随、原表示与对偶表示作用空间不同，不能互换。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "彼得外尔定理",
+          "url": "https://www.baidu.com/s?wd=%E5%BD%BC%E5%BE%97%E5%A4%96%E5%B0%94%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "彼得外尔定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BD%BC%E5%BE%97%E5%A4%96%E5%B0%94%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "peter weyl theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=peter%20weyl%20theorem"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "限制表示",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "限制表示是把一个群或代数的表示沿子群或子代数缩小。若 $\\rho:G\\to GL(V)$，对子群 $H\\subset G$ 的限制为 $\\rho|_H:H\\to GL(V)$。\n\n它不同于诱导表示，诱导从小群构造大群表示。限制后不可约表示可能分解成多个不可约分量；分支律研究这种分解，在紧群、半单李代数和 Harish-Chandra 模中很重要。 表示论把抽象对称性变成向量空间上的算子，同时保留括号或群乘法。$U(\\mathfrak g)$、中心、矩阵系数和轨道分别记录代数、标量作用、函数模型和几何模型；伴随与余伴随、原表示与对偶表示作用空间不同，不能互换。 表示把李群或李代数作用到向量空间上，局部微分和全局拓扑都可能影响结果。最高权、无穷小特征、矩阵系数和 $K$ 型分别记录代数、分析与紧子群方向的信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "限制表示",
+          "url": "https://www.baidu.com/s?wd=%E9%99%90%E5%88%B6%E8%A1%A8%E7%A4%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "限制表示",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%99%90%E5%88%B6%E8%A1%A8%E7%A4%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "restricted representation",
+          "url": "https://en.wikipedia.org/w/index.php?search=restricted%20representation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "张量表示",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "张量表示由已有表示通过张量积构造。若 $V,W$ 是 $G$-表示，则 $G$ 在 $V\\otimes W$ 上作用为 $g(v\\otimes w)=gv\\otimes gw$；李代数作用为 $X(v\\otimes w)=Xv\\otimes w+v\\otimes Xw$。\n\n它不同于直和表示，张量积会产生新的权和不可约分解。Clebsch-Gordan 分解、表示环和特征乘法都围绕张量表示展开。 表示论把抽象对称性变成向量空间上的算子，同时保留括号或群乘法。$U(\\mathfrak g)$、中心、矩阵系数和轨道分别记录代数、标量作用、函数模型和几何模型；伴随与余伴随、原表示与对偶表示作用空间不同，不能互换。 表示把李群或李代数作用到向量空间上，局部微分和全局拓扑都可能影响结果。最高权、无穷小特征、矩阵系数和 $K$ 型分别记录代数、分析与紧子群方向的信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "张量表示",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%A0%E9%87%8F%E8%A1%A8%E7%A4%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "张量表示",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%A0%E9%87%8F%E8%A1%A8%E7%A4%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tensor representation",
+          "url": "https://en.wikipedia.org/w/index.php?search=tensor%20representation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "对偶表示",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "对偶表示作用在表示空间的对偶上。若 $\\rho:G\\to GL(V)$，则 $\\rho^*(g)\\ell=\\ell\\circ\\rho(g^{-1})$；李代数层面为 $(X\\ell)(v)=-\\ell(Xv)$。\n\n它不同于原表示，虽然有限维紧群情形常可借助不变内积识别。对偶表示改变权的符号，最高权会变为与最长外尔元素相关的权；矩阵系数和配对都依赖它。 表示论把抽象对称性变成向量空间上的算子，同时保留括号或群乘法。$U(\\mathfrak g)$、中心、矩阵系数和轨道分别记录代数、标量作用、函数模型和几何模型；伴随与余伴随、原表示与对偶表示作用空间不同，不能互换。 表示把李群或李代数作用到向量空间上，局部微分和全局拓扑都可能影响结果。最高权、无穷小特征、矩阵系数和 $K$ 型分别记录代数、分析与紧子群方向的信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对偶表示",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E5%81%B6%E8%A1%A8%E7%A4%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对偶表示",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E5%81%B6%E8%A1%A8%E7%A4%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "duality representation",
+          "url": "https://en.wikipedia.org/w/index.php?search=duality%20representation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "伴随轨道",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "伴随轨道是李群伴随作用在李代数中的轨道。对 $X\\in\\mathfrak g$，轨道为 $\\mathcal O_X=\\{\\operatorname{Ad}_gX\\mid g\\in G\\}\\cong G/G_X$；$G_X$ 是稳定子。\n\n它不同于余伴随轨道，后者位于 $\\mathfrak g^*$ 并天然带 Kirillov-Kostant-Souriau 辛形式。伴随轨道反映共轭类的无穷小版本，半单元素、幂零元素分类都用它。 表示论把抽象对称性变成向量空间上的算子，同时保留括号或群乘法。$U(\\mathfrak g)$、中心、矩阵系数和轨道分别记录代数、标量作用、函数模型和几何模型；伴随与余伴随、原表示与对偶表示作用空间不同，不能互换。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "伴随轨道",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%B4%E9%9A%8F%E8%BD%A8%E9%81%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "伴随轨道",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%B4%E9%9A%8F%E8%BD%A8%E9%81%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "accompanying track",
+          "url": "https://en.wikipedia.org/w/index.php?search=accompanying%20track"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "余伴随轨道",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "余伴随轨道是余伴随表示在 $\\mathfrak g^*$ 中的轨道。对 $\\ell\\in\\mathfrak g^*$，$\\mathcal O_\\ell=\\{\\operatorname{Ad}^*_g\\ell\\mid g\\in G\\}$；切空间可由 $\\operatorname{ad}^*_X\\ell$ 描述。\n\n它天然带辛形式 $\\omega_\\ell(\\operatorname{ad}^*_X\\ell,\\operatorname{ad}^*_Y\\ell)=\\ell([X,Y])$。这使余伴随轨道成为表示论和辛几何之间的桥梁。 表示论把抽象对称性变成向量空间上的算子，同时保留括号或群乘法。$U(\\mathfrak g)$、中心、矩阵系数和轨道分别记录代数、标量作用、函数模型和几何模型；伴随与余伴随、原表示与对偶表示作用空间不同，不能互换。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。 局部括号可以解释无穷小对称，群的中心、覆盖和离散商则控制全局差别；两层信息合在一起才形成完整的李理论图像。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "余伴随轨道",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%99%E4%BC%B4%E9%9A%8F%E8%BD%A8%E9%81%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "余伴随轨道",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%99%E4%BC%B4%E9%9A%8F%E8%BD%A8%E9%81%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "co accompaniment orbit",
+          "url": "https://en.wikipedia.org/w/index.php?search=co%20accompaniment%20orbit"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "基里洛夫轨道方法",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "基里洛夫轨道方法把李群的不可约表示与余伴随轨道联系起来。对幂零李群，这种对应尤其清晰：轨道 $\\mathcal O\\subset\\mathfrak g^*$ 通过极化子代数构造诱导表示。\n\n它不是简单的一一字典，在一般半单或非幂零群中需要修正和分析条件。轨道方法的核心是余伴随轨道上的辛结构和几何量子化思想。 表示论把抽象对称性变成向量空间上的算子，同时保留括号或群乘法。$U(\\mathfrak g)$、中心、矩阵系数和轨道分别记录代数、标量作用、函数模型和几何模型；伴随与余伴随、原表示与对偶表示作用空间不同，不能互换。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "基里洛夫轨道方法",
+          "url": "https://www.baidu.com/s?wd=%E5%9F%BA%E9%87%8C%E6%B4%9B%E5%A4%AB%E8%BD%A8%E9%81%93%E6%96%B9%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "基里洛夫轨道方法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9F%BA%E9%87%8C%E6%B4%9B%E5%A4%AB%E8%BD%A8%E9%81%93%E6%96%B9%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kirillov orbital method",
+          "url": "https://en.wikipedia.org/w/index.php?search=kirillov%20orbital%20method"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "波莱尔子代数",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "Borel 子代数是复半单李代数中的极大可解子代数。选择正根后，标准形式为 $\\mathfrak b=\\mathfrak h\\oplus\\bigoplus_{\\alphai\\Phi^+}\\mathfrak g_\\alpha$。\n\n它不同于 Cartan 子代数，Cartan 是交换半单部分，Borel 还包含正根空间。Borel 子代数决定旗流形 $G/B$、最高权向量和 Verma 模的诱导起点。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。 局部括号可以解释无穷小对称，群的中心、覆盖和离散商则控制全局差别；两层信息合在一起才形成完整的李理论图像。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "波莱尔子代数",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A2%E8%8E%B1%E5%B0%94%E5%AD%90%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "波莱尔子代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A2%E8%8E%B1%E5%B0%94%E5%AD%90%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "borel subalgebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=borel%20subalgebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "抛物子代数",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "抛物子代数是包含某个 Borel 子代数的子代数。相对于单根集合，抛物子代数由保留部分负根空间构成，常写 $\\mathfrak p\\supset\\mathfrak b$。\n\n它介于 Borel 子代数和整个半单李代数之间。抛物子代数对应广义旗流形 $G/P$，其 Levi 分解把它拆成约化部分和幂零根基；表示诱导和几何表示论都用到它。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "抛物子代数",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%9B%E7%89%A9%E5%AD%90%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "抛物子代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%9B%E7%89%A9%E5%AD%90%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "parabolic algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=parabolic%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "旗流形",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "旗流形是由李群商空间 $G/B$ 或 $G/P$ 得到的齐性复流形。对 $GL(n)$，它参数化向量空间中的嵌套子空间链；一般情形中 $B$ 是 Borel 子群，$P$ 是抛物子群。\n\n它不同于普通旗簇的线性代数模型，李理论中更强调群作用和根分解。Schubert 分解、Borel-Weil 定理和表示几何都以旗流形为基本空间。 这些对象处在群或齐性空间层面，除了李代数外还包含闭性、紧性、中心、覆盖和商空间拓扑。分解公式如 $G=KAN$、$G/K$ 或 $G=\\bigsqcup BwB$ 不是单纯记号，而是在分析、几何和表示诱导中选择坐标。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "旗流形",
+          "url": "https://www.baidu.com/s?wd=%E6%97%97%E6%B5%81%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "旗流形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%97%97%E6%B5%81%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "flag manifold",
+          "url": "https://en.wikipedia.org/w/index.php?search=flag%20manifold"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "卡茨穆迪代数",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "Kac-Moody 代数由广义嘉当矩阵定义，推广有限维半单李代数。生成元 $e_i,f_i,h_i$ 满足 $[h_i,e_j]=a_{ij}e_j$、$[h_i,f_j]=-a_{ij}f_j$ 以及 Serre 关系。\n\n它可能无限维，根系也可含虚根。有限型给回半单李代数，仿射型给仿射李代数；Kac-Moody 结构在表示论、可积系统和共形场论中出现。 实半单和无限维语境中，复根系往往不够用，还要加入 Cartan 对合、限制根、$K$-型、中心扩张或 Plancherel 测度等数据。Harish-Chandra 理论把 $\\mathfrak g$、$K$、中心和矩阵系数共同组织起来，区别于有限维复半单表示论。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "卡茨穆迪代数",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%A1%E8%8C%A8%E7%A9%86%E8%BF%AA%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "卡茨穆迪代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%A1%E8%8C%A8%E7%A9%86%E8%BF%AA%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kac moody algebraic",
+          "url": "https://en.wikipedia.org/w/index.php?search=kac%20moody%20algebraic"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "仿射李代数",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "仿射李代数是环路代数的中心扩张再加导子得到的 Kac-Moody 代数。典型形式为 $\\widehat{\\mathfrak g}=\\mathfrak g\\otimes\\mathbb C[t,t^{-1}]\\oplus\\mathbb C K\\oplus\\mathbb C d$。\n\n它不同于有限维半单李代数，具有无限多个根空间和层级。中心元 $K$ 的标量称为 level，最高权表示、WZW 模型和仿射 Weyl 群都围绕它展开。 实半单和无限维语境中，复根系往往不够用，还要加入 Cartan 对合、限制根、$K$-型、中心扩张或 Plancherel 测度等数据。Harish-Chandra 理论把 $\\mathfrak g$、$K$、中心和矩阵系数共同组织起来，区别于有限维复半单表示论。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "仿射李代数",
+          "url": "https://www.baidu.com/s?wd=%E4%BB%BF%E5%B0%84%E6%9D%8E%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "仿射李代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BB%BF%E5%B0%84%E6%9D%8E%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "affine lie algebra",
+          "url": "https://en.wikipedia.org/w/index.php?search=affine%20lie%20algebra"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "维拉索罗代数",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "维拉索罗代数是 Witt 代数的中心扩张。基元 $L_n$ 和中心 $C$ 满足 $[L_m,L_n]=(m-n)L_{m+n}+\\frac{m^3-m}{12}\\delta_{m+n,0}C$，且 $C$ 中心。\n\n它不同于普通向量场代数，中心项对表示论至关重要。维拉索罗代数是二维共形场论、模形式和无限维李代数表示中的核心对象。 实半单和无限维语境中，复根系往往不够用，还要加入 Cartan 对合、限制根、$K$-型、中心扩张或 Plancherel 测度等数据。Harish-Chandra 理论把 $\\mathfrak g$、$K$、中心和矩阵系数共同组织起来，区别于有限维复半单表示论。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "维拉索罗代数",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%B4%E6%8B%89%E7%B4%A2%E7%BD%97%E4%BB%A3%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "维拉索罗代数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%B4%E6%8B%89%E7%B4%A2%E7%BD%97%E4%BB%A3%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "virasoro algebraic",
+          "url": "https://en.wikipedia.org/w/index.php?search=virasoro%20algebraic"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "实半单李群",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "实半单李群是李代数为实半单李代数的李群，通常还要求有限中心或连通性条件。其李代数满足可解根基为零，Cartan 分解写作 $\\mathfrak g=\\mathfrak k\\oplus\\mathfrak p$。\n\n它不同于复半单群，因为实形式、限制根系和 maximal compact 子群会影响表示。Harish-Chandra 理论、Iwasawa 分解和球函数都以实半单李群为背景。 实半单和无限维语境中，复根系往往不够用，还要加入 Cartan 对合、限制根、$K$-型、中心扩张或 Plancherel 测度等数据。Harish-Chandra 理论把 $\\mathfrak g$、$K$、中心和矩阵系数共同组织起来，区别于有限维复半单表示论。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "实半单李群",
+          "url": "https://www.baidu.com/s?wd=%E5%AE%9E%E5%8D%8A%E5%8D%95%E6%9D%8E%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "实半单李群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AE%9E%E5%8D%8A%E5%8D%95%E6%9D%8E%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "real semisimple lie group",
+          "url": "https://en.wikipedia.org/w/index.php?search=real%20semisimple%20lie%20group"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "最高权表示",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "最高权表示由一个被正根部分杀掉的权向量生成。若 $v_\\lambda$ 满足 $\\mathfrak n^+v_\\lambda=0$ 且 $Hv_\\lambda=\\lambda(H)v_\\lambda$，则由 $v_\\lambda$ 生成的表示称最高权表示。\n\n它不同于任意权表示，最高权要求存在顶端权。有限维不可约表示和 Verma 模都属于最高权框架；主导整性决定是否得到有限维表示。 表示论把抽象对称性变成向量空间上的算子，同时保留括号或群乘法。$U(\\mathfrak g)$、中心、矩阵系数和轨道分别记录代数、标量作用、函数模型和几何模型；伴随与余伴随、原表示与对偶表示作用空间不同，不能互换。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最高权表示",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E9%AB%98%E6%9D%83%E8%A1%A8%E7%A4%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最高权表示",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E9%AB%98%E6%9D%83%E8%A1%A8%E7%A4%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "highest weight representation",
+          "url": "https://en.wikipedia.org/w/index.php?search=highest%20weight%20representation"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "维尔马模",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "Verma 模是从 Borel 子代数的一维表示诱导出的最高权模。定义为 $M(\\lambda)=U(\\mathfrak g)\\otimes_{U(\\mathfrak b)}\\mathbb C_\\lambda$，其中 $\\mathfrak n^+$ 作用为零，$\\mathfrak h$ 以权 $\\lambda$ 作用。\n\n它通常无限维，并有唯一不可约商。Verma 模是最高权范畴的标准对象，用于研究特征公式、BGG 分解和半单李代数表示结构。 表示论把抽象对称性变成向量空间上的算子，同时保留括号或群乘法。$U(\\mathfrak g)$、中心、矩阵系数和轨道分别记录代数、标量作用、函数模型和几何模型；伴随与余伴随、原表示与对偶表示作用空间不同，不能互换。 表示把李群或李代数作用到向量空间上，局部微分和全局拓扑都可能影响结果。最高权、无穷小特征、矩阵系数和 $K$ 型分别记录代数、分析与紧子群方向的信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "维尔马模",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%B4%E5%B0%94%E9%A9%AC%E6%A8%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "维尔马模",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%B4%E5%B0%94%E9%A9%AC%E6%A8%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "verma module",
+          "url": "https://en.wikipedia.org/w/index.php?search=verma%20module"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "哈里什钱德拉模",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "Harish-Chandra 模是实约化李群表示的代数核心。对 pair $(\\mathfrak g,K)$，它是 $\\mathfrak g$-模并带兼容的 $K$-作用，且每个 $K$-型有限重出现，常要求有限生成。\n\n它不同于任意李代数模，因为必须兼顾最大紧子群的 $K$-有限结构。光滑 Fréchet 表示的 $K$-有限向量形成 Harish-Chandra 模，是实群表示分类的关键对象。 实半单和无限维语境中，复根系往往不够用，还要加入 Cartan 对合、限制根、$K$-型、中心扩张或 Plancherel 测度等数据。Harish-Chandra 理论把 $\\mathfrak g$、$K$、中心和矩阵系数共同组织起来，区别于有限维复半单表示论。 表示把李群或李代数作用到向量空间上，局部微分和全局拓扑都可能影响结果。最高权、无穷小特征、矩阵系数和 $K$ 型分别记录代数、分析与紧子群方向的信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "哈里什钱德拉模",
+          "url": "https://www.baidu.com/s?wd=%E5%93%88%E9%87%8C%E4%BB%80%E9%92%B1%E5%BE%B7%E6%8B%89%E6%A8%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "哈里什钱德拉模",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%93%88%E9%87%8C%E4%BB%80%E9%92%B1%E5%BE%B7%E6%8B%89%E6%A8%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "harish chandra mod",
+          "url": "https://en.wikipedia.org/w/index.php?search=harish%20chandra%20mod"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "K型",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "$K$-型是表示限制到最大紧子群 $K$ 后出现的不可约表示类型。若 $V$ 是 $G$-表示，分解中某个不可约 $K$-表示 $\\tau$ 的同构类称为 $K$-型。\n\n它不同于 $G$ 的不可约表示本身，只记录紧子群方向。Harish-Chandra 模要求每个 $K$-型有限重出现；$K$-型分解是研究实半单表示、球表示和离散系列的重要工具。 实半单和无限维语境中，复根系往往不够用，还要加入 Cartan 对合、限制根、$K$-型、中心扩张或 Plancherel 测度等数据。Harish-Chandra 理论把 $\\mathfrak g$、$K$、中心和矩阵系数共同组织起来，区别于有限维复半单表示论。 表示把李群或李代数作用到向量空间上，局部微分和全局拓扑都可能影响结果。最高权、无穷小特征、矩阵系数和 $K$ 型分别记录代数、分析与紧子群方向的信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "K型",
+          "url": "https://www.baidu.com/s?wd=K%E5%9E%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "K型",
+          "url": "https://zh.wikipedia.org/w/index.php?search=K%E5%9E%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "k type",
+          "url": "https://en.wikipedia.org/w/index.php?search=k%20type"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "K有限向量",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "$K$-有限向量是在最大紧子群作用下生成有限维子空间的向量。对表示 $V$ 和 $v\\in V$，若 $\\operatorname{span}\\{k\\cdot v\\mid k\\in K\\}$ 有限维，则 $v$ 是 $K$-有限向量。\n\n它不同于任意光滑向量，要求紧群轨道张成有限维表示。所有 $K$-有限向量构成 Harish-Chandra 模的底层空间，使分析表示可转化为代数 $(\\mathfrak g,K)$-模问题。 实半单和无限维语境中，复根系往往不够用，还要加入 Cartan 对合、限制根、$K$-型、中心扩张或 Plancherel 测度等数据。Harish-Chandra 理论把 $\\mathfrak g$、$K$、中心和矩阵系数共同组织起来，区别于有限维复半单表示论。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "K有限向量",
+          "url": "https://www.baidu.com/s?wd=K%E6%9C%89%E9%99%90%E5%90%91%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "K有限向量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=K%E6%9C%89%E9%99%90%E5%90%91%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "K finite vector",
+          "url": "https://en.wikipedia.org/w/index.php?search=K%20finite%20vector"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "无穷小特征",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "无穷小特征描述包络代数中心在不可约表示上的作用。若 $Z(U(\\mathfrak g))$ 的中心元 $z$ 在表示 $V$ 上按标量 $\\chi(z)$ 作用，则同态 $\\chi:Z(U(\\mathfrak g))\\to\\mathbb C$ 称无穷小特征。\n\n它不同于最高权本身，但由 Harish-Chandra 同构可与外尔群轨道中的权联系。无穷小特征用于分类 Harish-Chandra 模和刻画中心作用。 表示论把抽象对称性变成向量空间上的算子，同时保留括号或群乘法。$U(\\mathfrak g)$、中心、矩阵系数和轨道分别记录代数、标量作用、函数模型和几何模型；伴随与余伴随、原表示与对偶表示作用空间不同，不能互换。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "无穷小特征",
+          "url": "https://www.baidu.com/s?wd=%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%89%B9%E5%BE%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "无穷小特征",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%89%B9%E5%BE%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "infinitesimal features",
+          "url": "https://en.wikipedia.org/w/index.php?search=infinitesimal%20features"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "坎贝尔豪斯多夫公式",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "坎贝尔-豪斯多夫公式描述李群局部乘法在李代数中的展开。若 $X,Y$ 足够小，则 $\\log(\\exp X\\exp Y)=X+Y+\\frac12[X,Y]+\\frac1{12}[X,[X,Y]]-\\frac1{12}[Y,[X,Y]]+\\cdots$。\n\n它说明非交换性由嵌套李括号逐级修正。若括号全为零，公式退化为 $X+Y$；幂零李代数中级数有限，因此特别易用。 实半单和无限维语境中，复根系往往不够用，还要加入 Cartan 对合、限制根、$K$-型、中心扩张或 Plancherel 测度等数据。Harish-Chandra 理论把 $\\mathfrak g$、$K$、中心和矩阵系数共同组织起来，区别于有限维复半单表示论。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "坎贝尔豪斯多夫公式",
+          "url": "https://www.baidu.com/s?wd=%E5%9D%8E%E8%B4%9D%E5%B0%94%E8%B1%AA%E6%96%AF%E5%A4%9A%E5%A4%AB%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "坎贝尔豪斯多夫公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9D%8E%E8%B4%9D%E5%B0%94%E8%B1%AA%E6%96%AF%E5%A4%9A%E5%A4%AB%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "campbell hausdorff formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=campbell%20hausdorff%20formula"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "贝克坎贝尔豪斯多夫公式",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "贝克-坎贝尔-豪斯多夫公式给出 $\\exp X\\exp Y$ 的对数。常写 $\\exp X\\exp Y=\\exp(X+Y+\\frac12[X,Y]+\\cdots)$，省略项由更高重嵌套括号组成。\n\n它与坎贝尔-豪斯多夫公式是同一公式族的常用名称。BCH 公式把李群局部结构完全写入李代数括号，支撑李第三定理、包络代数计算和形式群理论。 实半单和无限维语境中，复根系往往不够用，还要加入 Cartan 对合、限制根、$K$-型、中心扩张或 Plancherel 测度等数据。Harish-Chandra 理论把 $\\mathfrak g$、$K$、中心和矩阵系数共同组织起来，区别于有限维复半单表示论。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "贝克坎贝尔豪斯多夫公式",
+          "url": "https://www.baidu.com/s?wd=%E8%B4%9D%E5%85%8B%E5%9D%8E%E8%B4%9D%E5%B0%94%E8%B1%AA%E6%96%AF%E5%A4%9A%E5%A4%AB%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "贝克坎贝尔豪斯多夫公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B4%9D%E5%85%8B%E5%9D%8E%E8%B4%9D%E5%B0%94%E8%B1%AA%E6%96%AF%E5%A4%9A%E5%A4%AB%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "baker campbell hausdorff formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=baker%20campbell%20hausdorff%20formula"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "嘉当对合",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "Cartan 对合是实半单李代数上的特殊 involution。它满足 $\\theta^2=1$，并使双线性型 $B_\\theta(X,Y)=-B(X,\\theta Y)$ 正定；由此得到 $\\mathfrak g=\\mathfrak k\\oplus\\mathfrak p$。\n\n它不同于任意对合，正定性保证 $\\mathfrak k$ 是紧型方向。Cartan 对合决定 Cartan 分解、对称空间 $G/K$ 和限制根系，是实半单理论的基础。 实半单和无限维语境中，复根系往往不够用，还要加入 Cartan 对合、限制根、$K$-型、中心扩张或 Plancherel 测度等数据。Harish-Chandra 理论把 $\\mathfrak g$、$K$、中心和矩阵系数共同组织起来，区别于有限维复半单表示论。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。 局部括号可以解释无穷小对称，群的中心、覆盖和离散商则控制全局差别；两层信息合在一起才形成完整的李理论图像。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "嘉当对合",
+          "url": "https://www.baidu.com/s?wd=%E5%98%89%E5%BD%93%E5%AF%B9%E5%90%88%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "嘉当对合",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%98%89%E5%BD%93%E5%AF%B9%E5%90%88"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cartan couple",
+          "url": "https://en.wikipedia.org/w/index.php?search=cartan%20couple"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "对称对",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "对称对由李代数和一个对合自同构组成。若 $\\theta^2=1$，则 $\\mathfrak g=\\mathfrak k\\oplus\\mathfrak p$，其中 $\\mathfrak k$、$\\mathfrak p$ 分别为 $+1$、$-1$ 特征空间，并满足 $[\\mathfrak k,\\mathfrak p]\\subset\\mathfrak p$、$[\\mathfrak p,\\mathfrak p]\\subset\\mathfrak k$。\n\n它对应对称空间的无穷小结构。对称对不同于任意子代数对，括号关系由对合强制；Cartan 对合给出重要例子。 实半单和无限维语境中，复根系往往不够用，还要加入 Cartan 对合、限制根、$K$-型、中心扩张或 Plancherel 测度等数据。Harish-Chandra 理论把 $\\mathfrak g$、$K$、中心和矩阵系数共同组织起来，区别于有限维复半单表示论。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。 局部括号可以解释无穷小对称，群的中心、覆盖和离散商则控制全局差别；两层信息合在一起才形成完整的李理论图像。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对称对",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E7%A7%B0%E5%AF%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对称对",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E7%A7%B0%E5%AF%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "symmetrical pair",
+          "url": "https://en.wikipedia.org/w/index.php?search=symmetrical%20pair"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "限制根系",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "限制根系来自实半单李代数中 $\\mathfrak a\\subset\\mathfrak p$ 的伴随特征值。定义 $\\mathfrak g_\\alpha=\\{X\\mid [H,X]=\\alpha(H)X,\\ H\\in\\mathfrak a\\}$，非零 $\\alpha$ 组成 $\\Sigma$。\n\n它不同于复根系，根空间维数可大于一，根重数也成为数据。限制根系控制 Iwasawa 分解、球函数和实对称空间的径向分析。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。 根系决定反射和括号结构，权系决定给定表示中的特征空间；二者都在 $\\mathfrak h^*$ 中，但服务于不同的分类问题。 根反映伴随作用的方向，权反映给定表示的特征空间；二者共享坐标，却服务于不同分类。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "限制根系",
+          "url": "https://www.baidu.com/s?wd=%E9%99%90%E5%88%B6%E6%A0%B9%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "限制根系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%99%90%E5%88%B6%E6%A0%B9%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "restrict root system",
+          "url": "https://en.wikipedia.org/w/index.php?search=restrict%20root%20system"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "根重数",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "根重数是限制根系或一般根分解中某个根空间的维数。对限制根 $\\alpha$，$m_\\alpha=\\dim\\mathfrak g_\\alpha$；复半单李代数普通根空间通常重数为一。\n\n它不同于权重数，权重数属于表示空间。限制根重数影响 Weyl 积分公式、球函数的径向部分和对称空间体积增长，是实半单理论中不可忽略的数据。 根来自伴随表示，权来自给定表示；选择正根以后，单根、最高权、外尔室和戴金图才有统一坐标。连续的李代数问题常因此转成根格、权格和反射群上的组合计算。 根系决定反射和括号结构，权系决定给定表示中的特征空间；二者都在 $\\mathfrak h^*$ 中，但服务于不同的分类问题。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "根重数",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%B9%E9%87%8D%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "根重数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%B9%E9%87%8D%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "root heavy number",
+          "url": "https://en.wikipedia.org/w/index.php?search=root%20heavy%20number"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "极小抛物子群",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "极小抛物子群是实约化群中包含极大可解结构的最小抛物子群。相对于 Iwasawa 分解 $G=KAN$，常写 $P=MAN$，其中 $M=Z_K(A)$。\n\n它不同于复群中的 Borel 子群，但在实群理论中承担类似角色。主级数表示通常从极小抛物子群诱导而来；限制根和 Langlands 分解都围绕 $P$ 展开。 实半单和无限维语境中，复根系往往不够用，还要加入 Cartan 对合、限制根、$K$-型、中心扩张或 Plancherel 测度等数据。Harish-Chandra 理论把 $\\mathfrak g$、$K$、中心和矩阵系数共同组织起来，区别于有限维复半单表示论。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "极小抛物子群",
+          "url": "https://www.baidu.com/s?wd=%E6%9E%81%E5%B0%8F%E6%8A%9B%E7%89%A9%E5%AD%90%E7%BE%A4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "极小抛物子群",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9E%81%E5%B0%8F%E6%8A%9B%E7%89%A9%E5%AD%90%E7%BE%A4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "minimal parabolic subgroup",
+          "url": "https://en.wikipedia.org/w/index.php?search=minimal%20parabolic%20subgroup"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "朗兰兹分解",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "Langlands 分解把抛物子群写成约化、阿贝尔和幂零部分。对实约化群的抛物子群 $P$，常有 $P=MAN$，其中 $M$ 约化，$A$ 阿贝尔分裂，$N$ 幂零。\n\n它不同于 Iwasawa 分解的全群 $KAN$，Langlands 分解针对抛物子群。诱导表示、常数项和 Eisenstein 级数都依赖 $M,A,N$ 三部分的分离。 实半单和无限维语境中，复根系往往不够用，还要加入 Cartan 对合、限制根、$K$-型、中心扩张或 Plancherel 测度等数据。Harish-Chandra 理论把 $\\mathfrak g$、$K$、中心和矩阵系数共同组织起来，区别于有限维复半单表示论。 群层面的结构包含拓扑、闭子群和商空间信息，不能只由李代数括号恢复。指数映射连接局部方向，陪集空间、极大环面和各种分解则把全局对称拆成较容易处理的部分。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "朗兰兹分解",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%97%E5%85%B0%E5%85%B9%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "朗兰兹分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%97%E5%85%B0%E5%85%B9%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "langlands decomposition",
+          "url": "https://en.wikipedia.org/w/index.php?search=langlands%20decomposition"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "球函数",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "球函数是相对于紧子群双不变的特征函数。对 Gelfand pair $(G,K)$，球函数 $\\varphi$ 常满足 $\\varphi(k_1gk_2)=\\varphi(g)$，并是交换代数 $D(G/K)$ 的共同特征函数。\n\n它不同于一般矩阵系数，球函数选择了 $K$-不变向量。实半单群上，Harish-Chandra 球函数控制径向调和分析、Plancherel 公式和对称空间上的傅里叶变换。 实半单和无限维语境中，复根系往往不够用，还要加入 Cartan 对合、限制根、$K$-型、中心扩张或 Plancherel 测度等数据。Harish-Chandra 理论把 $\\mathfrak g$、$K$、中心和矩阵系数共同组织起来，区别于有限维复半单表示论。 表示把李群或李代数作用到向量空间上，局部微分和全局拓扑都可能影响结果。最高权、无穷小特征、矩阵系数和 $K$ 型分别记录代数、分析与紧子群方向的信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "球函数",
+          "url": "https://www.baidu.com/s?wd=%E7%90%83%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "球函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%90%83%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "spherical function",
+          "url": "https://en.wikipedia.org/w/index.php?search=spherical%20function"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "哈里什钱德拉同构",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "Harish-Chandra 同构把包络代数中心与 Weyl 群不变量多项式联系起来。复半单情形中，$Z(U(\\mathfrak g))\\cong S(\\mathfrak h)^W$，通常带有 $\\rho$-平移修正。\n\n它说明无穷小特征可由权的 Weyl 轨道描述。该同构不同于 PBW 定理，PBW 描述整个包络代数的线性基，Harish-Chandra 同构只刻画中心。 实半单和无限维语境中，复根系往往不够用，还要加入 Cartan 对合、限制根、$K$-型、中心扩张或 Plancherel 测度等数据。Harish-Chandra 理论把 $\\mathfrak g$、$K$、中心和矩阵系数共同组织起来，区别于有限维复半单表示论。 李理论里，群、李代数、包络代数和上同调位于不同层级。括号给无穷小交换，$\\exp:\\mathfrak g\\to G$ 连接局部流，中心扩张和上同调则记录不能由普通表示直接看出的缺口。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "哈里什钱德拉同构",
+          "url": "https://www.baidu.com/s?wd=%E5%93%88%E9%87%8C%E4%BB%80%E9%92%B1%E5%BE%B7%E6%8B%89%E5%90%8C%E6%9E%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "哈里什钱德拉同构",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%93%88%E9%87%8C%E4%BB%80%E9%92%B1%E5%BE%B7%E6%8B%89%E5%90%8C%E6%9E%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "harishchandra isomorphism",
+          "url": "https://en.wikipedia.org/w/index.php?search=harishchandra%20isomorphism"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "普朗歇雷尔公式",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "Plancherel 公式把群或齐性空间上的 $L^2$ 范数分解为不可约酉表示的积分。抽象写法为 $\\|f\\|_{L^2(G)}^2=\\int_{\\widehat G}\\|\\widehat f(\\pi)\\|_{HS}^2\\,d\\mu(\\pi)$。\n\n它推广 Fourier 等距公式。对非紧半单群，Plancherel 测度由 Harish-Chandra 理论描述；它不同于 Peter-Weyl 定理的离散直和，通常包含连续谱。 实半单和无限维语境中，复根系往往不够用，还要加入 Cartan 对合、限制根、$K$-型、中心扩张或 Plancherel 测度等数据。Harish-Chandra 理论把 $\\mathfrak g$、$K$、中心和矩阵系数共同组织起来，区别于有限维复半单表示论。 表示把李群或李代数作用到向量空间上，局部微分和全局拓扑都可能影响结果。最高权、无穷小特征、矩阵系数和 $K$ 型分别记录代数、分析与紧子群方向的信息。 这类信息同时受李代数作用、紧子群分解和全局群结构影响；有限维最高权理论与无限维表示论因此不能用同一套直觉替代。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "普朗歇雷尔公式",
+          "url": "https://www.baidu.com/s?wd=%E6%99%AE%E6%9C%97%E6%AD%87%E9%9B%B7%E5%B0%94%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "普朗歇雷尔公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%99%AE%E6%9C%97%E6%AD%87%E9%9B%B7%E5%B0%94%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "plancherer formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=plancherer%20formula"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    },
+    {
+      "chinese_name": "矩阵系数",
+      "source_file": "words/数学/困难模式/lie_groups_lie_algebras_terms.csv",
+      "explanation_markdown": "矩阵系数是表示中由向量和对偶向量给出的函数。若 $\\pi:G\\to GL(V)$，$v\\in V$、$\\ell\\in V^*$，则 $f_{\\ell,v}(g)=\\ell(\\pi(g)v)$。\n\n它把表示转化为群上的函数。紧群的 Peter-Weyl 定理说明矩阵系数张成 $L^2(G)$ 的稠密子空间；在实约化群中，矩阵系数的衰减和可积性反映表示性质。 表示论把抽象对称性变成向量空间上的算子，同时保留括号或群乘法。$U(\\mathfrak g)$、中心、矩阵系数和轨道分别记录代数、标量作用、函数模型和几何模型；伴随与余伴随、原表示与对偶表示作用空间不同，不能互换。 表示把李群或李代数作用到向量空间上，局部微分和全局拓扑都可能影响结果。最高权、无穷小特征、矩阵系数和 $K$ 型分别记录代数、分析与紧子群方向的信息。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "矩阵系数",
+          "url": "https://www.baidu.com/s?wd=%E7%9F%A9%E9%98%B5%E7%B3%BB%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "矩阵系数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9F%A9%E9%98%B5%E7%B3%BB%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "matrix coefficient",
+          "url": "https://en.wikipedia.org/w/index.php?search=matrix%20coefficient"
+        }
+      ],
+      "complete_clues": [],
+      "fragmented_clues": []
+    }
+  ]
+}

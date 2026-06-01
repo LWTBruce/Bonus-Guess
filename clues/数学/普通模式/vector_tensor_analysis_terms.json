@@ -1,0 +1,2405 @@
+{
+  "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+  "entries": [
+    {
+      "chinese_name": "向量场",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "向量场是在空间或流形每一点指定一个切向量的对象。常写成 $X(p)\\in T_pM$，其中$p$ 是点，$T_pM$ 是该点切空间。\n\n它不同于标量场，标量场每点给数；向量场每点给方向和大小。流速场、力场和微分方程的相流都可用向量场描述。向量场是向量分析的基本对象之一，实际使用时要先分清每一点给的是数值、方向还是线性映射。物理场、流体速度和几何流都可用向量场描述，后续的微分算子会把局部变化转成可积分的量。向量场的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "向量场",
+          "url": "https://www.baidu.com/s?wd=%E5%90%91%E9%87%8F%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "向量场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%91%E9%87%8F%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vector field",
+          "url": "https://en.wikipedia.org/w/index.php?search=vector%20field"
+        }
+      ]
+    },
+    {
+      "chinese_name": "标量场",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "标量场指在空间或流形每一点赋予一个数值的函数。常写成 $f:M\\to\\mathbb R$，其中$M$ 是空间或流形，$f(p)$ 是点 $p$ 的数值。\n\n它与向量场不同，没有切向方向；梯度会从标量场的变化中产生向量或一形式。温度、势能和压力常作为标量场处理。标量场是向量分析的基本对象之一，实际使用时要先分清每一点给的是数值、方向还是线性映射。物理场、流体速度和几何流都可用标量场描述，后续的微分算子会把局部变化转成可积分的量。标量场的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "标量场",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%87%E9%87%8F%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "标量场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%87%E9%87%8F%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "scalar field",
+          "url": "https://en.wikipedia.org/w/index.php?search=scalar%20field"
+        }
+      ]
+    },
+    {
+      "chinese_name": "梯度",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "梯度用来描述表示标量场增长最快方向和增长率的向量场。一个核心表达是 $df(v)=\\langle\\nabla f,v\\rangle$，这里$df$ 是微分，$v$ 是切向量，度量把一形式转成向量。\n\n它不同于方向导数，梯度是对象，方向导数是梯度在某方向上的分量。在曲线坐标或流形上，梯度依赖度量而不只是偏导数组。在三维向量分析里，梯度和梯度、散度、旋度的关系由积分定理连接；局部微分量常可转成边界上的通量或环量。梯度既可按坐标公式计算，也可用几何语言理解，关键是分清方向、取向和积分域的维数。梯度的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "梯度",
+          "url": "https://www.baidu.com/s?wd=%E6%A2%AF%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "梯度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A2%AF%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gradient",
+          "url": "https://en.wikipedia.org/w/index.php?search=gradient"
+        }
+      ]
+    },
+    {
+      "chinese_name": "散度",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "散度刻画衡量向量场在一点附近源汇强度的标量。一个核心表达是 $\\nabla\\cdot F=\\partial_iF^i$，这里$F^i$ 是向量场分量，重复指标表示求和。\n\n它与旋度不同，散度输出标量并描述流出量，旋度输出局部旋转。散度定理把区域内散度积分与边界通量联系起来。在三维向量分析里，散度和梯度、散度、旋度的关系由积分定理连接；局部微分量常可转成边界上的通量或环量。散度既可按坐标公式计算，也可用几何语言理解，关键是分清方向、取向和积分域的维数。散度的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "散度",
+          "url": "https://www.baidu.com/s?wd=%E6%95%A3%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "散度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%95%A3%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "divergence",
+          "url": "https://en.wikipedia.org/w/index.php?search=divergence"
+        }
+      ]
+    },
+    {
+      "chinese_name": "旋度",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "旋度是衡量三维向量场局部旋转趋势的向量。在常用记号中有 $(\\nabla\\times F)^i=\\varepsilon^{ijk}\\partial_jF_k$，其中$\\varepsilon^{ijk}$ 是列维奇维塔符号，$F_k$ 是分量。\n\n它不同于散度，旋度关注环量密度而不是源汇；在微分形式中对应外微分。Stokes公式把曲面上旋度通量与边界环量相连。在三维向量分析里，旋度和梯度、散度、旋度的关系由积分定理连接；局部微分量常可转成边界上的通量或环量。旋度既可按坐标公式计算，也可用几何语言理解，关键是分清方向、取向和积分域的维数。旋度的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "旋度",
+          "url": "https://www.baidu.com/s?wd=%E6%97%8B%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "旋度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%97%8B%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "curl",
+          "url": "https://en.wikipedia.org/w/index.php?search=curl"
+        }
+      ]
+    },
+    {
+      "chinese_name": "方向导数",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "方向导数指标量场沿指定方向的瞬时变化率。在常用记号中有 $D_vf=df(v)=\\nabla f\\cdot v$，其中$v$ 是方向向量，$df$ 是一形式。\n\n它与梯度不同，方向导数是一个数；梯度是能给出所有方向导数的向量。若 $v$ 是单位向量，方向导数表示该方向每单位长度的变化。在三维向量分析里，方向导数和梯度、散度、旋度的关系由积分定理连接；局部微分量常可转成边界上的通量或环量。方向导数既可按坐标公式计算，也可用几何语言理解，关键是分清方向、取向和积分域的维数。方向导数的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "方向导数",
+          "url": "https://www.baidu.com/s?wd=%E6%96%B9%E5%90%91%E5%AF%BC%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "方向导数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%96%B9%E5%90%91%E5%AF%BC%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "directional derivative",
+          "url": "https://en.wikipedia.org/w/index.php?search=directional%20derivative"
+        }
+      ]
+    },
+    {
+      "chinese_name": "法向导数",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "法向导数用来描述函数沿边界法向方向的导数。可写作 $\\partial_nf=\\nabla f\\cdot n$，这里$n$ 是单位法向量，$f$ 是标量场。\n\n它与切向导数不同，法向导数测量穿出边界方向的变化。Neumann边界条件常用法向导数给出通量或热流。在三维向量分析里，法向导数和梯度、散度、旋度的关系由积分定理连接；局部微分量常可转成边界上的通量或环量。法向导数既可按坐标公式计算，也可用几何语言理解，关键是分清方向、取向和积分域的维数。法向导数的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "法向导数",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%95%E5%90%91%E5%AF%BC%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "法向导数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%95%E5%90%91%E5%AF%BC%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "normal derivative",
+          "url": "https://en.wikipedia.org/w/index.php?search=normal%20derivative"
+        }
+      ]
+    },
+    {
+      "chinese_name": "切向导数",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "切向导数刻画函数沿曲线、曲面或边界切方向的导数。可写作 $\\partial_\\tau f=\\nabla f\\cdot \\tau$，这里$\\tau$ 是单位切向量，$f$ 是标量场。\n\n它与法向导数互补，切向导数留在边界内部，法向导数离开边界。曲面上的内蕴梯度和边界正则性常需要切向导数。在三维向量分析里，切向导数和梯度、散度、旋度的关系由积分定理连接；局部微分量常可转成边界上的通量或环量。切向导数既可按坐标公式计算，也可用几何语言理解，关键是分清方向、取向和积分域的维数。切向导数的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "切向导数",
+          "url": "https://www.baidu.com/s?wd=%E5%88%87%E5%90%91%E5%AF%BC%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "切向导数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%87%E5%90%91%E5%AF%BC%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tangent derivative",
+          "url": "https://en.wikipedia.org/w/index.php?search=tangent%20derivative"
+        }
+      ]
+    },
+    {
+      "chinese_name": "通量",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "通量是向量场穿过有向曲面的总流量。常写成 $\\Phi=\\int_SF\\cdot n\\,dS$，其中$F$ 是向量场，$n$ 是单位法向，$dS$ 是面积元。\n\n它与环量不同，通量积累穿过曲面的法向分量，环量积累沿曲线的切向分量。流体、电场和磁场模型中通量体现守恒或源汇。在三维向量分析里，通量和梯度、散度、旋度的关系由积分定理连接；局部微分量常可转成边界上的通量或环量。通量既可按坐标公式计算，也可用几何语言理解，关键是分清方向、取向和积分域的维数。通量的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "通量",
+          "url": "https://www.baidu.com/s?wd=%E9%80%9A%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "通量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%80%9A%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "flux",
+          "url": "https://en.wikipedia.org/w/index.php?search=flux"
+        }
+      ]
+    },
+    {
+      "chinese_name": "环量",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "环量指向量场沿闭合曲线切向分量的积分。常写成 $\\Gamma=\\oint_C F\\cdot dr$，其中$C$ 是闭曲线，$dr$ 是切向线元。\n\n它与通量不同，环量沿边界绕行，通量穿过曲面。旋度定理说明环量等于跨越曲面的旋度通量。在三维向量分析里，环量和梯度、散度、旋度的关系由积分定理连接；局部微分量常可转成边界上的通量或环量。环量既可按坐标公式计算，也可用几何语言理解，关键是分清方向、取向和积分域的维数。环量的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。因此理解环量还要看它依赖哪些几何结构，以及哪些结论与坐标选择无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "环量",
+          "url": "https://www.baidu.com/s?wd=%E7%8E%AF%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "环量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%8E%AF%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "circulation amount",
+          "url": "https://en.wikipedia.org/w/index.php?search=circulation%20amount"
+        }
+      ]
+    },
+    {
+      "chinese_name": "线积分",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "线积分用来描述沿曲线累积标量或向量场切向分量的积分。一个核心表达是 $\\int_C f\\,ds\\quad\\text{or}\\quad \\int_C F\\cdot dr$，这里$C$ 是曲线，$ds$ 是弧长元，$dr$ 是向量线元。\n\n它不同于面积分和体积分，积分域是一维曲线。做功、环量和曲线质量都可用线积分表达。在三维向量分析里，线积分和梯度、散度、旋度的关系由积分定理连接；局部微分量常可转成边界上的通量或环量。线积分既可按坐标公式计算，也可用几何语言理解，关键是分清方向、取向和积分域的维数。线积分的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线积分",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E7%A7%AF%E5%88%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线积分",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E7%A7%AF%E5%88%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "line integral",
+          "url": "https://en.wikipedia.org/w/index.php?search=line%20integral"
+        }
+      ]
+    },
+    {
+      "chinese_name": "面积分",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "面积分刻画在曲面上累积标量场或向量场通量的积分。一个核心表达是 $\\int_S f\\,dS\\quad\\text{or}\\quad \\int_SF\\cdot n\\,dS$，这里$S$ 是曲面，$n$ 是法向量。\n\n它不同于线积分，面积分的积分域为二维曲面；通量面积分还依赖取向。曲面质量、热流和电通量都是面积分的典型对象。在三维向量分析里，面积分和梯度、散度、旋度的关系由积分定理连接；局部微分量常可转成边界上的通量或环量。面积分既可按坐标公式计算，也可用几何语言理解，关键是分清方向、取向和积分域的维数。面积分的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "面积分",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%A2%E7%A7%AF%E5%88%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "面积分",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%A2%E7%A7%AF%E5%88%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "area integral",
+          "url": "https://en.wikipedia.org/w/index.php?search=area%20integral"
+        }
+      ]
+    },
+    {
+      "chinese_name": "体积分",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "体积分是在三维区域或高维区域内累积场量的积分。在常用记号中有 $\\int_\\Omega f\\,dV$，其中$\\Omega$ 是区域，$dV$ 是体积元。\n\n它与面积分的差别在积分域维数，体积分关注区域内部而非边界。质量、总电荷和能量常通过密度的体积分得到。在三维向量分析里，体积分和梯度、散度、旋度的关系由积分定理连接；局部微分量常可转成边界上的通量或环量。体积分既可按坐标公式计算，也可用几何语言理解，关键是分清方向、取向和积分域的维数。体积分的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "体积分",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%93%E7%A7%AF%E5%88%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "体积分",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%93%E7%A7%AF%E5%88%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "volume fraction",
+          "url": "https://en.wikipedia.org/w/index.php?search=volume%20fraction"
+        }
+      ]
+    },
+    {
+      "chinese_name": "高斯公式",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "高斯公式指把区域内散度积分转化为边界通量的公式。在常用记号中有 $\\int_\\Omega\\nabla\\cdot F\\,dV=\\int_{\\partial\\Omega}F\\cdot n\\,dS$，其中$\\Omega$ 是区域，$n$ 是外法向。\n\n它与Stokes公式不同，Gauss公式连接体和边界曲面，Stokes公式连接曲面和边界曲线。守恒律和场方程常通过高斯公式从微分形式转成积分形式。在三维向量分析里，高斯公式和梯度、散度、旋度的关系由积分定理连接；局部微分量常可转成边界上的通量或环量。高斯公式既可按坐标公式计算，也可用几何语言理解，关键是分清方向、取向和积分域的维数。高斯公式的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "高斯公式",
+          "url": "https://www.baidu.com/s?wd=%E9%AB%98%E6%96%AF%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "高斯公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%AB%98%E6%96%AF%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gauss formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=gauss%20formula"
+        }
+      ]
+    },
+    {
+      "chinese_name": "斯托克斯公式",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "斯托克斯公式用来描述把曲面上旋度通量转化为边界环量的公式。可写作 $\\int_S(\\nabla\\times F)\\cdot n\\,dS=\\oint_{\\partial S}F\\cdot dr$，这里$S$ 是有向曲面，$\\partial S$ 是边界曲线。\n\n它与高斯公式的维数配对不同，Stokes公式关注曲面的边界曲线。在微分形式语言中，它是 $\\int_Md\\omega=\\int_{\\partial M}\\omega$ 的三维特例。在三维向量分析里，斯托克斯公式和梯度、散度、旋度的关系由积分定理连接；局部微分量常可转成边界上的通量或环量。斯托克斯公式既可按坐标公式计算，也可用几何语言理解，关键是分清方向、取向和积分域的维数。斯托克斯公式的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "斯托克斯公式",
+          "url": "https://www.baidu.com/s?wd=%E6%96%AF%E6%89%98%E5%85%8B%E6%96%AF%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "斯托克斯公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%96%AF%E6%89%98%E5%85%8B%E6%96%AF%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stokes formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=stokes%20formula"
+        }
+      ]
+    },
+    {
+      "chinese_name": "亥姆霍兹分解",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "亥姆霍兹分解刻画把合适向量场分解为无旋部分、无散部分和调和部分的表示。可写作 $F=-\\nabla\\phi+\\nabla\\times A$，这里$\\phi$ 是标量势，$A$ 是向量势。\n\n它不同于单纯求势函数，因为一般向量场同时含梯度型和旋度型成分。电磁场、流体速度场和图像向量场处理中常用这种分解。在三维向量分析里，亥姆霍兹分解和梯度、散度、旋度的关系由积分定理连接；局部微分量常可转成边界上的通量或环量。亥姆霍兹分解既可按坐标公式计算，也可用几何语言理解，关键是分清方向、取向和积分域的维数。亥姆霍兹分解的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "亥姆霍兹分解",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%A5%E5%A7%86%E9%9C%8D%E5%85%B9%E5%88%86%E8%A7%A3%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "亥姆霍兹分解",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%A5%E5%A7%86%E9%9C%8D%E5%85%B9%E5%88%86%E8%A7%A3"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "helmholtz decomposition",
+          "url": "https://en.wikipedia.org/w/index.php?search=helmholtz%20decomposition"
+        }
+      ]
+    },
+    {
+      "chinese_name": "保守场",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "保守场是线积分只与端点有关并可由势函数梯度表示的向量场。常写成 $F=\\nabla\\phi,\\qquad \\oint_C F\\cdot dr=0$，其中$\\phi$ 是势函数，$C$ 是闭曲线。\n\n它与无旋场相近，但全局等价还需要区域拓扑条件。重力场和静电场在单连通区域中常作为保守场处理。在三维向量分析里，保守场和梯度、散度、旋度的关系由积分定理连接；局部微分量常可转成边界上的通量或环量。保守场既可按坐标公式计算，也可用几何语言理解，关键是分清方向、取向和积分域的维数。保守场的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "保守场",
+          "url": "https://www.baidu.com/s?wd=%E4%BF%9D%E5%AE%88%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "保守场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BF%9D%E5%AE%88%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "conservative field",
+          "url": "https://en.wikipedia.org/w/index.php?search=conservative%20field"
+        }
+      ]
+    },
+    {
+      "chinese_name": "无旋场",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "无旋场指旋度为零的向量场。常写成 $\\nabla\\times F=0$，其中$F$ 是向量场，$\\nabla\\times$ 是旋度算子。\n\n它局部可写成梯度场，但在非单连通区域中未必全局保守。势函数存在性、流体势流和电场静态模型都与无旋条件有关。在三维向量分析里，无旋场和梯度、散度、旋度的关系由积分定理连接；局部微分量常可转成边界上的通量或环量。无旋场既可按坐标公式计算，也可用几何语言理解，关键是分清方向、取向和积分域的维数。无旋场的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。因此理解无旋场还要看它依赖哪些几何结构，以及哪些结论与坐标选择无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "无旋场",
+          "url": "https://www.baidu.com/s?wd=%E6%97%A0%E6%97%8B%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "无旋场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%97%A0%E6%97%8B%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "irrotation field",
+          "url": "https://en.wikipedia.org/w/index.php?search=irrotation%20field"
+        }
+      ]
+    },
+    {
+      "chinese_name": "无散场",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "无散场用来描述散度为零的向量场。一个核心表达是 $\\nabla\\cdot F=0$，这里$F$ 是向量场。\n\n它不同于无旋场，无散描述没有局部源汇，无旋描述没有局部环流。不可压缩流和磁场常满足无散条件，并可用向量势表示。在三维向量分析里，无散场和梯度、散度、旋度的关系由积分定理连接；局部微分量常可转成边界上的通量或环量。无散场既可按坐标公式计算，也可用几何语言理解，关键是分清方向、取向和积分域的维数。无散场的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "无散场",
+          "url": "https://www.baidu.com/s?wd=%E6%97%A0%E6%95%A3%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "无散场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%97%A0%E6%95%A3%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "no end",
+          "url": "https://en.wikipedia.org/w/index.php?search=no%20end"
+        }
+      ]
+    },
+    {
+      "chinese_name": "势函数",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "势函数刻画通过导数生成场的标量或向量函数。一个核心表达是 $F=\\nabla\\phi\\quad\\text{or}\\quad F=\\nabla\\times A$，这里$\\phi$ 是标量势，$A$ 是向量势。\n\n它不是唯一的；向量势可加梯度规范项，标量势可加常数。势函数把场方程降为对势的方程，常简化边界条件。在三维向量分析里，势函数和梯度、散度、旋度的关系由积分定理连接；局部微分量常可转成边界上的通量或环量。势函数既可按坐标公式计算，也可用几何语言理解，关键是分清方向、取向和积分域的维数。势函数的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "势函数",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%BF%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "势函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%BF%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "potential function",
+          "url": "https://en.wikipedia.org/w/index.php?search=potential%20function"
+        }
+      ]
+    },
+    {
+      "chinese_name": "向量势",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "向量势是通过旋度产生无散向量场的向量函数。在常用记号中有 $B=\\nabla\\times A$，其中$A$ 是向量势，$B$ 是无散场。\n\n它与标量势不同，标量势通过梯度生成无旋场，向量势通过旋度生成无散场。电磁学中磁场常由向量势表示，规范变换 $A\\mapsto A+\\nabla\\chi$ 不改变 $B$。在三维向量分析里，向量势和梯度、散度、旋度的关系由积分定理连接；局部微分量常可转成边界上的通量或环量。向量势既可按坐标公式计算，也可用几何语言理解，关键是分清方向、取向和积分域的维数。向量势的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "向量势",
+          "url": "https://www.baidu.com/s?wd=%E5%90%91%E9%87%8F%E5%8A%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "向量势",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%91%E9%87%8F%E5%8A%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vector potential",
+          "url": "https://en.wikipedia.org/w/index.php?search=vector%20potential"
+        }
+      ]
+    },
+    {
+      "chinese_name": "标量势",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "标量势指通过梯度生成保守场的标量函数。在常用记号中有 $F=-\\nabla\\phi$，其中$\\phi$ 是标量势，负号常用于力场约定。\n\n它与向量势不同，标量势适合无旋场；向量势适合无散场。电势、重力势和速度势都用标量势表达场的整体结构。在三维向量分析里，标量势和梯度、散度、旋度的关系由积分定理连接；局部微分量常可转成边界上的通量或环量。标量势既可按坐标公式计算，也可用几何语言理解，关键是分清方向、取向和积分域的维数。标量势的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "标量势",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%87%E9%87%8F%E5%8A%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "标量势",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%87%E9%87%8F%E5%8A%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "scalar potential",
+          "url": "https://en.wikipedia.org/w/index.php?search=scalar%20potential"
+        }
+      ]
+    },
+    {
+      "chinese_name": "柱坐标",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "柱坐标用来描述用半径、方位角和高度描述三维点的坐标系。可写作 $x=r\\cos\\theta,\\quad y=r\\sin\\theta,\\quad z=z$，这里$r$ 是到轴距离，$\\theta$ 是方位角。\n\n它不同于球坐标，柱坐标保留轴向高度，适合轴对称但不一定球对称的问题。散度、梯度和体积元中会出现尺度因子 $r$。使用柱坐标时要分清几何对象和坐标分量：坐标变了，分量表达会变，但对象本身应保持同一含义。柱坐标常服务于曲线坐标计算，体积元、度量系数和指标求和规则必须配套使用。柱坐标的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。因此理解柱坐标还要看它依赖哪些几何结构，以及哪些结论与坐标选择无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "柱坐标",
+          "url": "https://www.baidu.com/s?wd=%E6%9F%B1%E5%9D%90%E6%A0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "柱坐标",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9F%B1%E5%9D%90%E6%A0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cylindrical coordinates",
+          "url": "https://en.wikipedia.org/w/index.php?search=cylindrical%20coordinates"
+        }
+      ]
+    },
+    {
+      "chinese_name": "球坐标",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "球坐标刻画用半径和两个角度描述三维点的坐标系。可写作 $x=\\rho\\sin\\varphi\\cos\\theta,\\quad y=\\rho\\sin\\varphi\\sin\\theta,\\quad z=\\rho\\cos\\varphi$，这里$\\rho$ 是半径，$\\varphi,\\theta$ 是角变量。\n\n它与柱坐标的差别在径向距离从原点出发，适合球对称结构。体积元为 $\\rho^2\\sin\\varphi\\,d\\rho d\\varphi d\\theta$，计算积分时必须带上。使用球坐标时要分清几何对象和坐标分量：坐标变了，分量表达会变，但对象本身应保持同一含义。球坐标常服务于曲线坐标计算，体积元、度量系数和指标求和规则必须配套使用。球坐标的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。因此理解球坐标还要看它依赖哪些几何结构，以及哪些结论与坐标选择无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "球坐标",
+          "url": "https://www.baidu.com/s?wd=%E7%90%83%E5%9D%90%E6%A0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "球坐标",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%90%83%E5%9D%90%E6%A0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "spherical coordinates",
+          "url": "https://en.wikipedia.org/w/index.php?search=spherical%20coordinates"
+        }
+      ]
+    },
+    {
+      "chinese_name": "曲线坐标",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "曲线坐标是由一般坐标参数曲线组成的坐标系统。常写成 $ds^2=\\sum_i h_i^2(du^i)^2$，其中$h_i$ 是度量系数，$u^i$ 是坐标。\n\n它比柱坐标和球坐标更一般，尺度因子和基向量随位置变化。在正交曲线坐标中，梯度、散度和旋度公式都由 $h_i$ 修正。使用曲线坐标时要分清几何对象和坐标分量：坐标变了，分量表达会变，但对象本身应保持同一含义。曲线坐标常服务于曲线坐标计算，体积元、度量系数和指标求和规则必须配套使用。曲线坐标的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。因此理解曲线坐标还要看它依赖哪些几何结构，以及哪些结论与坐标选择无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "曲线坐标",
+          "url": "https://www.baidu.com/s?wd=%E6%9B%B2%E7%BA%BF%E5%9D%90%E6%A0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "曲线坐标",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9B%B2%E7%BA%BF%E5%9D%90%E6%A0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "curve coordinate",
+          "url": "https://en.wikipedia.org/w/index.php?search=curve%20coordinate"
+        }
+      ]
+    },
+    {
+      "chinese_name": "雅可比行列式",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "雅可比行列式指变量替换时体积元伸缩比例的行列式。常写成 $J=\\det{\\partial(x^1,\\ldots,x^n)\\over\\partial(u^1,\\ldots,u^n)}$，其中$x$ 是原坐标，$u$ 是新坐标。\n\n它不同于单个偏导数，雅可比行列式记录多维体积和取向变化。多重积分换元、坐标变换和流形局部参数化都需要它。使用雅可比行列式时要分清几何对象和坐标分量：坐标变了，分量表达会变，但对象本身应保持同一含义。雅可比行列式常服务于曲线坐标计算，体积元、度量系数和指标求和规则必须配套使用。雅可比行列式的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "雅可比行列式",
+          "url": "https://www.baidu.com/s?wd=%E9%9B%85%E5%8F%AF%E6%AF%94%E8%A1%8C%E5%88%97%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "雅可比行列式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9B%85%E5%8F%AF%E6%AF%94%E8%A1%8C%E5%88%97%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "jacobian determinant",
+          "url": "https://en.wikipedia.org/w/index.php?search=jacobian%20determinant"
+        }
+      ]
+    },
+    {
+      "chinese_name": "度量系数",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "度量系数用来描述曲线坐标中坐标微元对应实际长度的比例因子。一个核心表达是 $h_i=\\left|{\\partial r\\over\\partial u^i}\\right|$，这里$r(u)$ 是位置向量，$u^i$ 是坐标。\n\n它与度量张量相近但更适合正交坐标；非正交坐标要用完整 $g_{ij}$。柱坐标和球坐标中的梯度散度公式都由度量系数决定。使用度量系数时要分清几何对象和坐标分量：坐标变了，分量表达会变，但对象本身应保持同一含义。度量系数常服务于曲线坐标计算，体积元、度量系数和指标求和规则必须配套使用。度量系数的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "度量系数",
+          "url": "https://www.baidu.com/s?wd=%E5%BA%A6%E9%87%8F%E7%B3%BB%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "度量系数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BA%A6%E9%87%8F%E7%B3%BB%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "metric coefficient",
+          "url": "https://en.wikipedia.org/w/index.php?search=metric%20coefficient"
+        }
+      ]
+    },
+    {
+      "chinese_name": "克罗内克δ",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "克罗内克δ刻画表示指标相等时为一、不等时为零的符号。一个核心表达是 $\\delta^i_j=\\begin{cases}1,&i=j\\\\0,&i\\ne j\\end{cases}$，这里$i,j$ 是指标。\n\n它不同于列维奇维塔符号，克罗内克δ表达恒等映射，后者表达取向和反对称性。张量计算中，$\\delta^i_j$ 常用于替换指标和表示单位张量。使用克罗内克δ时要分清几何对象和坐标分量：坐标变了，分量表达会变，但对象本身应保持同一含义。克罗内克δ常服务于曲线坐标计算，体积元、度量系数和指标求和规则必须配套使用。克罗内克δ的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "克罗内克δ",
+          "url": "https://www.baidu.com/s?wd=%E5%85%8B%E7%BD%97%E5%86%85%E5%85%8B%CE%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "克罗内克δ",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%8B%E7%BD%97%E5%86%85%E5%85%8B%CE%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kronecker delta",
+          "url": "https://en.wikipedia.org/w/index.php?search=kronecker%20delta"
+        }
+      ]
+    },
+    {
+      "chinese_name": "列维奇维塔符号",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "列维奇维塔符号是完全反对称并记录指标排列取向的符号。在常用记号中有 $\\varepsilon_{ijk}$，其中偶排列取 $1$，奇排列取 $-1$，重复指标取 $0$。\n\n它与克罗内克δ不同，列维-奇维塔符号编码体积取向和叉积结构。旋度、叉积、行列式和霍奇星算子中经常出现它。使用列维奇维塔符号时要分清几何对象和坐标分量：坐标变了，分量表达会变，但对象本身应保持同一含义。列维奇维塔符号常服务于曲线坐标计算，体积元、度量系数和指标求和规则必须配套使用。列维奇维塔符号的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "列维奇维塔符号",
+          "url": "https://www.baidu.com/s?wd=%E5%88%97%E7%BB%B4%E5%A5%87%E7%BB%B4%E5%A1%94%E7%AC%A6%E5%8F%B7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "列维奇维塔符号",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%97%E7%BB%B4%E5%A5%87%E7%BB%B4%E5%A1%94%E7%AC%A6%E5%8F%B7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "leviticus vita symbol",
+          "url": "https://en.wikipedia.org/w/index.php?search=leviticus%20vita%20symbol"
+        }
+      ]
+    },
+    {
+      "chinese_name": "爱因斯坦求和约定",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "爱因斯坦求和约定指重复出现的一上一下指标默认求和的记号规则。在常用记号中有 $a_ib^i=\\sum_i a_ib^i$，其中$i$ 是重复指标，上下位置表示协变和逆变配对。\n\n它不是新的代数运算，而是省略求和号的约定；指标重复不当会导致表达式无意义。张量分析中，求和约定让坐标公式更短且突出指标类型。使用爱因斯坦求和约定时要分清几何对象和坐标分量：坐标变了，分量表达会变，但对象本身应保持同一含义。爱因斯坦求和约定常服务于曲线坐标计算，体积元、度量系数和指标求和规则必须配套使用。爱因斯坦求和约定的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "爱因斯坦求和约定",
+          "url": "https://www.baidu.com/s?wd=%E7%88%B1%E5%9B%A0%E6%96%AF%E5%9D%A6%E6%B1%82%E5%92%8C%E7%BA%A6%E5%AE%9A%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "爱因斯坦求和约定",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%88%B1%E5%9B%A0%E6%96%AF%E5%9D%A6%E6%B1%82%E5%92%8C%E7%BA%A6%E5%AE%9A"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "einstein summation convention",
+          "url": "https://en.wikipedia.org/w/index.php?search=einstein%20summation%20convention"
+        }
+      ]
+    },
+    {
+      "chinese_name": "张量",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "张量用来描述按多线性方式作用于向量和余向量并满足坐标变换规则的对象。可写作 $T=T^{i_1\\cdots i_r}{}_{j_1\\cdots j_s}e_{i_1}\\otimes dx^{j_1}\\otimes\\cdots$，这里$(r,s)$ 是张量类型，$e_i,dx^j$ 是基和对偶基。\n\n它不同于普通数组，数组分量必须按张量变换律变化才表示同一几何对象。应力、度量、曲率和电磁场都可作为不同类型的张量。张量语言中，张量的指标位置和变换律很关键；能否升降指标取决于是否选定度量。张量把线性代数、连续介质和曲率计算联系起来，分量数组只有满足变换律才代表同一对象。张量的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "张量",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%A0%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "张量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%A0%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tensor",
+          "url": "https://en.wikipedia.org/w/index.php?search=tensor"
+        }
+      ]
+    },
+    {
+      "chinese_name": "逆变张量",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "逆变张量刻画具有上指标并随坐标基反向变换的张量。可写作 $V^{i'}={\\partial x^{i'}\\over\\partial x^j}V^j$，这里$V^j$ 是分量，偏导矩阵给出变换。\n\n它与协变张量的差别在指标位置和变换矩阵方向；向量分量是典型逆变分量。切向量、速度和位移通常按逆变规则变换。张量语言中，逆变张量的指标位置和变换律很关键；能否升降指标取决于是否选定度量。逆变张量把线性代数、连续介质和曲率计算联系起来，分量数组只有满足变换律才代表同一对象。逆变张量的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "逆变张量",
+          "url": "https://www.baidu.com/s?wd=%E9%80%86%E5%8F%98%E5%BC%A0%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "逆变张量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%80%86%E5%8F%98%E5%BC%A0%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "contravariant tensor",
+          "url": "https://en.wikipedia.org/w/index.php?search=contravariant%20tensor"
+        }
+      ]
+    },
+    {
+      "chinese_name": "协变张量",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "协变张量是具有下指标并随对偶基变换的张量。常写成 $\\omega_{i'}={\\partial x^j\\over\\partial x^{i'}}\\omega_j$，其中$\\omega_j$ 是一形式分量。\n\n它与逆变张量不同，协变分量使用反向雅可比；梯度自然是一形式。度量张量可在协变和逆变指标之间升降。张量语言中，协变张量的指标位置和变换律很关键；能否升降指标取决于是否选定度量。协变张量把线性代数、连续介质和曲率计算联系起来，分量数组只有满足变换律才代表同一对象。协变张量的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。因此理解协变张量还要看它依赖哪些几何结构，以及哪些结论与坐标选择无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "协变张量",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8F%E5%8F%98%E5%BC%A0%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "协变张量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8F%E5%8F%98%E5%BC%A0%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "covariant tensor",
+          "url": "https://en.wikipedia.org/w/index.php?search=covariant%20tensor"
+        }
+      ]
+    },
+    {
+      "chinese_name": "混合张量",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "混合张量指同时含有上指标和下指标的张量。常写成 $T^i{}_j$，其中上指标逆变，下指标协变。\n\n它不同于纯协变或纯逆变张量，混合张量常表示线性映射。形算子、克罗内克δ和某些曲率算子都可写成混合张量。张量语言中，混合张量的指标位置和变换律很关键；能否升降指标取决于是否选定度量。混合张量把线性代数、连续介质和曲率计算联系起来，分量数组只有满足变换律才代表同一对象。混合张量的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。因此理解混合张量还要看它依赖哪些几何结构，以及哪些结论与坐标选择无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "混合张量",
+          "url": "https://www.baidu.com/s?wd=%E6%B7%B7%E5%90%88%E5%BC%A0%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "混合张量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B7%B7%E5%90%88%E5%BC%A0%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "mixed tensor",
+          "url": "https://en.wikipedia.org/w/index.php?search=mixed%20tensor"
+        }
+      ]
+    },
+    {
+      "chinese_name": "张量积",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "张量积用来描述由两个张量构造更高阶张量的双线性运算。一个核心表达是 $(A\\otimes B)(\\alpha,\\beta)=A(\\alpha)B(\\beta)$，这里$A,B$ 是张量，$\\alpha,\\beta$ 是输入。\n\n它不同于内积，张量积不收缩指标，而是增加指标阶数。基张量展开、应力构造和微分形式的外积都以张量积为基础。张量语言中，张量积的指标位置和变换律很关键；能否升降指标取决于是否选定度量。张量积把线性代数、连续介质和曲率计算联系起来，分量数组只有满足变换律才代表同一对象。张量积的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "张量积",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%A0%E9%87%8F%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "张量积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%A0%E9%87%8F%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tensor product",
+          "url": "https://en.wikipedia.org/w/index.php?search=tensor%20product"
+        }
+      ]
+    },
+    {
+      "chinese_name": "缩并",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "缩并刻画把一个上指标和一个下指标配对求和以降低张量阶数的操作。一个核心表达是 $T^i{}_{ij}=S_j$，这里重复的 $i$ 指标被求和，剩余 $j$ 成为新指标。\n\n它与张量积相反，张量积增加指标，缩并减少指标。迹、散度和Ricci张量都可看作特定缩并。张量语言中，缩并的指标位置和变换律很关键；能否升降指标取决于是否选定度量。缩并把线性代数、连续介质和曲率计算联系起来，分量数组只有满足变换律才代表同一对象。缩并的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。因此理解缩并还要看它依赖哪些几何结构，以及哪些结论与坐标选择无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "缩并",
+          "url": "https://www.baidu.com/s?wd=%E7%BC%A9%E5%B9%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "缩并",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BC%A9%E5%B9%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "shrink",
+          "url": "https://en.wikipedia.org/w/index.php?search=shrink"
+        }
+      ]
+    },
+    {
+      "chinese_name": "迹",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "迹是线性映射或二阶混合张量对角分量的缩并。在常用记号中有 $\\operatorname{tr}A=A^i{}_i$，其中重复指标 $i$ 表示求和。\n\n它不同于行列式，迹是一次缩并并等于特征值之和。散度可视为导数张量的迹，Ricci标量也是进一步取迹得到。张量语言中，迹的指标位置和变换律很关键；能否升降指标取决于是否选定度量。迹把线性代数、连续介质和曲率计算联系起来，分量数组只有满足变换律才代表同一对象。迹的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。因此理解迹还要看它依赖哪些几何结构，以及哪些结论与坐标选择无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "迹",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "迹",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "trace",
+          "url": "https://en.wikipedia.org/w/index.php?search=trace"
+        }
+      ]
+    },
+    {
+      "chinese_name": "对称张量",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "对称张量指交换某些指标后分量不变的张量。在常用记号中有 $T_{ij}=T_{ji}$，其中$i,j$ 是被交换的指标。\n\n它与反对称张量相反，反对称张量交换指标会变号。度量张量、应变张量和惯性张量通常是对称张量。张量语言中，对称张量的指标位置和变换律很关键；能否升降指标取决于是否选定度量。对称张量把线性代数、连续介质和曲率计算联系起来，分量数组只有满足变换律才代表同一对象。对称张量的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。因此理解对称张量还要看它依赖哪些几何结构，以及哪些结论与坐标选择无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "对称张量",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%B9%E7%A7%B0%E5%BC%A0%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "对称张量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%B9%E7%A7%B0%E5%BC%A0%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "symmetry tensor",
+          "url": "https://en.wikipedia.org/w/index.php?search=symmetry%20tensor"
+        }
+      ]
+    },
+    {
+      "chinese_name": "反对称张量",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "反对称张量用来描述交换两个指标后符号改变的张量。可写作 $A_{ij}=-A_{ji}$，这里$i,j$ 是反对称指标。\n\n它不同于对称张量，对角分量必为零；微分形式正是完全反对称协变张量。电磁张量、二形式和面积元素都体现反对称结构。张量语言中，反对称张量的指标位置和变换律很关键；能否升降指标取决于是否选定度量。反对称张量把线性代数、连续介质和曲率计算联系起来，分量数组只有满足变换律才代表同一对象。反对称张量的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反对称张量",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E5%AF%B9%E7%A7%B0%E5%BC%A0%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反对称张量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E5%AF%B9%E7%A7%B0%E5%BC%A0%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "anti symmetry tensor",
+          "url": "https://en.wikipedia.org/w/index.php?search=anti%20symmetry%20tensor"
+        }
+      ]
+    },
+    {
+      "chinese_name": "度量张量",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "度量张量刻画定义切向量内积、长度和角度的对称非退化二阶张量。可写作 $ds^2=g_{ij}dx^idx^j$，这里$g_{ij}$ 是度量分量，$dx^i$ 是坐标微分。\n\n它不同于辛形式，度量是对称的，辛形式是反对称的。梯度、霍奇星、克里斯托费尔符号和曲率计算都依赖度量张量。张量语言中，度量张量的指标位置和变换律很关键；能否升降指标取决于是否选定度量。度量张量把线性代数、连续介质和曲率计算联系起来，分量数组只有满足变换律才代表同一对象。度量张量的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "度量张量",
+          "url": "https://www.baidu.com/s?wd=%E5%BA%A6%E9%87%8F%E5%BC%A0%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "度量张量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BA%A6%E9%87%8F%E5%BC%A0%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "metric tensor",
+          "url": "https://en.wikipedia.org/w/index.php?search=metric%20tensor"
+        }
+      ]
+    },
+    {
+      "chinese_name": "单位张量",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "单位张量是表示恒等线性映射的张量。常写成 $I^i{}_j=\\delta^i_j$，其中$\\delta^i_j$ 是克罗内克δ。\n\n它与度量张量不同，单位张量把向量映回自身，度量张量把两个向量配成数。在连续介质和线性代数中，单位张量常用于分解各向同性部分。张量语言中，单位张量的指标位置和变换律很关键；能否升降指标取决于是否选定度量。单位张量把线性代数、连续介质和曲率计算联系起来，分量数组只有满足变换律才代表同一对象。单位张量的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "单位张量",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%95%E4%BD%8D%E5%BC%A0%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "单位张量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%95%E4%BD%8D%E5%BC%A0%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "unit tensor",
+          "url": "https://en.wikipedia.org/w/index.php?search=unit%20tensor"
+        }
+      ]
+    },
+    {
+      "chinese_name": "应力张量",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "应力张量指描述连续介质内部某点各方向面上牵引力的二阶张量。常写成 $t_i=\\sigma_{ij}n_j$，其中$n$ 是面法向，$t$ 是牵引力，$\\sigma$ 是应力张量。\n\n它不同于应变张量，应力描述内力响应，应变描述形变程度。柯西应力张量在角动量平衡下通常为对称张量。张量语言中，应力张量的指标位置和变换律很关键；能否升降指标取决于是否选定度量。应力张量把线性代数、连续介质和曲率计算联系起来，分量数组只有满足变换律才代表同一对象。应力张量的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "应力张量",
+          "url": "https://www.baidu.com/s?wd=%E5%BA%94%E5%8A%9B%E5%BC%A0%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "应力张量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BA%94%E5%8A%9B%E5%BC%A0%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "stress tensor",
+          "url": "https://en.wikipedia.org/w/index.php?search=stress%20tensor"
+        }
+      ]
+    },
+    {
+      "chinese_name": "应变张量",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "应变张量用来描述描述连续介质局部形变的二阶张量。一个核心表达是 $\\varepsilon_{ij}={1\\over2}(\\partial_i u_j+\\partial_j u_i)$，这里$u$ 是位移场，$\\varepsilon_{ij}$ 是小应变。\n\n它与应力张量不同，应变来自几何变形，应力来自材料受力。线弹性中，应力和应变通过本构张量相连。张量语言中，应变张量的指标位置和变换律很关键；能否升降指标取决于是否选定度量。应变张量把线性代数、连续介质和曲率计算联系起来，分量数组只有满足变换律才代表同一对象。应变张量的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。因此理解应变张量还要看它依赖哪些几何结构，以及哪些结论与坐标选择无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "应变张量",
+          "url": "https://www.baidu.com/s?wd=%E5%BA%94%E5%8F%98%E5%BC%A0%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "应变张量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BA%94%E5%8F%98%E5%BC%A0%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "strain tensor",
+          "url": "https://en.wikipedia.org/w/index.php?search=strain%20tensor"
+        }
+      ]
+    },
+    {
+      "chinese_name": "惯性张量",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "惯性张量刻画描述刚体质量分布对转动惯量影响的对称张量。一个核心表达是 $I_{ij}=\\int\\rho(r)(|r|^2\\delta_{ij}-r_ir_j)\\,dV$，这里$\\rho$ 是密度，$r$ 是位置向量。\n\n它不同于标量转动惯量，惯性张量能处理任意转轴方向。主轴方向由惯性张量的特征向量给出。张量语言中，惯性张量的指标位置和变换律很关键；能否升降指标取决于是否选定度量。惯性张量把线性代数、连续介质和曲率计算联系起来，分量数组只有满足变换律才代表同一对象。惯性张量的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。因此理解惯性张量还要看它依赖哪些几何结构，以及哪些结论与坐标选择无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "惯性张量",
+          "url": "https://www.baidu.com/s?wd=%E6%83%AF%E6%80%A7%E5%BC%A0%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "惯性张量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%83%AF%E6%80%A7%E5%BC%A0%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inertia tensor",
+          "url": "https://en.wikipedia.org/w/index.php?search=inertia%20tensor"
+        }
+      ]
+    },
+    {
+      "chinese_name": "电磁张量",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "电磁张量是把电场和磁场合并为相对论协变反对称张量的对象。在常用记号中有 $F_{\\mu\\nu}=\\partial_\\mu A_\\nu-\\partial_\\nu A_\\mu$，其中$A_\\mu$ 是四维势，$\\mu,\\nu$ 是时空指标。\n\n它不同于三维向量场表示，电磁张量在洛伦兹变换下统一变换。Maxwell方程可用 $F_{\\mu\\nu}$ 和其对偶张量紧凑表达。张量语言中，电磁张量的指标位置和变换律很关键；能否升降指标取决于是否选定度量。电磁张量把线性代数、连续介质和曲率计算联系起来，分量数组只有满足变换律才代表同一对象。电磁张量的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电磁张量",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E7%A3%81%E5%BC%A0%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电磁张量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E7%A3%81%E5%BC%A0%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electromagnetic tensor",
+          "url": "https://en.wikipedia.org/w/index.php?search=electromagnetic%20tensor"
+        }
+      ]
+    },
+    {
+      "chinese_name": "曲率张量",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "曲率张量指刻画协变导数沿不同方向交换时产生差异的张量。在常用记号中有 $R(X,Y)Z=\\nabla_X\\nabla_YZ-\\nabla_Y\\nabla_XZ-\\nabla_{[X,Y]}Z$，其中$\\nabla$ 是联络，$[X,Y]$ 是李括号。\n\n它不同于标量曲率，曲率张量保留最完整的方向信息。平行移动绕小回路后的净变化由曲率张量控制。张量语言中，曲率张量的指标位置和变换律很关键；能否升降指标取决于是否选定度量。曲率张量把线性代数、连续介质和曲率计算联系起来，分量数组只有满足变换律才代表同一对象。曲率张量的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "曲率张量",
+          "url": "https://www.baidu.com/s?wd=%E6%9B%B2%E7%8E%87%E5%BC%A0%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "曲率张量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9B%B2%E7%8E%87%E5%BC%A0%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "curvature tensor",
+          "url": "https://en.wikipedia.org/w/index.php?search=curvature%20tensor"
+        }
+      ]
+    },
+    {
+      "chinese_name": "黎奇张量",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "黎奇张量用来描述由黎曼曲率张量缩并得到的二阶张量。可写作 $R_{ij}=R^k{}_{ikj}$，这里重复指标 $k$ 被缩并。\n\n它不同于完整曲率张量，Ricci张量只保留体积变形相关的部分曲率信息。广义相对论中，Ricci张量和标量曲率共同进入Einstein张量。张量语言中，黎奇张量的指标位置和变换律很关键；能否升降指标取决于是否选定度量。黎奇张量把线性代数、连续介质和曲率计算联系起来，分量数组只有满足变换律才代表同一对象。黎奇张量的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "黎奇张量",
+          "url": "https://www.baidu.com/s?wd=%E9%BB%8E%E5%A5%87%E5%BC%A0%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "黎奇张量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%BB%8E%E5%A5%87%E5%BC%A0%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "rich tensor",
+          "url": "https://en.wikipedia.org/w/index.php?search=rich%20tensor"
+        }
+      ]
+    },
+    {
+      "chinese_name": "标量曲率",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "标量曲率刻画由Ricci张量再取迹得到的曲率标量。可写作 $R=g^{ij}R_{ij}$，这里$g^{ij}$ 是逆度量，$R_{ij}$ 是Ricci张量。\n\n它不同于高斯曲率，高斯曲率专属二维曲面内蕴曲率，标量曲率适用于任意维黎曼流形。标量曲率概括小测地球体积偏离欧氏情形的程度。张量语言中，标量曲率的指标位置和变换律很关键；能否升降指标取决于是否选定度量。标量曲率把线性代数、连续介质和曲率计算联系起来，分量数组只有满足变换律才代表同一对象。标量曲率的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "标量曲率",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%87%E9%87%8F%E6%9B%B2%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "标量曲率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%87%E9%87%8F%E6%9B%B2%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "scalar curvature",
+          "url": "https://en.wikipedia.org/w/index.php?search=scalar%20curvature"
+        }
+      ]
+    },
+    {
+      "chinese_name": "外积",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "外积是向量或张量之间生成高阶对象的乘法，在向量分析中常指外张量积。常写成 $u\\otimes v$，其中$u,v$ 是向量，结果是二阶张量。\n\n它与叉积不同，外积不只在三维定义，也不把结果压回向量。矩阵形式的秩一张量和张量积展开常由外积表示。用微分形式看，外积主要服务于积分域、边界和取向的表达，外微分把曲线、曲面和体上的公式统一起来。外积与楔积、度量和取向密切相关；在高维空间中，微分形式比三维向量公式更稳定。外积的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "外积",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%96%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "外积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%96%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "outer product",
+          "url": "https://en.wikipedia.org/w/index.php?search=outer%20product"
+        }
+      ]
+    },
+    {
+      "chinese_name": "内积",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "内积指把两个向量配成标量的双线性运算。常写成 $\\langle u,v\\rangle=g_{ij}u^iv^j$，其中$g_{ij}$ 是度量分量，$u^i,v^j$ 是向量分量。\n\n它与张量积不同，内积通过度量缩并指标并降低阶数。长度、角度、正交性和梯度定义都依赖内积。用微分形式看，内积主要服务于积分域、边界和取向的表达，外微分把曲线、曲面和体上的公式统一起来。内积与楔积、度量和取向密切相关；在高维空间中，微分形式比三维向量公式更稳定。内积的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。因此理解内积还要看它依赖哪些几何结构，以及哪些结论与坐标选择无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "内积",
+          "url": "https://www.baidu.com/s?wd=%E5%86%85%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "内积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%86%85%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inner product",
+          "url": "https://en.wikipedia.org/w/index.php?search=inner%20product"
+        }
+      ]
+    },
+    {
+      "chinese_name": "叉积",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "叉积用来描述三维有向欧氏空间中把两个向量送到垂直向量的运算。一个核心表达是 $(u\\times v)^i=\\varepsilon^{ijk}u_jv_k$，这里$\\varepsilon^{ijk}$ 是列维-奇维塔符号。\n\n它不同于楔积，叉积依赖三维度量和取向，楔积可在任意维定义为二形式。力矩、角动量和旋度公式常用叉积表示。用微分形式看，叉积主要服务于积分域、边界和取向的表达，外微分把曲线、曲面和体上的公式统一起来。叉积与楔积、度量和取向密切相关；在高维空间中，微分形式比三维向量公式更稳定。叉积的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "叉积",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%89%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "叉积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%89%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cross product",
+          "url": "https://en.wikipedia.org/w/index.php?search=cross%20product"
+        }
+      ]
+    },
+    {
+      "chinese_name": "楔积",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "楔积刻画微分形式上的反对称乘法。一个核心表达是 $\\alpha\\wedge\\beta=(-1)^{pq}\\beta\\wedge\\alpha$，这里$\\alpha$ 是 $p$ 形式，$\\beta$ 是 $q$ 形式。\n\n它与普通张量积不同，楔积会反对称化并记录取向。面积形式、体积形式和Stokes公式都使用楔积组织。用微分形式看，楔积主要服务于积分域、边界和取向的表达，外微分把曲线、曲面和体上的公式统一起来。楔积与楔积、度量和取向密切相关；在高维空间中，微分形式比三维向量公式更稳定。楔积的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。因此理解楔积还要看它依赖哪些几何结构，以及哪些结论与坐标选择无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "楔积",
+          "url": "https://www.baidu.com/s?wd=%E6%A5%94%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "楔积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A5%94%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wedge product",
+          "url": "https://en.wikipedia.org/w/index.php?search=wedge%20product"
+        }
+      ]
+    },
+    {
+      "chinese_name": "外微分",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "外微分是把 $k$ 形式送到 $k+1$ 形式并满足 $d^2=0$ 的微分算子。在常用记号中有 $d\\omega$，其中$\\omega$ 是微分形式，$d\\omega$ 的次数高一。\n\n它统一了梯度、旋度和散度的部分结构，但不依赖度量。微分形式版Stokes公式 $\\int_Md\\omega=\\int_{\\partial M}\\omega$ 以外微分为核心。用微分形式看，外微分主要服务于积分域、边界和取向的表达，外微分把曲线、曲面和体上的公式统一起来。外微分与楔积、度量和取向密切相关；在高维空间中，微分形式比三维向量公式更稳定。外微分的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。因此理解外微分还要看它依赖哪些几何结构，以及哪些结论与坐标选择无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "外微分",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%96%E5%BE%AE%E5%88%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "外微分",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%96%E5%BE%AE%E5%88%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "external differential",
+          "url": "https://en.wikipedia.org/w/index.php?search=external%20differential"
+        }
+      ]
+    },
+    {
+      "chinese_name": "微分形式",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "微分形式指可在有向子流形上积分的完全反对称协变张量场。在常用记号中有 $\\omega=\\sum_I\\omega_I\\,dx^{i_1}\\wedge\\cdots\\wedge dx^{i_k}$，其中$k$ 是形式次数，$dx^i$ 是一形式基。\n\n它不同于向量场，微分形式自然与积分域维数配对，并通过拉回变换。电磁形式、体积形式和Stokes定理都用微分形式表达。用微分形式看，微分形式主要服务于积分域、边界和取向的表达，外微分把曲线、曲面和体上的公式统一起来。微分形式与楔积、度量和取向密切相关；在高维空间中，微分形式比三维向量公式更稳定。微分形式的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "微分形式",
+          "url": "https://www.baidu.com/s?wd=%E5%BE%AE%E5%88%86%E5%BD%A2%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "微分形式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BE%AE%E5%88%86%E5%BD%A2%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "differential form",
+          "url": "https://en.wikipedia.org/w/index.php?search=differential%20form"
+        }
+      ]
+    },
+    {
+      "chinese_name": "一形式",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "一形式用来描述作用在一个切向量上并输出数的协变张量场。可写作 $\\alpha=\\alpha_i dx^i$，这里$dx^i$ 是对偶基，$\\alpha_i$ 是分量。\n\n它与向量不同，向量属于切空间，一形式属于余切空间；度量可把两者互相对应。函数微分 $df$ 是最基本的一形式。用微分形式看，一形式主要服务于积分域、边界和取向的表达，外微分把曲线、曲面和体上的公式统一起来。一形式与楔积、度量和取向密切相关；在高维空间中，微分形式比三维向量公式更稳定。一形式的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "一形式",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%80%E5%BD%A2%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "一形式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%80%E5%BD%A2%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "one form",
+          "url": "https://en.wikipedia.org/w/index.php?search=one%20form"
+        }
+      ]
+    },
+    {
+      "chinese_name": "二形式",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "二形式刻画作用在两个切向量上并反对称的微分形式。可写作 $\\omega={1\\over2}\\omega_{ij}dx^i\\wedge dx^j$，这里$\\omega_{ij}=-\\omega_{ji}$ 是分量。\n\n它不同于二阶对称张量，二形式交换输入会变号。面积元、辛形式和电磁场强都可作为二形式理解。用微分形式看，二形式主要服务于积分域、边界和取向的表达，外微分把曲线、曲面和体上的公式统一起来。二形式与楔积、度量和取向密切相关；在高维空间中，微分形式比三维向量公式更稳定。二形式的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。因此理解二形式还要看它依赖哪些几何结构，以及哪些结论与坐标选择无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "二形式",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%8C%E5%BD%A2%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "二形式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%8C%E5%BD%A2%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "second form",
+          "url": "https://en.wikipedia.org/w/index.php?search=second%20form"
+        }
+      ]
+    },
+    {
+      "chinese_name": "霍奇星算子",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "霍奇星算子是由度量和取向把 $k$ 形式变成 $n-k$ 形式的算子。常写成 $\\alpha\\wedge *\\beta=\\langle\\alpha,\\beta\\rangle\\,\\mathrm{vol}$，其中$*$ 是霍奇星，$\\mathrm{vol}$ 是体积形式。\n\n它不同于外微分，霍奇星依赖度量，而外微分不依赖度量。散度、旋度和余微分的现代形式表达都要用到霍奇星。用微分形式看，霍奇星算子主要服务于积分域、边界和取向的表达，外微分把曲线、曲面和体上的公式统一起来。霍奇星算子与楔积、度量和取向密切相关；在高维空间中，微分形式比三维向量公式更稳定。霍奇星算子的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "霍奇星算子",
+          "url": "https://www.baidu.com/s?wd=%E9%9C%8D%E5%A5%87%E6%98%9F%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "霍奇星算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9C%8D%E5%A5%87%E6%98%9F%E7%AE%97%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hodge star operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=hodge%20star%20operator"
+        }
+      ]
+    },
+    {
+      "chinese_name": "体积形式",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "体积形式指在有向流形上给出体积积分的最高次微分形式。常写成 $\\mathrm{vol}=\\sqrt{|g|}\\,dx^1\\wedge\\cdots\\wedge dx^n$，其中$g$ 是度量矩阵行列式。\n\n它不同于普通体积元符号，体积形式还包含取向信息。流形积分、霍奇星和散度定理都以体积形式为基础。用微分形式看，体积形式主要服务于积分域、边界和取向的表达，外微分把曲线、曲面和体上的公式统一起来。体积形式与楔积、度量和取向密切相关；在高维空间中，微分形式比三维向量公式更稳定。体积形式的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "体积形式",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%93%E7%A7%AF%E5%BD%A2%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "体积形式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%93%E7%A7%AF%E5%BD%A2%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "volume form",
+          "url": "https://en.wikipedia.org/w/index.php?search=volume%20form"
+        }
+      ]
+    },
+    {
+      "chinese_name": "联络",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "联络用来描述规定如何沿方向比较不同点切向量并求导的结构。一个核心表达是 $\\nabla_XY$，这里$X$ 是方向向量场，$Y$ 是被求导向量场。\n\n它不同于普通偏导数，联络补充了跨切空间比较的规则。协变导数、平行移动、曲率和挠率都由联络定义。在流形上，联络需要联络或度量才能比较不同点的数据；没有这些附加结构，许多坐标公式没有不变量意义。联络用于描述平行移动、曲率和对称性，坐标表达只是计算入口，几何内容由变换规则保证。联络的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "联络",
+          "url": "https://www.baidu.com/s?wd=%E8%81%94%E7%BB%9C%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "联络",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%81%94%E7%BB%9C"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "contact",
+          "url": "https://en.wikipedia.org/w/index.php?search=contact"
+        }
+      ]
+    },
+    {
+      "chinese_name": "协变导数",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "协变导数刻画用联络定义的向量场或张量场沿方向的导数。一个核心表达是 $\\nabla_jV^i=\\partial_jV^i+\\Gamma^i_{jk}V^k$，这里$\\Gamma^i_{jk}$ 是克里斯托费尔符号。\n\n它与偏导数不同，协变导数修正了基向量随位置变化的影响。张量方程在换坐标后保持形式一致，依赖协变导数而非普通偏导。在三维向量分析里，协变导数和梯度、散度、旋度的关系由积分定理连接；局部微分量常可转成边界上的通量或环量。协变导数既可按坐标公式计算，也可用几何语言理解，关键是分清方向、取向和积分域的维数。协变导数的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "协变导数",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8F%E5%8F%98%E5%AF%BC%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "协变导数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8F%E5%8F%98%E5%AF%BC%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "covariant derivative",
+          "url": "https://en.wikipedia.org/w/index.php?search=covariant%20derivative"
+        }
+      ]
+    },
+    {
+      "chinese_name": "克里斯托费尔符号",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "克里斯托费尔符号是列维-奇维塔联络在坐标基下的系数。在常用记号中有 $\\Gamma^i_{jk}={1\\over2}g^{i\\ell}(\\partial_jg_{k\\ell}+\\partial_kg_{j\\ell}-\\partial_\\ell g_{jk})$，其中$g_{ij}$ 是度量张量。\n\n它不是张量分量，换坐标时有非张量的附加项。测地线方程、协变导数和曲率分量计算都使用克里斯托费尔符号。在流形上，克里斯托费尔符号需要联络或度量才能比较不同点的数据；没有这些附加结构，许多坐标公式没有不变量意义。克里斯托费尔符号用于描述平行移动、曲率和对称性，坐标表达只是计算入口，几何内容由变换规则保证。克里斯托费尔符号的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "克里斯托费尔符号",
+          "url": "https://www.baidu.com/s?wd=%E5%85%8B%E9%87%8C%E6%96%AF%E6%89%98%E8%B4%B9%E5%B0%94%E7%AC%A6%E5%8F%B7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "克里斯托费尔符号",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%8B%E9%87%8C%E6%96%AF%E6%89%98%E8%B4%B9%E5%B0%94%E7%AC%A6%E5%8F%B7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "christophel symbol",
+          "url": "https://en.wikipedia.org/w/index.php?search=christophel%20symbol"
+        }
+      ]
+    },
+    {
+      "chinese_name": "平行移动",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "平行移动指沿曲线保持协变导数为零地搬运向量的过程。在常用记号中有 $\\nabla_{\\dot\\gamma}V=0$，其中$\\gamma$ 是曲线，$V$ 是沿曲线的向量场。\n\n它不同于欧氏平移，曲率非零时沿不同路径移动会得到不同结果。曲率张量正是衡量小回路平行移动后净变化的对象。在流形上，平行移动需要联络或度量才能比较不同点的数据；没有这些附加结构，许多坐标公式没有不变量意义。平行移动用于描述平行移动、曲率和对称性，坐标表达只是计算入口，几何内容由变换规则保证。平行移动的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平行移动",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E8%A1%8C%E7%A7%BB%E5%8A%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平行移动",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E8%A1%8C%E7%A7%BB%E5%8A%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "parallel movement",
+          "url": "https://en.wikipedia.org/w/index.php?search=parallel%20movement"
+        }
+      ]
+    },
+    {
+      "chinese_name": "挠率张量",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "挠率张量用来描述衡量联络反对称部分与李括号差异的张量。可写作 $T(X,Y)=\\nabla_XY-\\nabla_YX-[X,Y]$，这里$X,Y$ 是向量场，$[X,Y]$ 是李括号。\n\n它不同于曲率张量，挠率看两个方向的一阶交换，曲率看协变导数二阶交换。列维-奇维塔联络的挠率为零，但带挠联络在Cartan几何中很重要。张量语言中，挠率张量的指标位置和变换律很关键；能否升降指标取决于是否选定度量。挠率张量把线性代数、连续介质和曲率计算联系起来，分量数组只有满足变换律才代表同一对象。挠率张量的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "挠率张量",
+          "url": "https://www.baidu.com/s?wd=%E6%8C%A0%E7%8E%87%E5%BC%A0%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "挠率张量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8C%A0%E7%8E%87%E5%BC%A0%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "torsion tensor",
+          "url": "https://en.wikipedia.org/w/index.php?search=torsion%20tensor"
+        }
+      ]
+    },
+    {
+      "chinese_name": "黎曼曲率张量",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "黎曼曲率张量刻画黎曼流形上由列维-奇维塔联络产生的曲率张量。可写作 $R^l{}_{ijk}$，这里这些分量由克里斯托费尔符号及其导数组成。\n\n它比Ricci张量和标量曲率包含更多信息；后两者都是缩并结果。截面曲率、测地偏离和广义相对论中的几何效应都由它控制。张量语言中，黎曼曲率张量的指标位置和变换律很关键；能否升降指标取决于是否选定度量。黎曼曲率张量把线性代数、连续介质和曲率计算联系起来，分量数组只有满足变换律才代表同一对象。黎曼曲率张量的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "黎曼曲率张量",
+          "url": "https://www.baidu.com/s?wd=%E9%BB%8E%E6%9B%BC%E6%9B%B2%E7%8E%87%E5%BC%A0%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "黎曼曲率张量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%BB%8E%E6%9B%BC%E6%9B%B2%E7%8E%87%E5%BC%A0%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "riemann curvature tensor",
+          "url": "https://en.wikipedia.org/w/index.php?search=riemann%20curvature%20tensor"
+        }
+      ]
+    },
+    {
+      "chinese_name": "比安基恒等式",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "比安基恒等式是曲率张量满足的代数和微分恒等式。常写成 $\\nabla_{[a}R_{bc]de}=0$，其中方括号表示反对称化，$\\nabla$ 是协变导数。\n\n它不是额外场方程，而是曲率由联络定义后自动满足的结构关系。广义相对论中，收缩Bianchi恒等式保证Einstein张量散度为零。在流形上，比安基恒等式需要联络或度量才能比较不同点的数据；没有这些附加结构，许多坐标公式没有不变量意义。比安基恒等式用于描述平行移动、曲率和对称性，坐标表达只是计算入口，几何内容由变换规则保证。比安基恒等式的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "比安基恒等式",
+          "url": "https://www.baidu.com/s?wd=%E6%AF%94%E5%AE%89%E5%9F%BA%E6%81%92%E7%AD%89%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "比安基恒等式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AF%94%E5%AE%89%E5%9F%BA%E6%81%92%E7%AD%89%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bianchi identity",
+          "url": "https://en.wikipedia.org/w/index.php?search=bianchi%20identity"
+        }
+      ]
+    },
+    {
+      "chinese_name": "李导数",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "李导数指沿向量场的流比较张量场变化的导数。常写成 $\\mathcal L_XT=\\left.{d\\over dt}\\phi_t^*T\\right|_{t=0}$，其中$X$ 生成流 $\\phi_t$，$T$ 是张量场。\n\n它不同于协变导数，李导数不需要预先选择联络。对称性、Killing向量场和守恒量常通过李导数为零表达。在三维向量分析里，李导数和梯度、散度、旋度的关系由积分定理连接；局部微分量常可转成边界上的通量或环量。李导数既可按坐标公式计算，也可用几何语言理解，关键是分清方向、取向和积分域的维数。李导数的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。因此理解李导数还要看它依赖哪些几何结构，以及哪些结论与坐标选择无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "李导数",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%8E%E5%AF%BC%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "李导数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%8E%E5%AF%BC%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lie derivative",
+          "url": "https://en.wikipedia.org/w/index.php?search=lie%20derivative"
+        }
+      ]
+    },
+    {
+      "chinese_name": "泊松括号",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "泊松括号用来描述辛或Poisson流形上两个函数生成相互作用的双线性运算。一个核心表达是 $\\{f,g\\}=\\omega(X_f,X_g)$，这里$X_f,X_g$ 是哈密顿向量场，$\\omega$ 是辛形式。\n\n它不同于普通乘法，泊松括号反对称并满足Jacobi恒等式。哈密顿力学中，观测量演化写成 $\\dot f=\\{f,H\\}$。在流形上，泊松括号需要联络或度量才能比较不同点的数据；没有这些附加结构，许多坐标公式没有不变量意义。泊松括号用于描述平行移动、曲率和对称性，坐标表达只是计算入口，几何内容由变换规则保证。泊松括号的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "泊松括号",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%8A%E6%9D%BE%E6%8B%AC%E5%8F%B7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "泊松括号",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%8A%E6%9D%BE%E6%8B%AC%E5%8F%B7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "poisson bracket",
+          "url": "https://en.wikipedia.org/w/index.php?search=poisson%20bracket"
+        }
+      ]
+    },
+    {
+      "chinese_name": "雅可比恒等式",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "雅可比恒等式刻画李括号或泊松括号满足的三项循环恒等式。一个核心表达是 $\\{f,\\{g,h\\}\\}+\\{g,\\{h,f\\}\\}+\\{h,\\{f,g\\}\\}=0$，这里$f,g,h$ 是函数。\n\n它不同于交换律，Jacobi恒等式保证括号运算形成李代数结构。泊松几何和哈密顿系统中，该恒等式保证时间演化的一致性。使用雅可比恒等式时要分清几何对象和坐标分量：坐标变了，分量表达会变，但对象本身应保持同一含义。雅可比恒等式常服务于曲线坐标计算，体积元、度量系数和指标求和规则必须配套使用。雅可比恒等式的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "雅可比恒等式",
+          "url": "https://www.baidu.com/s?wd=%E9%9B%85%E5%8F%AF%E6%AF%94%E6%81%92%E7%AD%89%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "雅可比恒等式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9B%85%E5%8F%AF%E6%AF%94%E6%81%92%E7%AD%89%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "jacobian identity",
+          "url": "https://en.wikipedia.org/w/index.php?search=jacobian%20identity"
+        }
+      ]
+    },
+    {
+      "chinese_name": "拉回",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "拉回是把目标空间上的函数、形式或张量沿映射拉到源空间。在常用记号中有 $(F^*\\omega)_p(v_1,\\ldots,v_k)=\\omega_{F(p)}(dF_pv_1,\\ldots,dF_pv_k)$，其中$F$ 是映射，$\\omega$ 是形式。\n\n它与推前方向相反；形式自然拉回，向量场一般不能无条件拉回。变量替换、子流形积分和微分形式计算都依赖拉回。在流形上，拉回需要联络或度量才能比较不同点的数据；没有这些附加结构，许多坐标公式没有不变量意义。拉回用于描述平行移动、曲率和对称性，坐标表达只是计算入口，几何内容由变换规则保证。拉回的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拉回",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%89%E5%9B%9E%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拉回",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%89%E5%9B%9E"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "pull back",
+          "url": "https://en.wikipedia.org/w/index.php?search=pull%20back"
+        }
+      ]
+    },
+    {
+      "chinese_name": "推前",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "推前指把源空间切向量沿映射微分送到目标空间切向量。在常用记号中有 $F_*v=dF_p(v)$，其中$v\\in T_pM$，$dF_p$ 是映射微分。\n\n它与拉回不同，推前自然作用于切向量，拉回自然作用于余向量和形式。浸入、嵌入和流形上的坐标变换都用推前描述切空间变化。在流形上，推前需要联络或度量才能比较不同点的数据；没有这些附加结构，许多坐标公式没有不变量意义。推前用于描述平行移动、曲率和对称性，坐标表达只是计算入口，几何内容由变换规则保证。推前的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "推前",
+          "url": "https://www.baidu.com/s?wd=%E6%8E%A8%E5%89%8D%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "推前",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8E%A8%E5%89%8D"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "push forward",
+          "url": "https://en.wikipedia.org/w/index.php?search=push%20forward"
+        }
+      ]
+    },
+    {
+      "chinese_name": "切空间",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "切空间用来描述流形在某点所有切向量组成的向量空间。可写作 $T_pM$，这里$p$ 是流形 $M$ 上的点。\n\n它不同于流形本身，切空间是线性近似；不同点的切空间通常不能直接相加。速度向量、向量场和微分方程都在切空间中取值。丛论语言里，切空间关注每个点上附着的线性空间以及截面如何变化，适合描述场和约束的局部数据。切空间让向量、余向量和更一般的场能在流形上统一处理，也解释了为什么不同点的数据不能随便相加。切空间的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "切空间",
+          "url": "https://www.baidu.com/s?wd=%E5%88%87%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "切空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%87%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cut space",
+          "url": "https://en.wikipedia.org/w/index.php?search=cut%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "余切空间",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "余切空间刻画切空间的对偶空间，由一形式在该点的取值组成。可写作 $T_p^*M=\\operatorname{Hom}(T_pM,\\mathbb R)$，这里$T_pM$ 是切空间，$\\operatorname{Hom}$ 表示线性函数空间。\n\n它与切空间不同，余切向量吃掉切向量得到数；度量可建立两者对应。函数微分 $df_p$ 属于余切空间。丛论语言里，余切空间关注每个点上附着的线性空间以及截面如何变化，适合描述场和约束的局部数据。余切空间让向量、余向量和更一般的场能在流形上统一处理，也解释了为什么不同点的数据不能随便相加。余切空间的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "余切空间",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%99%E5%88%87%E7%A9%BA%E9%97%B4%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "余切空间",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%99%E5%88%87%E7%A9%BA%E9%97%B4"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cotangent space",
+          "url": "https://en.wikipedia.org/w/index.php?search=cotangent%20space"
+        }
+      ]
+    },
+    {
+      "chinese_name": "切丛",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "切丛是把流形各点切空间合在一起形成的向量丛。常写成 $TM=\\bigsqcup_{p\\in M}T_pM$，其中$\\bigsqcup$ 表示不交并，$T_pM$ 是切空间。\n\n它与切空间不同，切空间固定在一点，切丛覆盖整个流形。向量场正是切丛的截面。丛论语言里，切丛关注每个点上附着的线性空间以及截面如何变化，适合描述场和约束的局部数据。切丛让向量、余向量和更一般的场能在流形上统一处理，也解释了为什么不同点的数据不能随便相加。切丛的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。因此理解切丛还要看它依赖哪些几何结构，以及哪些结论与坐标选择无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "切丛",
+          "url": "https://www.baidu.com/s?wd=%E5%88%87%E4%B8%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "切丛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%87%E4%B8%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tangent bundle",
+          "url": "https://en.wikipedia.org/w/index.php?search=tangent%20bundle"
+        }
+      ]
+    },
+    {
+      "chinese_name": "余切丛",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "余切丛指把各点余切空间合在一起形成的向量丛。常写成 $T^*M=\\bigsqcup_{p\\in M}T_p^*M$，其中$T_p^*M$ 是余切空间。\n\n它与切丛互为对偶结构；辛几何中余切丛天然带有标准辛形式。一形式、动量变量和哈密顿力学常生活在余切丛上。丛论语言里，余切丛关注每个点上附着的线性空间以及截面如何变化，适合描述场和约束的局部数据。余切丛让向量、余向量和更一般的场能在流形上统一处理，也解释了为什么不同点的数据不能随便相加。余切丛的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "余切丛",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%99%E5%88%87%E4%B8%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "余切丛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%99%E5%88%87%E4%B8%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cotangent bundle",
+          "url": "https://en.wikipedia.org/w/index.php?search=cotangent%20bundle"
+        }
+      ]
+    },
+    {
+      "chinese_name": "向量丛",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "向量丛用来描述每一点附着一个向量空间并局部像乘积空间的几何结构。一个核心表达是 $\\pi:E\\to M,\\qquad \\pi^{-1}(U)\\simeq U\\times\\mathbb R^k$，这里$E$ 是总空间，$M$ 是底空间，$k$ 是秩。\n\n它比切丛更一般，切丛只是向量丛的一个典型例子。截面、联络和特征类都定义在向量丛语言中。丛论语言里，向量丛关注每个点上附着的线性空间以及截面如何变化，适合描述场和约束的局部数据。向量丛让向量、余向量和更一般的场能在流形上统一处理，也解释了为什么不同点的数据不能随便相加。向量丛的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "向量丛",
+          "url": "https://www.baidu.com/s?wd=%E5%90%91%E9%87%8F%E4%B8%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "向量丛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%91%E9%87%8F%E4%B8%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vector bundle",
+          "url": "https://en.wikipedia.org/w/index.php?search=vector%20bundle"
+        }
+      ]
+    },
+    {
+      "chinese_name": "纤维丛",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "纤维丛刻画每一点附着一个固定类型纤维并局部平凡的空间。一个核心表达是 $\\pi^{-1}(U)\\simeq U\\times F$，这里$F$ 是纤维，$U$ 是底空间开集。\n\n它比向量丛更一般，纤维不必是向量空间。主丛、覆盖空间和向量丛都可视为纤维丛。丛论语言里，纤维丛关注每个点上附着的线性空间以及截面如何变化，适合描述场和约束的局部数据。纤维丛让向量、余向量和更一般的场能在流形上统一处理，也解释了为什么不同点的数据不能随便相加。纤维丛的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "纤维丛",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%A4%E7%BB%B4%E4%B8%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "纤维丛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%A4%E7%BB%B4%E4%B8%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fiber plexus",
+          "url": "https://en.wikipedia.org/w/index.php?search=fiber%20plexus"
+        }
+      ]
+    },
+    {
+      "chinese_name": "截面",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "截面是为底空间每一点选择其纤维中一个点的映射。在常用记号中有 $s:M\\to E,\\qquad \\pi\\circ s=\\operatorname{id}_M$，其中$E$ 是丛总空间，$\\pi$ 是投影。\n\n它不同于子流形截面中的横截概念；丛截面是纤维上的选择。向量场是一种切丛截面，微分形式是外余切丛截面。丛论语言里，截面关注每个点上附着的线性空间以及截面如何变化，适合描述场和约束的局部数据。截面让向量、余向量和更一般的场能在流形上统一处理，也解释了为什么不同点的数据不能随便相加。截面的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "截面",
+          "url": "https://www.baidu.com/s?wd=%E6%88%AA%E9%9D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "截面",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%88%AA%E9%9D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "section",
+          "url": "https://en.wikipedia.org/w/index.php?search=section"
+        }
+      ]
+    },
+    {
+      "chinese_name": "流形",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "流形指局部看起来像欧氏空间的拓扑或光滑空间。在常用记号中有 $\\varphi:U\\to\\mathbb R^n$，其中$U$ 是坐标邻域，$\\varphi$ 是坐标图。\n\n它不同于单个坐标区域，流形可由多个坐标图拼接而成。曲线、曲面、Lie群和相空间都可作为流形研究。丛论语言里，流形关注每个点上附着的线性空间以及截面如何变化，适合描述场和约束的局部数据。流形让向量、余向量和更一般的场能在流形上统一处理，也解释了为什么不同点的数据不能随便相加。流形的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "流形",
+          "url": "https://www.baidu.com/s?wd=%E6%B5%81%E5%BD%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "流形",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B5%81%E5%BD%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "manifold",
+          "url": "https://en.wikipedia.org/w/index.php?search=manifold"
+        }
+      ]
+    },
+    {
+      "chinese_name": "嵌入",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "嵌入用来描述既是浸入又与其像同胚的光滑映射。可写作 $F:M\\hookrightarrow N$，这里$dF$ 单射，且 $F$ 给出到像的拓扑等价。\n\n它比浸入更强，浸入只要求微分单射，可能有自交或拓扑异常。嵌入让一个流形可作为另一个流形的正规子流形。丛论语言里，嵌入关注每个点上附着的线性空间以及截面如何变化，适合描述场和约束的局部数据。嵌入让向量、余向量和更一般的场能在流形上统一处理，也解释了为什么不同点的数据不能随便相加。嵌入的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "嵌入",
+          "url": "https://www.baidu.com/s?wd=%E5%B5%8C%E5%85%A5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "嵌入",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B5%8C%E5%85%A5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "embed",
+          "url": "https://en.wikipedia.org/w/index.php?search=embed"
+        }
+      ]
+    },
+    {
+      "chinese_name": "浸入",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "浸入刻画微分在每一点都为单射的光滑映射。可写作 $dF_p:T_pM\\to T_{F(p)}N\\quad\\text{is injective}$，这里$dF_p$ 是推前映射。\n\n它不同于嵌入，浸入允许整体自交，局部仍保持维数。参数曲线和曲面常先作为浸入处理，再加条件成为嵌入。丛论语言里，浸入关注每个点上附着的线性空间以及截面如何变化，适合描述场和约束的局部数据。浸入让向量、余向量和更一般的场能在流形上统一处理，也解释了为什么不同点的数据不能随便相加。浸入的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。因此理解浸入还要看它依赖哪些几何结构，以及哪些结论与坐标选择无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "浸入",
+          "url": "https://www.baidu.com/s?wd=%E6%B5%B8%E5%85%A5%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "浸入",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B5%B8%E5%85%A5"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "immersion",
+          "url": "https://en.wikipedia.org/w/index.php?search=immersion"
+        }
+      ]
+    },
+    {
+      "chinese_name": "切向量",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "切向量是表示流形上一点处沿某方向的速度或导数的对象。常写成 $v={d\\over dt}\\gamma(t)\\big|_{t=0}$，其中$\\gamma$ 是经过该点的曲线。\n\n它不同于普通空间中的固定箭头，切向量属于特定点的切空间。向量场、推前和方向导数都以切向量为基本输入。丛论语言里，切向量关注每个点上附着的线性空间以及截面如何变化，适合描述场和约束的局部数据。切向量让向量、余向量和更一般的场能在流形上统一处理，也解释了为什么不同点的数据不能随便相加。切向量的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "切向量",
+          "url": "https://www.baidu.com/s?wd=%E5%88%87%E5%90%91%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "切向量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%87%E5%90%91%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tangent vector",
+          "url": "https://en.wikipedia.org/w/index.php?search=tangent%20vector"
+        }
+      ]
+    },
+    {
+      "chinese_name": "法向量",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "法向量指与子流形切空间正交的向量。常写成 $\\langle n,v\\rangle=0\\quad\\text{for all }v\\in T_pS$，其中$n$ 是法向量，$T_pS$ 是切空间。\n\n它与切向量不同，法向量依赖环境空间和度量。曲面通量、第二基本形式和边界条件都需要选择法向量。丛论语言里，法向量关注每个点上附着的线性空间以及截面如何变化，适合描述场和约束的局部数据。法向量让向量、余向量和更一般的场能在流形上统一处理，也解释了为什么不同点的数据不能随便相加。法向量的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。因此理解法向量还要看它依赖哪些几何结构，以及哪些结论与坐标选择无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "法向量",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%95%E5%90%91%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "法向量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%95%E5%90%91%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "normal vector",
+          "url": "https://en.wikipedia.org/w/index.php?search=normal%20vector"
+        }
+      ]
+    },
+    {
+      "chinese_name": "法丛",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "法丛用来描述把子流形各点法空间合成的向量丛。一个核心表达是 $NS=\\bigsqcup_{p\\in S}N_pS$，这里$N_pS$ 是点 $p$ 的法空间。\n\n它与切丛互补但不相同，切丛沿子流形内部，法丛指向环境中的横向方向。形变、第二基本形式和平均曲率向量都自然取值于法丛。丛论语言里，法丛关注每个点上附着的线性空间以及截面如何变化，适合描述场和约束的局部数据。法丛让向量、余向量和更一般的场能在流形上统一处理，也解释了为什么不同点的数据不能随便相加。法丛的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "法丛",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%95%E4%B8%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "法丛",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%95%E4%B8%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "normal bundle",
+          "url": "https://en.wikipedia.org/w/index.php?search=normal%20bundle"
+        }
+      ]
+    },
+    {
+      "chinese_name": "第一基本形式",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "第一基本形式刻画曲面上由环境度量诱导的内蕴度量。一个核心表达是 $I=g_{ij}du^idu^j$，这里$g_{ij}=\\langle X_i,X_j\\rangle$ 是参数切向量内积。\n\n它不同于第二基本形式，第一基本形式测长度角度，第二基本形式测法向弯曲。曲面面积、角度和高斯曲率的内蕴描述都依赖它。曲面几何中，第一基本形式同时记录内蕴量和外在弯曲，第一、第二基本形式决定长度、角度和法向变化。第一基本形式常用于研究曲线或曲面的局部形状，主曲率、平均曲率和高斯曲率分别强调不同的弯曲信息。第一基本形式的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "第一基本形式",
+          "url": "https://www.baidu.com/s?wd=%E7%AC%AC%E4%B8%80%E5%9F%BA%E6%9C%AC%E5%BD%A2%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "第一基本形式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AC%AC%E4%B8%80%E5%9F%BA%E6%9C%AC%E5%BD%A2%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "first basic form",
+          "url": "https://en.wikipedia.org/w/index.php?search=first%20basic%20form"
+        }
+      ]
+    },
+    {
+      "chinese_name": "第二基本形式",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "第二基本形式是记录曲面切向变化投到法向方向的二次型。在常用记号中有 $II_{ij}=\\langle \\partial_i\\partial_jX,n\\rangle$，其中$X$ 是曲面参数化，$n$ 是单位法向。\n\n它与第一基本形式不同，第二基本形式依赖曲面在环境中的弯曲。主曲率、平均曲率和形算子都由第一与第二基本形式共同决定。曲面几何中，第二基本形式同时记录内蕴量和外在弯曲，第一、第二基本形式决定长度、角度和法向变化。第二基本形式常用于研究曲线或曲面的局部形状，主曲率、平均曲率和高斯曲率分别强调不同的弯曲信息。第二基本形式的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "第二基本形式",
+          "url": "https://www.baidu.com/s?wd=%E7%AC%AC%E4%BA%8C%E5%9F%BA%E6%9C%AC%E5%BD%A2%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "第二基本形式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AC%AC%E4%BA%8C%E5%9F%BA%E6%9C%AC%E5%BD%A2%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "second basic form",
+          "url": "https://en.wikipedia.org/w/index.php?search=second%20basic%20form"
+        }
+      ]
+    },
+    {
+      "chinese_name": "平均曲率",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "平均曲率指主曲率的平均值，描述曲面面积一阶变分的法向响应。在常用记号中有 $H={1\\over2}(k_1+k_2)$，其中$k_1,k_2$ 是主曲率。\n\n它不同于高斯曲率，平均曲率用和，高斯曲率用积。极小曲面满足 $H=0$，均值曲率流则沿 $H$ 的法向方向演化。曲面几何中，平均曲率同时记录内蕴量和外在弯曲，第一、第二基本形式决定长度、角度和法向变化。平均曲率常用于研究曲线或曲面的局部形状，主曲率、平均曲率和高斯曲率分别强调不同的弯曲信息。平均曲率的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平均曲率",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E5%9D%87%E6%9B%B2%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平均曲率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E5%9D%87%E6%9B%B2%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "average curvature",
+          "url": "https://en.wikipedia.org/w/index.php?search=average%20curvature"
+        }
+      ]
+    },
+    {
+      "chinese_name": "高斯曲率",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "高斯曲率用来描述二维曲面两个主曲率的乘积。可写作 $K=k_1k_2$，这里$k_1,k_2$ 是主曲率。\n\n它不同于平均曲率，Gaussian曲率是内蕴不变量，而平均曲率依赖嵌入。球面高斯曲率为正，鞍面为负，平面为零。曲面几何中，高斯曲率同时记录内蕴量和外在弯曲，第一、第二基本形式决定长度、角度和法向变化。高斯曲率常用于研究曲线或曲面的局部形状，主曲率、平均曲率和高斯曲率分别强调不同的弯曲信息。高斯曲率的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。因此理解高斯曲率还要看它依赖哪些几何结构，以及哪些结论与坐标选择无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "高斯曲率",
+          "url": "https://www.baidu.com/s?wd=%E9%AB%98%E6%96%AF%E6%9B%B2%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "高斯曲率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%AB%98%E6%96%AF%E6%9B%B2%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gaussian curvature",
+          "url": "https://en.wikipedia.org/w/index.php?search=gaussian%20curvature"
+        }
+      ]
+    },
+    {
+      "chinese_name": "主曲率",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "主曲率刻画形算子在主方向上的特征值。可写作 $S(v_i)=k_i v_i$，这里$S$ 是形算子，$v_i$ 是主方向，$k_i$ 是主曲率。\n\n它不同于平均曲率和高斯曲率，后两者分别是主曲率的和与积的组合。主曲率给出曲面在两个正交主方向上的法向弯曲程度。曲面几何中，主曲率同时记录内蕴量和外在弯曲，第一、第二基本形式决定长度、角度和法向变化。主曲率常用于研究曲线或曲面的局部形状，主曲率、平均曲率和高斯曲率分别强调不同的弯曲信息。主曲率的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "主曲率",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%BB%E6%9B%B2%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "主曲率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%BB%E6%9B%B2%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "principal curvature",
+          "url": "https://en.wikipedia.org/w/index.php?search=principal%20curvature"
+        }
+      ]
+    },
+    {
+      "chinese_name": "形算子",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "形算子是把切向量送到法向量变化率负值的线性算子。常写成 $S(v)=-\\nabla_v n$，其中$n$ 是单位法向，$v$ 是切向量。\n\n它与第二基本形式相连但类型不同，形算子是切空间到切空间的映射，第二基本形式是二次型。主曲率是形算子的特征值。曲面几何中，形算子同时记录内蕴量和外在弯曲，第一、第二基本形式决定长度、角度和法向变化。形算子常用于研究曲线或曲面的局部形状，主曲率、平均曲率和高斯曲率分别强调不同的弯曲信息。形算子的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "形算子",
+          "url": "https://www.baidu.com/s?wd=%E5%BD%A2%E7%AE%97%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "形算子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BD%A2%E7%AE%97%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "form operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=form%20operator"
+        }
+      ]
+    },
+    {
+      "chinese_name": "魏恩加滕公式",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "魏恩加滕公式指描述法向量沿切方向变化与形算子关系的公式。常写成 $\\nabla_v n=-S(v)$，其中$n$ 是单位法向，$S$ 是形算子。\n\n它不同于高斯公式，高斯公式分解切向量导数，魏恩加滕公式分解法向量导数。曲面论中，它把法场变化、第二基本形式和主曲率联系起来。曲面几何中，魏恩加滕公式同时记录内蕴量和外在弯曲，第一、第二基本形式决定长度、角度和法向变化。魏恩加滕公式常用于研究曲线或曲面的局部形状，主曲率、平均曲率和高斯曲率分别强调不同的弯曲信息。魏恩加滕公式的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "魏恩加滕公式",
+          "url": "https://www.baidu.com/s?wd=%E9%AD%8F%E6%81%A9%E5%8A%A0%E6%BB%95%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "魏恩加滕公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%AD%8F%E6%81%A9%E5%8A%A0%E6%BB%95%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "weingarten formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=weingarten%20formula"
+        }
+      ]
+    },
+    {
+      "chinese_name": "高斯方程",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "高斯方程用来描述把子流形内蕴曲率与环境曲率和第二基本形式相联系的方程。一个核心表达是 $\\langle R^M(X,Y)Z,W\\rangle=\\langle R^N(X,Y)Z,W\\rangle+\\langle II(X,W),II(Y,Z)\\rangle-\\langle II(X,Z),II(Y,W)\\rangle$，这里$R^M,R^N$ 是内外曲率，$II$ 是第二基本形式。\n\n它不同于科达齐方程，Gauss方程关注切向曲率，科达齐方程关注第二基本形式的协变导数。曲面基本定理和嵌入几何都依赖这组兼容条件。曲面几何中，高斯方程同时记录内蕴量和外在弯曲，第一、第二基本形式决定长度、角度和法向变化。高斯方程常用于研究曲线或曲面的局部形状，主曲率、平均曲率和高斯曲率分别强调不同的弯曲信息。高斯方程的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "高斯方程",
+          "url": "https://www.baidu.com/s?wd=%E9%AB%98%E6%96%AF%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "高斯方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%AB%98%E6%96%AF%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gauss equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=gauss%20equation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "科达齐方程",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "科达齐方程刻画描述第二基本形式协变导数对称性的兼容方程。一个核心表达是 $(\\nabla_XII)(Y,Z)=(\\nabla_YII)(X,Z)$，这里$II$ 是第二基本形式，$X,Y,Z$ 是切向量场。\n\n它与高斯方程不同，科达齐方程控制法向弯曲如何沿曲面变化。第一、第二基本形式若满足Gauss-科达齐条件，局部可确定曲面嵌入。曲面几何中，科达齐方程同时记录内蕴量和外在弯曲，第一、第二基本形式决定长度、角度和法向变化。科达齐方程常用于研究曲线或曲面的局部形状，主曲率、平均曲率和高斯曲率分别强调不同的弯曲信息。科达齐方程的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "科达齐方程",
+          "url": "https://www.baidu.com/s?wd=%E7%A7%91%E8%BE%BE%E9%BD%90%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "科达齐方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A7%91%E8%BE%BE%E9%BD%90%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cordazzi equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=cordazzi%20equation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "正交标架",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "正交标架是在每一点由正交单位向量组成的局部基。在常用记号中有 $\\langle e_i,e_j\\rangle=\\delta_{ij}$，其中$e_i$ 是标架向量，$\\delta_{ij}$ 是克罗内克δ。\n\n它不同于坐标标架，正交标架不一定来自坐标线的偏导。Cartan结构方程和移动标架法常使用正交标架简化计算。曲面几何中，正交标架同时记录内蕴量和外在弯曲，第一、第二基本形式决定长度、角度和法向变化。正交标架常用于研究曲线或曲面的局部形状，主曲率、平均曲率和高斯曲率分别强调不同的弯曲信息。正交标架的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正交标架",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E4%BA%A4%E6%A0%87%E6%9E%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正交标架",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E4%BA%A4%E6%A0%87%E6%9E%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "orthogonal frame",
+          "url": "https://en.wikipedia.org/w/index.php?search=orthogonal%20frame"
+        }
+      ]
+    },
+    {
+      "chinese_name": "移动标架",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "移动标架指沿曲线、曲面或流形变化的一组局部基向量。在常用记号中有 $de_i=\\omega_i{}^j e_j$，其中$\\omega_i{}^j$ 是联络一形式。\n\n它比固定坐标基更灵活，能随几何对象转动并记录联络信息。Frenet标架、正交标架和Cartan方法都属于移动标架思想。曲面几何中，移动标架同时记录内蕴量和外在弯曲，第一、第二基本形式决定长度、角度和法向变化。移动标架常用于研究曲线或曲面的局部形状，主曲率、平均曲率和高斯曲率分别强调不同的弯曲信息。移动标架的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "移动标架",
+          "url": "https://www.baidu.com/s?wd=%E7%A7%BB%E5%8A%A8%E6%A0%87%E6%9E%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "移动标架",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A7%BB%E5%8A%A8%E6%A0%87%E6%9E%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "moving frame",
+          "url": "https://en.wikipedia.org/w/index.php?search=moving%20frame"
+        }
+      ]
+    },
+    {
+      "chinese_name": "弗雷内标架",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "弗雷内标架用来描述空间曲线的切向、主法向和副法向组成的移动正交标架。可写作 $T'=\\kappa N,\\quad B'=-\\tau N$，这里$T,N,B$ 是标架，$\\kappa$ 是曲率，$\\tau$ 是挠率。\n\n它不同于曲面上的正交标架，Frenet标架专门沿一条正则曲线定义。曲率和挠率共同决定空间曲线在刚体运动下的形状。曲面几何中，弗雷内标架同时记录内蕴量和外在弯曲，第一、第二基本形式决定长度、角度和法向变化。弗雷内标架常用于研究曲线或曲面的局部形状，主曲率、平均曲率和高斯曲率分别强调不同的弯曲信息。弗雷内标架的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弗雷内标架",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%97%E9%9B%B7%E5%86%85%E6%A0%87%E6%9E%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弗雷内标架",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%97%E9%9B%B7%E5%86%85%E6%A0%87%E6%9E%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "frenet frame",
+          "url": "https://en.wikipedia.org/w/index.php?search=frenet%20frame"
+        }
+      ]
+    },
+    {
+      "chinese_name": "曲率",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "曲率刻画描述曲线或空间偏离直线、平坦结构程度的量。可写作 $\\kappa=\\left|{dT\\over ds}\\right|$，这里$T$ 是单位切向量，$s$ 是弧长。\n\n曲线曲率不同于曲面高斯曲率或黎曼曲率张量，后者涉及更多方向。在Frenet公式中，曲率控制切向量转动速度。曲面几何中，曲率同时记录内蕴量和外在弯曲，第一、第二基本形式决定长度、角度和法向变化。曲率常用于研究曲线或曲面的局部形状，主曲率、平均曲率和高斯曲率分别强调不同的弯曲信息。曲率的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。因此理解曲率还要看它依赖哪些几何结构，以及哪些结论与坐标选择无关。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "曲率",
+          "url": "https://www.baidu.com/s?wd=%E6%9B%B2%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "曲率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9B%B2%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "curvature",
+          "url": "https://en.wikipedia.org/w/index.php?search=curvature"
+        }
+      ]
+    },
+    {
+      "chinese_name": "挠率",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "挠率是描述空间曲线离开密切平面扭转程度的量。常写成 $\\tau=-{dB\\over ds}\\cdot N$，其中$B$ 是副法向，$N$ 是主法向，$s$ 是弧长。\n\n它不同于挠率张量，曲线挠率是单条空间曲线的不变量。平面曲线挠率为零，非零挠率说明曲线真正扭出平面。在流形上，挠率需要联络或度量才能比较不同点的数据；没有这些附加结构，许多坐标公式没有不变量意义。挠率用于描述平行移动、曲率和对称性，坐标表达只是计算入口，几何内容由变换规则保证。挠率的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "挠率",
+          "url": "https://www.baidu.com/s?wd=%E6%8C%A0%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "挠率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8C%A0%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "torsion",
+          "url": "https://en.wikipedia.org/w/index.php?search=torsion"
+        }
+      ]
+    },
+    {
+      "chinese_name": "散度定理",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "散度定理指高斯公式的向量分析表述，把散度体积分等于边界通量。常写成 $\\int_\\Omega\\nabla\\cdot F\\,dV=\\int_{\\partial\\Omega}F\\cdot n\\,dS$，其中$F$ 是向量场，$n$ 是外法向。\n\n它与旋度定理不同，散度定理处理源汇和通量，不处理环量。连续介质守恒律常通过散度定理在局部和整体形式之间转换。在三维向量分析里，散度定理和梯度、散度、旋度的关系由积分定理连接；局部微分量常可转成边界上的通量或环量。散度定理既可按坐标公式计算，也可用几何语言理解，关键是分清方向、取向和积分域的维数。散度定理的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "散度定理",
+          "url": "https://www.baidu.com/s?wd=%E6%95%A3%E5%BA%A6%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "散度定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%95%A3%E5%BA%A6%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "divergence theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=divergence%20theorem"
+        }
+      ]
+    },
+    {
+      "chinese_name": "旋度定理",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "旋度定理用来描述Stokes公式的三维向量形式，把旋度通量等于边界环量。一个核心表达是 $\\int_S(\\nabla\\times F)\\cdot n\\,dS=\\oint_{\\partial S}F\\cdot dr$，这里$S$ 是曲面，$\\partial S$ 是边界曲线。\n\n它与散度定理的积分域不同，旋度定理连接二维曲面与一维边界。电磁感应、流体涡量和保守场判别都使用该定理。在三维向量分析里，旋度定理和梯度、散度、旋度的关系由积分定理连接；局部微分量常可转成边界上的通量或环量。旋度定理既可按坐标公式计算，也可用几何语言理解，关键是分清方向、取向和积分域的维数。旋度定理的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "旋度定理",
+          "url": "https://www.baidu.com/s?wd=%E6%97%8B%E5%BA%A6%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "旋度定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%97%8B%E5%BA%A6%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "curl theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=curl%20theorem"
+        }
+      ]
+    },
+    {
+      "chinese_name": "张量密度",
+      "source_file": "words/数学/普通模式/vector_tensor_analysis_terms.csv",
+      "complete_clues": [],
+      "fragmented_clues": [],
+      "explanation_markdown": "张量密度刻画坐标变换时除张量变换外还带雅可比幂因子的对象。一个核心表达是 $\\tilde T^{i'}=|\\det{\\partial x'\\over\\partial x}|^w{\\partial x^{i'}\\over\\partial x^j}\\tilde T^j$，这里$w$ 是密度权重，$\\tilde T$ 是张量密度。\n\n它不同于普通张量，普通张量不额外乘雅可比行列式因子。体积密度、积分测度和广义相对论中的 $\\sqrt{|g|}$ 相关量常表现为张量密度。张量语言中，张量密度的指标位置和变换律很关键；能否升降指标取决于是否选定度量。张量密度把线性代数、连续介质和曲率计算联系起来，分量数组只有满足变换律才代表同一对象。张量密度的适用范围要由坐标、度量和取向等结构限定，换坐标时要区分分量变化和几何对象本身。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "张量密度",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%A0%E9%87%8F%E5%AF%86%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "张量密度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%A0%E9%87%8F%E5%AF%86%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tensor density",
+          "url": "https://en.wikipedia.org/w/index.php?search=tensor%20density"
+        }
+      ]
+    }
+  ]
+}

@@ -39,10 +39,29 @@ class NightmareModeConfigTests(unittest.TestCase):
             hard_total = sum(MASK_PROBABILITIES["困难"][tier].values())
             nightmare_total = sum(MASK_PROBABILITIES["噩梦"][tier].values())
             self.assertGreater(nightmare_total, hard_total)
-        self.assertEqual(BonusGuessApp.difficulty_label_for_value(None, 10), "噩梦")
+        self.assertEqual(BonusGuessApp.difficulty_label_for_value(None, 10), "困难")
+        self.assertEqual(BonusGuessApp.difficulty_label_for_value(None, 11), "噩梦")
 
     def test_nightmare_crossword_size_extends_hard(self):
         self.assertGreater(size_for_difficulty("噩梦"), size_for_difficulty("困难"))
+        self.assertEqual(BonusGuessApp.crossword_rank_size_for_id(None, 1), 8)
+        self.assertEqual(BonusGuessApp.crossword_rank_size_for_id(None, 20), 30)
+        self.assertEqual(BonusGuessApp.crossword_rank_seconds_for_id(None, 1), 8 * 60)
+        self.assertEqual(BonusGuessApp.crossword_rank_seconds_for_id(None, 20), 25 * 60)
+        self.assertEqual(BonusGuessApp.crossword_rank_word_count_for_id(None, 20), 85)
+
+    def test_high_crossword_ranks_reach_nightmare_term_windows(self):
+        self.assertEqual(BonusGuessApp.crossword_rank_difficulty_window_for_id(None, 16), (9, 11, 10.0))
+        self.assertEqual(BonusGuessApp.crossword_rank_difficulty_window_for_id(None, 20), (11, 12, 12.0))
+        _low, high, _center = BonusGuessApp.crossword_rank_difficulty_window_for_id(None, 16)
+        self.assertEqual(BonusGuessApp.difficulty_label_for_value(None, high), "噩梦")
+
+    def test_physics_nightmare_terms_include_difficulty_above_ten(self):
+        library = TermLibrary(ROOT / "words")
+        terms, _files = library.load("物理模式", "噩梦")
+        difficulties = {term.difficulty for term in terms}
+        self.assertIn(11, difficulties)
+        self.assertIn(12, difficulties)
 
 
 if __name__ == "__main__":

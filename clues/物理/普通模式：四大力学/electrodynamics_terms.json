@@ -17,6 +17,24 @@
         "麦克斯韦方程 洛伦兹力 辐射问题 这里汇合",
         "电磁相互作用 经典场论",
         "electrodynamics"
+      ],
+      "explanation_markdown": "电动力学把电荷、电流和随时间变化的电磁场放进同一套经典场论。静电学只看固定电荷，静磁学只看稳恒电流；这里的关键是变化电场与变化磁场彼此激发，并以有限速度把扰动传到远处。\n\n协变形式常写作 $\\partial_\\mu F^{\\mu\\nu}=\\mu_0J^\\nu$，其中 $F^{\\mu\\nu}$ 是电磁场张量，$J^\\nu$ 是四电流，$\\mu_0$ 是真空磁导率。它与洛伦兹力共同说明源如何产生场、场如何推动带电粒子，也解释天线、加速器和电磁波传播的共同结构。\n\n电动力学要和源分布、场、能量流及边界条件一起理解。只看单个公式容易遮住适用前提；静态、准静态、辐射和相对论情形之间的差别，往往正体现在被保留或忽略的项上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电动力学",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电动力学",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electrodynamics",
+          "url": "https://en.wikipedia.org/w/index.php?search=electrodynamics"
+        }
       ]
     },
     {
@@ -35,6 +53,24 @@
         "单位体积内 电荷量就 最常见",
         "单位体积 单位面积",
         "charge density"
+      ],
+      "explanation_markdown": "电荷密度把电荷分布局域化：不再只说一个物体带多少总电荷，而是说明每个小体元、面元或线元中电荷怎样堆积。它是连续源项进入场方程的基本方式。\n\n体分布常写作 $dq=\\rho\\,dV$，其中 $dq$ 是体元 $dV$ 内的电荷量，$\\rho$ 是体电荷密度。若电荷集中在表面或曲线上，则改用 $\\sigma$ 或 $\\lambda$。电荷密度决定高斯定律中的散度源，也决定泊松方程右端的电势弯曲。\n\n使用电荷密度时要先分清它代表真实可输运的自由源，还是由极化、磁化等材料平均产生的等效源。前者常由电路或载流子运动给出，后者常被吸收到辅助场中；混淆二者会使边界跳变和守恒方程写错。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电荷密度",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E8%8D%B7%E5%AF%86%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电荷密度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E8%8D%B7%E5%AF%86%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "charge density",
+          "url": "https://en.wikipedia.org/w/index.php?search=charge%20density"
+        }
       ]
     },
     {
@@ -53,6 +89,24 @@
         "单位面积上穿过 电流量就 最常见",
         "单位体积 单位面积",
         "current density"
+      ],
+      "explanation_markdown": "电流密度刻画电荷流动在空间中的局部分布，比总电流多了方向和截面信息。它适合描述导体内部、等离子体或辐射源中每一点的载流状态。\n\n穿过曲面 $S$ 的电流为 $I=\\int_S\\mathbf J\\cdot d\\mathbf S$，其中 $\\mathbf J$ 是电流密度，$d\\mathbf S$ 是带法向的面积元。点乘只取垂直穿过曲面的分量。电流密度与电荷密度通过连续性方程相连，并作为安培-麦克斯韦方程的源项。\n\n使用电流密度时要先分清它代表真实可输运的自由源，还是由极化、磁化等材料平均产生的等效源。前者常由电路或载流子运动给出，后者常被吸收到辅助场中；混淆二者会使边界跳变和守恒方程写错。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电流密度",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E6%B5%81%E5%AF%86%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电流密度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E6%B5%81%E5%AF%86%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "current density",
+          "url": "https://en.wikipedia.org/w/index.php?search=current%20density"
+        }
       ]
     },
     {
@@ -71,6 +125,24 @@
         "电荷密度 时间变化必须由电流密度 散度补偿",
         "二阶导数 散度 旋度",
         "continuity equation"
+      ],
+      "explanation_markdown": "连续性方程表达电荷不会凭空产生或消失的局域版本。某点电荷密度若随时间降低，原因必须是电流从该点邻域向外流走，而不是守恒律在整体积分后才成立。\n\n电动力学中写作 $\\partial_t\\rho+\\nabla\\cdot\\mathbf J=0$，其中 $\\rho$ 是电荷密度，$\\mathbf J$ 是电流密度，$\\nabla\\cdot\\mathbf J$ 表示净流出率。它保证麦克斯韦方程组的源项自洽：若初始高斯定律成立，随时间演化也不会被安培方程破坏。\n\n连续性方程要和源分布、场、能量流及边界条件一起理解。只看单个公式容易遮住适用前提；静态、准静态、辐射和相对论情形之间的差别，往往正体现在被保留或忽略的项上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "连续性方程",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "连续性方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "continuity equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=continuity%20equation"
+        }
       ]
     },
     {
@@ -89,6 +161,24 @@
         "介导 相互作用由无质量规范玻色子传递",
         "一种长程经典场",
         "electromagnetic field"
+      ],
+      "explanation_markdown": "电磁场是在时空中分布的物理场，统一承载电场和磁场两种表现。不同惯性系会把电场和磁场互相混合，所以它们更像同一对象在不同观察方式下的分量。\n\n带电粒子受力为 $\\mathbf F=q(\\mathbf E+\\mathbf v\\times\\mathbf B)$，其中 $q$ 是电荷量，$\\mathbf v$ 是粒子速度，$\\mathbf E$ 与 $\\mathbf B$ 分别是电场和磁感应强度。电场可改变粒子动能，磁场改变运动方向；二者合在一起形成从静电到辐射的完整作用图像。\n\n电磁场要和源分布、场、能量流及边界条件一起理解。只看单个公式容易遮住适用前提；静态、准静态、辐射和相对论情形之间的差别，往往正体现在被保留或忽略的项上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电磁场",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E7%A3%81%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电磁场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E7%A3%81%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electromagnetic field",
+          "url": "https://en.wikipedia.org/w/index.php?search=electromagnetic%20field"
+        }
       ]
     },
     {
@@ -107,6 +197,24 @@
         "位移电流项补上以后 预言 自洽传播 电磁波",
         "常有积分形式 微分形式两套写法",
         "maxwell equations"
+      ],
+      "explanation_markdown": "麦克斯韦方程组把经典电磁现象压缩成四条局域定律：电荷产生电场散度，磁单极不存在，变化磁场产生环形电场，电流和变化电场产生环形磁场。\n\n其中两条可写为 $\\nabla\\cdot\\mathbf E=\\rho/\\epsilon_0$ 与 $\\nabla\\times\\mathbf B=\\mu_0\\mathbf J+\\mu_0\\epsilon_0\\partial_t\\mathbf E$，这里 $\\rho$ 和 $\\mathbf J$ 是源，$\\epsilon_0,\\mu_0$ 是真空常数。位移电流项使方程预言自洽传播的电磁波，也让电荷守恒自动嵌入场方程。\n\n麦克斯韦方程组要和源分布、场、能量流及边界条件一起理解。只看单个公式容易遮住适用前提；静态、准静态、辐射和相对论情形之间的差别，往往正体现在被保留或忽略的项上。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "麦克斯韦方程组",
+          "url": "https://www.baidu.com/s?wd=%E9%BA%A6%E5%85%8B%E6%96%AF%E9%9F%A6%E6%96%B9%E7%A8%8B%E7%BB%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "麦克斯韦方程组",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%BA%A6%E5%85%8B%E6%96%AF%E9%9F%A6%E6%96%B9%E7%A8%8B%E7%BB%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "maxwell equations",
+          "url": "https://en.wikipedia.org/w/index.php?search=maxwell%20equations"
+        }
       ]
     },
     {
@@ -125,6 +233,24 @@
         "常见形式含有 q E v×B",
         "常见形式含有 q E v 叉乘 B",
         "lorentz force"
+      ],
+      "explanation_markdown": "洛伦兹力是电磁场对带电粒子的直接作用规则。它把场论中的 $\\mathbf E$、$\\mathbf B$ 转化为可观测的轨迹偏转、加速和回旋运动，是连接场和粒子动力学的桥。\n\n公式为 $\\mathbf F=q(\\mathbf E+\\mathbf v\\times\\mathbf B)$，其中 $q$ 是电荷量，$\\mathbf v$ 是速度。电场项沿场方向并能做功，磁场项垂直于速度和磁场，通常改变动量方向而不改变速率。质谱仪、回旋加速器和霍尔效应都直接依赖这一定律。\n\n洛伦兹力要和源分布、场、能量流及边界条件一起理解。只看单个公式容易遮住适用前提；静态、准静态、辐射和相对论情形之间的差别，往往正体现在被保留或忽略的项上。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "洛伦兹力",
+          "url": "https://www.baidu.com/s?wd=%E6%B4%9B%E4%BC%A6%E5%85%B9%E5%8A%9B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "洛伦兹力",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B4%9B%E4%BC%A6%E5%85%B9%E5%8A%9B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lorentz force",
+          "url": "https://en.wikipedia.org/w/index.php?search=lorentz%20force"
+        }
       ]
     },
     {
@@ -143,6 +269,24 @@
         "规范变换 但不 测场",
         "矢量势一起组成电磁势",
         "scalar potential"
+      ],
+      "explanation_markdown": "标量势用一个标量函数记录电场中可由梯度给出的部分。静电情况下，电势差比绝对电势更有物理意义；选定零点后，电场由势的空间变化决定。\n\n一般情形中 $\\mathbf E=-\\nabla\\phi-\\partial_t\\mathbf A$，其中 $\\phi$ 是标量势，$\\mathbf A$ 是矢量势，$\\partial_t\\mathbf A$ 是感应贡献。静态时第二项消失，电场沿电势下降最快方向。标量势常用于电容、导体边界和泊松方程的求解。\n\n标量势中，势函数的优势在于把旋度约束、因果延迟和边界条件编码到较少变量中。它的数值本身依赖规范或参考零点，不能像场强那样直接比较；真正物理内容通常藏在梯度、旋度、时间导数或相位积累里。 比较不同写法时应追踪导出的场张量或场强，而不是把势函数某一点的数值当作直接观测结果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "标量势",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%87%E9%87%8F%E5%8A%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "标量势",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%87%E9%87%8F%E5%8A%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "scalar potential",
+          "url": "https://en.wikipedia.org/w/index.php?search=scalar%20potential"
+        }
       ]
     },
     {
@@ -161,6 +305,24 @@
         "规范条件 限制 散度 四维散度",
         "感应 辐射问题中 求场更方便",
         "vector potential"
+      ],
+      "explanation_markdown": "矢量势用一个矢量场生成磁场，源于磁感应强度满足无散度条件。它不是磁场本身，却在感应、辐射和量子相位问题中比直接求 $\\mathbf B$ 更灵活。\n\n定义关系为 $\\mathbf B=\\nabla\\times\\mathbf A$，其中 $\\mathbf A$ 是矢量势，旋度取出它的环流型变化。给 $\\mathbf A$ 加上任意标量函数的梯度不会改变磁场，这种冗余正是规范自由度。阿哈罗诺夫-玻姆效应也显示势可影响量子相位。\n\n矢量势中，势函数的优势在于把旋度约束、因果延迟和边界条件编码到较少变量中。它的数值本身依赖规范或参考零点，不能像场强那样直接比较；真正物理内容通常藏在梯度、旋度、时间导数或相位积累里。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "矢量势",
+          "url": "https://www.baidu.com/s?wd=%E7%9F%A2%E9%87%8F%E5%8A%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "矢量势",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9F%A2%E9%87%8F%E5%8A%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vector potential",
+          "url": "https://en.wikipedia.org/w/index.php?search=vector%20potential"
+        }
       ]
     },
     {
@@ -179,6 +341,24 @@
         "A 加上梯度项 标量势同时 E B 仍不变",
         "A 加上 函数 梯度 phi 同时作相应",
         "gauge transformation"
+      ],
+      "explanation_markdown": "规范变换改变电磁势的表示，却不改变电场和磁场。它揭示势函数含有描述冗余：不同势可以代表同一个物理场，真正可观测量必须不依赖这种选择。\n\n常写作 $\\mathbf A'=\\mathbf A+\\nabla\\chi,\\;\\phi'=\\phi-\\partial_t\\chi$，其中 $\\chi$ 是任意光滑函数，带撇号的是新势。代入 $\\mathbf E=-\\nabla\\phi-\\partial_t\\mathbf A$ 与 $\\mathbf B=\\nabla\\times\\mathbf A$ 后，附加项相互抵消。库仑规范和洛伦兹规范都是在这种自由度中选取方便代表。\n\n规范选择不是新的物理假设，而是从许多等价势函数中挑出便于计算的一支。不同规范强调的问题不同：有的突出横向自由度，有的保留协变性；只要最后的场强和可观测量一致，描述就是等价的。 比较不同写法时应追踪导出的场张量或场强，而不是把势函数某一点的数值当作直接观测结果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "规范变换",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%84%E8%8C%83%E5%8F%98%E6%8D%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "规范变换",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%84%E8%8C%83%E5%8F%98%E6%8D%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "gauge transformation",
+          "url": "https://en.wikipedia.org/w/index.php?search=gauge%20transformation"
+        }
       ]
     },
     {
@@ -197,6 +377,24 @@
         "取法 标量势 瞬时 泊松方程",
         "静电 低速问题里 计算变简洁",
         "coulomb gauge"
+      ],
+      "explanation_markdown": "库仑规范在电磁势的规范自由度中选择横向矢量势，使磁场的旋度结构与静电标量势分开。它在静电、低速源和辐射场横纵分解中很常用。\n\n条件写作 $\\nabla\\cdot\\mathbf A=0$，其中 $\\mathbf A$ 是矢量势，散度为零表示它没有纵向部分。在这种取法下，标量势常由瞬时泊松方程控制，而真正传播的自由度主要留在横向矢量势里。它不显式保持相对论协变，却让许多近静态计算清爽。\n\n库仑规范中，规范选择不是新的物理假设，而是从许多等价势函数中挑出便于计算的一支。不同规范强调的问题不同：有的突出横向自由度，有的保留协变性；只要最后的场强和可观测量一致，描述就是等价的。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "库仑规范",
+          "url": "https://www.baidu.com/s?wd=%E5%BA%93%E4%BB%91%E8%A7%84%E8%8C%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "库仑规范",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BA%93%E4%BB%91%E8%A7%84%E8%8C%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "coulomb gauge",
+          "url": "https://en.wikipedia.org/w/index.php?search=coulomb%20gauge"
+        }
       ]
     },
     {
@@ -215,6 +413,24 @@
         "取法下 势函数 协变 波动方程",
         "相对论电动力学中 特别自然",
         "lorenz gauge"
+      ],
+      "explanation_markdown": "洛伦兹规范把标量势和矢量势放在四维散度中统一约束，是相对论电动力学里最自然的规范选择之一。它保留方程的协变外形。\n\n规范条件为 $\\partial_\\mu A^\\mu=0$，其中 $A^\\mu$ 是四势，$\\partial_\\mu$ 是四维偏导。满足它后，势函数 obey 以四电流为源的波动方程，推迟解自动带有因果传播。与库仑规范相比，它更适合高速电荷和辐射的协变讨论。\n\n洛伦兹规范中，规范选择不是新的物理假设，而是从许多等价势函数中挑出便于计算的一支。不同规范强调的问题不同：有的突出横向自由度，有的保留协变性；只要最后的场强和可观测量一致，描述就是等价的。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "洛伦兹规范",
+          "url": "https://www.baidu.com/s?wd=%E6%B4%9B%E4%BC%A6%E5%85%B9%E8%A7%84%E8%8C%83%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "洛伦兹规范",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B4%9B%E4%BC%A6%E5%85%B9%E8%A7%84%E8%8C%83"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lorenz gauge",
+          "url": "https://en.wikipedia.org/w/index.php?search=lorenz%20gauge"
+        }
       ]
     },
     {
@@ -233,6 +449,24 @@
         "波算符作用 势上 右端 带有源项",
         "二阶导数 散度 旋度",
         "d alembert equation"
+      ],
+      "explanation_markdown": "达朗贝尔方程是带有有限传播速度的二阶波动方程，常用于电磁势、标量波或场分量。它把空间弯曲项和时间加速度项放在同一个算符中。\n\n可写为 $\\Box\\psi=s$，其中 $\\psi$ 是待求场量，$s$ 是源项，$\\Box=\\nabla^2-c^{-2}\\partial_t^2$ 是波算符。无源时解为传播波；有源时格林函数需要选择推迟解以保证因果性。洛伦兹规范下的电磁势正满足这类方程。\n\n达朗贝尔方程要和源分布、场、能量流及边界条件一起理解。只看单个公式容易遮住适用前提；静态、准静态、辐射和相对论情形之间的差别，往往正体现在被保留或忽略的项上。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "达朗贝尔方程",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%BE%E6%9C%97%E8%B4%9D%E5%B0%94%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "达朗贝尔方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%BE%E6%9C%97%E8%B4%9D%E5%B0%94%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "d alembert equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=d%20alembert%20equation"
+        }
       ]
     },
     {
@@ -251,6 +485,24 @@
         "对势作梯度 旋度 时间导数后 E B",
         "规范下 写法 测场保持不变",
         "electromagnetic potential"
+      ],
+      "explanation_markdown": "电磁势用势函数而不是直接用场强来描述电磁场。标量势负责电场的保守部分，矢量势负责磁场和感应部分；二者合起来更容易处理规范和辐射。\n\n四维记号为 $A^\\mu=(\\phi/c,\\mathbf A)$，其中 $\\phi$ 是标量势，$\\mathbf A$ 是矢量势，$c$ 是光速。由它构造 $F^{\\mu\\nu}=\\partial^\\mu A^\\nu-\\partial^\\nu A^\\mu$ 可得到电场和磁场。势的冗余并非缺陷，而是规范理论的基本结构。\n\n电磁势中，势函数的优势在于把旋度约束、因果延迟和边界条件编码到较少变量中。它的数值本身依赖规范或参考零点，不能像场强那样直接比较；真正物理内容通常藏在梯度、旋度、时间导数或相位积累里。 比较不同写法时应追踪导出的场张量或场强，而不是把势函数某一点的数值当作直接观测结果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电磁势",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E7%A3%81%E5%8A%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电磁势",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E7%A3%81%E5%8A%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electromagnetic potential",
+          "url": "https://en.wikipedia.org/w/index.php?search=electromagnetic%20potential"
+        }
       ]
     },
     {
@@ -269,6 +521,24 @@
         "源量要取 t-r c 这类推迟时间上",
         "辐射问题中 保证因果性",
         "retarded potential"
+      ],
+      "explanation_markdown": "推迟势把电磁作用的有限传播时间写进势函数。观察点此刻看到的不是源的同时刻状态，而是光信号从源点传到观察点所对应的较早状态。\n\n推迟时间为 $t_R=t-|\\mathbf r-\\mathbf r'|/c$，其中 $\\mathbf r$ 是观察点，$\\mathbf r'$ 是源点，$c$ 是光速。电荷密度和电流密度在势积分中都要取 $t_R$ 时刻的值。天线辐射、运动电荷场和远区波形都依赖这种因果延迟。\n\n推迟势中，势函数的优势在于把旋度约束、因果延迟和边界条件编码到较少变量中。它的数值本身依赖规范或参考零点，不能像场强那样直接比较；真正物理内容通常藏在梯度、旋度、时间导数或相位积累里。 比较不同写法时应追踪导出的场张量或场强，而不是把势函数某一点的数值当作直接观测结果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "推迟势",
+          "url": "https://www.baidu.com/s?wd=%E6%8E%A8%E8%BF%9F%E5%8A%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "推迟势",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8E%A8%E8%BF%9F%E5%8A%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "retarded potential",
+          "url": "https://en.wikipedia.org/w/index.php?search=retarded%20potential"
+        }
       ]
     },
     {
@@ -287,6 +557,24 @@
         "每一项 推迟时刻求值",
         "高速电荷 辐射场 推导",
         "lienard wiechert potential"
+      ],
+      "explanation_markdown": "李纳维谢尔势给出任意运动点电荷产生的精确推迟势。它不仅含有电荷到观察点的距离，还含有电荷速度与观察方向的相对关系。\n\n标量势可写为 $\\phi=\\frac{q}{4\\pi\\epsilon_0}\\frac{1}{(1-\\mathbf n\\cdot\\boldsymbol\\beta)R}\\big|_{t_R}$，其中 $q$ 是电荷，$R$ 是推迟位置到观察点的距离，$\\mathbf n$ 是视线方向，$\\boldsymbol\\beta=\\mathbf v/c$。分母显示朝向观察者运动会增强场；对它求导可分离速度场和加速度辐射场。\n\n李纳维谢尔势中，势函数的优势在于把旋度约束、因果延迟和边界条件编码到较少变量中。它的数值本身依赖规范或参考零点，不能像场强那样直接比较；真正物理内容通常藏在梯度、旋度、时间导数或相位积累里。 比较不同写法时应追踪导出的场张量或场强，而不是把势函数某一点的数值当作直接观测结果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "李纳维谢尔势",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%8E%E7%BA%B3%E7%BB%B4%E8%B0%A2%E5%B0%94%E5%8A%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "李纳维谢尔势",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%8E%E7%BA%B3%E7%BB%B4%E8%B0%A2%E5%B0%94%E5%8A%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lienard wiechert potential",
+          "url": "https://en.wikipedia.org/w/index.php?search=lienard%20wiechert%20potential"
+        }
       ]
     },
     {
@@ -305,6 +593,24 @@
         "边界条件 点源响应",
         "线性方程 积分解",
         "green function"
+      ],
+      "explanation_markdown": "格林函数先回答“一个点源会激发怎样的场”，再用叠加处理任意源分布。在线性电动力学中，它是把微分方程转化为积分解的核。\n\n定义关系为 $L G(x,x')=\\delta(x-x')$，其中 $L$ 是线性算符，$G$ 是格林函数，$\\delta$ 是点源分布。边界条件、维数和因果选择会改变 $G$ 的形式。推迟格林函数只允许过去的源影响现在，因而适合辐射和时变势问题。\n\n格林函数要和源分布、场、能量流及边界条件一起理解。只看单个公式容易遮住适用前提；静态、准静态、辐射和相对论情形之间的差别，往往正体现在被保留或忽略的项上。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "格林函数",
+          "url": "https://www.baidu.com/s?wd=%E6%A0%BC%E6%9E%97%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "格林函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A0%BC%E6%9E%97%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "green function",
+          "url": "https://en.wikipedia.org/w/index.php?search=green%20function"
+        }
       ]
     },
     {
@@ -323,6 +629,24 @@
         "正负电荷相距很近时 最低阶非零结构",
         "远区场 最低阶角分布 首先显出",
         "electric dipole"
+      ],
+      "explanation_markdown": "电偶极子是正负电荷分离形成的最低阶电型不对称结构。对于总电荷为零的局域体系，远处电势首先常由它而不是更高阶细节决定。\n\n电偶极矩为 $\\mathbf p=\\sum_i q_i\\mathbf r_i$，其中 $q_i$ 是各点电荷，$\\mathbf r_i$ 是相对参考点的位置。对中性体系，平移坐标原点不会改变 $\\mathbf p$。它决定远场的角分布，也用来描述极性分子、介质极化和短偶极天线。\n\n电偶极子中，多极量的意义依赖源区尺寸远小于观察距离或波长。低阶矩给出远场主形状，高阶矩补充分布细节；对称性常会消去某些低阶项，使原本较弱的四极或磁型项变得可见。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电偶极子",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E5%81%B6%E6%9E%81%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电偶极子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E5%81%B6%E6%9E%81%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electric dipole",
+          "url": "https://en.wikipedia.org/w/index.php?search=electric%20dipole"
+        }
       ]
     },
     {
@@ -341,6 +665,24 @@
         "小电流环 远处产生 主导项",
         "远区磁型角分布 小电流环模型 显出",
         "magnetic dipole"
+      ],
+      "explanation_markdown": "磁偶极子来自小电流环或局域闭合电流分布，是远处磁场最常见的低阶磁型结构。它不是一对孤立磁荷，而是电流环流的等效表述。\n\n连续电流的磁偶极矩为 $\\mathbf m=\\frac12\\int\\mathbf r\\times\\mathbf J\\,d^3r$，其中 $\\mathbf J$ 是电流密度，$\\mathbf r$ 是源点位置。小平面线圈也可写作 $\\mathbf m=I\\mathbf S$。它用于磁化强度、原子磁矩、磁偶极辐射和罗盘式力矩分析。\n\n磁偶极子中，多极量的意义依赖源区尺寸远小于观察距离或波长。低阶矩给出远场主形状，高阶矩补充分布细节；对称性常会消去某些低阶项，使原本较弱的四极或磁型项变得可见。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "磁偶极子",
+          "url": "https://www.baidu.com/s?wd=%E7%A3%81%E5%81%B6%E6%9E%81%E5%AD%90%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "磁偶极子",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A3%81%E5%81%B6%E6%9E%81%E5%AD%90"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "magnetic dipole",
+          "url": "https://en.wikipedia.org/w/index.php?search=magnetic%20dipole"
+        }
       ]
     },
     {
@@ -359,6 +701,24 @@
         "远离源区时 总荷 偶极 四极等项按距离幂次排列",
         "距离越远 低阶矩越先 形状",
         "multipole expansion"
+      ],
+      "explanation_markdown": "多极展开把局域源在远处产生的势或场按角结构和距离幂次分层。总电荷、偶极、四极等低阶量依次给出越来越细的空间不对称信息。\n\n远区核可展开为 $1/|\\mathbf r-\\mathbf r'|=1/r+(\\mathbf r\\cdot\\mathbf r')/r^3+\\cdots$，其中 $\\mathbf r$ 是观察点，$\\mathbf r'$ 是源点。条件是观察距离远大于源区尺寸。它让复杂源分布在远场中被少数多极矩近似，常用于静电势、辐射和散射。\n\n多极展开中，多极量的意义依赖源区尺寸远小于观察距离或波长。低阶矩给出远场主形状，高阶矩补充分布细节；对称性常会消去某些低阶项，使原本较弱的四极或磁型项变得可见。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "多极展开",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%9A%E6%9E%81%E5%B1%95%E5%BC%80%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "多极展开",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%9A%E6%9E%81%E5%B1%95%E5%BC%80"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "multipole expansion",
+          "url": "https://en.wikipedia.org/w/index.php?search=multipole%20expansion"
+        }
       ]
     },
     {
@@ -377,6 +737,24 @@
         "电荷分布 二阶空间不对称性",
         "偶极项消失时 二阶角分布",
         "electric quadrupole moment"
+      ],
+      "explanation_markdown": "电四极矩刻画电荷分布的二阶空间不对称性。当总电荷和电偶极矩为零或被对称性抑制时，四极结构常成为远场修正的主导项。\n\n常用无迹形式为 $Q_{ij}=\\int\\rho(3x_i x_j-r^2\\delta_{ij})\\,d^3r$，其中 $\\rho$ 是电荷密度，$x_i$ 是源点坐标分量，$\\delta_{ij}$ 是克罗内克符号。它描述电荷云沿不同方向被拉长或压扁的程度，在分子场、核四极矩和高阶辐射中出现。\n\n电四极矩中，多极量的意义依赖源区尺寸远小于观察距离或波长。低阶矩给出远场主形状，高阶矩补充分布细节；对称性常会消去某些低阶项，使原本较弱的四极或磁型项变得可见。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电四极矩",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E5%9B%9B%E6%9E%81%E7%9F%A9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电四极矩",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E5%9B%9B%E6%9E%81%E7%9F%A9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electric quadrupole moment",
+          "url": "https://en.wikipedia.org/w/index.php?search=electric%20quadrupole%20moment"
+        }
       ]
     },
     {
@@ -395,6 +773,24 @@
         "磁场 旋度",
         "potential 英文词",
         "magnetic vector potential"
+      ],
+      "explanation_markdown": "磁矢势是静磁场和低频磁场计算中的中间变量。它把电流分布先转化为矢量势，再通过旋度得到磁感应强度，形式上类似用电势求电场。\n\n静磁情形下 $\\mathbf A(\\mathbf r)=\\frac{\\mu_0}{4\\pi}\\int\\frac{\\mathbf J(\\mathbf r')}{|\\mathbf r-\\mathbf r'|}\\,d^3r'$，其中 $\\mathbf J$ 是源电流密度，$\\mathbf r'$ 是源点。取 $\\nabla\\times\\mathbf A$ 得到毕奥-萨伐尔型磁场。规范选择会改变 $\\mathbf A$，但不会改变 $\\mathbf B$。\n\n磁矢势中，势函数的优势在于把旋度约束、因果延迟和边界条件编码到较少变量中。它的数值本身依赖规范或参考零点，不能像场强那样直接比较；真正物理内容通常藏在梯度、旋度、时间导数或相位积累里。 比较不同写法时应追踪导出的场张量或场强，而不是把势函数某一点的数值当作直接观测结果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "磁矢势",
+          "url": "https://www.baidu.com/s?wd=%E7%A3%81%E7%9F%A2%E5%8A%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "磁矢势",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A3%81%E7%9F%A2%E5%8A%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "magnetic vector potential",
+          "url": "https://en.wikipedia.org/w/index.php?search=magnetic%20vector%20potential"
+        }
       ]
     },
     {
@@ -413,6 +809,24 @@
         "真空 E B 传播方向两两垂直 以光速前进",
         "介质 边界 速度 方向 模式",
         "electromagnetic wave"
+      ],
+      "explanation_markdown": "电磁波是电场和磁场在空间中相互维持并传播的解。真空中没有电荷电流时，麦克斯韦方程仍允许横向场以光速前进。\n\n电场满足 $\\nabla^2\\mathbf E-c^{-2}\\partial_t^2\\mathbf E=0$，其中 $\\mathbf E$ 是电场，$c$ 是真空光速。磁场满足同类方程，并与电场、传播方向两两垂直。无线电、微波、红外和可见光只是频率不同的电磁波，能量由坡印廷矢量输运。\n\n电磁波中，这类概念通常需要同时看相位、振幅、边界和能量流。自由空间中许多关系很简单，进入波导、色散介质或各向异性材料后，传播方向、能流方向和相位速度可能分离，因此不能只凭几何光线直觉判断。 处理具体模式时，边界条件会选择允许的空间结构，介质色散则决定相位传播和波包传播是否分离。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电磁波",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E7%A3%81%E6%B3%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电磁波",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E7%A3%81%E6%B3%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electromagnetic wave",
+          "url": "https://en.wikipedia.org/w/index.php?search=electromagnetic%20wave"
+        }
       ]
     },
     {
@@ -431,6 +845,24 @@
         "exp[i k·r-ωt ] 这样",
         "均匀无界介质 波动解",
         "plane wave"
+      ],
+      "explanation_markdown": "平面波是等相位面为平面的理想波形，常用来近似远离源区的小块波前。它把传播方向、频率和偏振都清楚地写进一个相位因子。\n\n复表示为 $\\mathbf E=\\mathrm{Re}\\{\\mathbf E_0e^{i(\\mathbf k\\cdot\\mathbf r-\\omega t)}\\}$，其中 $\\mathbf E_0$ 是复振幅，$\\mathbf k$ 是波矢，$\\omega$ 是角频率。真空平面波满足 $\\mathbf k\\cdot\\mathbf E_0=0$。反射、折射、偏振片和色散分析通常都从这种基底开始。\n\n平面波中，这类概念通常需要同时看相位、振幅、边界和能量流。自由空间中许多关系很简单，进入波导、色散介质或各向异性材料后，传播方向、能流方向和相位速度可能分离，因此不能只凭几何光线直觉判断。 处理具体模式时，边界条件会选择允许的空间结构，介质色散则决定相位传播和波包传播是否分离。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平面波",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E9%9D%A2%E6%B3%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平面波",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E9%9D%A2%E6%B3%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "plane wave",
+          "url": "https://en.wikipedia.org/w/index.php?search=plane%20wave"
+        }
       ]
     },
     {
@@ -449,6 +881,24 @@
         "振幅随距离增大 1 r 衰减",
         "远离源后 小区域内又 近似为平面波",
         "spherical wave"
+      ],
+      "explanation_markdown": "球面波描述点源或小源区向外辐射时形成的波前，等相位面是一系列同心球面。随着传播距离增大，同一能量分布到更大的球面面积上。\n\n标量形式可写为 $\\psi(r,t)=f(t-r/c)/r$，其中 $\\psi$ 是波场，$f$ 是源发出的波形，$r$ 是到源的距离，$c$ 是传播速度。$1/r$ 振幅衰减保证总功率在远处保持有限。足够远的局部区域内，球面波又可近似看成平面波。\n\n球面波中，这类概念通常需要同时看相位、振幅、边界和能量流。自由空间中许多关系很简单，进入波导、色散介质或各向异性材料后，传播方向、能流方向和相位速度可能分离，因此不能只凭几何光线直觉判断。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "球面波",
+          "url": "https://www.baidu.com/s?wd=%E7%90%83%E9%9D%A2%E6%B3%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "球面波",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%90%83%E9%9D%A2%E6%B3%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "spherical wave",
+          "url": "https://en.wikipedia.org/w/index.php?search=spherical%20wave"
+        }
       ]
     },
     {
@@ -467,6 +917,24 @@
         "单色波相位中常出现 k·r",
         "大小等 2π λ",
         "wave vector"
+      ],
+      "explanation_markdown": "波矢给出波的传播方向和空间相位变化率。它垂直于等相位面，长度越大，单位距离内相位转过得越快，波长也越短。\n\n定义为 $\\mathbf k=k\\hat{\\mathbf n}$ 且 $k=2\\pi/\\lambda$，其中 $\\hat{\\mathbf n}$ 是传播方向单位矢量，$\\lambda$ 是波长。平面波相位 $\\mathbf k\\cdot\\mathbf r-\\omega t$ 的空间梯度正是 $\\mathbf k$。在各向异性介质中，波矢方向和能流方向还可能不完全一致。\n\n波矢中，这类概念通常需要同时看相位、振幅、边界和能量流。自由空间中许多关系很简单，进入波导、色散介质或各向异性材料后，传播方向、能流方向和相位速度可能分离，因此不能只凭几何光线直觉判断。 处理具体模式时，边界条件会选择允许的空间结构，介质色散则决定相位传播和波包传播是否分离。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "波矢",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A2%E7%9F%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "波矢",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A2%E7%9F%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wave vector",
+          "url": "https://en.wikipedia.org/w/index.php?search=wave%20vector"
+        }
       ]
     },
     {
@@ -485,6 +953,24 @@
         "相位 k·r-ωt ω 大小",
         "2πf",
         "angular frequency"
+      ],
+      "explanation_markdown": "角频率用相位每秒转过的弧度数衡量振荡快慢，比普通频率更适合写在指数相位和微分方程中。电磁波的时间导数常直接带出它。\n\n关系为 $\\omega=2\\pi f$，其中 $\\omega$ 是角频率，$f$ 是每秒周期数。平面波相位写作 $\\mathbf k\\cdot\\mathbf r-\\omega t$，所以频域计算中 $\\partial_t$ 常替换为 $-i\\omega$。它还与光子能量 $E=\\hbar\\omega$ 和谐振条件直接相连。\n\n角频率中，这类概念通常需要同时看相位、振幅、边界和能量流。自由空间中许多关系很简单，进入波导、色散介质或各向异性材料后，传播方向、能流方向和相位速度可能分离，因此不能只凭几何光线直觉判断。 处理具体模式时，边界条件会选择允许的空间结构，介质色散则决定相位传播和波包传播是否分离。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "角频率",
+          "url": "https://www.baidu.com/s?wd=%E8%A7%92%E9%A2%91%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "角频率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%A7%92%E9%A2%91%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "angular frequency",
+          "url": "https://en.wikipedia.org/w/index.php?search=angular%20frequency"
+        }
       ]
     },
     {
@@ -503,6 +989,24 @@
         "分析器 波片 反射界面 筛选 取向",
         "横向波 振动取向自由度",
         "polarization"
+      ],
+      "explanation_markdown": "偏振说明横向电场矢量在传播过程中怎样振动。固定传播方向后，电场端点可以沿直线、圆或椭圆运动，对应线偏振、圆偏振和椭圆偏振。\n\n平面波可写为 $\\mathbf E=\\mathrm{Re}\\{E_0\\boldsymbol\\epsilon e^{i(\\mathbf k\\cdot\\mathbf r-\\omega t)}\\}$，其中 $\\boldsymbol\\epsilon$ 是偏振矢量，$E_0$ 是振幅。真空中 $\\boldsymbol\\epsilon\\cdot\\mathbf k=0$。偏振影响菲涅耳系数、晶体双折射、天线接收效率和量子跃迁选择规则。\n\n偏振中，这类概念通常需要同时看相位、振幅、边界和能量流。自由空间中许多关系很简单，进入波导、色散介质或各向异性材料后，传播方向、能流方向和相位速度可能分离，因此不能只凭几何光线直觉判断。 处理具体模式时，边界条件会选择允许的空间结构，介质色散则决定相位传播和波包传播是否分离。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "偏振",
+          "url": "https://www.baidu.com/s?wd=%E5%81%8F%E6%8C%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "偏振",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%81%8F%E6%8C%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "polarization",
+          "url": "https://en.wikipedia.org/w/index.php?search=polarization"
+        }
       ]
     },
     {
@@ -521,6 +1025,24 @@
         "电场 磁场 传播方向 互相垂直",
         "纵向压缩波 图像",
         "transverse wave"
+      ],
+      "explanation_markdown": "横波的场振动方向垂直于传播方向。自由空间电磁波正是横波，电场、磁场和波矢构成相互垂直的三元结构。\n\n横向条件写作 $\\mathbf k\\cdot\\mathbf E=0$ 与 $\\mathbf k\\cdot\\mathbf B=0$，其中 $\\mathbf k$ 是波矢，$\\mathbf E,\\mathbf B$ 分别是电场和磁场。这个性质让自由光波只有两个独立偏振自由度。需要注意，波导或等离子体中的模式可能出现纵向分量，不能简单照搬自由空间结论。\n\n横波中，这类概念通常需要同时看相位、振幅、边界和能量流。自由空间中许多关系很简单，进入波导、色散介质或各向异性材料后，传播方向、能流方向和相位速度可能分离，因此不能只凭几何光线直觉判断。 处理具体模式时，边界条件会选择允许的空间结构，介质色散则决定相位传播和波包传播是否分离。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "横波",
+          "url": "https://www.baidu.com/s?wd=%E6%A8%AA%E6%B3%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "横波",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%A8%AA%E6%B3%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "transverse wave",
+          "url": "https://en.wikipedia.org/w/index.php?search=transverse%20wave"
+        }
       ]
     },
     {
@@ -539,6 +1061,24 @@
         "ω-k 曲线 图像",
         "曲线 线性 介质 色散",
         "dispersion relation"
+      ],
+      "explanation_markdown": "色散关系给出波的角频率与波矢之间的函数联系，相当于介质或边界结构允许哪些波传播的谱图。它决定相位速度、群速度和截止现象。\n\n通常写作 $\\omega=\\omega(\\mathbf k)$，其中 $\\omega$ 是角频率，$\\mathbf k$ 是波矢。若 $\\omega$ 与 $k$ 成正比，波包各频率成分同步前进；若关系弯曲，波包会展宽或分裂。等离子体、波导和光子晶体的色散关系常呈现多分支和禁带。\n\n色散关系中，这类概念通常需要同时看相位、振幅、边界和能量流。自由空间中许多关系很简单，进入波导、色散介质或各向异性材料后，传播方向、能流方向和相位速度可能分离，因此不能只凭几何光线直觉判断。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "色散关系",
+          "url": "https://www.baidu.com/s?wd=%E8%89%B2%E6%95%A3%E5%85%B3%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "色散关系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%89%B2%E6%95%A3%E5%85%B3%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dispersion relation",
+          "url": "https://en.wikipedia.org/w/index.php?search=dispersion%20relation"
+        }
       ]
     },
     {
@@ -557,6 +1097,24 @@
         "各向同性介质 ω k",
         "信号 能量传递速度",
         "phase velocity"
+      ],
+      "explanation_markdown": "相速度指等相位面前进的速度，描述某个单频成分的波峰、波谷怎样移动。它追踪的是相位图样，而不一定是能量或信息的传播速度。\n\n一维各向同性情形下 $v_p=\\omega/k$，其中 $v_p$ 是相速度，$\\omega$ 是角频率，$k$ 是波数。真空电磁波中它等于 $c$；在介质或波导里可与群速度不同，甚至超过 $c$ 而不违反因果性。分析干涉、折射和相位匹配时，相速度是关键量。\n\n相速度中，这类概念通常需要同时看相位、振幅、边界和能量流。自由空间中许多关系很简单，进入波导、色散介质或各向异性材料后，传播方向、能流方向和相位速度可能分离，因此不能只凭几何光线直觉判断。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相速度",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E9%80%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相速度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E9%80%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "phase velocity",
+          "url": "https://en.wikipedia.org/w/index.php?search=phase%20velocity"
+        }
       ]
     },
     {
@@ -575,6 +1133,24 @@
         "波包中心常按 dω dk 速度传播",
         "能量 信息传播常更接近",
         "group velocity"
+      ],
+      "explanation_markdown": "群速度刻画窄带波包包络的移动，通常更接近能量和调制信号的传输速度。它由色散关系的斜率决定，而不是由单个波峰决定。\n\n矢量形式为 $\\mathbf v_g=\\nabla_{\\mathbf k}\\omega$，其中 $\\omega(\\mathbf k)$ 是色散关系，$\\nabla_{\\mathbf k}$ 表示对波矢求梯度。一维时即 $d\\omega/dk$。在强吸收或异常色散区，群速度解释要谨慎；在波导、光纤和等离子体中，它仍支配波包演化。\n\n群速度中，这类概念通常需要同时看相位、振幅、边界和能量流。自由空间中许多关系很简单，进入波导、色散介质或各向异性材料后，传播方向、能流方向和相位速度可能分离，因此不能只凭几何光线直觉判断。 处理具体模式时，边界条件会选择允许的空间结构，介质色散则决定相位传播和波包传播是否分离。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "群速度",
+          "url": "https://www.baidu.com/s?wd=%E7%BE%A4%E9%80%9F%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "群速度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BE%A4%E9%80%9F%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "group velocity",
+          "url": "https://en.wikipedia.org/w/index.php?search=group%20velocity"
+        }
       ]
     },
     {
@@ -593,6 +1169,24 @@
         "金属壁 介质边界只允许某些场型传播",
         "介质 边界 速度 方向 模式",
         "waveguide"
+      ],
+      "explanation_markdown": "波导利用导体壁或介质折射率结构把电磁波限制在某个方向传播。横向边界条件只允许离散场型，因此波导模式常带有截止频率。\n\n常见色散式为 $k_z^2=\\omega^2\\mu\\epsilon-k_c^2$，其中 $k_z$ 是轴向传播常数，$\\mu,\\epsilon$ 是介质参数，$k_c$ 是由横截面决定的截止波数。若右端为负，模式沿轴向衰减而不传播。矩形波导、同轴线和光纤都可用波导思想理解。\n\n波导中，这类概念通常需要同时看相位、振幅、边界和能量流。自由空间中许多关系很简单，进入波导、色散介质或各向异性材料后，传播方向、能流方向和相位速度可能分离，因此不能只凭几何光线直觉判断。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "波导",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A2%E5%AF%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "波导",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A2%E5%AF%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "waveguide",
+          "url": "https://en.wikipedia.org/w/index.php?search=waveguide"
+        }
       ]
     },
     {
@@ -611,6 +1205,24 @@
         "边界反射 腔内只留下离散频率 驻波场",
         "公式 边界条件 观测量 相近概念",
         "resonant cavity"
+      ],
+      "explanation_markdown": "谐振腔把电磁场限制在有限空间内，边界反射使只有某些离散频率和场型能稳定存在。它相当于电磁场的三维本征振子。\n\n单频场分量常满足 $\\nabla^2\\psi+k^2\\psi=0$，其中 $\\psi$ 可代表某个电场或磁场分量，$k=\\omega/c$，边界条件决定允许的 $k$。真实腔体还用品质因数描述储能与损耗之比。微波腔、激光谐振腔和粒子加速腔都依赖这种模态结构。\n\n谐振腔中，这类概念通常需要同时看相位、振幅、边界和能量流。自由空间中许多关系很简单，进入波导、色散介质或各向异性材料后，传播方向、能流方向和相位速度可能分离，因此不能只凭几何光线直觉判断。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "谐振腔",
+          "url": "https://www.baidu.com/s?wd=%E8%B0%90%E6%8C%AF%E8%85%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "谐振腔",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B0%90%E6%8C%AF%E8%85%94"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "resonant cavity",
+          "url": "https://en.wikipedia.org/w/index.php?search=resonant%20cavity"
+        }
       ]
     },
     {
@@ -629,6 +1241,24 @@
         "表达式 E×H",
         "穿过曲面 通量就 单位时间流出",
         "poynting vector"
+      ],
+      "explanation_markdown": "坡印廷矢量给出电磁能量流的方向和密度。电场和磁场交叉后形成能量传播方向，因此它把场的几何关系直接转化为功率流。\n\n介质中常写作 $\\mathbf S=\\mathbf E\\times\\mathbf H$，其中 $\\mathbf S$ 是坡印廷矢量，$\\mathbf E$ 是电场，$\\mathbf H$ 是磁场强度。真空中也可写为 $\\mathbf E\\times\\mathbf B/\\mu_0$。对包围源的闭合曲面积分，可得到电磁能流出率，并与场能变化和焦耳热共同构成能量守恒。\n\n坡印廷矢量要和源分布、场、能量流及边界条件一起理解。只看单个公式容易遮住适用前提；静态、准静态、辐射和相对论情形之间的差别，往往正体现在被保留或忽略的项上。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "坡印廷矢量",
+          "url": "https://www.baidu.com/s?wd=%E5%9D%A1%E5%8D%B0%E5%BB%B7%E7%9F%A2%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "坡印廷矢量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9D%A1%E5%8D%B0%E5%BB%B7%E7%9F%A2%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "poynting vector",
+          "url": "https://en.wikipedia.org/w/index.php?search=poynting%20vector"
+        }
       ]
     },
     {
@@ -647,6 +1277,24 @@
         "对面积积分后 总功率",
         "方向 能流方向一致",
         "energy flux density"
+      ],
+      "explanation_markdown": "能流密度表示单位面积、单位时间穿过的电磁能量。它比总功率更局部，能显示波在空间中向哪里输运能量、哪里发生吸收或反射。\n\n功率由 $P=\\int_S\\mathbf S\\cdot d\\mathbf S$ 给出，其中 $\\mathbf S$ 是能流密度，$d\\mathbf S$ 是曲面法向面积元。点乘只统计穿过曲面的法向分量。远场天线功率、波导传输功率和介质界面能量分配都用这种通量语言计算。\n\n能流密度要和源分布、场、能量流及边界条件一起理解。只看单个公式容易遮住适用前提；静态、准静态、辐射和相对论情形之间的差别，往往正体现在被保留或忽略的项上。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "能流密度",
+          "url": "https://www.baidu.com/s?wd=%E8%83%BD%E6%B5%81%E5%AF%86%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "能流密度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%83%BD%E6%B5%81%E5%AF%86%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "energy flux density",
+          "url": "https://en.wikipedia.org/w/index.php?search=energy%20flux%20density"
+        }
       ]
     },
     {
@@ -665,6 +1313,24 @@
         "电磁场携带 由能流 c² 联系起来",
         "单位体积 单位面积",
         "momentum density"
+      ],
+      "explanation_markdown": "电磁场携带动量，动量密度描述单位体积中由场储存的动量。它解释了光压、辐射反冲和场与物质交换动量的现象。\n\n真空中可写为 $\\mathbf g=\\epsilon_0\\mathbf E\\times\\mathbf B=\\mathbf S/c^2$，其中 $\\mathbf g$ 是动量密度，$\\mathbf E,\\mathbf B$ 是电磁场，$\\mathbf S$ 是坡印廷矢量。把 $\\mathbf g$ 对空间积分得到场动量；再配合麦克斯韦应力张量，可写出完整的动量守恒。\n\n动量密度要和源分布、场、能量流及边界条件一起理解。只看单个公式容易遮住适用前提；静态、准静态、辐射和相对论情形之间的差别，往往正体现在被保留或忽略的项上。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "动量密度",
+          "url": "https://www.baidu.com/s?wd=%E5%8A%A8%E9%87%8F%E5%AF%86%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "动量密度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8A%A8%E9%87%8F%E5%AF%86%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "momentum density",
+          "url": "https://en.wikipedia.org/w/index.php?search=momentum%20density"
+        }
       ]
     },
     {
@@ -683,6 +1349,24 @@
         "对包围面 通量积分 物体 电磁力",
         "公式 边界条件 观测量 相近概念",
         "maxwell stress tensor"
+      ],
+      "explanation_markdown": "麦克斯韦应力张量把电磁场对边界或物体施加的力写成面通量形式。它说明场不仅携带能量和动量，还能像连续介质那样传递应力。\n\n真空表达式为 $T_{ij}=\\epsilon_0(E_iE_j-\\tfrac12E^2\\delta_{ij})+\\mu_0^{-1}(B_iB_j-\\tfrac12B^2\\delta_{ij})$，其中 $E_i,B_i$ 是场分量，$\\delta_{ij}$ 是单位张量。对闭合曲面积分可求导体、介质或辐射场受到的合力。\n\n麦克斯韦应力张量要和源分布、场、能量流及边界条件一起理解。只看单个公式容易遮住适用前提；静态、准静态、辐射和相对论情形之间的差别，往往正体现在被保留或忽略的项上。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "麦克斯韦应力张量",
+          "url": "https://www.baidu.com/s?wd=%E9%BA%A6%E5%85%8B%E6%96%AF%E9%9F%A6%E5%BA%94%E5%8A%9B%E5%BC%A0%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "麦克斯韦应力张量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%BA%A6%E5%85%8B%E6%96%AF%E9%9F%A6%E5%BA%94%E5%8A%9B%E5%BC%A0%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "maxwell stress tensor",
+          "url": "https://en.wikipedia.org/w/index.php?search=maxwell%20stress%20tensor"
+        }
       ]
     },
     {
@@ -701,6 +1385,24 @@
         "能量密度由电场平方项 磁场平方项共同组成",
         "公式 边界条件 观测量 相近概念",
         "energy of electromagnetic field"
+      ],
+      "explanation_markdown": "电磁场能量储存在电场和磁场中，可以在空间中传播，也可以与带电物质交换为机械功或热。它不是附属于某个粒子的账目，而是场自身的局域属性。\n\n真空能量密度为 $u=\\frac12(\\epsilon_0E^2+B^2/\\mu_0)$，其中 $u$ 是单位体积能量，$E$ 和 $B$ 是场强大小。电容器主要储存电场能，电感器主要储存磁场能。能量密度与坡印廷矢量一起组成电磁能量守恒定理。\n\n电磁场能量要和源分布、场、能量流及边界条件一起理解。只看单个公式容易遮住适用前提；静态、准静态、辐射和相对论情形之间的差别，往往正体现在被保留或忽略的项上。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电磁场能量",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E7%A3%81%E5%9C%BA%E8%83%BD%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电磁场能量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E7%A3%81%E5%9C%BA%E8%83%BD%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "energy of electromagnetic field",
+          "url": "https://en.wikipedia.org/w/index.php?search=energy%20of%20electromagnetic%20field"
+        }
       ]
     },
     {
@@ -719,6 +1421,24 @@
         "有能流 场同时携带动量",
         "公式 边界条件 观测量 相近概念",
         "momentum of electromagnetic field"
+      ],
+      "explanation_markdown": "电磁场动量是场所携带的总动量，必须与物质动量一起参与守恒。光照射、反射或被吸收时，物体获得的压力和反冲来自这部分场动量变化。\n\n总场动量可写为 $\\mathbf P_{\\rm em}=\\int\\mathbf g\\,d^3r$，其中 $\\mathbf g$ 是动量密度，积分覆盖场所在区域。在真空中 $\\mathbf g=\\mathbf S/c^2$。天线发射、激光推动微粒和带电体系自场效应都需要把场动量计入整体平衡。\n\n电磁场动量要和源分布、场、能量流及边界条件一起理解。只看单个公式容易遮住适用前提；静态、准静态、辐射和相对论情形之间的差别，往往正体现在被保留或忽略的项上。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电磁场动量",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E7%A3%81%E5%9C%BA%E5%8A%A8%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电磁场动量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E7%A3%81%E5%9C%BA%E5%8A%A8%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "momentum of electromagnetic field",
+          "url": "https://en.wikipedia.org/w/index.php?search=momentum%20of%20electromagnetic%20field"
+        }
       ]
     },
     {
@@ -737,6 +1457,24 @@
         "远区场随 1 r 衰减 携带非零能流",
         "坡印廷矢量穿过闭合面后 通量 功率",
         "radiation"
+      ],
+      "explanation_markdown": "辐射指电磁扰动脱离源区，以可向远处输运能量和动量的波形式传播。它不同于近场中随源来回交换的储能项，远处仍能留下有限功率。\n\n远区辐射场满足 $\\mathbf E_{\\rm rad},\\mathbf B_{\\rm rad}\\propto1/r$，其中 $r$ 是到源的距离。振幅按 $1/r$ 衰减，而球面面积按 $r^2$ 增长，因而总功率可保持有限。加速电荷、振荡电流和天线都是典型辐射源。\n\n辐射中，辐射问题的分界在于场是否能把能量带到远处。近场项可很强却主要储能，远场项按角分布携带功率；源的加速度、多极矩变化和观察距离共同决定探测到的频谱、偏振和方向图。 实际识别时还要看远区功率是否稳定外流，以及角分布、频谱和偏振是否与源的运动或多极矩变化相符。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "辐射",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%90%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "辐射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%90%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "radiation",
+          "url": "https://en.wikipedia.org/w/index.php?search=radiation"
+        }
       ]
     },
     {
@@ -755,6 +1493,24 @@
         "振荡偶极矩 远区 有方向性 能量外流",
         "远区能流",
         "dipole radiation"
+      ],
+      "explanation_markdown": "偶极辐射是局域源最重要的低阶辐射形式。当源尺寸远小于波长时，高阶多极矩的贡献通常较小，时变偶极矩主导远场。\n\n电偶极近似中平均功率满足 $P\\propto\\omega^4|\\mathbf p_0|^2$，其中 $P$ 是辐射功率，$\\omega$ 是角频率，$\\mathbf p_0$ 是偶极矩振幅。四次频率依赖说明高频振荡更容易向外放能。短天线、分子跃迁和瑞利散射都可用偶极辐射抓住主图像。\n\n偶极辐射中，辐射问题的分界在于场是否能把能量带到远处。近场项可很强却主要储能，远场项按角分布携带功率；源的加速度、多极矩变化和观察距离共同决定探测到的频谱、偏振和方向图。 实际识别时还要看远区功率是否稳定外流，以及角分布、频谱和偏振是否与源的运动或多极矩变化相符。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "偶极辐射",
+          "url": "https://www.baidu.com/s?wd=%E5%81%B6%E6%9E%81%E8%BE%90%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "偶极辐射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%81%B6%E6%9E%81%E8%BE%90%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dipole radiation",
+          "url": "https://en.wikipedia.org/w/index.php?search=dipole%20radiation"
+        }
       ]
     },
     {
@@ -773,6 +1529,24 @@
         "振荡电偶极矩 远场源模型之一",
         "远区能流",
         "electric dipole radiation"
+      ],
+      "explanation_markdown": "电偶极辐射来自电偶极矩随时间变化的源。它的远区电场垂直于观察方向，沿偶极轴方向没有辐射，横向方向最强。\n\n角分布常写作 $dP/d\\Omega\\propto|\\ddot{\\mathbf p}|^2\\sin^2\\theta$，其中 $dP/d\\Omega$ 是单位立体角功率，$\\ddot{\\mathbf p}$ 是偶极矩二阶时间导数，$\\theta$ 是观察方向与偶极轴夹角。这个花瓣状分布是短偶极天线和许多原子电偶极跃迁的基础。\n\n电偶极辐射中，辐射问题的分界在于场是否能把能量带到远处。近场项可很强却主要储能，远场项按角分布携带功率；源的加速度、多极矩变化和观察距离共同决定探测到的频谱、偏振和方向图。 实际识别时还要看远区功率是否稳定外流，以及角分布、频谱和偏振是否与源的运动或多极矩变化相符。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电偶极辐射",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E5%81%B6%E6%9E%81%E8%BE%90%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电偶极辐射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E5%81%B6%E6%9E%81%E8%BE%90%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electric dipole radiation",
+          "url": "https://en.wikipedia.org/w/index.php?search=electric%20dipole%20radiation"
+        }
       ]
     },
     {
@@ -791,6 +1565,24 @@
         "变化 磁偶极矩 产生 远场项",
         "远区能流",
         "magnetic dipole radiation"
+      ],
+      "explanation_markdown": "磁偶极辐射由随时间变化的磁偶极矩产生，常见于小电流环、磁矩翻转或电偶极项被对称性抑制的跃迁。它属于多极展开中的磁型低阶项。\n\n简谐磁偶极的平均功率可写为 $P=\\mu_0\\omega^4|\\mathbf m_0|^2/(12\\pi c^3)$，其中 $\\mathbf m_0$ 是磁偶极矩振幅，$\\omega$ 是角频率。其角分布与电偶极辐射相似，但源量来自环流而非电荷分离。\n\n磁偶极辐射中，辐射问题的分界在于场是否能把能量带到远处。近场项可很强却主要储能，远场项按角分布携带功率；源的加速度、多极矩变化和观察距离共同决定探测到的频谱、偏振和方向图。 实际识别时还要看远区功率是否稳定外流，以及角分布、频谱和偏振是否与源的运动或多极矩变化相符。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "磁偶极辐射",
+          "url": "https://www.baidu.com/s?wd=%E7%A3%81%E5%81%B6%E6%9E%81%E8%BE%90%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "磁偶极辐射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A3%81%E5%81%B6%E6%9E%81%E8%BE%90%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "magnetic dipole radiation",
+          "url": "https://en.wikipedia.org/w/index.php?search=magnetic%20dipole%20radiation"
+        }
       ]
     },
     {
@@ -809,6 +1601,24 @@
         "能量 远场 运动反作用",
         "远区能流",
         "radiation damping"
+      ],
+      "explanation_markdown": "辐射阻尼描述加速电荷把能量辐射到远方后，自身运动受到的反作用。它提醒我们，电荷不是只在外场中运动，还会与自己的辐射场交换能量和动量。\n\n非相对论近似中 $\\mathbf F_{\\rm rad}=q^2\\dot{\\mathbf a}/(6\\pi\\epsilon_0c^3)$，其中 $q$ 是电荷量，$\\dot{\\mathbf a}$ 是加速度的时间导数。这个 Abraham-Lorentz 力含有高阶导数，直接使用会遇到预加速和 runaway 解，因此实际常采用能量平衡或降阶近似。\n\n辐射阻尼中，辐射问题的分界在于场是否能把能量带到远处。近场项可很强却主要储能，远场项按角分布携带功率；源的加速度、多极矩变化和观察距离共同决定探测到的频谱、偏振和方向图。 实际识别时还要看远区功率是否稳定外流，以及角分布、频谱和偏振是否与源的运动或多极矩变化相符。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "辐射阻尼",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%90%E5%B0%84%E9%98%BB%E5%B0%BC%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "辐射阻尼",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%90%E5%B0%84%E9%98%BB%E5%B0%BC"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "radiation damping",
+          "url": "https://en.wikipedia.org/w/index.php?search=radiation%20damping"
+        }
       ]
     },
     {
@@ -827,6 +1637,24 @@
         "表面电荷 造成法向电场跃变 表面电流 造成切向磁场跃变",
         "麦克斯韦方程 解 唯一性",
         "boundary condition"
+      ],
+      "explanation_markdown": "电磁边界条件规定场穿过介质界面时哪些分量连续、哪些分量因面电荷或面电流发生跳变。它们来自麦克斯韦方程的积分形式。\n\n例如 $\\hat{\\mathbf n}\\cdot(\\mathbf D_2-\\mathbf D_1)=\\sigma_f$，其中 $\\hat{\\mathbf n}$ 是界面法向，$\\mathbf D$ 是电位移，$\\sigma_f$ 是自由面电荷密度。切向电场、法向磁感应强度和磁场强度也有对应条件。反射、折射、波导模式和静电边值解都由这些界面约束决定。\n\n边界条件中，界面问题最容易出错的是角度、法向和场分量的约定。积分形式的麦克斯韦方程决定哪些分量连续，哪些因面源跳变；几何光学定律只是短波极限，振幅和偏振仍需回到边界条件。 具体求解时，法向方向、源所在区域和边界取值必须保持一致，否则符号正确也会得到物理上相反的结论。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "边界条件",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "边界条件",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "boundary condition",
+          "url": "https://en.wikipedia.org/w/index.php?search=boundary%20condition"
+        }
       ]
     },
     {
@@ -845,6 +1673,24 @@
         "反射波 入射波 振幅 能流",
         "常以比例 速率 强度 形式出现",
         "reflection coefficient"
+      ],
+      "explanation_markdown": "反射系数给出入射波到达界面或负载后反射回来的复振幅比例。它不仅包含强度大小，还包含相位翻转或相位延迟。\n\n电场振幅的定义为 $r=E_r/E_i$，其中 $E_r$ 是反射波复振幅，$E_i$ 是入射波复振幅。功率反射率通常与 $|r|^2$ 有关，但在不同介质间还要考虑阻抗和传播角。阻抗匹配时反射可被压低，这是镀膜、天线馈线和微波接头设计的核心目标。\n\n反射系数中，界面问题最容易出错的是角度、法向和场分量的约定。积分形式的麦克斯韦方程决定哪些分量连续，哪些因面源跳变；几何光学定律只是短波极限，振幅和偏振仍需回到边界条件。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反射系数",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E5%B0%84%E7%B3%BB%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反射系数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E5%B0%84%E7%B3%BB%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "reflection coefficient",
+          "url": "https://en.wikipedia.org/w/index.php?search=reflection%20coefficient"
+        }
       ]
     },
     {
@@ -863,6 +1709,24 @@
         "透射波 入射波 振幅 能流",
         "常以比例 速率 强度 形式出现",
         "transmission coefficient"
+      ],
+      "explanation_markdown": "透射系数给出波穿过界面后透射波相对入射波的复振幅比例。它和反射系数共同由界面处场的连续条件决定。\n\n常写作 $t=E_t/E_i$，其中 $E_t$ 是透射电场复振幅，$E_i$ 是入射电场复振幅。透射功率不能只看 $|t|^2$，还要乘上两侧波阻抗和角度因子。玻璃片、薄膜滤光片、波导接头和介质窗口都需要区分振幅透射与能量透射。\n\n透射系数中，界面问题最容易出错的是角度、法向和场分量的约定。积分形式的麦克斯韦方程决定哪些分量连续，哪些因面源跳变；几何光学定律只是短波极限，振幅和偏振仍需回到边界条件。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "透射系数",
+          "url": "https://www.baidu.com/s?wd=%E9%80%8F%E5%B0%84%E7%B3%BB%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "透射系数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%80%8F%E5%B0%84%E7%B3%BB%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "transmission coefficient",
+          "url": "https://en.wikipedia.org/w/index.php?search=transmission%20coefficient"
+        }
       ]
     },
     {
@@ -881,6 +1745,24 @@
         "交变场 导体后 随深度指数衰减",
         "外场 强场 材料响应 观测变化",
         "skin effect"
+      ],
+      "explanation_markdown": "趋肤效应是交变电磁场进入导体后迅速衰减，电流主要集中在表层流动的现象。频率越高、导电性越强，内部越难被场穿透。\n\n良导体中的趋肤深度为 $\\delta=\\sqrt{2/(\\mu\\sigma\\omega)}$，其中 $\\mu$ 是磁导率，$\\sigma$ 是电导率，$\\omega$ 是角频率。场强大致按 $e^{-z/\\delta}$ 衰减。它会增加高频交流电阻，也决定电磁屏蔽层、微波腔壁和射频导线的有效厚度。\n\n趋肤效应中，介质中的量往往是宏观平均后的结果，已经把微观电荷、电流或偶极响应压缩进材料参数。频率、温度、强场和方向性都会改变这些参数；理想、线性或均匀等词只是在特定尺度上的近似。 实验中的材料参数常由频率和制备条件决定，同一名称在静态、低频和光学频段可能对应不同近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "趋肤效应",
+          "url": "https://www.baidu.com/s?wd=%E8%B6%8B%E8%82%A4%E6%95%88%E5%BA%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "趋肤效应",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B6%8B%E8%82%A4%E6%95%88%E5%BA%94"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "skin effect",
+          "url": "https://en.wikipedia.org/w/index.php?search=skin%20effect"
+        }
       ]
     },
     {
@@ -899,6 +1781,24 @@
         "频率时 等离子体 强烈阻止电磁波传播",
         "常以比例 速率 强度 形式出现",
         "plasma frequency"
+      ],
+      "explanation_markdown": "等离子体频率是电子相对离子背景发生集体振荡的本征频率。它不是单个电子绕核运动，而是大量自由电子被电荷分离后的恢复电场拉回。\n\n冷等离子体中 $\\omega_p=\\sqrt{ne^2/(\\epsilon_0m)}$，其中 $n$ 是电子数密度，$e$ 是元电荷，$m$ 是电子质量。频率低于 $\\omega_p$ 的电磁波常不能在体内传播，而会被反射或形成倏逝场。金属光学响应、电离层反射和等离子体诊断都依赖它。\n\n等离子体频率中，介质中的量往往是宏观平均后的结果，已经把微观电荷、电流或偶极响应压缩进材料参数。频率、温度、强场和方向性都会改变这些参数；理想、线性或均匀等词只是在特定尺度上的近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "等离子体频率",
+          "url": "https://www.baidu.com/s?wd=%E7%AD%89%E7%A6%BB%E5%AD%90%E4%BD%93%E9%A2%91%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "等离子体频率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%AD%89%E7%A6%BB%E5%AD%90%E4%BD%93%E9%A2%91%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "plasma frequency",
+          "url": "https://en.wikipedia.org/w/index.php?search=plasma%20frequency"
+        }
       ]
     },
     {
@@ -917,6 +1817,24 @@
         "场张量 四流 四势 方程 惯性系变换下保持协变",
         "公式 边界条件 观测量 相近概念",
         "relativistic electrodynamics"
+      ],
+      "explanation_markdown": "相对论电动力学把电磁场、源和粒子运动写成洛伦兹协变形式。电场和磁场在不同惯性系中会互相混合，协变写法避免把某个参考系的分解误认为本质。\n\n非齐次方程为 $\\partial_\\mu F^{\\mu\\nu}=\\mu_0J^\\nu$，其中 $F^{\\mu\\nu}$ 是电磁场张量，$J^\\nu$ 是四电流，$\\partial_\\mu$ 是四维导数。齐次方程来自 $F^{\\mu\\nu}$ 的势表示和反对称性。高速电荷束、同步辐射和场的能动量分析都需要这种语言。\n\n相对论电动力学中，相对论写法强调方程形式而非某个参考系中的分量。电场、磁场、电荷密度和电流会在洛伦兹变换下混合；用四维对象书写，可以直接看出哪些结构是观察者无关的。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相对论电动力学",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E5%AF%B9%E8%AE%BA%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相对论电动力学",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E5%AF%B9%E8%AE%BA%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "relativistic electrodynamics",
+          "url": "https://en.wikipedia.org/w/index.php?search=relativistic%20electrodynamics"
+        }
       ]
     },
     {
@@ -935,6 +1853,24 @@
         "电荷密度 电流密度 合成 四维源",
         "磁场方程",
         "four current"
+      ],
+      "explanation_markdown": "四电流把电荷密度和三维电流密度组成一个四维矢量，使电荷守恒在相对论中保持简洁形式。不同惯性系会把其时间分量和空间分量混合。\n\n定义为 $J^\\mu=(c\\rho,\\mathbf J)$，其中 $\\rho$ 是电荷密度，$\\mathbf J$ 是电流密度，$c$ 是光速。守恒律写作 $\\partial_\\mu J^\\mu=0$，展开后正是连续性方程。它作为麦克斯韦方程的源项，与四势和电磁场张量自然配对。\n\n使用四电流时要先分清它代表真实可输运的自由源，还是由极化、磁化等材料平均产生的等效源。前者常由电路或载流子运动给出，后者常被吸收到辅助场中；混淆二者会使边界跳变和守恒方程写错。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "四电流",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%9B%E7%94%B5%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "四电流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%9B%E7%94%B5%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "four current",
+          "url": "https://en.wikipedia.org/w/index.php?search=four%20current"
+        }
       ]
     },
     {
@@ -953,6 +1889,24 @@
         "标量势 矢量势 合成 四维对象",
         "potential 英文词",
         "four potential"
+      ],
+      "explanation_markdown": "四势把标量势和矢量势合并成洛伦兹四矢量，是相对论电动力学中描述势函数的自然对象。它让规范变换和场张量构造都变得紧凑。\n\n常用定义为 $A^\\mu=(\\phi/c,\\mathbf A)$，其中 $\\phi$ 是标量势，$\\mathbf A$ 是矢量势。电磁场张量由 $F^{\\mu\\nu}=\\partial^\\mu A^\\nu-\\partial^\\nu A^\\mu$ 给出。四势本身有规范冗余，但其导数组合对应可测的电场和磁场。\n\n四势中，势函数的优势在于把旋度约束、因果延迟和边界条件编码到较少变量中。它的数值本身依赖规范或参考零点，不能像场强那样直接比较；真正物理内容通常藏在梯度、旋度、时间导数或相位积累里。 比较不同写法时应追踪导出的场张量或场强，而不是把势函数某一点的数值当作直接观测结果。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "四势",
+          "url": "https://www.baidu.com/s?wd=%E5%9B%9B%E5%8A%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "四势",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9B%9B%E5%8A%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "four potential",
+          "url": "https://en.wikipedia.org/w/index.php?search=four%20potential"
+        }
       ]
     },
     {
@@ -971,6 +1925,24 @@
         "六个 E B 分量 排入 反对称张量",
         "公式 边界条件 观测量 相近概念",
         "electromagnetic field tensor"
+      ],
+      "explanation_markdown": "电磁场张量把三维电场和磁场装入一个反对称二阶张量。它显示电场和磁场不是两套互不相关的量，而是同一时空几何对象的分量。\n\n由四势构造为 $F^{\\mu\\nu}=\\partial^\\mu A^\\nu-\\partial^\\nu A^\\mu$，其中 $A^\\mu$ 是四势，$\\partial^\\mu$ 是四维导数。时间-空间分量对应电场，空间-空间分量对应磁场。洛伦兹力、麦克斯韦方程和电磁能动量张量都可用它协变表达。\n\n电磁场张量中，相对论写法强调方程形式而非某个参考系中的分量。电场、磁场、电荷密度和电流会在洛伦兹变换下混合；用四维对象书写，可以直接看出哪些结构是观察者无关的。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电磁场张量",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E7%A3%81%E5%9C%BA%E5%BC%A0%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电磁场张量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E7%A3%81%E5%9C%BA%E5%BC%A0%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electromagnetic field tensor",
+          "url": "https://en.wikipedia.org/w/index.php?search=electromagnetic%20field%20tensor"
+        }
       ]
     },
     {
@@ -989,6 +1961,24 @@
         "另一惯性系 方程外形 不变",
         "公式 边界条件 观测量 相近概念",
         "lorentz covariance"
+      ],
+      "explanation_markdown": "洛伦兹协变性要求物理方程在惯性系变换后保持同一张量形式。它并不要求每个分量数值不变，而是要求分量按洛伦兹变换重新组合后规律不变。\n\n坐标变换写作 $x'^\\mu=\\Lambda^\\mu{}_{\\nu}x^\\nu$，其中 $x^\\mu$ 是四维坐标，$\\Lambda^\\mu{}_{\\nu}$ 是洛伦兹变换矩阵。四电流、四势和场张量都按相应规则变换。麦克斯韦方程的协变性解释了磁效应为何与运动电荷和参考系选择密切相关。\n\n洛伦兹协变性中，相对论写法强调方程形式而非某个参考系中的分量。电场、磁场、电荷密度和电流会在洛伦兹变换下混合；用四维对象书写，可以直接看出哪些结构是观察者无关的。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "洛伦兹协变性",
+          "url": "https://www.baidu.com/s?wd=%E6%B4%9B%E4%BC%A6%E5%85%B9%E5%8D%8F%E5%8F%98%E6%80%A7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "洛伦兹协变性",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B4%9B%E4%BC%A6%E5%85%B9%E5%8D%8F%E5%8F%98%E6%80%A7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "lorentz covariance",
+          "url": "https://en.wikipedia.org/w/index.php?search=lorentz%20covariance"
+        }
       ]
     },
     {
@@ -1007,6 +1997,24 @@
         "时间二阶导数 空间拉普拉斯以相对论形式组合",
         "二阶导数 散度 旋度",
         "d alembert operator"
+      ],
+      "explanation_markdown": "达朗贝尔算符是闵可夫斯基时空中的波算符，把时间二阶导数和空间拉普拉斯组合成洛伦兹协变对象。它是相对论场方程的常用核心算符。\n\n一种号约定下 $\\Box=\\partial_\\mu\\partial^\\mu=c^{-2}\\partial_t^2-\\nabla^2$，其中 $\\partial_\\mu$ 是四维偏导，$\\nabla^2$ 是三维拉普拉斯算符。换用度规号约定会整体变号。洛伦兹规范下的四势方程、标量波方程和格林函数都围绕它展开。\n\n达朗贝尔算符中，相对论写法强调方程形式而非某个参考系中的分量。电场、磁场、电荷密度和电流会在洛伦兹变换下混合；用四维对象书写，可以直接看出哪些结构是观察者无关的。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "达朗贝尔算符",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%BE%E6%9C%97%E8%B4%9D%E5%B0%94%E7%AE%97%E7%AC%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "达朗贝尔算符",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%BE%E6%9C%97%E8%B4%9D%E5%B0%94%E7%AE%97%E7%AC%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "d alembert operator",
+          "url": "https://en.wikipedia.org/w/index.php?search=d%20alembert%20operator"
+        }
       ]
     },
     {
@@ -1025,6 +2033,24 @@
         "时间不变 电荷分布产生无旋电场",
         "公式 边界条件 观测量 相近概念",
         "electrostatics"
+      ],
+      "explanation_markdown": "静电学研究时间不变电荷分布产生的电场。没有随时间变化的磁场参与时，电场无旋，可由一个标量势完整表示。\n\n核心关系为 $\\nabla\\times\\mathbf E=0$ 与 $\\mathbf E=-\\nabla\\phi$，其中 $\\mathbf E$ 是静电场，$\\phi$ 是电势。电荷密度再通过 $\\nabla\\cdot\\mathbf E=\\rho/\\epsilon_0$ 决定势的泊松方程。导体平衡、电容器、电介质极化和镜像法都属于静电学的典型范围。\n\n静电学要和源分布、场、能量流及边界条件一起理解。只看单个公式容易遮住适用前提；静态、准静态、辐射和相对论情形之间的差别，往往正体现在被保留或忽略的项上。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "静电学",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%99%E7%94%B5%E5%AD%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "静电学",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%99%E7%94%B5%E5%AD%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electrostatics",
+          "url": "https://en.wikipedia.org/w/index.php?search=electrostatics"
+        }
       ]
     },
     {
@@ -1043,6 +2069,24 @@
         "稳定电流产生时间不变 磁场",
         "公式 边界条件 观测量 相近概念",
         "magnetostatics"
+      ],
+      "explanation_markdown": "静磁学研究稳恒电流产生的磁场，所有源和场都不随时间变化。此时电荷密度不积累，电流线闭合或延伸到边界，位移电流项可忽略。\n\n基本方程为 $\\nabla\\times\\mathbf B=\\mu_0\\mathbf J$ 与 $\\nabla\\cdot\\mathbf B=0$，其中 $\\mathbf B$ 是磁感应强度，$\\mathbf J$ 是稳恒电流密度。无散度条件允许引入矢量势。长直导线、线圈、磁偶极子和磁化材料常在静磁近似下处理。\n\n静磁学要和源分布、场、能量流及边界条件一起理解。只看单个公式容易遮住适用前提；静态、准静态、辐射和相对论情形之间的差别，往往正体现在被保留或忽略的项上。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "静磁学",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%99%E7%A3%81%E5%AD%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "静磁学",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%99%E7%A3%81%E5%AD%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "magnetostatics",
+          "url": "https://en.wikipedia.org/w/index.php?search=magnetostatics"
+        }
       ]
     },
     {
@@ -1061,6 +2105,24 @@
         "拉普拉斯算符作用 势函数上 右端 源项",
         "二阶导数 散度 旋度",
         "poisson equation"
+      ],
+      "explanation_markdown": "泊松方程把电势的空间弯曲与电荷密度联系起来，是静电边值问题的中心方程。它说明电荷所在处，势不再只是邻域平均值的平滑延拓。\n\n静电中 $\\nabla^2\\phi=-\\rho/\\epsilon_0$，其中 $\\phi$ 是电势，$\\rho$ 是电荷密度，$\\epsilon_0$ 是真空介电常数。给定源和边界条件后，唯一性定理保证势解由这些数据决定。无源区域令右端为零，泊松方程退化为拉普拉斯方程。\n\n泊松方程要和源分布、场、能量流及边界条件一起理解。只看单个公式容易遮住适用前提；静态、准静态、辐射和相对论情形之间的差别，往往正体现在被保留或忽略的项上。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "泊松方程",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%8A%E6%9D%BE%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "泊松方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%8A%E6%9D%BE%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "poisson equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=poisson%20equation"
+        }
       ]
     },
     {
@@ -1079,6 +2141,24 @@
         "无源区域里 势函数 拉普拉斯为零",
         "二阶导数 散度 旋度",
         "laplace equation"
+      ],
+      "explanation_markdown": "拉普拉斯方程描述无自由电荷区域中的电势。该区域内部没有源项，电势形状完全由边界上的电势或法向电场决定。\n\n方程为 $\\nabla^2\\phi=0$，其中 $\\phi$ 是电势，$\\nabla^2$ 是拉普拉斯算符。满足它的函数具有平均值性质，内部不会出现孤立极大或极小值。分离变量法、保角映射和镜像法常用来构造这类无源区域的电势解。\n\n拉普拉斯方程要和源分布、场、能量流及边界条件一起理解。只看单个公式容易遮住适用前提；静态、准静态、辐射和相对论情形之间的差别，往往正体现在被保留或忽略的项上。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拉普拉斯方程",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拉普拉斯方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "laplace equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=laplace%20equation"
+        }
       ]
     },
     {
@@ -1097,6 +2177,24 @@
         "虚设电荷 位置 大小 选成 导体表面条件",
         "公式 边界条件 观测量 相近概念",
         "method of images"
+      ],
+      "explanation_markdown": "镜像法用虚设电荷替代导体或对称边界对电场的影响，使求解区域内的势自动满足指定边界条件。虚设电荷不在真实物理区域内。\n\n接地无限平面旁点电荷的势可写为 $\\phi=\\frac{1}{4\\pi\\epsilon_0}(q/R_1-q/R_2)$，其中 $R_1$ 到真实电荷，$R_2$ 到镜像电荷。平面上两项相消，电势为零。镜像法可靠的根基是唯一性定理，因此只要区域内方程和边界匹配，构造出的势就是原问题解。\n\n镜像法中，界面问题最容易出错的是角度、法向和场分量的约定。积分形式的麦克斯韦方程决定哪些分量连续，哪些因面源跳变；几何光学定律只是短波极限，振幅和偏振仍需回到边界条件。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "镜像法",
+          "url": "https://www.baidu.com/s?wd=%E9%95%9C%E5%83%8F%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "镜像法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%95%9C%E5%83%8F%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "method of images",
+          "url": "https://en.wikipedia.org/w/index.php?search=method%20of%20images"
+        }
       ]
     },
     {
@@ -1115,6 +2213,24 @@
         "单变量函数乘积后 偏微分方程 拆开",
         "公式 边界条件 观测量 相近概念",
         "separation of variables"
+      ],
+      "explanation_markdown": "分离变量法把具有规则几何边界的线性偏微分方程拆成若干单变量方程。它利用坐标系与边界的对称性，把空间结构转化为本征函数展开。\n\n例如取 $\\phi(x,y,z)=X(x)Y(y)Z(z)$，其中 $X,Y,Z$ 分别只依赖一个坐标。代入拉普拉斯方程后，会得到带分离常数的常微分方程。矩形、圆柱和球形区域中的电势、波导模式和谐振腔频率都常由这种方法给出。\n\n分离变量法中，界面问题最容易出错的是角度、法向和场分量的约定。积分形式的麦克斯韦方程决定哪些分量连续，哪些因面源跳变；几何光学定律只是短波极限，振幅和偏振仍需回到边界条件。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "分离变量法",
+          "url": "https://www.baidu.com/s?wd=%E5%88%86%E7%A6%BB%E5%8F%98%E9%87%8F%E6%B3%95%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "分离变量法",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%86%E7%A6%BB%E5%8F%98%E9%87%8F%E6%B3%95"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "separation of variables",
+          "url": "https://en.wikipedia.org/w/index.php?search=separation%20of%20variables"
+        }
       ]
     },
     {
@@ -1133,6 +2249,24 @@
         "区域内方程 边界上 约束必须同时",
         "公式 边界条件 观测量 相近概念",
         "boundary value problem"
+      ],
+      "explanation_markdown": "边值问题要求在区域内部满足场方程，同时在边界上满足电势、法向导数或混合条件。电磁学中的静电、波导和频域散射大多可写成这种形式。\n\n抽象写法为 $L\\phi=f\\;\\text{in }\\Omega,\\;B\\phi=g\\;\\text{on }\\partial\\Omega$，其中 $L$ 是微分算符，$B$ 是边界算符，$\\Omega$ 是区域。源项决定内部方程，边界决定与外部环境的连接。适定的边值问题应有存在、唯一且稳定的解。\n\n边值问题中，界面问题最容易出错的是角度、法向和场分量的约定。积分形式的麦克斯韦方程决定哪些分量连续，哪些因面源跳变；几何光学定律只是短波极限，振幅和偏振仍需回到边界条件。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "边值问题",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%B9%E5%80%BC%E9%97%AE%E9%A2%98%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "边值问题",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%B9%E5%80%BC%E9%97%AE%E9%A2%98"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "boundary value problem",
+          "url": "https://en.wikipedia.org/w/index.php?search=boundary%20value%20problem"
+        }
       ]
     },
     {
@@ -1151,6 +2285,24 @@
         "边界上 函数值 指定",
         "公式 边界条件 观测量 相近概念",
         "dirichlet boundary condition"
+      ],
+      "explanation_markdown": "狄利克雷边界条件直接规定边界上的场值或电势值。静电中，它常表示导体表面被接到某一电位，或边界电势由外部电源控制。\n\n写作 $\\phi|_{\\partial\\Omega}=f$，其中 $\\phi$ 是电势，$\\partial\\Omega$ 是边界，$f$ 是给定函数。它固定的是势本身，而不是穿过边界的电场通量。泊松方程中，给定良好的狄利克雷条件通常足以唯一确定区域内电势。\n\n狄利克雷边界条件中，界面问题最容易出错的是角度、法向和场分量的约定。积分形式的麦克斯韦方程决定哪些分量连续，哪些因面源跳变；几何光学定律只是短波极限，振幅和偏振仍需回到边界条件。 具体求解时，法向方向、源所在区域和边界取值必须保持一致，否则符号正确也会得到物理上相反的结论。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "狄利克雷边界条件",
+          "url": "https://www.baidu.com/s?wd=%E7%8B%84%E5%88%A9%E5%85%8B%E9%9B%B7%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "狄利克雷边界条件",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%8B%84%E5%88%A9%E5%85%8B%E9%9B%B7%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "dirichlet boundary condition",
+          "url": "https://en.wikipedia.org/w/index.php?search=dirichlet%20boundary%20condition"
+        }
       ]
     },
     {
@@ -1169,6 +2321,24 @@
         "边界上 法向导数 指定",
         "公式 边界条件 观测量 相近概念",
         "neumann boundary condition"
+      ],
+      "explanation_markdown": "诺伊曼边界条件规定边界法向导数，在静电中等价于给定法向电场或边界上的面电荷信息。它控制通量，而不直接固定电势零点。\n\n形式为 $\\partial\\phi/\\partial n|_{\\partial\\Omega}=g$，其中 $\\partial/\\partial n$ 是外法向导数，$g$ 是边界函数。纯诺伊曼问题的电势通常只确定到一个加性常数，还需满足总通量与总源相容。绝缘边界和对称面常用这种条件描述。\n\n诺伊曼边界条件中，界面问题最容易出错的是角度、法向和场分量的约定。积分形式的麦克斯韦方程决定哪些分量连续，哪些因面源跳变；几何光学定律只是短波极限，振幅和偏振仍需回到边界条件。 具体求解时，法向方向、源所在区域和边界取值必须保持一致，否则符号正确也会得到物理上相反的结论。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "诺伊曼边界条件",
+          "url": "https://www.baidu.com/s?wd=%E8%AF%BA%E4%BC%8A%E6%9B%BC%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "诺伊曼边界条件",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%AF%BA%E4%BC%8A%E6%9B%BC%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "neumann boundary condition",
+          "url": "https://en.wikipedia.org/w/index.php?search=neumann%20boundary%20condition"
+        }
       ]
     },
     {
@@ -1187,6 +2357,24 @@
         "介质极化 D 高斯定律 自由电荷",
         "自由电荷 全部电荷 高斯定律",
         "electric displacement vector"
+      ],
+      "explanation_markdown": "电位移矢量把介质极化造成的束缚电荷吸收到辅助场中，使高斯定律只显式包含自由电荷。它是宏观电磁学处理电介质的关键量。\n\n定义为 $\\mathbf D=\\epsilon_0\\mathbf E+\\mathbf P$，其中 $\\mathbf E$ 是电场，$\\mathbf P$ 是极化强度。于是 $\\nabla\\cdot\\mathbf D=\\rho_f$，右端只含自由电荷密度。在线性各向同性介质中，常进一步写作 $\\mathbf D=\\epsilon\\mathbf E$，但非线性或各向异性材料需更复杂本构。\n\n电位移矢量中，介质中的量往往是宏观平均后的结果，已经把微观电荷、电流或偶极响应压缩进材料参数。频率、温度、强场和方向性都会改变这些参数；理想、线性或均匀等词只是在特定尺度上的近似。 实验中的材料参数常由频率和制备条件决定，同一名称在静态、低频和光学频段可能对应不同近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电位移矢量",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E4%BD%8D%E7%A7%BB%E7%9F%A2%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电位移矢量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E4%BD%8D%E7%A7%BB%E7%9F%A2%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electric displacement vector",
+          "url": "https://en.wikipedia.org/w/index.php?search=electric%20displacement%20vector"
+        }
       ]
     },
     {
@@ -1205,6 +2393,24 @@
         "磁化贡献分离后 H 自由电流",
         "自由电流 全部电流 环路定律",
         "magnetic field strength"
+      ],
+      "explanation_markdown": "磁场强度把自由电流与材料磁化效应分离，是介质磁学中的辅助场。它不取代磁感应强度，而是让安培定律在宏观材料中更简洁。\n\n关系为 $\\mathbf H=\\mathbf B/\\mu_0-\\mathbf M$，其中 $\\mathbf B$ 是磁感应强度，$\\mathbf M$ 是磁化强度。安培-麦克斯韦方程可写成 $\\nabla\\times\\mathbf H=\\mathbf J_f+\\partial_t\\mathbf D$。线圈产生的自由电流和磁性材料内部磁偶极响应由此被分开记录。\n\n磁场强度中，介质中的量往往是宏观平均后的结果，已经把微观电荷、电流或偶极响应压缩进材料参数。频率、温度、强场和方向性都会改变这些参数；理想、线性或均匀等词只是在特定尺度上的近似。 实验中的材料参数常由频率和制备条件决定，同一名称在静态、低频和光学频段可能对应不同近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "磁场强度",
+          "url": "https://www.baidu.com/s?wd=%E7%A3%81%E5%9C%BA%E5%BC%BA%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "磁场强度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A3%81%E5%9C%BA%E5%BC%BA%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "magnetic field strength",
+          "url": "https://en.wikipedia.org/w/index.php?search=magnetic%20field%20strength"
+        }
       ]
     },
     {
@@ -1223,6 +2429,24 @@
         "单位体积内电偶极矩 合成",
         "介质 微观电偶极矩 平均取向",
         "polarization density"
+      ],
+      "explanation_markdown": "极化强度表示单位体积内电偶极矩的平均值，反映电介质中正负束缚电荷在外电场作用下发生的微小相对位移。\n\n定义为 $\\mathbf P=d\\mathbf p/dV$，其中 $d\\mathbf p$ 是体元 $dV$ 中的电偶极矩。它产生束缚电荷：$\\rho_b=-\\nabla\\cdot\\mathbf P$，表面还可有 $\\sigma_b=\\mathbf P\\cdot\\hat{\\mathbf n}$。介电常数、铁电性和电容器中的介质效应都可用极化强度描述。\n\n极化强度中，介质中的量往往是宏观平均后的结果，已经把微观电荷、电流或偶极响应压缩进材料参数。频率、温度、强场和方向性都会改变这些参数；理想、线性或均匀等词只是在特定尺度上的近似。 实验中的材料参数常由频率和制备条件决定，同一名称在静态、低频和光学频段可能对应不同近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "极化强度",
+          "url": "https://www.baidu.com/s?wd=%E6%9E%81%E5%8C%96%E5%BC%BA%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "极化强度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9E%81%E5%8C%96%E5%BC%BA%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "polarization density",
+          "url": "https://en.wikipedia.org/w/index.php?search=polarization%20density"
+        }
       ]
     },
     {
@@ -1241,6 +2465,24 @@
         "单位体积内磁偶极矩 合成",
         "介质 微观磁偶极矩 平均取向",
         "magnetization intensity"
+      ],
+      "explanation_markdown": "磁化强度表示单位体积内磁偶极矩的平均值，来自微观电流环、电子自旋或轨道磁矩的取向。它刻画材料自身对磁场的响应。\n\n定义为 $\\mathbf M=d\\mathbf m/dV$，其中 $d\\mathbf m$ 是体元 $dV$ 内的磁偶极矩。磁化可产生束缚电流，例如 $\\mathbf J_b=\\nabla\\times\\mathbf M$，表面还有 $\\mathbf K_b=\\mathbf M\\times\\hat{\\mathbf n}$。永磁体、顺磁和铁磁材料都需要这个场量。\n\n磁化强度中，介质中的量往往是宏观平均后的结果，已经把微观电荷、电流或偶极响应压缩进材料参数。频率、温度、强场和方向性都会改变这些参数；理想、线性或均匀等词只是在特定尺度上的近似。 实验中的材料参数常由频率和制备条件决定，同一名称在静态、低频和光学频段可能对应不同近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "磁化强度",
+          "url": "https://www.baidu.com/s?wd=%E7%A3%81%E5%8C%96%E5%BC%BA%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "磁化强度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A3%81%E5%8C%96%E5%BC%BA%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "magnetization intensity",
+          "url": "https://en.wikipedia.org/w/index.php?search=magnetization%20intensity"
+        }
       ]
     },
     {
@@ -1259,6 +2501,24 @@
         "介质极化不均匀时 等效出",
         "电场方程",
         "bound charge"
+      ],
+      "explanation_markdown": "束缚电荷来自介质极化造成的微观电荷位移。它不能像导体中的自由载流子那样长距离移动，却会像真实电荷一样参与产生电场。\n\n体束缚电荷密度为 $\\rho_b=-\\nabla\\cdot\\mathbf P$，其中 $\\mathbf P$ 是极化强度。介质表面还可出现 $\\sigma_b=\\mathbf P\\cdot\\hat{\\mathbf n}$，这里 $\\hat{\\mathbf n}$ 是外法向。用电位移矢量写高斯定律时，这部分电荷被吸收到材料响应中，只留下自由电荷作为显式源。\n\n使用束缚电荷时要先分清它代表真实可输运的自由源，还是由极化、磁化等材料平均产生的等效源。前者常由电路或载流子运动给出，后者常被吸收到辅助场中；混淆二者会使边界跳变和守恒方程写错。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "束缚电荷",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%9F%E7%BC%9A%E7%94%B5%E8%8D%B7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "束缚电荷",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%9F%E7%BC%9A%E7%94%B5%E8%8D%B7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bound charge",
+          "url": "https://en.wikipedia.org/w/index.php?search=bound%20charge"
+        }
       ]
     },
     {
@@ -1277,6 +2537,24 @@
         "材料 导体中迁移 充当宏观源",
         "电场方程",
         "free charge"
+      ],
+      "explanation_markdown": "自由电荷是在宏观电磁学中可作为外部源或可移动载流子处理的电荷。导体表面电荷、电极注入电荷和等离子体电子都常被归入这一类。\n\n高斯定律在介质中写作 $\\nabla\\cdot\\mathbf D=\\rho_f$，其中 $\\mathbf D$ 是电位移矢量，$\\rho_f$ 是自由电荷密度。它与束缚电荷的区别不在于是否真实存在，而在于是否由极化强度自动决定。自由电荷通常由电路、边界条件或输运方程给出。\n\n使用自由电荷时要先分清它代表真实可输运的自由源，还是由极化、磁化等材料平均产生的等效源。前者常由电路或载流子运动给出，后者常被吸收到辅助场中；混淆二者会使边界跳变和守恒方程写错。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自由电荷",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E7%94%B1%E7%94%B5%E8%8D%B7%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自由电荷",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E7%94%B1%E7%94%B5%E8%8D%B7"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "free charge",
+          "url": "https://en.wikipedia.org/w/index.php?search=free%20charge"
+        }
       ]
     },
     {
@@ -1295,6 +2573,24 @@
         "磁化 极化随时间变化 等效出",
         "磁场方程",
         "bound current"
+      ],
+      "explanation_markdown": "束缚电流来自介质内部磁化的微观环流和极化随时间变化产生的等效流动。它不是外电路中可任意抽取的传导电流。\n\n宏观表达为 $\\mathbf J_b=\\nabla\\times\\mathbf M+\\partial_t\\mathbf P$，其中 $\\mathbf M$ 是磁化强度，$\\mathbf P$ 是极化强度。第一项表示磁偶极矩排列形成的环流，第二项表示束缚电荷位移的变化。它影响磁场和界面跳变，但通常被吸收到 $\\mathbf H$ 与 $\\mathbf D$ 的定义中。\n\n使用束缚电流时要先分清它代表真实可输运的自由源，还是由极化、磁化等材料平均产生的等效源。前者常由电路或载流子运动给出，后者常被吸收到辅助场中；混淆二者会使边界跳变和守恒方程写错。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "束缚电流",
+          "url": "https://www.baidu.com/s?wd=%E6%9D%9F%E7%BC%9A%E7%94%B5%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "束缚电流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9D%9F%E7%BC%9A%E7%94%B5%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "bound current",
+          "url": "https://en.wikipedia.org/w/index.php?search=bound%20current"
+        }
       ]
     },
     {
@@ -1313,6 +2609,24 @@
         "移动载流子形成 H 方程",
         "磁场方程",
         "free current"
+      ],
+      "explanation_markdown": "自由电流由可移动载流子形成，能在宏观尺度上通过导线、等离子体或电解质输运电荷。它是线圈、天线和电路与电磁场耦合的主要源。\n\n介质中的安培-麦克斯韦方程写作 $\\nabla\\times\\mathbf H=\\mathbf J_f+\\partial_t\\mathbf D$，其中 $\\mathbf J_f$ 是自由电流密度，$\\mathbf H$ 是磁场强度。导体中常有 $\\mathbf J_f=\\sigma\\mathbf E$。与束缚电流相比，自由电流需要由材料导电性和外部驱动来确定。\n\n使用自由电流时要先分清它代表真实可输运的自由源，还是由极化、磁化等材料平均产生的等效源。前者常由电路或载流子运动给出，后者常被吸收到辅助场中；混淆二者会使边界跳变和守恒方程写错。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "自由电流",
+          "url": "https://www.baidu.com/s?wd=%E8%87%AA%E7%94%B1%E7%94%B5%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "自由电流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%87%AA%E7%94%B1%E7%94%B5%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "free current",
+          "url": "https://en.wikipedia.org/w/index.php?search=free%20current"
+        }
       ]
     },
     {
@@ -1331,6 +2645,24 @@
         "电荷集中 界面上时 要用单位面积计量",
         "单位体积 单位面积",
         "surface charge density"
+      ],
+      "explanation_markdown": "面电荷密度用于电荷集中在曲面或界面上的理想化模型。导体静电平衡时多余电荷分布在表面，电介质极化也可在界面产生等效面电荷。\n\n定义为 $dq=\\sigma\\,dS$，其中 $dq$ 是面积元 $dS$ 上的电荷，$\\sigma$ 是面电荷密度。它会使电位移法向分量发生跳变：$\\hat{\\mathbf n}\\cdot(\\mathbf D_2-\\mathbf D_1)=\\sigma_f$。这种二维源模型保留外场影响，省去了薄层内部细节。\n\n使用面电荷密度时要先分清它代表真实可输运的自由源，还是由极化、磁化等材料平均产生的等效源。前者常由电路或载流子运动给出，后者常被吸收到辅助场中；混淆二者会使边界跳变和守恒方程写错。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "面电荷密度",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%A2%E7%94%B5%E8%8D%B7%E5%AF%86%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "面电荷密度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%A2%E7%94%B5%E8%8D%B7%E5%AF%86%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "surface charge density",
+          "url": "https://en.wikipedia.org/w/index.php?search=surface%20charge%20density"
+        }
       ]
     },
     {
@@ -1349,6 +2681,24 @@
         "电流集中 薄层 界面上时 要用单位长度计量",
         "单位体积 单位面积",
         "surface current density"
+      ],
+      "explanation_markdown": "面电流密度描述电流集中在薄层或界面上流动的情形，常用于理想导体表面、趋肤极限和电流片近似。它是单位长度穿过的电流。\n\n若表面电荷以速度 $\\mathbf v$ 漂移，可写作 $\\mathbf K=\\sigma_s\\mathbf v$，其中 $\\mathbf K$ 是面电流密度，$\\sigma_s$ 是面电荷密度。面电流会造成磁场强度切向分量跳变。天线表面电流、无限电流片和超导屏蔽都常用这个量描述。\n\n使用面电流密度时要先分清它代表真实可输运的自由源，还是由极化、磁化等材料平均产生的等效源。前者常由电路或载流子运动给出，后者常被吸收到辅助场中；混淆二者会使边界跳变和守恒方程写错。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "面电流密度",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%A2%E7%94%B5%E6%B5%81%E5%AF%86%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "面电流密度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%A2%E7%94%B5%E6%B5%81%E5%AF%86%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "surface current density",
+          "url": "https://en.wikipedia.org/w/index.php?search=surface%20current%20density"
+        }
       ]
     },
     {
@@ -1367,6 +2717,24 @@
         "电荷分布 三维区域内时 要用单位体积计量",
         "单位体积 单位面积",
         "volume charge density"
+      ],
+      "explanation_markdown": "体电荷密度用于三维空间内连续分布的电荷源。它适合描述等离子体、带电云团、掺杂半导体或介质内部的束缚电荷。\n\n区域 $\\Omega$ 中总电荷为 $Q=\\int_\\Omega\\rho\\,dV$，其中 $\\rho$ 是体电荷密度，$dV$ 是体元。它进入泊松方程 $\\nabla^2\\phi=-\\rho/\\epsilon_0$，决定电势的局部弯曲。若电荷只集中在薄表面，则应改用面电荷密度而不是体密度。\n\n使用体电荷密度时要先分清它代表真实可输运的自由源，还是由极化、磁化等材料平均产生的等效源。前者常由电路或载流子运动给出，后者常被吸收到辅助场中；混淆二者会使边界跳变和守恒方程写错。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "体电荷密度",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%93%E7%94%B5%E8%8D%B7%E5%AF%86%E5%BA%A6%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "体电荷密度",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%93%E7%94%B5%E8%8D%B7%E5%AF%86%E5%BA%A6"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "volume charge density",
+          "url": "https://en.wikipedia.org/w/index.php?search=volume%20charge%20density"
+        }
       ]
     },
     {
@@ -1385,6 +2753,24 @@
         "自由载流子 电场中定向漂移形成",
         "磁场方程",
         "conduction current"
+      ],
+      "explanation_markdown": "传导电流由自由载流子在电场作用下定向漂移形成，通常伴随焦耳热。它与位移电流不同，后者来自电位移场的时间变化。\n\n局域欧姆形式为 $\\mathbf J_c=\\sigma\\mathbf E$，其中 $\\mathbf J_c$ 是传导电流密度，$\\sigma$ 是电导率，$\\mathbf E$ 是电场。这个线性关系适合许多均匀导体的低场近似。高频时传导电流会与趋肤效应、复介电常数和材料色散一起决定场的衰减。\n\n使用传导电流时要先分清它代表真实可输运的自由源，还是由极化、磁化等材料平均产生的等效源。前者常由电路或载流子运动给出，后者常被吸收到辅助场中；混淆二者会使边界跳变和守恒方程写错。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "传导电流",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%A0%E5%AF%BC%E7%94%B5%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "传导电流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%A0%E5%AF%BC%E7%94%B5%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "conduction current",
+          "url": "https://en.wikipedia.org/w/index.php?search=conduction%20current"
+        }
       ]
     },
     {
@@ -1403,6 +2789,24 @@
         "真实电荷穿过截面 变化电场也 贡献这一项",
         "磁场方程",
         "displacement current"
+      ],
+      "explanation_markdown": "位移电流来自电位移随时间变化，是麦克斯韦修正安培定律时加入的关键项。它不要求真实载流子穿过截面，却能产生磁场。\n\n密度写作 $\\mathbf J_d=\\partial_t\\mathbf D$，其中 $\\mathbf D$ 是电位移矢量。电容器极板之间没有传导电流穿过绝缘间隙，但变化电场提供位移电流，使环路安培定律保持一致。这个项也使真空电磁波能够由变化电场和变化磁场相互维持。\n\n使用位移电流时要先分清它代表真实可输运的自由源，还是由极化、磁化等材料平均产生的等效源。前者常由电路或载流子运动给出，后者常被吸收到辅助场中；混淆二者会使边界跳变和守恒方程写错。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "位移电流",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%8D%E7%A7%BB%E7%94%B5%E6%B5%81%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "位移电流",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%8D%E7%A7%BB%E7%94%B5%E6%B5%81"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "displacement current",
+          "url": "https://en.wikipedia.org/w/index.php?search=displacement%20current"
+        }
       ]
     },
     {
@@ -1421,6 +2825,24 @@
         "局域形式 电流密度 电场用电导率",
         "测量之间 固定关系 规则",
         "ohms law"
+      ],
+      "explanation_markdown": "欧姆定律给出传导电流与电场或电压之间的线性比例关系，是导电材料最常用的低场本构近似。它反映载流子漂移和散射达到稳态后的平均响应。\n\n局域形式为 $\\mathbf J=\\sigma\\mathbf E$，其中 $\\mathbf J$ 是电流密度，$\\sigma$ 是电导率，$\\mathbf E$ 是电场。均匀导线的整体形式为 $V=IR$。强场、低温量子输运、半导体非线性区或各向异性材料中，电导率可能依赖方向、温度、频率或场强。\n\n使用欧姆定律时要先分清它代表真实可输运的自由源，还是由极化、磁化等材料平均产生的等效源。前者常由电路或载流子运动给出，后者常被吸收到辅助场中；混淆二者会使边界跳变和守恒方程写错。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "欧姆定律",
+          "url": "https://www.baidu.com/s?wd=%E6%AC%A7%E5%A7%86%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "欧姆定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AC%A7%E5%A7%86%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "ohms law",
+          "url": "https://en.wikipedia.org/w/index.php?search=ohms%20law"
+        }
       ]
     },
     {
@@ -1439,6 +2861,24 @@
         "边界条件给定后 同一静电区域不 有两个",
         "测量之间 固定关系 规则",
         "uniqueness theorem"
+      ],
+      "explanation_markdown": "唯一性定理说明在合适源项和边界条件下，静电势解是唯一的。它让不同求解技巧有共同依据：只要构造出的势满足方程和边界，就不需要再担心另有物理解。\n\n以泊松方程 $\\nabla^2\\phi=-\\rho/\\epsilon_0$ 为例，其中 $\\rho$ 是给定电荷密度。若两个解具有同样的狄利克雷边界值，它们的差满足无源拉普拉斯方程并在边界为零，只能处处为零。镜像法和分离变量法的结果正是靠这一定理确认。\n\n唯一性定理中，界面问题最容易出错的是角度、法向和场分量的约定。积分形式的麦克斯韦方程决定哪些分量连续，哪些因面源跳变；几何光学定律只是短波极限，振幅和偏振仍需回到边界条件。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "唯一性定理",
+          "url": "https://www.baidu.com/s?wd=%E5%94%AF%E4%B8%80%E6%80%A7%E5%AE%9A%E7%90%86%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "唯一性定理",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%94%AF%E4%B8%80%E6%80%A7%E5%AE%9A%E7%90%86"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "uniqueness theorem",
+          "url": "https://en.wikipedia.org/w/index.php?search=uniqueness%20theorem"
+        }
       ]
     },
     {
@@ -1457,6 +2897,24 @@
         "材料响应之间保持正比",
         "方向 位置 载流子性质 彼此",
         "linear medium"
+      ],
+      "explanation_markdown": "线性介质在给定频率和场强范围内对电磁场作线性响应，极化或磁化与外场成正比。叠加原理因此可用于材料内部的场。\n\n常写作 $\\mathbf D=\\epsilon\\mathbf E,\\;\\mathbf B=\\mu\\mathbf H$，其中 $\\epsilon$ 是介电常数，$\\mu$ 是磁导率。若材料有损耗或色散，$\\epsilon$ 和 $\\mu$ 可为复数并依赖频率。强激光下的克尔效应、饱和磁化和铁电滞回都超出简单线性介质模型。\n\n线性介质中，介质中的量往往是宏观平均后的结果，已经把微观电荷、电流或偶极响应压缩进材料参数。频率、温度、强场和方向性都会改变这些参数；理想、线性或均匀等词只是在特定尺度上的近似。 实验中的材料参数常由频率和制备条件决定，同一名称在静态、低频和光学频段可能对应不同近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "线性介质",
+          "url": "https://www.baidu.com/s?wd=%E7%BA%BF%E6%80%A7%E4%BB%8B%E8%B4%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "线性介质",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BA%BF%E6%80%A7%E4%BB%8B%E8%B4%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "linear medium",
+          "url": "https://en.wikipedia.org/w/index.php?search=linear%20medium"
+        }
       ]
     },
     {
@@ -1475,6 +2933,24 @@
         "材料响应不随方向",
         "方向 位置 载流子性质 彼此",
         "isotropic medium"
+      ],
+      "explanation_markdown": "各向同性介质在任意方向上的电磁响应相同，材料内部没有被本构关系挑出的特殊轴。普通玻璃、均匀液体和许多多晶材料常可近似如此。\n\n线性电响应为 $\\mathbf D=\\epsilon\\mathbf E$，其中 $\\epsilon$ 是标量介电常数。因为 $\\mathbf D$ 与 $\\mathbf E$ 平行，平面波速度不随偏振方向改变。这个近似使边界条件和波传播大幅简化；晶体、层状材料和磁化等离子体则常需要各向异性张量。\n\n各向同性介质中，介质中的量往往是宏观平均后的结果，已经把微观电荷、电流或偶极响应压缩进材料参数。频率、温度、强场和方向性都会改变这些参数；理想、线性或均匀等词只是在特定尺度上的近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "各向同性介质",
+          "url": "https://www.baidu.com/s?wd=%E5%90%84%E5%90%91%E5%90%8C%E6%80%A7%E4%BB%8B%E8%B4%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "各向同性介质",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%84%E5%90%91%E5%90%8C%E6%80%A7%E4%BB%8B%E8%B4%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "isotropic medium",
+          "url": "https://en.wikipedia.org/w/index.php?search=isotropic%20medium"
+        }
       ]
     },
     {
@@ -1493,6 +2969,24 @@
         "材料响应随方向 张量",
         "方向 位置 载流子性质 彼此",
         "anisotropic medium"
+      ],
+      "explanation_markdown": "各向异性介质的响应依赖方向，电场和电位移可能不平行，波的传播也可能随偏振改变。晶体、复合材料和人工超材料常属于这一类。\n\n线性本构可写成 $D_i=\\epsilon_{ij}E_j$，其中 $D_i,E_j$ 是分量，$\\epsilon_{ij}$ 是介电张量，重复指标表示求和。张量主轴决定普通光与非常光的差异。双折射、偏振旋转和模式耦合都来自这种方向相关响应。\n\n各向异性介质中，介质中的量往往是宏观平均后的结果，已经把微观电荷、电流或偶极响应压缩进材料参数。频率、温度、强场和方向性都会改变这些参数；理想、线性或均匀等词只是在特定尺度上的近似。 实验中的材料参数常由频率和制备条件决定，同一名称在静态、低频和光学频段可能对应不同近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "各向异性介质",
+          "url": "https://www.baidu.com/s?wd=%E5%90%84%E5%90%91%E5%BC%82%E6%80%A7%E4%BB%8B%E8%B4%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "各向异性介质",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%84%E5%90%91%E5%BC%82%E6%80%A7%E4%BB%8B%E8%B4%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "anisotropic medium",
+          "url": "https://en.wikipedia.org/w/index.php?search=anisotropic%20medium"
+        }
       ]
     },
     {
@@ -1511,6 +3005,24 @@
         "材料参数不随空间位置",
         "方向 位置 载流子性质 彼此",
         "homogeneous medium"
+      ],
+      "explanation_markdown": "均匀介质的材料参数在空间中不随位置变化。它可以有色散或各向异性，但同一种参数值在介质内部每一点都相同。\n\n数学上可写作 $\\nabla\\epsilon=0,\\;\\nabla\\mu=0$，其中 $\\epsilon$ 是介电常数，$\\mu$ 是磁导率。均匀性使平面波成为自然解，介质内部不会因参数梯度产生额外散射。反射和折射主要集中在边界；若参数随位置缓慢变化，则进入非均匀介质或几何光学问题。\n\n均匀介质中，介质中的量往往是宏观平均后的结果，已经把微观电荷、电流或偶极响应压缩进材料参数。频率、温度、强场和方向性都会改变这些参数；理想、线性或均匀等词只是在特定尺度上的近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "均匀介质",
+          "url": "https://www.baidu.com/s?wd=%E5%9D%87%E5%8C%80%E4%BB%8B%E8%B4%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "均匀介质",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9D%87%E5%8C%80%E4%BB%8B%E8%B4%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "homogeneous medium",
+          "url": "https://en.wikipedia.org/w/index.php?search=homogeneous%20medium"
+        }
       ]
     },
     {
@@ -1529,6 +3041,24 @@
         "材料参数 随空间位置",
         "方向 位置 载流子性质 彼此",
         "inhomogeneous medium"
+      ],
+      "explanation_markdown": "非均匀介质的介电常数、磁导率或电导率随空间位置变化，波在其中传播时会连续折射、散射、聚焦或局域化。许多实际材料都并非严格均匀。\n\n可写作 $\\epsilon=\\epsilon(\\mathbf r)$，其中 $\\mathbf r$ 是位置。若参数变化尺度远大于波长，可用射线近似；若变化尺度接近波长，布拉格散射和带隙会变重要。梯度折射率透镜、电离层和光子晶体都体现非均匀介质的作用。\n\n非均匀介质中，介质中的量往往是宏观平均后的结果，已经把微观电荷、电流或偶极响应压缩进材料参数。频率、温度、强场和方向性都会改变这些参数；理想、线性或均匀等词只是在特定尺度上的近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "非均匀介质",
+          "url": "https://www.baidu.com/s?wd=%E9%9D%9E%E5%9D%87%E5%8C%80%E4%BB%8B%E8%B4%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "非均匀介质",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%9D%9E%E5%9D%87%E5%8C%80%E4%BB%8B%E8%B4%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "inhomogeneous medium",
+          "url": "https://en.wikipedia.org/w/index.php?search=inhomogeneous%20medium"
+        }
       ]
     },
     {
@@ -1547,6 +3077,24 @@
         "自由载流子 电场 驱动传导流",
         "方向 位置 载流子性质 彼此",
         "conducting medium"
+      ],
+      "explanation_markdown": "导电介质允许自由载流子在电场中漂移，因此电磁波传播会伴随耗散、屏蔽和趋肤效应。金属、盐水、半导体和等离子体都可在不同频段表现为导电介质。\n\n传导电流满足 $\\mathbf J=\\sigma\\mathbf E$，其中 $\\sigma$ 是电导率。频域中常把损耗写进复介电常数 $\\epsilon_{\\rm eff}=\\epsilon+i\\sigma/\\omega$，这里 $\\omega$ 是角频率。导电介质的穿透深度、反射率和焦耳热都由 $\\sigma$ 与频率共同控制。\n\n导电介质中，介质中的量往往是宏观平均后的结果，已经把微观电荷、电流或偶极响应压缩进材料参数。频率、温度、强场和方向性都会改变这些参数；理想、线性或均匀等词只是在特定尺度上的近似。 实验中的材料参数常由频率和制备条件决定，同一名称在静态、低频和光学频段可能对应不同近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "导电介质",
+          "url": "https://www.baidu.com/s?wd=%E5%AF%BC%E7%94%B5%E4%BB%8B%E8%B4%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "导电介质",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%AF%BC%E7%94%B5%E4%BB%8B%E8%B4%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "conducting medium",
+          "url": "https://en.wikipedia.org/w/index.php?search=conducting%20medium"
+        }
       ]
     },
     {
@@ -1565,6 +3113,24 @@
         "内部电场 表面切向电场 零",
         "电导率 介电常数 磁导率 响应",
         "perfect conductor"
+      ],
+      "explanation_markdown": "理想导体是假设电导率无限大的极限模型。静电平衡时内部电场为零，多余电荷重排到表面，使导体内部成为等势区域。\n\n可写作 $\\mathbf E_{\\rm inside}=0$，其中 $\\mathbf E_{\\rm inside}$ 表示导体内部电场。时变理想导体边界还要求表面切向电场为零，电磁波无法穿透内部。这个模型忽略有限电阻和趋肤深度，却能抓住接地导体、反射面和腔壁的主要边界效应。\n\n理想导体中，介质中的量往往是宏观平均后的结果，已经把微观电荷、电流或偶极响应压缩进材料参数。频率、温度、强场和方向性都会改变这些参数；理想、线性或均匀等词只是在特定尺度上的近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "理想导体",
+          "url": "https://www.baidu.com/s?wd=%E7%90%86%E6%83%B3%E5%AF%BC%E4%BD%93%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "理想导体",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%90%86%E6%83%B3%E5%AF%BC%E4%BD%93"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "perfect conductor",
+          "url": "https://en.wikipedia.org/w/index.php?search=perfect%20conductor"
+        }
       ]
     },
     {
@@ -1583,6 +3149,24 @@
         "自由传导流 极化响应电场",
         "电导率 介电常数 磁导率 响应",
         "perfect dielectric"
+      ],
+      "explanation_markdown": "理想介质通常指无自由传导电流、吸收损耗可忽略的电介质。它通过极化储存和释放电磁能，而不是把能量显著转化为热。\n\n常取 $\\sigma=0,\\;\\mathbf D=\\epsilon\\mathbf E$，其中 $\\sigma$ 是电导率，$\\epsilon$ 是介电常数。实际介质总有击穿强度、微弱吸收和频率色散限制。理想介质模型适合分析电容器绝缘层、透明光学介质和无耗波传播的第一近似。\n\n理想介质中，介质中的量往往是宏观平均后的结果，已经把微观电荷、电流或偶极响应压缩进材料参数。频率、温度、强场和方向性都会改变这些参数；理想、线性或均匀等词只是在特定尺度上的近似。 实验中的材料参数常由频率和制备条件决定，同一名称在静态、低频和光学频段可能对应不同近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "理想介质",
+          "url": "https://www.baidu.com/s?wd=%E7%90%86%E6%83%B3%E4%BB%8B%E8%B4%A8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "理想介质",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%90%86%E6%83%B3%E4%BB%8B%E8%B4%A8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "perfect dielectric",
+          "url": "https://en.wikipedia.org/w/index.php?search=perfect%20dielectric"
+        }
       ]
     },
     {
@@ -1601,6 +3185,24 @@
         "固定频率后 空间方程 出现 k²",
         "二阶导数 散度 旋度",
         "helmholtz equation"
+      ],
+      "explanation_markdown": "亥姆霍兹方程是波动方程在单一频率下的空间形式。把时间依赖取为简谐振荡后，问题转化为求场的空间分布和边界允许的模式。\n\n无源形式为 $(\\nabla^2+k^2)\\psi=0$，其中 $\\psi$ 是场分量或标量势，$k$ 是波数。若存在源，右端会出现源项。散射、衍射、波导、谐振腔和频域天线计算都常从亥姆霍兹方程出发。\n\n这类概念通常需要同时看相位、振幅、边界和能量流。自由空间中许多关系很简单，进入波导、色散介质或各向异性材料后，传播方向、能流方向和相位速度可能分离，因此不能只凭几何光线直觉判断。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "亥姆霍兹方程",
+          "url": "https://www.baidu.com/s?wd=%E4%BA%A5%E5%A7%86%E9%9C%8D%E5%85%B9%E6%96%B9%E7%A8%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "亥姆霍兹方程",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BA%A5%E5%A7%86%E9%9C%8D%E5%85%B9%E6%96%B9%E7%A8%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "helmholtz equation",
+          "url": "https://en.wikipedia.org/w/index.php?search=helmholtz%20equation"
+        }
       ]
     },
     {
@@ -1619,6 +3221,24 @@
         "辅助矢量 构造 波动方程",
         "公式 边界条件 观测量 相近概念",
         "hertz vector"
+      ],
+      "explanation_markdown": "赫兹矢量是一种较高层的势函数，可由它生成电磁势和电磁场。它特别适合把偶极源、分层介质或辐射问题写得更紧凑。\n\n电型赫兹矢量的一种关系为 $\\mathbf A=\\mu\\partial_t\\boldsymbol\\Pi_e$，其中 $\\boldsymbol\\Pi_e$ 是电型赫兹矢量，$\\mu$ 是磁导率，$\\mathbf A$ 是矢量势。配合适当标量势，可自动满足部分规范条件。偶极天线和介质层反射问题中，赫兹矢量能减少场分量之间的重复计算。\n\n赫兹矢量中，势函数的优势在于把旋度约束、因果延迟和边界条件编码到较少变量中。它的数值本身依赖规范或参考零点，不能像场强那样直接比较；真正物理内容通常藏在梯度、旋度、时间导数或相位积累里。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "赫兹矢量",
+          "url": "https://www.baidu.com/s?wd=%E8%B5%AB%E5%85%B9%E7%9F%A2%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "赫兹矢量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B5%AB%E5%85%B9%E7%9F%A2%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "hertz vector",
+          "url": "https://en.wikipedia.org/w/index.php?search=hertz%20vector"
+        }
       ]
     },
     {
@@ -1637,6 +3257,24 @@
         "公式 边界条件 观测量 相近概念",
         "正负电荷间距 电荷量 乘积",
         "electric dipole moment"
+      ],
+      "explanation_markdown": "电偶极矩量化电荷分布的一阶空间不对称性，方向通常从负电荷指向正电荷。它既适用于两个点电荷，也适用于连续电荷云。\n\n连续形式为 $\\mathbf p=\\int\\mathbf r\\rho(\\mathbf r)\\,d^3r$，其中 $\\rho$ 是电荷密度，$\\mathbf r$ 是源点位置。若总电荷为零，$\\mathbf p$ 与坐标原点无关。它决定远处电势的偶极项，也是极化强度、分子偶极和电偶极辐射的基本源量。\n\n电偶极矩中，多极量的意义依赖源区尺寸远小于观察距离或波长。低阶矩给出远场主形状，高阶矩补充分布细节；对称性常会消去某些低阶项，使原本较弱的四极或磁型项变得可见。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电偶极矩",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E5%81%B6%E6%9E%81%E7%9F%A9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电偶极矩",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E5%81%B6%E6%9E%81%E7%9F%A9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electric dipole moment",
+          "url": "https://en.wikipedia.org/w/index.php?search=electric%20dipole%20moment"
+        }
       ]
     },
     {
@@ -1655,6 +3293,24 @@
         "小电流环 电流 面积共同",
         "公式 边界条件 观测量 相近概念",
         "magnetic dipole moment"
+      ],
+      "explanation_markdown": "磁偶极矩量化局域电流分布在远处表现出的低阶磁效应。小电流环、电子轨道运动和自旋磁矩都可用这个矢量概括。\n\n连续电流的表达式为 $\\mathbf m=\\frac12\\int\\mathbf r\\times\\mathbf J\\,d^3r$，其中 $\\mathbf J$ 是电流密度，$\\mathbf r$ 是源点位置。平面小线圈中也有 $\\mathbf m=I\\mathbf S$。磁偶极矩决定远区磁场形状，并构成磁化强度和磁偶极辐射的微观基础。\n\n磁偶极矩中，多极量的意义依赖源区尺寸远小于观察距离或波长。低阶矩给出远场主形状，高阶矩补充分布细节；对称性常会消去某些低阶项，使原本较弱的四极或磁型项变得可见。 它在计算中通常不是孤立出现，而要与源项、边界条件和可观测场量配合，才能判断近似是否足够精确。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "磁偶极矩",
+          "url": "https://www.baidu.com/s?wd=%E7%A3%81%E5%81%B6%E6%9E%81%E7%9F%A9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "磁偶极矩",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A3%81%E5%81%B6%E6%9E%81%E7%9F%A9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "magnetic dipole moment",
+          "url": "https://en.wikipedia.org/w/index.php?search=magnetic%20dipole%20moment"
+        }
       ]
     },
     {
@@ -1673,6 +3329,24 @@
         "远区 下来 1/r 衰减 传播项",
         "远区能流",
         "radiation field"
+      ],
+      "explanation_markdown": "辐射场是电磁场中真正向远处输运能量的部分。它在远离源区后呈横向波结构，区别于近场中随距离更快衰减的储能项。\n\n远区满足 $\\mathbf B_{\\rm rad}=\\hat{\\mathbf n}\\times\\mathbf E_{\\rm rad}/c$，其中 $\\hat{\\mathbf n}$ 是传播方向，$c$ 是光速。辐射场振幅按 $1/r$ 衰减，能流沿径向传播。探测到的天线方向图、脉冲波形和辐射功率主要由这部分场决定。\n\n辐射场中，辐射问题的分界在于场是否能把能量带到远处。近场项可很强却主要储能，远场项按角分布携带功率；源的加速度、多极矩变化和观察距离共同决定探测到的频谱、偏振和方向图。 实际识别时还要看远区功率是否稳定外流，以及角分布、频谱和偏振是否与源的运动或多极矩变化相符。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "辐射场",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%90%E5%B0%84%E5%9C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "辐射场",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%90%E5%B0%84%E5%9C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "radiation field",
+          "url": "https://en.wikipedia.org/w/index.php?search=radiation%20field"
+        }
       ]
     },
     {
@@ -1691,6 +3365,24 @@
         "离源较近时 场项比传播项更明显",
         "反应场 场项 这里更显著",
         "near field region"
+      ],
+      "explanation_markdown": "近场区位于辐射源附近，电场和磁场中储能、感应和准静态成分显著。这里的场不一定满足简单平面波关系，能量可在源和场之间往返交换。\n\n偶极源附近常有 $E_{\\rm near}\\sim r^{-3}+r^{-2}$，其中 $r$ 是到源的距离，幂次项比远区 $1/r$ 衰减更快。近场决定天线输入阻抗、感应耦合、无线充电和近场显微成像。它关注源周围的局部结构，而不是远处辐射方向图。\n\n近场区中，辐射问题的分界在于场是否能把能量带到远处。近场项可很强却主要储能，远场项按角分布携带功率；源的加速度、多极矩变化和观察距离共同决定探测到的频谱、偏振和方向图。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "近场区",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%91%E5%9C%BA%E5%8C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "近场区",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%91%E5%9C%BA%E5%8C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "near field region",
+          "url": "https://en.wikipedia.org/w/index.php?search=near%20field%20region"
+        }
       ]
     },
     {
@@ -1709,6 +3401,24 @@
         "离源足够远时 剩下向外传播 横向场",
         "能流方向近似径向 表现为传播项",
         "far field region"
+      ],
+      "explanation_markdown": "远场区离源足够远，场中主要剩下随 $1/r$ 衰减的辐射项。波前局部近似平面，电场、磁场和传播方向几乎互相垂直。\n\n远区电场可写作 $E_{\\rm far}\\propto1/r$，其中 $r$ 是到源的距离。此时角分布基本不再随距离改变，只是整体强度按球面扩散减弱。天线增益、辐射功率、散射截面和偏振测量通常都在远场区定义。\n\n远场区中，辐射问题的分界在于场是否能把能量带到远处。近场项可很强却主要储能，远场项按角分布携带功率；源的加速度、多极矩变化和观察距离共同决定探测到的频谱、偏振和方向图。 实际识别时还要看远区功率是否稳定外流，以及角分布、频谱和偏振是否与源的运动或多极矩变化相符。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "远场区",
+          "url": "https://www.baidu.com/s?wd=%E8%BF%9C%E5%9C%BA%E5%8C%BA%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "远场区",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BF%9C%E5%9C%BA%E5%8C%BA"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "far field region",
+          "url": "https://en.wikipedia.org/w/index.php?search=far%20field%20region"
+        }
       ]
     },
     {
@@ -1727,6 +3437,24 @@
         "振荡电流 导体结构中激发向外传播",
         "公式 边界条件 观测量 相近概念",
         "antenna"
+      ],
+      "explanation_markdown": "天线通过时变电流和电荷分布把电路中的能量转换为自由空间电磁波，或反过来把入射波转换为端口信号。它是源区与辐射场之间的接口。\n\n辐射功率可由 $P_{\\rm rad}=\\oint\\mathbf S\\cdot d\\mathbf S$ 求得，其中 $\\mathbf S$ 是坡印廷矢量，积分曲面包围天线。天线的长度、形状和馈电方式决定方向图、极化和输入阻抗。半波振子、环天线和贴片天线只是不同边界条件下的具体实现。\n\n天线中，辐射问题的分界在于场是否能把能量带到远处。近场项可很强却主要储能，远场项按角分布携带功率；源的加速度、多极矩变化和观察距离共同决定探测到的频谱、偏振和方向图。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "天线",
+          "url": "https://www.baidu.com/s?wd=%E5%A4%A9%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "天线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A4%A9%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "antenna",
+          "url": "https://en.wikipedia.org/w/index.php?search=antenna"
+        }
       ]
     },
     {
@@ -1745,6 +3473,24 @@
         "对能流密度 包围面上积分",
         "公式 边界条件 观测量 相近概念",
         "radiated power"
+      ],
+      "explanation_markdown": "辐射功率是源每单位时间真正送入远区电磁波的能量。它排除近场中往返交换的储能，是衡量天线、加速电荷或散射体向外放能的量。\n\n平均功率写作 $P=\\oint\\langle\\mathbf S\\rangle\\cdot d\\mathbf S$，其中 $\\langle\\mathbf S\\rangle$ 是时间平均坡印廷矢量，曲面包围整个源区。在足够远的闭合曲面上积分，结果与曲面半径无关。它常用于定义辐射阻抗、方向图总功率和带电粒子能量损失。\n\n辐射功率中，辐射问题的分界在于场是否能把能量带到远处。近场项可很强却主要储能，远场项按角分布携带功率；源的加速度、多极矩变化和观察距离共同决定探测到的频谱、偏振和方向图。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "辐射功率",
+          "url": "https://www.baidu.com/s?wd=%E8%BE%90%E5%B0%84%E5%8A%9F%E7%8E%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "辐射功率",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%BE%90%E5%B0%84%E5%8A%9F%E7%8E%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "radiated power",
+          "url": "https://en.wikipedia.org/w/index.php?search=radiated%20power"
+        }
       ]
     },
     {
@@ -1763,6 +3509,24 @@
         "非相对论极限下 功率正比 加速度平方",
         "公式 边界条件 观测量 相近概念",
         "larmor formula"
+      ],
+      "explanation_markdown": "拉莫尔公式给出非相对论点电荷因加速而辐射的功率，是辐射能量损失的基本定量结果。匀速直线运动的电荷不辐射，加速度才是源。\n\n公式为 $P=q^2a^2/(6\\pi\\epsilon_0c^3)$，其中 $P$ 是辐射功率，$q$ 是电荷量，$a$ 是加速度大小，$c$ 是光速。功率与 $a^2$ 成正比，方向变化和速度变化都会产生辐射。相对论情形需要推广，但核心图像仍是加速电荷向外带走场能。\n\n拉莫尔公式中，辐射问题的分界在于场是否能把能量带到远处。近场项可很强却主要储能，远场项按角分布携带功率；源的加速度、多极矩变化和观察距离共同决定探测到的频谱、偏振和方向图。 实际识别时还要看远区功率是否稳定外流，以及角分布、频谱和偏振是否与源的运动或多极矩变化相符。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "拉莫尔公式",
+          "url": "https://www.baidu.com/s?wd=%E6%8B%89%E8%8E%AB%E5%B0%94%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "拉莫尔公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8B%89%E8%8E%AB%E5%B0%94%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "larmor formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=larmor%20formula"
+        }
       ]
     },
     {
@@ -1781,6 +3545,24 @@
         "粒子速度超过介质 光相速度时 出现锥形波前",
         "远区 1 r 坡印廷通量 判据",
         "cherenkov radiation"
+      ],
+      "explanation_markdown": "切伦科夫辐射出现在带电粒子穿过介质时速度超过该介质中的光相速度。粒子沿途激发的电磁扰动相干叠加，形成锥形波前。\n\n辐射角满足 $\\cos\\theta=c/(nv)$，其中 $\\theta$ 是锥角，$v$ 是粒子速度，$n$ 是折射率。只有 $v>c/n$ 时才有真实角度。探测器测量这个角度可反推出速度，再结合动量区分粒子种类；水和气凝胶切伦科夫探测器都利用这一点。\n\n切伦科夫辐射中，辐射问题的分界在于场是否能把能量带到远处。近场项可很强却主要储能，远场项按角分布携带功率；源的加速度、多极矩变化和观察距离共同决定探测到的频谱、偏振和方向图。 实际识别时还要看远区功率是否稳定外流，以及角分布、频谱和偏振是否与源的运动或多极矩变化相符。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "切伦科夫辐射",
+          "url": "https://www.baidu.com/s?wd=%E5%88%87%E4%BC%A6%E7%A7%91%E5%A4%AB%E8%BE%90%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "切伦科夫辐射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%87%E4%BC%A6%E7%A7%91%E5%A4%AB%E8%BE%90%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cherenkov radiation",
+          "url": "https://en.wikipedia.org/w/index.php?search=cherenkov%20radiation"
+        }
       ]
     },
     {
@@ -1799,6 +3581,24 @@
         "相对论带电粒子沿弯曲轨道运动时 强烈前向放",
         "远区 1 r 坡印廷通量 判据",
         "synchrotron radiation"
+      ],
+      "explanation_markdown": "同步辐射来自相对论带电粒子在磁场中沿弯曲轨道运动。由于相对论前向聚束，辐射集中在粒子瞬时速度方向附近的窄角锥内。\n\n功率随能量强烈增加，典型标度为 $P\\propto\\gamma^4/R^2$，其中 $\\gamma$ 是洛伦兹因子，$R$ 是轨道曲率半径。高能电子在储存环中会显著损失能量，同时产生从红外到 X 射线的高亮度光。星云和喷流中的宽谱辐射也常由同步辐射解释。\n\n同步辐射中，辐射问题的分界在于场是否能把能量带到远处。近场项可很强却主要储能，远场项按角分布携带功率；源的加速度、多极矩变化和观察距离共同决定探测到的频谱、偏振和方向图。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "同步辐射",
+          "url": "https://www.baidu.com/s?wd=%E5%90%8C%E6%AD%A5%E8%BE%90%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "同步辐射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%8C%E6%AD%A5%E8%BE%90%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "synchrotron radiation",
+          "url": "https://en.wikipedia.org/w/index.php?search=synchrotron%20radiation"
+        }
       ]
     },
     {
@@ -1817,6 +3617,24 @@
         "入射角 反射角相等",
         "测量之间 固定关系 规则",
         "law of reflection"
+      ],
+      "explanation_markdown": "反射定律描述镜面界面上光线方向的几何关系。它是麦克斯韦边界条件在短波极限下的结果，也可由费马原理的驻时路径推出。\n\n角度关系为 $\\theta_r=\\theta_i$，其中 $\\theta_i$ 是入射角，$\\theta_r$ 是反射角，二者都相对界面法线测量。入射光线、反射光线和法线位于同一平面。粗糙表面会产生漫反射，吸收会改变强度，但理想镜面反射的方向仍由这个关系确定。\n\n反射定律中，界面问题最容易出错的是角度、法向和场分量的约定。积分形式的麦克斯韦方程决定哪些分量连续，哪些因面源跳变；几何光学定律只是短波极限，振幅和偏振仍需回到边界条件。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "反射定律",
+          "url": "https://www.baidu.com/s?wd=%E5%8F%8D%E5%B0%84%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "反射定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8F%8D%E5%B0%84%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "law of reflection",
+          "url": "https://en.wikipedia.org/w/index.php?search=law%20of%20reflection"
+        }
       ]
     },
     {
@@ -1835,6 +3653,24 @@
         "两侧折射率 角度正弦 固定比例",
         "测量之间 固定关系 规则",
         "law of refraction"
+      ],
+      "explanation_markdown": "折射定律说明波跨过两种介质界面时传播方向如何改变。其本质是界面上相位必须连续，因此波矢的切向分量在两侧相同。\n\n斯涅尔形式为 $n_1\\sin\\theta_1=n_2\\sin\\theta_2$，其中 $n_1,n_2$ 是折射率，$\\theta_1,\\theta_2$ 是相对法线的入射角和折射角。进入高折射率介质时光线向法线偏折。透镜成像、棱镜色散和光纤导光都建立在这个角关系上。\n\n折射定律中，界面问题最容易出错的是角度、法向和场分量的约定。积分形式的麦克斯韦方程决定哪些分量连续，哪些因面源跳变；几何光学定律只是短波极限，振幅和偏振仍需回到边界条件。 具体求解时，法向方向、源所在区域和边界取值必须保持一致，否则符号正确也会得到物理上相反的结论。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "折射定律",
+          "url": "https://www.baidu.com/s?wd=%E6%8A%98%E5%B0%84%E5%AE%9A%E5%BE%8B%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "折射定律",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8A%98%E5%B0%84%E5%AE%9A%E5%BE%8B"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "law of refraction",
+          "url": "https://en.wikipedia.org/w/index.php?search=law%20of%20refraction"
+        }
       ]
     },
     {
@@ -1853,6 +3689,24 @@
         "s p 两种偏振 界面上 振幅系数",
         "公式 边界条件 观测量 相近概念",
         "fresnel equations"
+      ],
+      "explanation_markdown": "菲涅耳公式给出平面电磁波在平界面上反射和透射的复振幅系数，并明确区分 s 偏振和 p 偏振。它比几何光学多保留了振幅与相位信息。\n\n例如 $r_s=(n_1\\cos\\theta_i-n_2\\cos\\theta_t)/(n_1\\cos\\theta_i+n_2\\cos\\theta_t)$，其中 $r_s$ 是 s 偏振反射系数，$n_1,n_2$ 是折射率，$\\theta_i,\\theta_t$ 是入射角和透射角。p 偏振有不同表达式，并可出现布儒斯特角。\n\n菲涅耳公式中，界面问题最容易出错的是角度、法向和场分量的约定。积分形式的麦克斯韦方程决定哪些分量连续，哪些因面源跳变；几何光学定律只是短波极限，振幅和偏振仍需回到边界条件。 具体求解时，法向方向、源所在区域和边界取值必须保持一致，否则符号正确也会得到物理上相反的结论。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "菲涅耳公式",
+          "url": "https://www.baidu.com/s?wd=%E8%8F%B2%E6%B6%85%E8%80%B3%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "菲涅耳公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%8F%B2%E6%B6%85%E8%80%B3%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fresnel equations",
+          "url": "https://en.wikipedia.org/w/index.php?search=fresnel%20equations"
+        }
       ]
     },
     {
@@ -1871,6 +3725,24 @@
         "入射角超过临界角后 传播透射波消失",
         "公式 边界条件 观测量 相近概念",
         "total internal reflection"
+      ],
+      "explanation_markdown": "全反射发生在波从高折射率介质射向低折射率介质，且入射角超过临界角时。此时第二介质中没有向远处传播的透射波。\n\n临界角满足 $\\sin\\theta_c=n_2/n_1$，其中 $n_1>n_2$，$\\theta_c$ 是临界角。界面另一侧仍存在沿法向指数衰减的倏逝场，因此近距离还能发生受抑全反射。光纤、直角棱镜和许多波导结构都依赖全反射保持能量束缚。\n\n全反射中，界面问题最容易出错的是角度、法向和场分量的约定。积分形式的麦克斯韦方程决定哪些分量连续，哪些因面源跳变；几何光学定律只是短波极限，振幅和偏振仍需回到边界条件。 具体求解时，法向方向、源所在区域和边界取值必须保持一致，否则符号正确也会得到物理上相反的结论。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "全反射",
+          "url": "https://www.baidu.com/s?wd=%E5%85%A8%E5%8F%8D%E5%B0%84%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "全反射",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%A8%E5%8F%8D%E5%B0%84"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "total internal reflection",
+          "url": "https://en.wikipedia.org/w/index.php?search=total%20internal%20reflection"
+        }
       ]
     },
     {
@@ -1889,6 +3761,24 @@
         "电场振幅 磁场振幅 比值",
         "介质 边界 速度 方向 模式",
         "wave impedance"
+      ],
+      "explanation_markdown": "波阻抗表示电磁波中电场振幅与磁场强度振幅的比例，反映介质对传播波的阻抗性质。它控制界面反射和能量传输效率。\n\n均匀无耗介质中 $Z=E/H=\\sqrt{\\mu/\\epsilon}$，其中 $E,H$ 是场振幅，$\\mu$ 是磁导率，$\\epsilon$ 是介电常数。真空波阻抗约为 $377\\,\\Omega$。两侧波阻抗相等时反射可消失；吸波材料、传输线和天线匹配都围绕这个量设计。\n\n波阻抗中，这类概念通常需要同时看相位、振幅、边界和能量流。自由空间中许多关系很简单，进入波导、色散介质或各向异性材料后，传播方向、能流方向和相位速度可能分离，因此不能只凭几何光线直觉判断。 处理具体模式时，边界条件会选择允许的空间结构，介质色散则决定相位传播和波包传播是否分离。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "波阻抗",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%A2%E9%98%BB%E6%8A%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "波阻抗",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%A2%E9%98%BB%E6%8A%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "wave impedance",
+          "url": "https://en.wikipedia.org/w/index.php?search=wave%20impedance"
+        }
       ]
     },
     {
@@ -1907,6 +3797,24 @@
         "相向传播 同频波叠加后形成节点 腹点",
         "介质 边界 速度 方向 模式",
         "standing wave"
+      ],
+      "explanation_markdown": "驻波由两列同频、反向传播的波叠加而成，空间中出现固定节点和腹点。它的图样不整体前进，能量在局部来回交换。\n\n一维形式可写为 $\\psi=2A\\sin kx\\cos\\omega t$，其中 $A$ 是单列波振幅，$k$ 是波数，$\\omega$ 是角频率。节点处振幅始终为零，腹点振幅最大。传输线末端反射、谐振腔本征模和弦振动都可用驻波结构理解。\n\n驻波中，这类概念通常需要同时看相位、振幅、边界和能量流。自由空间中许多关系很简单，进入波导、色散介质或各向异性材料后，传播方向、能流方向和相位速度可能分离，因此不能只凭几何光线直觉判断。 处理具体模式时，边界条件会选择允许的空间结构，介质色散则决定相位传播和波包传播是否分离。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "驻波",
+          "url": "https://www.baidu.com/s?wd=%E9%A9%BB%E6%B3%A2%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "驻波",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E9%A9%BB%E6%B3%A2"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "standing wave",
+          "url": "https://en.wikipedia.org/w/index.php?search=standing%20wave"
+        }
       ]
     },
     {
@@ -1925,6 +3833,24 @@
         "电压 电流沿线分布 按波动方式传播",
         "特征阻抗 反射 信号沿线传播",
         "transmission line"
+      ],
+      "explanation_markdown": "传输线把高频电压和电流看成沿线路传播的分布场量。线长接近波长时，不能再用集中电路假设把整根导线视为同一电位。\n\n理想无耗线满足 $\\partial_zV=-L'\\partial_tI$ 与 $\\partial_zI=-C'\\partial_tV$，其中 $V,I$ 是沿线电压和电流，$L',C'$ 是单位长度电感和电容。这些电报方程给出波速和特征阻抗。负载不匹配会产生反射并形成驻波。\n\n传输线中，这类概念通常需要同时看相位、振幅、边界和能量流。自由空间中许多关系很简单，进入波导、色散介质或各向异性材料后，传播方向、能流方向和相位速度可能分离，因此不能只凭几何光线直觉判断。 处理具体模式时，边界条件会选择允许的空间结构，介质色散则决定相位传播和波包传播是否分离。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "传输线",
+          "url": "https://www.baidu.com/s?wd=%E4%BC%A0%E8%BE%93%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "传输线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BC%A0%E8%BE%93%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "transmission line",
+          "url": "https://en.wikipedia.org/w/index.php?search=transmission%20line"
+        }
       ]
     },
     {
@@ -1943,6 +3869,24 @@
         "边界条件只允许某些空间场型 频率留下",
         "节点 腹点 本征频率共同",
         "resonant mode"
+      ],
+      "explanation_markdown": "谐振模式是在边界条件约束下能够自洽振荡的电磁场型。每个模式都有固定的空间节点结构、本征频率和能量分布。\n\n场分量常满足 $\\nabla^2\\psi+k_n^2\\psi=0$，其中 $\\psi$ 表示某个场分量，$k_n$ 是第 $n$ 个本征波数。边界只允许离散 $k_n$ 留下，因此腔体或波导会呈现特定频谱。实际系统中损耗使本征频率具有线宽，品质因数衡量模式储能寿命。\n\n谐振模式中，这类概念通常需要同时看相位、振幅、边界和能量流。自由空间中许多关系很简单，进入波导、色散介质或各向异性材料后，传播方向、能流方向和相位速度可能分离，因此不能只凭几何光线直觉判断。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "谐振模式",
+          "url": "https://www.baidu.com/s?wd=%E8%B0%90%E6%8C%AF%E6%A8%A1%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "谐振模式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B0%90%E6%8C%AF%E6%A8%A1%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "resonant mode",
+          "url": "https://en.wikipedia.org/w/index.php?search=resonant%20mode"
+        }
       ]
     },
     {
@@ -1961,6 +3905,24 @@
         "电场 纵向分量",
         "纵向电场为零 纵向磁场",
         "te mode"
+      ],
+      "explanation_markdown": "TE 模即横电模，指相对传播方向没有纵向电场分量的波导或腔体模式。电场完全横向，磁场则可以保留纵向分量来满足边界条件。\n\n若传播方向取 $z$，条件为 $E_z=0,\\;H_z\\ne0$，其中 $E_z,H_z$ 是电场和磁场强度的纵向分量。横向场可由 $H_z$ 通过麦克斯韦方程导出。金属矩形波导的主模通常是 TE 模，其截止频率由横截面尺寸决定。\n\nTE模中，这类概念通常需要同时看相位、振幅、边界和能量流。自由空间中许多关系很简单，进入波导、色散介质或各向异性材料后，传播方向、能流方向和相位速度可能分离，因此不能只凭几何光线直觉判断。 处理具体模式时，边界条件会选择允许的空间结构，介质色散则决定相位传播和波包传播是否分离。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "TE模",
+          "url": "https://www.baidu.com/s?wd=TE%E6%A8%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "TE模",
+          "url": "https://zh.wikipedia.org/w/index.php?search=TE%E6%A8%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "te mode",
+          "url": "https://en.wikipedia.org/w/index.php?search=te%20mode"
+        }
       ]
     },
     {
@@ -1979,6 +3941,24 @@
         "磁场 纵向分量",
         "纵向磁场为零 纵向电场",
         "tm mode"
+      ],
+      "explanation_markdown": "TM 模即横磁模，指相对传播方向没有纵向磁场分量的波导或腔体模式。磁场完全横向，电场可以具有纵向分量。\n\n取传播方向为 $z$ 时，条件为 $H_z=0,\\;E_z\\ne0$，其中 $H_z,E_z$ 是纵向场分量。横向场可由 $E_z$ 和边界条件求出。TM 模与 TE 模的截止频率和边界分布不同，在加速腔、圆波导和谐振腔分类中很重要。\n\nTM模中，这类概念通常需要同时看相位、振幅、边界和能量流。自由空间中许多关系很简单，进入波导、色散介质或各向异性材料后，传播方向、能流方向和相位速度可能分离，因此不能只凭几何光线直觉判断。 处理具体模式时，边界条件会选择允许的空间结构，介质色散则决定相位传播和波包传播是否分离。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "TM模",
+          "url": "https://www.baidu.com/s?wd=TM%E6%A8%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "TM模",
+          "url": "https://zh.wikipedia.org/w/index.php?search=TM%E6%A8%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tm mode",
+          "url": "https://en.wikipedia.org/w/index.php?search=tm%20mode"
+        }
       ]
     },
     {
@@ -1997,6 +3977,24 @@
         "电场 磁场 纵向分量",
         "纵向电场 纵向磁场同时为零",
         "tem mode"
+      ],
+      "explanation_markdown": "TEM 模即横电磁模，电场和磁场都没有沿传播方向的分量。它最接近自由空间平面波，但通常需要双导体结构提供电压和回流路径。\n\n沿 $z$ 传播时 $E_z=0,\\;H_z=0$，其中 $E_z,H_z$ 是纵向分量。同轴线和平行板线可支持 TEM 模，空心单导体金属波导则不能支持真正 TEM 模。它没有截止频率，因此是把传输线电压电流与电磁场联系起来的典型模式。\n\nTEM模中，这类概念通常需要同时看相位、振幅、边界和能量流。自由空间中许多关系很简单，进入波导、色散介质或各向异性材料后，传播方向、能流方向和相位速度可能分离，因此不能只凭几何光线直觉判断。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "TEM模",
+          "url": "https://www.baidu.com/s?wd=TEM%E6%A8%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "TEM模",
+          "url": "https://zh.wikipedia.org/w/index.php?search=TEM%E6%A8%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tem mode",
+          "url": "https://en.wikipedia.org/w/index.php?search=tem%20mode"
+        }
       ]
     },
     {
@@ -2015,6 +4013,24 @@
         "强光 外电场 折射率出现二次型变化",
         "外场 强场 材料响应 观测变化",
         "kerr effect"
+      ],
+      "explanation_markdown": "克尔效应是强电场或强光场使介质折射率发生二次变化的非线性光学现象。它表明材料极化不再只与电场成线性比例。\n\n电光克尔效应常写作 $\\Delta n=K\\lambda E^2$，其中 $\\Delta n$ 是折射率变化，$K$ 是克尔常数，$\\lambda$ 是波长，$E$ 是外电场强度。光学克尔效应中，场强平方可与光强相连。自相位调制、自聚焦和高速光开关都利用这种强度依赖折射率。\n\n克尔效应中，介质中的量往往是宏观平均后的结果，已经把微观电荷、电流或偶极响应压缩进材料参数。频率、温度、强场和方向性都会改变这些参数；理想、线性或均匀等词只是在特定尺度上的近似。 实验中的材料参数常由频率和制备条件决定，同一名称在静态、低频和光学频段可能对应不同近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "克尔效应",
+          "url": "https://www.baidu.com/s?wd=%E5%85%8B%E5%B0%94%E6%95%88%E5%BA%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "克尔效应",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%85%8B%E5%B0%94%E6%95%88%E5%BA%94"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "kerr effect",
+          "url": "https://en.wikipedia.org/w/index.php?search=kerr%20effect"
+        }
       ]
     },
     {
@@ -2033,6 +4049,24 @@
         "沿磁场方向传播 发生偏振面旋转",
         "外场 强场 材料响应 观测变化",
         "faraday effect"
+      ],
+      "explanation_markdown": "法拉第效应是光在受磁场作用的介质中传播时偏振面发生旋转的现象。它来自左右圆偏振本征波折射率不同，且旋转方向由磁场方向决定。\n\n旋转角满足 $\\theta=VBL$，其中 $\\theta$ 是偏振旋转角，$V$ 是韦尔代常数，$B$ 是沿传播方向的磁感应强度，$L$ 是介质长度。与自然旋光不同，法拉第旋转在光路反向时不简单抵消，因此可制成光隔离器，也可用于磁场测量。\n\n法拉第效应中，介质中的量往往是宏观平均后的结果，已经把微观电荷、电流或偶极响应压缩进材料参数。频率、温度、强场和方向性都会改变这些参数；理想、线性或均匀等词只是在特定尺度上的近似。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "法拉第效应",
+          "url": "https://www.baidu.com/s?wd=%E6%B3%95%E6%8B%89%E7%AC%AC%E6%95%88%E5%BA%94%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "法拉第效应",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%B3%95%E6%8B%89%E7%AC%AC%E6%95%88%E5%BA%94"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "faraday effect",
+          "url": "https://en.wikipedia.org/w/index.php?search=faraday%20effect"
+        }
       ]
     },
     {
@@ -2051,6 +4085,24 @@
         "除以 c² 表现为等效质量",
         "常出现 经典电子模型",
         "electromagnetic mass"
+      ],
+      "explanation_markdown": "电磁质量把带电体系周围电磁场能量对惯性的贡献写成等效质量。它源于经典电子模型中一个事实：加速带电体时，也要改变其自场的能量和动量。\n\n常用估计为 $m_{\\rm em}=U_{\\rm em}/c^2$，其中 $m_{\\rm em}$ 是等效电磁质量，$U_{\\rm em}$ 是电磁场能量，$c$ 是光速。对点电荷，经典自能会发散，说明单靠经典半径模型并不完备。现代观点通常把它放在总质量、场能和重整化思想中理解。\n\n电磁质量要和源分布、场、能量流及边界条件一起理解。只看单个公式容易遮住适用前提；静态、准静态、辐射和相对论情形之间的差别，往往正体现在被保留或忽略的项上。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "电磁质量",
+          "url": "https://www.baidu.com/s?wd=%E7%94%B5%E7%A3%81%E8%B4%A8%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "电磁质量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%94%B5%E7%A3%81%E8%B4%A8%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "electromagnetic mass",
+          "url": "https://en.wikipedia.org/w/index.php?search=electromagnetic%20mass"
+        }
       ]
     }
   ]
