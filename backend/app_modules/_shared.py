@@ -24,6 +24,7 @@ from backend.runtime.game_config import (
     HINT_COOLDOWN_SECONDS,
     MASK_PROBABILITIES,
     APP_ICON_FILE,
+    ASSETS_DIR,
     PROJECT_DIR,
     RECORD_DIR,
     RESOURCE_DIR,
@@ -49,6 +50,13 @@ from backend.runtime.accounts import (
     set_account_admin,
     set_active_session,
 )
+from backend.runtime.bug_feedback import (
+    feedback_file_path,
+    load_feedback,
+    submit_feedback,
+    submit_term_feedback,
+    update_feedback_status,
+)
 from frontend.ui.backdrop import BackdropMixin
 from backend.runtime.clue_library import ClueLibrary
 from backend.runtime.cosmetics import (
@@ -58,6 +66,22 @@ from backend.runtime.cosmetics import (
     title_name,
     unlocked_avatar_ids,
     unlocked_title_options,
+)
+from backend.runtime.music_catalog import (
+    HOME_MUSIC_OPTIONS,
+    coerce_home_music_id,
+    home_music_label,
+    home_music_option,
+    home_music_track,
+    unlocked_home_music_ids,
+)
+from backend.runtime.sfx_catalog import (
+    SFX_EVENT_OPTIONS,
+    normalize_sfx_choices,
+    sfx_event_label,
+    sfx_sound_display,
+    sfx_sound_display_options,
+    sfx_sound_id_from_display,
 )
 from backend.runtime.crossword_puzzle import generate_crossword, size_for_difficulty, target_word_count_for_size, validate_crossword
 from frontend.ui.markdown_view import render_inline_markdown, render_markdown, split_mechanics_sections
@@ -104,6 +128,8 @@ from backend.runtime.records import (
     is_counted_record,
     is_random_record,
     load_record_entries,
+    load_record_summary,
+    record_entries_signature,
     random_free_hint_quota,
     random_mask_positions,
     read_achievements,
@@ -132,6 +158,7 @@ from backend.runtime.term_library import (
     normalize_term_initials,
     person_name_answer_key,
     term_has_greek_letter,
+    term_notice_tags,
     term_notice_text,
 )
-from frontend.ui.widgets import HoverButton, WobblePanel, scaled_int, set_ui_scale
+from frontend.ui.widgets import HoverButton, WobblePanel, scaled_int, set_button_sound_callback, set_ui_scale

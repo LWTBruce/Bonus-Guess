@@ -105,6 +105,7 @@ class ModeFlowMixin:
         if self.block_spectator_action("进入游戏"):
             self.show_home()
             return
+        self.play_music("menu")
         self.clear(transition=transition)
         self._start_backdrop("lines")
         self._topbar("选择模式", self.show_home)
@@ -293,6 +294,7 @@ class ModeFlowMixin:
                 f"{subject_text}专属的线索资格挑战。",
                 "全部题目换成线索题，不显示首字母，只显示答案字数。",
                 "每段由固定题组构成，必须全题答对并且未超时。",
+                "段位数量、目标难度、时限和提示参数与限时段位一致。",
                 "通过后会解锁可佩戴的段位标识和称号。",
             ]
         elif selected == "字谜段位":
@@ -321,11 +323,11 @@ class ModeFlowMixin:
             title = "线索模式"
             lines = [
                 f"从{mode_subject_text}中抽取词条，但不显示首字母。",
-                "初始只给一句描述，每次提示会多显示一条线索并扣分。",
-                "普通和困难可能出现破碎线索，使本题总难度上升。",
+                "初始给两句描述，继续提示会从第三条线索开始扣分。",
+                "从入门到噩梦都与自由模式使用同一套词库范围和抽题参数。",
             ]
             if random_scope:
-                lines.append("线索的“真·随机”会读取入门到困难词库，暂不纳入噩梦。")
+                lines.append("线索的“真·随机”会读取物理和数学全部词库。")
         elif base_selected == "字谜":
             title = "字谜模式"
             lines = [
@@ -355,6 +357,7 @@ class ModeFlowMixin:
         if self.block_spectator_action("进入自定义玩法"):
             self.show_home()
             return
+        self.play_music("menu")
         self.clear()
         self._start_backdrop("grid")
         self._topbar("自定义玩法编辑器", self.show_mode_select)
@@ -391,13 +394,13 @@ class ModeFlowMixin:
         self.custom_mask_probability_var = tk.StringVar(value="30")
         self.custom_mask_max_var = tk.StringVar(value="3")
         self.custom_fragment_var = tk.StringVar(value="25")
-        self.custom_clue_initial_var = tk.StringVar(value="1")
+        self.custom_clue_initial_var = tk.StringVar(value="2")
         self.custom_clue_reveal_var = tk.StringVar(value="1")
         self.custom_minutes_var = tk.StringVar(value="5")
         self.custom_challenge_count_var = tk.StringVar(value="5")
         self.custom_crossword_width_var = tk.StringVar(value="15")
         self.custom_crossword_height_var = tk.StringVar(value="15")
-        self.custom_crossword_words_var = tk.StringVar(value="27")
+        self.custom_crossword_words_var = tk.StringVar(value="自动")
         self.custom_crossword_shape_var = tk.StringVar(value="随机")
         self.custom_crossword_triangle_var = tk.StringVar(value="15")
         self.custom_crossword_hex_var = tk.StringVar(value="15")
@@ -435,12 +438,12 @@ class ModeFlowMixin:
 
         tk.Label(params, text="线索", fg="#8fb6ff", bg="#182033", font=("Microsoft YaHei UI", 15, "bold")).pack(anchor="w", padx=26, pady=(18, 4))
         self.custom_option_group(params, "破碎线索概率", self.custom_fragment_var, ["0", "25", "40", "100"], self.update_custom_option_states)
-        self.custom_range_inputs(params, "初始线索数", self.custom_clue_initial_var, None, note="1-5")
+        self.custom_range_inputs(params, "初始线索数", self.custom_clue_initial_var, None, note="1-5；默认 2")
         self.custom_range_inputs(params, "每次追加", self.custom_clue_reveal_var, None, note="1-5")
 
         tk.Label(params, text="字谜", fg="#8fb6ff", bg="#182033", font=("Microsoft YaHei UI", 15, "bold")).pack(anchor="w", padx=26, pady=(18, 4))
         self.custom_range_inputs(params, "网格宽高", self.custom_crossword_width_var, self.custom_crossword_height_var, note="5-30")
-        self.custom_range_inputs(params, "目标词数", self.custom_crossword_words_var, None, note="5-80")
+        self.custom_range_inputs(params, "目标词数", self.custom_crossword_words_var, None, note="自动或 5-160")
         self.custom_option_group(params, "格形", self.custom_crossword_shape_var, ["方格", "三角", "六边", "随机"], self.update_custom_option_states)
         self.custom_range_inputs(params, "随机三角概率（%）", self.custom_crossword_triangle_var, None, note="0-100")
         self.custom_range_inputs(params, "随机六边概率（%）", self.custom_crossword_hex_var, None, note="0-100")
@@ -603,7 +606,11 @@ class ModeFlowMixin:
             library_hint_limit = self.parse_int_var(self.custom_library_hint_var, 0, 0, 30)
         crossword_width = self.parse_int_var(self.custom_crossword_width_var, 15, 5, 30)
         crossword_height = self.parse_int_var(self.custom_crossword_height_var, 15, 5, 30)
-        crossword_words = self.parse_int_var(self.custom_crossword_words_var, target_word_count_for_size(max(crossword_width, crossword_height), 1.8), 5, 80)
+        raw_crossword_words = str(self.custom_crossword_words_var.get() if self.custom_crossword_words_var else "").strip()
+        if raw_crossword_words in {"", "自动"}:
+            crossword_words = 0
+        else:
+            crossword_words = self.parse_int_var(self.custom_crossword_words_var, 0, 5, 160)
         self.custom_mode = True
         self.rank_mode = False
         self.crossword_mode = False
@@ -621,7 +628,7 @@ class ModeFlowMixin:
             "mask_probability": self.parse_int_var(self.custom_mask_probability_var, 30, 0, 100),
             "mask_max": self.parse_int_var(self.custom_mask_max_var, 3, 0, 6),
             "fragment_probability": int(self.custom_fragment_var.get()) / 100,
-            "clue_initial_lines": self.parse_int_var(self.custom_clue_initial_var, 1, 1, 5),
+            "clue_initial_lines": self.parse_int_var(self.custom_clue_initial_var, 2, 1, 5),
             "clue_reveal_count": self.parse_int_var(self.custom_clue_reveal_var, 1, 1, 5),
             "minutes": minutes,
             "challenge_enabled": 1 if challenge_enabled else 0,
@@ -657,6 +664,7 @@ class ModeFlowMixin:
         if self.block_spectator_action("进入段位挑战"):
             self.show_home()
             return
+        self.play_music("rank_menu")
         self.clear()
         self._start_backdrop("lines")
         rank_kind = getattr(self, "rank_kind", "free")
@@ -790,8 +798,25 @@ class ModeFlowMixin:
 
     def crossword_rank_word_count_for_id(self, rank_id):
         rank_id = max(1, min(20, int(rank_id or 1)))
-        low = target_word_count_for_size(8, 1.8)
-        return int(round(low + (rank_id - 1) * (85 - low) / 19))
+        if self is None:
+            size = int(round(8 + (rank_id - 1) * 22 / 19))
+            high_rank_centers = {16: 10.0, 17: 10.5, 18: 11.0, 19: 11.5, 20: 12.0}
+            center = high_rank_centers.get(rank_id, rank_target_difficulty(rank_id))
+            if center <= 2:
+                difficulty = "入门"
+            elif center <= 4:
+                difficulty = "简单"
+            elif center <= 7:
+                difficulty = "普通"
+            elif center <= 10:
+                difficulty = "困难"
+            else:
+                difficulty = "噩梦"
+        else:
+            size = self.crossword_rank_size_for_id(rank_id)
+            _low, _high, center = self.crossword_rank_difficulty_window_for_id(rank_id)
+            difficulty = self.difficulty_label_for_value(center)
+        return target_word_count_for_size(size, difficulty=difficulty)
 
     def crossword_rank_seconds_for_id(self, rank_id):
         rank_id = max(1, min(20, int(rank_id or 1)))
@@ -935,6 +960,7 @@ class ModeFlowMixin:
         self.start_crossword_game(self.difficulty)
 
     def show_difficulty(self):
+        self.play_music("menu")
         self.clear()
         self._start_backdrop("particles")
         if self.tutorial_active:
@@ -970,8 +996,7 @@ class ModeFlowMixin:
             ("普通", "#f6d36b"),
             ("困难", "#ff9b89"),
         ]
-        if self.play_mode != "线索":
-            options.append(("噩梦", "#c084fc"))
+        options.append(("噩梦", "#c084fc"))
         if self.is_random_group_mode():
             options.append(("真·随机", "#c4b5fd"))
         elif self.play_mode != "字谜":
@@ -1012,14 +1037,13 @@ class ModeFlowMixin:
         if self.play_mode == "限时":
             mode_text = "限时 5 分钟，答对后自动换题。"
         elif self.play_mode == "线索":
-            mode_text = "不显示首字母，改用五句递进线索作答；每次追加线索都会按规则处理。线索暂不开放噩梦词库。"
+            mode_text = "不显示首字母，改用五句递进线索作答；初始显示两句，继续追加线索按规则处理。线索模式与自由模式使用同一套词库范围。"
         elif self.play_mode == "字谜":
-            mode_text = "多词交叉填格：入门到噩梦约为 8/11/15/18/22 格。" + ("随机字谜会跨物理和数学同难度词库；真·随机会读取全部词库。" if random_scope else "")
+            mode_text = "多词交叉填格：入门到噩梦约为 8/11/15/18/22 格，词量按占空比和平均词长估算。" + ("随机字谜会跨物理和数学同难度词库；真·随机会读取全部词库。" if random_scope else "")
         else:
             mode_text = "单题练习，答完后进入结算。" + ("随机模式会跨物理和数学同难度词库；真·随机会读取全部词库。" if random_scope else "")
         if random_scope and self.play_mode in {"限时", "线索"}:
-            highest = "困难" if self.play_mode == "线索" else "噩梦"
-            mode_text += f" 入门到{highest}只限定选词难度；真·随机会改为全库五档等概率抽查。"
+            mode_text += " 入门到噩梦只限定选词难度；真·随机会改为全库五档等概率抽查。"
         tk.Label(parent, text="词库介绍", fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 22, "bold")).pack(anchor="w", padx=26, pady=(26, 12))
         tk.Label(parent, text=f"范围：{subject}", fg="#dce6ff", bg="#182033", font=("Microsoft YaHei UI", 13, "bold")).pack(anchor="w", padx=26, pady=5)
         tk.Label(parent, text=self.smart_wrap_text(mode_text, 30), fg="#dce6ff", bg="#182033", justify="left", font=("Microsoft YaHei UI", 12)).pack(anchor="w", padx=26, pady=5)
@@ -1029,9 +1053,9 @@ class ModeFlowMixin:
             "简单": "偏核心基础概念，难度 3-4 高概率。",
             "普通": "偏大学基础和常见进阶概念，难度 5-6 高概率；首字母题可能出现 *，线索题可能出现破碎线索。",
             "困难": "偏高阶词库和更难想到的概念，难度 8-10 占比高，掩码或破碎线索概率更高。",
-            "噩梦": "偏前沿和高度专门化词库，难度 10-12 占比最高；自由、限时和字谜的掩码、冷却与免费提示都比困难更严苛。",
+            "噩梦": "偏前沿和高度专门化词库，难度 10-12 占比最高；自由、限时、线索和字谜的掩码、冷却与免费提示都比困难更严苛。",
             "混合模式": "读取当前学科下全部难度文件，入门、简单、普通、困难、噩梦五档等概率抽取。",
-            "真·随机": "读取物理和数学的全部词库，按中文答案去重；五档难度等概率抽取，线索玩法会排除暂未配套线索的噩梦词库。",
+            "真·随机": "读取物理和数学的全部词库，按中文答案去重；五档难度等概率抽取。",
         }
         for text, _accent in options:
             tk.Label(parent, text=self.smart_wrap_text(f"{text}：{descriptions[text]}", 32), fg="#c8d2ee", bg="#182033", justify="left", font=("Microsoft YaHei UI", 11)).pack(anchor="w", padx=26, pady=4)
@@ -1088,25 +1112,5 @@ class ModeFlowMixin:
         else:
             self.terms, self.library_files = self.library.load(self.mode, difficulty)
             self.scope_text = self.library.scope_text(self.library_files)
-        if self.is_clue_mode():
-            self.remove_nightmare_terms_from_clue_scope(difficulty)
         if not self.terms:
             raise ValueError("词库为空")
-
-    def remove_nightmare_terms_from_clue_scope(self, difficulty):
-        filtered_files = [
-            file
-            for file in self.library_files
-            if not any(str(part).startswith("噩梦") for part in getattr(file, "parts", ()))
-        ]
-        if len(filtered_files) == len(self.library_files):
-            return
-        if not filtered_files:
-            raise ValueError("线索模式暂不开放噩梦难度")
-        self.terms, self.library_files = self.library.load_files(filtered_files)
-        if self.is_true_random_mode() or difficulty == "真·随机":
-            self.scope_text = f"全部物理和数学入门到困难线索词库：{self.library.scope_text(self.library_files)}"
-        elif self.is_random_group_mode():
-            self.scope_text = f"全部物理和数学{difficulty}线索词库：{self.library.scope_text(self.library_files)}"
-        else:
-            self.scope_text = self.library.scope_text(self.library_files)

@@ -28,9 +28,20 @@ TEMPLATE_PHRASES = [
     "它的价值在于把",
     "若条件改变，应重新确认",
     "必要时还可以",
+    "是热力学与统计力学中的概念",
+    "用来描述对象",
+    "符号中",
+    "该式涉及",
+    "宏观变量不是孤立数字",
+    "这个补充条件",
 ]
 
-SENTENCE_SPLIT_RE = re.compile(r"(?<=[。！？])")
+TEMPLATE_PATTERNS = [
+    re.compile(r"使用[^。；，、]{0,20}时要"),
+    re.compile(r"是[^。；，、]{0,20}中描述[^。；，、]{0,20}的术语"),
+]
+
+SENTENCE_SPLIT_RE = re.compile(r"(?<=[。！？；])")
 
 
 def han_count(text):
@@ -60,6 +71,7 @@ def sentences(text):
 
 def main():
     errors = []
+    repeated_sentence_locations = {}
     for path, index, entry in iter_entries():
         name = entry.get("chinese_name", f"#{index}")
         text = entry.get("explanation_markdown", "")
@@ -82,12 +94,23 @@ def main():
         for sentence in sentences(text):
             if han_count(sentence) >= 12:
                 seen[sentence] = seen.get(sentence, 0) + 1
+            if ("困难模式" in str(path) or "噩梦模式" in str(path)) and han_count(sentence) >= 20:
+                repeated_sentence_locations.setdefault((path, sentence), []).append(name)
         for sentence, times in seen.items():
             if times > 1:
                 errors.append((path, name, f"同条解释内重复句子：{sentence[:28]}"))
         for phrase in TEMPLATE_PHRASES:
             if phrase in text:
                 errors.append((path, name, f"疑似流程/模板句：{phrase}"))
+        if "困难模式" in str(path) or "噩梦模式" in str(path):
+            for pattern in TEMPLATE_PATTERNS:
+                if pattern.search(text):
+                    errors.append((path, name, f"疑似流程/模板句：{pattern.pattern}"))
+
+    for (path, sentence), names in repeated_sentence_locations.items():
+        if len(names) > 3:
+            shown_names = "、".join(names[:4])
+            errors.append((path, shown_names, f"跨词条重复句子 {len(names)} 次：{sentence[:28]}"))
 
     if errors:
         for path, name, message in errors[:160]:

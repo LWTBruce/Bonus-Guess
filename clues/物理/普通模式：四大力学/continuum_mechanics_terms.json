@@ -4,9 +4,21 @@
     {
       "chinese_name": "连续介质力学",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "连续介质力学把固体、流体和软材料看成由物质点连续填满的区域，用场变量表达变形、速度、应力和密度。它牺牲分子细节，换来可在宏观尺度求解的局部方程。\n\n动量平衡常写作 $\\nabla\\cdot\\boldsymbol\\sigma+\\rho\\mathbf b=\\rho\\mathbf a$，其中 $\\boldsymbol\\sigma$ 是应力张量，$\\rho$ 是密度，$\\mathbf b$ 是体力，$\\mathbf a$ 是加速度。守恒律给出共同骨架，材料差异则通过本构关系进入，例如弹性体看应变，牛顿流体看应变率。\n\n连续介质力学在连续介质模型中要先说明哪些变量足以描述材料的历史和状态。线弹性只看当前小应变，超弹性看能量函数，黏弹性保留时间记忆；实验标定决定模型能用到哪里。",
+      "complete_clues": [
+        "这是宏观力学中描述材料区域的一套理论语言。",
+        "它把固体、流体和软物质都放在场变量、守恒律和材料响应的框架里。",
+        "动量平衡常写作 $\\nabla\\cdot\\boldsymbol\\sigma+\\rho\\mathbf b=\\rho\\mathbf a$，其中 $\\boldsymbol\\sigma$ 是应力张量。",
+        "它用连续分布的密度、速度、变形和应力取代逐个分子的自由度。",
+        "它的英文译名是 continuum mechanics。"
+      ],
+      "fragmented_clues": [
+        "宏观力学 理论语言",
+        "固体 流体 软物质 场变量 守恒律",
+        "$\\nabla\\cdot\\boldsymbol\\sigma+\\rho\\mathbf b=\\rho\\mathbf a$",
+        "连续分布 密度 速度 变形 应力 分子自由度 平均",
+        "continuum mechanics"
+      ],
+      "explanation_markdown": "连续介质力学把固体、流体和软物质看成由物质点连续填满的区域，用场变量描述密度、速度、变形和应力。它不是否认分子结构，而是在宏观尺度上用平均量取代离散自由度。\n\n共同骨架是守恒律和本构关系，例如动量平衡 $\\nabla\\cdot\\boldsymbol\\sigma+\\rho\\mathbf b=\\rho\\mathbf a$。这里 $\\boldsymbol\\sigma$ 是应力张量，$\\rho$ 是密度，$\\mathbf b$ 是单位质量体力，$\\mathbf a$ 是加速度。固体问题常重视应变和边界位移，流体问题更常从速度场、应变率和压力出发。\n\n这套语言把运动学、平衡方程和本构关系分开处理：前者说明怎样变形，平衡方程说明力怎样传递，本构关系说明材料怎样响应。三者缺一不可。",
       "source_links": [
         {
           "label": "百度百科",
@@ -28,9 +40,21 @@
     {
       "chinese_name": "连续介质假设",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "连续介质假设认为在关注尺度上，材料可以用平滑的密度、速度和应力场表示，而不必逐个追踪原子、分子或颗粒。它依赖明显的尺度分离。\n\n条件可概括为 $\\ell_{\\rm micro}\\ll L$，其中 $\\ell_{\\rm micro}$ 是微观结构长度，$L$ 是宏观场变化尺度。只有在足够大的代表体元上平均后，密度和应力才有稳定意义。稀薄气体、颗粒材料或裂纹尖端附近若失去尺度分离，就需要分子动力学、颗粒模型或非局部理论补充。\n\n连续介质假设在连续介质模型中要先说明哪些变量足以描述材料的历史和状态。线弹性只看当前小应变，超弹性看能量函数，黏弹性保留时间记忆；实验标定决定模型能用到哪里。",
+      "complete_clues": [
+        "这是宏观材料建模中的一种尺度假设。",
+        "它关联平滑场量、代表体元、微观结构平均和模型有效范围。",
+        "尺度分离常写成 $\\ell_{\\rm micro}\\ll \\ell_{\\rm REV}\\ll L$。",
+        "平均体元要大过微观起伏，又要小过宏观场量的变化尺度。",
+        "它的英文译名是 continuum hypothesis。"
+      ],
+      "fragmented_clues": [
+        "宏观材料 尺度假设",
+        "平滑场量 代表体元 微观平均 有效范围",
+        "$\\ell_{\\rm micro}\\ll \\ell_{\\rm REV}\\ll L$",
+        "微观起伏 平均体元 宏观梯度 尺度分离",
+        "continuum hypothesis"
+      ],
+      "explanation_markdown": "连续介质假设认为，在关注尺度上可以给材料每一点赋予平滑的密度、速度、温度和应力，而不必逐个追踪原子或颗粒。它成立的关键是代表体元足够大，又比宏观变化尺度小。\n\n尺度条件常写成 $\\ell_{\\rm micro}\\ll \\ell_{\\rm REV}\\ll L$。其中 $\\ell_{\\rm micro}$ 是微观结构尺度，$\\ell_{\\rm REV}$ 是代表体元尺度，$L$ 是场变量显著变化的尺度。稀薄气体、裂纹尖端、颗粒流或纳米结构中若尺度分离消失，连续模型就要改用非局部、分子或颗粒描述补充。\n\n它要求微观涨落被平均掉后仍能定义局部场量。若平均体元太小，会看到颗粒噪声；太大，又会抹掉真实梯度，所以尺度分离是模型有效性的前提。",
       "source_links": [
         {
           "label": "百度百科",
@@ -52,9 +76,21 @@
     {
       "chinese_name": "物质点",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "物质点是连续体中随材料一起运动的微小体元标签，携带质量、温度、应变历史和内部变量。它不是一个分子，也不是几何上孤立的点，而是宏观平均后的材料小块。\n\n运动映射写作 $\\mathbf x=\\boldsymbol\\chi(\\mathbf X,t)$，其中 $\\mathbf X$ 标记同一物质点在参考构形中的位置，$\\mathbf x$ 是时刻 $t$ 的当前位置。跟随物质点可自然记录塑性累积、损伤演化和热历史；固定空间点看到的则是不同物质点依次经过。\n\n物质点中，运动学量首先服务于“同一块材料到了哪里、局部线元怎样变化”这一问题。判断它时要分清参考构形和当前构形、物质坐标和空间坐标；若把两套描述混用，应变、速度和密度变换都会出错。",
+      "complete_clues": [
+        "这是连续体运动学中的一种材料标签。",
+        "它关联拉格朗日视角、历史变量、温度记忆和随材料更新的内部状态。",
+        "运动常写成 $\\mathbf x=\\boldsymbol\\chi(\\mathbf X,t)$，其中 $\\mathbf X$ 标记参考位置。",
+        "它跟随同一小块材料运动，不固定在空间网格上，也不是单个分子。",
+        "它的英文译名是 material point。"
+      ],
+      "fragmented_clues": [
+        "连续体运动学 材料标签",
+        "拉格朗日视角 历史变量 温度记忆 内部状态",
+        "$\\mathbf x=\\boldsymbol\\chi(\\mathbf X,t)$",
+        "同一小块材料 随体运动 空间网格 单个分子",
+        "material point"
+      ],
+      "explanation_markdown": "物质点是连续体中跟随同一小块材料运动的标签，携带质量、应变历史、温度和内部变量。它不是单个分子，也不是纯几何点，而是经过宏观平均后仍可看作局部均匀的体元。\n\n运动通常写成 $\\mathbf x=\\boldsymbol\\chi(\\mathbf X,t)$。这里 $\\mathbf X$ 标记该物质点在参考构形中的位置，$\\mathbf x$ 是时刻 $t$ 的当前位置。跟随物质点能自然记录塑性累积和损伤演化；固定空间点看到的则是不同物质点先后经过，这正是拉格朗日描述和欧拉描述的区别。\n\n物质点跟随材料而不是固定在空间网格上，因此适合记录历史变量。塑性应变、损伤和温度记忆通常随物质点更新，和欧拉网格上的瞬时场量不同。",
       "source_links": [
         {
           "label": "百度百科",
@@ -76,9 +112,21 @@
     {
       "chinese_name": "物质坐标",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "物质坐标给每个物质点一个随运动保持不变的标签，通常取它在参考构形中的位置。它强调“这块材料”从哪里来、后来到了哪里。\n\n记作 $\\mathbf X\\in\\mathcal B_0$，其中 $\\mathbf X$ 是物质坐标，$\\mathcal B_0$ 是参考构形中的物体区域。当前坐标由 $\\mathbf x=\\boldsymbol\\chi(\\mathbf X,t)$ 给出。固体大变形、历史相关本构和有限元拉格朗日网格都依赖物质坐标来避免材料身份混淆。\n\n物质坐标中，运动学量首先服务于“同一块材料到了哪里、局部线元怎样变化”这一问题。判断它时要分清参考构形和当前构形、物质坐标和空间坐标；若把两套描述混用，应变、速度和密度变换都会出错。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是连续体运动学中随材料固定的一类坐标标记。",
+        "它常和固体大变形、初始边界、材料历史以及拉格朗日视角一起出现。",
+        "若 $\\mathbf x=\\boldsymbol\\chi(\\mathbf X,t)$，速度可写作 $\\mathbf v(\\mathbf X,t)=\\partial\\boldsymbol\\chi/\\partial t$。",
+        "同一个 $\\mathbf X$ 始终指向同一块材料，强调这块材料去了哪里。",
+        "它的英文译名是 material coordinate。"
+      ],
+      "fragmented_clues": [
+        "连续体运动学 坐标标记",
+        "固体大变形 初始边界 材料历史 拉格朗日",
+        "$\\mathbf v(\\mathbf X,t)=\\partial\\boldsymbol\\chi/\\partial t$",
+        "$\\mathbf X$ 同一块材料 固定编号 去向",
+        "material coordinate"
+      ],
+      "explanation_markdown": "物质坐标用参考构形中的位置 $\\mathbf X$ 标记同一块材料，像给每个物质点贴上不会随运动改变的编号。它适合描述固体大变形、材料历史和初始边界，因为同一个 $\\mathbf X$ 始终指向同一物质点。\n\n若运动为 $\\mathbf x=\\boldsymbol\\chi(\\mathbf X,t)$，场量可写成 $f(\\mathbf X,t)$；速度则由 $\\mathbf v(\\mathbf X,t)=\\partial\\boldsymbol\\chi/\\partial t$ 给出。这里 $\\mathbf x$ 是空间坐标，$\\boldsymbol\\chi$ 是运动映射。物质坐标强调“这块材料去了哪里”，与空间坐标强调“这个位置现在发生什么”不同。\n\n物质坐标适合拉格朗日描述，边界和材料点编号固定，便于处理固体。若材料穿过控制体，例如流体管道问题，仍可用空间坐标写通量更方便。这也是固体有限元常把节点放在参考构形中的原因。",
       "source_links": [
         {
           "label": "百度百科",
@@ -100,9 +148,21 @@
     {
       "chinese_name": "空间坐标",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "空间坐标表示当前时刻物质占据的实际位置，是固定在观察者空间中的坐标。流体力学常在某个空间点记录此刻的速度、压力和密度。\n\n物质坐标与空间坐标由 $\\mathbf x=\\boldsymbol\\chi(\\mathbf X,t)$ 连接，其中 $\\mathbf X$ 是物质标签，$\\mathbf x$ 是当前位置。同一个 $\\mathbf x$ 在不同时间可被不同物质点占据。空间坐标适合描述流入流出、边界通量和欧拉形式守恒方程。\n\n空间坐标中，运动学量首先服务于“同一块材料到了哪里、局部线元怎样变化”这一问题。判断它时要分清参考构形和当前构形、物质坐标和空间坐标；若把两套描述混用，应变、速度和密度变换都会出错。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是连续体运动学中固定观察位置的一类坐标标记。",
+        "它常和流体欧拉视角、通量边界、瞬时速度场以及固定网格一起使用。",
+        "速度写成 $\\mathbf v(\\mathbf x,t)$ 时，加速度为 $\\mathbf a=\\partial\\mathbf v/\\partial t+(\\mathbf v\\cdot\\nabla)\\mathbf v$。",
+        "网格不随材料移动，材料历史要靠随体导数或额外输运方程追踪。",
+        "它的英文译名是 spatial coordinate。"
+      ],
+      "fragmented_clues": [
+        "连续体运动学 坐标标记",
+        "欧拉视角 通量边界 瞬时速度场 固定网格",
+        "$\\mathbf a=\\partial\\mathbf v/\\partial t+(\\mathbf v\\cdot\\nabla)\\mathbf v$",
+        "网格固定 材料历史 随体导数 输运方程",
+        "spatial coordinate"
+      ],
+      "explanation_markdown": "空间坐标用当前构形中的位置 $\\mathbf x$ 描述场量，观察点固定在空间中，而不是固定在某个物质点上。流体力学常采用这种欧拉视角，因为实验探头和网格通常固定在空间位置。\n\n速度场写成 $\\mathbf v=\\mathbf v(\\mathbf x,t)$，加速度不能只取偏导，而是 $\\mathbf a=\\partial\\mathbf v/\\partial t+(\\mathbf v\\cdot\\nabla)\\mathbf v$。其中第二项表示物质点穿过非均匀速度场时产生的对流变化。空间坐标便于写守恒方程和边界通量，但处理材料记忆时要额外追踪随体导数。\n\n空间坐标适合欧拉描述，网格不随材料移动。它让流入流出边界和瞬时速度场容易表达，但材料历史要通过物质导数或额外输运方程来追踪。",
       "source_links": [
         {
           "label": "百度百科",
@@ -124,9 +184,21 @@
     {
       "chinese_name": "参考构形",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "参考构形是选来标记物质点并度量变形的基准形状，可以是初始状态、无应力状态，也可以只是方便计算的构形。它不必等同于真实自然状态。\n\n常记为 $\\mathcal B_0$，运动把它送到 $\\mathcal B_t=\\boldsymbol\\chi_t(\\mathcal B_0)$，其中 $\\boldsymbol\\chi_t$ 是时刻 $t$ 的变形映射。形变梯度、格林拉格朗日应变和皮奥拉应力都以参考构形为基准。选择不同参考构形会改变表示，但不改变当前物体的实际形状。\n\n参考构形中，运动学量首先服务于“同一块材料到了哪里、局部线元怎样变化”这一问题。判断它时要分清参考构形和当前构形、物质坐标和空间坐标；若把两套描述混用，应变、速度和密度变换都会出错。",
+      "complete_clues": [
+        "这是有限变形理论中选定基准状态的几何对象。",
+        "它关联长度、面积和体积变化的量度，也影响应变、应力和能量的写法。",
+        "变形梯度定义为 $\\mathbf F=\\partial\\mathbf x/\\partial\\mathbf X$。",
+        "这个基准状态不一定无应力，预拉伸或残余应力必须另写进模型。",
+        "它的英文译名是 reference configuration。"
+      ],
+      "fragmented_clues": [
+        "有限变形 几何对象",
+        "长度 面积 体积 应变 应力 能量",
+        "$\\mathbf F=\\partial\\mathbf x/\\partial\\mathbf X$",
+        "基准状态 预拉伸 残余应力 建模选择",
+        "reference configuration"
+      ],
+      "explanation_markdown": "参考构形是为连续体选定的基准几何状态，物质点的位置记为 $\\mathbf X$。它可以是未变形状态，也可以只是一个方便的已知状态；关键是后续变形都相对它来量度。\n\n变形梯度定义为 $\\mathbf F=\\partial\\mathbf x/\\partial\\mathbf X$，其中 $\\mathbf x$ 是当前构形中的位置。由 $\\mathbf F$ 构造的格林应变、皮奥拉应力和能量密度都带有参考构形的影子。参考构形不等于“真实无应力态”本身，若材料有残余应力或预拉伸，选择基准时必须把这些历史信息写进模型。\n\n参考构形提供量长度、面积和体积变化的基准。它是建模选择，不一定无应力；若预应力或生长变形存在，错误地把参考构形当自然状态会改变本构解释。",
       "source_links": [
         {
           "label": "百度百科",
@@ -148,9 +220,21 @@
     {
       "chinese_name": "当前构形",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "当前构形是物体在时刻 $t$ 实际占据的空间区域，包含此刻的边界、体积、速度场和真实面积。它是柯西应力和欧拉描述最直接所在的几何空间。\n\n写作 $\\mathcal B_t=\\boldsymbol\\chi_t(\\mathcal B_0)$，其中 $\\mathcal B_0$ 是参考构形，$\\boldsymbol\\chi_t$ 是变形映射。当前构形中的面积元、法向和牵引力对应实际受力。把参考量推前到当前构形，或把当前量拉回参考构形，是有限变形理论的日常操作。\n\n当前构形中，运动学量首先服务于“同一块材料到了哪里、局部线元怎样变化”这一问题。判断它时要分清参考构形和当前构形、物质坐标和空间坐标；若把两套描述混用，应变、速度和密度变换都会出错。",
+      "complete_clues": [
+        "这是有限变形理论中描述即时几何状态的对象。",
+        "它关联实际面积、法向、柯西应力、接触、流动和真实牵引力。",
+        "运动和体积比可写为 $\\mathbf x=\\boldsymbol\\chi(\\mathbf X,t),\\;J=\\det\\mathbf F$。",
+        "测量量在材料此刻占据的区域上定义，与基准量混用时要做 Piola 变换。",
+        "它的英文译名是 current configuration。"
+      ],
+      "fragmented_clues": [
+        "有限变形 几何状态",
+        "实际面积 法向 柯西应力 接触 牵引力",
+        "$\\mathbf x=\\boldsymbol\\chi(\\mathbf X,t),\\;J=\\det\\mathbf F$",
+        "此刻占据区域 测量量 Piola 变换",
+        "current configuration"
+      ],
+      "explanation_markdown": "当前构形是连续体在时刻 $t$ 实际占据的空间区域，物质点的位置记为 $\\mathbf x$。密度、速度、柯西应力和边界力通常在当前构形上定义，因为测量仪器看到的是材料此刻的几何状态。\n\n运动映射给出 $\\mathbf x=\\boldsymbol\\chi(\\mathbf X,t)$，其体积变化由 $J=\\det\\mathbf F$ 表示。这里 $\\mathbf F=\\partial\\mathbf x/\\partial\\mathbf X$，$J$ 把参考体积元变成当前体积元。当前构形适合描述接触、流动和真实牵引力；与参考构形混用时，应力和面积法向必须通过 Piola 变换对应起来。\n\n当前构形中的面积、法向和牵引力是实际测量对象。有限变形下，参考构形和当前构形的应力不能直接混用，必须通过变形梯度和雅可比因子转换。",
       "source_links": [
         {
           "label": "百度百科",
@@ -172,9 +256,21 @@
     {
       "chinese_name": "变形映射",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "变形映射给出每个物质点从参考位置到当前位置的对应关系，是连续体运动学的核心函数。平移、转动、伸长、剪切和体积变化都包含在它里面。\n\n记为 $\\mathbf x=\\boldsymbol\\chi(\\mathbf X,t)$，其中 $\\mathbf X$ 是参考位置，$\\mathbf x$ 是当前位置，$t$ 是时间。映射通常要求足够光滑且局部一一对应，以避免物质互相穿透。对 $\\mathbf X$ 求梯度得到形变梯度 $\\mathbf F$，后续应变和体积比都由此构造。\n\n变形映射中，运动学量首先服务于“同一块材料到了哪里、局部线元怎样变化”这一问题。判断它时要分清参考构形和当前构形、物质坐标和空间坐标；若把两套描述混用，应变、速度和密度变换都会出错。",
+      "complete_clues": [
+        "这是连续体运动学中的一种位置对应。",
+        "它关联从基准状态到即时状态的材料追踪、接触约束和不可穿透条件。",
+        "标准写法是 $\\mathbf x=\\boldsymbol\\chi(\\mathbf X,t)$。",
+        "它保留完整的位置对应，局部可逆且 $J>0$ 时才能避免翻转或穿透。",
+        "它的英文译名是 deformation map。"
+      ],
+      "fragmented_clues": [
+        "连续体运动学 位置对应",
+        "基准状态 即时状态 材料追踪 接触约束",
+        "$\\mathbf x=\\boldsymbol\\chi(\\mathbf X,t)$",
+        "完整对应 局部可逆 $J>0$ 翻转 穿透",
+        "deformation map"
+      ],
+      "explanation_markdown": "变形映射把参考构形中的物质点位置 $\\mathbf X$ 送到当前构形中的位置 $\\mathbf x$，常写作 $\\mathbf x=\\boldsymbol\\chi(\\mathbf X,t)$。它是连续体运动学的主对象，保证“同一块材料”在不同时刻可被追踪。\n\n局部线元变化由 $d\\mathbf x=\\mathbf Fd\\mathbf X$ 给出，其中 $\\mathbf F=\\partial\\boldsymbol\\chi/\\partial\\mathbf X$ 是形变梯度。若 $\\boldsymbol\\chi$ 可逆且 $J=\\det\\mathbf F>0$，材料不会局部翻转或相互穿透。位移场只是 $\\mathbf u=\\boldsymbol\\chi-\\mathbf X$，而变形映射保留了完整的位置对应。\n\n变形映射同时包含位移、转动、拉伸和体积变化。它比位移场更基本，因为变形梯度、雅可比行列式以及不可穿透条件都从这个映射的局部性质读出。在接触或自接触问题中，还要保证它整体一一对应，避免不同物质点占据同一空间位置。",
       "source_links": [
         {
           "label": "百度百科",
@@ -196,9 +292,21 @@
     {
       "chinese_name": "位移场",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "位移场记录物质点相对参考位置移动了多少，是小变形固体力学中最直观的未知量。它既含刚体平移，也含真正引起应变的空间变化。\n\n定义为 $\\mathbf u(\\mathbf X,t)=\\mathbf x(\\mathbf X,t)-\\mathbf X$，其中 $\\mathbf u$ 是位移，$\\mathbf X$ 是参考位置，$\\mathbf x$ 是当前位置。位移梯度的对称部分给出小应变，反对称部分对应小转动。大转动或大伸长时，不能只用线性位移梯度判断真实应变。\n\n位移场中，运动学量首先服务于“同一块材料到了哪里、局部线元怎样变化”这一问题。判断它时要分清参考构形和当前构形、物质坐标和空间坐标；若把两套描述混用，应变、速度和密度变换都会出错。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是连续体运动学中的一个矢量场量。",
+        "它关联参考位置的移动量、小变形应变、边界约束和结构挠度。",
+        "定义常写为 $\\mathbf u(\\mathbf X,t)=\\mathbf x-\\mathbf X$。",
+        "它本身包含刚体平移和转动，取导数并对称化后才得到小应变。",
+        "它的英文译名是 displacement field。"
+      ],
+      "fragmented_clues": [
+        "连续体运动学 矢量场量",
+        "参考位置 移动量 小变形 边界约束 结构挠度",
+        "$\\mathbf u(\\mathbf X,t)=\\mathbf x-\\mathbf X$",
+        "刚体平移 转动 导数 对称化 小应变",
+        "displacement field"
+      ],
+      "explanation_markdown": "位移场描述物质点相对参考位置的移动量，定义为 $\\mathbf u(\\mathbf X,t)=\\mathbf x-\\mathbf X$。它关注“离开原来位置多少”，而不是当前空间中某点的速度或应力。\n\n小变形下常用 $\\boldsymbol\\varepsilon=(\\nabla\\mathbf u+\\nabla\\mathbf u^T)/2$ 定义小应变张量，其中梯度相对参考或近似当前坐标取值。位移的刚体平移和转动本身不应产生应变，因此应变公式只保留对长度和角度改变有贡献的对称部分。有限变形中，位移场仍有用，但必须通过 $\\mathbf F=\\mathbf I+\\nabla_{\\!X}\\mathbf u$ 进入几何非线性。\n\n位移场本身包含刚体运动和真实变形，只有经过适当导数和对称化后才得到应变。小变形可线性化，大转动或大拉伸时要改用有限变形应变。",
       "source_links": [
         {
           "label": "百度百科",
@@ -220,9 +328,21 @@
     {
       "chinese_name": "速度场",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "速度场给出材料点运动的瞬时速率。拉格朗日观点跟随同一物质点求时间导数，欧拉观点则把速度看成当前空间位置上的场。\n\n由运动映射得到 $\\mathbf v(\\mathbf x,t)=\\partial_t\\boldsymbol\\chi(\\mathbf X,t)|_{\\mathbf X}$，其中 $\\boldsymbol\\chi$ 是变形映射，偏导在固定物质坐标下取。速度梯度决定局部伸长率、剪切率和旋转率。流体问题往往以速度场为主要未知量，再由压力和本构关系闭合。\n\n速度场中，运动学量首先服务于“同一块材料到了哪里、局部线元怎样变化”这一问题。判断它时要分清参考构形和当前构形、物质坐标和空间坐标；若把两套描述混用，应变、速度和密度变换都会出错。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是连续体运动学中的一个矢量场量。",
+        "它关联欧拉流动、边界通量、局部变形速率和黏性应力。",
+        "速度梯度可写为 $\\mathbf L=\\nabla\\mathbf v,\\;\\mathbf D=(\\mathbf L+\\mathbf L^T)/2$。",
+        "它的一阶空间变化可分成局部拉伸剪切速率和刚体旋转率。",
+        "它的英文译名是 velocity field。"
+      ],
+      "fragmented_clues": [
+        "连续体运动学 矢量场量",
+        "欧拉流动 边界通量 变形速率 黏性应力",
+        "$\\mathbf L=\\nabla\\mathbf v,\\;\\mathbf D=(\\mathbf L+\\mathbf L^T)/2$",
+        "空间变化 拉伸 剪切速率 刚体旋转率",
+        "velocity field"
+      ],
+      "explanation_markdown": "速度场给出连续体各点在某时刻的运动快慢和方向。物质描述中 $\\mathbf v(\\mathbf X,t)=\\partial\\boldsymbol\\chi/\\partial t$；空间描述中写成 $\\mathbf v(\\mathbf x,t)$，表示当前空间位置处正被哪块材料占据。\n\n速度梯度 $\\mathbf L=\\nabla\\mathbf v$ 可分解为 $\\mathbf D=(\\mathbf L+\\mathbf L^T)/2$ 和 $\\mathbf W=(\\mathbf L-\\mathbf L^T)/2$。这里 $\\mathbf D$ 是应变率张量，描述局部拉伸和剪切速率；$\\mathbf W$ 是自旋张量，描述局部刚体转动。流体本构关系常直接把应力与 $\\mathbf D$ 相连。\n\n速度场描述当前时刻材料点的运动快慢和方向。它的一阶空间梯度可分成应变率和旋转率；在流体中，应力常直接由应变率而不是总应变决定。它还决定边界通量和动量输运，是欧拉流体方程中的主变量。边界无滑移条件也直接约束它。",
       "source_links": [
         {
           "label": "百度百科",
@@ -244,9 +364,21 @@
     {
       "chinese_name": "加速度场",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "加速度场给出材料速度沿自身轨迹的变化率。对流体或大变形固体，固定空间点的时间变化并不等于同一材料点感受到的变化。\n\n欧拉形式为 $\\mathbf a=D\\mathbf v/Dt=\\partial_t\\mathbf v+(\\mathbf v\\cdot\\nabla)\\mathbf v$，其中 $\\mathbf v$ 是速度场，$D/Dt$ 是物质导数。第二项来自材料穿过非均匀速度场时的对流效应。加速度场进入动量守恒，决定惯性项怎样与应力散度和体力平衡。\n\n加速度场中，运动学量首先服务于“同一块材料到了哪里、局部线元怎样变化”这一问题。判断它时要分清参考构形和当前构形、物质坐标和空间坐标；若把两套描述混用，应变、速度和密度变换都会出错。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是连续体动力学中的一个矢量场量。",
+        "它关联动量平衡、非定常流动、绕流惯性和速度空间不均匀性。",
+        "欧拉形式为 $\\mathbf a=D\\mathbf v/Dt=\\partial\\mathbf v/\\partial t+(\\mathbf v\\cdot\\nabla)\\mathbf v$。",
+        "即使固定点速度不随时间变，材料穿过非均匀速度分布时仍会出现此量。",
+        "它的英文译名是 acceleration field。"
+      ],
+      "fragmented_clues": [
+        "连续体动力学 矢量场量",
+        "动量平衡 非定常流 绕流惯性 速度不均匀",
+        "$\\mathbf a=D\\mathbf v/Dt=\\partial\\mathbf v/\\partial t+(\\mathbf v\\cdot\\nabla)\\mathbf v$",
+        "固定点速度 稳定 非均匀速度分布 随体变化",
+        "acceleration field"
+      ],
+      "explanation_markdown": "加速度场描述物质点速度随自身运动经历的变化。若速度写成空间场 $\\mathbf v(\\mathbf x,t)$，加速度必须用物质导数，而不是只在固定位置求时间导数。\n\n公式为 $\\mathbf a=D\\mathbf v/Dt=\\partial\\mathbf v/\\partial t+(\\mathbf v\\cdot\\nabla)\\mathbf v$。其中第一项是局部加速度，第二项是对流加速度，来自物质点穿过速度不均匀区域。加速度进入动量平衡 $\\nabla\\cdot\\boldsymbol\\sigma+\\rho\\mathbf b=\\rho\\mathbf a$，因此在非定常流和旋转流中尤其不能忽略对流项。\n\n加速度场在欧拉描述中含局部变化和对流变化两部分。即使某点速度不随时间变，材料点穿过非均匀速度场也会加速；这正是管流和绕流中惯性项的来源。非线性对流项使流体方程即便在定常边界下也可能很难求解。",
       "source_links": [
         {
           "label": "百度百科",
@@ -268,9 +400,21 @@
     {
       "chinese_name": "形变梯度",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "形变梯度记录参考构形中的微小线段如何变成当前构形中的线段。它同时包含局部旋转、拉伸、剪切和体积变化，是有限变形理论的基本张量。\n\n定义为 $\\mathbf F=\\partial\\mathbf x/\\partial\\mathbf X$，其中 $\\mathbf X$ 是物质坐标，$\\mathbf x$ 是空间坐标。线元变换满足 $d\\mathbf x=\\mathbf Fd\\mathbf X$。由于刚体旋转也会改变 $\\mathbf F$，应变通常要由 $\\mathbf F^T\\mathbf F$ 或极分解进一步构造。\n\n形变梯度中，运动学量首先服务于“同一块材料到了哪里、局部线元怎样变化”这一问题。判断它时要分清参考构形和当前构形、物质坐标和空间坐标；若把两套描述混用，应变、速度和密度变换都会出错。 使用时要先判断变形是否足够小；若转动或伸长不可忽略，线性化量会把几何效应漏掉。",
+      "complete_clues": [
+        "这是有限变形运动学中的一个二阶张量。",
+        "它关联线元变换、体积比、客观应变和不可压缩约束。",
+        "局部线元满足 $d\\mathbf x=\\mathbf Fd\\mathbf X,\\;\\mathbf F=\\partial\\mathbf x/\\partial\\mathbf X$。",
+        "它同时包含拉伸、剪切和刚体转动，不能直接当作应变。",
+        "它的英文译名是 deformation gradient。"
+      ],
+      "fragmented_clues": [
+        "有限变形 二阶张量",
+        "线元变换 体积比 客观应变 不可压缩",
+        "$d\\mathbf x=\\mathbf Fd\\mathbf X,\\;\\mathbf F=\\partial\\mathbf x/\\partial\\mathbf X$",
+        "拉伸 剪切 刚体转动 非直接应变",
+        "deformation gradient"
+      ],
+      "explanation_markdown": "形变梯度刻画参考构形中一个微小线元到当前构形中的线性变化，定义为 $\\mathbf F=\\partial\\mathbf x/\\partial\\mathbf X$。它不是普通位移梯度，而是完整的局部映射梯度。\n\n线元满足 $d\\mathbf x=\\mathbf Fd\\mathbf X$，体积元满足 $dv=JdV$，其中 $J=\\det\\mathbf F$。$\\mathbf F$ 同时包含拉伸、剪切和刚体转动，所以应变张量常由 $\\mathbf C=\\mathbf F^T\\mathbf F$ 或 $\\mathbf B=\\mathbf F\\mathbf F^T$ 构造，以滤掉纯转动。它是有限变形弹性、塑性和生物软组织模型的核心变量。\n\n形变梯度把参考线元送到当前线元，是有限变形运动学的核心。它包含刚体转动和拉伸，不能直接当应变；通过极分解或格林张量才能提取长度变化。它的行列式还控制体积变化，是不可压缩约束和密度更新的入口。",
       "source_links": [
         {
           "label": "百度百科",
@@ -292,9 +436,21 @@
     {
       "chinese_name": "雅可比行列式",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "雅可比行列式衡量一个参考体元在变形后体积放大或缩小的比例。它还反映变形映射是否保持局部取向和不可穿透性。\n\n定义为 $J=\\det\\mathbf F=dv/dV$，其中 $\\mathbf F$ 是形变梯度，$dV$ 是参考体元，$dv$ 是当前体元。物理变形通常要求 $J>0$。不可压缩材料取 $J=1$，质量守恒可写成 $\\rho J=\\rho_0$，说明密度与体积变化互相补偿。\n\n雅可比行列式中，运动学量首先服务于“同一块材料到了哪里、局部线元怎样变化”这一问题。判断它时要分清参考构形和当前构形、物质坐标和空间坐标；若把两套描述混用，应变、速度和密度变换都会出错。 使用时要先判断变形是否足够小；若转动或伸长不可忽略，线性化量会把几何效应漏掉。",
+      "complete_clues": [
+        "这是有限变形运动学中的一个标量因子。",
+        "它关联体积元变换、密度更新、不可压缩约束和单元翻转判断。",
+        "常写作 $J=\\det\\mathbf F,\\;dv=JdV$。",
+        "它表示局部体积比，$J\\le0$ 通常意味着映射塌陷或翻转。",
+        "它的英文译名是 jacobian determinant。"
+      ],
+      "fragmented_clues": [
+        "有限变形 标量因子",
+        "体积元 密度更新 不可压缩 单元翻转",
+        "$J=\\det\\mathbf F,\\;dv=JdV$",
+        "局部体积比 $J\\le0$ 塌陷 翻转",
+        "jacobian determinant"
+      ],
+      "explanation_markdown": "雅可比行列式 $J=\\det\\mathbf F$ 描述变形映射对局部体积的放大或压缩。这里 $\\mathbf F=\\partial\\mathbf x/\\partial\\mathbf X$ 是形变梯度，$dV$ 与 $dv$ 分别是参考和当前体积元。\n\n体积变化关系为 $dv=JdV$。若 $J>1$ 表示局部膨胀，$0<J<1$ 表示压缩，$J=1$ 对应不可压缩变形；$J\\le0$ 通常意味着局部翻转或映射失去物理可接受性。质量守恒还给出 $\\rho J=\\rho_0$，其中 $\\rho_0$ 和 $\\rho$ 是参考与当前密度。\n\n雅可比行列式衡量局部体积比，也是密度变换和积分换元的关键因子。不可压缩材料要求它接近一；若它为负或为零，映射出现翻转或局部塌陷，模型就失效。数值计算中，单元雅可比异常往往意味着网格畸变或材料翻转。它还出现在参考域到当前域的积分转换中。",
       "source_links": [
         {
           "label": "百度百科",
@@ -316,9 +472,21 @@
     {
       "chinese_name": "右柯西格林张量",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "右柯西格林张量在参考构形中度量变形后的长度和夹角变化。它已经去掉了纯空间坐标旋转对长度计算的影响，因此适合定义拉格朗日应变。\n\n公式为 $\\mathbf C=\\mathbf F^T\\mathbf F$，其中 $\\mathbf F$ 是形变梯度，$T$ 表示转置。参考线元满足 $ds^2=d\\mathbf X\\cdot\\mathbf C d\\mathbf X$。它的特征值是主伸长平方，许多各向同性超弹性能量函数直接写成 $\\mathbf C$ 的不变量。\n\n右柯西格林张量中，应变量的选择取决于变形尺度和所在构形。小变形可用线性化张量，大转动或大伸长必须使用有限应变；同一物理伸长在参考描述和空间描述中会有不同但相容的数学表达。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是有限变形中定义在参考构形上的一个度量张量。",
+        "它关联材料坐标、线元长度比较、格林应变和超弹性能量。",
+        "定义为 $\\mathbf C=\\mathbf F^T\\mathbf F$。",
+        "它把当前长度变化拉回基准状态中比较，并滤去刚体转动。",
+        "它的英文译名是 right Cauchy-Green tensor。"
+      ],
+      "fragmented_clues": [
+        "有限变形 度量张量",
+        "材料坐标 线元长度 格林应变 超弹性能量",
+        "$\\mathbf C=\\mathbf F^T\\mathbf F$",
+        "当前长度 基准状态 刚体转动 滤去",
+        "right Cauchy-Green tensor"
+      ],
+      "explanation_markdown": "右柯西格林张量定义为 $\\mathbf C=\\mathbf F^T\\mathbf F$，把当前线元长度拉回到参考构形中比较。它只含拉伸信息，不含整体刚体转动，因此常用于以参考坐标写成的有限应变理论。\n\n长度变化满足 $d\\mathbf x\\cdot d\\mathbf x=d\\mathbf X\\cdot\\mathbf C d\\mathbf X$。这里 $d\\mathbf X$ 是参考线元，$d\\mathbf x$ 是变形后的线元。格林-拉格朗日应变 $\\mathbf E=(\\mathbf C-\\mathbf I)/2$ 就由它得到。与左柯西格林张量相比，$\\mathbf C$ 的分量和特征方向属于材料坐标，更适合连接超弹性能量函数。\n\n右柯西格林张量在参考构形中量度线元长度变化，已经消除了刚体转动的影响。它适合和物质坐标、格林应变以及超弹性能函数一起使用。超弹性能量若写成它的不变量，就天然满足刚体转动不改变能量。",
       "source_links": [
         {
           "label": "百度百科",
@@ -340,9 +508,21 @@
     {
       "chinese_name": "左柯西格林张量",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "左柯西格林张量在当前构形中表达变形造成的度量变化，常用于空间形式的有限变形本构。它与右柯西格林张量有相同主伸长平方，但所在基底不同。\n\n定义为 $\\mathbf B=\\mathbf F\\mathbf F^T$，其中 $\\mathbf F$ 是形变梯度。当前方向上的伸长信息可由 $\\mathbf B$ 读出。不可压缩橡胶模型中，柯西应力常含有 $\\mathbf B$ 项；流变和大变形欧拉描述也常使用它。\n\n左柯西格林张量中，应变量的选择取决于变形尺度和所在构形。小变形可用线性化张量，大转动或大伸长必须使用有限应变；同一物理伸长在参考描述和空间描述中会有不同但相容的数学表达。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是有限变形中定义在当前构形上的一个度量张量。",
+        "它关联空间形式本构、当前应力计算、橡胶大变形和欧拉表达。",
+        "定义可写为 $\\mathbf B=\\mathbf F\\mathbf F^T=\\mathbf V^2$。",
+        "它与参考构形中的对应度量有相同主伸长平方，但特征方向属于当前空间。",
+        "它的英文译名是 left Cauchy-Green tensor。"
+      ],
+      "fragmented_clues": [
+        "有限变形 度量张量",
+        "空间形式 当前应力 橡胶大变形 欧拉表达",
+        "$\\mathbf B=\\mathbf F\\mathbf F^T=\\mathbf V^2$",
+        "相同主伸长平方 当前空间 特征方向",
+        "left Cauchy-Green tensor"
+      ],
+      "explanation_markdown": "左柯西格林张量定义为 $\\mathbf B=\\mathbf F\\mathbf F^T$，在当前构形中描述局部拉伸。它与右柯西格林张量含有相同主伸长值，但特征方向属于当前空间。\n\n若极分解写成 $\\mathbf F=\\mathbf V\\mathbf R$，则 $\\mathbf B=\\mathbf V^2$，其中 $\\mathbf V$ 是左伸长张量，$\\mathbf R$ 是旋转张量。阿尔曼西应变可写作 $\\mathbf e=(\\mathbf I-\\mathbf B^{-1})/2$。因此 $\\mathbf B$ 常出现在空间形式的超弹性本构和不可压缩橡胶模型中，尤其方便直接与柯西应力相连。\n\n左柯西格林张量在当前构形中描述拉伸信息，常用于欧拉形式和当前应力计算。它与右柯西格林张量有相同主伸长平方，但分量所在的构形不同。流体和橡胶大变形问题中，用当前构形表达应力时常会见到它。",
       "source_links": [
         {
           "label": "百度百科",
@@ -364,9 +544,21 @@
     {
       "chinese_name": "格林拉格朗日应变",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "格林拉格朗日应变定义在参考构形中，能处理大转动和有限伸长。它在刚体旋转下为零，因此不会把纯转动误判成变形。\n\n公式为 $\\mathbf E=\\frac12(\\mathbf C-\\mathbf I)$，其中 $\\mathbf C$ 是右柯西格林张量，$\\mathbf I$ 是单位张量。小位移梯度极限下，它退化为线性小应变。它与第二类皮奥拉应力功共轭，常用于超弹性和全拉格朗日有限元。\n\n格林拉格朗日应变中，应变量的选择取决于变形尺度和所在构形。小变形可用线性化张量，大转动或大伸长必须使用有限应变；同一物理伸长在参考描述和空间描述中会有不同但相容的数学表达。 使用时要先判断变形是否足够小；若转动或伸长不可忽略，线性化量会把几何效应漏掉。",
+      "complete_clues": [
+        "这是有限变形理论中基于参考构形的一种应变量。",
+        "它关联大转动、大拉伸、第二类皮奥拉应力和能量共轭。",
+        "公式为 $\\mathbf E=(\\mathbf C-\\mathbf I)/2$。",
+        "它用长度平方的变化量度拉伸，纯刚体转动不会产生假应变。",
+        "它的英文译名是 Green-Lagrange strain。"
+      ],
+      "fragmented_clues": [
+        "有限变形 应变量",
+        "大转动 大拉伸 第二类皮奥拉 能量共轭",
+        "$\\mathbf E=(\\mathbf C-\\mathbf I)/2$",
+        "长度平方变化 纯刚体转动 无假应变",
+        "Green-Lagrange strain"
+      ],
+      "explanation_markdown": "格林-拉格朗日应变是有限变形中相对参考构形定义的应变量，公式为 $\\mathbf E=(\\mathbf C-\\mathbf I)/2$，其中 $\\mathbf C=\\mathbf F^T\\mathbf F$。它用长度平方的变化衡量真实拉伸。\n\n线元关系可写成 $d\\mathbf x^2-d\\mathbf X^2=2d\\mathbf X\\cdot\\mathbf E d\\mathbf X$。这里 $d\\mathbf X$ 是参考线元，$d\\mathbf x$ 是当前线元。由于纯刚体转动不会改变 $\\mathbf C$，$\\mathbf E$ 对大转动是客观的；小变形时它退化为小应变张量。它通常与第二类皮奥拉应力成能量共轭。\n\n格林拉格朗日应变以参考构形为基准，适合大转动和有限拉伸。它在小位移梯度下退化为小应变张量，因此能连接有限变形理论和线性弹性近似。它能正确排除有限刚体转动带来的假应变。工程上常用它处理橡胶、膜和大位移结构。",
       "source_links": [
         {
           "label": "百度百科",
@@ -388,9 +580,21 @@
     {
       "chinese_name": "阿尔曼西应变",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "阿尔曼西应变是在当前构形中度量有限变形的空间应变量，适合与柯西应力和欧拉描述搭配。它用当前线元追溯参考长度变化。\n\n定义为 $\\mathbf e=\\frac12(\\mathbf I-\\mathbf B^{-1})$，其中 $\\mathbf B$ 是左柯西格林张量，$\\mathbf I$ 是单位张量。小变形时，它与格林拉格朗日应变都趋于小应变张量。由于定义在当前构形中，它在大变形流动和空间更新算法中很方便。\n\n阿尔曼西应变中，应变量的选择取决于变形尺度和所在构形。小变形可用线性化张量，大转动或大伸长必须使用有限应变；同一物理伸长在参考描述和空间描述中会有不同但相容的数学表达。 使用时要先判断变形是否足够小；若转动或伸长不可忽略，线性化量会把几何效应漏掉。",
+      "complete_clues": [
+        "这是有限变形理论中基于当前构形的一种应变量。",
+        "它关联欧拉视角、柯西应力、当前边界条件和金属成形分析。",
+        "常写成 $\\mathbf e=(\\mathbf I-\\mathbf B^{-1})/2$。",
+        "它用当前线元作为比较基准，分量跟随空间坐标。",
+        "它的英文译名是 Almansi strain。"
+      ],
+      "fragmented_clues": [
+        "有限变形 应变量",
+        "欧拉视角 柯西应力 当前边界 金属成形",
+        "$\\mathbf e=(\\mathbf I-\\mathbf B^{-1})/2$",
+        "当前线元 比较基准 空间坐标 分量",
+        "Almansi strain"
+      ],
+      "explanation_markdown": "阿尔曼西应变是在当前构形中度量有限变形的应变量，常写成 $\\mathbf e=(\\mathbf I-\\mathbf B^{-1})/2$，其中 $\\mathbf B=\\mathbf F\\mathbf F^T$ 是左柯西格林张量。\n\n它比较的是当前线元对应到参考状态时的长度变化，可写为 $d\\mathbf x\\cdot\\mathbf e d\\mathbf x=(d\\mathbf x^2-d\\mathbf X^2)/2$。这里 $d\\mathbf x$ 属于当前构形。与格林-拉格朗日应变不同，阿尔曼西应变的分量跟随空间坐标，适合和柯西应力、欧拉描述的边界条件放在同一构形中使用。\n\n阿尔曼西应变在当前构形中量度变形，常与欧拉描述和当前应力配合。它和格林应变不是符号换名，而是一个用参考线元，一个用当前线元。因此它更贴近当前测量构形中的长度比较。这使它在金属成形的欧拉分析中很有用。",
       "source_links": [
         {
           "label": "百度百科",
@@ -412,9 +616,21 @@
     {
       "chinese_name": "小应变张量",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "小应变张量是位移梯度的对称部分，适用于位移梯度和转角都很小的线性化力学。它保留长度和角度的一阶变化，舍弃二阶几何效应。\n\n表达式为 $\\boldsymbol\\varepsilon=\\frac12(\\nabla\\mathbf u+\\nabla\\mathbf u^T)$，其中 $\\mathbf u$ 是位移场，$T$ 表示转置。对角分量是正应变，非对角分量对应工程剪切应变的一半。线弹性、梁板小挠度和许多结构振动模型都以它为基础。\n\n小应变张量中，应变量的选择取决于变形尺度和所在构形。小变形可用线性化张量，大转动或大伸长必须使用有限应变；同一物理伸长在参考描述和空间描述中会有不同但相容的数学表达。 使用时要先判断变形是否足够小；若转动或伸长不可忽略，线性化量会把几何效应漏掉。",
+      "complete_clues": [
+        "这是小变形线性理论中的一个应变量。",
+        "它关联位移梯度、线弹性、金属构件微小变形和岩体近似。",
+        "定义为 $\\boldsymbol\\varepsilon=(\\nabla\\mathbf u+\\nabla\\mathbf u^T)/2$。",
+        "它只保留位移梯度的对称一阶项，大刚体转动会破坏这个近似。",
+        "它的英文译名是 small strain tensor。"
+      ],
+      "fragmented_clues": [
+        "小变形 线性理论 应变量",
+        "位移梯度 线性可恢复 金属构件 岩体近似",
+        "$\\boldsymbol\\varepsilon=(\\nabla\\mathbf u+\\nabla\\mathbf u^T)/2$",
+        "对称一阶项 大刚体转动 近似失效",
+        "small strain tensor"
+      ],
+      "explanation_markdown": "小应变张量用于位移梯度很小的情形，定义为 $\\boldsymbol\\varepsilon=(\\nabla\\mathbf u+\\nabla\\mathbf u^T)/2$。这里 $\\mathbf u$ 是位移场，$\\nabla\\mathbf u$ 是位移梯度。\n\n取对称部分是因为反对称部分主要代表小刚体转动，不改变线元长度和夹角。对角分量表示正应变，非对角分量表示工程剪切应变的一半。小应变理论把几何非线性项丢掉，因此适用于金属构件和岩体等变形很小的问题；若转动很大或伸长明显，就应改用格林-拉格朗日应变等有限应变。\n\n小应变张量只保留位移梯度的一阶对称部分，默认转角和伸长都很小。若刚体转动很大，它会误把转动当作应变；这时必须改用有限变形应变。",
       "source_links": [
         {
           "label": "百度百科",
@@ -436,9 +652,21 @@
     {
       "chinese_name": "应变率张量",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "应变率张量给出当前速度场造成的瞬时伸长和剪切速率。流体中，总应变往往不如应变率有意义，因为材料可持续流动。\n\n定义为 $\\mathbf D=\\frac12(\\nabla\\mathbf v+\\nabla\\mathbf v^T)$，其中 $\\mathbf v$ 是速度场。速度梯度的反对称部分是局部自旋，不直接产生形状改变。牛顿流体的黏性偏应力与 $\\mathbf D$ 成正比，耗散功率也由它控制。\n\n应变率张量中，应变量的选择取决于变形尺度和所在构形。小变形可用线性化张量，大转动或大伸长必须使用有限应变；同一物理伸长在参考描述和空间描述中会有不同但相容的数学表达。 使用时要先判断变形是否足够小；若转动或伸长不可忽略，线性化量会把几何效应漏掉。",
+      "complete_clues": [
+        "这是连续介质速率理论中的一个二阶张量。",
+        "它关联速度梯度、牛顿流体黏性应力、黏滞固体和冲击加载。",
+        "定义为 $\\mathbf D=(\\mathbf L+\\mathbf L^T)/2,\\;\\mathbf L=\\nabla\\mathbf v$。",
+        "它描述瞬时拉伸和剪切快慢，不记录已经累计的总变形。",
+        "它的英文译名是 strain rate tensor。"
+      ],
+      "fragmented_clues": [
+        "连续介质速率 二阶张量",
+        "速度梯度 牛顿黏性应力 黏滞固体 冲击加载",
+        "$\\mathbf D=(\\mathbf L+\\mathbf L^T)/2,\\;\\mathbf L=\\nabla\\mathbf v$",
+        "瞬时拉伸 剪切快慢 非累计变形",
+        "strain rate tensor"
+      ],
+      "explanation_markdown": "应变率张量描述局部变形随时间发生的速率，是速度梯度的对称部分：$\\mathbf D=(\\mathbf L+\\mathbf L^T)/2$，其中 $\\mathbf L=\\nabla\\mathbf v$。它关注正在发生的拉伸和剪切，而不是已经累积的总应变。\n\n在牛顿流体中，黏性应力与 $\\mathbf D$ 成正比，例如偏应力 $\\boldsymbol\\tau=2\\mu\\mathbf D$，$\\mu$ 为动力黏度。反对称部分 $\\mathbf W=(\\mathbf L-\\mathbf L^T)/2$ 描述局部旋转，不直接产生黏性耗散。固体的应变率常用于黏弹性、黏塑性和冲击加载问题。\n\n应变率张量是速度梯度的对称部分，描述瞬时拉伸和剪切速率。固体小变形可由应变对时间求导得到，流体本构则通常直接用它连接黏性应力。它强调速率而非累计变形，所以适合描述持续流动中的黏性耗散。",
       "source_links": [
         {
           "label": "百度百科",
@@ -460,9 +688,21 @@
     {
       "chinese_name": "旋转张量",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "旋转张量描述变形中的刚体转动部分，只改变方向而不改变长度和夹角。有限变形理论必须把它与真正的伸长区分开。\n\n正交条件为 $\\mathbf R^T\\mathbf R=\\mathbf I,\\;\\det\\mathbf R=1$，其中 $\\mathbf R$ 是旋转张量，$\\mathbf I$ 是单位张量。极分解中 $\\mathbf F=\\mathbf R\\mathbf U$，把形变梯度拆成旋转和右伸长。客观本构关系要求材料响应不因叠加刚体旋转而改变。\n\n旋转张量中，运动学量首先服务于“同一块材料到了哪里、局部线元怎样变化”这一问题。判断它时要分清参考构形和当前构形、物质坐标和空间坐标；若把两套描述混用，应变、速度和密度变换都会出错。 使用时要先判断变形是否足够小；若转动或伸长不可忽略，线性化量会把几何效应漏掉。",
+      "complete_clues": [
+        "这是有限变形运动学中的一个正交张量。",
+        "它关联极分解、客观性、大转动有限元和局部基更新。",
+        "它满足 $\\mathbf R^T\\mathbf R=\\mathbf I,\\;\\det\\mathbf R=1$。",
+        "它改变方向而不改变长度和夹角，应与真实拉伸分开处理。",
+        "它的英文译名是 rotation tensor。"
+      ],
+      "fragmented_clues": [
+        "有限变形 正交张量",
+        "极分解 客观性 大转动 局部基",
+        "$\\mathbf R^T\\mathbf R=\\mathbf I,\\;\\det\\mathbf R=1$",
+        "方向改变 长度不变 夹角不变 真实拉伸分离",
+        "rotation tensor"
+      ],
+      "explanation_markdown": "旋转张量描述局部刚体转动，满足 $\\mathbf R^T\\mathbf R=\\mathbf I$ 且通常取 $\\det\\mathbf R=1$。它改变方向但不改变长度和夹角，因此不能被误当作应变。\n\n在有限变形极分解中，$\\mathbf F=\\mathbf R\\mathbf U=\\mathbf V\\mathbf R$。这里 $\\mathbf F$ 是形变梯度，$\\mathbf U$ 和 $\\mathbf V$ 分别是右、左伸长张量。旋转张量把整体转动从拉伸中分离出来，使应变能只依赖伸长而不依赖观察者如何转动坐标系；在壳、梁和大转动有限元中也常用来更新局部基。\n\n旋转张量描述局部刚体转动，不能与应变混同。极分解中的旋转不改变长度，只改变方向；客观本构方程必须避免把这种纯转动误判为材料变形。这也是有限变形中强调客观性的根本原因。",
       "source_links": [
         {
           "label": "百度百科",
@@ -484,9 +724,21 @@
     {
       "chinese_name": "极分解",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "极分解把形变梯度拆成刚体旋转和纯伸长，使有限变形中的几何成分更清楚。它说明材料线元先被拉伸再旋转，或先旋转再被空间伸长。\n\n公式为 $\\mathbf F=\\mathbf R\\mathbf U=\\mathbf V\\mathbf R$，其中 $\\mathbf F$ 是形变梯度，$\\mathbf R$ 是旋转张量，$\\mathbf U,\\mathbf V$ 分别是右、左伸长张量。伸长张量对称正定，含有主伸长信息。极分解常用于客观应变、橡胶大变形和数值更新算法。\n\n极分解中，运动学量首先服务于“同一块材料到了哪里、局部线元怎样变化”这一问题。判断它时要分清参考构形和当前构形、物质坐标和空间坐标；若把两套描述混用，应变、速度和密度变换都会出错。 使用时要先判断变形是否足够小；若转动或伸长不可忽略，线性化量会把几何效应漏掉。",
+      "complete_clues": [
+        "这是有限变形运动学中的一种张量分解。",
+        "它关联形变梯度、右伸长、左伸长、客观应变和超弹性能量。",
+        "标准形式为 $\\mathbf F=\\mathbf R\\mathbf U=\\mathbf V\\mathbf R$。",
+        "它把局部变换拆成纯旋转和纯伸长，左右伸长张量有相同主伸长。",
+        "它的英文译名是 polar decomposition。"
+      ],
+      "fragmented_clues": [
+        "有限变形 张量分解",
+        "形变梯度 右伸长 左伸长 客观应变",
+        "$\\mathbf F=\\mathbf R\\mathbf U=\\mathbf V\\mathbf R$",
+        "纯旋转 纯伸长 相同主伸长",
+        "polar decomposition"
+      ],
+      "explanation_markdown": "极分解把形变梯度拆成纯旋转和纯伸长，是有限变形运动学的基本工具。若 $J=\\det\\mathbf F>0$，可写成 $\\mathbf F=\\mathbf R\\mathbf U=\\mathbf V\\mathbf R$。\n\n这里 $\\mathbf R$ 是正交旋转张量，$\\mathbf U$ 是右伸长张量，$\\mathbf V$ 是左伸长张量。$\\mathbf U$ 作用在参考构形，$\\mathbf V$ 作用在当前构形，二者有相同主伸长值。极分解说明形变梯度本身同时含拉伸和转动；构造客观应变和超弹性能量时，通常只让能量依赖伸长或 $\\mathbf C=\\mathbf U^2$。\n\n极分解把形变梯度拆成旋转和纯拉伸，是有限变形中分离姿态变化与真实伸长的工具。左右拉伸张量对应不同构形，但主伸长相同。实际计算中，主伸长和主方向常由拉伸张量的本征值问题给出。",
       "source_links": [
         {
           "label": "百度百科",
@@ -508,9 +760,21 @@
     {
       "chinese_name": "体积应变",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "体积应变衡量材料小体元体积相对参考状态的变化，区分压缩膨胀与形状改变。它与静水压力、体积模量和不可压缩约束直接相关。\n\n小变形中 $\\varepsilon_v=\\operatorname{tr}\\boldsymbol\\varepsilon$，其中 $\\boldsymbol\\varepsilon$ 是小应变张量，$\\operatorname{tr}$ 表示求迹。有限变形中常用 $J-1$，其中 $J=\\det\\mathbf F$ 是体积比。橡胶和液体近似不可压缩时，体积应变被强约束。\n\n体积应变中，应变量的选择取决于变形尺度和所在构形。小变形可用线性化张量，大转动或大伸长必须使用有限应变；同一物理伸长在参考描述和空间描述中会有不同但相容的数学表达。 使用时要先判断变形是否足够小；若转动或伸长不可忽略，线性化量会把几何效应漏掉。",
+      "complete_clues": [
+        "这是连续体变形分析中的一种标量度量。",
+        "它关联压力、体积刚度、不可压缩约束、固结和声波压缩。",
+        "小变形下常写作 $\\varepsilon_v=\\operatorname{tr}\\boldsymbol\\varepsilon$，有限变形可用 $J-1$。",
+        "它衡量局部体积增减，与主要改变形状的剪切量不同。",
+        "它的英文译名是 volumetric strain。"
+      ],
+      "fragmented_clues": [
+        "连续体变形 标量度量",
+        "压力 体积刚度 不可压缩 固结 声波压缩",
+        "$\\varepsilon_v=\\operatorname{tr}\\boldsymbol\\varepsilon$ $J-1$",
+        "局部体积 增减 剪切形状改变",
+        "volumetric strain"
+      ],
+      "explanation_markdown": "体积应变衡量材料体积相对参考状态的改变。小变形下常用 $\\varepsilon_v=\\operatorname{tr}\\boldsymbol\\varepsilon$，其中 $\\boldsymbol\\varepsilon$ 是小应变张量；有限变形下更直接用 $J-1$ 表示体积比变化。\n\n这里 $J=\\det\\mathbf F$，满足 $dv=JdV$。$\\varepsilon_v>0$ 表示膨胀，$\\varepsilon_v<0$ 表示压缩。它与剪切应变不同，剪切主要改变形状而不一定改变体积；不可压缩材料要求 $J=1$ 或近似 $\\operatorname{tr}\\mathbf D=0$。体积模量和孔隙压力问题都围绕体积应变展开。\n\n体积应变刻画局部体积相对变化，在线性理论中约等于小应变张量的迹。它和剪切应变不同，主要控制压力、体积模量和不可压缩约束。土体固结、声波压缩和橡胶不可压缩近似都会用到它。排水固结问题也常围绕体积应变变化展开。",
       "source_links": [
         {
           "label": "百度百科",
@@ -532,9 +796,21 @@
     {
       "chinese_name": "剪切应变",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "剪切应变反映材料线段之间夹角的改变，而不是单纯长度伸缩。一个方形体元变成平行四边形时，最直观出现的就是剪切变形。\n\n小变形下工程剪切应变为 $\\gamma_{12}=2\\varepsilon_{12}$，其中 $\\varepsilon_{12}$ 是小应变张量的非对角分量。因张量应变采用对称化定义，工程量多出因子二。扭转、梁横剪、流体剪切流和黏性耗散都需要关注剪切应变或剪切率。\n\n剪切应变中，应变量的选择取决于变形尺度和所在构形。小变形可用线性化张量，大转动或大伸长必须使用有限应变；同一物理伸长在参考描述和空间描述中会有不同但相容的数学表达。 使用时要先判断变形是否足够小；若转动或伸长不可忽略，线性化量会把几何效应漏掉。",
+      "complete_clues": [
+        "这是连续体变形分析中的一种形状改变度量。",
+        "它关联线元夹角改变、扭转、梁弯曲、流体速度梯度和剪切应力。",
+        "二维小变形中工程量常写作 $\\gamma_{xy}=\\partial u_x/\\partial y+\\partial u_y/\\partial x$。",
+        "工程记号与张量分量常差一个因子二，且可在体积几乎不变时很大。",
+        "它的英文译名是 shear strain。"
+      ],
+      "fragmented_clues": [
+        "连续体变形 形状改变度量",
+        "线元夹角 扭转 梁弯曲 速度梯度 剪切应力",
+        "$\\gamma_{xy}=\\partial u_x/\\partial y+\\partial u_y/\\partial x$",
+        "工程记号 张量分量 因子二 体积近似不变",
+        "shear strain"
+      ],
+      "explanation_markdown": "剪切应变描述材料中原本相互垂直的线元夹角发生改变，而不是体积整体增减。小变形二维情形下，工程剪切应变写成 $\\gamma_{xy}=\\partial u_x/\\partial y+\\partial u_y/\\partial x$。\n\n张量剪切分量为 $\\varepsilon_{xy}=\\gamma_{xy}/2$，这里 $u_x,u_y$ 是位移分量。这个二倍关系常是工程记号和张量记号混淆的来源。剪切应变与剪切应力通过剪切模量相连，例如线弹性中 $\\tau_{xy}=G\\gamma_{xy}$。梁弯曲、扭转和流体速度梯度都会产生剪切量，但其物理机制并不相同。\n\n剪切应变描述材料线段夹角的改变，而不是体积整体缩放。工程剪切应变和张量剪切分量常差一个因子二，读公式时要看采用哪种约定。纯剪切可在体积几乎不变时产生很大形状改变。",
       "source_links": [
         {
           "label": "百度百科",
@@ -556,9 +832,21 @@
     {
       "chinese_name": "主应变",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "主应变是在某些正交方向上测得的纯正应变，这些方向上剪切分量消失。它把复杂三维变形分解成三个独立伸缩方向。\n\n特征值关系为 $\\boldsymbol\\varepsilon\\mathbf n_i=\\varepsilon_i\\mathbf n_i$，其中 $\\varepsilon_i$ 是主应变，$\\mathbf n_i$ 是主方向。最大主应变常用于脆性材料开裂判断，三者之和给出小变形体积应变。有限变形中对应概念常由主伸长或格林应变特征值表达。\n\n主应变中，应变量的选择取决于变形尺度和所在构形。小变形可用线性化张量，大转动或大伸长必须使用有限应变；同一物理伸长在参考描述和空间描述中会有不同但相容的数学表达。 使用时要先判断变形是否足够小；若转动或伸长不可忽略，线性化量会把几何效应漏掉。",
+      "complete_clues": [
+        "这是应变张量分析中的一组坐标无关标量。",
+        "它关联最大拉伸、最大压缩、断裂倾向和有限变形主伸长。",
+        "本征关系为 $\\boldsymbol\\varepsilon\\mathbf n_i=\\varepsilon_i\\mathbf n_i$。",
+        "在对应正交方向上剪切分量为零，只剩纯正向伸缩。",
+        "它的英文译名是 principal strain。"
+      ],
+      "fragmented_clues": [
+        "张量分析 坐标无关标量",
+        "最大拉伸 最大压缩 断裂倾向 主伸长",
+        "$\\boldsymbol\\varepsilon\\mathbf n_i=\\varepsilon_i\\mathbf n_i$",
+        "正交方向 剪切为零 纯正向伸缩",
+        "principal strain"
+      ],
+      "explanation_markdown": "主应变是应变张量的特征值，表示某些正交方向上的纯拉伸或压缩。若 $\\boldsymbol\\varepsilon\\mathbf n_i=\\varepsilon_i\\mathbf n_i$，则 $\\varepsilon_i$ 是主应变，$\\mathbf n_i$ 是对应主方向。\n\n在这些方向上剪切分量为零，应变状态只剩三个正应变。主应变不依赖坐标轴选择，适合比较材料最大拉伸、压缩和断裂倾向。小应变理论直接对 $\\boldsymbol\\varepsilon$ 求特征值；有限变形中常先求右柯西格林张量的主伸长 $\\lambda_i$，再由 $E_i=(\\lambda_i^2-1)/2$ 得到格林主应变。\n\n主应变是在某些正交方向上剪切分量为零时的正应变。它来自应变张量本征值，常用于判断最大拉伸、压缩和材料破坏方向。脆性材料裂纹方向常与最大主拉应变或主应力有关。",
       "source_links": [
         {
           "label": "百度百科",
@@ -580,9 +868,21 @@
     {
       "chinese_name": "应变不变量",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "应变不变量是不随坐标旋转改变的标量组合，用来表达材料响应中真正与坐标选择无关的变形信息。各向同性材料尤其依赖它们。\n\n对右柯西格林张量可取 $I_1=\\operatorname{tr}\\mathbf C,\\;I_3=\\det\\mathbf C$，其中 $\\mathbf C$ 是右柯西格林张量。$I_3$ 与体积变化平方相关，$I_1$ 反映主伸长平方之和。超弹性能量常写成 $W(I_1,I_2,I_3)$，避免人为坐标方向进入本构。\n\n应变不变量中，应变量的选择取决于变形尺度和所在构形。小变形可用线性化张量，大转动或大伸长必须使用有限应变；同一物理伸长在参考描述和空间描述中会有不同但相容的数学表达。 使用时要先判断变形是否足够小；若转动或伸长不可忽略，线性化量会把几何效应漏掉。",
+      "complete_clues": [
+        "这是应变张量分析中的一组旋转不变量。",
+        "它关联各向同性本构、超弹性能量函数、体积改变和形状改变。",
+        "常见标量包括 $I_1=\\operatorname{tr}\\boldsymbol\\varepsilon,\\;I_3=\\det\\boldsymbol\\varepsilon$。",
+        "用这些标量写材料能量时，结果不依赖坐标轴怎样旋转。",
+        "它的英文译名是 strain invariant。"
+      ],
+      "fragmented_clues": [
+        "张量分析 旋转不变量",
+        "方向无关本构 超弹性能量 体积改变 形状改变",
+        "$I_1=\\operatorname{tr}\\boldsymbol\\varepsilon,\\;I_3=\\det\\boldsymbol\\varepsilon$",
+        "坐标旋转 标量能量 坐标无关",
+        "strain invariant"
+      ],
+      "explanation_markdown": "应变不变量是由应变张量构造、在坐标旋转下不变的标量，用来描述变形本身而不是坐标分量。对小应变张量 $\\boldsymbol\\varepsilon$，常用 $I_1=\\operatorname{tr}\\boldsymbol\\varepsilon$、$I_2$ 和 $I_3=\\det\\boldsymbol\\varepsilon$。\n\n这里 $I_1$ 与体积变化相关，偏应变的不变量则反映形状改变。有限变形超弹性中更常用 $\\mathbf C$ 的不变量，如 $I_1=\\operatorname{tr}\\mathbf C$。各向同性材料的能量可写成 $W=W(I_1,I_2,I_3)$，因为材料没有固定方向，响应只能依赖这些旋转不变的量。\n\n应变不变量不随坐标旋转改变，适合各向同性材料本构。用不变量写能量函数，可以避免结果依赖观察者怎样摆放坐标轴。这能显著减少材料参数数量，并保持坐标无关性。橡胶超弹性模型几乎都依赖这种写法。",
       "source_links": [
         {
           "label": "百度百科",
@@ -604,9 +904,21 @@
     {
       "chinese_name": "应力张量",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "应力张量把一点附近各种取向截面上的内力统一起来。给定截面法向后，它能算出该截面受到的牵引力，因此比单一“压力”更一般。\n\n柯西公式为 $\\mathbf t(\\mathbf n)=\\boldsymbol\\sigma\\mathbf n$，其中 $\\mathbf t$ 是法向为 $\\mathbf n$ 的截面牵引力，$\\boldsymbol\\sigma$ 是应力张量。张量的对角分量对应正应力，非对角分量对应剪应力。它进入动量平衡，并由本构关系与变形或变形率相连。\n\n应力张量中，应力量必须说明作用在真实面积还是参考面积上，以及与哪个应变或速度梯度功共轭。静水部分控制体积变化，偏应力控制形状改变；边界牵引和内部平衡都依赖这些区分。 同一受力状态在不同截面上会呈现不同牵引力，因此必须同时说明法向、面积构形和符号约定。",
+      "complete_clues": [
+        "这是连续体力学中描述内力分布的二阶张量。",
+        "它关联任意截面牵引力、法向作用、剪切作用和角动量平衡。",
+        "柯西形式满足 $\\mathbf t(\\mathbf n)=\\boldsymbol\\sigma\\mathbf n$。",
+        "它把所有取向切面上的面力统一成一个线性映射。",
+        "它的英文译名是 stress tensor。"
+      ],
+      "fragmented_clues": [
+        "连续体力学 二阶张量",
+        "截面牵引 法向作用 剪切作用 角动量平衡",
+        "$\\mathbf t(\\mathbf n)=\\boldsymbol\\sigma\\mathbf n$",
+        "任意取向切面 面力 线性映射",
+        "stress tensor"
+      ],
+      "explanation_markdown": "应力张量把连续体内部任意取向截面上的面力统一写成一个二阶张量。柯西应力满足 $\\mathbf t(\\mathbf n)=\\boldsymbol\\sigma\\mathbf n$，其中 $\\mathbf n$ 是当前截面的单位法向，$\\mathbf t$ 是单位面积牵引力。\n\n对角分量表示法向应力，非对角分量表示剪切应力。角动量守恒通常要求无偶应力介质中 $\\boldsymbol\\sigma=\\boldsymbol\\sigma^T$。应力不同于应变：应变描述几何改变，应力描述内部相互作用；二者之间必须通过本构关系连接，不能仅由运动学决定。\n\n应力张量把任意切面上的牵引力统一写成线性映射，核心对象是内力面密度。它和应变不同：应力说材料内部怎样传力，应变说几何怎样改变。因此给出应力时还必须说明它属于哪个构形和哪种应力度量。",
       "source_links": [
         {
           "label": "百度百科",
@@ -628,9 +940,21 @@
     {
       "chinese_name": "柯西应力",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "柯西应力定义在当前构形的真实面积上，直接对应实际切面上的内力密度。实验测量和空间形式平衡方程通常使用它。\n\n牵引力关系为 $\\mathbf t=\\boldsymbol\\sigma\\mathbf n$，其中 $\\boldsymbol\\sigma$ 是柯西应力，$\\mathbf n$ 是当前截面单位法向。经典连续体在无体偶矩时由角动量守恒得到 $\\boldsymbol\\sigma=\\boldsymbol\\sigma^T$。有限变形中，它可与皮奥拉应力通过形变梯度和 $J$ 相互转换。\n\n柯西应力中，应力量必须说明作用在真实面积还是参考面积上，以及与哪个应变或速度梯度功共轭。静水部分控制体积变化，偏应力控制形状改变；边界牵引和内部平衡都依赖这些区分。 同一受力状态在不同截面上会呈现不同牵引力，因此必须同时说明法向、面积构形和符号约定。",
+      "complete_clues": [
+        "这是定义在当前构形真实面积上的一种应力度量。",
+        "它关联实验牵引力、流体压力、接触载荷和动量方程。",
+        "局部动量平衡常写作 $\\nabla\\cdot\\boldsymbol\\sigma+\\rho\\mathbf b=\\rho\\mathbf a$。",
+        "它不把面积拉回基准状态，是最贴近当前截面实测面力的量。",
+        "它的英文译名是 Cauchy stress。"
+      ],
+      "fragmented_clues": [
+        "当前构形 应力度量",
+        "实验牵引 流体压力 接触载荷 动量方程",
+        "$\\nabla\\cdot\\boldsymbol\\sigma+\\rho\\mathbf b=\\rho\\mathbf a$",
+        "真实面积 当前截面 实测面力 非参考面积",
+        "Cauchy stress"
+      ],
+      "explanation_markdown": "柯西应力是在当前构形真实面积上定义的应力张量，直接对应实验中某一瞬间截面上的牵引力。它满足 $\\mathbf t=\\boldsymbol\\sigma\\mathbf n$，其中 $\\mathbf n$ 是当前截面法向。\n\n动量方程常写作 $\\nabla\\cdot\\boldsymbol\\sigma+\\rho\\mathbf b=\\rho\\mathbf a$。这里 $\\rho$ 是当前密度，$\\mathbf b$ 是体力，$\\mathbf a$ 是加速度。柯西应力适合描述流体压力、接触力和真实边界载荷；与第一、第二类皮奥拉应力相比，它不把力或面积拉回参考构形，因此在大变形有限元中需要通过 Piola 变换转换。\n\n柯西应力定义在当前构形的真实面积上，是最贴近实验牵引力的应力。有限变形中若要在参考面积上积分，需要转换成皮奥拉应力。实验报告中的拉压应力和壁面剪应力通常最接近这一量。",
       "source_links": [
         {
           "label": "百度百科",
@@ -652,9 +976,21 @@
     {
       "chinese_name": "第一类皮奥拉应力",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "第一类皮奥拉应力把当前牵引力换算到参考面积上，适合在参考构形上写平衡方程和有限元弱式。它连接当前力和参考几何。\n\n变换关系为 $\\mathbf P=J\\boldsymbol\\sigma\\mathbf F^{-T}$，其中 $\\mathbf P$ 是第一类皮奥拉应力，$J=\\det\\mathbf F$，$\\boldsymbol\\sigma$ 是柯西应力。由于一端属于当前力方向，一端属于参考面积法向，$\\mathbf P$ 一般不对称。它与形变梯度变化功共轭。\n\n第一类皮奥拉应力中，应力量必须说明作用在真实面积还是参考面积上，以及与哪个应变或速度梯度功共轭。静水部分控制体积变化，偏应力控制形状改变；边界牵引和内部平衡都依赖这些区分。 同一受力状态在不同截面上会呈现不同牵引力，因此必须同时说明法向、面积构形和符号约定。",
+      "complete_clues": [
+        "这是有限变形理论中连接当前力与参考面积的一种应力度量。",
+        "它关联参考域弱式、名义牵引力和形变梯度的功共轭关系。",
+        "它与当前真实应力的关系为 $\\mathbf P=J\\boldsymbol\\sigma\\mathbf F^{-T}$。",
+        "它的两个指标分属不同构形，因此一般不对称。",
+        "它的英文译名是 first Piola-Kirchhoff stress。"
+      ],
+      "fragmented_clues": [
+        "有限变形 应力度量",
+        "参考域弱式 名义牵引 形变梯度 功共轭",
+        "$\\mathbf P=J\\boldsymbol\\sigma\\mathbf F^{-T}$",
+        "两个指标 不同构形 一般不对称",
+        "first Piola-Kirchhoff stress"
+      ],
+      "explanation_markdown": "第一类皮奥拉应力把当前力与参考面积相联系，常记为 $\\mathbf P$。边界力可写作 $\\mathbf T_0=\\mathbf P\\mathbf N$，其中 $\\mathbf N$ 是参考构形边界法向，$\\mathbf T_0$ 是按参考面积计的名义牵引力。\n\n它与柯西应力的关系为 $\\mathbf P=J\\boldsymbol\\sigma\\mathbf F^{-T}$。这里 $J=\\det\\mathbf F$，$\\boldsymbol\\sigma$ 是当前构形中的柯西应力。$\\mathbf P$ 一般不对称，因为它的两个指标分属不同构形。它在有限元弱式中很方便，能直接与形变梯度的变分做功共轭。\n\n第一类皮奥拉应力把当前牵引力拉回到参考面积上，因此一般不对称。它常出现在参考构形的弱式和有限元推导中，不能直接当作真实当前应力。它与形变梯度能量导数直接相连，因而在有限变形有限元中很常见。",
       "source_links": [
         {
           "label": "百度百科",
@@ -676,9 +1012,21 @@
     {
       "chinese_name": "第二类皮奥拉应力",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "第二类皮奥拉应力完全拉回到参考构形中，是有限变形超弹性里常用的应力度量。它不直接等于真实截面上的力，却适合与参考应变配对。\n\n关系为 $\\mathbf S=\\mathbf F^{-1}\\mathbf P$，其中 $\\mathbf S$ 是第二类皮奥拉应力，$\\mathbf F$ 是形变梯度，$\\mathbf P$ 是第一类皮奥拉应力。它与格林拉格朗日应变 $\\mathbf E$ 功共轭。对超弹性材料，常由能量对 $\\mathbf E$ 的导数得到。\n\n第二类皮奥拉应力中，应力量必须说明作用在真实面积还是参考面积上，以及与哪个应变或速度梯度功共轭。静水部分控制体积变化，偏应力控制形状改变；边界牵引和内部平衡都依赖这些区分。 同一受力状态在不同截面上会呈现不同牵引力，因此必须同时说明法向、面积构形和符号约定。",
+      "complete_clues": [
+        "这是有限变形理论中完全拉回参考构形的一种应力度量。",
+        "它关联有限应变能共轭、超弹性能量函数和材料切线推导。",
+        "它与当前真实应力满足 $\\mathbf S=J\\mathbf F^{-1}\\boldsymbol\\sigma\\mathbf F^{-T}$。",
+        "它通常对称，适合和参考构形中的有限应变量配对写虚功。",
+        "它的英文译名是 second Piola-Kirchhoff stress。"
+      ],
+      "fragmented_clues": [
+        "有限变形 应力度量",
+        "参考构形 能量共轭 超弹性 材料切线",
+        "$\\mathbf S=J\\mathbf F^{-1}\\boldsymbol\\sigma\\mathbf F^{-T}$",
+        "通常对称 参考虚功 有限应变量",
+        "second Piola-Kirchhoff stress"
+      ],
+      "explanation_markdown": "第二类皮奥拉应力完全定义在参考构形上，常记为 $\\mathbf S$，与格林-拉格朗日应变能量共轭。虚功密度可写成 $\\delta W=\\mathbf S:\\delta\\mathbf E$，其中 $\\mathbf E=(\\mathbf C-\\mathbf I)/2$。\n\n它与第一类皮奥拉应力满足 $\\mathbf P=\\mathbf F\\mathbf S$，与柯西应力满足 $\\mathbf S=J\\mathbf F^{-1}\\boldsymbol\\sigma\\mathbf F^{-T}$。这里 $\\mathbf F$ 是形变梯度。$\\mathbf S$ 通常对称，适合从超弹性能量 $W(\\mathbf C)$ 求导得到，但它不是当前真实截面上可直接测得的应力。\n\n第二类皮奥拉应力完全定义在参考构形中，常与格林拉格朗日应变能共轭。它适合超弹性推导，但要通过变形梯度才能转成当前可测的柯西应力。它和第二类应变配对后，虚功可完全写在参考构形上。这使材料切线刚度推导更整齐。注意它不是当前面积上的实际牵引。",
       "source_links": [
         {
           "label": "百度百科",
@@ -700,9 +1048,21 @@
     {
       "chinese_name": "静水压力",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "静水压力是应力张量的球形部分，表示各方向相同的压缩作用。它改变体积，却不直接改变形状；纯静水应力没有剪切偏向。\n\n常取 $p=-\\frac13\\operatorname{tr}\\boldsymbol\\sigma$，其中 $p$ 是压力，$\\boldsymbol\\sigma$ 是柯西应力，负号对应压缩压力为正的约定。静止流体中 $\\boldsymbol\\sigma=-p\\mathbf I$。在塑性中，静水压力常与偏应力分开，因为金属屈服更主要由形状改变控制。\n\n静水压力中，应力量必须说明作用在真实面积还是参考面积上，以及与哪个应变或速度梯度功共轭。静水部分控制体积变化，偏应力控制形状改变；边界牵引和内部平衡都依赖这些区分。 同一受力状态在不同截面上会呈现不同牵引力，因此必须同时说明法向、面积构形和符号约定。",
+      "complete_clues": [
+        "这是连续介质应力分解中的一个标量量。",
+        "它关联各向同性压缩、流体静止状态、体积变化和压力约定。",
+        "柯西应力可分解为 $\\boldsymbol\\sigma=-p\\mathbf I+\\boldsymbol\\tau$。",
+        "它给所有方向相同的法向作用，不引入剪切牵引。",
+        "它的英文译名是 hydrostatic pressure。"
+      ],
+      "fragmented_clues": [
+        "应力分解 标量量",
+        "各向同性压缩 流体静止 体积变化 压力约定",
+        "$\\boldsymbol\\sigma=-p\\mathbf I+\\boldsymbol\\tau$",
+        "同向法向作用 无剪切牵引",
+        "hydrostatic pressure"
+      ],
+      "explanation_markdown": "静水压力是各向同性压缩或流体静止时的标量压力，只给出法向压缩，不引入剪切。按连续介质常用号约定，柯西应力可分解为 $\\boldsymbol\\sigma=-p\\mathbf I+\\boldsymbol\\tau$。\n\n这里 $p$ 是压力，$\\mathbf I$ 是单位张量，$\\boldsymbol\\tau$ 是偏应力或黏性应力。若只有静水压力，任意方向的牵引力都沿法向，大小相同。固体力学中也常取 $p=-\\operatorname{tr}\\boldsymbol\\sigma/3$；它控制体积变化，而屈服和塑性流动往往更敏感于偏应力。\n\n静水压力是应力张量的球形部分，表示各方向相同的压缩或拉伸。流体静止时只保留压力；固体中压力只是一部分，应力还可含偏应力和剪切效应。压力符号约定在固体和流体教材中可能相反，读式子时要留意。",
       "source_links": [
         {
           "label": "百度百科",
@@ -724,9 +1084,21 @@
     {
       "chinese_name": "偏应力",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "偏应力是应力张量去掉静水压力后的无迹部分，保留剪切和形状改变信息。对许多金属材料，塑性屈服主要由偏应力控制。\n\n分解为 $\\mathbf s=\\boldsymbol\\sigma-\\frac13\\operatorname{tr}(\\boldsymbol\\sigma)\\mathbf I$，其中 $\\mathbf s$ 是偏应力，$\\boldsymbol\\sigma$ 是柯西应力，$\\mathbf I$ 是单位张量。$\\operatorname{tr}\\mathbf s=0$ 表示体积平均压力已被移除。冯米塞斯应力和 J2 塑性理论都从这个张量构造。\n\n偏应力中，应力量必须说明作用在真实面积还是参考面积上，以及与哪个应变或速度梯度功共轭。静水部分控制体积变化，偏应力控制形状改变；边界牵引和内部平衡都依赖这些区分。 同一受力状态在不同截面上会呈现不同牵引力，因此必须同时说明法向、面积构形和符号约定。",
+      "complete_clues": [
+        "这是应力分解中去除平均部分后的张量量。",
+        "它关联形状改变、金属屈服、畸变能和剪切型负载。",
+        "定义为 $\\mathbf s=\\boldsymbol\\sigma-\\frac13(\\operatorname{tr}\\boldsymbol\\sigma)\\mathbf I$。",
+        "它的迹为零，均匀压力成分被剥离后才留下畸变相关部分。",
+        "它的英文译名是 deviatoric stress。"
+      ],
+      "fragmented_clues": [
+        "应力分解 张量量",
+        "形状改变 金属屈服 畸变能 剪切型负载",
+        "$\\mathbf s=\\boldsymbol\\sigma-\\frac13(\\operatorname{tr}\\boldsymbol\\sigma)\\mathbf I$",
+        "迹为零 均匀压力剥离 畸变相关",
+        "deviatoric stress"
+      ],
+      "explanation_markdown": "偏应力是应力张量去掉平均静水部分后的部分，表示改变形状的剪切型负载。定义为 $\\mathbf s=\\boldsymbol\\sigma-\\frac13(\\operatorname{tr}\\boldsymbol\\sigma)\\mathbf I$。\n\n这里 $\\boldsymbol\\sigma$ 是柯西应力，$\\operatorname{tr}\\boldsymbol\\sigma/3$ 是平均正应力。偏应力满足 $\\operatorname{tr}\\mathbf s=0$，因此不直接代表体积压缩。冯米塞斯屈服准则主要依赖 $\\mathbf s$ 的第二不变量，反映金属塑性更由剪切畸变触发；静水压力再大，若偏应力很小，理想金属也未必屈服。\n\n偏应力去掉平均压力后保留形状改变相关部分。金属塑性和冯米塞斯准则主要看偏应力，因为均匀静水压力通常不直接导致剪切屈服。它控制畸变能，与材料体积压缩部分分工明确。它与静水压力相加才还原完整应力状态。",
       "source_links": [
         {
           "label": "百度百科",
@@ -748,9 +1120,21 @@
     {
       "chinese_name": "主应力",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "主应力是在某些特殊截面上只出现法向牵引、没有剪切牵引时的正应力值。它把三维应力状态转换为三个正交方向上的纯拉压。\n\n特征值方程为 $\\boldsymbol\\sigma\\mathbf n_i=\\sigma_i\\mathbf n_i$，其中 $\\sigma_i$ 是主应力，$\\mathbf n_i$ 是主方向。最大主应力常用于脆性断裂判断，主应力差则与剪切强度相关。莫尔圆、屈服准则和地应力分析都围绕主应力展开。\n\n主应力中，应力量必须说明作用在真实面积还是参考面积上，以及与哪个应变或速度梯度功共轭。静水部分控制体积变化，偏应力控制形状改变；边界牵引和内部平衡都依赖这些区分。 同一受力状态在不同截面上会呈现不同牵引力，因此必须同时说明法向、面积构形和符号约定。",
+      "complete_clues": [
+        "这是应力张量分析中的一组本征标量。",
+        "它关联莫尔圆、脆性破坏、岩土强度和等效应力。",
+        "本征关系为 $\\boldsymbol\\sigma\\mathbf n_i=\\sigma_i\\mathbf n_i$。",
+        "对应截面上的剪切牵引为零，只剩法向作用。",
+        "它的英文译名是 principal stress。"
+      ],
+      "fragmented_clues": [
+        "张量分析 本征标量",
+        "莫尔圆 脆性破坏 岩土强度 等效应力",
+        "$\\boldsymbol\\sigma\\mathbf n_i=\\sigma_i\\mathbf n_i$",
+        "剪切牵引为零 法向作用",
+        "principal stress"
+      ],
+      "explanation_markdown": "主应力是应力张量的特征值，表示某些正交截面上剪切应力为零时的法向应力。定义式为 $\\boldsymbol\\sigma\\mathbf n_i=\\sigma_i\\mathbf n_i$，其中 $\\sigma_i$ 是主应力，$\\mathbf n_i$ 是主方向。\n\n主应力把同一应力状态换到最清楚的坐标系中。最大、最小主应力常用于脆性断裂、岩土破坏和接触压力分析；金属屈服则常用主应力组合成等效应力。它不同于主应变：主应变来自几何变形，主应力来自内力，二者方向只有在各向同性线弹性等特殊情形下才一定重合。\n\n主应力是应力张量的本征值，对应面上没有剪应力的方向。它们常用于莫尔圆、破坏准则和最大拉应力判断，比单个坐标分量更有物理意义。",
       "source_links": [
         {
           "label": "百度百科",
@@ -772,9 +1156,21 @@
     {
       "chinese_name": "冯米塞斯应力",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "冯米塞斯应力把三维偏应力状态压缩成一个等效标量，常用于判断延性金属是否进入屈服。它忽略纯静水压力对屈服的影响。\n\n公式为 $\\sigma_{\\rm v}=\\sqrt{\\frac32\\mathbf s:\\mathbf s}$，其中 $\\mathbf s$ 是偏应力，冒号表示双重缩并。单轴拉伸时 $\\sigma_{\\rm v}$ 等于轴向应力，便于与材料屈服强度比较。该准则对应畸变能达到临界值的思想。\n\n冯米塞斯应力中，应力量必须说明作用在真实面积还是参考面积上，以及与哪个应变或速度梯度功共轭。静水部分控制体积变化，偏应力控制形状改变；边界牵引和内部平衡都依赖这些区分。 同一受力状态在不同截面上会呈现不同牵引力，因此必须同时说明法向、面积构形和符号约定。",
+      "complete_clues": [
+        "这是延性金属屈服分析中的一种等效标量。",
+        "它关联偏应力、畸变能、有限元云图和单轴屈服强度比较。",
+        "常用定义为 $\\sigma_{\\rm v}=\\sqrt{\\frac32\\mathbf s:\\mathbf s}$。",
+        "它不是某个真实截面上的面力，而是屈服判据里的比较量。",
+        "它的英文译名是 von Mises stress。"
+      ],
+      "fragmented_clues": [
+        "延性金属 等效标量",
+        "偏应力 畸变能 有限元云图 单轴屈服",
+        "$\\sigma_{\\rm v}=\\sqrt{\\frac32\\mathbf s:\\mathbf s}$",
+        "非真实截面面力 屈服比较量",
+        "von Mises stress"
+      ],
+      "explanation_markdown": "冯米塞斯应力把三维偏应力状态折算成一个标量，用来判断延性金属是否达到屈服。它定义为 $\\sigma_{\\rm v}=\\sqrt{\\frac32\\mathbf s:\\mathbf s}$，其中 $\\mathbf s$ 是偏应力张量。\n\n用主应力表示时，$\\sigma_{\\rm v}=\\sqrt{[(\\sigma_1-\\sigma_2)^2+(\\sigma_2-\\sigma_3)^2+(\\sigma_3-\\sigma_1)^2]/2}$。它忽略纯静水压力，只度量畸变能相关的剪切强度。因此冯米塞斯应力不是某个真实截面上的应力，而是与单轴拉伸屈服强度比较的等效量。\n\n冯米塞斯应力把三维偏应力合成一个等效标量，用于判断延性金属屈服。它不代表真实某个面上的牵引，而是偏应变能密度的等效量。所以它常被称为屈服判据中的比较应力，而不是新的应力分量。它常用于有限元云图中的屈服风险显示。",
       "source_links": [
         {
           "label": "百度百科",
@@ -796,9 +1192,21 @@
     {
       "chinese_name": "平衡方程",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "平衡方程描述静力或准静力连续体中内力与外力的局部平衡。若惯性可忽略，应力场的散度必须抵消体力，边界上还要满足牵引或位移条件。\n\n空间形式为 $\\nabla\\cdot\\boldsymbol\\sigma+\\rho\\mathbf b=\\mathbf0$，其中 $\\boldsymbol\\sigma$ 是应力张量，$\\rho$ 是密度，$\\mathbf b$ 是单位质量体力。它本身不足以求解位移，还需本构关系和应变-位移关系。结构静力、地基应力和弹性边值问题都从这里出发。\n\n平衡方程中，应力量必须说明作用在真实面积还是参考面积上，以及与哪个应变或速度梯度功共轭。静水部分控制体积变化，偏应力控制形状改变；边界牵引和内部平衡都依赖这些区分。 同一受力状态在不同截面上会呈现不同牵引力，因此必须同时说明法向、面积构形和符号约定。",
+      "complete_clues": [
+        "这是连续体静力学中的一类控制方程。",
+        "它关联体力、边界牵引、位移约束、本构响应和边值问题。",
+        "静力局部形式常写作 $\\nabla\\cdot\\boldsymbol\\sigma+\\rho\\mathbf b=\\mathbf0$。",
+        "它表达局部力的相互平衡，但不能单独说明材料怎样产生应力。",
+        "它的英文译名是 equilibrium equation。"
+      ],
+      "fragmented_clues": [
+        "连续体静力学 控制方程",
+        "体力 边界牵引 位移约束 材料响应 边值问题",
+        "$\\nabla\\cdot\\boldsymbol\\sigma+\\rho\\mathbf b=\\mathbf0$",
+        "局部力平衡 非材料响应",
+        "equilibrium equation"
+      ],
+      "explanation_markdown": "平衡方程是在加速度可忽略时的动量守恒形式，表示任意材料小体元上的外力与内力相互平衡。静力学连续体常写成 $\\nabla\\cdot\\boldsymbol\\sigma+\\rho\\mathbf b=\\mathbf0$。\n\n这里 $\\boldsymbol\\sigma$ 是柯西应力，$\\rho\\mathbf b$ 是单位体积体力。配合边界条件 $\\boldsymbol\\sigma\\mathbf n=\\bar{\\mathbf t}$ 或 $\\mathbf u=\\bar{\\mathbf u}$，才能形成可求解问题。它不同于本构关系：平衡方程只表达力学守恒，不告诉材料在给定应变下产生多大应力。\n\n平衡方程表达局部力平衡或动量平衡，是边值问题的控制方程。它只说明力如何平衡，还需要本构关系和边界条件才能求出位移、应变和应力。在有限元中，它通过弱式转化为节点力平衡。缺少任一类条件，解通常不唯一或不闭合。",
       "source_links": [
         {
           "label": "百度百科",
@@ -820,9 +1228,21 @@
     {
       "chinese_name": "动量守恒",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "动量守恒把连续体的加速度与内外力联系起来，是牛顿第二定律的局域场论形式。它适用于固体动力学、流体运动和冲击问题。\n\n方程为 $\\rho\\mathbf a=\\nabla\\cdot\\boldsymbol\\sigma+\\rho\\mathbf b$，其中 $\\rho$ 是密度，$\\mathbf a$ 是加速度，$\\boldsymbol\\sigma$ 是应力张量，$\\mathbf b$ 是体力。左端是惯性，右端是表面内力和体力。静力平衡只是 $\\mathbf a=0$ 的特例，本构关系决定不同材料怎样产生应力。\n\n动量守恒中，应力量必须说明作用在真实面积还是参考面积上，以及与哪个应变或速度梯度功共轭。静水部分控制体积变化，偏应力控制形状改变；边界牵引和内部平衡都依赖这些区分。 同一受力状态在不同截面上会呈现不同牵引力，因此必须同时说明法向、面积构形和符号约定。",
+      "complete_clues": [
+        "这是连续体动力学中的一条守恒律。",
+        "它关联惯性项、应力散度、体力、弹性波和流体动量方程。",
+        "局部形式为 $\\rho D\\mathbf v/Dt=\\nabla\\cdot\\boldsymbol\\sigma+\\rho\\mathbf b$。",
+        "静力学可看成加速度近似为零后的特殊情形。",
+        "它的英文译名是 momentum conservation。"
+      ],
+      "fragmented_clues": [
+        "连续体动力学 守恒律",
+        "惯性项 应力散度 体力 弹性波 流体动量",
+        "$\\rho D\\mathbf v/Dt=\\nabla\\cdot\\boldsymbol\\sigma+\\rho\\mathbf b$",
+        "加速度为零 静力特殊情形",
+        "momentum conservation"
+      ],
+      "explanation_markdown": "动量守恒说明连续体内任意控制体的动量变化等于外力合力。局部形式为 $\\rho D\\mathbf v/Dt=\\nabla\\cdot\\boldsymbol\\sigma+\\rho\\mathbf b$。\n\n这里 $\\rho$ 是密度，$D\\mathbf v/Dt$ 是物质加速度，$\\boldsymbol\\sigma$ 是应力张量，$\\mathbf b$ 是单位质量体力。固体动力学、纳维-斯托克斯方程和弹性波方程都来自这个平衡。若左边惯性项取零，就得到静力平衡方程；若忽略黏性并用压力应力，则得到欧拉流体的动量方程。\n\n动量守恒在连续体中体现为应力散度、体力和惯性项之间的平衡。静力学可令加速度为零，动力学则保留惯性项，二者不是同一个近似。冲击、波传播和流固耦合问题都必须保留完整动量项。它也是纳维-斯托克斯方程的出发点。",
       "source_links": [
         {
           "label": "百度百科",
@@ -844,9 +1264,21 @@
     {
       "chinese_name": "角动量守恒",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "角动量守恒要求经典连续体内部相邻体元之间的力矩相互抵消。没有独立偶应力或体偶矩时，这一要求直接导致柯西应力张量对称。\n\n结论写作 $\\boldsymbol\\sigma=\\boldsymbol\\sigma^T$，其中 $\\boldsymbol\\sigma$ 是柯西应力，$T$ 表示转置。对称性把六个剪切相关分量配对，简化了本构和边值问题。若研究微极介质、晶格旋转或含偶应力材料，则角动量平衡需要额外自由度，应力也可不对称。\n\n应力量必须说明作用在真实面积还是参考面积上，以及与哪个应变或速度梯度功共轭。静水部分控制体积变化，偏应力控制形状改变；边界牵引和内部平衡都依赖这些区分。",
+      "complete_clues": [
+        "这是连续体动力学中的一条转动守恒律。",
+        "它关联应力对称性、偶应力材料、微极连续体和内部转动自由度。",
+        "经典非极性介质中常推出 $\\boldsymbol\\sigma=\\boldsymbol\\sigma^T$。",
+        "在普通弹性体和牛顿流体中，它把独立应力分量从九个减少到六个。",
+        "它的英文译名是 angular momentum conservation。"
+      ],
+      "fragmented_clues": [
+        "连续体动力学 转动守恒律",
+        "应力对称 偶应力 微极连续体 内部转动",
+        "$\\boldsymbol\\sigma=\\boldsymbol\\sigma^T$",
+        "九个分量 六个分量 经典介质",
+        "angular momentum conservation"
+      ],
+      "explanation_markdown": "角动量守恒要求连续体内部力矩也保持平衡。对普通非极性连续介质，它推出柯西应力张量对称，即 $\\boldsymbol\\sigma=\\boldsymbol\\sigma^T$。\n\n这个结论来自任意小体元的内力矩不能凭空产生净角动量。若材料含有微结构转动、偶应力或 Cosserat 连续体，自旋和力偶会成为独立变量，应力不一定对称。因而在经典弹性和牛顿流体中，应力张量通常只需六个独立分量；在极性介质中则要保留额外转动平衡方程。\n\n角动量守恒通常推出经典连续体中柯西应力张量对称。若材料含偶应力、微极结构或内部转动自由度，应力可不对称，需要更一般理论。",
       "source_links": [
         {
           "label": "百度百科",
@@ -868,9 +1300,21 @@
     {
       "chinese_name": "质量守恒",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "质量守恒说明同一物质体在运动和变形中总质量不变。体积若被压缩，密度必须相应增加；体积膨胀则密度降低。\n\n拉格朗日形式为 $\\rho J=\\rho_0$，其中 $\\rho$ 是当前密度，$\\rho_0$ 是参考密度，$J=\\det\\mathbf F$ 是体积变化比。这个关系把几何变形与密度演化相连。不可压缩材料通常取 $J=1$ 且密度恒定，流体欧拉描述则使用连续性方程。\n\n质量守恒在连续介质模型中要先说明哪些变量足以描述材料的历史和状态。线弹性只看当前小应变，超弹性看能量函数，黏弹性保留时间记忆；实验标定决定模型能用到哪里。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是连续体运动中的一条守恒律。",
+        "它关联密度、体积变化、通量、不可压缩约束和多相平衡。",
+        "物质形式常写成 $\\rho J=\\rho_0$。",
+        "它说明同一块材料的物质量不会凭空产生或消失，但不决定应力大小。",
+        "它的英文译名是 mass conservation。"
+      ],
+      "fragmented_clues": [
+        "连续体运动 守恒律",
+        "密度 体积变化 通量 不可压缩 多相平衡",
+        "$\\rho J=\\rho_0$",
+        "同一块材料 物质量 不产生 不消失",
+        "mass conservation"
+      ],
+      "explanation_markdown": "质量守恒说明同一块材料的质量不会因运动而改变。物质形式可写成 $\\rho J=\\rho_0$，其中 $\\rho_0$ 是参考密度，$\\rho$ 是当前密度，$J=\\det\\mathbf F$ 是体积比。\n\n空间局部形式为 $\\partial\\rho/\\partial t+\\nabla\\cdot(\\rho\\mathbf v)=0$。这里 $\\mathbf v$ 是速度场。不可压缩且密度恒定时，它化为 $\\nabla\\cdot\\mathbf v=0$。质量守恒只约束密度和体积变化，不决定应力大小；应力仍要由动量方程和本构关系给出。\n\n质量守恒说明物质不会在运动中凭空产生或消失。拉格朗日形式常写成密度与雅可比的乘积守恒，欧拉形式则表现为连续性方程。它还约束流体通量和固体体积变化，不能被本构方程替代。在多相介质中，每一相还可有自己的质量平衡。",
       "source_links": [
         {
           "label": "百度百科",
@@ -892,9 +1336,21 @@
     {
       "chinese_name": "连续性方程",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "连续介质中的连续性方程是质量守恒在固定空间点上的局域表达。一个控制体内密度变化，必须由质量通量穿过边界来解释。\n\n欧拉形式为 $\\partial_t\\rho+\\nabla\\cdot(\\rho\\mathbf v)=0$，其中 $\\rho$ 是密度，$\\mathbf v$ 是速度场。展开后得到 $D\\rho/Dt+\\rho\\nabla\\cdot\\mathbf v=0$。若密度沿物质点保持不变，则速度场必须满足 $\\nabla\\cdot\\mathbf v=0$，这就是不可压缩约束。\n\n连续性方程在连续介质模型中要先说明哪些变量足以描述材料的历史和状态。线弹性只看当前小应变，超弹性看能量函数，黏弹性保留时间记忆；实验标定决定模型能用到哪里。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是连续体场论中表达局部质量平衡的一类微分方程。",
+        "它关联密度输运、可压缩气体、不可压缩约束和入口出口通量。",
+        "空间形式为 $\\partial\\rho/\\partial t+\\nabla\\cdot(\\rho\\mathbf v)=0$。",
+        "密度恒定时，它退化为速度散度为零的约束。",
+        "它的英文译名是 continuity equation。"
+      ],
+      "fragmented_clues": [
+        "场论 局部质量平衡 微分方程",
+        "密度输运 可压缩气体 不可压缩 入口出口",
+        "$\\partial\\rho/\\partial t+\\nabla\\cdot(\\rho\\mathbf v)=0$",
+        "密度恒定 速度散度为零",
+        "continuity equation"
+      ],
+      "explanation_markdown": "连续性方程是质量守恒的局部表达，描述密度如何随流动变化。空间形式为 $\\partial\\rho/\\partial t+\\nabla\\cdot(\\rho\\mathbf v)=0$，其中 $\\rho$ 是密度，$\\mathbf v$ 是速度场。\n\n展开后得到 $D\\rho/Dt+\\rho\\nabla\\cdot\\mathbf v=0$。第一项是随体密度变化，第二项是体积膨胀或压缩带来的稀释效应。对密度恒定的不可压缩流，连续性方程简化为 $\\nabla\\cdot\\mathbf v=0$；对可压缩流，它必须与状态方程、能量方程和动量方程一起使用。\n\n连续性方程是质量守恒在空间场中的微分形式。不可压缩时可化为速度散度为零，但可压缩流必须保留密度随时间和空间的变化。它与动量方程联立后，才形成流体或连续体动力学的闭合骨架。自由面和入口出口条件会改变它的积分解释。",
       "source_links": [
         {
           "label": "百度百科",
@@ -916,9 +1372,21 @@
     {
       "chinese_name": "本构关系",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "本构关系告诉守恒律中的应力、热流或内变量如何由变形、变形率、温度和历史决定。没有本构关系，平衡方程只给出普遍约束，不能区分钢、橡胶或水。\n\n线弹性例子为 $\\boldsymbol\\sigma=\\mathbb C:\\boldsymbol\\varepsilon$，其中 $\\boldsymbol\\sigma$ 是应力，$\\mathbb C$ 是四阶弹性张量，$\\boldsymbol\\varepsilon$ 是小应变。塑性需要屈服面和硬化变量，黏弹性需要记忆核，超弹性则从能量函数导出应力。\n\n本构关系在连续介质模型中要先说明哪些变量足以描述材料的历史和状态。线弹性只看当前小应变，超弹性看能量函数，黏弹性保留时间记忆；实验标定决定模型能用到哪里。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是材料建模中连接力学响应的一类关系。",
+        "它关联应力、应变、应变率、温度和加载历史变量。",
+        "线性弹性例子可写成 $\\boldsymbol\\sigma=\\mathsf C:\\boldsymbol\\varepsilon$。",
+        "守恒律普遍适用，而它会随钢、橡胶、水或岩石等材料而变。",
+        "它的英文译名是 constitutive relation。"
+      ],
+      "fragmented_clues": [
+        "材料建模 响应关系",
+        "应力 应变 应变率 温度 加载历史",
+        "$\\boldsymbol\\sigma=\\mathsf C:\\boldsymbol\\varepsilon$",
+        "守恒律普适 材料差异 钢 橡胶 水 岩石",
+        "constitutive relation"
+      ],
+      "explanation_markdown": "本构关系规定材料在给定变形、变形速率、温度或历史变量下产生怎样的应力。守恒方程只给出力学平衡，真正区分钢、橡胶、水和岩石的是本构关系。\n\n线弹性可写成 $\\boldsymbol\\sigma=\\mathsf C:\\boldsymbol\\varepsilon$，其中 $\\mathsf C$ 是弹性刚度张量，$\\boldsymbol\\varepsilon$ 是小应变张量。牛顿流体则写成 $\\boldsymbol\\tau=2\\mu\\mathbf D$，把黏性应力同应变率相连。材料参数如 $E,\\nu,\\mu$ 只是本构关系中的系数；若加载路径、速率或温度改变，模型形式本身可能也要改变。\n\n本构关系把应力与应变、应变率、温度或内部变量联系起来，反映材料特性。它不同于守恒律：守恒律普适，本构关系随材料和实验条件改变。同一守恒方程配上不同本构，就会得到弹性、黏性或塑性模型。",
       "source_links": [
         {
           "label": "百度百科",
@@ -940,9 +1408,21 @@
     {
       "chinese_name": "线弹性",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "线弹性假设应力与小应变成线性关系，并且卸载后变形完全恢复。它适用于小变形、小应力和材料响应近似可逆的范围。\n\n张量形式为 $\\boldsymbol\\sigma=\\mathbb C:\\boldsymbol\\varepsilon$，其中 $\\mathbb C$ 是弹性刚度张量。各向同性材料只需两个独立常数，例如杨氏模量和泊松比。线性关系使边值问题满足叠加原理，是梁、板、结构振动和有限元小变形分析的基准模型。\n\n线弹性在连续介质模型中要先说明哪些变量足以描述材料的历史和状态。线弹性只看当前小应变，超弹性看能量函数，黏弹性保留时间记忆；实验标定决定模型能用到哪里。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是固体本构理论中的一种可恢复近似。",
+        "它关联小变形、未屈服材料、弹性常数和线性边值问题。",
+        "一般形式可写作 $\\boldsymbol\\sigma=\\mathsf C:\\boldsymbol\\varepsilon$。",
+        "它假定应力与小应变量成正比，卸载路径与加载路径重合。",
+        "它的英文译名是 linear elasticity。"
+      ],
+      "fragmented_clues": [
+        "固体本构 可恢复近似",
+        "小变形 未屈服 弹性常数 线性边值",
+        "$\\boldsymbol\\sigma=\\mathsf C:\\boldsymbol\\varepsilon$",
+        "应力 小应变量 正比 卸载重合",
+        "linear elasticity"
+      ],
+      "explanation_markdown": "线弹性假定应力与小应变成线性关系，卸载后完全恢复。一般形式为 $\\boldsymbol\\sigma=\\mathsf C:\\boldsymbol\\varepsilon$，其中 $\\mathsf C$ 是四阶刚度张量，$\\boldsymbol\\varepsilon$ 是小应变张量。\n\n各向同性情形可写成 $\\boldsymbol\\sigma=2G\\boldsymbol\\varepsilon+\\lambda\\operatorname{tr}(\\boldsymbol\\varepsilon)\\mathbf I$。这里 $G$ 是剪切模量，$\\lambda$ 是拉梅常数。线弹性适合小变形、低于屈服且无明显黏滞的材料；它不是“所有弹性”的同义词，橡胶大变形通常需要超弹性模型。\n\n线弹性假设应力与小应变成线性关系，并且卸载后完全恢复。它适合小变形和小应力范围；一旦出现屈服、损伤或大变形，就要换成本构模型。在卸载路径与加载路径重合时，线弹性近似才有清楚意义。因此它常是复杂材料模型的局部切线近似。",
       "source_links": [
         {
           "label": "百度百科",
@@ -964,9 +1444,21 @@
     {
       "chinese_name": "胡克定律",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "胡克定律给出弹性小变形中应力与应变的线性比例关系。它最初来自弹簧伸长与力的关系，在连续体中扩展为材料本构。\n\n单轴形式为 $\\sigma=E\\varepsilon$，其中 $\\sigma$ 是正应力，$\\varepsilon$ 是轴向应变，$E$ 是杨氏模量。三维各向同性材料还需要泊松效应和剪切响应。胡克定律只适用于弹性范围；超过屈服、发生损伤或大变形后，应力不再由当前小应变线性决定。\n\n胡克定律在连续介质模型中要先说明哪些变量足以描述材料的历史和状态。线弹性只看当前小应变，超弹性看能量函数，黏弹性保留时间记忆；实验标定决定模型能用到哪里。",
+      "complete_clues": [
+        "这是弹性理论中最基础的一种比例定律。",
+        "它关联单轴拉伸、小变形弹性段、弹簧近似和材料模量测量。",
+        "一维形式为 $\\sigma=E\\varepsilon$。",
+        "一维弹簧式只是特例，三维方向无关材料还需要横向收缩参数。",
+        "它的英文译名是 Hooke's law。"
+      ],
+      "fragmented_clues": [
+        "弹性理论 比例定律",
+        "单轴拉伸 小变形 弹簧近似 模量测量",
+        "$\\sigma=E\\varepsilon$",
+        "一维特例 三维材料 横向收缩参数",
+        "Hooke's law"
+      ],
+      "explanation_markdown": "胡克定律是线弹性的最简单表达，说明弹性范围内力学响应与变形成正比。一维拉伸中写成 $\\sigma=E\\varepsilon$，其中 $\\sigma$ 是正应力，$\\varepsilon$ 是正应变，$E$ 是杨氏模量。\n\n三维各向同性材料还要考虑横向收缩，完整关系可由 $E$ 和泊松比 $\\nu$ 写出。胡克定律强调比例关系和可恢复性，但只在小应变、未屈服、加载速率影响不强的范围内成立。超过弹性极限后，同一应变对应的应力会依赖塑性历史或黏弹性时间效应。\n\n胡克定律是线弹性中最简单的本构形式。三维各向同性材料需要两个独立弹性常数；一维弹簧公式只是它在单轴小变形下的特例。",
       "source_links": [
         {
           "label": "百度百科",
@@ -988,9 +1480,21 @@
     {
       "chinese_name": "各向同性材料",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "各向同性材料的力学性质不随方向改变，旋转试样或坐标轴不会改变本构响应。均匀多晶金属、玻璃和橡胶常在宏观上近似各向同性。\n\n线弹性本构为 $\\boldsymbol\\sigma=\\lambda\\operatorname{tr}(\\boldsymbol\\varepsilon)\\mathbf I+2\\mu\\boldsymbol\\varepsilon$，其中 $\\lambda,\\mu$ 是拉梅常数。这个形式只需两个独立参数，把体积变形和剪切变形分开。纤维增强材料或单晶材料通常不能使用这种简化。\n\n各向同性材料在连续介质模型中要先说明哪些变量足以描述材料的历史和状态。线弹性只看当前小应变，超弹性看能量函数，黏弹性保留时间记忆；实验标定决定模型能用到哪里。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是材料本构分类中的一种方向性假设。",
+        "它关联旋转坐标不变响应、少量弹性常数和多晶材料近似。",
+        "线性弹性中可写作 $\\boldsymbol\\sigma=2G\\boldsymbol\\varepsilon+\\lambda\\operatorname{tr}(\\boldsymbol\\varepsilon)\\mathbf I$。",
+        "旋转试样不会改变力学响应，但参数仍然可以随位置变化。",
+        "它的英文译名是 isotropic material。"
+      ],
+      "fragmented_clues": [
+        "材料本构 方向性假设",
+        "旋转不变 少量常数 多晶近似",
+        "$\\boldsymbol\\sigma=2G\\boldsymbol\\varepsilon+\\lambda\\operatorname{tr}(\\boldsymbol\\varepsilon)\\mathbf I$",
+        "试样旋转 响应不变 参数空间变化",
+        "isotropic material"
+      ],
+      "explanation_markdown": "各向同性材料的力学性质与方向无关，旋转试样或坐标系不会改变本构响应。在线弹性中，这使刚度张量只需两个独立常数，如杨氏模量 $E$ 和泊松比 $\\nu$。\n\n本构式可写为 $\\boldsymbol\\sigma=2G\\boldsymbol\\varepsilon+\\lambda\\operatorname{tr}(\\boldsymbol\\varepsilon)\\mathbf I$。这里 $G$ 和 $\\lambda$ 是拉梅常数。各向同性并不等于均匀：材料参数可随位置变，但每一点若没有首选方向，局部仍可各向同性。橡胶、玻璃和许多多晶金属常近似这样处理。\n\n各向同性材料的性质与方向无关，旋转试样不会改变本构响应。它可用少数材料参数描述；若纤维、晶体或层合结构有方向性，就不能再用各向同性近似。这种假设能把四阶弹性张量压缩为两个独立常数。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1012,9 +1516,21 @@
     {
       "chinese_name": "各向异性材料",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "各向异性材料在不同方向上的刚度、强度或热膨胀不同，内部存在纤维、晶格、层合或加工纹理等优先方向。材料方向必须随模型一起指定。\n\n小变形线弹性可写作 $\\sigma_{ij}=C_{ijkl}\\varepsilon_{kl}$，其中 $C_{ijkl}$ 是四阶刚度张量，重复指标表示求和。各向异性下应力主方向未必与应变主方向一致，材料常数也远多于各向同性。复合材料层板、木材和单晶都需要这种描述。\n\n各向异性材料在连续介质模型中要先说明哪些变量足以描述材料的历史和状态。线弹性只看当前小应变，超弹性看能量函数，黏弹性保留时间记忆；实验标定决定模型能用到哪里。",
+      "complete_clues": [
+        "这是材料本构分类中的一种方向相关情形。",
+        "它关联木材、单晶、纤维复合材料、层合板和材料轴方向。",
+        "线性弹性仍可写作 $\\boldsymbol\\sigma=\\mathsf C:\\boldsymbol\\varepsilon$。",
+        "刚度张量不能压缩成两个常数，主应力和主应变也未必同向。",
+        "它的英文译名是 anisotropic material。"
+      ],
+      "fragmented_clues": [
+        "材料本构 方向相关",
+        "木材 单晶 纤维复合 层合板 材料轴",
+        "$\\boldsymbol\\sigma=\\mathsf C:\\boldsymbol\\varepsilon$",
+        "刚度张量 多常数 主方向不重合",
+        "anisotropic material"
+      ],
+      "explanation_markdown": "各向异性材料的响应依赖方向，木材、层合复合材料、单晶和纤维增强材料都属于常见例子。在线弹性中仍可写 $\\boldsymbol\\sigma=\\mathsf C:\\boldsymbol\\varepsilon$，但刚度张量 $\\mathsf C$ 不能由两个常数概括。\n\n最一般线弹性各向异性材料有 21 个独立弹性常数；正交各向异性因有三个材料对称轴而减少到 9 个。方向性会使主应力与主应变不一定重合，也会让波速随传播方向变化。建模时必须把材料轴和结构坐标分清，否则同一载荷下的刚度和强度预测会明显偏差。\n\n各向异性材料的刚度、强度或热膨胀随方向改变。晶体、复合材料和木材都常见这种性质；建模时材料坐标轴和结构坐标轴的关系会直接影响应力预测。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1036,9 +1552,21 @@
     {
       "chinese_name": "杨氏模量",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "杨氏模量衡量材料在单轴拉伸或压缩下抵抗轴向变形的能力。数值越大，同样应力引起的应变越小，材料表现得越“硬”。\n\n在线弹性单轴状态下 $E=\\sigma/\\varepsilon$，其中 $E$ 是杨氏模量，$\\sigma$ 是轴向正应力，$\\varepsilon$ 是轴向应变。它不是强度，不能说明何时断裂或屈服。三维各向同性弹性中，杨氏模量需与泊松比共同决定完整本构。\n\n杨氏模量在连续介质模型中要先说明哪些变量足以描述材料的历史和状态。线弹性只看当前小应变，超弹性看能量函数，黏弹性保留时间记忆；实验标定决定模型能用到哪里。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是线性弹性材料中的一个轴向刚度参数。",
+        "它关联单轴拉伸试验、应力应变曲线斜率和拉压变形。",
+        "在线性段中定义为 $E=\\sigma/\\varepsilon$。",
+        "它衡量抵抗长度改变的能力，不单独决定剪切或体积响应。",
+        "它的英文译名是 Young's modulus。"
+      ],
+      "fragmented_clues": [
+        "线性弹性 轴向刚度参数",
+        "单轴拉伸 曲线斜率 拉压变形",
+        "$E=\\sigma/\\varepsilon$",
+        "长度改变 抵抗能力 非剪切 非体积",
+        "Young's modulus"
+      ],
+      "explanation_markdown": "杨氏模量衡量材料在单轴拉伸或压缩下抵抗长度改变的能力。在线弹性范围内定义为 $E=\\sigma/\\varepsilon$，其中 $\\sigma$ 是轴向应力，$\\varepsilon$ 是轴向应变。\n\n$E$ 越大，同样应力下伸长越小。它描述的是轴向刚度，不直接描述剪切或体积压缩；这些分别由剪切模量 $G$ 和体积模量 $K$ 表征。对各向同性线弹性材料，$E,\\nu,G,K$ 之间有固定关系，例如 $G=E/[2(1+\\nu)]$。超过弹性范围后，切线模量或割线模量才更合适。\n\n杨氏模量衡量单轴拉伸下应力与轴向应变的比例。它主要反映拉压刚度，不单独决定剪切或体积响应；三维弹性中还需泊松比等参数配合。单轴试验斜率只有在小应变线性段才可直接解释为杨氏模量。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1060,9 +1588,21 @@
     {
       "chinese_name": "泊松比",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "泊松比刻画材料轴向拉伸时横向收缩的程度，反映拉伸和横向变形之间的耦合。普通材料拉长会变细，因此泊松比多为正。\n\n定义为 $\\nu=-\\varepsilon_\\perp/\\varepsilon_\\parallel$，其中 $\\varepsilon_\\parallel$ 是轴向应变，$\\varepsilon_\\perp$ 是横向应变。负号使拉伸变细时 $\\nu>0$。接近 $0.5$ 的材料近似不可压缩；负泊松比材料则会拉伸变宽，常称为拉胀材料。\n\n泊松比在连续介质模型中要先说明哪些变量足以描述材料的历史和状态。线弹性只看当前小应变，超弹性看能量函数，黏弹性保留时间记忆；实验标定决定模型能用到哪里。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是线性弹性材料中的一个横向变形参数。",
+        "它关联单轴加载、横向收缩、近不可压缩行为和负值结构材料。",
+        "定义为 $\\nu=-\\varepsilon_{\\perp}/\\varepsilon_{\\parallel}$。",
+        "接近 $0.5$ 表示体积难以改变，负值表示拉伸时横向变宽。",
+        "它的英文译名是 Poisson's ratio。"
+      ],
+      "fragmented_clues": [
+        "线性弹性 横向变形参数",
+        "单轴加载 横向收缩 近不可压缩 负值材料",
+        "$\\nu=-\\varepsilon_{\\perp}/\\varepsilon_{\\parallel}$",
+        "$0.5$ 体积难变 负值 横向变宽",
+        "Poisson's ratio"
+      ],
+      "explanation_markdown": "泊松比描述单轴拉伸时横向收缩与轴向伸长的比例，定义为 $\\nu=-\\varepsilon_{\\perp}/\\varepsilon_{\\parallel}$。这里 $\\varepsilon_{\\parallel}$ 是加载方向应变，$\\varepsilon_{\\perp}$ 是垂直方向应变。\n\n普通材料的 $\\nu$ 多在 0 到 0.5 之间，接近 0.5 表示近似不可压缩；负泊松比材料拉伸时反而横向变宽。泊松比不是独立于其他模量的任意数，对各向同性线弹性材料有 $K=E/[3(1-2\\nu)]$。当 $\\nu\\to0.5$ 时，体积模量趋大，数值计算容易出现不可压缩锁死。\n\n泊松比描述轴向拉伸时横向收缩的比例，是形变耦合参数。接近二分之一表示近似不可压缩；负泊松比材料则会横向膨胀，不能用普通直觉判断。它还影响平面应力和平面应变条件下的等效刚度。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1084,9 +1624,21 @@
     {
       "chinese_name": "体积模量",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "体积模量衡量材料抵抗均匀压缩的能力，与形状改变无关，主要控制体积变化。液体和近不可压缩橡胶通常具有很大的体积模量。\n\n可写作 $p=K\\varepsilon_v$，其中 $p$ 是压缩压力，$K$ 是体积模量，$\\varepsilon_v$ 是体积应变；不同符号约定可能带负号。$K$ 越大，同样压力下体积变化越小。声速、可压缩流和岩土固结都与体积模量密切相关。\n\n体积模量在连续介质模型中要先说明哪些变量足以描述材料的历史和状态。线弹性只看当前小应变，超弹性看能量函数，黏弹性保留时间记忆；实验标定决定模型能用到哪里。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是材料弹性中的一个抗压缩参数。",
+        "它关联静水压力、声波传播、冲击压缩和近不可压缩材料。",
+        "常用定义为 $K=-p/\\varepsilon_v$。",
+        "它衡量均匀体积改变的难易，不等同于单轴拉伸刚度。",
+        "它的英文译名是 bulk modulus。"
+      ],
+      "fragmented_clues": [
+        "材料弹性 抗压缩参数",
+        "静水压力 声波 冲击压缩 近不可压缩",
+        "$K=-p/\\varepsilon_v$",
+        "均匀体积改变 非单轴拉伸刚度",
+        "bulk modulus"
+      ],
+      "explanation_markdown": "体积模量衡量材料抵抗均匀压缩的能力，定义为 $K=-p/\\varepsilon_v$。这里 $p$ 是静水压力增量，$\\varepsilon_v=\\Delta V/V$ 是体积应变，负号来自压力取压缩为正的约定。\n\n$K$ 大说明材料体积难以改变，水和橡胶都常表现为近似不可压缩。对各向同性线弹性材料，$K=E/[3(1-2\\nu)]$。它与杨氏模量不同：杨氏模量看单轴伸长刚度，体积模量看三向均匀压缩。孔隙弹性、声速和冲击压缩问题都会直接用到 $K$。\n\n体积模量衡量材料抵抗均匀压缩的能力，与静水压力和体积应变相连。它不同于杨氏模量，后者看单轴拉伸；流体声速也常由体积模量和密度决定。近不可压缩材料会给出很大的体积模量，数值上也更难处理。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1108,9 +1660,21 @@
     {
       "chinese_name": "剪切模量",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "剪切模量衡量材料抵抗形状改变的能力，关注层与层之间相对滑移造成的剪切变形。它不直接描述体积压缩。\n\n简单剪切中 $G=\\tau/\\gamma$，其中 $G$ 是剪切模量，$\\tau$ 是剪切应力，$\\gamma$ 是工程剪切应变。各向同性线弹性里 $G$ 与 $E,\\nu$ 可相互换算。橡胶的体积模量可很大但剪切模量较小，因此容易扭曲却不易压缩。\n\n剪切模量在连续介质模型中要先说明哪些变量足以描述材料的历史和状态。线弹性只看当前小应变，超弹性看能量函数，黏弹性保留时间记忆；实验标定决定模型能用到哪里。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是材料弹性中的一个抗形状改变参数。",
+        "它关联扭转试验、横波速度、偏应力响应和橡胶软剪切。",
+        "小剪切中可写作 $G=\\tau/\\gamma$。",
+        "它控制剪切形变刚度，与均匀压缩刚度分工不同。",
+        "它的英文译名是 shear modulus。"
+      ],
+      "fragmented_clues": [
+        "材料弹性 抗形状改变参数",
+        "扭转 横波速度 偏应力 橡胶软剪切",
+        "$G=\\tau/\\gamma$",
+        "剪切形变刚度 均匀压缩分离",
+        "shear modulus"
+      ],
+      "explanation_markdown": "剪切模量衡量材料抵抗形状改变的能力。在线弹性小剪切中，$G=\\tau/\\gamma$，其中 $\\tau$ 是剪切应力，$\\gamma$ 是工程剪切应变。\n\n各向同性材料满足 $G=E/[2(1+\\nu)]$，说明剪切刚度与杨氏模量和泊松比相关。剪切模量控制扭转、横波速度和偏应力响应；体积模量则控制均匀压缩，两者不可互相替代。对流体而言，静态剪切模量为零，但动力黏度使它在剪切速率下产生黏性应力。\n\n剪切模量衡量材料抵抗形状改变的能力，与偏应力和剪切应变相连。橡胶可体积近似不可压缩但剪切模量很低，说明体积刚度和剪切刚度要分开看。扭转试验和剪切波速常可用来反推它。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1132,9 +1696,21 @@
     {
       "chinese_name": "拉梅常数",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "拉梅常数是各向同性线弹性张量表达中最方便的两个参数，分别控制体积响应和剪切响应的组合。它们常用于三维弹性方程和弹性波。\n\n本构写作 $\\boldsymbol\\sigma=\\lambda\\operatorname{tr}(\\boldsymbol\\varepsilon)\\mathbf I+2\\mu\\boldsymbol\\varepsilon$，其中 $\\lambda$ 与体积变形耦合，$\\mu$ 等于剪切模量。它们可由杨氏模量和泊松比换算。拉梅常数进入纵波、横波速度公式，因此在地震学和超声中很常见。\n\n拉梅常数在连续介质模型中要先说明哪些变量足以描述材料的历史和状态。线弹性只看当前小应变，超弹性看能量函数，黏弹性保留时间记忆；实验标定决定模型能用到哪里。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是各向同性线性弹性中的一组材料参数。",
+        "它关联体积剪切分解、纵横波速度和有限元刚度矩阵组装。",
+        "本构式常写为 $\\boldsymbol\\sigma=2\\mu\\boldsymbol\\varepsilon+\\lambda\\operatorname{tr}(\\boldsymbol\\varepsilon)\\mathbf I$。",
+        "其中一个参数就是抗剪参数，另一个更多体现体积变形耦合。",
+        "它的英文译名是 Lame constants。"
+      ],
+      "fragmented_clues": [
+        "各向同性线性弹性 材料参数",
+        "体积剪切分解 纵横波速度 刚度矩阵",
+        "$\\boldsymbol\\sigma=2\\mu\\boldsymbol\\varepsilon+\\lambda\\operatorname{tr}(\\boldsymbol\\varepsilon)\\mathbf I$",
+        "抗剪参数 体积耦合 参数换算",
+        "Lame constants"
+      ],
+      "explanation_markdown": "拉梅常数 $\\lambda$ 和 $\\mu$ 是各向同性线弹性中常用的两个参数，其中 $\\mu$ 就是剪切模量 $G$。本构关系写成 $\\boldsymbol\\sigma=2\\mu\\boldsymbol\\varepsilon+\\lambda\\operatorname{tr}(\\boldsymbol\\varepsilon)\\mathbf I$。\n\n这里 $\\operatorname{tr}\\boldsymbol\\varepsilon$ 表示体积应变近似，$\\mathbf I$ 是单位张量。$\\mu$ 控制剪切响应，$\\lambda$ 与体积压缩耦合，二者可由 $E$ 和 $\\nu$ 换算。波动问题中纵波速度含 $\\lambda+2\\mu$，横波速度只含 $\\mu$，这正体现了体积变形和剪切变形的区别。\n\n拉梅常数是各向同性线弹性中常用的两个参数，便于把应力分成体积和剪切部分。它们可与杨氏模量、泊松比互换，但物理含义并不完全相同。其中剪切模量就是第二拉梅常数，第一拉梅常数更多体现体积耦合。有限元程序内部也常用这组参数组装刚度。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1156,9 +1732,21 @@
     {
       "chinese_name": "弹性能密度",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "弹性能密度表示单位体积中因可恢复变形而储存的机械能。用能量描述材料响应，能自然连接稳定性、变分原理和有限元弱式。\n\n线弹性中 $w=\\frac12\\boldsymbol\\sigma:\\boldsymbol\\varepsilon$，其中 $w$ 是弹性能密度，$\\boldsymbol\\sigma$ 是应力，$\\boldsymbol\\varepsilon$ 是小应变，冒号表示双重缩并。它是应变的二次型，卸载时可释放。超弹性材料则以有限变形能量函数 $W(\\mathbf F)$ 作为本构起点。\n\n弹性能密度在连续介质模型中要先说明哪些变量足以描述材料的历史和状态。线弹性只看当前小应变，超弹性看能量函数，黏弹性保留时间记忆；实验标定决定模型能用到哪里。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是变分力学和材料本构中的一个能量标量。",
+        "它关联可恢复储能、有限元弱式、稳定性和超弹性势函数。",
+        "小应变线性弹性中常写为 $W=\\frac12\\boldsymbol\\sigma:\\boldsymbol\\varepsilon$。",
+        "对它作变分或求导可得到应力响应和平衡方程。",
+        "它的英文译名是 elastic energy density。"
+      ],
+      "fragmented_clues": [
+        "变分力学 能量标量",
+        "可恢复储能 弱式 稳定性 超弹性势",
+        "$W=\\frac12\\boldsymbol\\sigma:\\boldsymbol\\varepsilon$",
+        "变分 求导 应力响应 平衡方程",
+        "elastic energy density"
+      ],
+      "explanation_markdown": "弹性能密度是单位体积材料储存的可恢复弹性能量。小应变线弹性中，$W=\\frac12\\boldsymbol\\sigma:\\boldsymbol\\varepsilon$，也可写成 $W=\\frac12\\boldsymbol\\varepsilon:\\mathsf C:\\boldsymbol\\varepsilon$。\n\n这里冒号表示张量双重收缩，$\\mathsf C$ 是刚度张量。弹性能密度对位移求变分可得到应力和平衡方程，因此它是能量法和有限元弱式的核心量。超弹性材料也用能量函数定义应力，但 $W$ 通常依赖 $\\mathbf F$ 或 $\\mathbf C$，不再只是小应变的二次函数。\n\n弹性能密度表示单位体积储存的可恢复变形能。线弹性中它是应变的二次函数；超弹性中则常把它作为本构势函数，对应力求导。它的正定性通常对应材料小扰动下的稳定性。能量法和变分法都直接使用这一标量。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1180,9 +1768,21 @@
     {
       "chinese_name": "超弹性",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "超弹性用应变能密度函数描述可恢复的大变形弹性，适合橡胶、弹性凝胶和部分生物软组织。当前应力只由当前变形决定，不含加载历史。\n\n常用关系为 $\\mathbf P=\\partial W/\\partial\\mathbf F$，其中 $W$ 是单位参考体积能量，$\\mathbf F$ 是形变梯度，$\\mathbf P$ 是第一类皮奥拉应力。客观性要求 $W$ 不随叠加刚体旋转改变。与黏弹性或塑性不同，超弹性不描述速率耗散或永久变形。\n\n超弹性在连续介质模型中要先说明哪些变量足以描述材料的历史和状态。线弹性只看当前小应变，超弹性看能量函数，黏弹性保留时间记忆；实验标定决定模型能用到哪里。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是大变形材料理论中的一种能量型弹性框架。",
+        "它关联橡胶、软组织、路径无关恢复和应变能函数。",
+        "第一类应力常由 $\\mathbf P=\\partial W/\\partial\\mathbf F$ 给出。",
+        "它先给能量函数，再由导数产生应力，而不是直接给线性刚度。",
+        "它的英文译名是 hyperelasticity。"
+      ],
+      "fragmented_clues": [
+        "大变形材料 能量型弹性框架",
+        "橡胶 软组织 路径无关 应变能函数",
+        "$\\mathbf P=\\partial W/\\partial\\mathbf F$",
+        "能量函数 导数产生应力 非线性刚度",
+        "hyperelasticity"
+      ],
+      "explanation_markdown": "超弹性材料用应变能密度函数直接定义应力，适合橡胶、生物软组织等大变形可恢复材料。能量常写成 $W=W(\\mathbf F)$ 或 $W=W(I_1,I_2,J)$。\n\n第一类皮奥拉应力由 $\\mathbf P=\\partial W/\\partial\\mathbf F$ 给出，其中 $\\mathbf F$ 是形变梯度。各向同性不可压缩模型常让 $W$ 依赖右柯西格林张量的不变量。超弹性强调路径无关的可恢复能量，和黏弹性不同；若材料有明显速率效应或滞回，只靠一个 $W$ 不够。\n\n超弹性材料用应变能密度函数定义应力，适合描述橡胶等大变形可恢复响应。关键是先选能量函数，再由其导数得到应力，而不是直接给线性刚度。路径无关的可恢复响应是它区别于黏弹性和塑性的关键。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1204,9 +1804,21 @@
     {
       "chinese_name": "新胡克材料",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "新胡克材料是最简单的橡胶类超弹性模型之一，用少数参数描述大变形下的非线性可恢复响应。它常作为软材料有限元计算的基准模型。\n\n可压缩形式之一为 $W=\\frac\\mu2(I_1-3)-\\mu\\ln J+\\frac\\lambda2(\\ln J)^2$，其中 $W$ 是能量密度，$I_1$ 是变形不变量，$J$ 是体积比，$\\lambda,\\mu$ 是材料参数。不可压缩近似中主要保留剪切项。模型简洁，但对大范围实验曲线未必足够准确。\n\n新胡克材料在连续介质模型中要先说明哪些变量足以描述材料的历史和状态。线弹性只看当前小应变，超弹性看能量函数，黏弹性保留时间记忆；实验标定决定模型能用到哪里。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是超弹性理论中的一种简单橡胶模型。",
+        "它关联大变形可恢复响应、不可压缩约束、少参数拟合和数值稳定性。",
+        "不可压缩形式常写成 $W=\\frac\\mu2(I_1-3)$。",
+        "它参数少且稳健，但大拉伸或填充橡胶响应常需要更复杂模型。",
+        "它的英文译名是 neo-Hookean material。"
+      ],
+      "fragmented_clues": [
+        "超弹性 简单橡胶模型",
+        "大变形 可恢复 不可压缩 少参数",
+        "$W=\\frac\\mu2(I_1-3)$",
+        "参数少 稳健 大拉伸 填充橡胶 局限",
+        "neo-Hookean material"
+      ],
+      "explanation_markdown": "新胡克材料是最常用的简单超弹性模型，可看作小应变胡克固体在大变形下的橡胶化延伸。不可压缩形式常写成 $W=\\frac\\mu2(I_1-3)$。\n\n这里 $\\mu$ 是小应变剪切模量，$I_1=\\operatorname{tr}\\mathbf C$，$\\mathbf C=\\mathbf F^T\\mathbf F$。可压缩模型还会加入体积项，例如与 $J=\\det\\mathbf F$ 有关的惩罚能。新胡克模型参数少、数值稳定，但对大拉伸下的应力上升、填充橡胶或复杂软组织响应常不够精细。\n\n新胡克材料是超弹性中最简单的模型之一，常用于橡胶状材料的大变形近似。它参数少、计算稳健，但对大剪切或复杂加载路径可能不够精确。不可压缩形式还需要压力作为约束乘子。简单并不意味着适合所有橡胶实验。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1228,9 +1840,21 @@
     {
       "chinese_name": "穆尼-里夫林材料",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "穆尼-里夫林材料是橡胶超弹性中的经典模型，用两个变形不变量拟合不可压缩或近不可压缩材料的非线性弹性。\n\n常见能量为 $W=C_{10}(I_1-3)+C_{01}(I_2-3)$，其中 $I_1,I_2$ 是右柯西格林张量的不变量，$C_{10},C_{01}$ 是材料常数。相比新胡克模型，它能更好描述多种拉伸和剪切状态。它仍属于弹性模型，不包含加载速率、滞回或永久变形。\n\n穆尼-里夫林材料在连续介质模型中要先说明哪些变量足以描述材料的历史和状态。线弹性只看当前小应变，超弹性看能量函数，黏弹性保留时间记忆；实验标定决定模型能用到哪里。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是超弹性理论中的一种橡胶材料模型。",
+        "它关联单轴、双轴、纯剪切实验拟合和应变不变量。",
+        "不可压缩常用形式为 $W=C_{10}(I_1-3)+C_{01}(I_2-3)$。",
+        "它比最简单的橡胶模型多保留第二不变量影响，拟合范围更灵活。",
+        "它的英文译名是 Mooney-Rivlin material。"
+      ],
+      "fragmented_clues": [
+        "超弹性 橡胶材料模型",
+        "单轴 双轴 纯剪切 实验拟合 不变量",
+        "$W=C_{10}(I_1-3)+C_{01}(I_2-3)$",
+        "第二不变量 更灵活拟合",
+        "Mooney-Rivlin material"
+      ],
+      "explanation_markdown": "穆尼-里夫林材料是橡胶超弹性模型，能量同时依赖第一、第二应变不变量。不可压缩常用形式为 $W=C_{10}(I_1-3)+C_{01}(I_2-3)$。\n\n这里 $I_1,I_2$ 来自右柯西格林张量，$C_{10},C_{01}$ 是实验拟合参数。它比新胡克模型多一个不变量项，因此能更好拟合单轴、双轴和纯剪切试验的组合数据。它仍属于各向同性、路径无关的超弹性模型，不能单独描述应力松弛、滞回或永久变形。\n\n穆尼-里夫林材料用多个应变不变量扩展新胡克模型，可更灵活拟合橡胶实验。参数需要由拉伸、压缩或剪切数据标定，不能只凭一个单轴曲线任意外推。它比新胡克多保留一个不变量影响，因而能拟合更宽变形范围。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1252,9 +1876,21 @@
     {
       "chinese_name": "黏弹性",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "黏弹性材料同时具有弹性储能和黏性耗散，应力不仅取决于当前变形，还取决于加载历史和速率。聚合物、沥青和生物组织常表现出这种行为。\n\n线性记忆形式可写为 $\\sigma(t)=\\int_0^tG(t-s)\\dot\\varepsilon(s)\\,ds$，其中 $G$ 是松弛函数，$\\dot\\varepsilon$ 是应变率。恒定应变下应力会松弛，恒定应力下应变会蠕变。频域中，黏弹性表现为复模量和相位滞后。\n\n黏弹性在连续介质模型中要先说明哪些变量足以描述材料的历史和状态。线弹性只看当前小应变，超弹性看能量函数，黏弹性保留时间记忆；实验标定决定模型能用到哪里。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是材料本构中的一种时间相关响应。",
+        "它关联蠕变、应力松弛、滞回、加载速率和历史记忆。",
+        "线性卷积形式可写为 $\\sigma(t)=\\int_0^tG(t-s)\\dot\\varepsilon(s)\\,ds$。",
+        "它同时储能和耗散，应力不只由当前应变决定。",
+        "它的英文译名是 viscoelasticity。"
+      ],
+      "fragmented_clues": [
+        "材料本构 时间相关响应",
+        "蠕变 松弛 滞回 加载速率 历史记忆",
+        "$\\sigma(t)=\\int_0^tG(t-s)\\dot\\varepsilon(s)\\,ds$",
+        "储能 耗散 非当前应变唯一",
+        "viscoelasticity"
+      ],
+      "explanation_markdown": "黏弹性材料同时表现弹性储能和黏性耗散，应力不仅取决于当前应变，也取决于加载历史。线性黏弹性常写成卷积形式 $\\sigma(t)=\\int_0^t G(t-s)\\dot\\varepsilon(s)\\,ds$。\n\n这里 $G(t)$ 是松弛模量，$\\dot\\varepsilon$ 是应变率。恒定应变下应力随时间下降称为应力松弛，恒定应力下应变继续增长称为蠕变。黏弹性不同于塑性：卸载后可有迟滞恢复，但理想线性黏弹性不以屈服面和永久流动为核心。\n\n黏弹性同时具有弹性储能和黏性耗散，响应依赖加载速率和历史。蠕变、松弛和滞回是典型表现；只用瞬时应力应变关系会丢掉时间效应。频域实验中，储能模量和损耗模量常用来分离这两部分。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1276,9 +1912,21 @@
     {
       "chinese_name": "麦克斯韦模型",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "麦克斯韦模型用一个弹簧和一个黏壶串联来表示黏弹性。串联结构使总应变分成弹性应变和黏性流动应变，特别适合描述应力松弛。\n\n本构方程为 $\\dot\\varepsilon=\\dot\\sigma/E+\\sigma/\\eta$，其中 $E$ 是弹簧模量，$\\eta$ 是黏度，$\\sigma$ 和 $\\varepsilon$ 是应力、应变。固定总应变后，应力按特征时间 $\\eta/E$ 衰减。它对长期蠕变会给出持续流动，因此更像黏性流体带有瞬时弹性。\n\n麦克斯韦模型在连续介质模型中要先说明哪些变量足以描述材料的历史和状态。线弹性只看当前小应变，超弹性看能量函数，黏弹性保留时间记忆；实验标定决定模型能用到哪里。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是线性黏弹理论中的一种串联元件模型。",
+        "它关联应力松弛、流体型长期响应、弹簧和阻尼器。",
+        "一维形式为 $\\dot\\varepsilon=\\dot\\sigma/E+\\sigma/\\eta$。",
+        "阶跃应变下应力指数衰减，恒定应力下会持续流动。",
+        "它的英文译名是 Maxwell model。"
+      ],
+      "fragmented_clues": [
+        "线性黏弹 串联元件模型",
+        "应力松弛 流体型长期响应 弹簧 阻尼器",
+        "$\\dot\\varepsilon=\\dot\\sigma/E+\\sigma/\\eta$",
+        "阶跃应变 指数衰减 恒定应力 持续流动",
+        "Maxwell model"
+      ],
+      "explanation_markdown": "麦克斯韦模型把弹簧和阻尼器串联，用来描述流体样材料的应力松弛。线性形式为 $\\dot\\varepsilon=\\dot\\sigma/E+\\sigma/\\eta$，其中 $E$ 是弹簧模量，$\\eta$ 是黏度。\n\n在阶跃应变下，应力按 $\\sigma(t)=\\sigma_0e^{-t/\\tau}$ 衰减，松弛时间 $\\tau=\\eta/E$。串联结构意味着总应变由弹性应变和黏性应变相加，因此长期恒定应力会产生持续流动。它适合抓住松弛特征，但不能很好描述固体材料的有限长期刚度。\n\n麦克斯韦模型把弹簧和阻尼器串联，擅长描述应力松弛。恒定应变下应力会衰减，恒定应力下会持续流动，因此更像流体型黏弹响应。它适合流动性明显的材料，却不能表现有限长期弹性平台。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1300,9 +1948,21 @@
     {
       "chinese_name": "开尔文沃伊特模型",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "开尔文沃伊特模型用弹簧和黏壶并联表示黏弹性。并联元件具有相同应变，应力则由弹性部分和黏性部分相加。\n\n方程为 $\\sigma=E\\varepsilon+\\eta\\dot\\varepsilon$，其中 $E$ 是弹性模量，$\\eta$ 是黏度。恒定应力加载时，应变逐渐接近有限值，体现延迟弹性和蠕变恢复。它不能描述瞬时应变跳变，也不能在恒定应变下让应力完全松弛。\n\n开尔文沃伊特模型在连续介质模型中要先说明哪些变量足以描述材料的历史和状态。线弹性只看当前小应变，超弹性看能量函数，黏弹性保留时间记忆；实验标定决定模型能用到哪里。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是线性黏弹理论中的一种并联元件模型。",
+        "它关联蠕变、延迟弹性、有限长期应变、弹簧和阻尼器。",
+        "一维本构式为 $\\sigma=E\\varepsilon+\\eta\\dot\\varepsilon$。",
+        "它能描述应变逐渐趋近平台，但不适合瞬时应力松弛。",
+        "它的英文译名是 Kelvin-Voigt model。"
+      ],
+      "fragmented_clues": [
+        "线性黏弹 并联元件模型",
+        "蠕变 延迟弹性 有限长期应变 弹簧 阻尼器",
+        "$\\sigma=E\\varepsilon+\\eta\\dot\\varepsilon$",
+        "应变平台 瞬时松弛局限",
+        "Kelvin-Voigt model"
+      ],
+      "explanation_markdown": "开尔文-沃伊特模型把弹簧和阻尼器并联，用来描述固体样材料的蠕变。其本构式为 $\\sigma=E\\varepsilon+\\eta\\dot\\varepsilon$，其中 $E$ 是弹性模量，$\\eta$ 是黏性系数。\n\n并联结构使弹簧和阻尼器应变相同，应力相加。阶跃应力下，应变逐渐趋近 $\\varepsilon_\\infty=\\sigma_0/E$，特征时间为 $\\tau=\\eta/E$。它能描述延迟变形和有限长期应变，但对瞬时应力松弛不合适。与麦克斯韦模型相比，它更像有黏滞延迟的弹性固体。\n\n开尔文-沃伊特模型把弹簧和阻尼器并联，适合描述蠕变过程。它对突然施加应力不会立即产生有限应变，但不能很好描述瞬时应力松弛。它适合固体型延迟弹性，却不能描述瞬时弹性跳变。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1324,9 +1984,21 @@
     {
       "chinese_name": "标准线性固体",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "标准线性固体把弹簧和黏壶组合得比单一麦克斯韦或开尔文模型更灵活，能同时描述瞬时弹性、延迟弹性和有限松弛。\n\n一种微分形式为 $\\dot\\sigma+\\sigma/\\tau=E_\\infty\\dot\\varepsilon+E_0\\varepsilon/\\tau$，其中 $\\tau$ 是松弛时间，$E_0,E_\\infty$ 是低频和高频模量参数。阶跃应变下，应力从瞬时值逐渐衰减到非零平台。它常用于小变形聚合物和生物材料的线性黏弹性拟合。\n\n标准线性固体在连续介质模型中要先说明哪些变量足以描述材料的历史和状态。线弹性只看当前小应变，超弹性看能量函数，黏弹性保留时间记忆；实验标定决定模型能用到哪里。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是线性黏弹理论中的一种三参数模型。",
+        "它关联瞬时模量、长期模量、蠕变和应力松弛实验拟合。",
+        "一种写法为 $\\sigma+\\tau_\\sigma\\dot\\sigma=E_\\infty\\varepsilon+E_0\\tau_\\varepsilon\\dot\\varepsilon$。",
+        "它比单个串联或并联元件更能同时给出有限蠕变和应力松弛。",
+        "它的英文译名是 standard linear solid。"
+      ],
+      "fragmented_clues": [
+        "线性黏弹 三参数模型",
+        "瞬时模量 长期模量 蠕变 松弛拟合",
+        "$\\sigma+\\tau_\\sigma\\dot\\sigma=E_\\infty\\varepsilon+E_0\\tau_\\varepsilon\\dot\\varepsilon$",
+        "有限蠕变 应力松弛 多元件",
+        "standard linear solid"
+      ],
+      "explanation_markdown": "标准线性固体在弹簧-阻尼器组合中同时给出瞬时弹性、延迟弹性和有限长期刚度，是线性黏弹性的基本三参数模型。常见结构为一个弹簧与一个麦克斯韦元并联。\n\n一维本构可写成 $\\sigma+\\tau_\\sigma\\dot\\sigma=E_\\infty\\varepsilon+E_0\\tau_\\varepsilon\\dot\\varepsilon$，其中 $E_0$ 和 $E_\\infty$ 分别代表瞬时与长期模量，$\\tau_\\sigma,\\tau_\\varepsilon$ 是特征时间。它比麦克斯韦模型多长期刚度，比开尔文-沃伊特模型能描述应力松弛，因此常用来拟合聚合物和生物组织的小振幅响应。\n\n标准线性固体比单一麦克斯韦或开尔文模型多一个时间尺度，能同时描述有限蠕变和应力松弛。它常作为线性黏弹性实验拟合的入门模型。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1348,9 +2020,21 @@
     {
       "chinese_name": "塑性",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "塑性描述材料超过弹性极限后出现不可恢复变形。卸载时弹性部分会恢复，塑性部分保留下来，形成永久伸长、残余应力或形状改变。\n\n小变形常分解为 $\\boldsymbol\\varepsilon=\\boldsymbol\\varepsilon^e+\\boldsymbol\\varepsilon^p$，其中上标 $e$ 表示弹性应变，$p$ 表示塑性应变。塑性理论还需要屈服准则判定何时开始流动，流动法则给出塑性方向，硬化规律描述强度随历史演化。\n\n塑性中，塑性量总是带有路径依赖：当前应力相同，经历过的塑性变形不同，后续响应也可能不同。屈服面、流动方向和硬化变量共同决定卸载回弹、残余变形和循环加载行为。 加载历史会改变后续响应，所以只给当前应力还不够，还要保存内部变量和塑性累积。",
+      "complete_clues": [
+        "这是材料本构中的一种不可恢复变形机制。",
+        "它关联屈服、残余应变、加载路径、硬化和永久形变。",
+        "小变形理论常写成 $\\boldsymbol\\varepsilon=\\boldsymbol\\varepsilon^e+\\boldsymbol\\varepsilon^p$。",
+        "超过弹性范围后，卸载仍会留下不能完全恢复的应变。",
+        "它的英文译名是 plasticity。"
+      ],
+      "fragmented_clues": [
+        "材料本构 不可恢复变形机制",
+        "屈服 残余应变 加载路径 硬化 永久形变",
+        "$\\boldsymbol\\varepsilon=\\boldsymbol\\varepsilon^e+\\boldsymbol\\varepsilon^p$",
+        "超过弹性范围 卸载 残留应变",
+        "plasticity"
+      ],
+      "explanation_markdown": "塑性描述材料超过弹性范围后产生不可完全恢复的永久变形。小变形理论常把总应变分解为 $\\boldsymbol\\varepsilon=\\boldsymbol\\varepsilon^e+\\boldsymbol\\varepsilon^p$。\n\n这里 $\\boldsymbol\\varepsilon^e$ 是弹性应变，卸载时可恢复；$\\boldsymbol\\varepsilon^p$ 是塑性应变，记录加载历史。塑性模型通常由屈服准则、流动法则和硬化规律组成。它不同于黏弹性：黏弹性强调时间延迟和可恢复耗散，塑性强调超过屈服后路径依赖的永久形变。\n\n塑性指卸载后仍留下不可恢复变形。它需要屈服准则判断何时开始，流动法则给塑性应变增量，硬化规律描述屈服面怎样演化。加载路径不同，即使最终应力相同，残余应变也可能不同。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1372,9 +2056,21 @@
     {
       "chinese_name": "屈服准则",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "屈服准则给出材料从弹性响应进入塑性流动的边界。它把复杂应力状态和内部硬化变量压缩成一个判定函数。\n\n常写作 $f(\\boldsymbol\\sigma,\\kappa)\\le0$，其中 $f$ 是屈服函数，$\\boldsymbol\\sigma$ 是应力张量，$\\kappa$ 是硬化变量。$f<0$ 表示弹性域内部，$f=0$ 表示到达屈服边界。冯米塞斯准则适合许多金属，莫尔-库仑准则则常用于岩土材料。\n\n屈服准则中，塑性量总是带有路径依赖：当前应力相同，经历过的塑性变形不同，后续响应也可能不同。屈服面、流动方向和硬化变量共同决定卸载回弹、残余变形和循环加载行为。 加载历史会改变后续响应，所以只给当前应力还不够，还要保存内部变量和塑性累积。",
+      "complete_clues": [
+        "这是永久变形理论中判断状态转变的一类条件。",
+        "它关联弹性域、强度门槛、金属材料、岩土材料和内部变量。",
+        "一般写成 $f(\\boldsymbol\\sigma,\\boldsymbol\\alpha)\\le0$。",
+        "它只给开始不可恢复流动的门槛，增量方向还要另由法则规定。",
+        "它的英文译名是 yield criterion。"
+      ],
+      "fragmented_clues": [
+        "永久变形 状态转变条件",
+        "弹性域 强度门槛 金属 岩土 内部变量",
+        "$f(\\boldsymbol\\sigma,\\boldsymbol\\alpha)\\le0$",
+        "流动门槛 非增量方向",
+        "yield criterion"
+      ],
+      "explanation_markdown": "屈服准则规定材料从弹性响应进入塑性流动的条件。常写成 $f(\\boldsymbol\\sigma,\\boldsymbol\\alpha)\\le0$，其中 $\\boldsymbol\\sigma$ 是应力，$\\boldsymbol\\alpha$ 是硬化内部变量。\n\n当 $f<0$ 时材料处于弹性区，$f=0$ 时到达屈服面。金属常用冯米塞斯准则 $\\sqrt{3\\mathbf s:\\mathbf s/2}=\\sigma_y$，其中 $\\mathbf s$ 是偏应力，$\\sigma_y$ 是屈服强度。岩土材料则常让屈服与压力相关。屈服准则只判断是否屈服，塑性应变如何发展还要靠流动法则。\n\n屈服准则给出弹性响应何时结束、塑性流动何时开始的条件。它通常写成应力空间中的函数等于零；不同材料会选冯米塞斯、Tresca 或 Drucker-Prager 等形式。选错准则会直接改变预测的屈服载荷和塑性区形状。岩土材料尤其需要考虑压力相关屈服。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1396,9 +2092,21 @@
     {
       "chinese_name": "屈服面",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "屈服面是在应力空间中满足屈服函数为零的曲面，几何上包围弹性域。加载路径碰到这张面后，材料可能发生塑性流动。\n\n数学表示为 $f(\\boldsymbol\\sigma,\\kappa)=0$，其中 $\\boldsymbol\\sigma$ 是应力，$\\kappa$ 是硬化变量。各向同性硬化会让屈服面膨胀，随动硬化会让它平移。返回映射算法、塑性乘子和一致切线刚度都围绕屈服面的几何关系建立。\n\n屈服面中，塑性量总是带有路径依赖：当前应力相同，经历过的塑性变形不同，后续响应也可能不同。屈服面、流动方向和硬化变量共同决定卸载回弹、残余变形和循环加载行为。 加载历史会改变后续响应，所以只给当前应力还不够，还要保存内部变量和塑性累积。",
+      "complete_clues": [
+        "这是永久变形理论中位于应力空间的几何边界。",
+        "它关联弹性域、强度演化、返回映射和加载卸载判断。",
+        "边界条件写作 $f(\\boldsymbol\\sigma,\\boldsymbol\\alpha)=0$。",
+        "它不是实体中的表面，而是材料状态能否继续弹性的分界。",
+        "它的英文译名是 yield surface。"
+      ],
+      "fragmented_clues": [
+        "永久变形 应力空间 几何边界",
+        "弹性域 强度演化 返回映射 加载卸载",
+        "$f(\\boldsymbol\\sigma,\\boldsymbol\\alpha)=0$",
+        "非实体表面 材料状态 弹性分界",
+        "yield surface"
+      ],
+      "explanation_markdown": "屈服面是在应力空间中满足 $f(\\boldsymbol\\sigma,\\boldsymbol\\alpha)=0$ 的曲面，分隔弹性区和塑性加载状态。这里 $f$ 是屈服函数，$\\boldsymbol\\alpha$ 表示硬化变量。\n\n应力点位于屈服面内部时只发生弹性响应；加载把应力推到表面后，塑性流动开始。各向同性硬化会让屈服面膨胀，随动硬化会让它在应力空间平移。屈服面不是实体中的几何表面，而是材料状态在应力空间里的边界，用来组织加载、卸载和再屈服判断。\n\n屈服面是应力空间中弹性域的边界。应力点在面内时材料仍弹性，达到表面后进入塑性；硬化会让这张面扩张、平移或改变形状。应力返回映射算法本质上就是把试应力拉回这张面上。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1420,9 +2128,21 @@
     {
       "chinese_name": "流动法则",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "流动法则规定达到屈服后塑性应变怎样增长，是塑性模型中决定永久变形方向的部分。它把应力空间的屈服面与应变空间的流动联系起来。\n\n常写作 $\\dot{\\boldsymbol\\varepsilon}^p=\\dot\\lambda\\,\\partial g/\\partial\\boldsymbol\\sigma$，其中 $\\dot\\lambda$ 是塑性乘子率，$g$ 是塑性势函数。若 $g=f$，称为关联流动；若不同，则为非关联流动。土体剪胀、金属 J2 塑性和摩擦材料都对流动法则很敏感。\n\n塑性量总是带有路径依赖：当前应力相同，经历过的塑性变形不同，后续响应也可能不同。屈服面、流动方向和硬化变量共同决定卸载回弹、残余变形和循环加载行为。 建模时要同时估计雷诺数、马赫数和壁面条件，哪些项可忽略往往由这些量而不是方程名称决定。",
+      "complete_clues": [
+        "这是永久变形理论中规定增量方向的一类关系。",
+        "它关联塑性乘子、关联形式、非关联形式、剪胀和一致切线。",
+        "关联形式常写成 $d\\boldsymbol\\varepsilon^p=d\\lambda\\,\\partial f/\\partial\\boldsymbol\\sigma$。",
+        "它决定屈服后不可恢复应变怎样增长，而不是决定门槛位置。",
+        "它的英文译名是 flow rule。"
+      ],
+      "fragmented_clues": [
+        "永久变形 增量方向关系",
+        "乘子 关联形式 非关联形式 剪胀 一致切线",
+        "$d\\boldsymbol\\varepsilon^p=d\\lambda\\,\\partial f/\\partial\\boldsymbol\\sigma$",
+        "不可恢复应变增长 非门槛位置",
+        "flow rule"
+      ],
+      "explanation_markdown": "流动法则规定屈服后塑性应变增量的方向和大小。关联流动常写成 $d\\boldsymbol\\varepsilon^p=d\\lambda\\,\\partial f/\\partial\\boldsymbol\\sigma$。\n\n这里 $d\\lambda\\ge0$ 是塑性乘子，$f$ 是屈服函数。这个式子表示塑性应变增量沿屈服面的法向方向。金属塑性常采用关联流动，而岩土材料为避免过大的体积膨胀，常用塑性势函数 $g$ 代替 $f$，写成 $d\\boldsymbol\\varepsilon^p=d\\lambda\\partial g/\\partial\\boldsymbol\\sigma$。它和屈服准则分工不同：一个定门槛，一个定流向。\n\n流动法则规定塑性应变增量的方向，而屈服准则只说明是否屈服。关联流动取屈服函数梯度为方向，非关联流动则可用不同塑性势，常见于土体。因此它直接决定塑性体积变化和剪胀行为。它还控制塑性计算中的一致切线刚度。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1444,9 +2164,21 @@
     {
       "chinese_name": "硬化规律",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "硬化规律描述材料经历塑性变形后屈服条件怎样演化。它反映位错积累、组织变化或内部结构重排对后续强度的影响。\n\n简单形式可写为 $\\dot\\kappa=h\\dot\\lambda$，其中 $\\kappa$ 是硬化变量，$h$ 是硬化模量，$\\dot\\lambda$ 是塑性乘子率。各向同性硬化使屈服面扩大，随动硬化使屈服面在应力空间平移。循环加载、包辛格效应和成形回弹都与硬化规律有关。\n\n硬化规律中，塑性量总是带有路径依赖：当前应力相同，经历过的塑性变形不同，后续响应也可能不同。屈服面、流动方向和硬化变量共同决定卸载回弹、残余变形和循环加载行为。 加载历史会改变后续响应，所以只给当前应力还不够，还要保存内部变量和塑性累积。",
+      "complete_clues": [
+        "这是永久变形理论中描述强度演化的一类关系。",
+        "它关联累积不可恢复应变、再屈服、循环滞回和包辛格效应。",
+        "各向同性线性形式可写作 $\\sigma_y=\\sigma_{y0}+H\\bar\\varepsilon^p$。",
+        "它让应力空间边界扩张、平移或改变形状，从而改变后续屈服条件。",
+        "它的英文译名是 hardening law。"
+      ],
+      "fragmented_clues": [
+        "永久变形 强度演化关系",
+        "累积不可恢复应变 再屈服 循环滞回 包辛格效应",
+        "$\\sigma_y=\\sigma_{y0}+H\\bar\\varepsilon^p$",
+        "边界扩张 平移 形状改变 后续屈服",
+        "hardening law"
+      ],
+      "explanation_markdown": "硬化规律描述材料发生塑性变形后屈服条件怎样改变。常见内部变量为累积塑性应变 $\\bar\\varepsilon^p$，各向同性硬化可写成 $\\sigma_y=\\sigma_{y0}+H\\bar\\varepsilon^p$。\n\n这里 $\\sigma_{y0}$ 是初始屈服强度，$H$ 是硬化模量。各向同性硬化让屈服面整体扩大，随动硬化则用背应力 $\\boldsymbol\\alpha$ 让屈服面平移。硬化规律不直接给出弹性刚度，而是决定塑性加载后的再屈服、循环滞回和残余应力。\n\n硬化规律描述塑性变形积累后材料后续屈服条件如何改变。各向同性硬化扩大屈服面，随动硬化移动屈服面；循环加载中的包辛格效应与此相关。它还决定循环加载下滞回曲线的形状。材料参数通常要由循环或单调实验标定。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1468,9 +2200,21 @@
     {
       "chinese_name": "理想塑性",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "理想塑性假设材料达到屈服后可继续产生塑性应变，而屈服应力不随塑性变形增加。它忽略加工硬化，是极限分析中的常用简化。\n\n屈服条件可写为 $f(\\boldsymbol\\sigma)\\le0$，其中 $f$ 只依赖当前应力张量 $\\boldsymbol\\sigma$。屈服面固定不扩张也不平移；塑性流动期间应力状态通常保持在屈服面上。该模型适合低硬化材料的近似和结构极限载荷估计，但不能预测强化后的应力提升。\n\n塑性量总是带有路径依赖：当前应力相同，经历过的塑性变形不同，后续响应也可能不同。屈服面、流动方向和硬化变量共同决定卸载回弹、残余变形和循环加载行为。",
+      "complete_clues": [
+        "这是永久变形理论中的一种无硬化近似。",
+        "它关联屈服平台、极限分析、滑移线和塑性铰模型。",
+        "单轴情形可写为 $\\sigma=\\sigma_y,\\;d\\varepsilon^p>0$。",
+        "达到强度门槛后应力不再随永久应变增加而提高。",
+        "它的英文译名是 perfect plasticity。"
+      ],
+      "fragmented_clues": [
+        "永久变形 无硬化近似",
+        "屈服平台 极限分析 滑移线 铰模型",
+        "$\\sigma=\\sigma_y,\\;d\\varepsilon^p>0$",
+        "强度门槛 应力平台 无加工强化",
+        "perfect plasticity"
+      ],
+      "explanation_markdown": "理想塑性假定材料一旦达到屈服，应力保持在屈服面上继续发生塑性流动，而屈服强度不随塑性应变改变。单轴情形可写为 $\\sigma=\\sigma_y$ 且 $d\\varepsilon^p>0$。\n\n这里 $\\sigma_y$ 是常数屈服应力，$d\\varepsilon^p$ 是塑性应变增量。理想塑性抓住了屈服平台和极限载荷的核心图像，常用于滑移线、塑性铰和极限分析。它忽略加工硬化和软化，因此不能描述金属冷作后强度提高，也不适合需要精细循环响应的疲劳问题。\n\n理想塑性假定屈服后应力不再随塑性应变增加而提高。它适合近似平台段材料，但无法描述加工硬化、循环强化或软化失稳。极限分析常用它估计结构的塌塑载荷。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1492,9 +2236,21 @@
     {
       "chinese_name": "黏塑性",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "黏塑性把不可恢复变形与加载速率联系起来，允许材料在超过屈服条件后以有限速率流动。它适合高温金属、聚合物和率敏感材料。\n\nPerzyna 型写法为 $\\dot{\\boldsymbol\\varepsilon}^p=\\gamma\\langle f/K\\rangle^n\\partial g/\\partial\\boldsymbol\\sigma$，其中 $f$ 是屈服函数，$g$ 是塑性势，尖括号表示正部，$\\gamma,K,n$ 是材料参数。应力超过屈服面越多，塑性流动越快；时间尺度因此进入本构。\n\n黏塑性中，塑性量总是带有路径依赖：当前应力相同，经历过的塑性变形不同，后续响应也可能不同。屈服面、流动方向和硬化变量共同决定卸载回弹、残余变形和循环加载行为。 加载历史会改变后续响应，所以只给当前应力还不够，还要保存内部变量和塑性累积。",
+      "complete_clues": [
+        "这是材料本构中的一种速率相关永久流动模型。",
+        "它关联高温蠕变、冲击加载、速率敏感材料和数值正则化。",
+        "Perzyna 型关系常写作 $\\dot\\lambda=\\langle f/\\eta\\rangle^n$。",
+        "应力可短暂越过静态屈服边界，流动速度决定回落过程。",
+        "它的英文译名是 viscoplasticity。"
+      ],
+      "fragmented_clues": [
+        "材料本构 速率相关永久流动",
+        "高温蠕变 冲击加载 速率敏感 正则化",
+        "$\\dot\\lambda=\\langle f/\\eta\\rangle^n$",
+        "越过静态边界 流动速度 回落过程",
+        "viscoplasticity"
+      ],
+      "explanation_markdown": "黏塑性把塑性流动与时间或应变率联系起来，适合高温蠕变、冲击加载和速率敏感材料。常见 Perzyna 型关系写成 $\\dot\\lambda=\\langle f/\\eta\\rangle^n$。\n\n这里 $f$ 是屈服函数的超越量，$\\eta$ 是黏塑性参数，$n$ 是速率指数，尖括号表示只有超过屈服才流动。与率无关塑性不同，黏塑性中应力可短暂越过静态屈服面，流动速度决定它怎样回落。它也不同于黏弹性，因为变形中仍存在不可恢复的塑性部分。\n\n黏塑性把塑性流动与时间或应变率联系起来。屈服后变形速率会影响应力，适合高温蠕变、冲击加载和聚合物等速率敏感材料。速率项也能在数值上平滑原本尖锐的屈服转变。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1516,9 +2272,21 @@
     {
       "chinese_name": "断裂力学",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "断裂力学研究含裂纹结构的应力集中、能量释放和裂纹扩展条件。它不只看名义应力，而关注裂纹尖端附近的奇异场和整体能量变化。\n\n能量观点写作 $G=-d\\Pi/dA$，其中 $G$ 是能量释放率，$\\Pi$ 是总势能，$A$ 是裂纹面积。若 $G$ 达到材料断裂韧度，裂纹可能扩展。线弹性理论常用应力强度因子，弹塑性裂纹则常用 J 积分描述尖端驱动力。\n\n断裂力学中，断裂量关注尖端附近的局部场，但又不能脱离整体结构释放的能量。线弹性参数适合小塑性区，若裂尖出现明显屈服或损伤，就要使用 J 积分、 cohesive 模型或损伤力学补充。 裂尖附近的奇异场只适合一定尺度外的渐近描述，真正扩展还受塑性区和材料韧度限制。",
+      "complete_clues": [
+        "这是固体力学中研究含缺陷失效的一套理论。",
+        "它关联裂纹扩展、近尖端场、材料韧度和能量驱动力。",
+        "线弹性近场可写为 $\\sigma_{ij}\\sim Kf_{ij}(\\theta)/\\sqrt{2\\pi r}$。",
+        "它用裂纹尺度和局部奇异场判断破坏，而不只看名义强度。",
+        "它的英文译名是 fracture mechanics。"
+      ],
+      "fragmented_clues": [
+        "固体力学 含缺陷失效理论",
+        "裂纹扩展 近尖端场 材料韧度 能量驱动力",
+        "$\\sigma_{ij}\\sim Kf_{ij}(\\theta)/\\sqrt{2\\pi r}$",
+        "裂纹尺度 局部奇异场 非名义强度",
+        "fracture mechanics"
+      ],
+      "explanation_markdown": "断裂力学研究含裂纹材料在载荷下何时扩展、怎样失效。它把裂纹尖端的强应力集中作为核心对象，而不是只用平均强度判断整块材料。\n\n线弹性断裂中，裂纹尖端应力场可写成 $\\sigma_{ij}\\sim K f_{ij}(\\theta)/\\sqrt{2\\pi r}$。这里 $r,\\theta$ 是尖端附近极坐标，$K$ 是应力强度因子。裂纹扩展常用 $K\\ge K_{IC}$ 或能量释放率 $G\\ge G_c$ 判断。断裂力学特别适合分析含缺陷构件，因为小裂纹会把局部应力放大到远高于名义应力。\n\n断裂力学关注含裂纹体的应力集中和裂纹扩展条件。它不再只看名义应力，而是用应力强度因子、能量释放率或 J 积分描述裂尖场。裂纹尺度进入模型后，强度不再只是材料常数。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1540,9 +2308,21 @@
     {
       "chinese_name": "裂纹尖端",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "裂纹尖端是裂纹前沿附近应力和变形最集中的区域。在线弹性断裂力学中，尖端场具有平方根奇异性，远大于普通名义应力。\n\n渐近形式为 $\\sigma_{ij}\\sim K/\\sqrt{2\\pi r}$，其中 $\\sigma_{ij}$ 是应力分量，$K$ 是应力强度因子，$r$ 是到尖端的距离。真实材料不会在 $r=0$ 处产生无限应力，而会出现塑性区、损伤区或微裂纹。裂纹是否扩展主要由尖端附近的场强决定。\n\n裂纹尖端中，断裂量关注尖端附近的局部场，但又不能脱离整体结构释放的能量。线弹性参数适合小塑性区，若裂尖出现明显屈服或损伤，就要使用 J 积分、 cohesive 模型或损伤力学补充。 裂尖附近的奇异场只适合一定尺度外的渐近描述，真正扩展还受塑性区和材料韧度限制。",
+      "complete_clues": [
+        "这是断裂分析中的一个局部几何区域。",
+        "它关联应力集中、塑性区、过程区和三种开裂模式。",
+        "I 型近场常写作 $\\sigma\\propto K_I/\\sqrt{2\\pi r}$。",
+        "越靠近裂纹前缘，线弹性解越显示平方根奇异性。",
+        "它的英文译名是 crack tip。"
+      ],
+      "fragmented_clues": [
+        "断裂分析 局部几何区域",
+        "应力集中 塑性区 过程区 开裂模式",
+        "$\\sigma\\propto K_I/\\sqrt{2\\pi r}$",
+        "裂纹前缘 平方根奇异性 近场",
+        "crack tip"
+      ],
+      "explanation_markdown": "裂纹尖端是裂纹前缘附近应力和应变最集中的区域。在线弹性近场中，I 型裂纹的应力随距离呈 $\\sigma\\propto K_I/\\sqrt{2\\pi r}$。\n\n这里 $r$ 是离尖端的距离，$K_I$ 是张开型应力强度因子。数学上的 $1/\\sqrt r$ 奇异性说明经典连续体在尖端处会失效，实际材料会出现塑性区、微裂纹或过程区。裂纹尖端场的角分布决定张开、滑移和撕裂三种断裂模式，也决定裂纹最可能沿哪个方向扩展。\n\n裂纹尖端附近应力场具有强烈梯度，线弹性理论中常出现平方根奇异性。实际材料会有塑性区或损伤区，因此尖端参数通常是近场近似。网格和实验分辨率通常无法直接解析真正原子尺度尖端。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1564,9 +2344,21 @@
     {
       "chinese_name": "应力强度因子",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "应力强度因子给出裂纹尖端奇异应力场的幅值，是线弹性断裂力学的核心参数。它把远场载荷、裂纹尺寸和几何形状合成一个尖端驱动力。\n\nI 型裂纹常写作 $K_I=Y\\sigma\\sqrt{\\pi a}$，其中 $K_I$ 是张开型应力强度因子，$Y$ 是几何修正系数，$\\sigma$ 是远场应力，$a$ 是裂纹长度。当 $K_I$ 达到断裂韧度 $K_{IC}$ 时，裂纹可能失稳扩展。II 型和 III 型分别对应面内、面外剪切。\n\n断裂量关注尖端附近的局部场，但又不能脱离整体结构释放的能量。线弹性参数适合小塑性区，若裂尖出现明显屈服或损伤，就要使用 J 积分、 cohesive 模型或损伤力学补充。 同一受力状态在不同截面上会呈现不同牵引力，因此必须同时说明法向、面积构形和符号约定。",
+      "complete_clues": [
+        "这是线弹性断裂中的一个近场幅值参数。",
+        "它关联载荷、裂纹长度、几何修正、开裂模式和断裂韧度。",
+        "无限板中心裂纹常写作 $K_I=Y\\sigma\\sqrt{\\pi a}$。",
+        "它不是远场应力，而是裂纹前缘奇异场的强度标尺。",
+        "它的英文译名是 stress intensity factor。"
+      ],
+      "fragmented_clues": [
+        "线弹性断裂 近场幅值参数",
+        "载荷 裂纹长度 几何修正 开裂模式 韧度",
+        "$K_I=Y\\sigma\\sqrt{\\pi a}$",
+        "非远场应力 奇异场强度标尺",
+        "stress intensity factor"
+      ],
+      "explanation_markdown": "应力强度因子 $K$ 表示裂纹尖端奇异应力场的强度。在线弹性断裂中，近尖端场写成 $\\sigma_{ij}=K f_{ij}(\\theta)/\\sqrt{2\\pi r}+\\cdots$。\n\n这里 $r,\\theta$ 是以裂纹尖端为原点的极坐标，$f_{ij}$ 给出角分布。I、II、III 型断裂分别对应 $K_I,K_{II},K_{III}$。$K$ 不等于远场应力，它同时包含载荷、裂纹长度和构件几何；例如无限板中心裂纹有 $K_I=Y\\sigma\\sqrt{\\pi a}$，$a$ 为半裂纹长，$Y$ 为几何修正因子。\n\n应力强度因子刻画线弹性裂纹尖端奇异场的幅值。它依赖载荷、裂纹长度和几何；达到材料断裂韧度时，裂纹可能失稳扩展。不同开裂模式分别有 I、II、III 型因子，不能混为一个标量。几何修正系数常是工程手册中最需要查的量。试样厚度也会影响断裂韧度判读。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1588,9 +2380,21 @@
     {
       "chinese_name": "能量释放率",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "能量释放率表示裂纹每增加单位面积时结构释放的势能，是断裂扩展的能量驱动力。它把局部裂尖行为与整体载荷-位移响应联系起来。\n\n定义为 $G=-\\partial\\Pi/\\partial A$，其中 $\\Pi$ 是总势能，$A$ 是裂纹面积。若释放的能量超过形成新表面和耗散所需能量，裂纹可以增长。在线弹性中，$G$ 与应力强度因子有确定关系；在非线性材料中，J 积分常扮演相近角色。\n\n能量释放率中，断裂量关注尖端附近的局部场，但又不能脱离整体结构释放的能量。线弹性参数适合小塑性区，若裂尖出现明显屈服或损伤，就要使用 J 积分、 cohesive 模型或损伤力学补充。 裂尖附近的奇异场只适合一定尺度外的渐近描述，真正扩展还受塑性区和材料韧度限制。",
+      "complete_clues": [
+        "这是断裂分析中的一个能量驱动力。",
+        "它关联裂纹面积增长、势能变化、材料韧度和有限元计算。",
+        "定义常写为 $G=-d\\Pi/dA$。",
+        "它从整体能量角度衡量裂纹继续扩展时可获得多少能量。",
+        "它的英文译名是 energy release rate。"
+      ],
+      "fragmented_clues": [
+        "断裂分析 能量驱动力",
+        "裂纹面积 势能变化 材料韧度 有限元",
+        "$G=-d\\Pi/dA$",
+        "整体能量 裂纹扩展 可获得能量",
+        "energy release rate"
+      ],
+      "explanation_markdown": "能量释放率描述裂纹单位新生面积扩展时系统势能释放多少，常记为 $G=-d\\Pi/dA$。这里 $\\Pi$ 是总势能，$A$ 是裂纹面积。\n\n若 $G$ 达到材料断裂韧度 $G_c$，裂纹可能稳定或失稳扩展。在线弹性平面应力下，I 型裂纹满足 $G=K_I^2/E$；平面应变下则用 $E'=E/(1-\\nu^2)$。能量释放率和应力强度因子是同一断裂问题的能量视角与近场视角，前者更适合有限元和非线性材料推广。\n\n能量释放率表示裂纹面积增加时系统可释放的势能。它从整体能量角度判断扩展，与应力强度因子在小规模屈服线弹性条件下可相互转换。它特别适合比较不同裂纹路径的能量驱动力。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1612,9 +2416,21 @@
     {
       "chinese_name": "J积分",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "J 积分是围绕裂纹尖端取路径积分得到的断裂参量，在许多弹性或单调弹塑性条件下具有路径无关性。它衡量裂纹扩展的能量驱动力。\n\n二维形式为 $J=\\int_\\Gamma(Wn_x-T_i\\partial_xu_i)\\,ds$，其中 $W$ 是应变能密度，$\\Gamma$ 是围绕尖端的路径，$T_i$ 是牵引力，$u_i$ 是位移分量。在线弹性中 $J=G$。有限元断裂分析常用它避免直接处理尖端奇异点。\n\nJ积分中，断裂量关注尖端附近的局部场，但又不能脱离整体结构释放的能量。线弹性参数适合小塑性区，若裂尖出现明显屈服或损伤，就要使用 J 积分、 cohesive 模型或损伤力学补充。 裂尖附近的奇异场只适合一定尺度外的渐近描述，真正扩展还受塑性区和材料韧度限制。",
+      "complete_clues": [
+        "这是断裂分析中的一种路径积分参量。",
+        "它关联裂纹前缘驱动力、弹塑性断裂和有限元围道计算。",
+        "二维形式可写为 $J=\\int_\\Gamma(Wn_x-T_i\\partial u_i/\\partial x)\\,ds$。",
+        "在合适条件下它与路径无关，线弹性时等于能量驱动力。",
+        "它的英文译名是 J-integral。"
+      ],
+      "fragmented_clues": [
+        "断裂分析 路径积分参量",
+        "裂纹前缘驱动力 弹塑性 围道计算",
+        "$J=\\int_\\Gamma(Wn_x-T_i\\partial u_i/\\partial x)\\,ds$",
+        "路径无关 线弹性 能量驱动力",
+        "J-integral"
+      ],
+      "explanation_markdown": "$J$ 积分是围绕裂纹尖端路径积分得到的断裂参量，用来表征裂纹扩展的能量驱动力。二维弹性体中可写为 $J=\\int_\\Gamma (W n_x-T_i\\partial u_i/\\partial x)\\,ds$。\n\n这里 $\\Gamma$ 是包围裂纹尖端的路径，$W$ 是应变能密度，$\\mathbf T$ 是路径上的牵引力，$\\mathbf n$ 是外法向。在线弹性中 $J$ 等于能量释放率 $G$；在小尺度屈服下，它还能表征弹塑性裂尖场。路径无关性使 $J$ 积分特别适合有限元计算裂纹驱动力。\n\nJ 积分围绕裂尖路径积分，在线弹性和某些弹塑性条件下可表征裂纹驱动力。路径无关性依赖材料和加载假设，不能在强耗散或复杂历史下随意使用。有限元后处理中常用围道积分或等效域积分来计算它。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1636,9 +2452,21 @@
     {
       "chinese_name": "流体力学",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "流体力学研究能够持续变形的连续介质运动。与固体不同，静止流体不能承受剪应力；流动时，压力、黏性应力和惯性共同决定速度场。\n\n动量方程为 $\\rho D\\mathbf v/Dt=\\nabla\\cdot\\boldsymbol\\sigma+\\rho\\mathbf b$，其中 $\\rho$ 是密度，$\\mathbf v$ 是速度，$\\boldsymbol\\sigma$ 是应力，$\\mathbf b$ 是体力。再配合质量守恒和状态方程，便可描述管流、绕流、声波、边界层和湍流等现象。\n\n流体力学中，流体概念通常要同时比较惯性、黏性、压缩性和边界影响。无黏、不可压缩或稳态假设能大幅简化方程，但壁面、激波、旋涡和湍流常会把被忽略的项重新带回主导位置。 建模时要同时估计雷诺数、马赫数和壁面条件，哪些项可忽略往往由这些量而不是方程名称决定。",
+      "complete_clues": [
+        "这是研究可流动介质运动的一门力学分支。",
+        "它关联速度场、压力、通量、黏性、压缩性和边界条件。",
+        "不可压缩牛顿情形可写为 $\\rho D\\mathbf v/Dt=-\\nabla p+\\mu\\nabla^2\\mathbf v+\\rho\\mathbf b$。",
+        "受剪时介质会持续变形，因此速率量比总应变更基本。",
+        "它的英文译名是 fluid mechanics。"
+      ],
+      "fragmented_clues": [
+        "可流动介质 力学分支",
+        "速度场 压力 通量 黏性 压缩性 边界",
+        "$\\rho D\\mathbf v/Dt=-\\nabla p+\\mu\\nabla^2\\mathbf v+\\rho\\mathbf b$",
+        "受剪持续变形 速率量 总应变",
+        "fluid mechanics"
+      ],
+      "explanation_markdown": "流体力学研究液体和气体在力、边界和压强作用下的运动。流体在静止时不能承受持续剪切应力，受剪后会不断变形，因此速度场和应变率比固体中的总应变更核心。\n\n控制方程来自质量和动量守恒，例如不可压缩牛顿流体满足 $\\rho D\\mathbf v/Dt=-\\nabla p+\\mu\\nabla^2\\mathbf v+\\rho\\mathbf b$。这里 $\\rho$ 是密度，$p$ 是压力，$\\mu$ 是动力黏度。流体力学常用无量纲数比较惯性、黏性和压缩性，雷诺数、马赫数和弗劳德数分别抓住不同物理比例。\n\n流体力学更关心速度场、压力和通量，而不是固定材料点的总应变。黏性、压缩性和边界条件会决定是用欧拉方程、纳维-斯托克斯方程还是更复杂模型。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1660,9 +2488,21 @@
     {
       "chinese_name": "欧拉描述",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "欧拉描述站在固定空间点观察连续体场量，记录此刻经过该点的材料具有怎样的速度、压力或密度。它特别适合流入流出明显的流体问题。\n\n场量写作 $\\phi=\\phi(\\mathbf x,t)$，其中 $\\mathbf x$ 是当前空间坐标，$t$ 是时间。同一点 $\\mathbf x$ 可被不同物质点先后占据，因此随体变化要用物质导数表示。纳维斯托克斯方程、连续性方程和大多数计算流体力学格式都采用欧拉描述。\n\n欧拉描述中，运动学量首先服务于“同一块材料到了哪里、局部线元怎样变化”这一问题。判断它时要分清参考构形和当前构形、物质坐标和空间坐标；若把两套描述混用，应变、速度和密度变换都会出错。",
+      "complete_clues": [
+        "这是连续体运动学中的一种固定空间观察方式。",
+        "它关联管流、绕流、天气模型、固定网格和流入流出边界。",
+        "随体加速度在这种视角下写作 $D\\mathbf v/Dt=\\partial\\mathbf v/\\partial t+(\\mathbf v\\cdot\\nabla)\\mathbf v$。",
+        "它关注空间位置此刻发生什么，材料历史需额外输运追踪。",
+        "它的英文译名是 Eulerian description。"
+      ],
+      "fragmented_clues": [
+        "连续体运动学 固定空间观察",
+        "管流 绕流 天气模型 固定网格 流入流出",
+        "$D\\mathbf v/Dt=\\partial\\mathbf v/\\partial t+(\\mathbf v\\cdot\\nabla)\\mathbf v$",
+        "空间位置 此刻场量 材料历史 输运",
+        "Eulerian description"
+      ],
+      "explanation_markdown": "欧拉描述把观察点固定在空间位置，用场量 $\\mathbf v(\\mathbf x,t)$、$p(\\mathbf x,t)$ 描述当前经过该点的流体。它不追踪某个质点的完整历史，而是关注空间中每个位置此刻发生什么。\n\n物质加速度在欧拉描述下写成 $D\\mathbf v/Dt=\\partial\\mathbf v/\\partial t+(\\mathbf v\\cdot\\nabla)\\mathbf v$。第一项是固定点的时间变化，第二项是对流项。管流、绕流和天气模型多采用欧拉描述，因为边界和测量点通常固定；若要处理材料记忆，则需用物质导数或额外输运方程补充。\n\n欧拉描述固定空间位置观察流动，适合实验探针和计算网格。它天然处理流入流出边界，但材料历史必须用物质导数或标量输运方程补回来。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1684,9 +2524,21 @@
     {
       "chinese_name": "拉格朗日描述",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "拉格朗日描述跟随每个物质点运动，用物质坐标标记材料身份。它适合固体变形、自由边界和具有历史记忆的材料模型。\n\n场量写作 $\\phi=\\phi(\\mathbf X,t)$，其中 $\\mathbf X$ 是物质坐标，$t$ 是时间。当前位置由 $\\mathbf x=\\boldsymbol\\chi(\\mathbf X,t)$ 给出。由于同一标签始终代表同一块材料，塑性应变、损伤变量和温度历史都能自然附着在物质点上；代价是大变形网格可能严重畸变。\n\n拉格朗日描述中，运动学量首先服务于“同一块材料到了哪里、局部线元怎样变化”这一问题。判断它时要分清参考构形和当前构形、物质坐标和空间坐标；若把两套描述混用，应变、速度和密度变换都会出错。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是连续体运动学中的一种随体观察方式。",
+        "它关联固体边界、历史变量、初始缺陷、移动网格和自由表面。",
+        "运动写作 $\\mathbf x=\\boldsymbol\\chi(\\mathbf X,t)$。",
+        "它跟随同一块材料运动，适合记录路径但大流动会严重扭曲网格。",
+        "它的英文译名是 Lagrangian description。"
+      ],
+      "fragmented_clues": [
+        "连续体运动学 随体观察",
+        "固体边界 历史变量 初始缺陷 移动网格 自由表面",
+        "$\\mathbf x=\\boldsymbol\\chi(\\mathbf X,t)$",
+        "同一块材料 记录路径 网格扭曲",
+        "Lagrangian description"
+      ],
+      "explanation_markdown": "拉格朗日描述跟随同一物质点运动，用参考坐标 $\\mathbf X$ 标记材料。运动写作 $\\mathbf x=\\boldsymbol\\chi(\\mathbf X,t)$，表示原来在 $\\mathbf X$ 的材料点时刻 $t$ 到达 $\\mathbf x$。\n\n速度和加速度由 $\\mathbf v=\\partial\\boldsymbol\\chi/\\partial t$、$\\mathbf a=\\partial^2\\boldsymbol\\chi/\\partial t^2$ 给出。固体力学常用这种描述，因为材料边界、历史变量和初始缺陷容易跟踪。对强流动流体，拉格朗日网格可能严重扭曲，因此计算流体中更常转向欧拉描述或任意拉格朗日-欧拉方法。\n\n拉格朗日描述跟随材料点运动，适合固体和自由表面。网格随材料移动时历史变量清楚，但大变形流动中网格可能严重扭曲，需要重映或粒子方法。固体冲击和大变形问题中，也常需要重网格化保持计算质量。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1708,9 +2560,21 @@
     {
       "chinese_name": "物质导数",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "物质导数表示沿材料点运动轨迹观察某个场量时的变化率。它把固定空间点的局部变化和材料穿过空间梯度产生的变化合在一起。\n\n对标量场有 $D\\phi/Dt=\\partial_t\\phi+\\mathbf v\\cdot\\nabla\\phi$，其中 $\\phi$ 是场量，$\\mathbf v$ 是速度场。第一项是局部时间变化，第二项是对流贡献。对速度场取物质导数得到加速度，因此欧拉形式的流体方程离不开这个算符。\n\n物质导数中，运动学量首先服务于“同一块材料到了哪里、局部线元怎样变化”这一问题。判断它时要分清参考构形和当前构形、物质坐标和空间坐标；若把两套描述混用，应变、速度和密度变换都会出错。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是欧拉场论中连接随体变化的微分算子。",
+        "它关联温度、浓度、速度、涡量输运和流体加速度。",
+        "对标量场有 $D\\phi/Dt=\\partial\\phi/\\partial t+\\mathbf v\\cdot\\nabla\\phi$。",
+        "它把固定点时间变化与穿过空间梯度带来的变化相加。",
+        "它的英文译名是 material derivative。"
+      ],
+      "fragmented_clues": [
+        "欧拉场论 随体变化 微分算子",
+        "温度 浓度 速度 涡量输运 加速度",
+        "$D\\phi/Dt=\\partial\\phi/\\partial t+\\mathbf v\\cdot\\nabla\\phi$",
+        "固定点时间变化 空间梯度 移动贡献",
+        "material derivative"
+      ],
+      "explanation_markdown": "物质导数表示沿着同一物质点运动路径看到的变化率。对标量场 $\\phi(\\mathbf x,t)$，公式为 $D\\phi/Dt=\\partial\\phi/\\partial t+\\mathbf v\\cdot\\nabla\\phi$。\n\n这里 $\\partial\\phi/\\partial t$ 是固定空间点的局部变化，$\\mathbf v\\cdot\\nabla\\phi$ 是物质点移动到不同位置带来的对流变化。对速度场使用物质导数就得到加速度。它把欧拉场量转换成随体变化，是连续性方程、能量方程和纳维-斯托克斯方程中连接两种视角的关键算子。\n\n物质导数表示跟随同一物质点看到的变化率。它等于局部时间变化加对流项；因此稳态流场中，物质点仍可能因穿过空间梯度而经历变化。温度、浓度和涡量输运方程中都会出现同样结构。它把欧拉场量转回随体观察。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1732,9 +2596,21 @@
     {
       "chinese_name": "对流导数",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "对流导数是物质导数中由空间非均匀性和材料运动共同产生的部分。即使场在固定空间点不随时间变，运动中的质点也可能遇到不同取值。\n\n标量场的对流项为 $(\\mathbf v\\cdot\\nabla)\\phi$，其中 $\\mathbf v$ 是速度场，$\\nabla\\phi$ 是空间梯度。在动量方程中，$(\\mathbf v\\cdot\\nabla)\\mathbf v$ 产生非线性惯性项。高速绕流、喷流和湍流中的复杂性很大一部分来自这种对流非线性。\n\n运动学量首先服务于“同一块材料到了哪里、局部线元怎样变化”这一问题。判断它时要分清参考构形和当前构形、物质坐标和空间坐标；若把两套描述混用，应变、速度和密度变换都会出错。 建模时要同时估计雷诺数、马赫数和壁面条件，哪些项可忽略往往由这些量而不是方程名称决定。",
+      "complete_clues": [
+        "这是欧拉场论中的一种空间输运项。",
+        "它关联非均匀速度场、惯性非线性、稳态流和随体变化。",
+        "对速度场常见形式为 $(\\mathbf v\\cdot\\nabla)\\mathbf v$。",
+        "它来自物理量被速度场带到不同位置，并不是新的守恒律。",
+        "它的英文译名是 convective derivative。"
+      ],
+      "fragmented_clues": [
+        "欧拉场论 空间输运项",
+        "非均匀速度场 惯性非线性 稳态流 随体变化",
+        "$(\\mathbf v\\cdot\\nabla)\\mathbf v$",
+        "速度携带 不同位置 非守恒律",
+        "convective derivative"
+      ],
+      "explanation_markdown": "对流导数通常指物质导数中的空间输运部分，即 $\\mathbf v\\cdot\\nabla\\phi$。它描述物质点穿过非均匀场时，即使固定位置的场不随时间变，随体观测仍会变化。\n\n对速度场，对流加速度为 $(\\mathbf v\\cdot\\nabla)\\mathbf v$。这里 $\\mathbf v$ 既决定移动方向，又被求空间梯度。稳态管流中 $\\partial/\\partial t=0$，但流线弯曲或速度大小沿程变化时仍可有对流加速度。对流导数不是新的守恒律，而是欧拉描述下随体变化的几何项。\n\n对流导数强调速度场把物理量从一个空间位置带到另一个位置造成的变化。它是欧拉描述中非线性的主要来源，也解释了高速流动中惯性项的形式。这也是流体方程非线性比固体小变形方程强得多的原因之一。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1756,9 +2632,21 @@
     {
       "chinese_name": "不可压缩流",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "不可压缩流假设流体微团体积不随运动改变，密度沿物质轨迹保持恒定。它不是简单等同于低速，而是要求压力变化造成的密度变化可忽略。\n\n速度场满足 $\\nabla\\cdot\\mathbf v=0$，其中 $\\mathbf v$ 是速度。这个约束使压力在方程中扮演维持体积不变的拉格朗日乘子。水流、润滑流和低马赫数空气流常可近似不可压缩，但声波和激波问题不能这样处理。\n\n不可压缩流中，流体概念通常要同时比较惯性、黏性、压缩性和边界影响。无黏、不可压缩或稳态假设能大幅简化方程，但壁面、激波、旋涡和湍流常会把被忽略的项重新带回主导位置。 建模时要同时估计雷诺数、马赫数和壁面条件，哪些项可忽略往往由这些量而不是方程名称决定。",
+      "complete_clues": [
+        "这是流体力学中的一种体积不变近似。",
+        "它关联液体、低速气体、压力约束和速度场散度条件。",
+        "密度恒定时写作 $\\nabla\\cdot\\mathbf v=0$。",
+        "压力主要充当约束乘子，使流体微团沿运动保持体积不变。",
+        "它的英文译名是 incompressible flow。"
+      ],
+      "fragmented_clues": [
+        "流体力学 体积不变近似",
+        "液体 低速气体 压力约束 速度散度",
+        "$\\nabla\\cdot\\mathbf v=0$",
+        "压力乘子 流体微团 体积不变",
+        "incompressible flow"
+      ],
+      "explanation_markdown": "不可压缩流假定流体微团体积不随运动改变。若密度恒定，连续性方程化为 $\\nabla\\cdot\\mathbf v=0$，其中 $\\mathbf v$ 是速度场。\n\n这个条件表示流入任意小体积的体积流量等于流出量。不可压缩并不要求速度小，只要求密度变化可忽略；液体和低速气体常这样近似。与可压缩流相比，压力在不可压缩方程中主要充当约束乘子，用来保证速度场散度为零，而不是只由状态方程直接给出。\n\n不可压缩流要求材料体积不变，常写成速度散度为零。它不等于密度绝对恒定的所有情形；关键是沿物质点运动密度变化可忽略。数值上它还会引入压力作为约束变量。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1780,9 +2668,21 @@
     {
       "chinese_name": "可压缩流",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "可压缩流允许密度随压力、温度和速度场显著变化，体积压缩和膨胀是动力学的一部分。高速气体、声波和激波都需要可压缩描述。\n\n质量守恒可写为 $D\\rho/Dt+\\rho\\nabla\\cdot\\mathbf v=0$，其中 $\\rho$ 是密度，$\\mathbf v$ 是速度场。速度散度为负表示压缩，为正表示膨胀。还需能量方程和状态方程把压力、温度、密度联系起来，马赫数决定可压缩效应强弱。\n\n可压缩流中，流体概念通常要同时比较惯性、黏性、压缩性和边界影响。无黏、不可压缩或稳态假设能大幅简化方程，但壁面、激波、旋涡和湍流常会把被忽略的项重新带回主导位置。 建模时要同时估计雷诺数、马赫数和壁面条件，哪些项可忽略往往由这些量而不是方程名称决定。",
+      "complete_clues": [
+        "这是流体力学中允许密度显著变化的一类流动。",
+        "它关联高速气体、声波、激波、状态方程和能量方程。",
+        "质量平衡保留为 $\\partial\\rho/\\partial t+\\nabla\\cdot(\\rho\\mathbf v)=0$。",
+        "马赫数不小时，压力扰动的有限传播速度会明显改变流场。",
+        "它的英文译名是 compressible flow。"
+      ],
+      "fragmented_clues": [
+        "流体力学 密度可变流动",
+        "高速气体 声波 激波 状态方程 能量方程",
+        "$\\partial\\rho/\\partial t+\\nabla\\cdot(\\rho\\mathbf v)=0$",
+        "马赫数 压力扰动 有限传播速度",
+        "compressible flow"
+      ],
+      "explanation_markdown": "可压缩流中密度随压力、温度或速度场显著变化，连续性方程必须保留 $\\partial\\rho/\\partial t+\\nabla\\cdot(\\rho\\mathbf v)=0$。这里 $\\rho$ 是密度，$\\mathbf v$ 是速度。\n\n气体高速流、激波和声波都属于典型可压缩问题。判断压缩性常用马赫数 $Ma=U/c$，其中 $U$ 是特征速度，$c$ 是声速；当 $Ma$ 不小，压力扰动传播速度有限就会影响流场。可压缩流通常还要联立能量方程和状态方程，不能只靠不可压缩的速度散度约束。\n\n可压缩流中压力扰动以有限声速传播，密度变化参与动力学。马赫数较大时，能量方程和状态方程不可省略，激波和膨胀波也会出现。喷管、激波管和高速绕流都必须按可压缩模型处理。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1804,9 +2704,21 @@
     {
       "chinese_name": "牛顿流体",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "牛顿流体的黏性应力与应变率线性相关，比例系数为黏度。水、空气和许多简单液体在常温常压下可近似为牛顿流体。\n\n不可压缩情形的偏黏性应力为 $\\boldsymbol\\tau=2\\mu\\mathbf D$，其中 $\\boldsymbol\\tau$ 是黏性应力，$\\mu$ 是动力黏度，$\\mathbf D$ 是应变率张量。这个本构与动量守恒结合得到纳维斯托克斯方程。若黏度随剪切率或历史变化，就进入非牛顿流体范围。\n\n牛顿流体中，流体概念通常要同时比较惯性、黏性、压缩性和边界影响。无黏、不可压缩或稳态假设能大幅简化方程，但壁面、激波、旋涡和湍流常会把被忽略的项重新带回主导位置。 建模时要同时估计雷诺数、马赫数和壁面条件，哪些项可忽略往往由这些量而不是方程名称决定。",
+      "complete_clues": [
+        "这是流体本构中的一种线性黏性模型。",
+        "它关联水、空气、剪切率、常黏性系数和纳维-斯托克斯方程。",
+        "简单剪切中写作 $\\tau=\\mu\\dot\\gamma$。",
+        "判据不是黏性强弱，而是剪切应力与剪切率成固定比例。",
+        "它的英文译名是 Newtonian fluid。"
+      ],
+      "fragmented_clues": [
+        "流体本构 线性黏性模型",
+        "水 空气 剪切率 常系数 动量方程",
+        "$\\tau=\\mu\\dot\\gamma$",
+        "剪切应力 剪切率 固定比例 非强弱",
+        "Newtonian fluid"
+      ],
+      "explanation_markdown": "牛顿流体满足黏性应力与应变率成正比，比例系数在给定温度和压力下为常数。简单剪切中写成 $\\tau=\\mu\\dot\\gamma$，其中 $\\tau$ 是剪切应力，$\\dot\\gamma$ 是剪切率，$\\mu$ 是动力黏度。\n\n三维不可压缩形式可写为 $\\boldsymbol\\tau=2\\mu\\mathbf D$，$\\mathbf D$ 是应变率张量。水、空气和许多低分子液体常可近似为牛顿流体。它不同于“黏度很小”的流体；即使黏度大，只要应力-剪切率关系仍线性且无明显时间记忆，也可称为牛顿流体。\n\n牛顿流体的黏性应力与应变率成线性关系，黏度在给定温度压力下近似常数。水和空气常可这样处理；它和是否可压缩是两个不同判断。温度变化很大时，即便是水和空气也要更新黏度。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1828,9 +2740,21 @@
     {
       "chinese_name": "非牛顿流体",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "非牛顿流体不满足剪切应力与剪切率的简单线性比例。其表观黏度可能依赖剪切率、时间、颗粒结构、聚合物拉伸或屈服过程。\n\n抽象写法为 $\\boldsymbol\\tau=\\boldsymbol\\tau(\\mathbf D,\\text{history})$，其中 $\\boldsymbol\\tau$ 是黏性应力，$\\mathbf D$ 是应变率张量，history 表示历史变量。剪切变稀、剪切增稠、宾汉屈服和黏弹性都属于非牛顿行为。血液、泥浆、牙膏和聚合物熔体常需这类模型。\n\n非牛顿流体中，流体概念通常要同时比较惯性、黏性、压缩性和边界影响。无黏、不可压缩或稳态假设能大幅简化方程，但壁面、激波、旋涡和湍流常会把被忽略的项重新带回主导位置。 建模时要同时估计雷诺数、马赫数和壁面条件，哪些项可忽略往往由这些量而不是方程名称决定。",
+      "complete_clues": [
+        "这是流体本构中的一类非线性黏性行为。",
+        "它关联聚合物溶液、泥浆、血液、剪切变稀和剪切增稠。",
+        "幂律模型常写成 $\\tau=K\\dot\\gamma^n$。",
+        "表观黏性会随剪切率、时间或历史改变，不能用单个常数概括。",
+        "它的英文译名是 non-Newtonian fluid。"
+      ],
+      "fragmented_clues": [
+        "流体本构 非线性黏性行为",
+        "聚合物溶液 泥浆 血液 剪切变稀 剪切增稠",
+        "$\\tau=K\\dot\\gamma^n$",
+        "表观黏性 剪切率 时间 历史 单常数失效",
+        "non-Newtonian fluid"
+      ],
+      "explanation_markdown": "非牛顿流体不服从固定比例的牛顿黏性定律，表观黏度会随剪切率、时间或应力状态改变。常用幂律模型写成 $\\tau=K\\dot\\gamma^n$。\n\n这里 $K$ 是稠度系数，$n$ 是流动指数；$n<1$ 表示剪切变稀，$n>1$ 表示剪切增稠。血液、聚合物溶液、泥浆和淀粉悬浮液都可能表现非牛顿行为。它与黏弹性有交叉但不等同：非牛顿强调黏性关系非线性，黏弹性还强调储能、松弛和历史记忆。\n\n非牛顿流体的表观黏度随剪切率、时间或历史改变。剪切变稀、剪切增稠、屈服应力和触变性都属此类，不能用一个常数黏度概括。血液、泥浆、熔体和番茄酱都是常见例子。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1852,9 +2776,21 @@
     {
       "chinese_name": "黏度",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "黏度衡量流体抵抗剪切流动的能力，反映相邻流层之间动量交换的强弱。黏度越大，同样速度梯度下所需剪切应力越大。\n\n简单平行剪切中 $\\tau=\\mu\\,du/dy$，其中 $\\tau$ 是剪切应力，$\\mu$ 是动力黏度，$du/dy$ 是速度梯度。它控制管流压降、边界层厚度和流动耗散。温度会显著影响黏度，液体通常随温度升高变稀，气体则常相反。\n\n黏度中，流体概念通常要同时比较惯性、黏性、压缩性和边界影响。无黏、不可压缩或稳态假设能大幅简化方程，但壁面、激波、旋涡和湍流常会把被忽略的项重新带回主导位置。 建模时要同时估计雷诺数、马赫数和壁面条件，哪些项可忽略往往由这些量而不是方程名称决定。",
+      "complete_clues": [
+        "这是流体力学中衡量内摩擦强弱的物性量。",
+        "它关联层间相对滑动、剪切应力、温度、浓度和耗散。",
+        "牛顿剪切关系可写成 $\\tau=\\mu\\,du/dy$。",
+        "它描述抵抗剪切变形速率的能力，不等同于密度或厚重感。",
+        "它的英文译名是 viscosity。"
+      ],
+      "fragmented_clues": [
+        "流体力学 内摩擦物性量",
+        "层间滑动 剪切应力 温度 浓度 耗散",
+        "$\\tau=\\mu\\,du/dy$",
+        "抵抗剪切速率 非密度 非厚重感",
+        "viscosity"
+      ],
+      "explanation_markdown": "黏度衡量流体抵抗相邻层相对滑动的能力，也就是内摩擦强弱。简单剪切中牛顿黏性定律为 $\\tau=\\mu\\,du/dy$，其中 $\\tau$ 是剪切应力，$du/dy$ 是速度梯度，$\\mu$ 是动力黏度。\n\n黏度越大，同样剪切率需要的剪切应力越大。它不是密度，也不是“厚重感”的全部来源；蜂蜜黏度大，水黏度小，但惯性效应还要看密度和速度。流动相似中常用运动黏度 $\\nu=\\mu/\\rho$，因为它直接比较黏性扩散与惯性输运。\n\n黏度衡量流体抵抗剪切变形速率的能力。动力黏度进入应力本构，运动黏度则把黏性扩散与密度合在一起；两者在量纲和用途上不同。温度、浓度和剪切历史都可能改变实际测得的黏性响应。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1876,9 +2812,21 @@
     {
       "chinese_name": "动力黏度",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "动力黏度是牛顿流体中剪切应力与剪切率之间的比例系数，直接衡量内摩擦强度。它的量纲是应力乘以时间。\n\n定义为 $\\mu=\\tau/(du/dy)$，其中 $\\mu$ 是动力黏度，$\\tau$ 是剪切应力，$du/dy$ 是速度梯度。动力黏度进入黏性应力张量和纳维斯托克斯方程的黏性项。润滑、管道输运、颗粒沉降和微流控阻力都对它十分敏感。\n\n动力黏度中，流体概念通常要同时比较惯性、黏性、压缩性和边界影响。无黏、不可压缩或稳态假设能大幅简化方程，但壁面、激波、旋涡和湍流常会把被忽略的项重新带回主导位置。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是流体本构中的一个黏性比例系数。",
+        "它关联剪切应力、剪切率、壁面摩擦、润滑和管流压降。",
+        "定义为 $\\mu=\\tau/\\dot\\gamma$。",
+        "它直接进入黏性应力和黏性力项，单位通常写作帕秒。",
+        "它的英文译名是 dynamic viscosity。"
+      ],
+      "fragmented_clues": [
+        "流体本构 黏性比例系数",
+        "剪切应力 剪切率 壁面摩擦 润滑 管流压降",
+        "$\\mu=\\tau/\\dot\\gamma$",
+        "黏性应力 黏性力 帕秒",
+        "dynamic viscosity"
+      ],
+      "explanation_markdown": "动力黏度 $\\mu$ 是牛顿黏性定律中的比例系数，定义为 $\\mu=\\tau/\\dot\\gamma$。这里 $\\tau$ 是剪切应力，$\\dot\\gamma$ 是剪切率。\n\n它的单位是 Pa·s，直接表示产生单位剪切率需要多少应力。动力黏度进入纳维-斯托克斯方程的黏性项 $\\mu\\nabla^2\\mathbf v$，因此影响阻力、压降和耗散。与运动黏度不同，$\\mu$ 不除以密度；同样动力黏度的两种流体若密度不同，动量扩散相对惯性的强弱仍会不同。\n\n动力黏度直接把剪切应力与剪切率联系起来，单位为帕秒。它是材料参数，受温度强烈影响；在纳维-斯托克斯方程中控制黏性力大小。剪切流中的壁面摩擦应力通常直接由它控制。润滑、管流压降和边界层摩擦都受它影响。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1900,9 +2848,21 @@
     {
       "chinese_name": "运动黏度",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "运动黏度把动力黏度除以密度，衡量黏性动量扩散相对于流体惯性质量的强弱。它的量纲与扩散系数相同。\n\n定义为 $\\nu=\\mu/\\rho$，其中 $\\nu$ 是运动黏度，$\\mu$ 是动力黏度，$\\rho$ 是密度。在不可压缩牛顿流体中，速度扩散项常写成 $\\nu\\nabla^2\\mathbf v$。雷诺数也可写为 $Re=UL/\\nu$，因此运动黏度直接影响层流或湍流倾向。\n\n运动黏度中，流体概念通常要同时比较惯性、黏性、压缩性和边界影响。无黏、不可压缩或稳态假设能大幅简化方程，但壁面、激波、旋涡和湍流常会把被忽略的项重新带回主导位置。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是流体尺度分析中的一个动量扩散参数。",
+        "它关联雷诺数、边界层厚度、惯性与黏性的比例比较。",
+        "定义为 $\\nu=\\mu/\\rho$。",
+        "它把密度吸收入黏性参数，量纲像扩散系数。",
+        "它的英文译名是 kinematic viscosity。"
+      ],
+      "fragmented_clues": [
+        "流体尺度分析 动量扩散参数",
+        "雷诺数 边界层厚度 惯性 黏性比例",
+        "$\\nu=\\mu/\\rho$",
+        "密度吸收 扩散系数量纲",
+        "kinematic viscosity"
+      ],
+      "explanation_markdown": "运动黏度定义为 $\\nu=\\mu/\\rho$，其中 $\\mu$ 是动力黏度，$\\rho$ 是密度。它的单位是 $\\mathrm{m^2/s}$，形式上像动量的扩散系数。\n\n在不可压缩纳维-斯托克斯方程除以密度后，黏性项常写成 $\\nu\\nabla^2\\mathbf v$。雷诺数 $Re=UL/\\nu$ 正是用运动黏度比较惯性输运和黏性扩散。运动黏度不是“更真实”的黏度，而是把密度影响吸收进去后更适合做尺度分析的参数。\n\n运动黏度是动力黏度除以密度，表示动量扩散能力。雷诺数常用它写成 $UL/\\nu$；同样动力黏度下，密度不同会给出不同运动黏度。它更像速度扰动扩散的系数，所以在边界层估算中很方便。空气和水的运动黏度差异会改变相同尺度下的雷诺数。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1924,9 +2884,21 @@
     {
       "chinese_name": "纳维斯托克斯方程",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "纳维斯托克斯方程把牛顿流体的动量守恒、压力作用和黏性扩散放在一起，是经典流体力学的核心控制方程。\n\n不可压缩常黏度形式为 $\\rho(\\partial_t\\mathbf v+\\mathbf v\\cdot\\nabla\\mathbf v)=-\\nabla p+\\mu\\nabla^2\\mathbf v+\\rho\\mathbf b$，其中 $\\rho$ 是密度，$p$ 是压力，$\\mu$ 是黏度，$\\mathbf b$ 是体力。还要配合 $\\nabla\\cdot\\mathbf v=0$。非线性对流项和黏性项的竞争孕育边界层与湍流。\n\n流体概念通常要同时比较惯性、黏性、压缩性和边界影响。无黏、不可压缩或稳态假设能大幅简化方程，但壁面、激波、旋涡和湍流常会把被忽略的项重新带回主导位置。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。 黏性项、压力项和边界条件的量纲也要相互一致。",
+      "complete_clues": [
+        "这是流体力学中的一组黏性动量方程。",
+        "它关联牛顿本构、压力梯度、黏性扩散、边界阻力和湍动建模。",
+        "不可压缩常黏性形式为 $\\rho(\\partial\\mathbf v/\\partial t+\\mathbf v\\cdot\\nabla\\mathbf v)=-\\nabla p+\\mu\\nabla^2\\mathbf v+\\rho\\mathbf b$。",
+        "它比无黏动量方程多出黏性项，因此能描述阻力、耗散和近壁效应。",
+        "它的英文译名是 Navier-Stokes equation。"
+      ],
+      "fragmented_clues": [
+        "流体力学 黏性动量方程",
+        "牛顿本构 压力梯度 黏性扩散 边界阻力 湍动建模",
+        "$\\rho(\\partial\\mathbf v/\\partial t+\\mathbf v\\cdot\\nabla\\mathbf v)=-\\nabla p+\\mu\\nabla^2\\mathbf v+\\rho\\mathbf b$",
+        "黏性项 阻力 耗散 近壁效应",
+        "Navier-Stokes equation"
+      ],
+      "explanation_markdown": "纳维-斯托克斯方程是牛顿流体的动量守恒方程。不可压缩、常黏度形式为 $\\rho(\\partial\\mathbf v/\\partial t+\\mathbf v\\cdot\\nabla\\mathbf v)=-\\nabla p+\\mu\\nabla^2\\mathbf v+\\rho\\mathbf b$。\n\n这里 $\\rho$ 是密度，$p$ 是压力，$\\mu$ 是动力黏度，$\\mathbf b$ 是体力。左边是惯性，右边依次是压力梯度、黏性扩散和体力。它比欧拉方程多出黏性项，因此能描述边界层、阻力和耗散；但湍流高雷诺数解对初始和边界条件极敏感。\n\n纳维-斯托克斯方程把质量守恒、动量守恒和牛顿流体本构合在一起。它不是所有流体的通用方程；非牛顿、稀薄气体或多相流都需要额外模型。边界条件和压力约束常比方程形式本身更难处理。湍流建模通常从它的平均或滤波形式出发。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1948,9 +2920,21 @@
     {
       "chinese_name": "欧拉方程",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "欧拉方程描述无黏流体的运动，是纳维斯托克斯方程去掉黏性应力后的理想极限。它适合黏性只在薄边界层中重要的外部主流区。\n\n方程为 $\\rho D\\mathbf v/Dt=-\\nabla p+\\rho\\mathbf b$，其中 $\\rho$ 是密度，$D/Dt$ 是物质导数，$p$ 是压力，$\\mathbf b$ 是体力。由于没有黏性项，它不能直接满足固壁无滑移条件。伯努利方程、势流理论和激波外的理想流分析都与它密切相关。\n\n欧拉方程中，流体概念通常要同时比较惯性、黏性、压缩性和边界影响。无黏、不可压缩或稳态假设能大幅简化方程，但壁面、激波、旋涡和湍流常会把被忽略的项重新带回主导位置。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是流体力学中的一组无黏动量方程。",
+        "它关联高雷诺数外流、压力梯度、惯性项和边界层外区。",
+        "常写成 $\\rho D\\mathbf v/Dt=-\\nabla p+\\rho\\mathbf b$。",
+        "它忽略黏性应力，不能单独满足固壁无滑移条件。",
+        "它的英文译名是 Euler equation。"
+      ],
+      "fragmented_clues": [
+        "流体力学 无黏动量方程",
+        "高雷诺数外流 压力梯度 惯性 边界层外区",
+        "$\\rho D\\mathbf v/Dt=-\\nabla p+\\rho\\mathbf b$",
+        "忽略黏性 固壁无滑移局限",
+        "Euler equation"
+      ],
+      "explanation_markdown": "欧拉方程描述无黏流体的动量守恒，可看作纳维-斯托克斯方程在黏性项忽略时的形式。常写成 $\\rho D\\mathbf v/Dt=-\\nabla p+\\rho\\mathbf b$。\n\n这里 $D\\mathbf v/Dt$ 是物质加速度，$p$ 是压力，$\\mathbf b$ 是单位质量体力。无黏近似适合外流主体区域或高雷诺数流动远离壁面的部分。它不能直接满足固壁无滑移条件，也不能描述黏性耗散和边界层；这些差异正是欧拉方程与纳维-斯托克斯方程的主要分界。\n\n流体欧拉方程忽略黏性应力，适合高雷诺数外流或黏性集中在薄边界层外的区域。它仍保留惯性和压力梯度，但无法单独满足固壁无滑移条件。因此它常与边界层理论配合使用，而不是单独描述近壁全流场。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1972,9 +2956,21 @@
     {
       "chinese_name": "伯努利方程",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "伯努利方程表达理想流中沿流线的机械能平衡，把压力能、动能和势能联系起来。它不是任意流动都适用，而依赖清楚的近似条件。\n\n常见形式为 $p+\\frac12\\rho v^2+\\rho gz=\\text{const}$，其中 $p$ 是压力，$\\rho$ 是密度，$v$ 是流速，$gz$ 是重力势。通常要求稳态、不可压缩、无黏，并沿同一流线使用。文丘里管、皮托管和喷流速度估算都来自这一能量关系。\n\n伯努利方程中，流体概念通常要同时比较惯性、黏性、压缩性和边界影响。无黏、不可压缩或稳态假设能大幅简化方程，但壁面、激波、旋涡和湍流常会把被忽略的项重新带回主导位置。 建模时要同时估计雷诺数、马赫数和壁面条件，哪些项可忽略往往由这些量而不是方程名称决定。",
+      "complete_clues": [
+        "这是流体力学中的一种机械能关系。",
+        "它关联定常流线、无黏近似、压力速度高度交换和损失修正。",
+        "常见形式为 $p+\\frac12\\rho v^2+\\rho gz=\\text{const}$。",
+        "简单形式只沿满足条件的流线成立，有泵功或黏性损失时要补充项。",
+        "它的英文译名是 Bernoulli equation。"
+      ],
+      "fragmented_clues": [
+        "流体力学 机械能关系",
+        "定常流线 无黏近似 压力 速度 高度",
+        "$p+\\frac12\\rho v^2+\\rho gz=\\text{const}$",
+        "流线条件 泵功 黏性损失 补充项",
+        "Bernoulli equation"
+      ],
+      "explanation_markdown": "伯努利方程表达理想流体沿流线的机械能守恒。对定常、不可压缩、无黏且沿同一流线的流动，常写成 $p+\\frac12\\rho v^2+ho gz=\\text{常数}$。\n\n这里 $p$ 是压强，$\\rho$ 是密度，$v$ 是速率，$z$ 是高度，$g$ 是重力加速度。它说明速度增大常伴随静压降低。伯努利方程不是任意流动的通用压强公式；有强黏性耗散、泵功、激波或跨越不同流线时，需要加入损失项或改用完整动量、能量方程。\n\n伯努利方程沿流线表达机械能守恒，依赖定常、无黏或特定可压缩假设。若有泵、粘性损失、激波或强非定常效应，简单伯努利式就要修正。工程应用中常把损失水头或机械功项显式补进去。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1996,9 +2992,21 @@
     {
       "chinese_name": "雷诺数",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "雷诺数比较惯性效应和黏性效应的强弱，是判断流动相似性、层流或湍流倾向的基本无量纲数。它把尺度、速度和流体性质合在一起。\n\n定义为 $Re=\\rho UL/\\mu=UL/\\nu$，其中 $U$ 是特征速度，$L$ 是特征长度，$\\rho$ 是密度，$\\mu$ 是动力黏度，$\\nu$ 是运动黏度。小 $Re$ 下黏性主导，流动常平滑；大 $Re$ 下惯性主导，更易出现分离和湍流。临界值依赖几何和扰动。\n\n雷诺数中，流体概念通常要同时比较惯性、黏性、压缩性和边界影响。无黏、不可压缩或稳态假设能大幅简化方程，但壁面、激波、旋涡和湍流常会把被忽略的项重新带回主导位置。 建模时要同时估计雷诺数、马赫数和壁面条件，哪些项可忽略往往由这些量而不是方程名称决定。",
+      "complete_clues": [
+        "这是流体相似分析中的一个无量纲比值。",
+        "它关联惯性、黏性、近壁薄层、转捩和缩尺实验。",
+        "定义为 $Re=\\rho UL/\\mu=UL/\\nu$。",
+        "它比较惯性输运与黏性扩散，不用来衡量压缩性强弱。",
+        "它的英文译名是 Reynolds number。"
+      ],
+      "fragmented_clues": [
+        "流体相似 无量纲比值",
+        "惯性 黏性 近壁薄层 转捩 缩尺实验",
+        "$Re=\\rho UL/\\mu=UL/\\nu$",
+        "惯性输运 黏性扩散 非压缩性",
+        "Reynolds number"
+      ],
+      "explanation_markdown": "雷诺数比较惯性效应和黏性效应的相对大小，定义为 $Re=\\rho UL/\\mu=UL/\\nu$。这里 $U$ 是特征速度，$L$ 是特征长度，$\\mu$ 是动力黏度，$\\nu$ 是运动黏度。\n\n小 $Re$ 下黏性主导，流动平滑且扰动容易被扩散；大 $Re$ 下惯性主导，边界层变薄并可能转捩为湍流。雷诺数不同于马赫数：前者看黏性与惯性，后者看速度与声速、压缩性。风洞缩尺实验常需匹配 $Re$ 才能正确模拟黏性阻力和边界层状态。\n\n雷诺数比较惯性与黏性效应，是相似实验和转捩判断的重要参数。它不同于马赫数；前者看黏性比例，后者看压缩性和声速比例。缩尺模型若只匹配几何而不匹配它，阻力预测可能偏差很大。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2020,9 +3028,21 @@
     {
       "chinese_name": "边界层",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "边界层是高雷诺数流动靠近固壁处黏性效应集中的薄区域。外部流体可近似无黏，但壁面无滑移条件必须在这层内完成。\n\n平板层流估计为 $\\delta/L\\sim Re^{-1/2}$，其中 $\\delta$ 是边界层厚度，$L$ 是沿流向长度，$Re$ 是雷诺数。边界层内速度梯度大，壁面剪切和耗散显著。压力梯度不利时，边界层可能分离，导致阻力增大和尾流形成。\n\n边界层中，流体概念通常要同时比较惯性、黏性、压缩性和边界影响。无黏、不可压缩或稳态假设能大幅简化方程，但壁面、激波、旋涡和湍流常会把被忽略的项重新带回主导位置。 建模时要同时估计雷诺数、马赫数和壁面条件，哪些项可忽略往往由这些量而不是方程名称决定。",
+      "complete_clues": [
+        "这是流体力学中的一种近壁薄区域。",
+        "它关联无滑移条件、摩擦阻力、换热、分离和转捩。",
+        "平板层流厚度量级为 $\\delta\\sim\\sqrt{\\nu x/U}$。",
+        "它不是固定材料层，而是壁面附近速度梯度很大的空间区。",
+        "它的英文译名是 boundary layer。"
+      ],
+      "fragmented_clues": [
+        "流体力学 近壁薄区域",
+        "无滑移 摩擦阻力 换热 分离 转捩",
+        "$\\delta\\sim\\sqrt{\\nu x/U}$",
+        "非固定材料层 壁面附近 大速度梯度",
+        "boundary layer"
+      ],
+      "explanation_markdown": "边界层是高雷诺数流动中靠近固体壁面、黏性效应集中显著的薄区域。由于无滑移条件，壁面速度为零，而外层流体速度接近来流速度。\n\n平板层流边界层厚度量级为 $\\delta\\sim\\sqrt{\\nu x/U}$，其中 $x$ 是沿壁距离，$U$ 是外流速度，$\\nu$ 是运动黏度。边界层不是一层固定材料，而是速度梯度大的空间区域。它决定摩擦阻力、热交换和分离位置；马赫数主要影响压缩性，雷诺数则强烈影响边界层厚度和转捩。\n\n边界层把黏性影响限制在壁面附近薄层中，使外流可近似无黏。它的厚度、分离和转捩决定阻力与换热；高雷诺数通常让层更薄但更易失稳。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2044,9 +3064,21 @@
     {
       "chinese_name": "层流",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "层流中流体质点沿较规则、相互平滑的路径运动，速度脉动弱，相邻流层主要通过分子黏性交换动量。它常出现在低雷诺数或扰动较小的情形。\n\n雷诺数 $Re=\\rho UL/\\mu$ 中，$U,L$ 是特征速度和长度，$\\rho,\\mu$ 是密度和黏度。较小 $Re$ 通常有利于层流，但入口扰动和壁面粗糙也会影响转捩。圆管泊肃叶流的抛物线速度剖面就是典型层流解。\n\n层流中，流体概念通常要同时比较惯性、黏性、压缩性和边界影响。无黏、不可压缩或稳态假设能大幅简化方程，但壁面、激波、旋涡和湍流常会把被忽略的项重新带回主导位置。 建模时要同时估计雷诺数、马赫数和壁面条件，哪些项可忽略往往由这些量而不是方程名称决定。",
+      "complete_clues": [
+        "这是流体运动中的一种有序层状状态。",
+        "它关联低雷诺范围、圆管流、黏性扩散、弱混合和可预测阻力。",
+        "充分发展圆管情形有 $Q=\\pi R^4\\Delta p/(8\\mu L)$。",
+        "速度场较平滑，扰动容易被黏性抑制，经典剖面呈抛物线。",
+        "它的英文译名是 laminar flow。"
+      ],
+      "fragmented_clues": [
+        "流体运动 有序层状状态",
+        "低雷诺 圆管流 黏性扩散 弱混合 阻力规律",
+        "$Q=\\pi R^4\\Delta p/(8\\mu L)$",
+        "平滑速度场 扰动抑制 抛物线剖面",
+        "laminar flow"
+      ],
+      "explanation_markdown": "层流是流体以有序层状方式运动的状态，速度场随时间和空间变化较平滑。圆管中低雷诺数时常出现层流，典型判据是 $Re=\\rho UD/\\mu$ 低于临界范围。\n\n在圆管充分发展层流中，速度剖面呈抛物线，流量满足泊肃叶关系 $Q=\\pi R^4\\Delta p/(8\\mu L)$。这里 $R$ 是管半径，$\\Delta p$ 是压降，$L$ 是管长。层流并不意味着没有黏性，恰恰是黏性扩散有效抑制扰动；与湍流相比，它混合弱、阻力规律更可预测。\n\n层流中流体层有序滑过，速度脉动较弱，黏性扩散能平滑扰动。它不等于低速流动本身；是否层流主要由雷诺数、入口扰动和边界条件共同决定。圆管中经典临界雷诺数只是经验范围，不是绝对边界。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2068,9 +3100,21 @@
     {
       "chinese_name": "湍流",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "湍流具有强烈速度脉动、涡结构和多尺度能量级联。它并非完全无序，而是在纳维斯托克斯方程约束下表现出统计规律。\n\n雷诺分解写作 $\\mathbf v=\\overline{\\mathbf v}+\\mathbf v'$，其中 $\\overline{\\mathbf v}$ 是平均速度，$\\mathbf v'$ 是脉动速度。代入平均方程会出现雷诺应力，表示脉动对平均流的反馈。湍流显著增强混合、传热和阻力，是飞行、气象、管网和燃烧中的核心难题。\n\n湍流中，流体概念通常要同时比较惯性、黏性、压缩性和边界影响。无黏、不可压缩或稳态假设能大幅简化方程，但壁面、激波、旋涡和湍流常会把被忽略的项重新带回主导位置。 建模时要同时估计雷诺数、马赫数和壁面条件，哪些项可忽略往往由这些量而不是方程名称决定。",
+      "complete_clues": [
+        "这是流体运动中的一种多尺度脉动状态。",
+        "它关联高雷诺范围、涡结构、混合增强、阻力增加和统计平均。",
+        "速度分解常写作 $\\mathbf v=\\bar{\\mathbf v}+\\mathbf v'$。",
+        "它不是纯随机噪声，而是惯性非线性形成的宽尺度结构。",
+        "它的英文译名是 turbulence。"
+      ],
+      "fragmented_clues": [
+        "流体运动 多尺度脉动状态",
+        "高雷诺 涡结构 混合增强 阻力 统计平均",
+        "$\\mathbf v=\\bar{\\mathbf v}+\\mathbf v'$",
+        "非随机噪声 惯性非线性 宽尺度结构",
+        "turbulence"
+      ],
+      "explanation_markdown": "湍流是具有强烈脉动、涡结构和多尺度混合的流动状态，常在高雷诺数下出现。速度可分解为 $\\mathbf v=\\bar{\\mathbf v}+\\mathbf v'$，其中横线表示平均量，撇号表示脉动量。\n\n平均动量方程会出现雷诺应力 $-\\rho\\overline{v_i'v_j'}$，它代表湍流脉动输运的动量通量。湍流不是单纯“速度很快”，而是惯性非线性压倒黏性扩散后形成的复杂时空结构。它增强混合和阻力，也使直接数值模拟必须解析从大涡到耗散尺度的宽广尺度范围。\n\n湍流含多尺度涡旋和强烈脉动，瞬时场复杂但统计量可稳定。它不是完全随机噪声；能量级串、平均方程和湍流模型都试图描述其规律。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2092,9 +3136,21 @@
     {
       "chinese_name": "涡量",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "涡量是速度场的旋度，刻画局部流体微团的旋转趋势。流线弯曲不一定意味着涡量非零，关键在于邻近速度差造成的局部自旋。\n\n定义为 $\\boldsymbol\\omega=\\nabla\\times\\mathbf v$，其中 $\\boldsymbol\\omega$ 是涡量，$\\mathbf v$ 是速度场。无黏理想流中涡量可被流体携带和拉伸，黏性则会扩散涡量。边界层生成涡量，尾涡、涡街和湍流结构都常用涡量来识别。\n\n涡量中，流体概念通常要同时比较惯性、黏性、压缩性和边界影响。无黏、不可压缩或稳态假设能大幅简化方程，但壁面、激波、旋涡和湍流常会把被忽略的项重新带回主导位置。 建模时要同时估计雷诺数、马赫数和壁面条件，哪些项可忽略往往由这些量而不是方程名称决定。",
+      "complete_clues": [
+        "这是流体运动学中的一个局部旋度场量。",
+        "它关联近壁生成、尾迹、涡拉伸、局部自旋和二维绕流。",
+        "定义为 $\\boldsymbol\\omega=\\nabla\\times\\mathbf v$。",
+        "它是点上的旋转趋势，与闭合回路积分的全局量不同。",
+        "它的英文译名是 vorticity。"
+      ],
+      "fragmented_clues": [
+        "流体运动学 局部旋度场量",
+        "近壁生成 尾迹 涡拉伸 局部自旋 二维绕流",
+        "$\\boldsymbol\\omega=\\nabla\\times\\mathbf v$",
+        "点上旋转趋势 非闭合回路积分",
+        "vorticity"
+      ],
+      "explanation_markdown": "涡量是速度场的旋度，定义为 $\\boldsymbol\\omega=\\nabla\\times\\mathbf v$。它描述流体微团的局部旋转趋势，方向按右手定则给出。\n\n在二维流中，涡量常只有垂直平面的分量，大小约为局部角速度的两倍。边界层中无滑移条件会产生涡量，随后被流动输运和扩散。涡量不同于环量：涡量是点上的局部场量，环量是沿闭合曲线的积分；二者由斯托克斯定理联系，$\\Gamma=\\int_S\\boldsymbol\\omega\\cdot\\mathbf n\\,dS$。\n\n涡量是速度场旋度，描述局部旋转趋势而非流体团整体绕圈的轨迹。无黏流中涡量可被拉伸和输运，黏性则会扩散涡量。边界层分离和尾迹形成都可从涡量产生与输运来理解。涡量为零的区域仍可有速度势流。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2116,9 +3172,21 @@
     {
       "chinese_name": "环量",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "环量是速度沿闭合曲线的线积分，衡量流动绕该曲线的整体旋转强度。它把局部涡量和整体绕流效果联系起来。\n\n定义为 $\\Gamma=\\oint_C\\mathbf v\\cdot d\\mathbf l$，其中 $C$ 是闭合曲线，$\\mathbf v$ 是速度，$d\\mathbf l$ 是线元。由斯托克斯定理，环量等于穿过曲面涡量通量。翼型升力、点涡模型和开尔文环量定理都以 $\\Gamma$ 为中心。\n\n环量中，流体概念通常要同时比较惯性、黏性、压缩性和边界影响。无黏、不可压缩或稳态假设能大幅简化方程，但壁面、激波、旋涡和湍流常会把被忽略的项重新带回主导位置。 建模时要同时估计雷诺数、马赫数和壁面条件，哪些项可忽略往往由这些量而不是方程名称决定。",
+      "complete_clues": [
+        "这是流体运动学中的一个闭合回路线积分量。",
+        "它关联翼型升力、势流理论、局部旋度面积分和材料回路守恒。",
+        "定义为 $\\Gamma=\\oint_C\\mathbf v\\cdot d\\mathbf l$。",
+        "它把回路所围区域的旋转贡献累加成一个全局量。",
+        "它的英文译名是 circulation。"
+      ],
+      "fragmented_clues": [
+        "流体运动学 闭合回路线积分",
+        "翼型升力 势流 局部旋度面积分 材料回路",
+        "$\\Gamma=\\oint_C\\mathbf v\\cdot d\\mathbf l$",
+        "围域旋转贡献 全局量",
+        "circulation"
+      ],
+      "explanation_markdown": "环量是速度沿闭合曲线的线积分，定义为 $\\Gamma=\\oint_C\\mathbf v\\cdot d\\mathbf l$。它衡量一条闭合回路周围的整体旋转或绕流强度。\n\n由斯托克斯定理，$\\Gamma=\\int_S(\\nabla\\times\\mathbf v)\\cdot\\mathbf n\\,dS=\\int_S\\boldsymbol\\omega\\cdot\\mathbf n\\,dS$。这里 $S$ 是以曲线 $C$ 为边界的曲面，$\\boldsymbol\\omega$ 是涡量。环量在翼型升力和势流理论中很重要；它不是局部角速度，而是把回路所围区域的涡量累加起来。\n\n环量是速度沿闭合曲线的线积分，反映大尺度旋转强度。它与涡量通过斯托克斯定理相连；在理想正压流中，材料回路环量可守恒。机翼升力理论中，环量与升力之间有直接联系。因此它常作为二维绕流升力的全局量。闭合曲线选择会影响积分数值。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2140,9 +3208,21 @@
     {
       "chinese_name": "应变率",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "应变率表示变形随时间发生的速率，常用于流体、黏弹性和速率相关塑性。它关注瞬时伸长和剪切，而不追踪从初始状态累计了多少总变形。\n\n空间形式为 $\\dot{\\boldsymbol\\varepsilon}=\\frac12(\\nabla\\mathbf v+\\nabla\\mathbf v^T)$，其中 $\\mathbf v$ 是速度场，$T$ 表示转置。这个量也常记为应变率张量 $\\mathbf D$。牛顿流体黏性应力、塑性流动速率和耗散功率都直接依赖它。\n\n应变率中，应变量的选择取决于变形尺度和所在构形。小变形可用线性化张量，大转动或大伸长必须使用有限应变；同一物理伸长在参考描述和空间描述中会有不同但相容的数学表达。 使用时要先判断变形是否足够小；若转动或伸长不可忽略，线性化量会把几何效应漏掉。",
+      "complete_clues": [
+        "这是连续介质变形中的一种速率量。",
+        "它关联速度空间导数、牛顿黏性、冲击加载和速率敏感强度。",
+        "一维线性形式可写成 $\\dot\\varepsilon=d\\varepsilon/dt$。",
+        "它描述变形发生快慢，不等于材料点的平移速度。",
+        "它的英文译名是 strain rate。"
+      ],
+      "fragmented_clues": [
+        "连续介质变形 速率量",
+        "速度空间导数 牛顿黏性 冲击加载 速率敏感",
+        "$\\dot\\varepsilon=d\\varepsilon/dt$",
+        "变形快慢 非平移速度",
+        "strain rate"
+      ],
+      "explanation_markdown": "应变率表示应变随时间变化的快慢，在线性一维情形可写成 $\\dot\\varepsilon=d\\varepsilon/dt$。它关注变形发生的速率，而不是已经积累的应变量。\n\n在三维流动中，更完整的量是应变率张量 $\\mathbf D=(\\nabla\\mathbf v+\\nabla\\mathbf v^T)/2$。这里 $\\mathbf v$ 是速度场。牛顿流体的黏性应力与 $\\mathbf D$ 成正比，黏塑性和冲击问题也常对应变率敏感。应变率不同于速度本身：刚体整体平移速度很大，也可以没有应变率。\n\n应变率描述变形随时间发生的快慢，是应变的时间变化或速度梯度对称部分。流体本构通常依赖应变率，而固体弹性更常依赖累计应变。高应变率加载下，材料强度和耗散机制都可能改变。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2164,9 +3244,21 @@
     {
       "chinese_name": "速度梯度",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "速度梯度描述速度场在空间中的局部变化，是流动运动学的核心张量。它同时包含伸长、剪切和旋转信息。\n\n定义为 $\\mathbf L=\\nabla\\mathbf v$，其中 $L_{ij}=\\partial v_i/\\partial x_j$，$\\mathbf v$ 是速度场。对称部分 $\\mathbf D=(\\mathbf L+\\mathbf L^T)/2$ 是应变率张量，反对称部分是自旋张量。材料线元的瞬时变化、涡量、黏性应力和客观应力率都从速度梯度出发。\n\n速度梯度中，运动学量首先服务于“同一块材料到了哪里、局部线元怎样变化”这一问题。判断它时要分清参考构形和当前构形、物质坐标和空间坐标；若把两套描述混用，应变、速度和密度变换都会出错。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是流体与连续体运动学中的一个空间导数量。",
+        "它关联局部线性化、变形速率、自旋、局部旋度和耗散。",
+        "分量定义为 $L_{ij}=\\partial v_i/\\partial x_j$。",
+        "均匀平移时速度可以不为零，但这个空间导数量为零。",
+        "它的英文译名是 velocity gradient。"
+      ],
+      "fragmented_clues": [
+        "运动学 空间导数量",
+        "局部线性化 变形速率 自旋 局部旋度 耗散",
+        "$L_{ij}=\\partial v_i/\\partial x_j$",
+        "均匀平移 速度非零 空间导数为零",
+        "velocity gradient"
+      ],
+      "explanation_markdown": "速度梯度描述速度场在空间中的变化，定义为 $\\mathbf L=\\nabla\\mathbf v$，分量为 $L_{ij}=\\partial v_i/\\partial x_j$。它是局部流动形态的线性近似。\n\n$\\mathbf L$ 可分解为对称部分 $\\mathbf D=(\\mathbf L+\\mathbf L^T)/2$ 和反对称部分 $\\mathbf W=(\\mathbf L-\\mathbf L^T)/2$。$\\mathbf D$ 给出拉伸与剪切速率，$\\mathbf W$ 给出局部自旋。速度梯度比速度本身更直接进入黏性应力、涡量和有限变形中的速率形式；均匀平移速度虽不为零，但速度梯度为零。\n\n速度梯度包含拉伸、剪切和局部旋转信息。对称部分给应变率，反对称部分给旋转率；把它们分开才能正确写黏性应力和客观率。它也是涡量、剪切率和流体耗散率的共同来源。在非牛顿流体中，剪切率大小也由它计算。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2188,9 +3280,21 @@
     {
       "chinese_name": "应力边界条件",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "应力边界条件规定边界上给定的牵引力或表面载荷，是连续体力学中的自然边界条件。它告诉物体边界如何受外界推、拉或压。\n\n写作 $\\boldsymbol\\sigma\\mathbf n=\\bar{\\mathbf t}$，其中 $\\boldsymbol\\sigma$ 是应力张量，$\\mathbf n$ 是外法向，$\\bar{\\mathbf t}$ 是给定牵引力。自由表面取牵引力为零，受压表面可给定法向压力。它与位移边界条件互补，同一自由度上不能随意同时指定两者。\n\n边界和弱式决定了局部方程怎样变成可求解问题。位移约束控制运动学自由度，应力条件控制外力输入；弱式通过虚功把二者放在同一积分框架中，也是有限元离散的基础。 同一受力状态在不同截面上会呈现不同牵引力，因此必须同时说明法向、面积构形和符号约定。",
+      "complete_clues": [
+        "这是连续体边值问题中的一种自然边界约束。",
+        "它关联牵引力、表面载荷、自由面、压力加载和弱式边界项。",
+        "常写作 $\\boldsymbol\\sigma\\mathbf n=\\bar{\\mathbf t}$。",
+        "它规定边界受力而非运动，同一自由度上不宜再强加位移。",
+        "它的英文译名是 stress boundary condition。"
+      ],
+      "fragmented_clues": [
+        "边值问题 自然边界约束",
+        "牵引力 表面载荷 自由面 压力 弱式边界项",
+        "$\\boldsymbol\\sigma\\mathbf n=\\bar{\\mathbf t}$",
+        "边界受力 非运动约束 同一自由度",
+        "stress boundary condition"
+      ],
+      "explanation_markdown": "应力边界条件规定边界上给定的牵引力或表面载荷，是连续体力学中的自然边界条件。它告诉物体边界如何受外界推、拉或压。\n\n写作 $\\boldsymbol\\sigma\\mathbf n=\\bar{\\mathbf t}$，其中 $\\boldsymbol\\sigma$ 是应力张量，$\\mathbf n$ 是外法向，$\\bar{\\mathbf t}$ 是给定牵引力。自由表面取牵引力为零，受压表面可给定法向压力。它与位移边界条件互补，同一自由度上不能随意同时指定两者。\n\n应力边界条件规定边界牵引力，而不是直接规定位移。它常作为自然边界条件出现在弱式中；若同一自由度同时强行给位移和牵引，会造成过约束。压力载荷、表面力和自由面条件都属于这类约束。自由表面常把法向和切向牵引分别规定。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2212,9 +3316,21 @@
     {
       "chinese_name": "位移边界条件",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "位移边界条件直接规定边界上材料点的位置或位移，是连续体力学中的本质边界条件。固定支座、对称面和给定位移加载都属于此类。\n\n形式为 $\\mathbf u|_{\\partial\\Omega}=\\bar{\\mathbf u}$，其中 $\\mathbf u$ 是位移场，$\\partial\\Omega$ 是边界，$\\bar{\\mathbf u}$ 是指定值。它限制运动学自由度，而不是直接给定受力。有限元中，位移边界条件通常通过约束节点自由度实现，并决定刚体运动是否被消除。\n\n位移边界条件中，边界和弱式决定了局部方程怎样变成可求解问题。位移约束控制运动学自由度，应力条件控制外力输入；弱式通过虚功把二者放在同一积分框架中，也是有限元离散的基础。 它们直接决定解空间和外力输入，数值实现中若约束过多或过少，都会产生非物理刚体运动或过约束。",
+      "complete_clues": [
+        "这是连续体边值问题中的一种本质边界约束。",
+        "它关联固定支座、对称面、给定位移加载和有限元自由度限制。",
+        "常写作 $\\mathbf u|_{\\partial\\Omega}=\\bar{\\mathbf u}$。",
+        "它直接限制运动学解空间，约束不足会留下刚体运动。",
+        "它的英文译名是 displacement boundary condition。"
+      ],
+      "fragmented_clues": [
+        "边值问题 本质边界约束",
+        "固定支座 对称面 给定位移 自由度限制",
+        "$\\mathbf u|_{\\partial\\Omega}=\\bar{\\mathbf u}$",
+        "运动学解空间 约束不足 刚体运动",
+        "displacement boundary condition"
+      ],
+      "explanation_markdown": "位移边界条件直接规定边界上材料点的位置或位移，是连续体力学中的本质边界条件。固定支座、对称面和给定位移加载都属于此类。\n\n形式为 $\\mathbf u|_{\\partial\\Omega}=\\bar{\\mathbf u}$，其中 $\\mathbf u$ 是位移场，$\\partial\\Omega$ 是边界，$\\bar{\\mathbf u}$ 是指定值。它限制运动学自由度，而不是直接给定受力。有限元中，位移边界条件通常通过约束节点自由度实现，并决定刚体运动是否被消除。\n\n位移边界条件固定边界运动学自由度，属于本质边界条件。它决定解空间本身；数值实现中若约束不足，会留下刚体运动，约束过多则会引入非物理应力。对称面条件也常通过限制法向位移来实现。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2236,9 +3352,21 @@
     {
       "chinese_name": "初始边值问题",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "初始边值问题同时给出控制方程、初始状态和边界约束，用来确定连续体随时间的演化。动力学、非稳态热传导和瞬态流动都属于这一类。\n\n抽象写法为 $\\mathcal L u=f,\\;u|_{t=0}=u_0,\\;\\mathcal Bu=g$，其中 $\\mathcal L$ 是演化算符，$u_0$ 是初始场，$\\mathcal B$ 是边界算符。初始条件决定从何处开始，边界条件规定外界如何施加位移、力或通量。适定性要求解存在、唯一并稳定依赖数据。\n\n初始边值问题中，边界和弱式决定了局部方程怎样变成可求解问题。位移约束控制运动学自由度，应力条件控制外力输入；弱式通过虚功把二者放在同一积分框架中，也是有限元离散的基础。 它们直接决定解空间和外力输入，数值实现中若约束过多或过少，都会产生非物理刚体运动或过约束。",
+      "complete_clues": [
+        "这是连续体演化方程中的一种完整问题设置。",
+        "它关联动力学、瞬态热传导、波传播、非稳态流动和适定性。",
+        "抽象写法为 $\\mathcal L u=f,\\;u|_{t=0}=u_0,\\;\\mathcal Bu=g$。",
+        "它同时给时间起点和空间边界，二者不能互相替代。",
+        "它的英文译名是 initial boundary value problem。"
+      ],
+      "fragmented_clues": [
+        "演化方程 问题设置",
+        "动力学 瞬态热传导 波传播 非稳态 适定性",
+        "$\\mathcal L u=f,\\;u|_{t=0}=u_0,\\;\\mathcal Bu=g$",
+        "时间起点 空间边界 不可替代",
+        "initial boundary value problem"
+      ],
+      "explanation_markdown": "初始边值问题同时给出控制方程、初始状态和边界约束，用来确定连续体随时间的演化。动力学、非稳态热传导和瞬态流动都属于这一类。\n\n抽象写法为 $\\mathcal L u=f,\\;u|_{t=0}=u_0,\\;\\mathcal Bu=g$，其中 $\\mathcal L$ 是演化算符，$u_0$ 是初始场，$\\mathcal B$ 是边界算符。初始条件决定从何处开始，边界条件规定外界如何施加位移、力或通量。适定性要求解存在、唯一并稳定依赖数据。\n\n初始边值问题同时给初始状态和边界约束，适合动力学连续体。初始条件决定时间演化起点，边界条件决定外部作用方式；二者不能互相替代。波动、冲击和瞬态热应力问题都必须同时给定二者。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2260,9 +3388,21 @@
     {
       "chinese_name": "波动方程",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "波动方程描述扰动在介质中以有限速度传播，惯性项和恢复项相互作用形成往返振荡。弹性波、声波和弦振动都具有这种结构。\n\n标量形式为 $\\partial_t^2u=c^2\\nabla^2u$，其中 $u$ 是扰动量，$c$ 是波速。初始条件给定初始形状和速度，边界条件决定反射、驻波或辐射。与扩散方程不同，波动方程不会让信号瞬时传遍整个区域，而是沿特征速度传播。\n\n波动方程中，波动概念把材料刚度、惯性和边界联系起来。纵波、横波或声波的存在取决于介质能否提供相应恢复力；频率、几何和阻尼又会决定传播、反射、模态和能量衰减。 边界反射、阻尼和材料非均匀性会改变实际波形，因此波速公式通常只是局部线性化结果。",
+      "complete_clues": [
+        "这是连续介质中描述传播扰动的一类方程。",
+        "它关联惯性、恢复力、反射、驻波、模态和有限传播速度。",
+        "标量形式为 $\\partial_t^2u=c^2\\nabla^2u$。",
+        "与扩散不同，信号按有限速度传播而不是瞬时遍布全域。",
+        "它的英文译名是 wave equation。"
+      ],
+      "fragmented_clues": [
+        "连续介质 传播扰动方程",
+        "惯性 恢复力 反射 驻波 模态 有限速度",
+        "$\\partial_t^2u=c^2\\nabla^2u$",
+        "非扩散 信号有限传播",
+        "wave equation"
+      ],
+      "explanation_markdown": "波动方程描述扰动在介质中以有限速度传播，惯性项和恢复项相互作用形成往返振荡。弹性波、声波和弦振动都具有这种结构。\n\n标量形式为 $\\partial_t^2u=c^2\\nabla^2u$，其中 $u$ 是扰动量，$c$ 是波速。初始条件给定初始形状和速度，边界条件决定反射、驻波或辐射。与扩散方程不同，波动方程不会让信号瞬时传遍整个区域，而是沿特征速度传播。\n\n波动方程把惯性和恢复力联系起来，描述扰动如何传播。波速由材料参数和密度决定；边界条件会产生反射、驻波和模态，因此同一方程在不同结构中表现不同。阻尼或非线性存在时，方程会偏离这个最简单形式。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2284,9 +3424,21 @@
     {
       "chinese_name": "弹性波",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "弹性波是弹性介质中位移扰动由应力恢复力和惯性共同维持的传播。固体中既可有体积压缩波，也可有剪切波。\n\n各向同性线弹性方程为 $\\rho\\ddot{\\mathbf u}=(\\lambda+\\mu)\\nabla(\\nabla\\cdot\\mathbf u)+\\mu\\nabla^2\\mathbf u$，其中 $\\rho$ 是密度，$\\mathbf u$ 是位移，$\\lambda,\\mu$ 是拉梅常数。该方程可分解出纵波和横波。地震勘探、超声检测和结构振动都依赖弹性波传播。\n\n弹性波中，波动概念把材料刚度、惯性和边界联系起来。纵波、横波或声波的存在取决于介质能否提供相应恢复力；频率、几何和阻尼又会决定传播、反射、模态和能量衰减。 边界反射、阻尼和材料非均匀性会改变实际波形，因此波速公式通常只是局部线性化结果。",
+      "complete_clues": [
+        "这是固体连续介质中的一种力学波。",
+        "它关联应力恢复力、惯性、地震勘探、超声检测和结构振动。",
+        "各向同性线性弹性中有 $\\rho\\ddot{\\mathbf u}=(\\lambda+\\mu)\\nabla(\\nabla\\cdot\\mathbf u)+\\mu\\nabla^2\\mathbf u$。",
+        "固体能抗压也能抗剪，因此可分出纵向和横向两类体波。",
+        "它的英文译名是 elastic wave。"
+      ],
+      "fragmented_clues": [
+        "固体连续介质 力学波",
+        "应力恢复力 惯性 地震勘探 超声检测 结构振动",
+        "$\\rho\\ddot{\\mathbf u}=(\\lambda+\\mu)\\nabla(\\nabla\\cdot\\mathbf u)+\\mu\\nabla^2\\mathbf u$",
+        "抗压 抗剪 纵向体波 横向体波",
+        "elastic wave"
+      ],
+      "explanation_markdown": "弹性波是弹性介质中位移扰动由应力恢复力和惯性共同维持的传播。固体中既可有体积压缩波，也可有剪切波。\n\n各向同性线弹性方程为 $\\rho\\ddot{\\mathbf u}=(\\lambda+\\mu)\\nabla(\\nabla\\cdot\\mathbf u)+\\mu\\nabla^2\\mathbf u$，其中 $\\rho$ 是密度，$\\mathbf u$ 是位移，$\\lambda,\\mu$ 是拉梅常数。该方程可分解出纵波和横波。地震勘探、超声检测和结构振动都依赖弹性波传播。\n\n弹性波依赖固体既能抗压也能抗剪，因此可有纵波和横波。波速由弹性模量与密度控制；各向异性材料中，传播方向还会改变相速度和偏振。它还可在界面处发生反射、折射和模式转换，工程无损检测正利用这些特征。波阻抗差异还会控制界面透射和反射比例。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2308,9 +3460,21 @@
     {
       "chinese_name": "纵波",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "纵波中质点振动方向与传播方向平行，主要表现为压缩和膨胀交替传播。固体、液体和气体都能支持这类压力或体积波。\n\n各向同性固体纵波速度为 $c_L=\\sqrt{(\\lambda+2\\mu)/\\rho}$，其中 $\\lambda,\\mu$ 是拉梅常数，$\\rho$ 是密度。流体中剪切模量近似为零，声波本质上就是纵向压缩波。纵波通常比横波快，因此地震 P 波先到达观测点。\n\n纵波中，波动概念把材料刚度、惯性和边界联系起来。纵波、横波或声波的存在取决于介质能否提供相应恢复力；频率、几何和阻尼又会决定传播、反射、模态和能量衰减。 边界反射、阻尼和材料非均匀性会改变实际波形，因此波速公式通常只是局部线性化结果。",
+      "complete_clues": [
+        "这是连续介质波动中的一种压缩型极化。",
+        "它关联体积压缩、膨胀、声波、地震 P 波和固体纵向速度。",
+        "各向同性固体中速度为 $c_L=\\sqrt{(\\lambda+2\\mu)/\\rho}$。",
+        "质点振动方向与传播方向平行，普通流体也能支持这类压力波。",
+        "它的英文译名是 longitudinal wave。"
+      ],
+      "fragmented_clues": [
+        "连续介质波动 压缩型极化",
+        "体积压缩 膨胀 声波 地震P波",
+        "$c_L=\\sqrt{(\\lambda+2\\mu)/\\rho}$",
+        "振动方向 平行传播方向 压力波",
+        "longitudinal wave"
+      ],
+      "explanation_markdown": "纵波中质点振动方向与传播方向平行，主要表现为压缩和膨胀交替传播。固体、液体和气体都能支持这类压力或体积波。\n\n各向同性固体纵波速度为 $c_L=\\sqrt{(\\lambda+2\\mu)/\\rho}$，其中 $\\lambda,\\mu$ 是拉梅常数，$\\rho$ 是密度。流体中剪切模量近似为零，声波本质上就是纵向压缩波。纵波通常比横波快，因此地震 P 波先到达观测点。\n\n纵波的质点振动方向与传播方向平行，主要伴随体积压缩和膨胀。流体能支持纵向声波，但通常不能支持静态剪切横波，这一点和固体不同。地震 P 波就是典型纵波，通常比横波传播更快。它主要由体积模量和剪切模量共同决定。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2332,9 +3496,21 @@
     {
       "chinese_name": "横波",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "连续介质中的横波指质点振动方向垂直于传播方向的剪切波。它需要介质能够提供剪切恢复力，因此普通静止流体中不能传播体横波。\n\n各向同性固体横波速度为 $c_T=\\sqrt{\\mu/\\rho}$，其中 $\\mu$ 是剪切模量，$\\rho$ 是密度。横波不伴随一阶体积变化，而主要改变形状。地震 S 波、固体超声剪切波和弹性杆中的扭转波都体现横波性质。\n\n横波中，波动概念把材料刚度、惯性和边界联系起来。纵波、横波或声波的存在取决于介质能否提供相应恢复力；频率、几何和阻尼又会决定传播、反射、模态和能量衰减。 边界反射、阻尼和材料非均匀性会改变实际波形，因此波速公式通常只是局部线性化结果。",
+      "complete_clues": [
+        "这是连续介质波动中的一种剪切型极化。",
+        "它关联固体剪切恢复力、地震 S 波、扭转波和剪切超声。",
+        "各向同性固体中速度为 $c_T=\\sqrt{\\mu/\\rho}$。",
+        "质点振动方向垂直传播方向，静止普通流体通常难以传播此类体波。",
+        "它的英文译名是 transverse wave。"
+      ],
+      "fragmented_clues": [
+        "连续介质波动 剪切型极化",
+        "固体剪切恢复 地震S波 扭转波 剪切超声",
+        "$c_T=\\sqrt{\\mu/\\rho}$",
+        "振动方向 垂直传播方向 普通流体难传播",
+        "transverse wave"
+      ],
+      "explanation_markdown": "连续介质中的横波指质点振动方向垂直于传播方向的剪切波。它需要介质能够提供剪切恢复力，因此普通静止流体中不能传播体横波。\n\n各向同性固体横波速度为 $c_T=\\sqrt{\\mu/\\rho}$，其中 $\\mu$ 是剪切模量，$\\rho$ 是密度。横波不伴随一阶体积变化，而主要改变形状。地震 S 波、固体超声剪切波和弹性杆中的扭转波都体现横波性质。\n\n横波的质点振动方向垂直于传播方向，需要介质提供剪切恢复力。固体中横波速度由剪切模量控制；流体静止状态下剪切模量近零，横波难以传播。地震 S 波不能在液态外核中传播，就是剪切恢复力缺失的表现。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2356,9 +3532,21 @@
     {
       "chinese_name": "声速",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "声速是小幅压力扰动在介质中传播的速度，由介质的可压缩性和惯性共同决定。它不是流体本身的流速，而是扰动相对介质传播的速度。\n\n热力学表达为 $c^2=(\\partial p/\\partial\\rho)_s$，其中 $p$ 是压力，$\\rho$ 是密度，下标 $s$ 表示等熵过程。理想气体中 $c=\\sqrt{\\gamma p/\\rho}$。声速决定马赫数、声波传播时间和可压缩效应强弱，也影响管道脉动和冲击波结构。\n\n声速中，波动概念把材料刚度、惯性和边界联系起来。纵波、横波或声波的存在取决于介质能否提供相应恢复力；频率、几何和阻尼又会决定传播、反射、模态和能量衰减。 边界反射、阻尼和材料非均匀性会改变实际波形，因此波速公式通常只是局部线性化结果。",
+      "complete_clues": [
+        "这是介质波动中的一个局部传播速度。",
+        "它关联压力扰动、可压缩性、马赫数、理想气体和温度。",
+        "热力学表达为 $c^2=(\\partial p/\\partial\\rho)_s$。",
+        "它是小扰动相对介质的传播快慢，不是流体自身流速。",
+        "它的英文译名是 sound speed。"
+      ],
+      "fragmented_clues": [
+        "介质波动 局部传播速度",
+        "压力扰动 可压缩性 马赫数 理想气体 温度",
+        "$c^2=(\\partial p/\\partial\\rho)_s$",
+        "小扰动 相对介质 非流体流速",
+        "sound speed"
+      ],
+      "explanation_markdown": "声速是小幅压力扰动在介质中传播的速度，由介质的可压缩性和惯性共同决定。它不是流体本身的流速，而是扰动相对介质传播的速度。\n\n热力学表达为 $c^2=(\\partial p/\\partial\\rho)_s$，其中 $p$ 是压力，$\\rho$ 是密度，下标 $s$ 表示等熵过程。理想气体中 $c=\\sqrt{\\gamma p/\\rho}$。声速决定马赫数、声波传播时间和可压缩效应强弱，也影响管道脉动和冲击波结构。\n\n声速是小扰动线性化后的局部传播速度，不能简单等同于流体速度。马赫数用流速与声速之比判断压缩性；材料非均匀或强激波会让局部声速改变。在固体中还要区分纵波声速、横波声速和杆波速度。温度变化也会明显改变气体声速。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2380,9 +3568,21 @@
     {
       "chinese_name": "圣维南原理",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "圣维南原理指出，静力等效但局部分布不同的载荷，在离加载区域足够远处造成的应力差异会迅速衰减。它为工程边界简化提供依据。\n\n等效条件可写为 $\\int_S\\mathbf t\\,dS=\\mathbf F,\\;\\int_S\\mathbf r\\times\\mathbf t\\,dS=\\mathbf M$，其中 $\\mathbf t$ 是牵引力，$\\mathbf F$ 和 $\\mathbf M$ 是合力与合力矩。远场主要感受这些整体量，近场应力集中仍需真实接触或夹具细节。\n\n边界和弱式决定了局部方程怎样变成可求解问题。位移约束控制运动学自由度，应力条件控制外力输入；弱式通过虚功把二者放在同一积分框架中，也是有限元离散的基础。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是弹性静力学中的一条远场等效原则。",
+        "它关联载荷简化、梁板模型、夹具细节、局部应力集中和远场衰减。",
+        "等效条件可写为 $\\int_S\\mathbf t\\,dS=\\mathbf F,\\;\\int_S\\mathbf r\\times\\mathbf t\\,dS=\\mathbf M$。",
+        "远离加载区时，细节差异主要衰减为合力和合力矩的影响。",
+        "它的英文译名是 Saint-Venant principle。"
+      ],
+      "fragmented_clues": [
+        "弹性静力学 远场等效原则",
+        "载荷简化 梁板 夹具细节 局部集中 远场衰减",
+        "$\\int_S\\mathbf t\\,dS=\\mathbf F,\\;\\int_S\\mathbf r\\times\\mathbf t\\,dS=\\mathbf M$",
+        "远离加载区 合力 合力矩 细节衰减",
+        "Saint-Venant principle"
+      ],
+      "explanation_markdown": "圣维南原理指出，静力等效但局部分布不同的载荷，在离加载区域足够远处造成的应力差异会迅速衰减。它为工程边界简化提供依据。\n\n等效条件可写为 $\\int_S\\mathbf t\\,dS=\\mathbf F,\\;\\int_S\\mathbf r\\times\\mathbf t\\,dS=\\mathbf M$，其中 $\\mathbf t$ 是牵引力，$\\mathbf F$ 和 $\\mathbf M$ 是合力与合力矩。远场主要感受这些整体量，近场应力集中仍需真实接触或夹具细节。\n\n圣维南原理说明远离载荷施加细节处，应力分布主要由合力和合力矩决定。它不能用于载荷附近、裂纹尖端或强局部接触区，那些地方细节仍很重要。它为梁板简化和远场等效载荷提供了理由。但它不能替代局部强度校核。近场仍需精细模型。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2404,9 +3604,21 @@
     {
       "chinese_name": "平面应力",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "平面应力是薄板类结构的二维近似，认为厚度方向的应力分量可以忽略。板面受拉、受压或面内剪切而厚度很小时，这个假设常有效。\n\n条件为 $\\sigma_{33}=\\sigma_{13}=\\sigma_{23}=0$，其中 3 表示厚度方向，$\\sigma_{ij}$ 是应力分量。厚度方向应变不一定为零，而由泊松效应决定。薄金属片、膜结构和二维壳单元的面内响应常采用平面应力本构。\n\n这类降维理论的关键是小厚度或细长尺度带来的几何近似。它们保留主导内力和变形模式，牺牲厚度方向细节；一旦局部三维应力、剪切变形或边缘效应显著，就要回到更完整模型。 同一受力状态在不同截面上会呈现不同牵引力，因此必须同时说明法向、面积构形和符号约定。",
+      "complete_clues": [
+        "这是连续体力学中的一种二维薄板近似。",
+        "它关联薄金属片、膜结构、面内拉压和面内剪切。",
+        "条件为 $\\sigma_{33}=\\sigma_{13}=\\sigma_{23}=0$。",
+        "厚度方向应力被忽略，但厚度方向应变可由泊松效应产生。",
+        "它的英文译名是 plane stress。"
+      ],
+      "fragmented_clues": [
+        "连续体力学 二维薄板近似",
+        "薄金属片 膜结构 面内拉压 面内剪切",
+        "$\\sigma_{33}=\\sigma_{13}=\\sigma_{23}=0$",
+        "厚度方向应力忽略 厚度应变 泊松效应",
+        "plane stress"
+      ],
+      "explanation_markdown": "平面应力是薄板类结构的二维近似，认为厚度方向的应力分量可以忽略。板面受拉、受压或面内剪切而厚度很小时，这个假设常有效。\n\n条件为 $\\sigma_{33}=\\sigma_{13}=\\sigma_{23}=0$，其中 3 表示厚度方向，$\\sigma_{ij}$ 是应力分量。厚度方向应变不一定为零，而由泊松效应决定。薄金属片、膜结构和二维壳单元的面内响应常采用平面应力本构。\n\n平面应力适合薄板面内受力，厚度方向应力近似为零。它不等于厚度方向应变为零；材料会因泊松效应在厚度方向自由收缩或伸长。薄金属板拉伸和膜结构分析常采用这一近似。厚度应力小，是这个近似成立的核心。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2428,9 +3640,21 @@
     {
       "chinese_name": "平面应变",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "平面应变适合某一方向很长或被强约束的结构，中部截面几乎不沿该方向伸缩。二维模型保留截面内变形，约束出平面应变。\n\n条件为 $\\varepsilon_{33}=\\varepsilon_{13}=\\varepsilon_{23}=0$，其中 3 是被约束方向，$\\varepsilon_{ij}$ 是应变分量。对应方向的应力通常不为零，而由本构关系反算。长坝体、隧道、地下管线和厚壁结构截面常用平面应变近似。\n\n这类降维理论的关键是小厚度或细长尺度带来的几何近似。它们保留主导内力和变形模式，牺牲厚度方向细节；一旦局部三维应力、剪切变形或边缘效应显著，就要回到更完整模型。 使用时要先判断变形是否足够小；若转动或伸长不可忽略，线性化量会把几何效应漏掉。",
+      "complete_clues": [
+        "这是连续体力学中的一种二维截面约束近似。",
+        "它关联长厚结构、隧道、坝体、地下管线和中部截面分析。",
+        "条件为 $\\varepsilon_{33}=\\varepsilon_{13}=\\varepsilon_{23}=0$。",
+        "出平面方向的应变被约束为零，对应方向应力通常不为零。",
+        "它的英文译名是 plane strain。"
+      ],
+      "fragmented_clues": [
+        "连续体力学 二维截面约束近似",
+        "长厚结构 隧道 坝体 地下管线 截面分析",
+        "$\\varepsilon_{33}=\\varepsilon_{13}=\\varepsilon_{23}=0$",
+        "第三方向应变为零 第三方向应力可非零",
+        "plane strain"
+      ],
+      "explanation_markdown": "平面应变适合某一方向很长或被强约束的结构，中部截面几乎不沿该方向伸缩。二维模型保留截面内变形，约束出平面应变。\n\n条件为 $\\varepsilon_{33}=\\varepsilon_{13}=\\varepsilon_{23}=0$，其中 3 是被约束方向，$\\varepsilon_{ij}$ 是应变分量。对应方向的应力通常不为零，而由本构关系反算。长坝体、隧道、地下管线和厚壁结构截面常用平面应变近似。\n\n平面应变适合长厚结构的截面问题，出平面应变近似为零。此时出平面应力可不为零，这是它和平面应力最容易混淆的地方。隧道、坝体截面和长厚零件常使用这一近似。此时等效刚度通常比平面应力更高。长隧洞截面分析常用它。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2452,9 +3676,21 @@
     {
       "chinese_name": "薄壳理论",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "薄壳理论研究厚度远小于曲率半径和面内尺度的曲面结构。它把三维连续体降维到中面上，同时保留曲率带来的膜-弯耦合。\n\n薄壳假设可写为 $h/R\\ll1$，其中 $h$ 是壳厚，$R$ 是典型曲率半径。壳既可承受面内拉压剪切，也可承受弯曲和扭转。压力容器、机翼蒙皮、屋面壳体和生物组织薄膜都需要壳理论来平衡精度与计算复杂度。\n\n这类降维理论的关键是小厚度或细长尺度带来的几何近似。它们保留主导内力和变形模式，牺牲厚度方向细节；一旦局部三维应力、剪切变形或边缘效应显著，就要回到更完整模型。",
+      "complete_clues": [
+        "这是结构力学中的一种曲面降维理论。",
+        "它关联压力容器、机翼蒙皮、屋面结构、生物薄膜和曲率效应。",
+        "几何假设可写为 $h/R\\ll1$。",
+        "它保留中面曲率，使膜力与弯曲响应发生耦合。",
+        "它的英文译名是 shell theory。"
+      ],
+      "fragmented_clues": [
+        "结构力学 曲面降维理论",
+        "压力容器 机翼蒙皮 屋面结构 生物薄膜 曲率",
+        "$h/R\\ll1$",
+        "中面曲率 膜力 弯曲响应 耦合",
+        "shell theory"
+      ],
+      "explanation_markdown": "薄壳理论研究厚度远小于曲率半径和面内尺度的曲面结构。它把三维连续体降维到中面上，同时保留曲率带来的膜-弯耦合。\n\n薄壳假设可写为 $h/R\\ll1$，其中 $h$ 是壳厚，$R$ 是典型曲率半径。壳既可承受面内拉压剪切，也可承受弯曲和扭转。压力容器、机翼蒙皮、屋面壳体和生物组织薄膜都需要壳理论来平衡精度与计算复杂度。\n\n薄壳理论保留曲面几何，膜力和弯矩都会受曲率影响。它不同于平板理论；曲率会使面内拉压与法向挠曲耦合，压力容器和穹顶结构尤其明显。局部边界层或开孔附近仍可能需要三维修正。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2476,9 +3712,21 @@
     {
       "chinese_name": "板理论",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "板理论处理厚度远小于面内尺寸且中面近似平直的结构弯曲。它把三维弹性问题化为中面挠度、转角和弯矩的二维问题。\n\n线弹性弯曲关系常写作 $M=D\\kappa$，其中 $M$ 是弯矩，$\\kappa$ 是曲率，$D$ 是板弯曲刚度。Kirchhoff 板忽略横向剪切，Mindlin 板保留剪切变形，适合较厚板。楼板、机械面板和薄壁构件都常用板理论建模。\n\n板理论中，这类降维理论的关键是小厚度或细长尺度带来的几何近似。它们保留主导内力和变形模式，牺牲厚度方向细节；一旦局部三维应力、剪切变形或边缘效应显著，就要回到更完整模型。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是结构力学中的一种平面薄结构降维理论。",
+        "它关联楼板、机械面板、中面挠度、转角和弯矩。",
+        "线弹性弯曲关系常写作 $M=D\\kappa$。",
+        "它用中面挠度和转角描述弯曲，厚板情形需保留横向剪切。",
+        "它的英文译名是 plate theory。"
+      ],
+      "fragmented_clues": [
+        "结构力学 平面薄结构降维",
+        "楼板 机械面板 中面挠度 转角 弯矩",
+        "$M=D\\kappa$",
+        "中面变量 弯曲 厚板 横向剪切",
+        "plate theory"
+      ],
+      "explanation_markdown": "板理论处理厚度远小于面内尺寸且中面近似平直的结构弯曲。它把三维弹性问题化为中面挠度、转角和弯矩的二维问题。\n\n线弹性弯曲关系常写作 $M=D\\kappa$，其中 $M$ 是弯矩，$\\kappa$ 是曲率，$D$ 是板弯曲刚度。Kirchhoff 板忽略横向剪切，Mindlin 板保留剪切变形，适合较厚板。楼板、机械面板和薄壁构件都常用板理论建模。\n\n板理论以中面挠度和转角描述薄平结构。Kirchhoff 板适合很薄情形，Mindlin 板保留横向剪切；选择模型时要看厚跨比和剪切变形是否显著。集中载荷附近和厚板问题常需要更高阶理论或三维模型。弯曲边界条件对板挠度解影响很大。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2500,9 +3748,21 @@
     {
       "chinese_name": "梁理论",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "梁理论把细长构件的三维变形简化到轴线上的位移、转角、内力和弯矩。当前长度远大于截面尺寸时，这种降维能保留主要承载机制。\n\nEuler-Bernoulli 梁弯曲关系为 $M=EI\\kappa$，其中 $M$ 是弯矩，$E$ 是杨氏模量，$I$ 是截面惯性矩，$\\kappa$ 是曲率。Timoshenko 梁进一步考虑横向剪切和截面转动。桥梁、机架、桁架杆件和微梁传感器都依赖梁模型。\n\n梁理论中，这类降维理论的关键是小厚度或细长尺度带来的几何近似。它们保留主导内力和变形模式，牺牲厚度方向细节；一旦局部三维应力、剪切变形或边缘效应显著，就要回到更完整模型。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是结构力学中的一种细长构件降维理论。",
+        "它关联桥梁、机架、杆件、轴线位移、截面转角和内力。",
+        "Euler-Bernoulli 弯曲关系为 $M=EI\\kappa$。",
+        "它牺牲截面内三维细节，用轴线变量保留主要承载机制。",
+        "它的英文译名是 beam theory。"
+      ],
+      "fragmented_clues": [
+        "结构力学 细长构件降维",
+        "桥梁 机架 杆件 轴线位移 截面转角 内力",
+        "$M=EI\\kappa$",
+        "截面三维细节 轴线变量 主要承载",
+        "beam theory"
+      ],
+      "explanation_markdown": "梁理论把细长构件的三维变形简化到轴线上的位移、转角、内力和弯矩。当前长度远大于截面尺寸时，这种降维能保留主要承载机制。\n\nEuler-Bernoulli 梁弯曲关系为 $M=EI\\kappa$，其中 $M$ 是弯矩，$E$ 是杨氏模量，$I$ 是截面惯性矩，$\\kappa$ 是曲率。Timoshenko 梁进一步考虑横向剪切和截面转动。桥梁、机架、桁架杆件和微梁传感器都依赖梁模型。\n\n梁理论用轴线变量表示细长构件，牺牲截面内三维细节。Euler-Bernoulli 假设截面保持垂直，Timoshenko 梁允许剪切转角；短粗梁通常不能忽略后者。截面翘曲、局部屈曲和连接区细节通常超出简单梁理论。它是结构力学中最常用的降维模型。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2524,9 +3784,21 @@
     {
       "chinese_name": "接触力学",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "接触力学研究两个物体在接触界面上的压力、变形和约束。核心难点是接触区域未知，并且物体不能互相穿透。\n\n无摩擦法向条件可写为 $g_n\\ge0,\\;p_n\\ge0,\\;g_np_n=0$，其中 $g_n$ 是法向间隙，$p_n$ 是接触压力。间隙为正则无压力，有压力则间隙闭合。赫兹接触、轴承、轮轨、密封和压痕实验都属于接触力学范围。\n\n接触力学中，接触问题的困难在于边界本身会随载荷改变，粘着、滑移和分离不能预先固定。法向互补条件决定是否接触，切向摩擦规律决定能否滑动，因此解常表现出非光滑和路径依赖。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是连续体力学中处理界面约束的一类理论。",
+        "它关联压痕、轴承、轮轨、密封、未知接触区和不可穿透条件。",
+        "无摩擦法向条件为 $g_n\\ge0,\\;p_n\\ge0,\\;g_np_n=0$。",
+        "它必须同时求间隙和压力，边界位置本身也是未知量。",
+        "它的英文译名是 contact mechanics。"
+      ],
+      "fragmented_clues": [
+        "连续体力学 界面约束理论",
+        "压痕 轴承 轮轨 密封 未知接触区 不可穿透",
+        "$g_n\\ge0,\\;p_n\\ge0,\\;g_np_n=0$",
+        "间隙 压力 边界位置 未知",
+        "contact mechanics"
+      ],
+      "explanation_markdown": "接触力学研究两个物体在接触界面上的压力、变形和约束。核心难点是接触区域未知，并且物体不能互相穿透。\n\n无摩擦法向条件可写为 $g_n\\ge0,\\;p_n\\ge0,\\;g_np_n=0$，其中 $g_n$ 是法向间隙，$p_n$ 是接触压力。间隙为正则无压力，有压力则间隙闭合。赫兹接触、轴承、轮轨、密封和压痕实验都属于接触力学范围。\n\n接触力学的边界位置本身未知，必须同时求间隙和压力。无摩擦接触只限制法向不可穿透；一旦加入摩擦，切向粘着和滑移会带来路径依赖。赫兹接触给出光滑弹性体局部压痕的经典近似。接触压力通常集中且对表面曲率很敏感。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2548,9 +3820,21 @@
     {
       "chinese_name": "摩擦接触",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "摩擦接触在法向不可穿透之外，还要描述切向牵引与相对滑移之间的关系。它带来粘着、滑移和路径依赖，数值上也更非线性。\n\n库仑限制写作 $\\|\\mathbf t_t\\|\\le\\mu p_n$，其中 $\\mathbf t_t$ 是切向摩擦牵引，$\\mu$ 是摩擦系数，$p_n$ 是法向压力。未达到上限时界面可粘着，达到上限后发生滑移。制动器、轮胎、螺栓连接和颗粒堆积都离不开摩擦接触。\n\n摩擦接触中，接触问题的困难在于边界本身会随载荷改变，粘着、滑移和分离不能预先固定。法向互补条件决定是否接触，切向摩擦规律决定能否滑动，因此解常表现出非光滑和路径依赖。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是界面力学中的一种带切向阻力模型。",
+        "它关联制动器、轮胎、螺栓、颗粒堆积、粘着和滑移。",
+        "库仑限制写作 $\\|\\mathbf t_t\\|\\le\\mu p_n$。",
+        "除法向不可穿透外，它还含切向耗散和加载路径依赖。",
+        "它的英文译名是 frictional contact。"
+      ],
+      "fragmented_clues": [
+        "界面力学 切向阻力模型",
+        "制动器 轮胎 螺栓 颗粒堆积 粘着 滑移",
+        "$\\|\\mathbf t_t\\|\\le\\mu p_n$",
+        "法向不可穿透 切向耗散 路径依赖",
+        "frictional contact"
+      ],
+      "explanation_markdown": "摩擦接触在法向不可穿透之外，还要描述切向牵引与相对滑移之间的关系。它带来粘着、滑移和路径依赖，数值上也更非线性。\n\n库仑限制写作 $\\|\\mathbf t_t\\|\\le\\mu p_n$，其中 $\\mathbf t_t$ 是切向摩擦牵引，$\\mu$ 是摩擦系数，$p_n$ 是法向压力。未达到上限时界面可粘着，达到上限后发生滑移。制动器、轮胎、螺栓连接和颗粒堆积都离不开摩擦接触。\n\n摩擦接触比无摩擦接触多了切向约束和耗散。库仑条件只给上限，真正处于粘着还是滑移还要看切向相对运动和加载历史。数值求解时，粘滑切换常导致收敛困难。摩擦系数还可能随速度、温度和磨损改变。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2572,9 +3856,21 @@
     {
       "chinese_name": "孔隙弹性",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "孔隙弹性描述可变形固体骨架与孔隙流体压力之间的耦合。土体、岩石、骨组织和凝胶中，孔压变化会改变骨架承载，骨架变形又会驱动渗流。\n\n有效应力思想可写作 $\\boldsymbol\\sigma'=\\boldsymbol\\sigma+\\alpha p\\mathbf I$，其中 $\\boldsymbol\\sigma'$ 是有效应力，$\\boldsymbol\\sigma$ 是总应力，$p$ 是孔隙压力，$\\alpha$ 是 Biot 系数。固结沉降、油藏开采、地震诱发孔压和生物组织流固耦合都依赖孔隙弹性。\n\n孔隙弹性中，多孔材料必须同时跟踪骨架变形和孔隙流体输运。孔压不是外加压力的简单副本，它会改变有效应力；孔隙率、渗透率和流体可压缩性共同决定固结、渗流和波速。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是多相连续介质中的一种流固耦合理论。",
+        "它关联土体、岩石、骨组织、凝胶、固结沉降和渗流。",
+        "有效应力思想可写作 $\\boldsymbol\\sigma'=\\boldsymbol\\sigma+\\alpha p\\mathbf I$。",
+        "固体骨架变形与孔内压力相互影响，排水条件会改变表观刚度。",
+        "它的英文译名是 poroelasticity。"
+      ],
+      "fragmented_clues": [
+        "多相连续介质 流固耦合理论",
+        "土体 岩石 骨组织 凝胶 固结沉降 渗流",
+        "$\\boldsymbol\\sigma'=\\boldsymbol\\sigma+\\alpha p\\mathbf I$",
+        "骨架变形 孔内压力 排水条件 表观刚度",
+        "poroelasticity"
+      ],
+      "explanation_markdown": "孔隙弹性描述可变形固体骨架与孔隙流体压力之间的耦合。土体、岩石、骨组织和凝胶中，孔压变化会改变骨架承载，骨架变形又会驱动渗流。\n\n有效应力思想可写作 $\\boldsymbol\\sigma'=\\boldsymbol\\sigma+\\alpha p\\mathbf I$，其中 $\\boldsymbol\\sigma'$ 是有效应力，$\\boldsymbol\\sigma$ 是总应力，$p$ 是孔隙压力，$\\alpha$ 是 Biot 系数。固结沉降、油藏开采、地震诱发孔压和生物组织流固耦合都依赖孔隙弹性。\n\n孔隙弹性把固体骨架变形和孔隙流体压力耦合起来。加载初期孔压可承担部分载荷，随后渗流导致固结；因此时间尺度和渗透率非常关键。排水和不排水条件下，材料表现出的刚度会明显不同。Biot 理论就是这一领域的经典框架。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2596,9 +3892,21 @@
     {
       "chinese_name": "多孔介质",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "多孔介质由固体骨架和孔隙组成，孔隙可相互连通并容纳流体。它的宏观行为取决于孔隙比例、连通性、渗透率和骨架力学性质。\n\n孔隙率定义为 $\\phi=V_p/V$，其中 $V_p$ 是孔隙体积，$V$ 是总体积。孔隙率只说明空间占比，不能单独决定流动能力；渗透率还受孔径和连通结构影响。土壤、岩石、泡沫、过滤材料和骨组织都是典型多孔介质。\n\n多孔介质中，多孔材料必须同时跟踪骨架变形和孔隙流体输运。孔压不是外加压力的简单副本，它会改变有效应力；孔隙率、渗透率和流体可压缩性共同决定固结、渗流和波速。 实际使用前要核对尺度、构形和材料假设，确认连续体平均后的场量仍能代表局部物理过程。",
+      "complete_clues": [
+        "这是连续介质建模中的一种含孔材料对象。",
+        "它关联固体骨架、孔隙连通性、渗透率、低速渗流和过滤材料。",
+        "孔隙率定义为 $\\phi=V_p/V$。",
+        "空隙占比高不必然导流强，封闭孔可储存流体却不渗透。",
+        "它的英文译名是 porous medium。"
+      ],
+      "fragmented_clues": [
+        "连续介质建模 含孔材料对象",
+        "固体骨架 孔隙连通 渗透率 低速渗流 过滤材料",
+        "$\\phi=V_p/V$",
+        "空隙占比 高 非必然导流 封闭孔",
+        "porous medium"
+      ],
+      "explanation_markdown": "多孔介质由固体骨架和孔隙组成，孔隙可相互连通并容纳流体。它的宏观行为取决于孔隙比例、连通性、渗透率和骨架力学性质。\n\n孔隙率定义为 $\\phi=V_p/V$，其中 $V_p$ 是孔隙体积，$V$ 是总体积。孔隙率只说明空间占比，不能单独决定流动能力；渗透率还受孔径和连通结构影响。土壤、岩石、泡沫、过滤材料和骨组织都是典型多孔介质。\n\n多孔介质的宏观参数来自孔隙结构平均。孔隙率高不一定渗透率高，封闭孔隙可能储存流体却不导流；力学和渗流常需同时建模。达西定律常用于描述低速渗流，但高速或微尺度下要修正。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2620,9 +3928,21 @@
     {
       "chinese_name": "有限元弱式",
       "source_file": "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "有限元弱式把连续体强形式方程乘以试函数并积分，通过分部积分降低导数阶数，同时自然出现牵引边界项。它是有限元离散的入口。\n\n弹性静力弱式为 $\\int_\\Omega\\boldsymbol\\sigma:\\delta\\boldsymbol\\varepsilon\\,dV=\\int_\\Omega\\rho\\mathbf b\\cdot\\delta\\mathbf u\\,dV+\\int_{\\partial\\Omega_t}\\bar{\\mathbf t}\\cdot\\delta\\mathbf u\\,dS$，其中 $\\delta\\mathbf u$ 是虚位移，$\\bar{\\mathbf t}$ 是给定牵引。离散后得到刚度矩阵和载荷向量，可处理复杂几何与材料非线性。\n\n有限元弱式中，边界和弱式决定了局部方程怎样变成可求解问题。位移约束控制运动学自由度，应力条件控制外力输入；弱式通过虚功把二者放在同一积分框架中，也是有限元离散的基础。 它们直接决定解空间和外力输入，数值实现中若约束过多或过少，都会产生非物理刚体运动或过约束。",
+      "complete_clues": [
+        "这是数值力学中的一种积分变分形式。",
+        "它关联试函数、分部积分、自然边界项、单元插值和离散方程。",
+        "弹性静力表达为 $\\int_\\Omega\\boldsymbol\\sigma:\\delta\\boldsymbol\\varepsilon\\,dV=\\int_\\Omega\\rho\\mathbf b\\cdot\\delta\\mathbf u\\,dV+\\int_{\\partial\\Omega_t}\\bar{\\mathbf t}\\cdot\\delta\\mathbf u\\,dS$。",
+        "它降低导数阶数，把牵引边界自然放进积分方程。",
+        "它的英文译名是 finite element weak form。"
+      ],
+      "fragmented_clues": [
+        "数值力学 积分变分形式",
+        "试函数 分部积分 自然边界 单元插值 离散方程",
+        "$\\int_\\Omega\\boldsymbol\\sigma:\\delta\\boldsymbol\\varepsilon\\,dV=\\int_\\Omega\\rho\\mathbf b\\cdot\\delta\\mathbf u\\,dV+\\int_{\\partial\\Omega_t}\\bar{\\mathbf t}\\cdot\\delta\\mathbf u\\,dS$",
+        "降低导数阶数 牵引边界 积分方程",
+        "finite element weak form"
+      ],
+      "explanation_markdown": "有限元弱式把连续体强形式方程乘以试函数并积分，通过分部积分降低导数阶数，同时自然出现牵引边界项。它是有限元离散的入口。\n\n弹性静力弱式为 $\\int_\\Omega\\boldsymbol\\sigma:\\delta\\boldsymbol\\varepsilon\\,dV=\\int_\\Omega\\rho\\mathbf b\\cdot\\delta\\mathbf u\\,dV+\\int_{\\partial\\Omega_t}\\bar{\\mathbf t}\\cdot\\delta\\mathbf u\\,dS$，其中 $\\delta\\mathbf u$ 是虚位移，$\\bar{\\mathbf t}$ 是给定牵引。离散后得到刚度矩阵和载荷向量，可处理复杂几何与材料非线性。\n\n有限元弱式把局部微分方程转化为积分方程，便于使用低阶连续形函数。分部积分后的边界项自然对应牵引力，而位移约束则进入试函数空间。单元插值、积分规则和边界施加方式都会影响最终离散方程。这也是有限元能处理复杂边界的原因。",
       "source_links": [
         {
           "label": "百度百科",

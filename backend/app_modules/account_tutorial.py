@@ -13,6 +13,7 @@ class AccountTutorialMixin:
             settings["nickname"] = account["nickname"]
             settings = save_player_settings(settings)
         self.player_settings = settings
+        self.apply_audio_settings()
         self.apply_ui_font_scale()
         if not self.fullscreen:
             self.geometry(f"{self.player_settings['window_width']}x{self.player_settings['window_height']}")
@@ -42,6 +43,7 @@ class AccountTutorialMixin:
         self.current_account = account
         apply_account_context(account["id"])
         self.player_settings = load_player_settings()
+        self.apply_audio_settings()
         self.apply_ui_font_scale()
         self.achievements = read_achievements()
         self.show_home()
@@ -61,6 +63,7 @@ class AccountTutorialMixin:
         self.current_account = admin
         apply_account_context(admin["id"])
         self.player_settings = load_player_settings()
+        self.apply_audio_settings()
         self.apply_ui_font_scale()
         self.achievements = read_achievements()
         self.show_admin_dashboard()
@@ -308,6 +311,8 @@ class AccountTutorialMixin:
         self.save_tutorial_completed()
         self.tutorial_active = False
         self.tutorial_step = "complete"
+        self.play_music("result")
+        self.play_sfx("success")
         self.clear()
         self._start_backdrop("constellation")
         frame = tk.Frame(self.container, bg="#111725")
@@ -326,6 +331,7 @@ class AccountTutorialMixin:
         HoverButton(card, "回到主页", self.show_home, width=190, height=62, accent="#9ff2b2").pack(pady=(10, 0))
 
     def show_login(self, allow_cancel=False):
+        self.play_music("home")
         self.clear()
         self._start_backdrop("constellation")
         page = self.make_scroll_frame(self.container)
@@ -445,6 +451,7 @@ class AccountTutorialMixin:
         self.switch_return_account = None
         self.current_account = None
         self.player_settings = dict(DEFAULT_PLAYER_SETTINGS)
+        self.apply_audio_settings()
         self.show_login()
 
     def switch_account(self):
@@ -459,6 +466,7 @@ class AccountTutorialMixin:
         self.switch_return_account = self.current_account
         self.current_account = None
         self.player_settings = dict(DEFAULT_PLAYER_SETTINGS)
+        self.apply_audio_settings()
         self.show_login(allow_cancel=True)
 
     def show_change_password(self):
@@ -470,6 +478,8 @@ class AccountTutorialMixin:
         popup = tk.Toplevel(self)
         popup.title("修改密码")
         popup.configure(bg="#111725")
+        popup.geometry("440x370")
+        popup.minsize(420, 350)
         popup.resizable(False, False)
         popup.transient(self)
         popup.grab_set()

@@ -596,10 +596,10 @@ def term_notice_tags(chinese):
     tags = []
     if term_contains_person_name(text):
         tags.append("人名")
-    if re.search(r"[A-Za-z]", text):
-        tags.append("英文字母")
     if term_has_greek_letter(text):
         tags.append("希腊字母")
+    if re.search(r"[A-Za-z]", text):
+        tags.append("英文字母")
     return tags
 
 

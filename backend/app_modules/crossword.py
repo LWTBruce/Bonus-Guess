@@ -100,7 +100,7 @@ class CrosswordMixin:
         rng.shuffle(table_keys)
         selected_count = max(1, (len(table_keys) + 1) // 2)
         selected_keys = table_keys[:selected_count]
-        target_pool = max(70, int(max_words or 0) * 8)
+        target_pool = max(60, int(max_words or 0) * 5)
         per_table = max(1, (target_pool + selected_count - 1) // selected_count)
         balanced = []
         for key in selected_keys:
@@ -113,6 +113,27 @@ class CrosswordMixin:
     def crossword_terms_for_generation(self, difficulty, max_words):
         return self.balanced_crossword_terms_by_source_table(self.terms, max_words=max_words, rng=random)
 
+    def crossword_generation_difficulty_label(self, difficulty):
+        if difficulty != "自定义":
+            return difficulty
+        try:
+            low = int(self.custom_config.get("difficulty_min") or 1)
+            high = int(self.custom_config.get("difficulty_max") or 12)
+            value = (low + high) / 2
+        except (TypeError, ValueError):
+            value = 6
+        if hasattr(self, "difficulty_label_for_value"):
+            return self.difficulty_label_for_value(value)
+        return "普通"
+
+    @staticmethod
+    def coerce_custom_crossword_word_count(value):
+        try:
+            count = int(float(value))
+        except (TypeError, ValueError):
+            return 0
+        return max(0, count)
+
     def start_crossword_game(self, difficulty):
         self.crossword_mode = True
         is_crossword_rank = self.rank_mode and self.rank_kind == "crossword"
@@ -120,16 +141,19 @@ class CrosswordMixin:
             self.rank_mode = False
         self.current = None
         self.difficulty = difficulty
+        cell_shape = self.choose_crossword_cell_shape(difficulty)
+        generation_difficulty = self.crossword_generation_difficulty_label(difficulty)
         if self.custom_mode:
             size = (
                 int(self.custom_config.get("crossword_width") or 15),
                 int(self.custom_config.get("crossword_height") or 15),
             )
-            max_words = int(self.custom_config.get("crossword_words") or target_word_count_for_size(size, 1.8))
+            auto_words = target_word_count_for_size(size, difficulty=generation_difficulty, cell_shape=cell_shape)
+            configured_words = self.coerce_custom_crossword_word_count(self.custom_config.get("crossword_words"))
+            max_words = configured_words or auto_words
         else:
             size = self.crossword_rank_size if is_crossword_rank and self.crossword_rank_size else size_for_difficulty(difficulty)
-            max_words = self.crossword_rank_word_count if is_crossword_rank and self.crossword_rank_word_count else target_word_count_for_size(size, 1.8)
-        cell_shape = self.choose_crossword_cell_shape(difficulty)
+            max_words = self.crossword_rank_word_count if is_crossword_rank and self.crossword_rank_word_count else target_word_count_for_size(size, difficulty=difficulty, cell_shape=cell_shape)
         self.show_crossword_loading_screen(difficulty, is_crossword_rank=is_crossword_rank, size=size, max_words=max_words)
         try:
             terms_for_generation = self.crossword_terms_for_generation(difficulty, max_words)
@@ -228,6 +252,7 @@ class CrosswordMixin:
         self.show_crossword_game()
 
     def show_crossword_game(self, transition=True):
+        self.play_music(self.rank_music_track() if (self.rank_mode and self.rank_kind == "crossword") else "crossword")
         self.clear(transition=transition)
         self._start_backdrop("wind")
         if self.rank_mode and self.rank_kind == "crossword":
@@ -868,6 +893,21 @@ class CrosswordMixin:
             elapsed = time.perf_counter() - self.start_time if self.start_time else 0
         return self.crossword_start_score - int(elapsed) - self.crossword_score_penalty
 
+    def crossword_unanswered_count(self):
+        total = len(self.crossword_puzzle.placements) if self.crossword_puzzle else 0
+        return max(0, total - len(self.crossword_solved_ids or set()))
+
+    def crossword_score_per_word(self):
+        total = len(self.crossword_puzzle.placements) if self.crossword_puzzle else 0
+        if total <= 0:
+            return 400
+        return max(1, int(round(self.crossword_start_score / total)))
+
+    def crossword_failure_score(self, elapsed=None):
+        current = self.crossword_current_score(elapsed)
+        penalty = self.crossword_unanswered_count() * self.crossword_score_per_word()
+        return max(current - penalty, 0)
+
     def crossword_score_weight(self):
         if self.custom_mode:
             return 0.0
@@ -1257,6 +1297,7 @@ class CrosswordMixin:
         self.game_active = False
         self.record_saved = True
         if self.rank_mode and self.rank_kind == "crossword":
+            self.rank_session_score = self.crossword_failure_score(elapsed)
             self.show_rank_result(False, reason=reason, elapsed=elapsed, record_path=record_path)
             return
         if self.is_custom_challenge_mode():
@@ -1279,6 +1320,7 @@ class CrosswordMixin:
                 mark_rank_passed(self.rank_subject, self.rank_id, "crossword", score=self.rank_session_score)
                 self.show_rank_result(True, elapsed=elapsed, record_path=record_path)
             else:
+                self.rank_session_score = self.crossword_failure_score(elapsed)
                 self.show_rank_result(False, reason="字谜段位未完成", elapsed=elapsed, record_path=record_path)
             return
         if self.is_custom_challenge_mode():
@@ -1296,6 +1338,8 @@ class CrosswordMixin:
             self.record_saved = True
         self.game_active = False
         if self.rank_mode and self.rank_kind == "crossword":
+            if elapsed is not None:
+                self.rank_session_score = self.crossword_failure_score(elapsed)
             self.show_rank_result(False, reason="中途退出", elapsed=elapsed, record_path=record_path)
             return
         if self.is_custom_challenge_mode():
@@ -1310,8 +1354,8 @@ class CrosswordMixin:
         final_score = self.crossword_current_score(elapsed)
         if finished_by == "cheated":
             final_score = -abs(final_score)
-        elif not success and finished_by != "abandoned":
-            final_score = 0
+        elif not success:
+            final_score = self.crossword_failure_score(elapsed)
         score_weight = self.crossword_score_weight()
         is_rank = self.rank_mode and self.rank_kind == "crossword"
         is_custom = bool(self.custom_mode)
@@ -1339,6 +1383,7 @@ class CrosswordMixin:
             accepted_answers = self.crossword_answer_candidates(placement)
             accepted_by_placement[str(placement.id)] = accepted_answers
             notice_text = term_notice_text(placement.answer, prefix="含有")
+            notice_tags = term_notice_tags(placement.answer)
             mask_count += len(mask_positions)
             cell_count += len(placement.answer)
             difficulty_sum += int(getattr(placement.term, "difficulty", 5) or 5) + 0.5 * len(mask_positions)
@@ -1359,6 +1404,9 @@ class CrosswordMixin:
                 "difficulty": int(getattr(placement.term, "difficulty", 5) or 5),
                 "solved": 1 if placement.id in self.crossword_solved_ids else 0,
                 "notice": notice_text,
+                "notice_tags": notice_tags,
+                "has_person_name": 1 if "人名" in notice_tags else 0,
+                "has_english_letter": 1 if "英文字母" in notice_tags else 0,
                 "has_greek_letter": 1 if term_has_greek_letter(placement.answer) else 0,
             })
         base_difficulty = difficulty_sum / max(len(self.crossword_puzzle.placements), 1)
@@ -1393,7 +1441,7 @@ class CrosswordMixin:
             "rank_passed_session_id": self.rank_session_id if is_rank else "",
             "rank_target_difficulty": rank_target_difficulty if is_rank else 0,
             "rank_relaxed": 0,
-            "rank_session_score": final_score if (is_rank and success) else 0,
+            "rank_session_score": final_score if is_rank else 0,
             "rank_hint_used": (self.crossword_free_hint_count + self.crossword_paid_hint_count + self.crossword_library_hint_count) if is_rank else 0,
             "rank_hint_limit": (self.crossword_free_hint_quota + self.crossword_library_hint_limit) if is_rank else 0,
             "crossword_mode": 1,
@@ -1472,6 +1520,8 @@ class CrosswordMixin:
         return "、".join(parts)
 
     def show_crossword_result(self, success, elapsed, record_path, failed_reason="", cheated=False):
+        self.play_music("result")
+        self.play_sfx("fail" if (cheated or not success) else "success")
         self.clear(transition=False)
         frame = tk.Frame(self.container, bg="#111725")
         frame.pack(fill="both", expand=True)
@@ -1483,7 +1533,7 @@ class CrosswordMixin:
             title = "字谜隐藏彩蛋"
             title_color = "#ff6b8a"
         else:
-            final_score = self.crossword_current_score(elapsed) if success else 0
+            final_score = self.crossword_current_score(elapsed) if success else self.crossword_failure_score(elapsed)
             title = "字谜完成" if success else "字谜结束"
             title_color = "#9ff2b2" if success else "#ff9b89"
         tk.Label(card, text=title, fg=title_color, bg="#182033", font=("Microsoft YaHei UI", 38, "bold")).pack(pady=(38, 8))
@@ -1509,8 +1559,10 @@ class CrosswordMixin:
         answer_entries = []
         for placement in self.crossword_puzzle.placements:
             direction = self.crossword_direction_label(placement.direction)
+            notice = term_notice_text(placement.answer, prefix="含有")
+            notice_part = f" {notice}" if notice else ""
             answer_entries.append({
-                "prefix": f"{placement.id:02d} {direction} {self.crossword_initials_for_placement(placement)}：",
+                "prefix": f"{placement.id:02d} {direction} {self.crossword_initials_for_placement(placement)}{notice_part}：",
                 "answers": self.crossword_answer_candidates(placement),
             })
         answer_box = self.render_clickable_answer_entries(

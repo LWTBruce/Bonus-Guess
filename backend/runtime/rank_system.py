@@ -153,7 +153,7 @@ def rank_kind_label(rank_kind):
 
 
 def rank_count_for_kind(rank_kind="free"):
-    return 15 if normalize_rank_kind(rank_kind) == "clue" else len(RANK_CHALLENGES)
+    return len(RANK_CHALLENGES)
 
 
 def rank_progress_key(subject, rank_kind="free"):

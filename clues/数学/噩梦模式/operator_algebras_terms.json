@@ -4,8 +4,20 @@
     {
       "chinese_name": "C*代数",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个泛函分析中的拓扑 *-代数对象。",
+        "它关联有界算子、非交换拓扑空间和量子可观测量。",
+        "定义性恒等式为 $\\|a^*a\\|=\\|a\\|^2$。",
+        "它只要求范数完备和伴随相容；交换情形可看作紧空间上的连续函数代数。",
+        "它的英文译名是 C*-algebra。"
+      ],
+      "fragmented_clues": [
+        "泛函分析 拓扑 *-代数对象",
+        "有界算子 非交换拓扑空间 量子可观测量",
+        "$\\|a^*a\\|=\\|a\\|^2$",
+        "范数完备 伴随相容 交换情形 连续函数代数",
+        "C*-algebra"
+      ],
       "explanation_markdown": "C*代数是带伴随和完备范数的Banach代数，范数与伴随满足C*恒等式。C*代数的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\|a^*a\\|=\\|a\\|^2$，其中 $a^*$ 是伴随，$\\|\\cdot\\|$ 是代数范数。交换C*代数可由局部紧空间上的连续函数代数给出，非交换情形则像非交换拓扑空间。\n\n它只要求范数闭合；冯诺伊曼代数还要求在弱算子拓扑下闭合，因此投影、正常态和测度论结构更强。C*代数常用于量子可观测量、K理论和分类纲领。 C*代数还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -28,8 +40,20 @@
     {
       "chinese_name": "冯诺伊曼代数",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数中的弱闭 *-代数对象。",
+        "它关联 Hilbert 空间上的有界算子、投影格、迹和因子分类。",
+        "双交换子刻画常写成 $M=M^{\\prime\\prime}$。",
+        "它比范数闭结构带有更强的测度论味道，投影和正规泛函尤为核心。",
+        "它的英文译名是 von Neumann algebra。"
+      ],
+      "fragmented_clues": [
+        "算子代数 弱闭 *-代数对象",
+        "Hilbert 空间 有界算子 投影格 迹 因子",
+        "$M=M^{\\prime\\prime}$",
+        "弱闭 测度论 投影 正规泛函",
+        "von Neumann algebra"
+      ],
       "explanation_markdown": "冯诺伊曼代数是Hilbert空间 $H$ 上弱算子拓扑闭合的含单位自伴算子代数。冯诺伊曼代数的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。双交换子定理常写成 $M=M''$，其中 $M'$ 是与 $M$ 中所有算子交换的有界算子集合，$M''$ 是再取一次交换子。这个等式把拓扑闭包和代数交换条件连在一起。\n\n它比C*代数带有更浓的测度论味道：投影格、正常态、权和迹都是核心对象。因子分类、Tomita-Takesaki理论和非交换积分通常在冯诺伊曼代数框架下表述。 冯诺伊曼代数还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -52,8 +76,20 @@
     {
       "chinese_name": "巴拿赫*代数",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个泛函分析中的赋范 *-代数对象。",
+        "它关联完备范数、乘法连续性和带伴随的抽象代数结构。",
+        "常要求 $\\|ab\\|\\le\\|a\\|\\|b\\|$ 且 $(ab)^*=b^*a^*$。",
+        "它不一定满足 $\\|a^*a\\|=\\|a\\|^2$，因此比 C* 情形更宽。",
+        "它的英文译名是 Banach *-algebra。"
+      ],
+      "fragmented_clues": [
+        "泛函分析 赋范 *-代数对象",
+        "完备范数 乘法连续 伴随结构",
+        "$\\|ab\\|\\le\\|a\\|\\|b\\|$ $(ab)^*=b^*a^*$",
+        "不必满足 C* 恒等式 更宽结构",
+        "Banach *-algebra"
+      ],
       "explanation_markdown": "巴拿赫*代数是算子代数中带拓扑、伴随和正性约束的结构。巴拿赫*代数的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\|a^*a\\|=\\|a\\|^2$ 或 $M=M''$，其中前者是C*恒等式，后者是冯诺伊曼代数的双交换子条件。不同闭包拓扑会给出不同对象。\n\n巴拿赫*代数的意义取决于范数闭、弱闭、投影格、态空间和表示空间的选择。有限维矩阵只能提供直观模型，真正的分类、积分和动力系统问题通常要在无限维代数中表述。 巴拿赫*代数还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -76,8 +112,20 @@
     {
       "chinese_name": "希尔伯特模",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数中的模对象。",
+        "它关联 C* 值内积、Morita 等价和 Kasparov 理论。",
+        "内积满足 $\\langle x,y a\\rangle=\\langle x,y\\rangle a$ 与 $\\langle x,x\\rangle\\ge0$。",
+        "它像 Hilbert 空间，但内积取值在代数中而不是复数域。",
+        "它的英文译名是 Hilbert module。"
+      ],
+      "fragmented_clues": [
+        "算子代数 模对象",
+        "C* 值内积 Morita 等价 Kasparov 理论",
+        "$\\langle x,y a\\rangle=\\langle x,y\\rangle a$ $\\langle x,x\\rangle\\ge0$",
+        "内积取值代数 非复数域",
+        "Hilbert module"
+      ],
       "explanation_markdown": "希尔伯特模研究算子代数在Hilbert空间、Hilbert模或矩阵放大层级上的实现。希尔伯特模的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\pi(a^*)=\\pi(a)^*$，其中 $\\pi$ 是表示，$a$ 是代数元素；完全正映射还要求 $id_n\\otimes\\phi$ 在每个矩阵阶上保持正性。\n\n希尔伯特模保留的不只是线性结构，还包括伴随、正锥和矩阵范数。GNS构造从态产生表示，Stinespring定理把完全正映射提升为压缩表示，Arveson定理处理扩张问题。 希尔伯特模还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 希尔伯特模的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -100,8 +148,20 @@
     {
       "chinese_name": "正表示",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数中的表示类型。",
+        "它关联 *-同态、Hilbert 空间实现和正元素保持。",
+        "常写成 $\\pi(a^*)=\\pi(a)^*$ 且 $a\\ge0\\Rightarrow\\pi(a)\\ge0$。",
+        "它把抽象元素实现为算子时保留伴随和正性。",
+        "它的英文译名是 positive representation。"
+      ],
+      "fragmented_clues": [
+        "算子代数 表示类型",
+        "*-同态 Hilbert 空间实现 正元素保持",
+        "$\\pi(a^*)=\\pi(a)^*$ $a\\ge0\\Rightarrow\\pi(a)\\ge0$",
+        "保留伴随 正性",
+        "positive representation"
+      ],
       "explanation_markdown": "正表示研究算子代数在Hilbert空间、Hilbert模或矩阵放大层级上的实现。正表示的核心是矩阵放大、正锥和表示空间，和同族术语的分界也主要落在这些数据上。常写成 $\\pi(a^*)=\\pi(a)^*$，其中 $\\pi$ 是表示，$a$ 是代数元素；完全正映射还要求 $id_n\\otimes\\phi$ 在每个矩阵阶上保持正性。\n\n正表示保留的不只是线性结构，还包括伴随、正锥和矩阵范数。GNS构造从态产生表示，Stinespring定理把完全正映射提升为压缩表示，Arveson定理处理扩张问题。 正表示还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 正表示的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -124,8 +184,20 @@
     {
       "chinese_name": "忠实表示",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数中的表示性质。",
+        "它关联抽象代数到有界算子的嵌入和范数保持。",
+        "条件可写成 $\\ker\\pi=0$。",
+        "它不把非零元素压成零，因此能把原代数无损实现为算子代数。",
+        "它的英文译名是 faithful representation。"
+      ],
+      "fragmented_clues": [
+        "算子代数 表示性质",
+        "抽象代数 有界算子嵌入 范数保持",
+        "$\\ker\\pi=0$",
+        "非零元素 不压零 无损实现",
+        "faithful representation"
+      ],
       "explanation_markdown": "忠实表示研究算子代数在Hilbert空间、Hilbert模或矩阵放大层级上的实现。忠实表示的核心是矩阵放大、正锥和表示空间，和同族术语的分界也主要落在这些数据上。常写成 $\\pi(a^*)=\\pi(a)^*$，其中 $\\pi$ 是表示，$a$ 是代数元素；完全正映射还要求 $id_n\\otimes\\phi$ 在每个矩阵阶上保持正性。\n\n忠实表示保留的不只是线性结构，还包括伴随、正锥和矩阵范数。GNS构造从态产生表示，Stinespring定理把完全正映射提升为压缩表示，Arveson定理处理扩张问题。 忠实表示还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 忠实表示的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -148,8 +220,20 @@
     {
       "chinese_name": "态空间",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数中的凸几何对象。",
+        "它关联正线性泛函、GNS 构造和量子态解释。",
+        "定义条件常写成 $\\varphi(a^*a)\\ge0,\\;\\varphi(1)=1$。",
+        "它的极点对应不可再分的纯量子态，整体构成弱*紧凸集。",
+        "它的英文译名是 state space。"
+      ],
+      "fragmented_clues": [
+        "算子代数 凸几何对象",
+        "正线性泛函 GNS 构造 量子态",
+        "$\\varphi(a^*a)\\ge0,\\;\\varphi(1)=1$",
+        "极点 纯量子态 弱*紧凸集",
+        "state space"
+      ],
       "explanation_markdown": "态空间描述算子代数上的正线性泛函或由它们导出的积分结构。态空间的核心是正线性泛函、迹性质和模动力学，和同族术语的分界也主要落在这些数据上。常写成 $\\varphi(a^*a)\\ge0$，其中 $a$ 是代数元素，$\\varphi$ 是态、权或迹。迹态还满足 $\\tau(ab)=\\tau(ba)$，而权允许取无穷值。\n\n态空间决定了表示、模自同构群和非交换 $L^p$ 空间的构造。纯态对应不可再分的量子态，半有限迹适合积分理论，KMS态则刻画热平衡动力系统。 态空间还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 态空间的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -172,8 +256,20 @@
     {
       "chinese_name": "纯态",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数中的极端态。",
+        "它关联态空间极点、不可约 GNS 表示和量子纯相。",
+        "条件可写成 $\\varphi=t\\varphi_1+(1-t)\\varphi_2\\Rightarrow\\varphi_1=\\varphi_2=\\varphi$。",
+        "它不能分解为两个不同态的非平凡凸组合。",
+        "它的英文译名是 pure state。"
+      ],
+      "fragmented_clues": [
+        "算子代数 极端态",
+        "态空间极点 不可约 GNS 表示 量子纯相",
+        "$\\varphi=t\\varphi_1+(1-t)\\varphi_2\\Rightarrow\\varphi_1=\\varphi_2=\\varphi$",
+        "非平凡凸组合 不可分解",
+        "pure state"
+      ],
       "explanation_markdown": "纯态描述算子代数上的正线性泛函或由它们导出的积分结构。纯态的核心是正线性泛函、迹性质和模动力学，和同族术语的分界也主要落在这些数据上。常写成 $\\varphi(a^*a)\\ge0$，其中 $a$ 是代数元素，$\\varphi$ 是态、权或迹。迹态还满足 $\\tau(ab)=\\tau(ba)$，而权允许取无穷值。\n\n纯态决定了表示、模自同构群和非交换 $L^p$ 空间的构造。纯态对应不可再分的量子态，半有限迹适合积分理论，KMS态则刻画热平衡动力系统。 纯态还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 纯态的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -196,8 +292,20 @@
     {
       "chinese_name": "迹态",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数中的对称态。",
+        "它关联正归一化泛函、有限因子和非交换积分。",
+        "条件为 $\\tau(ab)=\\tau(ba)$ 且 $\\tau(1)=1$。",
+        "它在乘法交换循环下不变，因而能模拟有限维矩阵迹的平均。",
+        "它的英文译名是 tracial state。"
+      ],
+      "fragmented_clues": [
+        "算子代数 对称态",
+        "正归一化泛函 有限因子 非交换积分",
+        "$\\tau(ab)=\\tau(ba)$ $\\tau(1)=1$",
+        "循环不变 矩阵迹平均",
+        "tracial state"
+      ],
       "explanation_markdown": "迹态描述算子代数上的正线性泛函或由它们导出的积分结构。迹态的核心是正线性泛函、迹性质和模动力学，和同族术语的分界也主要落在这些数据上。常写成 $\\varphi(a^*a)\\ge0$，其中 $a$ 是代数元素，$\\varphi$ 是态、权或迹。迹态还满足 $\\tau(ab)=\\tau(ba)$，而权允许取无穷值。\n\n迹态决定了表示、模自同构群和非交换 $L^p$ 空间的构造。纯态对应不可再分的量子态，半有限迹适合积分理论，KMS态则刻画热平衡动力系统。 迹态还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 迹态的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -220,8 +328,20 @@
     {
       "chinese_name": "权",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数中的正泛函推广。",
+        "它关联非有限测度、半有限理论和非交换积分。",
+        "常写成 $\\varphi(a^*a)\\in[0,\\infty]$。",
+        "它允许取无穷值，适合处理没有有限迹的代数。",
+        "它的英文译名是 weight。"
+      ],
+      "fragmented_clues": [
+        "算子代数 正泛函推广",
+        "非有限测度 半有限理论 非交换积分",
+        "$\\varphi(a^*a)\\in[0,\\infty]$",
+        "允许无穷值 无有限迹代数",
+        "weight"
+      ],
       "explanation_markdown": "权描述算子代数上的正线性泛函或由它们导出的积分结构。权的核心是正线性泛函、迹性质和模动力学，和同族术语的分界也主要落在这些数据上。常写成 $\\varphi(a^*a)\\ge0$，其中 $a$ 是代数元素，$\\varphi$ 是态、权或迹。迹态还满足 $\\tau(ab)=\\tau(ba)$，而权允许取无穷值。\n\n权决定了表示、模自同构群和非交换 $L^p$ 空间的构造。纯态对应不可再分的量子态，半有限迹适合积分理论，KMS态则刻画热平衡动力系统。 权还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 权的符号还应和具体模型中的对象对应起来。 权的参数约定也要保留下来。",
       "source_links": [
         {
@@ -244,8 +364,20 @@
     {
       "chinese_name": "因子",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个冯诺伊曼代数中的基本类型。",
+        "它关联中心退化、投影比较和 I、II、III 型分类。",
+        "判别条件为 $Z(M)=M\\cap M^{\\prime}=\\mathbb C1$。",
+        "它的中心只有标量，因此不能再按中心分解成更小的直和成分。",
+        "它的英文译名是 factor。"
+      ],
+      "fragmented_clues": [
+        "冯诺伊曼代数 基本类型",
+        "中心退化 投影比较 I II III 分类",
+        "$Z(M)=M\\cap M^{\\prime}=\\mathbb C1$",
+        "中心仅标量 不再中心分解",
+        "factor"
+      ],
       "explanation_markdown": "因子刻画冯诺伊曼代数中由投影、中心和包含关系控制的结构。因子的核心是投影格、中心退化和包含指数，和同族术语的分界也主要落在这些数据上。常写成 $Z(M)=M\\cap M'=\\mathbb C1$，其中 $Z(M)$ 是中心，$M'$ 是交换子代数；中心退化时 $M$ 是因子。投影和部分等距给出Murray-von Neumann等价。\n\n因子常用于I、II、III型分类、子因子指数和连续几何。Jones基本构造把包含 $N\\subset M$ 扩展为塔，平面代数则把相对交换子组织成可计算的图形代数。 因子还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 因子的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -268,8 +400,20 @@
     {
       "chinese_name": "中心",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数结构中的交换子子代数。",
+        "它关联因子判别、直积分分解和交换可观测量。",
+        "常写成 $Z(M)=M\\cap M^{\\prime}$。",
+        "它由与所有元素交换的元素组成，退化到标量时给出因子情形。",
+        "它的英文译名是 center。"
+      ],
+      "fragmented_clues": [
+        "代数结构 交换子子代数",
+        "因子判别 直积分分解 交换可观测量",
+        "$Z(M)=M\\cap M^{\\prime}$",
+        "与所有元素交换 标量退化 因子",
+        "center"
+      ],
       "explanation_markdown": "中心刻画冯诺伊曼代数中由投影、中心和包含关系控制的结构。中心的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $Z(M)=M\\cap M'=\\mathbb C1$，其中 $Z(M)$ 是中心，$M'$ 是交换子代数；中心退化时 $M$ 是因子。投影和部分等距给出Murray-von Neumann等价。\n\n中心常用于I、II、III型分类、子因子指数和连续几何。Jones基本构造把包含 $N\\subset M$ 扩展为塔，平面代数则把相对交换子组织成可计算的图形代数。 中心还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 中心的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -292,8 +436,20 @@
     {
       "chinese_name": "投影",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数中的特殊元素。",
+        "它关联闭子空间、量子逻辑格和 Murray-von Neumann 比较。",
+        "条件为 $p=p^*=p^2$。",
+        "它同时自伴且幂等，对应 Hilbert 空间中的正交闭子空间。",
+        "它的英文译名是 projection。"
+      ],
+      "fragmented_clues": [
+        "算子代数 特殊元素",
+        "闭子空间 量子逻辑格 Murray-von Neumann 比较",
+        "$p=p^*=p^2$",
+        "自伴 幂等 正交闭子空间",
+        "projection"
+      ],
       "explanation_markdown": "投影刻画冯诺伊曼代数中由投影、中心和包含关系控制的结构。投影的核心是投影格、中心退化和包含指数，和同族术语的分界也主要落在这些数据上。常写成 $Z(M)=M\\cap M'=\\mathbb C1$，其中 $Z(M)$ 是中心，$M'$ 是交换子代数；中心退化时 $M$ 是因子。投影和部分等距给出Murray-von Neumann等价。\n\n投影常用于I、II、III型分类、子因子指数和连续几何。Jones基本构造把包含 $N\\subset M$ 扩展为塔，平面代数则把相对交换子组织成可计算的图形代数。 投影还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 投影的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -316,8 +472,20 @@
     {
       "chinese_name": "部分等距",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数中的算子元素类型。",
+        "它关联投影等价、极分解和初末空间。",
+        "条件可写成 $v^*v$ 与 $vv^*$ 都是投影。",
+        "它在初始子空间到终止子空间之间保持长度，是比较投影的桥梁。",
+        "它的英文译名是 partial isometry。"
+      ],
+      "fragmented_clues": [
+        "算子代数 算子元素类型",
+        "投影等价 极分解 初末空间",
+        "$v^*v$ $vv^*$ 投影",
+        "初始子空间 终止子空间 保长",
+        "partial isometry"
+      ],
       "explanation_markdown": "部分等距刻画冯诺伊曼代数中由投影、中心和包含关系控制的结构。部分等距的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $Z(M)=M\\cap M'=\\mathbb C1$，其中 $Z(M)$ 是中心，$M'$ 是交换子代数；中心退化时 $M$ 是因子。投影和部分等距给出Murray-von Neumann等价。\n\n部分等距常用于I、II、III型分类、子因子指数和连续几何。Jones基本构造把包含 $N\\subset M$ 扩展为塔，平面代数则把相对交换子组织成可计算的图形代数。 部分等距还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 部分等距的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -340,8 +508,20 @@
     {
       "chinese_name": "谱测度",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子谱理论中的投影值测度。",
+        "它关联自伴算子的谱定理和函数演算。",
+        "常写成 $A=\\int \\lambda\\,dE_A(\\lambda)$。",
+        "它把算子分解为各谱区间上的投影，而不是普通标量概率测度。",
+        "它的英文译名是 spectral measure。"
+      ],
+      "fragmented_clues": [
+        "算子谱理论 投影值测度",
+        "自伴算子 谱定理 函数演算",
+        "$A=\\int \\lambda\\,dE_A(\\lambda)$",
+        "谱区间投影 非标量概率测度",
+        "spectral measure"
+      ],
       "explanation_markdown": "谱测度描述算子代数上的正线性泛函或由它们导出的积分结构。谱测度的核心是谱、理想和扩张类，和同族术语的分界也主要落在这些数据上。常写成 $\\varphi(a^*a)\\ge0$，其中 $a$ 是代数元素，$\\varphi$ 是态、权或迹。迹态还满足 $\\tau(ab)=\\tau(ba)$，而权允许取无穷值。\n\n谱测度决定了表示、模自同构群和非交换 $L^p$ 空间的构造。纯态对应不可再分的量子态，半有限迹适合积分理论，KMS态则刻画热平衡动力系统。 谱测度还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 谱测度的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -364,8 +544,20 @@
     {
       "chinese_name": "函数演算",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子谱理论中的构造方法。",
+        "它关联把标量函数代入算子和谱定理。",
+        "常写成 $f(A)=\\int f(\\lambda)\\,dE_A(\\lambda)$。",
+        "它让算子的谱变量像普通变量一样被函数作用。",
+        "它的英文译名是 functional calculus。"
+      ],
+      "fragmented_clues": [
+        "算子谱理论 构造方法",
+        "标量函数 代入算子 谱定理",
+        "$f(A)=\\int f(\\lambda)\\,dE_A(\\lambda)$",
+        "谱变量 函数作用",
+        "functional calculus"
+      ],
       "explanation_markdown": "函数演算处理算子代数中的谱、理想和函数代入。函数演算的核心是谱、理想和扩张类，和同族术语的分界也主要落在这些数据上。常写成 $f(a)=\\int_{\\sigma(a)}f(\\lambda)dE(\\lambda)$，其中 $a$ 是正规算子，$E$ 是谱测度，$\\sigma(a)$ 是谱。函数演算把连续或Borel函数转化为代数内部的算子。\n\n函数演算在C*代数和冯诺伊曼代数中的可用函数范围不同。紧算子、Calkin代数和Toeplitz扩张常用来研究Fredholm指数、边界映射和K理论类。 函数演算还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 函数演算的符号还应和具体模型中的对象对应起来。 函数演算的参数约定也要保留下来。",
       "source_links": [
         {
@@ -388,8 +580,20 @@
     {
       "chinese_name": "连续函数演算",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个 C* 理论中的函数代入构造。",
+        "它关联正规元素的谱和连续函数代数。",
+        "对正规元素常写成 $C(\\sigma(a))\\to A,\\; f\\mapsto f(a)$。",
+        "它只允许谱上的连续函数，适合范数拓扑下的稳定构造。",
+        "它的英文译名是 continuous functional calculus。"
+      ],
+      "fragmented_clues": [
+        "C* 理论 函数代入构造",
+        "正规元素 谱 连续函数代数",
+        "$C(\\sigma(a))\\to A,\\; f\\mapsto f(a)$",
+        "连续函数 范数拓扑 稳定构造",
+        "continuous functional calculus"
+      ],
       "explanation_markdown": "连续函数演算处理算子代数中的谱、理想和函数代入。连续函数演算的核心是谱、理想和扩张类，和同族术语的分界也主要落在这些数据上。常写成 $f(a)=\\int_{\\sigma(a)}f(\\lambda)dE(\\lambda)$，其中 $a$ 是正规算子，$E$ 是谱测度，$\\sigma(a)$ 是谱。函数演算把连续或Borel函数转化为代数内部的算子。\n\n连续函数演算在C*代数和冯诺伊曼代数中的可用函数范围不同。紧算子、Calkin代数和Toeplitz扩张常用来研究Fredholm指数、边界映射和K理论类。 连续函数演算还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 连续函数演算的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -412,8 +616,20 @@
     {
       "chinese_name": "博雷尔函数演算",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子谱理论中的可测函数代入构造。",
+        "它关联自伴或正规算子的谱测度和有界 Borel 函数。",
+        "常写成 $f(A)=\\int f(\\lambda)\\,dE_A(\\lambda)$，其中 $f$ 为 Borel 函数。",
+        "它比连续版本更大，依赖投影值测度而非单纯范数拓扑。",
+        "它的英文译名是 Borel functional calculus。"
+      ],
+      "fragmented_clues": [
+        "算子谱理论 可测函数代入构造",
+        "谱测度 有界 Borel 函数",
+        "$f(A)=\\int f(\\lambda)\\,dE_A(\\lambda)$ Borel",
+        "大于连续版本 依赖投影值测度",
+        "Borel functional calculus"
+      ],
       "explanation_markdown": "博雷尔函数演算处理算子代数中的谱、理想和函数代入。博雷尔函数演算的核心是谱、理想和扩张类，和同族术语的分界也主要落在这些数据上。常写成 $f(a)=\\int_{\\sigma(a)}f(\\lambda)dE(\\lambda)$，其中 $a$ 是正规算子，$E$ 是谱测度，$\\sigma(a)$ 是谱。函数演算把连续或Borel函数转化为代数内部的算子。\n\n博雷尔函数演算在C*代数和冯诺伊曼代数中的可用函数范围不同。紧算子、Calkin代数和Toeplitz扩张常用来研究Fredholm指数、边界映射和K理论类。 博雷尔函数演算还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 博雷尔函数演算的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -436,8 +652,20 @@
     {
       "chinese_name": "近似单位",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个非幺 C* 代数中的逼近网。",
+        "它关联非单位化代数、理想和乘子代数。",
+        "常写成 $e_i a\\to a,\\; ae_i\\to a$。",
+        "它用一族元素替代真正单位元，在非幺情形恢复乘法极限。",
+        "它的英文译名是 approximate identity。"
+      ],
+      "fragmented_clues": [
+        "非幺 C* 代数 逼近网",
+        "非单位化代数 理想 乘子代数",
+        "$e_i a\\to a,\\; ae_i\\to a$",
+        "替代单位元 乘法极限",
+        "approximate identity"
+      ],
       "explanation_markdown": "近似单位处理算子代数中的谱、理想和函数代入。近似单位的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $f(a)=\\int_{\\sigma(a)}f(\\lambda)dE(\\lambda)$，其中 $a$ 是正规算子，$E$ 是谱测度，$\\sigma(a)$ 是谱。函数演算把连续或Borel函数转化为代数内部的算子。\n\n近似单位在C*代数和冯诺伊曼代数中的可用函数范围不同。紧算子、Calkin代数和Toeplitz扩张常用来研究Fredholm指数、边界映射和K理论类。 近似单位还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 近似单位的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -460,8 +688,20 @@
     {
       "chinese_name": "乘子代数",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个 C* 代数中的最大幺扩张对象。",
+        "它关联非幺代数、双边乘子和严格拓扑。",
+        "可由 $M(A)=\\{(L,R):L(a)b=aR(b)\\}$ 表示。",
+        "它是让原代数作为本质理想嵌入的最大幺 C* 代数。",
+        "它的英文译名是 multiplier algebra。"
+      ],
+      "fragmented_clues": [
+        "C* 代数 最大幺扩张对象",
+        "非幺代数 双边乘子 严格拓扑",
+        "$M(A)=\\{(L,R):L(a)b=aR(b)\\}$",
+        "本质理想嵌入 最大幺扩张",
+        "multiplier algebra"
+      ],
       "explanation_markdown": "乘子代数处理算子代数中的谱、理想和函数代入。乘子代数的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $f(a)=\\int_{\\sigma(a)}f(\\lambda)dE(\\lambda)$，其中 $a$ 是正规算子，$E$ 是谱测度，$\\sigma(a)$ 是谱。函数演算把连续或Borel函数转化为代数内部的算子。\n\n乘子代数在C*代数和冯诺伊曼代数中的可用函数范围不同。紧算子、Calkin代数和Toeplitz扩张常用来研究Fredholm指数、边界映射和K理论类。 乘子代数还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 乘子代数的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -484,8 +724,20 @@
     {
       "chinese_name": "卡尔金代数",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数中的商代数对象。",
+        "它关联有界算子、紧算子理想和 Fredholm 理论。",
+        "常写成 $\\mathcal Q(H)=B(H)/K(H)$。",
+        "它把相差紧算子的有界算子视为同一类，Fredholm 性可在商中判别。",
+        "它的英文译名是 Calkin algebra。"
+      ],
+      "fragmented_clues": [
+        "算子代数 商代数对象",
+        "有界算子 紧算子理想 Fredholm 理论",
+        "$\\mathcal Q(H)=B(H)/K(H)$",
+        "模紧算子等同 Fredholm 判别",
+        "Calkin algebra"
+      ],
       "explanation_markdown": "卡尔金代数处理算子代数中的谱、理想和函数代入。卡尔金代数的核心是谱、理想和扩张类，和同族术语的分界也主要落在这些数据上。常写成 $f(a)=\\int_{\\sigma(a)}f(\\lambda)dE(\\lambda)$，其中 $a$ 是正规算子，$E$ 是谱测度，$\\sigma(a)$ 是谱。函数演算把连续或Borel函数转化为代数内部的算子。\n\n卡尔金代数在C*代数和冯诺伊曼代数中的可用函数范围不同。紧算子、Calkin代数和Toeplitz扩张常用来研究Fredholm指数、边界映射和K理论类。 卡尔金代数还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 卡尔金代数的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -508,8 +760,20 @@
     {
       "chinese_name": "紧算子代数",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个 Hilbert 空间算子代数中的理想对象。",
+        "它关联有限秩算子闭包、Calkin 商和 Fredholm 理论。",
+        "常写成 $K(H)=\\overline{F(H)}^{\\|\\cdot\\|}$。",
+        "它由可由有限秩算子逼近的算子组成，是 $B(H)$ 中的闭双边理想。",
+        "它的英文译名是 compact operator algebra。"
+      ],
+      "fragmented_clues": [
+        "Hilbert 空间算子代数 理想对象",
+        "有限秩闭包 Calkin 商 Fredholm 理论",
+        "$K(H)=\\overline{F(H)}^{\\|\\cdot\\|}$",
+        "有限秩逼近 闭双边理想",
+        "compact operator algebra"
+      ],
       "explanation_markdown": "紧算子代数处理算子代数中的谱、理想和函数代入。紧算子代数的核心是谱、理想和扩张类，和同族术语的分界也主要落在这些数据上。常写成 $f(a)=\\int_{\\sigma(a)}f(\\lambda)dE(\\lambda)$，其中 $a$ 是正规算子，$E$ 是谱测度，$\\sigma(a)$ 是谱。函数演算把连续或Borel函数转化为代数内部的算子。\n\n紧算子代数在C*代数和冯诺伊曼代数中的可用函数范围不同。紧算子、Calkin代数和Toeplitz扩张常用来研究Fredholm指数、边界映射和K理论类。 紧算子代数还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 紧算子代数的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -532,8 +796,20 @@
     {
       "chinese_name": "托普利茨代数",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数中的生成代数。",
+        "它关联 Hardy 空间、单边移位和圆周连续函数的扩张。",
+        "经典短正合列为 $0\\to K\\to \\mathcal T\\to C(S^1)\\to0$。",
+        "它由单边移位生成，给出 Calkin 商中圆函数代数的非平凡扩张。",
+        "它的英文译名是 Toeplitz algebra。"
+      ],
+      "fragmented_clues": [
+        "算子代数 生成代数",
+        "Hardy 空间 单边移位 圆周连续函数扩张",
+        "$0\\to K\\to \\mathcal T\\to C(S^1)\\to0$",
+        "单边移位 非平凡扩张",
+        "Toeplitz algebra"
+      ],
       "explanation_markdown": "托普利茨代数处理算子代数中的谱、理想和函数代入。托普利茨代数的核心是谱、理想和扩张类，和同族术语的分界也主要落在这些数据上。常写成 $f(a)=\\int_{\\sigma(a)}f(\\lambda)dE(\\lambda)$，其中 $a$ 是正规算子，$E$ 是谱测度，$\\sigma(a)$ 是谱。函数演算把连续或Borel函数转化为代数内部的算子。\n\n托普利茨代数在C*代数和冯诺伊曼代数中的可用函数范围不同。紧算子、Calkin代数和Toeplitz扩张常用来研究Fredholm指数、边界映射和K理论类。 托普利茨代数还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 托普利茨代数的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -556,8 +832,20 @@
     {
       "chinese_name": "交叉积",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数中的动力系统构造。",
+        "它关联群作用、协变表示和非交换商空间。",
+        "常记为 $A\\rtimes_\\alpha G$。",
+        "它把代数 $A$ 与群作用 $\\alpha$ 合成一个新代数，记录轨道动力学。",
+        "它的英文译名是 crossed product。"
+      ],
+      "fragmented_clues": [
+        "算子代数 动力系统构造",
+        "群作用 协变表示 非交换商空间",
+        "$A\\rtimes_\\alpha G$",
+        "代数 群作用 合成 轨道动力学",
+        "crossed product"
+      ],
       "explanation_markdown": "交叉积把群作用、动力系统或规范关系编码为C*代数。交叉积的核心是群作用、协变表示和生成关系，和同族术语的分界也主要落在这些数据上。常写成 $u_gau_g^*=\\alpha_g(a)$，其中 $u_g$ 是实现群元素的酉算子，$\\alpha_g$ 是自同构作用。交叉积同时保留原代数 $A$ 和群 $G$ 的协变表示。\n\n交叉积的全版本按所有协变表示取泛性质，约化版本依赖正则表示。CCR代数记录玻色对易关系，CAR代数记录费米反对易关系，二者的表示论和态结构差异很大。 交叉积还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 交叉积的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -580,8 +868,20 @@
     {
       "chinese_name": "约化交叉积",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个交叉积构造中的正则表示版本。",
+        "它关联左正则表示、离散群作用和精确性问题。",
+        "常记为 $A\\rtimes_{\\alpha,r}G$。",
+        "它通过正则表示完成，可能比全版本更小。",
+        "它的英文译名是 reduced crossed product。"
+      ],
+      "fragmented_clues": [
+        "交叉积构造 正则表示版本",
+        "左正则表示 离散群作用 精确性",
+        "$A\\rtimes_{\\alpha,r}G$",
+        "正则表示完成 小于全版本",
+        "reduced crossed product"
+      ],
       "explanation_markdown": "约化交叉积把群作用、动力系统或规范关系编码为C*代数。约化交叉积的核心是群作用、协变表示和生成关系，和同族术语的分界也主要落在这些数据上。常写成 $u_gau_g^*=\\alpha_g(a)$，其中 $u_g$ 是实现群元素的酉算子，$\\alpha_g$ 是自同构作用。交叉积同时保留原代数 $A$ 和群 $G$ 的协变表示。\n\n约化交叉积的全版本按所有协变表示取泛性质，约化版本依赖正则表示。CCR代数记录玻色对易关系，CAR代数记录费米反对易关系，二者的表示论和态结构差异很大。 约化交叉积还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -604,8 +904,20 @@
     {
       "chinese_name": "全交叉积",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个交叉积构造中的泛表示版本。",
+        "它关联所有协变表示和普遍性质。",
+        "常记为 $A\\rtimes_{\\alpha,u}G$ 或 $A\\rtimes_\\alpha G$。",
+        "它按最大 C* 范数完成，因此保留全部协变表示信息。",
+        "它的英文译名是 full crossed product。"
+      ],
+      "fragmented_clues": [
+        "交叉积构造 泛表示版本",
+        "所有协变表示 普遍性质",
+        "$A\\rtimes_{\\alpha,u}G$ $A\\rtimes_\\alpha G$",
+        "最大 C* 范数 全部协变表示",
+        "full crossed product"
+      ],
       "explanation_markdown": "全交叉积把群作用、动力系统或规范关系编码为C*代数。全交叉积的核心是群作用、协变表示和生成关系，和同族术语的分界也主要落在这些数据上。常写成 $u_gau_g^*=\\alpha_g(a)$，其中 $u_g$ 是实现群元素的酉算子，$\\alpha_g$ 是自同构作用。交叉积同时保留原代数 $A$ 和群 $G$ 的协变表示。\n\n全交叉积的全版本按所有协变表示取泛性质，约化版本依赖正则表示。CCR代数记录玻色对易关系，CAR代数记录费米反对易关系，二者的表示论和态结构差异很大。 全交叉积还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -628,8 +940,20 @@
     {
       "chinese_name": "群C*代数",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个由群生成的算子代数对象。",
+        "它关联群表示、卷积代数和非交换调和分析。",
+        "常由 $\\lambda_g\\lambda_h=\\lambda_{gh}$ 生成并完成。",
+        "它把群乘法编码进 C* 代数，表示理论转化为 *-表示问题。",
+        "它的英文译名是 group C*-algebra。"
+      ],
+      "fragmented_clues": [
+        "群生成 算子代数对象",
+        "群表示 卷积代数 非交换调和分析",
+        "$\\lambda_g\\lambda_h=\\lambda_{gh}$",
+        "群乘法编码 *-表示问题",
+        "group C*-algebra"
+      ],
       "explanation_markdown": "群C*代数把群作用、动力系统或规范关系编码为C*代数。群C*代数的核心是群作用、协变表示和生成关系，和同族术语的分界也主要落在这些数据上。常写成 $u_gau_g^*=\\alpha_g(a)$，其中 $u_g$ 是实现群元素的酉算子，$\\alpha_g$ 是自同构作用。交叉积同时保留原代数 $A$ 和群 $G$ 的协变表示。\n\n群C*代数的全版本按所有协变表示取泛性质，约化版本依赖正则表示。CCR代数记录玻色对易关系，CAR代数记录费米反对易关系，二者的表示论和态结构差异很大。 群C*代数还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 群C*代数的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -652,8 +976,20 @@
     {
       "chinese_name": "约化群C*代数",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个群 C* 构造中的正则表示版本。",
+        "它关联左正则表示、群的解析性质和精确性。",
+        "常写成 $C_r^*(G)=\\overline{\\lambda(\\mathbb C G)}\\subset B(\\ell^2G)$。",
+        "它只使用左正则表示完成，可能小于全群版本。",
+        "它的英文译名是 reduced group C*-algebra。"
+      ],
+      "fragmented_clues": [
+        "群 C* 构造 正则表示版本",
+        "左正则表示 群解析性质 精确性",
+        "$C_r^*(G)=\\overline{\\lambda(\\mathbb C G)}\\subset B(\\ell^2G)$",
+        "正则表示完成 小于全群版本",
+        "reduced group C*-algebra"
+      ],
       "explanation_markdown": "约化群C*代数把群作用、动力系统或规范关系编码为C*代数。约化群C*代数的核心是群作用、协变表示和生成关系，和同族术语的分界也主要落在这些数据上。常写成 $u_gau_g^*=\\alpha_g(a)$，其中 $u_g$ 是实现群元素的酉算子，$\\alpha_g$ 是自同构作用。交叉积同时保留原代数 $A$ 和群 $G$ 的协变表示。\n\n约化群C*代数的全版本按所有协变表示取泛性质，约化版本依赖正则表示。CCR代数记录玻色对易关系，CAR代数记录费米反对易关系，二者的表示论和态结构差异很大。 约化群C*代数还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -676,8 +1012,20 @@
     {
       "chinese_name": "规范对易关系代数",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个量子力学中的算子代数模型。",
+        "它关联玻色场、位置动量算子和 Weyl 关系。",
+        "常写成 $W(f)W(g)=e^{-i\\sigma(f,g)/2}W(f+g)$。",
+        "它编码对易子为标量的玻色量子变量。",
+        "它的英文译名是 canonical commutation relations algebra，常记作 CCR algebra。"
+      ],
+      "fragmented_clues": [
+        "量子力学 算子代数模型",
+        "玻色场 位置动量 Weyl 关系",
+        "$W(f)W(g)=e^{-i\\sigma(f,g)/2}W(f+g)$",
+        "标量对易子 玻色变量",
+        "canonical commutation relations algebra CCR algebra"
+      ],
       "explanation_markdown": "规范对易关系代数把群作用、动力系统或规范关系编码为C*代数。规范对易关系代数的核心是群作用、协变表示和生成关系，和同族术语的分界也主要落在这些数据上。常写成 $u_gau_g^*=\\alpha_g(a)$，其中 $u_g$ 是实现群元素的酉算子，$\\alpha_g$ 是自同构作用。交叉积同时保留原代数 $A$ 和群 $G$ 的协变表示。\n\n规范对易关系代数的全版本按所有协变表示取泛性质，约化版本依赖正则表示。CCR代数记录玻色对易关系，CAR代数记录费米反对易关系，二者的表示论和态结构差异很大。 规范对易关系代数还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -700,8 +1048,20 @@
     {
       "chinese_name": "规范反对易关系代数",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个量子场论中的算子代数模型。",
+        "它关联费米场、Clifford 结构和反对易生成元。",
+        "关系常写成 $a(f)a(g)^*+a(g)^*a(f)=\\langle f,g\\rangle1$。",
+        "它编码费米变量的反对易关系，区别于玻色 Weyl 型关系。",
+        "它的英文译名是 canonical anticommutation relations algebra，常记作 CAR algebra。"
+      ],
+      "fragmented_clues": [
+        "量子场论 算子代数模型",
+        "费米场 Clifford 结构 反对易生成元",
+        "$a(f)a(g)^*+a(g)^*a(f)=\\langle f,g\\rangle1$",
+        "费米反对易 非玻色 Weyl",
+        "canonical anticommutation relations algebra CAR algebra"
+      ],
       "explanation_markdown": "规范反对易关系代数把群作用、动力系统或规范关系编码为C*代数。规范反对易关系代数的核心是群作用、协变表示和生成关系，和同族术语的分界也主要落在这些数据上。常写成 $u_gau_g^*=\\alpha_g(a)$，其中 $u_g$ 是实现群元素的酉算子，$\\alpha_g$ 是自同构作用。交叉积同时保留原代数 $A$ 和群 $G$ 的协变表示。\n\n规范反对易关系代数的全版本按所有协变表示取泛性质，约化版本依赖正则表示。CCR代数记录玻色对易关系，CAR代数记录费米反对易关系，二者的表示论和态结构差异很大。 规范反对易关系代数还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -724,8 +1084,20 @@
     {
       "chinese_name": "均匀超有限代数",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个 C* 代数分类中的归纳极限对象。",
+        "它关联矩阵代数张量积、Bratteli 图和 AF 代数。",
+        "典型写法为 $A=\\varinjlim M_{n_k}(\\mathbb C)$ 且嵌入为幺矩阵块。",
+        "它由有限维全矩阵代数不断嵌入得到， supernatural 数记录尺寸。",
+        "它的英文译名是 uniformly hyperfinite algebra，常记作 UHF algebra。"
+      ],
+      "fragmented_clues": [
+        "C* 分类 归纳极限对象",
+        "矩阵代数张量积 Bratteli 图 AF 代数",
+        "$A=\\varinjlim M_{n_k}(\\mathbb C)$",
+        "有限维矩阵嵌入 supernatural 数",
+        "uniformly hyperfinite algebra UHF algebra"
+      ],
       "explanation_markdown": "均匀超有限代数是算子代数中带拓扑、伴随和正性约束的结构。均匀超有限代数的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\|a^*a\\|=\\|a\\|^2$ 或 $M=M''$，其中前者是C*恒等式，后者是冯诺伊曼代数的双交换子条件。不同闭包拓扑会给出不同对象。\n\n均匀超有限代数的意义取决于范数闭、弱闭、投影格、态空间和表示空间的选择。有限维矩阵只能提供直观模型，真正的分类、积分和动力系统问题通常要在无限维代数中表述。 均匀超有限代数还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -748,8 +1120,20 @@
     {
       "chinese_name": "超有限因子",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个冯诺伊曼代数中的可近似因子。",
+        "它关联有限维子代数递增逼近、II 型理论和 Connes 分类。",
+        "常可写成 $R=\\overline{\\bigcup_n M_{2^n}(\\mathbb C)}^{\\rm WOT}$ 的 II$_1$ 情形。",
+        "它由有限维矩阵代数弱闭逼近，是可处理性最强的无限维因子之一。",
+        "它的英文译名是 hyperfinite factor。"
+      ],
+      "fragmented_clues": [
+        "冯诺伊曼代数 可近似因子",
+        "有限维子代数 II 型 Connes 分类",
+        "$R=\\overline{\\bigcup_n M_{2^n}(\\mathbb C)}^{\\rm WOT}$",
+        "有限维弱闭逼近 可处理无限维因子",
+        "hyperfinite factor"
+      ],
       "explanation_markdown": "超有限因子刻画冯诺伊曼代数中由投影、中心和包含关系控制的结构。超有限因子的核心是投影格、中心退化和包含指数，和同族术语的分界也主要落在这些数据上。常写成 $Z(M)=M\\cap M'=\\mathbb C1$，其中 $Z(M)$ 是中心，$M'$ 是交换子代数；中心退化时 $M$ 是因子。投影和部分等距给出Murray-von Neumann等价。\n\n超有限因子常用于I、II、III型分类、子因子指数和连续几何。Jones基本构造把包含 $N\\subset M$ 扩展为塔，平面代数则把相对交换子组织成可计算的图形代数。 超有限因子还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 超有限因子的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -772,8 +1156,20 @@
     {
       "chinese_name": "麦克达夫因子",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个 II$_1$ 因子理论中的稳定性类型。",
+        "它关联超有限 II$_1$ 因子张量吸收和中心序列。",
+        "特征关系为 $M\\cong M\\overline\\otimes R$。",
+        "它吸收超有限因子后不变，说明内部有丰富的渐近中心结构。",
+        "它的英文译名是 McDuff factor。"
+      ],
+      "fragmented_clues": [
+        "II$_1$ 因子 稳定性类型",
+        "超有限因子张量吸收 中心序列",
+        "$M\\cong M\\overline\\otimes R$",
+        "吸收后不变 渐近中心结构",
+        "McDuff factor"
+      ],
       "explanation_markdown": "麦克达夫因子刻画冯诺伊曼代数中由投影、中心和包含关系控制的结构。麦克达夫因子的核心是投影格、中心退化和包含指数，和同族术语的分界也主要落在这些数据上。常写成 $Z(M)=M\\cap M'=\\mathbb C1$，其中 $Z(M)$ 是中心，$M'$ 是交换子代数；中心退化时 $M$ 是因子。投影和部分等距给出Murray-von Neumann等价。\n\n麦克达夫因子常用于I、II、III型分类、子因子指数和连续几何。Jones基本构造把包含 $N\\subset M$ 扩展为塔，平面代数则把相对交换子组织成可计算的图形代数。 麦克达夫因子还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 麦克达夫因子的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -796,8 +1192,20 @@
     {
       "chinese_name": "汤姆田竹崎理论",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个冯诺伊曼代数中的模理论。",
+        "它关联循环分离向量、模算子和 KMS 动力学。",
+        "基本对象满足 $S=J\\Delta^{1/2}$，并给出 $\\sigma_t^\\varphi(x)=\\Delta_\\varphi^{it}x\\Delta_\\varphi^{-it}$。",
+        "它从态或权产生一参数自同构群，揭示非有限情形的时间演化。",
+        "它的英文译名是 Tomita-Takesaki theory。"
+      ],
+      "fragmented_clues": [
+        "冯诺伊曼代数 模理论",
+        "循环分离向量 模算子 KMS 动力学",
+        "$S=J\\Delta^{1/2}$ $\\sigma_t^\\varphi(x)=\\Delta_\\varphi^{it}x\\Delta_\\varphi^{-it}$",
+        "态 权 产生一参数自同构群",
+        "Tomita-Takesaki theory"
+      ],
       "explanation_markdown": "汤姆田竹崎理论描述冯诺伊曼代数的模理论、条件期望或量子场论局部代数结构。汤姆田竹崎理论的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\sigma_t^\\varphi(x)=\\Delta_\\varphi^{it}x\\Delta_\\varphi^{-it}$，其中 $\\varphi$ 是忠实正常权，$\\Delta_\\varphi$ 是模算子。模自同构群刻画态与时间演化的关系。\n\n汤姆田竹崎理论在III型因子和代数量子场论中尤其重要。自然正锥给出标准型，条件期望保留子代数上的态，共形网和Haag双对偶则把局域性写成算子代数条件。 汤姆田竹崎理论还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -820,8 +1228,20 @@
     {
       "chinese_name": "模自同构群",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个冯诺伊曼代数中的一参数自同构群。",
+        "它关联给定忠实正规权、KMS 条件和 III 型因子不变量。",
+        "常写成 $\\sigma_t^\\varphi(x)=\\Delta_\\varphi^{it}x\\Delta_\\varphi^{-it}$。",
+        "它由权决定，但在外自同构层面的信息可反映代数类型。",
+        "它的英文译名是 modular automorphism group。"
+      ],
+      "fragmented_clues": [
+        "冯诺伊曼代数 一参数自同构群",
+        "忠实正规权 KMS 条件 III 型因子",
+        "$\\sigma_t^\\varphi(x)=\\Delta_\\varphi^{it}x\\Delta_\\varphi^{-it}$",
+        "权决定 外层信息 代数类型",
+        "modular automorphism group"
+      ],
       "explanation_markdown": "模自同构群描述冯诺伊曼代数的模理论、条件期望或量子场论局部代数结构。模自同构群的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\sigma_t^\\varphi(x)=\\Delta_\\varphi^{it}x\\Delta_\\varphi^{-it}$，其中 $\\varphi$ 是忠实正常权，$\\Delta_\\varphi$ 是模算子。模自同构群刻画态与时间演化的关系。\n\n模自同构群在III型因子和代数量子场论中尤其重要。自然正锥给出标准型，条件期望保留子代数上的态，共形网和Haag双对偶则把局域性写成算子代数条件。 模自同构群还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -844,8 +1264,20 @@
     {
       "chinese_name": "标准型",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个冯诺伊曼代数中的规范表示结构。",
+        "它关联 Hilbert 空间、自然正锥和模共轭。",
+        "常写成 $(M,H,J,P)$。",
+        "它给每个代数配备标准表示，使正规正泛函与正锥向量对应。",
+        "它的英文译名是 standard form。"
+      ],
+      "fragmented_clues": [
+        "冯诺伊曼代数 规范表示结构",
+        "Hilbert 空间 自然正锥 模共轭",
+        "$(M,H,J,P)$",
+        "标准表示 正泛函 正锥向量",
+        "standard form"
+      ],
       "explanation_markdown": "标准型描述冯诺伊曼代数的模理论、条件期望或量子场论局部代数结构。标准型的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\sigma_t^\\varphi(x)=\\Delta_\\varphi^{it}x\\Delta_\\varphi^{-it}$，其中 $\\varphi$ 是忠实正常权，$\\Delta_\\varphi$ 是模算子。模自同构群刻画态与时间演化的关系。\n\n标准型在III型因子和代数量子场论中尤其重要。自然正锥给出标准型，条件期望保留子代数上的态，共形网和Haag双对偶则把局域性写成算子代数条件。 标准型还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 标准型的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -868,8 +1300,20 @@
     {
       "chinese_name": "自然正锥",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个标准型理论中的闭凸锥。",
+        "它关联正泛函、模共轭和冯诺伊曼代数的标准表示。",
+        "常记为 $P\\subset H$ 且满足 $J\\xi=\\xi$ 对 $\\xi\\in P$。",
+        "它把正规正泛函实现为 Hilbert 空间中的正向量。",
+        "它的英文译名是 natural positive cone。"
+      ],
+      "fragmented_clues": [
+        "标准型理论 闭凸锥",
+        "正泛函 模共轭 标准表示",
+        "$P\\subset H$ $J\\xi=\\xi$",
+        "正规正泛函 Hilbert 正向量",
+        "natural positive cone"
+      ],
       "explanation_markdown": "自然正锥描述冯诺伊曼代数的模理论、条件期望或量子场论局部代数结构。自然正锥的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\sigma_t^\\varphi(x)=\\Delta_\\varphi^{it}x\\Delta_\\varphi^{-it}$，其中 $\\varphi$ 是忠实正常权，$\\Delta_\\varphi$ 是模算子。模自同构群刻画态与时间演化的关系。\n\n自然正锥在III型因子和代数量子场论中尤其重要。自然正锥给出标准型，条件期望保留子代数上的态，共形网和Haag双对偶则把局域性写成算子代数条件。 自然正锥还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 自然正锥的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -892,8 +1336,20 @@
     {
       "chinese_name": "条件期望",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数中的投影型正映射。",
+        "它关联子代数、迹保持和 Jones 基本构造。",
+        "常写成 $E_B:A\\to B$ 且 $E_B(b_1ab_2)=b_1E_B(a)b_2$。",
+        "它是保持子代数双模结构的正投影，非交换地模拟条件平均。",
+        "它的英文译名是 conditional expectation。"
+      ],
+      "fragmented_clues": [
+        "算子代数 投影型正映射",
+        "子代数 迹保持 Jones 基本构造",
+        "$E_B:A\\to B$ $E_B(b_1ab_2)=b_1E_B(a)b_2$",
+        "双模正投影 条件平均",
+        "conditional expectation"
+      ],
       "explanation_markdown": "条件期望是从一个算子代数投到子代数的正投影，保留子代数两侧乘法。条件期望的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $E:N\\subset M,\\,E(n_1xn_2)=n_1E(x)n_2$，其中 $E:M\\to N$，$n_1,n_2\\in N$，$x\\in M$。在C*代数或冯诺伊曼代数中，它还要求完全正、范数一或正常性等条件。\n\n它和概率论条件期望相呼应，但目标是子代数而不是子σ代数。子因子理论、交叉积和KMS态中常用它保留迹或权；若没有忠实性或正常性，指数和模理论结论会改变。 条件期望还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -916,8 +1372,20 @@
     {
       "chinese_name": "琼斯指数",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个子因子理论中的数值不变量。",
+        "它关联包含 $N\\subset M$、基本构造和投影维数。",
+        "常记为 $[M:N]$。",
+        "它量化子因子包含的相对大小，并出现离散允许值与连续区间现象。",
+        "它的英文译名是 Jones index。"
+      ],
+      "fragmented_clues": [
+        "子因子理论 数值不变量",
+        "包含 $N\\subset M$ 基本构造 投影维数",
+        "$[M:N]$",
+        "相对大小 离散允许值 连续区间",
+        "Jones index"
+      ],
       "explanation_markdown": "琼斯指数刻画冯诺伊曼代数中由投影、中心和包含关系控制的结构。琼斯指数的核心是投影格、中心退化和包含指数，和同族术语的分界也主要落在这些数据上。常写成 $Z(M)=M\\cap M'=\\mathbb C1$，其中 $Z(M)$ 是中心，$M'$ 是交换子代数；中心退化时 $M$ 是因子。投影和部分等距给出Murray-von Neumann等价。\n\n琼斯指数常用于I、II、III型分类、子因子指数和连续几何。Jones基本构造把包含 $N\\subset M$ 扩展为塔，平面代数则把相对交换子组织成可计算的图形代数。 琼斯指数还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 琼斯指数的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -940,8 +1408,20 @@
     {
       "chinese_name": "基本构造",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个子因子理论中的扩张步骤。",
+        "它关联包含 $N\\subset M$、条件期望和 Jones 投影。",
+        "常写成 $N\\subset M\\subset \\langle M,e_N\\rangle$。",
+        "它通过加入投影 $e_N$ 生成下一层代数，是塔构造的第一步。",
+        "它的英文译名是 basic construction。"
+      ],
+      "fragmented_clues": [
+        "子因子理论 扩张步骤",
+        "包含 $N\\subset M$ 条件期望 Jones 投影",
+        "$N\\subset M\\subset \\langle M,e_N\\rangle$",
+        "加入 $e_N$ 下一层 塔第一步",
+        "basic construction"
+      ],
       "explanation_markdown": "基本构造刻画冯诺伊曼代数中由投影、中心和包含关系控制的结构。基本构造的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $Z(M)=M\\cap M'=\\mathbb C1$，其中 $Z(M)$ 是中心，$M'$ 是交换子代数；中心退化时 $M$ 是因子。投影和部分等距给出Murray-von Neumann等价。\n\n基本构造常用于I、II、III型分类、子因子指数和连续几何。Jones基本构造把包含 $N\\subset M$ 扩展为塔，平面代数则把相对交换子组织成可计算的图形代数。 基本构造还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 基本构造的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -964,8 +1444,20 @@
     {
       "chinese_name": "塔构造",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个子因子理论中的迭代构造。",
+        "它关联基本构造反复进行和 Jones 投影序列。",
+        "常写成 $N\\subset M\\subset M_1\\subset M_2\\subset\\cdots$。",
+        "它把一次包含扩展为无限层级，平面代数和标准不变量从中产生。",
+        "它的英文译名是 tower construction。"
+      ],
+      "fragmented_clues": [
+        "子因子理论 迭代构造",
+        "基本构造 Jones 投影序列",
+        "$N\\subset M\\subset M_1\\subset M_2\\subset\\cdots$",
+        "无限层级 平面代数 标准不变量",
+        "tower construction"
+      ],
       "explanation_markdown": "塔构造刻画冯诺伊曼代数中由投影、中心和包含关系控制的结构。塔构造的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $Z(M)=M\\cap M'=\\mathbb C1$，其中 $Z(M)$ 是中心，$M'$ 是交换子代数；中心退化时 $M$ 是因子。投影和部分等距给出Murray-von Neumann等价。\n\n塔构造常用于I、II、III型分类、子因子指数和连续几何。Jones基本构造把包含 $N\\subset M$ 扩展为塔，平面代数则把相对交换子组织成可计算的图形代数。 塔构造还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 塔构造的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -988,8 +1480,20 @@
     {
       "chinese_name": "子因子",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个冯诺伊曼代数中的包含对象。",
+        "它关联因子之间的嵌入、Jones 指数和标准不变量。",
+        "基本写法为 $N\\subset M$，其中两者都是因子。",
+        "它研究的是因子内部的子结构，而不是单个代数本身的类型。",
+        "它的英文译名是 subfactor。"
+      ],
+      "fragmented_clues": [
+        "冯诺伊曼代数 包含对象",
+        "因子嵌入 Jones 指数 标准不变量",
+        "$N\\subset M$ 因子",
+        "内部子结构 非单代数类型",
+        "subfactor"
+      ],
       "explanation_markdown": "子因子刻画冯诺伊曼代数中由投影、中心和包含关系控制的结构。子因子的核心是投影格、中心退化和包含指数，和同族术语的分界也主要落在这些数据上。常写成 $Z(M)=M\\cap M'=\\mathbb C1$，其中 $Z(M)$ 是中心，$M'$ 是交换子代数；中心退化时 $M$ 是因子。投影和部分等距给出Murray-von Neumann等价。\n\n子因子常用于I、II、III型分类、子因子指数和连续几何。Jones基本构造把包含 $N\\subset M$ 扩展为塔，平面代数则把相对交换子组织成可计算的图形代数。 子因子还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 子因子的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1012,8 +1516,20 @@
     {
       "chinese_name": "平面代数",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个子因子理论中的图形代数结构。",
+        "它关联 Jones 塔、相对交换子和低维拓扑图式。",
+        "运算由平面 tangle 给出，常记为 $P_{n,\\pm}$。",
+        "它把相对交换子组织成可画图计算的多盒空间体系。",
+        "它的英文译名是 planar algebra。"
+      ],
+      "fragmented_clues": [
+        "子因子理论 图形代数结构",
+        "Jones 塔 相对交换子 低维拓扑图式",
+        "$P_{n,\\pm}$ 平面 tangle",
+        "相对交换子 多盒空间 图形计算",
+        "planar algebra"
+      ],
       "explanation_markdown": "平面代数刻画冯诺伊曼代数中由投影、中心和包含关系控制的结构。平面代数的核心是投影格、中心退化和包含指数，和同族术语的分界也主要落在这些数据上。常写成 $Z(M)=M\\cap M'=\\mathbb C1$，其中 $Z(M)$ 是中心，$M'$ 是交换子代数；中心退化时 $M$ 是因子。投影和部分等距给出Murray-von Neumann等价。\n\n平面代数常用于I、II、III型分类、子因子指数和连续几何。Jones基本构造把包含 $N\\subset M$ 扩展为塔，平面代数则把相对交换子组织成可计算的图形代数。 平面代数还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 平面代数的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1036,8 +1552,20 @@
     {
       "chinese_name": "共形网",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数量子场论中的局部结构。",
+        "它关联圆周区间、von Neumann 代数和共形对称。",
+        "常写成 $I\\mapsto \\mathcal A(I)$。",
+        "它给每个区间分配局部代数，并满足同位、局域性和协变性等公理。",
+        "它的英文译名是 conformal net。"
+      ],
+      "fragmented_clues": [
+        "算子代数量子场论 局部结构",
+        "圆周区间 von Neumann 代数 共形对称",
+        "$I\\mapsto \\mathcal A(I)$",
+        "区间局部代数 同位 局域性 协变性",
+        "conformal net"
+      ],
       "explanation_markdown": "共形网描述冯诺伊曼代数的模理论、条件期望或量子场论局部代数结构。共形网的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\sigma_t^\\varphi(x)=\\Delta_\\varphi^{it}x\\Delta_\\varphi^{-it}$，其中 $\\varphi$ 是忠实正常权，$\\Delta_\\varphi$ 是模算子。模自同构群刻画态与时间演化的关系。\n\n共形网在III型因子和代数量子场论中尤其重要。自然正锥给出标准型，条件期望保留子代数上的态，共形网和Haag双对偶则把局域性写成算子代数条件。 共形网还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 共形网的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1060,8 +1588,20 @@
     {
       "chinese_name": "局部量子物理代数",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数量子场论中的局部代数框架。",
+        "它关联时空区域、可观测量代数和因果局域性。",
+        "常写成 $\\mathcal O\\mapsto \\mathcal A(\\mathcal O)$。",
+        "它把每个时空区域对应到一个算子代数，空间分离区域的代数相互交换。",
+        "它的英文译名是 local quantum physics algebra。"
+      ],
+      "fragmented_clues": [
+        "代数量子场论 局部代数框架",
+        "时空区域 可观测量代数 因果局域性",
+        "$\\mathcal O\\mapsto \\mathcal A(\\mathcal O)$",
+        "区域对应算子代数 空间分离交换",
+        "local quantum physics algebra"
+      ],
       "explanation_markdown": "局部量子物理代数描述冯诺伊曼代数的模理论、条件期望或量子场论局部代数结构。局部量子物理代数的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\sigma_t^\\varphi(x)=\\Delta_\\varphi^{it}x\\Delta_\\varphi^{-it}$，其中 $\\varphi$ 是忠实正常权，$\\Delta_\\varphi$ 是模算子。模自同构群刻画态与时间演化的关系。\n\n局部量子物理代数在III型因子和代数量子场论中尤其重要。自然正锥给出标准型，条件期望保留子代数上的态，共形网和Haag双对偶则把局域性写成算子代数条件。 局部量子物理代数还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -1084,8 +1624,20 @@
     {
       "chinese_name": "哈格双对偶",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数量子场论中的对偶性条件。",
+        "它关联区域补集、交换子代数和局域可观测量的完备性。",
+        "常写成 $\\mathcal A(O)=\\mathcal A(O^{\\prime})^{\\prime}$。",
+        "它要求区域代数等于补区域代数的交换子，表达没有遗漏的局部自由度。",
+        "它的英文译名是 Haag duality。"
+      ],
+      "fragmented_clues": [
+        "代数量子场论 对偶性条件",
+        "区域补集 交换子代数 局部完备性",
+        "$\\mathcal A(O)=\\mathcal A(O^{\\prime})^{\\prime}$",
+        "补区域交换子 无遗漏自由度",
+        "Haag duality"
+      ],
       "explanation_markdown": "哈格双对偶描述冯诺伊曼代数的模理论、条件期望或量子场论局部代数结构。哈格双对偶的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\sigma_t^\\varphi(x)=\\Delta_\\varphi^{it}x\\Delta_\\varphi^{-it}$，其中 $\\varphi$ 是忠实正常权，$\\Delta_\\varphi$ 是模算子。模自同构群刻画态与时间演化的关系。\n\n哈格双对偶在III型因子和代数量子场论中尤其重要。自然正锥给出标准型，条件期望保留子代数上的态，共形网和Haag双对偶则把局域性写成算子代数条件。 哈格双对偶还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -1108,8 +1660,20 @@
     {
       "chinese_name": "核性",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个 C* 代数分类中的张量性质。",
+        "它关联最小与最大张量范数一致和可近似有限维分解。",
+        "判别常写成 $A\\otimes_{\\min}B=A\\otimes_{\\max}B$ 对所有 $B$ 成立。",
+        "它是非交换空间的良性近似性质，分类理论中非常核心。",
+        "它的英文译名是 nuclearity。"
+      ],
+      "fragmented_clues": [
+        "C* 分类 张量性质",
+        "最小最大张量范数一致 有限维近似",
+        "$A\\otimes_{\\min}B=A\\otimes_{\\max}B$ 所有 $B$",
+        "良性近似 分类关键性质",
+        "nuclearity"
+      ],
       "explanation_markdown": "核性属于C*代数结构与分类理论中的性质或工具。核性的核心是张量稳定性、理想结构和K理论不变量，和同族术语的分界也主要落在这些数据上。常写成 $0\\to I\\to A\\to A/I\\to0$，其中 $I$ 是理想，$A/I$ 是商代数；核性、精确性和张量积性质说明这列在不同函子下如何保持。K理论和迹单纯形常作为分类不变量。\n\n核性区分的是稳定同构、张量吸收和理想结构，而不只是代数是否有单位。Kirchberg代数、Elliott纲领和Brown-Douglas-Fillmore理论都依赖这些稳定性质。 核性还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 核性的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1132,8 +1696,20 @@
     {
       "chinese_name": "精确性",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个 C* 代数中的张量正合性质。",
+        "它关联短正合列在最小张量积下是否保持正合。",
+        "条件为 $0\\to I\\otimes_{\\min}A\\to B\\otimes_{\\min}A\\to (B/I)\\otimes_{\\min}A\\to0$ 正合。",
+        "它弱于核性，常用于约化群代数和动力系统分析。",
+        "它的英文译名是 exactness。"
+      ],
+      "fragmented_clues": [
+        "C* 代数 张量正合性质",
+        "短正合列 最小张量积",
+        "$0\\to I\\otimes_{\\min}A\\to B\\otimes_{\\min}A\\to (B/I)\\otimes_{\\min}A\\to0$",
+        "弱于核性 约化群代数 动力系统",
+        "exactness"
+      ],
       "explanation_markdown": "精确性属于C*代数结构与分类理论中的性质或工具。精确性的核心是张量稳定性、理想结构和K理论不变量，和同族术语的分界也主要落在这些数据上。常写成 $0\\to I\\to A\\to A/I\\to0$，其中 $I$ 是理想，$A/I$ 是商代数；核性、精确性和张量积性质说明这列在不同函子下如何保持。K理论和迹单纯形常作为分类不变量。\n\n精确性区分的是稳定同构、张量吸收和理想结构，而不只是代数是否有单位。Kirchberg代数、Elliott纲领和Brown-Douglas-Fillmore理论都依赖这些稳定性质。 精确性还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 精确性的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1156,8 +1732,20 @@
     {
       "chinese_name": "单纯性",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数结构中的理想性质。",
+        "它关联闭双边理想、不可分解性和分类对象。",
+        "条件可写成 $I\\triangleleft A\\Rightarrow I=0$ 或 $I=A$。",
+        "它表示没有非平凡闭双边理想，结构不能通过理想商进一步拆分。",
+        "它的英文译名是 simplicity。"
+      ],
+      "fragmented_clues": [
+        "代数结构 理想性质",
+        "闭双边理想 不可分解 分类对象",
+        "$I\\triangleleft A\\Rightarrow I=0$ 或 $I=A$",
+        "无非平凡理想 不可拆分",
+        "simplicity"
+      ],
       "explanation_markdown": "单纯性属于C*代数结构与分类理论中的性质或工具。单纯性的核心是张量稳定性、理想结构和K理论不变量，和同族术语的分界也主要落在这些数据上。常写成 $0\\to I\\to A\\to A/I\\to0$，其中 $I$ 是理想，$A/I$ 是商代数；核性、精确性和张量积性质说明这列在不同函子下如何保持。K理论和迹单纯形常作为分类不变量。\n\n单纯性区分的是稳定同构、张量吸收和理想结构，而不只是代数是否有单位。Kirchberg代数、Elliott纲领和Brown-Douglas-Fillmore理论都依赖这些稳定性质。 单纯性还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 单纯性的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1180,8 +1768,20 @@
     {
       "chinese_name": "纯无限性",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个 C* 代数中的无限投影性质。",
+        "它关联 Kirchberg 代数、Cuntz 比较和非稳定有限行为。",
+        "典型比较可写成 $a\\precsim b$ 对合适的非零正元素反复成立。",
+        "它排除有限迹型几何，表现为非零正元素可被无限复制比较。",
+        "它的英文译名是 pure infiniteness。"
+      ],
+      "fragmented_clues": [
+        "C* 代数 无限投影性质",
+        "Kirchberg 代数 Cuntz 比较 非稳定有限",
+        "$a\\precsim b$ 非零正元素 反复比较",
+        "排除有限迹型 正元素无限复制",
+        "pure infiniteness"
+      ],
       "explanation_markdown": "纯无限性属于C*代数结构与分类理论中的性质或工具。纯无限性的核心是张量稳定性、理想结构和K理论不变量，和同族术语的分界也主要落在这些数据上。常写成 $0\\to I\\to A\\to A/I\\to0$，其中 $I$ 是理想，$A/I$ 是商代数；核性、精确性和张量积性质说明这列在不同函子下如何保持。K理论和迹单纯形常作为分类不变量。\n\n纯无限性区分的是稳定同构、张量吸收和理想结构，而不只是代数是否有单位。Kirchberg代数、Elliott纲领和Brown-Douglas-Fillmore理论都依赖这些稳定性质。 纯无限性还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -1204,8 +1804,20 @@
     {
       "chinese_name": "稳定秩",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个 C* 代数中的非交换维数不变量。",
+        "它关联可逆元素稠密性、K 理论稳定性和拓扑维数类比。",
+        "一级情形条件为 $GL(A)$ 在 $A$ 中稠密。",
+        "它模仿交换空间的维数行为，但用可逆元近似来刻画。",
+        "它的英文译名是 stable rank。"
+      ],
+      "fragmented_clues": [
+        "C* 代数 非交换维数不变量",
+        "可逆元素稠密 K 理论稳定 拓扑维数类比",
+        "$GL(A)$ 在 $A$ 中稠密",
+        "可逆元近似 交换维数类比",
+        "stable rank"
+      ],
       "explanation_markdown": "稳定秩属于C*代数结构与分类理论中的性质或工具。稳定秩的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $0\\to I\\to A\\to A/I\\to0$，其中 $I$ 是理想，$A/I$ 是商代数；核性、精确性和张量积性质说明这列在不同函子下如何保持。K理论和迹单纯形常作为分类不变量。\n\n稳定秩区分的是稳定同构、张量吸收和理想结构，而不只是代数是否有单位。Kirchberg代数、Elliott纲领和Brown-Douglas-Fillmore理论都依赖这些稳定性质。 稳定秩还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 稳定秩的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1228,8 +1840,20 @@
     {
       "chinese_name": "实秩",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个 C* 代数中的自伴近似维数。",
+        "它关联自伴元、有限谱近似和非交换覆盖维。",
+        "零级情形可写成 $A_{sa}^{\\rm fin\\,spec}$ 在 $A_{sa}$ 中稠密。",
+        "它用自伴元素的谱近似刻画维数，区别于依赖可逆元的稳定秩。",
+        "它的英文译名是 real rank。"
+      ],
+      "fragmented_clues": [
+        "C* 代数 自伴近似维数",
+        "自伴元 有限谱近似 非交换覆盖维",
+        "$A_{sa}^{\\rm fin\\,spec}$ 稠密于 $A_{sa}$",
+        "谱近似维数 非可逆元维数",
+        "real rank"
+      ],
       "explanation_markdown": "实秩属于C*代数结构与分类理论中的性质或工具。实秩的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $0\\to I\\to A\\to A/I\\to0$，其中 $I$ 是理想，$A/I$ 是商代数；核性、精确性和张量积性质说明这列在不同函子下如何保持。K理论和迹单纯形常作为分类不变量。\n\n实秩区分的是稳定同构、张量吸收和理想结构，而不只是代数是否有单位。Kirchberg代数、Elliott纲领和Brown-Douglas-Fillmore理论都依赖这些稳定性质。 实秩还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 实秩的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1252,8 +1876,20 @@
     {
       "chinese_name": "布朗道格拉斯菲尔莫尔理论",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数中的扩张分类理论。",
+        "它关联本质正规算子、Calkin 代数和 Ext 群。",
+        "核心扩张常写成 $0\\to K(H)\\to E\\to C(X)\\to0$。",
+        "它把算子模紧扰动的分类转化为 C* 代数扩张问题。",
+        "它的英文译名是 Brown-Douglas-Fillmore theory。"
+      ],
+      "fragmented_clues": [
+        "算子代数 扩张分类理论",
+        "本质正规算子 Calkin 代数 Ext 群",
+        "$0\\to K(H)\\to E\\to C(X)\\to0$",
+        "模紧扰动分类 C* 扩张",
+        "Brown-Douglas-Fillmore theory"
+      ],
       "explanation_markdown": "布朗道格拉斯菲尔莫尔理论属于C*代数结构与分类理论中的性质或工具。布朗道格拉斯菲尔莫尔理论的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $0\\to I\\to A\\to A/I\\to0$，其中 $I$ 是理想，$A/I$ 是商代数；核性、精确性和张量积性质说明这列在不同函子下如何保持。K理论和迹单纯形常作为分类不变量。\n\n布朗道格拉斯菲尔莫尔理论区分的是稳定同构、张量吸收和理想结构，而不只是代数是否有单位。Kirchberg代数、Elliott纲领和Brown-Douglas-Fillmore理论都依赖这些稳定性质。 布朗道格拉斯菲尔莫尔理论还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -1276,8 +1912,20 @@
     {
       "chinese_name": "扩张半群",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个 C* 代数扩张理论中的代数不变量。",
+        "它关联短正合列、Busby 映射和 BDF 理论。",
+        "常记为 $\\operatorname{Ext}(A)$。",
+        "它以直和运算组织等价扩张类，反映代数被紧算子扩张的方式。",
+        "它的英文译名是 extension semigroup。"
+      ],
+      "fragmented_clues": [
+        "C* 扩张理论 代数不变量",
+        "短正合列 Busby 映射 BDF 理论",
+        "$\\operatorname{Ext}(A)$",
+        "等价扩张类 直和运算 紧算子扩张",
+        "extension semigroup"
+      ],
       "explanation_markdown": "扩张半群处理算子代数中的谱、理想和函数代入。扩张半群的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $f(a)=\\int_{\\sigma(a)}f(\\lambda)dE(\\lambda)$，其中 $a$ 是正规算子，$E$ 是谱测度，$\\sigma(a)$ 是谱。函数演算把连续或Borel函数转化为代数内部的算子。\n\n扩张半群在C*代数和冯诺伊曼代数中的可用函数范围不同。紧算子、Calkin代数和Toeplitz扩张常用来研究Fredholm指数、边界映射和K理论类。 扩张半群还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 扩张半群的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1300,8 +1948,20 @@
     {
       "chinese_name": "卡斯帕罗夫双函子",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子 K 理论中的双变量函子。",
+        "它关联 KK 群、Fredholm 模和非交换拓扑中的对应。",
+        "常记为 $KK(A,B)$。",
+        "它同时概括 K 理论与 K 同调，是 Kasparov 乘积的载体。",
+        "它的英文译名是 Kasparov bifunctor。"
+      ],
+      "fragmented_clues": [
+        "算子 K 理论 双变量函子",
+        "KK 群 Fredholm 模 非交换拓扑对应",
+        "$KK(A,B)$",
+        "概括 K 理论 K 同调 Kasparov 乘积",
+        "Kasparov bifunctor"
+      ],
       "explanation_markdown": "卡斯帕罗夫双函子是算子代数中带拓扑、伴随和正性约束的结构。卡斯帕罗夫双函子的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\|a^*a\\|=\\|a\\|^2$ 或 $M=M''$，其中前者是C*恒等式，后者是冯诺伊曼代数的双交换子条件。不同闭包拓扑会给出不同对象。\n\n卡斯帕罗夫双函子的意义取决于范数闭、弱闭、投影格、态空间和表示空间的选择。有限维矩阵只能提供直观模型，真正的分类、积分和动力系统问题通常要在无限维代数中表述。 卡斯帕罗夫双函子还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -1324,8 +1984,20 @@
     {
       "chinese_name": "布朗格林里夫定理",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个 C* 代数 Morita 理论中的稳定同构定理。",
+        "它关联强 Morita 等价、紧算子张量和稳定化。",
+        "典型结论为 $A\\sim_M B\\Rightarrow A\\otimes K\\cong B\\otimes K$。",
+        "它说明强 Morita 等价在张量紧算子后变成真正同构。",
+        "它的英文译名是 Brown-Green-Rieffel theorem。"
+      ],
+      "fragmented_clues": [
+        "C* Morita 理论 稳定同构定理",
+        "强 Morita 等价 紧算子张量 稳定化",
+        "$A\\sim_M B\\Rightarrow A\\otimes K\\cong B\\otimes K$",
+        "张量紧算子后 真同构",
+        "Brown-Green-Rieffel theorem"
+      ],
       "explanation_markdown": "布朗格林里夫定理属于C*代数结构与分类理论中的性质或工具。布朗格林里夫定理的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $0\\to I\\to A\\to A/I\\to0$，其中 $I$ 是理想，$A/I$ 是商代数；核性、精确性和张量积性质说明这列在不同函子下如何保持。K理论和迹单纯形常作为分类不变量。\n\n布朗格林里夫定理区分的是稳定同构、张量吸收和理想结构，而不只是代数是否有单位。Kirchberg代数、Elliott纲领和Brown-Douglas-Fillmore理论都依赖这些稳定性质。 布朗格林里夫定理还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -1348,8 +2020,20 @@
     {
       "chinese_name": "埃利奥特分类纲领",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个 C* 代数分类方向的研究纲领。",
+        "它关联可分类核单纯代数、K 理论、迹单纯形和序结构。",
+        "典型不变量写成 $K_0(A),K_1(A),T(A),\\rho_A$。",
+        "它试图用可计算代数拓扑和迹数据完全区分大类 C* 代数。",
+        "它的英文译名是 Elliott classification program。"
+      ],
+      "fragmented_clues": [
+        "C* 分类 研究纲领",
+        "核单纯代数 K 理论 迹单纯形 序结构",
+        "$K_0(A),K_1(A),T(A),\\rho_A$",
+        "可计算不变量 完全区分",
+        "Elliott classification program"
+      ],
       "explanation_markdown": "埃利奥特分类纲领属于C*代数结构与分类理论中的性质或工具。埃利奥特分类纲领的核心是张量稳定性、理想结构和K理论不变量，和同族术语的分界也主要落在这些数据上。常写成 $0\\to I\\to A\\to A/I\\to0$，其中 $I$ 是理想，$A/I$ 是商代数；核性、精确性和张量积性质说明这列在不同函子下如何保持。K理论和迹单纯形常作为分类不变量。\n\n埃利奥特分类纲领区分的是稳定同构、张量吸收和理想结构，而不只是代数是否有单位。Kirchberg代数、Elliott纲领和Brown-Douglas-Fillmore理论都依赖这些稳定性质。 埃利奥特分类纲领还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -1372,8 +2056,20 @@
     {
       "chinese_name": "克尔希贝格代数",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个 C* 分类中的纯无限单纯代数类。",
+        "它关联核性、可分性、UCT 和 Kirchberg-Phillips 分类。",
+        "常以 $A$ 可分、核、单纯、纯无限作为条件。",
+        "它代表非稳定有限分类世界，K 理论在 UCT 情形中起决定作用。",
+        "它的英文译名是 Kirchberg algebra。"
+      ],
+      "fragmented_clues": [
+        "C* 分类 纯无限单纯代数类",
+        "核性 可分 UCT Kirchberg-Phillips 分类",
+        "$A$ 可分 核 单纯 纯无限",
+        "非稳定有限 K 理论决定",
+        "Kirchberg algebra"
+      ],
       "explanation_markdown": "克尔希贝格代数属于C*代数结构与分类理论中的性质或工具。克尔希贝格代数的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $0\\to I\\to A\\to A/I\\to0$，其中 $I$ 是理想，$A/I$ 是商代数；核性、精确性和张量积性质说明这列在不同函子下如何保持。K理论和迹单纯形常作为分类不变量。\n\n克尔希贝格代数区分的是稳定同构、张量吸收和理想结构，而不只是代数是否有单位。Kirchberg代数、Elliott纲领和Brown-Douglas-Fillmore理论都依赖这些稳定性质。 克尔希贝格代数还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -1396,8 +2092,20 @@
     {
       "chinese_name": "若尔当算子代数",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个非自伴算子代数中的 Jordan 结构。",
+        "它关联对称乘积、算子系统和量子可观测量代数化。",
+        "乘法常写成 $a\\circ b=(ab+ba)/2$。",
+        "它保留可观测量的对称乘法，而不使用完整非交换乘法。",
+        "它的英文译名是 Jordan operator algebra。"
+      ],
+      "fragmented_clues": [
+        "非自伴算子代数 Jordan 结构",
+        "对称乘积 算子系统 量子可观测量",
+        "$a\\circ b=(ab+ba)/2$",
+        "对称乘法 非完整非交换乘法",
+        "Jordan operator algebra"
+      ],
       "explanation_markdown": "若尔当算子代数是算子代数中带拓扑、伴随和正性约束的结构。若尔当算子代数的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\|a^*a\\|=\\|a\\|^2$ 或 $M=M''$，其中前者是C*恒等式，后者是冯诺伊曼代数的双交换子条件。不同闭包拓扑会给出不同对象。\n\n若尔当算子代数的意义取决于范数闭、弱闭、投影格、态空间和表示空间的选择。有限维矩阵只能提供直观模型，真正的分类、积分和动力系统问题通常要在无限维代数中表述。 若尔当算子代数还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -1420,8 +2128,20 @@
     {
       "chinese_name": "罗赫林性质",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个 C* 动力系统中的强自由性性质。",
+        "它关联自同构作用、投影塔和分类中交叉积结构。",
+        "典型要求存在近似中心的 Rokhlin 投影满足 $\\alpha(e_i)\\approx e_{i+1}$。",
+        "它用近似分割的投影塔表达群作用的高度自由性。",
+        "它的英文译名是 Rokhlin property。"
+      ],
+      "fragmented_clues": [
+        "C* 动力系统 强自由性性质",
+        "自同构作用 投影塔 交叉积",
+        "$\\alpha(e_i)\\approx e_{i+1}$",
+        "近似中心投影塔 群作用自由性",
+        "Rokhlin property"
+      ],
       "explanation_markdown": "罗赫林性质是算子代数中带拓扑、伴随和正性约束的结构。罗赫林性质的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\|a^*a\\|=\\|a\\|^2$ 或 $M=M''$，其中前者是C*恒等式，后者是冯诺伊曼代数的双交换子条件。不同闭包拓扑会给出不同对象。\n\n罗赫林性质的意义取决于范数闭、弱闭、投影格、态空间和表示空间的选择。有限维矩阵只能提供直观模型，真正的分类、积分和动力系统问题通常要在无限维代数中表述。 罗赫林性质还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -1444,8 +2164,20 @@
     {
       "chinese_name": "近似内自同构",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数中的自同构性质。",
+        "它关联酉共轭近似、外自同构群和分类中的扰动技术。",
+        "常写成 $\\alpha(a)=\\lim_n u_n a u_n^*$。",
+        "它不一定由单个酉实现，但可由一列内自同构逐点逼近。",
+        "它的英文译名是 approximately inner automorphism。"
+      ],
+      "fragmented_clues": [
+        "算子代数 自同构性质",
+        "酉共轭近似 外自同构群 扰动技术",
+        "$\\alpha(a)=\\lim_n u_n a u_n^*$",
+        "非单酉实现 内自同构逐点逼近",
+        "approximately inner automorphism"
+      ],
       "explanation_markdown": "近似内自同构是算子代数中带拓扑、伴随和正性约束的结构。近似内自同构的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\|a^*a\\|=\\|a\\|^2$ 或 $M=M''$，其中前者是C*恒等式，后者是冯诺伊曼代数的双交换子条件。不同闭包拓扑会给出不同对象。\n\n近似内自同构的意义取决于范数闭、弱闭、投影格、态空间和表示空间的选择。有限维矩阵只能提供直观模型，真正的分类、积分和动力系统问题通常要在无限维代数中表述。 近似内自同构还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -1468,8 +2200,20 @@
     {
       "chinese_name": "外自同构群",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数中的商群不变量。",
+        "它关联自同构、内扰动和动力系统分类。",
+        "常写成 $\\operatorname{Out}(A)=\\operatorname{Aut}(A)/\\operatorname{Inn}(A)$。",
+        "它只记录不能由内部酉共轭消去的对称性。",
+        "它的英文译名是 outer automorphism group。"
+      ],
+      "fragmented_clues": [
+        "算子代数 商群不变量",
+        "自同构 内扰动 动力系统分类",
+        "$\\operatorname{Out}(A)=\\operatorname{Aut}(A)/\\operatorname{Inn}(A)$",
+        "非内部酉共轭对称性",
+        "outer automorphism group"
+      ],
       "explanation_markdown": "外自同构群是算子代数中带拓扑、伴随和正性约束的结构。外自同构群的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\|a^*a\\|=\\|a\\|^2$ 或 $M=M''$，其中前者是C*恒等式，后者是冯诺伊曼代数的双交换子条件。不同闭包拓扑会给出不同对象。\n\n外自同构群的意义取决于范数闭、弱闭、投影格、态空间和表示空间的选择。有限维矩阵只能提供直观模型，真正的分类、积分和动力系统问题通常要在无限维代数中表述。 外自同构群还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -1492,8 +2236,20 @@
     {
       "chinese_name": "谱三重态",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个非交换几何中的基本数据组。",
+        "它关联代数表示、Hilbert 空间和 Dirac 型算子。",
+        "常写成 $(\\mathcal A,\\mathcal H,D)$。",
+        "它用算子 $D$ 的谱和对易子界编码非交换空间的度量信息。",
+        "它的英文译名是 spectral triple。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 基本数据组",
+        "代数表示 Hilbert 空间 Dirac 算子",
+        "$(\\mathcal A,\\mathcal H,D)$",
+        "$D$ 谱 对易子界 度量信息",
+        "spectral triple"
+      ],
       "explanation_markdown": "谱三重态描述算子代数上的正线性泛函或由它们导出的积分结构。谱三重态的核心是正线性泛函、迹性质和模动力学，和同族术语的分界也主要落在这些数据上。常写成 $\\varphi(a^*a)\\ge0$，其中 $a$ 是代数元素，$\\varphi$ 是态、权或迹。迹态还满足 $\\tau(ab)=\\tau(ba)$，而权允许取无穷值。\n\n谱三重态决定了表示、模自同构群和非交换 $L^p$ 空间的构造。纯态对应不可再分的量子态，半有限迹适合积分理论，KMS态则刻画热平衡动力系统。 谱三重态还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 谱三重态的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1516,8 +2272,20 @@
     {
       "chinese_name": "弗雷德霍姆模",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子 K 同调中的循环对象。",
+        "它关联表示、Fredholm 算子和 KK 理论。",
+        "常写成 $(\\mathcal H,\\pi,F)$ 且 $[F,\\pi(a)]$ 紧。",
+        "它把代数表示和近似对合算子组合成 K 同调类。",
+        "它的英文译名是 Fredholm module。"
+      ],
+      "fragmented_clues": [
+        "算子 K 同调 循环对象",
+        "表示 Fredholm 算子 KK 理论",
+        "$(\\mathcal H,\\pi,F)$ $[F,\\pi(a)]$ 紧",
+        "表示 近似对合算子 K 同调类",
+        "Fredholm module"
+      ],
       "explanation_markdown": "弗雷德霍姆模是算子代数中带拓扑、伴随和正性约束的结构。弗雷德霍姆模的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\|a^*a\\|=\\|a\\|^2$ 或 $M=M''$，其中前者是C*恒等式，后者是冯诺伊曼代数的双交换子条件。不同闭包拓扑会给出不同对象。\n\n弗雷德霍姆模的意义取决于范数闭、弱闭、投影格、态空间和表示空间的选择。有限维矩阵只能提供直观模型，真正的分类、积分和动力系统问题通常要在无限维代数中表述。 弗雷德霍姆模还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -1540,8 +2308,20 @@
     {
       "chinese_name": "半有限迹",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个冯诺伊曼代数中的迹类型。",
+        "它关联可积投影、非交换积分和半有限因子。",
+        "条件可写成对每个 $0\ne a\\ge0$ 存在 $0<b\\le a$ 且 $\\tau(b)<\\infty$。",
+        "它不要求单位的迹有限，但要求足够多有限迹正元素。",
+        "它的英文译名是 semifinite trace。"
+      ],
+      "fragmented_clues": [
+        "冯诺伊曼代数 迹类型",
+        "可积投影 非交换积分 半有限因子",
+        "每个 $0\\ne a\\ge0$ 存在 $0<b\\le a$ 且 $\\tau(b)<\\infty$",
+        "单位可无穷 足够多有限迹正元素",
+        "semifinite trace"
+      ],
       "explanation_markdown": "半有限迹描述算子代数上的正线性泛函或由它们导出的积分结构。半有限迹的核心是正线性泛函、迹性质和模动力学，和同族术语的分界也主要落在这些数据上。常写成 $\\varphi(a^*a)\\ge0$，其中 $a$ 是代数元素，$\\varphi$ 是态、权或迹。迹态还满足 $\\tau(ab)=\\tau(ba)$，而权允许取无穷值。\n\n半有限迹决定了表示、模自同构群和非交换 $L^p$ 空间的构造。纯态对应不可再分的量子态，半有限迹适合积分理论，KMS态则刻画热平衡动力系统。 半有限迹还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 半有限迹的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1564,8 +2344,20 @@
     {
       "chinese_name": "可测算子",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个非交换积分理论中的无界算子对象。",
+        "它关联半有限迹、仿射闭算子和 $L^p$ 空间。",
+        "常要求 $\\tau(1_{(|T|>\\lambda)})<\\infty$ 对足够大 $\\lambda$ 成立。",
+        "它允许无界性，但尾部投影必须在迹意义下可控。",
+        "它的英文译名是 measurable operator。"
+      ],
+      "fragmented_clues": [
+        "非交换积分 无界算子对象",
+        "半有限迹 仿射闭算子 $L^p$ 空间",
+        "$\\tau(1_{(|T|>\\lambda)})<\\infty$ 大 $\\lambda$",
+        "允许无界 尾部投影可控",
+        "measurable operator"
+      ],
       "explanation_markdown": "可测算子是算子代数中带拓扑、伴随和正性约束的结构。可测算子的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\|a^*a\\|=\\|a\\|^2$ 或 $M=M''$，其中前者是C*恒等式，后者是冯诺伊曼代数的双交换子条件。不同闭包拓扑会给出不同对象。\n\n可测算子的意义取决于范数闭、弱闭、投影格、态空间和表示空间的选择。有限维矩阵只能提供直观模型，真正的分类、积分和动力系统问题通常要在无限维代数中表述。 可测算子还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -1588,8 +2380,20 @@
     {
       "chinese_name": "非交换积分",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数中的积分理论。",
+        "它关联迹、权、可测算子和非交换 $L^p$ 空间。",
+        "典型表达为 $\\int x\\,d\\tau=\\tau(x)$。",
+        "它用迹或权替代测度积分，在非交换代数中定义可积性。",
+        "它的英文译名是 noncommutative integration。"
+      ],
+      "fragmented_clues": [
+        "算子代数 积分理论",
+        "迹 权 可测算子 非交换 $L^p$",
+        "$\\int x\\,d\\tau=\\tau(x)$",
+        "迹 权 替代测度积分",
+        "noncommutative integration"
+      ],
       "explanation_markdown": "非交换积分描述算子代数上的正线性泛函或由它们导出的积分结构。非交换积分的核心是正线性泛函、迹性质和模动力学，和同族术语的分界也主要落在这些数据上。常写成 $\\varphi(a^*a)\\ge0$，其中 $a$ 是代数元素，$\\varphi$ 是态、权或迹。迹态还满足 $\\tau(ab)=\\tau(ba)$，而权允许取无穷值。\n\n非交换积分决定了表示、模自同构群和非交换 $L^p$ 空间的构造。纯态对应不可再分的量子态，半有限迹适合积分理论，KMS态则刻画热平衡动力系统。 非交换积分还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 非交换积分的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1612,8 +2416,20 @@
     {
       "chinese_name": "迪克斯米尔迹",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个非交换几何中的奇异迹。",
+        "它关联弱迹类算子、Wodzicki 留数和谱三重态维数。",
+        "常用于 $\\operatorname{Tr}_\\omega(T)$，其中 $T\\in\\mathcal L^{1,\\infty}$。",
+        "它在普通迹发散的临界阶上提取对数平均。",
+        "它的英文译名是 Dixmier trace。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 奇异迹",
+        "弱迹类 Wodzicki 留数 谱三重态维数",
+        "$\\operatorname{Tr}_\\omega(T)$ $T\\in\\mathcal L^{1,\\infty}$",
+        "临界阶 对数平均",
+        "Dixmier trace"
+      ],
       "explanation_markdown": "迪克斯米尔迹描述算子代数上的正线性泛函或由它们导出的积分结构。迪克斯米尔迹的核心是正线性泛函、迹性质和模动力学，和同族术语的分界也主要落在这些数据上。常写成 $\\varphi(a^*a)\\ge0$，其中 $a$ 是代数元素，$\\varphi$ 是态、权或迹。迹态还满足 $\\tau(ab)=\\tau(ba)$，而权允许取无穷值。\n\n迪克斯米尔迹决定了表示、模自同构群和非交换 $L^p$ 空间的构造。纯态对应不可再分的量子态，半有限迹适合积分理论，KMS态则刻画热平衡动力系统。 迪克斯米尔迹还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 迪克斯米尔迹的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1636,8 +2452,20 @@
     {
       "chinese_name": "库博马丁施温格态",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数量子统计中的平衡态条件。",
+        "它关联模自同构群、热平衡和 C*-动力系统。",
+        "条件常写成 $\\varphi(a\\alpha_{i\\beta}(b))=\\varphi(ba)$。",
+        "它用解析延拓形式表达温度为 $\\beta^{-1}$ 的量子热平衡。",
+        "它的英文译名是 Kubo-Martin-Schwinger state，常记作 KMS state。"
+      ],
+      "fragmented_clues": [
+        "量子统计 平衡态条件",
+        "模自同构群 热平衡 C*-动力系统",
+        "$\\varphi(a\\alpha_{i\\beta}(b))=\\varphi(ba)$",
+        "解析延拓 温度 $\\beta^{-1}$",
+        "Kubo-Martin-Schwinger state KMS state"
+      ],
       "explanation_markdown": "库博马丁施温格态描述算子代数上的正线性泛函或由它们导出的积分结构。库博马丁施温格态的核心是正线性泛函、迹性质和模动力学，和同族术语的分界也主要落在这些数据上。常写成 $\\varphi(a^*a)\\ge0$，其中 $a$ 是代数元素，$\\varphi$ 是态、权或迹。迹态还满足 $\\tau(ab)=\\tau(ba)$，而权允许取无穷值。\n\n库博马丁施温格态决定了表示、模自同构群和非交换 $L^p$ 空间的构造。纯态对应不可再分的量子态，半有限迹适合积分理论，KMS态则刻画热平衡动力系统。 库博马丁施温格态还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -1660,8 +2488,20 @@
     {
       "chinese_name": "盖尔范德-奈马克-西格尔构造",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数中的表示构造。",
+        "它关联态、内积商空间和循环表示。",
+        "内积定义为 $\\langle a,b\\rangle=\\varphi(a^*b)$。",
+        "它从一个态生成 Hilbert 空间表示，并带有自然循环向量。",
+        "它的英文译名是 Gelfand-Naimark-Segal construction，常记作 GNS construction。"
+      ],
+      "fragmented_clues": [
+        "算子代数 表示构造",
+        "态 内积商空间 循环表示",
+        "$\\langle a,b\\rangle=\\varphi(a^*b)$",
+        "态生成 Hilbert 表示 循环向量",
+        "Gelfand-Naimark-Segal construction GNS construction"
+      ],
       "explanation_markdown": "盖尔范德-奈马克-西格尔构造是算子代数中带拓扑、伴随和正性约束的结构。盖尔范德-奈马克-西格尔构造的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\|a^*a\\|=\\|a\\|^2$ 或 $M=M''$，其中前者是C*恒等式，后者是冯诺伊曼代数的双交换子条件。不同闭包拓扑会给出不同对象。\n\n盖尔范德-奈马克-西格尔构造的意义取决于范数闭、弱闭、投影格、态空间和表示空间的选择。有限维矩阵只能提供直观模型，真正的分类、积分和动力系统问题通常要在无限维代数中表述。 盖尔范德-奈马克-西格尔构造还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -1684,8 +2524,20 @@
     {
       "chinese_name": "标准表示",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数中的规范实现方式。",
+        "它关联标准型、自然正锥和模共轭。",
+        "常包含数据 $(M,H,J,P)$。",
+        "它把代数放在特定 Hilbert 空间上，使正泛函和向量表示相容。",
+        "它的英文译名是 standard representation。"
+      ],
+      "fragmented_clues": [
+        "算子代数 规范实现方式",
+        "标准型 自然正锥 模共轭",
+        "$(M,H,J,P)$",
+        "特定 Hilbert 空间 正泛函 向量表示相容",
+        "standard representation"
+      ],
       "explanation_markdown": "标准表示研究算子代数在Hilbert空间、Hilbert模或矩阵放大层级上的实现。标准表示的核心是矩阵放大、正锥和表示空间，和同族术语的分界也主要落在这些数据上。常写成 $\\pi(a^*)=\\pi(a)^*$，其中 $\\pi$ 是表示，$a$ 是代数元素；完全正映射还要求 $id_n\\otimes\\phi$ 在每个矩阵阶上保持正性。\n\n标准表示保留的不只是线性结构，还包括伴随、正锥和矩阵范数。GNS构造从态产生表示，Stinespring定理把完全正映射提升为压缩表示，Arveson定理处理扩张问题。 标准表示还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 标准表示的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1708,8 +2560,20 @@
     {
       "chinese_name": "阿基米德序单位",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个有序向量空间中的序结构。",
+        "它关联算子系统、正锥和单位元。",
+        "条件常写成若 $x+\\varepsilon e\\ge0$ 对所有 $\\varepsilon>0$ 成立，则 $x\\ge0$。",
+        "它保证单位元对序结构足够强，排除无穷小正性异常。",
+        "它的英文译名是 Archimedean order unit。"
+      ],
+      "fragmented_clues": [
+        "有序向量空间 序结构",
+        "算子系统 正锥 单位元",
+        "$x+\\varepsilon e\\ge0$ 所有 $\\varepsilon>0$ $\\Rightarrow x\\ge0$",
+        "排除无穷小正性异常",
+        "Archimedean order unit"
+      ],
       "explanation_markdown": "阿基米德序单位是算子代数中带拓扑、伴随和正性约束的结构。阿基米德序单位的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\|a^*a\\|=\\|a\\|^2$ 或 $M=M''$，其中前者是C*恒等式，后者是冯诺伊曼代数的双交换子条件。不同闭包拓扑会给出不同对象。\n\n阿基米德序单位的意义取决于范数闭、弱闭、投影格、态空间和表示空间的选择。有限维矩阵只能提供直观模型，真正的分类、积分和动力系统问题通常要在无限维代数中表述。 阿基米德序单位还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -1732,8 +2596,20 @@
     {
       "chinese_name": "算子系统",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数中的自伴线性空间。",
+        "它关联单位元、完全正映射和矩阵序。",
+        "定义常写成 $S=S^*$ 且 $1\\in S\\subset B(H)$。",
+        "它不要求对乘法封闭，重点是矩阵层级上的正性结构。",
+        "它的英文译名是 operator system。"
+      ],
+      "fragmented_clues": [
+        "算子代数 自伴线性空间",
+        "单位元 完全正映射 矩阵序",
+        "$S=S^*$ $1\\in S\\subset B(H)$",
+        "非乘法封闭 矩阵层级正性",
+        "operator system"
+      ],
       "explanation_markdown": "算子系统研究算子代数在Hilbert空间、Hilbert模或矩阵放大层级上的实现。算子系统的核心是矩阵放大、正锥和表示空间，和同族术语的分界也主要落在这些数据上。常写成 $\\pi(a^*)=\\pi(a)^*$，其中 $\\pi$ 是表示，$a$ 是代数元素；完全正映射还要求 $id_n\\otimes\\phi$ 在每个矩阵阶上保持正性。\n\n算子系统保留的不只是线性结构，还包括伴随、正锥和矩阵范数。GNS构造从态产生表示，Stinespring定理把完全正映射提升为压缩表示，Arveson定理处理扩张问题。 算子系统还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 算子系统的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1756,8 +2632,20 @@
     {
       "chinese_name": "算子空间",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个泛函分析中的矩阵范数空间。",
+        "它关联完全有界映射、矩阵放大和 Ruan 公理。",
+        "结构由 $\\|x\\|_{M_n(E)}$ 的全体矩阵范数给出。",
+        "它保留每个矩阵层级的范数，而不只看底层 Banach 空间。",
+        "它的英文译名是 operator space。"
+      ],
+      "fragmented_clues": [
+        "泛函分析 矩阵范数空间",
+        "完全有界映射 矩阵放大 Ruan 公理",
+        "$\\|x\\|_{M_n(E)}$",
+        "矩阵层级范数 非仅 Banach 空间",
+        "operator space"
+      ],
       "explanation_markdown": "算子空间研究算子代数在Hilbert空间、Hilbert模或矩阵放大层级上的实现。算子空间的核心是矩阵放大、正锥和表示空间，和同族术语的分界也主要落在这些数据上。常写成 $\\pi(a^*)=\\pi(a)^*$，其中 $\\pi$ 是表示，$a$ 是代数元素；完全正映射还要求 $id_n\\otimes\\phi$ 在每个矩阵阶上保持正性。\n\n算子空间保留的不只是线性结构，还包括伴随、正锥和矩阵范数。GNS构造从态产生表示，Stinespring定理把完全正映射提升为压缩表示，Arveson定理处理扩张问题。 算子空间还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 算子空间的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1780,8 +2668,20 @@
     {
       "chinese_name": "完全正映射",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子系统与 C* 代数中的正映射类型。",
+        "它关联矩阵放大、Stinespring 表示和量子通道。",
+        "条件为 $id_n\\otimes\\phi$ 对所有 $n$ 都保持正性。",
+        "它要求每个矩阵层级都正，比普通正映射更强。",
+        "它的英文译名是 completely positive map。"
+      ],
+      "fragmented_clues": [
+        "算子系统 C* 代数 正映射类型",
+        "矩阵放大 Stinespring 表示 量子通道",
+        "$id_n\\otimes\\phi$ 所有 $n$ 保持正性",
+        "每个矩阵层级正 强于普通正",
+        "completely positive map"
+      ],
       "explanation_markdown": "完全正映射研究算子代数在Hilbert空间、Hilbert模或矩阵放大层级上的实现。完全正映射的核心是矩阵放大、正锥和表示空间，和同族术语的分界也主要落在这些数据上。常写成 $\\pi(a^*)=\\pi(a)^*$，其中 $\\pi$ 是表示，$a$ 是代数元素；完全正映射还要求 $id_n\\otimes\\phi$ 在每个矩阵阶上保持正性。\n\n完全正映射保留的不只是线性结构，还包括伴随、正锥和矩阵范数。GNS构造从态产生表示，Stinespring定理把完全正映射提升为压缩表示，Arveson定理处理扩张问题。 完全正映射还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 完全正映射的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1804,8 +2704,20 @@
     {
       "chinese_name": "完全有界映射",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子空间理论中的映射类型。",
+        "它关联矩阵放大范数、cb 范数和非交换 Banach 空间。",
+        "常写成 $\\|\\phi\\|_{cb}=\\sup_n\\|id_n\\otimes\\phi\\|<\\infty$。",
+        "它控制所有矩阵层级上的算子范数，而不是只控制底层线性映射。",
+        "它的英文译名是 completely bounded map。"
+      ],
+      "fragmented_clues": [
+        "算子空间理论 映射类型",
+        "矩阵放大范数 cb 范数 非交换 Banach",
+        "$\\|\\phi\\|_{cb}=\\sup_n\\|id_n\\otimes\\phi\\|<\\infty$",
+        "所有矩阵层级范数 非底层映射",
+        "completely bounded map"
+      ],
       "explanation_markdown": "完全有界映射研究算子代数在Hilbert空间、Hilbert模或矩阵放大层级上的实现。完全有界映射的核心是矩阵放大、正锥和表示空间，和同族术语的分界也主要落在这些数据上。常写成 $\\pi(a^*)=\\pi(a)^*$，其中 $\\pi$ 是表示，$a$ 是代数元素；完全正映射还要求 $id_n\\otimes\\phi$ 在每个矩阵阶上保持正性。\n\n完全有界映射保留的不只是线性结构，还包括伴随、正锥和矩阵范数。GNS构造从态产生表示，Stinespring定理把完全正映射提升为压缩表示，Arveson定理处理扩张问题。 完全有界映射还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 完全有界映射的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1828,8 +2740,20 @@
     {
       "chinese_name": "行范数",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子空间中的矩阵层级范数。",
+        "它关联行算子空间、完全有界估计和 Hilbert 空间行向量。",
+        "常写成 $\\|(x_1,\\ldots,x_n)\\|=\\|\\sum_i x_i x_i^*\\|^{1/2}$。",
+        "它把多个元素看成一行算子，使用 $xx^*$ 型平方和。",
+        "它的英文译名是 row norm。"
+      ],
+      "fragmented_clues": [
+        "算子空间 矩阵层级范数",
+        "行算子空间 完全有界 Hilbert 行向量",
+        "$\\|(x_1,\\ldots,x_n)\\|=\\|\\sum_i x_i x_i^*\\|^{1/2}$",
+        "行算子 $xx^*$ 平方和",
+        "row norm"
+      ],
       "explanation_markdown": "行范数研究算子代数在Hilbert空间、Hilbert模或矩阵放大层级上的实现。行范数的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\pi(a^*)=\\pi(a)^*$，其中 $\\pi$ 是表示，$a$ 是代数元素；完全正映射还要求 $id_n\\otimes\\phi$ 在每个矩阵阶上保持正性。\n\n行范数保留的不只是线性结构，还包括伴随、正锥和矩阵范数。GNS构造从态产生表示，Stinespring定理把完全正映射提升为压缩表示，Arveson定理处理扩张问题。 行范数还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 行范数的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1852,8 +2776,20 @@
     {
       "chinese_name": "列范数",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子空间中的矩阵层级范数。",
+        "它关联列算子空间、完全有界估计和 Hilbert 空间列向量。",
+        "常写成 $\\|(x_1,\\ldots,x_n)^T\\|=\\|\\sum_i x_i^* x_i\\|^{1/2}$。",
+        "它把多个元素看成一列算子，使用 $x^*x$ 型平方和。",
+        "它的英文译名是 column norm。"
+      ],
+      "fragmented_clues": [
+        "算子空间 矩阵层级范数",
+        "列算子空间 完全有界 Hilbert 列向量",
+        "$\\|(x_1,\\ldots,x_n)^T\\|=\\|\\sum_i x_i^* x_i\\|^{1/2}$",
+        "列算子 $x^*x$ 平方和",
+        "column norm"
+      ],
       "explanation_markdown": "列范数研究算子代数在Hilbert空间、Hilbert模或矩阵放大层级上的实现。列范数的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\pi(a^*)=\\pi(a)^*$，其中 $\\pi$ 是表示，$a$ 是代数元素；完全正映射还要求 $id_n\\otimes\\phi$ 在每个矩阵阶上保持正性。\n\n列范数保留的不只是线性结构，还包括伴随、正锥和矩阵范数。GNS构造从态产生表示，Stinespring定理把完全正映射提升为压缩表示，Arveson定理处理扩张问题。 列范数还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 列范数的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1876,8 +2812,20 @@
     {
       "chinese_name": "哈恩巴拿赫延拓",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个泛函分析中的延拓定理。",
+        "它关联有界线性泛函、算子空间版本和完全有界延拓。",
+        "经典结论写成 $\\|\\tilde f\\|=\\|f\\|$ 且 $\\tilde f|_Y=f$。",
+        "它在保持范数的前提下把子空间泛函延到全空间。",
+        "它的英文译名是 Hahn-Banach extension。"
+      ],
+      "fragmented_clues": [
+        "泛函分析 延拓定理",
+        "有界线性泛函 算子空间 完全有界延拓",
+        "$\\|\\tilde f\\|=\\|f\\|$ $\\tilde f|_Y=f$",
+        "保持范数 子空间到全空间",
+        "Hahn-Banach extension"
+      ],
       "explanation_markdown": "哈恩巴拿赫延拓研究算子代数在Hilbert空间、Hilbert模或矩阵放大层级上的实现。哈恩巴拿赫延拓的核心是矩阵放大、正锥和表示空间，和同族术语的分界也主要落在这些数据上。常写成 $\\pi(a^*)=\\pi(a)^*$，其中 $\\pi$ 是表示，$a$ 是代数元素；完全正映射还要求 $id_n\\otimes\\phi$ 在每个矩阵阶上保持正性。\n\n哈恩巴拿赫延拓保留的不只是线性结构，还包括伴随、正锥和矩阵范数。GNS构造从态产生表示，Stinespring定理把完全正映射提升为压缩表示，Arveson定理处理扩张问题。 哈恩巴拿赫延拓还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -1900,8 +2848,20 @@
     {
       "chinese_name": "斯坦斯普林表示",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个完全正映射理论中的表示定理。",
+        "它关联 Hilbert 空间扩张、压缩表示和量子通道分解。",
+        "常写成 $\\phi(a)=V^*\\pi(a)V$。",
+        "它把完全正映射表示为 *-表示经一个算子压缩后的形式。",
+        "它的英文译名是 Stinespring representation。"
+      ],
+      "fragmented_clues": [
+        "完全正映射 表示定理",
+        "Hilbert 空间扩张 压缩表示 量子通道",
+        "$\\phi(a)=V^*\\pi(a)V$",
+        "*-表示 压缩形式",
+        "Stinespring representation"
+      ],
       "explanation_markdown": "斯坦斯普林表示研究算子代数在Hilbert空间、Hilbert模或矩阵放大层级上的实现。斯坦斯普林表示的核心是矩阵放大、正锥和表示空间，和同族术语的分界也主要落在这些数据上。常写成 $\\pi(a^*)=\\pi(a)^*$，其中 $\\pi$ 是表示，$a$ 是代数元素；完全正映射还要求 $id_n\\otimes\\phi$ 在每个矩阵阶上保持正性。\n\n斯坦斯普林表示保留的不只是线性结构，还包括伴随、正锥和矩阵范数。GNS构造从态产生表示，Stinespring定理把完全正映射提升为压缩表示，Arveson定理处理扩张问题。 斯坦斯普林表示还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -1924,8 +2884,20 @@
     {
       "chinese_name": "阿维森扩张定理",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子系统理论中的延拓定理。",
+        "它关联完全正映射、包含的算子系统和 C* 代数。",
+        "典型结论为 $\\phi:S\\to B(H)$ 可延拓为 $\\tilde\\phi:A\\to B(H)$。",
+        "它保持完全正性完成延拓，是非交换 Hahn-Banach 型结果。",
+        "它的英文译名是 Arveson extension theorem。"
+      ],
+      "fragmented_clues": [
+        "算子系统理论 延拓定理",
+        "完全正映射 算子系统 C* 代数",
+        "$\\phi:S\\to B(H)$ 延拓 $\\tilde\\phi:A\\to B(H)$",
+        "保持完全正性 非交换 Hahn-Banach",
+        "Arveson extension theorem"
+      ],
       "explanation_markdown": "阿维森扩张定理处理算子代数中的谱、理想和函数代入。阿维森扩张定理的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $f(a)=\\int_{\\sigma(a)}f(\\lambda)dE(\\lambda)$，其中 $a$ 是正规算子，$E$ 是谱测度，$\\sigma(a)$ 是谱。函数演算把连续或Borel函数转化为代数内部的算子。\n\n阿维森扩张定理在C*代数和冯诺伊曼代数中的可用函数范围不同。紧算子、Calkin代数和Toeplitz扩张常用来研究Fredholm指数、边界映射和K理论类。 阿维森扩张定理还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 阿维森扩张定理的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1948,8 +2920,20 @@
     {
       "chinese_name": "基尔谢伯格张量定理",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个 C* 代数张量积理论中的定理。",
+        "它关联精确性、局部提升性质和最小最大张量范数。",
+        "常见形式涉及 $A\\otimes_{\\min}B(H)=A\\otimes_{\\max}B(H)$。",
+        "它把抽象近似性质转化为特定张量积范数相等。",
+        "它的英文译名是 Kirchberg tensor theorem。"
+      ],
+      "fragmented_clues": [
+        "C* 张量积理论 定理",
+        "精确性 局部提升 最小最大张量范数",
+        "$A\\otimes_{\\min}B(H)=A\\otimes_{\\max}B(H)$",
+        "近似性质 张量范数相等",
+        "Kirchberg tensor theorem"
+      ],
       "explanation_markdown": "基尔谢伯格张量定理属于C*代数结构与分类理论中的性质或工具。基尔谢伯格张量定理的核心是张量稳定性、理想结构和K理论不变量，和同族术语的分界也主要落在这些数据上。常写成 $0\\to I\\to A\\to A/I\\to0$，其中 $I$ 是理想，$A/I$ 是商代数；核性、精确性和张量积性质说明这列在不同函子下如何保持。K理论和迹单纯形常作为分类不变量。\n\n基尔谢伯格张量定理区分的是稳定同构、张量吸收和理想结构，而不只是代数是否有单位。Kirchberg代数、Elliott纲领和Brown-Douglas-Fillmore理论都依赖这些稳定性质。 基尔谢伯格张量定理还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -1972,8 +2956,20 @@
     {
       "chinese_name": "最小张量积",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个 C* 代数中的张量范数构造。",
+        "它关联空间表示、Hilbert 空间张量和核性判别。",
+        "常写成 $A\\otimes_{\\min}B$。",
+        "它由忠实表示在 Hilbert 空间张量积上的范数诱导，通常是较小的 C* 张量范数。",
+        "它的英文译名是 minimal tensor product。"
+      ],
+      "fragmented_clues": [
+        "C* 代数 张量范数构造",
+        "空间表示 Hilbert 张量 核性",
+        "$A\\otimes_{\\min}B$",
+        "忠实表示诱导 较小张量范数",
+        "minimal tensor product"
+      ],
       "explanation_markdown": "最小张量积属于C*代数结构与分类理论中的性质或工具。最小张量积的核心是张量稳定性、理想结构和K理论不变量，和同族术语的分界也主要落在这些数据上。常写成 $0\\to I\\to A\\to A/I\\to0$，其中 $I$ 是理想，$A/I$ 是商代数；核性、精确性和张量积性质说明这列在不同函子下如何保持。K理论和迹单纯形常作为分类不变量。\n\n最小张量积区分的是稳定同构、张量吸收和理想结构，而不只是代数是否有单位。Kirchberg代数、Elliott纲领和Brown-Douglas-Fillmore理论都依赖这些稳定性质。 最小张量积还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -1996,8 +2992,20 @@
     {
       "chinese_name": "最大张量积",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个 C* 代数中的普遍张量范数构造。",
+        "它关联所有 commuting 表示、普遍性质和核性判别。",
+        "常写成 $A\\otimes_{\\max}B$。",
+        "它对所有 *-表示取上确界，因此通常是最大的 C* 张量范数。",
+        "它的英文译名是 maximal tensor product。"
+      ],
+      "fragmented_clues": [
+        "C* 代数 普遍张量范数构造",
+        "commuting 表示 普遍性质 核性",
+        "$A\\otimes_{\\max}B$",
+        "所有 *-表示上确界 最大张量范数",
+        "maximal tensor product"
+      ],
       "explanation_markdown": "最大张量积属于C*代数结构与分类理论中的性质或工具。最大张量积的核心是张量稳定性、理想结构和K理论不变量，和同族术语的分界也主要落在这些数据上。常写成 $0\\to I\\to A\\to A/I\\to0$，其中 $I$ 是理想，$A/I$ 是商代数；核性、精确性和张量积性质说明这列在不同函子下如何保持。K理论和迹单纯形常作为分类不变量。\n\n最大张量积区分的是稳定同构、张量吸收和理想结构，而不只是代数是否有单位。Kirchberg代数、Elliott纲领和Brown-Douglas-Fillmore理论都依赖这些稳定性质。 最大张量积还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -2020,8 +3028,20 @@
     {
       "chinese_name": "空间张量积",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数中的表示型张量积。",
+        "它关联具体 Hilbert 空间表示和最小张量范数。",
+        "常写成 $A\\subset B(H),B\\subset B(K)\\Rightarrow A\\otimes B\\subset B(H\\otimes K)$。",
+        "它把两个具体算子代数放到张量后的 Hilbert 表示上实现。",
+        "它的英文译名是 spatial tensor product。"
+      ],
+      "fragmented_clues": [
+        "算子代数 表示型张量积",
+        "具体 Hilbert 表示 最小张量范数",
+        "$A\\subset B(H),B\\subset B(K)\\Rightarrow A\\otimes B\\subset B(H\\otimes K)$",
+        "两个具体算子代数 张量 Hilbert 表示",
+        "spatial tensor product"
+      ],
       "explanation_markdown": "空间张量积属于C*代数结构与分类理论中的性质或工具。空间张量积的核心是张量稳定性、理想结构和K理论不变量，和同族术语的分界也主要落在这些数据上。常写成 $0\\to I\\to A\\to A/I\\to0$，其中 $I$ 是理想，$A/I$ 是商代数；核性、精确性和张量积性质说明这列在不同函子下如何保持。K理论和迹单纯形常作为分类不变量。\n\n空间张量积区分的是稳定同构、张量吸收和理想结构，而不只是代数是否有单位。Kirchberg代数、Elliott纲领和Brown-Douglas-Fillmore理论都依赖这些稳定性质。 空间张量积还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -2044,8 +3064,20 @@
     {
       "chinese_name": "投射张量积",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个 Banach 空间理论中的张量范数构造。",
+        "它关联有界双线性映射、核算子和算子空间比较。",
+        "范数常写成 $\\|u\\|_\\pi=\\inf\\sum_i\\|x_i\\|\\|y_i\\|$。",
+        "它是 Banach 空间中最大的合理交叉范数之一，不同于 C* 最大张量积。",
+        "它的英文译名是 projective tensor product。"
+      ],
+      "fragmented_clues": [
+        "Banach 空间 张量范数构造",
+        "有界双线性映射 核算子 算子空间比较",
+        "$\\|u\\|_\\pi=\\inf\\sum_i\\|x_i\\|\\|y_i\\|$",
+        "最大合理交叉范数 非 C* 最大张量",
+        "projective tensor product"
+      ],
       "explanation_markdown": "投射张量积属于C*代数结构与分类理论中的性质或工具。投射张量积的核心是张量稳定性、理想结构和K理论不变量，和同族术语的分界也主要落在这些数据上。常写成 $0\\to I\\to A\\to A/I\\to0$，其中 $I$ 是理想，$A/I$ 是商代数；核性、精确性和张量积性质说明这列在不同函子下如何保持。K理论和迹单纯形常作为分类不变量。\n\n投射张量积区分的是稳定同构、张量吸收和理想结构，而不只是代数是否有单位。Kirchberg代数、Elliott纲领和Brown-Douglas-Fillmore理论都依赖这些稳定性质。 投射张量积还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -2068,8 +3100,20 @@
     {
       "chinese_name": "量子测度空间",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个非交换测度论中的模型对象。",
+        "它关联 von Neumann 代数、态或权和非交换概率。",
+        "常表示为 $(M,\\varphi)$。",
+        "它用代数和正泛函替代点集与测度。",
+        "它的英文译名是 quantum measure space。"
+      ],
+      "fragmented_clues": [
+        "非交换测度论 模型对象",
+        "von Neumann 代数 态 权 非交换概率",
+        "$(M,\\varphi)$",
+        "代数 正泛函 替代点集测度",
+        "quantum measure space"
+      ],
       "explanation_markdown": "量子测度空间描述算子代数上的正线性泛函或由它们导出的积分结构。量子测度空间的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\varphi(a^*a)\\ge0$，其中 $a$ 是代数元素，$\\varphi$ 是态、权或迹。迹态还满足 $\\tau(ab)=\\tau(ba)$，而权允许取无穷值。\n\n量子测度空间决定了表示、模自同构群和非交换 $L^p$ 空间的构造。纯态对应不可再分的量子态，半有限迹适合积分理论，KMS态则刻画热平衡动力系统。 量子测度空间还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 量子测度空间的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -2092,8 +3136,20 @@
     {
       "chinese_name": "非交换Lp空间",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个非交换积分理论中的函数空间。",
+        "它关联半有限迹、可测算子和 Schatten 类推广。",
+        "常写成 $L^p(M,\\tau)=\\{x:\\tau(|x|^p)<\\infty\\}$。",
+        "它把经典 $L^p$ 的函数换成隶属于代数的可测算子。",
+        "它的英文译名是 noncommutative Lp space。"
+      ],
+      "fragmented_clues": [
+        "非交换积分 函数空间",
+        "半有限迹 可测算子 Schatten 类",
+        "$L^p(M,\\tau)=\\{x:\\tau(|x|^p)<\\infty\\}$",
+        "函数替换为可测算子",
+        "noncommutative Lp space"
+      ],
       "explanation_markdown": "非交换Lp空间描述算子代数上的正线性泛函或由它们导出的积分结构。非交换Lp空间的核心是正线性泛函、迹性质和模动力学，和同族术语的分界也主要落在这些数据上。常写成 $\\varphi(a^*a)\\ge0$，其中 $a$ 是代数元素，$\\varphi$ 是态、权或迹。迹态还满足 $\\tau(ab)=\\tau(ba)$，而权允许取无穷值。\n\n非交换Lp空间决定了表示、模自同构群和非交换 $L^p$ 空间的构造。纯态对应不可再分的量子态，半有限迹适合积分理论，KMS态则刻画热平衡动力系统。 非交换Lp空间还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 非交换Lp空间的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -2116,8 +3172,20 @@
     {
       "chinese_name": "梅耶尔算子",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个动力系统与算子代数中的转移算子。",
+        "它关联热力学形式、谱半径和 zeta 函数。",
+        "常写成 $(\\mathcal L_f g)(x)=\\sum_{Ty=x}e^{f(y)}g(y)$。",
+        "它把前像上的权重求和编码为线性算子，谱数据反映动力系统统计。",
+        "它的英文译名是 Mayer operator。"
+      ],
+      "fragmented_clues": [
+        "动力系统 算子代数 转移算子",
+        "热力学形式 谱半径 zeta 函数",
+        "$(\\mathcal L_f g)(x)=\\sum_{Ty=x}e^{f(y)}g(y)$",
+        "前像权重求和 动力系统统计",
+        "Mayer operator"
+      ],
       "explanation_markdown": "梅耶尔算子是算子代数中带拓扑、伴随和正性约束的结构。梅耶尔算子的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\|a^*a\\|=\\|a\\|^2$ 或 $M=M''$，其中前者是C*恒等式，后者是冯诺伊曼代数的双交换子条件。不同闭包拓扑会给出不同对象。\n\n梅耶尔算子的意义取决于范数闭、弱闭、投影格、态空间和表示空间的选择。有限维矩阵只能提供直观模型，真正的分类、积分和动力系统问题通常要在无限维代数中表述。 梅耶尔算子还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -2140,8 +3208,20 @@
     {
       "chinese_name": "谱三元组维数",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个非交换几何中的维数指标。",
+        "它关联 Dirac 算子特征值增长、Dixmier 迹和可和性。",
+        "常由 $|D|^{-p}\\in\\mathcal L^{1,\\infty}$ 的临界 $p$ 描述。",
+        "它用谱衰减速度定义维数，而不是用坐标图或覆盖维。",
+        "它的英文译名是 spectral triple dimension。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 维数指标",
+        "Dirac 特征值增长 Dixmier 迹 可和性",
+        "$|D|^{-p}\\in\\mathcal L^{1,\\infty}$ 临界 $p$",
+        "谱衰减速度 定义维数",
+        "spectral triple dimension"
+      ],
       "explanation_markdown": "谱三元组维数是算子代数中带拓扑、伴随和正性约束的结构。谱三元组维数的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\|a^*a\\|=\\|a\\|^2$ 或 $M=M''$，其中前者是C*恒等式，后者是冯诺伊曼代数的双交换子条件。不同闭包拓扑会给出不同对象。\n\n谱三元组维数的意义取决于范数闭、弱闭、投影格、态空间和表示空间的选择。有限维矩阵只能提供直观模型，真正的分类、积分和动力系统问题通常要在无限维代数中表述。 谱三元组维数还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -2164,8 +3244,20 @@
     {
       "chinese_name": "模理论",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个冯诺伊曼代数中的结构理论方向。",
+        "它关联权、模自同构群、标准型和 III 型分类。",
+        "核心公式常写成 $\\sigma_t^\\varphi(x)=\\Delta_\\varphi^{it}x\\Delta_\\varphi^{-it}$。",
+        "它研究由态或权产生的内在时间演化。",
+        "它的英文译名是 modular theory。"
+      ],
+      "fragmented_clues": [
+        "冯诺伊曼代数 结构理论方向",
+        "权 模自同构群 标准型 III 型分类",
+        "$\\sigma_t^\\varphi(x)=\\Delta_\\varphi^{it}x\\Delta_\\varphi^{-it}$",
+        "态 权 内在时间演化",
+        "modular theory"
+      ],
       "explanation_markdown": "模理论是算子代数中带拓扑、伴随和正性约束的结构。模理论的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\|a^*a\\|=\\|a\\|^2$ 或 $M=M''$，其中前者是C*恒等式，后者是冯诺伊曼代数的双交换子条件。不同闭包拓扑会给出不同对象。\n\n模理论的意义取决于范数闭、弱闭、投影格、态空间和表示空间的选择。有限维矩阵只能提供直观模型，真正的分类、积分和动力系统问题通常要在无限维代数中表述。 模理论还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -2188,8 +3280,20 @@
     {
       "chinese_name": "双交换子定理",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数中的刻画定理。",
+        "它关联弱闭算子代数、交换子和冯诺伊曼代数判别。",
+        "结论常写成 $M=M^{\\prime\\prime}$。",
+        "它把拓扑闭包条件等价为代数上的两次取交换子。",
+        "它的英文译名是 bicommutant theorem。"
+      ],
+      "fragmented_clues": [
+        "算子代数 刻画定理",
+        "弱闭算子代数 交换子 判别",
+        "$M=M^{\\prime\\prime}$",
+        "拓扑闭包 两次交换子 等价",
+        "bicommutant theorem"
+      ],
       "explanation_markdown": "双交换子定理是算子代数中带拓扑、伴随和正性约束的结构。双交换子定理的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\|a^*a\\|=\\|a\\|^2$ 或 $M=M''$，其中前者是C*恒等式，后者是冯诺伊曼代数的双交换子条件。不同闭包拓扑会给出不同对象。\n\n双交换子定理的意义取决于范数闭、弱闭、投影格、态空间和表示空间的选择。有限维矩阵只能提供直观模型，真正的分类、积分和动力系统问题通常要在无限维代数中表述。 双交换子定理还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -2212,8 +3316,20 @@
     {
       "chinese_name": "冯诺伊曼迹",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个算子代数与 $L^2$ 不变量中的迹。",
+        "它关联群 von Neumann 代数、投影维数和 $L^2$ Betti 数。",
+        "常写成 $\\tau(T)=\\langle T\\delta_e,\\delta_e\\rangle$。",
+        "它为无限群作用下的投影给出连续维数。",
+        "它的英文译名是 von Neumann trace。"
+      ],
+      "fragmented_clues": [
+        "算子代数 $L^2$ 不变量 迹",
+        "群 von Neumann 代数 投影维数",
+        "$\\tau(T)=\\langle T\\delta_e,\\delta_e\\rangle$",
+        "无限群作用 连续维数",
+        "von Neumann trace"
+      ],
       "explanation_markdown": "冯诺伊曼迹描述算子代数上的正线性泛函或由它们导出的积分结构。冯诺伊曼迹的核心是正线性泛函、迹性质和模动力学，和同族术语的分界也主要落在这些数据上。常写成 $\\varphi(a^*a)\\ge0$，其中 $a$ 是代数元素，$\\varphi$ 是态、权或迹。迹态还满足 $\\tau(ab)=\\tau(ba)$，而权允许取无穷值。\n\n冯诺伊曼迹决定了表示、模自同构群和非交换 $L^p$ 空间的构造。纯态对应不可再分的量子态，半有限迹适合积分理论，KMS态则刻画热平衡动力系统。 冯诺伊曼迹还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 冯诺伊曼迹的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -2236,8 +3352,20 @@
     {
       "chinese_name": "穆瑞-冯诺伊曼等价",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个投影比较中的等价关系。",
+        "它关联部分等距、因子类型和投影维数。",
+        "定义为 $p\\sim q$ 当存在 $v$ 使 $v^*v=p,\\;vv^*=q$。",
+        "它用部分等距判断两个投影代表的子空间是否同等大小。",
+        "它的英文译名是 Murray-von Neumann equivalence。"
+      ],
+      "fragmented_clues": [
+        "投影比较 等价关系",
+        "部分等距 因子类型 投影维数",
+        "$p\\sim q$ $v^*v=p,\\;vv^*=q$",
+        "部分等距 同等大小",
+        "Murray-von Neumann equivalence"
+      ],
       "explanation_markdown": "穆瑞-冯诺伊曼等价刻画冯诺伊曼代数中由投影、中心和包含关系控制的结构。穆瑞-冯诺伊曼等价的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $Z(M)=M\\cap M'=\\mathbb C1$，其中 $Z(M)$ 是中心，$M'$ 是交换子代数；中心退化时 $M$ 是因子。投影和部分等距给出Murray-von Neumann等价。\n\n穆瑞-冯诺伊曼等价常用于I、II、III型分类、子因子指数和连续几何。Jones基本构造把包含 $N\\subset M$ 扩展为塔，平面代数则把相对交换子组织成可计算的图形代数。 穆瑞-冯诺伊曼等价还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -2260,8 +3388,20 @@
     {
       "chinese_name": "投影格",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个冯诺伊曼代数中的序结构。",
+        "它关联闭子空间、量子逻辑和因子分类。",
+        "常写成 $P(M)=\\{p\\in M:p=p^*=p^2\\}$。",
+        "它以包含关系组织所有投影，交并运算对应子空间交和闭线性张成。",
+        "它的英文译名是 projection lattice。"
+      ],
+      "fragmented_clues": [
+        "冯诺伊曼代数 序结构",
+        "闭子空间 量子逻辑 因子分类",
+        "$P(M)=\\{p\\in M:p=p^*=p^2\\}$",
+        "包含关系 交并 子空间运算",
+        "projection lattice"
+      ],
       "explanation_markdown": "投影格刻画冯诺伊曼代数中由投影、中心和包含关系控制的结构。投影格的核心是投影格、中心退化和包含指数，和同族术语的分界也主要落在这些数据上。常写成 $Z(M)=M\\cap M'=\\mathbb C1$，其中 $Z(M)$ 是中心，$M'$ 是交换子代数；中心退化时 $M$ 是因子。投影和部分等距给出Murray-von Neumann等价。\n\n投影格常用于I、II、III型分类、子因子指数和连续几何。Jones基本构造把包含 $N\\subset M$ 扩展为塔，平面代数则把相对交换子组织成可计算的图形代数。 投影格还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 投影格的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -2284,8 +3424,20 @@
     {
       "chinese_name": "连续几何",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个投影格理论中的几何结构。",
+        "它关联 von Neumann、无原子维数函数和模块化格。",
+        "维数函数常满足 $d(p\\vee q)+d(p\\wedge q)=d(p)+d(q)$。",
+        "它把射影几何的离散维数推广为连续取值。",
+        "它的英文译名是 continuous geometry。"
+      ],
+      "fragmented_clues": [
+        "投影格理论 几何结构",
+        "von Neumann 无原子维数 模块化格",
+        "$d(p\\vee q)+d(p\\wedge q)=d(p)+d(q)$",
+        "离散维数推广 连续取值",
+        "continuous geometry"
+      ],
       "explanation_markdown": "连续几何刻画冯诺伊曼代数中由投影、中心和包含关系控制的结构。连续几何的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $Z(M)=M\\cap M'=\\mathbb C1$，其中 $Z(M)$ 是中心，$M'$ 是交换子代数；中心退化时 $M$ 是因子。投影和部分等距给出Murray-von Neumann等价。\n\n连续几何常用于I、II、III型分类、子因子指数和连续几何。Jones基本构造把包含 $N\\subset M$ 扩展为塔，平面代数则把相对交换子组织成可计算的图形代数。 连续几何还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 连续几何的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -2308,8 +3460,20 @@
     {
       "chinese_name": "阿贝尔-冯诺伊曼代数",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个冯诺伊曼代数中的交换情形。",
+        "它关联测度空间上的本质有界函数和谱定理。",
+        "典型模型为 $M\\cong L^\\infty(X,\\mu)$。",
+        "它完全交换，可看作经典测度空间的算子代数形式。",
+        "它的英文译名是 abelian von Neumann algebra。"
+      ],
+      "fragmented_clues": [
+        "冯诺伊曼代数 交换情形",
+        "测度空间 本质有界函数 谱定理",
+        "$M\\cong L^\\infty(X,\\mu)$",
+        "完全交换 经典测度空间形式",
+        "abelian von Neumann algebra"
+      ],
       "explanation_markdown": "阿贝尔-冯诺伊曼代数是算子代数中带拓扑、伴随和正性约束的结构。阿贝尔-冯诺伊曼代数的核心是闭包拓扑、伴随结构和正性，和同族术语的分界也主要落在这些数据上。常写成 $\\|a^*a\\|=\\|a\\|^2$ 或 $M=M''$，其中前者是C*恒等式，后者是冯诺伊曼代数的双交换子条件。不同闭包拓扑会给出不同对象。\n\n阿贝尔-冯诺伊曼代数的意义取决于范数闭、弱闭、投影格、态空间和表示空间的选择。有限维矩阵只能提供直观模型，真正的分类、积分和动力系统问题通常要在无限维代数中表述。 阿贝尔-冯诺伊曼代数还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。",
       "source_links": [
         {
@@ -2332,8 +3496,20 @@
     {
       "chinese_name": "半有限因子",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个冯诺伊曼因子分类中的类型。",
+        "它关联存在忠实半有限正规迹的 I 型或 II 型因子。",
+        "条件可写成存在 f.n.s. trace $\\tau$ 于 $M$ 上。",
+        "它仍有足够多有限迹投影，区别于 III 型因子没有非零半有限迹。",
+        "它的英文译名是 semifinite factor。"
+      ],
+      "fragmented_clues": [
+        "冯诺伊曼因子分类 类型",
+        "忠实半有限正规迹 I 型 II 型",
+        "f.n.s. trace $\\tau$ 于 $M$",
+        "有限迹投影 非 III 型",
+        "semifinite factor"
+      ],
       "explanation_markdown": "半有限因子刻画冯诺伊曼代数中由投影、中心和包含关系控制的结构。半有限因子的核心是投影格、中心退化和包含指数，和同族术语的分界也主要落在这些数据上。常写成 $Z(M)=M\\cap M'=\\mathbb C1$，其中 $Z(M)$ 是中心，$M'$ 是交换子代数；中心退化时 $M$ 是因子。投影和部分等距给出Murray-von Neumann等价。\n\n半有限因子常用于I、II、III型分类、子因子指数和连续几何。Jones基本构造把包含 $N\\subset M$ 扩展为塔，平面代数则把相对交换子组织成可计算的图形代数。 半有限因子还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 半有限因子的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -2356,8 +3532,20 @@
     {
       "chinese_name": "三型因子",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个冯诺伊曼因子分类中的纯无限测度型对象。",
+        "它关联无迹现象、模理论和 Connes 谱。",
+        "特征可表述为不存在非零半有限正规迹 $\\tau$。",
+        "它没有有限迹投影维数理论，分类依赖模自同构和流不变量。",
+        "它的英文译名是 type III factor。"
+      ],
+      "fragmented_clues": [
+        "冯诺伊曼因子分类 纯无限测度型对象",
+        "无迹现象 模理论 Connes 谱",
+        "不存在非零半有限正规迹 $\\tau$",
+        "无有限迹维数 模自同构 流不变量",
+        "type III factor"
+      ],
       "explanation_markdown": "三型因子刻画冯诺伊曼代数中由投影、中心和包含关系控制的结构。三型因子的核心是投影格、中心退化和包含指数，和同族术语的分界也主要落在这些数据上。常写成 $Z(M)=M\\cap M'=\\mathbb C1$，其中 $Z(M)$ 是中心，$M'$ 是交换子代数；中心退化时 $M$ 是因子。投影和部分等距给出Murray-von Neumann等价。\n\n三型因子常用于I、II、III型分类、子因子指数和连续几何。Jones基本构造把包含 $N\\subset M$ 扩展为塔，平面代数则把相对交换子组织成可计算的图形代数。 三型因子还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 三型因子的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -2380,8 +3568,20 @@
     {
       "chinese_name": "孔涅谱",
       "source_file": "words/数学/噩梦模式/operator_algebras_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个 III 型因子理论中的模不变量。",
+        "它关联模自同构群、交叉积和 Connes 分类。",
+        "常记为 $S(M)\\subset \\mathbb R_+^*$。",
+        "它记录模谱的可能尺度，用来区分 III$_\\lambda$ 等类型。",
+        "它的英文译名是 Connes spectrum。"
+      ],
+      "fragmented_clues": [
+        "III 型因子 模不变量",
+        "模自同构群 交叉积 Connes 分类",
+        "$S(M)\\subset \\mathbb R_+^*$",
+        "模谱尺度 区分 III$_\\lambda$",
+        "Connes spectrum"
+      ],
       "explanation_markdown": "孔涅谱刻画冯诺伊曼代数中由投影、中心和包含关系控制的结构。孔涅谱的核心是投影格、中心退化和包含指数，和同族术语的分界也主要落在这些数据上。常写成 $Z(M)=M\\cap M'=\\mathbb C1$，其中 $Z(M)$ 是中心，$M'$ 是交换子代数；中心退化时 $M$ 是因子。投影和部分等距给出Murray-von Neumann等价。\n\n孔涅谱常用于I、II、III型分类、子因子指数和连续几何。Jones基本构造把包含 $N\\subset M$ 扩展为塔，平面代数则把相对交换子组织成可计算的图形代数。 孔涅谱还要说明范数闭、弱闭或矩阵放大层级；分类、积分和态空间问题都依赖这些拓扑选择。 孔涅谱的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {

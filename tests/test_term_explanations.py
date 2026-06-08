@@ -35,25 +35,7 @@ EXPLANATION_MODE_GROUPS = {
     "数学": MATH_EXPLANATION_MODES,
 }
 
-EMPTY_CLUE_JSONS = {
-    "clues/物理/普通模式：四大力学/continuum_mechanics_terms.json",
-    "clues/物理/困难模式：四大方向/cosmology_terms.json",
-    "clues/物理/困难模式：四大方向/quantum_information_terms.json",
-    "clues/物理/噩梦模式：前沿物理/advanced_qcd_terms.json",
-    "clues/物理/噩梦模式：前沿物理/conformal_field_theory_terms.json",
-    "clues/物理/噩梦模式：前沿物理/holographic_principle_terms.json",
-    "clues/物理/噩梦模式：前沿物理/loop_quantum_gravity_terms.json",
-    "clues/物理/噩梦模式：前沿物理/noncommutative_geometry_physics_terms.json",
-    "clues/物理/噩梦模式：前沿物理/quantum_gravity_black_hole_information_terms.json",
-    "clues/物理/噩梦模式：前沿物理/superstring_m_theory_terms.json",
-    "clues/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.json",
-    "clues/数学/简单模式/analytic_geometry_terms.json",
-    "clues/数学/简单模式/combinatorics_basics_terms.json",
-    "clues/数学/简单模式/elementary_number_theory_terms.json",
-    "clues/数学/普通模式/calculus_of_variations_terms.json",
-    "clues/数学/普通模式/integral_equations_terms.json",
-    "clues/数学/普通模式/operations_research_terms.json",
-    "clues/数学/普通模式/vector_tensor_analysis_terms.json",
+REWRITTEN_MATH_CLUE_JSONS = {
     "clues/数学/困难模式/algebraic_geometry_terms.json",
     "clues/数学/困难模式/differential_geometry_terms.json",
     "clues/数学/困难模式/homological_algebra_terms.json",
@@ -200,15 +182,16 @@ class TermExplanationTests(unittest.TestCase):
                         self.assertIn(parsed.scheme, {"http", "https"}, name)
                         self.assertTrue(parsed.netloc, name)
 
-    def test_placeholder_clues_stay_empty_for_created_jsons(self):
-        for relative_path in sorted(EMPTY_CLUE_JSONS):
+    def test_rewritten_math_clue_jsons_have_full_clues(self):
+        for relative_path in sorted(REWRITTEN_MATH_CLUE_JSONS):
             path = ROOT / relative_path
             with self.subTest(path=relative_path):
                 self.assertTrue(path.exists(), relative_path)
                 entries = read_json_entries(path)
                 for entry in entries:
-                    self.assertEqual(entry.get("complete_clues"), [], entry.get("chinese_name"))
-                    self.assertEqual(entry.get("fragmented_clues"), [], entry.get("chinese_name"))
+                    name = entry.get("chinese_name")
+                    self.assertEqual(len(entry.get("complete_clues") or []), 5, name)
+                    self.assertEqual(len(entry.get("fragmented_clues") or []), 5, name)
 
     def test_clue_library_loads_explanation_markdown(self):
         source = "words/物理/入门模式：高中物理/high_school_electromagnetism_terms.csv"
@@ -222,16 +205,16 @@ class TermExplanationTests(unittest.TestCase):
         self.assertGreaterEqual(len(entry.get("source_links") or []), 2)
 
     def test_clue_library_loads_explanation_when_clues_are_empty(self):
-        source = "words/物理/普通模式：四大力学/continuum_mechanics_terms.csv"
-        term = Term(source, "连续介质力学", "7", "连续介质力学", 7, "LXJZLX", "continuum_mechanics", "lianxujiezhilixue")
+        source = "words/数学/困难模式/algebraic_geometry_terms.csv"
+        term = Term(source, "代数几何", "1", "代数簇", 7, "DSC", "algebraic_cluster", "daishucu")
 
         entry = ClueLibrary(ROOT / "clues").get(term)
 
-        self.assertEqual(entry["source_type"], "fallback")
+        self.assertEqual(entry["source_type"], "file")
         self.assertEqual(len(entry["complete"]), 5)
         self.assertEqual(len(entry["fragments"]), 5)
         self.assertIn("explanation_markdown", entry)
-        self.assertIn("连续介质力学把固体、流体和软材料", entry["explanation_markdown"])
+        self.assertIn("代数簇是在代数闭域上", entry["explanation_markdown"])
         self.assertGreaterEqual(len(entry.get("source_links") or []), 2)
 
 

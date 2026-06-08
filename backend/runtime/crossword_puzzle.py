@@ -25,6 +25,51 @@ DIFFICULTY_SIZES = {
     "nightmare": 22,
 }
 
+DIFFICULTY_DENSITIES = {
+    "入门": 0.60,
+    "新手": 0.60,
+    "easy": 0.60,
+    "简单": 0.60,
+    "normal": 0.65,
+    "普通": 0.65,
+    "hard": 0.70,
+    "困难": 0.70,
+    "nightmare": 0.75,
+    "噩梦": 0.75,
+    "混合模式": 0.68,
+    "自定义": 0.65,
+}
+
+DIFFICULTY_AVERAGE_LENGTHS = {
+    "入门": 3.4,
+    "新手": 3.4,
+    "easy": 3.8,
+    "简单": 3.8,
+    "normal": 4.6,
+    "普通": 4.6,
+    "hard": 5.5,
+    "困难": 5.5,
+    "nightmare": 6.4,
+    "噩梦": 6.4,
+    "混合模式": 4.8,
+    "自定义": 4.8,
+}
+
+DIFFICULTY_WORD_COUNT_CAP_FACTORS = {
+    "入门": 1.15,
+    "新手": 1.15,
+    "easy": 1.25,
+    "简单": 1.25,
+    "normal": 1.35,
+    "普通": 1.35,
+    "hard": 1.45,
+    "困难": 1.45,
+    "nightmare": 1.70,
+    "噩梦": 1.70,
+    "混合模式": 1.40,
+    "自定义": 1.40,
+}
+
 NORMAL_SOURCE_WEIGHTS = {
     "quantum_mechanics_terms.csv": 0.42,
     "electrodynamics_terms.csv": 0.62,
@@ -248,12 +293,58 @@ def size_for_difficulty(difficulty: Any) -> int:
     return 15
 
 
-def target_word_count_for_size(size: Any, multiplier: float = 1.8) -> int:
+def _difficulty_key(difficulty: Any) -> str:
+    name = str(difficulty or "").strip()
+    lowered = name.lower()
+    if name in DIFFICULTY_DENSITIES:
+        return name
+    if lowered in DIFFICULTY_DENSITIES:
+        return lowered
+    if "入门" in name:
+        return "入门"
+    if "简单" in name or "easy" in lowered:
+        return "简单"
+    if "普通" in name or "normal" in lowered:
+        return "普通"
+    if "困难" in name or "hard" in lowered:
+        return "困难"
+    if "噩梦" in name or "nightmare" in lowered:
+        return "噩梦"
+    if "混合" in name:
+        return "混合模式"
+    if "自定义" in name:
+        return "自定义"
+    return "普通"
+
+
+def target_density_for_difficulty(difficulty: Any) -> float:
+    return DIFFICULTY_DENSITIES.get(_difficulty_key(difficulty), DIFFICULTY_DENSITIES["普通"])
+
+
+def target_average_word_length_for_difficulty(difficulty: Any) -> float:
+    return DIFFICULTY_AVERAGE_LENGTHS.get(_difficulty_key(difficulty), DIFFICULTY_AVERAGE_LENGTHS["普通"])
+
+
+def _word_count_cap_factor_for_difficulty(difficulty: Any) -> float:
+    return DIFFICULTY_WORD_COUNT_CAP_FACTORS.get(_difficulty_key(difficulty), DIFFICULTY_WORD_COUNT_CAP_FACTORS["普通"])
+
+
+def _size_dimensions(size: Any) -> Tuple[int, int]:
     if isinstance(size, (tuple, list)):
-        value = max(int(size[0]), int(size[1]))
-    else:
-        value = int(size)
-    return max(5, int(round(value * multiplier)))
+        return int(size[0]), int(size[1])
+    value = int(size)
+    return value, value
+
+
+def target_word_count_for_size(size: Any, multiplier: float = 1.8, difficulty: Any = None, cell_shape: str = "square") -> int:
+    width, height = _size_dimensions(size)
+    density = target_density_for_difficulty(difficulty)
+    average_length = target_average_word_length_for_difficulty(difficulty)
+    effective_cells_per_word = max(2.0, average_length - 1.0)
+    target_cells = max(width * height, 1) * density
+    density_count = int(round(target_cells / effective_cells_per_word))
+    side_count_cap = int(round(max(width, height) * multiplier * _word_count_cap_factor_for_difficulty(difficulty)))
+    return max(5, min(density_count, max(5, side_count_cap)))
 
 
 def generate_crossword(
@@ -273,10 +364,12 @@ def generate_crossword(
 
     pool = _prepare_terms(terms, width, height, rng, difficulty)
     if max_words is None:
-        max_words = min(len(pool), target_word_count_for_size(max(width, height)))
+        max_words = min(len(pool), target_word_count_for_size((width, height), difficulty=difficulty, cell_shape=cell_shape))
     else:
         max_words = max(0, int(max_words))
-    min_words = min(max_words, max(5, int(round(max_words * 0.88))))
+    min_words = min(max_words, max(5, int(round(max_words * 0.84))))
+    target_density = target_density_for_difficulty(difficulty)
+    target_average_length = target_average_word_length_for_difficulty(difficulty)
 
     if not pool or max_words <= 0:
         rows = [[None for _ in range(width)] for _ in range(height)]
@@ -287,8 +380,8 @@ def generate_crossword(
     best_score = float("-inf")
     for _attempt in range(attempts):
         order = _randomized_pool(pool, rng, max_words, width, height, difficulty)
-        puzzle = _generate_once(order, width, height, max_words, min_words, mask_func, rng, cell_shape)
-        score = _puzzle_score(puzzle, max_words)
+        puzzle = _generate_once(order, width, height, max_words, min_words, mask_func, rng, cell_shape, target_density)
+        score = _puzzle_score(puzzle, max_words, target_density, target_average_length)
         if score > best_score:
             best = puzzle
             best_score = score
@@ -307,13 +400,15 @@ def _generate_once(
     mask_func: Optional[MaskFunc],
     rng: random.Random,
     cell_shape: str,
+    target_density: float,
 ) -> CrosswordPuzzle:
     grid: Dict[Cell, str] = {}
     cell_dirs: Dict[Cell, set] = {}
     placements: List[CrosswordPlacement] = []
     seen_answers = set()
     area = width * height
-    target_density = _target_density(width, height)
+    isolated_limit = 0.42 if cell_shape == "square" else 0.85
+    fallback_isolated_limit = 0.34 if cell_shape == "square" else 0.78
 
     for item in pool:
         if len(placements) >= max_words:
@@ -337,7 +432,7 @@ def _generate_once(
         if (
             placements
             and len(placements) < max_words
-            and isolated_ratio < 0.42
+            and isolated_ratio < isolated_limit
             and (should_fill_lines or len(placements) < min_words or not candidates or down_ratio > 0.36)
         ):
             isolated_candidates = _isolated_candidates(term, answer, initials, grid, cell_dirs, placements, width, height, rng, cell_shape)
@@ -350,7 +445,7 @@ def _generate_once(
         if not candidates and not placements:
             first = _center_candidate(term, answer, initials, width, height, cell_shape)
             candidates = [first] if first else []
-        if not candidates and (not placements or should_fill_lines or (len(placements) < min_words and isolated_ratio < 0.34 and rng.random() < 0.24)):
+        if not candidates and (not placements or should_fill_lines or (len(placements) < min_words and isolated_ratio < fallback_isolated_limit and rng.random() < 0.30)):
             candidates = _isolated_candidates(term, answer, initials, grid, cell_dirs, placements, width, height, rng, cell_shape)
         if not candidates:
             continue
@@ -492,20 +587,20 @@ def _prepare_terms(terms: Iterable[Any], width: int, height: int, rng: random.Ra
         _, answer, _ = item
         overlap = sum(char_counts.get(char, 0) - 1 for char in set(answer))
         ascii_penalty = sum(1 for char in answer if char.isascii() and char.isalpha()) * 3.2
-        length_bonus = _crossword_length_bonus(len(answer))
+        length_bonus = _crossword_length_bonus(len(answer), target_average_word_length_for_difficulty(difficulty))
         decorated.append((overlap * 5 + length_bonus - ascii_penalty + _source_weight_bonus(item[0], difficulty, 65.0) + rng.random(), item))
     decorated.sort(key=lambda pair: pair[0], reverse=True)
     return [item for _, item in decorated]
 
 
-def _crossword_length_bonus(length: int) -> float:
+def _crossword_length_bonus(length: int, target_average_length: float = 4.6) -> float:
     if length <= 1:
-        return -14.0
+        return -22.0
     if length == 2:
-        return -4.0
-    if 3 <= length <= 6:
-        return 15.0 - abs(length - 4.5) * 1.6
-    return max(-5.0, 10.0 - (length - 6) * 1.9)
+        return -8.0
+    if length == 3 and target_average_length >= 4.8:
+        return 1.5
+    return max(-8.0, 18.0 - abs(length - target_average_length) * 2.25)
 
 
 def _is_normal_difficulty(difficulty: Any) -> bool:
@@ -522,8 +617,8 @@ def _source_weight_bonus(term: Any, difficulty: Any, scale: float) -> float:
 
 
 def _attempt_count(width: int, height: int, pool_size: int) -> int:
-    base = 18 if max(width, height) <= 11 else 28
-    return min(44, max(base, pool_size // 55))
+    base = 8
+    return min(10, max(base, pool_size // 220))
 
 
 def _randomized_pool(
@@ -534,7 +629,7 @@ def _randomized_pool(
     height: int,
     difficulty: Any,
 ) -> List[Tuple[Any, str, str]]:
-    limit = min(len(pool), max(70, max_words * 8))
+    limit = min(len(pool), max(60, max_words * 5))
     ranked = list(pool[:limit])
     rng.shuffle(ranked)
     char_counts: Dict[str, int] = {}
@@ -546,7 +641,7 @@ def _randomized_pool(
         term, answer, _initials = item
         overlap = sum(char_counts.get(char, 0) - 1 for char in set(answer))
         length = len(answer)
-        length_bonus = _crossword_length_bonus(length) * 2.6
+        length_bonus = _crossword_length_bonus(length, target_average_word_length_for_difficulty(difficulty)) * 2.6
         ascii_penalty = sum(1 for char in answer if char.isascii() and char.isalpha()) * 5.0
         return overlap * 7.0 + length_bonus - ascii_penalty + _source_weight_bonus(term, difficulty, 90.0) + rng.random() * 28.0
 
@@ -572,7 +667,7 @@ def _has_full_line_coverage(puzzle: CrosswordPuzzle) -> bool:
     return len(rows) >= puzzle.height and len(cols) >= puzzle.width
 
 
-def _puzzle_score(puzzle: CrosswordPuzzle, max_words: int) -> float:
+def _puzzle_score(puzzle: CrosswordPuzzle, max_words: int, target_density: Optional[float] = None, target_average_length: Optional[float] = None) -> float:
     if not puzzle.placements:
         return float("-inf")
     rows, cols = _coverage_sets(puzzle.grid)
@@ -586,8 +681,16 @@ def _puzzle_score(puzzle: CrosswordPuzzle, max_words: int) -> float:
     min_c = min(cols)
     max_c = max(cols)
     spread_area = ((max_r - min_r + 1) * (max_c - min_c + 1)) / max(area, 1)
-    target_density = _target_density(puzzle.width, puzzle.height)
+    if target_density is None:
+        target_density = _target_density(puzzle.width, puzzle.height)
+    if target_average_length is None:
+        target_average_length = 4.6
     density_penalty = abs(density - target_density) * 760
+    lengths = [len(placement.answer) for placement in puzzle.placements]
+    average_length = sum(lengths) / max(len(lengths), 1)
+    short_ratio = sum(1 for length in lengths if length <= 3) / max(len(lengths), 1)
+    average_length_penalty = abs(average_length - target_average_length) * len(puzzle.placements) * 8
+    short_penalty = max(0.0, short_ratio - 0.25) * len(puzzle.placements) * 180
     down_count = sum(1 for placement in puzzle.placements if _is_down_direction(placement.direction))
     down_ratio = down_count / max(len(puzzle.placements), 1)
     down_penalty = max(0.0, down_ratio - 0.35) * len(puzzle.placements) * 210
@@ -602,19 +705,21 @@ def _puzzle_score(puzzle: CrosswordPuzzle, max_words: int) -> float:
         - empty_cols * 760
         - puzzle.isolated_count * 92
         - density_penalty
+        - average_length_penalty
+        - short_penalty
         - down_penalty
     )
 
 
 def _target_density(width: int, height: int) -> float:
     size = max(width, height)
-    if size <= 8:
-        return 0.36
     if size <= 11:
-        return 0.33
+        return 0.60
     if size <= 15:
-        return 0.30
-    return 0.28
+        return 0.65
+    if size <= 18:
+        return 0.70
+    return 0.75
 
 
 def _crossing_candidates(
@@ -766,7 +871,6 @@ def _candidate(
     shape = _normalize_cell_shape(cell_shape)
     cells = _cells_for(answer, row, col, direction, shape)
     intersections = 0
-    occupied_cells = {(r, c) for r, c, _char in cells}
     before = _previous_cell(row, col, direction, shape)
     after = _step_cell(row, col, direction, shape, len(answer))
     if before in grid or after in grid:
@@ -780,8 +884,6 @@ def _candidate(
                 return None
             intersections += 1
             continue
-        if any(neighbor in grid and neighbor not in occupied_cells for neighbor in _side_neighbors(r, c, shape)):
-            return None
     return _Candidate(term, answer, initials, row, col, direction, cells, intersections, 0)
 
 

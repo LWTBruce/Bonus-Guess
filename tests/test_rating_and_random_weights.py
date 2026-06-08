@@ -72,7 +72,7 @@ class RatingAndRandomWeightTests(unittest.TestCase):
         for term in balanced:
             table_counts[term.source] = table_counts.get(term.source, 0) + 1
         self.assertEqual(len(table_counts), 2)
-        self.assertEqual(set(table_counts.values()), {35})
+        self.assertEqual(set(table_counts.values()), {30})
 
     def test_rating_cap_is_twenty_point_five_and_nightmare_can_reach_it(self):
         record = {

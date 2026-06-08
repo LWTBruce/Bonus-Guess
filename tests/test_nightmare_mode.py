@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "frontend"))
 
 from app import BonusGuessApp  # noqa: E402
-from crossword_puzzle import size_for_difficulty  # noqa: E402
+from crossword_puzzle import size_for_difficulty, target_density_for_difficulty, target_word_count_for_size  # noqa: E402
 from game_config import (  # noqa: E402
     FREE_HINT_DECAY,
     FREE_HINT_ZERO_PROB,
@@ -48,7 +48,16 @@ class NightmareModeConfigTests(unittest.TestCase):
         self.assertEqual(BonusGuessApp.crossword_rank_size_for_id(None, 20), 30)
         self.assertEqual(BonusGuessApp.crossword_rank_seconds_for_id(None, 1), 8 * 60)
         self.assertEqual(BonusGuessApp.crossword_rank_seconds_for_id(None, 20), 25 * 60)
-        self.assertEqual(BonusGuessApp.crossword_rank_word_count_for_id(None, 20), 85)
+        self.assertEqual(BonusGuessApp.crossword_rank_word_count_for_id(None, 20), 92)
+
+    def test_crossword_word_count_uses_density_targets(self):
+        self.assertAlmostEqual(target_density_for_difficulty("简单"), 0.60)
+        self.assertAlmostEqual(target_density_for_difficulty("普通"), 0.65)
+        self.assertAlmostEqual(target_density_for_difficulty("困难"), 0.70)
+        self.assertAlmostEqual(target_density_for_difficulty("噩梦"), 0.75)
+        self.assertEqual(target_word_count_for_size(11, difficulty="简单"), 25)
+        self.assertEqual(target_word_count_for_size((11, 11), difficulty="简单", cell_shape="hex"), 25)
+        self.assertGreater(target_word_count_for_size(22, difficulty="噩梦"), target_word_count_for_size(18, difficulty="困难"))
 
     def test_high_crossword_ranks_reach_nightmare_term_windows(self):
         self.assertEqual(BonusGuessApp.crossword_rank_difficulty_window_for_id(None, 16), (9, 11, 10.0))

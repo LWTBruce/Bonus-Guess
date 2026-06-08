@@ -443,7 +443,7 @@ class TermLibraryExpansionTests(unittest.TestCase):
 
     def test_term_notice_tags_for_special_terms(self):
         self.assertEqual(term_notice_tags("牛顿第二定律"), ["人名"])
-        self.assertEqual(term_notice_tags("ΛCDM模型"), ["英文字母", "希腊字母"])
+        self.assertEqual(term_notice_tags("ΛCDM模型"), ["希腊字母", "英文字母"])
         self.assertEqual(term_notice_tags("南部-戈德斯通定理"), ["人名"])
 
     def test_chinese_names_do_not_use_known_bad_translations(self):
@@ -472,17 +472,29 @@ class TermLibraryExpansionTests(unittest.TestCase):
                 self.assertEqual(str(len(english)), row["英文字符串长度"].strip())
         self.assertEqual(offenders, [])
 
-    def test_clue_true_random_filters_nightmare_terms(self):
+    def test_clue_true_random_keeps_full_nightmare_scope(self):
         app = BonusGuessApp.__new__(BonusGuessApp)
         app.library = TermLibrary(ROOT / "words")
-        app.terms, app.library_files = app.library.load_all()
         app.true_random_mode = True
         app.mode = "真·随机"
         app.random_group_mode = True
-        app.remove_nightmare_terms_from_clue_scope("真·随机")
+        app.play_mode = "线索"
+        app.load_terms_for_current_selection("真·随机")
         self.assertTrue(app.terms)
-        self.assertFalse(any("噩梦" in file.parent.name for file in app.library_files))
-        self.assertIn("入门到困难", app.scope_text)
+        self.assertTrue(any("噩梦" in file.parent.name for file in app.library_files))
+        self.assertIn("全部物理和数学词库", app.scope_text)
+
+    def test_clue_nightmare_loads_nightmare_terms(self):
+        app = BonusGuessApp.__new__(BonusGuessApp)
+        app.library = TermLibrary(ROOT / "words")
+        app.true_random_mode = False
+        app.mode = "物理模式"
+        app.random_group_mode = False
+        app.play_mode = "线索"
+        app.load_terms_for_current_selection("噩梦")
+        self.assertTrue(app.terms)
+        self.assertTrue(all("噩梦" in file.parent.name for file in app.library_files))
+        self.assertTrue(any(term.difficulty >= 11 for term in app.terms))
 
     @staticmethod
     def read_rows(path):

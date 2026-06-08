@@ -5,17 +5,17 @@
       "chinese_name": "角",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "它衡量两条射线或两个方向之间的开口大小。",
-        "高中题会用度数或弧度记录开口大小，并放到边长比中计算。",
-        "在坐标系中，旋转方向和终边位置会影响对应函数值的符号。",
-        "常用符号有 α、β、θ。",
-        "英文名是 angle。"
+        "这是平面几何中的一种方向度量。",
+        "它可用度数或弧度记录，也可看成从始边旋转到终边的过程。",
+        "顶点为 $O$、两边为 $OA,OB$ 时，可记作 $\\angle AOB=\\theta$。",
+        "大小只由两条射线的相对方向决定，与边画得长短无关。",
+        "它的英文译名是 angle。"
       ],
       "fragmented_clues": [
-        "两射线 两方向 开口大小",
-        "度数 弧度 边长比",
-        "旋转方向 终边位置 符号",
-        "α β θ",
+        "平面几何 方向度量",
+        "度数 弧度 始边 终边 旋转",
+        "$\\angle AOB=\\theta$",
+        "两射线 相对方向 非边长",
         "angle"
       ],
       "explanation_markdown": "角表示两条射线或两个方向从同一端点张开的大小。若角的顶点为 $O$，两边为射线 $OA$ 和 $OB$，可记作 $\\angle AOB=\\theta$，其中 $\\theta$ 表示角的大小。\n\n角可以用度数或弧度来度量，也可以看成从始边旋转到终边的过程。逆时针旋转常取正，顺时针旋转常取负。直角、平角和周角分别对应 $90^\\circ$、$180^\\circ$、$360^\\circ$。在三角函数中，角的终边位置会决定正弦、余弦和正切的符号。角的大小与边的长短无关，只由两条射线的相对方向决定。把角放进坐标系后，常以 $x$ 轴正方向为始边，终边旋转到哪里就决定它属于哪个象限。这样定义后，大于一周或小于零的角也能统一讨论。",
@@ -41,17 +41,17 @@
       "chinese_name": "弧度",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "它用弧长与半径的比值来度量角的大小。",
-        "当弧长等于半径时，对应的量为 1。",
-        "它让三角函数和圆周运动公式更简洁。",
-        "180° 对应 π，360° 对应 2π。",
-        "英文名是 radian。"
+        "这是三角学中的一种度量单位。",
+        "它把圆心处的张开量与弧长、半径联系起来，常用于弧长和扇形公式。",
+        "$\\theta=\\frac lr$，其中 $l$ 为弧长、$r$ 为半径。",
+        "当弧长等于半径时数值为 $1$；$180^\\circ$ 对应 $\\pi$。",
+        "它的英文译名是 radian。"
       ],
       "fragmented_clues": [
-        "弧长/半径",
-        "弧长=半径 数值1",
-        "三角函数 圆周运动 简洁",
-        "180°=π 360°=2π",
+        "三角学 度量单位",
+        "圆心张开量 弧长 半径 扇形",
+        "$\\theta=\\frac lr$",
+        "弧长等于半径 数值$1$ $180^\\circ=\\pi$",
         "radian"
       ],
       "explanation_markdown": "弧度是一种用弧长和半径之比来度量角的单位。圆心角 $\\theta$ 对应弧长为 $l$、半径为 $r$ 时，$\\theta=\\frac lr$，其中 $\\theta$ 的单位就是弧度。\n\n当弧长等于半径时，圆心角为 $1$ 弧度。因为弧长和半径都是长度，它们的比值没有量纲。弧度让公式更简洁，例如扇形弧长 $l=r\\theta$，其中 $\\theta$ 必须用弧度。常见换算是 $180^\\circ=\\pi$ 弧度，$360^\\circ=2\\pi$ 弧度。弧度数相同的角，在不同半径圆中对应弧长不同，但弧长与半径的比相同。使用弧度后，很多公式不需要额外换算系数。若条件混用度数和弧度，要先统一单位，否则代入三角函数和弧长公式会出错。它不是新的角，而是同一角大小的另一种记法。",
@@ -77,17 +77,17 @@
       "chinese_name": "弧度制",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "这种度量方式不用度数，而用弧长与半径的比来表示角。",
-        "高中三角恒等式、函数图像和导数公式通常采用它。",
-        "换算时 π 对应 180°。",
-        "单位圆上弧长数值等于中心角的这种度量值。",
-        "英文名是 radian measure。"
+        "这是三角学中的一种度量体系。",
+        "它通常用于三角恒等式、函数图像、周期和含 $\\sin x$、$\\cos x$ 的表达。",
+        "$\\theta_{\\rm rad}=\\theta_{\\rm deg}\\frac\\pi{180}$，并有 $2\\pi=360^\\circ$。",
+        "在单位半径的圆上，中心处的张开量数值直接等于所对弧长。",
+        "它的英文译名是 radian measure。"
       ],
       "fragmented_clues": [
-        "弧长/半径 表示角",
-        "恒等式 图像 导数",
-        "π=180°",
-        "单位圆 弧长 中心角",
+        "三角学 度量体系",
+        "恒等式 图像 周期 $\\sin x$ $\\cos x$",
+        "$\\theta_{\\rm rad}=\\theta_{\\rm deg}\\frac\\pi{180}$ $2\\pi=360^\\circ$",
+        "单位半径圆 中心张开量 等于弧长",
         "radian measure"
       ],
       "explanation_markdown": "弧度制是用弧度而不是度数来度量角的一套方式。它规定圆心角满足 $\\theta=\\frac lr$，其中 $l$ 是所对弧长，$r$ 是半径，$\\theta$ 是角的弧度数。\n\n在单位圆中 $r=1$，所以弧度数直接等于对应弧长，这让三角函数图像、周期和公式更自然。弧度制下，$\\pi$ 对应 $180^\\circ$，$2\\pi$ 对应 $360^\\circ$。高中三角恒等式和函数图像通常默认使用弧度制，尤其含有 $\\sin x$、$\\cos x$ 的函数题要注意单位。弧度制的优点在于把角和圆上的长度直接联系起来。三角函数的周期常写成 $2\\pi$，正弦、余弦图像的横轴也通常按弧度标记。把度数换成弧度时，可用 $\\theta_{\\text{弧度}}=\\theta_{\\text{度}}\\pi/180$。写答案时若没有度数符号，通常默认就是弧度。",
@@ -113,17 +113,17 @@
       "chinese_name": "任意角",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "它允许从始边出发按顺时针或逆时针旋转任意大小。",
-        "终边相同的对象可以相差 2kπ 或 360° 的整数倍。",
-        "象限位置决定三角函数值的符号。",
-        "常写成 α+2kπ，其中 k∈Z。",
-        "英文名是 arbitrary angle。"
+        "这是三角学中的一种旋转对象。",
+        "它把讨论范围扩展到所有实数转动量，允许顺时针、逆时针和多圈旋转。",
+        "与 $\\alpha$ 终边相同的量可写成 $\\alpha+2k\\pi$，其中 $k\\in\\mathbb Z$。",
+        "终边位置决定正弦、余弦、正切的符号，同终边时这些函数值相同。",
+        "它的英文译名是 arbitrary angle。"
       ],
       "fragmented_clues": [
-        "始边 顺时针 逆时针 旋转",
-        "终边相同 2kπ 360°整数倍",
-        "象限位置 符号",
-        "α+2kπ k∈Z",
+        "三角学 旋转对象",
+        "所有实数转动量 顺时针 逆时针 多圈",
+        "$\\alpha+2k\\pi$ $k\\in\\mathbb Z$",
+        "终边位置 函数符号 同终边同值",
         "arbitrary angle"
       ],
       "explanation_markdown": "任意角允许从始边出发按任意方向、任意圈数旋转得到终边。若一个角为 $\\alpha$，与它终边相同的角可写成 $\\alpha+2k\\pi$，其中 $k\\in\\mathbb Z$ 表示旋转的整圈数。\n\n任意角把角的范围从 $0^\\circ$ 到 $360^\\circ$ 扩展到所有实数角。正角通常表示逆时针旋转，负角表示顺时针旋转。三角函数值只由终边在单位圆上的位置决定，因此同终边角的正弦、余弦相同。象限位置则帮助判断函数值符号。同终边角虽然大小不同，但在单位圆上对应同一个交点，因此三角函数值相同。任意角还保留旋转次数的信息，例如 $30^\\circ$ 和 $390^\\circ$ 终边相同，但旋转过程不同。化简时常把角减去整周，转回熟悉范围。",
@@ -149,17 +149,17 @@
       "chinese_name": "单位圆",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "它是坐标平面中以原点为中心、半径为 1 的圆。",
-        "终边与它的交点坐标可表示三角函数值。",
-        "横坐标对应 cos，纵坐标对应 sin。",
-        "方程为 x^2+y^2=1。",
-        "英文名是 unit circle。"
+        "这是三角学中的一种标准曲线。",
+        "它用于把终边位置、坐标、正弦、余弦和同角关系联系起来。",
+        "方程为 $x^2+y^2=1$，终边交点可写成 $P(\\cos\\theta,\\sin\\theta)$。",
+        "中心在原点、半径为 $1$，横坐标给余弦，纵坐标给正弦。",
+        "它的英文译名是 unit circle。"
       ],
       "fragmented_clues": [
-        "原点中心 半径1",
-        "终边交点 坐标 三角值",
-        "横坐标 cos 纵坐标 sin",
-        "x^2+y^2=1",
+        "三角学 标准曲线",
+        "终边位置 坐标 正弦 余弦 同角关系",
+        "$x^2+y^2=1$ $P(\\cos\\theta,\\sin\\theta)$",
+        "原点中心 半径$1$ 横坐标余弦 纵坐标正弦",
         "unit circle"
       ],
       "explanation_markdown": "单位圆是平面直角坐标系中以原点为圆心、半径为 $1$ 的圆，方程为 $x^2+y^2=1$，其中 $(x,y)$ 是圆上的点。\n\n角的终边与单位圆交于点 $P(\\cos\\theta,\\sin\\theta)$，这里横坐标是余弦，纵坐标是正弦。单位圆把直角三角形中的边长比推广到任意角，也能直接看出三角函数的符号、最大最小值和周期。因为半径固定为 $1$，弧长也等于圆心角的弧度数。它也是理解诱导公式、同角关系和三角函数符号的共同图形。单位圆上的点坐标天然满足横坐标平方加纵坐标平方等于一，这就是同角关系 $\\sin^2\\theta+\\cos^2\\theta=1$ 的来源。它还能直观看出第一象限正弦、余弦都为正，其他象限的符号随坐标正负变化。",
@@ -185,17 +185,17 @@
       "chinese_name": "正弦",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "在直角三角形中，它等于对边与斜边的比。",
-        "在单位圆上，它对应终边交点的纵坐标。",
-        "图像在 [-1,1] 之间周期性波动。",
-        "常用符号 sin x 表示。",
-        "英文名是 sine。"
+        "这是三角学中的一种基本函数。",
+        "它来自直角三角形边长比，也可由单位圆终边交点坐标定义。",
+        "$\\sin\\theta=\\frac{\\text{对边}}{\\text{斜边}}$，单位圆中等于纵坐标。",
+        "取值范围为 $[-1,1]$，周期为 $2\\pi$，第一、第二象限为正。",
+        "它的英文译名是 sine。"
       ],
       "fragmented_clues": [
-        "对边/斜边",
-        "单位圆 纵坐标",
-        "[-1,1] 周期波动",
-        "sin x",
+        "三角学 基本函数",
+        "直角三角形 边长比 单位圆 纵坐标",
+        "$\\sin\\theta=\\frac{\\text{对边}}{\\text{斜边}}$",
+        "$[-1,1]$ 周期$2\\pi$ 第一第二象限为正",
         "sine"
       ],
       "explanation_markdown": "正弦最初来自直角三角形中的边长比：对锐角 $\\theta$，有 $\\sin\\theta=\\frac{\\text{对边}}{\\text{斜边}}$。在单位圆中，$\\sin\\theta$ 是角 $\\theta$ 终边交点的纵坐标。\n\n正弦值范围为 $[-1,1]$，因为单位圆上点的纵坐标不会超过半径。它是周期函数，满足 $\\sin(\\theta+2\\pi)=\\sin\\theta$。正弦常描述高度、投影和波动；在三角形中，它把角与对边联系起来，也是正弦定理的基础。对一般角，正弦不再依赖直角三角形是否存在，而由单位圆纵坐标定义。角在第一、第二象限时正弦为正，在第三、第四象限时为负。图像过原点，最大值为 $1$，最小值为 $-1$，常用来表示上下方向的周期变化。它和余弦配合，能把圆上点的坐标完整表示出来。",
@@ -221,17 +221,17 @@
       "chinese_name": "余弦",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "在直角三角形中，它等于邻边与斜边的比。",
-        "在单位圆上，它对应终边交点的横坐标。",
-        "图像在 [-1,1] 之间周期性波动，且关于 y 轴对称。",
-        "常用符号 cos x 表示。",
-        "英文名是 cosine。"
+        "这是三角学中的一种基本函数。",
+        "它来自直角三角形边长比，也可用于水平投影、向量夹角和三边关系。",
+        "$\\cos\\theta=\\frac{\\text{邻边}}{\\text{斜边}}$，单位圆中等于横坐标。",
+        "取值范围为 $[-1,1]$，周期为 $2\\pi$，图像关于 $y$ 轴对称。",
+        "它的英文译名是 cosine。"
       ],
       "fragmented_clues": [
-        "邻边/斜边",
-        "单位圆 横坐标",
-        "[-1,1] 周期 y轴对称",
-        "cos x",
+        "三角学 基本函数",
+        "边长比 水平投影 向量夹角 三边关系",
+        "$\\cos\\theta=\\frac{\\text{邻边}}{\\text{斜边}}$",
+        "$[-1,1]$ 周期$2\\pi$ 关于$y$轴对称",
         "cosine"
       ],
       "explanation_markdown": "余弦在直角三角形中表示锐角邻边与斜边的比：$\\cos\\theta=\\frac{\\text{邻边}}{\\text{斜边}}$。在单位圆中，$\\cos\\theta$ 是角 $\\theta$ 终边交点的横坐标。\n\n余弦值也在 $[-1,1]$ 之间，并满足 $\\cos(\\theta+2\\pi)=\\cos\\theta$。它的图像关于 $y$ 轴对称，因为 $\\cos(-\\theta)=\\cos\\theta$。余弦常用来计算水平投影、两向量夹角和三角形边长，余弦定理正是把角的余弦放进三边关系。对一般角，余弦由单位圆横坐标定义，所以它在第一、第四象限为正，在第二、第三象限为负。余弦图像从 $x=0$ 处的 $1$ 开始周期变化。它常表示水平方向投影，也和向量数量积中的夹角计算直接相连。在解三角形中，余弦还常用来判断角的大小和类型。它与正弦共同确定单位圆上点的位置。",
@@ -257,17 +257,17 @@
       "chinese_name": "正切",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "在直角三角形中，它等于对边与邻边的比。",
-        "在三角函数中，它也等于 sin x 除以 cos x。",
-        "当 cos x=0 时，这个比值没有定义。",
-        "常用符号 tan x 表示。",
-        "英文名是 tangent。"
+        "这是三角学中的一种基本函数。",
+        "它常用于坡度、直线倾斜程度和纵向变化与横向变化的比。",
+        "$\\tan\\theta=\\frac{\\sin\\theta}{\\cos\\theta}$，要求 $\\cos\\theta\\ne0$。",
+        "周期为 $\\pi$，在 $\\theta=\\frac\\pi2+k\\pi$ 处没有定义并出现竖直渐近线。",
+        "它的英文译名是 tangent。"
       ],
       "fragmented_clues": [
-        "对边/邻边",
-        "sin x / cos x",
-        "cos x=0 无定义",
-        "tan x",
+        "三角学 基本函数",
+        "坡度 直线倾斜 纵向变化 横向变化",
+        "$\\tan\\theta=\\frac{\\sin\\theta}{\\cos\\theta}$ $\\cos\\theta\\ne0$",
+        "周期$\\pi$ $\\theta=\\frac\\pi2+k\\pi$ 无定义",
         "tangent"
       ],
       "explanation_markdown": "正切在直角三角形中表示锐角对边与邻边的比，也可由正弦和余弦定义为 $\\tan\\theta=\\frac{\\sin\\theta}{\\cos\\theta}$，其中 $\\cos\\theta\\ne0$。\n\n在单位圆上，正切可以看作纵坐标与横坐标的比，所以当终边落在 $y$ 轴方向时没有定义。正切的周期为 $\\pi$，满足 $\\tan(\\theta+\\pi)=\\tan\\theta$。它常用于表示直线倾斜程度，解析几何中的斜率就满足 $k=\\tan\\alpha$。正切表示纵向变化与横向变化的比，因此在直线斜率和三角形坡度中很常见。它在第一、第三象限为正，在第二、第四象限为负。由于分母是余弦，$\\theta=\\frac\\pi2+k\\pi$ 时正切没有定义，图像会出现竖直渐近线。求正切前要先确认余弦不为零，否则这个比值没有意义。图像的重复长度比正弦余弦短一半。",
@@ -293,17 +293,17 @@
       "chinese_name": "三角函数",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "这类函数把角度或弧度输入转化为边长比或单位圆坐标。",
-        "高中主要研究 sin、cos、tan 的图像、性质和恒等变形。",
-        "周期、奇偶性、最值和单调区间是常见考点。",
-        "单位圆能统一解释符号、范围和诱导关系。",
-        "英文名是 trigonometric functions。"
+        "这是三角学中的一类函数。",
+        "它把旋转量、边长比和单位圆坐标联系起来，常用于图像、恒等变形和边角关系。",
+        "高中主要研究 $\\sin x$、$\\cos x$、$\\tan x$。",
+        "这些函数具有周期性和特定奇偶性；正弦、余弦值域有限，正切可取任意实数。",
+        "它的英文译名是 trigonometric functions。"
       ],
       "fragmented_clues": [
-        "角输入 边长比 单位圆坐标",
-        "sin cos tan 图像 性质 恒等变形",
-        "周期 奇偶 最值 单调",
-        "单位圆 符号 范围 诱导",
+        "三角学 函数类别",
+        "旋转量 边长比 单位圆坐标 图像 恒等变形",
+        "$\\sin x$ $\\cos x$ $\\tan x$",
+        "周期 奇偶 正弦余弦值域有限 正切任意实数",
         "trigonometric functions"
       ],
       "explanation_markdown": "三角函数把角与边长比或单位圆坐标联系起来。高中主要研究 $\\sin x$、$\\cos x$、$\\tan x$，其中 $x$ 常用弧度表示，正弦和余弦来自单位圆交点坐标，正切是二者的比值。\n\n三角函数具有周期性和特定的奇偶性，例如 $\\sin(x+2\\pi)=\\sin x$，$\\cos(-x)=\\cos x$。它们适合描述旋转、振动、波动和三角形边角关系。学习时要同时关注定义域、值域、图像、符号和恒等变形，而不是只记特殊角数值。单位圆给出三角函数的统一定义，直角三角形只是锐角情形下的直观来源。正弦和余弦的值域有限，正切却可以取任意实数。三角函数题常把图像性质、恒等公式和边角关系放在一起，需要先判断角的范围和单位。",
@@ -329,17 +329,17 @@
       "chinese_name": "诱导公式",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "它把特殊变换后的三角函数值化回基本角的函数值。",
-        "常见变换包括加减 π、2π 或关于 π/2 的对称。",
-        "口诀常概括为奇变偶不变、符号看象限。",
-        "化简含 π±α、2π-α 的表达式时经常使用。",
-        "英文名是 reduction formula。"
+        "这是三角恒等变形中的一组关系式。",
+        "它处理与 $\\pi$、$2\\pi$、$\\frac\\pi2$ 有关的对称或同终边变换。",
+        "例如 $\\sin(\\pi-\\alpha)=\\sin\\alpha$，$\\cos(\\pi-\\alpha)=-\\cos\\alpha$。",
+        "符号来自变换后所在象限，函数名是否改变与坐标轴互换有关。",
+        "它的英文译名是 reduction formula。"
       ],
       "fragmented_clues": [
-        "变换后 化回基本角",
-        "π 2π π/2 对称",
-        "奇变偶不变 符号看象限",
-        "π±α 2π-α",
+        "三角恒等变形 关系式",
+        "$\\pi$ $2\\pi$ $\\frac\\pi2$ 对称 同终边",
+        "$\\sin(\\pi-\\alpha)=\\sin\\alpha$ $\\cos(\\pi-\\alpha)=-\\cos\\alpha$",
+        "象限符号 坐标轴互换 函数名改变",
         "reduction formula"
       ],
       "explanation_markdown": "诱导公式把含有 $\\pi\\pm\\alpha$、$2\\pi\\pm\\alpha$、$\\frac\\pi2\\pm\\alpha$ 等角的三角函数化为基本角 $\\alpha$ 的函数值。例如 $\\sin(\\pi-\\alpha)=\\sin\\alpha$，$\\cos(\\pi-\\alpha)=-\\cos\\alpha$。\n\n这些公式来自单位圆上的对称和同终边关系。符号由变换后角的象限决定，函数名是否改变则看是否绕到与坐标轴互换有关的位置。常说的“奇变偶不变、符号看象限”是记忆方法，但理解时仍应回到单位圆坐标，避免在不同函数间机械套用。诱导公式的本质是把复杂角转到与 $\\alpha$ 对称或同终边的位置。比如关于 $x$ 轴对称会改变正弦符号，关于 $y$ 轴对称会改变余弦符号。理解坐标变化后，公式不必死记，也能避免把符号看错。化简后还要结合原角范围确定最终符号。",
@@ -365,17 +365,17 @@
       "chinese_name": "两角和公式",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "它给出两个角相加后的三角函数展开式。",
-        "sin 部分展开为 sinαcosβ+cosαsinβ。",
-        "cos 部分展开为 cosαcosβ-sinαsinβ。",
-        "tan 部分可写成 (tanα+tanβ)/(1-tanαtanβ)。",
-        "英文名是 sum formulas。"
+        "这是三角恒等变形中的一组关系式。",
+        "它用于把两个旋转量相加后的函数值展开，也可反向合成特殊角。",
+        "$\\sin(\\alpha+\\beta)=\\sin\\alpha\\cos\\beta+\\cos\\alpha\\sin\\beta$。",
+        "余弦展开中间是减号，$\\sin(\\alpha+\\beta)$ 一般不能拆成两个正弦值直接相加。",
+        "它的英文译名是 sum formulas。"
       ],
       "fragmented_clues": [
-        "两个角 相加 展开",
-        "sin(α+β)=sinαcosβ+cosαsinβ",
-        "cos(α+β)=cosαcosβ-sinαsinβ",
-        "tan(α+β)=(tanα+tanβ)/(1-tanαtanβ)",
+        "三角恒等变形 关系式",
+        "两个旋转量相加 展开 反向合成",
+        "$\\sin(\\alpha+\\beta)=\\sin\\alpha\\cos\\beta+\\cos\\alpha\\sin\\beta$",
+        "余弦中间减号 正弦非直接相加",
         "sum formulas"
       ],
       "explanation_markdown": "两角和公式给出两个角相加后各三角函数的展开。核心公式是 $\\sin(\\alpha+\\beta)=\\sin\\alpha\\cos\\beta+\\cos\\alpha\\sin\\beta$，其中 $\\alpha,\\beta$ 是两个角。\n\n余弦也有对应关系：$\\cos(\\alpha+\\beta)=\\cos\\alpha\\cos\\beta-\\sin\\alpha\\sin\\beta$。当分母有意义时，$\\tan(\\alpha+\\beta)=\\frac{\\tan\\alpha+\\tan\\beta}{1-\\tan\\alpha\\tan\\beta}$。这些公式用于求特殊角、化简表达式和证明恒等式，关键是看清角是相加而不是倍角。两角和公式不能理解为函数值直接相加，例如 $\\sin(\\alpha+\\beta)$ 一般不等于 $\\sin\\alpha+\\sin\\beta$。它揭示的是旋转叠加后的坐标变化。求 $15^\\circ$、$75^\\circ$ 等角的函数值时，常把它们拆成特殊角之和。它也能反向使用，把两项乘积和重新合成为一个角的三角函数。遇到含有不同角的式子时，先观察能否配成和角形式。记忆时要特别留意余弦公式中间的减号。",
@@ -401,17 +401,17 @@
       "chinese_name": "两角差公式",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "它给出两个角相减后的三角函数展开式。",
-        "sin 部分展开为 sinαcosβ-cosαsinβ。",
-        "cos 部分展开为 cosαcosβ+sinαsinβ。",
-        "tan 部分可写成 (tanα-tanβ)/(1+tanαtanβ)。",
-        "英文名是 difference formulas。"
+        "这是三角恒等变形中的一组关系式。",
+        "它用于把两个旋转量相减后的函数值展开，也常由和式替换 $-\\beta$ 得到。",
+        "$\\sin(\\alpha-\\beta)=\\sin\\alpha\\cos\\beta-\\cos\\alpha\\sin\\beta$。",
+        "余弦展开中间变为加号，正切形式还要检查分母是否为零。",
+        "它的英文译名是 difference formulas。"
       ],
       "fragmented_clues": [
-        "两个角 相减 展开",
-        "sin(α-β)=sinαcosβ-cosαsinβ",
-        "cos(α-β)=cosαcosβ+sinαsinβ",
-        "tan(α-β)=(tanα-tanβ)/(1+tanαtanβ)",
+        "三角恒等变形 关系式",
+        "两个旋转量相减 展开 $-\\beta$",
+        "$\\sin(\\alpha-\\beta)=\\sin\\alpha\\cos\\beta-\\cos\\alpha\\sin\\beta$",
+        "余弦中间加号 正切分母检查",
         "difference formulas"
       ],
       "explanation_markdown": "两角差公式把两个角相减后的三角函数写成两个角各自函数值的组合。正弦公式为 $\\sin(\\alpha-\\beta)=\\sin\\alpha\\cos\\beta-\\cos\\alpha\\sin\\beta$，其中 $\\alpha,\\beta$ 是两个角。\n\n余弦公式为 $\\cos(\\alpha-\\beta)=\\cos\\alpha\\cos\\beta+\\sin\\alpha\\sin\\beta$。正切公式为 $\\tan(\\alpha-\\beta)=\\frac{\\tan\\alpha-\\tan\\beta}{1+\\tan\\alpha\\tan\\beta}$，分母不能为零。它常用于把不熟悉的角拆成熟悉角的差，如 $75^\\circ=120^\\circ-45^\\circ$。两角差公式常由两角和公式把 $\\beta$ 换成 $-\\beta$ 得到，因此符号变化要特别注意。它可把一个角表示成熟悉角的差，也可用于证明余弦型距离关系。使用正切差公式时，还要检查两个角的正切和分母是否有意义。它也能反向把若干乘积项合成一个差角函数。处理夹角、距离和三角恒等变形时，差角形式经常比展开式更清楚。",
@@ -437,17 +437,17 @@
       "chinese_name": "二倍角公式",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "它把 2α 的三角函数值转化为 α 的函数值。",
-        "常见形式包括 sin2α=2sinαcosα。",
-        "cos2α 可写成 cos^2α-sin^2α、1-2sin^2α 或 2cos^2α-1。",
-        "化简和求值题常利用它降次或升角。",
-        "英文名是 double-angle formulas。"
+        "这是三角恒等变形中的一组关系式。",
+        "它用于把两倍输入与原输入的函数值联系起来，常用于降次、升角和求值。",
+        "$\\sin2\\alpha=2\\sin\\alpha\\cos\\alpha$，且 $\\cos2\\alpha=\\cos^2\\alpha-\\sin^2\\alpha$。",
+        "它是和式在两个输入相同时的结果，余弦部分可按已知条件选择三种等价写法。",
+        "它的英文译名是 double-angle formulas。"
       ],
       "fragmented_clues": [
-        "2α 转化为 α",
-        "sin2α=2sinαcosα",
-        "cos2α=cos^2α-sin^2α",
-        "降次 升角",
+        "三角恒等变形 关系式",
+        "两倍输入 原输入 降次 升角 求值",
+        "$\\sin2\\alpha=2\\sin\\alpha\\cos\\alpha$ $\\cos2\\alpha=\\cos^2\\alpha-\\sin^2\\alpha$",
+        "和式特殊情形 余弦三种等价写法",
         "double-angle formulas"
       ],
       "explanation_markdown": "二倍角公式把 $2\\alpha$ 的三角函数转化为 $\\alpha$ 的函数值。常用公式有 $\\sin2\\alpha=2\\sin\\alpha\\cos\\alpha$，其中 $\\alpha$ 是原角，$2\\alpha$ 是它的两倍角。\n\n余弦二倍角有三种常见写法：$\\cos2\\alpha=\\cos^2\\alpha-\\sin^2\\alpha=1-2\\sin^2\\alpha=2\\cos^2\\alpha-1$。它们可根据条件中出现的是正弦还是余弦来选择。二倍角公式常用于降次、升角、化简三角式和求函数最值。二倍角公式是两角和公式在两个角相同情况下的结果。它不仅能把 $2\\alpha$ 化成 $\\alpha$，也能反过来把平方项改写成半角或倍角形式。三角函数求最值时，常通过二倍角公式把多个函数统一成同一种角度。它和半角公式相连，能在角度加倍与次数降低之间来回转换。选择哪种余弦形式要看题中保留正弦还是余弦。",
@@ -473,17 +473,17 @@
       "chinese_name": "正弦定理",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "在任意三角形中，它把边长与对应角的正弦值联系起来。",
-        "每条边除以对面角的 sin 值都相等。",
-        "共同值还等于外接圆直径。",
-        "常写成 a/sinA=b/sinB=c/sinC=2R。",
-        "英文名是 sine rule。"
+        "这是解三角形中的一个边角关系定理。",
+        "它适用于任意三角形，常用于已知两角一边、两边和非夹角等情形。",
+        "$\\frac a{\\sin A}=\\frac b{\\sin B}=\\frac c{\\sin C}=2R$。",
+        "每条边要对应自己的对面角；两边一对角时可能出现两个形状。",
+        "它的英文译名是 sine rule。"
       ],
       "fragmented_clues": [
-        "任意三角形 边 对角sin",
-        "边/sin对角 相等",
-        "外接圆直径",
-        "a/sinA=b/sinB=c/sinC=2R",
+        "解三角形 边角关系定理",
+        "任意三角形 两角一边 两边非夹角",
+        "$\\frac a{\\sin A}=\\frac b{\\sin B}=\\frac c{\\sin C}=2R$",
+        "边对自己的对面角 两边一对角 两形状",
         "sine rule"
       ],
       "explanation_markdown": "正弦定理适用于任意三角形，把边长和对角的正弦联系起来。若三角形边 $a,b,c$ 分别对角 $A,B,C$，则 $\\frac a{\\sin A}=\\frac b{\\sin B}=\\frac c{\\sin C}=2R$，其中 $R$ 是外接圆半径。\n\n这个定理说明同一个三角形中，边越长，对应角的正弦也越大。它常用于已知两角一边、两边和非夹角等情形。使用时要注意“边对角”的对应关系；在两边一对角问题中，可能出现两个不同三角形，需要结合角度范围判断。正弦定理适合处理已知角较多的三角形，因为角的正弦直接和对边成比例。若已知两边和其中一边的对角，可能出现一解、两解或无解，需要结合三角形内角和与边长大小判断。外接圆半径也能由同一比例求出。",
@@ -509,17 +509,17 @@
       "chinese_name": "余弦定理",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "在任意三角形中，它把三边和一个夹角联系起来。",
-        "已知两边及中间角可求第三边。",
-        "它可看作勾股定理在一般三角形中的推广。",
-        "常写成 c^2=a^2+b^2-2ab cosC。",
-        "英文名是 cosine rule。"
+        "这是解三角形中的一个边角关系定理。",
+        "它适合处理两边及夹角或已知三边求角的情形。",
+        "$c^2=a^2+b^2-2ab\\cos C$。",
+        "当 $C=90^\\circ$ 时会退化为勾股关系，也能用来判断锐钝直角类型。",
+        "它的英文译名是 cosine rule。"
       ],
       "fragmented_clues": [
-        "任意三角形 三边 夹角",
-        "两边夹角 求第三边",
-        "勾股定理 推广",
-        "c^2=a^2+b^2-2abcosC",
+        "解三角形 边角关系定理",
+        "两边及夹角 三边求角",
+        "$c^2=a^2+b^2-2ab\\cos C$",
+        "$C=90^\\circ$ 退化勾股 判断锐钝直角",
         "cosine rule"
       ],
       "explanation_markdown": "余弦定理适用于任意三角形，把三边和一个夹角联系起来。若边 $c$ 对角 $C$，则 $c^2=a^2+b^2-2ab\\cos C$，其中 $a,b$ 是夹角 $C$ 的两边，$c$ 是对边。\n\n当 $C=90^\\circ$ 时，$\\cos C=0$，公式就变成勾股定理 $c^2=a^2+b^2$。余弦定理常用于已知两边及夹角求第三边，或已知三边求角。它比正弦定理更适合处理夹角信息，也能判断三角形是锐角、直角还是钝角。当已知三边时，也可由它反求某个角的余弦，再确定角的大小。余弦定理适合处理夹角或三边信息，因为它把夹角余弦直接放进边长平方关系。若已知三边，可变形为 $\\cos C=\\frac{a^2+b^2-c^2}{2ab}$。算出余弦后，还要根据三角形角的范围确定角的大小。边角对应关系写错会直接导致公式套反。",
@@ -545,17 +545,17 @@
       "chinese_name": "解三角形",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "这类题要求由已知边角信息求出其余边和角。",
-        "常见条件有两角一边、两边一角或三边。",
-        "正弦定理、余弦定理和面积公式会配合使用。",
-        "作答时要注意是否存在两个可能形状。",
-        "英文名是 solving triangles。"
+        "这是三角形问题中的一种求解任务。",
+        "它由已知边角信息求其余边和角，常结合内角和、正弦定理、余弦定理和面积关系。",
+        "$A+B+C=\\pi$，且 $\\frac a{\\sin A}=\\frac b{\\sin B}=\\frac c{\\sin C}$。",
+        "已知两边和其中一边对角时，可能无解、一个解或两个不同形状。",
+        "它的英文译名是 solving triangles。"
       ],
       "fragmented_clues": [
-        "已知边角 求其余",
-        "两角一边 两边一角 三边",
-        "正弦定理 余弦定理 面积",
-        "两种可能形状",
+        "三角形问题 求解任务",
+        "已知边角 求其余 内角和 正弦定理 余弦定理",
+        "$A+B+C=\\pi$ $\\frac a{\\sin A}=\\frac b{\\sin B}=\\frac c{\\sin C}$",
+        "两边一对角 无解 一解 两形状",
         "solving triangles"
       ],
       "explanation_markdown": "解三角形是根据已知的边角信息，求出三角形其余边和角。常用关系包括 $A+B+C=\\pi$，以及正弦定理 $\\frac a{\\sin A}=\\frac b{\\sin B}=\\frac c{\\sin C}$，其中 $A,B,C$ 是角，$a,b,c$ 是对边。\n\n已知两角一边通常先求第三角，再用正弦定理；已知两边夹角或三边时，常用余弦定理。解三角形要注意是否存在、是否唯一，特别是已知两边和其中一边对角时，可能有两个形状。最后答案应同时给出边长和角度的合理范围。解三角形时，已知条件必须足够确定形状。三角形内角和提供一个角度关系，正弦定理和余弦定理提供边角关系，面积公式有时也能补充信息。若出现两解，要把两种可能的边角都写出，不能只保留图上看起来的一种。",
@@ -581,17 +581,17 @@
       "chinese_name": "向量",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "它同时记录大小和方向。",
-        "几何中可用有向线段表示，代数中可用坐标表示。",
-        "加法、减法、数乘和数量积是高中常用运算。",
-        "判断共线或垂直时常看坐标倍数或点积。",
-        "英文名是 vector。"
+        "这是几何中的一种有方向的量。",
+        "它可表示位移、速度、力和有向线段，并通过坐标运算处理平行、垂直、夹角和投影。",
+        "若 $\\mathbf a=(x,y)$，则 $|\\mathbf a|=\\sqrt{x^2+y^2}$。",
+        "它同时记录大小和方向，平移不改变所表示的自由对象。",
+        "它的英文译名是 vector。"
       ],
       "fragmented_clues": [
-        "大小 方向",
-        "有向线段 坐标",
-        "加法 减法 数乘 数量积",
-        "共线 垂直 坐标倍数 点积",
+        "几何 有方向的量",
+        "位移 速度 力 有向线段 坐标运算",
+        "$\\mathbf a=(x,y)$ $|\\mathbf a|=\\sqrt{x^2+y^2}$",
+        "大小 方向 平移不变 自由对象",
         "vector"
       ],
       "explanation_markdown": "向量是同时具有大小和方向的量，几何上常用有向线段表示。若向量 $\\mathbf a=(x,y)$，它的长度为 $|\\mathbf a|=\\sqrt{x^2+y^2}$，其中 $x,y$ 是向量在两个坐标方向上的分量。\n\n向量的起点可以平移，大小和方向不变就表示同一个自由向量。高中常研究向量加法、减法、数乘和数量积，用它们处理平行、垂直、夹角和投影。向量不同于普通线段，线段只强调两个端点和长度，而向量还强调从哪里指向哪里。向量可以表示位移、速度、力，也可以表示几何中的有向线段。相同向量允许平移到不同位置，因此它关注方向和长度，而不固定起点。用坐标表示后，向量运算就能逐分量进行，把几何问题转成代数问题。",
@@ -617,17 +617,17 @@
       "chinese_name": "平面向量",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "它是在二维坐标平面内研究的有方向量。",
-        "常写成 (x,y)，也可用基底分解。",
-        "高中题常把几何关系转化为坐标运算。",
-        "两个不共线基底可表示平面内任意对象。",
-        "英文名是 plane vector。"
+        "这是向量几何中的一种二维对象。",
+        "它常用于平面几何证明、坐标运算、中点、共线和线段比例。",
+        "若 $\\mathbf a=(x,y)$，则可分解为 $\\mathbf a=x\\mathbf i+y\\mathbf j$。",
+        "只有两个独立方向，两个不共线基底即可表示该平面内所有对象。",
+        "它的英文译名是 plane vector。"
       ],
       "fragmented_clues": [
-        "二维平面 有方向量",
-        "(x,y) 基底分解",
-        "几何关系 坐标运算",
-        "不共线基底 任意表示",
+        "向量几何 二维对象",
+        "平面几何 坐标运算 中点 共线 比例",
+        "$\\mathbf a=(x,y)$ $\\mathbf a=x\\mathbf i+y\\mathbf j$",
+        "两个独立方向 不共线基底 表示所有对象",
         "plane vector"
       ],
       "explanation_markdown": "平面向量是在二维平面中研究的向量，既可以画成有向线段，也可以用坐标表示。若 $\\mathbf a=(x,y)$，则 $x,y$ 分别表示它在两个坐标轴方向上的分量。\n\n平面向量可用基底分解：$\\mathbf a=x\\mathbf i+y\\mathbf j$，其中 $\\mathbf i,\\mathbf j$ 是沿 $x$ 轴、$y$ 轴正方向的单位向量。它把几何关系转化为代数运算，例如共线看坐标是否成比例，垂直看数量积是否为零。很多平面几何证明可因此变得更直接。平面向量只有两个独立方向，因此两个不共线基底就足以表示所有平面向量。点的坐标差可以形成向量，例如 $\\overrightarrow{AB}$ 由 $B$ 的坐标减去 $A$ 的坐标得到。它常用于证明平行、求中点和表示线段比例。",
@@ -653,17 +653,17 @@
       "chinese_name": "零向量",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "它的长度为 0，方向不作规定。",
-        "在加法中，它不改变另一个有方向量。",
-        "坐标形式通常写成 (0,0)。",
-        "它与任何有方向量相加后仍得到原对象。",
-        "英文名是 zero vector。"
+        "这是向量运算中的一种特殊对象。",
+        "它常出现在加法单位元、相反对象相加、数乘和特殊判定条件中。",
+        "记作 $\\mathbf0$，坐标为 $(0,0)$，且 $|\\mathbf0|=0$。",
+        "它长度为 $0$，方向不作规定，因此夹角和同向讨论通常要排除它。",
+        "它的英文译名是 zero vector。"
       ],
       "fragmented_clues": [
-        "长度0 方向不规定",
-        "加法 不改变",
-        "(0,0)",
-        "相加 原对象",
+        "向量运算 特殊对象",
+        "加法单位元 相反相加 数乘 判定条件",
+        "$\\mathbf0$ $(0,0)$ $|\\mathbf0|=0$",
+        "长度$0$ 方向不规定 夹角同向需排除",
         "zero vector"
       ],
       "explanation_markdown": "零向量是长度为 $0$ 的向量，通常记作 $\\mathbf0$，坐标形式为 $(0,0)$。它满足 $|\\mathbf0|=0$，其中 $|\\cdot|$ 表示向量长度。\n\n零向量在加法中不改变其他向量，$\\mathbf a+\\mathbf0=\\mathbf a$。它的方向不作规定，因此讨论“与零向量同向”或“夹角”时要格外小心。零向量可以与任何向量相加，也可由 $\\mathbf a-\\mathbf a$ 得到，是向量运算中的特殊但重要对象。零向量可以看作起点和终点重合的有向线段。它在数乘中也很特殊，任何实数乘零向量仍是零向量，而零乘任何向量也得到零向量。判断共线或垂直时若涉及零向量，要先看条件是否排除了非零条件。因此许多定理会特别声明所讨论向量必须非零。",
@@ -689,17 +689,17 @@
       "chinese_name": "单位向量",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "它的长度等于 1。",
-        "常用来只表示方向而不改变大小尺度。",
-        "把非零有方向量除以自身长度可得到同向的这种对象。",
-        "坐标中常用 i、j 表示两条坐标轴正方向上的标准对象。",
-        "英文名是 unit vector。"
+        "这是向量几何中的一种标准化对象。",
+        "它常用于提取方向、建立坐标轴基底、表示投影和分解。",
+        "非零 $\\mathbf a$ 的同向对象可写成 $\\frac{\\mathbf a}{|\\mathbf a|}$。",
+        "它长度等于 $1$，保留方向；取负号可得到反方向的同类对象。",
+        "它的英文译名是 unit vector。"
       ],
       "fragmented_clues": [
-        "长度1",
-        "表示方向 不改尺度",
-        "非零对象/模长",
-        "i j 坐标轴正方向",
+        "向量几何 标准化对象",
+        "提取方向 坐标轴基底 投影 分解",
+        "$\\frac{\\mathbf a}{|\\mathbf a|}$ $\\mathbf a\\ne\\mathbf0$",
+        "长度$1$ 保留方向 负号反方向",
         "unit vector"
       ],
       "explanation_markdown": "单位向量是长度等于 $1$ 的向量，常用来表示方向而不改变尺度。若 $\\mathbf a$ 是非零向量，则同向单位向量为 $\\frac{\\mathbf a}{|\\mathbf a|}$，其中 $|\\mathbf a|$ 是 $\\mathbf a$ 的长度。\n\n单位向量保留方向，长度被标准化为 $1$。坐标轴正方向上的标准单位向量常记为 $\\mathbf i=(1,0)$、$\\mathbf j=(0,1)$。把一个向量写成长度乘单位向量，可以分清“走多远”和“朝哪里走”，在投影、分解和方向表示中很有用。单位向量把方向单独提取出来，常用于表示某个方向上的标准步长。一个非零向量除以自身长度后，方向不变但长度变为一。若要表示相反方向的单位向量，只需取负号。坐标轴单位向量还能作为平面向量的基底。",
@@ -725,17 +725,17 @@
       "chinese_name": "相等向量",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "两个有方向量若长度相同且方向相同，就属于这种关系。",
-        "它们的起点位置可以不同。",
-        "坐标表示时，对应坐标分别相等。",
-        "平移不改变这一关系。",
-        "英文名是 equal vectors。"
+        "这是向量几何中的一种等同关系。",
+        "它与有向线段的位置无关，常用于平移、坐标比较和向量等式。",
+        "若 $\\mathbf a=(x_1,y_1)$、$\\mathbf b=(x_2,y_2)$，则 $\\mathbf a=\\mathbf b\\Leftrightarrow x_1=x_2,\\ y_1=y_2$。",
+        "两者长度相同、方向相同，可平移重合但不能旋转或缩放。",
+        "它的英文译名是 equal vectors。"
       ],
       "fragmented_clues": [
-        "长度相同 方向相同",
-        "起点可不同",
-        "坐标分别相等",
-        "平移不变",
+        "向量几何 等同关系",
+        "位置无关 平移 坐标比较 向量等式",
+        "$\\mathbf a=\\mathbf b\\Leftrightarrow x_1=x_2,\\ y_1=y_2$",
+        "长度相同 方向相同 可平移重合",
         "equal vectors"
       ],
       "explanation_markdown": "相等向量是大小相等且方向相同的向量，与它们画在平面中的起点位置无关。若 $\\mathbf a=(x_1,y_1)$，$\\mathbf b=(x_2,y_2)$，则 $\\mathbf a=\\mathbf b$ 等价于 $x_1=x_2$ 且 $y_1=y_2$。\n\n相等向量可以通过平移重合，但不能旋转或改变长度。几何图中两条有向线段即使位置不同，只要方向和长度一致，就表示同一向量。这个概念使向量能脱离固定起点参与运算，也让平行四边形法则和坐标加法保持一致。相等向量不要求起点相同，这一点和有向线段的位置不同。若把一个向量平移到另一个位置，只要箭头方向和长度保持不变，它仍表示原向量。坐标相等是最直接的判定方法，也常用于由向量等式推出点坐标关系。",
@@ -761,17 +761,17 @@
       "chinese_name": "相反向量",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "两个有方向量若长度相同而方向相反，就属于这种关系。",
-        "它们相加会得到长度为 0 的对象。",
-        "坐标表示时，对应坐标互为相反数。",
-        "若一个写作 a，另一个常写作 -a。",
-        "英文名是 opposite vectors。"
+        "这是向量几何中的一种对应关系。",
+        "它常用于减法、反向位移、中点对称和坐标取相反数。",
+        "若 $\\mathbf a=(x,y)$，则 $-\\mathbf a=(-x,-y)$，且 $\\mathbf a+(-\\mathbf a)=\\mathbf0$。",
+        "两者长度相等、方向完全相反，如 $\\overrightarrow{AB}$ 与 $\\overrightarrow{BA}$。",
+        "它的英文译名是 opposite vectors。"
       ],
       "fragmented_clues": [
-        "长度相同 方向相反",
-        "相加 零",
-        "坐标 相反数",
-        "a -a",
+        "向量几何 对应关系",
+        "减法 反向位移 中点对称 坐标相反数",
+        "$-\\mathbf a=(-x,-y)$ $\\mathbf a+(-\\mathbf a)=\\mathbf0$",
+        "长度相等 方向相反 $\\overrightarrow{AB}$ $\\overrightarrow{BA}$",
         "opposite vectors"
       ],
       "explanation_markdown": "相反向量是长度相等、方向相反的两个向量。若一个向量为 $\\mathbf a=(x,y)$，它的相反向量为 $-\\mathbf a=(-x,-y)$，其中两个分量都变为相反数。\n\n相反向量相加得到零向量，即 $\\mathbf a+(-\\mathbf a)=\\mathbf0$。在几何上，它们可以看成同一条方向线上的反向箭头。向量减法 $\\mathbf a-\\mathbf b$ 本质上就是加上 $\\mathbf b$ 的相反向量，因此理解相反向量有助于看懂位移差和终点指向关系。相反向量和原向量在同一直线方向上，但箭头完全反向。几何中，$\\overrightarrow{AB}$ 与 $\\overrightarrow{BA}$ 就是一对相反向量。它们长度相等、和为零，这使减法、位移反向和中点对称等问题都能用同一规则处理。它们的坐标互为相反数，模长却完全相同。",
@@ -797,17 +797,17 @@
       "chinese_name": "共线向量",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "若两个有方向量所在方向相同或相反，就有这种关系。",
-        "坐标判断常看是否存在实数 λ 使 a=λb。",
-        "在几何题中，它常用于证明三点在同一直线上。",
-        "二维坐标中也可用 x1y2-x2y1=0 判断。",
-        "英文名是 collinear vectors。"
+        "这是向量几何中的一种位置关系。",
+        "它常用于判断平行方向、三点同线、坐标比例和夹角为零或平角。",
+        "若存在实数 $\\lambda$ 使 $\\mathbf a=\\lambda\\mathbf b$，则两者满足这种关系。",
+        "方向可相同也可相反，长度不必相等；涉及零向量时要单独检查条件。",
+        "它的英文译名是 collinear vectors。"
       ],
       "fragmented_clues": [
-        "方向相同或相反",
-        "a=λb",
-        "三点同线",
-        "x1y2-x2y1=0",
+        "向量几何 位置关系",
+        "平行方向 三点同线 坐标比例 夹角零或平角",
+        "$\\mathbf a=\\lambda\\mathbf b$ $\\lambda\\in\\mathbb R$",
+        "同向或反向 长度不必相等 零向量单查",
         "collinear vectors"
       ],
       "explanation_markdown": "共线向量是方向相同或相反的向量，也叫平行向量。若存在实数 $\\lambda$ 使 $\\mathbf a=\\lambda\\mathbf b$，则 $\\mathbf a$ 与 $\\mathbf b$ 共线，其中 $\\lambda$ 表示长度倍数和方向是否相反。\n\n在二维坐标中，若 $\\mathbf a=(x_1,y_1)$，$\\mathbf b=(x_2,y_2)$，可用 $x_1y_2-x_2y_1=0$ 判断共线。零向量与任意向量通常也视为共线，但它没有确定方向。几何题中，证明 $\\overrightarrow{AB}$ 与 $\\overrightarrow{AC}$ 共线，常可推出三点 $A,B,C$ 在同一直线上。共线向量只要求方向在同一条直线上，可以同向也可以反向，长度不必相等。若比例系数 $\\lambda>0$，方向相同；若 $\\lambda<0$，方向相反。证明三点共线时，常把两条以同一点为起点的向量写成倍数关系。若两个向量都非零，共线时它们的夹角只能是零或平角。坐标为零的特殊情况也要单独检查。",
@@ -833,17 +833,17 @@
       "chinese_name": "向量加法",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "这个运算把两个有方向量合成为一个结果。",
-        "几何上常用三角形法则或平行四边形法则。",
-        "坐标表示时，对应分量分别相加。",
-        "它满足交换律和结合律。",
-        "英文名是 vector addition。"
+        "这是向量运算中的一种合成运算。",
+        "它常用于合位移、合力、多边形路径、三角形法则和平行四边形法则。",
+        "若 $\\mathbf a=(x_1,y_1)$、$\\mathbf b=(x_2,y_2)$，则 $\\mathbf a+\\mathbf b=(x_1+x_2,y_1+y_2)$。",
+        "几何上先走一个再走另一个，结果等于从起点直接指向终点。",
+        "它的英文译名是 vector addition。"
       ],
       "fragmented_clues": [
-        "两个有方向量 合成",
-        "三角形法则 平行四边形法则",
-        "分量分别相加",
-        "交换律 结合律",
+        "向量运算 合成运算",
+        "合位移 合力 多边形路径 三角形法则 平行四边形法则",
+        "$\\mathbf a+\\mathbf b=(x_1+x_2,y_1+y_2)$",
+        "先走一个 再走另一个 起点直指终点",
         "vector addition"
       ],
       "explanation_markdown": "向量加法把两个向量首尾相接，得到从第一个起点指向第二个终点的合向量。若 $\\mathbf a=(x_1,y_1)$，$\\mathbf b=(x_2,y_2)$，则 $\\mathbf a+\\mathbf b=(x_1+x_2,y_1+y_2)$。\n\n几何上可用三角形法则或平行四边形法则理解：先走 $\\mathbf a$，再走 $\\mathbf b$，合起来等于一次走到终点。向量加法满足交换律和结合律，即 $\\mathbf a+\\mathbf b=\\mathbf b+\\mathbf a$。它常用于合位移、合力和把几何路径拆成几段。向量加法的结果表示连续两次位移的总效果，与先画成三角形还是平行四边形无关。坐标加法说明每个方向上的位移可以分别相加。多个向量相加时，可以调整顺序和括号，这让几何路径的合并更灵活。在多边形路径中，首尾相接的向量和等于起点到终点的向量。",
@@ -869,17 +869,17 @@
       "chinese_name": "向量减法",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "这个运算可看成加上另一个有方向量的反向对象。",
-        "几何上常把终点相同的两个对象转化为从减数终点指向被减数终点。",
-        "坐标表示时，对应分量分别相减。",
-        "a-b 常写成 a+(-b)。",
-        "英文名是 vector subtraction。"
+        "这是向量运算中的一种差运算。",
+        "它常用于相对位移、终点减起点、线段平行和中点坐标表达。",
+        "若 $\\mathbf a=(x_1,y_1)$、$\\mathbf b=(x_2,y_2)$，则 $\\mathbf a-\\mathbf b=(x_1-x_2,y_1-y_2)$。",
+        "它等于加上对方的反向对象；同起点作图时由减数终点指向被减数终点。",
+        "它的英文译名是 vector subtraction。"
       ],
       "fragmented_clues": [
-        "加上反向对象",
-        "终点相同 减数到被减数",
-        "分量分别相减",
-        "a-b=a+(-b)",
+        "向量运算 差运算",
+        "相对位移 终点减起点 平行 中点坐标",
+        "$\\mathbf a-\\mathbf b=(x_1-x_2,y_1-y_2)$",
+        "加反向对象 同起点 减数终点到被减数终点",
         "vector subtraction"
       ],
       "explanation_markdown": "向量减法可以看成加上另一个向量的相反向量。若 $\\mathbf a=(x_1,y_1)$，$\\mathbf b=(x_2,y_2)$，则 $\\mathbf a-\\mathbf b=(x_1-x_2,y_1-y_2)$，也就是 $\\mathbf a+(-\\mathbf b)$。\n\n几何上，当两个向量有相同起点时，$\\mathbf a-\\mathbf b$ 指向从 $\\mathbf b$ 的终点到 $\\mathbf a$ 的终点。这个方向常用于表示两点之间的位移，例如 $\\overrightarrow{AB}=\\mathbf b-\\mathbf a$，其中 $\\mathbf a,\\mathbf b$ 分别是点 $A,B$ 的位置向量。向量减法常用来表示从一个点指向另一个点的位移差。若两个位置向量分别为 $\\mathbf a$ 和 $\\mathbf b$，从 $A$ 到 $B$ 的向量是 $\\mathbf b-\\mathbf a$，方向由被减点指向结果点。画图时先统一起点会更容易看清方向。减法的方向最容易弄反，最好用坐标差或同起点图形确认。它在证明线段平行、求中点坐标和表示相对位置时很常用。写成终点减起点最稳妥。",
@@ -905,17 +905,17 @@
       "chinese_name": "平面向量基本定理",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "它说明平面内任意一个有方向量都能由两个不共线基底唯一表示。",
-        "两个基底提供了二维坐标化的参照。",
-        "若 e1、e2 不共线，则 a=λe1+μe2。",
-        "唯一性是求参数和证明共线的重要依据。",
-        "英文名是 fundamental theorem of plane vectors。"
+        "这是向量几何中的一个表示定理。",
+        "它用于选择两个独立方向作基底，把平面内任意对象坐标化。",
+        "若 $\\mathbf e_1,\\mathbf e_2$ 不共线，则任意 $\\mathbf a=\\lambda\\mathbf e_1+\\mu\\mathbf e_2$。",
+        "不共线保证能撑开整个平面，唯一性保证系数不会有两套取值。",
+        "它的英文译名是 fundamental theorem of plane vectors。"
       ],
       "fragmented_clues": [
-        "任意有方向量 两不共线基底 唯一表示",
-        "二维坐标化 参照",
-        "a=λe1+μe2",
-        "唯一性 参数 共线",
+        "向量几何 表示定理",
+        "两个独立方向 基底 平面对象坐标化",
+        "$\\mathbf a=\\lambda\\mathbf e_1+\\mu\\mathbf e_2$ $\\mathbf e_1,\\mathbf e_2$不共线",
+        "撑开平面 唯一性 系数不重复",
         "fundamental theorem of plane vectors"
       ],
       "explanation_markdown": "平面向量基本定理说明，平面内两个不共线向量可以作为基底，唯一表示任意平面向量。若 $\\mathbf e_1,\\mathbf e_2$ 不共线，则任意 $\\mathbf a$ 都可写成 $\\mathbf a=\\lambda\\mathbf e_1+\\mu\\mathbf e_2$，其中 $\\lambda,\\mu$ 是实数。\n\n“不共线”保证两个基底给出两个独立方向，“唯一”保证同一个向量不会有两套不同坐标。这个定理是平面向量坐标化的基础。解题中常通过比较 $\\lambda,\\mu$ 来求参数，也可用它证明共线、平行或把复杂几何关系拆成两个方向上的等式。基底一旦选定，系数 $\\lambda,\\mu$ 就像这个向量在新坐标系下的坐标。若表示不唯一，就会说明两个基底方向其实有重合，不能撑开整个平面。这个定理也是用向量方法处理平面几何的根基。",
@@ -941,17 +941,17 @@
       "chinese_name": "数量积",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "这个运算把两个有方向量转化为一个数。",
-        "几何定义等于两个长度乘以夹角余弦。",
-        "它为 0 时，非零对象互相垂直。",
-        "坐标中常写成 x1x2+y1y2。",
-        "英文名是 dot product。"
+        "这是向量运算中的一种乘积运算。",
+        "它常用于求夹角、投影、判断垂直和把几何条件转化为代数等式。",
+        "$\\mathbf a\\cdot\\mathbf b=|\\mathbf a||\\mathbf b|\\cos\\theta$，坐标中为 $x_1x_2+y_1y_2$。",
+        "结果是一个数而不是向量；非零对象的结果为 $0$ 时表示互相垂直。",
+        "它的英文译名是 dot product。"
       ],
       "fragmented_clues": [
-        "两个有方向量 一个数",
-        "|a||b|cosθ",
-        "结果0 非零垂直",
-        "x1x2+y1y2",
+        "向量运算 乘积运算",
+        "求夹角 投影 判断垂直 几何转代数",
+        "$\\mathbf a\\cdot\\mathbf b=|\\mathbf a||\\mathbf b|\\cos\\theta$ $x_1x_2+y_1y_2$",
+        "结果为数 非向量 非零且为$0$则垂直",
         "dot product"
       ],
       "explanation_markdown": "数量积把两个向量转化为一个数，反映它们长度和夹角的关系。定义为 $\\mathbf a\\cdot\\mathbf b=|\\mathbf a||\\mathbf b|\\cos\\theta$，其中 $\\theta$ 是两个非零向量的夹角。\n\n在坐标中，若 $\\mathbf a=(x_1,y_1)$，$\\mathbf b=(x_2,y_2)$，则 $\\mathbf a\\cdot\\mathbf b=x_1x_2+y_1y_2$。数量积为 $0$ 时，两个非零向量垂直；为正说明夹角小于 $90^\\circ$，为负说明夹角大于 $90^\\circ$。它常用于求夹角、投影和判断垂直。数量积不仅能判断垂直，还能计算一个向量在另一个方向上的投影长度。若夹角为锐角，数量积为正；若为钝角，数量积为负。坐标公式和几何公式相等，正好把代数计算与长度、夹角联系起来。它的结果是数量而不是向量，所以没有方向。利用它还可以把几何中的角度条件转化为代数等式。",
@@ -977,17 +977,17 @@
       "chinese_name": "夹角",
       "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
       "complete_clues": [
-        "它表示两个方向之间较小的转动量。",
-        "在向量问题中，取值通常从 0 到 π。",
-        "可由数量积公式 cosθ=(a·b)/(|a||b|) 求得。",
-        "垂直时这个量为 π/2。",
-        "英文名是 included angle。"
+        "这是向量几何中的一种方向度量。",
+        "它用于比较两个非零方向之间的较小转动量，并与数量积公式相连。",
+        "$\\cos\\theta=\\frac{\\mathbf a\\cdot\\mathbf b}{|\\mathbf a||\\mathbf b|}$，通常 $0\\le\\theta\\le\\pi$。",
+        "零向量没有确定方向，所以使用该公式前两个对象都应非零；垂直时 $\\theta=\\frac\\pi2$。",
+        "它的英文译名是 included angle。"
       ],
       "fragmented_clues": [
-        "两方向 较小转动量",
-        "0到π",
-        "cosθ=(a·b)/(|a||b|)",
-        "垂直 π/2",
+        "向量几何 方向度量",
+        "两个非零方向 较小转动量 数量积",
+        "$\\cos\\theta=\\frac{\\mathbf a\\cdot\\mathbf b}{|\\mathbf a||\\mathbf b|}$ $0\\le\\theta\\le\\pi$",
+        "零向量无方向 两对象非零 垂直$\\theta=\\frac\\pi2$",
         "included angle"
       ],
       "explanation_markdown": "夹角表示两个方向之间较小的转动量。对两个非零向量 $\\mathbf a,\\mathbf b$，夹角 $\\theta$ 通常取 $0\\le\\theta\\le\\pi$，并满足 $\\cos\\theta=\\frac{\\mathbf a\\cdot\\mathbf b}{|\\mathbf a||\\mathbf b|}$。\n\n公式中 $\\mathbf a\\cdot\\mathbf b$ 是数量积，$|\\mathbf a|,|\\mathbf b|$ 是两个向量的长度。若 $\\theta=0$，方向相同；若 $\\theta=\\pi$，方向相反；若 $\\theta=\\frac\\pi2$，两个向量垂直。夹角只对非零向量定义，因为零向量没有确定方向。向量夹角取较小的那个角，所以不会超过 $\\pi$。计算时若得到余弦值，要结合反余弦或特殊角确定 $\\theta$。当一个向量为零向量时，方向不存在，夹角也不定义；条件使用夹角公式前通常默认两个向量非零。若只关心两条直线的夹角，还要把方向相反的向量视为同一条直线方向来处理。公式中的分母不能为零。",
@@ -1006,6 +1006,1086 @@
           "label": "Wikipedia",
           "title": "included angle",
           "url": "https://en.wikipedia.org/w/index.php?search=included%20angle"
+        }
+      ]
+    },
+    {
+      "chinese_name": "终边",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个三角函数方向的角的边。",
+        "它与任意角、象限、单位圆有关，并常连接决定角在坐标系中的方向。",
+        "可用 $\\theta=\\alpha+2k\\pi$ 表示相关关系。",
+        "同一射线可对应无数个相差整周的角。",
+        "它的英文译名是 terminal side。"
+      ],
+      "fragmented_clues": [
+        "三角函数 角的边",
+        "任意角 象限 单位圆",
+        "$\\theta=\\alpha+2k\\pi$",
+        "结束射线 相差整周",
+        "terminal side"
+      ],
+      "explanation_markdown": "终边是角旋转结束后所在的射线。它在任意角、象限角和单位圆定义中常见，关注决定角在坐标系中的方向。常见表达是 $\\theta=\\alpha+2k\\pi$，其中 \\theta,\\alpha 可有相同终边，k 是整数。\n\n理解终边时要抓住同一射线可对应无数个相差整周的角。它和始边不同，一个是结束位置，一个是起始位置。判断角所在象限时，主要看这条射线落在哪里。围绕终边作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。终边的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。把终边放回具体公式或图形中，含义会比单独背名称清楚得多。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "终边",
+          "url": "https://www.baidu.com/s?wd=%E7%BB%88%E8%BE%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "终边",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%BB%88%E8%BE%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "terminal side",
+          "url": "https://en.wikipedia.org/w/index.php?search=terminal%20side"
+        }
+      ]
+    },
+    {
+      "chinese_name": "始边",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个三角函数方向的角的边。",
+        "它与任意角、坐标系、有向角有关，并常连接常约定为 x 轴正半轴。",
+        "可用 $\\theta:\\ r_0\\to r_1$ 表示相关关系。",
+        "起始方向固定后，角的大小和正负才有明确意义。",
+        "它的英文译名是 initial side。"
+      ],
+      "fragmented_clues": [
+        "三角函数 角的边",
+        "任意角 坐标系 有向角",
+        "$\\theta:\\ r_0\\to r_1$",
+        "起始方向 常取x轴正半轴",
+        "initial side"
+      ],
+      "explanation_markdown": "始边是角旋转开始时所在的射线。它在平面直角坐标系中的任意角表示中常见，关注常约定为 x 轴正半轴。常见表达是 $\\theta:\\ r_0\\to r_1$，其中 r_0 表示起始射线，r_1 表示结束射线。\n\n理解始边时要抓住起始方向固定后，角的大小和正负才有明确意义。它和终边合起来才确定一个有向角。统一从同一方向开始，能把不同角放在同一坐标系比较。围绕始边作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。始边的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。把始边放回具体公式或图形中，含义会比单独背名称清楚得多。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "始边",
+          "url": "https://www.baidu.com/s?wd=%E5%A7%8B%E8%BE%B9%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "始边",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%A7%8B%E8%BE%B9"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "initial side",
+          "url": "https://en.wikipedia.org/w/index.php?search=initial%20side"
+        }
+      ]
+    },
+    {
+      "chinese_name": "象限角",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个三角函数方向的角的类型。",
+        "它与三角函数符号、诱导公式、单位圆有关，并常连接由终边位置确定所属象限。",
+        "可用 $0<\\theta<\\frac{\\pi}{2}$ 表示相关关系。",
+        "不包括终边在坐标轴上的角。",
+        "它的英文译名是 quadrant angle。"
+      ],
+      "fragmented_clues": [
+        "三角函数 角的类型",
+        "三角函数符号 诱导公式 单位圆",
+        "$0<\\theta<\\frac{\\pi}{2}$",
+        "终边在象限内 不在坐标轴",
+        "quadrant angle"
+      ],
+      "explanation_markdown": "象限角是终边落在某一象限内的角。它在三角函数符号、诱导公式和单位圆中常见，关注由终边位置确定所属象限。常见表达是 $0<\\theta<\\frac{\\pi}{2}$，其中 \\theta 在此范围内时终边位于第一象限。\n\n理解象限角时要抓住不包括终边在坐标轴上的角。它和轴线角的区别在于终边是否落在坐标轴上。确定象限后，正弦、余弦和正切的符号也随之确定。围绕象限角作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。象限角的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。把象限角放回具体公式或图形中，含义会比单独背名称清楚得多。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "象限角",
+          "url": "https://www.baidu.com/s?wd=%E8%B1%A1%E9%99%90%E8%A7%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "象限角",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E8%B1%A1%E9%99%90%E8%A7%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "quadrant angle",
+          "url": "https://en.wikipedia.org/w/index.php?search=quadrant%20angle"
+        }
+      ]
+    },
+    {
+      "chinese_name": "同终边角",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个三角函数方向的角的关系。",
+        "它与任意角、周期性、求值有关，并常连接彼此相差整周角。",
+        "可用 $\\beta=\\alpha+2k\\pi,\\ k\\in\\mathbb Z$ 表示相关关系。",
+        "它们的三角函数值相同，但表示的旋转圈数不同。",
+        "它的英文译名是 coterminal angle。"
+      ],
+      "fragmented_clues": [
+        "三角函数 角的关系",
+        "任意角 周期性 求值",
+        "$\\beta=\\alpha+2k\\pi,\\ k\\in\\mathbb Z$",
+        "相差整周 方向相同",
+        "coterminal angle"
+      ],
+      "explanation_markdown": "同终边角是终边相同而角度数可能不同的一组角。它在任意角表示、周期性和三角函数求值中常见，关注彼此相差整周角。常见表达是 $\\beta=\\alpha+2k\\pi,\\ k\\in\\mathbb Z$，其中 \\alpha,\\beta 共享终边，k 表示整周数。\n\n理解同终边角时要抓住它们的三角函数值相同，但表示的旋转圈数不同。它不是角相等，而是方向相同。把大角化到标准范围时，常利用这一关系。围绕同终边角作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。同终边角的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。把同终边角放回具体公式或图形中，含义会比单独背名称清楚得多。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "同终边角",
+          "url": "https://www.baidu.com/s?wd=%E5%90%8C%E7%BB%88%E8%BE%B9%E8%A7%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "同终边角",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%8C%E7%BB%88%E8%BE%B9%E8%A7%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "coterminal angle",
+          "url": "https://en.wikipedia.org/w/index.php?search=coterminal%20angle"
+        }
+      ]
+    },
+    {
+      "chinese_name": "弧长公式",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个三角函数方向的计算公式。",
+        "它与弧度制、圆周运动、扇形有关，并常连接把半径和圆心角联系起来。",
+        "可用 $l=r\\theta$ 表示相关关系。",
+        "角必须用弧度表示，不能直接代入度数。",
+        "它的英文译名是 arc length formula。"
+      ],
+      "fragmented_clues": [
+        "三角函数 计算公式",
+        "弧度制 圆周运动 扇形",
+        "$l=r\\theta$",
+        "角用弧度 长度与半径成正比",
+        "arc length formula"
+      ],
+      "explanation_markdown": "弧长公式是计算圆弧长度的公式。它在弧度制、圆周运动和扇形问题中常见，关注把半径和圆心角联系起来。常见表达是 $l=r\\theta$，其中 l 是弧长，r 是半径，\\theta 是弧度制圆心角。\n\n理解弧长公式时要抓住角必须用弧度表示，不能直接代入度数。它和扇形面积公式都依赖同一个圆心角。掌握弧度制后，圆上长度与角度之间的关系变得很简洁。围绕弧长公式作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。弧长公式的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "弧长公式",
+          "url": "https://www.baidu.com/s?wd=%E5%BC%A7%E9%95%BF%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "弧长公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%BC%A7%E9%95%BF%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "arc length formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=arc%20length%20formula"
+        }
+      ]
+    },
+    {
+      "chinese_name": "扇形面积公式",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个三角函数与几何方向的计算公式。",
+        "它与圆心角、半径、弧长有关，并常连接面积与半径平方和角度成正比。",
+        "可用 $S=\\frac12 r^2\\theta$ 表示相关关系。",
+        "角用弧度时形式最简单，也可写成弧长的一半乘半径。",
+        "它的英文译名是 sector area formula。"
+      ],
+      "fragmented_clues": [
+        "三角函数与几何 计算公式",
+        "圆心角 半径 弧长",
+        "$S=\\frac12 r^2\\theta$",
+        "面积与半径平方成正比",
+        "sector area formula"
+      ],
+      "explanation_markdown": "扇形面积公式是计算圆中扇形面积的公式。它在圆心角、半径和弧长综合中常见，关注面积与半径平方和角度成正比。常见表达是 $S=\\frac12 r^2\\theta$，其中 S 是面积，r 是半径，\\theta 是弧度制圆心角。\n\n理解扇形面积公式时要抓住角用弧度时形式最简单，也可写成弧长的一半乘半径。它和弧长公式不同，结果是面积而不是长度。遇到由两条半径和一段弧围成的图形时，常用它计算大小。围绕扇形面积公式作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。扇形面积公式的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "扇形面积公式",
+          "url": "https://www.baidu.com/s?wd=%E6%89%87%E5%BD%A2%E9%9D%A2%E7%A7%AF%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "扇形面积公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%89%87%E5%BD%A2%E9%9D%A2%E7%A7%AF%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "sector area formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=sector%20area%20formula"
+        }
+      ]
+    },
+    {
+      "chinese_name": "正弦曲线",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个三角函数方向的函数图像。",
+        "它与图像、周期性、波动有关，并常连接随角度变化在 -1 和 1 之间摆动。",
+        "可用 $y=\\sin x$ 表示相关关系。",
+        "图像经过原点，并以 2π 为一个周期重复。",
+        "它的英文译名是 sine curve。"
+      ],
+      "fragmented_clues": [
+        "三角函数 函数图像",
+        "图像 周期性 波动",
+        "$y=\\sin x$",
+        "过原点 周期2π",
+        "sine curve"
+      ],
+      "explanation_markdown": "正弦曲线是正弦函数在坐标系中的周期图像。它在三角函数图像、周期性和波动模型中常见，关注随角度变化在 -1 和 1 之间摆动。常见表达是 $y=\\sin x$，其中 x 是角的弧度值，y 是对应函数值。\n\n理解正弦曲线时要抓住图像经过原点，并以 2π 为一个周期重复。它和余弦图像形状相同但相位位置不同。画基本三角函数图像时，这条曲线是最常用的参照。围绕正弦曲线作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。正弦曲线的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正弦曲线",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E5%BC%A6%E6%9B%B2%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正弦曲线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E5%BC%A6%E6%9B%B2%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "sine curve",
+          "url": "https://en.wikipedia.org/w/index.php?search=sine%20curve"
+        }
+      ]
+    },
+    {
+      "chinese_name": "余弦曲线",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个三角函数方向的函数图像。",
+        "它与图像、相位平移、波动有关，并常连接随角度变化在 -1 和 1 之间摆动。",
+        "可用 $y=\\cos x$ 表示相关关系。",
+        "图像在 x=0 处取最大值 1，并以 2π 为周期。",
+        "它的英文译名是 cosine curve。"
+      ],
+      "fragmented_clues": [
+        "三角函数 函数图像",
+        "图像 相位平移 波动",
+        "$y=\\cos x$",
+        "x=0处取1 周期2π",
+        "cosine curve"
+      ],
+      "explanation_markdown": "余弦曲线是余弦函数在坐标系中的周期图像。它在三角函数图像、相位平移和波动模型中常见，关注随角度变化在 -1 和 1 之间摆动。常见表达是 $y=\\cos x$，其中 x 是角的弧度值，y 是对应函数值。\n\n理解余弦曲线时要抓住图像在 x=0 处取最大值 1，并以 2π 为周期。它可看作正弦图像平移得到。比较三角函数图像时，起点值常帮助区分它和正弦图像。围绕余弦曲线作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。余弦曲线的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "余弦曲线",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%99%E5%BC%A6%E6%9B%B2%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "余弦曲线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%99%E5%BC%A6%E6%9B%B2%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "cosine curve",
+          "url": "https://en.wikipedia.org/w/index.php?search=cosine%20curve"
+        }
+      ]
+    },
+    {
+      "chinese_name": "正切曲线",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个三角函数方向的函数图像。",
+        "它与图像、渐近线、周期性有关，并常连接由正弦与余弦之比决定。",
+        "可用 $y=\\tan x=\\frac{\\sin x}{\\cos x}$ 表示相关关系。",
+        "图像有竖直渐近线，周期为 π。",
+        "它的英文译名是 tangent curve。"
+      ],
+      "fragmented_clues": [
+        "三角函数 函数图像",
+        "图像 渐近线 周期性",
+        "$y=\\tan x=\\frac{\\sin x}{\\cos x}$",
+        "竖直渐近线 周期π",
+        "tangent curve"
+      ],
+      "explanation_markdown": "正切曲线是正切函数在坐标系中的周期图像。它在三角函数图像、渐近线和周期性中常见，关注由正弦与余弦之比决定。常见表达是 $y=\\tan x=\\frac{\\sin x}{\\cos x}$，其中 x 是角，\\cos x 不能为 0。\n\n理解正切曲线时要抓住图像有竖直渐近线，周期为 π。它不像正弦和余弦那样有最大最小值。看到分母为零的位置，就能确定它不能取值的点。围绕正切曲线作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。正切曲线的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。把正切曲线放回具体公式或图形中，含义会比单独背名称清楚得多。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正切曲线",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E5%88%87%E6%9B%B2%E7%BA%BF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正切曲线",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E5%88%87%E6%9B%B2%E7%BA%BF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "tangent curve",
+          "url": "https://en.wikipedia.org/w/index.php?search=tangent%20curve"
+        }
+      ]
+    },
+    {
+      "chinese_name": "周期",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个三角函数方向的重复长度。",
+        "它与三角函数、循环、波动有关，并常连接平移一个固定量后函数值保持不变。",
+        "可用 $f(x+T)=f(x)$ 表示相关关系。",
+        "最小正值才称为基本重复长度。",
+        "它的英文译名是 period。"
+      ],
+      "fragmented_clues": [
+        "三角函数 重复长度",
+        "三角函数 循环 波动",
+        "$f(x+T)=f(x)$",
+        "平移固定量 函数值不变",
+        "period"
+      ],
+      "explanation_markdown": "周期是函数图像或数值规律重复一次所需的最小正长度。它在三角函数、数列循环和波动模型中常见，关注平移一个固定量后函数值保持不变。常见表达是 $f(x+T)=f(x)$，其中 T 是周期，x 是任意允许输入。\n\n理解周期时要抓住最小正值才称为基本重复长度。它和频率互有关联，但一个看长度，一个看重复快慢。识别重复结构后，可以把大范围问题化到一个基本范围内。围绕周期作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。周期的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "周期",
+          "url": "https://www.baidu.com/s?wd=%E5%91%A8%E6%9C%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "周期",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%91%A8%E6%9C%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "period",
+          "url": "https://en.wikipedia.org/w/index.php?search=period"
+        }
+      ]
+    },
+    {
+      "chinese_name": "最小正周期",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个三角函数方向的周期量。",
+        "它与函数图像、波动模型、基本周期有关，并常连接它排除 0 和更大的重复长度。",
+        "可用 $T_{\\min}=\\frac{2\\pi}{|\\omega|}$ 表示相关关系。",
+        "只选正周期中最小的一个，避免把整数倍周期当成基本周期。",
+        "它的英文译名是 least positive period。"
+      ],
+      "fragmented_clues": [
+        "三角函数 周期量",
+        "函数图像 波动模型 基本周期",
+        "$T_{\\min}=\\frac{2\\pi}{|\\omega|}$",
+        "正周期中最小",
+        "least positive period"
+      ],
+      "explanation_markdown": "最小正周期是能使函数重复的最小正数周期。它在三角函数图像、波动模型和函数性质中常见，关注它排除 0 和更大的重复长度。常见表达是 $T_{\\min}=\\frac{2\\pi}{|\\omega|}$，其中 \\omega 是正弦型函数中 x 的系数，T_{\\min} 是最小正周期。\n\n理解最小正周期时要抓住只选正周期中最小的一个，避免把整数倍周期当成基本周期。它比普通周期更精确。确定基本图像长度时，常先求这个量。围绕最小正周期作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。最小正周期的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "最小正周期",
+          "url": "https://www.baidu.com/s?wd=%E6%9C%80%E5%B0%8F%E6%AD%A3%E5%91%A8%E6%9C%9F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "最小正周期",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%9C%80%E5%B0%8F%E6%AD%A3%E5%91%A8%E6%9C%9F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "least positive period",
+          "url": "https://en.wikipedia.org/w/index.php?search=least%20positive%20period"
+        }
+      ]
+    },
+    {
+      "chinese_name": "振幅",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个三角函数方向的图像参数。",
+        "它与正弦型函数、波动图像、上下摆动有关，并常连接控制图像上下摆动的高度。",
+        "可用 $y=A\\sin(\\omega x+\\varphi)$ 表示相关关系。",
+        "它取非负值，反映离中心线的距离而不是最高函数值本身。",
+        "它的英文译名是 amplitude。"
+      ],
+      "fragmented_clues": [
+        "三角函数 图像参数",
+        "正弦型函数 波动图像 上下摆动",
+        "$y=A\\sin(\\omega x+\\varphi)$",
+        "非负 距离中心线",
+        "amplitude"
+      ],
+      "explanation_markdown": "振幅是周期函数偏离中心线的最大距离。它在正弦型函数、波动图像和实际周期变化中常见，关注控制图像上下摆动的高度。常见表达是 $y=A\\sin(\\omega x+\\varphi)$，其中 |A| 表示振幅，\\omega 影响周期，\\varphi 影响相位。\n\n理解振幅时要抓住它取非负值，反映离中心线的距离而不是最高函数值本身。它和周期不同，一个看高度，一个看横向重复长度。比较两条波动图像时，竖直伸缩最直接体现在这个参数上。围绕振幅作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。振幅的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "振幅",
+          "url": "https://www.baidu.com/s?wd=%E6%8C%AF%E5%B9%85%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "振幅",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%8C%AF%E5%B9%85"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "amplitude",
+          "url": "https://en.wikipedia.org/w/index.php?search=amplitude"
+        }
+      ]
+    },
+    {
+      "chinese_name": "相位",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个三角函数方向的图像参数。",
+        "它与图像平移、波动比较、起始状态有关，并常连接决定同一周期内的起始状态。",
+        "可用 $\\omega x+\\varphi$ 表示相关关系。",
+        "改变它会让图像沿水平方向移动。",
+        "它的英文译名是 phase。"
+      ],
+      "fragmented_clues": [
+        "三角函数 图像参数",
+        "图像平移 波动比较 起始状态",
+        "$\\omega x+\\varphi$",
+        "控制水平位置 不控高度",
+        "phase"
+      ],
+      "explanation_markdown": "相位是描述周期运动所处进程位置的量。它在正弦型函数、图像平移和波动比较中常见，关注决定同一周期内的起始状态。常见表达是 $\\omega x+\\varphi$，其中 \\omega x+\\varphi 是相位，\\varphi 是初相。\n\n理解相位时要抓住改变它会让图像沿水平方向移动。它和振幅不同，不控制上下高度。比较两个周期函数是否同步时，这个量很关键。围绕相位作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。相位的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。把相位放回具体公式或图形中，含义会比单独背名称清楚得多。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "相位",
+          "url": "https://www.baidu.com/s?wd=%E7%9B%B8%E4%BD%8D%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "相位",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%9B%B8%E4%BD%8D"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "phase",
+          "url": "https://en.wikipedia.org/w/index.php?search=phase"
+        }
+      ]
+    },
+    {
+      "chinese_name": "初相",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个三角函数方向的图像参数。",
+        "它与图像平移、初始状态、正弦型有关，并常连接出现在三角函数自变量的加减项中。",
+        "可用 $y=A\\sin(\\omega x+\\varphi)$ 表示相关关系。",
+        "它决定 x=0 时图像处在周期中的哪个位置。",
+        "它的英文译名是 initial phase。"
+      ],
+      "fragmented_clues": [
+        "三角函数 图像参数",
+        "图像平移 初始状态 正弦型",
+        "$y=A\\sin(\\omega x+\\varphi)$",
+        "决定x=0位置",
+        "initial phase"
+      ],
+      "explanation_markdown": "初相是周期函数在起始位置带有的相位常数。它在正弦型函数、图像平移和初始状态中常见，关注出现在三角函数自变量的加减项中。常见表达是 $y=A\\sin(\\omega x+\\varphi)$，其中 \\varphi 表示初相，A 表示振幅。\n\n理解初相时要抓住它决定 x=0 时图像处在周期中的哪个位置。它不是周期，也不是振幅。同样形状的波动图像，起点不同往往由这个参数造成。围绕初相作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。初相的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。把初相放回具体公式或图形中，含义会比单独背名称清楚得多。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "初相",
+          "url": "https://www.baidu.com/s?wd=%E5%88%9D%E7%9B%B8%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "初相",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%88%9D%E7%9B%B8"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "initial phase",
+          "url": "https://en.wikipedia.org/w/index.php?search=initial%20phase"
+        }
+      ]
+    },
+    {
+      "chinese_name": "三角恒等式",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个三角函数方向的恒等关系。",
+        "它与化简、证明、函数变形有关，并常连接把不同三角函数表达联系起来。",
+        "可用 $\\sin^2x+\\cos^2x=1$ 表示相关关系。",
+        "只要两边有定义，等式不依赖某个特殊角。",
+        "它的英文译名是 trigonometric identity。"
+      ],
+      "fragmented_clues": [
+        "三角函数 恒等关系",
+        "化简 证明 函数变形",
+        "$\\sin^2x+\\cos^2x=1$",
+        "允许角度内恒成立",
+        "trigonometric identity"
+      ],
+      "explanation_markdown": "三角恒等式是对允许角度恒成立的三角函数等式。它在化简、证明和函数变形中常见，关注把不同三角函数表达联系起来。常见表达是 $\\sin^2x+\\cos^2x=1$，其中 x 是角，平方表示函数值再平方。\n\n理解三角恒等式时要抓住只要两边有定义，等式不依赖某个特殊角。它和只在个别角成立的方程不同。熟悉基本恒等关系后，复杂式子可逐步化为简单形式。围绕三角恒等式作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。三角恒等式的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "三角恒等式",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "三角恒等式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "trigonometric identity",
+          "url": "https://en.wikipedia.org/w/index.php?search=trigonometric%20identity"
+        }
+      ]
+    },
+    {
+      "chinese_name": "和差化积",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个三角函数方向的变形公式。",
+        "它与化简、求值、因式分解有关，并常连接常把两个角的组合改写成半和半差。",
+        "可用 $\\sin A+\\sin B=2\\sin\\frac{A+B}{2}\\cos\\frac{A-B}{2}$ 表示相关关系。",
+        "形式上把加减结构变成乘法结构。",
+        "它的英文译名是 sum to product formula。"
+      ],
+      "fragmented_clues": [
+        "三角函数 变形公式",
+        "化简 求值 因式分解",
+        "$\\sin A+\\sin B=2\\sin\\frac{A+B}{2}\\cos\\frac{A-B}{2}$",
+        "加减结构变乘法结构",
+        "sum to product formula"
+      ],
+      "explanation_markdown": "和差化积是把三角函数的和或差化成乘积的公式。它在三角式化简、求值和因式分解中常见，关注常把两个角的组合改写成半和半差。常见表达是 $\\sin A+\\sin B=2\\sin\\frac{A+B}{2}\\cos\\frac{A-B}{2}$，其中 A,B 是角，右边出现半和与半差。\n\n理解和差化积时要抓住形式上把加减结构变成乘法结构。它和积化和差的方向相反。当式子里有两个三角函数相加减时，可考虑这种变形。围绕和差化积作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。和差化积的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "和差化积",
+          "url": "https://www.baidu.com/s?wd=%E5%92%8C%E5%B7%AE%E5%8C%96%E7%A7%AF%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "和差化积",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%92%8C%E5%B7%AE%E5%8C%96%E7%A7%AF"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "sum to product formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=sum%20to%20product%20formula"
+        }
+      ]
+    },
+    {
+      "chinese_name": "积化和差",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个三角函数方向的变形公式。",
+        "它与化简、求值、角和角差有关，并常连接常把两个角的乘积拆成角和与角差。",
+        "可用 $\\sin A\\cos B=\\frac12[\\sin(A+B)+\\sin(A-B)]$ 表示相关关系。",
+        "形式上把乘法结构变成加减结构。",
+        "它的英文译名是 product to sum formula。"
+      ],
+      "fragmented_clues": [
+        "三角函数 变形公式",
+        "化简 求值 角和角差",
+        "$\\sin A\\cos B=\\frac12[\\sin(A+B)+\\sin(A-B)]$",
+        "乘法结构变加减结构",
+        "product to sum formula"
+      ],
+      "explanation_markdown": "积化和差是把三角函数乘积化成和或差的公式。它在三角式化简、积分前准备和求值中常见，关注常把两个角的乘积拆成角和与角差。常见表达是 $\\sin A\\cos B=\\frac12[\\sin(A+B)+\\sin(A-B)]$，其中 A,B 是角，右边含角和与角差。\n\n理解积化和差时要抓住形式上把乘法结构变成加减结构。它和和差化积的变形方向相反。乘积不容易处理时，拆成和差往往更方便。围绕积化和差作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。积化和差的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。把积化和差放回具体公式或图形中，含义会比单独背名称清楚得多。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "积化和差",
+          "url": "https://www.baidu.com/s?wd=%E7%A7%AF%E5%8C%96%E5%92%8C%E5%B7%AE%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "积化和差",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E7%A7%AF%E5%8C%96%E5%92%8C%E5%B7%AE"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "product to sum formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=product%20to%20sum%20formula"
+        }
+      ]
+    },
+    {
+      "chinese_name": "半角公式",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个三角函数方向的变形公式。",
+        "它与求值、化简、角度变换有关，并常连接把角的一半转化为原角表达。",
+        "可用 $\\sin^2\\frac x2=\\frac{1-\\cos x}{2}$ 表示相关关系。",
+        "平方形式常先给出，符号还要由半角所在范围确定。",
+        "它的英文译名是 half angle formula。"
+      ],
+      "fragmented_clues": [
+        "三角函数 变形公式",
+        "求值 化简 角度变换",
+        "$\\sin^2\\frac x2=\\frac{1-\\cos x}{2}$",
+        "半角 原角 符号看范围",
+        "half angle formula"
+      ],
+      "explanation_markdown": "半角公式是把半角三角函数同原角余弦联系的公式。它在三角函数求值、化简和角度变换中常见，关注把角的一半转化为原角表达。常见表达是 $\\sin^2\\frac x2=\\frac{1-\\cos x}{2}$，其中 x 是原角，x/2 是半角。\n\n理解半角公式时要抓住平方形式常先给出，符号还要由半角所在范围确定。它和二倍角公式可以互相转化。遇到角度折半时，这类关系能把陌生角转回熟悉角。围绕半角公式作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。半角公式的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "半角公式",
+          "url": "https://www.baidu.com/s?wd=%E5%8D%8A%E8%A7%92%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "半角公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%8D%8A%E8%A7%92%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "half angle formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=half%20angle%20formula"
+        }
+      ]
+    },
+    {
+      "chinese_name": "万能公式",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个三角函数方向的变形公式。",
+        "它与方程求解、有理化、半角正切有关，并常连接把正弦余弦转成同一个参数。",
+        "可用 $\\sin x=\\frac{2t}{1+t^2},\\ t=\\tan\\frac x2$ 表示相关关系。",
+        "能把部分三角问题化为代数分式问题。",
+        "它的英文译名是 universal formula。"
+      ],
+      "fragmented_clues": [
+        "三角函数 变形公式",
+        "方程求解 有理化 半角正切",
+        "$\\sin x=\\frac{2t}{1+t^2},\\ t=\\tan\\frac x2$",
+        "统一参数 转代数分式",
+        "universal formula"
+      ],
+      "explanation_markdown": "万能公式是用半角正切统一表示三角函数的公式组。它在三角式化简、方程求解和有理化变形中常见，关注把正弦余弦转成同一个参数。常见表达是 $\\sin x=\\frac{2t}{1+t^2},\\ t=\\tan\\frac x2$，其中 t 是半角正切，x 是原角。\n\n理解万能公式时要抓住能把部分三角问题化为代数分式问题。它比基本恒等式更技巧化，不是入门求值的首选。复杂三角方程需要统一变量时，常会见到这种表达。围绕万能公式作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。万能公式的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "万能公式",
+          "url": "https://www.baidu.com/s?wd=%E4%B8%87%E8%83%BD%E5%85%AC%E5%BC%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "万能公式",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%B8%87%E8%83%BD%E5%85%AC%E5%BC%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "universal formula",
+          "url": "https://en.wikipedia.org/w/index.php?search=universal%20formula"
+        }
+      ]
+    },
+    {
+      "chinese_name": "正弦型函数",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个三角函数方向的函数类型。",
+        "它与周期图像、波动模型、参数识别有关，并常连接由振幅、周期和相位等参数控制。",
+        "可用 $y=A\\sin(\\omega x+\\varphi)+b$ 表示相关关系。",
+        "图像仍呈周期性波动，但位置和大小可改变。",
+        "它的英文译名是 sinusoidal function。"
+      ],
+      "fragmented_clues": [
+        "三角函数 函数类型",
+        "周期图像 波动模型 参数识别",
+        "$y=A\\sin(\\omega x+\\varphi)+b$",
+        "伸缩 平移 中心线",
+        "sinusoidal function"
+      ],
+      "explanation_markdown": "正弦型函数是由正弦函数经过伸缩和平移得到的函数。它在周期图像、波动模型和参数识别中常见，关注由振幅、周期和相位等参数控制。常见表达是 $y=A\\sin(\\omega x+\\varphi)+b$，其中 A 控制振幅，\\omega 控制周期，\\varphi 控制平移，b 控制中心线。\n\n理解正弦型函数时要抓住图像仍呈周期性波动，但位置和大小可改变。它不是只限于最基本的 y=sin x。读懂各参数后，就能快速画出大致图像。围绕正弦型函数作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。正弦型函数的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "正弦型函数",
+          "url": "https://www.baidu.com/s?wd=%E6%AD%A3%E5%BC%A6%E5%9E%8B%E5%87%BD%E6%95%B0%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "正弦型函数",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%AD%A3%E5%BC%A6%E5%9E%8B%E5%87%BD%E6%95%B0"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "sinusoidal function",
+          "url": "https://en.wikipedia.org/w/index.php?search=sinusoidal%20function"
+        }
+      ]
+    },
+    {
+      "chinese_name": "向量坐标",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个平面向量方向的表示方法。",
+        "它与向量运算、点坐标、解析几何有关，并常连接把几何箭头转化为代数计算。",
+        "可用 $\\vec a=(x,y)$ 表示相关关系。",
+        "相同坐标的向量相等，与起点放在哪里无关。",
+        "它的英文译名是 vector coordinates。"
+      ],
+      "fragmented_clues": [
+        "平面向量 表示方法",
+        "向量运算 点坐标 解析几何",
+        "$\\vec a=(x,y)$",
+        "分量表示 与起点无关",
+        "vector coordinates"
+      ],
+      "explanation_markdown": "向量坐标是用有序数对表示向量在坐标轴方向上的分量。它在平面向量运算、点坐标和解析几何中常见，关注把几何箭头转化为代数计算。常见表达是 $\\vec a=(x,y)$，其中 x,y 分别表示水平和竖直方向的分量。\n\n理解向量坐标时要抓住相同坐标的向量相等，与起点放在哪里无关。它和点坐标外形相似，但含义是方向和长度。进行加减和数量积计算时，这种表示最直接。围绕向量坐标作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。向量坐标的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "向量坐标",
+          "url": "https://www.baidu.com/s?wd=%E5%90%91%E9%87%8F%E5%9D%90%E6%A0%87%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "向量坐标",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%91%E9%87%8F%E5%9D%90%E6%A0%87"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vector coordinates",
+          "url": "https://en.wikipedia.org/w/index.php?search=vector%20coordinates"
+        }
+      ]
+    },
+    {
+      "chinese_name": "位置向量",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个平面向量方向的向量类型。",
+        "它与点坐标、向量表示、解析几何有关，并常连接用向量方式记录点的位置。",
+        "可用 $\\overrightarrow{OP}=(x,y)$ 表示相关关系。",
+        "起点固定在原点，因此坐标和终点坐标一致。",
+        "它的英文译名是 position vector。"
+      ],
+      "fragmented_clues": [
+        "平面向量 向量类型",
+        "点坐标 向量表示 解析几何",
+        "$\\overrightarrow{OP}=(x,y)$",
+        "起点固定原点",
+        "position vector"
+      ],
+      "explanation_markdown": "位置向量是从原点指向某一点的向量。它在点坐标、向量表示和解析几何中常见，关注用向量方式记录点的位置。常见表达是 $\\overrightarrow{OP}=(x,y)$，其中 O 是原点，P 是点，(x,y) 是对应坐标。\n\n理解位置向量时要抓住起点固定在原点，因此坐标和终点坐标一致。它和任意向量不同，起点有固定约定。把点看成从原点出发的箭头后，几何位置可用向量运算处理。围绕位置向量作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。位置向量的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "位置向量",
+          "url": "https://www.baidu.com/s?wd=%E4%BD%8D%E7%BD%AE%E5%90%91%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "位置向量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E4%BD%8D%E7%BD%AE%E5%90%91%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "position vector",
+          "url": "https://en.wikipedia.org/w/index.php?search=position%20vector"
+        }
+      ]
+    },
+    {
+      "chinese_name": "向量模",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个平面向量方向的数量特征。",
+        "它与距离、单位向量、数量积有关，并常连接由坐标分量可按勾股关系求出。",
+        "可用 $|\\vec a|=\\sqrt{x^2+y^2}$ 表示相关关系。",
+        "只反映长度，不反映方向。",
+        "它的英文译名是 vector magnitude。"
+      ],
+      "fragmented_clues": [
+        "平面向量 数量特征",
+        "距离 单位向量 数量积",
+        "$|\\vec a|=\\sqrt{x^2+y^2}$",
+        "非负 只反映长度",
+        "vector magnitude"
+      ],
+      "explanation_markdown": "向量模是表示向量长度的非负数。它在距离计算、单位向量和数量积中常见，关注由坐标分量可按勾股关系求出。常见表达是 $|\\vec a|=\\sqrt{x^2+y^2}$，其中 \\vec a=(x,y)，|\\vec a| 表示长度。\n\n理解向量模时要抓住只反映长度，不反映方向。它和向量本身不同，结果是一个数。比较箭头长短或构造单位向量时，常先计算这个量。围绕向量模作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。向量模的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。把向量模放回具体公式或图形中，含义会比单独背名称清楚得多。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "向量模",
+          "url": "https://www.baidu.com/s?wd=%E5%90%91%E9%87%8F%E6%A8%A1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "向量模",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%91%E9%87%8F%E6%A8%A1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vector magnitude",
+          "url": "https://en.wikipedia.org/w/index.php?search=vector%20magnitude"
+        }
+      ]
+    },
+    {
+      "chinese_name": "数乘向量",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个平面向量方向的运算名词。",
+        "它与伸缩、方向改变、线性运算有关，并常连接每个坐标分量同时乘同一个数。",
+        "可用 $\\lambda\\vec a=(\\lambda x,\\lambda y)$ 表示相关关系。",
+        "正数保持方向，负数反向，绝对值改变长度。",
+        "它的英文译名是 scalar multiplication of vector。"
+      ],
+      "fragmented_clues": [
+        "平面向量 运算名词",
+        "伸缩 方向改变 线性运算",
+        "$\\lambda\\vec a=(\\lambda x,\\lambda y)$",
+        "结果仍是向量",
+        "scalar multiplication of vector"
+      ],
+      "explanation_markdown": "数乘向量是用一个数乘向量得到新向量的运算。它在向量伸缩、方向改变和线性运算中常见，关注每个坐标分量同时乘同一个数。常见表达是 $\\lambda\\vec a=(\\lambda x,\\lambda y)$，其中 \\lambda 是实数，\\vec a=(x,y)。\n\n理解数乘向量时要抓住正数保持方向，负数反向，绝对值改变长度。它和数量积不同，结果仍是向量。理解伸缩和反向后，向量共线关系也更容易判断。围绕数乘向量作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。数乘向量的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。把数乘向量放回具体公式或图形中，含义会比单独背名称清楚得多。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "数乘向量",
+          "url": "https://www.baidu.com/s?wd=%E6%95%B0%E4%B9%98%E5%90%91%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "数乘向量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E6%95%B0%E4%B9%98%E5%90%91%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "scalar multiplication of vector",
+          "url": "https://en.wikipedia.org/w/index.php?search=scalar%20multiplication%20of%20vector"
+        }
+      ]
+    },
+    {
+      "chinese_name": "平行向量",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个平面向量方向的关系类型。",
+        "它与共线、几何证明、坐标运算有关，并常连接一个向量可表示为另一个的数乘。",
+        "可用 $\\vec a=\\lambda\\vec b$ 表示相关关系。",
+        "只看方向是否共线，不要求长度相同。",
+        "它的英文译名是 parallel vectors。"
+      ],
+      "fragmented_clues": [
+        "平面向量 关系类型",
+        "共线 几何证明 坐标运算",
+        "$\\vec a=\\lambda\\vec b$",
+        "方向相同或相反 长度可不同",
+        "parallel vectors"
+      ],
+      "explanation_markdown": "平行向量是方向相同或相反的非零向量关系。它在共线判断、几何证明和坐标运算中常见，关注一个向量可表示为另一个的数乘。常见表达是 $\\vec a=\\lambda\\vec b$，其中 \\lambda 是实数，\\vec b\\ne\\vec0。\n\n理解平行向量时要抓住只看方向是否共线，不要求长度相同。它和相等向量不同，相等还要求方向和长度都一致。坐标成比例时，常能说明两个方向落在同一直线上。围绕平行向量作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。平行向量的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "平行向量",
+          "url": "https://www.baidu.com/s?wd=%E5%B9%B3%E8%A1%8C%E5%90%91%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "平行向量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%B9%B3%E8%A1%8C%E5%90%91%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "parallel vectors",
+          "url": "https://en.wikipedia.org/w/index.php?search=parallel%20vectors"
+        }
+      ]
+    },
+    {
+      "chinese_name": "垂直向量",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个平面向量方向的关系类型。",
+        "它与数量积、直线垂直、几何证明有关，并常连接可用数量积为零判定。",
+        "可用 $\\vec a\\cdot\\vec b=0$ 表示相关关系。",
+        "方向成 90° 时成立，与向量放置位置无关。",
+        "它的英文译名是 perpendicular vectors。"
+      ],
+      "fragmented_clues": [
+        "平面向量 关系类型",
+        "数量积 直线垂直 几何证明",
+        "$\\vec a\\cdot\\vec b=0$",
+        "夹角90度 数量积为0",
+        "perpendicular vectors"
+      ],
+      "explanation_markdown": "垂直向量是夹角为直角的两个向量关系。它在数量积、直线垂直和几何证明中常见，关注可用数量积为零判定。常见表达是 $\\vec a\\cdot\\vec b=0$，其中 \\vec a,\\vec b 是非零向量，\\cdot 表示数量积。\n\n理解垂直向量时要抓住方向成 90° 时成立，与向量放置位置无关。它和长度相等没有必然关系。把几何垂直转成代数等式，是向量方法的重要优势。围绕垂直向量作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。垂直向量的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。把垂直向量放回具体公式或图形中，含义会比单独背名称清楚得多。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "垂直向量",
+          "url": "https://www.baidu.com/s?wd=%E5%9E%82%E7%9B%B4%E5%90%91%E9%87%8F%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "垂直向量",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%9E%82%E7%9B%B4%E5%90%91%E9%87%8F"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "perpendicular vectors",
+          "url": "https://en.wikipedia.org/w/index.php?search=perpendicular%20vectors"
+        }
+      ]
+    },
+    {
+      "chinese_name": "向量投影",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个平面向量方向的数量或向量成分。",
+        "它与数量积、分解、几何计算有关，并常连接由夹角余弦控制大小。",
+        "可用 $\\operatorname{proj}_{\\vec b}\\vec a=\\frac{\\vec a\\cdot\\vec b}{|\\vec b|}$ 表示相关关系。",
+        "结果可带正负，表示同向或反向成分。",
+        "它的英文译名是 vector projection。"
+      ],
+      "fragmented_clues": [
+        "平面向量 数量或向量成分",
+        "数量积 分解 几何计算",
+        "$\\operatorname{proj}_{\\vec b}\\vec a=\\frac{\\vec a\\cdot\\vec b}{|\\vec b|}$",
+        "带正负 某方向成分",
+        "vector projection"
+      ],
+      "explanation_markdown": "向量投影是一个向量在另一个方向上的影子长度或分量。它在数量积、力的分解和几何计算中常见，关注由夹角余弦控制大小。常见表达是 $\\operatorname{proj}_{\\vec b}\\vec a=\\frac{\\vec a\\cdot\\vec b}{|\\vec b|}$，其中 \\vec a\\cdot\\vec b 是数量积，|\\vec b| 是方向向量长度。\n\n理解向量投影时要抓住结果可带正负，表示同向或反向成分。它不是原向量的全部，只是某一方向上的部分。分解向量或比较沿某方向的效果时，这个概念很有用。围绕向量投影作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。向量投影的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "向量投影",
+          "url": "https://www.baidu.com/s?wd=%E5%90%91%E9%87%8F%E6%8A%95%E5%BD%B1%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "向量投影",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%91%E9%87%8F%E6%8A%95%E5%BD%B1"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vector projection",
+          "url": "https://en.wikipedia.org/w/index.php?search=vector%20projection"
+        }
+      ]
+    },
+    {
+      "chinese_name": "向量夹角",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个平面向量方向的角度关系。",
+        "它与数量积、垂直、几何度量有关，并常连接通常取 0 到 π 之间的角。",
+        "可用 $\\cos\\theta=\\frac{\\vec a\\cdot\\vec b}{|\\vec a||\\vec b|}$ 表示相关关系。",
+        "只由方向决定，平移向量不改变它。",
+        "它的英文译名是 angle between vectors。"
+      ],
+      "fragmented_clues": [
+        "平面向量 角度关系",
+        "数量积 垂直 几何度量",
+        "$\\cos\\theta=\\frac{\\vec a\\cdot\\vec b}{|\\vec a||\\vec b|}$",
+        "取0到π 平移不变",
+        "angle between vectors"
+      ],
+      "explanation_markdown": "向量夹角是两个非零向量方向之间的角。它在数量积、垂直判定和几何度量中常见，关注通常取 0 到 π 之间的角。常见表达是 $\\cos\\theta=\\frac{\\vec a\\cdot\\vec b}{|\\vec a||\\vec b|}$，其中 \\theta 是夹角，|\\vec a|,|\\vec b| 是两个长度。\n\n理解向量夹角时要抓住只由方向决定，平移向量不改变它。它和两条射线的普通角类似，但对象是向量。通过数量积求角，是高中向量计算的核心方法之一。围绕向量夹角作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。向量夹角的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。把向量夹角放回具体公式或图形中，含义会比单独背名称清楚得多。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "向量夹角",
+          "url": "https://www.baidu.com/s?wd=%E5%90%91%E9%87%8F%E5%A4%B9%E8%A7%92%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "向量夹角",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%91%E9%87%8F%E5%A4%B9%E8%A7%92"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "angle between vectors",
+          "url": "https://en.wikipedia.org/w/index.php?search=angle%20between%20vectors"
+        }
+      ]
+    },
+    {
+      "chinese_name": "向量线性运算",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个平面向量方向的运算统称。",
+        "它与表示、坐标计算、几何证明有关，并常连接按分量或几何规则完成组合。",
+        "可用 $\\lambda\\vec a+\\mu\\vec b$ 表示相关关系。",
+        "结果仍是向量，且保留方向与长度信息。",
+        "它的英文译名是 vector linear operation。"
+      ],
+      "fragmented_clues": [
+        "平面向量 运算统称",
+        "表示 坐标计算 几何证明",
+        "$\\lambda\\vec a+\\mu\\vec b$",
+        "加减数乘 结果仍是向量",
+        "vector linear operation"
+      ],
+      "explanation_markdown": "向量线性运算是向量加法、减法和数乘的组合运算。它在平面向量表示、坐标计算和几何证明中常见，关注按分量或几何规则完成组合。常见表达是 $\\lambda\\vec a+\\mu\\vec b$，其中 \\lambda,\\mu 是实数，\\vec a,\\vec b 是向量。\n\n理解向量线性运算时要抓住结果仍是向量，且保留方向与长度信息。它不包括数量积，因为数量积的结果是数。用少量基本向量表示复杂箭头时，常依靠这类运算。围绕向量线性运算作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。向量线性运算的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "向量线性运算",
+          "url": "https://www.baidu.com/s?wd=%E5%90%91%E9%87%8F%E7%BA%BF%E6%80%A7%E8%BF%90%E7%AE%97%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "向量线性运算",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%91%E9%87%8F%E7%BA%BF%E6%80%A7%E8%BF%90%E7%AE%97"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "vector linear operation",
+          "url": "https://en.wikipedia.org/w/index.php?search=vector%20linear%20operation"
+        }
+      ]
+    },
+    {
+      "chinese_name": "同角三角函数关系",
+      "source_file": "words/数学/入门模式：高中数学/high_school_trigonometry_vectors_terms.csv",
+      "complete_clues": [
+        "这是一个三角函数方向的恒等关系。",
+        "它与化简、求值、证明有关，并常连接把一个函数值转化为另一个函数值。",
+        "可用 $\\sin^2x+\\cos^2x=1,\\ \\tan x=\\frac{\\sin x}{\\cos x}$ 表示相关关系。",
+        "角必须相同，不能把不同角的函数值随意代入。",
+        "它的英文译名是 fundamental trigonometric identity。"
+      ],
+      "fragmented_clues": [
+        "三角函数 恒等关系",
+        "化简 求值 证明",
+        "$\\sin^2x+\\cos^2x=1,\\ \\tan x=\\frac{\\sin x}{\\cos x}$",
+        "同一个角 函数值互转",
+        "fundamental trigonometric identity"
+      ],
+      "explanation_markdown": "同角三角函数关系是同一个角的正弦、余弦、正切之间的基本关系。它在三角函数化简、求值和证明中常见，关注把一个函数值转化为另一个函数值。常见表达是 $\\sin^2x+\\cos^2x=1,\\ \\tan x=\\frac{\\sin x}{\\cos x}$，其中 x 是同一个角，\\cos x\\ne0 时正切有意义。\n\n理解同角三角函数关系时要抓住角必须相同，不能把不同角的函数值随意代入。它和两角和差公式处理的对象不同。已知一个三角函数值时，常借它求另外两个。围绕同角三角函数关系作辨认，可以同时核对对象、范围和符号角色，避免把相关但不同的概念当成同一个。同角三角函数关系的名称看起来简单，但它连接了教材中反复出现的语言和计算规则。",
+      "source_links": [
+        {
+          "label": "百度百科",
+          "title": "同角三角函数关系",
+          "url": "https://www.baidu.com/s?wd=%E5%90%8C%E8%A7%92%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E5%85%B3%E7%B3%BB%20%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91"
+        },
+        {
+          "label": "维基百科",
+          "title": "同角三角函数关系",
+          "url": "https://zh.wikipedia.org/w/index.php?search=%E5%90%8C%E8%A7%92%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E5%85%B3%E7%B3%BB"
+        },
+        {
+          "label": "Wikipedia",
+          "title": "fundamental trigonometric identity",
+          "url": "https://en.wikipedia.org/w/index.php?search=fundamental%20trigonometric%20identity"
         }
       ]
     }

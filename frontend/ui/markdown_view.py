@@ -424,6 +424,7 @@ SUBSCRIPT_MAP = str.maketrans({
     "+": "₊", "-": "₋", "=": "₌", "(": "₍", ")": "₎",
     "a": "ₐ", "e": "ₑ", "h": "ₕ", "i": "ᵢ", "j": "ⱼ", "k": "ₖ", "l": "ₗ", "m": "ₘ", "n": "ₙ", "o": "ₒ",
     "p": "ₚ", "r": "ᵣ", "s": "ₛ", "t": "ₜ", "u": "ᵤ", "v": "ᵥ", "x": "ₓ",
+    "α": "ₐ", "β": "ᵦ", "γ": "ᵧ", "ρ": "ᵨ", "φ": "ᵩ", "χ": "ᵪ",
 })
 
 
@@ -441,12 +442,26 @@ def _render_latex_math(expr):
 def _render_loose_latex_text(text):
     text = str(text or "")
     if "\\" not in text:
-        return text
+        return _replace_loose_math_scripts(text)
     rendered = _replace_common_latex(text)
     rendered = re.sub(r"\\([A-Za-z]+)", r"\1", rendered)
     rendered = _replace_scripts(rendered)
     rendered = rendered.replace("{", "").replace("}", "")
-    return _normalize_math_spacing(rendered)
+    return _normalize_math_spacing(_replace_loose_math_scripts(rendered))
+
+
+_LOOSE_SCRIPT_TOKEN_RE = re.compile(
+    r"(?<![A-Za-z0-9_Α-ω])([A-Za-zΑ-ω]{1,2}|[Α-ω])((?:[_^](?:\{[^{}\s]+\}|[A-Za-z0-9Α-ω]+))+)"
+)
+
+
+def _replace_loose_math_scripts(text):
+    def replace(match):
+        base = match.group(1)
+        scripts = match.group(2)
+        return base + _replace_scripts(scripts)
+
+    return _LOOSE_SCRIPT_TOKEN_RE.sub(replace, str(text or ""))
 
 
 def _replace_common_latex(text):

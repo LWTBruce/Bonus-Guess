@@ -49,6 +49,7 @@ class NavigationHomeMixin:
     def show_crossword_loading_screen(self, difficulty, is_crossword_rank=False, size=None, max_words=None):
         if not self.transitions_enabled():
             return
+        self.play_music(self.rank_music_track() if is_crossword_rank else "crossword")
         self.clear(transition=False)
         self._start_backdrop("wind")
         self.update_idletasks()
@@ -198,6 +199,7 @@ class NavigationHomeMixin:
         self.transition_job = self.after(22, lambda: self._draw_page_transition(token, step + 1))
 
     def show_home(self):
+        self.play_music("home")
         self.clear()
         self._start_backdrop("grid")
 
@@ -205,7 +207,7 @@ class NavigationHomeMixin:
         center.place(relx=0.5, rely=0.48, anchor="center")
 
         self.draw_home_title(center).pack(pady=(0, 36))
-        home_summary = summarize_records(load_record_entries())
+        home_summary = load_record_summary()
         self._profile_badge(home_summary)
 
         if self.is_spectating():
@@ -236,7 +238,8 @@ class NavigationHomeMixin:
             HoverButton(link_row, "退出旁观", self.exit_spectator_mode, width=156, height=56, accent="#ff9b89").grid(row=0, column=3, padx=8)
         else:
             HoverButton(link_row, "游戏机制", self.show_game_mechanics, width=156, height=56, accent="#7fd9c6").grid(row=0, column=2, padx=8)
-            HoverButton(link_row, "设置", self.show_settings, width=156, height=56, accent="#f6a6ff").grid(row=0, column=3, padx=8)
+            HoverButton(link_row, "漏洞反馈", self.show_feedback_dialog, width=156, height=56, accent="#ffcf8f").grid(row=0, column=3, padx=8)
+            HoverButton(link_row, "设置", self.show_settings, width=156, height=56, accent="#f6a6ff").grid(row=0, column=4, padx=8)
         tk.Label(
             self.container,
             text="F11 全屏 / Esc 退出全屏",
@@ -265,6 +268,64 @@ class NavigationHomeMixin:
                 "第一步：从主页进入",
                 "这里是正式主页。先点击高光的“开始游戏”，教程会带你进入一局物理入门题。",
             )
+
+    def show_feedback_dialog(self):
+        if self.is_spectating():
+            messagebox.showinfo("旁观模式", "旁观模式只能查看数据，不能提交反馈。")
+            return
+        if not self.current_account:
+            self.show_login()
+            return
+        popup = tk.Toplevel(self)
+        popup.title("漏洞反馈")
+        popup.configure(bg="#111725")
+        popup.geometry("700x560")
+        popup.minsize(600, 480)
+        popup.transient(self)
+        popup.grab_set()
+        panel = tk.Frame(popup, bg="#182033", highlightbackground="#3b4560", highlightthickness=1)
+        panel.pack(fill="both", expand=True, padx=18, pady=18)
+        tk.Label(panel, text="漏洞反馈", fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 24, "bold")).pack(anchor="w", padx=24, pady=(20, 6))
+        tk.Label(
+            panel,
+            text="把你遇到的问题、卡顿、排版异常，或者希望改进的地方写在这里。提交后会进入管理员后台文件，只有管理员能查看和处理。",
+            fg="#c8d2ee",
+            bg="#182033",
+            wraplength=630,
+            justify="left",
+            font=("Microsoft YaHei UI", 11, "bold"),
+        ).pack(anchor="w", padx=24, pady=(0, 14))
+        row = tk.Frame(panel, bg="#182033")
+        row.pack(side="bottom", anchor="w", fill="x", padx=24, pady=(0, 22))
+        text_box = tk.Text(
+            panel,
+            height=12,
+            wrap="word",
+            fg="#fff8dc",
+            bg="#101827",
+            insertbackground="#fff8dc",
+            relief="flat",
+            font=("Microsoft YaHei UI", 12, "bold"),
+        )
+        text_box.configure(highlightthickness=1, highlightbackground="#30384e", highlightcolor="#8fb6ff")
+        text_box.pack(fill="both", expand=True, padx=24, pady=(0, 16))
+
+        def submit():
+            content = text_box.get("1.0", "end").strip()
+            try:
+                submit_feedback(self.current_account, content)
+            except ValueError as exc:
+                messagebox.showwarning("反馈为空", str(exc), parent=popup)
+                return
+            except Exception as exc:
+                messagebox.showerror("提交失败", str(exc), parent=popup)
+                return
+            popup.destroy()
+            messagebox.showinfo("已提交", "反馈已保存到管理员后台。谢谢你认真反馈。")
+
+        HoverButton(row, "提交反馈", submit, width=150, height=54, accent="#9ff2b2").grid(row=0, column=0, padx=(0, 10))
+        HoverButton(row, "取消", popup.destroy, width=120, height=54, accent="#ff9b89").grid(row=0, column=1)
+        self.after(80, text_box.focus_set)
 
     def draw_home_title(self, parent, compact=False):
         if compact:
@@ -308,7 +369,8 @@ class NavigationHomeMixin:
     def _profile_badge(self, summary):
         achievements_data = read_achievements()
         rank_progress = read_rank_progress()
-        avatar_id = coerce_avatar_id(self.player_settings.get("avatar_id", 0), summary.get("rating", 0))
+        reveal_all = self.admin_reveal_hidden_enabled()
+        avatar_id = coerce_avatar_id(self.player_settings.get("avatar_id", 0), summary.get("rating", 0), reveal_all=reveal_all)
         equipped_title = title_name(coerce_title_id(self.player_settings.get("title_id"), summary.get("rating", 0), achievements_data, rank_progress))
         rank_badge_id = coerce_rank_badge_id(self.player_settings.get("rank_badge_id", ""), rank_progress)
         badge = tk.Frame(self.container, bg="#182033", highlightbackground="#3b4560", highlightthickness=1, cursor="hand2")
@@ -356,6 +418,7 @@ class NavigationHomeMixin:
             widget.bind("<Button-1>", lambda _event: self.show_settings())
 
     def show_game_mechanics(self, tab=None):
+        self.play_music("archive")
         self.clear()
         self._topbar("游戏机制说明", self.show_home)
         frame = tk.Frame(self.container, bg="#111725")

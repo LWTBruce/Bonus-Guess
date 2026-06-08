@@ -4,8 +4,20 @@
     {
       "chinese_name": "代数簇",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的几何对象。",
+        "它常出现在由多项式方程研究零点集合、坐标环、奇点和有理映射的场景中。",
+        "一个标准表达是 $X=V(I)\\subset\\mathbb A_k^n$。",
+        "它比一般概形更接近经典方程图像，通常不额外记录幂零厚化和任意基环。",
+        "它的英文译名是 algebraic variety。"
+      ],
+      "fragmented_clues": [
+        "代数几何 几何对象",
+        "多项式方程 零点集合 坐标环 奇点 有理映射",
+        "$X=V(I)\\subset\\mathbb A_k^n$",
+        "经典方程图像 少泛点 幂零厚化 任意基环",
+        "algebraic variety"
+      ],
       "explanation_markdown": "代数簇是在代数闭域上由多项式方程定义的几何对象，既可看成零点集合，也可通过坐标环研究函数。仿射情形写作 $X=V(I)\\subset\\mathbb A_k^n$，其中 $I\\subset k[x_1,\\ldots,x_n]$ 是理想，$V(I)$ 是其公共零点。\n\n它比一般概形更接近经典方程图像；概形还记录素理想点、幂零元和任意基环。仿射簇由坐标环控制，射影簇需齐次坐标，二者在扎里斯基拓扑下粘合，形成研究奇点、维数和有理映射的基本对象。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。",
       "source_links": [
         {
@@ -28,8 +40,20 @@
     {
       "chinese_name": "仿射簇",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的几何对象。",
+        "它用于把仿射空间中的公共零点问题转化为坐标环和交换代数计算。",
+        "一个标准表达是 $V(I)=\\{a\\in k^n\\mid f(a)=0,\\ f\\in I\\}$。",
+        "正则函数由坐标环给出，不加入无穷远方向，通常只看代数闭域上的闭点。",
+        "它的英文译名是 affine variety。"
+      ],
+      "fragmented_clues": [
+        "代数几何 几何对象",
+        "仿射空间 公共零点 坐标环 交换代数",
+        "$V(I)=\\{a\\in k^n\\mid f(a)=0,\\ f\\in I\\}$",
+        "正则函数 坐标环 无穷远方向 闭点",
+        "affine variety"
+      ],
       "explanation_markdown": "仿射簇是仿射空间中若干多项式的公共零点，定义直接依赖坐标函数。若 $I\\subset k[x_1,\\ldots,x_n]$，则 $V(I)=\\{a\\in k^n\\mid f(a)=0,\\ f\\in I\\}$；它的坐标环是 $k[x_1,\\ldots,x_n]/I(V)$。\n\n仿射簇的正则函数来自这个坐标环，因此几何问题常转化为交换代数问题。它不同于射影簇，不自动加入无穷远方向；也不同于仿射概形，通常只取代数闭域上的闭点并默认约化结构。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -52,8 +76,20 @@
     {
       "chinese_name": "射影簇",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的几何对象。",
+        "它关联齐次方程、射影闭包、交点数和射影嵌入中的全局线性系统。",
+        "一个标准表达是 $X=V_+(I)\\subset\\mathbb P_k^n$。",
+        "点按非零标量倍数等同，定义方程必须齐次，无穷远方向被纳入对象。",
+        "它的英文译名是 projective variety。"
+      ],
+      "fragmented_clues": [
+        "代数几何 几何对象",
+        "齐次方程 射影闭包 交点数 线性系统",
+        "$X=V_+(I)\\subset\\mathbb P_k^n$",
+        "比例坐标 齐次条件 无穷远方向",
+        "projective variety"
+      ],
       "explanation_markdown": "射影簇是在射影空间中由齐次多项式共同切出的代数簇。若 $I\\subset k[x_0,\\ldots,x_n]$ 为齐次理想，则 $X=V_+(I)\\subset\\mathbb P_k^n$；点 $[x_0:\\cdots:x_n]$ 按非零标量倍数视为同一点。\n\n齐次条件保证方程在射影坐标中有意义，也让交点数、闭包和紧化行为更稳定。射影簇不是仿射簇简单加边界，而是由分次环和线丛组织全局函数；它与射影概形相比通常仍少了泛点与非约化信息。 射影嵌入、线丛和除子把全局几何转成可计算的线性系统。次数、亏格、交数和典范类会随嵌入或双有理改造表现不同，因此同一簇既要看方程，也要看局部环和全局层。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -76,8 +112,20 @@
     {
       "chinese_name": "概形",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的几何对象。",
+        "它用于统一经典零点、泛点、幂零厚化、相对基底和层上同调等结构。",
+        "一个标准表达是 $\\operatorname{Spec}A$。",
+        "局部模型是环谱，点是素理想，结构层保留局部函数而不只保留闭点集合。",
+        "它的英文译名是 scheme。"
+      ],
+      "fragmented_clues": [
+        "代数几何 几何对象",
+        "经典零点 泛点 幂零厚化 相对基底 层上同调",
+        "$\\operatorname{Spec}A$",
+        "环谱 素理想 结构层 局部函数",
+        "scheme"
+      ],
       "explanation_markdown": "概形是局部看起来像交换环谱的局部环化空间，用环和层统一描述几何。每点附近同构于 $\\operatorname{Spec}A$，其中 $A$ 是交换环；$\\operatorname{Spec}A$ 的点是素理想，结构层 $\\mathcal O_X$ 给出局部函数。\n\n它把经典零点、泛点、闭点、幂零厚化和整数基底放进同一框架。代数簇多关注域上的约化有限型对象，概形则允许非约化和相对情形，因此态射、纤维积、基变换和层上同调都能用统一语言处理。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。",
       "source_links": [
         {
@@ -100,8 +148,20 @@
     {
       "chinese_name": "仿射概形",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的几何对象。",
+        "它是一般概形的局部拼块，常用来检验仿射性、准紧性和上同调消失。",
+        "一个标准表达是 $X=\\operatorname{Spec}A$。",
+        "点包含所有素理想并带特殊化关系，基本开集上的函数来自局部化。",
+        "它的英文译名是 affine scheme。"
+      ],
+      "fragmented_clues": [
+        "代数几何 几何对象",
+        "局部拼块 仿射性 准紧性 上同调消失",
+        "$X=\\operatorname{Spec}A$",
+        "素理想 特殊化 基本开集 局部化",
+        "affine scheme"
+      ],
       "explanation_markdown": "仿射概形是某个交换环的谱，构成概形理论的局部模型。给定环 $A$，写作 $X=\\operatorname{Spec}A$，点为素理想 $\\mathfrak p\\subset A$，基本开集 $D(f)$ 上的函数环是局部化 $A_f$。\n\n它与仿射簇的差别在于点不只最大理想，还包括泛点和特殊化关系；环中幂零元也会被结构层记录。一般概形由仿射概形粘合而成，许多性质如仿射性、准紧性和上同调消失都先在这里检验。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -124,8 +184,20 @@
     {
       "chinese_name": "射影概形",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的几何对象。",
+        "它关联分次环、相对射影几何、投射态射和希尔伯特多项式。",
+        "一个标准表达是 $\\operatorname{Proj}S$。",
+        "点由未含无关理想的齐次素理想给出，比射影簇保留更多环论信息。",
+        "它的英文译名是 projective scheme。"
+      ],
+      "fragmented_clues": [
+        "代数几何 几何对象",
+        "分次环 相对射影几何 投射态射 希尔伯特多项式",
+        "$\\operatorname{Proj}S$",
+        "齐次素理想 无关理想 环论信息",
+        "projective scheme"
+      ],
       "explanation_markdown": "射影概形由分次环的齐次素理想构成，是射影几何的概形版本。若 $S$ 是正分次环，则 $\\operatorname{Proj}S$ 的点是未含无关理想 $S_+$ 的齐次素理想；开集 $D_+(f)$ 上的函数来自 $(S_f)_0$。\n\n它比射影簇保留更多环论信息，可在非代数闭域、非约化结构和相对基底上工作。射影概形常配有很 ample 线丛 $\\mathcal O(1)$，因此适当性、投射态射和希尔伯特多项式都能自然表达。 射影嵌入、线丛和除子把全局几何转成可计算的线性系统。次数、亏格、交数和典范类会随嵌入或双有理改造表现不同，因此同一簇既要看方程，也要看局部环和全局层。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -148,8 +220,20 @@
     {
       "chinese_name": "素理想",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的代数对象。",
+        "它出现在环谱的点、不可约闭子集、泛点和理想包含链的描述中。",
+        "一个标准表达是 $\\mathfrak p\\subset A$。",
+        "判别条件是乘积落入其中就有一个因子落入，等价于商环为整环。",
+        "它的英文译名是 prime ideal。"
+      ],
+      "fragmented_clues": [
+        "代数几何 代数对象",
+        "环谱 点 不可约闭子集 泛点 理想包含链",
+        "$\\mathfrak p\\subset A$",
+        "乘积条件 因子条件 商环 整环",
+        "prime ideal"
+      ],
       "explanation_markdown": "素理想是交换环中对应不可约闭子集的理想。理想 $\\mathfrak p\\subset A$ 为素理想，若 $ab\\in\\mathfrak p$ 推出 $a\\in\\mathfrak p$ 或 $b\\in\\mathfrak p$；等价地，商环 $A/\\mathfrak p$ 是整环。\n\n在 $\\operatorname{Spec}A$ 中，一个素理想就是一个点，闭包为 $V(\\mathfrak p)$。极大理想只给闭点，素理想还给出泛点和包含链，因此它们决定扎里斯基拓扑、维数和不可约分支。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -172,8 +256,20 @@
     {
       "chinese_name": "极大理想",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的代数对象。",
+        "它关联闭点、局部环、剩余域以及代数闭域上的坐标点。",
+        "一个标准表达是 $\\kappa(\\mathfrak m)$。",
+        "它是不能真扩大的真理想，商环为域；每个都是素理想但不表示泛点。",
+        "它的英文译名是 maximal ideal。"
+      ],
+      "fragmented_clues": [
+        "代数几何 代数对象",
+        "闭点 局部环 剩余域 坐标点",
+        "$\\kappa(\\mathfrak m)$",
+        "真理想 商环 域 素理想 非泛点",
+        "maximal ideal"
+      ],
       "explanation_markdown": "极大理想是环中不能再真扩大的真理想，几何上常对应闭点。对交换环 $A$，$\\mathfrak m$ 极大当且仅当 $A/\\mathfrak m$ 是域；在代数闭域上，$k[x_1,\\ldots,x_n]$ 的极大理想常形如 $(x_1-a_1,\\ldots,x_n-a_n)$。\n\n它与素理想不同：每个极大理想都是素理想，但素理想还可表示不可约子簇的泛点。局部环 $A_{\\mathfrak m}$ 聚焦闭点邻域，剩余域 $\\kappa(\\mathfrak m)$ 记录该点的坐标域。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -196,8 +292,20 @@
     {
       "chinese_name": "零点集",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它用于从理想或函数族得到几何集合，并连接希尔伯特零点定理。",
+        "一个标准表达是 $V(I)=\\{a\\in k^n\\mid f(a)=0\\text{ for all }f\\in I\\}$。",
+        "它只记录同时为零的点集层面，不能单独分辨重数、嵌入分量和厚化。",
+        "它的英文译名是 zero set。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "理想 函数族 几何集合 希尔伯特零点定理",
+        "$V(I)=\\{a\\in k^n\\mid f(a)=0\\text{ for all }f\\in I\\}$",
+        "同时为零 点集层面 重数 嵌入分量 厚化",
+        "zero set"
+      ],
       "explanation_markdown": "零点集是由一族函数同时为零定义的集合，是代数几何从方程进入几何的入口。对理想 $I\\subset k[x_1,\\ldots,x_n]$，$V(I)=\\{a\\in k^n\\mid f(a)=0\\text{ for all }f\\in I\\}$；这里 $k^n$ 是仿射空间。\n\n在代数闭域上，希尔伯特零点定理把根理想和代数集联系起来：$I(V(I))=\\sqrt I$。零点集只描述闭点层面的集合，坐标环和概形结构还能分辨重数、嵌入分量和非约化厚化。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -220,8 +328,20 @@
     {
       "chinese_name": "扎里斯基拓扑",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的拓扑结构。",
+        "它控制仿射空间和环谱中的闭集、基本开集、泛点闭包和局部化。",
+        "一个标准表达是 $D(f)=\\{\\mathfrak p\\mid f\\notin\\mathfrak p\\}$。",
+        "闭集由多项式方程给出，通常比欧氏拓扑更粗，却与代数函数相容。",
+        "它的英文译名是 Zariski topology。"
+      ],
+      "fragmented_clues": [
+        "代数几何 拓扑结构",
+        "闭集 基本开集 泛点闭包 局部化",
+        "$D(f)=\\{\\mathfrak p\\mid f\\notin\\mathfrak p\\}$",
+        "多项式方程 粗拓扑 代数函数 相容",
+        "Zariski topology"
+      ],
       "explanation_markdown": "扎里斯基拓扑把多项式方程的公共零点规定为闭集。仿射空间中的闭集写作 $V(I)$，而在 $\\operatorname{Spec}A$ 中基本开集为 $D(f)=\\{\\mathfrak p\\mid f\\notin\\mathfrak p\\}$；这里 $I$ 是理想，$f\\in A$。\n\n这种拓扑通常比欧氏拓扑粗得多，但它与代数函数配合得很好：在 $D(f)$ 上允许把 $f$ 倒置。泛点的闭包给不可约闭子集，极大理想给闭点，因此拓扑同时编码包含关系与局部化。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -244,8 +364,20 @@
     {
       "chinese_name": "坐标环",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的代数对象。",
+        "它用于把仿射簇上的正则函数、态射和方程等价类转成环论问题。",
+        "一个标准表达是 $X=V(I)\\subset\\mathbb A_k^n$。",
+        "仿射簇态射会反向对应代数同态，不同于只看一般点的函数域。",
+        "它的英文译名是 coordinate ring。"
+      ],
+      "fragmented_clues": [
+        "代数几何 代数对象",
+        "正则函数 态射 方程等价类 环论问题",
+        "$X=V(I)\\subset\\mathbb A_k^n$",
+        "反向对应 代数同态 一般点 函数域",
+        "coordinate ring"
+      ],
       "explanation_markdown": "坐标环记录仿射代数集上的正则函数，是方程和几何之间的桥。若 $X=V(I)\\subset\\mathbb A_k^n$，其坐标环为 $k[X]=k[x_1,\\ldots,x_n]/I(X)$；元素代表在 $X$ 上取值相同的多项式函数。\n\n对仿射簇，坐标环决定其几何结构，态射 $X\\to Y$ 反向对应 $k[Y]\\to k[X]$ 的 $k$-代数同态。它不同于函数域，后者允许有理分式；也不同于局部环，后者只看某点附近的函数行为。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -268,8 +400,20 @@
     {
       "chinese_name": "多项式环",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的代数对象。",
+        "它是仿射空间的坐标函数来源，也是理想、商环、消去和格罗布纳基计算的起点。",
+        "一个标准表达是 $k[x_1,\\ldots,x_n]/I$。",
+        "在施加方程前它是自由交换代数，变量的像决定任意代数同态。",
+        "它的英文译名是 polynomial ring。"
+      ],
+      "fragmented_clues": [
+        "代数几何 代数对象",
+        "坐标函数 理想 商环 消去 格罗布纳基",
+        "$k[x_1,\\ldots,x_n]/I$",
+        "自由交换代数 变量像 代数同态",
+        "polynomial ring"
+      ],
       "explanation_markdown": "多项式环是代数几何中坐标函数的自由交换代数。$k[x_1,\\ldots,x_n]$ 由域 $k$ 和变量 $x_i$ 生成，任意 $k$-代数同态由各 $x_i$ 的像决定；理想 $I$ 给出商环 $k[x_1,\\ldots,x_n]/I$。\n\n它的谱是仿射 $n$ 空间，理想描述闭子概形。与坐标环相比，多项式环还未施加方程；与局部环相比，它保留全局多项式函数。诺特性、消去和格罗布纳基都依赖这一基本对象。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -292,8 +436,20 @@
     {
       "chinese_name": "局部环",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的代数对象。",
+        "它用于研究某一点附近的正则性、维数、切空间和奇点。",
+        "一个标准表达是 $\\kappa(p)=\\mathcal O_{X,p}/\\mathfrak m_p$。",
+        "它只有一个极大理想，极大理想元素表示在该点消失的局部函数。",
+        "它的英文译名是 local ring。"
+      ],
+      "fragmented_clues": [
+        "代数几何 代数对象",
+        "单点邻域 正则性 维数 切空间 奇点",
+        "$\\kappa(p)=\\mathcal O_{X,p}/\\mathfrak m_p$",
+        "唯一极大理想 消失函数 局部函数",
+        "local ring"
+      ],
       "explanation_markdown": "局部环是只有一个极大理想的环，用来描述空间在某一点附近的函数。对概形点 $p\\in X$，局部环写作 $\\mathcal O_{X,p}$；在仿射情形 $X=\\operatorname{Spec}A$ 中，它同构于 $A_{\\mathfrak p}$，其中 $\\mathfrak p$ 对应 $p$。\n\n极大理想中的元素是在该点消失的函数，剩余域 $\\kappa(p)=\\mathcal O_{X,p}/\\mathfrak m_p$ 是点的取值域。局部环不同于坐标环的全局视角，它适合定义正则点、维数、切空间和奇点。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -316,8 +472,20 @@
     {
       "chinese_name": "正则函数",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数值不变量。",
+        "它关联结构层、态射的拉回以及开集上无极点的局部表达。",
+        "一个标准表达是 $X=\\operatorname{Spec}A$。",
+        "它要求在定义处处可用局部分式表示且分母不消失，强于有理函数。",
+        "它的英文译名是 regular function。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数值不变量",
+        "结构层 态射拉回 开集 无极点 局部表达",
+        "$X=\\operatorname{Spec}A$",
+        "局部分式 分母不消失 处处定义",
+        "regular function"
+      ],
       "explanation_markdown": "正则函数是在代数几何对象上局部可由多项式或分式无极点表示的函数。仿射簇 $X$ 上全局正则函数组成 $\\Gamma(X,\\mathcal O_X)$，在 $X=\\operatorname{Spec}A$ 时等于 $A$；局部表示常写成 $f/g$ 且 $g$ 不消失。\n\n它与有理函数的差别在于有理函数只需在稠密开集上定义，正则函数要求处处无极点。结构层正是把每个开集上的正则函数组织起来，使态射可以通过函数的拉回刻画。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -340,8 +508,20 @@
     {
       "chinese_name": "有理函数",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数值不变量。",
+        "它用于描述稠密开集上的函数、除子、函数域扩张和有理映射。",
+        "一个标准表达是 $K(X)=\\operatorname{Frac}A$。",
+        "它允许在闭子集上有极点，相同代表只需在公共稠密开集上一致。",
+        "它的英文译名是 rational function。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数值不变量",
+        "稠密开集 除子 函数域扩张 有理映射",
+        "$K(X)=\\operatorname{Frac}A$",
+        "极点 闭子集 公共稠密开集 等价代表",
+        "rational function"
+      ],
       "explanation_markdown": "有理函数是在不可约代数簇或整概形的稠密开集上由分式给出的函数。若 $X$ 的坐标环为整环 $A$，函数域写作 $K(X)=\\operatorname{Frac}A$；元素可表示为 $f/g$，其中 $g\\ne0$。\n\n有理函数允许在某些闭子集上有极点，因此不等同于全局正则函数。它们用于定义有理映射、除子和函数域扩张；两个表示只要在公共稠密开集上一致，就代表同一个有理函数。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -364,8 +544,20 @@
     {
       "chinese_name": "函数域",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它关联不可约簇的一般点、有理函数和双有理分类。",
+        "一个标准表达是 $K(X)=\\operatorname{Frac}A$。",
+        "它忽略低维闭子集差异，只保留分式层面的双有理信息。",
+        "它的英文译名是 function field。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "不可约簇 一般点 有理函数 双有理分类",
+        "$K(X)=\\operatorname{Frac}A$",
+        "低维闭子集 分式层面 双有理信息",
+        "function field"
+      ],
       "explanation_markdown": "函数域是不可约代数簇上有理函数组成的域，反映其双有理几何。对仿射不可约簇 $X=\\operatorname{Spec}A$，$K(X)=\\operatorname{Frac}A$；若 $A$ 是坐标环，分式 $f/g$ 表示在 $g\\ne0$ 处定义的函数。\n\n它忽略低维闭子集上的差异，因此适合研究双有理等价。函数域不同于坐标环，后者只含全局正则函数；也不同于局部环，后者聚焦一个点。曲线的函数域与非奇异射影模型之间关系尤其紧密。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -388,8 +580,20 @@
     {
       "chinese_name": "层",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中描述局部数据的数学对象。",
+        "它出现在局部截面、限制映射、粘合问题、函数数据和有限生成模数据的组织中。",
+        "一个标准表达是 $\\rho_{UV}:\\mathcal F(U)\\to\\mathcal F(V)$。",
+        "与只带限制映射的预结构相比，关键是相容局部截面能唯一粘成全局截面。",
+        "它的英文译名是 sheaf。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "局部截面 限制映射 粘合 函数数据 有限生成模数据",
+        "$\\rho_{UV}:\\mathcal F(U)\\to\\mathcal F(V)$",
+        "预结构差别 相容截面 唯一粘合 全局截面",
+        "sheaf"
+      ],
       "explanation_markdown": "层是在拓扑空间上把局部数据和粘合规则统一起来的结构。对每个开集 $U$ 给出集合或群 $\\mathcal F(U)$，并有约束映射 $\\rho_{UV}:\\mathcal F(U)\\to\\mathcal F(V)$；若局部截面相容，就能唯一粘成全局截面。\n\n它与预层的差别正是粘合公理和局部唯一性。代数几何中，结构层记录正则函数，凝聚层记录有限生成模的几何版本；层的茎 $\\mathcal F_p$ 则把所有含 $p$ 的邻域信息压缩到一点。 层语言把局部截面、限制映射和粘合条件放在一起，茎负责逐点检验。结构层模、正合列和导出函子会决定支撑、有限性和上同调，不同类型的层由局部化相容性与有限生成条件区分。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -412,8 +616,20 @@
     {
       "chinese_name": "结构层",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它用于给拓扑空间附加正则函数，定义概形态射和局部环化空间。",
+        "一个标准表达是 $X=\\operatorname{Spec}A$。",
+        "仿射基本开集上的截面是局部化环，各茎必须是局部环。",
+        "它的英文译名是 structure sheaf。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "拓扑空间 正则函数 概形态射 局部环化空间",
+        "$X=\\operatorname{Spec}A$",
+        "基本开集 截面 局部化环 局部环茎",
+        "structure sheaf"
+      ],
       "explanation_markdown": "结构层是概形或环化空间上负责“函数”的层。对仿射概形 $X=\\operatorname{Spec}A$，基本开集 $D(f)$ 上有 $\\mathcal O_X(D(f))=A_f$；这里 $A_f$ 是把 $f$ 倒置后的局部化。\n\n它让同一个拓扑空间带上代数函数结构，因而能区分约化与非约化概形。普通层只给局部数据，结构层还要求各茎是局部环；概形态射必须同时尊重连续映射和结构层同态。 层语言把局部截面、限制映射和粘合条件放在一起，茎负责逐点检验。结构层模、正合列和导出函子会决定支撑、有限性和上同调，不同类型的层由局部化相容性与有限生成条件区分。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -436,8 +652,20 @@
     {
       "chinese_name": "茎",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中聚焦单点邻域的数学对象。",
+        "它用于逐点检查层的性质、支撑、秩、局部自由性和局部环结构。",
+        "一个标准表达是 $\\mathcal F_p=\\varinjlim_{p\\in U}\\mathcal F(U)$。",
+        "它是含该点邻域截面的直极限，只保留足够小邻域中稳定的局部行为。",
+        "它的英文译名是 stalk。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "逐点检查 支撑 秩 局部自由 局部环",
+        "$\\mathcal F_p=\\varinjlim_{p\\in U}\\mathcal F(U)$",
+        "邻域截面 直极限 稳定局部行为",
+        "stalk"
+      ],
       "explanation_markdown": "茎是层在某一点的全部局部信息，由越来越小的邻域取极限得到。对层 $\\mathcal F$ 和点 $p\\in X$，$\\mathcal F_p=\\varinjlim_{p\\in U}\\mathcal F(U)$；元素是局部截面在 $p$ 附近的等价类。\n\n茎不等于某个固定邻域上的截面，而只记住足够靠近 $p$ 时稳定的行为。结构层的茎就是局部环 $\\mathcal O_{X,p}$，凝聚层的茎是有限生成 $\\mathcal O_{X,p}$-模，用来定义支撑、秩和局部自由性。 层语言把局部截面、限制映射和粘合条件放在一起，茎负责逐点检验。结构层模、正合列和导出函子会决定支撑、有限性和上同调，不同类型的层由局部化相容性与有限生成条件区分。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -460,8 +688,20 @@
     {
       "chinese_name": "层上同调",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它关联全局截面函子的导出、线丛粘合、扩张和投射几何计算。",
+        "一个标准表达是 $H^i(X,\\mathcal F)=R^i\\Gamma(X,\\mathcal F)$。",
+        "$H^0$ 给全局截面，高阶项记录局部数据无法全局粘合的障碍。",
+        "它的英文译名是 sheaf cohomology。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "全局截面函子 导出 线丛粘合 扩张",
+        "$H^i(X,\\mathcal F)=R^i\\Gamma(X,\\mathcal F)$",
+        "$H^0$ 全局截面 高阶障碍 粘合失败",
+        "sheaf cohomology"
+      ],
       "explanation_markdown": "层上同调用来度量局部截面能否粘成全局截面以及粘合的高阶障碍。对拓扑空间 $X$ 上的层 $\\mathcal F$，常写 $H^i(X,\\mathcal F)=R^i\\Gamma(X,\\mathcal F)$；这里 $\\Gamma$ 是全局截面函子。\n\n$H^0$ 就是全局截面，$H^1$ 常控制线丛、扩张或粘合数据。它不同于奇异上同调，系数不必是常值层；在代数几何中，凝聚层上同调连接投射几何、塞尔对偶和消失定理。 层语言把局部截面、限制映射和粘合条件放在一起，茎负责逐点检验。结构层模、正合列和导出函子会决定支撑、有限性和上同调，不同类型的层由局部化相容性与有限生成条件区分。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -484,8 +724,20 @@
     {
       "chinese_name": "凝聚层",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它用于有限生成模的几何化，研究理想层、向量丛截面、除子和形变。",
+        "一个标准表达是 $U=\\operatorname{Spec}A$。",
+        "局部有限生成且关系有限，在诺特情形下核像扩张仍保持有限性。",
+        "它的英文译名是 coherent sheaf。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "有限生成模 几何化 理想层 向量丛 除子",
+        "$U=\\operatorname{Spec}A$",
+        "局部有限生成 有限关系 核像扩张",
+        "coherent sheaf"
+      ],
       "explanation_markdown": "凝聚层是局部由有限多个生成元和有限多个关系给出的 $\\mathcal O_X$-模层。在诺特概形上，仿射开集 $U=\\operatorname{Spec}A$ 中常对应有限生成 $A$-模 $M$，写作 $\\widetilde M$。\n\n它比准凝聚层更有限，核、像和扩张在诺特情形下仍保持凝聚。理想层、结构层商、向量丛的截面层都是重要例子；凝聚层上同调具有有限性，是代数几何中研究除子、嵌入和形变的核心工具。 层语言把局部截面、限制映射和粘合条件放在一起，茎负责逐点检验。结构层模、正合列和导出函子会决定支撑、有限性和上同调，不同类型的层由局部化相容性与有限生成条件区分。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -508,8 +760,20 @@
     {
       "chinese_name": "准凝聚层",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它关联仿射开集上的模局部化、推前、直接极限和一般模层结构。",
+        "一个标准表达是 $X=\\operatorname{Spec}A$。",
+        "它不要求有限生成，范围比凝聚层大，但必须与仿射局部化相容。",
+        "它的英文译名是 quasi-coherent sheaf。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "仿射开集 模局部化 推前 直接极限",
+        "$X=\\operatorname{Spec}A$",
+        "非有限生成 凝聚层对比 仿射局部化相容",
+        "quasi-coherent sheaf"
+      ],
       "explanation_markdown": "准凝聚层是在仿射开集上由模局部化得到的 $\\mathcal O_X$-模层。若 $X=\\operatorname{Spec}A$ 且 $M$ 是 $A$-模，则对应层记为 $\\widetilde M$，并满足 $\\widetilde M(D(f))=M_f$。\n\n它强调与环上模的相容性，但不要求有限生成。凝聚层通常是有限型的准凝聚层，在诺特条件下更稳定；准凝聚层适合处理直接极限、推前和一般模结构，范围比凝聚层大得多。 层语言把局部截面、限制映射和粘合条件放在一起，茎负责逐点检验。结构层模、正合列和导出函子会决定支撑、有限性和上同调，不同类型的层由局部化相容性与有限生成条件区分。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -532,8 +796,20 @@
     {
       "chinese_name": "理想层",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它用于定义闭子概形、结构层商、交并运算和吹胀中心。",
+        "一个标准表达是 $0\\to\\mathcal I_Z\\to\\mathcal O_X\\to i_*\\mathcal O_Z\\to0$。",
+        "它不仅给闭集，还保存消失函数的重数与非约化厚度。",
+        "它的英文译名是 ideal sheaf。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "闭子概形 结构层商 交并 吹胀中心",
+        "$0\\to\\mathcal I_Z\\to\\mathcal O_X\\to i_*\\mathcal O_Z\\to0$",
+        "闭集 消失函数 重数 非约化厚度",
+        "ideal sheaf"
+      ],
       "explanation_markdown": "理想层是在概形上局部由理想给出的子 $\\mathcal O_X$-模，用来定义闭子概形。若 $i:Z\\hookrightarrow X$ 是闭嵌入，则有正合列 $0\\to\\mathcal I_Z\\to\\mathcal O_X\\to i_*\\mathcal O_Z\\to0$；$\\mathcal I_Z$ 记录在 $Z$ 上消失的函数。\n\n它不只是闭集的集合论补充，因为理想层能保存重数和非约化厚度。准凝聚理想层对应闭子概形，凝聚理想层在诺特情形下给有限型闭嵌入，是交、并和吹胀构造的基本输入。 层语言把局部截面、限制映射和粘合条件放在一起，茎负责逐点检验。结构层模、正合列和导出函子会决定支撑、有限性和上同调，不同类型的层由局部化相容性与有限生成条件区分。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -556,8 +832,20 @@
     {
       "chinese_name": "闭嵌入",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的嵌入构造。",
+        "它关联闭子概形、理想层、环满射和嵌入分量的保留。",
+        "一个标准表达是 $\\mathcal O_X\\to i_*\\mathcal O_Z$。",
+        "拓扑像是闭集，结构层映射为满射，因此比普通闭子集多出厚化信息。",
+        "它的英文译名是 closed immersion。"
+      ],
+      "fragmented_clues": [
+        "代数几何 嵌入构造",
+        "闭子概形 理想层 环满射 嵌入分量",
+        "$\\mathcal O_X\\to i_*\\mathcal O_Z$",
+        "闭集 结构层满射 厚化信息",
+        "closed immersion"
+      ],
       "explanation_markdown": "闭嵌入是把一个概形作为另一个概形的闭子概形放入其中的态射。态射 $i:Z\\to X$ 为闭嵌入时，底层拓扑映射给出闭子集，并且结构层满射 $\\mathcal O_X\\to i_*\\mathcal O_Z$ 的核是理想层 $\\mathcal I_Z$。\n\n它比闭子集多了结构层信息，可以描述重根、厚化和嵌入分量。开嵌入由开子空间给出，闭嵌入则由理想层控制；在仿射情形中，它反向对应环满射 $A\\twoheadrightarrow A/I$。 这类态射性质通常要在任意基变换后仍可辨认，并通过仿射局部的环同态或层同态检验。它们描述的不是点集函数本身，而是函数如何拉回、纤维怎样变化以及闭包或分离性是否稳定；这些差别决定了族和模空间中的几何行为。",
       "source_links": [
         {
@@ -580,8 +868,20 @@
     {
       "chinese_name": "开嵌入",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的嵌入构造。",
+        "它用于开覆盖、局部性质检验、概形粘合和基本开集局部化。",
+        "一个标准表达是 $D(f)\\subset\\operatorname{Spec}A$。",
+        "它把源同构到目标开子概形，不通过理想商改变结构层。",
+        "它的英文译名是 open immersion。"
+      ],
+      "fragmented_clues": [
+        "代数几何 嵌入构造",
+        "开覆盖 局部性质 粘合 基本开集",
+        "$D(f)\\subset\\operatorname{Spec}A$",
+        "开子概形 同构 局部化 非理想商",
+        "open immersion"
+      ],
       "explanation_markdown": "开嵌入是把一个概形同构到目标概形的开子概形上的态射。若 $j:U\\to X$ 是开嵌入，则其像为开集，且 $U\\cong j(U)$ 作为带结构层空间同构；仿射基本开集常写作 $D(f)\\subset\\operatorname{Spec}A$。\n\n它与闭嵌入的差别在于不由理想商出目标结构，而是通过局部化限制函数。开嵌入常用于粘合概形、定义局部性质和构造覆盖；许多性质只需在一组开嵌入覆盖上检验。 这类态射性质通常要在任意基变换后仍可辨认，并通过仿射局部的环同态或层同态检验。它们描述的不是点集函数本身，而是函数如何拉回、纤维怎样变化以及闭包或分离性是否稳定；这些差别决定了族和模空间中的几何行为。",
       "source_links": [
         {
@@ -604,8 +904,20 @@
     {
       "chinese_name": "态射",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的箭头类概念。",
+        "它用于表达概形之间的函数拉回、纤维变化和族的结构映射。",
+        "一个标准表达是 $X=\\operatorname{Spec}B,Y=\\operatorname{Spec}A$。",
+        "仿射情形中方向反转为环同态，因此不是单纯的点集函数。",
+        "它的英文译名是 morphism。"
+      ],
+      "fragmented_clues": [
+        "代数几何 箭头类概念",
+        "函数拉回 纤维变化 族 结构映射",
+        "$X=\\operatorname{Spec}B,Y=\\operatorname{Spec}A$",
+        "仿射情形 反向环同态 非点集函数",
+        "morphism"
+      ],
       "explanation_markdown": "概形态射是同时尊重拓扑和结构层的映射。一个态射 $f:X\\to Y$ 包含连续映射及层同态 $f^\\#:\\mathcal O_Y\\to f_*\\mathcal O_X$；在仿射情形 $X=\\operatorname{Spec}B,Y=\\operatorname{Spec}A$ 中，它反向对应环同态 $A\\to B$。\n\n态射不是单纯集合映射，因为目标上的函数必须能拉回到源上。平坦、光滑、有限、投射等形容词描述态射的不同稳定性；有理映射只在稠密开集上定义，不能与处处定义的态射混同。 这类态射性质通常要在任意基变换后仍可辨认，并通过仿射局部的环同态或层同态检验。它们描述的不是点集函数本身，而是函数如何拉回、纤维怎样变化以及闭包或分离性是否稳定；这些差别决定了族和模空间中的几何行为。",
       "source_links": [
         {
@@ -628,8 +940,20 @@
     {
       "chinese_name": "有理映射",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的映射类概念。",
+        "它出现在稠密开集上的几何变换、分式坐标和函数域同态中。",
+        "一个标准表达是 $K(Y)\\to K(X)$。",
+        "它允许不定点，只代表某个非空开集上的态射等价类。",
+        "它的英文译名是 rational map。"
+      ],
+      "fragmented_clues": [
+        "代数几何 映射类概念",
+        "稠密开集 几何变换 分式坐标 函数域同态",
+        "$K(Y)\\to K(X)$",
+        "不定点 非空开集 态射等价类",
+        "rational map"
+      ],
       "explanation_markdown": "有理映射是在源的稠密开子集上定义的态射，适合描述允许少量不定点的几何变换。对不可约概形 $X,Y$，有理映射常记 $f:X\\dashrightarrow Y$，代表某个非空开集 $U\\subset X$ 上的态射 $U\\to Y$ 的等价类。\n\n它不同于普通态射，后者必须在整个 $X$ 上定义。射影空间中的分式坐标给出典型例子；若有理映射存在有理逆，就得到双有理映射。研究有理映射时，函数域同态 $K(Y)\\to K(X)$ 往往保存核心信息。 这类态射性质通常要在任意基变换后仍可辨认，并通过仿射局部的环同态或层同态检验。它们描述的不是点集函数本身，而是函数如何拉回、纤维怎样变化以及闭包或分离性是否稳定；这些差别决定了族和模空间中的几何行为。",
       "source_links": [
         {
@@ -652,8 +976,20 @@
     {
       "chinese_name": "双有理映射",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的映射类概念。",
+        "它用于比较不可约簇的一般点结构、函数域和双有理改造。",
+        "一个标准表达是 $K(X)\\cong K(Y)$。",
+        "它在稠密开集上互为同构，可被吹胀改变局部闭子集而不改变函数域。",
+        "它的英文译名是 birational map。"
+      ],
+      "fragmented_clues": [
+        "代数几何 映射类概念",
+        "不可约簇 一般点 函数域 双有理改造",
+        "$K(X)\\cong K(Y)$",
+        "稠密开集 互逆同构 吹胀 函数域不变",
+        "birational map"
+      ],
       "explanation_markdown": "双有理映射是两个不可约代数簇在稠密开集上互为同构的关系。若 $f:X\\dashrightarrow Y$ 和 $g:Y\\dashrightarrow X$ 满足 $g\\circ f$、$f\\circ g$ 在适当开集上为恒等，则称 $X$ 与 $Y$ 双有理等价。\n\n它保留函数域：常有 $K(X)\\cong K(Y)$。双有理不等于同构，吹胀会改变闭子集附近结构却保持函数域；因此它关注“一般点”上的几何，是分类有理曲面、极小模型和分辨奇点的基本语言。 这类态射性质通常要在任意基变换后仍可辨认，并通过仿射局部的环同态或层同态检验。它们描述的不是点集函数本身，而是函数如何拉回、纤维怎样变化以及闭包或分离性是否稳定；这些差别决定了族和模空间中的几何行为。",
       "source_links": [
         {
@@ -676,8 +1012,20 @@
     {
       "chinese_name": "正规化",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它关联整闭包、非正规奇性、曲线分支分离和有限双有理态射。",
+        "一个标准表达是 $\\operatorname{Spec}\\widetilde A\\to\\operatorname{Spec}A$。",
+        "它消除非正规性但不保证光滑，区别于只去幂零元的约化化。",
+        "它的英文译名是 normalization。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "整闭包 非正规奇性 分支分离 有限双有理态射",
+        "$\\operatorname{Spec}\\widetilde A\\to\\operatorname{Spec}A$",
+        "非正规性 非光滑 约化化对比",
+        "normalization"
+      ],
       "explanation_markdown": "正规化是把不可约概形的函数域中整闭包取回来，得到更接近无奇点的模型。若 $A$ 是整环，$\\widetilde A$ 是 $\\operatorname{Frac}A$ 中 $A$ 的整闭包，则 $\\operatorname{Spec}\\widetilde A\\to\\operatorname{Spec}A$ 是仿射正规化。\n\n正规化消除非正规奇性，但不保证光滑；曲线情形中它常把节点或尖点分离成正规曲线。它不同于约化化，后者只去掉幂零元；正规化会改变环的整性结构并给出有限双有理态射。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -700,8 +1048,20 @@
     {
       "chinese_name": "奇点",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它用于分析局部环、切空间维数、节点尖点和分辨过程。",
+        "一个标准表达是 $\\dim_{\\kappa(p)}\\mathfrak m_p/\\mathfrak m_p^2>\\dim\\mathcal O_{X,p}$。",
+        "其典型信号是嵌入切空间维数超过局部维数，局部不再像光滑空间。",
+        "它的英文译名是 singularity。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "局部环 切空间维数 节点 尖点 分辨",
+        "$\\dim_{\\kappa(p)}\\mathfrak m_p/\\mathfrak m_p^2>\\dim\\mathcal O_{X,p}$",
+        "嵌入切空间 局部维数 光滑空间失效",
+        "singularity"
+      ],
       "explanation_markdown": "奇点是代数几何对象局部不正则的点，表示其局部环不像光滑空间。对有限型 $k$-概形 $X$ 上点 $p$，若 $\\dim_{\\kappa(p)}\\mathfrak m_p/\\mathfrak m_p^2>\\dim\\mathcal O_{X,p}$，则 $p$ 通常是奇点；这里 $\\mathfrak m_p$ 是局部环极大理想。\n\n它与坐标图上“看起来尖”有关，但真正定义依赖局部环、切空间和正则性。节点、尖点和非约化点都可能形成奇性；正规化、吹胀和雅可比判别法是分析奇点的常用工具。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -724,8 +1084,20 @@
     {
       "chinese_name": "正则点",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它关联正则局部环、局部参数、交数、微分和曲线分支行为。",
+        "一个标准表达是 $\\dim_{\\kappa(p)}\\mathfrak m_p/\\mathfrak m_p^2=\\dim\\mathcal O_{X,p}$。",
+        "判别特征是嵌入切空间维数等于局部维数，与奇点相对。",
+        "它的英文译名是 regular point。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "正则局部环 局部参数 交数 微分 分支",
+        "$\\dim_{\\kappa(p)}\\mathfrak m_p/\\mathfrak m_p^2=\\dim\\mathcal O_{X,p}$",
+        "嵌入切空间 局部维数 奇点相对",
+        "regular point"
+      ],
       "explanation_markdown": "正则点是局部环具有最小切维数的点，代数上表现为正则局部环。若 $p\\in X$，正则性可写作 $\\dim_{\\kappa(p)}\\mathfrak m_p/\\mathfrak m_p^2=\\dim\\mathcal O_{X,p}$；左边是嵌入切空间维数，右边是局部维数。\n\n在完美域上的有限型概形中，光滑点通常正则，但正则性本身是局部环性质。它与奇点互补，能保证局部参数、微分和交数行为良好；对曲线来说，正则点附近只有一条分支。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -748,8 +1120,20 @@
     {
       "chinese_name": "切层",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它用于把导子、向量场、无穷小自同构和形变信息组织成层。",
+        "一个标准表达是 $\\mathcal T_X=\\mathcal Hom_{\\mathcal O_X}(\\Omega^1_{X/k},\\mathcal O_X)$。",
+        "光滑时局部自由，奇异处可能失去局部自由性；不同于单点切空间。",
+        "它的英文译名是 tangent sheaf。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "导子 向量场 无穷小自同构 形变",
+        "$\\mathcal T_X=\\mathcal Hom_{\\mathcal O_X}(\\Omega^1_{X/k},\\mathcal O_X)$",
+        "光滑局部自由 奇异非局部自由 单点切空间对比",
+        "tangent sheaf"
+      ],
       "explanation_markdown": "切层是概形上所有导子的层，描述无穷小方向。对 $X$ 上结构层，常写 $\\mathcal T_X=\\mathcal Hom_{\\mathcal O_X}(\\Omega^1_{X/k},\\mathcal O_X)$；其中 $\\Omega^1_{X/k}$ 是凯勒微分层，$\\mathcal Hom$ 取 $\\mathcal O_X$-线性同态。\n\n在光滑情形下，切层是局部自由层，对应普通切丛；有奇点时它可能失去局部自由性。它不同于切空间，后者只在一点；切层把这些局部方向组织成可用于向量场、形变和自同构的层。 层语言把局部截面、限制映射和粘合条件放在一起，茎负责逐点检验。结构层模、正合列和导出函子会决定支撑、有限性和上同调，不同类型的层由局部化相容性与有限生成条件区分。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -772,8 +1156,20 @@
     {
       "chinese_name": "凯勒微分",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它关联环同态的导子、光滑性判别、切层和代数微分形式。",
+        "一个标准表达是 $d:A\\to\\Omega^1_{A/k}$。",
+        "它以普遍导子表示所有导子，不依赖解析极限或坐标微分。",
+        "它的英文译名是 Kaehler differentials。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "环同态 导子 光滑性 切层 代数微分",
+        "$d:A\\to\\Omega^1_{A/k}$",
+        "普遍导子 解析极限无关 坐标微分无关",
+        "Kaehler differentials"
+      ],
       "explanation_markdown": "凯勒微分把环同态的无穷小变化用模来表示。对 $k$-代数 $A$，$\\Omega^1_{A/k}$ 由符号 $da$ 生成，并满足 $d(a+b)=da+db$、$d(ab)=a\\,db+b\\,da$；任意 $k$-导子都因子分解经过 $d:A\\to\\Omega^1_{A/k}$。\n\n它是代数几何中微分形式的代数版本。对概形 $X$，层 $\\Omega^1_{X/k}$ 可用于定义切层、光滑性和雅可比判别；与普通微分不同，它不依赖解析坐标或极限过程。 层语言把局部截面、限制映射和粘合条件放在一起，茎负责逐点检验。结构层模、正合列和导出函子会决定支撑、有限性和上同调，不同类型的层由局部化相容性与有限生成条件区分。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -796,8 +1192,20 @@
     {
       "chinese_name": "雅可比判别法",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的判别方法。",
+        "它用于从方程偏导矩阵判断光滑性、正则点和奇点。",
+        "一个标准表达是 $J(p)=(\\partial f_i/\\partial x_j)(p)$。",
+        "可计算特征是雅可比矩阵秩达到期望余维数，秩不足暴露过大的切空间。",
+        "它的英文译名是 Jacobian criterion。"
+      ],
+      "fragmented_clues": [
+        "代数几何 判别方法",
+        "偏导矩阵 光滑性 正则点 奇点",
+        "$J(p)=(\\partial f_i/\\partial x_j)(p)$",
+        "矩阵秩 期望余维数 切空间过大",
+        "Jacobian criterion"
+      ],
       "explanation_markdown": "雅可比判别法用方程偏导数的秩判断有限型概形的光滑性。若 $X\\subset\\mathbb A_k^n$ 由 $f_1,\\ldots,f_r$ 定义，在点 $p$ 的雅可比矩阵为 $J(p)=(\\partial f_i/\\partial x_j)(p)$；光滑性要求秩达到期望余维数。\n\n它把局部环正则性转化为可计算线性代数。该方法依赖基域和有限型假设，在非完美域上还需留意几何正则性；它检测的是切空间维数是否过大，因此能区分正则点、奇点和非约化现象。 计算性定义的价值在于把几何条件转化为有限代数数据，同时保留与原对象相同的闭包、维数或同调信息。单项式序、齐次化、交重数和高次稳定项都不是装饰性选择，而是决定结果是否对应原几何问题的核心约束。",
       "source_links": [
         {
@@ -820,8 +1228,20 @@
     {
       "chinese_name": "维数",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数值不变量。",
+        "它关联理想包含链、函数域超越次数、不可约闭子集和局部大小的度量。",
+        "一个标准表达是 $\\dim X=\\operatorname{Krull dim}A$。",
+        "在光滑情形与流形的局部自由参数个数一致，但能同时处理泛点、奇点和非闭点。",
+        "它的英文译名是 dimension。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数值不变量",
+        "理想包含链 超越次数 不可约闭子集 局部大小",
+        "$\\dim X=\\operatorname{Krull dim}A$",
+        "流形参数个数 泛点 奇点 非闭点",
+        "dimension"
+      ],
       "explanation_markdown": "代数几何中的维数可由不可约闭子集的最长链定义。对仿射概形 $X=\\operatorname{Spec}A$，有 $\\dim X=\\operatorname{Krull dim}A$；这等于素理想链 $\\mathfrak p_0\\subsetneq\\cdots\\subsetneq\\mathfrak p_n$ 的最大长度。\n\n它与流形维数在光滑情形一致，但能处理奇点、非闭点和非代数闭域。不可约簇的函数域超越次数也给出维数；余维数则比较子空间在整体中的维度差。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -844,8 +1264,20 @@
     {
       "chinese_name": "余维数",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数值不变量。",
+        "它用于描述闭子集在母空间中的深度、除子、完整交和交理论。",
+        "一个标准表达是 $\\operatorname{codim}_X Z=\\dim\\mathcal O_{X,\\eta_Z}$。",
+        "它依赖所处环境，不只是子对象自身维数；余维一数据常对应除子。",
+        "它的英文译名是 codimension。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数值不变量",
+        "母空间深度 除子 完整交 交理论",
+        "$\\operatorname{codim}_X Z=\\dim\\mathcal O_{X,\\eta_Z}$",
+        "环境依赖 自身维数对比 余维一 除子",
+        "codimension"
+      ],
       "explanation_markdown": "余维数度量子对象在母空间中少了多少维。若 $Z\\subset X$ 是不可约闭子集，常写 $\\operatorname{codim}_X Z=\\dim\\mathcal O_{X,\\eta_Z}$；在等维情形也等于 $\\dim X-\\dim Z$。\n\n它不同于维数本身，强调嵌入在某个环境中的深度。除子是余维数一的闭子概形或循环，完整交通常由余维数个方程切出；交理论和深度条件都依赖这一数值。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -868,8 +1300,20 @@
     {
       "chinese_name": "度数",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数值不变量。",
+        "它关联射影嵌入、一般线性截面、贝祖定理和希尔伯特多项式首项。",
+        "一个标准表达是 $X\\subset\\mathbb P^n$。",
+        "它依赖嵌入，通常按重数计算与互补维线性空间的交点数。",
+        "它的英文译名是 degree。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数值不变量",
+        "射影嵌入 线性截面 贝祖定理 希尔伯特首项",
+        "$X\\subset\\mathbb P^n$",
+        "嵌入依赖 重数 互补维线性空间 交点数",
+        "degree"
+      ],
       "explanation_markdown": "射影簇的度数刻画它与一般线性子空间相交的点数。若 $X\\subset\\mathbb P^n$ 维数为 $r$，则 $\\deg X$ 可定义为与一般余维 $r$ 线性空间 $L$ 的交点数 $\\#(X\\cap L)$，按重数计算。\n\n对超曲面，度数就是定义齐次方程的次数；对一般射影簇，它也出现在希尔伯特多项式首项中。度数依赖所选射影嵌入，不是抽象概形的绝对不变量，却在交数、贝祖定理和嵌入复杂度中十分重要。 计算性定义的价值在于把几何条件转化为有限代数数据，同时保留与原对象相同的闭包、维数或同调信息。单项式序、齐次化、交重数和高次稳定项都不是装饰性选择，而是决定结果是否对应原几何问题的核心约束。",
       "source_links": [
         {
@@ -892,8 +1336,20 @@
     {
       "chinese_name": "希尔伯特多项式",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它用于比较射影族、凝聚层扭转后的截面增长和希尔伯特概形。",
+        "一个标准表达是 $P_{\\mathcal F}(m)=\\chi(X,\\mathcal F(m))$。",
+        "只记录高次数稳定行为，次数和首项分别反映维数与度数信息。",
+        "它的英文译名是 Hilbert polynomial。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "射影族 凝聚层扭转 截面增长 希尔伯特概形",
+        "$P_{\\mathcal F}(m)=\\chi(X,\\mathcal F(m))$",
+        "高次数稳定 维数 度数 首项",
+        "Hilbert polynomial"
+      ],
       "explanation_markdown": "希尔伯特多项式描述分次代数或凝聚层在高次数处截面维数的稳定增长。对射影概形 $X$ 上凝聚层 $\\mathcal F$，常写 $P_{\\mathcal F}(m)=\\chi(X,\\mathcal F(m))$；当 $m\\gg0$ 时它等于希尔伯特函数。\n\n它的次数反映支撑维数，首项系数含有度数信息。希尔伯特函数记录每个次数的真实维数，希尔伯特多项式只保留高次稳定部分，因此适合构造希尔伯特概形和比较平坦族中的纤维。 计算性定义的价值在于把几何条件转化为有限代数数据，同时保留与原对象相同的闭包、维数或同调信息。单项式序、齐次化、交重数和高次稳定项都不是装饰性选择，而是决定结果是否对应原几何问题的核心约束。",
       "source_links": [
         {
@@ -916,8 +1372,20 @@
     {
       "chinese_name": "希尔伯特函数",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数值不变量。",
+        "它用于逐次数计算分次环或模的齐次部分维数及低次异常。",
+        "一个标准表达是 $H_M(n)=\\dim_k M_n$。",
+        "它比希尔伯特多项式更细，在高次数才与稳定多项式一致。",
+        "它的英文译名是 Hilbert function。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数值不变量",
+        "逐次数 分次环 模 齐次部分 低次异常",
+        "$H_M(n)=\\dim_k M_n$",
+        "更细 低次数 高次数稳定",
+        "Hilbert function"
+      ],
       "explanation_markdown": "希尔伯特函数逐次记录分次环或模每个齐次部分的维数。若 $M=\\bigoplus M_n$ 是分次 $k$-向量空间，$H_M(n)=\\dim_k M_n$；对 $S/I$，它反映齐次多项式模掉理想后的自由度。\n\n它比希尔伯特多项式更细，因为低次数的异常也会被保留。高次数时，在适当有限生成条件下 $H_M(n)$ 与多项式 $P_M(n)$ 一致；格罗布纳基和初始理想常用来实际计算这个函数。 计算性定义的价值在于把几何条件转化为有限代数数据，同时保留与原对象相同的闭包、维数或同调信息。单项式序、齐次化、交重数和高次稳定项都不是装饰性选择，而是决定结果是否对应原几何问题的核心约束。",
       "source_links": [
         {
@@ -940,8 +1408,20 @@
     {
       "chinese_name": "格罗布纳基",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它服务于理想成员判定、消去、初始理想和希尔伯特函数计算。",
+        "一个标准表达是 $\\langle\\operatorname{LT}(G)\\rangle=\\operatorname{LT}(I)$。",
+        "它依赖单项式序，把多项式理想的首项信息压缩到有限生成集合。",
+        "它的英文译名是 Grobner basis。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "理想成员判定 消去 初始理想 希尔伯特函数",
+        "$\\langle\\operatorname{LT}(G)\\rangle=\\operatorname{LT}(I)$",
+        "单项式序 首项信息 有限生成集合",
+        "Grobner basis"
+      ],
       "explanation_markdown": "格罗布纳基是在给定单项式序下能控制理想所有首项的一组多项式。若 $G\\subset I$ 且 $\\langle\\operatorname{LT}(G)\\rangle=\\operatorname{LT}(I)$，则 $G$ 是理想 $I$ 的格罗布纳基；$\\operatorname{LT}$ 表示首项。\n\n它把多项式理想问题转化为单项式理想问题，可用于理想成员判定、消去和希尔伯特函数计算。格罗布纳基依赖单项式序，不是几何对象本身；不同序给出的初始理想可能不同，但保留许多可计算信息。 计算性定义的价值在于把几何条件转化为有限代数数据，同时保留与原对象相同的闭包、维数或同调信息。单项式序、齐次化、交重数和高次稳定项都不是装饰性选择，而是决定结果是否对应原几何问题的核心约束。",
       "source_links": [
         {
@@ -964,8 +1444,20 @@
     {
       "chinese_name": "初始理想",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的代数对象。",
+        "它关联单项式退化、希尔伯特函数、格罗布纳基和组合计算。",
+        "一个标准表达是 $\\operatorname{in}_<(I)=\\langle\\operatorname{LT}_<(f)\\mid f\\in I\\rangle$。",
+        "它通常是单项式理想，随单项式序变化，但在平坦退化中保留希尔伯特多项式。",
+        "它的英文译名是 initial ideal。"
+      ],
+      "fragmented_clues": [
+        "代数几何 代数对象",
+        "单项式退化 希尔伯特函数 格罗布纳基 组合计算",
+        "$\\operatorname{in}_<(I)=\\langle\\operatorname{LT}_<(f)\\mid f\\in I\\rangle$",
+        "单项式理想 序依赖 平坦退化 希尔伯特多项式",
+        "initial ideal"
+      ],
       "explanation_markdown": "初始理想由一个理想中所有多项式的首项生成，依赖所选单项式序。对 $I\\subset k[x_1,\\ldots,x_n]$，写作 $\\operatorname{in}_<(I)=\\langle\\operatorname{LT}_<(f)\\mid f\\in I\\rangle$；这里 $<$ 是单项式序。\n\n它通常是单项式理想，使希尔伯特函数、退化和组合结构更容易计算。初始理想不同于原理想，但在平坦退化中与原簇共享希尔伯特多项式；格罗布纳基正是用有限生成元捕捉它。 计算性定义的价值在于把几何条件转化为有限代数数据，同时保留与原对象相同的闭包、维数或同调信息。单项式序、齐次化、交重数和高次稳定项都不是装饰性选择，而是决定结果是否对应原几何问题的核心约束。 这种退化观点把复杂方程压到组合可控的单项式世界。",
       "source_links": [
         {
@@ -988,8 +1480,20 @@
     {
       "chinese_name": "贝祖定理",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的定理。",
+        "它用于射影曲线或高维循环的交点数、重数和无穷远补偿。",
+        "一个标准表达是 $\\sum_{p\\in C\\cap D}I_p(C,D)=mn$。",
+        "必须在射影空间按局部交重数计算，否则仿射图像会漏掉交点。",
+        "它的英文译名是 Bezout theorem。"
+      ],
+      "fragmented_clues": [
+        "代数几何 定理",
+        "射影曲线 高维循环 交点数 重数 无穷远",
+        "$\\sum_{p\\in C\\cap D}I_p(C,D)=mn$",
+        "射影空间 局部交重数 仿射漏点",
+        "Bezout theorem"
+      ],
       "explanation_markdown": "贝祖定理给出射影空间中适当相交代数簇的交点数。平面射影曲线 $C$、$D$ 若没有共同分量，且次数为 $m,n$，则按重数计算有 $\\sum_{p\\in C\\cap D}I_p(C,D)=mn$；$I_p$ 是局部交重数。\n\n它说明交点数必须在射影空间和重数意义下才稳定。仿射图像可能漏掉无穷远点，横截交会与切触也有不同重数；高维版本属于交理论，需用循环和陈类表述。 计算性定义的价值在于把几何条件转化为有限代数数据，同时保留与原对象相同的闭包、维数或同调信息。单项式序、齐次化、交重数和高次稳定项都不是装饰性选择，而是决定结果是否对应原几何问题的核心约束。",
       "source_links": [
         {
@@ -1012,8 +1516,20 @@
     {
       "chinese_name": "消去理论",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的理论。",
+        "它关联变量投影、隐式化、结果式、像的闭包和字典序格罗布纳基。",
+        "一个标准表达是 $I\\subset k[x_1,\\ldots,x_n,y_1,\\ldots,y_m]$。",
+        "它把多变量方程组压到保留变量的理想，几何上对应投影后取闭包。",
+        "它的英文译名是 elimination theory。"
+      ],
+      "fragmented_clues": [
+        "代数几何 理论",
+        "变量投影 隐式化 结果式 像闭包 字典序",
+        "$I\\subset k[x_1,\\ldots,x_n,y_1,\\ldots,y_m]$",
+        "保留变量 理想 投影 闭包",
+        "elimination theory"
+      ],
       "explanation_markdown": "消去理论研究如何从多项式方程组中去掉部分变量，得到投影后的关系。若 $I\\subset k[x_1,\\ldots,x_n,y_1,\\ldots,y_m]$，第一个消去理想常写 $I\\cap k[y_1,\\ldots,y_m]$，它只含保留下来的变量。\n\n几何上，消去对应把零点集投影到较少坐标中，并取适当闭包。格罗布纳基的字典序能实际计算消去理想；它与结果式、隐式化和有理映射像的方程密切相关。 计算性定义的价值在于把几何条件转化为有限代数数据，同时保留与原对象相同的闭包、维数或同调信息。单项式序、齐次化、交重数和高次稳定项都不是装饰性选择，而是决定结果是否对应原几何问题的核心约束。",
       "source_links": [
         {
@@ -1036,8 +1552,20 @@
     {
       "chinese_name": "射影空间",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的几何对象。",
+        "它为齐次方程、射影簇、射影闭包、线丛和交数提供背景。",
+        "一个标准表达是 $\\mathbb P_k^n=(k^{n+1}\\setminus\\{0\\})/k^\\times$。",
+        "点是非零向量的比例类，方程必须齐次，因而自然包含无穷远方向。",
+        "它的英文译名是 projective space。"
+      ],
+      "fragmented_clues": [
+        "代数几何 几何对象",
+        "齐次方程 射影闭包 线丛 交数",
+        "$\\mathbb P_k^n=(k^{n+1}\\setminus\\{0\\})/k^\\times$",
+        "非零向量 比例类 齐次方程 无穷远方向",
+        "projective space"
+      ],
       "explanation_markdown": "射影空间由向量空间中的一维子空间组成，是处理无穷远方向的基本环境。$\\mathbb P_k^n=(k^{n+1}\\setminus\\{0\\})/k^\\times$，点写作 $[x_0:\\cdots:x_n]$；齐次坐标按同一非零标量倍数视为相同。\n\n它不同于仿射空间，因为没有全局坐标函数，方程必须齐次。射影空间可由仿射开集 $D_+(x_i)$ 覆盖，直线总会相交这一性质使交数和闭包更稳定，也是射影簇与投射态射的背景。 射影嵌入、线丛和除子把全局几何转成可计算的线性系统。次数、亏格、交数和典范类会随嵌入或双有理改造表现不同，因此同一簇既要看方程，也要看局部环和全局层。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1060,8 +1588,20 @@
     {
       "chinese_name": "仿射空间",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的几何对象。",
+        "它关联坐标函数、多项式环、仿射簇和全局正则函数。",
+        "一个标准表达是 $\\mathbb A_k^n=\\operatorname{Spec}k[x_1,\\ldots,x_n]$。",
+        "经典点像 $k^n$，概形形式是多项式环的谱，不内置无穷远方向。",
+        "它的英文译名是 affine space。"
+      ],
+      "fragmented_clues": [
+        "代数几何 几何对象",
+        "坐标函数 多项式环 全局正则函数",
+        "$\\mathbb A_k^n=\\operatorname{Spec}k[x_1,\\ldots,x_n]$",
+        "$k^n$ 多项式环谱 无穷远方向缺席",
+        "affine space"
+      ],
       "explanation_markdown": "仿射空间是坐标函数自由取值的代数几何基本空间。$\\mathbb A_k^n=\\operatorname{Spec}k[x_1,\\ldots,x_n]$ 在经典点层面是 $k^n$；坐标函数 $x_i$ 给出全局正则函数。\n\n它与向量空间相似但强调坐标环和多项式函数，而不必选定原点结构。仿射簇是其中由理想切出的闭子集；射影空间则把比例方向纳入，适合讨论无穷远点和齐次方程。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1084,8 +1624,20 @@
     {
       "chinese_name": "格拉斯曼簇",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的几何对象。",
+        "它用于参数化固定维线性子空间，连接向量丛、模空间和舒伯特计算。",
+        "一个标准表达是 $\\mathbb P(\\wedge^r k^n)$。",
+        "同一子空间有多种基表示，普吕克嵌入用外积坐标消除换基自由。",
+        "它的英文译名是 Grassmannian。"
+      ],
+      "fragmented_clues": [
+        "代数几何 几何对象",
+        "固定维线性子空间 向量丛 模空间 舒伯特计算",
+        "$\\mathbb P(\\wedge^r k^n)$",
+        "多基表示 普吕克嵌入 外积坐标 换基自由",
+        "Grassmannian"
+      ],
       "explanation_markdown": "格拉斯曼簇参数化向量空间中固定维数的线性子空间。$\\operatorname{Gr}(r,n)$ 表示 $k^n$ 中 $r$ 维子空间的集合；通过外积可嵌入 $\\mathbb P(\\wedge^r k^n)$，坐标称为普吕克坐标。\n\n它不是普通矩阵空间，因为同一子空间可由许多基表示。普吕克关系给出其射影方程，使格拉斯曼簇成为射影簇；它在向量丛、模空间、交理论和表示论中都承担参数空间角色。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1108,8 +1660,20 @@
     {
       "chinese_name": "普吕克坐标",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它关联格拉斯曼簇的射影嵌入、子式、外幂和二次关系。",
+        "一个标准表达是 $[p_I]\\in\\mathbb P(\\wedge^r k^n)$。",
+        "这些坐标由所有最大子式给出，换基只整体缩放，并受普吕克关系约束。",
+        "它的英文译名是 Plucker coordinates。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "格拉斯曼簇 射影嵌入 子式 外幂 二次关系",
+        "$[p_I]\\in\\mathbb P(\\wedge^r k^n)$",
+        "最大子式 换基缩放 普吕克关系",
+        "Plucker coordinates"
+      ],
       "explanation_markdown": "普吕克坐标把一个 $r$ 维子空间用其基向量的所有 $r\\times r$ 子式表示。若矩阵行张成 $W\\subset k^n$，则坐标 $p_I=\\det A_I$ 给出点 $[p_I]\\in\\mathbb P(\\wedge^r k^n)$；$I$ 遍历 $r$ 元指标集。\n\n这些坐标不独立，必须满足普吕克二次关系。它们区别于任意矩阵坐标，因为换基只会整体缩放，表示的仍是同一个子空间；格拉斯曼簇的射影嵌入正由这些齐次坐标给出。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1132,8 +1696,20 @@
     {
       "chinese_name": "旗簇",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的几何对象。",
+        "它用于记录嵌套子空间链、代数群商、舒伯特分解和表示论几何。",
+        "一个标准表达是 $0=V_0\\subset V_1\\subset\\cdots\\subset V_n=k^n$。",
+        "它比格拉斯曼簇多出一整列相容子空间，常写作 $G/B$。",
+        "它的英文译名是 flag variety。"
+      ],
+      "fragmented_clues": [
+        "代数几何 几何对象",
+        "嵌套子空间链 代数群商 舒伯特分解 表示论几何",
+        "$0=V_0\\subset V_1\\subset\\cdots\\subset V_n=k^n$",
+        "相容子空间列 $G/B$ 格拉斯曼簇对比",
+        "flag variety"
+      ],
       "explanation_markdown": "旗簇参数化向量空间中的嵌套子空间链。完全旗可写为 $0=V_0\\subset V_1\\subset\\cdots\\subset V_n=k^n$ 且 $\\dim V_i=i$；一般旗则指定若干维数。代数群形式中常有 $\\mathcal F\\ell=G/B$。\n\n它比格拉斯曼簇记录更多相容的子空间数据，而不是单个子空间。旗簇是射影光滑簇，带有舒伯特分解；在李理论、表示论和交理论中，它把代数群作用与几何分层结合起来。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1156,8 +1732,20 @@
     {
       "chinese_name": "塞格雷嵌入",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的嵌入构造。",
+        "它关联射影空间乘积、张量秩一对象和双线性坐标。",
+        "一个标准表达是 $\\mathbb P^m\\times\\mathbb P^n\\to\\mathbb P^{(m+1)(n+1)-1}$。",
+        "其像由秩一矩阵条件刻画，即所有 $2\\times2$ 子式为零。",
+        "它的英文译名是 Segre embedding。"
+      ],
+      "fragmented_clues": [
+        "代数几何 嵌入构造",
+        "射影空间乘积 张量 秩一 双线性坐标",
+        "$\\mathbb P^m\\times\\mathbb P^n\\to\\mathbb P^{(m+1)(n+1)-1}$",
+        "秩一矩阵 $2\\times2$ 子式为零",
+        "Segre embedding"
+      ],
       "explanation_markdown": "塞格雷嵌入把两个射影空间的乘积嵌入一个更大的射影空间。公式为 $\\mathbb P^m\\times\\mathbb P^n\\to\\mathbb P^{(m+1)(n+1)-1}$，$([x_i],[y_j])\\mapsto [x_i y_j]$；坐标是所有双线性乘积。\n\n其像由秩一矩阵的二次方程刻画，即所有 $2\\times2$ 子式为零。它不同于维罗内塞嵌入，后者取同一射影空间上固定次数的单项式；塞格雷嵌入表达的是乘积结构和张量分解。 态射语言关心方程族怎样随底变化，纤维积和基变换记录参数改变后的几何。平坦性看纤维是否连续变化，光滑性排除奇异方向，有限性和适当性则控制像、纤维和闭性行为。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1180,8 +1768,20 @@
     {
       "chinese_name": "维罗内塞嵌入",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的嵌入构造。",
+        "它用于把固定次数齐次单项式、对称幂和线性系统变成射影嵌入。",
+        "一个标准表达是 $[x_0:\\cdots:x_n]\\mapsto [x^I]_{|I|=d}$。",
+        "它把次数 $d$ 超曲面转为目标空间超平面截面，区别于双线性的塞格雷嵌入。",
+        "它的英文译名是 Veronese embedding。"
+      ],
+      "fragmented_clues": [
+        "代数几何 嵌入构造",
+        "固定次数 齐次单项式 对称幂 线性系统",
+        "$[x_0:\\cdots:x_n]\\mapsto [x^I]_{|I|=d}$",
+        "$d$ 次 超平面截面 双线性对比",
+        "Veronese embedding"
+      ],
       "explanation_markdown": "维罗内塞嵌入把射影空间送入所有固定次数齐次单项式组成的射影空间。$\\nu_d:\\mathbb P^n\\to\\mathbb P^N$ 定义为 $[x_0:\\cdots:x_n]\\mapsto [x^I]_{|I|=d}$，其中 $N=\\binom{n+d}{d}-1$。\n\n它把次数 $d$ 的超曲面变成目标空间中的超平面截面，因此常用于研究线性系统和投射嵌入。它不同于塞格雷嵌入的双线性乘积，维罗内塞强调同一组坐标的对称幂。 态射语言关心方程族怎样随底变化，纤维积和基变换记录参数改变后的几何。平坦性看纤维是否连续变化，光滑性排除奇异方向，有限性和适当性则控制像、纤维和闭性行为。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1204,8 +1804,20 @@
     {
       "chinese_name": "吹胀",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它用于分辨奇点、处理有理映射不定点和双有理改造。",
+        "一个标准表达是 $\\operatorname{Bl}_{\\mathcal I}X=\\operatorname{Proj}\\bigoplus_{n\\ge0}\\mathcal I^n$。",
+        "它在中心外保持同构，却把中心替换为记录法向方向的例外除子。",
+        "它的英文译名是 blow-up。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "分辨奇点 不定点 双有理改造",
+        "$\\operatorname{Bl}_{\\mathcal I}X=\\operatorname{Proj}\\bigoplus_{n\\ge0}\\mathcal I^n$",
+        "中心外同构 法向方向 例外除子",
+        "blow-up"
+      ],
       "explanation_markdown": "吹胀是在子概形附近替换出法向方向的双有理改造。对 $X$ 中理想层 $\\mathcal I$，吹胀可写作 $\\operatorname{Bl}_{\\mathcal I}X=\\operatorname{Proj}\\bigoplus_{n\\ge0}\\mathcal I^n$；这里分次代数记录理想的幂。\n\n它把中心 $Z$ 替换为例外除子，常用于分辨奇点和分离有理映射的不定点。吹胀不是同构，但在中心外保持同构；与正规化不同，它依赖选定中心并改变局部嵌入几何。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1228,8 +1840,20 @@
     {
       "chinese_name": "例外除子",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它关联吹胀中心、法丛、收缩映射、典范除子公式和交数变化。",
+        "一个标准表达是 $\\pi:\\operatorname{Bl}_Z X\\to X$。",
+        "它位于中心上方并可被收缩到更小维对象，不是原空间里的普通除子。",
+        "它的英文译名是 exceptional divisor。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "吹胀中心 法丛 收缩映射 典范公式 交数变化",
+        "$\\pi:\\operatorname{Bl}_Z X\\to X$",
+        "中心上方 可收缩 小维对象 普通除子对比",
+        "exceptional divisor"
+      ],
       "explanation_markdown": "例外除子是吹胀后位于吹胀中心上方的新除子。若 $\\pi:\\operatorname{Bl}_Z X\\to X$，则 $E=\\pi^{-1}(Z)$ 常为例外除子；在光滑中心情形，$E\\cong\\mathbb P(N_{Z/X})$，其中 $N_{Z/X}$ 是法丛。\n\n它记录被替换出的法向方向和交数变化。例外除子不同于原空间中的普通除子，因为它被 $\\pi$ 收缩回较小维数的中心；在双有理几何中，典范除子公式和极小模型都要跟踪它的系数。 射影嵌入、线丛和除子把全局几何转成可计算的线性系统。次数、亏格、交数和典范类会随嵌入或双有理改造表现不同，因此同一簇既要看方程，也要看局部环和全局层。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1252,8 +1876,20 @@
     {
       "chinese_name": "卡蒂埃除子",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它用于局部方程、线丛、线性系统、交数和可逆层构造。",
+        "一个标准表达是 $f_i/f_j\\in\\mathcal O_X^\\times(U_i\\cap U_j)$。",
+        "它局部由一个有理函数给出，相邻开集上的比值必须是单位。",
+        "它的英文译名是 Cartier divisor。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "局部方程 线丛 线性系统 交数 可逆层",
+        "$f_i/f_j\\in\\mathcal O_X^\\times(U_i\\cap U_j)$",
+        "有理函数 局部定义 开集比值 单位",
+        "Cartier divisor"
+      ],
       "explanation_markdown": "卡蒂埃除子是局部由一个非零因子有理函数定义的除子。它可表示为开覆盖 $U_i$ 上的 $f_i\\in K(X)^\\times$，且 $f_i/f_j\\in\\mathcal O_X^\\times(U_i\\cap U_j)$；这里 $K(X)$ 是函数域，单位条件保证局部方程相容。\n\n它比韦伊除子更依赖局部方程，在非正则空间中二者可能不同。卡蒂埃除子自然给出可逆层 $\\mathcal O_X(D)$，因此与线丛、交数和线性系统关系密切；在正则概形上，许多韦伊除子也是卡蒂埃除子。 射影嵌入、线丛和除子把全局几何转成可计算的线性系统。次数、亏格、交数和典范类会随嵌入或双有理改造表现不同，因此同一簇既要看方程，也要看局部环和全局层。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1276,8 +1912,20 @@
     {
       "chinese_name": "韦伊除子",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它关联余维一子簇、赋值、因子类群和双有理几何中的循环数据。",
+        "一个标准表达是 $D=\\sum_Z n_Z Z$。",
+        "它是整数线性组合，不一定能由局部单个方程定义，弱于卡蒂埃除子。",
+        "它的英文译名是 Weil divisor。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "余维一子簇 赋值 因子类群 循环数据",
+        "$D=\\sum_Z n_Z Z$",
+        "整数线性组合 非局部单方程 卡蒂埃对比",
+        "Weil divisor"
+      ],
       "explanation_markdown": "韦伊除子是余维一不可约闭子集的整数线性组合。通常写 $D=\\sum_Z n_Z Z$，其中 $Z$ 遍历余维一子簇，$n_Z\\in\\mathbb Z$ 且只有有限多个非零；正负系数分别表示零点和极点的阶。\n\n它强调循环层面的余维一数据，不一定由局部单个方程给出。卡蒂埃除子局部主除子性质更强，韦伊除子在正规概形上与有理函数赋值配合良好，用于描述因子类群和双有理几何中的例外成分。 射影嵌入、线丛和除子把全局几何转成可计算的线性系统。次数、亏格、交数和典范类会随嵌入或双有理改造表现不同，因此同一簇既要看方程，也要看局部环和全局层。",
       "source_links": [
         {
@@ -1300,8 +1948,20 @@
     {
       "chinese_name": "线丛",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的几何对象。",
+        "它用于描述除子、射影嵌入、截面、过渡函数和皮卡群。",
+        "一个标准表达是 $g_{ij}\\in\\mathcal O_X^\\times(U_i\\cap U_j)$。",
+        "局部看作秩一自由模，粘合由可逆函数完成，几何上等同于可逆层。",
+        "它的英文译名是 line bundle。"
+      ],
+      "fragmented_clues": [
+        "代数几何 几何对象",
+        "除子 射影嵌入 截面 过渡函数 皮卡群",
+        "$g_{ij}\\in\\mathcal O_X^\\times(U_i\\cap U_j)$",
+        "秩一自由模 可逆函数粘合 可逆层",
+        "line bundle"
+      ],
       "explanation_markdown": "线丛是秩一的向量丛，局部看成一个自由一维模。对概形 $X$，线丛对应局部自由秩一的 $\\mathcal O_X$-模 $\\mathcal L$；在开覆盖 $U_i$ 上由过渡函数 $g_{ij}\\in\\mathcal O_X^\\times(U_i\\cap U_j)$ 粘合。\n\n它与可逆层是同一概念的几何和层论说法。线丛的截面给出除子和射影嵌入，皮卡群用张量积把同构类组织成群；$\\mathcal O(1)$ 是射影空间上最基本的例子。 射影嵌入、线丛和除子把全局几何转成可计算的线性系统。次数、亏格、交数和典范类会随嵌入或双有理改造表现不同，因此同一簇既要看方程，也要看局部环和全局层。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1324,8 +1984,20 @@
     {
       "chinese_name": "可逆层",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它关联卡蒂埃除子、线性系统、皮卡群和典范层。",
+        "一个标准表达是 $\\mathcal L\\otimes\\mathcal L^{-1}\\cong\\mathcal O_X$。",
+        "它具有张量逆，局部同构于结构层，强于一般凝聚层。",
+        "它的英文译名是 invertible sheaf。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "卡蒂埃除子 线性系统 皮卡群 典范层",
+        "$\\mathcal L\\otimes\\mathcal L^{-1}\\cong\\mathcal O_X$",
+        "张量逆 结构层局部同构 凝聚层对比",
+        "invertible sheaf"
+      ],
       "explanation_markdown": "可逆层是局部自由秩一的 $\\mathcal O_X$-模层，也就是线丛的层论形式。若 $\\mathcal L$ 可逆，则每点附近有 $\\mathcal L|_U\\cong\\mathcal O_U$；其对偶满足 $\\mathcal L\\otimes\\mathcal L^{-1}\\cong\\mathcal O_X$。\n\n它不同于一般凝聚层，因为张量逆存在。卡蒂埃除子 $D$ 产生可逆层 $\\mathcal O_X(D)$，而同构类在张量积下形成皮卡群。可逆层用于描述线性系统、射影嵌入和典范层。 层语言把局部截面、限制映射和粘合条件放在一起，茎负责逐点检验。结构层模、正合列和导出函子会决定支撑、有限性和上同调，不同类型的层由局部化相容性与有限生成条件区分。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1348,8 +2020,20 @@
     {
       "chinese_name": "皮卡群",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的群论对象。",
+        "它用于组织线丛同构类、卡蒂埃除子、线性等价和代数族中的极化数据。",
+        "一个标准表达是 $[\\mathcal L][\\mathcal M]=[\\mathcal L\\otimes\\mathcal M]$。",
+        "群运算来自张量积，单位是结构层，逆元由对偶线丛给出。",
+        "它的英文译名是 Picard group。"
+      ],
+      "fragmented_clues": [
+        "代数几何 群论对象",
+        "线丛同构类 卡蒂埃除子 线性等价 极化",
+        "$[\\mathcal L][\\mathcal M]=[\\mathcal L\\otimes\\mathcal M]$",
+        "张量积 结构层单位 对偶线丛逆元",
+        "Picard group"
+      ],
       "explanation_markdown": "皮卡群是概形上线丛同构类按张量积形成的群。记作 $\\operatorname{Pic}(X)$，乘法为 $[\\mathcal L][\\mathcal M]=[\\mathcal L\\otimes\\mathcal M]$，单位元是 $[\\mathcal O_X]$，逆元由对偶线丛给出。\n\n它不同于因子类群，后者以韦伊除子为对象；在正则或适当条件下二者常有紧密联系。皮卡群记录可逆层、卡蒂埃除子和代数族中的线性等价，是研究曲线、阿贝尔簇和模空间的重要不变量。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1372,8 +2056,20 @@
     {
       "chinese_name": "典范除子",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它关联最高阶有理微分、典范类、双有理分类和极小模型纲领。",
+        "一个标准表达是 $K_X=\\operatorname{div}(\\omega)$。",
+        "它不是任意除子，而记录体积形式的零极点；不同形式只改变主除子。",
+        "它的英文译名是 canonical divisor。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "最高阶有理微分 典范类 双有理分类 极小模型",
+        "$K_X=\\operatorname{div}(\\omega)$",
+        "体积形式 零极点 主除子差异",
+        "canonical divisor"
+      ],
       "explanation_markdown": "典范除子表示最高阶微分形式的零极点数据。对光滑不可约簇 $X$，任取非零有理 $n$-形式 $\\omega\\in\\Omega^n_{K(X)/k}$，其除子 $K_X=\\operatorname{div}(\\omega)$ 称为典范除子；不同选择相差主除子。\n\n它的线性等价类对应典范层 $\\omega_X$。典范除子不是任意除子，而反映切丛或余切丛的体积形式；其正负性区分 Fano、Calabi-Yau 和一般型，极小模型纲领围绕 $K_X$ 的行为展开。 射影嵌入、线丛和除子把全局几何转成可计算的线性系统。次数、亏格、交数和典范类会随嵌入或双有理改造表现不同，因此同一簇既要看方程，也要看局部环和全局层。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1396,8 +2092,20 @@
     {
       "chinese_name": "典范层",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它用于塞尔对偶、黎曼罗赫、正则形式和奇异空间的对偶理论。",
+        "一个标准表达是 $\\omega_X=\\Omega^n_X=\\wedge^n\\Omega^1_X$。",
+        "光滑时是最高外幂微分层，奇异时需用对偶化层替代。",
+        "它的英文译名是 canonical sheaf。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "塞尔对偶 黎曼罗赫 正则形式 对偶理论",
+        "$\\omega_X=\\Omega^n_X=\\wedge^n\\Omega^1_X$",
+        "最高外幂 微分层 奇异情形 对偶化层",
+        "canonical sheaf"
+      ],
       "explanation_markdown": "典范层是最高阶微分形式组成的线丛，光滑 $n$ 维簇上写作 $\\omega_X=\\Omega^n_X=\\wedge^n\\Omega^1_X$。这里 $\\Omega^1_X$ 是一阶微分层，外幂取出体积形式。\n\n它与典范除子对应：若 $D$ 是典范除子，则常有 $\\omega_X\\cong\\mathcal O_X(D)$。奇异空间中需用对偶化层或相对对偶理论替代；典范层控制塞尔对偶、黎曼罗赫和双有理分类中的正则形式。 层语言把局部截面、限制映射和粘合条件放在一起，茎负责逐点检验。结构层模、正合列和导出函子会决定支撑、有限性和上同调，不同类型的层由局部化相容性与有限生成条件区分。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1420,8 +2128,20 @@
     {
       "chinese_name": "黎曼罗赫定理",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的定理。",
+        "它用于计算曲线除子线性系统和高维情形中的欧拉示性数。",
+        "一个标准表达是 $\\ell(D)-\\ell(K-D)=\\deg D+1-g$。",
+        "曲线公式中的修正项由典范除子控制，连接次数、亏格和截面维数。",
+        "它的英文译名是 Riemann-Roch theorem。"
+      ],
+      "fragmented_clues": [
+        "代数几何 定理",
+        "除子线性系统 高维 欧拉示性数",
+        "$\\ell(D)-\\ell(K-D)=\\deg D+1-g$",
+        "典范除子 修正项 次数 亏格 截面维数",
+        "Riemann-Roch theorem"
+      ],
       "explanation_markdown": "黎曼罗赫定理把线丛截面的维数与除子次数和亏格联系起来。对光滑射影曲线 $C$ 上除子 $D$，公式为 $\\ell(D)-\\ell(K-D)=\\deg D+1-g$；这里 $K$ 是典范除子，$g$ 是亏格，$\\ell(D)=h^0(C,\\mathcal O(D))$。\n\n它不仅计算函数空间维数，也说明特殊除子的贡献由典范除子控制。高维版本需要陈类和托德类，写成欧拉示性数公式；曲线版本则是代数曲线线性系统的核心工具。 射影嵌入、线丛和除子把全局几何转成可计算的线性系统。次数、亏格、交数和典范类会随嵌入或双有理改造表现不同，因此同一簇既要看方程，也要看局部环和全局层。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1444,8 +2164,20 @@
     {
       "chinese_name": "曲线亏格",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它关联曲线拓扑把手数、全纯一形式、典范层和黎曼罗赫偏差。",
+        "一个标准表达是 $g=h^1(C,\\mathcal O_C)=\\dim H^0(C,\\omega_C)$。",
+        "它是抽象曲线不变量，不像次数那样依赖射影嵌入。",
+        "它的英文译名是 genus of a curve。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "拓扑把手 全纯一形式 典范层 黎曼罗赫",
+        "$g=h^1(C,\\mathcal O_C)=\\dim H^0(C,\\omega_C)$",
+        "抽象曲线不变量 次数对比 射影嵌入无关",
+        "genus of a curve"
+      ],
       "explanation_markdown": "曲线亏格是光滑射影曲线的基本不变量，可看成独立全纯一形式的数目。代数上 $g=h^1(C,\\mathcal O_C)=\\dim H^0(C,\\omega_C)$；这里 $\\omega_C$ 是典范层，等式来自塞尔对偶。\n\n对复曲线，亏格等于拓扑把手数。它不同于曲线次数，次数依赖嵌入，亏格是抽象曲线不变量；在黎曼罗赫公式中，$g$ 控制有理函数和除子线性系统的维数偏差。 射影嵌入、线丛和除子把全局几何转成可计算的线性系统。次数、亏格、交数和典范类会随嵌入或双有理改造表现不同，因此同一簇既要看方程，也要看局部环和全局层。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1468,8 +2200,20 @@
     {
       "chinese_name": "椭圆曲线",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的几何对象。",
+        "它连接亏格一曲线、群律、复环面、模形式和有理点问题。",
+        "一个标准表达是 $\\Delta=-16(4a^3+27b^2)\\ne0$。",
+        "必须光滑且带基点；无穷远点作为单位元，判别式非零排除奇点。",
+        "它的英文译名是 elliptic curve。"
+      ],
+      "fragmented_clues": [
+        "代数几何 几何对象",
+        "亏格一曲线 群律 复环面 模形式 有理点",
+        "$\\Delta=-16(4a^3+27b^2)\\ne0$",
+        "光滑 基点 无穷远单位 判别式非零",
+        "elliptic curve"
+      ],
       "explanation_markdown": "椭圆曲线是带有指定基点的光滑射影亏格一曲线。若特征不为 $2,3$，常写成 $y^2=x^3+ax+b$，并要求判别式 $\\Delta=-16(4a^3+27b^2)\\ne0$；无穷远点作为单位元。\n\n它既是代数曲线，也是阿贝尔簇的一维例子。亏格一曲线若没有基点不一定有群结构；椭圆曲线的加法来自割线与切线法，并连接复环面、模形式和数论中的有理点。 射影嵌入、线丛和除子把全局几何转成可计算的线性系统。次数、亏格、交数和典范类会随嵌入或双有理改造表现不同，因此同一簇既要看方程，也要看局部环和全局层。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1492,8 +2236,20 @@
     {
       "chinese_name": "阿贝尔簇",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的几何对象。",
+        "它关联完备代数群、极化、对偶簇、雅可比簇和数论几何。",
+        "一个标准表达是 $m:A\\times A\\to A$。",
+        "它既是射影簇又有群运算，与一般代数群相比额外满足完备性。",
+        "它的英文译名是 abelian variety。"
+      ],
+      "fragmented_clues": [
+        "代数几何 几何对象",
+        "完备代数群 极化 对偶簇 雅可比簇 数论几何",
+        "$m:A\\times A\\to A$",
+        "射影簇 群运算 完备性",
+        "abelian variety"
+      ],
       "explanation_markdown": "阿贝尔簇是完备的连通代数群，兼具射影几何和群结构。对基域 $k$，它是群对象 $A$，乘法 $m:A\\times A\\to A$、逆元和单位截面都是态射；完备性迫使它在代数几何中像紧复环面。\n\n它与一般代数群不同，后者未必完备；与椭圆曲线相比，阿贝尔簇允许任意维数。雅可比簇是曲线产生的典型例子，极化和对偶阿贝尔簇用于研究线丛、模空间和数论。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1516,8 +2272,20 @@
     {
       "chinese_name": "雅可比簇",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的几何对象。",
+        "它用于把曲线的度零线丛、除子线性等价和阿贝尔-雅可比映射组织成群。",
+        "一个标准表达是 $J(C)=\\operatorname{Pic}^0(C)$。",
+        "它是曲线产生的阿贝尔簇；亏格一带基点时与原曲线同构。",
+        "它的英文译名是 Jacobian variety。"
+      ],
+      "fragmented_clues": [
+        "代数几何 几何对象",
+        "度零线丛 除子线性等价 阿贝尔雅可比映射",
+        "$J(C)=\\operatorname{Pic}^0(C)$",
+        "曲线产生 阿贝尔簇 亏格一 同构",
+        "Jacobian variety"
+      ],
       "explanation_markdown": "雅可比簇是光滑射影曲线的度零线丛组成的阿贝尔簇。对曲线 $C$，常写 $J(C)=\\operatorname{Pic}^0(C)$；复数域上也可表示为 $H^0(C,\\omega_C)^*/H_1(C,\\mathbb Z)$ 的复环面。\n\n它把曲线的除子线性等价转化为群结构。雅可比簇不同于曲线本身，但阿贝尔-雅可比映射 $C\\to J(C)$ 保存大量信息；亏格为一时，带基点曲线与其雅可比簇同构。 射影嵌入、线丛和除子把全局几何转成可计算的线性系统。次数、亏格、交数和典范类会随嵌入或双有理改造表现不同，因此同一簇既要看方程，也要看局部环和全局层。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1540,8 +2308,20 @@
     {
       "chinese_name": "有理曲线",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的几何对象。",
+        "它关联全局参数化、函数域 $k(t)$、正规化和亏格零曲线。",
+        "一个标准表达是 $K(C)\\cong k(t)$。",
+        "光滑射影情形等同于 $\\mathbb P^1$，高亏格曲线没有这种有理参数。",
+        "它的英文译名是 rational curve。"
+      ],
+      "fragmented_clues": [
+        "代数几何 几何对象",
+        "全局参数化 $k(t)$ 正规化 亏格零",
+        "$K(C)\\cong k(t)$",
+        "$\\mathbb P^1$ 高亏格对比 有理参数",
+        "rational curve"
+      ],
       "explanation_markdown": "有理曲线是双有理等价于射影直线的代数曲线。若 $C$ 有函数域 $K(C)\\cong k(t)$，则称 $C$ 为有理曲线；光滑射影情形中这等价于亏格 $g=0$，典型模型是 $\\mathbb P^1$。\n\n它不同于一般射影曲线，高亏格曲线没有全局有理参数。平面曲线即使有奇点也可能通过参数化成为有理曲线；正规化常把有理奇异曲线还原为 $\\mathbb P^1$。 射影嵌入、线丛和除子把全局几何转成可计算的线性系统。次数、亏格、交数和典范类会随嵌入或双有理改造表现不同，因此同一簇既要看方程，也要看局部环和全局层。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1564,8 +2344,20 @@
     {
       "chinese_name": "奇异曲线",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的几何对象。",
+        "它用于研究平面曲线偏导退化、正规化、算术亏格和局部重数。",
+        "一个标准表达是 $\\partial f/\\partial x(p)=\\partial f/\\partial y(p)=0$。",
+        "它在某些点局部环不正则，节点和尖点给出最常见局部模型。",
+        "它的英文译名是 singular curve。"
+      ],
+      "fragmented_clues": [
+        "代数几何 几何对象",
+        "偏导退化 正规化 算术亏格 局部重数",
+        "$\\partial f/\\partial x(p)=\\partial f/\\partial y(p)=0$",
+        "局部环非正则 节点 尖点 局部模型",
+        "singular curve"
+      ],
       "explanation_markdown": "奇异曲线是在某些点局部环不正则的代数曲线。若平面曲线由 $f(x,y)=0$ 给出，点 $p$ 奇异通常满足 $f(p)=0$ 且 $\\partial f/\\partial x(p)=\\partial f/\\partial y(p)=0$；这些条件使切空间维数过大。\n\n节点和尖点是最常见的局部模型。奇异曲线的算术亏格与正规化亏格不同，差额由奇点的 $\\delta$-不变量贡献；研究它时需要区分集合上的交点和局部环中保留的重数。 射影嵌入、线丛和除子把全局几何转成可计算的线性系统。次数、亏格、交数和典范类会随嵌入或双有理改造表现不同，因此同一簇既要看方程，也要看局部环和全局层。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1588,8 +2380,20 @@
     {
       "chinese_name": "节点",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它关联曲线退化、稳定曲线、正规化分支和局部交叉模型。",
+        "一个标准表达是 $\\delta=1$。",
+        "局部像两条光滑分支横截相交，正规化会把该点分成两个点。",
+        "它的英文译名是 node。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "曲线退化 稳定曲线 正规化分支 交叉模型",
+        "$\\delta=1$",
+        "两条光滑分支 横截相交 正规化两点",
+        "node"
+      ],
       "explanation_markdown": "节点是曲线奇点中两条光滑分支横截相交的局部形态。局部解析模型常写 $xy=0$，或在平面曲线中表现为二次齐次项分解成两个不同线性因子；其切锥有两条不同切线。\n\n它与尖点不同，尖点只有一条分支但带重切。节点的正规化会把交点分成两个点，$\\delta=1$；因此它在稳定曲线、退化族和交理论中常作为最温和的奇点出现。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1612,8 +2416,20 @@
     {
       "chinese_name": "尖点",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它用于描述单分支曲线奇点、参数化、切锥和局部环非正则性。",
+        "一个标准表达是 $x=t^2,y=t^3$。",
+        "典型模型只有一条切线并带高阶自切，区别于两分支节点。",
+        "它的英文译名是 cusp。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "单分支奇点 参数化 切锥 局部环非正则",
+        "$x=t^2,y=t^3$",
+        "一条切线 高阶自切 两分支对比",
+        "cusp"
+      ],
       "explanation_markdown": "尖点是曲线的一条分支以高阶方式自切形成的奇点。典型局部方程为 $y^2=x^3$，可参数化为 $x=t^2,y=t^3$；它的切锥只有一条切线，局部环不是正则环。\n\n它不同于节点的两分支横截相交。尖点正规化后只对应一个点，但仍贡献 $\\delta=1$；在平面曲线中，尖点说明仅看点集形状不足以判断局部代数结构，必须考虑参数化和局部环。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1636,8 +2452,20 @@
     {
       "chinese_name": "平面曲线",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的几何对象。",
+        "它关联单个平面方程、奇点、次数、贝祖定理和亏格公式。",
+        "一个标准表达是 $g=(d-1)(d-2)/2$。",
+        "它带有具体平面嵌入，交点和次数可直接由方程计算。",
+        "它的英文译名是 plane curve。"
+      ],
+      "fragmented_clues": [
+        "代数几何 几何对象",
+        "平面方程 奇点 次数 贝祖定理 亏格公式",
+        "$g=(d-1)(d-2)/2$",
+        "平面嵌入 交点 次数 方程计算",
+        "plane curve"
+      ],
       "explanation_markdown": "平面曲线是嵌入仿射平面或射影平面的代数曲线。仿射情形通常由一个方程 $f(x,y)=0$ 给出；射影情形由齐次多项式 $F(x,y,z)=0$ 定义，次数为 $\\deg F$。\n\n它与抽象曲线不同，包含具体平面嵌入，因此交点、奇点和次数都依赖方程所在平面。光滑射影平面曲线的亏格为 $g=(d-1)(d-2)/2$，而奇点会通过修正项降低几何亏格。 射影嵌入、线丛和除子把全局几何转成可计算的线性系统。次数、亏格、交数和典范类会随嵌入或双有理改造表现不同，因此同一簇既要看方程，也要看局部环和全局层。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1660,8 +2488,20 @@
     {
       "chinese_name": "射影曲线",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的几何对象。",
+        "它用于除子、线丛、亏格、函数域和黎曼罗赫理论。",
+        "一个标准表达是 $C\\subset\\mathbb P^n$。",
+        "适当性补上无穷远点，使有理函数零极点总次数平衡。",
+        "它的英文译名是 projective curve。"
+      ],
+      "fragmented_clues": [
+        "代数几何 几何对象",
+        "除子 线丛 亏格 函数域 黎曼罗赫",
+        "$C\\subset\\mathbb P^n$",
+        "适当性 无穷远点 零极点次数平衡",
+        "projective curve"
+      ],
       "explanation_markdown": "射影曲线是一维的射影代数簇或射影概形，具有适当性带来的紧性性质。若 $C\\subset\\mathbb P^n$，可由齐次理想 $I(C)$ 定义；其函数域 $K(C)$ 记录一般点附近的有理函数。\n\n它不同于仿射曲线，后者可能缺少无穷远点。对光滑射影曲线，除子、线丛、亏格和黎曼罗赫定理形成完整理论；射影性保证有理函数的零点和极点总次数相同。 射影嵌入、线丛和除子把全局几何转成可计算的线性系统。次数、亏格、交数和典范类会随嵌入或双有理改造表现不同，因此同一簇既要看方程，也要看局部环和全局层。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1684,8 +2524,20 @@
     {
       "chinese_name": "代数曲面",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的几何对象。",
+        "它关联除子交数、例外曲线、奇点、双有理变换和曲面分类。",
+        "一个标准表达是 $\\dim X=2$。",
+        "维数为二，比曲线有更丰富的吹胀和极小模型结构。",
+        "它的英文译名是 algebraic surface。"
+      ],
+      "fragmented_clues": [
+        "代数几何 几何对象",
+        "除子交数 例外曲线 奇点 双有理变换",
+        "$\\dim X=2$",
+        "二维 曲线对比 吹胀 极小模型",
+        "algebraic surface"
+      ],
       "explanation_markdown": "代数曲面是二维代数簇或概形，局部由两个自由参数描述。若 $X$ 不可约，则 $\\dim X=2$；在射影情形中，交理论会把除子交成数值 $D_1\\cdot D_2$，其中 $D_i$ 是曲面上的除子。\n\n曲面比曲线复杂，因为奇点、例外曲线和双有理变换更丰富。它与三维以上对象相比又保留较强分类理论；有理曲面、极小模型、典范除子和吹胀都是曲面研究中的基本主题。 射影嵌入、线丛和除子把全局几何转成可计算的线性系统。次数、亏格、交数和典范类会随嵌入或双有理改造表现不同，因此同一簇既要看方程，也要看局部环和全局层。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1708,8 +2560,20 @@
     {
       "chinese_name": "有理曲面",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的几何对象。",
+        "它用于研究与射影平面同函数域的曲面、点吹胀和曲面分类。",
+        "一个标准表达是 $K(X)\\cong k(u,v)$。",
+        "它可由吹胀改变外形却保持函数域，不必同构于 $\\mathbb P^2$。",
+        "它的英文译名是 rational surface。"
+      ],
+      "fragmented_clues": [
+        "代数几何 几何对象",
+        "射影平面 函数域 点吹胀 曲面分类",
+        "$K(X)\\cong k(u,v)$",
+        "吹胀外形 函数域不变 $\\mathbb P^2$ 对比",
+        "rational surface"
+      ],
       "explanation_markdown": "有理曲面是双有理等价于射影平面的代数曲面。等价地，其函数域满足 $K(X)\\cong k(u,v)$；这里 $u,v$ 是两个代数独立变量。典型例子包括 $\\mathbb P^2$ 及其有限次点吹胀。\n\n它不必同构于射影平面，因为吹胀会增加例外曲线但保持函数域。有理曲面与单有理曲面不同，后者只要求有支配有理映射；在代数闭域上，曲面分类常通过极小模型区分它们。 射影嵌入、线丛和除子把全局几何转成可计算的线性系统。次数、亏格、交数和典范类会随嵌入或双有理改造表现不同，因此同一簇既要看方程，也要看局部环和全局层。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1732,8 +2596,20 @@
     {
       "chinese_name": "极小模型",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它关联双有理收缩、翻转、典范除子正性和 Mori 理论。",
+        "一个标准表达是 $K_X\\cdot C\\ge0$。",
+        "曲面上排除可收缩的 $-1$ 曲线，高维中要求典范类对曲线非负。",
+        "它的英文译名是 minimal model。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "双有理收缩 翻转 典范正性 Mori理论",
+        "$K_X\\cdot C\\ge0$",
+        "$-1$ 曲线 高维典范类 非负",
+        "minimal model"
+      ],
       "explanation_markdown": "极小模型是在双有理等价类中去掉可收缩例外成分后得到的较简模型。曲面上常要求不存在自交为 $-1$ 的光滑有理曲线；高维中则要求典范除子 $K_X$ 对所有曲线非负，即 $K_X\\cdot C\\ge0$。\n\n它不是任意最小维数对象，而是相对于双有理收缩和典范类的最简代表。极小模型纲领通过翻转、除子收缩和 Mori 纤维空间分类代数簇，核心是控制 $K_X$ 的正性。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1756,8 +2632,20 @@
     {
       "chinese_name": "分歧覆盖",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的覆盖构造。",
+        "它用于有限映射、曲线函数域扩张、分歧除子和黎曼-赫尔维茨公式。",
+        "一个标准表达是 $2g_Y-2=d(2g_X-2)+\\deg R$。",
+        "它允许若干张叶在特殊点合并，局部表现为分歧指数大于一。",
+        "它的英文译名是 branched cover。"
+      ],
+      "fragmented_clues": [
+        "代数几何 覆盖构造",
+        "有限映射 函数域扩张 分歧除子 黎曼赫尔维茨",
+        "$2g_Y-2=d(2g_X-2)+\\deg R$",
+        "张叶合并 特殊点 分歧指数大于一",
+        "branched cover"
+      ],
       "explanation_markdown": "分歧覆盖是有限态射在某些点附近不再像无分歧覆盖的情形。对有限映射 $f:Y\\to X$，若局部扩张的不同理想或微分 $\\Omega_{Y/X}$ 非零，就出现分歧；曲线函数域中可写 $e_P>1$ 表示点 $P$ 的分歧指数。\n\n它与拓扑覆盖不同，允许在分歧点上多张叶合并。分歧除子记录这些异常位置，黎曼-赫尔维茨公式 $2g_Y-2=d(2g_X-2)+\\deg R$ 把它与曲线亏格联系起来。 这类态射性质通常要在任意基变换后仍可辨认，并通过仿射局部的环同态或层同态检验。它们描述的不是点集函数本身，而是函数如何拉回、纤维怎样变化以及闭包或分离性是否稳定；这些差别决定了族和模空间中的几何行为。",
       "source_links": [
         {
@@ -1780,8 +2668,20 @@
     {
       "chinese_name": "平坦态射",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的箭头类概念。",
+        "它关联几何族、希尔伯特多项式稳定、形变理论和基变换。",
+        "一个标准表达是 $f:X\\to Y$。",
+        "它通过张量保持正合控制纤维连续变化，但不保证纤维光滑。",
+        "它的英文译名是 flat morphism。"
+      ],
+      "fragmented_clues": [
+        "代数几何 箭头类概念",
+        "几何族 希尔伯特多项式稳定 形变 基变换",
+        "$f:X\\to Y$",
+        "张量保持正合 纤维连续 非光滑保证",
+        "flat morphism"
+      ],
       "explanation_markdown": "平坦态射是使纤维在代数上连续变化的态射。若 $f:X\\to Y$，则要求 $\\mathcal O_X$ 作为 $f^{-1}\\mathcal O_Y$-模局部平坦；仿射情形对应环同态 $A\\to B$ 使 $B$ 为平坦 $A$-模，即 $-\\otimes_A B$ 保持正合。\n\n它不同于光滑态射，平坦不要求纤维无奇或微分自由。平坦性保证希尔伯特多项式等不变量在族中稳定，是基变换、形变理论和模空间构造中的关键条件。 这类态射性质通常要在任意基变换后仍可辨认，并通过仿射局部的环同态或层同态检验。它们描述的不是点集函数本身，而是函数如何拉回、纤维怎样变化以及闭包或分离性是否稳定；这些差别决定了族和模空间中的几何行为。",
       "source_links": [
         {
@@ -1804,8 +2704,20 @@
     {
       "chinese_name": "光滑态射",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的箭头类概念。",
+        "它用于描述无奇异的相对族、光滑纤维和微分层局部自由性。",
+        "一个标准表达是 $f:X\\to Y$。",
+        "它强于平坦性并允许正相对维数，基变换后仍保持光滑。",
+        "它的英文译名是 smooth morphism。"
+      ],
+      "fragmented_clues": [
+        "代数几何 箭头类概念",
+        "相对族 光滑纤维 微分层 局部自由",
+        "$f:X\\to Y$",
+        "强于平坦 正相对维数 基变换稳定",
+        "smooth morphism"
+      ],
       "explanation_markdown": "光滑态射是相对几何中无奇的族，局部像投影一样。有限表示态射 $f:X\\to Y$ 若平坦且几何纤维光滑，可称光滑；微分判据中要求 $\\Omega^1_{X/Y}$ 局部自由，秩等于相对维数。\n\n它比平坦态射更强，也比非分歧态射允许正相对维数。光滑态射在基变换下稳定，能保证纤维没有新奇点；光滑曲线族、向量丛投影和开子概形投影都是基本例子。 这类态射性质通常要在任意基变换后仍可辨认，并通过仿射局部的环同态或层同态检验。它们描述的不是点集函数本身，而是函数如何拉回、纤维怎样变化以及闭包或分离性是否稳定；这些差别决定了族和模空间中的几何行为。",
       "source_links": [
         {
@@ -1828,8 +2740,20 @@
     {
       "chinese_name": "非分歧态射",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的箭头类概念。",
+        "它关联有限型零维纤维、étale 覆盖、凯勒微分消失和无穷小分支。",
+        "一个标准表达是 $\\Omega^1_{X/Y}=0$。",
+        "核心条件是相对微分层为零，表示纤维点没有切向厚度。",
+        "它的英文译名是 unramified morphism。"
+      ],
+      "fragmented_clues": [
+        "代数几何 箭头类概念",
+        "有限型 零维纤维 étale覆盖 凯勒微分消失",
+        "$\\Omega^1_{X/Y}=0$",
+        "相对微分层为零 纤维点 切向厚度缺失",
+        "unramified morphism"
+      ],
       "explanation_markdown": "非分歧态射是相对维数为零、没有无穷小分支的态射。有限型态射 $f:X\\to Y$ 非分歧时，凯勒微分层满足 $\\Omega^1_{X/Y}=0$，并配合适当有限性条件；直观上纤维中的点不会带有切向厚度。\n\n它不同于光滑态射，光滑可有正维纤维；也不同于平坦态射，非分歧未必保证纤维数稳定。有限 étale 态射可看作平坦且非分歧的代数覆盖，是基本群和覆盖理论的代数版本。 这类态射性质通常要在任意基变换后仍可辨认，并通过仿射局部的环同态或层同态检验。它们描述的不是点集函数本身，而是函数如何拉回、纤维怎样变化以及闭包或分离性是否稳定；这些差别决定了族和模空间中的几何行为。",
       "source_links": [
         {
@@ -1852,8 +2776,20 @@
     {
       "chinese_name": "上同调消失定理",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的定理。",
+        "它用于充足线丛扭转、凝聚层计算、嵌入和双有理正性问题。",
+        "一个标准表达是 $H^i(X,\\mathcal F(m))=0$。",
+        "消失只在足够正或特定条件下发生，不是任意高阶上同调都为零。",
+        "它的英文译名是 cohomology vanishing theorem。"
+      ],
+      "fragmented_clues": [
+        "代数几何 定理",
+        "充足线丛扭转 凝聚层计算 嵌入 正性",
+        "$H^i(X,\\mathcal F(m))=0$",
+        "足够正 特定条件 高阶上同调为零",
+        "cohomology vanishing theorem"
+      ],
       "explanation_markdown": "上同调消失定理说明在足够正的条件下，高阶层上同调为零。射影概形上，塞尔消失给出：对凝聚层 $\\mathcal F$ 和 ample 线丛 $\\mathcal O(1)$，当 $m\\gg0$ 时 $H^i(X,\\mathcal F(m))=0$ 对所有 $i>0$ 成立。\n\n它不是任意上同调都消失，而是依赖正性、维数或特征条件。消失定理把全局截面、嵌入和正合列计算变得可控，Kodaira、Kawamata-Viehweg 等版本还连接典范除子与双有理几何。 层语言把局部截面、限制映射和粘合条件放在一起，茎负责逐点检验。结构层模、正合列和导出函子会决定支撑、有限性和上同调，不同类型的层由局部化相容性与有限生成条件区分。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1876,8 +2812,20 @@
     {
       "chinese_name": "塞尔对偶",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它关联光滑射影簇的高低阶层上同调、典范层和黎曼罗赫。",
+        "一个标准表达是 $H^i(X,\\mathcal F)^*\\cong\\operatorname{Ext}^{n-i}(\\mathcal F,\\omega_X)$。",
+        "它用典范层把 $i$ 次上同调与互补次数的 Ext 或对偶上同调配对。",
+        "它的英文译名是 Serre duality。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "光滑射影簇 高低阶上同调 典范层 黎曼罗赫",
+        "$H^i(X,\\mathcal F)^*\\cong\\operatorname{Ext}^{n-i}(\\mathcal F,\\omega_X)$",
+        "典范层 $i$ 次 互补次数 Ext 对偶",
+        "Serre duality"
+      ],
       "explanation_markdown": "塞尔对偶把凝聚层上同调的高低次数成对联系。若 $X$ 是光滑射影 $n$ 维簇，常有 $H^i(X,\\mathcal F)^*\\cong\\operatorname{Ext}^{n-i}(\\mathcal F,\\omega_X)$；局部自由情形可写成 $H^i(X,E)^*\\cong H^{n-i}(X,E^\\vee\\otimes\\omega_X)$。\n\n它是代数几何中的庞加莱对偶版本，核心角色由典范层承担。曲线情形给出 $H^1$ 与全局微分的配对，也是黎曼罗赫定理中修正项的来源。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1900,8 +2848,20 @@
     {
       "chinese_name": "切赫上同调",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它用于通过开覆盖交叠数据计算层上同调和粘合障碍。",
+        "一个标准表达是 $C^q(\\mathfrak U,\\mathcal F)=\\prod_{i_0<\\cdots<i_q}\\mathcal F(U_{i_0\\cdots i_q})$。",
+        "余循环记录局部截面在多重交上的相容失败，好覆盖下等于导出定义。",
+        "它的英文译名是 Cech cohomology。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "开覆盖 交叠数据 层上同调 粘合障碍",
+        "$C^q(\\mathfrak U,\\mathcal F)=\\prod_{i_0<\\cdots<i_q}\\mathcal F(U_{i_0\\cdots i_q})$",
+        "余循环 多重交 相容失败 好覆盖",
+        "Cech cohomology"
+      ],
       "explanation_markdown": "切赫上同调用开覆盖上的交叠数据计算层上同调。给定覆盖 $\\mathfrak U=\\{U_i\\}$，$q$-上链为 $C^q(\\mathfrak U,\\mathcal F)=\\prod_{i_0<\\cdots<i_q}\\mathcal F(U_{i_0\\cdots i_q})$，余边界由交错限制映射给出。\n\n它把粘合失败记录为高阶余循环。对足够好的覆盖，切赫上同调等于导出函子定义的层上同调；在代数几何中，仿射开覆盖常让凝聚层上同调可以实际计算。 层语言把局部截面、限制映射和粘合条件放在一起，茎负责逐点检验。结构层模、正合列和导出函子会决定支撑、有限性和上同调，不同类型的层由局部化相容性与有限生成条件区分。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1924,8 +2884,20 @@
     {
       "chinese_name": "谱序列",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的序列。",
+        "它关联滤过复形、双复形、复合函子和 Leray 型上同调计算。",
+        "一个标准表达是 $H^p(Y,R^qf_*\\mathcal F)\\Rightarrow H^{p+q}(X,\\mathcal F)$。",
+        "它以多页 $E_r$ 逐步取同调逼近极限，不是单条正合列。",
+        "它的英文译名是 spectral sequence。"
+      ],
+      "fragmented_clues": [
+        "代数几何 序列",
+        "滤过复形 双复形 复合函子 Leray计算",
+        "$H^p(Y,R^qf_*\\mathcal F)\\Rightarrow H^{p+q}(X,\\mathcal F)$",
+        "$E_r$ 多页 逐步取同调 极限页",
+        "spectral sequence"
+      ],
       "explanation_markdown": "谱序列是一种逐页逼近同调或上同调的计算装置。它由 $E_r^{p,q}$ 和微分 $d_r:E_r^{p,q}\\to E_r^{p+r,q-r+1}$ 组成，并满足 $E_{r+1}=H(E_r,d_r)$；极限页常记为 $E_\\infty$。\n\n它不同于单个长正合列，而是组织双复形、滤过复形或复合函子的多层信息。代数几何中的 Leray 谱序列 $H^p(Y,R^qf_*\\mathcal F)\\Rightarrow H^{p+q}(X,\\mathcal F)$ 连接推前与全局上同调。 层语言把局部截面、限制映射和粘合条件放在一起，茎负责逐点检验。结构层模、正合列和导出函子会决定支撑、有限性和上同调，不同类型的层由局部化相容性与有限生成条件区分。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -1948,8 +2920,20 @@
     {
       "chinese_name": "基变换",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它用于改变参数空间、拉回族、比较纤维和检验相对性质稳定性。",
+        "一个标准表达是 $X'=X\\times_S S'$。",
+        "它保留整个相对结构而不只是单个纤维，上同调是否与拉回交换是关键问题。",
+        "它的英文译名是 base change。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "参数空间 拉回族 纤维比较 相对性质",
+        "$X'=X\\times_S S'$",
+        "相对结构 单纤维对比 上同调拉回交换",
+        "base change"
+      ],
       "explanation_markdown": "基变换是在改变参数空间后拉回整个几何族的操作。给定 $f:X\\to S$ 和态射 $S'\\to S$，新的族为 $X'=X\\times_S S'$，并有投影 $f':X'\\to S'$；纤维积保证所有结构与新基底相容。\n\n它不同于只取某个纤维，基变换保留整个族的相对结构。平坦、光滑、适当等性质在良好条件下可由基变换保持；上同调与基变换定理研究 $R^if_*\\mathcal F$ 是否能和拉回交换。 这类态射性质通常要在任意基变换后仍可辨认，并通过仿射局部的环同态或层同态检验。它们描述的不是点集函数本身，而是函数如何拉回、纤维怎样变化以及闭包或分离性是否稳定；这些差别决定了族和模空间中的几何行为。",
       "source_links": [
         {
@@ -1972,8 +2956,20 @@
     {
       "chinese_name": "纤维积",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它关联共同基底上的相容配对、基变换、纤维、交叉和群作用。",
+        "一个标准表达是 $\\operatorname{Spec}B\\times_{\\operatorname{Spec}A}\\operatorname{Spec}C\\cong\\operatorname{Spec}(B\\otimes_A C)$。",
+        "它比笛卡尔积多出基底相等条件，仿射情形对应张量积。",
+        "它的英文译名是 fiber product。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "共同基底 相容配对 基变换 交叉 群作用",
+        "$\\operatorname{Spec}B\\times_{\\operatorname{Spec}A}\\operatorname{Spec}C\\cong\\operatorname{Spec}(B\\otimes_A C)$",
+        "基底相等 张量积 笛卡尔积对比",
+        "fiber product"
+      ],
       "explanation_markdown": "纤维积是范畴论意义下的拉回，用来表示两个对象在同一基底上的相容配对。给定 $X\\to S$ 和 $Y\\to S$，$X\\times_S Y$ 表示满足投影相容的对象；仿射情形有 $\\operatorname{Spec}B\\times_{\\operatorname{Spec}A}\\operatorname{Spec}C\\cong\\operatorname{Spec}(B\\otimes_A C)$。\n\n它比集合笛卡尔积多了基底方程。纤维、基变换、群概形作用和交叉都通过纤维积表达；若忽略结构层，容易漏掉非约化和重数信息。 这类态射性质通常要在任意基变换后仍可辨认，并通过仿射局部的环同态或层同态检验。它们描述的不是点集函数本身，而是函数如何拉回、纤维怎样变化以及闭包或分离性是否稳定；这些差别决定了族和模空间中的几何行为。 因而它是相对几何中表达共同参数条件的标准构造。",
       "source_links": [
         {
@@ -1996,8 +2992,20 @@
     {
       "chinese_name": "有限态射",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的箭头类概念。",
+        "它用于有限模扩张、闭映射、分歧理论和归一化的有限情形。",
+        "一个标准表达是 $f^{-1}(V)=\\operatorname{Spec}B$。",
+        "它不仅纤维有限，还要求仿射局部上目标代数为有限模，因此自动适当。",
+        "它的英文译名是 finite morphism。"
+      ],
+      "fragmented_clues": [
+        "代数几何 箭头类概念",
+        "有限模扩张 闭映射 分歧 归一化",
+        "$f^{-1}(V)=\\operatorname{Spec}B$",
+        "纤维有限 仿射局部 有限模 自动适当",
+        "finite morphism"
+      ],
       "explanation_markdown": "有限态射是仿射局部由有限模给出的态射。若 $f:X\\to Y$，对仿射开 $V=\\operatorname{Spec}A$，其逆像 $f^{-1}(V)=\\operatorname{Spec}B$ 且 $B$ 是有限 $A$-模，则 $f$ 有限。\n\n它比拟有限强，不只要求纤维有限，还要求代数上有限生成为模。有限态射自动适当且闭，典型例子包括归一化的有限情形和有限域扩张对应的谱映射；分歧理论也常在有限态射下展开。 这类态射性质通常要在任意基变换后仍可辨认，并通过仿射局部的环同态或层同态检验。它们描述的不是点集函数本身，而是函数如何拉回、纤维怎样变化以及闭包或分离性是否稳定；这些差别决定了族和模空间中的几何行为。",
       "source_links": [
         {
@@ -2020,8 +3028,20 @@
     {
       "chinese_name": "拟有限态射",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的箭头类概念。",
+        "它关联有限型态射的有限纤维、Zariski 主定理和开嵌入例子。",
+        "一个标准表达是 $X_y=X\\times_Y\\operatorname{Spec}\\kappa(y)$。",
+        "它只约束纤维大小，不保证适当或有限模结构。",
+        "它的英文译名是 quasi-finite morphism。"
+      ],
+      "fragmented_clues": [
+        "代数几何 箭头类概念",
+        "有限型态射 有限纤维 Zariski主定理 开嵌入",
+        "$X_y=X\\times_Y\\operatorname{Spec}\\kappa(y)$",
+        "纤维大小 非适当 非有限模",
+        "quasi-finite morphism"
+      ],
       "explanation_markdown": "拟有限态射是有限型且纤维为有限离散集合的态射。对 $f:X\\to Y$，若每个点 $y\\in Y$ 的纤维 $X_y=X\\times_Y\\operatorname{Spec}\\kappa(y)$ 是有限集，则 $f$ 拟有限。\n\n它与有限态射不同，拟有限不必适当，也不必仿射局部由有限模给出。开嵌入可以是拟有限却不是有限；若再加适当条件，常可推出有限性，这正是 Zariski 主定理相关思想的入口。 这类态射性质通常要在任意基变换后仍可辨认，并通过仿射局部的环同态或层同态检验。它们描述的不是点集函数本身，而是函数如何拉回、纤维怎样变化以及闭包或分离性是否稳定；这些差别决定了族和模空间中的几何行为。",
       "source_links": [
         {
@@ -2044,8 +3064,20 @@
     {
       "chinese_name": "适当态射",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的箭头类概念。",
+        "它用于代数几何中的紧性、赋值判别法、上同调有限性和有理函数延拓。",
+        "一个标准表达是 $X\\times_Y Y'\\to Y'$。",
+        "它要求有限型、分离和普遍闭，内在性强于给定射影嵌入。",
+        "它的英文译名是 proper morphism。"
+      ],
+      "fragmented_clues": [
+        "代数几何 箭头类概念",
+        "紧性 赋值判别 上同调有限 有理函数延拓",
+        "$X\\times_Y Y'\\to Y'$",
+        "有限型 分离 普遍闭 射影嵌入对比",
+        "proper morphism"
+      ],
       "explanation_markdown": "适当态射是代数几何中的紧性条件，要求在任意基变换下都表现为闭且无逃逸。定义上，$f:X\\to Y$ 需有限型、分离并满足普遍闭；普遍闭表示对任意 $Y'\\to Y$，投影 $X\\times_Y Y'\\to Y'$ 为闭映射。\n\n它不同于投射态射，投射要求嵌入某个射影空间，适当更内在。曲线的射影闭包到基域是适当的；适当性保证有理函数延拓、上同调有限性和赋值判别法中的良好行为。 这类态射性质通常要在任意基变换后仍可辨认，并通过仿射局部的环同态或层同态检验。它们描述的不是点集函数本身，而是函数如何拉回、纤维怎样变化以及闭包或分离性是否稳定；这些差别决定了族和模空间中的几何行为。",
       "source_links": [
         {
@@ -2068,8 +3100,20 @@
     {
       "chinese_name": "投射态射",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的箭头类概念。",
+        "它关联相对射影空间、闭嵌入、相对 ample 线丛和希尔伯特多项式。",
+        "一个标准表达是 $X\\hookrightarrow\\mathbb P_Y^n\\to Y$。",
+        "它自动适当，但额外携带射影嵌入或分次代数结构。",
+        "它的英文译名是 projective morphism。"
+      ],
+      "fragmented_clues": [
+        "代数几何 箭头类概念",
+        "相对射影空间 闭嵌入 ample线丛 希尔伯特多项式",
+        "$X\\hookrightarrow\\mathbb P_Y^n\\to Y$",
+        "自动适当 射影嵌入 分次代数",
+        "projective morphism"
+      ],
       "explanation_markdown": "投射态射是相对射影空间中的闭嵌入后再投影得到的态射。若 $f:X\\to Y$ 可分解为 $X\\hookrightarrow\\mathbb P_Y^n\\to Y$，其中第一步是闭嵌入，则 $f$ 投射；相应地常有相对 ample 线丛 $\\mathcal O_X(1)$。\n\n它比适当态射更具体，带有射影嵌入和分次代数。投射态射自动适当，但适当态射未必已给出投射结构；希尔伯特多项式、相对 Proj 和模空间构造常依赖投射性。 这类态射性质通常要在任意基变换后仍可辨认，并通过仿射局部的环同态或层同态检验。它们描述的不是点集函数本身，而是函数如何拉回、纤维怎样变化以及闭包或分离性是否稳定；这些差别决定了族和模空间中的几何行为。",
       "source_links": [
         {
@@ -2092,8 +3136,20 @@
     {
       "chinese_name": "分离态射",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的箭头类概念。",
+        "它用于排除非 Hausdorff 式粘合，保证图像、交和极限唯一性。",
+        "一个标准表达是 $\\Delta_f:X\\to X\\times_Y X$。",
+        "判别特征是对角态射为闭嵌入，对应两个副本中的同一点形成闭条件。",
+        "它的英文译名是 separated morphism。"
+      ],
+      "fragmented_clues": [
+        "代数几何 箭头类概念",
+        "非Hausdorff粘合 图像 交 极限唯一性",
+        "$\\Delta_f:X\\to X\\times_Y X$",
+        "对角态射 闭嵌入 两副本 同点闭条件",
+        "separated morphism"
+      ],
       "explanation_markdown": "分离态射是代数几何中对应 Hausdorff 性的条件。态射 $f:X\\to Y$ 分离，当且仅当对角态射 $\\Delta_f:X\\to X\\times_Y X$ 是闭嵌入；这里对角记录同一个点在两个副本中的一致性。\n\n它排除“带双原点直线”这类非分离粘合。分离性不同于适当性，后者还要求有限型和普遍闭；仿射态射和闭嵌入都是分离的，许多交和图像构造需要对角闭性保证唯一极限。 这类态射性质通常要在任意基变换后仍可辨认，并通过仿射局部的环同态或层同态检验。它们描述的不是点集函数本身，而是函数如何拉回、纤维怎样变化以及闭包或分离性是否稳定；这些差别决定了族和模空间中的几何行为。",
       "source_links": [
         {
@@ -2116,8 +3172,20 @@
     {
       "chinese_name": "诺特概形",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的几何对象。",
+        "它关联有限仿射覆盖、诺特环、闭子集降链稳定和凝聚层有限性。",
+        "一个标准表达是 $\\operatorname{Spec}A$。",
+        "它把许多无限过程限制为可终止，是有限型几何的常见背景。",
+        "它的英文译名是 Noetherian scheme。"
+      ],
+      "fragmented_clues": [
+        "代数几何 几何对象",
+        "有限仿射覆盖 诺特环 降链稳定 凝聚有限",
+        "$\\operatorname{Spec}A$",
+        "无限过程 终止性 有限型背景",
+        "Noetherian scheme"
+      ],
       "explanation_markdown": "诺特概形是可由有限多个诺特环谱覆盖的概形，并满足拓扑上的稳定有限性。仿射概形 $\\operatorname{Spec}A$ 诺特当且仅当 $A$ 是诺特环；一般情形要求存在有限仿射开覆盖且各坐标环诺特。\n\n它使许多无限过程停止：闭子集降链稳定，凝聚层表现良好。诺特概形不同于任意概形，后者可能有不可控的无限生成行为；代数簇和有限型 $k$-概形通常都属于诺特范围。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。",
       "source_links": [
         {
@@ -2140,8 +3208,20 @@
     {
       "chinese_name": "约化概形",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的几何对象。",
+        "它用于区分点集拓扑与结构层中的幂零厚化、重数和约化化。",
+        "一个标准表达是 $X=\\operatorname{Spec}A$。",
+        "底层空间可不变，但去掉所有幂零元会丢失厚度和交重数信息。",
+        "它的英文译名是 reduced scheme。"
+      ],
+      "fragmented_clues": [
+        "代数几何 几何对象",
+        "点集拓扑 结构层 幂零厚化 重数 约化化",
+        "$X=\\operatorname{Spec}A$",
+        "底层空间不变 幂零元 厚度 交重数丢失",
+        "reduced scheme"
+      ],
       "explanation_markdown": "约化概形是结构层没有非零幂零元的概形。等价地，对每个开集 $U$，环 $\\mathcal O_X(U)$ 中若 $f^n=0$ 则 $f=0$；仿射情形 $X=\\operatorname{Spec}A$ 约化当且仅当 $A$ 的 nilradical 为零。\n\n它与不可约概形不同：约化排除厚化和重数，不保证只有一个分支。给任意概形去掉幂零元得到约化化 $X_{red}$，底层拓扑不变，但结构层更薄，许多交重数信息会被丢失。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -2164,8 +3244,20 @@
     {
       "chinese_name": "不可约分支",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它关联极小素理想、泛点、分支交会和退化族的成分分析。",
+        "一个标准表达是 $X=\\operatorname{Spec}A$。",
+        "它是极大的不可约闭子集，不同分支可以相交而空间仍连通。",
+        "它的英文译名是 irreducible component。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "极小素理想 泛点 分支交会 退化族",
+        "$X=\\operatorname{Spec}A$",
+        "极大不可约闭子集 分支相交 连通",
+        "irreducible component"
+      ],
       "explanation_markdown": "不可约分支是空间中极大的不可约闭子集。若 $X$ 的闭子集不能写成两个真闭子集的并，则称不可约；分支对应极小素理想，仿射情形中 $X=\\operatorname{Spec}A$ 的不可约分支来自 $\\operatorname{Min}A$。\n\n它不同于连通分支，两个不可约分支可以相交而空间仍连通。不可约分支的泛点决定该分支的闭包；在奇点和退化族中，分支数、交会方式和非约化结构需要分别记录。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。",
       "source_links": [
         {
@@ -2188,8 +3280,20 @@
     {
       "chinese_name": "泛点",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它用于表示不可约闭子集的一般位置、分支和特殊化关系。",
+        "一个标准表达是 $Z=V(\\mathfrak p)$。",
+        "其闭包不是单点而是整个不可约子空间，这是经典闭点视角看不到的。",
+        "它的英文译名是 generic point。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "不可约闭子集 一般位置 分支 特殊化",
+        "$Z=V(\\mathfrak p)$",
+        "闭包 整体子空间 经典闭点对比",
+        "generic point"
+      ],
       "explanation_markdown": "泛点是其闭包等于某个不可约闭子集的点。在 $\\operatorname{Spec}A$ 中，素理想 $\\mathfrak p$ 的闭包为 $V(\\mathfrak p)$；若 $Z=V(\\mathfrak p)$ 不可约，则 $\\mathfrak p$ 是 $Z$ 的泛点。\n\n它不是经典几何中的普通闭点，而代表整个不可约子空间的一般位置。泛点让扎里斯基拓扑能把分支、维数和特殊化关系编码为点的闭包；代数簇的经典点视角通常看不到这一层信息。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -2212,8 +3316,20 @@
     {
       "chinese_name": "闭点",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它关联极大理想、剩余域、代数闭域坐标点和算术扩张信息。",
+        "一个标准表达是 $\\kappa(\\mathfrak p)=A_{\\mathfrak p}/\\mathfrak pA_{\\mathfrak p}$。",
+        "它自身闭合，和泛点相对；在非代数闭域上可携带有限剩余域扩张。",
+        "它的英文译名是 closed point。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "极大理想 剩余域 坐标点 算术扩张",
+        "$\\kappa(\\mathfrak p)=A_{\\mathfrak p}/\\mathfrak pA_{\\mathfrak p}$",
+        "自身闭合 泛点相对 有限剩余域扩张",
+        "closed point"
+      ],
       "explanation_markdown": "闭点是在拓扑空间中自身闭合的点，概形中通常对应极大理想。对 $X=\\operatorname{Spec}A$，点 $\\mathfrak p$ 闭当且仅当 $\\mathfrak p$ 是极大理想；其剩余域为 $\\kappa(\\mathfrak p)=A_{\\mathfrak p}/\\mathfrak pA_{\\mathfrak p}$。\n\n在代数闭域上的仿射簇，闭点就是熟悉的坐标点。它与泛点相对，泛点闭包较大而不闭；在非代数闭域上，闭点的剩余域可以是基域的有限扩张，记录算术信息。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -2236,8 +3352,20 @@
     {
       "chinese_name": "离散赋值环",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的代数对象。",
+        "它用于曲线点的局部模型、余维一数据、分歧、除子系数和适当性判别。",
+        "一个标准表达是 $R=\\{x\\in K\\mid v(x)\\ge0\\}$。",
+        "它是一维局部主理想整环，理想由一致化参数的幂线性排列。",
+        "它的英文译名是 discrete valuation ring。"
+      ],
+      "fragmented_clues": [
+        "代数几何 代数对象",
+        "曲线点 局部模型 余维一 分歧 除子系数",
+        "$R=\\{x\\in K\\mid v(x)\\ge0\\}$",
+        "一维局部主理想整环 一致化参数 理想链",
+        "discrete valuation ring"
+      ],
       "explanation_markdown": "离散赋值环是由一个离散赋值控制的局部主理想整环。若 $R$ 的分式域为 $K$，存在 $v:K^\\times\\to\\mathbb Z$ 使 $R=\\{x\\in K\\mid v(x)\\ge0\\}$；其极大理想由一致化参数 $\\pi$ 生成。\n\n它在几何上对应正规曲线的点或高维空间的余维一局部数据。离散赋值环不同于一般局部环，维数为一且理想链极其简单；适当性判别、分歧和除子系数都常用它表达。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -2260,8 +3388,20 @@
     {
       "chinese_name": "完备化",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它关联形式邻域、无穷小厚化、奇点局部分析和形变理论。",
+        "一个标准表达是 $\\widehat A=\\varprojlim_n A/I^n$。",
+        "它取逆极限保留所有 $I$-进邻域信息，区别于普通局部化。",
+        "它的英文译名是 completion。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "形式邻域 无穷小厚化 奇点局部 形变",
+        "$\\widehat A=\\varprojlim_n A/I^n$",
+        "逆极限 $I$-进邻域 普通局部化对比",
+        "completion"
+      ],
       "explanation_markdown": "完备化把环或模在某个理想给出的邻域系统下补全。对环 $A$ 和理想 $I$，$I$-进完备化为 $\\widehat A=\\varprojlim_n A/I^n$；这里逆极限记录所有无穷小厚化的一致信息。\n\n它聚焦闭子概形附近的形式邻域，不等同于取普通局部化。完备局部环能细致描述奇点和形变；在代数几何中，完备化连接形式概形、代数化定理和局部-整体比较。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -2284,8 +3424,20 @@
     {
       "chinese_name": "形式概形",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的几何对象。",
+        "它用于描述完备环、闭子概形的形式邻域、变形和代数化问题。",
+        "一个标准表达是 $\\operatorname{Spec}(A/I^n)$。",
+        "它由无穷小厚化系统而不是普通点集扩张构成，典型记号为 $\\operatorname{Spf}$。",
+        "它的英文译名是 formal scheme。"
+      ],
+      "fragmented_clues": [
+        "代数几何 几何对象",
+        "完备环 形式邻域 变形 代数化",
+        "$\\operatorname{Spec}(A/I^n)$",
+        "无穷小厚化系统 点集扩张对比 $\\operatorname{Spf}$",
+        "formal scheme"
+      ],
       "explanation_markdown": "形式概形是用完备环的无穷小层级描述的几何对象。仿射形式概形常写 $\\operatorname{Spf}A$，其中 $A$ 是 $I$-进完备环；它可看成闭子概形系统 $\\operatorname{Spec}(A/I^n)$ 的极限。\n\n它不同于普通概形的点集扩张，重点在形式邻域和幂零厚化。形式概形适合研究变形、完备化和非阿基米德几何；代数化问题则询问形式数据何时来自真正的代数概形。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -2308,8 +3460,20 @@
     {
       "chinese_name": "平面簇",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的几何对象。",
+        "它关联平面内方程、平面曲线、显式奇点计算和贝祖型交点。",
+        "一个标准表达是 $X=V(I)\\subset\\mathbb A^2_k$。",
+        "其几何强烈依赖平面嵌入，额外坐标结构使雅可比判别更直接。",
+        "它的英文译名是 plane variety。"
+      ],
+      "fragmented_clues": [
+        "代数几何 几何对象",
+        "平面方程 平面曲线 奇点计算 贝祖交点",
+        "$X=V(I)\\subset\\mathbb A^2_k$",
+        "平面嵌入 坐标结构 雅可比判别",
+        "plane variety"
+      ],
       "explanation_markdown": "平面簇通常指嵌入仿射平面或射影平面的代数簇，最常见情形是平面曲线。仿射平面中可写 $X=V(I)\\subset\\mathbb A^2_k$，若 $I=(f)$，则由单个多项式方程 $f(x,y)=0$ 定义。\n\n它的几何强烈依赖平面嵌入，奇点、次数和交点都可由方程直接计算。与抽象曲线相比，平面簇带有额外坐标结构；与高维嵌入相比，它的雅可比判别和贝祖定理更容易显式使用。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -2332,8 +3496,20 @@
     {
       "chinese_name": "双有理等价",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的等价关系。",
+        "它用于有理性问题、极小模型、曲面分类和函数域比较。",
+        "一个标准表达是 $K(X)\\cong K(Y)$。",
+        "它只要求稠密开集同构，低维闭子集可被吹胀或收缩改变。",
+        "它的英文译名是 birational equivalence。"
+      ],
+      "fragmented_clues": [
+        "代数几何 等价关系",
+        "有理性 极小模型 曲面分类 函数域比较",
+        "$K(X)\\cong K(Y)$",
+        "稠密开集同构 低维闭子集 吹胀 收缩",
+        "birational equivalence"
+      ],
       "explanation_markdown": "双有理等价表示两个不可约代数簇在稠密开集上相同。若存在有理映射 $X\\dashrightarrow Y$ 和 $Y\\dashrightarrow X$ 互为逆，则 $X\\sim_{bir}Y$；等价地，在适当条件下函数域满足 $K(X)\\cong K(Y)$。\n\n它弱于同构，因为吹胀、收缩可改变低维闭子集却不改变一般点。双有理等价关注函数域和一般位置性质，是有理性问题、极小模型和代数曲面分类的基本等价关系。 这类态射性质通常要在任意基变换后仍可辨认，并通过仿射局部的环同态或层同态检验。它们描述的不是点集函数本身，而是函数如何拉回、纤维怎样变化以及闭包或分离性是否稳定；这些差别决定了族和模空间中的几何行为。",
       "source_links": [
         {
@@ -2356,8 +3532,20 @@
     {
       "chinese_name": "射影闭包",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它用于把仿射簇补进无穷远点、稳定交数和构造适当紧化。",
+        "一个标准表达是 $\\overline X\\subset\\mathbb P^n$。",
+        "边界由齐次化方程决定，依赖原仿射嵌入并可能产生新奇点。",
+        "它的英文译名是 projective closure。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "无穷远点 稳定交数 适当紧化",
+        "$\\overline X\\subset\\mathbb P^n$",
+        "齐次化方程 仿射嵌入依赖 新奇点",
+        "projective closure"
+      ],
       "explanation_markdown": "射影闭包把仿射簇放入射影空间后取扎里斯基闭包。若 $X\\subset\\mathbb A^n$ 由理想 $I$ 定义，将方程齐次化得到 $I^h\\subset k[x_0,\\ldots,x_n]$，其零点 $\\overline X\\subset\\mathbb P^n$ 给出射影闭包。\n\n它加入无穷远处的极限点，使交数和适当性更稳定。射影闭包依赖所选仿射嵌入；它不同于任意紧化，因为边界由齐次化方程具体决定，可能产生新的无穷远奇点。 射影嵌入、线丛和除子把全局几何转成可计算的线性系统。次数、亏格、交数和典范类会随嵌入或双有理改造表现不同，因此同一簇既要看方程，也要看局部环和全局层。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {
@@ -2380,8 +3568,20 @@
     {
       "chinese_name": "概形点",
       "source_file": "words/数学/困难模式/algebraic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是一个代数几何中的数学对象。",
+        "它关联素理想、剩余域、闭包、泛点、闭点和特殊化关系。",
+        "一个标准表达是 $\\operatorname{Spec}A$。",
+        "它不只是坐标点；同一空间中可同时记录经典点、分支和算术点。",
+        "它的英文译名是 scheme point。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数学对象",
+        "素理想 剩余域 闭包 泛点 闭点",
+        "$\\operatorname{Spec}A$",
+        "坐标点对比 经典点 分支 算术点",
+        "scheme point"
+      ],
       "explanation_markdown": "概形点不是单纯的几何坐标点，而是局部环化空间中的点。对仿射概形 $\\operatorname{Spec}A$，点就是素理想 $\\mathfrak p$；其剩余域为 $\\kappa(\\mathfrak p)$，闭包为 $V(\\mathfrak p)$。\n\n闭点对应极大理想，泛点对应不可约闭子集的一般位置。概形点带有特殊化关系和剩余域信息，使同一个空间能同时记录经典点、分支、算术点和非闭点，这是概形区别于传统点集几何的关键。 零点集合提供直观图像，坐标环、局部环和结构层提供可计算的信息。概形语言会保留泛点、闭点、幂零厚化和任意基环；同一方程既有经典点集的一面，也有交换代数的一面。 这些条件会影响对象的同构类型、可计算不变量和与邻近结构的关系，实际使用时应同时保留定义中的底层对象、态射和限制条件。",
       "source_links": [
         {

@@ -3,6 +3,7 @@ from ._shared import *
 
 class SettingsMixin:
     def show_game_mechanics_page(self, tab):
+        self.play_music("archive")
         self.mechanics_tab = tab
         self.clear()
         title = "快速上手" if tab == "quick" else "详细规则"
@@ -21,22 +22,30 @@ class SettingsMixin:
         render_markdown(shell, quick if tab == "quick" else detail, mode=tab)
 
     def show_settings(self):
+        self.play_music("settings")
         self.clear()
         self._topbar("玩家档案（旁观）" if self.is_spectating() else "设置", self.show_home)
         frame = tk.Frame(self.container, bg="#111725")
         frame.pack(fill="both", expand=True, padx=34, pady=(0, 26))
         self._start_backdrop("particles", frame)
 
-        summary = summarize_records(load_record_entries())
         achievements_data = read_achievements()
+        summary = load_record_summary(achievements_data=achievements_data)
         rank_progress = read_rank_progress()
         rating_value = summary["rating"]
-        self.available_avatar_ids = unlocked_avatar_ids(rating_value)
+        reveal_all = self.admin_reveal_hidden_enabled()
+        self.available_avatar_ids = unlocked_avatar_ids(rating_value, reveal_all=reveal_all)
         self.available_title_options = unlocked_title_options(rating_value, achievements_data, rank_progress)
-        current_avatar_id = coerce_avatar_id(self.player_settings.get("avatar_id", 0), rating_value)
+        self.available_home_music_ids = unlocked_home_music_ids(rating_value, reveal_all=reveal_all)
+        current_avatar_id = coerce_avatar_id(self.player_settings.get("avatar_id", 0), rating_value, reveal_all=reveal_all)
         current_title_id = coerce_title_id(self.player_settings.get("title_id"), rating_value, achievements_data, rank_progress)
         current_title_category = self.title_category_for_title_id(current_title_id)
         current_rank_badge_id = coerce_rank_badge_id(self.player_settings.get("rank_badge_id", ""), rank_progress)
+        current_home_music_id = coerce_home_music_id(
+            self.player_settings.get("home_music_id"),
+            rating_value,
+            reveal_all=reveal_all,
+        )
         shell = self.make_scroll_frame(frame, bg="#111725")
         left = tk.Frame(shell, bg="#182033", highlightbackground="#3b4560", highlightthickness=1)
         left.pack(side="left", fill="both", expand=True, padx=(0, 14))
@@ -198,6 +207,14 @@ class SettingsMixin:
         self.settings_density_var = tk.DoubleVar(value=float(self.player_settings.get("backdrop_density", 1.0)))
         self.settings_opacity_var = tk.DoubleVar(value=float(self.player_settings.get("backdrop_opacity", 1.0)))
         self.settings_font_scale_var = tk.DoubleVar(value=float(self.player_settings.get("font_scale", 1.0)))
+        self.settings_music_volume_var = tk.DoubleVar(value=float(self.player_settings.get("music_volume", 0.55)))
+        self.settings_sfx_volume_var = tk.DoubleVar(value=float(self.player_settings.get("sfx_volume", 0.75)))
+        self.settings_home_music_var = tk.StringVar(value=current_home_music_id)
+        current_sfx_choices = normalize_sfx_choices(self.player_settings.get("sfx_choices"))
+        self.settings_sfx_choice_vars = {
+            event_id: tk.StringVar(value=sfx_sound_display(current_sfx_choices[event_id]))
+            for event_id, _label in SFX_EVENT_OPTIONS
+        }
         self.settings_transitions_var = tk.BooleanVar(value=bool(self.player_settings.get("transitions_enabled", True)))
         self.settings_window_width_var = tk.StringVar(value=str(int(self.player_settings.get("window_width", 1274))))
         self.settings_window_height_var = tk.StringVar(value=str(int(self.player_settings.get("window_height", 806))))
@@ -206,6 +223,8 @@ class SettingsMixin:
         self.settings_density_label = tk.Label(right, fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 12, "bold"))
         self.settings_opacity_label = tk.Label(right, fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 12, "bold"))
         self.settings_font_scale_label = tk.Label(right, fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 12, "bold"))
+        self.settings_music_volume_label = tk.Label(right, fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 12, "bold"))
+        self.settings_sfx_volume_label = tk.Label(right, fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 12, "bold"))
         self.settings_speed_label.pack(anchor="w", padx=28, pady=(2, 4))
         self.make_setting_scale(right, self.settings_speed_var, self.update_setting_labels).pack(fill="x", padx=24, pady=(0, 18))
         self.settings_density_label.pack(anchor="w", padx=28, pady=(2, 4))
@@ -228,6 +247,33 @@ class SettingsMixin:
             to=2.0,
             resolution=0.05,
         ).pack(fill="x", padx=24, pady=(0, 14))
+        tk.Label(right, text="音乐与音效", fg="#8fb6ff", bg="#182033", font=("Microsoft YaHei UI", 18, "bold")).pack(anchor="w", padx=28, pady=(16, 14))
+        self.settings_music_volume_label.pack(anchor="w", padx=28, pady=(2, 4))
+        self.make_setting_scale(
+            right,
+            self.settings_music_volume_var,
+            self.update_setting_labels,
+            from_=0.0,
+            to=1.0,
+            resolution=0.05,
+        ).pack(fill="x", padx=24, pady=(0, 18))
+        self.settings_sfx_volume_label.pack(anchor="w", padx=28, pady=(2, 4))
+        self.make_setting_scale(
+            right,
+            self.settings_sfx_volume_var,
+            self.update_setting_labels,
+            from_=0.0,
+            to=1.0,
+            resolution=0.05,
+        ).pack(fill="x", padx=24, pady=(0, 10))
+        tk.Label(right, text="按键音效", fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 12, "bold")).pack(anchor="w", padx=28, pady=(2, 8))
+        self.settings_sfx_options_frame = tk.Frame(right, bg="#111827", highlightbackground="#30384e", highlightthickness=1)
+        self.settings_sfx_options_frame.pack(fill="x", padx=26, pady=(0, 14))
+        self.render_sfx_choice_options()
+        tk.Label(right, text="主界面背景音乐", fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 12, "bold")).pack(anchor="w", padx=28, pady=(2, 8))
+        self.settings_music_options_frame = tk.Frame(right, bg="#111827", highlightbackground="#30384e", highlightthickness=1)
+        self.settings_music_options_frame.pack(fill="x", padx=26, pady=(0, 14))
+        self.render_home_music_options()
         tk.Label(right, text="默认窗口大小（像素）", fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 12, "bold")).pack(anchor="w", padx=28, pady=(2, 8))
         window_row = tk.Frame(right, bg="#182033")
         window_row.pack(anchor="w", padx=24, pady=(0, 14))
@@ -250,8 +296,9 @@ class SettingsMixin:
             self.settings_admin_reveal_hidden_var = tk.BooleanVar(value=bool(self.player_settings.get("admin_reveal_hidden", False)))
             tk.Checkbutton(
                 right,
-                text="开启隐藏",
+                text="打开所有隐藏",
                 variable=self.settings_admin_reveal_hidden_var,
+                command=self.refresh_admin_reveal_settings_choices,
                 fg="#f6d36b",
                 bg="#182033",
                 activeforeground="#fff2bd",
@@ -261,7 +308,7 @@ class SettingsMixin:
             ).pack(anchor="w", padx=24, pady=(0, 8))
             tk.Label(
                 right,
-                text=self.smart_wrap_text("管理员专用：保存后显示隐藏成就提示，并开放锁定和隐藏段位。关闭后恢复普通显示，已经保存的段位成绩仍会保留。", 27),
+                text=self.smart_wrap_text("管理员专用：显示隐藏成就提示，临时开放锁定段位、头像和主页音乐。关闭后恢复普通显示，已经保存的段位成绩仍会保留。", 27),
                 fg="#9ca8c7",
                 bg="#182033",
                 justify="left",
@@ -271,7 +318,7 @@ class SettingsMixin:
 
         tk.Label(
             right,
-            text=self.smart_wrap_text("速度、密度和透明度会影响所有动态背景。字号会影响后续打开的页面，保存后生效；页面过场可按偏好关闭。", 27),
+            text=self.smart_wrap_text("速度、密度和透明度会影响所有动态背景。音乐和音效音量会实时预览，保存后随账号保留；字号会影响后续打开的页面，保存后生效。", 27),
             fg="#9ca8c7",
             bg="#182033",
             justify="left",
@@ -315,6 +362,7 @@ class SettingsMixin:
             HoverButton(account_buttons, "重温教程", lambda: self.start_tutorial(auto=False), width=132, height=48, accent="#7fd9c6").grid(row=1, column=0, padx=(0, 8), pady=4)
             if is_admin_account(self.current_account):
                 HoverButton(account_buttons, "后台数据", self.show_admin_dashboard, width=132, height=48, accent="#f6d36b").grid(row=1, column=1, padx=8, pady=4)
+                HoverButton(account_buttons, "查看建议", self.show_feedback_admin, width=132, height=48, accent="#ffcf8f").grid(row=1, column=2, padx=8, pady=4)
 
     def make_setting_scale(self, parent, variable, command, from_=0.4, to=10.0, resolution=0.1):
         scale = tk.Scale(
@@ -359,6 +407,12 @@ class SettingsMixin:
             self.settings_opacity_label.config(text=f"粒子透明度  {self.settings_opacity_var.get() * 100:.0f}%")
         if hasattr(self, "settings_font_scale_label"):
             self.settings_font_scale_label.config(text=f"界面字号  {self.settings_font_scale_var.get() * 100:.0f}%")
+        if hasattr(self, "settings_music_volume_label"):
+            self.settings_music_volume_label.config(text=f"背景音乐  {self.settings_music_volume_var.get() * 100:.0f}%")
+        if hasattr(self, "settings_sfx_volume_label"):
+            self.settings_sfx_volume_label.config(text=f"按钮音效  {self.settings_sfx_volume_var.get() * 100:.0f}%")
+        if getattr(self, "audio", None):
+            self.audio.set_volumes(self.settings_music_volume_var.get(), self.settings_sfx_volume_var.get())
 
     def title_category_for_option(self, option):
         title_id, _title_text, source = option
@@ -484,6 +538,187 @@ class SettingsMixin:
                 widget.bind("<Button-1>", lambda _event, value=title_id: self.select_title(value))
             self.settings_title_cards.append((card, title_id))
 
+    def render_sfx_choice_options(self):
+        frame = self.settings_sfx_options_frame
+        if not frame or not frame.winfo_exists():
+            return
+        for child in frame.winfo_children():
+            child.destroy()
+        options = sfx_sound_display_options()
+        for column in range(2):
+            frame.grid_columnconfigure(column, weight=1, uniform="sfx_choice")
+        for index, (event_id, event_label) in enumerate(SFX_EVENT_OPTIONS):
+            row = tk.Frame(frame, bg="#151d2c", highlightbackground="#30384e", highlightthickness=1)
+            row.grid(row=index // 2, column=index % 2, sticky="ew", padx=8, pady=7)
+            row.grid_columnconfigure(1, weight=1)
+            tk.Label(
+                row,
+                text=event_label,
+                fg="#dce6ff",
+                bg="#151d2c",
+                anchor="w",
+                font=("Microsoft YaHei UI", 9, "bold"),
+            ).grid(row=0, column=0, sticky="w", padx=(10, 8), pady=9)
+            variable = self.settings_sfx_choice_vars[event_id]
+            menu = tk.OptionMenu(
+                row,
+                variable,
+                *options,
+                command=lambda _value, value=event_id: self.preview_selected_sfx(value),
+            )
+            menu.configure(
+                fg="#fff8dc",
+                bg="#101827",
+                activeforeground="#fff2bd",
+                activebackground="#20283a",
+                highlightthickness=1,
+                highlightbackground="#30384e",
+                relief="flat",
+                font=("Microsoft YaHei UI", 9, "bold"),
+                width=13,
+            )
+            try:
+                menu["menu"].configure(
+                    fg="#dce6ff",
+                    bg="#101827",
+                    activeforeground="#fff2bd",
+                    activebackground="#20283a",
+                    font=("Microsoft YaHei UI", 9, "bold"),
+                )
+            except tk.TclError:
+                pass
+            menu.grid(row=0, column=1, sticky="ew", pady=7)
+            preview = tk.Label(
+                row,
+                text="试听",
+                fg="#8fb6ff",
+                bg="#151d2c",
+                cursor="hand2",
+                font=("Microsoft YaHei UI", 9, "bold underline"),
+            )
+            preview.grid(row=0, column=2, sticky="e", padx=(8, 10), pady=9)
+            preview.bind("<Button-1>", lambda _event, value=event_id: self.preview_selected_sfx(value))
+            preview.bind("<Enter>", lambda _event, widget=preview: widget.configure(fg="#fff2bd"))
+            preview.bind("<Leave>", lambda _event, widget=preview: widget.configure(fg="#8fb6ff"))
+
+    def preview_selected_sfx(self, event_id):
+        if event_id not in self.settings_sfx_choice_vars:
+            return
+        sound_id = sfx_sound_id_from_display(self.settings_sfx_choice_vars[event_id].get())
+        self.preview_sfx_choice(sound_id)
+
+    def selected_sfx_choices_from_settings(self):
+        choices = {}
+        for event_id, _label in SFX_EVENT_OPTIONS:
+            variable = self.settings_sfx_choice_vars.get(event_id)
+            choices[event_id] = sfx_sound_id_from_display(variable.get() if variable else event_id)
+        return normalize_sfx_choices(choices)
+
+    def render_home_music_options(self):
+        frame = self.settings_music_options_frame
+        if not frame or not frame.winfo_exists():
+            return
+        for child in frame.winfo_children():
+            child.destroy()
+        self.settings_music_cards = []
+        for column in range(2):
+            frame.grid_columnconfigure(column, weight=1, uniform="home_music")
+        current_id = self.settings_home_music_var.get() if self.settings_home_music_var else ""
+        if self.settings_admin_reveal_hidden_var and is_admin_account(self.current_account):
+            reveal_all = bool(self.settings_admin_reveal_hidden_var.get())
+        else:
+            reveal_all = self.admin_reveal_hidden_enabled()
+        for index, option in enumerate(HOME_MUSIC_OPTIONS):
+            music_id = option["id"]
+            selected = music_id == current_id
+            unlocked = music_id in self.available_home_music_ids
+            bg = "#20283a" if selected else ("#151d2c" if unlocked else "#121827")
+            border = "#f6d36b" if selected else ("#30384e" if unlocked else "#252d40")
+            card = tk.Frame(frame, bg=bg, highlightbackground=border, highlightthickness=1, cursor="hand2" if unlocked else "arrow")
+            card.grid(row=index // 2, column=index % 2, sticky="ew", padx=8, pady=7)
+            marker = tk.Label(
+                card,
+                text="●" if selected else ("○" if unlocked else "锁"),
+                fg="#f6d36b" if selected else ("#64708f" if unlocked else "#7f8caf"),
+                bg=bg,
+                font=("Microsoft YaHei UI", 11, "bold"),
+                cursor="hand2" if unlocked else "arrow",
+            )
+            marker.pack(side="left", padx=(10, 7), pady=10)
+            text_box = tk.Frame(card, bg=bg, cursor="hand2" if unlocked else "arrow")
+            text_box.pack(side="left", fill="x", expand=True, padx=(0, 10), pady=8)
+            title_color = "#fff2bd" if unlocked else "#8d96ad"
+            tk.Label(
+                text_box,
+                text=option["title"],
+                fg=title_color,
+                bg=bg,
+                anchor="w",
+                justify="left",
+                wraplength=180,
+                font=("Microsoft YaHei UI", 10, "bold"),
+                cursor="hand2" if unlocked else "arrow",
+            ).pack(anchor="w", fill="x")
+            tk.Label(
+                text_box,
+                text=option["author"],
+                fg="#8fb6ff" if unlocked else "#64708f",
+                bg=bg,
+                anchor="w",
+                justify="left",
+                wraplength=180,
+                font=("Microsoft YaHei UI", 9, "bold"),
+                cursor="hand2" if unlocked else "arrow",
+            ).pack(anchor="w", fill="x", pady=(2, 0))
+            unlock_label = self.home_music_unlock_label(option, unlocked, reveal_all)
+            tk.Label(
+                text_box,
+                text=unlock_label,
+                fg="#9ff2b2" if unlocked else "#69738d",
+                bg=bg,
+                anchor="w",
+                font=("Microsoft YaHei UI", 8, "bold"),
+                cursor="hand2" if unlocked else "arrow",
+            ).pack(anchor="w", fill="x", pady=(2, 0))
+            if unlocked:
+                for widget in (card, marker, text_box, *text_box.winfo_children()):
+                    widget.bind("<Button-1>", lambda _event, value=music_id: self.select_home_music(value))
+            self.settings_music_cards.append((card, music_id))
+
+    def home_music_unlock_label(self, option, unlocked, reveal_all=False):
+        threshold = float(option.get("unlock_rating") or 0.0)
+        if reveal_all and threshold > 0:
+            return f"管理员开启 / 原需 R{threshold:g}"
+        if threshold <= 0:
+            return "默认可用"
+        return f"Rating {threshold:g}" if unlocked else f"需 Rating {threshold:g}"
+
+    def select_home_music(self, music_id):
+        if music_id not in self.available_home_music_ids:
+            option = home_music_option(music_id)
+            threshold = float(option.get("unlock_rating") or 0.0)
+            messagebox.showinfo("尚未解锁", f"这首音乐需要 Rating {threshold:g}。")
+            return
+        if self.settings_home_music_var:
+            self.settings_home_music_var.set(music_id)
+        self.render_home_music_options()
+        self.preview_home_music(music_id)
+
+    def refresh_admin_reveal_settings_choices(self):
+        if not is_admin_account(self.current_account):
+            return
+        achievements_data = read_achievements()
+        summary = load_record_summary(achievements_data=achievements_data)
+        reveal_all = bool(self.settings_admin_reveal_hidden_var and self.settings_admin_reveal_hidden_var.get())
+        self.available_avatar_ids = unlocked_avatar_ids(summary["rating"], reveal_all=reveal_all)
+        self.available_home_music_ids = unlocked_home_music_ids(summary["rating"], reveal_all=reveal_all)
+        if self.settings_avatar_var and int(self.settings_avatar_var.get()) not in self.available_avatar_ids:
+            self.settings_avatar_var.set(0)
+        if self.settings_home_music_var and self.settings_home_music_var.get() not in self.available_home_music_ids:
+            self.settings_home_music_var.set(DEFAULT_PLAYER_SETTINGS["home_music_id"])
+        self.refresh_avatar_choices()
+        self.render_home_music_options()
+
     def select_title(self, title_id):
         if self.settings_title_var:
             self.settings_title_var.set(title_id)
@@ -538,12 +773,18 @@ class SettingsMixin:
     def save_settings(self):
         if self.block_spectator_action("保存设置"):
             return
-        summary = summarize_records(load_record_entries())
         achievements_data = read_achievements()
+        summary = load_record_summary(achievements_data=achievements_data)
         rank_progress = read_rank_progress()
-        avatar_id = coerce_avatar_id(self.settings_avatar_var.get(), summary["rating"])
+        reveal_all = bool(self.settings_admin_reveal_hidden_var.get()) if (self.settings_admin_reveal_hidden_var and is_admin_account(self.current_account)) else False
+        avatar_id = coerce_avatar_id(self.settings_avatar_var.get(), summary["rating"], reveal_all=reveal_all)
         title_id = coerce_title_id(self.settings_title_var.get() if self.settings_title_var else None, summary["rating"], achievements_data, rank_progress)
         rank_badge_id = coerce_rank_badge_id(self.rank_badge_var.get() if self.rank_badge_var else "", rank_progress)
+        home_music_id = coerce_home_music_id(
+            self.settings_home_music_var.get() if self.settings_home_music_var else None,
+            summary["rating"],
+            reveal_all=reveal_all,
+        )
         nickname = self.settings_nickname_var.get()
         if self.current_account:
             try:
@@ -561,13 +802,18 @@ class SettingsMixin:
             "backdrop_density": self.settings_density_var.get(),
             "backdrop_opacity": self.settings_opacity_var.get(),
             "font_scale": self.settings_font_scale_var.get(),
+            "music_volume": self.settings_music_volume_var.get(),
+            "sfx_volume": self.settings_sfx_volume_var.get(),
+            "home_music_id": home_music_id,
+            "sfx_choices": self.selected_sfx_choices_from_settings(),
             "transitions_enabled": self.settings_transitions_var.get(),
             "window_width": self.settings_window_width_var.get(),
             "window_height": self.settings_window_height_var.get(),
             "tutorial_completed": self.player_settings.get("tutorial_completed", True),
-            "admin_reveal_hidden": bool(self.settings_admin_reveal_hidden_var.get()) if (self.settings_admin_reveal_hidden_var and is_admin_account(self.current_account)) else False,
+            "admin_reveal_hidden": reveal_all,
         })
         self.apply_ui_font_scale()
+        self.apply_audio_settings()
         if not self.fullscreen:
             self.geometry(f"{self.player_settings['window_width']}x{self.player_settings['window_height']}")
         if self.player_settings["backdrop_speed"] >= 9.95 and self.player_settings["backdrop_density"] >= 9.95:
@@ -602,4 +848,5 @@ class SettingsMixin:
             return
         self.player_settings = save_player_settings(DEFAULT_PLAYER_SETTINGS)
         self.apply_ui_font_scale()
+        self.apply_audio_settings()
         self.show_settings()

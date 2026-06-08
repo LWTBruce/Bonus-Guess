@@ -22,8 +22,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=counting%20principle"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是组合数学中一种基础思想。",
+        "它常作为有限对象计数、分类讨论、分步构造和生成函数方法的入口。",
+        "对不交集合可写作 $|A\\sqcup B|=|A|+|B|$，竖线表示元素个数。",
+        "它先说明对象是否有序、能否重复以及哪些结果算同一种，再把局部数量合起来。",
+        "它的英文译名是 counting principle。"
+      ],
+      "fragmented_clues": [
+        "组合数学 基础思想",
+        "有限对象 分类 分步 构造",
+        "$|A\\sqcup B|=|A|+|B|$",
+        "有序性 重复性 等价结果 局部数量",
+        "counting principle"
+      ]
     },
     {
       "chinese_name": "加法原理",
@@ -46,8 +58,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=addition%20principle"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是组合数学中的一种分类规则。",
+        "它关联若干互斥情形中任选一种的方案总数。",
+        "若第 $i$ 类有 $n_i$ 种选择，可写作 $N=n_1+n_2+\\cdots+n_k$。",
+        "它要求类别互不重叠，同一个方案不能在两个类别里被数两次。",
+        "它的英文译名是 addition principle。"
+      ],
+      "fragmented_clues": [
+        "组合数学 分类规则",
+        "互斥情形 任选一种 总数",
+        "$N=n_1+n_2+\\cdots+n_k$",
+        "类别不重叠 不重复",
+        "addition principle"
+      ]
     },
     {
       "chinese_name": "乘法原理",
@@ -70,8 +94,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=multiplication%20principle"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是组合数学中的一种分步规则。",
+        "它关联一个对象由多个步骤共同确定的方案总数。",
+        "若第 $i$ 步有 $n_i$ 种选择，可写作 $N=n_1n_2\\cdots n_k$。",
+        "每一步选择都参与最终对象，后续依赖要写进对应步骤。",
+        "它的英文译名是 multiplication principle。"
+      ],
+      "fragmented_clues": [
+        "组合数学 分步规则",
+        "多个步骤 共同确定 方案总数",
+        "$N=n_1n_2\\cdots n_k$",
+        "每步选择 最终对象 后续依赖",
+        "multiplication principle"
+      ]
     },
     {
       "chinese_name": "排列",
@@ -94,8 +130,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=permutation"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是组合数学中的一种有序选择对象。",
+        "它常见于座位、编号和不重复抽取等位置填充问题。",
+        "常见计数为 $P(n,k)=\\frac{n!}{(n-k)!}$，其中 $k$ 是有序位置数。",
+        "它同时关心选谁和放在哪个位置，交换顺序通常得到新的结果。",
+        "它的英文译名是 permutation。"
+      ],
+      "fragmented_clues": [
+        "组合数学 有序选择",
+        "座位 编号 不重复抽取 位置填充",
+        "$P(n,k)=\\frac{n!}{(n-k)!}$",
+        "选谁 位置 顺序改变",
+        "permutation"
+      ]
     },
     {
       "chinese_name": "全排列",
@@ -118,8 +166,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=full%20arrangement"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是组合数学中的一种特殊有序安排。",
+        "它常作为限制位置、逆序数和循环结构问题的全集。",
+        "计数公式为 $P(n,n)=n!$，其中 $n!$ 表示从 $1$ 乘到 $n$。",
+        "它把 $n$ 个不同对象全部排成一列，每个对象恰好出现一次。",
+        "它的英文译名是 full permutation。"
+      ],
+      "fragmented_clues": [
+        "组合数学 特殊有序安排",
+        "限制位置 逆序数 循环结构 全集",
+        "$P(n,n)=n!$",
+        "$n$ 个不同对象 一列 恰好一次",
+        "full permutation"
+      ]
     },
     {
       "chinese_name": "圆排列",
@@ -142,8 +202,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=circle%20permutation"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是组合数学中的一种环形有序安排。",
+        "它适合环形座位、循环次序和项链的基础模型。",
+        "对 $n$ 个不同对象，数量可写作 $N=(n-1)!$。",
+        "整体旋转视为同一种，常先固定一个对象再安排其余对象。",
+        "它的英文译名是 circular permutation。"
+      ],
+      "fragmented_clues": [
+        "组合数学 环形有序安排",
+        "环形座位 循环次序 项链",
+        "$N=(n-1)!$",
+        "整体旋转 同一种 固定一个对象",
+        "circular permutation"
+      ]
     },
     {
       "chinese_name": "错位排列",
@@ -166,8 +238,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=misaligned%20arrangement"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是组合数学中的一种受限有序安排。",
+        "它的直观模型是信封装错信件，也关联随机置换的固定点。",
+        "数量常记为 $D_n=n!\\sum_{k=0}^n\\frac{(-1)^k}{k!}$。",
+        "没有任何元素回到原位置，等价于无固定点的情形。",
+        "它的英文译名是 derangement。"
+      ],
+      "fragmented_clues": [
+        "组合数学 受限有序安排",
+        "信封 信件 随机置换 固定点",
+        "$D_n=n!\\sum_{k=0}^n\\frac{(-1)^k}{k!}$",
+        "无元素 原位置 无固定点",
+        "derangement"
+      ]
     },
     {
       "chinese_name": "组合",
@@ -190,8 +274,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=combination"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是离散数学中的一种无序选择对象。",
+        "它常用于抽样、选点、取子集和二项式展开。",
+        "计数公式为 $\\binom nk=\\frac{n!}{k!(n-k)!}$。",
+        "它只关心选出哪些对象，同一组对象换顺序仍算同一种。",
+        "它的英文译名是 combination。"
+      ],
+      "fragmented_clues": [
+        "离散数学 无序选择",
+        "抽样 选点 子集 二项式展开",
+        "$\\binom nk=\\frac{n!}{k!(n-k)!}$",
+        "选出对象 顺序无关 同一种",
+        "combination"
+      ]
     },
     {
       "chinese_name": "组合数",
@@ -214,8 +310,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=combination%20number"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是离散计数中的一种数值对象。",
+        "它是子集计数和概率模型中的基础数量，也出现在许多恒等式中。",
+        "标准记法为 $C(n,k)=\\binom nk$。",
+        "它表示从 $n$ 个对象中无序选出 $k$ 个的方案个数，而不是选择动作本身。",
+        "它的英文译名是 combination number。"
+      ],
+      "fragmented_clues": [
+        "离散计数 数值对象",
+        "子集计数 概率模型 恒等式",
+        "$C(n,k)=\\binom nk$",
+        "$n$ 个对象 无序选出 $k$ 个 方案个数",
+        "combination number"
+      ]
     },
     {
       "chinese_name": "二项式系数",
@@ -238,8 +346,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=binomial%20coefficient"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是代数展开与离散选择中的一类数列。",
+        "它连接代数展开和无序选择，常用于概率分布和恒等式证明。",
+        "展开式可写作 $(1+x)^n=\\sum_{k=0}^n\\binom nk x^k$。",
+        "它既是展开项前的数，也数从 $n$ 个因子中选出若干个贡献 $x$ 的方式。",
+        "它的英文译名是 binomial coefficient。"
+      ],
+      "fragmented_clues": [
+        "代数展开 离散选择 数列",
+        "概率分布 恒等式证明 无序选择",
+        "$(1+x)^n=\\sum_{k=0}^n\\binom nk x^k$",
+        "展开项前 数 因子选择 贡献 $x$",
+        "binomial coefficient"
+      ]
     },
     {
       "chinese_name": "二项式定理",
@@ -262,8 +382,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=binomial%20theorem"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是代数与组合数学中的一个展开定理。",
+        "它把代数幂、选择位置数量和生成函数联系起来。",
+        "公式为 $(a+b)^n=\\sum_{k=0}^n\\binom nk a^kb^{\\,n-k}$。",
+        "它给出两个量之和的 $n$ 次幂完整展开，每项由选择其中一个量的次数决定。",
+        "它的英文译名是 binomial theorem。"
+      ],
+      "fragmented_clues": [
+        "代数 组合数学 展开定理",
+        "代数幂 选择位置 生成函数",
+        "$(a+b)^n=\\sum_{k=0}^n\\binom nk a^kb^{\\,n-k}$",
+        "两个量之和 $n$ 次幂 完整展开",
+        "binomial theorem"
+      ]
     },
     {
       "chinese_name": "多项式定理",
@@ -286,8 +418,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=polynomial%20theorem"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是代数与组合数学中的一个多类展开定理。",
+        "它常用于多分类分布、生成函数和分配问题。",
+        "若 $k_1+\\cdots+k_m=n$，则 $(x_1+\\cdots+x_m)^n=\\sum\\frac{n!}{k_1!\\cdots k_m!}x_1^{k_1}\\cdots x_m^{k_m}$。",
+        "它要求各指数和为 $n$，系数表示把 $n$ 个位置分配给多类的方式数。",
+        "它的英文译名是 multinomial theorem。"
+      ],
+      "fragmented_clues": [
+        "代数 组合数学 多类展开定理",
+        "多分类分布 生成函数 分配问题",
+        "$k_1+\\cdots+k_m=n,\\ (x_1+\\cdots+x_m)^n=\\sum\\frac{n!}{k_1!\\cdots k_m!}x_1^{k_1}\\cdots x_m^{k_m}$",
+        "指数和 $n$ 位置分配 多类",
+        "multinomial theorem"
+      ]
     },
     {
       "chinese_name": "帕斯卡恒等式",
@@ -310,8 +454,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=pascal%20identity"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是组合数学中关于系数递推的恒等式。",
+        "它用于生成杨辉三角，也支持组合数的递推计算。",
+        "它写作 $\\binom nk=\\binom{n-1}k+\\binom{n-1}{k-1}$。",
+        "右边分成不选和选定某个元素两类，互斥并覆盖所有 $k$ 元子集。",
+        "它的英文译名是 Pascal's identity。"
+      ],
+      "fragmented_clues": [
+        "组合数学 系数递推 恒等式",
+        "杨辉三角 子集分类 递推计算",
+        "$\\binom nk=\\binom{n-1}k+\\binom{n-1}{k-1}$",
+        "不选 选定元素 互斥 覆盖 $k$ 元子集",
+        "Pascal's identity"
+      ]
     },
     {
       "chinese_name": "范德蒙德恒等式",
@@ -334,8 +490,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=vandermonde%20identity"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是组合数学中关于合并选择的恒等式。",
+        "它常用于合并样本、卷积和生成函数乘法。",
+        "基本式为 $\\binom{r+s}n=\\sum_k\\binom rk\\binom{s}{n-k}$。",
+        "它按第一部分选了多少个分类，右边各项合起来数同一个 $n$ 元子集全集。",
+        "它的英文译名是 Vandermonde's identity。"
+      ],
+      "fragmented_clues": [
+        "组合数学 合并选择 恒等式",
+        "样本合并 卷积 生成函数乘法",
+        "$\\binom{r+s}n=\\sum_k\\binom rk\\binom{s}{n-k}$",
+        "第一部分 选择个数 分类 同一全集",
+        "Vandermonde's identity"
+      ]
     },
     {
       "chinese_name": "容斥原理",
@@ -358,8 +526,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=inclusion%20exclusion%20principle"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是组合数学中的一种重叠修正原则。",
+        "它常用于集合并集、整除计数和至少满足一个条件的对象。",
+        "两集合情形为 $|A\\cup B|=|A|+|B|-|A\\cap B|$。",
+        "它允许类别有交叉，通过交替加减交集项补偿重复计数。",
+        "它的英文译名是 inclusion-exclusion principle。"
+      ],
+      "fragmented_clues": [
+        "组合数学 重叠修正原则",
+        "集合并集 整除计数 至少一个条件",
+        "$|A\\cup B|=|A|+|B|-|A\\cap B|$",
+        "类别交叉 交替加减 重复计数",
+        "inclusion-exclusion principle"
+      ]
     },
     {
       "chinese_name": "抽屉原理",
@@ -382,8 +562,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=drawer%20principle"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是组合数学中的一种存在性原则。",
+        "它常用于有限分类、同余类、生日问题和图中的度数重复。",
+        "若 $N>mn$，则 $\\exists\\text{一盒至少含 }n+1\\text{ 个对象}$。",
+        "对象多于分类容量时，某一类必然超过允许上限，但不指出具体对象。",
+        "它的英文译名是 drawer principle。"
+      ],
+      "fragmented_clues": [
+        "组合数学 存在性原则",
+        "有限分类 同余类 生日问题 度数重复",
+        "$N>mn\\Rightarrow \\exists\\text{一盒至少含 }n+1\\text{ 个对象}$",
+        "对象多于容量 某类过载 不定位",
+        "drawer principle"
+      ]
     },
     {
       "chinese_name": "鸽巢原理",
@@ -406,8 +598,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=pigeonhole%20principle"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是组合数学中的一种有限分类原则。",
+        "它适合把问题转成有限类别后证明重复、接近或同余。",
+        "最简单形式为 $N>m\\Rightarrow \\exists\\text{一巢至少有 }2\\text{只}$。",
+        "它是平均数思想的离散版本，结论是确定性的，不依赖随机分布。",
+        "它的英文译名是 pigeonhole principle。"
+      ],
+      "fragmented_clues": [
+        "组合数学 有限分类原则",
+        "有限类别 重复 接近 同余",
+        "$N>m\\Rightarrow \\exists\\text{一巢至少有 }2\\text{只}$",
+        "平均数思想 离散版本 确定性",
+        "pigeonhole principle"
+      ]
     },
     {
       "chinese_name": "递推关系",
@@ -430,8 +634,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=recurrence%20relation"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是离散数学中定义数列的一种规则。",
+        "它出现在路径计数、分拆、树和动态规划中。",
+        "常见形式为 $a_n=f(a_{n-1},a_{n-2},\\ldots)$。",
+        "它用前面若干项生成后续项，必须配合初始条件才能确定整个序列。",
+        "它的英文译名是 recurrence relation。"
+      ],
+      "fragmented_clues": [
+        "离散数学 数列规则",
+        "路径计数 分拆 树 动态规划",
+        "$a_n=f(a_{n-1},a_{n-2},\\ldots)$",
+        "前面若干项 后续项 初始条件",
+        "recurrence relation"
+      ]
     },
     {
       "chinese_name": "生成函数",
@@ -454,8 +670,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=generating%20function"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是离散计数中的一种形式幂级数工具。",
+        "它能把递推、卷积和分拆问题转化为幂级数运算。",
+        "普通形式写成 $F(x)=\\sum_{n\\ge0}a_nx^n$。",
+        "它把计数值藏在系数里，变量多半只是记录规模的标记。",
+        "它的英文译名是 generating function。"
+      ],
+      "fragmented_clues": [
+        "离散计数 形式幂级数工具",
+        "递推 卷积 分拆 幂级数运算",
+        "$F(x)=\\sum_{n\\ge0}a_nx^n$",
+        "计数值 系数 规模标记",
+        "generating function"
+      ]
     },
     {
       "chinese_name": "普通生成函数",
@@ -478,8 +706,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=ordinary%20generating%20function"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是离散计数中的一种形式幂级数编码。",
+        "它适合无标号对象、整数分拆和简单递推。",
+        "它写作 $A(x)=\\sum_{n\\ge0}a_nx^n$，并有 $[x^n]A(x)=a_n$。",
+        "它直接用 $x^n$ 记录第 $n$ 项，不除以 $n!$。",
+        "它的英文译名是 ordinary generating function。"
+      ],
+      "fragmented_clues": [
+        "离散计数 形式幂级数编码",
+        "无标号对象 整数分拆 简单递推",
+        "$A(x)=\\sum_{n\\ge0}a_nx^n,\\ [x^n]A(x)=a_n$",
+        "$x^n$ 直接记录 不除以 $n!$",
+        "ordinary generating function"
+      ]
     },
     {
       "chinese_name": "指数生成函数",
@@ -502,8 +742,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=exponent%20generating%20function"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是带标号计数中的一种阶乘归一化编码。",
+        "它常用于排列、集合划分、图和带标号树。",
+        "定义为 $A(x)=\\sum_{n\\ge0}a_n\\frac{x^n}{n!}$。",
+        "它把 $a_n$ 配上 $x^n/n!$，让带标号结构的乘法解释更自然。",
+        "它的英文译名是 exponential generating function。"
+      ],
+      "fragmented_clues": [
+        "带标号计数 阶乘归一化编码",
+        "排列 集合划分 图 带标号树",
+        "$A(x)=\\sum_{n\\ge0}a_n\\frac{x^n}{n!}$",
+        "$a_n$ $x^n/n!$ 带标号 乘法解释",
+        "exponential generating function"
+      ]
     },
     {
       "chinese_name": "母函数",
@@ -526,8 +778,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=parent%20function"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是中文教材中一种幂级数计数工具。",
+        "它常用于递推求解、系数提取和恒等式证明。",
+        "可写作 $G(x)=\\sum_{n\\ge0}a_nx^n$。",
+        "它用同一个形式表达统一产生许多计数值，具体变体需先说明编码方式。",
+        "它的英文译名是 generating function。"
+      ],
+      "fragmented_clues": [
+        "中文教材 幂级数计数工具",
+        "递推求解 系数提取 恒等式证明",
+        "$G(x)=\\sum_{n\\ge0}a_nx^n$",
+        "同一形式 许多计数值 编码方式",
+        "generating function"
+      ]
     },
     {
       "chinese_name": "卡特兰数",
@@ -550,8 +814,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=cattleya%20number"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是组合数学中一类经典计数序列。",
+        "它数括号匹配、二叉树和不越界路径等结构。",
+        "标准公式为 $C_n=\\frac1{n+1}\\binom{2n}n$。",
+        "它常由首次分解或根分解拆成左右两部分，并带有合法嵌套或边界限制。",
+        "它的英文译名是 Catalan number。"
+      ],
+      "fragmented_clues": [
+        "组合数学 经典计数序列",
+        "括号匹配 二叉树 不越界路径",
+        "$C_n=\\frac1{n+1}\\binom{2n}n$",
+        "首次分解 根分解 左右两部分 合法嵌套",
+        "Catalan number"
+      ]
     },
     {
       "chinese_name": "贝尔数",
@@ -574,8 +850,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=bell%20number"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是离散计数中的一类集合分块数列。",
+        "它用于集合划分、等价关系和聚类模型的计数。",
+        "可记为 $B_n=\\sum_{k=0}^n {n\\brace k}$。",
+        "它数的是把 $n$ 个有标号元素分成若干非空无序块的方式。",
+        "它的英文译名是 Bell number。"
+      ],
+      "fragmented_clues": [
+        "离散计数 集合分块数列",
+        "集合划分 等价关系 聚类模型",
+        "$B_n=\\sum_{k=0}^n {n\\brace k}$",
+        "$n$ 个有标号元素 非空无序块",
+        "Bell number"
+      ]
     },
     {
       "chinese_name": "斯特林数",
@@ -598,8 +886,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=stirling%20number"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是组合数学中的一组特殊计数数族。",
+        "它连接排列循环、集合划分、普通幂和下降阶乘。",
+        "常用总称包含 ${n\\brack k}\\quad\\text{和}\\quad {n\\brace k}$。",
+        "两类符号相近，但一个数循环结构，另一个数无序分块。",
+        "它的英文译名是 Stirling number。"
+      ],
+      "fragmented_clues": [
+        "组合数学 特殊计数数族",
+        "排列循环 集合划分 普通幂 下降阶乘",
+        "${n\\brack k}\\quad\\text{和}\\quad {n\\brace k}$",
+        "两类符号 循环结构 无序分块",
+        "Stirling number"
+      ]
     },
     {
       "chinese_name": "第一类斯特林数",
@@ -622,8 +922,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=stirling%20numbers%20of%20the%20first%20kind"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是组合数学中一类循环计数数列。",
+        "它出现在排列循环结构，以及普通幂与下降阶乘的转换中。",
+        "常记为 ${n\\brack k}$，其中 $k$ 表示循环数。",
+        "它数把 $n$ 个元素排成恰有 $k$ 个循环的置换。",
+        "它的英文译名是 Stirling numbers of the first kind。"
+      ],
+      "fragmented_clues": [
+        "组合数学 循环计数数列",
+        "排列循环 普通幂 下降阶乘",
+        "${n\\brack k}$",
+        "$n$ 个元素 $k$ 个循环 置换",
+        "Stirling numbers of the first kind"
+      ]
     },
     {
       "chinese_name": "第二类斯特林数",
@@ -646,8 +958,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=stirling%20numbers%20of%20the%20second%20kind"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是组合数学中一类分块计数数列。",
+        "它用于集合划分、贝尔数和满射函数计数。",
+        "常记为 ${n\\brace k}$，其中 $k$ 表示块数。",
+        "它数把 $n$ 个有标号元素分成 $k$ 个非空无序块的方式。",
+        "它的英文译名是 Stirling numbers of the second kind。"
+      ],
+      "fragmented_clues": [
+        "组合数学 分块计数数列",
+        "集合划分 贝尔数 满射函数",
+        "${n\\brace k}$",
+        "$n$ 个有标号元素 $k$ 个非空无序块",
+        "Stirling numbers of the second kind"
+      ]
     },
     {
       "chinese_name": "分拆数",
@@ -670,8 +994,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=number%20of%20spin%20offs"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是数论组合中的一种整数分解计数值。",
+        "它连接杨图、生成函数和数论中的级数恒等式。",
+        "可记作 $p(n)=\\#\\{\\lambda:\\ |\\lambda|=n\\}$。",
+        "它数把整数 $n$ 写成若干正整数之和的方式，加数顺序不影响结果。",
+        "它的英文译名是 partition number。"
+      ],
+      "fragmented_clues": [
+        "数论组合 整数分解 计数值",
+        "杨图 生成函数 级数恒等式",
+        "$p(n)=\\#\\{\\lambda:\\ |\\lambda|=n\\}$",
+        "整数 $n$ 正整数之和 加数顺序无关",
+        "partition number"
+      ]
     },
     {
       "chinese_name": "整数分拆",
@@ -694,8 +1030,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=integer%20split"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是数论组合中的一种无序分解对象。",
+        "它常用杨图表示，也能用乘积型生成函数研究。",
+        "可写作 $n=\\lambda_1+\\lambda_2+\\cdots+\\lambda_k,\\ \\lambda_1\\ge\\cdots\\ge\\lambda_k>0$。",
+        "它把正整数写成正整数和，并按非增顺序书写以避免同一结果重复。",
+        "它的英文译名是 integer partition。"
+      ],
+      "fragmented_clues": [
+        "数论组合 无序分解对象",
+        "杨图 乘积型生成函数",
+        "$n=\\lambda_1+\\lambda_2+\\cdots+\\lambda_k,\\ \\lambda_1\\ge\\cdots\\ge\\lambda_k>0$",
+        "正整数和 非增顺序 避免重复",
+        "integer partition"
+      ]
     },
     {
       "chinese_name": "有序分拆",
@@ -718,8 +1066,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=orderly%20spin%20off"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是数论组合中的一种有顺序的分解对象。",
+        "它适合处理排队分组、连续切分和正整数合成。",
+        "若分成 $k$ 部，数量为 $\\binom{n-1}{k-1}$。",
+        "部分顺序也是结构，$2+1$ 和 $1+2$ 会被视为不同结果。",
+        "它的英文译名是 integer composition。"
+      ],
+      "fragmented_clues": [
+        "数论组合 有顺序分解对象",
+        "排队分组 连续切分 正整数合成",
+        "$\\binom{n-1}{k-1}$",
+        "部分顺序 $2+1$ $1+2$ 不同结果",
+        "integer composition"
+      ]
     },
     {
       "chinese_name": "集合划分",
@@ -742,8 +1102,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=set%20partitioning"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是集合论与组合数学中的一种分块结构。",
+        "它对应等价关系，也由第二类斯特林数和贝尔数计数。",
+        "形式上可写作 $X=B_1\\sqcup\\cdots\\sqcup B_k$。",
+        "每个元素恰好属于一个非空块，块之间两两不交且顺序通常不重要。",
+        "它的英文译名是 set partition。"
+      ],
+      "fragmented_clues": [
+        "集合论 组合数学 分块结构",
+        "等价关系 第二类斯特林数 贝尔数",
+        "$X=B_1\\sqcup\\cdots\\sqcup B_k$",
+        "每个元素 非空块 两两不交 顺序无关",
+        "set partition"
+      ]
     },
     {
       "chinese_name": "弱组合",
@@ -766,8 +1138,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=weak%20combination"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是整数解计数中的一种允许空位的分配模型。",
+        "它常用隔板法处理可重复选择和非负整数解。",
+        "条件为 $x_1+\\cdots+x_k=n,\\ x_i\\ge0$，解数为 $\\binom{n+k-1}{k-1}$。",
+        "盒子有顺序并允许某些盒子为空，边界情形也被计入。",
+        "它的英文译名是 weak composition。"
+      ],
+      "fragmented_clues": [
+        "整数解计数 允许空位 分配模型",
+        "隔板法 可重复选择 非负整数解",
+        "$x_1+\\cdots+x_k=n,\\ x_i\\ge0,\\ \\binom{n+k-1}{k-1}$",
+        "有序盒子 空盒 边界情形",
+        "weak composition"
+      ]
     },
     {
       "chinese_name": "强组合",
@@ -790,8 +1174,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=strong%20combination"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是整数解计数中的一种非空分配模型。",
+        "它适合必须非空的任务分配、座位段和正整数合成。",
+        "条件为 $x_1+\\cdots+x_k=n,\\ x_i>0$，解数为 $\\binom{n-1}{k-1}$。",
+        "每个有序盒子至少得到一个对象，空块不被允许。",
+        "它的英文译名是 strong composition。"
+      ],
+      "fragmented_clues": [
+        "整数解计数 非空分配模型",
+        "任务分配 座位段 正整数合成",
+        "$x_1+\\cdots+x_k=n,\\ x_i>0,\\ \\binom{n-1}{k-1}$",
+        "有序盒子 至少一个 无空块",
+        "strong composition"
+      ]
     },
     {
       "chinese_name": "组合恒等式",
@@ -814,8 +1210,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=combination%20identity"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是离散计数中关于计数表达的等式。",
+        "它常通过分类、双射、生成函数和递推来证明。",
+        "典型例子为 $\\sum_{k=0}^n\\binom nk=2^n$。",
+        "两边通常数同一个对象集合，只是采用了不同的分类或编码方式。",
+        "它的英文译名是 combinatorial identity。"
+      ],
+      "fragmented_clues": [
+        "离散计数 计数表达 等式",
+        "分类 双射 生成函数 递推",
+        "$\\sum_{k=0}^n\\binom nk=2^n$",
+        "同一对象集合 不同分类 编码方式",
+        "combinatorial identity"
+      ]
     },
     {
       "chinese_name": "双射证明",
@@ -838,8 +1246,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=bijective%20proof"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是组合数学中的一种证明方法。",
+        "它常把难数的对象转化成熟悉对象，如路径与括号串的对应。",
+        "核心条件是 $f:A\\to B\\text{ 为双射}\\Rightarrow |A|=|B|$。",
+        "它要求既不遗漏也不重复，并能从目标对象唯一回到源对象。",
+        "它的英文译名是 bijective proof。"
+      ],
+      "fragmented_clues": [
+        "组合数学 证明方法",
+        "难数对象 熟悉对象 路径 括号串",
+        "$f:A\\to B\\text{ 为双射}\\Rightarrow |A|=|B|$",
+        "不遗漏 不重复 唯一恢复",
+        "bijective proof"
+      ]
     },
     {
       "chinese_name": "反射原理",
@@ -862,8 +1282,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=reflection%20principle"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是路径计数中的一种双射方法。",
+        "它用于卡特兰型计数、随机游走和投票问题。",
+        "常见结果为 $\\binom{m+n}{m}-\\binom{m+n}{m+1}$。",
+        "它在首次越界点后构造镜像路径，用坏路径数量修正全部路径。",
+        "它的英文译名是 reflection principle。"
+      ],
+      "fragmented_clues": [
+        "路径计数 双射方法",
+        "卡特兰型计数 随机游走 投票问题",
+        "$\\binom{m+n}{m}-\\binom{m+n}{m+1}$",
+        "首次越界 镜像路径 坏路径修正",
+        "reflection principle"
+      ]
     },
     {
       "chinese_name": "循环引理",
@@ -886,8 +1318,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=circular%20lemma"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是序列计数中关于循环移位的引理。",
+        "它常用于证明卡特兰型计数、树和合法括号序列。",
+        "典型结论可写作 $\\#\\{\\text{好循环移位}\\}=r$。",
+        "它关注同一循环类中的不同起点，满足部分和正性条件的起点数由整体差额决定。",
+        "它的英文译名是 cycle lemma。"
+      ],
+      "fragmented_clues": [
+        "序列计数 循环移位 引理",
+        "卡特兰型计数 树 合法括号序列",
+        "$\\#\\{\\text{好循环移位}\\}=r$",
+        "不同起点 部分和正性 整体差额",
+        "cycle lemma"
+      ]
     },
     {
       "chinese_name": "伯恩赛德引理",
@@ -910,8 +1354,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=burnside%20lemma"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是群作用计数中的一个平均固定点引理。",
+        "它常用于项链、染色和带对称图形计数。",
+        "公式为 $|\\Omega/G|=\\frac1{|G|}\\sum_{g\\in G}|\\operatorname{Fix}(g)|$。",
+        "它不是简单除以对称数，而是按每个群元素的固定对象数取平均。",
+        "它的英文译名是 Burnside's lemma。"
+      ],
+      "fragmented_clues": [
+        "群作用计数 平均固定点 引理",
+        "项链 染色 对称图形",
+        "$|\\Omega/G|=\\frac1{|G|}\\sum_{g\\in G}|\\operatorname{Fix}(g)|$",
+        "非简单除法 固定对象数 平均",
+        "Burnside's lemma"
+      ]
     },
     {
       "chinese_name": "波利亚计数定理",
@@ -934,8 +1390,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=polya%20counting%20theorem"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是群作用计数中处理带颜色结构的定理。",
+        "它适合项链、图案和分子模型中的对称染色。",
+        "常用循环指标写作 $Z_G(c_1,c_2,\\ldots)=\\frac1{|G|}\\sum_{g\\in G}\\prod_i c_i^{m_i(g)}$。",
+        "它用群元素的循环结构判断颜色能否独立选择，比逐个固定点更系统。",
+        "它的英文译名是 Polya enumeration theorem。"
+      ],
+      "fragmented_clues": [
+        "群作用计数 带颜色结构 定理",
+        "项链 图案 分子模型 对称染色",
+        "$Z_G(c_1,c_2,\\ldots)=\\frac1{|G|}\\sum_{g\\in G}\\prod_i c_i^{m_i(g)}$",
+        "循环结构 颜色独立选择 系统计数",
+        "Polya enumeration theorem"
+      ]
     },
     {
       "chinese_name": "群作用",
@@ -958,8 +1426,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=group%20action"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是抽象代数与组合计数中的一种结构。",
+        "它为轨道、稳定子和对称计数提供统一语言。",
+        "形式上写为 $g\\cdot x\\in X$，其中 $g\\in G$ 且 $x\\in X$。",
+        "群元素必须按保持结构的方式移动对象，并与单位元和群乘法相容。",
+        "它的英文译名是 group action。"
+      ],
+      "fragmented_clues": [
+        "抽象代数 组合计数 结构",
+        "轨道 稳定子 对称计数",
+        "$g\\cdot x\\in X,\\ g\\in G,\\ x\\in X$",
+        "保持结构 单位元 群乘法相容",
+        "group action"
+      ]
     },
     {
       "chinese_name": "轨道",
@@ -982,8 +1462,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=track"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是群作用中的一种等价类对象。",
+        "它用于把带对称的计数问题化为等价类计数。",
+        "定义为 $Gx=\\{g\\cdot x:\\ g\\in G\\}$。",
+        "它收集一个对象在所有群元素作用下能变成的全部对象。",
+        "它的英文译名是 orbit。"
+      ],
+      "fragmented_clues": [
+        "群作用 等价类对象",
+        "对称计数 等价类 合并",
+        "$Gx=\\{g\\cdot x:\\ g\\in G\\}$",
+        "一个对象 群元素 全部变换结果",
+        "orbit"
+      ]
     },
     {
       "chinese_name": "稳定子",
@@ -1006,8 +1498,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=stable%20particle"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是群作用中的一种子群对象。",
+        "它关联对称保留、等价类大小和不能简单除以群大小的问题。",
+        "定义为 $G_x=\\{g\\in G:\\ g\\cdot x=x\\}$。",
+        "它记录保持某个对象不变的所有群元素，越大时对应等价类越小。",
+        "它的英文译名是 stabilizer。"
+      ],
+      "fragmented_clues": [
+        "群作用 子群对象",
+        "对称保留 等价类大小 非简单除法",
+        "$G_x=\\{g\\in G:\\ g\\cdot x=x\\}$",
+        "对象不变 群元素 越大类越小",
+        "stabilizer"
+      ]
     },
     {
       "chinese_name": "图",
@@ -1030,8 +1534,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=graph"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是离散数学中的一种点边结构。",
+        "它用于网络、匹配、染色、路径和树的研究。",
+        "常写为 $G=(V,E)$，其中 $V$ 是顶点集，$E$ 是连线集合。",
+        "顶点位置怎么画不重要，抽象邻接关系才决定结构。",
+        "它的英文译名是 graph。"
+      ],
+      "fragmented_clues": [
+        "离散数学 点边结构",
+        "网络 匹配 染色 路径 树",
+        "$G=(V,E)$",
+        "顶点 连线 抽象邻接",
+        "graph"
+      ]
     },
     {
       "chinese_name": "边",
@@ -1054,8 +1570,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=edge"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是离散网络结构中的一种基本关系。",
+        "它决定邻接、可达走法和顶点关联数量。",
+        "无向情形可写作 $e=\\{u,v\\}$，有方向时可写作 $(u,v)$。",
+        "它连接两个端点，只表示关系，通常不带几何长度。",
+        "它的英文译名是 edge。"
+      ],
+      "fragmented_clues": [
+        "离散网络 基本关系",
+        "邻接 可达走法 顶点关联数量",
+        "$e=\\{u,v\\}$ 或 $(u,v)$",
+        "两个端点 关系 无几何长度",
+        "edge"
+      ]
     },
     {
       "chinese_name": "度数",
@@ -1078,8 +1606,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=degree"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是点边结构中一种顶点局部数量。",
+        "它用于判断连通性、欧拉性质、染色和极值结构。",
+        "对顶点 $v$，记为 $\\deg(v)=|\\{e\\in E:\\ v\\in e\\}|$。",
+        "它数一个顶点关联了多少条连线，自环和多重连线需按约定处理。",
+        "它的英文译名是 degree。"
+      ],
+      "fragmented_clues": [
+        "点边结构 顶点局部数量",
+        "连通性 欧拉性质 染色 极值结构",
+        "$\\deg(v)=|\\{e\\in E:\\ v\\in e\\}|$",
+        "顶点 关联连线 自环 多重连线",
+        "degree"
+      ]
     },
     {
       "chinese_name": "握手定理",
@@ -1102,8 +1642,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=handshake%20theorem"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图论中关于所有顶点关联数量的定理。",
+        "它常用于证明奇度顶点个数为偶数，也用于检查计数是否一致。",
+        "公式为 $\\sum_{v\\in V}\\deg(v)=2|E|$。",
+        "每条无向连线在两个端点各贡献一次，所以总和是连线数的两倍。",
+        "它的英文译名是 handshake theorem。"
+      ],
+      "fragmented_clues": [
+        "图论 顶点关联数量 定理",
+        "奇度顶点 偶数 计数一致性",
+        "$\\sum_{v\\in V}\\deg(v)=2|E|$",
+        "无向连线 两个端点 各贡献一次",
+        "handshake theorem"
+      ]
     },
     {
       "chinese_name": "路径",
@@ -1126,8 +1678,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=path"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是点边结构中的一种连续走法。",
+        "它刻画可达性、最短路和连通性。",
+        "可写为 $v_0v_1\\cdots v_k,\\ v_{i-1}v_i\\in E$。",
+        "它按相邻连线依次经过顶点，长度通常是经过的连线条数。",
+        "它的英文译名是 path。"
+      ],
+      "fragmented_clues": [
+        "点边结构 连续走法",
+        "可达性 最短路 连通性",
+        "$v_0v_1\\cdots v_k,\\ v_{i-1}v_i\\in E$",
+        "相邻连线 依次顶点 长度",
+        "path"
+      ]
     },
     {
       "chinese_name": "回路",
@@ -1150,8 +1714,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=loop"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是点边结构中的一种闭合走法。",
+        "它用于研究欧拉性质、哈密顿性质和环结构。",
+        "可记为 $v_0v_1\\cdots v_kv_0$，相邻顶点之间都有连线。",
+        "起点和终点相同；若中间顶点不重复，常称为简单圈。",
+        "它的英文译名是 circuit。"
+      ],
+      "fragmented_clues": [
+        "点边结构 闭合走法",
+        "欧拉性质 哈密顿性质 环结构",
+        "$v_0v_1\\cdots v_kv_0$",
+        "起点终点相同 中间顶点不重复 简单圈",
+        "circuit"
+      ]
     },
     {
       "chinese_name": "连通图",
@@ -1174,8 +1750,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=connected%20graph"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图论中的一种整体可达结构。",
+        "它是研究生成树、最短路和网络可靠性的基础。",
+        "定义可写成 $\\forall u,v\\in V,\\ \\exists\\text{ path }u\\leadsto v$。",
+        "任意两个顶点不一定直接相邻，但能通过若干连线间接到达。",
+        "它的英文译名是 connected graph。"
+      ],
+      "fragmented_clues": [
+        "图论 整体可达结构",
+        "生成树 最短路 网络可靠性",
+        "$\\forall u,v\\in V,\\ \\exists\\text{ path }u\\leadsto v$",
+        "任意两顶点 间接到达 同一分量",
+        "connected graph"
+      ]
     },
     {
       "chinese_name": "完全图",
@@ -1198,8 +1786,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=complete%20graph"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图论中的一种最大连接结构。",
+        "它常作为最大连接模型，也出现在拉姆齐理论和极值图论中。",
+        "含 $n$ 个顶点时记为 $K_n$，并有 $|E|=\\binom n2$。",
+        "任意两个不同顶点之间都有一条连线，每对顶点都直接相邻。",
+        "它的英文译名是 complete graph。"
+      ],
+      "fragmented_clues": [
+        "图论 最大连接结构",
+        "最大连接模型 拉姆齐理论 极值图论",
+        "$K_n,\\ |E|=\\binom n2$",
+        "任意两顶点 一条连线 直接相邻",
+        "complete graph"
+      ]
     },
     {
       "chinese_name": "二分图",
@@ -1222,8 +1822,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=bipartite%20graph"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图论中的一种两侧分部结构。",
+        "它常用于匹配、网络流和奇偶环判定。",
+        "可写作 $V=X\\sqcup Y,\\ E\\subseteq X\\times Y$。",
+        "顶点分成两侧，每条连线跨越两侧，同侧之间没有连线。",
+        "它的英文译名是 bipartite graph。"
+      ],
+      "fragmented_clues": [
+        "图论 两侧分部结构",
+        "匹配 网络流 奇偶环判定",
+        "$V=X\\sqcup Y,\\ E\\subseteq X\\times Y$",
+        "两侧顶点 跨侧连线 同侧无连线",
+        "bipartite graph"
+      ]
     },
     {
       "chinese_name": "平面图",
@@ -1246,8 +1858,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=plane%20graph"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图论中的一种可无交叉嵌入结构。",
+        "它用于地图染色、网络布线和拓扑图论。",
+        "连通情形有 $v-e+f=2$，其中 $f$ 是面数。",
+        "它描述存在某种无交叉画法，而不是某一张给定画法已经无交叉。",
+        "它的英文译名是 planar graph。"
+      ],
+      "fragmented_clues": [
+        "图论 无交叉嵌入结构",
+        "地图染色 网络布线 拓扑图论",
+        "$v-e+f=2$",
+        "存在无交叉画法 非给定画法",
+        "planar graph"
+      ]
     },
     {
       "chinese_name": "树",
@@ -1270,8 +1894,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=tree"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是离散数学中的一种最简连接结构。",
+        "它用于层级结构、递归和最小连接模型。",
+        "含 $n$ 个顶点时有 $|E|=n-1$。",
+        "它连通且没有闭合走法；一旦成环或断开就失去这种结构。",
+        "它的英文译名是 tree。"
+      ],
+      "fragmented_clues": [
+        "离散数学 最简连接结构",
+        "层级结构 递归 最小连接模型",
+        "$|E|=n-1$",
+        "连通 无闭合走法 成环断开失效",
+        "tree"
+      ]
     },
     {
       "chinese_name": "生成树",
@@ -1294,8 +1930,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=spanning%20tree"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图论中的一种覆盖全部顶点的无环子结构。",
+        "它用于网络骨架、最小连接和矩阵树定理。",
+        "若原结构有 $n$ 个顶点，则满足 $|E_T|=n-1$。",
+        "它保留原结构全部顶点，并删去多余连线后仍保持连通。",
+        "它的英文译名是 spanning tree。"
+      ],
+      "fragmented_clues": [
+        "图论 全部顶点 无环子结构",
+        "网络骨架 最小连接 矩阵树定理",
+        "$|E_T|=n-1$",
+        "保留全部顶点 删去多余连线 保持连通",
+        "spanning tree"
+      ]
     },
     {
       "chinese_name": "根树",
@@ -1318,8 +1966,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=root%20tree"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图论中带指定特殊顶点的层级结构。",
+        "它适合表示递归、语法结构和搜索过程。",
+        "常写作 $(T,r)$，其中 $r$ 是指定的特殊顶点。",
+        "选出一个特殊顶点后，父子方向和层级关系随之确定，换点会改变这些关系。",
+        "它的英文译名是 rooted tree。"
+      ],
+      "fragmented_clues": [
+        "图论 特殊顶点 层级结构",
+        "递归 语法结构 搜索过程",
+        "$(T,r)$",
+        "指定顶点 父子方向 层级关系 换点改变",
+        "rooted tree"
+      ]
     },
     {
       "chinese_name": "有向图",
@@ -1342,8 +2002,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=directed%20graph"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图论中的一种带方向关系结构。",
+        "它用于依赖关系、状态转移和单向网络。",
+        "常写作 $G=(V,A)$，一条弧可记为 $(u,v)$。",
+        "每条连线从一个顶点指向另一个顶点，可达性、入度和出度都要看方向。",
+        "它的英文译名是 directed graph。"
+      ],
+      "fragmented_clues": [
+        "图论 带方向关系结构",
+        "依赖关系 状态转移 单向网络",
+        "$G=(V,A),\\ (u,v)$",
+        "有向边 可达性 入度 出度",
+        "directed graph"
+      ]
     },
     {
       "chinese_name": "欧拉图",
@@ -1366,8 +2038,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=euler%20diagram"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图论中关于连线遍历的结构。",
+        "它常见于一笔画问题和闭合遍历问题。",
+        "连通无向情形满足 $\\deg(v)\\text{ 全为偶数}$。",
+        "它要求存在经过每条连线恰好一次并闭合的走法，关注对象是连线。",
+        "它的英文译名是 Eulerian graph。"
+      ],
+      "fragmented_clues": [
+        "图论 连线遍历结构",
+        "一笔画 闭合遍历",
+        "$\\deg(v)\\text{ 全为偶数}$",
+        "每条连线 恰好一次 闭合走法",
+        "Eulerian graph"
+      ]
     },
     {
       "chinese_name": "哈密顿图",
@@ -1390,8 +2074,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=hamilton%20graph"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图论中关于顶点遍历的结构。",
+        "它出现在旅行商问题、排列路径和复杂性理论中。",
+        "可记为 $v_1v_2\\cdots v_nv_1$，其中所有顶点都被列出。",
+        "它要求闭合走法恰好经过每个顶点一次，关注对象是顶点。",
+        "它的英文译名是 Hamiltonian graph。"
+      ],
+      "fragmented_clues": [
+        "图论 顶点遍历结构",
+        "旅行商问题 排列路径 复杂性理论",
+        "$v_1v_2\\cdots v_nv_1$",
+        "闭合走法 每个顶点 恰好一次",
+        "Hamiltonian graph"
+      ]
     },
     {
       "chinese_name": "匹配",
@@ -1414,8 +2110,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=matching"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图论中的一种边集选择结构。",
+        "它用于配对问题、婚配定理和网络分配。",
+        "若选出集合为 $M$，则 $e_1\\cap e_2=\\varnothing\\ (e_1\\ne e_2)$。",
+        "选出的任意两条连线不能共享端点，每个顶点最多被选中一次。",
+        "它的英文译名是 matching。"
+      ],
+      "fragmented_clues": [
+        "图论 边集选择结构",
+        "配对问题 婚配定理 网络分配",
+        "$e_1\\cap e_2=\\varnothing\\ (e_1\\ne e_2)$",
+        "两条连线 不共享端点 顶点最多一次",
+        "matching"
+      ]
     },
     {
       "chinese_name": "完美匹配",
@@ -1438,8 +2146,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=perfect%20match"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图论中的一种完全配对结构。",
+        "它常用于二分图、因子分解和组合优化。",
+        "若选出边集为 $M$，则 $2|M|=|V|$。",
+        "它要求所有顶点都被配成对，没有顶点落单。",
+        "它的英文译名是 perfect matching。"
+      ],
+      "fragmented_clues": [
+        "图论 完全配对结构",
+        "二分图 因子分解 组合优化",
+        "$2|M|=|V|$",
+        "所有顶点 配成对 无落单",
+        "perfect matching"
+      ]
     },
     {
       "chinese_name": "覆盖",
@@ -1462,8 +2182,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=cover"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图论优化中的一种触及结构。",
+        "它关联优化、匹配对偶和独立集关系。",
+        "顶点版本可写为 $\\forall uv\\in E,\\ u\\in C\\ \\text{或}\\ v\\in C$。",
+        "选出的顶点要拦住每条连线；重点不是两两相邻，而是没有遗漏目标。",
+        "它的英文译名是 cover。"
+      ],
+      "fragmented_clues": [
+        "图论优化 触及结构",
+        "优化 匹配对偶 独立集",
+        "$\\forall uv\\in E,\\ u\\in C\\ \\text{或}\\ v\\in C$",
+        "选出顶点 拦住每条连线 无遗漏",
+        "cover"
+      ]
     },
     {
       "chinese_name": "独立集",
@@ -1486,8 +2218,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=independent%20set"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图论中的一种无相邻顶点集合。",
+        "它用于资源冲突、编码和图染色下界。",
+        "条件为 $\\forall u,v\\in S,\\ uv\\notin E$。",
+        "内部任意两个顶点之间都没有连线，和两两相邻的结构相反。",
+        "它的英文译名是 independent set。"
+      ],
+      "fragmented_clues": [
+        "图论 无相邻顶点集合",
+        "资源冲突 编码 染色下界",
+        "$\\forall u,v\\in S,\\ uv\\notin E$",
+        "内部顶点 无连线 两两相邻相反",
+        "independent set"
+      ]
     },
     {
       "chinese_name": "团",
@@ -1510,8 +2254,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=group"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图论中的一种局部完全连接顶点集合。",
+        "它用于社群结构、拉姆齐理论和最大 clique 问题。",
+        "若顶点集为 $S$，则 $G[S]\\cong K_{|S|}$。",
+        "选出的顶点两两直接相邻，比仅仅可达或连通更强。",
+        "它的英文译名是 clique。"
+      ],
+      "fragmented_clues": [
+        "图论 局部完全连接 顶点集合",
+        "社群结构 拉姆齐理论 最大 clique",
+        "$G[S]\\cong K_{|S|}$",
+        "顶点两两直接相邻 强于连通",
+        "clique"
+      ]
     },
     {
       "chinese_name": "染色",
@@ -1534,8 +2290,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=coloring"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图论中的一种颜色分配结构。",
+        "它用于排课、频率分配和地图着色模型。",
+        "顶点版本常要求 $uv\\in E\\Rightarrow c(u)\\ne c(v)$。",
+        "合法性由相邻限制决定，不是随意给顶点、连线或区域涂颜色。",
+        "它的英文译名是 coloring。"
+      ],
+      "fragmented_clues": [
+        "图论 颜色分配结构",
+        "排课 频率分配 地图着色",
+        "$uv\\in E\\Rightarrow c(u)\\ne c(v)$",
+        "相邻限制 顶点 连线 区域",
+        "coloring"
+      ]
     },
     {
       "chinese_name": "色数",
@@ -1558,8 +2326,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=color%20number"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图论中衡量着色复杂度的数值。",
+        "它用于分析平面图、完全图和相邻冲突的复杂程度。",
+        "记作 $\\chi(G)=\\min\\{k:\\ G\\text{ 可 }k\\text{ 色染色}\\}$。",
+        "它是合法分配所需的最少颜色个数，不是某次方案里已经使用的颜色个数。",
+        "它的英文译名是 chromatic number。"
+      ],
+      "fragmented_clues": [
+        "图论 着色复杂度 数值",
+        "平面图 完全图 相邻冲突",
+        "$\\chi(G)=\\min\\{k:\\ G\\text{ 可 }k\\text{ 色染色}\\}$",
+        "最少颜色个数 非已用颜色个数",
+        "chromatic number"
+      ]
     },
     {
       "chinese_name": "四色定理",
@@ -1582,8 +2362,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=four%20color%20theorem"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图论和平面地图中的一个着色定理。",
+        "它是地图着色问题在平面结构上的数学表述。",
+        "图论表述为 $\\chi(G)\\le4$，其中 $G$ 是平面图。",
+        "任意平面地图都能用四种颜色使相邻区域不同色，但不适用于一般非平面结构。",
+        "它的英文译名是 four color theorem。"
+      ],
+      "fragmented_clues": [
+        "图论 平面地图 着色定理",
+        "地图着色 平面结构",
+        "$\\chi(G)\\le4$",
+        "四种颜色 相邻区域不同色 非一般结构",
+        "four color theorem"
+      ]
     },
     {
       "chinese_name": "图同构",
@@ -1606,8 +2398,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=graph%20isomorphism"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图论中比较抽象结构相同的一种关系。",
+        "它关注重命名顶点后是否完全保留邻接关系。",
+        "若存在双射 $\\phi$ 使 $uv\\in E(G)\\Longleftrightarrow \\phi(u)\\phi(v)\\in E(H)$，则成立。",
+        "画法、顶点名称和坐标可以不同；邻接关系完全对应才是关键。",
+        "它的英文译名是 graph isomorphism。"
+      ],
+      "fragmented_clues": [
+        "图论 抽象结构相同 关系",
+        "重命名顶点 保留邻接",
+        "$uv\\in E(G)\\Longleftrightarrow \\phi(u)\\phi(v)\\in E(H)$",
+        "画法 名称 坐标 不重要 邻接对应",
+        "graph isomorphism"
+      ]
     },
     {
       "chinese_name": "邻接矩阵",
@@ -1630,8 +2434,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=adjacency%20matrix"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图论和线性代数之间的一种矩阵表示。",
+        "它可用于路径计数和谱图理论。",
+        "简单情形满足 $A_{ij}=1\\iff v_iv_j\\in E$。",
+        "它按顶点对记录是否相邻，而不是记录顶点与连线的关联。",
+        "它的英文译名是 adjacency matrix。"
+      ],
+      "fragmented_clues": [
+        "图论 线性代数 矩阵表示",
+        "路径计数 谱图理论",
+        "$A_{ij}=1\\iff v_iv_j\\in E$",
+        "顶点对 是否相邻 非顶点连线关系",
+        "adjacency matrix"
+      ]
     },
     {
       "chinese_name": "关联矩阵",
@@ -1654,8 +2470,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=correlation%20matrix"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图论和线性代数之间的一种点线矩阵表示。",
+        "它适合描述网络流、割和拉普拉斯矩阵。",
+        "无向情形常写 $B_{ve}=1\\iff v\\in e$。",
+        "它按顶点与连线的关系填列，不直接记录两个顶点是否相邻。",
+        "它的英文译名是 incidence matrix。"
+      ],
+      "fragmented_clues": [
+        "图论 线性代数 点线矩阵表示",
+        "网络流 割 拉普拉斯矩阵",
+        "$B_{ve}=1\\iff v\\in e$",
+        "顶点 连线 关系填列 非顶点对",
+        "incidence matrix"
+      ]
     },
     {
       "chinese_name": "拉普拉斯矩阵",
@@ -1678,8 +2506,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=laplacian%20matrix"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图论谱方法中的一种矩阵对象。",
+        "它用于连通性、随机游走、谱聚类和矩阵树定理。",
+        "定义为 $L=D-A$，其中 $D$ 是度数对角矩阵，$A$ 是邻接矩阵。",
+        "它把度数对角信息和邻接信息合在一起，编码局部连接差分。",
+        "它的英文译名是 Laplacian matrix。"
+      ],
+      "fragmented_clues": [
+        "图论谱方法 矩阵对象",
+        "连通性 随机游走 谱聚类 矩阵树定理",
+        "$L=D-A$",
+        "度数对角 邻接信息 局部连接差分",
+        "Laplacian matrix"
+      ]
     },
     {
       "chinese_name": "矩阵树定理",
@@ -1702,8 +2542,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=matrix%20tree%20theorem"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图论中把树形子结构计数转为线性代数的定理。",
+        "它使用拉普拉斯矩阵的余子式来计算覆盖全部顶点的无环连通子结构数量。",
+        "若删去 $L$ 的任一行列得到 $L^*$，则 $\\tau(G)=\\det L^*$。",
+        "不同删法得到的余子式行列式相同，并给出原图的 spanning tree 数。",
+        "它的英文译名是 matrix tree theorem。"
+      ],
+      "fragmented_clues": [
+        "图论 树形子结构 线性代数 定理",
+        "拉普拉斯矩阵 余子式 覆盖全部顶点",
+        "$\\tau(G)=\\det L^*$",
+        "任一行列删除 行列式相同 spanning tree 数",
+        "matrix tree theorem"
+      ]
     },
     {
       "chinese_name": "德布鲁因序列",
@@ -1726,8 +2578,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=de%20bruyne%20sequence"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是离散组合中的一种循环序列结构。",
+        "它用于编码、测试序列和滑动窗口覆盖。",
+        "常记为 $B(k,n)$，循环长度为 $k^n$。",
+        "它在一个循环串中恰好包含所有长度为 $n$ 的字串一次。",
+        "它的英文译名是 de Bruijn sequence。"
+      ],
+      "fragmented_clues": [
+        "离散组合 循环序列结构",
+        "编码 测试序列 滑动窗口覆盖",
+        "$B(k,n),\\ k^n$",
+        "循环串 所有长度 $n$ 字串 恰好一次",
+        "de Bruijn sequence"
+      ]
     },
     {
       "chinese_name": "格雷码",
@@ -1750,8 +2614,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=gray%20code"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是离散编码中的一种顺序结构。",
+        "它用于组合生成、数字电路和汉明距离为一的遍历。",
+        "二进制反射形式可写作 $g_i=b_i\\oplus b_{i+1}$。",
+        "相邻两个码字只差一位，连续状态变化尽量小。",
+        "它的英文译名是 Gray code。"
+      ],
+      "fragmented_clues": [
+        "离散编码 顺序结构",
+        "组合生成 数字电路 汉明距离一",
+        "$g_i=b_i\\oplus b_{i+1}$",
+        "相邻码字 一位差异 状态变化小",
+        "Gray code"
+      ]
     },
     {
       "chinese_name": "拉丁方",
@@ -1774,8 +2650,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=latin%20square"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是组合设计中的一种方阵结构。",
+        "它用于实验设计、有限几何和错误校正。",
+        "行条件可写为 $\\{L_{i1},\\ldots,L_{in}\\}=\\{1,\\ldots,n\\}$。",
+        "$n\\times n$ 方阵中每种符号在每行每列各出现一次。",
+        "它的英文译名是 Latin square。"
+      ],
+      "fragmented_clues": [
+        "组合设计 方阵结构",
+        "实验设计 有限几何 错误校正",
+        "$\\{L_{i1},\\ldots,L_{in}\\}=\\{1,\\ldots,n\\}$",
+        "$n\\times n$ 每种符号 每行每列一次",
+        "Latin square"
+      ]
     },
     {
       "chinese_name": "幻方",
@@ -1798,8 +2686,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=magic%20square"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是组合构造中的一种数字方阵。",
+        "它是对称排列中要求若干方向求和相等的经典对象。",
+        "若阶数为 $n$，常见公共和为 $M=\\frac{n(n^2+1)}2$。",
+        "数字填入方阵后，每行、每列以及通常两条主对角线的和相等。",
+        "它的英文译名是 magic square。"
+      ],
+      "fragmented_clues": [
+        "组合构造 数字方阵",
+        "对称排列 求和相等",
+        "$M=\\frac{n(n^2+1)}2$",
+        "每行 每列 主对角线 公共和",
+        "magic square"
+      ]
     },
     {
       "chinese_name": "有限集",
@@ -1822,8 +2722,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=finite%20set"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是集合论中的一种基数受限对象。",
+        "它是组合数学的基本对象，排列、组合和图都建立在有限对象计数上。",
+        "定义上可写 $|A|=n$，其中 $n$ 是非负整数。",
+        "它可以与某个初始自然数集合建立双射，从而逐个列举出确切大小。",
+        "它的英文译名是 finite set。"
+      ],
+      "fragmented_clues": [
+        "集合论 基数受限对象",
+        "组合数学 排列 组合 图",
+        "$|A|=n$",
+        "初始自然数集合 双射 逐个列举",
+        "finite set"
+      ]
     },
     {
       "chinese_name": "布尔格",
@@ -1846,8 +2758,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=burg"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是偏序理论中的一种幂集格结构。",
+        "它用于研究链、反链、斯佩纳定理和二项式系数层。",
+        "对 $[n]=\\{1,\\ldots,n\\}$，可写 $B_n=(2^{[n]},\\subseteq)$。",
+        "每个元素都是一个子集，交与并对应格运算。",
+        "它的英文译名是 Boolean lattice。"
+      ],
+      "fragmented_clues": [
+        "偏序理论 幂集格结构",
+        "链 反链 斯佩纳定理 二项式系数层",
+        "$B_n=(2^{[n]},\\subseteq)$",
+        "元素 子集 交 并 格运算",
+        "Boolean lattice"
+      ]
     },
     {
       "chinese_name": "偏序集",
@@ -1870,8 +2794,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=partially%20ordered%20set"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是序理论中的一种关系结构。",
+        "它用于描述包含、整除、任务依赖和层级结构。",
+        "常写作 $(P,\\le)$，其中 $\\le$ 是给定的序关系。",
+        "关系必须自反、反对称、传递，但并非任意两个元素都必须可比较。",
+        "它的英文译名是 partially ordered set，也叫 poset。"
+      ],
+      "fragmented_clues": [
+        "序理论 关系结构",
+        "包含 整除 任务依赖 层级结构",
+        "$(P,\\le)$",
+        "自反 反对称 传递 非任意可比较",
+        "partially ordered set poset"
+      ]
     },
     {
       "chinese_name": "链",
@@ -1894,8 +2830,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=chain"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是偏序结构中的一种完全可比较子集。",
+        "它用于布尔格分解、斯佩纳定理和层级深度研究。",
+        "若子集为 $C$，则 $\\forall x,y\\in C,\\ x\\le y\\ \\text{或}\\ y\\le x$。",
+        "子集中任意两个元素都能比较，像一条全序的层级路径。",
+        "它的英文译名是 chain。"
+      ],
+      "fragmented_clues": [
+        "偏序结构 完全可比较子集",
+        "布尔格分解 斯佩纳定理 层级深度",
+        "$\\forall x,y\\in C,\\ x\\le y\\ \\text{或}\\ y\\le x$",
+        "任意两个元素 可比较 全序层级",
+        "chain"
+      ]
     },
     {
       "chinese_name": "反链",
@@ -1918,8 +2866,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=anti%20chain"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是偏序结构中的一种互不可比较子集。",
+        "它在布尔格中对应同一大小的子集层，常用于极值组合。",
+        "条件为 $x\\ne y\\in A\\Rightarrow x\\nleq y,\\ y\\nleq x$。",
+        "不同元素之间没有包含或先后关系，不能互相排成可比较序列。",
+        "它的英文译名是 antichain。"
+      ],
+      "fragmented_clues": [
+        "偏序结构 互不可比较子集",
+        "布尔格 同大小子集层 极值组合",
+        "$x\\ne y\\in A\\Rightarrow x\\nleq y,\\ y\\nleq x$",
+        "无包含关系 无先后关系 不可比较",
+        "antichain"
+      ]
     },
     {
       "chinese_name": "斯佩纳定理",
@@ -1942,8 +2902,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=spener%20theorem"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是极值组合中关于子集族大小的定理。",
+        "它研究幂集在包含偏序下的最大互不可比较族。",
+        "结论为 $\\max |A|=\\binom n{\\lfloor n/2\\rfloor}$。",
+        "最大族来自中间层，也就是大小最接近 $n/2$ 的子集。",
+        "它的英文译名是 Sperner's theorem。"
+      ],
+      "fragmented_clues": [
+        "极值组合 子集族大小 定理",
+        "幂集 包含偏序 最大互不可比较族",
+        "$\\max |A|=\\binom n{\\lfloor n/2\\rfloor}$",
+        "中间层 大小接近 $n/2$",
+        "Sperner's theorem"
+      ]
     },
     {
       "chinese_name": "匹配多项式",
@@ -1966,8 +2938,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=matching%20polynomials"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图论中记录配对结构数量的多项式。",
+        "它连接匹配计数、递推和图谱性质。",
+        "常写作 $\\mu(G,x)=\\sum_k(-1)^k m_k x^{n-2k}$。",
+        "系数记录不同大小的配对边集，指数反映覆盖顶点后剩余的规模。",
+        "它的英文译名是 matching polynomial。"
+      ],
+      "fragmented_clues": [
+        "图论 配对结构数量 多项式",
+        "匹配计数 递推 图谱性质",
+        "$\\mu(G,x)=\\sum_k(-1)^k m_k x^{n-2k}$",
+        "配对边集 剩余规模 指数",
+        "matching polynomial"
+      ]
     },
     {
       "chinese_name": "色多项式",
@@ -1990,8 +2974,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=color%20polynomial"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是图染色计数中的一种多项式对象。",
+        "它把合法顶点着色数量变成关于颜色数的函数研究。",
+        "记为 $P_G(q)$，其中 $q$ 是可用颜色数。",
+        "它给出每个颜色数下的合法方案数量，不是最小可行颜色数。",
+        "它的英文译名是 chromatic polynomial。"
+      ],
+      "fragmented_clues": [
+        "图染色计数 多项式对象",
+        "合法顶点着色 颜色数 函数",
+        "$P_G(q)$",
+        "每个颜色数 合法方案数量 非最小值",
+        "chromatic polynomial"
+      ]
     },
     {
       "chinese_name": "秩生成函数",
@@ -2014,8 +3010,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=rank%20generating%20function"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是分级偏序结构中的一种层计数工具。",
+        "它用于布尔格、分拆和格结构的层计数。",
+        "常写为 $R_P(x)=\\sum_r a_rx^r$。",
+        "它需要先有清楚的秩函数，系数记录每个层级的元素数量。",
+        "它的英文译名是 rank generating function。"
+      ],
+      "fragmented_clues": [
+        "分级偏序 层计数工具",
+        "布尔格 分拆 格结构",
+        "$R_P(x)=\\sum_r a_rx^r$",
+        "秩函数 层级元素数量 系数",
+        "rank generating function"
+      ]
     },
     {
       "chinese_name": "杨图",
@@ -2038,8 +3046,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=young%20diagram"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是整数分拆中的一种方格形状。",
+        "它把整数分拆可视化，并服务于填表结构和表示论计数。",
+        "若分拆为 $\\lambda$，则 $|\\lambda|=\\lambda_1+\\lambda_2+\\cdots$。",
+        "左对齐方格按非增行长排列，第 $i$ 行有 $\\lambda_i$ 个方格。",
+        "它的英文译名是 Young diagram。"
+      ],
+      "fragmented_clues": [
+        "整数分拆 方格形状",
+        "可视化 填表结构 表示论计数",
+        "$|\\lambda|=\\lambda_1+\\lambda_2+\\cdots$",
+        "左对齐方格 非增行长 第 $i$ 行",
+        "Young diagram"
+      ]
     },
     {
       "chinese_name": "杨表",
@@ -2062,8 +3082,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=young%20tableau"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是组合表示论中的一种填数表格结构。",
+        "它用于对称函数、表示论和排列对应。",
+        "半标准情形常要求 $T_{i,j}\\le T_{i,j+1},\\ T_{i,j}<T_{i+1,j}$。",
+        "它在方格形状中加入数字和行列限制，只有形状还不够。",
+        "它的英文译名是 Young tableau。"
+      ],
+      "fragmented_clues": [
+        "组合表示论 填数表格结构",
+        "对称函数 表示论 排列对应",
+        "$T_{i,j}\\le T_{i,j+1},\\ T_{i,j}<T_{i+1,j}$",
+        "方格形状 填数 行列限制",
+        "Young tableau"
+      ]
     },
     {
       "chinese_name": "标准杨表",
@@ -2086,8 +3118,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=standard%20yang%20table"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是组合表示论中的一种严格填数表格。",
+        "它出现在钩长公式和 Robinson-Schensted 对应中。",
+        "其数量记为 $f^\\lambda=\\#\\operatorname{SYT}(\\lambda)$。",
+        "它把 $1$ 到 $n$ 各填一次，并要求每行每列严格递增。",
+        "它的英文译名是 standard Young tableau。"
+      ],
+      "fragmented_clues": [
+        "组合表示论 严格填数表格",
+        "钩长公式 Robinson-Schensted 对应",
+        "$f^\\lambda=\\#\\operatorname{SYT}(\\lambda)$",
+        "$1$ 到 $n$ 各一次 行列严格递增",
+        "standard Young tableau"
+      ]
     },
     {
       "chinese_name": "钩长公式",
@@ -2110,8 +3154,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=hook%20length%20formula"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是组合表示论中计算填表数量的公式。",
+        "它用于给定方格形状时计算标准填数表格数量。",
+        "公式为 $f^\\lambda=\\frac{n!}{\\prod_{u\\in\\lambda}h(u)}$。",
+        "它把全局填表数压缩为每个方格的局部长度乘积。",
+        "它的英文译名是 hook length formula。"
+      ],
+      "fragmented_clues": [
+        "组合表示论 填表数量 公式",
+        "给定方格形状 标准填数表格数量",
+        "$f^\\lambda=\\frac{n!}{\\prod_{u\\in\\lambda}h(u)}$",
+        "全局填表数 局部长度乘积",
+        "hook length formula"
+      ]
     },
     {
       "chinese_name": "罗宾逊申斯特德对应",
@@ -2134,8 +3190,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=robinson%20schensted%20correspondence"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是组合表示论中的一种双射对应。",
+        "它把排列问题转化为同形状标准填数表格的问题。",
+        "形式上写为 $\\pi\\longleftrightarrow(P,Q)$。",
+        "$P$ 记录插入结构，$Q$ 记录插入顺序，并且二者能唯一恢复原排列。",
+        "它的英文译名是 Robinson-Schensted correspondence。"
+      ],
+      "fragmented_clues": [
+        "组合表示论 双射对应",
+        "排列 同形状标准填数表格",
+        "$\\pi\\longleftrightarrow(P,Q)$",
+        "$P$ 插入结构 $Q$ 插入顺序 唯一恢复",
+        "Robinson-Schensted correspondence"
+      ]
     },
     {
       "chinese_name": "组合设计",
@@ -2158,8 +3226,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=combination%20design"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是有限组合数学中的一种均匀结构。",
+        "它用于实验安排、编码和有限几何。",
+        "常用参数为 $(v,b,r,k,\\lambda)$。",
+        "它在有限点集上选取若干子集，使点或点组按规定次数均匀出现。",
+        "它的英文译名是 combinatorial design。"
+      ],
+      "fragmented_clues": [
+        "有限组合数学 均匀结构",
+        "实验安排 编码 有限几何",
+        "$(v,b,r,k,\\lambda)$",
+        "有限点集 子集 点组 规定次数 均匀出现",
+        "combinatorial design"
+      ]
     },
     {
       "chinese_name": "区组设计",
@@ -2182,8 +3262,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=block%20design"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是有限设计理论中的一种块结构模型。",
+        "它用于实验分组和有限结构构造。",
+        "平衡不完全情形满足 $vr=bk,\\ r(k-1)=\\lambda(v-1)$。",
+        "它比普通分组更严格，要求每个点或点对出现次数一致。",
+        "它的英文译名是 block design。"
+      ],
+      "fragmented_clues": [
+        "有限设计理论 块结构模型",
+        "实验分组 有限结构构造",
+        "$vr=bk,\\ r(k-1)=\\lambda(v-1)$",
+        "点 点对 出现次数一致",
+        "block design"
+      ]
     },
     {
       "chinese_name": "斯坦纳系",
@@ -2206,8 +3298,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=steiner%20department"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是有限设计理论中的一种规整覆盖结构。",
+        "它包括三元例子，也和有限射影平面相关。",
+        "记作 $S(t,k,v)$，其中 $t$ 是被唯一覆盖的点组大小。",
+        "每个 $t$ 元点集恰好包含在一个 $k$ 元区组中，覆盖次数固定为 $1$。",
+        "它的英文译名是 Steiner system。"
+      ],
+      "fragmented_clues": [
+        "有限设计理论 规整覆盖结构",
+        "三元例子 有限射影平面",
+        "$S(t,k,v)$",
+        "$t$ 元点集 一个 $k$ 元区组 覆盖次数 $1$",
+        "Steiner system"
+      ]
     },
     {
       "chinese_name": "有限几何",
@@ -2230,8 +3334,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=finite%20geometry"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是离散数学中的一种几何结构理论。",
+        "它连接组合设计、编码理论和射影平面。",
+        "向量空间模型中 $|F_q^n|=q^n$。",
+        "对象总数有限，但仍保留点、线、平面等线性结构，连续长度和角度不再是主要对象。",
+        "它的英文译名是 finite geometry。"
+      ],
+      "fragmented_clues": [
+        "离散数学 几何结构理论",
+        "组合设计 编码理论 射影平面",
+        "$|F_q^n|=q^n$",
+        "有限对象 点 线 平面 线性结构",
+        "finite geometry"
+      ]
     },
     {
       "chinese_name": "射影平面",
@@ -2254,8 +3370,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=projective%20plane"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是有限几何中的一种点线结构。",
+        "它是有限几何和区组设计的重要例子，并消除了平行线。",
+        "阶为 $q$ 的有限情形有 $v=q^2+q+1$。",
+        "任意两点确定一线，任意两线交于一点。",
+        "它的英文译名是 projective plane。"
+      ],
+      "fragmented_clues": [
+        "有限几何 点线结构",
+        "区组设计 无平行线",
+        "$v=q^2+q+1$",
+        "任意两点一线 任意两线一点",
+        "projective plane"
+      ]
     },
     {
       "chinese_name": "差集",
@@ -2278,8 +3406,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=difference%20set"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是群与设计理论中的一种均匀子集。",
+        "它能构造对称区组设计，也出现在有限几何和编码理论中。",
+        "若 $D\\subseteq G$，可写 $DD^{-1}=k\\cdot e+\\lambda(G-e)$。",
+        "每个非单位元素被表示为两个选中元素之差的次数必须一致。",
+        "它的英文译名是 difference set。"
+      ],
+      "fragmented_clues": [
+        "群 设计理论 均匀子集",
+        "对称区组设计 有限几何 编码理论",
+        "$DD^{-1}=k\\cdot e+\\lambda(G-e)$",
+        "非单位元素 表示次数一致",
+        "difference set"
+      ]
     },
     {
       "chinese_name": "拉姆齐数",
@@ -2302,8 +3442,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=ramsey%20number"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是极值组合中的一种最小阈值数。",
+        "它研究边着色完全图中同色结构必然出现所需的规模。",
+        "二色情形写作 $R(s,t)$。",
+        "顶点数达到该值时必有红色 $K_s$ 或蓝色 $K_t$，而精确值通常很难求。",
+        "它的英文译名是 Ramsey number。"
+      ],
+      "fragmented_clues": [
+        "极值组合 最小阈值数",
+        "边着色 完全图 同色结构",
+        "$R(s,t)$",
+        "红色 $K_s$ 蓝色 $K_t$ 精确值困难",
+        "Ramsey number"
+      ]
     },
     {
       "chinese_name": "拉姆齐定理",
@@ -2326,8 +3478,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=ramsay%20theorem"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是极值组合中的一个存在性定理。",
+        "它说明足够大的有限结构在有限着色下必含指定大小的同色子结构。",
+        "可概括为 $R(s,t)<\\infty$。",
+        "它保证有限阈值存在，但一般不直接给出容易达到的精确数值。",
+        "它的英文译名是 Ramsey theorem。"
+      ],
+      "fragmented_clues": [
+        "极值组合 存在性定理",
+        "有限结构 有限着色 同色子结构",
+        "$R(s,t)<\\infty$",
+        "有限阈值存在 非直接精确数值",
+        "Ramsey theorem"
+      ]
     },
     {
       "chinese_name": "图兰定理",
@@ -2350,8 +3514,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=turan%20theorem"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是极值图论中的一个边数上界定理。",
+        "它研究不含大团时，给定顶点数的结构最多能有多少连线。",
+        "核心表达为 $ex(n,K_{r+1})=e(T_r(n))$。",
+        "它不只给出上界，还刻画达到上界的尽量均衡 $r$ 部完全结构。",
+        "它的英文译名是 Turan theorem。"
+      ],
+      "fragmented_clues": [
+        "极值图论 边数上界 定理",
+        "不含大团 顶点数 最多连线",
+        "$ex(n,K_{r+1})=e(T_r(n))$",
+        "上界 均衡 $r$ 部完全结构",
+        "Turan theorem"
+      ]
     },
     {
       "chinese_name": "极值图",
@@ -2374,8 +3550,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=extremal%20graph"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是研究极端边数问题中的一种最优结构对象。",
+        "它研究禁止某些子图或满足限制时，边数或其他参数达到极端的情形。",
+        "常写作 $ex(n,H)=\\max e(G)$。",
+        "它关心在不出现 $H$ 的前提下，一个 $n$ 顶点结构最多能多密。",
+        "它的英文译名是 extremal graph。"
+      ],
+      "fragmented_clues": [
+        "极端边数问题 最优结构对象",
+        "禁止子图 参数极端 边数最大",
+        "$ex(n,H)=\\max e(G)$",
+        "$n$ 顶点 不含 $H$ 最大密度",
+        "extremal graph"
+      ]
     },
     {
       "chinese_name": "概率方法",
@@ -2398,8 +3586,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=probability%20method"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是组合数学中的一种存在性证明方法。",
+        "它常通过期望、方差或局部引理得到存在性结论。",
+        "基本逻辑可写为 $\\Pr(X>0)>0\\Rightarrow \\exists\\ \\text{满足条件的对象}$。",
+        "它用随机对象的成功概率为正来证明确定性对象存在，不一定给出显式构造。",
+        "它的英文译名是 probabilistic method。"
+      ],
+      "fragmented_clues": [
+        "组合数学 存在性证明方法",
+        "期望 方差 局部引理",
+        "$\\Pr(X>0)>0\\Rightarrow \\exists\\ \\text{满足条件的对象}$",
+        "随机对象 成功概率为正 确定性存在",
+        "probabilistic method"
+      ]
     }
   ]
 }

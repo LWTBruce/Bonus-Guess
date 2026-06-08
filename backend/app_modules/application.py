@@ -7,6 +7,7 @@ from .crossword import CrosswordMixin
 from .round_play import RoundPlayMixin
 from .data_views import DataViewsMixin
 from .ui_helpers import UiHelpersMixin
+from .audio import AudioMixin
 
 
 def _run_daemon(target):
@@ -26,6 +27,7 @@ class BonusGuessApp(
     RoundPlayMixin,
     DataViewsMixin,
     UiHelpersMixin,
+    AudioMixin,
     BackdropMixin,
     tk.Tk,
 ):
@@ -47,6 +49,8 @@ class BonusGuessApp(
         self.configure(bg="#111725")
         self.bind("<F11>", self.toggle_fullscreen)
         self.bind("<Escape>", self.exit_fullscreen)
+        self.audio = None
+        self.init_audio()
 
         self.library = TermLibrary(WORDS_DIR)
         self.clue_library = ClueLibrary(TERM_CLUES_DIR)
@@ -141,11 +145,18 @@ class BonusGuessApp(
         self.timed_round_start = None
         self.timed_status_label = None
         self.achievements = read_achievements()
+        self._achievements_refresh_signature = None
         self.avatar_option_canvases = []
         self.avatar_option_labels = []
         self.avatar_preview_canvas = None
         self.available_avatar_ids = {0}
+        self.available_home_music_ids = set()
         self.available_title_options = []
+        self.settings_home_music_var = None
+        self.settings_music_options_frame = None
+        self.settings_music_cards = []
+        self.settings_sfx_choice_vars = {}
+        self.settings_sfx_options_frame = None
         self.settings_title_var = None
         self.settings_title_category_var = None
         self.settings_title_search_var = None

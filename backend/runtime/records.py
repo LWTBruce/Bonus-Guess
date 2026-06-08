@@ -35,9 +35,10 @@ DIFFICULTY_MODE_BY_VALUE = {
     for difficulty in values
 }
 _RECORD_ENTRIES_CACHE = {
-    "root": None,
-    "entries": None,
+    "roots": {},
 }
+_RECORD_SUMMARY_CACHE = {}
+_ACHIEVEMENTS_CACHE = {}
 _DAILY_TERMS_CACHE = {
     "date": None,
     "mtime_ns": None,
@@ -45,13 +46,49 @@ _DAILY_TERMS_CACHE = {
 }
 
 
+def _record_root_key(root):
+    try:
+        return str(root.resolve())
+    except OSError:
+        return str(root.absolute())
+
+
+def _record_root_cache(root):
+    key = _record_root_key(root)
+    return key, _RECORD_ENTRIES_CACHE.setdefault("roots", {}).get(key)
+
+
+def _copy_record_entries(entries):
+    return [dict(entry) for entry in entries]
+
+
+def _clear_summary_cache_for_root(root_key=None):
+    if root_key is None:
+        _RECORD_SUMMARY_CACHE.clear()
+        return
+    for key in list(_RECORD_SUMMARY_CACHE):
+        if key[0] == root_key:
+            _RECORD_SUMMARY_CACHE.pop(key, None)
+
+
+def clear_record_caches(record_dir=None):
+    if record_dir is None:
+        _RECORD_ENTRIES_CACHE["roots"] = {}
+        _RECORD_SUMMARY_CACHE.clear()
+        _ACHIEVEMENTS_CACHE.clear()
+        return
+    root_key = _record_root_key(record_dir)
+    _RECORD_ENTRIES_CACHE.setdefault("roots", {}).pop(root_key, None)
+    _clear_summary_cache_for_root(root_key)
+
+
 def load_record_entries(record_dir=None):
     root = record_dir or RECORD_DIR
     if not root.exists():
         return []
-    cache_root = str(root.resolve())
-    if _RECORD_ENTRIES_CACHE.get("root") == cache_root and _RECORD_ENTRIES_CACHE.get("entries") is not None:
-        return [dict(entry) for entry in _RECORD_ENTRIES_CACHE["entries"]]
+    cache_root, cached = _record_root_cache(root)
+    if cached and cached.get("entries") is not None:
+        return _copy_record_entries(cached["entries"])
     entries = []
     for path in root.rglob("*.json"):
         if path.name in {ACHIEVEMENTS_FILE.name, RANK_PROGRESS_FILE.name}:
@@ -63,22 +100,37 @@ def load_record_entries(record_dir=None):
         data["_path"] = path
         entries.append(data)
     entries.sort(key=lambda item: item.get("created_at", ""), reverse=True)
-    _RECORD_ENTRIES_CACHE["root"] = cache_root
-    _RECORD_ENTRIES_CACHE["entries"] = [dict(entry) for entry in entries]
-    return [dict(entry) for entry in entries]
+    _RECORD_ENTRIES_CACHE.setdefault("roots", {})[cache_root] = {
+        "entries": _copy_record_entries(entries),
+        "revision": (cached or {}).get("revision", 0) if isinstance(cached, dict) else 0,
+    }
+    _clear_summary_cache_for_root(cache_root)
+    return _copy_record_entries(entries)
 
 
 def add_record_entry_to_cache(record, path, record_dir=None):
     root = record_dir or RECORD_DIR
-    cache_root = str(root.resolve())
-    if _RECORD_ENTRIES_CACHE.get("root") != cache_root or _RECORD_ENTRIES_CACHE.get("entries") is None:
+    cache_root, cached = _record_root_cache(root)
+    if not cached or cached.get("entries") is None:
         return
     cached = dict(record)
     cached["_path"] = path
-    entries = [entry for entry in _RECORD_ENTRIES_CACHE["entries"] if entry.get("_path") != path]
+    entries = [entry for entry in _RECORD_ENTRIES_CACHE["roots"][cache_root]["entries"] if entry.get("_path") != path]
     entries.insert(0, cached)
     entries.sort(key=lambda item: item.get("created_at", ""), reverse=True)
-    _RECORD_ENTRIES_CACHE["entries"] = entries
+    _RECORD_ENTRIES_CACHE["roots"][cache_root]["entries"] = entries
+    _RECORD_ENTRIES_CACHE["roots"][cache_root]["revision"] = int(_RECORD_ENTRIES_CACHE["roots"][cache_root].get("revision") or 0) + 1
+    _clear_summary_cache_for_root(cache_root)
+
+
+def record_entries_signature(record_dir=None):
+    root = record_dir or RECORD_DIR
+    root_key, cached = _record_root_cache(root)
+    if not cached:
+        load_record_entries(root)
+        root_key, cached = _record_root_cache(root)
+    entries = cached.get("entries") if cached else []
+    return (root_key, int((cached or {}).get("revision") or 0), len(entries or []))
 
 
 def record_storage_dir(moment):
@@ -829,6 +881,36 @@ def summarize_records(records, achievements_data=None):
     }
 
 
+def _achievements_signature(achievements_data):
+    completed = achievements_data.get("completed") if isinstance(achievements_data, dict) else {}
+    if not isinstance(completed, dict):
+        return ()
+    return tuple(sorted((str(key), str(value)) for key, value in completed.items() if value))
+
+
+def _copy_achievements_data(data):
+    result = dict(data or {})
+    completed = result.get("completed")
+    result["completed"] = dict(completed) if isinstance(completed, dict) else {}
+    return result
+
+
+def load_record_summary(record_dir=None, achievements_data=None):
+    root = record_dir or RECORD_DIR
+    records = load_record_entries(root)
+    root_key, revision, count = record_entries_signature(root)
+    if achievements_data is None:
+        achievements_path = (root / ACHIEVEMENTS_FILE.name) if record_dir is not None else ACHIEVEMENTS_FILE
+        achievements_data = read_achievements(achievements_path)
+    cache_key = (root_key, revision, count, _achievements_signature(achievements_data))
+    cached = _RECORD_SUMMARY_CACHE.get(cache_key)
+    if cached is not None:
+        return cached
+    summary = summarize_records(records, achievements_data=achievements_data)
+    _RECORD_SUMMARY_CACHE[cache_key] = summary
+    return summary
+
+
 def format_duration(seconds):
     seconds = int(seconds)
     hours, rem = divmod(seconds, 3600)
@@ -844,15 +926,31 @@ def read_achievements(path=None):
     target = path or ACHIEVEMENTS_FILE
     if not target.exists():
         return {"completed": {}}
+    cache_key = str(target.resolve())
+    try:
+        mtime_ns = target.stat().st_mtime_ns
+    except OSError:
+        mtime_ns = None
+    cached = _ACHIEVEMENTS_CACHE.get(cache_key)
+    if cached and cached.get("mtime_ns") == mtime_ns:
+        return _copy_achievements_data(cached["data"])
     try:
         data = json.loads(target.read_text(encoding="utf-8"))
     except Exception:
         return {"completed": {}}
     if not isinstance(data.get("completed"), dict):
         data["completed"] = {}
+    _ACHIEVEMENTS_CACHE[cache_key] = {"mtime_ns": mtime_ns, "data": _copy_achievements_data(data)}
     return data
 
 
 def write_achievements(data):
     RECORD_DIR.mkdir(parents=True, exist_ok=True)
     ACHIEVEMENTS_FILE.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    try:
+        cache_key = str(ACHIEVEMENTS_FILE.resolve())
+        mtime_ns = ACHIEVEMENTS_FILE.stat().st_mtime_ns
+        _ACHIEVEMENTS_CACHE[cache_key] = {"mtime_ns": mtime_ns, "data": _copy_achievements_data(data)}
+    except OSError:
+        pass
+    _RECORD_SUMMARY_CACHE.clear()

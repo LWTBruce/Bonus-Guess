@@ -22,8 +22,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=winding%20complex"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的复形。",
+        "它关联升次数微分、闭上链、余边界、层上同调和德拉姆形式。",
+        "一个标准表达是 $H^n(C)=\\ker d^n/\\operatorname{im}d^{n-1}$。",
+        "与低标方向的链版本相反，次数向上推进并以 $\\ker d^n/\\operatorname{im}d^{n-1}$ 取商。",
+        "它的英文译名是 cochain complex。"
+      ],
+      "fragmented_clues": [
+        "同调代数 复形",
+        "升次数微分 闭上链 余边界 层上同调 德拉姆形式",
+        "$H^n(C)=\\ker d^n/\\operatorname{im}d^{n-1}$",
+        "次数向上 链版本对比 $\\ker d^n/\\operatorname{im}d^{n-1}$",
+        "cochain complex"
+      ]
     },
     {
       "chinese_name": "边界算子",
@@ -46,8 +58,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=boundary%20operator"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的算子。",
+        "它关联降低次数的微分、循环、边界、拓扑链群和自由分解。",
+        "一个标准表达是 $\\operatorname{im}d_{n+1}\\subset\\ker d_n$。",
+        "它满足连续两次作用为零，使像落入核并让同调商式有定义。",
+        "它的英文译名是 boundary operator。"
+      ],
+      "fragmented_clues": [
+        "同调代数 算子",
+        "降次数微分 循环 边界 拓扑链 自由分解",
+        "$\\operatorname{im}d_{n+1}\\subset\\ker d_n$",
+        "二次为零 像入核 同调商式",
+        "boundary operator"
+      ]
     },
     {
       "chinese_name": "余边界算子",
@@ -70,8 +94,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=co%20boundary%20operator"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的算子。",
+        "它关联升高次数的微分、上链、切赫上同调、群上同调和局部数据。",
+        "一个标准表达是 $H^n=\\ker d^n/\\operatorname{im}d^{n-1}$。",
+        "方向与降低次数的链微分相反，闭对象模掉前一阶像后形成上同调。",
+        "它的英文译名是 coboundary operator。"
+      ],
+      "fragmented_clues": [
+        "同调代数 算子",
+        "升次数微分 上链 切赫 群作用 局部数据",
+        "$H^n=\\ker d^n/\\operatorname{im}d^{n-1}$",
+        "方向相反 闭对象 前阶像 上同调",
+        "coboundary operator"
+      ]
     },
     {
       "chinese_name": "链映射",
@@ -94,8 +130,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=chain%20map"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的映射类概念。",
+        "它关联两个复形之间的逐次态射、微分交换图和诱导同调映射。",
+        "一个标准表达是 $H_n(f):H_n(C)\\to H_n(D)$。",
+        "交换条件保证循环送循环、边界送边界，任意分次态射不满足这一点。",
+        "它的英文译名是 chain map。"
+      ],
+      "fragmented_clues": [
+        "同调代数 映射类概念",
+        "逐次态射 微分交换 诱导同调",
+        "$H_n(f):H_n(C)\\to H_n(D)$",
+        "循环到循环 边界到边界 分次态射对比",
+        "chain map"
+      ]
     },
     {
       "chinese_name": "链同伦",
@@ -118,8 +166,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=chain%20homotopy"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联两个复形态射的等价、同调映射不变性、映射锥和形变收缩。",
+        "一个标准表达是 $f,g:C_\\bullet\\to D_\\bullet$。",
+        "差值必须写成 $d_Dh+hd_C$，因此比态射相等弱、比只看同调更具体。",
+        "它的英文译名是 chain homotopy。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "复形态射等价 同调不变 映射锥 形变收缩",
+        "$f,g:C_\\bullet\\to D_\\bullet$",
+        "$d_Dh+hd_C$ 弱于相等 具体模型",
+        "chain homotopy"
+      ]
     },
     {
       "chinese_name": "准同构",
@@ -142,8 +202,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=quasi%20isomorphism"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的同构关系。",
+        "它关联诱导同调同构、复形比较、局部化和导出层面的识别。",
+        "一个标准表达是 $H_n(f):H_n(C)\\cong H_n(D)$。",
+        "逐项不必同构，也未必有严格逆；形式反转后才成为导出意义的同构。",
+        "它的英文译名是 quasi-isomorphism。"
+      ],
+      "fragmented_clues": [
+        "同调代数 同构关系",
+        "诱导同调同构 复形比较 局部化 导出识别",
+        "$H_n(f):H_n(C)\\cong H_n(D)$",
+        "逐项非同构 无严格逆 形式反转",
+        "quasi-isomorphism"
+      ]
     },
     {
       "chinese_name": "短正合列",
@@ -166,8 +238,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=short%20exact%20sequence"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的序列。",
+        "它关联扩张对象、分裂判别、Ext 一阶类和同调长序列的起点。",
+        "一个标准表达是 $\\operatorname{im}u=\\ker v$。",
+        "中间项表示两端的扩张，条件包括左单、右满和像等于核。",
+        "它的英文译名是 short exact sequence。"
+      ],
+      "fragmented_clues": [
+        "同调代数 序列",
+        "扩张对象 分裂判别 Ext一阶类 长序列起点",
+        "$\\operatorname{im}u=\\ker v$",
+        "左单 右满 像等于核 中间扩张",
+        "short exact sequence"
+      ]
     },
     {
       "chinese_name": "长正合列",
@@ -190,8 +274,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=long%20straight%20line"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的序列。",
+        "它关联连接映射、相邻次数的不变量传递、短正合复形和三角。",
+        "一个标准表达是 $\\cdots\\to A_n\\xrightarrow{f_n}A_{n-1}\\xrightarrow{f_{n-1}}A_{n-2}\\to\\cdots$。",
+        "每一处都要求前一箭头的像等于后一箭头的核，信息沿次数连续传播。",
+        "它的英文译名是 long exact sequence。"
+      ],
+      "fragmented_clues": [
+        "同调代数 序列",
+        "连接映射 相邻次数 短正合复形 三角",
+        "$\\cdots\\to A_n\\xrightarrow{f_n}A_{n-1}\\xrightarrow{f_{n-1}}A_{n-2}\\to\\cdots$",
+        "逐处正合 像等于核 次数传播",
+        "long exact sequence"
+      ]
     },
     {
       "chinese_name": "蛇引理",
@@ -214,8 +310,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=snake%20lemma"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的引理。",
+        "它关联两行短正合交换图、核、余核、连接映射和图中提升。",
+        "一个标准表达是 $\\ker f\\to\\ker g\\to\\ker h\\xrightarrow{\\delta}\\operatorname{coker}f\\to\\operatorname{coker}g\\to\\operatorname{coker}h$。",
+        "特色是从六个核余对象中产生一条正合列，中间跨越箭头来自图内追踪。",
+        "它的英文译名是 snake lemma。"
+      ],
+      "fragmented_clues": [
+        "同调代数 引理",
+        "两行短正合 核 余核 连接箭头 提升",
+        "$\\ker f\\to\\ker g\\to\\ker h\\xrightarrow{\\delta}\\operatorname{coker}f\\to\\operatorname{coker}g\\to\\operatorname{coker}h$",
+        "六项正合 跨越箭头 图内追踪",
+        "snake lemma"
+      ]
     },
     {
       "chinese_name": "五引理",
@@ -238,8 +346,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=five%20lemma"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的引理。",
+        "它关联两个五项正合片段、竖直比较映射和同构传播。",
+        "一个标准表达是 $A_i\\to B_i\\to C_i\\to D_i\\to E_i$。",
+        "它不直接计算对象，而在四周映射条件足够时推出中间映射为同构。",
+        "它的英文译名是 five lemma。"
+      ],
+      "fragmented_clues": [
+        "同调代数 引理",
+        "五项片段 竖直比较 同构传播",
+        "$A_i\\to B_i\\to C_i\\to D_i\\to E_i$",
+        "四周条件 中间同构 非直接计算",
+        "five lemma"
+      ]
     },
     {
       "chinese_name": "九引理",
@@ -262,8 +382,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=nine%20lemma"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的引理。",
+        "它关联 $3\\times3$ 交换图、整行整列正合性和扩张拼接。",
+        "一个标准表达是 $3\\times3$。",
+        "关注第三行或第三列是否正合，而不是蛇式核余核连接箭头。",
+        "它的英文译名是 nine lemma。"
+      ],
+      "fragmented_clues": [
+        "同调代数 引理",
+        "$3\\times3$ 交换图 行列正合 扩张拼接",
+        "$3\\times3$",
+        "第三行列正合 蛇式连接对比",
+        "nine lemma"
+      ]
     },
     {
       "chinese_name": "马蹄引理",
@@ -286,8 +418,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=horseshoe%20lemma"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的引理。",
+        "它关联短正合列两端的投射模型、中间对象分解和 Ext/Tor 构造。",
+        "一个标准表达是 $0\\to A\\to B\\to C\\to0$。",
+        "典型形状为每阶直和 $P_n\\oplus Q_n$，说明分解可随扩张同步选择。",
+        "它的英文译名是 horseshoe lemma。"
+      ],
+      "fragmented_clues": [
+        "同调代数 引理",
+        "短正合两端 投射模型 中间分解 Ext Tor",
+        "$0\\to A\\to B\\to C\\to0$",
+        "$P_n\\oplus Q_n$ 直和 同步选择",
+        "horseshoe lemma"
+      ]
     },
     {
       "chinese_name": "图追踪",
@@ -310,8 +454,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=graph%20tracking"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联交换图中的元素提升、取像、落核和路径一致性验证。",
+        "一个标准表达是 $\\operatorname{im}=\\ker$。",
+        "它是一种证明技术而非单独结论，抽象范畴中可由泛性质替代。",
+        "它的英文译名是 diagram chasing。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "元素提升 取像 落核 路径一致",
+        "$\\operatorname{im}=\\ker$",
+        "证明技术 非单独结论 泛性质替代",
+        "diagram chasing"
+      ]
     },
     {
       "chinese_name": "投射模",
@@ -334,8 +490,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=projective%20module"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的代数对象。",
+        "它关联满射提升、自由对象的直和因子、左导出计算和分解长度。",
+        "一个标准表达是 $\\operatorname{Hom}_R(P,-)$。",
+        "自由对象一定具有该性质，但一般环上具有该性质的对象未必自由。",
+        "它的英文译名是 projective module。"
+      ],
+      "fragmented_clues": [
+        "同调代数 代数对象",
+        "满射提升 自由直和因子 左导出 分解长度",
+        "$\\operatorname{Hom}_R(P,-)$",
+        "自由对象充分 一般环 非必自由",
+        "projective module"
+      ]
     },
     {
       "chinese_name": "内射模",
@@ -358,8 +526,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=injective%20module"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的代数对象。",
+        "它关联单射延拓、右导出计算、层上同调和第二变量的 Hom 正合性。",
+        "一个标准表达是 $\\operatorname{Hom}_R(-,I)$。",
+        "它与提升型对象对偶，常存在但显式形状比自由对象更难掌握。",
+        "它的英文译名是 injective module。"
+      ],
+      "fragmented_clues": [
+        "同调代数 代数对象",
+        "单射延拓 右导出 层上同调 Hom正合",
+        "$\\operatorname{Hom}_R(-,I)$",
+        "提升型对偶 存在性 显式困难",
+        "injective module"
+      ]
     },
     {
       "chinese_name": "平坦模",
@@ -382,8 +562,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=flat%20module"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的代数对象。",
+        "它关联张量保持正合、族的连续变化、Tor 消失和几何平坦性。",
+        "一个标准表达是 $\\operatorname{Tor}_1^R(N,M)=0$。",
+        "它比投射条件更宽，能保证张量不破坏单射却不要求是自由直和因子。",
+        "它的英文译名是 flat module。"
+      ],
+      "fragmented_clues": [
+        "同调代数 代数对象",
+        "张量正合 连续族 Tor消失 几何平坦",
+        "$\\operatorname{Tor}_1^R(N,M)=0$",
+        "宽于投射 保持单射 非自由因子",
+        "flat module"
+      ]
     },
     {
       "chinese_name": "自由模",
@@ -406,8 +598,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=free%20module"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的代数对象。",
+        "它关联基、环的直和、唯一有限线性表示和最直接的分解模型。",
+        "一个标准表达是 $F\\cong\\bigoplus_{s\\in S}R$。",
+        "它像向量空间但更依赖底环，具有投射性却不能代表所有投射对象。",
+        "它的英文译名是 free module。"
+      ],
+      "fragmented_clues": [
+        "同调代数 代数对象",
+        "基 环直和 唯一有限表示 分解模型",
+        "$F\\cong\\bigoplus_{s\\in S}R$",
+        "依赖底环 投射性 非全体投射",
+        "free module"
+      ]
     },
     {
       "chinese_name": "投射分解",
@@ -430,8 +634,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=projective%20decomposition"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的分解方法。",
+        "它关联右正合函子的左导出、Tor 计算、比较定理和同调维数。",
+        "一个标准表达是 $\\cdots\\to P_1\\to P_0\\to M\\to0$。",
+        "用提升型对象逐步替换原对象，不同选择在链同伦意义下给同一结果。",
+        "它的英文译名是 projective resolution。"
+      ],
+      "fragmented_clues": [
+        "同调代数 分解方法",
+        "右正合 左导出 Tor 比较定理 维数",
+        "$\\cdots\\to P_1\\to P_0\\to M\\to0$",
+        "提升型替换 链同伦 同一结果",
+        "projective resolution"
+      ]
     },
     {
       "chinese_name": "内射分解",
@@ -454,8 +670,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=injective%20decomposition"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的分解方法。",
+        "它关联左正合函子的右导出、Ext、层上同调和延拓型对象。",
+        "一个标准表达是 $0\\to M\\to I^0\\to I^1\\to\\cdots$。",
+        "方向从原对象嵌入开始，强调延拓和余核递推，而非满射提升。",
+        "它的英文译名是 injective resolution。"
+      ],
+      "fragmented_clues": [
+        "同调代数 分解方法",
+        "左正合 右导出 Ext 层上同调 延拓型",
+        "$0\\to M\\to I^0\\to I^1\\to\\cdots$",
+        "嵌入开始 余核递推 满射提升对比",
+        "injective resolution"
+      ]
     },
     {
       "chinese_name": "平坦分解",
@@ -478,8 +706,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=flat%20decomposition"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的分解方法。",
+        "它关联张量的左导出、Tor 计算、非诺特情形和几何族问题。",
+        "一个标准表达是 $\\cdots\\to F_1\\to F_0\\to M\\to0$。",
+        "允许比投射模型更宽的替代对象，重点是保持张量相关正合性。",
+        "它的英文译名是 flat resolution。"
+      ],
+      "fragmented_clues": [
+        "同调代数 分解方法",
+        "张量左导出 Tor 非诺特 几何族",
+        "$\\cdots\\to F_1\\to F_0\\to M\\to0$",
+        "宽松替代 张量正合 投射对比",
+        "flat resolution"
+      ]
     },
     {
       "chinese_name": "导出函子",
@@ -502,8 +742,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=derived%20functor"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的函子。",
+        "它关联正合性偏差、分解替换、Ext、Tor 和层上同调。",
+        "一个标准表达是 $\\operatorname{Ext}$。",
+        "零阶部分回到原运算，高阶部分记录原运算丢掉的核或余核信息。",
+        "它的英文译名是 derived functor。"
+      ],
+      "fragmented_clues": [
+        "同调代数 函子",
+        "正合偏差 分解替换 Ext Tor 层上同调",
+        "$\\operatorname{Ext}$",
+        "零阶原运算 高阶偏差 核余核信息",
+        "derived functor"
+      ]
     },
     {
       "chinese_name": "左导出函子",
@@ -526,8 +778,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=left%20derived%20functor"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的函子。",
+        "它关联右正合运算、投射或平坦模型、Tor 和低标链同调。",
+        "一个标准表达是 $L_iG(M)=H_i(G(P_\\bullet))$。",
+        "它检测核未被保持的程度，典型来源是张量积而不是 Hom 的第二变量。",
+        "它的英文译名是 left derived functor。"
+      ],
+      "fragmented_clues": [
+        "同调代数 函子",
+        "右正合 投射模型 平坦模型 Tor 低标",
+        "$L_iG(M)=H_i(G(P_\\bullet))$",
+        "核缺失 张量来源 第二变量Hom对比",
+        "left derived functor"
+      ]
     },
     {
       "chinese_name": "右导出函子",
@@ -550,8 +814,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=right%20derived%20functor"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的函子。",
+        "它关联左正合运算、内射模型、Ext、层上同调和上标次数。",
+        "一个标准表达是 $R^iF(M)=H^i(F(I^\\bullet))$。",
+        "它检测余核未被保持的程度，常由 Hom 或全局截面产生。",
+        "它的英文译名是 right derived functor。"
+      ],
+      "fragmented_clues": [
+        "同调代数 函子",
+        "左正合 内射模型 Ext 层上同调 上标",
+        "$R^iF(M)=H^i(F(I^\\bullet))$",
+        "余核缺失 Hom 全局截面",
+        "right derived functor"
+      ]
     },
     {
       "chinese_name": "张量积函子",
@@ -574,8 +850,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=tensor%20product%20functor"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的函子。",
+        "它关联双线性数据合并、右正合性、平坦性和 Tor 的来源。",
+        "一个标准表达是 $\\operatorname{Tor}^R_i(-,M)$。",
+        "固定一个变量后通常只保 cokernel 型信息，单射能否保留由平坦性控制。",
+        "它的英文译名是 tensor product functor。"
+      ],
+      "fragmented_clues": [
+        "同调代数 函子",
+        "双线性合并 右正合 平坦性 Tor来源",
+        "$\\operatorname{Tor}^R_i(-,M)$",
+        "固定变量 cokernel信息 单射保持",
+        "tensor product functor"
+      ]
     },
     {
       "chinese_name": "同态函子",
@@ -598,8 +886,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=homomorphic%20functor"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的函子。",
+        "它关联对象间态射、左正合性、Ext 的来源和变量方向差异。",
+        "一个标准表达是 $\\operatorname{Hom}_R(M,-)$。",
+        "第一变量反变、第二变量协变；投射与内射分别改善两侧的正合性。",
+        "它的英文译名是 Hom functor。"
+      ],
+      "fragmented_clues": [
+        "同调代数 函子",
+        "对象态射 左正合 Ext来源 变量方向",
+        "$\\operatorname{Hom}_R(M,-)$",
+        "第一变量反变 第二变量协变 两侧正合",
+        "Hom functor"
+      ]
     },
     {
       "chinese_name": "扭函子",
@@ -622,8 +922,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=twist%20functor"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的函子。",
+        "它关联理想扭子、支撑在闭子集的部分、局部上同调和左正合性。",
+        "一个标准表达是 $T_r(M)=\\{m\\in M\\mid r^n m=0\\text{ for some }n\\}$。",
+        "名称接近 Tor 但含义不同，关注被幂次理想杀死的元素。",
+        "它的英文译名是 torsion functor。"
+      ],
+      "fragmented_clues": [
+        "同调代数 函子",
+        "理想扭子 闭支撑 局部上同调 左正合",
+        "$T_r(M)=\\{m\\in M\\mid r^n m=0\\text{ for some }n\\}$",
+        "Tor对比 幂次理想杀死 元素部分",
+        "torsion functor"
+      ]
     },
     {
       "chinese_name": "扩张函子",
@@ -646,8 +958,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=expanding%20functor"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的函子。",
+        "它关联 Hom 的高阶导出、短正合扩张分类、延拓问题和分解选择。",
+        "一个标准表达是 $H^i(\\operatorname{Hom}_R(P_\\bullet,N))$。",
+        "$0$ 阶回到 Hom，$1$ 阶分类一阶扩张，高阶由分解同调给出。",
+        "它的英文译名是 extension functor。"
+      ],
+      "fragmented_clues": [
+        "同调代数 函子",
+        "Hom高阶导出 短正合扩张 延拓 分解",
+        "$H^i(\\operatorname{Hom}_R(P_\\bullet,N))$",
+        "$0$阶Hom $1$阶扩张 高阶同调",
+        "extension functor"
+      ]
     },
     {
       "chinese_name": "托函子",
@@ -670,8 +994,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=functor"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的函子。",
+        "它关联张量积的左导出、平坦性失败、交的非横截性和投射模型。",
+        "一个标准表达是 $\\operatorname{Tor}^R_i(M,N)=H_i(P_\\bullet\\otimes_R N)$。",
+        "$0$ 阶是普通张量，高阶记录张量未保持单射或正合的偏差。",
+        "它的英文译名是 Tor functor。"
+      ],
+      "fragmented_clues": [
+        "同调代数 函子",
+        "张量左导出 平坦失败 非横截交 投射模型",
+        "$\\operatorname{Tor}^R_i(M,N)=H_i(P_\\bullet\\otimes_R N)$",
+        "$0$阶张量 高阶偏差 单射缺失",
+        "Tor functor"
+      ]
     },
     {
       "chinese_name": "艾克斯特函子",
@@ -694,8 +1030,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=exeter%20functor"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的函子。",
+        "它关联 Ext 音译、Hom 的导出、投射或内射模型和扩张等价类。",
+        "一个标准表达是 $\\operatorname{Ext}^n_R(M,N)$。",
+        "它不表示外延集合；消失性常刻画分解长度、分裂扩张和奇性信息。",
+        "它的英文译名是 Ext functor。"
+      ],
+      "fragmented_clues": [
+        "同调代数 函子",
+        "Ext音译 Hom导出 投射模型 内射模型 扩张类",
+        "$\\operatorname{Ext}^n_R(M,N)$",
+        "非外延集合 消失性 分解长度 奇性",
+        "Ext functor"
+      ]
     },
     {
       "chinese_name": "同调维数",
@@ -718,8 +1066,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=homology%20dimension"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数值不变量。",
+        "它关联投射、内射、平坦分解长度以及 Ext/Tor 的高阶消失。",
+        "一个标准表达是 $\\operatorname{Ext}^{n+1}_R(M,-)=0$。",
+        "它不是生成元数量，而是衡量需要多少步模型替代才能结束。",
+        "它的英文译名是 homological dimension。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数值不变量",
+        "投射长度 内射长度 平坦长度 Ext Tor",
+        "$\\operatorname{Ext}^{n+1}_R(M,-)=0$",
+        "非生成元数量 模型替代 步数",
+        "homological dimension"
+      ]
     },
     {
       "chinese_name": "投射维数",
@@ -742,8 +1102,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=projective%20dimension"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数值不变量。",
+        "它关联最短提升型分解、Ext 高阶消失、全局维数和深度公式。",
+        "一个标准表达是 $0\\to P_n\\to\\cdots\\to P_0\\to M\\to0$。",
+        "有限值表示一条有限投射分解存在，超过长度的 $\\operatorname{Ext}$ 消失。",
+        "它的英文译名是 projective dimension。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数值不变量",
+        "最短提升分解 Ext消失 全局维数 深度公式",
+        "$0\\to P_n\\to\\cdots\\to P_0\\to M\\to0$",
+        "有限分解 超过长度 $\\operatorname{Ext}$消失",
+        "projective dimension"
+      ]
     },
     {
       "chinese_name": "内射维数",
@@ -766,8 +1138,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=injective%20dimension"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数值不变量。",
+        "它关联最短延拓型分解、$\\operatorname{Ext}^i(-,M)$ 消失和 Gorenstein 性。",
+        "一个标准表达是 $0\\to M\\to I^0\\to\\cdots\\to I^n\\to0$。",
+        "它与投射长度对偶但性质不同，局部代数中常反映强对偶条件。",
+        "它的英文译名是 injective dimension。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数值不变量",
+        "最短延拓分解 $\\operatorname{Ext}^i(-,M)$消失 Gorenstein",
+        "$0\\to M\\to I^0\\to\\cdots\\to I^n\\to0$",
+        "投射长度对偶 局部代数 强对偶",
+        "injective dimension"
+      ]
     },
     {
       "chinese_name": "平坦维数",
@@ -790,8 +1174,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=flat%20dimension"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数值不变量。",
+        "它关联平坦模型长度、Tor 消失、非诺特情形和几何族平坦性。",
+        "一个标准表达是 $\\operatorname{Tor}^R_i(M,-)=0$。",
+        "它不大于投射长度，有限时常与局部环的同调性质相互约束。",
+        "它的英文译名是 flat dimension。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数值不变量",
+        "平坦模型长度 Tor消失 非诺特 几何族",
+        "$\\operatorname{Tor}^R_i(M,-)=0$",
+        "不大于投射长度 有限性 局部约束",
+        "flat dimension"
+      ]
     },
     {
       "chinese_name": "全局维数",
@@ -814,8 +1210,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=global%20dimension"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数值不变量。",
+        "它关联所有模的投射长度上界、正则局部环、Ext/Tor 消失阶数。",
+        "一个标准表达是 $\\operatorname{gldim}R=\\sup_M\\operatorname{pd}_R M$。",
+        "它衡量整个模范畴，不是单个对象；域给零，正则局部情形等于 Krull 维。",
+        "它的英文译名是 global dimension。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数值不变量",
+        "所有模上界 正则局部环 Ext Tor",
+        "$\\operatorname{gldim}R=\\sup_M\\operatorname{pd}_R M$",
+        "整体范畴 非单对象 域为零 Krull维",
+        "global dimension"
+      ]
     },
     {
       "chinese_name": "阿贝尔范畴",
@@ -838,8 +1246,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=abel%20category"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的范畴。",
+        "它关联核、余核、像余像同构、正合列、导出函子和凝聚层。",
+        "一个标准表达是 $\\operatorname{im}f=\\ker g$。",
+        "它抽象模范畴的正合运算，比只有加法的范畴多出核余核机制。",
+        "它的英文译名是 abelian category。"
+      ],
+      "fragmented_clues": [
+        "同调代数 范畴",
+        "核 余核 像余像 正合列 凝聚层",
+        "$\\operatorname{im}f=\\ker g$",
+        "模范畴抽象 加法范畴对比 核余核",
+        "abelian category"
+      ]
     },
     {
       "chinese_name": "加性范畴",
@@ -862,8 +1282,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=additive%20category"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的范畴。",
+        "它关联阿贝尔群态射集、双线性复合、有限双积和直和。",
+        "一个标准表达是 $\\operatorname{Hom}(A,B)$。",
+        "它只有加法框架，不自动拥有所有核余核或正合列。",
+        "它的英文译名是 additive category。"
+      ],
+      "fragmented_clues": [
+        "同调代数 范畴",
+        "阿贝尔群态射 双线性复合 有限双积 直和",
+        "$\\operatorname{Hom}(A,B)$",
+        "加法框架 无全核余核 无正合列",
+        "additive category"
+      ]
     },
     {
       "chinese_name": "正合范畴",
@@ -886,8 +1318,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=exact%20category"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的范畴。",
+        "它关联指定的短正合结构、Quillen 公理、相对投射内射和 K 理论。",
+        "一个标准表达是 $0\\to A\\rightarrowtail B\\twoheadrightarrow C\\to0$。",
+        "不是每个核余核都参与，只有被选中的 conflation 承担正合角色。",
+        "它的英文译名是 exact category。"
+      ],
+      "fragmented_clues": [
+        "同调代数 范畴",
+        "指定短正合 Quillen公理 相对投射内射 K理论",
+        "$0\\to A\\rightarrowtail B\\twoheadrightarrow C\\to0$",
+        "非全核余核 选定conflation 正合角色",
+        "exact category"
+      ]
     },
     {
       "chinese_name": "三角范畴",
@@ -910,8 +1354,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=triangulated%20category"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的范畴。",
+        "它关联移位、distinguished triangle、映射锥、八面体公理和稳定同伦。",
+        "一个标准表达是 $X\\to Y\\to Z\\to X[1]$。",
+        "它通常没有核余核正合列，靠三角在上同调函子下产生长序列。",
+        "它的英文译名是 triangulated category。"
+      ],
+      "fragmented_clues": [
+        "同调代数 范畴",
+        "移位 distinguished triangle 映射锥 八面体 稳定同伦",
+        "$X\\to Y\\to Z\\to X[1]$",
+        "无核余核正合 三角产生长序列",
+        "triangulated category"
+      ]
     },
     {
       "chinese_name": "导出范畴",
@@ -934,8 +1390,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=derived%20category"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的范畴。",
+        "它关联复形、准同构局部化、Ext 作为 Hom 读取和三角结构。",
+        "一个标准表达是 $\\operatorname{Hom}_{D(\\mathcal A)}(X,Y[n])\\cong\\operatorname{Ext}^n(X,Y)$。",
+        "对象仍由复形代表，但同调相同的模型在形式反转后被识别。",
+        "它的英文译名是 derived category。"
+      ],
+      "fragmented_clues": [
+        "同调代数 范畴",
+        "复形 准同构局部化 Ext作为Hom 三角结构",
+        "$\\operatorname{Hom}_{D(\\mathcal A)}(X,Y[n])\\cong\\operatorname{Ext}^n(X,Y)$",
+        "复形代表 同调相同 形式反转",
+        "derived category"
+      ]
     },
     {
       "chinese_name": "同伦范畴",
@@ -958,8 +1426,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=homotopy%20category"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的范畴。",
+        "它关联链映射模同伦、具体复形模型、局部化前阶段和导出构造。",
+        "一个标准表达是 $\\operatorname{Hom}$。",
+        "它尚未反转所有准同构，因此比导出层面保留更多模型信息。",
+        "它的英文译名是 homotopy category。"
+      ],
+      "fragmented_clues": [
+        "同调代数 范畴",
+        "链映射模同伦 复形模型 局部化前 导出构造",
+        "$\\operatorname{Hom}$",
+        "未反转准同构 保留模型信息",
+        "homotopy category"
+      ]
     },
     {
       "chinese_name": "映射锥",
@@ -982,8 +1462,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=mapping%20cone"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联复形态射的缺口、三角、准同构判别和无同调条件。",
+        "一个标准表达是 $\\operatorname{Cone}(f)^n=B^n\\oplus A^{n+1}$。",
+        "若该新复形无同调，原态射诱导同调同构；结构含目标项与源项移位。",
+        "它的英文译名是 mapping cone。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "态射缺口 三角 准同构判别 无同调",
+        "$\\operatorname{Cone}(f)^n=B^n\\oplus A^{n+1}$",
+        "无同调判据 目标项 源项移位",
+        "mapping cone"
+      ]
     },
     {
       "chinese_name": "映射柱",
@@ -1006,8 +1498,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=mapping%20column"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联同伦替换、余纤维化分解、源目标保留和提升性质。",
+        "一个标准表达是 $M_f=(X\\times I)\\cup_f Y$。",
+        "它不同于锥式商掉源的余量结构，更适合把映射改造成好模型。",
+        "它的英文译名是 mapping cylinder。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "同伦替换 余纤维化分解 源目标保留 提升性质",
+        "$M_f=(X\\times I)\\cup_f Y$",
+        "锥式商源对比 好模型改造",
+        "mapping cylinder"
+      ]
     },
     {
       "chinese_name": "悬移函子",
@@ -1030,8 +1534,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=suspension%20functor"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的函子。",
+        "它关联稳定同伦、空间悬挂、复形移位、三角末端和符号调整。",
+        "一个标准表达是 $\\Sigma X=S^1\\wedge X$。",
+        "不仅是维度标签变化；链复形情形必须改微分符号来保 $d^2=0$。",
+        "它的英文译名是 suspension functor。"
+      ],
+      "fragmented_clues": [
+        "同调代数 函子",
+        "稳定同伦 空间悬挂 复形移位 三角末端",
+        "$\\Sigma X=S^1\\wedge X$",
+        "非标签变化 微分符号 $d^2=0$",
+        "suspension functor"
+      ]
     },
     {
       "chinese_name": "移位函子",
@@ -1054,8 +1570,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=shift%20functor"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的函子。",
+        "它关联复形次数改变、符号修正、Ext 次数和导出 Hom。",
+        "一个标准表达是 $\\operatorname{Hom}(X,Y[n])$。",
+        "调整上标必须同时调整微分符号，否则三角结构和链条件会失效。",
+        "它的英文译名是 shift functor。"
+      ],
+      "fragmented_clues": [
+        "同调代数 函子",
+        "次数改变 符号修正 Ext次数 导出Hom",
+        "$\\operatorname{Hom}(X,Y[n])$",
+        "上标调整 微分符号 三角结构",
+        "shift functor"
+      ]
     },
     {
       "chinese_name": "三角公理",
@@ -1078,8 +1606,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=triangulated%20axiom"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的公理。",
+        "它关联旋转、态射补全、映射锥模型、八面体和长正合列。",
+        "一个标准表达是 $X\\to Y\\to Z\\to X[1]$。",
+        "这些规则替代核余核式正合性，保证三角在同调函子下行为稳定。",
+        "它的英文译名是 triangulated axioms。"
+      ],
+      "fragmented_clues": [
+        "同调代数 公理",
+        "旋转 态射补全 映射锥 八面体 长正合",
+        "$X\\to Y\\to Z\\to X[1]$",
+        "替代核余核 同调函子 稳定行为",
+        "triangulated axioms"
+      ]
     },
     {
       "chinese_name": "滤过复形",
@@ -1102,8 +1642,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=filter%20complex"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的复形。",
+        "它关联逐层子复形、相关分次对象、谱序列和分层计算。",
+        "一个标准表达是 $\\cdots\\subset F^{p+1}C^\\bullet\\subset F^pC^\\bullet\\subset\\cdots$。",
+        "微分必须保持层级，相关分次页只是一系列近似而非最终答案本身。",
+        "它的英文译名是 filtered complex。"
+      ],
+      "fragmented_clues": [
+        "同调代数 复形",
+        "逐层子复形 相关分次 谱序列 分层计算",
+        "$\\cdots\\subset F^{p+1}C^\\bullet\\subset F^pC^\\bullet\\subset\\cdots$",
+        "微分保层 近似页 非最终答案",
+        "filtered complex"
+      ]
     },
     {
       "chinese_name": "双复形",
@@ -1126,8 +1678,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=double%20complex"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的复形。",
+        "它关联水平与竖直微分、反交换条件、总化和两种谱序列。",
+        "一个标准表达是 $d_hd_v+d_vd_h=0$。",
+        "两个方向都满足平方为零且相互反交换，可先沿任一方向取同调。",
+        "它的英文译名是 double complex。"
+      ],
+      "fragmented_clues": [
+        "同调代数 复形",
+        "水平微分 竖直微分 反交换 总化 谱序列",
+        "$d_hd_v+d_vd_h=0$",
+        "双向平方零 任一方向先取",
+        "double complex"
+      ]
     },
     {
       "chinese_name": "总复形",
@@ -1150,8 +1714,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=total%20complex"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的复形。",
+        "它关联双向分次对象的合并、符号 $(-1)^p$、单一同调和比较谱序列。",
+        "一个标准表达是 $\\operatorname{Tot}^nC=\\bigoplus_{p+q=n}C^{p,q}$。",
+        "不是普通直和；符号选择确保合并后的总微分仍满足平方为零。",
+        "它的英文译名是 total complex。"
+      ],
+      "fragmented_clues": [
+        "同调代数 复形",
+        "双向合并 $(-1)^p$ 单一同调 比较谱序列",
+        "$\\operatorname{Tot}^nC=\\bigoplus_{p+q=n}C^{p,q}$",
+        "非普通直和 符号选择 平方为零",
+        "total complex"
+      ]
     },
     {
       "chinese_name": "第一象限谱序列",
@@ -1174,8 +1750,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=first%20quadrant%20spectral%20sequence"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的序列。",
+        "它关联 $p,q\\ge0$ 的有界页、双复形、有限总次数和收敛控制。",
+        "一个标准表达是 $d_r:E_r^{p,q}\\to E_r^{p+r,q-r+1}$。",
+        "第一象限条件让每个总次数涉及有限格点，因此边界和极限页较易控制。",
+        "它的英文译名是 first quadrant spectral sequence。"
+      ],
+      "fragmented_clues": [
+        "同调代数 序列",
+        "$p,q\\ge0$ 有界页 双复形 有限总次数",
+        "$d_r:E_r^{p,q}\\to E_r^{p+r,q-r+1}$",
+        "第一象限条件 有限格点 极限页控制",
+        "first quadrant spectral sequence"
+      ]
     },
     {
       "chinese_name": "格罗滕迪克谱序列",
@@ -1198,8 +1786,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=grothendieck%20spectral%20sequence"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的序列。",
+        "它关联复合左正合函子、无环性条件、$E_2$ 页和导出复合。",
+        "一个标准表达是 $E_2^{p,q}=R^pF(R^qG(A))\\Rightarrow R^{p+q}(F\\circ G)(A)$。",
+        "它先记录内层函子的高阶偏差，再由外层函子组织成总导出结果。",
+        "它的英文译名是 Grothendieck spectral sequence。"
+      ],
+      "fragmented_clues": [
+        "同调代数 序列",
+        "复合左正合 无环性 $E_2$页 导出复合",
+        "$E_2^{p,q}=R^pF(R^qG(A))\\Rightarrow R^{p+q}(F\\circ G)(A)$",
+        "内层偏差 外层组织 总导出",
+        "Grothendieck spectral sequence"
+      ]
     },
     {
       "chinese_name": "勒雷谱序列",
@@ -1222,8 +1822,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=leray%20sequence"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的序列。",
+        "它关联映射推前、层上同调、全局截面复合和几何纤维信息。",
+        "一个标准表达是 $E_2^{p,q}=H^p(Y,R^qf_*\\mathcal F)\\Rightarrow H^{p+q}(X,\\mathcal F)$。",
+        "它是几何化的复合导出工具，逐页逼近源空间的总上同调。",
+        "它的英文译名是 Leray spectral sequence。"
+      ],
+      "fragmented_clues": [
+        "同调代数 序列",
+        "映射推前 层上同调 全局截面 纤维信息",
+        "$E_2^{p,q}=H^p(Y,R^qf_*\\mathcal F)\\Rightarrow H^{p+q}(X,\\mathcal F)$",
+        "几何复合导出 逐页逼近 总上同调",
+        "Leray spectral sequence"
+      ]
     },
     {
       "chinese_name": "切赫复形",
@@ -1246,8 +1858,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=cech%20complex"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的复形。",
+        "它关联开覆盖、多重交集截面、交错限制和层的粘合障碍。",
+        "一个标准表达是 $C^q(\\mathfrak U,\\mathcal F)=\\prod_{i_0<\\cdots<i_q}\\mathcal F(U_{i_0\\cdots i_q})$。",
+        "它依赖覆盖选择；好覆盖或仿射覆盖下才常直接计算层上同调。",
+        "它的英文译名是 Cech complex。"
+      ],
+      "fragmented_clues": [
+        "同调代数 复形",
+        "开覆盖 多重交集截面 交错限制 粘合障碍",
+        "$C^q(\\mathfrak U,\\mathcal F)=\\prod_{i_0<\\cdots<i_q}\\mathcal F(U_{i_0\\cdots i_q})$",
+        "覆盖依赖 好覆盖 仿射覆盖 层上同调",
+        "Cech complex"
+      ]
     },
     {
       "chinese_name": "科祖尔复形",
@@ -1270,8 +1894,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=kozul%20complex"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的复形。",
+        "它关联一列环元素、外代数、正则序列、完全交和 Tor 计算。",
+        "一个标准表达是 $K(x;R)=\\Lambda^\\bullet R^r$。",
+        "若元素列正则，它给出商环分解；结构由收缩微分而非任意矩阵决定。",
+        "它的英文译名是 Koszul complex。"
+      ],
+      "fragmented_clues": [
+        "同调代数 复形",
+        "环元素列 外代数 正则序列 完全交 Tor",
+        "$K(x;R)=\\Lambda^\\bullet R^r$",
+        "正则列 商环分解 收缩微分",
+        "Koszul complex"
+      ]
     },
     {
       "chinese_name": "巴分解",
@@ -1294,8 +1930,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=decomposition"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的分解方法。",
+        "它关联增广代数、张量幂、标准投射模型、群同调和 Hochschild 理论。",
+        "一个标准表达是 $\\operatorname{Ext}$。",
+        "模型通常很大但函子性强，便于定义杯积、协积和比较映射。",
+        "它的英文译名是 bar resolution。"
+      ],
+      "fragmented_clues": [
+        "同调代数 分解方法",
+        "增广代数 张量幂 投射模型 群同调 Hochschild",
+        "$\\operatorname{Ext}$",
+        "大模型 函子性 杯积 协积 比较映射",
+        "bar resolution"
+      ]
     },
     {
       "chinese_name": "标准分解",
@@ -1318,8 +1966,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=standard%20decomposition"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的分解方法。",
+        "它关联函子性自由模型、交错面映射、群同调和自然变换。",
+        "一个标准表达是 $d=\\sum_i(-1)^id_i$。",
+        "不是临时挑选的短模型，而是按统一规则构造以便比较。",
+        "它的英文译名是 standard resolution。"
+      ],
+      "fragmented_clues": [
+        "同调代数 分解方法",
+        "函子性自由模型 交错面映射 群同调 自然变换",
+        "$d=\\sum_i(-1)^id_i$",
+        "非临时模型 统一规则 比较便利",
+        "standard resolution"
+      ]
     },
     {
       "chinese_name": "单纯形对象",
@@ -1342,8 +2002,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=simplex%20object"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联面映射、退化映射、单纯形恒等式、神经和巴构造。",
+        "一个标准表达是 $H=\\ker d/\\operatorname{im}d$。",
+        "方向来自 $\\Delta^{op}$，取规范链后产生链复形而非上链数据。",
+        "它的英文译名是 simplicial object。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "面映射 退化映射 恒等式 神经 巴构造",
+        "$H=\\ker d/\\operatorname{im}d$",
+        "$\\Delta^{op}$ 规范链 链复形",
+        "simplicial object"
+      ]
     },
     {
       "chinese_name": "余单纯形对象",
@@ -1366,8 +2038,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=cosimple%20object"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联共面映射、共退化映射、切赫结构、下降数据和上同调。",
+        "一个标准表达是 $H=\\ker d/\\operatorname{im}d$。",
+        "方向来自 $\\Delta$，自然产生升次数余边界而不是降低次数边界。",
+        "它的英文译名是 cosimplicial object。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "共面映射 共退化映射 切赫 下降数据 上同调",
+        "$H=\\ker d/\\operatorname{im}d$",
+        "$\\Delta$ 升次数余边界 降次数对比",
+        "cosimplicial object"
+      ]
     },
     {
       "chinese_name": "单纯同调",
@@ -1390,8 +2074,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=simple%20homology"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联有向单形、面删除边界、三角剖分和洞结构。",
+        "一个标准表达是 $H_n(K)=\\ker\\partial_n/\\operatorname{im}\\partial_{n+1}$。",
+        "它要求先有单纯复形模型；与奇异版本相比链群更小但适用范围窄。",
+        "它的英文译名是 simplicial homology。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "有向单形 面删除边界 三角剖分 洞结构",
+        "$H_n(K)=\\ker\\partial_n/\\operatorname{im}\\partial_{n+1}$",
+        "需单纯模型 链群较小 适用较窄",
+        "simplicial homology"
+      ]
     },
     {
       "chinese_name": "奇异同调",
@@ -1414,8 +2110,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=strange%20homology"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联连续单形映射、任意拓扑空间、同伦不变性和切除定理。",
+        "一个标准表达是 $\\partial\\sigma=\\sum_i(-1)^i\\sigma|_{[v_0,\\hat v_i,\\ldots,v_n]}$。",
+        "链群由所有 $\\Delta^n\\to X$ 生成，极大但不要求预设三角剖分。",
+        "它的英文译名是 singular homology。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "连续单形 任意空间 同伦不变 切除",
+        "$\\partial\\sigma=\\sum_i(-1)^i\\sigma|_{[v_0,\\hat v_i,\\ldots,v_n]}$",
+        "$\\Delta^n\\to X$ 巨大链群 无三角剖分",
+        "singular homology"
+      ]
     },
     {
       "chinese_name": "胞腔同调",
@@ -1438,8 +2146,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=cellular%20homology"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联 CW 分解、胞腔自由生成元、附着映射度数和实际计算。",
+        "一个标准表达是 $H=\\ker d/\\operatorname{im}d$。",
+        "结果与奇异版本同构，但边界系数来自附着映射而非单形面。",
+        "它的英文译名是 cellular homology。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "CW分解 胞腔生成元 附着映射度 计算",
+        "$H=\\ker d/\\operatorname{im}d$",
+        "奇异同构 附着边界 非单形面",
+        "cellular homology"
+      ]
     },
     {
       "chinese_name": "德拉姆同调",
@@ -1462,8 +2182,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=dram%20homology"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联流形链、闭形式积分、实系数奇异理论和微分形式配对。",
+        "一个标准表达是 $H^k_{dR}(M)=\\ker d/\\operatorname{im}d$。",
+        "标准对象更常是上同调；若按链语言出现，关键是 $\\int_c\\omega$ 的配对。",
+        "它的英文译名是 de Rham homology。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "流形链 闭形式积分 实系数 奇异理论 配对",
+        "$H^k_{dR}(M)=\\ker d/\\operatorname{im}d$",
+        "上同调常用 链语言 $\\int_c\\omega$",
+        "de Rham homology"
+      ]
     },
     {
       "chinese_name": "霍赫希尔德同调",
@@ -1486,8 +2218,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=hochschild%20homology"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联代数乘法、包络代数 $A^e$、Tor、巴复形和 HKR 定理。",
+        "一个标准表达是 $H=\\ker d/\\operatorname{im}d$。",
+        "它记录循环张量中的乘法信息，不是群作用导出的普通链理论。",
+        "它的英文译名是 Hochschild homology。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "代数乘法 包络代数$A^e$ Tor 巴复形 HKR",
+        "$H=\\ker d/\\operatorname{im}d$",
+        "循环张量 乘法信息 群作用对比",
+        "Hochschild homology"
+      ]
     },
     {
       "chinese_name": "霍赫希尔德上同调",
@@ -1510,8 +2254,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=hochschild%20cohomology"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联代数自扩张、$A^e$ 上 Ext、多线性映射和形变理论。",
+        "一个标准表达是 $H=\\ker d/\\operatorname{im}d$。",
+        "$HH^0$ 给中心，$HH^1$ 关乎外导子，方向由 Hom 而非张量控制。",
+        "它的英文译名是 Hochschild cohomology。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "代数自扩张 $A^e$上Ext 多线性映射 形变",
+        "$H=\\ker d/\\operatorname{im}d$",
+        "$HH^0$中心 $HH^1$外导子 Hom方向",
+        "Hochschild cohomology"
+      ]
     },
     {
       "chinese_name": "循环同调",
@@ -1534,8 +2290,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=cyclohomology"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联 Connes 算子、混合复形、非交换微分形式和 Chern 特征。",
+        "一个标准表达是 $H=\\ker d/\\operatorname{im}d$。",
+        "它在 Hochschild 结构上加入循环对称，更接近非交换德拉姆理论。",
+        "它的英文译名是 cyclic homology。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "Connes算子 混合复形 非交换形式 Chern特征",
+        "$H=\\ker d/\\operatorname{im}d$",
+        "Hochschild结构 循环对称 非交换德拉姆",
+        "cyclic homology"
+      ]
     },
     {
       "chinese_name": "群同调",
@@ -1558,8 +2326,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=group%20homology"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联群代数 Tor、巴模型、阿贝尔化、扩张关系和分类空间。",
+        "一个标准表达是 $H_n(G,M)=\\operatorname{Tor}^{\\mathbb ZG}_n(\\mathbb Z,M)$。",
+        "它使用链方向和 $\\operatorname{Tor}^{\\mathbb ZG}$，区别于上链函数模型。",
+        "它的英文译名是 group homology。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "群代数Tor 巴模型 阿贝尔化 扩张关系",
+        "$H_n(G,M)=\\operatorname{Tor}^{\\mathbb ZG}_n(\\mathbb Z,M)$",
+        "链方向 $\\operatorname{Tor}^{\\mathbb ZG}$ 上链对比",
+        "group homology"
+      ]
     },
     {
       "chinese_name": "群上同调",
@@ -1582,8 +2362,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=group%20cohomology"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联群作用上链、Ext、交叉同态、群扩张和分类空间 $BG$。",
+        "一个标准表达是 $H^n(G,M)=\\operatorname{Ext}^n_{\\mathbb ZG}(\\mathbb Z,M)$。",
+        "$H^1$ 看交叉同态，$H^2$ 常分类扩张，方向不同于 Tor 型链理论。",
+        "它的英文译名是 group cohomology。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "群作用上链 Ext 交叉同态 群扩张 $BG$",
+        "$H^n(G,M)=\\operatorname{Ext}^n_{\\mathbb ZG}(\\mathbb Z,M)$",
+        "$H^1$交叉同态 $H^2$扩张 Tor型对比",
+        "group cohomology"
+      ]
     },
     {
       "chinese_name": "李代数同调",
@@ -1606,8 +2398,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=lie%20algebra%20homology"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联切瓦利-艾伦伯格链、模作用、括号项、中心扩张和表示。",
+        "一个标准表达是 $C_n(\\mathfrak g,M)=M\\otimes\\Lambda^n\\mathfrak g$。",
+        "链群形如 $M\\otimes\\Lambda^n\\mathfrak g$，微分同时使用作用与括号。",
+        "它的英文译名是 Lie algebra homology。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "CE链 模作用 括号项 中心扩张 表示",
+        "$C_n(\\mathfrak g,M)=M\\otimes\\Lambda^n\\mathfrak g$",
+        "$M\\otimes\\Lambda^n\\mathfrak g$ 作用 括号",
+        "Lie algebra homology"
+      ]
     },
     {
       "chinese_name": "同调代数基本定理",
@@ -1630,8 +2434,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=fundamental%20theorem%20of%20homology%20algebra"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的定理。",
+        "它关联分解比较、映射提升、链同伦唯一性和导出构造自然性。",
+        "一个标准表达是 $H=\\ker d/\\operatorname{im}d$。",
+        "它保证 Ext、Tor 不依赖具体分解选择，比较映射只差同伦。",
+        "它的英文译名是 fundamental theorem of homological algebra。"
+      ],
+      "fragmented_clues": [
+        "同调代数 定理",
+        "分解比较 映射提升 链同伦唯一 自然性",
+        "$H=\\ker d/\\operatorname{im}d$",
+        "分解无关 Ext Tor 同伦差异",
+        "fundamental theorem of homological algebra"
+      ]
     },
     {
       "chinese_name": "伴随函子",
@@ -1654,8 +2470,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=adjoint%20functor"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的函子。",
+        "它关联 Hom 自然同构、单位余单位、张量-Hom 对和自由-遗忘对。",
+        "一个标准表达是 $\\operatorname{Hom}_{\\mathcal D}(F X,Y)\\cong\\operatorname{Hom}_{\\mathcal C}(X,GY)$。",
+        "它不是互逆等价，只要求态射集之间自然对应且与两边对象相容。",
+        "它的英文译名是 adjoint functor。"
+      ],
+      "fragmented_clues": [
+        "同调代数 函子",
+        "Hom自然同构 单位余单位 张量Hom 自由遗忘",
+        "$\\operatorname{Hom}_{\\mathcal D}(F X,Y)\\cong\\operatorname{Hom}_{\\mathcal C}(X,GY)$",
+        "非互逆 态射集对应 双边相容",
+        "adjoint functor"
+      ]
     },
     {
       "chinese_name": "自然变换",
@@ -1678,8 +2506,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=natural%20transformation"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联函子间相容族、交换方块、单位余单位和连接映射。",
+        "一个标准表达是 $F,G:\\mathcal C\\to\\mathcal D$。",
+        "它不是单个对象上的箭头，而是对所有对象同时给出且随态射相容。",
+        "它的英文译名是 natural transformation。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "函子相容族 交换方块 单位余单位 连接映射",
+        "$F,G:\\mathcal C\\to\\mathcal D$",
+        "非单对象箭头 全对象 态射相容",
+        "natural transformation"
+      ]
     },
     {
       "chinese_name": "极限",
@@ -1702,8 +2542,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=limit"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联相容锥、投影族、积、等化子和拉回。",
+        "一个标准表达是 $\\operatorname{Hom}$。",
+        "它按共同约束截取图表信息，方向与粘合型余构造相反。",
+        "它的英文译名是 limit。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "相容锥 投影族 积 等化子 拉回",
+        "$\\operatorname{Hom}$",
+        "共同约束 图表截取 余构造对比",
+        "limit"
+      ]
     },
     {
       "chinese_name": "余极限",
@@ -1726,8 +2578,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=remainder%20limit"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联相容余锥、注入族、直和、推出和余等化子。",
+        "一个标准表达是 $\\operatorname{Hom}$。",
+        "它强调合并图表对象而非共同截取，过滤情形在模范畴常保持正合。",
+        "它的英文译名是 colimit。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "相容余锥 注入族 直和 推出 余等化子",
+        "$\\operatorname{Hom}$",
+        "合并图表 非共同截取 过滤正合",
+        "colimit"
+      ]
     },
     {
       "chinese_name": "张量三角范畴",
@@ -1750,8 +2614,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=tensor%20triangulated%20category"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的范畴。",
+        "它关联三角结构、相容乘法、单位对象、厚子范畴和支撑理论。",
+        "一个标准表达是 $\\operatorname{Hom}$。",
+        "张量两侧都要保持 distinguished triangles，乘法与同调三角不能分离。",
+        "它的英文译名是 tensor triangulated category。"
+      ],
+      "fragmented_clues": [
+        "同调代数 范畴",
+        "三角结构 相容乘法 单位对象 厚子范畴 支撑",
+        "$\\operatorname{Hom}$",
+        "双侧保持triangles 乘法同调相容",
+        "tensor triangulated category"
+      ]
     },
     {
       "chinese_name": "模型范畴",
@@ -1774,8 +2650,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=model%20category"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的范畴。",
+        "它关联弱等价、纤维化、余纤维化、提升性质和因子分解。",
+        "一个标准表达是 $\\operatorname{Hom}$。",
+        "同构被指定的弱等价替代，三类态射共同决定保留哪种同伦信息。",
+        "它的英文译名是 model category。"
+      ],
+      "fragmented_clues": [
+        "同调代数 范畴",
+        "弱等价 纤维化 余纤维化 提升 因子分解",
+        "$\\operatorname{Hom}$",
+        "同构替代 三类态射 同伦信息",
+        "model category"
+      ]
     },
     {
       "chinese_name": "闭模型结构",
@@ -1798,8 +2686,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=closed%20model%20structure"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联 Quillen 公理、弱等价 $W$、Fib/Cof、提升与分解稳定性。",
+        "一个标准表达是 $\\operatorname{Hom}$。",
+        "这里的“闭”不是拓扑闭集，而是三类态射在公理系统中封闭运作。",
+        "它的英文译名是 closed model structure。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "Quillen公理 弱等价$W$ Fib Cof 提升分解",
+        "$\\operatorname{Hom}$",
+        "非拓扑闭集 三类态射 公理封闭",
+        "closed model structure"
+      ]
     },
     {
       "chinese_name": "弱等价",
@@ -1822,8 +2722,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=weak%20equivalence"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的等价关系。",
+        "它关联二出三性质、局部化、弱同伦等价和准同构例子。",
+        "一个标准表达是 $\\operatorname{Hom}$。",
+        "它可能没有严格逆，却在所选同伦论中被形式地看成同构。",
+        "它的英文译名是 weak equivalence。"
+      ],
+      "fragmented_clues": [
+        "同调代数 等价关系",
+        "二出三 局部化 弱同伦例子 准同构",
+        "$\\operatorname{Hom}$",
+        "无严格逆 形式同构 所选同伦",
+        "weak equivalence"
+      ]
     },
     {
       "chinese_name": "纤维化",
@@ -1846,8 +2758,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=fibrosis"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联右提升性质、Serre 型同伦提升、右导出和同伦极限计算。",
+        "一个标准表达是 $\\operatorname{Hom}$。",
+        "它抽象的是可提升同伦的角色，不等同于几何纤维丛。",
+        "它的英文译名是 fibration。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "右提升 Serre同伦提升 右导出 同伦极限",
+        "$\\operatorname{Hom}$",
+        "可提升同伦 几何纤维丛对比",
+        "fibration"
+      ]
     },
     {
       "chinese_name": "余纤维化",
@@ -1870,8 +2794,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=residual%20fibrosis"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联左提升性质、CW 包含模型、左导出和同伦余极限。",
+        "一个标准表达是 $\\operatorname{Hom}$。",
+        "它适合构造好的源对象，但不能简单等同于普通子对象包含。",
+        "它的英文译名是 cofibration。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "左提升 CW包含 左导出 同伦余极限",
+        "$\\operatorname{Hom}$",
+        "好源对象 子对象包含对比",
+        "cofibration"
+      ]
     },
     {
       "chinese_name": "奎伦函子",
@@ -1894,8 +2830,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=quilen%20functor"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的函子。",
+        "它关联模型范畴伴随对、余纤维保持、纤维保持和总导出。",
+        "一个标准表达是 $\\operatorname{Hom}$。",
+        "普通函子保持弱等价还不够，需与模型结构的两类提升态射相容。",
+        "它的英文译名是 Quillen functor。"
+      ],
+      "fragmented_clues": [
+        "同调代数 函子",
+        "模型范畴伴随 余纤维保持 纤维保持 总导出",
+        "$\\operatorname{Hom}$",
+        "弱等价不足 提升态射相容",
+        "Quillen functor"
+      ]
     },
     {
       "chinese_name": "奎伦等价",
@@ -1918,8 +2866,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=quillen%20equivalent"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的等价关系。",
+        "它关联奎伦伴随、余纤维-纤维替换、单位余单位和同伦范畴等价。",
+        "一个标准表达是 $F:\\mathcal M\\rightleftarrows\\mathcal N:G$。",
+        "它强于有一对相容函子，要求替换后比较映射成为弱等价。",
+        "它的英文译名是 Quillen equivalence。"
+      ],
+      "fragmented_clues": [
+        "同调代数 等价关系",
+        "奎伦伴随 替换 单位余单位 同伦范畴等价",
+        "$F:\\mathcal M\\rightleftarrows\\mathcal N:G$",
+        "强于相容函子 比较映射 弱等价",
+        "Quillen equivalence"
+      ]
     },
     {
       "chinese_name": "导出极限",
@@ -1942,8 +2902,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=derived%20limit"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联逆系统、$\\varprojlim{}^1$、完备化、谱序列和同伦塔。",
+        "一个标准表达是 $\\operatorname{Hom}$。",
+        "它记录相容族构造未保持正合的偏差，Mittag-Leffler 稳定性常使高阶项消失。",
+        "它的英文译名是 derived limit。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "逆系统 $\\varprojlim{}^1$ 完备化 谱序列 同伦塔",
+        "$\\operatorname{Hom}$",
+        "相容族 正合偏差 Mittag-Leffler 消失",
+        "derived limit"
+      ]
     },
     {
       "chinese_name": "余导出极限",
@@ -1966,8 +2938,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=co%20derivative%20limit"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联小范畴上的粘合函子、左导出、同伦余极限和范畴同调。",
+        "一个标准表达是 $\\operatorname{Hom}$。",
+        "过滤模情形高阶项常消失，一般图表中则记录粘合失正合的障碍。",
+        "它的英文译名是 derived colimit。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "粘合函子 左导出 同伦余极限 范畴同调",
+        "$\\operatorname{Hom}$",
+        "过滤模消失 一般图表 粘合障碍",
+        "derived colimit"
+      ]
     },
     {
       "chinese_name": "米塔格-莱夫勒条件",
@@ -1990,8 +2974,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=mittag%20leffler%20condition"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的判据。",
+        "它关联逆系统过渡映射、像稳定、$\\varprojlim{}^1$ 消失和完备化。",
+        "一个标准表达是 $\\operatorname{im}(A_j\\to A_i)$。",
+        "它不是完备性本身，而是固定目标处来自后续对象的像最终稳定。",
+        "它的英文译名是 Mittag-Leffler condition。"
+      ],
+      "fragmented_clues": [
+        "同调代数 判据",
+        "逆系统 过渡映射 像稳定 $\\varprojlim{}^1$",
+        "$\\operatorname{im}(A_j\\to A_i)$",
+        "非完备性 固定目标 后续像稳定",
+        "Mittag-Leffler condition"
+      ]
     },
     {
       "chinese_name": "巴斯数",
@@ -2014,8 +3010,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=bass%20number"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数值不变量。",
+        "它关联局部环、最小内射分解、剩余域 Ext 和 Gorenstein 判别。",
+        "一个标准表达是 $\\mu^i_R(M)=\\dim_k\\operatorname{Ext}^i_R(k,M)$。",
+        "它来自内射侧的层级计数，区别于由 Tor 或自由分解给出的 Betti 型计数。",
+        "它的英文译名是 Bass number。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数值不变量",
+        "局部环 最小内射 剩余域Ext Gorenstein",
+        "$\\mu^i_R(M)=\\dim_k\\operatorname{Ext}^i_R(k,M)$",
+        "内射侧计数 Tor对比 自由分解对比",
+        "Bass number"
+      ]
     },
     {
       "chinese_name": "贝蒂数",
@@ -2038,8 +3046,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=betty%20number"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数值不变量。",
+        "它关联最小自由分解、Tor 与剩余域、投射长度和正则性。",
+        "一个标准表达是 $\\beta_i^R(M)=\\dim_k\\operatorname{Tor}^R_i(k,M)$。",
+        "在此不是拓扑空间洞数，而是分解每一阶所需自由生成元数量。",
+        "它的英文译名是 Betti number。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数值不变量",
+        "最小自由分解 Tor剩余域 投射长度 正则性",
+        "$\\beta_i^R(M)=\\dim_k\\operatorname{Tor}^R_i(k,M)$",
+        "非拓扑洞数 各阶自由生成元",
+        "Betti number"
+      ]
     },
     {
       "chinese_name": "奥斯兰德布赫斯鲍姆公式",
@@ -2062,8 +3082,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=auslander%20buchsbaum%20formula"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的公式。",
+        "它关联诺特局部环、有限投射长度、正则序列长度和正则性判别。",
+        "一个标准表达是 $\\operatorname{pd}_R M+\\operatorname{depth}_R M=\\operatorname{depth}R$。",
+        "等式把分解长度与正则深度互补起来，适用前提包括有限生成非零模。",
+        "它的英文译名是 Auslander-Buchsbaum formula。"
+      ],
+      "fragmented_clues": [
+        "同调代数 公式",
+        "诺特局部环 有限投射长度 正则序列 正则性",
+        "$\\operatorname{pd}_R M+\\operatorname{depth}_R M=\\operatorname{depth}R$",
+        "长度互补 有限生成非零模 适用前提",
+        "Auslander-Buchsbaum formula"
+      ]
     },
     {
       "chinese_name": "深度",
@@ -2086,8 +3118,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=depth"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联最长正则序列、首个非零 Ext、Cohen-Macaulay 条件和奇性缺陷。",
+        "一个标准表达是 $\\operatorname{Ext}^i_R(k,M)$。",
+        "它不同于 Krull 维；两者相等时给出 Cohen-Macaulay 型良性情形。",
+        "它的英文译名是 depth。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "最长正则序列 首个非零Ext Cohen-Macaulay 奇性缺陷",
+        "$\\operatorname{Ext}^i_R(k,M)$",
+        "Krull维对比 相等条件 良性情形",
+        "depth"
+      ]
     },
     {
       "chinese_name": "正则序列",
@@ -2110,8 +3154,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=regular%20sequence"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的序列。",
+        "它关联非零因子递推、深度、完全交和科祖尔分解。",
+        "一个标准表达是 $M/(x_1,\\ldots,x_{i-1})M$。",
+        "每一步都要在前面元素取商后仍非零因子，任意生成列不满足。",
+        "它的英文译名是 regular sequence。"
+      ],
+      "fragmented_clues": [
+        "同调代数 序列",
+        "非零因子递推 深度 完全交 科祖尔分解",
+        "$M/(x_1,\\ldots,x_{i-1})M$",
+        "逐步取商 非零因子 生成列对比",
+        "regular sequence"
+      ]
     },
     {
       "chinese_name": "局部上同调",
@@ -2134,8 +3190,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=local%20cohomology"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联闭支撑截面、理想扭子右导出、深度检测和局部对偶。",
+        "一个标准表达是 $\\Gamma_I(M)=\\{m\\in M\\mid I^n m=0\\text{ for some }n\\}$。",
+        "它关注 $V(I)$ 附近的贡献，区别于普通 Ext 或 Tor 的全局偏差。",
+        "它的英文译名是 local cohomology。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "闭支撑截面 理想扭子右导出 深度检测 局部对偶",
+        "$\\Gamma_I(M)=\\{m\\in M\\mid I^n m=0\\text{ for some }n\\}$",
+        "$V(I)$ 附近贡献 Ext Tor对比",
+        "local cohomology"
+      ]
     },
     {
       "chinese_name": "典范模",
@@ -2158,8 +3226,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=model%20model"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的代数对象。",
+        "它关联 Cohen-Macaulay 局部环、局部对偶、典范层和 Gorenstein 判别。",
+        "一个标准表达是 $H_\\mathfrak m^d(M)^\\vee\\cong\\operatorname{Hom}_R(M,\\omega_R)$。",
+        "Gorenstein 情形中它与底环同构，因而成为衡量对偶性的核心对象。",
+        "它的英文译名是 canonical module。"
+      ],
+      "fragmented_clues": [
+        "同调代数 代数对象",
+        "Cohen-Macaulay局部环 局部对偶 典范层 Gorenstein",
+        "$H_\\mathfrak m^d(M)^\\vee\\cong\\operatorname{Hom}_R(M,\\omega_R)$",
+        "Gorenstein 同构底环 对偶性关键对象",
+        "canonical module"
+      ]
     },
     {
       "chinese_name": "阿贝尔化",
@@ -2182,8 +3262,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=abelianization"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联交换子商、到交换对象的普遍映射、一阶群同调和李代数商。",
+        "一个标准表达是 $H=\\ker d/\\operatorname{im}d$。",
+        "它只保留交换化的一阶信息，更高阶同调才能看到关系的细节。",
+        "它的英文译名是 abelianization。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "交换子商 普遍映射 一阶群同调 李代数商",
+        "$H=\\ker d/\\operatorname{im}d$",
+        "交换化 一阶信息 高阶细节",
+        "abelianization"
+      ]
     },
     {
       "chinese_name": "余核",
@@ -2206,8 +3298,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=cokernel"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联目标商对象、未被击中的部分、正合性和 cokernel 泛性质。",
+        "一个标准表达是 $\\operatorname{im}f=\\ker g$。",
+        "它与取核操作对偶，前者看目标中的剩余，后者看源中被杀掉的部分。",
+        "它的英文译名是 cokernel。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "目标商对象 未击中部分 正合性 cokernel",
+        "$\\operatorname{im}f=\\ker g$",
+        "取核对偶 目标剩余 源中杀掉",
+        "cokernel"
+      ]
     },
     {
       "chinese_name": "核函子",
@@ -2230,8 +3334,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=kernel%20functor"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的函子。",
+        "它关联箭头范畴、取核运算、左正合行为和蛇式比较。",
+        "一个标准表达是 $f\\circ\\ker f=0$。",
+        "它不是 Hom 运算；比较它与取余商运算会产生连接关系。",
+        "它的英文译名是 kernel functor。"
+      ],
+      "fragmented_clues": [
+        "同调代数 函子",
+        "箭头范畴 取核运算 左正合 蛇式比较",
+        "$f\\circ\\ker f=0$",
+        "非Hom 取余商比较 连接关系",
+        "kernel functor"
+      ]
     },
     {
       "chinese_name": "长同调序列",
@@ -2254,8 +3370,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=long%20homologous%20sequence"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的序列。",
+        "它关联短正合复形、同调群之间的正合传递和相对理论。",
+        "一个标准表达是 $\\cdots\\to H_n(A)\\to H_n(B)\\to H_n(C)\\xrightarrow{\\partial}H_{n-1}(A)\\to\\cdots$。",
+        "它不是原复形，而是取同调后由跨次数箭头串起的正合关系。",
+        "它的英文译名是 long homology sequence。"
+      ],
+      "fragmented_clues": [
+        "同调代数 序列",
+        "短正合复形 同调群 正合传递 相对理论",
+        "$\\cdots\\to H_n(A)\\to H_n(B)\\to H_n(C)\\xrightarrow{\\partial}H_{n-1}(A)\\to\\cdots$",
+        "非原复形 取同调 跨次数箭头",
+        "long homology sequence"
+      ]
     },
     {
       "chinese_name": "连接同态",
@@ -2278,8 +3406,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=connection%20homomorphism"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联短正合复形、提升循环、取边界、降次数箭头和蛇式 $\\delta$。",
+        "一个标准表达是 $0\\to A_\\bullet\\to B_\\bullet\\to C_\\bullet\\to0$。",
+        "它不是任意附加箭头，而是长正合性得以继续的跨次数机制。",
+        "它的英文译名是 connecting homomorphism。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "短正合复形 提升循环 取边界 降次数 $\\delta$",
+        "$0\\to A_\\bullet\\to B_\\bullet\\to C_\\bullet\\to0$",
+        "非任意箭头 长正合延续 跨次数",
+        "connecting homomorphism"
+      ]
     },
     {
       "chinese_name": "截断复形",
@@ -2302,8 +3442,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=truncation%20complex"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的复形。",
+        "它关联智能切除、核像修正、t-结构、Postnikov 分层和谱序列。",
+        "一个标准表达是 $\\ker d^n$。",
+        "不是粗暴删除项；边界处要用核或像保留目标次数范围内的同调。",
+        "它的英文译名是 truncated complex。"
+      ],
+      "fragmented_clues": [
+        "同调代数 复形",
+        "智能切除 核像修正 t结构 Postnikov 谱序列",
+        "$\\ker d^n$",
+        "非粗暴删除 边界核像 保留范围",
+        "truncated complex"
+      ]
     },
     {
       "chinese_name": "同伦极限",
@@ -2326,8 +3478,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=homotopy%20limit"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联 holim、纤维化替换、同伦拉回、塔和映射空间。",
+        "一个标准表达是 $\\operatorname{holim}D$。",
+        "它保留高阶相容数据，避免普通相容锥构造破坏弱等价。",
+        "它的英文译名是 homotopy limit。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "holim 纤维化替换 同伦拉回 塔 映射空间",
+        "$\\operatorname{holim}D$",
+        "高阶相容 普通锥对比 弱等价保持",
+        "homotopy limit"
+      ]
     },
     {
       "chinese_name": "同伦余极限",
@@ -2350,8 +3514,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=homotopy%20colimit"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的数学对象。",
+        "它关联 hocolim、余纤维化替换、映射望远镜、同伦推出和分类空间。",
+        "一个标准表达是 $\\operatorname{hocolim}D$。",
+        "它不是普通粘合，会保留路径和单纯形方向的高阶相容信息。",
+        "它的英文译名是 homotopy colimit。"
+      ],
+      "fragmented_clues": [
+        "同调代数 数学对象",
+        "hocolim 余纤维化替换 映射望远镜 同伦推出",
+        "$\\operatorname{hocolim}D$",
+        "非普通粘合 路径 单纯形方向 高阶相容",
+        "homotopy colimit"
+      ]
     },
     {
       "chinese_name": "短五引理",
@@ -2374,8 +3550,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=short%20five%20lemma"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的引理。",
+        "它关联两个三项正合行、两端同构、中间对象比较和扩张唯一性。",
+        "一个标准表达是 $A\\to A'$。",
+        "图形比五项版本短，但仍靠核像追踪把两端同构传到中间。",
+        "它的英文译名是 short five lemma。"
+      ],
+      "fragmented_clues": [
+        "同调代数 引理",
+        "三项正合 两端同构 中间比较 扩张唯一",
+        "$A\\to A'$",
+        "短图形 核像追踪 中间同构",
+        "short five lemma"
+      ]
     },
     {
       "chinese_name": "三乘三引理",
@@ -2398,8 +3586,20 @@
           "url": "https://en.wikipedia.org/w/index.php?search=three%20times%20three%20lemma"
         }
       ],
-      "complete_clues": [],
-      "fragmented_clues": []
+      "complete_clues": [
+        "这是一个同调代数中的引理。",
+        "它关联九宫格交换图、行列正合传播、滤过拼接和扩张组合。",
+        "一个标准表达是 $3\\times3$。",
+        "它常与九项版本表达同类结果，重点是从已知两行三列推出剩余正合性。",
+        "它的英文译名是 3x3 lemma。"
+      ],
+      "fragmented_clues": [
+        "同调代数 引理",
+        "九宫格交换图 行列传播 滤过拼接 扩张组合",
+        "$3\\times3$",
+        "九项版本同类 两行三列 剩余正合",
+        "3x3 lemma"
+      ]
     }
   ]
 }

@@ -39,7 +39,7 @@ PROFILE_DIR = PROJECT_DIR / "profile"
 PLAYER_SETTINGS_FILE = PROFILE_DIR / "player_settings.json"
 DAILY_TERMS_FILE = PROFILE_DIR / "daily_terms.json"
 
-APP_VERSION = "0.3.24"
+APP_VERSION = "0.4.12"
 TITLE_CN = "有（×）无奖竞猜"
 TITLE_EN = "Bonus-（×）Guess"
 
@@ -99,7 +99,7 @@ ACHIEVEMENTS = [
     ("timed_time_5h", "倒计时常住民", "限时模式累计用时 5 小时"),
     ("timed_time_30h", "秒针合伙人", "限时模式累计用时 30 小时"),
     ("first_clue_success", "线索刚刚够用", "第一次在线索模式中答对题目"),
-    ("clue_no_hint_success", "只看一行也行", "只看初始线索答对一题"),
+    ("clue_no_hint_success", "只看开头也行", "只看初始线索答对一题"),
     ("clue_success_20", "线索串联员", "线索模式累计答对 20 题"),
     ("clue_success_100", "描述场论家", "线索模式累计答对 100 题"),
     ("first_random_success", "跨学科第一跃迁", "第一次在随机模式中答对题目"),

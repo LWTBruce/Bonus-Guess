@@ -521,7 +521,9 @@ def apply_account_context(account_id):
             module.PLAYER_SETTINGS_FILE = paths["player_settings_file"]
         if hasattr(module, "DAILY_TERMS_FILE"):
             module.DAILY_TERMS_FILE = paths["daily_terms_file"]
-        if hasattr(module, "_RECORD_ENTRIES_CACHE"):
+        if hasattr(module, "clear_record_caches"):
+            module.clear_record_caches()
+        elif hasattr(module, "_RECORD_ENTRIES_CACHE"):
             module._RECORD_ENTRIES_CACHE.update({"root": None, "entries": None})
         if hasattr(module, "_DAILY_TERMS_CACHE"):
             module._DAILY_TERMS_CACHE.update({"date": None, "mtime_ns": None, "state": None})

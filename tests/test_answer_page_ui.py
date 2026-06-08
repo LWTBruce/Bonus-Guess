@@ -52,7 +52,82 @@ class HintRenderHarness(tk.Tk, RoundPlayMixin):
         return 45
 
 
+class ClueRenderHarness(tk.Tk, RoundPlayMixin):
+    pass
+
+
+class FakeClueLibrary:
+    def get(self, _term):
+        return {
+            "complete": ["方向", "范围", "$x=1$", "特点", "它的英文译名是 term。"],
+            "fragments": ["方向", "范围", "$x=1$", "特点", "term"],
+        }
+
+
+class CluePrepHarness(RoundPlayMixin):
+    def __init__(self, *, custom_mode=False, custom_config=None):
+        self.current = object()
+        self.clue_library = FakeClueLibrary()
+        self.custom_mode = custom_mode
+        self.custom_config = custom_config or {}
+        self.difficulty = "简单"
+        self.rank_mode = False
+        self.rank_kind = ""
+        self.rank_target_difficulty = 0
+
+
+class ClueHintHarness(RoundPlayMixin):
+    def __init__(self):
+        self.clue_visible_count = 2
+        self.clue_lines = ["方向", "范围", "$x=1$", "特点", "英文"]
+        self.clue_line_types = ["complete"] * 5
+        self.custom_mode = False
+        self.custom_config = {}
+        self.difficulty = "简单"
+        self.effective_difficulty = 5
+        self.score_penalty = 0
+        self.free_hint_count = 0
+        self.paid_hint_count = 0
+        self.hint_lines = []
+        self.hint_penalties = []
+        self.hint_button = None
+        self.feedback = None
+        self.clue_box = None
+
+    def add_score_penalty(self, cost):
+        self.score_penalty += cost
+
+    def is_custom_challenge_mode(self):
+        return False
+
+
 class AnswerPageUiTests(unittest.TestCase):
+    def test_clue_round_defaults_to_two_visible_lines(self):
+        harness = CluePrepHarness()
+
+        harness.prepare_clue_round()
+
+        self.assertEqual(harness.clue_visible_count, 2)
+
+    def test_custom_clue_round_keeps_initial_line_override(self):
+        harness = CluePrepHarness(custom_mode=True, custom_config={"clue_initial_lines": "1"})
+
+        harness.prepare_clue_round()
+
+        self.assertEqual(harness.clue_visible_count, 1)
+
+    def test_clue_hint_after_two_initial_lines_reveals_third_with_penalty(self):
+        harness = ClueHintHarness()
+
+        self.assertTrue(harness.show_clue_hint())
+
+        self.assertEqual(harness.clue_visible_count, 3)
+        self.assertEqual(harness.free_hint_count, 0)
+        self.assertEqual(harness.paid_hint_count, 1)
+        self.assertGreater(harness.score_penalty, 0)
+        self.assertIn("线索提示 3", harness.hint_lines[-1])
+        self.assertIn("$x=1$", harness.hint_lines[-1])
+
     def test_hint_cooldown_refreshes_on_second_boundaries(self):
         harness = CooldownHarness()
         harness.update_hint_cooldown_button()
@@ -148,6 +223,50 @@ class AnswerPageUiTests(unittest.TestCase):
             self.assertIn("免费提示", hint_text)
             self.assertIn("动", hint_text)
             self.assertGreaterEqual(text_widgets[0].winfo_width(), 420)
+        finally:
+            root.destroy()
+
+    def test_clue_panel_renders_markdown_formulas(self):
+        try:
+            root = ClueRenderHarness()
+        except tk.TclError as exc:
+            self.skipTest(f"Tk is unavailable: {exc}")
+            return
+        try:
+            root.geometry("720x260+20+20")
+            root.clue_box = tk.Frame(root, bg="#182033", width=640, height=160)
+            root.clue_box.pack(fill="x")
+            root.clue_box.pack_propagate(False)
+            root.clue_lines = [
+                r"观察距离远大于源区尺寸时，可写作 $1/|\mathbf r-\mathbf r'|=1/r+\cdots$。",
+                r"$P(A|B)$ 条件概率 碎片",
+            ]
+            root.clue_line_types = ["complete", "fragment"]
+            root.clue_visible_count = 2
+            root.rank_mode = False
+            root.rank_kind = ""
+
+            root._render_clues()
+            root.update_idletasks()
+            root.update()
+
+            text_widgets = []
+
+            def collect_text_widgets(widget):
+                if isinstance(widget, tk.Text):
+                    text_widgets.append(widget)
+                for child in widget.winfo_children():
+                    collect_text_widgets(child)
+
+            collect_text_widgets(root.clue_box)
+
+            self.assertEqual(len(text_widgets), 2)
+            for widget in text_widgets:
+                rendered = widget.get("1.0", "end-1c")
+                self.assertTrue(widget.tag_ranges("math"))
+                self.assertNotIn("$", rendered)
+            self.assertIn("线索", text_widgets[0].get("1.0", "end-1c"))
+            self.assertIn("破碎", text_widgets[1].get("1.0", "end-1c"))
         finally:
             root.destroy()
 

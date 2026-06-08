@@ -116,6 +116,38 @@ class TermAnswerClickTests(unittest.TestCase):
         finally:
             root.destroy()
 
+    def test_term_markdown_renders_loose_greek_subscripts(self):
+        try:
+            root = tk.Tk()
+        except tk.TclError as exc:
+            self.skipTest(f"Tk is unavailable: {exc}")
+            return
+        try:
+            root.geometry("640x320+20+20")
+            inner = render_markdown(
+                root,
+                "吉布斯相律常用 $G=H-TS$ 连接自由能；平衡时 μ_α=μ_β，而普通变量名 APP_VERSION 不应被改写。",
+                mode="detail",
+            )
+            root.update_idletasks()
+            root.update()
+            text_widgets = []
+
+            def collect(widget):
+                if isinstance(widget, tk.Text):
+                    text_widgets.append(widget)
+                for child in widget.winfo_children():
+                    collect(child)
+
+            collect(inner)
+            self.assertTrue(text_widgets)
+            rendered = text_widgets[0].get("1.0", "end-1c")
+            self.assertIn("μₐ=μᵦ", rendered)
+            self.assertNotIn("μ_α", rendered)
+            self.assertIn("APP_VERSION", rendered)
+        finally:
+            root.destroy()
+
     def test_term_markdown_renders_ampere_law_formula_without_black_math_block(self):
         try:
             root = tk.Tk()

@@ -4,8 +4,20 @@
     {
       "chinese_name": "变分",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是泛函分析和函数空间中的一种微小变化对象。",
+        "它关联极值曲线、场变量、最优控制以及边界扰动对整体量的影响。",
+        "常写成 $\\delta J[y;h]=\\left.{d\\over d\\varepsilon}J[y+\\varepsilon h]\\right|_{\\varepsilon=0}$，用来表示沿方向 $h$ 的响应。",
+        "它关注整条函数被扰动后泛函值怎样改变，而不是只改变有限个数值变量。",
+        "它的英文译名是 variation。"
+      ],
+      "fragmented_clues": [
+        "泛函分析 函数空间 微小变化对象",
+        "极值曲线 场变量 最优控制 边界扰动",
+        "$\\delta J[y;h]=\\left.{d\\over d\\varepsilon}J[y+\\varepsilon h]\\right|_{\\varepsilon=0}$",
+        "整条函数 扰动 泛函值 有限变量",
+        "variation"
+      ],
       "explanation_markdown": "变分是泛函在函数空间中沿某个扰动方向的微小改变，关注整条函数变化后整体量的响应。常写成 $\\delta J[y;h]=\\left.{d\\over d\\varepsilon}J[y+\\varepsilon h]\\right|_{\\varepsilon=0}$，其中$y$ 是原函数，$h$ 是扰动方向，$\\varepsilon$ 表示幅度。\n\n变分是统称，一阶变分取线性项，二阶变分取二次项，变分导数则把线性响应写成密度。它用于极值曲线、场论和最优控制，也说明边界条件为什么会随扰动方式进入泛函计算。理解变分时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。变分常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。",
       "source_links": [
         {
@@ -28,8 +40,20 @@
     {
       "chinese_name": "一阶变分",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变分法中描述首个线性响应的对象。",
+        "它关联驻值必要条件、自然边界条件和欧拉型方程的推出。",
+        "常写成 $\\delta J[y;h]=\\int_a^b E_y(L)h\\,dx+\\left.p\\,h\\right|_a^b$，其中 $h$ 是允许扰动方向。",
+        "它取泛函增量中关于扰动幅度的一次项，所有允许方向上为零才给出驻值。",
+        "它的英文译名是 first order variation。"
+      ],
+      "fragmented_clues": [
+        "变分法 首阶 线性响应",
+        "驻值 自然边界条件 欧拉型方程",
+        "$\\delta J[y;h]=\\int_a^b E_y(L)h\\,dx+\\left.p\\,h\\right|_a^b$",
+        "扰动幅度 一次项 允许方向 为零",
+        "first order variation"
+      ],
       "explanation_markdown": "一阶变分指泛函沿扰动曲线的一阶导数，也就是泛函增量中关于扰动幅度的线性部分。常写成 $\\delta J[y;h]=\\int_a^b E_y(L)h\\,dx+\\left.p\\,h\\right|_a^b$，其中$E_y(L)$ 是欧拉算子，$p$ 是边界项系数，$h$ 是可容许变分。\n\n它不同于一般变分的宽泛说法，也不同于二阶变分的凸性信息；驻值只要求所有可容许 $h$ 的一阶变分为零。这一层给出欧拉拉格朗日方程和自然边界条件，是变分法必要条件的入口。理解一阶变分时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。一阶变分常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。",
       "source_links": [
         {
@@ -52,8 +76,20 @@
     {
       "chinese_name": "二阶变分",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变分法中描述临界点局部二次行为的对象。",
+        "它关联极小、极大、鞍点，以及勒让德条件和雅可比条件。",
+        "一个核心表达是 $\\delta^2J[y;h,k]=\\left.{\\partial^2\\over\\partial s\\partial t}J[y+sh+tk]\\right|_{0}$。",
+        "它把两个扰动方向配成二次型，正定性会支持局部极小但仍受边界和共轭点影响。",
+        "它的英文译名是 second order variation。"
+      ],
+      "fragmented_clues": [
+        "变分法 临界点 二次行为",
+        "极小 极大 鞍点 勒让德条件 雅可比条件",
+        "$\\delta^2J[y;h,k]=\\left.{\\partial^2\\over\\partial s\\partial t}J[y+sh+tk]\\right|_{0}$",
+        "两个扰动方向 二次型 正定性 共轭点",
+        "second order variation"
+      ],
       "explanation_markdown": "二阶变分用来描述泛函在驻值附近关于扰动幅度的二阶项，用来记录极值点附近的二次型。一个核心表达是 $\\delta^2J[y;h,k]=\\left.{\\partial^2\\over\\partial s\\partial t}J[y+sh+tk]\\right|_{0}$，这里$h,k$ 是两个扰动方向，取 $h=k$ 得二次型。\n\n一阶变分判断驻值，二阶变分进一步区分极小、极大和鞍点；它与勒让德条件、雅可比条件联系更紧。若 $\\delta^2J[h,h]$ 在非零扰动上为正，通常支持局部极小性，但边界和共轭点仍会影响结论。二阶变分关注驻值附近的稳定性或临界点结构，通常要配合二阶项、共轭点或紧性条件一起使用。在非线性方程中，二阶变分常用来判断临界点是否真实存在，以及它附近的解族会怎样分岔或失稳。",
       "source_links": [
         {
@@ -76,8 +112,20 @@
     {
       "chinese_name": "变分导数",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是泛函分析中描述一阶响应密度的导数对象。",
+        "它常出现在场论、偏微分方程和梯度流的欧拉方程中。",
+        "常写成 $\\delta J[u;h]=\\int_\\Omega {\\delta J\\over\\delta u}(x)h(x)\\,dx$，把响应与扰动配对。",
+        "它对每一点的函数值给出响应密度，而不是对有限个变量求普通偏导。",
+        "它的英文译名是 variational derivative。"
+      ],
+      "fragmented_clues": [
+        "泛函分析 一阶响应密度 导数对象",
+        "场论 偏微分方程 梯度流 欧拉方程",
+        "$\\delta J[u;h]=\\int_\\Omega {\\delta J\\over\\delta u}(x)h(x)\\,dx$",
+        "每一点 函数值 响应密度 有限变量 偏导",
+        "variational derivative"
+      ],
       "explanation_markdown": "变分导数刻画把泛函的一阶变分表示为与扰动函数配对的密度。一个核心表达是 $\\delta J[u;h]=\\int_\\Omega {\\delta J\\over\\delta u}(x)h(x)\\,dx$，这里$u$ 是函数或场，$h$ 是扰动，$\\delta J/\\delta u$ 是变分导数。\n\n变分导数不是普通偏导数；普通导数对有限个变量求变，变分导数对每一点的函数值给出响应密度。在场论、偏微分方程和梯度流中，令 $\\delta J/\\delta u=0$ 常给出欧拉方程。理解变分导数时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。变分导数常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。",
       "source_links": [
         {
@@ -100,8 +148,20 @@
     {
       "chinese_name": "欧拉拉格朗日方程",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变分法中的一类必要微分方程。",
+        "它关联积分型泛函取驻值，以及力学作用量推出运动方程。",
+        "常用形式是 ${\\partial L\\over\\partial y}-{d\\over dx}{\\partial L\\over\\partial y'}=0$，其中 $L$ 是被积函数。",
+        "它来自所有允许扰动的一阶项为零，被积函数对函数值和导数的偏导共同出现。",
+        "它的英文译名是 Euler-Lagrange equation。"
+      ],
+      "fragmented_clues": [
+        "变分法 必要 微分方程",
+        "积分型泛函 驻值 作用量 运动方程",
+        "${\\partial L\\over\\partial y}-{d\\over dx}{\\partial L\\over\\partial y'}=0$",
+        "一阶项 为零 被积函数 函数值 导数 偏导",
+        "Euler-Lagrange equation"
+      ],
       "explanation_markdown": "欧拉拉格朗日方程是积分型泛函取得驻值时被积函数必须满足的微分方程。在常用记号中有 ${\\partial L\\over\\partial y}-{d\\over dx}{\\partial L\\over\\partial y'}=0$，其中$L(x,y,y')$ 是拉格朗日函数，$y$ 是未知曲线。\n\n它来自一阶变分为零，与勒让德条件、魏尔斯特拉斯条件等二阶或强极小条件不同。在力学中同一结构写成 $d(\\partial L/\\partial\\dot q)/dt-\\partial L/\\partial q=0$，用于从作用量推出运动方程。理解欧拉拉格朗日方程时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。欧拉拉格朗日方程常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。",
       "source_links": [
         {
@@ -124,8 +184,20 @@
     {
       "chinese_name": "拉格朗日函数",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变分法和力学中的一种局部密度对象。",
+        "它关联泛函、作用量、几何长度、能量或代价的被积表达式。",
+        "常写成 $J[y]=\\int_a^b L(x,y,y')\\,dx$，其中 $L$ 给出每一点的局部贡献。",
+        "它使用位置、函数值和导数变量，整体泛函由它沿整条曲线积分得到。",
+        "它的英文译名是 Lagrange function。"
+      ],
+      "fragmented_clues": [
+        "变分法 力学 局部密度对象",
+        "泛函 作用量 几何长度 能量 代价 被积表达式",
+        "$J[y]=\\int_a^b L(x,y,y')\\,dx$",
+        "位置 函数值 导数变量 整体积分",
+        "Lagrange function"
+      ],
       "explanation_markdown": "拉格朗日函数指泛函或作用量中的局部密度，按位置、函数值和导数给出每一点的贡献。在常用记号中有 $J[y]=\\int_a^b L(x,y,y')\\,dx$，其中$L$ 是拉格朗日函数，$J$ 是整体泛函，$y'$ 表示导数。\n\n它与泛函不同，$L$ 是被积表达式，$J$ 才把整条函数映成数；与哈密顿函数相比，它使用速度变量。选定 $L$ 等于选定几何长度、能量或代价的局部模型，欧拉拉格朗日方程由它的偏导数组成。理解拉格朗日函数时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。拉格朗日函数常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。",
       "source_links": [
         {
@@ -148,8 +220,20 @@
     {
       "chinese_name": "作用量",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是分析力学和场论中的一种泛函对象。",
+        "它关联真实轨道、哈密顿原理、最小作用原理和路径累积的局部量。",
+        "可写作 $S[q]=\\int_{t_0}^{t_1}L(q,\\dot q,t)\\,dt$，其中 $q$ 是路径。",
+        "它是整条路径或场构型的积分结果，驻值条件不要求每个时刻的局部密度最小。",
+        "它的英文译名是 action。"
+      ],
+      "fragmented_clues": [
+        "分析力学 场论 泛函对象",
+        "真实轨道 哈密顿原理 最小作用原理 路径累积",
+        "$S[q]=\\int_{t_0}^{t_1}L(q,\\dot q,t)\\,dt$",
+        "整条路径 场构型 积分结果 驻值",
+        "action"
+      ],
       "explanation_markdown": "作用量用来描述沿一条路径或场构型累积拉格朗日量得到的泛函。可写作 $S[q]=\\int_{t_0}^{t_1}L(q,\\dot q,t)\\,dt$，这里$q$ 是路径，$\\dot q$ 是速度，$L$ 是拉格朗日函数。\n\n作用量是整体量，拉格朗日函数是局部密度；驻值不是说每一时刻的 $L$ 最小，而是整条路径的变分为零。哈密顿原理和最小作用原理都以 $S$ 为核心，把力学轨道写成泛函驻值条件。理解作用量时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。作用量常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。",
       "source_links": [
         {
@@ -172,8 +256,20 @@
     {
       "chinese_name": "驻值",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变分法中的一种一阶临界状态。",
+        "它关联泛函极小或极大候选、欧拉方程、二阶检验和凸性。",
+        "可写作 $\\delta J[y;h]=0\\quad\\text{for all }h$，其中 $h$ 属于允许扰动空间。",
+        "它只表示所有允许扰动的一阶响应为零，不能直接等同于真正极小。",
+        "它的英文译名是 stationary value。"
+      ],
+      "fragmented_clues": [
+        "变分法 一阶 临界状态",
+        "泛函 极小 极大 候选 欧拉方程 二阶检验 凸性",
+        "$\\delta J[y;h]=0\\quad\\text{for all }h$",
+        "允许扰动 一阶响应 为零 非真正极小",
+        "stationary value"
+      ],
       "explanation_markdown": "驻值刻画泛函在某个可容许对象处的一阶变分对所有允许扰动都为零的状态。可写作 $\\delta J[y;h]=0\\quad\\text{for all }h$，这里$J$ 是泛函，$y$ 是候选对象，$h$ 属于允许扰动空间。\n\n驻值只给必要条件，不能直接等同于极小值；强极小、弱极小还要比较邻域中的泛函值。许多变分方程先找到驻值，再通过二阶变分、凸性或紧性判断是否真能给出最优结构。理解驻值时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。驻值常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。",
       "source_links": [
         {
@@ -196,8 +292,20 @@
     {
       "chinese_name": "极值曲线",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变分法中的一种曲线候选对象。",
+        "它关联长度、能量、作用量等泛函在相邻曲线中的局部优化问题。",
+        "常写成 ${d\\over dx}{\\partial L\\over\\partial y'}-{\\partial L\\over\\partial y}=0$，其中 $L$ 由所研究的泛函决定。",
+        "它强调满足必要方程的候选曲线本身，端点类型会带来不同边界条件。",
+        "它的英文译名是 extremal curve。"
+      ],
+      "fragmented_clues": [
+        "变分法 曲线候选对象",
+        "长度 能量 作用量 相邻曲线 局部优化",
+        "${d\\over dx}{\\partial L\\over\\partial y'}-{\\partial L\\over\\partial y}=0$",
+        "必要方程 候选曲线 端点类型 边界条件",
+        "extremal curve"
+      ],
       "explanation_markdown": "极值曲线是使长度、能量或作用量等泛函在相邻曲线中取局部极值的曲线。常写成 ${d\\over dx}{\\partial L\\over\\partial y'}-{\\partial L\\over\\partial y}=0$，其中$L$ 由所研究的泛函决定，$y(x)$ 是曲线表示。\n\n极值曲线强调候选曲线本身，欧拉拉格朗日方程给出它满足的必要方程；测地线是长度泛函中的重要例子。端点固定、自由或落在约束曲线上时，同一曲线方程会配上不同边界条件。理解极值曲线时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。极值曲线常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。",
       "source_links": [
         {
@@ -220,8 +328,20 @@
     {
       "chinese_name": "可容许变分",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变分法中限定扰动方向的一类对象。",
+        "它关联固定端点、约束保持、正则性要求和自然边界条件。",
+        "常写成 $y_\\varepsilon=y+\\varepsilon h,\\qquad h(a)=h(b)=0$，表示固定端点下的扰动形式。",
+        "它决定哪些方向能参与一阶计算，端点固定时扰动函数在边界为零。",
+        "它的英文译名是 admissible variation。"
+      ],
+      "fragmented_clues": [
+        "变分法 扰动方向 限定对象",
+        "固定端点 约束保持 正则性 自然边界条件",
+        "$y_\\varepsilon=y+\\varepsilon h,\\qquad h(a)=h(b)=0$",
+        "参与一阶计算 端点固定 边界为零",
+        "admissible variation"
+      ],
       "explanation_markdown": "可容许变分指满足端点、约束和正则性要求的扰动方向。常写成 $y_\\varepsilon=y+\\varepsilon h,\\qquad h(a)=h(b)=0$，其中$h$ 是扰动函数，端点固定时它在边界为零。\n\n它比普通变分更受限制；约束变分还要求扰动保持约束的一阶可行性。可容许空间决定一阶变分中哪些边界项必须消失，也决定自然边界条件是否出现。理解可容许变分时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。可容许变分常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。",
       "source_links": [
         {
@@ -244,8 +364,20 @@
     {
       "chinese_name": "端点条件",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变分问题中的一类边界限制。",
+        "它关联曲线或场在边界处的固定、自由或沿给定边界移动。",
+        "一个核心表达是 $\\left.{\\partial L\\over\\partial y'}\\,\\delta y\\right|_a^b=0$，其中 $\\delta y$ 是边界扰动。",
+        "固定端会让边界扰动消失，自由端则把边界动量带入自然要求。",
+        "它的英文译名是 endpoint condition。"
+      ],
+      "fragmented_clues": [
+        "变分问题 边界限制",
+        "曲线 场 固定 自由 给定边界移动",
+        "$\\left.{\\partial L\\over\\partial y'}\\,\\delta y\\right|_a^b=0$",
+        "固定端 边界扰动 消失 自由端 边界动量",
+        "endpoint condition"
+      ],
       "explanation_markdown": "端点条件用来描述变分问题中曲线或场在边界处需要满足的限制或自然条件。一个核心表达是 $\\left.{\\partial L\\over\\partial y'}\\,\\delta y\\right|_a^b=0$，这里$\\partial L/\\partial y'$ 是边界动量，$\\delta y$ 是端点变分。\n\n固定端点让 $\\delta y=0$，自由端点则要求边界动量满足自然条件；横截条件处理端点只能沿给定曲线移动的情形。它说明边界并非附属细节，而是决定极值对象的一部分。理解端点条件时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。端点条件常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。",
       "source_links": [
         {
@@ -268,8 +400,20 @@
     {
       "chinese_name": "横截条件",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变分问题中处理可动边界的一类条件。",
+        "它关联最短路、终端约束、自由边界模型，以及端部沿曲线或曲面移动的情形。",
+        "一个核心表达是 $\\left[(L-y'L_{y'})\\delta x+L_{y'}\\delta y\\right]_{x=b}=0$。",
+        "它约束的是端部位移在给定边界上的切向自由度，而不是把端部直接固定。",
+        "它的英文译名是 transversal condition。"
+      ],
+      "fragmented_clues": [
+        "变分问题 可动边界 条件",
+        "最短路 终端约束 自由边界 端部移动",
+        "$\\left[(L-y'L_{y'})\\delta x+L_{y'}\\delta y\\right]_{x=b}=0$",
+        "端部位移 给定边界 切向自由度 非固定",
+        "transversal condition"
+      ],
       "explanation_markdown": "横截条件刻画端点可在边界曲线或曲面上移动时由一阶变分边界项产生的条件。一个核心表达是 $\\left[(L-y'L_{y'})\\delta x+L_{y'}\\delta y\\right]_{x=b}=0$，这里$\\delta x,\\delta y$ 是端点位移，$L_{y'}$ 是对导数的偏导。\n\n它不同于端点固定条件；横截条件只约束端点位移在给定边界上的切向自由度。在最短路、最优控制终端约束和自由边界模型中，它把几何边界同泛函驻值联系起来。理解横截条件时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。横截条件常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。",
       "source_links": [
         {
@@ -292,8 +436,20 @@
     {
       "chinese_name": "魏尔斯特拉斯条件",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变分法强极小理论中的一种必要条件。",
+        "它关联强极小曲线、过量函数、勒让德条件和局部凸性判断。",
+        "常写成 $E(x,y,p,\\bar p)=L(x,y,\\bar p)-L(x,y,p)-(\\bar p-p)L_p(x,y,p)\\ge0$。",
+        "它比较不同斜率下被积函数的过量，比只看二阶导数的局部检查更强。",
+        "它的英文译名是 Weierstrass condition。"
+      ],
+      "fragmented_clues": [
+        "变分法 强极小 必要条件",
+        "强极小曲线 过量函数 勒让德条件 局部凸性",
+        "$E(x,y,p,\\bar p)=L(x,y,\\bar p)-L(x,y,p)-(\\bar p-p)L_p(x,y,p)\\ge0$",
+        "不同斜率 被积函数 过量 二阶导数",
+        "Weierstrass condition"
+      ],
       "explanation_markdown": "魏尔斯特拉斯条件是强极小曲线必须满足的一种局部凸性必要条件。在常用记号中有 $E(x,y,p,\\bar p)=L(x,y,\\bar p)-L(x,y,p)-(\\bar p-p)L_p(x,y,p)\\ge0$，其中$p=y'$，$\\bar p$ 是比较斜率，$E$ 是过量函数。\n\n它比勒让德条件更强，勒让德条件只看二阶导数 $L_{pp}$ 的局部非负性。该条件排除某些只满足欧拉方程却不能给出强极小的曲线。魏尔斯特拉斯条件关注驻值附近的稳定性或临界点结构，通常要配合二阶项、共轭点或紧性条件一起使用。在非线性方程中，魏尔斯特拉斯条件常用来判断临界点是否真实存在，以及它附近的解族会怎样分岔或失稳。魏尔斯特拉斯条件的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -316,8 +472,20 @@
     {
       "chinese_name": "勒让德条件",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变分法二阶理论中的一种必要条件。",
+        "它关联速度变量、二阶主项、弱极小和强弱极小判别。",
+        "常写成 $L_{y'y'}(x,y,y')\\ge0$，其中下标表示对导数变量的二阶偏导。",
+        "它只检查导数变量方向上的局部二阶非负性，不涉及整个区间的共轭点。",
+        "它的英文译名是 Legendre condition。"
+      ],
+      "fragmented_clues": [
+        "变分法 二阶理论 必要条件",
+        "速度变量 二阶主项 弱极小",
+        "$L_{y'y'}(x,y,y')\\ge0$",
+        "导数变量 局部二阶非负 共轭点无关",
+        "Legendre condition"
+      ],
       "explanation_markdown": "勒让德条件指变分问题中关于速度变量的二阶必要条件。在常用记号中有 $L_{y'y'}(x,y,y')\\ge0$，其中$L_{y'y'}$ 是拉格朗日函数对导数变量的二阶偏导。\n\n它来自二阶变分的主项，与魏尔斯特拉斯条件相比只检查邻近斜率；与雅可比条件相比不涉及共轭点。正定的勒让德条件常支持弱极小，但还要结合边界和全局结构判断极小性。勒让德条件关注驻值附近的稳定性或临界点结构，通常要配合二阶项、共轭点或紧性条件一起使用。在非线性方程中，勒让德条件常用来判断临界点是否真实存在，以及它附近的解族会怎样分岔或失稳。",
       "source_links": [
         {
@@ -340,8 +508,20 @@
     {
       "chinese_name": "雅可比条件",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变分法二阶理论中的一种非退化条件。",
+        "它关联共轭点、二阶型正定性和区间上的线性化方程。",
+        "可写作 ${d\\over dx}\\left(P h'\\right)-Qh=0$，其中 $h$ 是相应线性化方程的解。",
+        "它检查是否存在非零解在两个端点同时消失，进而影响极小曲线稳定性。",
+        "它的英文译名是 Jacobi condition。"
+      ],
+      "fragmented_clues": [
+        "变分法 二阶理论 非退化条件",
+        "共轭点 二阶型 正定性 线性化方程",
+        "${d\\over dx}\\left(P h'\\right)-Qh=0$",
+        "非零解 两个端点 同时消失 稳定性",
+        "Jacobi condition"
+      ],
       "explanation_markdown": "雅可比条件用来描述二阶变分非退化时关于共轭点不存在性的必要条件。可写作 ${d\\over dx}\\left(P h'\\right)-Qh=0$，这里$P=L_{y'y'}$，$Q$ 来自 $L$ 的二阶偏导，$h$ 是雅可比场。\n\n勒让德条件看局部二次项，雅可比条件看区间上是否存在非零解在两个端点同时消失。若端点之间出现共轭点，二阶变分可能失去正定性，极小曲线会变得不稳定。雅可比条件关注驻值附近的稳定性或临界点结构，通常要配合二阶项、共轭点或紧性条件一起使用。在非线性方程中，雅可比条件常用来判断临界点是否真实存在，以及它附近的解族会怎样分岔或失稳。雅可比条件的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -364,8 +544,20 @@
     {
       "chinese_name": "共轭点",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变分法和黎曼几何中的一种点对现象。",
+        "它关联极值曲线、雅可比场、测地线聚焦和二阶退化。",
+        "可写作 $h(a)=h(b)=0,\\qquad J(h)=0$，其中 $h$ 是非零线性化解。",
+        "它不是普通曲线交点，而是非零线性化扰动在两个位置同时消失的信号。",
+        "它的英文译名是 conjugate point。"
+      ],
+      "fragmented_clues": [
+        "变分法 黎曼几何 点对现象",
+        "极值曲线 雅可比场 测地线聚焦 二阶退化",
+        "$h(a)=h(b)=0,\\qquad J(h)=0$",
+        "非曲线交点 非零线性化扰动 两处消失",
+        "conjugate point"
+      ],
       "explanation_markdown": "共轭点刻画沿极值曲线存在非零雅可比场同时在两个点消失时形成的点对。可写作 $h(a)=h(b)=0,\\qquad J(h)=0$，这里$h$ 是雅可比方程的非零解，$J$ 表示相应线性化算子。\n\n共轭点不是曲线交点，而是二阶变分退化的信号；它与雅可比条件直接相关。在测地线和光线变分中，共轭点标志附近路径族开始聚焦，局部最短性可能丧失。共轭点关注驻值附近的稳定性或临界点结构，通常要配合二阶项、共轭点或紧性条件一起使用。在非线性方程中，共轭点常用来判断临界点是否真实存在，以及它附近的解族会怎样分岔或失稳。共轭点的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -388,8 +580,20 @@
     {
       "chinese_name": "强极小",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变分法中的一种局部最小性质。",
+        "它关联函数值接近的可容许对象、魏尔斯特拉斯条件和尖角比较。",
+        "常写成 $J[y]\\le J[z]\\quad\\text{for } \\|z-y\\|_{C^0}<\\eta$，其中邻域只控制函数值。",
+        "它允许比较对象的导数相差很大，只要求函数本身在 $C^0$ 意义下靠近。",
+        "它的英文译名是 strong minimum。"
+      ],
+      "fragmented_clues": [
+        "变分法 局部最小性质",
+        "函数值接近 可容许对象 魏尔斯特拉斯条件 尖角",
+        "$J[y]\\le J[z]\\quad\\text{for } \\|z-y\\|_{C^0}<\\eta$",
+        "导数 可大差异 $C^0$ 靠近",
+        "strong minimum"
+      ],
       "explanation_markdown": "强极小是泛函值在函数本身接近的所有可容许对象中达到局部最小的性质。常写成 $J[y]\\le J[z]\\quad\\text{for } \\|z-y\\|_{C^0}<\\eta$，其中$z$ 是比较函数，$C^0$ 邻域只控制函数值接近。\n\n强极小比弱极小要求更严，因为它允许导数相差较大的近邻；魏尔斯特拉斯条件常服务于强极小。这种概念适合长度、面积和控制问题中可能出现尖角或斜率突变的比较对象。理解强极小时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。强极小常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。",
       "source_links": [
         {
@@ -412,8 +616,20 @@
     {
       "chinese_name": "弱极小",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是光滑扰动框架中的一种局部最小性质。",
+        "它关联函数和导数同时接近的比较对象、二阶响应和勒让德条件。",
+        "常写成 $J[y]\\le J[z]\\quad\\text{for } \\|z-y\\|_{C^1}<\\eta$，其中邻域同时控制一阶导数。",
+        "它的比较范围小于 $C^0$ 邻域，适合把欧拉方程和二阶正定性连起来。",
+        "它的英文译名是 weak minimum。"
+      ],
+      "fragmented_clues": [
+        "光滑扰动框架 局部最小性质",
+        "函数 导数 同时接近 二阶响应 勒让德条件",
+        "$J[y]\\le J[z]\\quad\\text{for } \\|z-y\\|_{C^1}<\\eta$",
+        "$C^1$ 邻域 比较范围 二阶正定性",
+        "weak minimum"
+      ],
       "explanation_markdown": "弱极小指泛函值在函数和导数都足够接近的可容许对象中达到局部最小的性质。常写成 $J[y]\\le J[z]\\quad\\text{for } \\|z-y\\|_{C^1}<\\eta$，其中$C^1$ 邻域同时控制函数值和一阶导数。\n\n它与强极小的区别在于比较范围较小；勒让德条件和二阶变分通常先给弱极小信息。弱极小更适合光滑扰动框架，能清楚连接欧拉方程和二阶正定性。理解弱极小时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。弱极小常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。",
       "source_links": [
         {
@@ -436,8 +652,20 @@
     {
       "chinese_name": "等周问题",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变分法中的一种带积分约束的优化问题。",
+        "它关联固定长度、面积最大化、受约束控制和乘子法。",
+        "可写作 $J[y]=\\int L\\,dx,\\qquad G[y]=\\int M\\,dx=C$，其中 $G$ 是约束泛函。",
+        "它把另一个泛函保持为常数，欧拉方程通常对 $L+\\lambda M$ 写出。",
+        "它的英文译名是 isoperimetric problem。"
+      ],
+      "fragmented_clues": [
+        "变分法 积分约束 优化问题",
+        "固定长度 面积最大化 受约束控制 乘子法",
+        "$J[y]=\\int L\\,dx,\\qquad G[y]=\\int M\\,dx=C$",
+        "约束泛函 常数 $L+\\lambda M$",
+        "isoperimetric problem"
+      ],
       "explanation_markdown": "等周问题用来描述在积分约束固定的条件下寻找另一个泛函极值的问题。一个核心表达是 $J[y]=\\int L\\,dx,\\qquad G[y]=\\int M\\,dx=C$，这里$G$ 是约束泛函，$C$ 是给定常数，$J$ 是待优化泛函。\n\n它不同于无约束变分，欧拉方程要对 $L+\\lambda M$ 写出，其中 $\\lambda$ 是乘子。经典等周不等式、给定周长的最大面积和受约束最优控制都体现这种结构。理解等周问题时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。等周问题常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。",
       "source_links": [
         {
@@ -460,8 +688,20 @@
     {
       "chinese_name": "最速降线",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是经典变分法中的一种时间最优曲线问题。",
+        "它关联重力场中两点间无摩擦下滑的最短时间。",
+        "一个核心表达是 $T[y]=\\int {ds\\over\\sqrt{2gy}}$，其中 $ds$ 是弧长微元。",
+        "它的解不是直线，而是让速度增长和路径长度折中的摆线。",
+        "它的英文译名是 brachistochrone。"
+      ],
+      "fragmented_clues": [
+        "经典变分法 时间最优 曲线问题",
+        "重力场 两点 无摩擦下滑 最短时间",
+        "$T[y]=\\int {ds\\over\\sqrt{2gy}}$",
+        "非直线 速度增长 路径长度 摆线",
+        "brachistochrone"
+      ],
       "explanation_markdown": "最速降线刻画在重力场中连接两点且下滑时间最短的曲线。一个核心表达是 $T[y]=\\int {ds\\over\\sqrt{2gy}}$，这里$ds$ 是弧长微元，$g$ 是重力加速度，$y$ 表示下降高度。\n\n它不是最短路径；直线长度较短，却未必让速度增长最有利。求得的曲线是摆线，展示了变分法怎样把时间泛函转化为欧拉方程和首次积分。理解最速降线时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。最速降线常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。",
       "source_links": [
         {
@@ -484,8 +724,20 @@
     {
       "chinese_name": "短程线",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是几何和变分法中的一种曲线对象。",
+        "它关联空间中两点距离、长度泛函、局部最短性和黎曼流形。",
+        "常写成 $\\ell(\\gamma)=\\int_a^b|\\dot\\gamma(t)|\\,dt$，其中 $\\gamma$ 是曲线。",
+        "它强调长度比较上的局部最短；零协变加速度的曲线只在小区间内必然具有这种性质。",
+        "它的英文译名是 geodesic。"
+      ],
+      "fragmented_clues": [
+        "几何 变分法 曲线对象",
+        "两点距离 长度泛函 局部最短 黎曼流形",
+        "$\\ell(\\gamma)=\\int_a^b|\\dot\\gamma(t)|\\,dt$",
+        "长度比较 局部最短 零协变加速度 小区间",
+        "geodesic"
+      ],
       "explanation_markdown": "短程线是在给定空间中局部实现两点间距离最短的曲线。在常用记号中有 $\\ell(\\gamma)=\\int_a^b|\\dot\\gamma(t)|\\,dt$，其中$\\gamma$ 是曲线，$\\dot\\gamma$ 是速度，$\\ell$ 是长度。\n\n短程线强调最短性质，测地线强调零协变加速度；测地线只在足够小区间内必然短程。在曲面和黎曼流形上，它把几何距离、变分法和测地方程联系起来。几何应用里，短程线通常来自长度、面积或曲率能量的驻值；局部微分方程只描述一小片，整体边界仍会影响解。短程线把可视的几何对象变成可计算的泛函条件，因此能同时讨论短程线、极小曲面和曲率流。短程线的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -508,8 +760,20 @@
     {
       "chinese_name": "测地线",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是黎曼几何中的一种曲线对象。",
+        "它关联联络、曲率、长度或能量泛函，以及相邻路径的比较。",
+        "常写成 $\\nabla_{\\dot\\gamma}\\dot\\gamma=0$，其中 $\\nabla$ 是联络。",
+        "它是欧氏直线的内蕴推广，切向量沿自身平行移动，但不保证全局最短。",
+        "它的英文译名是 geodesic。"
+      ],
+      "fragmented_clues": [
+        "黎曼几何 曲线对象",
+        "联络 曲率 长度泛函 能量泛函 相邻路径",
+        "$\\nabla_{\\dot\\gamma}\\dot\\gamma=0$",
+        "欧氏直线 内蕴推广 切向量 平行移动 非全局最短",
+        "geodesic"
+      ],
       "explanation_markdown": "测地线指流形上切向量沿自身平行移动的曲线。在常用记号中有 $\\nabla_{\\dot\\gamma}\\dot\\gamma=0$，其中$\\nabla$ 是联络，$\\dot\\gamma$ 是曲线速度。\n\n测地线是欧氏直线的内蕴推广，但不一定全局最短；短程线还要求长度比较上的极小性。它可由能量或长度泛函的一阶变分推出，也是测地流和曲率理论的基本对象。几何应用里，测地线通常来自长度、面积或曲率能量的驻值；局部微分方程只描述一小片，整体边界仍会影响解。测地线把可视的几何对象变成可计算的泛函条件，因此能同时讨论短程线、极小曲面和曲率流。测地线的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -532,8 +796,20 @@
     {
       "chinese_name": "费马原理",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是几何光学中的一种变分原理。",
+        "它关联光线、折射率介质、光程驻值和斯涅尔定律。",
+        "可写作 $\\delta\\int n(x)\\,ds=0$，其中 $n(x)$ 是折射率。",
+        "它优化的是折射率加权的路径长度，介质不均匀会使光线偏离普通直线。",
+        "它的英文译名是 Fermat's principle。"
+      ],
+      "fragmented_clues": [
+        "几何光学 变分原理",
+        "光线 折射率介质 光程驻值 斯涅尔定律",
+        "$\\delta\\int n(x)\\,ds=0$",
+        "折射率加权 路径长度 不均匀介质 非直线",
+        "Fermat's principle"
+      ],
       "explanation_markdown": "费马原理用来描述光线在介质中使光程取驻值的变分原理。可写作 $\\delta\\int n(x)\\,ds=0$，这里$n(x)$ 是折射率，$ds$ 是弧长微元。\n\n它讨论光程驻值而非普通几何长度；折射率变化会改变实际路径。斯涅尔定律和几何光学中的光线方程都可由这个泛函条件推出。理解费马原理时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。费马原理常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。费马原理的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -556,8 +832,20 @@
     {
       "chinese_name": "哈密顿原理",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是分析力学中的一种变分原理。",
+        "它关联固定时间端点、真实轨道、作用量驻值和多自由度系统。",
+        "可写作 $\\delta S=\\delta\\int_{t_0}^{t_1}L(q,\\dot q,t)\\,dt=0$，其中 $q$ 是广义坐标。",
+        "它使用完整时间积分，与固定能量的约化作用表述不同。",
+        "它的英文译名是 Hamilton's principle。"
+      ],
+      "fragmented_clues": [
+        "分析力学 变分原理",
+        "固定时间端点 真实轨道 作用量驻值 多自由度",
+        "$\\delta S=\\delta\\int_{t_0}^{t_1}L(q,\\dot q,t)\\,dt=0$",
+        "完整时间积分 固定能量 约化作用",
+        "Hamilton's principle"
+      ],
       "explanation_markdown": "哈密顿原理刻画力学系统真实轨道使作用量在固定端点变分下取驻值的原理。可写作 $\\delta S=\\delta\\int_{t_0}^{t_1}L(q,\\dot q,t)\\,dt=0$，这里$q$ 是广义坐标，$L$ 是拉格朗日函数。\n\n它与莫佩尔蒂原理的区别在于时间端点固定且使用完整作用量；后者通常固定能量。这一原理给出欧拉拉格朗日方程，并把约束、多自由度和场论放入统一表述。相空间语言下，哈密顿原理把坐标与动量成对组织起来，辛形式负责记录哪些变换保留哈密顿结构。力学应用中，哈密顿原理常连接作用量、守恒量和正则方程，使能量观点和几何观点落到同一张相图上。哈密顿原理的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -580,8 +868,20 @@
     {
       "chinese_name": "莫佩尔蒂原理",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是分析力学中的一种变分原理。",
+        "它关联固定能量、相空间曲线、约化作用和保守系统轨道。",
+        "常写成 $\\delta\\int p_i\\,dq^i=0$，其中 $p_i$ 是广义动量。",
+        "它不以时间积分为重点，而把运动轨道看成能量曲面上的几何路径。",
+        "它的英文译名是 Maupertuis' principle。"
+      ],
+      "fragmented_clues": [
+        "分析力学 变分原理",
+        "固定能量 相空间曲线 约化作用 保守系统",
+        "$\\delta\\int p_i\\,dq^i=0$",
+        "非时间积分 能量曲面 几何路径",
+        "Maupertuis' principle"
+      ],
       "explanation_markdown": "莫佩尔蒂原理是固定能量条件下真实轨道使约化作用量取驻值的原理。常写成 $\\delta\\int p_i\\,dq^i=0$，其中$p_i$ 是广义动量，$q^i$ 是坐标。\n\n它不同于哈密顿原理的时间作用量，重点在相空间曲线和能量曲面。在保守系统中，它把力学轨道看成构形空间上的几何测地线，有助于连接最小作用和辛几何。理解莫佩尔蒂原理时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。莫佩尔蒂原理常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。",
       "source_links": [
         {
@@ -604,8 +904,20 @@
     {
       "chinese_name": "达朗贝尔原理",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是分析力学中的一种虚功原理。",
+        "它关联理想约束、虚位移，以及牛顿方程到广义坐标的改写。",
+        "常写成 $\\sum_i(F_i-m_i a_i)\\cdot\\delta r_i=0$，其中 $\\delta r_i$ 是虚位移。",
+        "它是瞬时条件：约束力不做虚功，积分后才通向拉格朗日方程。",
+        "它的英文译名是 d'Alembert's principle。"
+      ],
+      "fragmented_clues": [
+        "分析力学 虚功原理",
+        "理想约束 虚位移 牛顿方程 广义坐标",
+        "$\\sum_i(F_i-m_i a_i)\\cdot\\delta r_i=0$",
+        "瞬时条件 约束力 不做虚功",
+        "d'Alembert's principle"
+      ],
       "explanation_markdown": "达朗贝尔原理指把约束力不做虚功的动力学条件写成虚位移方程。常写成 $\\sum_i(F_i-m_i a_i)\\cdot\\delta r_i=0$，其中$F_i$ 是外力，$a_i$ 是加速度，$\\delta r_i$ 是虚位移。\n\n它与哈密顿原理不同，形式上是瞬时虚功条件；积分后才通向拉格朗日方程。该原理适合处理理想约束，把牛顿方程转化为广义坐标中的变分语言。理解达朗贝尔原理时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。达朗贝尔原理常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。",
       "source_links": [
         {
@@ -628,8 +940,20 @@
     {
       "chinese_name": "拉格朗日乘子",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是约束优化中的一种辅助变量。",
+        "它关联等式约束、受限驻值、约束法向和变分约束。",
+        "一个核心表达是 $\\nabla f(x)=\\sum_{i=1}^m\\lambda_i\\nabla g_i(x)$，其中 $g_i=0$ 是约束。",
+        "它不是新自由度，而是目标梯度在约束法向方向上的系数。",
+        "它的英文译名是 Lagrange multiplier。"
+      ],
+      "fragmented_clues": [
+        "约束优化 辅助变量",
+        "等式约束 受限驻值 约束法向 变分约束",
+        "$\\nabla f(x)=\\sum_{i=1}^m\\lambda_i\\nabla g_i(x)$",
+        "非新自由度 目标梯度 法向系数",
+        "Lagrange multiplier"
+      ],
       "explanation_markdown": "拉格朗日乘子用来描述在等式约束下把受限驻值转化为无约束驻值的辅助变量。一个核心表达是 $\\nabla f(x)=\\sum_{i=1}^m\\lambda_i\\nabla g_i(x)$，这里$f$ 是目标函数，$g_i=0$ 是约束，$\\lambda_i$ 是乘子。\n\n乘子不是新自由度，而是约束法向方向上的系数；不等式约束还需互补松弛等条件。在约束变分中，同样会把被积函数改为 $L+\\lambda M$ 或引入随时间变化的乘子场。理解拉格朗日乘子时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。拉格朗日乘子常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。",
       "source_links": [
         {
@@ -652,8 +976,20 @@
     {
       "chinese_name": "约束变分",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变分法中带可行性限制的问题类型。",
+        "它关联等周结构、不可压缩流、状态方程约束和乘子法。",
+        "一个核心表达是 $\\delta J[y;h]=0,\\qquad \\delta G[y;h]=0$，其中 $h$ 满足线性化约束。",
+        "它把允许扰动空间缩小到满足线性化约束的方向，或等价引入乘子。",
+        "它的英文译名是 constrained variation。"
+      ],
+      "fragmented_clues": [
+        "变分法 可行性限制 问题类型",
+        "等周结构 不可压缩流 状态方程约束 乘子法",
+        "$\\delta J[y;h]=0,\\qquad \\delta G[y;h]=0$",
+        "允许扰动空间 缩小 线性化约束 乘子",
+        "constrained variation"
+      ],
       "explanation_markdown": "约束变分刻画只允许扰动保持给定约束的一阶可行性的变分问题。一个核心表达是 $\\delta J[y;h]=0,\\qquad \\delta G[y;h]=0$，这里$G$ 是约束泛函，$h$ 是满足线性化约束的扰动。\n\n它与自由变分的区别在于扰动空间变小，或等价地引入拉格朗日乘子。等周问题、不可压缩流和最优控制中的状态方程约束都属于这种框架。理解约束变分时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。约束变分常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。",
       "source_links": [
         {
@@ -676,8 +1012,20 @@
     {
       "chinese_name": "不等式约束",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是优化和变分问题中的一种单侧限制形式。",
+        "它关联活跃约束、互补松弛、障碍问题和控制上下界。",
+        "在常用记号中有 $g_i(x)\\le0,\\qquad \\lambda_i g_i(x)=0,\\ \\lambda_i\\ge0$。",
+        "只有达到边界的限制会进入一阶条件，对应乘子还要保持非负。",
+        "它的英文译名是 inequality constraints。"
+      ],
+      "fragmented_clues": [
+        "优化 变分问题 单侧限制",
+        "活跃约束 互补松弛 障碍问题 控制上下界",
+        "$g_i(x)\\le0,\\qquad \\lambda_i g_i(x)=0,\\ \\lambda_i\\ge0$",
+        "边界限制 一阶条件 非负乘子",
+        "inequality constraints"
+      ],
       "explanation_markdown": "不等式约束是可行对象还需满足某些函数或泛函非负、非正限制的约束形式。在常用记号中有 $g_i(x)\\le0,\\qquad \\lambda_i g_i(x)=0,\\ \\lambda_i\\ge0$，其中$g_i$ 是约束函数，$\\lambda_i$ 是对应乘子。\n\n它与等式约束不同，只有活跃约束会进入一阶条件；这正是库恩塔克条件的核心。障碍问题、自由边界和最优控制中的控制上下界都需要处理这种单侧变分。理解不等式约束时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。不等式约束常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。",
       "source_links": [
         {
@@ -700,8 +1048,20 @@
     {
       "chinese_name": "库恩塔克条件",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是带单侧约束优化中的一阶必要条件。",
+        "它关联非线性规划、最优控制、变分不等式和活跃约束。",
+        "在常用记号中有 $\\nabla f+\\sum_i\\lambda_i\\nabla g_i=0,\\quad \\lambda_i\\ge0,\\quad \\lambda_i g_i=0$。",
+        "它把平稳性、非负乘子和互补松弛放在同一组条件中，凸情形下常可充分。",
+        "它的英文译名是 Karush-Kuhn-Tucker conditions。"
+      ],
+      "fragmented_clues": [
+        "单侧约束优化 一阶必要条件",
+        "非线性规划 最优控制 变分不等式 活跃约束",
+        "$\\nabla f+\\sum_i\\lambda_i\\nabla g_i=0,\\quad \\lambda_i\\ge0,\\quad \\lambda_i g_i=0$",
+        "平稳性 非负乘子 互补松弛 凸充分",
+        "Karush-Kuhn-Tucker conditions"
+      ],
       "explanation_markdown": "库恩塔克条件指带不等式约束优化中的一阶必要条件。在常用记号中有 $\\nabla f+\\sum_i\\lambda_i\\nabla g_i=0,\\quad \\lambda_i\\ge0,\\quad \\lambda_i g_i=0$，其中$f$ 是目标，$g_i\\le0$ 是约束，$\\lambda_i$ 是乘子。\n\n它扩展拉格朗日乘子法，新增非负乘子和互补松弛；在凸情形下常成为充分条件。变分不等式、最优控制和非线性规划都用它描述活跃约束。理解库恩塔克条件时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。库恩塔克条件常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。库恩塔克条件的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -724,8 +1084,20 @@
     {
       "chinese_name": "贝尔特拉米恒等式",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变分法中的一种首次积分关系。",
+        "它关联自变量平移对称、最速降线、曲线长度问题和降阶计算。",
+        "可写作 $L-y'L_{y'}=C$，其中 $C$ 是常数。",
+        "当被积函数不显含自变量时，它把二阶欧拉型方程降成一阶守恒形式。",
+        "它的英文译名是 Beltrami identity。"
+      ],
+      "fragmented_clues": [
+        "变分法 首次积分关系",
+        "自变量平移对称 最速降线 曲线长度 降阶",
+        "$L-y'L_{y'}=C$",
+        "不显含自变量 二阶方程 一阶守恒形式",
+        "Beltrami identity"
+      ],
       "explanation_markdown": "贝尔特拉米恒等式用来描述当拉格朗日函数不显含自变量时得到的首次积分。可写作 $L-y'L_{y'}=C$，这里$L_{y'}$ 是对导数变量的偏导，$C$ 是常数。\n\n它不是新的欧拉方程，而是欧拉拉格朗日方程在平移对称下的守恒形式。最速降线和曲线长度问题中，利用它可把二阶方程降为一阶关系。理解贝尔特拉米恒等式时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。贝尔特拉米恒等式常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。",
       "source_links": [
         {
@@ -748,8 +1120,20 @@
     {
       "chinese_name": "诺特定理",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变分法和理论物理中的一个对称性定理。",
+        "它关联作用量对称性、守恒量、能量、动量和角动量。",
+        "可写作 $\\delta L={dB\\over dt}\\quad\\Longrightarrow\\quad Q=p_i\\delta q^i-B$。",
+        "它不是单个经验守恒律，而是把连续对称系统地产生为守恒量。",
+        "它的英文译名是 Noether's theorem。"
+      ],
+      "fragmented_clues": [
+        "变分法 理论物理 对称性定理",
+        "作用量对称性 守恒量 能量 动量 角动量",
+        "$\\delta L={dB\\over dt}\\quad\\Longrightarrow\\quad Q=p_i\\delta q^i-B$",
+        "连续对称 系统产生 守恒量",
+        "Noether's theorem"
+      ],
       "explanation_markdown": "诺特定理刻画连续对称性与守恒量之间的对应定理。可写作 $\\delta L={dB\\over dt}\\quad\\Longrightarrow\\quad Q=p_i\\delta q^i-B$，这里$B$ 是边界项，$p_i$ 是广义动量，$Q$ 是守恒量。\n\n它不同于单个守恒律的经验发现，而是从作用量对称性系统地产生守恒量。时间平移给能量守恒，空间平移给动量守恒，旋转对称给角动量守恒。理解诺特定理时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。诺特定理常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。诺特定理的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -772,8 +1156,20 @@
     {
       "chinese_name": "守恒量",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是动力系统和变分问题中的一种不变量。",
+        "它关联极值曲线、哈密顿流、对称性和降维计算。",
+        "常写成 ${d\\over dt}I(q(t),p(t),t)=0$，其中 $I$ 是相空间函数。",
+        "它沿运动轨道保持不变，可由连续对称性产生，也可揭示几何结构。",
+        "它的英文译名是 conserved quantity。"
+      ],
+      "fragmented_clues": [
+        "动力系统 变分问题 不变量",
+        "极值曲线 哈密顿流 对称性 降维",
+        "${d\\over dt}I(q(t),p(t),t)=0$",
+        "运动轨道 保持不变 连续对称 几何结构",
+        "conserved quantity"
+      ],
       "explanation_markdown": "守恒量是沿极值曲线或动力学流保持不变的函数。常写成 ${d\\over dt}I(q(t),p(t),t)=0$，其中$I$ 是相空间函数，$(q,p)$ 是轨道变量。\n\n守恒量是结果，诺特定理说明它可由对称性产生；哈密顿量只是其中一种重要例子。它能降低方程维数，也能揭示变分问题中的几何结构和不变量。理解守恒量时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。守恒量常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。守恒量的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -796,8 +1192,20 @@
     {
       "chinese_name": "辛形式",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是辛几何中定义相空间结构的二形式。",
+        "它关联哈密顿向量场、泊松括号、正则变换和坐标动量配对。",
+        "常写成 $\\omega=\\sum_i dq^i\\wedge dp_i$，其中 $\\wedge$ 是楔积。",
+        "它是闭且非退化的二形式，记录面积结构而不度量长度和角度。",
+        "它的英文译名是 symplectic form。"
+      ],
+      "fragmented_clues": [
+        "辛几何 相空间结构 二形式",
+        "哈密顿向量场 泊松括号 正则变换 坐标动量",
+        "$\\omega=\\sum_i dq^i\\wedge dp_i$",
+        "闭 非退化 面积结构 非度量",
+        "symplectic form"
+      ],
       "explanation_markdown": "辛形式指相空间上非退化闭二形式，用来定义哈密顿向量场。常写成 $\\omega=\\sum_i dq^i\\wedge dp_i$，其中$q^i$ 是坐标，$p_i$ 是共轭动量，$\\wedge$ 是楔积。\n\n辛形式不是度量，没有长度和角度；它记录坐标与动量的配对面积。哈密顿方程、泊松括号和正则变换都以保持 $\\omega$ 为核心。相空间语言下，辛形式把坐标与动量成对组织起来，辛形式负责记录哪些变换保留哈密顿结构。力学应用中，辛形式常连接作用量、守恒量和正则方程，使能量观点和几何观点落到同一张相图上。辛形式的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -820,8 +1228,20 @@
     {
       "chinese_name": "哈密顿函数",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是分析力学中相空间上的一种生成函数。",
+        "它关联能量表示、勒让德变换、正则方程和位置动量变量。",
+        "一个核心表达是 $H(q,p,t)=p_i\\dot q^i-L(q,\\dot q,t)$，其中 $p_i=\\partial L/\\partial\\dot q^i$。",
+        "它把速度表述改写为动量表述，运动由其对坐标和动量的偏导生成。",
+        "它的英文译名是 Hamiltonian function。"
+      ],
+      "fragmented_clues": [
+        "分析力学 相空间 生成函数",
+        "能量表示 勒让德变换 正则方程 位置动量",
+        "$H(q,p,t)=p_i\\dot q^i-L(q,\\dot q,t)$",
+        "速度表述 动量表述 偏导 运动生成",
+        "Hamiltonian function"
+      ],
       "explanation_markdown": "哈密顿函数用来描述相空间中给出系统能量或动力学生成元的函数。一个核心表达是 $H(q,p,t)=p_i\\dot q^i-L(q,\\dot q,t)$，这里$p_i=\\partial L/\\partial\\dot q^i$，$L$ 是拉格朗日函数。\n\n它与拉格朗日函数使用的变量不同，前者用位置和动量，后者用位置和速度。通过勒让德变换得到 $H$ 后，运动方程可写成正则方程。相空间语言下，哈密顿函数把坐标与动量成对组织起来，辛形式负责记录哪些变换保留哈密顿结构。力学应用中，哈密顿函数常连接作用量、守恒量和正则方程，使能量观点和几何观点落到同一张相图上。哈密顿函数的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -844,8 +1264,20 @@
     {
       "chinese_name": "正则方程",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是哈密顿力学中的一阶动力学方程组。",
+        "它关联相空间轨道、坐标动量变量、辛形式和欧拉型方程的等价改写。",
+        "一个核心表达是 $\\dot q^i={\\partial H\\over\\partial p_i},\\qquad \\dot p_i=-{\\partial H\\over\\partial q^i}$。",
+        "它把二阶运动方程拆成坐标与动量的一阶系统，并可写作 $\\iota_{X_H}\\omega=dH$。",
+        "它的英文译名是 canonical equations。"
+      ],
+      "fragmented_clues": [
+        "哈密顿力学 一阶动力学方程组",
+        "相空间轨道 坐标动量 辛形式 等价改写",
+        "$\\dot q^i={\\partial H\\over\\partial p_i},\\qquad \\dot p_i=-{\\partial H\\over\\partial q^i}$",
+        "二阶运动方程 一阶系统 $\\iota_{X_H}\\omega=dH$",
+        "canonical equations"
+      ],
       "explanation_markdown": "正则方程刻画哈密顿函数在相空间中生成的一级动力学方程。一个核心表达是 $\\dot q^i={\\partial H\\over\\partial p_i},\\qquad \\dot p_i=-{\\partial H\\over\\partial q^i}$，这里$q^i$ 是坐标，$p_i$ 是共轭动量，$H$ 是哈密顿函数。\n\n它与欧拉拉格朗日方程等价于正则情形，但把二阶方程改写为一阶系统。辛几何中，这组方程表示向量场 $X_H$ 满足 $\\iota_{X_H}\\omega=dH$。相空间语言下，正则方程把坐标与动量成对组织起来，辛形式负责记录哪些变换保留哈密顿结构。力学应用中，正则方程常连接作用量、守恒量和正则方程，使能量观点和几何观点落到同一张相图上。正则方程的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -868,8 +1300,20 @@
     {
       "chinese_name": "勒让德变换",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是凸分析和力学中的一种变量变换。",
+        "它关联速度动量转换、哈密顿函数、正则方程和非退化条件。",
+        "在常用记号中有 $p={\\partial L\\over\\partial v},\\qquad H=pv-L$。",
+        "它不是普通换元，必须能从共轭动量反解原速度变量。",
+        "它的英文译名是 Legendre transformation。"
+      ],
+      "fragmented_clues": [
+        "凸分析 力学 变量变换",
+        "速度 动量 哈密顿函数 正则方程 非退化",
+        "$p={\\partial L\\over\\partial v},\\qquad H=pv-L$",
+        "非普通换元 共轭动量 反解速度",
+        "Legendre transformation"
+      ],
       "explanation_markdown": "勒让德变换是把速度变量描述改写成动量变量描述的变换。在常用记号中有 $p={\\partial L\\over\\partial v},\\qquad H=pv-L$，其中$v$ 是速度，$p$ 是共轭动量，$H$ 是变换后的函数。\n\n它不是普通换元；需要关于速度的凸性或非退化性才能可靠反解。在变分法中，它连接拉格朗日表述、哈密顿表述和正则方程。相空间语言下，勒让德变换把坐标与动量成对组织起来，辛形式负责记录哪些变换保留哈密顿结构。力学应用中，勒让德变换常连接作用量、守恒量和正则方程，使能量观点和几何观点落到同一张相图上。勒让德变换的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -892,8 +1336,20 @@
     {
       "chinese_name": "庞特里亚金极大值原理",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是最优控制中的一种必要条件原理。",
+        "它关联状态方程、控制约束、协态变量、终端条件和轨道优化。",
+        "在常用记号中有 $H(x,u,p,t)=p\\cdot f(x,u,t)-L(x,u,t)$。",
+        "它沿最优轨道同时给出状态方程、协态方程和控制使哈密顿量取极值的条件。",
+        "它的英文译名是 Pontryagin maximum principle。"
+      ],
+      "fragmented_clues": [
+        "最优控制 必要条件原理",
+        "状态方程 控制约束 协态变量 终端条件 轨道优化",
+        "$H(x,u,p,t)=p\\cdot f(x,u,t)-L(x,u,t)$",
+        "最优轨道 状态方程 协态方程 哈密顿量 极值",
+        "Pontryagin maximum principle"
+      ],
       "explanation_markdown": "庞特里亚金极大值原理指最优控制中给出最优轨道、控制和协态必须满足的必要条件。在常用记号中有 $H(x,u,p,t)=p\\cdot f(x,u,t)-L(x,u,t)$，其中$x$ 是状态，$u$ 是控制，$p$ 是协态。\n\n它不同于动态规划的全局值函数方法，而是沿最优轨道写出哈密顿系统和极大化条件。常见形式要求 $u$ 使 $H$ 最大或最小，并配合状态方程、协态方程和终端条件。在最优控制里，庞特里亚金极大值原理总要和状态方程、控制约束、终端代价一起读；变量含义不同，伴随方程也会随之改变。庞特里亚金极大值原理把连续时间优化写成局部条件或递推条件，可用于轨道设计、经济控制和资源调度等模型。",
       "source_links": [
         {
@@ -916,8 +1372,20 @@
     {
       "chinese_name": "哈密顿雅可比方程",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是力学和控制理论中的一阶非线性偏微分方程。",
+        "它关联作用函数、生成函数、价值函数和动态规划。",
+        "可写作 ${\\partial S\\over\\partial t}+H\\left(q,{\\partial S\\over\\partial q},t\\right)=0$。",
+        "它描述函数而不是单条轨道，把正则系统转化为一个生成函数的方程。",
+        "它的英文译名是 Hamilton-Jacobi equation。"
+      ],
+      "fragmented_clues": [
+        "力学 控制理论 一阶非线性偏微分方程",
+        "作用函数 生成函数 价值函数 动态规划",
+        "${\\partial S\\over\\partial t}+H\\left(q,{\\partial S\\over\\partial q},t\\right)=0$",
+        "函数描述 非单条轨道 生成函数方程",
+        "Hamilton-Jacobi equation"
+      ],
       "explanation_markdown": "哈密顿雅可比方程用来描述作用函数或价值函数满足的一阶非线性偏微分方程。可写作 ${\\partial S\\over\\partial t}+H\\left(q,{\\partial S\\over\\partial q},t\\right)=0$，这里$S$ 是作用函数，$H$ 是哈密顿函数。\n\n它与正则方程不同，正则方程描述轨道，哈密顿雅可比方程描述生成函数。在力学、最优控制和动态规划中，它把轨道问题转化为函数方程。在最优控制里，哈密顿雅可比方程总要和状态方程、控制约束、终端代价一起读；变量含义不同，伴随方程也会随之改变。哈密顿雅可比方程把连续时间优化写成局部条件或递推条件，可用于轨道设计、经济控制和资源调度等模型。哈密顿雅可比方程的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -940,8 +1408,20 @@
     {
       "chinese_name": "动态规划",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是运筹优化和控制理论中的一种递推方法。",
+        "它关联多阶段决策、状态转移、价值函数和哈密顿雅可比贝尔曼方程。",
+        "可写作 $V_t(x)=\\min_u\\{c(x,u)+V_{t+1}(F(x,u))\\}$，其中 $V_t$ 是状态上的最优值。",
+        "它把全局最优拆成状态上的局部递推，而不是只给一条轨道的必要条件。",
+        "它的英文译名是 dynamic programming。"
+      ],
+      "fragmented_clues": [
+        "运筹优化 控制理论 递推方法",
+        "多阶段决策 状态转移 价值函数 HJB方程",
+        "$V_t(x)=\\min_u\\{c(x,u)+V_{t+1}(F(x,u))\\}$",
+        "全局最优 状态局部递推 非单轨道条件",
+        "dynamic programming"
+      ],
       "explanation_markdown": "动态规划刻画把多阶段决策分解为状态上的递推优化方法。可写作 $V_t(x)=\\min_u\\{c(x,u)+V_{t+1}(F(x,u))\\}$，这里$V_t$ 是价值函数，$u$ 是控制，$F$ 是状态转移。\n\n它与庞特里亚金原理不同，前者关注全局值函数，后者给沿轨道的必要条件。在普通运筹和变分控制中，动态规划的连续极限会通向哈密顿雅可比贝尔曼方程。在最优控制里，动态规划总要和状态方程、控制约束、终端代价一起读；变量含义不同，伴随方程也会随之改变。动态规划把连续时间优化写成局部条件或递推条件，可用于轨道设计、经济控制和资源调度等模型。动态规划的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -964,8 +1444,20 @@
     {
       "chinese_name": "价值函数",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是控制理论中的一种最优值对象。",
+        "它关联初始状态、控制策略、动态规划和哈密顿雅可比贝尔曼方程。",
+        "常写成 $V(x)=\\inf_u J(x,u)$，其中 $u$ 表示可行策略。",
+        "它对所有可行控制取最优后得到，而不是某条轨道的瞬时代价。",
+        "它的英文译名是 value function。"
+      ],
+      "fragmented_clues": [
+        "控制理论 最优值对象",
+        "初始状态 控制策略 动态规划 HJB方程",
+        "$V(x)=\\inf_u J(x,u)$",
+        "所有可行控制 取最优 非瞬时代价",
+        "value function"
+      ],
       "explanation_markdown": "价值函数是从某个状态出发能够达到的最优累计代价或收益。常写成 $V(x)=\\inf_u J(x,u)$，其中$x$ 是初始状态，$u$ 是控制策略，$J$ 是总代价。\n\n价值函数不是某条轨道的瞬时代价，而是对所有可行控制取最优后的函数。它是动态规划的核心对象，并在连续时间中满足哈密顿雅可比贝尔曼方程。在最优控制里，价值函数总要和状态方程、控制约束、终端代价一起读；变量含义不同，伴随方程也会随之改变。价值函数把连续时间优化写成局部条件或递推条件，可用于轨道设计、经济控制和资源调度等模型。价值函数的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -988,8 +1480,20 @@
     {
       "chinese_name": "最优控制",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是控制理论中带动力学约束的优化问题。",
+        "它关联状态方程、控制函数、性能指标和终端代价。",
+        "常写成 $\\dot x=f(x,u,t),\\qquad J[u]=\\int L(x,u,t)\\,dt+\\Phi(x(T))$。",
+        "它比普通泛函极值多出可选择输入和状态演化约束。",
+        "它的英文译名是 optimal control。"
+      ],
+      "fragmented_clues": [
+        "控制理论 动力学约束 优化问题",
+        "状态方程 控制函数 性能指标 终端代价",
+        "$\\dot x=f(x,u,t),\\qquad J[u]=\\int L(x,u,t)\\,dt+\\Phi(x(T))$",
+        "可选择输入 状态演化约束",
+        "optimal control"
+      ],
       "explanation_markdown": "最优控制指在状态方程约束下选择控制函数以优化性能指标的问题。常写成 $\\dot x=f(x,u,t),\\qquad J[u]=\\int L(x,u,t)\\,dt+\\Phi(x(T))$，其中$x$ 是状态，$u$ 是控制，$J$ 是目标泛函。\n\n它比普通变分多出可选择的控制变量和状态动力学约束；与动态规划相比，庞特里亚金原理给局部必要条件。机器人轨迹、经济调节和航天制导中都使用这种函数优化框架。在最优控制里，最优控制总要和状态方程、控制约束、终端代价一起读；变量含义不同，伴随方程也会随之改变。最优控制把连续时间优化写成局部条件或递推条件，可用于轨道设计、经济控制和资源调度等模型。",
       "source_links": [
         {
@@ -1012,8 +1516,20 @@
     {
       "chinese_name": "控制变量",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是控制理论中的一类决策变量。",
+        "它关联状态演化、可行集合、上下界和哈密顿量的极值条件。",
+        "一个核心表达是 $\\dot x(t)=f(x(t),u(t),t)$，其中 $u(t)$ 表示可选择输入。",
+        "它由决策者选择并影响状态，受到约束时可能出现 bang-bang 结构。",
+        "它的英文译名是 control variables。"
+      ],
+      "fragmented_clues": [
+        "控制理论 决策变量",
+        "状态演化 可行集合 上下界 极值条件",
+        "$\\dot x(t)=f(x(t),u(t),t)$",
+        "决策者选择 影响状态 bang-bang 结构",
+        "control variables"
+      ],
       "explanation_markdown": "控制变量用来描述最优控制问题中可由决策者选择并影响状态演化的函数。一个核心表达是 $\\dot x(t)=f(x(t),u(t),t)$，这里$u(t)$ 是控制变量，$x(t)$ 是状态变量。\n\n控制变量不同于状态变量，状态由动力学决定，控制则受可行集合或上下界限制。控制约束会改变哈密顿量的极值条件，常导致 bang-bang 控制或投影型条件。在最优控制里，控制变量总要和状态方程、控制约束、终端代价一起读；变量含义不同，伴随方程也会随之改变。控制变量把连续时间优化写成局部条件或递推条件，可用于轨道设计、经济控制和资源调度等模型。控制变量的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1036,8 +1552,20 @@
     {
       "chinese_name": "状态变量",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是控制理论中的一类系统描述变量。",
+        "它关联初值、控制输入、状态转移和动态规划递推。",
+        "一个核心表达是 $x_{t+1}=F(x_t,u_t)$，其中 $F$ 是转移映射。",
+        "它不能任意指定，而由初始条件和控制输入共同演化。",
+        "它的英文译名是 state variables。"
+      ],
+      "fragmented_clues": [
+        "控制理论 系统描述变量",
+        "初值 控制输入 状态转移 动态规划",
+        "$x_{t+1}=F(x_t,u_t)$",
+        "不能任意指定 初始条件 控制输入 共同演化",
+        "state variables"
+      ],
       "explanation_markdown": "状态变量刻画描述系统当前位置、库存、速度或其它内部状态的变量。一个核心表达是 $x_{t+1}=F(x_t,u_t)$，这里$x_t$ 是状态，$u_t$ 是控制，$F$ 是转移映射。\n\n状态变量不同于控制变量，它不能任意指定，而由初值和控制共同演化。动态规划、最优控制和哈密顿系统都围绕状态如何随时间变化组织方程。在最优控制里，状态变量总要和状态方程、控制约束、终端代价一起读；变量含义不同，伴随方程也会随之改变。状态变量把连续时间优化写成局部条件或递推条件，可用于轨道设计、经济控制和资源调度等模型。状态变量的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1060,8 +1588,20 @@
     {
       "chinese_name": "协态变量",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是最优控制中的一类伴随变量。",
+        "它关联乘子、状态扰动的边际价值、哈密顿系统和终端条件。",
+        "在常用记号中有 $\\dot p=-{\\partial H\\over\\partial x}$，其中 $p$ 是伴随量。",
+        "它像动量一样与状态成对出现，并和状态方程、极值条件组成边值系统。",
+        "它的英文译名是 costate variables。"
+      ],
+      "fragmented_clues": [
+        "最优控制 伴随变量",
+        "乘子 状态扰动 边际价值 哈密顿系统 终端条件",
+        "$\\dot p=-{\\partial H\\over\\partial x}$",
+        "类似动量 状态成对 边值系统",
+        "costate variables"
+      ],
       "explanation_markdown": "协态变量是最优控制中伴随状态方程出现的乘子变量。在常用记号中有 $\\dot p=-{\\partial H\\over\\partial x}$，其中$p$ 是协态，$H$ 是控制哈密顿量，$x$ 是状态。\n\n协态不是物理位置，而是目标函数对状态扰动的边际价值；在力学正则情形下它类似动量。它和状态方程、极值条件共同构成庞特里亚金原理的边值系统。在最优控制里，协态变量总要和状态方程、控制约束、终端代价一起读；变量含义不同，伴随方程也会随之改变。协态变量把连续时间优化写成局部条件或递推条件，可用于轨道设计、经济控制和资源调度等模型。协态变量的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1084,8 +1624,20 @@
     {
       "chinese_name": "终端条件",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变分和控制问题中的一类末端边界要求。",
+        "它关联最终时刻的状态、伴随量、终端代价和自由终点。",
+        "在常用记号中有 $p(T)=\\nabla\\Phi(x(T))$，其中 $\\Phi$ 是末端代价。",
+        "它常由末端边界项产生，固定、自由或受约束的末端状态会给出不同形式。",
+        "它的英文译名是 terminal condition。"
+      ],
+      "fragmented_clues": [
+        "变分 控制问题 末端边界要求",
+        "最终时刻 状态 伴随量 终端代价 自由终点",
+        "$p(T)=\\nabla\\Phi(x(T))$",
+        "末端边界项 固定 自由 受约束",
+        "terminal condition"
+      ],
       "explanation_markdown": "终端条件指变分或最优控制问题在最终时刻对状态、协态或边界项的要求。在常用记号中有 $p(T)=\\nabla\\Phi(x(T))$，其中$\\Phi$ 是终端代价，$p(T)$ 是终端协态。\n\n它与初始条件不同，终端条件常由自由终点或终端约束的变分边界项产生。终端状态固定、自由或受约束时，协态边界条件会出现不同形式。在最优控制里，终端条件总要和状态方程、控制约束、终端代价一起读；变量含义不同，伴随方程也会随之改变。终端条件把连续时间优化写成局部条件或递推条件，可用于轨道设计、经济控制和资源调度等模型。终端条件的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1108,8 +1660,20 @@
     {
       "chinese_name": "欧拉泊松方程",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是含高阶导数泛函中的一类必要方程。",
+        "它关联弯曲能量、弹性线、薄板模型和高阶正则化。",
+        "可写作 ${\\partial L\\over\\partial y}-{d\\over dx}{\\partial L\\over\\partial y'}+{d^2\\over dx^2}{\\partial L\\over\\partial y''}=0$。",
+        "它扩展一阶导数情形，被积函数含二阶导数时会带来更多边界要求。",
+        "它的英文译名是 Euler-Poisson equation。"
+      ],
+      "fragmented_clues": [
+        "高阶导数泛函 必要方程",
+        "弯曲能量 弹性线 薄板 高阶正则化",
+        "${\\partial L\\over\\partial y}-{d\\over dx}{\\partial L\\over\\partial y'}+{d^2\\over dx^2}{\\partial L\\over\\partial y''}=0$",
+        "一阶导数情形扩展 更多边界要求",
+        "Euler-Poisson equation"
+      ],
       "explanation_markdown": "欧拉泊松方程用来描述含高阶导数的泛函取得驻值时满足的欧拉型方程。可写作 ${\\partial L\\over\\partial y}-{d\\over dx}{\\partial L\\over\\partial y'}+{d^2\\over dx^2}{\\partial L\\over\\partial y''}=0$，这里$L(x,y,y',y'')$ 含二阶导数。\n\n它扩展欧拉拉格朗日方程，适用于弯曲能量等依赖曲率或高阶导数的泛函。弹性线、薄板模型和高阶正则化常出现这种方程，同时伴随更多边界条件。理解欧拉泊松方程时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。欧拉泊松方程常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。欧拉泊松方程的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1132,8 +1696,20 @@
     {
       "chinese_name": "高阶变分",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是泛函扰动展开中二阶以上响应的统称。",
+        "它关联退化临界点、极小性判断、分岔行为和非线性方程。",
+        "可写作 $J[y+\\varepsilon h]=J[y]+\\varepsilon\\delta J+{\\varepsilon^2\\over2}\\delta^2J+\\cdots$。",
+        "当一阶或二阶项不能判断符号时，更高阶项会影响极小性和分岔。",
+        "它的英文译名是 higher order variation。"
+      ],
+      "fragmented_clues": [
+        "泛函扰动展开 二阶以上响应",
+        "退化临界点 极小性 分岔行为 非线性方程",
+        "$J[y+\\varepsilon h]=J[y]+\\varepsilon\\delta J+{\\varepsilon^2\\over2}\\delta^2J+\\cdots$",
+        "符号判断 更高阶项 极小性 分岔",
+        "higher order variation"
+      ],
       "explanation_markdown": "高阶变分刻画泛函沿扰动幅度展开时二阶以上的各阶变化项。可写作 $J[y+\\varepsilon h]=J[y]+\\varepsilon\\delta J+{\\varepsilon^2\\over2}\\delta^2J+\\cdots$，这里$h$ 是扰动，$\\varepsilon$ 是小参数。\n\n一阶变分给驻值，二阶变分给局部形状，高阶变分用于处理退化临界点。当二阶项为零或不能决定符号时，高阶项会影响极小性和分岔行为。理解高阶变分时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。高阶变分常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。高阶变分的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1156,8 +1732,20 @@
     {
       "chinese_name": "多重积分变分",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是多维区域上泛函优化的一类问题。",
+        "它关联偏微分方程、弹性体、调和函数、极小曲面和场论模型。",
+        "常写成 $J[u]=\\int_\\Omega L(x,u,\\nabla u)\\,dx$，其中 $\\Omega$ 是区域。",
+        "它不同于一维曲线问题，欧拉条件通常成为偏微分方程，边界也更复杂。",
+        "它的英文译名是 multiple integral variation。"
+      ],
+      "fragmented_clues": [
+        "多维区域 泛函优化 问题",
+        "偏微分方程 弹性体 调和函数 极小曲面 场论",
+        "$J[u]=\\int_\\Omega L(x,u,\\nabla u)\\,dx$",
+        "非一维曲线 偏微分方程 复杂边界",
+        "multiple integral variation"
+      ],
       "explanation_markdown": "多重积分变分是未知函数定义在多维区域上且泛函为区域积分的变分问题。常写成 $J[u]=\\int_\\Omega L(x,u,\\nabla u)\\,dx$，其中$\\Omega$ 是区域，$u$ 是未知函数，$\\nabla u$ 是梯度。\n\n它与一维曲线变分不同，欧拉方程通常是偏微分方程，边界条件也更复杂。弹性体、调和函数、极小曲面和场论模型都属于这一类。理解多重积分变分时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。多重积分变分常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。多重积分变分的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1180,8 +1768,20 @@
     {
       "chinese_name": "面积泛函",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是几何变分中度量曲面大小的一类对象。",
+        "它关联图形曲面、极小曲面、平均曲率为零和边界约束。",
+        "常写成 $A[u]=\\int_\\Omega \\sqrt{1+|\\nabla u|^2}\\,dx$，其中 $\\nabla u$ 决定局部斜率。",
+        "它的驻值给出极小曲面方程；小梯度时与狄利克雷能量近似相关但方程不同。",
+        "它的英文译名是 area functional。"
+      ],
+      "fragmented_clues": [
+        "几何变分 曲面大小 对象",
+        "图形曲面 极小曲面 平均曲率为零 边界",
+        "$A[u]=\\int_\\Omega \\sqrt{1+|\\nabla u|^2}\\,dx$",
+        "驻值 极小曲面方程 小梯度 狄利克雷近似",
+        "area functional"
+      ],
       "explanation_markdown": "面积泛函指把曲面或图形的面积作为待极值的泛函。常写成 $A[u]=\\int_\\Omega \\sqrt{1+|\\nabla u|^2}\\,dx$，其中$u$ 是图形函数，$\\nabla u$ 决定局部斜率。\n\n面积泛函不同于狄利克雷能量；小梯度时二者近似相关，但欧拉方程并不相同。它的驻值给出极小曲面方程，平均曲率为零是几何表述。几何应用里，面积泛函通常来自长度、面积或曲率能量的驻值；局部微分方程只描述一小片，整体边界仍会影响解。面积泛函把可视的几何对象变成可计算的泛函条件，因此能同时讨论短程线、极小曲面和曲率流。面积泛函的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1204,8 +1804,20 @@
     {
       "chinese_name": "极小曲面",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是几何分析中的一种曲面对象。",
+        "它关联面积驻值、肥皂膜、普拉托问题和几何测度论。",
+        "一个核心表达是 $\\operatorname{div}{\\nabla u\\over\\sqrt{1+|\\nabla u|^2}}=0$。",
+        "在欧氏空间中它由 $H=0$ 刻画，强调面积泛函而不只是局部曲率方程。",
+        "它的英文译名是 minimal surface。"
+      ],
+      "fragmented_clues": [
+        "几何分析 曲面对象",
+        "面积驻值 肥皂膜 普拉托问题 几何测度论",
+        "$\\operatorname{div}{\\nabla u\\over\\sqrt{1+|\\nabla u|^2}}=0$",
+        "$H=0$ 面积泛函 局部曲率方程",
+        "minimal surface"
+      ],
       "explanation_markdown": "极小曲面用来描述局部面积取驻值且通常面积最小的曲面。一个核心表达是 $\\operatorname{div}{\\nabla u\\over\\sqrt{1+|\\nabla u|^2}}=0$，这里$u$ 是曲面图形函数，$\\operatorname{div}$ 是散度。\n\n极小曲面强调面积泛函，平均曲率方程强调局部曲率；在欧氏空间中二者由 $H=0$ 相连。肥皂膜、普拉托问题和几何测度论都围绕这种对象展开。几何应用里，极小曲面通常来自长度、面积或曲率能量的驻值；局部微分方程只描述一小片，整体边界仍会影响解。极小曲面把可视的几何对象变成可计算的泛函条件，因此能同时讨论短程线、极小曲面和曲率流。极小曲面的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1228,8 +1840,20 @@
     {
       "chinese_name": "平均曲率方程",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是几何分析中控制曲面形状的一类偏微分方程。",
+        "它关联常平均曲率曲面、肥皂泡、极小曲面和面积变分。",
+        "一个核心表达是 $\\operatorname{div}{\\nabla u\\over\\sqrt{1+|\\nabla u|^2}}=2H$。",
+        "当 $H=0$ 时得到极小曲面方程，非零 $H$ 则描述受压弯曲曲面。",
+        "它的英文译名是 mean curvature equation。"
+      ],
+      "fragmented_clues": [
+        "几何分析 曲面形状 偏微分方程",
+        "常平均曲率 肥皂泡 极小曲面 面积变分",
+        "$\\operatorname{div}{\\nabla u\\over\\sqrt{1+|\\nabla u|^2}}=2H$",
+        "$H=0$ 极小曲面方程 非零 $H$ 受压曲面",
+        "mean curvature equation"
+      ],
       "explanation_markdown": "平均曲率方程刻画用平均曲率控制曲面形状的偏微分方程。一个核心表达是 $\\operatorname{div}{\\nabla u\\over\\sqrt{1+|\\nabla u|^2}}=2H$，这里$H$ 是平均曲率，$u$ 是曲面图形。\n\n当 $H=0$ 时得到极小曲面方程；非零常平均曲率对应肥皂泡等受压曲面。它把面积变分的一阶条件写成曲率语言，是几何分析中的基本方程。几何应用里，平均曲率方程通常来自长度、面积或曲率能量的驻值；局部微分方程只描述一小片，整体边界仍会影响解。平均曲率方程把可视的几何对象变成可计算的泛函条件，因此能同时讨论短程线、极小曲面和曲率流。平均曲率方程的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1252,8 +1876,20 @@
     {
       "chinese_name": "狄利克雷能量",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是分析和几何中度量梯度大小的泛函。",
+        "它关联调和函数、调和映射、椭圆方程弱形式和能量极小问题。",
+        "在常用记号中有 $E[u]={1\\over2}\\int_\\Omega |\\nabla u|^2\\,dx$。",
+        "它惩罚梯度平方，与图形面积不同，但在小斜率时有近似联系。",
+        "它的英文译名是 Dirichlet energy。"
+      ],
+      "fragmented_clues": [
+        "分析 几何 梯度大小 泛函",
+        "调和函数 调和映射 椭圆方程弱形式 能量极小",
+        "$E[u]={1\\over2}\\int_\\Omega |\\nabla u|^2\\,dx$",
+        "梯度平方 图形面积 小斜率近似",
+        "Dirichlet energy"
+      ],
       "explanation_markdown": "狄利克雷能量是衡量映射或函数梯度平方总量的泛函。在常用记号中有 $E[u]={1\\over2}\\int_\\Omega |\\nabla u|^2\\,dx$，其中$u$ 是函数或映射，$\\nabla u$ 是梯度。\n\n它与面积泛函不同，前者惩罚梯度平方，后者计算图形面积；在小斜率时二者有近似联系。调和函数、调和映射和椭圆方程的弱形式常由它的变分得到。理解狄利克雷能量时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。狄利克雷能量常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。狄利克雷能量的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1276,8 +1912,20 @@
     {
       "chinese_name": "调和映射",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是黎曼几何和偏微分方程中的一种映射对象。",
+        "它关联流形之间的映射、狄利克雷能量、张力场和曲率项。",
+        "在常用记号中有 $\\tau(u)=\\operatorname{tr}\\nabla du=0$，其中 $\\tau(u)$ 是张力场。",
+        "它推广调和函数；目标空间弯曲时方程会出现联络和曲率。",
+        "它的英文译名是 harmonic map。"
+      ],
+      "fragmented_clues": [
+        "黎曼几何 偏微分方程 映射对象",
+        "流形映射 狄利克雷能量 张力场 曲率项",
+        "$\\tau(u)=\\operatorname{tr}\\nabla du=0$",
+        "调和函数推广 弯曲目标空间 联络 曲率",
+        "harmonic map"
+      ],
       "explanation_markdown": "调和映射指在流形之间使狄利克雷能量取驻值的映射。在常用记号中有 $\\tau(u)=\\operatorname{tr}\\nabla du=0$，其中$du$ 是微分，$\\tau(u)$ 是张力场。\n\n调和映射推广调和函数，目标空间弯曲时方程会出现联络和曲率项。它连接偏微分方程、黎曼几何和能量极小问题，常用于研究曲面与流形之间的映射。几何应用里，调和映射通常来自长度、面积或曲率能量的驻值；局部微分方程只描述一小片，整体边界仍会影响解。调和映射把可视的几何对象变成可计算的泛函条件，因此能同时讨论短程线、极小曲面和曲率流。调和映射的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1300,8 +1948,20 @@
     {
       "chinese_name": "直接法",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变分存在性理论中的一种证明方法。",
+        "它关联极小序列、强制性、紧性和下半连续性。",
+        "常用关系是 $J[u]\\le \\liminf_{k\\to\\infty}J[u_k]$，用于把极限保留为候选极小元。",
+        "它先证明最优对象存在，而不是先写出欧拉方程再求解。",
+        "它的英文译名是 direct method。"
+      ],
+      "fragmented_clues": [
+        "变分存在性 证明方法",
+        "极小序列 强制性 紧性 下半连续性",
+        "$J[u]\\le \\liminf_{k\\to\\infty}J[u_k]$",
+        "先证明存在 非先解欧拉方程",
+        "direct method"
+      ],
       "explanation_markdown": "直接法用来描述通过取极小序列并利用紧性与下半连续性证明极小元存在的方法。可写作 $J[u]\\le \\liminf_{k\\to\\infty}J[u_k]$，这里$u_k$ 是收敛的极小序列，$J$ 是泛函。\n\n它不同于先求欧拉方程再解方程的路线，而是先证明最优对象存在。强制性提供有界性，紧性给出收敛子列，下半连续性把极限保留为极小元。存在性问题中，直接法常和弱收敛、紧性、下半连续性一起出现，单靠把一阶变分写成零并不足够。直接法决定极小序列是否会收敛到真正的极小元，也说明为什么凸性条件在无穷维问题中格外重要。直接法的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1324,8 +1984,20 @@
     {
       "chinese_name": "下半连续性",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是拓扑和泛函分析中的一种极限性质。",
+        "它关联直接法、弱收敛、凸性、拟凸性和极小元存在。",
+        "可写作 $J[u]\\le\\liminf_{k\\to\\infty}J[u_k]$，其中 $u_k\\to u$。",
+        "它只控制下极限方向，足以防止极小序列的极限丢失最小值。",
+        "它的英文译名是 lower semicontinuity。"
+      ],
+      "fragmented_clues": [
+        "拓扑 泛函分析 极限性质",
+        "直接法 弱收敛 凸性 拟凸性 极小元",
+        "$J[u]\\le\\liminf_{k\\to\\infty}J[u_k]$",
+        "下极限方向 极小序列 极限 最小值",
+        "lower semicontinuity"
+      ],
       "explanation_markdown": "下半连续性刻画序列收敛到极限时泛函值不会在极限处突然变大的性质。可写作 $J[u]\\le\\liminf_{k\\to\\infty}J[u_k]$，这里$u_k\\to u$，$J$ 是泛函。\n\n它与连续性不同，只控制下极限方向；直接法只需要这种不等式就能保住极小值。凸性、拟凸性和弱拓扑常用于建立积分泛函的下半连续性。存在性问题中，下半连续性常和弱收敛、紧性、下半连续性一起出现，单靠把一阶变分写成零并不足够。下半连续性决定极小序列是否会收敛到真正的极小元，也说明为什么凸性条件在无穷维问题中格外重要。下半连续性的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1348,8 +2020,20 @@
     {
       "chinese_name": "强制性",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是泛函存在性理论中的一种增长性质。",
+        "它关联直接法、极小序列有界性和函数空间范数变大。",
+        "常写成 $\\|u\\|\\to\\infty\\quad\\Longrightarrow\\quad J[u]\\to\\infty$。",
+        "它防止极小序列逃向无穷远，和线段上函数值形状的凸性不同。",
+        "它的英文译名是 coercivity。"
+      ],
+      "fragmented_clues": [
+        "泛函存在性 增长性质",
+        "直接法 极小序列有界性 函数空间范数",
+        "$\\|u\\|\\to\\infty\\quad\\Longrightarrow\\quad J[u]\\to\\infty$",
+        "防止逃向无穷 非凸性",
+        "coercivity"
+      ],
       "explanation_markdown": "强制性是泛函在变量逃向无穷或范数变大时趋向无穷的性质。常写成 $\\|u\\|\\to\\infty\\quad\\Longrightarrow\\quad J[u]\\to\\infty$，其中$\\|u\\|$ 是函数空间范数，$J$ 是泛函。\n\n强制性不同于凸性，前者防止极小序列逃逸，后者关心线段上的函数值形状。直接法中它提供极小序列的有界性，是取得收敛子列之前的关键条件。存在性问题中，强制性常和弱收敛、紧性、下半连续性一起出现，单靠把一阶变分写成零并不足够。强制性决定极小序列是否会收敛到真正的极小元，也说明为什么凸性条件在无穷维问题中格外重要。强制性的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1372,8 +2056,20 @@
     {
       "chinese_name": "紧性",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是拓扑和函数空间中的一种序列性质。",
+        "它关联有界对象族、收敛子列、直接法和 Sobolev 嵌入。",
+        "常写成 $u_{k_j}\\to u$，表示从原序列中抽出的子列有极限。",
+        "它把受控的极小序列转化为候选极小元，是存在性证明中的空间条件。",
+        "它的英文译名是 compactness。"
+      ],
+      "fragmented_clues": [
+        "拓扑 函数空间 序列性质",
+        "有界对象族 收敛子列 直接法 Sobolev嵌入",
+        "$u_{k_j}\\to u$",
+        "受控极小序列 候选极小元 空间条件",
+        "compactness"
+      ],
       "explanation_markdown": "紧性指有界或受控对象族能够抽出收敛子列的性质。常写成 $u_{k_j}\\to u$，其中$u_{k_j}$ 是从序列中选出的子列，$u$ 是极限。\n\n紧性不是能量不等式本身，而是把极小序列转化为候选极小元的空间性质。在 Sobolev 空间中常借助紧嵌入、弱紧性或补偿紧性获得。存在性问题中，紧性常和弱收敛、紧性、下半连续性一起出现，单靠把一阶变分写成零并不足够。紧性决定极小序列是否会收敛到真正的极小元，也说明为什么凸性条件在无穷维问题中格外重要。紧性的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1396,8 +2092,20 @@
     {
       "chinese_name": "伽马收敛",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是泛函序列中的一种变分收敛概念。",
+        "它关联极小值稳定性、材料均匀化、相场极限和离散到连续过渡。",
+        "一个核心表达是 $F(u)\\le\\liminf F_n(u_n),\\qquad F_n(v_n)\\to F(u)$。",
+        "它保留极小化问题的极限结构，依靠下界条件和恢复序列而非逐点收敛。",
+        "它的英文译名是 Gamma-convergence。"
+      ],
+      "fragmented_clues": [
+        "泛函序列 变分收敛概念",
+        "极小值稳定性 材料均匀化 相场极限 离散到连续",
+        "$F(u)\\le\\liminf F_n(u_n),\\qquad F_n(v_n)\\to F(u)$",
+        "极限结构 下界条件 恢复序列 非逐点收敛",
+        "Gamma-convergence"
+      ],
       "explanation_markdown": "伽马收敛用来描述描述泛函序列极小值和极小元稳定收敛的变分收敛概念。一个核心表达是 $F(u)\\le\\liminf F_n(u_n),\\qquad F_n(v_n)\\to F(u)$，这里第一式是下界条件，第二式是恢复序列条件。\n\n它不同于逐点收敛，重点保留极小化问题的极限结构。材料均匀化、相场极限和离散模型到连续模型的过渡常用伽马收敛。存在性问题中，伽马收敛常和弱收敛、紧性、下半连续性一起出现，单靠把一阶变分写成零并不足够。伽马收敛决定极小序列是否会收敛到真正的极小元，也说明为什么凸性条件在无穷维问题中格外重要。伽马收敛的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1420,8 +2128,20 @@
     {
       "chinese_name": "莫雷准凸性",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是多重积分泛函中关于梯度变量的凸性替代条件。",
+        "它关联下半连续性、非线性弹性和向量值变分问题。",
+        "一个核心表达是 $f(A)\\le {1\\over|\\Omega|}\\int_\\Omega f(A+\\nabla\\varphi)\\,dx$。",
+        "它用零边界梯度扰动后的平均值作检验，比普通凸性弱但更适合梯度场。",
+        "它的英文译名是 Morrey quasiconvexity。"
+      ],
+      "fragmented_clues": [
+        "多重积分泛函 梯度变量 凸性替代条件",
+        "下半连续性 非线性弹性 向量值问题",
+        "$f(A)\\le {1\\over|\\Omega|}\\int_\\Omega f(A+\\nabla\\varphi)\\,dx$",
+        "零边界梯度扰动 平均值 普通凸性更弱",
+        "Morrey quasiconvexity"
+      ],
       "explanation_markdown": "莫雷准凸性刻画多重积分泛函下半连续性中关于梯度变量的凸性替代条件。一个核心表达是 $f(A)\\le {1\\over|\\Omega|}\\int_\\Omega f(A+\\nabla\\varphi)\\,dx$，这里$A$ 是矩阵，$\\varphi$ 是零边界扰动。\n\n它弱于普通凸性但强于许多可用条件，专门适应梯度场的积分约束。在非线性弹性和向量值变分问题中，准凸性比逐点凸性更贴近下半连续性。存在性问题中，莫雷准凸性常和弱收敛、紧性、下半连续性一起出现，单靠把一阶变分写成零并不足够。莫雷准凸性决定极小序列是否会收敛到真正的极小元，也说明为什么凸性条件在无穷维问题中格外重要。莫雷准凸性的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1444,8 +2164,20 @@
     {
       "chinese_name": "拟凸性",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是有限维优化中的一种广义凸性性质。",
+        "它关联次水平集、极小化问题、有限维比较和莫雷型条件的区别。",
+        "在常用记号中有 $f(\\theta x+(1-\\theta)y)\\le \\max\\{f(x),f(y)\\}$。",
+        "它要求次水平集呈凸形，但不要求满足端点加权平均的詹森不等式。",
+        "它的英文译名是 quasiconvexity。"
+      ],
+      "fragmented_clues": [
+        "有限维优化 广义凸性性质",
+        "次水平集 极小化 有限维比较 莫雷型条件",
+        "$f(\\theta x+(1-\\theta)y)\\le \\max\\{f(x),f(y)\\}$",
+        "次水平集 凸形 非詹森不等式",
+        "quasiconvexity"
+      ],
       "explanation_markdown": "拟凸性是函数在次水平集意义下呈凸形的性质。在常用记号中有 $f(\\theta x+(1-\\theta)y)\\le \\max\\{f(x),f(y)\\}$，其中$0\\le\\theta\\le1$，$x,y$ 是变量点。\n\n拟凸性不同于莫雷准凸性；前者是有限维优化中的次水平集凸性，后者针对梯度积分泛函。它保证局部下降结构较温和，但通常不直接给出线性插值上的 詹森 不等式。存在性问题中，拟凸性常和弱收敛、紧性、下半连续性一起出现，单靠把一阶变分写成零并不足够。拟凸性决定极小序列是否会收敛到真正的极小元，也说明为什么凸性条件在无穷维问题中格外重要。拟凸性的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1468,8 +2200,20 @@
     {
       "chinese_name": "凸泛函",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是函数空间中满足线段不等式的一类对象。",
+        "它关联全局极小、一阶条件、严格凸情形和弱拓扑下的存在性。",
+        "在常用记号中有 $J[\\theta u+(1-\\theta)v]\\le\\theta J[u]+(1-\\theta)J[v]$。",
+        "这种性质常让驻点直接具有全局意义，但等号不一定只在两个对象相同时出现。",
+        "它的英文译名是 convex functional。"
+      ],
+      "fragmented_clues": [
+        "函数空间 线段不等式 对象",
+        "全局极小 一阶条件 严格情形 弱拓扑",
+        "$J[\\theta u+(1-\\theta)v]\\le\\theta J[u]+(1-\\theta)J[v]$",
+        "驻点 全局意义 等号可多对象",
+        "convex functional"
+      ],
       "explanation_markdown": "凸泛函指在函数空间中满足线段上函数值不超过端点加权平均的泛函。在常用记号中有 $J[\\theta u+(1-\\theta)v]\\le\\theta J[u]+(1-\\theta)J[v]$，其中$u,v$ 是函数，$0\\le\\theta\\le1$。\n\n凸泛函与严格凸泛函的区别在于等号是否只允许 $u=v$；与拟凸性相比它要求更强。凸性让一阶条件具有全局意义，常使驻值直接成为全局极小。存在性问题中，凸泛函常和弱收敛、紧性、下半连续性一起出现，单靠把一阶变分写成零并不足够。凸泛函决定极小序列是否会收敛到真正的极小元，也说明为什么凸性条件在无穷维问题中格外重要。凸泛函的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1492,8 +2236,20 @@
     {
       "chinese_name": "严格凸性",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是优化和函数空间中的一种更强凸性性质。",
+        "它关联极小元唯一性、椭圆能量和正则化模型。",
+        "可写作 $J[\\theta u+(1-\\theta)v]<\\theta J[u]+(1-\\theta)J[v]$，其中 $u\\ne v$ 且 $0<\\theta<1$。",
+        "对不同对象，线段内部的函数值必须严格低于端点加权平均。",
+        "它的英文译名是 strict convexity。"
+      ],
+      "fragmented_clues": [
+        "优化 函数空间 更强凸性",
+        "极小元唯一性 椭圆能量 正则化模型",
+        "$J[\\theta u+(1-\\theta)v]<\\theta J[u]+(1-\\theta)J[v]$",
+        "不同对象 线段内部 严格低于 加权平均",
+        "strict convexity"
+      ],
       "explanation_markdown": "严格凸性用来描述凸泛函在不同点之间的线段内部严格低于端点加权平均的性质。可写作 $J[\\theta u+(1-\\theta)v]<\\theta J[u]+(1-\\theta)J[v]$，这里$u\\ne v$，$0<\\theta<1$。\n\n它比凸性更强，通常保证极小元唯一；但存在性仍需强制性和下半连续性等条件。在椭圆能量和正则化模型中，严格凸性常用来排除多个同等最优解。存在性问题中，严格凸性常和弱收敛、紧性、下半连续性一起出现，单靠把一阶变分写成零并不足够。严格凸性决定极小序列是否会收敛到真正的极小元，也说明为什么凸性条件在无穷维问题中格外重要。严格凸性的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1516,8 +2272,20 @@
     {
       "chinese_name": "次微分",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是凸分析中的一种广义斜率对象。",
+        "它关联不可光滑泛函、绝对值、全变差和变分不等式。",
+        "可写作 $\\xi\\in\\partial J(u)\\iff J(v)\\ge J(u)+\\langle \\xi,v-u\\rangle$。",
+        "在不可微点处它通常是一组斜率，最优性可写成 $0\\in\\partial J(u)$。",
+        "它的英文译名是 subdifferential。"
+      ],
+      "fragmented_clues": [
+        "凸分析 广义斜率对象",
+        "不可光滑泛函 绝对值 全变差 变分不等式",
+        "$\\xi\\in\\partial J(u)\\iff J(v)\\ge J(u)+\\langle \\xi,v-u\\rangle$",
+        "不可微点 斜率集合 $0\\in\\partial J(u)$",
+        "subdifferential"
+      ],
       "explanation_markdown": "次微分刻画凸泛函在不可微点处的一组广义斜率。可写作 $\\xi\\in\\partial J(u)\\iff J(v)\\ge J(u)+\\langle \\xi,v-u\\rangle$，这里$\\xi$ 是次梯度，$\\partial J(u)$ 是次微分集合。\n\n它与变分导数不同，变分导数要求可微，次微分允许绝对值、全变差等不可光滑泛函。最优性常写成 $0\\in\\partial J(u)$，适合凸优化和变分不等式。存在性问题中，次微分常和弱收敛、紧性、下半连续性一起出现，单靠把一阶变分写成零并不足够。次微分决定极小序列是否会收敛到真正的极小元，也说明为什么凸性条件在无穷维问题中格外重要。次微分的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1540,8 +2308,20 @@
     {
       "chinese_name": "欧拉不等式",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是凸约束变分中的一种单侧最优性关系。",
+        "它关联可行凸集、障碍问题、接触问题和变分不等式。",
+        "常写成 $\\langle J'(u),v-u\\rangle\\ge0\\quad\\text{for all }v\\in K$。",
+        "由于可行方向不再组成线性空间，等式型欧拉方程会变成单侧关系。",
+        "它的英文译名是 Euler inequality。"
+      ],
+      "fragmented_clues": [
+        "凸约束变分 单侧最优性关系",
+        "可行凸集 障碍问题 接触问题 变分不等式",
+        "$\\langle J'(u),v-u\\rangle\\ge0\\quad\\text{for all }v\\in K$",
+        "可行方向 非线性空间 等式方程 单侧关系",
+        "Euler inequality"
+      ],
       "explanation_markdown": "欧拉不等式是凸约束或单侧约束下替代欧拉方程的变分不等式。常写成 $\\langle J'(u),v-u\\rangle\\ge0\\quad\\text{for all }v\\in K$，其中$K$ 是可行凸集，$J'(u)$ 是一阶变分。\n\n它与欧拉方程的区别在于可行方向不再成线性空间，因而只能得到不等式。障碍问题和接触问题中，解在非接触区满足方程，在接触区由不等式控制。存在性问题中，欧拉不等式常和弱收敛、紧性、下半连续性一起出现，单靠把一阶变分写成零并不足够。欧拉不等式决定极小序列是否会收敛到真正的极小元，也说明为什么凸性条件在无穷维问题中格外重要。欧拉不等式的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1564,8 +2344,20 @@
     {
       "chinese_name": "自由边界",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是偏微分方程和变分问题中的一种未知界面对象。",
+        "它关联障碍问题、相变、流体界面和形状优化。",
+        "常写成 $u\\ge\\psi,\\qquad (u-\\psi)(-\\Delta u-f)=0$，其中接触集决定界面位置。",
+        "边界不是预先给定，而是随解一起出现；界面正则性常比内部方程更难。",
+        "它的英文译名是 free boundary。"
+      ],
+      "fragmented_clues": [
+        "偏微分方程 变分问题 未知界面对象",
+        "障碍问题 相变 流体界面 形状优化",
+        "$u\\ge\\psi,\\qquad (u-\\psi)(-\\Delta u-f)=0$",
+        "非预先给定 随解出现 界面正则性",
+        "free boundary"
+      ],
       "explanation_markdown": "自由边界指边界位置本身也是未知量并由变分条件决定的界面。常写成 $u\\ge\\psi,\\qquad (u-\\psi)(-\\Delta u-f)=0$，其中$\\psi$ 是障碍，$u=\\psi$ 的边界是自由边界。\n\n它不同于固定边界条件；边界不是预先给定，而随解一起出现。障碍问题、相变和流体界面中，自由边界的正则性往往比方程内部更难。边界可变时，自由边界往往同时产生体方程和边界条件，后者决定自由边界、接触边界或区域形状怎样移动。自由边界在形状优化中尤其重要，因为改变的不是函数值本身，而是定义域、界面或材料分布。自由边界的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1588,8 +2380,20 @@
     {
       "chinese_name": "最小作用原理",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是分析力学和场论中的一种变分原理。",
+        "它关联真实运动、允许路径、作用量泛函和哈密顿式表述。",
+        "一个核心表达是 $S[q]=\\int L(q,\\dot q,t)\\,dt$。",
+        "这里的“最小”常指驻值或适当条件下的局部极小，而非总是全局最小。",
+        "它的英文译名是 principle of least action。"
+      ],
+      "fragmented_clues": [
+        "分析力学 场论 变分原理",
+        "真实运动 允许路径 作用量泛函 哈密顿表述",
+        "$S[q]=\\int L(q,\\dot q,t)\\,dt$",
+        "驻值 局部极小 非总是全局最小",
+        "principle of least action"
+      ],
       "explanation_markdown": "最小作用原理用来描述真实运动在允许路径中使作用量取驻值或在适当条件下取最小的表述。一个核心表达是 $S[q]=\\int L(q,\\dot q,t)\\,dt$，这里$S$ 是作用量，$L$ 是拉格朗日函数。\n\n它常与哈密顿原理相近，但“最小”在严格数学上应理解为驻值或局部极小，不能一概视为全局最小。该原理把经典力学、几何光学和场论中的演化方程统一为变分条件。理解最小作用原理时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。最小作用原理常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。",
       "source_links": [
         {
@@ -1612,8 +2416,20 @@
     {
       "chinese_name": "测地流",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是黎曼几何和哈密顿系统中的一种动力系统。",
+        "它关联切丛或余切丛、初始位置速度族和测地方程。",
+        "一个核心表达是 ${d\\over dt}(\\gamma(t),\\dot\\gamma(t))=X_G(\\gamma,\\dot\\gamma)$。",
+        "它研究所有初始数据共同形成的相空间演化，而不是只研究单条曲线。",
+        "它的英文译名是 geodesic flow。"
+      ],
+      "fragmented_clues": [
+        "黎曼几何 哈密顿系统 动力系统",
+        "切丛 余切丛 初始位置速度族 测地方程",
+        "${d\\over dt}(\\gamma(t),\\dot\\gamma(t))=X_G(\\gamma,\\dot\\gamma)$",
+        "所有初始数据 相空间演化 非单条曲线",
+        "geodesic flow"
+      ],
       "explanation_markdown": "测地流刻画把测地线方程提升到切丛或余切丛上的动力系统。一个核心表达是 ${d\\over dt}(\\gamma(t),\\dot\\gamma(t))=X_G(\\gamma,\\dot\\gamma)$，这里$X_G$ 是由度量能量产生的向量场。\n\n测地线是单条曲线，测地流是所有初始位置和速度共同形成的流。在黎曼几何、遍历论和哈密顿系统中，它描述粒子无外力沿流形运动的相空间轨道。相空间语言下，测地流把坐标与动量成对组织起来，辛形式负责记录哪些变换保留哈密顿结构。力学应用中，测地流常连接作用量、守恒量和正则方程，使能量观点和几何观点落到同一张相图上。测地流的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1636,8 +2452,20 @@
     {
       "chinese_name": "变分不等式",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是凸可行集上的一种单侧最优性或平衡形式。",
+        "它关联接触力学、障碍问题、纳什均衡和投影算法。",
+        "在常用记号中有 $\\langle A(u),v-u\\rangle\\ge0\\quad\\text{for all }v\\in K$。",
+        "可行扰动只有单侧方向，所以等式型欧拉方程被替换为对所有比较点成立的关系。",
+        "它的英文译名是 variational inequality。"
+      ],
+      "fragmented_clues": [
+        "凸可行集 单侧最优性 平衡形式",
+        "接触力学 障碍问题 纳什均衡 投影算法",
+        "$\\langle A(u),v-u\\rangle\\ge0\\quad\\text{for all }v\\in K$",
+        "单侧方向 欧拉方程 比较点",
+        "variational inequality"
+      ],
       "explanation_markdown": "变分不等式是在凸可行集上用不等式表达一阶最优性或平衡条件的形式。在常用记号中有 $\\langle A(u),v-u\\rangle\\ge0\\quad\\text{for all }v\\in K$，其中$A$ 是算子，$K$ 是可行集合，$u$ 是未知量。\n\n它不同于等式型欧拉方程，因为可行扰动只有单侧方向。接触力学、障碍问题、纳什均衡和投影算法都可写成这种形式。存在性问题中，变分不等式常和弱收敛、紧性、下半连续性一起出现，单靠把一阶变分写成零并不足够。变分不等式决定极小序列是否会收敛到真正的极小元，也说明为什么凸性条件在无穷维问题中格外重要。变分不等式的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1660,8 +2488,20 @@
     {
       "chinese_name": "梯度流",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是由能量泛函生成的一类演化系统。",
+        "它关联热方程、平均曲率流、Wasserstein 度量和最陡下降。",
+        "在常用记号中有 ${du\\over dt}=-\\nabla J(u)$，其中梯度依赖所选度量。",
+        "它描述沿度量相关下降方向趋向驻态的过程，而不是静态欧拉方程。",
+        "它的英文译名是 gradient flow。"
+      ],
+      "fragmented_clues": [
+        "能量泛函 演化系统",
+        "热方程 平均曲率流 Wasserstein度量 最陡下降",
+        "${du\\over dt}=-\\nabla J(u)$",
+        "度量相关下降方向 趋向驻态 非静态方程",
+        "gradient flow"
+      ],
       "explanation_markdown": "梯度流指沿泛函最陡下降方向演化的动力系统。在常用记号中有 ${du\\over dt}=-\\nabla J(u)$，其中$J$ 是能量泛函，$\\nabla J$ 依赖所选度量。\n\n它与欧拉方程不同，欧拉方程描述驻值，梯度流描述向驻值演化的过程。热方程、平均曲率流和 Wasserstein 梯度流都可理解为某种能量下降。理解梯度流时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。梯度流常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。梯度流的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1684,8 +2524,20 @@
     {
       "chinese_name": "山路引理",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非线性变分理论中的一个临界点存在定理。",
+        "它关联鞍点几何、极小极大能级、路径族和帕莱斯斯梅尔条件。",
+        "可写作 $c=\\inf_{\\gamma\\in\\Gamma}\\max_{t\\in[0,1]}J(\\gamma(t))$。",
+        "它通过最小化连接路径上的最高能量来寻找鞍点，而不是直接寻找极小元。",
+        "它的英文译名是 mountain pass lemma。"
+      ],
+      "fragmented_clues": [
+        "非线性变分理论 临界点存在定理",
+        "鞍点几何 极小极大能级 路径族 帕莱斯斯梅尔条件",
+        "$c=\\inf_{\\gamma\\in\\Gamma}\\max_{t\\in[0,1]}J(\\gamma(t))$",
+        "连接路径 最高能量 鞍点 非极小元",
+        "mountain pass lemma"
+      ],
       "explanation_markdown": "山路引理用来描述在具有鞍点几何的泛函中保证非平凡临界点存在的变分原理。可写作 $c=\\inf_{\\gamma\\in\\Gamma}\\max_{t\\in[0,1]}J(\\gamma(t))$，这里$\\Gamma$ 是连接两端的路径族，$c$ 是山路能级。\n\n它不同于直接法寻找极小元，而是通过极小化路径上的最高能量寻找鞍点。非线性椭圆方程中，配合帕莱斯斯梅尔条件常能得到弱解。山路引理关注驻值附近的稳定性或临界点结构，通常要配合二阶项、共轭点或紧性条件一起使用。在非线性方程中，山路引理常用来判断临界点是否真实存在，以及它附近的解族会怎样分岔或失稳。山路引理的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1708,8 +2560,20 @@
     {
       "chinese_name": "帕莱斯斯梅尔条件",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非线性变分理论中的一种紧性条件。",
+        "它关联临界序列、山路型定理、莫尔斯理论和非线性方程存在性。",
+        "可写作 $J(u_k)\\ \\text{有界},\\quad J'(u_k)\\to0\\Longrightarrow u_k\\ \\text{有收敛子列}$。",
+        "它控制近似临界点而不是极小序列，防止这些点逃逸。",
+        "它的英文译名是 Palais-Smale condition。"
+      ],
+      "fragmented_clues": [
+        "非线性变分理论 紧性条件",
+        "临界序列 山路型定理 莫尔斯理论 非线性方程",
+        "$J(u_k)\\ \\text{有界},\\quad J'(u_k)\\to0\\Longrightarrow u_k\\ \\text{有收敛子列}$",
+        "近似临界点 非极小序列 防止逃逸",
+        "Palais-Smale condition"
+      ],
       "explanation_markdown": "帕莱斯斯梅尔条件刻画控制泛函临界序列不逃逸的紧性条件。可写作 $J(u_k)\\ \\text{有界},\\quad J'(u_k)\\to0\\Longrightarrow u_k\\ \\text{有收敛子列}$，这里$u_k$ 是临界序列，$J'$ 是变分导数。\n\n它与强制性不同，强制性控制极小序列，帕莱斯斯梅尔条件控制近似临界点。山路引理、Morse 理论和非线性方程的存在性证明常依赖它。帕莱斯斯梅尔条件关注驻值附近的稳定性或临界点结构，通常要配合二阶项、共轭点或紧性条件一起使用。在非线性方程中，帕莱斯斯梅尔条件常用来判断临界点是否真实存在，以及它附近的解族会怎样分岔或失稳。帕莱斯斯梅尔条件的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1732,8 +2596,20 @@
     {
       "chinese_name": "莫尔斯指数",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是临界点理论中的一种数值不变量。",
+        "它关联二阶响应的负方向、鞍点、极小点和拓扑变化。",
+        "常写成 $m(u)=\\dim E^-(\\delta^2J[u])$，其中 $E^-$ 是负子空间。",
+        "它计数负子空间的最大维数；极小点取零，鞍点则为正。",
+        "它的英文译名是 Morse index。"
+      ],
+      "fragmented_clues": [
+        "临界点理论 数值不变量",
+        "二阶响应 负方向 鞍点 极小点 拓扑变化",
+        "$m(u)=\\dim E^-(\\delta^2J[u])$",
+        "负子空间 最大维数 极小点零 鞍点正",
+        "Morse index"
+      ],
       "explanation_markdown": "莫尔斯指数是临界点处二阶变分负方向的最大维数。常写成 $m(u)=\\dim E^-(\\delta^2J[u])$，其中$E^-$ 是二阶型的负子空间。\n\n它不同于临界点个数，描述的是临界点局部形状；极小点指数为零，鞍点指数为正。Morse 理论用指数把变分临界点同空间拓扑联系起来。莫尔斯指数关注驻值附近的稳定性或临界点结构，通常要配合二阶项、共轭点或紧性条件一起使用。在非线性方程中，莫尔斯指数常用来判断临界点是否真实存在，以及它附近的解族会怎样分岔或失稳。莫尔斯指数的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1756,8 +2632,20 @@
     {
       "chinese_name": "莫尔斯引理",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是临界点理论中的一个局部标准形定理。",
+        "它关联非退化临界点、二次型、指数和拓扑变化。",
+        "常写成 $J=J(u_0)-x_1^2-\\cdots-x_m^2+x_{m+1}^2+\\cdots+x_n^2$。",
+        "在合适局部坐标下，高阶复杂项被消去，只剩平方项的正负号。",
+        "它的英文译名是 Morse lemma。"
+      ],
+      "fragmented_clues": [
+        "临界点理论 局部标准形定理",
+        "非退化临界点 二次型 指数 拓扑变化",
+        "$J=J(u_0)-x_1^2-\\cdots-x_m^2+x_{m+1}^2+\\cdots+x_n^2$",
+        "局部坐标 高阶项消去 平方项正负号",
+        "Morse lemma"
+      ],
       "explanation_markdown": "莫尔斯引理指非退化临界点附近可把光滑函数化为标准二次型的局部定理。常写成 $J=J(u_0)-x_1^2-\\cdots-x_m^2+x_{m+1}^2+\\cdots+x_n^2$，其中$m$ 是莫尔斯指数，$u_0$ 是临界点。\n\n它不同于山路引理的存在性结论，而是描述已知临界点附近的局部坐标形状。这个标准形说明非退化临界点没有更高阶复杂项，便于计算拓扑变化。莫尔斯引理关注驻值附近的稳定性或临界点结构，通常要配合二阶项、共轭点或紧性条件一起使用。在非线性方程中，莫尔斯引理常用来判断临界点是否真实存在，以及它附近的解族会怎样分岔或失稳。莫尔斯引理的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1780,8 +2668,20 @@
     {
       "chinese_name": "拉比诺维茨定理",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非线性变分问题中的一种极小极大存在定理。",
+        "它关联链接结构、临界能级、椭圆方程和哈密顿系统。",
+        "一个核心表达是 $c=\\inf_{A\\in\\mathcal A}\\sup_{u\\in A}J(u)$。",
+        "它把山路型几何推广到更一般的链接或分岔结构，用来获得非平凡解。",
+        "它的英文译名是 Rabinowitz theorem。"
+      ],
+      "fragmented_clues": [
+        "非线性变分问题 极小极大存在定理",
+        "链接结构 临界能级 椭圆方程 哈密顿系统",
+        "$c=\\inf_{A\\in\\mathcal A}\\sup_{u\\in A}J(u)$",
+        "山路型几何推广 链接 分岔 非平凡解",
+        "Rabinowitz theorem"
+      ],
       "explanation_markdown": "拉比诺维茨定理用来描述非线性变分问题中在合适几何与紧性条件下给出临界点存在的极小极大定理。一个核心表达是 $c=\\inf_{A\\in\\mathcal A}\\sup_{u\\in A}J(u)$，这里$\\mathcal A$ 是允许的连接或链接集合族，$c$ 是临界能级。\n\n它与山路引理相近但可处理更一般的链接结构或分岔结构。非线性椭圆方程和哈密顿系统中，Rabinowitz 型结果常用于获得非平凡解。拉比诺维茨定理关注驻值附近的稳定性或临界点结构，通常要配合二阶项、共轭点或紧性条件一起使用。在非线性方程中，拉比诺维茨定理常用来判断临界点是否真实存在，以及它附近的解族会怎样分岔或失稳。",
       "source_links": [
         {
@@ -1804,8 +2704,20 @@
     {
       "chinese_name": "勒让德哈达玛条件",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是向量值变分问题中的一种稳定性条件。",
+        "它关联秩一方向、椭圆性、非线性弹性和材料稳定。",
+        "一个核心表达是 $D^2f(A)[a\\otimes b,a\\otimes b]\\ge0$。",
+        "它只要求二阶型在秩一扰动方向上非负，比完全凸性更弱。",
+        "它的英文译名是 Legendre-Hadamard condition。"
+      ],
+      "fragmented_clues": [
+        "向量值变分 稳定性条件",
+        "秩一方向 椭圆性 非线性弹性 材料稳定",
+        "$D^2f(A)[a\\otimes b,a\\otimes b]\\ge0$",
+        "二阶型 秩一扰动 非负 弱于完全凸性",
+        "Legendre-Hadamard condition"
+      ],
       "explanation_markdown": "勒让德哈达玛条件刻画向量值变分中关于二阶型在秩一方向上非负的必要条件。一个核心表达是 $D^2f(A)[a\\otimes b,a\\otimes b]\\ge0$，这里$A$ 是梯度矩阵，$a\\otimes b$ 是秩一扰动。\n\n它弱于完全凸性，专门反映梯度扰动可产生的秩一方向。在非线性弹性中，它是椭圆性和材料稳定性的基本判据之一。理解勒让德哈达玛条件时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。勒让德哈达玛条件常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。",
       "source_links": [
         {
@@ -1828,8 +2740,20 @@
     {
       "chinese_name": "哈密顿量",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是哈密顿力学和控制理论中的相空间函数。",
+        "它关联哈密顿流、能量、泊松括号和正则变量。",
+        "在常用记号中有 $\\dot q={\\partial H\\over\\partial p},\\qquad \\dot p=-{\\partial H\\over\\partial q}$。",
+        "它生成相空间轨道，在最优控制中还可能包含协态和控制而不只是机械能。",
+        "它的英文译名是 Hamiltonian。"
+      ],
+      "fragmented_clues": [
+        "哈密顿力学 控制理论 相空间函数",
+        "哈密顿流 能量 泊松括号 正则变量",
+        "$\\dot q={\\partial H\\over\\partial p},\\qquad \\dot p=-{\\partial H\\over\\partial q}$",
+        "相空间轨道 协态 控制 非纯机械能",
+        "Hamiltonian"
+      ],
       "explanation_markdown": "哈密顿量是相空间上生成哈密顿流的函数，常对应能量或最优控制哈密顿函数。在常用记号中有 $\\dot q={\\partial H\\over\\partial p},\\qquad \\dot p=-{\\partial H\\over\\partial q}$，其中$H$ 是哈密顿量，$q,p$ 是正则变量。\n\n哈密顿量与哈密顿函数常同义，但在最优控制中可能包含协态和控制而不只是机械能。它决定相空间轨道，也通过泊松括号给出任意观测量的时间演化。相空间语言下，哈密顿量把坐标与动量成对组织起来，辛形式负责记录哪些变换保留哈密顿结构。力学应用中，哈密顿量常连接作用量、守恒量和正则方程，使能量观点和几何观点落到同一张相图上。哈密顿量的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1852,8 +2776,20 @@
     {
       "chinese_name": "辛流形",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是辛几何中的一种光滑流形对象。",
+        "它关联哈密顿系统、正则变换、动量映射和偶数维结构。",
+        "在常用记号中有 $(M,\\omega),\\qquad d\\omega=0,\\quad \\omega^n\\ne0$。",
+        "它带有闭且非退化的二形式；不同于黎曼流形，它记录面积结构而不测长度。",
+        "它的英文译名是 symplectic manifold。"
+      ],
+      "fragmented_clues": [
+        "辛几何 光滑流形对象",
+        "哈密顿系统 正则变换 动量映射 偶数维",
+        "$(M,\\omega),\\qquad d\\omega=0,\\quad \\omega^n\\ne0$",
+        "闭 非退化 二形式 面积结构 非长度",
+        "symplectic manifold"
+      ],
       "explanation_markdown": "辛流形指带有闭且非退化二形式的偶维光滑流形。在常用记号中有 $(M,\\omega),\\qquad d\\omega=0,\\quad \\omega^n\\ne0$，其中$M$ 是流形，$\\omega$ 是辛形式，$2n=\\dim M$。\n\n它不同于黎曼流形，辛形式不测长度，而测相空间面积结构。哈密顿系统、正则变换和动量映射都自然生活在辛流形上。相空间语言下，辛流形把坐标与动量成对组织起来，辛形式负责记录哪些变换保留哈密顿结构。力学应用中，辛流形常连接作用量、守恒量和正则方程，使能量观点和几何观点落到同一张相图上。辛流形的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1876,8 +2812,20 @@
     {
       "chinese_name": "正则变换",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是哈密顿力学和辛几何中的一种相空间变换。",
+        "它关联辛形式保持、泊松括号、生成函数和辛积分算法。",
+        "可写作 $\\Phi^*\\omega=\\omega$，其中 $\\Phi$ 是相空间映射。",
+        "它不是任意坐标变换，而是保留哈密顿方程结构的变换。",
+        "它的英文译名是 canonical transformation。"
+      ],
+      "fragmented_clues": [
+        "哈密顿力学 辛几何 相空间变换",
+        "辛形式保持 泊松括号 生成函数 辛积分算法",
+        "$\\Phi^*\\omega=\\omega$",
+        "非任意坐标变换 保留哈密顿方程结构",
+        "canonical transformation"
+      ],
       "explanation_markdown": "正则变换用来描述保持辛形式或泊松括号不变的相空间变换。可写作 $\\Phi^*\\omega=\\omega$，这里$\\Phi$ 是相空间映射，$\\omega$ 是辛形式。\n\n它不是任意坐标变换，而是保留哈密顿方程结构的变换。生成函数、哈密顿流和辛积分算法都以正则变换为基本语言。相空间语言下，正则变换把坐标与动量成对组织起来，辛形式负责记录哪些变换保留哈密顿结构。力学应用中，正则变换常连接作用量、守恒量和正则方程，使能量观点和几何观点落到同一张相图上。正则变换的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1900,8 +2848,20 @@
     {
       "chinese_name": "动量映射",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是辛几何中与对称性配套的一种映射。",
+        "它关联群作用、守恒量、诺特定理和辛约化。",
+        "可写作 $d\\langle J,\\xi\\rangle=\\iota_{\\xi_M}\\omega$，其中 $\\xi_M$ 是群作用产生的向量场。",
+        "它把线动量和角动量几何化，固定其值再商去对称群可降低维数。",
+        "它的英文译名是 momentum map。"
+      ],
+      "fragmented_clues": [
+        "辛几何 对称性 映射",
+        "群作用 守恒量 诺特定理 辛约化",
+        "$d\\langle J,\\xi\\rangle=\\iota_{\\xi_M}\\omega$",
+        "线动量 角动量 几何化 固定值 商去对称群",
+        "momentum map"
+      ],
       "explanation_markdown": "动量映射刻画把辛流形上的对称群作用对应到守恒量的映射。可写作 $d\\langle J,\\xi\\rangle=\\iota_{\\xi_M}\\omega$，这里$J$ 是动量映射，$\\xi_M$ 是群作用产生的向量场。\n\n它推广线动量和角动量；与诺特定理相连，但给出更几何化的辛表述。辛约化中，固定动量映射的值并商去对称群可降低系统维数。相空间语言下，动量映射把坐标与动量成对组织起来，辛形式负责记录哪些变换保留哈密顿结构。力学应用中，动量映射常连接作用量、守恒量和正则方程，使能量观点和几何观点落到同一张相图上。动量映射的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1924,8 +2884,20 @@
     {
       "chinese_name": "雅可比场",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是黎曼几何中由变分产生的一类向量场。",
+        "它关联测地线族、共轭点、第二阶变化和曲率张量。",
+        "常写成 $\\nabla_t^2J+R(J,\\dot\\gamma)\\dot\\gamma=0$，其中 $R$ 是曲率张量。",
+        "它满足线性化测地方程，用来描述相邻测地线之间的无穷小偏离。",
+        "它的英文译名是 Jacobi field。"
+      ],
+      "fragmented_clues": [
+        "黎曼几何 变分 向量场",
+        "测地线族 共轭点 第二阶变化 曲率张量",
+        "$\\nabla_t^2J+R(J,\\dot\\gamma)\\dot\\gamma=0$",
+        "线性化测地方程 相邻测地线 无穷小偏离",
+        "Jacobi field"
+      ],
       "explanation_markdown": "雅可比场是描述一族测地线之间无穷小偏离的向量场。常写成 $\\nabla_t^2J+R(J,\\dot\\gamma)\\dot\\gamma=0$，其中$J$ 是雅可比场，$R$ 是曲率张量，$\\gamma$ 是测地线。\n\n它不同于普通扰动函数，雅可比场满足线性化测地方程。共轭点、第二变分公式和测地线稳定性都通过雅可比场表达。几何应用里，雅可比场通常来自长度、面积或曲率能量的驻值；局部微分方程只描述一小片，整体边界仍会影响解。雅可比场把可视的几何对象变成可计算的泛函条件，因此能同时讨论短程线、极小曲面和曲率流。雅可比场的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1948,8 +2920,20 @@
     {
       "chinese_name": "第二变分公式",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是几何变分中描述二阶变化的一类公式。",
+        "它关联测地线长度或能量、曲率项、共轭点和局部最短性。",
+        "常写成 $\\delta^2E(V,V)=\\int_a^b(|\\nabla_tV|^2-\\langle R(V,\\dot\\gamma)\\dot\\gamma,V\\rangle)\\,dt$。",
+        "它显示导数平方项和曲率项的竞争，用来判断测地线的局部极小性。",
+        "它的英文译名是 second variation formula。"
+      ],
+      "fragmented_clues": [
+        "几何变分 二阶变化 公式",
+        "测地线长度 能量 曲率项 共轭点 局部最短",
+        "$\\delta^2E(V,V)=\\int_a^b(|\\nabla_tV|^2-\\langle R(V,\\dot\\gamma)\\dot\\gamma,V\\rangle)\\,dt$",
+        "导数平方项 曲率项 竞争 局部极小性",
+        "second variation formula"
+      ],
       "explanation_markdown": "第二变分公式指给出测地线长度或能量在二阶扰动下变化的公式。常写成 $\\delta^2E(V,V)=\\int_a^b(|\\nabla_tV|^2-\\langle R(V,\\dot\\gamma)\\dot\\gamma,V\\rangle)\\,dt$，其中$V$ 是变分场，$R$ 是曲率张量。\n\n它比二阶变分概念更具体，显示曲率项怎样影响测地线极小性。在没有共轭点且边界条件合适时，该公式帮助证明测地线局部最短。理解第二变分公式时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。第二变分公式常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。第二变分公式的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1972,8 +2956,20 @@
     {
       "chinese_name": "里茨方法",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变分问题中的一种数值近似方法。",
+        "它关联有限维试探空间、能量最小化、有限元和特征值问题。",
+        "一个核心表达是 $u_n=\\sum_{j=1}^n c_j\\phi_j$，其中 $\\phi_j$ 是基函数。",
+        "它从能量泛函最小化出发，选定基函数后把无穷维问题化为代数方程。",
+        "它的英文译名是 Ritz method。"
+      ],
+      "fragmented_clues": [
+        "变分问题 数值近似方法",
+        "有限维试探空间 能量最小化 有限元 特征值问题",
+        "$u_n=\\sum_{j=1}^n c_j\\phi_j$",
+        "能量泛函最小化 基函数 无穷维到代数方程",
+        "Ritz method"
+      ],
       "explanation_markdown": "里茨方法用来描述用有限维试探函数空间近似求解变分极小问题的方法。一个核心表达是 $u_n=\\sum_{j=1}^n c_j\\phi_j$，这里$\\phi_j$ 是基函数，$c_j$ 是待定系数。\n\n它与加辽金方法相近，但里茨方法通常从能量泛函最小化出发。在有限元和特征值问题中，选好试探空间后可把无限维问题化为代数方程。数值处理里茨方法时，通常先选有限维函数空间，再把泛函或弱方程投影进去；基函数会影响收敛和矩阵条件数。里茨方法把无穷维极值问题变成可计算的代数问题，但近似空间过粗时会丢失原来的边界或正则性信息。里茨方法的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -1996,8 +2992,20 @@
     {
       "chinese_name": "加辽金方法",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是弱形式方程中的一种数值近似方法。",
+        "它关联残差正交、测试空间、有限元离散和偏微分方程。",
+        "一个核心表达是 $\\langle R(u_n),\\phi_i\\rangle=0,\\quad i=1,\\dots,n$。",
+        "它不一定需要能量泛函；自伴且来自能量的问题中才会与能量最小化方法重合。",
+        "它的英文译名是 Galerkin method。"
+      ],
+      "fragmented_clues": [
+        "弱形式方程 数值近似方法",
+        "残差正交 测试空间 有限元 偏微分方程",
+        "$\\langle R(u_n),\\phi_i\\rangle=0,\\quad i=1,\\dots,n$",
+        "非必需能量泛函 自伴问题 能量最小化重合",
+        "Galerkin method"
+      ],
       "explanation_markdown": "加辽金方法刻画要求残差对选定测试空间正交的弱形式近似方法。一个核心表达是 $\\langle R(u_n),\\phi_i\\rangle=0,\\quad i=1,\\dots,n$，这里$R$ 是残差，$\\phi_i$ 是测试函数。\n\n它与里茨方法的区别在于不一定需要能量泛函；若问题自伴且来自能量，两者可重合。有限元离散、积分方程和偏微分方程弱解近似常使用这种思想。数值处理加辽金方法时，通常先选有限维函数空间，再把泛函或弱方程投影进去；基函数会影响收敛和矩阵条件数。加辽金方法把无穷维极值问题变成可计算的代数问题，但近似空间过粗时会丢失原来的边界或正则性信息。加辽金方法的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -2020,8 +3028,20 @@
     {
       "chinese_name": "瑞利商",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是谱理论和变分法中的一种比值对象。",
+        "它关联自伴算子、二次型、特征值估计和极小极大表述。",
+        "在常用记号中有 $R(u)={\\langle Au,u\\rangle\\over\\langle u,u\\rangle}$，其中 $u$ 非零。",
+        "它只有在试探函数为特征函数时才等于对应特征值，否则给出变分近似。",
+        "它的英文译名是 Rayleigh quotient。"
+      ],
+      "fragmented_clues": [
+        "谱理论 变分法 比值对象",
+        "自伴算子 二次型 特征值估计 极小极大",
+        "$R(u)={\\langle Au,u\\rangle\\over\\langle u,u\\rangle}$",
+        "特征函数 等于特征值 否则变分近似",
+        "Rayleigh quotient"
+      ],
       "explanation_markdown": "瑞利商是用向量或函数的二次型比值近似特征值的量。在常用记号中有 $R(u)={\\langle Au,u\\rangle\\over\\langle u,u\\rangle}$，其中$A$ 是自伴算子，$u$ 是非零试探函数。\n\n它不同于特征值本身，只有在 $u$ 为特征函数时才等于对应特征值。变分特征值理论用它给出最小特征值和高阶特征值的极小极大表述。数值处理瑞利商时，通常先选有限维函数空间，再把泛函或弱方程投影进去；基函数会影响收敛和矩阵条件数。瑞利商把无穷维极值问题变成可计算的代数问题，但近似空间过粗时会丢失原来的边界或正则性信息。瑞利商的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -2044,8 +3064,20 @@
     {
       "chinese_name": "本征值变分",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是谱理论中的一种变分问题类型。",
+        "它关联瑞利商、区域扰动、系数扰动、量子模型和结构振动。",
+        "在常用记号中有 $\\lambda_1=\\min_{u\\ne0}{\\langle Au,u\\rangle\\over\\langle u,u\\rangle}$。",
+        "它把谱值看作二次型或参数变化的响应，而不是只做代数求根。",
+        "它的英文译名是 eigenvalue variation。"
+      ],
+      "fragmented_clues": [
+        "谱理论 变分问题类型",
+        "瑞利商 区域扰动 系数扰动 量子模型 结构振动",
+        "$\\lambda_1=\\min_{u\\ne0}{\\langle Au,u\\rangle\\over\\langle u,u\\rangle}$",
+        "谱值 二次型 参数变化响应 非代数求根",
+        "eigenvalue variation"
+      ],
       "explanation_markdown": "本征值变分指把算子的本征值看作由二次型或参数变化决定的变分对象。在常用记号中有 $\\lambda_1=\\min_{u\\ne0}{\\langle Au,u\\rangle\\over\\langle u,u\\rangle}$，其中$A$ 是自伴算子，$u$ 是试探函数。\n\n它与普通代数特征值计算不同，强调特征值对区域、系数或形状扰动的响应。谱几何、量子力学和结构振动中常用变分公式估计本征值变化。数值处理本征值变分时，通常先选有限维函数空间，再把泛函或弱方程投影进去；基函数会影响收敛和矩阵条件数。本征值变分把无穷维极值问题变成可计算的代数问题，但近似空间过粗时会丢失原来的边界或正则性信息。本征值变分的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -2068,8 +3100,20 @@
     {
       "chinese_name": "形状导数",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是形状微积分中的一种一阶灵敏度对象。",
+        "它关联区域或边界形变、速度场、形状优化和边界移动。",
+        "可写作 $dJ(\\Omega;V)=\\left.{d\\over d\\varepsilon}J((I+\\varepsilon V)\\Omega)\\right|_{0}$。",
+        "它的变量是区域几何而不是函数值，可给出边界移动的下降方向和最优性条件。",
+        "它的英文译名是 shape derivative。"
+      ],
+      "fragmented_clues": [
+        "形状微积分 一阶灵敏度对象",
+        "区域形变 边界形变 速度场 形状优化",
+        "$dJ(\\Omega;V)=\\left.{d\\over d\\varepsilon}J((I+\\varepsilon V)\\Omega)\\right|_{0}$",
+        "区域几何 非函数值 边界移动 下降方向",
+        "shape derivative"
+      ],
       "explanation_markdown": "形状导数用来描述区域或边界发生微小形变时目标泛函的一阶变化率。可写作 $dJ(\\Omega;V)=\\left.{d\\over d\\varepsilon}J((I+\\varepsilon V)\\Omega)\\right|_{0}$，这里$V$ 是速度场，$\\Omega$ 是区域。\n\n它与普通变分导数不同，变量不是函数值而是区域形状。形状优化中，形状导数给出边界移动的下降方向和最优性条件。边界可变时，形状导数往往同时产生体方程和边界条件，后者决定自由边界、接触边界或区域形状怎样移动。形状导数在形状优化中尤其重要，因为改变的不是函数值本身，而是定义域、界面或材料分布。形状导数的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -2092,8 +3136,20 @@
     {
       "chinese_name": "形状优化",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是以几何区域为变量的一类优化问题。",
+        "它关联可行区域族、结构设计、流体阻力和特征值控制。",
+        "可写作 $\\min_{\\Omega\\in\\mathcal A}J(\\Omega)$，其中 $\\mathcal A$ 是可行形状族。",
+        "它优化的是区域或边界本身；拓扑优化还允许孔洞和连通性改变。",
+        "它的英文译名是 shape optimization。"
+      ],
+      "fragmented_clues": [
+        "几何区域 变量 优化问题",
+        "可行区域族 结构设计 流体阻力 特征值控制",
+        "$\\min_{\\Omega\\in\\mathcal A}J(\\Omega)$",
+        "区域 边界 孔洞 连通性改变",
+        "shape optimization"
+      ],
       "explanation_markdown": "形状优化刻画在允许区域或边界形状中优化目标泛函的问题。可写作 $\\min_{\\Omega\\in\\mathcal A}J(\\Omega)$，这里$\\Omega$ 是待选区域，$\\mathcal A$ 是可行形状族。\n\n它不同于参数优化，变量是几何区域；拓扑优化还允许孔洞或连通性变化。结构设计、流体阻力和特征值控制常把性能指标写成形状泛函。边界可变时，形状优化往往同时产生体方程和边界条件，后者决定自由边界、接触边界或区域形状怎样移动。形状优化在形状优化中尤其重要，因为改变的不是函数值本身，而是定义域、界面或材料分布。形状优化的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -2116,8 +3172,20 @@
     {
       "chinese_name": "拓扑导数",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是形状和拓扑优化中的一种灵敏度对象。",
+        "它关联微小孔洞、夹杂物、材料增删和连通性变化。",
+        "常写成 $J(\\Omega_\\varepsilon)=J(\\Omega)+\\rho(\\varepsilon)D_TJ(x)+o(\\rho(\\varepsilon))$。",
+        "它改变区域连通结构，而不是只移动已有边界。",
+        "它的英文译名是 topological derivative。"
+      ],
+      "fragmented_clues": [
+        "形状优化 拓扑优化 灵敏度对象",
+        "微小孔洞 夹杂物 材料增删 连通性变化",
+        "$J(\\Omega_\\varepsilon)=J(\\Omega)+\\rho(\\varepsilon)D_TJ(x)+o(\\rho(\\varepsilon))$",
+        "连通结构改变 非已有边界移动",
+        "topological derivative"
+      ],
       "explanation_markdown": "拓扑导数是在区域中插入微小孔洞或夹杂物时目标泛函的首阶灵敏度。常写成 $J(\\Omega_\\varepsilon)=J(\\Omega)+\\rho(\\varepsilon)D_TJ(x)+o(\\rho(\\varepsilon))$，其中$D_TJ(x)$ 是拓扑导数，$\\rho(\\varepsilon)$ 是孔洞尺度因子。\n\n它与形状导数不同，形状导数移动已有边界，拓扑导数改变区域连通性。拓扑优化用它判断哪里适合开孔、加材料或改变介质。边界可变时，拓扑导数往往同时产生体方程和边界条件，后者决定自由边界、接触边界或区域形状怎样移动。拓扑导数在形状优化中尤其重要，因为改变的不是函数值本身，而是定义域、界面或材料分布。拓扑导数的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -2140,8 +3208,20 @@
     {
       "chinese_name": "欧拉弹性线",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是几何变分中的一种平面曲线对象。",
+        "它关联弯曲能量、给定端点、长度约束、弹性杆和曲线平滑。",
+        "常写成 $E[\\gamma]=\\int_\\gamma \\kappa^2\\,ds$，其中 $\\kappa$ 是曲率。",
+        "它不是一般曲线拟合，而是由曲率平方能量和弯曲刚度主导形状。",
+        "它的英文译名是 Euler elastica。"
+      ],
+      "fragmented_clues": [
+        "几何变分 平面曲线对象",
+        "弯曲能量 给定端点 长度约束 弹性杆 曲线平滑",
+        "$E[\\gamma]=\\int_\\gamma \\kappa^2\\,ds$",
+        "非曲线拟合 曲率平方能量 弯曲刚度",
+        "Euler elastica"
+      ],
       "explanation_markdown": "欧拉弹性线指使弯曲能量在给定端点或长度约束下取极值的平面曲线。常写成 $E[\\gamma]=\\int_\\gamma \\kappa^2\\,ds$，其中$\\kappa$ 是曲率，$ds$ 是弧长微元。\n\n它不是一般曲线拟合，而是弯曲刚度主导的变分模型。弹性杆、曲线平滑和几何设计中，弹性线方程来自该能量的一阶变分。理解欧拉弹性线时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。欧拉弹性线常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。欧拉弹性线的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -2164,8 +3244,20 @@
     {
       "chinese_name": "弹性能量",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非线性弹性和几何问题中的一种能量泛函。",
+        "它关联形变梯度、材料本构、准凸性和勒让德哈达玛条件。",
+        "一个核心表达是 $E[u]=\\int_\\Omega W(\\nabla u)\\,dx$，其中 $W$ 是能量密度。",
+        "它强调材料本构密度，可能具有非线性和多井结构，不只是梯度平方。",
+        "它的英文译名是 elastic energy。"
+      ],
+      "fragmented_clues": [
+        "非线性弹性 几何问题 能量泛函",
+        "形变梯度 材料本构 准凸性 勒让德哈达玛条件",
+        "$E[u]=\\int_\\Omega W(\\nabla u)\\,dx$",
+        "材料本构密度 非线性 多井结构 非梯度平方",
+        "elastic energy"
+      ],
       "explanation_markdown": "弹性能量用来描述度量物体形变或曲线弯曲所储存能量的泛函。一个核心表达是 $E[u]=\\int_\\Omega W(\\nabla u)\\,dx$，这里$u$ 是形变，$W$ 是能量密度。\n\n它与狄利克雷能量相比更强调材料本构，可具有非线性和多井结构。非线性弹性中，凸性、准凸性和勒让德哈达玛条件都围绕 $W$ 的稳定性展开。理解弹性能量时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。弹性能量常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。弹性能量的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -2188,8 +3280,20 @@
     {
       "chinese_name": "威尔莫尔能量",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是微分几何中的一种曲率能量泛函。",
+        "它关联曲面、平均曲率平方、球面、环面和生物膜模型。",
+        "一个核心表达是 $W(\\Sigma)=\\int_\\Sigma H^2\\,dA$，其中 $H$ 是平均曲率。",
+        "它惩罚弯曲而不是只计算面积大小，通过曲率平方选择最优形态。",
+        "它的英文译名是 Willmore energy。"
+      ],
+      "fragmented_clues": [
+        "微分几何 曲率能量泛函",
+        "曲面 平均曲率平方 球面 环面 生物膜",
+        "$W(\\Sigma)=\\int_\\Sigma H^2\\,dA$",
+        "惩罚弯曲 非面积大小 曲率平方 最优形态",
+        "Willmore energy"
+      ],
       "explanation_markdown": "威尔莫尔能量刻画曲面平均曲率平方的积分泛函。一个核心表达是 $W(\\Sigma)=\\int_\\Sigma H^2\\,dA$，这里$H$ 是平均曲率，$dA$ 是面积元。\n\n它不同于面积泛函，面积关注大小，威尔莫尔能量惩罚弯曲。球面、环面和生物膜模型中，该能量用于描述弯曲最优形态。几何应用里，威尔莫尔能量通常来自长度、面积或曲率能量的驻值；局部微分方程只描述一小片，整体边界仍会影响解。威尔莫尔能量把可视的几何对象变成可计算的泛函条件，因此能同时讨论短程线、极小曲面和曲率流。威尔莫尔能量的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -2212,8 +3316,20 @@
     {
       "chinese_name": "均值曲率流",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是几何分析中的一种曲面演化流。",
+        "它关联面积泛函的梯度下降、曲面平滑收缩和奇点形成。",
+        "在常用记号中有 ${\\partial X\\over\\partial t}=-H\\nu$，其中 $\\nu$ 是法向量。",
+        "它描述沿平均曲率方向的动态过程，而不是静态的曲率方程。",
+        "它的英文译名是 mean curvature flow。"
+      ],
+      "fragmented_clues": [
+        "几何分析 曲面演化流",
+        "面积泛函 梯度下降 曲面平滑收缩 奇点",
+        "${\\partial X\\over\\partial t}=-H\\nu$",
+        "平均曲率方向 动态过程 非静态曲率方程",
+        "mean curvature flow"
+      ],
       "explanation_markdown": "均值曲率流是曲面沿平均曲率方向演化的几何流。在常用记号中有 ${\\partial X\\over\\partial t}=-H\\nu$，其中$X$ 是嵌入，$H$ 是平均曲率，$\\nu$ 是法向量。\n\n它与平均曲率方程不同，后者描述静态曲面，均值曲率流描述面积下降过程。该流是面积泛函的梯度流，会使曲面平滑收缩并可能形成奇点。几何应用里，均值曲率流通常来自长度、面积或曲率能量的驻值；局部微分方程只描述一小片，整体边界仍会影响解。均值曲率流把可视的几何对象变成可计算的泛函条件，因此能同时讨论短程线、极小曲面和曲率流。均值曲率流的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -2236,8 +3352,20 @@
     {
       "chinese_name": "全变差",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 BV 空间和图像分析中的一种测度型泛函。",
+        "它关联分布导数总量、边缘保留、图像去噪和稀疏梯度惩罚。",
+        "在常用记号中有 $TV(u)=\\sup_{\\|\\varphi\\|_\\infty\\le1}\\int_\\Omega u\\,\\operatorname{div}\\varphi\\,dx$。",
+        "它允许跳跃边界并保留边缘，不同于处处惩罚平方梯度的能量。",
+        "它的英文译名是 total variation。"
+      ],
+      "fragmented_clues": [
+        "BV空间 图像分析 测度型泛函",
+        "分布导数总量 边缘保留 图像去噪 稀疏梯度",
+        "$TV(u)=\\sup_{\\|\\varphi\\|_\\infty\\le1}\\int_\\Omega u\\,\\operatorname{div}\\varphi\\,dx$",
+        "跳跃边界 保留边缘 非平方梯度",
+        "total variation"
+      ],
       "explanation_markdown": "全变差指函数或图像分布导数总量的测度。在常用记号中有 $TV(u)=\\sup_{\\|\\varphi\\|_\\infty\\le1}\\int_\\Omega u\\,\\operatorname{div}\\varphi\\,dx$，其中$\\varphi$ 是测试向量场，$TV(u)$ 是全变差。\n\n它不同于 $L^2$ 梯度能量，允许跳跃边界并保留边缘。在 BV 空间、图像去噪和最小曲面型问题中，全变差提供稀疏梯度惩罚。理解全变差时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。全变差常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。全变差的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -2260,8 +3388,20 @@
     {
       "chinese_name": "全变差正则化",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是反问题和图像处理中的一种正则化方法。",
+        "它关联数据拟合、TV 项、去噪、压缩感知和不适定问题稳定化。",
+        "可写作 $\\min_u {1\\over2}\\|Au-f\\|^2+\\lambda TV(u)$，其中 $\\lambda$ 是参数。",
+        "它鼓励分片平滑并保留边缘，而不是像二次惩罚那样追求处处光滑。",
+        "它的英文译名是 total variation regularization。"
+      ],
+      "fragmented_clues": [
+        "反问题 图像处理 正则化方法",
+        "数据拟合 TV项 去噪 压缩感知 不适定稳定化",
+        "$\\min_u {1\\over2}\\|Au-f\\|^2+\\lambda TV(u)$",
+        "分片平滑 保留边缘 非二次处处光滑",
+        "total variation regularization"
+      ],
       "explanation_markdown": "全变差正则化用来描述在数据拟合中加入全变差项以抑制振荡并保留边缘的方法。可写作 $\\min_u {1\\over2}\\|Au-f\\|^2+\\lambda TV(u)$，这里$A$ 是观测算子，$f$ 是数据，$\\lambda$ 是正则化参数。\n\n它与光滑二次正则化不同，TV 项鼓励分片平滑而不是处处平滑。图像恢复、反问题和压缩感知中常用它稳定不适定解。相空间语言下，全变差正则化把坐标与动量成对组织起来，辛形式负责记录哪些变换保留哈密顿结构。力学应用中，全变差正则化常连接作用量、守恒量和正则方程，使能量观点和几何观点落到同一张相图上。全变差正则化的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -2284,8 +3424,20 @@
     {
       "chinese_name": "拉格朗日密度",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是场论作用量中的一种局部密度对象。",
+        "它关联时空积分、场变量、欧拉算子、场方程和诺特流。",
+        "可写作 $S[\\phi]=\\int_\\Omega \\mathcal L(\\phi,\\partial_\\mu\\phi,x)\\,d^nx$。",
+        "它类似力学中的局部被积表达式，但对连续场在时空区域上积分。",
+        "它的英文译名是 Lagrangian density。"
+      ],
+      "fragmented_clues": [
+        "场论作用量 局部密度对象",
+        "时空积分 场变量 欧拉算子 场方程 诺特流",
+        "$S[\\phi]=\\int_\\Omega \\mathcal L(\\phi,\\partial_\\mu\\phi,x)\\,d^nx$",
+        "局部被积表达式 连续场 时空区域积分",
+        "Lagrangian density"
+      ],
       "explanation_markdown": "拉格朗日密度刻画场论作用量中对时空点逐点积分的局部表达式。可写作 $S[\\phi]=\\int_\\Omega \\mathcal L(\\phi,\\partial_\\mu\\phi,x)\\,d^nx$，这里$\\phi$ 是场，$\\mathcal L$ 是密度。\n\n它与拉格朗日函数相近，但用于连续场并对时空区域积分。欧拉拉格朗日算子作用在 $\\mathcal L$ 上，给出场方程和诺特流。理解拉格朗日密度时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。拉格朗日密度常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。拉格朗日密度的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -2308,8 +3460,20 @@
     {
       "chinese_name": "场论变分",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是连续场构型上的一种扰动方法。",
+        "它关联经典场方程、规范对称、能动张量和边界贡献。",
+        "常写成 $\\delta S=\\int_\\Omega E(\\mathcal L)\\delta\\phi\\,d^nx+\\int_{\\partial\\Omega}\\theta$。",
+        "变量在每个时空点取值，边界贡献可形成守恒流或边界条件。",
+        "它的英文译名是 field theory variation。"
+      ],
+      "fragmented_clues": [
+        "连续场构型 扰动方法",
+        "经典场方程 规范对称 能动张量 边界贡献",
+        "$\\delta S=\\int_\\Omega E(\\mathcal L)\\delta\\phi\\,d^nx+\\int_{\\partial\\Omega}\\theta$",
+        "每个时空点 边界贡献 守恒流 边界条件",
+        "field theory variation"
+      ],
       "explanation_markdown": "场论变分是对连续场构型作扰动并研究作用量变化的变分方法。常写成 $\\delta S=\\int_\\Omega E(\\mathcal L)\\delta\\phi\\,d^nx+\\int_{\\partial\\Omega}\\theta$，其中$E(\\mathcal L)$ 是欧拉算子，$\\theta$ 是边界项。\n\n它与有限自由度变分不同，变量在每个时空点取值，边界项可形成守恒流或边界条件。经典场方程、规范对称和能动张量都可由场论变分得到。理解场论变分时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。场论变分常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。场论变分的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -2332,8 +3496,20 @@
     {
       "chinese_name": "欧拉拉格朗日算子",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变分法和场论中的一种微分算子。",
+        "它关联拉格朗日密度、分部积分、场方程和欧拉型左端。",
+        "常写成 $E_\\phi(\\mathcal L)={\\partial\\mathcal L\\over\\partial\\phi}-\\partial_\\mu{\\partial\\mathcal L\\over\\partial(\\partial_\\mu\\phi)}$。",
+        "它把分部积分后的导数项合并进来，令其为零便得到场方程。",
+        "它的英文译名是 Euler-Lagrange operator。"
+      ],
+      "fragmented_clues": [
+        "变分法 场论 微分算子",
+        "拉格朗日密度 分部积分 场方程 欧拉型左端",
+        "$E_\\phi(\\mathcal L)={\\partial\\mathcal L\\over\\partial\\phi}-\\partial_\\mu{\\partial\\mathcal L\\over\\partial(\\partial_\\mu\\phi)}$",
+        "导数项合并 为零 场方程",
+        "Euler-Lagrange operator"
+      ],
       "explanation_markdown": "欧拉拉格朗日算子指把拉格朗日密度送到对应欧拉方程左端的微分算子。常写成 $E_\\phi(\\mathcal L)={\\partial\\mathcal L\\over\\partial\\phi}-\\partial_\\mu{\\partial\\mathcal L\\over\\partial(\\partial_\\mu\\phi)}$，其中$\\phi$ 是场，$\\partial_\\mu$ 是坐标导数。\n\n它不是普通偏导数，而是已把分部积分后的导数项合并进来。令 $E_\\phi(\\mathcal L)=0$ 就得到场的欧拉拉格朗日方程。理解欧拉拉格朗日算子时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。欧拉拉格朗日算子常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。欧拉拉格朗日算子的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -2356,8 +3532,20 @@
     {
       "chinese_name": "诺特流",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是场论中与连续对称性对应的局部守恒对象。",
+        "它关联拉格朗日密度、诺特定理、规范场和电荷守恒。",
+        "一个核心表达是 $j^\\mu={\\partial\\mathcal L\\over\\partial(\\partial_\\mu\\phi)}\\delta\\phi-B^\\mu,\\qquad \\partial_\\mu j^\\mu=0$。",
+        "它是时空中的流，守恒量通常由时间分量在空间上积分得到。",
+        "它的英文译名是 Noether current。"
+      ],
+      "fragmented_clues": [
+        "场论 连续对称性 局部守恒对象",
+        "拉格朗日密度 诺特定理 规范场 电荷守恒",
+        "$j^\\mu={\\partial\\mathcal L\\over\\partial(\\partial_\\mu\\phi)}\\delta\\phi-B^\\mu,\\qquad \\partial_\\mu j^\\mu=0$",
+        "时空流 时间分量 空间积分 守恒量",
+        "Noether current"
+      ],
       "explanation_markdown": "诺特流用来描述连续对称性在场论中对应的守恒流。一个核心表达是 $j^\\mu={\\partial\\mathcal L\\over\\partial(\\partial_\\mu\\phi)}\\delta\\phi-B^\\mu,\\qquad \\partial_\\mu j^\\mu=0$，这里$j^\\mu$ 是流，$B^\\mu$ 是边界修正项。\n\n诺特流是局部守恒对象，守恒量通常是它的时间分量在空间上的积分。规范场、能量动量守恒和电荷守恒都可用这种局部流表达。理解诺特流时要同时看泛函和允许扰动的空间；端点能否移动、函数是否足够光滑，都会改变最后得到的条件。诺特流常把曲线、曲面或场变量的极值问题统一到泛函语言中，形式求导只是一部分，边界信息同样参与定义。诺特流的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {
@@ -2380,8 +3568,20 @@
     {
       "chinese_name": "边界项",
       "source_file": "words/数学/普通模式/calculus_of_variations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变分计算中由边界产生的一类贡献。",
+        "它关联分部积分、自然边界条件、诺特定理和辛结构。",
+        "一个核心表达是 $\\delta S=\\int_\\Omega E(\\mathcal L)\\delta\\phi+\\int_{\\partial\\Omega}\\theta(\\phi,\\delta\\phi)$。",
+        "它与体方程分开；固定边界会使它消失，自由边界会把它转化为边界条件。",
+        "它的英文译名是 boundary term。"
+      ],
+      "fragmented_clues": [
+        "变分计算 边界贡献",
+        "分部积分 自然边界条件 诺特定理 辛结构",
+        "$\\delta S=\\int_\\Omega E(\\mathcal L)\\delta\\phi+\\int_{\\partial\\Omega}\\theta(\\phi,\\delta\\phi)$",
+        "体方程分开 固定边界消失 自由边界条件",
+        "boundary term"
+      ],
       "explanation_markdown": "边界项刻画变分分部积分后留在区域边界上的贡献。一个核心表达是 $\\delta S=\\int_\\Omega E(\\mathcal L)\\delta\\phi+\\int_{\\partial\\Omega}\\theta(\\phi,\\delta\\phi)$，这里$\\theta$ 是边界项，$E(\\mathcal L)$ 是体方程部分。\n\n边界项不同于体方程；固定边界扰动会使它消失，自由边界则会给出自然边界条件。在诺特定理、辛结构和边值问题中，边界项常携带重要的几何信息。边界可变时，边界项往往同时产生体方程和边界条件，后者决定自由边界、接触边界或区域形状怎样移动。边界项在形状优化中尤其重要，因为改变的不是函数值本身，而是定义域、界面或材料分布。边界项的适用范围要由泛函和扰动类共同限定，边界、约束或正则性一变，相关结论也会随之改变。",
       "source_links": [
         {

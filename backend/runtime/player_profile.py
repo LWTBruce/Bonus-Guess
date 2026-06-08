@@ -1,6 +1,8 @@
 import json
 
 from .game_config import PLAYER_SETTINGS_FILE, PROFILE_DIR
+from .music_catalog import DEFAULT_HOME_MUSIC_ID, normalize_home_music_id
+from .sfx_catalog import DEFAULT_SFX_CHOICES, normalize_sfx_choices
 
 
 DEFAULT_PLAYER_SETTINGS = {
@@ -12,6 +14,10 @@ DEFAULT_PLAYER_SETTINGS = {
     "backdrop_density": 1.0,
     "backdrop_opacity": 1.0,
     "font_scale": 1.0,
+    "music_volume": 0.55,
+    "sfx_volume": 0.75,
+    "home_music_id": DEFAULT_HOME_MUSIC_ID,
+    "sfx_choices": dict(DEFAULT_SFX_CHOICES),
     "transitions_enabled": True,
     "window_width": 1274,
     "window_height": 806,
@@ -59,6 +65,10 @@ def normalize_player_settings(settings):
     data["backdrop_density"] = clamp_float(data.get("backdrop_density"), 0.4, 10.0, 1.0)
     data["backdrop_opacity"] = clamp_float(data.get("backdrop_opacity"), 0.0, 1.0, 1.0)
     data["font_scale"] = clamp_float(data.get("font_scale"), 0.8, 2.0, 1.0)
+    data["music_volume"] = clamp_float(data.get("music_volume"), 0.0, 1.0, DEFAULT_PLAYER_SETTINGS["music_volume"])
+    data["sfx_volume"] = clamp_float(data.get("sfx_volume"), 0.0, 1.0, DEFAULT_PLAYER_SETTINGS["sfx_volume"])
+    data["home_music_id"] = normalize_home_music_id(data.get("home_music_id"))
+    data["sfx_choices"] = normalize_sfx_choices(data.get("sfx_choices"))
     data["window_width"] = clamp_int(data.get("window_width"), 936, 2560, DEFAULT_PLAYER_SETTINGS["window_width"])
     data["window_height"] = clamp_int(data.get("window_height"), 598, 1600, DEFAULT_PLAYER_SETTINGS["window_height"])
     tutorial_completed = data.get("tutorial_completed", DEFAULT_PLAYER_SETTINGS["tutorial_completed"])

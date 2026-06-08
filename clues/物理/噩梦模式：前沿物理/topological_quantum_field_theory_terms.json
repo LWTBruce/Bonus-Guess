@@ -4,9 +4,21 @@
     {
       "chinese_name": "拓扑量子场论",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "拓扑量子场论是对度量不敏感、只依赖流形拓扑类型的量子场论。Atiyah 形式化中它是函子 $Z: \\mathrm{Cob}_d\\to\\mathrm{Vect}$，其中配边范畴的对象是闭 $(d-1)$ 维流形，态空间是向量空间，$d$ 维配边给线性映射。粘合流形对应线性映射复合。\n\n它把路径积分中的拓扑不变量、任意子融合和边界态组织成同一范畴语言。这种函子化定义使度量涨落被彻底剥离，只留下切割、粘合和缺陷插入的组合规则；物理上，它适合描述有能隙相的长波极限和拓扑保护的全局响应。继续分析「拓扑量子场论」时，应说明它依赖哪些附加结构，如取向、framing、自旋结构或标号范畴；这些选择会改变相位、态空间维数和可允许的缺陷。",
+      "complete_clues": [
+        "这是量子场论方向的一类理论框架。",
+        "它常用于描述有能隙相的长波极限、全局响应、任意子融合和边界态。",
+        "在 Atiyah 形式化中，可写成函子 $Z:\\mathrm{Cob}_d\\to\\mathrm{Vect}$。",
+        "它对背景度量不敏感，把切割、粘合和缺陷插入组织成范畴规则。",
+        "它的英文译名是 topological quantum field theory，常缩写为 TQFT。"
+      ],
+      "fragmented_clues": [
+        "量子场论 理论框架",
+        "有能隙相 长波极限 全局响应 任意子 边界态",
+        "$Z:\\mathrm{Cob}_d\\to\\mathrm{Vect}$",
+        "背景度量不敏感 切割 粘合 缺陷插入 范畴规则",
+        "topological quantum field theory TQFT"
+      ],
+      "explanation_markdown": "拓扑量子场论通常是对度量不敏感、只依赖流形拓扑类型的量子场论。Atiyah 形式化中它是函子 $Z: \\mathrm{Cob}_d\\to\\mathrm{Vect}$，其中配边范畴的对象是闭 $(d-1)$ 维流形，态空间是向量空间，$d$ 维配边给线性映射。粘合流形对应线性映射复合。\n\n它把路径积分中的拓扑不变量、任意子融合和边界态组织成同一范畴语言。这种函子化定义使度量涨落被彻底剥离，只留下切割、粘合和缺陷插入的组合规则；物理上，它适合描述有能隙相的长波极限和拓扑保护的全局响应。拓扑量子场论把路径积分结果压缩为配分函数、态空间或量子不变量，局域几何只在正规化中出现。",
       "source_links": [
         {
           "label": "百度百科",
@@ -28,9 +40,21 @@
     {
       "chinese_name": "阿蒂亚公理",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "阿蒂亚公理把 TQFT 定义为保持单oidal结构的函子。核心写法是 $Z(M_2\\circ M_1)=Z(M_2)Z(M_1)$，其中 $M_1,M_2$ 是可粘合配边，$Z(M_i)$ 是相应线性映射；并有 $Z(\\Sigma_1\\sqcup\\Sigma_2)=Z(\\Sigma_1)\\otimes Z(\\Sigma_2)$。这些条件把切割粘合、空流形和方向反转变成线性代数规则，使拓扑不变量具有可计算的公理基础。\n\n公理中的张量积对应彼此独立的空间分量，复合对应时间演化的粘合；因此 TQFT 的时间演化通常没有局域哈密顿量细节，只保留拓扑态射的信息。使用「阿蒂亚公理」时，核心是它在切割粘合下怎样变换；只有振幅、态空间和缺陷融合同时满足一致性，才真正构成拓扑场论数据。这些公理还规定空集和柱体的取值，确保单位态射、对偶态空间和配对都与拓扑直觉一致。",
+      "complete_clues": [
+        "这是拓扑场论公理化中的一组结构条件。",
+        "它把配边的切割、粘合、不交并和方向反转翻译成线性代数规则。",
+        "可粘合配边满足 $Z(M_2\\circ M_1)=Z(M_2)Z(M_1)$。",
+        "它要求 TQFT 是保持单oidal结构的函子，空流形和柱体也有固定取值。",
+        "它的英文译名是 Atiyah axioms。"
+      ],
+      "fragmented_clues": [
+        "拓扑场论 公理化 结构条件",
+        "配边 切割 粘合 不交并 方向反转 线性代数",
+        "$Z(M_2\\circ M_1)=Z(M_2)Z(M_1)$",
+        "单oidal函子 空流形 柱体 固定取值",
+        "Atiyah axioms"
+      ],
+      "explanation_markdown": "阿蒂亚公理可以把 TQFT 定义为保持单oidal结构的函子。核心写法是 $Z(M_2\\circ M_1)=Z(M_2)Z(M_1)$，其中 $M_1,M_2$ 是可粘合配边，$Z(M_i)$ 是相应线性映射；并有 $Z(\\Sigma_1\\sqcup\\Sigma_2)=Z(\\Sigma_1)\\otimes Z(\\Sigma_2)$。这些条件把切割粘合、空流形和方向反转变成线性代数规则，使拓扑不变量具有可计算的公理基础。\n\n公理中的张量积对应彼此独立的空间分量，复合对应时间演化的粘合；因此 TQFT 的时间演化通常没有局域哈密顿量细节，只保留拓扑态射的信息。这些公理还规定空集和柱体的取值，确保单位态射、对偶态空间和配对都与拓扑直觉一致。在阿蒂亚公理里，空流形、柱体和方向反转也有规定取值，这保证态空间对偶关系一致。",
       "source_links": [
         {
           "label": "百度百科",
@@ -52,9 +76,21 @@
     {
       "chinese_name": "西格尔公理",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "西格尔公理主要用于二维共形场论，但其配边函子思想深刻影响 TQFT。它把黎曼曲面 $\\Sigma$ 赋予算符 $Z(\\Sigma):\\mathcal H_{\\rm in}\\to\\mathcal H_{\\rm out}$，其中边界圆对应 Hilbert 空间，曲面粘合对应算符复合。与阿蒂亚公理相比，西格尔版本保留复结构和共形模，而拓扑极限只留下粘合范畴结构。\n\n它为开闭 TQFT 和模函子提供原型。西格尔框架强调世界面复结构和边界参数，因此它连接共形场论而非纯拓扑理论；把模空间依赖压缩或扭曲后，才得到更接近 TQFT 的粘合规则。围绕「西格尔公理」的物理解释还要区分体相、边界态和插入算符；许多量子不变量正是三者兼容后留下的普适信息，而不是单个公式的数值。",
+      "complete_clues": [
+        "这是二维场论公理化中的一组粘合规则。",
+        "它与共形场论的世界面、边界圆、Hilbert 空间和模函子有关。",
+        "黎曼曲面可赋予算符 $Z(\\Sigma):\\mathcal H_{\\rm in}\\to\\mathcal H_{\\rm out}$。",
+        "它保留复结构和共形模，而在拓扑极限中只剩曲面粘合对应算符复合。",
+        "它的英文译名是 Segal axioms。"
+      ],
+      "fragmented_clues": [
+        "二维场论 公理化 粘合规则",
+        "共形场论 世界面 边界圆 Hilbert 空间 模函子",
+        "$Z(\\Sigma):\\mathcal H_{\\rm in}\\to\\mathcal H_{\\rm out}$",
+        "复结构 共形模 曲面粘合 算符复合",
+        "Segal axioms"
+      ],
+      "explanation_markdown": "西格尔公理通常主要用于二维共形场论，但其配边函子思想深刻影响 TQFT。它把黎曼曲面 $\\Sigma$ 赋予算符 $Z(\\Sigma):\\mathcal H_{\\rm in}\\to\\mathcal H_{\\rm out}$，其中边界圆对应 Hilbert 空间，曲面粘合对应算符复合。与阿蒂亚公理相比，西格尔版本保留复结构和共形模，而拓扑极限只留下粘合范畴结构。\n\n它为开闭 TQFT 和模函子提供原型。西格尔框架强调世界面复结构和边界参数，因此它连接共形场论而非纯拓扑理论；把模空间依赖压缩或扭曲后，才得到更接近 TQFT 的粘合规则。西格尔公理把切割后的边界态和粘合后的线性映射配对，复合律比局域哈密顿量更基本。在西格尔公理里，空流形、柱体和方向反转也有规定取值，这保证态空间对偶关系一致。",
       "source_links": [
         {
           "label": "百度百科",
@@ -76,9 +112,21 @@
     {
       "chinese_name": "陈西蒙斯理论",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "陈西蒙斯理论是三维规范 TQFT，其作用量不依赖背景度量。对联络 $A$，$S_{CS}=\\frac{k}{4\\pi}\\int_M\\operatorname{Tr}(A\\wedge dA+\\frac{2}{3}A\\wedge A\\wedge A)$，其中 $k$ 是量子化级数。路径积分给三流形不变量，Wilson 线期望给纽结不变量。边界上规范变换的剩余自由度形成 WZW 模型，使体拓扑序与手征边缘态相连。\n\n陈西蒙斯理论的量子化要求级数为整数，并伴随 framing anomaly；Wilson 线标号由表示或模范畴对象给出，因而纽结多项式和三维拓扑序在同一理论中出现。在范畴化语言中，「陈西蒙斯理论」往往对应对象、态射或高阶态射；这种层级记录了缺陷如何融合、如何终止以及如何在配边中传递。其无度量性在量子层面通过规范固定和反常精细实现，最终留下的是级数、群和三流形拓扑。",
+      "complete_clues": [
+        "这是三维规范场论中的一种拓扑理论。",
+        "它关联三流形不变量、Wilson 线期望、纽结多项式和手征边界模型。",
+        "对联络 $A$，作用量可写 $S_{CS}=\\frac{k}{4\\pi}\\int_M\\operatorname{Tr}(A\\wedge dA+\\frac{2}{3}A\\wedge A\\wedge A)$。",
+        "它的级数必须量子化，闭合线缺陷的期望只依赖纽结拓扑和 framing。",
+        "它的英文译名是 Chern-Simons theory。"
+      ],
+      "fragmented_clues": [
+        "三维 规范场论 拓扑理论",
+        "三流形不变量 Wilson 线 纽结多项式 手征边界",
+        "$S_{CS}=\\frac{k}{4\\pi}\\int_M\\operatorname{Tr}(A\\wedge dA+\\frac{2}{3}A\\wedge A\\wedge A)$",
+        "量子化级数 闭合线缺陷 纽结拓扑 framing",
+        "Chern-Simons theory"
+      ],
+      "explanation_markdown": "陈西蒙斯理论指三维规范 TQFT，其作用量不依赖背景度量。对联络 $A$，$S_{CS}=\\frac{k}{4\\pi}\\int_M\\operatorname{Tr}(A\\wedge dA+\\frac{2}{3}A\\wedge A\\wedge A)$，其中 $k$ 是量子化级数。路径积分给三流形不变量，Wilson 线期望给纽结不变量。边界上规范变换的剩余自由度形成 WZW 模型，使体拓扑序与手征边缘态相连。\n\n陈西蒙斯理论的量子化要求级数为整数，并伴随 framing anomaly；Wilson 线标号由表示或模范畴对象给出，因而纽结多项式和三维拓扑序在同一理论中出现。其无度量性在量子层面通过规范固定和反常精细实现，最终留下的是级数、群和三流形拓扑。含陈西蒙斯理论的三流形计算会随手术或边界环面坐标改写，但最终不变量不依赖具体切割。",
       "source_links": [
         {
           "label": "百度百科",
@@ -100,9 +148,21 @@
     {
       "chinese_name": "BF理论",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "BF理论以 $B$ 场约束联络平坦，是各维度常见的拓扑规范理论。作用量为 $S_{BF}=\\int_M\\operatorname{Tr}(B\\wedge F_A)$，其中 $F_A=dA+A\\wedge A$ 是联络曲率，$B$ 是适当次数的伴随值形式。对 $B$ 的变分给 $F_A=0$，所以经典解是平坦联络模空间。它出现在三维量子重力、离散规范拓扑序和四维约束引力模型中。\n\nBF理论的局域自由度通常被约束消去，剩下的是平坦联络的全局扇区和缺陷交链相位；在离散群版本中，它直接描述电荷与磁通的互统计。若把「BF理论」用于凝聚态或量子计算，还需要关注可观测的辫统计、边界反常和基态简并；这些量比局域拉格朗日量更能代表拓扑相。加入带边界或缺陷后，BF 约束会转化为边界态空间和交链相位，使理论不再只是零自由度模型。",
+      "complete_clues": [
+        "这是拓扑规范场论中的一类模型。",
+        "它出现在三维量子重力、离散规范拓扑序和四维约束引力模型中。",
+        "作用量通常写成 $S_{BF}=\\int_M\\operatorname{Tr}(B\\wedge F_A)$。",
+        "其中伴随值形式约束联络平坦，经典解空间是平坦联络模空间。",
+        "它的英文译名是 BF theory。"
+      ],
+      "fragmented_clues": [
+        "拓扑规范场论 模型",
+        "三维量子重力 离散规范拓扑序 四维约束引力",
+        "$S_{BF}=\\int_M\\operatorname{Tr}(B\\wedge F_A)$",
+        "伴随值形式 平坦约束 经典解 平坦联络模空间",
+        "BF theory"
+      ],
+      "explanation_markdown": "BF理论通常以 $B$ 场约束联络平坦，是各维度常见的拓扑规范理论。作用量为 $S_{BF}=\\int_M\\operatorname{Tr}(B\\wedge F_A)$，其中 $F_A=dA+A\\wedge A$ 是联络曲率，$B$ 是适当次数的伴随值形式。对 $B$ 的变分给 $F_A=0$，所以经典解是平坦联络模空间。它出现在三维量子重力、离散规范拓扑序和四维约束引力模型中。\n\nBF理论的局域自由度通常被约束消去，剩下的是平坦联络的全局扇区和缺陷交链相位；在离散群版本中，它直接描述电荷与磁通的互统计。加入带边界或缺陷后，BF 约束会转化为边界态空间和交链相位，使理论不再只是零自由度模型。BF理论把特征类或指标密度放入作用量，结果只随丛拓扑和流形结构改变。",
       "source_links": [
         {
           "label": "百度百科",
@@ -124,9 +184,21 @@
     {
       "chinese_name": "戴克赫拉夫-威滕理论",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "戴克赫拉夫-威滕理论是有限群 $G$ 的离散规范 TQFT，并由群上同调类扭曲。$d$ 维配分函数可写 $Z(M)=|G|^{-b_0}\\sum_{[P]}\\exp(2\\pi i\\langle \\omega,[P]\\rangle)$，其中 $[P]$ 遍历平坦 $G$ 束，$\\omega\\in H^d(BG,U(1))$。扭曲项改变缺陷和任意子的结合相位。它为量子双模型、有限群拓扑序和离散异常提供可严格求解的格点版本。\n\n群上同调类决定的是离散规范理论的拓扑作用，而非普通局域能量项；改变该类会保持同一有限群，却改变任意子自旋、融合相位和边界异常。对「戴克赫拉夫-威滕理论」的严格构造常依赖模空间紧化、量子群半简化或 BV-BRST 处理；这些技术细节保证结果不随度量和辅助切割任意变化。",
+      "complete_clues": [
+        "这是离散规范场论中的一种拓扑模型。",
+        "它与有限群拓扑序、量子双模型和离散异常的格点描述有关。",
+        "在 $d$ 维中，配分函数可写 $Z(M)=|G|^{-b_0}\\sum_{[P]}\\exp(2\\pi i\\langle\\omega,[P]\\rangle)$。",
+        "群上同调类会扭曲平坦有限群束的求和相位，进而改变任意子统计和边界异常。",
+        "它的英文译名是 Dijkgraaf-Witten theory。"
+      ],
+      "fragmented_clues": [
+        "离散规范场论 拓扑模型",
+        "有限群拓扑序 量子双模型 离散异常 格点",
+        "$Z(M)=|G|^{-b_0}\\sum_{[P]}\\exp(2\\pi i\\langle\\omega,[P]\\rangle)$",
+        "群上同调 平坦有限群束 扭曲相位 任意子统计 边界异常",
+        "Dijkgraaf-Witten theory"
+      ],
+      "explanation_markdown": "戴克赫拉夫-威滕理论表示有限群 $G$ 的离散规范 TQFT，并由群上同调类扭曲。$d$ 维配分函数可写 $Z(M)=|G|^{-b_0}\\sum_{[P]}\\exp(2\\pi i\\langle \\omega,[P]\\rangle)$，其中 $[P]$ 遍历平坦 $G$ 束，$\\omega\\in H^d(BG,U(1))$。扭曲项改变缺陷和任意子的结合相位。它为量子双模型、有限群拓扑序和离散异常提供可严格求解的格点版本。\n\n群上同调类决定的是离散规范理论的拓扑作用，而非普通局域能量项；改变该类会保持同一有限群，却改变任意子自旋、融合相位和边界异常。计算戴克赫拉夫-威滕理论时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。戴克赫拉夫-威滕理论把路径积分结果压缩为配分函数、态空间或量子不变量，局域几何只在正规化中出现。",
       "source_links": [
         {
           "label": "百度百科",
@@ -148,9 +220,21 @@
     {
       "chinese_name": "唐纳森不变量",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "唐纳森不变量来自四维流形上反自对偶规范场模空间的交理论。基本方程是 $F_A^+=0$，其中 $F_A^+$ 是曲率的自对偶部分；模空间维数由指标公式决定。对同调类插入 $\\mu(\\gamma)$ 后，不变量形如 $D_X(\\gamma_1\\cdots\\gamma_r)=\\int_{\\mathcal M}\\mu(\\gamma_1)\\wedge\\cdots\\wedge\\mu(\\gamma_r)$。它能区分同胚但非微分同胚的四流形，是四维光滑拓扑的关键工具。\n\n唐纳森理论的困难来自模空间紧化、横截性和取向选择；物理扭曲解释把这些交数看作 Q 闭观测量相关函数，从而说明它们为何不依赖度量。「唐纳森不变量」在路径积分中常表现为对鞍点、标号或同调类求和；在公理化描述中，同一内容被重写为函子、范畴迹或配边诱导映射。",
+      "complete_clues": [
+        "这是四维微分拓扑中的一种流形不变量。",
+        "它来自反自对偶规范场模空间的交理论，用来探测四流形光滑结构。",
+        "基本方程是 $F_A^+=0$，其中 $F_A^+$ 是曲率的自对偶部分。",
+        "它能区分同胚但非微分同胚的四维流形，定义中还要处理紧化、横截性和取向。",
+        "它的英文译名是 Donaldson invariant。"
+      ],
+      "fragmented_clues": [
+        "四维微分拓扑 流形不变量",
+        "反自对偶规范场 模空间 交理论 光滑结构",
+        "$F_A^+=0$",
+        "同胚 非微分同胚 四维流形 紧化 横截性 取向",
+        "Donaldson invariant"
+      ],
+      "explanation_markdown": "唐纳森不变量来源于四维流形上反自对偶规范场模空间的交理论。基本方程是 $F_A^+=0$，其中 $F_A^+$ 是曲率的自对偶部分；模空间维数由指标公式决定。对同调类插入 $\\mu(\\gamma)$ 后，不变量形如 $D_X(\\gamma_1\\cdots\\gamma_r)=\\int_{\\mathcal M}\\mu(\\gamma_1)\\wedge\\cdots\\wedge\\mu(\\gamma_r)$。它能区分同胚但非微分同胚的四流形，是四维光滑拓扑的关键工具。\n\n唐纳森理论的困难来自模空间紧化、横截性和取向选择；物理扭曲解释把这些交数看作 Q 闭观测量相关函数，从而说明它们为何不依赖度量。唐纳森不变量来自模空间的有向计数或同调类，紧化、横截性和取向会直接影响结果。物理扭曲理论中的唐纳森不变量把 BPS 方程留下来，非零模相消后只剩拓扑数据。",
       "source_links": [
         {
           "label": "百度百科",
@@ -172,9 +256,21 @@
     {
       "chinese_name": "塞伯格-威滕不变量",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "塞伯格-威滕不变量由四维流形上的单极子方程定义，通常比唐纳森理论更易计算。方程为 $D_A\\psi=0$、$F_A^+=q(\\psi)$，其中 $A$ 是自旋$^c$联络，$\\psi$ 是旋量，$q$ 是二次映射。模空间的有向计数给 $SW_X(\\mathfrak s)$。它对辛流形、嵌入曲面亏格和光滑结构非常敏感，并可通过物理低能有效理论解释为扭曲 $\\mathcal N=2$ 规范理论的真空计数。\n\n塞伯格-威滕理论把非阿贝尔瞬子问题转为阿贝尔单极子问题，模空间更易控制；它与 Donaldson 不变量的关系体现了低能对偶如何重写四维光滑拓扑。讨论「塞伯格-威滕不变量」时还应注意异常和量子化条件；级数、特征类或中心荷的取值往往由大规范变换和边界一致性强制决定。",
+      "complete_clues": [
+        "这是四维流形理论中的一种光滑不变量。",
+        "它由单极子模空间的有向计数给出，并与低能超对称规范理论有关。",
+        "常用方程为 $D_A\\psi=0$、$F_A^+=q(\\psi)$。",
+        "它把非阿贝尔瞬子问题转为阿贝尔单极子问题，因此许多计算比反自对偶理论更可控。",
+        "它的英文译名是 Seiberg-Witten invariant。"
+      ],
+      "fragmented_clues": [
+        "四维流形 光滑不变量",
+        "单极子模空间 有向计数 低能超对称规范理论",
+        "$D_A\\psi=0$ $F_A^+=q(\\psi)$",
+        "非阿贝尔瞬子 阿贝尔单极子 更可控",
+        "Seiberg-Witten invariant"
+      ],
+      "explanation_markdown": "塞伯格-威滕不变量通常由四维流形上的单极子方程定义，通常比唐纳森理论更易计算。方程为 $D_A\\psi=0$、$F_A^+=q(\\psi)$，其中 $A$ 是自旋$^c$联络，$\\psi$ 是旋量，$q$ 是二次映射。模空间的有向计数给 $SW_X(\\mathfrak s)$。它对辛流形、嵌入曲面亏格和光滑结构非常敏感，并可通过物理低能有效理论解释为扭曲 $\\mathcal N=2$ 规范理论的真空计数。\n\n塞伯格-威滕理论把非阿贝尔瞬子问题转为阿贝尔单极子问题，模空间更易控制；它与 Donaldson 不变量的关系体现了低能对偶如何重写四维光滑拓扑。物理扭曲理论中的塞伯格-威滕不变量把 BPS 方程留下来，非零模相消后只剩拓扑数据。塞伯格-威滕不变量来自模空间的有向计数或同调类，紧化、横截性和取向会直接影响结果。",
       "source_links": [
         {
           "label": "百度百科",
@@ -196,9 +292,21 @@
     {
       "chinese_name": "格罗莫夫-威滕不变量",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "格罗莫夫-威滕不变量计数辛流形或代数簇中的伪全纯曲线，是 A 模型的相关函数。典型记号为 $\\langle \\alpha_1\\cdots\\alpha_n\\rangle_{g,\\beta}=\\int_{[\\overline{\\mathcal M}_{g,n}(X,\\beta)]^{vir}}\\prod_i ev_i^*\\alpha_i$，其中虚基本类处理模空间奇异性。它不是朴素枚举，而是带多重性和稳定映射紧化的交数。\n\n该不变量连接量子上同调、镜像对称和拓扑弦配分函数。虚基本类是这里的关键技术，因为稳定映射模空间常有奇异和错误维数；TQFT 语言中，这些不变量正是 A 模型闭弦态插入的多点相关函数。继续分析「格罗莫夫-威滕不变量」时，应说明它依赖哪些附加结构，如取向、framing、自旋结构或标号范畴；这些选择会改变相位、态空间维数和可允许的缺陷。",
+      "complete_clues": [
+        "这是辛几何和代数几何中的一种曲线计数不变量。",
+        "它出现在量子上同调、镜像对称和拓扑弦的相关函数中。",
+        "典型记号为 $\\langle\\alpha_1\\cdots\\alpha_n\\rangle_{g,\\beta}=\\int_{[\\overline{\\mathcal M}_{g,n}(X,\\beta)]^{vir}}\\prod_i ev_i^*\\alpha_i$。",
+        "它计数稳定映射意义下的伪全纯曲线，不是简单的朴素枚举。",
+        "它的英文译名是 Gromov-Witten invariant。"
+      ],
+      "fragmented_clues": [
+        "辛几何 代数几何 曲线计数 不变量",
+        "量子上同调 镜像对称 拓扑弦 相关函数",
+        "$\\langle\\alpha_1\\cdots\\alpha_n\\rangle_{g,\\beta}=\\int_{[\\overline{\\mathcal M}_{g,n}(X,\\beta)]^{vir}}\\prod_i ev_i^*\\alpha_i$",
+        "稳定映射 伪全纯曲线 虚基本类 多重性",
+        "Gromov-Witten invariant"
+      ],
+      "explanation_markdown": "格罗莫夫-威滕不变量通常计数辛流形或代数簇中的伪全纯曲线，是 A 模型的相关函数。典型记号为 $\\langle \\alpha_1\\cdots\\alpha_n\\rangle_{g,\\beta}=\\int_{[\\overline{\\mathcal M}_{g,n}(X,\\beta)]^{vir}}\\prod_i ev_i^*\\alpha_i$，其中虚基本类处理模空间奇异性。它不是朴素枚举，而是带多重性和稳定映射紧化的交数。\n\n该不变量连接量子上同调、镜像对称和拓扑弦配分函数。虚基本类是这里的关键技术，因为稳定映射模空间常有奇异和错误维数；TQFT 语言中，这些不变量正是 A 模型闭弦态插入的多点相关函数。格罗莫夫-威滕不变量来自模空间的有向计数或同调类，紧化、横截性和取向会直接影响结果。物理扭曲理论中的格罗莫夫-威滕不变量把 BPS 方程留下来，非零模相消后只剩拓扑数据。",
       "source_links": [
         {
           "label": "百度百科",
@@ -220,9 +328,21 @@
     {
       "chinese_name": "列舍季欣-图拉耶夫不变量",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "列舍季欣-图拉耶夫不变量用模张量范畴和手术表示构造三流形量子不变量。若三流形由带标号链环 $L$ 手术得到，$Z(M)$ 由 $L$ 的量子链环不变量与 $S,T$ 矩阵归一化给出。这里标号对象来自模范畴，辫化和扭转提供交叉与 framing 因子。\n\n该构造把量子群表示论、纽结多项式和三维 TQFT 严格连接，是陈西蒙斯路径积分的代数化版本。RT 构造的强处是避免直接定义病态路径积分，而以范畴图形演算给出严格数值；模范畴的非退化性保证手术移动不改变最终三流形不变量。使用「列舍季欣-图拉耶夫不变量」时，核心是它在切割粘合下怎样变换；只有振幅、态空间和缺陷融合同时满足一致性，才真正构成拓扑场论数据。",
+      "complete_clues": [
+        "这是三维拓扑场论中的一种量子流形不变量。",
+        "它把模张量范畴、量子群表示、纽结多项式和手术表示联系起来。",
+        "若闭三流形由带标号链环 $L$ 手术得到，$Z(M)$ 可由 $L$ 的量子链环不变量和 $S,T$ 矩阵归一化给出。",
+        "它用范畴图形演算替代直接路径积分，非退化性保证手术移动不改变数值。",
+        "它的英文译名是 Reshetikhin-Turaev invariant。"
+      ],
+      "fragmented_clues": [
+        "三维拓扑场论 量子流形不变量",
+        "模张量范畴 量子群表示 纽结多项式 手术表示",
+        "$Z(M)$ 标号链环 $L$ $S,T$ 矩阵 归一化",
+        "范畴图形演算 非退化性 手术移动 数值不变",
+        "Reshetikhin-Turaev invariant"
+      ],
+      "explanation_markdown": "列舍季欣-图拉耶夫不变量常用模张量范畴和手术表示构造三流形量子不变量。若三流形由带标号链环 $L$ 手术得到，$Z(M)$ 由 $L$ 的量子链环不变量与 $S,T$ 矩阵归一化给出。这里标号对象来自模范畴，辫化和扭转提供交叉与 framing 因子。\n\n该构造把量子群表示论、纽结多项式和三维 TQFT 严格连接，是陈西蒙斯路径积分的代数化版本。RT 构造的强处是避免直接定义病态路径积分，而以范畴图形演算给出严格数值；模范畴的非退化性保证手术移动不改变最终三流形不变量。计算列舍季欣-图拉耶夫不变量时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。",
       "source_links": [
         {
           "label": "百度百科",
@@ -244,9 +364,21 @@
     {
       "chinese_name": "威滕不变量",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "威滕不变量通常指由陈西蒙斯路径积分定义的三流形或纽结量子不变量。形式上 $Z_k(M,L)=\\int \\mathcal DA\\,e^{iS_{CS}[A]}\\prod_i\\operatorname{Tr}_{R_i}P\\exp\\oint_{K_i}A$，其中 $L$ 是带表示标号的链环。级数 $k$ 决定量子群根单位参数。它把 Wilson 线期望与琼斯型多项式相连，并预言了列舍季欣-图拉耶夫构造的范畴化来源。\n\n威滕的路径积分推导说明，级数、表示和 framing 都有物理来源；半经典极限下，平坦联络鞍点的 Chern-Simons 值还控制量子不变量的渐近相位。围绕「威滕不变量」的物理解释还要区分体相、边界态和插入算符；许多量子不变量正是三者兼容后留下的普适信息，而不是单个公式的数值。它的重要性在于给路径积分、量子群和纽结 skein 关系之间提供同一个物理来源。",
+      "complete_clues": [
+        "这是三维量子场论中的一种拓扑不变量。",
+        "它把 Chern-Simons 路径积分、Wilson 线期望和 Jones 型纽结多项式联系起来。",
+        "形式上可写 $Z_k(M,L)=\\int\\mathcal DA\\,e^{iS_{CS}[A]}\\prod_i\\operatorname{Tr}_{R_i}P\\exp\\oint_{K_i}A$。",
+        "级数、表示和 framing 都在这个路径积分图像中获得物理来源。",
+        "它的英文译名是 Witten invariant。"
+      ],
+      "fragmented_clues": [
+        "三维量子场论 拓扑不变量",
+        "Chern-Simons 路径积分 Wilson 线 Jones 型多项式",
+        "$Z_k(M,L)=\\int\\mathcal DA\\,e^{iS_{CS}[A]}\\prod_i\\operatorname{Tr}_{R_i}P\\exp\\oint_{K_i}A$",
+        "级数 表示 framing 物理来源",
+        "Witten invariant"
+      ],
+      "explanation_markdown": "威滕不变量通常通常指由陈西蒙斯路径积分定义的三流形或纽结量子不变量。形式上 $Z_k(M,L)=\\int \\mathcal DA\\,e^{iS_{CS}[A]}\\prod_i\\operatorname{Tr}_{R_i}P\\exp\\oint_{K_i}A$，其中 $L$ 是带表示标号的链环。级数 $k$ 决定量子群根单位参数。它把 Wilson 线期望与琼斯型多项式相连，并预言了列舍季欣-图拉耶夫构造的范畴化来源。\n\n威滕的路径积分推导说明，级数、表示和 framing 都有物理来源；半经典极限下，平坦联络鞍点的 Chern-Simons 值还控制量子不变量的渐近相位。它的重要性在于给路径积分、量子群和纽结 skein 关系之间提供同一个物理来源。威滕不变量把路径积分结果压缩为配分函数、态空间或量子不变量，局域几何只在正规化中出现。",
       "source_links": [
         {
           "label": "百度百科",
@@ -268,9 +400,21 @@
     {
       "chinese_name": "琼斯多项式",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "琼斯多项式是有向纽结的量子不变量，可由辫群表示、Kauffman 括号或 $SU(2)$ 陈西蒙斯理论得到。它满足 skein 关系 $t^{-1}V_{L_+}(t)-tV_{L_-}(t)=(t^{1/2}-t^{-1/2})V_{L_0}(t)$，其中三图只在一个交叉处不同。该关系把复杂纽结递归化为简单链环。物理上，$V_K(t)$ 是基本表示 Wilson 环的期望值，参数由级数 $k$ 决定。\n\n琼斯多项式的变量并非任意装饰，而来自量子群或陈西蒙斯级数；其 skein 关系可看作局部交叉变换的代数影子，保留了辫群表示的信息。在范畴化语言中，「琼斯多项式」往往对应对象、态射或高阶态射；这种层级记录了缺陷如何融合、如何终止以及如何在配边中传递。在量子计算语境中，对应的辫群表示还可作为任意子交换门，体现多项式背后的态空间作用。",
+      "complete_clues": [
+        "这是纽结理论中的一种多项式不变量。",
+        "它可由辫群表示、Kauffman 括号或 $SU(2)$ Chern-Simons 理论得到。",
+        "它满足 skein 关系 $t^{-1}V_{L_+}(t)-tV_{L_-}(t)=(t^{1/2}-t^{-1/2})V_{L_0}(t)$。",
+        "它把局部交叉改变递归化为简单链环计算，并可解释为基本表示 Wilson 环的期望值。",
+        "它的英文译名是 Jones polynomial。"
+      ],
+      "fragmented_clues": [
+        "纽结理论 多项式不变量",
+        "辫群表示 Kauffman 括号 $SU(2)$ Chern-Simons",
+        "$t^{-1}V_{L_+}(t)-tV_{L_-}(t)=(t^{1/2}-t^{-1/2})V_{L_0}(t)$",
+        "局部交叉 递归 简单链环 Wilson 环期望",
+        "Jones polynomial"
+      ],
+      "explanation_markdown": "琼斯多项式指有向纽结的量子不变量，可由辫群表示、Kauffman 括号或 $SU(2)$ 陈西蒙斯理论得到。它满足 skein 关系 $t^{-1}V_{L_+}(t)-tV_{L_-}(t)=(t^{1/2}-t^{-1/2})V_{L_0}(t)$，其中三图只在一个交叉处不同。该关系把复杂纽结递归化为简单链环。物理上，$V_K(t)$ 是基本表示 Wilson 环的期望值，参数由级数 $k$ 决定。\n\n琼斯多项式的变量并非任意装饰，而来自量子群或陈西蒙斯级数；其 skein 关系可看作局部交叉变换的代数影子，保留了辫群表示的信息。在量子计算语境中，对应的辫群表示还可作为任意子交换门，体现多项式背后的态空间作用。含琼斯多项式的三流形计算会随手术或边界环面坐标改写，但最终不变量不依赖具体切割。",
       "source_links": [
         {
           "label": "百度百科",
@@ -292,9 +436,21 @@
     {
       "chinese_name": "HOMFLY多项式",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "HOMFLY多项式是同时推广 Alexander 与 Jones 多项式的双变量纽结不变量。它满足 $aP_{L_+}(a,q)-a^{-1}P_{L_-}(a,q)=(q-q^{-1})P_{L_0}(a,q)$，其中 $L_+,L_-,L_0$ 是局部 skein 三元组。取特殊参数可退化为多个经典不变量。陈西蒙斯理论中，它对应 $SU(N)$ 基本表示 Wilson 环，变量 $a$ 与 $q^N$ 相关，因此也连接大 $N$ 拓扑弦对偶。\n\nHOMFLY 多项式含两个变量，因此能同时追踪颜色秩和量子形变；在大 N 对偶中，它还与开拓扑弦振幅相连，使纽结不变量进入几何工程框架。若把「HOMFLY多项式」用于凝聚态或量子计算，还需要关注可观测的辫统计、边界反常和基态简并；这些量比局域拉格朗日量更能代表拓扑相。因此它常被当作连接陈西蒙斯颜色展开、量子群表示和拓扑弦开弦振幅的共同语言。",
+      "complete_clues": [
+        "这是纽结理论中的一种双变量多项式不变量。",
+        "它同时推广 Alexander 型和 Jones 型不变量，并与 $SU(N)$ Wilson 环、大 $N$ 拓扑弦对偶有关。",
+        "它满足 $aP_{L_+}(a,q)-a^{-1}P_{L_-}(a,q)=(q-q^{-1})P_{L_0}(a,q)$。",
+        "两个变量分别追踪颜色秩和量子形变，取特殊参数会退化为多个经典不变量。",
+        "它的英文译名是 HOMFLY polynomial。"
+      ],
+      "fragmented_clues": [
+        "纽结理论 双变量多项式不变量",
+        "Alexander Jones $SU(N)$ Wilson 环 大 $N$ 拓扑弦",
+        "$aP_{L_+}(a,q)-a^{-1}P_{L_-}(a,q)=(q-q^{-1})P_{L_0}(a,q)$",
+        "颜色秩 量子形变 特殊参数 经典不变量",
+        "HOMFLY polynomial"
+      ],
+      "explanation_markdown": "HOMFLY多项式通常是同时推广 Alexander 与 Jones 多项式的双变量纽结不变量。它满足 $aP_{L_+}(a,q)-a^{-1}P_{L_-}(a,q)=(q-q^{-1})P_{L_0}(a,q)$，其中 $L_+,L_-,L_0$ 是局部 skein 三元组。取特殊参数可退化为多个经典不变量。陈西蒙斯理论中，它对应 $SU(N)$ 基本表示 Wilson 环，变量 $a$ 与 $q^N$ 相关，因此也连接大 $N$ 拓扑弦对偶。\n\nHOMFLY 多项式含两个变量，因此能同时追踪颜色秩和量子形变；在大 N 对偶中，它还与开拓扑弦振幅相连，使纽结不变量进入几何工程框架。因此它常被当作连接陈西蒙斯颜色展开、量子群表示和拓扑弦开弦振幅的共同语言。HOMFLY多项式通常把平坦联络模空间、链环 holonomy 和量子群表示联系起来，度规只作为量子化辅助。含HOMFLY多项式的三流形计算会随手术或边界环面坐标改写，但最终不变量不依赖具体切割。",
       "source_links": [
         {
           "label": "百度百科",
@@ -316,9 +472,21 @@
     {
       "chinese_name": "霍瓦诺夫同调",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "霍瓦诺夫同调是琼斯多项式的范畴化，把多项式系数提升为双分次同调群。其欧拉示性数满足 $\\sum_{i,j}(-1)^i q^j\\dim Kh^{i,j}(K)=V_K(q)$，其中 $Kh^{i,j}$ 是链复形同调。链复形由纽结图的所有分解立方体构造，微分来自 Frobenius 代数乘法和余乘法。\n\n它比琼斯多项式含更多信息，并与 BPS 态、缺陷和四维规范理论存在深层联系。霍瓦诺夫同调把数值多项式提升为链复形后，能区分许多琼斯多项式相同的纽结；其微分、分次和谱序列为物理 BPS 态解释提供更精细结构。对「霍瓦诺夫同调」的严格构造常依赖模空间紧化、量子群半简化或 BV-BRST 处理；这些技术细节保证结果不随度量和辅助切割任意变化。",
+      "complete_clues": [
+        "这是纽结理论中的一种范畴化不变量。",
+        "它把 Jones 型多项式的系数提升为双分次同调群，并与 BPS 态解释有关。",
+        "其欧拉示性数满足 $\\sum_{i,j}(-1)^i q^j\\dim Kh^{i,j}(K)=V_K(q)$。",
+        "它的链复形来自纽结图所有分解的立方体，微分由 Frobenius 代数结构给出。",
+        "它的英文译名是 Khovanov homology。"
+      ],
+      "fragmented_clues": [
+        "纽结理论 范畴化不变量",
+        "Jones 型多项式 双分次同调群 BPS 态",
+        "$\\sum_{i,j}(-1)^i q^j\\dim Kh^{i,j}(K)=V_K(q)$",
+        "分解立方体 链复形 Frobenius 代数 微分",
+        "Khovanov homology"
+      ],
+      "explanation_markdown": "霍瓦诺夫同调表示琼斯多项式的范畴化，把多项式系数提升为双分次同调群。其欧拉示性数满足 $\\sum_{i,j}(-1)^i q^j\\dim Kh^{i,j}(K)=V_K(q)$，其中 $Kh^{i,j}$ 是链复形同调。链复形由纽结图的所有分解立方体构造，微分来自 Frobenius 代数乘法和余乘法。\n\n它比琼斯多项式含更多信息，并与 BPS 态、缺陷和四维规范理论存在深层联系。霍瓦诺夫同调把数值多项式提升为链复形后，能区分许多琼斯多项式相同的纽结；其微分、分次和谱序列为物理 BPS 态解释提供更精细结构。计算霍瓦诺夫同调时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。霍瓦诺夫同调把路径积分结果压缩为配分函数、态空间或量子不变量，局域几何只在正规化中出现。",
       "source_links": [
         {
           "label": "百度百科",
@@ -340,9 +508,21 @@
     {
       "chinese_name": "纽结同调",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "纽结同调泛指把纽结多项式范畴化后得到的同调理论，包括霍瓦诺夫同调、HOMFLY 同调和 knot Floer 同调。共同特征是 $P_K(q)=\\sum_i(-1)^i\\operatorname{grdim} H_i(K)$，其中同调群的分次欧拉示性数恢复原多项式。范畴化把数值不变量提升为链复形，使谱序列、乘法结构和几何解释可见。\n\n物理上，它常被理解为带缺陷系统的 BPS 态空间。不同纽结同调理论强调不同几何来源：HOMFLY 同调接近陈西蒙斯和 BPS 计数，knot Floer 同调接近三流形和辛几何；它们之间常存在谱序列。「纽结同调」在路径积分中常表现为对鞍点、标号或同调类求和；在公理化描述中，同一内容被重写为函子、范畴迹或配边诱导映射。",
+      "complete_clues": [
+        "这是纽结理论中的一类同调不变量。",
+        "它涵盖多项式范畴化、HOMFLY 型理论和 Floer 型理论，也可解释为带缺陷系统的 BPS 态空间。",
+        "共同形式是 $P_K(q)=\\sum_i(-1)^i\\operatorname{grdim}H_i(K)$。",
+        "它把数值不变量提升为链复形，从而保留谱序列、乘法结构和几何来源。",
+        "它的英文译名是 knot homology。"
+      ],
+      "fragmented_clues": [
+        "纽结理论 同调不变量",
+        "多项式范畴化 HOMFLY Floer BPS 态空间",
+        "$P_K(q)=\\sum_i(-1)^i\\operatorname{grdim}H_i(K)$",
+        "数值不变量 链复形 谱序列 乘法结构 几何来源",
+        "knot homology"
+      ],
+      "explanation_markdown": "纽结同调通常泛指把纽结多项式范畴化后得到的同调理论，包括霍瓦诺夫同调、HOMFLY 同调和 knot Floer 同调。共同特征是 $P_K(q)=\\sum_i(-1)^i\\operatorname{grdim} H_i(K)$，其中同调群的分次欧拉示性数恢复原多项式。范畴化把数值不变量提升为链复形，使谱序列、乘法结构和几何解释可见。\n\n物理上，它常被理解为带缺陷系统的 BPS 态空间。不同纽结同调理论强调不同几何来源：HOMFLY 同调接近陈西蒙斯和 BPS 计数，knot Floer 同调接近三流形和辛几何；它们之间常存在谱序列。纽结同调通常把平坦联络模空间、链环 holonomy 和量子群表示联系起来，度规只作为量子化辅助。含纽结同调的三流形计算会随手术或边界环面坐标改写，但最终不变量不依赖具体切割。",
       "source_links": [
         {
           "label": "百度百科",
@@ -364,9 +544,21 @@
     {
       "chinese_name": "纽结补空间",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "纽结补空间是从三维球面中去掉纽结管状邻域后得到的三流形，记为 $M_K=S^3\\setminus N(K)$，其中 $N(K)$ 是纽结的实心环面邻域。它把纽结问题转化为三流形几何和边界环面上的表示论问题。基本群 $\\pi_1(M_K)$、双曲体积和边界平坦联络模空间都能区分纽结。\n\n陈西蒙斯理论在 $M_K$ 上的配分函数与有色 Jones 多项式、A 多项式和体积猜想相连。补空间的边界是环面，因此经线和纬线 holonomy 形成自然坐标；量子化这些坐标会得到非交换环面代数，纽结多项式可被理解为边界态波函数。讨论「纽结补空间」时还应注意异常和量子化条件；级数、特征类或中心荷的取值往往由大规范变换和边界一致性强制决定。",
+      "complete_clues": [
+        "这是三维拓扑中的一种流形构造。",
+        "它把纽结问题转化为三流形几何、边界环面表示论和 Chern-Simons 态波函数问题。",
+        "标准记号为 $M_K=S^3\\setminus N(K)$。",
+        "它的边界是环面，经线与纬线的 holonomy 可作为自然坐标并进入量子化。",
+        "它的英文译名是 knot complement。"
+      ],
+      "fragmented_clues": [
+        "三维拓扑 流形构造",
+        "三流形几何 边界环面 表示论 Chern-Simons 态波函数",
+        "$M_K=S^3\\setminus N(K)$",
+        "环面边界 经线 纬线 holonomy 自然坐标 量子化",
+        "knot complement"
+      ],
+      "explanation_markdown": "纽结补空间指从三维球面中去掉纽结管状邻域后得到的三流形，记为 $M_K=S^3\\setminus N(K)$，其中 $N(K)$ 是纽结的实心环面邻域。它把纽结问题转化为三流形几何和边界环面上的表示论问题。基本群 $\\pi_1(M_K)$、双曲体积和边界平坦联络模空间都能区分纽结。\n\n陈西蒙斯理论在 $M_K$ 上的配分函数与有色 Jones 多项式、A 多项式和体积猜想相连。补空间的边界是环面，因此经线和纬线 holonomy 形成自然坐标；量子化这些坐标会得到非交换环面代数，纽结多项式可被理解为边界态波函数。含纽结补空间的三流形计算会随手术或边界环面坐标改写，但最终不变量不依赖具体切割。",
       "source_links": [
         {
           "label": "百度百科",
@@ -388,9 +580,21 @@
     {
       "chinese_name": "辫群表示",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "辫群表示把任意子交换或纽结投影中的交叉写成线性算符。辫群生成元满足 $\\sigma_i\\sigma_{i+1}\\sigma_i=\\sigma_{i+1}\\sigma_i\\sigma_{i+1}$ 与 $\\sigma_i\\sigma_j=\\sigma_j\\sigma_i$，其中后一关系要求 $|i-j|>1$。在模张量范畴中，表示由 braiding $c_{X,Y}:X\\otimes Y\\to Y\\otimes X$ 给出。闭合辫的迹产生链环不变量，物理上对应任意子世界线交换的非平凡量子门。\n\n辫群表示不仅产生纽结不变量，也给非阿贝尔任意子量子计算中的门操作；其物理可行性取决于表示像是否足够大以及融合空间能否抗局域扰动。继续分析「辫群表示」时，应说明它依赖哪些附加结构，如取向、framing、自旋结构或标号范畴；这些选择会改变相位、态空间维数和可允许的缺陷。",
+      "complete_clues": [
+        "这是代数拓扑和量子拓扑中的一种群表示。",
+        "它描述交叉、任意子交换和闭合辫产生链环不变量的机制。",
+        "生成元满足 $\\sigma_i\\sigma_{i+1}\\sigma_i=\\sigma_{i+1}\\sigma_i\\sigma_{i+1}$。",
+        "在非阿贝尔任意子系统中，它给出作用在融合空间上的拓扑量子门。",
+        "它的英文译名是 braid group representation。"
+      ],
+      "fragmented_clues": [
+        "代数拓扑 量子拓扑 群表示",
+        "交叉 任意子交换 闭合辫 链环不变量",
+        "$\\sigma_i\\sigma_{i+1}\\sigma_i=\\sigma_{i+1}\\sigma_i\\sigma_{i+1}$",
+        "非阿贝尔任意子 融合空间 拓扑量子门",
+        "braid group representation"
+      ],
+      "explanation_markdown": "辫群表示将任意子交换或纽结投影中的交叉写成线性算符。辫群生成元满足 $\\sigma_i\\sigma_{i+1}\\sigma_i=\\sigma_{i+1}\\sigma_i\\sigma_{i+1}$ 与 $\\sigma_i\\sigma_j=\\sigma_j\\sigma_i$，其中后一关系要求 $|i-j|>1$。在模张量范畴中，表示由 braiding $c_{X,Y}:X\\otimes Y\\to Y\\otimes X$ 给出。闭合辫的迹产生链环不变量，物理上对应任意子世界线交换的非平凡量子门。\n\n辫群表示不仅产生纽结不变量，也给非阿贝尔任意子量子计算中的门操作；其物理可行性取决于表示像是否足够大以及融合空间能否抗局域扰动。这里的表示像决定可实现的编织门集合，因而比单个链环多项式保留更多动力学信息。辫群表示通常把平坦联络模空间、链环 holonomy 和量子群表示联系起来，度规只作为量子化辅助。",
       "source_links": [
         {
           "label": "百度百科",
@@ -412,9 +616,21 @@
     {
       "chinese_name": "映射类群表示",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "映射类群表示是 TQFT 赋予闭曲面态空间的拓扑对称作用。若 $\\Sigma$ 是曲面，映射类群 $\\mathrm{MCG}(\\Sigma)$ 作用在 $Z(\\Sigma)$ 上，得到射影表示 $\\rho: \\mathrm{MCG}(\\Sigma)\\to PGL(Z(\\Sigma))$。环面情形由模 $S,T$ 矩阵生成，满足 $S^4=1$ 与 $(ST)^3=S^2$ 的射影版本。该表示编码任意子统计、三流形手术和边界共形场论的模不变性。\n\n映射类群作用把曲面不同切割方式联系起来，保证 conformal blocks 或 TQFT 态空间的基变换一致；三维配边可视为这些变换的几何实现。使用「映射类群表示」时，核心是它在切割粘合下怎样变换；只有振幅、态空间和缺陷融合同时满足一致性，才真正构成拓扑场论数据。这种射影性通常来自量子化线丛的相位异常，正是中心荷或 framing 数据进入的地方。",
+      "complete_clues": [
+        "这是曲面拓扑和 TQFT 中的一种对称作用。",
+        "它关联曲面态空间、任意子统计、三流形手术和边界共形场论的模不变性。",
+        "若 $\\Sigma$ 是曲面，可有射影表示 $\\rho:\\mathrm{MCG}(\\Sigma)\\to PGL(Z(\\Sigma))$。",
+        "环面情形由 $S,T$ 变换生成，量子化线丛的相位异常常使表示只在射影意义下成立。",
+        "它的英文译名是 mapping class group representation。"
+      ],
+      "fragmented_clues": [
+        "曲面拓扑 TQFT 对称作用",
+        "曲面态空间 任意子统计 三流形手术 模不变性",
+        "$\\rho:\\mathrm{MCG}(\\Sigma)\\to PGL(Z(\\Sigma))$",
+        "环面 $S,T$ 变换 射影表示 相位异常",
+        "mapping class group representation"
+      ],
+      "explanation_markdown": "映射类群表示表示 TQFT 赋予闭曲面态空间的拓扑对称作用。若 $\\Sigma$ 是曲面，映射类群 $\\mathrm{MCG}(\\Sigma)$ 作用在 $Z(\\Sigma)$ 上，得到射影表示 $\\rho: \\mathrm{MCG}(\\Sigma)\\to PGL(Z(\\Sigma))$。环面情形由模 $S,T$ 矩阵生成，满足 $S^4=1$ 与 $(ST)^3=S^2$ 的射影版本。该表示编码任意子统计、三流形手术和边界共形场论的模不变性。\n\n映射类群作用把曲面不同切割方式联系起来，保证 conformal blocks 或 TQFT 态空间的基变换一致；三维配边可视为这些变换的几何实现。这种射影性通常来自量子化线丛的相位异常，正是中心荷或 framing 数据进入的地方。计算映射类群表示时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。映射类群表示把路径积分结果压缩为配分函数、态空间或量子不变量，局域几何只在正规化中出现。",
       "source_links": [
         {
           "label": "百度百科",
@@ -436,9 +652,21 @@
     {
       "chinese_name": "模张量范畴",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "模张量范畴是半单、刚性、辫化且非退化的张量范畴，代数化描述二维任意子和三维 TQFT。非退化性常由 $S$ 矩阵可逆表达，其中 $S_{ab}=\\operatorname{tr}(c_{b,a}c_{a,b})$，$c$ 是 braiding。简单对象代表任意子类型，融合系数由 $a\\otimes b=\\sum_c N_{ab}^c c$ 给出。它同时决定 Wilson 线、三流形不变量和拓扑量子计算中的门结构。\n\n模张量范畴的非退化性意味着所有透明对象只有真空，这对应体相没有隐藏的一形式对称退化；其 S、T 数据常被用来诊断任意子理论是否可实现为独立二维相。围绕「模张量范畴」的物理解释还要区分体相、边界态和插入算符；许多量子不变量正是三者兼容后留下的普适信息，而不是单个公式的数值。",
+      "complete_clues": [
+        "这是量子拓扑和任意子理论中的一种张量范畴。",
+        "它代数化描述二维任意子、三维 TQFT、Wilson 线和拓扑量子计算中的门结构。",
+        "非退化性常由 $S_{ab}=\\operatorname{tr}(c_{b,a}c_{a,b})$ 的矩阵可逆性表达。",
+        "简单对象代表任意子类型，融合、编织和量子维数共同决定拓扑相的离散数据。",
+        "它的英文译名是 modular tensor category。"
+      ],
+      "fragmented_clues": [
+        "量子拓扑 任意子理论 张量范畴",
+        "二维任意子 三维 TQFT Wilson 线 拓扑量子计算",
+        "$S_{ab}=\\operatorname{tr}(c_{b,a}c_{a,b})$ 可逆",
+        "简单对象 任意子类型 融合 编织 量子维数",
+        "modular tensor category"
+      ],
+      "explanation_markdown": "模张量范畴可理解为半单、刚性、辫化且非退化的张量范畴，代数化描述二维任意子和三维 TQFT。非退化性常由 $S$ 矩阵可逆表达，其中 $S_{ab}=\\operatorname{tr}(c_{b,a}c_{a,b})$，$c$ 是 braiding。简单对象代表任意子类型，融合系数由 $a\\otimes b=\\sum_c N_{ab}^c c$ 给出。它同时决定 Wilson 线、三流形不变量和拓扑量子计算中的门结构。\n\n模张量范畴的非退化性意味着所有透明对象只有真空，这对应体相没有隐藏的一形式对称退化；其 S、T 数据常被用来诊断任意子理论是否可实现为独立二维相。模张量范畴用融合系数、编织矩阵和量子维数描述拓扑相，局域扰动不能改变这些离散数据。任意子或缺陷的模张量范畴还决定基态简并和拓扑量子计算中的门操作。",
       "source_links": [
         {
           "label": "百度百科",
@@ -460,9 +688,21 @@
     {
       "chinese_name": "融合范畴",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "融合范畴是有限半单刚性张量范畴，用来描述没有必然辫化的超选择扇区。简单对象满足 $a\\otimes b=\\sum_c N_{ab}^c c$，其中非负整数 $N_{ab}^c$ 是融合规则；结合律由 $F$ 符号实现，并满足五边形方程。它不是普通群表示范畴的简单重命名，因为对象可具有非整数 Frobenius-Perron 维数。\n\n融合范畴是 Levin-Wen 弦网模型和 Drinfeld 中心构造拓扑序的输入。融合范畴本身未必包含辫统计，但其中心会给出体任意子；这解释了许多弦网模型从边界或局域约束数据出发，却生成完整二维拓扑序。在范畴化语言中，「融合范畴」往往对应对象、态射或高阶态射；这种层级记录了缺陷如何融合、如何终止以及如何在配边中传递。",
+      "complete_clues": [
+        "这是张量范畴理论中的一种有限半单结构。",
+        "它是弦网模型和 Drinfeld 中心构造拓扑序的输入，也描述未必带编织的超选择扇区。",
+        "简单对象满足 $a\\otimes b=\\sum_c N_{ab}^c c$。",
+        "它的结合律由 $F$ 符号实现，中心化后可产生体任意子理论。",
+        "它的英文译名是 fusion category。"
+      ],
+      "fragmented_clues": [
+        "张量范畴 有限半单结构",
+        "弦网模型 Drinfeld 中心 拓扑序 超选择扇区",
+        "$a\\otimes b=\\sum_c N_{ab}^c c$",
+        "$F$ 符号 结合律 中心化 体任意子",
+        "fusion category"
+      ],
+      "explanation_markdown": "融合范畴指有限半单刚性张量范畴，用来描述没有必然辫化的超选择扇区。简单对象满足 $a\\otimes b=\\sum_c N_{ab}^c c$，其中非负整数 $N_{ab}^c$ 是融合规则；结合律由 $F$ 符号实现，并满足五边形方程。它不是普通群表示范畴的简单重命名，因为对象可具有非整数 Frobenius-Perron 维数。\n\n融合范畴是 Levin-Wen 弦网模型和 Drinfeld 中心构造拓扑序的输入。融合范畴本身未必包含辫统计，但其中心会给出体任意子；这解释了许多弦网模型从边界或局域约束数据出发，却生成完整二维拓扑序。任意子或缺陷的融合范畴还决定基态简并和拓扑量子计算中的门操作。融合范畴用融合系数、编织矩阵和量子维数描述拓扑相，局域扰动不能改变这些离散数据。",
       "source_links": [
         {
           "label": "百度百科",
@@ -484,9 +724,21 @@
     {
       "chinese_name": "球面范畴",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "球面范畴是在刚性张量范畴上选择左右迹相同的枢轴结构，使闭图评价不依赖平面嵌入方向。条件可写 $\\operatorname{tr}_L(f)=\\operatorname{tr}_R(f)$，其中 $f:X\\to X$ 是对象自同态。球面性保证弦网图在二维曲面上的局部变形给出一致数值，因而是 Turaev-Viro 状态和与三维 TQFT 的关键输入。\n\n它把范畴维数、泡沫消去和拓扑不变量的方向无关性统一起来。球面条件保证图形在球面上滑动和翻转时评价一致；若左右迹不同，状态和模型会依赖不应存在的局部嵌入选择，拓扑不变性便会失败。若把「球面范畴」用于凝聚态或量子计算，还需要关注可观测的辫统计、边界反常和基态简并；这些量比局域拉格朗日量更能代表拓扑相。",
+      "complete_clues": [
+        "这是张量范畴理论中的一种附加结构。",
+        "它与弦网图评价、Turaev-Viro 状态和以及三维拓扑不变量的方向无关性有关。",
+        "它要求左右迹相同，可写作 $\\operatorname{tr}_L(f)=\\operatorname{tr}_R(f)$。",
+        "这个条件使闭图在球面上滑动或翻转时评价一致，避免模型依赖局部平面嵌入。",
+        "它的英文译名是 spherical category。"
+      ],
+      "fragmented_clues": [
+        "张量范畴 附加结构",
+        "弦网图评价 Turaev-Viro 状态和 方向无关性",
+        "$\\operatorname{tr}_L(f)=\\operatorname{tr}_R(f)$",
+        "闭图 球面 滑动 翻转 评价一致",
+        "spherical category"
+      ],
+      "explanation_markdown": "球面范畴通常是在刚性张量范畴上选择左右迹相同的枢轴结构，使闭图评价不依赖平面嵌入方向。条件可写 $\\operatorname{tr}_L(f)=\\operatorname{tr}_R(f)$，其中 $f:X\\to X$ 是对象自同态。球面性保证弦网图在二维曲面上的局部变形给出一致数值，因而是 Turaev-Viro 状态和与三维 TQFT 的关键输入。\n\n它把范畴维数、泡沫消去和拓扑不变量的方向无关性统一起来。球面条件保证图形在球面上滑动和翻转时评价一致；若左右迹不同，状态和模型会依赖不应存在的局部嵌入选择，拓扑不变性便会失败。球面范畴用融合系数、编织矩阵和量子维数描述拓扑相，局域扰动不能改变这些离散数据。",
       "source_links": [
         {
           "label": "百度百科",
@@ -508,9 +760,21 @@
     {
       "chinese_name": "德林费尔德中心",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "德林费尔德中心把一个融合范畴提升为带辫化的范畴，描述二维体相的任意子内容。对象是 $(X,\\gamma_{X,-})$，其中半辫化满足 $\\gamma_{X,Y\\otimes Z}=(\\operatorname{id}_Y\\otimes\\gamma_{X,Z})(\\gamma_{X,Y}\\otimes\\operatorname{id}_Z)$。对输入范畴 $\\mathcal C$，中心 $Z(\\mathcal C)$ 通常是模张量范畴。Levin-Wen 模型的体激发正由这个中心给出，说明边界融合数据可决定体拓扑序。\n\n中心对象的半辫化说明它可以一致穿过任何输入范畴对象；物理上，这正是体任意子能穿过弦网背景而不留下路径依赖的代数条件。对「德林费尔德中心」的严格构造常依赖模空间紧化、量子群半简化或 BV-BRST 处理；这些技术细节保证结果不随度量和辅助切割任意变化。若中心退化，说明仍有透明激发未被处理；非退化中心才对应真正的二维体任意子理论。",
+      "complete_clues": [
+        "这是张量范畴理论中的一种中心构造。",
+        "它把融合范畴提升为带编织的数据，并描述 Levin-Wen 模型的体任意子内容。",
+        "对象可写成 $(X,\\gamma_{X,-})$，且满足 $\\gamma_{X,Y\\otimes Z}=(\\operatorname{id}_Y\\otimes\\gamma_{X,Z})(\\gamma_{X,Y}\\otimes\\operatorname{id}_Z)$。",
+        "半编织表示该对象能一致穿过任意输入对象，不留下路径依赖。",
+        "它的英文译名是 Drinfeld center。"
+      ],
+      "fragmented_clues": [
+        "张量范畴 中心构造",
+        "融合范畴 编织数据 Levin-Wen 体任意子",
+        "$(X,\\gamma_{X,-})$ $\\gamma_{X,Y\\otimes Z}=(\\operatorname{id}_Y\\otimes\\gamma_{X,Z})(\\gamma_{X,Y}\\otimes\\operatorname{id}_Z)$",
+        "半编织 穿过输入对象 路径无关",
+        "Drinfeld center"
+      ],
+      "explanation_markdown": "德林费尔德中心可以把一个融合范畴提升为带辫化的范畴，描述二维体相的任意子内容。对象是 $(X,\\gamma_{X,-})$，其中半辫化满足 $\\gamma_{X,Y\\otimes Z}=(\\operatorname{id}_Y\\otimes\\gamma_{X,Z})(\\gamma_{X,Y}\\otimes\\operatorname{id}_Z)$。对输入范畴 $\\mathcal C$，中心 $Z(\\mathcal C)$ 通常是模张量范畴。Levin-Wen 模型的体激发正由这个中心给出，说明边界融合数据可决定体拓扑序。\n\n中心对象的半辫化说明它可以一致穿过任何输入范畴对象；物理上，这正是体任意子能穿过弦网背景而不留下路径依赖的代数条件。若中心退化，说明仍有透明激发未被处理；非退化中心才对应真正的二维体任意子理论。任意子或缺陷的德林费尔德中心还决定基态简并和拓扑量子计算中的门操作。",
       "source_links": [
         {
           "label": "百度百科",
@@ -532,9 +796,21 @@
     {
       "chinese_name": "任意子模型",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "任意子模型用有限个粒子类型、融合规则和辫化矩阵描述二维拓扑激发。核心数据包括 $a\\times b=\\sum_c N_{ab}^c c$、$F$ 符号和 $R$ 符号，其中 $F$ 改变融合括号，$R$ 表示交换相位或矩阵。它们必须满足五边形和六边形一致性方程。\n\n阿贝尔任意子只给相位，非阿贝尔任意子在简并融合空间上作用矩阵，是拓扑量子计算和分数量子霍尔态的重要抽象。任意子模型的完整性不只在融合表，还在 F、R 符号满足的相干方程；这些数据决定干涉实验、拓扑自旋和可实现的量子门，而非只决定粒子种类数。「任意子模型」在路径积分中常表现为对鞍点、标号或同调类求和；在公理化描述中，同一内容被重写为函子、范畴迹或配边诱导映射。",
+      "complete_clues": [
+        "这是二维拓扑激发理论中的一种有限数据模型。",
+        "它描述粒子类型、融合通道、交换矩阵和干涉实验中的拓扑统计。",
+        "基本融合数据可写 $a\\times b=\\sum_c N_{ab}^c c$。",
+        "完整数据不仅包括融合表，还包括满足五边形与六边形一致性的 $F$ 符号和 $R$ 符号。",
+        "它的英文译名是 anyon model。"
+      ],
+      "fragmented_clues": [
+        "二维拓扑激发 有限数据模型",
+        "粒子类型 融合通道 交换矩阵 干涉 拓扑统计",
+        "$a\\times b=\\sum_c N_{ab}^c c$",
+        "$F$ 符号 $R$ 符号 五边形 六边形 一致性",
+        "anyon model"
+      ],
+      "explanation_markdown": "任意子模型常用有限个粒子类型、融合规则和辫化矩阵描述二维拓扑激发。核心数据包括 $a\\times b=\\sum_c N_{ab}^c c$、$F$ 符号和 $R$ 符号，其中 $F$ 改变融合括号，$R$ 表示交换相位或矩阵。它们必须满足五边形和六边形一致性方程。\n\n阿贝尔任意子只给相位，非阿贝尔任意子在简并融合空间上作用矩阵，是拓扑量子计算和分数量子霍尔态的重要抽象。任意子模型的完整性不只在融合表，还在 F、R 符号满足的相干方程；这些数据决定干涉实验、拓扑自旋和可实现的量子门，而非只决定粒子种类数。任意子模型用融合系数、编织矩阵和量子维数描述拓扑相，局域扰动不能改变这些离散数据。",
       "source_links": [
         {
           "label": "百度百科",
@@ -556,9 +832,21 @@
     {
       "chinese_name": "非阿贝尔任意子",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "非阿贝尔任意子的交换不是单纯相位，而是在多维融合空间上的非对易矩阵。若 $a\\times b=\\sum_c N_{ab}^c c$ 且某些 $N_{ab}^c$ 产生简并通道，辫化算符 $\\rho(\\sigma_i)$ 会在这些通道间酉作用。多次交换一般满足 $\\rho(\\sigma_i)\\rho(\\sigma_j)\\ne\\rho(\\sigma_j)\\rho(\\sigma_i)$。这种拓扑保护的非局域简并是容错量子计算的关键资源，典型例子包括 Ising 与 Fibonacci 任意子。\n\n非阿贝尔统计的本质是多粒子 Hilbert 空间按总融合通道分解，局域操作难以读取这些非局域信息；这给拓扑量子计算带来保护，也带来初始化和测量难题。讨论「非阿贝尔任意子」时还应注意异常和量子化条件；级数、特征类或中心荷的取值往往由大规范变换和边界一致性强制决定。",
+      "complete_clues": [
+        "这是二维拓扑相中的一种粒子型激发。",
+        "它与简并融合空间、非局域量子信息和容错量子计算有关。",
+        "多次交换一般满足 $\\rho(\\sigma_i)\\rho(\\sigma_j)\\ne\\rho(\\sigma_j)\\rho(\\sigma_i)$。",
+        "交换操作不是单纯相位，而是在多维融合空间上给出非对易矩阵。",
+        "它的英文译名是 non-Abelian anyon。"
+      ],
+      "fragmented_clues": [
+        "二维拓扑相 粒子型激发",
+        "简并融合空间 非局域量子信息 容错量子计算",
+        "$\\rho(\\sigma_i)\\rho(\\sigma_j)\\ne\\rho(\\sigma_j)\\rho(\\sigma_i)$",
+        "交换操作 非单纯相位 多维融合空间 非对易矩阵",
+        "non-Abelian anyon"
+      ],
+      "explanation_markdown": "非阿贝尔任意子通常的交换不是单纯相位，而是在多维融合空间上的非对易矩阵。若 $a\\times b=\\sum_c N_{ab}^c c$ 且某些 $N_{ab}^c$ 产生简并通道，辫化算符 $\\rho(\\sigma_i)$ 会在这些通道间酉作用。多次交换一般满足 $\\rho(\\sigma_i)\\rho(\\sigma_j)\\ne\\rho(\\sigma_j)\\rho(\\sigma_i)$。这种拓扑保护的非局域简并是容错量子计算的关键资源，典型例子包括 Ising 与 Fibonacci 任意子。\n\n非阿贝尔统计的本质是多粒子 Hilbert 空间按总融合通道分解，局域操作难以读取这些非局域信息；这给拓扑量子计算带来保护，也带来初始化和测量难题。任意子或缺陷的非阿贝尔任意子还决定基态简并和拓扑量子计算中的门操作。非阿贝尔任意子用融合系数、编织矩阵和量子维数描述拓扑相，局域扰动不能改变这些离散数据。",
       "source_links": [
         {
           "label": "百度百科",
@@ -580,9 +868,21 @@
     {
       "chinese_name": "拓扑序",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "拓扑序是不能用局域对称破缺完全描述的量子物质相，具有长程纠缠、拓扑简并和任意子激发。环面基态简并常写为 $\\dim\\mathcal H(T^2)=N_{\\rm anyon}$，其中右边是任意子类型数。其低能有效理论通常是 TQFT，局域扰动不能轻易劈裂简并。\n\n拓扑序通过模 $S,T$ 矩阵、拓扑纠缠熵和边界反常等数据刻画，区别于普通朗道相。拓扑序的低能 TQFT 只描述能隙以下的普适部分，不能给出微观能谱全部细节；但它准确捕捉基态简并、任意子统计和边界反常等稳定数据。继续分析「拓扑序」时，应说明它依赖哪些附加结构，如取向、framing、自旋结构或标号范畴；这些选择会改变相位、态空间维数和可允许的缺陷。",
+      "complete_clues": [
+        "这是凝聚态物理中的一种量子物质相概念。",
+        "它与长程纠缠、拓扑基态简并、任意子激发和低能 TQFT 有关。",
+        "环面上常有 $\\dim\\mathcal H(T^2)=N_{\\rm anyon}$。",
+        "它不能由局域对称破缺完全描述，局域扰动也难以劈裂其拓扑简并。",
+        "它的英文译名是 topological order。"
+      ],
+      "fragmented_clues": [
+        "凝聚态物理 量子物质相",
+        "长程纠缠 拓扑简并 任意子激发 低能 TQFT",
+        "$\\dim\\mathcal H(T^2)=N_{\\rm anyon}$",
+        "非局域对称破缺 局域扰动 拓扑简并 稳定",
+        "topological order"
+      ],
+      "explanation_markdown": "拓扑序通常是不能用局域对称破缺完全描述的量子物质相，具有长程纠缠、拓扑简并和任意子激发。环面基态简并常写为 $\\dim\\mathcal H(T^2)=N_{\\rm anyon}$，其中右边是任意子类型数。其低能有效理论通常是 TQFT，局域扰动不能轻易劈裂简并。\n\n拓扑序通过模 $S,T$ 矩阵、拓扑纠缠熵和边界反常等数据刻画，区别于普通朗道相。拓扑序的低能 TQFT 只描述能隙以下的普适部分，不能给出微观能谱全部细节；但它准确捕捉基态简并、任意子统计和边界反常等稳定数据。拓扑序用融合系数、编织矩阵和量子维数描述拓扑相，局域扰动不能改变这些离散数据。任意子或缺陷的拓扑序还决定基态简并和拓扑量子计算中的门操作。",
       "source_links": [
         {
           "label": "百度百科",
@@ -604,9 +904,21 @@
     {
       "chinese_name": "长程纠缠",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "长程纠缠指量子态不能通过有限深局域酉变换化为直积态或短程纠缠态。二维拓扑序的区域熵满足 $S(A)=\\alpha |\\partial A|-\\gamma+o(1)$，其中 $\\gamma=\\log\\mathcal D$ 是拓扑纠缠熵，$\\mathcal D$ 为总量子维数。常数项来自非局域任意子约束，而非边界局域自由度。\n\n它是拓扑序的本质特征，解释了基态简并为何对局域探针不可见。长程纠缠无法被任何有限深局域线路去除，因此它定义的是量子相而非特定哈密顿量；拓扑纠缠熵和任意子数据是检测这种非局域结构的常用手段。使用「长程纠缠」时，核心是它在切割粘合下怎样变换；只有振幅、态空间和缺陷融合同时满足一致性，才真正构成拓扑场论数据。",
+      "complete_clues": [
+        "这是量子多体物理中的一种非局域结构。",
+        "它用于刻画拓扑序基态中有限深局域酉线路无法消去的纠缠。",
+        "二维区域熵常写 $S(A)=\\alpha|\\partial A|-\\gamma+o(1)$，其中 $\\gamma=\\log\\mathcal D$。",
+        "其常数项来自任意子超选择扇区的全局约束，而不是普通边界局域自由度。",
+        "它的英文译名是 long-range entanglement。"
+      ],
+      "fragmented_clues": [
+        "量子多体 非局域结构",
+        "拓扑序基态 有限深局域酉线路 不可消去",
+        "$S(A)=\\alpha|\\partial A|-\\gamma+o(1)$ $\\gamma=\\log\\mathcal D$",
+        "任意子超选择扇区 全局约束 非边界局域自由度",
+        "long-range entanglement"
+      ],
+      "explanation_markdown": "长程纠缠刻画量子态不能通过有限深局域酉变换化为直积态或短程纠缠态。二维拓扑序的区域熵满足 $S(A)=\\alpha |\\partial A|-\\gamma+o(1)$，其中 $\\gamma=\\log\\mathcal D$ 是拓扑纠缠熵，$\\mathcal D$ 为总量子维数。常数项来自非局域任意子约束，而非边界局域自由度。\n\n它是拓扑序的本质特征，解释了基态简并为何对局域探针不可见。长程纠缠无法被任何有限深局域线路去除，因此它定义的是量子相而非特定哈密顿量；拓扑纠缠熵和任意子数据是检测这种非局域结构的常用手段。计算长程纠缠时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。长程纠缠把路径积分结果压缩为配分函数、态空间或量子不变量，局域几何只在正规化中出现。",
       "source_links": [
         {
           "label": "百度百科",
@@ -628,9 +940,21 @@
     {
       "chinese_name": "量子双模型",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "量子双模型是有限群 $G$ 的精确可解二维拓扑序模型，激发由 Drinfeld 双 $D(G)$ 的表示分类。哈密顿量为 $H=-\\sum_v A_v-\\sum_p B_p$，其中 $A_v$ 实现局域规范变换，$B_p$ 投影到平坦磁通。基态同时满足所有顶点和面约束。电荷、磁通和复合激发具有任意子统计；当 $G=\\mathbb Z_2$ 时，它退化为 toric code，是离散规范 TQFT 的格点实现。\n\n量子双模型的顶点和面投影分别约束电荷与磁通，二者对易保证精确可解；在有边界或缺陷时，允许的凝聚子群会改变边界任意子谱。围绕「量子双模型」的物理解释还要区分体相、边界态和插入算符；许多量子不变量正是三者兼容后留下的普适信息，而不是单个公式的数值。",
+      "complete_clues": [
+        "这是二维拓扑序中的一种精确可解格点模型。",
+        "它描述有限群离散规范理论中的电荷、磁通和复合任意子。",
+        "哈密顿量可写 $H=-\\sum_v A_v-\\sum_p B_p$。",
+        "顶点投影实现局域规范变换，面投影要求平坦磁通；当 $G=\\mathbb Z_2$ 时退化为 toric code。",
+        "它的英文译名是 quantum double model。"
+      ],
+      "fragmented_clues": [
+        "二维拓扑序 精确可解 格点模型",
+        "有限群 离散规范理论 电荷 磁通 复合任意子",
+        "$H=-\\sum_v A_v-\\sum_p B_p$",
+        "顶点投影 局域规范变换 面投影 平坦磁通 $G=\\mathbb Z_2$ toric code",
+        "quantum double model"
+      ],
+      "explanation_markdown": "量子双模型可理解为有限群 $G$ 的精确可解二维拓扑序模型，激发由 Drinfeld 双 $D(G)$ 的表示分类。哈密顿量为 $H=-\\sum_v A_v-\\sum_p B_p$，其中 $A_v$ 实现局域规范变换，$B_p$ 投影到平坦磁通。基态同时满足所有顶点和面约束。电荷、磁通和复合激发具有任意子统计；当 $G=\\mathbb Z_2$ 时，它退化为 toric code，是离散规范 TQFT 的格点实现。\n\n量子双模型的顶点和面投影分别约束电荷与磁通，二者对易保证精确可解；在有边界或缺陷时，允许的凝聚子群会改变边界任意子谱。量子双模型用融合系数、编织矩阵和量子维数描述拓扑相，局域扰动不能改变这些离散数据。任意子或缺陷的量子双模型还决定基态简并和拓扑量子计算中的门操作。",
       "source_links": [
         {
           "label": "百度百科",
@@ -652,9 +976,21 @@
     {
       "chinese_name": "基塔耶夫量子双",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "基塔耶夫量子双是 Kitaev 提出的有限群格点模型，以边上的群元素为自由度。其投影哈密顿量 $H=-\\sum_s A_s-\\sum_p B_p$ 中，$A_s$ 平均局域群作用，$B_p$ 检查 plaquette 磁通是否为单位元。所有项对易，使基态可精确求解。模型的任意子由共轭类和中心化子表示标记，给出 $D(G)$ 拓扑序；它展示离散规范约束如何生成拓扑简并和辫统计。\n\n基塔耶夫量子双展示了离散规范理论如何在格点上无微扰实现；其激发的辫统计可由 ribbon operator 计算，因此非常适合连接代数模型和物理操作。在范畴化语言中，「基塔耶夫量子双」往往对应对象、态射或高阶态射；这种层级记录了缺陷如何融合、如何终止以及如何在配边中传递。",
+      "complete_clues": [
+        "这是有限群格点规范理论中的一种精确可解构造。",
+        "它以边上的群元素为自由度，展示离散规范约束如何产生拓扑简并和辫统计。",
+        "投影哈密顿量为 $H=-\\sum_s A_s-\\sum_p B_p$。",
+        "所有项彼此对易，激发由共轭类和中心化子表示标记。",
+        "它的英文译名是 Kitaev quantum double。"
+      ],
+      "fragmented_clues": [
+        "有限群 格点规范理论 精确可解构造",
+        "边群元素 离散规范约束 拓扑简并 辫统计",
+        "$H=-\\sum_s A_s-\\sum_p B_p$",
+        "对易投影 共轭类 中心化子表示 激发标记",
+        "Kitaev quantum double"
+      ],
+      "explanation_markdown": "基塔耶夫量子双指 Kitaev 提出的有限群格点模型，以边上的群元素为自由度。其投影哈密顿量 $H=-\\sum_s A_s-\\sum_p B_p$ 中，$A_s$ 平均局域群作用，$B_p$ 检查 plaquette 磁通是否为单位元。所有项对易，使基态可精确求解。模型的任意子由共轭类和中心化子表示标记，给出 $D(G)$ 拓扑序；它展示离散规范约束如何生成拓扑简并和辫统计。\n\n基塔耶夫量子双展示了离散规范理论如何在格点上无微扰实现；其激发的辫统计可由 ribbon operator 计算，因此非常适合连接代数模型和物理操作。任意子或缺陷的基塔耶夫量子双还决定基态简并和拓扑量子计算中的门操作。基塔耶夫量子双用融合系数、编织矩阵和量子维数描述拓扑相，局域扰动不能改变这些离散数据。",
       "source_links": [
         {
           "label": "百度百科",
@@ -676,9 +1012,21 @@
     {
       "chinese_name": "莱文-文弦网",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "莱文-文弦网模型以融合范畴作为输入，在二维格点上构造精确可解的拓扑序。边标号为简单对象，顶点满足融合规则 $N_{ab}^c\\ne0$，面算符由 $F$ 符号和量子维数加权。哈密顿量 $H=-\\sum_v Q_v-\\sum_p B_p$ 的投影项彼此对易。\n\n其体任意子由输入范畴的德林费尔德中心给出，说明许多非手征拓扑序可由弦网凝聚统一生成。莱文-文模型的输入范畴控制局域重连规则，输出中心控制体激发；这种输入输出关系说明许多拓扑序可以从无手征边界数据中系统生成。若把「莱文-文弦网」用于凝聚态或量子计算，还需要关注可观测的辫统计、边界反常和基态简并；这些量比局域拉格朗日量更能代表拓扑相。",
+      "complete_clues": [
+        "这是二维拓扑序中的一种精确可解格点模型。",
+        "它以融合范畴为输入，用局域重连规则生成非手征体任意子。",
+        "哈密顿量可写 $H=-\\sum_v Q_v-\\sum_p B_p$。",
+        "边标号是简单对象，顶点满足融合规则，体激发由输入范畴的 Drinfeld 中心给出。",
+        "它的英文译名是 Levin-Wen string-net model。"
+      ],
+      "fragmented_clues": [
+        "二维拓扑序 精确可解 格点模型",
+        "融合范畴 局域重连规则 非手征体任意子",
+        "$H=-\\sum_v Q_v-\\sum_p B_p$",
+        "简单对象 边标号 融合规则 Drinfeld 中心 体激发",
+        "Levin-Wen string-net model"
+      ],
+      "explanation_markdown": "莱文-文弦网通常模型以融合范畴作为输入，在二维格点上构造精确可解的拓扑序。边标号为简单对象，顶点满足融合规则 $N_{ab}^c\\ne0$，面算符由 $F$ 符号和量子维数加权。哈密顿量 $H=-\\sum_v Q_v-\\sum_p B_p$ 的投影项彼此对易。\n\n其体任意子由输入范畴的德林费尔德中心给出，说明许多非手征拓扑序可由弦网凝聚统一生成。莱文-文模型的输入范畴控制局域重连规则，输出中心控制体激发；这种输入输出关系说明许多拓扑序可以从无手征边界数据中系统生成。莱文-文弦网用融合系数、编织矩阵和量子维数描述拓扑相，局域扰动不能改变这些离散数据。",
       "source_links": [
         {
           "label": "百度百科",
@@ -700,9 +1048,21 @@
     {
       "chinese_name": "弦网凝聚",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "弦网凝聚是把基态视为大量可分裂、重连和波动的标号弦网络的叠加。局部重连规则由 $F$ 符号控制，满足 $\\sum_n F^{ijm}_{kln}F^{inp}_{lqr}F^{jkr}_{nqs}=F^{mip}_{qrs}F^{jks}_{lpr}$ 的五边形一致性。凝聚态中的弦端和通量成为任意子。该图像解释了规范玻色子和费米统计如何从局域自旋模型的长程纠缠中涌现，并给出 Levin-Wen 模型的物理直观。\n\n弦网凝聚强调真空不是空无一物，而是满足局域重连等价的一大叠加；任意子可看作弦网规则的端点、扭曲或不可消去的通量缺陷。对「弦网凝聚」的严格构造常依赖模空间紧化、量子群半简化或 BV-BRST 处理；这些技术细节保证结果不随度量和辅助切割任意变化。",
+      "complete_clues": [
+        "这是拓扑序物理中的一种基态图像。",
+        "它把真空看成大量可分裂、重连和波动的标号网络叠加，并解释任意子端点和通量缺陷。",
+        "局部重连的一致性由五边形关系约束，例如 $\\sum_n F^{ijm}_{kln}F^{inp}_{lqr}F^{jkr}_{nqs}=F^{mip}_{qrs}F^{jks}_{lpr}$。",
+        "这种图像说明规范玻色子和费米统计可从局域自旋模型的长程纠缠中涌现。",
+        "它的英文译名是 string-net condensation。"
+      ],
+      "fragmented_clues": [
+        "拓扑序 基态图像",
+        "标号网络 叠加 分裂 重连 任意子端点 通量缺陷",
+        "$\\sum_n F^{ijm}_{kln}F^{inp}_{lqr}F^{jkr}_{nqs}=F^{mip}_{qrs}F^{jks}_{lpr}$",
+        "规范玻色子 费米统计 局域自旋模型 长程纠缠 涌现",
+        "string-net condensation"
+      ],
+      "explanation_markdown": "弦网凝聚表示把基态视为大量可分裂、重连和波动的标号弦网络的叠加。局部重连规则由 $F$ 符号控制，满足 $\\sum_n F^{ijm}_{kln}F^{inp}_{lqr}F^{jkr}_{nqs}=F^{mip}_{qrs}F^{jks}_{lpr}$ 的五边形一致性。凝聚态中的弦端和通量成为任意子。该图像解释了规范玻色子和费米统计如何从局域自旋模型的长程纠缠中涌现，并给出 Levin-Wen 模型的物理直观。\n\n弦网凝聚强调真空不是空无一物，而是满足局域重连等价的一大叠加；任意子可看作弦网规则的端点、扭曲或不可消去的通量缺陷。任意子或缺陷的弦网凝聚还决定基态简并和拓扑量子计算中的门操作。弦网凝聚用融合系数、编织矩阵和量子维数描述拓扑相，局域扰动不能改变这些离散数据。",
       "source_links": [
         {
           "label": "百度百科",
@@ -724,9 +1084,21 @@
     {
       "chinese_name": "拓扑纠缠熵",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "拓扑纠缠熵是二维 gapped 拓扑序区域熵中的负常数项，去除了边界面积律后的普适信息。对单连通区域，$S(A)=\\alpha L-\\gamma+o(1)$，其中 $L$ 是边界长度，$\\gamma=\\log\\mathcal D$，$\\mathcal D=\\sqrt{\\sum_a d_a^2}$ 为总量子维数。它由任意子超选择扇区的全局约束产生。\n\nKitaev-Preskill 或 Levin-Wen 组合可消去非普适边界项，从而提取拓扑数据。拓扑纠缠熵只提取总量子维数，不能完全区分所有拓扑序；因此它常与模矩阵、边界谱和任意子凝聚规则配合使用，形成更完整的诊断。「拓扑纠缠熵」在路径积分中常表现为对鞍点、标号或同调类求和；在公理化描述中，同一内容被重写为函子、范畴迹或配边诱导映射。它只给总量子维数，若要恢复完整任意子理论，还必须结合互统计和拓扑自旋数据。",
+      "complete_clues": [
+        "这是二维有能隙量子相中的一种熵常数。",
+        "它用于从区域熵中剥离非普适边界项，提取任意子数据的一部分。",
+        "对单连通区域常写 $S(A)=\\alpha L-\\gamma+o(1)$，其中 $\\gamma=\\log\\mathcal D$。",
+        "它只给出总量子维数，不能单独恢复完整的互统计和拓扑自旋。",
+        "它的英文译名是 topological entanglement entropy。"
+      ],
+      "fragmented_clues": [
+        "二维有能隙量子相 熵常数",
+        "区域熵 非普适边界项 任意子数据",
+        "$S(A)=\\alpha L-\\gamma+o(1)$ $\\gamma=\\log\\mathcal D$",
+        "总量子维数 互统计 拓扑自旋 不完整",
+        "topological entanglement entropy"
+      ],
+      "explanation_markdown": "拓扑纠缠熵可理解为二维 gapped 拓扑序区域熵中的负常数项，去除了边界面积律后的普适信息。对单连通区域，$S(A)=\\alpha L-\\gamma+o(1)$，其中 $L$ 是边界长度，$\\gamma=\\log\\mathcal D$，$\\mathcal D=\\sqrt{\\sum_a d_a^2}$ 为总量子维数。它由任意子超选择扇区的全局约束产生。\n\nKitaev-Preskill 或 Levin-Wen 组合可消去非普适边界项，从而提取拓扑数据。拓扑纠缠熵只提取总量子维数，不能完全区分所有拓扑序；因此它常与模矩阵、边界谱和任意子凝聚规则配合使用，形成更完整的诊断。它只给总量子维数，若要恢复完整任意子理论，还必须结合互统计和拓扑自旋数据。拓扑纠缠熵把路径积分结果压缩为配分函数、态空间或量子不变量，局域几何只在正规化中出现。",
       "source_links": [
         {
           "label": "百度百科",
@@ -748,9 +1120,21 @@
     {
       "chinese_name": "韦斯-朱米诺-威滕边界",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "韦斯-朱米诺-威滕边界出现在陈西蒙斯理论带边界时，边缘场 $g$ 补偿体作用量的规范变分。边界作用含 $S_{WZW}=\\frac{k}{8\\pi}\\int\\operatorname{Tr}(g^{-1}\\partial g)^2+\\frac{k}{12\\pi}\\int\\operatorname{Tr}(g^{-1}dg)^3$。其中第二项延拓到三维体内，级数 $k$ 保证量子一致性。它解释了三维拓扑体相为何携带二维手征共形边界模。\n\nWZW 边界项的存在说明带边界的陈西蒙斯理论不能只保留体自由度；边缘 Kac-Moody 代数提供了规范一致性，也承载可实验观测的手征传输。讨论「韦斯-朱米诺-威滕边界」时还应注意异常和量子化条件；级数、特征类或中心荷的取值往往由大规范变换和边界一致性强制决定。这类边界项也说明，体相的规范不变性和边缘共形对称不是两套独立结构。",
+      "complete_clues": [
+        "这是拓扑规范理论中的一种边缘场结构。",
+        "它出现在带边界的 Chern-Simons 理论中，用来补偿体作用量的规范变分。",
+        "边界作用含有 $S_{WZW}=\\frac{k}{8\\pi}\\int\\operatorname{Tr}(g^{-1}\\partial g)^2+\\frac{k}{12\\pi}\\int\\operatorname{Tr}(g^{-1}dg)^3$。",
+        "它使三维拓扑体相携带二维手征共形边界模，并引出边缘 Kac-Moody 代数。",
+        "它的英文译名是 Wess-Zumino-Witten boundary。"
+      ],
+      "fragmented_clues": [
+        "拓扑规范理论 边缘场结构",
+        "带边界 Chern-Simons 规范变分 补偿",
+        "$S_{WZW}=\\frac{k}{8\\pi}\\int\\operatorname{Tr}(g^{-1}\\partial g)^2+\\frac{k}{12\\pi}\\int\\operatorname{Tr}(g^{-1}dg)^3$",
+        "三维拓扑体相 二维手征共形边界 Kac-Moody 代数",
+        "Wess-Zumino-Witten boundary"
+      ],
+      "explanation_markdown": "韦斯-朱米诺-威滕边界通常出现在陈西蒙斯理论带边界时，边缘场 $g$ 补偿体作用量的规范变分。边界作用含 $S_{WZW}=\\frac{k}{8\\pi}\\int\\operatorname{Tr}(g^{-1}\\partial g)^2+\\frac{k}{12\\pi}\\int\\operatorname{Tr}(g^{-1}dg)^3$。其中第二项延拓到三维体内，级数 $k$ 保证量子一致性。它解释了三维拓扑体相为何携带二维手征共形边界模。\n\nWZW 边界项的存在说明带边界的陈西蒙斯理论不能只保留体自由度；边缘 Kac-Moody 代数提供了规范一致性，也承载可实验观测的手征传输。这类边界项也说明，体相的规范不变性和边缘共形对称不是两套独立结构。在韦斯-朱米诺-威滕边界相关模型中，bulk、边界和缺陷态必须同时满足融合或反常抵消条件。韦斯-朱米诺-威滕边界描述可在流形中移动的扩展插入，只有穿越其他缺陷或边界时才产生非平凡变换。",
       "source_links": [
         {
           "label": "百度百科",
@@ -772,9 +1156,21 @@
     {
       "chinese_name": "手征边缘态",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "手征边缘态是拓扑体相边界上单向传播的低能自由度，常由体拓扑项的反常流入保护。量子霍尔边界可写 $S=\\frac{K_{IJ}}{4\\pi}\\int \\partial_t\\phi_I\\partial_x\\phi_J-\\cdots$，其中 $K$ 矩阵编码体 Chern-Simons 响应，$\\phi_I$ 是边缘玻色场。手征中心荷决定热霍尔电导 $\\kappa_{xy}/T=c_-\\pi^2 k_B^2/(3h)$。\n\n局域无序不能轻易反向散射单一手征模。手征边缘态的稳定性来自缺少反向同伴和体反常约束；若多个边缘模共存，允许的相互作用和无序是否能开隙由 K 矩阵和对称性共同决定。继续分析「手征边缘态」时，应说明它依赖哪些附加结构，如取向、framing、自旋结构或标号范畴；这些选择会改变相位、态空间维数和可允许的缺陷。",
+      "complete_clues": [
+        "这是拓扑相边界上的一种低能自由度。",
+        "它与量子霍尔边界、体拓扑项的反常约束和热霍尔输运有关。",
+        "热响应满足 $\\kappa_{xy}/T=c_-\\pi^2k_B^2/(3h)$。",
+        "它沿单一方向传播，缺少反向同伴时局域无序难以造成反向散射。",
+        "它的英文译名是 chiral edge state。"
+      ],
+      "fragmented_clues": [
+        "拓扑相边界 低能自由度",
+        "量子霍尔边界 体拓扑项 反常约束 热霍尔输运",
+        "$\\kappa_{xy}/T=c_-\\pi^2k_B^2/(3h)$",
+        "单向传播 无反向同伴 局域无序 反向散射困难",
+        "chiral edge state"
+      ],
+      "explanation_markdown": "手征边缘态通常是拓扑体相边界上单向传播的低能自由度，常由体拓扑项的反常流入保护。量子霍尔边界可写 $S=\\frac{K_{IJ}}{4\\pi}\\int \\partial_t\\phi_I\\partial_x\\phi_J-\\cdots$，其中 $K$ 矩阵编码体 Chern-Simons 响应，$\\phi_I$ 是边缘玻色场。手征中心荷决定热霍尔电导 $\\kappa_{xy}/T=c_-\\pi^2 k_B^2/(3h)$。\n\n局域无序不能轻易反向散射单一手征模。手征边缘态的稳定性来自缺少反向同伴和体反常约束；若多个边缘模共存，允许的相互作用和无序是否能开隙由 K 矩阵和对称性共同决定。热输运和边界可开隙条件因此成为区分体拓扑序的重要探针。手征边缘态描述可在流形中移动的扩展插入，只有穿越其他缺陷或边界时才产生非平凡变换。",
       "source_links": [
         {
           "label": "百度百科",
@@ -796,9 +1192,21 @@
     {
       "chinese_name": "反常流入",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "反常流入描述体拓扑项在有边界时产生的规范或引力变分，被边界量子反常抵消。典型关系为 $\\delta S_{\\rm bulk}=-\\delta W_{\\rm edge}$，其中 $S_{\\rm bulk}$ 是体有效作用，$W_{\\rm edge}$ 是边界有效作用。陈西蒙斯理论中，规范变换的边界项要求出现手征 WZW 或边缘玻色场。\n\n它说明某些边界理论不能单独定义在同维空间中，而必须作为高维体相的边界存在。反常流入把边界理论的表观不守恒解释为体相流来的拓扑电流；这使某些异常边界可被一致实现，也成为识别 SPT 相和拓扑序边界的重要工具。使用「反常流入」时，核心是它在切割粘合下怎样变换；只有振幅、态空间和缺陷融合同时满足一致性，才真正构成拓扑场论数据。",
+      "complete_clues": [
+        "这是量子场论中的一种边界一致性机制。",
+        "它描述高维体拓扑项与低维边界异常之间的抵消关系。",
+        "典型关系为 $\\delta S_{\\rm bulk}=-\\delta W_{\\rm edge}$。",
+        "它说明某些异常边界理论不能独立存在，只能作为更高维体相的边界实现。",
+        "它的英文译名是 anomaly inflow。"
+      ],
+      "fragmented_clues": [
+        "量子场论 边界一致性机制",
+        "高维体拓扑项 低维边界异常 抵消",
+        "$\\delta S_{\\rm bulk}=-\\delta W_{\\rm edge}$",
+        "异常边界理论 非独立存在 高维体相边界",
+        "anomaly inflow"
+      ],
+      "explanation_markdown": "反常流入刻画体拓扑项在有边界时产生的规范或引力变分，被边界量子反常抵消。典型关系为 $\\delta S_{\\rm bulk}=-\\delta W_{\\rm edge}$，其中 $S_{\\rm bulk}$ 是体有效作用，$W_{\\rm edge}$ 是边界有效作用。陈西蒙斯理论中，规范变换的边界项要求出现手征 WZW 或边缘玻色场。\n\n它说明某些边界理论不能单独定义在同维空间中，而必须作为高维体相的边界存在。反常流入把边界理论的表观不守恒解释为体相流来的拓扑电流；这使某些异常边界可被一致实现，也成为识别 SPT 相和拓扑序边界的重要工具。在反常流入相关模型中，bulk、边界和缺陷态必须同时满足融合或反常抵消条件。反常流入描述可在流形中移动的扩展插入，只有穿越其他缺陷或边界时才产生非平凡变换。",
       "source_links": [
         {
           "label": "百度百科",
@@ -820,9 +1228,21 @@
     {
       "chinese_name": "拓扑缺陷",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "拓扑缺陷是在 TQFT 中可自由形变而不改变相关函数的低维插入，包括线、面和界面。若缺陷算符 $D$ 满足应力张量穿越条件 $T_{\\perp\\parallel}^{(1)}=T_{\\perp\\parallel}^{(2)}$，则平移缺陷不耗能。缺陷可携带范畴对象、对称作用或任意子类型，融合形成代数。\n\n它们不仅标记外源，还能实现对偶、凝聚和边界条件变换，是现代高阶对称和扩展 TQFT 的核心语言。拓扑缺陷可被移动、弯曲甚至与其他缺陷融合，只要不穿过算符插入或改变拓扑类；因此它们在相关函数中表现为对称操作、投影器或界面态射。围绕「拓扑缺陷」的物理解释还要区分体相、边界态和插入算符；许多量子不变量正是三者兼容后留下的普适信息，而不是单个公式的数值。",
+      "complete_clues": [
+        "这是场论中的一种低维插入对象。",
+        "它与线、面、界面、对称操作、凝聚和边界条件变换有关。",
+        "平移不耗能的条件可写 $T_{\\perp\\parallel}^{(1)}=T_{\\perp\\parallel}^{(2)}$。",
+        "它可在相关函数中自由形变和融合，只要不穿过其他算符或改变拓扑类。",
+        "它的英文译名是 topological defect。"
+      ],
+      "fragmented_clues": [
+        "场论 低维插入对象",
+        "线 面 界面 对称操作 凝聚 边界条件变换",
+        "$T_{\\perp\\parallel}^{(1)}=T_{\\perp\\parallel}^{(2)}$",
+        "相关函数 自由形变 融合 拓扑类",
+        "topological defect"
+      ],
+      "explanation_markdown": "拓扑缺陷可理解为在 TQFT 中可自由形变而不改变相关函数的低维插入，包括线、面和界面。若缺陷算符 $D$ 满足应力张量穿越条件 $T_{\\perp\\parallel}^{(1)}=T_{\\perp\\parallel}^{(2)}$，则平移缺陷不耗能。缺陷可携带范畴对象、对称作用或任意子类型，融合形成代数。\n\n它们不仅标记外源，还能实现对偶、凝聚和边界条件变换，是现代高阶对称和扩展 TQFT 的核心语言。拓扑缺陷可被移动、弯曲甚至与其他缺陷融合，只要不穿过算符插入或改变拓扑类；因此它们在相关函数中表现为对称操作、投影器或界面态射。拓扑缺陷描述可在流形中移动的扩展插入，只有穿越其他缺陷或边界时才产生非平凡变换。",
       "source_links": [
         {
           "label": "百度百科",
@@ -844,9 +1264,21 @@
     {
       "chinese_name": "缺陷线",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "缺陷线是一维拓扑插入，可表示任意子世界线、对称线或范畴对象。线算符沿路径 $\\gamma$ 的期望可写 $\\langle L_a(\\gamma)\\rangle$，其中 $a$ 标记超选择扇区；在拓扑理论中，它只依赖 $\\gamma$ 的同伦或嵌入拓扑。多条缺陷线的融合满足 $L_aL_b=\\sum_c N_{ab}^cL_c$。\n\n可逆缺陷线实现普通或高阶对称，非可逆缺陷线则带来范畴化对称结构。缺陷线的端点若允许存在，通常代表局域算符或边界态；线能否终止、如何融合和穿越其他线，决定了对称是否可破缺、凝聚或推广为非可逆形式。在范畴化语言中，「缺陷线」往往对应对象、态射或高阶态射；这种层级记录了缺陷如何融合、如何终止以及如何在配边中传递。",
+      "complete_clues": [
+        "这是场论中的一种一维插入对象。",
+        "它可表示任意子世界线、对称作用或范畴对象，并作用在局域算符和边界态上。",
+        "多条这样的插入可满足 $L_aL_b=\\sum_c N_{ab}^cL_c$。",
+        "可逆情形实现普通或高阶对称，非可逆情形带来范畴化对称结构。",
+        "它的英文译名是 defect line。"
+      ],
+      "fragmented_clues": [
+        "场论 一维插入对象",
+        "任意子世界线 对称作用 范畴对象 局域算符 边界态",
+        "$L_aL_b=\\sum_c N_{ab}^cL_c$",
+        "可逆 高阶对称 非可逆 范畴化对称",
+        "defect line"
+      ],
+      "explanation_markdown": "缺陷线指一维拓扑插入，可表示任意子世界线、对称线或范畴对象。线算符沿路径 $\\gamma$ 的期望可写 $\\langle L_a(\\gamma)\\rangle$，其中 $a$ 标记超选择扇区；在拓扑理论中，它只依赖 $\\gamma$ 的同伦或嵌入拓扑。多条缺陷线的融合满足 $L_aL_b=\\sum_c N_{ab}^cL_c$。\n\n可逆缺陷线实现普通或高阶对称，非可逆缺陷线则带来范畴化对称结构。缺陷线的端点若允许存在，通常代表局域算符或边界态；线能否终止、如何融合和穿越其他线，决定了对称是否可破缺、凝聚或推广为非可逆形式。在缺陷线相关模型中，bulk、边界和缺陷态必须同时满足融合或反常抵消条件。缺陷线描述可在流形中移动的扩展插入，只有穿越其他缺陷或边界时才产生非平凡变换。",
       "source_links": [
         {
           "label": "百度百科",
@@ -868,9 +1300,21 @@
     {
       "chinese_name": "线算符",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "线算符是沿一维子流形插入的可观测量，常探测规范通量、荷或任意子辫统计。Wilson 线形式为 $W_R(\\gamma)=\\operatorname{Tr}_R P\\exp\\oint_\\gamma A$，其中 $R$ 是表示，$A$ 是规范联络，$P$ 表示路径序。在 TQFT 中，线的连续形变不改变期望值，只有交链、辫化和标号重要。\n\n线算符的融合与端点规则定义了高阶对称和任意子范畴。线算符的代数常比局域算符更能揭示拓扑相，因为它检测不可局域屏蔽的荷；在规范理论中，Wilson 与 't Hooft 线的相互辫化编码一形式对称。若把「线算符」用于凝聚态或量子计算，还需要关注可观测的辫统计、边界反常和基态简并；这些量比局域拉格朗日量更能代表拓扑相。",
+      "complete_clues": [
+        "这是量子场论中的一种一维可观测量。",
+        "它探测规范通量、荷、一形式对称以及任意子辫统计。",
+        "一个典型例子写作 $W_R(\\gamma)=\\operatorname{Tr}_R P\\exp\\oint_\\gamma A$。",
+        "在拓扑理论中，连续形变不改变它的期望，交链、辫化和标号才是主要数据。",
+        "它的英文译名是 line operator。"
+      ],
+      "fragmented_clues": [
+        "量子场论 一维可观测量",
+        "规范通量 荷 一形式对称 任意子辫统计",
+        "$W_R(\\gamma)=\\operatorname{Tr}_R P\\exp\\oint_\\gamma A$",
+        "连续形变 期望不变 交链 辫化 标号",
+        "line operator"
+      ],
+      "explanation_markdown": "线算符通常是沿一维子流形插入的可观测量，常探测规范通量、荷或任意子辫统计。Wilson 线形式为 $W_R(\\gamma)=\\operatorname{Tr}_R P\\exp\\oint_\\gamma A$，其中 $R$ 是表示，$A$ 是规范联络，$P$ 表示路径序。在 TQFT 中，线的连续形变不改变期望值，只有交链、辫化和标号重要。\n\n线算符的融合与端点规则定义了高阶对称和任意子范畴。线算符的代数常比局域算符更能揭示拓扑相，因为它检测不可局域屏蔽的荷；在规范理论中，Wilson 与 't Hooft 线的相互辫化编码一形式对称。线算符描述可在流形中移动的扩展插入，只有穿越其他缺陷或边界时才产生非平凡变换。在线算符相关模型中，bulk、边界和缺陷态必须同时满足融合或反常抵消条件。",
       "source_links": [
         {
           "label": "百度百科",
@@ -892,9 +1336,21 @@
     {
       "chinese_name": "面算符",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "面算符是支撑在二维子流形上的扩展可观测量，在四维规范理论和高阶对称中尤为重要。若面 $\\Sigma$ 上规定奇异边界条件，可写 $F\\sim 2\\pi\\alpha\\,\\delta_\\Sigma$，其中 $\\alpha$ 是磁通参数，$\\delta_\\Sigma$ 是 Poincare 对偶二形式。面算符可与线算符有交叉相位，反映一形式对称荷。\n\n拓扑情形下，它们按融合和滑移关系形成高维缺陷范畴。面算符在四维理论中与线算符的交叉相位给出高阶对称配对；它们也可作为规范场奇异边界条件，改变模空间并插入额外的拓扑量。对「面算符」的严格构造常依赖模空间紧化、量子群半简化或 BV-BRST 处理；这些技术细节保证结果不随度量和辅助切割任意变化。",
+      "complete_clues": [
+        "这是量子场论中的一种二维扩展可观测量。",
+        "它常出现在四维规范理论、高阶对称和线状插入的交叉相位分析中。",
+        "若支撑面为 $\\Sigma$，奇异边界条件可写 $F\\sim2\\pi\\alpha\\,\\delta_\\Sigma$。",
+        "它能改变模空间并插入额外拓扑量，与一维插入的配对反映一形式对称荷。",
+        "它的英文译名是 surface operator。"
+      ],
+      "fragmented_clues": [
+        "量子场论 二维扩展可观测量",
+        "四维规范理论 高阶对称 交叉相位",
+        "$F\\sim2\\pi\\alpha\\,\\delta_\\Sigma$",
+        "模空间改变 额外拓扑量 一形式对称荷",
+        "surface operator"
+      ],
+      "explanation_markdown": "面算符表示支撑在二维子流形上的扩展可观测量，在四维规范理论和高阶对称中尤为重要。若面 $\\Sigma$ 上规定奇异边界条件，可写 $F\\sim 2\\pi\\alpha\\,\\delta_\\Sigma$，其中 $\\alpha$ 是磁通参数，$\\delta_\\Sigma$ 是 Poincare 对偶二形式。面算符可与线算符有交叉相位，反映一形式对称荷。\n\n拓扑情形下，它们按融合和滑移关系形成高维缺陷范畴。面算符在四维理论中与线算符的交叉相位给出高阶对称配对；它们也可作为规范场奇异边界条件，改变模空间并插入额外的拓扑量。在面算符相关模型中，bulk、边界和缺陷态必须同时满足融合或反常抵消条件。面算符描述可在流形中移动的扩展插入，只有穿越其他缺陷或边界时才产生非平凡变换。",
       "source_links": [
         {
           "label": "百度百科",
@@ -916,9 +1372,21 @@
     {
       "chinese_name": "威尔逊线",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "威尔逊线是规范场沿闭合或开放路径的平行移动迹，是规范理论中最基本的线算符。定义 $W_R(\\gamma)=\\operatorname{Tr}_R P\\exp\\oint_\\gamma A$，其中 $A$ 是联络，$R$ 是表示。陈西蒙斯理论中，闭合威尔逊线的期望只依赖纽结类型和 framing，给出 Jones 或更一般量子群不变量。\n\n开放威尔逊线则需要端点态或边界条件才能保持规范不变。威尔逊线的 framing 在陈西蒙斯理论中不可忽略，因为自交链数会影响相位；这反映量子正则化需要给一维线一个法向平移方向。「威尔逊线」在路径积分中常表现为对鞍点、标号或同调类求和；在公理化描述中，同一内容被重写为函子、范畴迹或配边诱导映射。",
+      "complete_clues": [
+        "这是规范场论中最基本的一维可观测量之一。",
+        "它用于描述沿路径的平行移动迹，并在 Chern-Simons 理论中产生纽结不变量。",
+        "定义为 $W_R(\\gamma)=\\operatorname{Tr}_R P\\exp\\oint_\\gamma A$。",
+        "闭合情形的期望依赖纽结类型和 framing；开放情形需要端点态或边界条件保持规范不变。",
+        "它的英文译名是 Wilson line。"
+      ],
+      "fragmented_clues": [
+        "规范场论 一维可观测量",
+        "路径平行移动迹 Chern-Simons 纽结不变量",
+        "$W_R(\\gamma)=\\operatorname{Tr}_R P\\exp\\oint_\\gamma A$",
+        "闭合期望 纽结类型 framing 开放端点态 边界条件",
+        "Wilson line"
+      ],
+      "explanation_markdown": "威尔逊线可理解为规范场沿闭合或开放路径的平行移动迹，是规范理论中最基本的线算符。定义 $W_R(\\gamma)=\\operatorname{Tr}_R P\\exp\\oint_\\gamma A$，其中 $A$ 是联络，$R$ 是表示。陈西蒙斯理论中，闭合威尔逊线的期望只依赖纽结类型和 framing，给出 Jones 或更一般量子群不变量。\n\n开放威尔逊线则需要端点态或边界条件才能保持规范不变。威尔逊线的 framing 在陈西蒙斯理论中不可忽略，因为自交链数会影响相位；这反映量子正则化需要给一维线一个法向平移方向。威尔逊线通常把平坦联络模空间、链环 holonomy 和量子群表示联系起来，度规只作为量子化辅助。含威尔逊线的三流形计算会随手术或边界环面坐标改写，但最终不变量不依赖具体切割。",
       "source_links": [
         {
           "label": "百度百科",
@@ -940,9 +1408,21 @@
     {
       "chinese_name": "霍夫代数不变量",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "霍夫代数不变量用量子群或更一般 Hopf 代数的表示构造纽结和三流形不变量。若 $H$ 有 R 矩阵 $R\\in H\\otimes H$，辫交叉由 $\\check R=\\tau\\circ R$ 表示，其中 $\\tau$ 交换张量因子。再用量子迹闭合辫图，得到链环多项式。余乘、对极和积分结构保证 Reidemeister 移动不变。\n\n它把代数表示论直接转化为拓扑图形的评价规则。Hopf 代数中的 R 矩阵解决 Yang-Baxter 方程，保证辫群关系成立；量子迹和 ribbon 元则负责闭合、扭转和取向，使图形演算成为拓扑不变量。讨论「霍夫代数不变量」时还应注意异常和量子化条件；级数、特征类或中心荷的取值往往由大规范变换和边界一致性强制决定。当 Hopf 代数带 ribbon 结构时，framing 修正也能被代数化，闭合链环评价才稳定。",
+      "complete_clues": [
+        "这是量子拓扑中的一种代数构造不变量。",
+        "它用量子群或 Hopf 代数表示来评价纽结、链环和三流形。",
+        "若有 $R\\in H\\otimes H$，辫交叉可由 $\\check R=\\tau\\circ R$ 表示。",
+        "余乘、对极、量子迹和 ribbon 元共同保证 Reidemeister 移动与 framing 修正下的稳定性。",
+        "它的英文译名是 Hopf algebra invariant。"
+      ],
+      "fragmented_clues": [
+        "量子拓扑 代数构造不变量",
+        "量子群 Hopf 代数表示 纽结 链环 三流形",
+        "$R\\in H\\otimes H$ $\\check R=\\tau\\circ R$",
+        "余乘 对极 量子迹 ribbon 元 Reidemeister 移动 framing",
+        "Hopf algebra invariant"
+      ],
+      "explanation_markdown": "霍夫代数不变量常用量子群或更一般 Hopf 代数的表示构造纽结和三流形不变量。若 $H$ 有 R 矩阵 $R\\in H\\otimes H$，辫交叉由 $\\check R=\\tau\\circ R$ 表示，其中 $\\tau$ 交换张量因子。再用量子迹闭合辫图，得到链环多项式。余乘、对极和积分结构保证 Reidemeister 移动不变。\n\n它把代数表示论直接转化为拓扑图形的评价规则。Hopf 代数中的 R 矩阵解决 Yang-Baxter 方程，保证辫群关系成立；量子迹和 ribbon 元则负责闭合、扭转和取向，使图形演算成为拓扑不变量。当 Hopf 代数带 ribbon 结构时，framing 修正也能被代数化，闭合链环评价才稳定。计算霍夫代数不变量时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。",
       "source_links": [
         {
           "label": "百度百科",
@@ -964,9 +1444,21 @@
     {
       "chinese_name": "量子群表示",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "量子群表示是根单位量子群和陈西蒙斯 TQFT 的代数输入。以 $U_q(\\mathfrak g)$ 为例，表示范畴带有 R 矩阵和量子维数，融合由截断张量积分解决。变量 $q=e^{2\\pi i/(k+h^\\vee)}$ 中，$k$ 是级数，$h^\\vee$ 是对偶 Coxeter 数。根单位处只保留可积最高权表示，形成模张量范畴。\n\n它决定 Wilson 线标号、纽结多项式和三流形手术公式。量子群表示在根单位处会出现截断，普通张量积不再简单沿经典最高权无限增长；这个截断正对应有限个任意子类型和有限维曲面态空间。继续分析「量子群表示」时，应说明它依赖哪些附加结构，如取向、framing、自旋结构或标号范畴；这些选择会改变相位、态空间维数和可允许的缺陷。",
+      "complete_clues": [
+        "这是表示论和量子拓扑中的一种代数输入。",
+        "它决定 Chern-Simons 理论中的线标号、纽结多项式和三流形手术计算。",
+        "常用参数为 $q=e^{2\\pi i/(k+h^\\vee)}$。",
+        "在根单位处，普通最高权表示会被截断，只留下有限个可积表示和有限维曲面态空间。",
+        "它的英文译名是 quantum group representation。"
+      ],
+      "fragmented_clues": [
+        "表示论 量子拓扑 代数输入",
+        "Chern-Simons 线标号 纽结多项式 三流形手术",
+        "$q=e^{2\\pi i/(k+h^\\vee)}$",
+        "根单位 截断 可积表示 有限维曲面态空间",
+        "quantum group representation"
+      ],
+      "explanation_markdown": "量子群表示通常是根单位量子群和陈西蒙斯 TQFT 的代数输入。以 $U_q(\\mathfrak g)$ 为例，表示范畴带有 R 矩阵和量子维数，融合由截断张量积分解决。变量 $q=e^{2\\pi i/(k+h^\\vee)}$ 中，$k$ 是级数，$h^\\vee$ 是对偶 Coxeter 数。根单位处只保留可积最高权表示，形成模张量范畴。\n\n它决定 Wilson 线标号、纽结多项式和三流形手术公式。量子群表示在根单位处会出现截断，普通张量积不再简单沿经典最高权无限增长；这个截断正对应有限个任意子类型和有限维曲面态空间。量子群表示把路径积分结果压缩为配分函数、态空间或量子不变量，局域几何只在正规化中出现。计算量子群表示时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。",
       "source_links": [
         {
           "label": "百度百科",
@@ -988,9 +1480,21 @@
     {
       "chinese_name": "根单位量子群",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "根单位量子群是在 $q$ 为单位根时的量子包络代数，表示论出现截断和非半单细节。陈西蒙斯理论中常取 $q=e^{2\\pi i/(k+h^\\vee)}$，其中 $k$ 是级数。可积表示构成有限集合，使融合规则与 Verlinde 代数一致。为得到三流形不变量，需要处理量子迹、坏对象商掉或采用小量子群版本。\n\n它是从李代数对称到模张量范畴的关键量子化节点。根单位情形需要小心非半单表示带来的零量子维数对象；在构造 TQFT 时，通常要取半简化商或使用修正迹，以保证三流形不变量良好。使用「根单位量子群」时，核心是它在切割粘合下怎样变换；只有振幅、态空间和缺陷融合同时满足一致性，才真正构成拓扑场论数据。",
+      "complete_clues": [
+        "这是量子代数中的一种特殊参数情形。",
+        "它出现在 Chern-Simons 级数、Verlinde 代数和三流形量子不变量构造中。",
+        "常取 $q=e^{2\\pi i/(k+h^\\vee)}$，其中 $k$ 是级数。",
+        "此时表示论会出现截断和非半单细节，构造 TQFT 时常要半简化或使用修正迹。",
+        "它的英文译名是 quantum group at a root of unity。"
+      ],
+      "fragmented_clues": [
+        "量子代数 特殊参数情形",
+        "Chern-Simons 级数 Verlinde 代数 三流形量子不变量",
+        "$q=e^{2\\pi i/(k+h^\\vee)}$",
+        "表示截断 非半单 半简化 修正迹",
+        "quantum group at a root of unity"
+      ],
+      "explanation_markdown": "根单位量子群表示在 $q$ 为单位根时的量子包络代数，表示论出现截断和非半单细节。陈西蒙斯理论中常取 $q=e^{2\\pi i/(k+h^\\vee)}$，其中 $k$ 是级数。可积表示构成有限集合，使融合规则与 Verlinde 代数一致。为得到三流形不变量，需要处理量子迹、坏对象商掉或采用小量子群版本。\n\n它是从李代数对称到模张量范畴的关键量子化节点。根单位情形需要小心非半单表示带来的零量子维数对象；在构造 TQFT 时，通常要取半简化商或使用修正迹，以保证三流形不变量良好。计算根单位量子群时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1012,9 +1516,21 @@
     {
       "chinese_name": "克莱恩-耶特模型",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "克莱恩-耶特模型是四维状态和 TQFT，由球面或模范畴数据对三角剖分着色求和。其配分函数可示意为 $Z(M)=\\sum_{\\mathrm{labels}}\\prod_f d_f\\prod_t F_t\\prod_\\sigma 15j_\\sigma$，其中面、四面体和四单形权重来自范畴 $F$ 符号和量子维数。Pachner 移动不变性保证拓扑不变。\n\n它可视为四维 BF 型理论的离散量子版本，并为自旋泡沫模型提供原型。克莱恩-耶特模型的四维不变量常与签名和范畴中心数据有关；它虽比物理量子引力简单，却展示了四维状态和如何通过 Pachner 移动保持拓扑不变。围绕「克莱恩-耶特模型」的物理解释还要区分体相、边界态和插入算符；许多量子不变量正是三者兼容后留下的普适信息，而不是单个公式的数值。",
+      "complete_clues": [
+        "这是四维拓扑场论中的一种状态和模型。",
+        "它用球面或模范畴数据对三角剖分着色求和，并与四维 BF 型理论、自旋泡沫有关。",
+        "配分函数可示意为 $Z(M)=\\sum_{\\mathrm{labels}}\\prod_f d_f\\prod_t F_t\\prod_\\sigma 15j_\\sigma$。",
+        "Pachner 移动不变性保证结果不依赖三角剖分，四维权重来自面、四面体和四单形数据。",
+        "它的英文译名是 Crane-Yetter model。"
+      ],
+      "fragmented_clues": [
+        "四维拓扑场论 状态和模型",
+        "球面范畴 模范畴 三角剖分 着色求和 BF 型理论 自旋泡沫",
+        "$Z(M)=\\sum_{\\mathrm{labels}}\\prod_f d_f\\prod_t F_t\\prod_\\sigma 15j_\\sigma$",
+        "Pachner 移动 面 四面体 四单形 权重",
+        "Crane-Yetter model"
+      ],
+      "explanation_markdown": "克莱恩-耶特模型可理解为四维状态和 TQFT，由球面或模范畴数据对三角剖分着色求和。其配分函数可示意为 $Z(M)=\\sum_{\\mathrm{labels}}\\prod_f d_f\\prod_t F_t\\prod_\\sigma 15j_\\sigma$，其中面、四面体和四单形权重来自范畴 $F$ 符号和量子维数。Pachner 移动不变性保证拓扑不变。\n\n它可视为四维 BF 型理论的离散量子版本，并为自旋泡沫模型提供原型。克莱恩-耶特模型的四维不变量常与签名和范畴中心数据有关；它虽比物理量子引力简单，却展示了四维状态和如何通过 Pachner 移动保持拓扑不变。克莱恩-耶特模型把路径积分结果压缩为配分函数、态空间或量子不变量，局域几何只在正规化中出现。计算克莱恩-耶特模型时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1036,9 +1552,21 @@
     {
       "chinese_name": "三维TQFT",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "三维TQFT给闭曲面赋予有限维态空间，给三维配边赋予线性映射。典型结构由模张量范畴 $\\mathcal C$ 决定，环面态空间维数满足 $\\dim Z(T^2)=|\\operatorname{Irr}(\\mathcal C)|$。闭三流形配分函数可通过手术或状态和计算。陈西蒙斯、Turaev-Viro 和量子双模型都是重要例子。\n\n三维特殊之处在于线缺陷可辫化，因此任意子统计和纽结不变量自然出现。三维理论中，点粒子世界线成为可辫对象，这是二维空间拓扑允许的特殊现象；因此三维 TQFT 自然服务于任意子物理、纽结理论和拓扑量子计算。在范畴化语言中，「三维TQFT」往往对应对象、态射或高阶态射；这种层级记录了缺陷如何融合、如何终止以及如何在配边中传递。",
+      "complete_clues": [
+        "这是拓扑量子场论中的一个维数类别。",
+        "它给闭曲面赋予有限维态空间，给同维配边赋予线性映射。",
+        "环面态空间维数常满足 $\\dim Z(T^2)=|\\operatorname{Irr}(\\mathcal C)|$。",
+        "这一维度中点粒子世界线可以辫化，因此任意子统计和纽结不变量自然出现。",
+        "它的英文译名是 three-dimensional TQFT。"
+      ],
+      "fragmented_clues": [
+        "拓扑量子场论 维数类别",
+        "闭曲面 有限维态空间 配边 线性映射",
+        "$\\dim Z(T^2)=|\\operatorname{Irr}(\\mathcal C)|$",
+        "点粒子世界线 辫化 任意子统计 纽结不变量",
+        "three-dimensional TQFT"
+      ],
+      "explanation_markdown": "三维TQFT通常给闭曲面赋予有限维态空间，给三维配边赋予线性映射。典型结构由模张量范畴 $\\mathcal C$ 决定，环面态空间维数满足 $\\dim Z(T^2)=|\\operatorname{Irr}(\\mathcal C)|$。闭三流形配分函数可通过手术或状态和计算。陈西蒙斯、Turaev-Viro 和量子双模型都是重要例子。\n\n三维特殊之处在于线缺陷可辫化，因此任意子统计和纽结不变量自然出现。三维理论中，点粒子世界线成为可辫对象，这是二维空间拓扑允许的特殊现象；因此三维 TQFT 自然服务于任意子物理、纽结理论和拓扑量子计算。计算三维TQFT时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。三维TQFT把路径积分结果压缩为配分函数、态空间或量子不变量，局域几何只在正规化中出现。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1060,9 +1588,21 @@
     {
       "chinese_name": "二维TQFT",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "二维TQFT完全由一个有限维交换 Frobenius 代数描述。圆的态空间为代数 $A$，裤形配边给乘法 $m:A\\otimes A\\to A$，帽形配边给迹 $\\epsilon:A\\to\\mathbb C$。Frobenius 条件保证不同切割方式得到同一曲面振幅。闭曲面配分函数可由 $A$ 的乘法和迹递归计算。\n\n这个分类说明低维 TQFT 的粘合公理能被压缩成代数对象，也为开闭 TQFT 的边界代数奠基。二维理论的分类体现了配边的生成关系：圆、裤形和帽形已经足以生成所有闭曲面；代数中的结合性、余结合性和 Frobenius 条件正是这些几何关系的翻译。若把「二维TQFT」用于凝聚态或量子计算，还需要关注可观测的辫统计、边界反常和基态简并；这些量比局域拉格朗日量更能代表拓扑相。",
+      "complete_clues": [
+        "这是拓扑量子场论中的一个低维类别。",
+        "它把闭曲面粘合问题压缩为有限维代数中的乘法、余乘法和迹。",
+        "圆的态空间可记为代数 $A$，裤形配边给 $m:A\\otimes A\\to A$。",
+        "它完全由有限维交换 Frobenius 代数描述，Frobenius 条件保证不同切割给同一振幅。",
+        "它的英文译名是 two-dimensional TQFT。"
+      ],
+      "fragmented_clues": [
+        "拓扑量子场论 低维类别",
+        "闭曲面粘合 有限维代数 乘法 余乘法 迹",
+        "$m:A\\otimes A\\to A$",
+        "交换 Frobenius 代数 不同切割 同一振幅",
+        "two-dimensional TQFT"
+      ],
+      "explanation_markdown": "二维TQFT通常完全由一个有限维交换 Frobenius 代数描述。圆的态空间为代数 $A$，裤形配边给乘法 $m:A\\otimes A\\to A$，帽形配边给迹 $\\epsilon:A\\to\\mathbb C$。Frobenius 条件保证不同切割方式得到同一曲面振幅。闭曲面配分函数可由 $A$ 的乘法和迹递归计算。\n\n这个分类说明低维 TQFT 的粘合公理能被压缩成代数对象，也为开闭 TQFT 的边界代数奠基。二维理论的分类体现了配边的生成关系：圆、裤形和帽形已经足以生成所有闭曲面；代数中的结合性、余结合性和 Frobenius 条件正是这些几何关系的翻译。二维TQFT把路径积分结果压缩为配分函数、态空间或量子不变量，局域几何只在正规化中出现。计算二维TQFT时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1084,9 +1624,21 @@
     {
       "chinese_name": "四维TQFT",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "四维TQFT研究四流形不变量和三维边界态空间，结构远比二维和三维复杂。例子包括 Donaldson-Witten 理论、BF 理论和 Crane-Yetter 状态和。典型路径积分为 $Z(X)=\\int \\mathcal D\\Phi\\,e^{-S_{top}[\\Phi]}$，其中作用量对度量变分为 Q-恰当项或完全无度量。四维中自对偶方程、交叉形式和 Seiberg-Witten 模空间进入核心，反映光滑结构在四维的特殊敏感性。\n\n四维 TQFT 往往对光滑结构敏感，而不仅是同伦类型；这使其构造需要处理模空间紧化和指标取向，也让规范理论成为四维拓扑的强力探针。对「四维TQFT」的严格构造常依赖模空间紧化、量子群半简化或 BV-BRST 处理；这些技术细节保证结果不随度量和辅助切割任意变化。",
+      "complete_clues": [
+        "这是拓扑量子场论中的一个高维类别。",
+        "它研究四流形不变量、三维边界态空间以及规范场模空间给出的拓扑数据。",
+        "典型路径积分可写 $Z(X)=\\int\\mathcal D\\Phi\\,e^{-S_{top}[\\Phi]}$。",
+        "这一维度对光滑结构格外敏感，自对偶方程、交叉形式和单极子模空间都进入主要结构。",
+        "它的英文译名是 four-dimensional TQFT。"
+      ],
+      "fragmented_clues": [
+        "拓扑量子场论 高维类别",
+        "四流形不变量 三维边界态空间 规范场模空间",
+        "$Z(X)=\\int\\mathcal D\\Phi\\,e^{-S_{top}[\\Phi]}$",
+        "光滑结构敏感 自对偶方程 交叉形式 单极子模空间",
+        "four-dimensional TQFT"
+      ],
+      "explanation_markdown": "四维TQFT通常研究四流形不变量和三维边界态空间，结构远比二维和三维复杂。例子包括 Donaldson-Witten 理论、BF 理论和 Crane-Yetter 状态和。典型路径积分为 $Z(X)=\\int \\mathcal D\\Phi\\,e^{-S_{top}[\\Phi]}$，其中作用量对度量变分为 Q-恰当项或完全无度量。四维中自对偶方程、交叉形式和 Seiberg-Witten 模空间进入核心，反映光滑结构在四维的特殊敏感性。\n\n四维 TQFT 往往对光滑结构敏感，而不仅是同伦类型；这使其构造需要处理模空间紧化和指标取向，也让规范理论成为四维拓扑的强力探针。计算四维TQFT时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。四维TQFT把路径积分结果压缩为配分函数、态空间或量子不变量，局域几何只在正规化中出现。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1108,9 +1660,21 @@
     {
       "chinese_name": "开闭TQFT",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "开闭TQFT允许世界面同时有闭弦圆边界和开弦区间边界，代数上由 Cardy Frobenius 数据描述。闭态代数 $C$ 映到开态代数中心，常写 $i:C\\to Z(A)$，其中 $A$ 是边界条件对应的 Frobenius 代数。Cardy 条件要求开闭两种通道的环面振幅一致。\n\n该结构把 D 膜边界态、开弦端点和闭弦体态统一在二维拓扑场论的粘合公理中。开闭理论中的边界条件可视为 D 膜对象，开弦态是对象间态射；Cardy 条件保证从闭弦传播和开弦环路两种切割看同一圆环振幅时结果一致。「开闭TQFT」在路径积分中常表现为对鞍点、标号或同调类求和；在公理化描述中，同一内容被重写为函子、范畴迹或配边诱导映射。",
+      "complete_clues": [
+        "这是二维拓扑场论中的一种带边界版本。",
+        "它同时处理圆形闭弦边界和区间型开弦边界，并与 D 膜边界态有关。",
+        "闭态代数到开态代数中心的映射常写 $i:C\\to Z(A)$。",
+        "Cardy 条件要求同一环面振幅从闭弦传播和开弦环路两种切割看保持一致。",
+        "它的英文译名是 open-closed TQFT。"
+      ],
+      "fragmented_clues": [
+        "二维拓扑场论 带边界版本",
+        "圆形闭弦边界 区间型开弦边界 D 膜边界态",
+        "$i:C\\to Z(A)$",
+        "Cardy 条件 环面振幅 闭弦传播 开弦环路 一致",
+        "open-closed TQFT"
+      ],
+      "explanation_markdown": "开闭TQFT通常允许世界面同时有闭弦圆边界和开弦区间边界，代数上由 Cardy Frobenius 数据描述。闭态代数 $C$ 映到开态代数中心，常写 $i:C\\to Z(A)$，其中 $A$ 是边界条件对应的 Frobenius 代数。Cardy 条件要求开闭两种通道的环面振幅一致。\n\n该结构把 D 膜边界态、开弦端点和闭弦体态统一在二维拓扑场论的粘合公理中。开闭理论中的边界条件可视为 D 膜对象，开弦态是对象间态射；Cardy 条件保证从闭弦传播和开弦环路两种切割看同一圆环振幅时结果一致。开闭TQFT把路径积分结果压缩为配分函数、态空间或量子不变量，局域几何只在正规化中出现。计算开闭TQFT时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1132,9 +1696,21 @@
     {
       "chinese_name": "扩展TQFT",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "扩展TQFT不仅给闭 $(d-1)$ 维流形赋态空间，也给更低维角、边和点赋范畴化对象。可写成对更高配边范畴的对称单oidal函子 $Z:\\mathrm{Bord}_d^{\\le k}\\to\\mathcal C$，其中目标 $\\mathcal C$ 是高阶范畴。扩展性使缺陷、边界和局域算符成为同一函子的不同维度取值。\n\n它比普通 TQFT 保留更多局部结构，并为可完全分类的全扩展理论奠定基础。扩展理论记录低维缺陷后，局域算符不再是附属物，而是点上赋值的一部分；这对于描述边界、畴壁和任意子端点的相干关系至关重要。讨论「扩展TQFT」时还应注意异常和量子化条件；级数、特征类或中心荷的取值往往由大规范变换和边界一致性强制决定。",
+      "complete_clues": [
+        "这是拓扑量子场论的一种高层级版本。",
+        "它把边界、角、低维缺陷和局域算符都纳入同一个函子的取值范围。",
+        "可写成 $Z:\\mathrm{Bord}_d^{\\le k}\\to\\mathcal C$。",
+        "它比普通版本保留更多局部结构，使不同维度的缺陷成为同一高阶范畴语言中的对象或态射。",
+        "它的英文译名是 extended TQFT。"
+      ],
+      "fragmented_clues": [
+        "拓扑量子场论 高层级版本",
+        "边界 角 低维缺陷 局域算符 函子取值",
+        "$Z:\\mathrm{Bord}_d^{\\le k}\\to\\mathcal C$",
+        "局部结构 高阶范畴 对象 态射",
+        "extended TQFT"
+      ],
+      "explanation_markdown": "扩展TQFT通常不仅给闭 $(d-1)$ 维流形赋态空间，也给更低维角、边和点赋范畴化对象。可写成对更高配边范畴的对称单oidal函子 $Z:\\mathrm{Bord}_d^{\\le k}\\to\\mathcal C$，其中目标 $\\mathcal C$ 是高阶范畴。扩展性使缺陷、边界和局域算符成为同一函子的不同维度取值。\n\n它比普通 TQFT 保留更多局部结构，并为可完全分类的全扩展理论奠定基础。扩展理论记录低维缺陷后，局域算符不再是附属物，而是点上赋值的一部分；这对于描述边界、畴壁和任意子端点的相干关系至关重要。在扩展TQFT里，空流形、柱体和方向反转也有规定取值，这保证态空间对偶关系一致。扩展TQFT把切割后的边界态和粘合后的线性映射配对，复合律比局域哈密顿量更基本。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1156,9 +1732,21 @@
     {
       "chinese_name": "全扩展TQFT",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "全扩展TQFT给从点到 $d$ 维配边的所有维度赋值，因而可由点上的完全可对偶对象控制。配边假设表述为 $\\mathrm{Fun}^{\\otimes}(\\mathrm{Bord}_d^{fr},\\mathcal C)\\simeq \\mathcal C^{fd}$，其中右边是全可对偶对象的空间。选择切向结构会进一步要求同伦固定点条件。\n\n该定理把 TQFT 分类化为高阶范畴中的对偶性问题，使边界、缺陷和局域算符可从点数据递归生成。全扩展分类把构造 TQFT 的问题转化为寻找全可对偶对象；这解释了为什么有限维 Frobenius 代数、融合范畴和可双对偶范畴反复出现在低维理论中。继续分析「全扩展TQFT」时，应说明它依赖哪些附加结构，如取向、framing、自旋结构或标号范畴；这些选择会改变相位、态空间维数和可允许的缺陷。",
+      "complete_clues": [
+        "这是拓扑量子场论中最细分层级的一类版本。",
+        "它从点到 $d$ 维配边全部赋值，并把分类问题转化为高阶范畴中的对偶性问题。",
+        "配边假设可表述为 $\\mathrm{Fun}^{\\otimes}(\\mathrm{Bord}_d^{fr},\\mathcal C)\\simeq\\mathcal C^{fd}$。",
+        "只要知道点上的全可对偶对象，就可以递归生成高维流形、边界和缺陷的取值。",
+        "它的英文译名是 fully extended TQFT。"
+      ],
+      "fragmented_clues": [
+        "拓扑量子场论 最细分层级版本",
+        "点到 $d$ 维配边 高阶范畴 对偶性问题",
+        "$\\mathrm{Fun}^{\\otimes}(\\mathrm{Bord}_d^{fr},\\mathcal C)\\simeq\\mathcal C^{fd}$",
+        "全可对偶对象 递归生成 高维流形 边界 缺陷",
+        "fully extended TQFT"
+      ],
+      "explanation_markdown": "全扩展TQFT通常给从点到 $d$ 维配边的所有维度赋值，因而可由点上的完全可对偶对象控制。配边假设表述为 $\\mathrm{Fun}^{\\otimes}(\\mathrm{Bord}_d^{fr},\\mathcal C)\\simeq \\mathcal C^{fd}$，其中右边是全可对偶对象的空间。选择切向结构会进一步要求同伦固定点条件。\n\n该定理把 TQFT 分类化为高阶范畴中的对偶性问题，使边界、缺陷和局域算符可从点数据递归生成。全扩展分类把构造 TQFT 的问题转化为寻找全可对偶对象；这解释了为什么有限维 Frobenius 代数、融合范畴和可双对偶范畴反复出现在低维理论中。全扩展TQFT把切割后的边界态和粘合后的线性映射配对，复合律比局域哈密顿量更基本。在全扩展TQFT里，空流形、柱体和方向反转也有规定取值，这保证态空间对偶关系一致。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1180,9 +1768,21 @@
     {
       "chinese_name": "配边范畴",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "配边范畴是 TQFT 的定义域，对象为闭流形，态射为以这些流形为边界的高一维流形。若 $M:\\Sigma_0\\to\\Sigma_1$，则边界满足 $\\partial M=\\overline{\\Sigma_0}\\sqcup\\Sigma_1$。态射复合通过沿公共边界粘合完成，单oidal结构由不交并给出。TQFT 函子把这种几何组合翻译成线性映射的复合和张量积。\n\n配边范畴的高阶版本还记录角和缺陷，是扩展 TQFT 的基础。配边范畴的方向反转对应态空间对偶，空流形对应基域单位；这些简单规则强迫 TQFT 的振幅满足强约束，使手术和粘合计算具备范畴一致性。使用「配边范畴」时，核心是它在切割粘合下怎样变换；只有振幅、态空间和缺陷融合同时满足一致性，才真正构成拓扑场论数据。",
+      "complete_clues": [
+        "这是拓扑场论定义域中的一种范畴。",
+        "它把闭流形作为对象，把以这些流形为边界的高一维流形作为态射。",
+        "若 $M:\\Sigma_0\\to\\Sigma_1$，边界满足 $\\partial M=\\overline{\\Sigma_0}\\sqcup\\Sigma_1$。",
+        "态射复合由沿公共边界粘合完成，不交并给出单oidal结构。",
+        "它的英文译名是 cobordism category。"
+      ],
+      "fragmented_clues": [
+        "拓扑场论 定义域 范畴",
+        "闭流形 对象 高一维流形 态射",
+        "$\\partial M=\\overline{\\Sigma_0}\\sqcup\\Sigma_1$",
+        "公共边界 粘合 态射复合 不交并 单oidal结构",
+        "cobordism category"
+      ],
+      "explanation_markdown": "配边范畴表示 TQFT 的定义域，对象为闭流形，态射为以这些流形为边界的高一维流形。若 $M:\\Sigma_0\\to\\Sigma_1$，则边界满足 $\\partial M=\\overline{\\Sigma_0}\\sqcup\\Sigma_1$。态射复合通过沿公共边界粘合完成，单oidal结构由不交并给出。TQFT 函子把这种几何组合翻译成线性映射的复合和张量积。\n\n配边范畴的高阶版本还记录角和缺陷，是扩展 TQFT 的基础。配边范畴的方向反转对应态空间对偶，空流形对应基域单位；这些简单规则强迫 TQFT 的振幅满足强约束，使手术和粘合计算具备范畴一致性。在配边范畴里，空流形、柱体和方向反转也有规定取值，这保证态空间对偶关系一致。配边范畴把切割后的边界态和粘合后的线性映射配对，复合律比局域哈密顿量更基本。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1204,9 +1804,21 @@
     {
       "chinese_name": "高阶范畴",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "高阶范畴允许对象之间有态射、态射之间有二态射，并继续向上迭代，是扩展 TQFT 的自然目标。全扩展理论可视为 $Z:\\mathrm{Bord}_d\\to\\mathcal C$，其中 $k$ 维配边映到 $(d-k)$ 阶态射。对偶性、伴随和可逆性在每一阶都要满足一致条件。\n\n物理上，点、线、面缺陷和它们的交汇不能只用普通范畴描述，高阶范畴提供了记录这些层级关系的语言。高阶范畴允许缺陷交汇本身再有态射，适合描述非可逆对称和多层边界条件；没有这种层级结构，扩展 TQFT 的局域到整体规则会丢失信息。围绕「高阶范畴」的物理解释还要区分体相、边界态和插入算符；许多量子不变量正是三者兼容后留下的普适信息，而不是单个公式的数值。",
+      "complete_clues": [
+        "这是范畴论中的一种分层结构。",
+        "它用于记录扩展拓扑场论中的点、线、面缺陷及其交汇关系。",
+        "全扩展理论可视为 $Z:\\mathrm{Bord}_d\\to\\mathcal C$。",
+        "它不仅有对象和态射，还允许态射之间继续有更高态射，使局域到整体的层级关系不丢失。",
+        "它的英文译名是 higher category。"
+      ],
+      "fragmented_clues": [
+        "范畴论 分层结构",
+        "扩展拓扑场论 点 线 面缺陷 交汇关系",
+        "$Z:\\mathrm{Bord}_d\\to\\mathcal C$",
+        "对象 态射 更高态射 层级关系",
+        "higher category"
+      ],
+      "explanation_markdown": "高阶范畴通常允许对象之间有态射、态射之间有二态射，并继续向上迭代，是扩展 TQFT 的自然目标。全扩展理论可视为 $Z:\\mathrm{Bord}_d\\to\\mathcal C$，其中 $k$ 维配边映到 $(d-k)$ 阶态射。对偶性、伴随和可逆性在每一阶都要满足一致条件。\n\n物理上，点、线、面缺陷和它们的交汇不能只用普通范畴描述，高阶范畴提供了记录这些层级关系的语言。高阶范畴允许缺陷交汇本身再有态射，适合描述非可逆对称和多层边界条件；没有这种层级结构，扩展 TQFT 的局域到整体规则会丢失信息。高阶范畴把切割后的边界态和粘合后的线性映射配对，复合律比局域哈密顿量更基本。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1228,9 +1840,21 @@
     {
       "chinese_name": "因子化同调",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "因子化同调把 $E_n$ 代数在 $n$ 维流形上积分，给出局域到整体的拓扑不变量。记作 $\\int_M A$，其中 $A$ 是 $E_n$ 代数，结构映射来自小圆盘嵌入。对 $M=S^1$ 和 $E_1$ 代数，因子化同调退化为 Hochschild 同调 $HH_*(A)$。它把可观测量的局域乘法和流形拓扑结合起来，是可局域化 TQFT、非阿贝尔 Poincare 对偶和高阶代数的共同框架。\n\n因子化同调可看作把可观测量代数沿流形所有小圆盘一致粘合；它比普通同调更贴近量子场论，因为乘法的高阶交换性直接参与全局不变量。在范畴化语言中，「因子化同调」往往对应对象、态射或高阶态射；这种层级记录了缺陷如何融合、如何终止以及如何在配边中传递。",
+      "complete_clues": [
+        "这是拓扑代数和场论中的一种局域到整体构造。",
+        "它把 $E_n$ 代数沿 $n$ 维流形一致粘合，产生与可观测量乘法有关的不变量。",
+        "标准记号是 $\\int_M A$。",
+        "当 $M=S^1$ 且 $A$ 是 $E_1$ 代数时，它退化为 Hochschild 同调 $HH_*(A)$。",
+        "它的英文译名是 factorization homology。"
+      ],
+      "fragmented_clues": [
+        "拓扑代数 场论 局域到整体构造",
+        "$E_n$ 代数 $n$ 维流形 可观测量乘法 不变量",
+        "$\\int_M A$",
+        "$M=S^1$ $E_1$ 代数 Hochschild 同调 $HH_*(A)$",
+        "factorization homology"
+      ],
+      "explanation_markdown": "因子化同调通常把 $E_n$ 代数在 $n$ 维流形上积分，给出局域到整体的拓扑不变量。记作 $\\int_M A$，其中 $A$ 是 $E_n$ 代数，结构映射来自小圆盘嵌入。对 $M=S^1$ 和 $E_1$ 代数，因子化同调退化为 Hochschild 同调 $HH_*(A)$。它把可观测量的局域乘法和流形拓扑结合起来，是可局域化 TQFT、非阿贝尔 Poincare 对偶和高阶代数的共同框架。\n\n因子化同调可看作把可观测量代数沿流形所有小圆盘一致粘合；它比普通同调更贴近量子场论，因为乘法的高阶交换性直接参与全局不变量。在因子化同调里，空流形、柱体和方向反转也有规定取值，这保证态空间对偶关系一致。因子化同调把切割后的边界态和粘合后的线性映射配对，复合律比局域哈密顿量更基本。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1252,9 +1876,21 @@
     {
       "chinese_name": "拓扑σ模型",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "拓扑σ模型是把二维 $\\mathcal N=(2,2)$ σ 模型经 A 或 B 扭曲后得到的 TQFT。场为映射 $\\phi:\\Sigma\\to X$，相关函数在 Q 上同调中只依赖目标的辛或复几何。A 模型局域到伪全纯曲线并产生格罗莫夫-威滕不变量；B 模型依赖复结构并由 polyvector 同调控制。\n\n扭曲后应力张量为 Q-恰当项，所以世界面度量变化不影响拓扑相关函数。拓扑 σ 模型的扭曲把超荷变成标量 BRST 算符，使能动张量为 Q 恰当；于是相关函数只看目标空间几何的某一半信息，形成 A/B 两类互补理论。若把「拓扑σ模型」用于凝聚态或量子计算，还需要关注可观测的辫统计、边界反常和基态简并；这些量比局域拉格朗日量更能代表拓扑相。",
+      "complete_clues": [
+        "这是二维超对称场论中的一类拓扑扭曲模型。",
+        "它把世界面映射到目标空间，相关函数只依赖目标的辛或复几何信息。",
+        "场可写成映射 $\\phi:\\Sigma\\to X$。",
+        "扭曲后应力张量为 $Q$-恰当项，世界面度量变化不改变拓扑相关函数。",
+        "它的英文译名是 topological sigma model。"
+      ],
+      "fragmented_clues": [
+        "二维超对称场论 拓扑扭曲模型",
+        "世界面映射 目标空间 辛几何 复几何",
+        "$\\phi:\\Sigma\\to X$",
+        "$Q$-恰当 应力张量 世界面度量 拓扑相关函数",
+        "topological sigma model"
+      ],
+      "explanation_markdown": "拓扑σ模型通常是把二维 $\\mathcal N=(2,2)$ σ 模型经 A 或 B 扭曲后得到的 TQFT。场为映射 $\\phi:\\Sigma\\to X$，相关函数在 Q 上同调中只依赖目标的辛或复几何。A 模型局域到伪全纯曲线并产生格罗莫夫-威滕不变量；B 模型依赖复结构并由 polyvector 同调控制。\n\n扭曲后应力张量为 Q-恰当项，所以世界面度量变化不影响拓扑相关函数。拓扑 σ 模型的扭曲把超荷变成标量 BRST 算符，使能动张量为 Q 恰当；于是相关函数只看目标空间几何的某一半信息，形成 A/B 两类互补理论。拓扑σ模型把路径积分结果压缩为配分函数、态空间或量子不变量，局域几何只在正规化中出现。计算拓扑σ模型时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1276,9 +1912,21 @@
     {
       "chinese_name": "A模型",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "A模型是二维超对称 σ 模型的拓扑扭曲，主要依赖目标空间的辛结构。其路径积分局域到伪全纯映射，满足 $\\bar\\partial_J\\phi=0$，其中 $J$ 是相容几乎复结构。相关函数给格罗莫夫-威滕不变量，边界条件由拉格朗日子流形和局域系统组成。\n\n开弦 A 模型的范畴化结构是 Fukaya 范畴。它在镜像对称中与 B 模型互换，把曲线计数转化为复几何代数问题。A 模型对 Kähler 模和辛面积敏感，世界面瞬子按曲线面积加权；其边界 brane 必须满足拉格朗日条件，使开弦态射由 Floer 理论给出。对「A模型」的严格构造常依赖模空间紧化、量子群半简化或 BV-BRST 处理；这些技术细节保证结果不随度量和辅助切割任意变化。",
+      "complete_clues": [
+        "这是二维超对称 sigma 理论的一种拓扑扭曲。",
+        "它主要依赖目标空间的辛结构，并在镜像对称中对应另一侧的复几何计算。",
+        "路径积分局域到满足 $\\bar\\partial_J\\phi=0$ 的伪全纯映射。",
+        "开弦边界条件由拉格朗日子流形和局域系统给出，相关函数产生曲线计数不变量。",
+        "它的英文译名是 A-model。"
+      ],
+      "fragmented_clues": [
+        "二维超对称 sigma 理论 拓扑扭曲",
+        "辛结构 镜像对称 复几何计算",
+        "$\\bar\\partial_J\\phi=0$",
+        "拉格朗日子流形 局域系统 开弦边界 曲线计数",
+        "A-model"
+      ],
+      "explanation_markdown": "A模型表示二维超对称 σ 模型的拓扑扭曲，主要依赖目标空间的辛结构。其路径积分局域到伪全纯映射，满足 $\\bar\\partial_J\\phi=0$，其中 $J$ 是相容几乎复结构。相关函数给格罗莫夫-威滕不变量，边界条件由拉格朗日子流形和局域系统组成。\n\n开弦 A 模型的范畴化结构是 Fukaya 范畴。它在镜像对称中与 B 模型互换，把曲线计数转化为复几何代数问题。A 模型对 Kähler 模和辛面积敏感，世界面瞬子按曲线面积加权；其边界 brane 必须满足拉格朗日条件，使开弦态射由 Floer 理论给出。计算A模型时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。A模型把路径积分结果压缩为配分函数、态空间或量子不变量，局域几何只在正规化中出现。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1300,9 +1948,21 @@
     {
       "chinese_name": "B模型",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "B模型是二维超对称 σ 模型的另一种拓扑扭曲，只依赖目标 Calabi-Yau 的复结构。闭弦态空间可写 $\\bigoplus_{p,q}H^q(X,\\wedge^p T_X)$，其中 $T_X$ 是全纯切丛。相关函数由复结构形变和全纯体积形式控制，不计数世界面包裹曲线。\n\n开弦 B 模型的 brane 由凝聚层或导范畴对象描述。镜像对称把 B 模型的复结构计算对应到镜像 A 模型的辛曲线计数。B 模型的相关函数可由复结构模和全纯体积形式计算，Kähler 形变通常为 Q 恰当；这使它成为镜像对称中求解 A 模型曲线计数的有效工具。「B模型」在路径积分中常表现为对鞍点、标号或同调类求和；在公理化描述中，同一内容被重写为函子、范畴迹或配边诱导映射。",
+      "complete_clues": [
+        "这是二维超对称 sigma 理论的另一种拓扑扭曲。",
+        "它依赖目标 Calabi-Yau 的复结构，并在镜像对称中帮助求解辛侧曲线计数。",
+        "闭弦态空间可写 $\\bigoplus_{p,q}H^q(X,\\wedge^pT_X)$。",
+        "它不计数世界面包裹曲线，相关函数由复结构形变和全纯体积形式控制。",
+        "它的英文译名是 B-model。"
+      ],
+      "fragmented_clues": [
+        "二维超对称 sigma 理论 拓扑扭曲",
+        "Calabi-Yau 复结构 镜像对称 辛侧曲线计数",
+        "$\\bigoplus_{p,q}H^q(X,\\wedge^pT_X)$",
+        "非曲线计数 复结构形变 全纯体积形式",
+        "B-model"
+      ],
+      "explanation_markdown": "B模型可理解为二维超对称 σ 模型的另一种拓扑扭曲，只依赖目标 Calabi-Yau 的复结构。闭弦态空间可写 $\\bigoplus_{p,q}H^q(X,\\wedge^p T_X)$，其中 $T_X$ 是全纯切丛。相关函数由复结构形变和全纯体积形式控制，不计数世界面包裹曲线。\n\n开弦 B 模型的 brane 由凝聚层或导范畴对象描述。镜像对称把 B 模型的复结构计算对应到镜像 A 模型的辛曲线计数。B 模型的相关函数可由复结构模和全纯体积形式计算，Kähler 形变通常为 Q 恰当；这使它成为镜像对称中求解 A 模型曲线计数的有效工具。B模型把路径积分结果压缩为配分函数、态空间或量子不变量，局域几何只在正规化中出现。计算B模型时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1324,9 +1984,21 @@
     {
       "chinese_name": "罗赞斯基-威滕模型",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "罗赞斯基-威滕模型是三维 σ 型 TQFT，目标空间为超凯勒流形。场是映射 $\\phi:M^3\\to X$，费米零模和目标曲率相互作用产生三流形不变量。图展开中权重由 $X$ 的 Atiyah 类和三维配置空间积分给出，可写成 $Z(M,X)=\\sum_\\Gamma b_\\Gamma(X)I_\\Gamma(M)$。\n\n它把 Rozansky-Witten 不变量与超凯勒几何、导范畴和三维镜像对称联系起来。罗赞斯基-威滕模型的图权重把三维拓扑和目标超凯勒曲率相乘；若目标取 Hitchin 模空间，它还与三维镜像、范畴化和几何 Langlands 的边界理论相连。讨论「罗赞斯基-威滕模型」时还应注意异常和量子化条件；级数、特征类或中心荷的取值往往由大规范变换和边界一致性强制决定。",
+      "complete_clues": [
+        "这是三维 sigma 型拓扑场论中的一种模型。",
+        "它以超凯勒流形为目标空间，把三维拓扑和目标曲率数据结合起来。",
+        "图展开可写成 $Z(M,X)=\\sum_\\Gamma b_\\Gamma(X)I_\\Gamma(M)$。",
+        "图权重由目标的 Atiyah 类和三维配置空间积分给出，因而目标几何直接进入拓扑振幅。",
+        "它的英文译名是 Rozansky-Witten model。"
+      ],
+      "fragmented_clues": [
+        "三维 sigma 型拓扑场论 模型",
+        "超凯勒目标空间 三维拓扑 目标曲率",
+        "$Z(M,X)=\\sum_\\Gamma b_\\Gamma(X)I_\\Gamma(M)$",
+        "Atiyah 类 配置空间积分 目标几何 拓扑振幅",
+        "Rozansky-Witten model"
+      ],
+      "explanation_markdown": "罗赞斯基-威滕模型指三维 σ 型 TQFT，目标空间为超凯勒流形。场是映射 $\\phi:M^3\\to X$，费米零模和目标曲率相互作用产生三流形不变量。图展开中权重由 $X$ 的 Atiyah 类和三维配置空间积分给出，可写成 $Z(M,X)=\\sum_\\Gamma b_\\Gamma(X)I_\\Gamma(M)$。\n\n它把 Rozansky-Witten 不变量与超凯勒几何、导范畴和三维镜像对称联系起来。罗赞斯基-威滕模型的图权重把三维拓扑和目标超凯勒曲率相乘；若目标取 Hitchin 模空间，它还与三维镜像、范畴化和几何 Langlands 的边界理论相连。这一模型也把目标空间几何直接写入三维拓扑振幅。计算罗赞斯基-威滕模型时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1348,9 +2020,21 @@
     {
       "chinese_name": "唐纳森威滕理论",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "唐纳森威滕理论是四维 $\\mathcal N=2$ 超杨-米尔斯的拓扑扭曲，路径积分局域到反自对偶联络。BPS 方程为 $F_A^+=0$，其中 $F_A^+$ 是自对偶曲率。Q-闭观测量通过 descent 构造插入，相关函数等于 Donaldson 多项式。扭曲把旋量指标与微分形式指标重组，使超对称 Ward 恒等式保证度量独立。\n\n它给 Donaldson 不变量提供物理推导，并预示 Seiberg-Witten 简化。Donaldson-Witten 理论的观测量通过下降方程从规范不变多项式生成，因此点、面和四维插入彼此相关；这正是四维 TQFT 中局域算符与同调类配对的机制。继续分析「唐纳森威滕理论」时，应说明它依赖哪些附加结构，如取向、framing、自旋结构或标号范畴；这些选择会改变相位、态空间维数和可允许的缺陷。",
+      "complete_clues": [
+        "这是四维超对称规范理论的一种拓扑扭曲。",
+        "它给 Donaldson 型四流形不变量提供物理推导，并预示低能对偶带来的简化。",
+        "局域化方程为 $F_A^+=0$。",
+        "扭曲把旋量指标重组成微分形式指标，Q-闭观测量的相关函数等于相应多项式不变量。",
+        "它的英文译名是 Donaldson-Witten theory。"
+      ],
+      "fragmented_clues": [
+        "四维超对称规范理论 拓扑扭曲",
+        "Donaldson 型四流形不变量 物理推导 低能对偶",
+        "$F_A^+=0$",
+        "旋量指标 微分形式 Q-闭观测量 多项式不变量",
+        "Donaldson-Witten theory"
+      ],
+      "explanation_markdown": "唐纳森威滕理论通常是四维 $\\mathcal N=2$ 超杨-米尔斯的拓扑扭曲，路径积分局域到反自对偶联络。BPS 方程为 $F_A^+=0$，其中 $F_A^+$ 是自对偶曲率。Q-闭观测量通过 descent 构造插入，相关函数等于 Donaldson 多项式。扭曲把旋量指标与微分形式指标重组，使超对称 Ward 恒等式保证度量独立。\n\n它给 Donaldson 不变量提供物理推导，并预示 Seiberg-Witten 简化。Donaldson-Witten 理论的观测量通过下降方程从规范不变多项式生成，因此点、面和四维插入彼此相关；这正是四维 TQFT 中局域算符与同调类配对的机制。唐纳森威滕理论来自模空间的有向计数或同调类，紧化、横截性和取向会直接影响结果。物理扭曲理论中的唐纳森威滕理论把 BPS 方程留下来，非零模相消后只剩拓扑数据。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1372,9 +2056,21 @@
     {
       "chinese_name": "卡普斯廷-威滕方程",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "卡普斯廷-威滕方程来自四维 $\\mathcal N=4$ 杨-米尔斯的拓扑扭曲，是几何朗兰兹物理解释的核心。对联络 $A$ 和伴随一形式 $\\phi$，方程含 $F_A-\\phi\\wedge\\phi+*d_A\\phi=0$ 与 $d_A*\\phi=0$ 的参数化版本。这里 $*$ 是 Hodge 星算符。其模空间在边界条件和 S 对偶下连接 flat $G_\\mathbb C$ 联络、Higgs 丛和 Hecke 算子，给几何朗兰兹对偶以量子场论来源。\n\nKapustin-Witten 方程带有参数族，不同参数对应 A 模型、B 模型或中间扭曲；边界条件选择会把 Wilson、't Hooft 和 Hecke 算子联系起来。使用「卡普斯廷-威滕方程」时，核心是它在切割粘合下怎样变换；只有振幅、态空间和缺陷融合同时满足一致性，才真正构成拓扑场论数据。不同边界条件给出的 brane 范畴对应 Langlands 对偶两侧的几何对象，是该方程的核心用途。",
+      "complete_clues": [
+        "这是四维超杨-米尔斯拓扑扭曲中的一组场方程。",
+        "它连接 S 对偶、边界条件、flat $G_\\mathbb C$ 联络、Higgs 丛和几何 Langlands 图像。",
+        "其中一部分可写 $F_A-\\phi\\wedge\\phi+*d_A\\phi=0$ 与 $d_A*\\phi=0$。",
+        "不同参数和边界条件会对应 A 型、B 型或中间扭曲，并把 Wilson、't Hooft 与 Hecke 算子联系起来。",
+        "它的英文译名是 Kapustin-Witten equations。"
+      ],
+      "fragmented_clues": [
+        "四维超杨-米尔斯 拓扑扭曲 场方程",
+        "S 对偶 边界条件 flat $G_\\mathbb C$ 联络 Higgs 丛 几何 Langlands",
+        "$F_A-\\phi\\wedge\\phi+*d_A\\phi=0$ $d_A*\\phi=0$",
+        "参数族 A 型 B 型 Wilson 't Hooft Hecke 算子",
+        "Kapustin-Witten equations"
+      ],
+      "explanation_markdown": "卡普斯廷-威滕方程来源于四维 $\\mathcal N=4$ 杨-米尔斯的拓扑扭曲，是几何朗兰兹物理解释的核心。对联络 $A$ 和伴随一形式 $\\phi$，方程含 $F_A-\\phi\\wedge\\phi+*d_A\\phi=0$ 与 $d_A*\\phi=0$ 的参数化版本。这里 $*$ 是 Hodge 星算符。其模空间在边界条件和 S 对偶下连接 flat $G_\\mathbb C$ 联络、Higgs 丛和 Hecke 算子，给几何朗兰兹对偶以量子场论来源。\n\nKapustin-Witten 方程带有参数族，不同参数对应 A 模型、B 模型或中间扭曲；边界条件选择会把 Wilson、't Hooft 和 Hecke 算子联系起来。不同边界条件给出的 brane 范畴对应 Langlands 对偶两侧的几何对象，是该方程的核心用途。计算卡普斯廷-威滕方程时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。卡普斯廷-威滕方程把路径积分结果压缩为配分函数、态空间或量子不变量，局域几何只在正规化中出现。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1396,9 +2092,21 @@
     {
       "chinese_name": "几何 朗兰兹对偶",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "几何朗兰兹对偶把曲线上 $G$ 束的 D 模与 Langlands 对偶群 $^{L}G$ 的局域系统联系起来。物理表述中，四维 $\\mathcal N=4$ 理论的 S 对偶交换 $G$ 与 $^{L}G$，并在 Riemann 曲面紧化后作用于 brane 范畴。核心对应可写 $\\mathcal D\\text{-mod}(\\operatorname{Bun}_G)\\leftrightarrow \\operatorname{QCoh}(\\operatorname{Loc}_{^{L}G})$。Kapustin-Witten 方程提供这一范畴等价的场论几何背景。\n\n几何朗兰兹的物理图像强调 S 对偶不是简单群同构，而是范畴、边界条件和缺陷线的等价；这让代数几何中的 Hecke eigensheaf 获得场论解释。围绕「几何 朗兰兹对偶」的物理解释还要区分体相、边界态和插入算符；许多量子不变量正是三者兼容后留下的普适信息，而不是单个公式的数值。在这一图像中，Wilson 与 t Hooft 缺陷互换，正对应 Hecke 修改和局域系统特征值条件。",
+      "complete_clues": [
+        "这是表示论和代数几何中的一种范畴对应。",
+        "它在物理图像中由四维 $\\mathcal N=4$ 理论的 S 对偶、边界条件和缺陷线解释。",
+        "核心对应可写 $\\mathcal D\\text{-mod}(\\operatorname{Bun}_G)\\leftrightarrow\\operatorname{QCoh}(\\operatorname{Loc}_{^{L}G})$。",
+        "它把 Hecke eigensheaf、局域系统和 Langlands 对偶群之间的关系提升为场论中的 brane 范畴等价。",
+        "它的英文译名是 geometric Langlands duality。"
+      ],
+      "fragmented_clues": [
+        "表示论 代数几何 范畴对应",
+        "$\\mathcal N=4$ S 对偶 边界条件 缺陷线",
+        "$\\mathcal D\\text{-mod}(\\operatorname{Bun}_G)\\leftrightarrow\\operatorname{QCoh}(\\operatorname{Loc}_{^{L}G})$",
+        "Hecke eigensheaf 局域系统 对偶群 brane 范畴等价",
+        "geometric Langlands duality"
+      ],
+      "explanation_markdown": "几何朗兰兹对偶把曲线上 $G$ 束的 D 模与 Langlands 对偶群 $^{L}G$ 的局域系统联系起来。物理表述中，四维 $\\mathcal N=4$ 理论的 S 对偶交换 $G$ 与 $^{L}G$，并在 Riemann 曲面紧化后作用于 brane 范畴。核心对应可写 $\\mathcal D\\text{-mod}(\\operatorname{Bun}_G)\\leftrightarrow \\operatorname{QCoh}(\\operatorname{Loc}_{^{L}G})$。Kapustin-Witten 方程提供这一范畴等价的场论几何背景。\n\n几何朗兰兹的物理图像强调 S 对偶不是简单群同构，而是范畴、边界条件和缺陷线的等价；这让代数几何中的 Hecke eigensheaf 获得场论解释。这种物理解释还区分体相、边界态和插入算符；许多量子不变量正是三者兼容后留下的普适信息，而不是单个公式的数值。在这一图像中，Wilson 与 t Hooft 缺陷互换，正对应 Hecke 修改和局域系统特征值条件。几何 朗兰兹对偶把路径积分结果压缩为配分函数、态空间或量子不变量，局域几何只在正规化中出现。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1420,9 +2128,21 @@
     {
       "chinese_name": "弗洛尔同调",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "弗洛尔同调把无限维函数的 Morse 理论用于几何模空间，链群由临界点生成，微分计数梯度流线。抽象写法为 $\\partial x=\\sum_y n(x,y)y$，其中 $n(x,y)$ 是从 $x$ 到 $y$ 的刚性流线计数。不同版本的函数包括 Chern-Simons 泛函、辛作用量或 Seiberg-Witten 泛函。\n\n同调不随辅助度量扰动变化，因而给三流形、辛流形或纽结补空间提供细致不变量。Floer 理论的核心是把临界点之间的流线计数做成微分，并证明断裂流线恰好给出微分平方为零；紧化和横截性是其严谨性的关键。在范畴化语言中，「弗洛尔同调」往往对应对象、态射或高阶态射；这种层级记录了缺陷如何融合、如何终止以及如何在配边中传递。",
+      "complete_clues": [
+        "这是几何拓扑中的一类无限维 Morse 型同调理论。",
+        "它用于三流形、辛流形和纽结补空间的不变量构造，临界点之间的流线计数给出微分。",
+        "抽象写法为 $\\partial x=\\sum_y n(x,y)y$。",
+        "证明 $\\partial^2=0$ 依赖断裂流线的紧化图像，横截性和取向控制严谨定义。",
+        "它的英文译名是 Floer homology。"
+      ],
+      "fragmented_clues": [
+        "几何拓扑 无限维 Morse 型同调理论",
+        "三流形 辛流形 纽结补空间 临界点 流线计数",
+        "$\\partial x=\\sum_y n(x,y)y$",
+        "$\\partial^2=0$ 断裂流线 紧化 横截性 取向",
+        "Floer homology"
+      ],
+      "explanation_markdown": "弗洛尔同调通常把无限维函数的 Morse 理论用于几何模空间，链群由临界点生成，微分计数梯度流线。抽象写法为 $\\partial x=\\sum_y n(x,y)y$，其中 $n(x,y)$ 是从 $x$ 到 $y$ 的刚性流线计数。不同版本的函数包括 Chern-Simons 泛函、辛作用量或 Seiberg-Witten 泛函。\n\n同调不随辅助度量扰动变化，因而给三流形、辛流形或纽结补空间提供细致不变量。Floer 理论的核心是把临界点之间的流线计数做成微分，并证明断裂流线恰好给出微分平方为零；紧化和横截性是其严谨性的关键。物理扭曲理论中的弗洛尔同调把 BPS 方程留下来，非零模相消后只剩拓扑数据。弗洛尔同调来自模空间的有向计数或同调类，紧化、横截性和取向会直接影响结果。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1444,9 +2164,21 @@
     {
       "chinese_name": "瞬子 弗洛尔同调",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "瞬子弗洛尔同调以三流形上的平坦联络为生成元，微分计数四维圆柱上的反自对偶瞬子。Chern-Simons 泛函梯度流方程等价于 $F_A^+=0$，其中 $A$ 是 $Y\\times\\mathbb R$ 上的联络。链复形 $CF(Y)$ 的同调给三流形不变量。它可看作 Donaldson 理论的边界态空间，配边诱导映射由四维瞬子模空间定义，因此自然嵌入四维 TQFT 框架。\n\n瞬子 Floer 同调为三流形提供 Donaldson 理论的态空间；四维配边诱导的映射满足粘合律，因此它可看作非完全局域四维 TQFT 的边界版本。若把「瞬子 弗洛尔同调」用于凝聚态或量子计算，还需要关注可观测的辫统计、边界反常和基态简并；这些量比局域拉格朗日量更能代表拓扑相。",
+      "complete_clues": [
+        "这是三流形拓扑中的一种 Floer 型同调理论。",
+        "它以平坦联络为生成元，微分计数四维圆柱上的反自对偶瞬子。",
+        "圆柱上的梯度流方程等价于 $F_A^+=0$。",
+        "它可看作 Donaldson 理论的边界态空间，四维配边诱导映射由瞬子模空间定义。",
+        "它的英文译名是 instanton Floer homology。"
+      ],
+      "fragmented_clues": [
+        "三流形拓扑 Floer 型同调理论",
+        "平坦联络 生成元 四维圆柱 反自对偶瞬子",
+        "$F_A^+=0$",
+        "Donaldson 理论 边界态空间 四维配边 瞬子模空间",
+        "instanton Floer homology"
+      ],
+      "explanation_markdown": "瞬子弗洛尔同调以三流形上的平坦联络为生成元，微分计数四维圆柱上的反自对偶瞬子。Chern-Simons 泛函梯度流方程等价于 $F_A^+=0$，其中 $A$ 是 $Y\\times\\mathbb R$ 上的联络。链复形 $CF(Y)$ 的同调给三流形不变量。它可看作 Donaldson 理论的边界态空间，配边诱导映射由四维瞬子模空间定义，因此自然嵌入四维 TQFT 框架。\n\n瞬子 Floer 同调为三流形提供 Donaldson 理论的态空间；四维配边诱导的映射满足粘合律，因此它可看作非完全局域四维 TQFT 的边界版本。在凝聚态或量子计算类比中，还需要关注可观测的辫统计、边界反常和基态简并；这些量比局域拉格朗日量更能代表拓扑相。瞬子 弗洛尔同调来自模空间的有向计数或同调类，紧化、横截性和取向会直接影响结果。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1468,9 +2200,21 @@
     {
       "chinese_name": "希加德 弗洛尔同调",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "希加德弗洛尔同调用三流形的 Heegaard 分解构造同调，生成元是对称积中两组环面交点。微分计数伪全纯圆盘，形式为 $\\partial x=\\sum_y\\sum_{\\phi\\in\\pi_2(x,y),\\mu(\\phi)=1}\\#\\mathcal M(\\phi)y$，其中 $\\mu$ 是 Maslov 指数。它与 Seiberg-Witten 和嵌入接触同调等价，能探测三流形、纽结和四维配边映射。\n\n其优势是组合性较强，适合手术三角和纽结过滤结构。Heegaard Floer 同调的过滤结构能给出纽结属、切片属和接触不变量；它把三维拓扑问题转化为曲面图和全纯圆盘计数，计算上更具组合性。对「希加德 弗洛尔同调」的严格构造常依赖模空间紧化、量子群半简化或 BV-BRST 处理；这些技术细节保证结果不随度量和辅助切割任意变化。",
+      "complete_clues": [
+        "这是三流形拓扑中的一种组合性较强的 Floer 型同调理论。",
+        "它由 Heegaard 分解出发，生成元是对称积中两组环面的交点。",
+        "微分可写 $\\partial x=\\sum_y\\sum_{\\phi\\in\\pi_2(x,y),\\mu(\\phi)=1}\\#\\mathcal M(\\phi)y$。",
+        "它通过伪全纯圆盘计数探测三流形、纽结过滤结构、接触不变量和四维配边映射。",
+        "它的英文译名是 Heegaard Floer homology。"
+      ],
+      "fragmented_clues": [
+        "三流形拓扑 组合性 Floer 型同调",
+        "Heegaard 分解 对称积 两组环面 交点",
+        "$\\partial x=\\sum_y\\sum_{\\phi\\in\\pi_2(x,y),\\mu(\\phi)=1}\\#\\mathcal M(\\phi)y$",
+        "伪全纯圆盘 纽结过滤 接触不变量 四维配边映射",
+        "Heegaard Floer homology"
+      ],
+      "explanation_markdown": "希加德弗洛尔同调用三流形的 Heegaard 分解构造同调，生成元是对称积中两组环面交点。微分计数伪全纯圆盘，形式为 $\\partial x=\\sum_y\\sum_{\\phi\\in\\pi_2(x,y),\\mu(\\phi)=1}\\#\\mathcal M(\\phi)y$，其中 $\\mu$ 是 Maslov 指数。它与 Seiberg-Witten 和嵌入接触同调等价，能探测三流形、纽结和四维配边映射。\n\n其优势是组合性较强，适合手术三角和纽结过滤结构。Heegaard Floer 同调的过滤结构能给出纽结属、切片属和接触不变量；它把三维拓扑问题转化为曲面图和全纯圆盘计数，计算上更具组合性。严格构造常依赖模空间紧化、量子群半简化或 BV-BRST 处理；这些技术细节保证结果不随度量和辅助切割任意变化。基点选择只改变链级模型，不改变所得三流形不变量。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1492,9 +2236,21 @@
     {
       "chinese_name": "拉格朗日 弗洛尔同调",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "拉格朗日弗洛尔同调由辛流形中两个拉格朗日子流形的交点生成，微分计数边界落在它们上的伪全纯条带。方程为 $\\partial_s u+J\\partial_t u=0$，其中 $u(s,0)\\in L_0$、$u(s,1)\\in L_1$。同调 $HF(L_0,L_1)$ 在横截扰动下不变，并构成 Fukaya 范畴的态射空间。\n\n它把交点数提升为带量子修正的同调对象，是 A 模型开弦扇区的数学形式。拉格朗日 Floer 同调需要处理横截性、泡泡和 Maurer-Cartan 形变；这些细节保证同调在哈密顿同位下不变，并为 Fukaya 范畴的高阶乘法奠基。「拉格朗日 弗洛尔同调」在路径积分中常表现为对鞍点、标号或同调类求和；在公理化描述中，同一内容被重写为函子、范畴迹或配边诱导映射。",
+      "complete_clues": [
+        "这是辛几何中的一种 Floer 型同调理论。",
+        "它由两个拉格朗日子流形的交点生成，微分计数边界落在它们上的伪全纯条带。",
+        "条带方程为 $\\partial_su+J\\partial_tu=0$。",
+        "它把交点数提升为带量子修正的同调对象，并构成 Fukaya 范畴的态射空间。",
+        "它的英文译名是 Lagrangian Floer homology。"
+      ],
+      "fragmented_clues": [
+        "辛几何 Floer 型同调理论",
+        "拉格朗日子流形 交点 伪全纯条带 微分",
+        "$\\partial_su+J\\partial_tu=0$",
+        "交点数 量子修正 同调对象 Fukaya 范畴 态射空间",
+        "Lagrangian Floer homology"
+      ],
+      "explanation_markdown": "拉格朗日弗洛尔同调由辛流形中两个拉格朗日子流形的交点生成，微分计数边界落在它们上的伪全纯条带。方程为 $\\partial_s u+J\\partial_t u=0$，其中 $u(s,0)\\in L_0$、$u(s,1)\\in L_1$。同调 $HF(L_0,L_1)$ 在横截扰动下不变，并构成 Fukaya 范畴的态射空间。\n\n它把交点数提升为带量子修正的同调对象，是 A 模型开弦扇区的数学形式。拉格朗日 Floer 同调需要处理横截性、泡泡和 Maurer-Cartan 形变；这些细节保证同调在哈密顿同位下不变，并为 Fukaya 范畴的高阶乘法奠基。路径积分中常表现为对鞍点、标号或同调类求和；在公理化描述中，同一内容被重写为函子、范畴迹或配边诱导映射。这一同调保留了交点代数之外的量子校正信息。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1516,9 +2272,21 @@
     {
       "chinese_name": "深谷范畴",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "深谷范畴是辛流形的 $A_\\infty$ 范畴，对象为带额外结构的拉格朗日子流形，态射为 Floer 链复形。高阶乘法 $m_k$ 计数边界在 $L_0,\\dots,L_k$ 上的伪全纯多边形，满足 $\\sum (-1)^\\epsilon m(\\cdots m(\\cdots)\\cdots)=0$ 的 $A_\\infty$ 关系。它是 A 模型开弦的范畴化结构。镜像对称断言其导范畴等价于镜像 B 模型的凝聚层导范畴。\n\nFukaya 范畴的高阶乘法记录多边形 instanton，不只是普通交点复形；其对象的分次、spin 结构和局域系统会改变符号与态射空间。讨论「深谷范畴」时还应注意异常和量子化条件；级数、特征类或中心荷的取值往往由大规范变换和边界一致性强制决定。其严格定义还要处理 Novikov 系数、阻碍链和分裂闭包，这些细节保证范畴在同位下稳定。",
+      "complete_clues": [
+        "这是辛几何中的一种 $A_\\infty$ 范畴。",
+        "它描述 A 型开弦的范畴化结构，对象为带额外结构的拉格朗日子流形。",
+        "高阶乘法可记作 $m_k:CF(L_{k-1},L_k)\\otimes\\cdots\\otimes CF(L_0,L_1)\\to CF(L_0,L_k)$。",
+        "这些乘法计数伪全纯多边形，记录的不只是普通交点复形。",
+        "它的英文译名是 Fukaya category。"
+      ],
+      "fragmented_clues": [
+        "辛几何 $A_\\infty$ 范畴",
+        "A 型开弦 拉格朗日子流形 额外结构",
+        "$m_k:CF(L_{k-1},L_k)\\otimes\\cdots\\otimes CF(L_0,L_1)\\to CF(L_0,L_k)$",
+        "伪全纯多边形 高阶乘法 交点复形",
+        "Fukaya category"
+      ],
+      "explanation_markdown": "深谷范畴指辛流形的 $A_\\infty$ 范畴，对象为带额外结构的拉格朗日子流形，态射为 Floer 链复形。高阶乘法 $m_k$ 计数边界在 $L_0,\\dots,L_k$ 上的伪全纯多边形，满足 $\\sum (-1)^\\epsilon m(\\cdots m(\\cdots)\\cdots)=0$ 的 $A_\\infty$ 关系。它是 A 模型开弦的范畴化结构。镜像对称断言其导范畴等价于镜像 B 模型的凝聚层导范畴。\n\nFukaya 范畴的高阶乘法记录多边形 instanton，不只是普通交点复形；其对象的分次、spin 结构和局域系统会改变符号与态射空间。其严格定义还要处理 Novikov 系数、阻碍链和分裂闭包，这些细节保证范畴在同位下稳定。物理扭曲理论中的深谷范畴把 BPS 方程留下来，非零模相消后只剩拓扑数据。深谷范畴来自模空间的有向计数或同调类，紧化、横截性和取向会直接影响结果。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1540,9 +2308,21 @@
     {
       "chinese_name": "镜像对称TQFT",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "镜像对称TQFT指 A 模型与镜像 B 模型之间的等价，把辛几何曲线计数转为复几何变形问题。闭弦层面常写 $Z_A(X)=Z_B(Y)$，其中 $X,Y$ 是镜像 Calabi-Yau。A 模型相关函数含 Gromov-Witten 不变量，B 模型由周期积分和 Picard-Fuchs 方程控制。开弦层面，同调镜像对称要求 $D^\\pi\\mathcal F(X)\\simeq D^b\\operatorname{Coh}(Y)$，把 TQFT 边界态提升为范畴等价。\n\n镜像对称的 TQFT 形式说明两个看似不同的拓扑扭曲给同一组振幅；实际计算中，B 侧周期积分常比 A 侧曲线计数容易，因而可反推出枚举不变量。继续分析「镜像对称TQFT」时，应说明它依赖哪些附加结构，如取向、framing、自旋结构或标号范畴；这些选择会改变相位、态空间维数和可允许的缺陷。",
+      "complete_clues": [
+        "这是拓扑弦和 sigma 模型中的一种等价框架。",
+        "它把辛侧的曲线计数转化为镜像复侧的周期积分和形变问题。",
+        "闭弦层面常写 $Z_A(X)=Z_B(Y)$。",
+        "这种等价说明两种拓扑扭曲可给同一组振幅，B 侧计算常反推出 A 侧枚举不变量。",
+        "它的英文译名是 mirror symmetry TQFT。"
+      ],
+      "fragmented_clues": [
+        "拓扑弦 sigma 模型 等价框架",
+        "辛侧曲线计数 镜像复侧 周期积分 形变问题",
+        "$Z_A(X)=Z_B(Y)$",
+        "两种拓扑扭曲 同一振幅 B 侧计算 枚举不变量",
+        "mirror symmetry TQFT"
+      ],
+      "explanation_markdown": "镜像对称TQFT描述 A 模型与镜像 B 模型之间的等价，把辛几何曲线计数转为复几何变形问题。闭弦层面常写 $Z_A(X)=Z_B(Y)$，其中 $X,Y$ 是镜像 Calabi-Yau。A 模型相关函数含 Gromov-Witten 不变量，B 模型由周期积分和 Picard-Fuchs 方程控制。开弦层面，同调镜像对称要求 $D^\\pi\\mathcal F(X)\\simeq D^b\\operatorname{Coh}(Y)$，把 TQFT 边界态提升为范畴等价。\n\n镜像对称的 TQFT 形式说明两个看似不同的拓扑扭曲给同一组振幅；实际计算中，B 侧周期积分常比 A 侧曲线计数容易，因而可反推出枚举不变量。这种互译正是镜像对称能计算曲线计数的原因。镜像对称TQFT来自模空间的有向计数或同调类，紧化、横截性和取向会直接影响结果。物理扭曲理论中的镜像对称TQFT把 BPS 方程留下来，非零模相消后只剩拓扑数据。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1564,9 +2344,21 @@
     {
       "chinese_name": "同调镜像对称",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "同调镜像对称是 Kontsevich 提出的范畴化镜像对称猜想。核心等价为 $D^\\pi\\mathcal F(X)\\simeq D^b\\operatorname{Coh}(Y)$，其中左边是辛流形 $X$ 的分裂闭包 Fukaya 范畴，右边是镜像 $Y$ 的凝聚层有界导范畴。它把拉格朗日子流形、Floer 同调和伪全纯多边形对应到复几何中的层、Ext 群和导范畴乘法。\n\n物理上，这是 A/B 开弦 TQFT 边界态的等价。同调镜像对称把数值镜像公式提升为范畴等价，因此不仅匹配配分函数，还匹配 brane、态射、乘法和三角结构；这正是其比经典镜像更强的地方。使用「同调镜像对称」时，核心是它在切割粘合下怎样变换；只有振幅、态空间和缺陷融合同时满足一致性，才真正构成拓扑场论数据。",
+      "complete_clues": [
+        "这是镜像对称中的一种范畴化猜想。",
+        "它把辛侧的 brane、态射和高阶乘法对应到复侧的层、Ext 群和导范畴结构。",
+        "核心等价为 $D^\\pi\\mathcal F(X)\\simeq D^b\\operatorname{Coh}(Y)$。",
+        "它比数值镜像公式更强，因为不仅匹配配分函数，还匹配边界态和三角结构。",
+        "它的英文译名是 homological mirror symmetry。"
+      ],
+      "fragmented_clues": [
+        "镜像对称 范畴化猜想",
+        "辛侧 brane 态射 高阶乘法 复侧 层 Ext 群 导范畴",
+        "$D^\\pi\\mathcal F(X)\\simeq D^b\\operatorname{Coh}(Y)$",
+        "配分函数 边界态 三角结构 更强匹配",
+        "homological mirror symmetry"
+      ],
+      "explanation_markdown": "同调镜像对称表示 Kontsevich 提出的范畴化镜像对称猜想。核心等价为 $D^\\pi\\mathcal F(X)\\simeq D^b\\operatorname{Coh}(Y)$，其中左边是辛流形 $X$ 的分裂闭包 Fukaya 范畴，右边是镜像 $Y$ 的凝聚层有界导范畴。它把拉格朗日子流形、Floer 同调和伪全纯多边形对应到复几何中的层、Ext 群和导范畴乘法。\n\n物理上，这是 A/B 开弦 TQFT 边界态的等价。同调镜像对称把数值镜像公式提升为范畴等价，因此不仅匹配配分函数，还匹配 brane、态射、乘法和三角结构；这正是其比经典镜像更强的地方。物理扭曲理论中的同调镜像对称把 BPS 方程留下来，非零模相消后只剩拓扑数据。同调镜像对称来自模空间的有向计数或同调类，紧化、横截性和取向会直接影响结果。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1588,9 +2380,21 @@
     {
       "chinese_name": "粘合公理",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "粘合公理要求把流形沿公共边界切开再合回时，TQFT 振幅按态空间配对复合。若 $M=M_1\\cup_\\Sigma M_2$，则 $Z(M)=\\langle Z(M_1),Z(M_2)\\rangle_{Z(\\Sigma)}$，其中 $Z(\\Sigma)$ 是切口态空间。选择基底时，这就是对中间态求和。该公理是手术公式、因子化和路径积分局域性的拓扑版本，保证配分函数不依赖任意切割。\n\n粘合公理要求对切口态空间取完备中间态求和；在路径积分语言中，它相当于把边界场固定后积分，保证不同 pants 分解或手术描述给同一答案。围绕「粘合公理」的物理解释还要区分体相、边界态和插入算符；许多量子不变量正是三者兼容后留下的普适信息，而不是单个公式的数值。",
+      "complete_clues": [
+        "这是拓扑场论公理化中的一种组合规则。",
+        "它要求沿公共边界切开再合回时，振幅按切口态空间的配对复合。",
+        "若 $M=M_1\\cup_\\Sigma M_2$，可写 $Z(M)=\\langle Z(M_1),Z(M_2)\\rangle_{Z(\\Sigma)}$。",
+        "选择基底后，它表现为对完备中间态求和，保证配分函数不依赖任意切割。",
+        "它的英文译名是 gluing axiom。"
+      ],
+      "fragmented_clues": [
+        "拓扑场论 公理化 组合规则",
+        "公共边界 切开 合回 切口态空间 配对复合",
+        "$Z(M)=\\langle Z(M_1),Z(M_2)\\rangle_{Z(\\Sigma)}$",
+        "完备中间态求和 配分函数 任意切割无关",
+        "gluing axiom"
+      ],
+      "explanation_markdown": "粘合公理通常要求把流形沿公共边界切开再合回时，TQFT 振幅按态空间配对复合。若 $M=M_1\\cup_\\Sigma M_2$，则 $Z(M)=\\langle Z(M_1),Z(M_2)\\rangle_{Z(\\Sigma)}$，其中 $Z(\\Sigma)$ 是切口态空间。选择基底时，这就是对中间态求和。该公理是手术公式、因子化和路径积分局域性的拓扑版本，保证配分函数不依赖任意切割。\n\n粘合公理要求对切口态空间取完备中间态求和；在路径积分语言中，它相当于把边界场固定后积分，保证不同 pants 分解或手术描述给同一答案。粘合公理把切割后的边界态和粘合后的线性映射配对，复合律比局域哈密顿量更基本。在粘合公理里，空流形、柱体和方向反转也有规定取值，这保证态空间对偶关系一致。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1612,9 +2416,21 @@
     {
       "chinese_name": "切割粘合规则",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "切割粘合规则把复杂流形的 TQFT 振幅化为简单片段的态射复合。若沿曲面 $\\Sigma$ 切开，振幅写作 $Z(M)=\\sum_i Z(M_1)_i\\,G^{ij}\\,Z(M_2)_j$，其中 $G^{ij}$ 是 $Z(\\Sigma)$ 上配对的逆矩阵。二维中它变成 Frobenius 代数恒等式，三维中对应手术和模变换。该规则体现拓扑场论的局域性：局部切口只引入中间态空间，不引入度量传播子。\n\n切割粘合规则在实际计算中常表现为矩阵乘法、模变换或范畴迹；它允许把复杂拓扑拆成局部 building blocks，同时把所有非局域信息留在边界态空间里。在范畴化语言中，「切割粘合规则」往往对应对象、态射或高阶态射；这种层级记录了缺陷如何融合、如何终止以及如何在配边中传递。",
+      "complete_clues": [
+        "这是拓扑场论计算中的一种分解规则。",
+        "它把复杂流形的振幅化为简单片段的态射复合、矩阵乘法或范畴迹。",
+        "沿曲面 $\\Sigma$ 切开时，可写 $Z(M)=\\sum_i Z(M_1)_iG^{ij}Z(M_2)_j$。",
+        "它把所有非局域信息留在边界态空间里，而不是引入普通度量传播子。",
+        "它的英文译名是 cutting and gluing rules。"
+      ],
+      "fragmented_clues": [
+        "拓扑场论 计算 分解规则",
+        "复杂流形 简单片段 态射复合 矩阵乘法 范畴迹",
+        "$Z(M)=\\sum_i Z(M_1)_iG^{ij}Z(M_2)_j$",
+        "非局域信息 边界态空间 非度量传播子",
+        "cutting and gluing rules"
+      ],
+      "explanation_markdown": "切割粘合规则通常把复杂流形的 TQFT 振幅化为简单片段的态射复合。若沿曲面 $\\Sigma$ 切开，振幅写作 $Z(M)=\\sum_i Z(M_1)_i\\,G^{ij}\\,Z(M_2)_j$，其中 $G^{ij}$ 是 $Z(\\Sigma)$ 上配对的逆矩阵。二维中它变成 Frobenius 代数恒等式，三维中对应手术和模变换。该规则体现拓扑场论的局域性：局部切口只引入中间态空间，不引入度量传播子。\n\n切割粘合规则在实际计算中常表现为矩阵乘法、模变换或范畴迹；它允许把复杂拓扑拆成局部 building blocks，同时把所有非局域信息留在边界态空间里。在切割粘合规则里，空流形、柱体和方向反转也有规定取值，这保证态空间对偶关系一致。切割粘合规则把切割后的边界态和粘合后的线性映射配对，复合律比局域哈密顿量更基本。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1636,9 +2452,21 @@
     {
       "chinese_name": "配分函数不变量",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "配分函数不变量是闭流形上 TQFT 赋予的数，路径积分形式为 $Z(M)=\\int\\mathcal D\\Phi\\,e^{-S_{top}[\\Phi]}$，其中 $S_{top}$ 对度量变化不敏感或变化为 Q-恰当项。公理化地，闭 $d$ 维流形是从空集到空集的配边，所以 $Z(M)$ 是基域中的标量。它可等于三流形量子不变量、四流形 Donaldson 型数或有限群平坦束计数，关键在于同胚流形给相同数值。\n\n配分函数作为不变量仍可能依赖额外结构，如取向、spin 结构、framing 或背景束；说明一个 TQFT 之前，必须先说明其定义域包含哪些结构化流形。若把「配分函数不变量」用于凝聚态或量子计算，还需要关注可观测的辫统计、边界反常和基态简并；这些量比局域拉格朗日量更能代表拓扑相。",
+      "complete_clues": [
+        "这是拓扑场论赋给闭流形的一类数值量。",
+        "它可来自三流形量子不变量、四流形规范理论计数或有限群平坦束求和。",
+        "路径积分形式为 $Z(M)=\\int\\mathcal D\\Phi\\,e^{-S_{top}[\\Phi]}$。",
+        "它仍可能依赖取向、spin 结构、framing 或背景束等额外结构。",
+        "它的英文译名是 partition function invariant。"
+      ],
+      "fragmented_clues": [
+        "拓扑场论 闭流形 数值量",
+        "三流形量子不变量 四流形规范计数 有限群平坦束",
+        "$Z(M)=\\int\\mathcal D\\Phi\\,e^{-S_{top}[\\Phi]}$",
+        "取向 spin 结构 framing 背景束 额外结构",
+        "partition function invariant"
+      ],
+      "explanation_markdown": "配分函数不变量通常是闭流形上 TQFT 赋予的数，路径积分形式为 $Z(M)=\\int\\mathcal D\\Phi\\,e^{-S_{top}[\\Phi]}$，其中 $S_{top}$ 对度量变化不敏感或变化为 Q-恰当项。公理化地，闭 $d$ 维流形是从空集到空集的配边，所以 $Z(M)$ 是基域中的标量。它可等于三流形量子不变量、四流形 Donaldson 型数或有限群平坦束计数，关键在于同胚流形给相同数值。\n\n配分函数作为不变量仍可能依赖额外结构，如取向、spin 结构、framing 或背景束；说明一个 TQFT 之前，需要先给出其定义域包含哪些结构化流形。配分函数不变量把路径积分结果压缩为配分函数、态空间或量子不变量，局域几何只在正规化中出现。计算配分函数不变量时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1660,9 +2488,21 @@
     {
       "chinese_name": "手柄分解",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "手柄分解把流形分解为按指标附着的标准块，是构造配边和证明不变量独立性的基本工具。一个 $k$ 手柄形如 $D^k\\times D^{n-k}$，沿 $\\partial D^k\\times D^{n-k}$ 附着。TQFT 中，手柄附着对应某个线性映射或代数操作；二维中一手柄由乘法、余乘法和迹组合给出。\n\nKirby 移动或 Cerf 理论保证不同手柄分解给出同一拓扑振幅。手柄分解中的取消和滑移对应代数恒等式；TQFT 若要给出真正不变量，就必须在这些 Kirby 或 Cerf 变换下保持振幅不变。对「手柄分解」的严格构造常依赖模空间紧化、量子群半简化或 BV-BRST 处理；这些技术细节保证结果不随度量和辅助切割任意变化。在状态和模型中，每个手柄对应局部权重；证明不变量时必须检查所有手柄移动。",
+      "complete_clues": [
+        "这是微分拓扑中的一种流形分解方法。",
+        "它用于构造配边、描述 TQFT 的代数操作，并证明不变量不依赖具体分解。",
+        "一个 $k$ 手柄形如 $D^k\\times D^{n-k}$。",
+        "附着、取消和滑移会对应代数恒等式；Kirby 或 Cerf 变换下振幅必须保持不变。",
+        "它的英文译名是 handle decomposition。"
+      ],
+      "fragmented_clues": [
+        "微分拓扑 流形分解方法",
+        "配边 TQFT 代数操作 不变量独立性",
+        "$D^k\\times D^{n-k}$",
+        "附着 取消 滑移 Kirby 变换 Cerf 变换 振幅不变",
+        "handle decomposition"
+      ],
+      "explanation_markdown": "手柄分解可以把流形分解为按指标附着的标准块，是构造配边和证明不变量独立性的基本工具。一个 $k$ 手柄形如 $D^k\\times D^{n-k}$，沿 $\\partial D^k\\times D^{n-k}$ 附着。TQFT 中，手柄附着对应某个线性映射或代数操作；二维中一手柄由乘法、余乘法和迹组合给出。\n\nKirby 移动或 Cerf 理论保证不同手柄分解给出同一拓扑振幅。手柄分解中的取消和滑移对应代数恒等式；TQFT 若要给出真正不变量，就必须在这些 Kirby 或 Cerf 变换下保持振幅不变。在状态和模型中，每个手柄对应局部权重；证明不变量时必须检查所有手柄移动。计算手柄分解时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1684,9 +2524,21 @@
     {
       "chinese_name": "手术公式",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "手术公式通过在三流形中挖去实心环面并按新斜率粘回，计算或定义三流形不变量。Dehn 手术记作 $M_{p/q}(K)$，其中 $p/q$ 是边界环面上的斜率。量子不变量中，手术链环的标号求和给 $Z(M)$，模 $S,T$ 矩阵记录经纬线基变换。\n\n该方法把任意闭三流形化为 $S^3$ 中链环手术问题，使陈西蒙斯和 RT 不变量可用纽结数据表达。手术公式的力量在于把三流形问题降为链环问题；不同手术图之间的 Kirby 移动要求链环评价满足特定归一化，这正是量子群不变量构造的核心约束。「手术公式」在路径积分中常表现为对鞍点、标号或同调类求和；在公理化描述中，同一内容被重写为函子、范畴迹或配边诱导映射。",
+      "complete_clues": [
+        "这是三维拓扑和量子不变量计算中的一种公式。",
+        "它把闭三流形问题转化为 $S^3$ 中链环数据、斜率选择和模变换计算。",
+        "Dehn 型操作常记为 $M_{p/q}(K)$。",
+        "量子不变量中，手术链环的标号求和给出 $Z(M)$，而 $S,T$ 矩阵记录经纬线基变换。",
+        "它的英文译名是 surgery formula。"
+      ],
+      "fragmented_clues": [
+        "三维拓扑 量子不变量 公式",
+        "$S^3$ 链环数据 斜率选择 模变换",
+        "$M_{p/q}(K)$",
+        "标号求和 $Z(M)$ $S,T$ 矩阵 经纬线基变换",
+        "surgery formula"
+      ],
+      "explanation_markdown": "手术公式通常通过在三流形中挖去实心环面并按新斜率粘回，计算或定义三流形不变量。Dehn 手术记作 $M_{p/q}(K)$，其中 $p/q$ 是边界环面上的斜率。量子不变量中，手术链环的标号求和给 $Z(M)$，模 $S,T$ 矩阵记录经纬线基变换。\n\n该方法把任意闭三流形化为 $S^3$ 中链环手术问题，使陈西蒙斯和 RT 不变量可用纽结数据表达。手术公式的力量在于把三流形问题降为链环问题；不同手术图之间的 Kirby 移动要求链环评价满足特定归一化，这正是量子群不变量构造的核心约束。手术公式通常把平坦联络模空间、链环 holonomy 和量子群表示联系起来，度规只作为量子化辅助。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1708,9 +2560,21 @@
     {
       "chinese_name": "三流形不变量",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "三流形不变量是只依赖三维流形拓扑类型的量，例如 Witten-Reshetikhin-Turaev、Turaev-Viro 和 Casson 型不变量。在 TQFT 中它们统一写成 $Z(M^3)$，其中闭三流形被视为空边界配边。陈西蒙斯路径积分以平坦联络为半经典鞍点，状态和模型则以三角剖分标号求和。\n\n三维的特殊性在于所有闭流形可由链环手术得到，故纽结不变量和三流形不变量紧密交织。三流形不变量常对取向敏感，取共轭或反号级数会对应取向反转；半经典展开中，不同平坦联络分支还会贡献不同的相位和 Reidemeister torsion。讨论「三流形不变量」时还应注意异常和量子化条件；级数、特征类或中心荷的取值往往由大规范变换和边界一致性强制决定。",
+      "complete_clues": [
+        "这是低维拓扑中的一类流形不变量。",
+        "它包括 WRT、Turaev-Viro 和 Casson 型量，也可由 Chern-Simons 路径积分或状态和给出。",
+        "在 TQFT 中统一记为 $Z(M^3)$。",
+        "这一维度中闭流形可由链环手术得到，因此纽结数据和流形数据紧密交织。",
+        "它的英文译名是 three-manifold invariant。"
+      ],
+      "fragmented_clues": [
+        "低维拓扑 流形不变量",
+        "WRT Turaev-Viro Casson Chern-Simons 状态和",
+        "$Z(M^3)$",
+        "闭流形 链环手术 纽结数据 流形数据",
+        "three-manifold invariant"
+      ],
+      "explanation_markdown": "三流形不变量指只依赖三维流形拓扑类型的量，例如 Witten-Reshetikhin-Turaev、Turaev-Viro 和 Casson 型不变量。在 TQFT 中它们统一写成 $Z(M^3)$，其中闭三流形被视为空边界配边。陈西蒙斯路径积分以平坦联络为半经典鞍点，状态和模型则以三角剖分标号求和。\n\n三维的特殊性在于所有闭流形可由链环手术得到，故纽结不变量和三流形不变量紧密交织。三流形不变量常对取向敏感，取共轭或反号级数会对应取向反转；半经典展开中，不同平坦联络分支还会贡献不同的相位和 Reidemeister torsion。计算三流形不变量时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1732,9 +2596,21 @@
     {
       "chinese_name": "四流形不变量",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "四流形不变量刻画四维流形的拓扑或光滑结构，常来自规范场模空间或拓扑扭曲理论。Donaldson 与 Seiberg-Witten 不变量分别由 $F_A^+=0$ 和 $D_A\\psi=0,\\ F_A^+=q(\\psi)$ 的解空间定义。四维中同胚与微分同胚差异非常丰富，因此这些不变量能探测 exotic 光滑结构。\n\nTQFT 视角下，闭四流形给标量，带边界四流形则诱导三维 Floer 态空间间的映射。四流形不变量的物理构造通常来自超对称局域化；度量独立并不意味着无分析困难，模空间的非紧性、壁穿越和奇点仍会影响不变量定义。继续分析「四流形不变量」时，应说明它依赖哪些附加结构，如取向、framing、自旋结构或标号范畴；这些选择会改变相位、态空间维数和可允许的缺陷。",
+      "complete_clues": [
+        "这是高维拓扑中的一类流形不变量。",
+        "它常来自规范场模空间或拓扑扭曲理论，用来探测四维光滑结构。",
+        "相关方程可包括 $F_A^+=0$ 以及 $D_A\\psi=0,\\ F_A^+=q(\\psi)$。",
+        "四维中同胚和微分同胚差异丰富，因此这些量能看到 exotic 光滑结构。",
+        "它的英文译名是 four-manifold invariant。"
+      ],
+      "fragmented_clues": [
+        "高维拓扑 流形不变量",
+        "规范场模空间 拓扑扭曲 四维光滑结构",
+        "$F_A^+=0$ $D_A\\psi=0$ $F_A^+=q(\\psi)$",
+        "同胚 微分同胚 exotic 光滑结构",
+        "four-manifold invariant"
+      ],
+      "explanation_markdown": "四流形不变量通常刻画四维流形的拓扑或光滑结构，常来自规范场模空间或拓扑扭曲理论。Donaldson 与 Seiberg-Witten 不变量分别由 $F_A^+=0$ 和 $D_A\\psi=0,\\ F_A^+=q(\\psi)$ 的解空间定义。四维中同胚与微分同胚差异非常丰富，因此这些不变量能探测 exotic 光滑结构。\n\nTQFT 视角下，闭四流形给标量，带边界四流形则诱导三维 Floer 态空间间的映射。四流形不变量的物理构造通常来自超对称局域化；度量独立并不意味着无分析困难，模空间的非紧性、壁穿越和奇点仍会影响不变量定义。四流形不变量把路径积分结果压缩为配分函数、态空间或量子不变量，局域几何只在正规化中出现。计算四流形不变量时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1756,9 +2632,21 @@
     {
       "chinese_name": "拓扑质量项",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "拓扑质量项是在不破坏规范不变性的情况下，由拓扑耦合为规范场产生质量尺度的项。三维典型例子是 Maxwell-Chern-Simons 理论，$S=\\int -\\frac{1}{4e^2}F\\wedge *F+\\frac{k}{4\\pi}A\\wedge dA$，其中第二项给出质量 $m\\sim e^2 k/(2\\pi)$。该质量不来自 Higgs 凝聚，而来自一阶拓扑项改变传播子极点。\n\n类似 BF 耦合也可在高维产生拓扑质量。拓扑质量项给出质量但不引入额外 Higgs 标量，因此自由度计数与普通 Proca 质量不同；在三维中，它还会赋予传播模确定手征性。使用「拓扑质量项」时，核心是它在切割粘合下怎样变换；只有振幅、态空间和缺陷融合同时满足一致性，才真正构成拓扑场论数据。这种质量机制常与宇称破缺相伴，因而在三维规范理论和量子霍尔有效理论中格外常见。",
+      "complete_clues": [
+        "这是规范理论中的一种质量产生机制。",
+        "它在不引入 Higgs 凝聚的情况下，由拓扑耦合改变规范场传播子极点。",
+        "三维例子可写 $S=\\int-\\frac{1}{4e^2}F\\wedge*F+\\frac{k}{4\\pi}A\\wedge dA$。",
+        "这种质量会伴随自由度计数改变和宇称破缺，三维中还赋予传播模确定手征性。",
+        "它的英文译名是 topological mass term。"
+      ],
+      "fragmented_clues": [
+        "规范理论 质量产生机制",
+        "无 Higgs 凝聚 拓扑耦合 传播子极点",
+        "$S=\\int-\\frac{1}{4e^2}F\\wedge*F+\\frac{k}{4\\pi}A\\wedge dA$",
+        "自由度计数 宇称破缺 三维 传播模 手征性",
+        "topological mass term"
+      ],
+      "explanation_markdown": "拓扑质量项表示在不破坏规范不变性的情况下，由拓扑耦合为规范场产生质量尺度的项。三维典型例子是 Maxwell-Chern-Simons 理论，$S=\\int -\\frac{1}{4e^2}F\\wedge *F+\\frac{k}{4\\pi}A\\wedge dA$，其中第二项给出质量 $m\\sim e^2 k/(2\\pi)$。该质量不来自 Higgs 凝聚，而来自一阶拓扑项改变传播子极点。\n\n类似 BF 耦合也可在高维产生拓扑质量。拓扑质量项给出质量但不引入额外 Higgs 标量，因此自由度计数与普通 Proca 质量不同；在三维中，它还会赋予传播模确定手征性。这种质量机制常与宇称破缺相伴，因而在三维规范理论和量子霍尔有效理论中格外常见。计算拓扑质量项时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1780,9 +2668,21 @@
     {
       "chinese_name": "BF耦合",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "BF耦合把一个 $p$ 形式场与另一个规范场的曲率相乘，形成度量无关拓扑项。常写 $S_{BF}=\\frac{k}{2\\pi}\\int B_p\\wedge dA_{d-p-1}$，其中 $B_p$ 与 $A$ 分别耦合到互补维度缺陷。该项导致线与面算符的交链相位，并可为规范场产生拓扑质量。\n\n离散规范理论、三维量子重力和高阶对称响应中，BF 耦合常描述电荷与通量的互统计。BF 耦合中的电磁互统计由交链数决定，因而对局部路径形变不敏感；当系数离散化时，它可描述有限群规范理论和 symmetry-enriched 拓扑响应。围绕「BF耦合」的物理解释还要区分体相、边界态和插入算符；许多量子不变量正是三者兼容后留下的普适信息，而不是单个公式的数值。",
+      "complete_clues": [
+        "这是拓扑场论中的一种形式场耦合。",
+        "它出现在离散规范理论、高阶对称响应和电荷-通量互统计描述中。",
+        "常写 $S_{BF}=\\frac{k}{2\\pi}\\int B_p\\wedge dA_{d-p-1}$。",
+        "它使线与面算符之间产生由交链数决定的相位，也可为规范场产生拓扑质量。",
+        "它的英文译名是 BF coupling。"
+      ],
+      "fragmented_clues": [
+        "拓扑场论 形式场耦合",
+        "离散规范理论 高阶对称响应 电荷-通量互统计",
+        "$S_{BF}=\\frac{k}{2\\pi}\\int B_p\\wedge dA_{d-p-1}$",
+        "线算符 面算符 交链数 相位 拓扑质量",
+        "BF coupling"
+      ],
+      "explanation_markdown": "BF耦合用来把一个 $p$ 形式场与另一个规范场的曲率相乘，形成度量无关拓扑项。常写 $S_{BF}=\\frac{k}{2\\pi}\\int B_p\\wedge dA_{d-p-1}$，其中 $B_p$ 与 $A$ 分别耦合到互补维度缺陷。该项导致线与面算符的交链相位，并可为规范场产生拓扑质量。\n\n离散规范理论、三维量子重力和高阶对称响应中，BF 耦合常描述电荷与通量的互统计。BF 耦合中的电磁互统计由交链数决定，因而对局部路径形变不敏感；当系数离散化时，它可描述有限群规范理论和 symmetry-enriched 拓扑响应。BF耦合把特征类或指标密度放入作用量，结果只随丛拓扑和流形结构改变。含费米子的BF耦合还会依赖 spin 或 pin 结构，这些离散选择会改变配分函数符号。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1804,9 +2704,21 @@
     {
       "chinese_name": "θ项",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "θ项是规范理论中由拓扑密度积分构成的作用量项，不改变经典局域方程却影响量子相位。四维杨-米尔斯中 $S_\\theta=\\frac{i\\theta}{8\\pi^2}\\int\\operatorname{Tr}F\\wedge F$，其中积分给第二陈数。不同拓扑扇区按 $e^{i\\theta n}$ 加权，因而 θ 控制真空结构和 CP 性质。\n\n凝聚态中，电磁 θ 项描述拓扑绝缘体的磁电响应；TQFT 中它常作为背景拓扑响应。θ项的物理效应来自不同拓扑扇区之间的相对相位；即使局域运动方程不变，边界、缺陷或非平凡流形上的量子振幅仍会发生可观测改变。在范畴化语言中，「θ项」往往对应对象、态射或高阶态射；这种层级记录了缺陷如何融合、如何终止以及如何在配边中传递。",
+      "complete_clues": [
+        "这是规范理论中的一种拓扑作用量项。",
+        "它通过不同拓扑扇区之间的相对相位影响真空结构、CP 性质和边界响应。",
+        "四维 Yang-Mills 中可写 $S_\\theta=\\frac{i\\theta}{8\\pi^2}\\int\\operatorname{Tr}F\\wedge F$。",
+        "它不改变经典局域方程，却会在非平凡流形、边界或缺陷背景下改变量子振幅。",
+        "它的英文译名是 theta term。"
+      ],
+      "fragmented_clues": [
+        "规范理论 拓扑作用量项",
+        "拓扑扇区 相对相位 真空结构 CP 性质 边界响应",
+        "$S_\\theta=\\frac{i\\theta}{8\\pi^2}\\int\\operatorname{Tr}F\\wedge F$",
+        "经典局域方程不变 非平凡流形 边界 缺陷 量子振幅",
+        "theta term"
+      ],
+      "explanation_markdown": "θ项指规范理论中由拓扑密度积分构成的作用量项，不改变经典局域方程却影响量子相位。四维杨-米尔斯中 $S_\\theta=\\frac{i\\theta}{8\\pi^2}\\int\\operatorname{Tr}F\\wedge F$，其中积分给第二陈数。不同拓扑扇区按 $e^{i\\theta n}$ 加权，因而 θ 控制真空结构和 CP 性质。\n\n凝聚态中，电磁 θ 项描述拓扑绝缘体的磁电响应；TQFT 中它常作为背景拓扑响应。θ项的物理效应来自不同拓扑扇区之间的相对相位；即使局域运动方程不变，边界、缺陷或非平凡流形上的量子振幅仍会发生可观测改变。含费米子的θ项还会依赖 spin 或 pin 结构，这些离散选择会改变配分函数符号。θ项把特征类或指标密度放入作用量，结果只随丛拓扑和流形结构改变。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1828,9 +2740,21 @@
     {
       "chinese_name": "庞特里亚金类",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "庞特里亚金类是实向量丛的特征类，可由曲率形式通过 Chern-Weil 理论表示。对联络曲率 $R$，第一庞特里亚金形式为 $p_1=-\\frac{1}{8\\pi^2}\\operatorname{Tr}(R\\wedge R)$。其上同调类与联络选择无关。它进入 Hirzebruch 签名定理、引力反常多项式和四维拓扑项。\n\nTQFT 中，庞特里亚金类常作为背景切丛数据，控制 framing anomaly 和重力响应。庞特里亚金类进入反常多项式时，常与规范陈类混合形成 descent 关系；这说明引力背景的拓扑也能约束边界理论和体响应的相容性。若把「庞特里亚金类」用于凝聚态或量子计算，还需要关注可观测的辫统计、边界反常和基态简并；这些量比局域拉格朗日量更能代表拓扑相。",
+      "complete_clues": [
+        "这是实向量丛的一类特征类。",
+        "它进入签名定理、引力反常多项式、framing anomaly 和四维拓扑响应。",
+        "第一形式可写 $p_1=-\\frac{1}{8\\pi^2}\\operatorname{Tr}(R\\wedge R)$。",
+        "它的上同调类与联络选择无关，说明引力背景拓扑也能约束边界理论和体响应。",
+        "它的英文译名是 Pontryagin class。"
+      ],
+      "fragmented_clues": [
+        "实向量丛 特征类",
+        "签名定理 引力反常 framing anomaly 四维拓扑响应",
+        "$p_1=-\\frac{1}{8\\pi^2}\\operatorname{Tr}(R\\wedge R)$",
+        "上同调类 联络无关 引力背景拓扑 边界理论 体响应",
+        "Pontryagin class"
+      ],
+      "explanation_markdown": "庞特里亚金类通常是实向量丛的特征类，可由曲率形式通过 Chern-Weil 理论表示。对联络曲率 $R$，第一庞特里亚金形式为 $p_1=-\\frac{1}{8\\pi^2}\\operatorname{Tr}(R\\wedge R)$。其上同调类与联络选择无关。它进入 Hirzebruch 签名定理、引力反常多项式和四维拓扑项。\n\nTQFT 中，庞特里亚金类常作为背景切丛数据，控制 framing anomaly 和重力响应。庞特里亚金类进入反常多项式时，常与规范陈类混合形成 descent 关系；这说明引力背景的拓扑也能约束边界理论和体响应的相容性。庞特里亚金类把特征类或指标密度放入作用量，结果只随丛拓扑和流形结构改变。含费米子的庞特里亚金类还会依赖 spin 或 pin 结构，这些离散选择会改变配分函数符号。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1852,9 +2776,21 @@
     {
       "chinese_name": "陈类",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "陈类是复向量丛的基本特征类，度量曲率如何在拓扑上扭曲。Chern-Weil 表达为 $c(E)=\\det(1+\\frac{iF}{2\\pi})$，其中 $F$ 是联络曲率。第一陈类给线丛磁通，第二陈类给四维规范瞬子数。它们不依赖具体联络，只依赖丛的同构类。\n\n在 TQFT 和拓扑相中，陈类进入量子霍尔电导、Berry 曲率积分、指标定理和 D 膜荷分类。陈类可由 Berry 曲率、规范场曲率或全纯线丛曲率实现；同一个上同调类在不同物理语境中表现为磁通量子、瞬子数或量子霍尔电导。对「陈类」的严格构造常依赖模空间紧化、量子群半简化或 BV-BRST 处理；这些技术细节保证结果不随度量和辅助切割任意变化。",
+      "complete_clues": [
+        "这是复向量丛的一类基本特征类。",
+        "它与磁通、瞬子数、量子霍尔电导、Berry 曲率和 D 膜荷分类有关。",
+        "Chern-Weil 表达为 $c(E)=\\det(1+\\frac{iF}{2\\pi})$。",
+        "同一个上同调类可在不同物理语境中表现为线丛磁通、四维规范瞬子数或拓扑响应系数。",
+        "它的英文译名是 Chern class。"
+      ],
+      "fragmented_clues": [
+        "复向量丛 基本特征类",
+        "磁通 瞬子数 量子霍尔电导 Berry 曲率 D 膜荷",
+        "$c(E)=\\det(1+\\frac{iF}{2\\pi})$",
+        "上同调类 线丛磁通 四维瞬子数 拓扑响应",
+        "Chern class"
+      ],
+      "explanation_markdown": "陈类表示复向量丛的基本特征类，度量曲率如何在拓扑上扭曲。Chern-Weil 表达为 $c(E)=\\det(1+\\frac{iF}{2\\pi})$，其中 $F$ 是联络曲率。第一陈类给线丛磁通，第二陈类给四维规范瞬子数。它们不依赖具体联络，只依赖丛的同构类。\n\n在 TQFT 和拓扑相中，陈类进入量子霍尔电导、Berry 曲率积分、指标定理和 D 膜荷分类。陈类可由 Berry 曲率、规范场曲率或全纯线丛曲率实现；同一个上同调类在不同物理语境中表现为磁通量子、瞬子数或量子霍尔电导。含费米子的陈类还会依赖 spin 或 pin 结构，这些离散选择会改变配分函数符号。陈类把特征类或指标密度放入作用量，结果只随丛拓扑和流形结构改变。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1876,9 +2812,21 @@
     {
       "chinese_name": "施蒂费尔-惠特尼类",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "施蒂费尔-惠特尼类是实向量丛的 $\\mathbb Z_2$ 特征类，检测取向和自旋结构等问题。总类写作 $w(E)=1+w_1(E)+w_2(E)+\\cdots$，其中 $w_1=0$ 表示可定向，$w_2=0$ 是存在自旋结构的障碍。它们进入费米子路径积分、时间反演拓扑相和非平凡规范束的异常条件。\n\n许多 TQFT 需要指定 spin 或 pin 结构，正是因为这些 $\\mathbb Z_2$ 类影响配分函数符号。第二施蒂费尔-惠特尼类决定费米子是否能全局定义，因此它直接影响含费米 TQFT 的配分函数；在时间反演体系中，pin 结构还会带来更细分类。「施蒂费尔-惠特尼类」在路径积分中常表现为对鞍点、标号或同调类求和；在公理化描述中，同一内容被重写为函子、范畴迹或配边诱导映射。",
+      "complete_clues": [
+        "这是实向量丛的一类 $\\mathbb Z_2$ 特征类。",
+        "它检测取向、自旋结构障碍、费米子路径积分符号和时间反演拓扑相条件。",
+        "总类写作 $w(E)=1+w_1(E)+w_2(E)+\\cdots$。",
+        "$w_1=0$ 表示可定向，$w_2=0$ 是存在自旋结构的障碍消失条件。",
+        "它的英文译名是 Stiefel-Whitney class。"
+      ],
+      "fragmented_clues": [
+        "实向量丛 $\\mathbb Z_2$ 特征类",
+        "取向 自旋结构障碍 费米子路径积分 时间反演拓扑相",
+        "$w(E)=1+w_1(E)+w_2(E)+\\cdots$",
+        "$w_1=0$ 可定向 $w_2=0$ 自旋结构",
+        "Stiefel-Whitney class"
+      ],
+      "explanation_markdown": "施蒂费尔-惠特尼类可理解为实向量丛的 $\\mathbb Z_2$ 特征类，检测取向和自旋结构等问题。总类写作 $w(E)=1+w_1(E)+w_2(E)+\\cdots$，其中 $w_1=0$ 表示可定向，$w_2=0$ 是存在自旋结构的障碍。它们进入费米子路径积分、时间反演拓扑相和非平凡规范束的异常条件。\n\n许多 TQFT 需要指定 spin 或 pin 结构，正是因为这些 $\\mathbb Z_2$ 类影响配分函数符号。第二施蒂费尔-惠特尼类决定费米子是否能全局定义，因此它直接影响含费米 TQFT 的配分函数；在时间反演体系中，pin 结构还会带来更细分类。施蒂费尔-惠特尼类把特征类或指标密度放入作用量，结果只随丛拓扑和流形结构改变。含费米子的施蒂费尔-惠特尼类还会依赖 spin 或 pin 结构，这些离散选择会改变配分函数符号。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1900,9 +2848,21 @@
     {
       "chinese_name": "欧拉类",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "欧拉类是有向实向量丛的顶阶特征类，度量截面零点的代数计数。对偶数维曲率 $R$，欧拉形式可写 $e(E)=\\operatorname{Pf}(R/2\\pi)$，其中 Pf 是 Pfaffian。若 $E=TM$，积分满足 $\\int_M e(TM)=\\chi(M)$。在 TQFT 中，欧拉类进入高斯-博内项、二维重力配分函数和 Mathai-Quillen 代表。\n\n它把局部曲率密度与全局拓扑示性数相连。欧拉类常通过零模计数出现，例如有向丛的泛截面零点数；在路径积分局域化中，Mathai-Quillen 代表把这种拓扑计数写成高斯型场论积分。讨论「欧拉类」时还应注意异常和量子化条件；级数、特征类或中心荷的取值往往由大规范变换和边界一致性强制决定。当丛秩等于底流形维数时，欧拉类尤其直接地把零点计数转化为整体拓扑数。",
+      "complete_clues": [
+        "这是有向实向量丛的一种顶阶特征类。",
+        "它连接截面零点的代数计数、高斯-博内项和二维重力配分函数。",
+        "欧拉形式可写 $e(E)=\\operatorname{Pf}(R/2\\pi)$。",
+        "当丛为切丛时，积分满足 $\\int_M e(TM)=\\chi(M)$，把局部曲率密度连到整体示性数。",
+        "它的英文译名是 Euler class。"
+      ],
+      "fragmented_clues": [
+        "有向实向量丛 顶阶特征类",
+        "截面零点 代数计数 高斯-博内 二维重力配分函数",
+        "$e(E)=\\operatorname{Pf}(R/2\\pi)$",
+        "$\\int_M e(TM)=\\chi(M)$ 局部曲率密度 整体示性数",
+        "Euler class"
+      ],
+      "explanation_markdown": "欧拉类指有向实向量丛的顶阶特征类，度量截面零点的代数计数。对偶数维曲率 $R$，欧拉形式可写 $e(E)=\\operatorname{Pf}(R/2\\pi)$，其中 Pf 是 Pfaffian。若 $E=TM$，积分满足 $\\int_M e(TM)=\\chi(M)$。在 TQFT 中，欧拉类进入高斯-博内项、二维重力配分函数和 Mathai-Quillen 代表。\n\n它把局部曲率密度与全局拓扑示性数相连。欧拉类常通过零模计数出现，例如有向丛的泛截面零点数；在路径积分局域化中，Mathai-Quillen 代表把这种拓扑计数写成高斯型场论积分。当丛秩等于底流形维数时，欧拉类尤其直接地把零点计数转化为整体拓扑数。含费米子的欧拉类还会依赖 spin 或 pin 结构，这些离散选择会改变配分函数符号。欧拉类把特征类或指标密度放入作用量，结果只随丛拓扑和流形结构改变。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1924,9 +2884,21 @@
     {
       "chinese_name": "交叉形式",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "交叉形式是四维有向闭流形二阶上同调上的整数双线性型，记录二维循环的交数。定义为 $Q_X(\\alpha,\\beta)=\\int_X \\alpha\\wedge\\beta$，其中 $\\alpha,\\beta\\in H^2(X,\\mathbb Z)$。它的签名、奇偶性和定值性强烈限制四流形拓扑。Donaldson 定理说明光滑单连通定正交叉形式必须对角化，而 Freedman 理论给拓扑分类；因此交叉形式是四维 TQFT 与光滑拓扑之间的核心桥梁。\n\n交叉形式的奇偶性和签名进入 Rokhlin 定理与 Donaldson 约束；TQFT 中，二形式场或表面算符的配对相位也常由这种交叉结构控制。继续分析「交叉形式」时，应说明它依赖哪些附加结构，如取向、framing、自旋结构或标号范畴；这些选择会改变相位、态空间维数和可允许的缺陷。",
+      "complete_clues": [
+        "这是四维拓扑中的一种整数双线性型。",
+        "它记录闭有向四维流形中二维循环的交数，并限制流形拓扑与光滑结构。",
+        "定义为 $Q_X(\\alpha,\\beta)=\\int_X\\alpha\\wedge\\beta$。",
+        "它的签名、奇偶性和定值性进入 Rokhlin、Donaldson 与 Freedman 理论的约束。",
+        "它的英文译名是 intersection form。"
+      ],
+      "fragmented_clues": [
+        "四维拓扑 整数双线性型",
+        "闭有向四维流形 二维循环 交数 光滑结构",
+        "$Q_X(\\alpha,\\beta)=\\int_X\\alpha\\wedge\\beta$",
+        "签名 奇偶性 定值性 Rokhlin Donaldson Freedman",
+        "intersection form"
+      ],
+      "explanation_markdown": "交叉形式通常是四维有向闭流形二阶上同调上的整数双线性型，记录二维循环的交数。定义为 $Q_X(\\alpha,\\beta)=\\int_X \\alpha\\wedge\\beta$，其中 $\\alpha,\\beta\\in H^2(X,\\mathbb Z)$。它的签名、奇偶性和定值性强烈限制四流形拓扑。Donaldson 定理说明光滑单连通定正交叉形式必须对角化，而 Freedman 理论给拓扑分类；因此交叉形式是四维 TQFT 与光滑拓扑之间的核心桥梁。\n\n交叉形式的奇偶性和签名进入 Rokhlin 定理与 Donaldson 约束；TQFT 中，二形式场或表面算符的配对相位也常由这种交叉结构控制。交叉形式把特征类或指标密度放入作用量，结果只随丛拓扑和流形结构改变。含费米子的交叉形式还会依赖 spin 或 pin 结构，这些离散选择会改变配分函数符号。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1948,9 +2920,21 @@
     {
       "chinese_name": "唐纳森多项式",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "唐纳森多项式是把四流形同调类插入反自对偶联络模空间后得到的多线性不变量。形式上 $D_X(h^r)=\\int_{\\mathcal M_k}\\mu(h)^r$，其中 $h\\in H_2(X)$，$\\mu$ 映射把同调类变为模空间上同调类。模空间维数决定可非零的插入次数。\n\n它能区分光滑结构，并在物理上等于 Donaldson-Witten 理论中 descent 观测量的相关函数。唐纳森多项式的插入次数必须匹配模空间维数，否则积分为零；这使不变量具有分次结构，也让壁穿越和简单型条件成为计算中的重要简化。使用「唐纳森多项式」时，核心是它在切割粘合下怎样变换；只有振幅、态空间和缺陷融合同时满足一致性，才真正构成拓扑场论数据。",
+      "complete_clues": [
+        "这是四维光滑拓扑中的一种多线性不变量。",
+        "它由同调类插入反自对偶联络模空间后积分得到，并对应扭曲规范理论的观测量相关函数。",
+        "形式上可写 $D_X(h^r)=\\int_{\\mathcal M_k}\\mu(h)^r$。",
+        "插入次数必须匹配模空间维数，否则积分为零，由此产生分次结构。",
+        "它的英文译名是 Donaldson polynomial。"
+      ],
+      "fragmented_clues": [
+        "四维光滑拓扑 多线性不变量",
+        "同调类 反自对偶联络模空间 观测量相关函数",
+        "$D_X(h^r)=\\int_{\\mathcal M_k}\\mu(h)^r$",
+        "插入次数 模空间维数 积分为零 分次结构",
+        "Donaldson polynomial"
+      ],
+      "explanation_markdown": "唐纳森多项式表示把四流形同调类插入反自对偶联络模空间后得到的多线性不变量。形式上 $D_X(h^r)=\\int_{\\mathcal M_k}\\mu(h)^r$，其中 $h\\in H_2(X)$，$\\mu$ 映射把同调类变为模空间上同调类。模空间维数决定可非零的插入次数。\n\n它能区分光滑结构，并在物理上等于 Donaldson-Witten 理论中 descent 观测量的相关函数。唐纳森多项式的插入次数必须匹配模空间维数，否则积分为零；这使不变量具有分次结构，也让壁穿越和简单型条件成为计算中的重要简化。物理扭曲理论中的唐纳森多项式把 BPS 方程留下来，非零模相消后只剩拓扑数据。唐纳森多项式来自模空间的有向计数或同调类，紧化、横截性和取向会直接影响结果。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1972,9 +2956,21 @@
     {
       "chinese_name": "塞伯格-威滕模空间",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "塞伯格-威滕模空间是四流形上单极子方程解按规范等价取商后的空间。方程 $D_A\\psi=0$ 与 $F_A^+=q(\\psi)$ 中，$A$ 是自旋$^c$联络，$\\psi$ 是正手征旋量。虚维数由 $d(\\mathfrak s)=\\frac{c_1(\\mathfrak s)^2-(2\\chi+3\\sigma)}{4}$ 给出。零维时的有向计数定义 SW 不变量。该模空间比瞬子模空间更紧凑，常能高效约束四维光滑结构。\n\nSeiberg-Witten 模空间的紧性来自 Weitzenbock 公式给出的先验界；壁穿越发生在自对偶调和二形式维数较小时，因而不变量会依赖 chamber 选择。围绕「塞伯格-威滕模空间」的物理解释还要区分体相、边界态和插入算符；许多量子不变量正是三者兼容后留下的普适信息，而不是单个公式的数值。其有向计数依赖自旋结构相关数据，因而能细致地区分四流形的光滑类型。",
+      "complete_clues": [
+        "这是四维规范理论中的一种解空间。",
+        "它由单极子方程的解按规范等价取商得到，用来定义相应的四流形不变量。",
+        "虚维数为 $d(\\mathfrak s)=\\frac{c_1(\\mathfrak s)^2-(2\\chi+3\\sigma)}{4}$。",
+        "Weitzenbock 公式给出的先验界使它常比瞬子模空间更紧凑。",
+        "它的英文译名是 Seiberg-Witten moduli space。"
+      ],
+      "fragmented_clues": [
+        "四维规范理论 解空间",
+        "单极子方程 规范等价 四流形不变量",
+        "$d(\\mathfrak s)=\\frac{c_1(\\mathfrak s)^2-(2\\chi+3\\sigma)}{4}$",
+        "Weitzenbock 公式 先验界 紧凑性 瞬子模空间",
+        "Seiberg-Witten moduli space"
+      ],
+      "explanation_markdown": "塞伯格-威滕模空间可理解为四流形上单极子方程解按规范等价取商后的空间。方程 $D_A\\psi=0$ 与 $F_A^+=q(\\psi)$ 中，$A$ 是自旋$^c$联络，$\\psi$ 是正手征旋量。虚维数由 $d(\\mathfrak s)=\\frac{c_1(\\mathfrak s)^2-(2\\chi+3\\sigma)}{4}$ 给出。零维时的有向计数定义 SW 不变量。该模空间比瞬子模空间更紧凑，常能高效约束四维光滑结构。\n\nSeiberg-Witten 模空间的紧性来自 Weitzenbock 公式给出的先验界；壁穿越发生在自对偶调和二形式维数较小时，因而不变量会依赖 chamber 选择。其有向计数依赖自旋结构相关数据，因而能细致地区分四流形的光滑类型。塞伯格-威滕模空间来自模空间的有向计数或同调类，紧化、横截性和取向会直接影响结果。物理扭曲理论中的塞伯格-威滕模空间把 BPS 方程留下来，非零模相消后只剩拓扑数据。",
       "source_links": [
         {
           "label": "百度百科",
@@ -1996,9 +2992,21 @@
     {
       "chinese_name": "单极子方程",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "单极子方程在四维 Seiberg-Witten 理论中耦合自旋$^c$联络和旋量。标准形式为 $D_A\\psi=0$、$F_A^+=\\sigma(\\psi)$，其中 $D_A$ 是 Dirac 算符，$F_A^+$ 是曲率自对偶部分，$\\sigma$ 是旋量二次型。它比反自对偶杨-米尔斯方程更接近阿贝尔理论，却保留强拓扑约束。\n\n解空间的有向计数给 SW 不变量，并通过消灭定理、壁穿越和辛流形定理影响四维拓扑。单极子方程的二次项把旋量零模反馈到曲率自对偶部分，使解空间比纯 Dirac 方程更有约束；其阿贝尔性质又让紧化和计算比瞬子理论更可控。在范畴化语言中，「单极子方程」往往对应对象、态射或高阶态射；这种层级记录了缺陷如何融合、如何终止以及如何在配边中传递。",
+      "complete_clues": [
+        "这是四维规范理论中的一组耦合方程。",
+        "它把自旋$^c$联络和旋量联系起来，并用于定义光滑四流形不变量。",
+        "标准形式为 $D_A\\psi=0$、$F_A^+=\\sigma(\\psi)$。",
+        "二次项让旋量零模反馈到曲率自对偶部分，阿贝尔性质又使紧化和计算相对可控。",
+        "它的英文译名是 monopole equations。"
+      ],
+      "fragmented_clues": [
+        "四维规范理论 耦合方程",
+        "自旋$^c$联络 旋量 光滑四流形不变量",
+        "$D_A\\psi=0$ $F_A^+=\\sigma(\\psi)$",
+        "二次项 旋量零模 曲率自对偶部分 阿贝尔性质",
+        "monopole equations"
+      ],
+      "explanation_markdown": "单极子方程通常在四维 Seiberg-Witten 理论中耦合自旋$^c$联络和旋量。标准形式为 $D_A\\psi=0$、$F_A^+=\\sigma(\\psi)$，其中 $D_A$ 是 Dirac 算符，$F_A^+$ 是曲率自对偶部分，$\\sigma$ 是旋量二次型。它比反自对偶杨-米尔斯方程更接近阿贝尔理论，却保留强拓扑约束。\n\n解空间的有向计数给 SW 不变量，并通过消灭定理、壁穿越和辛流形定理影响四维拓扑。单极子方程的二次项把旋量零模反馈到曲率自对偶部分，使解空间比纯 Dirac 方程更有约束；其阿贝尔性质又让紧化和计算比瞬子理论更可控。物理扭曲理论中的单极子方程把 BPS 方程留下来，非零模相消后只剩拓扑数据。单极子方程来自模空间的有向计数或同调类，紧化、横截性和取向会直接影响结果。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2020,9 +3028,21 @@
     {
       "chinese_name": "扭结量子化",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "扭结量子化可理解为把纽结补空间或平坦联络模空间量子化，从而产生纽结量子不变量。陈西蒙斯理论中，边界环面模空间带辛形式 $\\Omega=\\frac{k}{4\\pi}\\int_T\\operatorname{Tr}(\\delta A\\wedge\\delta A)$，其中 $k$ 是级数。量子化后，经线和纬线 holonomy 成为非对易算符，满足 $\\hat m\\hat l=q\\hat l\\hat m$。\n\n有色 Jones 多项式可视为这些算符约束方程的波函数解。扭结量子化把边界环面上的经典 A 多项式关系提升为差分算符关系；这种量子曲线观点解释了有色 Jones 多项式为何满足递推方程。若把「扭结量子化」用于凝聚态或量子计算，还需要关注可观测的辫统计、边界反常和基态简并；这些量比局域拉格朗日量更能代表拓扑相。",
+      "complete_clues": [
+        "这是量子拓扑中的一种模空间量子化观点。",
+        "它把补空间或边界平坦联络模空间量子化，产生有色 Jones 多项式和量子曲线关系。",
+        "边界 holonomy 可满足 $\\hat m\\hat l=q\\hat l\\hat m$。",
+        "经典 A 多项式关系会被提升为差分算符关系，多项式不变量可看作边界态波函数。",
+        "它的英文译名是 knot quantization。"
+      ],
+      "fragmented_clues": [
+        "量子拓扑 模空间量子化观点",
+        "补空间 边界平坦联络 有色 Jones 多项式 量子曲线",
+        "$\\hat m\\hat l=q\\hat l\\hat m$",
+        "A 多项式 差分算符 边界态波函数",
+        "knot quantization"
+      ],
+      "explanation_markdown": "扭结量子化通常可理解为把纽结补空间或平坦联络模空间量子化，从而产生纽结量子不变量。陈西蒙斯理论中，边界环面模空间带辛形式 $\\Omega=\\frac{k}{4\\pi}\\int_T\\operatorname{Tr}(\\delta A\\wedge\\delta A)$，其中 $k$ 是级数。量子化后，经线和纬线 holonomy 成为非对易算符，满足 $\\hat m\\hat l=q\\hat l\\hat m$。\n\n有色 Jones 多项式可视为这些算符约束方程的波函数解。扭结量子化把边界环面上的经典 A 多项式关系提升为差分算符关系；这种量子曲线观点解释了有色 Jones 多项式为何满足递推方程。扭结量子化把路径积分结果压缩为配分函数、态空间或量子不变量，局域几何只在正规化中出现。计算扭结量子化时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2044,9 +3064,21 @@
     {
       "chinese_name": "拓扑递归",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "拓扑递归从一条谱曲线递归生成一族多点微分 $\\omega_{g,n}$，广泛出现在矩阵模型、枚举几何和量子曲线中。Eynard-Orantin 递归写作 $\\omega_{g,n}=\\sum_{p}\\operatorname{Res}_{z=p}K(z_1,z)[\\omega_{g-1,n+1}+\\sum \\omega_{g_1,I}\\omega_{g_2,J}]$。其中核 $K$ 由谱曲线数据决定。它把高亏格拓扑弦振幅组织成由低阶数据生成的普适结构。\n\n拓扑递归的输出常被解释为高亏格自由能或多边界振幅；当谱曲线来自纽结补空间或矩阵模型时，它把量子曲线、枚举几何和 TQFT 波函数联系起来。对「拓扑递归」的严格构造常依赖模空间紧化、量子群半简化或 BV-BRST 处理；这些技术细节保证结果不随度量和辅助切割任意变化。递归核的选择封装了局部支点结构，因此全部高阶振幅由谱曲线的少量初始数据决定。",
+      "complete_clues": [
+        "这是枚举几何和矩阵模型中的一种递归构造。",
+        "它从谱曲线出发生成多点微分，组织高亏格自由能和多边界振幅。",
+        "Eynard-Orantin 形式可概写为 $\\omega_{g,n}=\\sum_p\\operatorname{Res}_{z=p}K(z_1,z)[\\omega_{g-1,n+1}+\\sum\\omega_{g_1,I}\\omega_{g_2,J}]$。",
+        "递归核封装局部支点结构，使全部高阶振幅由少量初始谱曲线数据决定。",
+        "它的英文译名是 topological recursion。"
+      ],
+      "fragmented_clues": [
+        "枚举几何 矩阵模型 递归构造",
+        "谱曲线 多点微分 高亏格自由能 多边界振幅",
+        "$\\omega_{g,n}=\\sum_p\\operatorname{Res}_{z=p}K(z_1,z)[\\omega_{g-1,n+1}+\\sum\\omega_{g_1,I}\\omega_{g_2,J}]$",
+        "递归核 支点结构 初始谱曲线数据 高阶振幅",
+        "topological recursion"
+      ],
+      "explanation_markdown": "拓扑递归通常从一条谱曲线递归生成一族多点微分 $\\omega_{g,n}$，广泛出现在矩阵模型、枚举几何和量子曲线中。Eynard-Orantin 递归写作 $\\omega_{g,n}=\\sum_{p}\\operatorname{Res}_{z=p}K(z_1,z)[\\omega_{g-1,n+1}+\\sum \\omega_{g_1,I}\\omega_{g_2,J}]$。其中核 $K$ 由谱曲线数据决定。它把高亏格拓扑弦振幅组织成由低阶数据生成的普适结构。\n\n拓扑递归的输出常被解释为高亏格自由能或多边界振幅；当谱曲线来自纽结补空间或矩阵模型时，它把量子曲线、枚举几何和 TQFT 波函数联系起来。递归核的选择封装了局部支点结构，因此全部高阶振幅由谱曲线的少量初始数据决定。计算拓扑递归时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2068,9 +3100,21 @@
     {
       "chinese_name": "威滕指数",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "威滕指数是超对称量子系统中玻色与费米零能态数的带符号差，受连续形变保护。定义为 $I_W=\\operatorname{Tr}_{\\mathcal H}(-1)^F e^{-\\beta H}$，其中 $F$ 是费米数，$H$ 是哈密顿量。非零能级因超对称成对抵消，所以指数不依赖 $\\beta$。在拓扑场论中，它常等于椭圆算符指标、真空数或流形的拓扑不变量，用来判断超对称是否可被动力学破缺。\n\n威滕指数只对谱离散且边界条件良好的系统最直接；若连续谱存在，需要小心正则化和边界贡献，但指数的形变不变性仍是超对称拓扑论的核心工具。「威滕指数」在路径积分中常表现为对鞍点、标号或同调类求和；在公理化描述中，同一内容被重写为函子、范畴迹或配边诱导映射。",
+      "complete_clues": [
+        "这是超对称量子系统中的一种受保护指数。",
+        "它给出玻色和费米零能态数的带符号差，并可判断超对称是否可能动力学破缺。",
+        "定义为 $I_W=\\operatorname{Tr}_{\\mathcal H}(-1)^F e^{-\\beta H}$。",
+        "非零能级因超对称成对抵消，所以在谱离散且边界条件良好时它不依赖 $\\beta$。",
+        "它的英文译名是 Witten index。"
+      ],
+      "fragmented_clues": [
+        "超对称量子系统 受保护指数",
+        "玻色零能态 费米零能态 带符号差 动力学破缺",
+        "$I_W=\\operatorname{Tr}_{\\mathcal H}(-1)^F e^{-\\beta H}$",
+        "非零能级 成对抵消 谱离散 边界条件 $\\beta$ 无关",
+        "Witten index"
+      ],
+      "explanation_markdown": "威滕指数可理解为超对称量子系统中玻色与费米零能态数的带符号差，受连续形变保护。定义为 $I_W=\\operatorname{Tr}_{\\mathcal H}(-1)^F e^{-\\beta H}$，其中 $F$ 是费米数，$H$ 是哈密顿量。非零能级因超对称成对抵消，所以指数不依赖 $\\beta$。在拓扑场论中，它常等于椭圆算符指标、真空数或流形的拓扑不变量，用来判断超对称是否可被动力学破缺。\n\n威滕指数只对谱离散且边界条件良好的系统最直接；若连续谱存在，需要小心正则化和边界贡献，但指数的形变不变性仍是超对称拓扑论的核心工具。威滕指数把路径积分结果压缩为配分函数、态空间或量子不变量，局域几何只在正规化中出现。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2092,9 +3136,21 @@
     {
       "chinese_name": "谱流",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "谱流计数一族自伴算符特征值穿过零点的带符号次数。若 $D_t$ 是 $t\\in[0,1]$ 上的 Dirac 型算符，谱流 $\\operatorname{sf}(D_t)$ 等于从负到正穿越零的特征值数减去反向穿越数。它与圆柱上的指标满足 $\\operatorname{Index}(\\partial_t+D_t)=\\operatorname{sf}(D_t)$。在 Floer 理论中，谱流给临界点相对分次；在 APS 指标定理中，它控制边界谱变化。\n\n谱流给 Floer 分次和 η 不变量变化之间的桥梁；它把一族三维边界算符的谱穿越转化为四维圆柱上的指标，从而连接分析和拓扑。讨论「谱流」时还应注意异常和量子化条件；级数、特征类或中心荷的取值往往由大规范变换和边界一致性强制决定。因此它常被用来给 Floer 复形定向和分次，也是壁穿越公式中的基本分析量。",
+      "complete_clues": [
+        "这是椭圆算符理论中的一种谱计数量。",
+        "它计数一族自伴算符特征值穿过零点的带符号次数，并用于 Floer 分次和边界指标修正。",
+        "它与圆柱指标满足 $\\operatorname{Index}(\\partial_t+D_t)=\\operatorname{sf}(D_t)$。",
+        "它把三维边界算符的谱穿越转化为四维圆柱上的指标，连接分析变化和拓扑数据。",
+        "它的英文译名是 spectral flow。"
+      ],
+      "fragmented_clues": [
+        "椭圆算符 谱计数量",
+        "自伴算符 特征值 零点穿越 Floer 分次 边界指标",
+        "$\\operatorname{Index}(\\partial_t+D_t)=\\operatorname{sf}(D_t)$",
+        "三维边界谱穿越 四维圆柱指标 分析变化 拓扑数据",
+        "spectral flow"
+      ],
+      "explanation_markdown": "谱流通常计数一族自伴算符特征值穿过零点的带符号次数。若 $D_t$ 是 $t\\in[0,1]$ 上的 Dirac 型算符，谱流 $\\operatorname{sf}(D_t)$ 等于从负到正穿越零的特征值数减去反向穿越数。它与圆柱上的指标满足 $\\operatorname{Index}(\\partial_t+D_t)=\\operatorname{sf}(D_t)$。在 Floer 理论中，谱流给临界点相对分次；在 APS 指标定理中，它控制边界谱变化。\n\n谱流给 Floer 分次和 η 不变量变化之间的桥梁；它把一族三维边界算符的谱穿越转化为四维圆柱上的指标，从而连接分析和拓扑。因此它常被用来给 Floer 复形定向和分次，也是壁穿越公式中的基本分析量。含费米子的谱流还会依赖 spin 或 pin 结构，这些离散选择会改变配分函数符号。谱流把特征类或指标密度放入作用量，结果只随丛拓扑和流形结构改变。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2116,9 +3172,21 @@
     {
       "chinese_name": "η不变量",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "η不变量度量自伴椭圆算符谱在正负之间的不对称性，是带边界指标定理的边界修正。定义为 $\\eta_D(s)=\\sum_{\\lambda\\ne0}\\operatorname{sign}(\\lambda)|\\lambda|^{-s}$，并取解析延拓到 $s=0$ 的值。它不是简单零模数，而是全谱非对称的正则化和。APS 指标公式中，$\\eta(D_{\\partial M})$ 修正体积分指标密度；在 TQFT 中，它产生 framing anomaly 和相位项。\n\nη不变量依赖度量但其与体积分项的组合常给拓扑或规范不变量；在陈西蒙斯理论中，相关相位解释了为什么 framing 选择会进入量子配分函数。继续分析「η不变量」时，应说明它依赖哪些附加结构，如取向、framing、自旋结构或标号范畴；这些选择会改变相位、态空间维数和可允许的缺陷。当边界谱穿越零时，η不变量的跳变由谱流补偿，整体指标才保持整数。",
+      "complete_clues": [
+        "这是谱几何中的一种边界修正量。",
+        "它度量自伴椭圆算符正负谱的不对称性，并出现在带边界指标公式和 framing 相位中。",
+        "定义为 $\\eta_D(s)=\\sum_{\\lambda\\ne0}\\operatorname{sign}(\\lambda)|\\lambda|^{-s}$ 并在 $s=0$ 取解析延拓。",
+        "它不是零模数，而是全谱不对称的正则化和；边界谱穿越时跳变由谱流补偿。",
+        "它的英文译名是 eta invariant。"
+      ],
+      "fragmented_clues": [
+        "谱几何 边界修正量",
+        "自伴椭圆算符 正负谱不对称 带边界指标 framing 相位",
+        "$\\eta_D(s)=\\sum_{\\lambda\\ne0}\\operatorname{sign}(\\lambda)|\\lambda|^{-s}$ $s=0$",
+        "非零模数 全谱不对称 正则化 跳变 谱流补偿",
+        "eta invariant"
+      ],
+      "explanation_markdown": "η不变量通常度量自伴椭圆算符谱在正负之间的不对称性，是带边界指标定理的边界修正。定义为 $\\eta_D(s)=\\sum_{\\lambda\\ne0}\\operatorname{sign}(\\lambda)|\\lambda|^{-s}$，并取解析延拓到 $s=0$ 的值。它不是简单零模数，而是全谱非对称的正则化和。APS 指标公式中，$\\eta(D_{\\partial M})$ 修正体积分指标密度；在 TQFT 中，它产生 framing anomaly 和相位项。\n\nη不变量依赖度量但其与体积分项的组合常给拓扑或规范不变量；在陈西蒙斯理论中，相关相位解释了为什么 framing 选择会进入量子配分函数。当边界谱穿越零时，η不变量的跳变由谱流补偿，整体指标才保持整数。η不变量把特征类或指标密度放入作用量，结果只随丛拓扑和流形结构改变。含费米子的η不变量还会依赖 spin 或 pin 结构，这些离散选择会改变配分函数符号。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2140,9 +3208,21 @@
     {
       "chinese_name": "APS指标定理",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "APS指标定理给带边界流形上的 Dirac 算符指标公式，边界条件由边界算符的非负谱投影定义。公式为 $\\operatorname{Index}D=\\int_M \\hat A(M)\\operatorname{ch}(E)-\\frac{\\eta(D_{\\partial M})+h}{2}$，其中 $h$ 是边界零模数。体积分项是局部指标密度，η不变量记录边界谱非对称。它在异常流入、陈西蒙斯相位和拓扑绝缘体有效作用中提供严格数学支撑。\n\nAPS 边界条件是非局域的，因为它引用整个边界谱；这种非局域性正是为了让带边界指标公式成立，并与反常流入中的边界谱不对称相匹配。使用「APS指标定理」时，核心是它在切割粘合下怎样变换；只有振幅、态空间和缺陷融合同时满足一致性，才真正构成拓扑场论数据。",
+      "complete_clues": [
+        "这是带边界流形上椭圆算符的一条指标定理。",
+        "它把体积分的局部指标密度与边界谱不对称修正结合起来。",
+        "公式为 $\\operatorname{Index}D=\\int_M\\hat A(M)\\operatorname{ch}(E)-\\frac{\\eta(D_{\\partial M})+h}{2}$。",
+        "其边界条件引用整个边界谱，因此是非局域的，正好匹配反常流入中的边界谱不对称。",
+        "它的英文译名是 Atiyah-Patodi-Singer index theorem，常称 APS index theorem。"
+      ],
+      "fragmented_clues": [
+        "带边界流形 椭圆算符 指标定理",
+        "体积分 局部指标密度 边界谱不对称",
+        "$\\operatorname{Index}D=\\int_M\\hat A(M)\\operatorname{ch}(E)-\\frac{\\eta(D_{\\partial M})+h}{2}$",
+        "非局域边界条件 整个边界谱 反常流入",
+        "Atiyah-Patodi-Singer index theorem APS index theorem"
+      ],
+      "explanation_markdown": "APS指标定理通常给带边界流形上的 Dirac 算符指标公式，边界条件由边界算符的非负谱投影定义。公式为 $\\operatorname{Index}D=\\int_M \\hat A(M)\\operatorname{ch}(E)-\\frac{\\eta(D_{\\partial M})+h}{2}$，其中 $h$ 是边界零模数。体积分项是局部指标密度，η不变量记录边界谱非对称。它在异常流入、陈西蒙斯相位和拓扑绝缘体有效作用中提供严格数学支撑。\n\nAPS 边界条件是非局域的，因为它引用整个边界谱；这种非局域性正是为了让带边界指标公式成立，并与反常流入中的边界谱不对称相匹配。含费米子的APS指标定理还会依赖 spin 或 pin 结构，这些离散选择会改变配分函数符号。APS指标定理把特征类或指标密度放入作用量，结果只随丛拓扑和流形结构改变。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2164,9 +3244,21 @@
     {
       "chinese_name": "指数密度",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "指数密度是指标定理中可积分得到椭圆算符指标的局部特征形式。对扭曲 Dirac 算符，密度为 $\\hat A(R)\\operatorname{ch}(F)$，其中 $R$ 是切丛曲率，$F$ 是规范丛曲率。积分 $\\int_M\\hat A(R)\\operatorname{ch}(F)$ 在闭流形上给指标。物理上，它也是手征反常多项式的来源。\n\nTQFT 中，指数密度把零模计数、拓扑响应和特征类耦合写成统一的微分形式。指数密度的 descent 给出反常形式：闭的高维多项式经过下降产生低维反常和陈西蒙斯项；因此同一个特征类可同时控制指标、响应和边界不守恒。围绕「指数密度」的物理解释还要区分体相、边界态和插入算符；许多量子不变量正是三者兼容后留下的普适信息，而不是单个公式的数值。",
+      "complete_clues": [
+        "这是指标定理中的一种局部特征形式。",
+        "它把零模计数、拓扑响应和反常多项式写成可积分的曲率表达。",
+        "对扭曲 Dirac 算符，密度可写 $\\hat A(R)\\operatorname{ch}(F)$。",
+        "它的 descent 关系会产生低维反常和 Chern-Simons 项，同一特征类同时控制指标与边界不守恒。",
+        "它的英文译名是 index density。"
+      ],
+      "fragmented_clues": [
+        "指标定理 局部特征形式",
+        "零模计数 拓扑响应 反常多项式 曲率表达",
+        "$\\hat A(R)\\operatorname{ch}(F)$",
+        "descent 低维反常 Chern-Simons 项 指标 边界不守恒",
+        "index density"
+      ],
+      "explanation_markdown": "指数密度可理解为指标定理中可积分得到椭圆算符指标的局部特征形式。对扭曲 Dirac 算符，密度为 $\\hat A(R)\\operatorname{ch}(F)$，其中 $R$ 是切丛曲率，$F$ 是规范丛曲率。积分 $\\int_M\\hat A(R)\\operatorname{ch}(F)$ 在闭流形上给指标。物理上，它也是手征反常多项式的来源。\n\nTQFT 中，指数密度把零模计数、拓扑响应和特征类耦合写成统一的微分形式。指数密度的 descent 给出反常形式：闭的高维多项式经过下降产生低维反常和陈西蒙斯项；因此同一个特征类可同时控制指标、响应和边界不守恒。指数密度把路径积分结果压缩为配分函数、态空间或量子不变量，局域几何只在正规化中出现。计算指数密度时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2188,9 +3280,21 @@
     {
       "chinese_name": "规范固定",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "规范固定是在路径积分中去除规范轨道冗余的过程，拓扑场论也必须处理这一点。Faddeev-Popov 形式写 $1=\\Delta_{FP}[A]\\int Dg\\,\\delta(G(A^g))$，其中 $G=0$ 是规范条件，$\\Delta_{FP}$ 是鬼场行列式。BRST 形式把规范固定项写成 $S_{gf}=Q\\Psi$。在 TQFT 中，物理量位于 BRST 上同调，规范固定 fermion 的改变不影响 Q-闭可观测量。\n\n规范固定的选择不应改变 BRST 上同调类的期望值，但可能改变中间传播子和鬼场结构；拓扑场论中的可观测量必须避免落入 Q 恰当扇区。在范畴化语言中，「规范固定」往往对应对象、态射或高阶态射；这种层级记录了缺陷如何融合、如何终止以及如何在配边中传递。拓扑理论中常把规范固定项写为 Q 恰当项，从而把辅助选择的影响限制在同调平凡部分。",
+      "complete_clues": [
+        "这是规范理论路径积分中的一种冗余处理步骤。",
+        "它去除规范轨道的重复积分，并在拓扑场论中与鬼场和 BRST 结构相连。",
+        "Faddeev-Popov 形式可写 $1=\\Delta_{FP}[A]\\int Dg\\,\\delta(G(A^g))$。",
+        "在拓扑理论中，相关项常写为 $Q$-恰当项，所以辅助选择不改变 $Q$-闭可观测量。",
+        "它的英文译名是 gauge fixing。"
+      ],
+      "fragmented_clues": [
+        "规范理论 路径积分 冗余处理步骤",
+        "规范轨道 重复积分 鬼场 BRST 结构",
+        "$1=\\Delta_{FP}[A]\\int Dg\\,\\delta(G(A^g))$",
+        "$Q$-恰当 辅助选择 $Q$-闭可观测量",
+        "gauge fixing"
+      ],
+      "explanation_markdown": "规范固定指在路径积分中去除规范轨道冗余的过程，拓扑场论也必须处理这一点。Faddeev-Popov 形式写 $1=\\Delta_{FP}[A]\\int Dg\\,\\delta(G(A^g))$，其中 $G=0$ 是规范条件，$\\Delta_{FP}$ 是鬼场行列式。BRST 形式把规范固定项写成 $S_{gf}=Q\\Psi$。在 TQFT 中，物理量位于 BRST 上同调，规范固定 fermion 的改变不影响 Q-闭可观测量。\n\n规范固定的选择不应改变 BRST 上同调类的期望值，但可能改变中间传播子和鬼场结构；拓扑场论中的可观测量必须避免落入 Q 恰当扇区。拓扑理论中常把规范固定项写为 Q 恰当项，从而把辅助选择的影响限制在同调平凡部分。BV 或 AKSZ 形式下的规范固定通过经典主方程控制相互作用，量子修正再检查反常。规范固定把规范冗余改写为上同调问题，物理态或可观测量取在闭而非恰当的等价类中。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2212,9 +3316,21 @@
     {
       "chinese_name": "BRST上同调",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "BRST上同调用一个奇的幂零算符 $Q$ 选出规范不变量和物理可观测量。基本条件为 $Q^2=0$，物理算符满足 $Q\\mathcal O=0$ 且按 $\\mathcal O\\sim\\mathcal O+Q\\Lambda$ 取等价。闭而非恰当的类构成上同调。拓扑场论中，度量变分常为 $Q$-恰当项，因此 Q-闭相关函数不依赖度量。\n\nBRST 语言还统一了鬼场、反场和异常分析，是 BV 形式主义的入口。BRST 上同调区分真正物理算符和规范冗余；在拓扑扭曲理论中，局域算符常通过 descent 生成扩展算符，使同调类可与流形周期配对。若把「BRST上同调」用于凝聚态或量子计算，还需要关注可观测的辫统计、边界反常和基态简并；这些量比局域拉格朗日量更能代表拓扑相。",
+      "complete_clues": [
+        "这是规范场论中的一种上同调结构。",
+        "它用奇的幂零算符选出物理态和可观测量，并把规范冗余变成等价关系。",
+        "基本条件是 $Q^2=0$，且 $Q\\mathcal O=0$、$\\mathcal O\\sim\\mathcal O+Q\\Lambda$。",
+        "闭而非恰当的类才代表物理内容；拓扑扭曲理论中的 descent 构造也依赖这一结构。",
+        "它的英文译名是 BRST cohomology。"
+      ],
+      "fragmented_clues": [
+        "规范场论 上同调结构",
+        "奇幂零算符 物理态 可观测量 规范冗余",
+        "$Q^2=0$ $Q\\mathcal O=0$ $\\mathcal O\\sim\\mathcal O+Q\\Lambda$",
+        "闭类 非恰当类 descent 拓扑扭曲",
+        "BRST cohomology"
+      ],
+      "explanation_markdown": "BRST上同调常用一个奇的幂零算符 $Q$ 选出规范不变量和物理可观测量。基本条件为 $Q^2=0$，物理算符满足 $Q\\mathcal O=0$ 且按 $\\mathcal O\\sim\\mathcal O+Q\\Lambda$ 取等价。闭而非恰当的类构成上同调。拓扑场论中，度量变分常为 $Q$-恰当项，因此 Q-闭相关函数不依赖度量。\n\nBRST 语言还统一了鬼场、反场和异常分析，是 BV 形式主义的入口。BRST 上同调区分真正物理算符和规范冗余；在拓扑扭曲理论中，局域算符常通过 descent 生成扩展算符，使同调类可与流形周期配对。BRST上同调把规范冗余改写为上同调问题，物理态或可观测量取在闭而非恰当的等价类中。BV 或 AKSZ 形式下的BRST上同调通过经典主方程控制相互作用，量子修正再检查反常。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2236,9 +3352,21 @@
     {
       "chinese_name": "BV形式主义",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "BV形式主义用场和反场的奇辛几何系统处理有开代数或高阶规范对称的量子场论。经典主方程为 $\\{S,S\\}=0$，其中括号是 BV 反括号，$S$ 是扩展作用量。量子层面为 $\\frac12\\{S,S\\}-i\\hbar\\Delta S=0$。规范固定对应选择拉格朗日子流形。\n\n许多 TQFT，尤其 AKSZ 模型，天然写成 BV 理论，使对称、鬼场和边界项有统一几何解释。BV 形式主义特别适合拓扑理论中的 reducible 对称和边界问题；反场记录规范变换的 Noether 关系，奇辛结构则让量子主方程表达无异常条件。对「BV形式主义」的严格构造常依赖模空间紧化、量子群半简化或 BV-BRST 处理；这些技术细节保证结果不随度量和辅助切割任意变化。",
+      "complete_clues": [
+        "这是量子场论中处理规范对称的一种反场框架。",
+        "它适合开代数、高阶规范对称、边界项和许多拓扑场论模型。",
+        "经典主方程为 $\\{S,S\\}=0$。",
+        "场和反场形成奇辛几何系统，规范固定对应选择拉格朗日子流形。",
+        "它的英文译名是 BV formalism。"
+      ],
+      "fragmented_clues": [
+        "量子场论 规范对称 反场框架",
+        "开代数 高阶规范对称 边界项 拓扑场论",
+        "$\\{S,S\\}=0$",
+        "场 反场 奇辛几何 拉格朗日子流形 规范固定",
+        "BV formalism"
+      ],
+      "explanation_markdown": "BV形式主义常用场和反场的奇辛几何系统处理有开代数或高阶规范对称的量子场论。经典主方程为 $\\{S,S\\}=0$，其中括号是 BV 反括号，$S$ 是扩展作用量。量子层面为 $\\frac12\\{S,S\\}-i\\hbar\\Delta S=0$。规范固定对应选择拉格朗日子流形。\n\n许多 TQFT，尤其 AKSZ 模型，天然写成 BV 理论，使对称、鬼场和边界项有统一几何解释。BV 形式主义特别适合拓扑理论中的 reducible 对称和边界问题；反场记录规范变换的 Noether 关系，奇辛结构则让量子主方程表达无异常条件。BV 或 AKSZ 形式下的BV形式主义通过经典主方程控制相互作用，量子修正再检查反常。BV形式主义把规范冗余改写为上同调问题，物理态或可观测量取在闭而非恰当的等价类中。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2260,9 +3388,21 @@
     {
       "chinese_name": "AKSZ构造",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "AKSZ构造从带 QP 结构的目标超流形系统地产生拓扑 sigma 模型。场空间是映射 $\\operatorname{Map}(T[1]\\Sigma,\\mathcal M)$，其中 $T[1]\\Sigma$ 编码微分形式，$\\mathcal M$ 带奇辛形式和哈密顿函数 $\\Theta$，满足 $\\{\\Theta,\\Theta\\}=0$。所得 BV 作用量自动满足主方程。Poisson sigma 模型、Chern-Simons 和 Courant sigma 模型都可由 AKSZ 统一描述。\n\nAKSZ 构造把许多看似不同的 TQFT 归为同一映射空间几何；目标 QP 流形的次数决定世界体维数，哈密顿函数的主方程保证 BV 一致性。「AKSZ构造」在路径积分中常表现为对鞍点、标号或同调类求和；在公理化描述中，同一内容被重写为函子、范畴迹或配边诱导映射。这种统一性让模型的场、鬼场和反场从映射空间自动出现，减少了手工猜测规范对称的任意性。",
+      "complete_clues": [
+        "这是拓扑 sigma 模型中的一种系统生成方法。",
+        "它从带 QP 结构的目标超流形出发，统一产生 Poisson sigma、Chern-Simons 和 Courant sigma 等模型。",
+        "场空间是 $\\operatorname{Map}(T[1]\\Sigma,\\mathcal M)$，并要求 $\\{\\Theta,\\Theta\\}=0$。",
+        "目标流形次数决定世界体维数，主方程保证所得 BV 作用量自动一致。",
+        "它的英文译名是 AKSZ construction。"
+      ],
+      "fragmented_clues": [
+        "拓扑 sigma 模型 系统生成方法",
+        "QP 目标超流形 Poisson sigma Chern-Simons Courant sigma",
+        "$\\operatorname{Map}(T[1]\\Sigma,\\mathcal M)$ $\\{\\Theta,\\Theta\\}=0$",
+        "目标次数 世界体维数 BV 作用量 主方程",
+        "AKSZ construction"
+      ],
+      "explanation_markdown": "AKSZ构造通常从带 QP 结构的目标超流形系统地产生拓扑 sigma 模型。场空间是映射 $\\operatorname{Map}(T[1]\\Sigma,\\mathcal M)$，其中 $T[1]\\Sigma$ 编码微分形式，$\\mathcal M$ 带奇辛形式和哈密顿函数 $\\Theta$，满足 $\\{\\Theta,\\Theta\\}=0$。所得 BV 作用量自动满足主方程。Poisson sigma 模型、Chern-Simons 和 Courant sigma 模型都可由 AKSZ 统一描述。\n\nAKSZ 构造把许多看似不同的 TQFT 归为同一映射空间几何；目标 QP 流形的次数决定世界体维数，哈密顿函数的主方程保证 BV 一致性。这种统一性让模型的场、鬼场和反场从映射空间自动出现，减少了手工猜测规范对称的任意性。AKSZ构造把规范冗余改写为上同调问题，物理态或可观测量取在闭而非恰当的等价类中。BV 或 AKSZ 形式下的AKSZ构造通过经典主方程控制相互作用，量子修正再检查反常。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2284,9 +3424,21 @@
     {
       "chinese_name": "奇辛结构",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "奇辛结构是带奇宇称闭非退化二形式的超几何结构，是 BV 形式主义的几何核心。若奇辛形式为 $\\omega$，它诱导反括号 $\\{F,G\\}=\\iota_{X_F}\\iota_{X_G}\\omega$，其中 $X_F$ 是由 $F$ 生成的哈密顿向量场。BV 主方程要求作用量的哈密顿向量场平方为零。\n\n奇辛结构把场、反场、鬼数和规范固定统一成几何语言，在 AKSZ TQFT 中尤其自然。奇辛结构中的拉格朗日子流形选择就是规范固定；不同选择若没有异常，应给等价量子理论，这把规范独立性转化为辛几何中的同伦问题。讨论「奇辛结构」时还应注意异常和量子化条件；级数、特征类或中心荷的取值往往由大规范变换和边界一致性强制决定。",
+      "complete_clues": [
+        "这是超几何中的一种辛几何结构。",
+        "它是 BV 形式主义的几何核心，把场、反场、鬼数和规范固定统一起来。",
+        "若奇二形式为 $\\omega$，可诱导反括号 $\\{F,G\\}=\\iota_{X_F}\\iota_{X_G}\\omega$。",
+        "选择拉格朗日子流形对应规范固定，不同选择在无异常时应给等价量子理论。",
+        "它的英文译名是 odd symplectic structure。"
+      ],
+      "fragmented_clues": [
+        "超几何 辛几何结构",
+        "BV 几何核心 场 反场 鬼数 规范固定",
+        "$\\{F,G\\}=\\iota_{X_F}\\iota_{X_G}\\omega$",
+        "拉格朗日子流形 无异常 等价量子理论",
+        "odd symplectic structure"
+      ],
+      "explanation_markdown": "奇辛结构指带奇宇称闭非退化二形式的超几何结构，是 BV 形式主义的几何核心。若奇辛形式为 $\\omega$，它诱导反括号 $\\{F,G\\}=\\iota_{X_F}\\iota_{X_G}\\omega$，其中 $X_F$ 是由 $F$ 生成的哈密顿向量场。BV 主方程要求作用量的哈密顿向量场平方为零。\n\n奇辛结构把场、反场、鬼数和规范固定统一成几何语言，在 AKSZ TQFT 中尤其自然。奇辛结构中的拉格朗日子流形选择就是规范固定；不同选择若没有异常，应给等价量子理论，这把规范独立性转化为辛几何中的同伦问题。BV 或 AKSZ 形式下的奇辛结构通过经典主方程控制相互作用，量子修正再检查反常。奇辛结构把规范冗余改写为上同调问题，物理态或可观测量取在闭而非恰当的等价类中。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2308,9 +3460,21 @@
     {
       "chinese_name": "主丛连接",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "主丛连接是在主 $G$ 丛上定义平行移动和规范场的几何对象。局部联络一形式 $A$ 的曲率为 $F_A=dA+A\\wedge A$，其中 $A$ 取值于李代数。规范变换 $g$ 下，$A\\mapsto gAg^{-1}-dg\\,g^{-1}$。在 Chern-Simons、BF 和 Donaldson-Witten 理论中，路径积分变量就是主丛连接或其超对称扩展。\n\n联络模空间的拓扑结构决定平坦态、瞬子和 Wilson 线期望。主丛连接的 holonomy 给 Wilson 线，曲率给局域场强；在拓扑理论中，联络的全局模空间比局部波动更重要，边界条件还会产生额外边缘态。继续分析「主丛连接」时，应说明它依赖哪些附加结构，如取向、framing、自旋结构或标号范畴；这些选择会改变相位、态空间维数和可允许的缺陷。其全局 holonomy 数据比局部势更稳定，正是拓扑规范理论能产生纽结和流形不变量的原因。",
+      "complete_clues": [
+        "这是规范几何中的一种基本对象。",
+        "它定义平行移动、曲率和 holonomy，是 Chern-Simons、BF 以及四维扭曲规范理论的路径积分变量。",
+        "局部一形式的曲率为 $F_A=dA+A\\wedge A$。",
+        "全局 holonomy 给出 Wilson 型观测量，曲率给局域场强，模空间结构决定平坦态和瞬子。",
+        "它的英文译名是 principal bundle connection。"
+      ],
+      "fragmented_clues": [
+        "规范几何 基本对象",
+        "平行移动 曲率 holonomy Chern-Simons BF 扭曲规范理论",
+        "$F_A=dA+A\\wedge A$",
+        "Wilson 型观测量 局域场强 模空间 平坦态 瞬子",
+        "principal bundle connection"
+      ],
+      "explanation_markdown": "主丛连接通常是在主 $G$ 丛上定义平行移动和规范场的几何对象。局部联络一形式 $A$ 的曲率为 $F_A=dA+A\\wedge A$，其中 $A$ 取值于李代数。规范变换 $g$ 下，$A\\mapsto gAg^{-1}-dg\\,g^{-1}$。在 Chern-Simons、BF 和 Donaldson-Witten 理论中，路径积分变量就是主丛连接或其超对称扩展。\n\n联络模空间的拓扑结构决定平坦态、瞬子和 Wilson 线期望。主丛连接的 holonomy 给 Wilson 线，曲率给局域场强；在拓扑理论中，联络的全局模空间比局部波动更重要，边界条件还会产生额外边缘态。其全局 holonomy 数据比局部势更稳定，正是拓扑规范理论能产生纽结和流形不变量的原因。主丛连接把规范冗余改写为上同调问题，物理态或可观测量取在闭而非恰当的等价类中。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2332,9 +3496,21 @@
     {
       "chinese_name": "平坦连接模空间",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "平坦连接模空间是满足 $F_A=0$ 的主丛联络按规范等价取商后的空间。它常同表示簇 $\\operatorname{Hom}(\\pi_1(M),G)/G$ 等价，其中平坦联络的 holonomy 给基本群表示。陈西蒙斯理论的经典解正是这个模空间，半经典展开围绕其各连通分支进行。\n\n边界为曲面时，模空间带 Atiyah-Bott 辛形式，量子化后给 TQFT 赋予该曲面的态空间。平坦连接模空间可能有奇点，因为表示可约或稳定性失败；量子化时需要处理这些奇点，或使用栈和范畴语言保留正确的态空间结构。使用「平坦连接模空间」时，核心是它在切割粘合下怎样变换；只有振幅、态空间和缺陷融合同时满足一致性，才真正构成拓扑场论数据。",
+      "complete_clues": [
+        "这是规范几何中的一种模空间。",
+        "它由曲率为零的联络按规范等价取商得到，并与基本群表示簇相关。",
+        "常有 $\\operatorname{Hom}(\\pi_1(M),G)/G$ 这样的表示。",
+        "它可能因可约表示或稳定性失败而出现奇点，量子化时常需要栈或范畴语言处理。",
+        "它的英文译名是 moduli space of flat connections。"
+      ],
+      "fragmented_clues": [
+        "规范几何 模空间",
+        "曲率为零 联络 规范等价 基本群表示簇",
+        "$\\operatorname{Hom}(\\pi_1(M),G)/G$",
+        "可约表示 稳定性失败 奇点 栈 范畴语言",
+        "moduli space of flat connections"
+      ],
+      "explanation_markdown": "平坦连接模空间表示满足 $F_A=0$ 的主丛联络按规范等价取商后的空间。它常同表示簇 $\\operatorname{Hom}(\\pi_1(M),G)/G$ 等价，其中平坦联络的 holonomy 给基本群表示。\n\n边界为曲面时，模空间带 Atiyah-Bott 辛形式，量子化后给 TQFT 赋予该曲面的态空间。平坦连接模空间可能有奇点，因为表示可约或稳定性失败；量子化时需要处理这些奇点，或使用栈和范畴语言保留正确的态空间结构。物理扭曲理论中的平坦连接模空间把 BPS 方程留下来，非零模相消后只剩拓扑数据。平坦连接模空间来自模空间的有向计数或同调类，紧化、横截性和取向会直接影响结果。平坦连接模空间把平坦联络模空间、链环 holonomy 和量子群表示联系起来，度规只作量子化辅助。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2356,9 +3532,21 @@
     {
       "chinese_name": "陈西蒙斯级数",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "陈西蒙斯级数 $k$ 是三维 Chern-Simons 作用量的整数系数，决定量子理论的耦合和允许表示。作用量 $S_{CS}=\\frac{k}{4\\pi}\\int\\operatorname{Tr}(A\\wedge dA+\\frac23A^3)$ 在大规范变换下改变 $2\\pi k n$，所以量子相位要求 $k\\in\\mathbb Z$。级数还决定量子群参数 $q=e^{2\\pi i/(k+h^\\vee)}$。它控制任意子类型数、中心荷和 Wilson 线纽结不变量的精细结构。\n\n级数的量子化来自大规范变换下作用量相位的单值性；有效级数还会受到一圈位移影响，因此量子群参数中出现对偶 Coxeter 数修正。围绕「陈西蒙斯级数」的物理解释还要区分体相、边界态和插入算符；许多量子不变量正是三者兼容后留下的普适信息，而不是单个公式的数值。级数越大，半经典近似越好；有限级数则体现真正的量子群截断和任意子类型有限性。",
+      "complete_clues": [
+        "这是三维拓扑规范理论中的一个整数参数。",
+        "它决定耦合强度、允许表示、量子群参数、任意子类型数和中心荷。",
+        "大规范变换要求 $k\\in\\mathbb Z$。",
+        "量子群参数中出现 $q=e^{2\\pi i/(k+h^\\vee)}$，反映一圈修正带来的对偶 Coxeter 数位移。",
+        "它的英文译名是 Chern-Simons level。"
+      ],
+      "fragmented_clues": [
+        "三维拓扑规范理论 整数参数",
+        "耦合强度 允许表示 量子群参数 任意子类型 中心荷",
+        "$k\\in\\mathbb Z$",
+        "$q=e^{2\\pi i/(k+h^\\vee)}$ 一圈修正 对偶 Coxeter 数",
+        "Chern-Simons level"
+      ],
+      "explanation_markdown": "陈西蒙斯级数通常指 $k$，它是三维 Chern-Simons 作用量的整数系数，决定量子理论的耦合和允许表示。作用量 $S_{CS}=\\frac{k}{4\\pi}\\int\\operatorname{Tr}(A\\wedge dA+\\frac23A^3)$ 在大规范变换下改变 $2\\pi k n$，所以量子相位要求 $k\\in\\mathbb Z$。级数还决定量子群参数 $q=e^{2\\pi i/(k+h^\\vee)}$。它控制任意子类型数、中心荷和 Wilson 线纽结不变量的精细结构。\n\n级数的量子化来自大规范变换下作用量相位的单值性；有效级数还会受到一圈位移影响，因此量子群参数中出现对偶 Coxeter 数修正。级数越大，半经典近似越好；有限级数则体现真正的量子群截断和任意子类型有限性。陈西蒙斯级数通常把平坦联络模空间、链环 holonomy 和量子群表示联系起来，度规只作为量子化辅助。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2380,9 +3568,21 @@
     {
       "chinese_name": "手征中心荷",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "手征中心荷 $c_-$ 衡量二维拓扑相边界左右手征模的中心荷差，并控制引力反常。热霍尔响应满足 $\\kappa_{xy}/T=\\frac{\\pi^2 k_B^2}{3h}c_-$，其中 $\\kappa_{xy}$ 是热霍尔电导。模张量范畴中，$c_-$ 只在模 $8$ 意义下由 Gauss 和 $\\frac{1}{\\mathcal D}\\sum_a d_a^2\\theta_a=e^{2\\pi i c_-/8}$ 确定。它说明体任意子自旋数据和边界能流异常相互匹配。\n\n手征中心荷只由任意子数据确定到模八，是因为可以叠加 E8 玻色量子霍尔态而不改任意子类型；这说明边界能流包含比体辫数据更细的可逆相信息。在范畴化语言中，「手征中心荷」往往对应对象、态射或高阶态射；这种层级记录了缺陷如何融合、如何终止以及如何在配边中传递。它还决定边缘能流的方向和大小，因此可通过热输运而非电荷输运探测。",
+      "complete_clues": [
+        "这是二维拓扑相边界理论中的一种中心荷差。",
+        "它衡量左右传播模的不平衡，并控制引力反常和热霍尔响应。",
+        "热输运满足 $\\kappa_{xy}/T=\\frac{\\pi^2k_B^2}{3h}c_-$。",
+        "任意子数据只能把它确定到模 $8$，因为可叠加 $E_8$ 玻色量子霍尔态而不改变任意子类型。",
+        "它的英文译名是 chiral central charge。"
+      ],
+      "fragmented_clues": [
+        "二维拓扑相 边界理论 中心荷差",
+        "左右传播模 引力反常 热霍尔响应",
+        "$\\kappa_{xy}/T=\\frac{\\pi^2k_B^2}{3h}c_-$",
+        "模 $8$ $E_8$ 玻色量子霍尔态 任意子类型不变",
+        "chiral central charge"
+      ],
+      "explanation_markdown": "手征中心荷通常记作 $c_-$，衡量二维拓扑相边界左右手征模的中心荷差，并控制引力反常。热霍尔响应满足 $\\kappa_{xy}/T=\\frac{\\pi^2 k_B^2}{3h}c_-$，其中 $\\kappa_{xy}$ 是热霍尔电导。模张量范畴中，$c_-$ 只在模 $8$ 意义下由 Gauss 和 $\\frac{1}{\\mathcal D}\\sum_a d_a^2\\theta_a=e^{2\\pi i c_-/8}$ 确定。它说明体任意子自旋数据和边界能流异常相互匹配。\n\n手征中心荷只由任意子数据确定到模八，是因为可以叠加 E8 玻色量子霍尔态而不改任意子类型；这说明边界能流包含比体辫数据更细的可逆相信息。它还决定边缘能流的方向和大小，因此可通过热输运而非电荷输运探测。任意子或缺陷的手征中心荷还决定基态简并和拓扑量子计算中的门操作。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2404,9 +3604,21 @@
     {
       "chinese_name": "模S矩阵",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "模S矩阵表示环面态空间上模变换 $\\tau\\mapsto-1/\\tau$ 的作用，也是任意子互辫统计的核心数据。范畴中 $S_{ab}=\\frac{1}{\\mathcal D}\\operatorname{tr}(c_{b,a}c_{a,b})$，其中 $c$ 是 braiding，$\\mathcal D$ 是总量子维数。第一行给量子维数 $S_{0a}=d_a/\\mathcal D$。Verlinde 公式用 $S$ 对角化融合规则，因此 $S$ 同时编码拓扑纠缠、互统计和三流形手术。\n\n模 S 矩阵的可逆性等价于无非平凡透明任意子；若 S 退化，理论更像预模范畴，需要凝聚或商掉透明部分才能得到真正的模 TQFT。若把「模S矩阵」用于凝聚态或量子计算，还需要关注可观测的辫统计、边界反常和基态简并；这些量比局域拉格朗日量更能代表拓扑相。通过 Verlinde 公式，它还把互辫统计转化为整数融合系数，是从实验数据重建任意子理论的关键。",
+      "complete_clues": [
+        "这是任意子理论中的一种模变换矩阵。",
+        "它描述环面态空间的 $\\tau\\mapsto-1/\\tau$ 作用，并编码互辫统计、量子维数和融合规则。",
+        "范畴表达可写 $S_{ab}=\\frac{1}{\\mathcal D}\\operatorname{tr}(c_{b,a}c_{a,b})$。",
+        "它的可逆性等价于没有非平凡透明任意子，Verlinde 公式还用它对角化融合矩阵。",
+        "它的英文译名是 modular S matrix。"
+      ],
+      "fragmented_clues": [
+        "任意子理论 模变换矩阵",
+        "$\\tau\\mapsto-1/\\tau$ 互辫统计 量子维数 融合规则",
+        "$S_{ab}=\\frac{1}{\\mathcal D}\\operatorname{tr}(c_{b,a}c_{a,b})$",
+        "可逆性 透明任意子 Verlinde 公式 融合矩阵对角化",
+        "modular S matrix"
+      ],
+      "explanation_markdown": "模S矩阵通常表示环面态空间上模变换 $\\tau\\mapsto-1/\\tau$ 的作用，也是任意子互辫统计的核心数据。范畴中 $S_{ab}=\\frac{1}{\\mathcal D}\\operatorname{tr}(c_{b,a}c_{a,b})$，其中 $c$ 是 braiding，$\\mathcal D$ 是总量子维数。第一行给量子维数 $S_{0a}=d_a/\\mathcal D$。Verlinde 公式用 $S$ 对角化融合规则，因此 $S$ 同时编码拓扑纠缠、互统计和三流形手术。\n\n模 S 矩阵的可逆性等价于无非平凡透明任意子；若 S 退化，理论更像预模范畴，需要凝聚或商掉透明部分才能得到真正的模 TQFT。通过 Verlinde 公式，它还把互辫统计转化为整数融合系数，是从实验数据重建任意子理论的关键。模S矩阵用融合系数、编织矩阵和量子维数描述拓扑相，局域扰动不能改变这些离散数据。任意子或缺陷的模S矩阵还决定基态简并和拓扑量子计算中的门操作。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2428,9 +3640,21 @@
     {
       "chinese_name": "模T矩阵",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "模T矩阵表示环面模变换 $\\tau\\mapsto\\tau+1$，在任意子理论中记录拓扑自旋和手征中心荷。通常 $T_{ab}=\\delta_{ab}\\theta_a e^{-2\\pi i c_-/24}$，其中 $\\theta_a$ 是任意子 $a$ 的自旋相位，$c_-$ 是手征中心荷。与 $S$ 矩阵一起，它给出映射类群的射影表示。$T$ 控制 Dehn twist、framing 因子和边界共形场论的模相位，是区分拓扑序的重要数据。\n\n模 T 矩阵中的拓扑自旋可通过单个任意子旋转二π测得；它与 S 矩阵共同满足模群关系，限制了可允许融合规则并参与手术不变量归一化。对「模T矩阵」的严格构造常依赖模空间紧化、量子群半简化或 BV-BRST 处理；这些技术细节保证结果不随度量和辅助切割任意变化。其对角元给单个任意子的自旋相位，能区分许多融合规则相同但拓扑自旋不同的理论。",
+      "complete_clues": [
+        "这是任意子理论中的另一种模变换矩阵。",
+        "它记录环面上的 Dehn twist、拓扑自旋、framing 因子和边界共形场论的模相位。",
+        "通常写作 $T_{ab}=\\delta_{ab}\\theta_a e^{-2\\pi i c_-/24}$。",
+        "其对角元给单个任意子的自旋相位，可区分融合规则相同但拓扑自旋不同的理论。",
+        "它的英文译名是 modular T matrix。"
+      ],
+      "fragmented_clues": [
+        "任意子理论 模变换矩阵",
+        "Dehn twist 拓扑自旋 framing 因子 边界共形场论",
+        "$T_{ab}=\\delta_{ab}\\theta_a e^{-2\\pi i c_-/24}$",
+        "对角元 自旋相位 融合规则相同 拓扑自旋不同",
+        "modular T matrix"
+      ],
+      "explanation_markdown": "模T矩阵通常表示环面模变换 $\\tau\\mapsto\\tau+1$，在任意子理论中记录拓扑自旋和手征中心荷。通常 $T_{ab}=\\delta_{ab}\\theta_a e^{-2\\pi i c_-/24}$，其中 $\\theta_a$ 是任意子 $a$ 的自旋相位，$c_-$ 是手征中心荷。与 $S$ 矩阵一起，它给出映射类群的射影表示。$T$ 控制 Dehn twist、framing 因子和边界共形场论的模相位，是区分拓扑序的重要数据。\n\n模 T 矩阵中的拓扑自旋可通过单个任意子旋转二π测得；它与 S 矩阵共同满足模群关系，限制了可允许融合规则并参与手术不变量归一化。其对角元给单个任意子的自旋相位，能区分许多融合规则相同但拓扑自旋不同的理论。任意子或缺陷的模T矩阵还决定基态简并和拓扑量子计算中的门操作。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2452,9 +3676,21 @@
     {
       "chinese_name": "弗尔林德代数",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "弗尔林德代数是模张量范畴或 WZW 模型中一次场融合规则形成的交换半单代数。基元素 $[a]$ 满足 $[a][b]=\\sum_c N_{ab}^c[c]$，其中 $N_{ab}^c$ 是融合系数。Verlinde 公式 $N_{ab}^c=\\sum_x S_{ax}S_{bx}S_{c x}^*/S_{0x}$ 用模 $S$ 矩阵计算这些整数。该代数描述任意子融合、环面 conformal blocks 乘法和三维 TQFT 中线算符的环结构。\n\nVerlinde 代数的半单性让融合矩阵可被 S 矩阵同时对角化；在边界 CFT 中，这些整数也是 annulus 开弦谱的重数，因而受到 Cardy 条件约束。「弗尔林德代数」在路径积分中常表现为对鞍点、标号或同调类求和；在公理化描述中，同一内容被重写为函子、范畴迹或配边诱导映射。该代数的单位是真空对象，半单分解反映一次场通道，也控制边界条件的开弦谱。",
+      "complete_clues": [
+        "这是模张量范畴和共形场论中的一种融合代数。",
+        "它描述一次场或任意子类型的乘法，也对应三维 TQFT 中线状插入的环结构。",
+        "基元素满足 $[a][b]=\\sum_c N_{ab}^c[c]$。",
+        "其融合矩阵可被 $S$ 矩阵同时对角化，边界 CFT 中的整数也对应 annulus 开弦谱重数。",
+        "它的英文译名是 Verlinde algebra。"
+      ],
+      "fragmented_clues": [
+        "模张量范畴 共形场论 融合代数",
+        "一次场 任意子类型 线状插入 环结构",
+        "$[a][b]=\\sum_c N_{ab}^c[c]$",
+        "$S$ 矩阵 对角化 annulus 开弦谱 重数",
+        "Verlinde algebra"
+      ],
+      "explanation_markdown": "弗尔林德代数可理解为模张量范畴或 WZW 模型中一次场融合规则形成的交换半单代数。基元素 $[a]$ 满足 $[a][b]=\\sum_c N_{ab}^c[c]$，其中 $N_{ab}^c$ 是融合系数。Verlinde 公式 $N_{ab}^c=\\sum_x S_{ax}S_{bx}S_{c x}^*/S_{0x}$ 用模 $S$ 矩阵计算这些整数。该代数描述任意子融合、环面 conformal blocks 乘法和三维 TQFT 中线算符的环结构。\n\nVerlinde 代数的半单性让融合矩阵可被 S 矩阵同时对角化；在边界 CFT 中，这些整数也是 annulus 开弦谱的重数，因而受到 Cardy 条件约束。该代数的单位是真空对象，半单分解反映一次场通道，也控制边界条件的开弦谱。弗尔林德代数用融合系数、编织矩阵和量子维数描述拓扑相，局域扰动不能改变这些离散数据。任意子或缺陷的弗尔林德代数还决定基态简并和拓扑量子计算中的门操作。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2476,9 +3712,21 @@
     {
       "chinese_name": "三流形配分函数",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "三流形配分函数是三维 TQFT 对闭三流形赋予的复数。Chern-Simons 表达为 $Z_k(M)=\\int \\mathcal DA\\,e^{iS_{CS}[A]}$，其中路径积分按规范等价取商。半经典展开由平坦联络模空间贡献，严格构造可通过 RT 手术或 Turaev-Viro 状态和完成。该数在取向反转、连通和以及 Dehn 手术下满足特定变换规则，是比较不同三流形和拓扑相的核心可观测量。\n\n三流形配分函数在连通和下通常满足乘法或归一化关系，具体取决于 TQFT 约定；带 Wilson 线时，它成为链环标号和三流形拓扑的联合不变量。讨论「三流形配分函数」时还应注意异常和量子化条件；级数、特征类或中心荷的取值往往由大规范变换和边界一致性强制决定。",
+      "complete_clues": [
+        "这是三维拓扑场论赋给闭流形的一种数值量。",
+        "它可通过 Chern-Simons 路径积分、RT 手术或 Turaev-Viro 状态和严格构造。",
+        "Chern-Simons 表达为 $Z_k(M)=\\int\\mathcal DA\\,e^{iS_{CS}[A]}$。",
+        "半经典展开由平坦联络分支贡献，带 Wilson 线时还会成为链环标号和流形拓扑的联合不变量。",
+        "它的英文译名是 three-manifold partition function。"
+      ],
+      "fragmented_clues": [
+        "三维拓扑场论 闭流形 数值量",
+        "Chern-Simons 路径积分 RT 手术 Turaev-Viro 状态和",
+        "$Z_k(M)=\\int\\mathcal DA\\,e^{iS_{CS}[A]}$",
+        "平坦联络分支 Wilson 线 链环标号 流形拓扑 联合不变量",
+        "three-manifold partition function"
+      ],
+      "explanation_markdown": "三流形配分函数指三维 TQFT 对闭三流形赋予的复数。Chern-Simons 表达为 $Z_k(M)=\\int \\mathcal DA\\,e^{iS_{CS}[A]}$，其中路径积分按规范等价取商。半经典展开由平坦联络模空间贡献，严格构造可通过 RT 手术或 Turaev-Viro 状态和完成。该数在取向反转、连通和以及 Dehn 手术下满足特定变换规则，是比较不同三流形和拓扑相的核心可观测量。\n\n三流形配分函数在连通和下通常满足乘法或归一化关系，具体取决于 TQFT 约定；带 Wilson 线时，它成为链环标号和三流形拓扑的联合不变量。计算三流形配分函数时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。三流形配分函数把路径积分结果压缩为配分函数、态空间或量子不变量，局域几何只在正规化中出现。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2500,9 +3748,21 @@
     {
       "chinese_name": "拓扑威尔逊线",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "拓扑威尔逊线是在拓扑规范理论中可连续形变的 Wilson 线，标记任意子类型或表示。陈西蒙斯理论中 $W_R(K)=\\operatorname{Tr}_R P\\exp\\oint_K A$ 的期望只依赖纽结 $K$ 的拓扑和 framing。多条 Wilson 线的交链和辫化给出量子群链环不变量。\n\n它既是三维体理论的线缺陷，也是二维边界上的一次场插入，融合规则由相应模张量范畴决定。拓扑 Wilson 线的端点若落在边界上，会成为边界一次场或缺陷端点；线穿过手术环时的变换由模矩阵控制，是计算三流形不变量的实际工具。继续分析「拓扑威尔逊线」时，应说明它依赖哪些附加结构，如取向、framing、自旋结构或标号范畴；这些选择会改变相位、态空间维数和可允许的缺陷。",
+      "complete_clues": [
+        "这是拓扑规范理论中的一种可形变线缺陷。",
+        "它标记任意子类型或表示，并把三维体理论的线缺陷与二维边界一次场联系起来。",
+        "Chern-Simons 情形可写 $W_R(K)=\\operatorname{Tr}_R P\\exp\\oint_K A$。",
+        "其期望只依赖纽结拓扑和 framing，多条线的交链与辫化给出量子群链环不变量。",
+        "它的英文译名是 topological Wilson line。"
+      ],
+      "fragmented_clues": [
+        "拓扑规范理论 可形变线缺陷",
+        "任意子类型 表示 三维体理论 二维边界一次场",
+        "$W_R(K)=\\operatorname{Tr}_R P\\exp\\oint_K A$",
+        "纽结拓扑 framing 交链 辫化 量子群链环不变量",
+        "topological Wilson line"
+      ],
+      "explanation_markdown": "拓扑威尔逊线通常是在拓扑规范理论中可连续形变的 Wilson 线，标记任意子类型或表示。陈西蒙斯理论中 $W_R(K)=\\operatorname{Tr}_R P\\exp\\oint_K A$ 的期望只依赖纽结 $K$ 的拓扑和 framing。多条 Wilson 线的交链和辫化给出量子群链环不变量。\n\n它既是三维体理论的线缺陷，也是二维边界上的一次场插入，融合规则由相应模张量范畴决定。拓扑 Wilson 线的端点若落在边界上，会成为边界一次场或缺陷端点；线穿过手术环时的变换由模矩阵控制，是计算三流形不变量的实际工具。拓扑威尔逊线通常把平坦联络模空间、链环 holonomy 和量子群表示联系起来，度规只作为量子化辅助。含拓扑威尔逊线的三流形计算会随手术或边界环面坐标改写，但最终不变量不依赖具体切割。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2524,9 +3784,21 @@
     {
       "chinese_name": "卡迪边界态",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "卡迪边界态是二维共形或拓扑场论中满足开闭一致性的边界条件。闭弦通道边界态可写 $|a\\rangle=\\sum_i \\frac{S_{ai}}{\\sqrt{S_{0i}}}|i\\rangle\\!\\rangle$，其中 $S$ 是模矩阵，$|i\\rangle\\!\\rangle$ 是 Ishibashi 态。Cardy 条件要求 annulus 振幅在开弦通道有非负整数谱。TQFT 中，卡迪边界态把模范畴对象、开弦代数和体 anyon 线的端点条件联系起来。\n\nCardy 边界态把闭弦通道的 Ishibashi 态线性组合成物理边界；其系数由 S 矩阵固定，确保开弦谱具有整数重数并与体模不变性兼容。使用「卡迪边界态」时，核心是它在切割粘合下怎样变换；只有振幅、态空间和缺陷融合同时满足一致性，才真正构成拓扑场论数据。它把边界条件变成模矩阵的列组合，因此边界谱和体一次场标签被精确锁定。",
+      "complete_clues": [
+        "这是二维共形或拓扑场论中的一种边界条件状态。",
+        "它实现开闭一致性，并把模范畴对象、开弦代数和体任意子线端点条件联系起来。",
+        "闭弦通道中可写 $|a\\rangle=\\sum_i\\frac{S_{ai}}{\\sqrt{S_{0i}}}|i\\rangle\\!\\rangle$。",
+        "它把 Ishibashi 态组合成物理边界，系数由 $S$ 矩阵固定以保证开弦谱有非负整数重数。",
+        "它的英文译名是 Cardy boundary state。"
+      ],
+      "fragmented_clues": [
+        "二维共形场论 拓扑场论 边界条件状态",
+        "开闭一致性 模范畴对象 开弦代数 体任意子线端点",
+        "$|a\\rangle=\\sum_i\\frac{S_{ai}}{\\sqrt{S_{0i}}}|i\\rangle\\!\\rangle$",
+        "Ishibashi 态 $S$ 矩阵 非负整数重数 开弦谱",
+        "Cardy boundary state"
+      ],
+      "explanation_markdown": "卡迪边界态表示二维共形或拓扑场论中满足开闭一致性的边界条件。闭弦通道边界态可写 $|a\\rangle=\\sum_i \\frac{S_{ai}}{\\sqrt{S_{0i}}}|i\\rangle\\!\\rangle$，其中 $S$ 是模矩阵，$|i\\rangle\\!\\rangle$ 是 Ishibashi 态。Cardy 条件要求 annulus 振幅在开弦通道有非负整数谱。TQFT 中，卡迪边界态把模范畴对象、开弦代数和体 anyon 线的端点条件联系起来。\n\nCardy 边界态把闭弦通道的 Ishibashi 态线性组合成物理边界；其系数由 S 矩阵固定，确保开弦谱具有整数重数并与体模不变性兼容。它把边界条件变成模矩阵的列组合，因此边界谱和体一次场标签被精确锁定。在卡迪边界态相关模型中，bulk、边界和缺陷态必须同时满足融合或反常抵消条件。卡迪边界态描述可在流形中移动的扩展插入，只有穿越其他缺陷或边界时才产生非平凡变换。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2548,9 +3820,21 @@
     {
       "chinese_name": "扩展配边范畴",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "扩展配边范畴把带角流形和低维配边也纳入态射层级，是扩展 TQFT 的定义域。对象、1-态射、2-态射依次由不同余维的流形片段给出，复合通过沿相容边界粘合。可记作 $\\mathrm{Bord}_d^{ext}$，其单oidal结构仍是不交并。\n\n全扩展函子在点上的取值决定高维取值，前提是该对象全可对偶。这个范畴让边界、缺陷交汇和局域算符不再是外加数据。扩展配边范畴的对象需要带 collar 和光滑结构，以便粘合严格可定义；在高阶版本中，角的相容性控制缺陷交汇处的态射组合。围绕「扩展配边范畴」的物理解释还要区分体相、边界态和插入算符；许多量子不变量正是三者兼容后留下的普适信息，而不是单个公式的数值。",
+      "complete_clues": [
+        "这是扩展拓扑场论定义域中的一种高阶范畴。",
+        "它把带角流形、低维边界片段、缺陷交汇和局域算符都纳入态射层级。",
+        "常记为 $\\mathrm{Bord}_d^{ext}$。",
+        "其对象需要带 collar 和光滑结构，使沿相容边界粘合能严格定义。",
+        "它的英文译名是 extended bordism category。"
+      ],
+      "fragmented_clues": [
+        "扩展拓扑场论 定义域 高阶范畴",
+        "带角流形 低维边界片段 缺陷交汇 局域算符",
+        "$\\mathrm{Bord}_d^{ext}$",
+        "collar 光滑结构 相容边界 严格粘合",
+        "extended bordism category"
+      ],
+      "explanation_markdown": "扩展配边范畴用来把带角流形和低维配边也纳入态射层级，是扩展 TQFT 的定义域。对象、1-态射、2-态射依次由不同余维的流形片段给出，复合通过沿相容边界粘合。可记作 $\\mathrm{Bord}_d^{ext}$，其单oidal结构仍是不交并。\n\n全扩展函子在点上的取值决定高维取值，前提是该对象全可对偶。这个范畴让边界、缺陷交汇和局域算符不再是外加数据。扩展配边范畴的对象需要带 collar 和光滑结构，以便粘合严格可定义；在高阶版本中，角的相容性控制缺陷交汇处的态射组合。扩展配边范畴把切割后的边界态和粘合后的线性映射配对，复合律比局域哈密顿量更基本。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2572,9 +3856,21 @@
     {
       "chinese_name": "流形量子不变量",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "流形量子不变量是由量子场论、量子群或状态和构造出的流形拓扑不变量。通常写成 $Z_{\\mathcal C}(M)$，其中 $\\mathcal C$ 可是模张量范畴、有限群上同调数据或量子群表示范畴。与经典同调不变量相比，它们常包含根单位参数、辫统计和量子维数。\n\n三维 WRT、Turaev-Viro 与四维 Crane-Yetter 都属于此类。它们把量子叠加和拓扑粘合规则结合，形成可计算的配分函数。流形量子不变量的参数往往来自范畴数据而非流形本身；改变根单位、有限群 cocycle 或输入融合范畴，会得到同一流形上的不同量子探针。在范畴化语言中，「流形量子不变量」往往对应对象、态射或高阶态射；这种层级记录了缺陷如何融合、如何终止以及如何在配边中传递。",
+      "complete_clues": [
+        "这是拓扑学中由量子结构构造的一类流形不变量。",
+        "它可来自量子场论、量子群表示、模张量范畴、有限群上同调或状态和模型。",
+        "常写作 $Z_{\\mathcal C}(M)$。",
+        "它的参数往往来自范畴数据而非流形本身，改变根单位或输入融合范畴会得到不同探针。",
+        "它的英文译名是 quantum invariant of a manifold。"
+      ],
+      "fragmented_clues": [
+        "拓扑学 量子结构 流形不变量",
+        "量子场论 量子群 模张量范畴 有限群上同调 状态和",
+        "$Z_{\\mathcal C}(M)$",
+        "范畴数据 根单位 输入融合范畴 不同探针",
+        "quantum invariant of a manifold"
+      ],
+      "explanation_markdown": "流形量子不变量指由量子场论、量子群或状态和构造出的流形拓扑不变量。通常写成 $Z_{\\mathcal C}(M)$，其中 $\\mathcal C$ 可是模张量范畴、有限群上同调数据或量子群表示范畴。与经典同调不变量相比，它们常包含根单位参数、辫统计和量子维数。\n\n三维 WRT、Turaev-Viro 与四维 Crane-Yetter 都属于此类。它们把量子叠加和拓扑粘合规则结合，形成可计算的配分函数。流形量子不变量的参数往往来自范畴数据而非流形本身；改变根单位、有限群 cocycle 或输入融合范畴，会得到同一流形上的不同量子探针。计算流形量子不变量时，边界条件和插入算符决定输出类型，因此数值不变量和范畴对象不能混看。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2596,9 +3892,21 @@
     {
       "chinese_name": "平坦联络模空间",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "平坦联络模空间是联络方程 $F_A=0$ 的解空间除以规范变换，与基本群表示簇紧密相关。对闭曲面 $\\Sigma$，$\\mathcal M_{flat}(\\Sigma,G)=\\operatorname{Hom}(\\pi_1\\Sigma,G)/G$，并带有自然辛形式 $\\Omega=\\int_\\Sigma\\operatorname{Tr}(\\delta A\\wedge\\delta A)$。几何量子化这个模空间给 Chern-Simons TQFT 的曲面态空间。奇点、稳定性和抛物结构则对应带标记点或 Wilson 线插入的情况。\n\n平坦联络模空间的辛结构来自规范理论的边界项；几何量子化时，预量子线丛的曲率正比该辛形式，级数整数性保证线丛存在。若把「平坦联络模空间」用于凝聚态或量子计算，还需要关注可观测的辫统计、边界反常和基态简并；这些量比局域拉格朗日量更能代表拓扑相。带标记点时还需固定共轭类，这对应插入 Wilson 线或允许边界存在带荷缺陷。",
+      "complete_clues": [
+        "这是规范理论和几何量子化中的一种模空间。",
+        "它与曲面态空间、Atiyah-Bott 辛形式、Wilson 线标记点和 Chern-Simons 量子化有关。",
+        "对闭曲面可写 $\\mathcal M_{flat}(\\Sigma,G)=\\operatorname{Hom}(\\pi_1\\Sigma,G)/G$。",
+        "带标记点时需要固定共轭类，这正对应插入带表示标号的线缺陷。",
+        "它的英文译名是 moduli space of flat connections。"
+      ],
+      "fragmented_clues": [
+        "规范理论 几何量子化 模空间",
+        "曲面态空间 Atiyah-Bott 辛形式 Wilson 线 标记点 Chern-Simons",
+        "$\\mathcal M_{flat}(\\Sigma,G)=\\operatorname{Hom}(\\pi_1\\Sigma,G)/G$",
+        "标记点 固定共轭类 表示标号 线缺陷",
+        "moduli space of flat connections"
+      ],
+      "explanation_markdown": "平坦联络模空间通常是联络方程 $F_A=0$ 的解空间除以规范变换，与基本群表示簇紧密相关。对闭曲面 $\\Sigma$，$\\mathcal M_{flat}(\\Sigma,G)=\\operatorname{Hom}(\\pi_1\\Sigma,G)/G$，并带有自然辛形式 $\\Omega=\\int_\\Sigma\\operatorname{Tr}(\\delta A\\wedge\\delta A)$。几何量子化这个模空间给 Chern-Simons TQFT 的曲面态空间。奇点、稳定性和抛物结构则对应带标记点或 Wilson 线插入的情况。\n\n平坦联络模空间的辛结构来自规范理论的边界项；几何量子化时，预量子线丛的曲率正比该辛形式，级数整数性保证线丛存在。带标记点时还需固定共轭类，这对应插入 Wilson 线或允许边界存在带荷缺陷。平坦联络模空间来自模空间的有向计数或同调类，紧化、横截性和取向会直接影响结果。物理扭曲理论中的平坦联络模空间把 BPS 方程留下来，非零模相消后只剩拓扑数据。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2620,9 +3928,21 @@
     {
       "chinese_name": "陈西蒙斯量子化",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "陈西蒙斯量子化把曲面上的平坦联络模空间量子化为有限维 Hilbert 空间。辛形式为 $\\Omega=\\frac{k}{4\\pi}\\int_\\Sigma\\operatorname{Tr}(\\delta A\\wedge\\delta A)$，其中 $k$ 是级数。选择复结构后，态空间可与 WZW conformal blocks 识别；改变复结构给映射类群的射影平坦联络。闭三流形配分函数由配边诱导的线性映射取迹或配对得到。\n\n该量子化解释了 Wilson 线和模矩阵的几何来源。陈西蒙斯量子化的 Hilbert 空间随曲面复结构变化形成射影平坦丛；其 holonomy 就是映射类群表示，模 S、T 矩阵可由这一几何量子化读出。对「陈西蒙斯量子化」的严格构造常依赖模空间紧化、量子群半简化或 BV-BRST 处理；这些技术细节保证结果不随度量和辅助切割任意变化。",
+      "complete_clues": [
+        "这是三维拓扑规范理论中的一种几何量子化过程。",
+        "它把曲面上的平坦联络模空间变成有限维 Hilbert 空间，并解释模矩阵和 Wilson 线的几何来源。",
+        "辛形式为 $\\Omega=\\frac{k}{4\\pi}\\int_\\Sigma\\operatorname{Tr}(\\delta A\\wedge\\delta A)$。",
+        "选择复结构后，态空间可与 WZW conformal blocks 识别，并随复结构变化形成射影平坦丛。",
+        "它的英文译名是 Chern-Simons quantization。"
+      ],
+      "fragmented_clues": [
+        "三维拓扑规范理论 几何量子化过程",
+        "曲面 平坦联络模空间 有限维 Hilbert 空间 模矩阵 Wilson 线",
+        "$\\Omega=\\frac{k}{4\\pi}\\int_\\Sigma\\operatorname{Tr}(\\delta A\\wedge\\delta A)$",
+        "复结构 WZW conformal blocks 射影平坦丛",
+        "Chern-Simons quantization"
+      ],
+      "explanation_markdown": "陈西蒙斯量子化可以把曲面上的平坦联络模空间量子化为有限维 Hilbert 空间。辛形式为 $\\Omega=\\frac{k}{4\\pi}\\int_\\Sigma\\operatorname{Tr}(\\delta A\\wedge\\delta A)$，其中 $k$ 是级数。选择复结构后，态空间可与 WZW conformal blocks 识别；改变复结构给映射类群的射影平坦联络。闭三流形配分函数由配边诱导的线性映射取迹或配对得到。\n\n该量子化解释了 Wilson 线和模矩阵的几何来源。陈西蒙斯量子化的 Hilbert 空间随曲面复结构变化形成射影平坦丛；其 holonomy 就是映射类群表示，模 S、T 矩阵可由这一几何量子化读出。含陈西蒙斯量子化的三流形计算会随手术或边界环面坐标改写，但最终不变量不依赖具体切割。陈西蒙斯量子化通常把平坦联络模空间、链环 holonomy 和量子群表示联系起来，度规只作为量子化辅助。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2644,9 +3964,21 @@
     {
       "chinese_name": "德恩手术公式",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "德恩手术公式描述沿纽结边界环面以斜率 $p/q$ 重新粘回实心环面后，三流形不变量如何变化。记 $M_{p/q}(K)$ 为手术结果，边界基变换由矩阵 $\\begin{pmatrix}p&r\\\\q&s\\end{pmatrix}\\in SL(2,\\mathbb Z)$ 给出。在 TQFT 中，该矩阵作用为模 $S,T$ 组合，手术填充态与纽结补空间态向量配对。\n\n公式把三流形配分函数化为纽结补空间波函数和环面映射类群表示的计算。德恩手术中的斜率选择决定填入实心环面的经线如何贴到边界上；在量子理论中，这等价于先对环面态空间作模变换，再与填充真空态配对。「德恩手术公式」在路径积分中常表现为对鞍点、标号或同调类求和；在公理化描述中，同一内容被重写为函子、范畴迹或配边诱导映射。",
+      "complete_clues": [
+        "这是三流形拓扑中的一种具体手术计算公式。",
+        "它描述沿纽结边界环面按斜率重新粘回实心环面后，不变量如何由边界态空间计算。",
+        "边界基变换由 $\\begin{pmatrix}p&r\\\\q&s\\end{pmatrix}\\in SL(2,\\mathbb Z)$ 给出。",
+        "斜率决定填入实心环面的经线如何贴到边界上，量子理论中等价于模变换后与填充真空态配对。",
+        "它的英文译名是 Dehn surgery formula。"
+      ],
+      "fragmented_clues": [
+        "三流形拓扑 手术计算公式",
+        "纽结边界环面 斜率 实心环面 边界态空间",
+        "$\\begin{pmatrix}p&r\\\\q&s\\end{pmatrix}\\in SL(2,\\mathbb Z)$",
+        "经线贴合 模变换 填充真空态 配对",
+        "Dehn surgery formula"
+      ],
+      "explanation_markdown": "德恩手术公式刻画沿纽结边界环面以斜率 $p/q$ 重新粘回实心环面后，三流形不变量如何变化。记 $M_{p/q}(K)$ 为手术结果，边界基变换由矩阵 $\\begin{pmatrix}p&r\\\\q&s\\end{pmatrix}\\in SL(2,\\mathbb Z)$ 给出。在 TQFT 中，该矩阵作用为模 $S,T$ 组合，手术填充态与纽结补空间态向量配对。\n\n公式把三流形配分函数化为纽结补空间波函数和环面映射类群表示的计算。德恩手术中的斜率选择决定填入实心环面的经线如何贴到边界上；在量子理论中，这等价于先对环面态空间作模变换，再与填充真空态配对。德恩手术公式通常把平坦联络模空间、链环 holonomy 和量子群表示联系起来，度规只作为量子化辅助。含德恩手术公式的三流形计算会随手术或边界环面坐标改写，但最终不变量不依赖具体切割。",
       "source_links": [
         {
           "label": "百度百科",
@@ -2668,9 +4000,21 @@
     {
       "chinese_name": "可融合缺陷线",
       "source_file": "words/物理/噩梦模式：前沿物理/topological_quantum_field_theory_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
-      "explanation_markdown": "可融合缺陷线是能沿平行方向合并成另一组缺陷线的拓扑线，形成类似代数的融合规则。若 $D_aD_b=\\sum_c N_{ab}^cD_c$，其中 $N_{ab}^c$ 是非负整数，则这些线构成融合范畴的对象。可逆线给普通高阶对称，非可逆线给范畴化对称。\n\n它们作用在局域算符和边界态上，约束 RG 流和关联函数；在二维 CFT、三维拓扑序和任意子凝聚中都非常重要。可融合缺陷线的非可逆性意味着不存在简单反线能把它湮灭为真空；这种范畴化对称会导致选择定则、对偶缺陷和非常规的对称破缺图景。讨论「可融合缺陷线」时还应注意异常和量子化条件；级数、特征类或中心荷的取值往往由大规范变换和边界一致性强制决定。",
+      "complete_clues": [
+        "这是拓扑场论中的一种可组合一维缺陷。",
+        "它作用在局域算符和边界态上，出现在二维 CFT、三维拓扑序和任意子凝聚中。",
+        "合并规则可写 $D_aD_b=\\sum_c N_{ab}^cD_c$。",
+        "非可逆情形没有简单反线可湮灭为真空，会带来范畴化对称、选择定则和对偶缺陷。",
+        "它的英文译名是 fusionable defect lines。"
+      ],
+      "fragmented_clues": [
+        "拓扑场论 可组合一维缺陷",
+        "局域算符 边界态 二维 CFT 三维拓扑序 任意子凝聚",
+        "$D_aD_b=\\sum_c N_{ab}^cD_c$",
+        "非可逆 无简单反线 范畴化对称 选择定则 对偶缺陷",
+        "fusionable defect lines"
+      ],
+      "explanation_markdown": "可融合缺陷线指能沿平行方向合并成另一组缺陷线的拓扑线，形成类似代数的融合规则。若 $D_aD_b=\\sum_c N_{ab}^cD_c$，其中 $N_{ab}^c$ 是非负整数，则这些线构成融合范畴的对象。可逆线给普通高阶对称，非可逆线给范畴化对称。\n\n它们作用在局域算符和边界态上，约束 RG 流和关联函数；在二维 CFT、三维拓扑序和任意子凝聚中都非常重要。可融合缺陷线的非可逆性意味着不存在简单反线能把它湮灭为真空；这种范畴化对称会导致选择定则、对偶缺陷和非常规的对称破缺图景。任意子或缺陷的可融合缺陷线还决定基态简并和拓扑量子计算中的门操作。",
       "source_links": [
         {
           "label": "百度百科",

@@ -4,8 +4,20 @@
     {
       "chinese_name": "积分方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是分析数学中的一种函数方程。",
+        "它常与边值问题、散射、势论和反问题中的算子表达有关。",
+        "常用形式是 $u(x)-\\lambda\\int_a^b K(x,t)u(t)\\,dt=f(x)$。",
+        "未知函数出现在积分号内，由二变量权重把不同位置的信息耦合起来。",
+        "它的英文译名是 integral equation。"
+      ],
+      "fragmented_clues": [
+        "分析数学 函数方程",
+        "边值问题 散射 势论 反问题 算子表达",
+        "$u(x)-\\lambda\\int_a^b K(x,t)u(t)\\,dt=f(x)$",
+        "未知函数 积分号内 二变量权重 位置耦合",
+        "integral equation"
+      ],
       "explanation_markdown": "积分方程是未知函数出现在积分号内并由核函数加权耦合的函数方程。常写成 $u(x)-\\lambda\\int_a^b K(x,t)u(t)\\,dt=f(x)$，其中$u$ 是未知函数，$K$ 是核，$f$ 是已知项。\n\n它与微分方程的差别在于未知量通过区间或区域上的整体平均影响每一点；弗雷德霍姆型积分域固定，沃尔泰拉型上限随 $x$ 变化。边值问题、散射、势论和反问题常可转化为这种算子方程。算子观点下，积分方程把未知函数看成函数空间中的向量，积分核决定一个位置怎样受另一个位置影响。积分方程常见于边值问题、散射和反问题；核越不光滑，唯一性、正则性和数值稳定性越需要单独说明。",
       "source_links": [
         {
@@ -28,8 +40,20 @@
     {
       "chinese_name": "弗雷德霍姆方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分方程理论中的一类线性方程。",
+        "它与固定积分区间、紧算子谱、行列式和择一定理相连。",
+        "常用形式是 $u(x)-\\lambda\\int_a^b K(x,t)u(t)\\,dt=f(x)$。",
+        "整个给定区间同时参与耦合，参数落在谱上时唯一性可能失效。",
+        "它的英文译名是 Fredholm equation。"
+      ],
+      "fragmented_clues": [
+        "固定区间 线性方程",
+        "紧算子谱 行列式 择一定理",
+        "$u(x)-\\lambda\\int_a^b K(x,t)u(t)\\,dt=f(x)$",
+        "全区间耦合 谱参数 唯一性失效",
+        "Fredholm equation"
+      ],
       "explanation_markdown": "弗雷德霍姆方程指积分区间固定的积分方程，未知函数在整个给定区间上相互耦合。常写成 $u(x)-\\lambda\\int_a^b K(x,t)u(t)\\,dt=f(x)$，其中$[a,b]$ 是固定区间，$\\lambda$ 是参数。\n\n它不同于沃尔泰拉方程，后者积分上限常为 $x$，带有时间顺序或历史依赖。弗雷德霍姆方程的解常受紧算子谱、行列式和择一定理控制。弗雷德霍姆理论里，弗雷德霍姆方程通常和紧算子的特征值、预解式或择一定理相连，参数落在谱上时解会失去唯一性。弗雷德霍姆方程把积分方程转成算子谱问题，适合分析解的存在性、分支以及参数变化时的奇异行为。弗雷德霍姆方程的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -52,8 +76,20 @@
     {
       "chinese_name": "沃尔泰拉方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分方程理论中的一类变上限方程。",
+        "它常出现在记忆材料、人口过程和时滞系统的因果模型中。",
+        "一个标准形式是 $u(x)-\\lambda\\int_a^x K(x,t)u(t)\\,dt=f(x)$。",
+        "当前点只累积过去区间的信息，算子结构呈三角形。",
+        "它的英文译名是 Volterra equation。"
+      ],
+      "fragmented_clues": [
+        "变上限 方程",
+        "记忆材料 人口过程 时滞系统 因果模型",
+        "$u(x)-\\lambda\\int_a^x K(x,t)u(t)\\,dt=f(x)$",
+        "当前点 过去区间 三角结构",
+        "Volterra equation"
+      ],
       "explanation_markdown": "沃尔泰拉方程用来描述积分上限依赖自变量的积分方程，常表达只由过去影响当前。一个核心表达是 $u(x)-\\lambda\\int_a^x K(x,t)u(t)\\,dt=f(x)$，这里$t\\le x$ 表示历史变量，$K$ 是核函数。\n\n它与弗雷德霍姆方程的固定区间不同，算子呈三角结构，因此初值型递推特征更强。人口模型、记忆材料和时滞过程常形成这种因果积分关系。沃尔泰拉方程带有明显的顺序结构，当前值只累积过去区间的信息，所以逐次逼近和初值型方法通常更自然。在记忆材料、人口过程和时滞系统中，沃尔泰拉方程的上限结构直接表示历史对当前状态的影响。沃尔泰拉方程的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -76,8 +112,20 @@
     {
       "chinese_name": "第一类积分方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是算子方程理论中的一种类型分类。",
+        "它常出现在反演、成像和缺少直接未知项的数据模型中。",
+        "一个标准形式是 $\\int_a^b K(x,t)u(t)\\,dt=f(x)$。",
+        "未知函数只在积分项里出现，近零奇异值容易放大噪声。",
+        "它的英文译名是 integral equation of the first kind。"
+      ],
+      "fragmented_clues": [
+        "算子方程 类型分类",
+        "反演 成像 数据模型 缺少直接项",
+        "$\\int_a^b K(x,t)u(t)\\,dt=f(x)$",
+        "未知函数 仅积分项 近零奇异值 噪声放大",
+        "integral equation of the first kind"
+      ],
       "explanation_markdown": "第一类积分方程刻画未知函数只出现在积分项中而不以裸函数形式出现的方程。一个核心表达是 $\\int_a^b K(x,t)u(t)\\,dt=f(x)$，这里$u$ 是未知函数，$K$ 是核，$f$ 是数据。\n\n它与第二类方程相比通常更不适定，因为缺少 $u(x)$ 的直接项。反演问题和成像模型中，噪声会被核算子的近零奇异值放大。算子观点下，第一类积分方程把未知函数看成函数空间中的向量，积分核决定一个位置怎样受另一个位置影响。第一类积分方程常见于边值问题、散射和反问题；核越不光滑，唯一性、正则性和数值稳定性越需要单独说明。第一类积分方程的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -100,8 +148,20 @@
     {
       "chinese_name": "第二类积分方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是算子方程理论中的一种结构类型。",
+        "它与 Neumann 级数、谱理论和数值离散中的稳定求解有关。",
+        "常用算子形式是 $(I-\\lambda T)u=f$。",
+        "未知函数同时以直接项和积分项出现，恒等项改善稳定性。",
+        "它的英文译名是 integral equation of the second kind。"
+      ],
+      "fragmented_clues": [
+        "算子方程 结构类型",
+        "Neumann 级数 谱理论 数值离散 稳定求解",
+        "$(I-\\lambda T)u=f$",
+        "直接项 积分项 恒等项 稳定性",
+        "integral equation of the second kind"
+      ],
       "explanation_markdown": "第二类积分方程是未知函数同时以直接项和积分项出现的方程。在常用记号中有 $u(x)-\\lambda\\int_a^bK(x,t)u(t)\\,dt=f(x)$，其中$u(x)$ 是直接项，积分项给耦合修正。\n\n它比第一类方程更稳定，常可写成 $(I-\\lambda T)u=f$；第三类还会带有可消失的系数函数。Neumann 级数、弗雷德霍姆理论和数值离散多以第二类方程为标准对象。算子观点下，第二类积分方程把未知函数看成函数空间中的向量，积分核决定一个位置怎样受另一个位置影响。第二类积分方程常见于边值问题、散射和反问题；核越不光滑，唯一性、正则性和数值稳定性越需要单独说明。第二类积分方程的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -124,8 +184,20 @@
     {
       "chinese_name": "第三类积分方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是算子方程理论中的一种混合结构类型。",
+        "它与带退化系数的模型以及零点附近的不适定性有关。",
+        "常用形式是 $a(x)u(x)-\\lambda\\int_a^bK(x,t)u(t)\\,dt=f(x)$。",
+        "直接项前的系数函数可能变号或消失，使局部行为接近缺少直接项的情形。",
+        "它的英文译名是 integral equation of the third kind。"
+      ],
+      "fragmented_clues": [
+        "算子方程 混合结构",
+        "退化系数 零点 不适定性",
+        "$a(x)u(x)-\\lambda\\int_a^bK(x,t)u(t)\\,dt=f(x)$",
+        "系数函数 变号 消失 缺少直接项",
+        "integral equation of the third kind"
+      ],
       "explanation_markdown": "第三类积分方程指未知函数直接项前带有可能变号或消失系数的积分方程。在常用记号中有 $a(x)u(x)-\\lambda\\int_a^bK(x,t)u(t)\\,dt=f(x)$，其中$a(x)$ 是系数函数，$u$ 是未知函数。\n\n它介于第一类和第二类之间；当 $a(x)$ 在某些点为零时，会出现类似第一类方程的不适定性。这种方程常用于带退化系数的模型，解的存在性依赖 $a$ 的零点和核的性质。算子观点下，第三类积分方程把未知函数看成函数空间中的向量，积分核决定一个位置怎样受另一个位置影响。第三类积分方程常见于边值问题、散射和反问题；核越不光滑，唯一性、正则性和数值稳定性越需要单独说明。",
       "source_links": [
         {
@@ -148,8 +220,20 @@
     {
       "chinese_name": "齐次积分方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分方程理论中的一种右端结构。",
+        "它与谱参数、非零解和特征函数问题相连。",
+        "常用形式是 $u(x)=\\lambda\\int_a^bK(x,t)u(t)\\,dt$。",
+        "右端项为零时，问题焦点从拟合数据转向非零解是否存在。",
+        "它的英文译名是 homogeneous integral equation。"
+      ],
+      "fragmented_clues": [
+        "右端结构",
+        "谱参数 非零解 特征函数",
+        "$u(x)=\\lambda\\int_a^bK(x,t)u(t)\\,dt$",
+        "右端为零 非零解 存在性",
+        "homogeneous integral equation"
+      ],
       "explanation_markdown": "齐次积分方程用来描述右端项为零的积分方程，关注非零解是否存在。可写作 $u(x)=\\lambda\\int_a^bK(x,t)u(t)\\,dt$，这里$u$ 是未知函数，$\\lambda$ 是谱参数。\n\n它与非齐次方程不同，非零解对应积分算子的特征函数或特征值。弗雷德霍姆择一定理正是把齐次解空间同非齐次方程可解性联系起来。算子观点下，齐次积分方程把未知函数看成函数空间中的向量，积分核决定一个位置怎样受另一个位置影响。齐次积分方程常见于边值问题、散射和反问题；核越不光滑，唯一性、正则性和数值稳定性越需要单独说明。齐次积分方程的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -172,8 +256,20 @@
     {
       "chinese_name": "非齐次积分方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分方程理论中的一种右端结构。",
+        "它与已知外加项、可解性范围和伴随正交条件有关。",
+        "常用算子形式是 $u-\\lambda Tu=f$。",
+        "给定右端函数不为零，谱参数特殊时需要检验与伴随齐次解的正交性。",
+        "它的英文译名是 inhomogeneous integral equation。"
+      ],
+      "fragmented_clues": [
+        "右端结构",
+        "已知外加项 可解范围 伴随正交条件",
+        "$u-\\lambda Tu=f$",
+        "右端函数 非零 谱参数 正交性",
+        "inhomogeneous integral equation"
+      ],
       "explanation_markdown": "非齐次积分方程刻画含有给定右端函数的积分方程。可写作 $u-\\lambda Tu=f$，这里$T$ 是积分算子，$f$ 是非零已知项。\n\n它与齐次方程的差别在于需要同时考虑右端项是否落在可解范围内。当 $1/\\lambda$ 是特征值时，可解性要满足与伴随齐次解的正交条件。算子观点下，非齐次积分方程把未知函数看成函数空间中的向量，积分核决定一个位置怎样受另一个位置影响。非齐次积分方程常见于边值问题、散射和反问题；核越不光滑，唯一性、正则性和数值稳定性越需要单独说明。非齐次积分方程的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -196,8 +292,20 @@
     {
       "chinese_name": "线性积分方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分方程理论中的一种代数性质分类。",
+        "它常见于边界表示、响应模型和可用谱方法处理的情形。",
+        "常用形式是 $u(x)-\\lambda\\int_a^bK(x,t)u(t)\\,dt=f(x)$。",
+        "未知函数以一次方式进入算子，叠加原理仍然成立。",
+        "它的英文译名是 linear integral equation。"
+      ],
+      "fragmented_clues": [
+        "代数性质 分类",
+        "边界表示 响应模型 谱方法",
+        "$u(x)-\\lambda\\int_a^bK(x,t)u(t)\\,dt=f(x)$",
+        "一次方式 叠加原理",
+        "linear integral equation"
+      ],
       "explanation_markdown": "线性积分方程是未知函数以线性方式出现在积分算子中的方程。常写成 $u(x)-\\lambda\\int_a^bK(x,t)u(t)\\,dt=f(x)$，其中$K$ 不依赖 $u$，积分项对 $u$ 线性。\n\n它不同于非线性积分方程，叠加原理、谱分解和弗雷德霍姆理论可直接使用。许多边界积分方程和线性响应模型都落在这一类。算子观点下，线性积分方程把未知函数看成函数空间中的向量，积分核决定一个位置怎样受另一个位置影响。线性积分方程常见于边值问题、散射和反问题；核越不光滑，唯一性、正则性和数值稳定性越需要单独说明。线性积分方程的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -220,8 +328,20 @@
     {
       "chinese_name": "非线性积分方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分方程理论中的一种代数性质分类。",
+        "它与不动点定理、单调迭代和非线性边值模型有关。",
+        "常用形式是 $u(x)=f(x)+\\int_a^bK(x,t,u(t))\\,dt$。",
+        "被积函数或核可以依赖未知函数值，叠加原理不再适用。",
+        "它的英文译名是 nonlinear integral equation。"
+      ],
+      "fragmented_clues": [
+        "代数性质 分类",
+        "不动点定理 单调迭代 非线性边值模型",
+        "$u(x)=f(x)+\\int_a^bK(x,t,u(t))\\,dt$",
+        "被积函数 核 依赖未知值 无叠加",
+        "nonlinear integral equation"
+      ],
       "explanation_markdown": "非线性积分方程指未知函数以非线性方式进入核或被积函数的积分方程。常写成 $u(x)=f(x)+\\int_a^bK(x,t,u(t))\\,dt$，其中$K$ 可依赖 $u(t)$，$f$ 是已知项。\n\n它与线性方程的区别在于不能直接使用特征值分解或叠加原理。不动点定理、单调迭代和紧性方法常用于证明解的存在性。算子观点下，非线性积分方程把未知函数看成函数空间中的向量，积分核决定一个位置怎样受另一个位置影响。非线性积分方程常见于边值问题、散射和反问题；核越不光滑，唯一性、正则性和数值稳定性越需要单独说明。非线性积分方程的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -244,8 +364,20 @@
     {
       "chinese_name": "核函数",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分算子中的一种二变量对象。",
+        "它决定不同位置之间的权重、紧性、谱性质和数值难度。",
+        "常用表达是 $Tf(x)=\\int_a^bK(x,t)f(t)\\,dt$。",
+        "普通系数只在同一点作用，这个对象连接输入点和输出点。",
+        "它的英文译名是 kernel function。"
+      ],
+      "fragmented_clues": [
+        "积分算子 二变量对象",
+        "位置权重 紧性 谱性质 数值难度",
+        "$Tf(x)=\\int_a^bK(x,t)f(t)\\,dt$",
+        "输入点 输出点 连接",
+        "kernel function"
+      ],
       "explanation_markdown": "核函数用来描述积分算子中描述 $t$ 点信息如何影响 $x$ 点的权重函数。一个核心表达是 $Tf(x)=\\int_a^bK(x,t)f(t)\\,dt$，这里$T$ 是积分算子，$K(x,t)$ 是核函数。\n\n普通系数只在同一点作用，核函数连接两个变量；对称核、奇异核和卷积核对应不同算子结构。核的光滑性、衰减和奇异性决定算子的紧性、谱性质和数值难度。讨论核函数时，核的对称性、正性、奇异阶和可分性会直接影响算子的紧性、谱和可逆性。核函数看起来只是权重函数，但它决定了积分算子属于哪一类，也决定了能否用低秩或谱方法处理。核函数的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -268,8 +400,20 @@
     {
       "chinese_name": "退化核",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分方程理论里的一种有限秩核结构。",
+        "它与低秩近似、有限维线性系统和算子压缩有关。",
+        "标准形式是 $K(x,t)=\\sum_{j=1}^n a_j(x)b_j(t)$。",
+        "二变量权重能拆成有限多个单变量乘积之和，因此算子秩有限。",
+        "它的英文译名是 degenerate kernel。"
+      ],
+      "fragmented_clues": [
+        "有限秩 核结构",
+        "低秩近似 有限维线性系统 算子压缩",
+        "$K(x,t)=\\sum_{j=1}^n a_j(x)b_j(t)$",
+        "二变量权重 单变量乘积 有限和",
+        "degenerate kernel"
+      ],
       "explanation_markdown": "退化核刻画可表示为有限多个分离变量乘积之和的核函数。一个核心表达是 $K(x,t)=\\sum_{j=1}^n a_j(x)b_j(t)$，这里$a_j,b_j$ 是单变量函数，$n$ 有限。\n\n它与一般核不同，积分算子只有有限秩；可分核常作为同义或近义说法。退化核方法把积分方程化为有限维线性方程组。讨论退化核时，核的对称性、正性、奇异阶和可分性会直接影响算子的紧性、谱和可逆性。退化核看起来只是权重函数，但它决定了积分算子属于哪一类，也决定了能否用低秩或谱方法处理。退化核的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -292,8 +436,20 @@
     {
       "chinese_name": "可分核",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分算子理论中的一种可分离核结构。",
+        "它与有限秩算子、矩展开和低秩计算有关。",
+        "常用形式是 $K(x,t)=\\sum_{j=1}^n \\phi_j(x)\\psi_j(t)$。",
+        "未知函数只通过有限多个积分矩进入方程，不要求只依赖差值。",
+        "它的英文译名是 separable kernel。"
+      ],
+      "fragmented_clues": [
+        "可分离 核结构",
+        "有限秩算子 矩展开 低秩计算",
+        "$K(x,t)=\\sum_{j=1}^n \\phi_j(x)\\psi_j(t)$",
+        "有限积分矩 非差值依赖",
+        "separable kernel"
+      ],
       "explanation_markdown": "可分核是能写成 $x$ 函数与 $t$ 函数乘积和的核。在常用记号中有 $K(x,t)=\\sum_{j=1}^n \\phi_j(x)\\psi_j(t)$，其中$\\phi_j$ 只依赖 $x$，$\\psi_j$ 只依赖 $t$。\n\n可分核与退化核都指有限秩结构；与卷积核相比，它不要求依赖差值 $x-t$。这种形式使未知函数只通过有限个矩进入方程，计算上特别简洁。讨论可分核时，核的对称性、正性、奇异阶和可分性会直接影响算子的紧性、谱和可逆性。可分核看起来只是权重函数，但它决定了积分算子属于哪一类，也决定了能否用低秩或谱方法处理。可分核的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -316,8 +472,20 @@
     {
       "chinese_name": "对称核",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是实值积分算子中的一种对称性条件。",
+        "它与自伴算子、正交特征函数和谱分解有关。",
+        "标准条件是 $K(x,t)=K(t,x)$。",
+        "交换两个变量后权重不变，使谱理论接近自伴矩阵情形。",
+        "它的英文译名是 symmetric kernel。"
+      ],
+      "fragmented_clues": [
+        "实值积分算子 对称性条件",
+        "自伴算子 正交特征函数 谱分解",
+        "$K(x,t)=K(t,x)$",
+        "变量交换 权重不变 自伴矩阵类比",
+        "symmetric kernel"
+      ],
       "explanation_markdown": "对称核指满足交换两个变量后不变的核函数。在常用记号中有 $K(x,t)=K(t,x)$，其中$x,t$ 是积分核的两个变量。\n\n它与厄米核的差别在于复值情形需取共轭；实值对称核对应自伴积分算子。对称核使特征函数正交化成为可能，谱理论也更接近自伴矩阵。讨论对称核时，核的对称性、正性、奇异阶和可分性会直接影响算子的紧性、谱和可逆性。对称核看起来只是权重函数，但它决定了积分算子属于哪一类，也决定了能否用低秩或谱方法处理。对称核的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -340,8 +508,20 @@
     {
       "chinese_name": "厄米核",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是复值积分算子中的一种共轭对称条件。",
+        "它与 Hilbert 空间自伴性、实谱和正交展开有关。",
+        "标准条件是 $K(x,t)=\\overline{K(t,x)}$。",
+        "交换变量时必须同时取复共轭，才能保留自伴结构。",
+        "它的英文译名是 Hermitian kernel。"
+      ],
+      "fragmented_clues": [
+        "复值积分算子 共轭对称条件",
+        "Hilbert 空间 自伴性 实谱 正交展开",
+        "$K(x,t)=\\overline{K(t,x)}$",
+        "变量交换 复共轭 自伴结构",
+        "Hermitian kernel"
+      ],
       "explanation_markdown": "厄米核用来描述复值积分算子中满足共轭对称性的核。可写作 $K(x,t)=\\overline{K(t,x)}$，这里上横线表示复共轭，$K$ 是复值核。\n\n它是对称核在复 Hilbert 空间中的正确推广；不取共轭会破坏自伴性。厄米核对应自伴算子，其特征值为实数，特征函数可正交展开。讨论厄米核时，核的对称性、正性、奇异阶和可分性会直接影响算子的紧性、谱和可逆性。厄米核看起来只是权重函数，但它决定了积分算子属于哪一类，也决定了能否用低秩或谱方法处理。厄米核的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -364,8 +544,20 @@
     {
       "chinese_name": "弱奇核",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分算子理论中的一种可积奇性核结构。",
+        "它常出现在 Abel 型模型、势理论和端点奇性分析中。",
+        "常见估计是 $|K(x,t)|\\le C|x-t|^{-\\alpha},\\ 0<\\alpha<1$。",
+        "对角线附近有奇性，但奇性阶仍允许按普通积分处理。",
+        "它的英文译名是 weakly singular kernel。"
+      ],
+      "fragmented_clues": [
+        "可积奇性 核结构",
+        "Abel 型模型 势理论 端点奇性",
+        "$|K(x,t)|\\le C|x-t|^{-\\alpha},\\ 0<\\alpha<1$",
+        "对角线 奇性 普通积分",
+        "weakly singular kernel"
+      ],
       "explanation_markdown": "弱奇核刻画在对角线附近有可积奇性的积分核。可写作 $|K(x,t)|\\le C|x-t|^{-\\alpha},\\quad 0<\\alpha<1$，这里$\\alpha$ 控制奇性强度，$C$ 是常数。\n\n它比光滑核更难处理，但弱于非可积的强奇异核；奇性仍允许普通积分意义。Abel 型方程和势理论中常出现弱奇核，解的正则性会受奇性指数影响。讨论弱奇核时，核的对称性、正性、奇异阶和可分性会直接影响算子的紧性、谱和可逆性。弱奇核看起来只是权重函数，但它决定了积分算子属于哪一类，也决定了能否用低秩或谱方法处理。弱奇核的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -388,8 +580,20 @@
     {
       "chinese_name": "奇异核",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分算子理论中的一种奇性核结构。",
+        "它与主值积分、分布意义和柯西型边界问题有关。",
+        "典型局部形式是 $K(x,t)\\sim 1/(x-t)$。",
+        "在对角线或某些点附近不可忽略，光滑核常见的紧性结论可能失效。",
+        "它的英文译名是 singular kernel。"
+      ],
+      "fragmented_clues": [
+        "奇性 核结构",
+        "主值积分 分布意义 柯西型边界问题",
+        "$K(x,t)\\sim 1/(x-t)$",
+        "对角线 不可忽略 紧性失效",
+        "singular kernel"
+      ],
       "explanation_markdown": "奇异核是在某些点或对角线附近发生不可忽略奇性的核函数。常写成 $K(x,t)\\sim {1\\over x-t}$，其中$x=t$ 附近出现奇性，积分需解释。\n\n它比弱奇核范围更宽，可能需要主值积分或分布意义；与光滑核相比常不再给紧算子。奇异积分方程、柯西 核和边界层势都依赖这种核。讨论奇异核时，核的对称性、正性、奇异阶和可分性会直接影响算子的紧性、谱和可逆性。奇异核看起来只是权重函数，但它决定了积分算子属于哪一类，也决定了能否用低秩或谱方法处理。奇异核的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -412,8 +616,20 @@
     {
       "chinese_name": "卷积核",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是平移不变积分算子中的一种核结构。",
+        "它常见于信号处理、热传播、半空间模型和反卷积问题。",
+        "常用表达是 $Tf(x)=\\int_{\\mathbb R}k(x-t)f(t)\\,dt$。",
+        "权重只依赖变量差，傅里叶变换可把算子化为乘法。",
+        "它的英文译名是 convolution kernel。"
+      ],
+      "fragmented_clues": [
+        "平移不变 核结构",
+        "信号处理 热传播 半空间模型 反卷积",
+        "$Tf(x)=\\int_{\\mathbb R}k(x-t)f(t)\\,dt$",
+        "变量差 傅里叶变换 乘法",
+        "convolution kernel"
+      ],
       "explanation_markdown": "卷积核指只依赖变量差的核函数。常写成 $Tf(x)=\\int_{\\mathbb R}k(x-t)f(t)\\,dt$，其中$k$ 是卷积核，$x-t$ 表示平移差。\n\n它不同于一般核，平移不变性使傅里叶变换可把积分算子化为乘法。信号处理、热核、维纳-霍普夫方程和常系数模型常采用卷积核。讨论卷积核时，核的对称性、正性、奇异阶和可分性会直接影响算子的紧性、谱和可逆性。卷积核看起来只是权重函数，但它决定了积分算子属于哪一类，也决定了能否用低秩或谱方法处理。卷积核的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。因此理解卷积核还要看核的奇异性和右端项的空间，二者会影响求解方法。",
       "source_links": [
         {
@@ -436,8 +652,20 @@
     {
       "chinese_name": "诺伊曼级数",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是算子方程求解中的一种级数方法。",
+        "它与第二类方程、逐次逼近和小参数收敛条件有关。",
+        "常用表达是 $u=\\sum_{n=0}^\\infty \\lambda^nT^n f$。",
+        "项按积分算子重复作用的次数排列，而不是按谱投影排列。",
+        "它的英文译名是 Neumann series。"
+      ],
+      "fragmented_clues": [
+        "算子方程 级数方法",
+        "第二类方程 逐次逼近 小参数收敛",
+        "$u=\\sum_{n=0}^\\infty \\lambda^nT^n f$",
+        "算子幂 迭代次数 非谱投影",
+        "Neumann series"
+      ],
       "explanation_markdown": "诺伊曼级数用来描述用积分算子的幂级数表示第二类方程解的方法。一个核心表达是 $u=\\sum_{n=0}^\\infty \\lambda^nT^n f$，这里$T$ 是积分算子，$T^n$ 是重复作用。\n\n它与谱展开不同，Neumann 级数按迭代次数组织；收敛通常要求 $|\\lambda|\\|T\\|<1$ 或更弱条件。逐次逼近法的解析表达正是这种级数。算子观点下，诺伊曼级数把未知函数看成函数空间中的向量，积分核决定一个位置怎样受另一个位置影响。诺伊曼级数常见于边值问题、散射和反问题；核越不光滑，唯一性、正则性和数值稳定性越需要单独说明。诺伊曼级数的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -460,8 +688,20 @@
     {
       "chinese_name": "李乌维尔诺伊曼级数",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分方程文献中的一种迭代级数。",
+        "它与第二类固定区间方程、迭代核和逐次代入有关。",
+        "常用表达是 $u=f+\\lambda Tf+\\lambda^2T^2f+\\cdots$。",
+        "它把反复代入得到的高阶影响逐项累加，常在参数足够小时收敛。",
+        "它的英文译名是 Liouville-Neumann series。"
+      ],
+      "fragmented_clues": [
+        "迭代级数",
+        "第二类固定区间方程 迭代核 逐次代入",
+        "$u=f+\\lambda Tf+\\lambda^2T^2f+\\cdots$",
+        "高阶影响 逐项累加 小参数收敛",
+        "Liouville-Neumann series"
+      ],
       "explanation_markdown": "李乌维尔诺伊曼级数刻画弗雷德霍姆第二类方程中由逐次代入得到的 Neumann 型解级数。一个核心表达是 $u=f+\\lambda Tf+\\lambda^2T^2f+\\cdots$，这里$T$ 是由核 $K$ 定义的积分算子。\n\n它与普通 Neumann 级数本质相同，但在积分方程文献中强调迭代核的展开。当参数足够小或 沃尔泰拉结构保证收敛时，可直接给出唯一解。算子观点下，李乌维尔诺伊曼级数把未知函数看成函数空间中的向量，积分核决定一个位置怎样受另一个位置影响。李乌维尔诺伊曼级数常见于边值问题、散射和反问题；核越不光滑，唯一性、正则性和数值稳定性越需要单独说明。",
       "source_links": [
         {
@@ -484,8 +724,20 @@
     {
       "chinese_name": "预解核",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是第二类积分方程中的一种核对象。",
+        "它与非特征参数处的解表示、迭代影响和解析依赖有关。",
+        "常用表达是 $u(x)=f(x)+\\lambda\\int_a^bR(x,t;\\lambda)f(t)\\,dt$。",
+        "它不同于原来的权重核，已经把所有高阶反复作用合并进去。",
+        "它的英文译名是 resolvent kernel。"
+      ],
+      "fragmented_clues": [
+        "第二类方程 核对象",
+        "非特征参数 解表示 迭代影响 解析依赖",
+        "$u(x)=f(x)+\\lambda\\int_a^bR(x,t;\\lambda)f(t)\\,dt$",
+        "原权重核 高阶作用 合并",
+        "resolvent kernel"
+      ],
       "explanation_markdown": "预解核是把第二类积分方程解表示为右端项积分修正的核。在常用记号中有 $u(x)=f(x)+\\lambda\\int_a^bR(x,t;\\lambda)f(t)\\,dt$，其中$R$ 是预解核，$\\lambda$ 是参数。\n\n它不同于原核 $K$，预解核已经包含所有迭代影响。弗雷德霍姆理论中，预解核在非特征参数处解析依赖于 $\\lambda$。弗雷德霍姆理论里，预解核通常和紧算子的特征值、预解式或择一定理相连，参数落在谱上时解会失去唯一性。预解核把积分方程转成算子谱问题，适合分析解的存在性、分支以及参数变化时的奇异行为。预解核的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -508,8 +760,20 @@
     {
       "chinese_name": "预解式",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是谱理论中的一种算子表达。",
+        "它与谱外参数、逆算子族、特征值和谱投影有关。",
+        "标准记号是 $R(\\lambda,A)=(\\lambda I-A)^{-1}$。",
+        "它的奇点显示谱位置，而不是给出某个积分核本身。",
+        "它的英文译名是 resolvent。"
+      ],
+      "fragmented_clues": [
+        "谱理论 算子表达",
+        "谱外参数 逆算子族 特征值 谱投影",
+        "$R(\\lambda,A)=(\\lambda I-A)^{-1}$",
+        "奇点 谱位置 非积分核",
+        "resolvent"
+      ],
       "explanation_markdown": "预解式指算子 $A$ 的谱参数外逆算子表达。在常用记号中有 $R(\\lambda,A)=(\\lambda I-A)^{-1}$，其中$I$ 是恒等算子，$\\lambda$ 不在谱中。\n\n它与预解核不同，预解式是算子层面的对象，预解核是积分算子的核表示。谱理论通过预解式的奇点识别特征值和谱投影。弗雷德霍姆理论里，预解式通常和紧算子的特征值、预解式或择一定理相连，参数落在谱上时解会失去唯一性。预解式把积分方程转成算子谱问题，适合分析解的存在性、分支以及参数变化时的奇异行为。预解式的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -532,8 +796,20 @@
     {
       "chinese_name": "预解算子",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分算子谱理论中的一种逆算子族。",
+        "它把右端项直接映到解，并与 Neumann 展开和极点结构有关。",
+        "常用记号是 $R(\\lambda,T)=(I-\\lambda T)^{-1}$。",
+        "当参数避开谱时它存在；到达特征位置时会变成不可逆或出现极点。",
+        "它的英文译名是 resolvent operator。"
+      ],
+      "fragmented_clues": [
+        "谱理论 逆算子族",
+        "右端项 解 Neumann 展开 极点结构",
+        "$R(\\lambda,T)=(I-\\lambda T)^{-1}$",
+        "避开谱 存在 特征位置 不可逆",
+        "resolvent operator"
+      ],
       "explanation_markdown": "预解算子用来描述由谱参数定义的逆算子族。可写作 $R(\\lambda,T)=(I-\\lambda T)^{-1}$，这里$T$ 是积分算子，$\\lambda$ 是参数。\n\n它与原积分算子不同，预解算子把右端项直接送到解。当逆存在时，它可展开为 Neumann 级数；在特征值处则出现极点或不可逆。弗雷德霍姆理论里，预解算子通常和紧算子的特征值、预解式或择一定理相连，参数落在谱上时解会失去唯一性。预解算子把积分方程转成算子谱问题，适合分析解的存在性、分支以及参数变化时的奇异行为。预解算子的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -556,8 +832,20 @@
     {
       "chinese_name": "特征值",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是算子谱理论中的一种数值对象。",
+        "它与齐次方程的非零解、特征函数和紧算子谱有关。",
+        "标准关系是 $Tu=\\mu u,\\quad u\\ne0$。",
+        "对紧算子而言，非零谱值最多只会向零聚集。",
+        "它的英文译名是 eigenvalue。"
+      ],
+      "fragmented_clues": [
+        "算子谱 数值对象",
+        "齐次方程 非零解 特征函数 紧算子谱",
+        "$Tu=\\mu u,\\quad u\\ne0$",
+        "非零谱值 零 聚点",
+        "eigenvalue"
+      ],
       "explanation_markdown": "特征值刻画使齐次积分方程存在非零解的谱值。可写作 $Tu=\\mu u$，这里$T$ 是积分算子，$u\\ne0$ 是特征函数，$\\mu$ 是特征值。\n\n在方程 $u=\\lambda Tu$ 中，特征参数 $\\lambda$ 常等于 $1/\\mu$，记号需区分。紧算子的非零特征值只能以零为聚点，这与矩阵谱有相似之处。弗雷德霍姆理论里，特征值通常和紧算子的特征值、预解式或择一定理相连，参数落在谱上时解会失去唯一性。特征值把积分方程转成算子谱问题，适合分析解的存在性、分支以及参数变化时的奇异行为。特征值的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -580,8 +868,20 @@
     {
       "chinese_name": "特征核",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分算子谱分析中的一种核对象。",
+        "它与谱方程、特征函数构造和正交展开有关。",
+        "常用关系是 $\\int_a^bK(x,t)u(t)\\,dt=\\mu u(x)$。",
+        "它关注核在比例关系方程中的作用，而不是任意权重函数本身。",
+        "它的英文译名是 characteristic kernel。"
+      ],
+      "fragmented_clues": [
+        "谱分析 核对象",
+        "谱方程 特征函数 正交展开",
+        "$\\int_a^bK(x,t)u(t)\\,dt=\\mu u(x)$",
+        "比例关系 权重函数",
+        "characteristic kernel"
+      ],
       "explanation_markdown": "特征核是与积分算子谱结构相关、用于构造特征函数或特征值方程的核对象。常写成 $\\int_a^bK(x,t)u(t)\\,dt=\\mu u(x)$，其中$K$ 生成算子，$u$ 是特征函数。\n\n它不同于任意核函数，关注的是核在谱方程中的作用；特征值描述比例，特征函数描述方向。对称或厄米核下，特征核结构可通过正交展开清楚呈现。弗雷德霍姆理论里，特征核通常和紧算子的特征值、预解式或择一定理相连，参数落在谱上时解会失去唯一性。特征核把积分方程转成算子谱问题，适合分析解的存在性、分支以及参数变化时的奇异行为。特征核的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -604,8 +904,20 @@
     {
       "chinese_name": "迭代核",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分算子理论中的一种递推核对象。",
+        "它与 Neumann 级数、预解核展开和高阶传播影响有关。",
+        "递推关系可写作 $K_{n+1}(x,t)=\\int_a^bK(x,s)K_n(s,t)\\,ds$。",
+        "它记录经过多次中间变量传递后的综合权重，而不只是一次作用。",
+        "它的英文译名是 iterated kernel。"
+      ],
+      "fragmented_clues": [
+        "递推 核对象",
+        "Neumann 级数 预解展开 高阶传播",
+        "$K_{n+1}(x,t)=\\int_a^bK(x,s)K_n(s,t)\\,ds$",
+        "中间变量 多次传递 综合权重",
+        "iterated kernel"
+      ],
       "explanation_markdown": "迭代核指积分算子重复作用后产生的核。常写成 $K_{n+1}(x,t)=\\int_a^bK(x,s)K_n(s,t)\\,ds$，其中$K_1=K$，$s$ 是中间变量。\n\n它不同于原核，记录了经过 $n$ 次中间传播后的综合影响。Neumann 级数和预解核展开都用迭代核来组织高阶项。讨论迭代核时，核的对称性、正性、奇异阶和可分性会直接影响算子的紧性、谱和可逆性。迭代核看起来只是权重函数，但它决定了积分算子属于哪一类，也决定了能否用低秩或谱方法处理。迭代核的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。因此理解迭代核还要看核的奇异性和右端项的空间，二者会影响求解方法。",
       "source_links": [
         {
@@ -628,8 +940,20 @@
     {
       "chinese_name": "核的迹",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分算子谱理论中的一种对角线标量。",
+        "它与迹类条件、特征值之和和 Fredholm 行列式展开有关。",
+        "常用表达是 $\\operatorname{tr}T=\\int_a^bK(x,x)\\,dx$。",
+        "它只在足够正则或迹类条件下良好定义，不能任意对奇异权重取对角积分。",
+        "它的英文译名是 trace of a kernel。"
+      ],
+      "fragmented_clues": [
+        "谱理论 对角线标量",
+        "迹类条件 特征值之和 Fredholm 行列式",
+        "$\\operatorname{tr}T=\\int_a^bK(x,x)\\,dx$",
+        "正则条件 奇异权重 对角积分",
+        "trace of a kernel"
+      ],
       "explanation_markdown": "核的迹用来描述核在对角线上的积分，类比矩阵迹。一个核心表达是 $\\operatorname{tr}T=\\int_a^bK(x,x)\\,dx$，这里$T$ 是积分算子，$K(x,x)$ 是核的对角值。\n\n它只在足够正则或迹类条件下有良好意义；不能对任意奇异核直接取对角积分。谱理论中，迹常等于特征值之和，并进入弗雷德霍姆行列式展开。讨论核的迹时，核的对称性、正性、奇异阶和可分性会直接影响算子的紧性、谱和可逆性。核的迹看起来只是权重函数，但它决定了积分算子属于哪一类，也决定了能否用低秩或谱方法处理。核的迹的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -652,8 +976,20 @@
     {
       "chinese_name": "弗雷德霍姆行列式",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是无穷维算子理论中的一种行列式对象。",
+        "它与紧积分算子的可逆性、预解核和第二类方程有关。",
+        "常用记号是 $D(\\lambda)=\\det(I-\\lambda T)$。",
+        "零点对应特征参数，非齐次问题可能因此失去唯一解。",
+        "它的英文译名是 Fredholm determinant。"
+      ],
+      "fragmented_clues": [
+        "无穷维算子 行列式对象",
+        "紧积分算子 可逆性 预解核 第二类方程",
+        "$D(\\lambda)=\\det(I-\\lambda T)$",
+        "零点 特征参数 唯一解失效",
+        "Fredholm determinant"
+      ],
       "explanation_markdown": "弗雷德霍姆行列式刻画由积分算子构造的无穷维行列式，用于刻画可逆性。一个核心表达是 $D(\\lambda)=\\det(I-\\lambda T)$，这里$T$ 是紧积分算子，$\\lambda$ 是参数。\n\n它推广有限维矩阵行列式；零点对应非齐次方程可能失去唯一解的特征参数。弗雷德霍姆理论用它和预解核描述第二类方程的解析结构。弗雷德霍姆理论里，弗雷德霍姆行列式通常和紧算子的特征值、预解式或择一定理相连，参数落在谱上时解会失去唯一性。弗雷德霍姆行列式把积分方程转成算子谱问题，适合分析解的存在性、分支以及参数变化时的奇异行为。弗雷德霍姆行列式的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -676,8 +1012,20 @@
     {
       "chinese_name": "弗雷德霍姆择一定理",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是紧算子方程中的一种可解性定理。",
+        "它连接齐次解空间、非齐次可解性和伴随正交条件。",
+        "常用方程框架是 $(I-\\lambda T)u=f$。",
+        "若齐次问题只有零解，则给定右端有唯一解；否则必须满足有限个相容条件。",
+        "它的英文译名是 Fredholm alternative。"
+      ],
+      "fragmented_clues": [
+        "紧算子方程 可解性定理",
+        "齐次解空间 非齐次可解性 伴随正交",
+        "$(I-\\lambda T)u=f$",
+        "零解 唯一解 有限相容条件",
+        "Fredholm alternative"
+      ],
       "explanation_markdown": "弗雷德霍姆择一定理是紧算子方程中关于齐次解和非齐次可解性的二选一结论。在常用记号中有 $(I-\\lambda T)u=f$，其中$T$ 是紧算子，$f$ 是右端项。\n\n它不是求解公式，而是说明若齐次方程只有零解则非齐次方程唯一可解；否则需满足伴随正交条件。这一结论是 弗雷德霍姆方程谱理论的核心。弗雷德霍姆理论里，弗雷德霍姆择一定理通常和紧算子的特征值、预解式或择一定理相连，参数落在谱上时解会失去唯一性。弗雷德霍姆择一定理把积分方程转成算子谱问题，适合分析解的存在性、分支以及参数变化时的奇异行为。",
       "source_links": [
         {
@@ -700,8 +1048,20 @@
     {
       "chinese_name": "弗雷德霍姆算子",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是泛函分析中的一种线性算子类型。",
+        "它与闭值域、有限维核、有限维余核和指标稳定性有关。",
+        "指标常写作 $\\operatorname{ind}A=\\dim\\ker A-\\dim\\operatorname{coker}A$。",
+        "可解性的障碍被压缩成有限维对象，紧扰动恒等算子常落在这一类。",
+        "它的英文译名是 Fredholm operator。"
+      ],
+      "fragmented_clues": [
+        "泛函分析 线性算子类型",
+        "闭值域 有限维核 有限维余核 指标稳定性",
+        "$\\operatorname{ind}A=\\dim\\ker A-\\dim\\operatorname{coker}A$",
+        "有限维障碍 紧扰动恒等算子",
+        "Fredholm operator"
+      ],
       "explanation_markdown": "弗雷德霍姆算子指核与余核维数有限且像空间闭的线性算子。在常用记号中有 $\\operatorname{ind}A=\\dim\\ker A-\\dim\\operatorname{coker}A$，其中$A$ 是算子，$\\operatorname{ind}A$ 是指标。\n\n它与弗雷德霍姆积分方程相关但更抽象；紧扰动恒等算子常是弗雷德霍姆算子。指标稳定性使边值问题和积分方程的可解性可用有限维障碍描述。弗雷德霍姆理论里，弗雷德霍姆算子通常和紧算子的特征值、预解式或择一定理相连，参数落在谱上时解会失去唯一性。弗雷德霍姆算子把积分方程转成算子谱问题，适合分析解的存在性、分支以及参数变化时的奇异行为。弗雷德霍姆算子的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -724,8 +1084,20 @@
     {
       "chinese_name": "沃尔泰拉算子",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分算子理论中的一种三角型算子。",
+        "它与变上限积分、历史依赖和逐次逼近求解有关。",
+        "常用形式是 $Tf(x)=\\int_a^xK(x,t)f(t)\\,dt$。",
+        "当前值只接收过去区间贡献，谱结构不同于固定全区间耦合。",
+        "它的英文译名是 Volterra operator。"
+      ],
+      "fragmented_clues": [
+        "三角型算子",
+        "变上限积分 历史依赖 逐次逼近",
+        "$Tf(x)=\\int_a^xK(x,t)f(t)\\,dt$",
+        "过去区间 固定全区间 非同类谱",
+        "Volterra operator"
+      ],
       "explanation_markdown": "沃尔泰拉算子用来描述积分上限依赖当前点的三角型积分算子。可写作 $Tf(x)=\\int_a^xK(x,t)f(t)\\,dt$，这里$t\\le x$ 表示历史范围，$K$ 是核。\n\n它与弗雷德霍姆算子的固定区间耦合不同，通常没有非零特征值的同类谱结构。沃尔泰拉方程常可通过逐次逼近获得全局唯一解。沃尔泰拉算子带有明显的顺序结构，当前值只累积过去区间的信息，所以逐次逼近和初值型方法通常更自然。在记忆材料、人口过程和时滞系统中，沃尔泰拉算子的上限结构直接表示历史对当前状态的影响。沃尔泰拉算子的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -748,8 +1120,20 @@
     {
       "chinese_name": "积分算子",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是泛函分析中的一种线性算子。",
+        "它与核函数、函数空间映射、紧性、自伴性和谱性质有关。",
+        "常用形式是 $Tf(x)=\\int K(x,t)f(t)\\,dt$。",
+        "它通过对输入函数加权积分生成新函数，是许多方程的算子骨架。",
+        "它的英文译名是 integral operator。"
+      ],
+      "fragmented_clues": [
+        "泛函分析 线性算子",
+        "核函数 函数空间映射 紧性 自伴性 谱性质",
+        "$Tf(x)=\\int K(x,t)f(t)\\,dt$",
+        "输入函数 加权积分 新函数 算子骨架",
+        "integral operator"
+      ],
       "explanation_markdown": "积分算子刻画通过对函数加权积分生成新函数的算子。可写作 $Tf(x)=\\int K(x,t)f(t)\\,dt$，这里$K$ 是核函数，$f$ 是输入函数。\n\n它比积分方程更基础；方程是含有积分算子的等式，算子本身描述映射。紧性、自伴性、正性和谱性质都由积分域和核决定。算子观点下，积分算子把未知函数看成函数空间中的向量，积分核决定一个位置怎样受另一个位置影响。积分算子常见于边值问题、散射和反问题；核越不光滑，唯一性、正则性和数值稳定性越需要单独说明。积分算子的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -772,8 +1156,20 @@
     {
       "chinese_name": "紧算子",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是泛函分析中的一种算子类别。",
+        "它与相对紧集、矩阵类比和紧谱理论有关。",
+        "定义性条件可写作 $T(B)$ 有紧闭包，其中 $B$ 为有界集。",
+        "有界集的像在闭包后变得紧，使无穷维问题带有有限维谱特征。",
+        "它的英文译名是 compact operator。"
+      ],
+      "fragmented_clues": [
+        "泛函分析 算子类别",
+        "相对紧集 矩阵类比 紧谱理论",
+        "$T(B)$ 紧闭包",
+        "有界集 像 闭包 有限维谱特征",
+        "compact operator"
+      ],
       "explanation_markdown": "紧算子是把有界集送到相对紧集的算子。常写成 $T(B)\\ \\text{has compact closure}$，其中$B$ 是有界集，$T$ 是算子。\n\n它是无穷维中最接近矩阵的算子类；完全连续算子在许多文献中与紧算子同义。连续核给出的积分算子常是紧的，弗雷德霍姆理论依赖这一点。弗雷德霍姆理论里，紧算子通常和紧算子的特征值、预解式或择一定理相连，参数落在谱上时解会失去唯一性。紧算子把积分方程转成算子谱问题，适合分析解的存在性、分支以及参数变化时的奇异行为。紧算子的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -796,8 +1192,20 @@
     {
       "chinese_name": "完全连续算子",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是泛函分析中的一种序列紧性算子类别。",
+        "它与弱收敛序列、不动点定理和 Fredholm 型可解性有关。",
+        "常用表述是 $u_n\\rightharpoonup u\\Longrightarrow Tu_n\\to Tu$。",
+        "弱收敛输入经过它后可获得强收敛子列，强调收敛方式的改善。",
+        "它的英文译名是 completely continuous operator。"
+      ],
+      "fragmented_clues": [
+        "泛函分析 序列紧性算子",
+        "弱收敛序列 不动点定理 Fredholm 可解性",
+        "$u_n\\rightharpoonup u\\Longrightarrow Tu_n\\to Tu$",
+        "弱收敛 强收敛子列 收敛改善",
+        "completely continuous operator"
+      ],
       "explanation_markdown": "完全连续算子指把弱收敛或有界序列转化为强收敛子列的算子。常写成 $u_n\\rightharpoonup u\\quad\\Longrightarrow\\quad Tu_n\\to Tu$，其中$T$ 是完全连续算子。\n\n在 Banach 空间文献中它常与紧算子相近，但强调序列收敛性质。积分方程中，完全连续性使不动点定理和弗雷德霍姆择一定理能够应用。弗雷德霍姆理论里，完全连续算子通常和紧算子的特征值、预解式或择一定理相连，参数落在谱上时解会失去唯一性。完全连续算子把积分方程转成算子谱问题，适合分析解的存在性、分支以及参数变化时的奇异行为。完全连续算子的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -820,8 +1228,20 @@
     {
       "chinese_name": "希尔伯特施密特核",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 Hilbert 空间积分算子中的一种平方可积核条件。",
+        "它与紧性、奇异值展开和谱分解有关。",
+        "典型条件是 $\\int_a^b\\int_a^b|K(x,t)|^2\\,dx\\,dt<\\infty$。",
+        "条件比连续性宽，但平方可积已经足够保证相应算子紧。",
+        "它的英文译名是 Hilbert-Schmidt kernel。"
+      ],
+      "fragmented_clues": [
+        "Hilbert 空间 平方可积核条件",
+        "紧性 奇异值展开 谱分解",
+        "$\\int_a^b\\int_a^b|K(x,t)|^2\\,dx\\,dt<\\infty$",
+        "平方可积 算子紧",
+        "Hilbert-Schmidt kernel"
+      ],
       "explanation_markdown": "希尔伯特施密特核用来描述平方可积的二变量核，生成Hilbert-Schmidt积分算子。一个核心表达是 $\\int_a^b\\int_a^b|K(x,t)|^2\\,dx\\,dt<\\infty$，这里$K$ 是核函数，积分有限给出平方可积性。\n\n它比连续核更宽，但仍保证算子紧；与迹类核相比条件又较弱。这种核可用奇异值或正交函数展开，是谱分解的重要入口。弗雷德霍姆理论里，希尔伯特施密特核通常和紧算子的特征值、预解式或择一定理相连，参数落在谱上时解会失去唯一性。希尔伯特施密特核把积分方程转成算子谱问题，适合分析解的存在性、分支以及参数变化时的奇异行为。希尔伯特施密特核的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -844,8 +1264,20 @@
     {
       "chinese_name": "希尔伯特施密特定理",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是紧自伴算子谱理论中的一个展开定理。",
+        "它与对称核、正交特征函数和可数谱表示有关。",
+        "常用表达是 $Tf=\\sum_n\\mu_n\\langle f,e_n\\rangle e_n$。",
+        "它把算子作用分解到正交特征方向上，使方程化为标量关系。",
+        "它的英文译名是 Hilbert-Schmidt theorem。"
+      ],
+      "fragmented_clues": [
+        "紧自伴算子 展开定理",
+        "对称核 正交特征函数 可数谱表示",
+        "$Tf=\\sum_n\\mu_n\\langle f,e_n\\rangle e_n$",
+        "正交特征方向 标量关系",
+        "Hilbert-Schmidt theorem"
+      ],
       "explanation_markdown": "希尔伯特施密特定理刻画紧自伴算子可由正交特征函数展开的谱定理。一个核心表达是 $Tf=\\sum_n\\mu_n\\langle f,e_n\\rangle e_n$，这里$e_n$ 是正交特征函数，$\\mu_n$ 是特征值。\n\n它不同于一般弗雷德霍姆择一定理，重点给出自伴紧算子的正交谱表示。对称核积分方程可借此化为可数多个标量方程。弗雷德霍姆理论里，希尔伯特施密特定理通常和紧算子的特征值、预解式或择一定理相连，参数落在谱上时解会失去唯一性。希尔伯特施密特定理把积分方程转成算子谱问题，适合分析解的存在性、分支以及参数变化时的奇异行为。希尔伯特施密特定理的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -868,8 +1300,20 @@
     {
       "chinese_name": "施密特展开",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是核表示理论中的一种正交展开。",
+        "它与平方可积二变量核、奇异值和低秩近似有关。",
+        "常用形式是 $K(x,t)=\\sum_n s_n u_n(x)\\overline{v_n(t)}$。",
+        "它按正交函数和奇异值组织核，而不是按迭代次数组织。",
+        "它的英文译名是 Schmidt expansion。"
+      ],
+      "fragmented_clues": [
+        "核表示 正交展开",
+        "平方可积二变量核 奇异值 低秩近似",
+        "$K(x,t)=\\sum_n s_n u_n(x)\\overline{v_n(t)}$",
+        "正交函数 奇异值 非迭代次数",
+        "Schmidt expansion"
+      ],
       "explanation_markdown": "施密特展开是把Hilbert-Schmidt核按奇异函数或特征函数展开的表示。在常用记号中有 $K(x,t)=\\sum_n s_n u_n(x)\\overline{v_n(t)}$，其中$s_n$ 是奇异值，$u_n,v_n$ 是正交函数。\n\n它与Neumann级数按迭代次数展开不同，Schmidt展开按正交谱结构展开。数值低秩近似和核压缩常利用这种表示。弗雷德霍姆理论里，施密特展开通常和紧算子的特征值、预解式或择一定理相连，参数落在谱上时解会失去唯一性。施密特展开把积分方程转成算子谱问题，适合分析解的存在性、分支以及参数变化时的奇异行为。施密特展开的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -892,8 +1336,20 @@
     {
       "chinese_name": "谱分解",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是算子谱理论中的一种结构表示。",
+        "它与特征值、谱投影、自伴核和标量化求解有关。",
+        "常用形式是 $T=\\sum_n\\mu_nP_n$。",
+        "它描述整个算子如何分解到不同谱分量，而不是只给单个谱值。",
+        "它的英文译名是 spectral decomposition。"
+      ],
+      "fragmented_clues": [
+        "算子谱 结构表示",
+        "特征值 谱投影 自伴核 标量化求解",
+        "$T=\\sum_n\\mu_nP_n$",
+        "整体算子 谱分量 单个谱值",
+        "spectral decomposition"
+      ],
       "explanation_markdown": "谱分解指把算子作用分解到特征值、特征函数或谱测度上的表示。在常用记号中有 $T=\\sum_n\\mu_n P_n$，其中$P_n$ 是谱投影，$\\mu_n$ 是谱值。\n\n它比单个特征值更完整，描述算子整体结构；非自伴算子可能需要更复杂形式。对称积分核和紧算子中，谱分解能把方程求解化为标量除法。弗雷德霍姆理论里，谱分解通常和紧算子的特征值、预解式或择一定理相连，参数落在谱上时解会失去唯一性。谱分解把积分方程转成算子谱问题，适合分析解的存在性、分支以及参数变化时的奇异行为。谱分解的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -916,8 +1372,20 @@
     {
       "chinese_name": "阿贝尔方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分方程理论中的一种弱奇异模型。",
+        "它与分数积分、层析反演和带历史效应的 Volterra 结构有关。",
+        "常用形式是 $f(x)=\\int_0^x u(t)(x-t)^{-\\alpha}\\,dt,\\ 0<\\alpha<1$。",
+        "核在上限端点处弱奇异，奇性指数位于零和一之间。",
+        "它的英文译名是 Abel equation。"
+      ],
+      "fragmented_clues": [
+        "弱奇异模型",
+        "分数积分 层析反演 历史效应 Volterra 结构",
+        "$f(x)=\\int_0^x u(t)(x-t)^{-\\alpha}\\,dt,\\ 0<\\alpha<1$",
+        "上限端点 弱奇异 奇性指数",
+        "Abel equation"
+      ],
       "explanation_markdown": "阿贝尔方程用来描述含有弱奇核的沃尔泰拉型积分方程。可写作 $f(x)=\\int_0^x{u(t)\\over (x-t)^\\alpha}\\,dt,\\quad 0<\\alpha<1$，这里$\\alpha$ 是奇性指数，$u$ 是未知函数。\n\n它不同于普通沃尔泰拉方程，核在 $t=x$ 处弱奇异。分数积分、层析反演和历史效应模型中常出现 Abel 型结构。变换方法处理阿贝尔方程时，会利用卷积、径向或边界结构，把原来的积分关系化成乘法、投影或较简单的谱关系。阿贝尔方程的优势在于保留整体耦合，同时把对称性显露出来，因此常用于反演、滤波和边界表示。阿贝尔方程的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -940,8 +1408,20 @@
     {
       "chinese_name": "阿贝尔变换",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分几何中的一种投影型积分变换。",
+        "它与轴对称层析、径向密度和天体亮度反演有关。",
+        "常用表达是 $Af(s)=2\\int_s^\\infty {r f(r)\\over\\sqrt{r^2-s^2}}\\,dr$。",
+        "它把径向函数沿直线投影成一维数据，反演时常遇到平方根奇性。",
+        "它的英文译名是 Abel transform。"
+      ],
+      "fragmented_clues": [
+        "积分几何 投影型积分变换",
+        "轴对称层析 径向密度 亮度反演",
+        "$Af(s)=2\\int_s^\\infty {r f(r)\\over\\sqrt{r^2-s^2}}\\,dr$",
+        "径向函数 直线投影 一维数据 平方根奇性",
+        "Abel transform"
+      ],
       "explanation_markdown": "阿贝尔变换刻画把径向函数投影成沿直线积分数据的积分变换。可写作 $Af(s)=2\\int_s^\\infty {r f(r)\\over\\sqrt{r^2-s^2}}\\,dr$，这里$f(r)$ 是径向函数，$s$ 是投影距离。\n\n它与阿贝尔方程相连，但变换强调数据生成，方程强调由数据反求未知函数。轴对称层析和天体亮度反演常用 Abel 变换。变换方法处理阿贝尔变换时，会利用卷积、径向或边界结构，把原来的积分关系化成乘法、投影或较简单的谱关系。阿贝尔变换的优势在于保留整体耦合，同时把对称性显露出来，因此常用于反演、滤波和边界表示。阿贝尔变换的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -964,8 +1444,20 @@
     {
       "chinese_name": "阿贝尔型积分方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分方程理论中的一种弱奇异方程族。",
+        "它与分数微积分、端点奇性和反演稳定性有关。",
+        "常用形式是 $g(x)=\\int_0^x(x-t)^{-\\alpha}u(t)\\,dt$。",
+        "它比单一 Abel 模型更宽，可容纳不同权重和区间设置。",
+        "它的英文译名是 Abel-type integral equation。"
+      ],
+      "fragmented_clues": [
+        "弱奇异 方程族",
+        "分数微积分 端点奇性 反演稳定性",
+        "$g(x)=\\int_0^x(x-t)^{-\\alpha}u(t)\\,dt$",
+        "不同权重 不同区间",
+        "Abel-type integral equation"
+      ],
       "explanation_markdown": "阿贝尔型积分方程是具有 Abel 弱奇核或分数积分结构的积分方程。常写成 $g(x)=\\int_0^x(x-t)^{-\\alpha}u(t)\\,dt$，其中$0<\\alpha<1$，$u$ 是未知函数。\n\n它比单一阿贝尔方程更宽，可包含不同权重和区间。这类方程的反演常借助分数微积分，稳定性明显受端点奇性影响。变换方法处理阿贝尔型积分方程时，会利用卷积、径向或边界结构，把原来的积分关系化成乘法、投影或较简单的谱关系。阿贝尔型积分方程的优势在于保留整体耦合，同时把对称性显露出来，因此常用于反演、滤波和边界表示。阿贝尔型积分方程的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -988,8 +1480,20 @@
     {
       "chinese_name": "梅林变换",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分变换理论中的一种尺度变换。",
+        "它与乘法卷积、缩放不变核和复参数分析有关。",
+        "常用表达是 $Mf(s)=\\int_0^\\infty x^{s-1}f(x)\\,dx$。",
+        "它处理的是乘法尺度结构，而不是普通平移结构。",
+        "它的英文译名是 Mellin transform。"
+      ],
+      "fragmented_clues": [
+        "积分变换 尺度变换",
+        "乘法卷积 缩放不变核 复参数",
+        "$Mf(s)=\\int_0^\\infty x^{s-1}f(x)\\,dx$",
+        "乘法尺度 非平移结构",
+        "Mellin transform"
+      ],
       "explanation_markdown": "梅林变换指把函数按乘法尺度分解的积分变换。常写成 $Mf(s)=\\int_0^\\infty x^{s-1}f(x)\\,dx$，其中$s$ 是复参数，$x^{s-1}$ 是尺度核。\n\n它与傅里叶变换处理平移不同，Mellin变换适合处理缩放不变核。卷积型积分方程若是乘法卷积，常用梅林变换化为代数关系。变换方法处理梅林变换时，会利用卷积、径向或边界结构，把原来的积分关系化成乘法、投影或较简单的谱关系。梅林变换的优势在于保留整体耦合，同时把对称性显露出来，因此常用于反演、滤波和边界表示。梅林变换的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1012,8 +1516,20 @@
     {
       "chinese_name": "汉克尔变换",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分变换理论中的一种径向变换。",
+        "它与 Bessel 函数核、圆柱对称问题和波动势问题有关。",
+        "常用表达是 $F_\\nu(k)=\\int_0^\\infty f(r)J_\\nu(kr)r\\,dr$。",
+        "径向变量的权重和 $J_\\nu$ 核使它适合轴对称边界表示。",
+        "它的英文译名是 Hankel transform。"
+      ],
+      "fragmented_clues": [
+        "积分变换 径向变换",
+        "Bessel 函数核 圆柱对称 波动势问题",
+        "$F_\\nu(k)=\\int_0^\\infty f(r)J_\\nu(kr)r\\,dr$",
+        "径向变量 $J_\\nu$ 轴对称",
+        "Hankel transform"
+      ],
       "explanation_markdown": "汉克尔变换用来描述含 Bessel 函数核的径向积分变换。一个核心表达是 $F_\\nu(k)=\\int_0^\\infty f(r)J_\\nu(kr)r\\,dr$，这里$J_\\nu$ 是Bessel函数，$r$ 是径向变量。\n\n它不同于傅里叶变换的一般平移核，适合圆柱或径向对称问题。势论、波动方程和轴对称边界积分常使用汉克尔变换。变换方法处理汉克尔变换时，会利用卷积、径向或边界结构，把原来的积分关系化成乘法、投影或较简单的谱关系。汉克尔变换的优势在于保留整体耦合，同时把对称性显露出来，因此常用于反演、滤波和边界表示。汉克尔变换的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1036,8 +1552,20 @@
     {
       "chinese_name": "拉东变换",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分几何中的一种投影变换。",
+        "它与 CT 成像、反问题和超平面积分数据有关。",
+        "常用表达是 $Rf(\\theta,s)=\\int_{x\\cdot\\theta=s}f(x)\\,d\\sigma(x)$。",
+        "它把空间函数转化为所有方向上的平面投影数据。",
+        "它的英文译名是 Radon transform。"
+      ],
+      "fragmented_clues": [
+        "积分几何 投影变换",
+        "CT 成像 反问题 超平面积分数据",
+        "$Rf(\\theta,s)=\\int_{x\\cdot\\theta=s}f(x)\\,d\\sigma(x)$",
+        "空间函数 方向 平面投影数据",
+        "Radon transform"
+      ],
       "explanation_markdown": "拉东变换刻画把函数映到各条超平面上的积分数据。一个核心表达是 $Rf(\\theta,s)=\\int_{x\\cdot\\theta=s}f(x)\\,d\\sigma(x)$，这里$\\theta$ 是方向，$s$ 是平面位置。\n\n它与阿贝尔变换相比适用于一般方向的投影；Abel变换可视为径向对称情形。CT成像和反问题中，拉东变换把空间密度转化为投影数据。变换方法处理拉东变换时，会利用卷积、径向或边界结构，把原来的积分关系化成乘法、投影或较简单的谱关系。拉东变换的优势在于保留整体耦合，同时把对称性显露出来，因此常用于反演、滤波和边界表示。拉东变换的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1060,8 +1588,20 @@
     {
       "chinese_name": "卷积方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是平移不变结构下的一类积分方程。",
+        "它与傅里叶变换、反卷积、滤波和稳定性分析有关。",
+        "常用记号是 $k*u=f$。",
+        "核作用可在频域变成乘法，符号接近零时反演会放大误差。",
+        "它的英文译名是 convolution equation。"
+      ],
+      "fragmented_clues": [
+        "平移不变 积分方程",
+        "傅里叶变换 反卷积 滤波 稳定性",
+        "$k*u=f$",
+        "频域乘法 符号近零 误差放大",
+        "convolution equation"
+      ],
       "explanation_markdown": "卷积方程是未知函数通过卷积核与已知数据相连的积分方程。在常用记号中有 $k*u=f$，其中$k$ 是卷积核，$u$ 是未知函数，$f$ 是已知项。\n\n它与一般弗雷德霍姆方程不同，平移不变结构允许使用傅里叶变换。若 $\\widehat k$ 接近零，反卷积会变得不稳定，需要正则化。变换方法处理卷积方程时，会利用卷积、径向或边界结构，把原来的积分关系化成乘法、投影或较简单的谱关系。卷积方程的优势在于保留整体耦合，同时把对称性显露出来，因此常用于反演、滤波和边界表示。卷积方程的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1084,8 +1624,20 @@
     {
       "chinese_name": "维纳霍普夫方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是半轴问题中的一类卷积型方程。",
+        "它与衍射、半空间边值问题和符号分解技术有关。",
+        "常用形式是 $u(x)-\\int_0^\\infty k(x-t)u(t)\\,dt=f(x),\\ x>0$。",
+        "积分域只覆盖半轴，边界破坏全线卷积的简单对角化。",
+        "它的英文译名是 Wiener-Hopf equation。"
+      ],
+      "fragmented_clues": [
+        "半轴 卷积型方程",
+        "衍射 半空间边值问题 符号分解",
+        "$u(x)-\\int_0^\\infty k(x-t)u(t)\\,dt=f(x),\\ x>0$",
+        "半轴边界 全线卷积 对角化破坏",
+        "Wiener-Hopf equation"
+      ],
       "explanation_markdown": "维纳霍普夫方程指半轴上带卷积结构的积分方程。在常用记号中有 $u(x)-\\int_0^\\infty k(x-t)u(t)\\,dt=f(x),\\quad x>0$，其中$k$ 是卷积核，积分域为半轴。\n\n它不同于全线卷积方程，边界半轴破坏了简单傅里叶对角化。维纳-霍普夫分解可把符号函数拆成上下半平面因子来求解。变换方法处理维纳霍普夫方程时，会利用卷积、径向或边界结构，把原来的积分关系化成乘法、投影或较简单的谱关系。维纳霍普夫方程的优势在于保留整体耦合，同时把对称性显露出来，因此常用于反演、滤波和边界表示。维纳霍普夫方程的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1108,8 +1660,20 @@
     {
       "chinese_name": "维纳霍普夫分解",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是半空间问题中的一种符号处理技术。",
+        "它与半轴卷积方程、解析延拓和上下半平面因子有关。",
+        "常用形式是 $G(\\xi)=G_+(\\xi)G_-(\\xi)$。",
+        "它把一个符号拆成分别在不同半平面解析的两个因子。",
+        "它的英文译名是 Wiener-Hopf factorization。"
+      ],
+      "fragmented_clues": [
+        "半空间 符号处理技术",
+        "半轴卷积方程 解析延拓 上下半平面因子",
+        "$G(\\xi)=G_+(\\xi)G_-(\\xi)$",
+        "符号 两个解析因子",
+        "Wiener-Hopf factorization"
+      ],
       "explanation_markdown": "维纳霍普夫分解用来描述把函数或算子符号分解为两个解析因子的技术。可写作 $G(\\xi)=G_+(\\xi)G_-(\\xi)$，这里$G_+$ 与 $G_-$ 分别在不同半平面解析。\n\n它不是方程本身，而是处理维纳-霍普夫方程边界耦合的工具。衍射、断裂力学和半空间边值问题常依赖这种分解。变换方法处理维纳霍普夫分解时，会利用卷积、径向或边界结构，把原来的积分关系化成乘法、投影或较简单的谱关系。维纳霍普夫分解的优势在于保留整体耦合，同时把对称性显露出来，因此常用于反演、滤波和边界表示。维纳霍普夫分解的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1132,8 +1696,20 @@
     {
       "chinese_name": "科西型积分",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是复分析和奇异积分理论中的一种积分表达。",
+        "它与解析函数边界值、主值解释和曲线上的密度有关。",
+        "常用形式是 ${1\\over 2\\pi i}\\int_\\Gamma {\\phi(t)\\over t-z}\\,dt$。",
+        "核在积分变量等于观察点时有一阶奇性，并产生边界极限跳跃。",
+        "它的英文译名是 Cauchy-type integral。"
+      ],
+      "fragmented_clues": [
+        "复分析 奇异积分 积分表达",
+        "解析函数边界值 主值 曲线密度",
+        "${1\\over 2\\pi i}\\int_\\Gamma {\\phi(t)\\over t-z}\\,dt$",
+        "一阶奇性 边界极限 跳跃",
+        "Cauchy-type integral"
+      ],
       "explanation_markdown": "科西型积分刻画含有柯西核并通常按主值解释的积分。可写作 ${1\\over 2\\pi i}\\int_\\Gamma{\\phi(t)\\over t-z}\\,dt$，这里$\\Gamma$ 是曲线，$z$ 是复变量。\n\n它与普通光滑核积分不同，核在 $t=z$ 处有一阶奇性。复分析边值问题和奇异积分方程中，柯西型积分给出解析函数的边界表示。算子观点下，科西型积分把未知函数看成函数空间中的向量，积分核决定一个位置怎样受另一个位置影响。科西型积分常见于边值问题、散射和反问题；核越不光滑，唯一性、正则性和数值稳定性越需要单独说明。科西型积分的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1156,8 +1732,20 @@
     {
       "chinese_name": "边界积分方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是边值问题中的一种边界化方程。",
+        "它与势论、散射问题、边界元离散和未知边界密度有关。",
+        "常用形式是 $\\int_{\\partial\\Omega}K(x,y)\\sigma(y)\\,dS_y=f(x)$。",
+        "区域内部问题被转移到边界上，未知量的维数通常降低一阶。",
+        "它的英文译名是 boundary integral equation。"
+      ],
+      "fragmented_clues": [
+        "边值问题 边界化方程",
+        "势论 散射 边界元 未知密度",
+        "$\\int_{\\partial\\Omega}K(x,y)\\sigma(y)\\,dS_y=f(x)$",
+        "区域内部 边界 未知量 降维",
+        "boundary integral equation"
+      ],
       "explanation_markdown": "边界积分方程是把区域内偏微分方程转化为边界上未知密度的积分方程。常写成 $\\int_{\\partial\\Omega}K(x,y)\\sigma(y)\\,dS_y=f(x)$，其中$\\partial\\Omega$ 是边界，$\\sigma$ 是未知密度。\n\n它与体积分方程不同，只在边界上求未知量，维数降低一阶。边界元法、势论和声电磁散射都以此为基础。边界积分方法中，边界积分方程把区域内方程转移到边界上处理，密度函数和跳跃关系决定解的表示是否正确。边界积分方程常和主值积分、法向导数或层势一起出现，边界光滑性会直接影响公式能否按经典意义成立。边界积分方程的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1180,8 +1768,20 @@
     {
       "chinese_name": "单层势",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是势论和边界积分方法中的一种层势对象。",
+        "它与基本解、边界密度和法向导数跳跃有关。",
+        "常用形式是 $S\\sigma(x)=\\int_{\\partial\\Omega}G(x,y)\\sigma(y)\\,dS_y$。",
+        "势函数通常连续穿过边界，但法向导数会出现跳跃。",
+        "它的英文译名是 single-layer potential。"
+      ],
+      "fragmented_clues": [
+        "势论 边界积分 层势对象",
+        "基本解 边界密度 法向导数跳跃",
+        "$S\\sigma(x)=\\int_{\\partial\\Omega}G(x,y)\\sigma(y)\\,dS_y$",
+        "势函数 连续穿边界 法向导数跳跃",
+        "single-layer potential"
+      ],
       "explanation_markdown": "单层势指由边界密度通过基本解积分形成的势函数。常写成 $S\\sigma(x)=\\int_{\\partial\\Omega}G(x,y)\\sigma(y)\\,dS_y$，其中$G$ 是基本解，$\\sigma$ 是边界密度。\n\n它与双层势的差别在于使用基本解本身，双层势使用法向导数。单层势通常连续穿过边界，但法向导数会出现跳跃。边界积分方法中，单层势把区域内方程转移到边界上处理，密度函数和跳跃关系决定解的表示是否正确。单层势常和主值积分、法向导数或层势一起出现，边界光滑性会直接影响公式能否按经典意义成立。单层势的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1204,8 +1804,20 @@
     {
       "chinese_name": "双层势",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是势论和边界积分方法中的一种层势对象。",
+        "它与法向导数核、狄利克雷问题和边界跳跃公式有关。",
+        "常用形式是 $D\\mu(x)=\\int_{\\partial\\Omega}{\\partial G(x,y)\\over\\partial n_y}\\mu(y)\\,dS_y$。",
+        "势函数本身跨过边界时通常出现跳跃，与只表现为法向导数跳跃的层势不同。",
+        "它的英文译名是 double-layer potential。"
+      ],
+      "fragmented_clues": [
+        "势论 边界积分 层势对象",
+        "法向导数核 狄利克雷问题 边界跳跃",
+        "$D\\mu(x)=\\int_{\\partial\\Omega}{\\partial G(x,y)\\over\\partial n_y}\\mu(y)\\,dS_y$",
+        "势函数 跨边界 跳跃",
+        "double-layer potential"
+      ],
       "explanation_markdown": "双层势用来描述由基本解的法向导数与边界密度构造的势函数。一个核心表达是 $D\\mu(x)=\\int_{\\partial\\Omega}{\\partial G(x,y)\\over\\partial n_y}\\mu(y)\\,dS_y$，这里$n_y$ 是边界法向，$\\mu$ 是密度。\n\n它不同于单层势，双层势本身跨边界常有跳跃，而法向导数性质另有规律。狄利克雷问题和边界积分方程中经常用它表示解。边界积分方法中，双层势把区域内方程转移到边界上处理，密度函数和跳跃关系决定解的表示是否正确。双层势常和主值积分、法向导数或层势一起出现，边界光滑性会直接影响公式能否按经典意义成立。双层势的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1228,8 +1840,20 @@
     {
       "chinese_name": "势论",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是分析和数学物理中的一种理论框架。",
+        "它与源分布、基本解、调和函数、Poisson 方程和边界表示有关。",
+        "常用表达是 $u(x)=\\int G(x,y)\\rho(y)\\,dy$。",
+        "它研究源通过核生成场量后，在区域内部和边界上的性质。",
+        "它的英文译名是 potential theory。"
+      ],
+      "fragmented_clues": [
+        "分析 数学物理 理论框架",
+        "源分布 基本解 调和函数 Poisson 方程 边界表示",
+        "$u(x)=\\int G(x,y)\\rho(y)\\,dy$",
+        "源 核 场量 区域内部 边界性质",
+        "potential theory"
+      ],
       "explanation_markdown": "势论刻画研究由源分布通过核函数生成势函数及其边值性质的理论。一个核心表达是 $u(x)=\\int G(x,y)\\rho(y)\\,dy$，这里$G$ 是基本解，$\\rho$ 是源密度。\n\n它不是单个积分方程，而是单层势、双层势和Newton势等对象的共同背景。调和函数、Poisson方程和边界积分方法都依赖势论语言。边界积分方法中，势论把区域内方程转移到边界上处理，密度函数和跳跃关系决定解的表示是否正确。势论常和主值积分、法向导数或层势一起出现，边界光滑性会直接影响公式能否按经典意义成立。势论的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1252,8 +1876,20 @@
     {
       "chinese_name": "牛顿势",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是势论中的一种体源势对象。",
+        "它与 Laplace 基本解、Poisson 方程和空间源项有关。",
+        "常用形式是 $u(x)=\\int_{\\mathbb R^n}\\Phi(x-y)f(y)\\,dy$。",
+        "它对区域或全空间源项积分，而不是只对边界密度积分。",
+        "它的英文译名是 Newtonian potential。"
+      ],
+      "fragmented_clues": [
+        "势论 体源势对象",
+        "Laplace 基本解 Poisson 方程 空间源项",
+        "$u(x)=\\int_{\\mathbb R^n}\\Phi(x-y)f(y)\\,dy$",
+        "区域源项 全空间源项 非边界密度",
+        "Newtonian potential"
+      ],
       "explanation_markdown": "牛顿势是用Laplace算子基本解对源项积分得到的势。在常用记号中有 $u(x)=\\int_{\\mathbb R^n}\\Phi(x-y)f(y)\\,dy$，其中$\\Phi$ 是Newton核，$f$ 是源项。\n\n它与单层势不同，Newton势通常对区域体源积分，而单层势对边界密度积分。在三维中 $\\Phi(x)=1/(4\\pi|x|)$，可用于解Poisson方程。边界积分方法中，牛顿势把区域内方程转移到边界上处理，密度函数和跳跃关系决定解的表示是否正确。牛顿势常和主值积分、法向导数或层势一起出现，边界光滑性会直接影响公式能否按经典意义成立。牛顿势的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。因此理解牛顿势还要看核的奇异性和右端项的空间，二者会影响求解方法。",
       "source_links": [
         {
@@ -1276,8 +1912,20 @@
     {
       "chinese_name": "柯西核",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是复分析奇异积分中的一种核对象。",
+        "它与柯西积分、Hilbert 变换和 Riemann-Hilbert 边值问题有关。",
+        "常用形式是 $K(z,t)={1\\over t-z}$。",
+        "它有复解析结构，边界极限满足 Plemelj 型跳跃公式。",
+        "它的英文译名是 Cauchy kernel。"
+      ],
+      "fragmented_clues": [
+        "复分析 奇异积分 核对象",
+        "柯西积分 Hilbert 变换 Riemann-Hilbert 边值问题",
+        "$K(z,t)={1\\over t-z}$",
+        "复解析结构 边界极限 Plemelj 跳跃",
+        "Cauchy kernel"
+      ],
       "explanation_markdown": "柯西核指复平面中形如 $(t-z)^{-1}$ 的奇异积分核。在常用记号中有 $K(z,t)={1\\over t-z}$，其中$z$ 是观察点，$t$ 是积分变量。\n\n它与一般奇异核相比带有复解析结构，边界极限满足Plemelj跳跃公式。柯西积分、Hilbert变换和黎曼-希尔伯特问题都围绕该核展开。讨论柯西核时，核的对称性、正性、奇异阶和可分性会直接影响算子的紧性、谱和可逆性。柯西核看起来只是权重函数，但它决定了积分算子属于哪一类，也决定了能否用低秩或谱方法处理。柯西核的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。因此理解柯西核还要看核的奇异性和右端项的空间，二者会影响求解方法。",
       "source_links": [
         {
@@ -1300,8 +1948,20 @@
     {
       "chinese_name": "跳跃关系",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是边界积分理论中的一种边界极限公式。",
+        "它与层势、柯西型积分、两侧迹和边界密度有关。",
+        "典型形式是 $\\gamma^\\pm D\\mu=(\\mp {1\\over2}I+K)\\mu$。",
+        "它精确给出穿过边界时出现的半恒等项，而不只是连续或不连续的描述。",
+        "它的英文译名是 jump relation。"
+      ],
+      "fragmented_clues": [
+        "边界积分 边界极限公式",
+        "层势 柯西型积分 两侧迹 边界密度",
+        "$\\gamma^\\pm D\\mu=(\\mp {1\\over2}I+K)\\mu$",
+        "跨边界 半恒等项",
+        "jump relation"
+      ],
       "explanation_markdown": "跳跃关系用来描述层势或柯西型积分穿过边界时两侧极限的差值公式。可写作 $\\gamma^\\pm D\\mu=\\left(\\mp{1\\over2}I+K\\right)\\mu$，这里$\\gamma^\\pm$ 是两侧迹，$K$ 是边界算子。\n\n它不同于普通连续性结论，精确给出跨边界的半恒等项。边界积分方程通过跳跃关系把未知边界密度同给定边值联系起来。边界积分方法中，跳跃关系把区域内方程转移到边界上处理，密度函数和跳跃关系决定解的表示是否正确。跳跃关系常和主值积分、法向导数或层势一起出现，边界光滑性会直接影响公式能否按经典意义成立。跳跃关系的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1324,8 +1984,20 @@
     {
       "chinese_name": "卡尔德隆投影",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是椭圆边值问题中的一种投影算子。",
+        "它与柯西数据空间、狄利克雷数据、Neumann 数据和层势表示有关。",
+        "投影性质可写作 $P^2=P$。",
+        "它把边界数据筛到能延拓为方程解的兼容数据子空间。",
+        "它的英文译名是 Calderon projection。"
+      ],
+      "fragmented_clues": [
+        "椭圆边值问题 投影算子",
+        "柯西数据空间 狄利克雷数据 Neumann 数据 层势表示",
+        "$P^2=P$",
+        "边界数据 可延拓解 兼容子空间",
+        "Calderon projection"
+      ],
       "explanation_markdown": "卡尔德隆投影刻画把边界数据投影到某个椭圆方程可延拓解的柯西数据空间上的算子。可写作 $P^2=P$，这里$P$ 是投影算子，$P^2=P$ 表示幂等。\n\n它不是普通正交投影，通常由边界伪微分算子和层势构成。在边界积分方程和椭圆算子理论中，它组织狄利克雷与Neumann数据的兼容关系。边界积分方法中，卡尔德隆投影把区域内方程转移到边界上处理，密度函数和跳跃关系决定解的表示是否正确。卡尔德隆投影常和主值积分、法向导数或层势一起出现，边界光滑性会直接影响公式能否按经典意义成立。卡尔德隆投影的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1348,8 +2020,20 @@
     {
       "chinese_name": "奇异积分方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分方程理论中的一种含强奇性的方程。",
+        "它与主值解释、复边值问题、裂纹模型和流体界面有关。",
+        "典型形式是 $a(x)u(x)+{1\\over\\pi i}\\operatorname{p.v.}\\int_\\Gamma {b(t)u(t)\\over t-x}\\,dt=f(x)$。",
+        "核的奇性不能按普通积分直接处理，常需要 Cauchy 主值或分布意义。",
+        "它的英文译名是 singular integral equation。"
+      ],
+      "fragmented_clues": [
+        "强奇性 方程",
+        "主值解释 复边值问题 裂纹模型 流体界面",
+        "$a(x)u(x)+{1\\over\\pi i}\\operatorname{p.v.}\\int_\\Gamma {b(t)u(t)\\over t-x}\\,dt=f(x)$",
+        "非普通积分 Cauchy 主值 分布意义",
+        "singular integral equation"
+      ],
       "explanation_markdown": "奇异积分方程是含有需主值或分布意义解释的奇异积分算子的方程。常写成 $a(x)u(x)+{1\\over\\pi i}\\operatorname{p.v.}\\int_\\Gamma {b(t)u(t)\\over t-x}\\,dt=f(x)$，其中$\\operatorname{p.v.}$ 表示主值积分，$\\Gamma$ 是曲线。\n\n它与弱奇异方程不同，核的奇性常不可直接按普通Lebesgue积分处理。复边值问题、裂纹模型和流体界面常出现这类方程。算子观点下，奇异积分方程把未知函数看成函数空间中的向量，积分核决定一个位置怎样受另一个位置影响。奇异积分方程常见于边值问题、散射和反问题；核越不光滑，唯一性、正则性和数值稳定性越需要单独说明。奇异积分方程的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1372,8 +2056,20 @@
     {
       "chinese_name": "卡尔德隆奇异积分",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是调和分析中的一种奇异积分算子。",
+        "它与尺度不变核、抵消条件、$L^p$ 有界性和边界正则性有关。",
+        "常用形式是 $Tf(x)=\\operatorname{p.v.}\\int K(x-y)f(y)\\,dy$。",
+        "它要求大小估计、光滑性和均值抵消，比一般奇异核更有结构。",
+        "它的英文译名是 Calderon-Zygmund singular integral。"
+      ],
+      "fragmented_clues": [
+        "调和分析 奇异积分算子",
+        "尺度不变核 抵消条件 $L^p$ 有界性 边界正则性",
+        "$Tf(x)=\\operatorname{p.v.}\\int K(x-y)f(y)\\,dy$",
+        "大小估计 光滑性 均值抵消",
+        "Calderon-Zygmund singular integral"
+      ],
       "explanation_markdown": "卡尔德隆奇异积分指满足尺度不变和抵消条件的奇异积分算子。常写成 $Tf(x)=\\operatorname{p.v.}\\int K(x-y)f(y)\\,dy$，其中$K$ 是Calderon-Zygmund核。\n\n它比一般奇异核更有结构，要求大小估计、光滑性和均值抵消。调和分析用它研究偏微分方程的边界正则性和 $L^p$ 有界性。边界积分方法中，卡尔德隆奇异积分把区域内方程转移到边界上处理，密度函数和跳跃关系决定解的表示是否正确。卡尔德隆奇异积分常和主值积分、法向导数或层势一起出现，边界光滑性会直接影响公式能否按经典意义成立。卡尔德隆奇异积分的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1396,8 +2092,20 @@
     {
       "chinese_name": "希尔伯特变换",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是实线上奇异积分理论中的一种线性变换。",
+        "它与解析信号、边值问题和一维 Calderon-Zygmund 算子有关。",
+        "常用表达是 $Hf(x)={1\\over\\pi}\\operatorname{p.v.}\\int_{\\mathbb R}{f(t)\\over x-t}\\,dt$。",
+        "在频域中它相当于乘以 $-i\\operatorname{sgn}\\xi$。",
+        "它的英文译名是 Hilbert transform。"
+      ],
+      "fragmented_clues": [
+        "实线 奇异积分 线性变换",
+        "解析信号 边值问题 一维 Calderon-Zygmund 算子",
+        "$Hf(x)={1\\over\\pi}\\operatorname{p.v.}\\int_{\\mathbb R}{f(t)\\over x-t}\\,dt$",
+        "频域 $-i\\operatorname{sgn}\\xi$",
+        "Hilbert transform"
+      ],
       "explanation_markdown": "希尔伯特变换用来描述实线上以柯西主值定义的一维奇异积分算子。一个核心表达是 $Hf(x)={1\\over\\pi}\\operatorname{p.v.}\\int_{\\mathbb R}{f(t)\\over x-t}\\,dt$，这里$\\operatorname{p.v.}$ 是主值积分。\n\n它是Calderon-Zygmund算子的基本例子；与傅里叶变换不同，它在频域相当于乘以 $-i\\,\\operatorname{sgn}\\xi$。解析信号、边值问题和奇异积分方程中都常用它。边界积分方法中，希尔伯特变换把区域内方程转移到边界上处理，密度函数和跳跃关系决定解的表示是否正确。希尔伯特变换常和主值积分、法向导数或层势一起出现，边界光滑性会直接影响公式能否按经典意义成立。希尔伯特变换的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1420,8 +2128,20 @@
     {
       "chinese_name": "里斯势",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是势论和调和分析中的一种分数积分算子。",
+        "它与 Sobolev 嵌入、非局部方程和幂次核估计有关。",
+        "常用表达是 $I_\\alpha f(x)=c_\\alpha\\int_{\\mathbb R^n}{f(y)\\over |x-y|^{n-\\alpha}}\\,dy$。",
+        "它以 $|x-y|^{\\alpha-n}$ 型核提供平滑阶数为 $\\alpha$ 的非局部作用。",
+        "它的英文译名是 Riesz potential。"
+      ],
+      "fragmented_clues": [
+        "势论 调和分析 分数积分算子",
+        "Sobolev 嵌入 非局部方程 幂次核估计",
+        "$I_\\alpha f(x)=c_\\alpha\\int_{\\mathbb R^n}{f(y)\\over |x-y|^{n-\\alpha}}\\,dy$",
+        "$|x-y|^{\\alpha-n}$ 平滑阶数 非局部作用",
+        "Riesz potential"
+      ],
       "explanation_markdown": "里斯势刻画由幂次核定义的分数积分算子。一个核心表达是 $I_\\alpha f(x)=c_\\alpha\\int_{\\mathbb R^n}{f(y)\\over |x-y|^{n-\\alpha}}\\,dy$，这里$0<\\alpha<n$，$c_\\alpha$ 是常数。\n\n它与Riesz变换不同，Riesz势是平滑阶数为 $\\alpha$ 的积分算子。Sobolev嵌入、势估计和非局部方程常通过它表述。边界积分方法中，里斯势把区域内方程转移到边界上处理，密度函数和跳跃关系决定解的表示是否正确。里斯势常和主值积分、法向导数或层势一起出现，边界光滑性会直接影响公式能否按经典意义成立。里斯势的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。因此理解里斯势还要看核的奇异性和右端项的空间，二者会影响求解方法。",
       "source_links": [
         {
@@ -1444,8 +2164,20 @@
     {
       "chinese_name": "庞加莱伯特朗公式",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是奇异积分理论中的一种复合公式。",
+        "它与嵌套主值积分、Riemann-Hilbert 问题和算子乘积整理有关。",
+        "常见形式可写作 $S_\\Gamma^2\\phi=\\phi+\\text{boundary terms}$。",
+        "它说明两个柯西型奇异算子复合时会多出边界修正项。",
+        "它的英文译名是 Poincare-Bertrand formula。"
+      ],
+      "fragmented_clues": [
+        "奇异积分 复合公式",
+        "嵌套主值积分 Riemann-Hilbert 问题 算子乘积",
+        "$S_\\Gamma^2\\phi=\\phi+\\text{boundary terms}$",
+        "柯西型奇异算子 边界修正项",
+        "Poincare-Bertrand formula"
+      ],
       "explanation_markdown": "庞加莱伯特朗公式是描述两个柯西型奇异积分复合时如何整理主值项的公式。在常用记号中有 $S_\\Gamma^2\\phi=\\phi+\\text{boundary terms}$，其中$S_\\Gamma$ 是柯西奇异积分算子。\n\n它不是单独的积分方程，而是处理奇异积分算子乘积的恒等式。在黎曼-希尔伯特问题和奇异积分方程变形中，该公式用于控制嵌套主值积分。边界积分方法中，庞加莱伯特朗公式把区域内方程转移到边界上处理，密度函数和跳跃关系决定解的表示是否正确。庞加莱伯特朗公式常和主值积分、法向导数或层势一起出现，边界光滑性会直接影响公式能否按经典意义成立。",
       "source_links": [
         {
@@ -1468,8 +2200,20 @@
     {
       "chinese_name": "沃尔泰拉级数",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非线性系统理论中的一种泛函级数。",
+        "它与记忆系统、弱非线性输入输出模型和多重积分核有关。",
+        "常用形式是 $y(t)=h_0+\\sum_{n\\ge1}\\int h_n(\\tau_1,\\ldots,\\tau_n)\\prod_j x(t-\\tau_j)\\,d\\tau_j$。",
+        "每一阶都有自己的多变量核，用来表示输入历史的高阶交互。",
+        "它的英文译名是 Volterra series。"
+      ],
+      "fragmented_clues": [
+        "非线性系统 泛函级数",
+        "记忆系统 弱非线性 输入输出 多重积分核",
+        "$y(t)=h_0+\\sum_{n\\ge1}\\int h_n(\\tau_1,\\ldots,\\tau_n)\\prod_j x(t-\\tau_j)\\,d\\tau_j$",
+        "多变量核 输入历史 高阶交互",
+        "Volterra series"
+      ],
       "explanation_markdown": "沃尔泰拉级数指用多重积分核展开非线性输入输出关系的级数。在常用记号中有 $y(t)=h_0+\\sum_{n\\ge1}\\int h_n(\\tau_1,\\ldots,\\tau_n)\\prod_{j=1}^n x(t-\\tau_j)\\,d\\tau_j$，其中$h_n$ 是 $n$ 阶核，$x$ 是输入。\n\n它与沃尔泰拉积分方程不同，沃尔泰拉级数是非线性系统的泛函展开。弱非线性系统识别和记忆系统建模常用这种多核表示。沃尔泰拉级数带有明显的顺序结构，当前值只累积过去区间的信息，所以逐次逼近和初值型方法通常更自然。在记忆材料、人口过程和时滞系统中，沃尔泰拉级数的上限结构直接表示历史对当前状态的影响。沃尔泰拉级数的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1492,8 +2236,20 @@
     {
       "chinese_name": "逐次逼近法",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分方程求解中的一种迭代方法。",
+        "它与压缩映射、Volterra 结构和 Neumann 级数有关。",
+        "迭代格式可写作 $u_{n+1}=f+\\lambda Tu_n$。",
+        "从初始函数反复代入，收敛时极限给出方程解。",
+        "它的英文译名是 successive approximation method。"
+      ],
+      "fragmented_clues": [
+        "求解 迭代方法",
+        "压缩映射 Volterra 结构 Neumann 级数",
+        "$u_{n+1}=f+\\lambda Tu_n$",
+        "初始函数 反复代入 收敛极限",
+        "successive approximation method"
+      ],
       "explanation_markdown": "逐次逼近法用来描述从初始函数出发反复代入积分方程以构造解的方法。可写作 $u_{n+1}=f+\\lambda Tu_n$，这里$T$ 是积分算子，$u_n$ 是第 $n$ 次近似。\n\n它与Neumann级数对应，但逐次逼近强调迭代过程而非闭式级数。在压缩映射或沃尔泰拉结构下，迭代序列通常收敛到唯一解。离散化逐次逼近法时，配置点、权重和基函数决定矩阵结构；第一类问题通常还需要正则化来抑制噪声。逐次逼近法的计算效果很依赖核逼近和积分求积，奇异核还要单独处理主值或端点奇性。逐次逼近法的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1516,8 +2272,20 @@
     {
       "chinese_name": "哈默斯坦方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非线性积分方程理论中的一种方程类型。",
+        "它与非线性边值问题、反应扩散模型和不动点方法有关。",
+        "常用形式是 $u(x)=f(x)+\\int_a^bK(x,t)g(t,u(t))\\,dt$。",
+        "非线性项先按点态函数作用，再由线性核积分耦合。",
+        "它的英文译名是 Hammerstein equation。"
+      ],
+      "fragmented_clues": [
+        "非线性 方程类型",
+        "非线性边值问题 反应扩散模型 不动点方法",
+        "$u(x)=f(x)+\\int_a^bK(x,t)g(t,u(t))\\,dt$",
+        "点态非线性 线性核 积分耦合",
+        "Hammerstein equation"
+      ],
       "explanation_markdown": "哈默斯坦方程刻画线性积分算子与非线性函数复合形成的积分方程。可写作 $u(x)=f(x)+\\int_a^bK(x,t)g(t,u(t))\\,dt$，这里$g$ 是非线性项，$K$ 是核。\n\n它不同于Urysohn方程，非线性通常只在 $g(t,u(t))$ 中，核不直接依赖 $u$。非线性边值问题和反应扩散模型常可化为Hammerstein方程。非线性情形下，哈默斯坦方程不仅要控制积分算子的有界性，还要处理非线性项的连续性、紧性或单调性。哈默斯坦方程常用于非线性边值问题和分岔理论，求解时会结合不动点、线性化或有限维约化。哈默斯坦方程的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1540,8 +2308,20 @@
     {
       "chinese_name": "哈默斯坦算子",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非线性积分方程理论中的一种复合算子。",
+        "它与 Nemytskii 非线性、紧线性算子和不动点理论有关。",
+        "常用形式是 $Hu=T(Nu)$。",
+        "结构上先作点态非线性，再作线性积分，因而比一般非线性核更分离。",
+        "它的英文译名是 Hammerstein operator。"
+      ],
+      "fragmented_clues": [
+        "非线性 复合算子",
+        "Nemytskii 非线性 紧线性算子 不动点理论",
+        "$Hu=T(Nu)$",
+        "点态非线性 线性积分 结构分离",
+        "Hammerstein operator"
+      ],
       "explanation_markdown": "哈默斯坦算子是先作点态非线性再作线性积分的复合算子。常写成 $Hu=T(Nu)$，其中$N$ 是Nemytskii非线性算子，$T$ 是积分算子。\n\n它与Urysohn算子相比结构更分离，便于利用紧线性算子和非线性估计。不动点理论中，Hammerstein算子是研究非线性积分方程的标准对象。非线性情形下，哈默斯坦算子不仅要控制积分算子的有界性，还要处理非线性项的连续性、紧性或单调性。哈默斯坦算子常用于非线性边值问题和分岔理论，求解时会结合不动点、线性化或有限维约化。哈默斯坦算子的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1564,8 +2344,20 @@
     {
       "chinese_name": "乌雷松方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非线性积分方程理论中的一种方程类型。",
+        "它与连续性、单调性、紧性条件和不动点存在性有关。",
+        "常用形式是 $u(x)=f(x)+\\int_a^bK(x,t,u(t))\\,dt$。",
+        "核或被积函数直接依赖未知函数值，非线性不必分离成乘积形式。",
+        "它的英文译名是 Urysohn equation。"
+      ],
+      "fragmented_clues": [
+        "非线性 方程类型",
+        "连续性 单调性 紧性 不动点存在性",
+        "$u(x)=f(x)+\\int_a^bK(x,t,u(t))\\,dt$",
+        "核 被积函数 依赖未知值 非分离乘积",
+        "Urysohn equation"
+      ],
       "explanation_markdown": "乌雷松方程指核或被积函数直接依赖未知函数值的非线性积分方程。常写成 $u(x)=f(x)+\\int_a^bK(x,t,u(t))\\,dt$，其中$K$ 同时依赖 $x,t,u(t)$。\n\n它比Hammerstein方程更一般，非线性不必分离为核乘以点态函数。连续性、单调性和紧性条件常用来证明Urysohn方程解的存在。非线性情形下，乌雷松方程不仅要控制积分算子的有界性，还要处理非线性项的连续性、紧性或单调性。乌雷松方程常用于非线性边值问题和分岔理论，求解时会结合不动点、线性化或有限维约化。乌雷松方程的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1588,8 +2380,20 @@
     {
       "chinese_name": "乌雷松算子",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非线性积分方程理论中的一种积分算子。",
+        "它与非线性核、连续紧性和数值迭代有关。",
+        "常用形式是 $Uu(x)=\\int_a^bK(x,t,u(t))\\,dt$。",
+        "它一般不满足叠加性，非线性与二变量核耦合在同一个函数中。",
+        "它的英文译名是 Urysohn operator。"
+      ],
+      "fragmented_clues": [
+        "非线性 积分算子",
+        "非线性核 连续紧性 数值迭代",
+        "$Uu(x)=\\int_a^bK(x,t,u(t))\\,dt$",
+        "无叠加性 二变量核 非线性耦合",
+        "Urysohn operator"
+      ],
       "explanation_markdown": "乌雷松算子用来描述由非线性核积分定义的算子。一个核心表达是 $Uu(x)=\\int_a^bK(x,t,u(t))\\,dt$，这里$u$ 是输入函数，$K$ 是非线性核。\n\n它与线性积分算子不同，不满足叠加性；与Hammerstein算子相比非线性和核耦合更紧。非线性不动点方法和数值迭代常围绕Urysohn算子的连续紧性展开。非线性情形下，乌雷松算子不仅要控制积分算子的有界性，还要处理非线性项的连续性、紧性或单调性。乌雷松算子常用于非线性边值问题和分岔理论，求解时会结合不动点、线性化或有限维约化。乌雷松算子的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1612,8 +2416,20 @@
     {
       "chinese_name": "李雅普诺夫施密特约化",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是分岔分析中的一种约化方法。",
+        "它与临界特征值、非线性方程和有限维分岔方程有关。",
+        "常用分解是 $F(u,\\lambda)=0,\\quad u=v+w,\\ v\\in\\ker L$。",
+        "它把未知量分成核方向和补空间方向，把主要障碍压缩到有限维。",
+        "它的英文译名是 Lyapunov-Schmidt reduction。"
+      ],
+      "fragmented_clues": [
+        "分岔分析 约化方法",
+        "临界特征值 非线性方程 有限维分岔方程",
+        "$F(u,\\lambda)=0,\\quad u=v+w,\\ v\\in\\ker L$",
+        "核方向 补空间 有限维障碍",
+        "Lyapunov-Schmidt reduction"
+      ],
       "explanation_markdown": "李雅普诺夫施密特约化刻画把无限维方程在临界点附近分解为有限维核方向和无限维补空间的方法。一个核心表达是 $F(u,\\lambda)=0,\\qquad u=v+w,\\ v\\in\\ker L$，这里$L$ 是线性化算子，$v,w$ 是分解变量。\n\n它不是积分方程专有方法，但常用于特征值附近的非线性积分方程。分岔理论中，它把主要难点压缩到有限维分岔方程。弗雷德霍姆理论里，李雅普诺夫施密特约化通常和紧算子的特征值、预解式或择一定理相连，参数落在谱上时解会失去唯一性。李雅普诺夫施密特约化把积分方程转成算子谱问题，适合分析解的存在性、分支以及参数变化时的奇异行为。",
       "source_links": [
         {
@@ -1636,8 +2452,20 @@
     {
       "chinese_name": "伴随核",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分算子理论中的一种对应核对象。",
+        "它与伴随算子、复共轭、变量交换和 Fredholm 可解条件有关。",
+        "常用关系是 $K^*(x,t)=\\overline{K(t,x)}$。",
+        "它总可由原核交换变量并取共轭得到，而自伴情形要求二者相同。",
+        "它的英文译名是 adjoint kernel。"
+      ],
+      "fragmented_clues": [
+        "对应核对象",
+        "伴随算子 复共轭 变量交换 Fredholm 可解条件",
+        "$K^*(x,t)=\\overline{K(t,x)}$",
+        "原核 交换变量 取共轭 自伴相同",
+        "adjoint kernel"
+      ],
       "explanation_markdown": "伴随核是对应伴随积分算子的核函数。在常用记号中有 $K^*(x,t)=\\overline{K(t,x)}$，其中上横线表示复共轭，$K^*$ 是伴随核。\n\n它与对称核的区别在于伴随核总可定义，而厄米核要求 $K=K^*$。弗雷德霍姆可解条件常需要非齐次项与伴随齐次方程解正交。讨论伴随核时，核的对称性、正性、奇异阶和可分性会直接影响算子的紧性、谱和可逆性。伴随核看起来只是权重函数，但它决定了积分算子属于哪一类，也决定了能否用低秩或谱方法处理。伴随核的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1660,8 +2488,20 @@
     {
       "chinese_name": "伴随方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分方程理论中的一种对应方程。",
+        "它与原方程的伴随算子、齐次解和正交相容条件有关。",
+        "常用形式是 $v(t)-\\lambda\\int_a^b\\overline{K(x,t)}v(x)\\,dx=g(t)$。",
+        "变量位置交换并取共轭后，给出非齐次可解性中的检验函数。",
+        "它的英文译名是 adjoint equation。"
+      ],
+      "fragmented_clues": [
+        "对应方程",
+        "伴随算子 齐次解 正交相容条件",
+        "$v(t)-\\lambda\\int_a^b\\overline{K(x,t)}v(x)\\,dx=g(t)$",
+        "变量交换 取共轭 检验函数",
+        "adjoint equation"
+      ],
       "explanation_markdown": "伴随方程指由原积分方程的伴随算子构成的方程。在常用记号中有 $v(t)-\\lambda\\int_a^b\\overline{K(x,t)}v(x)\\,dx=g(t)$，其中$v$ 是伴随未知函数，$\\overline{K(x,t)}$ 来自伴随核。\n\n它与原方程变量位置交换并取共轭；自伴核时二者结构一致。弗雷德霍姆择一定理中的正交条件正是由伴随方程的齐次解给出。讨论伴随方程时，核的对称性、正性、奇异阶和可分性会直接影响算子的紧性、谱和可逆性。伴随方程看起来只是权重函数，但它决定了积分算子属于哪一类，也决定了能否用低秩或谱方法处理。伴随方程的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1684,8 +2524,20 @@
     {
       "chinese_name": "正核",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分算子理论中的一种序结构核条件。",
+        "它与保正算子、人口模型、Markov 转移和主谱结论有关。",
+        "常用条件是 $K(x,t)\\ge0,\\quad f\\ge0\\Rightarrow Tf\\ge0$。",
+        "非负输入经过它仍保持非负，重点是序和正性而不是对称性。",
+        "它的英文译名是 positive kernel。"
+      ],
+      "fragmented_clues": [
+        "序结构 核条件",
+        "保正算子 人口模型 Markov 转移 主谱",
+        "$K(x,t)\\ge0,\\quad f\\ge0\\Rightarrow Tf\\ge0$",
+        "非负输入 非负输出 序 正性",
+        "positive kernel"
+      ],
       "explanation_markdown": "正核用来描述取非负值并保持函数非负性的积分核。可写作 $K(x,t)\\ge0,\\qquad f\\ge0\\Rightarrow Tf\\ge0$，这里$T$ 是由 $K$ 定义的积分算子。\n\n它与对称核关注的性质不同，正核强调序结构和保正性。人口增长、马尔可夫转移和佩龙-弗罗贝尼乌斯型谱结论常依赖正核。讨论正核时，核的对称性、正性、奇异阶和可分性会直接影响算子的紧性、谱和可逆性。正核看起来只是权重函数，但它决定了积分算子属于哪一类，也决定了能否用低秩或谱方法处理。正核的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1708,8 +2560,20 @@
     {
       "chinese_name": "佩龙弗罗贝尼乌斯定理",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是正算子谱理论中的一个主特征定理。",
+        "它与正矩阵、保正积分算子、长期分布和增长率有关。",
+        "典型关系是 $Tu=r(T)u,\\quad u>0$。",
+        "正性带来支配性的正特征向量和谱半径对应的主特征值。",
+        "它的英文译名是 Perron-Frobenius theorem。"
+      ],
+      "fragmented_clues": [
+        "正算子谱 主特征定理",
+        "正矩阵 保正积分算子 长期分布 增长率",
+        "$Tu=r(T)u,\\quad u>0$",
+        "正特征向量 谱半径 主特征值",
+        "Perron-Frobenius theorem"
+      ],
       "explanation_markdown": "佩龙弗罗贝尼乌斯定理刻画正矩阵或正算子存在主特征值和正特征向量的定理。可写作 $Tu=r(T)u,\\qquad u>0$，这里$r(T)$ 是谱半径，$u$ 是正特征函数。\n\n它与一般谱定理不同，重点是正性带来的主特征值单纯性和支配性。正核积分算子中，该定理解释长期分布和主增长率。算子观点下，佩龙弗罗贝尼乌斯定理把未知函数看成函数空间中的向量，积分核决定一个位置怎样受另一个位置影响。佩龙弗罗贝尼乌斯定理常见于边值问题、散射和反问题；核越不光滑，唯一性、正则性和数值稳定性越需要单独说明。佩龙弗罗贝尼乌斯定理的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1732,8 +2596,20 @@
     {
       "chinese_name": "第一类弗雷德霍姆方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是固定区间积分方程中的一种类型组合。",
+        "它与反问题、不适定离散系统和正则化处理有关。",
+        "常用形式是 $\\int_a^bK(x,t)u(t)\\,dt=f(x)$。",
+        "未知函数只在积分号内出现，同时积分域保持固定。",
+        "它的英文译名是 Fredholm equation of the first kind。"
+      ],
+      "fragmented_clues": [
+        "固定区间 类型组合",
+        "反问题 不适定离散系统 正则化",
+        "$\\int_a^bK(x,t)u(t)\\,dt=f(x)$",
+        "未知函数 积分号内 固定积分域",
+        "Fredholm equation of the first kind"
+      ],
       "explanation_markdown": "第一类弗雷德霍姆方程是固定积分区间且未知函数只在积分号内出现的弗雷德霍姆方程。常写成 $\\int_a^bK(x,t)u(t)\\,dt=f(x)$，其中$[a,b]$ 固定，$u$ 是未知函数。\n\n它同时具有第一类方程的不适定性和弗雷德霍姆固定域结构；不同于第一类沃尔泰拉方程的三角因果形式。反问题离散后常形成病态线性系统，需要正则化处理。弗雷德霍姆理论里，第一类弗雷德霍姆方程通常和紧算子的特征值、预解式或择一定理相连，参数落在谱上时解会失去唯一性。第一类弗雷德霍姆方程把积分方程转成算子谱问题，适合分析解的存在性、分支以及参数变化时的奇异行为。",
       "source_links": [
         {
@@ -1756,8 +2632,20 @@
     {
       "chinese_name": "第二类弗雷德霍姆方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是固定区间积分方程中的一种类型组合。",
+        "它与行列式、预解核、择一定理和稳定求解有关。",
+        "常用形式是 $u(x)-\\lambda\\int_a^bK(x,t)u(t)\\,dt=f(x)$。",
+        "直接未知项与固定区间积分项并存，恒等项改善可逆性。",
+        "它的英文译名是 Fredholm equation of the second kind。"
+      ],
+      "fragmented_clues": [
+        "固定区间 类型组合",
+        "行列式 预解核 择一定理 稳定求解",
+        "$u(x)-\\lambda\\int_a^bK(x,t)u(t)\\,dt=f(x)$",
+        "直接未知项 固定区间积分项 恒等项",
+        "Fredholm equation of the second kind"
+      ],
       "explanation_markdown": "第二类弗雷德霍姆方程指固定积分区间上含直接未知项的弗雷德霍姆方程。常写成 $u(x)-\\lambda\\int_a^bK(x,t)u(t)\\,dt=f(x)$，其中$u(x)$ 是直接项，$K$ 是固定域核。\n\n它不同于第一类弗雷德霍姆方程，恒等项改善稳定性；也不同于沃尔泰拉型的变上限结构。弗雷德霍姆行列式、预解核和择一定理主要围绕这种形式展开。弗雷德霍姆理论里，第二类弗雷德霍姆方程通常和紧算子的特征值、预解式或择一定理相连，参数落在谱上时解会失去唯一性。第二类弗雷德霍姆方程把积分方程转成算子谱问题，适合分析解的存在性、分支以及参数变化时的奇异行为。",
       "source_links": [
         {
@@ -1780,8 +2668,20 @@
     {
       "chinese_name": "第一类沃尔泰拉方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变上限积分方程中的一种类型组合。",
+        "它与因果三角结构、历史数据和微分化转换有关。",
+        "常用形式是 $\\int_a^xK(x,t)u(t)\\,dt=f(x)$。",
+        "未知函数只在历史积分内出现，若对角核非零常可转为含直接项的形式。",
+        "它的英文译名是 Volterra equation of the first kind。"
+      ],
+      "fragmented_clues": [
+        "变上限 类型组合",
+        "因果三角结构 历史数据 微分化转换",
+        "$\\int_a^xK(x,t)u(t)\\,dt=f(x)$",
+        "未知函数 历史积分 对角核 非零",
+        "Volterra equation of the first kind"
+      ],
       "explanation_markdown": "第一类沃尔泰拉方程用来描述变上限积分中未知函数只在积分号内出现的方程。一个核心表达是 $\\int_a^xK(x,t)u(t)\\,dt=f(x)$，这里$t\\le x$，$u$ 是未知函数。\n\n它与第一类弗雷德霍姆方程相比有因果三角结构，但仍可能因缺少直接项而不稳定。若 $K(x,x)$ 不为零，常可微分化为第二类沃尔泰拉方程。第一类沃尔泰拉方程带有明显的顺序结构，当前值只累积过去区间的信息，所以逐次逼近和初值型方法通常更自然。在记忆材料、人口过程和时滞系统中，第一类沃尔泰拉方程的上限结构直接表示历史对当前状态的影响。第一类沃尔泰拉方程的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1804,8 +2704,20 @@
     {
       "chinese_name": "第二类沃尔泰拉方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是变上限积分方程中的一种类型组合。",
+        "它与历史变量、逐次逼近和唯一解存在有关。",
+        "常用形式是 $u(x)-\\lambda\\int_a^xK(x,t)u(t)\\,dt=f(x)$。",
+        "直接未知项与历史积分项同时出现，连续核下通常更稳定。",
+        "它的英文译名是 Volterra equation of the second kind。"
+      ],
+      "fragmented_clues": [
+        "变上限 类型组合",
+        "历史变量 逐次逼近 唯一解",
+        "$u(x)-\\lambda\\int_a^xK(x,t)u(t)\\,dt=f(x)$",
+        "直接未知项 历史积分项 连续核 稳定",
+        "Volterra equation of the second kind"
+      ],
       "explanation_markdown": "第二类沃尔泰拉方程刻画变上限积分中同时含直接未知项的方程。一个核心表达是 $u(x)-\\lambda\\int_a^xK(x,t)u(t)\\,dt=f(x)$，这里$u(x)$ 是直接项，积分只含历史变量。\n\n它比第一类沃尔泰拉方程稳定，也不同于第二类弗雷德霍姆方程的全区间耦合。连续核下通常可用逐次逼近得到唯一解。第二类沃尔泰拉方程带有明显的顺序结构，当前值只累积过去区间的信息，所以逐次逼近和初值型方法通常更自然。在记忆材料、人口过程和时滞系统中，第二类沃尔泰拉方程的上限结构直接表示历史对当前状态的影响。第二类沃尔泰拉方程的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1828,8 +2740,20 @@
     {
       "chinese_name": "积分微分方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是分析数学中的一种混合型方程。",
+        "它与局部导数、非局部积分耦合、粘弹性和带记忆扩散有关。",
+        "常用形式是 ${d\\over dx}u(x)+\\int_a^bK(x,t)u(t)\\,dt=f(x)$。",
+        "同一未知函数既以导数形式出现，又通过整体积分影响当前状态。",
+        "它的英文译名是 integro-differential equation。"
+      ],
+      "fragmented_clues": [
+        "分析数学 混合型方程",
+        "局部导数 非局部积分 粘弹性 记忆扩散",
+        "${d\\over dx}u(x)+\\int_a^bK(x,t)u(t)\\,dt=f(x)$",
+        "导数形式 整体积分 当前状态",
+        "integro-differential equation"
+      ],
       "explanation_markdown": "积分微分方程是同一方程中同时含未知函数的导数和积分项。在常用记号中有 ${d\\over dx}u(x)+\\int_a^bK(x,t)u(t)\\,dt=f(x)$，其中$u'$ 是导数项，积分项给非局部耦合。\n\n它与纯积分方程不同，局部演化和全局记忆同时出现。粘弹性、人口动力学和带记忆的扩散模型常具有这种形式。积分微分方程带有明显的顺序结构，当前值只累积过去区间的信息，所以逐次逼近和初值型方法通常更自然。在记忆材料、人口过程和时滞系统中，积分微分方程的上限结构直接表示历史对当前状态的影响。积分微分方程的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1852,8 +2776,20 @@
     {
       "chinese_name": "延迟积分方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是带时滞结构的一类积分方程。",
+        "它与控制、生态、材料记忆和初始历史函数有关。",
+        "常用形式是 $u(t)=f(t)+\\int_0^tK(t,s)u(s-\\tau)\\,ds$。",
+        "积分中显式出现过去时刻，解的稳定性受延迟长度影响。",
+        "它的英文译名是 delay integral equation。"
+      ],
+      "fragmented_clues": [
+        "时滞结构 积分方程",
+        "控制 生态 材料记忆 初始历史函数",
+        "$u(t)=f(t)+\\int_0^tK(t,s)u(s-\\tau)\\,ds$",
+        "过去时刻 延迟长度 稳定性",
+        "delay integral equation"
+      ],
       "explanation_markdown": "延迟积分方程指积分项或未知函数依赖过去时刻的方程。在常用记号中有 $u(t)=f(t)+\\int_0^tK(t,s)u(s-\\tau)\\,ds$，其中$\\tau$ 是延迟，$s-\\tau$ 表示历史状态。\n\n它与普通沃尔泰拉方程相比多了显式时滞，初始历史函数也成为数据的一部分。控制、生态和材料记忆模型中，延迟会改变稳定性和解空间。延迟积分方程带有明显的顺序结构，当前值只累积过去区间的信息，所以逐次逼近和初值型方法通常更自然。在记忆材料、人口过程和时滞系统中，延迟积分方程的上限结构直接表示历史对当前状态的影响。延迟积分方程的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1876,8 +2812,20 @@
     {
       "chinese_name": "弱奇异积分方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是含可积端点奇性的积分方程类型。",
+        "它与分数微分方程、Abel 型反演和历史核有关。",
+        "常用形式是 $u(x)=f(x)+\\int_a^x{K(x,t)u(t)\\over (x-t)^\\alpha}\\,dt,\\ 0<\\alpha<1$。",
+        "核在 $t=x$ 附近发散但指数小于一，普通积分仍可定义。",
+        "它的英文译名是 weakly singular integral equation。"
+      ],
+      "fragmented_clues": [
+        "可积端点奇性 方程类型",
+        "分数微分方程 Abel 型反演 历史核",
+        "$u(x)=f(x)+\\int_a^x{K(x,t)u(t)\\over (x-t)^\\alpha}\\,dt,\\ 0<\\alpha<1$",
+        "$t=x$ 发散 指数小于一 普通积分",
+        "weakly singular integral equation"
+      ],
       "explanation_markdown": "弱奇异积分方程用来描述含可积弱奇核的积分方程。可写作 $u(x)=f(x)+\\int_a^x{K(x,t)u(t)\\over (x-t)^\\alpha}\\,dt,\\quad 0<\\alpha<1$，这里$\\alpha$ 控制弱奇性。\n\n它不同于光滑核方程，也弱于超奇异方程；积分仍可按通常意义处理。分数微分方程和Abel型反演常落入这一类。弱奇异积分方程带有明显的顺序结构，当前值只累积过去区间的信息，所以逐次逼近和初值型方法通常更自然。在记忆材料、人口过程和时滞系统中，弱奇异积分方程的上限结构直接表示历史对当前状态的影响。弱奇异积分方程的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1900,8 +2848,20 @@
     {
       "chinese_name": "超奇异积分方程",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是边界积分和奇异积分中的一种高阶奇性方程。",
+        "它与 Hadamard 有限部、裂纹力学、声学边界元和薄屏散射有关。",
+        "典型形式是 $\\operatorname{f.p.}\\int_\\Gamma {u(t)\\over (t-x)^2}\\,dt=f(x)$。",
+        "奇性强于 Cauchy 主值，通常需要有限部解释而不是普通主值。",
+        "它的英文译名是 hypersingular integral equation。"
+      ],
+      "fragmented_clues": [
+        "高阶奇性 方程",
+        "Hadamard 有限部 裂纹力学 声学边界元 薄屏散射",
+        "$\\operatorname{f.p.}\\int_\\Gamma {u(t)\\over (t-x)^2}\\,dt=f(x)$",
+        "强于 Cauchy 主值 有限部解释",
+        "hypersingular integral equation"
+      ],
       "explanation_markdown": "超奇异积分方程刻画含有强于柯西主值的奇异核并需有限部解释的方程。可写作 $\\operatorname{f.p.}\\int_\\Gamma {u(t)\\over (t-x)^2}\\,dt=f(x)$，这里$\\operatorname{f.p.}$ 表示Hadamard有限部。\n\n它比奇异积分方程更强，普通主值往往不足以定义积分。裂纹力学、声学边界元和薄屏散射中常出现超奇异算子。超奇异积分方程带有明显的顺序结构，当前值只累积过去区间的信息，所以逐次逼近和初值型方法通常更自然。在记忆材料、人口过程和时滞系统中，超奇异积分方程的上限结构直接表示历史对当前状态的影响。超奇异积分方程的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1924,8 +2884,20 @@
     {
       "chinese_name": "核逼近",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是数值积分方程中的一种算子近似策略。",
+        "它与低秩压缩、有限秩表示和快速算法有关。",
+        "常用形式是 $K(x,t)\\approx\\sum_{j=1}^n a_j(x)b_j(t)$。",
+        "先简化二变量权重本身，再把问题转成较小的代数结构。",
+        "它的英文译名是 kernel approximation。"
+      ],
+      "fragmented_clues": [
+        "数值方法 算子近似策略",
+        "低秩压缩 有限秩表示 快速算法",
+        "$K(x,t)\\approx\\sum_{j=1}^n a_j(x)b_j(t)$",
+        "二变量权重 小代数结构",
+        "kernel approximation"
+      ],
       "explanation_markdown": "核逼近是用较简单或有限维核近似原积分核的方法。常写成 $K(x,t)\\approx\\sum_{j=1}^n a_j(x)b_j(t)$，其中$a_j,b_j$ 是近似基函数。\n\n它不同于直接离散未知函数，核逼近先降低算子本身的复杂度。低秩压缩、退化核法和快速算法都依赖核逼近质量。讨论核逼近时，核的对称性、正性、奇异阶和可分性会直接影响算子的紧性、谱和可逆性。核逼近看起来只是权重函数，但它决定了积分算子属于哪一类，也决定了能否用低秩或谱方法处理。核逼近的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。因此理解核逼近还要看核的奇异性和右端项的空间，二者会影响求解方法。",
       "source_links": [
         {
@@ -1948,8 +2920,20 @@
     {
       "chinese_name": "配点法",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分方程数值解中的一种离散方法。",
+        "它与选定节点、残差消除、基函数和矩阵系统有关。",
+        "常用离散式是 $u_n(x_i)-\\lambda\\int K(x_i,t)u_n(t)\\,dt=f(x_i)$。",
+        "近似解只要求在指定点满足方程，而不是在整体平均意义下满足。",
+        "它的英文译名是 collocation method。"
+      ],
+      "fragmented_clues": [
+        "数值解 离散方法",
+        "选定节点 残差消除 基函数 矩阵系统",
+        "$u_n(x_i)-\\lambda\\int K(x_i,t)u_n(t)\\,dt=f(x_i)$",
+        "指定点 满足方程 非整体平均",
+        "collocation method"
+      ],
       "explanation_markdown": "配点法指要求近似解在选定节点上满足积分方程的数值方法。常写成 $u_n(x_i)-\\lambda\\int K(x_i,t)u_n(t)\\,dt=f(x_i)$，其中$x_i$ 是配点，$u_n$ 是近似解。\n\n它与矩量法不同，配点直接在点上消残差，矩量法要求残差与测试函数正交。节点选择会影响稳定性，正交配点常用多项式节点提高精度。离散化配点法时，配置点、权重和基函数决定矩阵结构；第一类问题通常还需要正则化来抑制噪声。配点法的计算效果很依赖核逼近和积分求积，奇异核还要单独处理主值或端点奇性。配点法的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1972,8 +2956,20 @@
     {
       "chinese_name": "矩量法",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分方程和电磁计算中的一种加权残差方法。",
+        "它与测试函数、残差正交和稠密线性系统有关。",
+        "常用条件是 $\\langle R(u_n),\\psi_i\\rangle=0$。",
+        "残差通过内积条件被平均消除，而不是逐点归零。",
+        "它的英文译名是 method of moments。"
+      ],
+      "fragmented_clues": [
+        "加权残差方法",
+        "测试函数 残差正交 稠密线性系统",
+        "$\\langle R(u_n),\\psi_i\\rangle=0$",
+        "内积条件 平均消除 非逐点归零",
+        "method of moments"
+      ],
       "explanation_markdown": "矩量法用来描述用测试函数对残差加权积分并令其为零的离散方法。一个核心表达是 $\\langle R(u_n),\\psi_i\\rangle=0$，这里$R$ 是残差，$\\psi_i$ 是测试函数。\n\n它与配点法的区别在于用积分平均消残差，而不是逐点满足方程。电磁散射和边界积分方程中，矩量法可形成稠密线性系统。离散化矩量法时，配置点、权重和基函数决定矩阵结构；第一类问题通常还需要正则化来抑制噪声。矩量法的计算效果很依赖核逼近和积分求积，奇异核还要单独处理主值或端点奇性。矩量法的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -1996,8 +2992,20 @@
     {
       "chinese_name": "尼氏特伦法",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分方程数值解中的一种求积离散方法。",
+        "它与求积节点、权重、光滑核高精度和奇异核修正有关。",
+        "常用离散式是 $u(x_i)-\\lambda\\sum_j w_jK(x_i,t_j)u(t_j)=f(x_i)$。",
+        "核心步骤是用数值求积替换积分项，从而得到代数方程组。",
+        "它的英文译名是 Nystrom method。"
+      ],
+      "fragmented_clues": [
+        "求积离散方法",
+        "求积节点 权重 光滑核 奇异核修正",
+        "$u(x_i)-\\lambda\\sum_j w_jK(x_i,t_j)u(t_j)=f(x_i)$",
+        "数值求积 积分项 代数方程组",
+        "Nystrom method"
+      ],
       "explanation_markdown": "尼氏特伦法刻画用数值求积把积分方程离散为代数方程的方法。一个核心表达是 $u(x_i)-\\lambda\\sum_j w_jK(x_i,t_j)u(t_j)=f(x_i)$，这里$w_j$ 是求积权重，$t_j$ 是求积节点。\n\n它与配点法相近但核心是替换积分为求积公式。光滑核下高阶求积可给出高精度，奇异核则需专门求积修正。离散化尼氏特伦法时，配置点、权重和基函数决定矩阵结构；第一类问题通常还需要正则化来抑制噪声。尼氏特伦法的计算效果很依赖核逼近和积分求积，奇异核还要单独处理主值或端点奇性。尼氏特伦法的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -2020,8 +3028,20 @@
     {
       "chinese_name": "退化核法",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是积分方程数值解中的一种有限秩近似方法。",
+        "它与低秩核、有限维线性方程组和算子压缩有关。",
+        "常用近似是 $K_n(x,t)=\\sum_{j=1}^n a_j(x)b_j(t)$。",
+        "未知函数通过有限个积分系数进入系统，而不是在全网格上直接展开。",
+        "它的英文译名是 degenerate kernel method。"
+      ],
+      "fragmented_clues": [
+        "有限秩近似方法",
+        "低秩核 有限维线性方程组 算子压缩",
+        "$K_n(x,t)=\\sum_{j=1}^n a_j(x)b_j(t)$",
+        "有限积分系数 非全网格展开",
+        "degenerate kernel method"
+      ],
       "explanation_markdown": "退化核法是把核替换为有限秩退化核后求解积分方程的方法。在常用记号中有 $K_n(x,t)=\\sum_{j=1}^n a_j(x)b_j(t)$，其中$K_n$ 是近似核，$n$ 是秩。\n\n它不同于一般网格离散，未知函数通过有限个积分系数进入代数系统。当原核可低秩逼近时，该方法能显著降低计算维数。讨论退化核法时，核的对称性、正性、奇异阶和可分性会直接影响算子的紧性、谱和可逆性。退化核法看起来只是权重函数，但它决定了积分算子属于哪一类，也决定了能否用低秩或谱方法处理。退化核法的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -2044,8 +3064,20 @@
     {
       "chinese_name": "正交配置法",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是谱数值方法中的一种配置离散。",
+        "它与正交多项式节点、残差方程和高精度近似有关。",
+        "常用条件是 $R(u_n)(x_i)=0,\\quad i=1,\\dots,n$。",
+        "节点和基函数来自正交结构，常比任意节点的配置更稳定。",
+        "它的英文译名是 orthogonal collocation method。"
+      ],
+      "fragmented_clues": [
+        "谱数值 配置离散",
+        "正交多项式节点 残差方程 高精度近似",
+        "$R(u_n)(x_i)=0,\\quad i=1,\\dots,n$",
+        "节点 基函数 正交结构 稳定",
+        "orthogonal collocation method"
+      ],
       "explanation_markdown": "正交配置法指在正交多项式节点上实施配点离散的方法。在常用记号中有 $R(u_n)(x_i)=0,\\quad i=1,\\dots,n$，其中$x_i$ 是正交多项式相关节点，$R$ 是残差。\n\n它与普通配点法的差别在节点和基函数选择，通常具有更好的逼近性质。沃尔泰拉方程和边值积分方程中常用它获得谱精度。离散化正交配置法时，配置点、权重和基函数决定矩阵结构；第一类问题通常还需要正则化来抑制噪声。正交配置法的计算效果很依赖核逼近和积分求积，奇异核还要单独处理主值或端点奇性。正交配置法的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -2068,8 +3100,20 @@
     {
       "chinese_name": "切比雪夫配置法",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是谱数值方法中的一种多项式配置离散。",
+        "它与端点聚集节点、光滑解快速收敛和 Runge 现象缓解有关。",
+        "常用近似是 $u_n(x)=\\sum_{j=0}^n c_jT_j(x)$。",
+        "近似函数按 $T_j$ 展开，采样点在区间端点附近更密。",
+        "它的英文译名是 Chebyshev collocation method。"
+      ],
+      "fragmented_clues": [
+        "谱数值 多项式配置离散",
+        "端点聚集节点 光滑解 快速收敛 Runge 现象",
+        "$u_n(x)=\\sum_{j=0}^n c_jT_j(x)$",
+        "$T_j$ 展开 端点加密",
+        "Chebyshev collocation method"
+      ],
       "explanation_markdown": "切比雪夫配置法用来描述使用切比雪夫节点和多项式展开的配点方法。可写作 $u_n(x)=\\sum_{j=0}^n c_jT_j(x)$，这里$T_j$ 是切比雪夫多项式，$c_j$ 是系数。\n\n它是正交配置法的一种，节点在端点附近加密，能缓解Runge现象。光滑解的积分方程中，切比雪夫配置常给出快速收敛。离散化切比雪夫配置法时，配置点、权重和基函数决定矩阵结构；第一类问题通常还需要正则化来抑制噪声。切比雪夫配置法的计算效果很依赖核逼近和积分求积，奇异核还要单独处理主值或端点奇性。切比雪夫配置法的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -2092,8 +3136,20 @@
     {
       "chinese_name": "样条配置法",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是数值积分方程中的一种分段多项式配置方法。",
+        "它与局部支撑、非均匀网格和弱奇异核自适应有关。",
+        "常用近似是 $u_h(x)=\\sum_j c_jB_j(x)$。",
+        "基函数只在局部区间起作用，适合处理局部不光滑解。",
+        "它的英文译名是 spline collocation method。"
+      ],
+      "fragmented_clues": [
+        "分段多项式 配置方法",
+        "局部支撑 非均匀网格 弱奇异核 自适应",
+        "$u_h(x)=\\sum_j c_jB_j(x)$",
+        "局部区间 局部不光滑解",
+        "spline collocation method"
+      ],
       "explanation_markdown": "样条配置法刻画用分段多项式样条近似未知函数并在节点满足方程的方法。可写作 $u_h(x)=\\sum_j c_jB_j(x)$，这里$B_j$ 是样条基函数，$c_j$ 是系数。\n\n它与全局多项式配置不同，样条具有局部支撑并适合非均匀网格。弱奇异核或局部不光滑解中，样条配置更容易做自适应加密。离散化样条配置法时，配置点、权重和基函数决定矩阵结构；第一类问题通常还需要正则化来抑制噪声。样条配置法的计算效果很依赖核逼近和积分求积，奇异核还要单独处理主值或端点奇性。样条配置法的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -2116,8 +3172,20 @@
     {
       "chinese_name": "勒让德展开",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是谱方法中的一种正交多项式表示。",
+        "它与区间问题、系数空间矩阵和多项式近似有关。",
+        "常用形式是 $u(x)=\\sum_{n=0}^\\infty c_nP_n(x)$。",
+        "基函数在标准权重下正交，适合把函数或核投影到系数序列。",
+        "它的英文译名是 Legendre expansion。"
+      ],
+      "fragmented_clues": [
+        "谱方法 正交多项式表示",
+        "区间问题 系数空间矩阵 多项式近似",
+        "$u(x)=\\sum_{n=0}^\\infty c_nP_n(x)$",
+        "标准权重 正交 系数序列投影",
+        "Legendre expansion"
+      ],
       "explanation_markdown": "勒让德展开是用勒让德多项式展开函数或核的正交级数表示。常写成 $u(x)=\\sum_{n=0}^\\infty c_nP_n(x)$，其中$P_n$ 是勒让德多项式，$c_n$ 是展开系数。\n\n它与切比雪夫展开都属正交多项式展开，但权重和节点结构不同。在区间积分方程中，勒让德展开可把算子近似为系数空间中的矩阵。离散化勒让德展开时，配置点、权重和基函数决定矩阵结构；第一类问题通常还需要正则化来抑制噪声。勒让德展开的计算效果很依赖核逼近和积分求积，奇异核还要单独处理主值或端点奇性。勒让德展开的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -2140,8 +3208,20 @@
     {
       "chinese_name": "切比雪夫展开",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是谱方法中的一种正交多项式表示。",
+        "它与高精度插值、端点聚集节点和快速衰减系数有关。",
+        "常用形式是 $u(x)=\\sum_{n=0}^\\infty c_nT_n(x)$。",
+        "使用 $T_n$ 基函数，权重和节点结构不同于 Legendre 体系。",
+        "它的英文译名是 Chebyshev expansion。"
+      ],
+      "fragmented_clues": [
+        "谱方法 正交多项式表示",
+        "高精度插值 端点聚集节点 快速衰减系数",
+        "$u(x)=\\sum_{n=0}^\\infty c_nT_n(x)$",
+        "$T_n$ 基函数 非 Legendre 体系",
+        "Chebyshev expansion"
+      ],
       "explanation_markdown": "切比雪夫展开指用切比雪夫多项式表示函数的谱展开。常写成 $u(x)=\\sum_{n=0}^\\infty c_nT_n(x)$，其中$T_n$ 是切比雪夫多项式，$c_n$ 是系数。\n\n它不同于勒让德展开，切比雪夫权重与端点聚集节点更适合高精度插值。光滑核积分方程中，展开系数快速衰减时可得到高效近似。离散化切比雪夫展开时，配置点、权重和基函数决定矩阵结构；第一类问题通常还需要正则化来抑制噪声。切比雪夫展开的计算效果很依赖核逼近和积分求积，奇异核还要单独处理主值或端点奇性。切比雪夫展开的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -2164,8 +3244,20 @@
     {
       "chinese_name": "正交多项式展开",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是谱数值方法中的一种一般展开框架。",
+        "它与加辽金离散、权函数、区间选择和矩阵简化有关。",
+        "常用形式是 $u(x)=\\sum_{n=0}^\\infty c_np_n(x),\\quad \\langle p_m,p_n\\rangle=0$。",
+        "具体基函数由权重和区间决定，正交性可减少耦合。",
+        "它的英文译名是 orthogonal polynomial expansion。"
+      ],
+      "fragmented_clues": [
+        "谱数值 一般展开框架",
+        "加辽金离散 权函数 区间选择 矩阵简化",
+        "$u(x)=\\sum_{n=0}^\\infty c_np_n(x),\\quad \\langle p_m,p_n\\rangle=0$",
+        "权重 区间 正交性 减少耦合",
+        "orthogonal polynomial expansion"
+      ],
       "explanation_markdown": "正交多项式展开用来描述用一组带权正交多项式表示未知函数或核。一个核心表达是 $u(x)=\\sum_{n=0}^\\infty c_np_n(x),\\qquad \\langle p_m,p_n\\rangle=0$，这里$p_n$ 是正交多项式，$c_n$ 是系数。\n\n它比勒让德或切比雪夫展开更一般，具体多项式由权函数和区间决定。谱方法和加辽金离散常利用正交性简化矩阵结构。离散化正交多项式展开时，配置点、权重和基函数决定矩阵结构；第一类问题通常还需要正则化来抑制噪声。正交多项式展开的计算效果很依赖核逼近和积分求积，奇异核还要单独处理主值或端点奇性。正交多项式展开的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -2188,8 +3280,20 @@
     {
       "chinese_name": "边界元法",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是边值问题数值解中的一种边界离散方法。",
+        "它与边界积分方程、稠密矩阵、散射和远场条件有关。",
+        "离散后常见形式是 $\\sum_j A_{ij}\\sigma_j=b_i$。",
+        "它只离散边界而非整个区域，常把维数降低一阶。",
+        "它的英文译名是 boundary element method。"
+      ],
+      "fragmented_clues": [
+        "边值问题 边界离散方法",
+        "边界积分方程 稠密矩阵 散射 远场条件",
+        "$\\sum_j A_{ij}\\sigma_j=b_i$",
+        "只离散边界 区域降维",
+        "boundary element method"
+      ],
       "explanation_markdown": "边界元法刻画把边值问题转化为边界积分方程并在边界上离散的数值方法。一个核心表达是 $\\sum_j A_{ij}\\sigma_j=b_i$，这里$\\sigma_j$ 是边界未知量，$A_{ij}$ 来自核积分。\n\n它与有限元法的体网格不同，边界元只离散边界但通常形成稠密矩阵。Laplace、Helmholtz和弹性问题中，降维和远场条件处理是它的优势。边界积分方法中，边界元法把区域内方程转移到边界上处理，密度函数和跳跃关系决定解的表示是否正确。边界元法常和主值积分、法向导数或层势一起出现，边界光滑性会直接影响公式能否按经典意义成立。边界元法的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -2212,8 +3316,20 @@
     {
       "chinese_name": "直接边界元法",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是边界元方法中的一种直接形式。",
+        "它与真实边界值、通量、狄利克雷数据和 Neumann 数据有关。",
+        "边界表示可简写为 $c(x)u(x)+\\int_{\\partial\\Omega}u\\,\\partial_nG=\\int_{\\partial\\Omega}G\\,\\partial_nu$。",
+        "未知量就是实际边界物理量，而不是假想层势密度。",
+        "它的英文译名是 direct boundary element method。"
+      ],
+      "fragmented_clues": [
+        "边界元 直接形式",
+        "真实边界值 通量 狄利克雷数据 Neumann 数据",
+        "$c(x)u(x)+\\int_{\\partial\\Omega}u\\,\\partial_nG=\\int_{\\partial\\Omega}G\\,\\partial_nu$",
+        "实际边界物理量 非假想密度",
+        "direct boundary element method"
+      ],
       "explanation_markdown": "直接边界元法是直接以真实边界物理量作为未知量的边界元形式。在常用记号中有 $c(x)u(x)+\\int_{\\partial\\Omega}u(y){\\partial G\\over\\partial n_y}\\,dS_y=\\int_{\\partial\\Omega}G{\\partial u\\over\\partial n}\\,dS_y$，其中$u$ 和 $\\partial u/\\partial n$ 是边界量。\n\n它与间接边界元法不同，未知量直接是边界值或通量，而不是假想层势密度。工程边值问题中，直接法便于施加狄利克雷和Neumann数据。边界积分方法中，直接边界元法把区域内方程转移到边界上处理，密度函数和跳跃关系决定解的表示是否正确。直接边界元法常和主值积分、法向导数或层势一起出现，边界光滑性会直接影响公式能否按经典意义成立。直接边界元法的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -2236,8 +3352,20 @@
     {
       "chinese_name": "间接边界元法",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是边界元方法中的一种间接形式。",
+        "它与单层或双层势表示、假想密度和跳跃关系有关。",
+        "常用表示是 $u(x)=\\int_{\\partial\\Omega}G(x,y)\\sigma(y)\\,dS_y$。",
+        "未知量不是原边界值或通量，而是势表示中的密度函数。",
+        "它的英文译名是 indirect boundary element method。"
+      ],
+      "fragmented_clues": [
+        "边界元 间接形式",
+        "单层势 双层势 假想密度 跳跃关系",
+        "$u(x)=\\int_{\\partial\\Omega}G(x,y)\\sigma(y)\\,dS_y$",
+        "非原边界值 非通量 势密度",
+        "indirect boundary element method"
+      ],
       "explanation_markdown": "间接边界元法指用单层或双层势的未知密度间接表示解的边界元形式。在常用记号中有 $u(x)=\\int_{\\partial\\Omega}G(x,y)\\sigma(y)\\,dS_y$，其中$\\sigma$ 是假想边界密度，$G$ 是基本解。\n\n它与直接边界元法的差别在未知量不是原边界物理量，而是势表示中的密度。通过跳跃关系可把边界条件转化为关于密度的积分方程。边界积分方法中，间接边界元法把区域内方程转移到边界上处理，密度函数和跳跃关系决定解的表示是否正确。间接边界元法常和主值积分、法向导数或层势一起出现，边界光滑性会直接影响公式能否按经典意义成立。间接边界元法的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -2260,8 +3388,20 @@
     {
       "chinese_name": "径向基函数法",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是无网格近似中的一种数值方法。",
+        "它与散乱数据插值、高维近似和距离依赖基函数有关。",
+        "常用近似是 $u(x)\\approx\\sum_{j=1}^n c_j\\phi(\\|x-x_j\\|)$。",
+        "基函数只看点间距离，不强依赖规则网格或坐标方向。",
+        "它的英文译名是 radial basis function method。"
+      ],
+      "fragmented_clues": [
+        "无网格近似 数值方法",
+        "散乱数据插值 高维近似 距离依赖基函数",
+        "$u(x)\\approx\\sum_{j=1}^n c_j\\phi(\\|x-x_j\\|)$",
+        "点间距离 非规则网格 非坐标方向",
+        "radial basis function method"
+      ],
       "explanation_markdown": "径向基函数法用来描述用只依赖距离的基函数近似未知函数或离散积分方程的方法。可写作 $u(x)\\approx\\sum_{j=1}^n c_j\\phi(\\|x-x_j\\|)$，这里$\\phi$ 是径向基函数，$x_j$ 是中心点。\n\n它与多项式展开不同，不强依赖规则网格和坐标方向。散乱数据插值、无网格方法和高维积分方程近似常用径向基函数。离散化径向基函数法时，配置点、权重和基函数决定矩阵结构；第一类问题通常还需要正则化来抑制噪声。径向基函数法的计算效果很依赖核逼近和积分求积，奇异核还要单独处理主值或端点奇性。径向基函数法的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -2284,8 +3424,20 @@
     {
       "chinese_name": "快速多极方法",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是核相互作用计算中的一种快速算法。",
+        "它与边界元加速、N 体求和、Laplace 核和 Helmholtz 核有关。",
+        "常用近似可写作 $\\sum_j K(x_i,y_j)q_j\\approx \\text{local expansion}$。",
+        "远距离相互作用被多极或局部展开压缩，从而加速稠密矩阵乘法。",
+        "它的英文译名是 fast multipole method。"
+      ],
+      "fragmented_clues": [
+        "核相互作用 快速算法",
+        "边界元加速 N 体求和 Laplace 核 Helmholtz 核",
+        "$\\sum_j K(x_i,y_j)q_j\\approx \\text{local expansion}$",
+        "远距离相互作用 多极展开 局部展开 稠密矩阵",
+        "fast multipole method"
+      ],
       "explanation_markdown": "快速多极方法刻画把远距离核相互作用用多极展开压缩的快速算法。可写作 $\\sum_j K(x_i,y_j)q_j\\approx \\text{local expansion}$，这里$q_j$ 是源强度，$K$ 是核。\n\n它不是积分方程本身，而是加速边界元或N体求和的算法。对Laplace、Helmholtz和库仑型核，可把稠密矩阵乘法显著加速。离散化快速多极方法时，配置点、权重和基函数决定矩阵结构；第一类问题通常还需要正则化来抑制噪声。快速多极方法的计算效果很依赖核逼近和积分求积，奇异核还要单独处理主值或端点奇性。快速多极方法的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -2308,8 +3460,20 @@
     {
       "chinese_name": "正则化",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是不适定问题中的一种稳定化方法。",
+        "它与噪声数据、先验约束、反演和数据恢复有关。",
+        "常用形式是 $\\min_u\\|Tu-f^\\delta\\|^2+\\alpha\\Omega(u)$。",
+        "它在拟合残差和解的惩罚项之间取平衡，抑制噪声放大。",
+        "它的英文译名是 regularization。"
+      ],
+      "fragmented_clues": [
+        "不适定问题 稳定化方法",
+        "噪声数据 先验约束 反演 数据恢复",
+        "$\\min_u\\|Tu-f^\\delta\\|^2+\\alpha\\Omega(u)$",
+        "拟合残差 惩罚项 平衡 噪声抑制",
+        "regularization"
+      ],
       "explanation_markdown": "正则化是通过加入先验约束或惩罚项稳定不适定积分方程的方法。常写成 $\\min_u\\|Tu-f^\\delta\\|^2+\\alpha\\Omega(u)$，其中$f^\\delta$ 是含噪数据，$\\alpha$ 是正则化参数。\n\n它不同于普通离散化，正则化直接处理噪声放大和非唯一性。第一类方程、反卷积和Radon反演常需要正则化。处理不适定问题时，正则化要在残差和解的平滑度之间取平衡，参数选择会改变恢复出的细节。正则化常用于反演和数据恢复；噪声水平、先验约束和算子谱衰减共同决定能恢复多少信息。正则化的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -2332,8 +3496,20 @@
     {
       "chinese_name": "蒂霍诺夫正则化",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是反问题中一种二次惩罚稳定化方法。",
+        "它与平滑先验、正规方程和不适定第一类模型有关。",
+        "常用形式是 $\\min_u\\|Tu-f^\\delta\\|^2+\\alpha\\|Lu\\|^2$。",
+        "惩罚项通常让恢复结果更平滑，参数控制数据拟合与平滑强度。",
+        "它的英文译名是 Tikhonov regularization。"
+      ],
+      "fragmented_clues": [
+        "反问题 二次惩罚 稳定化",
+        "平滑先验 正规方程 不适定第一类模型",
+        "$\\min_u\\|Tu-f^\\delta\\|^2+\\alpha\\|Lu\\|^2$",
+        "恢复结果 平滑 参数控制",
+        "Tikhonov regularization"
+      ],
       "explanation_markdown": "蒂霍诺夫正则化指以二次惩罚稳定反问题的经典正则化方法。常写成 $\\min_u\\|Tu-f^\\delta\\|^2+\\alpha\\|Lu\\|^2$，其中$L$ 是惩罚算子，$\\alpha>0$ 控制平滑强度。\n\n它与全变差正则化不同，Tikhonov项通常产生较平滑的解。正规方程为 $(T^*T+\\alpha L^*L)u=T^*f^\\delta$，便于数值求解。处理不适定问题时，蒂霍诺夫正则化要在残差和解的平滑度之间取平衡，参数选择会改变恢复出的细节。蒂霍诺夫正则化常用于反演和数据恢复；噪声水平、先验约束和算子谱衰减共同决定能恢复多少信息。蒂霍诺夫正则化的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -2356,8 +3532,20 @@
     {
       "chinese_name": "正则化参数",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是正则化方法中的一种控制量。",
+        "它与残差大小、惩罚强度、噪声水平和选参准则有关。",
+        "目标式中常见为 $\\|Tu_\\alpha-f^\\delta\\|^2+\\alpha\\Omega(u_\\alpha)$。",
+        "取值过小会放大噪声，过大则会过度平滑。",
+        "它的英文译名是 regularization parameter。"
+      ],
+      "fragmented_clues": [
+        "正则化 控制量",
+        "残差大小 惩罚强度 噪声水平 选参准则",
+        "$\\|Tu_\\alpha-f^\\delta\\|^2+\\alpha\\Omega(u_\\alpha)$",
+        "过小 噪声放大 过大 过度平滑",
+        "regularization parameter"
+      ],
       "explanation_markdown": "正则化参数用来描述平衡数据拟合和惩罚强度的正数。一个核心表达是 $\\|Tu_\\alpha-f^\\delta\\|^2+\\alpha\\Omega(u_\\alpha)$，这里$\\alpha$ 是正则化参数，$u_\\alpha$ 是正则化解。\n\n参数过小会放大噪声，过大又会过度平滑；它不是方程原有的谱参数。Morozov原则、L曲线和交叉验证都用于选择该参数。处理不适定问题时，正则化参数要在残差和解的平滑度之间取平衡，参数选择会改变恢复出的细节。正则化参数常用于反演和数据恢复；噪声水平、先验约束和算子谱衰减共同决定能恢复多少信息。正则化参数的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {
@@ -2380,8 +3568,20 @@
     {
       "chinese_name": "莫罗佐夫原则",
       "source_file": "words/数学/普通模式/integral_equations_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是反问题正则化中的一种参数选择原则。",
+        "它与噪声界、残差匹配和避免过拟合有关。",
+        "常用条件是 $\\|Tu_\\alpha-f^\\delta\\|=\\tau\\delta$。",
+        "它让计算残差与数据误差水平同量级，而不是追求残差越小越好。",
+        "它的英文译名是 Morozov discrepancy principle。"
+      ],
+      "fragmented_clues": [
+        "反问题正则化 参数选择原则",
+        "噪声界 残差匹配 避免过拟合",
+        "$\\|Tu_\\alpha-f^\\delta\\|=\\tau\\delta$",
+        "计算残差 数据误差 同量级",
+        "Morozov discrepancy principle"
+      ],
       "explanation_markdown": "莫罗佐夫原则刻画按噪声水平选择正则化参数的差异原则。一个核心表达是 $\\|Tu_\\alpha-f^\\delta\\|=\\tau\\delta$，这里$\\delta$ 是噪声界，$\\tau>1$ 是安全系数。\n\n它与先验选参不同，直接让残差大小匹配数据误差水平。在不适定积分方程中，该原则避免把噪声当作真实信号过度拟合。处理不适定问题时，莫罗佐夫原则要在残差和解的平滑度之间取平衡，参数选择会改变恢复出的细节。莫罗佐夫原则常用于反演和数据恢复；噪声水平、先验约束和算子谱衰减共同决定能恢复多少信息。莫罗佐夫原则的适用范围要由核、积分域和函数空间共同限定，参数或边界条件改变后，解的性质也会改变。",
       "source_links": [
         {

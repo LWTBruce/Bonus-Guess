@@ -3,6 +3,7 @@ import tkinter as tk
 
 
 UI_SCALE = 1.0
+BUTTON_SOUND_CALLBACK = None
 
 
 def set_ui_scale(scale):
@@ -16,6 +17,11 @@ def set_ui_scale(scale):
 
 def scaled_int(value):
     return max(1, int(round(value * UI_SCALE)))
+
+
+def set_button_sound_callback(callback):
+    global BUTTON_SOUND_CALLBACK
+    BUTTON_SOUND_CALLBACK = callback
 
 
 class HoverButton(tk.Frame):
@@ -53,6 +59,11 @@ class HoverButton(tk.Frame):
 
     def _click(self, _event):
         if self.enabled:
+            if BUTTON_SOUND_CALLBACK:
+                try:
+                    BUTTON_SOUND_CALLBACK(self.text, self.accent)
+                except Exception:
+                    pass
             self.command()
 
     def disable(self, text=None):

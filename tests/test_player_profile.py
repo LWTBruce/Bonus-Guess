@@ -52,6 +52,37 @@ class PlayerProfileTests(unittest.TestCase):
         self.assertTrue(enabled["admin_reveal_hidden"])
         self.assertFalse(disabled["admin_reveal_hidden"])
 
+    def test_audio_volumes_are_normalized(self):
+        settings = player_profile.normalize_player_settings({"music_volume": 1.5, "sfx_volume": "-0.25"})
+        fallback = player_profile.normalize_player_settings({"music_volume": "bad", "sfx_volume": None})
+
+        self.assertEqual(settings["music_volume"], 1.0)
+        self.assertEqual(settings["sfx_volume"], 0.0)
+        self.assertEqual(fallback["music_volume"], player_profile.DEFAULT_PLAYER_SETTINGS["music_volume"])
+        self.assertEqual(fallback["sfx_volume"], player_profile.DEFAULT_PLAYER_SETTINGS["sfx_volume"])
+
+    def test_home_music_id_is_normalized(self):
+        valid = player_profile.normalize_player_settings({"home_music_id": "menu_loop"})
+        fallback = player_profile.normalize_player_settings({"home_music_id": "missing"})
+
+        self.assertEqual(valid["home_music_id"], "menu_loop")
+        self.assertEqual(fallback["home_music_id"], player_profile.DEFAULT_PLAYER_SETTINGS["home_music_id"])
+
+    def test_sfx_choices_are_normalized(self):
+        settings = player_profile.normalize_player_settings({
+            "sfx_choices": {
+                "click": "success",
+                "confirm": "fail",
+                "missing_event": "warning",
+                "hint": "missing_sound",
+            }
+        })
+
+        self.assertEqual(settings["sfx_choices"]["click"], "success")
+        self.assertEqual(settings["sfx_choices"]["confirm"], "fail")
+        self.assertEqual(settings["sfx_choices"]["hint"], "hint")
+        self.assertNotIn("missing_event", settings["sfx_choices"])
+
 
 if __name__ == "__main__":
     unittest.main()

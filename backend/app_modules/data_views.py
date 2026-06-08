@@ -3,6 +3,7 @@ from ._shared import *
 
 class DataViewsMixin:
     def on_close(self):
+        self.shutdown_audio()
         if self.tutorial_active:
             self.game_active = False
             self.record_saved = True
@@ -31,20 +32,31 @@ class DataViewsMixin:
         completed[achievement_id] = (when or datetime.now()).isoformat(timespec="seconds")
         write_achievements(self.achievements)
 
-    def refresh_achievements(self):
+    def refresh_achievements(self, force=False):
         if self.is_spectating() or self.tutorial_active:
             self.achievements = read_achievements()
             return
         self.achievements = read_achievements()
+        all_records = load_record_entries()
+        rank_progress = read_rank_progress()
+        try:
+            progress_signature = json.dumps(rank_progress.get("subjects", {}), sort_keys=True, ensure_ascii=False)
+        except (TypeError, ValueError):
+            progress_signature = ""
+        refresh_signature = (record_entries_signature(), progress_signature)
+        if not force and getattr(self, "_achievements_refresh_signature", None) == refresh_signature:
+            return
         completed = self.achievements.setdefault("completed", {})
+        changed = False
 
         def mark(achievement_id, record=None):
+            nonlocal changed
             if achievement_id in completed:
                 return
             when = record_datetime(record) if record else datetime.now()
             completed[achievement_id] = when.isoformat(timespec="seconds")
+            changed = True
 
-        all_records = load_record_entries()
         abandoned_records = [record for record in all_records if is_abandoned_record(record)]
         records = [record for record in all_records if is_counted_record(record)]
         records.sort(key=record_datetime)
@@ -118,7 +130,6 @@ class DataViewsMixin:
             if distinct_count >= 15:
                 mark("rank_distinct_15", record)
 
-        rank_progress = read_rank_progress()
         progress_passes = [
             (subject_key, rank_id)
             for subject_key, info in (rank_progress.get("subjects") or {}).items()
@@ -343,9 +354,12 @@ class DataViewsMixin:
             if index >= 1000:
                 mark("completed_1000", record)
 
-        write_achievements(self.achievements)
+        if changed:
+            write_achievements(self.achievements)
+        self._achievements_refresh_signature = refresh_signature
 
     def show_history(self):
+        self.play_music("archive")
         self.clear()
         self._topbar("历史记录", self.show_home)
         frame = tk.Frame(self.container, bg="#111725")
@@ -353,7 +367,7 @@ class DataViewsMixin:
         self._start_backdrop("particles", frame)
 
         records = load_record_entries()
-        summary = summarize_records(records)
+        summary = load_record_summary()
         counted = summary["records"]
 
         top = tk.Frame(frame, bg="#182033", highlightbackground="#3b4560", highlightthickness=1)
@@ -510,7 +524,7 @@ class DataViewsMixin:
         paths = account_paths(account["id"])
         records = load_record_entries(paths["record_dir"])
         achievements_data = read_achievements(paths["achievements_file"])
-        summary = summarize_records(records, achievements_data=achievements_data)
+        summary = load_record_summary(paths["record_dir"], achievements_data=achievements_data)
         record_files = self.admin_json_files(paths["record_dir"], include_state_files=False)
         profile_files = self.admin_json_files(paths["profile_dir"])
         return {
@@ -529,6 +543,7 @@ class DataViewsMixin:
             messagebox.showerror("没有权限", "只有管理员账号可以查看后台数据。")
             self.show_home()
             return
+        self.play_music("archive")
         self.clear()
         self._topbar("后台数据", self.show_settings)
         frame = tk.Frame(self.container, bg="#111725")
@@ -569,6 +584,345 @@ class DataViewsMixin:
         scroll = self.make_scroll_frame(frame)
         for snapshot in snapshots:
             self.render_admin_account_row(scroll, snapshot)
+
+    def show_feedback_admin(self):
+        admin_account = self.spectator_admin_account if self.is_spectating() else self.current_account
+        if not is_admin_account(admin_account):
+            messagebox.showerror("没有权限", "只有管理员账号可以查看玩家建议。")
+            self.show_home()
+            return
+        self.play_music("archive")
+        self.clear()
+        self._topbar("玩家意见", self.show_settings)
+        frame = tk.Frame(self.container, bg="#111725")
+        frame.pack(fill="both", expand=True, padx=30, pady=(0, 24))
+        self._start_backdrop("grid", frame)
+        data = load_feedback()
+        items = data.get("items", [])
+        pending_count = sum(1 for item in items if item.get("status") == "pending")
+        fixed_count = sum(1 for item in items if item.get("fixed"))
+        header = tk.Frame(frame, bg="#182033", highlightbackground="#3b4560", highlightthickness=1)
+        header.pack(fill="x", pady=(0, 14))
+        term_count = sum(1 for item in items if item.get("feedback_type") == "term")
+        cards = [
+            ("意见总数", str(len(items))),
+            ("待处理", str(pending_count)),
+            ("已处理", str(max(0, len(items) - pending_count))),
+            ("词条反馈", str(term_count)),
+            ("已改", str(fixed_count)),
+        ]
+        for index, (name, value) in enumerate(cards):
+            cell = tk.Frame(header, bg="#182033")
+            cell.grid(row=0, column=index, sticky="ew", padx=18, pady=12)
+            header.grid_columnconfigure(index, weight=1)
+            tk.Label(cell, text=name, fg="#8fb6ff", bg="#182033", font=("Microsoft YaHei UI", 11, "bold")).pack(anchor="w")
+            tk.Label(cell, text=value, fg="#fff2bd", bg="#182033", font=("Consolas", 19, "bold")).pack(anchor="w", pady=(3, 0))
+        path_line = f"后台文件：{self.project_path_text(feedback_file_path())}"
+        tk.Label(
+            frame,
+            text=path_line,
+            fg="#9ca8c7",
+            bg="#111725",
+            justify="left",
+            font=("Consolas", 10, "bold"),
+        ).pack(anchor="w", pady=(0, 10))
+        tk.Label(
+            frame,
+            text="后续修复完成后，可以在该文件里把对应条目的 fixed 改为 true，并补充 fixed_note；自动处理时也会优先读取这个文件。下方意见已按日期分类。",
+            fg="#c8d2ee",
+            bg="#111725",
+            wraplength=1180,
+            justify="left",
+            font=("Microsoft YaHei UI", 11, "bold"),
+        ).pack(anchor="w", pady=(0, 12))
+        scroll = self.make_scroll_frame(frame)
+        if not items:
+            tk.Label(scroll, text="暂无玩家建议。", fg="#64708f", bg="#111725", font=("Microsoft YaHei UI", 14, "bold")).pack(anchor="w", pady=18)
+            return
+        for date_label, group_items in self.feedback_items_by_date(items):
+            tk.Label(
+                scroll,
+                text=date_label,
+                fg="#fff2bd",
+                bg="#111725",
+                font=("Microsoft YaHei UI", 16, "bold"),
+            ).pack(anchor="w", pady=(18, 6))
+            for item in group_items:
+                self.render_feedback_admin_row(scroll, item)
+
+    def feedback_items_by_date(self, items):
+        groups = []
+        grouped = {}
+        for item in items:
+            created = str(item.get("created_at") or "")
+            date_label = created[:10] if len(created) >= 10 else "未知日期"
+            if date_label not in grouped:
+                grouped[date_label] = []
+                groups.append(date_label)
+            grouped[date_label].append(item)
+        return [(date_label, grouped[date_label]) for date_label in groups]
+
+    def feedback_player_display_name(self, item):
+        return item.get("player_name") or item.get("player_nickname") or "未知玩家"
+
+    def feedback_player_account(self, player_id):
+        player_id = str(player_id or "").strip()
+        if not player_id:
+            return None
+        return next((account for account in list_public_accounts() if account.get("id") == player_id), None)
+
+    def render_feedback_admin_row(self, parent, item):
+        row = tk.Frame(parent, bg="#182033", highlightbackground="#30384e", highlightthickness=1)
+        row.pack(fill="x", pady=7)
+        content = tk.Frame(row, bg="#182033")
+        content.pack(side="left", fill="both", expand=True, padx=14, pady=12)
+        actions = tk.Frame(row, bg="#182033")
+        actions.pack(side="right", fill="y", padx=(8, 14), pady=12)
+        status = item.get("status_label") or item.get("status") or "待处理"
+        fixed = "是" if item.get("fixed") else "否"
+        title_bar = tk.Frame(content, bg="#182033")
+        title_bar.pack(anchor="w", fill="x")
+        created_text = f"{item.get('created_at', '')}    来自玩家："
+        tk.Label(
+            title_bar,
+            text=created_text,
+            fg="#fff2bd",
+            bg="#182033",
+            justify="left",
+            anchor="w",
+            font=("Microsoft YaHei UI", 12, "bold"),
+        ).pack(side="left")
+        player_id = item.get("player_id") or ""
+        player_name = self.feedback_player_display_name(item)
+        player_link = tk.Label(
+            title_bar,
+            text=player_name,
+            fg="#8fb6ff",
+            bg="#182033",
+            cursor="hand2",
+            justify="left",
+            anchor="w",
+            font=("Microsoft YaHei UI", 12, "bold underline"),
+        )
+        player_link.pack(side="left")
+        player_link.bind("<Button-1>", lambda _event, player_id=player_id, player_name=player_name: self.show_feedback_player_profile(player_id, player_name))
+        player_link.bind("<Enter>", lambda _event: player_link.configure(fg="#fff2bd"))
+        player_link.bind("<Leave>", lambda _event: player_link.configure(fg="#8fb6ff"))
+        feedback_type = "词条反馈" if item.get("feedback_type") == "term" else "玩家建议"
+        if item.get("feedback_type") == "term" and item.get("term_action_label"):
+            feedback_type += f" / {item.get('term_action_label')}"
+        tk.Label(
+            title_bar,
+            text=f"  ({player_id or '无账号ID'})    类型：{feedback_type}    采纳状态：{status}    是否已改：{fixed}",
+            fg="#fff2bd",
+            bg="#182033",
+            justify="left",
+            anchor="w",
+            font=("Microsoft YaHei UI", 12, "bold"),
+        ).pack(side="left")
+        tk.Label(
+            content,
+            text=item.get("suggestion") or "（空）",
+            fg="#dce6ff",
+            bg="#182033",
+            justify="left",
+            wraplength=930,
+            font=("Microsoft YaHei UI", 11),
+        ).pack(anchor="w", fill="x", pady=(8, 0))
+        if item.get("feedback_type") == "term":
+            detail_lines = [
+                f"模式：{item.get('mode_context') or '未知'}",
+                f"词库：{item.get('source_label') or '未知'}",
+                f"词条：{item.get('term_name') or '未知'}",
+                f"操作：{item.get('term_action_label') or item.get('term_action') or '未知'}",
+            ]
+            if item.get("proposed_change"):
+                detail_lines.append(f"建议改为：{item.get('proposed_change')}")
+            if item.get("source_file"):
+                detail_lines.append(f"来源文件：{item.get('source_file')}")
+            if item.get("record_path"):
+                detail_lines.append(f"作答记录：{item.get('record_path')}")
+            tk.Label(
+                content,
+                text="\n".join(detail_lines),
+                fg="#9ca8c7",
+                bg="#182033",
+                justify="left",
+                wraplength=930,
+                font=("Microsoft YaHei UI", 10, "bold"),
+            ).pack(anchor="w", fill="x", pady=(8, 0))
+        if item.get("modification"):
+            tk.Label(
+                content,
+                text=f"修改建议：{item.get('modification')}",
+                fg="#9ff2b2",
+                bg="#182033",
+                justify="left",
+                wraplength=930,
+                font=("Microsoft YaHei UI", 10, "bold"),
+            ).pack(anchor="w", fill="x", pady=(8, 0))
+        if item.get("fixed_note"):
+            tk.Label(
+                content,
+                text=f"修复备注：{item.get('fixed_note')}",
+                fg="#8fb6ff",
+                bg="#182033",
+                justify="left",
+                wraplength=930,
+                font=("Microsoft YaHei UI", 10, "bold"),
+            ).pack(anchor="w", fill="x", pady=(6, 0))
+        feedback_id = item.get("id")
+        HoverButton(actions, "同意", lambda feedback_id=feedback_id: self.review_feedback(feedback_id, "accepted"), width=112, height=42, accent="#9ff2b2").pack(pady=(0, 7))
+        HoverButton(actions, "拒绝", lambda feedback_id=feedback_id: self.review_feedback(feedback_id, "rejected"), width=112, height=42, accent="#ff9b89").pack(pady=7)
+        HoverButton(actions, "修改", lambda item=item: self.show_feedback_modify_dialog(item), width=112, height=42, accent="#ffcf8f").pack(pady=7)
+
+    def show_feedback_player_profile(self, player_id, fallback_name=""):
+        admin_account = self.spectator_admin_account if self.is_spectating() else self.current_account
+        if not is_admin_account(admin_account):
+            messagebox.showerror("没有权限", "只有管理员账号可以查看玩家信息。")
+            return
+        account = self.feedback_player_account(player_id)
+        if not account:
+            messagebox.showinfo("玩家信息", f"找不到玩家账号：{fallback_name or player_id or '未知玩家'}")
+            return
+        snapshot = self.account_admin_snapshot(account)
+        summary = snapshot["summary"]
+        paths = snapshot["paths"]
+        popup = tk.Toplevel(self)
+        popup.title(f"玩家信息 - {account.get('nickname') or account.get('id')}")
+        popup.configure(bg="#111725")
+        popup.geometry("700x560")
+        popup.minsize(600, 470)
+        popup.transient(self)
+        popup.grab_set()
+        panel = tk.Frame(popup, bg="#182033", highlightbackground="#3b4560", highlightthickness=1)
+        panel.pack(fill="both", expand=True, padx=18, pady=18)
+        title = f"{account.get('nickname') or '未知玩家'}"
+        if account.get("is_admin"):
+            title += "  管理员"
+        tk.Label(panel, text=title, fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 22, "bold")).pack(anchor="w", padx=24, pady=(20, 10))
+        row = tk.Frame(panel, bg="#182033")
+        row.pack(side="bottom", anchor="w", fill="x", padx=24, pady=(0, 20))
+        lines = [
+            f"账号 ID：{account.get('id') or '未知'}",
+            f"创建时间：{account.get('created_at') or '未知'}",
+            f"最近登录：{account.get('last_login_at') or '未记录'}",
+            f"Rating：{format_rating(summary['rating'])}",
+            f"答题记录：{summary['total_count']} 条",
+            f"总积分：{format_score(summary['total_score'])}",
+            f"成就：{summary['achievement_count']}/{summary['achievement_total']}",
+            f"record：{self.project_path_text(paths['record_dir'])}",
+            f"profile：{self.project_path_text(paths['profile_dir'])}",
+        ]
+        info_shell = tk.Frame(panel, bg="#182033")
+        info_shell.pack(fill="both", expand=True, padx=24, pady=(0, 16))
+        info_text = tk.Text(
+            info_shell,
+            height=10,
+            wrap="word",
+            fg="#dce6ff",
+            bg="#101827",
+            relief="flat",
+            font=("Microsoft YaHei UI", 12, "bold"),
+        )
+        info_text.configure(highlightthickness=1, highlightbackground="#30384e", highlightcolor="#8fb6ff")
+        info_scrollbar = tk.Scrollbar(info_shell, orient="vertical", command=info_text.yview)
+        info_text.configure(yscrollcommand=info_scrollbar.set)
+        info_text.insert("1.0", "\n".join(lines))
+        info_text.configure(state="disabled")
+        info_text.pack(side="left", fill="both", expand=True)
+        info_scrollbar.pack(side="right", fill="y", padx=(8, 0))
+
+        def spectate_home():
+            popup.destroy()
+            self.enter_spectator_mode(account)
+
+        def spectate_history():
+            popup.destroy()
+            self.enter_spectator_history(account)
+
+        HoverButton(row, "旁观主页", spectate_home, width=132, height=48, accent="#9ff2b2").grid(row=0, column=0, padx=(0, 10))
+        HoverButton(row, "只看记录", spectate_history, width=132, height=48, accent="#8fb6ff").grid(row=0, column=1, padx=10)
+        HoverButton(row, "关闭", popup.destroy, width=112, height=48, accent="#ff9b89").grid(row=0, column=2, padx=10)
+
+    def review_feedback(self, feedback_id, status):
+        admin_account = self.spectator_admin_account if self.is_spectating() else self.current_account
+        if not is_admin_account(admin_account):
+            messagebox.showerror("没有权限", "只有管理员账号可以处理玩家建议。")
+            return
+        try:
+            update_feedback_status(feedback_id, status, admin_account)
+        except ValueError as exc:
+            messagebox.showerror("处理失败", str(exc))
+            return
+        self.show_feedback_admin()
+
+    def show_feedback_modify_dialog(self, item):
+        admin_account = self.spectator_admin_account if self.is_spectating() else self.current_account
+        if not is_admin_account(admin_account):
+            messagebox.showerror("没有权限", "只有管理员账号可以处理玩家建议。")
+            return
+        popup = tk.Toplevel(self)
+        popup.title("修改建议")
+        popup.configure(bg="#111725")
+        popup.geometry("700x540")
+        popup.minsize(600, 460)
+        popup.transient(self)
+        popup.grab_set()
+        panel = tk.Frame(popup, bg="#182033", highlightbackground="#3b4560", highlightthickness=1)
+        panel.pack(fill="both", expand=True, padx=18, pady=18)
+        tk.Label(panel, text="填写修改建议", fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 22, "bold")).pack(anchor="w", padx=22, pady=(18, 8))
+        row = tk.Frame(panel, bg="#182033")
+        row.pack(side="bottom", anchor="w", fill="x", padx=22, pady=(0, 18))
+        preview_shell = tk.Frame(panel, bg="#182033")
+        preview_shell.pack(fill="x", padx=22, pady=(0, 12))
+        preview = tk.Text(
+            preview_shell,
+            height=4,
+            wrap="word",
+            fg="#c8d2ee",
+            bg="#101827",
+            relief="flat",
+            font=("Microsoft YaHei UI", 10, "bold"),
+        )
+        preview.configure(highlightthickness=1, highlightbackground="#30384e", highlightcolor="#8fb6ff")
+        preview_scrollbar = tk.Scrollbar(preview_shell, orient="vertical", command=preview.yview)
+        preview.configure(yscrollcommand=preview_scrollbar.set)
+        preview.insert("1.0", item.get("suggestion") or "（空）")
+        preview.configure(state="disabled")
+        preview.pack(side="left", fill="x", expand=True)
+        preview_scrollbar.pack(side="right", fill="y", padx=(8, 0))
+        note_box = tk.Text(
+            panel,
+            height=9,
+            wrap="word",
+            fg="#fff8dc",
+            bg="#101827",
+            insertbackground="#fff8dc",
+            relief="flat",
+            font=("Microsoft YaHei UI", 12, "bold"),
+        )
+        note_box.configure(highlightthickness=1, highlightbackground="#30384e", highlightcolor="#8fb6ff")
+        note_box.pack(fill="both", expand=True, padx=22, pady=(0, 14))
+        if item.get("modification"):
+            note_box.insert("1.0", item.get("modification"))
+
+        def submit():
+            note = note_box.get("1.0", "end").strip()
+            if not note:
+                messagebox.showwarning("修改建议为空", "请输入管理员修改建议。", parent=popup)
+                return
+            try:
+                update_feedback_status(item.get("id"), "modified", admin_account, modification=note)
+            except ValueError as exc:
+                messagebox.showerror("处理失败", str(exc), parent=popup)
+                return
+            popup.destroy()
+            self.show_feedback_admin()
+
+        HoverButton(row, "保存修改", submit, width=150, height=52, accent="#9ff2b2").grid(row=0, column=0, padx=(0, 10))
+        HoverButton(row, "取消", popup.destroy, width=118, height=52, accent="#ff9b89").grid(row=0, column=1)
+        self.after(80, note_box.focus_set)
 
     def toggle_admin_details(self):
         self.admin_show_details = not self.admin_show_details

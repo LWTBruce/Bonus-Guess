@@ -17,7 +17,7 @@ class RankBadgeLabelTests(unittest.TestCase):
         self.assertEqual(rank_system.RANK_CHALLENGES[-1]["name"], "Class 20: Absolute")
         self.assertEqual(rank_system.rank_count_for_kind("free"), 20)
         self.assertEqual(rank_system.rank_count_for_kind("crossword"), 20)
-        self.assertEqual(rank_system.rank_count_for_kind("clue"), 15)
+        self.assertEqual(rank_system.rank_count_for_kind("clue"), 20)
         self.assertEqual(rank_system.rank_difficulty_name(16), "困难")
         self.assertEqual(rank_system.rank_difficulty_name(17), "噩梦")
         self.assertEqual(rank_system.rank_target_difficulty(20), 12.0)
@@ -53,10 +53,13 @@ class RankBadgeLabelTests(unittest.TestCase):
         self.assertTrue(rank_system.rank_is_unlocked(legacy_info, 16, "free"))
         self.assertEqual(rank_system.visible_rank_challenges(legacy_info, "free")[-1]["id"], 16)
 
-    def test_clue_track_stays_at_fifteen(self):
+    def test_clue_track_extends_to_twenty(self):
         info = {"highest": 15, "passed": {str(rank_id): "2026-05-27T00:00:00" for rank_id in range(1, 16)}}
-        self.assertEqual(rank_system.visible_rank_challenges(info, "clue")[-1]["id"], 15)
-        self.assertFalse(rank_system.rank_is_unlocked(info, 16, "clue"))
+        self.assertEqual(rank_system.visible_rank_challenges(info, "clue")[-1]["id"], 16)
+        self.assertTrue(rank_system.rank_is_unlocked(info, 16, "clue"))
+        info["passed"]["16"] = "2026-05-27T00:00:00"
+        self.assertEqual(rank_system.visible_rank_challenges(info, "clue")[-1]["id"], 17)
+        self.assertTrue(rank_system.rank_is_unlocked(info, 17, "clue"))
 
     def test_rank_badge_labels_include_subject_and_track(self):
         cases = [

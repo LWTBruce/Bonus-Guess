@@ -55,7 +55,7 @@ class RoundPlayMixin:
             return float(self.custom_config.get("fragment_probability", 0))
         if self.difficulty == "普通":
             return 0.25
-        if self.difficulty == "困难":
+        if self.difficulty in {"困难", "噩梦"}:
             return 0.40
         return 0.0
 
@@ -86,12 +86,12 @@ class RoundPlayMixin:
         self.clue_fragment_count = sum(1 for line_type in self.clue_line_types if line_type == "fragment")
         if self.custom_mode:
             try:
-                visible = int(self.custom_config.get("clue_initial_lines") or 1)
+                visible = int(self.custom_config.get("clue_initial_lines") or 2)
             except (TypeError, ValueError):
-                visible = 1
+                visible = 2
             self.clue_visible_count = max(1, min(len(self.clue_lines), visible))
         else:
-            self.clue_visible_count = 1
+            self.clue_visible_count = min(len(self.clue_lines), 2)
 
     def automatic_mask_difficulty(self):
         if not self.current and self.custom_mode:
@@ -157,7 +157,7 @@ class RoundPlayMixin:
 
     def max_rank_extra_count(self, term, difficulty):
         if self.rank_kind == "clue":
-            return 5 if difficulty in {"普通", "困难"} else 0
+            return 5 if difficulty in {"普通", "困难", "噩梦"} else 0
         return self.max_extra_mask_count(term, difficulty)
 
     def choose_rank_term(self):
@@ -266,6 +266,7 @@ class RoundPlayMixin:
         self.show_game(transition=transition)
 
     def show_game(self, transition=True):
+        self.play_music(self.round_music_track())
         self.clear(transition=transition)
         self.timed_status_label = None
         if self.rank_mode:
@@ -495,7 +496,7 @@ class RoundPlayMixin:
             else:
                 rule_text = "自定义模式是练习沙盒。\n记录会保存，但不计总积分、Rating 和成就。\n你可以在配置页调节词库、词长、提示和掩码。"
         elif self.is_clue_mode():
-            rule_text = "本题不显示首字母，但会显示答案字数。\n初始只显示第一句线索。\n第一次提示免费，之后从揭晓第三条线索开始扣分。\n共五条线索，普通/困难可能出现破碎线索。\n揭晓答案会记为未答出。"
+            rule_text = "本题不显示首字母，但会显示答案字数。\n初始显示前两句线索。\n继续提示会从第三条线索开始扣分。\n共五条线索，普通/困难/噩梦可能出现破碎线索。\n揭晓答案会记为未答出。"
         else:
             rule_text = "同首字母的词库内答案都算对。\n普通/困难/噩梦可能用 * 掩码首字母；* 处不限，只检查未掩码位置。\n当前模式总词库里、但不在本轮范围内的匹配词，才会提示超纲。\n提示揭开全部汉字或主动揭晓答案时，本题失败。"
         self.render_side_text_block(side, rule_text, fg="#9ca8c7", bg="#111725", base_size=11, pady=(4, 18))
@@ -758,14 +759,20 @@ class RoundPlayMixin:
         panel.pack(fill="both", expand=True, padx=20, pady=20)
         header = tk.Frame(panel, bg="#182033")
         header.pack(fill="x", padx=28, pady=(22, 10))
-        tk.Label(
+        header.grid_columnconfigure(0, weight=1)
+        title_label = tk.Label(
             header,
             text=title,
             fg="#fff2bd",
             bg="#182033",
+            justify="left",
+            anchor="w",
+            wraplength=720,
             font=("Microsoft YaHei UI", 24, "bold"),
-        ).pack(side="left")
-        HoverButton(header, "关闭", popup.destroy, width=96, height=42, accent="#ff9b89").pack(side="right")
+        )
+        title_label.grid(row=0, column=0, sticky="ew", padx=(0, 16))
+        HoverButton(header, "关闭", popup.destroy, width=96, height=42, accent="#ff9b89").grid(row=0, column=1, sticky="ne")
+        header.bind("<Configure>", lambda event: title_label.configure(wraplength=max(360, event.width - 136)))
 
         body = tk.Frame(panel, bg="#182033")
         body.pack(fill="both", expand=True, padx=0, pady=(0, 14))
@@ -1286,6 +1293,10 @@ class RoundPlayMixin:
             elapsed = time.perf_counter() - self.start_time if self.start_time else 0
         return 1000 - int(elapsed) - self.score_penalty
 
+    def round_failure_score(self, elapsed=None, unanswered_count=1):
+        current = self.current_score(elapsed)
+        return max(current - max(0, int(unanswered_count or 0)) * 1000, 0)
+
     def current_score_weight(self):
         if self.tutorial_active:
             return 0.0
@@ -1317,6 +1328,7 @@ class RoundPlayMixin:
             "简单": 170,
             "普通": 240,
             "困难": 330,
+            "噩梦": 440,
             "混合模式": 230,
         }.get(self.difficulty or "", 230)
         difficulty_bonus = max(0, self.effective_difficulty - 1) * 18
@@ -1462,7 +1474,7 @@ class RoundPlayMixin:
             line = self.clue_lines[self.clue_visible_count - 1]
             line_type = self.clue_line_types[self.clue_visible_count - 1] if self.clue_visible_count - 1 < len(self.clue_line_types) else "complete"
             cost_text = f"-{cost} 分" if cost > 0 else "免费"
-            self.hint_lines.append(f"线索提示 {hint_number}：{line}    {cost_text}")
+            self.hint_lines.append(f"线索提示 {self.clue_visible_count}：{line}    {cost_text}")
             self.hint_penalties.append({
                 "type": "clue" if cost > 0 else "free_clue",
                 "line_index": self.clue_visible_count,
@@ -1577,6 +1589,20 @@ class RoundPlayMixin:
         widget.see(tk.END)
         widget.config(state="disabled")
 
+    def _render_clue_markdown_line(self, parent, index, line, line_type, *, base_size, wrap_chars, pady):
+        prefix = "破碎" if line_type == "fragment" else "线索"
+        fg = "#f6d36b" if line_type == "fragment" else "#dce6ff"
+        return render_inline_markdown(
+            parent,
+            content=f"{index}. **{prefix}**：{line}",
+            fg=fg,
+            bg="#182033",
+            base_size=base_size,
+            bold=line_type == "fragment",
+            wrap_chars=wrap_chars,
+            pady=pady,
+        )
+
     def _render_clues(self):
         if not self.clue_box:
             return
@@ -1584,15 +1610,12 @@ class RoundPlayMixin:
             child.destroy()
         for index, line in enumerate(self.clue_lines[:self.clue_visible_count], 1):
             line_type = self.clue_line_types[index - 1] if index - 1 < len(self.clue_line_types) else "complete"
-            prefix = "破碎" if line_type == "fragment" else "线索"
-            fg = "#f6d36b" if line_type == "fragment" else "#dce6ff"
-            render_inline_markdown(
+            self._render_clue_markdown_line(
                 self.clue_box,
-                fg=fg,
-                bg="#182033",
-                content=f"{index}. **{prefix}**：{line}",
+                index,
+                line,
+                line_type,
                 base_size=13,
-                bold=line_type == "fragment",
                 wrap_chars=60 if self.rank_mode and self.rank_kind == "clue" else 46,
                 pady=5,
             )
@@ -1619,7 +1642,7 @@ class RoundPlayMixin:
         record_path = self.save_record(success, elapsed, "answered")
         self.game_active = False
         self.record_saved = True
-        final_score = self.current_score(elapsed) if success else 0
+        final_score = self.current_score(elapsed) if success else self.round_failure_score(elapsed)
         weighted_score = final_score * self.current_score_weight()
         if self.tutorial_active:
             if success:
@@ -1806,7 +1829,136 @@ class RoundPlayMixin:
         self.game_active = False
         next_screen()
 
+    def term_feedback_mode_context(self):
+        parts = []
+        if self.tutorial_active:
+            parts.append("教程模式")
+        elif self.rank_mode:
+            parts.append(f"{subject_label(self.rank_subject)}{rank_kind_label(self.rank_kind)}")
+            try:
+                rank = rank_by_id(self.rank_id)
+            except Exception:
+                rank = None
+            if rank:
+                parts.append(rank.get("name") or f"Class {self.rank_id}")
+            if self.rank_kind != "crossword":
+                parts.append(f"第 {self.rank_question_index + 1} 题")
+        elif self.custom_mode:
+            parts.append("自定义模式")
+            subject = self.custom_config.get("subject") or self.mode
+            play_kind = self.custom_config.get("play_kind") or self.play_mode
+            if subject:
+                parts.append(str(subject))
+            if play_kind:
+                parts.append(str(play_kind))
+        else:
+            if self.mode:
+                parts.append(str(self.mode))
+            if self.play_mode:
+                parts.append(str(self.play_mode))
+        if self.difficulty:
+            parts.append(str(self.difficulty))
+        return " / ".join(part for part in parts if part) or "未知模式"
+
+    def term_feedback_record_path_text(self, record_path):
+        if not record_path:
+            return ""
+        path = Path(record_path)
+        try:
+            return path.relative_to(PROJECT_DIR).as_posix()
+        except ValueError:
+            return str(path)
+
+    def submit_result_term_feedback(self, action, proposed_change="", record_path=None, popup=None):
+        if not self.current:
+            messagebox.showerror("反馈失败", "当前没有可反馈的词条。", parent=popup or self)
+            return
+        source_label = getattr(self.current, "source_label", "") or Path(getattr(self.current, "source", "")).stem or "未知"
+        try:
+            submit_term_feedback(
+                self.current_account,
+                action,
+                self.term_feedback_mode_context(),
+                source_label,
+                self.current.chinese,
+                proposed_change=proposed_change,
+                source_file=getattr(self.current, "source", ""),
+                record_path=self.term_feedback_record_path_text(record_path),
+            )
+        except ValueError as exc:
+            messagebox.showerror("反馈失败", str(exc), parent=popup or self)
+            return
+        if popup and popup.winfo_exists():
+            popup.destroy()
+        messagebox.showinfo("反馈成功", "反馈成功。", parent=self)
+
+    def show_term_feedback_dialog(self, record_path=None):
+        if not self.current:
+            messagebox.showerror("反馈失败", "当前没有可反馈的词条。")
+            return
+        popup = tk.Toplevel(self)
+        popup.title("词条反馈")
+        popup.configure(bg="#111725")
+        popup.geometry("520x320")
+        popup.minsize(460, 280)
+        popup.transient(self)
+        popup.grab_set()
+        panel = tk.Frame(popup, bg="#182033", highlightbackground="#3b4560", highlightthickness=1)
+        panel.pack(fill="both", expand=True, padx=18, pady=18)
+        tk.Label(panel, text="反馈这个词", fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 22, "bold")).pack(anchor="w", padx=22, pady=(20, 8))
+        info = f"{self.current.source_label} / {self.current.chinese}"
+        tk.Label(panel, text=info, fg="#c8d2ee", bg="#182033", wraplength=450, justify="left", font=("Microsoft YaHei UI", 12, "bold")).pack(anchor="w", padx=22, pady=(0, 18))
+        buttons = tk.Frame(panel, bg="#182033")
+        buttons.pack(anchor="w", padx=22, pady=(8, 0))
+        HoverButton(
+            buttons,
+            "这个词应该删掉",
+            lambda: self.submit_result_term_feedback("delete", record_path=record_path, popup=popup),
+            width=190,
+            height=54,
+            accent="#ff9b89",
+        ).grid(row=0, column=0, padx=(0, 12), pady=8)
+        HoverButton(
+            buttons,
+            "这个词应该改动",
+            lambda: self.show_term_modify_feedback_dialog(record_path, popup),
+            width=190,
+            height=54,
+            accent="#ffcf8f",
+        ).grid(row=0, column=1, padx=12, pady=8)
+        HoverButton(panel, "取消", popup.destroy, width=112, height=46, accent="#8fb6ff").pack(anchor="w", padx=22, pady=(16, 0))
+
+    def show_term_modify_feedback_dialog(self, record_path=None, previous_popup=None):
+        if previous_popup and previous_popup.winfo_exists():
+            previous_popup.destroy()
+        popup = tk.Toplevel(self)
+        popup.title("词条改动反馈")
+        popup.configure(bg="#111725")
+        popup.geometry("620x420")
+        popup.minsize(520, 360)
+        popup.transient(self)
+        popup.grab_set()
+        panel = tk.Frame(popup, bg="#182033", highlightbackground="#3b4560", highlightthickness=1)
+        panel.pack(fill="both", expand=True, padx=18, pady=18)
+        tk.Label(panel, text="这个词应该改为什么？", fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 20, "bold")).pack(anchor="w", padx=22, pady=(18, 8))
+        tk.Label(panel, text=f"当前词：{self.current.chinese}", fg="#c8d2ee", bg="#182033", font=("Microsoft YaHei UI", 12, "bold")).pack(anchor="w", padx=22, pady=(0, 10))
+        entry = tk.Text(panel, height=6, wrap="word", fg="#fff8dc", bg="#101827", insertbackground="#fff8dc", relief="flat", font=("Microsoft YaHei UI", 12, "bold"))
+        entry.configure(highlightthickness=1, highlightbackground="#30384e", highlightcolor="#8fb6ff")
+        entry.pack(fill="both", expand=True, padx=22, pady=(0, 14))
+
+        def submit():
+            proposed = entry.get("1.0", "end").strip()
+            self.submit_result_term_feedback("modify", proposed_change=proposed, record_path=record_path, popup=popup)
+
+        row = tk.Frame(panel, bg="#182033")
+        row.pack(anchor="w", padx=22, pady=(0, 18))
+        HoverButton(row, "提交反馈", submit, width=150, height=52, accent="#9ff2b2").grid(row=0, column=0, padx=(0, 10))
+        HoverButton(row, "取消", popup.destroy, width=112, height=52, accent="#ff9b89").grid(row=0, column=1)
+        self.after(80, entry.focus_set)
+
     def show_result(self, elapsed, record_path, success=True, failed_reason="", cheated=False):
+        self.play_music("result")
+        self.play_sfx("fail" if (cheated or not success) else "success")
         self.clear(transition=False)
         frame = tk.Frame(self.container, bg="#111725")
         frame.pack(fill="both", expand=True)
@@ -1816,7 +1968,7 @@ class RoundPlayMixin:
         if cheated:
             final_score = -abs(int(self.cheat_info.get("normal_score", self.current_score(elapsed))))
         else:
-            final_score = self.current_score(elapsed) if success else 0
+            final_score = self.current_score(elapsed) if success else self.round_failure_score(elapsed)
         score_weight = self.current_score_weight()
         weighted_score = final_score * score_weight
         score_color = "#ff9b89" if final_score < 0 else "#9ff2b2"
@@ -1843,20 +1995,21 @@ class RoundPlayMixin:
             topic_text += f"（原始 {self.current.initials}，掩码 {self.mask_count} 个）"
         tk.Label(detail_frame, text=topic_text, fg="#c8d2ee", bg="#182033", justify="left", anchor="w", font=("Microsoft YaHei UI", 14)).pack(anchor="w", fill="x", pady=(0, 4))
         tk.Label(detail_frame, text=f"本题总难度：{self.effective_difficulty:g}", fg="#9ca8c7", bg="#182033", justify="left", anchor="w", font=("Microsoft YaHei UI", 12, "bold")).pack(anchor="w", fill="x", pady=2)
-        tk.Label(detail_frame, text=f"本轮答案：{self.current.chinese}", fg="#c8d2ee", bg="#182033", justify="left", anchor="w", font=("Microsoft YaHei UI", 14)).pack(anchor="w", fill="x", pady=4)
+        notice_text = self.current_term_notice_text()
+        answer_text = f"本轮答案：{self.current.chinese}"
+        if notice_text:
+            answer_text += f"（{notice_text}）"
+        tk.Label(detail_frame, text=answer_text, fg="#c8d2ee", bg="#182033", justify="left", anchor="w", font=("Microsoft YaHei UI", 14)).pack(anchor="w", fill="x", pady=4)
         if self.is_clue_mode():
             tk.Label(detail_frame, text="本轮线索", fg="#8fb6ff", bg="#182033", justify="left", anchor="w", font=("Microsoft YaHei UI", 12, "bold")).pack(anchor="w", fill="x", pady=(8, 3))
             for index, line in enumerate(self.clue_lines[:self.clue_visible_count], 1):
                 line_type = self.clue_line_types[index - 1] if index - 1 < len(self.clue_line_types) else "complete"
-                prefix = "破碎" if line_type == "fragment" else "线索"
-                fg = "#f6d36b" if line_type == "fragment" else "#dce6ff"
-                render_inline_markdown(
+                self._render_clue_markdown_line(
                     detail_frame,
-                    f"{index}. **{prefix}**：{line}",
-                    fg=fg,
-                    bg="#182033",
+                    index,
+                    line,
+                    line_type,
                     base_size=10,
-                    bold=line_type == "fragment",
                     wrap_chars=82,
                     pady=(0, 3),
                 )
@@ -1883,8 +2036,11 @@ class RoundPlayMixin:
         else:
             HoverButton(buttons, "再来一局", lambda: self.start_game(self.difficulty), width=180, height=62, accent="#9ff2b2").grid(row=0, column=0, padx=12)
             HoverButton(buttons, "返回模式", self.show_mode_select, width=180, height=62, accent="#9fb7ff").grid(row=0, column=1, padx=12)
+        HoverButton(buttons, "反馈", lambda record_path=record_path: self.show_term_feedback_dialog(record_path), width=150, height=62, accent="#ffcf8f").grid(row=0, column=2, padx=12)
 
     def show_custom_challenge_result(self, passed, reason="", elapsed=None, record_path=None, cheated=False):
+        self.play_music("result")
+        self.play_sfx("success" if passed and not cheated else "fail")
         self.clear(transition=False)
         self.game_active = False
         self.record_saved = True
@@ -1929,6 +2085,8 @@ class RoundPlayMixin:
         HoverButton(buttons, "返回主页", self.show_home, width=170, height=58, accent="#ffbd7e").grid(row=0, column=2, padx=10)
 
     def show_timed_result(self):
+        self.play_music("result")
+        self.play_sfx("success" if self.timed_correct else "fail")
         self.clear()
         self.game_active = False
         self.record_saved = True
@@ -1990,6 +2148,7 @@ class RoundPlayMixin:
             "answer": self.current.chinese,
             "accepted_answers": accepted,
             "source_label": self.current.source_label,
+            "notice": self.current_term_notice_text(),
         }
         if record:
             entry["success"] = bool(record.get("success"))
@@ -2021,8 +2180,10 @@ class RoundPlayMixin:
                 direction = "横" if placement.direction == "across" else "纵"
                 initials = self.crossword_initials_for_placement(placement)
                 accepted = self.crossword_answer_candidates(placement)
+                notice = term_notice_text(placement.answer, prefix="含有")
+                notice_part = f" {notice}" if notice else ""
                 entries.append({
-                    "prefix": f"{placement.id:02d} {direction} {len(placement.answer)}字 {initials}：",
+                    "prefix": f"{placement.id:02d} {direction} {len(placement.answer)}字 {initials}{notice_part}：",
                     "answers": [str(answer) for answer in accepted if str(answer or "").strip()],
                 })
             return entries
@@ -2040,8 +2201,10 @@ class RoundPlayMixin:
                 target_text = ""
             initials = entry.get("displayed_initials") or "线索题"
             accepted = entry.get("accepted_answers") or [entry.get("answer", "")]
+            notice = entry.get("notice") or term_notice_text(entry.get("answer", ""), prefix="含有")
+            notice_part = f" {notice}" if notice else ""
             result.append({
-                "prefix": f"{int(entry.get('index') or 0):02d} {entry.get('difficulty', '')}{target_text} {initials}：",
+                "prefix": f"{int(entry.get('index') or 0):02d} {entry.get('difficulty', '')}{target_text} {initials}{notice_part}：",
                 "answers": [str(answer) for answer in accepted if str(answer or "").strip()],
             })
         return result
@@ -2106,6 +2269,8 @@ class RoundPlayMixin:
         self.bind_scroll_wheel(shell, answer_box)
 
     def show_rank_result(self, passed, reason="", elapsed=None, record_path=None, cheated=False):
+        self.play_music("result")
+        self.play_sfx("success" if passed and not cheated else "fail")
         self.clear(transition=False)
         self.game_active = False
         self.record_saved = True
@@ -2180,8 +2345,8 @@ class RoundPlayMixin:
         final_score = self.current_score(elapsed)
         if finished_by == "cheated":
             final_score = -abs(final_score)
-        elif not success and finished_by != "abandoned":
-            final_score = 0
+        elif not success:
+            final_score = self.round_failure_score(elapsed)
         score_weight = self.current_score_weight()
         subject_value = self.rank_subject if is_rank else (self.custom_config.get("subject", self.mode) if is_custom else self.mode)
         mode_value = self.rank_subject if is_rank else ("自定义" if is_custom else self.mode)
@@ -2190,6 +2355,8 @@ class RoundPlayMixin:
             custom_files = [path.relative_to(WORDS_DIR).as_posix() for path in self.library_files]
         except ValueError:
             custom_files = [path.name for path in self.library_files]
+        notice_tags = term_notice_tags(self.current.chinese)
+        clue_hint_count = sum(1 for item in self.hint_penalties if item.get("type") in {"clue", "free_clue"})
         record = {
             "version": APP_VERSION,
             "id": uuid.uuid4().hex,
@@ -2232,7 +2399,7 @@ class RoundPlayMixin:
             "clue_line_types": self.clue_line_types,
             "clue_visible_count": self.clue_visible_count,
             "clue_fragment_count": self.clue_fragment_count,
-            "clue_hint_count": max(0, self.clue_visible_count - 1) if self.is_clue_mode() else 0,
+            "clue_hint_count": clue_hint_count if self.is_clue_mode() else 0,
             "clue_penalty": sum(item.get("cost", 0) for item in self.hint_penalties if item.get("type") == "clue"),
             "selected_answer": self.current.chinese,
             "base_term_difficulty": self.current.difficulty,
@@ -2240,6 +2407,9 @@ class RoundPlayMixin:
             "effective_difficulty": self.effective_difficulty,
             "accepted_answers": self.accepted_answers,
             "term_notice": self.current_term_notice_text(),
+            "term_notice_tags": notice_tags,
+            "has_person_name": 1 if "人名" in notice_tags else 0,
+            "has_english_letter": 1 if "英文字母" in notice_tags else 0,
             "has_greek_letter": 1 if term_has_greek_letter(self.current.chinese) else 0,
             "source_file": self.current.source,
             "source_label": self.current.source_label,

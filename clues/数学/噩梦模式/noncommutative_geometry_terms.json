@@ -4,8 +4,20 @@
     {
       "chinese_name": "谱三元组",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种谱数据结构。",
+        "它把坐标代数、Hilbert空间和Dirac型算子合成几何数据。",
+        "基本数据常写作 $(\\mathcal A,H,D)$，并要求 $[D,a]\\in B(H)$。",
+        "距离、维数和指标由有界交换子与算子谱共同恢复。",
+        "它的英文译名是 spectral triplet。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 谱数据结构",
+        "坐标代数 Hilbert空间 Dirac型算子",
+        "$(\\mathcal A,H,D),\\ [D,a]\\in B(H)$",
+        "有界交换子 算子谱 距离 维数 指标",
+        "spectral triplet"
+      ],
       "explanation_markdown": "谱三元组用代数、Hilbert空间和Dirac型算子描述非交换空间的微分几何。谱三元组的核心是Dirac谱、热核渐近和非交换积分，和同族术语的分界也主要落在这些数据上。常写成 $(\\mathcal A,H,D)$，其中 $\\mathcal A$ 是坐标代数，$H$ 是表示空间，$D$ 是自伴算子。有界交换子 $[D,a]$ 和 $D$ 的谱决定距离、维数与指标信息。\n\n谱三元组把点集和坐标图退到次要位置，由代数和算子关系恢复几何量。偶谱三元组多出分次 $\\Gamma$，实谱三元组多出反线性算子 $J$，奇谱三元组则不带分次结构。 谱三元组还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -28,8 +40,20 @@
     {
       "chinese_name": "偶谱三元组",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中带附加结构的谱数据。",
+        "它在谱数据中加入手征分次来表达偶维情形。",
+        "附加条件可写作 $J^2=\\epsilon,\\ JD=\\epsilon'DJ,\\ \\Gamma D=-D\\Gamma$。",
+        "分次算子与Dirac型算子反交换，并使指标落在偶K同调。",
+        "它的英文译名是 even spectrum triplet。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 附加谱数据",
+        "手征分次 偶维情形 谱数据",
+        "$J^2=\\epsilon,\\ JD=\\epsilon'DJ,\\ \\Gamma D=-D\\Gamma$",
+        "反交换 偶K同调 指标",
+        "even spectrum triplet"
+      ],
       "explanation_markdown": "偶谱三元组是在谱三元组中加入分次算子来表达偶维几何。偶谱三元组的核心是Dirac谱、热核渐近和非交换积分，和同族术语的分界也主要落在这些数据上。常写成 $\\Gamma^2=1,\\ \\Gamma D=-D\\Gamma,\\ \\Gamma a=a\\Gamma$，其中 $\\Gamma$ 是分次，$D$ 是Dirac型算子，$a\\in\\mathcal A$。分次把Hilbert空间分成两个手征部分，使指标配对落在偶K同调中。\n\n它与奇谱三元组的区别就在这一个分次结构；与实谱三元组相比，它不必含反线性实结构 $J$。偶性会影响陈字符所在的循环上同调次数，也影响谱作用量中的手征分解。 偶谱三元组还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -52,8 +76,20 @@
     {
       "chinese_name": "奇谱三元组",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中带附加结构的谱数据。",
+        "它保留代数和Dirac型算子，但不带手征分次。",
+        "附加条件可写作 $J^2=\\epsilon,\\ JD=\\epsilon'DJ,\\ \\Gamma D=-D\\Gamma$。",
+        "指标配对转向酉元或奇K类，与偶维情形相差一个次数。",
+        "它的英文译名是 odd spectrum triplet。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 附加谱数据",
+        "无手征分次 Dirac型算子",
+        "$J^2=\\epsilon,\\ JD=\\epsilon'DJ,\\ \\Gamma D=-D\\Gamma$",
+        "酉元 奇K类 次数差异",
+        "odd spectrum triplet"
+      ],
       "explanation_markdown": "奇谱三元组是不带分次算子的谱三元组，适合奇维几何和奇K同调类。奇谱三元组的核心是Dirac谱、热核渐近和非交换积分，和同族术语的分界也主要落在这些数据上。常写成 $(\\mathcal A,H,D)$ 且 $[D,a]\\in B(H)$，其中 $D$ 是自伴算子，$[D,a]$ 有界表示一阶微分可控。它的指标配对通常与酉元而不是投影相连。\n\n它保留Dirac谱、距离和可和性条件，但没有 $\\Gamma D=-D\\Gamma$ 这样的手征分解。奇谱三元组常用于圆、奇维自旋流形和悬挂构造，和偶情形在K同调次数上相差一维。 奇谱三元组还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -76,8 +112,20 @@
     {
       "chinese_name": "实谱三元组",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中带附加结构的谱数据。",
+        "它在谱数据中加入反线性等距算子来编码实结构。",
+        "附加条件可写作 $J^2=\\epsilon,\\ JD=\\epsilon'DJ,\\ \\Gamma D=-D\\Gamma$。",
+        "KO维数决定 $J$ 与 $D$、分次算子的符号关系。",
+        "它的英文译名是 real spectrum triplet。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 附加谱数据",
+        "反线性等距算子 实结构",
+        "$J^2=\\epsilon,\\ JD=\\epsilon'DJ,\\ \\Gamma D=-D\\Gamma$",
+        "KO维数 $J$ $D$ 符号关系",
+        "real spectrum triplet"
+      ],
       "explanation_markdown": "实谱三元组在谱三元组上加入反线性等距算子 $J$，用来编码自旋几何中的实结构和电荷共轭。实谱三元组的核心是Dirac谱、热核渐近和非交换积分，和同族术语的分界也主要落在这些数据上。常写成 $J^2=\\epsilon,\\ JD=\\epsilon'DJ,\\ J\\Gamma=\\epsilon''\\Gamma J$，其中符号 $\\epsilon,\\epsilon',\\epsilon''$ 由KO维数决定。$J$ 还给出右作用 $b^0=Jb^*J^{-1}$。\n\n它把非交换代数的左右作用、一阶条件和KO维数放在同一框架内。偶谱三元组只要求分次，实谱三元组强调 $J$；两者可同时出现，但承担的几何信息不同。 实谱三元组还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 实谱三元组的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -100,8 +148,20 @@
     {
       "chinese_name": "狄拉克算子",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何和伪微分分析中的一种算子或谱不变量。",
+        "它是谱数据中读取微分、距离和指标的核心算子。",
+        "热核展开常写作 $\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$。",
+        "高能特征值渐近携带体积和曲率，而不只是单个本征值。",
+        "它的英文译名是 dirac operator。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 伪微分分析 算子 谱不变量",
+        "微分 距离 指标 关键算子",
+        "$\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$",
+        "高能特征值 体积 曲率",
+        "dirac operator"
+      ],
       "explanation_markdown": "狄拉克算子从Dirac型算子的谱和伪微分演算中读取几何量。狄拉克算子的核心是Dirac谱、热核渐近和非交换积分，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$，其中 $D$ 是算子，$a_k$ 是热核系数，$n$ 是维数。谱的渐近展开记录体积、曲率和残数。\n\n狄拉克算子关注的不是单个特征值，而是谱在高能极限下的整体结构。可和性给出维数约束，维数谱控制ζ函数极点，Wodzicki残数则提供非交换积分的典型来源。 狄拉克算子还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 狄拉克算子的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -124,8 +184,20 @@
     {
       "chinese_name": "孔涅距离公式",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种同调或指标结构。",
+        "它把态空间中的距离写成代数元素的Lipschitz约束上确界。",
+        "指标配对可写作 $\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$。",
+        "交换流形情形可恢复测地距离，非交换情形则以态替代点。",
+        "它的英文译名是 connes distance formula。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 同调 指标结构",
+        "态空间 距离 Lipschitz约束",
+        "$\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$",
+        "测地距离 态 替代点",
+        "connes distance formula"
+      ],
       "explanation_markdown": "孔涅距离公式把拓扑、数论或量子统计中的对象放进非交换几何框架。孔涅距离公式的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$，其中 $K_0(A)$ 是K理论群，$HC^{2n}(A)$ 是循环上同调，配对给出数值不变量。代数、谱和同调三类数据共同描述空间。\n\n孔涅距离公式常用于处理普通商空间难以描述的几何。它保留可计算的不变量，同时允许坐标函数不交换，因此能连接量子群作用、模空间量子化和算术动力系统。 孔涅距离公式还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -148,8 +220,20 @@
     {
       "chinese_name": "孔涅循环",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种同调或指标结构。",
+        "它用循环上同调中的余循环表达非交换指标数据。",
+        "指标配对可写作 $\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$。",
+        "与K理论配对后给出Fredholm指标或特征数。",
+        "它的英文译名是 connes cycle。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 同调 指标结构",
+        "循环上同调 余循环 指标数据",
+        "$\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$",
+        "K理论配对 Fredholm指标 特征数",
+        "connes cycle"
+      ],
       "explanation_markdown": "孔涅循环用同调语言表达非交换空间中的指标和特征类。孔涅循环的核心是循环上同调、K理论配对和指标映射，和同族术语的分界也主要落在这些数据上。常写成 $\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$，其中 $\\operatorname{Ch}(D)$ 是陈字符，$e$ 是投影，右边是Fredholm指标。循环上同调提供与K理论配对的余循环。\n\n孔涅循环连接代数链复形、K理论和几何指标。Hochschild循环保留乘法的一阶同调，周期循环上同调加入Connes算子 $B$，Baum-Connes型装配映射则把群作用和指数问题联系起来。 孔涅循环还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 孔涅循环的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -172,8 +256,20 @@
     {
       "chinese_name": "霍赫希尔德循环",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种同调或指标结构。",
+        "它来自Hochschild链复形，保留代数乘法的一阶同调信息。",
+        "指标配对可写作 $\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$。",
+        "在谱数据中可承担定向条件，连接微分形式的代数版本。",
+        "它的英文译名是 hochschild cycle。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 同调 指标结构",
+        "Hochschild链复形 一阶同调",
+        "$\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$",
+        "定向条件 微分形式 代数版本",
+        "hochschild cycle"
+      ],
       "explanation_markdown": "霍赫希尔德循环用同调语言表达非交换空间中的指标和特征类。霍赫希尔德循环的核心是循环上同调、K理论配对和指标映射，和同族术语的分界也主要落在这些数据上。常写成 $\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$，其中 $\\operatorname{Ch}(D)$ 是陈字符，$e$ 是投影，右边是Fredholm指标。循环上同调提供与K理论配对的余循环。\n\n霍赫希尔德循环连接代数链复形、K理论和几何指标。Hochschild循环保留乘法的一阶同调，周期循环上同调加入Connes算子 $B$，Baum-Connes型装配映射则把群作用和指数问题联系起来。 霍赫希尔德循环还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -196,8 +292,20 @@
     {
       "chinese_name": "循环上同调",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种同调或指标结构。",
+        "它是Hochschild理论加入循环对称后的上同调。",
+        "指标配对可写作 $\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$。",
+        "适合作为非交换空间中de Rham上同调的替代物。",
+        "它的英文译名是 cyclic cohomology。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 同调 指标结构",
+        "Hochschild理论 循环对称 上同调",
+        "$\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$",
+        "de Rham替代 非交换空间",
+        "cyclic cohomology"
+      ],
       "explanation_markdown": "循环上同调用同调语言表达非交换空间中的指标和特征类。循环上同调的核心是循环上同调、K理论配对和指标映射，和同族术语的分界也主要落在这些数据上。常写成 $\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$，其中 $\\operatorname{Ch}(D)$ 是陈字符，$e$ 是投影，右边是Fredholm指标。循环上同调提供与K理论配对的余循环。\n\n循环上同调连接代数链复形、K理论和几何指标。Hochschild循环保留乘法的一阶同调，周期循环上同调加入Connes算子 $B$，Baum-Connes型装配映射则把群作用和指数问题联系起来。 循环上同调还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -220,8 +328,20 @@
     {
       "chinese_name": "周期循环上同调",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种同调或指标结构。",
+        "它把循环上同调按周期变量延拓成两周期理论。",
+        "指标配对可写作 $\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$。",
+        "偶奇次数被周期化，便于与K理论作稳定配对。",
+        "它的英文译名是 periodic cyclic cohomology。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 同调 指标结构",
+        "周期变量 两周期理论",
+        "$\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$",
+        "偶奇周期化 K理论稳定配对",
+        "periodic cyclic cohomology"
+      ],
       "explanation_markdown": "周期循环上同调用同调语言表达非交换空间中的指标和特征类。周期循环上同调的核心是循环上同调、K理论配对和指标映射，和同族术语的分界也主要落在这些数据上。常写成 $\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$，其中 $\\operatorname{Ch}(D)$ 是陈字符，$e$ 是投影，右边是Fredholm指标。循环上同调提供与K理论配对的余循环。\n\n周期循环上同调连接代数链复形、K理论和几何指标。Hochschild循环保留乘法的一阶同调，周期循环上同调加入Connes算子 $B$，Baum-Connes型装配映射则把群作用和指数问题联系起来。 周期循环上同调还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -244,8 +364,20 @@
     {
       "chinese_name": "局部指标公式",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种同调或指标结构。",
+        "它把谱三元组的指标配对写成局部余循环表达。",
+        "指标配对可写作 $\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$。",
+        "残数、交换子和热核系数共同给出可计算的Chern字符。",
+        "它的英文译名是 local index formula。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 同调 指标结构",
+        "指标配对 局部余循环",
+        "$\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$",
+        "残数 交换子 热核系数 Chern字符",
+        "local index formula"
+      ],
       "explanation_markdown": "局部指标公式用同调语言表达非交换空间中的指标和特征类。局部指标公式的核心是循环上同调、K理论配对和指标映射，和同族术语的分界也主要落在这些数据上。常写成 $\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$，其中 $\\operatorname{Ch}(D)$ 是陈字符，$e$ 是投影，右边是Fredholm指标。循环上同调提供与K理论配对的余循环。\n\n局部指标公式连接代数链复形、K理论和几何指标。Hochschild循环保留乘法的一阶同调，周期循环上同调加入Connes算子 $B$，Baum-Connes型装配映射则把群作用和指数问题联系起来。 局部指标公式还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -268,8 +400,20 @@
     {
       "chinese_name": "非交换环面",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种空间或形变代数。",
+        "它由两个或多个酉坐标满足带角参数的对易关系给出。",
+        "二维酉生成元常满足 $UV=e^{2\\pi i\\theta}VU$。",
+        "无理参数时没有经典点集模型，却有丰富的K理论和迹。",
+        "它的英文译名是 noncommutative ring surface。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 空间 形变代数",
+        "酉坐标 角参数 对易关系",
+        "$UV=e^{2\\pi i\\theta}VU$",
+        "无理参数 无经典点集 K理论 迹",
+        "noncommutative ring surface"
+      ],
       "explanation_markdown": "非交换环面把经典空间的坐标乘法改成非交换或形变乘法。非交换环面的核心是形变乘法、参数空间和K理论类，和同族术语的分界也主要落在这些数据上。常写成 $UV=e^{2\\pi i\\theta}VU$，其中 $U,V$ 是酉生成元，$\\theta$ 是形变参数；星积情形也可写成 $f\\star g=fg+\\frac{i\\hbar}{2}\\{f,g\\}+O(\\hbar^2)$。这些关系保留了原空间的部分对称性。\n\n非交换环面的几何信息通常通过K理论、迹、谱三元组或模范畴读取。有理参数可能给出Azumaya型或矩阵代数现象，无理参数则更像真正的非交换空间。 非交换环面还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -292,8 +436,20 @@
     {
       "chinese_name": "有理旋转代数",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种空间或形变代数。",
+        "它对应旋转参数为有理数时的二维非交换坐标代数。",
+        "二维酉生成元常满足 $UV=e^{2\\pi i\\theta}VU$。",
+        "有理角度常导致与矩阵代数或Azumaya型结构Morita等价。",
+        "它的英文译名是 rational rotation algebra。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 空间 形变代数",
+        "有理旋转参数 二维坐标代数",
+        "$UV=e^{2\\pi i\\theta}VU$",
+        "矩阵代数 Azumaya型 Morita等价",
+        "rational rotation algebra"
+      ],
       "explanation_markdown": "有理旋转代数把经典空间的坐标乘法改成非交换或形变乘法。有理旋转代数的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $UV=e^{2\\pi i\\theta}VU$，其中 $U,V$ 是酉生成元，$\\theta$ 是形变参数；星积情形也可写成 $f\\star g=fg+\\frac{i\\hbar}{2}\\{f,g\\}+O(\\hbar^2)$。这些关系保留了原空间的部分对称性。\n\n有理旋转代数的几何信息通常通过K理论、迹、谱三元组或模范畴读取。有理参数可能给出Azumaya型或矩阵代数现象，无理参数则更像真正的非交换空间。 有理旋转代数还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -316,8 +472,20 @@
     {
       "chinese_name": "量子环面",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种空间或形变代数。",
+        "它推广Laurent多项式环，使变量按参数矩阵q对易。",
+        "二维酉生成元常满足 $UV=e^{2\\pi i\\theta}VU$。",
+        "单项式仍形成基，但乘法顺序由斜对称双线性形式控制。",
+        "它的英文译名是 quantum ring surface。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 空间 形变代数",
+        "Laurent多项式环 q对易变量",
+        "$UV=e^{2\\pi i\\theta}VU$",
+        "单项式基 斜对称双线性形式",
+        "quantum ring surface"
+      ],
       "explanation_markdown": "量子环面把经典空间的坐标乘法改成非交换或形变乘法。量子环面的核心是形变乘法、参数空间和K理论类，和同族术语的分界也主要落在这些数据上。常写成 $UV=e^{2\\pi i\\theta}VU$，其中 $U,V$ 是酉生成元，$\\theta$ 是形变参数；星积情形也可写成 $f\\star g=fg+\\frac{i\\hbar}{2}\\{f,g\\}+O(\\hbar^2)$。这些关系保留了原空间的部分对称性。\n\n量子环面的几何信息通常通过K理论、迹、谱三元组或模范畴读取。有理参数可能给出Azumaya型或矩阵代数现象，无理参数则更像真正的非交换空间。 量子环面还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 量子环面的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -340,8 +508,20 @@
     {
       "chinese_name": "非交换球面",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种空间或形变代数。",
+        "它形变球面坐标代数，同时保留类似半径约束。",
+        "二维酉生成元常满足 $UV=e^{2\\pi i\\theta}VU$。",
+        "坐标关系不交换，但整体仍模拟球面的K理论或谱性质。",
+        "它的英文译名是 non commutative sphere。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 空间 形变代数",
+        "球面坐标代数 半径约束",
+        "$UV=e^{2\\pi i\\theta}VU$",
+        "非交换坐标 K理论 谱性质",
+        "non commutative sphere"
+      ],
       "explanation_markdown": "非交换球面把经典空间的坐标乘法改成非交换或形变乘法。非交换球面的核心是形变乘法、参数空间和K理论类，和同族术语的分界也主要落在这些数据上。常写成 $UV=e^{2\\pi i\\theta}VU$，其中 $U,V$ 是酉生成元，$\\theta$ 是形变参数；星积情形也可写成 $f\\star g=fg+\\frac{i\\hbar}{2}\\{f,g\\}+O(\\hbar^2)$。这些关系保留了原空间的部分对称性。\n\n非交换球面的几何信息通常通过K理论、迹、谱三元组或模范畴读取。有理参数可能给出Azumaya型或矩阵代数现象，无理参数则更像真正的非交换空间。 非交换球面还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -364,8 +544,20 @@
     {
       "chinese_name": "量子球面",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种空间或形变代数。",
+        "它通常作为量子群作用下的齐性空间出现。",
+        "二维酉生成元常满足 $UV=e^{2\\pi i\\theta}VU$。",
+        "坐标关系受对称Hopf代数控制，是经典球面在量子对称下的版本。",
+        "它的英文译名是 quantum sphere。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 空间 形变代数",
+        "量子群作用 齐性空间",
+        "$UV=e^{2\\pi i\\theta}VU$",
+        "Hopf对称 坐标关系 经典球面形变",
+        "quantum sphere"
+      ],
       "explanation_markdown": "量子球面把经典空间的坐标乘法改成非交换或形变乘法。量子球面的核心是形变乘法、参数空间和K理论类，和同族术语的分界也主要落在这些数据上。常写成 $UV=e^{2\\pi i\\theta}VU$，其中 $U,V$ 是酉生成元，$\\theta$ 是形变参数；星积情形也可写成 $f\\star g=fg+\\frac{i\\hbar}{2}\\{f,g\\}+O(\\hbar^2)$。这些关系保留了原空间的部分对称性。\n\n量子球面的几何信息通常通过K理论、迹、谱三元组或模范畴读取。有理参数可能给出Azumaya型或矩阵代数现象，无理参数则更像真正的非交换空间。 量子球面还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 量子球面的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -388,8 +580,20 @@
     {
       "chinese_name": "等谱形变",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种空间或形变代数。",
+        "它改变代数乘法而保持Dirac谱不变。",
+        "二维酉生成元常满足 $UV=e^{2\\pi i\\theta}VU$。",
+        "几何长度谱保留，坐标代数却通过群作用或扭曲变成非交换。",
+        "它的英文译名是 equispectral deformation。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 空间 形变代数",
+        "乘法形变 Dirac谱不变",
+        "$UV=e^{2\\pi i\\theta}VU$",
+        "长度谱保留 坐标代数 扭曲",
+        "equispectral deformation"
+      ],
       "explanation_markdown": "等谱形变把经典空间的坐标乘法改成非交换或形变乘法。等谱形变的核心是Dirac谱、热核渐近和非交换积分，和同族术语的分界也主要落在这些数据上。常写成 $UV=e^{2\\pi i\\theta}VU$，其中 $U,V$ 是酉生成元，$\\theta$ 是形变参数；星积情形也可写成 $f\\star g=fg+\\frac{i\\hbar}{2}\\{f,g\\}+O(\\hbar^2)$。这些关系保留了原空间的部分对称性。\n\n等谱形变的几何信息通常通过K理论、迹、谱三元组或模范畴读取。有理参数可能给出Azumaya型或矩阵代数现象，无理参数则更像真正的非交换空间。 等谱形变还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 等谱形变的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -412,8 +616,20 @@
     {
       "chinese_name": "里夫尔形变",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是泊松几何到非交换几何之间的一种形变乘法。",
+        "它由Rieffel方法利用群作用和振荡积分产生。",
+        "乘法展开常写作 $f\\star g=fg+\\frac{i\\hbar}{2}\\{f,g\\}+O(\\hbar^2)$。",
+        "形变参数来自反对称矩阵，适合处理环面作用。",
+        "它的英文译名是 riffle deformation。"
+      ],
+      "fragmented_clues": [
+        "泊松几何 非交换几何 形变乘法",
+        "群作用 振荡积分 形变方法",
+        "$f\\star g=fg+\\frac{i\\hbar}{2}\\{f,g\\}+O(\\hbar^2)$",
+        "反对称矩阵 环面作用",
+        "riffle deformation"
+      ],
       "explanation_markdown": "里夫尔形变把经典空间的坐标乘法改成非交换或形变乘法。里夫尔形变的核心是形变乘法、参数空间和K理论类，和同族术语的分界也主要落在这些数据上。常写成 $UV=e^{2\\pi i\\theta}VU$，其中 $U,V$ 是酉生成元，$\\theta$ 是形变参数；星积情形也可写成 $f\\star g=fg+\\frac{i\\hbar}{2}\\{f,g\\}+O(\\hbar^2)$。这些关系保留了原空间的部分对称性。\n\n里夫尔形变的几何信息通常通过K理论、迹、谱三元组或模范畴读取。有理参数可能给出Azumaya型或矩阵代数现象，无理参数则更像真正的非交换空间。 里夫尔形变还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -436,8 +652,20 @@
     {
       "chinese_name": "莫亚尔积",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是泊松几何到非交换几何之间的一种形变乘法。",
+        "它是在平直Poisson空间上最经典的形变乘法。",
+        "乘法展开常写作 $f\\star g=fg+\\frac{i\\hbar}{2}\\{f,g\\}+O(\\hbar^2)$。",
+        "偏导数组成的指数公式给出非交换乘法，物理相空间中常见。",
+        "它的英文译名是 moyar product。"
+      ],
+      "fragmented_clues": [
+        "泊松几何 非交换几何 形变乘法",
+        "平直Poisson空间 形变乘法",
+        "$f\\star g=fg+\\frac{i\\hbar}{2}\\{f,g\\}+O(\\hbar^2)$",
+        "偏导指数公式 物理相空间",
+        "moyar product"
+      ],
       "explanation_markdown": "莫亚尔积把经典空间的坐标乘法改成非交换或形变乘法。莫亚尔积的核心是形变乘法、参数空间和K理论类，和同族术语的分界也主要落在这些数据上。常写成 $UV=e^{2\\pi i\\theta}VU$，其中 $U,V$ 是酉生成元，$\\theta$ 是形变参数；星积情形也可写成 $f\\star g=fg+\\frac{i\\hbar}{2}\\{f,g\\}+O(\\hbar^2)$。这些关系保留了原空间的部分对称性。\n\n莫亚尔积的几何信息通常通过K理论、迹、谱三元组或模范畴读取。有理参数可能给出Azumaya型或矩阵代数现象，无理参数则更像真正的非交换空间。 莫亚尔积还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 莫亚尔积的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -460,8 +688,20 @@
     {
       "chinese_name": "星积",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是泊松几何到非交换几何之间的一种形变乘法。",
+        "它是形式幂级数意义下的非交换乘法。",
+        "乘法展开常写作 $f\\star g=fg+\\frac{i\\hbar}{2}\\{f,g\\}+O(\\hbar^2)$。",
+        "零阶项是普通乘法，一阶反对称部分给出Poisson括号。",
+        "它的英文译名是 star accumulation。"
+      ],
+      "fragmented_clues": [
+        "泊松几何 非交换几何 形变乘法",
+        "形式幂级数 非交换乘法",
+        "$f\\star g=fg+\\frac{i\\hbar}{2}\\{f,g\\}+O(\\hbar^2)$",
+        "零阶普通乘法 一阶Poisson括号",
+        "star accumulation"
+      ],
       "explanation_markdown": "星积把经典空间的坐标乘法改成非交换或形变乘法。星积的核心是形变乘法、参数空间和K理论类，和同族术语的分界也主要落在这些数据上。常写成 $UV=e^{2\\pi i\\theta}VU$，其中 $U,V$ 是酉生成元，$\\theta$ 是形变参数；星积情形也可写成 $f\\star g=fg+\\frac{i\\hbar}{2}\\{f,g\\}+O(\\hbar^2)$。这些关系保留了原空间的部分对称性。\n\n星积的几何信息通常通过K理论、迹、谱三元组或模范畴读取。有理参数可能给出Azumaya型或矩阵代数现象，无理参数则更像真正的非交换空间。 星积还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 星积的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -484,8 +724,20 @@
     {
       "chinese_name": "形变量子化",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是泊松几何到非交换几何之间的一种形变乘法。",
+        "它把Poisson代数系统地变成带形式参数的非交换代数。",
+        "乘法展开常写作 $f\\star g=fg+\\frac{i\\hbar}{2}\\{f,g\\}+O(\\hbar^2)$。",
+        "Kontsevich型公式说明任意Poisson流形可在形式意义下量子化。",
+        "它的英文译名是 deformation quantization。"
+      ],
+      "fragmented_clues": [
+        "泊松几何 非交换几何 形变乘法",
+        "Poisson代数 形式参数 非交换代数",
+        "$f\\star g=fg+\\frac{i\\hbar}{2}\\{f,g\\}+O(\\hbar^2)$",
+        "Kontsevich公式 Poisson流形",
+        "deformation quantization"
+      ],
       "explanation_markdown": "形变量子化把经典空间的坐标乘法改成非交换或形变乘法。形变量子化的核心是形变乘法、参数空间和K理论类，和同族术语的分界也主要落在这些数据上。常写成 $UV=e^{2\\pi i\\theta}VU$，其中 $U,V$ 是酉生成元，$\\theta$ 是形变参数；星积情形也可写成 $f\\star g=fg+\\frac{i\\hbar}{2}\\{f,g\\}+O(\\hbar^2)$。这些关系保留了原空间的部分对称性。\n\n形变量子化的几何信息通常通过K理论、迹、谱三元组或模范畴读取。有理参数可能给出Azumaya型或矩阵代数现象，无理参数则更像真正的非交换空间。 形变量子化还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -508,8 +760,20 @@
     {
       "chinese_name": "泊松代数",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是泊松几何到非交换几何之间的一种形变乘法。",
+        "它同时带交换乘法和满足Leibniz规则的括号。",
+        "乘法展开常写作 $f\\star g=fg+\\frac{i\\hbar}{2}\\{f,g\\}+O(\\hbar^2)$。",
+        "该括号是形变乘法一阶项的经典影子。",
+        "它的英文译名是 poisson algebra。"
+      ],
+      "fragmented_clues": [
+        "泊松几何 非交换几何 形变乘法",
+        "交换乘法 Leibniz括号",
+        "$f\\star g=fg+\\frac{i\\hbar}{2}\\{f,g\\}+O(\\hbar^2)$",
+        "形变一阶项 经典影子",
+        "poisson algebra"
+      ],
       "explanation_markdown": "泊松代数把经典空间的坐标乘法改成非交换或形变乘法。泊松代数的核心是形变乘法、参数空间和K理论类，和同族术语的分界也主要落在这些数据上。常写成 $UV=e^{2\\pi i\\theta}VU$，其中 $U,V$ 是酉生成元，$\\theta$ 是形变参数；星积情形也可写成 $f\\star g=fg+\\frac{i\\hbar}{2}\\{f,g\\}+O(\\hbar^2)$。这些关系保留了原空间的部分对称性。\n\n泊松代数的几何信息通常通过K理论、迹、谱三元组或模范畴读取。有理参数可能给出Azumaya型或矩阵代数现象，无理参数则更像真正的非交换空间。 泊松代数还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 泊松代数的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -532,8 +796,20 @@
     {
       "chinese_name": "切向群胚",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中处理叶状结构的一种对象。",
+        "它把流形的切丛和成对群胚拼成一个变形对象。",
+        "卷积乘法可写作 $(f*g)(\\gamma)=\\sum_{\\gamma_1\\gamma_2=\\gamma}f(\\gamma_1)g(\\gamma_2)$。",
+        "参数趋零时从非局部配对过渡到切向数据，用于指数定理证明。",
+        "它的英文译名是 tangential group embryo。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 叶状结构 对象",
+        "切丛 成对群胚 变形对象",
+        "$(f*g)(\\gamma)=\\sum_{\\gamma_1\\gamma_2=\\gamma}f(\\gamma_1)g(\\gamma_2)$",
+        "参数趋零 切向数据 指数定理",
+        "tangential group embryo"
+      ],
       "explanation_markdown": "切向群胚用群胚和卷积代数描述叶空间、奇异商或等价关系。切向群胚的核心是群胚箭头、卷积乘法和叶空间的横向结构，和同族术语的分界也主要落在这些数据上。常写成 $(f*g)(\\gamma)=\\int f(\\gamma_1)g(\\gamma_1^{-1}\\gamma)d\\gamma_1$，其中 $\\gamma$ 是群胚箭头，积分沿可复合箭头进行。卷积乘法把几何轨道写成代数运算。\n\n切向群胚适合处理商空间不良、叶空间非Hausdorff或横向结构复杂的情形。纵向指数关注叶内椭圆算子，横向指数则保留横截方向上的群胚作用。 切向群胚还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -556,8 +832,20 @@
     {
       "chinese_name": "纵向指数",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中处理叶状结构的一种对象。",
+        "它沿叶状流形的叶方向研究椭圆算子指数。",
+        "卷积乘法可写作 $(f*g)(\\gamma)=\\sum_{\\gamma_1\\gamma_2=\\gamma}f(\\gamma_1)g(\\gamma_2)$。",
+        "只看叶内微分方向，结果落在叶群胚的K理论中。",
+        "它的英文译名是 vertical index。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 叶状结构 对象",
+        "叶方向 椭圆算子指数",
+        "$(f*g)(\\gamma)=\\sum_{\\gamma_1\\gamma_2=\\gamma}f(\\gamma_1)g(\\gamma_2)$",
+        "叶内微分 群胚K理论",
+        "vertical index"
+      ],
       "explanation_markdown": "纵向指数用群胚和卷积代数描述叶空间、奇异商或等价关系。纵向指数的核心是群胚箭头、卷积乘法和叶空间的横向结构，和同族术语的分界也主要落在这些数据上。常写成 $(f*g)(\\gamma)=\\int f(\\gamma_1)g(\\gamma_1^{-1}\\gamma)d\\gamma_1$，其中 $\\gamma$ 是群胚箭头，积分沿可复合箭头进行。卷积乘法把几何轨道写成代数运算。\n\n纵向指数适合处理商空间不良、叶空间非Hausdorff或横向结构复杂的情形。纵向指数关注叶内椭圆算子，横向指数则保留横截方向上的群胚作用。 纵向指数还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -580,8 +868,20 @@
     {
       "chinese_name": "横向指数",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中处理叶状结构的一种对象。",
+        "它关注叶状结构垂直方向或横截方向的指数信息。",
+        "卷积乘法可写作 $(f*g)(\\gamma)=\\sum_{\\gamma_1\\gamma_2=\\gamma}f(\\gamma_1)g(\\gamma_2)$。",
+        "横截几何通常由群胚C*代数和循环余循环检测。",
+        "它的英文译名是 horizontal index。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 叶状结构 对象",
+        "横截方向 指数信息",
+        "$(f*g)(\\gamma)=\\sum_{\\gamma_1\\gamma_2=\\gamma}f(\\gamma_1)g(\\gamma_2)$",
+        "群胚C*代数 循环余循环",
+        "horizontal index"
+      ],
       "explanation_markdown": "横向指数用群胚和卷积代数描述叶空间、奇异商或等价关系。横向指数的核心是群胚箭头、卷积乘法和叶空间的横向结构，和同族术语的分界也主要落在这些数据上。常写成 $(f*g)(\\gamma)=\\int f(\\gamma_1)g(\\gamma_1^{-1}\\gamma)d\\gamma_1$，其中 $\\gamma$ 是群胚箭头，积分沿可复合箭头进行。卷积乘法把几何轨道写成代数运算。\n\n横向指数适合处理商空间不良、叶空间非Hausdorff或横向结构复杂的情形。纵向指数关注叶内椭圆算子，横向指数则保留横截方向上的群胚作用。 横向指数还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -604,8 +904,20 @@
     {
       "chinese_name": "叶状流形",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中处理叶状结构的一种对象。",
+        "它把流形分解为许多局部平行的浸入子流形。",
+        "卷积乘法可写作 $(f*g)(\\gamma)=\\sum_{\\gamma_1\\gamma_2=\\gamma}f(\\gamma_1)g(\\gamma_2)$。",
+        "整体商对象往往病态，因此非交换代数记录横向结构。",
+        "它的英文译名是 leaf manifold。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 叶状结构 对象",
+        "局部平行 浸入子流形 分解",
+        "$(f*g)(\\gamma)=\\sum_{\\gamma_1\\gamma_2=\\gamma}f(\\gamma_1)g(\\gamma_2)$",
+        "病态商对象 横向结构",
+        "leaf manifold"
+      ],
       "explanation_markdown": "叶状流形用群胚和卷积代数描述叶空间、奇异商或等价关系。叶状流形的核心是群胚箭头、卷积乘法和叶空间的横向结构，和同族术语的分界也主要落在这些数据上。常写成 $(f*g)(\\gamma)=\\int f(\\gamma_1)g(\\gamma_1^{-1}\\gamma)d\\gamma_1$，其中 $\\gamma$ 是群胚箭头，积分沿可复合箭头进行。卷积乘法把几何轨道写成代数运算。\n\n叶状流形适合处理商空间不良、叶空间非Hausdorff或横向结构复杂的情形。纵向指数关注叶内椭圆算子，横向指数则保留横截方向上的群胚作用。 叶状流形还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -628,8 +940,20 @@
     {
       "chinese_name": "叶空间",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中处理叶状结构的一种对象。",
+        "它是把每片叶压成点后得到的商对象。",
+        "卷积乘法可写作 $(f*g)(\\gamma)=\\sum_{\\gamma_1\\gamma_2=\\gamma}f(\\gamma_1)g(\\gamma_2)$。",
+        "常不是好拓扑空间，需要用群胚代数替代其函数代数。",
+        "它的英文译名是 leaf space。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 叶状结构 对象",
+        "叶 商对象",
+        "$(f*g)(\\gamma)=\\sum_{\\gamma_1\\gamma_2=\\gamma}f(\\gamma_1)g(\\gamma_2)$",
+        "坏拓扑 群胚代数 函数代数替代",
+        "leaf space"
+      ],
       "explanation_markdown": "叶空间用群胚和卷积代数描述叶空间、奇异商或等价关系。叶空间的核心是群胚箭头、卷积乘法和叶空间的横向结构，和同族术语的分界也主要落在这些数据上。常写成 $(f*g)(\\gamma)=\\int f(\\gamma_1)g(\\gamma_1^{-1}\\gamma)d\\gamma_1$，其中 $\\gamma$ 是群胚箭头，积分沿可复合箭头进行。卷积乘法把几何轨道写成代数运算。\n\n叶空间适合处理商空间不良、叶空间非Hausdorff或横向结构复杂的情形。纵向指数关注叶内椭圆算子，横向指数则保留横截方向上的群胚作用。 叶空间还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 叶空间的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -652,8 +976,20 @@
     {
       "chinese_name": "群胚C*代数",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中处理叶状结构的一种对象。",
+        "它把群胚上的卷积函数完备化为C*代数。",
+        "卷积乘法可写作 $(f*g)(\\gamma)=\\sum_{\\gamma_1\\gamma_2=\\gamma}f(\\gamma_1)g(\\gamma_2)$。",
+        "单位空间和箭头同时参与，适合保存商空间丢失的信息。",
+        "它的英文译名是 group embryo c algebra。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 叶状结构 对象",
+        "群胚 卷积函数 C*完备化",
+        "$(f*g)(\\gamma)=\\sum_{\\gamma_1\\gamma_2=\\gamma}f(\\gamma_1)g(\\gamma_2)$",
+        "单位空间 箭头 商信息",
+        "group embryo c algebra"
+      ],
       "explanation_markdown": "群胚C*代数用群胚和卷积代数描述叶空间、奇异商或等价关系。群胚C*代数的核心是群胚箭头、卷积乘法和叶空间的横向结构，和同族术语的分界也主要落在这些数据上。常写成 $(f*g)(\\gamma)=\\int f(\\gamma_1)g(\\gamma_1^{-1}\\gamma)d\\gamma_1$，其中 $\\gamma$ 是群胚箭头，积分沿可复合箭头进行。卷积乘法把几何轨道写成代数运算。\n\n群胚C*代数适合处理商空间不良、叶空间非Hausdorff或横向结构复杂的情形。纵向指数关注叶内椭圆算子，横向指数则保留横截方向上的群胚作用。 群胚C*代数还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -676,8 +1012,20 @@
     {
       "chinese_name": "卷积代数",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中处理叶状结构的一种对象。",
+        "它用可合成箭头上的求和或积分定义乘法。",
+        "卷积乘法可写作 $(f*g)(\\gamma)=\\sum_{\\gamma_1\\gamma_2=\\gamma}f(\\gamma_1)g(\\gamma_2)$。",
+        "乘积反映路径拼接，非交换性来自箭头合成顺序。",
+        "它的英文译名是 convolution algebra。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 叶状结构 对象",
+        "可合成箭头 求和积分 乘法",
+        "$(f*g)(\\gamma)=\\sum_{\\gamma_1\\gamma_2=\\gamma}f(\\gamma_1)g(\\gamma_2)$",
+        "路径拼接 合成顺序 非交换性",
+        "convolution algebra"
+      ],
       "explanation_markdown": "卷积代数用群胚和卷积代数描述叶空间、奇异商或等价关系。卷积代数的核心是群胚箭头、卷积乘法和叶空间的横向结构，和同族术语的分界也主要落在这些数据上。常写成 $(f*g)(\\gamma)=\\int f(\\gamma_1)g(\\gamma_1^{-1}\\gamma)d\\gamma_1$，其中 $\\gamma$ 是群胚箭头，积分沿可复合箭头进行。卷积乘法把几何轨道写成代数运算。\n\n卷积代数适合处理商空间不良、叶空间非Hausdorff或横向结构复杂的情形。纵向指数关注叶内椭圆算子，横向指数则保留横截方向上的群胚作用。 卷积代数还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -700,8 +1048,20 @@
     {
       "chinese_name": "光滑子代数",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中处理叶状结构的一种对象。",
+        "它是在C*代数内部保留微分演算的稠密子代数。",
+        "卷积乘法可写作 $(f*g)(\\gamma)=\\sum_{\\gamma_1\\gamma_2=\\gamma}f(\\gamma_1)g(\\gamma_2)$。",
+        "谱三元组和循环上同调通常只在这类光滑部分上定义良好。",
+        "它的英文译名是 smooth particle algebraic。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 叶状结构 对象",
+        "C*代数 稠密子代数 微分演算",
+        "$(f*g)(\\gamma)=\\sum_{\\gamma_1\\gamma_2=\\gamma}f(\\gamma_1)g(\\gamma_2)$",
+        "光滑部分 谱三元组 循环上同调",
+        "smooth particle algebraic"
+      ],
       "explanation_markdown": "光滑子代数用群胚和卷积代数描述叶空间、奇异商或等价关系。光滑子代数的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $(f*g)(\\gamma)=\\int f(\\gamma_1)g(\\gamma_1^{-1}\\gamma)d\\gamma_1$，其中 $\\gamma$ 是群胚箭头，积分沿可复合箭头进行。卷积乘法把几何轨道写成代数运算。\n\n光滑子代数适合处理商空间不良、叶空间非Hausdorff或横向结构复杂的情形。纵向指数关注叶内椭圆算子，横向指数则保留横截方向上的群胚作用。 光滑子代数还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 光滑子代数的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -724,8 +1084,20 @@
     {
       "chinese_name": "谱不变量",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何和伪微分分析中的一种算子或谱型不变数据。",
+        "它从算子谱中提取不随等价变换改变的数据。",
+        "热核展开常写作 $\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$。",
+        "热核系数、ζ函数极点和指标都属于这类可测几何信息。",
+        "它的英文译名是 spectrum invariant。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 伪微分分析 算子 谱型不变数据",
+        "算子谱 等价不变数据",
+        "$\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$",
+        "热核系数 ζ极点 指标",
+        "spectrum invariant"
+      ],
       "explanation_markdown": "谱不变量从Dirac型算子的谱和伪微分演算中读取几何量。谱不变量的核心是Dirac谱、热核渐近和非交换积分，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$，其中 $D$ 是算子，$a_k$ 是热核系数，$n$ 是维数。谱的渐近展开记录体积、曲率和残数。\n\n谱不变量关注的不是单个特征值，而是谱在高能极限下的整体结构。可和性给出维数约束，维数谱控制ζ函数极点，Wodzicki残数则提供非交换积分的典型来源。 谱不变量还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 谱不变量的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -748,8 +1120,20 @@
     {
       "chinese_name": "正则谱三元组",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何和伪微分分析中的一种算子或谱不变量。",
+        "它要求代数和交换子在 $|D|$ 导出的微分下足够光滑。",
+        "热核展开常写作 $\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$。",
+        "正则性保证伪微分演算和局部指标公式可展开。",
+        "它的英文译名是 regular spectral triplet。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 伪微分分析 算子 谱不变量",
+        "|D|微分 光滑性",
+        "$\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$",
+        "伪微分演算 局部指标展开",
+        "regular spectral triplet"
+      ],
       "explanation_markdown": "正则谱三元组用代数、Hilbert空间和Dirac型算子描述非交换空间的微分几何。正则谱三元组的核心是Dirac谱、热核渐近和非交换积分，和同族术语的分界也主要落在这些数据上。常写成 $(\\mathcal A,H,D)$，其中 $\\mathcal A$ 是坐标代数，$H$ 是表示空间，$D$ 是自伴算子。有界交换子 $[D,a]$ 和 $D$ 的谱决定距离、维数与指标信息。\n\n正则谱三元组把点集和坐标图退到次要位置，由代数和算子关系恢复几何量。偶谱三元组多出分次 $\\Gamma$，实谱三元组多出反线性算子 $J$，奇谱三元组则不带分次结构。 正则谱三元组还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -772,8 +1156,20 @@
     {
       "chinese_name": "可和性",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何和伪微分分析中的一种算子或谱不变量。",
+        "它控制Dirac型算子的特征值衰减速度。",
+        "热核展开常写作 $\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$。",
+        "若 $|D|^{-p}$ 属于适当迹理想，维数可被视作不超过 $p$。",
+        "它的英文译名是 compatibility。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 伪微分分析 算子 谱不变量",
+        "特征值衰减 Dirac型算子",
+        "$\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$",
+        "迹理想 维数界",
+        "compatibility"
+      ],
       "explanation_markdown": "可和性从Dirac型算子的谱和伪微分演算中读取几何量。可和性的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$，其中 $D$ 是算子，$a_k$ 是热核系数，$n$ 是维数。谱的渐近展开记录体积、曲率和残数。\n\n可和性关注的不是单个特征值，而是谱在高能极限下的整体结构。可和性给出维数约束，维数谱控制ζ函数极点，Wodzicki残数则提供非交换积分的典型来源。 可和性还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 可和性的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -796,8 +1192,20 @@
     {
       "chinese_name": "维数谱",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何和伪微分分析中的一种算子或谱不变量。",
+        "它由谱ζ函数可能出现的极点组成。",
+        "热核展开常写作 $\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$。",
+        "极点位置决定热核渐近中的维数信息和残数项。",
+        "它的英文译名是 dimension spectrum。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 伪微分分析 算子 谱不变量",
+        "谱ζ函数 极点集合",
+        "$\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$",
+        "极点位置 热核渐近 残数项",
+        "dimension spectrum"
+      ],
       "explanation_markdown": "维数谱从Dirac型算子的谱和伪微分演算中读取几何量。维数谱的核心是Dirac谱、热核渐近和非交换积分，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$，其中 $D$ 是算子，$a_k$ 是热核系数，$n$ 是维数。谱的渐近展开记录体积、曲率和残数。\n\n维数谱关注的不是单个特征值，而是谱在高能极限下的整体结构。可和性给出维数约束，维数谱控制ζ函数极点，Wodzicki残数则提供非交换积分的典型来源。 维数谱还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 维数谱的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -820,8 +1228,20 @@
     {
       "chinese_name": "一形式模",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种代数、空间或动力系统对象。",
+        "它由代数元素和Dirac交换子张成。",
+        "配对可写作 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$。",
+        "表达非交换微分的一阶部分，可作为规范势的载体。",
+        "它的英文译名是 one form module。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 代数 空间 动力系统对象",
+        "代数元素 Dirac交换子 张成",
+        "$K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$",
+        "一阶微分 规范势载体",
+        "one form module"
+      ],
       "explanation_markdown": "一形式模用非交换分次代数、模范畴或导出范畴替代普通坐标环。一形式模的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$，其中 $A$ 是分次代数，$\\operatorname{tors}A$ 是挠对象范畴。点、线和射影空间由模的同调性质来刻画。\n\n一形式模不要求存在足够多的交换坐标点；几何对象由态射范畴、Calabi-Yau条件、超势或Azumaya数据识别。Sklyanin代数、量子射影平面和非交换椭圆曲线是常见模型。 一形式模还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 一形式模的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -844,8 +1264,20 @@
     {
       "chinese_name": "内涨落",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种代数、空间或动力系统对象。",
+        "它把Dirac型算子加上由一形式构成的自伴扰动。",
+        "配对可写作 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$。",
+        "几何内部自由度会表现为规范场和Higgs型项。",
+        "它的英文译名是 internal fluctuation。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 代数 空间 动力系统对象",
+        "Dirac型算子 一形式 自伴扰动",
+        "$K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$",
+        "内部自由度 规范场 Higgs项",
+        "internal fluctuation"
+      ],
       "explanation_markdown": "内涨落把拓扑、数论或量子统计中的对象放进非交换几何框架。内涨落的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$，其中 $K_0(A)$ 是K理论群，$HC^{2n}(A)$ 是循环上同调，配对给出数值不变量。代数、谱和同调三类数据共同描述空间。\n\n内涨落常用于处理普通商空间难以描述的几何。它保留可计算的不变量，同时允许坐标函数不交换，因此能连接量子群作用、模空间量子化和算术动力系统。 内涨落还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -868,8 +1300,20 @@
     {
       "chinese_name": "规范涨落",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种代数、空间或动力系统对象。",
+        "它描述谱数据在内自同构作用下产生的规范自由度。",
+        "配对可写作 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$。",
+        "算子扰动的变换律对应物理中的规范势变化。",
+        "它的英文译名是 gauge fluctuations。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 代数 空间 动力系统对象",
+        "内自同构 规范自由度",
+        "$K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$",
+        "算子扰动 规范势变化",
+        "gauge fluctuations"
+      ],
       "explanation_markdown": "规范涨落把主丛、连接和规范场改写到非交换代数上。规范涨落的核心是Hopf余作用、连接形式和协变微分，和同族术语的分界也主要落在这些数据上。常写成 $A\\otimes_B A\\to A\\otimes H,\\,a\\otimes a'\\mapsto a\\rho(a')$，其中 $H$ 是霍普夫代数，$\\rho$ 是余作用，$B=A^{coH}$ 是不变量代数。这个映射可逆时得到Hopf-Galois扩张。\n\n规范涨落的重点在于余作用、微分演算和连接形式如何相容。强连接给出投影模上的协变导数，双协变演算则让量子群的左右平移同时参与微分结构。 规范涨落还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 规范涨落的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -892,8 +1336,20 @@
     {
       "chinese_name": "谱作用量",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何和伪微分分析中的一种算子或谱不变量。",
+        "它把Dirac型算子的谱截断函数作为作用量。",
+        "热核展开常写作 $\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$。",
+        "热核展开把该作用量转成宇宙常数、曲率和规范场项。",
+        "它的英文译名是 spectrum action。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 伪微分分析 算子 谱不变量",
+        "谱截断函数 作用量",
+        "$\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$",
+        "热核展开 曲率 规范场项",
+        "spectrum action"
+      ],
       "explanation_markdown": "谱作用量从Dirac型算子的谱和伪微分演算中读取几何量。谱作用量的核心是Dirac谱、热核渐近和非交换积分，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$，其中 $D$ 是算子，$a_k$ 是热核系数，$n$ 是维数。谱的渐近展开记录体积、曲率和残数。\n\n谱作用量关注的不是单个特征值，而是谱在高能极限下的整体结构。可和性给出维数约束，维数谱控制ζ函数极点，Wodzicki残数则提供非交换积分的典型来源。 谱作用量还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 谱作用量的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -916,8 +1372,20 @@
     {
       "chinese_name": "热核展开",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何和伪微分分析中的一种算子或谱不变量。",
+        "它研究小时间极限下热算子迹的渐近级数。",
+        "热核渐近常写作 $\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$。",
+        "系数逐项编码局部几何量，是谱作用量计算的主要入口。",
+        "它的英文译名是 thermal kernel expansion。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 伪微分分析 算子 谱不变量",
+        "小时间 热算子迹 渐近级数",
+        "$\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$",
+        "系数 局部几何 谱作用量",
+        "thermal kernel expansion"
+      ],
       "explanation_markdown": "热核展开从Dirac型算子的谱和伪微分演算中读取几何量。热核展开的核心是Dirac谱、热核渐近和非交换积分，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$，其中 $D$ 是算子，$a_k$ 是热核系数，$n$ 是维数。谱的渐近展开记录体积、曲率和残数。\n\n热核展开关注的不是单个特征值，而是谱在高能极限下的整体结构。可和性给出维数约束，维数谱控制ζ函数极点，Wodzicki残数则提供非交换积分的典型来源。 热核展开还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 热核展开的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -940,8 +1408,20 @@
     {
       "chinese_name": "泽塔函数正则化",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何和伪微分分析中的一种算子或谱不变量。",
+        "它用谱ζ函数的解析延拓定义发散行列式或迹。",
+        "热核展开常写作 $\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$。",
+        "极点和有限部分替代普通无穷求和。",
+        "它的英文译名是 zeta function regularization。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 伪微分分析 算子 谱不变量",
+        "谱ζ函数 解析延拓 发散迹",
+        "$\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$",
+        "极点 有限部分 无穷求和",
+        "zeta function regularization"
+      ],
       "explanation_markdown": "泽塔函数正则化从Dirac型算子的谱和伪微分演算中读取几何量。泽塔函数正则化的核心是Dirac谱、热核渐近和非交换积分，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$，其中 $D$ 是算子，$a_k$ 是热核系数，$n$ 是维数。谱的渐近展开记录体积、曲率和残数。\n\n泽塔函数正则化关注的不是单个特征值，而是谱在高能极限下的整体结构。可和性给出维数约束，维数谱控制ζ函数极点，Wodzicki残数则提供非交换积分的典型来源。 泽塔函数正则化还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -964,8 +1444,20 @@
     {
       "chinese_name": "非交换残数",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何和伪微分分析中的一种算子或谱不变量。",
+        "它是在非交换伪微分演算中提取阶数负维项的迹型泛函。",
+        "热核展开常写作 $\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$。",
+        "只对特定符号项有贡献，是非交换积分的来源之一。",
+        "它的英文译名是 non commutative residual。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 伪微分分析 算子 谱不变量",
+        "伪微分演算 负维项 迹型泛函",
+        "$\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$",
+        "特定符号项 非交换积分",
+        "non commutative residual"
+      ],
       "explanation_markdown": "非交换残数从Dirac型算子的谱和伪微分演算中读取几何量。非交换残数的核心是Dirac谱、热核渐近和非交换积分，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$，其中 $D$ 是算子，$a_k$ 是热核系数，$n$ 是维数。谱的渐近展开记录体积、曲率和残数。\n\n非交换残数关注的不是单个特征值，而是谱在高能极限下的整体结构。可和性给出维数约束，维数谱控制ζ函数极点，Wodzicki残数则提供非交换积分的典型来源。 非交换残数还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 非交换残数的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -988,8 +1480,20 @@
     {
       "chinese_name": "沃季茨基残数",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何和伪微分分析中的一种算子或谱不变量。",
+        "它是经典伪微分算子代数上本质唯一的迹。",
+        "热核展开常写作 $\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$。",
+        "取符号的 $-n$ 阶球面平均，连接Dixmier迹和积分公式。",
+        "它的英文译名是 wojtsky residual。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 伪微分分析 算子 谱不变量",
+        "经典伪微分算子 唯一迹",
+        "$\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$",
+        "-n阶符号 球面平均 Dixmier迹",
+        "wojtsky residual"
+      ],
       "explanation_markdown": "沃季茨基残数从Dirac型算子的谱和伪微分演算中读取几何量。沃季茨基残数的核心是Dirac谱、热核渐近和非交换积分，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$，其中 $D$ 是算子，$a_k$ 是热核系数，$n$ 是维数。谱的渐近展开记录体积、曲率和残数。\n\n沃季茨基残数关注的不是单个特征值，而是谱在高能极限下的整体结构。可和性给出维数约束，维数谱控制ζ函数极点，Wodzicki残数则提供非交换积分的典型来源。 沃季茨基残数还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1012,8 +1516,20 @@
     {
       "chinese_name": "伪微分算子",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何和伪微分分析中的一种算子或谱不变量。",
+        "它用符号函数推广微分算子。",
+        "热核展开常写作 $\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$。",
+        "非整数阶和奇异核使热核、ζ函数与局部指标公式可统一处理。",
+        "它的英文译名是 pseudo differential operator。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 伪微分分析 算子 谱不变量",
+        "符号函数 微分算子推广",
+        "$\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$",
+        "非整数阶 奇异核 热核 ζ函数",
+        "pseudo differential operator"
+      ],
       "explanation_markdown": "伪微分算子从Dirac型算子的谱和伪微分演算中读取几何量。伪微分算子的核心是Dirac谱、热核渐近和非交换积分，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$，其中 $D$ 是算子，$a_k$ 是热核系数，$n$ 是维数。谱的渐近展开记录体积、曲率和残数。\n\n伪微分算子关注的不是单个特征值，而是谱在高能极限下的整体结构。可和性给出维数约束，维数谱控制ζ函数极点，Wodzicki残数则提供非交换积分的典型来源。 伪微分算子还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 伪微分算子的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1036,8 +1552,20 @@
     {
       "chinese_name": "微局部分析",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何和伪微分分析中的一种算子或谱不变量。",
+        "它同时研究空间位置和余切方向上的奇性。",
+        "热核展开常写作 $\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$。",
+        "波前集记录分布在哪些方向不可光滑。",
+        "它的英文译名是 microlocal analysis。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 伪微分分析 算子 谱不变量",
+        "空间位置 余切方向 奇性",
+        "$\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$",
+        "波前集 方向 不光滑",
+        "microlocal analysis"
+      ],
       "explanation_markdown": "微局部分析从Dirac型算子的谱和伪微分演算中读取几何量。微局部分析的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{Tr}(e^{-tD^2})\\sim\\sum_k a_k t^{(k-n)/2}$，其中 $D$ 是算子，$a_k$ 是热核系数，$n$ 是维数。谱的渐近展开记录体积、曲率和残数。\n\n微局部分析关注的不是单个特征值，而是谱在高能极限下的整体结构。可和性给出维数约束，维数谱控制ζ函数极点，Wodzicki残数则提供非交换积分的典型来源。 微局部分析还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 微局部分析的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1060,8 +1588,20 @@
     {
       "chinese_name": "非交换微分形式",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种代数、空间或动力系统对象。",
+        "它把普通微分形式替换为代数上的微分分次对象。",
+        "配对可写作 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$。",
+        "乘法顺序保留下来，外微分仍满足分次Leibniz规则。",
+        "它的英文译名是 noncommutative differential form。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 代数 空间 动力系统对象",
+        "代数 微分分次对象",
+        "$K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$",
+        "乘法顺序 外微分 分次Leibniz",
+        "noncommutative differential form"
+      ],
       "explanation_markdown": "非交换微分形式把拓扑、数论或量子统计中的对象放进非交换几何框架。非交换微分形式的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$，其中 $K_0(A)$ 是K理论群，$HC^{2n}(A)$ 是循环上同调，配对给出数值不变量。代数、谱和同调三类数据共同描述空间。\n\n非交换微分形式常用于处理普通商空间难以描述的几何。它保留可计算的不变量，同时允许坐标函数不交换，因此能连接量子群作用、模空间量子化和算术动力系统。 非交换微分形式还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1084,8 +1624,20 @@
     {
       "chinese_name": "通用微分代数",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种代数、空间或动力系统对象。",
+        "它由代数自由生成一套满足Leibniz规则的微分形式。",
+        "配对可写作 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$。",
+        "任何微分演算都可由它通过商得到。",
+        "它的英文译名是 general differential algebra。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 代数 空间 动力系统对象",
+        "自由生成 微分形式 Leibniz",
+        "$K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$",
+        "微分演算 商",
+        "general differential algebra"
+      ],
       "explanation_markdown": "通用微分代数把拓扑、数论或量子统计中的对象放进非交换几何框架。通用微分代数的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$，其中 $K_0(A)$ 是K理论群，$HC^{2n}(A)$ 是循环上同调，配对给出数值不变量。代数、谱和同调三类数据共同描述空间。\n\n通用微分代数常用于处理普通商空间难以描述的几何。它保留可计算的不变量，同时允许坐标函数不交换，因此能连接量子群作用、模空间量子化和算术动力系统。 通用微分代数还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1108,8 +1660,20 @@
     {
       "chinese_name": "孔涅陈字符",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种同调或指标结构。",
+        "它把K同调或Fredholm模送入循环上同调。",
+        "指标配对可写作 $\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$。",
+        "该字符使算子指标可以通过代数余循环配对计算。",
+        "它的英文译名是 connes chern character。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 同调 指标结构",
+        "K同调 Fredholm模 循环上同调",
+        "$\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$",
+        "算子指标 代数余循环配对",
+        "connes chern character"
+      ],
       "explanation_markdown": "孔涅陈字符用同调语言表达非交换空间中的指标和特征类。孔涅陈字符的核心是循环上同调、K理论配对和指标映射，和同族术语的分界也主要落在这些数据上。常写成 $\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$，其中 $\\operatorname{Ch}(D)$ 是陈字符，$e$ 是投影，右边是Fredholm指标。循环上同调提供与K理论配对的余循环。\n\n孔涅陈字符连接代数链复形、K理论和几何指标。Hochschild循环保留乘法的一阶同调，周期循环上同调加入Connes算子 $B$，Baum-Connes型装配映射则把群作用和指数问题联系起来。 孔涅陈字符还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1132,8 +1696,20 @@
     {
       "chinese_name": "雅菲洛夫对偶",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种同调或指标结构。",
+        "它表示某类非交换几何对象之间的对偶关系。",
+        "指标配对可写作 $\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$。",
+        "对偶会交换K理论与同调侧的数据，保持配对数值。",
+        "它的英文译名是 yafilov duality。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 同调 指标结构",
+        "非交换几何 对偶关系",
+        "$\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$",
+        "K理论 同调数据 配对数值",
+        "yafilov duality"
+      ],
       "explanation_markdown": "雅菲洛夫对偶用同调语言表达非交换空间中的指标和特征类。雅菲洛夫对偶的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$，其中 $\\operatorname{Ch}(D)$ 是陈字符，$e$ 是投影，右边是Fredholm指标。循环上同调提供与K理论配对的余循环。\n\n雅菲洛夫对偶连接代数链复形、K理论和几何指标。Hochschild循环保留乘法的一阶同调，周期循环上同调加入Connes算子 $B$，Baum-Connes型装配映射则把群作用和指数问题联系起来。 雅菲洛夫对偶还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1156,8 +1732,20 @@
     {
       "chinese_name": "鲍姆-孔涅猜想",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种同调或指标结构。",
+        "它把群作用的拓扑K同调和约化群C*代数K理论联系起来。",
+        "指标配对可写作 $\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$。",
+        "装配映射若为同构，指数问题可由拓扑侧计算。",
+        "它的英文译名是 baum connes conjecture。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 同调 指标结构",
+        "群作用 拓扑K同调 约化群C*代数",
+        "$\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$",
+        "装配映射 同构 指数问题",
+        "baum connes conjecture"
+      ],
       "explanation_markdown": "鲍姆-孔涅猜想用同调语言表达非交换空间中的指标和特征类。鲍姆-孔涅猜想的核心是循环上同调、K理论配对和指标映射，和同族术语的分界也主要落在这些数据上。常写成 $\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$，其中 $\\operatorname{Ch}(D)$ 是陈字符，$e$ 是投影，右边是Fredholm指标。循环上同调提供与K理论配对的余循环。\n\n鲍姆-孔涅猜想连接代数链复形、K理论和几何指标。Hochschild循环保留乘法的一阶同调，周期循环上同调加入Connes算子 $B$，Baum-Connes型装配映射则把群作用和指数问题联系起来。 鲍姆-孔涅猜想还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1180,8 +1768,20 @@
     {
       "chinese_name": "装配映射",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种同调或指标结构。",
+        "它从几何或拓扑K同调出发到算子代数K理论。",
+        "指标配对可写作 $\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$。",
+        "该映射是Baum-Connes型命题中需要检验的核心箭头。",
+        "它的英文译名是 assembly mapping。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 同调 指标结构",
+        "拓扑K同调 算子代数K理论",
+        "$\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$",
+        "Baum-Connes 关键箭头",
+        "assembly mapping"
+      ],
       "explanation_markdown": "装配映射用同调语言表达非交换空间中的指标和特征类。装配映射的核心是循环上同调、K理论配对和指标映射，和同族术语的分界也主要落在这些数据上。常写成 $\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$，其中 $\\operatorname{Ch}(D)$ 是陈字符，$e$ 是投影，右边是Fredholm指标。循环上同调提供与K理论配对的余循环。\n\n装配映射连接代数链复形、K理论和几何指标。Hochschild循环保留乘法的一阶同调，周期循环上同调加入Connes算子 $B$，Baum-Connes型装配映射则把群作用和指数问题联系起来。 装配映射还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 装配映射的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1204,8 +1804,20 @@
     {
       "chinese_name": "粗几何",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中处理叶状结构的一种对象。",
+        "它研究大尺度下的度量空间性质。",
+        "卷积乘法可写作 $(f*g)(\\gamma)=\\sum_{\\gamma_1\\gamma_2=\\gamma}f(\\gamma_1)g(\\gamma_2)$。",
+        "只保留远距离结构，忽略有界范围内的局部扰动。",
+        "它的英文译名是 rough geometry。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 叶状结构 对象",
+        "大尺度 度量空间性质",
+        "$(f*g)(\\gamma)=\\sum_{\\gamma_1\\gamma_2=\\gamma}f(\\gamma_1)g(\\gamma_2)$",
+        "远距离结构 有界扰动忽略",
+        "rough geometry"
+      ],
       "explanation_markdown": "粗几何用同调语言表达非交换空间中的指标和特征类。粗几何的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$，其中 $\\operatorname{Ch}(D)$ 是陈字符，$e$ 是投影，右边是Fredholm指标。循环上同调提供与K理论配对的余循环。\n\n粗几何连接代数链复形、K理论和几何指标。Hochschild循环保留乘法的一阶同调，周期循环上同调加入Connes算子 $B$，Baum-Connes型装配映射则把群作用和指数问题联系起来。 粗几何还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 粗几何的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1228,8 +1840,20 @@
     {
       "chinese_name": "粗鲍姆-孔涅猜想",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种同调或指标结构。",
+        "它把大尺度几何的K同调与Roe代数K理论相连。",
+        "指标配对可写作 $\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$。",
+        "适合非紧空间，关注粗装配映射是否为同构。",
+        "它的英文译名是 coarse baum connes conjecture。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 同调 指标结构",
+        "大尺度K同调 Roe代数K理论",
+        "$\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$",
+        "非紧空间 粗装配同构",
+        "coarse baum connes conjecture"
+      ],
       "explanation_markdown": "粗鲍姆-孔涅猜想用同调语言表达非交换空间中的指标和特征类。粗鲍姆-孔涅猜想的核心是循环上同调、K理论配对和指标映射，和同族术语的分界也主要落在这些数据上。常写成 $\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$，其中 $\\operatorname{Ch}(D)$ 是陈字符，$e$ 是投影，右边是Fredholm指标。循环上同调提供与K理论配对的余循环。\n\n粗鲍姆-孔涅猜想连接代数链复形、K理论和几何指标。Hochschild循环保留乘法的一阶同调，周期循环上同调加入Connes算子 $B$，Baum-Connes型装配映射则把群作用和指数问题联系起来。 粗鲍姆-孔涅猜想还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1252,8 +1876,20 @@
     {
       "chinese_name": "量子群作用",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的量子丛或协变微分结构。",
+        "它让Hopf代数或量子群以余作用方式作用在非交换代数上。",
+        "典型映射可写作 $A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$。",
+        "坐标代数的协变性替代经典群对空间点的作用。",
+        "它的英文译名是 quantum group action。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 量子丛 协变微分结构",
+        "Hopf代数 余作用 非交换代数",
+        "$A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$",
+        "协变性 经典点作用替代",
+        "quantum group action"
+      ],
       "explanation_markdown": "量子群作用把主丛、连接和规范场改写到非交换代数上。量子群作用的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $A\\otimes_B A\\to A\\otimes H,\\,a\\otimes a'\\mapsto a\\rho(a')$，其中 $H$ 是霍普夫代数，$\\rho$ 是余作用，$B=A^{coH}$ 是不变量代数。这个映射可逆时得到Hopf-Galois扩张。\n\n量子群作用的重点在于余作用、微分演算和连接形式如何相容。强连接给出投影模上的协变导数，双协变演算则让量子群的左右平移同时参与微分结构。 量子群作用还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 量子群作用的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1276,8 +1912,20 @@
     {
       "chinese_name": "同变谱三元组",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的量子丛或协变微分结构。",
+        "它要求谱数据与某个群或量子群作用相容。",
+        "典型映射可写作 $A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$。",
+        "Dirac型算子和表示空间必须尊重对称作用。",
+        "它的英文译名是 covariant spectrum triplet。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 量子丛 协变微分结构",
+        "谱数据 群作用 相容",
+        "$A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$",
+        "Dirac型算子 表示空间 对称作用",
+        "covariant spectrum triplet"
+      ],
       "explanation_markdown": "同变谱三元组用代数、Hilbert空间和Dirac型算子描述非交换空间的微分几何。同变谱三元组的核心是Dirac谱、热核渐近和非交换积分，和同族术语的分界也主要落在这些数据上。常写成 $(\\mathcal A,H,D)$，其中 $\\mathcal A$ 是坐标代数，$H$ 是表示空间，$D$ 是自伴算子。有界交换子 $[D,a]$ 和 $D$ 的谱决定距离、维数与指标信息。\n\n同变谱三元组把点集和坐标图退到次要位置，由代数和算子关系恢复几何量。偶谱三元组多出分次 $\\Gamma$，实谱三元组多出反线性算子 $J$，奇谱三元组则不带分次结构。 同变谱三元组还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1300,8 +1948,20 @@
     {
       "chinese_name": "德林费尔德扭曲",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的量子丛或协变微分结构。",
+        "它用二上链改变Hopf余结构或范畴结合编织。",
+        "典型映射可写作 $A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$。",
+        "乘法形变可由扭曲元素控制，常生成等谱型例子。",
+        "它的英文译名是 drinkinglinfield twist。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 量子丛 协变微分结构",
+        "二上链 Hopf余结构 扭曲",
+        "$A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$",
+        "扭曲元素 乘法形变 等谱例子",
+        "drinkinglinfield twist"
+      ],
       "explanation_markdown": "德林费尔德扭曲把经典空间的坐标乘法改成非交换或形变乘法。德林费尔德扭曲的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $UV=e^{2\\pi i\\theta}VU$，其中 $U,V$ 是酉生成元，$\\theta$ 是形变参数；星积情形也可写成 $f\\star g=fg+\\frac{i\\hbar}{2}\\{f,g\\}+O(\\hbar^2)$。这些关系保留了原空间的部分对称性。\n\n德林费尔德扭曲的几何信息通常通过K理论、迹、谱三元组或模范畴读取。有理参数可能给出Azumaya型或矩阵代数现象，无理参数则更像真正的非交换空间。 德林费尔德扭曲还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1324,8 +1984,20 @@
     {
       "chinese_name": "辫张量范畴",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的量子丛或协变微分结构。",
+        "它同时带张量积和满足六边形公理的编织。",
+        "典型映射可写作 $A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$。",
+        "对象交换带路径信息，是量子群表示和结不变量的共同环境。",
+        "它的英文译名是 braided tensor category。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 量子丛 协变微分结构",
+        "张量积 六边形公理 编织",
+        "$A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$",
+        "路径信息 表示 结不变量",
+        "braided tensor category"
+      ],
       "explanation_markdown": "辫张量范畴把主丛、连接和规范场改写到非交换代数上。辫张量范畴的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $A\\otimes_B A\\to A\\otimes H,\\,a\\otimes a'\\mapsto a\\rho(a')$，其中 $H$ 是霍普夫代数，$\\rho$ 是余作用，$B=A^{coH}$ 是不变量代数。这个映射可逆时得到Hopf-Galois扩张。\n\n辫张量范畴的重点在于余作用、微分演算和连接形式如何相容。强连接给出投影模上的协变导数，双协变演算则让量子群的左右平移同时参与微分结构。 辫张量范畴还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 辫张量范畴的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1348,8 +2020,20 @@
     {
       "chinese_name": "模块范畴",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的量子丛或协变微分结构。",
+        "它是受一个张量范畴作用的范畴。",
+        "典型映射可写作 $A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$。",
+        "在非交换几何中可描述边界条件、缺陷或代数上的对称作用。",
+        "它的英文译名是 modular category。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 量子丛 协变微分结构",
+        "张量范畴作用 范畴",
+        "$A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$",
+        "边界条件 缺陷 对称作用",
+        "modular category"
+      ],
       "explanation_markdown": "模块范畴把主丛、连接和规范场改写到非交换代数上。模块范畴的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $A\\otimes_B A\\to A\\otimes H,\\,a\\otimes a'\\mapsto a\\rho(a')$，其中 $H$ 是霍普夫代数，$\\rho$ 是余作用，$B=A^{coH}$ 是不变量代数。这个映射可逆时得到Hopf-Galois扩张。\n\n模块范畴的重点在于余作用、微分演算和连接形式如何相容。强连接给出投影模上的协变导数，双协变演算则让量子群的左右平移同时参与微分结构。 模块范畴还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 模块范畴的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1372,8 +2056,20 @@
     {
       "chinese_name": "非交换主丛",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的量子丛或协变微分结构。",
+        "它把主丛的自由群作用替换为Hopf-Galois型扩张。",
+        "典型映射可写作 $A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$。",
+        "典型映射可逆是代数版的局部平凡自由性条件。",
+        "它的英文译名是 non commutative main bundle。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 量子丛 协变微分结构",
+        "主丛 自由作用 Hopf-Galois扩张",
+        "$A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$",
+        "典型映射可逆 自由性条件",
+        "non commutative main bundle"
+      ],
       "explanation_markdown": "非交换主丛把主丛、连接和规范场改写到非交换代数上。非交换主丛的核心是Hopf余作用、连接形式和协变微分，和同族术语的分界也主要落在这些数据上。常写成 $A\\otimes_B A\\to A\\otimes H,\\,a\\otimes a'\\mapsto a\\rho(a')$，其中 $H$ 是霍普夫代数，$\\rho$ 是余作用，$B=A^{coH}$ 是不变量代数。这个映射可逆时得到Hopf-Galois扩张。\n\n非交换主丛的重点在于余作用、微分演算和连接形式如何相容。强连接给出投影模上的协变导数，双协变演算则让量子群的左右平移同时参与微分结构。 非交换主丛还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 非交换主丛的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1396,8 +2092,20 @@
     {
       "chinese_name": "霍普夫伽罗瓦扩张",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的量子丛或协变微分结构。",
+        "它由不变量子代数和Hopf余作用形成。",
+        "典型映射可写作 $A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$。",
+        "典型映射双射时，扩张表现为非交换主丛。",
+        "它的英文译名是 hopf galois expansion。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 量子丛 协变微分结构",
+        "不变量子代数 Hopf余作用",
+        "$A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$",
+        "典型映射双射 主丛行为",
+        "hopf galois expansion"
+      ],
       "explanation_markdown": "霍普夫伽罗瓦扩张把主丛、连接和规范场改写到非交换代数上。霍普夫伽罗瓦扩张的核心是Hopf余作用、连接形式和协变微分，和同族术语的分界也主要落在这些数据上。常写成 $A\\otimes_B A\\to A\\otimes H,\\,a\\otimes a'\\mapsto a\\rho(a')$，其中 $H$ 是霍普夫代数，$\\rho$ 是余作用，$B=A^{coH}$ 是不变量代数。这个映射可逆时得到Hopf-Galois扩张。\n\n霍普夫伽罗瓦扩张的重点在于余作用、微分演算和连接形式如何相容。强连接给出投影模上的协变导数，双协变演算则让量子群的左右平移同时参与微分结构。 霍普夫伽罗瓦扩张还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1420,8 +2128,20 @@
     {
       "chinese_name": "量子主丛",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的量子丛或协变微分结构。",
+        "它在量子群对称下重写主丛和结构群。",
+        "典型映射可写作 $A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$。",
+        "纤维方向由Hopf代数控制，连接由协变微分演算描述。",
+        "它的英文译名是 quantum main bundle。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 量子丛 协变微分结构",
+        "量子群对称 主丛 结构群",
+        "$A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$",
+        "Hopf纤维 协变微分演算",
+        "quantum main bundle"
+      ],
       "explanation_markdown": "量子主丛把主丛、连接和规范场改写到非交换代数上。量子主丛的核心是Hopf余作用、连接形式和协变微分，和同族术语的分界也主要落在这些数据上。常写成 $A\\otimes_B A\\to A\\otimes H,\\,a\\otimes a'\\mapsto a\\rho(a')$，其中 $H$ 是霍普夫代数，$\\rho$ 是余作用，$B=A^{coH}$ 是不变量代数。这个映射可逆时得到Hopf-Galois扩张。\n\n量子主丛的重点在于余作用、微分演算和连接形式如何相容。强连接给出投影模上的协变导数，双协变演算则让量子群的左右平移同时参与微分结构。 量子主丛还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 量子主丛的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1444,8 +2164,20 @@
     {
       "chinese_name": "连接形式",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的量子丛或协变微分结构。",
+        "它是非交换丛上描述水平分解的代数一形式。",
+        "典型映射可写作 $A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$。",
+        "必须与余作用相容，才能定义投影模上的协变导数。",
+        "它的英文译名是 connection form。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 量子丛 协变微分结构",
+        "水平分解 代数一形式",
+        "$A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$",
+        "余作用相容 投影模 协变导数",
+        "connection form"
+      ],
       "explanation_markdown": "连接形式把主丛、连接和规范场改写到非交换代数上。连接形式的核心是Hopf余作用、连接形式和协变微分，和同族术语的分界也主要落在这些数据上。常写成 $A\\otimes_B A\\to A\\otimes H,\\,a\\otimes a'\\mapsto a\\rho(a')$，其中 $H$ 是霍普夫代数，$\\rho$ 是余作用，$B=A^{coH}$ 是不变量代数。这个映射可逆时得到Hopf-Galois扩张。\n\n连接形式的重点在于余作用、微分演算和连接形式如何相容。强连接给出投影模上的协变导数，双协变演算则让量子群的左右平移同时参与微分结构。 连接形式还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 连接形式的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1468,8 +2200,20 @@
     {
       "chinese_name": "强连接",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的量子丛或协变微分结构。",
+        "它是Hopf-Galois扩张中满足额外提升性质的连接。",
+        "典型映射可写作 $A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$。",
+        "可显式给出投影模和Chern类计算所需的数据。",
+        "它的英文译名是 strong connection。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 量子丛 协变微分结构",
+        "Hopf-Galois 扩张 提升性质",
+        "$A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$",
+        "投影模 Chern类 数据",
+        "strong connection"
+      ],
       "explanation_markdown": "强连接把主丛、连接和规范场改写到非交换代数上。强连接的核心是Hopf余作用、连接形式和协变微分，和同族术语的分界也主要落在这些数据上。常写成 $A\\otimes_B A\\to A\\otimes H,\\,a\\otimes a'\\mapsto a\\rho(a')$，其中 $H$ 是霍普夫代数，$\\rho$ 是余作用，$B=A^{coH}$ 是不变量代数。这个映射可逆时得到Hopf-Galois扩张。\n\n强连接的重点在于余作用、微分演算和连接形式如何相容。强连接给出投影模上的协变导数，双协变演算则让量子群的左右平移同时参与微分结构。 强连接还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 强连接的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1492,8 +2236,20 @@
     {
       "chinese_name": "量子微分演算",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的量子丛或协变微分结构。",
+        "它在量子代数上指定一阶形式和外微分。",
+        "典型映射可写作 $A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$。",
+        "乘法非交换时，左右模结构和Leibniz规则都要单独控制。",
+        "它的英文译名是 quantum differential calculus。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 量子丛 协变微分结构",
+        "一阶形式 外微分 量子代数",
+        "$A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$",
+        "左右模结构 Leibniz规则",
+        "quantum differential calculus"
+      ],
       "explanation_markdown": "量子微分演算把主丛、连接和规范场改写到非交换代数上。量子微分演算的核心是Hopf余作用、连接形式和协变微分，和同族术语的分界也主要落在这些数据上。常写成 $A\\otimes_B A\\to A\\otimes H,\\,a\\otimes a'\\mapsto a\\rho(a')$，其中 $H$ 是霍普夫代数，$\\rho$ 是余作用，$B=A^{coH}$ 是不变量代数。这个映射可逆时得到Hopf-Galois扩张。\n\n量子微分演算的重点在于余作用、微分演算和连接形式如何相容。强连接给出投影模上的协变导数，双协变演算则让量子群的左右平移同时参与微分结构。 量子微分演算还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1516,8 +2272,20 @@
     {
       "chinese_name": "双协变微分演算",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的量子丛或协变微分结构。",
+        "它要求微分演算同时兼容量子群的左、右平移。",
+        "典型映射可写作 $A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$。",
+        "Woronowicz理论中，双侧协变性决定允许的一阶形式空间。",
+        "它的英文译名是 bicovariant differential calculus。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 量子丛 协变微分结构",
+        "左右平移 微分演算 协变",
+        "$A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$",
+        "双侧协变 一阶形式空间",
+        "bicovariant differential calculus"
+      ],
       "explanation_markdown": "双协变微分演算把主丛、连接和规范场改写到非交换代数上。双协变微分演算的核心是Hopf余作用、连接形式和协变微分，和同族术语的分界也主要落在这些数据上。常写成 $A\\otimes_B A\\to A\\otimes H,\\,a\\otimes a'\\mapsto a\\rho(a')$，其中 $H$ 是霍普夫代数，$\\rho$ 是余作用，$B=A^{coH}$ 是不变量代数。这个映射可逆时得到Hopf-Galois扩张。\n\n双协变微分演算的重点在于余作用、微分演算和连接形式如何相容。强连接给出投影模上的协变导数，双协变演算则让量子群的左右平移同时参与微分结构。 双协变微分演算还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1540,8 +2308,20 @@
     {
       "chinese_name": "瓦罗诺维奇演算",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的量子丛或协变微分结构。",
+        "它是紧量子群上由Woronowicz建立的协变微分框架。",
+        "典型映射可写作 $A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$。",
+        "一阶形式由量子群理想分类，兼容Hopf结构。",
+        "它的英文译名是 varonovich calculus。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 量子丛 协变微分结构",
+        "紧量子群 协变微分框架",
+        "$A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$",
+        "理想分类 Hopf结构",
+        "varonovich calculus"
+      ],
       "explanation_markdown": "瓦罗诺维奇演算把拓扑、数论或量子统计中的对象放进非交换几何框架。瓦罗诺维奇演算的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$，其中 $K_0(A)$ 是K理论群，$HC^{2n}(A)$ 是循环上同调，配对给出数值不变量。代数、谱和同调三类数据共同描述空间。\n\n瓦罗诺维奇演算常用于处理普通商空间难以描述的几何。它保留可计算的不变量，同时允许坐标函数不交换，因此能连接量子群作用、模空间量子化和算术动力系统。 瓦罗诺维奇演算还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1564,8 +2344,20 @@
     {
       "chinese_name": "布拉滕马尔斯登积",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的量子丛或协变微分结构。",
+        "它是与非交换或Poisson几何相关的乘法构造。",
+        "典型映射可写作 $A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$。",
+        "乘法规则通常反映约化、群作用或形变参数。",
+        "它的英文译名是 bratten marsden product。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 量子丛 协变微分结构",
+        "Poisson几何 乘法构造",
+        "$A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$",
+        "约化 群作用 形变参数",
+        "bratten marsden product"
+      ],
       "explanation_markdown": "布拉滕马尔斯登积把拓扑、数论或量子统计中的对象放进非交换几何框架。布拉滕马尔斯登积的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$，其中 $K_0(A)$ 是K理论群，$HC^{2n}(A)$ 是循环上同调，配对给出数值不变量。代数、谱和同调三类数据共同描述空间。\n\n布拉滕马尔斯登积常用于处理普通商空间难以描述的几何。它保留可计算的不变量，同时允许坐标函数不交换，因此能连接量子群作用、模空间量子化和算术动力系统。 布拉滕马尔斯登积还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1588,8 +2380,20 @@
     {
       "chinese_name": "非交换陈类",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的量子丛或协变微分结构。",
+        "它把向量丛的特征类推广到投影模和循环同调中。",
+        "典型映射可写作 $A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$。",
+        "投影幂等元的陈字符提供与K理论配对的类。",
+        "它的英文译名是 noncommutative chern class。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 量子丛 协变微分结构",
+        "投影模 循环同调 特征类",
+        "$A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$",
+        "幂等元陈字符 K理论配对",
+        "noncommutative chern class"
+      ],
       "explanation_markdown": "非交换陈类把拓扑、数论或量子统计中的对象放进非交换几何框架。非交换陈类的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$，其中 $K_0(A)$ 是K理论群，$HC^{2n}(A)$ 是循环上同调，配对给出数值不变量。代数、谱和同调三类数据共同描述空间。\n\n非交换陈类常用于处理普通商空间难以描述的几何。它保留可计算的不变量，同时允许坐标函数不交换，因此能连接量子群作用、模空间量子化和算术动力系统。 非交换陈类还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1612,8 +2416,20 @@
     {
       "chinese_name": "非交换规范场",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的量子丛或协变微分结构。",
+        "它把规范势写成代数上的一形式或Dirac算子涨落。",
+        "典型映射可写作 $A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$。",
+        "场强由非交换微分和乘法顺序决定，可能出现额外交换子项。",
+        "它的英文译名是 noncommutative gauge field。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 量子丛 协变微分结构",
+        "规范势 一形式 Dirac涨落",
+        "$A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$",
+        "场强 微分 乘法顺序 交换子项",
+        "noncommutative gauge field"
+      ],
       "explanation_markdown": "非交换规范场把主丛、连接和规范场改写到非交换代数上。非交换规范场的核心是Hopf余作用、连接形式和协变微分，和同族术语的分界也主要落在这些数据上。常写成 $A\\otimes_B A\\to A\\otimes H,\\,a\\otimes a'\\mapsto a\\rho(a')$，其中 $H$ 是霍普夫代数，$\\rho$ 是余作用，$B=A^{coH}$ 是不变量代数。这个映射可逆时得到Hopf-Galois扩张。\n\n非交换规范场的重点在于余作用、微分演算和连接形式如何相容。强连接给出投影模上的协变导数，双协变演算则让量子群的左右平移同时参与微分结构。 非交换规范场还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1636,8 +2452,20 @@
     {
       "chinese_name": "矩阵几何",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种代数、空间或动力系统对象。",
+        "它用矩阵代数近似或替代空间坐标代数。",
+        "配对可写作 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$。",
+        "有限矩阵自由度可模拟模糊空间，如模糊球面。",
+        "它的英文译名是 matrix geometry。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 代数 空间 动力系统对象",
+        "矩阵代数 空间坐标近似",
+        "$K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$",
+        "有限矩阵自由度 模糊空间",
+        "matrix geometry"
+      ],
       "explanation_markdown": "矩阵几何把拓扑、数论或量子统计中的对象放进非交换几何框架。矩阵几何的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$，其中 $K_0(A)$ 是K理论群，$HC^{2n}(A)$ 是循环上同调，配对给出数值不变量。代数、谱和同调三类数据共同描述空间。\n\n矩阵几何常用于处理普通商空间难以描述的几何。它保留可计算的不变量，同时允许坐标函数不交换，因此能连接量子群作用、模空间量子化和算术动力系统。 矩阵几何还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1660,8 +2488,20 @@
     {
       "chinese_name": "模空间量子化",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种代数、空间或动力系统对象。",
+        "它把参数空间的函数代数形变为非交换代数。",
+        "配对可写作 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$。",
+        "Poisson括号或辛结构决定形变的一阶项。",
+        "它的英文译名是 moduli space quantization。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 代数 空间 动力系统对象",
+        "参数空间 函数代数形变",
+        "$K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$",
+        "Poisson括号 辛结构 一阶项",
+        "moduli space quantization"
+      ],
       "explanation_markdown": "模空间量子化把拓扑、数论或量子统计中的对象放进非交换几何框架。模空间量子化的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$，其中 $K_0(A)$ 是K理论群，$HC^{2n}(A)$ 是循环上同调，配对给出数值不变量。代数、谱和同调三类数据共同描述空间。\n\n模空间量子化常用于处理普通商空间难以描述的几何。它保留可计算的不变量，同时允许坐标函数不交换，因此能连接量子群作用、模空间量子化和算术动力系统。 模空间量子化还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1684,8 +2524,20 @@
     {
       "chinese_name": "非交换代数簇",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换代数几何中的一种分次代数或模范畴结构。",
+        "它用非交换坐标环或范畴替代普通代数簇。",
+        "射影范畴常写作 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$。",
+        "几何点可能不足，模范畴和表示空间承担几何角色。",
+        "它的英文译名是 noncommutative algebraic cluster。"
+      ],
+      "fragmented_clues": [
+        "非交换代数几何 分次代数 模范畴结构",
+        "非交换坐标环 范畴 替代代数簇",
+        "$\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$",
+        "几何点不足 模范畴 表示空间",
+        "noncommutative algebraic cluster"
+      ],
       "explanation_markdown": "非交换代数簇用非交换分次代数、模范畴或导出范畴替代普通坐标环。非交换代数簇的核心是分次代数、模范畴和导出几何条件，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$，其中 $A$ 是分次代数，$\\operatorname{tors}A$ 是挠对象范畴。点、线和射影空间由模的同调性质来刻画。\n\n非交换代数簇不要求存在足够多的交换坐标点；几何对象由态射范畴、Calabi-Yau条件、超势或Azumaya数据识别。Sklyanin代数、量子射影平面和非交换椭圆曲线是常见模型。 非交换代数簇还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1708,8 +2560,20 @@
     {
       "chinese_name": "非交换概形",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换代数几何中的一种分次代数或模范畴结构。",
+        "它试图把概形语言推广到非交换环。",
+        "射影范畴常写作 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$。",
+        "开集和局部化不能照搬，常改用范畴或层化代数描述。",
+        "它的英文译名是 non commutative profile。"
+      ],
+      "fragmented_clues": [
+        "非交换代数几何 分次代数 模范畴结构",
+        "非交换环 概形推广",
+        "$\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$",
+        "局部化困难 范畴 层化代数",
+        "non commutative profile"
+      ],
       "explanation_markdown": "非交换概形用非交换分次代数、模范畴或导出范畴替代普通坐标环。非交换概形的核心是分次代数、模范畴和导出几何条件，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$，其中 $A$ 是分次代数，$\\operatorname{tors}A$ 是挠对象范畴。点、线和射影空间由模的同调性质来刻画。\n\n非交换概形不要求存在足够多的交换坐标点；几何对象由态射范畴、Calabi-Yau条件、超势或Azumaya数据识别。Sklyanin代数、量子射影平面和非交换椭圆曲线是常见模型。 非交换概形还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1732,8 +2596,20 @@
     {
       "chinese_name": "阿尔廷谢尔特正则代数",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换代数几何中的一种分次代数或模范畴结构。",
+        "它是非交换射影几何中模拟多项式环的分次代数。",
+        "射影范畴常写作 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$。",
+        "有限全局维数、Gorenstein条件和多项式型增长共同刻画正则性。",
+        "它的英文译名是 altin scheldt regular algebra。"
+      ],
+      "fragmented_clues": [
+        "非交换代数几何 分次代数 模范畴结构",
+        "分次代数 多项式环模拟",
+        "$\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$",
+        "有限全局维数 Gorenstein 多项式增长",
+        "altin scheldt regular algebra"
+      ],
       "explanation_markdown": "阿尔廷谢尔特正则代数用非交换分次代数、模范畴或导出范畴替代普通坐标环。阿尔廷谢尔特正则代数的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$，其中 $A$ 是分次代数，$\\operatorname{tors}A$ 是挠对象范畴。点、线和射影空间由模的同调性质来刻画。\n\n阿尔廷谢尔特正则代数不要求存在足够多的交换坐标点；几何对象由态射范畴、Calabi-Yau条件、超势或Azumaya数据识别。Sklyanin代数、量子射影平面和非交换椭圆曲线是常见模型。 阿尔廷谢尔特正则代数还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1756,8 +2632,20 @@
     {
       "chinese_name": "卡拉比-丘代数",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换代数几何中的一种分次代数或模范畴结构。",
+        "它是满足非交换Serre对偶平凡性的代数。",
+        "射影范畴常写作 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$。",
+        "双模分解中的移位对偶给出类似体积形式的条件。",
+        "它的英文译名是 calabi yau algebra。"
+      ],
+      "fragmented_clues": [
+        "非交换代数几何 分次代数 模范畴结构",
+        "Serre对偶平凡 代数",
+        "$\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$",
+        "双模分解 移位对偶 体积形式",
+        "calabi yau algebra"
+      ],
       "explanation_markdown": "卡拉比-丘代数用非交换分次代数、模范畴或导出范畴替代普通坐标环。卡拉比-丘代数的核心是分次代数、模范畴和导出几何条件，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$，其中 $A$ 是分次代数，$\\operatorname{tors}A$ 是挠对象范畴。点、线和射影空间由模的同调性质来刻画。\n\n卡拉比-丘代数不要求存在足够多的交换坐标点；几何对象由态射范畴、Calabi-Yau条件、超势或Azumaya数据识别。Sklyanin代数、量子射影平面和非交换椭圆曲线是常见模型。 卡拉比-丘代数还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1780,8 +2668,20 @@
     {
       "chinese_name": "雅可比代数",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换代数几何中的一种分次代数或模范畴结构。",
+        "它由箭图和势函数的循环导数取商得到。",
+        "射影范畴常写作 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$。",
+        "关系来自势的偏导，常描述Calabi-Yau型范畴。",
+        "它的英文译名是 jacobian algebraic。"
+      ],
+      "fragmented_clues": [
+        "非交换代数几何 分次代数 模范畴结构",
+        "箭图 势函数 循环导数商",
+        "$\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$",
+        "势偏导 Calabi-Yau范畴",
+        "jacobian algebraic"
+      ],
       "explanation_markdown": "雅可比代数用非交换分次代数、模范畴或导出范畴替代普通坐标环。雅可比代数的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$，其中 $A$ 是分次代数，$\\operatorname{tors}A$ 是挠对象范畴。点、线和射影空间由模的同调性质来刻画。\n\n雅可比代数不要求存在足够多的交换坐标点；几何对象由态射范畴、Calabi-Yau条件、超势或Azumaya数据识别。Sklyanin代数、量子射影平面和非交换椭圆曲线是常见模型。 雅可比代数还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 雅可比代数的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1804,8 +2704,20 @@
     {
       "chinese_name": "超势",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换代数几何中的一种分次代数或模范畴结构。",
+        "它是箭图路径代数中的循环势函数。",
+        "射影范畴常写作 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$。",
+        "对箭头取循环导数后产生Jacobian关系。",
+        "它的英文译名是 super potential。"
+      ],
+      "fragmented_clues": [
+        "非交换代数几何 分次代数 模范畴结构",
+        "箭图路径代数 循环势函数",
+        "$\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$",
+        "循环导数 Jacobian关系",
+        "super potential"
+      ],
       "explanation_markdown": "超势用非交换分次代数、模范畴或导出范畴替代普通坐标环。超势的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$，其中 $A$ 是分次代数，$\\operatorname{tors}A$ 是挠对象范畴。点、线和射影空间由模的同调性质来刻画。\n\n超势不要求存在足够多的交换坐标点；几何对象由态射范畴、Calabi-Yau条件、超势或Azumaya数据识别。Sklyanin代数、量子射影平面和非交换椭圆曲线是常见模型。 超势还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 超势的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1828,8 +2740,20 @@
     {
       "chinese_name": "循环导数",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换代数几何中的一种分次代数或模范畴结构。",
+        "它对循环词按某条箭头切开并求和。",
+        "射影范畴常写作 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$。",
+        "在势函数构造中，它给出箭图代数的关系式。",
+        "它的英文译名是 circular derivative。"
+      ],
+      "fragmented_clues": [
+        "非交换代数几何 分次代数 模范畴结构",
+        "循环词 箭头 切开求和",
+        "$\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$",
+        "势函数 箭图代数 关系式",
+        "circular derivative"
+      ],
       "explanation_markdown": "循环导数用同调语言表达非交换空间中的指标和特征类。循环导数的核心是循环上同调、K理论配对和指标映射，和同族术语的分界也主要落在这些数据上。常写成 $\\langle \\operatorname{Ch}(D),[e]\\rangle=\\operatorname{Index}(eD^+e)$，其中 $\\operatorname{Ch}(D)$ 是陈字符，$e$ 是投影，右边是Fredholm指标。循环上同调提供与K理论配对的余循环。\n\n循环导数连接代数链复形、K理论和几何指标。Hochschild循环保留乘法的一阶同调，周期循环上同调加入Connes算子 $B$，Baum-Connes型装配映射则把群作用和指数问题联系起来。 循环导数还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 循环导数的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1852,8 +2776,20 @@
     {
       "chinese_name": "导出非交换几何",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换代数几何中的一种分次代数或模范畴结构。",
+        "它把非交换代数几何提升到DG范畴和导出栈语言。",
+        "射影范畴常写作 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$。",
+        "同伦信息被保留，变形问题由复形而非集合控制。",
+        "它的英文译名是 derived noncommutative geometry。"
+      ],
+      "fragmented_clues": [
+        "非交换代数几何 分次代数 模范畴结构",
+        "DG范畴 导出栈 非交换几何",
+        "$\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$",
+        "同伦信息 变形复形",
+        "derived noncommutative geometry"
+      ],
       "explanation_markdown": "导出非交换几何用非交换分次代数、模范畴或导出范畴替代普通坐标环。导出非交换几何的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$，其中 $A$ 是分次代数，$\\operatorname{tors}A$ 是挠对象范畴。点、线和射影空间由模的同调性质来刻画。\n\n导出非交换几何不要求存在足够多的交换坐标点；几何对象由态射范畴、Calabi-Yau条件、超势或Azumaya数据识别。Sklyanin代数、量子射影平面和非交换椭圆曲线是常见模型。 导出非交换几何还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1876,8 +2812,20 @@
     {
       "chinese_name": "非交换动机",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换代数几何中的一种分次代数或模范畴结构。",
+        "它把DG范畴看作几何对象并研究普遍不变量。",
+        "射影范畴常写作 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$。",
+        "K理论、Hochschild同调等通过统一的动机框架比较。",
+        "它的英文译名是 non exchange motive。"
+      ],
+      "fragmented_clues": [
+        "非交换代数几何 分次代数 模范畴结构",
+        "DG范畴 几何对象 普遍不变量",
+        "$\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$",
+        "K理论 Hochschild同调 比较框架",
+        "non exchange motive"
+      ],
       "explanation_markdown": "非交换动机用非交换分次代数、模范畴或导出范畴替代普通坐标环。非交换动机的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$，其中 $A$ 是分次代数，$\\operatorname{tors}A$ 是挠对象范畴。点、线和射影空间由模的同调性质来刻画。\n\n非交换动机不要求存在足够多的交换坐标点；几何对象由态射范畴、Calabi-Yau条件、超势或Azumaya数据识别。Sklyanin代数、量子射影平面和非交换椭圆曲线是常见模型。 非交换动机还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 非交换动机的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -1900,8 +2848,20 @@
     {
       "chinese_name": "孔涅-马尔科利系统",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种代数、空间或动力系统对象。",
+        "它把数论动力系统放进非交换几何框架。",
+        "配对可写作 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$。",
+        "KMS态与算术对称性相连，体现量子统计和数论的交汇。",
+        "它的英文译名是 connes marcolli system。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 代数 空间 动力系统对象",
+        "数论动力系统 非交换几何",
+        "$K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$",
+        "KMS态 算术对称 量子统计",
+        "connes marcolli system"
+      ],
       "explanation_markdown": "孔涅-马尔科利系统把拓扑、数论或量子统计中的对象放进非交换几何框架。孔涅-马尔科利系统的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$，其中 $K_0(A)$ 是K理论群，$HC^{2n}(A)$ 是循环上同调，配对给出数值不变量。代数、谱和同调三类数据共同描述空间。\n\n孔涅-马尔科利系统常用于处理普通商空间难以描述的几何。它保留可计算的不变量，同时允许坐标函数不交换，因此能连接量子群作用、模空间量子化和算术动力系统。 孔涅-马尔科利系统还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1924,8 +2884,20 @@
     {
       "chinese_name": "量子统计力学系统",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种代数、空间或动力系统对象。",
+        "它研究带时间演化的C*代数及其平衡态。",
+        "配对可写作 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$。",
+        "KMS条件替代Gibbs态定义，常产生相变和数论结构。",
+        "它的英文译名是 quantum statistical mechanics system。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 代数 空间 动力系统对象",
+        "时间演化 C*代数 平衡态",
+        "$K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$",
+        "KMS条件 相变 数论结构",
+        "quantum statistical mechanics system"
+      ],
       "explanation_markdown": "量子统计力学系统把拓扑、数论或量子统计中的对象放进非交换几何框架。量子统计力学系统的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$，其中 $K_0(A)$ 是K理论群，$HC^{2n}(A)$ 是循环上同调，配对给出数值不变量。代数、谱和同调三类数据共同描述空间。\n\n量子统计力学系统常用于处理普通商空间难以描述的几何。它保留可计算的不变量，同时允许坐标函数不交换，因此能连接量子群作用、模空间量子化和算术动力系统。 量子统计力学系统还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1948,8 +2920,20 @@
     {
       "chinese_name": "格罗滕迪克泰希米勒群",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种代数、空间或动力系统对象。",
+        "它控制某些基本群、结合子和 dessins 的对称性。",
+        "配对可写作 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$。",
+        "在非交换几何语境中常与数论对称和量子化结合子相连。",
+        "它的英文译名是 grothendieck teichm ller group。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 代数 空间 动力系统对象",
+        "基本群 结合子 dessins对称",
+        "$K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$",
+        "数论对称 量子化结合子",
+        "grothendieck teichm ller group"
+      ],
       "explanation_markdown": "格罗滕迪克泰希米勒群把拓扑、数论或量子统计中的对象放进非交换几何框架。格罗滕迪克泰希米勒群的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$，其中 $K_0(A)$ 是K理论群，$HC^{2n}(A)$ 是循环上同调，配对给出数值不变量。代数、谱和同调三类数据共同描述空间。\n\n格罗滕迪克泰希米勒群常用于处理普通商空间难以描述的几何。它保留可计算的不变量，同时允许坐标函数不交换，因此能连接量子群作用、模空间量子化和算术动力系统。 格罗滕迪克泰希米勒群还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1972,8 +2956,20 @@
     {
       "chinese_name": "贝利映射",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种代数、空间或动力系统对象。",
+        "它与代数曲线到射影直线的特殊分歧覆盖有关。",
+        "配对可写作 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$。",
+        "定义在数域上的曲线可由组合嵌图编码。",
+        "它的英文译名是 bailey mapping。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 代数 空间 动力系统对象",
+        "代数曲线 射影直线 分歧覆盖",
+        "$K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$",
+        "数域曲线 组合嵌图",
+        "bailey mapping"
+      ],
       "explanation_markdown": "贝利映射把拓扑、数论或量子统计中的对象放进非交换几何框架。贝利映射的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$，其中 $K_0(A)$ 是K理论群，$HC^{2n}(A)$ 是循环上同调，配对给出数值不变量。代数、谱和同调三类数据共同描述空间。\n\n贝利映射常用于处理普通商空间难以描述的几何。它保留可计算的不变量，同时允许坐标函数不交换，因此能连接量子群作用、模空间量子化和算术动力系统。 贝利映射还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -1996,8 +2992,20 @@
     {
       "chinese_name": "代数曲线量子化",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种代数、空间或动力系统对象。",
+        "它把曲线坐标环或模空间结构作非交换形变。",
+        "配对可写作 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$。",
+        "辛或Poisson数据控制一阶形变，并影响表示范畴。",
+        "它的英文译名是 algebraic curve quantization。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 代数 空间 动力系统对象",
+        "曲线坐标环 模空间 非交换形变",
+        "$K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$",
+        "辛 Poisson 一阶形变",
+        "algebraic curve quantization"
+      ],
       "explanation_markdown": "代数曲线量子化把拓扑、数论或量子统计中的对象放进非交换几何框架。代数曲线量子化的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$，其中 $K_0(A)$ 是K理论群，$HC^{2n}(A)$ 是循环上同调，配对给出数值不变量。代数、谱和同调三类数据共同描述空间。\n\n代数曲线量子化常用于处理普通商空间难以描述的几何。它保留可计算的不变量，同时允许坐标函数不交换，因此能连接量子群作用、模空间量子化和算术动力系统。 代数曲线量子化还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -2020,8 +3028,20 @@
     {
       "chinese_name": "非交换椭圆曲线",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换代数几何中的一种分次代数或模范畴结构。",
+        "它用分次代数和扭自同构模拟椭圆曲线。",
+        "射影范畴常写作 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$。",
+        "常与Sklyanin型代数和点模参数空间相连。",
+        "它的英文译名是 noncommutative elliptic curve。"
+      ],
+      "fragmented_clues": [
+        "非交换代数几何 分次代数 模范畴结构",
+        "分次代数 扭自同构 椭圆模型",
+        "$\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$",
+        "Sklyanin型 点模参数空间",
+        "noncommutative elliptic curve"
+      ],
       "explanation_markdown": "非交换椭圆曲线用非交换分次代数、模范畴或导出范畴替代普通坐标环。非交换椭圆曲线的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$，其中 $A$ 是分次代数，$\\operatorname{tors}A$ 是挠对象范畴。点、线和射影空间由模的同调性质来刻画。\n\n非交换椭圆曲线不要求存在足够多的交换坐标点；几何对象由态射范畴、Calabi-Yau条件、超势或Azumaya数据识别。Sklyanin代数、量子射影平面和非交换椭圆曲线是常见模型。 非交换椭圆曲线还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -2044,8 +3064,20 @@
     {
       "chinese_name": "斯基利安代数",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换代数几何中的一种分次代数或模范畴结构。",
+        "它是由椭圆曲线数据和参数定义的三维或四维正则代数。",
+        "射影范畴常写作 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$。",
+        "点模通常由椭圆曲线控制，是非交换射影平面的基本例子。",
+        "它的英文译名是 skilian algebra。"
+      ],
+      "fragmented_clues": [
+        "非交换代数几何 分次代数 模范畴结构",
+        "椭圆曲线数据 参数 正则代数",
+        "$\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$",
+        "点模 椭圆曲线 射影平面例子",
+        "skilian algebra"
+      ],
       "explanation_markdown": "斯基利安代数用非交换分次代数、模范畴或导出范畴替代普通坐标环。斯基利安代数的核心是分次代数、模范畴和导出几何条件，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$，其中 $A$ 是分次代数，$\\operatorname{tors}A$ 是挠对象范畴。点、线和射影空间由模的同调性质来刻画。\n\n斯基利安代数不要求存在足够多的交换坐标点；几何对象由态射范畴、Calabi-Yau条件、超势或Azumaya数据识别。Sklyanin代数、量子射影平面和非交换椭圆曲线是常见模型。 斯基利安代数还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -2068,8 +3100,20 @@
     {
       "chinese_name": "量子射影平面",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换代数几何中的一种分次代数或模范畴结构。",
+        "它以非交换分次坐标环替代普通射影平面的坐标环。",
+        "射影范畴常写作 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$。",
+        "直线和点通过分次模范畴识别，而非由交换齐次坐标直接给出。",
+        "它的英文译名是 quantum projective plane。"
+      ],
+      "fragmented_clues": [
+        "非交换代数几何 分次代数 模范畴结构",
+        "分次坐标环 射影平面形变",
+        "$\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$",
+        "分次模范畴 点线识别",
+        "quantum projective plane"
+      ],
       "explanation_markdown": "量子射影平面用非交换分次代数、模范畴或导出范畴替代普通坐标环。量子射影平面的核心是分次代数、模范畴和导出几何条件，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$，其中 $A$ 是分次代数，$\\operatorname{tors}A$ 是挠对象范畴。点、线和射影空间由模的同调性质来刻画。\n\n量子射影平面不要求存在足够多的交换坐标点；几何对象由态射范畴、Calabi-Yau条件、超势或Azumaya数据识别。Sklyanin代数、量子射影平面和非交换椭圆曲线是常见模型。 量子射影平面还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -2092,8 +3136,20 @@
     {
       "chinese_name": "非交换射影簇",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换代数几何中的一种分次代数或模范畴结构。",
+        "它用分次代数的qgr范畴定义射影几何对象。",
+        "射影范畴常写作 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$。",
+        "挠模被除去后，剩余范畴承担凝聚层范畴的角色。",
+        "它的英文译名是 non commutative projective varieties。"
+      ],
+      "fragmented_clues": [
+        "非交换代数几何 分次代数 模范畴结构",
+        "分次代数 qgr范畴 射影对象",
+        "$\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$",
+        "挠模去除 凝聚层角色",
+        "non commutative projective varieties"
+      ],
       "explanation_markdown": "非交换射影簇用非交换分次代数、模范畴或导出范畴替代普通坐标环。非交换射影簇的核心是分次代数、模范畴和导出几何条件，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$，其中 $A$ 是分次代数，$\\operatorname{tors}A$ 是挠对象范畴。点、线和射影空间由模的同调性质来刻画。\n\n非交换射影簇不要求存在足够多的交换坐标点；几何对象由态射范畴、Calabi-Yau条件、超势或Azumaya数据识别。Sklyanin代数、量子射影平面和非交换椭圆曲线是常见模型。 非交换射影簇还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -2116,8 +3172,20 @@
     {
       "chinese_name": "扭齐次坐标环",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换代数几何中的一种分次代数或模范畴结构。",
+        "它由射影簇、自同构和线丛迭代构造。",
+        "射影范畴常写作 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$。",
+        "乘法中插入自同构，因而即使底层簇交换，环也可非交换。",
+        "它的英文译名是 twist the secondary coordinate ring。"
+      ],
+      "fragmented_clues": [
+        "非交换代数几何 分次代数 模范畴结构",
+        "射影簇 自同构 线丛迭代",
+        "$\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$",
+        "乘法插入自同构 非交换环",
+        "twist the secondary coordinate ring"
+      ],
       "explanation_markdown": "扭齐次坐标环用非交换分次代数、模范畴或导出范畴替代普通坐标环。扭齐次坐标环的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$，其中 $A$ 是分次代数，$\\operatorname{tors}A$ 是挠对象范畴。点、线和射影空间由模的同调性质来刻画。\n\n扭齐次坐标环不要求存在足够多的交换坐标点；几何对象由态射范畴、Calabi-Yau条件、超势或Azumaya数据识别。Sklyanin代数、量子射影平面和非交换椭圆曲线是常见模型。 扭齐次坐标环还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -2140,8 +3208,20 @@
     {
       "chinese_name": "点模",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换代数几何中的一种分次代数或模范畴结构。",
+        "它是分次代数上Hilbert级数像一个点的循环模。",
+        "射影范畴常写作 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$。",
+        "这类模的参数空间替代非交换射影几何中的点集。",
+        "它的英文译名是 point module。"
+      ],
+      "fragmented_clues": [
+        "非交换代数几何 分次代数 模范畴结构",
+        "Hilbert级数 点状 循环模",
+        "$\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$",
+        "参数空间 点集替代",
+        "point module"
+      ],
       "explanation_markdown": "点模用非交换分次代数、模范畴或导出范畴替代普通坐标环。点模的核心是分次代数、模范畴和导出几何条件，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$，其中 $A$ 是分次代数，$\\operatorname{tors}A$ 是挠对象范畴。点、线和射影空间由模的同调性质来刻画。\n\n点模不要求存在足够多的交换坐标点；几何对象由态射范畴、Calabi-Yau条件、超势或Azumaya数据识别。Sklyanin代数、量子射影平面和非交换椭圆曲线是常见模型。 点模还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 点模的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -2164,8 +3244,20 @@
     {
       "chinese_name": "线模",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换代数几何中的一种分次代数或模范畴结构。",
+        "它是分次代数上Hilbert级数像一条线的模。",
+        "射影范畴常写作 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$。",
+        "在三维正则代数中常用来识别非交换平面的线对象。",
+        "它的英文译名是 line module。"
+      ],
+      "fragmented_clues": [
+        "非交换代数几何 分次代数 模范畴结构",
+        "Hilbert级数 线状 模",
+        "$\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$",
+        "三维正则代数 线对象",
+        "line module"
+      ],
       "explanation_markdown": "线模用非交换分次代数、模范畴或导出范畴替代普通坐标环。线模的核心是分次代数、模范畴和导出几何条件，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$，其中 $A$ 是分次代数，$\\operatorname{tors}A$ 是挠对象范畴。点、线和射影空间由模的同调性质来刻画。\n\n线模不要求存在足够多的交换坐标点；几何对象由态射范畴、Calabi-Yau条件、超势或Azumaya数据识别。Sklyanin代数、量子射影平面和非交换椭圆曲线是常见模型。 线模还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 线模的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -2188,8 +3280,20 @@
     {
       "chinese_name": "阿祖玛代数",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换代数几何中的一种分次代数或模范畴结构。",
+        "它在中心上局部看起来像矩阵代数。",
+        "射影范畴常写作 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$。",
+        "Morita等价类进入Brauer群，描述非交换空间的扭曲矩阵层。",
+        "它的英文译名是 azuma algebra。"
+      ],
+      "fragmented_clues": [
+        "非交换代数几何 分次代数 模范畴结构",
+        "中心 局部矩阵代数",
+        "$\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$",
+        "Morita等价 Brauer群 扭曲矩阵层",
+        "azuma algebra"
+      ],
       "explanation_markdown": "阿祖玛代数用非交换分次代数、模范畴或导出范畴替代普通坐标环。阿祖玛代数的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$，其中 $A$ 是分次代数，$\\operatorname{tors}A$ 是挠对象范畴。点、线和射影空间由模的同调性质来刻画。\n\n阿祖玛代数不要求存在足够多的交换坐标点；几何对象由态射范畴、Calabi-Yau条件、超势或Azumaya数据识别。Sklyanin代数、量子射影平面和非交换椭圆曲线是常见模型。 阿祖玛代数还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 阿祖玛代数的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -2212,8 +3316,20 @@
     {
       "chinese_name": "布劳尔群作用",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换代数几何中的一种分次代数或模范畴结构。",
+        "它通过Azumaya型类或Morita自等价作用在几何对象上。",
+        "射影范畴常写作 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$。",
+        "作用改变代数层的扭曲类，但可保留底层空间的许多不变量。",
+        "它的英文译名是 brauer group effect。"
+      ],
+      "fragmented_clues": [
+        "非交换代数几何 分次代数 模范畴结构",
+        "Azumaya型类 Morita自等价",
+        "$\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$",
+        "扭曲类 底层空间 不变量",
+        "brauer group effect"
+      ],
       "explanation_markdown": "布劳尔群作用用非交换分次代数、模范畴或导出范畴替代普通坐标环。布劳尔群作用的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$，其中 $A$ 是分次代数，$\\operatorname{tors}A$ 是挠对象范畴。点、线和射影空间由模的同调性质来刻画。\n\n布劳尔群作用不要求存在足够多的交换坐标点；几何对象由态射范畴、Calabi-Yau条件、超势或Azumaya数据识别。Sklyanin代数、量子射影平面和非交换椭圆曲线是常见模型。 布劳尔群作用还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -2236,8 +3352,20 @@
     {
       "chinese_name": "微分分次代数",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换代数几何中的一种分次代数或模范畴结构。",
+        "它是带分次乘法和平方为零微分的代数。",
+        "射影范畴常写作 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$。",
+        "对象同时记录链复形和乘法，是导出非交换几何的基础语言。",
+        "它的英文译名是 differential fractional algebra。"
+      ],
+      "fragmented_clues": [
+        "非交换代数几何 分次代数 模范畴结构",
+        "分次乘法 平方零微分",
+        "$\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$",
+        "链复形 乘法 导出语言",
+        "differential fractional algebra"
+      ],
       "explanation_markdown": "微分分次代数用非交换分次代数、模范畴或导出范畴替代普通坐标环。微分分次代数的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$，其中 $A$ 是分次代数，$\\operatorname{tors}A$ 是挠对象范畴。点、线和射影空间由模的同调性质来刻画。\n\n微分分次代数不要求存在足够多的交换坐标点；几何对象由态射范畴、Calabi-Yau条件、超势或Azumaya数据识别。Sklyanin代数、量子射影平面和非交换椭圆曲线是常见模型。 微分分次代数还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -2260,8 +3388,20 @@
     {
       "chinese_name": "极小模型",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换代数几何中的一种分次代数或模范畴结构。",
+        "它在同伦代数中用较小DG对象代表原对象。",
+        "射影范畴常写作 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$。",
+        "微分和高阶乘法被压缩到同调上，同时保持拟同构类型。",
+        "它的英文译名是 minimal model。"
+      ],
+      "fragmented_clues": [
+        "非交换代数几何 分次代数 模范畴结构",
+        "较小DG对象 同伦代数",
+        "$\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$",
+        "同调压缩 拟同构类型",
+        "minimal model"
+      ],
       "explanation_markdown": "极小模型用非交换分次代数、模范畴或导出范畴替代普通坐标环。极小模型的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$，其中 $A$ 是分次代数，$\\operatorname{tors}A$ 是挠对象范畴。点、线和射影空间由模的同调性质来刻画。\n\n极小模型不要求存在足够多的交换坐标点；几何对象由态射范畴、Calabi-Yau条件、超势或Azumaya数据识别。Sklyanin代数、量子射影平面和非交换椭圆曲线是常见模型。 极小模型还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 极小模型的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -2284,8 +3424,20 @@
     {
       "chinese_name": "形式模空间",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种代数、空间或动力系统对象。",
+        "它描述变形问题的形式邻域或函子。",
+        "配对可写作 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$。",
+        "控制复形的Maurer-Cartan解给出无穷小变形参数。",
+        "它的英文译名是 form moduli space。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 代数 空间 动力系统对象",
+        "变形问题 形式邻域 函子",
+        "$K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$",
+        "控制复形 Maurer-Cartan 无穷小参数",
+        "form moduli space"
+      ],
       "explanation_markdown": "形式模空间用非交换分次代数、模范畴或导出范畴替代普通坐标环。形式模空间的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$，其中 $A$ 是分次代数，$\\operatorname{tors}A$ 是挠对象范畴。点、线和射影空间由模的同调性质来刻画。\n\n形式模空间不要求存在足够多的交换坐标点；几何对象由态射范畴、Calabi-Yau条件、超势或Azumaya数据识别。Sklyanin代数、量子射影平面和非交换椭圆曲线是常见模型。 形式模空间还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 形式模空间的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {
@@ -2308,8 +3460,20 @@
     {
       "chinese_name": "双有理非交换簇",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的一种代数、空间或动力系统对象。",
+        "它比较非交换簇在函数域层面的等价关系。",
+        "配对可写作 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$。",
+        "即使坐标环不同，若分式或导出数据相近也可视为同一双有理类型。",
+        "它的英文译名是 birational noncommutative varieties。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 代数 空间 动力系统对象",
+        "函数域层面 等价关系",
+        "$K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$",
+        "坐标环差异 分式数据 双有理类型",
+        "birational noncommutative varieties"
+      ],
       "explanation_markdown": "双有理非交换簇把拓扑、数论或量子统计中的对象放进非交换几何框架。双有理非交换簇的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $K_0(A)\\times HC^{2n}(A)\\to\\mathbb C$，其中 $K_0(A)$ 是K理论群，$HC^{2n}(A)$ 是循环上同调，配对给出数值不变量。代数、谱和同调三类数据共同描述空间。\n\n双有理非交换簇常用于处理普通商空间难以描述的几何。它保留可计算的不变量，同时允许坐标函数不交换，因此能连接量子群作用、模空间量子化和算术动力系统。 双有理非交换簇还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -2332,8 +3496,20 @@
     {
       "chinese_name": "非交换解析空间",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换代数几何中的一种分次代数或模范畴结构。",
+        "它把解析几何推广到非交换函数代数或算子代数上。",
+        "射影范畴常写作 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$。",
+        "局部解析函数由代数或范畴替代，点集不再是首要数据。",
+        "它的英文译名是 noncommutative analytic space。"
+      ],
+      "fragmented_clues": [
+        "非交换代数几何 分次代数 模范畴结构",
+        "解析几何 非交换函数代数",
+        "$\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$",
+        "局部解析函数 范畴替代 点集次要",
+        "noncommutative analytic space"
+      ],
       "explanation_markdown": "非交换解析空间用非交换分次代数、模范畴或导出范畴替代普通坐标环。非交换解析空间的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$，其中 $A$ 是分次代数，$\\operatorname{tors}A$ 是挠对象范畴。点、线和射影空间由模的同调性质来刻画。\n\n非交换解析空间不要求存在足够多的交换坐标点；几何对象由态射范畴、Calabi-Yau条件、超势或Azumaya数据识别。Sklyanin代数、量子射影平面和非交换椭圆曲线是常见模型。 非交换解析空间还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -2356,8 +3532,20 @@
     {
       "chinese_name": "量子齐性空间",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换代数几何中的一种分次代数或模范畴结构。",
+        "它是量子群余作用下的不变量或商型坐标代数。",
+        "射影范畴常写作 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$。",
+        "经典齐性空间的群商结构被共理想或余不变量条件替代。",
+        "它的英文译名是 quantum homogeneous space。"
+      ],
+      "fragmented_clues": [
+        "非交换代数几何 分次代数 模范畴结构",
+        "量子群余作用 商型坐标代数",
+        "$\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$",
+        "共理想 余不变量 群商替代",
+        "quantum homogeneous space"
+      ],
       "explanation_markdown": "量子齐性空间用非交换分次代数、模范畴或导出范畴替代普通坐标环。量子齐性空间的核心是代数、谱数据和同调配对，和同族术语的分界也主要落在这些数据上。常写成 $\\operatorname{qgr}A=\\operatorname{gr}A/\\operatorname{tors}A$，其中 $A$ 是分次代数，$\\operatorname{tors}A$ 是挠对象范畴。点、线和射影空间由模的同调性质来刻画。\n\n量子齐性空间不要求存在足够多的交换坐标点；几何对象由态射范畴、Calabi-Yau条件、超势或Azumaya数据识别。Sklyanin代数、量子射影平面和非交换椭圆曲线是常见模型。 量子齐性空间还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。",
       "source_links": [
         {
@@ -2380,8 +3568,20 @@
     {
       "chinese_name": "协变表示",
       "source_file": "words/数学/噩梦模式/noncommutative_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非交换几何中的量子丛或协变微分结构。",
+        "它要求代数表示与群或Hopf代数作用相容。",
+        "典型映射可写作 $A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$。",
+        "表示算子和对称作用满足协变关系，可构造交叉积表示。",
+        "它的英文译名是 covariant representation。"
+      ],
+      "fragmented_clues": [
+        "非交换几何 量子丛 协变微分结构",
+        "代数表示 Hopf作用 相容",
+        "$A\\otimes_B A\\to A\\otimes H,\\ a\\otimes a'\\mapsto a\\rho(a')$",
+        "协变关系 交叉积表示",
+        "covariant representation"
+      ],
       "explanation_markdown": "协变表示把主丛、连接和规范场改写到非交换代数上。协变表示的核心是Hopf余作用、连接形式和协变微分，和同族术语的分界也主要落在这些数据上。常写成 $A\\otimes_B A\\to A\\otimes H,\\,a\\otimes a'\\mapsto a\\rho(a')$，其中 $H$ 是霍普夫代数，$\\rho$ 是余作用，$B=A^{coH}$ 是不变量代数。这个映射可逆时得到Hopf-Galois扩张。\n\n协变表示的重点在于余作用、微分演算和连接形式如何相容。强连接给出投影模上的协变导数，双协变演算则让量子群的左右平移同时参与微分结构。 协变表示还要说明所用光滑子代数、拓扑完备性和K理论配对；同一代数换了这些数据，几何解释会变。 协变表示的符号还应和具体模型中的对象对应起来。",
       "source_links": [
         {

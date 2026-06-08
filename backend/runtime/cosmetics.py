@@ -131,7 +131,9 @@ def unlocked_title_options(rating, achievements_data, rank_progress=None):
     return unique
 
 
-def unlocked_avatar_ids(rating):
+def unlocked_avatar_ids(rating, reveal_all=False):
+    if reveal_all:
+        return {avatar_id for avatar_id in range(15)}
     return {avatar_id for _threshold, _reward_id, _name, avatar_id in unlocked_rating_rewards(rating)}
 
 
@@ -142,8 +144,8 @@ def coerce_title_id(title_id, rating, achievements_data, rank_progress=None):
     return RATING_REWARDS[0][1]
 
 
-def coerce_avatar_id(avatar_id, rating):
-    unlocked = unlocked_avatar_ids(rating)
+def coerce_avatar_id(avatar_id, rating, reveal_all=False):
+    unlocked = unlocked_avatar_ids(rating, reveal_all=reveal_all)
     try:
         value = int(avatar_id)
     except (TypeError, ValueError):

@@ -4,8 +4,20 @@
     {
       "chinese_name": "算术曲线",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是数论几何中的一种一维几何对象。",
+        "它通常来自数域整数环的谱或其有限覆盖。",
+        "基本模型可写成 $X=Spec\\,O_K$。",
+        "它的闭点对应素理想，无穷素位常要用 Arakelov 数据补入。",
+        "它的英文译名是 arithmetic curve。"
+      ],
+      "fragmented_clues": [
+        "数论几何 一维几何对象",
+        "数域整数环 谱 有限覆盖",
+        "$X=Spec\\,O_K$",
+        "闭点 素理想 无穷素位 Arakelov数据",
+        "arithmetic curve"
+      ],
       "explanation_markdown": "算术曲线是一维正则算术概形，通常是数域整数环的谱或其有限覆盖。常写成 $X=\\operatorname{Spec} O_K$，其中O_K 是数域 K 的整数环，维数按算术维度计。\n\n它与代数曲线不同，闭点对应素理想，无穷素点常通过Arakelov数据补入。算术曲线把数论对象放进概形和上同调语言中，必须同时跟踪基域、局部化和全局约束；少掉任何一层，结论往往会从算术命题退化成普通几何命题。算术曲线还要标明基域、素位和归一化方式；算术曲线涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。算术曲线的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。算术曲线的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -28,8 +40,20 @@
     {
       "chinese_name": "算术曲面",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是数论几何中的一种相对二维对象。",
+        "它把数域上的曲线族放在整数环基底上研究。",
+        "结构态射常写成 $f:X\\to Spec\\,O_K$。",
+        "它不是复曲面，而同时记录泛纤维、特殊纤维和坏约化。",
+        "它的英文译名是 arithmetic surface。"
+      ],
+      "fragmented_clues": [
+        "数论几何 相对二维对象",
+        "数域曲线族 整数环基底",
+        "$f:X\\to Spec\\,O_K$",
+        "复曲面 区别 泛纤维 特殊纤维 坏约化",
+        "arithmetic surface"
+      ],
       "explanation_markdown": "算术曲面是相对整数环一维的正则算术概形。常写成 $f:X\\to\\operatorname{Spec} O_K$，其中泛纤维是数域 K 上曲线，特殊纤维在素理想处。\n\n它不是复曲面，而是把曲线族、坏约化和交点理论放在同一对象中。算术曲面把数论对象放进概形和上同调语言中，必须同时跟踪基域、局部化和全局约束；少掉任何一层，结论往往会从算术命题退化成普通几何命题。算术曲面还要标明基域、素位和归一化方式；算术曲面涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。算术曲面的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。算术曲面的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -52,8 +76,20 @@
     {
       "chinese_name": "算术概形",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是数论几何中的一种概形对象。",
+        "它有限型地定义在整数环或数域整数环上。",
+        "结构映射可写成 $X\\to Spec\\,\\mathbb Z$。",
+        "它把不同素数处的纤维纳入同一个几何对象。",
+        "它的英文译名是 arithmetic scheme。"
+      ],
+      "fragmented_clues": [
+        "数论几何 概形对象",
+        "有限型 整数环 数域整数环",
+        "$X\\to Spec\\,\\mathbb Z$",
+        "不同素数 纤维 同一几何对象",
+        "arithmetic scheme"
+      ],
       "explanation_markdown": "算术概形是有限型地定义在整数环或数域整数环上的概形。常写成 $X\\to\\operatorname{Spec}\\mathbb Z$，其中结构态射给出算术基底，纤维对应不同素数。\n\n它把代数几何的纤维语言用于数论，区别于只在代数闭域上研究的簇。算术概形把数论对象放进概形和上同调语言中，必须同时跟踪基域、局部化和全局约束；少掉任何一层，结论往往会从算术命题退化成普通几何命题。算术概形还要标明基域、素位和归一化方式；算术概形涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。算术概形的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。算术概形的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -76,8 +112,20 @@
     {
       "chinese_name": "整数模型",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是算术几何中的一种模型对象。",
+        "它把数域上的簇延拓到整数环上。",
+        "泛纤维关系可写成 $X_K=X\\times_{O_K}K$。",
+        "同一个泛纤维可能有多个选择，坏约化和整点信息会随之改变。",
+        "它的英文译名是 integral model。"
+      ],
+      "fragmented_clues": [
+        "算术几何 模型对象",
+        "数域上簇 整数环 延拓",
+        "$X_K=X\\times_{O_K}K$",
+        "同一泛纤维 多个选择 坏约化 整点信息",
+        "integral model"
+      ],
       "explanation_markdown": "整数模型是数域上簇在整数环上的延拓。常写成 $X_K = X \\times_{O_K} K$，其中X 是整数环上的模型，X_K 是泛纤维。\n\n模型会记录坏约化和整点信息，同一泛纤维可有多个不同模型。整数模型把数论对象放进概形和上同调语言中，必须同时跟踪基域、局部化和全局约束；少掉任何一层，结论往往会从算术命题退化成普通几何命题。整数模型还要标明基域、素位和归一化方式；整数模型涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。整数模型的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。整数模型的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -100,8 +148,20 @@
     {
       "chinese_name": "有理点",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是算术几何中的一种点对象。",
+        "它以给定基域作为定义域来读取空间的值。",
+        "标准表达为 $X(K)=Hom(Spec\\,K,X)$。",
+        "它不同于闭点，后者的剩余域可以是基域的有限扩张。",
+        "它的英文译名是 rational point。"
+      ],
+      "fragmented_clues": [
+        "算术几何 点对象",
+        "给定基域 定义域 空间取值",
+        "$X(K)=Hom(Spec\\,K,X)$",
+        "闭点 剩余域 有限扩张 区别",
+        "rational point"
+      ],
       "explanation_markdown": "有理点是定义域为给定域的点。常写成 $X(K)=\\operatorname{Hom}(\\operatorname{Spec} K,X)$，其中K 是基域，Hom 表示K值点。\n\n它不同于闭点，后者 residue field 可是 K 的有限扩张。有理点通常连接全局解与各个局部条件，有限生成性、坏约化和高度配对会直接影响可解性；同一个簇在有理点、整点和阿代尔点层面给出的信息并不相同。有理点还要标明基域、素位和归一化方式；有理点涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。有理点的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。有理点的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -124,8 +184,20 @@
     {
       "chinese_name": "整点",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是算术几何中的一种点对象。",
+        "它在所选整数环模型上满足无分母条件。",
+        "常记为 $X(O_K)$。",
+        "它依赖模型和边界选择，比只在数域上取值更严格。",
+        "它的英文译名是 integral point。"
+      ],
+      "fragmented_clues": [
+        "算术几何 点对象",
+        "整数环模型 无分母条件",
+        "$X(O_K)$",
+        "模型 边界选择 数域取值 更严格",
+        "integral point"
+      ],
       "explanation_markdown": "整点是相对整数模型在整数环上的截面或点。常写成 $X(O_K)$，其中O_K 是整数环，X 是其上的模型。\n\n它比有理点多了无分母条件，依赖所选模型和边界除子。整点通常连接全局解与各个局部条件，有限生成性、坏约化和高度配对会直接影响可解性；同一个簇在有理点、整点和阿代尔点层面给出的信息并不相同。整点还要标明基域、素位和归一化方式；整点涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。整点的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。整点的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -148,8 +220,20 @@
     {
       "chinese_name": "局部点",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是算术几何中的一种局部取值对象。",
+        "它在每个赋值对应的完备化上考察解或值。",
+        "常写成 $X(K_v)$。",
+        "它给出局部可解性，是 Hasse 型问题和 Brauer-Manin 配对的输入。",
+        "它的英文译名是 local point。"
+      ],
+      "fragmented_clues": [
+        "算术几何 局部取值对象",
+        "赋值 完备化 解 值",
+        "$X(K_v)$",
+        "局部可解性 Hasse型问题 Brauer-Manin配对 输入",
+        "local point"
+      ],
       "explanation_markdown": "局部点是在每个完备化上的值点。常写成 $X(K_v)$，其中v 是 K 的赋值，K_v 是局部域。\n\n它给出局部可解性，是Hasse原理和Brauer-Manin障碍的输入。局部点通常连接全局解与各个局部条件，有限生成性、坏约化和高度配对会直接影响可解性；同一个簇在有理点、整点和阿代尔点层面给出的信息并不相同。局部点还要标明基域、素位和归一化方式；局部点涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。局部点的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。局部点的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -172,8 +256,20 @@
     {
       "chinese_name": "阿代尔点",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是算术几何中的一种全局-局部取值对象。",
+        "它把所有赋值处的局部取值按受限乘积组织起来。",
+        "常写成 $X(A_K)=\\prod_v'X(K_v)$。",
+        "它同时记录有限素位和无穷位，比单个局部条件更接近全局问题。",
+        "它的英文译名是 adelic point。"
+      ],
+      "fragmented_clues": [
+        "算术几何 全局局部取值对象",
+        "所有赋值 局部取值 受限乘积",
+        "$X(A_K)=\\prod_v'X(K_v)$",
+        "有限素位 无穷位 单个局部条件 全局问题",
+        "adelic point"
+      ],
       "explanation_markdown": "阿代尔点是所有局部点按限制条件组成的乘积。常写成 $X(A_K)=\\prod_v^' X(K_v)$，其中A_K 是阿代尔环，撇号表示受限乘积。\n\n它同时记录所有素位和无穷位，比单个局部点更接近全局可解性。阿代尔点通常连接全局解与各个局部条件，有限生成性、坏约化和高度配对会直接影响可解性；同一个簇在有理点、整点和阿代尔点层面给出的信息并不相同。阿代尔点还要标明基域、素位和归一化方式；阿代尔点涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。阿代尔点的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。阿代尔点的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -196,8 +292,20 @@
     {
       "chinese_name": "高度函数",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是丢番图几何中的一种数值函数。",
+        "它度量点相对于线丛或除子的算术复杂度。",
+        "常写成 $H_L(P)$。",
+        "它不是距离，而是综合坐标分母、嵌入和正性的全局量。",
+        "它的英文译名是 height function。"
+      ],
+      "fragmented_clues": [
+        "丢番图几何 数值函数",
+        "点 线丛 除子 算术复杂度",
+        "$H_L(P)$",
+        "距离 区别 坐标分母 嵌入 正性 全局量",
+        "height function"
+      ],
       "explanation_markdown": "高度函数是度量有理点算术复杂度的函数。常写成 $H_L(P)$，其中L 是线丛或除子，P 是有理点。\n\n它不是距离，而是衡量坐标分母、嵌入和线丛正性的全局量。高度函数通常连接全局解与各个局部条件，有限生成性、坏约化和高度配对会直接影响可解性；同一个簇在有理点、整点和阿代尔点层面给出的信息并不相同。高度函数还要标明基域、素位和归一化方式；高度函数涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。高度函数的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。高度函数的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -220,8 +328,20 @@
     {
       "chinese_name": "韦伊高度",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是丢番图几何中的一种标准高度。",
+        "它在射影空间中由所有赋值按乘积公式归一化得到。",
+        "可写成 $h(P)=\\sum_v\\log\\max_i|x_i|_v$。",
+        "改变齐次坐标只造成有界差异，因此适合做全局估计。",
+        "它的英文译名是 Weil height。"
+      ],
+      "fragmented_clues": [
+        "丢番图几何 标准高度",
+        "射影空间 所有赋值 乘积公式 归一化",
+        "$h(P)=\\sum_v\\log\\max_i|x_i|_v$",
+        "齐次坐标 有界差异 全局估计",
+        "Weil height"
+      ],
       "explanation_markdown": "韦伊高度是射影空间或线丛上由各赋值乘积公式归一化的高度。常写成 $h(P)=\\sum_v log max_i |x_i|_v$，其中P=[x_i]，v 遍历所有赋值。\n\n它与坐标选择相差有界量，是Diophantine估计中的基本高度。韦伊高度通常连接全局解与各个局部条件，有限生成性、坏约化和高度配对会直接影响可解性；同一个簇在有理点、整点和阿代尔点层面给出的信息并不相同。韦伊高度还要标明基域、素位和归一化方式；韦伊高度涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。韦伊高度的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。韦伊高度的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -244,8 +364,20 @@
     {
       "chinese_name": "规范高度",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是阿贝尔簇和动力系统中的一种标准化高度。",
+        "它满足与自映射或倍乘映射相容的函子关系。",
+        "在阿贝尔簇上常有 $\\hat h([n]P)=n^2\\hat h(P)$。",
+        "它消去普通高度的有界误差，并在 Mordell-Weil 群上形成二次型。",
+        "它的英文译名是 canonical height。"
+      ],
+      "fragmented_clues": [
+        "阿贝尔簇 动力系统 标准化高度",
+        "自映射 倍乘映射 函子关系",
+        "$\\hat h([n]P)=n^2\\hat h(P)$",
+        "普通高度 有界误差 Mordell-Weil群 二次型",
+        "canonical height"
+      ],
       "explanation_markdown": "规范高度是在动力系统或阿贝尔簇上满足函子关系的高度。常写成 $hat h([n]P)=n^2 hat h(P)$，其中[n] 是倍乘映射，P 是点。\n\n它消去普通高度的有界误差，在椭圆曲线Mordell-Weil群上给出二次型。规范高度通常连接全局解与各个局部条件，有限生成性、坏约化和高度配对会直接影响可解性；同一个簇在有理点、整点和阿代尔点层面给出的信息并不相同。规范高度还要标明基域、素位和归一化方式；规范高度涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。规范高度的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。规范高度的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -268,8 +400,20 @@
     {
       "chinese_name": "内隆模型",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是阿贝尔簇算术中的一种光滑模型。",
+        "它在整数环上满足从光滑测试对象延拓态射的泛性质。",
+        "泛性质可示意为 $N(S)\\to A_K(S_K)$。",
+        "它不同于任意整数模型，强调泛纤维态射的唯一延拓。",
+        "它的英文译名是 Neron model。"
+      ],
+      "fragmented_clues": [
+        "阿贝尔簇算术 光滑模型",
+        "整数环 光滑测试对象 态射延拓 泛性质",
+        "$N(S)\\to A_K(S_K)$",
+        "任意整数模型 区别 泛纤维态射 唯一延拓",
+        "Neron model"
+      ],
       "explanation_markdown": "内隆模型是阿贝尔簇在整数环上的光滑模型，满足延拓泛性质。常写成 $N(S)\\toA_K(S_K)$，其中S 是光滑测试概形，S_K 是泛纤维。\n\n它不同于任意整数模型，核心是把泛纤维态射唯一延拓到光滑基上。内隆模型通常连接全局解与各个局部条件，有限生成性、坏约化和高度配对会直接影响可解性；同一个簇在有理点、整点和阿代尔点层面给出的信息并不相同。内隆模型还要标明基域、素位和归一化方式；内隆模型涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。内隆模型的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。内隆模型的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -292,8 +436,20 @@
     {
       "chinese_name": "内隆泰特高度",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是阿贝尔簇和椭圆曲线上的一种高度配对。",
+        "它由规范高度极化得到，作用在 Mordell-Weil 群元素上。",
+        "常写成 $\\langle P,Q\\rangle=\\frac12(\\hat h(P+Q)-\\hat h(P)-\\hat h(Q))$。",
+        "它把点的加法结构转化为正半定的二次型和双线性配对。",
+        "它的英文译名是 Neron-Tate height。"
+      ],
+      "fragmented_clues": [
+        "阿贝尔簇 椭圆曲线 高度配对",
+        "规范高度 极化 Mordell-Weil群元素",
+        "$\\langle P,Q\\rangle=\\frac12(\\hat h(P+Q)-\\hat h(P)-\\hat h(Q))$",
+        "点加法 正半定二次型 双线性配对",
+        "Neron-Tate height"
+      ],
       "explanation_markdown": "内隆泰特高度是椭圆曲线或阿贝尔簇上的规范高度配对。常写成 $<P,Q\\ge1/2(hat h(P+Q)-hat h(P)-hat h(Q))$，其中P,Q 是Mordell-Weil群元素。\n\n它把高度变成双线性配对，用来分离自由部分和扭点。内隆泰特高度通常连接全局解与各个局部条件，有限生成性、坏约化和高度配对会直接影响可解性；同一个簇在有理点、整点和阿代尔点层面给出的信息并不相同。内隆泰特高度还要标明基域、素位和归一化方式；内隆泰特高度涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。内隆泰特高度的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。内隆泰特高度的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -316,8 +472,20 @@
     {
       "chinese_name": "莫德尔韦伊群",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是阿贝尔簇算术中的一种群对象。",
+        "它由数域上的有理点按群律组成。",
+        "有限生成结构可写成 $A(K)\\simeq \\mathbb Z^r\\oplus A(K)_{tors}$。",
+        "它的秩是丢番图问题和 L 函数猜想中的核心数值之一。",
+        "它的英文译名是 Mordell-Weil group。"
+      ],
+      "fragmented_clues": [
+        "阿贝尔簇算术 群对象",
+        "数域 有理点 群律",
+        "$A(K)\\simeq \\mathbb Z^r\\oplus A(K)_{tors}$",
+        "秩 丢番图问题 L函数猜想 数值",
+        "Mordell-Weil group"
+      ],
       "explanation_markdown": "莫德尔韦伊群是阿贝尔簇在数域上的有理点群。常写成 $A(K) \\simeq Z^r + A(K)_tors$，其中r 是秩，tors 是扭子群。\n\n它是有限生成群，区别于局部点群通常的p进Lie群结构。莫德尔韦伊群通常连接全局解与各个局部条件，有限生成性、坏约化和高度配对会直接影响可解性；同一个簇在有理点、整点和阿代尔点层面给出的信息并不相同。莫德尔韦伊群还要标明基域、素位和归一化方式；莫德尔韦伊群涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。莫德尔韦伊群的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。莫德尔韦伊群的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -340,8 +508,20 @@
     {
       "chinese_name": "沙法列维奇泰特群",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是阿贝尔簇算术中的一种上同调群。",
+        "它衡量主齐性空间局部处处有点但全局无点的现象。",
+        "定义可写成 $Sha(A/K)=ker(H^1(K,A)\\to\\prod_vH^1(K_v,A))$。",
+        "它记录 Hasse 原理失败的隐藏部分，并出现在 BSD 公式中。",
+        "它的英文译名是 Shafarevich-Tate group。"
+      ],
+      "fragmented_clues": [
+        "阿贝尔簇算术 上同调群",
+        "主齐性空间 局部处处有点 全局无点",
+        "$Sha(A/K)=ker(H^1(K,A)\\to\\prod_vH^1(K_v,A))$",
+        "Hasse原理失败 隐藏部分 BSD公式",
+        "Shafarevich-Tate group"
+      ],
       "explanation_markdown": "沙法列维奇泰特群是衡量主齐性空间局部有点但全局无点的群。常写成 $Sha(A/K)=ker(H^1(K,A)\\to\\prod_v H^1(K_v,A))$，其中A 是阿贝尔簇，v 遍历赋值。\n\n它记录Hasse原理失败，和Selmer群之间由短正合列相连。沙法列维奇泰特群通常连接全局解与各个局部条件，有限生成性、坏约化和高度配对会直接影响可解性；同一个簇在有理点、整点和阿代尔点层面给出的信息并不相同。沙法列维奇泰特群还要标明基域、素位和归一化方式；沙法列维奇泰特群涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。沙法列维奇泰特群的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。沙法列维奇泰特群的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -364,8 +544,20 @@
     {
       "chinese_name": "塞尔默群",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 Galois 上同调中的一种有限近似群。",
+        "它由各局部条件从扭点上同调中切出。",
+        "常写成 $Sel_n(A/K)\\subset H^1(K,A[n])$。",
+        "它夹在可见的有理点商和更隐蔽的 Sha 部分之间。",
+        "它的英文译名是 Selmer group。"
+      ],
+      "fragmented_clues": [
+        "Galois上同调 有限近似群",
+        "局部条件 扭点上同调 切出",
+        "$Sel_n(A/K)\\subset H^1(K,A[n])$",
+        "有理点商 Sha部分 中间",
+        "Selmer group"
+      ],
       "explanation_markdown": "塞尔默群是由局部条件切出的Galois上同调有限近似。常写成 $Sel_n(A/K) \\subset H^1(K,A[n])$，其中A[n] 是n扭群概形，局部条件来自A(K_v)。\n\n它包住A(K)/nA(K)，同时含有Sha的n扭信息。塞尔默群通常连接全局解与各个局部条件，有限生成性、坏约化和高度配对会直接影响可解性；同一个簇在有理点、整点和阿代尔点层面给出的信息并不相同。塞尔默群还要标明基域、素位和归一化方式；塞尔默群涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。塞尔默群的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。塞尔默群的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -388,8 +580,20 @@
     {
       "chinese_name": "二下降",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是椭圆曲线算术中的一种下降方法。",
+        "它利用二扭点的 Galois 上同调来估计秩。",
+        "常见关系为 $Sel_2(E/K)\\to E(K)/2E(K)$。",
+        "它把寻找有理点的问题转化为有限个局部可解的二覆盖问题。",
+        "它的英文译名是 two-descent。"
+      ],
+      "fragmented_clues": [
+        "椭圆曲线算术 下降方法",
+        "二扭点 Galois上同调 秩估计",
+        "$Sel_2(E/K)\\to E(K)/2E(K)$",
+        "有理点 有限局部可解 二覆盖问题",
+        "two-descent"
+      ],
       "explanation_markdown": "二下降是用二扭Galois上同调估计椭圆曲线秩的方法。常写成 $Sel_2(E/K) \\to E(K)/2E(K)$，其中E 是椭圆曲线，Sel_2 是二Selmer群。\n\n它不是直接列出有理点，而是先计算有限的局部上同调条件。二下降通常连接全局解与各个局部条件，有限生成性、坏约化和高度配对会直接影响可解性；同一个簇在有理点、整点和阿代尔点层面给出的信息并不相同。二下降还要标明基域、素位和归一化方式；二下降涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。二下降的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。二下降的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -412,8 +616,20 @@
     {
       "chinese_name": "同源下降",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是椭圆曲线和阿贝尔簇中的一种下降技术。",
+        "它用同源映射的核来构造相应的 Selmer 条件。",
+        "常写成 $Sel_\\phi(E/K)\\subset H^1(K,E[\\phi])$。",
+        "它比固定二扭下降更依赖所选等ogeny和核的局部结构。",
+        "它的英文译名是 isogeny descent。"
+      ],
+      "fragmented_clues": [
+        "椭圆曲线 阿贝尔簇 下降技术",
+        "同源映射 核 Selmer条件",
+        "$Sel_\\phi(E/K)\\subset H^1(K,E[\\phi])$",
+        "二扭下降 区别 等ogeny 核 局部结构",
+        "isogeny descent"
+      ],
       "explanation_markdown": "同源下降是利用同源或等ogeny的核进行下降的技术。常写成 $Sel_phi(E/K) \\subset H^1(K,E[phi])$，其中phi:E->E' 是同源，E[phi] 是核。\n\n它比二下降更灵活，局部条件由同源在各完备化上的像决定。同源下降通常连接全局解与各个局部条件，有限生成性、坏约化和高度配对会直接影响可解性；同一个簇在有理点、整点和阿代尔点层面给出的信息并不相同。同源下降还要标明基域、素位和归一化方式；同源下降涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。同源下降的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。同源下降的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -436,8 +652,20 @@
     {
       "chinese_name": "椭圆曲线",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是代数几何和数论中的一种曲线对象。",
+        "它是带基点的光滑射影亏格一曲线。",
+        "Weierstrass 形式可写成 $y^2=x^3+ax+b$ 且判别式非零。",
+        "指定基点后，曲线上的点自然形成阿贝尔群。",
+        "它的英文译名是 elliptic curve。"
+      ],
+      "fragmented_clues": [
+        "代数几何 数论 曲线对象",
+        "基点 光滑射影 亏格一",
+        "$y^2=x^3+ax+b$ 判别式非零",
+        "指定基点 点 阿贝尔群",
+        "elliptic curve"
+      ],
       "explanation_markdown": "椭圆曲线是带基点的一维光滑射影亏格一曲线。常写成 $y^2=x^3+ax+b$，其中判别式非零保证曲线光滑，基点给出群律。\n\n它是几何对象；模形式是函数，Galois表示是同调或扭点上的线性作用。椭圆曲线通常连接全局解与各个局部条件，有限生成性、坏约化和高度配对会直接影响可解性；同一个簇在有理点、整点和阿代尔点层面给出的信息并不相同。椭圆曲线还要标明基域、素位和归一化方式；椭圆曲线涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。椭圆曲线的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。椭圆曲线的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -460,8 +688,20 @@
     {
       "chinese_name": "椭圆曲线导子",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是椭圆曲线算术中的一种整数不变量。",
+        "它汇总各素数处约化坏程度的局部指数。",
+        "常写成 $N_E=\\prod p^{f_p}$。",
+        "它决定模块性和 L 函数中出现的层级或水平。",
+        "它的英文译名是 conductor of an elliptic curve。"
+      ],
+      "fragmented_clues": [
+        "椭圆曲线算术 整数不变量",
+        "各素数 约化坏程度 局部指数",
+        "$N_E=\\prod p^{f_p}$",
+        "模块性 L函数 层级 水平",
+        "conductor of an elliptic curve"
+      ],
       "explanation_markdown": "椭圆曲线导子是衡量椭圆曲线在各素数处约化坏程度的整数。常写成 $N_E=prod p^{f_p}$，其中f_p 是局部导子指数。\n\n它不同于判别式，导子更接近L函数和模性的层级。椭圆曲线导子通常连接全局解与各个局部条件，有限生成性、坏约化和高度配对会直接影响可解性；同一个簇在有理点、整点和阿代尔点层面给出的信息并不相同。椭圆曲线导子还要标明基域、素位和归一化方式；椭圆曲线导子涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。椭圆曲线导子的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。椭圆曲线导子的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -484,8 +724,20 @@
     {
       "chinese_name": "泰特曲线",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是非阿基米德几何中的一种椭圆曲线模型。",
+        "它由参数 $q$ 在乘法群上取商得到，描述乘法约化情形。",
+        "刚性解析形式可写成 $E_q=G_m/q^{\\mathbb Z}$。",
+        "条件 $|q|<1$ 使退化参数控制环面商的解析结构。",
+        "它的英文译名是 Tate curve。"
+      ],
+      "fragmented_clues": [
+        "非阿基米德几何 椭圆曲线模型",
+        "$q$参数 乘法群 商 乘法约化",
+        "$E_q=G_m/q^{\\mathbb Z}$",
+        "$|q|<1$ 退化参数 环面商 解析结构",
+        "Tate curve"
+      ],
       "explanation_markdown": "泰特曲线是在非阿基米德域上由参数q给出的乘法约化椭圆曲线。常写成 $E_q=G_m/q^Z$，其中q 满足 |q|<1，商在刚性解析意义下取。\n\n它描述坏约化的局部模型，不是复环面意义下的任意椭圆曲线。泰特曲线通常连接全局解与各个局部条件，有限生成性、坏约化和高度配对会直接影响可解性；同一个簇在有理点、整点和阿代尔点层面给出的信息并不相同。泰特曲线还要标明基域、素位和归一化方式；泰特曲线涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。泰特曲线的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。泰特曲线的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -508,8 +760,20 @@
     {
       "chinese_name": "模曲线",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是算术几何中的一种参数曲线。",
+        "它分类带水平结构的椭圆曲线族。",
+        "模问题可写成 $Y(N)(S)=\\{(E/S,\\alpha)\\}$。",
+        "它把椭圆曲线、同余子群和模形式联系在同一几何对象上。",
+        "它的英文译名是 modular curve。"
+      ],
+      "fragmented_clues": [
+        "算术几何 参数曲线",
+        "水平结构 椭圆曲线族 分类",
+        "$Y(N)(S)=\\{(E/S,\\alpha)\\}$",
+        "椭圆曲线 同余子群 模形式 几何对象",
+        "modular curve"
+      ],
       "explanation_markdown": "模曲线是参数化椭圆曲线及水平结构的代数曲线。常写成 $Y(N)(S)={E/S, alpha}$，其中alpha 是N阶水平结构，S 是测试基。\n\n它是模空间；单个椭圆曲线是其点，模形式则是其上线丛截面。模曲线把数论对象放进概形和上同调语言中，必须同时跟踪基域、局部化和全局约束；少掉任何一层，结论往往会从算术命题退化成普通几何命题。模曲线还要标明基域、素位和归一化方式；模曲线涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。模曲线的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。模曲线的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -532,8 +796,20 @@
     {
       "chinese_name": "谷山志村定理",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是椭圆曲线算术中的一种模块性定理。",
+        "它断言有理数域上的椭圆曲线来自权二新形式。",
+        "L 函数匹配可写成 $L(E,s)=L(f,s)$。",
+        "它把椭圆曲线的 Galois 表示与模形式世界连接起来。",
+        "它的英文译名是 Taniyama-Shimura theorem。"
+      ],
+      "fragmented_clues": [
+        "椭圆曲线算术 模块性定理",
+        "有理数域 权二新形式 来源",
+        "$L(E,s)=L(f,s)$",
+        "Galois表示 模形式世界 连接",
+        "Taniyama-Shimura theorem"
+      ],
       "explanation_markdown": "谷山志村定理是断言有理数域上椭圆曲线来自权二新形式的模块性定理。常写成 $L(E,s)=L(f,s)$，其中E 是椭圆曲线，f 是权二新形式。\n\n它连接几何曲线和解析模形式，是费马大定理证明的关键输入。谷山志村定理把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。谷山志村定理还要标明基域、素位和归一化方式；谷山志村定理涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。谷山志村定理的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。谷山志村定理的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -556,8 +832,20 @@
     {
       "chinese_name": "模块性提升定理",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 Galois 表示理论中的一种提升定理。",
+        "它从剩余表示的模块性推出某个 p 进提升的模块性。",
+        "示意表达为 $\\bar\\rho$ modular $\\Rightarrow \\rho$ modular。",
+        "它是 Wiles 方法中把模 p 信息提升到特征零表示的关键步骤。",
+        "它的英文译名是 modularity lifting theorem。"
+      ],
+      "fragmented_clues": [
+        "Galois表示理论 提升定理",
+        "剩余表示 模块性 p进提升",
+        "$\\bar\\rho$ modular $\\Rightarrow \\rho$ modular",
+        "Wiles方法 模p信息 特征零表示",
+        "modularity lifting theorem"
+      ],
       "explanation_markdown": "模块性提升定理是由剩余Galois表示的模块性推出提升表示模块性的定理。常写成 $rho_bar modular => rho modular$，其中rho_bar 是模p剩余表示，rho 是p进提升。\n\n它区别于模块性定理本身，核心是控制变形环和Hecke代数。模块性提升定理把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。模块性提升定理还要标明基域、素位和归一化方式；模块性提升定理涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。模块性提升定理的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。模块性提升定理的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -580,8 +868,20 @@
     {
       "chinese_name": "费马大定理",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是数论中的一种不可能性定理。",
+        "它断言三次及以上整数幂没有非平凡的同次和解。",
+        "经典方程为 $x^n+y^n=z^n,\\ n>2$。",
+        "现代证明经由椭圆曲线的模块性和 Galois 表示完成。",
+        "它的英文译名是 Fermat's Last Theorem。"
+      ],
+      "fragmented_clues": [
+        "数论 不可能性定理",
+        "三次及以上整数幂 非平凡同次和解",
+        "$x^n+y^n=z^n,\\ n>2$",
+        "椭圆曲线 模块性 Galois表示 现代证明",
+        "Fermat's Last Theorem"
+      ],
       "explanation_markdown": "费马大定理是断言三次及以上整数幂不存在非平凡和等于同次幂。常写成 $x^n+y^n=z^n, n>2$，其中x,y,z 是非零整数，n 是指数。\n\n现代证明经由Frey曲线、Ribet定理和椭圆曲线模块性完成。费马大定理把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。费马大定理还要标明基域、素位和归一化方式；费马大定理涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。费马大定理的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。费马大定理的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -604,8 +904,20 @@
     {
       "chinese_name": "伽罗瓦表示",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是数论中的一种群表示对象。",
+        "它把绝对 Galois 群的作用线性化到向量空间或模上。",
+        "标准形式为 $\\rho:G_K\\to GL(V)$。",
+        "分歧、Frobenius 特征多项式和局部限制都可从这个同态中读取。",
+        "它的英文译名是 Galois representation。"
+      ],
+      "fragmented_clues": [
+        "数论 群表示对象",
+        "绝对Galois群 线性化 向量空间 模",
+        "$\\rho:G_K\\to GL(V)$",
+        "分歧 Frobenius特征多项式 局部限制 同态",
+        "Galois representation"
+      ],
       "explanation_markdown": "伽罗瓦表示是绝对Galois群到线性群的连续同态。常写成 $rho:G_K\\toGL(V)$，其中G_K 是数域K的绝对Galois群，V 是向量空间。\n\n它不是椭圆曲线或模形式本身，而是它们同调、扭点或Hecke特征值上的对称作用。伽罗瓦表示记录的是绝对伽罗瓦群或局部乘法群的作用方式，分歧、Frobenius和互反映射的位置必须分清；这些数据把域扩张、表示和自守对象联系起来。伽罗瓦表示还要标明基域、素位和归一化方式；伽罗瓦表示涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。伽罗瓦表示的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。伽罗瓦表示的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -628,8 +940,20 @@
     {
       "chinese_name": "l进表示",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是数论中的一种线性表示对象。",
+        "它让绝对 Galois 群连续作用在 $\\ell$ 进向量空间上。",
+        "常写成 $\\rho_\\ell:G_K\\to GL_n(\\mathbb Q_\\ell)$。",
+        "当 $\\ell$ 不同于剩余特征时，它常由平展上同调给出并适合读取 Frobenius。",
+        "它的英文译名是 l-adic representation。"
+      ],
+      "fragmented_clues": [
+        "数论 线性表示对象",
+        "绝对Galois群 连续作用 $\\ell$进向量空间",
+        "$\\rho_\\ell:G_K\\to GL_n(\\mathbb Q_\\ell)$",
+        "$\\ell$ 剩余特征 不同 平展上同调 Frobenius",
+        "l-adic representation"
+      ],
       "explanation_markdown": "l进表示是取值于l进向量空间的连续Galois表示。常写成 $rho_l:G_K\\toGL_n(Q_l)$，其中l 是素数，Q_l 是l进数域。\n\n它常来自l进上同调，研究重点是Frobenius特征多项式和局部惯性作用。l进表示记录的是绝对伽罗瓦群或局部乘法群的作用方式，分歧、Frobenius和互反映射的位置必须分清；这些数据把域扩张、表示和自守对象联系起来。l进表示还要标明基域、素位和归一化方式；l进表示涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。l进表示的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。l进表示的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -652,8 +976,20 @@
     {
       "chinese_name": "p进表示",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是数论中的一种连续线性表示对象。",
+        "它让局部或全局 Galois 群作用在 $p$ 进向量空间上。",
+        "常写成 $\\rho_p:G_K\\to GL_n(\\mathbb Q_p)$。",
+        "在剩余特征等于 $p$ 的局部情形，它受到 de Rham、晶体和半稳定条件约束。",
+        "它的英文译名是 p-adic representation。"
+      ],
+      "fragmented_clues": [
+        "数论 连续线性表示对象",
+        "局部Galois群 全局Galois群 $p$进向量空间",
+        "$\\rho_p:G_K\\to GL_n(\\mathbb Q_p)$",
+        "剩余特征 $p$ de Rham 晶体 半稳定条件",
+        "p-adic representation"
+      ],
       "explanation_markdown": "p进表示是在p进向量空间上的Galois表示，常受p进Hodge理论约束。常写成 $rho_p:G_K\\toGL_n(Q_p)$，其中p 是剩余特征，Q_p 是p进域。\n\n它与l进表示不同，p等于局部剩余特征时会出现Hodge-Tate和晶体条件。p进表示记录的是绝对伽罗瓦群或局部乘法群的作用方式，分歧、Frobenius和互反映射的位置必须分清；这些数据把域扩张、表示和自守对象联系起来。p进表示还要标明基域、素位和归一化方式；p进表示涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。p进表示的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。p进表示的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -676,8 +1012,20 @@
     {
       "chinese_name": "惰性群",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是局部 Galois 理论中的一种子群。",
+        "它由在剩余域上作用平凡的局部 Galois 元组成。",
+        "定义可写成 $I_K=ker(G_K\\to G_k)$。",
+        "未分歧表示正是这个子群作用平凡的表示。",
+        "它的英文译名是 inertia group。"
+      ],
+      "fragmented_clues": [
+        "局部Galois理论 子群",
+        "剩余域 作用平凡 局部Galois元",
+        "$I_K=ker(G_K\\to G_k)$",
+        "未分歧表示 子群作用平凡",
+        "inertia group"
+      ],
       "explanation_markdown": "惰性群是局部Galois群中作用在剩余域上平凡的子群。常写成 $I_K=ker(G_K\\toG_k)$，其中K 是局部域，k 是剩余域。\n\n它测量分歧，区别于分解群中还包含Frobenius的非平凡剩余域作用。惰性群记录的是绝对伽罗瓦群或局部乘法群的作用方式，分歧、Frobenius和互反映射的位置必须分清；这些数据把域扩张、表示和自守对象联系起来。惰性群还要标明基域、素位和归一化方式；惰性群涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。惰性群的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。惰性群的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -700,8 +1048,20 @@
     {
       "chinese_name": "分解群",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 Galois 理论中的一种局部化子群。",
+        "它由保持全局扩张中某个素位的自同构组成。",
+        "常记为 $D_v\\subset G_K$。",
+        "它把全局 Galois 群在一个素位附近的行为等同于相应局部 Galois 群。",
+        "它的英文译名是 decomposition group。"
+      ],
+      "fragmented_clues": [
+        "Galois理论 局部化子群",
+        "全局扩张 素位 自同构 保持",
+        "$D_v\\subset G_K$",
+        "全局Galois群 素位附近 局部Galois群",
+        "decomposition group"
+      ],
       "explanation_markdown": "分解群是全局Galois群中保持某个素位的子群。常写成 $D_v \\subset G_K$，其中v 是素位，D_v 同构于局部Galois群。\n\n它把全局表示限制到局部域，是定义局部因子和惯性作用的入口。分解群记录的是绝对伽罗瓦群或局部乘法群的作用方式，分歧、Frobenius和互反映射的位置必须分清；这些数据把域扩张、表示和自守对象联系起来。分解群还要标明基域、素位和归一化方式；分解群涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。分解群的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。分解群的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -724,8 +1084,20 @@
     {
       "chinese_name": "弗罗贝尼乌斯元",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 Galois 理论中的一种标准元素。",
+        "它出现在未分歧局部商中，描述有限剩余域上的幂作用。",
+        "算术版本可写成 $Frob_p(x)=x^p$。",
+        "它的共轭类控制局部 L 因子和切博塔廖夫分布。",
+        "它的英文译名是 Frobenius element。"
+      ],
+      "fragmented_clues": [
+        "Galois理论 标准元素",
+        "未分歧局部商 有限剩余域 幂作用",
+        "$Frob_p(x)=x^p$",
+        "共轭类 局部L因子 切博塔廖夫分布",
+        "Frobenius element"
+      ],
       "explanation_markdown": "弗罗贝尼乌斯元是未分歧局部Galois商中的几何或算术生成元。常写成 $Frob_p(x)=x^p$，其中p 是剩余特征，作用在有限域上。\n\n它的特征多项式给出局部L因子，和惰性群的分歧信息互补。弗罗贝尼乌斯元记录的是绝对伽罗瓦群或局部乘法群的作用方式，分歧、Frobenius和互反映射的位置必须分清；这些数据把域扩张、表示和自守对象联系起来。弗罗贝尼乌斯元还要标明基域、素位和归一化方式；弗罗贝尼乌斯元涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。弗罗贝尼乌斯元的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。弗罗贝尼乌斯元的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -748,8 +1120,20 @@
     {
       "chinese_name": "局部域",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是数论中的一种完备赋值域。",
+        "它带离散赋值、完备性和有限剩余域条件。",
+        "基本来源可写成 $K/\\mathbb Q_p$ finite 或 $K/\\mathbb F_q((t))$ finite。",
+        "它提供每个素位附近的算术环境，是局部类域论和局部表示的基底。",
+        "它的英文译名是 local field。"
+      ],
+      "fragmented_clues": [
+        "数论 完备赋值域",
+        "离散赋值 完备性 有限剩余域",
+        "$K/\\mathbb Q_p$ finite 或 $K/\\mathbb F_q((t))$ finite",
+        "素位附近 算术环境 局部类域论 局部表示",
+        "local field"
+      ],
       "explanation_markdown": "局部域是带离散赋值且完备、剩余域有限的域。常写成 $K \\simeq finite extension of Q_p or F_q((t))$，其中K 是局部域，右侧给出两类基本来源。\n\n它提供单个素位附近的算术几何环境。局部域记录的是绝对伽罗瓦群或局部乘法群的作用方式，分歧、Frobenius和互反映射的位置必须分清；这些数据把域扩张、表示和自守对象联系起来。局部域还要标明基域、素位和归一化方式；局部域涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。局部域的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。局部域的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -772,8 +1156,20 @@
     {
       "chinese_name": "全局域",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是数论中的一种基础域对象。",
+        "它包括数域和有限域上一变量函数域两大类。",
+        "可概括写成 $K/\\mathbb Q$ finite 或 $K/\\mathbb F_q(t)$ finite。",
+        "它同时拥有所有素位完备化，是阿代尔、L 函数和类域论的全局基底。",
+        "它的英文译名是 global field。"
+      ],
+      "fragmented_clues": [
+        "数论 基础域对象",
+        "数域 有限域 一变量函数域",
+        "$K/\\mathbb Q$ finite 或 $K/\\mathbb F_q(t)$ finite",
+        "所有素位完备化 阿代尔 L函数 类域论",
+        "global field"
+      ],
       "explanation_markdown": "全局域是数域或有限域上一变量函数域。常写成 $K/Q finite or K/F_q(t) finite$，其中K 是全局域，有限扩张给出定义。\n\n它的局部化给出局部域，二者由乘积公式和阿代尔语言联系。全局域记录的是绝对伽罗瓦群或局部乘法群的作用方式，分歧、Frobenius和互反映射的位置必须分清；这些数据把域扩张、表示和自守对象联系起来。全局域还要标明基域、素位和归一化方式；全局域涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。全局域的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。全局域的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -796,8 +1192,20 @@
     {
       "chinese_name": "阿代尔环",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是全局域算术中的一种拓扑环。",
+        "它由所有完备化按几乎处处整数条件组成受限乘积。",
+        "常写成 $A_K=\\prod_v'K_v$。",
+        "它把有限素位和无穷位放进同一个乘法与加法环境。",
+        "它的英文译名是 adele ring。"
+      ],
+      "fragmented_clues": [
+        "全局域算术 拓扑环",
+        "所有完备化 几乎处处整数 受限乘积",
+        "$A_K=\\prod_v'K_v$",
+        "有限素位 无穷位 乘法 加法 环境",
+        "adele ring"
+      ],
       "explanation_markdown": "阿代尔环是全局域所有完备化的受限乘积。常写成 $A_K=\\prod_v' K_v$，其中K_v 是局部完备化，撇号表示几乎处处取整数环。\n\n它同时容纳所有局部数据，是自守形式和Hasse问题的基本空间。阿代尔环记录的是绝对伽罗瓦群或局部乘法群的作用方式，分歧、Frobenius和互反映射的位置必须分清；这些数据把域扩张、表示和自守对象联系起来。阿代尔环还要标明基域、素位和归一化方式；阿代尔环涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。阿代尔环的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。阿代尔环的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -820,8 +1228,20 @@
     {
       "chinese_name": "伊代尔类群",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是全局类域论中的一种商群。",
+        "它由阿代尔可逆元模去全局域乘法群得到。",
+        "标准表达为 $C_K=A_K^*/K^*$。",
+        "它是 Artin 互反映射的源端，编码全局阿贝尔扩张。",
+        "它的英文译名是 idele class group。"
+      ],
+      "fragmented_clues": [
+        "全局类域论 商群",
+        "阿代尔可逆元 全局域乘法群 商",
+        "$C_K=A_K^*/K^*$",
+        "Artin互反映射 源端 全局阿贝尔扩张",
+        "idele class group"
+      ],
       "explanation_markdown": "伊代尔类群是阿代尔可逆元模全局域乘法群的商。常写成 $C_K=A_K^*/K^*$，其中A_K^* 是伊代尔群，K^* 对角嵌入。\n\n它是类域论的对象，区别于理想类群的有限离散版本。伊代尔类群记录的是绝对伽罗瓦群或局部乘法群的作用方式，分歧、Frobenius和互反映射的位置必须分清；这些数据把域扩张、表示和自守对象联系起来。伊代尔类群还要标明基域、素位和归一化方式；伊代尔类群涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。伊代尔类群的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。伊代尔类群的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -844,8 +1264,20 @@
     {
       "chinese_name": "类域论",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是代数数论中的一种互反理论。",
+        "它用乘法群或伊代尔类群描述域的阿贝尔扩张。",
+        "互反映射可写成 $Art_K:C_K\\to G_K^{ab}$。",
+        "它把素理想分解规律翻译成 Galois 群阿贝尔化上的元素。",
+        "它的英文译名是 class field theory。"
+      ],
+      "fragmented_clues": [
+        "代数数论 互反理论",
+        "乘法群 伊代尔类群 阿贝尔扩张",
+        "$Art_K:C_K\\to G_K^{ab}$",
+        "素理想分解规律 Galois群阿贝尔化 元素",
+        "class field theory"
+      ],
       "explanation_markdown": "类域论是用阿贝尔化Galois群描述域的阿贝尔扩张的理论。常写成 $Art_K:C_K \\to G_K^ab$，其中C_K 是伊代尔类群，G_K^ab 是绝对Galois群阿贝尔化。\n\n它把域扩张问题转为拓扑群同态，局部和全局版本由互反映射联系。类域论记录的是绝对伽罗瓦群或局部乘法群的作用方式，分歧、Frobenius和互反映射的位置必须分清；这些数据把域扩张、表示和自守对象联系起来。类域论还要标明基域、素位和归一化方式；类域论涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。类域论的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。类域论的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -868,8 +1300,20 @@
     {
       "chinese_name": "局部类域论",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是局部域上的一种互反理论。",
+        "它把乘法群与绝对 Galois 群的阿贝尔化联系起来。",
+        "互反映射常写成 $rec_K:K^*\\to G_K^{ab}$。",
+        "它精确描述有限阿贝尔扩张中的范数子群和分歧行为。",
+        "它的英文译名是 local class field theory。"
+      ],
+      "fragmented_clues": [
+        "局部域 互反理论",
+        "乘法群 绝对Galois群 阿贝尔化",
+        "$rec_K:K^*\\to G_K^{ab}$",
+        "有限阿贝尔扩张 范数子群 分歧行为",
+        "local class field theory"
+      ],
       "explanation_markdown": "局部类域论是局部域乘法群与阿贝尔化Galois群之间的互反理论。常写成 $rec_K:K^* \\to G_K^ab$，其中K 是局部域，rec_K 是互反映射。\n\n它精确描述局部阿贝尔扩张，正规化决定Frobenius对应方向。局部类域论记录的是绝对伽罗瓦群或局部乘法群的作用方式，分歧、Frobenius和互反映射的位置必须分清；这些数据把域扩张、表示和自守对象联系起来。局部类域论还要标明基域、素位和归一化方式；局部类域论涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。局部类域论的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。局部类域论的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -892,8 +1336,20 @@
     {
       "chinese_name": "全局类域论",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是全局域上的一种互反理论。",
+        "它用伊代尔类群描述全局阿贝尔扩张。",
+        "互反映射可写成 $A_K^*/K^*\\to G_K^{ab}$。",
+        "它把所有局部互反律粘合成一条满足乘积公式的全局对应。",
+        "它的英文译名是 global class field theory。"
+      ],
+      "fragmented_clues": [
+        "全局域 互反理论",
+        "伊代尔类群 全局阿贝尔扩张",
+        "$A_K^*/K^*\\to G_K^{ab}$",
+        "局部互反律 粘合 乘积公式 全局对应",
+        "global class field theory"
+      ],
       "explanation_markdown": "全局类域论是全局域伊代尔类群与阿贝尔扩张的互反理论。常写成 $A_K^*/K^* \\to G_K^ab$，其中A_K 是阿代尔环，G_K^ab 是阿贝尔化Galois群。\n\n它把局部互反律拼接成全局陈述，并包含Artin互反律。全局类域论记录的是绝对伽罗瓦群或局部乘法群的作用方式，分歧、Frobenius和互反映射的位置必须分清；这些数据把域扩张、表示和自守对象联系起来。全局类域论还要标明基域、素位和归一化方式；全局类域论涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。全局类域论的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。全局类域论的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -916,8 +1372,20 @@
     {
       "chinese_name": "阿廷互反律",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是类域论中的一种互反同态。",
+        "它把伊代尔类送到阿贝尔扩张的 Galois 元。",
+        "有限扩张上可写成 $Art_K(a)\\in Gal(L/K)^{ab}$。",
+        "素元在未分歧处的像与 Frobenius 元相匹配。",
+        "它的英文译名是 Artin reciprocity law。"
+      ],
+      "fragmented_clues": [
+        "类域论 互反同态",
+        "伊代尔类 阿贝尔扩张 Galois元",
+        "$Art_K(a)\\in Gal(L/K)^{ab}$",
+        "素元 未分歧 Frobenius元 匹配",
+        "Artin reciprocity law"
+      ],
       "explanation_markdown": "阿廷互反律是类域论中把伊代尔类映到Galois元的同态律。常写成 $Art_K(a) in Gal(L/K)^ab$，其中a 是伊代尔类，L/K 是阿贝尔扩张。\n\n它说明素理想的Frobenius如何由理想类或伊代尔类决定。阿廷互反律记录的是绝对伽罗瓦群或局部乘法群的作用方式，分歧、Frobenius和互反映射的位置必须分清；这些数据把域扩张、表示和自守对象联系起来。阿廷互反律还要标明基域、素位和归一化方式；阿廷互反律涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。阿廷互反律的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。阿廷互反律的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -940,8 +1408,20 @@
     {
       "chinese_name": "赫克字符",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是自守和代数数论中的一种角色。",
+        "它是在伊代尔类群上的连续复值或代数型同态。",
+        "可写成 $\\chi:A_K^*/K^*\\to \\mathbb C^*$。",
+        "它统一了 Dirichlet 角色和更高数域上的 L 函数一维数据。",
+        "它的英文译名是 Hecke character。"
+      ],
+      "fragmented_clues": [
+        "自守理论 代数数论 角色",
+        "伊代尔类群 连续复值 代数型同态",
+        "$\\chi:A_K^*/K^*\\to \\mathbb C^*$",
+        "Dirichlet角色 高数域 L函数 一维数据",
+        "Hecke character"
+      ],
       "explanation_markdown": "赫克字符是伊代尔类群上的连续复值或代数角色。常写成 $chi:A_K^*/K^* \\to C^*$，其中A_K 是阿代尔环，chi 是角色。\n\n它推广Dirichlet特征，能产生自守L函数和复乘椭圆曲线的Galois表示。赫克字符记录的是绝对伽罗瓦群或局部乘法群的作用方式，分歧、Frobenius和互反映射的位置必须分清；这些数据把域扩张、表示和自守对象联系起来。赫克字符还要标明基域、素位和归一化方式；赫克字符涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。赫克字符的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。赫克字符的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -964,8 +1444,20 @@
     {
       "chinese_name": "格罗森字符",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是代数数论中的一种带无穷型角色。",
+        "它由各局部分量组成，并满足全局平凡性约束。",
+        "分解形式可写成 $\\chi(x)=\\prod_v\\chi_v(x_v)$。",
+        "它比 Dirichlet 角色更适合描述数域和 CM 椭圆曲线的 L 函数。",
+        "它的英文译名是 Grossencharacter。"
+      ],
+      "fragmented_clues": [
+        "代数数论 带无穷型角色",
+        "局部分量 全局平凡性 约束",
+        "$\\chi(x)=\\prod_v\\chi_v(x_v)$",
+        "Dirichlet角色 数域 CM椭圆曲线 L函数",
+        "Grossencharacter"
+      ],
       "explanation_markdown": "格罗森字符是带无穷型条件的Hecke字符。常写成 $chi(x)=\\prod_v chi_v(x_v)$，其中chi_v 是局部分量，乘积满足全局平凡性。\n\n它常用于复乘理论，区别于只定义在整数模上的Dirichlet特征。格罗森字符记录的是绝对伽罗瓦群或局部乘法群的作用方式，分歧、Frobenius和互反映射的位置必须分清；这些数据把域扩张、表示和自守对象联系起来。格罗森字符还要标明基域、素位和归一化方式；格罗森字符涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。格罗森字符的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。格罗森字符的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -988,8 +1480,20 @@
     {
       "chinese_name": "狄利克雷特征",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是解析数论中的一种有限角色。",
+        "它定义在模 $N$ 的可逆剩余类群上，并周期延拓到整数。",
+        "可写成 $\\chi:(\\mathbb Z/N\\mathbb Z)^*\\to\\mathbb C^*$。",
+        "在与模数不互素的整数上常取零，是 Dirichlet L 函数的输入。",
+        "它的英文译名是 Dirichlet character。"
+      ],
+      "fragmented_clues": [
+        "解析数论 有限角色",
+        "模$N$ 可逆剩余类群 周期延拓 整数",
+        "$\\chi:(\\mathbb Z/N\\mathbb Z)^*\\to\\mathbb C^*$",
+        "不互素整数 取零 Dirichlet L函数 输入",
+        "Dirichlet character"
+      ],
       "explanation_markdown": "狄利克雷特征是模N乘法群上的复值角色并周期延拓到整数。常写成 $chi:(Z/NZ)^*\\toC^*$，其中N 是模数，chi 在非互素整数上通常取零。\n\n它是最基本的Hecke字符例子，对应Dirichlet L函数。狄利克雷特征把数论对象放进概形和上同调语言中，必须同时跟踪基域、局部化和全局约束；少掉任何一层，结论往往会从算术命题退化成普通几何命题。狄利克雷特征还要标明基域、素位和归一化方式；狄利克雷特征涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。狄利克雷特征的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。狄利克雷特征的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1012,8 +1516,20 @@
     {
       "chinese_name": "L函数",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是解析数论中的一种解析函数。",
+        "它由各素位局部因子组成并编码算术对象的素数信息。",
+        "Euler 乘积形式可写成 $L(s)=\\prod_p L_p(p^{-s})^{-1}$。",
+        "延拓、函数方程和特殊值往往揭示秩、循环或 Galois 表示信息。",
+        "它的英文译名是 L-function。"
+      ],
+      "fragmented_clues": [
+        "解析数论 解析函数",
+        "素位 局部因子 算术对象 素数信息",
+        "$L(s)=\\prod_p L_p(p^{-s})^{-1}$",
+        "延拓 函数方程 特殊值 秩 循环 Galois表示",
+        "L-function"
+      ],
       "explanation_markdown": "L函数是由局部因子组成的解析函数，编码算术对象的素数信息。常写成 $L(s)=\\prod_p L_p(p^{-s})^{-1}$，其中p 遍历素数，L_p 是局部因子。\n\n它不是单纯生成函数，解析延拓、函数方程和特殊值承载深层几何信息。L函数把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。L函数还要标明基域、素位和归一化方式；L函数涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。L函数的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。L函数的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1036,8 +1552,20 @@
     {
       "chinese_name": "自守L函数",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是自守理论中的一种解析函数。",
+        "它由自守表示的各局部分量或局部参数形成。",
+        "常写成 $L(s,\\pi)=\\prod_v L(s,\\pi_v)$。",
+        "它把自守表示的局部数据压成具有解析延拓和函数方程的全局函数。",
+        "它的英文译名是 automorphic L-function。"
+      ],
+      "fragmented_clues": [
+        "自守理论 解析函数",
+        "自守表示 局部分量 局部参数",
+        "$L(s,\\pi)=\\prod_v L(s,\\pi_v)$",
+        "局部数据 解析延拓 函数方程 全局函数",
+        "automorphic L-function"
+      ],
       "explanation_markdown": "自守L函数是自守表示的局部参数形成的L函数。常写成 $L(s,pi)=\\prod_v L(s,pi_v)$，其中pi_v 是自守表示的局部分量。\n\n它与Hasse-Weil L函数相邻，Langlands对应预言二者可相互匹配。自守L函数把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。自守L函数还要标明基域、素位和归一化方式；自守L函数涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。自守L函数的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。自守L函数的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1060,8 +1588,20 @@
     {
       "chinese_name": "哈斯韦伊L函数",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是算术几何中的一种 zeta 型解析函数。",
+        "它由代数簇在有限域纤维上的 Frobenius 作用定义。",
+        "典型因子为 $L(X,s)=\\prod_p det(1-Frob_p p^{-s}|H^i)^{(-1)^{i+1}}$。",
+        "它把点数信息提升为上同调特征多项式的全局乘积。",
+        "它的英文译名是 Hasse-Weil L-function。"
+      ],
+      "fragmented_clues": [
+        "算术几何 zeta型解析函数",
+        "代数簇 有限域纤维 Frobenius作用",
+        "$L(X,s)=\\prod_p det(1-Frob_p p^{-s}|H^i)^{(-1)^{i+1}}$",
+        "点数信息 上同调特征多项式 全局乘积",
+        "Hasse-Weil L-function"
+      ],
       "explanation_markdown": "哈斯韦伊L函数是由代数簇在有限域纤维上的Frobenius作用定义的L函数。常写成 $L(X,s)=\\prod_p det(1-Frob_p p^{-s}|H^i)^{(-1)^{i+1}}$，其中H^i 是l进上同调，Frob_p 是Frobenius。\n\n它从几何上同调产生，区别于只由自守表示直接定义的L函数。哈斯韦伊L函数把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。哈斯韦伊L函数还要标明基域、素位和归一化方式；哈斯韦伊L函数涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。哈斯韦伊L函数的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。哈斯韦伊L函数的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1084,8 +1624,20 @@
     {
       "chinese_name": "ζ函数",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是数论和代数几何中的一种母函数。",
+        "它记录有限域上点数或数域素理想的分布。",
+        "有限域情形可写成 $Z(X,t)=\\exp(\\sum_{r\\ge1}|X(\\mathbb F_{q^r})|t^r/r)$。",
+        "它把逐次扩域点数打包成一个可研究的解析或形式对象。",
+        "它的英文译名是 zeta function。"
+      ],
+      "fragmented_clues": [
+        "数论 代数几何 母函数",
+        "有限域点数 数域素理想 分布",
+        "$Z(X,t)=\\exp(\\sum_{r\\ge1}|X(\\mathbb F_{q^r})|t^r/r)$",
+        "逐次扩域点数 解析对象 形式对象",
+        "zeta function"
+      ],
       "explanation_markdown": "ζ函数是记录有限域上点数或数域素理想的母函数。常写成 $Z(X,t)=exp(\\sum_{r\\ge1} |X(F_{q^r})| t^r/r)$，其中X 是有限域上簇，t 是形式变量。\n\n它是L函数的基本原型，点数信息通过Frobenius本征值组织。ζ函数把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。ζ函数还要标明基域、素位和归一化方式；ζ函数涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。ζ函数的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。ζ函数的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1108,8 +1660,20 @@
     {
       "chinese_name": "局部因子",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 L 函数理论中的一种 Euler 因子。",
+        "它描述单个素位处表示或上同调的 Frobenius 数据。",
+        "常写成 $L_p(T)=det(1-Frob_pT|V^{I_p})^{-1}$。",
+        "惰性不变量和坏约化修正决定它是否等同于未分歧特征多项式。",
+        "它的英文译名是 local factor。"
+      ],
+      "fragmented_clues": [
+        "L函数理论 Euler因子",
+        "单个素位 表示 上同调 Frobenius数据",
+        "$L_p(T)=det(1-Frob_pT|V^{I_p})^{-1}$",
+        "惰性不变量 坏约化修正 未分歧特征多项式",
+        "local factor"
+      ],
       "explanation_markdown": "局部因子是L函数在一个素位处的Euler因子。常写成 $L_p(T)=det(1-Frob_p T|V^{I_p})^{-1}$，其中V 是表示，I_p 是惰性群。\n\n它区分未分歧和坏约化情况，是全局Euler乘积的单个零件。局部因子把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。局部因子还要标明基域、素位和归一化方式；局部因子涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。局部因子的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。局部因子的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1132,8 +1696,20 @@
     {
       "chinese_name": "欧拉乘积",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是解析数论中的一种乘积分解。",
+        "它把全局级数分解为按素数排列的局部因子。",
+        "常写成 $L(s)=\\prod_p L_p(p^{-s})$。",
+        "它体现唯一分解或局部独立性，是连接素数和解析函数的桥梁。",
+        "它的英文译名是 Euler product。"
+      ],
+      "fragmented_clues": [
+        "解析数论 乘积分解",
+        "全局级数 素数 局部因子",
+        "$L(s)=\\prod_p L_p(p^{-s})$",
+        "唯一分解 局部独立性 素数 解析函数 桥梁",
+        "Euler product"
+      ],
       "explanation_markdown": "欧拉乘积是把全局L函数分解为各素位局部因子的乘积。常写成 $L(s)=\\prod_p L_p(p^{-s})$，其中p 遍历素数，L_p 是局部因子。\n\n它反映素数独立性，但收敛外的解析性质需要延拓和函数方程。欧拉乘积把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。欧拉乘积还要标明基域、素位和归一化方式；欧拉乘积涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。欧拉乘积的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。欧拉乘积的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1156,8 +1732,20 @@
     {
       "chinese_name": "函数方程",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 L 函数理论中的一种对称关系。",
+        "它把完备函数在 $s$ 与中心反射点的值联系起来。",
+        "常写成 $\\Lambda(s)=\\epsilon\\Lambda(w+1-s)$。",
+        "根数 $\\epsilon$ 控制中心点奇偶性和可能的消失行为。",
+        "它的英文译名是 functional equation。"
+      ],
+      "fragmented_clues": [
+        "L函数理论 对称关系",
+        "$s$ 中心反射点 完备函数 值",
+        "$\\Lambda(s)=\\epsilon\\Lambda(w+1-s)$",
+        "根数 $\\epsilon$ 中心点奇偶性 消失行为",
+        "functional equation"
+      ],
       "explanation_markdown": "函数方程是L函数在s与中心对称点之间的对称关系。常写成 $Lambda(s)=epsilon Lambda(w+1-s)$，其中Lambda 是完备L函数，epsilon 是根数。\n\n它把无穷位Gamma因子和有限素信息结合，特殊值研究常从中心点开始。函数方程把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。函数方程还要标明基域、素位和归一化方式；函数方程涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。函数方程的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。函数方程的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1180,8 +1768,20 @@
     {
       "chinese_name": "特殊值",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 L 函数理论中的一种数值对象。",
+        "它指整数点或中心点处的值、导数或首个非零 Taylor 系数。",
+        "常记为 $L^*(M,0)$。",
+        "在深层猜想中，它与周期、Selmer 群、调节子和代数循环相联系。",
+        "它的英文译名是 special value。"
+      ],
+      "fragmented_clues": [
+        "L函数理论 数值对象",
+        "整数点 中心点 值 导数 首个非零Taylor系数",
+        "$L^*(M,0)$",
+        "周期 Selmer群 调节子 代数循环",
+        "special value"
+      ],
       "explanation_markdown": "特殊值是L函数在整数或中心点处的值及其导数。常写成 $L^*(M,0)$，其中M 是动机或表示，星号表示首个非零Taylor系数。\n\n它不是普通函数取值，常预言秩、周期、调和体积和Selmer群大小。特殊值把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。特殊值还要标明基域、素位和归一化方式；特殊值涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。特殊值的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。特殊值的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1204,8 +1804,20 @@
     {
       "chinese_name": "贝赫斯温纳戴尔猜想",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是椭圆曲线算术中的一种深层猜想。",
+        "它联系中心点 L 函数零阶与有理点群的秩。",
+        "核心等式可写成 $ord_{s=1}L(E,s)=rank\\,E(\\mathbb Q)$。",
+        "它的精细形式还包含调节子、Sha、Tamagawa 数和周期因子。",
+        "它的英文译名是 Birch and Swinnerton-Dyer conjecture。"
+      ],
+      "fragmented_clues": [
+        "椭圆曲线算术 深层猜想",
+        "中心点 L函数 零阶 有理点群 秩",
+        "$ord_{s=1}L(E,s)=rank\\,E(\\mathbb Q)$",
+        "调节子 Sha Tamagawa数 周期因子",
+        "Birch and Swinnerton-Dyer conjecture"
+      ],
       "explanation_markdown": "贝赫斯温纳戴尔猜想是把椭圆曲线L函数中心零阶同Mordell-Weil秩联系的猜想。常写成 $ord_{s=1} L(E,s)=rank E(Q)$，其中E 是椭圆曲线，rank 是有理点群秩。\n\n它进一步预言首项由调节子、Tamagawa数和Sha群控制。贝赫斯温纳戴尔猜想把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。贝赫斯温纳戴尔猜想还要标明基域、素位和归一化方式；贝赫斯温纳戴尔猜想涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。贝赫斯温纳戴尔猜想的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。贝赫斯温纳戴尔猜想的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1228,8 +1840,20 @@
     {
       "chinese_name": "布洛赫加藤猜想",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是动机和 L 函数理论中的一种特殊值猜想。",
+        "它用 Selmer 群和周期数据描述动机 L 函数的零阶。",
+        "一个形式可写成 $ord\\,L(M,s_0)=dim\\,H_f^1(M^*(1))$。",
+        "它把 BSD 型公式推广到一般动机和 Galois 表示。",
+        "它的英文译名是 Bloch-Kato conjecture。"
+      ],
+      "fragmented_clues": [
+        "动机 L函数理论 特殊值猜想",
+        "Selmer群 周期数据 动机L函数 零阶",
+        "$ord\\,L(M,s_0)=dim\\,H_f^1(M^*(1))$",
+        "BSD型公式 一般动机 Galois表示",
+        "Bloch-Kato conjecture"
+      ],
       "explanation_markdown": "布洛赫加藤猜想是用Selmer群和周期描述动机L函数特殊值的猜想。常写成 $ord L(M,s_0)=\\dim H_f^1(M^*(1))$，其中M 是动机，H_f^1 是有限局部条件Selmer群。\n\n它推广BSD和Tamagawa数公式，核心对象是p进Galois上同调。布洛赫加藤猜想把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。布洛赫加藤猜想还要标明基域、素位和归一化方式；布洛赫加藤猜想涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。布洛赫加藤猜想的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。布洛赫加藤猜想的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1252,8 +1876,20 @@
     {
       "chinese_name": "泰特猜想",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是算术几何中的一种代数循环猜想。",
+        "它把代数循环的秩同 Frobenius 或 Galois 不变量联系起来。",
+        "循环类映射可写成 $CH^r(X)\\otimes\\mathbb Q_\\ell\\to H^{2r}(X,\\mathbb Q_\\ell(r))^G$。",
+        "它的对象是 $\\ell$ 进上同调中的不变量部分，而非复 Hodge 分解中的类型条件。",
+        "它的英文译名是 Tate conjecture。"
+      ],
+      "fragmented_clues": [
+        "算术几何 代数循环猜想",
+        "代数循环 秩 Frobenius Galois不变量",
+        "$CH^r(X)\\otimes\\mathbb Q_\\ell\\to H^{2r}(X,\\mathbb Q_\\ell(r))^G$",
+        "$\\ell$进上同调 不变量部分 复Hodge分解 类型条件",
+        "Tate conjecture"
+      ],
       "explanation_markdown": "泰特猜想是把代数循环秩同Frobenius不变量联系的猜想。常写成 $CH^r(X) \\otimes Q_l \\to H^{2r}(X,Q_l(r))^{G}$，其中X 是有限生成域上簇，G 是Galois群。\n\n它关注代数循环是否解释相应上同调类，区别于Hodge猜想的复几何表述。泰特猜想把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。泰特猜想还要标明基域、素位和归一化方式；泰特猜想涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。泰特猜想的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。泰特猜想的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1276,8 +1912,20 @@
     {
       "chinese_name": "霍奇猜想",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是复代数几何中的一种代数循环猜想。",
+        "它断言射影复簇上的有理 Hodge 类来自代数循环。",
+        "常写成 $H^{2r}(X,\\mathbb Q)\\cap H^{r,r}=image\\,CH^r(X)$。",
+        "它关注复上同调的 $(r,r)$ 型部分，而不是有限域上的 Frobenius 不变量。",
+        "它的英文译名是 Hodge conjecture。"
+      ],
+      "fragmented_clues": [
+        "复代数几何 代数循环猜想",
+        "射影复簇 有理Hodge类 代数循环",
+        "$H^{2r}(X,\\mathbb Q)\\cap H^{r,r}=image\\,CH^r(X)$",
+        "$(r,r)$型部分 有限域 Frobenius不变量 区别",
+        "Hodge conjecture"
+      ],
       "explanation_markdown": "霍奇猜想是断言射影复簇上的有理Hodge类来自代数循环。常写成 $H^{2r}(X,Q) cap H^{r,r} = image CH^r(X)$，其中X 是光滑射影复簇。\n\n它是复上同调中的代数性问题，和Tate猜想在l进上同调中的形式相互对应。霍奇猜想把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。霍奇猜想还要标明基域、素位和归一化方式；霍奇猜想涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。霍奇猜想的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。霍奇猜想的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1300,8 +1948,20 @@
     {
       "chinese_name": "莫德尔猜想",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是丢番图几何中的一种有限性命题。",
+        "它断言数域上亏格至少二的光滑射影曲线有理点有限。",
+        "可写成 $|C(K)|<\\infty,\\ g(C)\\ge2$。",
+        "亏格一情形可能有正秩无限点集，因此高亏格条件是鲜明分界。",
+        "它的英文译名是 Mordell conjecture。"
+      ],
+      "fragmented_clues": [
+        "丢番图几何 有限性命题",
+        "数域 亏格至少二 光滑射影曲线 有理点有限",
+        "$|C(K)|<\\infty,\\ g(C)\\ge2$",
+        "亏格一 正秩无限点集 高亏格分界",
+        "Mordell conjecture"
+      ],
       "explanation_markdown": "莫德尔猜想是断言数域上亏格至少二的光滑射影曲线有有限多个有理点。常写成 $|C(K)|<infty, g(C)\\ge2$，其中C 是数域K上曲线，g 是亏格。\n\n它由Faltings定理证明，区别于椭圆曲线可能有正秩无限点。莫德尔猜想通常连接全局解与各个局部条件，有限生成性、坏约化和高度配对会直接影响可解性；同一个簇在有理点、整点和阿代尔点层面给出的信息并不相同。莫德尔猜想还要标明基域、素位和归一化方式；莫德尔猜想涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。莫德尔猜想的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。莫德尔猜想的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1324,8 +1984,20 @@
     {
       "chinese_name": "法尔廷斯定理",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是丢番图几何中的一种有限性定理。",
+        "它证明数域上高亏格曲线的有理点有限。",
+        "典型结论为 $g(C)\\ge2\\Rightarrow C(K)$ finite。",
+        "它解决 Mordell 的高亏格有限性问题，并伴随阿贝尔簇有限性结果。",
+        "它的英文译名是 Faltings theorem。"
+      ],
+      "fragmented_clues": [
+        "丢番图几何 有限性定理",
+        "数域 高亏格曲线 有理点有限",
+        "$g(C)\\ge2\\Rightarrow C(K)$ finite",
+        "Mordell高亏格有限性 阿贝尔簇有限性",
+        "Faltings theorem"
+      ],
       "explanation_markdown": "法尔廷斯定理是证明Mordell猜想并给出阿贝尔簇有限性结果的定理。常写成 $g(C)\\ge2 => C(K) finite$，其中C 是数域上曲线，K 是数域。\n\n它把高度、Arakelov几何和模空间紧性结合起来。法尔廷斯定理把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。法尔廷斯定理还要标明基域、素位和归一化方式；法尔廷斯定理涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。法尔廷斯定理的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。法尔廷斯定理的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1348,8 +2020,20 @@
     {
       "chinese_name": "朗格猜想",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是丢番图几何中的一种稠密性猜想。",
+        "它预言一般型簇上的有理点不应 Zariski 稠密。",
+        "可概括写成 $X(K)$ not dense for $X$ general type。",
+        "它把曲线的高亏格有限性推广为高维簇的非稠密性图景。",
+        "它的英文译名是 Lang conjecture。"
+      ],
+      "fragmented_clues": [
+        "丢番图几何 稠密性猜想",
+        "一般型簇 有理点 Zariski非稠密",
+        "$X(K)$ not dense for $X$ general type",
+        "高亏格有限性 高维簇 非稠密性",
+        "Lang conjecture"
+      ],
       "explanation_markdown": "朗格猜想是预言一般型簇的有理点不应Zariski稠密的猜想。常写成 $X(K) not dense for X general type$，其中X 是一般型簇，K 是数域。\n\n它把曲线Mordell现象推广到高维，和Campana特殊性相对。朗格猜想把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。朗格猜想还要标明基域、素位和归一化方式；朗格猜想涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。朗格猜想的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。朗格猜想的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1372,8 +2056,20 @@
     {
       "chinese_name": "abc猜想",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是丢番图数论中的一种不等式猜想。",
+        "它把互素整数和的大小与不同素因子的乘积联系起来。",
+        "常写成 $c\\le C_\\epsilon rad(abc)^{1+\\epsilon}$，其中 $a+b=c$。",
+        "它强调素因子的种类而非重数，能推出许多指数方程的有限性结论。",
+        "它的英文译名是 abc conjecture。"
+      ],
+      "fragmented_clues": [
+        "丢番图数论 不等式猜想",
+        "互素整数和 不同素因子乘积",
+        "$c\\le C_\\epsilon rad(abc)^{1+\\epsilon}$ $a+b=c$",
+        "素因子种类 重数区别 指数方程 有限性",
+        "abc conjecture"
+      ],
       "explanation_markdown": "abc猜想是把互素整数和的大小同素因子根基联系的猜想。常写成 $c \\le C_e rad(abc)^{1+e}$，其中a+b=c，rad 取不同素因子乘积。\n\n它统一许多Diophantine估计，但不是已被普遍接受的定理。abc猜想把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。abc猜想还要标明基域、素位和归一化方式；abc猜想涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。abc猜想的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。abc猜想的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1396,8 +2092,20 @@
     {
       "chinese_name": "伊瓦萨瓦理论",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是代数数论中的一种 $p$ 进变形理论。",
+        "它研究数论对象沿无限 $p$ 进塔的变化。",
+        "塔的 Galois 群常写成 $\\Gamma=Gal(K_\\infty/K)\\simeq\\mathbb Z_p$。",
+        "它把类群、Selmer 群或 L 值变化编码为完备群环上的模。",
+        "它的英文译名是 Iwasawa theory。"
+      ],
+      "fragmented_clues": [
+        "代数数论 $p$进变形理论",
+        "数论对象 无限$p$进塔 变化",
+        "$\\Gamma=Gal(K_\\infty/K)\\simeq\\mathbb Z_p$",
+        "类群 Selmer群 L值 完备群环 模",
+        "Iwasawa theory"
+      ],
       "explanation_markdown": "伊瓦萨瓦理论是研究数论对象沿p进无限塔变化的理论。常写成 $Gamma=Gal(K_infty/K) \\simeq Z_p$，其中K_infty 是p进扩张，Gamma 是Galois群。\n\n它把类群、Selmer群和L函数放进p进解析族中。伊瓦萨瓦理论属于p进和同调实现的语言，重点是比较不同拓扑或周期环下的同一几何信息；过滤、Frobenius、Galois作用和完备化不能互相省略。伊瓦萨瓦理论还要标明基域、素位和归一化方式；伊瓦萨瓦理论涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。伊瓦萨瓦理论的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。伊瓦萨瓦理论的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1420,8 +2128,20 @@
     {
       "chinese_name": "伊瓦萨瓦代数",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 $p$ 进数论中的一种完备代数。",
+        "它是 $p$ 进 Lie 群的完备群环。",
+        "基本形式为 $\\Lambda=\\mathbb Z_p[[\\Gamma]]$。",
+        "当 $\\Gamma\\simeq\\mathbb Z_p$ 时，它像一变量形式幂级数环。",
+        "它的英文译名是 Iwasawa algebra。"
+      ],
+      "fragmented_clues": [
+        "$p$进数论 完备代数",
+        "$p$进Lie群 完备群环",
+        "$\\Lambda=\\mathbb Z_p[[\\Gamma]]$",
+        "$\\Gamma\\simeq\\mathbb Z_p$ 一变量形式幂级数环",
+        "Iwasawa algebra"
+      ],
       "explanation_markdown": "伊瓦萨瓦代数是p进Lie群的完备群环。常写成 $Lambda=Z_p[[Gamma]]$，其中Gamma 常为Z_p或更高维p进Lie群。\n\n它是控制p进塔上模的系数环，类似幂级数环而非普通群环。伊瓦萨瓦代数属于p进和同调实现的语言，重点是比较不同拓扑或周期环下的同一几何信息；过滤、Frobenius、Galois作用和完备化不能互相省略。伊瓦萨瓦代数还要标明基域、素位和归一化方式；伊瓦萨瓦代数涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。伊瓦萨瓦代数的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。伊瓦萨瓦代数的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1444,8 +2164,20 @@
     {
       "chinese_name": "主猜想",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 Iwasawa 理论中的一种核心猜想。",
+        "它把代数侧 Selmer 模的特征理想同解析侧 $p$ 进 L 函数联系起来。",
+        "标准形式为 $char_\\Lambda(X)=(L_p)$。",
+        "它要求两个来源完全不同的对象在同一个完备群环中生成相同理想。",
+        "它的英文译名是 main conjecture。"
+      ],
+      "fragmented_clues": [
+        "Iwasawa理论 代数解析对应命题",
+        "Selmer模 特征理想 $p$进L函数",
+        "$char_\\Lambda(X)=(L_p)$",
+        "代数侧 解析侧 完备群环 相同理想",
+        "main conjecture"
+      ],
       "explanation_markdown": "主猜想是把代数Selmer模特征理想同p进L函数相等的猜想。常写成 $char_Lambda(X)= (L_p)$，其中X 是Iwasawa模，L_p 是p进L函数。\n\n它连接代数增长和解析函数，是Iwasawa理论的中心命题。主猜想把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。主猜想还要标明基域、素位和归一化方式；主猜想涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。主猜想的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。主猜想的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1468,8 +2200,20 @@
     {
       "chinese_name": "p进L函数",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 $p$ 进解析数论中的一种函数。",
+        "它在 $p$ 进变量上插值复 L 函数的特殊值。",
+        "插值形式可写成 $L_p(\\chi,k)=E_p\\,L(M,\\chi,k)/\\Omega$。",
+        "它的值域和连续性是 $p$ 进的，不是复平面上的解析函数。",
+        "它的英文译名是 p-adic L-function。"
+      ],
+      "fragmented_clues": [
+        "$p$进解析数论 函数",
+        "$p$进变量 复L函数 特殊值 插值",
+        "$L_p(\\chi,k)=E_p\\,L(M,\\chi,k)/\\Omega$",
+        "$p$进值域 连续性 复平面解析函数 区别",
+        "p-adic L-function"
+      ],
       "explanation_markdown": "p进L函数是在p进变量上插值复L函数特殊值的函数。常写成 $L_p(chi k)=E_p L(M,chi,k)/\\Omega$，其中E_p 是局部修正，Omega 是周期。\n\n它不是复函数的简单限制，而是在p进权空间上解析变化。p进L函数把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。p进L函数还要标明基域、素位和归一化方式；p进L函数涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。p进L函数的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。p进L函数的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1492,8 +2236,20 @@
     {
       "chinese_name": "库默尔理论",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 Galois 上同调中的一种根式理论。",
+        "它用 $n$ 次根和一阶上同调描述域扩张。",
+        "基本同构为 $K^*/(K^*)^n\\simeq H^1(K,\\mu_n)$。",
+        "它要求 $n$ 与特征互素，并把乘法类转化为循环覆盖数据。",
+        "它的英文译名是 Kummer theory。"
+      ],
+      "fragmented_clues": [
+        "Galois上同调 根式理论",
+        "$n$次根 一阶上同调 域扩张",
+        "$K^*/(K^*)^n\\simeq H^1(K,\\mu_n)$",
+        "$n$ 特征互素 乘法类 循环覆盖数据",
+        "Kummer theory"
+      ],
       "explanation_markdown": "库默尔理论是用n次根和Galois上同调描述域扩张的理论。常写成 $K^*/(K^*)^n \\simeq H^1(K,mu_n)$，其中mu_n 是n次单位根，n 与特征互素。\n\n它把乘法群商转化为一阶上同调，是下降和类域论的基础。库默尔理论属于p进和同调实现的语言，重点是比较不同拓扑或周期环下的同一几何信息；过滤、Frobenius、Galois作用和完备化不能互相省略。库默尔理论还要标明基域、素位和归一化方式；库默尔理论涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。库默尔理论的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。库默尔理论的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1516,8 +2272,20 @@
     {
       "chinese_name": "库默尔扩张",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是域论中的一种根式扩张。",
+        "它通过向基域添入某个元素的 $n$ 次根得到。",
+        "常写成 $L=K(a^{1/n})$。",
+        "若基域含 $n$ 次单位根，这类扩张的 Galois 结构由 $K^*/(K^*)^n$ 控制。",
+        "它的英文译名是 Kummer extension。"
+      ],
+      "fragmented_clues": [
+        "域论 根式扩张",
+        "基域 添入元素 $n$次根",
+        "$L=K(a^{1/n})$",
+        "$n$次单位根 Galois结构 $K^*/(K^*)^n$",
+        "Kummer extension"
+      ],
       "explanation_markdown": "库默尔扩张是通过添入n次根得到的Galois扩张。常写成 $L=K(a^{1/n})$，其中a 属于K^*，且K含n次单位根时扩张较简单。\n\n它的Galois群由a在K^*/(K^*)^n中的类控制。库默尔扩张属于p进和同调实现的语言，重点是比较不同拓扑或周期环下的同一几何信息；过滤、Frobenius、Galois作用和完备化不能互相省略。库默尔扩张还要标明基域、素位和归一化方式；库默尔扩张涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。库默尔扩张的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。库默尔扩张的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1540,8 +2308,20 @@
     {
       "chinese_name": "有限平坦群概形",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是算术几何中的一种群对象。",
+        "它在基概形上同时满足有限性和平坦性。",
+        "结构条件可写成 $G\\to S$ finite flat。",
+        "它既保留群律又控制纤维长度，是扭点和 $p$ 可除对象的基本层。",
+        "它的英文译名是 finite flat group scheme。"
+      ],
+      "fragmented_clues": [
+        "算术几何 群对象",
+        "基概形 有限性 平坦性",
+        "$G\\to S$ finite flat",
+        "群律 纤维长度 扭点 $p$可除对象 基本层",
+        "finite flat group scheme"
+      ],
       "explanation_markdown": "有限平坦群概形是在基概形上有限且平坦的群对象。常写成 $G\\toS finite flat$，其中G 是群概形，S 是基底。\n\n它比抽象有限群多了坏约化处的方案结构，是p扭和Barsotti-Tate群的局部模型。有限平坦群概形属于p进和同调实现的语言，重点是比较不同拓扑或周期环下的同一几何信息；过滤、Frobenius、Galois作用和完备化不能互相省略。有限平坦群概形还要标明基域、素位和归一化方式；有限平坦群概形涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。有限平坦群概形的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。有限平坦群概形的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1564,8 +2344,20 @@
     {
       "chinese_name": "巴尔索蒂泰特群",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 $p$ 进算术几何中的一种群对象。",
+        "它由相容的 $p^n$ 扭有限平坦群概形组成。",
+        "可写成 $G=\\varinjlim G[p^n]$。",
+        "它是 $p$ 可除群的同义名称，常连接阿贝尔簇的 $p$ 幂扭点。",
+        "它的英文译名是 Barsotti-Tate group。"
+      ],
+      "fragmented_clues": [
+        "$p$进算术几何 群对象",
+        "相容 $p^n$扭 有限平坦群概形",
+        "$G=\\varinjlim G[p^n]$",
+        "$p$可除群 同义 阿贝尔簇 $p$幂扭点",
+        "Barsotti-Tate group"
+      ],
       "explanation_markdown": "巴尔索蒂泰特群是p可除群的另一名称，由相容p^n扭有限群概形组成。常写成 $G=colim G[p^n]$，其中G[p^n] 是有限平坦群概形。\n\n它不是单个有限群，而是无限层p幂扭结构。巴尔索蒂泰特群属于p进和同调实现的语言，重点是比较不同拓扑或周期环下的同一几何信息；过滤、Frobenius、Galois作用和完备化不能互相省略。巴尔索蒂泰特群还要标明基域、素位和归一化方式；巴尔索蒂泰特群涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。巴尔索蒂泰特群的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。巴尔索蒂泰特群的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1588,8 +2380,20 @@
     {
       "chinese_name": "p可除群",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 $p$ 进几何中的一种归纳系统。",
+        "它由 $p^n$ 扭层组成，并要求乘 $p$ 映射具有相容满射性质。",
+        "层级包含关系可写成 $G[p^n]\\subset G[p^{n+1}]$。",
+        "它带有高度和维数，是 Dieudonne 理论线性化的主要对象。",
+        "它的英文译名是 p-divisible group。"
+      ],
+      "fragmented_clues": [
+        "$p$进几何 归纳系统",
+        "$p^n$扭层 乘$p$映射 相容满射",
+        "$G[p^n]\\subset G[p^{n+1}]$",
+        "高度 维数 Dieudonne理论 线性化对象",
+        "p-divisible group"
+      ],
       "explanation_markdown": "p可除群是由p幂扭层组成且乘p满射的归纳系统。常写成 $G[p^n] \\subset G[p^{n+1}]$，其中每层阶为p^{nh}，h 是高度。\n\n它捕捉阿贝尔簇在p处的形式和étale部分，是p进Hodge理论输入。p可除群属于p进和同调实现的语言，重点是比较不同拓扑或周期环下的同一几何信息；过滤、Frobenius、Galois作用和完备化不能互相省略。p可除群还要标明基域、素位和归一化方式；p可除群涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。p可除群的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。p可除群的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1612,8 +2416,20 @@
     {
       "chinese_name": "迪厄多内模",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 $p$ 进几何中的一种线性代数对象。",
+        "它用 Frobenius 和 Verschiebung 算子描述有限群概形或 $p$ 可除对象。",
+        "基本关系可写成 $FV=VF=p$。",
+        "它把非线性的群概形问题转化为带半线性算子的模问题。",
+        "它的英文译名是 Dieudonne module。"
+      ],
+      "fragmented_clues": [
+        "$p$进几何 线性代数对象",
+        "Frobenius Verschiebung 算子 有限群概形 $p$可除对象",
+        "$FV=VF=p$",
+        "非线性群概形 半线性算子 模问题",
+        "Dieudonne module"
+      ],
       "explanation_markdown": "迪厄多内模是用带F和V算子的模描述p可除群或有限群概形的线性代数对象。常写成 $FV=VF=p$，其中F 是Frobenius，V 是Verschiebung。\n\n它把群概形分类问题转成半线性代数，协变和反变约定需区分。迪厄多内模属于p进和同调实现的语言，重点是比较不同拓扑或周期环下的同一几何信息；过滤、Frobenius、Galois作用和完备化不能互相省略。迪厄多内模还要标明基域、素位和归一化方式；迪厄多内模涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。迪厄多内模的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。迪厄多内模的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1636,8 +2452,20 @@
     {
       "chinese_name": "晶体上同调",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是正特征代数几何中的一种 $p$ 进上同调理论。",
+        "它在晶体站点上计算特征 $p$ 簇的上同调。",
+        "常记为 $H^i_{cris}(X/W)$。",
+        "它在特征 $p$ 中替代 de Rham 型信息，并带 Frobenius 结构。",
+        "它的英文译名是 crystalline cohomology。"
+      ],
+      "fragmented_clues": [
+        "正特征代数几何 $p$进上同调理论",
+        "晶体站点 特征$p$簇 上同调",
+        "$H^i_{cris}(X/W)$",
+        "de Rham型信息 替代 Frobenius结构",
+        "crystalline cohomology"
+      ],
       "explanation_markdown": "晶体上同调是正特征簇在晶体站点上的p进上同调。常写成 $H^i_cris(X/W)$，其中X 是特征p簇，W 是Witt向量环。\n\n它替代奇异上同调并携带Frobenius，适合研究坏约化。晶体上同调属于p进和同调实现的语言，重点是比较不同拓扑或周期环下的同一几何信息；过滤、Frobenius、Galois作用和完备化不能互相省略。晶体上同调还要标明基域、素位和归一化方式；晶体上同调涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。晶体上同调的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。晶体上同调的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1660,8 +2488,20 @@
     {
       "chinese_name": "德拉姆上同调",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是代数几何中的一种上同调理论。",
+        "它由代数微分形式组成的复形计算。",
+        "常写成 $H^i_{dR}(X)=H^i(X,\\Omega_X^*)$。",
+        "它直接反映微分形式和闭合-恰当关系，区别于用平展覆盖定义的理论。",
+        "它的英文译名是 de Rham cohomology。"
+      ],
+      "fragmented_clues": [
+        "代数几何 上同调理论",
+        "代数微分形式 复形 计算",
+        "$H^i_{dR}(X)=H^i(X,\\Omega_X^*)$",
+        "微分形式 闭合 恰当 平展覆盖区别",
+        "de Rham cohomology"
+      ],
       "explanation_markdown": "德拉姆上同调是由代数微分形式复形计算的上同调。常写成 $H^i_dR(X)=H^i(X,\\Omega_X^*)$，其中Omega_X^* 是德拉姆复形。\n\n它在特征零光滑情形与奇异上同调比较，区别于l进上同调用Galois作用编码。德拉姆上同调属于p进和同调实现的语言，重点是比较不同拓扑或周期环下的同一几何信息；过滤、Frobenius、Galois作用和完备化不能互相省略。德拉姆上同调还要标明基域、素位和归一化方式；德拉姆上同调涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。德拉姆上同调的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。德拉姆上同调的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1684,8 +2524,20 @@
     {
       "chinese_name": "平展上同调",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是概形论中的一种层上同调理论。",
+        "它在平展站点上对层进行上同调计算。",
+        "常写成 $H^i_{et}(X,F)$。",
+        "它能在代数几何中捕捉有限覆盖和 Galois 型信息。",
+        "它的英文译名是 etale cohomology。"
+      ],
+      "fragmented_clues": [
+        "概形论 层上同调理论",
+        "平展站点 层 上同调计算",
+        "$H^i_{et}(X,F)$",
+        "有限覆盖 Galois型信息 捕捉",
+        "etale cohomology"
+      ],
       "explanation_markdown": "平展上同调是在平展站点上定义的层上同调。常写成 $H^i_et(X,F)$，其中F 是平展层，X_et 是平展站点。\n\n它能在代数几何中模拟拓扑上同调，并自然带Galois作用。平展上同调属于p进和同调实现的语言，重点是比较不同拓扑或周期环下的同一几何信息；过滤、Frobenius、Galois作用和完备化不能互相省略。平展上同调还要标明基域、素位和归一化方式；平展上同调涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。平展上同调的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。平展上同调的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1708,8 +2560,20 @@
     {
       "chinese_name": "l进上同调",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是算术几何中的一种系数化上同调理论。",
+        "它由平展上同调取 $\\ell$ 进系数得到。",
+        "常写成 $H^i_{et}(\\overline X,\\mathbb Q_\\ell)$。",
+        "当 $\\ell$ 不等于剩余特征时，它承载 Frobenius 作用并定义许多 L 因子。",
+        "它的英文译名是 l-adic cohomology。"
+      ],
+      "fragmented_clues": [
+        "算术几何 系数化上同调理论",
+        "平展上同调 $\\ell$进系数",
+        "$H^i_{et}(\\overline X,\\mathbb Q_\\ell)$",
+        "$\\ell$ 剩余特征 不等 Frobenius作用 L因子",
+        "l-adic cohomology"
+      ],
       "explanation_markdown": "l进上同调是平展上同调取l进系数后的理论。常写成 $H^i_et(X_bar,Q_l)$，其中X_bar 是代数闭包基变换，l 不等于剩余特征。\n\n它给出Galois表示和Frobenius本征值，是L函数局部因子的来源。l进上同调把数论对象放进概形和上同调语言中，必须同时跟踪基域、局部化和全局约束；少掉任何一层，结论往往会从算术命题退化成普通几何命题。l进上同调还要标明基域、素位和归一化方式；l进上同调涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。l进上同调的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。l进上同调的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1732,8 +2596,20 @@
     {
       "chinese_name": "p进霍奇理论",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是算术几何中的一种比较理论。",
+        "它比较 $p$ 进 Galois 表示与几何上同调结构。",
+        "常见表达含有 $V\\otimes B_{dR}$。",
+        "它用周期环区分 de Rham、晶体和半稳定等局部表示类型。",
+        "它的英文译名是 p-adic Hodge theory。"
+      ],
+      "fragmented_clues": [
+        "算术几何 比较理论",
+        "$p$进Galois表示 几何上同调结构",
+        "$V\\otimes B_{dR}$",
+        "周期环 de Rham 晶体 半稳定 局部表示类型",
+        "p-adic Hodge theory"
+      ],
       "explanation_markdown": "p进霍奇理论是比较p进Galois表示与几何上同调的理论。常写成 $V \\otimes B_dR$，其中V 是p进表示，B_dR 是周期环。\n\n它处理p等于剩余特征的情形，区分Hodge-Tate、de Rham、晶体和半稳定表示。p进霍奇理论属于p进和同调实现的语言，重点是比较不同拓扑或周期环下的同一几何信息；过滤、Frobenius、Galois作用和完备化不能互相省略。p进霍奇理论还要标明基域、素位和归一化方式；p进霍奇理论涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。p进霍奇理论的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。p进霍奇理论的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1756,8 +2632,20 @@
     {
       "chinese_name": "德拉姆表示",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 $p$ 进 Hodge 理论中的一种表示类型。",
+        "它在与 $B_{dR}$ 比较后得到正确维数的过滤向量空间。",
+        "定义对象为 $D_{dR}(V)=(V\\otimes B_{dR})^{G_K}$。",
+        "它比一般 $p$ 进表示更受几何约束，但不要求 Frobenius 晶体结构。",
+        "它的英文译名是 de Rham representation。"
+      ],
+      "fragmented_clues": [
+        "$p$进Hodge理论 表示类型",
+        "$B_{dR}$ 比较 正确维数 过滤向量空间",
+        "$D_{dR}(V)=(V\\otimes B_{dR})^{G_K}$",
+        "一般$p$进表示 几何约束 Frobenius晶体结构 区别",
+        "de Rham representation"
+      ],
       "explanation_markdown": "德拉姆表示是与B_dR比较后维数不变的p进Galois表示。常写成 $D_dR(V)=(V \\otimes B_dR)^{G_K}$，其中V 是p进表示，G_K 是局部Galois群。\n\n它比Hodge-Tate条件更强，来自有良好代数德拉姆比较的几何对象。德拉姆表示属于p进和同调实现的语言，重点是比较不同拓扑或周期环下的同一几何信息；过滤、Frobenius、Galois作用和完备化不能互相省略。德拉姆表示还要标明基域、素位和归一化方式；德拉姆表示涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。德拉姆表示的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。德拉姆表示的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1780,8 +2668,20 @@
     {
       "chinese_name": "晶体表示",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 $p$ 进 Hodge 理论中的一种良好表示类型。",
+        "它通过 $B_{cris}$ 比较并携带 Frobenius 结构。",
+        "定义对象为 $D_{cris}(V)=(V\\otimes B_{cris})^{G_K}$。",
+        "它对应好约化情形，半稳定理论中的单值算子项在这里不出现。",
+        "它的英文译名是 crystalline representation。"
+      ],
+      "fragmented_clues": [
+        "$p$进Hodge理论 良好表示类型",
+        "$B_{cris}$ 比较 Frobenius结构",
+        "$D_{cris}(V)=(V\\otimes B_{cris})^{G_K}$",
+        "好约化 半稳定理论 单值算子项 缺席",
+        "crystalline representation"
+      ],
       "explanation_markdown": "晶体表示是与B_cris比较且无单值算子项的p进表示。常写成 $D_cris(V)=(V \\otimes B_cris)^{G_K}$，其中B_cris 是晶体周期环。\n\n它对应良好约化情形，区别于半稳定表示可能带有N算子。晶体表示属于p进和同调实现的语言，重点是比较不同拓扑或周期环下的同一几何信息；过滤、Frobenius、Galois作用和完备化不能互相省略。晶体表示还要标明基域、素位和归一化方式；晶体表示涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。晶体表示的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。晶体表示的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1804,8 +2704,20 @@
     {
       "chinese_name": "半稳定表示",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 $p$ 进 Hodge 理论中的一种表示类型。",
+        "它通过 $B_{st}$ 比较并允许单值算子参与。",
+        "定义对象为 $D_{st}(V)=(V\\otimes B_{st})^{G_K}$。",
+        "它适合半稳定约化情形，比晶体类型多出可记录退化的算子。",
+        "它的英文译名是 semistable representation。"
+      ],
+      "fragmented_clues": [
+        "$p$进Hodge理论 表示类型",
+        "$B_{st}$ 比较 单值算子",
+        "$D_{st}(V)=(V\\otimes B_{st})^{G_K}$",
+        "半稳定约化 晶体类型 退化算子",
+        "semistable representation"
+      ],
       "explanation_markdown": "半稳定表示是与B_st比较后维数正确的p进表示。常写成 $D_st(V)=(V \\otimes B_st)^{G_K}$，其中B_st 是半稳定周期环。\n\n它允许单值算子N，适合半稳定约化而不要求完全良好约化。半稳定表示把数论对象放进概形和上同调语言中，必须同时跟踪基域、局部化和全局约束；少掉任何一层，结论往往会从算术命题退化成普通几何命题。半稳定表示还要标明基域、素位和归一化方式；半稳定表示涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。半稳定表示的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。半稳定表示的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1828,8 +2740,20 @@
     {
       "chinese_name": "霍奇泰特权",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 $p$ 进 Hodge 理论中的一种整数权。",
+        "它出现在表示经 $C_p$ 扩张后的分解中。",
+        "分解可写成 $C_p\\otimes V=\\bigoplus_i C_p(-i)^{h_i}$。",
+        "这些整数决定过滤跳跃位置，是判断表示几何来源的重要数据。",
+        "它的英文译名是 Hodge-Tate weight。"
+      ],
+      "fragmented_clues": [
+        "$p$进Hodge理论 整数权",
+        "$C_p$扩张 表示分解",
+        "$C_p\\otimes V=\\bigoplus_i C_p(-i)^{h_i}$",
+        "过滤跳跃位置 几何来源 判断数据",
+        "Hodge-Tate weight"
+      ],
       "explanation_markdown": "霍奇泰特权是p进表示分解中出现的整数权。常写成 $C_p \\otimes V = direct \\sum C_p(-i)^{h_i}$，其中C_p 是p进完备代数闭包，i 是权。\n\n它给出Hodge过滤的数值影子，不能替代完整de Rham或晶体结构。霍奇泰特权属于p进和同调实现的语言，重点是比较不同拓扑或周期环下的同一几何信息；过滤、Frobenius、Galois作用和完备化不能互相省略。霍奇泰特权还要标明基域、素位和归一化方式；霍奇泰特权涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。霍奇泰特权的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。霍奇泰特权的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1852,8 +2776,20 @@
     {
       "chinese_name": "比较定理",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是算术几何中的一种上同调同构定理。",
+        "它在合适周期环后把不同上同调理论联系起来。",
+        "典型形式为 $H_{et}\\otimes B\\simeq H_{dR}\\otimes B$。",
+        "它说明平展侧的 Galois 作用和 de Rham 侧的过滤可在周期环中对齐。",
+        "它的英文译名是 comparison theorem。"
+      ],
+      "fragmented_clues": [
+        "算术几何 上同调同构定理",
+        "周期环 不同上同调理论 联系",
+        "$H_{et}\\otimes B\\simeq H_{dR}\\otimes B$",
+        "平展侧 Galois作用 de Rham侧 过滤 对齐",
+        "comparison theorem"
+      ],
       "explanation_markdown": "比较定理是把不同上同调理论在适当周期环后同构的定理。常写成 $H_et \\otimes B \\simeq H_dR \\otimes B$，其中B 是相应周期环。\n\n它说明l进或p进表示与德拉姆、晶体上同调描述的是同一几何信息。比较定理把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。比较定理还要标明基域、素位和归一化方式；比较定理涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。比较定理的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。比较定理的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1876,8 +2812,20 @@
     {
       "chinese_name": "周期环",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 $p$ 进 Hodge 理论中的一种辅助环。",
+        "它带有 Galois 作用、过滤或 Frobenius 等结构。",
+        "常见记号包括 $B_{dR},B_{cris},B_{st}$。",
+        "不同选择分别检测 de Rham、晶体和半稳定表示条件。",
+        "它的英文译名是 period ring。"
+      ],
+      "fragmented_clues": [
+        "$p$进Hodge理论 辅助环",
+        "Galois作用 过滤 Frobenius结构",
+        "$B_{dR},B_{cris},B_{st}$",
+        "de Rham 晶体 半稳定 表示条件 检测",
+        "period ring"
+      ],
       "explanation_markdown": "周期环是Fontaine构造的带Galois作用和过滤的p进环。常写成 $B_dR, B_cris, B_st$，其中这些环分别对应de Rham、晶体和半稳定比较。\n\n它们不是系数域的随意扩张，而是把p进表示翻译成线性代数的桥梁。周期环属于p进和同调实现的语言，重点是比较不同拓扑或周期环下的同一几何信息；过滤、Frobenius、Galois作用和完备化不能互相省略。周期环还要标明基域、素位和归一化方式；周期环涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。周期环的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。周期环的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1900,8 +2848,20 @@
     {
       "chinese_name": "丰泰纳环",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 $p$ 进 Hodge 理论中的一族周期环。",
+        "它由倾斜、Witt 向量和完备化等构造产生。",
+        "常见包含关系为 $B_{cris}\\subset B_{dR}$。",
+        "它为比较同构提供系数环境，并区分不同的局部几何状态。",
+        "它的英文译名是 Fontaine ring。"
+      ],
+      "fragmented_clues": [
+        "$p$进Hodge理论 周期环族",
+        "倾斜 Witt向量 完备化 构造",
+        "$B_{cris}\\subset B_{dR}$",
+        "比较同构 系数环境 局部几何状态",
+        "Fontaine ring"
+      ],
       "explanation_markdown": "丰泰纳环是p进Hodge理论中由倾斜、Witt向量和完备化构造的周期环。常写成 $B_cris \\subset B_dR$，其中B_cris 和 B_dR 是Fontaine周期环。\n\n它们携带Frobenius、过滤和Galois作用，用来定义各类p进表示。丰泰纳环属于p进和同调实现的语言，重点是比较不同拓扑或周期环下的同一几何信息；过滤、Frobenius、Galois作用和完备化不能互相省略。丰泰纳环还要标明基域、素位和归一化方式；丰泰纳环涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。丰泰纳环的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。丰泰纳环的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1924,8 +2884,20 @@
     {
       "chinese_name": "代数基本群",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是代数几何中的一种 profinite 群对象。",
+        "它通过有限平展覆盖及其纤维函子定义。",
+        "常记为 $\\pi_1(X,x)$。",
+        "它分类有限平展覆盖，替代拓扑路径环路在概形中的角色。",
+        "它的英文译名是 algebraic fundamental group。"
+      ],
+      "fragmented_clues": [
+        "代数几何 profinite群对象",
+        "有限平展覆盖 纤维函子",
+        "$\\pi_1(X,x)$",
+        "有限平展覆盖 分类 拓扑路径环路 替代",
+        "algebraic fundamental group"
+      ],
       "explanation_markdown": "代数基本群是分类有限平展覆盖的profinite群。常写成 $pi_1(X,x)$，其中x 是几何基点，群由有限平展覆盖的纤维函子得到。\n\n它不同于拓扑基本群的路径定义，但在复情形有比较关系。代数基本群处在几何对象、表示和自守形式之间，Hecke作用或基本群表示给出可计算入口；它强调对应关系的函子性，而不只是列出若干例子。代数基本群还要标明基域、素位和归一化方式；代数基本群涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。代数基本群的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。代数基本群的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1948,8 +2920,20 @@
     {
       "chinese_name": "平展基本群",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是平展拓扑中的一种 profinite 群。",
+        "它由连通概形的有限平展覆盖范畴和几何基点得到。",
+        "常写成 $\\pi_1^{et}(X,x)$。",
+        "基点改变只给出内自同构意义下的同构，反映覆盖而非普通开集路径。",
+        "它的英文译名是 etale fundamental group。"
+      ],
+      "fragmented_clues": [
+        "平展拓扑 profinite群",
+        "连通概形 有限平展覆盖 几何基点",
+        "$\\pi_1^{et}(X,x)$",
+        "基点改变 内自同构 覆盖 普通开集路径区别",
+        "etale fundamental group"
+      ],
       "explanation_markdown": "平展基本群是Grothendieck意义下的有限平展覆盖自同构群。常写成 $pi_1^et(X,x)$，其中X 是连通概形，x 是几何点。\n\n它保存算术Galois信息，特别有精确列连接几何基本群与G_K。平展基本群属于p进和同调实现的语言，重点是比较不同拓扑或周期环下的同一几何信息；过滤、Frobenius、Galois作用和完备化不能互相省略。平展基本群还要标明基域、素位和归一化方式；平展基本群涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。平展基本群的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。平展基本群的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1972,8 +2956,20 @@
     {
       "chinese_name": "阿贝尔概形",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是相对代数几何中的一种群概形。",
+        "它在基底上适当、光滑，并且纤维为阿贝尔簇。",
+        "结构态射可写成 $A\\to S$。",
+        "它是阿贝尔簇的族版本，群律在整个基底上相容存在。",
+        "它的英文译名是 abelian scheme。"
+      ],
+      "fragmented_clues": [
+        "相对代数几何 群概形",
+        "基底 适当 光滑 纤维 阿贝尔簇",
+        "$A\\to S$",
+        "阿贝尔簇 族版本 群律 基底相容",
+        "abelian scheme"
+      ],
       "explanation_markdown": "阿贝尔概形是基概形上的适当光滑群概形且纤维为阿贝尔簇。常写成 $A\\toS$，其中A 是群概形，S 是基底。\n\n它是阿贝尔簇的相对族，不等同于一般平滑群概形。阿贝尔概形处在几何对象、表示和自守形式之间，Hecke作用或基本群表示给出可计算入口；它强调对应关系的函子性，而不只是列出若干例子。阿贝尔概形还要标明基域、素位和归一化方式；阿贝尔概形涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。阿贝尔概形的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。阿贝尔概形的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -1996,8 +2992,20 @@
     {
       "chinese_name": "赫克算子",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是自守形式和上同调中的一种线性算子。",
+        "它由双陪集或几何对应产生。",
+        "典型记号为 $T_p=[K\\,diag(p,1)\\,K]$。",
+        "共同特征向量的特征值常编码 Frobenius 迹和 L 函数系数。",
+        "它的英文译名是 Hecke operator。"
+      ],
+      "fragmented_clues": [
+        "自守形式 上同调 线性算子",
+        "双陪集 几何对应",
+        "$T_p=[K\\,diag(p,1)\\,K]$",
+        "共同特征向量 特征值 Frobenius迹 L函数系数",
+        "Hecke operator"
+      ],
       "explanation_markdown": "赫克算子是由双陪集或对应作用在模形式、上同调上的算子。常写成 $T_p=[K diag(p,1) K]$，其中K 是紧开子群，双陪集给出对应。\n\n它们的特征值常编码Frobenius迹，是模形式和Galois表示之间的接口。赫克算子处在几何对象、表示和自守形式之间，Hecke作用或基本群表示给出可计算入口；它强调对应关系的函子性，而不只是列出若干例子。赫克算子还要标明基域、素位和归一化方式；赫克算子涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。赫克算子的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。赫克算子的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -2020,8 +3028,20 @@
     {
       "chinese_name": "自守表示",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是自守理论中的一种表示对象。",
+        "它出现在代数群阿代尔点上的表示分解中。",
+        "常写成 $\\pi=\\otimes_v\\pi_v$。",
+        "它的局部分量同时决定 Hecke 特征值、局部 L 因子和朗兰兹参数。",
+        "它的英文译名是 automorphic representation。"
+      ],
+      "fragmented_clues": [
+        "自守理论 表示对象",
+        "代数群 阿代尔点 表示分解",
+        "$\\pi=\\otimes_v\\pi_v$",
+        "局部分量 Hecke特征值 局部L因子 朗兰兹参数",
+        "automorphic representation"
+      ],
       "explanation_markdown": "自守表示是代数群在阿代尔点上的表示分解成分。常写成 $pi= tensor_v pi_v$，其中pi_v 是局部表示。\n\n它是表示论对象；模形式可生成自守表示，Langlands对应再把它联系到Galois表示。自守表示处在几何对象、表示和自守形式之间，Hecke作用或基本群表示给出可计算入口；它强调对应关系的函子性，而不只是列出若干例子。自守表示还要标明基域、素位和归一化方式；自守表示涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。自守表示的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。自守表示的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -2044,8 +3064,20 @@
     {
       "chinese_name": "朗兰兹对应",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是数论和表示论之间的一种对应体系。",
+        "它预言 Galois 表示或参数与自守表示相匹配。",
+        "基本示意为 $\\rho\\leftrightarrow\\pi$。",
+        "匹配要求 L 函数、局部因子和 Frobenius 或 Hecke 数据一致。",
+        "它的英文译名是 Langlands correspondence。"
+      ],
+      "fragmented_clues": [
+        "数论 表示论 对应体系",
+        "Galois表示 参数 自守表示 匹配",
+        "$\\rho\\leftrightarrow\\pi$",
+        "L函数 局部因子 Frobenius Hecke数据 一致",
+        "Langlands correspondence"
+      ],
       "explanation_markdown": "朗兰兹对应是预言Galois表示或参数与自守表示相匹配的体系。常写成 $rho \\leftrightarrow pi$，其中rho 是Galois表示，pi 是自守表示。\n\n匹配通常通过L函数和局部因子表达，不是单个对象间的初等同构。朗兰兹对应处在几何对象、表示和自守形式之间，Hecke作用或基本群表示给出可计算入口；它强调对应关系的函子性，而不只是列出若干例子。朗兰兹对应还要标明基域、素位和归一化方式；朗兰兹对应涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。朗兰兹对应的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。朗兰兹对应的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -2068,8 +3100,20 @@
     {
       "chinese_name": "几何类域论",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是类域论的几何化版本。",
+        "它用曲线、Picard 对象或层范畴描述阿贝尔化基本群。",
+        "示意对应为 $Pic(X)\\leftrightarrow \\pi_1^{ab}(X)$。",
+        "它把互反律从伊代尔语言转为线丛和局部系统的几何语言。",
+        "它的英文译名是 geometric class field theory。"
+      ],
+      "fragmented_clues": [
+        "类域论 几何化版本",
+        "曲线 Picard对象 层范畴 阿贝尔化基本群",
+        "$Pic(X)\\leftrightarrow \\pi_1^{ab}(X)$",
+        "互反律 伊代尔语言 线丛 局部系统 几何语言",
+        "geometric class field theory"
+      ],
       "explanation_markdown": "几何类域论是用代数曲线或层范畴几何化类域论的理论。常写成 $Pic(X) \\leftrightarrow pi_1^ab(X)$，其中Pic(X) 是Picard对象，右侧是阿贝尔化基本群。\n\n它把互反律改写成几何对应，为几何Langlands提供低秩原型。几何类域论记录的是绝对伽罗瓦群或局部乘法群的作用方式，分歧、Frobenius和互反映射的位置必须分清；这些数据把域扩张、表示和自守对象联系起来。几何类域论还要标明基域、素位和归一化方式；几何类域论涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。几何类域论的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。几何类域论的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -2092,8 +3136,20 @@
     {
       "chinese_name": "阿拉克洛夫几何",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是算术几何中的一种带无穷位度量的理论。",
+        "它把整数环上的几何与复纤维上的 Hermitian 数据结合。",
+        "算术除子常写成 $\\widehat D=(D,g_D)$。",
+        "它把无穷素位加入交点理论，使数域情形更像紧曲面上的几何。",
+        "它的英文译名是 Arakelov geometry。"
+      ],
+      "fragmented_clues": [
+        "算术几何 无穷位度量 理论",
+        "整数环几何 复纤维 Hermitian数据",
+        "$\\widehat D=(D,g_D)$",
+        "无穷素位 交点理论 数域 紧曲面类比",
+        "Arakelov geometry"
+      ],
       "explanation_markdown": "阿拉克洛夫几何是把整数环上的几何同无穷位Hermitian度量结合的理论。常写成 $widehat D=(D,g_D)$，其中D 是除子，g_D 是Green函数或度量数据。\n\n它补上无穷素点，使交点数和Riemann-Roch公式适用于算术曲面。阿拉克洛夫几何把无穷位、局部配对或Brauer群条件并入全局问题，用来衡量局部可解和全局可解之间的缺口；数值归一化会影响最终不变量。阿拉克洛夫几何还要标明基域、素位和归一化方式；阿拉克洛夫几何涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。阿拉克洛夫几何的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。阿拉克洛夫几何的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -2116,8 +3172,20 @@
     {
       "chinese_name": "格林函数",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 Arakelov 几何中的一种解析函数。",
+        "它描述除子在复纤维上对应度量的奇性。",
+        "关系式可写成 $dd^cg_D+\\delta_D=\\omega_D$。",
+        "它把除子的电流贡献和光滑曲率形式配对起来。",
+        "它的英文译名是 Green function。"
+      ],
+      "fragmented_clues": [
+        "Arakelov几何 解析函数",
+        "除子 复纤维 度量奇性",
+        "$dd^cg_D+\\delta_D=\\omega_D$",
+        "除子电流 光滑曲率形式 配对",
+        "Green function"
+      ],
       "explanation_markdown": "格林函数是Arakelov几何中描述除子在复纤维上度量奇性的函数。常写成 $dd^c g_D + delta_D = \\omega_D$，其中g_D 是Green函数，delta_D 是除子电流。\n\n它不是普通调和函数，而是带有指定对数奇性的度量数据。格林函数把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。格林函数还要标明基域、素位和归一化方式；格林函数涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。格林函数的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。格林函数的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -2140,8 +3208,20 @@
     {
       "chinese_name": "算术交点数",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 Arakelov 几何中的一种交点不变量。",
+        "它把有限素位的交数和无穷位的解析积分合并。",
+        "常写成 $\\widehat{deg}(\\widehat D\\cdot\\widehat E)$。",
+        "它区别于普通代数曲面交数，额外包含 Hermitian 度量贡献。",
+        "它的英文译名是 arithmetic intersection number。"
+      ],
+      "fragmented_clues": [
+        "Arakelov几何 交点不变量",
+        "有限素位交数 无穷位解析积分 合并",
+        "$\\widehat{deg}(\\widehat D\\cdot\\widehat E)$",
+        "普通代数曲面交数 Hermitian度量贡献",
+        "arithmetic intersection number"
+      ],
       "explanation_markdown": "算术交点数是把有限素点交数和无穷位积分合并的交点不变量。常写成 $widehat deg(widehat D . widehat E)$，其中widehat D,widehat E 是带度量的算术除子。\n\n它区别于代数曲面交数，额外包含复解析度量贡献。算术交点数通常连接全局解与各个局部条件，有限生成性、坏约化和高度配对会直接影响可解性；同一个簇在有理点、整点和阿代尔点层面给出的信息并不相同。算术交点数还要标明基域、素位和归一化方式；算术交点数涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。算术交点数的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。算术交点数的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -2164,8 +3244,20 @@
     {
       "chinese_name": "算术黎曼罗赫定理",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是 Arakelov 几何中的一种 Riemann-Roch 型定理。",
+        "它在算术态射上加入 Hermitian 度量和解析挠率修正。",
+        "形式可写成 $\\widehat{ch}(Rf_*E)=f_*(\\widehat{ch}(E)\\widehat{Td}(T_f))$。",
+        "它把代数直接像、Chern 特征和无穷位谱项放入同一等式。",
+        "它的英文译名是 arithmetic Riemann-Roch theorem。"
+      ],
+      "fragmented_clues": [
+        "Arakelov几何 Riemann-Roch型定理",
+        "算术态射 Hermitian度量 解析挠率修正",
+        "$\\widehat{ch}(Rf_*E)=f_*(\\widehat{ch}(E)\\widehat{Td}(T_f))$",
+        "代数直接像 Chern特征 无穷位谱项 同一等式",
+        "arithmetic Riemann-Roch theorem"
+      ],
       "explanation_markdown": "算术黎曼罗赫定理是在Arakelov几何中含解析挠率修正的Riemann-Roch公式。常写成 $widehat ch(Rf_*E)=f_*(widehat ch(E)widehat Td(T_f))$，其中E 是Hermitian向量丛，f 是算术态射。\n\n它把代数直接像、度量和解析谱项放进同一等式。算术黎曼罗赫定理把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。算术黎曼罗赫定理还要标明基域、素位和归一化方式；算术黎曼罗赫定理涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。算术黎曼罗赫定理的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。算术黎曼罗赫定理的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -2188,8 +3280,20 @@
     {
       "chinese_name": "法尔廷斯高度",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是阿贝尔簇算术中的一种高度不变量。",
+        "它度量阿贝尔簇或曲线本身的算术复杂度。",
+        "可写成 $h_F(A)=deg\\,det\\,e^*\\Omega_{A/O_K}+arch$。",
+        "它不是点的高度，而是由 Hodge 线丛和无穷位度量给出的对象高度。",
+        "它的英文译名是 Faltings height。"
+      ],
+      "fragmented_clues": [
+        "阿贝尔簇算术 高度不变量",
+        "阿贝尔簇 曲线本身 算术复杂度",
+        "$h_F(A)=deg\\,det\\,e^*\\Omega_{A/O_K}+arch$",
+        "点的高度 区别 Hodge线丛 无穷位度量 对象高度",
+        "Faltings height"
+      ],
       "explanation_markdown": "法尔廷斯高度是衡量阿贝尔簇算术复杂度的高度。常写成 $h_F(A)=deg det e^*\\Omega_{A/O_K}+ arch$，其中e 是零截面，arch 是无穷位度量项。\n\n它与点的高度不同，度量的是阿贝尔簇或曲线本身。法尔廷斯高度通常连接全局解与各个局部条件，有限生成性、坏约化和高度配对会直接影响可解性；同一个簇在有理点、整点和阿代尔点层面给出的信息并不相同。法尔廷斯高度还要标明基域、素位和归一化方式；法尔廷斯高度涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。法尔廷斯高度的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。法尔廷斯高度的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -2212,8 +3316,20 @@
     {
       "chinese_name": "局部高度配对",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是高度理论中的一种局部双变量函数。",
+        "它把全局高度配对分解为各赋值处的贡献。",
+        "常写成 $\\langle P,Q\\rangle=\\sum_v\\lambda_v(P,Q)$。",
+        "每一项反映相应素位处的交互作用，坏约化处尤其需要修正。",
+        "它的英文译名是 local height pairing。"
+      ],
+      "fragmented_clues": [
+        "高度理论 局部双变量函数",
+        "全局高度配对 各赋值贡献",
+        "$\\langle P,Q\\rangle=\\sum_v\\lambda_v(P,Q)$",
+        "素位 交互作用 坏约化 修正",
+        "local height pairing"
+      ],
       "explanation_markdown": "局部高度配对是把全局高度分解到各赋值处的局部项。常写成 $<P,Q\\ge\\sum_v \\lambda_v(P,Q)$，其中lambda_v 是局部高度函数。\n\n它说明高度的全局二次型由所有局部交互作用相加得到。局部高度配对通常连接全局解与各个局部条件，有限生成性、坏约化和高度配对会直接影响可解性；同一个簇在有理点、整点和阿代尔点层面给出的信息并不相同。局部高度配对还要标明基域、素位和归一化方式；局部高度配对涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。局部高度配对的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。局部高度配对的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -2236,8 +3352,20 @@
     {
       "chinese_name": "高度机器",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是丢番图几何中的一种系统构造。",
+        "它把线丛或除子函子性地分配给相应高度。",
+        "基本对应可写成 $L\\mapsto h_L$。",
+        "它保证加性、拉回相容和有界误差规则，而非临时选择坐标大小。",
+        "它的英文译名是 height machine。"
+      ],
+      "fragmented_clues": [
+        "丢番图几何 系统构造",
+        "线丛 除子 函子性 高度",
+        "$L\\mapsto h_L$",
+        "加性 拉回相容 有界误差 坐标大小区别",
+        "height machine"
+      ],
       "explanation_markdown": "高度机器是把线丛系统地赋给高度函数的构造。常写成 $L \\to h_L$，其中L 是线丛，h_L 是相应高度。\n\n它使高度具有函子性和加性，区别于临时选择的坐标大小。高度机器通常连接全局解与各个局部条件，有限生成性、坏约化和高度配对会直接影响可解性；同一个簇在有理点、整点和阿代尔点层面给出的信息并不相同。高度机器还要标明基域、素位和归一化方式；高度机器涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。高度机器的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。高度机器的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -2260,8 +3388,20 @@
     {
       "chinese_name": "希尔伯特不可约定理",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是算术几何和 Galois 理论中的一种特殊化定理。",
+        "它说明多项式族在许多数域点特殊化后仍保持不可约或大 Galois 群。",
+        "示意形式为 $f(t,X)$ irreducible $\\Rightarrow f(t_0,X)$ often irreducible。",
+        "它把函数域上的一般性传递到数域点，是逆 Galois 问题的重要工具。",
+        "它的英文译名是 Hilbert irreducibility theorem。"
+      ],
+      "fragmented_clues": [
+        "算术几何 Galois理论 特殊化定理",
+        "多项式族 数域点特殊化 不可约 大Galois群",
+        "$f(t,X)$ irreducible $\\Rightarrow f(t_0,X)$ often irreducible",
+        "函数域一般性 数域点 逆Galois问题",
+        "Hilbert irreducibility theorem"
+      ],
       "explanation_markdown": "希尔伯特不可约定理是说明多项式族在许多特殊化下保持不可约或Galois群大的定理。常写成 $f(t,X) irreducible => f(t_0,X) often irreducible$，其中t_0 是特殊化参数。\n\n它把函数域上的一般性传递到数域点，是逆Galois和薄集理论的工具。希尔伯特不可约定理把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。希尔伯特不可约定理还要标明基域、素位和归一化方式；希尔伯特不可约定理涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。希尔伯特不可约定理的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -2284,8 +3424,20 @@
     {
       "chinese_name": "切博塔廖夫密度定理",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是代数数论中的一种素数分布定理。",
+        "它给出 Galois 扩张中 Frobenius 共轭类出现的自然密度。",
+        "密度公式可写成 $density\\{p\\mid Frob_p=C\\}=|C|/|G|$。",
+        "它推广 Dirichlet 素数定理，并从局部 Frobenius 统计恢复全局群结构。",
+        "它的英文译名是 Chebotarev density theorem。"
+      ],
+      "fragmented_clues": [
+        "代数数论 素数分布定理",
+        "Galois扩张 Frobenius共轭类 自然密度",
+        "$density\\{p\\mid Frob_p=C\\}=|C|/|G|$",
+        "Dirichlet素数定理 推广 局部Frobenius统计 全局群结构",
+        "Chebotarev density theorem"
+      ],
       "explanation_markdown": "切博塔廖夫密度定理是给出Galois扩张中Frobenius共轭类按大小分布的定理。常写成 $density{p | Frob_p=C}=|C|/|G|$，其中G 是Galois群，C 是共轭类。\n\n它推广Dirichlet素数定理，是从局部Frobenius读取全局群结构的核心。切博塔廖夫密度定理把几何对象的局部计数、上同调或自守数据压成解析函数，核心信息常藏在延拓、函数方程和特殊值里；它既不是单个方程，也不是只看有限个素数的检验。切博塔廖夫密度定理还要标明基域、素位和归一化方式；切博塔廖夫密度定理涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。切博塔廖夫密度定理的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。切博塔廖夫密度定理的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -2308,8 +3460,20 @@
     {
       "chinese_name": "弱逼近",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是算术几何中的一种逼近性质。",
+        "它要求全局点能同时逼近有限多个指定赋值处的局部点。",
+        "常写成 $X(K)$ dense in $\\prod_{v\\in S}X(K_v)$。",
+        "它只检查有限集合 $S$，因此比去掉少数赋值后的阿代尔稠密性更弱。",
+        "它的英文译名是 weak approximation。"
+      ],
+      "fragmented_clues": [
+        "算术几何 逼近性质",
+        "全局点 有限多个赋值 局部点 同时逼近",
+        "$X(K)$ dense in $\\prod_{v\\in S}X(K_v)$",
+        "有限集合$S$ 阿代尔稠密性 更弱",
+        "weak approximation"
+      ],
       "explanation_markdown": "弱逼近是要求全局点可同时逼近有限多个局部点的性质。常写成 $X(K) dense in \\prod_{v in S} X(K_v)$，其中S 是有限素位集合。\n\n它比强逼近只涉及有限多个赋值，常用于判断全局点的局部分布。弱逼近把无穷位、局部配对或Brauer群条件并入全局问题，用来衡量局部可解和全局可解之间的缺口；数值归一化会影响最终不变量。弱逼近还要标明基域、素位和归一化方式；弱逼近涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。弱逼近的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。弱逼近的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -2332,8 +3496,20 @@
     {
       "chinese_name": "强逼近",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是算术几何中的一种阿代尔稠密性质。",
+        "它要求去掉少数赋值后，全局点在剩余阿代尔空间中稠密。",
+        "常写成 $X(K)$ dense in $X(A_K^S)$。",
+        "它比只逼近有限多个局部条件更强，常见于线性代数群和齐性空间。",
+        "它的英文译名是 strong approximation。"
+      ],
+      "fragmented_clues": [
+        "算术几何 阿代尔稠密性质",
+        "少数赋值 去除 全局点 剩余阿代尔空间",
+        "$X(K)$ dense in $X(A_K^S)$",
+        "有限局部条件 更强 线性代数群 齐性空间",
+        "strong approximation"
+      ],
       "explanation_markdown": "强逼近是在去掉少数赋值后全局点稠密于阿代尔点的性质。常写成 $X(K) dense in X(A_K^S)$，其中A_K^S 是去掉S处的受限阿代尔。\n\n它比弱逼近更强，常见于线性代数群和齐性空间。强逼近把无穷位、局部配对或Brauer群条件并入全局问题，用来衡量局部可解和全局可解之间的缺口；数值归一化会影响最终不变量。强逼近还要标明基域、素位和归一化方式；强逼近涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。强逼近的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。强逼近的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -2356,8 +3532,20 @@
     {
       "chinese_name": "哈斯原理",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是算术几何中的一种局部-全局性质。",
+        "它要求所有完备化上有解等价于全局域上有解。",
+        "可写成 $X(K)\\ne\\varnothing\\Leftrightarrow X(K_v)\\ne\\varnothing$ for all $v$。",
+        "它不是普遍成立的定理，失败常由 Selmer、Sha 或 Brauer-Manin 条件解释。",
+        "它的英文译名是 Hasse principle。"
+      ],
+      "fragmented_clues": [
+        "算术几何 局部全局性质",
+        "所有完备化 有解 全局域 有解",
+        "$X(K)\\ne\\varnothing\\Leftrightarrow X(K_v)\\ne\\varnothing$ for all $v$",
+        "非普遍成立 Selmer Sha Brauer-Manin条件 失败解释",
+        "Hasse principle"
+      ],
       "explanation_markdown": "哈斯原理是局部处处有点推出全局有点的性质。常写成 $X(K) nonempty iff X(K_v) nonempty for all v$，其中K 是全局域，v 遍历赋值。\n\n它不是普遍定理；失败情形由Selmer群、Sha或Brauer-Manin障碍解释。哈斯原理把无穷位、局部配对或Brauer群条件并入全局问题，用来衡量局部可解和全局可解之间的缺口；数值归一化会影响最终不变量。哈斯原理还要标明基域、素位和归一化方式；哈斯原理涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。哈斯原理的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。哈斯原理的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
@@ -2380,8 +3568,20 @@
     {
       "chinese_name": "布劳尔马宁障碍",
       "source_file": "words/数学/噩梦模式/arithmetic_geometry_terms.csv",
-      "complete_clues": [],
-      "fragmented_clues": [],
+      "complete_clues": [
+        "这是算术几何中的一种局部-全局障碍。",
+        "它用 Brauer 群与阿代尔点的配对筛掉不可能来自全局点的局部族。",
+        "受限集合可写成 $X(A_K)^{Br}=\\{(P_v)\\mid \\sum_v inv_v\\,A(P_v)=0\\}$。",
+        "它比局部处处有点更细，常解释 Hasse 原理或弱逼近失败。",
+        "它的英文译名是 Brauer-Manin obstruction。"
+      ],
+      "fragmented_clues": [
+        "算术几何 局部全局障碍",
+        "Brauer群 阿代尔点 配对 全局点 筛除",
+        "$X(A_K)^{Br}=\\{(P_v)\\mid \\sum_v inv_v\\,A(P_v)=0\\}$",
+        "局部处处有点 更细 Hasse原理 弱逼近失败",
+        "Brauer-Manin obstruction"
+      ],
       "explanation_markdown": "布劳尔马宁障碍是用Brauer群配对解释局部点无法来自全局点的障碍。常写成 $X(A_K)^Br={ (P_v) | \\sum_v inv_v A(P_v)=0 }$，其中A 是Brauer类，inv_v 是局部不变量。\n\n它比单纯局部可解性更细，常解释Hasse原理和弱逼近失败。布劳尔马宁障碍把无穷位、局部配对或Brauer群条件并入全局问题，用来衡量局部可解和全局可解之间的缺口；数值归一化会影响最终不变量。布劳尔马宁障碍还要标明基域、素位和归一化方式；布劳尔马宁障碍涉及局部因子、高度配对或Galois作用时，这些选择会改变具体数值和比较映射。布劳尔马宁障碍的定义式给出可追踪的数据层级，后续计算不能把这些数据省成单纯名称。布劳尔马宁障碍的限定条件要和公式里的符号一起读；只看中文名称，容易漏掉它控制的层级、域或等价关系。",
       "source_links": [
         {
