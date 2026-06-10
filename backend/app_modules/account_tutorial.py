@@ -2,6 +2,8 @@ from ._shared import *
 
 
 class AccountTutorialMixin:
+    TUTORIAL_PLAY_MODES = ("自由", "限时", "线索", "字谜")
+
     def activate_account(self, account):
         self.switch_return_account = None
         self.spectator_admin_account = None
@@ -13,6 +15,7 @@ class AccountTutorialMixin:
             settings["nickname"] = account["nickname"]
             settings = save_player_settings(settings)
         self.player_settings = settings
+        self.apply_backdrop_theme()
         self.apply_audio_settings()
         self.apply_ui_font_scale()
         if not self.fullscreen:
@@ -43,6 +46,7 @@ class AccountTutorialMixin:
         self.current_account = account
         apply_account_context(account["id"])
         self.player_settings = load_player_settings()
+        self.apply_backdrop_theme()
         self.apply_audio_settings()
         self.apply_ui_font_scale()
         self.achievements = read_achievements()
@@ -63,6 +67,7 @@ class AccountTutorialMixin:
         self.current_account = admin
         apply_account_context(admin["id"])
         self.player_settings = load_player_settings()
+        self.apply_backdrop_theme()
         self.apply_audio_settings()
         self.apply_ui_font_scale()
         self.achievements = read_achievements()
@@ -83,20 +88,33 @@ class AccountTutorialMixin:
         settings["tutorial_completed"] = True
         self.player_settings = save_player_settings(settings)
 
-    def start_tutorial(self, auto=False):
+    def tutorial_play_label(self):
+        return self.normalize_tutorial_play_mode(getattr(self, "tutorial_play_mode", "自由"))
+
+    def normalize_tutorial_play_mode(self, play_mode):
+        text = str(play_mode or "自由").strip()
+        return text if text in self.TUTORIAL_PLAY_MODES else "自由"
+
+    def apply_tutorial_mode_selection(self):
+        play_mode = self.tutorial_play_label()
+        self.selected_subject = "物理模式"
+        self.selected_game_group = "普通"
+        self.selected_rule_mode = play_mode
+        self.selected_play_mode = play_mode
+        self.mode = "物理模式"
+        self.play_mode = play_mode
+        self.true_random_mode = False
+        self.random_group_mode = False
+        self.crossword_random = False
+
+    def start_tutorial(self, auto=False, play_mode="自由"):
         if self.is_spectating():
             return
         self.tutorial_manual = not auto
+        self.tutorial_play_mode = self.normalize_tutorial_play_mode(play_mode)
         self.tutorial_active = True
         self.tutorial_step = "home"
-        self.selected_subject = "物理模式"
-        self.selected_game_group = "普通"
-        self.selected_rule_mode = "自由"
-        self.selected_play_mode = "自由"
-        self.mode = "物理模式"
-        self.play_mode = "自由"
-        self.true_random_mode = False
-        self.random_group_mode = False
+        self.apply_tutorial_mode_selection()
         self.show_home()
 
     def skip_tutorial(self):
@@ -122,6 +140,24 @@ class AccountTutorialMixin:
             except tk.TclError:
                 pass
         self.tutorial_overlay_widgets = []
+
+    def make_tutorial_overlay_window(self, x, y, w, h, color, alpha=None):
+        if w <= 0 or h <= 0:
+            return None
+        root_x = self.container.winfo_rootx()
+        root_y = self.container.winfo_rooty()
+        win = tk.Toplevel(self)
+        win.overrideredirect(True)
+        win.configure(bg=color)
+        try:
+            win.transient(self)
+            if alpha is not None:
+                win.attributes("-alpha", alpha)
+        except tk.TclError:
+            pass
+        win.geometry(f"{int(max(1, w))}x{int(max(1, h))}+{int(root_x + x)}+{int(root_y + y)}")
+        self.tutorial_overlay_widgets.append(win)
+        return win
 
     def render_tutorial_overlay(self, targets, title, body, next_text=None, next_command=None):
         if not self.tutorial_active:
@@ -164,17 +200,21 @@ class AccountTutorialMixin:
         right = min(width, max(item[2] for item in bounds) + margin)
         bottom = min(height, max(item[3] for item in bounds) + margin)
 
-        def add_block(x, y, w, h, color="#070b13"):
+        def add_block(x, y, w, h, color="#070b13", alpha=None):
             if w <= 0 or h <= 0:
                 return
-            block = tk.Frame(self.container, bg=color)
-            block.place(x=x, y=y, width=w, height=h)
-            self.tutorial_overlay_widgets.append(block)
+            win = self.make_tutorial_overlay_window(x, y, w, h, color, alpha=alpha)
+            if win:
+                try:
+                    win.lift()
+                except tk.TclError:
+                    pass
 
-        add_block(0, 0, width, top)
-        add_block(0, bottom, width, height - bottom)
-        add_block(0, top, left, bottom - top)
-        add_block(right, top, width - right, bottom - top)
+        dim_alpha = 0.40
+        add_block(0, 0, width, top, alpha=dim_alpha)
+        add_block(0, bottom, width, height - bottom, alpha=dim_alpha)
+        add_block(0, top, left, bottom - top, alpha=dim_alpha)
+        add_block(right, top, width - right, bottom - top, alpha=dim_alpha)
         ring = "#f6d36b"
         add_block(left, max(0, top - 3), right - left, 3, ring)
         add_block(left, bottom, right - left, 3, ring)
@@ -192,8 +232,10 @@ class AccountTutorialMixin:
             callout_width = min(default_callout_width, space_right)
         elif space_left >= min_callout_width:
             callout_width = min(default_callout_width, space_left)
-        callout = tk.Frame(self.container, bg="#182033", highlightbackground="#f6d36b", highlightthickness=1)
-        self.tutorial_overlay_widgets.append(callout)
+        callout_window = self.make_tutorial_overlay_window(0, 0, callout_width, 1, "#182033")
+        if not callout_window:
+            return
+        callout = tk.Frame(callout_window, bg="#182033", highlightbackground="#f6d36b", highlightthickness=1)
         tk.Label(callout, text=title, fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 17, "bold")).pack(anchor="w", padx=18, pady=(16, 8))
         tk.Label(
             callout,
@@ -208,6 +250,8 @@ class AccountTutorialMixin:
         if next_text and next_command:
             HoverButton(row, next_text, next_command, width=138, height=46, accent="#9ff2b2").grid(row=0, column=0, padx=(0, 10))
         HoverButton(row, "跳过教程", self.skip_tutorial, width=138, height=46, accent="#ff9b89").grid(row=0, column=1 if next_text else 0, padx=(0, 10))
+        callout.pack(fill="both", expand=True)
+        self.apply_static_theme(callout_window)
         callout.update_idletasks()
         callout_height = callout.winfo_reqheight()
         if bottom + gap + callout_height <= height:
@@ -225,7 +269,10 @@ class AccountTutorialMixin:
         else:
             callout_y = max(edge, min(height - callout_height - edge, top - callout_height - gap))
             callout_x = min(max(left, edge), max(edge, width - callout_width - edge))
-        callout.place(x=callout_x, y=callout_y, width=callout_width)
+        callout_window.geometry(
+            f"{int(callout_width)}x{int(max(callout_height, 1))}+"
+            f"{int(root_x + callout_x)}+{int(root_y + callout_y)}"
+        )
         for widget in self.tutorial_overlay_widgets:
             try:
                 widget.lift()
@@ -233,7 +280,47 @@ class AccountTutorialMixin:
                 pass
 
     def show_tutorial_page(self):
-        self.start_tutorial(auto=not self.tutorial_manual)
+        if self.tutorial_manual:
+            self.show_tutorial_select()
+            return
+        self.start_tutorial(auto=True, play_mode="自由")
+
+    def show_tutorial_select(self):
+        if self.is_spectating():
+            return
+        self.tutorial_active = False
+        self.clear()
+        self.play_music("menu")
+        self._start_backdrop("lines")
+        self._topbar("选择新手教程", self.show_settings)
+        frame = tk.Frame(self.container, bg=self.theme_color("base"))
+        frame.pack(fill="both", expand=True, padx=34, pady=(0, 28))
+        tk.Label(frame, text="选择要重温的玩法", fg="#fff2bd", bg=self.theme_color("base"), font=("Microsoft YaHei UI", 28, "bold")).pack(anchor="w", pady=(18, 8))
+        tk.Label(
+            frame,
+            text="四种教程都会从物理入门题开始，带你走过模式选择、难度选择和真实作答页。",
+            fg="#c8d2ee",
+            bg=self.theme_color("base"),
+            justify="left",
+            font=("Microsoft YaHei UI", 12, "bold"),
+        ).pack(anchor="w", pady=(0, 20))
+        cards = tk.Frame(frame, bg=self.theme_color("base"))
+        cards.pack(anchor="w", fill="x")
+        descriptions = {
+            "自由": "单题首字母练习，体验字词提示、词库提示和结算。",
+            "限时": "连续限时作答，教程会展示计时和单题作答流程。",
+            "线索": "不显示首字母，体验追加线索、词库提示和线索作答。",
+            "字谜": "多词交叉填格，体验词条列表、格子提示、词库提示和单词提交。",
+        }
+        accents = {"自由": "#9ff2b2", "限时": "#f6d36b", "线索": "#7ed6ff", "字谜": "#b7f6ff"}
+        for index, play_mode in enumerate(self.TUTORIAL_PLAY_MODES):
+            card = tk.Frame(cards, bg="#182033", highlightbackground="#3b4560", highlightthickness=1)
+            card.grid(row=index // 2, column=index % 2, sticky="nsew", padx=(0, 18), pady=(0, 18))
+            cards.grid_columnconfigure(index % 2, weight=1)
+            tk.Label(card, text=f"{play_mode}模式", fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 20, "bold")).pack(anchor="w", padx=22, pady=(20, 8))
+            tk.Label(card, text=self.smart_wrap_text(descriptions[play_mode], 24), fg="#dce6ff", bg="#182033", justify="left", font=("Microsoft YaHei UI", 11, "bold")).pack(anchor="w", fill="x", padx=22, pady=(0, 18))
+            HoverButton(card, "开始教程", lambda play_mode=play_mode: self.start_tutorial(auto=False, play_mode=play_mode), width=160, height=52, accent=accents[play_mode]).pack(anchor="w", padx=22, pady=(0, 22))
+        self.reveal_background_surface(frame)
 
     def advance_tutorial_page(self):
         if self.tutorial_step == "home":
@@ -248,14 +335,7 @@ class AccountTutorialMixin:
     def start_tutorial_round(self):
         self.tutorial_active = True
         self.tutorial_step = "question"
-        self.selected_subject = "物理模式"
-        self.selected_game_group = "普通"
-        self.selected_rule_mode = "自由"
-        self.selected_play_mode = "自由"
-        self.mode = "物理模式"
-        self.play_mode = "自由"
-        self.true_random_mode = False
-        self.random_group_mode = False
+        self.apply_tutorial_mode_selection()
         self.start_game("入门")
 
     def render_tutorial_banner(self, parent, answer=None):
@@ -263,29 +343,37 @@ class AccountTutorialMixin:
             return
         box = tk.Frame(parent, bg="#101827", highlightbackground="#f6d36b", highlightthickness=1)
         box.pack(fill="x", padx=36, pady=(8, 0))
-        text = "新手教程：跟着黄色高光操作。教程题会免费体验一次字词提示和一次词库提示。"
+        play_mode = self.tutorial_play_label()
+        if play_mode == "线索":
+            text = "线索教程：跟着黄色高光操作。教程题会免费体验追加线索和词库提示。"
+        elif play_mode == "限时":
+            text = "限时教程：跟着黄色高光操作。教程题不会计入正式限时成绩。"
+        else:
+            text = "新手教程：跟着黄色高光操作。教程题会免费体验一次字词提示和一次词库提示。"
         if answer:
             text += f"  本题答案：{answer}"
         tk.Label(box, text=text, fg="#fff2bd", bg="#101827", justify="left", wraplength=1080, font=("Microsoft YaHei UI", 11, "bold")).pack(side="left", fill="x", expand=True, padx=16, pady=10)
         HoverButton(box, "跳过教程", self.skip_tutorial, width=132, height=44, accent="#ff9b89").pack(side="right", padx=12, pady=7)
+        self.apply_static_theme(box)
 
     def render_tutorial_game_overlay(self):
         if not self.tutorial_active or not self.current:
             return
         answer = self.current.chinese
+        play_mode = self.tutorial_play_label()
         if self.tutorial_step == "question":
             self.render_tutorial_overlay(
                 self.tutorial_question_panel,
                 "先看题面",
-                "这里是真实答题页。左侧是题面、难度和规则；教程会先带你体验提示与词库提示，再正式输入答案。",
+                f"这里是真实的{play_mode}作答页。先看题面、难度和规则；教程会带你体验提示与词库提示，再正式输入答案。",
                 next_text="试用提示",
                 next_command=lambda: self.advance_tutorial_game_step("hint"),
             )
         elif self.tutorial_step == "hint":
             self.render_tutorial_overlay(
                 self.tutorial_hint_button,
-                "点击字词提示",
-                "本教程题免费送一次字词提示。正式游戏中过多提示会扣分，提示把答案全部揭完还会让本题失败。",
+                "点击提示",
+                "线索题会追加下一条线索；首字母题会揭示一个字。教程里免费体验，正式游戏中过多提示会扣分。",
             )
         elif self.tutorial_step == "library":
             self.render_tutorial_overlay(
@@ -300,11 +388,47 @@ class AccountTutorialMixin:
                 f"现在把“{answer}”填进输入框并点击“确认”。这道教程题不会计入正式 Rating、成就或总积分。",
             )
 
+    def render_crossword_tutorial_overlay(self):
+        if not self.tutorial_active or not self.crossword_puzzle:
+            return
+        placement = self.crossword_selected_placement()
+        answer = placement.answer if placement else ""
+        if self.tutorial_step == "question":
+            target = self.crossword_word_listbox or self.crossword_canvas
+            self.render_tutorial_overlay(
+                target,
+                "先选一个编号",
+                "字谜模式左侧列出所有待填词，右侧是交叉格。先看当前高亮编号和它给出的首字母或掩码。",
+                next_text="试用提示",
+                next_command=lambda: self.advance_tutorial_game_step("hint"),
+            )
+        elif self.tutorial_step == "hint":
+            self.render_tutorial_overlay(
+                self.crossword_hint_button,
+                "点击格子提示",
+                "字谜提示会揭示一个尚未可见的格子。教程中可以先试一次，再看词库提示。",
+            )
+        elif self.tutorial_step == "library":
+            self.render_tutorial_overlay(
+                self.crossword_library_hint_button,
+                "点击词库提示",
+                "词库提示会告诉你某个未完成词属于哪个词库，用来缩小范围。",
+            )
+        elif self.tutorial_step == "answer":
+            self.render_tutorial_overlay(
+                [self.answer_entry, self.tutorial_confirm_button],
+                "填写当前编号",
+                f"现在把“{answer}”填进输入框并点击“确认”。字谜教程只要求你完成这一个词。",
+            )
+
     def advance_tutorial_game_step(self, step):
         if not self.tutorial_active:
             return
         self.tutorial_step = step
-        self.render_tutorial_game_overlay()
+        if self.tutorial_play_label() == "字谜":
+            self.render_crossword_tutorial_overlay()
+        else:
+            self.render_tutorial_game_overlay()
 
     def show_tutorial_complete(self, elapsed, record_path):
         self.clear_tutorial_overlay()
@@ -315,12 +439,12 @@ class AccountTutorialMixin:
         self.play_sfx("success")
         self.clear()
         self._start_backdrop("constellation")
-        frame = tk.Frame(self.container, bg="#111725")
+        frame = tk.Frame(self.container, bg=self.theme_color("base"))
         frame.pack(fill="both", expand=True)
         card = tk.Frame(frame, bg="#182033", highlightbackground="#3b4560", highlightthickness=1)
         card.place(relx=0.5, rely=0.5, anchor="center", relwidth=0.70, relheight=0.58)
         tk.Label(card, text="新手教程完成", fg="#9ff2b2", bg="#182033", font=("Microsoft YaHei UI", 38, "bold")).pack(pady=(58, 12))
-        tk.Label(card, text=f"你完成了一道物理入门题，用时 {elapsed:.1f} 秒。", fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 16, "bold")).pack(pady=5)
+        tk.Label(card, text=f"你完成了一道物理入门{self.tutorial_play_label()}题，用时 {elapsed:.1f} 秒。", fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 16, "bold")).pack(pady=5)
         tk.Label(card, text="教程题已保存为只读练习记录，不计入正式 Rating、成就或总积分。", fg="#9ca8c7", bg="#182033", font=("Microsoft YaHei UI", 12, "bold")).pack(pady=5)
         if record_path:
             try:
@@ -329,6 +453,7 @@ class AccountTutorialMixin:
                 record_display = f"record/{record_path.name}"
             tk.Label(card, text=f"教程记录：{record_display}", fg="#7683a3", bg="#182033", font=("Microsoft YaHei UI", 10)).pack(pady=(6, 16))
         HoverButton(card, "回到主页", self.show_home, width=190, height=62, accent="#9ff2b2").pack(pady=(10, 0))
+        self.reveal_background_surface(card)
 
     def show_login(self, allow_cancel=False):
         self.play_music("home")
@@ -338,10 +463,11 @@ class AccountTutorialMixin:
         if allow_cancel and self.switch_return_account:
             back = HoverButton(self.container, "返回", self.cancel_account_switch, width=110, height=48, accent="#8fb6ff")
             back.place(x=22, y=18)
-        shell = tk.Frame(page, bg="#111725")
+        base_bg = self.theme_color("base")
+        shell = tk.Frame(page, bg=base_bg)
         shell.pack(fill="x", padx=32, pady=(10, 34))
         self.draw_home_title(shell, compact=True).pack(pady=(0, 14))
-        cards = tk.Frame(shell, bg="#111725")
+        cards = tk.Frame(shell, bg=base_bg)
         cards.pack()
         stack_cards = scaled_int(1030) > max(self.winfo_width(), int(self.player_settings.get("window_width", 1274))) - 64
 
@@ -389,6 +515,7 @@ class AccountTutorialMixin:
         register_password_entry.bind("<Return>", lambda _event: register_confirm_entry.focus_set())
         register_confirm_entry.bind("<Return>", lambda _event: self.register_account())
         HoverButton(register_content, "注册并进入", self.register_account, width=250, height=58, accent="#8fb6ff").pack(anchor="w", pady=(16, 0))
+        self.reveal_background_surface(shell)
         self.after(80, login_name_entry.focus_set)
 
     def cancel_account_switch(self):
@@ -451,6 +578,7 @@ class AccountTutorialMixin:
         self.switch_return_account = None
         self.current_account = None
         self.player_settings = dict(DEFAULT_PLAYER_SETTINGS)
+        self.apply_backdrop_theme()
         self.apply_audio_settings()
         self.show_login()
 
@@ -466,6 +594,7 @@ class AccountTutorialMixin:
         self.switch_return_account = self.current_account
         self.current_account = None
         self.player_settings = dict(DEFAULT_PLAYER_SETTINGS)
+        self.apply_backdrop_theme()
         self.apply_audio_settings()
         self.show_login(allow_cancel=True)
 
@@ -509,3 +638,4 @@ class AccountTutorialMixin:
 
         HoverButton(row, "确认修改", submit, width=150, height=52, accent="#9ff2b2").grid(row=0, column=0, padx=(0, 10))
         HoverButton(row, "取消", popup.destroy, width=120, height=52, accent="#ff9b89").grid(row=0, column=1)
+        self.apply_static_theme(popup)

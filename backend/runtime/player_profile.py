@@ -10,6 +10,7 @@ DEFAULT_PLAYER_SETTINGS = {
     "avatar_id": 0,
     "title_id": "rating_0",
     "rank_badge_id": "",
+    "backdrop_theme": "blue",
     "backdrop_speed": 1.0,
     "backdrop_density": 1.0,
     "backdrop_opacity": 1.0,
@@ -60,6 +61,10 @@ def normalize_player_settings(settings):
     title_id = str(data.get("title_id") or DEFAULT_PLAYER_SETTINGS["title_id"]).strip()
     data["title_id"] = title_id or DEFAULT_PLAYER_SETTINGS["title_id"]
     data["rank_badge_id"] = str(data.get("rank_badge_id") or "").strip()
+    backdrop_theme = str(data.get("backdrop_theme") or DEFAULT_PLAYER_SETTINGS["backdrop_theme"]).strip()
+    if backdrop_theme not in {"blue", "green", "red", "yellow", "pink", "purple"}:
+        backdrop_theme = DEFAULT_PLAYER_SETTINGS["backdrop_theme"]
+    data["backdrop_theme"] = backdrop_theme
 
     data["backdrop_speed"] = clamp_float(data.get("backdrop_speed"), 0.4, 10.0, 1.0)
     data["backdrop_density"] = clamp_float(data.get("backdrop_density"), 0.4, 10.0, 1.0)

@@ -161,4 +161,4 @@ from backend.runtime.term_library import (
     term_notice_tags,
     term_notice_text,
 )
-from frontend.ui.widgets import HoverButton, WobblePanel, scaled_int, set_button_sound_callback, set_ui_scale
+from frontend.ui.widgets import HoverButton, scaled_int, set_button_sound_callback, set_ui_scale

@@ -1,6 +1,7 @@
 import math
 import re
 import tkinter as tk
+from tkinter import font as tkfont
 
 
 def split_mechanics_sections(content):
@@ -15,15 +16,70 @@ def split_mechanics_sections(content):
     return quick, detail
 
 
-def make_scroll_frame(parent, bg="#182033"):
-    shell = tk.Frame(parent, bg=bg)
+def inherited_bg(parent, default="#182033"):
+    try:
+        return parent.cget("bg") or default
+    except tk.TclError:
+        return default
+
+
+def mark_theme_surface(widget):
+    try:
+        widget._theme_surface = True
+    except Exception:
+        pass
+    return widget
+
+
+def theme_owner(widget):
+    current = widget
+    while current is not None:
+        if hasattr(current, "theme_color"):
+            return current
+        current = getattr(current, "master", None)
+    return None
+
+
+def markdown_palette(parent, bg):
+    owner = theme_owner(parent)
+    if not owner:
+        return {
+            "fg": "#dce6ff",
+            "muted": "#9ca8c7",
+            "accent": "#8fb6ff",
+            "title": "#fff2bd",
+            "code_bg": "#101827",
+            "code_fg": "#9ff2b2",
+            "border": "#3b4560",
+            "table_head": "#26344f",
+        }
+    return {
+        "fg": owner.theme_color("text", "#dce6ff"),
+        "muted": owner.theme_color("muted", "#9ca8c7"),
+        "accent": owner.theme_color("accent", "#8fb6ff"),
+        "title": owner.theme_color("title", "#fff2bd"),
+        "code_bg": owner.theme_color("code_bg", owner.theme_color("deep", "#101827")),
+        "code_fg": owner.theme_color("code_fg", owner.theme_color("success", "#9ff2b2")),
+        "border": owner.theme_color("button_outline", "#3b4560"),
+        "table_head": owner.theme_color("button_hover", "#26344f"),
+    }
+
+
+def make_scroll_frame(parent, bg=None):
+    bg = bg or inherited_bg(parent)
+    shell = mark_theme_surface(tk.Frame(parent, bg=bg))
     shell.pack(fill="both", expand=True)
-    canvas = tk.Canvas(shell, bg=bg, bd=0, highlightthickness=0)
+    canvas = mark_theme_surface(tk.Canvas(shell, bg=bg, bd=0, highlightthickness=0))
     scrollbar = tk.Scrollbar(shell, orient="vertical", command=canvas.yview)
-    inner = tk.Frame(canvas, bg=bg)
+    inner = mark_theme_surface(tk.Frame(canvas, bg=bg))
     inner.bind("<Configure>", lambda _event: canvas.configure(scrollregion=canvas.bbox("all")))
     window_id = canvas.create_window((0, 0), window=inner, anchor="nw")
-    canvas.bind("<Configure>", lambda event: canvas.itemconfigure(window_id, width=event.width))
+
+    def fit_inner(event):
+        canvas.itemconfigure(window_id, width=max(1, event.width))
+        canvas.configure(scrollregion=canvas.bbox("all"))
+
+    canvas.bind("<Configure>", fit_inner)
     canvas.configure(yscrollcommand=scrollbar.set)
     canvas.pack(side="left", fill="both", expand=True)
     scrollbar.pack(side="right", fill="y")
@@ -64,15 +120,96 @@ def make_scroll_frame(parent, bg="#182033"):
     return inner
 
 
-def render_markdown(parent, content, mode="detail"):
-    bg = "#182033"
-    fg = "#dce6ff"
-    muted = "#9ca8c7"
-    accent = "#8fb6ff"
+def render_markdown(parent, content, mode="detail", incremental=False, first_batch=6, batch_size=7, batch_delay=150):
+    bg = inherited_bg(parent)
+    palette = markdown_palette(parent, bg)
+    fg = palette["fg"]
+    muted = palette["muted"]
     base_size = 15 if mode == "quick" else 13
-    heading_scale = 1.45 if mode == "quick" else 1.35
 
     inner = make_scroll_frame(parent, bg)
+    blocks = _markdown_blocks(content, mode)
+
+    def render_block(block):
+        kind = block[0]
+        if kind == "paragraph":
+            _render_text_block(inner, block[1], base_size, fg=fg, bg=bg, padx=block[2], pady=block[3])
+            return
+        if kind == "code":
+            _render_code(inner, block[1], base_size)
+            return
+        if kind == "table":
+            _render_table(inner, block[1], base_size)
+            return
+        if kind == "heading":
+            _level, title, size, color_role, top_pady = block[1:]
+            color = palette[color_role]
+            label = mark_theme_surface(tk.Label(
+                inner,
+                text=title,
+                fg=color,
+                bg=bg,
+                justify="left",
+                wraplength=1,
+                font=("Microsoft YaHei UI", size, "bold"),
+            ))
+            label.pack(anchor="w", fill="x", padx=28, pady=(top_pady, 6))
+            _bind_label_wrap(label, margin=56)
+
+    def render_done_spacer():
+        mark_theme_surface(tk.Label(inner, text="", fg=muted, bg=bg, font=("Microsoft YaHei UI", 2))).pack(pady=8)
+
+    if not incremental:
+        for block in blocks:
+            render_block(block)
+        render_done_spacer()
+        return inner
+
+    state = {"index": 0, "done": False, "job": None}
+
+    def cancel_pending(_event=None):
+        job = state.get("job")
+        if job:
+            try:
+                inner.after_cancel(job)
+            except tk.TclError:
+                pass
+            state["job"] = None
+
+    def render_batch(limit):
+        state["job"] = None
+        try:
+            if not inner.winfo_exists():
+                return
+        except tk.TclError:
+            return
+        rendered = 0
+        while state["index"] < len(blocks) and rendered < limit:
+            try:
+                render_block(blocks[state["index"]])
+            except tk.TclError:
+                return
+            state["index"] += 1
+            rendered += 1
+        if state["index"] >= len(blocks):
+            if not state["done"]:
+                render_done_spacer()
+                state["done"] = True
+            return
+        try:
+            state["job"] = inner.after(batch_delay, lambda: render_batch(batch_size))
+        except tk.TclError:
+            pass
+
+    inner.bind("<Destroy>", cancel_pending, add="+")
+    render_batch(first_batch)
+    return inner
+
+
+def _markdown_blocks(content, mode="detail"):
+    base_size = 15 if mode == "quick" else 13
+    heading_scale = 1.45 if mode == "quick" else 1.35
+    blocks = []
     lines = content.splitlines()
     index = 0
     paragraph = []
@@ -85,7 +222,7 @@ def render_markdown(parent, content, mode="detail"):
         if text:
             if mode == "quick":
                 text = "　　" + text
-            _render_text_block(inner, text, base_size, fg=fg, bg=bg, padx=28, pady=(3, 11))
+            blocks.append(("paragraph", text, 28, (3, 11)))
         paragraph = []
 
     while index < len(lines):
@@ -102,7 +239,7 @@ def render_markdown(parent, content, mode="detail"):
             while index < len(lines) and not lines[index].strip().startswith("```"):
                 code_lines.append(lines[index].rstrip())
                 index += 1
-            _render_code(inner, "\n".join(code_lines), base_size)
+            blocks.append(("code", "\n".join(code_lines)))
             index += 1
             continue
         if _is_table_start(lines, index):
@@ -111,42 +248,42 @@ def render_markdown(parent, content, mode="detail"):
             while index < len(lines) and lines[index].strip().startswith("|"):
                 table_lines.append(lines[index].strip())
                 index += 1
-            _render_table(inner, table_lines, base_size)
+            blocks.append(("table", table_lines))
             continue
         if stripped.startswith("#"):
             flush_paragraph()
             level = len(stripped) - len(stripped.lstrip("#"))
             title = stripped[level:].strip()
             size = max(base_size + 1, int(base_size * heading_scale) - (level - 1) * 2)
-            color = "#fff2bd" if level <= 2 else accent
-            tk.Label(
-                inner,
-                text=title,
-                fg=color,
-                bg=bg,
-                font=("Microsoft YaHei UI", size, "bold"),
-            ).pack(anchor="w", padx=28, pady=(16 if level <= 2 else 10, 6))
+            top_pady = 16 if level <= 2 else 10
+            blocks.append(("heading", level, title, size, "title" if level <= 2 else "accent", top_pady))
             index += 1
             continue
         if stripped.startswith("- "):
             flush_paragraph()
-            _render_text_block(inner, "• " + stripped[2:], base_size, fg=fg, bg=bg, padx=42, pady=4)
+            blocks.append(("paragraph", "• " + stripped[2:], 42, 4))
+            index += 1
+            continue
+        ordered = re.match(r"^(\d+)\.\s+(.*)$", stripped)
+        if ordered:
+            flush_paragraph()
+            blocks.append(("paragraph", f"{ordered.group(1)}. {ordered.group(2)}", 42, 4))
             index += 1
             continue
         paragraph.append(stripped)
         index += 1
 
     flush_paragraph()
-    tk.Label(inner, text="", fg=muted, bg=bg, font=("Microsoft YaHei UI", 2)).pack(pady=8)
-    return inner
+    return blocks
 
 
 def _render_text_block(parent, text, base_size, fg="#dce6ff", bg="#182033", padx=22, pady=(2, 8), bold=False):
+    palette = markdown_palette(parent, bg)
     widget = tk.Text(
         parent,
         height=1,
         width=1,
-        wrap="word",
+        wrap="char",
         fg=fg,
         bg=bg,
         relief="flat",
@@ -157,17 +294,26 @@ def _render_text_block(parent, text, base_size, fg="#dce6ff", bg="#182033", padx
         pady=0,
         font=("Microsoft YaHei UI", base_size, "bold" if bold else "normal"),
         spacing1=0,
-        spacing2=1,
-        spacing3=2,
+        spacing2=0,
+        spacing3=1,
         cursor="arrow",
     )
+    mark_theme_surface(widget)
     widget.pack(anchor="w", fill="x", padx=padx, pady=pady)
-    widget.tag_configure("bold", font=("Microsoft YaHei UI", base_size, "bold"), foreground=fg)
-    widget.tag_configure("code", font=("Consolas", max(11, base_size)), foreground="#9ff2b2", background="#101827")
-    widget.tag_configure("math", font=("Microsoft YaHei UI", base_size, "bold" if bold else "normal"), foreground="#fff2bd", background=bg)
-    widget.tag_configure("muted", foreground="#9ca8c7")
+    _configure_inline_tags(
+        widget,
+        base_size,
+        fg,
+        bg,
+        bold=bold,
+        code_min_size=11,
+        code_fg=palette["code_fg"],
+        code_bg=palette["code_bg"],
+        muted_fg=palette["muted"],
+    )
     _insert_inline_segments(widget, text)
     _tag_formula_like_spans(widget, _plain_inline_text(text))
+    _tag_script_chars(widget, 0, _plain_inline_text(text))
     widget.configure(state="disabled")
     _bind_auto_text_height(widget)
     return widget
@@ -205,14 +351,7 @@ def _bind_auto_text_height(widget):
         if widget.winfo_width() <= 20:
             schedule(30)
             return
-        try:
-            count = widget.count("1.0", "end-1c", "displaylines")
-        except tk.TclError:
-            return
-        if not count:
-            return
-        extra = 1 if count[0] > 1 else 0
-        desired = max(1, int(count[0]) + extra)
+        desired = _estimated_text_display_lines(widget)
         if str(widget.cget("height")) != str(desired):
             widget.configure(height=desired)
 
@@ -223,6 +362,36 @@ def _bind_auto_text_height(widget):
     widget.bind("<Configure>", lambda _event: schedule(), add="+")
     widget.bind("<Destroy>", on_destroy, add="+")
     schedule()
+
+
+def _estimated_text_display_lines(widget):
+    try:
+        text = widget.get("1.0", "end-1c")
+        width = max(24, int(widget.winfo_width()) - 4)
+        base_font = tkfont.Font(font=widget.cget("font"))
+    except tk.TclError:
+        return 1
+    if not text:
+        return 1
+    line_count = 0
+    for logical_line in str(text).split("\n"):
+        line_count += _estimated_wrapped_line_count(logical_line, width, base_font)
+    return max(1, line_count)
+
+
+def _estimated_wrapped_line_count(text, width, font_obj):
+    if not text:
+        return 1
+    lines = 1
+    current_width = 0
+    for char in str(text):
+        char_width = max(1, font_obj.measure(char))
+        if current_width > 0 and current_width + char_width > width:
+            lines += 1
+            current_width = char_width
+        else:
+            current_width += char_width
+    return max(1, lines)
 
 
 def render_inline_markdown(
@@ -245,7 +414,7 @@ def render_inline_markdown(
         parent,
         height=height,
         width=1,
-        wrap="word",
+        wrap="char",
         fg=fg,
         bg=bg,
         relief="flat",
@@ -255,24 +424,146 @@ def render_inline_markdown(
         padx=0,
         pady=0,
         font=("Microsoft YaHei UI", base_size, "bold" if bold else "normal"),
-        spacing1=1,
-        spacing2=1,
-        spacing3=2,
+        spacing1=0,
+        spacing2=0,
+        spacing3=1,
     )
+    mark_theme_surface(widget)
     widget.pack(anchor="w", fill=fill, padx=padx, pady=pady)
-    widget.tag_configure("bold", font=("Microsoft YaHei UI", base_size, "bold"), foreground=fg)
-    widget.tag_configure("code", font=("Consolas", max(9, base_size)), foreground="#9ff2b2", background="#101827")
-    widget.tag_configure("math", font=("Microsoft YaHei UI", base_size, "bold" if bold else "normal"), foreground="#fff2bd", background=bg)
-    widget.tag_configure("muted", foreground="#9ca8c7")
+    palette = markdown_palette(parent, bg)
+    _configure_inline_tags(
+        widget,
+        base_size,
+        fg,
+        bg,
+        bold=bold,
+        code_min_size=9,
+        code_fg=palette["code_fg"],
+        code_bg=palette["code_bg"],
+        muted_fg=palette["muted"],
+    )
     _insert_inline_segments(widget, text)
     _tag_formula_like_spans(widget, plain)
+    _tag_script_chars(widget, 0, plain)
     widget.configure(state="disabled", cursor="")
     _bind_auto_text_height(widget)
     return widget
 
 
 def _inline_text(text):
-    return text.replace("`", "").replace("**", "")
+    return _plain_inline_text(text)
+
+
+def _configure_inline_tags(widget, base_size, fg, bg, bold=False, code_min_size=9, code_fg="#9ff2b2", code_bg="#101827", muted_fg="#9ca8c7"):
+    math_style = "bold italic" if bold else "italic"
+    script_size = max(8, base_size - 3)
+    widget.tag_configure("bold", font=("Microsoft YaHei UI", base_size, "bold"), foreground=fg)
+    widget.tag_configure("italic", font=("Microsoft YaHei UI", base_size, "italic"), foreground=fg)
+    widget.tag_configure("code", font=("Consolas", max(code_min_size, base_size)), foreground=code_fg, background=bg)
+    widget.tag_configure(
+        "math",
+        font=("Microsoft YaHei UI", base_size, math_style),
+        foreground=fg,
+        background=bg,
+    )
+    widget.tag_configure("math_sup", font=("Microsoft YaHei UI", script_size, math_style), foreground=fg, background=bg, offset=max(2, base_size // 3))
+    widget.tag_configure("math_sub", font=("Microsoft YaHei UI", script_size, math_style), foreground=fg, background=bg, offset=-max(1, base_size // 4))
+    widget.tag_configure("muted", foreground=muted_fg)
+
+
+def _bind_label_wrap(label, margin=28, minimum=180):
+    def update_wrap(event=None):
+        try:
+            width = event.width if event is not None else label.winfo_width()
+            label.configure(wraplength=max(minimum, width - margin))
+        except tk.TclError:
+            pass
+
+    label.bind("<Configure>", update_wrap, add="+")
+    label.after_idle(update_wrap)
+
+
+SUPERSCRIPT_CHARS = set("⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ᵃᵇᶜᵈᵉᶠᵍʰⁱʲᵏˡᵐⁿᵒᵖʳˢᵗᵘᵛʷˣʸᶻᴬᴮᴰᴱᴳᴴᴵᴶᴷᴸᴹᴺᴼᴾᴿᵀᵁⱽᵂ′")
+SUBSCRIPT_CHARS = set("₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ₐₑₕᵢⱼₖₗₘₙₒₚᵣₛₜᵤᵥₓᵦᵧᵨᵩᵪ")
+
+
+def _tag_script_chars(widget, start_offset, text):
+    for offset, char in enumerate(str(text or "")):
+        tag = None
+        if char in SUPERSCRIPT_CHARS:
+            tag = "math_sup"
+        elif char in SUBSCRIPT_CHARS:
+            tag = "math_sub"
+        if not tag:
+            continue
+        start = f"1.0+{start_offset + offset}c"
+        end = f"1.0+{start_offset + offset + 1}c"
+        widget.tag_add(tag, start, end)
+
+
+def _bind_markdown_copy(widget):
+    if getattr(widget, "_markdown_copy_bound", False):
+        return
+    widget._markdown_copy_bound = True
+
+    def copy_selection(event):
+        text_widget = widget
+        try:
+            first = text_widget.index("sel.first")
+            last = text_widget.index("sel.last")
+        except tk.TclError:
+            return None
+        source = _markdown_selection_to_source(text_widget, first, last)
+        if not source:
+            return None
+        try:
+            text_widget.clipboard_clear()
+            text_widget.clipboard_append(source)
+        except tk.TclError:
+            return None
+        return "break"
+
+    widget.bind("<<Copy>>", copy_selection, add=False)
+    widget.bind("<Control-c>", copy_selection, add=False)
+    widget.bind("<Control-C>", copy_selection, add=False)
+
+
+def _markdown_selection_to_source(widget, first, last):
+    start = _char_offset(widget, first)
+    end = _char_offset(widget, last)
+    if start is None or end is None:
+        return ""
+    if end <= start:
+        return ""
+    segments = getattr(widget, "_markdown_segments", None) or []
+    if not segments:
+        return widget.get(first, last)
+    pieces = []
+    for segment in segments:
+        segment_start = int(segment["start"])
+        segment_end = int(segment["end"])
+        if segment_end <= start or segment_start >= end:
+            continue
+        overlap_start = max(start, segment_start)
+        overlap_end = min(end, segment_end)
+        if overlap_start == segment_start and overlap_end == segment_end:
+            pieces.append(segment["source"])
+        else:
+            display = segment["display"]
+            pieces.append(display[overlap_start - segment_start:overlap_end - segment_start])
+    return "".join(pieces)
+
+
+def _char_offset(widget, index):
+    try:
+        if widget.compare(index, "==", "1.0"):
+            return 0
+        count = widget.count("1.0", index, "chars")
+    except tk.TclError:
+        return None
+    if not count:
+        return 0
+    return int(count[0])
 
 
 def _plain_inline_text(text):
@@ -284,7 +575,7 @@ def _plain_inline_text(text):
         if marker is None:
             result.append(_render_loose_latex_text(text[index:]))
             break
-        start, end, tag, body = marker
+        start, end, tag, body, opener, closer = marker
         result.append(_render_loose_latex_text(text[index:start]))
         result.append(_render_latex_math(body) if tag == "math" else _render_inline_body(tag, body))
         index = end
@@ -292,23 +583,50 @@ def _plain_inline_text(text):
 
 
 def _insert_inline_segments(widget, text):
+    segments = []
+    display_pos = 0
+
+    def add_segment(raw, display, tags=()):
+        nonlocal display_pos
+        if not display:
+            return
+        start = display_pos
+        end = start + len(display)
+        widget.insert("end-1c", display, tuple(tags))
+        segments.append({
+            "start": start,
+            "end": end,
+            "source": raw,
+            "display": display,
+            "tags": tuple(tags),
+        })
+        display_pos = end
+        if "math" in tags:
+            _tag_script_chars(widget, start, display)
+
     index = 0
     while index < len(text):
         marker = _next_inline_marker(text, index)
         if marker is None:
-            widget.insert("end-1c", _render_loose_latex_text(text[index:]))
+            raw = text[index:]
+            add_segment(raw, _render_loose_latex_text(raw))
             break
-        start, end, tag, body = marker
+        start, end, tag, body, opener, closer = marker
         if start > index:
-            widget.insert("end-1c", _render_loose_latex_text(text[index:start]))
-        widget.insert("end-1c", _render_latex_math(body) if tag == "math" else _render_inline_body(tag, body), (tag,))
+            raw = text[index:start]
+            add_segment(raw, _render_loose_latex_text(raw))
+        raw = text[start:end]
+        add_segment(raw, _render_latex_math(body) if tag == "math" else _render_inline_body(tag, body), (tag,))
         index = end
+    widget._markdown_segments = segments
+    _bind_markdown_copy(widget)
 
 
 def _next_inline_marker(text, start_index):
     candidates = []
     for opener, closer, tag in (
         ("**", "**", "bold"),
+        ("*", "*", "italic"),
         ("`", "`", "code"),
         ("\\(", "\\)", "math"),
         ("\\[", "\\]", "math"),
@@ -322,9 +640,25 @@ def _next_inline_marker(text, start_index):
         if end == -1:
             continue
         body = text[body_start:end]
+        if tag == "italic" and not _valid_emphasis_span(text, start, end):
+            continue
         if body:
-            candidates.append((start, end + len(closer), tag, body))
+            candidates.append((start, end + len(closer), tag, body, opener, closer))
     return min(candidates, key=lambda item: item[0]) if candidates else None
+
+
+def _valid_emphasis_span(text, start, end):
+    if start < 0 or end <= start + 1 or end >= len(text):
+        return False
+    before = text[start - 1] if start > 0 else ""
+    after_open = text[start + 1]
+    before_close = text[end - 1]
+    after = text[end + 1] if end + 1 < len(text) else ""
+    if after_open.isspace() or before_close.isspace():
+        return False
+    if before.isalnum() and after.isalnum():
+        return False
+    return True
 
 
 def _render_inline_body(tag, body):
@@ -408,6 +742,20 @@ LATEX_SYMBOLS = {
     "exists": "∃",
     "in": "∈",
     "notin": "∉",
+    "cdots": "⋯",
+    "ldots": "…",
+}
+
+BLACKBOARD_SYMBOLS = {
+    "A": "𝔸",
+    "B": "𝔹",
+    "C": "ℂ",
+    "H": "ℍ",
+    "N": "ℕ",
+    "P": "ℙ",
+    "Q": "ℚ",
+    "R": "ℝ",
+    "Z": "ℤ",
 }
 
 SUPERSCRIPT_MAP = str.maketrans({
@@ -424,6 +772,7 @@ SUBSCRIPT_MAP = str.maketrans({
     "+": "₊", "-": "₋", "=": "₌", "(": "₍", ")": "₎",
     "a": "ₐ", "e": "ₑ", "h": "ₕ", "i": "ᵢ", "j": "ⱼ", "k": "ₖ", "l": "ₗ", "m": "ₘ", "n": "ₙ", "o": "ₒ",
     "p": "ₚ", "r": "ᵣ", "s": "ₛ", "t": "ₜ", "u": "ᵤ", "v": "ᵥ", "x": "ₓ",
+    "B": "ᵦ",
     "α": "ₐ", "β": "ᵦ", "γ": "ᵧ", "ρ": "ᵨ", "φ": "ᵩ", "χ": "ᵪ",
 })
 
@@ -466,15 +815,20 @@ def _replace_loose_math_scripts(text):
 
 def _replace_common_latex(text):
     text = str(text or "").replace("\\\\", "\\")
-    text = _replace_latex_groups(text, "frac", lambda parts: f"({parts[0]})/({parts[1]})", arg_count=2)
+    text = _replace_latex_groups(text, "frac", _format_fraction, arg_count=2)
+    text = _replace_simple_latex_frac(text)
     text = _replace_latex_groups(text, "sqrt", lambda parts: f"√({parts[0]})", arg_count=1)
     text = _replace_latex_groups(text, "hat", lambda parts: f"{parts[0]}̂", arg_count=1)
     text = _replace_latex_groups(text, "bar", lambda parts: f"{parts[0]}̄", arg_count=1)
     text = _replace_latex_groups(text, "vec", lambda parts: f"{parts[0]}⃗", arg_count=1)
-    for command in ("mathbf", "mathrm", "mathit", "mathcal", "mathbb", "operatorname", "text", "boldsymbol"):
+    text = _replace_latex_groups(text, "mathbb", lambda parts: BLACKBOARD_SYMBOLS.get(parts[0], parts[0]), arg_count=1)
+    text = re.sub(r"\\mathbb\s+([A-Za-z])", lambda match: BLACKBOARD_SYMBOLS.get(match.group(1), match.group(1)), text)
+    for command in ("mathbf", "mathrm", "mathit", "mathcal", "operatorname", "text", "boldsymbol"):
         text = _replace_latex_groups(text, command, lambda parts: parts[0], arg_count=1)
         text = re.sub(rf"\\{command}\s*\\([A-Za-z]+)", r"\\\1", text)
         text = re.sub(rf"\\{command}\s+([A-Za-zΑ-ω]+)", r"\1", text)
+    for function in ("sin", "cos", "tan", "cot", "sec", "csc", "ln", "log", "exp", "det", "tr", "dim", "ker", "rank", "Spec", "Vol"):
+        text = re.sub(rf"\\{function}(?![A-Za-z])", f" {function} ", text)
     text = _replace_latex_over(text)
     text = re.sub(r"\\rm\s+([A-Za-zΑ-ω]+)", r"\1", text)
     for command in ("left", "right"):
@@ -482,6 +836,23 @@ def _replace_common_latex(text):
     text = text.replace("\\,", " ").replace("\\;", " ").replace("\\:", " ").replace("\\!", "")
     text = text.replace("\\quad", " ").replace("\\qquad", "  ")
     return _replace_latex_symbols(text)
+
+
+def _format_fraction(parts):
+    numerator, denominator = parts
+    if _simple_fraction_part(numerator) and _simple_fraction_part(denominator):
+        return f"{numerator}∕{denominator}"
+    return f"({numerator})∕({denominator})"
+
+
+def _replace_simple_latex_frac(text):
+    token = r"(\\[A-Za-z]+|[A-Za-z0-9Α-ω])"
+    pattern = re.compile(rf"\\frac\s*{token}\s*{token}")
+    return pattern.sub(lambda match: _format_fraction([_render_latex_math(match.group(1)), _render_latex_math(match.group(2))]), text)
+
+
+def _simple_fraction_part(text):
+    return bool(re.fullmatch(r"[A-Za-z0-9Α-ωℝℤℚℂℕℙℍ_′⁰¹²³⁴⁵⁶⁷⁸⁹₀₁₂₃₄₅₆₇₈₉+\-]+", str(text or "")))
 
 
 def _replace_latex_symbols(text):
@@ -609,9 +980,9 @@ def _translate_script(text, table):
 
 
 _FORMULA_TOKEN_RE = re.compile(
-    r"[A-Za-z0-9Α-ω_{}()<>|.,+\-*/=^²³⁴⁵⁶⁷⁸⁹₀₁₂₃₄₅₆₇₈₉∮∫∇∂ΣΔδωΩψΨχΧφΦθΘλΛνμρπΠαβγδεε₀·×≈∼≤≥≠∞∝→←↔⇒⇐±∓√]+"
+    r"[A-Za-z0-9Α-ωℝℤℚℂℕℙℍ_{}()<>|.,+\-*/∕=^²³⁴⁵⁶⁷⁸⁹₀₁₂₃₄₅₆₇₈₉∮∫∇∂ΣΔδωΩψΨχΧφΦθΘλΛνμρπΠαβγδεε₀·×≈∼≤≥≠∞∝→←↔⇒⇐±∓√⋯…]+"
 )
-_FORMULA_MARKERS = set("=<>^_+-*/·×≈∼≤≥≠∞∝→←↔⇒⇐±∓√∮∫∇∂ΣΔδωΩψΨχΧφΦθΘλΛνμρπΠαβγδεε₀²³⁴⁵⁶⁷⁸⁹₀₁₂₃₄₅₆₇₈₉|")
+_FORMULA_MARKERS = set("=<>^_+-*/∕·×≈∼≤≥≠∞∝→←↔⇒⇐±∓√∮∫∇∂ΣΔδωΩψΨχΧφΦθΘλΛνμρπΠαβγδεε₀²³⁴⁵⁶⁷⁸⁹₀₁₂₃₄₅₆₇₈₉ℝℤℚℂℕℙℍ⋯…|")
 
 
 def _tag_formula_like_spans(widget, plain):
@@ -650,6 +1021,8 @@ def _is_separator_row(cells):
 
 
 def _render_table(parent, table_lines, base_size):
+    bg = inherited_bg(parent)
+    palette = markdown_palette(parent, bg)
     rows = []
     for line in table_lines:
         cells = _parse_table_line(line)
@@ -658,7 +1031,7 @@ def _render_table(parent, table_lines, base_size):
         rows.append(cells)
     if not rows:
         return
-    table = tk.Frame(parent, bg="#233049", highlightbackground="#3b4560", highlightthickness=1)
+    table = mark_theme_surface(tk.Frame(parent, bg=palette["code_bg"], highlightbackground=palette["border"], highlightthickness=1))
     table.pack(anchor="w", fill="x", padx=28, pady=(4, 12))
     max_cols = max(len(row) for row in rows)
     col_weights = []
@@ -666,49 +1039,47 @@ def _render_table(parent, table_lines, base_size):
         max_width = max((_display_width(row[col]) if col < len(row) else 0) for row in rows)
         col_weights.append(max(8, min(48, max_width)))
         table.grid_columnconfigure(col, weight=col_weights[-1], uniform="")
-    cells = []
     for row_index, row in enumerate(rows):
         for col_index in range(max_cols):
             text = row[col_index] if col_index < len(row) else ""
             is_header = row_index == 0
-            label = tk.Label(
+            cell_bg = palette["table_head"] if is_header else bg
+            cell = mark_theme_surface(tk.Frame(
                 table,
-                text=_inline_text(text),
-                fg="#fff2bd" if is_header else "#dce6ff",
-                bg="#26344f" if is_header else "#182033",
-                font=("Microsoft YaHei UI", max(8, base_size - 1), "bold" if is_header else "normal"),
-                wraplength=260,
-                justify="center",
-                anchor="center",
+                bg=cell_bg,
+                highlightbackground=palette["border"],
+                highlightthickness=1,
+            ))
+            cell.grid(row=row_index, column=col_index, sticky="nsew")
+            render_inline_markdown(
+                cell,
+                text,
+                fg=palette["title"] if is_header else palette["fg"],
+                bg=cell_bg,
+                base_size=max(8, base_size - 1),
+                bold=is_header,
+                wrap_chars=24,
                 padx=8,
                 pady=6,
-                highlightbackground="#30384e",
-                highlightthickness=1,
+                fill="both",
             )
-            label.grid(row=row_index, column=col_index, sticky="nsew")
-            cells.append((label, col_index))
-
-    def update_wraps(_event=None):
-        for label, col_index in cells:
-            width = max(72, table.grid_bbox(col_index, 0)[2] - 18)
-            label.configure(wraplength=width)
-
-    table.bind("<Configure>", update_wraps)
-    table.after_idle(update_wraps)
 
 
 def _render_code(parent, code, base_size):
+    bg = inherited_bg(parent)
+    palette = markdown_palette(parent, bg)
     block = tk.Label(
         parent,
         text=code,
-        fg="#9ff2b2",
-        bg="#101827",
+        fg=palette["code_fg"],
+        bg=palette["code_bg"],
         justify="left",
         anchor="w",
         font=("Consolas", max(11, base_size - 1)),
         padx=14,
         pady=10,
-        wraplength=900,
+        wraplength=1,
     )
+    mark_theme_surface(block)
     block.pack(anchor="w", fill="x", padx=28, pady=(4, 12))
-    block.bind("<Configure>", lambda event: block.configure(wraplength=max(260, event.width - 28)))
+    _bind_label_wrap(block, margin=28, minimum=260)

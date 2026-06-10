@@ -2,6 +2,11 @@ import os
 import sys
 from pathlib import Path
 
+try:
+    from .deploy_config import load_runtime_config
+except ImportError:  # pragma: no cover - compatibility for legacy top-level imports
+    from deploy_config import load_runtime_config
+
 
 PACKAGE_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = PACKAGE_DIR.parents[1]
@@ -20,12 +25,18 @@ def app_dir():
 
 
 APP_DIR = app_dir()
+DEFAULT_PROJECT_DIR = APP_DIR if getattr(sys, "frozen", False) else PROJECT_ROOT
+DEFAULT_RESOURCE_DIR = Path(getattr(sys, "_MEIPASS", APP_DIR)) if getattr(sys, "frozen", False) else PROJECT_ROOT
+WEB_RUNTIME_CONFIG = load_runtime_config(
+    default_resource_dir=DEFAULT_RESOURCE_DIR,
+    default_data_dir=DEFAULT_PROJECT_DIR,
+)
 if getattr(sys, "frozen", False):
-    PROJECT_DIR = APP_DIR
-    RESOURCE_DIR = Path(getattr(sys, "_MEIPASS", APP_DIR))
+    PROJECT_DIR = WEB_RUNTIME_CONFIG.data_dir
+    RESOURCE_DIR = WEB_RUNTIME_CONFIG.resource_dir
 else:
-    PROJECT_DIR = PROJECT_ROOT
-    RESOURCE_DIR = PROJECT_DIR
+    PROJECT_DIR = WEB_RUNTIME_CONFIG.data_dir
+    RESOURCE_DIR = WEB_RUNTIME_CONFIG.resource_dir
 RECORD_DIR = PROJECT_DIR / "record"
 ACHIEVEMENTS_FILE = RECORD_DIR / "achievements.json"
 RANK_PROGRESS_FILE = RECORD_DIR / "rank_progress.json"
@@ -39,7 +50,7 @@ PROFILE_DIR = PROJECT_DIR / "profile"
 PLAYER_SETTINGS_FILE = PROFILE_DIR / "player_settings.json"
 DAILY_TERMS_FILE = PROFILE_DIR / "daily_terms.json"
 
-APP_VERSION = "0.4.12"
+APP_VERSION = "0.4.36"
 TITLE_CN = "有（×）无奖竞猜"
 TITLE_EN = "Bonus-（×）Guess"
 
@@ -340,9 +351,10 @@ MASK_PROBABILITIES = {
         6: {1: 0.25, 2: 0.20, 3: 0.15},
     },
     "噩梦": {
-        4: {1: 0.55, 2: 0.15},
-        5: {1: 0.35, 2: 0.35, 3: 0.10},
-        6: {1: 0.25, 2: 0.30, 3: 0.25, 4: 0.10},
+        4: {1: 0.45},
+        5: {1: 0.30, 2: 0.20},
+        6: {1: 0.25, 2: 0.20, 3: 0.15},
+        8: {1: 0.25, 2: 0.20, 3: 0.15, 4: 0.10},
     },
 }
 

@@ -12,13 +12,18 @@ from backend.runtime.crossword_puzzle import (  # noqa: E402
     CrosswordPlacement,
     CrosswordPuzzle,
     _cells_for,
+    _detached_limit,
     _directions_for_shape,
+    _detached_placement_count,
     _next_cell,
     _side_neighbors,
     _start_for_cell_at_index,
     generate_crossword,
+    size_for_difficulty,
+    target_word_count_for_size,
     validate_crossword,
 )
+from backend.runtime.term_library import TermLibrary  # noqa: E402
 
 
 def _term(answer, initials="ABCD"):
@@ -49,7 +54,7 @@ def _single_word_puzzle(shape, direction, start, answer="甲乙丙丁"):
         intersections=0,
         source_label="几何测试",
     )
-    return CrosswordPuzzle(7, 7, [placement], grid, rows, 0, 1, shape)
+    return CrosswordPuzzle(7, 7, [placement], grid, rows, 0, 0, shape)
 
 
 class CrosswordGeometryTests(unittest.TestCase):
@@ -112,3 +117,64 @@ class CrosswordGeometryTests(unittest.TestCase):
                 for current, following in zip(cells, cells[1:]):
                     self.assertEqual(following, _next_cell(current[0], current[1], placement.direction, shape))
                     self.assertIn(following, _side_neighbors(current[0], current[1], shape))
+
+    def test_isolated_count_uses_disconnected_components_not_zero_crossings(self):
+        placements = [
+            CrosswordPlacement(1, _term("甲乙丙"), "甲乙丙", "ABC", None, 1, 0, "across", _cells_for("甲乙丙", 1, 0, "across"), 1, "几何测试"),
+            CrosswordPlacement(2, _term("丁乙戊"), "丁乙戊", "DEF", None, 0, 1, "down", _cells_for("丁乙戊", 0, 1, "down"), 1, "几何测试"),
+            CrosswordPlacement(3, _term("己庚辛"), "己庚辛", "GHI", None, 5, 4, "across", _cells_for("己庚辛", 5, 4, "across"), 1, "几何测试"),
+            CrosswordPlacement(4, _term("壬庚癸"), "壬庚癸", "JKL", None, 4, 5, "down", _cells_for("壬庚癸", 4, 5, "down"), 1, "几何测试"),
+        ]
+        grid = {}
+        for placement in placements:
+            for row, col, char in placement.cells:
+                grid[(row, col)] = char
+        rows = [[grid.get((row, col)) for col in range(8)] for row in range(8)]
+        puzzle = CrosswordPuzzle(8, 8, placements, grid, rows, 4, 2, "square")
+        self.assertEqual(_detached_placement_count(placements), 2)
+        self.assertTrue(validate_crossword(puzzle))
+
+        stale_report = CrosswordPuzzle(8, 8, placements, grid, rows, 4, 0, "square")
+        with self.assertRaisesRegex(ValueError, "isolated_count"):
+            validate_crossword(stale_report)
+
+    def test_isolated_count_counts_words_outside_largest_component(self):
+        placements = [
+            CrosswordPlacement(1, _term("甲乙丙"), "甲乙丙", "ABC", None, 1, 0, "across", _cells_for("甲乙丙", 1, 0, "across"), 1, "几何测试"),
+            CrosswordPlacement(2, _term("丁乙戊"), "丁乙戊", "DEF", None, 0, 1, "down", _cells_for("丁乙戊", 0, 1, "down"), 1, "几何测试"),
+            CrosswordPlacement(3, _term("己庚辛"), "己庚辛", "GHI", None, 5, 0, "across", _cells_for("己庚辛", 5, 0, "across"), 0, "几何测试"),
+            CrosswordPlacement(4, _term("壬癸子"), "壬癸子", "JKL", None, 6, 4, "across", _cells_for("壬癸子", 6, 4, "across"), 0, "几何测试"),
+        ]
+        grid = {}
+        for placement in placements:
+            for row, col, char in placement.cells:
+                grid[(row, col)] = char
+        rows = [[grid.get((row, col)) for col in range(8)] for row in range(8)]
+        puzzle = CrosswordPuzzle(8, 8, placements, grid, rows, 2, 2, "square")
+        self.assertEqual(_detached_placement_count(placements), 2)
+        self.assertTrue(validate_crossword(puzzle))
+
+    def test_generated_crosswords_keep_detached_words_under_twenty_percent(self):
+        words = [
+            "甲乙丙丁", "丙戊己庚", "丁辛壬癸", "乙子丑寅", "庚卯辰巳",
+            "壬午未申", "寅酉戌亥", "甲申辰午", "戊辛酉子", "丑卯未亥",
+            "己壬寅巳", "癸丙庚申", "子辰戊壬", "卯丁己辛", "未甲癸酉",
+            "辰庚子申", "辛丑午酉", "乙己壬卯", "丙癸未戌", "丁庚亥寅",
+        ]
+        terms = [_term(word) for word in words]
+        for shape in ("square", "triangle", "hex"):
+            for seed in range(2):
+                with self.subTest(shape=shape, seed=seed):
+                    puzzle = generate_crossword(terms, "普通", rng=random.Random(seed), max_words=10, size=(12, 12), cell_shape=shape)
+                    validate_crossword(puzzle)
+                    self.assertLessEqual(puzzle.isolated_count, _detached_limit(len(puzzle.placements)))
+
+    def test_real_crossword_generation_limits_detached_words(self):
+        library = TermLibrary(ROOT / "words")
+        terms, _files = library.load("物理模式", "普通")
+        size = size_for_difficulty("普通")
+        max_words = target_word_count_for_size(size, difficulty="普通")
+        puzzle = generate_crossword(terms, "普通", rng=random.Random(0), max_words=max_words, size=size, cell_shape="square")
+
+        self.assertTrue(validate_crossword(puzzle))
+        self.assertLessEqual(puzzle.isolated_count, _detached_limit(len(puzzle.placements)))

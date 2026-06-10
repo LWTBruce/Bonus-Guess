@@ -4,6 +4,12 @@ from ._shared import *
 
 
 class RoundPlayMixin:
+    def themed_legacy_color(self, color, option="bg"):
+        mapper = getattr(super(RoundPlayMixin, self), "themed_legacy_color", None)
+        if callable(mapper):
+            return mapper(color, option)
+        return color
+
     def daily_term_bucket_key(self):
         file_part = ",".join(sorted(str(path).replace("\\", "/") for path in self.library_files))
         return "|".join([
@@ -296,7 +302,8 @@ class RoundPlayMixin:
             back_command = lambda: self.abandon_game(self.show_difficulty_for_current_mode)
         self._topbar(title, back_command)
         self.render_tutorial_banner(self.container, answer=self.current.chinese if self.current else None)
-        root = tk.Frame(self.container, bg="#111725")
+        base_bg = self.theme_color("base")
+        root = tk.Frame(self.container, bg=base_bg)
         root.pack(fill="both", expand=True, padx=36, pady=24)
         self._start_backdrop("wind", root)
 
@@ -313,6 +320,7 @@ class RoundPlayMixin:
         panel.pack(side="left", fill="both", expand=False, padx=(0, gap_width))
         panel.configure(width=panel_width)
         panel.pack_propagate(False)
+        self.decorate_surface(panel, "wind", opacity_scale=0.34)
         self.tutorial_question_panel = panel
         notice_text = self.current_term_notice_text()
 
@@ -397,8 +405,8 @@ class RoundPlayMixin:
             self.hint_box_rows = 4 if window_height >= 760 else 3
             self.hint_box = tk.Frame(
                 panel,
-                bg="#101827",
-                highlightbackground="#30384e",
+                bg=self.themed_legacy_color("#101827", "bg"),
+                highlightbackground=self.themed_legacy_color("#30384e", "highlightbackground"),
                 highlightthickness=1,
             )
             self.hint_box.pack(fill="x", padx=54, pady=(14, 0))
@@ -436,12 +444,41 @@ class RoundPlayMixin:
         else:
             self.update_hint_cooldown_button()
 
-        side = tk.Frame(root, bg="#111725", width=side_width)
-        side.pack(side="left", fill="both", expand=True)
-        side.pack_propagate(False)
-        tk.Label(side, text="剩余" if self.is_timed_mode() else "计时", fg="#8fb6ff", bg="#111725", font=("Microsoft YaHei UI", 15, "bold")).pack(anchor="w")
-        self.timer_label = tk.Label(side, text="0.0 秒", fg="#fff2bd", bg="#111725", font=("Consolas", 28, "bold"))
-        self.timer_label.pack(anchor="w", pady=(4, 14))
+        side_x = panel_width + gap_width + 10
+        side_y = 8
+
+        def add_side_widget(widget, after=0, width=None):
+            nonlocal side_y
+            place_kwargs = {"x": side_x, "y": side_y, "anchor": "nw"}
+            if width is not None:
+                place_kwargs["width"] = width
+            widget.place(**place_kwargs)
+            widget.update_idletasks()
+            side_y += widget.winfo_reqheight() + after
+            return widget
+
+        def add_side_label(text, fg, font, after=0, wrap=False):
+            label = tk.Label(
+                root,
+                text=text,
+                fg=fg,
+                bg=base_bg,
+                justify="left",
+                anchor="nw",
+                wraplength=side_text_width if wrap else 0,
+                font=font,
+            )
+            return add_side_widget(label, after=after, width=side_text_width if wrap else None)
+
+        def add_side_button(button, after=0):
+            nonlocal side_y
+            button.place(x=side_x, y=side_y, anchor="nw")
+            button.update_idletasks()
+            side_y += button.winfo_reqheight() + after
+            return button
+
+        add_side_label("剩余" if self.is_timed_mode() else "计时", self.theme_color("accent"), ("Microsoft YaHei UI", 15, "bold"), after=4)
+        self.timer_label = add_side_label("0.0 秒", self.theme_color("title"), ("Consolas", 28, "bold"), after=14)
         if self.is_timed_mode() or self.is_custom_challenge_mode():
             if self.rank_mode:
                 label = f"{rank_kind_label(self.rank_kind)}题"
@@ -454,28 +491,12 @@ class RoundPlayMixin:
                 status_text = self.custom_status_text()
             else:
                 status_text = f"已答对 {self.timed_correct} 题\n计入 {format_score(self.timed_score)} 分"
-            self.timed_status_label = tk.Label(
-                side,
-                text=status_text,
-                fg="#c8d2ee",
-                bg="#111725",
-                justify="left",
-                font=("Microsoft YaHei UI", 11, "bold"),
-            )
-            self.timed_status_label.pack(anchor="w", pady=(0, 18))
-        tk.Label(side, text="积分", fg="#8fb6ff", bg="#111725", font=("Microsoft YaHei UI", 15, "bold")).pack(anchor="w")
-        self.score_label = tk.Label(side, text="1000 分", fg="#9ff2b2", bg="#111725", font=("Consolas", 24, "bold"))
-        self.score_label.pack(anchor="w", pady=(4, 20))
-        tk.Label(side, text="词库", fg="#8fb6ff", bg="#111725", font=("Microsoft YaHei UI", 15, "bold")).pack(anchor="w")
-        tk.Label(
-            side,
-            text=f"{len(self.terms)} 个词条\n{len(self.library_files)} 个文件",
-            justify="left",
-            fg="#c8d2ee",
-            bg="#111725",
-            font=("Microsoft YaHei UI", 12),
-        ).pack(anchor="w", pady=(4, 24))
-        tk.Label(side, text="规则", fg="#8fb6ff", bg="#111725", font=("Microsoft YaHei UI", 15, "bold")).pack(anchor="w")
+            self.timed_status_label = add_side_label(status_text, self.theme_color("text"), ("Microsoft YaHei UI", 11, "bold"), after=18, wrap=True)
+        add_side_label("积分", self.theme_color("accent"), ("Microsoft YaHei UI", 15, "bold"), after=4)
+        self.score_label = add_side_label("1000 分", self.theme_color("success"), ("Consolas", 24, "bold"), after=20)
+        add_side_label("词库", self.theme_color("accent"), ("Microsoft YaHei UI", 15, "bold"), after=4)
+        add_side_label(f"{len(self.terms)} 个词条\n{len(self.library_files)} 个文件", self.theme_color("text"), ("Microsoft YaHei UI", 12), after=24, wrap=True)
+        add_side_label("规则", self.theme_color("accent"), ("Microsoft YaHei UI", 15, "bold"), after=4)
         if self.rank_mode:
             if self.rank_kind == "clue":
                 rule_text = "线索段位必须在限时内全题答对。\n普通错误提交不会立刻失败，可以继续作答。\n提示会追加线索；主动揭晓、时间到或中途退出都会导致挑战失败。\n线索段位题不计总积分和 Rating。"
@@ -499,27 +520,27 @@ class RoundPlayMixin:
             rule_text = "本题不显示首字母，但会显示答案字数。\n初始显示前两句线索。\n继续提示会从第三条线索开始扣分。\n共五条线索，普通/困难/噩梦可能出现破碎线索。\n揭晓答案会记为未答出。"
         else:
             rule_text = "同首字母的词库内答案都算对。\n普通/困难/噩梦可能用 * 掩码首字母；* 处不限，只检查未掩码位置。\n当前模式总词库里、但不在本轮范围内的匹配词，才会提示超纲。\n提示揭开全部汉字或主动揭晓答案时，本题失败。"
-        self.render_side_text_block(side, rule_text, fg="#9ca8c7", bg="#111725", base_size=11, pady=(4, 18))
-        tk.Label(side, text="范围", fg="#8fb6ff", bg="#111725", font=("Microsoft YaHei UI", 15, "bold")).pack(anchor="w")
-        self.render_side_scope_text(side, self.scope_text, side_text_width)
-        self.library_hint_button = HoverButton(side, "提示词库", self.show_library_hint, width=170, height=54, accent="#ffbd7e")
-        self.library_hint_button.pack(anchor="w", pady=(0, 8))
+        add_side_label(rule_text, self.theme_color("muted"), ("Microsoft YaHei UI", 11), after=18, wrap=True)
+        add_side_label("范围", self.theme_color("accent"), ("Microsoft YaHei UI", 15, "bold"), after=4)
+        side_y = self.render_side_scope_text_placed(root, self.scope_text, side_x, side_y, side_text_width, base_bg) + 8
+        self.library_hint_button = add_side_button(HoverButton(root, "提示词库", self.show_library_hint, width=170, height=54, accent="#ffbd7e"), after=8)
         self.tutorial_library_hint_button = self.library_hint_button
         self.library_hint_label = tk.Label(
-            side,
+            root,
             text="",
             justify="left",
-            fg="#f6d36b",
-            bg="#111725",
+            fg=self.theme_color("warning"),
+            bg=base_bg,
             wraplength=side_text_width,
             font=("Microsoft YaHei UI", 11, "bold"),
         )
-        self.library_hint_label.pack(anchor="w")
+        add_side_widget(self.library_hint_label, width=side_text_width)
         self.library_hint_label.bind(
             "<Configure>",
             lambda event, widget=self.library_hint_label: widget.configure(wraplength=max(220, event.width - 8)),
             add="+",
         )
+        self.reveal_background_surface(panel)
         self._tick()
         self.render_tutorial_game_overlay()
 
@@ -611,18 +632,18 @@ class RoundPlayMixin:
             return self.render_side_text_block(parent, text, fg="#c8d2ee", bg="#111725", base_size=11, pady=(4, 18))
 
         visible_lines = 7
-        box = tk.Frame(parent, bg="#101827", highlightbackground="#30384e", highlightthickness=1)
+        box = tk.Frame(parent, bg=self.themed_legacy_color("#101827", "bg"), highlightbackground=self.themed_legacy_color("#30384e", "highlightbackground"), highlightthickness=1)
         box.pack(fill="x", pady=(4, 18))
         text_widget = tk.Text(
             box,
             height=visible_lines,
             width=1,
             wrap="word",
-            fg="#c8d2ee",
-            bg="#101827",
+            fg=self.themed_legacy_color("#c8d2ee", "fg"),
+            bg=self.themed_legacy_color("#101827", "bg"),
             bd=0,
             relief="flat",
-            insertbackground="#fff8dc",
+            insertbackground=self.themed_legacy_color("#fff8dc", "insertbackground"),
             font=("Microsoft YaHei UI", 10),
         )
         scrollbar = tk.Scrollbar(box, orient="vertical", command=text_widget.yview)
@@ -633,6 +654,52 @@ class RoundPlayMixin:
         scrollbar.pack(side="right", fill="y", padx=(4, 6), pady=8)
         self.bind_scroll_wheel(box, text_widget, units=2)
         return text_widget
+
+    def render_side_scope_text_placed(self, parent, text, x, y, side_text_width, base_bg):
+        text = str(text or "")
+        wrap_chars = max(16, min(46, int(side_text_width / 13)))
+        estimated_lines = 0
+        for line in text.splitlines() or [""]:
+            estimated_lines += max(1, math.ceil(len(line) / wrap_chars))
+        if estimated_lines <= 4:
+            label = tk.Label(
+                parent,
+                text=text,
+                fg=self.theme_color("text"),
+                bg=base_bg,
+                justify="left",
+                anchor="nw",
+                wraplength=side_text_width,
+                font=("Microsoft YaHei UI", 11),
+            )
+            label.place(x=x, y=y, width=side_text_width, anchor="nw")
+            label.update_idletasks()
+            return y + label.winfo_reqheight() + 18
+
+        visible_lines = 7
+        box_height = 150
+        box = tk.Frame(parent, bg=self.theme_color("entry_bg"), highlightbackground=self.theme_color("grid_a"), highlightthickness=1)
+        box.place(x=x, y=y, width=side_text_width, height=box_height, anchor="nw")
+        text_widget = tk.Text(
+            box,
+            height=visible_lines,
+            width=1,
+            wrap="word",
+            fg=self.theme_color("text"),
+            bg=self.theme_color("entry_bg"),
+            bd=0,
+            relief="flat",
+            insertbackground=self.theme_color("title"),
+            font=("Microsoft YaHei UI", 10),
+        )
+        scrollbar = tk.Scrollbar(box, orient="vertical", command=text_widget.yview)
+        text_widget.configure(yscrollcommand=scrollbar.set)
+        text_widget.insert("1.0", text)
+        text_widget.configure(state="disabled")
+        text_widget.pack(side="left", fill="both", expand=True, padx=(8, 0), pady=8)
+        scrollbar.pack(side="right", fill="y", padx=(4, 6), pady=8)
+        self.bind_scroll_wheel(box, text_widget, units=2)
+        return y + box_height + 18
 
     def show_difficulty_for_current_mode(self):
         if self.rank_mode:
@@ -778,6 +845,7 @@ class RoundPlayMixin:
         body.pack(fill="both", expand=True, padx=0, pady=(0, 14))
         markdown_inner = render_markdown(body, content, mode="detail")
         self.render_explanation_sources(markdown_inner, sources)
+        self.apply_static_theme(popup)
         popup.bind("<Escape>", lambda _event: popup.destroy())
 
     def render_explanation_sources(self, parent, sources):
@@ -792,11 +860,12 @@ class RoundPlayMixin:
                 normalized.append({"label": label, "title": title, "url": url})
         if not normalized:
             return
+        bg = self.themed_legacy_color(parent.cget("bg"), "bg")
         tk.Label(
             parent,
             text="参考资料",
-            fg="#fff2bd",
-            bg="#182033",
+            fg=self.theme_color("title"),
+            bg=bg,
             font=("Microsoft YaHei UI", 15, "bold"),
         ).pack(anchor="w", padx=28, pady=(18, 7))
         for source in normalized:
@@ -804,8 +873,8 @@ class RoundPlayMixin:
             link = tk.Label(
                 parent,
                 text=text,
-                fg="#8fb6ff",
-                bg="#182033",
+                fg=self.theme_color("link_fg", self.theme_color("accent")),
+                bg=bg,
                 wraplength=1080,
                 justify="left",
                 anchor="w",
@@ -819,10 +888,10 @@ class RoundPlayMixin:
                 return "break"
 
             def on_enter(_event, widget=link):
-                widget.configure(fg="#fff2bd")
+                widget.configure(fg=self.theme_color("title"))
 
             def on_leave(_event, widget=link):
-                widget.configure(fg="#8fb6ff")
+                widget.configure(fg=self.theme_color("link_fg", self.theme_color("accent")))
 
             link.bind("<Button-1>", open_url)
             link.bind("<Enter>", on_enter)
@@ -846,21 +915,21 @@ class RoundPlayMixin:
             parent,
             height=height,
             wrap=wrap,
-            fg="#dce6ff",
-            bg="#111827",
-            insertbackground="#dce6ff",
+            fg=self.themed_legacy_color("#dce6ff", "fg"),
+            bg=self.themed_legacy_color("#111827", "bg"),
+            insertbackground=self.themed_legacy_color("#dce6ff", "insertbackground"),
             relief="flat",
             bd=0,
             highlightthickness=1,
-            highlightbackground="#30384e",
+            highlightbackground=self.themed_legacy_color("#30384e", "highlightbackground"),
             font=("Microsoft YaHei UI", base_size),
             padx=8,
             pady=7,
             cursor="arrow",
         )
-        answer_box.tag_configure("link", foreground="#9fb7ff", underline=False)
-        answer_box.tag_configure("link_hover", foreground="#fff2bd", underline=True, background="#26324a")
-        answer_box.tag_configure("muted", foreground="#7683a3")
+        answer_box.tag_configure("link", foreground=self.themed_legacy_color("#9fb7ff", "fg"), underline=False)
+        answer_box.tag_configure("link_hover", foreground=self.themed_legacy_color("#fff2bd", "fg"), underline=True, background=self.themed_legacy_color("#26344f", "bg"))
+        answer_box.tag_configure("muted", foreground=self.themed_legacy_color("#7683a3", "fg"))
 
         link_index = 0
         for entry_index, entry in enumerate(normalized_entries):
@@ -1027,9 +1096,9 @@ class RoundPlayMixin:
             self.answer_entry_frame,
             textvariable=self.answer_var,
             justify="left",
-            fg="#fff8dc",
-            bg="#101827",
-            insertbackground="#fff8dc",
+            fg=self.themed_legacy_color("#fff8dc", "fg"),
+            bg=self.themed_legacy_color("#101827", "bg"),
+            insertbackground=self.themed_legacy_color("#fff8dc", "insertbackground"),
             relief="flat",
             validate="key",
             validatecommand=validate_answer,
@@ -1137,7 +1206,7 @@ class RoundPlayMixin:
             if not self.custom_mode:
                 self.complete_achievement("first_initial_block")
             if self.feedback:
-                self.feedback.config(text="题面首字母已清空。再试一次会触发隐藏彩蛋。", fg="#f6d36b")
+                self.feedback.config(text="题面首字母已清空。再试一次会触发隐藏彩蛋。", fg=self.themed_legacy_color("#f6d36b", "fg"))
             title = "段位输入警告" if self.rank_mode else "输入已拦截"
             message = "题面首字母不应直接进入输入框。\n已为你清空；再尝试一次会进入隐藏彩蛋。"
             self.after_idle(lambda warning_title=title, warning_message=message: messagebox.showwarning(warning_title, warning_message))
@@ -1243,15 +1312,15 @@ class RoundPlayMixin:
     def check_answer(self):
         answer = self.answer_var.get().strip()
         if not answer:
-            self.feedback.config(text="先写一个答案吧。", fg="#f6d36b")
+            self.feedback.config(text="先写一个答案吧。", fg=self.themed_legacy_color("#f6d36b", "fg"))
             return
         if self.tutorial_active:
             if self.free_hint_count + self.paid_hint_count <= 0:
-                self.feedback.config(text="教程会先带你试用一次字词提示。点击“提示”后再作答。", fg="#f6d36b")
+                self.feedback.config(text="教程会先带你试用一次字词提示。点击“提示”后再作答。", fg=self.themed_legacy_color("#f6d36b", "fg"))
                 self.advance_tutorial_game_step("hint")
                 return
             if not self.library_hint_used:
-                self.feedback.config(text="还要试用一次“提示词库”。教程中免费，正式局通常会扣分。", fg="#f6d36b")
+                self.feedback.config(text="还要试用一次“提示词库”。教程中免费，正式局通常会扣分。", fg=self.themed_legacy_color("#f6d36b", "fg"))
                 self.advance_tutorial_game_step("library")
                 return
 
@@ -1270,23 +1339,23 @@ class RoundPlayMixin:
             attempt["result"] = "wrong"
             self.attempts.append(attempt)
             if self.tutorial_active:
-                self.feedback.config(text=f"教程提示：本题答案是“{self.current.chinese}”，输入后点击确认即可完成。", fg="#f6d36b")
+                self.feedback.config(text=f"教程提示：本题答案是“{self.current.chinese}”，输入后点击确认即可完成。", fg=self.themed_legacy_color("#f6d36b", "fg"))
             else:
-                self.feedback.config(text="还不对，顺着线索再想想。", fg="#ff9b89")
+                self.feedback.config(text="还不对，顺着线索再想想。", fg=self.themed_legacy_color("#ff9b89", "fg"))
         elif self.initials_match_question(answer_initials):
             attempt["result"] = "out_of_scope"
             self.attempts.append(attempt)
             if self.tutorial_active:
-                self.feedback.config(text=f"这个答案首字母匹配，但教程题要填写“{self.current.chinese}”。", fg="#f6d36b")
+                self.feedback.config(text=f"这个答案首字母匹配，但教程题要填写“{self.current.chinese}”。", fg=self.themed_legacy_color("#f6d36b", "fg"))
             else:
-                self.feedback.config(text="超纲啦，再想想~", fg="#f6d36b")
+                self.feedback.config(text="超纲啦，再想想~", fg=self.themed_legacy_color("#f6d36b", "fg"))
         else:
             attempt["result"] = "wrong"
             self.attempts.append(attempt)
             if self.tutorial_active:
-                self.feedback.config(text=f"教程提示：本题答案是“{self.current.chinese}”，再试一次。", fg="#f6d36b")
+                self.feedback.config(text=f"教程提示：本题答案是“{self.current.chinese}”，再试一次。", fg=self.themed_legacy_color("#f6d36b", "fg"))
             else:
-                self.feedback.config(text="还不对，换个词试试。", fg="#ff9b89")
+                self.feedback.config(text="还不对，换个词试试。", fg=self.themed_legacy_color("#ff9b89", "fg"))
 
     def current_score(self, elapsed=None):
         if elapsed is None:
@@ -1412,7 +1481,7 @@ class RoundPlayMixin:
     def update_score_label(self):
         if self.score_label:
             score = self.current_score()
-            color = "#ff9b89" if score < 0 else "#9ff2b2"
+            color = self.theme_color("danger") if score < 0 else self.theme_color("success")
             self.score_label.config(text=f"{score} 分", fg=color)
 
     def show_library_hint(self):
@@ -1451,7 +1520,7 @@ class RoundPlayMixin:
     def show_clue_hint(self):
         if self.clue_visible_count >= len(self.clue_lines):
             if self.feedback:
-                self.feedback.config(text="五条线索已经全部显示。", fg="#9ca8c7")
+                self.feedback.config(text="五条线索已经全部显示。", fg=self.themed_legacy_color("#9ca8c7", "fg"))
             if self.hint_button:
                 self.hint_button.disable("无")
             return False
@@ -1465,7 +1534,8 @@ class RoundPlayMixin:
                 break
             hint_number = self.clue_visible_count
             self.clue_visible_count += 1
-            cost = self.clue_hint_cost(hint_number)
+            normal_cost = self.clue_hint_cost(hint_number)
+            cost = 0 if getattr(self, "tutorial_active", False) else normal_cost
             if cost > 0:
                 self.add_score_penalty(cost)
                 self.paid_hint_count += 1
@@ -1480,6 +1550,7 @@ class RoundPlayMixin:
                 "line_index": self.clue_visible_count,
                 "line_type": line_type,
                 "cost": cost,
+                "normal_cost": normal_cost,
             })
         self._render_clues()
         if self.hint_button and self.clue_visible_count >= len(self.clue_lines):
@@ -1496,13 +1567,15 @@ class RoundPlayMixin:
             return
         if not self.can_take_hint():
             if self.feedback:
-                self.feedback.config(text="本段位的提示次数已经用完。", fg="#f6d36b")
+                self.feedback.config(text="本段位的提示次数已经用完。", fg=self.themed_legacy_color("#f6d36b", "fg"))
             self.update_hint_cooldown_button()
             return
         if self.is_clue_mode():
             if self.show_clue_hint():
                 self.note_hint_used()
                 self.start_hint_cooldown()
+                if getattr(self, "tutorial_active", False) and self.tutorial_step in {"question", "hint"}:
+                    self.advance_tutorial_game_step("library")
             return
         answer = self.current.chinese
         candidates = [idx for idx in range(len(answer)) if idx not in self.revealed_positions]
@@ -1541,15 +1614,15 @@ class RoundPlayMixin:
         if not widget or not widget.winfo_exists():
             for child in self.hint_box.winfo_children():
                 child.destroy()
-            body = tk.Frame(self.hint_box, bg="#101827")
+            body = tk.Frame(self.hint_box, bg=self.themed_legacy_color("#101827", "bg"))
             body.pack(fill="both", expand=True, padx=12, pady=8)
             widget = tk.Text(
                 body,
                 height=getattr(self, "hint_box_rows", 4),
                 width=1,
                 wrap="word",
-                fg="#dce6ff",
-                bg="#101827",
+                fg=self.themed_legacy_color("#dce6ff", "fg"),
+                bg=self.themed_legacy_color("#101827", "bg"),
                 relief="flat",
                 bd=0,
                 highlightthickness=0,
@@ -1563,17 +1636,17 @@ class RoundPlayMixin:
                 orient="vertical",
                 command=widget.yview,
                 width=12,
-                bg="#1e2940",
-                activebackground="#3b4560",
-                troughcolor="#101827",
+                bg=self.themed_legacy_color("#1f2a44", "bg"),
+                activebackground=self.themed_legacy_color("#3b4560", "highlightbackground"),
+                troughcolor=self.themed_legacy_color("#101827", "troughcolor"),
                 bd=0,
                 highlightthickness=0,
             )
             widget.configure(yscrollcommand=scrollbar.set)
             widget.pack(side="left", fill="both", expand=True)
             scrollbar.pack(side="right", fill="y", padx=(8, 0))
-            widget.tag_configure("placeholder", foreground="#64708f", font=("Microsoft YaHei UI", 11))
-            widget.tag_configure("hint", foreground="#dce6ff", font=("Microsoft YaHei UI", 12, "bold"))
+            widget.tag_configure("placeholder", foreground=self.themed_legacy_color("#64708f", "fg"), font=("Microsoft YaHei UI", 11))
+            widget.tag_configure("hint", foreground=self.themed_legacy_color("#dce6ff", "fg"), font=("Microsoft YaHei UI", 12, "bold"))
             self.hint_text_widget = widget
             self.hint_scrollbar = scrollbar
         widget.config(state="normal")
@@ -1591,12 +1664,12 @@ class RoundPlayMixin:
 
     def _render_clue_markdown_line(self, parent, index, line, line_type, *, base_size, wrap_chars, pady):
         prefix = "破碎" if line_type == "fragment" else "线索"
-        fg = "#f6d36b" if line_type == "fragment" else "#dce6ff"
+        fg = self.themed_legacy_color("#f6d36b", "fg") if line_type == "fragment" else self.themed_legacy_color("#dce6ff", "fg")
         return render_inline_markdown(
             parent,
             content=f"{index}. **{prefix}**：{line}",
             fg=fg,
-            bg="#182033",
+            bg=self.themed_legacy_color("#182033", "bg"),
             base_size=base_size,
             bold=line_type == "fragment",
             wrap_chars=wrap_chars,
@@ -1626,8 +1699,8 @@ class RoundPlayMixin:
             tk.Label(
                 self.clue_box,
                 text=f"还有 {remaining} 条线索可提示；{cost_text}",
-                fg="#9ca8c7",
-                bg="#182033",
+                fg=self.themed_legacy_color("#9ca8c7", "fg"),
+                bg=self.themed_legacy_color("#182033", "bg"),
                 justify="left",
                 anchor="w",
                 wraplength=620,
@@ -1679,7 +1752,7 @@ class RoundPlayMixin:
                 self.timed_score += weighted_score
             self.continue_or_finish_timed()
             return
-        self.feedback.config(text=f"答对啦！用时 {elapsed:.1f} 秒", fg="#9ff2b2")
+        self.feedback.config(text=f"答对啦！用时 {elapsed:.1f} 秒", fg=self.themed_legacy_color("#9ff2b2", "fg"))
         self.show_result(elapsed, record_path, success=success)
 
     def cheat_game(self, blocked_initials):
@@ -1927,6 +2000,7 @@ class RoundPlayMixin:
             accent="#ffcf8f",
         ).grid(row=0, column=1, padx=12, pady=8)
         HoverButton(panel, "取消", popup.destroy, width=112, height=46, accent="#8fb6ff").pack(anchor="w", padx=22, pady=(16, 0))
+        self.apply_static_theme(popup)
 
     def show_term_modify_feedback_dialog(self, record_path=None, previous_popup=None):
         if previous_popup and previous_popup.winfo_exists():
@@ -1942,8 +2016,21 @@ class RoundPlayMixin:
         panel.pack(fill="both", expand=True, padx=18, pady=18)
         tk.Label(panel, text="这个词应该改为什么？", fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 20, "bold")).pack(anchor="w", padx=22, pady=(18, 8))
         tk.Label(panel, text=f"当前词：{self.current.chinese}", fg="#c8d2ee", bg="#182033", font=("Microsoft YaHei UI", 12, "bold")).pack(anchor="w", padx=22, pady=(0, 10))
-        entry = tk.Text(panel, height=6, wrap="word", fg="#fff8dc", bg="#101827", insertbackground="#fff8dc", relief="flat", font=("Microsoft YaHei UI", 12, "bold"))
-        entry.configure(highlightthickness=1, highlightbackground="#30384e", highlightcolor="#8fb6ff")
+        entry = tk.Text(
+            panel,
+            height=6,
+            wrap="word",
+            fg=self.themed_legacy_color("#fff8dc", "fg"),
+            bg=self.themed_legacy_color("#101827", "bg"),
+            insertbackground=self.themed_legacy_color("#fff8dc", "insertbackground"),
+            relief="flat",
+            font=("Microsoft YaHei UI", 12, "bold"),
+        )
+        entry.configure(
+            highlightthickness=1,
+            highlightbackground=self.themed_legacy_color("#30384e", "highlightbackground"),
+            highlightcolor=self.theme_color("accent"),
+        )
         entry.pack(fill="both", expand=True, padx=22, pady=(0, 14))
 
         def submit():
@@ -1954,17 +2041,19 @@ class RoundPlayMixin:
         row.pack(anchor="w", padx=22, pady=(0, 18))
         HoverButton(row, "提交反馈", submit, width=150, height=52, accent="#9ff2b2").grid(row=0, column=0, padx=(0, 10))
         HoverButton(row, "取消", popup.destroy, width=112, height=52, accent="#ff9b89").grid(row=0, column=1)
+        self.apply_static_theme(panel)
         self.after(80, entry.focus_set)
 
     def show_result(self, elapsed, record_path, success=True, failed_reason="", cheated=False):
         self.play_music("result")
         self.play_sfx("fail" if (cheated or not success) else "success")
         self.clear(transition=False)
-        frame = tk.Frame(self.container, bg="#111725")
+        frame = tk.Frame(self.container, bg=self.theme_color("base"))
         frame.pack(fill="both", expand=True)
         self._start_backdrop("constellation", frame)
         card = tk.Frame(frame, bg="#182033", highlightbackground="#4b5877", highlightthickness=1)
         card.place(relx=0.5, rely=0.5, anchor="center", relwidth=0.74, relheight=0.76)
+        self.decorate_surface(card, "constellation", opacity_scale=0.26)
         if cheated:
             final_score = -abs(int(self.cheat_info.get("normal_score", self.current_score(elapsed))))
         else:
@@ -2037,6 +2126,7 @@ class RoundPlayMixin:
             HoverButton(buttons, "再来一局", lambda: self.start_game(self.difficulty), width=180, height=62, accent="#9ff2b2").grid(row=0, column=0, padx=12)
             HoverButton(buttons, "返回模式", self.show_mode_select, width=180, height=62, accent="#9fb7ff").grid(row=0, column=1, padx=12)
         HoverButton(buttons, "反馈", lambda record_path=record_path: self.show_term_feedback_dialog(record_path), width=150, height=62, accent="#ffcf8f").grid(row=0, column=2, padx=12)
+        self.reveal_background_surface(card)
 
     def show_custom_challenge_result(self, passed, reason="", elapsed=None, record_path=None, cheated=False):
         self.play_music("result")
@@ -2045,11 +2135,12 @@ class RoundPlayMixin:
         self.game_active = False
         self.record_saved = True
         self.start_time = None
-        frame = tk.Frame(self.container, bg="#111725")
+        frame = tk.Frame(self.container, bg=self.theme_color("base"))
         frame.pack(fill="both", expand=True)
         self._start_backdrop("constellation", frame)
         card = tk.Frame(frame, bg="#182033", highlightbackground="#4b5877", highlightthickness=1)
         card.place(relx=0.5, rely=0.5, anchor="center", relwidth=0.72, relheight=0.66)
+        self.decorate_surface(card, "constellation", opacity_scale=0.26)
         if cheated:
             title = "隐藏彩蛋触发"
             title_color = "#ff6b8a"
@@ -2083,6 +2174,7 @@ class RoundPlayMixin:
         HoverButton(buttons, "再挑战", self.restart_custom_session, width=170, height=58, accent="#9ff2b2").grid(row=0, column=0, padx=10)
         HoverButton(buttons, "返回配置", self.show_custom_config, width=170, height=58, accent="#9fb7ff").grid(row=0, column=1, padx=10)
         HoverButton(buttons, "返回主页", self.show_home, width=170, height=58, accent="#ffbd7e").grid(row=0, column=2, padx=10)
+        self.reveal_background_surface(card)
 
     def show_timed_result(self):
         self.play_music("result")
@@ -2091,11 +2183,12 @@ class RoundPlayMixin:
         self.game_active = False
         self.record_saved = True
         self.start_time = None
-        frame = tk.Frame(self.container, bg="#111725")
+        frame = tk.Frame(self.container, bg=self.theme_color("base"))
         frame.pack(fill="both", expand=True)
         self._start_backdrop("constellation", frame)
         card = tk.Frame(frame, bg="#182033", highlightbackground="#4b5877", highlightthickness=1)
         card.place(relx=0.5, rely=0.5, anchor="center", relwidth=0.68, relheight=0.62)
+        self.decorate_surface(card, "constellation", opacity_scale=0.26)
         title = "自定义限时结束" if self.custom_mode else "限时结束"
         tk.Label(card, text=title, fg="#f6d36b", bg="#182033", font=("Microsoft YaHei UI", 38, "bold")).pack(pady=(52, 12))
         tk.Label(card, text=f"答对 {self.timed_correct} 题", fg="#9ff2b2", bg="#182033", font=("Microsoft YaHei UI", 26, "bold")).pack(pady=7)
@@ -2118,6 +2211,7 @@ class RoundPlayMixin:
         else:
             HoverButton(buttons, "再来一轮", lambda: self.start_game(self.difficulty), width=180, height=62, accent="#9ff2b2").grid(row=0, column=0, padx=12)
             HoverButton(buttons, "返回模式", self.show_mode_select, width=180, height=62, accent="#9fb7ff").grid(row=0, column=1, padx=12)
+        self.reveal_background_surface(card)
 
     def restart_custom_session(self):
         if not self.custom_mode or not self.terms:
@@ -2231,20 +2325,20 @@ class RoundPlayMixin:
             shell,
             height=max(4, min(9, len(entries))),
             wrap="char",
-            fg="#dce6ff",
-            bg="#111827",
-            insertbackground="#dce6ff",
+            fg=self.themed_legacy_color("#dce6ff", "fg"),
+            bg=self.themed_legacy_color("#111827", "bg"),
+            insertbackground=self.themed_legacy_color("#dce6ff", "insertbackground"),
             relief="flat",
             bd=0,
             highlightthickness=1,
-            highlightbackground="#30384e",
+            highlightbackground=self.themed_legacy_color("#30384e", "highlightbackground"),
             font=("Microsoft YaHei UI", 10),
             padx=8,
             pady=6,
         )
-        answer_box.tag_configure("link", foreground="#9fb7ff", underline=False)
-        answer_box.tag_configure("link_hover", foreground="#fff2bd", underline=True, background="#26324a")
-        answer_box.tag_configure("muted", foreground="#7683a3")
+        answer_box.tag_configure("link", foreground=self.themed_legacy_color("#9fb7ff", "fg"), underline=False)
+        answer_box.tag_configure("link_hover", foreground=self.themed_legacy_color("#fff2bd", "fg"), underline=True, background=self.themed_legacy_color("#26344f", "bg"))
+        answer_box.tag_configure("muted", foreground=self.themed_legacy_color("#7683a3", "fg"))
         scrollbar = tk.Scrollbar(shell, orient="vertical", command=answer_box.yview)
         answer_box.configure(yscrollcommand=scrollbar.set)
         answer_box.pack(side="left", fill="both", expand=True)
@@ -2276,11 +2370,12 @@ class RoundPlayMixin:
         self.record_saved = True
         self.start_time = None
         rank = rank_by_id(self.rank_id)
-        frame = tk.Frame(self.container, bg="#111725")
+        frame = tk.Frame(self.container, bg=self.theme_color("base"))
         frame.pack(fill="both", expand=True)
         self._start_backdrop("constellation", frame)
         card = tk.Frame(frame, bg="#182033", highlightbackground="#4b5877", highlightthickness=1)
         card.place(relx=0.5, rely=0.5, anchor="center", relwidth=0.76, relheight=0.78)
+        self.decorate_surface(card, "constellation", opacity_scale=0.26)
         if cheated:
             title = "隐藏彩蛋触发"
             title_color = "#ff6b8a"
@@ -2312,9 +2407,9 @@ class RoundPlayMixin:
             badge_id = rank_badge_id(self.rank_subject, self.rank_id, self.rank_kind)
             badge_width = scaled_int(230)
             badge_height = scaled_int(46)
-            badge_canvas = tk.Canvas(card, width=badge_width, height=badge_height, bd=0, highlightthickness=0, bg="#182033")
+            badge_canvas = tk.Canvas(card, width=badge_width, height=badge_height, bd=0, highlightthickness=0, bg=self.theme_color("base"))
             badge_canvas.pack(pady=(14, 8))
-            draw_rank_badge(badge_canvas, badge_id, badge_width, badge_height, selected=True)
+            draw_rank_badge(badge_canvas, badge_id, badge_width, badge_height, selected=True, transparent=True, background=self.theme_color("base"))
             tk.Label(card, text=f"已解锁：{rank_badge_name(badge_id)}", fg="#9ff2b2", bg="#182033", font=("Microsoft YaHei UI", 12, "bold")).pack(pady=(0, 10))
         else:
             if self.rank_kind == "crossword":
@@ -2334,6 +2429,7 @@ class RoundPlayMixin:
         HoverButton(buttons, "再挑战", lambda: self.start_rank_challenge(self.rank_id), width=170, height=58, accent="#9ff2b2").grid(row=0, column=0, padx=10)
         HoverButton(buttons, "段位列表", self.show_rank_select, width=170, height=58, accent="#9fb7ff").grid(row=0, column=1, padx=10)
         HoverButton(buttons, "返回主页", self.show_home, width=170, height=58, accent="#ffbd7e").grid(row=0, column=2, padx=10)
+        self.reveal_background_surface(card)
 
     def save_record(self, success, elapsed, finished_by="answered", failed_reason=""):
         now = datetime.now()

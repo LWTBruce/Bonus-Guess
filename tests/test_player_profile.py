@@ -33,6 +33,23 @@ class PlayerProfileTests(unittest.TestCase):
 
         self.assertTrue(settings["tutorial_completed"])
 
+    def test_default_player_settings_are_new_user_defaults(self):
+        defaults = player_profile.DEFAULT_PLAYER_SETTINGS
+
+        self.assertEqual(defaults["backdrop_theme"], "blue")
+        self.assertEqual(defaults["backdrop_speed"], 1.0)
+        self.assertEqual(defaults["backdrop_density"], 1.0)
+        self.assertEqual(defaults["backdrop_opacity"], 1.0)
+        self.assertEqual(defaults["font_scale"], 1.0)
+        self.assertEqual(defaults["music_volume"], 0.55)
+        self.assertEqual(defaults["sfx_volume"], 0.75)
+        self.assertEqual(defaults["window_width"], 1274)
+        self.assertEqual(defaults["window_height"], 806)
+        self.assertTrue(defaults["transitions_enabled"])
+
+        normalized = player_profile.normalize_player_settings({"backdrop_theme": "missing"})
+        self.assertEqual(normalized["backdrop_theme"], "blue")
+
     def test_new_profile_can_require_tutorial(self):
         saved = player_profile.save_player_settings({"nickname": "New Player", "tutorial_completed": False})
         loaded = player_profile.load_player_settings()

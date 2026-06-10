@@ -19,6 +19,14 @@ class NavigationHomeMixin:
         if self.transition_job:
             self.after_cancel(self.transition_job)
             self.transition_job = None
+        history_render_job = getattr(self, "_history_render_job", None)
+        if history_render_job:
+            try:
+                self.after_cancel(history_render_job)
+            except tk.TclError:
+                pass
+            self._history_render_job = None
+        self._history_render_token = getattr(self, "_history_render_token", 0) + 1
         self.answer_entry = None
         self.crossword_canvas = None
         self.crossword_word_listbox = None
@@ -55,33 +63,33 @@ class NavigationHomeMixin:
         self.update_idletasks()
         width = max(self.container.winfo_width(), self.winfo_width(), 900)
         height = max(self.container.winfo_height(), self.winfo_height(), 620)
-        canvas = tk.Canvas(self.container, bg="#111725", bd=0, highlightthickness=0)
+        canvas = tk.Canvas(self.container, bg=self.theme_color("base"), bd=0, highlightthickness=0)
         canvas.place(x=0, y=0, relwidth=1, relheight=1)
         canvas.tk.call("raise", canvas._w)
 
         left = width * 0.24
         right = width * 0.76
-        canvas.create_rectangle(0, 0, left, height, fill="#0d1321", outline="")
-        canvas.create_rectangle(right, 0, width, height, fill="#0d1321", outline="")
-        canvas.create_line(left, 0, left, height, fill="#2f70b7", width=2)
-        canvas.create_line(right, 0, right, height, fill="#2f70b7", width=2)
+        canvas.create_rectangle(0, 0, left, height, fill=self.theme_color("deep"), outline="")
+        canvas.create_rectangle(right, 0, width, height, fill=self.theme_color("deep"), outline="")
+        canvas.create_line(left, 0, left, height, fill=self.theme_color("line"), width=2)
+        canvas.create_line(right, 0, right, height, fill=self.theme_color("line"), width=2)
         for index in range(9):
             y = height * (index + 1) / 10
-            canvas.create_line(width * 0.12, y, width * 0.88, y, fill="#172f4d", width=1)
+            canvas.create_line(width * 0.12, y, width * 0.88, y, fill=self.theme_color("grid_b"), width=1)
         for index, radius in enumerate((72, 108, 146)):
             canvas.create_oval(
                 width / 2 - radius * 1.9,
                 height / 2 - radius * 0.45,
                 width / 2 + radius * 1.9,
                 height / 2 + radius * 0.45,
-                outline=("#2f70b7", "#58c7ff", "#f6d36b")[index],
+                outline=(self.theme_color("line"), self.theme_color("spark"), "#f6d36b")[index],
                 width=1,
             )
         canvas.create_text(
             width / 2,
             height / 2 - 42,
             text="字谜加载中",
-            fill="#fff2bd",
+            fill=self.theme_color("title"),
             font=("Microsoft YaHei UI", 28, "bold"),
         )
         detail_parts = []
@@ -99,14 +107,14 @@ class NavigationHomeMixin:
             width / 2,
             height / 2 + 10,
             text=detail,
-            fill="#9fb7ff",
+            fill=self.theme_color("text"),
             font=("Microsoft YaHei UI", 13, "bold"),
         )
         canvas.create_text(
             width / 2,
             height / 2 + 56,
             text="正在生成棋盘与交叉位置...",
-            fill="#8ee6ff",
+            fill=self.theme_color("accent"),
             font=("Microsoft YaHei UI", 12, "bold"),
         )
         self.update_idletasks()
@@ -134,7 +142,7 @@ class NavigationHomeMixin:
     def _start_page_transition(self, token):
         if token != self.transition_token or not self.container.winfo_exists():
             return
-        self.transition_canvas = tk.Canvas(self.container, bg="#111725", bd=0, highlightthickness=0)
+        self.transition_canvas = tk.Canvas(self.container, bg=self.theme_color("base"), bd=0, highlightthickness=0)
         self.transition_canvas.place(x=0, y=0, relwidth=1, relheight=1)
         self.transition_canvas.tk.call("raise", self.transition_canvas._w)
         self.transition_style = random.choice(["curtain", "iris", "stripes", "scanline", "diagonal"])
@@ -155,42 +163,42 @@ class NavigationHomeMixin:
             if curtain <= 2:
                 pass
             else:
-                canvas.create_rectangle(0, 0, curtain, height, fill="#0d1321", outline="")
-                canvas.create_rectangle(width - curtain, 0, width, height, fill="#0d1321", outline="")
-                canvas.create_line(curtain, 0, curtain, height, fill="#263a58", width=2)
-                canvas.create_line(width - curtain, 0, width - curtain, height, fill="#263a58", width=2)
+                canvas.create_rectangle(0, 0, curtain, height, fill=self.theme_color("deep"), outline="")
+                canvas.create_rectangle(width - curtain, 0, width, height, fill=self.theme_color("deep"), outline="")
+                canvas.create_line(curtain, 0, curtain, height, fill=self.theme_color("grid_a"), width=2)
+                canvas.create_line(width - curtain, 0, width - curtain, height, fill=self.theme_color("grid_a"), width=2)
         elif style == "iris":
             pad_x = width * eased / 2
             pad_y = height * eased / 2
-            canvas.create_rectangle(0, 0, width, max(0, height / 2 - pad_y), fill="#0d1321", outline="")
-            canvas.create_rectangle(0, min(height, height / 2 + pad_y), width, height, fill="#0d1321", outline="")
-            canvas.create_rectangle(0, 0, max(0, width / 2 - pad_x), height, fill="#0d1321", outline="")
-            canvas.create_rectangle(min(width, width / 2 + pad_x), 0, width, height, fill="#0d1321", outline="")
-            canvas.create_rectangle(width / 2 - pad_x, height / 2 - pad_y, width / 2 + pad_x, height / 2 + pad_y, outline="#263a58", width=2)
+            canvas.create_rectangle(0, 0, width, max(0, height / 2 - pad_y), fill=self.theme_color("deep"), outline="")
+            canvas.create_rectangle(0, min(height, height / 2 + pad_y), width, height, fill=self.theme_color("deep"), outline="")
+            canvas.create_rectangle(0, 0, max(0, width / 2 - pad_x), height, fill=self.theme_color("deep"), outline="")
+            canvas.create_rectangle(min(width, width / 2 + pad_x), 0, width, height, fill=self.theme_color("deep"), outline="")
+            canvas.create_rectangle(width / 2 - pad_x, height / 2 - pad_y, width / 2 + pad_x, height / 2 + pad_y, outline=self.theme_color("grid_a"), width=2)
         elif style == "stripes":
             stripe_count = 9
             stripe_h = height / stripe_count
             for index in range(stripe_count):
                 offset = width * eased * (1.04 if index % 2 else 1.0)
                 if index % 2:
-                    canvas.create_rectangle(0, index * stripe_h, max(0, width - offset), (index + 1) * stripe_h + 1, fill="#0d1321", outline="")
+                    canvas.create_rectangle(0, index * stripe_h, max(0, width - offset), (index + 1) * stripe_h + 1, fill=self.theme_color("deep"), outline="")
                 else:
-                    canvas.create_rectangle(min(width, offset), index * stripe_h, width, (index + 1) * stripe_h + 1, fill="#0d1321", outline="")
+                    canvas.create_rectangle(min(width, offset), index * stripe_h, width, (index + 1) * stripe_h + 1, fill=self.theme_color("deep"), outline="")
         elif style == "scanline":
             band = max(1, (1 - eased) * height)
-            canvas.create_rectangle(0, 0, width, band, fill="#0d1321", outline="")
-            canvas.create_line(0, band, width, band, fill="#263a58", width=2)
+            canvas.create_rectangle(0, 0, width, band, fill=self.theme_color("deep"), outline="")
+            canvas.create_line(0, band, width, band, fill=self.theme_color("grid_a"), width=2)
             for index in range(0, int(band), 28):
-                canvas.create_line(0, index, width, index, fill="#172238", width=1)
+                canvas.create_line(0, index, width, index, fill=self.theme_color("grid_b"), width=1)
         else:
             shift = width * eased + height * 0.45
             points = [0, 0, max(0, shift - height * 0.45), 0, shift, height, 0, height]
-            canvas.create_polygon(points, fill="#0d1321", outline="")
-            canvas.create_line(max(0, shift - height * 0.45), 0, shift, height, fill="#263a58", width=2)
+            canvas.create_polygon(points, fill=self.theme_color("deep"), outline="")
+            canvas.create_line(max(0, shift - height * 0.45), 0, shift, height, fill=self.theme_color("grid_a"), width=2)
         if progress < 0.96:
             for index in range(7):
                 y = (height * (index + 1) / 8 + step * 5) % height
-                canvas.create_line(width * 0.08, y, width * 0.92, y, fill="#172238", width=1)
+                canvas.create_line(width * 0.08, y, width * 0.92, y, fill=self.theme_color("grid_b"), width=1)
         if progress >= 1.0:
             canvas.destroy()
             self.transition_canvas = None
@@ -202,71 +210,85 @@ class NavigationHomeMixin:
         self.play_music("home")
         self.clear()
         self._start_backdrop("grid")
+        base_bg = self.theme_color("base")
 
-        center = tk.Frame(self.container, bg="#111725")
-        center.place(relx=0.5, rely=0.48, anchor="center")
-
-        self.draw_home_title(center).pack(pady=(0, 36))
+        self.draw_home_title(self.container).place(relx=0.5, rely=0.27, anchor="center")
         home_summary = load_record_summary()
         self._profile_badge(home_summary)
 
         if self.is_spectating():
             tk.Label(
-                center,
+                self.container,
                 text=f"旁观模式：{self.current_account.get('nickname', '')}",
-                fg="#f6d36b",
-                bg="#111725",
+                fg=self.theme_color("warning"),
+                bg=base_bg,
                 font=("Microsoft YaHei UI", 16, "bold"),
-            ).pack(pady=(0, 8))
+            ).place(relx=0.5, rely=0.43, anchor="center")
             tk.Label(
-                center,
+                self.container,
                 text="只能查看主页、历史记录、成就和玩家档案。",
-                fg="#9ca8c7",
-                bg="#111725",
+                fg=self.theme_color("muted"),
+                bg=base_bg,
                 font=("Microsoft YaHei UI", 11, "bold"),
-            ).pack(pady=(0, 22))
+            ).place(relx=0.5, rely=0.48, anchor="center")
             start_button = None
         else:
-            start_button = HoverButton(center, "开始游戏", self.show_mode_select, width=320, height=82)
-            start_button.pack(pady=(0, 24))
-        link_row = tk.Frame(center, bg="#111725")
-        link_row.pack()
-        HoverButton(link_row, "历史记录", self.show_history, width=156, height=56, accent="#8fb6ff").grid(row=0, column=0, padx=8)
-        HoverButton(link_row, "成就", self.show_achievements, width=156, height=56, accent="#f6d36b").grid(row=0, column=1, padx=8)
+            start_button = HoverButton(self.container, "开始游戏", self.show_mode_select, width=380, height=90)
+            start_button.place(relx=0.5, rely=0.505, anchor="center")
         if self.is_spectating():
-            HoverButton(link_row, "玩家档案", self.show_settings, width=156, height=56, accent="#f6a6ff").grid(row=0, column=2, padx=8)
-            HoverButton(link_row, "退出旁观", self.exit_spectator_mode, width=156, height=56, accent="#ff9b89").grid(row=0, column=3, padx=8)
+            links = [
+                ("历史记录", self.show_history, "#8fb6ff"),
+                ("成就", self.show_achievements, "#f6d36b"),
+                ("玩家档案", self.show_settings, "#f6a6ff"),
+                ("退出旁观", self.exit_spectator_mode, "#ff9b89"),
+            ]
         else:
-            HoverButton(link_row, "游戏机制", self.show_game_mechanics, width=156, height=56, accent="#7fd9c6").grid(row=0, column=2, padx=8)
-            HoverButton(link_row, "漏洞反馈", self.show_feedback_dialog, width=156, height=56, accent="#ffcf8f").grid(row=0, column=3, padx=8)
-            HoverButton(link_row, "设置", self.show_settings, width=156, height=56, accent="#f6a6ff").grid(row=0, column=4, padx=8)
+            links = [
+                ("历史记录", self.show_history, "#8fb6ff"),
+                ("成就", self.show_achievements, "#f6d36b"),
+                ("游戏机制", self.show_game_mechanics, "#7fd9c6"),
+                ("漏洞反馈", self.show_feedback_dialog, "#ffcf8f"),
+                ("设置", self.show_settings, "#f6a6ff"),
+            ]
+        if self.is_spectating():
+            positions = [(-130, 0.630), (130, 0.630), (-130, 0.720), (130, 0.720)]
+        else:
+            positions = [(-260, 0.630), (0, 0.630), (260, 0.630), (-130, 0.720), (130, 0.720)]
+        for (text, command, accent), (x_offset, rely) in zip(links, positions):
+            HoverButton(self.container, text, command, width=210, height=66, accent=accent).place(
+                relx=0.5,
+                x=x_offset,
+                rely=rely,
+                anchor="center",
+            )
         tk.Label(
             self.container,
             text="F11 全屏 / Esc 退出全屏",
-            fg="#64708f",
-            bg="#111725",
+            fg=self.theme_color("subtle"),
+            bg=base_bg,
             font=("Microsoft YaHei UI", 10),
         ).place(relx=0.5, rely=0.965, anchor="center")
         tk.Label(
             self.container,
             text=f"v{APP_VERSION}",
-            fg="#4f5a75",
-            bg="#111725",
+            fg=self.theme_color("subtle"),
+            bg=base_bg,
             font=("Consolas", 11, "bold"),
         ).place(relx=0.018, rely=0.965, anchor="sw")
         tk.Label(
             self.container,
             text="Made by Lω∇τ\nDedicated to all PHOers",
-            fg="#4f5a75",
-            bg="#111725",
+            fg=self.theme_color("subtle"),
+            bg=base_bg,
             font=("Segoe UI", 10, "bold"),
             justify="right",
         ).place(relx=0.982, rely=0.965, anchor="se")
         if self.tutorial_active and self.tutorial_step == "home" and start_button:
+            tutorial_play = self.tutorial_play_label()
             self.render_tutorial_overlay(
                 start_button,
                 "第一步：从主页进入",
-                "这里是正式主页。先点击高光的“开始游戏”，教程会带你进入一局物理入门题。",
+                f"这里是正式主页。先点击高光的“开始游戏”，教程会带你进入一局物理入门{tutorial_play}题。",
             )
 
     def show_feedback_dialog(self):
@@ -325,6 +347,7 @@ class NavigationHomeMixin:
 
         HoverButton(row, "提交反馈", submit, width=150, height=54, accent="#9ff2b2").grid(row=0, column=0, padx=(0, 10))
         HoverButton(row, "取消", popup.destroy, width=120, height=54, accent="#ff9b89").grid(row=0, column=1)
+        self.apply_static_theme(popup)
         self.after(80, text_box.focus_set)
 
     def draw_home_title(self, parent, compact=False):
@@ -338,32 +361,109 @@ class NavigationHomeMixin:
             height = scaled_int(156)
             title_size = scaled_int(38)
             subtitle_size = scaled_int(17)
-        canvas = tk.Canvas(parent, width=width, height=height, bg="#111725", bd=0, highlightthickness=0)
+        canvas = tk.Canvas(parent, width=width, height=height, bg=self.theme_color("base"), bd=0, highlightthickness=0)
         cx = width / 2
-        for index, radius in enumerate((width * 0.42, width * 0.34, width * 0.26)):
-            y = height * (0.46 + index * 0.035)
+        title_font = ("Microsoft YaHei UI", title_size, "bold")
+        glow_font = ("Microsoft YaHei UI", title_size + (2 if compact else 3), "bold")
+        subtitle_font = ("Segoe UI", subtitle_size, "bold")
+        phase_state = {"value": random.random() * math.tau, "last": time.perf_counter(), "job": None}
+
+        def cancel_title_job(_event=None):
+            job = phase_state.get("job")
+            if job:
+                try:
+                    canvas.after_cancel(job)
+                except tk.TclError:
+                    pass
+                phase_state["job"] = None
+
+        def draw_frame():
+            try:
+                if not canvas.winfo_exists():
+                    return
+            except tk.TclError:
+                return
+            canvas.delete("all")
+            now = time.perf_counter()
+            dt = max(0.0, min(0.033, now - phase_state.get("last", now)))
+            phase_state["last"] = now
+            phase_state["value"] += dt * 0.52
+            phase = phase_state["value"]
+            pulse = math.sin(phase)
+            breath = (pulse + 1) / 2
+            slow = math.sin(phase * 0.42 + 1.1)
+            tiny = math.sin(phase * 1.7 + 0.4)
+            title_y = height * 0.43 - 0.55 * pulse + 0.25 * slow
+
+            ring_colors = [self.theme_color("grid_b"), self.theme_color("grid_a"), self.theme_color("line")]
+            for index, radius in enumerate((width * 0.43, width * 0.35, width * 0.27)):
+                ring_phase = pulse * (0.018 + index * 0.006) + slow * 0.006
+                ring_radius = radius * (1.0 + ring_phase)
+                y = height * (0.46 + index * 0.035) + tiny * (0.7 + index * 0.3)
+                canvas.create_oval(
+                    cx - ring_radius,
+                    y - ring_radius * (0.125 + 0.006 * slow),
+                    cx + ring_radius,
+                    y + ring_radius * (0.125 + 0.006 * slow),
+                    outline=self._fade_color(ring_colors[index], 0.68 + breath * 0.16),
+                    width=1,
+                )
+            halo_w = width * (0.39 + 0.012 * breath)
+            halo_h = height * (0.28 + 0.018 * breath)
             canvas.create_oval(
-                cx - radius,
-                y - radius * 0.13,
-                cx + radius,
-                y + radius * 0.13,
-                outline=["#1f4168", "#244f83", "#2c66a4"][index],
+                cx - halo_w,
+                title_y - halo_h * 0.55,
+                cx + halo_w,
+                title_y + halo_h * 0.55,
+                outline=self._fade_color(self.theme_color("spark"), 0.22 + breath * 0.16),
                 width=1,
             )
-        for x, y, size, color in (
-            (width * 0.11, height * 0.20, 3, "#69d8ff"),
-            (width * 0.86, height * 0.18, 2, "#f6d36b"),
-            (width * 0.77, height * 0.70, 3, "#9ff2b2"),
-            (width * 0.22, height * 0.77, 2, "#8fb6ff"),
-        ):
-            canvas.create_oval(x, y, x + size, y + size, fill=color, outline="")
-        title_font = ("Microsoft YaHei UI", title_size, "bold")
-        subtitle_font = ("Segoe UI", subtitle_size, "bold")
-        for offset, color in ((5, "#172d4d"), (3, "#245a91"), (1, "#69d8ff")):
-            canvas.create_text(cx + offset, height * 0.43 + offset, text=TITLE_CN, fill=color, font=title_font)
-        canvas.create_text(cx, height * 0.43, text=TITLE_CN, fill="#fff2bd", font=title_font)
-        canvas.create_line(width * 0.24, height * 0.66, width * 0.76, height * 0.66, fill="#2d78b7", width=2)
-        canvas.create_text(cx, height * 0.82, text=TITLE_EN, fill="#8fb6ff", font=subtitle_font)
+            for index, (x, y, size, color) in enumerate((
+                (width * 0.11, height * 0.20, 3, self.theme_color("spark")),
+                (width * 0.86, height * 0.18, 2, self.theme_color("warning")),
+                (width * 0.77, height * 0.70, 3, self.theme_color("success")),
+                (width * 0.22, height * 0.77, 2, self.theme_color("accent")),
+            )):
+                drift_x = math.sin(phase * 0.55 + index * 1.7) * (1.4 + index * 0.2)
+                drift_y = math.cos(phase * 0.47 + index * 1.2) * (1.0 + index * 0.18)
+                dot_size = size * (1.0 + breath * (0.10 + index * 0.02))
+                canvas.create_oval(x + drift_x, y + drift_y, x + drift_x + dot_size, y + drift_y + dot_size, fill=color, outline="")
+
+            expand = (0.9 if compact else 1.25) + breath * (1.25 if compact else 1.75)
+            shimmer = math.sin(phase * 0.26) * 0.22
+            canvas.create_text(cx, title_y, text=TITLE_CN, fill=self._fade_color(self.theme_color("line_alt"), 0.14 + 0.16 * breath), font=glow_font)
+            for index in range(8):
+                angle = math.tau * index / 8 + shimmer
+                ox = math.cos(angle) * expand
+                oy = math.sin(angle) * expand * 0.58
+                canvas.create_text(
+                    cx + ox,
+                    title_y + oy,
+                    text=TITLE_CN,
+                    fill=self._fade_color(self.theme_color("spark"), 0.15 + 0.09 * breath),
+                    font=title_font,
+                )
+            for offset, color, opacity in (
+                (5.0 + breath * 1.0, self.theme_color("deep"), 0.74),
+                (2.7 + breath * 0.45, self.theme_color("grid_a"), 0.88),
+                (0.9 + breath * 0.25, self.theme_color("spark"), 0.96),
+            ):
+                canvas.create_text(cx + offset, title_y + offset, text=TITLE_CN, fill=self._fade_color(color, opacity), font=title_font)
+            canvas.create_text(cx, title_y, text=TITLE_CN, fill=self.theme_color("title"), font=title_font)
+
+            line_y = height * 0.66 + 0.5 * slow
+            extend = width * (0.012 * breath)
+            canvas.create_line(width * 0.24 - extend, line_y, width * 0.76 + extend, line_y, fill=self.theme_color("line"), width=2)
+            canvas.create_line(width * 0.34, line_y + 5, width * 0.66, line_y + 5, fill=self._fade_color(self.theme_color("spark"), 0.36 + breath * 0.2), width=1)
+            canvas.create_text(cx, height * 0.82 + 0.8 * slow, text=TITLE_EN, fill=self.theme_color("accent"), font=subtitle_font)
+
+            try:
+                phase_state["job"] = canvas.after(16, draw_frame)
+            except tk.TclError:
+                phase_state["job"] = None
+
+        canvas.bind("<Destroy>", cancel_title_job, add="+")
+        canvas.after_idle(draw_frame)
         return canvas
 
     def _profile_badge(self, summary):
@@ -373,36 +473,37 @@ class NavigationHomeMixin:
         avatar_id = coerce_avatar_id(self.player_settings.get("avatar_id", 0), summary.get("rating", 0), reveal_all=reveal_all)
         equipped_title = title_name(coerce_title_id(self.player_settings.get("title_id"), summary.get("rating", 0), achievements_data, rank_progress))
         rank_badge_id = coerce_rank_badge_id(self.player_settings.get("rank_badge_id", ""), rank_progress)
-        badge = tk.Frame(self.container, bg="#182033", highlightbackground="#3b4560", highlightthickness=1, cursor="hand2")
+        badge_bg = self.theme_color("button_bg")
+        badge = tk.Frame(self.container, bg=badge_bg, highlightbackground=self.theme_color("button_outline"), highlightthickness=1, cursor="hand2")
         badge.place(relx=0.98, rely=0.035, anchor="ne")
         avatar_size = scaled_int(58)
         outer_pad = scaled_int(8)
-        avatar_canvas = tk.Canvas(badge, width=avatar_size, height=avatar_size, bg="#182033", bd=0, highlightthickness=0, cursor="hand2")
+        avatar_canvas = tk.Canvas(badge, width=avatar_size, height=avatar_size, bg=badge_bg, bd=0, highlightthickness=0, cursor="hand2")
         avatar_canvas.pack(side="left", padx=(scaled_int(10), scaled_int(8)), pady=outer_pad)
         draw_avatar(avatar_canvas, avatar_id, avatar_size)
-        info = tk.Frame(badge, bg="#182033", cursor="hand2")
+        info = tk.Frame(badge, bg=badge_bg, cursor="hand2")
         info.pack(side="left", padx=(0, scaled_int(12)), pady=outer_pad)
         tk.Label(
             info,
             text=self.player_settings.get("nickname", "PHOer"),
-            fg="#fff2bd",
-            bg="#182033",
+            fg=self.theme_color("title"),
+            bg=badge_bg,
             font=("Microsoft YaHei UI", 11, "bold"),
             cursor="hand2",
         ).pack(anchor="w")
         tk.Label(
             info,
             text=equipped_title,
-            fg="#8fb6ff",
-            bg="#182033",
+            fg=self.theme_color("accent"),
+            bg=badge_bg,
             font=("Microsoft YaHei UI", 9, "bold"),
             cursor="hand2",
         ).pack(anchor="w", pady=(2, 0))
         tk.Label(
             info,
             text=f"Rating {format_rating(summary['rating'])}",
-            fg="#9ff2b2",
-            bg="#182033",
+            fg=self.theme_color("success"),
+            bg=badge_bg,
             font=("Consolas", 12, "bold"),
             cursor="hand2",
         ).pack(anchor="w", pady=(3, 0))
@@ -410,9 +511,9 @@ class NavigationHomeMixin:
         if rank_badge_id:
             badge_width = scaled_int(190)
             badge_height = scaled_int(30)
-            badge_canvas = tk.Canvas(info, width=badge_width, height=badge_height, bg="#182033", bd=0, highlightthickness=0, cursor="hand2")
+            badge_canvas = tk.Canvas(info, width=badge_width, height=badge_height, bg=badge_bg, bd=0, highlightthickness=0, cursor="hand2")
             badge_canvas.pack(anchor="w", pady=(scaled_int(6), 0))
-            draw_rank_badge(badge_canvas, rank_badge_id, badge_width, badge_height)
+            draw_rank_badge(badge_canvas, rank_badge_id, badge_width, badge_height, transparent=True, background=badge_bg)
             widgets.append(badge_canvas)
         for widget in widgets:
             widget.bind("<Button-1>", lambda _event: self.show_settings())
@@ -421,20 +522,21 @@ class NavigationHomeMixin:
         self.play_music("archive")
         self.clear()
         self._topbar("游戏机制说明", self.show_home)
-        frame = tk.Frame(self.container, bg="#111725")
+        frame = tk.Frame(self.container, bg=self.theme_color("base"))
         frame.pack(fill="both", expand=True, padx=34, pady=(0, 26))
         self._start_backdrop("grid", frame)
-        center = tk.Frame(frame, bg="#111725")
+        center = tk.Frame(frame, bg=self.theme_color("base"))
         center.place(relx=0.5, rely=0.47, anchor="center")
-        tk.Label(center, text="选择阅读方式", fg="#fff2bd", bg="#111725", font=("Microsoft YaHei UI", 30, "bold")).pack(pady=(0, 22))
+        self.decorate_surface(center, "grid", opacity_scale=0.58)
+        tk.Label(center, text="选择阅读方式", fg=self.theme_color("title"), bg=self.theme_color("base"), font=("Microsoft YaHei UI", 30, "bold")).pack(pady=(0, 22))
         tk.Label(
             center,
             text="快速上手先告诉你该看哪里；详细规则会说明模式、提示、计分、记录和称号。",
-            fg="#c8d2ee",
-            bg="#111725",
+            fg=self.theme_color("text"),
+            bg=self.theme_color("base"),
             font=("Microsoft YaHei UI", 13),
         ).pack(pady=(0, 34))
-        row = tk.Frame(center, bg="#111725")
+        row = tk.Frame(center, bg=self.theme_color("base"))
         row.pack()
         HoverButton(row, "快速上手", lambda: self.show_game_mechanics_page("quick"), width=250, height=86, accent="#9ff2b2").grid(row=0, column=0, padx=18)
         HoverButton(row, "详细规则", lambda: self.show_game_mechanics_page("detail"), width=250, height=86, accent="#9fb7ff").grid(row=0, column=1, padx=18)

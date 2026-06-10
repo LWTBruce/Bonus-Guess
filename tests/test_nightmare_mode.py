@@ -1,6 +1,8 @@
+import inspect
 import sys
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -34,13 +36,28 @@ class NightmareModeConfigTests(unittest.TestCase):
         self.assertGreater(HINT_COOLDOWN_SECONDS["噩梦"], HINT_COOLDOWN_SECONDS["困难"])
         self.assertGreater(SCORE_MODE_WEIGHTS["噩梦"], SCORE_MODE_WEIGHTS["困难"])
 
-    def test_nightmare_masks_more_than_hard_for_free_and_crossword(self):
+    def test_nightmare_masks_match_hard_until_eight_initials(self):
         for tier in (4, 5, 6):
-            hard_total = sum(MASK_PROBABILITIES["困难"][tier].values())
-            nightmare_total = sum(MASK_PROBABILITIES["噩梦"][tier].values())
-            self.assertGreater(nightmare_total, hard_total)
+            self.assertEqual(MASK_PROBABILITIES["噩梦"][tier], MASK_PROBABILITIES["困难"][tier])
+        self.assertNotIn(4, MASK_PROBABILITIES["噩梦"][6])
+        self.assertEqual(MASK_PROBABILITIES["噩梦"][8][4], 0.10)
         self.assertEqual(BonusGuessApp.difficulty_label_for_value(None, 10), "困难")
         self.assertEqual(BonusGuessApp.difficulty_label_for_value(None, 11), "噩梦")
+
+    def test_crossword_mask_boost_adds_three_percentage_points(self):
+        captured = {}
+
+        def fake_choices(counts, weights=None, k=1):
+            captured["counts"] = list(counts)
+            captured["weights"] = list(weights or [])
+            return [0]
+
+        random_module = BonusGuessApp.crossword_random_mask_positions.__globals__["random"]
+        with patch.object(random_module, "choices", side_effect=fake_choices):
+            BonusGuessApp.crossword_random_mask_positions("ABCDEFGH", "噩梦")
+
+        self.assertEqual(captured["counts"], [0, 1, 2, 3, 4])
+        self.assertEqual([round(value, 2) for value in captured["weights"]], [0.18, 0.28, 0.23, 0.18, 0.13])
 
     def test_nightmare_crossword_size_extends_hard(self):
         self.assertGreater(size_for_difficulty("噩梦"), size_for_difficulty("困难"))
@@ -55,9 +72,16 @@ class NightmareModeConfigTests(unittest.TestCase):
         self.assertAlmostEqual(target_density_for_difficulty("普通"), 0.65)
         self.assertAlmostEqual(target_density_for_difficulty("困难"), 0.70)
         self.assertAlmostEqual(target_density_for_difficulty("噩梦"), 0.75)
+        self.assertAlmostEqual(target_density_for_difficulty("混合模式"), 0.68)
         self.assertEqual(target_word_count_for_size(11, difficulty="简单"), 25)
         self.assertEqual(target_word_count_for_size((11, 11), difficulty="简单", cell_shape="hex"), 25)
+        self.assertEqual(size_for_difficulty("混合模式"), 15)
         self.assertGreater(target_word_count_for_size(22, difficulty="噩梦"), target_word_count_for_size(18, difficulty="困难"))
+
+    def test_crossword_difficulty_page_includes_mixed_mode(self):
+        source = inspect.getsource(BonusGuessApp.show_difficulty)
+        self.assertIn('options.append(("混合模式"', source)
+        self.assertNotIn('self.play_mode != "字谜"', source)
 
     def test_high_crossword_ranks_reach_nightmare_term_windows(self):
         self.assertEqual(BonusGuessApp.crossword_rank_difficulty_window_for_id(None, 16), (9, 11, 10.0))

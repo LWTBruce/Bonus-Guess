@@ -2,6 +2,246 @@ from ._shared import *
 
 
 class CrosswordMixin:
+    def themed_legacy_color(self, color, option="bg"):
+        mapper = getattr(super(CrosswordMixin, self), "themed_legacy_color", None)
+        if callable(mapper):
+            return mapper(color, option)
+        return color
+
+    def crossword_palette(self):
+        if self.backdrop_theme_id() == "blue":
+            return {
+                "canvas_bg": "#0b1220",
+                "particle": ("#1d4ed8", "#38bdf8", "#dbeafe"),
+                "wind_line": "#0e2f5a",
+                "frame_shadow": "#061128",
+                "frame_dark": "#0b2d5c",
+                "frame_mid": "#1d4ed8",
+                "frame_light": "#38bdf8",
+                "axis_a": "#93c5fd",
+                "axis_b": "#38bdf8",
+                "number_bg": "#061128",
+                "number_fg": "#93c5fd",
+                "number_solved_fg": "#67e8f9",
+                "number_selected_fg": "#e0f2fe",
+                "number_outline": "#1d4ed8",
+                "number_selected_outline": "#7dd3fc",
+                "empty_fill": "#071225",
+                "empty_outline": "#102642",
+                "empty_mark": "#123b6d",
+                "cell_base": "#071225",
+                "cell_glow": "#123b6d",
+                "cell_fill": "#0b1e38",
+                "cell_inset": "#102a4c",
+                "cell_outline": "#2563eb",
+                "selected_glow": "#0ea5e9",
+                "selected_fill": "#1d4ed8",
+                "selected_inset": "#1e3a8a",
+                "selected_outline": "#7dd3fc",
+                "selected_inner_outline": "#e0f2fe",
+                "resolved_glow": "#0891b2",
+                "resolved_fill": "#0f3f61",
+                "resolved_inset": "#155e75",
+                "resolved_outline": "#67e8f9",
+                "intersect": "#22d3ee",
+                "cell_text": "#bfdbfe",
+                "cell_mask": "#f0abfc",
+                "cell_solved_text": "#e0fbff",
+            }
+        palettes = {
+            "green": {
+                "canvas_bg": "#43c963",
+                "particle": ("#0b7e4e", "#fff176", "#ff77b7"),
+                "wind_line": "#178f42",
+                "frame_shadow": "#2bbf5c",
+                "frame_dark": "#178f42",
+                "frame_mid": "#0b7e4e",
+                "frame_light": "#eaffea",
+                "axis_a": "#006b4a",
+                "axis_b": "#0b6d66",
+                "number_bg": "#eaffea",
+                "number_fg": "#163a1f",
+                "number_solved_fg": "#006e31",
+                "number_selected_fg": "#102814",
+                "number_outline": "#178f42",
+                "number_selected_outline": "#006b4a",
+                "empty_fill": "#b8f3bc",
+                "empty_outline": "#2bbf5c",
+                "empty_mark": "#178f42",
+                "cell_base": "#c9ffc9",
+                "cell_glow": "#43c963",
+                "cell_fill": "#eaffea",
+                "cell_inset": "#f4fff3",
+                "cell_outline": "#178f42",
+                "selected_glow": "#fff176",
+                "selected_fill": "#fff7a8",
+                "selected_inset": "#fffde6",
+                "selected_outline": "#7a4e00",
+                "selected_inner_outline": "#102814",
+                "resolved_glow": "#2bbf5c",
+                "resolved_fill": "#d8ffd8",
+                "resolved_inset": "#f4fff3",
+                "resolved_outline": "#006e31",
+                "intersect": "#0b6d66",
+                "cell_text": "#163a1f",
+                "cell_mask": "#9d1c1c",
+                "cell_solved_text": "#102814",
+            },
+            "yellow": {
+                "canvas_bg": "#d6c94d",
+                "particle": ("#987a00", "#b85b00", "#5b3ba3"),
+                "wind_line": "#9a7a00",
+                "frame_shadow": "#b79c21",
+                "frame_dark": "#9a7a00",
+                "frame_mid": "#8e6a00",
+                "frame_light": "#fffde6",
+                "axis_a": "#7a5c00",
+                "axis_b": "#b85b00",
+                "number_bg": "#fff7c6",
+                "number_fg": "#3f3100",
+                "number_solved_fg": "#0a6e38",
+                "number_selected_fg": "#332600",
+                "number_outline": "#9a7a00",
+                "number_selected_outline": "#7a5c00",
+                "empty_fill": "#f3e978",
+                "empty_outline": "#b79c21",
+                "empty_mark": "#987a00",
+                "cell_base": "#fff4a0",
+                "cell_glow": "#b79c21",
+                "cell_fill": "#fff7c6",
+                "cell_inset": "#fffde6",
+                "cell_outline": "#9a7a00",
+                "selected_glow": "#ff695e",
+                "selected_fill": "#ffd3c8",
+                "selected_inset": "#fff2ef",
+                "selected_outline": "#a22620",
+                "selected_inner_outline": "#332600",
+                "resolved_glow": "#7ecf68",
+                "resolved_fill": "#e9ffd2",
+                "resolved_inset": "#fbfff0",
+                "resolved_outline": "#0a6e38",
+                "intersect": "#b85b00",
+                "cell_text": "#3f3100",
+                "cell_mask": "#5b3ba3",
+                "cell_solved_text": "#332600",
+            },
+            "red": {
+                "canvas_bg": "#d44540",
+                "particle": ("#8c1b24", "#ffe0dc", "#5d2f94"),
+                "wind_line": "#a2272e",
+                "frame_shadow": "#be3536",
+                "frame_dark": "#a2272e",
+                "frame_mid": "#831b27",
+                "frame_light": "#fff2ef",
+                "axis_a": "#7c202c",
+                "axis_b": "#5f2036",
+                "number_bg": "#ffe7e2",
+                "number_fg": "#4b1716",
+                "number_solved_fg": "#0f6b38",
+                "number_selected_fg": "#3b1111",
+                "number_outline": "#a2272e",
+                "number_selected_outline": "#7c202c",
+                "empty_fill": "#f39b93",
+                "empty_outline": "#be3536",
+                "empty_mark": "#8c1b24",
+                "cell_base": "#ffd7d2",
+                "cell_glow": "#be3536",
+                "cell_fill": "#ffe7e2",
+                "cell_inset": "#fff2ef",
+                "cell_outline": "#a2272e",
+                "selected_glow": "#ffff7d",
+                "selected_fill": "#fff7c6",
+                "selected_inset": "#fffde6",
+                "selected_outline": "#805100",
+                "selected_inner_outline": "#3b1111",
+                "resolved_glow": "#61bf83",
+                "resolved_fill": "#dff9e5",
+                "resolved_inset": "#f4fff3",
+                "resolved_outline": "#0f6b38",
+                "intersect": "#5f2036",
+                "cell_text": "#4b1716",
+                "cell_mask": "#5d2f94",
+                "cell_solved_text": "#3b1111",
+            },
+            "pink": {
+                "canvas_bg": "#e36a9e",
+                "particle": ("#a72b68", "#ffe3f0", "#5b55b6"),
+                "wind_line": "#b73e7a",
+                "frame_shadow": "#d85a95",
+                "frame_dark": "#b73e7a",
+                "frame_mid": "#98235f",
+                "frame_light": "#fff4f8",
+                "axis_a": "#8b225a",
+                "axis_b": "#6a318b",
+                "number_bg": "#ffeaf3",
+                "number_fg": "#4a1b36",
+                "number_solved_fg": "#0a6e38",
+                "number_selected_fg": "#38152a",
+                "number_outline": "#b73e7a",
+                "number_selected_outline": "#8b225a",
+                "empty_fill": "#ffc7df",
+                "empty_outline": "#d85a95",
+                "empty_mark": "#a72b68",
+                "cell_base": "#ffd9ea",
+                "cell_glow": "#d85a95",
+                "cell_fill": "#ffeaf3",
+                "cell_inset": "#fff4f8",
+                "cell_outline": "#b73e7a",
+                "selected_glow": "#c391ff",
+                "selected_fill": "#efe0ff",
+                "selected_inset": "#faf5ff",
+                "selected_outline": "#6437a3",
+                "selected_inner_outline": "#38152a",
+                "resolved_glow": "#64c78b",
+                "resolved_fill": "#e6ffed",
+                "resolved_inset": "#f4fff8",
+                "resolved_outline": "#0a6e38",
+                "intersect": "#6a318b",
+                "cell_text": "#4a1b36",
+                "cell_mask": "#5c3aa0",
+                "cell_solved_text": "#38152a",
+            },
+            "purple": {
+                "canvas_bg": "#9566d8",
+                "particle": ("#5e2e9a", "#efe0ff", "#0b7080"),
+                "wind_line": "#6437a3",
+                "frame_shadow": "#8652c5",
+                "frame_dark": "#6437a3",
+                "frame_mid": "#56288c",
+                "frame_light": "#faf5ff",
+                "axis_a": "#512c91",
+                "axis_b": "#3251a7",
+                "number_bg": "#f3e8ff",
+                "number_fg": "#2f1a4a",
+                "number_solved_fg": "#0a6e38",
+                "number_selected_fg": "#24123f",
+                "number_outline": "#6437a3",
+                "number_selected_outline": "#512c91",
+                "empty_fill": "#d9c0ff",
+                "empty_outline": "#8652c5",
+                "empty_mark": "#5e2e9a",
+                "cell_base": "#ead8ff",
+                "cell_glow": "#8652c5",
+                "cell_fill": "#f3e8ff",
+                "cell_inset": "#faf5ff",
+                "cell_outline": "#6437a3",
+                "selected_glow": "#ffff7d",
+                "selected_fill": "#fff7c6",
+                "selected_inset": "#fffde6",
+                "selected_outline": "#7a5200",
+                "selected_inner_outline": "#24123f",
+                "resolved_glow": "#65c78d",
+                "resolved_fill": "#e6ffef",
+                "resolved_inset": "#f4fff8",
+                "resolved_outline": "#0a6e38",
+                "intersect": "#0b7080",
+                "cell_text": "#2f1a4a",
+                "cell_mask": "#7a1b9e",
+                "cell_solved_text": "#24123f",
+            },
+        }
+        return palettes.get(self.backdrop_theme_id(), palettes["green"])
+
     def crossword_mask_func(self, term):
         initials = getattr(term, "initials", "")
         if self.custom_mode:
@@ -14,7 +254,9 @@ class CrosswordMixin:
         if not table:
             return []
         length = len(initials)
-        if length >= 6:
+        if length >= 8 and 8 in table:
+            tier = 8
+        elif length >= 6:
             tier = 6
         elif length >= 5:
             tier = 5
@@ -25,7 +267,7 @@ class CrosswordMixin:
         count_probs = table.get(tier, {})
         if not count_probs:
             return []
-        boosted = {count: min(1.0, probability + 0.05) for count, probability in count_probs.items()}
+        boosted = {count: min(1.0, probability + 0.03) for count, probability in count_probs.items()}
         counts = [0] + sorted(boosted)
         probabilities = [max(0.0, 1.0 - sum(boosted.values()))] + [boosted[count] for count in counts[1:]]
         mask_count = random.choices(counts, weights=probabilities, k=1)[0]
@@ -58,6 +300,12 @@ class CrosswordMixin:
             if roll < 0.15:
                 return "triangle"
             if roll < 0.30:
+                return "hex"
+        if difficulty == "混合模式":
+            roll = random.random()
+            if roll < 0.18:
+                return "triangle"
+            if roll < 0.36:
                 return "hex"
         if difficulty == "困难":
             roll = random.random()
@@ -230,6 +478,9 @@ class CrosswordMixin:
             )
             self.crossword_free_hint_quota = self.scaled_crossword_free_hint_quota(self.crossword_free_hint_quota)
             self.crossword_library_hint_limit = sample_count
+        if getattr(self, "tutorial_active", False):
+            self.crossword_free_hint_quota = max(1, self.crossword_free_hint_quota)
+            self.crossword_library_hint_limit = max(1, self.crossword_library_hint_limit)
         self.crossword_start_score = 400 * len(puzzle.placements)
         difficulties = [max(1, int(getattr(placement.term, "difficulty", 5) or 5)) for placement in puzzle.placements]
         mask_total = sum(len(getattr(placement, "mask_positions", set()) or set()) for placement in puzzle.placements)
@@ -263,34 +514,65 @@ class CrosswordMixin:
         else:
             title = "字谜模式 / 随机 / " + self.difficulty if self.is_crossword_random_scope() else f"{self.mode} / 字谜 / {self.difficulty}"
         self._topbar(title, self.abandon_crossword)
-        root = tk.Frame(self.container, bg="#111725")
+        root = tk.Frame(self.container, bg=self.theme_color("base"))
         root.pack(fill="both", expand=True, padx=30, pady=(0, 24))
-        root.grid_columnconfigure(0, weight=0, minsize=390)
-        root.grid_columnconfigure(1, weight=1)
-        root.grid_rowconfigure(0, weight=1)
+        panes = tk.PanedWindow(
+            root,
+            orient=tk.HORIZONTAL,
+            bg=self.theme_color("grid_a"),
+            bd=0,
+            sashwidth=10,
+            sashpad=3,
+            sashrelief="flat",
+            showhandle=True,
+            handlesize=28,
+            handlepad=22,
+            opaqueresize=True,
+        )
+        panes.pack(fill="both", expand=True)
 
-        left = tk.Frame(root, bg="#182033", highlightbackground="#3b4560", highlightthickness=1)
-        left.grid(row=0, column=0, sticky="nsew", padx=(0, 20))
+        base_bg = self.theme_color("base")
+        left = tk.Frame(panes, bg=base_bg, highlightbackground=self.theme_color("grid_a"), highlightthickness=1, width=scaled_int(450))
         left.grid_columnconfigure(0, weight=1)
-        right = tk.Frame(root, bg="#101827", highlightbackground="#3b4560", highlightthickness=1)
-        right.grid(row=0, column=1, sticky="nsew")
+        right = tk.Frame(panes, bg=base_bg, highlightbackground=self.theme_color("grid_a"), highlightthickness=1)
         right.grid_columnconfigure(0, weight=1)
         right.grid_rowconfigure(0, weight=1)
+        panes.add(left, minsize=scaled_int(360))
+        panes.add(right, minsize=scaled_int(420))
+        self.decorate_surface(left, "wind", opacity_scale=0.36)
+        self.decorate_surface(right, "wind", opacity_scale=0.30)
 
-        tk.Label(left, text="字谜作答", fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 21, "bold")).grid(row=0, column=0, sticky="w", padx=24, pady=(22, 6))
-        self.crossword_status_label = tk.Label(left, text="", fg="#c8d2ee", bg="#182033", justify="left", font=("Microsoft YaHei UI", 11, "bold"))
+        def place_initial_sash():
+            try:
+                total_width = max(root.winfo_width(), scaled_int(900))
+                target = min(max(scaled_int(450), int(total_width * 0.30)), max(scaled_int(360), total_width - scaled_int(520)))
+                panes.sash_place(0, target, 0)
+            except tk.TclError:
+                pass
+
+        panes.after_idle(place_initial_sash)
+
+        surface_bg = self.themed_legacy_color("#182033", "bg")
+        control_bg = self.themed_legacy_color("#101827", "bg")
+        panel_bg = self.themed_legacy_color("#111827", "bg")
+        title_fg = self.themed_legacy_color("#fff2bd", "fg")
+        text_fg = self.themed_legacy_color("#dce6ff", "fg")
+        muted_fg = self.themed_legacy_color("#9ca8c7", "fg")
+        border_fg = self.themed_legacy_color("#30384e", "highlightbackground")
+        tk.Label(left, text="字谜作答", fg=title_fg, bg=surface_bg, font=("Microsoft YaHei UI", 21, "bold")).grid(row=0, column=0, sticky="w", padx=24, pady=(22, 6))
+        self.crossword_status_label = tk.Label(left, text="", fg=self.themed_legacy_color("#c8d2ee", "fg"), bg=surface_bg, justify="left", font=("Microsoft YaHei UI", 11, "bold"))
         self.crossword_status_label.grid(row=1, column=0, sticky="ew", padx=24, pady=(0, 10))
 
-        list_shell = tk.Frame(left, bg="#182033")
+        list_shell = tk.Frame(left, bg=surface_bg)
         list_shell.grid(row=2, column=0, sticky="nsew", padx=24, pady=(0, 12))
         left.grid_rowconfigure(2, weight=1)
         self.crossword_word_listbox = tk.Listbox(
             list_shell,
             exportselection=False,
-            fg="#dce6ff",
-            bg="#101827",
-            selectforeground="#101827",
-            selectbackground="#9ff2b2",
+            fg=text_fg,
+            bg=control_bg,
+            selectforeground="#101827" if self.backdrop_theme_id() == "blue" else self.theme_color("title"),
+            selectbackground=self.themed_legacy_color("#9ff2b2", "selectbackground"),
             relief="flat",
             activestyle="none",
             height=10,
@@ -310,9 +592,9 @@ class CrosswordMixin:
             textvariable=self.crossword_answer_var,
             validate="key",
             validatecommand=validate_answer,
-            fg="#fff8dc",
-            bg="#101827",
-            insertbackground="#fff8dc",
+            fg=self.themed_legacy_color("#fff8dc", "fg"),
+            bg=control_bg,
+            insertbackground=self.themed_legacy_color("#fff8dc", "insertbackground"),
             relief="flat",
             font=("Microsoft YaHei UI", 21, "bold"),
         )
@@ -323,24 +605,35 @@ class CrosswordMixin:
         self.answer_entry = entry
         self.crossword_answer_var.trace_add("write", self.on_crossword_answer_change)
 
-        buttons = tk.Frame(left, bg="#182033")
+        buttons = tk.Frame(left, bg=surface_bg)
         buttons.grid(row=4, column=0, pady=14)
-        HoverButton(buttons, "确认", self.check_crossword_answer, width=118, height=52, accent="#9ff2b2").grid(row=0, column=0, padx=5)
+        confirm_button = HoverButton(buttons, "确认", self.check_crossword_answer, width=118, height=52, accent="#9ff2b2")
+        confirm_button.grid(row=0, column=0, padx=5)
+        self.tutorial_confirm_button = confirm_button
         self.crossword_hint_button = HoverButton(buttons, "提示", self.show_crossword_hint, width=118, height=52, accent="#f6d36b")
         self.crossword_hint_button.grid(row=0, column=1, padx=5)
         self.crossword_library_hint_button = HoverButton(buttons, "词库", self.show_crossword_library_hint, width=118, height=52, accent="#ffbd7e")
         self.crossword_library_hint_button.grid(row=0, column=2, padx=5)
         self.hint_button = self.crossword_hint_button
 
-        self.crossword_feedback = tk.Label(left, text="选择编号后输入中文答案。", fg="#9ca8c7", bg="#182033", justify="left", anchor="w", wraplength=340, font=("Microsoft YaHei UI", 12, "bold"))
+        self.crossword_feedback = tk.Label(left, text="选择编号后输入中文答案。", fg=muted_fg, bg=surface_bg, justify="left", anchor="w", wraplength=340, font=("Microsoft YaHei UI", 12, "bold"))
         self.crossword_feedback.grid(row=5, column=0, sticky="ew", padx=24, pady=(0, 10))
-        self.crossword_hint_box = tk.Text(left, height=5, width=1, wrap="char", fg="#dce6ff", bg="#111827", relief="flat", bd=0, highlightthickness=1, highlightbackground="#30384e", font=("Microsoft YaHei UI", 10))
+        self.crossword_hint_box = tk.Text(left, height=5, width=1, wrap="char", fg=text_fg, bg=panel_bg, relief="flat", bd=0, highlightthickness=1, highlightbackground=border_fg, font=("Microsoft YaHei UI", 10))
         self.crossword_hint_box.grid(row=6, column=0, sticky="ew", padx=24, pady=(0, 10))
         self.crossword_hint_box.config(state="disabled")
-        self.crossword_library_hint_label = tk.Label(left, text="", fg="#f6d36b", bg="#182033", justify="left", anchor="w", wraplength=340, font=("Microsoft YaHei UI", 10, "bold"))
+        self.crossword_library_hint_label = tk.Label(left, text="", fg=self.themed_legacy_color("#f6d36b", "fg"), bg=surface_bg, justify="left", anchor="w", wraplength=340, font=("Microsoft YaHei UI", 10, "bold"))
         self.crossword_library_hint_label.grid(row=7, column=0, sticky="ew", padx=24, pady=(0, 18))
 
-        self.crossword_canvas = tk.Canvas(right, bg="#050b1e", bd=0, highlightthickness=0)
+        def update_left_wraps(event):
+            wrap = max(300, event.width - 58)
+            if self.crossword_feedback:
+                self.crossword_feedback.configure(wraplength=wrap)
+            if self.crossword_library_hint_label:
+                self.crossword_library_hint_label.configure(wraplength=wrap)
+
+        left.bind("<Configure>", update_left_wraps, add="+")
+
+        self.crossword_canvas = tk.Canvas(right, bg=self.crossword_palette()["canvas_bg"], bd=0, highlightthickness=0)
         self.crossword_canvas.grid(row=0, column=0, sticky="nsew", padx=18, pady=18)
         self.crossword_canvas.bind("<Configure>", self.draw_crossword_canvas)
         self.crossword_canvas.bind("<ButtonPress-1>", self.on_crossword_canvas_press)
@@ -353,8 +646,12 @@ class CrosswordMixin:
         self.update_crossword_status()
         self.update_crossword_hint_box()
         self.update_hint_cooldown_button()
+        self.reveal_background_surface(left)
+        self.reveal_background_surface(right)
         entry.focus_set()
         self.crossword_tick()
+        if getattr(self, "tutorial_active", False):
+            self.render_crossword_tutorial_overlay()
 
     def crossword_selected_placement(self):
         if not self.crossword_puzzle:
@@ -388,6 +685,7 @@ class CrosswordMixin:
     def refresh_crossword_word_list(self):
         if not self.crossword_word_listbox or not self.crossword_puzzle:
             return
+        palette = self.crossword_palette()
         self.crossword_word_listbox.delete(0, tk.END)
         selected_index = 0
         for index, placement in enumerate(self.crossword_puzzle.placements):
@@ -402,9 +700,9 @@ class CrosswordMixin:
                 text = f"{text}  | {notice}"
             self.crossword_word_listbox.insert(tk.END, text)
             if placement.id in self.crossword_solved_ids:
-                self.crossword_word_listbox.itemconfig(index, foreground="#74d99f")
+                self.crossword_word_listbox.itemconfig(index, foreground=palette["number_solved_fg"])
             elif placement.intersections == 0:
-                self.crossword_word_listbox.itemconfig(index, foreground="#f6d36b")
+                self.crossword_word_listbox.itemconfig(index, foreground=self.theme_color("warning"))
             if placement.id == self.crossword_selected_id:
                 selected_index = index
         self.crossword_word_listbox.selection_clear(0, tk.END)
@@ -620,16 +918,17 @@ class CrosswordMixin:
         return self.crossword_puzzle.grid.get(cell, "") if self.crossword_puzzle else ""
 
     def crossword_cell_text(self, row, col):
+        palette = self.crossword_palette()
         cell = (row, col)
         if self.crossword_cell_resolved(cell):
             char = self.crossword_cell_visible_char(cell)
-            return char, "#e0fbff", ("Microsoft YaHei UI", 14, "bold")
+            return char, palette["cell_solved_text"], ("Microsoft YaHei UI", 14, "bold")
         placements = self.crossword_cell_to_placements.get(cell, [])
         selected = next(((placement, idx) for placement, idx in placements if placement.id == self.crossword_selected_id), None)
         placement, index = selected or placements[0]
         initials = self.crossword_initials_for_placement(placement)
         text = initials[index] if index < len(initials) else normalize_term_initials(placement.answer, "")[index:index + 1]
-        color = "#f0abfc" if text == "*" else "#bfdbfe"
+        color = palette["cell_mask"] if text == "*" else palette["cell_text"]
         return text, color, ("Consolas", 12, "bold")
 
     def flat_points(self, points):
@@ -725,6 +1024,7 @@ class CrosswordMixin:
     def draw_crossword_start_numbers(self, canvas, points, placements, unit):
         if not placements:
             return
+        palette = self.crossword_palette()
         center = self.polygon_center(points)
         ordered_corners = self.start_number_corner_order(points)
         placements = sorted(placements, key=lambda item: (0 if item.direction == "across" else 1, item.id))
@@ -735,14 +1035,14 @@ class CrosswordMixin:
             text = str(placement.id)
             radius_x = max(6, int(number_size * (0.48 * len(text) + 0.55)))
             selected_start = placement.id == self.crossword_selected_id
-            number_fill = "#e0f2fe" if selected_start else ("#67e8f9" if placement.id in self.crossword_solved_ids else "#93c5fd")
-            outline = "#7dd3fc" if selected_start else "#1d4ed8"
+            number_fill = palette["number_selected_fg"] if selected_start else (palette["number_solved_fg"] if placement.id in self.crossword_solved_ids else palette["number_fg"])
+            outline = palette["number_selected_outline"] if selected_start else palette["number_outline"]
             canvas.create_rectangle(
                 anchor[0] - radius_x,
                 anchor[1] - radius_y,
                 anchor[0] + radius_x,
                 anchor[1] + radius_y,
-                fill="#061128",
+                fill=palette["number_bg"],
                 outline=outline,
                 width=1,
             )
@@ -752,25 +1052,27 @@ class CrosswordMixin:
         canvas.create_polygon(self.flat_points(points), fill=fill, outline=outline, width=width)
 
     def draw_crossword_backdrop(self, canvas, width, height, origin_x, origin_y, board_width, board_height):
-        canvas.create_rectangle(0, 0, width, height, fill="#050b1e", outline="")
+        palette = self.crossword_palette()
+        canvas.create_rectangle(0, 0, width, height, fill=palette["canvas_bg"], outline="")
         for i in range(95):
             x = (i * 83 + i * i * 19) % max(width, 1)
             y = (i * 47 + i * i * 11) % max(height, 1)
             size = 1 + (1 if i % 17 == 0 else 0)
-            color = ("#1d4ed8", "#38bdf8", "#dbeafe")[i % 3]
+            color = palette["particle"][i % len(palette["particle"])]
             canvas.create_oval(x, y, x + size, y + size, fill=color, outline="")
         for i in range(0, max(width, 1), 92):
             y = (i * 37) % max(height, 1)
-            canvas.create_line(i - 70, y, i + 36, y + 10, fill="#0e2f5a", width=1)
+            canvas.create_line(i - 70, y, i + 36, y + 10, fill=palette["wind_line"], width=1)
         x1 = origin_x - 34
         y1 = origin_y - 34
         x2 = origin_x + board_width + 34
         y2 = origin_y + board_height + 34
-        canvas.create_rectangle(x1 - 8, y1 - 8, x2 + 8, y2 + 8, fill="#061128", outline="#0b2d5c", width=1)
-        canvas.create_rectangle(x1 - 3, y1 - 3, x2 + 3, y2 + 3, outline="#1d4ed8", width=1)
-        canvas.create_rectangle(x1, y1, x2, y2, outline="#38bdf8", width=1)
+        canvas.create_rectangle(x1 - 8, y1 - 8, x2 + 8, y2 + 8, fill=palette["frame_shadow"], outline=palette["frame_dark"], width=1)
+        canvas.create_rectangle(x1 - 3, y1 - 3, x2 + 3, y2 + 3, outline=palette["frame_mid"], width=1)
+        canvas.create_rectangle(x1, y1, x2, y2, outline=palette["frame_light"], width=1)
 
     def draw_crossword_axes(self, canvas, puzzle, unit, origin_x, origin_y, board_width, board_height):
+        palette = self.crossword_palette()
         axis_size = max(8, min(14, int(unit * 0.28)))
         font = ("Consolas", axis_size, "bold")
         letter_y_top = origin_y - max(15, int(unit * 0.34))
@@ -782,14 +1084,14 @@ class CrosswordMixin:
             centers = [self.crossword_cell_center(row, col, unit, origin_x, origin_y, shape)[0] for row in range(puzzle.height)]
             x = sum(centers) / max(len(centers), 1)
             label = self.crossword_column_label(col)
-            canvas.create_text(x, letter_y_top, text=label, fill="#93c5fd", font=font)
-            canvas.create_text(x, letter_y_bottom, text=label, fill="#38bdf8", font=font)
+            canvas.create_text(x, letter_y_top, text=label, fill=palette["axis_a"], font=font)
+            canvas.create_text(x, letter_y_bottom, text=label, fill=palette["axis_b"], font=font)
         for row in range(puzzle.height):
             centers = [self.crossword_cell_center(row, col, unit, origin_x, origin_y, shape)[1] for col in range(puzzle.width)]
             y = sum(centers) / max(len(centers), 1)
             label = str(row + 1)
-            canvas.create_text(number_x_left, y, text=label, fill="#93c5fd", anchor="e", font=font)
-            canvas.create_text(number_x_right, y, text=label, fill="#38bdf8", anchor="w", font=font)
+            canvas.create_text(number_x_left, y, text=label, fill=palette["axis_a"], anchor="e", font=font)
+            canvas.create_text(number_x_right, y, text=label, fill=palette["axis_b"], anchor="w", font=font)
 
     def crossword_cell_shape_label(self):
         labels = {
@@ -815,39 +1117,40 @@ class CrosswordMixin:
         selected = self.crossword_selected_placement()
         selected_cells = {(row, col) for row, col, _char in selected.cells} if selected else set()
         shape = self.crossword_shape()
+        palette = self.crossword_palette()
         for row in range(puzzle.height):
             for col in range(puzzle.width):
                 cell = (row, col)
                 points = self.crossword_cell_polygon(row, col, unit, origin_x, origin_y, shape)
                 center = self.polygon_center(points)
                 if cell not in puzzle.grid:
-                    self.draw_crossword_polygon(canvas, points, fill="#071225", outline="#102642", width=1)
+                    self.draw_crossword_polygon(canvas, points, fill=palette["empty_fill"], outline=palette["empty_outline"], width=1)
                     if (row + col) % 5 == 0:
                         cx, cy = center
                         mark = max(3, int(unit * 0.09))
-                        canvas.create_line(cx - mark, cy, cx + mark, cy, fill="#123b6d", width=1)
+                        canvas.create_line(cx - mark, cy, cx + mark, cy, fill=palette["empty_mark"], width=1)
                     continue
                 resolved = self.crossword_cell_resolved(cell)
                 highlighted = cell in selected_cells
                 intersecting = len(self.crossword_cell_to_placements.get(cell, [])) > 1
                 if highlighted:
-                    glow, fill, inset, outline = "#0ea5e9", "#1d4ed8", "#1e3a8a", "#7dd3fc"
+                    glow, fill, inset, outline = palette["selected_glow"], palette["selected_fill"], palette["selected_inset"], palette["selected_outline"]
                 elif resolved:
-                    glow, fill, inset, outline = "#0891b2", "#0f3f61", "#155e75", "#67e8f9"
+                    glow, fill, inset, outline = palette["resolved_glow"], palette["resolved_fill"], palette["resolved_inset"], palette["resolved_outline"]
                 else:
-                    glow, fill, inset, outline = "#123b6d", "#0b1e38", "#102a4c", "#2563eb"
-                self.draw_crossword_polygon(canvas, points, fill="#071225", outline="#102642", width=1)
+                    glow, fill, inset, outline = palette["cell_glow"], palette["cell_fill"], palette["cell_inset"], palette["cell_outline"]
+                self.draw_crossword_polygon(canvas, points, fill=palette["cell_base"], outline=palette["empty_outline"], width=1)
                 self.draw_crossword_polygon(canvas, self.scaled_polygon(points, center, 0.92), fill=glow, outline="")
                 self.draw_crossword_polygon(canvas, self.scaled_polygon(points, center, 0.84), fill=fill, outline=outline, width=2 if highlighted else 1)
                 if highlighted:
-                    self.draw_crossword_polygon(canvas, self.scaled_polygon(points, center, 0.72), fill="", outline="#e0f2fe", width=2)
+                    self.draw_crossword_polygon(canvas, self.scaled_polygon(points, center, 0.72), fill="", outline=palette["selected_inner_outline"], width=2)
                 self.draw_crossword_polygon(canvas, self.scaled_polygon(points, center, 0.58), fill=inset, outline="")
                 if intersecting and not resolved:
                     marker = max(2, int(unit * 0.06))
                     corner = max(points, key=lambda item: item[0] - item[1])
                     mx = corner[0] * 0.70 + center[0] * 0.30
                     my = corner[1] * 0.70 + center[1] * 0.30
-                    canvas.create_oval(mx - marker, my - marker, mx + marker, my + marker, fill="#22d3ee", outline="")
+                    canvas.create_oval(mx - marker, my - marker, mx + marker, my + marker, fill=palette["intersect"], outline="")
                 text, color, font = self.crossword_cell_text(row, col)
                 text_size = max(7, min(19, int(unit * (0.44 if shape != "triangle" else 0.38))))
                 canvas.create_text(center[0], center[1] + max(1, int(unit * 0.03)), text=text, fill=color, font=(font[0], text_size, font[2]))
@@ -909,7 +1212,7 @@ class CrosswordMixin:
         return max(current - penalty, 0)
 
     def crossword_score_weight(self):
-        if self.custom_mode:
+        if self.custom_mode or getattr(self, "tutorial_active", False):
             return 0.0
         return score_weight_for_difficulty(self.difficulty)
 
@@ -1018,12 +1321,12 @@ class CrosswordMixin:
             return
         if placement.id in self.crossword_solved_ids:
             if self.crossword_feedback:
-                self.crossword_feedback.config(text="这个编号已经填好了，换一个未完成的词。", fg="#9ca8c7")
+                self.crossword_feedback.config(text="这个编号已经填好了，换一个未完成的词。", fg=self.theme_color("muted"))
             return
         answer = (self.crossword_answer_var.get() if self.crossword_answer_var else "").strip()
         if not answer:
             if self.crossword_feedback:
-                self.crossword_feedback.config(text="先写一个答案。", fg="#f6d36b")
+                self.crossword_feedback.config(text="先写一个答案。", fg=self.theme_color("warning"))
             return
         elapsed = time.perf_counter() - self.start_time
         attempt = {
@@ -1050,10 +1353,13 @@ class CrosswordMixin:
                     extra = "（作答正确，但是填入默认翻译）"
                 elif filled_answer != answer and answers_equivalent(filled_answer, answer):
                     extra = "（已按标准写法填入）"
-                self.crossword_feedback.config(text=f"{placement.id:02d} 号已填入：{filled_answer}{extra}", fg="#9ff2b2")
+                self.crossword_feedback.config(text=f"{placement.id:02d} 号已填入：{filled_answer}{extra}", fg=self.theme_color("success"))
             self.refresh_crossword_word_list()
             self.draw_crossword_canvas()
             self.update_crossword_status()
+            if getattr(self, "tutorial_active", False):
+                self.finish_crossword_game(True)
+                return
             if len(self.crossword_solved_ids) >= len(self.crossword_puzzle.placements):
                 self.finish_crossword_game(True)
             return
@@ -1061,11 +1367,11 @@ class CrosswordMixin:
         self.crossword_attempts.append(attempt)
         if self.crossword_feedback:
             if reason == "locked_conflict":
-                self.crossword_feedback.config(text="这个词在本局词库里，但关键交叉/已揭晓字对不上；这些字不能换。", fg="#ff9b89")
+                self.crossword_feedback.config(text="这个词在本局词库里，但关键交叉/已揭晓字对不上；这些字不能换。", fg=self.theme_color("danger"))
             elif reason == "not_in_library":
-                self.crossword_feedback.config(text="这个词不在本局词库里。", fg="#ff9b89")
+                self.crossword_feedback.config(text="这个词不在本局词库里。", fg=self.theme_color("danger"))
             else:
-                self.crossword_feedback.config(text="还不对；非交叉格可用同词库、同题面首字母/掩码且交叉字一致的多解。", fg="#ff9b89")
+                self.crossword_feedback.config(text="还不对；非交叉格可用同词库、同题面首字母/掩码且交叉字一致的多解。", fg=self.theme_color("danger"))
 
     def unresolved_crossword_cells(self):
         if not self.crossword_puzzle:
@@ -1085,7 +1391,7 @@ class CrosswordMixin:
         candidates = self.unresolved_crossword_cells()
         if not candidates:
             if self.crossword_feedback:
-                self.crossword_feedback.config(text="所有格子都已经可见，剩下就靠填词了。", fg="#9ca8c7")
+                self.crossword_feedback.config(text="所有格子都已经可见，剩下就靠填词了。", fg=self.theme_color("muted"))
             return
         row, col = random.choice(candidates)
         char = self.crossword_puzzle.grid[(row, col)]
@@ -1111,6 +1417,8 @@ class CrosswordMixin:
         self.draw_crossword_canvas()
         self.update_crossword_status()
         self.start_hint_cooldown()
+        if getattr(self, "tutorial_active", False) and self.tutorial_step in {"question", "hint"}:
+            self.advance_tutorial_game_step("library")
 
     def show_crossword_library_hint(self):
         if not self.game_active or self.record_saved or not self.crossword_puzzle:
@@ -1130,16 +1438,21 @@ class CrosswordMixin:
             return
         placement = random.choice(candidates)
         self.crossword_library_hint_count += 1
-        cost = self.crossword_library_hint_cost()
-        self.add_crossword_penalty(cost)
+        normal_cost = self.crossword_library_hint_cost()
+        cost = 0 if getattr(self, "tutorial_active", False) else normal_cost
+        if cost:
+            self.add_crossword_penalty(cost)
         text = f"词库提示 {self.crossword_library_hint_count}/{self.crossword_library_hint_limit}：第 {placement.id:02d} 词属于：{placement.source_label}"
         self.crossword_library_hint_texts.append(text)
-        self.crossword_hint_penalties.append({"type": "crossword_library", "word_id": placement.id, "source_label": placement.source_label, "cost": cost})
+        self.crossword_hint_penalties.append({"type": "crossword_library", "word_id": placement.id, "source_label": placement.source_label, "cost": cost, "normal_cost": normal_cost})
         if self.crossword_library_hint_label:
-            self.crossword_library_hint_label.config(text=f"{text}\n-{cost} 分")
+            suffix = f"教程免费（正式局约 -{normal_cost} 分）" if getattr(self, "tutorial_active", False) else f"-{cost} 分"
+            self.crossword_library_hint_label.config(text=f"{text}\n{suffix}")
         if self.crossword_library_hint_count >= self.crossword_library_hint_limit and self.crossword_library_hint_button:
             self.crossword_library_hint_button.disable("已用完")
         self.update_crossword_status()
+        if getattr(self, "tutorial_active", False) and self.tutorial_step in {"question", "hint", "library"}:
+            self.advance_tutorial_game_step("answer")
 
     def selected_crossword_initials(self):
         placement = self.crossword_selected_placement()
@@ -1175,8 +1488,8 @@ class CrosswordMixin:
         if self.crossword_cheat_warnings <= 2:
             if not self.custom_mode:
                 self.complete_achievement("first_initial_block")
-            if self.crossword_feedback:
-                self.crossword_feedback.config(text=f"题面首字母已清空。警告 {self.crossword_cheat_warnings}/2；再来一次会触发隐藏彩蛋。", fg="#f6d36b")
+        if self.crossword_feedback:
+            self.crossword_feedback.config(text=f"题面首字母已清空。警告 {self.crossword_cheat_warnings}/2；再来一次会触发隐藏彩蛋。", fg=self.theme_color("warning"))
             self.after_idle(lambda: messagebox.showwarning("字谜输入警告", "题面首字母不应直接进入输入框。\n本次已清空；两次警告后再次触发会进入隐藏彩蛋。"))
             return
         self.crossword_cheat_pending = True
@@ -1313,6 +1626,9 @@ class CrosswordMixin:
         record_path = self.save_crossword_record(success, elapsed, "answered")
         self.game_active = False
         self.record_saved = True
+        if getattr(self, "tutorial_active", False):
+            self.show_tutorial_complete(elapsed, record_path)
+            return
         if self.rank_mode and self.rank_kind == "crossword":
             if success:
                 self.timed_correct = 1
@@ -1359,11 +1675,18 @@ class CrosswordMixin:
         score_weight = self.crossword_score_weight()
         is_rank = self.rank_mode and self.rank_kind == "crossword"
         is_custom = bool(self.custom_mode)
+        is_tutorial = bool(getattr(self, "tutorial_active", False))
         if is_custom:
             subject_value = self.custom_config.get("subject", "自定义")
             mode_value = "自定义"
             play_value = "自定义字谜"
             score_weight = 0.0
+        elif is_tutorial:
+            score_weight = 0.0
+            random_label = "真·随机" if self.is_true_random_mode() else "随机"
+            subject_value = random_label if self.is_crossword_random_scope() else self.mode
+            mode_value = subject_value
+            play_value = "教程字谜"
         else:
             random_label = "真·随机" if self.is_true_random_mode() else "随机"
             subject_value = self.rank_subject if is_rank else (random_label if self.is_crossword_random_scope() else self.mode)
@@ -1432,7 +1755,8 @@ class CrosswordMixin:
             "custom_challenge_target": self.custom_challenge_target() if (is_custom and self.is_custom_challenge_mode()) else 0,
             "custom_challenge_progress": len(self.crossword_solved_ids) if is_custom else 0,
             "rank_mode": 1 if is_rank else 0,
-            "exclude_from_stats": 1 if is_custom else 0,
+            "exclude_from_stats": 1 if (is_custom or is_tutorial) else 0,
+            "tutorial_mode": 1 if is_tutorial else 0,
             "rank_subject": self.rank_subject if is_rank else "",
             "rank_kind": "crossword" if is_rank else "",
             "rank_progress_key": rank_progress_key(self.rank_subject, "crossword") if is_rank else "",
@@ -1523,11 +1847,12 @@ class CrosswordMixin:
         self.play_music("result")
         self.play_sfx("fail" if (cheated or not success) else "success")
         self.clear(transition=False)
-        frame = tk.Frame(self.container, bg="#111725")
+        frame = tk.Frame(self.container, bg=self.theme_color("base"))
         frame.pack(fill="both", expand=True)
         self._start_backdrop("constellation", frame)
         card = tk.Frame(frame, bg="#182033", highlightbackground="#4b5877", highlightthickness=1)
         card.place(relx=0.5, rely=0.5, anchor="center", relwidth=0.74, relheight=0.76)
+        self.decorate_surface(card, "constellation", opacity_scale=0.26)
         if cheated:
             final_score = -abs(int(self.cheat_info.get("normal_score", self.crossword_current_score(elapsed))))
             title = "字谜隐藏彩蛋"
@@ -1586,3 +1911,4 @@ class CrosswordMixin:
         else:
             HoverButton(buttons, "再来一局", lambda: self.start_game(self.difficulty), width=180, height=62, accent="#9ff2b2").grid(row=0, column=0, padx=12)
             HoverButton(buttons, "返回模式", self.show_mode_select, width=180, height=62, accent="#9fb7ff").grid(row=0, column=1, padx=12)
+        self.reveal_background_surface(card)

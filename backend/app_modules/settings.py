@@ -2,30 +2,177 @@ from ._shared import *
 
 
 class SettingsMixin:
+    def settings_control_colors(self):
+        if self.backdrop_theme_id() == "blue":
+            return {
+                "base": "#182033",
+                "control": "#101827",
+                "panel": "#111827",
+                "card": "#151d2c",
+                "selected": "#20283a",
+                "locked": "#121827",
+                "border": "#30384e",
+                "locked_border": "#252d40",
+                "title": "#fff2bd",
+                "entry_text": "#fff8dc",
+                "scale_text": "#c8d2ee",
+                "text": "#dce6ff",
+                "muted": "#9ca8c7",
+                "subtle": "#64708f",
+                "accent": "#8fb6ff",
+                "success": "#9ff2b2",
+                "warning": "#f6d36b",
+                "danger": "#ff9b89",
+            }
+        return {
+            "base": self.theme_color("base"),
+            "control": self.theme_color("deep"),
+            "panel": self.theme_color("deep"),
+            "card": self.theme_color("deep"),
+            "selected": self.theme_color("deep"),
+            "locked": self.theme_color("deep"),
+            "border": self.theme_color("button_outline"),
+            "locked_border": self.theme_color("button_outline"),
+            "title": self.theme_color("title"),
+            "entry_text": self.theme_color("title"),
+            "scale_text": self.theme_color("text"),
+            "text": self.theme_color("text"),
+            "muted": self.theme_color("muted"),
+            "subtle": self.theme_color("subtle"),
+            "accent": self.theme_color("accent"),
+            "success": self.theme_color("success"),
+            "warning": self.theme_color("warning"),
+            "danger": self.theme_color("danger"),
+        }
+
+    def apply_settings_control_theme(self, root):
+        if self.backdrop_theme_id() == "blue" or not root:
+            return
+        colors = self.settings_control_colors()
+        bg_map = {
+            "#101827": colors["control"],
+            "#111827": colors["panel"],
+            "#151d2c": colors["card"],
+            "#20283a": colors["selected"],
+            "#121827": colors["locked"],
+            "#182033": colors["base"],
+        }
+        border_map = {
+            "#30384e": colors["border"],
+            "#3b4560": colors["border"],
+            "#4b5877": colors["border"],
+            "#252d40": colors["locked_border"],
+        }
+        fg_map = {
+            "#fff2bd": colors["title"],
+            "#fff8dc": colors["entry_text"],
+            "#dce6ff": colors["text"],
+            "#c8d2ee": colors["text"],
+            "#9ca8c7": colors["muted"],
+            "#7f8caf": colors["muted"],
+            "#64708f": colors["subtle"],
+            "#69738d": colors["subtle"],
+            "#8fb6ff": colors["accent"],
+            "#9fb7ff": colors["accent"],
+            "#b7f6ff": colors["accent"],
+            "#9ff2b2": colors["success"],
+            "#7fd9c6": colors["success"],
+            "#f6d36b": colors["warning"],
+            "#ffcf8f": colors["warning"],
+            "#ffbd7e": colors["warning"],
+            "#ff9b89": colors["danger"],
+            "#ff6b8a": colors["danger"],
+            "#8d96ad": colors["muted"],
+        }
+
+        def mapped(mapping, value):
+            return mapping.get(str(value or "").lower())
+
+        def configure_widget(widget):
+            for option, mapping in (
+                ("bg", bg_map),
+                ("activebackground", bg_map),
+                ("selectcolor", bg_map),
+                ("troughcolor", {"#101827": colors["control"]}),
+                ("highlightbackground", border_map),
+                ("highlightcolor", border_map),
+            ):
+                try:
+                    value = mapped(mapping, widget.cget(option))
+                    if value:
+                        widget.configure(**{option: value})
+                except tk.TclError:
+                    pass
+            for option in ("fg", "activeforeground", "insertbackground", "disabledforeground"):
+                try:
+                    value = mapped(fg_map, widget.cget(option))
+                    if value:
+                        widget.configure(**{option: value})
+                except tk.TclError:
+                    pass
+            try:
+                value = mapped(bg_map, widget.cget("disabledbackground"))
+                if value:
+                    widget.configure(disabledbackground=value)
+            except tk.TclError:
+                pass
+            try:
+                menu = widget["menu"]
+                if menu:
+                    menu.configure(
+                        fg=colors["title"],
+                        bg=colors["control"],
+                        activeforeground=colors["title"],
+                        activebackground=colors["panel"],
+                    )
+            except tk.TclError:
+                pass
+            except Exception:
+                pass
+            try:
+                children = widget.winfo_children()
+            except tk.TclError:
+                children = []
+            for child in children:
+                configure_widget(child)
+
+        configure_widget(root)
+
     def show_game_mechanics_page(self, tab):
         self.play_music("archive")
         self.mechanics_tab = tab
         self.clear()
         title = "快速上手" if tab == "quick" else "详细规则"
         self._topbar(title, self.show_game_mechanics)
-        frame = tk.Frame(self.container, bg="#111725")
+        frame = tk.Frame(self.container, bg=self.theme_color("base"))
         frame.pack(fill="both", expand=True, padx=34, pady=(0, 26))
         self._start_backdrop("grid", frame)
 
-        shell = tk.Frame(frame, bg="#182033", highlightbackground="#3b4560", highlightthickness=1)
+        shell_bg = self.theme_color("base")
+        shell_border = self.theme_color("button_outline", "#3b4560")
+        shell = tk.Frame(frame, bg=shell_bg, highlightbackground=shell_border, highlightthickness=1)
         shell.pack(fill="both", expand=True)
+        self.decorate_surface(shell, "grid", opacity_scale=0.35)
         try:
             content = GAME_MECHANICS_FILE.read_text(encoding="utf-8")
         except Exception:
             content = "暂时找不到 docs/game_mechanics.md。"
         quick, detail = split_mechanics_sections(content)
-        render_markdown(shell, quick if tab == "quick" else detail, mode=tab)
+        render_markdown(
+            shell,
+            quick if tab == "quick" else detail,
+            mode=tab,
+            incremental=tab == "detail",
+            first_batch=4,
+            batch_size=5,
+            batch_delay=150,
+        )
 
     def show_settings(self):
         self.play_music("settings")
         self.clear()
         self._topbar("玩家档案（旁观）" if self.is_spectating() else "设置", self.show_home)
-        frame = tk.Frame(self.container, bg="#111725")
+        frame = tk.Frame(self.container, bg=self.theme_color("base"))
         frame.pack(fill="both", expand=True, padx=34, pady=(0, 26))
         self._start_backdrop("particles", frame)
 
@@ -46,11 +193,13 @@ class SettingsMixin:
             rating_value,
             reveal_all=reveal_all,
         )
-        shell = self.make_scroll_frame(frame, bg="#111725")
+        shell = self.make_scroll_frame(frame, bg=self.theme_color("base"))
         left = tk.Frame(shell, bg="#182033", highlightbackground="#3b4560", highlightthickness=1)
         left.pack(side="left", fill="both", expand=True, padx=(0, 14))
         right = tk.Frame(shell, bg="#182033", highlightbackground="#3b4560", highlightthickness=1)
         right.pack(side="right", fill="both", expand=True, padx=(14, 0))
+        self.decorate_surface(left, "particles", opacity_scale=0.38)
+        self.decorate_surface(right, "particles", opacity_scale=0.38)
 
         tk.Label(left, text="玩家档案", fg="#8fb6ff", bg="#182033", font=("Microsoft YaHei UI", 18, "bold")).pack(anchor="w", padx=28, pady=(26, 14))
         profile_row = tk.Frame(left, bg="#182033")
@@ -194,9 +343,9 @@ class SettingsMixin:
                 selectcolor="#101827",
             )
             radio.pack(side="left")
-            canvas = tk.Canvas(cell, width=rank_badge_width, height=rank_badge_height, bg="#182033", bd=0, highlightthickness=0, cursor="hand2")
+            canvas = tk.Canvas(cell, width=rank_badge_width, height=rank_badge_height, bg=self.theme_color("base"), bd=0, highlightthickness=0, cursor="hand2")
             canvas.pack(side="left")
-            draw_rank_badge(canvas, badge_id, rank_badge_width, rank_badge_height, selected=badge_id == current_rank_badge_id)
+            draw_rank_badge(canvas, badge_id, rank_badge_width, rank_badge_height, selected=badge_id == current_rank_badge_id, transparent=True, background=self.theme_color("base"))
             canvas.bind("<Button-1>", lambda _event, value=badge_id: self.select_rank_badge(value))
             self.rank_badge_canvases.append((canvas, badge_id))
         if not unlocked_badges:
@@ -206,6 +355,7 @@ class SettingsMixin:
         self.settings_speed_var = tk.DoubleVar(value=float(self.player_settings.get("backdrop_speed", 1.0)))
         self.settings_density_var = tk.DoubleVar(value=float(self.player_settings.get("backdrop_density", 1.0)))
         self.settings_opacity_var = tk.DoubleVar(value=float(self.player_settings.get("backdrop_opacity", 1.0)))
+        self.settings_backdrop_theme_var = tk.StringVar(value=self.backdrop_theme_id())
         self.settings_font_scale_var = tk.DoubleVar(value=float(self.player_settings.get("font_scale", 1.0)))
         self.settings_music_volume_var = tk.DoubleVar(value=float(self.player_settings.get("music_volume", 0.55)))
         self.settings_sfx_volume_var = tk.DoubleVar(value=float(self.player_settings.get("sfx_volume", 0.75)))
@@ -225,6 +375,31 @@ class SettingsMixin:
         self.settings_font_scale_label = tk.Label(right, fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 12, "bold"))
         self.settings_music_volume_label = tk.Label(right, fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 12, "bold"))
         self.settings_sfx_volume_label = tk.Label(right, fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 12, "bold"))
+        tk.Label(right, text="背景主题", fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 12, "bold")).pack(anchor="w", padx=28, pady=(2, 8))
+        theme_grid = tk.Frame(right, bg="#182033")
+        theme_grid.pack(fill="x", padx=24, pady=(0, 16))
+        theme_order = ("blue", "green", "yellow", "red", "pink", "purple")
+        for index, theme_id in enumerate(theme_order):
+            palette = self.BACKDROP_THEMES[theme_id]
+            rb = tk.Radiobutton(
+                theme_grid,
+                text=palette["label"],
+                value=theme_id,
+                variable=self.settings_backdrop_theme_var,
+                fg=palette["title"],
+                bg=palette["base"],
+                activeforeground=palette["title"],
+                activebackground=palette["button_hover"],
+                selectcolor=palette["button_bg"],
+                indicatoron=False,
+                relief="flat",
+                font=("Microsoft YaHei UI", 10, "bold"),
+                padx=8,
+                pady=7,
+            )
+            rb.grid(row=index // 3, column=index % 3, sticky="ew", padx=5, pady=5)
+        for column in range(3):
+            theme_grid.grid_columnconfigure(column, weight=1, uniform="theme")
         self.settings_speed_label.pack(anchor="w", padx=28, pady=(2, 4))
         self.make_setting_scale(right, self.settings_speed_var, self.update_setting_labels).pack(fill="x", padx=24, pady=(0, 18))
         self.settings_density_label.pack(anchor="w", padx=28, pady=(2, 4))
@@ -359,12 +534,16 @@ class SettingsMixin:
             HoverButton(account_buttons, "修改密码", self.show_change_password, width=132, height=48, accent="#9ff2b2").grid(row=0, column=0, padx=(0, 8), pady=4)
             HoverButton(account_buttons, "切换账号", self.switch_account, width=132, height=48, accent="#8fb6ff").grid(row=0, column=1, padx=8, pady=4)
             HoverButton(account_buttons, "退出登录", self.logout_account, width=132, height=48, accent="#ff9b89").grid(row=0, column=2, padx=8, pady=4)
-            HoverButton(account_buttons, "重温教程", lambda: self.start_tutorial(auto=False), width=132, height=48, accent="#7fd9c6").grid(row=1, column=0, padx=(0, 8), pady=4)
+            HoverButton(account_buttons, "重温教程", self.show_tutorial_select, width=132, height=48, accent="#7fd9c6").grid(row=1, column=0, padx=(0, 8), pady=4)
             if is_admin_account(self.current_account):
                 HoverButton(account_buttons, "后台数据", self.show_admin_dashboard, width=132, height=48, accent="#f6d36b").grid(row=1, column=1, padx=8, pady=4)
                 HoverButton(account_buttons, "查看建议", self.show_feedback_admin, width=132, height=48, accent="#ffcf8f").grid(row=1, column=2, padx=8, pady=4)
+                HoverButton(account_buttons, "查看词库", self.show_admin_term_browser, width=132, height=48, accent="#b7f6ff").grid(row=2, column=1, padx=8, pady=4)
+        self.reveal_background_surface(shell)
+        self.apply_settings_control_theme(shell)
 
     def make_setting_scale(self, parent, variable, command, from_=0.4, to=10.0, resolution=0.1):
+        colors = self.settings_control_colors()
         scale = tk.Scale(
             parent,
             from_=from_,
@@ -373,10 +552,10 @@ class SettingsMixin:
             orient="horizontal",
             variable=variable,
             command=lambda _value: command(),
-            bg="#182033",
-            fg="#c8d2ee",
-            troughcolor="#101827",
-            activebackground="#8fb6ff",
+            bg=colors["base"],
+            fg=colors["scale_text"],
+            troughcolor=colors["control"],
+            activebackground=colors["accent"],
             highlightthickness=0,
             length=420,
             font=("Consolas", 10, "bold"),
@@ -384,18 +563,19 @@ class SettingsMixin:
         return scale
 
     def make_pixel_entry(self, parent, variable, _width):
+        colors = self.settings_control_colors()
         entry = tk.Entry(
             parent,
             textvariable=variable,
             width=7,
             justify="center",
-            fg="#fff8dc",
-            bg="#101827",
-            insertbackground="#fff8dc",
+            fg=colors["entry_text"],
+            bg=colors["control"],
+            insertbackground=colors["entry_text"],
             relief="flat",
             font=("Consolas", 13, "bold"),
         )
-        entry.configure(highlightthickness=1, highlightbackground="#30384e", highlightcolor="#8fb6ff")
+        entry.configure(highlightthickness=1, highlightbackground=colors["border"], highlightcolor=colors["accent"])
         return entry
 
     def update_setting_labels(self):
@@ -494,6 +674,7 @@ class SettingsMixin:
         options = self.filtered_title_options()
         if not options:
             tk.Label(frame, text="没有匹配的称号", fg="#64708f", bg="#111827", font=("Microsoft YaHei UI", 10)).grid(row=0, column=0, sticky="w", pady=8)
+            self.apply_settings_control_theme(frame)
             return
         visible_ids = {option[0] for option in options}
         current_id = self.settings_title_var.get() if self.settings_title_var else ""
@@ -537,11 +718,13 @@ class SettingsMixin:
             for widget in (card, marker, text_box, title_label, source_label):
                 widget.bind("<Button-1>", lambda _event, value=title_id: self.select_title(value))
             self.settings_title_cards.append((card, title_id))
+        self.apply_settings_control_theme(frame)
 
     def render_sfx_choice_options(self):
         frame = self.settings_sfx_options_frame
         if not frame or not frame.winfo_exists():
             return
+        colors = self.settings_control_colors()
         for child in frame.winfo_children():
             child.destroy()
         options = sfx_sound_display_options()
@@ -598,8 +781,9 @@ class SettingsMixin:
             )
             preview.grid(row=0, column=2, sticky="e", padx=(8, 10), pady=9)
             preview.bind("<Button-1>", lambda _event, value=event_id: self.preview_selected_sfx(value))
-            preview.bind("<Enter>", lambda _event, widget=preview: widget.configure(fg="#fff2bd"))
-            preview.bind("<Leave>", lambda _event, widget=preview: widget.configure(fg="#8fb6ff"))
+            preview.bind("<Enter>", lambda _event, widget=preview, color=colors["title"]: widget.configure(fg=color))
+            preview.bind("<Leave>", lambda _event, widget=preview, color=colors["accent"]: widget.configure(fg=color))
+        self.apply_settings_control_theme(frame)
 
     def preview_selected_sfx(self, event_id):
         if event_id not in self.settings_sfx_choice_vars:
@@ -684,6 +868,7 @@ class SettingsMixin:
                 for widget in (card, marker, text_box, *text_box.winfo_children()):
                     widget.bind("<Button-1>", lambda _event, value=music_id: self.select_home_music(value))
             self.settings_music_cards.append((card, music_id))
+        self.apply_settings_control_theme(frame)
 
     def home_music_unlock_label(self, option, unlocked, reveal_all=False):
         threshold = float(option.get("unlock_rating") or 0.0)
@@ -737,21 +922,25 @@ class SettingsMixin:
 
     def refresh_avatar_choices(self):
         current = int(self.settings_avatar_var.get())
+        colors = self.settings_control_colors()
         for index, canvas in enumerate(self.avatar_option_canvases):
             size = int(canvas.cget("width"))
             draw_avatar(canvas, index, size, selected=index == current)
             locked = index not in self.available_avatar_ids
             if locked:
                 pad = max(3, int(size * 0.06))
-                canvas.create_rectangle(pad, pad, size - pad, size - pad, fill="#111725", stipple="gray50", outline="#3b4560")
-                canvas.create_text(size / 2, size / 2, text="锁", fill="#9ca8c7", font=("Microsoft YaHei UI", 15, "bold"))
+                fill = "#111725" if self.backdrop_theme_id() == "blue" else colors["control"]
+                outline = "#3b4560" if self.backdrop_theme_id() == "blue" else colors["border"]
+                text_color = "#9ca8c7" if self.backdrop_theme_id() == "blue" else colors["muted"]
+                canvas.create_rectangle(pad, pad, size - pad, size - pad, fill=fill, stipple="gray50", outline=outline)
+                canvas.create_text(size / 2, size / 2, text="锁", fill=text_color, font=("Microsoft YaHei UI", 15, "bold"))
             canvas.configure(cursor="hand2" if not locked else "arrow")
             if index < len(self.avatar_option_labels):
                 unlock_text = self.avatar_unlock_label(index)
                 label = self.avatar_option_labels[index]
                 label.config(
                     text=unlock_text,
-                    fg="#9ca8c7" if not locked else "#64708f",
+                    fg=colors["muted"] if not locked else colors["subtle"],
                 )
 
     def avatar_unlock_label(self, avatar_id):
@@ -768,7 +957,8 @@ class SettingsMixin:
         for canvas, item_id in self.rank_badge_canvases:
             width = int(canvas.cget("width"))
             height = int(canvas.cget("height"))
-            draw_rank_badge(canvas, item_id, width, height, selected=item_id == badge_id)
+            canvas.configure(bg=self.theme_color("base"))
+            draw_rank_badge(canvas, item_id, width, height, selected=item_id == badge_id, transparent=True, background=self.theme_color("base"))
 
     def save_settings(self):
         if self.block_spectator_action("保存设置"):
@@ -798,6 +988,7 @@ class SettingsMixin:
             "avatar_id": avatar_id,
             "title_id": title_id,
             "rank_badge_id": rank_badge_id,
+            "backdrop_theme": self.settings_backdrop_theme_var.get() if self.settings_backdrop_theme_var else self.backdrop_theme_id(),
             "backdrop_speed": self.settings_speed_var.get(),
             "backdrop_density": self.settings_density_var.get(),
             "backdrop_opacity": self.settings_opacity_var.get(),
@@ -812,6 +1003,7 @@ class SettingsMixin:
             "tutorial_completed": self.player_settings.get("tutorial_completed", True),
             "admin_reveal_hidden": reveal_all,
         })
+        self.apply_backdrop_theme()
         self.apply_ui_font_scale()
         self.apply_audio_settings()
         if not self.fullscreen:

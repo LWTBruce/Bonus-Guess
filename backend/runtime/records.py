@@ -126,7 +126,7 @@ def add_record_entry_to_cache(record, path, record_dir=None):
 def record_entries_signature(record_dir=None):
     root = record_dir or RECORD_DIR
     root_key, cached = _record_root_cache(root)
-    if not cached:
+    if not cached or cached.get("entries") is None:
         load_record_entries(root)
         root_key, cached = _record_root_cache(root)
     entries = cached.get("entries") if cached else []
@@ -790,7 +790,9 @@ def random_mask_positions(initials, gameplay_difficulty):
     if not table:
         return []
     length = len(initials)
-    if length >= 6:
+    if length >= 8 and 8 in table:
+        tier = 8
+    elif length >= 6:
         tier = 6
     elif length >= 5:
         tier = 5
@@ -897,8 +899,14 @@ def _copy_achievements_data(data):
 
 def load_record_summary(record_dir=None, achievements_data=None):
     root = record_dir or RECORD_DIR
-    records = load_record_entries(root)
-    root_key, revision, count = record_entries_signature(root)
+    root_key, cached = _record_root_cache(root)
+    records = None
+    if not cached or cached.get("entries") is None:
+        records = load_record_entries(root)
+        root_key, cached = _record_root_cache(root)
+    revision = int((cached or {}).get("revision") or 0)
+    cached_entries = (cached or {}).get("entries") or []
+    count = len(cached_entries)
     if achievements_data is None:
         achievements_path = (root / ACHIEVEMENTS_FILE.name) if record_dir is not None else ACHIEVEMENTS_FILE
         achievements_data = read_achievements(achievements_path)
@@ -906,6 +914,8 @@ def load_record_summary(record_dir=None, achievements_data=None):
     cached = _RECORD_SUMMARY_CACHE.get(cache_key)
     if cached is not None:
         return cached
+    if records is None:
+        records = _copy_record_entries(cached_entries)
     summary = summarize_records(records, achievements_data=achievements_data)
     _RECORD_SUMMARY_CACHE[cache_key] = summary
     return summary

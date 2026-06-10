@@ -108,73 +108,63 @@ class ModeFlowMixin:
         self.play_music("menu")
         self.clear(transition=transition)
         self._start_backdrop("lines")
+        self.add_backdrop_panel(relx=0.74, rely=0.50, relwidth=0.38, relheight=0.76)
         self._topbar("选择模式", self.show_home)
         if self.tutorial_active:
             self.tutorial_step = "mode"
-            self.selected_subject = "物理模式"
-            self.selected_game_group = "普通"
-            self.selected_rule_mode = "自由"
-            self.selected_play_mode = "自由"
+            self.apply_tutorial_mode_selection()
         self.normalize_mode_selection_state()
 
-        left = tk.Frame(self.container, bg="#111725")
-        left.place(x=52, y=128)
-        right_panel = WobblePanel(self.container)
-        right_panel.place(relx=0.55, rely=0.13, relwidth=0.41, relheight=0.80)
-        right = right_panel.content
+        base_bg = self.theme_color("base")
 
         subject_locked = self.selected_game_group == "随机"
         tk.Label(
-            left,
+            self.container,
             text="学科选择",
-            fg="#53627f" if subject_locked else "#8fb6ff",
-            bg="#111725",
+            fg=self.theme_color("subtle") if subject_locked else self.theme_color("accent"),
+            bg=base_bg,
             font=("Microsoft YaHei UI", 16, "bold"),
-        ).pack(anchor="w", pady=(0, 12))
-        subject_row = tk.Frame(left, bg="#111725")
-        subject_row.pack(anchor="w", pady=(0, 8 if subject_locked else 34))
+        ).place(x=52, y=126)
         self.choice_button(
-            subject_row,
+            self.container,
             "物理",
             subject_locked or self.selected_subject == "物理模式",
             lambda: self.set_mode_choice(subject="物理模式"),
             enabled=not subject_locked,
-        ).grid(row=0, column=0, padx=(0, 14))
+        ).place(x=52, y=174)
         self.choice_button(
-            subject_row,
+            self.container,
             "数学",
             subject_locked or self.selected_subject == "数学模式",
             lambda: self.set_mode_choice(subject="数学模式"),
             enabled=not subject_locked,
-        ).grid(row=0, column=1, padx=14)
+        ).place(x=300, y=174)
         if subject_locked:
             tk.Label(
-                left,
+                self.container,
                 text="随机模式默认合并物理与数学词库",
-                fg="#69738d",
-                bg="#111725",
+                fg=self.theme_color("subtle"),
+                bg=base_bg,
                 font=("Microsoft YaHei UI", 10, "bold"),
-            ).pack(anchor="w", pady=(0, 28))
+            ).place(x=52, y=250)
 
-        tk.Label(left, text="游戏模式", fg="#8fb6ff", bg="#111725", font=("Microsoft YaHei UI", 16, "bold")).pack(anchor="w", pady=(0, 10))
+        game_y = 282 if subject_locked else 300
+        tk.Label(self.container, text="游戏模式", fg=self.theme_color("accent"), bg=base_bg, font=("Microsoft YaHei UI", 16, "bold")).place(x=52, y=game_y)
 
-        group_row = tk.Frame(left, bg="#111725")
-        group_row.pack(anchor="w", pady=(0, 26))
         group_options = [("普通", "#9ff2b2"), ("随机", "#c4b5fd"), ("段位", "#f6d36b"), ("自定义", "#ffbd7e")]
         for index, (label, accent) in enumerate(group_options):
             self.choice_button(
-                group_row,
+                self.container,
                 label,
                 self.selected_game_group == label,
                 lambda label=label: self.set_mode_choice(game_group=label),
                 accent=accent,
                 width=150,
                 height=54,
-            ).grid(row=0, column=index, padx=(0, 12), sticky="w")
+            ).place(x=52 + index * 170, y=game_y + 48)
 
-        tk.Label(left, text="玩法选择", fg="#8fb6ff", bg="#111725", font=("Microsoft YaHei UI", 16, "bold")).pack(anchor="w", pady=(0, 10))
-        play_grid = tk.Frame(left, bg="#111725")
-        play_grid.pack(anchor="w")
+        play_y = game_y + 168
+        tk.Label(self.container, text="玩法选择", fg=self.theme_color("accent"), bg=base_bg, font=("Microsoft YaHei UI", 16, "bold")).place(x=52, y=play_y)
         accents = {
             "自由": "#9ff2b2",
             "限时": "#f6d36b",
@@ -184,23 +174,25 @@ class ModeFlowMixin:
         }
         for index, rule in enumerate(self.rule_modes_for_group(self.selected_game_group)):
             self.choice_button(
-                play_grid,
+                self.container,
                 rule,
                 self.selected_rule_mode == rule,
                 lambda rule=rule: self.set_mode_choice(rule_mode=rule),
                 accent=accents.get(rule, "#8fb6ff"),
                 width=150 if self.selected_game_group != "自定义" else 220,
                 height=54,
-            ).grid(row=0, column=index, padx=(0, 12), pady=5, sticky="w")
-        next_button = HoverButton(left, "下一步", self.confirm_mode_choice, width=250, height=60, accent="#8fb6ff")
-        next_button.pack(anchor="w", pady=(22, 0))
+            ).place(x=52 + index * 170, y=play_y + 48)
+        next_button = HoverButton(self.container, "下一步", self.confirm_mode_choice, width=250, height=60, accent="#8fb6ff")
+        next_button.place(x=52, y=play_y + 146)
 
-        self.render_mode_explanation(right)
+        self.render_mode_explanation(self.container)
+        self.reveal_background_surface(self.container)
         if self.tutorial_active and self.tutorial_step == "mode":
+            tutorial_play = self.tutorial_play_label()
             self.render_tutorial_overlay(
                 next_button,
-                "第二步：选择物理自由练习",
-                "教程已经帮你固定为“物理 / 普通 / 自由”。点击高光的“下一步”，去选择入门难度。",
+                f"第二步：选择物理{tutorial_play}练习",
+                f"教程已经帮你固定为“物理 / 普通 / {tutorial_play}”。点击高光的“下一步”，去选择入门难度。",
             )
 
     def choice_button(self, parent, text, selected, command, accent="#8fb6ff", width=220, height=62, enabled=True):
@@ -233,10 +225,7 @@ class ModeFlowMixin:
         self.custom_config = {}
         if self.tutorial_active:
             self.tutorial_step = "difficulty"
-            self.selected_subject = "物理模式"
-            self.selected_game_group = "普通"
-            self.selected_rule_mode = "自由"
-            self.selected_play_mode = "自由"
+            self.apply_tutorial_mode_selection()
         self.normalize_mode_selection_state()
         selected = self.selected_play_mode
         random_base = self.random_play_mode_base(selected)
@@ -264,8 +253,18 @@ class ModeFlowMixin:
         self.show_difficulty()
 
     def render_mode_explanation(self, parent):
-        for child in parent.winfo_children():
-            child.destroy()
+        overlay = parent is self.container
+        if overlay:
+            for child in getattr(self, "_mode_explanation_widgets", []):
+                try:
+                    child.destroy()
+                except tk.TclError:
+                    pass
+            self._mode_explanation_widgets = []
+        else:
+            for child in parent.winfo_children():
+                child.destroy()
+        bg = self.theme_color("base") if overlay else parent.cget("bg")
         subject_text = "物理词库" if self.selected_subject == "物理模式" else "数学词库"
         self.normalize_mode_selection_state()
         selected = self.selected_play_mode
@@ -341,17 +340,35 @@ class ModeFlowMixin:
                 f"从{mode_subject_text}中按难度抽取单题。",
                 "答对后立即结算，适合练习和熟悉词库。",
             ]
-        tk.Label(parent, text=group_name, fg="#8fb6ff", bg="#182033", font=("Microsoft YaHei UI", 12, "bold")).pack(anchor="w", padx=26, pady=(24, 4))
-        tk.Label(parent, text=title, fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 22, "bold")).pack(anchor="w", padx=26, pady=(0, 14))
-        for line in lines:
-            tk.Label(parent, text=self.smart_wrap_text(line, 24), fg="#dce6ff", bg="#182033", justify="left", font=("Microsoft YaHei UI", 13)).pack(anchor="w", padx=26, pady=6)
         if selected == "自定义":
             footer = "下一步进入自定义配置页。"
         elif selected in {"限时段位", "线索段位", "字谜段位"}:
             footer = "下一步选择段位。限时和线索段位不计总积分和 Rating；字谜段位按整图难度、用时和积分计入 Rating。"
         else:
             footer = "下一步选择选词难度。难度会影响词条难度分布、提示代价、掩码或破碎线索概率和最终 Rating。"
-        tk.Label(parent, text=self.smart_wrap_text(footer, 23), fg="#9ca8c7", bg="#182033", justify="left", font=("Microsoft YaHei UI", 11)).pack(anchor="w", padx=26, pady=(18, 0))
+        if overlay:
+            content = []
+            y = 0
+
+            def add_text(text, role, font, dy, width=None):
+                nonlocal y
+                content.append({"text": text, "role": role, "font": font, "y": y, "width": width or 430})
+                y += dy
+
+            add_text(group_name, "accent", ("Microsoft YaHei UI", 12, "bold"), 42)
+            add_text(title, "title", ("Microsoft YaHei UI", 24, "bold"), 78)
+            for line in lines:
+                add_text(line, "text", ("Microsoft YaHei UI", 13), 62)
+            y += 14
+            add_text(footer, "muted", ("Microsoft YaHei UI", 11), 0)
+            self.set_backdrop_panel_content(content)
+            return
+
+        tk.Label(parent, text=group_name, fg=self.theme_color("accent"), bg=bg, font=("Microsoft YaHei UI", 12, "bold")).pack(anchor="w", padx=26, pady=(24, 4))
+        tk.Label(parent, text=title, fg=self.theme_color("title"), bg=bg, font=("Microsoft YaHei UI", 22, "bold")).pack(anchor="w", padx=26, pady=(0, 14))
+        for line in lines:
+            tk.Label(parent, text=self.smart_wrap_text(line, 24), fg=self.theme_color("text"), bg=bg, justify="left", font=("Microsoft YaHei UI", 13)).pack(anchor="w", padx=26, pady=6)
+        tk.Label(parent, text=self.smart_wrap_text(footer, 23), fg=self.theme_color("muted"), bg=bg, justify="left", font=("Microsoft YaHei UI", 11)).pack(anchor="w", padx=26, pady=(18, 0))
 
     def show_custom_config(self):
         if self.block_spectator_action("进入自定义玩法"):
@@ -361,21 +378,25 @@ class ModeFlowMixin:
         self.clear()
         self._start_backdrop("grid")
         self._topbar("自定义玩法编辑器", self.show_mode_select)
-        frame = tk.Frame(self.container, bg="#111725")
+        base_bg = self.theme_color("base")
+        frame = tk.Frame(self.container, bg=base_bg)
         frame.pack(fill="both", expand=True, padx=34, pady=(0, 26))
         frame.grid_rowconfigure(0, weight=1)
         frame.grid_columnconfigure(0, weight=2, minsize=280)
         frame.grid_columnconfigure(1, weight=4, minsize=480)
         frame.grid_columnconfigure(2, weight=3, minsize=340)
 
-        blueprint_panel = tk.Frame(frame, bg="#182033", highlightbackground="#3b4560", highlightthickness=1)
+        blueprint_panel = tk.Frame(frame, bg=base_bg, highlightbackground=self.theme_color("grid_a"), highlightthickness=1)
         blueprint_panel.grid(row=0, column=0, sticky="nsew", padx=(0, 14))
-        params_panel = tk.Frame(frame, bg="#182033", highlightbackground="#3b4560", highlightthickness=1)
+        params_panel = tk.Frame(frame, bg=base_bg, highlightbackground=self.theme_color("grid_a"), highlightthickness=1)
         params_panel.grid(row=0, column=1, sticky="nsew", padx=(0, 14))
-        right = tk.Frame(frame, bg="#182033", highlightbackground="#3b4560", highlightthickness=1)
+        right = tk.Frame(frame, bg=base_bg, highlightbackground=self.theme_color("grid_a"), highlightthickness=1)
         right.grid(row=0, column=2, sticky="nsew")
-        blueprint = self.make_scroll_frame(blueprint_panel, bg="#182033")
-        params = self.make_scroll_frame(params_panel, bg="#182033")
+        self.decorate_surface(blueprint_panel, "grid", opacity_scale=0.30)
+        self.decorate_surface(params_panel, "lines", opacity_scale=0.30)
+        self.decorate_surface(right, "particles", opacity_scale=0.28)
+        blueprint = self.make_scroll_frame(blueprint_panel, bg=base_bg)
+        params = self.make_scroll_frame(params_panel, bg=base_bg)
 
         self.custom_subject_var = tk.StringVar(value=self.selected_subject)
         self.custom_play_var = tk.StringVar(value="首字母")
@@ -474,10 +495,15 @@ class ModeFlowMixin:
         self.custom_summary_label = tk.Label(right, text="", fg="#c8d2ee", bg="#182033", justify="left", anchor="w", wraplength=300, font=("Microsoft YaHei UI", 10, "bold"))
         self.custom_summary_label.pack(fill="x", padx=24, pady=(0, 18))
         self.refresh_custom_file_list()
+        self.reveal_background_surface(frame)
 
     def custom_option_group(self, parent, title, variable, options, command):
-        tk.Label(parent, text=title, fg="#8fb6ff", bg="#182033", font=("Microsoft YaHei UI", 13, "bold")).pack(anchor="w", padx=30, pady=(11, 5))
-        row = tk.Frame(parent, bg="#182033")
+        try:
+            bg = parent.cget("bg")
+        except tk.TclError:
+            bg = self.theme_color("base")
+        tk.Label(parent, text=title, fg="#8fb6ff", bg=bg, font=("Microsoft YaHei UI", 13, "bold")).pack(anchor="w", padx=30, pady=(11, 5))
+        row = tk.Frame(parent, bg=bg)
         row.pack(anchor="w", padx=28)
         for option in options:
             tk.Radiobutton(
@@ -487,16 +513,20 @@ class ModeFlowMixin:
                 variable=variable,
                 command=command,
                 fg="#dce6ff",
-                bg="#182033",
+                bg=bg,
                 activeforeground="#fff2bd",
-                activebackground="#182033",
+                activebackground=bg,
                 selectcolor="#101827",
                 font=("Microsoft YaHei UI", 11, "bold"),
             ).pack(side="left", padx=4)
 
     def custom_range_inputs(self, parent, title, first_var, second_var, note=""):
-        tk.Label(parent, text=title, fg="#8fb6ff", bg="#182033", font=("Microsoft YaHei UI", 13, "bold")).pack(anchor="w", padx=30, pady=(11, 5))
-        row = tk.Frame(parent, bg="#182033")
+        try:
+            bg = parent.cget("bg")
+        except tk.TclError:
+            bg = self.theme_color("base")
+        tk.Label(parent, text=title, fg="#8fb6ff", bg=bg, font=("Microsoft YaHei UI", 13, "bold")).pack(anchor="w", padx=30, pady=(11, 5))
+        row = tk.Frame(parent, bg=bg)
         row.pack(anchor="w", padx=30)
         entries = []
         for index, variable in enumerate([first_var] if second_var is None else [first_var, second_var]):
@@ -504,9 +534,9 @@ class ModeFlowMixin:
             entry.grid(row=0, column=index * 2, ipady=5)
             entries.append(entry)
             if second_var is not None and index == 0:
-                tk.Label(row, text=" 至 ", fg="#9ca8c7", bg="#182033", font=("Microsoft YaHei UI", 11)).grid(row=0, column=1)
+                tk.Label(row, text=" 至 ", fg="#9ca8c7", bg=bg, font=("Microsoft YaHei UI", 11)).grid(row=0, column=1)
         if note:
-            tk.Label(row, text=f"  {note}", fg="#9ca8c7", bg="#182033", font=("Microsoft YaHei UI", 10, "bold")).grid(row=0, column=3 if second_var is not None else 1, padx=(6, 0), sticky="w")
+            tk.Label(row, text=f"  {note}", fg="#9ca8c7", bg=bg, font=("Microsoft YaHei UI", 10, "bold")).grid(row=0, column=3 if second_var is not None else 1, padx=(6, 0), sticky="w")
         return entries
 
     def update_custom_option_states(self):
@@ -671,7 +701,8 @@ class ModeFlowMixin:
         rank_label = rank_kind_label(rank_kind)
         progress_key = rank_progress_key(self.mode, rank_kind)
         self._topbar(f"{subject_label(self.mode)}{rank_label}挑战", self.show_mode_select)
-        frame = tk.Frame(self.container, bg="#111725")
+        base_bg = self.theme_color("base")
+        frame = tk.Frame(self.container, bg=base_bg)
         frame.pack(fill="both", expand=True, padx=28, pady=(0, 26))
         progress = read_rank_progress()
         subject_info = (progress.get("subjects") or {}).get(progress_key, {})
@@ -683,24 +714,25 @@ class ModeFlowMixin:
         else:
             visible_ranks = visible_rank_challenges(subject_info, rank_kind)
 
-        left = tk.Frame(frame, bg="#111725", width=360)
+        left = tk.Frame(frame, bg=base_bg, width=360)
         left.pack(side="left", fill="y", padx=(0, 24))
         left.pack_propagate(False)
-        right = tk.Frame(frame, bg="#182033", highlightbackground="#3b4560", highlightthickness=1)
+        right = tk.Frame(frame, bg=base_bg, highlightbackground=self.theme_color("grid_a"), highlightthickness=1)
         right.pack(side="left", fill="both", expand=True)
+        self.decorate_surface(right, "lines", opacity_scale=0.26)
 
-        tk.Label(left, text="选择段位", fg="#8fb6ff", bg="#111725", font=("Microsoft YaHei UI", 16, "bold")).pack(anchor="w", pady=(6, 14))
+        tk.Label(left, text="选择段位", fg="#8fb6ff", bg=base_bg, font=("Microsoft YaHei UI", 16, "bold")).pack(anchor="w", pady=(6, 14))
         tk.Label(
             left,
             text="已通过的段位会带有菱形标记。\n可挑战段位会随进度开放。",
             fg="#7f8caf",
-            bg="#111725",
+            bg=base_bg,
             justify="left",
             font=("Microsoft YaHei UI", 10, "bold"),
         ).pack(anchor="w", fill="x", pady=(0, 12))
-        button_area = tk.Frame(left, bg="#111725")
+        button_area = tk.Frame(left, bg=base_bg)
         button_area.pack(fill="both", expand=True)
-        button_list = self.make_scroll_frame(button_area, bg="#111725")
+        button_list = self.make_scroll_frame(button_area, bg=base_bg)
         button_height = 34
         for index, rank in enumerate(visible_ranks):
             passed = rank["id"] in passed_ids
@@ -740,15 +772,17 @@ class ModeFlowMixin:
             font=("Microsoft YaHei UI", 10, "bold"),
         ).grid(row=1, column=1, sticky="e", padx=(20, 0), pady=(8, 0))
 
-        list_shell = tk.Frame(right, bg="#182033")
+        list_shell = tk.Frame(right, bg=base_bg)
         list_shell.pack(fill="both", expand=True, padx=24, pady=(0, 22))
-        rank_grid = self.make_scroll_frame(list_shell, bg="#182033")
+        rank_grid = self.make_scroll_frame(list_shell, bg=base_bg)
         columns = 2 if max(self.winfo_width(), int(self.player_settings.get("window_width", 1274))) >= 1180 else 1
         for column in range(columns):
             rank_grid.grid_columnconfigure(column, weight=1, uniform="rank")
         wraplength = 460 if columns == 2 else 820
         for index, rank in enumerate(visible_ranks):
             self.render_rank_select_card(rank_grid, index, columns, rank, subject_info, passed_ids, wraplength)
+        self.reveal_background_surface(left)
+        self.reveal_background_surface(right)
 
     def render_rank_select_card(self, parent, index, columns, rank, subject_info, passed_ids, wraplength):
         passed = rank["id"] in passed_ids
@@ -963,16 +997,10 @@ class ModeFlowMixin:
         self.play_music("menu")
         self.clear()
         self._start_backdrop("particles")
+        self.add_backdrop_panel(relx=0.63, rely=0.50, relwidth=0.56, relheight=0.76)
         if self.tutorial_active:
             self.tutorial_step = "difficulty"
-            self.selected_subject = "物理模式"
-            self.selected_game_group = "普通"
-            self.selected_rule_mode = "自由"
-            self.selected_play_mode = "自由"
-            self.mode = "物理模式"
-            self.play_mode = "自由"
-            self.true_random_mode = False
-            self.random_group_mode = False
+            self.apply_tutorial_mode_selection()
         if self.is_true_random_mode():
             title = f"真·随机 / {self.play_mode}"
         elif self.is_random_group_mode():
@@ -983,13 +1011,8 @@ class ModeFlowMixin:
             title = f"{self.mode} / {self.play_mode}"
         self._topbar(title, self.show_mode_select)
 
-        left = tk.Frame(self.container, bg="#111725")
-        left.place(x=52, y=128)
-        right_panel = WobblePanel(self.container)
-        right_panel.place(relx=0.36, rely=0.13, relwidth=0.60, relheight=0.80)
-        right = right_panel.content
-
-        tk.Label(left, text="选择难度", fg="#8fb6ff", bg="#111725", font=("Microsoft YaHei UI", 16, "bold")).pack(anchor="w", pady=(0, 14))
+        base_bg = self.theme_color("base")
+        tk.Label(self.container, text="选择难度", fg=self.theme_color("accent"), bg=base_bg, font=("Microsoft YaHei UI", 16, "bold")).place(x=52, y=126)
         options = [
             ("入门", "#7fd9c6"),
             ("简单", "#9ff2b2"),
@@ -999,12 +1022,12 @@ class ModeFlowMixin:
         options.append(("噩梦", "#c084fc"))
         if self.is_random_group_mode():
             options.append(("真·随机", "#c4b5fd"))
-        elif self.play_mode != "字谜":
+        else:
             options.append(("混合模式", "#9fb7ff"))
         intro_button = None
-        for text, accent in options:
+        for index, (text, accent) in enumerate(options):
             button = HoverButton(
-                left,
+                self.container,
                 text,
                 lambda d=text: self.start_game(d),
                 width=250,
@@ -1013,10 +1036,11 @@ class ModeFlowMixin:
             )
             if self.tutorial_active and text != "入门":
                 button.disable("教程固定")
-            button.pack(anchor="w", pady=9)
+            button.place(x=52, y=176 + index * 76)
             if text == "入门":
                 intro_button = button
-        self.render_difficulty_explanation(right, options)
+        self.render_difficulty_explanation(self.container, options)
+        self.reveal_background_surface(self.container)
         if self.tutorial_active and intro_button:
             self.render_tutorial_overlay(
                 intro_button,
@@ -1032,6 +1056,15 @@ class ModeFlowMixin:
         self.show_difficulty()
 
     def render_difficulty_explanation(self, parent, options):
+        overlay = parent is self.container
+        if overlay:
+            for child in getattr(self, "_difficulty_explanation_widgets", []):
+                try:
+                    child.destroy()
+                except tk.TclError:
+                    pass
+            self._difficulty_explanation_widgets = []
+        bg = self.theme_color("base") if overlay else parent.cget("bg")
         random_scope = self.is_random_group_mode()
         subject = "全部物理和数学词库" if random_scope else ("物理词库" if self.mode == "物理模式" else "数学词库")
         if self.play_mode == "限时":
@@ -1039,15 +1072,11 @@ class ModeFlowMixin:
         elif self.play_mode == "线索":
             mode_text = "不显示首字母，改用五句递进线索作答；初始显示两句，继续追加线索按规则处理。线索模式与自由模式使用同一套词库范围。"
         elif self.play_mode == "字谜":
-            mode_text = "多词交叉填格：入门到噩梦约为 8/11/15/18/22 格，词量按占空比和平均词长估算。" + ("随机字谜会跨物理和数学同难度词库；真·随机会读取全部词库。" if random_scope else "")
+            mode_text = "多词交叉填格：入门到噩梦约为 8/11/15/18/22 格，词量按占空比和平均词长估算。" + ("随机字谜会跨物理和数学同难度词库；真·随机会读取全部词库。" if random_scope else "混合字谜会读取当前学科下全部词库。")
         else:
             mode_text = "单题练习，答完后进入结算。" + ("随机模式会跨物理和数学同难度词库；真·随机会读取全部词库。" if random_scope else "")
         if random_scope and self.play_mode in {"限时", "线索"}:
             mode_text += " 入门到噩梦只限定选词难度；真·随机会改为全库五档等概率抽查。"
-        tk.Label(parent, text="词库介绍", fg="#fff2bd", bg="#182033", font=("Microsoft YaHei UI", 22, "bold")).pack(anchor="w", padx=26, pady=(26, 12))
-        tk.Label(parent, text=f"范围：{subject}", fg="#dce6ff", bg="#182033", font=("Microsoft YaHei UI", 13, "bold")).pack(anchor="w", padx=26, pady=5)
-        tk.Label(parent, text=self.smart_wrap_text(mode_text, 30), fg="#dce6ff", bg="#182033", justify="left", font=("Microsoft YaHei UI", 12)).pack(anchor="w", padx=26, pady=5)
-        tk.Label(parent, text="难度说明", fg="#8fb6ff", bg="#182033", font=("Microsoft YaHei UI", 15, "bold")).pack(anchor="w", padx=26, pady=(18, 8))
         descriptions = {
             "入门": "偏高中与基础词，低难高概率，免费提示更慷慨。",
             "简单": "偏核心基础概念，难度 3-4 高概率。",
@@ -1057,8 +1086,29 @@ class ModeFlowMixin:
             "混合模式": "读取当前学科下全部难度文件，入门、简单、普通、困难、噩梦五档等概率抽取。",
             "真·随机": "读取物理和数学的全部词库，按中文答案去重；五档难度等概率抽取。",
         }
+        if overlay:
+            content = []
+            y = 0
+
+            def add_text(text, role, font, dy, width=650):
+                nonlocal y
+                content.append({"text": text, "role": role, "font": font, "y": y, "width": width})
+                y += dy
+
+            add_text("词库介绍", "title", ("Microsoft YaHei UI", 22, "bold"), 52)
+            add_text(f"范围：{subject}", "text", ("Microsoft YaHei UI", 13, "bold"), 38)
+            add_text(mode_text, "text", ("Microsoft YaHei UI", 12), 88)
+            add_text("难度说明", "accent", ("Microsoft YaHei UI", 15, "bold"), 44)
+            for text, _accent in options:
+                add_text(f"{text}：{descriptions[text]}", "text", ("Microsoft YaHei UI", 11), 50)
+            self.set_backdrop_panel_content(content)
+            return
+        tk.Label(parent, text="词库介绍", fg=self.theme_color("title"), bg=bg, font=("Microsoft YaHei UI", 22, "bold")).pack(anchor="w", padx=26, pady=(26, 12))
+        tk.Label(parent, text=f"范围：{subject}", fg=self.theme_color("text"), bg=bg, font=("Microsoft YaHei UI", 13, "bold")).pack(anchor="w", padx=26, pady=5)
+        tk.Label(parent, text=self.smart_wrap_text(mode_text, 30), fg=self.theme_color("text"), bg=bg, justify="left", font=("Microsoft YaHei UI", 12)).pack(anchor="w", padx=26, pady=5)
+        tk.Label(parent, text="难度说明", fg=self.theme_color("accent"), bg=bg, font=("Microsoft YaHei UI", 15, "bold")).pack(anchor="w", padx=26, pady=(18, 8))
         for text, _accent in options:
-            tk.Label(parent, text=self.smart_wrap_text(f"{text}：{descriptions[text]}", 32), fg="#c8d2ee", bg="#182033", justify="left", font=("Microsoft YaHei UI", 11)).pack(anchor="w", padx=26, pady=4)
+            tk.Label(parent, text=self.smart_wrap_text(f"{text}：{descriptions[text]}", 32), fg=self.theme_color("text"), bg=bg, justify="left", font=("Microsoft YaHei UI", 11)).pack(anchor="w", padx=26, pady=4)
 
     def start_game(self, difficulty):
         if self.block_spectator_action("开始游戏"):
@@ -1066,14 +1116,7 @@ class ModeFlowMixin:
         if self.tutorial_active:
             self.tutorial_step = "question"
             difficulty = "入门"
-            self.selected_subject = "物理模式"
-            self.selected_game_group = "普通"
-            self.selected_rule_mode = "自由"
-            self.selected_play_mode = "自由"
-            self.mode = "物理模式"
-            self.play_mode = "自由"
-            self.true_random_mode = False
-            self.random_group_mode = False
+            self.apply_tutorial_mode_selection()
         self.custom_mode = False
         self.rank_mode = False
         self.crossword_mode = False

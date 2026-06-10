@@ -36,7 +36,9 @@ class UiHelpersMixin:
             for event_name in events:
                 widget.bind(event_name, on_mousewheel, add="+")
 
-    def make_scroll_frame(self, parent, bg="#111725"):
+    def make_scroll_frame(self, parent, bg=None):
+        if bg is None:
+            bg = self.theme_color("base")
         shell = tk.Frame(parent, bg=bg)
         shell.pack(fill="both", expand=True)
         canvas = tk.Canvas(shell, bg=bg, bd=0, highlightthickness=0)
@@ -52,14 +54,15 @@ class UiHelpersMixin:
         return inner
 
     def _topbar(self, title, back_command):
-        bar = tk.Frame(self.container, bg="#111725")
+        base_bg = self.theme_color("base")
+        bar = tk.Frame(self.container, bg=base_bg)
         bar.pack(fill="x", padx=22, pady=(14, 8))
         HoverButton(bar, "返回", back_command, width=110, height=48, accent="#8fb6ff").pack(side="left")
-        tk.Label(bar, text=title, fg="#fff2bd", bg="#111725", font=("Microsoft YaHei UI", 19, "bold")).pack(side="left", padx=18)
-        line = tk.Canvas(self.container, height=10, bg="#111725", bd=0, highlightthickness=0)
+        tk.Label(bar, text=title, fg=self.theme_color("title"), bg=base_bg, font=("Microsoft YaHei UI", 19, "bold")).pack(side="left", padx=18)
+        line = tk.Canvas(self.container, height=10, bg=base_bg, bd=0, highlightthickness=0)
         line.pack(fill="x", padx=34, pady=(0, 12))
-        line.create_line(0, 5, 1200, 5, fill="#1f4168", width=1)
-        line.create_line(0, 6, 260, 6, fill="#2d78b7", width=2)
+        line.create_line(0, 5, 1200, 5, fill=self.theme_color("grid_a"), width=1)
+        line.create_line(0, 6, 260, 6, fill=self.theme_color("line"), width=2)
 
     def _tick(self):
         if not self.start_time:

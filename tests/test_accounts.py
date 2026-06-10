@@ -9,6 +9,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "frontend"))
 
 import accounts  # noqa: E402
+import player_profile  # noqa: E402
+from backend.app_modules.account_tutorial import AccountTutorialMixin  # noqa: E402
 import backend.runtime.records as runtime_records  # noqa: E402
 
 
@@ -28,6 +30,10 @@ class AccountTests(unittest.TestCase):
             runtime_records.ACHIEVEMENTS_FILE,
             runtime_records.RANK_PROGRESS_FILE,
             runtime_records.DAILY_TERMS_FILE,
+        )
+        self.original_player_profile_paths = (
+            player_profile.PROFILE_DIR,
+            player_profile.PLAYER_SETTINGS_FILE,
         )
         accounts.ACCOUNTS_FILE = root / "profile" / "accounts.json"
         accounts.SESSION_FILE = root / "profile" / "session.json"
@@ -49,6 +55,10 @@ class AccountTests(unittest.TestCase):
             runtime_records.RANK_PROGRESS_FILE,
             runtime_records.DAILY_TERMS_FILE,
         ) = self.original_runtime_record_paths
+        (
+            player_profile.PROFILE_DIR,
+            player_profile.PLAYER_SETTINGS_FILE,
+        ) = self.original_player_profile_paths
         self.tmp.cleanup()
 
     def test_create_authenticate_and_change_password(self):
@@ -178,6 +188,38 @@ class AccountTests(unittest.TestCase):
         paths = accounts.apply_account_context(account["id"])
 
         self.assertEqual(runtime_records.RECORD_DIR, paths["record_dir"])
+
+    def test_registration_writes_new_user_defaults_and_unfinished_tutorial(self):
+        class Value:
+            def __init__(self, text):
+                self.text = text
+
+            def get(self):
+                return self.text
+
+        class RegisterHarness(AccountTutorialMixin):
+            def __init__(self):
+                self.register_nickname_var = Value("Newbie")
+                self.register_password_var = Value("pass1234")
+                self.register_confirm_var = Value("pass1234")
+                self.activated_account = None
+
+            def activate_account(self, account):
+                self.activated_account = account
+                self.player_settings = player_profile.load_player_settings()
+
+        harness = RegisterHarness()
+        harness.register_account()
+
+        self.assertIsNotNone(harness.activated_account)
+        self.assertEqual(harness.player_settings["nickname"], "Newbie")
+        self.assertEqual(harness.player_settings["backdrop_theme"], "blue")
+        self.assertFalse(harness.player_settings["tutorial_completed"])
+        self.assertEqual(harness.player_settings["backdrop_speed"], 1.0)
+        self.assertEqual(harness.player_settings["backdrop_density"], 1.0)
+        self.assertEqual(harness.player_settings["backdrop_opacity"], 1.0)
+        self.assertEqual(harness.player_settings["font_scale"], 1.0)
+        self.assertTrue(harness.player_settings["transitions_enabled"])
 
 
 if __name__ == "__main__":

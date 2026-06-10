@@ -46,7 +46,7 @@ class BonusGuessApp(
         self.apply_window_icon()
         self.geometry(f"{self.player_settings['window_width']}x{self.player_settings['window_height']}")
         self.minsize(936, 598)
-        self.configure(bg="#111725")
+        self.configure(bg=self.theme_color("base"))
         self.bind("<F11>", self.toggle_fullscreen)
         self.bind("<Escape>", self.exit_fullscreen)
         self.audio = None
@@ -125,13 +125,17 @@ class BonusGuessApp(
         self.transition_job = None
         self.transition_token = 0
         self.transition_style = "curtain"
-        self.history_show_details = False
+        self._history_render_job = None
+        self._history_render_token = 0
+        self._history_records = None
+        self._history_summary = None
         self.admin_show_details = False
         self.spectator_admin_account = None
         self.spectated_account = None
         self.tutorial_active = False
         self.tutorial_manual = False
         self.tutorial_step = 0
+        self.tutorial_play_mode = "自由"
         self.tutorial_overlay_widgets = []
         self.tutorial_confirm_button = None
         self.tutorial_question_panel = None
@@ -261,7 +265,7 @@ class BonusGuessApp(
         self.crossword_rank_size = 0
 
         self.protocol("WM_DELETE_WINDOW", self.on_close)
-        self.container = tk.Frame(self, bg="#111725")
+        self.container = tk.Frame(self, bg=self.theme_color("base"))
         self.container.pack(fill="both", expand=True)
         if self.current_account:
             self.complete_achievement("first_launch")

@@ -2,7 +2,8 @@
 
 from pathlib import Path
 
-ROOT = Path(SPECPATH).resolve().parent
+FRONTEND_ROOT = Path(SPECPATH).resolve().parent
+ROOT = FRONTEND_ROOT.parent
 
 block_cipher = None
 
@@ -14,8 +15,8 @@ a = Analysis(
         (str(ROOT / "words"), "words"),
         (str(ROOT / "docs"), "docs"),
         (str(ROOT / "clues"), "clues"),
-        (str(ROOT / "frontend" / "assets"), "assets"),
-        (str(ROOT / "frontend" / "tcl"), "tcl"),
+        (str(FRONTEND_ROOT / "assets"), "assets"),
+        (str(FRONTEND_ROOT / "tcl"), "tcl"),
     ],
     hiddenimports=[],
     hookspath=[],
@@ -49,5 +50,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=str(ROOT / "frontend" / "assets" / "bonus_guess.ico"),
+    icon=str(FRONTEND_ROOT / "assets" / "bonus_guess.ico"),
 )

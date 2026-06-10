@@ -23,6 +23,7 @@ DIFFICULTY_SIZES = {
     "hard": 18,
     "噩梦": 22,
     "nightmare": 22,
+    "混合模式": 15,
 }
 
 DIFFICULTY_DENSITIES = {
@@ -150,6 +151,15 @@ class _Candidate:
     cells: List[PlacedCell]
     intersections: int
     score: float
+
+
+@dataclass(frozen=True)
+class _IsolationInfo:
+    word_count: int
+    component_sizes: Dict[int, int]
+    cell_components: Dict[Cell, int]
+    main_size: int
+    detached_count: int
 
 
 SQUARE_DIRECTIONS = ("across", "down")
@@ -377,18 +387,24 @@ def generate_crossword(
 
     attempts = _attempt_count(width, height, len(pool))
     best: Optional[CrosswordPuzzle] = None
+    best_connected: Optional[CrosswordPuzzle] = None
     best_score = float("-inf")
+    best_connected_score = float("-inf")
     for _attempt in range(attempts):
         order = _randomized_pool(pool, rng, max_words, width, height, difficulty)
         puzzle = _generate_once(order, width, height, max_words, min_words, mask_func, rng, cell_shape, target_density)
         score = _puzzle_score(puzzle, max_words, target_density, target_average_length)
+        connected_enough = _detached_within_limit(puzzle.placements)
         if score > best_score:
             best = puzzle
             best_score = score
-        if _has_full_line_coverage(puzzle) and len(puzzle.placements) >= max_words:
+        if connected_enough and score > best_connected_score:
+            best_connected = puzzle
+            best_connected_score = score
+        if connected_enough and _has_full_line_coverage(puzzle) and len(puzzle.placements) >= max_words:
             break
     empty_rows = [[None for _ in range(width)] for _ in range(height)]
-    return best or CrosswordPuzzle(width, height, [], {}, empty_rows, 0, 0, cell_shape)
+    return best_connected or best or CrosswordPuzzle(width, height, [], {}, empty_rows, 0, 0, cell_shape)
 
 
 def _generate_once(
@@ -407,8 +423,8 @@ def _generate_once(
     placements: List[CrosswordPlacement] = []
     seen_answers = set()
     area = width * height
-    isolated_limit = 0.42 if cell_shape == "square" else 0.85
-    fallback_isolated_limit = 0.34 if cell_shape == "square" else 0.78
+    isolated_limit = 0.20
+    fallback_isolated_limit = 0.20
 
     for item in pool:
         if len(placements) >= max_words:
@@ -426,7 +442,8 @@ def _generate_once(
 
         candidates = _crossing_candidates(term, answer, initials, grid, cell_dirs, placements, width, height, rng, cell_shape)
         should_fill_lines = _line_coverage_priority(grid, width, height) > 0
-        isolated_ratio = sum(1 for placement in placements if placement.intersections == 0) / max(len(placements), 1)
+        isolation_info = _placement_isolation_info(placements)
+        isolated_ratio = isolation_info.detached_count / max(len(placements), 1)
         down_count = sum(1 for placement in placements if _is_down_direction(placement.direction))
         down_ratio = down_count / max(len(placements), 1)
         if (
@@ -436,6 +453,11 @@ def _generate_once(
             and (should_fill_lines or len(placements) < min_words or not candidates or down_ratio > 0.36)
         ):
             isolated_candidates = _isolated_candidates(term, answer, initials, grid, cell_dirs, placements, width, height, rng, cell_shape)
+            isolated_candidates = [
+                candidate
+                for candidate in isolated_candidates
+                if _candidate_projected_detached_count(placements, candidate, isolation_info) <= _detached_limit(len(placements) + 1)
+            ]
             if down_ratio > 0.36:
                 isolated_candidates = [
                     replace(candidate, score=candidate.score + (150 if _is_primary_direction(candidate.direction) else -120))
@@ -449,6 +471,10 @@ def _generate_once(
             candidates = _isolated_candidates(term, answer, initials, grid, cell_dirs, placements, width, height, rng, cell_shape)
         if not candidates:
             continue
+        if placements:
+            candidates = _connectivity_preferred_candidates(placements, candidates)
+            if not candidates:
+                continue
 
         best = max(candidates, key=lambda candidate: candidate.score)
         placement = _make_placement(len(placements) + 1, best, mask_func)
@@ -458,12 +484,7 @@ def _generate_once(
             grid[(r, c)] = char
             cell_dirs.setdefault((r, c), set()).add(placement.direction)
 
-    placements = _refresh_intersections(placements)
-    placements = _propagate_intersection_masks(placements)
-    rows = [[grid.get((r, c)) for c in range(width)] for r in range(height)]
-    intersection_count = sum(placement.intersections for placement in placements)
-    isolated_count = sum(1 for placement in placements if placement.intersections == 0)
-    return CrosswordPuzzle(width, height, placements, grid, rows, intersection_count, isolated_count, cell_shape)
+    return _puzzle_from_placements(width, height, placements, cell_shape)
 
 
 def _refresh_intersections(placements: List[CrosswordPlacement]) -> List[CrosswordPlacement]:
@@ -499,18 +520,46 @@ def _propagate_intersection_masks(placements: List[CrosswordPlacement]) -> List[
     return result
 
 
+def _puzzle_from_placements(width: int, height: int, placements: Sequence[CrosswordPlacement], cell_shape: str) -> CrosswordPuzzle:
+    refreshed = _refresh_intersections(list(placements))
+    if refreshed and not _detached_within_limit(refreshed):
+        refreshed = _trim_detached_components(refreshed)
+        refreshed = _refresh_intersections(refreshed)
+    refreshed = _propagate_intersection_masks(refreshed)
+    grid: Dict[Cell, str] = {}
+    for placement in refreshed:
+        for row, col, char in placement.cells:
+            grid[(row, col)] = char
+    rows = [[grid.get((r, c)) for c in range(width)] for r in range(height)]
+    intersection_count = sum(placement.intersections for placement in refreshed)
+    isolated_count = _detached_placement_count(refreshed)
+    return CrosswordPuzzle(width, height, refreshed, grid, rows, intersection_count, isolated_count, cell_shape)
+
+
+def _trim_detached_components(placements: Sequence[CrosswordPlacement]) -> List[CrosswordPlacement]:
+    components = _placement_component_indices(placements)
+    if len(components) <= 1:
+        return list(placements)
+    main = components[0]
+    keep = set(main)
+    detached_kept = 0
+    for component in components[1:]:
+        next_detached = detached_kept + len(component)
+        next_total = len(main) + next_detached
+        if next_detached <= _detached_limit(next_total):
+            keep.update(component)
+            detached_kept = next_detached
+    trimmed = [placement for index, placement in enumerate(placements) if index in keep]
+    return [replace(placement, id=index + 1) for index, placement in enumerate(trimmed)]
+
+
 def validate_crossword(puzzle: CrosswordPuzzle) -> bool:
     grid: Dict[Cell, str] = {}
-    intersection_count = 0
-    isolated_count = 0
     seen_ids = set()
     seen_answers = set()
     cell_shape = _normalize_cell_shape(getattr(puzzle, "cell_shape", "square"))
     valid_directions = set(_directions_for_shape(cell_shape))
     for placement in puzzle.placements:
-        intersection_count += placement.intersections
-        if placement.intersections == 0:
-            isolated_count += 1
         if placement.id in seen_ids:
             raise ValueError(f"duplicate placement id: {placement.id}")
         seen_ids.add(placement.id)
@@ -545,8 +594,23 @@ def validate_crossword(puzzle: CrosswordPuzzle) -> bool:
         for c, char in enumerate(row):
             if char != puzzle.grid.get((r, c)):
                 raise ValueError(f"row/grid mismatch at {(r, c)}")
+    cell_usage: Dict[Cell, int] = {}
+    for placement in puzzle.placements:
+        for row, col, _char in placement.cells:
+            cell_usage[(row, col)] = cell_usage.get((row, col), 0) + 1
+    intersection_count = 0
+    for placement in puzzle.placements:
+        actual_intersections = sum(
+            1
+            for row, col, _char in placement.cells
+            if cell_usage.get((row, col), 0) > 1
+        )
+        if placement.intersections != actual_intersections:
+            raise ValueError(f"placement {placement.id} intersections do not match placement cells")
+        intersection_count += actual_intersections
     if puzzle.intersection_count != intersection_count:
         raise ValueError("puzzle intersection_count does not match placements")
+    isolated_count = _detached_placement_count(list(puzzle.placements))
     if puzzle.isolated_count != isolated_count:
         raise ValueError("puzzle isolated_count does not match placements")
     return True
@@ -618,7 +682,7 @@ def _source_weight_bonus(term: Any, difficulty: Any, scale: float) -> float:
 
 def _attempt_count(width: int, height: int, pool_size: int) -> int:
     base = 8
-    return min(10, max(base, pool_size // 220))
+    return min(12, max(base, pool_size // 260))
 
 
 def _randomized_pool(
@@ -667,6 +731,155 @@ def _has_full_line_coverage(puzzle: CrosswordPuzzle) -> bool:
     return len(rows) >= puzzle.height and len(cols) >= puzzle.width
 
 
+def _detached_limit(word_count: int) -> int:
+    return max(0, int(word_count * 0.20))
+
+
+def _detached_within_limit(placements: Sequence[Any]) -> bool:
+    if not placements:
+        return True
+    return _detached_placement_count(placements, single_isolated=False) <= _detached_limit(len(placements))
+
+
+def _connectivity_preferred_candidates(placements: Sequence[CrosswordPlacement], candidates: Sequence[_Candidate]) -> List[_Candidate]:
+    if not candidates:
+        return []
+    info = _placement_isolation_info(placements)
+    projected = [
+        (candidate, _candidate_projected_detached_count(placements, candidate, info))
+        for candidate in candidates
+    ]
+    limit = _detached_limit(len(placements) + 1)
+    within_limit = [candidate for candidate, detached_count in projected if detached_count <= limit]
+    if within_limit:
+        return within_limit
+    improving = [candidate for candidate, detached_count in projected if detached_count < info.detached_count]
+    if improving:
+        return improving
+    if info.detached_count > _detached_limit(len(placements)):
+        stable = [candidate for candidate, detached_count in projected if detached_count <= info.detached_count]
+        return stable
+    return list(candidates)
+
+
+def _detached_placement_count(placements: Sequence[Any], single_isolated: bool = False) -> int:
+    if len(placements) <= 1 and single_isolated:
+        return len(placements)
+    return _placement_isolation_info(placements).detached_count
+
+
+def _candidate_projected_detached_count(
+    placements: Sequence[CrosswordPlacement],
+    candidate: _Candidate,
+    isolation_info: Optional[_IsolationInfo] = None,
+) -> int:
+    info = isolation_info or _placement_isolation_info(placements)
+    if info.word_count <= 0:
+        return 0
+    touched_components = {
+        info.cell_components[(row, col)]
+        for row, col, _char in candidate.cells
+        if (row, col) in info.cell_components
+    }
+    projected_count = info.word_count + 1
+    if not touched_components:
+        return projected_count - max(info.main_size, 1)
+    merged_size = 1 + sum(info.component_sizes[component] for component in touched_components)
+    largest = merged_size
+    for component, size in info.component_sizes.items():
+        if component not in touched_components and size > largest:
+            largest = size
+    return projected_count - largest
+
+
+def _placement_isolation_info(placements: Sequence[Any]) -> _IsolationInfo:
+    cell_lists = [list(getattr(placement, "cells", placement)) for placement in placements]
+    count = len(cell_lists)
+    if count <= 1:
+        cell_components: Dict[Cell, int] = {}
+        if count == 1:
+            for row, col, _char in cell_lists[0]:
+                cell_components[(row, col)] = 0
+        return _IsolationInfo(count, ({0: 1} if count == 1 else {}), cell_components, count, 0)
+
+    parents = list(range(count))
+
+    def find(index: int) -> int:
+        while parents[index] != index:
+            parents[index] = parents[parents[index]]
+            index = parents[index]
+        return index
+
+    def union(left: int, right: int) -> None:
+        left_root = find(left)
+        right_root = find(right)
+        if left_root != right_root:
+            parents[right_root] = left_root
+
+    cell_usage: Dict[Cell, List[int]] = {}
+    for placement_index, cells in enumerate(cell_lists):
+        for row, col, _char in cells:
+            cell_usage.setdefault((row, col), []).append(placement_index)
+    for usage in cell_usage.values():
+        if len(usage) <= 1:
+            continue
+        first = usage[0]
+        for placement_index in usage[1:]:
+            union(first, placement_index)
+
+    component_sizes: Dict[int, int] = {}
+    component_by_index: List[int] = []
+    for placement_index in range(count):
+        root = find(placement_index)
+        component_by_index.append(root)
+        component_sizes[root] = component_sizes.get(root, 0) + 1
+    cell_components: Dict[Cell, int] = {}
+    for placement_index, cells in enumerate(cell_lists):
+        root = component_by_index[placement_index]
+        for row, col, _char in cells:
+            cell_components[(row, col)] = root
+    main_size = max(component_sizes.values(), default=0)
+    return _IsolationInfo(count, component_sizes, cell_components, main_size, count - main_size)
+
+
+def _placement_component_indices(placements: Sequence[Any]) -> List[List[int]]:
+    cell_lists = [list(getattr(placement, "cells", placement)) for placement in placements]
+    count = len(cell_lists)
+    if count == 0:
+        return []
+    if count == 1:
+        return [[0]]
+    parents = list(range(count))
+
+    def find(index: int) -> int:
+        while parents[index] != index:
+            parents[index] = parents[parents[index]]
+            index = parents[index]
+        return index
+
+    def union(left: int, right: int) -> None:
+        left_root = find(left)
+        right_root = find(right)
+        if left_root != right_root:
+            parents[right_root] = left_root
+
+    cell_usage: Dict[Cell, List[int]] = {}
+    for placement_index, cells in enumerate(cell_lists):
+        for row, col, _char in cells:
+            cell_usage.setdefault((row, col), []).append(placement_index)
+    for usage in cell_usage.values():
+        if len(usage) <= 1:
+            continue
+        first = usage[0]
+        for placement_index in usage[1:]:
+            union(first, placement_index)
+
+    groups: Dict[int, List[int]] = {}
+    for placement_index in range(count):
+        groups.setdefault(find(placement_index), []).append(placement_index)
+    return sorted(groups.values(), key=lambda group: (-len(group), group[0]))
+
+
 def _puzzle_score(puzzle: CrosswordPuzzle, max_words: int, target_density: Optional[float] = None, target_average_length: Optional[float] = None) -> float:
     if not puzzle.placements:
         return float("-inf")
@@ -703,7 +916,8 @@ def _puzzle_score(puzzle: CrosswordPuzzle, max_words: int, target_density: Optio
         + spread_area * 95
         - empty_rows * 760
         - empty_cols * 760
-        - puzzle.isolated_count * 92
+        - puzzle.isolated_count * 540
+        - max(0, puzzle.isolated_count - _detached_limit(len(puzzle.placements))) * 920
         - density_penalty
         - average_length_penalty
         - short_penalty
@@ -735,6 +949,7 @@ def _crossing_candidates(
     cell_shape: str,
 ) -> List[_Candidate]:
     candidates: List[_Candidate] = []
+    component_info = _placement_isolation_info(placements)
     by_char: Dict[str, List[Cell]] = {}
     for cell, char in grid.items():
         by_char.setdefault(char, []).append(cell)
@@ -745,7 +960,7 @@ def _crossing_candidates(
                 row, col = _start_for_cell_at_index(r, c, index, direction, cell_shape)
                 candidate = _candidate(term, answer, initials, row, col, direction, grid, cell_dirs, width, height, cell_shape)
                 if candidate and candidate.intersections > 0:
-                    score = _candidate_score(candidate, grid, placements, width, height, rng)
+                    score = _candidate_score(candidate, grid, placements, width, height, rng, component_info)
                     candidates.append(_Candidate(term, answer, initials, row, col, direction, candidate.cells, candidate.intersections, score))
                     if len(candidates) >= 96:
                         return candidates
@@ -766,6 +981,7 @@ def _isolated_candidates(
 ) -> List[_Candidate]:
     candidates: List[_Candidate] = []
     shape = _normalize_cell_shape(cell_shape)
+    component_info = _placement_isolation_info(placements)
     if shape != "square":
         starts = []
         for direction in _directions_for_shape(shape):
@@ -787,7 +1003,7 @@ def _isolated_candidates(
         for row, col, direction in (priority + rest)[: min(len(starts), 520)]:
             candidate = _candidate(term, answer, initials, row, col, direction, grid, cell_dirs, width, height, shape)
             if candidate and candidate.intersections == 0:
-                score = _candidate_score(candidate, grid, placements, width, height, rng) - 65
+                score = _candidate_score(candidate, grid, placements, width, height, rng, component_info) - 65
                 candidates.append(_Candidate(term, answer, initials, row, col, direction, candidate.cells, 0, score))
         return candidates
 
@@ -820,7 +1036,7 @@ def _isolated_candidates(
     for row, col, direction in starts[: min(len(starts), 520)]:
         candidate = _candidate(term, answer, initials, row, col, direction, grid, cell_dirs, width, height, shape)
         if candidate and candidate.intersections == 0:
-            score = _candidate_score(candidate, grid, placements, width, height, rng) - 65
+            score = _candidate_score(candidate, grid, placements, width, height, rng, component_info) - 65
             candidates.append(_Candidate(term, answer, initials, row, col, direction, candidate.cells, 0, score))
     return candidates
 
@@ -909,6 +1125,7 @@ def _candidate_score(
     width: int,
     height: int,
     rng: random.Random,
+    component_info: Optional[_IsolationInfo] = None,
 ) -> float:
     old_rows, old_cols = _coverage_sets(grid)
     candidate_cells = {(r, c) for r, c, _char in candidate.cells}
@@ -932,6 +1149,14 @@ def _candidate_score(
         direction_adjust -= (projected_down_ratio - 0.35) * 230
     if _is_down_direction(candidate.direction) and candidate.intersections == 0:
         direction_adjust -= 48
+    info = component_info or _placement_isolation_info(placements)
+    current_detached = info.detached_count
+    projected_detached = _candidate_projected_detached_count(placements, candidate, info)
+    detached_limit = _detached_limit(len(placements) + 1)
+    detached_delta = projected_detached - current_detached
+    detached_penalty = projected_detached * 90 + max(0, detached_delta) * 280
+    if projected_detached > detached_limit:
+        detached_penalty += (projected_detached - detached_limit) * 520
     return (
         candidate.intersections * 92
         + len(candidate.answer) * 4
@@ -941,6 +1166,7 @@ def _candidate_score(
         + uncovered_bonus
         + direction_adjust
         - center_penalty * 2.5
+        - detached_penalty
         + rng.random() * 5
     )
 

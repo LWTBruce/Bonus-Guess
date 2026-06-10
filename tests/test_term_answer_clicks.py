@@ -109,7 +109,7 @@ class TermAnswerClickTests(unittest.TestCase):
             rendered = text_widgets[0].get("1.0", "end-1c")
             self.assertIn("ε>0", rendered)
             self.assertIn("μ", rendered)
-            self.assertIn("(μ₀)/(4π)", rendered)
+            self.assertIn("μ₀∕4π", rendered)
             self.assertNotIn("\\", rendered)
             self.assertNotIn("{", rendered)
             self.assertNotIn("}", rendered)
@@ -182,6 +182,8 @@ class TermAnswerClickTests(unittest.TestCase):
             self.assertNotIn("boldsymbol", rendered)
             self.assertNotIn("prime", rendered)
             self.assertEqual(paragraph.tag_cget("math", "background"), paragraph.cget("background"))
+            self.assertEqual(paragraph.tag_cget("math", "foreground"), paragraph.cget("foreground"))
+            self.assertTrue(paragraph.tag_ranges("math_sub"))
             body_font = tkfont.Font(font=paragraph.cget("font"))
             math_font = tkfont.Font(font=paragraph.tag_cget("math", "font"))
             self.assertEqual(math_font.cget("family"), body_font.cget("family"))
@@ -221,6 +223,72 @@ class TermAnswerClickTests(unittest.TestCase):
             self.assertLessEqual(int(paragraph.cget("height")), display_lines + 1)
             self.assertLessEqual(int(paragraph.cget("spacing2")), 1)
             self.assertIn("q=-ne", paragraph.get("1.0", "end-1c"))
+        finally:
+            root.destroy()
+
+    def test_term_markdown_long_formula_wraps_at_boundary(self):
+        try:
+            root = tk.Tk()
+        except tk.TclError as exc:
+            self.skipTest(f"Tk is unavailable: {exc}")
+            return
+        try:
+            root.geometry("360x260+20+20")
+            inner = render_markdown(
+                root,
+                "长公式 $ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ$ 应该在边界处回行。",
+                mode="detail",
+            )
+            root.update_idletasks()
+            root.update()
+            text_widgets = []
+
+            def collect(widget):
+                if isinstance(widget, tk.Text):
+                    text_widgets.append(widget)
+                for child in widget.winfo_children():
+                    collect(child)
+
+            collect(inner)
+            self.assertTrue(text_widgets)
+            paragraph = text_widgets[0]
+            display_lines = paragraph.count("1.0", "end-1c", "displaylines")[0]
+            self.assertEqual(paragraph.cget("wrap"), "char")
+            self.assertGreater(display_lines, 1)
+            self.assertEqual(paragraph.tag_cget("math", "background"), paragraph.cget("background"))
+        finally:
+            root.destroy()
+
+    def test_markdown_copy_restores_original_latex(self):
+        try:
+            root = tk.Tk()
+        except tk.TclError as exc:
+            self.skipTest(f"Tk is unavailable: {exc}")
+            return
+        try:
+            root.geometry("760x260+20+20")
+            source = "正则系综中 $F=-k_BT\\ln Z$，这是 **自由能** 的写法。"
+            inner = render_markdown(root, source, mode="detail")
+            root.update_idletasks()
+            root.update()
+            text_widgets = []
+
+            def collect(widget):
+                if isinstance(widget, tk.Text):
+                    text_widgets.append(widget)
+                for child in widget.winfo_children():
+                    collect(child)
+
+            collect(inner)
+            self.assertTrue(text_widgets)
+            paragraph = text_widgets[0]
+            paragraph.tag_add("sel", "1.0", "end-1c")
+            paragraph.event_generate("<<Copy>>")
+            root.update()
+            self.assertEqual(root.clipboard_get(), source)
+            rendered = paragraph.get("1.0", "end-1c")
+            self.assertIn("F=-kᵦT ln Z", rendered)
+            self.assertNotIn("$", rendered)
         finally:
             root.destroy()
 

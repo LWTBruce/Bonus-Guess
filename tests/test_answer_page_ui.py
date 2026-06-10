@@ -270,6 +270,56 @@ class AnswerPageUiTests(unittest.TestCase):
         finally:
             root.destroy()
 
+    def test_clue_panel_wraps_long_markdown_and_uses_body_background(self):
+        try:
+            root = ClueRenderHarness()
+        except tk.TclError as exc:
+            self.skipTest(f"Tk is unavailable: {exc}")
+            return
+        try:
+            root.geometry("420x260+20+20")
+            root.clue_box = tk.Frame(root, bg="#182033", width=320, height=180)
+            root.clue_box.pack(fill="x")
+            root.clue_box.pack_propagate(False)
+            root.clue_lines = [
+                r"很长的线索题干包含 `*` 掩码，也包含 $ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ$，必须在右边界自动回到下一行。",
+            ]
+            root.clue_line_types = ["complete"]
+            root.clue_visible_count = 1
+            root.rank_mode = False
+            root.rank_kind = ""
+
+            root._render_clues()
+            root.update_idletasks()
+            root.update()
+
+            text_widgets = []
+
+            def collect_text_widgets(widget):
+                if isinstance(widget, tk.Text):
+                    text_widgets.append(widget)
+                for child in widget.winfo_children():
+                    collect_text_widgets(child)
+
+            collect_text_widgets(root.clue_box)
+            self.assertEqual(len(text_widgets), 1)
+            widget = text_widgets[0]
+            self.assertEqual(widget.cget("wrap"), "char")
+            self.assertGreater(widget.count("1.0", "end-1c", "displaylines")[0], 1)
+            for tag in ("code", "math", "math_sup", "math_sub"):
+                if widget.tag_ranges(tag):
+                    self.assertEqual(widget.tag_cget(tag, "background"), widget.cget("background"))
+
+            max_right = 0
+            char_count = widget.count("1.0", "end-1c", "chars")[0]
+            for offset in range(char_count):
+                bbox = widget.bbox(f"1.0+{offset}c")
+                if bbox:
+                    max_right = max(max_right, bbox[0] + bbox[2])
+            self.assertLessEqual(max_right, widget.winfo_width())
+        finally:
+            root.destroy()
+
     def test_live_answer_page_shows_character_hint_text(self):
         try:
             from backend.app_modules.application import BonusGuessApp

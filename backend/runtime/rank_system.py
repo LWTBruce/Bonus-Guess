@@ -428,9 +428,28 @@ def rank_title_rewards(progress=None):
     return [(f"rank_title:{badge_id}", name) for badge_id, name in unlocked_rank_badges(progress)]
 
 
-def draw_rank_badge(canvas, badge_id, width=170, height=34, selected=False):
+def draw_rank_badge(canvas, badge_id, width=170, height=34, selected=False, transparent=False, background=None):
     canvas.delete("all")
     scale = max(0.65, height / 34)
+
+    if background is None:
+        try:
+            background = canvas.cget("bg")
+        except Exception:
+            background = None
+
+    def readable_color(default="#f8fafc"):
+        text = str(background or "").strip()
+        if not transparent or not text.startswith("#") or len(text) != 7:
+            return default
+        try:
+            r = int(text[1:3], 16) / 255
+            g = int(text[3:5], 16) / 255
+            b = int(text[5:7], 16) / 255
+        except ValueError:
+            return default
+        luminance = 0.2126 * r + 0.7152 * g + 0.0722 * b
+        return "#111725" if luminance > 0.42 else default
 
     def s(value):
         return value * scale
@@ -440,8 +459,8 @@ def draw_rank_badge(canvas, badge_id, width=170, height=34, selected=False):
 
     subject, rank_id = parse_rank_badge_id(badge_id)
     if not subject or not rank_id:
-        canvas.create_rectangle(s(2), s(2), width - s(2), height - s(2), outline="#3b4560", fill="#182033", width=max(1, int(round(s(2)))))
-        canvas.create_text(width / 2, height / 2, text="无段位标识", fill="#64708f", font=("Microsoft YaHei UI", font_size(10), "bold"))
+        canvas.create_rectangle(s(2), s(2), width - s(2), height - s(2), outline="#3b4560", fill="" if transparent else "#182033", width=max(1, int(round(s(2)))))
+        canvas.create_text(width / 2, height / 2, text="无段位标识", fill=readable_color("#64708f"), font=("Microsoft YaHei UI", font_size(10), "bold"))
         return
     if rank_id >= 16:
         high_styles = {
@@ -452,7 +471,8 @@ def draw_rank_badge(canvas, badge_id, width=170, height=34, selected=False):
             20: ("#020617", "#f8fafc", "#ffffff", "#075985", "#67e8f9"),
         }
         fill, accent, text_color, shadow, particle = high_styles.get(rank_id, high_styles[20])
-        outline = "#ffffff" if selected else accent
+        text_color = readable_color(text_color)
+        outline = readable_color("#ffffff") if selected else accent
         stroke = max(1, int(round(s(2))))
         x0, y0 = s(4), s(4)
         x1, y1 = width - s(5), height - s(5)
@@ -467,9 +487,12 @@ def draw_rank_badge(canvas, badge_id, width=170, height=34, selected=False):
             x0, y1 - s(8),
             x0, y0 + s(8),
         ]
-        canvas.create_polygon(bubble, fill=shadow, outline="", smooth=True, splinesteps=16)
-        canvas.move("all", s(1.5), s(1.5))
-        canvas.create_polygon(bubble, fill=fill, outline=outline, width=stroke, smooth=True, splinesteps=16)
+        if transparent:
+            canvas.create_polygon(bubble, fill="", outline=outline, width=stroke, smooth=True, splinesteps=16)
+        else:
+            canvas.create_polygon(bubble, fill=shadow, outline="", smooth=True, splinesteps=16)
+            canvas.move("all", s(1.5), s(1.5))
+            canvas.create_polygon(bubble, fill=fill, outline=outline, width=stroke, smooth=True, splinesteps=16)
         canvas.create_line(x0 + s(18), y0 + s(4), x1 - s(38), y0 + s(4), fill=accent, width=max(1, int(round(s(1)))))
         canvas.create_line(x0 + s(26), y1 - s(4), x1 - s(46), y1 - s(4), fill=accent, width=max(1, int(round(s(1)))))
 
@@ -520,9 +543,10 @@ def draw_rank_badge(canvas, badge_id, width=170, height=34, selected=False):
         ("#020617", "#f8fafc", "#ffffff"),
     ]
     fill, accent, text_color = styles[max(0, min(rank_id, len(styles)) - 1)]
-    outline = "#f8fafc" if selected or rank_id >= 15 else accent
-    canvas.create_rectangle(s(1), s(1), width - s(1), height - s(1), outline=outline, fill=fill, width=max(1, int(round(s(2)))))
-    if rank_id >= 12:
+    text_color = readable_color(text_color)
+    outline = readable_color("#f8fafc") if selected or rank_id >= 15 else accent
+    canvas.create_rectangle(s(1), s(1), width - s(1), height - s(1), outline=outline, fill="" if transparent else fill, width=max(1, int(round(s(2)))))
+    if rank_id >= 12 and not transparent:
         vivid = ["#67e8f9", "#9ff2b2", "#f6d36b", "#ff6b8a", "#c084fc"]
         stripe_w = max(s(10), width / 18)
         for index in range(int(width // stripe_w) + 2):
@@ -532,7 +556,7 @@ def draw_rank_badge(canvas, badge_id, width=170, height=34, selected=False):
         canvas.create_rectangle(s(4), s(4), width - s(4), height - s(4), fill=fill, outline=accent, width=max(1, int(round(s(1)))))
     else:
         canvas.create_rectangle(s(4), s(4), width - s(4), height - s(4), outline=accent, width=max(1, int(round(s(1)))))
-    inner_fill = "#111725" if rank_id != 11 else "#e2e8f0"
+    inner_fill = "" if transparent else ("#111725" if rank_id != 11 else "#e2e8f0")
     inner_text = text_color
     left_right = min(width * 0.40, s(62))
     left_center = (s(8) + left_right) / 2
